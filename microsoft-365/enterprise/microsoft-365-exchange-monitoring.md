@@ -117,63 +117,17 @@ Here is an example.
 
 :::image type="content" source="../media/microsoft-365-exchange-monitoring/exchange-status-column-example.png" alt-text="Example of the status column in the affected account pane":::
 
-An advisory or incident will be resolved after no accounts remain in the **Active** state. 
-
-## Send us feedback
-
-There are two ways you can provide feedback:
-
-- Use the **Give feedback** option available on every page of the Microsoft 365 admin center.
-
-- Submit feedback using the **Is this post helpful?** link for a specific incident or advisory.
-
-  ![The "Is this post helpful?" link for a specific incident or advisory.](../media/microsoft-365-exchange-monitoring/exchange-monitoring-example-incident-feedback.png)
+An advisory or incident will be resolved after no accounts remain in the **Active** state.
 
 ## Frequently asked questions
 
-#### 1. Why don't I see "Exchange Online monitoring" under Health in the Microsoft 365 admin center? 
-
-First, make sure you've enabled the new admin center on the **Home** page of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
-
-Then make sure you meet both of the following requirements:
-
-- Your organization needs to have a license count of at least 5,000, from one or a combination of these products: Office 365 E3, Microsoft 365 E3, Office 365 E5, Microsoft 365 E5.
-
-- Your organization needs to have at least 50 monthly active users for one or more core Microsoft 365 services, which include Microsoft Teams, OneDrive for Business, SharePoint Online, Exchange Online, and Office apps.
-
-If the license count for your organization falls below 5,000 users and the monthly active users falls below 50 users in the core services, Exchange Online monitoring won't be enabled until these requirements are met.
-
-#### 2. The active user count in the dashboard for each client appears to be low. We have a lot of active licenses assigned to users. What does this mean?
+### 1. The active user count in the dashboard for each client appears to be low. We have a lot of active licenses assigned to users. What does this mean?
 
 The active user count shown in monitoring is based on a 30-minute window where users have performed the activity called out in the feature. This shouldn't be confused with usage numbers. To view usage numbers, use activity reports in the Microsoft 365 admin center (**Reports** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">**Usage**</a>).
 
-#### 3. Will there be other monitoring scenarios for other services such as Teams and SharePoint?
-
-Microsoft is integrating this experience directly inside the Service Health dashboard in the Microsoft 365 admin center. This will provide opportunities for Microsoft to extend monitoring scenarios for other services, which will be announced when there is news to share.
-
-#### 4. What is the plan for general availability of this experience?
-
-Microsoft has integrated Exchange Online monitoring directly on the <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">**Service Health** dashboard</a> in the Microsoft 365 admin center.
-
-With this new integrated experience, Microsoft's plan is to collect your feedback and then define our plan for general availability.
-
-#### 5. Is this a free (included) or paid (extra) feature? 
-
-This is a free feature that is in preview and only available for customers that meet the requirements in question 1. There isn't a paid option to receive this content.
-
-#### 6. How do I provide feedback?
-
-For general feedback, use the **Give feedback** icon on the bottom-right corner of the **Exchange Online** monitoring page. 
-
-For feedback on incidents or advisories, use the **Is this post helpful?** link.
-
-#### 7. Where is the data instrumented for the scenarios that show activity trends?
+### 2. Where is the data instrumented for the scenarios that show activity trends?
 
 The data is instrumented in the Exchange Online service. If there is a failure that happens before the request reaches Exchange Online or there is a failure in Exchange Online, you will see a drop in the activity signal.
-
-#### 8. Are there any privacy concerns?
-
-Monitoring focuses on service metadata and user content is not monitored.
 
 ## See also
 
@@ -188,3 +142,5 @@ Monitoring focuses on service metadata and user content is not monitored.
 - [Service alerts for mailbox utilization in Exchange Online monitoring](microsoft-365-mailbox-utilization-service-alerts.md)
 
 - [Service alerts for MRS source delays in Exchange Online monitoring](microsoft-365-mrs-source-delays-service-alerts.md)
+
+- [Service alerts for messages pending delivery to external recipients in Exchange Online monitoring](microsoft-365-external-recipient-service-alerts.md)

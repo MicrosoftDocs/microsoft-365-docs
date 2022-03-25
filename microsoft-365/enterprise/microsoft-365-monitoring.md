@@ -64,15 +64,17 @@ Service-specific monitoring is also enable for the following Microsoft services.
 
 ## Send us feedback
 
-There are two ways you can provide feedback on Microsoft 365 monitoring:
+There are two ways you can provide feedback:
 
-- Use the **Give feedback** option available on every page of the Microsoft 365 admin center.
+- Use the **Give feedback** option available on every page of the Microsoft 365 admin center.
 
-- Submit feedback using the **Is this post helpful?** link for a specific incident or advisory.
+- Submit feedback using the **Is this post helpful? link for a specific incident or advisory.
+
+  ![The "Is this post helpful?" link for a specific incident or advisory.](../media/microsoft-365-exchange-monitoring/exchange-monitoring-example-incident-feedback.png)
 
 ## Frequently asked questions
 
-**1. Why don't I see "view" link under Organizational monitoring column in the Microsoft 365 admin center inside Service Health?**
+### 1. Why don't I see "view" link under Organizational monitoring column in the Microsoft 365 admin center inside Service Health?
 
 First, make sure you've enabled the new admin center on the **Home** page of the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339).
 
@@ -84,24 +86,24 @@ Then make sure you meet both of the following requirements:
 
 If the license count for your organization falls below 5,000 users and the monthly active users falls below 50 users in the core services, Exchange Online monitoring won't be enabled until these requirements are met.
 
-**2. Will there be other monitoring scenarios for other services in future?**
+### 2. Will there be other monitoring scenarios for other services in future?
 
 Yes. We have a few more services in public preview now. We will continue to work on expanding the footprint to other services.
 
-**3. What is the plan for general availability of this experience?**
+### 3. What is the plan for general availability of this experience?
 
 Microsoft's plan is to collect your feedback on the preview experience and then define our plan for general availability.
 
-**4. Is this a free (included) or paid (extra) feature?**
+### 4. Is this a free (included) or paid (extra) feature?
 
 This is a free feature that is in preview and only available for customers that meet the requirements in question 1. There isn't a paid option to receive this content.
 
-**5. How do I provide feedback?**
+### 5. How do I provide feedback?
 
 For general feedback, use the **Give feedback** icon on the bottom-right corner of the monitoring page.
 
-For feedback on incidents or advisories, use the **Is this post helpful?** link.
+For feedback on incidents or advisories, use the **Is this post helpful? link.
 
-**8. Are there any privacy concerns?**
+### 6. Are there any privacy concerns?
 
 Monitoring focuses on service metadata and user content is not monitored.
