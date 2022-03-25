@@ -65,7 +65,7 @@ To create or edit a DLP policy, use the procedures in [Create, test, and tune a 
 ## Workloads and services that support named entities
 
 
-- **Microsoft 3655 eDiscovery** supports the use of named entities in Substrate services.
+- **Microsoft 365 eDiscovery** supports the use of named entities in Substrate services.
 - **Microsoft Defender for Cloud Apps** supports the use of named entities in Defender for Cloud Apps policies.
 - **Insider Risk Management** supports the use of named entities in Substrate services.
 - **Communication Compliance** doesn't support the use of named entities in Exchange transport rules and data-at-rest.
