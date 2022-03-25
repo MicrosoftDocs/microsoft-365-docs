@@ -61,8 +61,6 @@ Follow these links for additional information on how to:
 Use the following instructions to install Office on an iPhone or an Android phone. After you follow these steps, your work files created in Office apps will be protected by Microsoft 365 for business.
 
 The example is for Outlook, but applies tp any other Office apps you want to install.
-  
-## Set up mobile devices
 
 ## [iPhone](#tab/iPhone)
   
