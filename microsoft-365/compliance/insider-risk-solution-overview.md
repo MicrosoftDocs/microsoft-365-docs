@@ -47,7 +47,7 @@ To help protect your organization against insider risks, use these Microsoft 365
 
 ### Communication compliance
 
-Microsoft Purview Communication Compliance helps minimize communication risks by helping you detect, capture, and act on inappropriate messages in your organization.
+[Microsoft Purview Communication Compliance](communication-compliance.md) helps minimize communication risks by helping you detect, capture, and act on inappropriate messages in your organization.
 
 Communication compliance is available in the following subscriptions:
 
@@ -60,7 +60,7 @@ Communication compliance is available in the following subscriptions:
 
 ### Insider risk management
 
-Microsoft Purview Insider Risk Management helps minimize internal risks by enabling you to detect, investigate, and act on malicious and inadvertent activities in your organization.
+[Microsoft Purview Insider Risk Management](insider-risk-management.md) helps minimize internal risks by enabling you to detect, investigate, and act on malicious and inadvertent activities in your organization.
 
 Insider risk management is available in the following subscriptions:
 
@@ -71,7 +71,7 @@ Insider risk management is available in the following subscriptions:
 
 ### Information barriers
 
-Microsoft Purview Information Barriers allow you to restrict communication and collaboration between two internal groups to avoid a conflict of interest from occurring in your organization.
+[Microsoft Purview Information Barriers](information-barriers.md) allow you to restrict communication and collaboration between two internal groups to avoid a conflict of interest from occurring in your organization.
 
 Information barriers are available in the following subscriptions:
 
@@ -83,7 +83,7 @@ Information barriers are available in the following subscriptions:
 
 ### Privileged access management
 
-Microsoft Purview Privileged Access Management allows granular access control over privileged Exchange Online admin tasks in Office 365. It can help protect your organization from breaches that use existing privileged admin accounts with standing access to sensitive data or access to critical configuration settings.
+[Microsoft Purview Privileged Access Management](privileged-access-management-overview.md) allows granular access control over privileged Exchange Online admin tasks in Office 365. It can help protect your organization from breaches that use existing privileged admin accounts with standing access to sensitive data or access to critical configuration settings.
 
 Privileged access management is available in the following subscriptions:
 

@@ -216,7 +216,7 @@
      href: use-content-search-to-search-third-party-data-that-was-imported.md
 - name: Manage insider risks
   items:
-    - name: Microsoft 365 insider risk solutions
+    - name: Microsoft Purview insider risk solutions
       href: insider-risk-solution-overview.md
     - name: Communication compliance
       items:
