@@ -357,9 +357,9 @@ By choosing the settings for retaining and deleting content, your policy for ret
 
     For this configuration, choose the following options:
     
-    - For retention policies: On the **Decide if you want to retain content, delete it, or both** page, select **Only delete items when they reach a certain age**.
+    - For retention policies: On the **Decide if you want to retain content, delete it, or both** page, select **Only delete items when they reach a certain age**, and specify the time period.
     
-    - For retention labels: On the **Define label settings** page, select **Enforce actions after a specific period** and specify the retention period. The option **Choose what happens after the period** is automatically set to **Delete items automatically**.
+    - For retention labels: On the **Define label settings** page, select **Enforce actions after a specific period** and specify the time period, still referred to as the retention period. The option **Choose what happens after the period** is automatically set to **Delete items automatically**.
 
 ### Retaining content for a specific period of time
 
