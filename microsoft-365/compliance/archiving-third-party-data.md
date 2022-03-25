@@ -33,7 +33,7 @@ Watch this interactive guide that demonstrates how to create data connectors to 
 
 ## Third-party data connectors
 
-The Microsoft Purview portal provides native third-party data connectors from Microsoft to import data from various data sources, such as LinkedIn, Instant Bloomberg, and Twitter and data connectors that support the Insider risk management solution. In addition to these data connectors, Microsoft works with the following partners to provide many more third part data connectors in the Microsoft Purview portal. Your organization works with these partners to set up their archiving service before creating a corresponding data connector in the Microsoft Purview portal.
+The Microsoft Purview portal provides native third-party data connectors from Microsoft to import data from various data sources, such as LinkedIn, Instant Bloomberg, and Twitter and data connectors that support the insider risk management solution. In addition to these data connectors, Microsoft works with the following partners to provide many more third part data connectors in the Microsoft Purview portal. Your organization works with these partners to set up their archiving service before creating a corresponding data connector in the Microsoft Purview portal.
 
 - [Veritas](#veritas-data-connectors)
 
@@ -43,7 +43,7 @@ The Microsoft Purview portal provides native third-party data connectors from Mi
 
 - [CellTrust](#celltrust-data-connectors)
 
-The third-party data listed in the next sections (except for HR data and physical badging data that is used for the Microsoft 365 Insider risk management solution) is imported into user mailboxes. The Microsoft Purview solutions that support third-party data are applied to the user mailbox where the data is stored.
+The third-party data listed in the next sections (except for HR data and physical badging data that is used for the insider risk management solution) is imported into user mailboxes. The Microsoft Purview solutions that support third-party data are applied to the user mailbox where the data is stored.
 
 ### Microsoft data connectors
 
@@ -206,7 +206,7 @@ You can use [Communication compliance](communication-compliance.md) to examine t
 
 ### Insider risk management
 
-Signals from third-party data, like selective HR data, can be used by the [Insider risk management](insider-risk-management.md) solution to minimize internal risks by letting you to detect, investigate, and act on risky activities in your organization. For example, data imported by the HR data connector is used as risk indicators to help detect departing employee data theft.
+Signals from third-party data, like selective HR data, can be used by the [insider risk management](insider-risk-management.md) solution to minimize internal risks by letting you to detect, investigate, and act on risky activities in your organization. For example, data imported by the HR data connector is used as risk indicators to help detect departing employee data theft.
 
 ## Using eDiscovery tools to search for third-party data
 
@@ -348,6 +348,6 @@ Some data connectors are available in the US Government cloud. The following sec
 
 ## Working with a Microsoft partner to archive third-party data
 
-Another option for importing and archiving third-party data is for your organization to work with a Microsoft Partner. If a third-party data type isn't supported by the data connectors available in the Microsoft compliance center, you can work with a partner who can provide a custom connector that will be configured to extract items from the third-party data source on a regular basis and then connect to the Microsoft cloud by a third-party API and import those items to Microsoft 365. The partner connector also converts the content of an item from the third-party data source to an email message and then imports it to a mailbox in Microsoft 365.
+Another option for importing and archiving third-party data is for your organization to work with a Microsoft Partner. If a third-party data type isn't supported by the data connectors available in the Microsoft Purview portal, you can work with a partner who can provide a custom connector that will be configured to extract items from the third-party data source on a regular basis and then connect to the Microsoft cloud by a third-party API and import those items to Microsoft 365. The partner connector also converts the content of an item from the third-party data source to an email message and then imports it to a mailbox in Microsoft 365.
 
 For a list of partners that you can work with and the step-by-step process for this method, see [Work with a partner to archive third-party data in Microsoft 365](work-with-partner-to-archive-third-party-data.md).

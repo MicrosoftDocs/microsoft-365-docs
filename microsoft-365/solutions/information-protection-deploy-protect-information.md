@@ -93,7 +93,7 @@ Complete these activities prior to implementing any of the sensitivity label-bas
 1. Understand the following:
    - **Business requirements.** Establish the business reasons for applying sensitivity labels in your enterprise. For example, your data privacy requirements for information protection.
    - **Sensitivity label capabilities.** Sensitivity labeling can get complex, so make sure to read the [sensitivity labels documentation](../compliance/sensitivity-labels.md) before getting started.
-   - **Key things to remember** Sensitivity labels are managed in the Microsoft Compliance admin center but the targeting and application options vary significantly.
+   - **Key things to remember** Sensitivity labels are managed in the Microsoft Purview portal but the targeting and application options vary significantly.
       - There are sensitivity labels for sites, groups, and Teams at the container level (the settings do not apply to content inside the container). These are published to users and groups who apply them when a site, group or Team is provisioned.
       - There are sensitivity labels for active content. These are also published to user or groups, who either manually apply them, or they get applied automatically when:
         - The file is opened/edited/saved, either to the user’s desktop or a SharePoint site.
@@ -246,7 +246,7 @@ Although sensitivity labels can’t be used in DLP policy conditions, certain pr
 
 ### DLP policies
 
-DLP policies are configured in the Microsoft Compliance admin center and specify the level of protection, the sensitive information type the policy is looking for, and the target workloads. Their basic components consist of identifying the protection and the types of data.
+DLP policies are configured in the Microsoft Purview portal and specify the level of protection, the sensitive information type the policy is looking for, and the target workloads. Their basic components consist of identifying the protection and the types of data.
 
 > [!div class="mx-imgBorder"]
 > ![DLP policy configuration in Microsoft 365.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-config.png)

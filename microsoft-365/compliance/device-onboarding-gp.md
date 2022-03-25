@@ -64,7 +64,7 @@ For security reasons, the package used to offboard devices will expire 30 days a
 > [!NOTE]
 > Onboarding and offboarding policies must not be deployed on the same device at the same time, otherwise this will cause unpredictable collisions.
 
-1. Get the offboarding package from [Microsoft Compliance center](https://compliance.microsoft.com/compliancesettings/deviceonboarding).
+1. Get the offboarding package from [Microsoft Purview portal](https://compliance.microsoft.com/compliancesettings/deviceonboarding).
 
 2. In the navigation pane, select **Settings** > **//Device onboarding** > **Offboarding**.
 

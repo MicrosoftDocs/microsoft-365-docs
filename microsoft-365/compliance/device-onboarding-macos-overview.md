@@ -78,7 +78,7 @@ When you want to onboard devices that haven't been onboarded yet, you'll downloa
 
 <!--If you already have devices onboarded into [Microsoft Defender for Endpoint](/windows/security/threat-protection/), they will already appear in the managed devices list.-->
 
-1. Open the [Microsoft compliance center](https://compliance.microsoft.com) **Settings** page and choose **Enable device monitoring**.
+1. Open the [Microsoft Purview portal](https://compliance.microsoft.com) **Settings** page and choose **Enable device monitoring**.
 
    > [!NOTE]
    > While it usually takes about 60 seconds for device onboarding to be enabled, please allow up to 30 minutes before engaging with Microsoft support.

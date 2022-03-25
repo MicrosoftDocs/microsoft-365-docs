@@ -47,7 +47,9 @@ To help protect your organization against insider risks, use these Microsoft 365
 
 ### Communication compliance
 
-Microsoft Purview Communication Compliance helps minimize communication risks by helping you detect, capture, and act on inappropriate messages in your organization. Communication compliance is available in the following subscriptions:
+Microsoft Purview Communication Compliance helps minimize communication risks by helping you detect, capture, and act on inappropriate messages in your organization.
+
+Communication compliance is available in the following subscriptions:
 
 - Microsoft 365 E5/A5/G5 subscription (paid or trial version)
 - Microsoft 365 E3/A3/G5 subscription + the Microsoft 365 E5/A5/G5 Compliance add-on

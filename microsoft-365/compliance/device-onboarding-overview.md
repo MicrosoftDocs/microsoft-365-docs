@@ -110,7 +110,7 @@ If you already have devices onboarded into [Microsoft Defender for Endpoint](/wi
 
 In this deployment scenario, you'll onboard Windows 10 or Windows 11 devices that have not been onboarded yet.
 
-1. Open the [Microsoft compliance center](https://compliance.microsoft.com). Choose **Settings** > **Enable device monitoring**.
+1. Open the [Microsoft Purview portal](https://compliance.microsoft.com). Choose **Settings** > **Enable device monitoring**.
 
    > [!NOTE]
    > While it usually takes about 60 seconds for device onboarding to be enabled, please allow up to 30 minutes before engaging with Microsoft support.

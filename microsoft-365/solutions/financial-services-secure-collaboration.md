@@ -318,17 +318,18 @@ Microsoft 365 recently launched an insider risk management solution that correla
 
 For example, insider risk management in Microsoft 365 can correlate signals from a user's Windows 10 desktop, such as copying files to a USB drive or emailing a personal email account, with activities from online services such as Office 365 email, SharePoint Online, Microsoft Teams, or OneDrive for Business, to identify data exfiltration patterns. It can also correlate these activities with employees leaving an organization, which is a common data exfiltration pattern. It can monitor multiple activities and behavior over time. When common patterns emerge, it can raise alerts and help investigators focus on key activities to verify a policy violation with a high degree of confidence. Insider risk management can pseudo-anonymize data from investigators to help meet data privacy regulations, while still surfacing key activities that help them perform investigations efficiently. It allows investigators to package and securely send key activity data to the HR and legal departments, following common escalation workflows for raising cases for remediation action.
 
-Insider risk management in Microsoft 365 significantly increases capabilities of organizations to monitor and investigate insider risks while allowing organizations to still meet data privacy regulations and follow established escalation paths when cases require higher-level action. For more information about insider risk management in Microsoft 365, see [Modern risk pain points and Workflow in Insider risk management in Microsoft 365](../compliance/insider-risk-management.md).
+Insider risk management in Microsoft 365 significantly increases capabilities of organizations to monitor and investigate insider risks while allowing organizations to still meet data privacy regulations and follow established escalation paths when cases require higher-level action. For more information about insider risk management in Microsoft 365, see [Modern risk pain points and Workflow in Insider risk management](../compliance/insider-risk-management.md).
 
 ![A call center worker in in a cubicle types while viewing a screen.](../media/clo17-call-center-006.jpg)
- 
+
 ### Tenant restrictions
+
 Organizations that deal with sensitive data and put a strict emphasis on security typically want to control the online resources that users can access. At the same time, they want to enable secure collaboration through online services such as Office 365. As a result, controlling the Office 365 environments that users can access becomes a challenge because noncorporate Office 365 environments can be used to exfiltrate data from corporate devices either maliciously or inadvertently. Traditionally, organizations restrict the domains or IP addresses that users can access from corporate devices. But this doesn't work in a cloud-first world, where users need to legitimately access Office 365 services.
 
 Microsoft 365 provides the tenant [restrictions](/azure/active-directory/manage-apps/tenant-restrictions) the capability to address this challenge. Tenant restrictions can be configured to restrict employee access to external Office 365 enterprise tenants using rogue identities (identities that aren't part of your corporate directory). Today, tenant restrictions apply across the tenant, allowing access to only those tenants that appear on the list that you configure. Microsoft is continuing to develop this solution to increase granularity of control and enhance the protections it provides.
 
 ![GRAPHIC.](../media/clo1717-corporate-office-001.jpg)
- 
+
 ## Conclusion
 
 Microsoft 365 and Teams provide an integrated and comprehensive solution for financial services companies, enabling simple yet powerful cloud-based collaboration and communications capabilities across the enterprise. By using security and compliance technologies from Microsoft 365, institutions can operate in a more secure and compliant manner  with robust security controls to protect data, identities, devices, and applications from various operational risks, including cybersecurity and insider risks. Microsoft 365 provides a fundamentally secure platform on which financial services organizations can achieve more while protecting their company, employees, and customers.
