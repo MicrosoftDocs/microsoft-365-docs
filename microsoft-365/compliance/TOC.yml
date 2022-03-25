@@ -1,10 +1,10 @@
-- name: Microsoft 365 compliance
+- name: Microsoft Purview
   href: index.yml
-- name: What's new in Microsoft 365 compliance
+- name: What's new in Microsoft Purview
   href: whats-new.md
 - name: Compliance trials
   items:
-    - name: About the free trial for Microsoft 365 compliance
+    - name: About the free trial for Microsoft Purview
       href: compliance-easy-trials.md
     - name: About the free trial for Microsoft Purview Compliance Manager premium assessments
       href: compliance-easy-trials-compliance-manager-assessments.md
