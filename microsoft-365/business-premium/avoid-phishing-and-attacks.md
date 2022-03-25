@@ -37,6 +37,8 @@ In addition to the protection Microsoft 365 Business Premium offers against atta
 
 ## Best practices
 
+The following are best practices that your front-line users should employ to repel the enemy.
+
 ### Reduce spam mail
 
 Follow these [10 tips on how to help reduce spam](https://support.microsoft.com/en-us/office/10-tips-on-how-to-help-reduce-spam-55f756e8-688b-41c3-a086-8f68ccc592f6).
