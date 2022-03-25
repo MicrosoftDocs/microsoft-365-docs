@@ -34,7 +34,7 @@ When you select **View** for a solution card, you'll see detailed information ab
 
 ## Information protection & governance section
 
-The **Information protection & governance** section shows you at a glance how you can use Microsoft 365 compliance solutions to protect and govern data in your organization.
+The **Information protection & governance** section shows you at a glance how you can use Microsoft Purview solutions to protect and govern data in your organization.
 
 ![Microsoft 365 solution catalog information protection and governance section.](../media/m365-solution-catalog-information-protection-governance.png)
 

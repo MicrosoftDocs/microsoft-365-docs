@@ -1,5 +1,5 @@
 ---
-title: "Learn about archive mailboxes for Microsoft 365 Compliance"
+title: "Learn about archive mailboxes for Microsoft Purview"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -34,7 +34,7 @@ Messages can also be moved to the archive mailbox by the [default Exchange reten
 You can customize your organization's MRM policy with [retention tags](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies). For an example configuration, see [Set up an archive and deletion policy for mailboxes in your organization](set-up-an-archive-and-deletion-policy-for-mailboxes.md).
 
 > [!NOTE]
-> MRM, like Microsoft 365 retention policies and retention labels, can also automatically delete emails after a specified period. As an older technology than Microsoft 365 retention, MRM continues to work side-by-side with retention policies and retention labels from Microsoft 365 Compliance. For more information, see [Use retention policies and retention labels instead of older features](retention.md#use-retention-policies-and-retention-labels-instead-of-older-features).
+> MRM, like Microsoft 365 retention policies and retention labels, can also automatically delete emails after a specified period. As an older technology than Microsoft 365 retention, MRM continues to work side-by-side with retention policies and retention labels from Microsoft Purview. For more information, see [Use retention policies and retention labels instead of older features](retention.md#use-retention-policies-and-retention-labels-instead-of-older-features).
 
 ## Auto-expanding archiving 
 

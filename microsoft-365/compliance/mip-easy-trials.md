@@ -26,11 +26,11 @@ Eligible customers can activate default labels and policies for Microsoft Purvie
 
 These default configurations help you get up and running quickly with Microsoft Purview Information Protection for Microsoft 365. You can use them as-is, make just a few changes, or fully customize them to better suit your business requirements. 
 
-Eligibility includes customers who have a [free trial for Microsoft 365 Compliance](compliance-easy-trials.md) and some customers who already have a Microsoft 365 E5 plan:
+Eligibility includes customers who have a [free trial for Microsoft Purview](compliance-easy-trials.md) and some customers who already have a Microsoft 365 E5 plan:
 
-- **New customers**: If you've had Microsoft 365 Compliance for less than 30 days, your tenant can activate all the listed default configurations. You can always disable, remove, or edit them.
+- **New customers**: If you've had Microsoft Purview for less than 30 days, your tenant can activate all the listed default configurations. You can always disable, remove, or edit them.
 
-- **Existing customers**: If you've had Microsoft 365 Compliance for more than 30 days, you can activate the default configurations if you haven't yet configured an equivalent:
+- **Existing customers**: If you've had Microsoft Purview for more than 30 days, you can activate the default configurations if you haven't yet configured an equivalent:
 
     | Default configuration| Equivalent |
     |:-----|:-----|
@@ -153,7 +153,7 @@ If you want to edit the DLP policy, see [Create, test, and tune a DLP policy](cr
 
 ## DLP for devices
 
-The default DLP policy for devices detects the presence of credit card numbers on Windows 10 devices that have been onboarded into Microsoft 365 compliance. It then audits (does not block) the following actions: 
+The default DLP policy for devices detects the presence of credit card numbers on Windows 10 devices that have been onboarded into Microsoft Purview. It then audits (does not block) the following actions: 
 
 - Upload to cloud service domains or access by unallowed browsers
 

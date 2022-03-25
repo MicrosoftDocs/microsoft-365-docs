@@ -23,7 +23,7 @@
 | 3/14/2022 | [Requirements for Microsoft Defender for Business](/microsoft-365/security/defender-business/mdb-requirements?view=o365-21vianet) | modified |
 | 3/14/2022 | [Enable Modern Authentication for Office 2013 on Windows devices](/microsoft-365/admin/security-and-compliance/enable-modern-authentication?view=o365-21vianet) | modified |
 | 3/14/2022 | [Microsoft 365 auditing solutions](/microsoft-365/compliance/auditing-solutions-overview?view=o365-21vianet) | modified |
-| 3/14/2022 | [Onboard and offboard macOS devices into Microsoft 365 Compliance solutions using JAMF Pro (preview)](/microsoft-365/compliance/device-onboarding-offboarding-macos-jamfpro?view=o365-21vianet) | modified |
+| 3/14/2022 | [Onboard and offboard macOS devices into Microsoft Purview solutions using JAMF Pro (preview)](/microsoft-365/compliance/device-onboarding-offboarding-macos-jamfpro?view=o365-21vianet) | modified |
 | 3/14/2022 | [Microsoft 365 eDiscovery solutions](/microsoft-365/compliance/ediscovery?view=o365-21vianet) | modified |
 | 3/14/2022 | [Create documents using content assembly in Microsoft SharePoint Syntex](/microsoft-365/contentunderstanding/content-assembly) | modified |
 | 3/14/2022 | [Office 365 IP Address and URL web service](/microsoft-365/enterprise/microsoft-365-ip-web-service?view=o365-21vianet) | modified |
@@ -97,9 +97,9 @@
 | 3/16/2022 | [Archive Slack eDiscovery data to Microsoft 365 using a data connector provided by Microsoft](/microsoft-365/compliance/archive-slack-data-microsoft?view=o365-21vianet) | modified |
 | 3/16/2022 | [Onboard macOS devices into Microsoft 365 overview (preview)](/microsoft-365/compliance/device-onboarding-macos-overview?view=o365-21vianet) | modified |
 | 3/16/2022 | [Onboard and offboard macOS devices into Compliance solutions using Microsoft Intune for Microsoft Defender for Endpoint customers (preview)](/microsoft-365/compliance/device-onboarding-offboarding-macos-intune-mde?view=o365-21vianet) | modified |
-| 3/16/2022 | [Onboard and offboard macOS devices into Microsoft 365 Compliance solutions using Microsoft Intune (preview)](/microsoft-365/compliance/device-onboarding-offboarding-macos-intune?view=o365-21vianet) | modified |
+| 3/16/2022 | [Onboard and offboard macOS devices into Microsoft Purview solutions using Microsoft Intune (preview)](/microsoft-365/compliance/device-onboarding-offboarding-macos-intune?view=o365-21vianet) | modified |
 | 3/16/2022 | [Onboard and offboard macOS devices into Compliance solutions using JAMF Pro for Microsoft Defender for Endpoint customers (preview)](/microsoft-365/compliance/device-onboarding-offboarding-macos-jamfpro-mde?view=o365-21vianet) | modified |
-| 3/16/2022 | [Onboard and offboard macOS devices into Microsoft 365 Compliance solutions using JAMF Pro (preview)](/microsoft-365/compliance/device-onboarding-offboarding-macos-jamfpro?view=o365-21vianet) | modified |
+| 3/16/2022 | [Onboard and offboard macOS devices into Microsoft Purview solutions using JAMF Pro (preview)](/microsoft-365/compliance/device-onboarding-offboarding-macos-jamfpro?view=o365-21vianet) | modified |
 | 3/16/2022 | [Onboard Windows 10 or Windows 11 devices into Microsoft 365 overview](/microsoft-365/compliance/device-onboarding-overview?view=o365-21vianet) | modified |
 | 3/16/2022 | [Design a Data loss prevention policy](/microsoft-365/compliance/dlp-policy-design?view=o365-21vianet) | modified |
 | 3/16/2022 | [Learn about named entities (preview)](/microsoft-365/compliance/named-entities-learn?view=o365-21vianet) | modified |
@@ -190,15 +190,15 @@
 | 3/17/2022 | [Microsoft Home Use Program frequently-asked questions (FAQ)](/microsoft-365/commerce/microsoft-home-use-program-faq?view=o365-21vianet) | modified |
 | 3/17/2022 | [Self-service purchase FAQ](/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-21vianet) | modified |
 | 3/17/2022 | [Microsoft Compliance Manager premium assessments trial playbook](/microsoft-365/compliance/compliance-easy-trials-compliance-manager-assessment-playbook?view=o365-21vianet) | modified |
-| 3/17/2022 | [Microsoft 365 compliance solutions trial playbook](/microsoft-365/compliance/compliance-easy-trials-compliance-playbook?view=o365-21vianet) | modified |
-| 3/17/2022 | [About the Microsoft 365 compliance trial](/microsoft-365/compliance/compliance-easy-trials?view=o365-21vianet) | modified |
+| 3/17/2022 | [Microsoft Purview solutions trial playbook](/microsoft-365/compliance/compliance-easy-trials-compliance-playbook?view=o365-21vianet) | modified |
+| 3/17/2022 | [About the Microsoft Purview trial](/microsoft-365/compliance/compliance-easy-trials?view=o365-21vianet) | modified |
 | 3/17/2022 | [Microsoft Compliance Manager FAQ](/microsoft-365/compliance/compliance-manager-faq?view=o365-21vianet) | modified |
 | 3/17/2022 | [FAQ about importing PST files](/microsoft-365/compliance/faqimporting-pst-files-to-office-365?view=o365-21vianet) | modified |
 | 3/17/2022 | [Message Encryption FAQ](/microsoft-365/compliance/ome-faq?view=o365-21vianet) | modified |
 | 3/17/2022 | [Plan for security &amp; compliance](/microsoft-365/compliance/plan-for-security-and-compliance?view=o365-21vianet) | modified |
 | 3/17/2022 | [Protect user and device access](/microsoft-365/compliance/protect-access-to-data-and-services?view=o365-21vianet) | modified |
 | 3/17/2022 | [Set up encryption in Office 365 Enterprise](/microsoft-365/compliance/set-up-encryption?view=o365-21vianet) | modified |
-| 3/17/2022 | [Microsoft 365 Compliance trial terms and conditions](/microsoft-365/compliance/terms-conditions?view=o365-21vianet) | modified |
+| 3/17/2022 | [Microsoft Purview trial terms and conditions](/microsoft-365/compliance/terms-conditions?view=o365-21vianet) | modified |
 | 3/17/2022 | [Address space calculator for Azure gateway subnets](/microsoft-365/enterprise/address-space-calculator-for-azure-gateway-subnets?view=o365-21vianet) | modified |
 | 3/17/2022 | [Test Microsoft 365 with Test Lab Guides (TLGs)](/microsoft-365/enterprise/cloud-adoption-test-lab-guides-tlgs?view=o365-21vianet) | modified |
 | 3/17/2022 | [Create SharePoint Online sites and add users with PowerShell](/microsoft-365/enterprise/create-sharepoint-sites-and-add-users-with-powershell?view=o365-21vianet) | modified |
@@ -400,7 +400,7 @@
 | 3/7/2022 | [Step 5. Protect information](/microsoft-365/solutions/ransomware-protection-microsoft-365-information?view=o365-21vianet) | modified |
 | 3/7/2022 | [Step 1. Configure security baselines](/microsoft-365/solutions/ransomware-protection-microsoft-365-security-baselines?view=o365-21vianet) | modified |
 | 3/7/2022 | [Deploy ransomware protection for your Microsoft 365 tenant](/microsoft-365/solutions/ransomware-protection-microsoft-365?view=o365-21vianet) | modified |
-| 3/7/2022 | [What's new in Microsoft 365 compliance](/microsoft-365/compliance/whats-new?view=o365-21vianet) | modified |
+| 3/7/2022 | [What's new in Microsoft Purview](/microsoft-365/compliance/whats-new?view=o365-21vianet) | modified |
 | 3/7/2022 | [Create a model on a local SharePoint site with Microsoft SharePoint Syntex](/microsoft-365/contentunderstanding/create-local-model) | added |
 | 3/7/2022 | [Introduction to Microsoft SharePoint Syntex](/microsoft-365/contentunderstanding/index) | modified |
 | 3/7/2022 | [Onboard Windows servers to the Microsoft Defender for Endpoint service](/microsoft-365/security/defender-endpoint/configure-server-endpoints?view=o365-21vianet) | modified |
@@ -458,7 +458,7 @@
 | 3/9/2022 | [Import custodians to an Advanced eDiscovery case](/microsoft-365/compliance/bulk-add-custodians?view=o365-21vianet) | modified |
 | 3/9/2022 | [Create eDiscovery holds in a Core eDiscovery case](/microsoft-365/compliance/create-ediscovery-holds?view=o365-21vianet) | modified |
 | 3/9/2022 | [Manage holds in Advanced eDiMicrosoft Purview portalnce/managing-holds?view=o365-21vianet) | modified |
-| 3/9/2022 | [Search the audit log in the Microsoft 365 compliance center](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-21vianet) | modified |
+| 3/9/2022 | [Search the audit log in the Microsoft Purview center](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-21vianet) | modified |
 | 3/9/2022 | [Use Content search for targeted collections](/microsoft-365/compliance/use-content-search-for-targeted-collections?view=o365-21vianet) | modified |
 | 3/9/2022 | [Overview of Microsoft Defender for Business](/microsoft-365/security/defender-business/mdb-overview?view=o365-21vianet) | modified |
 | 3/9/2022 | [Microsoft Defender for Endpoint Device Control Removable Storage Access Control, removable storage media](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control?view=o365-21vianet) | modified |

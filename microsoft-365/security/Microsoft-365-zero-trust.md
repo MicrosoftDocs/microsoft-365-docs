@@ -124,7 +124,7 @@ Go to [**_Evaluate and pilot Microsoft 365 Defender_**](defender/eval-overview.m
 
 Implement Microsoft Purview Information Protection to help you discover, classify, and protect sensitive information wherever it lives or travels.
 
-Microsoft Purview Information Protection capabilities are included with Microsoft 365 Compliance and give you the tools to know your data, protect your data, and prevent data loss.
+Microsoft Purview Information Protection capabilities are included with Microsoft Purview and give you the tools to know your data, protect your data, and prevent data loss.
 
 
 :::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-info-protect.png" alt-text="Information protection capabilities protect data through policy enforcement" lightbox="../media/zero-trust/m365-zero-trust-architecture-info-protect.png":::

@@ -24,7 +24,7 @@ Read this article to get acquainted with the Microsoft Purview portal, [how to g
 
 [![Microsoft Purview portal home page.](../media/m365-compliance-center-home.png)](https://compliance.microsoft.com)
 
-## Welcome to Microsoft 365 compliance
+## Welcome to Microsoft Purview
 
 When you go to your Microsoft Purview portal for the first time, you're greeted with the following welcome message:
 

@@ -74,7 +74,7 @@ Comply with internal policies or regulatory requirements with these compliance f
 |Insider Risk Management|Detect, investigate, and act on malicious and inadvertent risks in your organization. Microsoft 365 can detect these kinds of risks even when a worker is using an unmanaged device.|Microsoft 365 E5 or Microsoft 365 E3 with the Compliance or Insider Risk Management add-ons|
 ||||
 
-See [Quick tasks for getting started with Microsoft 365 compliance](../compliance/compliance-quick-tasks.md) for more information.
+See [Quick tasks for getting started with Microsoft Purview](../compliance/compliance-quick-tasks.md) for more information.
 
 ## Results of Step 3
 

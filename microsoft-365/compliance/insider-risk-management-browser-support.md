@@ -43,7 +43,7 @@ Before installing the Microsoft Edge add-on or Google Chrome extension, customer
 
 - Latest Windows 10 x64 build is recommended, minimum Windows 10 x64 build 1809 for signal detection support. Browser signal detection isn't currently supported on non-Windows devices.
 - Current [Microsoft 365 subscription](/microsoft-365/compliance/insider-risk-management-configure#subscriptions-and-licensing) with insider risk management support.
-- Devices must be [onboarded](/microsoft-365/compliance/insider-risk-management-settings#enable-device-indicators-and-onboard-devices) to the Microsoft 365 Compliance portal.
+- Devices must be [onboarded](/microsoft-365/compliance/insider-risk-management-settings#enable-device-indicators-and-onboard-devices) to the Microsoft Purview portal.
 
 For specific browser configuration requirements, see the Microsoft Edge and Google Chrome sections later in this article.
 

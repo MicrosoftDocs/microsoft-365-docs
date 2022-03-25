@@ -81,7 +81,7 @@ You'll have a 30-day window with the evaluation to monitor and report on advance
 
 ### Roles
 
-**Exchange Online roles** are required to set up Defender for Office 365 in evaluation mode. Assigning a Microsoft 365 compliance or security admin role won't work.
+**Exchange Online roles** are required to set up Defender for Office 365 in evaluation mode. Assigning a Microsoft Purview or security admin role won't work.
 
 - [Learn about permissions in Exchange Online](/exchange/permissions-exo/permissions-exo)
 - [Learn about assigning admin roles](../../admin/add-users/assign-admin-roles.md)

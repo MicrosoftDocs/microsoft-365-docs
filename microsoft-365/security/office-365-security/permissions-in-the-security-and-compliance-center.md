@@ -53,7 +53,7 @@ The following table lists the default role groups that are available in the Secu
 
 Managing permissions in the Security & Compliance Center only gives users access to the compliance features that are available within the Security & Compliance Center itself. If you want to grant permissions to other compliance features that aren't in the Security & Compliance Center, such as Exchange mail flow rules (also known as transport rules), you need to use the Exchange admin center (EAC). For more information, see [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
 
-To see how to grant access to the Security & Compliance Center, check out [Give users access to Microsoft 365 Compliance admin center](grant-access-to-the-security-and-compliance-center.md).
+To see how to grant access to the Security & Compliance Center, check out [Give users access to Microsoft Purview admin center](grant-access-to-the-security-and-compliance-center.md).
 
 > [!NOTE]
 > To view the **Permissions** tab in the Security & Compliance Center, you need to be an admin. Specifically, you need to be assigned the **Role Management** role, and that role is assigned only to the **Organization Management** role group in the Security & Compliance Center by default. Furthermore, the **Role Management** role allows users to view, create, and modify role groups.

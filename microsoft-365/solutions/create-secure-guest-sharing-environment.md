@@ -227,7 +227,7 @@ If you are using sensitivity labels in your organization, you can automatically 
 
 To create an auto-labeling policy
 
-1. Open the [Microsoft 365 compliance admin center](https://compliance.microsoft.com).
+1. Open the [Microsoft Purview admin center](https://compliance.microsoft.com).
 2. In the left navigation, click **Information protection**.
 3. On the **Auto-labeling** tab, click **Create auto-labeling policy**.
 4. On the **Choose info you want this label applied to** page, choose **Custom** and click **Next**.
@@ -257,7 +257,7 @@ You can use [Microsoft Purview data loss prevention (DLP)](../compliance/dlp-lea
 
 To create a DLP rule
 
-1. In the Microsoft 365 compliance admin center, go to the [Data loss prevention page](https://compliance.microsoft.com/datalossprevention).
+1. In the Microsoft Purview admin center, go to the [Data loss prevention page](https://compliance.microsoft.com/datalossprevention).
 2. Click **Create policy**.
 3. Choose **Custom** and click **Next**.
 4. Type a name for the policy and click **Next**.

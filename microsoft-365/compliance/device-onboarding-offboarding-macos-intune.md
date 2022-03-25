@@ -1,5 +1,5 @@
 ---
-title: Onboard and offboard macOS devices into Microsoft 365 Compliance solutions using Microsoft Intune (preview)
+title: Onboard and offboard macOS devices into Microsoft Purview solutions using Microsoft Intune (preview)
 f1.keywords:
     NOCSH
 ms.author: chrfox
@@ -14,12 +14,12 @@ ms.collection:
 - M365-security-compliance 
 search.appverid:
 - MET150 
-description: Learn how to onboard and offboard macOS devices into Microsoft 365 Compliance solutions using Microsoft Intune (preview)
+description: Learn how to onboard and offboard macOS devices into Microsoft Purview solutions using Microsoft Intune (preview)
 ---
 
-# Onboard and offboard macOS devices into Microsoft 365 Compliance solutions using Intune (preview)
+# Onboard and offboard macOS devices into Microsoft Purview solutions using Intune (preview)
 
-You can use Intune to onboard macOS devices into Microsoft 365 compliance solutions.
+You can use Intune to onboard macOS devices into Microsoft Purview solutions.
 
 > [!IMPORTANT]
 > Use this procedure if you ***do not*** have Microsoft Defender for Endpoint (MDE) deployed to your macOS devices
@@ -38,7 +38,7 @@ You can use Intune to onboard macOS devices into Microsoft 365 compliance soluti
 - Install the v95+ Edge browser on your macOS devices 
 
 
-## Onboard macOS devices into Microsoft 365 Compliance solutions using Microsoft Intune
+## Onboard macOS devices into Microsoft Purview solutions using Microsoft Intune
 
 Onboarding a macOS device into Compliance solutions is a six phase process.
 

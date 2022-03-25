@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 compliance support for double byte character set release notes"
+title: "Microsoft Purview support for double byte character set release notes"
 ms.author: chrfox
 author: chrfox
 manager: laurawi

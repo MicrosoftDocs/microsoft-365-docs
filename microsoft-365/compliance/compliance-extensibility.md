@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 compliance extensibility"
+title: "Microsoft Purview extensibility"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -19,18 +19,18 @@ search.appverid:
 ms.assetid: 
 ms.custom:
 - seo-marvel-apr2020
-description: "Learn about extending Microsoft 365 compliance solutions by using third-party data connectors and Microsoft Graph APIs."
+description: "Learn about extending Microsoft Purview solutions by using third-party data connectors and Microsoft Graph APIs."
 ---
 
-# Microsoft 365 Compliance and Microsoft Priva extensibility
+# Microsoft Purview and Microsoft Priva extensibility
 
-Microsoft 365 compliance solutions help organizations intelligently assess their compliance risks, govern and protect sensitive data, and effectively respond to regulatory requirements. Microsoft 365 compliance is rich in extensibility scenarios and enables organizations to adapt, extend, integrate, accelerate, and support their compliance solutions.
+Microsoft Purview solutions help organizations intelligently assess their compliance risks, govern and protect sensitive data, and effectively respond to regulatory requirements. Microsoft Purview is rich in extensibility scenarios and enables organizations to adapt, extend, integrate, accelerate, and support their compliance solutions.
 
 There are two key building blocks for compliance extensibility:
 
 - **Data connectors**. Use to import and archive non-Microsoft data so you can apply Microsoft 365 protection and governance capabilities to third-party data.
 
-- **APIs**. Enables programmatic access to Microsoft 365 compliance capabilities.
+- **APIs**. Enables programmatic access to Microsoft Purview capabilities.
 
 ## Data connectors
 
@@ -48,7 +48,7 @@ For guidance and requirements for third-party data connectors, see the "Data con
 
 ## APIs
 
-Microsoft 365 compliance and Microsoft Priva APIs are available in the Microsoft Information Protection SDK, Microsoft Graph API, and the Office 365 Management Activity API. Some compliance APIs are part of a new set of security and compliance APIs that enable developers for Microsoft 365 customers, independent software vendors, system integrators, and managed security service providers to build high-value security and compliance solutions.
+Microsoft Purview and Microsoft Priva APIs are available in the Microsoft Information Protection SDK, Microsoft Graph API, and the Office 365 Management Activity API. Some compliance APIs are part of a new set of security and compliance APIs that enable developers for Microsoft 365 customers, independent software vendors, system integrators, and managed security service providers to build high-value security and compliance solutions.
 
 To learn more about how to access Graph APIs, see [Overview of Microsoft Graph](/graph/overview).
 

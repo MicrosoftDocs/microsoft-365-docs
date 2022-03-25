@@ -79,7 +79,7 @@ Example showing how users can review and optionally remove identified sensitive 
 
 ![Credit card numbers identified to users as sensitivity content with an option to remove.](../media/detect-sensitive-content.png)
 
-To keep informed when new labeling capabilities become available for built-in labeling, see [What's new in Microsoft 365 compliance](whats-new.md) and the **Sensitivity labels** sections.
+To keep informed when new labeling capabilities become available for built-in labeling, see [What's new in Microsoft Purview](whats-new.md) and the **Sensitivity labels** sections.
 
 ## How to disable the AIP add-in to use built-in labeling for Office apps
 

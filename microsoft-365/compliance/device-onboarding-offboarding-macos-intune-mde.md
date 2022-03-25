@@ -14,7 +14,7 @@ ms.collection:
 - M365-security-compliance 
 search.appverid:
 - MET150 
-description: Learn how to onboard and offboard macOS devices into Microsoft 365 Compliance solutions using Microsoft Intune for MDE customers (preview)
+description: Learn how to onboard and offboard macOS devices into Microsoft Purview solutions using Microsoft Intune for MDE customers (preview)
 ---
 
 # Onboard and offboard macOS devices into Compliance solutions using Intune for Microsoft Defender for Endpoint customers (preview)
@@ -36,7 +36,7 @@ description: Learn how to onboard and offboard macOS devices into Microsoft 365 
 - This supports macOS version Catalina 10.15 and higher
 - Install the v95+ Edge browser on your macOS devices 
 
-## Onboard macOS devices into Microsoft 365 Compliance solutions using Microsoft Intune
+## Onboard macOS devices into Microsoft Purview solutions using Microsoft Intune
 
 Use these steps to onboard a macOS device into Compliance solutions if it already has MDE deployed to it.
 
