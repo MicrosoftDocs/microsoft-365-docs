@@ -26,7 +26,7 @@ description: Learn how to onboard and offboard macOS devices into Microsoft Purv
 
 - Customers who have MDE deployed to their macOS devices.
 - [Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
-- [Insider risk management](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+- [Insider risk management](insider-risk-management.md)
 
 
 ## Before you begin

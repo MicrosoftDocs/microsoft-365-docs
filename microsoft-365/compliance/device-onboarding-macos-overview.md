@@ -24,7 +24,7 @@ MacOS devices can be onboarded into Microsoft Purview solutions using either Int
 **Applies to:**
 
 - [Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
-- [Insider risk management](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+- [Insider risk management](insider-risk-management.md)
 
 ## Before you begin
 
@@ -41,7 +41,7 @@ If you are not familiar with DLP at all, you should familiarize yourself with th
 
 If you are not familiar with Insider Risk, you should familiarize yourself with these articles:
 
- - [Insider risk management](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+ - [Insider risk management](insider-risk-management.md)
  - [Plan for insider risk management](insider-risk-management-plan.md#plan-for-insider-risk-management)
 
 Your macOS devices must already be managed through Intune or JAMF Pro.

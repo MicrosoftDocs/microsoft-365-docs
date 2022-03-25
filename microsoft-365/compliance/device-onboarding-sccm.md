@@ -23,7 +23,7 @@ description: Use Configuration Manager to deploy the configuration package on de
 **Applies to:**
 
 - [Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
-- [Insider risk management](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+- [Insider risk management](insider-risk-management.md)
 
 ### Onboard devices using System Center Configuration Manager
 

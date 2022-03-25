@@ -627,7 +627,7 @@ https://docs.microsoft.com/en-us/microsoft-365/compliance/dlp-configure-view-ale
 
 When a rule is matched, you can send an incident report to your compliance officer (or any people you choose) with details of the event. The report includes information about the item that was matched, the actual content that matched the rule, and the name of the person who last modified the content. For email messages, the report also includes as an attachment the original message that matches a DLP policy.
 
-DLP feeds incident information to other Microsoft 365 information protection services, like [Insider Risk management in Microsoft 365](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365). In order to get incident information to insider risk management, you must set the **Incident reports** severity level to **High**.
+DLP feeds incident information to other Microsoft 365 information protection services, like [Insider Risk management in Microsoft 365](insider-risk-management.md). In order to get incident information to insider risk management, you must set the **Incident reports** severity level to **High**.
 
 <!--![Page for configuring incident reports](../media/31c6da0e-981c-415e-91bf-d94ca391a893.png)-->
 

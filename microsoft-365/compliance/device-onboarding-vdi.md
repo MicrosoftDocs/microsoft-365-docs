@@ -23,7 +23,7 @@ description: Deploy the configuration package on virtual desktop infrastructure 
 **Applies to:**
 
 - [Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
-- [Insider risk management](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+- [Insider risk management](insider-risk-management.md)
 
 - Virtual desktop infrastructure (VDI) devices
 
