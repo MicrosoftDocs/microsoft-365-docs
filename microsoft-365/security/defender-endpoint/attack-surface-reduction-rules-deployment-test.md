@@ -40,7 +40,7 @@ Begin the testing phase by turning on the ASR rules with the rules set to Audit,
 
 You can use Microsoft Endpoint Manager (MEM) Endpoint Security to configure custom ASR rules.
 
-1. Open [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/#home)
+1. Open [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/#home).
 2. Go to **Endpoint Security** > **Attack surface reduction**.
 3. Select **Create Policy**.
 4. In **Platform**, select **Windows 10 and later**, and in **Profile**, select **Attack surface reduction rules**.
@@ -124,12 +124,12 @@ The **GroupBy** returns results set to the following groups:
 
 ### Configuration tab
 
-Lists – on a per-computer basis – the aggregate state of ASR rules: Off, Audit, Block.
+Lists—on a per-computer basis—the aggregate state of ASR rules: Off, Audit, Block.
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="images/asr-defender365-configurations.png" alt-text="The Attack surface reduction rules Configuration tab and an entry in its page" lightbox="images/asr-defender365-configurations.png":::
 
-On the Configurations tab, you can check – on a per-device basis – which ASR rules are enabled, and in which mode, by selecting the device for which you want to review ASR rules.
+On the Configurations tab, you can check—on a per-device basis—which ASR rules are enabled, and in which mode, by selecting the device for which you want to review ASR rules.
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="images/asr-defender365-configurations.settings.png" alt-text="The Attack surface reduction rules enabled and mode" lightbox="images/asr-defender365-configurations.settings.png":::
