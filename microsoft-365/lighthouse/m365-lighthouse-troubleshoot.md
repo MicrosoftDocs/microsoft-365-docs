@@ -48,11 +48,14 @@ This article describes error messages and problems that you might encounter whil
 
 **Cause:** Your customer tenants don't meet the following criteria:
 
-  - Must have delegated (DAP) or granular delegated (GDAP) admin privileges set up for the Managed Service Provider (MSP)
-  - Must have at least one Microsoft 365 Business Premium or Microsoft 365 E3 license
+  - Must have delegated (DAP) set up for the Managed Service Provider (MSP) to be able to manage the customer tenant*
+  - Must have at least one Microsoft 365 Business Premium, Microsoft 365 E3 license, or Windows 365 Business license
   - Must have no more than 1000 licensed users 
 
-**Resolution:** The following table describes the different tenant statuses that require action and explains how to resolve them.<br><br>
+**Resolution:** The following table describes the different tenant statuses that require action and explains how to resolve them.
+
+*Delegated Admin Privileges (DAP) is required to onboard customers to Lighthouse. We recommend also establishing Granular Delegated Admin Privileges (GDAP) with your customers to enable more secure delegated access. While DAP and GDAP coexist, GDAP will take precedence for customers where both models are in place. Soon, customers with just GDAP (and no DAP) will be able to onboard to Lighthouse.<br><br>
+
 
 | Status | Description | Resolution |
 |--|--|--|
