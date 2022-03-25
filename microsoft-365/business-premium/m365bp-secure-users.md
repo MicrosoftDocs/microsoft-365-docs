@@ -30,7 +30,7 @@ description: "Learn how security recommendations for Microsoft 365 Business Prem
 
 ## Features
 
-(FEATURES OF BP HERE)
+Microsoft 365 Business Premium helps your business through productivity and security. 
 
 ## Train your users
 
