@@ -120,16 +120,13 @@ To assign preset security policies, follow these steps:
 
 ## Create custom security policies (if necessary)
 
-For most businesses, [preset security policies](#what-are-preset-security-policies) provide strong protection for users, groups, and domains. However, you're not limited to using preset security policies only. You can define your own custom security policies to suit your company's needs. 
+The [preset security policies](#what-are-preset-security-policies) described earlier in this article provide strong protection for most businesses. However, you're not limited to using preset security policies only. You can define your own custom security policies to suit your company's needs. 
 
-Use our quick-start guide, [Protect against threats](../security/office-365-security/protect-against-threats.md) to get started creating your own custom policies. The guide not only walks you through how to set up your own security policies, it also provides recommended settings to use as a starting point.
+Use our quick-start guide, [Protect against threats](../security/office-365-security/protect-against-threats.md), to get started creating your own custom policies. The guide not only walks you through how to set up your own security policies, it also provides recommended settings to use as a starting point.
 
 ## Tune-up anonymous sharing settings for SharePoint and OneDrive files and folders
 
-(Change default anonymous link expiration to 14 days, and change default sharing type to "Specific People")
-
-To change the sharing settings for OneDrive and SharePoint:
-
+By default, sharing levels are set to the most permissive level for both SharePoint and OneDrive. We recommend changing the default settings to better protect your business.
 
 1. Go to <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Sharing** in the SharePoint admin center</a>, and sign in with an account that has [admin permissions for your organization](/sharepoint/sharepoint-admin-role).
  
@@ -140,6 +137,9 @@ To change the sharing settings for OneDrive and SharePoint:
 4. Under **Other settings**, select the options you want to use.
 
 5. Then choose **Save**.
+
+> [!TIP]
+> To learn more about these settings, see [Manage sharing settings](/sharepoint/turn-external-sharing-on-or-off).
 
 ## Activity alerts
 
@@ -153,9 +153,11 @@ The following figure shows the default policies that are included with Microsoft
 
 You can prevent people in your organization from sharing their calendars, or you can also manage what they can share. For example, you can restrict the sharing to free/busy times only.
 
-1. Go to the admin center at <https://admin.microsoft.com> and choose **Settings** \> **Org Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**Services**</a>.
+1. Go [Org settings in the Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2053743) and sign in.
 
 2. Choose **Calendar**, and choose whether people in your organization can share their calendars with people outside who have Office 365 or Exchange, or with anyone.
+
+   We recommend clearing the External sharing option.
 
    If you choose the share with anyone option, you can decide to also only share free/busy information.
 
