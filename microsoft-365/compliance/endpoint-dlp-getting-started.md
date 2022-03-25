@@ -51,7 +51,7 @@ If you are onboarding Windows 10 or Windows 11 devices, check to make sure that 
 
 For a general introduction to onboarding Windows devices, see:
 
-- [Onboard Windows 10 and Windows 11 devices into Microsoft 365 overview](device-onboarding-overview.md#onboard-windows-10-and-windows-11-devices-into-microsoft-365-overview)
+- [Onboard Windows 10 and Windows 11 devices into Microsoft Purview overview](device-onboarding-overview.md#onboard-windows-10-and-windows-11-devices-into-microsoft-365-overview)
 
 For specific guidance to onboarding Windows devices, see:
 
@@ -67,7 +67,7 @@ Topic | Description
 
 For a general introduction to onboarding macOS devices, see:
  
-- [Onboard macOS devices into Microsoft 365 overview (preview)](device-onboarding-macos-overview.md#onboard-macos-devices-into-microsoft-365-overview-preview)
+- [Onboard macOS devices into Microsoft 365 Purview](device-onboarding-macos-overview.md#onboard-macos-devices-into-microsoft-365-overview-preview)
 
 For specific guidance to onboarding macOS devices, see:
 

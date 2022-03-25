@@ -17,7 +17,7 @@ ms.collection:
 - SPO_Content
 search.appverid: 
 - MET150
-description: "Learn how to plan for and migrate your Exchange online data loss prevention policies into Microsoft 365 DLP."
+description: "Learn how to plan for and migrate your Exchange online data loss prevention policies into DLP."
 ---
 
 # Migrate Exchange Online data loss prevention policies to Compliance center
@@ -130,7 +130,7 @@ Test and review your policies.
 1. Follow the [Test a DLP policy](create-test-tune-dlp-policy.md#test-a-dlp-policy) procedures.
 2. Review the events created by the policy in [Activity explorer](data-classification-activity-explorer.md).
 
-## Review the policy matches between Exchange Admin Center DLP and Microsoft 365 Unified DLP
+## Review the policy matches between Exchange Admin Center DLP and Microsoft Purview Unified DLP
 
 To ensure that the migrated policies behave as expected, you can export the reports from both admin centers and do a comparison of the policy matches.
 
