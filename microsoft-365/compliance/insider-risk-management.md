@@ -71,7 +71,7 @@ Whether you're setting up insider risk management for the first time or getting 
 
 The insider risk management workflow helps you identify, investigate, and take action to address internal risks in your organization. With focused policy templates, comprehensive activity signaling across the Microsoft 365 service, and alert and case management tools, you can use actionable insights to quickly identify and act on risky behavior.
 
-Identifying and resolving internal risk activities and compliance issues with insider risk management in Microsoft 365 uses the following workflow:
+Identifying and resolving internal risk activities and compliance issues with insider risk management uses the following workflow:
 
 ![Insider risk management workflow.](../media/insider-risk-workflow.png)
 

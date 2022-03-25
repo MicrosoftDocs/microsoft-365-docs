@@ -1,6 +1,6 @@
 ---
-title: Communication compliance in Microsoft 365
-description: Learn how to configure communication compliance in Microsoft 365.
+title: Communication compliance
+description: Learn how to configure communication compliance in Microsoft Purview.
 keywords: Microsoft 365, insider risk, compliance
 ms.localizationpriority: medium
 ms.prod: microsoft-365-enterprise
@@ -18,11 +18,11 @@ ms.collection:
 - m365solution-scenario
 ---
 
-# Communication compliance in Microsoft 365
+# Communication compliance
 
-Protecting sensitive information and detecting and acting on workplace harassment incidents is an important part of compliance with internal policies and standards. Communication compliance in Microsoft 365 helps minimize these risks by helping you quickly detect, capture, and take remediation actions for email and Microsoft Teams communications. These include inappropriate communications containing profanity, threats, and harassment and communications that share sensitive information inside and outside of your organization.
+Protecting sensitive information and detecting and acting on workplace harassment incidents is an important part of compliance with internal policies and standards. Microsoft Purview Communication Compliance helps minimize these risks by helping you quickly detect, capture, and take remediation actions for email and Microsoft Teams communications. These include inappropriate communications containing profanity, threats, and harassment and communications that share sensitive information inside and outside of your organization.
 
-## Configure communication compliance for Microsoft 365
+## Configure communication compliance
 
 Use the following steps to configure communication compliance for your organization:
 

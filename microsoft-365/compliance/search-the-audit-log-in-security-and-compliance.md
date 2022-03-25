@@ -1080,7 +1080,7 @@ The following table lists the activities a disposition reviewer took when an ite
 
 ### Communication compliance activities
 
-The following table lists communication compliance activities that are logged in the Microsoft 365 audit log. For more information, see [Learn about communication compliance in Microsoft 365](communication-compliance.md).
+The following table lists communication compliance activities that are logged in the Microsoft 365 audit log. For more information, see [Learn about communication compliance](communication-compliance.md).
 
 |**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|

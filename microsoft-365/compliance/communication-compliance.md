@@ -41,7 +41,7 @@ For the latest Ignite presentations for communication compliance, see the follow
 - [Fulfill regulatory compliance requirements with communication compliance](https://www.youtube.com/watch?v=gagOhtCBfgU)
 - [Better with Microsoft Teams - Learn more about the latest native Teams integrated features in communication compliance](https://www.youtube.com/watch?v=m4jukD5Fh-o)
 
-For a quick overview of communication compliance, see the [Detect workplace harassment and respond with Communication Compliance in Microsoft 365](https://youtu.be/z33ji7a7Zho) video on the [Microsoft Mechanics channel](https://www.youtube.com/user/OfficeGarageSeries).
+For a quick overview of communication compliance, see the [Detect workplace harassment and respond with Communication Compliance](https://youtu.be/z33ji7a7Zho) video on the [Microsoft Mechanics channel](https://www.youtube.com/user/OfficeGarageSeries).
 
 Check out how [TD Securities is using communication compliance](https://customers.microsoft.com/story/1391545301764211731-td-securities-banking-capital-markets-compliance) to address their regulatory obligations and meet their security and stability needs.
 
@@ -68,7 +68,7 @@ Communication compliance policies can assist with reviewing messages in your org
 
 ## Key feature areas
 
-Communication compliance in Microsoft 365 offers several important features to help address compliance concerns on your messaging platforms:
+Communication compliance offers several important features to help address compliance concerns on your messaging platforms:
 
 - Intelligent customizable templates
 - Flexible remediation workflows
@@ -124,7 +124,7 @@ To learn more about messaging channel support in communication compliance polici
 
 Communication compliance helps you address common pain points associated with complying with internal policies and regulatory compliance requirements. With focused policy templates and a flexible workflow, you can use actionable insights to quickly resolve detected compliance issues.
 
-Identifying and resolving compliance issues with communication compliance in Microsoft 365 uses the following workflow:
+Identifying and resolving compliance issues with communication compliance uses the following workflow:
 
 ![Communication compliance workflow.](../media/communication-compliance-workflow.png)
 
@@ -179,4 +179,4 @@ Keeping track and managing compliance issues identified by communication complia
 
 - For planning information, see [Plan for communication compliance](communication-compliance-plan.md).
 - Check out the [case study for Contoso](communication-compliance-case-study.md) and see how they quickly configured a communication compliance policy to monitor for inappropriate content in Microsoft Teams, Exchange Online, and Yammer communications.
-- To configure communication compliance for your Microsoft 365 organization, see [Configure communication compliance for Microsoft 365](communication-compliance-configure.md).
+- To configure communication compliance for your Microsoft 365 organization, see [Configure communication compliance](communication-compliance-configure.md).

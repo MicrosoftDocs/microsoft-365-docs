@@ -30,7 +30,7 @@ The solution catalog is organized into sections that contain information cards f
 
 When you select **View** for a solution card, you'll see detailed information about the compliance solution and how to get started. This information includes an overview, pre-configuration requirements, learning resources, controls that allow you to pin the card to the navigation pane, and an option to share the solution as a link, email, or Microsoft Teams message.
 
-![Microsoft 365 communication compliance solution.](../media/m365-solution-catalog-communication-compliance.png)
+![Communication compliance solution.](../media/m365-solution-catalog-communication-compliance.png)
 
 ## Information protection & governance section
 

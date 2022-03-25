@@ -90,6 +90,6 @@ First, make sure that you have the appropriate licenses and permissions. Then, s
 
 - **Get acquainted with and set up Microsoft Defender for Cloud Apps**. See [Quickstart: Get started with Microsoft Defender for Cloud Apps](/cloud-app-security/getting-started-with-cloud-app-security).
 
-- **Learn about and create communication compliance policies** to quickly identify and remediate corporate code-of-conduct policy violations. See [Communication compliance in Microsoft 365](communication-compliance.md).
+- **Learn about and create communication compliance policies** to quickly identify and remediate corporate code-of-conduct policy violations. See [Learn about communication compliance](communication-compliance.md).
 
 - **Visit your Microsoft Purview portal often**, and make sure to review any alerts or potential risks that arise. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and sign in.
