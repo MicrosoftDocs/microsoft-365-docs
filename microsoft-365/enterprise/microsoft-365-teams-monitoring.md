@@ -18,7 +18,7 @@ f1.keywords:
 description: "Use Teams monitoring for information about incidents or advisories related to Microsoft 365 Teams."
 ---
 
-## Microsoft 365 Teams monitoring
+# Microsoft 365 Teams monitoring
 
 Microsoft Teams monitoring supports the following organizational scenarios with near real-time information:
 

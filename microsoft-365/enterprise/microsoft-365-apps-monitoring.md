@@ -18,7 +18,7 @@ f1.keywords:
 description: "Use Apps monitoring for information about incidents or advisories related to Microsoft 365 Apps."
 ---
 
-## Microsoft 365 Apps monitoring
+# Microsoft 365 Apps monitoring
 
 Microsoft 365 Apps monitoring supports the following organizational-level scenarios for these desktop Office applications: Access, Excel, OneNote, Outlook, PowerPoint, Publisher, and Word.
 
