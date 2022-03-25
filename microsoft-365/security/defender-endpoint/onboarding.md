@@ -38,7 +38,8 @@ These are the steps you need to take to deploy Defender for Endpoint:
 - Step 1: Onboard endpoints to the service
 - Step 2: Configure capabilities
 
-![Illustration of the deployment steps](images/deployment-steps.png)
+:::image type="content" source="images/deployment-steps.png" alt-text="The deployment steps" lightbox="images/deployment-steps.png":::
+
 
 
 
