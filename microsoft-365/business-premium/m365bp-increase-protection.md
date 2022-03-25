@@ -135,13 +135,15 @@ By default, sharing levels are set to the most permissive level for both SharePo
 > [!TIP]
 > To learn more about these settings, see [Manage sharing settings](/sharepoint/turn-external-sharing-on-or-off).
 
-## Review your activity alerts
+## Review your alert policies
 
-You can use activity alerts to track admin and user activities and detect malware and data loss prevention incidents in your organization. Your subscription includes a set of default policies, but you can also create custom ones. For more information, see [alert policies](../compliance/alert-policies.md). For example, if you store an important file in SharePoint that you don't want anyone to share externally, you can create a notification that alerts you if someone does share it.
+You can use activity alerts to track admin and user activities and detect malware and data loss prevention incidents in your organization. Your subscription includes a set of default policies, but you can also create custom ones. For example, if you store an important file in SharePoint that you don't want anyone to share externally, you can create a notification that alerts you if someone does share it.
 
 The following figure shows the default policies that are included with Microsoft 365.
 
 ![Default alert policies included with Microsoft 365.](../media/alertpolicies.png)
+
+For more information, see [alert policies](../compliance/alert-policies.md).
 
 ## Disable or manage calendar sharing
 
