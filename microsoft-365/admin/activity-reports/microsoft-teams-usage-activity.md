@@ -50,7 +50,8 @@ Additionally, a table shows usage details for individual teams, such as last act
 
 <br/>![Microsoft 365 reports - Microsoft Teams usage activity table.](../../media/teams-usage-table.png)
 
-In the table, select **Choose columns** to add or remove columns from the report.  <br/> ![Teams usage activity report - choose columns.](../../media/teams-usage-columns.png)
+In the table, select **Choose columns** to add or remove columns from the report. <br/>  <br/> 
+![Teams usage activity report - choose columns.](../../media/teams-usage-columns.png)
 
 You can also export the report data into an Excel .csv file by selecting the **Export** link. This exports data of all users and enables you to do simple sorting and filtering for further analysis. If you have less than 2000 users, you can sort and filter within the table in the report itself. If you have more than 2000 users, in order to filter and sort, you will need to export the data. The exported format for **audio time**, **video time**, and **screen share time** follows ISO8601 duration format.
 
@@ -82,12 +83,12 @@ The Teams usage chart shows data on the following metrics.
 |:-----|:-----|
 |**Metric**|**Definition**|
 |Team ID  <br/> |Team GUID <br/>|  
-|Internal active users   <br/> |Internal users and guests that reside in the same tenant. Internal users exclude guests.   <br/> <br/>Users that have at least one panel action in the specified time period including guests |
-|Active guests     <br/> |Guest - A persons from outside your organization who accesses shared resources by signing in to a guest account in my directory. <br/> <br/> Guests that have at least one panel action in the specified time period. |
-|External active users   <br/> |External user - A person from outside your organization who is participating in a resource – such as a shared channel – using their own identity and not a guest account in your directory.  <br/><br/> External users that have at least one panel action in the specified time period. |  
-|Active channels    <br/> |Valid Channels in active teams that have at least one active user in the specified time period including public/private/shared channels. <br/>  |
-|Active shared channels      <br/> |Shared channel - A Teams channel that can be shared with people outside the team. These people can be inside your organization or from other Azure AD organizations.  <br/> <br/> Valid shared channels in active teams that have at least one active user in the specified time. |
-|Total organized meetings   <br/> |The sum of one-time scheduled, Recurring, ad hoc and unclassified meetings a user organized during the specified time period.  <br/>|  
+|Internal active users   <br/> |Users that have at least one panel action in the specified time period including guests. <br/> <br/> Internal users and guests that reside in the same tenant. Internal users exclude guests.   |
+|Active guests     <br/> |Guests that have at least one panel action in the specified time period. <br/> <br/> A guest is defined as persons from outside your organization who accesses shared resources by signing in to a guest account in my directory.   |
+|External active users   <br/> |External users that have at least one panel action in the specified time period.<br/><br/> An external user is defined as a person from outside your organization who is participating in a resource – such as a shared channel – using their own identity and not a guest account in your directory.   |  
+|Active channels    <br/> |Valid channels in active teams that have at least one active user in the specified time period. This includes public, private, or shared channels. <br/>  |
+|Active shared channels      <br/> |Valid shared channels in active teams that have at least one active user in the specified time. <br/> <br/>A shared channel is defined as a Teams channel that can be shared with people outside the team. These people can be inside your organization or from other Azure AD organizations.   |
+|Total organized meetings   <br/> |The sum of one-time scheduled, recurring, ad hoc and unclassified meetings a user organized during the specified time period.  <br/>|  
 |Posts    <br/> |Count of all the post messages in channels in the specified time period.  |
 |Replies     <br/> |Count of all the reply messages in channels in the specified time period.  |
 |Mentions  <br/> |Count of all mentions made in the specified time period. <br/>|  
