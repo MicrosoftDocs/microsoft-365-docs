@@ -27,21 +27,16 @@ ms.custom: api
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
-
 
 Automating security procedures is a standard requirement for every modern Security Operations Center (SOC). For SOC teams to operate in the most efficient way, automation is a must. Use Microsoft Power Automate to help you create automated workflows and build an end-to-end procedure automation within a few minutes. Microsoft Power Automate supports different connectors that were built exactly for that.  
 
-Use this article to guide you in creating automations that is triggered by an event, such as when an new alert is created in your tenant. Microsoft Defender API has an official Power Automate Connector with many capabilities. 
-
-
+Use this article to guide you in creating automations that are triggered by an event, such as when a new alert is created in your tenant. Microsoft Defender API has an official Power Automate Connector with many capabilities. 
 
 :::image type="content" source="images/api-flow-0.png" alt-text="The Actions page in the Microsoft Defender 365 portal" lightbox="images/api-flow-0.png" :::
 
 > [!NOTE]
 > For more details about premium connectors licensing prerequisites, see [Licensing for premium connectors](/power-automate/triggers-introduction#licensing-for-premium-connectors).
-
 
 ## Usage example
 
