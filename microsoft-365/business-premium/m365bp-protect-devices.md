@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: v-kcirillo
 author: cirilk
 manager: scotv
-ms.date: 03/14/2022
+ms.date: 03/24/2022
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -35,7 +35,7 @@ Welcome to your final critical mission. Here, you will onboard and implement pro
 Your mission objectives:
 
 - [Set up managed devices](m365bp-managed-devices-setup.md)
-- [Onboard enrolled devices and apply policies](m365bp-onboard-devices-mdb)
+- [Onboard enrolled devices and apply policies](m365bp-onboard-devices-mdb.md)
 - [Review and edit device policies](m365bp-view-edit-create-mdb-policies.md)
 - [Manage device groups](m365bp-device-groups-mdb.md)
 
