@@ -28,13 +28,15 @@ The unified **Trials** portal in the Microsoft 365 Defender portal provides a si
 
   ![Mail flows from the internet through the third-party protection service or device before delivery into Microsoft 365.](../../media/mdo-migration-before.png)
 
-  In this type of environment, you can only try Defender for Office 365 in *audit* mode. You don't need to change your mail flow (MX records) for the evaluation.
+  In these environments, you can only try Defender for Office 365 in *audit* mode. You don't need to change your mail flow (MX records) to try Defender for Office 365.
 
 - You already have a Microsoft 365 organization. Mail from the internet flows directly Microsoft 365, but your current subscription has only [Exchange Online Protection (EOP)](exchange-online-protection-overview.md) or [Defender for Office 365 Plan 1](overview.md#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet).
 
   ![Mail flows from the internet into Microsoft 365, with protection from EOP and/or Defender for Office 365 Plan 1.](../../media/mdo-trial-mail-flow.png)
 
-  In this type of environment, you can try Defender for Office 365 in *audit* mode or in *blocking mode*.
+  In these environments, you can try Defender for Office 365 in *audit* mode or in *blocking mode*.
+
+You're invited to start your trial in various Defender for Office 365 feature locations in the Microsoft 365 Defender portal at <https://security.microsoft.com>. The centralized location to start your trial is on the **Trials** page at <https://security.microsoft.com/atpEvaluation>.
 
 The rest of this article explains the difference between audit mode blocking mode and audit mode for Defender for Office 365 evaluations, how to configure evaluations, and other details.
 
@@ -60,9 +62,9 @@ When you evaluate Defender for Office 365, the policies that control protection 
 
 - **Defender for Office 365**: Policies that are exclusive to Defender for Office 365 are created for your evaluation of Defender for Office 365:
 
+  - [Impersonation protection in anti-phishing policies](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
   - [Safe Attachments for email messages](safe-attachments.md)
   - [Safe Links for email messages and Microsoft Teams](safe-links.md)
-  - [Impersonation protection in anti-phishing policies](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
 
   But, the nature of these Defender for Office 365 policies are different in blocking mode and audit mode:
 
@@ -70,13 +72,13 @@ When you evaluate Defender for Office 365, the policies that control protection 
 
   - **Blocking mode**: Policies are created using the Standard template for [preset security policies](preset-security-policies.md). Defender for Office 365 *detects* and *takes action on* harmful messages (for example, detected messages are quarantined).
 
-  The default and recommended selection is to scope these Defender for Office 365 policies to all users in the organization. But, during or after setup, you can change the policy assignment to specific users, groups, or email domains.
+  The default and recommended selection is to scope these Defender for Office 365 policies to all users in the organization. But during or after setup, you can change the policy assignment to specific users, groups, or email domains.
 
 **Notes**:
 
-- Safe Link wil detonate URLs mail flow. To prevent specific URLs from being detonated, use the Tenant Allow/Block List. For more information, see [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
-
+- Safe Link wil detonate URLs in mail flow. To prevent specific URLs from being detonated, use the Tenant Allow/Block List. For more information, see [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
 - Safe Links does not wrap URL links in email message bodies.
+- The evaluation policy settings are described in the [Evaluation policy settings](#evaluation-policy-settings) section later in this article.
 
 ## Set up an evaluation in audit mode
 
@@ -174,11 +176,22 @@ When you evaluate Defender for Office 365, the policies that control protection 
 
 ## Reporting in audit mode
 
+- The [Threat protection status report](view-email-security-reports.md#threat-protection-status-report) shows detections by Defender for Office 365 in the following views:
+  - [View data by Email \> Malware and Chart breakdown by Detection Technology](view-email-security-reports.md#view-data-by-email--malware-and-chart-breakdown-by-detection-technology)
+  - [View data by Email \> Spam and Chart breakdown by Detection Technology](view-email-security-reports.md#view-data-by-email--spam-and-chart-breakdown-by-detection-technology)
+  - [View data by Email \> Phish and Chart breakdown by Detection Technology](view-email-security-reports.md#view-data-by-email--phish-and-chart-breakdown-by-detection-technology)
+
+- In [Threat Explorer](threat-explorer.md), messages that were detected by the Defender for Office 365 evaluation show the following banner in the details of the entry:
+
+  ![Notification banner in message details that the Defender for Office 365 evaluation detected a malicious email message.](../../media/evalv2-detection-banner.png)
+
+<!--- This stuff is likely not applicable for V2 reporting --->
+
 The **Microsoft Defender for Office 365 evaluation** page at <https://security.microsoft.com/atpEvaluation> consolidates the reporting for the policies in the evaluation:
 
+- Impersonation protection in anti-phishing policies
 - Safe Links
 - Safe Attachments
-- Impersonation protection in anti-phishing policies
 
 By default, the charts show data for the last 30 days, but you can filter the date range by clicking ![Calendar icon.](../../media/m365-cc-sc-add-internal-icon.png) **30 days** and selecting from following additional values that are less than 30 days:
 
@@ -197,3 +210,111 @@ Permissions that are required in **Azure AD** to set up an evaluation of Defende
 - **View evaluation policies and reports**: Security Administrator or Security Reader.
 
 For more information about Azure AD permissions in the Microsoft 365 Defender portal, see [Azure AD roles in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md#azure-ad-roles-in-the-microsoft-365-defender-portal)
+
+## Evaluation policy settings
+
+The settings in the Defender for Office 365 that are specifically created for the evaluation are described in the following tables:
+
+**Anti-phishing evaluation policy settings**:
+
+|Setting|Value|
+|---|---|
+|AdminDisplayName|Evaluation Policy|
+|AuthenticationFailAction|MoveToJmf|
+|Enabled|True|
+|EnableFirstContactSafetyTips|False|
+|EnableMailboxIntelligence|True|
+|EnableMailboxIntelligenceProtection|True|
+|EnableOrganizationDomainsProtection|False||
+|EnableSimilarDomainsSafetyTips|False|
+|EnableSimilarUsersSafetyTips|False|
+|EnableSpoofIntelligence|True|
+|EnableSuspiciousSafetyTip|False|
+|EnableTargetedDomainsProtection|False|
+|EnableTargetedUserProtection|False|
+|EnableUnauthenticatedSender|True|
+|EnableUnusualCharactersSafetyTips|False|
+|EnableViaTag|True|
+|Guid|GUID value|
+|ImpersonationProtectionState|Manual|
+|IsDefault|False|
+|MailboxIntelligenceProtectionAction|NoAction|
+|MailboxIntelligenceProtectionActionRecipients|{}|
+|MailboxIntelligenceQuarantineTag|DefaultFullAccessPolicy|
+|Name|Evaluation Policy|
+|PhishThresholdLevel|1|
+|RecommendedPolicyType|Evaluation|
+|SpoofQuarantineTag|DefaultFullAccessPolicy|
+|TargetedDomainActionRecipients|{}|
+|TargetedDomainProtectionAction|NoAction|
+|TargetedDomainQuarantineTag|DefaultFullAccessPolicy|
+|TargetedUserActionRecipients|{}|
+|TargetedUserProtectionAction|NoAction|
+|TargetedUserQuarantineTag|DefaultFullAccessPolicy|
+|||
+|AntiPhishPolicyLevelDataList|blank|
+|AntiSpoofEnforcementType|High|
+|AuthenticationSafetyTipText|blank|
+|AuthenticationSoftPassSafetyTipText|blank|
+|EnableAuthenticationSafetyTip|False|
+|EnableAuthenticationSoftPassSafetyTip|False|
+|PolicyTag|blank|
+|SimilarUsersSafetyTipsCustomText|blank|
+|TreatSoftPassAsAuthenticated|True|
+|UnusualCharactersSafetyTipsCustomText|blank|
+|||
+|ExcludedDomains|{}|
+|ExcludedSenders|{}|
+|TargetedDomainsToProtect|{}|
+|TargetedUsersToProtect|{}|
+
+**Safe Attachments evaluation policy settings**:
+
+|Setting|Value|
+|---|---|
+|Action|Allow|
+|ActionOnError|True|
+|AdminDisplayName|Evaluation Policy|
+|ConfidenceLevelThreshold|80|
+|Enable|True|
+|EnableOrganizationBranding|False|
+|Guid|GUID value|
+|IsBuiltInProtection|False|
+|IsDefault|False|
+|Name|Evaluation Policy|
+|OperationMode|Delay|
+|QuarantineTag|AdminOnlyAccessPolicy|
+|RecommendedPolicyType|Evaluation|
+|Redirect|False|
+|RedirectAddress|{}|
+|ScanTimeout|30|
+
+**Safe Links evaluation policy settings**:
+
+|Setting|Value|
+|---|---|
+|AdminDisplayName|Evaluation Policy|
+|AllowClickThrough|False|
+|CustomNotificationText|blank|
+|DeliverMessageAfterScan|True|
+|DisableUrlRewrite|True|
+|DoNotRewriteUrls|{}|
+|EnableForInternalSenders|False|
+|EnableOrganizationBranding|False|
+|EnableSafeLinksForTeams|True|
+|Guid|GUID value|
+|IsBuiltInProtection|False|
+|IsDefault|False|
+|IsEnabled|True|
+|LocalizedNotificationTextList|{}|
+|Name|"EvaluationPolicy"|
+|RecommendedPolicyType|Evaluation|
+|ScanUrls|True|
+|TrackClicks|True|
+|||
+|DoNotAllowClickThrough|blank|
+|DoNotTrackUserClicks|False|
+|EnableSafeLinksForEmail|True|
+|EnableSafeLinksForOffice|True|
+|ExcludedUrls|{}|
+|WhiteListedUrls|blank|
