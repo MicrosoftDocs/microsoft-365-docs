@@ -117,7 +117,7 @@ Permissions are granted through certain roles, such as those that are described 
 
 If you're already using AIR capabilities in Microsoft Defender for Office 365, you're about to see some changes in the [improved Microsoft 365 Defender portal](../defender/microsoft-365-defender.md#the-microsoft-365-defender-portal).
 
-:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Unified Action center.":::
+:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="The Unified Action center" lightbox="../../media/m3d-action-center-unified.png":::
 
 The new and improved Microsoft 365 Defender portal <https://security.microsoft.com> brings together AIR capabilities in [Microsoft Defender for Office 365](defender-for-office-365.md) and in [Microsoft Defender for Endpoint](../defender-endpoint/automated-investigations.md). With these updates and improvements, your security operations team will be able to view details about automated investigations and remediation actions across your email, collaboration content, user accounts, and devices, all in one place.
 
