@@ -64,7 +64,7 @@ By default, the following actions are available in the quarantine notification f
 - **Release**: You can release the message here without going to **Quarantine** in the Microsoft 365 Defender portal.
 - **Review**: Click this link to go to **Quarantine** in the Microsoft 365 Defender portal, where you can (depending on why the message was quarantined) view, release, delete or report your quarantined messages. For more information, see [Find and release quarantined messages as a user in EOP](find-and-release-quarantined-messages-as-a-user.md).
 
-![Example quarantine notification.](../../media/end-user-spam-notification.png)
+:::image type="content" source="../../media/end-user-spam-notification.png" alt-text="The example of a quarantine notification" lightbox="../../media/end-user-spam-notification.png":::
 
 > [!NOTE]
 > A blocked sender can still send you mail. Any messages from this sender that make it to your mailbox will be immediately moved to the Junk Email folder. Future messages from this sender will go to your Junk Email folder or to quarantine. If you would like to delete these messages on arrival instead of quarantining them, use [mail flow rules](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (also known as transport rules) to delete the messages on arrival.

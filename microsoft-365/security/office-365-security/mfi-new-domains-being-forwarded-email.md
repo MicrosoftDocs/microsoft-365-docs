@@ -32,11 +32,12 @@ The **New domains being forwarded email** insight in the [Security & Compliance 
 
 This insight appears only when the issue is detected, and it appears on the [Forwarding report](view-mail-flow-reports.md#forwarding-report) page.
 
-![New domains being forwarded email insight.](../../media/mfi-new-domains-being-forwarded.png)
+:::image type="content" source="../../media/mfi-new-domains-being-forwarded.png" alt-text="The New domains being forwarded email insight" lightbox="../../media/mfi-new-domains-being-forwarded.png":::
+
 
 When you click on the widget, a flyout appears where you can find more details about the forwarded messages, including a link back to the [Forwarding report](view-mail-flow-reports.md#forwarding-report).
 
-![Details flyout that appears after clicking on the New domains being forwarded email insight.](../../media/mfi-new-domains-being-forwarded-details.png)
+:::image type="content" source="../../media/mfi-new-domains-being-forwarded-details.png" alt-text="The Details flyout that appears after clicking on the New domains being forwarded email insight" lightbox="../../media/mfi-new-domains-being-forwarded-details.png":::
 
 You can also get to this details page when you select the insight after you click **View all** in the **Top insights & recommendations** area on (**Reports** \> **Dashboard** or <https://protection.office.com/insightdashboard>).
 
