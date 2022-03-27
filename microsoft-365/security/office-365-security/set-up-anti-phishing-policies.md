@@ -136,9 +136,9 @@ The **Show first contact safety tip** settings is available in EOP and Defender 
 - The first time they get a message from a sender
 - They don't often get messages from the sender.
 
-![First contact safety tip for messages with one recipient.](../../media/safety-tip-first-contact-one-recipient.png)
+:::image type="content" source="../../media/safety-tip-first-contact-one-recipient.png" alt-text="The First contact safety tip for messages with one recipient" lightbox="../../media/safety-tip-first-contact-one-recipient.png":::
 
-![First contact safety tip for messages with multiple recipients.](../../media/safety-tip-first-contact-multiple-recipients.png)
+:::image type="content" source="../../media/safety-tip-first-contact-multiple-recipients.png" alt-text="The First contact safety tip for messages with with multiple recipients" lightbox="../../media/safety-tip-first-contact-multiple-recipients.png":::
 
 This capability adds an extra layer of security protection against potential impersonation attacks, so we recommend that you turn it on.
 
