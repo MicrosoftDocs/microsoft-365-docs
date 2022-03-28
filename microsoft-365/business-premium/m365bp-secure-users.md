@@ -90,3 +90,9 @@ Your users might be tempted to share and store your organization files in places
 ## Set up managed devices
 
 We recommend that your most important staff members use freshly acquired Windows devices that you manage. We'll show you how to [Set up managed devices](m365bp-managed-devices-setup.md) and apply security policies to protect them.
+
+## Contact support
+
+ **If you need to contact support:**
+  
+As a Microsoft 365 admin, you have access to our customer support team, **[Contact support for business products - Admin Help](../business-video/get-help-support.md)**

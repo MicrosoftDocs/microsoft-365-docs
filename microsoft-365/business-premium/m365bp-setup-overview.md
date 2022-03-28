@@ -91,8 +91,3 @@ For key staff, we recommend that you use [managed devices](../business/set-up-wi
 3. All users should learn how to protect themselves and your campaign by learning about [phishing and other attacks](avoid-phishing-and-attacks.md). This [infographic](m365-campaigns-protect-campaign-infographic.md) can also help your users understand how to help protect your campaign from online threats.
 --->
 
-## Contact support
-
- **If you need to contact support:**
-  
-As a Microsoft 365 admin, you have access to our customer support team, **[Contact support for business products - Admin Help](../business-video/get-help-support.md)**
