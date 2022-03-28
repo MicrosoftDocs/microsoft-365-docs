@@ -229,7 +229,7 @@ The settings in the Defender for Office 365 that are specifically created for th
 |EnableFirstContactSafetyTips|False|
 |EnableMailboxIntelligence|True|
 |EnableMailboxIntelligenceProtection|True|
-|EnableOrganizationDomainsProtection|False||
+|EnableOrganizationDomainsProtection|False|
 |EnableSimilarDomainsSafetyTips|False|
 |EnableSimilarUsersSafetyTips|False|
 |EnableSpoofIntelligence|True|
