@@ -40,7 +40,7 @@ A Windows 10 PC is considered managed after users have completed the following t
 
 Now you can enroll devices in Endpoint Manager, go to https://endpoint.microsoft.com and select **Devices** > **Enroll devices**. 
 
-:::image type="content" source="media/m365-endpoint-manager-enroll-devices.png" alt-text="Use Microsoft Endpoint Manager to enroll devices.":::
+:::image type="content" source="media/m365bp-endpoint-manager-enroll-devices.png" alt-text="Use Microsoft Endpoint Manager to enroll devices.":::
 
 Follow specific device enrollment guidance below.
 
