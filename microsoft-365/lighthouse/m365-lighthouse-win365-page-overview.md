@@ -27,15 +27,15 @@ For more information about Windows 365, see [What is Windows 365?](/windows-365/
 > [!IMPORTANT]
 > You must go to [MEM](https://go.microsoft.com/fwlink/p/?linkid=2150463) to provision Cloud PCs for each customer tenant before you can manage them in Lighthouse. You can't provision from within Lighthouse.
 
-Once you've provisioned Cloud PCs for your customer tenant, the Windows 365 card on the Microsoft 365 Home page provides a brief alert on the Cloud PCs in need of action, such as the number of Cloud PCs that failed to provision and on-premises network connection failures. To get a detailed status, select the button on the Windows 365 card (or select **Windows 365** in the left navigation pane) to open the Windows 365 page. From this page, you can get a status overview of the Cloud PCs assigned to your customer tenants, view a list of all the Cloud PCs you manage and the tenants they're assigned to, and view the on-premises network connections between your customer tenants and Azure Active Directory (Azure AD) and their status.
+Once you've provisioned Cloud PCs for your customer tenant, the Windows 365 card on the Microsoft 365 Home page provides a brief alert on the Cloud PCs in need of action, such as the number of Cloud PCs that failed to provision and Azure network connection failures. To get a detailed status, select the button on the Windows 365 card (or select **Windows 365** in the left navigation pane) to open the Windows 365 page. From this page, you can get a status overview of the Cloud PCs assigned to your customer tenants, view a list of all the Cloud PCs you manage and the tenants they're assigned to, and view the Azure network connections between your customer tenants and Azure Active Directory (Azure AD) and their status.
 
 ## Overview tab
 
-On the Overview tab, the colored count-annotation bar displays the total number of Cloud PCs or on-premises network connections across all your customer tenants that have the following statuses: Failed network connections, Not provisioned, Provisioning failed, and Deprovisioning soon.
+On the Overview tab, the colored count-annotation bar displays the total number of Cloud PCs or Azure network connections across all your customer tenants that have the following statuses: Failed network connections, Not provisioned, Provisioning failed, and Deprovisioning soon.
 
 You can see a breakdown of Cloud PC statuses for each customer tenant in the list below the annotation bar. To see which tenants have Cloud PCs with a specific status, select that status from the count-annotation bar to filter the list. To see Cloud PC statuses for one or more specific customer tenants, use the **Tenants** dropdown menu to filter the list.
 
-To get detailed status information for a particular customer tenant, select a value under any of the status columns for that tenant. Depending on which column the value is in, the **On-premises network connections** or **All cloud PCs** tab will open and show more information.
+To get detailed status information for a particular customer tenant, select a value under any of the status columns for that tenant. Depending on which column the value is in, the **Azure network connections** or **All cloud PCs** tab will open and show more information.
 
 The Overview tab also includes the following options:
 
@@ -43,7 +43,7 @@ The Overview tab also includes the following options:
 - **Export:** Select to export Cloud PC data to an Excel comma-separated values (.csv) file.
 - **Search:** Enter keywords to quickly locate a specific Cloud PC in the list.
 
-:::image type="content" source="../media/m365-lighthouse-win365-page-overview/win365-overview-tab.png" alt-text="Screenshot of the Windows 365 Overview tab.":::
+:::image type="content" source="../media/m365-lighthouse-win365-page-overview/win365-overview-tab.png" alt-text="Screenshot of the Windows 365 Overview tab." lightbox="../media/m365-lighthouse-win365-page-overview/win365-overview-tab.png":::
 
 ## All Cloud PCs tab
 
@@ -71,25 +71,25 @@ The All Cloud PCs tab also includes the following options:
 
 To see a complete list of Cloud PC provisioning statuses and what they mean, see [Device management overview for Cloud PCs](/windows-365/enterprise/device-management-overview#column-details) in the Windows 365 documentation library.
 
-:::image type="content" source="../media/m365-lighthouse-win365-page-overview/all-cloud-pcs-tab.png" alt-text="Screenshot of the Windows 365 All Cloud PCs tab.":::
+:::image type="content" source="../media/m365-lighthouse-win365-page-overview/all-cloud-pcs-tab.png" alt-text="Screenshot of the Windows 365 All Cloud PCs tab." lightbox="../media/m365-lighthouse-win365-page-overview/all-cloud-pcs-tab.png":::
 
-## On-premises network connections tab
+## Azure network connections tab
 
-On the On-premises network connections tab, the colored count-annotation bar displays the total number of on-premises network connections across all your customer tenants that have the following statuses: Successful connections and Failed connections.
+On the Azure network connections tab, the colored count-annotation bar displays the total number of Azure network connections across all your customer tenants that have the following statuses: Successful connections and Failed connections.
 
-In the list below the count-annotation bar, you can view all on-premises network connections and their connection status.
+In the list below the count-annotation bar, you can view all Azure network connections and their connection status.
 
 To see connections with a specific provisioning status, select that status from the count-annotation bar to filter the list. To see connection statuses for one or more specific customer tenants, use the **Tenants** dropdown menu to filter the list.
 
 If you need to take action or troubleshoot a connection in the list, select **View connection details in Microsoft Endpoint Manager**.
 
-The On-premises network connections tab also includes the following options:
+The Azure network connections tab also includes the following options:
 
 - **Refresh:** Select to retrieve the most current connection data.
 - **Export:** Select to export connection data to an Excel comma-separated values (.csv) file.
 - **Search:** Enter keywords to quickly locate a specific connection.
 
-:::image type="content" source="../media/m365-lighthouse-win365-page-overview/on-prem-network-connections-tab.png" alt-text="Screenshot of the Windows 365 On-premises network connections tab.":::
+:::image type="content" source="../media/m365-lighthouse-win365-page-overview/azure-network-connections-tab.png" alt-text="Screenshot of the Azure network connections tab." lightbox="../media/m365-lighthouse-win365-page-overview/azure-network-connections-tab.png":::
 
 ## Related content
 

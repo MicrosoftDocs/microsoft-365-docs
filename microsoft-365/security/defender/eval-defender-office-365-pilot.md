@@ -31,7 +31,7 @@ ms.technology: m365d
 
 This article is [Step 3 of 3](eval-defender-office-365-overview.md) in the process of setting up the evaluation environment for Microsoft Defender for Office 365. For more information about this process, see the [overview article](eval-defender-office-365-overview.md).
 
-Use the following steps to setup and configure the pilot for Microsoft Defender for Office 365.
+Use the following steps to set up and configure the pilot for Microsoft Defender for Office 365.
 
 :::image type="content" source="../../media/defender/m365-defender-office-pilot.png" alt-text="The steps for creating the pilot in the Microsoft Defender for Office 365 portal" lightbox="../../media/defender/m365-defender-office-pilot.png":::
 
@@ -47,8 +47,8 @@ It may not be evident why 'Standard' and 'Strict' are the terms used for these g
 
 Distribution groups can be created and defined directly in Exchange Online or synchronized from on-premises Active Directory.
 
-1. Logon to Exchange Admin Center (EAC) using an account that has been granted Recipient Administrator role or been delegated group management permissions.
-2. From the navigation menu, expand **Recipients** and select <a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank">**Groups**</a>.
+1. Sign in to the Exchange Admin Center (EAC) using an account that has been granted Recipient Administrator role or been delegated group management permissions.
+2. From the navigation menu, expand *Recipients* and select *Groups*.
 
    :::image type="content" source="../../media/mdo-eval/1_mdo-eval-pilot.png" alt-text=" The Groups menu item to be clicked" lightbox="../../media/mdo-eval/1_mdo-eval-pilot.png":::
 
@@ -79,7 +79,7 @@ Some capabilities are *not yet* configured. You have three options for configuri
 
 ### Assign preset security policies
 
-It's encouraged to begin with the *recommended baseline policies* when evaluating MDO and then refine them as needed over the course of your evaluation period.
+It's recommended you begin with the *recommended baseline policies* when evaluating MDO and then refine them as needed over the course of your evaluation period.
 
 You can enable recommended EOP and Defender for Office 365 protection policies fast, and assign them to specific pilot users or defined groups as part of your evaluation. Preset policies offer a baseline **Standard** protection template or a more aggressive **Strict** protection template, which can be assigned independently, or combined.
 

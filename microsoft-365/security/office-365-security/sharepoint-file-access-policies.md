@@ -33,7 +33,7 @@ In addition to implementing this guidance, be sure to configure SharePoint sites
 
 To protect files in SharePoint and OneDrive, the following diagram illustrates which policies to update from the common identity and device access policies.
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-sharepoint.png" alt-text="Summary of policy updates for protecting access to SharePoint." lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-sharepoint.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-sharepoint.png" alt-text="The summary of policy updates for protecting the access to SharePoint" lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-sharepoint.png":::
 
 If you included SharePoint when you created the common policies, you only need to create the new policies. For Conditional Access policies, SharePoint includes OneDrive.
 
@@ -52,7 +52,6 @@ The following table lists the policies you either need to review and update or c
 ||[SharePoint access control policy](#sharepoint-access-control-policies): Allow browser-only access to specific SharePoint sites from unmanaged devices.|This prevents editing and downloading of files. Use PowerShell to specify sites.|
 |**Specialized security**|[*Always* require MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Include SharePoint in the assignment of cloud apps.|
 ||[SharePoint access control policy](#use-app-enforced-restrictions-in-sharepoint): Block access to specific SharePoint sites from unmanaged devices.|Use PowerShell to specify sites.|
-|
 
 ## Use app-enforced restrictions in SharePoint
 
@@ -75,7 +74,7 @@ It's important to understand that SharePoint site permissions are typically base
 
 The following illustration provides an example of how SharePoint device access policies protect access to sites for a user.
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/SharePoint-rules-scenario.png" alt-text="Example of how SharePoint device access policies protect sites." lightbox="../../media/microsoft-365-policies-configurations/SharePoint-rules-scenario.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/SharePoint-rules-scenario.png" alt-text="An example of how SharePoint device access policies protect sites" lightbox="../../media/microsoft-365-policies-configurations/SharePoint-rules-scenario.png":::
 
 James has starting point Conditional Access policies assigned, but he can be given access to SharePoint sites with enterprise or specialized security protection.
 
@@ -85,7 +84,8 @@ James has starting point Conditional Access policies assigned, but he can be giv
 
 ## Next step
 
-![Step 4: Policies for Microsoft 365 cloud apps.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png" alt-text="The Step 4 - Policies for Microsoft 365 cloud apps" lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png":::
+
 
 Configure Conditional Access policies for:
 

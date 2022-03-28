@@ -7,7 +7,7 @@ author: chrfox
 manager: laurawi
 ms.date: 
 audience: Admin
-ms.topic: hub-page
+ms.topic: landing-page
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid: 

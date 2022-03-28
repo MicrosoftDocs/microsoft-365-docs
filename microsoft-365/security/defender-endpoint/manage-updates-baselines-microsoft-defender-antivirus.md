@@ -15,7 +15,7 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 03/15/2022
+ms.date: 03/22/2022
 ms.collection: 
 - M365-security-compliance
 - m365initiative-defender-endpoint
@@ -80,20 +80,28 @@ All our updates contain
 - Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
-<summary>February-2022 (Platform: 4.18.xxxx.xx | Engine: 1.1.19000.8)</summary>
+<summary>February-2022 (Platform: 4.18.2202.4 | Engine: 1.1.19000.8)</summary>
 
-&ensp;Security intelligence update version: **1.357.x.x**<br/>
+&ensp;Security intelligence update version: **1.361.14.0**<br/>
 &ensp;Released: **March 14, 2022**<br/>
-&ensp;Platform: **4.18.xxxx.xx**<br/>
+&ensp;Platform: **4.18.2202.4**<br/>
 &ensp;Engine: **1.1.19000.8**<br/>
 &ensp;Support phase: **Security and Critical Updates**<br/>
 
 Engine version: 1.1.19000.8 <br/>
-Security intelligence update version: 1.357.x.x <br/>
+Security intelligence update version: 1.361.14.0 <br/>
 
 ### What's new
 
-- Coming soon
+- Improvements to detection and behavior monitoring logic
+- Fixed false positive triggering attack surface reduction detections
+- Added fix resulting in better fidelity of EDR and Advanced Hunting detection alerts
+- Defender no longer supports custom notifications on toast pop ups. Modified GPO/Intune/SCCM and docs to reflect this change.
+- Improvements to capture both information and copy of files written to removable storage. To learn more, see [Microsoft Defender for Endpoint Device Control Removable Storage Access Control, removable storage media](device-control-removable-storage-access-control.md).
+- Improved traffic output when SmartScreen service is unreachable 
+- Connectivity improvements for customers using proxies with authentication requirements
+- Fixed VDI device update bug for network FileShares 
+- EDR in block mode now supports granular device targetting with new CSPs. See [Endpoint detection and response (EDR) in block mode](edr-in-block-mode.md).
 
 ### Known Issues
 
@@ -658,6 +666,21 @@ We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Wind
 For more information, see [Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
+<summary>20220321.1</summary>
+
+&ensp;Package version: **20220321.1**<br/>
+&ensp;Platform version: **4.18.2202.4**<br/>
+&ensp;Engine version: **1.1.19000.8**<br/>
+&ensp;Signature version: **1.351.337.0**<br/>
+
+### Fixes
+- None
+
+### Additional information
+- None
+
+<br/>
+</details><details>
 <summary>20220305.1</summary>
 
 &ensp;Package version: **20220305.1**<br/>

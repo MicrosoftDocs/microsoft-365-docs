@@ -13,7 +13,9 @@ ms.author: dansimp
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
-ms.collection: m365solution-scenario
+ms.collection: 
+- m365solution-scenario
+- M365-security-compliance
 ms.date:
 ---
 
@@ -55,7 +57,7 @@ Enable network protection in audit mode to see which IP addresses and domains wo
 
     The network connection will be allowed and a test message will be displayed.
     
-    ![Example notification that says Connection blocked: Your IT administrator caused Windows Security to block this network connection. Contact your IT help desk.](images/np-notif.png)
+    :::image type="content" source="images/np-notif.png" alt-text="The connection blockage notification" lightbox="images/np-notif.png":::
 
 > [!NOTE]
 > Network connections can be successful even though a site is blocked by network protection. To learn more, see [Network protection and the TCP three-way handshake](network-protection.md#network-protection-and-the-tcp-three-way-handshake).
