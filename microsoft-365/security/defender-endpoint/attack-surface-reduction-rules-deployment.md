@@ -16,7 +16,9 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.collection: m365solution-scenario
+ms.collection:  
+ - m365solution-scenario
+ - M365-security-compliance
 ms.date: 1/18/2022
 ---
 
@@ -115,7 +117,7 @@ Some rules don’t work well if un-signed, internally developed application and 
 As with any new, wide-scale implementation which could potentially impact your line-of-business operations, it is important to be methodical in your planning and implementation. Because of the powerful capabilities of ASR rules in preventing malware, careful planning and deployment of these rules is necessary to ensure they work best for your unique customer workflows. To work in your environment, you need to plan, test, implement, and operationalize ASR rules carefully.  
 
 > [!div class="mx-imgBorder"]
-> ![ASR rules deployment phases](images/asr-rules-deployment-phases.png)
+> :::image type="content" source="images/asr-rules-deployment-phases.png" alt-text="The ASR rules deployment phases" lightbox="images/asr-rules-deployment-phases.png":::
 
 >[!Note]
 >For Customers who are using a non-Microsoft HIPS and are transitioning to Microsoft Defender for Endpoint attack surface reduction rules:

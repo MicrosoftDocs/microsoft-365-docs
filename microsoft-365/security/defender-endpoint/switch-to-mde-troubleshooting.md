@@ -13,6 +13,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
 - m365solution-scenario
+- M365-security-compliance
 ms.topic: conceptual
 ms.custom: migrationguides
 ms.date: 01/11/2022
