@@ -28,3 +28,15 @@ The *EnablePortalTrackingLogs* parameter specifies whether to enable the audit l
 •         $true: Turn on audit feature.
 •         $false: Turn off audit feature
 
+## Message tracking audit information
+
+Each audit entry for a tracked message will contain the following fields:
+
+- MessageID - Contains the ID of the message being tracked. This is the key identifier used to follow a message through the system.
+- Recipient - List of all recipient email addresses.
+- Sender - The originating email address.
+- AuthenticationMethod - Describes the authenticating method for accessing the message, for example OTP, Yahoo, Gmail, or Microsoft.
+- AuthenticationStatus - Contains a value indicating that the authentication succeeded or failed.
+- OperationStatus - Indicates whether the indicated operation succeeded or failed.
+- AttachmentName - Name of the attachment.
+- OperationProperties - A list of optional properties, for example the number of OTP passcodes sent, or the email subject.
