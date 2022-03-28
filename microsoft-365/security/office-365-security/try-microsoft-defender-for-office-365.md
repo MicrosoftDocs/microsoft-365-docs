@@ -18,9 +18,13 @@ ms.collection:
 ms.custom: 
 ms.technology: mdo
 ms.prod: m365-security
+ROBOTS: NOINDEX, NOFOLLOW
 ---
 
 # Try Microsoft Defender for Office 365
+
+> [!NOTE]
+> The feature that's described by this article is in Preview, is not available in all organizations, and is subject to change.
 
 The unified **Trials** portal in the Microsoft 365 Defender portal provides a single point of entry for the formerly separate Trial and Evaluate experiences for Microsoft Defender for Office 365. The intent is to allow you to try the features of Defender for Office 365 Plan 2 for 30 days before you fully commit to it. But, there are differences in the available experiences for Defender for Office 365 based on the nature of your Microsoft 365 organization:
 
