@@ -22,8 +22,6 @@ description: "Use Apps monitoring for information about incidents or advisories 
 
 Microsoft 365 Apps monitoring supports the following organizational-level scenarios for these desktop Office applications: Access, Excel, OneNote, Outlook, PowerPoint, Publisher, and Word.
 
-![Organization-level scenarios for Microsoft 365 Apps monitoring.](../media/microsoft-365-exchange-monitoring/M365AppsMonitoring1.png)
-
 - **Excessive Client Runtime Errors**. The runtime error rate of specific Office application has increased significantly over the last 24 hours.
 
 - **Long Local File Load Time**. The average file load time from local storage has exceeded the recommended threshold over the last 24 hours.
@@ -35,5 +33,9 @@ Microsoft 365 Apps monitoring supports the following organizational-level scenar
 - **Excessive Add-in Errors**. The add-in error rate has exceeded the recommended threshold over the last 24 hours.
 
 - **Long SharePoint File Load Time**. The average file load time from SharePoint has exceeded the recommended threshold over the last 24 hours.
+
+Here's an example of the Apps monitoring dashboard
+
+![Organization-level scenarios for Microsoft 365 Apps monitoring.](../media/microsoft-365-exchange-monitoring/M365AppsMonitoring1.png)
 
 When Microsoft detects an error condition, a post is created to notify the tenant admin to go to the Microsoft 365 App Health dashboard for further information to remediate issues. For more information, see [Microsoft 365 Apps health](/deployoffice/admincenter/microsoft-365-apps-health).
