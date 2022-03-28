@@ -196,7 +196,7 @@ If you prefer, you can recommend to your users that they apply the label. With t
 
 Here's an example of a prompt from the Azure Information Protection unified labeling client when you configure a condition to apply a label as a recommended action, with a custom policy tip. You can choose what text is displayed in the policy tip.
 
-![Prompt to apply a recommended label.](../media/Sensitivity-label-Prompt-for-required-label.png)
+![Prompt to apply a recommended label.](../media/Sensitivity-label-prompt-for-required-label.png)
 
 ### When automatic or recommended labels are applied
 

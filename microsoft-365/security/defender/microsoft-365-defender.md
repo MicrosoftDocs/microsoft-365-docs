@@ -78,15 +78,15 @@ Microsoft 365 Defender's unique cross-product layer augments the individual serv
 
 Here's an example of how the Microsoft 365 Defender portal correlates all related alerts across products into a single incident.
 
-:::image type="content" source="../../media/overview-incident.png" alt-text="Example of an incident overview page" lightbox="../../media/overview-incident.png":::
+:::image type="content" source="../../media/overview-incident.png" alt-text="The incident overview page" lightbox="../../media/overview-incident.png":::
 
 Here's an example of the list of related alerts for an incident.
 
-:::image type="content" source="../../media/incident-list.png" alt-text="Example of the list of alerts for an incident" lightbox="../../media/incident-list.png":::
+:::image type="content" source="../../media/incident-list.png" alt-text="The list of alerts for an incident" lightbox="../../media/incident-list.png":::
 
 Here's an example of query-based hunting on top of email and endpoint raw data.
 
-:::image type="content" source="../../media/advanced-hunting.png" alt-text="Example of advanced hunting and a query" lightbox="../../media/advanced-hunting.png":::
+:::image type="content" source="../../media/advanced-hunting.png" alt-text=" The Advanced Hunting page with query details" lightbox="../../media/advanced-hunting.png":::
 
 Microsoft 365 Defender cross-product features include:
 
@@ -150,11 +150,11 @@ Microsoft 365 Defender emphasizes *unity, clarity, and common goals* as it merge
 
 Centralizing security information creates a single place for investigating security incidents across Microsoft 365. A primary example is **Incidents** under **Incidents & alerts** on the quick launch of Microsoft 365 Defender.
 
-:::image type="content" source="../../media/converged-incidents-2.png.png" alt-text="Example of the Incidents page in Microsoft 365 Defender" lightbox="../../media/converged-incidents-2.png.png":::
+:::image type="content" source="../../media/converged-incidents-2.png.png" alt-text="The Incidents page in the Microsoft 365 Defender portal" lightbox="../../media/converged-incidents-2.png.png":::
 
 Selecting an incident name displays a page that demonstrates the value of centralizing security information.
 
-:::image type="content" source="../../media/converged-incident-info-3.png" alt-text="Example of the Summary page for an incident in Microsoft 365 Defender" lightbox="../../media/converged-incident-info-3.png":::
+:::image type="content" source="../../media/converged-incident-info-3.png" alt-text="The Summary page for an incident in the Microsoft 365 Defender portal" lightbox="../../media/converged-incident-info-3.png":::
 
 Along the top of an incident page, you'll see the **Summary**, **Alerts**, **Devices**, **Users**, **Mailboxes**, **Investigations**, **Evidence and response**, and **Graph**  tabs. Select these tabs for more detailed information. For example, the **Users** tab displays information for users from converged workloads (Microsoft Defender for Endpoint, Microsoft Defender for Identity, and Microsoft Defender for Cloud Apps) and a range of sources such as on-premises Active Directory Domain Services (AD DS), Azure AD, and third-party identity providers. For more information, see [investigate users](investigate-users.md).
 
@@ -168,11 +168,11 @@ Common controls and content either appear in the same place, or are condensed in
 
 #### Unified settings
 
-:::image type="content" source="../../media/converged-add-role-9.png" alt-text="The Setting page of the Microsoft 365 Defender portal" lightbox="../../media/converged-add-role-9.png":::
+:::image type="content" source="../../media/converged-add-role-9.png" alt-text="The Settings page in the Microsoft 365 Defender portal" lightbox="../../media/converged-add-role-9.png":::
 
 #### Permissions & roles
 
-:::image type="content" source="../../media/converged-roles-5.png" alt-text="Permissions & Roles page showing Endpoints roles & groups, Roles, and Device groups" lightbox="../../media/converged-roles-5.png":::
+:::image type="content" source="../../media/converged-roles-5.png" alt-text="The Endpoints roles & groups displayed on the Permissions & roles page" lightbox="../../media/converged-roles-5.png":::
 
 Access to Microsoft 365 Defender is configured with Azure AD global roles or by using custom roles. For Defender for Endpoint, see [Assign user access to the Microsoft 365 Defender portal](/microsoft-365/security/defender-endpoint/assign-portal-access). For Defender for Office 365, see [Permissions in the Microsoft Purview portal and Microsoft 365 Defender](../office-365-security/permissions-microsoft-365-compliance-security.md).
 
