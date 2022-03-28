@@ -26,9 +26,9 @@ ROBOTS: NOINDEX, NOFOLLOW
 > [!NOTE]
 > The feature that's described by this article is in Preview, is not available in all organizations, and is subject to change.
 
-The unified **Trials** portal in the Microsoft 365 Defender portal provides a single point of entry for the formerly separate Trial and Evaluate experiences for Microsoft Defender for Office 365. The intent is to allow you to try the features of Defender for Office 365 Plan 2 for 30 days before you fully commit to it. But, there are differences in the available experiences for Defender for Office 365 based on the nature of your Microsoft 365 organization:
+The unified **Trials** portal in the Microsoft 365 Defender portal provides a single point of entry for the formerly separate Trial and Evaluate experiences for Microsoft Defender for Office 365. The intent is to allow you to try the features of Defender for Office 365 Plan 2 for 30 days before you fully commit to it. But, there are differences in the evaluation experiences based on the nature of your Microsoft 365 organization:
 
-- You already have Microsoft 365 mailboxes, but you're currently using a third-party service or device for email protection. Mail from the internet flows through the protection service before delivery into your Microsoft 365 organization, and Microsoft 365 protection is as low as possible (it's never completely off; for example, malware protection is always enforced).
+- You already have Microsoft 365 mailboxes, but you're currently using a third-party service or device for email protection. Mail from the internet flows through the protection service before delivery into your Microsoft 365 organization. Microsoft 365 protection is as low as possible (it's never completely off; for example, malware protection is always enforced).
 
   ![Mail flows from the internet through the third-party protection service or device before delivery into Microsoft 365.](../../media/mdo-migration-before.png)
 
@@ -42,7 +42,7 @@ The unified **Trials** portal in the Microsoft 365 Defender portal provides a si
 
 You're invited to start your trial in various Defender for Office 365 feature locations in the Microsoft 365 Defender portal at <https://security.microsoft.com>. The centralized location to start your trial is on the **Trials** page at <https://security.microsoft.com/atpEvaluation>.
 
-The rest of this article explains the difference between audit mode blocking mode and audit mode for Defender for Office 365 evaluations, how to configure evaluations, and other details.
+The rest of this article explains the difference between audit mode blocking mode, how to configure evaluations, and other details.
 
 ## Overview of Defender for Office 365
 
@@ -70,7 +70,7 @@ When you evaluate Defender for Office 365, the policies that control protection 
   - [Safe Attachments for email messages](safe-attachments.md)
   - [Safe Links for email messages and Microsoft Teams](safe-links.md)
 
-  But, the nature of these Defender for Office 365 policies are different in blocking mode and audit mode:
+  But, the nature of these policies is different in blocking mode and audit mode:
 
   - **Audit mode**: Regular policies are created, but the policies are configured only to *detect* threats. Defender for Office 365 detects harmful messages for reporting, but the messages aren't acted upon (for example, detected messages aren't quarantined).
 
@@ -80,8 +80,8 @@ When you evaluate Defender for Office 365, the policies that control protection 
 
 **Notes**:
 
-- Safe Link wil detonate URLs in mail flow. To prevent specific URLs from being detonated, use the Tenant Allow/Block List. For more information, see [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
-- Safe Links does not wrap URL links in email message bodies.
+- Safe Links will detonate URLs in mail flow. To prevent specific URLs from being detonated, use the Tenant Allow/Block List. For more information, see [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
+- Safe Links doesn't wrap URL links in email message bodies.
 - The evaluation policy settings are described in the [Evaluation policy settings](#evaluation-policy-settings) section later in this article.
 
 ## Set up an evaluation in audit mode
@@ -139,7 +139,7 @@ When you evaluate Defender for Office 365, the policies that control protection 
 
        2. In the **Exchange mail flow rules** dialog, decide if you need an Exchange Online mail flow rule (also known as a transport rule) that skips spam filtering for incoming messages from the third-party protection service or device.
 
-          It's likely that you already have a mail flow rule in Exchange Online that sets the spam confidence level (SCL) of all incoming mail from the service to the value -1 (bypass spam filtering) in order to skip spam filtering on incoming mail from the protection service. Most protection services encourage this SCL=-1 mail flow rule for Microsoft 365 customers who want to use their services.
+          It's likely that you already have an SCL=-1 mail flow rule in Exchange Online that allows all inbound mail from the protection service to bypass (most) Microsoft 365 filtering. Many protection services encourage this spam confidence level (SCL) mail flow rule method for Microsoft 365 customers who use their services.
 
           As explained in the previous step, Enhanced Filtering for Connectors is automatically configured on the connector that you specify as the source of mail from the protection service.
 
