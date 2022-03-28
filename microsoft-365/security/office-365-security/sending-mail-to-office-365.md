@@ -30,8 +30,6 @@ These articles help external senders improve their reputation and increase their
 
 If you're not a customer, but are trying to send mail to someone in who is, you're in the right place. If you're an administrator and you need help with fighting spam, this isn't the right section for you. Instead, go to [Anti-spam and anti-malware protection in Microsoft 365](anti-spam-and-anti-malware-protection.md).
 
-****
-
 |For information about...|See...|
 |---|---|
 |Services provided to administrators of email systems that are sending individual and bulk email to customers.|[Services for non-customers sending mail to Office 365](services-for-non-customers.md)|
