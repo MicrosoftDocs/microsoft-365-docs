@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Purview Information Governance in Microsoft 365"
+title: "Microsoft Purview Information Governance"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,19 +17,19 @@ recommendations: false
 description: "Implement Microsoft Purview Information Governance capabilities to govern your data for compliance or regulatory requirements."
 ---
 
-# Microsoft Purview Information Governance in Microsoft 365
+# Microsoft Purview Information Governance
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Use Microsoft Purview Information Governance capabilities to govern your data for compliance or regulatory requirements.
 
-From a [licensing perspective](#licensing-requirements), there can be considerable overlap between information governance, records management, and data connectors. All three areas support retention and deletion of data in Microsoft 365. Connectors are used by compliance solutions other than information governance and records management. 
+From a [licensing perspective](#licensing-requirements), there can be considerable overlap between information governance, records management, and data connectors. All three areas support retention and deletion of data for Microsoft 365 apps and services. Connectors are used by compliance solutions other than information governance and records management. 
 
 Use the following graphic to help you identify the main configurable components for these three different solutions that each have their own configuration area in the Microsoft Purview portal:
 
 ![Main components to manage for Microsoft Purview Information Goevernance.](../media/information-governance-components.png)
 
-Looking to protect your data? See [Microsoft Purview Information Protection in Microsoft 365](information-protection.md).
+Looking to protect your data? See [Microsoft Purview Information Protection](information-protection.md).
 
 ## Information governance
 
