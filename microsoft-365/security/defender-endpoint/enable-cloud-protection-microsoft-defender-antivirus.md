@@ -144,7 +144,9 @@ For more information about allowed parameters, see [Windows Defender WMIv2 APIs]
 
 2. Select the **Virus & threat protection** tile (or the shield icon on the left menu bar), and then, under **Manage settings** select **Virus & threat protection settings**.
 
-3. Confirm that **Cloud-based Protection** and **Automatic sample submission** are both switched to **On**.
+   :::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="The Virus & threat protection settings" lightbox="../../media/wdav-protection-settings-wdsc.png":::
+
+3. Confirm that **Cloud-based Protection** and **Automatic sample submission** are switched to **On**.
 
    > [!NOTE]
    > If automatic sample submission has been configured with Group Policy then the setting will be greyed-out and unavailable.

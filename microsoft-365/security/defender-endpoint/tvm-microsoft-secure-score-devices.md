@@ -42,18 +42,6 @@ Your score for devices is visible in the [threat and vulnerability management da
 
 Select a category to go to the [**Security recommendations**](tvm-security-recommendation.md) page and view the relevant recommendations.
 
-## Turn on the Microsoft Secure Score connector
-
-Forward Microsoft Defender for Endpoint signals, giving Microsoft Secure Score visibility into the device security posture. Forwarded data is stored and processed in the same location as your Microsoft Secure Score data.
-
-Changes might take up to a few hours to reflect in the dashboard.
-
-1. In the navigation pane, go to **Settings** \> **Endpoints** \> **General** \> **Advanced features**
-
-2. Scroll down to **Microsoft Secure Score** and toggle the setting to **On**.
-
-3. Select **Save preferences**.
-
 ## How it works
 
 > [!NOTE]
@@ -74,17 +62,17 @@ Improve your security configuration by remediating issues from the security reco
 
 2. Select an item on the list. The flyout panel will open with details related to the recommendation. Select **Remediation options**.
 
-   :::image type="content" alt-text="Security controls related security recommendations." source="images/security-controls.png":::
+   :::image type="content" source="images/security-controls.png" alt-text="The Security controls-related security recommendations" lightbox="images/security-controls.png":::
 
 3. Read the description to understand the context of the issue and what to do next. Select a due date, add notes, and select **Export all remediation activity data to CSV** so you can attach it to an email for follow-up.
 
 4. **Submit request**. You'll see a confirmation message that the remediation task has been created.
 
-   :::image type="content" alt-text="Remediation task creation confirmation." source="images/remediation-task-created.png":::
+   :::image type="content" source="images/remediation-task-created.png" alt-text="The Remediation task creation confirmation" lightbox="images/remediation-task-created.png":::
 
 5. Save your CSV file.
 
-   :::image type="content" alt-text="Save csv file." source="images/tvm_save_csv_file.png":::
+   :::image type="content" source="images/tvm_save_csv_file.png" alt-text="The page containing the option to save CSV file" lightbox="images/tvm_save_csv_file.png":::
 
 6. Send a follow-up email to your IT Administrator and allow the time that you've allotted for the remediation to propagate in the system.
 
