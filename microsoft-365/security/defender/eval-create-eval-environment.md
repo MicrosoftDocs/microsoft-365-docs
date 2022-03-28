@@ -24,7 +24,7 @@ ms.technology: m365d
 ---
 # Step 1. Create the Microsoft 365 Defender Evaluation Environment for greater cyber security
 
-LYou can learn about and also build out this Microsoft Defender XDR solution in steps that are distributed through the rest of this series:
+You can learn about and build out this Microsoft Defender XDR solution in steps that are distributed through the rest of this series:
 
 - [How to create the environment](eval-create-eval-environment.md)
 - Set up or learn about each technology of this Microsoft XDR
@@ -38,7 +38,7 @@ LYou can learn about and also build out this Microsoft Defender XDR solution in 
 
 The steps in this series run end-to-end, from learning the concepts behind the Microsoft 365 Defender XDR to building it, and into taking the evaluation environment live to production.
 
-There are two common ways to do this next step in evaluation. This series assumes you already have a production Microsoft 365 tenant, and will activate E5 trial licenses to evaluate Microsoft 365 Defender in *the current environment*. An in-place evaluation will let you keep any security methods with the purchase of licenses after the evaluation period.
+There are two common ways to do this next step in evaluation. This series assumes you already have a production Microsoft 365 tenant and will activate E5 trial licenses to evaluate Microsoft 365 Defender in *the current environment*. An in-place evaluation will let you keep any security methods with the purchase of licenses after the evaluation period.
 
 The second is to  [Set up your Microsoft 365 Defender trial lab environment](setup-m365deval.md) for the purpose of evaluation. Note that it may not have many real signals from the business while in testing.
 

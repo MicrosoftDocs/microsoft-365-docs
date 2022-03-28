@@ -35,7 +35,7 @@ ms.technology: mde
 
 Web protection in Microsoft Defender for Endpoint is a capability made up of [Web threat protection](web-threat-protection.md), [Web content filtering](web-content-filtering.md), and [Custom indicators](manage-indicators.md). Web protection lets you secure your devices against web threats and helps you regulate unwanted content. You can find Web protection reports in the Microsoft 365 Defender portal by going to **Reports > Web protection**.
 
-:::image type="content" alt-text="Image of all web protection cards." source="images/web-protection.png" lightbox="images/web-protection.png":::
+:::image type="content" source="images/web-protection.png" alt-text="The web protection cards" lightbox="images/web-protection.png":::
 
 ### Web threat protection
 
@@ -114,7 +114,7 @@ Internal IP addresses are not supported by custom indicators. For a warn policy 
 
 In all web protection scenarios, SmartScreen and Network Protection can be used together to ensure protection across both first and third-party browsers and processes. SmartScreen is built directly into Microsoft Edge, while Network Protection monitors traffic in third-party browsers and processes. The diagram below illustrates this concept. This diagram of the two clients working together to provide multiple browser/app coverages is accurate for all features of Web Protection (Indicators, Web Threats, Content Filtering).
 
-:::image type="content" alt-text="Using SmartScreen and Network Protection together." source="../../media/web-protection-protect-browsers.png" lightbox="../../media/web-protection-protect-browsers.png":::
+:::image type="content" source="../../media/web-protection-protect-browsers.png" alt-text="The usage of smartScreen and Network Protection together" lightbox="../../media/web-protection-protect-browsers.png":::
 
 ## Troubleshoot endpoint blocks
 
@@ -166,17 +166,17 @@ To list blocks that are due to other features (like Custom Indicators), refer to
 If a user visits a web page that poses a risk of malware, phishing, or other web threats, Microsoft Edge will trigger a block page that reads ‘This site has been reported as unsafe’ along with information related to the threat.
 
 > [!div class="mx-imgBorder"]
-> ![Page blocked by Microsoft Edge.](../../media/web-protection-malicious-block.png)
+> :::image type="content" source="../../media/web-protection-malicious-block.png" alt-text="The page blocked by Microsoft Edge" lightbox="../../media/web-protection-malicious-block.png":::
 
 If blocked by WCF or a custom indicator, a block page shows in Microsoft Edge that tells the user this site is blocked by their organization.
 
 > [!div class="mx-imgBorder"]
-> ![Page blocked by your organization.](../../media/web-protection-indicator-blockpage.png)
+> :::image type="content" source="../../media/web-protection-indicator-blockpage.png" alt-text="The page blocked by your organization" lightbox="../../media/web-protection-indicator-blockpage.png":::
 
 In any case, no block pages are shown in third-party browsers, and the user sees a ‘Secure Connection Failed’ page along with a toast notification. Depending on the policy responsible for the block, a user will see a different message in the toast notification. For example, web content filtering will display the message ‘This content is blocked’.
 
 > [!div class="mx-imgBorder"]
-> ![Page blocked by WCF.](../../media/web-protection-np-block.png)
+> :::image type="content" source="../../media/web-protection-np-block.png" alt-text="The page blocked by WCF" lightbox="../../media/web-protection-np-block.png":::
 
 ## Report false positives
 
