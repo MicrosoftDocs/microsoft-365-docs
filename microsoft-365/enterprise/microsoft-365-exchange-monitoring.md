@@ -51,6 +51,14 @@ For these scenarios, the key numbers are for the last 30 minutes in the main das
 
 ![An example of monitoring Exchange health for mail delivery.](../media/microsoft-365-exchange-monitoring/exchange-monitoring-scenario-example.png)
 
+You'll notice incidents or advisories created for your organization with "Issue origin" in the communication tagged as "Your org". These are notifications individually targeted to your organization with issues that require your attention for mitigation and resolution. For more information about various types of issues that are created and communicated in service health to inform your organization about the potential impact, see the following articles:
+
+- [Service alerts for mailbox utilization](microsoft-365-mailbox-utilization-service-alerts.md)
+
+- [Service alerts for MRS source delays](microsoft-365-mrs-source-delays-service-alerts.md)
+
+- [Service alerts for messages pending delivery to external recipients](microsoft-365-external-recipient-service-alerts.md)
+
 ## Priority accounts monitoring scenarios
 
 With Exchange Online priority account monitoring, you can view the health for the following scenarios after configuring [priority accounts](/microsoft-365/admin/setup/priority-accounts):
@@ -67,23 +75,23 @@ With Exchange Online priority account monitoring, you can view the health for th
 
 - Recoverable items
 
-The Exchange licensing scenario checks if the priority account is not able to log in due to invalid license issues, which can be addressed by the tenant admin.
+The Exchange licensing scenario checks if the priority account isn't able to log in due to invalid license issues, which can be addressed by the tenant admin.
 
 The remaining five scenarios above check if your priority account’s mailbox is close to reaching or has reached the limits described in [Exchange Online limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#mailbox-storage-limits).
 
-For these scenarios, you can see active and resolved advisories and incidents affecting your priority accounts. Identifiable information for the priority accounts will be displayed in the advisory or incident details along with recommendations. Here is an example from the page at **Health > Service health > Exchange Online**.
+For these scenarios, you can see active and resolved advisories and incidents affecting your priority accounts. Identifiable information for the priority accounts will be displayed in the advisory or incident details along with recommendations. Here's an example from the page at **Health > Service health > Exchange Online**.
 
 :::image type="content" source="../media/microsoft-365-exchange-monitoring/exchange-priority-accounts-example.png" alt-text="Example of active and resolved advisories and incidents affecting your priority accounts":::
 
 In the affected account pane, the **Status** column has these values:
 
-- Fixed: The issue causing the advisory or incident has been addressed for the priority account. There is no longer an issue. 
+- Fixed: The issue causing the advisory or incident has been addressed for the priority account. There's no longer an issue. 
 
 - Active: The issue causing the advisory or incident is ongoing for the priority account. The issue remains. 
 
-- Delayed: The issue causing the advisory or incident has not been addressed for the priority account in 96 hours, so it is suspended. The issue remains. 
+- Delayed: The issue causing the advisory or incident hasn't been addressed for the priority account in 96 hours, so it's suspended. The issue remains. 
 
-Here is an example.
+Here's an example.
 
 :::image type="content" source="../media/microsoft-365-exchange-monitoring/exchange-status-column-example.png" alt-text="Example of the status column in the affected account pane":::
 
@@ -97,4 +105,4 @@ The active user count shown in monitoring is based on a 30-minute window where u
 
 ### 2. Where is the data instrumented for the scenarios that show activity trends?
 
-The data is instrumented in the Exchange Online service. If there is a failure that happens before the request reaches Exchange Online or there is a failure in Exchange Online, you will see a drop in the activity signal.
+The data is instrumented in the Exchange Online service. If there's a failure that happens before the request reaches Exchange Online or there's a failure in Exchange Online, you'll see a drop in the activity signal.
