@@ -40,7 +40,7 @@ Microsoft 365 Business Premium provides your business with productivity and secu
 - Compliance and privacy features to protect and control access to sensitive information
 - Device management capabilities that enables your security team to help keep devices up to date and secure
 
-Watch the following video to learn more about how Microsoft 365 Business Premium helps your business be more productive and secure:
+Watch the following video to learn more about how Microsoft 365 Business Premium helps your business be more productive and secure: <p>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Pq0G]
 
