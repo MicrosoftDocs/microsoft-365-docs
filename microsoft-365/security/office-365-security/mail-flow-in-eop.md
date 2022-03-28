@@ -16,6 +16,7 @@ ms.custom:
 description: Admin can learn about the options for configuring mail flow and routing in Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
+ms.collection: M365-security-compliance
 ---
 
 # Mail flow in EOP

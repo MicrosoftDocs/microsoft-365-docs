@@ -14,6 +14,7 @@ ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft provides help for EOP in a variety of places and methods including self-support and assisted-support.
 ms.technology: mdo
 ms.prod: m365-security
+ms.collection: M365-security-compliance
 ---
 
 # Help and support for EOP
@@ -72,8 +73,6 @@ For more information about how Premier Support can help your organization maximi
 ## Support telephone numbers
 
 Microsoft provides local or toll-free telephone numbers for product support around the world. Many of these support centers provide help in your local language during business hours or in English 24 hours a day, every day. If you don't see your location listed below, use the Virtual Agent as described above to find your local support telephone number.
-
-****
 
 |Country or region|Pre-purchase and billing questions|Technical Support questions|
 |---|---|---|
