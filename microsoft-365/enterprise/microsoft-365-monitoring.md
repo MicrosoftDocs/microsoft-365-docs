@@ -22,13 +22,13 @@ description: "Use Microsoft 365 monitoring for information about incidents or ad
 
 You can use dashboards in the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339) to monitor the health of various Microsoft services for your organization's Microsoft 365 subscription. This capability was initially started with Exchange Online and now getting expanded to other Microsoft services like Microsoft Teams, Microsoft 365 Apps and more service in future. Monitoring provides you with information about incidents and advisories that are collected in these categories:
 
-- **Infrastructure**. Issue is detected in the Microsoft 365 infrastructure that Microsoft owns for providing regular updates and resolving the issue. For example, users cannot access Exchange Online because of issues with Exchange or other Microsoft 365 cloud infrastructure.
+- **Infrastructure**. Issue is detected in the Microsoft 365 infrastructure that Microsoft owns for providing regular updates and resolving the issue. For example, users can't access Exchange Online because of issues with Exchange or other Microsoft 365 cloud infrastructure.
 
 - **Third-party infrastructure**. Issue is detected in third-party infrastructure on which your organization has taken a dependency and requires action from your organization for resolution. For example, user authentication transactions are getting throttled by a third-party security token service (STS) provider that prevents users from connecting to Exchange Online.
 
-- **Customer infrastructure**. Issue is detected in your organization's infrastructure and requires action from your organization for resolution. For example, users cannot access Exchange Online because they are unable to obtain an authentication token from STS provider hosted by your organization because of an expired certificate.
+- **Customer infrastructure**. Issue is detected in your organization's infrastructure and requires action from your organization for resolution. For example, users can't access Exchange Online because they are unable to obtain an authentication token from STS provider hosted by your organization because of an expired certificate.
 
-Here is an example of the **Service health** page in the Microsoft 365 admin center, which is available at **Health** > **Service health** for organization scenarios and [priority account](../admin/setup/priority-accounts.md) scenarios.
+Here's an example of the **Service health** page in the Microsoft 365 admin center, which is available at **Health** > **Service health** for organization scenarios and [priority account](../admin/setup/priority-accounts.md) scenarios.
 
 ![The Service health page in the Microsoft 365 admin center.](../media/microsoft-365-exchange-monitoring/service-health-dashboard-example.png)
 
@@ -38,9 +38,11 @@ The value of the **Health** column under **Issues in your organization** ind
 
 The value of the **Health** column under **Microsoft service health** indicates that the service is healthy or has advisories or incidents based on the cloud services that Microsoft maintains.
 
-Here is an example of the Exchange Online monitoring page in the Microsoft 365 admin center that shows the health of organization-level and priority account scenarios available from **Health** > **Service health** > **Exchange Online**.
+Here's an example of the Exchange Online monitoring page in the Microsoft 365 admin center that shows the health of organization-level and priority account scenarios available from **Health** > **Service health** > **Exchange Online**.
 
-With the scenario list page, you can see whether the Microsoft service is healthy or not and whether there are any associated incidents or advisories. For e.g. With Exchange Online monitoring, you can look at the service health for specific email scenarios and view near real-time signals to determine the impact by organization-level scenario. You can also see health of priority account scenarios, if available.
+![Organization-level scenarios for Exchange Online Monitoring.](../media/microsoft-365-exchange-monitoring/exchange-monitoring-org-scenarios.png)
+
+With the scenario list page, you can see whether the Microsoft service is healthy or not and whether there are any associated incidents or advisories. For example, with Exchange Online monitoring, you can look at the service health for specific email scenarios and view near real-time signals to determine the impact by organization-level scenario. You can also see health of priority account scenarios, if available.
 
 ## Requirements for monitoring
 
@@ -90,7 +92,7 @@ If the license count for your organization falls below 5,000 users and the month
 
 ### 2. Will there be other monitoring scenarios for other services in future?
 
-Yes. We have a few more services in public preview now. We will continue to work on expanding the footprint to other services.
+Yes. We have a few more services in public preview now. We'll continue to work on expanding the footprint to other services.
 
 ### 3. What is the plan for general availability of this experience?
 
@@ -108,4 +110,4 @@ For feedback on incidents or advisories, use the **Is this post helpful? link.
 
 ### 6. Are there any privacy concerns?
 
-Monitoring focuses on service metadata and user content is not monitored.
+Monitoring focuses on service metadata and user content isn't monitored.
