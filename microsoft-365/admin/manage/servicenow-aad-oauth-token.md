@@ -103,7 +103,7 @@ These prerequisites are necessary to set up the Microsoft 365 support integratio
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image24.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image24.png" alt-text="Graphical user interface, text, application Description automatically generated":::
 
-1. In this new application fill the fields with these values:
+1. In this new application, fill the fields with these values:
 
     - Name: **{Tenant\_Name}\_application\_inbound\_api** (example: contoso\_applicaiton\_inbound\_api)
 
