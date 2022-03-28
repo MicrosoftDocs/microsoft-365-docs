@@ -28,9 +28,23 @@ description: "Learn how security recommendations for Microsoft 365 Business Prem
 
 # How Microsoft 365 Business Premium helps your business
 
-## Features
+## Productivity and security
 
-Microsoft 365 Business Premium helps your business through productivity and security. 
+Microsoft 365 Business Premium provides your business with productivity and security features and capabilities that can help you run your business securely, from anywhere. Microsoft 365 Business Premium brings together best-in-class Office apps, collaboration tools like Microsoft Teams, and comprehensive security. Your subscription includes:
+
+- **Windows 10 and 11 Pro** upgrades for your Windows devices
+- **Office apps**, such as Word, Excel, and PowerPoint that you can install on your computers (Windows and Mac), and mobile devices (Windows, iOS, and Android). You also get Publisher and Access for your Windows devices.
+- **Microsoft Teams, Outlook, and Exchange** for email, calendars, meetings, and collaboration
+- **SharePoint and OneDrive** to store and manage your files
+- **Sophisticated protection from threats** like phishing, malware, and ransomware
+- **Compliance and privacy features** to protect and control access to sensitive information
+- **Device management capabilities** that enables your security team to help keep devices up to date and secure
+
+Watch the following video to learn more about how Microsoft 365 Business Premium helps your business be more productive and secure: <p>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Pq0G]
+
+For more information about what's included, see [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium?activetab=pivot:overviewtab).
 
 ## Train your users
 
@@ -44,7 +58,7 @@ This information summarizes a number of security recommendations specific to end
 
 All users should be aware of and use these email practices to help keep their email secure:
 
-- Set up email to use multi-factor authentication with the authenticator app.
+- Set up email to use multi-factor authentication with the authenticator app
 - Verify legitimate emails and look for safety tips from advanced anti-phishing protection
 - Allow Safe Links and Safe Attachments protection to check URLs and email attachments
 
