@@ -17,7 +17,22 @@ ms.localizationpriority: medium
 
 # Change history for Microsoft Managed Desktop documentation
 
-This article lists new and updated articles in the [Microsoft Managed Desktop documentation](index.yml). "Updated" articles have had material additions or corrections--minor fixes such as correction of typos, style, or formatting issues are not listed. You can always view the history of specific commits (including details of any changes) by visiting the [repo on GitHub](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop).
+This article lists new and updated articles in the [Microsoft Managed Desktop documentation](index.yml). "Updated" articles have had material additions or corrections--minor fixes such as correction of typos, style, or formatting issues aren't listed. You can always view the history of specific commits (including details of any changes) by visiting the [repo on GitHub](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop).
+
+## March 2022
+
+New or changed article | Description
+--- | ---
+| [Configurable settings reference](working-with-managed-desktop/config-setting-ref.md) | Added additional Proxy requirements |
+| [Localize the user experience](get-started/localization.md) | Added note to the Install more languages section |
+| [Configurable settings reference](working-with-managed-desktop/config-setting-ref.md) | Added note about legacy Edge |
+
+## February 2022
+
+New or changed article | Description
+--- | ---
+| [Service metrics report](working-with-managed-desktop/service-metrics-report.md) | Added the Service metric report |
+| [Microsoft Edge](get-started/edge-browser-app.md) | Updated article |
 
 ## October 2021
 

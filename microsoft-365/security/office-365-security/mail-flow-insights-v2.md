@@ -7,7 +7,7 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-
+ms.collection: M365-security-compliance
 ms.localizationpriority: medium
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: Admins can learn about the insights and reports that are available in the Mail flow dashboard in the Security & Compliance Center.
@@ -27,7 +27,7 @@ ms.prod: m365-security
 
 Admins can use Mail flow dashboard in the Security & Compliance Center to discover trends, insights, and take actions to fix issues related to mail flow in their organization.
 
-![The Mail flow dashboard in the Security & Compliance Center.](../../media/mail-flow-dashboard-v2.png)
+:::image type="content" source="../../media/mail-flow-dashboard-v2.png" alt-text="The Mail flow dashboard in the Security & Compliance Center" lightbox="../../media/mail-flow-dashboard-v2.png":::
 
 The available insights are:
 
