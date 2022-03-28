@@ -16,7 +16,9 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.collection: m365solution-scenario
+ms.collection: 
+ - m365solution-scenario
+ - M365-security-compliance
 ms.date: 1/18/2022
 ---
 
@@ -25,7 +27,8 @@ ms.date: 1/18/2022
 Implementing attack surface reduction (ASR) rules moves the first test ring into an enabled, functional state.
 
 > [!div class="mx-imgBorder"]
-> ![ASR rules implementation steps](images/asr-rules-implementation-steps.png)
+> :::image type="content" source="images/asr-rules-implementation-steps.png" alt-text="The procedure to implement ASR rules" lightbox="images/asr-rules-implementation-steps.png":::
+  
 
 ## Step 1: Transition ASR Rules from Audit to Block
 

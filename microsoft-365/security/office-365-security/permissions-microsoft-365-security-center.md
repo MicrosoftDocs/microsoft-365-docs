@@ -50,7 +50,7 @@ A **role group** is a set of roles that lets people do their jobs in the Microso
 
 The Microsoft 365 Defender portal> includes default role groups for the most common tasks and functions that you'll need to assign. Generally, we recommend simply adding individual users as **members** to the default role groups.
 
-![Diagram showing relationship of role groups to roles and members.](../../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png)
+:::image type="content" source="../../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png" alt-text="The relationship of a role group to its roles and members" lightbox="../../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png":::
 
 ## Roles and role groups in the Microsoft 365 Defender portal
 
@@ -60,7 +60,7 @@ The following types of roles and role groups are available in on the **Permissio
 
 - **Email & collaboration roles**: These are the same role groups that are available in the Security & Compliance Center, but you can manage them directly in the Microsoft 365 Defender portal. The permissions that you assign here are specific to the Microsoft 365 Defender portal, the Microsoft 365 compliance center, and the Security & Compliance Center, and don't cover all of the permissions that are needed in other Microsoft 365 workloads.
 
-![Permissions & roles page in the Microsoft 365 Defender portal.](../../media/m365-sc-permissions-and-roles-page.png)
+:::image type="content" source="../../media/m365-sc-permissions-and-roles-page.png" alt-text="The Permissions & roles page in the Microsoft 365 Defender portal" lightbox="../../media/m365-sc-permissions-and-roles-page.png":::
 
 ### Azure AD roles in the Microsoft 365 Defender portal
 
@@ -68,7 +68,7 @@ When you open the Microsoft 365 Defender portal at <https://security.microsoft.c
 
 When you select a role, a details flyout that contains the description of the role and the user assignments appears. But to manage those assignments, you need to click **Manage members in Azure AD** in the details flyout.
 
-![Link to manage permissions in Azure Active Directory.](../../media/permissions-manage-in-azure-ad-link.png)
+:::image type="content" source="../../media/permissions-manage-in-azure-ad-link.png" alt-text="The link to manage permissions in Azure Active Directory" lightbox="../../media/permissions-manage-in-azure-ad-link.png":::
 
 For more information, see [View and assign administrator roles in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-manage-roles-portal).
 
