@@ -29,7 +29,7 @@ Use the following graphic to help you identify the main configurable components 
 
 ![Main components to manage for Microsoft Purview Information Goevernance.](../media/information-governance-components.png)
 
-Looking to protect your data? See [Microsoft Purview Information Protection in Microsoft 365](information-protection.md).
+Looking to protect your data? See [Microsoft Purview Information Protection](information-protection.md).
 
 ## Information governance
 

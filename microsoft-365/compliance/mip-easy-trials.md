@@ -181,4 +181,4 @@ To learn more about sensitivity labels, data loss prevention, and all the capabi
 
 - [Learn about sensitivity labels](sensitivity-labels.md)
 - [Learn about data loss prevention](dlp-learn-about-dlp.md)
-- [Microsoft Purview Information Protection in Microsoft 365](information-protection.md)
+- [Microsoft Purview Information Protection](information-protection.md)
