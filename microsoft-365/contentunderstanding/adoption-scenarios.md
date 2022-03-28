@@ -134,4 +134,4 @@ When you automate this scenario, you can ensure that:
 
 ## See also
 
-[Microsoft SharePoint Syntex adoption: Get started](adoption-getstarted.md)
+[Get started driving adoption of SharePoint Syntex](adoption-getstarted.md)
