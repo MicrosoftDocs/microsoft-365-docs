@@ -60,7 +60,7 @@ Microsoft 365 Defender is a Cloud-based, unified, pre- and post-breach enterpris
 
 In this illustration an attack is underway. Phishing email arrives at the Inbox of an employee in your organization, who unknowingly opens the email attachment. This installs malware, which leads to a chain of events that could end with the theft of sensitive data. But in this case, Defender for Office 365 is in operation.
 
-![How Microsoft 365 Defender stops a chain of threats.](../../media/defender/m365-defender-eval-threat-chain.png)
+:::image type="content" source="../../media/defender/m365-defender-eval-threat-chain.png" alt-text="The various attack attempts" lightbox="../../media/defender/m365-defender-eval-threat-chain.png":::
 
 In the illustration:
 
@@ -88,7 +88,7 @@ Microsoft 365 Defender is made up of these security technologies, operating in t
 
 The diagram below illustrates high-level architecture for key Microsoft 365 Defender components and integrations. *Detailed* architecture for each Defender component, and use-case scenarios, are given throughout this series of articles.
 
-![Microsoft 365 Defender high-level architecture.](../../media/defender/m365-defender-eval-architecture.png)
+:::image type="content" source="../../media/defender/m365-defender-eval-architecture.png" alt-text="A high-level architecture of the Microsoft 365 Defender portal" lightbox="../../media/defender/m365-defender-eval-architecture.png":::
 
 In this illustration:
 
@@ -111,20 +111,19 @@ Additional optional architecture components not included in this illustration:
 
 Microsoft recommends enabling the components of Microsoft 365 in the order illustrated:
 
-![Microsoft 365 Defender high-level evaluation process.](../../media/defender/m365-defender-eval-process.png)
+:::image type="content" source="../../media/defender/m365-defender-eval-process.png" alt-text="A high-level evaluation process in the Microsoft 365 Defender portal" lightbox="../../media/defender/m365-defender-eval-process.png":::
 
 The following table describes this illustration.
 
-|Step|Link|Description|
-|---|---|---|
-|1|[Create the evaluation environment](eval-create-eval-environment.md)|This step ensures you have the trial license for Microsoft 365 Defender.|
-|2|[Enable Defender for Identity](eval-defender-identity-overview.md)|Review the architecture requirements, enable the evaluation, and walk through tutorials for identifying and remediating different attack types.|
-|3|[Enable Defender for Office 365](eval-defender-office-365-overview.md)|Ensure you meet the architecture requirements, enable the evaluation, and then create the pilot environment. This component includes Exchange Online Protection and so you will actually evaluate *both* here.|
-|4|[Enable Defender for Endpoint](eval-defender-endpoint-overview.md)|Ensure you meet the architecture requirements, enable the evaluation, and then create the pilot environment.|
-|5|[Enable Microsoft Defender for Cloud Apps](eval-defender-mcas-overview.md)|Ensure you meet the architecture requirements, enable the evaluation, and then create the pilot environment.|
-|6|[Investigate and respond to threats](eval-defender-investigate-respond.md)|Simulate an attack and begin using incident response capabilities.|
-|7|[Promote the trial to production](eval-defender-promote-to-production.md)|Promote the Microsoft 365 components to production one-by-one.|
-||||
+|  Serial Number   |Step  |Description  |
+|------|---------|---------|
+|1     | [Create the evaluation environment](eval-create-eval-environment.md)       |This step ensures you have the trial license for Microsoft 365 Defender.         |
+|2     | [Enable Defender for Identity](eval-defender-identity-overview.md)        | Review the architecture requirements, enable the evaluation, and walk through tutorials for identifying and remediating different attack types.   |
+|3     | [Enable Defender for Office 365 ](eval-defender-office-365-overview.md)       | Ensure you meet the architecture requirements, enable the evaluation, and then create the pilot environment. This component includes Exchange Online Protection and so you will actually evaluate *both* here.      |
+|4     | [Enable Defender for Endpoint ](eval-defender-endpoint-overview.md)       | Ensure you meet the architecture requirements, enable the evaluation, and then create the pilot environment.         |
+|5     | [Enable Microsoft Defender for Cloud Apps](eval-defender-mcas-overview.md)        |  Ensure you meet the architecture requirements, enable the evaluation, and then create the pilot environment.        |
+|6     | [Investigate and respond to threats](eval-defender-investigate-respond.md)        |   Simulate an attack and begin using incident response capabilities.      |
+|7     | [Promote the trial to production](eval-defender-promote-to-production.md)        | Promote the Microsoft 365 components to production one-by-one.        |
 
 This is a commonly recommended order designed to leverage the value of the capabilities quickly based on how much effort is typically required to deploy and configure the capabilities. For example, Defender for Office 365 can be configured in less time than it takes to enroll devices in Defender for Endpoint. Of course, you should prioritize the components to meet your business needs, and can enable these in a different order.
 
