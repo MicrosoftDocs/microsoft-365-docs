@@ -22,18 +22,9 @@ description: "Learn about the default data loss prevention policy in Microsoft T
 
 [Data loss prevention](dlp-learn-about-dlp.md) capabilities have been extended to include Microsoft Teams chat and channel messages, including private channel messages. As a part of this release, we created a default DLP policy for Microsoft Teams for first-time customers to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>.
 
-## Applies to
+## Licensing
 
-Any tenant who is licensed with one or more of the below licenses and have active Teams users
- 
-- ME5, 
-- MA5, 
-- E5/A5 Compliance, 
-- IP+G, 
-- OE5, 
-- O365 Advanced Compliance 
-- EMS E5
-
+For complete licensing information for DLP in Microsoft Teams, see [Information Protection: Data Loss Prevention for Teams](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-loss-prevention-for-teams).
 
 ## What does the default policy do?
 
