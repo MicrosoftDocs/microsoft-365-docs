@@ -77,9 +77,9 @@ Additionally, you can use the collection statistics (specifically the Top Locati
 
 ## Step 4: Remove holds and retention policies from data sources
 
-Before you can purge chat messages from a mailbox, you have to remove any hold or retention policy that is assigned to a target mailbox. If not, then the chat you're trying to delete will be retained. 
+Before you can purge chat messages from a mailbox, you have to remove any hold or retention policy that is assigned to a target mailbox. If not, then the chat you're trying to delete will be retained.
 
-Use the list of mailboxes that contain the chat messages that you want to delete and determine if there's a hold or retention policy assigned to those mailboxes, and then remove the hold or retention policy. Be sure to identify the hold or retention policy that you remove so that you can reassign to the mailboxes in Step 7. 
+Use the list of mailboxes that contain the chat messages that you want to delete and determine if there's a hold or retention policy assigned to those mailboxes, and then remove the hold or retention policy. Be sure to identify the hold or retention policy that you remove so that you can reassign to the mailboxes in Step 7.
 
 For instructions about how to identify and remove holds and retention policies, see "Step 3: Remove all holds from the mailbox" in [Delete items in the Recoverable Items folder of cloud-based mailboxes on hold](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-3-remove-all-holds-from-the-mailbox).. 
 
@@ -145,14 +145,22 @@ For information about using Graph Explorer, see [Use Graph Explorer to try Micro
 
 ## Step 6: Verify chat messages are purged
 
+After you run the POST request to purge chat messages, these messages are removed from the Teams client and replaced with a message (called a *tombstone*) stating that an admin has removed the message.
+
+![View of purged chat message in Teams client.](..\media\TeamsPurgeTombstone.png)
+
+A purged chat message is also moved to the SubstrateHolds folder, which is a mailbox folder. Purged chat messages are stored there for at least 1 day. Purged messages are permanently deleted the next time the timer job runs (typically between 1-7 days). For more information, see [Learn about retention for Microsoft Teams](retention-policies-teams.md).
+
 ## Step 7: Reapply holds and retention policies to data sources
+
+After you verify that chat messages are purged and removed from the Teams client, you can reapply the holds and retention policies that you removed in Step 4.
 
 ## Deleting chat messages in federated environments
 
 Admins can use the procedures in this article to search and delete Teams chat messages in federated environments. However, you must adhere to the following guidelines. These guidelines are based on the organizational ownership of the conversation thread that contains the messages you want to delete. An organization is the owner of a conversation thread that is started by a user in that organization. In other words, when a user starts a chat, the user's organization becomes the owner of the conversation thread.
 
-- Your organization must own the conversation thread to delete messages in that thread. An organization can't delete messages in conversation threads they don't own.
+- Admins can delete the compliance copy in conversation threads owned by their organization. That means compliance copies are purged when the admin who purges the chat messages in Step 5 is in the same organization as the user who initiated the conversation thread that contains the purged messages.
 
-- The organization who runs the search and delete operation can delete both the compliance copy and the message in the Teams client for messages in conversations owned by that organization. 
+- If a conversation thread has users in two organizations, purged chat messages are removed from the Teams client in both organizations.
 
-- If an organization doesn't own the conversation thread, they'll only be able to delete a message from the Teams client of users in another organization. They can't deleted the compliance copy that is saved in the other organization.
+- The only way to purge chat messages from user mailboxes in your organization for chat messages in conversation threads owned by another organization is to use retention policies for Teams. For more information, see [Learn about retention for Microsoft Teams](retention-policies-teams.md).

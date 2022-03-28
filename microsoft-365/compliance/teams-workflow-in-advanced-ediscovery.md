@@ -298,6 +298,10 @@ Here are some tips and best practices for viewing Teams content in a review set.
 
 - Use [filters](review-set-search.md) for Teams-related properties to quickly display Teams content. There are filters for most of the metadata properties described in the previous section.
 
+## Deleting Teams chat messages
+
+You can use Advanced eDiscovery and the Microsoft Graph Explorer to respond to data spillage incidents, when content containing confidential or malicious information is released through Teams chat messages.​ Admins in your organization can search for and delete chat messages in Microsoft Teams. This can help you remove sensitive information or inappropriate content in Teams chat messages. For more information, see [Search and purge chat messages in Teams](search-and-delete-Teams-chat-messages.md).
+
 ## Reference guide
 
 Here's a quick reference guide for using Advanced eDiscovery for Microsoft Teams. This guide summarizes the keys points for using Advanced eDiscovery to preserve, collect, review, and export content from Microsoft Teams.
