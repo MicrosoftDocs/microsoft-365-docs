@@ -175,7 +175,7 @@ After you turn on Safe Links protection for Microsoft Teams, URLs in Teams are c
 
 If the user who sent the link isn't included in a Safe Links policy where Teams protection is enabled, the user is free to click through to the original URL on their computer or device.
 
-![A Safe Links for Teams page reporting a malicious link.](../../media/tp-safe-links-for-teams-malicious.png)
+:::image type="content" source="../../media/tp-safe-links-for-teams-malicious.png" alt-text="A Safe Links for Teams page reporting a malicious link" lightbox="../../media/tp-safe-links-for-teams-malicious.png":::
 
 Clicking the **Go Back** button on the warning page will return the user to their original context or URL location. However, clicking on the original link again will cause Safe Links to rescan the URL, so the warning page will reappear.
 
@@ -325,33 +325,33 @@ Note that several warning pages have been updated. If you're not already seeing 
 
 The clicked URL is being scanned by Safe Links. You might need to wait a few moments before trying the link again.
 
-!["The link is being scanned" notification](../../media/ee8dd5ed-6b91-4248-b054-12b719e8d0ed.png)
+:::image type="content" source="../../media/ee8dd5ed-6b91-4248-b054-12b719e8d0ed.png" alt-text="The notification that the link is being scanned" lightbox="../../media/ee8dd5ed-6b91-4248-b054-12b719e8d0ed.png":::
 
 The original notification page looked like this:
 
-![Original "The link is being scanned" notification](../../media/04368763-763f-43d6-94a4-a48291d36893.png)
+:::image type="content" source="../../media/04368763-763f-43d6-94a4-a48291d36893.png" alt-text="The link is being scanned notification" lightbox="../../media/04368763-763f-43d6-94a4-a48291d36893.png":::
 
 ### Suspicious message warning
 
 The clicked URL was in an email message that's similar to other suspicious messages. We recommend that you double-check the email message before proceeding to the site.
 
-!["A link was clicked from a suspicious message" warning](../../media/33f57923-23e3-4b0f-838b-6ad589ba897b.png)
+:::image type="content" source="../../media/33f57923-23e3-4b0f-838b-6ad589ba897b.png" alt-text="A link was clicked from a suspicious message warning" lightbox="../../media/33f57923-23e3-4b0f-838b-6ad589ba897b.png":::
 
 ### Phishing attempt warning
 
 The clicked URL was in an email message that has been identified as a phishing attack. As a result, all URLs in the email message are blocked. We recommend that you do not proceed to the site.
 
-!["The link was clicked from a phishing message" warning](../../media/6e544a28-0604-4821-aba6-d5a57bb917e5.png)
+:::image type="content" source="../../media/6e544a28-0604-4821-aba6-d5a57bb917e5.png" alt-text="The warning that states that a link was clicked from a phishing message" lightbox="../../media/6e544a28-0604-4821-aba6-d5a57bb917e5.png":::
 
 ### Malicious website warning
 
 The clicked URL points to a site that has been identified as malicious. We recommend that you do not proceed to the site.
 
-!["This website is classified as malicious" warning](../../media/058883c8-23f0-4672-9c1c-66b084796177.png)
+:::image type="content" source="../../media/058883c8-23f0-4672-9c1c-66b084796177.png" alt-text="The warning that states that the website is classified as malicious" lightbox="../../media/058883c8-23f0-4672-9c1c-66b084796177.png":::
 
 The original warning page looked like this:
 
-![Original "This website has been classified as malicious" warning](../../media/b9efda09-6dd8-46ef-82cb-56e4d538b8f5.png)
+:::image type="content" source="../../media/b9efda09-6dd8-46ef-82cb-56e4d538b8f5.png" alt-text="The original warning that states that the website is classified as malicious" lightbox="../../media/b9efda09-6dd8-46ef-82cb-56e4d538b8f5.png":::
 
 ### Blocked URL warning
 
@@ -359,18 +359,18 @@ The clicked URL has been manually blocked by an admin in your organization (the 
 
 There are several reasons why an admin would manually block specific URLs. If you think the site should not be blocked, contact your admin.
 
-!["This website was blocked by your admin" warning](../../media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png)
+:::image type="content" source="../../media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png" alt-text="The warning that states that website was blocked by your admin" lightbox="../../media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png":::
 
 The original warning page looked like this:
 
-![Original "This website has been blocked per your organization's URL policy" warning](../../media/3d6ba028-30bf-45fc-958e-d3aad3defc83.png)
+:::image type="content" source="../../media/3d6ba028-30bf-45fc-958e-d3aad3defc83.png" alt-text="The original warning that states that website has been blocked per your organization's URL policy" lightbox="../../media/3d6ba028-30bf-45fc-958e-d3aad3defc83.png":::
 
 ### Error warning
 
 Some kind of error has occurred, and the URL can't be opened.
 
-!["The page that you are trying to access cannot be loaded" warning](../../media/2f7465a4-1cf4-4c1c-b7d4-3c07e4b795b4.png)
+:::image type="content" source="../../media/2f7465a4-1cf4-4c1c-b7d4-3c07e4b795b4.png" alt-text="The warning that states the page that you are trying to access cannot be loaded" lightbox="../../media/2f7465a4-1cf4-4c1c-b7d4-3c07e4b795b4.png":::
 
 The original warning page looked like this:
 
-![Original "This web page could not be loaded" warning](../../media/9aaa4383-2f23-48be-bdaa-8efbcb2acc70.png)
+:::image type="content" source="../../media/9aaa4383-2f23-48be-bdaa-8efbcb2acc70.png" alt-text="The warning that states that the web page could not be loaded" lightbox="../../media/9aaa4383-2f23-48be-bdaa-8efbcb2acc70.png":::
