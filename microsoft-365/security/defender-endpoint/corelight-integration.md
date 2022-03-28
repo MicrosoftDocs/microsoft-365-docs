@@ -47,7 +47,7 @@ To enable the Corelight integration, you’ll need to take the following steps:
 
 1. In the navigation pane of the [https://security.microsoft.com](https://security.microsoft.com/) portal, select **Settings** \> **Device discovery** \> **Data sources**.
 
-    ![Image of data sources](images/enable-corelight.png)
+   :::image type="content" source="images/enable-corelight.png" alt-text="The data sources page in the Microsoft 365 Defender portal" lightbox="images/enable-corelight.png":::
 
 2. Select **Send Corelight data to M365D** and select **Save**.
 
@@ -76,15 +76,15 @@ In addition to this, the GUI validation requires that a broker is configured in 
 1. In the Corelight Sensor GUI configuration section, select **Sensor** \> **Export**.
 2. From the list, go to **EXPORT TO KAFKA** and select the switch to turn it on.
 
-   ![Image of kafka export](images/exporttokafka.png)
+   :::image type="content" source="images/exporttokafka.png" alt-text="The kafka export" lightbox="images/exporttokafka.png":::
 
 3. Next, turn on **EXPORT TO AZURE DEFENDER FOR IOT** and enter your tenant ID, noted in Step 1, in the TENANT ID field.
 
-   ![Image of iot export](images/exporttodiot.png)
+   :::image type="content" source="images/exporttodiot.png" alt-text="The iot export" lightbox="images/exporttodiot.png":::
 
 4. Select **Apply Changes**.
 
-   ![Apply image ](images/corelightapply.png)
+   :::image type="content" source="images/corelightapply.png" alt-text="The Apply changes icon" lightbox="images/corelightapply.png":::
 
 > [!NOTE]
 > Configuration options in Kafka (excluding Log Exclusion and Filters) should not be changed. Any changes made will be ignored.
