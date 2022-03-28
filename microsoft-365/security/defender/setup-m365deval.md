@@ -92,7 +92,7 @@ This topic guides you to set up a dedicated lab environment. For information on 
 
 14. Add MX, CNAME, and TXT records to your domain. When completed, select **Verify**.
 
-    :::image type="content" source="../../media/mtp-eval-21.png" alt-text="The Office 365 E5 here you can add your DNS records" lightbox="../../media/mtp-eval-22.png":::
+    :::image type="content" source="../../media/mtp-eval-22.png" alt-text="The Office 365 E5 here you can add your DNS records" lightbox="../../media/mtp-eval-22.png":::
  
 15. Congratulations, you have completed the provisioning of your Office 365 tenant.
 

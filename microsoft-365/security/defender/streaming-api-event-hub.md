@@ -111,7 +111,7 @@ To get the data types for event properties do the following:
 
 - Here is an example for Device Info event:
 
-  :::image type="content" source="../defender-endpoint/images/machine-info-datatype-example.png" alt-text="An example query for for device info" lightbox="../defender-endpoint/images/machine-info-datatype-example.png":::
+  :::image type="content" source="../defender-endpoint/images/machine-info-datatype-example.png" alt-text="An example query for device info" lightbox="../defender-endpoint/images/machine-info-datatype-example.png":::
 
 ## Related topics
 
