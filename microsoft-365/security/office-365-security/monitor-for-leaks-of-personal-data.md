@@ -28,7 +28,7 @@ ms.prod: m365-security
 
 There are many tools that can be used to monitor the use and transport of personal data. This topic describes three tools that work well.
 
-![Tools to monitor the use and transport of personal data.](../../media/Monitor-for-leaks-of-personal-data-image1.png)
+:::image type="content" source="../../media/Monitor-for-leaks-of-personal-data-image1.png" alt-text="The tools to monitor the use and transport of personal data" lightbox="../../media/Monitor-for-leaks-of-personal-data-image1.png":::
 
 In the illustration:
 
@@ -57,7 +57,7 @@ DLP reports are in the Microsoft 365 compliance center. Go to **Reports** \> **O
 
 For more information, see [View the reports for data loss prevention](../../compliance/view-the-dlp-reports.md).
 
-![Report showing DLP policy matches.](../../media/Monitor-for-leaks-of-personal-data-image2.png)
+:::image type="content" source="../../media/Monitor-for-leaks-of-personal-data-image2.png" alt-text="The report showing DLP policy matches" lightbox="../../media/Monitor-for-leaks-of-personal-data-image2.png":::
 
 ## Audit log and alert policies
 
@@ -93,7 +93,7 @@ To better understand your cloud environment, the Defender for Cloud Apps investi
 
 For examples, the following illustration demonstrates two Defender for Cloud Apps policies that can help with GDPR.
 
-![Example Defender for Cloud Apps policies.](../../media/Monitor-for-leaks-of-personal-data-image3.png)
+:::image type="content" source="../../media/Monitor-for-leaks-of-personal-data-image3.png" alt-text="The Defender for Cloud Apps policies" lightbox="../../media/Monitor-for-leaks-of-personal-data-image3.png":::
 
 The first policy alerts when files with a predefined PII attribute or custom expression that you choose is shared outside the organization from the SaaS apps that you choose.
 
@@ -111,7 +111,7 @@ If you haven't yet started to use Defender for Cloud Apps, begin by starting it 
 > [!NOTE]
 > Be sure to enable 'Automatically scan files for Azure Information Protection classification labels' (in General settings) when getting started with Defender for Cloud Apps or before you assign labels. After setup, Defender for Cloud Apps does not scan existing files again until they are modified.
 
-![Dashboard showing information about alerts.](../../media/Monitor-for-leaks-of-personal-data-image4.png)
+:::image type="content" source="../../media/Monitor-for-leaks-of-personal-data-image4.png" alt-text="The dashboard showing information about alerts" lightbox="../../media/Monitor-for-leaks-of-personal-data-image4.png":::
 
 More information:
 
