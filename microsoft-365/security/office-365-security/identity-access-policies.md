@@ -32,7 +32,7 @@ This guidance discusses how to deploy the recommended policies in a newly-provis
 
 The following diagram illustrates the recommended set of policies. It shows which tier of protections each policy applies to and whether the policies apply to PCs or phones and tablets, or both categories of devices. It also indicates where you configure these policies.
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png" alt-text="Common policies for configuring Zero Trust identity and device access." lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png" alt-text="The common policies for configuring Zero Trust identity and device access." lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png":::
 
 
 <!--
@@ -71,7 +71,7 @@ A recommended practice is to create an Azure AD group for Conditional Access exc
 
 Here's an example of group assignment and exclusions for requiring MFA.
 
-![Example group assignment and exclusions for MFA policies.](../../media/microsoft-365-policies-configurations/identity-access-policies-assignment.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-policies-assignment.png" alt-text="The Example group assignment and exclusions for MFA policies" lightbox="../../media/microsoft-365-policies-configurations/identity-access-policies-assignment.png":::
 
 Here are the results:
 
@@ -89,7 +89,7 @@ Be careful when applying higher levels of protection to groups and users. For ex
 
 All Azure AD groups created as part of these recommendations must be created as Microsoft 365 groups. This is important for the deployment of sensitivity labels when securing documents in Microsoft Teams and SharePoint.
 
-![Example of creating a Microsoft 365 group.](../../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png" alt-text="Creating a Microsoft 365 group" lightbox="../../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png":::
 
 ## Require MFA based on sign-in risk
 
@@ -437,6 +437,6 @@ To require compliance for all devices:
 
 ## Next step
 
-[![Step 3: Policies for guest and external users.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-3.png)](identity-access-policies-guest-access.md)
+[![Step 3: Policies for guest and external users.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-3.png#lightbox)](identity-access-policies-guest-access.md)
 
 [Learn about policy recommendations for guest and external users](identity-access-policies-guest-access.md)

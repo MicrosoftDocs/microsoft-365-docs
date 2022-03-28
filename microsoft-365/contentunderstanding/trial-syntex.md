@@ -16,7 +16,7 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid:
 ms.localizationpriority: medium
-description: Learn how to plan and run a trial pilot program for SharePoint Syntex in your organization.
+description: Learn how to plan, sign up, and run a trial pilot program for SharePoint Syntex in your organization.
 ---
 
 # Run a trial of Microsoft SharePoint Syntex
