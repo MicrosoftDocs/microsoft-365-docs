@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Purview Information Protection for Microsoft 365"
+title: "Microsoft Purview Information Protection"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,16 +17,16 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 recommendations: false
-description: "Implement Microsoft Purview Information Protection  capabilities to help you protect sensitive information wherever it lives or travels."
+description: "Implement Microsoft Purview Information Protection capabilities to help you protect sensitive information wherever it lives or travels."
 ---
 
-# Microsoft Purview Information Protection for Microsoft 365
+# Microsoft Purview Information Protection
 
 >*[Licensing for Microsoft 365 Security & Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
 Implement capabilities from Microsoft Purview Information Protection to help you discover, classify, and protect sensitive information wherever it lives or travels.
 
-Information protection capabilities are included with Microsoft 365 and give you the tools to [know your data](#know-your-data), [protect your data](#protect-your-data), and [prevent data loss](#prevent-data-loss).
+These information protection capabilities give you the tools to [know your data](#know-your-data), [protect your data](#protect-your-data), and [prevent data loss](#prevent-data-loss).
 
 ![Image of how Microsoft Purview Information Protection helps you discover, classify, and protect sensitive data.](../media/powered-by-intelligent-platform.png)
 
