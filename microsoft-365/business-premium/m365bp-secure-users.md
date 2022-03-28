@@ -44,6 +44,8 @@ Watch the following video to learn more about how Microsoft 365 Business Premium
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Pq0G]
 
+For more information about what's included, see [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium?activetab=pivot:overviewtab).
+
 ## Train your users
 
 The security recommendations provided here make it much harder for cyber attackers to gain access to your environment. As the one responsible for the integrity of the network, your front line is the members of the org who use the systems regularly. The tradeoff is your users need to be aware of how to work within and maintain a more secure environment. Training these front-line users in proper safeguarding and maintenance of the network plays a big part in overall security. We understand a little extra patience is required, but it's worth it to keep the organization protected. 
