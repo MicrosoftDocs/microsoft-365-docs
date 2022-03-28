@@ -172,7 +172,7 @@ For rules with the “Rule State” specified:
 | Block all Office applications from creating child processes | d4f940ab-401b-4efc-aadc-ad5f3c50688a |
 | Block credential stealing from the Windows local security authority subsystem (lsass.exe) | 9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2 |
 | Block executable content from email client and webmail | be9ba2d9-53ea-4cdc-84e5-9b1eeee46550 |
-| Block executable files from running unless they meet a prevalence, age, or trusted list criterion | 01443614-cd74-433a-b99e-2ecdc07bfc25e |
+| Block executable files from running unless they meet a prevalence, age, or trusted list criterion | 01443614-cd74-433a-b99e-2ecdc07bfc25 |
 | Block execution of potentially obfuscated scripts | 5beb7efe-fd9a-4556-801d-275e5ffc04cc |
 | Block JavaScript or VBScript from launching downloaded executable content | d3e037e1-3eb8-44c8-a917-57927947596d |
 | Block Office applications from creating executable content | 3b576869-a4ec-4529-8536-b80a7769e899 |
@@ -339,7 +339,7 @@ Intune name: `Executables that don't meet a prevalence, age, or trusted list cri
 
 Configuration Manager name: `Block executable files from running unless they meet a prevalence, age, or trusted list criteria`
 
-GUID: `01443614-cd74-433a-b99e-2ecdc07bfc25e`
+GUID: `01443614-cd74-433a-b99e-2ecdc07bfc25`
 
 Advanced hunting action type:
 
