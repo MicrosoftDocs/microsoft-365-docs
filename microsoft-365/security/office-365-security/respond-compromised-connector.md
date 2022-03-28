@@ -109,7 +109,7 @@ If you have [Microsoft Defender for Office 365 Plan 1](defender-for-office-365.m
 Use the following command line in PowerShell to investigate and validate connector-related activity by a user in the audit log. For more information, see [Use a PowerShell script to search the audit log](/compliance/audit-log-search-script). 
 
 ```powershell
-Search-UnifiedAuditLog -StartDate "<ExDateTime>" -EndDate "<ExDateTime>" -RecordType ExchangeAdmin -Operations Set-InboundConnector,New-InboundConnector
+Search-UnifiedAuditLog -StartDate "<ExDateTime>" -EndDate "<ExDateTime>" -Operations "New-InboundConnector", "Set-InboundConnector", "Remove-InboundConnector
 ```
 
 ### Step 2: Review and revert unauthorized change(s) in a connector 
