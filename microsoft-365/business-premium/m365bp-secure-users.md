@@ -58,7 +58,7 @@ This information summarizes a number of security recommendations specific to end
 
 All users should be aware of and use these email practices to help keep their email secure:
 
-- Set up email to use multi-factor authentication with the authenticator app.
+- Set up email to use multi-factor authentication with the authenticator app
 - Verify legitimate emails and look for safety tips from advanced anti-phishing protection
 - Allow Safe Links and Safe Attachments protection to check URLs and email attachments
 
