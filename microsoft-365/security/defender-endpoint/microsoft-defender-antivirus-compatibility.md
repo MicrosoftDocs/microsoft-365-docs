@@ -107,7 +107,7 @@ The following table summarizes the state of Microsoft Defender Antivirus in seve
  > [!NOTE]
  > For passive mode to work on endpoints running Windows Server 2016 and Windows Server 2012 R2, those endpoints must be onboarded with the modern, unified solution described in [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016). 
 
-(<a id="fn3">3</a>) On Windows Server 2016, Windows Server 2012 R2, Windows Server 2019, and Windows Server 2022, if you are using a non-Microsoft antivirus product and that endpoint is not onboarded to Microsoft Defender for Endpoint, disable/uninstall Microsoft Defender Antivirus manually to prevent problems caused by having multiple antivirus products installed on a server.
+(<a id="fn3">3</a>) On Windows Server 2016, Windows Server 2012 R2, Windows Server version 1803 or newer, Windows Server 2019, and Windows Server 2022, if you are using a non-Microsoft antivirus product on an endpoint that is *not* onboarded to Microsoft Defender for Endpoint, disable/uninstall Microsoft Defender Antivirus manually to prevent problems caused by having multiple antivirus products installed on a server.
 
 > [!TIP]
 > On Windows Server 2016, you might see *Windows Defender Antivirus* instead of *Microsoft Defender Antivirus*.
