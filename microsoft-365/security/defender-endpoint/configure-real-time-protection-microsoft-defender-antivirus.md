@@ -19,9 +19,9 @@ ms.collection: M365-security-compliance
 
 # Enable and configure Microsoft Defender Antivirus always-on protection in Group Policy
 
-
 **Applies to:**
 
+- Microsoft Defender Antivirus for Windows OS
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
