@@ -29,7 +29,29 @@ ms.technology: mde
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-machinesview-abovefoldlink)
 
-The device inventory helps you discover, explore, and investigate devices in your organization including computers, servers, mobile, network appliances and IoT devices. It can help you discover unknown devices and identify device management gaps in your network.
+The **Devices list** shows a list of the devices in your network where alerts were generated. By default, the queue displays devices seen in the last 30 days.
+
+At a glance you'll see information such as domain, risk level, OS platform, and other details for easy identification of devices most at risk.
+
+There are several options you can choose from to customize the devices list view. On the top navigation you can:
+
+- Add or remove columns
+- Export the entire list in CSV format
+- Select the number of items to show per page
+- Apply filters
+
+During the onboarding process, the **Devices list** is gradually populated with devices as they begin to report sensor data. Use this view to track your onboarded endpoints as they come online, or download the complete endpoint list as a CSV file for offline analysis.
+
+> [!NOTE]
+> If you export the device list, it will contain every device in your organization. It might take a significant amount of time to download, depending on how large your organization is. Exporting the list in CSV format displays the data in an unfiltered manner. The CSV file will include all devices in the organization, regardless of any filtering applied in the view itself.
+
+:::image type="content" source="images/device-inventory.png" alt-text="The list of devices" lightbox="images/device-inventory.png":::
+
+## Sort and filter the device list
+
+You can apply the following filters to limit the list of alerts and get a more focused view.
+
+### Device name
 
 During the Microsoft Defender for Endpoint onboarding process, devices onboarded to MDE are gradually populated into the device inventory as they begin to report sensor data. Following this, the device inventory is populated by devices that are discovered in your network through the device discovery process. The device inventory has three tabs that list devices by:
 

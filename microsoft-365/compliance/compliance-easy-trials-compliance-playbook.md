@@ -6,7 +6,7 @@ ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
 audience: Admin
-ms.topic: hub-page
+ms.topic: landing-page
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
 ms.localizationpriority: high
@@ -429,6 +429,6 @@ Proactively identify and protect against privacy risks such as data hoarding, da
 
 **What’s included**: For a full list of Microsoft 365 compliance solutions and features listed by product tier, view the [Feature Matrix](https://go.microsoft.com/fwlink/?linkid=2139145).
 
-**Microsoft Security Technical Content Library**: Explore this library to find interactive guides and other learning content relevant to your needs. [Visit Library](/security/content-library).
+**Microsoft Security Technical Content Library**: Explore this library to find interactive guides and other learning content relevant to your needs. [Visit Library](/security).
 
 **Microsoft Security Resources**: From antimalware to Zero Trust, get all the relevant resources for your organization’s security needs. [Visit Resources](/security/business/resources).
