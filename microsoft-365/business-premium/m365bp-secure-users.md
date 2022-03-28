@@ -33,7 +33,7 @@ description: "Learn how security recommendations for Microsoft 365 Business Prem
 Microsoft 365 Business Premium provides your business with productivity and security features and capabilities that can help you run your business securely, from anywhere. Microsoft 365 Business Premium brings together best-in-class Office apps, collaboration tools like Microsoft Teams, and comprehensive security. Your subscription includes:
 
 - **Windows 10 and 11 Pro** upgrades for your Windows devices
-- **Office apps**, such as Word, Excel, and PowerPoint that you can install on your computers (Windows and Mac), and mobile devices (Windows, iOS, and Android). You also get Publisher and Access for your Windows devices!
+- **Office apps**, such as Word, Excel, and PowerPoint that you can install on your computers (Windows and Mac), and mobile devices (Windows, iOS, and Android). You also get Publisher and Access for your Windows devices.
 - **Microsoft Teams, Outlook, and Exchange** for email, calendars, meetings, and collaboration
 - **SharePoint and OneDrive** to store and manage your files
 - **Sophisticated protection from threats** like phishing, malware, and ransomware
