@@ -15,6 +15,9 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.topic: article
+ms.collection: 
+- M365-security-compliance
+- m365initiative-m365-defender
 ---
 
 # Microsoft Threat Experts in Microsoft 365 overview

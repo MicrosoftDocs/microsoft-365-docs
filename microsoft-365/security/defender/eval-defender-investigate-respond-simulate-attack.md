@@ -122,13 +122,13 @@ One alternative is to host your AD DS domain controller and test device as virtu
 
 Here is the result.
 
-![Endpoints for your Defender evaluation environment using the simulated enterprise Test Lab Guide.](../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-endpoints-tlg.png)
+:::image type="content" source="../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-endpoints-tlg.png" alt-text="The evaluation environment using the simulated enterprise Test Lab Guide" lightbox="../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-endpoints-tlg.png":::
 
 You'll simulate a sophisticated attack that leverages advanced techniques to hide from detection. The attack enumerates opened Server Message Block (SMB) sessions on domain controllers and retrieves recent IP addresses of users' devices. This category of attacks usually doesn't include files dropped on the victim's device and they occur solely in memory. They "live off the land" by using existing system and administrative tools and inject their code into system processes to hide their execution. Such behavior allows them to evade detection and persist on the device.
 
 In this simulation, our sample scenario starts with a PowerShell script. In the real world, a user might be tricked into running a script or the script might run from a remote connection to another computer from a previously infected device, which indicates that the attacker is attempting to move laterally in the network. Detection of these scripts can be difficult because administrators also often run scripts remotely to carry out various administrative activities.
 
-![Fileless PowerShell attack with process injection and SMB reconnaisance attack diagram.](../../media/mtp/mtpdiydiagram.png)
+:::image type="content" source="../../media/mtp/mtpdiydiagram.png" alt-text="The Fileless PowerShell attack with process injection and SMB reconnaisance attack" lightbox="../../media/mtp/mtpdiydiagram.png":::
 
 During the simulation, the attack injects shellcode into a seemingly innocent process. The scenario requires the use of notepad.exe. We chose this process for the simulation, but attackers would more likely target a long-running system process, such as svchost.exe. The shellcode then goes on to contact the attacker's command-and-control (C2) server to receive instructions on how to proceed. The script attempts executing reconnaissance queries against the domain controller (DC). Reconnaissance allows an attacker to get information about recent user login information. Once attackers have this information, they can move laterally in the network to get to a specific sensitive account
 
@@ -191,7 +191,6 @@ Switching to the SOC analyst point of view, you can now start to investigate the
 3. The new incident for the simulated attack will appear in the incident queue.
 
    :::image type="content" source="../../media/mtp/fig2.png" alt-text="An example of the Incidents queue" lightbox="../../media/mtp/fig2.png":::
-
 
 #### Investigate the attack as a single incident
 
@@ -326,7 +325,7 @@ This wraps up attack simulations for incident analysis, automated investigation,
 
 ## Next step
 
-[![Try Microsoft 365 Defender incident response capabilities.](../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-step2.png)](eval-defender-investigate-respond-additional.md)
+[:::image type="content" source="../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-step2.png" alt-text="The Microsoft 365 Defender incident response capabilities" lightbox="../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-step2.png":::](eval-defender-investigate-respond-additional.md)
 
 Step 2 of 2: [Try Microsoft 365 Defender incident response capabilities](eval-defender-investigate-respond-additional.md)
 

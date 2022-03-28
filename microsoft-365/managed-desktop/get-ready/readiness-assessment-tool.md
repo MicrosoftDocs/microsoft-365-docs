@@ -28,7 +28,7 @@ The [online tool](https://aka.ms/mmdart) checks settings in Microsoft Endpoint M
 
 Microsoft Managed Desktop retains the data associated with these checks for 12 months after the last time you run a check in your Azure AD organization (tenant). After 12 months, we retain it in de-identified form. You can choose to delete the data we collect.
 
-Anyone with at least the Global Reader or Intune Administrator role will be able to run this tool, but two of the checks ([Conditional access policies](readiness-assessment-fix.md#conditional-access-policies) and [Multi-factor authentication](readiness-assessment-fix.md#multi-factor-authentication) require extra permissions.
+Anyone with at least the Global Reader or Intune Administrator role will be able to run this tool, but two of the checks ([Conditional access policies](readiness-assessment-fix.md#conditional-access-policies) and [Multi-factor authentication](readiness-assessment-fix.md#multi-factor-authentication)) require extra permissions.
 
 > [!IMPORTANT]  
 > The online readiness assessment tool helps you check your readiness to enroll in Microsoft Managed Desktop for the first time. If your organization is already enrolled in Microsoft Managed Desktop, don't use this tool.

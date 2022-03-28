@@ -91,7 +91,7 @@ Type "`:wq`" without the double quotes.
 
 To view your cron jobs, type `sudo crontab -l`
 
-:::image type="content" source="../../media/linux-mdatp-1.png" alt-text="linux mdatp.":::
+:::image type="content" source="../../media/linux-mdatp-1.png" alt-text="The linux mdatp page" lightbox="../../media/linux-mdatp-1.png":::
 
 #### To inspect cron job runs
 
