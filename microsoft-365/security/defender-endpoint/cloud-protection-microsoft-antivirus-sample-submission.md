@@ -1,5 +1,5 @@
 ---
-title: Cloud protection and sample submission in Microsoft Defender Antivirus
+title: Cloud protection and sample submission at Microsoft Defender Antivirus
 description: Learn about cloud-delivered protection and Microsoft Defender Antivirus
 keywords: Microsoft Defender Antivirus, next-generation technologies, antivirus sample submission, next-generation av, machine learning, antimalware, security, defender, cloud, cloud-delivered protection
 ms.prod: m365-security
@@ -13,11 +13,11 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
-ms.date: 10/18/2021
+ms.date: 02/24/2022
 ms.collection: M365-security-compliance
 ---
 
-# Cloud protection and sample submission in Microsoft Defender Antivirus
+# Cloud protection and sample submission at Microsoft Defender Antivirus
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -27,19 +27,19 @@ Microsoft Defender Antivirus uses many intelligent mechanisms for detecting malw
 
 If a suspicious or malicious file is detected, a sample is sent to the cloud service for analysis while Microsoft Defender Antivirus blocks the file. As soon as a determination is made, which happens quickly, the file is either released or blocked by Microsoft Defender Antivirus. 
 
-This article provides an overview of cloud protection and automatic sample submission in Microsoft Defender Antivirus. To learn more about cloud protection, see [Cloud protection and Microsoft Defender Antivirus](cloud-protection-microsoft-defender-antivirus.md).
+This article provides an overview of cloud protection and automatic sample submission at Microsoft Defender Antivirus. To learn more about cloud protection, see [Cloud protection and Microsoft Defender Antivirus](cloud-protection-microsoft-defender-antivirus.md).
 
 ## How cloud protection and sample submission work together
 
-To understand how cloud protection works together with sample submission, it can be helpful to understand how Defender for Endpoint protects against threats. The Microsoft Intelligent Security Graph monitors threat data from a vast network of sensors. Microsoft layers cloud-based machine learning models that can assess files based on signals from the client and the vast network of sensors and data in the Intelligent Security Graph. This approach gives Defender for Endpoint the ability to block many never-before-seen threats. 
+To understand how cloud protection works together with sample submission, it can be helpful to understand how Defender for Endpoint protects against threats. The Microsoft Intelligent Security Graph monitors threat data from a vast network of sensors. Microsoft layers cloud-based machine-learning models that can assess files based on signals from the client and the vast network of sensors and data in the Intelligent Security Graph. This approach gives Defender for Endpoint the ability to block many never-before-seen threats. 
 
 The following image depicts the flow of cloud protection and sample submission with Microsoft Defender Antivirus:
 
-:::image type="content" source="images/cloud-protection-flow.png" alt-text="Cloud-delivered protection flow":::
+:::image type="content" source="images/cloud-protection-flow.png" alt-text="Cloud-delivered protection flow" lightbox="images/cloud-protection-flow.png":::
 
 Microsoft Defender Antivirus and cloud protection automatically block most new, never-before-seen threats at first sight by using the following methods:
 
-1. Lightweight client-based machine learning models, blocking new and unknown malware.
+1. Lightweight client-based machine-learning models, blocking new and unknown malware.
 
 2. Local behavioral analysis, stopping file-based and file-less attacks.
 
@@ -75,14 +75,14 @@ Microsoft Defender Antivirus and cloud protection automatically block most new, 
          - "Do not send" is the equivalent to the "Disabled" setting in macOS policy
          - Metadata is sent for detections even when sample submission is disabled
 
-   3. After metadata and/or files are submitted to cloud protection, you can use **samples**, **detonation**, or **big data analysis** machine learning models to reach a verdict. Turning off cloud-delivered protection will limit analysis to only what the client can provide through local machine learning models, and similar functions.
+   3. After metadata and/or files are submitted to cloud protection, you can use **samples**, **detonation**, or **big data analysis** machine-learning models to reach a verdict. Turning off cloud-delivered protection will limit analysis to only what the client can provide through local machine-learning models, and similar functions.
 
 > [!IMPORTANT]
 > [Block at first sight (BAFS)](configure-block-at-first-sight-microsoft-defender-antivirus.md) provides detonation and analysis to determine whether a file or process is safe. BAFS can delay the opening of a file momentarily until a verdict is reached. If you disable sample submission, BAFS is also disabled, and file analysis is limited to metadata only. We recommend keeping sample submission and BAFS enabled. To learn more, see [What is "block at first sight"?](configure-block-at-first-sight-microsoft-defender-antivirus.md#what-is-block-at-first-sight)
 
 ## Cloud protection levels
 
-Cloud protection is enabled by default in Microsoft Defender Antivirus. We recommend that you keep cloud protection enabled, although you can configure the protection level for your organization. See [Specify the cloud-delivered protection level for Microsoft Defender Antivirus](specify-cloud-protection-level-microsoft-defender-antivirus.md).
+Cloud protection is enabled by default at Microsoft Defender Antivirus. We recommend that you keep cloud protection enabled, although you can configure the protection level for your organization. See [Specify the cloud-delivered protection level for Microsoft Defender Antivirus](specify-cloud-protection-level-microsoft-defender-antivirus.md).
 
 ## Sample submission settings
 
@@ -92,11 +92,11 @@ In addition to configuring your cloud protection level, you can configure your s
 - **Send all samples automatically**  
 - **Do not send samples**  
 
-For information about configuration options using Intune, Configuration Manager, GPO, or PowerShell, see [Turn on cloud protection in Microsoft Defender Antivirus](enable-cloud-protection-microsoft-defender-antivirus.md).
+For information about configuration options using Intune, Configuration Manager, GPO, or PowerShell, see [Turn on cloud protection at Microsoft Defender Antivirus](enable-cloud-protection-microsoft-defender-antivirus.md).
 
 ## Examples of metadata sent to the cloud protection service
 
-:::image type="content" source="images/cloud-protection-metadata-sample.png" alt-text="image depicting examples of metadata sent to cloud protection in Microsoft Defender Antivirus":::
+:::image type="content" source="images/cloud-protection-metadata-sample.png" alt-text="The examples of metadata sent to cloud protection in the Microsoft Defender Antivirus portal" lightbox="images/cloud-protection-metadata-sample.png":::
 
 The following table lists examples of metadata sent for analysis by cloud protection:
 
@@ -115,7 +115,7 @@ In addition, Defender for Endpoint has received multiple compliance certificatio
 - ISO 27001
 - ISO 27018
 - SOC I, II, III
-- and PCI
+- PCI
 
 For more information, see the following resources:
 
@@ -125,7 +125,7 @@ For more information, see the following resources:
 
 ## Other file sample submission scenarios
 
-There are two more scenarios where Defender for Endpoint might request a file sample that is not related to the cloud protection in Microsoft Defender Antivirus. These scenarios are described in the following table:
+There are two more scenarios where Defender for Endpoint might request a file sample that is not related to the cloud protection at Microsoft Defender Antivirus. These scenarios are described in the following table:
 
 | Scenario | Description |
 |:---|:---|
@@ -135,3 +135,5 @@ There are two more scenarios where Defender for Endpoint might request a file sa
 ## See also
 
 [Next-generation protection overview](next-generation-protection.md)
+
+[Configure remediation for Microsoft Defender Antivirus detections.](configure-remediation-microsoft-defender-antivirus.md)

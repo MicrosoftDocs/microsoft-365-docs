@@ -1,9 +1,9 @@
-- name: Microsoft Defender for Business (preview)
+- name: Microsoft Defender for Business
   href: index.yml
   items: 
     - name: Overview
       items:
-      - name: What is Microsoft Defender for Business (preview)?
+      - name: What is Microsoft Defender for Business?
         href: mdb-overview.md
       - name: The simplified configuration process
         href: mdb-simplified-configuration.md
@@ -13,7 +13,7 @@
         href: mdb-lighthouse-integration.md
     - name: Get started
       items:
-      - name: Get Defender for Business (preview)
+      - name: Get Defender for Business
         href: get-defender-business.md
       - name: Use the setup wizard
         href: mdb-use-wizard.md
@@ -35,7 +35,7 @@
         href: mdb-email-notifications.md
       - name: Step 4 - Onboard devices
         href: mdb-onboard-devices.md
-      - name: Step 5 - Configure your security settings
+      - name: Step 5 - Configure your security policies
         href: mdb-configure-security-settings.md
     - name: View and respond to detected threats
       items: 
@@ -73,6 +73,7 @@
         href: mdb-faq.yml
       - name: Troubleshooting
         href: mdb-troubleshooting.yml
+      - name: Microsoft 365 Business Premium
+        href: /microsoft-365/business-premium
       - name: Microsoft 365 Lighthouse
         href: /microsoft-365/lighthouse/m365-lighthouse-overview
-

@@ -64,7 +64,8 @@ Go to the **Vulnerability management** navigation menu and select **Recommendati
 
 In a given day as a Security Administrator, you can take a look at the [threat and vulnerability management dashboard](tvm-dashboard-insights.md) to see your [exposure score](tvm-exposure-score.md) side by side with your [Microsoft Secure Score for Devices](tvm-microsoft-secure-score-devices.md). The goal is to **lower** your organization's exposure from vulnerabilities, and **increase** your organization's device security to be more resilient against cybersecurity threat attacks. The top security recommendations list can help you achieve that goal.
 
-![Example of Top security recommendations card, with four security recommendations.](images/top-security-recommendations350.png)
+:::image type="content" source="images/top-security-recommendations350.png" alt-text="The Top security recommendations card" lightbox="images/top-security-recommendations350.png":::
+
 
 The top security recommendations list the improvement opportunities prioritized based on the important factors mentioned in the previous section - threat, likelihood to be breached, and value. Selecting a recommendation will take you to the security recommendations page with more details.
 
@@ -77,7 +78,7 @@ The color of the **Exposed devices** graph changes as the trend changes. If the 
 > [!NOTE]
 > Threat and vulnerability management shows devices that were in use up to **30 days** ago. This is different from the rest of Microsoft Defender for Endpoint, where if a device has not been in use for more than 7 days it has in an 'Inactive' status.
 
-![Example of the landing page for security recommendations.](images/tvmsecrec-updated.png)
+:::image type="content" source="images/tvmsecrec-updated.png" alt-text="The landing page for security recommendations" lightbox="images/tvmsecrec-updated.png":::
 
 ### Icons
 
@@ -91,7 +92,7 @@ Useful icons also quickly call your attention to:
 
 Select the security recommendation that you want to investigate or process.
 
-:::image type="content" alt-text="Example of a security recommendation flyout page." source="images/secrec-flyouteolsw.png" lightbox="images/secrec-flyouteolsw.png":::
+:::image type="content" source="images/secrec-flyouteolsw.png" alt-text="The security recommendation flyout page" lightbox="images/secrec-flyouteolsw.png":::
 
 From the flyout, you can choose any of the following options:
 
@@ -102,7 +103,9 @@ From the flyout, you can choose any of the following options:
 - [**Exception options**](tvm-exception.md) - Submit an exception, provide justification, and set exception duration if you can't remediate the issue yet.
 
 > [!NOTE]
-> When a software change is made on a device, it typically takes 2 hours for the data to be reflected in the security portal. However, it may sometimes take longer. Configuration changes can take anywhere from 4 to 24 hours.
+> When a software change is made on a Windows, Linux or macOS device, it typically takes 2-4 hours for the data to be reflected in the security portal. It can take up to 8 hours for changes on iOS and Android devices to be reflected. There may be situations where it takes longers.
+> 
+> Configuration changes can take anywhere from 4 to 24 hours.
 
 ### Investigate changes in device exposure or impact
 
@@ -132,7 +135,7 @@ When an exception is created for a recommendation, the recommendation is no long
 
 Select a security recommendation you would like create an exception for, and then select **Exception options**.
 
-![Showing where the button for "exception options" is location in a security recommendation flyout.](images/tvm-exception-options.png)
+:::image type="content" source="images/tvm-exception-options.png" alt-text="The exception options button in the security recommendation flyout" lightbox="images/tvm-exception-options.png":::
 
 Fill out the form and submit. To view all your exceptions (current and past), navigate to the [Remediation](tvm-remediation.md) page under the **Threat & Vulnerability Management** menu and select the **Exceptions** tab. [Learn more about how to create an exception](tvm-exception.md#create-an-exception)
 
@@ -144,7 +147,7 @@ You can report a false positive when you see any vague, inaccurate, incomplete, 
 
 2. Select the three dots beside the security recommendation that you want to report,  then select **Report inaccuracy**.
 
-    ![Showing where the "Report inaccuracy" button is in a security recommendation flyout.](images/report-inaccuracy500.png)
+   :::image type="content" source="images/report-inaccuracy500.png" alt-text="The Report inaccuracy button" lightbox="images/report-inaccuracy500.png":::
 
 3. From the flyout pane, select the inaccuracy category from the drop-down menu, fill in your email address, and details regarding the inaccuracy.
 

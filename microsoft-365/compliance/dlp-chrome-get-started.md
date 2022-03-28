@@ -55,7 +55,7 @@ For detailed licensing guidance, see [Microsoft 365 licensing guidance for secur
 
 - Your org must be licensed for Endpoint DLP
 - Your devices must be running Windows 10 x64 build 1809 or later.
-- The device must have Antimalware Client Version is 4.18.2101.9 or later. Check your current version by opening **Windows Security** app, select the **Settings** icon, and then select **About**.
+- The device must have Antimalware Client Version is 4.18.2202.x or later. Check your current version by opening **Windows Security** app, select the **Settings** icon, and then select **About**.
 
 
 ### Permissions
@@ -103,7 +103,7 @@ Deploying Microsoft Compliance Extension is a multi-phase process. You can choos
 
 ### Prepare infrastructure
 
-If you are rolling out the Microsoft Compliance Extension to all your monitored Windows 10 devices, you should remove Google Chrome from the unallowed app and unallowed browser lists. For more information, see [Unallowed browsers](endpoint-dlp-using.md#unallowed-browsers). If you are only rolling it out to a few devices, you can leave Chrome on the unallowed browser or unallowed app lists. The Microsoft Compliance Extension will bypass the restrictions of both lists for those computers where it is installed.
+If you are rolling out the Microsoft Compliance Extension to all your monitored Windows 10 devices, you should remove Google Chrome from the unallowed app and unallowed browser lists. For more information, see [Unallowed browsers](dlp-configure-endpoint-settings.md#unallowed-browsers). If you are only rolling it out to a few devices, you can leave Chrome on the unallowed browser or unallowed app lists. The Microsoft Compliance Extension will bypass the restrictions of both lists for those computers where it is installed.
 
 ### Prepare your devices
 
@@ -116,40 +116,13 @@ If you are rolling out the Microsoft Compliance Extension to all your monitored 
 
 This is the recommended method.
 
-1. Sign in to the Windows 10 computer on which you want to install the Microsoft Compliance Extension on, and run this PowerShell script as an administrator.
+1. Navigate to [Microsoft Compliance Extension - Chrome Web Store (google.com)](https://chrome.google.com/webstore/detail/microsoft-compliance-exte/echcggldkblhodogklpincgchnpgcdco).
 
-   ```powershell
-   Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
-   ```
-
-2. Navigate to [Microsoft Compliance Extension - Chrome Web Store (google.com)](https://chrome.google.com/webstore/detail/microsoft-compliance-exte/echcggldkblhodogklpincgchnpgcdco).
-
-3. Install the extension using the instructions on the Chrome Web Store page.
+2. Install the extension using the instructions on the Chrome Web Store page.
 
 ### Deploy using Microsoft Endpoint Manager
 
 Use this setup method for organization-wide deployments.
-
-##### Enabling Required Registry Value via Microsoft Endpoint Manager
-
-1. Create a PowerShell script with the following contents:
-
-    ```powershell
-    Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
-    ```
-
-2. Sign in to the [Microsoft Endpoint Manager Admin Center](https://endpoint.microsoft.com).
-
-3. Navigate to **Devices** > **Scripts** and select **Add**.
-
-4. Browse to the location of the script created when prompted.
-
-5. Select the following settings:
-    1. Run this script using the logged-on credentials: NO
-    1. Enforce script signature check: NO
-    1. Run script in 64-bit PowerShell Host: YES
-
-6. Select the proper device groups and apply the policy.
 
 #### Microsoft Endpoint Manager Force Install Steps
 
@@ -181,39 +154,7 @@ Before adding the Microsoft Compliance Extension to the list of force-installed 
 
 ### Deploy using Group Policy
 
-If you don't want to use Microsoft Endpoint Manager, you can use group policies to deploy the Microsoft Compliance Extension across your organization
-
-1. Your devices must be manageable via Group Policy, and you need to import all Chrome ADMXs into the Group Policy Central Store. For more information, see [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](/troubleshoot/windows-client/group-policy/create-and-manage-central-store).
-
-2. Create a PowerShell script using this PowerShell command:
-
-    ```powershell
-    Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
-    ```
-
-3. Open the **Group Policy Management Console** and navigate to your organizational unit (OU).
-
-4. Right-click and select **Create a GPO in this domain and Link it here**. When prompted, assign a descriptive name to this group policy object (GPO) and finish creating it.
-
-5. Right-click the GPO and select **Edit**.
-
-6. Go to **Computer Configuration** > **Preferences** > **Control Panel Settings** > **Scheduled Tasks**.
-
-7. Create a new immediate task by selecting right-clicking and selecting **New** > **Immediate Task (At least Windows 7)**.
-
-8. Give the task a name & description.
-
-9. Choose the corresponding account to run the immediate task, for example NT Authority
-
-10. Select **Run with highest privileges**.
-
-11. Configure the policy for Windows 10.
-
-12. In the **Actions** tab, select the action **Start a program**.
-
-13. Enter the path to the Program/Script created in Step 1.
-
-14. Select **Apply**.
+If you don't want to use Microsoft Endpoint Manager, you can use group policies to deploy the Microsoft Compliance Extension across your organization.
 
 #### Adding the Chrome Extension to the ForceInstall List
 
@@ -273,8 +214,7 @@ Now that you’ve removed Chrome from the disallowed browsers/apps list, you can
 
 ### Known Issues and Limitations
 
-1. Block Override enforcement for cloud egress is not supported.
-2. Incognito mode is not supported and must be disabled.
+1. Incognito mode is not supported and must be disabled.
 
 ## Next steps
 

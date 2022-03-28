@@ -3,11 +3,11 @@ metadata:
   title: "Microsoft Compliance Manager FAQ"
   f1.keywords:
   - NOCSH
-  ms.author: v-jgriffee
-  author: jmgriffee
+  ms.author: chvukosw
+  author: chvukosw
   manager: laurawi
   audience: Admin
-  ms.topic: article
+  ms.topic: faq
   ms.service: O365-seccomp
   ms.localizationpriority: medium
   ms.collection: M365-security-compliance
@@ -15,7 +15,6 @@ metadata:
   - MOE150
   - MET150
   description: "Find answers to frequently asked questions about Microsoft Compliance Manager, which helps organizations simplify and automate risk assessments."
-    
 title: Compliance Manager frequently asked questions
 summary: |
 
@@ -85,4 +84,3 @@ sections:
           Can I use Compliance Manager for non-Microsoft products?
         answer: |
           While Compliance Manager provides continuous monitoring and recommended actions only for Microsoft cloud services, you can add custom assessments in Compliance Manager for your third-party services. In this way, you can use Microsoft Compliance Manager as a SaaS compliance management tool to help you manage all the controls across your digital assets.
-

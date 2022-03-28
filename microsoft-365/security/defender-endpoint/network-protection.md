@@ -15,7 +15,9 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: overview
-ms.collection: m365initiative-m365-defender
+ms.collection: 
+- m365initiative-m365-defender
+- M365-security-compliance
 ms.date:
 ---
 
@@ -37,6 +39,9 @@ Network protection extends the protection in [Web protection](web-protection-ove
 
 > [!TIP]
 > See the Microsoft Defender for Endpoint testground site at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to see how network protection works.
+
+> [!NOTE]
+> The Defender for Endpoint demo site at demo.wd.microsoft.com is deprecated and will be removed in the future.
 
 ## Requirements for network protection
 

@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: 
 audience: ITPro
 ms.topic: how-to
-
+ms.collection: M365-security-compliance
 ms.localizationpriority: medium
 search.appverid: 
   - MET150s
@@ -42,13 +42,13 @@ Mail flow rules allow the most flexibility to ensure that only the right message
 
 > [!IMPORTANT]
 >
-> - Messages that are identified as malware or high confidence phishing are always quarantined, regardless of the safe sender list option that you use.
+> - Messages that are identified as malware or high confidence phishing are always quarantined, regardless of the safe sender list option that you use. For more information, see [Secure by default in Office 365](secure-by-default.md).
 >
-> - Be careful to closely monitor *any* exceptions that you make to spam filtering using safe sender lists.
+> - Be careful to closely monitor _any_ exceptions that you make to spam filtering using safe sender lists.
 >
 > - While you can use safe sender lists to help with false positives (good email marked as bad), you should consider the use of safe sender lists as a temporary solution that should be avoided if possible. We don't recommend managing false positives by using safe sender lists, because exceptions to spam filtering can open your organization to spoofing and other attacks. If you insist on using safe sender lists to manage false positives, you need to be vigilant and keep the topic [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md) at the ready.
 >
-> - To allow a domain to send unauthenticated email (bypass anti-spoofing protection) but not bypass anti-spam and anti-malware checks, you can use the [spoof intelligence insight](learn-about-spoof-intelligence.md) and the [Tenant Allow/Block List](tenant-allow-block-list.md).
+> - To allow a domain to send unauthenticated email (bypass anti-spoofing protection) but not bypass anti-spam and other protections, you can use the [spoof intelligence insight](learn-about-spoof-intelligence.md) and the [Tenant Allow/Block List](tenant-allow-block-list.md).
 >
 > - EOP and Outlook inspect different message properties to determine the sender of the message. For more information, see the [Considerations for bulk email](#considerations-for-bulk-email) section later in this article.
 >
@@ -78,7 +78,7 @@ The following example assumes you need email from contoso.com to skip spam filte
 
    > [!IMPORTANT]
    >
-   > - Never configure mail flow rules with *only* the sender domain as the condition to skip spam filtering. Doing so will *significantly* increase the likelihood that attackers can spoof the sending domain (or impersonate the full email address), skip all spam filtering, and skip sender authentication checks so the message will arrive in the recipient's Inbox.
+   > - Never configure mail flow rules with _only_ the sender domain as the condition to skip spam filtering. Doing so will _significantly_ increase the likelihood that attackers can spoof the sending domain (or impersonate the full email address), skip all spam filtering, and skip sender authentication checks so the message will arrive in the recipient's Inbox.
    >
    > - Do not use domains you own (also known as accepted domains) or popular domains (for example, microsoft.com) as conditions in mail flow rules. Doing so is considered high risk because it creates opportunities for attackers to send email that would otherwise be filtered.
    >
@@ -96,7 +96,8 @@ The following example assumes you need email from contoso.com to skip spam filte
 
       When a message skips spam filtering due to a mail flow rule, the value `SFV:SKN` value is stamped in the **X-Forefront-Antispam-Report** header. If the message is from a source that's on the IP Allow List, the value `IPV:CAL` is also added. These values can help you with troubleshooting.
 
-![Mail flow rule settings in the EAC for bypassing spam filtering.](../../media/1-AllowList-SkipFilteringFromContoso.png)
+      :::image type="content" source="../../media/1-AllowList-SkipFilteringFromContoso.png" alt-text="The Mail flow rule settings in the EAC for bypassing spam filtering" lightbox="../../media/1-AllowList-SkipFilteringFromContoso.png":::
+
 
 ## Use Outlook Safe Senders
 
@@ -122,7 +123,7 @@ If you can't use mail flow rules as previously described, the next best option i
 
 ## Use allowed sender lists or allowed domain lists
 
-The least desirable option is to use the allowed sender list or allowed domain list in anti-spam policies. You should avoid this option *if at all possible* because senders bypass all spam, spoof, and phishing protection, and sender authentication (SPF, DKIM, DMARC). This method is best used for temporary testing only. The detailed steps can be found in [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md) topic.
+The least desirable option is to use the allowed sender list or allowed domain list in anti-spam policies. You should avoid this option _if at all possible_ because senders bypass all spam, spoof, and phishing protection, and sender authentication (SPF, DKIM, DMARC). This method is best used for temporary testing only. The detailed steps can be found in [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md) topic.
 
 The maximum limit for these lists is approximately 1000 entries; although, you will only be able to enter 30 entries into the portal. You must use PowerShell to add more than 30 entries.
 
@@ -134,7 +135,7 @@ The maximum limit for these lists is approximately 1000 entries; although, you w
 
 ## Considerations for bulk email
 
-A standard SMTP email message consists of a *message envelope* and message content. The message envelope contains information that's required for transmitting and delivering the message between SMTP servers. The message content contains message header fields (collectively called the *message header*) and the message body. The message envelope is described in RFC 5321, and the message header is described in RFC 5322. Recipients never see the actual message envelope because it's generated by the message transmission process, and it isn't actually part of the message.
+A standard SMTP email message consists of a _message envelope_ and message content. The message envelope contains information that's required for transmitting and delivering the message between SMTP servers. The message content contains message header fields (collectively called the _message header_) and the message body. The message envelope is described in RFC 5321, and the message header is described in RFC 5322. Recipients never see the actual message envelope because it's generated by the message transmission process, and it isn't actually part of the message.
 
 - The `5321.MailFrom` address (also known as the **MAIL FROM** address, P1 sender, or envelope sender) is the email address that's used in the SMTP transmission of the message. This email address is typically recorded in the **Return-Path** header field in the message header (although it's possible for the sender to designate a different **Return-Path** email address). If the message can't be delivered, it's the recipient for the non-delivery report (also known as an NDR or bounce message).
 - The `5322.From` (also known as the **From** address or P2 sender) is the email address in the **From** header field, and is the sender's email address that's displayed in email clients.

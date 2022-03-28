@@ -15,7 +15,9 @@ audience: ITPro
 ms.custom: asr
 ms.topic: conceptual
 ms.technology: mde
-ms.collection: m365initiative-m365-defender
+ms.collection: 
+- m365initiative-m365-defender
+- M365-security-compliance
 ms.date: 1/18/2022
 ---
 
@@ -92,6 +94,9 @@ You can enable audit mode using Group Policy, PowerShell, and configuration serv
 
 > [!TIP]
 > You can also visit the Windows Defender Testground website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the features are working and see how they work.
+
+> [!NOTE]
+> The Defender for Endpoint demo site at demo.wd.microsoft.com is deprecated and will be removed in the future.
 
 | Audit options | How to enable audit mode | How to view events |
 |---|---|---|

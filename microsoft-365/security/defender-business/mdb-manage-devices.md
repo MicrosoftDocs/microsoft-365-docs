@@ -1,16 +1,16 @@
 ---
-title: Manage devices in Microsoft Defender for Business (preview)
-description: Learn how to manage devices in Microsoft Defender for Business (preview)
+title: Manage devices in Microsoft Defender for Business
+description: Learn how to manage devices in Microsoft Defender for Business
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: how-to
-ms.date: 01/06/2022
+ms.date: 02/24/2022
 ms.prod: m365-security
 ms.technology: mdb
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
@@ -19,19 +19,22 @@ ms.collection:
 - m365-initiative-defender-business
 ---
 
-# Manage devices in Microsoft Defender for Business (preview)
+# Manage devices in Microsoft Defender for Business
 
 > [!IMPORTANT]
-> Microsoft Defender for Business is now in preview, and will roll out gradually to customers and IT Partners who [sign-up here](https://aka.ms/mdb-preview) to request it. We will onboard an initial set of customers and partners in the coming weeks and will expand the preview leading up to general availability. Note that preview will launch with an [initial set of scenarios](mdb-tutorials.md#try-these-preview-scenarios), and we will be adding capabilities regularly.
+> Microsoft Defender for Business is rolling out to [Microsoft 365 Business Premium](../../business-premium/index.md) customers, beginning March 1, 2022. Defender for Business as a standalone subscription is in in preview, and will roll out gradually to customers and IT Partners who [sign-up here](https://aka.ms/mdb-preview) to request it. Preview includes an [initial set of scenarios](mdb-tutorials.md#try-these-preview-scenarios), and we will be adding capabilities regularly.
 > 
 > Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. 
 
-In Microsoft Defender for Business (preview), you can manage devices as follows:
+In Microsoft Defender for Business, you can manage devices as follows:
 
 - [View a list of onboarded devices](#view-the-list-of-onboarded-devices) to see their risk level, exposure level, and health state
+
 - [Take action on a device](#take-action-on-a-device-that-has-threat-detections) that has threat detections
-- [Onboard a device to Defender for Business (preview)](#onboard-a-device)  
-- [Offboard a device from Defender for Business (preview)](#offboard-a-device)
+
+- [Onboard a device to Defender for Business](#onboard-a-device)  
+
+- [Offboard a device from Defender for Business](#offboard-a-device)
 
 >
 > **Got a minute?**
@@ -48,7 +51,7 @@ In Microsoft Defender for Business (preview), you can manage devices as follows:
 
 3. Select a device to open its flyout panel, where you can learn more about its status and take action. 
 
-   If you don't have any devices listed yet, [Onboard devices to Microsoft Defender for Business (preview)](mdb-onboard-devices.md)
+   If you don't have any devices listed yet, [Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md)
 
 ## Take action on a device that has threat detections
 
@@ -64,17 +67,17 @@ In Microsoft Defender for Business (preview), you can manage devices as follows:
 
 ## Onboard a device
 
-See [Onboard devices to Microsoft Defender for Business (preview)](mdb-onboard-devices.md).
+See [Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md).
 
 ## Offboard a device
 
-See [Offboard a device](mdb-onboard-devices.md#what-if-i-want-to-offboard-a-device).
+See [Offboarding a device](mdb-onboard-devices.md#offboarding-a-device).
 
 ## Next steps
 
-- [View and manage incidents in Microsoft Defender for Business (preview)](mdb-view-manage-incidents.md)
+- [View and manage incidents in Microsoft Defender for Business](mdb-view-manage-incidents.md)
 
-- [Respond to and mitigate threats in Microsoft Defender for Business (preview)](mdb-respond-mitigate-threats.md)
+- [Respond to and mitigate threats in Microsoft Defender for Business](mdb-respond-mitigate-threats.md)
 
 - [Review remediation actions in the Action center](mdb-review-remediation-actions.md)
 

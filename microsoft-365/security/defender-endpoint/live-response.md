@@ -1,4 +1,4 @@
-﻿---
+---
 title: Investigate entities on devices using live response in Microsoft Defender for Endpoint
 description: Access a device using a secure remote shell connection to do investigative work and take immediate response actions on a device in real time.
 keywords: remote, shell, connection, live, response, real-time, command, script, remediate, hunt, export, log, drop, download, file,
@@ -82,6 +82,8 @@ Before you can initiate a session on a device, make sure you fulfill the followi
 
   > [!NOTE]
   > Only users with manage security or global admin roles can edit these settings.
+  > 
+  > Automated Investigation must be enabled in the [Advanced features settings](advanced-features.md) prior to enabling live response.
 
 - **Enable live response for servers from the advanced settings page** (recommended).
 
@@ -94,7 +96,7 @@ Before you can initiate a session on a device, make sure you fulfill the followi
 
   You'll receive the following error:
 
-  ![Image of error message.](images/live-response-error.png)
+  :::image type="content" source="images/live-response-error.png" alt-text="The error message" lightbox="images/live-response-error.png":::
 
 - **Enable live response unsigned script execution** (optional).
 
@@ -216,7 +218,7 @@ For scenarios when you'd like get a file from a device you're investigating, you
 > The following file size limits apply:
 >
 > - `getfile` limit: 3 GB
-> - `fileinfo` limit: 10 GB
+> - `fileinfo` limit: 30 GB
 > - `library` limit: 250 MB
 
 ### Download a file in the background
@@ -272,7 +274,7 @@ Anytime during a session, you can cancel a command by pressing CTRL + C.
 
 ## Run a script
 
-Before you can run a PowerShell/Bash scripts, you must first upload it to the library.
+Before you can run a PowerShell/Bash script, you must first upload it to the library.
 
 After uploading the script to the library, use the `run` command to run the script.
 
@@ -346,6 +348,7 @@ Select the **Command log** tab to see the commands used on the device during a s
 
 - Live response sessions are limited to 25 live response sessions at a time.
 - Live response session inactive timeout value is 30 minutes.
+- Individual live response commands have a time limit of 10 minutes, with the exception of `getfile`, `findfile`, and `run`, which have a limit of 30 minutes.
 - A user can initiate up to 10 concurrent sessions.
 - A device can only be in one session at a time.
 - The following file size limits apply:
