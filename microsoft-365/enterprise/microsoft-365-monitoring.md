@@ -30,6 +30,8 @@ You can use dashboards in the [Microsoft 365 admin center](https://go.microsoft
 
 Here is an example of the **Service health** page in the Microsoft 365 admin center, which is available at **Health** > **Service health** for organization scenarios and [priority account](../admin/setup/priority-accounts.md) scenarios.
 
+![The Service health page in the Microsoft 365 admin center.](../media/microsoft-365-exchange-monitoring/service-health-dashboard-example.png)
+
 **Issues in your organization** will be identified and used by organizational-level monitoring and priority account monitoring.
 
 The value of the **Health** column under **Issues in your organization** indicates whether your organization's infrastructure or third-party software affects the service health experience of your organization's users and/or priority accounts in Exchange Online. Advisories or incidents require your actions to resolve.
