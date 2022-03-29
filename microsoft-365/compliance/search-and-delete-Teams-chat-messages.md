@@ -169,4 +169,4 @@ For deleted chat messages, users will see an automatically generated message sta
 
 ![View of purged chat message in Teams client.](..\media\TeamsPurgeTombstone.png)
 
-This message replaces the chat message that was deleted. If you are an end-user and a chat message was deleted, contact your admin for more information.
+This message replaces the chat message that was deleted. If you're an end-user and a chat message was deleted, contact your admin for more information.
