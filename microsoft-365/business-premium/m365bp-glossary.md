@@ -32,38 +32,29 @@ description: "Glossary of terms for Microsoft 365 Business Premium"
 |Term|Definition|
 |:-----|:-----|
 |admin accounts |Administrative accounts have wide or even global privileges on the network. There are many different types with varying levels of access and security.|
-
-|      |      |
-|:-----|:-----|
 |adware |Software that automatically displays or downloads unwanted advertising material when a user is online. |
-
-|      |       |
-|:-----|:-----|
 |antivirus |Helps you remove viruses and other types of malicious programs from your computer or laptop by detecting and removing them.|
-
-|      |       |
-|:-----|:-----|
+|backdoor |A type of malware that gives malicious hackers remote access to and control of your device.|
+|BYODs |Bring-your-own devices )(BYODs) are laptops, PCs, tablets and mobile phones that are personally owned by members of the organization, and therefore, not managed by the organization. |
+|cyber attack |An attack from cyber space. (See cyber space.) |
+|cyber security |Maintenance and implementation of security defenses to protect the networks of businesses or organizations against cyber attack. |
+|cyber space |The concept of widespread interconnected digital technology, made up of computers and networks and the communication between them. |
+|admin accounts |Administrative accounts have wide or even global privileges on the network. There are many different types with varying levels of access and security. |
+|admin accounts |Administrative accounts have wide or even global privileges on the network. There are many different types with varying levels of access and security. |
+|admin accounts |Administrative accounts have wide or even global privileges on the network. There are many different types with varying levels of access and security. |
+|admin accounts |Administrative accounts have wide or even global privileges on the network. There are many different types with varying levels of access and security. |
+|admin accounts |Administrative accounts have wide or even global privileges on the network. There are many different types with varying levels of access and security. |
+|admin accounts |Administrative accounts have wide or even global privileges on the network. There are many different types with varying levels of access and security. |
+|admin accounts |Administrative accounts have wide or even global privileges on the network. There are many different types with varying levels of access and security. |
+|admin accounts |Administrative accounts have wide or even global privileges on the network. There are many different types with varying levels of access and security. |
+|admin accounts |Administrative accounts have wide or even global privileges on the network. There are many different types with varying levels of access and security. |
 |admin accounts |Administrative accounts have wide or even global privileges on the network. There are many different types with varying levels of access and security. |
 
-## admin accounts
 
-Administrative accounts have wide or even global privileges on the network. There are many different types with varying levels of access and security.
 
-## adware
+## 
 
-Software that automatically displays or downloads unwanted advertising material when a user is online.
 
-## antivirus
-
-Helps you remove viruses and other types of malicious programs from your computer or laptop by detecting and removing them.
-
-## backdoor
-
-A type of malware that gives malicious hackers remote access to and control of your device.
-
-## BYODs
-
-Bring-your-own devices )(BYODs) are laptops, PCs, tablets and mobile phones that are personally owned by members of the organization, and therefore, not managed by the organization.
 
 ## cyber attack
 
