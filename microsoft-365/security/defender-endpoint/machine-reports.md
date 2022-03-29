@@ -105,9 +105,13 @@ The Windows version trend graph can help you quickly determine whether your orga
 
 The Microsoft Defender Antivirus health tab contains eight cards that report on several aspects of Microsoft Defender Antivirus in your organization. Two cards, _mode_ and _scan results_, report about Microsoft Defender Antivirus functions. The remaining six cards report about your organization's **Microsoft Defender Antivirus**:
 
-- _engine versions_ and _engine updates_ 
+- _engine versions_ and _engine updates_
 - _security intelligence versions_ and _intelligence updates_
 - _platform versions_  and _platform updates_
+
+> [!NOTE]
+>
+> Up to date reporting information will be available for Windows devices with engine version: 19000.1 and newer.
 
 #### Card functionality
 
@@ -171,7 +175,7 @@ For more details on the current Microsoft Defender Antivirus versions and how to
 Lists the most common _Microsoft Defender Antivirus security intelligence_ versions installed on devices on your network.
 Microsoft continually updates Microsoft Defender security intelligence to address the latest threats, and to refine detection logic. These refinements to security intelligence enhance Microsoft Defender Antivirus’ (and other Microsoft antimalware solutions’) ability to accurately identify potential threats. This security intelligence works directly with cloud-based protection to deliver AI-enhanced, next-generation protection that is fast and powerful.
 
-#### Security intellegence updates
+#### Security intelligence updates
 
 This card dentifies devices that have security intellegence versions that are up to date versus out of date.
 Definition of ‘**Up to date** – the security intelligence version on the device was written in the past 7 days.
