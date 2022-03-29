@@ -145,11 +145,9 @@ For information about using Graph Explorer, see [Use Graph Explorer to try Micro
 
 ## Step 6: Verify chat messages are purged
 
-After you run the POST request to purge chat messages, these messages are removed from the Teams client and replaced with a message (called a *tombstone*) stating that an admin has removed the message.
+After you run the POST request to purge chat messages, these messages are removed from the Teams client and replaced with an automatically generated stating that an admin has removed the message. For an example of this message, see the [End-user experience](#end-user-experience) section in this article.
 
-![View of purged chat message in Teams client.](..\media\TeamsPurgeTombstone.png)
-
-A purged chat message is also moved to the SubstrateHolds folder, which is a mailbox folder. Purged chat messages are stored there for at least 1 day. Purged messages are permanently deleted the next time the timer job runs (typically between 1-7 days). For more information, see [Learn about retention for Microsoft Teams](retention-policies-teams.md).
+Purged chat messages are moved to the SubstrateHolds folder, which is a hidden mailbox folder. Purged chat messages are stored there for at least 1 day, and then are permanently deleted the next time the timer job runs (typically between 1-7 days). For more information, see [Learn about retention for Microsoft Teams](retention-policies-teams.md).
 
 ## Step 7: Reapply holds and retention policies to data sources
 
@@ -164,3 +162,11 @@ Admins can use the procedures in this article to search and delete Teams chat me
 - If a conversation thread has users in two organizations, purged chat messages are removed from the Teams client in both organizations.
 
 - The only way to purge chat messages from user mailboxes in your organization for chat messages in conversation threads owned by another organization is to use retention policies for Teams. For more information, see [Learn about retention for Microsoft Teams](retention-policies-teams.md).
+
+## End-user experience
+
+For deleted chat messages, users will see an automatically generated message stating "This message was deleted by an admin". 
+
+![View of purged chat message in Teams client.](..\media\TeamsPurgeTombstone.png)
+
+This message replaces the chat message that was deleted.
