@@ -27,7 +27,7 @@ ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: "Glossary of terms for Microsoft 365 Business Premium"
 ---
 
-# Glossary
+# Glossary of terms
 
 |Term|Definition|
 |:-----|:-----|
