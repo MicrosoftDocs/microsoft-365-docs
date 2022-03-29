@@ -55,7 +55,7 @@ The Device health and compliance dashboard is structured in two tabs:
 | first column | second column | third column | fourth column |
 |:---|:---|:---|:---|
 | [Antivirus mode](#antivirus-mode) | [Antivirus engine version](#antivirus-engine-version) | [Antivirus security intelligence version](#antivirus-security-intelligence-version) | [Antivirus platform version](#antivirus-platform-version)
-| [Recent antivirus scan results](#recent-antivirus-scan-results) | [Antivirus engine updates](#antivirus-engine-updates) | [Security intellegence updates](#security-intellegence-updates) | [Antivirus platform updates](#antivirus-platform-updates) |
+| [Recent antivirus scan results](#recent-antivirus-scan-results) | [Antivirus engine updates](#antivirus-engine-updates) | [Security intelligence updates](#security-intelligence-updates) | [Antivirus platform updates](#antivirus-platform-updates) |
 
 ### Sensor health tab
 
@@ -194,8 +194,9 @@ Shows the real-time results of the most current Microsoft Defender Antivirus eng
 For more details on the current versions and how to update the different Microsoft Defender Antivirus components, see [Microsoft Defender Antivirus platform support](manage-updates-baselines-microsoft-defender-antivirus.md)
 
 #### Antivirus engine updates
+
 This card dentifies deices that have antivirus engine versions that are up to date versus out of date.
-Definition of ‘**Up to date* – the engine version on the device is the most recent engine release {the Engine is usually released monthly, via Windows Update (WU)}.  There is a 3-day grace period from the day when WU is released.
+Definition of ‘_Up to date_ – the engine version on the device is the most recent engine release {the Engine is usually released monthly, via Windows Update (WU)}.  There is a 3-day grace period from the day when WU is released.
 
 <!-- Hide {this intro with no subsequent list items}
 [Confirm that it is versus as apposed to "out of date" only.]
@@ -211,8 +212,9 @@ Shows the real-time results of the most current Microsoft Defender Antivirus pla
 For more details on the current versions and how to update the different Microsoft Defender Antivirus components, see [Microsoft Defender Antivirus platform support](manage-updates-baselines-microsoft-defender-antivirus.md)
 
 ### Antivirus platform updates
+
 This card dentifies deices that have Antivirus platform versions that are up to date versus out of date.
-Definition of ‘**Up to date* – the platform version on the device is the most recent platform release (Platform is usually released monthly, via Windows Update).  There is a 3-day grace period from the day when WU is released.
+Definition of ‘_Up to date_ – the platform version on the device is the most recent platform release (Platform is usually released monthly, via Windows Update).  There is a 3-day grace period from the day when WU is released.
 
 For information about Manage Microsoft Defender Antivirus update versions, see: [Monthly platform and engine versions](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
 
