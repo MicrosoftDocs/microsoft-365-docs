@@ -1,7 +1,7 @@
 ---
 title: Microsoft Purview insider risk solutions
 description: Learn how to help minimize risk in your organization with insider risk solutions in Microsoft Purview.
-keywords: Microsoft 365, insider risk, compliance
+keywords: Microsoft 365, Microsoft Purview, insider risks, compliance, insider risk management, communication compliance, information barriers, privileged access management
 ms.localizationpriority: medium
 ms.service: O365-seccomp
 ms.topic: article
@@ -43,7 +43,7 @@ Microsoft 365 risk prevention features are designed and built-in to our insider 
 
 ## Insider risk solutions
 
-To help protect your organization against insider risks, use these Microsoft 365 capabilities and features.
+To help protect your organization against insider risks, use these Microsoft Purview capabilities and features.
 
 ### Communication compliance
 

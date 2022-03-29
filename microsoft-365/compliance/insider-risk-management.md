@@ -1,7 +1,7 @@
 ---
 title: Learn about insider risk management
 description: Learn how to help minimize risk in your organization with insider risk management in Microsoft Purview.
-keywords: Microsoft 365, insider risk, risk management, compliance
+keywords: Microsoft 365, Microsoft Purview, insider risk, risk management, compliance
 ms.localizationpriority: medium
 ms.service: O365-seccomp
 ms.topic: article

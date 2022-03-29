@@ -1,6 +1,7 @@
 ---
 title: "Information barriers attributes"
-description: This article is a reference for the Azure Active Directory user account attributes that you can use to define information barrier segments.
+description: This article is a reference for the Azure Active Directory user account attributes that you can use to define information barriers segments.
+keywords: Microsoft 365, Microsoft Purview, compliance, information barriers
 ms.author: robmazz
 author: robmazz
 manager: laurawi

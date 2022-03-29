@@ -1,6 +1,7 @@
 ---
 title: "Get started with information barriers"
-description: Learn how to get started with information barriers.
+description: Learn how to get started with information barriers in Microsoft Purview.
+keywords: Microsoft 365, Microsoft Purview, compliance, information barriers
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -19,7 +20,7 @@ ms.custom: seo-marvel-apr2020
 
 # Get started with information barriers
 
-With information barriers, you can define policies that are designed to prevent certain segments of users from communicating with each other or allow specific segments to communicate only with certain other segments. Information barrier policies can help your organization maintain compliance with relevant industry standards and regulations, and avoid potential conflicts of interest. For more information, see [Learn about information barriers](information-barriers.md).
+With Microsoft Purview Information Barriers, you can define policies that are designed to prevent certain segments of users from communicating with each other or allow specific segments to communicate only with certain other segments. Information barrier policies can help your organization maintain compliance with relevant industry standards and regulations, and avoid potential conflicts of interest. For more information, see [Learn about information barriers](information-barriers.md).
 
 This article describes how to configure information barrier policies. Several steps are involved, so make sure you review entire process before you begin configuring information barrier policies.
 

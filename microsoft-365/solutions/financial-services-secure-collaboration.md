@@ -269,7 +269,7 @@ Ultimately, these rules require organizations to establish policies and implemen
 
 [Information barriers](../compliance/information-barriers.md) provides the ability to establish ethical walls within your Office 365 environment, allowing compliance administrators or other authorized administrators to define policies that allow or prevent communications between groups of users in Teams. Information barriers perform checks on specific actions to prevent unauthorized communication. Information barriers can also restrict communication in scenarios where internal teams are working on mergers/acquisitions or sensitive deals, or working with sensitive internal information that must be heavily restricted.
 
-Information barriers in Microsoft 365 support conversations and files in Teams. They can prevent the following types of communications-related actions to help comply with FINRA regulations:
+Information barriers support conversations and files in Teams. They can prevent the following types of communications-related actions to help comply with FINRA regulations:
 
 * Search for a user
 * Add a member to a team, or continue to participate with another member in a team
