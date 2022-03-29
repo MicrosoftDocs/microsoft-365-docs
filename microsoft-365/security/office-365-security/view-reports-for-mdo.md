@@ -123,7 +123,7 @@ The **Top senders and recipients** report show the top recipients for EOP and De
 
 ## URL protection report
 
-The **URL protection report** provides summary and trend views for threats detected and actions taken on URL clicks as part of [Safe Links](safe-links.md). This report will not have click data from users where the Safe Links policy applied has the **Do not track user clicks** option selected.
+The **URL protection report** provides summary and trend views for threats detected and actions taken on URL clicks as part of [Safe Links](safe-links.md). This report will not have click data from users where the Safe Links policy was applied when the **Track user clicks** option is not selected.
 
 To view the report, open the [Microsoft 365 Defender portal](https://security.microsoft.com), go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **URL protection page** and then click **View details**. To go directly to the report, open <https://security.microsoft.com/reports/URLProtectionActionReport>.
 
