@@ -44,17 +44,6 @@ Have them perform the following:
 4. To install Microsoft Teams, go to the office.com page, and choose  **Teams**.
 5. Get the Windows app, and then select  **Run**. Teams displays a prompt when installation is complete.
 
-## Next steps
-
-Follow these links for additional information on how to:
-  
-- Install Office applications:  [Install Office on your PC or Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)
-
-- Install other apps: [Project](https://support.microsoft.com/office/install-project-7059249b-d9fe-4d61-ab96-5c5bf435f281), [Visio](https://support.microsoft.com/office/install-visio-f98f21e3-aa02-4827-9167-ddab5b025710), or [Skype for Business](https://support.microsoft.com/office/install-skype-for-business-8a0d4da8-9d58-44f9-9759-5c8f340cb3fb)
-
->[!NOTE] 
->If you purchased Azure Active Directory Premium (AADP) Plan 1 or Plan 2, you're eligible for Microsoft Identity Manager (MIM). To download MIM, go to the [Download Center](https://www.microsoft.com/zh-cn/download/details.aspx?id=58498).
-
 
 ## Set up mobile devices for Microsoft 365 for business users
 
