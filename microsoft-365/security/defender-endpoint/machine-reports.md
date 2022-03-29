@@ -50,13 +50,12 @@ The Device health and compliance dashboard is structured in two tabs:
   - [Operating systems and platforms](#os-systems-and-platforms)
   - [Windows 10 versions](#windows-10-versions)
 
-- The [**Microsoft Defender Antivirus health** tab](#microsoft-defender-antivirus-health-tab) has five cards that report on aspects of Microsoft Defender Antivirus:
+- The [**Microsoft Defender Antivirus health** tab](#microsoft-defender-antivirus-health-tab) has eight cards organized in four columns that report on aspects of Microsoft Defender Antivirus:
 
-  - [Antivirus mode](#antivirus-mode)
-  - [Antivirus engine version](#antivirus-engine-version)
-  - [Antivirus security intelligence version](#antivirus-security-intelligence-version)
-  - [Antivirus platform version](#antivirus-platform-version)
-  - [Recent antivirus scan results](#recent-antivirus-scan-results)
+| first column | second column | third column | fourth column |
+|:---|:---|:---|:---|
+| [Antivirus mode](#antivirus-mode) | [Antivirus engine version](#antivirus-engine-version) | [Antivirus security intelligence version](#antivirus-security-intelligence-version) | [Antivirus platform version](#antivirus-platform-version)
+| [Recent antivirus scan results](#recent-antivirus-scan-results) | [Antivirus engine updates](#antivirus-engine-updates) | [Security intellegence updates](#security-intellegence-updates) | [Antivirus platform updates](#antivirus-platform-updates) |
 
 ### Sensor health tab
 
@@ -104,7 +103,11 @@ The Windows version trend graph can help you quickly determine whether your orga
 
 ### Microsoft Defender Antivirus health tab  
 
-The Microsoft Defender Antivirus health tab contains five cards that report on several aspects of Microsoft Defender Antivirus in your organization. Two cards, _mode_ and _scan results_, report about Microsoft Defender Antivirus functions. The remaining three cards report about Microsoft Defender Antivirus _engine versions_,  _security intelligence versions_, and _platform versions_ reported in your organization.
+The Microsoft Defender Antivirus health tab contains eight cards that report on several aspects of Microsoft Defender Antivirus in your organization. Two cards, _mode_ and _scan results_, report about Microsoft Defender Antivirus functions. The remaining six cards report about your organization's **Microsoft Defender Antivirus**:
+
+- _engine versions_ and _engine updates_ 
+- _security intelligence versions_ and _intelligence updates_
+- _platform versions_  and _platform updates_
 
 #### Card functionality
 
@@ -117,11 +120,7 @@ Within the flyout: clicking on the name of the device will redirect you to the "
 
 #### Microsoft Defender Antivirus version card functionality
 
-For the three cards that report about Microsoft Defender Antivirus version information:
-
-- engine version
-- security intelligence version
-- platform version
+Following are descriptions for the six cards that report about the _version_ and _update_ information for Microsoft Defender Antivirus engine, security intelligence, and platform components:
 
 ##### Full report
 
@@ -160,27 +159,66 @@ Devices that are in either passive, LPS, or Off present a potential security ris
 
 For details about LPS, see [Use limited periodic scanning in Microsoft Defender Antivirus](limited-periodic-scanning-microsoft-defender-antivirus.md).
 
-#### Antivirus security intelligence version
-
-Lists the most common _Microsoft Defender Antivirus security intelligence_ versions installed on devices on your network.
-Microsoft continually updates Microsoft Defender security intelligence to address the latest threats, and to refine detection logic. These refinements to security intelligence enhance Microsoft Defender Antivirus’ (and other Microsoft antimalware solutions’) ability to accurately identify potential threats. This security intelligence works directly with cloud-based protection to deliver AI-enhanced, next-generation protection that is fast and powerful.
-
-#### Antivirus engine version
-
-Shows the real-time results of the most current Microsoft Defender Antivirus engine versions installed across Windows Devices, Mac devices, and Linux devices in your organization. Microsoft Defender Antivirus engine is updated monthly.
-For more details on the current versions and how to update the different Microsoft Defender Antivirus components, see [Microsoft Defender Antivirus platform support](manage-updates-baselines-microsoft-defender-antivirus.md)
-
-#### Antivirus platform version
-
-Shows the real-time results of the most current Microsoft Defender Antivirus platform versions installed across versions of Windows, Mac, and Linux devices in your organization. Microsoft Defender Antivirus platform is updated monthly.
-For more details on the current versions and how to update the different Microsoft Defender Antivirus components, see [Microsoft Defender Antivirus platform support](manage-updates-baselines-microsoft-defender-antivirus.md)
-
 #### Recent antivirus scan results
 
 This card has two bar graphs showing all-up results for quick scans and full scans. In both graphs, the first bar indicates the completion rate for scans, and indicate **Completed**, **Canceled**, or **Failed**. The second bar in each section provides the error codes for failed scans.
 By scanning the **Mode** and **Recent scan results** columns, you can quickly identify devices that are not in active antivirus scan mode, and devices that have failed or cancelled recent antivirus scans. You can return to the report with this information and gather additional details and security recommendations.
 
 For more details on the current Microsoft Defender Antivirus versions and how to update the different Microsoft Defender Antivirus components, visit [Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md).
+
+#### Antivirus security intelligence version
+
+Lists the most common _Microsoft Defender Antivirus security intelligence_ versions installed on devices on your network.
+Microsoft continually updates Microsoft Defender security intelligence to address the latest threats, and to refine detection logic. These refinements to security intelligence enhance Microsoft Defender Antivirus’ (and other Microsoft antimalware solutions’) ability to accurately identify potential threats. This security intelligence works directly with cloud-based protection to deliver AI-enhanced, next-generation protection that is fast and powerful.
+
+#### Security intellegence updates
+
+This card dentifies devices that have security intellegence versions that are up to date versus out of date.
+Definition of ‘**Up to date** – the security intelligence version on the device was written in the past 7 days.
+
+<!-- Hide {this intro with no subsequent list items}
+[Confirm that it is versus as apposed to "out of date" only.]
+-->
+
+<!-- Hide {this intro with no subsequent list items}
+[link - https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus?view=o365-worldwide#security-intelligence-updates]
+-->
+
+#### Antivirus engine version
+
+Shows the real-time results of the most current Microsoft Defender Antivirus engine versions installed across Windows Devices, Mac devices, and Linux devices in your organization. Microsoft Defender Antivirus engine is updated monthly.
+For more details on the current versions and how to update the different Microsoft Defender Antivirus components, see [Microsoft Defender Antivirus platform support](manage-updates-baselines-microsoft-defender-antivirus.md)
+
+#### Antivirus engine updates
+This card dentifies deices that have antivirus engine versions that are up to date versus out of date.
+Definition of ‘**Up to date* – the engine version on the device is the most recent engine release {the Engine is usually released monthly, via Windows Update (WU)}.  There is a 3-day grace period from the day when WU is released.
+
+<!-- Hide {this intro with no subsequent list items}
+[Confirm that it is versus as apposed to "out of date" only.]
+-->
+
+<!-- Hide {this intro with no subsequent list items}
+[https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus?view=o365-worldwide#monthly-platform-and-engine-versions]
+-->
+
+#### Antivirus platform version
+
+Shows the real-time results of the most current Microsoft Defender Antivirus platform versions installed across versions of Windows, Mac, and Linux devices in your organization. Microsoft Defender Antivirus platform is updated monthly.
+For more details on the current versions and how to update the different Microsoft Defender Antivirus components, see [Microsoft Defender Antivirus platform support](manage-updates-baselines-microsoft-defender-antivirus.md)
+
+### Antivirus platform updates
+This card dentifies deices that have Antivirus platform versions that are up to date versus out of date.
+Definition of ‘**Up to date* – the platform version on the device is the most recent platform release (Platform is usually released monthly, via Windows Update).  There is a 3-day grace period from the day when WU is released.
+
+For information about Manage Microsoft Defender Antivirus update versions, see: [Monthly platform and engine versions](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
+
+<!-- Hide {this intro with no subsequent list items}
+[Confirm that it is versus as apposed to "out of date" only.]
+-->
+
+<!-- Hide {this intro with no subsequent list items}
+[@@@ check mail for link]
+-->
 
 ### Related topics
 
