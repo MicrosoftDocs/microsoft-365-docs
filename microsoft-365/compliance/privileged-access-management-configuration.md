@@ -27,7 +27,7 @@ ms.assetid:
 
 # Get started with privileged access management
 
-This topic guides you through enabling and configuring privileged access management in your organization. You can use either the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> or Exchange Management PowerShell to manage and use privileged access.
+This article guides you through enabling and configuring privileged access management in your organization. You can use either the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> or Exchange Management PowerShell to manage and use privileged access.
 
 ## Before you begin
 
