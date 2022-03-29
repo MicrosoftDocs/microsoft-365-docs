@@ -32,7 +32,7 @@ Occasionally, Microsoft engineers help troubleshoot and fix issues that arise wi
 
 ## Customer Lockbox overview video
 
-> [!VIDEO <https://www.microsoft.com/videoplayer/embed/8fecf10b-1f03-4849-8b67-76d3d2a43f26?autoplay=false>]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/8fecf10b-1f03-4849-8b67-76d3d2a43f26?autoplay=false]
 
 ## Customer Lockbox workflow
 
