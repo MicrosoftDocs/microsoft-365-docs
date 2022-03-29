@@ -22,6 +22,8 @@ ms.technology: mde
 
 
 **Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
@@ -83,15 +85,15 @@ This action takes effect on devices with Windows 10, version 1703 or later, and 
 
 2. Go to the top bar and select **Stop and Quarantine File**.
 
-   ![Image of stop and quarantine file action.](images/atp-stop-quarantine-file.png)
+   :::image type="content" source="images/atp-stop-quarantine-file.png" alt-text="The stop and quarantine file action" lightbox="images/atp-stop-quarantine-file.png":::
 
 3. Specify a reason, then select **Confirm**.
 
-   ![Image of stop and quarantine file modal window.](images/atp-stop-quarantine.png)
+   :::image type="content" source="images/atp-stop-quarantine.png" alt-text="The stop and quarantine file page" lightbox="images/atp-stop-quarantine.png":::
 
    The Action center shows the submission information:
 
-   ![Image of stop and quarantine file action center.](images/atp-stopnquarantine-file.png)
+   :::image type="content" source="images/atp-stopnquarantine-file.png" alt-text="The stop and quarantine file action center" lightbox="images/atp-stopnquarantine-file.png":::
 
    - **Submission time** - Shows when the action was submitted.
    - **Success** - Shows the number of devices where the file has been stopped and quarantined.
@@ -104,7 +106,7 @@ This action takes effect on devices with Windows 10, version 1703 or later, and 
 
 When the file is being removed from a device, the following notification is shown:
 
-![Image of notification on device user.](images/atp-notification-file.png)
+:::image type="content" source="images/atp-notification-file.png" alt-text="The notification a on device user" lightbox="images/atp-notification-file.png":::
 
 In the device timeline, a new event is added for each device where a file was stopped and quarantined.
 
@@ -140,7 +142,7 @@ Selecting **Download file** from the response actions allows you to download a l
 
 By default, you should be able to download files that are in quarantine.
 
-![Image of download file action.](images/atp-download-file-action.png)
+:::image type="content" source="images/atp-download-file-action.png" alt-text="The download file action" lightbox="images/atp-download-file-action.png":::
 
 ### Download quarantined files
 
@@ -222,7 +224,7 @@ The **Action center** provides information on actions that were taken on a devic
 
 All other related details are also shown, such as submission date/time, submitting user, and if the action succeeded or failed.
 
-![Image of action center with information.](images/action-center-details.png)
+:::image type="content" source="images/action-center-details.png" alt-text="The action center with information" lightbox="images/action-center-details.png":::
 
 ## Deep analysis
 
@@ -261,7 +263,7 @@ You can also submit a sample through the [Microsoft 365 Defender Portal](https:/
 
 2. In the **Deep analysis** tab of the file view, select **Submit**.
 
-   ![You can only submit PE files in the file details section.](images/submit-file.png)
+   :::image type="content" source="images/submit-file.png" alt-text="The submit PE files button" lightbox="images/submit-file.png":::
 
    > [!NOTE]
    > Only PE files are supported, including _.exe_ and _.dll_ files.
@@ -285,7 +287,7 @@ The details provided can help you investigate if there are indications of a pote
 1. Select the file you submitted for deep analysis.
 2. Select the **Deep analysis** tab. If there are any previous reports, the report summary will appear in this tab.
 
-    ![The deep analysis report shows detailed information across a number of categories.](images/analysis-results-nothing500.png)
+   :::image type="content" source="images/analysis-results-nothing500.png" alt-text="The deep analysis report showing detailed information across a number of categories" lightbox="images/analysis-results-nothing500.png":::
 
 #### Troubleshoot deep analysis
 
