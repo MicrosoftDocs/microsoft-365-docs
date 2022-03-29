@@ -46,7 +46,7 @@ For guidance on how to download and use Windows Security Baselines for Windows s
 
 You'll need to complete the following general steps to successfully onboard servers.
 
-![Illustration of onboarding flow for Windows Servers and Windows 10 devices](images/server-onboarding-tools-methods.png)
+:::image type="content" source="images/server-onboarding-tools-methods.png" alt-text="An illustration of onboarding flow for Windows Servers and Windows 10 devices" lightbox="images/server-onboarding-tools-methods.png":::
 
 **Windows Server 2012 R2 and Windows Server 2016**
 
@@ -293,16 +293,7 @@ The following steps are only applicable if you're using a third-party anti-malwa
     - Type: `REG_DWORD`
     - Value: `1`
 
-2. Run the following PowerShell command to verify that the passive mode was configured:
-
-    ```powershell
-    Get-WinEvent -FilterHashtable @{ProviderName="Microsoft-Windows-Sense" ;ID=84}
-    ```
-
-3. Confirm that a recent event containing the passive mode event is found:
-
-    ![Image of passive mode verification result](images/atp-verify-passive-mode.png)
-
+       :::image type="content" source="images/atp-verify-passive-mode.png" alt-text="The passive mode verification result" lightbox="images/atp-verify-passive-mode.png":::
 > [!IMPORTANT]
 >
 > - When you use Microsoft Defender for Cloud to monitor servers, a Defender for Endpoint tenant is automatically created (in the US for US users, in the EU for European users, and in the UK for UK users).
@@ -383,8 +374,8 @@ For other Windows server versions, you have two options to offboard Windows serv
 - Uninstall the MMA agent
 - Remove the Defender for Endpoint workspace configuration
 
->[!NOTE]
-> These offboarding instructions for other Windows server versions also apply if you are running the previous Microsoft Defender for Endpoint for Windows Server 2016 and Windows Server 2012 R2 that requires the MMA. Instructions to migrate to the new unfiied solution are at [Server migration scenarios in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/server-migration).
+> [!NOTE]
+> These offboarding instructions for other Windows server versions also apply if you are running the previous Microsoft Defender for Endpoint for Windows Server 2016 and Windows Server 2012 R2 that requires the MMA. Instructions to migrate to the new unified solution are at [Server migration scenarios in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/server-migration).
 
 ## Related topics
 

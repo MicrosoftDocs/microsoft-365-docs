@@ -45,7 +45,7 @@ Microsoft Defender for Office 365 organizations (for example, Microsoft 365 E5 s
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Reports** > **Email & collaboration** \> **Reports for download**. To go directly to the **Reports for download** page, use <https://security.microsoft.com/ReportsForDownload?viewid=custom>.
 
-![Email & collaboration reports page in the Microsoft 365 Defender portal.](../../media/email-collaboration-download-reports.png)
+:::image type="content" source="../../media/email-collaboration-download-reports.png" alt-text="The Email & collaboration reports page in the Microsoft 365 Defender portal" lightbox="../../media/email-collaboration-download-reports.png":::
 
 > [!NOTE]
 >
@@ -73,7 +73,8 @@ To view the report, open the Microsoft 365 Defender portal at <https://security.
 
 On the **Email & collaboration reports** page, find **Mail latency report** and then click **View details**. To go directly to the report, use <https://security.microsoft.com/mailLatencyReport>.
 
-![Mail latency report widget on the Email & collaboration reports page.](../../media/mail-latency-report-widget.png)
+
+:::image type="content" source="../../media/mail-latency-report-widget.png" alt-text="The Mail latency report widget on the Email & collaboration reports page" lightbox="../../media/mail-latency-report-widget.png":::
 
 On the **Mail latency report** page, the following tabs are available on the **Mail latency report** page:
 
@@ -83,29 +84,32 @@ On the **Mail latency report** page, the following tabs are available on the **M
 
 Regardless of the tab you select, the chart shows messages organized into the following categories:
 
-- **Mail delivery latency**
-- **Detonations**
+- **Overall**
+- **Detonation**
 
 When you hover over a category in the chart, you can see a breakdown of the latency in each category.
 
-![50th percentiles view of the Mail latency report.](../../media/mail-latency-report-50th-percentile-view.png)
+:::image type="content" source="../../media/mail-latency-report-50th-percentile-view.png" alt-text="The 50th percentiles view of the Mail latency report" lightbox="../../media/mail-latency-report-50th-percentile-view.png":::
 
 If you click **Filter**, you can filter both the chart and the details table by the following values:
 
 - **Date (UTC)**: **Start date** and **End date**
 - **Message view**: One of the following values:
   - **All messages**
-  - **Messages that contain attachments or URLs**
-  - **Detonated messages**
+  - **Detonated messages**: One of the following values:
+    - **Inline detonation**: Includes messages that are fully tested before delivery.
+    - **Asynchronous detonation**
 
 When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
 
 In the details table below the chart, the following information is available:
 
 - **Date (UTC)**
-- **Percentiles**: **50**, **90**, or **99**
+- **Latency**
 - **Message count**
-- **Overall latency**
+- **50th percentile**
+- **90th percentile**
+- **99th percentile**
 
 On the main report page, the ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](view-email-security-reports.md#export-report)** button is available.
 
@@ -119,11 +123,11 @@ The **Top senders and recipients** report show the top recipients for EOP and De
 
 ## URL protection report
 
-The **URL protection report** provides summary and trend views for threats detected and actions taken on URL clicks as part of [Safe Links](safe-links.md). This report will not have click data from users where the Safe Links policy applied has the **Do not track user clicks** option selected.
+The **URL protection report** provides summary and trend views for threats detected and actions taken on URL clicks as part of [Safe Links](safe-links.md). This report will not have click data from users where the Safe Links policy was applied when the **Track user clicks** option is not selected.
 
 To view the report, open the [Microsoft 365 Defender portal](https://security.microsoft.com), go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **URL protection page** and then click **View details**. To go directly to the report, open <https://security.microsoft.com/reports/URLProtectionActionReport>.
 
-![URL protection report widget on the Email & collaboration reports page.](../../media/url-protection-report-widget.png)
+:::image type="content" source="../../media/url-protection-report-widget.png" alt-text="The URL protection report widget on the Email & collaboration reports page" lightbox="../../media/url-protection-report-widget.png":::
 
 The available views on the **URL protection** report page are described in the following sections.
 
@@ -132,7 +136,7 @@ The available views on the **URL protection** report page are described in the f
 
 ### View data by URL click protection action
 
-![URL click protection action view in the URL protection report.](../../media/url-threat-protection-report-url-click-protection-action-view.png)
+:::image type="content" source="../../media/url-threat-protection-report-url-click-protection-action-view.png" alt-text="The view namely URL click protection action in the URL protection report" lightbox="../../media/url-threat-protection-report-url-click-protection-action-view.png":::
 
 The **View data by URL click protection action** view shows the number of URL clicks by users in the organization and the results of the click:
 
@@ -175,7 +179,7 @@ On the main report page, the ![Create schedule icon.](../../media/m365-cc-sc-cre
 
 ### View data by URL click by application
 
-![URL click by application view in the URL protection report.](../../media/url-threat-protection-report-url-click-by-application-view.png)
+:::image type="content" source="../../media/url-threat-protection-report-url-click-by-application-view.png" alt-text="The URL click protection action view in the URL protection report" lightbox="../../media/url-threat-protection-report-url-click-by-application-view.png":::
 
 The **View data by URL click by application** view shows the number of URL clicks by apps that support Safe Links:
 
