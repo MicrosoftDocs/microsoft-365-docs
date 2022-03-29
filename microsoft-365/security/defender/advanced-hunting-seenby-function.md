@@ -1,7 +1,7 @@
 ---
 title: SeenBy() function in advanced hunting for Microsoft 365 Defender
-description: Learn how to use the SeenBy() to enrich information about files in your advanced hunting query results
-keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, FileProfile, file profile, function, enrichment
+description: Learn how to use the SeenBy() function to look for which onboarded devices discovered a certain device
+keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, SeenBy, device discovery, function, enrichment
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -28,48 +28,32 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
-The `FileProfile()` function is an enrichment function in [advanced hunting](advanced-hunting-overview.md) that adds the following data to files found by the query.
+The `SeenBy()` function is invoked to see a list of onboarded devices that have seen a certain device using the device discovery feature.
+
+This function returns a table that has the following column:
 
 | Column | Data type | Description |
 |------------|---------------|-------------|
-| `SHA1` | `string` | SHA-1 of the file that the recorded action was applied to |
-| `SHA256` | `string` | SHA-256 of the file that the recorded action was applied to |
+| `DeviceId` | `string` | Unique identifier for the device in the service |
+
 
 ## Syntax
 
 ```kusto
-invoke FileProfile(x,y)
+invoke SeenBy(x)
 ```
 
-## Arguments
-
-- **x**—file ID column to use: `SHA1`, `SHA256`, `InitiatingProcessSHA1`, or `InitiatingProcessSHA256`; function uses `SHA1` if unspecified
-- **y**—limit to the number of records to enrich, 1-1000; function uses 100 if unspecified
-
+- where **x** is the device ID of interest
 
 >[!TIP]
-> Enrichment functions will show supplemental information only when they are available. Availability of information is varied and depends on a lot of factors. Make sure to consider this when using FileProfile() in your queries or in creating custom detections. For best results, we recommend using the FileProfile() function with SHA1.
+> Enrichment functions will show supplemental information only when they are available. Availability of information is varied and depends on a lot of factors. Make sure to consider this when using SeenBy() in your queries or in creating custom detections. For best results, we recommend using the SeenBy() function with the DeviceInfo table.
 
-## Examples
-
-### Project only the SHA1 column and enrich it
+### Example: Obtain list of onboarded devices that have seen a device
 
 ```kusto
-DeviceFileEvents
-| where isnotempty(SHA1) and Timestamp > ago(1d)
-| take 10
-| project SHA1
-| invoke FileProfile()
-```
-
-### Enrich the first 500 records and list low-prevalence files
-
-```kusto
-DeviceFileEvents
-| where ActionType == "FileCreated" and Timestamp > ago(1d)
-| project CreatedOn = Timestamp, FileName, FolderPath, SHA1
-| invoke FileProfile("SHA1", 500) 
-| where GlobalPrevalence < 15
+DeviceInfo 
+| where OnboardingStatus <> "Onboarded" 
+| limit 100 | invoke SeenBy()
 ```
 
 ## Related topics
