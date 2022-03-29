@@ -185,14 +185,16 @@ Use the following guidance for when you create, modify, or delete sensitivity la
 
 ### Creating and publishing labels that are configured for sites and groups
 
-When a new sensitivity label is created and published, it's visible for users in teams, groups, and sites within one hour. However, if you modify an existing label, allow up to 24 hours. Use the following guidance to publish a label for your users when that label is configured for site and group settings:
+Use the following guidance to publish a label for your users when that label is configured for site and group settings:
 
 1. After you create and configure the sensitivity label, add this label to a label policy that applies to just a few test users.
 
 2. Wait for the change to replicate:
-
-   - New label: Wait for one hour.
-   - Existing label: Wait for 24 hours.
+    
+   - New label: Wait for at least one hour.
+   - Existing label: Wait for at least 24 hours.
+    
+    For more information about the timing of labels, see [When to expect new labels and changes to take effect](create-sensitivity-labels.md#when-to-expect-new-labels-and-changes-to-take-effect).
 
 3. After this wait period, use one of the test user accounts to create a team, Microsoft 365 group, or SharePoint site with the label that you created in step 1.
 
@@ -200,7 +202,7 @@ When a new sensitivity label is created and published, it's visible for users in
 
 ### Modifying published labels that are configured for sites and groups
 
-As a best practice, don't change the site and group settings for a sensitivity label after the label has been applied to teams, groups, or sites. If you do, remember to wait for 24 hours for the changes to replicate to all containers that have the label applied.
+As a best practice, don't change the site and group settings for a sensitivity label after the label has been applied to teams, groups, or sites. If you do, remember to wait for at least 24 hours for the changes to replicate to all containers that have the label applied.
 
 In addition, if your changes include the **External users access** setting:
 
@@ -214,7 +216,7 @@ If you delete a sensitivity label that has the site and group settings enabled, 
 
 1. Remove the sensitivity label from all label policies that include the label.
 
-2. Wait for one hour.
+2. Wait for at least one hour.
 
 3. After this wait period, try creating a team, group, or site and confirm that the label is no longer visible.
 
