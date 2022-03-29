@@ -572,11 +572,15 @@ Complete the following steps to turn off insider risk analytics:
 
 ## Admin notifications
 
-Admin notifications automatically send an email notification to users included in the *Insider Risk Management*, *Insider Risk Management Analysts*, and *Insider Risk Management Investigators* role groups when the first alert is generated for a new policy. This is enabled by default for all organizations and policies are checked every 24 hours for first-time alerts. Notifications aren't sent for any alerts that occur in policies after the first alert.
+Admin notifications automatically send an email notification to selectable insider risk management role groups. You can enable notifications and assign which role groups will receive the notifications for the following scenarios:
 
-If you've enabled insider risk management Analytics for your organization, members of the *Insider Risk Management Admin* role group automatically receive an email notification for initial analytics insights for data leaks, theft, and exfiltration activities.
+- Send a notification email when the first alert is generated for a new policy. Policies are checked every 24 hours for first-time alerts and notifications are not sent on subsequent alerts for the policy.
+- Send a daily email when new high severity alerts are generated. Policies are checked every 24 hours for high severity alerts.
+- Send a weekly email summarizing policies that have unresolved warnings
 
-If you prefer to disable admin notifications, complete the following steps:
+If you've enabled insider risk management analytics for your organization, members of the *Insider Risk Management Admin* role group automatically receive an email notification for initial analytics insights for data leaks, theft, and exfiltration activities.
+
+If you prefer to disable admin and analytics notifications, complete the following steps:
 
 1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** > **Insider risk settings**.
 2. Select the **Admin notifications** page.
@@ -586,5 +590,3 @@ If you prefer to disable admin notifications, complete the following steps:
     - **Send an email notification when Analytics is turned off**
 
 4. Select **Save** to configure and exit.
-
-![Insider risk management admin notifications settings.](../media/insider-risk-admin-notifications.png)
