@@ -107,8 +107,8 @@ The Microsoft Defender Antivirus health tab contains eight cards that report on 
 
 |  |  |  |  |
 |:---|:---|:---|:---|
-| **Versions** | engine versions | security intelligence versions | platform versions |
-| **Updates** | engine updates | security intelligence updates | platform updates |
+| **Versions**: | engine versions | security intelligence versions | platform versions |
+| **Updates**: | engine updates | security intelligence updates | platform updates |
 
 > [!NOTE]
 >
