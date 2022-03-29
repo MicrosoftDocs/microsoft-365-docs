@@ -46,7 +46,13 @@ To ensure data quality, we perform daily data validation checks for the past thr
 |:-----|:-----|
 |**Metric**|**Definition**|
 |User name  <br/> |The email address of the user. You can display the actual email address or make this field anonymous.   <br/> |
+|Tenant name  <br/> |The tenant name of this user’s origin.   <br/> |
+|Shared channel tenant names   <br/> |Tenant names of this user all involved shared channel origin.   <br/> |
+|Is external    <br/> |Indicates if the user is external user or not.   <br/> |
 |Channel messages   <br/> |The number of unique messages that the user posted in a team chat during the specified time period.  <br/> |
+|Posts   <br/> |The number of post messages in all channels during the specified time period <br/> |
+|Replies   <br/> |The number of replied messages in all channels during the specified time period. <br/> |
+|Urgent messages    <br/> |The number of urgent messages during the specified time period. <br/> |
 |Chat messages   <br/> |The number of unique messages that the user posted in a private chat during the specified time period.  <br/> |
 |Total meetings   <br/> |The number of online meetings that the user participated in during the specified time period.  <br/> |
 |1:1 calls   <br/> | The number of 1:1 calls that the user participated in during the specified time period.  <br/> |
