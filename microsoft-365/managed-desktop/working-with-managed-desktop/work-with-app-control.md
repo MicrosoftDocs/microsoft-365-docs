@@ -1,6 +1,6 @@
 ---
 title: Work with app control
-description:  
+description: Learn how to manage app control.
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: tiaraquan
