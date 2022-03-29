@@ -51,9 +51,8 @@ If the Key is missing,  Navigate to **SOFTWARE** \> **Microsoft** \> **Windows D
    - 1, or **On**
    - 2, or **Audit** mode
 
-    :::image type="content" alt-text="Network Protection registry key." source="../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png" lightbox="../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png":::
-    
-    
+    :::image type="content" source="../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png" alt-text="Network Protection registry key" lightbox="../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png":::
+
 ## Enable network protection
 
 Enable network protection by using any of these methods:
