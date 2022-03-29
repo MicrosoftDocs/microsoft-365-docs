@@ -103,15 +103,16 @@ The Windows version trend graph can help you quickly determine whether your orga
 
 ### Microsoft Defender Antivirus health tab  
 
-The Microsoft Defender Antivirus health tab contains eight cards that report on several aspects of Microsoft Defender Antivirus in your organization. Two cards, _mode_ and _scan results_, report about Microsoft Defender Antivirus functions. The remaining six cards report about your organization's **Microsoft Defender Antivirus**:
+The Microsoft Defender Antivirus health tab contains eight cards that report on several aspects of Microsoft Defender Antivirus in your organization. Two cards, _mode_ and _scan results_, report about Microsoft Defender Antivirus functions. The remaining six cards report about the Microsoft Defender Antivirus versions and updates for devices in your organization, as follows:
 
-- _engine versions_ and _engine updates_
-- _security intelligence versions_ and _intelligence updates_
-- _platform versions_  and _platform updates_
+|  |  |  |  |
+|:---|:---|:---|:---|
+| **Versions** | engine versions | security intelligence versions | platform versions |
+| **Updates** | engine updates | security intelligence updates | platform updates |
 
 > [!NOTE]
 >
-> Up to date reporting information will be available for Windows devices with engine version: 19000.1 and newer.
+> Up-to-date reporting information will be available for Windows devices with engine version: 19000.1 and newer.
 
 #### Card functionality
 
