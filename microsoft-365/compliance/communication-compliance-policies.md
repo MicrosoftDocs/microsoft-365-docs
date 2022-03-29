@@ -1,6 +1,7 @@
 ---
 title: "Communication compliance policies"
 description: "Learn more about communication compliance policies."
+keywords: Microsoft 365, Microsoft Purview, compliance, communication compliance
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -152,7 +153,7 @@ The built-in trainable and global classifiers don't provide an exhaustive list o
 > [!NOTE]
 > Policies using classifiers will inspect and evaluate messages with a word count of six or greater. Messages containing less than six words aren't evaluated in policies using classifiers. To identify and take action on shorter messages containing inappropriate content, we recommend including a custom keyword dictionary to communication compliance policies monitoring for this type of content.
 
-For information about trainable classifiers in Microsoft 365, see [Getting started with trainable classifiers](classifier-get-started-with.md).
+For information about trainable classifiers, see [Getting started with trainable classifiers](classifier-get-started-with.md).
 
 ### Optical character recognition (OCR)
 

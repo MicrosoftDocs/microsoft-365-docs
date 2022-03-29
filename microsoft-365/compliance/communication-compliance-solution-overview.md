@@ -28,7 +28,7 @@ Use the following steps to configure communication compliance for your organizat
 
 ![Insider risk solution communication compliance steps.](../media/ir-solution-cc-steps.png)
 
-1. Learn about [communication compliance](communication-compliance.md) in Microsoft 365
+1. Learn about [communication compliance](communication-compliance.md)
 2. Plan for [communication compliance](communication-compliance-plan.md) and [verify licensing](communication-compliance-configure.md#subscriptions-and-licensing)
 3. Configure [prerequisites](communication-compliance-configure.md#step-2-required-enable-the-audit-log) and [permissions](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance)
 4. Create and configure [communication compliance policies](communication-compliance-configure.md#step-5-required-create-a-communication-compliance-policy)

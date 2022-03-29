@@ -1,6 +1,7 @@
 ---
 title: "Use communication compliance reports and audits"
 description: "Learn more about using communication compliance reports and audits."
+keywords: Microsoft 365, Microsoft Purview, compliance, communication compliance
 f1.keywords:
 - NOCSH
 ms.author: robmazz

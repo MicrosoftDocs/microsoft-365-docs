@@ -1,6 +1,7 @@
 ---
 title: "Investigate and remediate communication compliance alerts"
-description: "Investigate and remediate communication compliance alerts in Microsoft 365."
+description: "Investigate and remediate communication compliance alerts in Microsoft Purview."
+keywords: Microsoft 365, Microsoft Purview, compliance, communication compliance
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -151,7 +152,7 @@ Message details can be exported or downloaded if you need to archive the message
 
 [Microsoft Power Automate](/power-automate/getting-started) is a workflow service that automates actions across applications and services. By using flows from templates or created manually, you can automate common tasks associated with these applications and services. When you enable Power Automate flows for communication compliance, you can automate important tasks for alerts and users. You can configure Power Automate flows to notify managers when users have communication compliance alerts and other applications.
 
-Customers with Microsoft 365 subscriptions that include communication compliance don't need additional Power Automate licenses to use the recommended default communication compliance Power Automate template. The default template can be customized to support your organization and cover core communication compliance scenarios. If you choose to use premium Power Automate features in these templates, create a custom template using the Microsoft Purview connector, or use Power Automate templates for other compliance areas in Microsoft 365, you may need additional Power Automate licenses.
+Customers with Microsoft 365 subscriptions that include communication compliance don't need additional Power Automate licenses to use the recommended default communication compliance Power Automate template. The default template can be customized to support your organization and cover core communication compliance scenarios. If you choose to use premium Power Automate features in these templates, create a custom template using the Microsoft Purview connector, or use Power Automate templates for other compliance areas in Microsoft Purview, you may need additional Power Automate licenses.
 
 > [!IMPORTANT]
 > Are you receiving prompts for additional license validation when testing Power Automate flows? Your organization may not have received service updates for this preview feature yet. Updates are being deployed and all organizations with Microsoft 365 subscriptions that include communication compliance should have license support for flows created from the recommended Power Automate templates by October 30, 2020.
