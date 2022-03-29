@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -44,7 +44,7 @@ Because the Action center provides a comprehensive view of Microsoft 365 Defende
 
 The unified Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) lists pending and completed remediation actions for your devices, email & collaboration content, and identities in one location.
 
-:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="The unified Action center in Microsoft 365 Defender portal." lightbox="../../media/m3d-action-center-unified.png":::
+:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="The unified Action center in the Microsoft 365 Defender portal." lightbox="../../media/m3d-action-center-unified.png":::
 
 For example: 
 

@@ -73,12 +73,9 @@ To learn by doing, [click this link](protect-against-threats.md).
 
 The following table summarizes what's included in each plan.
 
-****
-
 |Defender for Office 365 Plan 1|Defender for Office 365 Plan 2|
 |---|---|
 |Configuration, protection, and detection capabilities: <ul><li>[Safe Attachments](safe-attachments.md)</li><li>[Safe Links](safe-links.md)</li><li>[Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li><li>[Anti-phishing protection in Defender for Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[Real-time detections](threat-explorer.md)</li></ul>|Defender for Office 365 Plan 1 capabilities <p> --- plus --- <p> Automation, investigation, remediation, and education capabilities: <ul><li>[Threat Trackers](threat-trackers.md)</li><li>[Threat Explorer](threat-explorer.md)</li><li>[Automated investigation and response](office-365-air.md)</li><li>[Attack simulation training](attack-simulation-training.md)</li><li>[Proactively hunt for threats with advanced hunting in Microsoft 365 Defender](../defender/advanced-hunting-overview.md)</li><li>[Investigate incidents in Microsoft 365 Defender](../defender/investigate-incidents.md)</li><li>[Investigate alerts in Microsoft 365 Defender](../defender/investigate-alerts.md)</li></ul>|
-
 
 - Microsoft Defender for Office 365 Plan 2 is included in Office 365 E5, Office 365 A5, and Microsoft 365 E5.
 
@@ -140,10 +137,6 @@ Microsoft Defender for Office 365 Plan 2 includes best-of-class [threat investig
 ## Permissions required to use Microsoft Defender for Office 365 features
 
 To access Microsoft Defender for Office 365 features, you must be assigned an appropriate role. The following table includes some examples:
-
-<br>
-
-****
 
 |Role or role group|Resources to learn more|
 |---|---|

@@ -9,7 +9,7 @@ audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.date: 5/8/2019
+ms.date: 03/04/2022
 search.appverid:
 - MET150
 ms.assetid: 09f6737e-f03f-4bc8-8281-e46d24ee2a74
@@ -206,7 +206,7 @@ You can use custom branding templates to force recipients to receive a wrapper m
 
 ## Customize the appearance of email messages and the OME portal
 
-For detailed information about how you can customize OME for your organization, see [Add your organization's brand to your encrypted messages](add-your-organization-brand-to-encrypted-messages.md).
+For detailed information about how you can customize OME for your organization, see [Add your organization's brand to your encrypted messages](add-your-organization-brand-to-encrypted-messages.md). In order to enable the ability to track and revoke encrypted messages you must add your custom branding to the OME portal.
   
 ## Disable the new capabilities for OME
 

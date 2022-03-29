@@ -143,7 +143,7 @@ To obtain the tenant ID of a subscription, sign in to the [Microsoft 365 admin c
    
    # Enable customization if tenant is dehydrated
      $dehydrated=Get-OrganizationConfig | fl isdehydrated
-     if ($dehy -eq $true) {Enable-OrganizationCustomization}
+     if ($dehydrated -eq $true) {Enable-OrganizationCustomization}
      
    $AppId = "[guid copied from the migrations app]"
 
@@ -209,7 +209,16 @@ To obtain the tenant ID of a subscription, sign in to the [Microsoft 365 admin c
 You can verify cross-tenant mailbox migration configuration by running [Test-MigrationServerAvailability](/powershell/module/exchange/Test-MigrationServerAvailability) cmdlet against the cross-tenant migration endpoint that you created on your target tenant.
 
    > [!NOTE]
-   > Test-MigrationServerAvailability -Endpoint "[the name of your cross-tenant migration endpoint]" -TestMailbox "[email address of a source mailbox that is part of your migration scope]"
+   >
+   > - Target tenant:
+   > 
+   > Test-MigrationServerAvailability -Endpoint "[the name of your cross-tenant migration endpoint]"
+   >
+   > Get-OrganizationRelationship | fl name, DomainNames, MailboxMoveEnabled, MailboxMoveCapability
+   >
+   > - Source tenant:
+   > 
+   > Get-OrganizationRelationship | fl name, DomainNames, MailboxMoveEnabled, MailboxMoveCapability 
 
 ### Move mailboxes back to the original source
 

@@ -109,7 +109,7 @@ The procedures in this article first describe how to set the order, and then how
 
    2. Enter the order of sources, separated by a single pipe, for example: `InternalDefinitionUpdateServer|MicrosoftUpdateServer|MMPC`, as shown in the following screenshot.
 
-      :::image type="content" source="../../media/wdav-order-update-sources.png" alt-text="group policy setting listing the order of sources.":::
+      :::image type="content" source="../../media/wdav-order-update-sources.png" alt-text="Group policy setting listing the order of sources" lightbox="../../media/wdav-order-update-sources.png":::
 
    3. Select **OK**. This will set the order of protection update sources.
 
@@ -171,9 +171,9 @@ For example, suppose that Contoso has hired Fabrikam to manage their security so
 
 <a id="unc-share"></a>
 
-## Create a UNC share for security intelligence updates
+## Create a UNC share for security intelligence and platform updates
 
-Set up a network file share (UNC/mapped drive) to download security intelligence updates from the MMPC site by using a scheduled task.
+Set up a network file share (UNC/mapped drive) to download security intelligence and platform updates from the MMPC site by using a scheduled task.
 
 1. On the system on which you want to provision the share and download the updates, create a folder to which you will save the script.
 

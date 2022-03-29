@@ -210,6 +210,9 @@ In the Message center, you can select a message to see details.
 
 If you want to provide feedback on the message, in the details pane, select either the **Like** or **Dislike** icon on the bottom of the message details pane, and provide optional feedback in the text box that appears. Do not provide any personal information. You can optionally select **It's OK to contact me about this feedback** and then select **Send**.
 
+> [!NOTE]
+> If you're using Microsoft 365 for Government - GCC, Microsoft 365 for Government - GCC High and Office 365 Government - DoD, you won't be able to provide feedback on a post.
+
 ## Share a message
 
 See a message that someone else needs to act on? You can share the contents of the message with any user by email:

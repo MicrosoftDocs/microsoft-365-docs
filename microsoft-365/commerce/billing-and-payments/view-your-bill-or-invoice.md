@@ -2,8 +2,8 @@
 title: "View your bill or invoice"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -15,12 +15,12 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- commerce_billing
 - TopSMBIssues
 - okr_smb
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
-- commerce_billing
 - AdminTemplateSet
 - adminvideo
 description: "Find your invoice or billing statement in the Microsoft 365 admin center. You can also save and print a copy of your bill."
