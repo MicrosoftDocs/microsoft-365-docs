@@ -44,12 +44,17 @@ The sections below are organized by service in Office 365. To see a customized l
 ## External DNS records required for Office 365 (core services)
 <a name="BKMK_ReqdCore"> </a>
 
-Every Office 365 customer needs to add two records to their external DNS. The first CNAME record ensures that Office 365 can direct workstations to authenticate with the appropriate identity platform. The second required record is to prove you own your domain name.
+The TXT record is needed to prove that you own the domain and is required for all customers.
+
+The CNAME record is only required for customers using [Office 365 operated by 21Vianet](/microsoft-365/admin/services-in-china/services-in-china.md). It ensures that Office 365 can direct workstations to authenticate with the appropriate identity platform. 
+
+
   
-|**DNS record** <br/> |**Purpose** <br/> |**Value to use** <br/> |
-|----------|-----------|------------|
-|**CNAME** <br/> **(Suite)** <br/> |Used by Office 365 to direct authentication to the correct identity platform. [More information](../admin/services-in-china/purpose-of-cname.md?viewFallbackFrom=o365-worldwide) <br/> **Note:** This CNAME only applies to Office 365 operated by 21Vianet. If present and your Office 365 is not operated by 21Vianet, users on your custom domain will get a "*custom domain* isn't in our system" error and won't be able to activate their Office 365 license. [More information](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet) |**Alias:** msoid  <br/> **Target:** clientconfig.partner.microsoftonline-p.net.cn  <br/> |
-|**TXT** <br/> **(Domain verification)** <br/> |Used by Office 365 to verify only that you own your domain. It doesn't affect anything else.  <br/> |**Host:** @ (or, for some DNS hosting providers, your domain name)  <br/> **TXT Value:** _A text string provided by_ Office 365  <br/> The Office 365 **domain setup wizard** provides the values that you use to create this record.  <br/> |
+|**DNS record** <br/> |**Purpose** <br/> |**Value to use** <br/> |**Applies to**|
+|----------|-----------|------------|------------|
+|**TXT** <br/> **(Domain verification)** <br/> |Used by Office 365 to verify only that you own your domain. It doesn't affect anything else.  <br/> |**Host:** @ (or, for some DNS hosting providers, your domain name)  <br/> **TXT Value:** _A text string provided by_ Office 365  <br/> The Office 365 **domain setup wizard** provides the values that you use to create this record.  <br/> |All customers|
+|**CNAME** <br/> **(Suite)** <br/> |Used by Office 365 to direct authentication to the correct identity platform. [More information](../admin/services-in-china/purpose-of-cname.md?viewFallbackFrom=o365-worldwide) <br/> **Note:** This CNAME only applies to Office 365 operated by 21Vianet. If present and your Office 365 is not operated by 21Vianet, users on your custom domain will get a "*custom domain* isn't in our system" error and won't be able to activate their Office 365 license. [More information](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet) |**Alias:** msoid  <br/> **Target:** clientconfig.partner.microsoftonline-p.net.cn  <br/> | 21Vianet customers only|
+
 
 
 ## External DNS records required for email in Office 365 (Exchange Online)
