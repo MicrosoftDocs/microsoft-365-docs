@@ -363,7 +363,7 @@
 ##### [Exclusions for Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)
 ##### [Common mistakes to avoid](common-exclusion-mistakes-microsoft-defender-antivirus.md)
 
-#### [Diagnostics and performance for Microsoft Defender Antivirus]
+#### Diagnostics and performance for Microsoft Defender Antivirus
 ##### [Device health and compliance reports](machine-reports.md)
 ##### [Troubleshoot performance issues related to real-time protection](troubleshoot-performance-issues.md) 
 ##### [Troubleshoot Microsoft Defender Antivirus reporting in Update Compliance](troubleshoot-reporting.md)
