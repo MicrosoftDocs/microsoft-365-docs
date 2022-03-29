@@ -34,7 +34,7 @@ Part of your incident investigation can include user accounts. You can see the d
 
 To get a quick summary of a user account for the incident, select the check mark next to the user account name. Here's an example.
 
-:::image type="content" source="../../media/investigate-users/incidents-ss-user-pane.png" alt-text="The section that displays the summarized information for a user account summary pane for an incident in the Microsoft 365 Defender portal" lightbox="../../media/investigate-users/incidents-ss-user-pane.png":::
+:::image type="content" source="../../media/investigate-users/incidents-ss-user-pane.png" alt-text="The Users tab for an incident in the Microsoft 365 Defender portal" lightbox="../../media/investigate-users/incidents-ss-user-pane.png":::
 
 > [!NOTE]
 > The user page shows Azure Active Directory (Azure AD) organization as well as groups, helping you understand the groups and permissions associated with a user.

@@ -35,7 +35,7 @@ ms.custom: admindeeplinkDEFENDER
 The image and the table below lists the changes in navigation between the Microsoft Defender Security Center and Microsoft 365 Defender.
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="../../media/mde-m3d-security-center.png" alt-text="The what-moved-where scenario in the Microsoft 365 Defender portal" lightbox="../../media/mde-m3d-security-center.png":::
+> :::image type="content" source="../../media/mde-m3d-security-center.png" alt-text="The new locations in the Microsoft 365 Defender portal" lightbox="../../media/mde-m3d-security-center.png":::
 
 | Microsoft Defender Security Center | Microsoft 365 Defender |
 |---------|---------|
@@ -155,7 +155,7 @@ Learn more about how to [track and respond to emerging threats with threat analy
 
 View and manage the security of endpoints in your organization. If you've used the Microsoft Defender Security Center, it will look familiar.
 
-:::image type="content" source="../../media/converge-2-endpoints.png" alt-text="The the Endpoints quick launch bar in the Microsoft 365 Defender portal" lightbox="../../media/converge-2-endpoints.png":::
+:::image type="content" source="../../media/converge-2-endpoints.png" alt-text="The Endpoints quick launch bar in the Microsoft 365 Defender portal" lightbox="../../media/converge-2-endpoints.png":::
 
 ### Access and reports
 

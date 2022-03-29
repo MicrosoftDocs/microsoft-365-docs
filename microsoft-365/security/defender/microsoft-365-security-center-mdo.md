@@ -80,7 +80,7 @@ Brings together incident and alert management across your email, devices, and id
 - [Learn more about Investigations](incidents-overview.md)
 - [Learn more about managing alerts](/windows/security/threat-protection/microsoft-defender-atp/review-alerts)
 
-:::image type="content" source="../../media/converge-1-alerts-and-actions.png" alt-text="The Alerts and Actions quick launch bar in the Microsoft 365 Defender portal" lightbox="../../media/converge-1-alerts-and-actions.png":::
+:::image type="content" source="../../media/converge-1-alerts-and-actions.png" alt-text="Alerts and Actions quick launch bar in the Microsoft 365 Defender portal" lightbox="../../media/converge-1-alerts-and-actions.png":::
 
 ### Hunting
 
@@ -112,7 +112,7 @@ Learn more about how to [track and respond to emerging threats with threat analy
 
 Track and investigate threats to your users' email, track campaigns, and more. If you've used the Security & Compliance Center, this will be familiar.
 
-:::image type="content" source="../../media/converge-3-email-and-collab-new.png" alt-text="The quick launch menu for Email & Collab (or MSDO), on the left-navigation pane of the Microsoft 365 Defender portal" lightbox="../../media/converge-3-email-and-collab-new.png":::
+:::image type="content" source="../../media/converge-3-email-and-collab-new.png" alt-text="The quick launch menu for Email & Collab (or MSDO), on the left navigation pane in the Microsoft 365 Defender portal" lightbox="../../media/converge-3-email-and-collab-new.png":::
 
 #### Email entity page
 
@@ -122,7 +122,7 @@ The [Email entity page](../office-365-security/mdo-email-entity-page.md) *unifie
 
 View reports, change your settings, and modify user roles.
 
-:::image type="content" source="../../media/converge-4-access-and-reporting-new.png" alt-text="The quick launch menu for Microsoft 365 Defender permissions and reporting, on the left-navigation pane of the Microsoft 365 Defender portal" lightbox="../../media/converge-4-access-and-reporting-new.png":::
+:::image type="content" source="../../media/converge-4-access-and-reporting-new.png" alt-text="The quick launch menu for Microsoft 365 Defender permissions and reporting, on the left navigation pane in the Microsoft 365 Defender portal" lightbox="../../media/converge-4-access-and-reporting-new.png":::
 
 > [!NOTE]
 > DomainKeys Identified Mail (DKIM) ensures that destination email systems trust messages sent outbound from your custom domain.

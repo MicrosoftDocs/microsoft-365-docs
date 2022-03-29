@@ -43,7 +43,7 @@ Before diving into the details, take a look at the properties and summary of the
 
 You can start by selecting the incident from the check mark column. Here's an example.
 
-:::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-select.png" alt-text="The incident-selection portion from the check mark column." lightbox="../../media/investigate-incidents/incidents-ss-incident-select.png":::
+:::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-select.png" alt-text="Selecting an incident in the Microsoft 365 Defender portal" lightbox="../../media/investigate-incidents/incidents-ss-incident-select.png":::
 
 When you do, a summary pane opens with key information about the incident, such as severity, to whom it is assigned, and the [MITRE ATT&CK&trade;](https://attack.mitre.org/) categories for the incident. Here's an example.
 
@@ -116,7 +116,7 @@ The **Devices** tab lists all the devices related to the incident. Here's an exa
 
 You can select the check mark for a device to see details of the device, directory data, active alerts, and logged on users. Select the name of the device to see device details in the Defender for Endpoint device inventory. Here's an example.
 
-:::image type="content" source="../../media/investigate-incidents/incident-devices-details.png" alt-text="The Device inventory option-related page in the Microsoft Defender for Endpoint portal" lightbox="../../media/investigate-incidents/incident-devices-details.png":::
+:::image type="content" source="../../media/investigate-incidents/incident-devices-details.png" alt-text="The Device inventory option-related page in the Microsoft Defender for Endpoint." lightbox="../../media/investigate-incidents/incident-devices-details.png":::
 
 From the device page, you can gather additional information about the device, such as all of its alerts, a timeline, and security recommendations. For example, from the **Timeline** tab, you can scroll through the machine timeline and view all events and behaviors observed on the machine in chronological order, interspersed with the alerts raised.
 
@@ -127,7 +127,7 @@ From the device page, you can gather additional information about the device, su
 
 The **Users** tab lists all the users that have been identified to be part of or related to the incident. Here's an example.
 
-:::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="The **Users** page in Microsoft 365 Defender portal." lightbox="../../media/investigate-incidents/incident-users.png":::
+:::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="The Users page in the Microsoft 365 Defender portal." lightbox="../../media/investigate-incidents/incident-users.png":::
 
 You can select the check mark for a user to see details of the user account threat, exposure, and contact information. Select the user name to see additional user account details.
 
@@ -146,7 +146,7 @@ You can select the check mark for a mailbox to see a list of active alerts. Sele
 
 The **Investigations** tab lists all the [automated investigations](m365d-autoir.md) triggered by alerts in this incident. Automated investigations will perform remediation actions or wait for analyst approval of actions, depending on how you configured your automated investigations to run in Defender for Endpoint and Defender for Office 365.
 
-:::image type="content" source="../../media/investigate-incidents/incident-investigations.png" alt-text="The Investigations page for an incident in the Microsoft 365 Defender portal." lightbox="../../media/investigate-incidents/incident-investigations.png":::
+:::image type="content" source="../../media/investigate-incidents/incident-investigations.png" alt-text="The Investigations page for an incident in the Microsoft 365 Defender portal" lightbox="../../media/investigate-incidents/incident-investigations.png":::
 
 Select an investigation to navigate to its details page for full information on the investigation and remediation status. If there are any actions pending for approval as part of the investigation, they will appear in the **Pending actions history** tab. Take action as part of incident remediation.
 
@@ -179,7 +179,7 @@ From the **Graph** tab, you can:
 1. Play the alerts and the nodes on the graph as they occurred over time to understand the chronology of the attack.
 
 
-   :::image type="content" source="../../media/investigate-incidents/incident-graph-play.gif" alt-text="Playing the alerts and nodes on the Graph page":::
+   :::image type="content" source="../../media/investigate-incidents/incident-graph-play.gif" alt-text="The playing of the alerts and nodes on the Graph page":::
  
 
 2. Open an entity pane, allowing you to review the entity details and act on remediation actions, such as deleting a file or isolating a device.

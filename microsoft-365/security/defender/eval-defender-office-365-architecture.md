@@ -35,9 +35,9 @@ Before enabling Defender for Office 365, be sure you understand the architecture
 
 ## Understand the architecture
 
-The following diagram illustrates baseline architecture for Microsoft Defender for Office 365, which can include a third-party SMTP gateway or on-premises integration. Hybrid coexistence scenarios (that is, production mailboxes are both on-premise and online) require more complex configurations and are not covered in this article or evaluation guidance.
+The following diagram illustrates baseline architecture for Microsoft Defender for Office, which can include a third-party SMTP gateway or on-premises integration. Hybrid coexistence scenarios (that is, production mailboxes are both on-premise and online) require more complex configurations and are not covered in this article or evaluation guidance.
 
-:::image type="content" source="../../media/defender/m365-defender-office-architecture.png" alt-text="The architecture for Microsoft Defender for Office 365" lightbox="../../media/defender/m365-defender-office-architecture.png":::
+:::image type="content" source="../../media/defender/m365-defender-office-architecture.png" alt-text="The architecture for the Microsoft Defender for Office 365" lightbox="../../media/defender/m365-defender-office-architecture.png":::
 
 The following table describes this illustration.
 
@@ -63,11 +63,11 @@ The following table identified key concepts that are important to understand whe
 |Exchange Online Protection      |    Exchange Online Protection (EOP) is the cloud-based filtering service that helps protect your organization against spam and malware emails. EOP is included in all Microsoft 365 licenses that include Exchange Online.     |   [Exchange Online Protection overview](../office-365-security/exchange-online-protection-overview.md)      |
 |Anti-malware protection     |    Organizations with mailboxes in EXO are automatically protected against malware.     |  [Anti-malware protection in EOP](../office-365-security/anti-malware-protection.md)       |
 |Anti-spam protection     |   Organizations with mailboxes in EXO are automatically protected against junk mail and spam policies.      |  [Anti-spam protection in EOP](../office-365-security/anti-spam-protection.md)       |
-|Anti-phishing protection |  MDO offers more advanced anti-phishing  protection related to spear phishing, whaling, ransomware, and other malicious activities.   | [More anti-phishing protection at Microsoft Defender for Office 365](../office-365-security/anti-phishing-protection.md)   |
+|Anti-phishing protection |  MDO offers more advanced anti-phishing  protection related to spear phishing, whaling, ransomware, and other malicious activities.   | [Extra anti-phishing protection in Microsoft Defender for Office 365](../office-365-security/anti-phishing-protection.md)   |
 |Anti-spoofing protection     |   EOP includes features to help protect your organization from spoofed (forged) senders.      |   [Anti-spoofing protection in EOP](../office-365-security/anti-spoofing-protection.md)      |
-|Safe attachments     |   Safe Attachments provides an extra layer of protection by using a virtual environment to check and "detonate" attachments in email messages before they are delivered.      |   [Safe Attachments at Microsoft Defender for Office 365](../office-365-security/safe-attachments.md)      |
+|Safe attachments     |   Safe Attachments provides an extra layer of protection by using a virtual environment to check and "detonate" attachments in email messages before they are delivered.      |   [Safe Attachments in Microsoft Defender for Office 365](../office-365-security/safe-attachments.md)      |
 |Safe attachments for SharePoint, OneDrive, and Microsoft Teams     |    In addition, Safe Attachments for SharePoint, OneDrive, and Microsoft Teams offers an extra layer of protection for files that have been uploaded to cloud storage repositories.     |  [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](../office-365-security/mdo-for-spo-odb-and-teams.md)       |
-|Safe Links     | Safe Links is a feature that provides URL scanning and rewriting within inbound email messages and offers verification of those links before they are delivered or clicked.        |   [Safe Links at Microsoft Defender for Office 365](../office-365-security/safe-links.md)      |
+|Safe Links     | Safe Links is a feature that provides URL scanning and rewriting within inbound email messages and offers verification of those links before they are delivered or clicked.        |   [Safe Links in Microsoft Defender for Office 365](../office-365-security/safe-links.md)      |
 |    |         |         |
 
 For more detailed information about the capabilities included with Microsoft Defender for Office, see [Microsoft Defender for Office 365 service description](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).

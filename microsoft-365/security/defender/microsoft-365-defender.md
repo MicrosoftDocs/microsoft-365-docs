@@ -82,11 +82,11 @@ Here's an example of how the Microsoft 365 Defender portal correlates all relate
 
 Here's an example of the list of related alerts for an incident.
 
-:::image type="content" source="../../media/incident-list.png" alt-text="The alerts for an incident" lightbox="../../media/incident-list.png":::
+:::image type="content" source="../../media/incident-list.png" alt-text="The list of alerts for an incident" lightbox="../../media/incident-list.png":::
 
 Here's an example of query-based hunting on top of email and endpoint raw data.
 
-:::image type="content" source="../../media/advanced-hunting.png" alt-text=" The Advanced Hunting page that displays query data" lightbox="../../media/advanced-hunting.png":::
+:::image type="content" source="../../media/advanced-hunting.png" alt-text=" The Advanced Hunting page with query details" lightbox="../../media/advanced-hunting.png":::
 
 Microsoft 365 Defender cross-product features include:
 
@@ -168,11 +168,11 @@ Common controls and content either appear in the same place, or are condensed in
 
 #### Unified settings
 
-:::image type="content" source="../../media/converged-add-role-9.png" alt-text="The Setting page in the Microsoft 365 Defender portal" lightbox="../../media/converged-add-role-9.png":::
+:::image type="content" source="../../media/converged-add-role-9.png" alt-text="The Settings page in the Microsoft 365 Defender portal" lightbox="../../media/converged-add-role-9.png":::
 
 #### Permissions & roles
 
-:::image type="content" source="../../media/converged-roles-5.png" alt-text="The Endpoints roles & groups displayed by the Permissions & roles page" lightbox="../../media/converged-roles-5.png":::
+:::image type="content" source="../../media/converged-roles-5.png" alt-text="The Endpoints roles & groups displayed on the Permissions & roles page" lightbox="../../media/converged-roles-5.png":::
 
 Access to Microsoft 365 Defender is configured with Azure AD global roles or by using custom roles. For Defender for Endpoint, see [Assign user access to the Microsoft 365 Defender portal](/microsoft-365/security/defender-endpoint/assign-portal-access). For Defender for Office 365, see [Permissions in the Microsoft 365 compliance center and Microsoft 365 Defender](../office-365-security/permissions-microsoft-365-compliance-security.md).
 

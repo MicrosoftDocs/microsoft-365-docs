@@ -42,11 +42,11 @@ This incident response walkthrough shows how you, as part of a security operatio
 
 A security incident is defined by National Institute of Standards and Technology (NIST) as "an occurrence that actually or potentially jeopardizes the confidentiality, integrity, or availability of an information system; or the information the system processes, stores, or transmits; or that constitutes a violation or imminent threat of violation of security policies, security procedures, or acceptable use policies."
 
-Incidents in Microsoft 365 Defender are the logical starting points for analysis and incident response. Analyzing and remediating incidents typically makes up most of a security operations team's tasks.
+Incidents in Microsoft 365 Defender are the logical starting points for analysis and incident response. Analyzing and remediating incidents typically makes up most of a  (SecOps) team's tasks and time.
 
 ## Next step
 
-:::image type="content" source="../../media/first-incident-overview/first-incident-path.png" alt-text="Prepare your tenant for incident handling" lightbox="../../media/first-incident-overview/first-incident-path.png":::
+:::image type="content" source="../../media/first-incident-overview/first-incident-path.png" alt-text="The Remediate option in Respond to your first incident page" lightbox="../../media/first-incident-overview/first-incident-path.png":::
 
 Make sure your organization and Microsoft 365 tenant is [prepared for incident handling](first-incident-prepare.md).
 

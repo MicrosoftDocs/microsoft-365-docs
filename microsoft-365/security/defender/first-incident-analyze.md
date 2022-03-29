@@ -60,8 +60,7 @@ Analysts then initiate investigations based on the **Priority** criteria set by 
 
 Incident prioritization might vary depending on the organization. NIST also recommends considering the functional and informational impact of the incident, and recoverability.
 
-
-An approach to triage is described below:
+One approach to triage is described below:
 
 1. Go to the [incidents](incidents-overview.md) page to initiate triage. Here you can see a list of incidents affecting your organization. By default, they are arranged from the most recent to the oldest incident. From here, you can also see different columns for each incident showing their severity, category, number of active alerts, and impacted entities, among others. You can customize the set of columns and sort the incident queue by some of these columns by selecting the column name. You can also filter the incident queue according to your needs. For a full list of available filters, see [Prioritize incidents](incident-queue.md#available-filters).
 
@@ -69,11 +68,11 @@ An approach to triage is described below:
 
     One example of how you might perform triage for this set of incidents is to prioritize incidents that affected more users and devices. In this example, you might prioritize incident ID 6769 because it affected the largest number of entities: seven devices, six users, and two mailboxes. Furthermore, the incident appears to contain alerts from Microsoft Defender for Identity, which indicate an identity-based alert and possible credential theft.
 
-   :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-high-impact.png" alt-text="The Incidents page showing example of a high-impact incident in the Microsoft 365 security portal" lightbox="../../media/first-incident-analyze/first-incident-analyze-high-impact.png":::
+   :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-high-impact.png" alt-text="The Incidents** page showing example of a high-impact incident in the Microsoft 365 security portal" lightbox="../../media/first-incident-analyze/first-incident-analyze-high-impact.png":::
 
 2. Select the circle next to the incident name to review the details. A side pane will appear on the right side, which contains additional information that can assist your triage further.
 
-   :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-incident-flyout.png" alt-text="The Incidents page showing an example of an incident side pane in the Microsoft 365 security portal" lightbox="../../media/first-incident-analyze/first-incident-analyze-incident-flyout.png":::
+   :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-incident-flyout.png" alt-text="The Incidents page showing example of an incident side pane in the Microsoft 365 security portal" lightbox="../../media/first-incident-analyze/first-incident-analyze-incident-flyout.png":::
 
    For example, by looking at which [MITRE ATT&CK](https://attack.mitre.org/) tactics the attacker used based on the incident’s categories, you might prioritize this incident because the attacker used stolen credentials, established command and control, performed lateral movement, and exfiltrated some data. These actions suggest that the attacker has already gone deep into the network and possibly stolen confidential information.
 
@@ -105,13 +104,13 @@ Here's an example:
 
 2. From the **Alerts** tab, you can pivot to the detection source to conduct a more in-depth investigation and analysis. For example, selecting Malware Detection with Microsoft Defender for Cloud Apps as the detection source takes the analyst to its corresponding alert page.
 
-    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-select-alert.png" alt-text="The Incidents page on which you select an alert of an incident." lightbox="../../media/first-incident-analyze/first-incident-analyze-select-alert.png":::
+    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-select-alert.png" alt-text="The Incidents page that shows an example of selecting an alert of an incident." lightbox="../../media/first-incident-analyze/first-incident-analyze-select-alert.png":::
 
     :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-link-to-mcas.png" alt-text="A corresponding page in the Microsoft Defender for Cloud Apps" lightbox="../../media/first-incident-analyze/first-incident-analyze-link-to-mcas.png":::
 
 3. To investigate our example further, scrolling to the bottom of the page to view the **Users affected**. To see the activity and context surrounding the malware detection, select Annette Hill’s user page.
 
-    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-user-page.png" alt-text="The user page" lightbox="../../media/first-incident-analyze/first-incident-analyze-user-page.png":::
+    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-user-page.png" alt-text="A user page" lightbox="../../media/first-incident-analyze/first-incident-analyze-user-page.png":::
 
 4. The user page lists events chronologically, starting with a *Risky Sign-in from a TOR network IP Address* alert. While the suspiciousness of an activity depends on the nature of how an organization conducts its business, in most cases the use of The Onion Router (TOR), a network that allows users to browse the web anonymously, in an enterprise environment might be considered highly unlikely and unnecessary for regular online operations.
 

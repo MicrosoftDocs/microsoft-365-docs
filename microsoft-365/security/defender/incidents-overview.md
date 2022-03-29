@@ -108,7 +108,7 @@ Here's the relationship between an incident and its data and the tabs of an inci
 
 Here's an example workflow for responding to incidents in Microsoft 365 with the Microsoft 365 Defender portal.
 
-:::image type="content" source="../../media/incidents-overview/incidents-example-workflow.png" alt-text="An incident response workflow for Microsoft 365." lightbox="../../media/incidents-overview/incidents-example-workflow.png":::
+:::image type="content" source="../../media/incidents-overview/incidents-example-workflow.png" alt-text="An example of an incident response workflow for the Microsoft 365 Defender portal." lightbox="../../media/incidents-overview/incidents-example-workflow.png":::
 
 On an ongoing basis, identify the highest priority incidents for analysis and resolution in the incident queue and get them ready for response. This is a combination of:
 
@@ -148,7 +148,7 @@ For more information about incident response across Microsoft products, see [thi
 
 Here's an example of security operations (SecOps) for Microsoft 365 Defender.
 
-:::image type="content" source="../../media/incidents-overview/incidents-example-operations.png" alt-text="The security operations in the Microsoft 365 Defender portal." lightbox="../../media/incidents-overview/incidents-example-operations.png":::
+:::image type="content" source="../../media/incidents-overview/incidents-example-operations.png" alt-text="An example of security operations for Microsoft 365 Defender" lightbox="../../media/incidents-overview/incidents-example-operations.png":::
 
 Daily tasks can include:
 

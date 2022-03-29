@@ -39,7 +39,7 @@ Check out this video to see how easy it is to provide feedback.
 
 1. From any part of the portal, select **Give feedback**. 
 
-    :::image type="content" source="../../media/feedback.png" alt-text="The feedback button in the Microsoft 365 Defender portal" lightbox="../../media/feedback.png":::   
+    :::image type="content" source="../../media/feedback.png" alt-text="The incidents in the Microsoft 365 security portal" lightbox="../../media/feedback.png":::   
  
 2. Rate your experience and provide details on what you liked or where improvement can be made. You can also choose to be contacted about the feedback. 
 

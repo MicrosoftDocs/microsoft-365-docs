@@ -61,7 +61,7 @@ Preventing incidents can help streamline security operations efforts to focus on
 
 To check your software patching progress, visit the [Threat and Vulnerability Management](../defender-endpoint/next-gen-threat-and-vuln-mgt.md) page in Defender for Endpoint, which you can access from Microsoft 365 Defender through the **More resources** tab.
 
-:::image type="content" source="../../media/first-incident-prepare/first-incident-vulnerability.png" alt-text="The Threat and Vulnerability page in the Microsoft 365 Defender portal" lightbox="../../media/first-incident-prepare/first-incident-vulnerability.png"::: 
+:::image type="content" source="../../media/first-incident-prepare/first-incident-vulnerability.png" alt-text="The Threat and Vulnerability page in the  Microsoft 365 Defender portal portal" lightbox="../../media/first-incident-prepare/first-incident-vulnerability.png"::: 
  
 ## 4. Understand emerging threats
 

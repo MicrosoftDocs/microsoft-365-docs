@@ -62,7 +62,7 @@ Continuing the example in [Detect, triage, and analyze incidents](first-incident
 7. Create a custom indicator in Microsoft Defender for Endpoint to block a Tor IP address
 8. Create a governance action in Microsoft Defender for Cloud Apps for this type of alert such as those shown in the following image:
 
-   :::image type="content" source="../../media/first-incident-remediate/first-incident-mcas-governance.png" alt-text="The governance actions in the Microsoft Defender for Cloud Apps portal" lightbox="../../media/first-incident-remediate/first-incident-mcas-governance.png":::
+   :::image type="content" source="../../media/first-incident-remediate/first-incident-mcas-governance.png" alt-text="Governance actions in the Microsoft Defender for Cloud Apps portal" lightbox="../../media/first-incident-remediate/first-incident-mcas-governance.png":::
 
 Most of the remediation actions can be applied and tracked in Microsoft 365 Defender.
 
