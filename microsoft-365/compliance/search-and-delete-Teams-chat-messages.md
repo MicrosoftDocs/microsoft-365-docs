@@ -165,8 +165,8 @@ Admins can use the procedures in this article to search and delete Teams chat me
 
 ## End-user experience
 
-For deleted chat messages, users will see an automatically generated message stating "This message was deleted by an admin". 
+For deleted chat messages, users will see an automatically generated message stating "This message was deleted by an admin".
 
 ![View of purged chat message in Teams client.](..\media\TeamsPurgeTombstone.png)
 
-This message replaces the chat message that was deleted.
+This message replaces the chat message that was deleted. If you are an end-user and a chat message was deleted, contact your admin for more information.
