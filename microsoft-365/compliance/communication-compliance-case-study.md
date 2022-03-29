@@ -1,6 +1,7 @@
 ---
 title: "Case study - Contoso quickly configures an inappropriate text policy for Microsoft Teams, Exchange, and Yammer communications"
 description: "A case study for Contoso and how they quickly configure a communication compliance policy to monitor for inappropriate text in Microsoft Teams, Exchange Online, and Yammer communications."
+keywords: Microsoft 365, Microsoft Purview, compliance, communication compliance
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -100,7 +101,7 @@ Contoso decides to use the *Communication Compliance* role group assign all the 
 
 ## Step 2: Accessing communication compliance
 
-After configuring the permissions for communication compliance, Contoso IT administrators and compliance specialists assigned to the Communication Compliance role group can access the communication compliance solution in Microsoft 365. Contoso IT administrators and compliance specialists have several ways to access communication compliance and get started creating a new policy:
+After configuring the permissions for communication compliance, Contoso IT administrators and compliance specialists assigned to the Communication Compliance role group can access the communication compliance solution in Microsoft Purview. Contoso IT administrators and compliance specialists have several ways to access communication compliance and get started creating a new policy:
 
 - Starting directly from the communication compliance solution
 - Starting from the Microsoft Purview portal

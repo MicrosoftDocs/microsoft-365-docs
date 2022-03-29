@@ -1,7 +1,7 @@
 ---
 title: Insider risk management
 description: Learn how to configure insider risk management.
-keywords: Microsoft 365, insider risk, compliance
+keywords: Microsoft 365, Microsoft Purview, insider risk, risk management, compliance
 ms.localizationpriority: medium
 ms.service: O365-seccomp
 ms.topic: article
@@ -41,7 +41,7 @@ Use the following steps to configure insider risk management for your organizati
 
 ![Insider risk solution insider risk management steps.](../media/ir-solution-ir-steps.png)
 
-1. Learn about [insider risk management](insider-risk-management.md) in Microsoft 365
+1. Learn about [insider risk management](insider-risk-management.md)
 2. Plan for [insider risk management and verify licensing](insider-risk-management-plan.md)
 3. Configure [insider risk management settings](insider-risk-management-settings.md)
 4. Configure [permissions](insider-risk-management-configure.md#step-1-required-enable-permissions-for-insider-risk-management) and [policy prerequisites & connectors](insider-risk-management-configure.md#step-4-recommended-configure-prerequisites-for-policies)

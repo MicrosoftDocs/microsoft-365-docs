@@ -1,6 +1,7 @@
 ---
 title: "Detect channel signals with communication compliance"
 description: "Learn more about detecting channel signals with communication compliance."
+keywords: Microsoft 365, Microsoft Purview, compliance, communication compliance
 f1.keywords:
 - NOCSH
 ms.author: robmazz

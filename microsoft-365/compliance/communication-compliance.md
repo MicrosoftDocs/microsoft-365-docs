@@ -1,6 +1,7 @@
 ---
 title: "Learn about communication compliance"
 description: "Learn about communication compliance in Microsoft Purview"
+keywords: Microsoft 365, Microsoft Purview, compliance, communication compliance
 f1.keywords:
 - NOCSH
 ms.author: robmazz

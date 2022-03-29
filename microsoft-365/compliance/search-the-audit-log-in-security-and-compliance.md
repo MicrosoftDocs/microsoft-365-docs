@@ -1057,7 +1057,7 @@ The following table lists the activities in MyAnalytics that are logged in the M
 
 ### Information barriers activities
 
-The following table lists the activities in information barriers that are logged in the Microsoft 365 audit log. For more information about information barriers, see [Learn about information barriers in Microsoft 365](information-barriers.md).
+The following table lists the activities in information barriers that are logged in the Microsoft 365 audit log. For more information about information barriers, see [Learn about information barriers](information-barriers.md).
 
 |**Friendly name**|**Operation**|**Description**|
 |:----------------|:------------|:--------------|
