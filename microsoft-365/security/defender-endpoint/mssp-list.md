@@ -53,6 +53,7 @@ Logo |Partner name   | Description
 ![Image of White Shark Managed Security Services.](images/white-shark.png)| [White Shark Managed Security Services](https://go.microsoft.com/fwlink/?linkid=2154210) |True expert approach to cyber security with transparent pricing on every platform, mobile included.
 ![Image of Wortell's cloud SOC logo.](images/wortell-logo.png)| [Wortell's cloud SOC](https://go.microsoft.com/fwlink/?linkid=2108415) | 24x7 managed Defender for Endpoint service for monitoring & response
 ![Image of Zero Trust Analytics Platform (ZTAP) logo.](images/ztap-logo.png)| [Zero Trust Analytics Platform (ZTAP)](https://go.microsoft.com/fwlink/?linkid=2090971) | Reduce your alerts by 99% and access a full range of security capabilities from mobile devices
+:::image type="content" source="images/bt-logo.png" alt-text="!Image of BT logo.":::|[Managed Endpoint Microsoft from BT](https://www.globalservices.bt.com/en/solutions/solution/endpoint-security-and-protection-solutions)| We have been defending ourselves for many years, this expertise has allowed us to develop unique tradecraft which we use to protect Microsoft customers. We will provide 24x7x365 monitoring of your Microsoft Defender for Endpoint estate in our global security operation centers.
 
 ## Related topics
 - [Configure managed service security provider integration](configure-mssp-support.md)
