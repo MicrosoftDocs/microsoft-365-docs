@@ -33,8 +33,7 @@ Groups that are actively in use are renewed automatically. Any of the following 
 - SharePoint - view, edit, download, move, share, or upload files. (Viewing a SharePoint page does not count as an action for automatic renewal.)
 - Outlook - join group, read or write group message from the group, and like a message (Outlook on the web).
 - Teams - visiting a teams channel.
-
-Note that the only Yammer activity that will trigger an automatic group renewal is the upload of a document to SharePoint within the community.
+- Yammer - upload of a document to SharePoint within the community or view of a post within a Yammer community or an interactive email in Outlook.
 
 > [!IMPORTANT]
 > When you change the expiration policy, the service recalculates the expiration date for each group. It always starts counting from the date when the group was created, and then applies the new expiration policy.
