@@ -91,38 +91,38 @@ The following table describes scenarios for Safe Links in Microsoft 365 and Offi
 
 Safe Links scans incoming email for known malicious hyperlinks. Scanned URLs are rewritten using the Microsoft standard URL prefix: `https://nam01.safelinks.protection.outlook.com`. After the link is rewritten, it's analyzed for potentially malicious content.
 
-After Safe Links rewrites a URL, the URL remains rewritten even if the message is *manually* forwarded or replied to (both to internal and external recipients). Additional links that are added to the forwarded or replied-to message are not rewritten. However, in the case of *automatic* forwarding by Inbox rules or SMTP forwarding, the URL will not be rewritten in the message that's intended for the final recipient *unless* that recipient is also protected by Safe Links, or the URL had already been rewritten in a previous communication. As long as Safe Links is enabled, URLs are still scanned prior to delivery, regardless of whether they were rewritten or not. Unwrapped URLs will also still be checked by a client-side API call to Safe Links at the time of click in Outlook for Desktop version 16.0.12513 or later.
+After Safe Links rewrites a URL, the URL remains rewritten even if the message is _manually_ forwarded or replied to (both to internal and external recipients). Additional links that are added to the forwarded or replied-to message are not rewritten. However, in the case of _automatic_ forwarding by Inbox rules or SMTP forwarding, the URL will not be rewritten in the message that's intended for the final recipient _unless_ that recipient is also protected by Safe Links, or the URL had already been rewritten in a previous communication. As long as Safe Links is enabled, URLs are still scanned prior to delivery, regardless of whether they were rewritten or not. Unwrapped URLs will also still be checked by a client-side API call to Safe Links at the time of click in Outlook for Desktop version 16.0.12513 or later.
 
 The settings in Safe Links policies that apply to email messages are described in the following list:
 
-- **Select the action for unknown potentially malicious URLs in messages**: Enables or disables Safe Links scanning in email messages. The recommended value is **On**. Turning on this setting results in the following actions.
-
+- **On: Safe Links checks a list of known, malicious links when users click links in email**: Enables or disables Safe Links scanning in email messages. The recommended value is selected (on), and results in the following actions:
   - Safe Links scanning is enabled in Outlook (C2R) on Windows.
   - URLs are rewritten and users are routed through Safe Links protection when they click URLs in messages.
   - When clicked, URLs are checked against a list of known malicious URLs and the ["Block the following URLs" list](#block-the-following-urls-list-for-safe-links).
   - URLs that don't have a valid reputation are detonated asynchronously in the background.
 
-- **Apply real-time URL scanning for suspicious links and links that point to files**: Enables real-time scanning of links, including links in email messages that point to downloadable content. The recommended value is enabled.
+  The following settings are available only if Safe Links scanning is on in email messages:
+
+  - **Apply Safe Links to email messages sent within the organization**: Enables or disables Safe Links scanning on messages sent between internal senders and internal recipients within the same Exchange Online organization. The recommended value is selected (on).
+
+  - **Apply real-time URL scanning for suspicious links and links that point to files**: Enables real-time scanning of links, including links in email messages that point to downloadable content. The recommended value is selected (on).
+
   - **Wait for URL scanning to complete before delivering the message**:
-    - Enabled: Messages that contain URLs are held until scanning is finished. Messages are delivered only after the URLs are confirmed to be safe. This is the recommended value.
-    - Disabled: If URL scanning can't complete, deliver the message anyway.
+    - Selected (on): Messages that contain URLs are held until scanning is finished. Messages are delivered only after the URLs are confirmed to be safe. This is the recommended value.
+    - Not selected (off): If URL scanning can't complete, deliver the message anyway.
 
-- **Apply Safe Links to email messages sent within the organization**: Enables or disables Safe Links scanning on messages sent between internal senders and internal recipients within the same Exchange Online organization. The recommended value is enabled.
+  - **Do not rewrite URLs, do checks via SafeLinks API only**: If this setting is enabled, no URL wrapping takes place. Safe Links is called exclusively via APIs at the time of URL click by Outlook clients that support it. The recommend value is disabled.
 
-- **Do not track user clicks**: Enables or disables storing Safe Links click data for URLs clicked in email messages. The recommend value is to leave this setting unselected (to track user clicks).
+- **Track user clicks**: Enables or disables storing Safe Links click data for URLs clicked in email messages. The recommend value is to leave this setting selected (track user clicks).
 
   URL click tracking for links in email messages sent between internal senders and internal recipients is currently not supported.
 
-- **Do not allow users to click through to original URL**: Allows or blocks users from clicking through the [warning page](#warning-pages-from-safe-links) to the original URL. The recommend value is enabled.
+- **Let users click through to the original URL**: Allows or blocks users from clicking through the [warning page](#warning-pages-from-safe-links) to the original URL. The recommend value is disabled.
 
 - **Display the organization branding on notification and warning pages**: This option shows your organization's branding on warning pages. Branding helps users identify legitimate warnings, because default Microsoft warning pages are often used by attackers. For more information about customized branding, see [Customize the Microsoft 365 theme for your organization](../../admin/setup/customize-your-organization-theme.md).
 
-- **Do not rewrite the following URLs**: Leaves URLs as they are. Keeps a custom list of safe URLs that don't need scanning. The list is unique for each Safe Links policy. For more information about the **Do not rewrite the following URLs** list, see the ["Do not rewrite the following URLs" lists in Safe Links policies](#do-not-rewrite-the-following-urls-lists-in-safe-links-policies) section later in this article.
-
   For more information about the recommended values for Standard and Strict policy settings for Safe Links policies, see [Safe Links policy settings](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings).
 
-- **Do not rewrite URLs, do checks via SafeLinks API only**: If this setting is enabled, no URL wrapping takes place. Safe Links is called exclusively via APIs at the time of URL click by Outlook clients that support it. The recommend value is disabled.
-  
 - **Recipient filters**: You need to specify the recipient conditions and exceptions that determine who the policy applies to. You can use these properties for conditions and exceptions:
   - **The recipient is**
   - **The recipient domain is**
