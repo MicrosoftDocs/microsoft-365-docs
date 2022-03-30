@@ -130,11 +130,11 @@ The last step is to create an Instant Bloomberg connector in the Microsoft 365 c
 
     - **SFTP port:** The port number for Bloomberg SFTP site. The connector uses this port to connect to the SFTP site.
 
-5. On the **Define user** page, select one of the following options to specify which users whose Instant Bloomberg data you want to import.
+5. On the **Define user** page, select one of the following options to specify the users whose data you want to import.
 
-    - **All users in your organziation**: Select this option to import data for all users.
+    - **All users in your organization**. Select this option to import data for all users.
 
-    - **Only users on Litigation hold**: Select this option to import data only for users whose mailboxes are placed on Litigation hold. This option imports data to user mailboxes that have the LitigationHoldEnabled property set to True. For more information, see [Create a Litigation hold](create-a-litigation-hold.md).
+    - **Only users on Litigation hold**. Select this option to import data only for users whose mailboxes are placed on Litigation hold. This option imports data to user mailboxes that have the LitigationHoldEnabled property set to True. For more information, see [Create a Litigation hold](create-a-litigation-hold.md).
 
 6. On the **Select data types to import** page, select the required data types to be imported apart from **Messages**
 
@@ -216,11 +216,11 @@ After your Bloomberg SFTP site is configured, the next step is to create an Inst
 
 7. After the connection is successfully validated, click **Next**.
 
-8. On the **Define user** page, select one of the following options to specify which users whose Instant Bloomberg data you want to import.
+8. On the **Define user** page, select one of the following options to specify the users whose data you want to import.
 
-    - **All users in your organziation**: Select this option to import data for all users.
+    - **All users in your organization**. Select this option to import data for all users.
 
-    - **Only users on Litigation hold**: Select this option to import data only for users whose mailboxes are placed on Litigation hold. This option imports data to user mailboxes that have the LitigationHoldEnabled property set to True. For more information, see [Create a Litigation hold](create-a-litigation-hold.md).
+    - **Only users on Litigation hold**. Select this option to import data only for users whose mailboxes are placed on Litigation hold. This option imports data to user mailboxes that have the LitigationHoldEnabled property set to True. For more information, see [Create a Litigation hold](create-a-litigation-hold.md).
 
 9. On the **Map Instant Bloomberg users to Microsoft 365 users** page, enable automatic user mapping and provide custom user mapping as required.
 
