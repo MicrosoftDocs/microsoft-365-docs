@@ -35,7 +35,7 @@ The following table lists the recommended GDAP roles for some example MSP servic
 
 || Account Managers| Service Desk Technician |System Administrators | Escalation Engineers|
 |---|---|---|---|---|
-| **Recommended GDAP roles** | Helpdesk Administrator |<ul><li>Security Reader<br>+</li><li>Helpdesk Administrator</li></ul> |<ul><li>Global Reader<br>+</li><li>User Administrator<br>+</li><li>Authentication Administrator</li></ul> |<ul><li>Global Reader<br>+</li><li>User Administrator<br>+</li><li>Intune Administrator<br>+</li><li>Security Administrator</li></ul>|
+| **Recommended GDAP roles** |<ul><li>Helpdesk Administrator</li></ul> |<ul><li>Security Reader<br>+</li><li>Helpdesk Administrator</li></ul> |<ul><li>Global Reader<br>+</li><li>User Administrator<br>+</li><li>Authentication Administrator</li></ul> |<ul><li>Global Reader<br>+</li><li>User Administrator<br>+</li><li>Intune Administrator<br>+</li><li>Security Administrator</li></ul>|
 |**Lighthouse&nbsp;page** <br> |||||
 |**Home**  | <ul><li>View all data</li></ul> | <ul><li>View all data</li></ul> | <ul><li>View all data</li></ul> | <ul><li>View all data</li></ul> | 
 |**Tenants**     | <ul><li>View tenants list</li><li>Update customer contacts and website</li><li>View deployment plans</li></ul>  | <ul><li>View tenants list</li><li>Update customer contacts and website</li><li>View deployment plans</li></ul>   |  <ul><li>View tenants list</li><li>Update customer contacts and website</li><li>View deployment plans</li><li>View Microsoft 365 services usage</li></ul> | <ul><li>View tenants list</li><li>Update customer contacts and website</li><li>View deployment plans</li><li>View Microsoft 365 services usage</li></ul>  |
