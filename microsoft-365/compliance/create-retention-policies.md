@@ -22,6 +22,8 @@ description: "Use a retention policy to efficiently keep control of the content 
 
 # Create and configure retention policies
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Use a retention policy to manage the data for your organization by deciding proactively whether to retain content, delete content, or retain and then delete the content.

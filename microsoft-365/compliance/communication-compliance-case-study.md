@@ -28,6 +28,8 @@ search.appverid:
 
 # Case study - Contoso quickly configures an inappropriate text policy for Microsoft Teams, Exchange, and Yammer communications
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Microsoft Purview Communication Compliance helps minimize communication risks by helping you detect, capture, and act on messages with inappropriate text in your organization. inappropriate text may include profanity, threats, harassment, and inappropriate images. Pre-defined and custom policies allow you to scan internal and external communications for policy matches so they can be examined by designated reviewers. Reviewers can investigate scanned email, Microsoft Teams, Yammer, or third-party communications in your organization and take appropriate remediation actions to make sure they're compliant with your organization's message standards.
 
 The Contoso Corporation is a fictional organization that needs to quickly configure a policy to monitor for inappropriate text. They have been using Microsoft 365 primarily for email, Microsoft Teams, and Yammer support for their users but have new requirements to enforce company policy around workplace harassment. Contoso IT administrators and compliance specialists have a basic understanding of the fundamentals of working with Microsoft 365 and are looking for end-to-end guidance for how to quickly get started with communication compliance.

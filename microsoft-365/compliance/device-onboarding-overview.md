@@ -23,6 +23,8 @@ description: "Onboard Windows 10 and Windows 11 devices into Microsoft 365"
 
 # Onboard Windows 10 and Windows 11 devices into Microsoft 365 overview
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 **Applies to:**
 
 - [Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)

@@ -23,6 +23,8 @@ description: Once you've finished setting up Office 365 Message Encryption (OME)
 
 # Manage Office 365 Message Encryption
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Once you've finished setting up Office 365 Message Encryption (OME), you can customize the configuration of your deployment in several ways. For example, you can configure whether to enable one-time pass codes, display the **Encrypt** button in Outlook on the web, and more. The tasks in this article describe how.
 
 ## Manage whether Google, Yahoo, and Microsoft Account recipients can use these accounts to sign in to the Office 365 Message Encryption portal

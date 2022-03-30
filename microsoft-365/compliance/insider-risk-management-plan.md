@@ -17,6 +17,8 @@ ms.custom: admindeeplinkCOMPLIANCE
 
 # Plan for insider risk management
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Before getting started with [insider risk management](insider-risk-management.md) in your organization, there are important planning activities and considerations that should be reviewed by your information technology and compliance management teams. Thoroughly understanding and planning for deployment in the following areas will help ensure that your implementation and use of insider risk management features goes smoothly and is aligned with the best practices for the solution.
 
 Watch the video below to learn how the insider risk management workflow can help your organization prevent, detect, and contain risks while prioritizing your organization values, culture, and user experience:

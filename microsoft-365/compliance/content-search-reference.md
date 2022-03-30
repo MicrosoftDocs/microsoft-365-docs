@@ -25,6 +25,8 @@ description: "This article contains reference information about the Content sear
 
 # Feature reference for Content search
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 This article describes features and functionality of Content search.
 
 ## Content search limits

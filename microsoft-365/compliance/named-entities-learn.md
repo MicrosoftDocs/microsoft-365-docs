@@ -20,6 +20,8 @@ description: "Learn how named entities help you detect sensitive items containin
 
 # Learn about named entities (preview)
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 > [!IMPORTANT]
 > The named entities feature is rolling out and will appear in your tenant when it is available to you. Check for them in content explorer and in the data loss prevention (DLP) policy authoring flow. 
 

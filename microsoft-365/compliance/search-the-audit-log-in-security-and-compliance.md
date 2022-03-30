@@ -25,6 +25,8 @@ ms.custom:
 
 # Search the audit log in the compliance center
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Need to find if a user viewed a specific document or purged an item from their mailbox? If so, you can use the audit log search tool in Microsoft Purview portal to search the unified audit log to view user and administrator activity in your organization. Thousands of user and admin operations performed in dozens of Microsoft 365 services and solutions are captured, recorded, and retained in your organization's unified audit log. Users in your organization can use the audit log search tool to search for, view, and export (to a CSV file) the audit records for these operations.
 
 ## Microsoft 365 services that support auditing

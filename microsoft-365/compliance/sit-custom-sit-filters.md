@@ -19,6 +19,8 @@ description: "This article presents a list of the filters that can be encoded in
 
 # Custom sensitive information type filters reference
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 In Microsoft you can define filters or other checks while creating a custom sensitive information types (SIT).
 
 ## List of supported filters and use cases

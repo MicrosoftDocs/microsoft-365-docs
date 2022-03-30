@@ -21,6 +21,8 @@ description: Learn how to access and use the Microsoft Service Trust Portal to h
 
 # Get started with the Microsoft Service Trust Portal
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 The Microsoft Service Trust Portal provides a variety of content, tools, and other resources about Microsoft security, privacy, and compliance practices.
 
 ## Accessing the Service Trust Portal

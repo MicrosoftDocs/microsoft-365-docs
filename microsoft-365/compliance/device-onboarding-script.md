@@ -21,6 +21,8 @@ description: Use a local script to deploy the configuration package on devices s
 
 # Onboard Windows 10 and Windows 11 devices using a local script
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 **Applies to:**
 
 - [Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)

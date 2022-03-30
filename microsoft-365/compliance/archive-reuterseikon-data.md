@@ -16,6 +16,8 @@ description: "Admins can set up a connector to import and archive Reuters Eikon 
 
 # Set up a connector to archive Reuters Eikon data
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Use a Veritas connector in the Microsoft Purview portal to import and archive data from the Reuters Eikon platform to user mailboxes in your Microsoft 365 organization. Veritas provides a [Reuters Eikon](https://globanet.com/eikon/) connector that is configured to capture items from the third-party data source (on a regular basis) and import those items to Microsoft 365. The connector converts the content such as person-to-person messages, group chats, attachments, and disclaimers from a user's Reuters Eikon account to an email message format and then imports those items to the user's mailbox in Microsoft 365.
 
 After Reuters Eikon data is stored in user mailboxes, you can apply Microsoft Purview features such as Litigation Hold, eDiscovery, retention policies and retention labels, and communication compliance. Using a Reuters Eikon connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.

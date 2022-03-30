@@ -23,6 +23,8 @@ description: "Learn the basic steps to creating a keyword dictionary in the Offi
 
 # Create a keyword dictionary
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Microsoft Purview Data Loss Prevention (DLP) can identify, monitor, and protect your sensitive items. Identifying sensitive items sometimes requires looking for keywords, particularly when identifying generic content (such as healthcare-related communication), or inappropriate or explicit language. Although you can create keyword lists in sensitive information types, keyword lists are limited in size and require modifying XML to create or edit them. Keyword dictionaries provide simpler management of keywords and at a much larger scale, supporting up to 1 MB of terms (post compression) in the dictionary and support any language. The tenant limit is also 1 MB after compression. 1 MB of post compression limit means that all dictionaries combined across a tenant can have close to 1 million characters.
 
 ## Keyword dictionary limits
@@ -75,7 +77,9 @@ The keywords for your dictionary could come from various sources, most commonly 
 
 3. **Create your dictionary**. Choose a name and description and create your dictionary.
 
-## Create a keyword dictionary using the Security & Compliance Center
+## Create a keyword dictionary
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)] using the Security & Compliance Center
 
 Use the following steps to create and import keywords for a custom dictionary:
 
@@ -103,7 +107,9 @@ Use the following steps to create and import keywords for a custom dictionary:
 
 12. Review and finalize your sensitive info type selections, then select **Finish**.
 
-## Create a keyword dictionary from a file using PowerShell
+## Create a keyword dictionary
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)] from a file using PowerShell
 
 Often when you need to create a large dictionary, it's to use keywords from a file or a list exported from some other source. In this case, you'll create a keyword dictionary containing a list of inappropriate language to screen in external email. You must first [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
 

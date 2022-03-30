@@ -17,6 +17,8 @@ ms.custom: admindeeplinkCOMPLIANCE
 
 # Investigate insider risk management activities
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Investigating risky user activities is an important first step in minimizing insider risks for your organization. These risks may be activities that generate alerts from insider risk management policies, or risks from activities that are detected by policies but don't immediately create an insider risk management alert for users. You can investigate these types of activities by using the **User activity reports (preview)** or with the **Alert dashboard**.
 
 ## User activity reports (preview)

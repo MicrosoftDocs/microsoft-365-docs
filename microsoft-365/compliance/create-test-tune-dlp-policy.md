@@ -23,6 +23,8 @@ description: In this article, you'll learn how to create, test, and tune a DLP p
 
 # Create, test, and tune a DLP policy
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Microsoft Purview Data Loss Prevention (DLP) helps you prevent the unintentional or accidental sharing of sensitive information.
 
 DLP examines email messages and files for sensitive information, like a credit card number. Using DLP you can detect sensitive information, and take action such as:

@@ -23,6 +23,8 @@ description: "Learn how to use the data loss prevention on premises scanner to s
 
 # Use the data loss prevention on-premises scanner
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 To help familiarize you with Microsoft Purview Data Loss Prevention on-premises features and how they surface in DLP policies, we've put together some scenarios for you to follow.
 
 > [!IMPORTANT]

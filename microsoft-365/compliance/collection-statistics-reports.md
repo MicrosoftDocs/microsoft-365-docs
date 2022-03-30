@@ -20,6 +20,8 @@ description: "Learn how to access and use statistics and reports for draft colle
 
 # Collection statistics and reports in Advanced eDiscovery
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 After you create a draft collection, you can view statistics on the retrieved items, such as the content locations that contain the most items that matched the search criteria and the number of items returned by the search query. You can also preview a subset of the results.
 
 When you've identified the set of documents you want to further examine, you can add the search results to a review set to collect and process.

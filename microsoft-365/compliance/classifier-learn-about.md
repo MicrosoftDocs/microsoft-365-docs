@@ -23,6 +23,8 @@ description: "Trainable classifiers can recognize various types of content for l
 
 # Learn about trainable classifiers
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Classifying and labeling content so it can be protected and handled properly is the starting place for the information protection discipline. Microsoft 365 has three ways to classify content.
 
 ## Manually

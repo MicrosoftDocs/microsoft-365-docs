@@ -21,6 +21,8 @@ ms.custom: seo-marvel-apr2020
 
 # Search for eDiscovery activities in the audit log
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Content Search and eDiscovery-related activities (for Core eDiscovery and Advanced eDiscovery) that are performed in Microsoft Purview portal or by running the corresponding PowerShell cmdlets are logged in the audit log. Events are logged when administrators or eDiscovery managers (or any user assigned eDiscovery permissions) perform the following Content Search and Core eDiscovery tasks in the Microsoft Purview portal:
   
 - Creating and managing Core and Advanced eDiscovery cases

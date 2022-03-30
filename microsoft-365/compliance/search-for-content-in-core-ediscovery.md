@@ -21,6 +21,8 @@ description: "Search for content that may be relevant to a Core eDiscovery case.
 
 # Search for content in a Core eDiscovery case
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 After a Core eDiscovery case is created and people of interest in the case are placed on hold, you can create and run one or more searches for content relevant to the case. Searches associated with a Core eDiscovery case aren't listed on the **Content search** page in the Microsoft Purview portal. These searches are listed on the **Searches** page of the Core eDiscover case the searches are associated with. This also means that searches associated with a case can only be accessed by case members.
 
 To create a Core eDiscovery search:

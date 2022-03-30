@@ -20,6 +20,8 @@ ms.collection:
 
 # Microsoft Purview insider risk solutions
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Insider risks are one of the top concerns of security and compliance professionals in the modern workplace. Industry studies have shown that insider risks are often associated with specific user events or activities. Protecting your organization against these risks can be challenging to identify and difficult to mitigate. Insider risks include vulnerabilities in a variety of areas and can cause major problems for your organization, ranging from the loss of intellectual property to workplace harassment, and more. The following figure outlines common insider risks:
 
 ![Insider risk threats.](../media/ir-solution-threats.png)

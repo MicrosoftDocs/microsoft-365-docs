@@ -26,6 +26,8 @@ ms.custom: seo-marvel-apr2020
 
 # Export Content search results
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 After a Content search is successfully run, you can export the search results to a local computer. When you export email results, they're downloaded to your computer as PST files. When you export content from SharePoint and OneDrive for Business sites, copies of native Office documents are exported. There are other documents and reports included with the exported search results.
   
 Exporting the results of a Content search involves preparing the results, and then downloading them to a local computer. These steps for exporting search results also apply to exporting the results of a search that's associated with Core eDiscovery cases.

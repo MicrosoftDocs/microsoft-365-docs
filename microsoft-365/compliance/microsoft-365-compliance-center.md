@@ -18,6 +18,8 @@ ms.custom:
 
 # Microsoft Purview portal
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 If you're interested in your organization's compliance posture, you're going to love the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview portal</a>. The Microsoft Purview portal provides easy access to the data and tools you need to manage to your organization's compliance needs.
 
 Read this article to get acquainted with the Microsoft Purview portal, [how to get it](#how-do-i-get-the-compliance-center), [frequently asked questions](#frequently-asked-questions), and your [next steps](#next-steps).

@@ -22,6 +22,8 @@ description: "Understand how to extend assessment templates in Microsoft Purview
 
 # Extend assessment templates in Microsoft Purview Compliance Manager
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Compliance Manager offers the option to add your own controls and improvement actions to an existing template. This process is called extending a template.
 
 To extend a template, you will use special instructions for modifying template data, depending on whether you’re extending Microsoft assessment templates or universal assessment templates.

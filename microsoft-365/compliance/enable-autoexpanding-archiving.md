@@ -23,6 +23,8 @@ ms.custom: seo-marvel-apr2020
 
 # Enable auto-expanding archiving
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 You can use the Exchange Online auto-expanding archiving feature to enable additional storage space for archive mailboxes. When auto-expanding archiving is turned on, additional storage space is automatically added to a user's archive mailbox until it reaches the storage limit of 1.5 TB. You can turn on auto-expanding archiving for everyone in your organization or just for specific users. For more information about auto-expanding archiving, see [Learn about auto-expanding archiving](autoexpanding-archiving.md).
 
 ## Before you enable auto-expanding archiving
@@ -43,7 +45,9 @@ You can use the Exchange Online auto-expanding archiving feature to enable addit
 
 - You can't use the Exchange admin center or the Microsoft Purview portal to enable auto-expanding archiving. You have to use Exchange Online PowerShell. To connect to your Exchange Online organization using remote PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-## Enable auto-expanding archiving for your entire organization
+## Enable auto-expanding archiving
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)] for your entire organization
 
 You can enable auto-expanding archiving for your entire organization. After you turn it on, auto-expanding archiving will be enabled for existing user mailboxes and for new user mailboxes that are created. When you create user mailboxes, be sure to enable the user's main archive mailbox so the auto-expanding archiving feature works for the new user mailbox.
   
@@ -55,7 +59,9 @@ You can enable auto-expanding archiving for your entire organization. After you 
     Set-OrganizationConfig -AutoExpandingArchive
     ```
 
-## Enable auto-expanding archiving for specific users
+## Enable auto-expanding archiving
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)] for specific users
 
 Instead of enabling auto-expanding archiving for every user in your organization, you can enable it only for specific users. You might do this because only some users might have a need for a large archive storage capacity.
   

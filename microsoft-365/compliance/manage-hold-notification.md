@@ -21,6 +21,8 @@ description: "Use the communications workflow in Advanced eDiscovery to track th
 
 # Manage hold notifications
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 After you have initiated your legal hold notification workflow, you can use the communications workflow in Advanced eDiscovery to track the status of your communications. The Communications tab contains a list of all notifications within your Advanced eDiscovery case. You can see details such as the number of custodians that have been assigned or have acknowledged the notice.
 
 ## Monitor acknowledgments

@@ -20,6 +20,8 @@ description: Use Configuration Manager to deploy the configuration package on de
 
 # Onboard Windows 10 and Windows 11 devices using Configuration Manager
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 **Applies to:**
 
 - [Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)

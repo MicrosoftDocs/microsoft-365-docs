@@ -17,6 +17,8 @@ f1.keywords:
 
 # Manage information barrier policies
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 After you have [defined information barrier policies](information-barriers-policies.md), you may need to make changes to those policies or to your user segments, as part of [troubleshooting](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting) or as regular maintenance.
 
 ## What do you want to do?

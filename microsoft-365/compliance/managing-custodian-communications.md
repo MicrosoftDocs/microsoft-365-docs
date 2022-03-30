@@ -21,6 +21,8 @@ description: "Advanced eDiscovery makes it easy to manage the legal hold notific
 
 # Work with communications in Advanced eDiscovery
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Advanced eDiscovery allows legal departments to simplify their processes around tracking and distributing legal hold notifications. The custodian communications tool enables legal departments to manage and automate the entire legal hold process, from initial notifications, to reminders, and to escalations, all in one location.
 
 ## What is a legal hold notification?

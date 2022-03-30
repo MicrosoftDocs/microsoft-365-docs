@@ -23,6 +23,8 @@ description: "Learn how to identify the different types of hold that can be plac
 
 # How to identify the type of hold placed on an Exchange Online mailbox
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 This article explains how to identify holds placed on Exchange Online mailboxes in Microsoft 365.
 
 Microsoft 365 offers several ways that your organization can prevent mailbox content from being permanently deleted. This allows your organization to retain content to meet compliance regulations or during legal and other types of investigations. Here's a list of the retention features (also called *holds*) in Office 365:

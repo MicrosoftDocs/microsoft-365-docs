@@ -16,6 +16,8 @@ description: "After you set up Customer Key, learn how to manage it by restoring
 
 # Manage Customer Key
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 After you've set up Customer Key for Office 365, you'll need to create and assign one or more data encryption policies (DEP). Once you've assigned your DEPs, you can manage your keys as described in this article. Learn more about Customer Key in the related topics.
 
 ## Create a DEP for use with multiple workloads for all tenant users

@@ -19,6 +19,8 @@ description: "Microsoft Purview solutions trial playbook."
 
 # Trial playbook: Microsoft Purview solutions
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Welcome to the Microsoft Purview solutions trial playbook. This playbook will help you make the most of your 90-day free trial by helping you discover robust and comprehensive capabilities of Microsoft Purview and security products.
 
 Trying each solution will help you make informed decisions to meet your organization’s compliance needs.

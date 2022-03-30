@@ -27,6 +27,8 @@ description: Learn how Office 365 global administrators can apply your organizat
 
 # Add your organization's brand to your Microsoft 365 for business Message Encryption encrypted messages
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 You can apply your company branding to customize the look of your organization's email messages and the encryption portal. You'll need to apply global administrator permissions to your work or school account before you can get started. Once you have these permissions, use the Get-OMEConfiguration and Set-OMEConfiguration Windows PowerShell cmdlets to customize these parts of encrypted email messages:
 
 - Introductory text

@@ -1,6 +1,8 @@
 ---
 # required metadata
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 title: Double Key Encryption overview and FAQ
 description: Frequently asked questions about Double Key Encryption for Microsoft 365.
 author: kccross

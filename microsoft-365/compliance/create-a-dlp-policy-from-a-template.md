@@ -24,6 +24,8 @@ description: In this article, you'll learn about how to create DLP policies usin
 
 # Create a DLP policy from a template
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 The easiest, most common way to get started with DLP policies is to use one of the templates included in the Microsoft Purview portal. You can use one of these templates as is, or customize the rules to meet your organization's specific compliance requirements.
 
 Microsoft 365 includes over 40 ready-to-use templates that can help you meet a wide range of common regulatory and business policy needs. See; [Policy templates](dlp-policy-reference.md#policy-templates) for a complete list. 

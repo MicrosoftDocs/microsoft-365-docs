@@ -24,6 +24,8 @@ search.appverid:
 
 # Investigate and remediate communication compliance alerts
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 After you've configured your communication compliance policies, you'll start to receive alerts in the Microsoft Purview portal for message issues that match your policy conditions. Follow the workflow instructions here to investigate and remediate alert issues.
 
 ## Investigate alerts

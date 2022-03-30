@@ -22,6 +22,8 @@ description: "Understand how to modify assessment templates in Microsoft Purview
 
 # Modify assessment templates in Microsoft Purview Compliance Manager
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 When working with assessments in Compliance Manager, you may want to modify an assessment template that you’ve created. The process is similar to the [template creation](compliance-manager-templates-create.md) process in that you’ll upload a formatted Excel file with your template data.
 
 However, there are details to be aware of as you format your file with changes to existing template data. **We recommend you review these instructions carefully to ensure you don’t overwrite any existing data that you want to retain.**

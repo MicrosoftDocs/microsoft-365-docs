@@ -25,6 +25,8 @@ description: "Learn about unindexed items in Exchange and SharePoint that you ca
 
 # Partially indexed items in eDiscovery
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 An eDiscovery search that you run from the Microsoft Purview portal automatically includes partially indexed items in the estimated search results when you run a search. Partially indexed items are Exchange mailbox items and documents on SharePoint and OneDrive for Business sites that for some reason weren't completely indexed for search. In Exchange, a partially indexed item typically contains a file (of a file type that can't be indexed) that is attached to an email message. Here are some other reasons why items can't be indexed for search and are returned as partially indexed items when you run an eDiscovery search:
   
 - The file type is unrecognized or unsupported for indexing.

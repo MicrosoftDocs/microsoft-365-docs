@@ -23,6 +23,8 @@ description: "Content explorer allows you to natively view labeled items."
 
 # Get started with content explorer
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 The data classification content explorer allows you to natively view the items that were summarized on the overview page.
 
 ![content explorer collapsed screenshot.](../media/data-classification-content-explorer-1.png)

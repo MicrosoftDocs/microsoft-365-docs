@@ -19,6 +19,8 @@ description: "Learn how to modify a custom sensitive information using PowerShel
 
 # Modify a custom sensitive information type using PowerShell
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 In Compliance center PowerShell, modifying a custom sensitive information type requires you to:
 
 1. Export the existing rule package that contains the custom sensitive information type to an XML file (or use the existing XML file if you have it).

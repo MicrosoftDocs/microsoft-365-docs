@@ -23,6 +23,8 @@ description: Ready to start governing your organization's data, but not sure whe
 
 # Get started with information governance
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Ready to start governing your organization's data by retaining the content that you need to keep, and deleting the content that you don't? Use the following guidance to get started:

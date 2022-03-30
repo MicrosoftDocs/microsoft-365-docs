@@ -19,6 +19,8 @@ description: "Administrators can set up a data connector to import employee data
 
 # Set up a connector to import HR data
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 You can set up a data connector in the Microsoft Purview portal to import human resources (HR) data related to events such as a user's resignation or a change in a user's job level. The HR data can then be used by the [insider risk management solution](insider-risk-management.md) to generate risk indicators that can help you identity possible malicious activity or data theft by users inside your organization.
 
 Setting up a connector for HR data that insider risk management policies can use to generate risk indicators consists of creating a CSV file that contains that contains the HR data, creating an app in Azure Active Directory that's used for authentication, creating an HR data connector in the Microsoft Purview portal, and then running a script (on a scheduled basis) that ingests the HR data in CSV files to the Microsoft cloud so it's available to the insider risk management solution.

@@ -18,6 +18,8 @@ description: "Learn how to create a predictive coding model in Advanced eDiscove
 
 # Create a predictive coding model (preview)
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 The first step in using the machine learning capabilities of predictive coding in Advanced eDiscovery is to create a predictive coding model. After you create a model, you can train it identify the relevant and non-relevant content in a review set.
 
 To review the predictive coding workflow, see [Learn about predictive coding in Advanced eDiscovery](predictive-coding-overview.md#the-predictive-coding-workflow)

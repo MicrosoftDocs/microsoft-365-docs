@@ -21,6 +21,8 @@ description: "Configure Advanced eDiscovery settings that apply to all review se
 
 # Configure search and analytics settings in Advanced eDiscovery
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 You can configure settings for each Advanced eDiscovery case to control the following functionality.
 
 - Near duplicates and email threading

@@ -19,6 +19,8 @@ ms.custom: seo-marvel-apr2020
 
 # Compliance score calculation
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 **In this article:** Learn how Compliance Manager calculates a compliance score for your organization. This article explains how to **interpret your score**, what the **Data Protection Baseline assessment** includes, **continuous monitoring**, and **how different types of actions are managed and scored**.
 
 > [!IMPORTANT]

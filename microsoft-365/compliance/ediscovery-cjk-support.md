@@ -20,6 +20,8 @@ description: "Learn how Advanced eDiscovery in Microsoft 365 supports Chinese, J
 
 # CJK language support for Advanced eDiscovery
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Advanced eDiscovery supports double-byte character set languages (these include Simplified Chinese, Traditional Chinese, Japanese, and Korean, which are collectively known as *CJK* languages) for the following advanced scenarios in a review set:
 
 - When you [query the data in a review set](review-set-search.md).

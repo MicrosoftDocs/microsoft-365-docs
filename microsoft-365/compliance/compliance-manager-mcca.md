@@ -21,6 +21,8 @@ description: "Understand how to use Microsoft Compliance Configuration Analyzer 
 
 # Microsoft Compliance Configuration Analyzer for Compliance Manager (preview)
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 **In this article:** Learn how to install and run the Microsoft Compliance Configure Analyzer tool to get quickly started with Microsoft Compliance Manger.
 
 ## Microsoft Compliance Configuration Analyzer (MCCA) (preview) overview

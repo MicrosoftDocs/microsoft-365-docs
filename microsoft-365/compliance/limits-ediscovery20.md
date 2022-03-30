@@ -20,6 +20,8 @@ description: "Learn about the case limits, indexing limits, and search limits in
 
 # Limits in Advanced eDiscovery
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 This article describes the limits in the Advanced eDiscovery solution in Microsoft 365.
 
 ## Case and review set limits

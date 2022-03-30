@@ -21,6 +21,8 @@ description: Use data loss prevention (DLP) in SharePoint Online to discover doc
 
 # Form a query to find sensitive data stored on sites
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Users often store sensitive data, such as credit card numbers, social security numbers, or personal, on their sites, and over time this can expose an organization to significant risk of data loss. Documents stored on sites—including OneDrive for Business sites—could be shared with people outside the organization who shouldn't have access to the information. With Microsoft Purview Data Loss Prevention (DLP) in SharePoint Online, you can discover documents that contain sensitive data throughout your tenant. After discovering the documents, you can work with the document owners to protect the data. This topic can help you form a query to search for sensitive data.
 
 > [!NOTE]

@@ -21,6 +21,8 @@ description: Use Group Policy to deploy the configuration package on Windows 10 
 
 # Onboard Windows 10 devices and Windows 11 using Group Policy 
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 **Applies to:**
 
 - [Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)

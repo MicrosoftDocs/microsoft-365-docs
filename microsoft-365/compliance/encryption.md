@@ -24,6 +24,8 @@ description: "With Office 365, your content is encrypted at rest and in transit 
 
 # Encryption
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Encryption is an important part of your file protection and information protection strategy. This article provides an overview of encryption for Office 365. Get help with encryption tasks like how to set up encryption for your organization and how to password-protect Office documents.
   
 - For information about certificates and technologies like TLS, see [Technical reference details about encryption in Office 365](technical-reference-details-about-encryption.md).
@@ -38,7 +40,9 @@ Encryption by itself doesn't prevent content interception. Encryption is part of
   
 You can have multiple layers of encryption in place at the same time. For example, you can encrypt email messages and also the communication channels through which your email flows. With Office 365, your data is encrypted at rest and in transit, using several strong encryption protocols, and technologies that include Transport Layer Security/Secure Sockets Layer (TLS/SSL), Internet Protocol Security (IPSec), and Advanced Encryption Standard (AES).
   
-## Encryption for data at rest and data in transit
+## Encryption
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)] for data at rest and data in transit
 
  **Examples of data at rest** include files that you've uploaded to a SharePoint library, Project Online data, documents that you've uploaded in a Skype for Business meeting, email messages and attachments that you've stored in folders in your mailbox, and files you've uploaded to OneDrive for Business.
   

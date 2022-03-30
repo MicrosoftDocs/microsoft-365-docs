@@ -20,6 +20,8 @@ ms.custom: seo-marvel-apr2020
 ---
 # Create custom sensitive information types in the Compliance center
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 If the pre-configured sensitive information types don't meet your needs, you can create your own custom sensitive information types that you fully define or you can copy one of the pre-configured ones and modify it.
 
 The custom sensitive information types that you create by using this method are added to the rule package named `Microsoft.SCCManaged.CustomRulePack`.

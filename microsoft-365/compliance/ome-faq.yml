@@ -18,9 +18,10 @@ metadata:
   ms.custom: seo-marvel-apr2020
 title: Message Encryption FAQ
 summary: |
+  [!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
   Have a question about how the new message protection capabilities work? Check for an answer here. Also, take a look at [Frequently asked questions about data protection in Azure Information Protection](/information-protection/get-started/faqs-rms) for answers to questions about the data protection service, Azure Rights Management, in Azure Information Protection.
   
-
 sections:
   - name: Ignored
     questions:

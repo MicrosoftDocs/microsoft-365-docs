@@ -20,6 +20,8 @@ description: "Learn how to use the Test tab after Batch calculation in Advanced 
 ---
 
 # Test Relevance analysis in Advanced eDiscovery
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
   
 The Test tab in Advanced eDiscovery enables you to test, compare, and validate the overall quality of processing. These tests are performed after Batch calculation. By tagging the files in the collection, an expert makes the final judgment about whether each tagged file is relevant to the case.
   

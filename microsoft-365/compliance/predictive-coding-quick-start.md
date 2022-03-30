@@ -18,6 +18,8 @@ description: "Learn how to get started using the predictive coding module in Adv
 
 # Quick start: Predictive coding in Advanced eDiscovery (preview)
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 This article presents a quick start for using predictive coding in Advanced eDiscovery. The predictive coding module uses intelligent, machine learning capabilities to help you cull large volumes of case content that's not relevant to your investigation. This is accomplished by creating and training your own predictive coding models that help you prioritize the most relevant items for review.
 
 Here's an a quick overview of the predictive coding process:

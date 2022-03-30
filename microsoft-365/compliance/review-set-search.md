@@ -21,6 +21,8 @@ ms.custom: seo-marvel-mar2020
 
 # Query and filter content in a review set
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 In most cases, it will be useful to dig deeper into the content in a review set and organize it to facilitate a more efficient review. Using filters and queries in a review set helps you focus on a subset of documents that meet the criteria of your review.
 
 ## Default filters

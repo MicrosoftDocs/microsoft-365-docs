@@ -16,6 +16,8 @@ description: "Set up and use a connector in the Microsoft Purview portal to impo
 
 # Set up a connector to archive WeChat data
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Use the TeleMessage connector in the Microsoft Purview portal to import and archive WeChat and WeCom calls, chats, attachments, files, and recalled messages. After you set up and configure a connector, it connects to your organization's TeleMessage account, and imports the mobile communication of employees using the TeleMessage WeChat Archiver to mailboxes in Microsoft 365.
 
 After WeChat Archiver connector data is stored in user mailboxes, you can apply Microsoft Purview features such as Litigation Hold, eDiscovery, In-Place Archiving, Auditing, Communication compliance, and Microsoft 365 retention policies to WeChat communication data. For example, you can search WeChat communication using Content Search or associate the mailbox that contains the WeChat Archiver connector data with a custodian in an Advanced eDiscovery case. Using a WeChat Archiver connector to import and archive data in Microsoft 365 can help your organization stay compliant with corporate governance regulations and regulatory policies.

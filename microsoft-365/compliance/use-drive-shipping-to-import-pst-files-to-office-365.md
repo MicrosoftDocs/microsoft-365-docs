@@ -23,6 +23,8 @@ description: Admin can learn how to bulk-import PST files to Microsoft 365 mailb
 
 # Use drive shipping to import your organization's PST files
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 **This article is for administrators. Are you trying to import PST files to your own mailbox? See [Import email, contacts, and calendar from an Outlook .pst file](https://go.microsoft.com/fwlink/p/?LinkID=785075)**
    
 Use the Office 365 Import service and drive shipping to bulk-import PST files to user mailboxes. Drive shipping means that you copy the PST files to a hard disk drive and then physically ship the drive to Microsoft. When Microsoft receives your hard drive, data center personnel copies the data from the hard drive to a storage area in the Microsoft cloud. Then you have the opportunity to trim the PST data that's imported to the target mailboxes by setting filters that control what data gets imported. After you start the import job, the Import service imports the PST data from the storage area to user mailboxes. Using drive shipping to import PST files to user mailboxes is one way to migrate your organization's email to Office 365.

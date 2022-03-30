@@ -21,6 +21,8 @@ description: "Audit log retention policies are part of the new Advanced Audit ca
 
 # Manage audit log retention policies
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 You can create and manage audit log retention policies in the Microsoft Purview portal. Audit log retention policies are part of the new Advanced Audit capabilities in Microsoft 365. An audit log retention policy lets you specify how long to retain audit logs in your organization. You can retain audit logs for up to 10 years. You can create policies based on the following criteria:
 
 - All activities in one or more Microsoft 365 services
@@ -74,7 +76,9 @@ Advanced Audit in Microsoft 365 provides a default audit log retention policy fo
 
 The new policy is displayed in the list on the **Audit retention policies** tab.
 
-## Manage audit log retention policies in the Microsoft Purview portal
+## Manage audit log retention policies
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)] in the Microsoft Purview portal
 
 Audit log retention policies are listed on the **Audit retention policies** tab (also called the *dashboard*). You can use the dashboard to view, edit, and delete audit retention policies.
 

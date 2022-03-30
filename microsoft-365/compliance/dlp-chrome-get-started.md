@@ -24,6 +24,8 @@ description: "Prepare for and deploy the Microsoft Compliance Extension."
 
 # Get started with Microsoft Compliance Extension
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Use these procedures to roll out the Microsoft Compliance Extension.
 
 ## Before you begin

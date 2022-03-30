@@ -21,6 +21,8 @@ ms.custom: seo-marvel-apr2020
 
 # Test an exact data match sensitive information type
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 After your exact data match (EDM) sensitive information type (SIT) has been created and an hour after verifying that your sensitive information table has finished uploading and indexing, you can test that it detects the information you want to detect by using the test function in the sensitive information types section in the Compliance center.
  
 >[!NOTE:]

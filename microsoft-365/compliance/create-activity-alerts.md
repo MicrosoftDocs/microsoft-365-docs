@@ -23,6 +23,8 @@ description: Add and manage activity alerts in the Microsoft Purview portal so t
 
 # Create activity alerts
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 You can create an activity alert that will send you an email notification when users perform specific activities in Office 365. Activity alerts are similar to searching for events in the audit log, except that you'll be sent an email message when an event for an activity that you've created an alert for happens.
 
  **Why use activity alerts instead of searching the audit log?** There might be certain kinds of activity or activity performed by specific users that you really want to know about. Instead of having to remember to search the audit log for those activities, you can use activity alerts to have Microsoft 365 send you an email message when users perform those activities. For example, you can create an activity alert to notify you when a user deletes files in SharePoint, or you can create an alert to notify you when a user permanently deletes messages from their mailbox. The email notification sent to you includes information about which activity was performed and the user who performed it.

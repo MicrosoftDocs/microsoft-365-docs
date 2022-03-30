@@ -19,6 +19,8 @@ description: "Learn how to create and import a custom sensitive information type
 
 # Create a custom sensitive information type using PowerShell
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 This article shows you how to create an XML *rule package* file that defines custom [sensitive information types](sensitive-information-type-entity-definitions.md). This article describes a custom sensitive information type that identifies an employee ID. You can use the sample XML in this article as a starting point for your own XML file.
 
 For more information about sensitive information types, see [Learn about sensitive information types](sensitive-information-type-learn-about.md).

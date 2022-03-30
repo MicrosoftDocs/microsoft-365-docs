@@ -22,6 +22,8 @@ description: "Learn how Exchange Online and Microsoft 365 use Transport Layer Se
 
 # How Exchange Online uses TLS to secure email connections
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Learn how Exchange Online and Microsoft 365 use Transport Layer Security (TLS) and Forward Secrecy (FS) to secure email communications. Also provides information about the certificate issued by Microsoft for Exchange Online.
   
 ## TLS basics for Microsoft 365 and Exchange Online

@@ -22,6 +22,8 @@ description: "Understand how to use and manage templates for building assessment
 
 # Learn about assessment templates in Compliance Manager
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 **In this article:** Understand **how templates work** and **how to manage them** from your assessment templates page. Get instructions for **creating** new templates, **extending** and **modifying** existing templates, **formatting your template data with Excel**, and exporting template **reports**.
 
 > [!IMPORTANT]

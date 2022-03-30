@@ -19,6 +19,8 @@ description: Learn about what it means to govern your organization's data with M
 
 # Learn about information governance
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 As part of [Microsoft Purview Information Governance](manage-information-governance.md) that also includes [records management](records-management.md) and [data connectors](archiving-third-party-data.md), information governance from Microsoft 365 provides you with tools and capabilities to retain the content that you need to keep, and delete the content that you don't. Retaining and deleting content is often needed for compliance and regulatory requirement, but deleting content that no longer has business value also helps you manage risk and liability. For example, it reduces your attack surface.

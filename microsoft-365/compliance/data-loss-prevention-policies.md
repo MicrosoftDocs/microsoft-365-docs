@@ -1,6 +1,8 @@
 ---
 title: "Data Loss Prevention Reference"
 # rename the md file to the above title
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 f1.keywords:
 - CSH
 ms.author: chrfox

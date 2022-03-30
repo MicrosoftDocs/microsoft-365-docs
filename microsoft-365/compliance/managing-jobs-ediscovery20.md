@@ -19,6 +19,8 @@ description: "Advanced eDiscovery jobs help you track the status of long-running
 
 # Manage jobs in Advanced eDiscovery
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Here's a list of the jobs (which are typically long-running processes) that are tracked on the **Jobs** tab of a case in Advanced eDiscovery. These jobs are triggered by user actions when using and managing cases.
 
 | Job type           | Description     |

@@ -20,6 +20,8 @@ description: "Use the attorney-client privilege detection model to use the machi
 
 # Set up attorney-client privilege detection in Advanced eDiscovery
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 A major and costly aspect of the review phase of any eDiscovery process is reviewing documents for privileged content. Advanced eDiscovery provides machine learning-based detection of privileged content to make this process more efficient. This feature is called *attorney-client privilege detection*.
 
 ## How does it work?

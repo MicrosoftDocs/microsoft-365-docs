@@ -16,6 +16,8 @@ description: "Learn how to set up and use a 17a-4 BlackBerry DataParser connecto
 
 # Set up a connector to archive BlackBerry data
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Use the [BlackBerry DataParser](https://www.17a-4.com/BlackBerry-dataparser/) from 17a-4 LLC to import and archive BlackBerry enterprise data to user mailboxes in your Microsoft 365 organization. The DataParser includes a BlackBerry connector that's configured to capture items from a third-party data source and import those items to Microsoft 365. The BlackBerry DataParser connector converts BlackBerry data to an email message format and then imports those items to user mailboxes in Microsoft 365.
 
 After BlackBerry data is stored in user mailboxes, you can apply Microsoft Purview features such as Litigation Hold, eDiscovery, retention policies and retention labels, and communication compliance. Using a BlackBerry connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.

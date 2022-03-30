@@ -19,6 +19,8 @@ description: "The previous version of Office 365 Message Encryption depends on M
 
 # Set up Azure Rights Management for the previous version of Message Encryption
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 This topic describes the steps you need to follow in order to activate and then set up Azure Rights Management (RMS), part of Azure Information Protection, for use with the previous version of Office 365 Message Encryption (OME).
 
 ## This article only applies to the previous version of OME

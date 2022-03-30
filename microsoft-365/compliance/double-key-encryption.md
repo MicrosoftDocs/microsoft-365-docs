@@ -1,6 +1,8 @@
 ---
 # required metadata
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 title: Double Key Encryption (DKE)
 description: DKE enables you to protect highly sensitive data while maintaining full control of your key.
 author: kccross

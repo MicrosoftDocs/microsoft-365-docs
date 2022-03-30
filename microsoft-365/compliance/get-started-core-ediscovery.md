@@ -22,6 +22,8 @@ description: "Describes how to get started using Core eDiscovery in Microsoft 36
 
 # Get started with Core eDiscovery in Microsoft 365
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Core eDiscovery in Microsoft 365 provides a basic eDiscovery tool that organizations can use to search and export content in Microsoft 365 and Office 365. You can also use Core eDiscovery to place an eDiscovery hold on content locations, such as Exchange mailboxes, SharePoint sites, OneDrive accounts, and Microsoft Teams. Nothing is needed to deploy Core eDiscovery, but there are some prerequisite tasks that an IT admin and eDiscovery manager have to complete before your organization can start using Core eDiscovery to search, export, and preserve content.
 
 This article discusses the steps necessary to set up Core eDiscovery. This includes ensuring the proper licensing required to access Core eDiscovery and place an eDiscovery hold on content locations, as well as assigning permissions to your IT, legal, and investigation team so they can access and manage cases. This article also provides a high-level overview of using cases to search for and export content.

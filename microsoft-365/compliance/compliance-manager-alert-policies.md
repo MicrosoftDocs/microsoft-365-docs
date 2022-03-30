@@ -22,6 +22,8 @@ description: "Learn how to create alerts for activities in Microsoft Purview Com
 
 # Microsoft Purview Compliance Manager alerts and alert policies
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 **In this article:** Learn how to **set alerts** for certain activities in Compliance Manager, how to manage alerts, and how to **create alert policies** for defining alert conditions.
 
 ## Overview

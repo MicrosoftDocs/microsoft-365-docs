@@ -22,6 +22,8 @@ description: "Microsoft Purview Compliance Manager helps organizations simplify 
 
 # Microsoft Purview Compliance Manager
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 **In this article:** Learn what Compliance Manager is, how it helps simplify compliance and reduce risk, and its key components.
 
 ## What is Compliance Manager?
