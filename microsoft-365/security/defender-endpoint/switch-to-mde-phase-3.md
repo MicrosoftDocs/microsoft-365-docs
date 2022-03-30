@@ -21,7 +21,7 @@ ms.custom:
 - migrationguides
 - admindeeplinkDEFENDER
 ms.topic: article
-ms.date: 12/02/2021
+ms.date: 03/28/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ---
 
@@ -32,7 +32,7 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-| [![Phase 1: Prepare3.](images/phase-diagrams/prepare.png)](switch-to-mde-phase-1.md)<br/>[Phase 1: Prepare](switch-to-mde-phase-1.md) | [![Phase 2: Set up](images/phase-diagrams/setup.png)](switch-to-mde-phase-2.md)<br/>[Phase 2: Set up](switch-to-mde-phase-2.md) | ![Phase 3: Onboard](images/phase-diagrams/onboard.png)<br/>Phase 3: Onboard |
+| [![Phase 1: Prepare3.](images/phase-diagrams/prepare.png#lightbox)](switch-to-mde-phase-1.md)<br/>[Phase 1: Prepare](switch-to-mde-phase-1.md) | [![Phase 2: Set up](images/phase-diagrams/setup.png#lightbox)](switch-to-mde-phase-2.md)<br/>[Phase 2: Set up](switch-to-mde-phase-2.md) | ![Phase 3: Onboard](images/phase-diagrams/onboard.png#lightbox)<br/>Phase 3: Onboard |
 |--|--|--|
 || |*You are here!* |
 
@@ -152,7 +152,10 @@ If at this point you have:
 - Onboarded your organization's devices to Defender for Endpoint, and
 - Microsoft Defender Antivirus is installed and enabled,
 
-Then your next step is to uninstall your non-Microsoft antivirus, antimalware, and endpoint protection solution. When you uninstall your non-Microsoft solution, Microsoft Defender Antivirus switches from passive mode to active mode. In most cases, this happens automatically.
+Then your next step is to uninstall your non-Microsoft antivirus, antimalware, and endpoint protection solution. When you uninstall your non-Microsoft solution, Microsoft Defender Antivirus switches from passive mode to active mode. In most cases, this happens automatically. 
+
+> [!IMPORTANT]
+> If, for some reason, Microsoft Defender Antivirus does not go into active mode after you have uninstalled your non-Microsoft antivirus/antimalware solution, see [Microsoft Defender Antivirus seems to be stuck in passive mode](switch-to-mde-troubleshooting.md#microsoft-defender-antivirus-seems-to-be-stuck-in-passive-mode).
 
 To get help with uninstalling your non-Microsoft solution, contact their technical support team.
 

@@ -82,8 +82,8 @@ A standard retention label has retention settings and actions but doesn't mark c
 |Move within container <sup>3</sup>|Allowed |Allowed | Allowed| Allowed|
 |Move across containers <sup>3</sup>|Allowed |Allowed if never unlocked | **Blocked** | **Blocked**|
 |Open/Read|Allowed |Allowed | Allowed| Allowed|
-|Change label|Allowed |Allowed - container admin only | Allowed - container admin only| **Blocked**
-|Remove label|Allowed |Allowed - container admin only | Allowed - container admin only| **Blocked**
+|Change label|Allowed |Allowed - container admin only | **Blocked**| **Blocked**
+|Remove label|Allowed |Allowed - container admin only | **Blocked**| **Blocked**
 
 Footnotes:
 

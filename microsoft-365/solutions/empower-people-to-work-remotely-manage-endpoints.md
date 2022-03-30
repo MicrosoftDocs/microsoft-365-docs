@@ -2,8 +2,8 @@
 title: "Step 4. Deploy endpoint management for your devices, PCs, and other endpoints"
 f1.keywords:
 - NOCSH
-author: JoeDavies-MSFT
-ms.author: josephd
+author: dansimp
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article

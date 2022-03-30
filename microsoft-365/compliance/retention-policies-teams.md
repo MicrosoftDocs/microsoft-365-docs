@@ -38,6 +38,9 @@ For other workloads, see:
 
 ## What's included for retention and deletion
 
+> [!NOTE]
+> Retention policies now support [shared channels](/MicrosoftTeams/shared-channels), currently in preview. Any shared channels inherit retention settings from the parent channel.
+
 Teams chats messages, channel messages, and private channel messages can be deleted by using retention policies for Teams, and in addition to the text in the messages, the following items can be retained for compliance reasons: Embedded images, tables, hypertext links, links to other Teams messages and files, and [card content](/microsoftteams/platform/task-modules-and-cards/what-are-cards). Chat messages and private channel messages include all the names of the people in the conversation, and channel messages include the team name and the message title (if supplied). 
 
 Code snippets, recorded voice memos from the Teams mobile client, thumbnails, announcement images, and reactions from others in the form of emoticons are not retained when you use retention policies for Teams.
@@ -55,6 +58,7 @@ These mailboxes are, listed by their RecipientTypeDetails attribute:
 - **UserMailbox**: These mailboxes store message data for cloud-based Teams users.
 - **MailUser**: These mailboxes store message data for [on-premises Teams users](search-cloud-based-mailboxes-for-on-premises-users.md).
 - **GroupMailbox**: These mailboxes store message data for Teams standard channels.
+- **SubstrateGroup**: These mailboxes store message data for Teams shared channels.
 
 Other mailbox types, such as RoomMailbox that is used for Teams conference rooms, are not supported for Teams retention policies.
 
