@@ -32,7 +32,7 @@ The table below describes which GDAP roles grant permission to read customer dat
 ## Example MSP service tiers and recommended GDAP roles
 
 | Lighthouse page | Account Managers| Service Desk Technician |System Administrators | Escalation Engineers|
-|--|--|--|--|--|
+|---|---|---|---|---|
 | | <ul><li>Helpdesk</li><li>Administrator</li></ul>|<ul><li>Security Reader +</li><li>Helpdesk Administrator</li></ul> |<ul><li>Global Reader +</li><li>User Administrator +</li><li>Authentication Administrator</li></ul> |<ul><li>Global Reader +</li><li>User Administrator +</li><li>Intune Administrator +</li><li>Security Administrator</li></ul>|
 |**Home**  | <ul><li>View all data</li></ul> | <ul><li>View all data</li></ul>| <ul><li>View all data</li></ul>  | <ul><li>View All</li></ul> | 
 |**Tenants**     | <ul><li>View tenants list</li><li>Update customer contacts and website</li><li>View deployment plans</li></ul>  | <ul><li>View tenants list</li><li>Update customer contacts and website</li><li>View deployment plans</li></ul>   |  <ul><li>View tenants list</li><li>Update customer contacts and website</li><li>View deployment plans</li><li>View Microsoft 365 services usage</li></ul> | <ul><li>View tenants list</li><li>Update customer contacts and website</li><li>View deployment plans</li><li>View Microsoft 365 services usage</li></ul>  |
@@ -46,8 +46,7 @@ The table below describes which GDAP roles grant permission to read customer dat
 
 *\*See [Password reset permissions](/azure/active-directory/roles/permissions-reference#password-reset-permissions) for a table that outlines what roles are required to reset passwords for customer tenant administrators.*
 
-**Other roles and permissions are required to view service health and audit logs. For more information, see <a href="#permissions-in-the-partner-tenant">Permissions in the partner tenant
-
+**Other roles and permissions are required to view service health and audit logs. For more information, see [Permissions in the partner tenant](#permissions-in-the-partner-tenant).
 
 > [!NOTE]
 > If you get a message in Lighthouse saying that you don’t have permission to view or edit information, you’re assigned a role that doesn’t have the appropriate permissions to perform the action. You’ll need to reach out to an admin in your partner tenant who can assign you the appropriate role for the action you’re trying to perform.
