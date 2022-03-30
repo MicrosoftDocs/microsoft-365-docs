@@ -46,7 +46,7 @@ Selecting the **Suspected overpass-the-hash attack** alert goes to a page in Mic
 
 Alternatively, an analyst can use Defender for Endpoint to learn more about the activity on an endpoint. Select the incident from the incident queue, then select the **Alerts** tab. From here, they can identify the detection source as well. A detection source labeled as EDR stands for Endpoint Detection and Response, which is Defender for Endpoint. From here, the analyst selects an alert detected by EDR.
 
-:::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-mde-edr.png" alt-text="An Endpoint Detection and Response in the Microsoft Defender for Endpoint portal" lightbox="../../media/first-incident-path-identity/first-incident-identity-mde-edr.png"::: 
+:::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-mde-edr.png" alt-text="An Endpoint Detection and Response in the Microsoft Defender for Endpoint portal" lightbox="../../media/first-incident-path-identity/first-incident-identity-mde-edr.png":::
 
 The alert page displays various pertinent information such as the impacted device name, username, status of auto-investigation, and the alert details. The alert story depicts a visual representation of the process tree. The process tree is a hierarchical representation of parent and child processes related to the alert.
 
