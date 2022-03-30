@@ -31,9 +31,12 @@ The table in the next section describes which GDAP roles grant permission to rea
 
 ## Example MSP service tiers and recommended GDAP roles
 
-| Lighthouse page | Account Managers| Service Desk Technician |System Administrators | Escalation Engineers|
+The following table lists the recommended GDAP roles for some example MSP service tiers and the actions those roles can perform on the different Lighthouse pages.
+
+|| Account Managers| Service Desk Technician |System Administrators | Escalation Engineers|
 |---|---|---|---|---|
-| | Helpdesk Administrator |<ul><li>Security Reader<br>+</li><li>Helpdesk Administrator</li></ul> |<ul><li>Global Reader<br>+</li><li>User Administrator<br>+</li><li>Authentication Administrator</li></ul> |<ul><li>Global Reader<br>+</li><li>User Administrator<br>+</li><li>Intune Administrator<br>+</li><li>Security Administrator</li></ul>|
+| **Recommended GDAP roles** | Helpdesk Administrator |<ul><li>Security Reader<br>+</li><li>Helpdesk Administrator</li></ul> |<ul><li>Global Reader<br>+</li><li>User Administrator<br>+</li><li>Authentication Administrator</li></ul> |<ul><li>Global Reader<br>+</li><li>User Administrator<br>+</li><li>Intune Administrator<br>+</li><li>Security Administrator</li></ul>|
+|**Lighthouse&nbsp;page** <br> |||||
 |**Home**  | View all data | View all data | View all data | View all data | 
 |**Tenants**     | <ul><li>View tenants list</li><li>Update customer contacts and website</li><li>View deployment plans</li></ul>  | <ul><li>View tenants list</li><li>Update customer contacts and website</li><li>View deployment plans</li></ul>   |  <ul><li>View tenants list</li><li>Update customer contacts and website</li><li>View deployment plans</li><li>View Microsoft 365 services usage</li></ul> | <ul><li>View tenants list</li><li>Update customer contacts and website</li><li>View deployment plans</li><li>View Microsoft 365 services usage</li></ul>  |
 |**Users**   | <ul><li>View tenant level (non-user specific) data</li><li>Search user accounts across tenants</li><li>Reset password for non-administrators*</li></ul>  | <ul><li>View all user-specific data</li><li>Search user accounts across tenants</li><li>Reset password for non-administrators*</li></ul>|  <ul><li>View all user-specific data</li><li>Search user accounts across tenants</li><li>Reset password for non-administrators*</i><li>Block sign-in</li></ul>  | <ul><li>View all user-specific data</li><li>Search user accounts across tenants</li><li>Reset password for non-administrators*</li><li>Block sign-in</li><li>Confirm compromised users</li><li>Dismiss risk for users</li></ul> |
