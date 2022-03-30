@@ -1,5 +1,5 @@
 ---
-title: "Add or replace your onmicrosoft.com fallback domain in Microsoft 365"
+title: "Add and replace your onmicrosoft.com fallback domain in Microsoft 365"
 f1.keywords:
 - NOCSH
 ms.author: efrene
