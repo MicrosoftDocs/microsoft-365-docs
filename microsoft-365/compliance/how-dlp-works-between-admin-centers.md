@@ -24,6 +24,8 @@ ms.custom:
 
 # How DLP works between the Compliance Center and Exchange admin center
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 In Microsoft Purview, you can create a data loss prevention (DLP) policy in two different admin centers:
   
 - In the **Microsoft Purview portal**, you can create a single DLP policy to help protect content in SharePoint, OneDrive, Exchange, Teams, and now Endpoint Devices. We recommend that you create a DLP policy here. For more information, see [Data Loss Prevention reference](data-loss-prevention-policies.md).

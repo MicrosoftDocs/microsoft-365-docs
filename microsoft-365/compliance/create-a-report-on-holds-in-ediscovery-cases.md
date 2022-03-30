@@ -24,6 +24,8 @@ description: Learn how to generate a report that contains information about all 
 
 # Use a script to create a report on holds in eDiscovery cases
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 The script in this article lets eDiscovery administrators and eDiscovery managers generate a report that contains information about all holds that are associated with Core and Advanced eDiscovery cases in the Microsoft Purview portal. The report contains information such as the name of the case a hold is associated with, the content locations that are placed on hold, and whether the hold is query-based. If there are cases that don't have any holds, the script will create an additional report with a list of cases without holds.
 
 See the [More information](#more-information) section for a detailed description of the information included in the report.

@@ -24,6 +24,8 @@ description: "Create alert policies in the Microsoft Purview portal or the Micro
 
 # Alert policies in Microsoft 365
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 You can use alert policies and the alert dashboard in the Microsoft Purview portal or the Microsoft 365 Defender portal to create alert policies and then view the alerts generated when users perform activities that match the conditions of an alert policy. There are several default alert policies that help you monitor activities such as assigning admin privileges in Exchange Online, malware attacks, phishing campaigns, and unusual levels of file deletions and external sharing.
 
 > [!TIP]

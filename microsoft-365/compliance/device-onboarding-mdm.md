@@ -20,6 +20,8 @@ description: Use Mobile Device Management tools to deploy the configuration pack
 
 # Onboard Windows 10 and Windows 11 devices using Mobile Device Management tools
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 **Applies to:**
 
 - [Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)

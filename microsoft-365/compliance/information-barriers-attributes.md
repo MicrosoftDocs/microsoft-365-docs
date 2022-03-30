@@ -18,6 +18,8 @@ ms.custom: seo-marvel-apr2020
 
 # Information barriers attributes
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Certain attributes in Azure Active Directory can be used to segment users. Once segments are defined, those segments can be used as filters for information barrier policies. For example, you might use **Department** to define segments of users by department within your organization (assuming no single employee works for two departments at the same time).
 
 This article describes how to use attributes with information barriers, and it provides a list of attributes that can be used. To learn more about information barriers, see the following resources:

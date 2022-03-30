@@ -1,6 +1,5 @@
 ---
 # required metadata
-
 title: Double Key Encryption overview and FAQ
 description: Frequently asked questions about Double Key Encryption for Microsoft 365.
 author: kccross
@@ -18,6 +17,8 @@ ms.collection:
 ---
 
 # Double Key Encryption frequently asked questions
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Have a question about how Double Key Encryption works? Check for an answer here.
 

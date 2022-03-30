@@ -24,6 +24,8 @@ description: "Mailbox audit logging is turned on by default in Microsoft 365 (al
 
 # Manage mailbox auditing
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Starting in January 2019, Microsoft is turning on mailbox audit logging by default for all organizations. This means that certain actions performed by mailbox owners, delegates, and admins are automatically logged, and the corresponding mailbox audit records will be available when you search for them in the mailbox audit log. Before mailbox auditing was turned on by default, you had to manually enable it for every user mailbox in your organization.
 
 Here are some benefits of mailbox auditing on by default:

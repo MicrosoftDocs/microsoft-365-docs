@@ -20,6 +20,8 @@ description: "This article gives an overview of sensitive information types and 
 
 # Learn about sensitive information types
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Identifying and classifying sensitive items that are under your organizations control is the first step in the [Information Protection discipline](./information-protection.md).  Microsoft Purview provides three ways of identifying items so that they can be classified:
 
 - manually by users

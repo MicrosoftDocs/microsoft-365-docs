@@ -22,6 +22,8 @@ description: "Implement Microsoft Purview Information Protection capabilities to
 
 # Microsoft Purview Information Protection
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 >*[Licensing for Microsoft 365 Security & Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
 Implement capabilities from Microsoft Purview Information Protection to help you discover, classify, and protect sensitive information wherever it lives or travels.

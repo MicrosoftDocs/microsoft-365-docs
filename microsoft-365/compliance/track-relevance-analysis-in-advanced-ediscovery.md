@@ -20,6 +20,8 @@ description: "Learn how to view and interpret the Relevance training status and 
 ---
 
 # Track Relevance analysis in Advanced eDiscovery
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
   
 In Advanced eDiscovery, the Relevance Track tab displays the calculated validity of the Relevance training performed in the Tag tab and indicates the next step to take in the iterative training process in Relevance. 
   

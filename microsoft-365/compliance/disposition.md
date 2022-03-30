@@ -21,6 +21,8 @@ description: "Monitor and manage the disposal of content for when you use a disp
 
 # Disposition of content
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Use the **Disposition** page from **Records Management** in the Microsoft Purview portal to manage disposition reviews and view the metadata of [records](records-management.md#records) that have been automatically deleted at the end of their retention period.

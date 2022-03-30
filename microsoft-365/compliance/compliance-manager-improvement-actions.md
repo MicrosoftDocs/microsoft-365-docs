@@ -21,6 +21,8 @@ description: "Learn how to implement and test controls by working with improveme
 
 # Working with improvement actions in Compliance Manager
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 **In this article:** This article explains how to **manage your compliance workflow** with improvement actions. Learn how to **assign improvement actions** for implementation and testing, **manage updates**, and export **reports**.
 
 ## Manage compliance workflows with improvement actions

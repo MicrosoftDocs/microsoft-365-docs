@@ -21,6 +21,8 @@ ms.custom: seo-marvel-apr2020
 ---
 # Manage custodians in an Advanced eDiscovery case
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 The **Custodians** page on the **Data sources** tab in an Advanced eDiscovery case contains a list of all custodians that have been added to the case. After you add custodians to a case, details about each custodian are automatically collected from Azure Active Directory and are viewable in Advanced eDiscovery.
 
 ## View custodian details

@@ -21,6 +21,8 @@ ms.custom: seo-marvel-apr2020
 ---
 
 # Assessment in the Relevance module in Advanced eDiscovery
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
   
 Advanced eDiscovery enables early assessment, for example, for the defined issues and the data imported for a case. Advanced eDiscovery lets the expert make decisions about an adopted approach and to apply these decisions to the document review project.
   

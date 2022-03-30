@@ -24,6 +24,8 @@ description: "After an Office 365 mailbox is made inactive, change the duration 
 
 # Change the hold duration for an inactive mailbox
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 An [inactive mailbox](inactive-mailboxes-in-office-365.md) is mailbox state that is used to retain a former employee's email after they leave your organization. A mailbox becomes inactive when an applicable hold is applied to it before the Microsoft 365 user object is deleted.  The following types of holds will initiate the creation of an inactive mailbox upon user account deletion:
 
 - [Microsoft 365 retention policies and labels](retention.md) with retain or retain and delete settings

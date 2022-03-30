@@ -21,6 +21,8 @@ description: When you use the Azure Information Protection (AIP) unified labelin
 
 # Why choose built-in labeling over the AIP add-in for Office apps
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 When you use [sensitivity labels](sensitivity-labels.md) in Microsoft 365 Apps on Windows computers, you have a choice of using labeling that's built into Office apps, or an add-in from the [Azure Information Protection (AIP) unified labeling client](/azure/information-protection/rms-client/aip-clientv2). 

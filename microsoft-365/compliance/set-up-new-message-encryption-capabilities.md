@@ -25,6 +25,8 @@ ms.custom:
 
 # Set up new Message Encryption capabilities
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 The new Office 365 Message Encryption (OME) capabilities allow organizations to share protected email with anyone on any device. Users can exchange protected messages with other Microsoft 365 organizations, as well as non-customers using Outlook.com, Gmail, and other email services.
 
 Follow the steps below to ensure that the new OME capabilities are available in your organization.

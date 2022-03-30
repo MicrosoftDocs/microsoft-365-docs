@@ -23,6 +23,8 @@ ms.custom:
 ---
 # View custodian audit activity
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Need to find if a user viewed a specific document or purged an item from their mailbox? Advanced eDiscovery is now integrated with the existing audit log search tool in the Microsoft Purview portal. Using this embedded experience, you can use the Advanced eDiscovery Custodian Management tool to facilitate your investigation by easily accessing and searching the activity for custodians within your case.
 
 ## Get permissions

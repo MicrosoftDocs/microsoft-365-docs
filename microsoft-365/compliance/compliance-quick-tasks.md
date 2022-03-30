@@ -20,6 +20,8 @@ description: "Learn about tasks that will help you quickly get started with comp
 
 # Quick tasks for getting started with Microsoft Purview
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 If you're new to Microsoft Purview and wondering where to start, this article provides guidance on the basics and prioritizes important compliance tasks. This article will help you quickly get started with managing and monitoring your data, protecting information, and minimizing insider risks.
 
 This article is also helpful if you're figuring out how best to manage risks, protect your data, and remain compliant with regulations and standards with a newly remote workforce. Employees are now collaborating and connecting with each other in new ways, and this means your existing compliance processes and controls may need to adapt. Identifying and managing these new compliance risks within your organization is critical to safeguarding your data and minimizing threats and risks.

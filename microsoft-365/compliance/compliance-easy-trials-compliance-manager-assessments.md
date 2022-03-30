@@ -18,6 +18,8 @@ description: "About the Microsoft Purview Compliance Manager premium assessment 
 
 # About the free trial for Microsoft Purview Compliance Manager premium assessments
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Compliance Manager helps you manage your organization’s compliance requirements and assess and improve your compliance score. The assessments you build are based on templates that correspond to governmental regulations and industry standards around the world.  
 
 Your licensing agreement to use Compliance Manager may include one or more built-in templates for building assessments. An extensive library of premium assessment templates is also available for building assessments specific to your organization’s needs. To try out these templates before purchasing licenses, sign up for the free Compliance Manager premium assessments trial.

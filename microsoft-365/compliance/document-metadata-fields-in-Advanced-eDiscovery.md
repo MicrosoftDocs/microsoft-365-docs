@@ -21,6 +21,8 @@ description: "This article defines the metadata fields for documents in a review
 
 # Document metadata fields in Advanced eDiscovery
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 The following table lists the metadata fields for documents in a review set in a case in Advanced eDiscovery. The table provides the following information:
 
 - **Field name** and **Display field name:** The name of the metadata field and the name of the field that's displayed when viewing the file metadata of a selected document in a review set. Some metadata fields aren't included when viewing the file metadata of a document. These fields are highlighted with an asterisk (*).

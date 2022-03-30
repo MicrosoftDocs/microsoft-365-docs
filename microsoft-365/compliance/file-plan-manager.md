@@ -21,6 +21,8 @@ ms.custom: seo-marvel-may2020
 
 # Use file plan to create and manage retention labels
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Although you can create and manage retention labels from **Information governance** in the Microsoft Purview portal, file plan from **Records management** has additional management capabilities:

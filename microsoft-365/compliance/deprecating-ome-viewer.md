@@ -23,6 +23,8 @@ description: The Office 365 Message Encryption (OME) Viewer app was removed from
 
 # Deprecating Message Encryption Viewer App
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 On August 15, 2018, we removed the Office 365 Message Encryption (OME) Viewer mobile app from Android and Apple stores. The Office 365 Message Encryption Viewer mobile app was required to read email messages and attachments that were encrypted with the previous version of OME on Apple and Android phones. Apart from removing the OME Viewer app, we are not making any other changes to the previous version of OME.
   
 ## Changes from August 2018

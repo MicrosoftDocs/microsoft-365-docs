@@ -20,6 +20,8 @@ description: "Use historical versions in Advanced eDiscovery to collect content 
 
 # Set up historical versions in Advanced eDiscovery (preview)
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 The historical versions feature in Advanced eDiscovery lets eDiscovery managers in your organization search for and collect content from all versions of documents stored in SharePoint Online and OneDrive for Business. Then you can add that content to a review set for analysis and review. This helps you find and review content from a specific version of a document that may be relevant to a case or investigation, even if the latest version of the same document doesn't contain the relevant information.
 
 To support the historical versions capability in Advanced eDiscovery, SharePoint administrators must enable versioning for sites in their organization. Then, when users modify documents in SharePoint or OneDrive, implicit regular versions are created when document is saved (or autosaved). SharePoint versioning allows for tracking of the activity performed on SharePoint items (including documents, events, and tasks). This versioning capability leaves an audit trail that can provide evidence in legal investigations. These older versions of a document are available to the organization, who may be required to share such versions that have sensitive or relevant content during court discovery in a legal matter.

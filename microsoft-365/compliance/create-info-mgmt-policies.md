@@ -26,6 +26,8 @@ description: Learn how to set up an information management policy to control how
 
 # Create and apply information management policies
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Information management policies enable your organization to control how long to retain content, to audit what people do with content, and to add barcodes or labels to documents. A policy can help enforce compliance with legal and governmental regulations or internal business processes. As an administrator, you can set up a policy to control how to track documents and how long to retain documents.
 
 You can create an information management policy can at three different locations in the site hierarchy, from the broadest to the narrowest:

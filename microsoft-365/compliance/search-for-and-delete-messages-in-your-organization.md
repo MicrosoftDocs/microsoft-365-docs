@@ -21,6 +21,8 @@ description: "Use the search and purge feature in the Microsoft Purview portal t
 
 # Search for and delete email messages
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 **This article is for administrators. Are you trying to find items in your mailbox that you want to delete? See [Find a message or item with Instant Search](https://support.office.com/article/69748862-5976-47b9-98e8-ed179f1b9e4d)**.
 
 You can use the Content search feature to search for and delete email messages from all mailboxes in your organization. This can help you find and remove potentially harmful or high-risk email, such as:

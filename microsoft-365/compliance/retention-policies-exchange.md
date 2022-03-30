@@ -21,6 +21,8 @@ description: "Learn how retention works for Exchange."
 
 # Learn about retention for Exchange
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 The information in this article supplements [Learn about retention](retention.md) because it has information that's specific to Exchange.  For other workloads, see:
 
 - [Learn about retention for SharePoint and OneDrive](retention-policies-sharepoint.md)

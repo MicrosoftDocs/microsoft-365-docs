@@ -21,6 +21,8 @@ description: "This article describes how to create, close, reopen, and delete ca
 
 # Manage cases in core eDiscovery
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 ## Create a case
 
 ## Close a case

@@ -21,6 +21,8 @@ ms.custom: seo-marvel-apr2020
 
 # Create exact data match sensitive information type/rule package
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 You can create an exact data match (EDM) sensitive information type (SIT) by using the [the EDM schema and SIT wizard](#use-the-edm-schema-and-sit-wizard) in the Compliance center or create the rule package XML file [manually](#create-a-rule-package-manually). You can also combine both by using one method to create the schema and later edit it using the other method.
 
 If you are not familiar with EDM based SITS or their implementation, you should familiarize yourself with:

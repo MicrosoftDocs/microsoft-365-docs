@@ -21,6 +21,8 @@ ms.custom: seo-marvel-apr2020
 
 # Learn about information barriers
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Microsoft cloud services include powerful communication and collaboration capabilities. But suppose that you want to restrict communication and collaboration between two groups to avoid a conflict of interest from occurring in your organization. Or, perhaps you want to restrict communication and collaboration between certain people inside your organization in order to safeguard internal information. Microsoft 365 enables communication and collaboration across groups and organizations, so is there a way to restrict communication and collaboration  among specific groups of users when necessary? With Microsoft Purview Information Barriers, you can!
 
 Microsoft Teams, SharePoint Online, and OneDrive for Business support information barriers. Assuming your [subscription](#required-licenses-and-permissions) includes information barriers, a compliance administrator, or information barriers administrator can define policies to allow or prevent communications between groups of users in Microsoft Teams. Information barrier policies can be used for situations like these:

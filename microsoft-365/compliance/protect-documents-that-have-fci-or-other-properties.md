@@ -25,6 +25,8 @@ description: Learn how to use a data loss prevention (DLP) policy to protect doc
 
 # Create a DLP policy to protect documents with FCI or other properties
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Microsoft Purview Data Loss Prevention (DLP) policies can use classification properties or item properties to identify sensitive items. For example you can use:
 
 - Windows Server File Classification infrastructure (FCI) properties

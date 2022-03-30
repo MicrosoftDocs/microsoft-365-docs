@@ -22,6 +22,8 @@ description: Learn how to use the custodian management tool in Advanced eDiscove
 
 # Work with custodians and non-custodial data sources in Advanced eDiscovery
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 When an organization responds to a legal investigation, the workflow around identifying, preserving, and collecting potentially relevant content is based on the people in the organization who are the custodians of relevant data. In eDiscovery, these individuals are called *data custodians* (or just *custodians*) and are defined as "persons having administrative control of a document or electronic file". For example, the custodian of an email message could be the owner of the mailbox that contains the relevant message.
 
 Additionally, there may be content located in mailboxes and sites that aren't associated with a custodian but that's relevant to the case. Content locations where case custodians don't have administrative control but may be owners of relevant data, are known as *non-custodial data sources*.

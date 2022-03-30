@@ -22,6 +22,8 @@ description: "Prescriptive guidance to deploy Microsoft Purview Information Prot
 
 # Deploy a Microsoft Purview Information Protection solution
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 >*[Licensing for Microsoft 365 Security & Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
 Your information protection strategy is driven by your business needs. Many organizations must comply with regulations, laws, and business practices. Additionally, organizations need to protect proprietary information, such as data for specific projects.

@@ -23,6 +23,8 @@ description: "There are many sensitive information types that are ready for you 
 
 # Sensitive information type entity definitions
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 This article lists all sensitive information type entity definitions. Each definition shows what a DLP policy looks for to detect each type. To learn more about sensitive information types, see [Sensitive information types](sensitive-information-type-learn-about.md)
 
 > [!NOTE]

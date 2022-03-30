@@ -20,6 +20,8 @@ description: "Use these procedures to take advantage of named entities in your d
 
 # Use named entities in your data loss prevention policies (preview)
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 > [!IMPORTANT]
 > The named entities feature is rolling out and will appear in your tenant when it is available to you. Check for them in content explorer and in the Microsoft Purview Data Loss Prevention (DLP) policy authoring flow. 
 

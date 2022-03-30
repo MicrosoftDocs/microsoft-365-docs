@@ -21,6 +21,8 @@ ms.custom: seo-marvel-apr2020
 
 # Common usage scenarios for sensitive information types
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 This article describes how to implement some common sensitive information type (SIT) use case scenarios. You can use these procedures as examples and adapt them to your specific needs.
 
 ## Protect credit card numbers

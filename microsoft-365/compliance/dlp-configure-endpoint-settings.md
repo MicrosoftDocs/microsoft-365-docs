@@ -22,6 +22,8 @@ description: "Learn how to configure endpoint data loss prevention (DLP) central
 
 # Configure endpoint data loss prevention settings
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Many aspects of Endpoint data loss prevention (DLP) behavior are controlled by centrally configured settings. Settings are applied to all DLP policies for devices.
 
 ![Endpoint DLP settings](../media/endpoint-dlp-1-using-dlp-settings.png)

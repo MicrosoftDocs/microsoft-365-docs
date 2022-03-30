@@ -21,6 +21,8 @@ description: "Microsoft Purview Compliance Manager provides templates for buildi
 
 # Compliance Manager templates list
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 **In this article:** View the comprehensive list of **templates** available for creating assessments in Compliance Manager.
 
 > [!IMPORTANT]

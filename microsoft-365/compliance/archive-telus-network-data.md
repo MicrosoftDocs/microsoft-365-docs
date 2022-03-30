@@ -16,6 +16,8 @@ description: "Admins can set up a TeleMessage connector to import and archive SM
 
 # Set up a connector to archive TELUS Network data
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Use the TeleMessage connector in the Microsoft Purview portal to import and archive Short Messaging Service (SMS) data from your organization's TELUS Network. After you set up and configure a connector, it connects to your organization's TELUS Network once every day, and imports SMS data to mailboxes in Microsoft 365.
 
 After SMS messages are stored in user mailboxes, you can apply Microsoft Purview features such as Litigation Hold, Content Search, and Microsoft 365 retention policies to TELUS data. For example, you can search TELUS SMS messages using Content Search or associate the mailbox that contains the TELUS data with a custodian in an Advanced eDiscovery case. Using a TELUS Network connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.

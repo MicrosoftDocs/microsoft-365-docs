@@ -19,6 +19,8 @@ description: "Microsoft Teams chats and channels support Data Loss Prevention (D
 
 # Data loss prevention and Microsoft Teams
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 If your organization has Microsoft Purview Data Loss Prevention (DLP), you can define policies that prevent people from sharing sensitive information in a Microsoft Teams channel or chat session. Here are some examples of how this protection works:
 
 - **Example 1: Protecting sensitive information in messages**. Suppose that someone attempts to share sensitive information in a Teams chat or channel with guests (external users). If you have a DLP policy defined to prevent this, messages with sensitive information that are sent to external users are deleted. This happens automatically, and within seconds, according to how your DLP policy is configured.

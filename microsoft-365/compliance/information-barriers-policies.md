@@ -20,6 +20,8 @@ ms.custom: seo-marvel-apr2020
 
 # Get started with information barriers
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 With Microsoft Purview Information Barriers, you can define policies that are designed to prevent certain segments of users from communicating with each other or allow specific segments to communicate only with certain other segments. Information barrier policies can help your organization maintain compliance with relevant industry standards and regulations, and avoid potential conflicts of interest. For more information, see [Learn about information barriers](information-barriers.md).
 
 This article describes how to configure information barrier policies. Several steps are involved, so make sure you review entire process before you begin configuring information barrier policies.

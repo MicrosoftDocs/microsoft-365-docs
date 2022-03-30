@@ -22,6 +22,8 @@ description: "Understand how to work with Excel data for assessment templates in
 
 # Format assessment template data in Excel for Microsoft Purview Compliance Manager
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 When [creating](compliance-manager-templates-create.md), [modifying](compliance-manager-templates-modify.md), or [extending](compliance-manager-templates-extend.md) assessment templates in Compliance Manager, you will work with Excel spreadsheets that use a specific format and schema. These specifications must be followed for the files to import correctly.
 
 ## Download example spreadsheet

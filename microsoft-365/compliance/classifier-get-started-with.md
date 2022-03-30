@@ -23,6 +23,8 @@ description: "A Microsoft 365 classifier is a tool you can train to recognize va
 
 # Get started with trainable classifiers
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 A Microsoft 365 trainable classifier is a tool you can train to recognize various types of content by giving it samples to look at. Once trained, you can use it to identify item for application of Office sensitivity labels, Communications compliance policies, and retention label policies.
 
 Creating a custom trainable classifier first involves giving it samples that are human picked and positively match the category. Then, after it has processed those, you test the classifiers ability to predict by giving it a mix of positive and negative samples. This article shows you how to create and train a custom classifier and how to improve the performance of custom trainable classifiers and pre-trained classifiers over their lifetime through retraining.

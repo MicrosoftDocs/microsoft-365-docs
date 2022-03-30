@@ -27,6 +27,8 @@ description: "Learn how to enable or disable archive mailboxes to support your o
 
 # Enable archive mailboxes in the Microsoft Purview portal
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Archiving in Microsoft 365 (also called *In-Place Archiving*) provides users with additional mailbox storage space. For more information, see [Learn about archive mailboxes](archive-mailboxes.md).
 
 Use the information in this article to enable or disable an archive mailbox in the Microsoft Purview portal, or by using PowerShell. Also learn how to run an automated diagnostic check on a user's archive mailbox to identify any problems and suggested resolutions.

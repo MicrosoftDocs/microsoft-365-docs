@@ -20,6 +20,8 @@ description: "Learn about how Microsoft 365 eDiscovery tools handle encrypted do
 
 # Decryption in Microsoft 365 eDiscovery tools
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Encryption is an important part of your file protection and information protection strategy. Organizations of all types use encryption technology to protect sensitive content within their organization and ensure that only the right people have access to that content.
 
 To execute common eDiscovery tasks on encrypted content, eDiscovery managers were required to decrypt email message content as it was exported from content searches, Core eDiscovery cases, and Advanced eDiscovery cases. Content encrypted with Microsoft encryption technologies wasn't available for review until after it was exported.

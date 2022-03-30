@@ -23,6 +23,8 @@ description: Use the DLP reports in Office 365 to view the number of DLP policy 
 
 # View the reports for data loss prevention
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 After you create your Microsoft Purview data loss prevention (DLP) policies, you'll want to verify that they're working as you intended and helping you to stay compliant. With the DLP reports in the Security &amp; Compliance Center, you can quickly view:
   
 - **DLP policy matches** This report shows the count of DLP policy matches over time. You can filter the report by date, location, policy, or action. You can use this report to: 

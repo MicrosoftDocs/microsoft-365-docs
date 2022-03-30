@@ -24,6 +24,8 @@ description: "Preview a sample of the results returned by a Content search or a 
 
 # Preview eDiscovery search results
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 After you run a Content search or a search associated with a Core eDiscovery case, you can preview a sample of the results returned by the search. Previewing items returned by the search query can help you determine if the search is returning the results you hope for or if you need to change the search query and rerun the search.
 
 To preview a sample of results returned by a search:

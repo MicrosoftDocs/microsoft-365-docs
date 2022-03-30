@@ -20,6 +20,8 @@ ms.collection:
 
 # Communication compliance
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Protecting sensitive information and detecting and acting on workplace harassment incidents is an important part of compliance with internal policies and standards. Microsoft Purview Communication Compliance helps minimize these risks by helping you quickly detect, capture, and take remediation actions for email and Microsoft Teams communications. These include inappropriate communications containing profanity, threats, and harassment and communications that share sensitive information inside and outside of your organization.
 
 ## Configure communication compliance

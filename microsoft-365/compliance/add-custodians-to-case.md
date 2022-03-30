@@ -21,6 +21,8 @@ ms.custom: seo-marvel-apr2020
 
 # Add custodians to an Advanced eDiscovery case
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Use the built-in custodian management tool in Advanced eDiscovery to coordinate your workflows around managing custodians and identifying relevant, custodial data sources associated with a case. When you add a custodian, the system can automatically identify and place a hold on their Exchange mailbox and OneDrive for Business account. During the discovery process of your investigation, you might also identify other data sources (such as mailboxes, sites, or Teams) that a custodian accessed or contributed to. In this situation, you can use the custodian management tool to associate those data sources will a specific custodian. After you add custodians to a case and associate other data source with them, you can quickly preserve data and search the custodial data.
 
 You can add and manage custodians in Advanced eDiscovery cases in four steps:

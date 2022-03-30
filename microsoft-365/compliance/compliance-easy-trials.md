@@ -18,6 +18,8 @@ description: "About the compliance solutions trials."
 
 # About the compliance solutions trial
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Microsoft compliance solutions help protect your organization from internal threats rising from inappropriate permissions on files and emails, and helps your organization to comply with regulatory and policy requirements.
 
 The Microsoft Purview solutions trial is the easiest way to try all the capabilities of Microsoft compliance solutions, and setting it up only takes a couple of minutes. After the trial setup is complete, all features of the Microsoft E5 license package are available for you to use for up to 90 days.

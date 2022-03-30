@@ -22,6 +22,8 @@ description: "Learn how to configure data loss prevention (DLP) policies to use 
 
 # Using Endpoint data loss prevention
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 To help familiarize you with Endpoint DLP features and how they surface in DLP policies, we've put together some scenarios for you to follow.
 
 > [!IMPORTANT]

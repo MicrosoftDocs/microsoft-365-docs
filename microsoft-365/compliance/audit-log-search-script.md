@@ -23,6 +23,8 @@ description: "Use a PowerShell script that runs the Search-UnifiedAuditLog cmdle
 
 # Use a PowerShell script to search the audit log
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Security, compliance, and auditing have become a top priority for IT administrators in today’s world. Microsoft 365 has several built-in capabilities to help organizations manage security, compliance, and auditing. In particular, unified audit logging can help you investigate security incidents and compliance issues. You can retrieve audit logs by using the following methods:
 
 - [The Office 365 Management Activity API](/office/office-365-management-api/office-365-management-activity-api-reference)

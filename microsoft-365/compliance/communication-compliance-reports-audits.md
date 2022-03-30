@@ -23,6 +23,8 @@ search.appverid:
 
 # Use communication compliance reports and audits
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 ## Reports
 
 The new **Reports** dashboard is the central location for viewing all communication compliance reports. Report widgets provide a quick view of insights most commonly needed for an overall assessment of the status of communication compliance activities. Information contained in the report widgets isn't exportable. Detailed reports provide in-depth information related to specific communication compliance areas and offer the ability to filter, group, sort, and export information while reviewing. 

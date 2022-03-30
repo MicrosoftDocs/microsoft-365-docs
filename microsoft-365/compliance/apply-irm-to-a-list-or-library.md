@@ -25,6 +25,8 @@ ms.custom: seo-marvel-apr2020
 
 # Apply Information Rights Management (IRM) to a list or library
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 You can use Information Rights Management (IRM) to help control and protect files that are downloaded from lists or libraries. This feature is only supported in the Microsoft global cloud. IRM is not supported for SharePoint lists and libraries in national cloud deployments.
   
 ## Administrator preparations before applying IRM

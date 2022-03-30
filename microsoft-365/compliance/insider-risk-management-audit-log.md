@@ -16,6 +16,8 @@ ms.collection: m365-security-compliance
 
 # Insider risk management audit log
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 The insider risk management audit log enables you to stay informed on the actions that were taken on insider risk management features. This log allows independent review of the actions taken by users assigned to one or more insider risk management role groups. The insider risk management audit log is automatically enabled in your organization and cannot be disabled.
 
 ![Insider risk management audit log.](../media/insider-risk-audit-log.png)

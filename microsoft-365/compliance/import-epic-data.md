@@ -18,6 +18,8 @@ description: "Administrators can set up a data connector to import electronic he
 
 # Set up a connector to import Epic EHR audit data (preview)
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 You can set up a data connector in the Microsoft Purview portal to import audit records for user activity in your organization's Epic Electronic Healthcare Records (EHR) system. Audit records from your Epic EHR system include records for events related to accessing a patient's health records. Epic EHR audit records can be used by the Microsoft 365 [insider risk management solution](insider-risk-management.md) to help protect your organization from unauthorized access to patient information.
 
 Setting up an Epic connector consists of the following tasks:

@@ -21,6 +21,8 @@ description: "This article describes the limits in core eDiscovery case in Micro
 
 # Limits in Core eDiscovery
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 The following table lists the limits for core eDiscovery cases and holds associated with a core eDiscovery case. For more information about Core eDiscovery, see [Overview of Core eDiscovery](./get-started-core-ediscovery.md).
     
   | Description of limit | Limit |

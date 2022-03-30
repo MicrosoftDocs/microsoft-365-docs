@@ -20,6 +20,8 @@ description: "Use collections in Advanced eDiscovery to collect cloud attachment
 
 # Collect cloud attachments in Advanced eDiscovery (preview)
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Cloud attachments are links to documents that are typically stored in SharePoint site and OneDrive. So instead of attaching an actual copy of a document in an email message or a Teams chat conversation, you have the option of sharing a link to the file. Cloud attachments are an effective way to share documents and collaborate with other people in your organization. But cloud attachments present challenges during the eDiscovery workflow because only the cloud attachment link and not the actual content in the shared document are returned in an eDiscovery search. To address this challenge, Advanced eDiscovery provides two solutions for collecting cloud attachments:  
 
 - Collecting the live version of a document that is linked to in a cloud attachment.

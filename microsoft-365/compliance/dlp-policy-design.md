@@ -19,6 +19,8 @@ description: "Learn how to design a data loss prevention (DLP) policy"
 
 # Design a data loss prevention policy
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Taking the time to design a policy before you implement it will get you to the desired results faster, and with fewer unintended issues, than creating it and then tuning by trial and error alone. Having your policy designs documented will also help you in communications, policy reviews, troubleshooting, and further tuning.
 
 <!--, but excessive tuning to get the intended results can be time consuming.

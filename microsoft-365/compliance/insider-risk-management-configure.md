@@ -20,6 +20,8 @@ ms.custom: admindeeplinkCOMPLIANCE
 
 # Get started with insider risk management
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Use insider risk management policies to identify risky activities and management tools to act on risk alerts in your organization. Complete the following steps to set up prerequisites and configure an insider risk management policy.
 
 > [!IMPORTANT]

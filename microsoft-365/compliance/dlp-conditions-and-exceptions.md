@@ -19,6 +19,8 @@ description: "learn about dlp policy conditions and exceptions"
 
 # DLP policy conditions, exceptions, and actions
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Conditions and exceptions in DLP policies identify sensitive items that the policy is applied to. Actions define what happens as a consequence of a condition of exception being met.
 
 - Conditions define what to include

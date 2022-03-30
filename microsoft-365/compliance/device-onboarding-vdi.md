@@ -20,6 +20,8 @@ description: Deploy the configuration package on virtual desktop infrastructure 
 
 # Onboard non-persistent virtual desktop infrastructure devices
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 **Applies to:**
 
 - [Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)

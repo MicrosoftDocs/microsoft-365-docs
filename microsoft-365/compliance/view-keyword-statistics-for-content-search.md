@@ -20,6 +20,8 @@ ms.custom: seo-marvel-apr2020
 
 # View statistics for eDiscovery search results
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 After you create and run a Content search or a search associated with a Core eDiscovery case, you can view statistics about the estimated search results. This includes a summary of the search results (similar to the summary of the estimated search results displayed on the search flyout page), the query statistics such as the number of content locations with items that match the search query, and the identity of content locations that have the most matching items.
   
 Additionally, you can use the keywords list to configure a search to return statistics for each keyword in a search query. This lets you compare the number of results returned by each keyword in a query.

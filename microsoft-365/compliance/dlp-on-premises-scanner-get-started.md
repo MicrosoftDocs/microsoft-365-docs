@@ -24,6 +24,8 @@ description: "Set up data loss prevention on-premises scanner"
 
 # Get started with the data loss prevention on-premises scanner
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 This article walks you through the prerequisites and configuration for the Microsoft Purview data loss prevention on-premises scanner.
 
 ## Before you begin

@@ -24,6 +24,8 @@ description: "Learn about extending Microsoft Purview solutions by using third-p
 
 # Microsoft Purview and Microsoft Priva extensibility
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Microsoft Purview solutions help organizations intelligently assess their compliance risks, govern and protect sensitive data, and effectively respond to regulatory requirements. Microsoft Purview is rich in extensibility scenarios and enables organizations to adapt, extend, integrate, accelerate, and support their compliance solutions.
 
 There are two key building blocks for compliance extensibility:

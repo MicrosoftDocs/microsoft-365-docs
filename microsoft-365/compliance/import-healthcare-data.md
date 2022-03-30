@@ -18,6 +18,8 @@ description: "Administrators can set up a data connector to import electronic he
 
 # Set up a connector to import healthcare EHR audit data (preview)
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 You can set up a data connector in the Microsoft Purview portal to import auditing data for user activity in your organization's Electronic Healthcare Records (EHR) system. Auditing data from your healthcare EHR system include data for events related to accessing a patient's health records. Healthcare EHR auditing data can be used by the Microsoft 365 [insider risk management solution](insider-risk-management.md) to help protect your organization from unauthorized access to patient information.
 
 Setting up a Healthcare connector consists of the following tasks:

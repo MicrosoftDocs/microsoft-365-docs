@@ -21,6 +21,8 @@ description: "This article describes how to manage Core eDiscovery cases. This i
 
 # Close, reopen, and delete a Core eDiscovery case
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 This article describes how to close, reopen, and delete Core eDiscovery cases in Microsoft 365.
 
 ## Close a case

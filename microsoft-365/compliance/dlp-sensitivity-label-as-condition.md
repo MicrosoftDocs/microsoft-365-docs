@@ -24,6 +24,8 @@ description: Learn about the services and item types that you can use sensitivit
 
 # Use sensitivity labels as conditions in DLP policies
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 You can use [sensitivity labels](sensitivity-labels.md) as a condition in DLP policies for these locations:
 
 - Exchange Online email messages

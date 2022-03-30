@@ -22,6 +22,8 @@ description: "Advanced Audit in Microsoft 365 provides new auditing capabilities
 
 # Advanced Audit in Microsoft 365
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 The [Audit functionality](search-the-audit-log-in-security-and-compliance.md) in Microsoft 365 provides organizations with visibility into many types of audited activities across many different services in Microsoft 365. Advanced Audit helps organizations to conduct forensic and compliance investigations by increasing audit log retention required to conduct an investigation, providing access to crucial events (by using Audit log search in the Microsoft Purview portal and the Office 365 Management Activity API) that help determine scope of compromise, and faster access to Office 365 Management Activity API.
 
 > [!NOTE]
