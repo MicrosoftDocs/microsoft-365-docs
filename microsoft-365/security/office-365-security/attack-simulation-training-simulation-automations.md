@@ -6,7 +6,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: how-to
 ms.prod: m365-security
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
   - M365-security-compliance
   - m365initiative-defender-office365
@@ -29,7 +29,7 @@ To create a simulation automation, do the following steps:
 
 2. On the **Simulation automations** tab, select ![Create automation icon.](../../media/m365-cc-sc-create-icon.png) **Create automation**.
 
-   ![Create automation button on the Simulation automations tab in Attack simulation training in the Microsoft 365 Defender portal.](../../media/attack-sim-training-sim-automations-create.png)
+   :::image type="content" source="../../media/attack-sim-training-sim-automations-create.png" alt-text="The Create simulation button on the Simulation automations tab in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-sim-automations-create.png":::
 
 3. The creation wizard opens. The rest of this article describes the pages and the settings they contain.
 
@@ -57,7 +57,7 @@ On the **Select social engineering techniques** page, select one or more of the 
 
 If you click the **View details** link in the description, a details flyout opens that describes the technique and the simulation steps that result from the technique.
 
-![Details flyout for the credential harvest technique on the Select social engineering techniques page.](../../media/attack-sim-training-simulations-select-technique-sim-steps.png)
+:::image type="content" source="../../media/attack-sim-training-simulations-select-technique-sim-steps.png" alt-text="The Details flyout for the credential harvest technique on the Select social engineering techniques page" lightbox="../../media/attack-sim-training-simulations-select-technique-sim-steps.png":::
 
 When you're finished, click **Next**.
 
@@ -106,7 +106,7 @@ If you select a payload from the list by clicking on the name, details about the
 - The **Overview** tab contains an example and other details about the payload.
 - The **Simulations launched** tab contains the **Simulation name**, **Click rate**, **Compromised rate**, and **Action**.
 
-![Payload details flyout in Attack simulation training in the Microsoft 365 Defender portal.](../../media/attack-sim-training-simulations-select-payload-details.png)
+:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-details.png" alt-text="The Payload details flyout in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-simulations-select-payload-details.png":::
 
 When you're finished, click **Next**.
 
@@ -136,7 +136,7 @@ On the **Target users** page, select who will receive the simulation. Configure 
         - Select **All Title**
         - Select existing Title values.
 
-      ![User filtering on the Target users page in Attack simulation training in the Microsoft 365 Defender portal.](../../media/attack-sim-training-simulations-target-users-filter-by-category.png)
+      :::image type="content" source="../../media/attack-sim-training-simulations-target-users-filter-by-category.png" alt-text="The user filtering on the Target users page in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-simulations-target-users-filter-by-category.png":::
 
       After you identify your criteria, the affected users are shown in the **User list** section that appears, where you can select some or all of the discovered recipients.
 
@@ -174,7 +174,7 @@ On the **Assign training** page, you can assign trainings for the simulation. We
       - **7 days after simulation ends**
   - **No training**: If you select this value, the only option on the page is the **Next** button that takes you to the [**Landing page**](#landing-page) page.
 
-![Add recommended training on the Training assignment page in Attack simulation training in the Microsoft 365 Defender portal.](../../media/attack-sim-training-simulations-assign-training-add-recommended-training.png)
+:::image type="content" source="../../media/attack-sim-training-simulations-assign-training-add-recommended-training.png" alt-text="The option to add the recommended training on the Training assignment page in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-simulations-assign-training-add-recommended-training.png":::
 
 ### Training assignment
 
@@ -216,7 +216,7 @@ For each training in the list, you need to select who gets the training by selec
 
 If you don't want to use a training that's shown, click ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete**.
 
-![Training assignment page in Attack simulation training in the Microsoft 365 Defender portal.](../../media/attack-sim-training-training-assignment.png)
+:::image type="content" source="../../media/attack-sim-training-training-assignment.png" alt-text="The Training assignment page in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-training-assignment.png":::
 
 When you're finished, click **Next**.
 
@@ -226,15 +226,10 @@ On the **Landing page** page, you configure the web page that user are taken to 
 
 - **Select landing page preference**: The available values depend on your previous selections on the [Select payloads](#select-payloads) page as described in the following table:
 
-  <br>
-
-  ****
-
   |Selection on Select payloads page|Available values for Select landing page preference|
   |---|---|
   |Manually select|Use Microsoft default landing page <p> Create your own landing page <p> Use a custom URL <p> **Note**: The **Use a custom URL** value is not available if you previously selected **Malware attachment** or **Link to malware** on the [Select social engineering techniques](#select-one-or-more-social-engineering-techniques) page.|
   |Randomize|Use Microsoft default landing page|
-  |
 
   The available **Select landing page preference** values and their associated settings are described in the following list:
 
@@ -243,7 +238,7 @@ On the **Landing page** page, you configure the web page that user are taken to 
     You need to configure the following additional settings on the **Landing page** page:
 
     - **Select landing page layout**: Select one of the 5 available landing page templates.
-    - **Add logo**: Click **Browse** to find and select a .png, .jpeg, or .gif file to add to all payloads that are selected by Microsoft. To remove the logo, click **Remove**.
+    - **Add logo**: Click **Browse** to find and select a .png, .jpeg, or .gif file to add to all payloads that are selected by Microsoft. The logo size should be a maximum of 210 x 70 to avoid distortion. To remove the logo, click **Remove**.
     - **Payload indicators**: This setting is not available if you previously selected **Malware attachment** or **Link to malware** on the [Select social engineering techniques](#select-one-or-more-social-engineering-techniques) page.
 
       Select **Add payload indicators to email** to help users learn how to identify phishing messages.

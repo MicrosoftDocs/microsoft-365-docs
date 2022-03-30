@@ -48,11 +48,14 @@ This article describes error messages and problems that you might encounter whil
 
 **Cause:** Your customer tenants don't meet the following criteria:
 
-  - Must have delegated (DAP) or granular delegated (GDAP) admin privileges set up for the Managed Service Provider (MSP)
-  - Must have at least one Microsoft 365 Business Premium or Microsoft 365 E3 license
+  - Must have delegated (DAP) set up for the Managed Service Provider (MSP) to be able to manage the customer tenant*
+  - Must have at least one Microsoft 365 Business Premium, Microsoft 365 E3 license, or Windows 365 Business license
   - Must have no more than 1000 licensed users 
 
-**Resolution:** The following table describes the different tenant statuses that require action and explains how to resolve them.<br><br>
+**Resolution:** The following table describes the different tenant statuses that require action and explains how to resolve them.
+
+*Delegated Admin Privileges (DAP) is required to onboard customers to Lighthouse. We recommend also establishing Granular Delegated Admin Privileges (GDAP) with your customers to enable more secure delegated access. While DAP and GDAP coexist, GDAP will take precedence for customers where both models are in place. Soon, customers with just GDAP (and no DAP) will be able to onboard to Lighthouse.<br><br>
+
 
 | Status | Description | Resolution |
 |--|--|--|
@@ -124,12 +127,6 @@ For customers with DAP relationships, the partner admin will need to assign you 
 **Resolution:** When a tenant device is added, allow 4 hours for the device data to appear in Lighthouse.
 
 If data is still not appearing on the Device compliance and Threat management pages after following the resolution instructions, contact Support. For more information, see [Get help and support for Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
-
-### There are no Windows 365 Business Cloud PCs in Lighthouse  
-
-**Cause**: Lighthouse doesn't currently support viewing and managing of Windows 365 Business Cloud PCs.
-
-**Resolution:** You can view and manage your Windows 365 Business Cloud PCs in the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339) or at [https://windows365.microsoft.com](https://windows365.microsoft.com).
 
 ## Related content
 
