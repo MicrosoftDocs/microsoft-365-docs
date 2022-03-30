@@ -51,19 +51,20 @@ To add, modify, or remove domains, you **must** be a **Domain Name Administrator
 
 ## Add a new onmicrosoft.com domain
 
-1. In the Microsoft 365 admin center, in the left nav bar select **Settings**, and then select **Domains**.
+1. In the Microsoft 365 admin center, select **Settings**, and then select **Domains**.
+2. Select your onmicrosoft.com default domain.
 
     ![Screenshot of Domains page.](../../media/onmicrosoft-domains.png)
   
-2. On the domain properties page, in the **About this domain** section, select **Add onmicrosoft domain**.
+3. On the domain properties page, in the **About this domain** section, select **Add onmicrosoft domain**.
 
     ![Screenshot of Domains page.](../../media/add-onmicrosoft-domain-link.png)
 
-3. In the **Add onmicrosoft domain** page, in the **Domain name** box, type the name for your new onmicrosoft.com domain.
+4. In the **Add onmicrosoft domain** page, in the **Domain name** box, type the name for your new onmicrosoft.com domain.
 
     ![Screenshot of Add onmicrosoft domain page.](../../media/add-an-onmicrosoftcom-domain-page.png)
     
-4. Select **Add domain**. When successfully added, you will see a message stating this. 
+5. Select **Add domain**. When successfully added, you will see a message stating this. 
     
     ![Screenshot of domain added successfully.](../../media/domain-added.png)
 
