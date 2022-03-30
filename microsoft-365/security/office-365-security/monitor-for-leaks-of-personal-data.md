@@ -28,7 +28,7 @@ ms.prod: m365-security
 
 There are many tools that can be used to monitor the use and transport of personal data. This topic describes three tools that work well.
 
-![Tools to monitor the use and transport of personal data.](../../media/Monitor-for-leaks-of-personal-data-image1.png)
+:::image type="content" source="../../media/Monitor-for-leaks-of-personal-data-image1.png" alt-text="The tools to monitor the use and transport of personal data" lightbox="../../media/Monitor-for-leaks-of-personal-data-image1.png":::
 
 In the illustration:
 
@@ -57,7 +57,7 @@ DLP reports are in the Microsoft 365 compliance center. Go to **Reports** \> **O
 
 For more information, see [View the reports for data loss prevention](../../compliance/view-the-dlp-reports.md).
 
-![Report showing DLP policy matches.](../../media/Monitor-for-leaks-of-personal-data-image2.png)
+:::image type="content" source="../../media/Monitor-for-leaks-of-personal-data-image2.png" alt-text="The report showing DLP policy matches" lightbox="../../media/Monitor-for-leaks-of-personal-data-image2.png":::
 
 ## Audit log and alert policies
 
@@ -93,7 +93,7 @@ To better understand your cloud environment, the Defender for Cloud Apps investi
 
 For examples, the following illustration demonstrates two Defender for Cloud Apps policies that can help with GDPR.
 
-![Example Defender for Cloud Apps policies.](../../media/Monitor-for-leaks-of-personal-data-image3.png)
+:::image type="content" source="../../media/Monitor-for-leaks-of-personal-data-image3.png" alt-text="The Defender for Cloud Apps policies" lightbox="../../media/Monitor-for-leaks-of-personal-data-image3.png":::
 
 The first policy alerts when files with a predefined PII attribute or custom expression that you choose is shared outside the organization from the SaaS apps that you choose.
 
@@ -111,7 +111,7 @@ If you haven't yet started to use Defender for Cloud Apps, begin by starting it 
 > [!NOTE]
 > Be sure to enable 'Automatically scan files for Azure Information Protection classification labels' (in General settings) when getting started with Defender for Cloud Apps or before you assign labels. After setup, Defender for Cloud Apps does not scan existing files again until they are modified.
 
-![Dashboard showing information about alerts.](../../media/Monitor-for-leaks-of-personal-data-image4.png)
+:::image type="content" source="../../media/Monitor-for-leaks-of-personal-data-image4.png" alt-text="The dashboard showing information about alerts" lightbox="../../media/Monitor-for-leaks-of-personal-data-image4.png":::
 
 More information:
 
@@ -125,10 +125,6 @@ More information:
 
 Alert when a file containing a credit card number is shared from an approved cloud app.
 
-<br>
-
-****
-
 |Control|Settings|
 |---|---|
 |Policy type|File policy|
@@ -140,7 +136,6 @@ Alert when a file containing a credit card number is shared from an approved clo
 |Content inspection|Includes files that match a present expression: All countries: Finance: Credit card number <p> Don't require relevant context: unchecked (this setting will match keywords as well as regex) <p> Includes files with at least 1 match <p> Unmask the last 4 characters of the violation: checked|
 |Alerts|Create an alert for each matching file: checked <p> Daily alert limit: 1000 <p> Select an alert as email: checked <p> To: infosec@contoso.com|
 |Governance|Microsoft OneDrive for Business <p> Make private: check Remove External Users <p> All other settings: unchecked <p> Microsoft SharePoint Online <p> Make private: check Remove External Users <p> All other settings: unchecked|
-|
 
 Similar policies:
 
@@ -156,10 +151,6 @@ Notes:
 - Box monitoring requires a connector be configured using the API Connector SDK.
 - This policy requires capabilities that are currently in private preview.
 
-<br>
-
-****
-
 |Control|Settings|
 |---|---|
 |Policy type|Activity policy|
@@ -170,7 +161,6 @@ Notes:
 |Filter settings|Activity type = Upload File <p> App = Microsoft OneDrive for Business and Box <p> Classification Label (currently in private preview): Azure Information Protection = Customer Data, Human Resources—Salary Data, Human Resources—Employee Data|
 |Alerts|Create an alert: checked <p> Daily alert limit: 1000 <p> Select an alert as email: checked <p> To: infosec@contoso.com|
 |Governance|All apps <p> Put user in quarantine: check <p> All other settings: unchecked <p> Office 365 <p> Put user in quarantine: check <p> All other settings: unchecked|
-|
 
 Similar policies:
 

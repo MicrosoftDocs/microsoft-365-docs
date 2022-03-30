@@ -324,8 +324,8 @@
 ##### [Schedule scans using PowerShell](schedule-antivirus-scans-powershell.md)
 ##### [Schedule scans using WMI](schedule-antivirus-scans-wmi.md)
 #### [Use limited periodic scanning in Microsoft Defender Antivirus](limited-periodic-scanning-microsoft-defender-antivirus.md)
-#### [Tune performance of Microsoft Defender Antivirus](tune-performance-defender-antivirus.md)
 #### [Compatibility with other security products](microsoft-defender-antivirus-compatibility.md)
+#### [Find malware detection names for Microsoft Defender for Endpoint](find-defender-malware-name.md)
 
 #### [Get your antivirus and antimalware updates](manage-updates-baselines-microsoft-defender-antivirus.md)
 ##### [Manage the sources for Microsoft Defender Antivirus protection updates](manage-protection-updates-microsoft-defender-antivirus.md)
@@ -363,9 +363,13 @@
 ##### [Exclusions for Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)
 ##### [Common mistakes to avoid](common-exclusion-mistakes-microsoft-defender-antivirus.md)
 
-#### Troubleshooting Microsoft Defender Antivirus
+#### Diagnostics and performance for Microsoft Defender Antivirus
+##### [Device health and compliance reports](machine-reports.md)
+##### [Troubleshoot performance issues related to real-time protection](troubleshoot-performance-issues.md) 
 ##### [Troubleshoot Microsoft Defender Antivirus reporting in Update Compliance](troubleshoot-reporting.md)
-##### [Troubleshoot performance issues](troubleshoot-performance-issues.md)
+##### [Tune performance of Microsoft Defender Antivirus](tune-performance-defender-antivirus.md)
+
+#### Troubleshooting Microsoft Defender Antivirus
 ##### [Review event logs and error codes to troubleshoot issues with Microsoft Defender Antivirus](troubleshoot-microsoft-defender-antivirus.md)
 ##### [Troubleshoot Microsoft Defender Antivirus while migrating from a third-party solution](troubleshoot-microsoft-defender-antivirus-when-migrating.md)
 
@@ -455,7 +459,6 @@
 #### [Reporting]()
 ##### [Power BI - How to use API - Samples](api-power-bi.md)
 ##### [Threat protection reports](threat-protection-reports.md)
-#### [Device health and compliance reports](machine-reports.md)
 
 ### [Advanced hunting]()
 #### [Advanced hunting overview](advanced-hunting-overview.md)

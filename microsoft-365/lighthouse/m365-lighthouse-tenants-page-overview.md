@@ -109,7 +109,7 @@ To edit details or delete an existing contact, select the contact name from the 
 
 #### Microsoft 365 usage card
 
-Lighthouse provides insights into Microsoft 365 services usage, including how many users within a tenant are licensed and actively using each service. Active indicates the number of users or devices that have signed into the service at least once in the past 28 days. Change indicates change in active users and devices since last month.
+Lighthouse provides insights into Microsoft 365 services usage, including how many users within a tenant are licensed and actively using each service. Active indicates the number of users or devices that have signed in to the service at least once in the past 28 days. Change indicates change in active users and devices since last month.
 
 The Microsoft 365 Usage card contains two sections:
 

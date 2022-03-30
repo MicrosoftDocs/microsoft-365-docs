@@ -1,13 +1,11 @@
 ---
 title: "About AutoPilot Profile settings"
-f1.keywords:
-- NOCSH
 ms.author: efrene
 author: efrene
 manager: scotv
 audience: Admin
 ms.topic: conceptual
-f1_keywords:
+f1.keywords:
 - 'ZTDProfileSettings'
 - 'O365E_ZTDProfileSettings'
 - 'BCS365_ZTDProfileSettings'

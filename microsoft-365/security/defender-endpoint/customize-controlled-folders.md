@@ -13,7 +13,7 @@ ms.reviewer: oogunrinde, dbodorin, vladiso, nixanm, anvascon
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.collection: m365initiative-m365-defender
+ms.collection: M365-security-compliance
 ms.date:
 ---
 
@@ -85,7 +85,7 @@ You can use the Windows Security app, Group Policy, PowerShell cmdlets, or mobil
     ```
 3. Repeat step 2 for each folder that you want to protect. Folders that are protected are visible in the Windows Security app.
 
-   :::image type="content" source="images/cfa-allow-folder-ps.png" alt-text="PowerShell window with cmdlet shown.":::
+   :::image type="content" source="images/cfa-allow-folder-ps.png" alt-text="The PowerShell window with cmdlet shown" lightbox="images/cfa-allow-folder-ps.png":::
 
 > [!IMPORTANT]
 > Use `Add-MpPreference` to append or add apps to the list and not `Set-MpPreference`. Using the `Set-MpPreference` cmdlet will overwrite the existing list.
@@ -115,7 +115,7 @@ An allowed application or service only has write access to a controlled folder a
 
 4. Select **Add an allowed app** and follow the prompts to add apps.
 
-   :::image type="content" source="images/cfa-allow-app.png" alt-text="Add an allowed app button.":::
+   :::image type="content" source="images/cfa-allow-app.png" alt-text="The Add an allowed app button" lightbox="images/cfa-allow-app.png":::
 
 ### Use Group Policy to allow specific apps
 
@@ -144,7 +144,7 @@ An allowed application or service only has write access to a controlled folder a
 
    Continue to use `Add-MpPreference -ControlledFolderAccessAllowedApplications` to add more apps to the list. Apps added using this cmdlet will appear in the Windows Security app.
 
-   :::image type="content" source="images/cfa-allow-app-ps.png" alt-text="PowerShell cmdlet to allow an app.":::
+   :::image type="content" source="images/cfa-allow-app-ps.png" alt-text="The PowerShell cmdlet to allow an application" lightbox="images/cfa-allow-app-ps.png":::
 
 > [!IMPORTANT]
 > Use `Add-MpPreference` to append or add apps to the list. Using the `Set-MpPreference` cmdlet will overwrite the existing list.

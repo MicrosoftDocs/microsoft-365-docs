@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Reports in the admin center - OneDrive for Business activity"
+title: "Microsoft 365 OneDrive for Business activity reports"
 f1.keywords:
 - NOCSH
 ms.author: kwekua

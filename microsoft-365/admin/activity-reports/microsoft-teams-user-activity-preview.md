@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Reports in the admin center - Microsoft Teams user activity"
+title: "Microsoft 365 admin center Teams user activity reports"
 ms.author: kwekua
 author: kwekua
 manager: scotv

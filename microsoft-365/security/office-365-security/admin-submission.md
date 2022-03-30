@@ -46,17 +46,17 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 - You open the Microsoft 365 Defender portal at <https://security.microsoft.com/>. To go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
 
-- To submit messages and files to Microsoft, you need to be a member of one of the following role groups:
+- To submit messages and files to Microsoft, you need to have one of following roles:
   - **Security Administrator** or **Security Reader** in the [Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
   
-    Note that membership in this role group is required to [View user submissions to the custom mailbox](#view-user-submissions-to-microsoft) as described later in this article.
+    Note that one of these roles is required to [View user submissions to the custom mailbox](#view-user-submissions-to-microsoft) as described later in this article.
 
 - Admins can submit messages as old as 30 days if it is still available in the mailbox and not purged by the user or another admin.
 
 - Admin submissions are throttled at the following rates:
   - Maximum submissions in any 15 minutes period: 150 submissions
   - Same submissions in a 24 hour period: 3 submissions
-  - Same submissions in a 15 minute period: 1 submissions
+  - Same submissions in a 15 minute period: 1 submission
   
 - For more information about how users can submit messages and files to Microsoft, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 
@@ -79,13 +79,13 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 3. Select the **Mark as and notify** drop-down, and then select **No threats found** \> **Phishing** or **Junk**.
 
-   :::image type="content" alt-text="Send messages from portal." source="../../media/unified-submission-user-reported-message.png" lightbox="../../media/unified-submission-user-reported-message.png":::
+   :::image type="content" source="../../media/unified-submission-user-reported-message.png" alt-text="The Submissions page" lightbox="../../media/unified-submission-user-reported-message.png":::
 
-The reported message will be marked as a false positive or a false negative. An email notification be sent automatically from within the portal to the user who reported the message.
+The reported message will be marked as a false positive or a false negative. An email notification is sent automatically from within the portal to the user who reported the message.
 
 ### Submit a questionable email to Microsoft
 
-1. In the **Select the submission type** box, verify that **Email** is selected in the drop down list.
+1. In the **Select the submission type** box, verify that **Email** is selected in the dropdown list.
 
 2. In the **Add the network message ID or upload the email file** section, use one of the following options:
    - **Add the email network message ID**: This is a GUID value that's available in the **X-MS-Exchange-Organization-Network-Message-Id** header in the message or in the **X-MS-Office365-Filtering-Correlation-Id** header in quarantined messages.
@@ -103,11 +103,11 @@ The reported message will be marked as a false positive or a false negative. An 
 5. When you're finished, click **Submit**.
 
     > [!div class="mx-imgBorder"]
-    > ![New URL submission example.](../../media/submission-flyout-email.png)
+    > :::image type="content" source="../../media/submission-flyout-email.png" alt-text="The New URL submission process" lightbox="../../media/submission-flyout-email.png":::
 
 ### Send a suspect URL to Microsoft
 
-1. In the **Select the submission type** box, select **URL** from the drop down list.
+1. In the **Select the submission type** box, select **URL** from the dropdown list.
 
 2. In the **URL** box that appears, enter the full URL (for example, `https://www.fabrikam.com/marketing.html`).
 
@@ -120,11 +120,11 @@ The reported message will be marked as a false positive or a false negative. An 
 4. When you're finished, click **Submit**.
 
     > [!div class="mx-imgBorder"]
-    > ![New Email submission example.](../../media/submission-url-flyout.png)
+    > :::image type="content" source="../../media/submission-url-flyout.png" alt-text="The New Email submission process" lightbox="../../media/submission-url-flyout.png":::
 
 ### Submit a suspected email attachment to Microsoft
 
-1. In the **Select the submission type** box, select **Email attachment** from the drop down list.
+1. In the **Select the submission type** box, select **Email attachment** from the dropdown list.
 
 2. In the **File** section that appears, click **Browse files**. In the dialog that opens, find and select the file, and then click **Open**.
 
@@ -137,7 +137,7 @@ The reported message will be marked as a false positive or a false negative. An 
 4. When you're finished, click **Submit**.
 
     > [!div class="mx-imgBorder"]
-    > ![New Attachment submission example.](../../media/submission-file-flyout.png)
+    > :::image type="content" source="../../media/submission-file-flyout.png" alt-text="The New Attachment submission process" lightbox="../../media/submission-file-flyout.png":::
 
 > [!NOTE]
 > If malware filtering has replaced the message attachments with the Malware Alert Text.txt file, you need to submit the original message from quarantine that contains the original attachments. For more information on quarantine and how to release messages with malware false positives, see [Manage quarantined messages and files as an admin](manage-quarantined-messages-and-files.md).
@@ -173,7 +173,7 @@ The reported message will be marked as a false positive or a false negative. An 
      When you're finished, click **Apply**.
 
      > [!div class="mx-imgBorder"]
-     > ![New Customize column options for admin submissions.](../../media/admin-submission-customize-columns.png)
+     > :::image type="content" source="../../media/admin-submission-customize-columns.png" alt-text="The New Customize column options for admin submissions" lightbox="../../media/admin-submission-customize-columns.png":::
 
    - To filter the entries, click **Filter**. The available filters are:
      - **Date submitted**: **Start date** and **End date**.
@@ -190,9 +190,9 @@ The reported message will be marked as a false positive or a false negative. An 
      When you're finished, click **Apply**.
 
      > [!div class="mx-imgBorder"]
-     > ![New Filter options for admin submissions.](../../media/admin-submission-filters.png)
+     > :::image type="content" source="../../media/admin-submission-filters.png" alt-text="The New Filter options for admin submissions" lightbox="../../media/admin-submission-filters.png":::
 
-   - To group the entries, click **Group** and select one of the following values from the drop down list:
+   - To group the entries, click **Group** and select one of the following values from the dropdown list:
      - **None**
      - **Type**
      - **Reason**
@@ -258,9 +258,9 @@ If you've deployed the [Report Message add-in](enable-the-report-message-add-in.
      When you're finished, click **Apply**.
 
      > [!div class="mx-imgBorder"]
-     > ![New Filter options for user submissions.](../../media/admin-submission-reported-messages.png)
+     > :::image type="content" source="../../media/admin-submission-reported-messages.png" alt-text="The New Filter options for user submissions" lightbox="../../media/admin-submission-reported-messages.png":::
 
-   - To group the entries, click **Group** and select one of the following values from the drop down list:
+   - To group the entries, click **Group** and select one of the following values from the dropdown list:
      - **None**
      - **Reason**
      - **Sender**
@@ -284,7 +284,7 @@ Once a user submits a suspicious email to the custom mailbox, the user and admin
 
 If you've configured the custom mailbox to intercept user-reported messages without sending the messages to Microsoft, you can find and send specific messages to Microsoft for analysis.
 
-On the **User reported messages** tab, select a message in the list, click **Submit to Microsoft for analysis**, and then select one of the following values from the drop down list:
+On the **User reported messages** tab, select a message in the list, click **Submit to Microsoft for analysis**, and then select one of the following values from the dropdown list:
 
 - **Report clean**
 - **Report phishing**
@@ -293,4 +293,4 @@ On the **User reported messages** tab, select a message in the list, click **Sub
 - **Trigger investigation**
 
 > [!div class="mx-imgBorder"]
-> ![New Options on the Action button.](../../media/admin-submission-main-action-button.png)
+> :::image type="content" source="../../media/admin-submission-main-action-button.png" alt-text="The New options on the Action button" lightbox="../../media/admin-submission-main-action-button.png":::

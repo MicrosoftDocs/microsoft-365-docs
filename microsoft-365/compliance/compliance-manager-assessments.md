@@ -68,7 +68,7 @@ You can create a group while creating a new assessment. Groups can't be created 
 - Related assessment controls in different assessments within the same group automatically update when completed.
 - Groups can contain assessments for the same certification or regulation, but each group can only contain one assessment for a specific product-certification pair. For example, a group can't contain two assessments for Office 365 and NIST CSF. A group can contain multiple assessments for the same product only if the corresponding certification or regulation for each one is different.
 - Deleting an assessment breaks the relationship between that assessment and the group.
-- Groups can't be manually deleted.
+- Groups can't be deleted.
 
 ## Understand templates before creating assessments
 
@@ -175,9 +175,11 @@ Learn more about [how controls and improvement actions are tracked and scored.](
 
 When an update is available for an assessment, you’ll see a notification and have the option to accept the update or defer it for a later time.
 
+Updates are available for assessments based on Microsoft templates, such as those designed for use with Microsoft 365. If your organization is using universal templates for assessing other products, inheritance may not be supported. For more information, see [Extend assessment templates](compliance-manager-templates-extend.md).
+
 ### What causes an update
 
-An assessment update occurs when there are underlying template changes that impact scoring. Changes may involve adjusting control mapping or other guidance based on regulatory changes or product changes. Assessment updates can originate from your organization (such as, when a [custom template is modified](compliance-manager-templates-modify.md) as well as from Microsoft.
+An assessment update occurs when there are underlying template changes that impact scoring. Changes may involve adjusting control mapping or other guidance based on regulatory changes or product changes. Assessment updates can originate from your organization (such as when a [custom template is modified](compliance-manager-templates-modify.md)) as well as from Microsoft.
 
 If Microsoft updates a Compliance Manager template that you extended, your assessment will inherit those updates once you accept them. Your assessment will retain the additional attributes you applied to the assessment when you extended it.
 
