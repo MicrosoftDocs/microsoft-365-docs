@@ -27,20 +27,20 @@ We recommend assigning roles to groups of MSP technicians based on the tasks eac
 The table in the next section describes which GDAP roles grant permission to read customer data and take action on customer tenants in Lighthouse. See [Permissions in the partner tenant](#permissions-in-the-partner-tenant) in this article for additional roles required to manage Lighthouse entities (for example, tags and Lighthouse service requests).
 
 > [!NOTE]
->GDAP is currently in technical release (public preview) to allow partners to assign granular permissions before GDAP is generally available. Check [Known Issues](m365-lighthouse-known-issues.md) if you are experiencing an issue accessing or doing something in Lighthouse.
+>GDAP is currently in [technical preview](/partner-center/announcements/2022-february#6) (public preview) to allow partners to assign granular permissions before GDAP is generally available. Check [Known Issues](m365-lighthouse-known-issues.md) if you're having a problem accessing or performing an action in Lighthouse.
 
 ## Example MSP service tiers and recommended GDAP roles
 
 | Lighthouse page | Account Managers| Service Desk Technician |System Administrators | Escalation Engineers|
 |---|---|---|---|---|
-| | <ul><li>Helpdesk</li><li>Administrator</li></ul>|<ul><li>Security Reader +</li><li>Helpdesk Administrator</li></ul> |<ul><li>Global Reader +</li><li>User Administrator +</li><li>Authentication Administrator</li></ul> |<ul><li>Global Reader +</li><li>User Administrator +</li><li>Intune Administrator +</li><li>Security Administrator</li></ul>|
-|**Home**  | <ul><li>View all data</li></ul> | <ul><li>View all data</li></ul>| <ul><li>View all data</li></ul>  | <ul><li>View all data</li></ul> | 
+| | Helpdesk Administrator |<ul><li>Security Reader<br>+</li><li>Helpdesk Administrator</li></ul> |<ul><li>Global Reader<br>+</li><li>User Administrator<br>+</li><li>Authentication Administrator</li></ul> |<ul><li>Global Reader<br>+</li><li>User Administrator<br>+</li><li>Intune Administrator<br>+</li><li>Security Administrator</li></ul>|
+|**Home**  | View all data | View all data | View all data | View all data | 
 |**Tenants**     | <ul><li>View tenants list</li><li>Update customer contacts and website</li><li>View deployment plans</li></ul>  | <ul><li>View tenants list</li><li>Update customer contacts and website</li><li>View deployment plans</li></ul>   |  <ul><li>View tenants list</li><li>Update customer contacts and website</li><li>View deployment plans</li><li>View Microsoft 365 services usage</li></ul> | <ul><li>View tenants list</li><li>Update customer contacts and website</li><li>View deployment plans</li><li>View Microsoft 365 services usage</li></ul>  |
 |**Users**   | <ul><li>View tenant level (non-user specific) data</li><li>Search user accounts across tenants</li><li>Reset password for non-administrators*</li></ul>  | <ul><li>View all user-specific data</li><li>Search user accounts across tenants</li><li>Reset password for non-administrators*</li></ul>|  <ul><li>View all user-specific data</li><li>Search user accounts across tenants</li><li>Reset password for non-administrators*</i><li>Block sign-in</li></ul>  | <ul><li>View all user-specific data</li><li>Search user accounts across tenants</li><li>Reset password for non-administrators*</li><li>Block sign-in</li><li>Confirm compromised users</li><li>Dismiss risk for users</li></ul> |
-|**Devices**    | <ul><li>View all data</li></ul> | <ul><li>View all data</li></ul>| <ul><li>View all data</li></ul>  | <ul><li>View all data</li><li>Sync device</li><li>Restart device</li><li>Collect diagnostics</li></ul>|
-|**Threat management**  | <ul><li>View all data</li></ul> | <ul><li>View all data</li></ul>| <ul><li>View all data</li></ul>  | <ul><li>View all data</li><li>Run full scan</li><li>Run quick scan</li><li>Update antivirus protection</li><li>Reboot device</li></ul>|
-|**Baselines**    | <ul><li>View all data</li></ul> | <ul><li>View all data</li></ul>| <ul><li>View all data</li></ul>  | <ul><li>View all data</li></ul> |
-|**Windows 365** |<ul><li>View all data</li></ul> | <ul><li>View all data</li></ul>| <ul><li>View all data</li></ul>  | <ul><li>View all data</li></ul> |
+|**Devices**    | View all data | View all data | View all data | <ul><li>View all data</li><li>Sync device</li><li>Restart device</li><li>Collect diagnostics</li></ul>|
+|**Threat management**  | View all data | View all data | View all data | <ul><li>View all data</li><li>Run full scan</li><li>Run quick scan</li><li>Update antivirus protection</li><li>Reboot device</li></ul>|
+|**Baselines**    | View all data | View all data | View all data  | View all data |
+|**Windows 365** | View all data | View all data | View all data | View all data |
 |**Service health****|  
 |**Audit logs****|
 
