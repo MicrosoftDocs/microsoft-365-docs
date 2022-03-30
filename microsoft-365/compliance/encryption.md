@@ -40,9 +40,7 @@ Encryption by itself doesn't prevent content interception. Encryption is part of
   
 You can have multiple layers of encryption in place at the same time. For example, you can encrypt email messages and also the communication channels through which your email flows. With Office 365, your data is encrypted at rest and in transit, using several strong encryption protocols, and technologies that include Transport Layer Security/Secure Sockets Layer (TLS/SSL), Internet Protocol Security (IPSec), and Advanced Encryption Standard (AES).
   
-## Encryption
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)] for data at rest and data in transit
+## Encryption for data at rest and data in transit
 
  **Examples of data at rest** include files that you've uploaded to a SharePoint library, Project Online data, documents that you've uploaded in a Skype for Business meeting, email messages and attachments that you've stored in folders in your mailbox, and files you've uploaded to OneDrive for Business.
   

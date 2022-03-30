@@ -77,9 +77,7 @@ The keywords for your dictionary could come from various sources, most commonly 
 
 3. **Create your dictionary**. Choose a name and description and create your dictionary.
 
-## Create a keyword dictionary
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)] using the Security & Compliance Center
+## Create a keyword dictionary using the Security & Compliance Center
 
 Use the following steps to create and import keywords for a custom dictionary:
 
@@ -107,9 +105,7 @@ Use the following steps to create and import keywords for a custom dictionary:
 
 12. Review and finalize your sensitive info type selections, then select **Finish**.
 
-## Create a keyword dictionary
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)] from a file using PowerShell
+## Create a keyword dictionary from a file using PowerShell
 
 Often when you need to create a large dictionary, it's to use keywords from a file or a list exported from some other source. In this case, you'll create a keyword dictionary containing a list of inappropriate language to screen in external email. You must first [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
 

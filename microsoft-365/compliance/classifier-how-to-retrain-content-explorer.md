@@ -60,8 +60,6 @@ To understand more about the overall workflow of retraining a classifier, see [P
 
 ## How to retrain a classifier in content explorer
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 1. Sign in to Microsoft Purview portal with compliance admin or security admin role access and open **Microsoft Purview portal** > **Data classification** > **Content explorer**. 
 2. Under the **Filter on labels, info types, or categories** list, expand **Trainable classifiers**.
 

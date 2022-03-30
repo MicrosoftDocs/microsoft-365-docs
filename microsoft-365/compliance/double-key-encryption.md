@@ -1,8 +1,5 @@
 ---
 # required metadata
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 title: Double Key Encryption (DKE)
 description: DKE enables you to protect highly sensitive data while maintaining full control of your key.
 author: kccross
@@ -20,6 +17,8 @@ ms.custom: admindeeplinkCOMPLIANCE
 ---
 
 # Double Key Encryption for Microsoft 365
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > *Applies to: Double Key Encryption for Microsoft 365, [Microsoft Purview](https://www.microsoft.com/microsoft-365/business/compliance-management), [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 >

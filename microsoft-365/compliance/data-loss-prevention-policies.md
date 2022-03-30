@@ -1,8 +1,6 @@
 ---
 title: "Data Loss Prevention Reference"
 # rename the md file to the above title
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -31,6 +29,8 @@ description: data loss prevention reference material
 ---
 
 # Data loss prevention reference
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!IMPORTANT]
 > This is reference topic is no longer the main resource for Microsoft Purview Data Loss Prevention (DLP) information. The DLP content set is being updated and restructured. The topics covered in this article will be moving to new, updated articles. For more information about DLP, see [Learn about data loss prevention](dlp-learn-about-dlp.md).

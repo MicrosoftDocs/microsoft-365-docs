@@ -26,9 +26,7 @@ description: "Learn how to modify a keyword dictionary in the Microsoft Purview 
 
 You might need to modify keywords in one of your keyword dictionaries, or modify one of the built-in dictionaries. You can do this through PowerShell or through the Compliance center.
 
-## Modify a keyword dictionary
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)] in Compliance center
+## Modify a keyword dictionary in Compliance center
 
 Keyword dictionaries can be used as `Primary elements` or `Supporting elements` in sensitive information type (SIT) patterns. You can edit a keyword dictionary while creating a SIT or in an existing SIT. For example to edit an existing keyword dictionary:
 
@@ -40,9 +38,7 @@ Keyword dictionaries can be used as `Primary elements` or `Supporting elements` 
 
 4. Choose `Done`.
 
-## Modify a keyword dictionary
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)] using PowerShell
+## Modify a keyword dictionary using PowerShell
 
 For example, we'll modify some terms in PowerShell, save the terms locally where you can modify them in an editor, and then update the previous terms in place.
 

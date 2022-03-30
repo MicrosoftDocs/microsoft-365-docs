@@ -76,9 +76,7 @@ Advanced Audit in Microsoft 365 provides a default audit log retention policy fo
 
 The new policy is displayed in the list on the **Audit retention policies** tab.
 
-## Manage audit log retention policies
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)] in the Microsoft Purview portal
+## Manage audit log retention policies in the Microsoft Purview portal
 
 Audit log retention policies are listed on the **Audit retention policies** tab (also called the *dashboard*). You can use the dashboard to view, edit, and delete audit retention policies.
 

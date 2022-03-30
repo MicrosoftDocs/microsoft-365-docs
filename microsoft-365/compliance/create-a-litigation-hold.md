@@ -66,9 +66,7 @@ Here are the steps to place a mailbox on Litigation hold using the Microsoft 365
 
    The system displays a banner saying it might take up to 240 minutes for the change to take effect.
 
-### Create a Litigation hold
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)] using PowerShell
+### Create a Litigation hold using PowerShell
 
 You can also create a Litigation hold by running the following command in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell):
 
