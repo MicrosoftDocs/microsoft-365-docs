@@ -307,7 +307,7 @@ DeviceEvents
 | extend MediaSerialNumber = tostring(parsed.SerialNumber) 
 | extend FileInformationOperation = tostring(parsed.DuplicatedOperation)
 | extend FileEvidenceLocation = tostring(parsed.TargetFileLocation) 
-| project Timestamp , DeviceId, DeviceName, InitiatingProcessAccountName, ActionType, Policy, PolicyRuleId, FileInformationOperation, MediaClassName, MediaInstanceId, MediaName, MediaProductId, MediaVendorId, MediaSerialNumber, FileName, FolderPath, FileSize, FileEvidenceLocation, AdditionalFields
+| project Timestamp, DeviceId, DeviceName, InitiatingProcessAccountName, ActionType, Policy, PolicyRuleId, FileInformationOperation, MediaClassName, MediaInstanceId, MediaName, MediaProductId, MediaVendorId, MediaSerialNumber, FileName, FolderPath, FileSize, FileEvidenceLocation, AdditionalFields
 | order by Timestamp desc
 ```
     
