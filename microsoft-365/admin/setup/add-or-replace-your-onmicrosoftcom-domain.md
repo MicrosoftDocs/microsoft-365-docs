@@ -78,7 +78,7 @@ To add, modify, or remove domains, you **must** be a **Domain Name Administrator
 
 After you have created your new onmicrsoft.com domain, do the following to change it to your fallback domain.
 
-1. In the Microsoft 365 admin center, in the left nav bar select **Settings**, and then select **Domains**. 
+1. In the Microsoft 365 admin center, select **Settings**, and then select **Domains**. 
 
 2. Select the new onmicrosoft.com domain you had created.
 
