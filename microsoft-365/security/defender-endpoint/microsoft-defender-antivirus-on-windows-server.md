@@ -69,7 +69,7 @@ If the GUI isn’t installed on your server, and you want to install it, either 
 
    In Windows Server 2016, the **Add Roles and Features Wizard** looks like this:
 
-   ![Add roles and feature wizard showing the GUI for Windows Defender option.](images/server-add-gui.png)
+   :::image type="content" source="images/server-add-gui.png" alt-text="The Add roles and feature wizard showing the GUI for Windows Defender option." lightbox="images/server-add-gui.png":::
 
    In Windows Server 2019 and Windows Server 2022, the **Add Roles and Feature Wizard** is similar.
 
