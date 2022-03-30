@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: sharik
 author: skjerland
 manager: scotv
-ms.date: 8/13/2018
+ms.date: 02/27/2022
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -30,6 +30,9 @@ description: "Learn how protection features in Microsoft 365 Business Premium ma
 ---
 
 # How do protection features in Microsoft 365 Business Premium map to Intune settings
+
+> [!NOTE]
+> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../../security/defender-business/mdb-overview.md).
 
 ## Android and iOS application protection settings
 
@@ -104,3 +107,7 @@ To find the Intune setting, sign in with your Microsoft 365 Business Premium adm
 |Allow users to receive Windows tips and advertisements from Microsoft  <br/> |**Windows spotlight**, all blocked if this is set to **off** in Microsoft 365 Business Premium.  <br/> |
 |Keep Windows 10 devices up to date automatically  <br/> | This setting is in **Microsoft Intune** \> **Service updates - Windows 10 Update Rings**, choose **Update policy for Windows 10 devices**, and then **Properties** \> **Settings**.  <br/>  When the Microsoft 365 Business Premium setting is set to **On**, all the following settings are set:  <br/> **Service branch** is set to **CB** (CBB when this is turned off in Microsoft 365 Business Premium).  <br/> **Microsoft product updates** is set to **Allow**.  <br/> **Windows drivers** is set to **Allow**.  <br/> **Automatic update behavior** is set to **Auto install at maintenance time** with:  <br/> **After hours start** is set to **6 AM**.  <br/> **Active hours end** is set to **10 PM**.  <br/> **Quality update deferral period (days)** is set to **0**.  <br/> **Feature update deferral period (days)** is set to **0**.  <br/> **Delivery optimization download mode** is set to **HTTP blended with peering behind same NAT**.  <br/> |
 |||
+
+## See also
+
+[Top 10 ways to secure Microsoft 365 for business plans](../security-and-compliance/secure-your-business-data.md)

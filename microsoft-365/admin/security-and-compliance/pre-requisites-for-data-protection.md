@@ -30,6 +30,9 @@ description: "Learn about the requirements for setting up your organization with
 
 This article applies to Microsoft 365 Business Premium.
 
+> [!NOTE]
+> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../../security/defender-business/mdb-overview.md).
+
 The first step in setting up your organization with Microsoft 365 for business is to make sure you can meet the prerequisites.
   
 ## Requirements for setting up your organization with Microsoft 365 for business
@@ -45,3 +48,7 @@ The first step in setting up your organization with Microsoft 365 for business i
     Google Android 4.0 and later (including Samsung KNOX Standard 4.0 and higher). For more information, see [Intune supported devices](/mem/intune/fundamentals/supported-devices-browsers).
     
 - If you have existing Office applications on user computers, read [prepare for Office client installation](../misc/prepare-for-office-client-deployment.md) to understand steps you might need to take before you can set up Microsoft 365 for business to install Office 2016 on user computers.
+
+## See also
+
+[Top 10 ways to secure Microsoft 365 for business plans](secure-your-business-data.md)

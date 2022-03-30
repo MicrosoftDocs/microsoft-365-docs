@@ -57,7 +57,7 @@ In Azure AD Identity Protection, risk detections include any identified suspicio
 
     - Reset password – change or reset the user password.
 
-    - Block sign-in - prevents anyone from signing in as this user.
+    - Block sign-in - prevent anyone from signing in as this user.
 
     - Confirm user compromised – set risk state to confirmed compromised.
 

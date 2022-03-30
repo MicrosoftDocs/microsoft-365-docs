@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Reports in the admin center - Microsoft browser usage
+title: "Microsoft 365 admin center browser usage reports"
 ms.author: waxiaoyu
 author: sarahwxy
 manager: scotv

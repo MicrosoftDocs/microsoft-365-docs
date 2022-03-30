@@ -37,6 +37,10 @@ For more information about the CSP program, see the [Cloud Solution Provider pro
 > [!NOTE]  
 > A similar offering, Azure Lighthouse, helps service providers deliver managed services for Azure services by using comprehensive and robust management tooling built into the Azure platform. To learn more, see [What is Azure Lighthouse?](/azure/lighthouse/overview)   
 
+## Watch: What is Microsoft 365 Lighthouse?
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4QVMP]
+
 ## Microsoft 365 Lighthouse benefits
 
 Lighthouse helps MSPs secure and manage Microsoft 365 services and connected endpoints at scale by:
