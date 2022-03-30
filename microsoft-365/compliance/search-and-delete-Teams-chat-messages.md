@@ -54,7 +54,6 @@ Use the following table to determine which data sources to search depending on t
 |Teams group chats     |The mailboxes of chat participants.|
 |Teams channels (standard and shared) |The mailbox associated with the parent team.|
 |Teams private channels |The mailbox of the private channel members.|
-|||
 
 > [!NOTE]
 > In Step 4, you also have to identify and remove any holds and retention policies assigned to the mailbox that contains the type of chat messages that you want to delete.
