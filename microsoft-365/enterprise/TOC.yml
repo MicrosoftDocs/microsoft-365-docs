@@ -45,8 +45,14 @@
           items: 
             - name: Overview of VPN split tunneling
               href: microsoft-365-vpn-split-tunnel.md
+            - name: Common VPN split tunneling scenarios
+              href: microsoft-365-vpn-common-scenarios.md
             - name: Implementing VPN split tunneling
               href: microsoft-365-vpn-implement-split-tunnel.md
+            - name: Securing Teams media traffic for VPN split tunneling
+              href: microsoft-365-vpn-securing-teams.md
+            - name: Stream and live events in VPN environments
+              href: microsoft-365-vpn-stream-and-live-events.md
             - name: Microsoft 365 optimization for China users
               href: microsoft-365-networking-china.md
             - name: Optimizing Microsoft 365 traffic for remote workers with the native Windows 10 VPN client
@@ -177,15 +183,22 @@
       items: 
         - name: Microsoft 365 service health status
           href: microsoft-365-service-health.md
-        - name: Exchange Online monitoring
-          href: microsoft-365-exchange-monitoring.md
+        - name: Microsoft 365 monitoring
+          href: microsoft-365-monitoring.md
           items:
-            - name: Service alerts for Mailbox utilization
-              href: microsoft-365-mailbox-utilization-service-alerts.md
-            - name: Service alerts for MRS source delays
-              href: microsoft-365-mrs-source-delays-service-alerts.md
-            - name: Service alerts for queued messages for external recipients
-              href: microsoft-365-external-recipient-service-alerts.md
+            - name: Exchange Online monitoring
+              href: microsoft-365-exchange-monitoring.md
+              items:
+                - name: Service alerts for Mailbox utilization
+                  href: microsoft-365-mailbox-utilization-service-alerts.md
+                - name: Service alerts for MRS source delays
+                  href: microsoft-365-mrs-source-delays-service-alerts.md
+                - name: Service alerts for queued messages for external recipients
+                  href: microsoft-365-external-recipient-service-alerts.md
+            - name: Microsoft 365 Apps monitoring
+              href: microsoft-365-apps-monitoring.md
+            - name: Microsoft 365 Teams monitoring
+              href: microsoft-365-teams-monitoring.md
         - name: Setup guides
           href: setup-guides-for-microsoft-365.md
     - name: Multiple tenants

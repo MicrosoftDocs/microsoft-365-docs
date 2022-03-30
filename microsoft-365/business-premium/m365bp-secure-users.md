@@ -2,8 +2,8 @@
 title: "How security recommendations can affect your users"
 f1.keywords:
 - NOCSH
-ms.author: sharik
-author: SKjerland
+ms.author: deniseb
+author: denisebmsft
 manager: scotv
 audience: Admin
 ms.topic: conceptual
@@ -30,7 +30,7 @@ description: "Learn how security recommendations for Microsoft 365 Business Prem
 
 The security recommendations for Microsoft 365 in this solution make it much harder for hackers to gain access to your environment. The tradeoff is that your users will need to be aware of how to work within this more secure environment. We understand a little extra patience is required, but it's worth it to keep your organization protected.
 
-![Illustration that sums up key points from below for iPhones, Android devices, Macs, Windows 10, sharing, and key staff.](../media/M365-democracy-Users_900px.png)
+:::image type="content" source="media/m365-democracy-users.png" alt-text="Illustration summarizing key points for devices.":::
 
 ## Use secure email practices
 
@@ -40,7 +40,7 @@ All users should be aware of and use these email practices to help keep their em
 - Verify legitimate emails and look for safety tips from Advanced Phishing in Defender for Office 365 Protection.
 - Open only safe links and attachments, as verified by Safe Links and Safe Attachments.
 
-Learn more about [multi-factor authentication](m365-campaigns-multifactor-authentication.md) and [phishing and other attacks](m365-campaigns-phishing-and-attacks.md).
+Learn more about [multi-factor authentication](m365bp-multifactor-authentication.md) and [phishing and other attacks](m365-campaigns-phishing-and-attacks.md).
 
 Download an [infographic](m365-campaigns-protect-campaign-infographic.md) with tips for you and the members of your team.
 

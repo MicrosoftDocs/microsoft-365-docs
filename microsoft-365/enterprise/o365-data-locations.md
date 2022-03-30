@@ -42,7 +42,7 @@ If Customer’s billing address is outside Europe and Customer has an Office 365
 
 ### How does Microsoft define data?
 
-Review our [definitions for different types of data](https://go.microsoft.com/fwlink/p/?linkid=864390) on the Microsoft Trust Center. In the [Microsoft Online Services Terms](https://go.microsoft.com/fwlink/p/?linkid=862403), Microsoft makes contractual commitments regarding customer data/your data. We refer to core customer data as the customer data that is committed to be stored at rest only within your region according to the [Microsoft Online Services Terms](https://go.microsoft.com/fwlink/p/?linkid=862403).
+Review our [definitions for different types of data](https://go.microsoft.com/fwlink/p/?linkid=864390) on the Microsoft Trust Center. In the [Privacy & Security Terms](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all), Microsoft makes contractual commitments regarding customer data/your data. We refer to core customer data as the customer data that is committed to be stored at rest only within your region according to the [Privacy & Security Terms](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all).
 
 ### Where are the exact addresses of the data centers?
 

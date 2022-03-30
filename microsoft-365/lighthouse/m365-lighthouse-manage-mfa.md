@@ -48,7 +48,7 @@ To enable MFA through Conditional Access, see [Tutorial: Secure user sign-in eve
 
 ## Notify users who aren't registered for MFA
 
-1. In the left pane in Lighthouse, select **Users**.
+1. In the left navigation pane in Lighthouse, select **Users**.
 
 2. Select the **Multifactor Authentication** tab.
 

@@ -40,13 +40,13 @@ All users should be aware of and use these email practices to help keep their em
 - Verify legitimate emails and look for safety tips from Advanced Phishing in Defender for Office 365 Protection.
 - Open only safe links and attachments, as verified by Safe Links and Safe Attachments.
 
-Learn more about [multi-factor authentication](m365-campaigns-multifactor-authentication.md) and [phishing and other attacks](m365-campaigns-phishing-and-attacks.md).
+Learn more about [multi-factor authentication](m365bp-multifactor-authentication.md) and [phishing and other attacks](m365-campaigns-phishing-and-attacks.md).
 
 Download an [infographic](m365-campaigns-protect-campaign-infographic.md) with tips for you and the members of your team.
 
 ## Set up iPhones and Android devices
 
-All users you add to your environment will need to take a few minutes to [setup iPhones and Android devices](../business/set-up-mobile-devices.md?toc=%2Fmicrosoft-365%2Fcampaigns%2Ftoc.json) to work securely:
+All users you add to your environment will need to take a few minutes to [setup iPhones and Android devices](../business/set-up-mobile-devices.md) to work securely:
 
 - Set up devices to use multi-factor authentication with the authenticator app.
 - Use Microsoft mobile apps, including Outlook Mobile, Word, OneDrive, and other Microsoft apps from the app store. The native mail apps that are included on iPhones and Android devices aren't supported. 
@@ -61,7 +61,7 @@ It's also important that users keep their primary work device up to date:
 - Install the latest versions of Office desktop apps and keep these fresh with updates, when prompted.
 - Stay on top of operating system updates, such as Windows updates.
 
-For [unmanaged Windows 10 and Mac devices](m365-campaigns-protect-pcs-macs.md), users have the responsibility to ensure that basic security features are enabled.
+For [unmanaged Windows 10 and Mac devices](m365bp-protect-pcs-macs.md), users have the responsibility to ensure that basic security features are enabled.
 
 **Enable basic security capabilities on BYOD Windows 10 and Mac devices**
 
