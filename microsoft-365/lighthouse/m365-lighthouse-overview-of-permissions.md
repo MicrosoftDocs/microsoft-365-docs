@@ -15,7 +15,7 @@ ms.custom:
 - AdminSurgePortfolib
 - M365-Lighthouse                         
 search.appverid: MET150
-description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn more about permissions."
+description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn more about Lighthouse permission requirements."
 ---
 
 # Overview of permissions in Microsoft 365 Lighthouse
@@ -39,12 +39,12 @@ The table below describes which GDAP roles grant permission to read customer dat
 |**Users**   | <ul><li>View tenant level (non-user specific) data</li><li>Search user accounts across tenants</li><li>Reset password for non-administrators*</li></ul>  | <ul><li>View all user-specific data</li><li>Search user accounts across tenants</li><li>Reset password for non-administrators*</li></ul>|  <ul><li>View all user-specific data</li><li>Search user accounts across tenants</li><li>Reset password for non-administrators*</i><li>Block sign-in</li></ul>  | <ul><li>View all user-specific data</li><li>Search user accounts across tenants</li><li>Reset password for non-administrators*</li><li>Block sign-in</li><li>Confirm compromised users</li><li>Dismiss risk for users</li></ul> |
 |**Devices**    | <ul><li>View all data</li></ul> | <ul><li>View all data</li></ul>| <ul><li>View all data</li></ul>  | <ul><li>View all data</li><li>Sync device</li><li>Restart device</li><li>Collect diagnostics</li></ul>|
 |**Threat management**  | <ul><li>View all data</li></ul> | <ul><li>View all data</li></ul>| <ul><li>View all data</li></ul>  | <ul><li>View all data</li><li>Run full scan</li><li>Run quick scan</li><li>Update antivirus</li><li>Reboot device</li></ul>|
-|**Baselines**    | <ul><li>View all data</li></ul> | <ul><li>View all data</li></ul>| <ul><li>View all data</li></ul>  | <ul><li>View all data</li></ul> | 
-|**Windows 365** |<ul><li>View all data</li></ul> | <ul><li>View all data</li></ul>| <ul><li>View all data</li></ul>  | <ul><li>View all data</li></ul> | 
-|**Service health**|  **  |   |   | |  |
-|**Audit logs**|   **  |   |   | |  |
+|**Baselines**    | <ul><li>View all data</li></ul> | <ul><li>View all data</li></ul>| <ul><li>View all data</li></ul>  | <ul><li>View all data</li></ul> |
+|**Windows 365** |<ul><li>View all data</li></ul> | <ul><li>View all data</li></ul>| <ul><li>View all data</li></ul>  | <ul><li>View all data</li></ul> |
+|**Service health****|  
+|**Audit logs****|
 
-*\*See [Password reset permissions](/azure/active-directory/roles/permissions-reference#password-reset-permissions) for a table that outlines what roles are required to reset passwords for customer tenant administrators.*
+*See [Password reset permissions](/azure/active-directory/roles/permissions-reference#password-reset-permissions) for a table that outlines what roles are required to reset passwords for customer tenant administrators.
 
 **Other roles and permissions are required to view service health and audit logs. For more information, see [Permissions in the partner tenant](#permissions-in-the-partner-tenant).
 
