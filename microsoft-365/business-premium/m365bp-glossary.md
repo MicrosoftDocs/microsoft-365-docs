@@ -40,7 +40,7 @@ description: "Glossary of terms for Microsoft 365 Business Premium"
 |cyber security |Maintenance and implementation of security defenses to protect the networks of businesses or organizations against cyber attack. |
 |cyber space |The concept of widespread interconnected digital technology, made up of computers and networks and the communication between them. |
 |data exfiltration |Data files that are stolen and sent outside the network through email or other means. |
-|Defender |Microsoft's antivirus software, Microsoft Defender. |
+|Defender |Microsoft's antivirus software, Microsoft Defender antivirus. |
 |Device Group |A device group is a collection of devices that are grouped together because of certain specified criteria, such as operating system version. Devices that meet the criteria are included in that device group, unless you exclude them. In Microsoft 365 Business Premium (and Defender for Business), Device groups are stored in Azure Active Directory. |
 |encryption |Encryption is the process by which information is encoded so that only an authorized recipient can decode and consume the information. |
 |exploit |A piece of code that uses software vulnerabilities to gain access to your device and perform other tasks, such as installing malware. |
