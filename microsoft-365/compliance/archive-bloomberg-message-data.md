@@ -140,11 +140,11 @@ The last step is to create a Bloomberg Message connector in the Microsoft 365 co
 
 7. After the connection is successfully validated, click **Next**.
 
-8. On the **Define user** page, specify the users to import data for
+8. On the **Define user** page, specify the users to import data for.
 
-     - **All users in your organziation**: Select this option to import data for all users.
+     - **All users in your organization**. Select this option to import data for all users.
 
-     - **Only users on Litigation hold**: Select this option to import data only for users whose mailboxes are placed on Litigation hold. This option imports data to            user mailboxes that have the LitigationHoldEnabled property set to True. For more information, see [Create a Litigation hold](create-a-litigation-hold.md).
+     - **Only users on Litigation hold**. Select this option to import data only for users whose mailboxes are placed on Litigation hold. This option imports data to user mailboxes that have the LitigationHoldEnabled property set to True. For more information, see [Create a Litigation hold](create-a-litigation-hold.md).
 
 9. On the **Map Bloomberg Message users to Microsoft 365 users** page, enable automatic user mapping and provide custom user mapping as required.
 
@@ -226,9 +226,9 @@ After your Bloomberg SFTP site is configured, the next step is to create a Bloom
 
 8. On the **Define user** page, specify the users to import data for
 
-     - **All users in your organziation**: Select this option to import data for all users.
+     - **All users in your organization**. Select this option to import data for all users.
 
-     - **Only users on Litigation hold**: Select this option to import data only for users whose mailboxes are placed on Litigation hold. This option imports data to            user mailboxes that have the LitigationHoldEnabled property set to True. For more information, see [Create a Litigation hold](create-a-litigation-hold.md).
+     - **Only users on Litigation hold**. Select this option to import data only for users whose mailboxes are placed on Litigation hold. This option imports data to user mailboxes that have the LitigationHoldEnabled property set to True. For more information, see [Create a Litigation hold](create-a-litigation-hold.md).
 
 9. On the **Map Bloomberg Message users to Microsoft 365 users** page, enable automatic user mapping and provide custom user mapping as required.
 
