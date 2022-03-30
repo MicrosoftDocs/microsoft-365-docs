@@ -84,15 +84,9 @@ Provides a wealth of security implementation and design information with the goa
 - **PCI DSS** - Validation of controls around cardholder data to reduce credit card fraud.
 - **SOC Reports** - SOC 1, 2, and 3 reports designed to build trust and confidence in Microsoft Services.
 
-<!--
 ### Industries & Regions
 
-Provides industry- and region-specific compliance information about Microsoft Cloud services.
-
-- **Industries:** At this time, this page provides an industry-specific landing page the for the Financial Services industry. This contains information such as compliance offerings, FAQs, and success stories. Resources for more industries will be released in the future, however you can find resources for more industries by going to the **Trust Documents > Data Protection** page in the STP.
-
-- **Regions:** Provides legal opinions on Microsoft Cloud services compliance with various the laws of various countries. Specific countries include Australia, Canada, Czech Republic, Denmark, Germany, Poland, Romania, Spain, and the United Kingdom.
--->
+Clicking on one of the tiles for certification, standards, or regulations will bring you to a page that is separated into regions represented by the national flags for each country. There is also a section for all whitepapers to view resources for all regions. Select the Regions dropdown list to organize the available resources by geographic region.
 
 ### Trust Center
 
