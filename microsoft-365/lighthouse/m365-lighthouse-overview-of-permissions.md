@@ -68,8 +68,8 @@ For certain actions in Lighthouse, role assignments in the partner tenant are re
 | Partner tenant roles | Permissions |
 |--|--|
 | Global Administrator of partner tenant | <ul><li>Sign up for Lighthouse in the Microsoft 365 admin center.</li><li>Accept partner contract amendments during the first-run experience.</li><li>Activate and inactivate a tenant.</li><li>Create, update, and delete tags.</li><li>Assign and remove tags from a customer tenant.</li></ul> |
-| Partner tenant member with at least one Azure AD role assigned with the following property set: **microsoft.office365.supportTickets/allEntities/allTasks**<br><br>For a complete list of Azure AD roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference). | Create Lighthouse service requests. |
-| Partner tenant member who meets *both* of the following requirements: <ul><li>Has at least one Azure AD role assigned with the following property set: **microsoft.office365.serviceHealth/allEntities/allTasks**<br><br>For a complete list of Azure AD roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).</li><br><li>Has at least one DAP delegated role assigned (Admin Agent or Helpdesk Agent)</li></ul> | View service health information. |
+| Partner tenant member with at least one Azure AD role assigned with the following property set: **microsoft.office365.supportTickets/allEntities/allTasks**<br>(For a complete list of Azure AD roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).) | Create Lighthouse service requests. |
+| Partner tenant member who meets *both* of the following requirements: <ul><li>Has at least one Azure AD role assigned with the following property set: **microsoft.office365.serviceHealth/allEntities/allTasks**<br>(For a complete list of Azure AD roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).)</li><li>Has at least one DAP delegated role assigned (Admin Agent or Helpdesk Agent)</li></ul> | View service health information. |
 
 ## Related content
 
