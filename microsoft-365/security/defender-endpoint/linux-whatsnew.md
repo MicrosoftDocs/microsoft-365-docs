@@ -41,6 +41,7 @@ ms.technology: mde
 ## 101.58.80 (30.122012.15880.0)
 
 - The command-line tool now supports restoring quarantined files to a location other than the one where the file was originally detected. This can be done through `mdatp threat quarantine restore --id [threat-id] --path [destination-folder]`.
+- Starting with this version, network protection for Linux can be evaluated on demand
 - Bug fixes
 
 ## 101.56.62 (30.121122.15662.0)
