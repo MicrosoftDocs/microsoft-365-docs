@@ -11,6 +11,7 @@ search.appverid:
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
+ms.custom: admindeeplinkSPO
 ms.localizationpriority:  medium
 description: Use term store taxonomy when creating an extractor in your document understanding model in Microsoft SharePoint Syntex.
 ---
@@ -31,7 +32,7 @@ As an example, your model identifies and classifies all **Contract** documents t
 
 ## Use a Managed metadata column in your extractor
 
-Term sets are configured in the Managed Metadata services (MMS) term store in the SharePoint admin center. In the example below, the *Contract Services* [term set](/sharepoint/managed-metadata#term-set) is configured to include several terms, including *Creative*.  The details for it show that the term has three synonyms (*Design*, *Graphics*, and *Topography*) and the synonyms should be translated to *Creative*. 
+Term sets are configured in the Managed Metadata services (MMS) term store in the <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint admin center</a>. In the example below, the *Contract Services* [term set](/sharepoint/managed-metadata#term-set) is configured to include several terms, including *Creative*.  The details for it show that the term has three synonyms (*Design*, *Graphics*, and *Topography*) and the synonyms should be translated to *Creative*. 
 
    ![Term set.](../media/content-understanding/term-store.png)</br>
 

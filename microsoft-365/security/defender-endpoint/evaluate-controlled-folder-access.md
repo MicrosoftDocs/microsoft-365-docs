@@ -13,7 +13,7 @@ ms.author: dansimp
 ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.technology: mde
-ms.collection: m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.date:
 ---
 

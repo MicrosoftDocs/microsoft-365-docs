@@ -196,7 +196,7 @@
 
 
 ### [Configure portal settings]()
-#### [Set up preferences](preferences-setup.md)
+#### [Configure general Defender for Endpoint settings](preferences-setup.md)
 #### [General]()
 ##### [Verify data storage location and  update data retention settings](data-retention-settings.md)
 ##### [Configure alert notifications](configure-email-notifications.md)
@@ -259,6 +259,12 @@
 #### [Enable Corelight data integration](corelight-integration.md)
 #### [Device discovery FAQ](device-discovery-faq.md)
 
+### [Device inventory]()
+#### [Device inventory](machines-view-overview.md)
+#### [Exclude devices](exclude-devices.md)
+#### [Device timeline event flags](device-timeline-event-flag.md)
+#### [Manage device group and tags](machine-tags.md)
+
 ### [Network devices](network-devices.md)
 
 ### [Host firewall reporting in Microsoft Defender for Endpoint](host-firewall-reporting.md)
@@ -318,8 +324,8 @@
 ##### [Schedule scans using PowerShell](schedule-antivirus-scans-powershell.md)
 ##### [Schedule scans using WMI](schedule-antivirus-scans-wmi.md)
 #### [Use limited periodic scanning in Microsoft Defender Antivirus](limited-periodic-scanning-microsoft-defender-antivirus.md)
-#### [Tune performance of Microsoft Defender Antivirus](tune-performance-defender-antivirus.md)
 #### [Compatibility with other security products](microsoft-defender-antivirus-compatibility.md)
+#### [Find malware detection names for Microsoft Defender for Endpoint](find-defender-malware-name.md)
 
 #### [Get your antivirus and antimalware updates](manage-updates-baselines-microsoft-defender-antivirus.md)
 ##### [Manage the sources for Microsoft Defender Antivirus protection updates](manage-protection-updates-microsoft-defender-antivirus.md)
@@ -357,9 +363,13 @@
 ##### [Exclusions for Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)
 ##### [Common mistakes to avoid](common-exclusion-mistakes-microsoft-defender-antivirus.md)
 
-#### Troubleshooting Microsoft Defender Antivirus
+#### Diagnostics and performance for Microsoft Defender Antivirus
+##### [Device health and compliance reports](machine-reports.md)
+##### [Troubleshoot performance issues related to real-time protection](troubleshoot-performance-issues.md) 
 ##### [Troubleshoot Microsoft Defender Antivirus reporting in Update Compliance](troubleshoot-reporting.md)
-##### [Troubleshoot performance issues](troubleshoot-performance-issues.md)
+##### [Tune performance of Microsoft Defender Antivirus](tune-performance-defender-antivirus.md)
+
+#### Troubleshooting Microsoft Defender Antivirus
 ##### [Review event logs and error codes to troubleshoot issues with Microsoft Defender Antivirus](troubleshoot-microsoft-defender-antivirus.md)
 ##### [Troubleshoot Microsoft Defender Antivirus while migrating from a third-party solution](troubleshoot-microsoft-defender-antivirus-when-migrating.md)
 
@@ -414,11 +424,6 @@
 ###### [Investigate connection events that occur behind forward proxies](investigate-behind-proxy.md)
 ##### [Investigate a user account](investigate-user.md)
 
-#### [Devices list]()
-##### [View and organize the Devices list](machines-view-overview.md)
-##### [Device timeline event flags](device-timeline-event-flag.md)
-##### [Manage device group and tags](machine-tags.md)
-
 #### [Take response actions]()
 ##### [Take response actions on a device]()
 ###### [Response actions on devices](respond-machine-alerts.md)
@@ -454,7 +459,6 @@
 #### [Reporting]()
 ##### [Power BI - How to use API - Samples](api-power-bi.md)
 ##### [Threat protection reports](threat-protection-reports.md)
-#### [Device health and compliance reports](machine-reports.md)
 
 ### [Advanced hunting]()
 #### [Advanced hunting overview](advanced-hunting-overview.md)
@@ -548,6 +552,12 @@
 ###### [IP]()
 ####### [Get IP related alerts](get-ip-related-alerts.md)
 ####### [Get IP statistics](get-ip-statistics.md)
+
+###### [Live response library]()
+####### [Live response library methods and properties](live-response-library-methods.md)
+####### [List library files](list-library-files.md)
+####### [Upload to live response library](upload-library.md)
+####### [Delete from library](delete-library.md)
 
 
 ###### [Machine]()

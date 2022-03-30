@@ -12,6 +12,8 @@
   items: 
     - name: Configure portal security
       href: m365-lighthouse-configure-portal-security.md
+    - name: Set up roles
+      href: m365-lighthouse-set-up-roles.md
     - name: Review audit logs
       href: m365-lighthouse-review-audit-logs.md
 - name: Protect customers with baselines
@@ -38,10 +40,12 @@
       href: m365-lighthouse-manage-mfa.md
     - name: Manage self-service password reset
       href: m365-lighthouse-manage-sspr.md
-    - name: Reset user password
+    - name: Reset a user password
       href: m365-lighthouse-reset-user-password.md
     - name: Search for users
       href: m365-lighthouse-search-for-users.md
+    - name: View and manage risky users
+      href: m365-lighthouse-view-manage-risky-users.md
 - name: Manage devices
   items: 
     - name: Device compliance page overview
@@ -60,5 +64,9 @@
   items: 
     - name: Get help and support
       href: m365-lighthouse-get-help-and-support.md
+    - name: Known issues
+      href: m365-lighthouse-known-issues.md
+    - name: Troubleshoot and resolve problems and error messages
+      href: m365-lighthouse-troubleshoot.md
     - name: Frequently asked questions (FAQs)
       href: m365-lighthouse-faq.yml

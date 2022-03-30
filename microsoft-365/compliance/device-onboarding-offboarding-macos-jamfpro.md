@@ -9,7 +9,7 @@ ms.date:
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-security-compliance 
 search.appverid:
@@ -31,8 +31,7 @@ You can use JAMF Pro to onboard macOS devices into Microsoft 365 compliance solu
 
 ## Before you begin
 
-- Make sure your [macOS devices are Azure AD joined](https://docs.jamf.com/10.30.0/jamf-pro/administrator-guide/Azure_AD_Integration.html)
-- Make sure your [macOS devices are managed through JAMF pro](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/)
+- Make sure your [macOS devices are managed through JAMF pro](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) and are associated with an identity (Azure AD joined UPN) through JAMF Connect or Intune.
 - Install the v95+ Edge browser on your macOS devices 
 
 ## Onboard devices into Microsoft 365 Compliance solutions using JAMF Pro
@@ -216,7 +215,7 @@ Onboarding a macOS device into Compliance solutions is a multiphase process.
 1. In **Packages** choose **+New**. Enter these details:
     - Display Name: leave blank because it will be reset when you choose the .pkg file.
     - Category: None (default)
-    - Filname: Choose file, in this case the `wdav.pkg` file.
+    - Filename: Choose file, in this case the `wdav.pkg` file.
 
 1. Choose **Open**. Set:
     - **Display Name**: `Microsoft Endpoint Technology`

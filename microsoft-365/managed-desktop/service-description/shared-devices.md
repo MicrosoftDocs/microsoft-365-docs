@@ -5,7 +5,7 @@ keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: tiaraquan
 ms.author: tiaraquan
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: dougeby
 ms.topic: article
@@ -13,22 +13,24 @@ ms.topic: article
 
 # Shared devices
 
-Microsoft Managed Desktop allows you to register devices in "shared device mode," similar to the shared device mode offered by [Microsoft Intune](/mem/intune/configuration/shared-user-device-settings). Devices in this mode are optimized for situations where users aren't tied down to a single desk and are frequently changing devices, typically frontline workers such as bank tellers or nursing staff. You can apply any of the Microsoft Managed Desktop [profiles](profiles.md) to devices in this mode. Devices registered in this mode have some important differences:
+Microsoft Managed Desktop allows you to register devices in "shared device mode," similar to the shared device mode offered by [Microsoft Intune](/mem/intune/configuration/shared-user-device-settings).
+
+Devices in this mode are optimized for situations where users aren't tied down to a single desk and are frequently changing devices. For example, frontline workers such as bank tellers or nursing staff. You can apply any of the Microsoft Managed Desktop [profiles](profiles.md) to devices in this mode. Devices registered in this mode have some important differences:
 
 - [Device storage](#device-storage) is optimized for shared users.
 - [Inactive accounts](#deletion-of-inactive-accounts) are deleted.
 - [Guest accounts](#guest-accounts) aren't supported by default.
 - [Microsoft 365 Applications](#microsoft-365-apps-for-enterprise) for enterprise licensing is optimized for shared devices.
 
-Because you make the choice to use shared device mode at the point of registration into Microsoft Managed Desktop, if you want to change it out of this mode later, you'll have to de-register it and register it again.
+Because you make the choice to use shared device mode at the point of registration in Microsoft Managed Desktop, if you want to change out of this mode later, you must de-register it and register it again.
 
 ## When to use shared device mode
 
 Any situation where users are frequently changing devices.
 
-For example, bank tellers might be in one location managing deposits, but move to a back office to help customers with a mortgage. In each of those locations, the device runs different applications and is optimized for those tasks, though they are used by multiple people.
+For example, bank tellers might be in one location managing deposits, but move to a back office to help customers with a mortgage. In each of those locations, the device runs different applications and is optimized for those tasks, though they're used by multiple people.
 
-Nursing staff typically move between rooms and offices as they interact with patients, so they can sign into a workstation in an office, but connect to their remote desktop and take notes, only to repeat this in a different room with a different patient.
+Nursing staff typically move between rooms and offices as they interact with patients. They can sign into a workstation in an office, but connect to their remote desktop and take notes, and repeat this process in a different room with a different patient.
 
 ## When not to use shared device mode
 
@@ -42,18 +44,18 @@ Shared device mode isn't a good choice in these situations:
 
 Whether you or a partner are handling enrollment, you can choose to use shared device mode.
 
-If you're enrolling devices yourself, follow the steps in [Register new devices yourself](../get-started/register-devices-self.md), and then add them to the **Modern Workplace Devices - Shared Device Mode** group.
+If you're enrolling devices yourself, follow the steps in [Manual registration](../get-started/manual-registration.md), and then add them to the **Modern Workplace Devices - Shared Device Mode** group.
 
 > [!WARNING]
 > Do not try to convert any existing Microsoft Managed Desktop devices to shared device mode by simply adding them to this group. The policies that are applied can potentially cause OneDrive files to be permanently lost.
 
-If you're having a partner enroll devices, follow the steps in [Steps for Partners to register devices](../get-started/register-devices-partner.md), but append **-Shared** to the group tag, as shown in the following table:
+If you're having a partner enroll devices, follow the steps in [Partner registration](../get-started/partner-registration.md), but append **-Shared** to the group tag, as shown in the following table:
 
-|Device profile  |Group tag (standard mode)  |Group tag (shared device mode)  |
-|---------|---------|---------|
-|Sensitive date | Microsoft365Managed_SensitiveData        |  Microsoft365Managed_SensitiveData-Shared       |
-| Power user         | Microsoft365Managed_PowerUser        | Not supported        |
-|Standard     | Microsoft365Managed_Standard        | Microsoft365Managed_Standard-Shared  |
+| Device profile | Autopilot group tag (standard mode) | Group tag (shared device mode) |
+| ----- | ----- | ----- |
+| Sensitive data | Microsoft365Managed_SensitiveData |  Microsoft365Managed_SensitiveData-Shared |
+| Power user | Microsoft365Managed_PowerUser | Not supported |
+| Standard  | Microsoft365Managed_Standard | Microsoft365Managed_Standard-Shared |
 
 ## Consequences of shared device mode
 
@@ -84,7 +86,7 @@ In shared device mode, you can have only one [device profile](profiles.md) on a 
 
 ### Apps and policies assigned to users
 
-On shared devices, you should assign any apps or policies that you are managing yourself to *device groups*, not user groups. Doing this ensures that each user has a more consistent experience. The exception is [Company Portal](#deploying-apps-with-company-portal).
+On shared devices, you should assign any apps or policies that you're managing yourself to *device groups*, not user groups. Assigning to device groups ensures that each user has a more consistent experience. The exception is [Company Portal](#deploying-apps-with-company-portal).
 
 ## Limitations of shared device mode
 
@@ -100,25 +102,27 @@ When Universal print installs a printer for a single user on a shared device tha
 
 ### Primary user
 
-Each Microsoft Intune device has a primary user, which gets assigned when a device is set up by Autopilot. But when devices are shared, Intune requires that the primary user be removed.
+Each Microsoft Intune device has a primary user, which is assigned when a device is set up by Autopilot. But when devices are shared, Intune requires that the primary user is removed.
 
 > [!IMPORTANT]
 > While shared device mode is in public preview, be sure to remove the primary user by following these steps: sign in to the Microsoft Endpoint Manager admin center, select **Devices**>**All devices**, select a device, then select **Properties**>**Remove primary user**, and delete the user listed there.
 
 ### Deploying apps with Company Portal
 
-Some apps probably don't need to be present on all devices, so you might prefer that users only install those apps when they need them from [Company Portal](/mem/intune/user-help/install-apps-cpapp-windows). Microsoft Managed Desktop disables Company Portal by default for devices in shared device mode. If you want Company Portal enabled, you can file a [change request](../working-with-managed-desktop/admin-support.md), but you should be aware of some limitations in this feature in this public preview:
+Some apps probably don't need to be present on all devices, so you might prefer that users only install those apps when they need them from [Company Portal](/mem/intune/user-help/install-apps-cpapp-windows).
+
+Microsoft Managed Desktop disables Company Portal by default for devices in shared device mode. If you want the Company Portal enabled, you can file a [change request](../working-with-managed-desktop/admin-support.md). However, you should be aware of some limitations in this feature in this public preview:
 
 - To make an app available to users in Company Portal, [assign a user group](/mem/intune/apps/apps-deploy) to that app in Intune and then add each user to that user group.
-- Devices cannot have a [primary user](#primary-user).
+- Devices can't have a [primary user](#primary-user).
 - To uninstall an app that a user installed through Company Portal, you must uninstall the app from all users on that device.
 
 > [!CAUTION]
 > Company Portal doesn't support applications assigned to device groups as available.
 
-### Redeployment of Microsoft 365 Apps for enterprise
+### Redeployment of Microsoft 365 Apps for Enterprise
 
-During public preview, if Microsoft 365 Apps need to be redeployed, users will have to contact their local support staff to request an agent elevate and reinstall Microsoft 365 Apps for enterprise on that device.
+During public preview, if Microsoft 365 Apps must be redeployed, users must contact their local support staff to request an agent elevate and reinstall Microsoft 365 Apps for enterprise on that device.
 
 ### Microsoft Teams
 

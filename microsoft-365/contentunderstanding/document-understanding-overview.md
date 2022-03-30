@@ -107,7 +107,9 @@ Document understanding models support the following file types:
 
 ### Supported languages
 
-Document understanding models support the following languages:
+Document understanding models support *all* of the Latin-based languages, including:
+
+- English
 - French
 - German
 - Italian

@@ -69,7 +69,7 @@ ms.technology: mde
 
 **System Requirements**
 
-- iOS device running iOS 12.0 and above. iPads are also supported.
+- iOS device running iOS 12.0 and above. iPads are also supported. *Note that starting 31-March-2022, the minimum supported iOS version by Microsoft Defender for Endpoint will be iOS 13.0.*
 
 - The device is either enrolled with the [Intune Company Portal app](https://apps.apple.com/us/app/intune-company-portal/id719171358) or is registered with Azure Active Directory through [Microsoft Authenticator](https://apps.apple.com/app/microsoft-authenticator/id983156458) with the same account.
 

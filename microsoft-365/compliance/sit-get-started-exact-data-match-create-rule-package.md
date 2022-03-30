@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.date:
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -21,7 +21,7 @@ ms.custom: seo-marvel-apr2020
 
 # Create exact data match sensitive information type/rule package
 
-You can create the exact data match (EDM) sensitive information type (SIT) by using the [the EDM schema and SIT wizard](#use-the-edm-schema-and-sit-wizard) in the Compliance center or create the rule package XML file [manually](#create-a-rule-package-manually). You can also combine both by using one method to create the schema and later edit it using the other method.
+You can create an exact data match (EDM) sensitive information type (SIT) by using the [the EDM schema and SIT wizard](#use-the-edm-schema-and-sit-wizard) in the Compliance center or create the rule package XML file [manually](#create-a-rule-package-manually). You can also combine both by using one method to create the schema and later edit it using the other method.
 
 If you are not familiar with EDM based SITS or their implementation, you should familiarize yourself with:
 
@@ -49,7 +49,7 @@ Perform the steps in these articles:
   - If you selected the Ignored Delimiters option for the primary element column in your schema, make sure the custom SIT you create will match data with and without the selected delimiters.
   - If you use a built in SIT, make sure it will detect exactly the strings you want to select, and not include any surrounding characters or exclude any valid part of the string as stored in your sensitive information table.
 
-See [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md#sensitive-information-type-entity-definitions) and [Get started with custom sensitive information types](create-a-custom-sensitive-information-type.md#get-started-with-custom-sensitive-information-types).
+See [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md#sensitive-information-type-entity-definitions) and [Create custom sensitive information types in Compliance center](create-a-custom-sensitive-information-type.md).
 
 ### Use the exact data match schema and sensitive information type pattern wizard
 

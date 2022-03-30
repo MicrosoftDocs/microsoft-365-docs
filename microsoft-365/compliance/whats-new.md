@@ -36,6 +36,29 @@ Whether it be adding new solutions to the [Microsoft 365 compliance center](micr
 >
 > And visit the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap) to learn about Microsoft 365 features that were launched, are rolling out, are in development, have been cancelled, or previously released.
 
+## February 2022
+
+### eDiscovery
+
+- [Manage custodian communications templates in Advanced eDiscovery](advanced-ediscovery-communications-library.md) - eDiscovery managers can now create custodian communications templates that can be used in any Advanced eDiscovery case in the organization.
+- [Manage issuing officers in Advanced eDiscovery](advanced-ediscovery-issuing-officers.md) - eDiscovery managers can add a list of issuing officers that can be assigned to custodian communications in any Advanced eDiscovery case in the organization.
+
+### Information governance and records management
+
+- [Adaptive scopes](retention.md#adaptive-or-static-policy-scopes-for-retention) for retention policies and retention label policies are now generally available (GA). The instructions for [configuring an adaptive scope](retention-settings.md#to-configure-an-adaptive-scope) now include more information for SharePoint site scopes: Blog post reference for using custom site properties and how to use the site property SiteTemplate to include or exclude specific site types with the advanced query builder.
+- [Policy lookup](retention.md#policy-lookup) in the Information Governance solution is now generally available (GA.
+- PowerShell alternative to the records management setting that allows users to delete labeled items in SharePoint and OneDrive by using AllowFilesWithKeepLabelToBeDeletedSPO and AllowFilesWithKeepLabelToBeDeletedODB from [Get-PnPTenant](/powershell/module/sharepoint-pnp/get-pnptenant) and [Set-PnPTenant]( /powershell/module/sharepoint-pnp/set-pnptenant).
+
+### Sensitivity labels
+
+- New guidance [Why choose MIP built-in labeling over the AIP add-in for Office apps](sensitivity-labels-aip.md) if you are using the Azure Information Protection (AIP) unified labeling client for Windows computers. This page includes information about the new private preview for Office apps.
+- New settings for [auto-labeling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange):
+  - Additional settings for email to support always applying a matched sensitivity label, and to apply encryption to email received from outside the organization.
+  - Exclusions for specific instances (users, groups, sites) are supported by using the new **Excluded** option when the default selection of **All** is specified for **Included**.
+- Now in preview: Mobile devices (iOS and Android) support [co-authoring](sensitivity-labels-coauthoring.md) when you have minimum versions and opt in to this preview.
+- Support for setting the default sharing link type is extended to individual documents in SharePoint and OneDrive. For more information, see the new article [Use sensitivity labels to configure the default sharing link type for sites and documents in SharePoint and OneDrive]( sensitivity-labels-default-sharing-link.md).
+- Teams admin center now supports container labels (sensitivity labels with the scope of Groups & sites).
+
 ## January 2022
 
 ### Microsoft Information Governance
@@ -243,47 +266,5 @@ Datacenter asset management
 ### Sensitivity labels
 - [Co-authoring and AutoSave](sensitivity-labels-coauthoring.md) is now generally available (GA) for Windows (minimum version of 2107 from Current Channel or Monthly Enterprise Channel) and macOS (minimum version of 16.51).
 - Rolling out for Office apps that use built-in labels: The default label setting now supports existing documents as well as new documents. This change in behavior provides parity with the Azure Information Protection unified labeling client. For more information about the rollout per app and minimum versions, see the [capabilities table](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) for Word, Excel, and PowerPoint.
-- Container labels now support [default sharing link settings by using PowerShell advanced settings](sensitivity-labels-teams-groups-sites.md#configure-settings-for-the-default-sharing-link-for-a-site-by-using-powershell-advanced-settings).
+- Container labels now support [default sharing link settings by using PowerShell advanced settings](sensitivity-labels-teams-groups-sites.md#configure-settings-for-the-default-sharing-link-type-for-a-site-by-using-powershell-advanced-settings).
 - The [capabilities tables](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) that list the minimum supported versions for built-in labeling now have versions for Current Channel, the Monthly Enterprise Channel, and the Semi-Annual Enterprise Channel.
-
-## August 2021
-
-### App governance
-- [Expanded entries for alert insights](app-governance-anomaly-detection-alerts.md#collection-alerts). New entries were added to describe additional alert insights now available in app governance.
-
-### Communication compliance
-- [Communication compliance channels](communication-compliance-channels.md) added new preview feature support for modern attachments scanning in Teams private chats and channels.
-
-### Compliance & service assurance
-
-- [Service assurance](/compliance/) has been updated with quarterly review content updates for certifications and statements of applicability:
-  - Architecture
-  - Audit logging
-  - Encryption and key management
-  - Identity and access management
-  - Microsoft 365 access management
-  - Network security
-  - Privacy
-  - Resiliency and continuity
-  - Risk management
-  - Security development and operation
-  - Security monitoring
-  - Supplier management
-  - Vulnerability management
-
-### Data Loss Prevention
-
-- [Data loss prevention policy reference](dlp-policy-reference.md). Added a new policy reference page to assist you in creating policies.
-
-### Insider risk management
-- [Learn about and configure insider risk management browser signal detection](insider-risk-management-browser-support.md). Preview feature for configuring browser signal detection for Edge and Chrome browsers.
-
-### Retention and records management
-- [Flowchart to determine when an item will be retained or permanently deleted](retention-flowchart.md) to supplement the concepts and examples for the principles of retention.
-
-### Sensitivity labels
-- [Enhancements to auto-labeling policies](apply-sensitivity-label-automatically.md) that include higher supported numbers for sites and policies, support for all OneDrive and SharePoint sites and the ability to select available SharePoint sites instead of having to enter each site by URL, and simulation improvements.
-- Auto-labeling in Office apps as a sensitivity label setting now [supports Exact Data Match (EDM)](apply-sensitivity-label-automatically.md#custom-sensitive-information-types-with-exact-data-match).
-- Default labels are now extended to [Power BI (in preview)](/power-bi/admin/service-security-sensitivity-label-default-label-policy).
-- Auditing events for Outlook on the web that [surface in activity explorer](data-classification-activity-explorer-available-events.md) are now fully rolled out, which means that user activity for built-in labels is now available for all Office apps across all platform.
-- The [supported capabilities tables](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) have a new footnote for Windows to clarify that the minimum versions are for the Current Channel, and a tip to more easily compare older versions that omit leading zeros against newer versions.

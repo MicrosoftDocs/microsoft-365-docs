@@ -64,6 +64,11 @@ For full instructions:
 
 - [Apply a retention label to content automatically](apply-retention-labels-automatically.md) (not supported for regulatory records)
 
+## Tenant setting for editing record properties
+
+If you'll use retention labels to declare items as records (rather than regulatory records) in SharePoint and OneDrive, consider whether you need to change the default tenant setting that allows users to edit the properties for a [locked record](record-versioning.md) when files are larger than 0 bytes.
+
+To change this default, go to the [Microsoft 365 compliance center](https://compliance.microsoft.com/) > **Records management** > **Records management settings** > **Retention labels** > **Allow editing of record properties** and then turn off the setting **Allow users to edit record properties**.
 
 ## Applying the configured retention label to content
 
@@ -90,4 +95,4 @@ For more information about searching for these events, see [Search the audit log
 
 ## Next steps
 
-For a list of scenarios supported by records management, see [Common scenarios for records management](get-started-with-records-management.md#common-scenarios).
+Understand how you can use [record versioning to update records stored in SharePoint or OneDrive](record-versioning.md).

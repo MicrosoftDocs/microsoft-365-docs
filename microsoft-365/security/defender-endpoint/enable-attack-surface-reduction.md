@@ -14,7 +14,9 @@ ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.collection: m365solution-scenario
+ms.collection: 
+- m365solution-scenario
+- M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.date: 1/18/2022
 ---
@@ -151,27 +153,28 @@ You can use Microsoft Endpoint Manager (MEM) OMA-URI to configure custom ASR rul
 1. Open the Microsoft Endpoint Manager (MEM) admin center. In the **Home** menu, click  **Devices**, select **Configuration profiles**, and then click **Create profile**.
 
    > [!div class="mx-imgBorder"]
-   > ![MEM Create Profile.](images/mem01-create-profile.png)
+   >  :::image type="content" source="images/mem01-create-profile.png" alt-text="The Create profile page in the Microsoft Endpoint Manager admin center portal" lightbox="images/mem01-create-profile.png":::
 
 2. In **Create a profile**, in the following two drop-down lists, select the following:
 
    - In **Platform**, select **Windows 10 and later**
    - In **Profile type**, select **Templates**
+   - If ASR rules are already set through Endpoint security, in **Profile type**, select **Settings Catalog**.
 
    Select **Custom**, and then select **Create**.
 
    > [!div class="mx-imgBorder"]
-   > ![MEM rule profile attributes.](images/mem02-profile-attributes.png)
+   > :::image type="content" source="images/mem02-profile-attributes.png" alt-text="The rule profile attributes in the Microsoft Endpoint Manager admin center portal" lightbox="images/mem02-profile-attributes.png":::
 
 3. The Custom template tool opens to step **1 Basics**. In **1 Basics**, in **Name**, type a name for your template, and in **Description** you can type a description (optional).
 
    > [!div class="mx-imgBorder"]
-   > ![MEM basic attributes.](images/mem03-1-basics.png)
+   > :::image type="content" source="images/mem03-1-basics.png" alt-text="The basic attributes in the Microsoft Endpoint Manager admin center portal" lightbox="images/mem03-1-basics.png":::
 
 4. Click **Next**. Step **2 Configuration settings** opens. For OMA-URI Settings, click **Add**. Two options now appear: **Add** and **Export**.
 
    > [!div class="mx-imgBorder"]
-   > ![MEM Configuration settings.](images/mem04-2-configuration-settings.png)
+   > :::image type="content" source="images/mem04-2-configuration-settings.png" alt-text="The configuration settings in the Microsoft Endpoint Manager admin center portal" lightbox="images/mem04-2-configuration-settings.png":::
 
 5. Click **Add** again. The **Add Row OMA-URI Settings** opens. In **Add Row**, do the following:
 
@@ -187,7 +190,7 @@ You can use Microsoft Endpoint Manager (MEM) OMA-URI to configure custom ASR rul
      - 6 : Warn (Enable the ASR rule but allow the end-user to bypass the block)
 
    > [!div class="mx-imgBorder"]
-   > ![MEM OMA URI configuration.](images/mem05-add-row-oma-uri.png)
+   > :::image type="content" source="images/mem05-add-row-oma-uri.png" alt-text="The OMA URI configuration in the Microsoft Endpoint Manager admin center portal" lightbox="images/mem05-add-row-oma-uri.png":::
 
 6. Select **Save**. **Add Row** closes. In **Custom**, select **Next**. In step **3 Scope tags**, scope tags are optional. Do one of the following:
 
@@ -201,7 +204,7 @@ You can use Microsoft Endpoint Manager (MEM) OMA-URI to configure custom ASR rul
    - **Add all devices**
 
    > [!div class="mx-imgBorder"]
-   > ![MEM assignments.](images/mem06-4-assignments.png)
+   > :::image type="content" source="images/mem06-4-assignments.png" alt-text="The assignments in the Microsoft Endpoint Manager admin center portal" lightbox="images/mem06-4-assignments.png":::
 
 8. In **Excluded groups**, select any groups that you want to exclude from this rule, and then select **Next**.
 
@@ -212,12 +215,12 @@ You can use Microsoft Endpoint Manager (MEM) OMA-URI to configure custom ASR rul
    - In **Value**, enter the applicable value or value range
 
    > [!div class="mx-imgBorder"]
-   > ![MEM Applicability rules.](images/mem07-5-applicability-rules.png)
+   > :::image type="content" source="images/mem07-5-applicability-rules.png" alt-text="The applicability rules in the Microsoft Endpoint Manager admin center portal" lightbox="images/mem07-5-applicability-rules.png":::
 
 10. Select **Next**. In step **6 Review + create**, review the settings and information you have selected and entered, and then select **Create**.
 
     > [!div class="mx-imgBorder"]
-    > ![MEM Review and create.](images/mem08-6-review-create.png)
+    > :::image type="content" source="images/mem08-6-review-create.png" alt-text="The Review and create option in the Microsoft Endpoint Manager admin center portal" lightbox="images/mem08-6-review-create.png":::
 
     > [!NOTE]
     > Rules are active and live within minutes.
@@ -289,7 +292,7 @@ Example:
    - 2 : Audit (Evaluate how the ASR rule would impact your organization if enabled)
    - 6 : Warn  (Enable the ASR rule but allow the end-user to bypass the block)
 
-   :::image type="content" source="images/asr-rules-gp.png" alt-text="ASR rules in Group Policy.":::
+   :::image type="content" source="images/asr-rules-gp.png" alt-text="ASR rules in Group Policy" lightbox="images/asr-rules-gp.png":::
 
 5. To exclude files and folders from ASR rules, select the **Exclude files and paths from Attack surface reduction rules** setting and set the option to **Enabled**. Select **Show** and enter each file or folder in the **Value name** column. Enter **0** in the **Value** column for each item.
 
@@ -304,7 +307,7 @@ Example:
 > The User Defined option setting is shown in the following figure.
 
 > [!div class="mx-imgBorder"]
-> ![ASR enable "User Defined"](images/asr-user-defined.png)
+> :::image type="content" source="images/asr-user-defined.png" alt-text="The Enable option for credential security" lightbox="images/asr-user-defined.png":::
 
 1. Type **powershell** in the Start menu, right-click **Windows PowerShell** and select **Run as administrator**.
 

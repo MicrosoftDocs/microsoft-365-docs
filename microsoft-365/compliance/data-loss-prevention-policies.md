@@ -589,6 +589,6 @@ However, DLP reports need pull data from across Microsoft 365, including Exchang
 
 - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
 
-- [What the DLP functions look for](what-the-dlp-functions-look-for.md)
+- [Sensitive information type functions](sit-functions.md)
 
 - [Create a custom sensitive information type](create-a-custom-sensitive-information-type.md)

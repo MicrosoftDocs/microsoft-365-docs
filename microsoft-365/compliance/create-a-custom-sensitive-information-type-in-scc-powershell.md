@@ -6,7 +6,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 audience: Admin
-ms.article: article
+ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
@@ -230,7 +230,7 @@ Sensitive information types can also use built-in functions to identify corrobor
 
 For example, an employee ID badge has a hire date on it, so this custom entity can use the built-in `Func_us_date` function   to identify a date in the format that's commonly used in the US.
 
-For more information, see [What the DLP functions look for](what-the-dlp-functions-look-for.md).
+For more information, see [Sensitive information type functions](sit-functions.md).
 
 ![XML markup showing Match element referencing built-in function.](../media/dac6eae3-9c52-4537-b984-f9f127cc9c33.png)
 
@@ -320,7 +320,7 @@ In addition to confidenceLevel for each Pattern, the Entity has a recommendedCon
 
 ## Do you want to support other languages in the UI of the Compliance center? [LocalizedStrings element]
 
-If your compliance team uses the Microsoft 365 Compliance center to create polices policies in different locales and in different languages, you can provide localized versions of the name and description of your custom sensitive information type. When your compliance team uses Microsoft 365 in a language that you support, they'll see the localized name in the UI.
+If your compliance team uses the Microsoft 365 Compliance center to create policies in different locales and in different languages, you can provide localized versions of the name and description of your custom sensitive information type. When your compliance team uses Microsoft 365 in a language that you support, they'll see the localized name in the UI.
 
 ![Instance count and match accuracy configuration.](../media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
 
@@ -907,4 +907,4 @@ You can copy this markup, save it as an XSD file, and use it to validate your ru
 
 - [Learn about data loss prevention](dlp-learn-about-dlp.md)
 - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
-- [What the DLP functions look for](what-the-dlp-functions-look-for.md)
+- [Sensitive information type functions](sit-functions.md)

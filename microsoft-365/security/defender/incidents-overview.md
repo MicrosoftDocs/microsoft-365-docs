@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -66,9 +66,9 @@ You manage incidents from **Incidents & alerts > Incidents** on the quick launch
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="The Incidents page in the Microsoft 365 Defender portal." lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
 
-Selecting an incident name displays a summary of the incident and provides access to tabs with additional information.
+Selecting an incident name displays a summary of the incident and provides access to tabs with additional information. Here’s an example.
 
-:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Example of the Summary page for an incident in the Microsoft 365 Defender portal" lightbox="../../media/incidents-overview/incidents-ss-incident-summary.png":::
+:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="The Summary page for an incident in the Microsoft 365 Defender portal" lightbox="../../media/incidents-overview/incidents-ss-incident-summary.png":::
 
 The additional tabs for an incident are:
 
@@ -94,7 +94,7 @@ The additional tabs for an incident are:
 
 - Evidence and Response
 
-  All the supported events and suspicious entities in the alerts in the incident.
+  All the supported events and suspicious entities in the alerts of the incident.
 
 - Graph (Preview)
 
@@ -108,16 +108,18 @@ Here's the relationship between an incident and its data and the tabs of an inci
 
 Here's an example workflow for responding to incidents in Microsoft 365 with the Microsoft 365 Defender portal.
 
-:::image type="content" source="../../media/incidents-overview/incidents-example-workflow.png" alt-text="Example of an incident response workflow for Microsoft 365." lightbox="../../media/incidents-overview/incidents-example-workflow.png":::
+:::image type="content" source="../../media/incidents-overview/incidents-example-workflow.png" alt-text="An example of an incident response workflow for the Microsoft 365 Defender portal." lightbox="../../media/incidents-overview/incidents-example-workflow.png":::
 
 On an ongoing basis, identify the highest priority incidents for analysis and resolution in the incident queue and get them ready for response. This is a combination of:
 
 - [Triaging](incident-queue.md) to determining the highest priority incidents through filtering and sorting of the incident queue.
 - [Managing](manage-incidents.md) incidents by modifying their title, assigning them to an analyst, and adding tags and comments.
 
+Consider these steps for your own incident response workflow:
+
 1. For each incident, begin an [attack and alert investigation and analysis](investigate-incidents.md):
  
-   1. View the summary of the incident to understand it's scope and severity and what entities are affected with the **Summary** and **Graph** (Preview) tabs.
+   1. View the summary of the incident to understand its scope and severity and what entities are affected with the **Summary** and **Graph** (Preview) tabs.
 
    1. Begin analyzing the alerts to understand their origin, scope, and severity with the **Alerts** tab.
 
@@ -146,7 +148,7 @@ For more information about incident response across Microsoft products, see [thi
 
 Here's an example of security operations (SecOps) for Microsoft 365 Defender.
 
-:::image type="content" source="../../media/incidents-overview/incidents-example-operations.png" alt-text="An example of security operations for Microsoft 365 Defender." lightbox="../../media/incidents-overview/incidents-example-operations.png":::
+:::image type="content" source="../../media/incidents-overview/incidents-example-operations.png" alt-text="An example of security operations for Microsoft 365 Defender" lightbox="../../media/incidents-overview/incidents-example-operations.png":::
 
 Daily tasks can include:
 
@@ -191,7 +193,7 @@ The email notification contains important details about the incident like the in
 You can add or remove recipients in the email notifications. New recipients get notified about incidents after they're added. 
 
 >[!NOTE]
->You need the 'Manage security settings' permission to configure email notification settings. If you've chosen to use basic permissions management, users with Security Administrator or Global Administrator roles can configure email notifications for you. <br> <br>
+>You need the **Manage security settings** permission to configure email notification settings. If you've chosen to use basic permissions management, users with Security Administrator or Global Administrator roles can configure email notifications. <br> <br>
 Likewise, if your organization is using role-based access control (RBAC), you can only create, edit, delete, and receive notifications based on device groups that you are allowed to manage.
 
 ### Create a rule for email notifications
@@ -208,7 +210,7 @@ Follow these steps to create a new rule and customize email notification setting
     - **Include organization name in the email** - Select if you want your organization name to appear in the email notification.
     - **Include tenant-specific portal link** - Select if you want to add a link with the tenant ID in the email notification for access to a specific Microsoft 365 tenant.
 
-    :::image type="content" source="../../media/get-incident-notifications/incidents-ss-email-notification-settings.png" alt-text="Notification settings for incident email notifications." lightbox="../../media/get-incident-notifications/incidents-ss-email-notification-settings.png":::
+    :::image type="content" source="../../media/get-incident-notifications/incidents-ss-email-notification-settings.png" alt-text="The Notification settings page for incident email notifications in the Microsoft 365 Defender portal." lightbox="../../media/get-incident-notifications/incidents-ss-email-notification-settings.png":::
 
 5. Select **Next**. On the **Recipients** page, add the email addresses that will receive the incident notifications. Select **Add** after typing each new email address. To test notifications and ensure that the recipients receive them in the inboxes, select **Send test email**. 
 6. Select **Next**. On the **Review rule** page, review the settings of the rule, and then select **Create rule**. Recipients will start receiving incident notifications through email based on the settings.

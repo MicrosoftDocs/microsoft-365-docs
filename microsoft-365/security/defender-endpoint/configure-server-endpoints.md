@@ -32,7 +32,7 @@ ms.technology: mde
 - Windows Server 2019 and later
 - Windows Server 2019 core edition
 - Windows Server 2022
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -48,9 +48,12 @@ For guidance on how to download and use Windows Security Baselines for Windows s
 
 You'll need to complete the following general steps to successfully onboard servers.
 
-![Illustration of onboarding flow for Windows Servers and Windows 10 devices](images/server-onboarding-tools-methods.png)
+:::image type="content" source="images/server-onboarding-tools-methods.png" alt-text="An illustration of onboarding flow for Windows Servers and Windows 10 devices" lightbox="images/server-onboarding-tools-methods.png":::
 
 **Windows Server 2012 R2 and Windows Server 2016 (Preview)**
+
+>[!IMPORTANT]
+> You'll need to turn on the preview features in the Endpoints section of Microsoft 365 Defender to use this functionality. Navigate to [Microsoft 365 Defender > Settings > Endpoints > Advanced features](https://security.microsoft.com/preferences2/integration) and turn on Preview features.
 
 - Download installation and onboarding packages
 - Apply the installation package
@@ -84,6 +87,14 @@ The new unified solution package makes it easier to onboard servers by removing 
 - [Automated Investigation and Response (AIR)](/microsoft-365/security/defender-endpoint/automated-investigations)
 - [Tamper Protection](/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection)
 
+Depending on the server that you're onboarding, the unified solution installs Microsoft Defender Antivirus and/or the EDR sensor. The following table indicates what component is installed and what is built in by default.
+
+|Server version|AV|EDR|
+|----|----|----|
+|Windows Server 2012 R2 SP1|![Yes.](images/svg/check-yes.svg)|![Yes.](images/svg/check-yes.svg)|
+|Windows Server 2016|Built-in|![Yes.](images/svg/check-yes.svg)|
+|Windows Server 2019 or later|Built-in|Built-in|
+
 If you have previously onboarded your servers using MMA, follow the guidance provided in [Server migration](server-migration.md) to migrate to the new solution.
 
 >[!NOTE]
@@ -93,8 +104,10 @@ If you have previously onboarded your servers using MMA, follow the guidance pro
 
 The following specifics apply to the new unified solution package for Windows Server 2012 R2 and 2016:
 
-- Ensure connectivity requirements as specified in [Enable access to Microsoft Defender for Endpoint service URLs in the proxy server](/microsoft-365/security/defender-endpoint/configure-proxy-internet?enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server) are met. They are equivalent to those for Windows Server 2019.
+- Ensure connectivity requirements as specified in [Enable access to Microsoft Defender for Endpoint service URLs in the proxy server](/microsoft-365/security/defender-endpoint/configure-proxy-internet?enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server) are met. They are equivalent to those for Windows Server 2019. 
+- We are investigating an issue with Windows Server 2012 R2 connectivity to cloud when static TelemetryProxyServer is used and the certificate revocation list (CRL) URLs are not reachable from the SYSTEM account context. The immediate mitigation is to either use an alternative proxy option that provides such connectivity, or configure the same proxy via the WinInet setting on the SYSTEM account context.
 - Previously, the use of the Microsoft Monitoring Agent (MMA) on Windows Server 2016 and below allowed for the OMS / Log Analytics gateway to provide connectivity to Defender cloud services. The new solution, like Microsoft Defender for Endpoint on Windows Server 2019, Windows Server 2022, and Windows 10, does not support this gateway.
+
 - On Windows Server 2016, verify that Microsoft Defender Antivirus is installed, is active and up to date. You can download and install the latest platform version using Windows Update. Alternatively, download the update package manually from the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623) or from [MMPC](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64).  
 - On Windows Server 2012 R2, there is no user interface for Microsoft Defender Antivirus. In addition, the user interface on Windows Server 2016 only allows for basic operations. To perform operations on a device locally, refer to [Manage Microsoft Defender for Endpoint with PowerShell, WMI, and MPCmdRun.exe](/microsoft-365/security/defender-endpoint/manage-mde-post-migration-other-tools). As a result, features that specifically rely on user interaction, such as where the user is prompted to make a decision or perform a specific task, may not work as expected. It is recommended to disable or not enable the user interface nor require user interaction on any managed server as it may impact protection capability.
 - Not all Attack Surface Reduction rules are available on all operating systems. See [Attack Surface Reduction (ASR) rules](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules).
@@ -149,7 +162,6 @@ For more information, see [Integration with Microsoft Defender for Cloud](azure-
 
 If you have fully updated your machines with the latest [monthly rollup](https://support.microsoft.com/topic/october-12-2021-kb5006714-monthly-rollup-4dc4a2cd-677c-477b-8079-dcfef2bda09e) package, there are **no** additional prerequisites.
 
-
 The installer package will check if the following components have already been installed via an update:
 
 - [Update for customer experience and diagnostic telemetry](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry)
@@ -161,6 +173,10 @@ Aside from fully updating the machine with the Latest Cumulative Update (LCU), v
 
 > [!NOTE]
 > In order to successfully update the built-in version of Windows Defender, which has a version number starting with 4.10, to the latest available platform, a servicing stack update must have been applied as well as the Latest Cumulative Update (LCU) equal to or later than September 20, 2018—KB4457127 (OS Build 14393.2515).
+
+**Prerequisites for running with third-party security solutions**
+
+If you intend to use a third-party antimalware solution, you'll need to run Microsoft Defender Antivirus in passive mode. You must remember to set to passive mode during the installation and onboarding process.
 
 **New update package for Microsoft Defender for Endpoint on Windows Server 2012 R2 and 2016**
 
@@ -277,6 +293,8 @@ You can use the [installer script](server-migration.md#installer-script) to help
     ```  
 
      >[!NOTE]
+    >If you need to troubleshoot agent installation issues, add '-etl -log' to the install.ps1 script parameters.
+    >
     >The recommended execution policy setting is `Allsigned`. This requires importing the script's signing certificate into the Local Computer Trusted Publishers store if the script is running as SYSTEM on the endpoint.
 
     Replace \\servername-or-dfs-space\share-name with the UNC path, using the file server's fully qualified domain name (FQDN), of the shared *install.ps1* file. The installer package md4ws.msi must be placed in the same directory.  Also ensure that the permissions of the UNC path allow read access to the computer account that's installing the platform.
@@ -301,16 +319,7 @@ The following steps are only applicable if you're using a third-party anti-malwa
     - Type: `REG_DWORD`
     - Value: `1`
 
-2. Run the following PowerShell command to verify that the passive mode was configured:
-
-    ```powershell
-    Get-WinEvent -FilterHashtable @{ProviderName="Microsoft-Windows-Sense" ;ID=84}
-    ```
-
-3. Confirm that a recent event containing the passive mode event is found:
-
-    ![Image of passive mode verification result](images/atp-verify-passive-mode.png)
-
+       :::image type="content" source="images/atp-verify-passive-mode.png" alt-text="The passive mode verification result" lightbox="images/atp-verify-passive-mode.png":::
 > [!IMPORTANT]
 >
 > - When you use Microsoft Defender for Cloud to monitor servers, a Defender for Endpoint tenant is automatically created (in the US for US users, in the EU for European users, and in the UK for UK users).
@@ -389,8 +398,8 @@ For other Windows server versions, you have two options to offboard Windows serv
 - Uninstall the MMA agent
 - Remove the Defender for Endpoint workspace configuration
 
->[!NOTE]
->*These offboarding instructions for other Windows server versions also apply if you are running the previous Microsoft Defender for Endpoint for Windows Server 2016 and Windows Server 2012 R2 that requires the MMA. Instructions to migrate to the new unfiied solution are at [Server migration scenarios in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/server-migration).
+> [!NOTE]
+> These offboarding instructions for other Windows server versions also apply if you are running the previous Microsoft Defender for Endpoint for Windows Server 2016 and Windows Server 2012 R2 that requires the MMA. Instructions to migrate to the new unified solution are at [Server migration scenarios in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/server-migration).
 
 ## Related topics
 

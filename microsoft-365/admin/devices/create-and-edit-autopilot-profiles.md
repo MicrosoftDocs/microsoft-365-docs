@@ -32,6 +32,9 @@ description: "Learn to create an AutoPilot profile and apply it to a device, as 
 
 # Create and edit AutoPilot profiles
 
+> [!NOTE]
+> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../../security/defender-business/mdb-overview.md).
+
 ## Create a profile
 
 A profile applies to a device, or a group of devices,
@@ -80,3 +83,6 @@ Once you've assigned a profile to a device, you can update it, even if you've al
     
 2. Select the check box next to a device name, and in the **Device** panel, choose **None** from the **Assigned profile** drop-down list \> **Save**.
     
+## See also
+
+[Top 10 ways to secure Microsoft 365 for business plans](../security-and-compliance/secure-your-business-data.md)

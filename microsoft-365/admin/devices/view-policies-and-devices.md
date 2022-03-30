@@ -30,6 +30,9 @@ description: "View device policies and actions by signing in to Microsoft 365 fo
 
 This article applies to Microsoft 365 Business Premium.
 
+> [!NOTE]
+> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../../security/defender-business/mdb-overview.md).
+
 ## View and edit device policies
 
 1.  Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
@@ -47,3 +50,6 @@ This article applies to Microsoft 365 Business Premium.
   
    ![Manage devices page.](../../media/devicesmanage.png)
 
+## See also
+
+[Top 10 ways to secure Microsoft 365 for business plans](../security-and-compliance/secure-your-business-data.md)

@@ -37,6 +37,10 @@ You need to create an extractor for each entity in the document that you want to
 
 2. On the **New entity extractor** screen, type the name of your extractor in the **New extractor name** field. For example, name it **Service Start Date** if you want to extract the service start date from each Contract Renewal document. You can also choose to reuse a previously created column (for example, a managed metadata column).
 
+    By default, the column type is **Single line of text**. If you want to change the column type, select **Advanced settings** > **Column type**, and then select the type you want to use.
+
+    ![Screenshot of the Advanced settings portion of the New entity extractor panel showing the Column type option.](../media/content-understanding/advanced-settings-column-type.png) 
+
     > [!NOTE]
     > For extractors with the column type **Single line of text**, the maximum character limit is 255. Any characters that you type exceeding the limit get truncated.
 
