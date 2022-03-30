@@ -116,11 +116,11 @@ The last step is to create an ICE Chat connector in the Microsoft 365 compliance
 
 7. After the connection is successfully validated, click **Next**.
 
-8. On the **Define user** page, specify the users to import data for
+8. On the **Define user** page, specify the users to import data for.
 
-     - **All users in your organziation**: Select this option to import data for all users.
+     - **All users in your organization**. Select this option to import data for all users.
 
-     - **Only users on Litigation hold**: Select this option to import data only for users whose mailboxes are placed on Litigation hold. This option imports data to            user mailboxes that have the LitigationHoldEnabled property set to True. For more information, see [Create a Litigation hold](create-a-litigation-hold.md).
+     - **Only users on Litigation hold**. Select this option to import data only for users whose mailboxes are placed on Litigation hold. This option imports data to user mailboxes that have the LitigationHoldEnabled property set to True. For more information, see [Create a Litigation hold](create-a-litigation-hold.md).
 
 9. On the **Map external users to Microsoft 365 users** page, enable automatic user mapping and provide custom user mapping as required. You can download a copy of the user-mapping CSV file on this page. You can add the user mappings to the file and then upload it.
 
@@ -197,11 +197,11 @@ After your ICE Chat SFTP site is configured, the next step is to create an ICE C
 
 7. After the connection is successfully validated, click **Next**.
 
-8. On the **Define user** page, specify the users to import data for
+8. On the **Define user** page, specify the users to import data for.
 
-     - **All users in your organziation**: Select this option to import data for all users.
+     - **All users in your organization**. Select this option to import data for all users.
 
-     - **Only users on Litigation hold**: Select this option to import data only for users whose mailboxes are placed on Litigation hold. This option imports data to            user mailboxes that have the LitigationHoldEnabled property set to True. For more information, see [Create a Litigation hold](create-a-litigation-hold.md).
+     - **Only users on Litigation hold**. Select this option to import data only for users whose mailboxes are placed on Litigation hold. This option imports data to user mailboxes that have the LitigationHoldEnabled property set to True. For more information, see [Create a Litigation hold](create-a-litigation-hold.md).
 
 9. On the **Map ICE Chat users to Microsoft 365 users** page, enable automatic user mapping and provide custom user mapping as required.
 
