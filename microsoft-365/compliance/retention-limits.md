@@ -113,9 +113,9 @@ For the [disposition of content](disposition.md), there are some limits to be aw
 
 - Maximum numbers per tenant:
     
-    - 16,000,000 items pending disposition and disposed
+    - 16,000,000 items in either of the following disposition review states: pending disposition or approved disposition
     	
-    - 16,000,000 records automatically disposed without disposition review
+    - 16,000,000 items marked as records automatically disposed (no disposition review)
 
 - Maximum numbers for each retention label:
     
