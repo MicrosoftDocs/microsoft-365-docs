@@ -77,8 +77,8 @@ For certain actions in Lighthouse, role assignments in the partner tenant are re
 ## Related content
 
 [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) (article)  
-[Delegated administration privileges (DAP) FAQ](/partner-center/dap-faq.md) (article)  
-[Assign roles and permissions to users](/partner-center/permissions-overview.md) (article)  
+[Delegated administration privileges (DAP) FAQ](/partner-center/dap-faq) (article)  
+[Assign roles and permissions to users](/partner-center/permissions-overview) (article)  
 [Overview of Microsoft 365 Lighthouse](m365-lighthouse-overview.md) (article)  
 [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md) (article)  
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)
