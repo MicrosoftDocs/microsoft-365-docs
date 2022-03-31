@@ -2,8 +2,8 @@
 title: "Move users to a different subscription"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: micurn, nicholak
 audience: Admin
@@ -14,9 +14,9 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- commerce_subscriptions
 - AdminSurgePortfolio
 - manage_licenses
-- commerce_subscriptions
 search.appverid: MET150 
 description: "Learn how to move users between subscriptions."
 ms.date: 07/01/2020 

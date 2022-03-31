@@ -2,8 +2,8 @@
 title: "Change your billing frequency"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -14,11 +14,10 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- commerce_billing
 - TopSMBIssues
 - okr_SMB
 - AdminSurgePortfolio
-- commerce_billing
-- c
 search.appverid: MET150
 description: "Learn how to change how frequently you're billed for your business subscription."
 ms.date: 04/02/2021

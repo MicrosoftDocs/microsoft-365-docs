@@ -34,9 +34,9 @@ Organizations choose Basic Mobility and Security so that employees can use their
 
 Basic Mobility and Security for Microsoft 365 hosted by the Intune service works with most, but not all, mobile devices. The following are supported with Basic Mobility and Security:
 
-- iOS 10.0 or later
+- iOS
 
-- Android 4.4 or later
+- Android
 
 - Windows 8.1 and Windows 10 (Phone and PC)
 

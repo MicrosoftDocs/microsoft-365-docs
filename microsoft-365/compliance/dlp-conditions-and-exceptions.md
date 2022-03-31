@@ -43,15 +43,11 @@ The tables in the following sections describe the conditions and exceptions that
 
 ### Senders
 
-If you use the sender address as a condition or exception the actual field where the value is looked for varies depending on the type of rule you use. For DLP based rules, the Envelope address is used as the sender address. For Exchange transport rules the Header address is used as the sender address.
+If you use the sender address as a condition or exception the actual field where the value is looked for varies depending on the sender address location configured. By default,  DLP rules use the Header address as the sender address.
 
-<!--
-> [!NOTE]
-> Starting January 20, 2022, the default sender address location will be moved to the Header address along with the availability of the -SenderAddressLocation parameter to configure desired behavior at a DLP rule level.
+![Image of an email header showing the difference between the Envelope (P1) address and the Header (P2) address](../media/dlp-conditions-exceptions-meetinginvite-callouts.png)
 
-![image](https://user-images.githubusercontent.com/53205984/145942298-6b435ba6-d146-44fe-a1c5-58babeaf8d7a.png)
-
-At the tenant level, you can configure a sender address location to be used across all rules, unless overridden by a single rule. To revert tenant DLP policy configuration to evaluate the sender address from the Envelope across all rules, you can run the following command:
+At the tenant level, you can configure a sender address location to be used across all rules, unless overridden by a single rule. To set tenant DLP policy configuration to evaluate the sender address from the Envelope across all rules, you can run the following command:
 
 ```PowerShell
 Set-PolicyConfig –SenderAddressLocation Envelope
@@ -65,7 +61,7 @@ To configure the sender address location at a DLP rule level, the parameter is _
 
 - **Header or envelope** (`HeaderOrEnvelope`) Examine senders in the message header and the message envelope.
 <br>
--->
+
 |condition or exception in DLP|condition/exception parameters in Microsoft 365 PowerShell|property type|description|
 |---|---|---|---|
 |Sender is|condition: *From* <br/> exception: *ExceptIfFrom*|Addresses|Messages that are sent by the specified mailboxes, mail users, mail contacts, or Microsoft 365 groups in the organization.|
@@ -153,7 +149,7 @@ To configure the sender address location at a DLP rule level, the parameter is _
 |With importance|condition: *WithImportance* <br/> exception: *ExceptIfWithImportance*|Importance|Messages that are marked with the specified importance level.|
 |Content character set contains words|condition: *ContentCharacterSetContainsWords* <br/> *ExceptIfContentCharacterSetContainsWords*|CharacterSets|Messages that have any of the specified character set names.|
 |Has sender override|condition: *HasSenderOverride* <br/> exception: *ExceptIfHasSenderOverride*|n/a|Messages where the sender has chosen to override a data loss prevention (DLP) policy. For more information about DLP policies see [Learn about data loss prevention](./dlp-learn-about-dlp.md)|
-|Message type matches|condition: *MessageTypeMatches* <br/> exception: *ExceptIfMessageTypeMatches*|MessageType|Messages of the specified type.|
+|Message type matches|condition: *MessageTypeMatches* <br/> exception: *ExceptIfMessageTypeMatches*|MessageType|Messages of the specified type. **Note**: The available message types are Automatic reply, Auto-forward, Encrypted (S/MIME), Calendaring, Permission controlled (rights management), Voicemail, Signed, Read receipt, and Approval request. |
 |The message size is greater than or equal to|condition: *MessageSizeOver* <br/> exception: *ExceptIfMessageSizeOver*|`Size`|Messages where the total size (message plus attachments) is greater than or equal to the specified value. **Note**: Message size limits on mailboxes are evaluated before mail flow rules. A message that's too large for a mailbox will be rejected before a rule with this condition is able to act on the message.|
 |
 

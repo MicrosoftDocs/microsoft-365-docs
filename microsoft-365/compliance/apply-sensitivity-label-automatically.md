@@ -196,7 +196,7 @@ If you prefer, you can recommend to your users that they apply the label. With t
 
 Here's an example of a prompt from the Azure Information Protection unified labeling client when you configure a condition to apply a label as a recommended action, with a custom policy tip. You can choose what text is displayed in the policy tip.
 
-![Prompt to apply a recommended label.](../media/Sensitivity-label-Prompt-for-required-label.png)
+![Prompt to apply a recommended label.](../media/Sensitivity-label-prompt-for-required-label.png)
 
 ### When automatic or recommended labels are applied
 
@@ -306,19 +306,25 @@ In all cases, matched files are labeled until the OneDrive account is permanentl
 
 5. For the page **Name your auto-labeling policy**: Provide a unique name, and optionally a description to help identify the automatically applied label, locations, and conditions that identify the content to label.
 
-6. For the page **Choose locations where you want to apply the label**: Select and specify locations for Exchange, SharePoint, and OneDrive. If you don't want to keep the default of **All** for your chosen locations, select the link to choose specific instances. Then select **Next**.
+6. For the page **Choose locations where you want to apply the label**: Select and specify locations for Exchange, SharePoint, and OneDrive. If you don't want to keep the default of **All** included for your chosen locations, select the link to choose specific instances to include, or select the link to choose specific instances to exclude. Then select **Next**.
 
     ![Choose locations page for auto-labeling configuration.](../media/locations-auto-labeling-wizard.png)
     
-    To specify individual OneDrive accounts, see [Get a list of all user OneDrive URLs in your organization](/onedrive/list-onedrive-urls).
+    If you change the default settings by using **Included** or **Excluded**:
+    
+    - For the **Exchange** location, the policy is applied according to the sender address of the recipients specified. Most of the time, you'll want to keep the default of **All** included with **None** excluded. This configuration is suitable even if you're testing for a subset of users. Instead of specifying your subset of users here, use the advanced rules in the next step to configure conditions to include or exclude recipients in your organization. Otherwise, when you change the default settings here:
+        -  If you change the default of **All** included and instead, choose specific users or groups, email sent from outside your organization will be exempt from the policy. 
+        -  If you keep the default of **All** included but specify users or groups to exclude, email that these excluded users send will be exempt from the policy, but not email that they receive.
+    
+    - For OneDrive accounts, see [Get a list of all user OneDrive URLs in your organization](/onedrive/list-onedrive-urls) to help you specify individual OneDrive accounts to include or exclude.
 
-7. For the **Set up common or advanced rules** page: Keep the default of **Common rules** to define rules that identify content to label across all your selected locations. If you need different rules per location, select **Advanced rules**. Then select **Next**.
+7. For the **Set up common or advanced rules** page: Keep the default of **Common rules** to define rules that identify content to label across all your selected locations. If you need different rules per location, including more options for Exchange, select **Advanced rules**. Then select **Next**.
 
     The rules use conditions that include sensitive information types and sharing options:
     - For sensitive information types, you can select both built-in and custom sensitive information types.
     - For the shared options, you can choose **only with people inside my organization** or **with people outside my organization**.
 
-    If your only location is **Exchange**, or if you select **Advanced rules**, there are other conditions that you can select:
+    If your location is **Exchange** and you selected **Advanced rules**, there are other conditions that you can select:
     - Sender IP address is
     - Recipient domain is
     - Recipient is

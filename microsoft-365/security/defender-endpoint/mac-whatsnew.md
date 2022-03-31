@@ -27,6 +27,27 @@ ms.technology: mde
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
+## 101.61.69 (20.122022.16169.0)
+
+- Bug fixes
+
+## 101.60.91 (20.122021.16091.0)
+
+- This version contains a security update for [CVE-2022-23278](https://msrc-blog.microsoft.com/2022/03/08/guidance-for-cve-2022-23278-spoofing-in-microsoft-defender-for-endpoint/)
+
+## 101.59.50 (20.122021.15950.0)
+
+- This version adds support for macOS 12.3. Starting with macOS 12.3, [Apple is removing Python 2.7](https://developer.apple.com/documentation/macos-release-notes/macos-12_3-release-notes). There will be no Python version preinstalled on macOS by default. **ACTION NEEDED**: 
+  - Users must update Microsoft Defender for Endpoint for Mac to version 101.59.50 (or newer) prior to updating their devices to macOS Monterey 12.3 (or newer). This minimal version 101.59.50 is a prerequisite to eliminating Python-related issues with Microsoft Defender for Endpoint for Mac on macOS Monterey.
+  - For remote deployments, existing MDM setups must be updated to Microsoft Defender for Endpoint for Mac version 101.59.50 (or newer). Pushing via MDM an older Microsoft Defender for Endpoint for Mac version to macOS Monterey 12.3 (or newer) will result in an installation failure.
+
+## 101.59.10 (20.122012.15910.0)
+
+- The command-line tool now supports restoring quarantined files to a location other than the one where the file was originally detected. This can be done through `mdatp threat quarantine restore --id [threat-id] --path [destination-folder]`.
+- Extended device control to handle devices connected over Thunderbolt 3
+- Improved the handling of device control policies containing invalid vendor IDs and product IDs. Prior to this version, if the policy contained one or more invalid IDs, the entire policy was ignored. Starting from this version, only the invalid portions of the policy are ignored. Issues with the policy are surfaced through `mdatp device-control removable-media policy list`.
+- Bug fixes
+
 ## 101.56.62 (20.121122.15662.0)
 
 - Bug fixes

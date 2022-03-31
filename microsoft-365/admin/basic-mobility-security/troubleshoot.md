@@ -60,7 +60,7 @@ To start, check the following:
 
 ## Android phone or tablet
 
-- Make sure the device is running Android 4.4 or later.
+- Make sure the device is running Android.
 
 - Make sure that Chrome is up to date and is set as the default browser.
 

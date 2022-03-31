@@ -32,11 +32,7 @@ For attackers, ordinary phishing attacks that cast a random net for ordinary or 
 
 Microsoft 365 and Microsoft Defender for Office 365 contain several key features that provide additional layers of security for your priority accounts. This article describes these capabilities and how to use them.
 
-![Summary of the security recommendations in icon form.](../../media/security-recommendations-for-priority-users.png)
-
-<br>
-
-****
+:::image type="content" source="../../media/security-recommendations-for-priority-users.png" alt-text="The summary of the security recommendations in icon form" lightbox="../../media/security-recommendations-for-priority-users.png":::
 
 |Task|All Office 365 Enterprise plans|Microsoft 365 E3|Microsoft 365 E5|
 |---|:---:|:---:|:---:|
@@ -45,7 +41,6 @@ Microsoft 365 and Microsoft Defender for Office 365 contain several key features
 |[Apply user tags to priority accounts](#apply-user-tags-to-priority-accounts)|||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |[Monitor priority accounts in alerts, reports, and detections](#monitor-priority-accounts-in-alerts-reports-and-detections)|||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |[Train users](#train-users)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|
 
 > [!NOTE]
 > For information about securing _privileged accounts_ (admin accounts), see [this topic](/azure/architecture/framework/security/critical-impact-accounts).
@@ -90,10 +85,6 @@ You can also create custom tags to further identify and classify your priority a
 
 After you secure and tag your priority users, you can use the available reports, alerts, and investigations in EOP and Defender for Office 365 to quickly identify incidents or detections that involve priority accounts. The features that support user tags are described in the following table.
 
-<br>
-
-****
-
 |Feature|Description|
 |---|---|
 |Alerts|The user tags of affected users are visible and available as filters on the **Alerts** page in the Microsoft 365 Defender portal. For more information, see [Viewing alerts](../../compliance/alert-policies.md#viewing-alerts).|
@@ -101,7 +92,6 @@ After you secure and tag your priority users, you can use the available reports,
 |Campaign Views|User tags are one of many filterable properties in Campaign Views in Microsoft Defender for Office 365 Plan 2. For more information, see [Campaign Views](campaigns.md).|
 |Threat protection status report|In virtually all of the views and detail tables in the **Threat protection status report**, you can filter the results by **priority accounts**. For more information, see [Threat protection status report](view-email-security-reports.md#threat-protection-status-report).|
 |Email issues for priority accounts report|The **Email issues for priority accounts** report in the Exchange admin center (EAC) contains information about undelivered and delayed messages for **priority accounts**. For more information, see [Email issues for priority accounts report](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report).|
-|
 
 ## Train users
 
@@ -110,10 +100,6 @@ Training users with priority accounts can help save those users and your securit
 The Harvard Kennedy School [Cybersecurity Campaign Handbook](https://www.belfercenter.org/CyberPlaybook) provides excellent guidance for establishing a strong culture of security awareness within your organization, including training users to identify phishing attacks.
 
 Microsoft 365 provides the following resources to help inform users in your organization:
-
-<br>
-
-****
 
 |Concept|Resources|Description|
 |---|---|---|

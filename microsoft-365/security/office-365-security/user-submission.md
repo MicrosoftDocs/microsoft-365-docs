@@ -117,7 +117,7 @@ After you've verified that your mailbox meets all applicable prerequisites, you 
    - **Microsoft Outlook Report Message button** \> **Off** ![Toggle off.](../../media/scc-toggle-off.png): Select this option if you use third-party reporting tools instead of the Report Message add-in, the Report Phishing add-in, or the built-in reporting in Outlook on the web, and then configure the following settings:
      - Select **Use this custom mailbox to receive user reported submissions**. In the box that appears, enter the email address of an existing Exchange Online mailbox that can receive email.
 
-   - **Microsoft Outlook Report Message button**: Enable this feature if you want to let end users report messages from quarantine.
+   - **Quarantine report message button**: Enable this feature if you want to let end users report messages from quarantine.
 
    When you're finished, click **Confirm**. To clear these values, click **Restore**
 
@@ -136,8 +136,8 @@ To correctly identify the original attached messages, messages that are sent to 
 If you want to specify the reported reason for the original attached messages, messages that are sent to the custom mailbox (don't modify the attachment) need to start with one of the following prefixes in the Subject (Envelope Title):
 
 - 1| or Junk:
-- 2| or Not junk
-- 3| or Phishing
+- 2| or Not junk:
+- 3| or Phishing:
 
 For example:
 

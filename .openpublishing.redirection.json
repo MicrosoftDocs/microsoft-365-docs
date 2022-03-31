@@ -4316,6 +4316,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/security/defender-endpoint/onboard.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/onboard-configure",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/security/defender-endpoint/mde-terms-mobile.md",
       "redirect_url": "/legal/microsoft-365/mde-terms-windows",
       "redirect_document_id": false
@@ -4588,6 +4593,7 @@
     {
       "source_path": "microsoft-365/business-video/index.yml",
       "redirect_url": "/microsoft-365/admin/admin-video-library",
+      "redirect_document_id": true
     },
     {
       "source_path": "microsoft-365/security/defender-endpoint/get-assessmnt-1methods-properties.md",
@@ -6552,6 +6558,7 @@
     {
       "source_path": "microsoft-365/security/defender/m365d-whats-new.md",
       "redirect_url": "/microsoft-365/security/defender/whats-new?view=o365-worldwide",
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/defender-endpoint/old-index.md",
@@ -6581,6 +6588,11 @@
     {
       "source_path": "microsoft-365/security/office-365-security/create-team-sites-in-a-political-campaign-dev-test-environment.md",
       "redirect_url": "/microsoft-365/enterprise/m365-enterprise-test-lab-guides",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender/microsoft-365-security-mdo-redirection.md",
+      "redirect_url": "/microsoft-365/security/defender/microsoft-365-security-center-mdo",
       "redirect_document_id": false
     },
     {
@@ -6615,17 +6627,22 @@
     },
     {
       "source_path": "microsoft-365/campaigns/m365-campaigns-conditional-access.md",
-      "redirect_url": "/microsoft-365/business-premium/m365-campaigns-conditional-access",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-conditional-access",
       "redirect_document_id": true
     },
     {
+      "source_path": "microsoft-365/business-premium/m365-campaigns-conditional-access.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-conditional-access",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/campaigns/m365-campaigns-increase-protection.md",
-      "redirect_url": "/microsoft-365/business-premium/m365-campaigns-increase-protection",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-increase-protection",
       "redirect_document_id": true
     },
     {
       "source_path": "microsoft-365/campaigns/m365-campaigns-multifactor-authenication.md",
-      "redirect_url": "/microsoft-365/business-premium/m365-campaigns-multifactor-authentication",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-multifactor-authentication",
       "redirect_document_id": true
     },
     {
@@ -6635,7 +6652,7 @@
     },
     {
       "source_path": "microsoft-365/campaigns/m365-campaigns-protect-admin-accounts.md",
-      "redirect_url": "/microsoft-365/business-premium/m365-campaigns-protect-admin-accounts",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-protect-admin-accounts",
       "redirect_document_id": true
     },
     {
@@ -6645,7 +6662,7 @@
     },
     {
       "source_path": "microsoft-365/campaigns/m365-campaigns-protect-pcs-macs.md",
-      "redirect_url": "/microsoft-365/business-premium/m365-campaigns-protect-pcs-macs",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-protect-pcs-macs",
       "redirect_document_id": true
     },
     {
@@ -6717,6 +6734,41 @@
       "source_path": "microsoft-365/managed-desktop/get-started/set-up-devices.md",
       "redirect_url": "/microsoft-365/managed-desktop/get-started/prepare-devices",
       "redirect_document_id": true
-    }
+    },
+    {
+      "source_path": "microsoft-365/admin/setup/access-resources.md",
+      "redirect_url": "/azure/active-directory/devices/azuread-join-sso",
+      "redirect_document_id": false
+    },    
+    {
+    "source_path": "microsoft-365/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md",
+    "redirect_url": "/microsoft-365/solutions/productivity-illustrations#security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations",
+    "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/alerts.md",
+      "redirect_url": "/microsoft-365/security/defender/investigate-alerts",
+      "redirect_document_id": true
+    }, 
+    {
+    "source_path": "microsoft-365/compliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md",
+    "redirect_url": "/microsoft-365/compliance/compliance-manager",
+    "redirect_document_id": false
+    },    
+        {
+    "source_path": "microsoft-365/business-premium/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md",
+    "redirect_url": "/microsoft-365/solutions/productivity-illustrations#security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "microsoft-365/compliance/compliance-manager-and-the-gdpr.md",
+    "redirect_url": "/microsoft-365/compliance/compliance-manager",
+    "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/lighthouse/m365-lighthouse-set-up-roles.md",
+      "redirect_url": "/microsoft-365/lighthouse/m365-lighthouse-overview-of-permissions",
+      "redirect_document_id": true
+    } 
   ]
 }

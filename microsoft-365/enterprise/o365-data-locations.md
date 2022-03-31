@@ -42,7 +42,7 @@ If Customer’s billing address is outside Europe and Customer has an Office 365
 
 ### How does Microsoft define data?
 
-Review our [definitions for different types of data](https://go.microsoft.com/fwlink/p/?linkid=864390) on the Microsoft Trust Center. In the [Microsoft Online Services Terms](https://go.microsoft.com/fwlink/p/?linkid=862403), Microsoft makes contractual commitments regarding customer data/your data. We refer to core customer data as the customer data that is committed to be stored at rest only within your region according to the [Microsoft Online Services Terms](https://go.microsoft.com/fwlink/p/?linkid=862403).
+Review our [definitions for different types of data](https://go.microsoft.com/fwlink/p/?linkid=864390) on the Microsoft Trust Center. In the [Privacy & Security Terms](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all), Microsoft makes contractual commitments regarding customer data/your data. We refer to core customer data as the customer data that is committed to be stored at rest only within your region according to the [Privacy & Security Terms](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all).
 
 ### Where are the exact addresses of the data centers?
 
@@ -127,7 +127,7 @@ The following global geographies can store data at rest. The locations where cus
 
 | Global Geographies | Locations where customer data may be stored |
 | --- | --- |
-| Global Geography 1 – EMEA (Europe, Middle East and Africa) | Austria, Finland, France, Ireland, Netherlands |
+| Global Geography 1 – EMEA (Europe, Middle East and Africa) | Austria, Finland, France, Ireland, Netherlands, Sweden |
 | Global Geography 2 – Asia Pacific | Hong Kong, Japan, Malaysia, Singapore, South Korea |
 | Global Geography 3 - Americas | Brazil, Chile, United States |
 
@@ -140,7 +140,7 @@ For country/region specific data centers, the following defines the cities where
 | Australia | Sydney, Melbourne |
 | Brazil | Rio, Campinas |
 | Canada | Quebec City, Toronto |
-| European Union | Austria (Vienna), Finland (Helsinki), France (Paris, Marseille), Ireland (Dublin), Netherlands (Amsterdam) |
+| European Union | Austria (Vienna), Finland (Helsinki), France (Paris, Marseille), Ireland (Dublin), Netherlands (Amsterdam), Sweden (Gävle, Sandviken, Staffanstorp) |
 | France | Paris, Marseille |
 | Germany | Frankfurt, Berlin |
 | India | Chennai, Mumbai, Pune |

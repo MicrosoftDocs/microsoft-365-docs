@@ -64,7 +64,7 @@ The Microsoft 365 admin center has organization-level settings for sharing and f
 
 | Setting | Default | Description |
 |:-----|:-----|:-----|
-|Let users add new guests to the organization|On|When set to **Yes**, Azure AD members can invite guests via Azure AD; when set to **No**, they cannot. When set to **Yes**, Microsoft 365 Group members can invite guests with owner approval; when set to **No**, Microsoft 365 Group members can invite guests with owner approval but owners must be global administrators to approve. <p> Note that **Members can invite** refers to members in Azure AD (as opposed to guests) and not to site or group members in  Microsoft 365. <p> This is identical to the **Members can invite** setting in Azure Active Directory Organizational relationships settings.|
+|Let users add new guests to the organization|On|When set to **Yes**, Azure AD members can invite guests via Azure AD; when set to **No**, they cannot. When set to **Yes**, Microsoft 365 group members can invite guests with owner approval; when set to **No**, Microsoft 365 group members can invite guests with owner approval but owners must be global administrators to approve. <p> Note that **Members can invite** refers to members in Azure AD (as opposed to guests) and not to site or group members in  Microsoft 365. <p> This is identical to the **Members can invite** setting in Azure Active Directory Organizational relationships settings.|
 
 ### Microsoft 365 Groups
 
@@ -129,7 +129,7 @@ The Teams master guest access switch, **Allow guest access in Teams**, must be *
 |Delete sent messages|On|When **On**, guests can delete messages they previously sent; when **Off**, they can't.|
 |Chat|On|When **On**, guests can use chat in Teams; when **Off**, they can't.|
 |Use Giphys in conversations|On|When **On**, guests can use Giphys in conversations; when **Off**, they can't.|
-|Giphy content rating|Moderate|When set to **Allow all content**, guests will can insert all Giphys in chats, regardless of the content rating. When set to **Moderate** guests can insert Giphys in chats, but will be moderately restricted from adult content. When set to **Strict** guests can insert Giphys in chats, but will be restricted from inserting adult content.|
+|Giphy content rating|Moderate|When set to **Allow all content**, guests can insert all Giphys in chats, regardless of the content rating. When set to **Moderate** guests can insert Giphys in chats, but will be moderately restricted from adult content. When set to **Strict** guests can insert Giphys in chats, but will be restricted from inserting adult content.|
 |Use Memes in conversations|On|When **On**, guests can use memes in conversations; when **Off**, they can't.|
 |User stickers in conversations|On|When **On**, guests can use stickers in conversations; when **Off**, they can't.|
 |Allow immersive reader for viewing messages|On|When **On**, guests can view messages in Immersive Reader; when **Off**, they can't.|
@@ -144,7 +144,7 @@ These settings affect all of the sites in the organization. They do not affect M
 
 Because OneDrive is a hierarchy of sites within SharePoint, the organization-level sharing settings directly affect OneDrive just as they do other SharePoint sites.
 
-**Navigation:** SharePoint admin center > <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Sharing**</a>
+**Navigation:** SharePoint admin center > **Policies** > <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Sharing**</a>
 
 ![Screenshot of SharePoint organization-level sharing settings.](../media/external-sharing.png)
 
@@ -155,7 +155,7 @@ Because OneDrive is a hierarchy of sites within SharePoint, the organization-lev
 
 ### SharePoint and OneDrive advanced sharing settings
 
-**Navigation:** SharePoint admin center > <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Sharing**</a>
+**Navigation:** SharePoint admin center > **Policies** > <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Sharing**</a>
 
 ![Screenshot of SharePoint organization-level additional sharing settings.](../media/external-sharing.png)
 
@@ -172,7 +172,7 @@ Because OneDrive is a hierarchy of sites within SharePoint, the organization-lev
 
 When files and folders are shared in SharePoint and OneDrive, sharing recipients are sent a link with permissions to the file or folder rather than being granted direct access to the file or folder themselves. Several types of links are available, and you can choose the default link type presented to users when they share a file or folder. You can also set permissions and expiration options for *Anyone* links.
 
-**Navigation:** SharePoint admin center > <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Sharing**</a>
+**Navigation:** SharePoint admin center > **Policies** > <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Sharing**</a>
 
 ![Screenshot of SharePoint organization-level files and folders sharing settings.](../media/sharepoint-organization-files-folders-sharing-settings.png)
 
@@ -194,6 +194,9 @@ Because these settings are subject to the organization-wide settings for SharePo
 You can set guest sharing permissions for each site in SharePoint. This setting applies to both site sharing and file and folder sharing. (*Anyone* sharing is not available for site sharing. If you choose **Anyone**, users will be able to share files and folders by using *Anyone* links, and the site itself with new and existing guests.)
 
 If the site has a sensitivity label applied, that label may control the external sharing settings. For more information, see [Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 groups, and SharePoint sites](../compliance/sensitivity-labels-teams-groups-sites.md).
+
+> [!NOTE]
+> Sharing settings for channel sites can only be changed by using the [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) PowerShell cmdlet.
 
 **Navigation:** SharePoint admin center > <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites**</a> > select the site > **Policies** tab > **Edit External sharing**
 

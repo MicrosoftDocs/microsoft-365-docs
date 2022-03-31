@@ -6,7 +6,7 @@ description: DKE enables you to protect highly sensitive data while maintaining 
 author: kccross
 ms.author: krowley
 manager: laurawi
-ms.date: 01/29/2021
+ms.date: 02/28/2022
 ms.topic: conceptual
 ms.service: information-protection
 audience: Admin
@@ -502,7 +502,7 @@ To register the DKE service:
    For example: `https://mydkeservicetest.com`
 
    - The URL you enter must match the hostname where your DKE service is deployed.
-   - The domain must be a [registered domain](/azure/active-directory/develop/reference-breaking-changes#appid-uri-in-single-tenant-applications-will-require-use-of-default-scheme-or-verified-domains).
+   - The domain must be a [verified domain](/azure/active-directory/develop/reference-breaking-changes#appid-uri-in-single-tenant-applications-will-require-use-of-default-scheme-or-verified-domains).
    - If you're testing locally with Visual Studio, use `https://localhost:5001`.
    - In all cases, the scheme must be **https**.
 
@@ -578,7 +578,7 @@ If you don't migrate content, your HYOK protected content will remain unaffected
 
 We realize that for some customers in highly regulated industries, this standard reference implementation using software-based keys may not be sufficient to meet their enhanced compliance obligations and needs. We've partnered with third-party hardware security module (HSM) vendors to support enhanced key management options in the DKE service, including:
 
- - [Entrust](https://www.entrust.com/digital-security/hsm/services/packaged-services/double-key-encryption-integration#:~:text=Entrust%20Double%20Key%20Encryption%20for%20Microsoft%20AIP%2C%20offered,trust%20for%20the%20protection%20of%20sensitive%20cryptographic%20keys.)
+- [Entrust](https://www.entrust.com/digital-security/hsm/services/packaged-services/double-key-encryption-integration#:~:text=Entrust%20Double%20Key%20Encryption%20for%20Microsoft%20AIP%2C%20offered,trust%20for%20the%20protection%20of%20sensitive%20cryptographic%20keys.)
 
 - [Thales](https://cpl.thalesgroup.com/cloud-security/encryption/double-key-encryption)
 

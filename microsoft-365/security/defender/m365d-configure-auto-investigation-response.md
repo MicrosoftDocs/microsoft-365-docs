@@ -2,8 +2,8 @@
 title: Configure automated investigation and response capabilities in Microsoft 365 Defender
 description: Configure automated investigation and response with self-healing in Microsoft 365 Defender
 search.appverid: MET150
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
@@ -87,7 +87,7 @@ Security settings in Office 365 help protect email and content. To view or chang
 
 ## Make sure Microsoft 365 Defender is turned on
 
-:::image type="content" source="../../media/mtp-enable/mtp-on.png" alt-text="How to make sure Microsoft 365 Defender is enabled." lightbox="../../media/mtp-enable/mtp-on.png":::
+:::image type="content" source="../../media/mtp-enable/mtp-on.png" alt-text="The left navigation pane in the Microsoft 365 Defender portal when Microsoft 365 Defender is turned on" lightbox="../../media/mtp-enable/mtp-on.png":::
 
 1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>
 

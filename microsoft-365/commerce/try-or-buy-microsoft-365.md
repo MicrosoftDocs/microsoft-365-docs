@@ -2,8 +2,8 @@
 title: "Try or buy a Microsoft 365 for business subscription"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: drjones, jmueller
 audience: Admin
@@ -15,8 +15,8 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom: 
-- AdminSurgePortfolio
 - commerce_purchase
+- AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
 - adminvideo

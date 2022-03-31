@@ -144,10 +144,6 @@ Creating a custom anti-spam policy in the Microsoft 365 Defender portal creates 
      - A check mark ( ![Check mark.](../../media/checkmark.png)) indicates the action is available (not all actions are available for all verdicts).
      - An asterisk ( <sup>\*</sup> ) after the check mark indicates the default action for the spam filtering verdict.
 
-     <br>
-
-     ****
-
      |Action|Spam|High<br>confidence<br>spam|Phishing|High<br>confidence<br>phishing|Bulk|
      |---|:---:|:---:|:---:|:---:|:---:|
      |**Move message to Junk Email folder**: The message is delivered to the mailbox and moved to the Junk Email folder.<sup>1</sup>|![Check mark.](../../media/checkmark.png)<sup>\*</sup>|![Check mark.](../../media/checkmark.png)<sup>\*</sup>|![Check mark.](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)<sup>\*</sup>|
@@ -157,7 +153,6 @@ Creating a custom anti-spam policy in the Microsoft 365 Defender portal creates 
      |**Delete message**: Silently deletes the entire message, including all attachments.|![Check mark.](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)||![Check mark](../../media/checkmark.png)|
      |**Quarantine message**: Sends the message to quarantine instead of the intended recipients. <p> You specify how long the message should be held in quarantine later in the **Quarantine** box. <p> You specify the [quarantine policy](quarantine-policies.md) that applies to quarantined messages for the spam filter verdict in the **Select a policy** box that appears. For more information, see [Quarantine policies](quarantine-policies.md).<sup>3</sup>|![Check mark.](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)<sup>\*</sup>|![Check mark](../../media/checkmark.png)<sup>\*</sup>|![Check mark](../../media/checkmark.png)|
      |**No action**|||||![Check mark](../../media/checkmark.png)|
-     |
 
      > <sup>1</sup> EOP now uses its own mail flow delivery agent to route messages to the Junk Email folder instead of using the junk email rule. The _Enabled_ parameter on the **Set-MailboxJunkEmailConfiguration** cmdlet no longer has any effect on mail flow. For more information, see [Configure junk email settings on Exchange Online mailboxes](configure-junk-email-settings-on-exo-mailboxes.md).
      >

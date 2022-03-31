@@ -112,9 +112,9 @@ When you select **Choose** for each of these optional descriptors, you can selec
 
 1. From the **File plan** page, select **+ Create a label** > **Retention label**
 
-2. Follow the prompts for the configuration process.
+2. Follow the prompts for the configuration process. Be careful what name you choose, because this can't be changed after the label is saved.
     
-    
+    For more information about the retention settings, see [Settings for retaining and deleting content](retention-settings.md#settings-for-retaining-and-deleting-content).
     
     To use the retention label to declare records, select **Mark items as records**, or **Mark items as regulatory records**. For more information, see [Configuring retention labels to declare records](declare-records.md#configuring-retention-labels-to-declare-records).
 
@@ -124,7 +124,7 @@ When you select **Choose** for each of these optional descriptors, you can selec
 
 ## Edit retention labels
 
-To edit an existing retention label, select it from the **File Plan** page, and then select the **Edit label** option to start the Edit retention process that lets you change the label description and any eligible settings.
+To edit an existing retention label, select it from the **File Plan** page, and then select the **Edit label** option to start the edit retention process that lets you change the label description and any eligible settings.
 
 Some settings can't be changed after the label is created and saved, which include:
 - The retention label name and the retention settings except the retention period. However, you can't change the retention period when the retention period is based on when items were labeled.
