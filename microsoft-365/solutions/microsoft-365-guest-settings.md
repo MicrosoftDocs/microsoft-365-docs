@@ -144,7 +144,7 @@ These settings affect all of the sites in the organization. They do not affect M
 
 Because OneDrive is a hierarchy of sites within SharePoint, the organization-level sharing settings directly affect OneDrive just as they do other SharePoint sites.
 
-**Navigation:** SharePoint admin center > Policies > <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Sharing**</a>
+**Navigation:** SharePoint admin center > **Policies** > <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Sharing**</a>
 
 ![Screenshot of SharePoint organization-level sharing settings.](../media/external-sharing.png)
 
