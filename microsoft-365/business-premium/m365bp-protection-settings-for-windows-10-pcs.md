@@ -66,7 +66,7 @@ View a video on how to secure Windows 10 devices with Microsoft 365 Business Pre
 
 By default all settings are **On**. The following settings are available.
   
-For more information, see [How do protection features in Microsoft 365 Premium map to Intune settings](map-protection-features-to-intune-settings.md). 
+For more information, see [How do protection features in Microsoft 365 Premium map to Intune settings](m365bp-map-protection-features-to-intune-settings.md). 
 
 
 |Setting  <br/> |Description  <br/> |

@@ -95,7 +95,7 @@ You can set up a user access policy that requires mobile users to enter a PIN or
 
 The following tables give detailed information about settings available to protect work files on devices and the settings that control how users access Office files from their mobile devices.
   
- For more information, see [How do protection features in Microsoft 365 Business Premium map to Intune settings](map-protection-features-to-intune-settings.md). 
+ For more information, see [How do protection features in Microsoft 365 Business Premium map to Intune settings](m365bp-map-protection-features-to-intune-settings.md). 
   
 ### Settings that protect work files
 

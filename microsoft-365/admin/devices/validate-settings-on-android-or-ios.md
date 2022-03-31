@@ -126,7 +126,7 @@ In the **Edit policy** pane, choose **Edit** next to **Protection against lost o
   
 ### Check that the App protection settings are working on user devices
 
-After you [set app configurations for iOS devices](m365bp-app-protection-settings-for-android-and-ios.md) to protect apps, you can follow these steps to validate that the settings you chose work. 
+After you [set app configurations for iOS devices](../../business-premium/m365bp-protection-settings-for-windows-10-devices.md) to protect apps, you can follow these steps to validate that the settings you chose work. 
   
 First, make sure that the policy applies to the app in which you're going to validate it.
   

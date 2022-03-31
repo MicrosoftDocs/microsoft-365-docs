@@ -141,7 +141,7 @@ landingContent:
         - text: Secure Windows 10 Pro devices
           url: /microsoft-365/business-premium/m365bp-secure-windows-devices.md
         - text: Secure Office apps on iOS
-          url: /microsoft-365/business-premium/m365bp-app-protection-settings-for-android-and-ios.md
+          url: /business-premium/m365bp-app-protection-settings-for-android-and-ios.md
 
   # Card
   - title: Security & compliance
