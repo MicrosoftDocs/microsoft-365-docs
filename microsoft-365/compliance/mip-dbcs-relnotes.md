@@ -41,4 +41,12 @@ This support is available for sensitive information types and keyword dictionari
   - “Attachment contains any of these words”
   - “Attachment contains any of these words”
 
+- Data loss prevention policies are enforceable on macOS devices (preview) running Catalina 10.15 and higher, except for the below mentioned conditions for East 
+  Asian languages including Japanese.
+  - Full-width numbers aren’t detected such as using built-in template such as Japan bank account number
+  - Numbers without delimiters aren’t detected
+  - Keywords separated by a half-width space aren’t detected for a sensitive information type. For example: Japanese word is set at sensitive information type and
+    dictionary is not detected if it is in a sentence
+  - Words containing both English and Japanese (東京2020) aren’t detected
+
 Instead we recommend creating a custom Sensitive Information Type (SIT) with keyword dictionary which will detect patterns across messages and attachments, and using this custom SIT as a Communication Compliance policy condition.
