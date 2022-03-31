@@ -114,6 +114,14 @@ Users will see enriched detonation details for known malicious attachments or UR
 
 - *Spam Confidence Level (SCL)*: The spam confidence level (SCL) of the message. A higher value indicates the message is more likely to be spam.
 
+- *Client type*: Indicates the Client type from which the email was sent like REST.
+
+- *Forwarding*: For scenarios with autoforwaridng, it indicates the forwarding user as well as the forwarding type like ETR or SMTP forwarding. 
+
+- *Distribution list*: Shows the distribution list, if the recipient receieved the email as a member of the list. It shows the top level distribution list if there are nested distribution lists involved.  
+
+- *To, Cc*: Indicates the addresses which are listed in To, Cc fields of an email. The information in these fields is restricted to 5000 characters. 
+
 - *Domain Name*: Is the sender domain name.
 
 - *Domain Owner*: Specifies the owner of the sending domain.
