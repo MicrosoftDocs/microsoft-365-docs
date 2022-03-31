@@ -40,4 +40,4 @@ Chart information gives you insight into the apps and services that you want to 
 
 ## Example of support.office.com help article
 
-
+:::image type="content" source="../../media/help-article-example.png" alt-text="Screenshot: Example support.microsoft.com article":::
