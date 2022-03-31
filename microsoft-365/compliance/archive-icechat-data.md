@@ -116,14 +116,20 @@ The last step is to create an ICE Chat connector in the Microsoft 365 compliance
 
 7. After the connection is successfully validated, click **Next**.
 
-8. On the **Map external users to Microsoft 365 users** page, enable automatic user mapping and provide custom user mapping as required. You can download a copy of the user-mapping CSV file on this page. You can add the user mappings to the file and then upload it.
+8. On the **Define user** page, specify the users to import data for.
+
+     - **All users in your organization**. Select this option to import data for all users.
+
+     - **Only users on Litigation hold**. Select this option to import data only for users whose mailboxes are placed on Litigation hold. This option imports data to user mailboxes that have the LitigationHoldEnabled property set to True. For more information, see [Create a Litigation hold](create-a-litigation-hold.md).
+
+9. On the **Map external users to Microsoft 365 users** page, enable automatic user mapping and provide custom user mapping as required. You can download a copy of the user-mapping CSV file on this page. You can add the user mappings to the file and then upload it.
 
    > [!NOTE]
    > As previously explained, custom mapping file CSV file contains the ICE Chat imid and corresponding Microsoft 365 mailbox address for each user. If you enable automatic user mapping and provide a custom mapping, for every chat item, the connector will first look at custom mapping file. If it doesn't find a valid Microsoft 365 user that corresponds to a user's ICE Chat imid, the connector will import the item to the mailboxes for the users specified in the *SenderEmail* and *RecipientEmail* properties of the chat item. If the connector doesn't find a valid Microsoft 365 user by either automatic or custom user mapping, the item won't be imported.
 
-9. Click **Next**, review your settings, and then click **Finish** to create the connector.
+10. Click **Next**, review your settings, and then click **Finish** to create the connector.
 
-10. Go to the **Data connectors** page to see the progress of the import process for the new connector.
+11. Go to the **Data connectors** page to see the progress of the import process for the new connector.
 
 ## Set up a connector using private keys
 
@@ -191,11 +197,17 @@ After your ICE Chat SFTP site is configured, the next step is to create an ICE C
 
 7. After the connection is successfully validated, click **Next**.
 
-8. On the **Map ICE Chat users to Microsoft 365 users** page, enable automatic user mapping and provide custom user mapping as required.
+8. On the **Define user** page, specify the users to import data for.
+
+     - **All users in your organization**. Select this option to import data for all users.
+
+     - **Only users on Litigation hold**. Select this option to import data only for users whose mailboxes are placed on Litigation hold. This option imports data to user mailboxes that have the LitigationHoldEnabled property set to True. For more information, see [Create a Litigation hold](create-a-litigation-hold.md).
+
+9. On the **Map ICE Chat users to Microsoft 365 users** page, enable automatic user mapping and provide custom user mapping as required.
 
    > [!NOTE]
    > As previously explained, custom mapping file CSV file contains the ICE Chat imid and corresponding Microsoft 365 mailbox address for each user. If you enable automatic user mapping and provide a custom mapping, for every chat item, the connector will first look at custom mapping file. If it doesn't find a valid Microsoft 365 user that corresponds to a user's ICE Chat imid, the connector will import the item to the mailboxes for the users specified in the *SenderEmail* and *RecipientEmail* properties of the chat item. If the connector doesn't find a valid Microsoft 365 user by either automatic or custom user mapping, the item won't be imported.
 
-9. Click **Next**, review your settings, and then click **Finish** to create the connector.
+10. Click **Next**, review your settings, and then click **Finish** to create the connector.
 
-10. Go to the **Data connectors** page to see the progress of the import process for the new connector. Click the connector to display the flyout page, which contains information about the connector.
+11. Go to the **Data connectors** page to see the progress of the import process for the new connector. Click the connector to display the flyout page, which contains information about the connector.
