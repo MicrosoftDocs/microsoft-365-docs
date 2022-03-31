@@ -165,9 +165,9 @@ landingContent:
         - text: Manage safe links
           url: /microsoft-365/admin/security-and-compliance/increase-threat-protection#protect-against-phishing-attacks-with-safe-links
         - text: Prevent data loss
-          url: security-and-compliance/set-up-compliance.md
+          url: /microsoft-365/business-premium/m365bp-set-up-compliance.md
         - text: Create sensitivity labels
-          url: security-and-compliance/set-up-compliance.md
+          url: /microsoft-365/business-premium/m365bp-set-up-compliance.md
   # Card
   - title: Support
     linkLists:
