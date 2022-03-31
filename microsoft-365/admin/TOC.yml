@@ -357,7 +357,7 @@
         - name: Review detected threats and take action
           href: security-and-compliance/review-threats-take-action.md    
         - name: Set up compliance features
-          href: security-and-compliance/set-up-compliance.md
+          href: /microsoft-365/business-premium/m365bp-set-up-compliance.md
         - name: Secure score
           href: /microsoft-365/security/defender/microsoft-secure-score
         - name: A guide to GDPR compliance
@@ -380,26 +380,18 @@
           href: devices/device-states.md
         - name: App protection settings for Windows 10 PCs
           href: devices/protection-settings-for-windows-10-devices.md
-        - name: Set app protection settings for Android and iOS
-          href: devices/app-protection-settings-for-android-and-ios.md
           items: 
             - name: Validate settings on Android or iOS
               href: devices/validate-settings-on-android-or-ios.md
-        - name: Edit or create device protection settings  for Windows 10 PCs
-          href: devices/protection-settings-for-windows-10-pcs.md
           items: 
             - name: Validate settings on Windows 10 PCs
               href: devices/validate-settings-on-windows-10-pcs.md
         - name: Autopilot
           items: 
-            - name: Add Autopilot devices and profile
-              href: devices/add-autopilot-devices-and-profile.md
             - name: Create and edit AutoPilot profiles
               href: devices/create-and-edit-autopilot-profiles.md
             - name: Create and edit AutoPilot devices
               href: devices/create-and-edit-autopilot-devices.md
-            - name: AutoPilot Profile settings
-              href: devices/autopilot-profile-settings.md
         - name: Microsoft 365 for enterprise documentation
           href: ../enterprise/index.yml
         - name: Basic Mobility and Security

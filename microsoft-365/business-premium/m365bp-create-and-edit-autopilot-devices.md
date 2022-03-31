@@ -36,7 +36,7 @@ description: "Learn how to upload devices using AutoPilot in Microsoft 365 Busin
 
 ## Upload a list of devices
 
-You can use the [Step-by-step guide](add-autopilot-devices-and-profile.md) to upload devices, but you can also upload devices in the **Devices** tab. 
+You can use the [Step-by-step guide](m365bp-add-autopilot-devices-and-profile.md) to upload devices, but you can also upload devices in the **Devices** tab. 
   
 Devices must meet these requirements:
   

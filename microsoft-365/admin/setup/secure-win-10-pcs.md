@@ -59,4 +59,4 @@ After you set up device protection in Microsoft 365 Business, follow these steps
 
 1. Choose **Apply settings**.
 
-    These settings will apply to all users in your organization. To set up different policies for different security groups, see [Set device protection settings for Windows 10 PCs](../devices/protection-settings-for-windows-10-pcs.md).
+    These settings will apply to all users in your organization. To set up different policies for different security groups, see [Set device protection settings for Windows 10 PCs](../business-premium/m365bp-protection-settings-for-windows-10-pcs.md).

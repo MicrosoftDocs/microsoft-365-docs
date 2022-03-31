@@ -36,7 +36,7 @@ description: "Learn how to verify that Microsoft 365 for business app protection
 
 ## Verify that Windows 10 device policies are set
 
-After you [set up device policies](protection-settings-for-windows-10-pcs.md), it may take up to a few hours for the policy to take effect on users' devices. You can confirm that the policies took effect by looking at various Windows Settings screens on the users' devices. Because the users won't be able to modify the Windows Update and Microsoft Defender Antivirus settings on their Windows 10 devices, many options will be grayed out.
+After you [set up device policies](../../business-premium/m365bp-protection-settings-for-windows-10-pcs.md), it may take up to a few hours for the policy to take effect on users' devices. You can confirm that the policies took effect by looking at various Windows Settings screens on the users' devices. Because the users won't be able to modify the Windows Update and Microsoft Defender Antivirus settings on their Windows 10 devices, many options will be grayed out.
   
 1. Go to **Settings** \> **Update &amp; security** \> **Windows Update** \> **Restart options** and confirm that all settings are grayed out. 
     
@@ -61,5 +61,5 @@ After you [set up device policies](protection-settings-for-windows-10-pcs.md), i
 ## Related content
 
 [Microsoft 365 for business documentation and resources](/admin)\
-[Set device configurations for Windows 10 PCs](protection-settings-for-windows-10-pcs.md)
+[Set device configurations for Windows 10 PCs](../../business-premium/m365bp-protection-settings-for-windows-10-devices.md)
 [Top 10 ways to secure Microsoft 365 for business plans](../security-and-compliance/secure-your-business-data.md)
