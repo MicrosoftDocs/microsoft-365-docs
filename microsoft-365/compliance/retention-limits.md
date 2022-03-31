@@ -113,8 +113,16 @@ SharePoint example:
 
 For the [disposition of content](disposition.md), there are some limits to be aware of:
 
-- 1,000,000 items pending disposition per stage for each retention label
-
-- Proof of disposition for up to seven years after the item was disposed, with a limit of 1,000,000 items per retention label for that period. 
+- Maximum numbers per tenant:
     
-If you need proof of disposition higher than this limit of 1,000,000 for items that are marked as records, contact [Microsoft Support](../admin/get-help-support.md).
+    - 16,000,000 items in either of the following disposition review states: pending disposition or approved disposition
+    	
+    - 16,000,000 items marked as records automatically disposed (no disposition review)
+
+- Maximum numbers for each retention label:
+    
+    - 1,000,000 items pending disposition per stage for each retention label
+    
+    - Proof of disposition for up to seven years after the item was disposed, with a limit of 1,000,000 items per retention label for that period. 
+        
+        If you need proof of disposition higher than this limit of 1,000,000 for items that are marked as records, contact [Microsoft Support](../admin/get-help-support.md).

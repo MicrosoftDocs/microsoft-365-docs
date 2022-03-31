@@ -53,12 +53,12 @@ To help protect your organization against insider risks, use these Microsoft Pur
 
 Communication compliance is available in the following subscriptions:
 
-- Microsoft 365 E5/A5/G5 subscription (paid or trial version)
-- Microsoft 365 E3/A3/G5 subscription + the Microsoft 365 E5/A5/G5 Compliance add-on
-- Microsoft 365 E3/A3/G5 subscription + the Microsoft 365 E5/A5/G5 Insider Risk Management add-on
+- Microsoft 365 E5/A5/F5/G5 subscription (paid or trial version)
+- Microsoft 365 E3/A3/F3/G5 subscription + the Microsoft 365 E5/A5/F5/G5 Compliance add-on
+- Microsoft 365 E3/A3/F3/G5 subscription + the Microsoft 365 E5/A5/F5/G5 Insider Risk Management add-on
 - Office 365 Enterprise E5 subscription (paid or trial version)
 - Office 365 A5 subscription (paid or trial version)
-- Office 365 Enterprise E3 subscription + the Office 365 Advanced Compliance add-on (no longer available for new subscriptions)
+- Office 365 Enterprise E3 subscription + the Office 365 Advanced Compliance add-on (no longer available for new subscriptions, see note)
 
 ### Insider risk management
 

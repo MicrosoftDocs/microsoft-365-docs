@@ -125,7 +125,7 @@ It's possible that a retention policy that's applied to Microsoft 365 groups, Sh
 ### Retention policy for Yammer locations
 
 > [!NOTE]
-> Retention policies for Yammer are in preview and currently do not inform users when messages are deleted as a result of a retention policy.
+> Retention policies for Yammer currently do not inform users when messages are deleted as a result of a retention policy.
 >
 > To use this feature, your Yammer network must be [Native Mode](/yammer/configure-your-yammer-network/overview-native-mode), not Hybrid Mode.
 
@@ -140,11 +140,6 @@ It's possible that a retention policy that's applied to Microsoft 365 groups, Sh
     - If you chose **Adaptive**: On the **Choose adaptive policy scopes and locations** page, select **Add scopes** and select one or more adaptive scopes that have been created. Then, select one or more locations. The locations that you can select depend on the [scope types](retention-settings.md#configuration-information-for-adaptive-scopes) added. For example, if you only added a scope type of **User**, you will be able to select **Yammer user messages** but not **Yammer community messages**. 
     
     - If you chose **Static**: On the **Choose locations to apply the policy** page, toggle on one or both of the locations for Yammer: **Yammer community message** and **Yammer user messages**.
-        
-        > [!IMPORTANT]
-        > Although you can create a retention policy for just Yammer user messages, a retention policy for this location can delete community messages from the Yammer app for all community members.
-        > 
-        > If you choose this option and the retention policy will be configured to delete user messages, make sure you understand this implication. For more information, see [How retention works with Yammer](retention-policies-yammer.md#how-retention-works-with-yammer).
         
         By default, all communities and users are selected, but you can refine this by specifying communities and users to be included or excluded.
         
