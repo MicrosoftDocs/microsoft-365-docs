@@ -33,7 +33,7 @@ When you use the **Upgrade** tab, you're led through the process of buying a new
 
 1. In the Admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. Select the subscription that you want to upgrade.
-3. On the subscription details page, Under **Product details and upgrades**, Select **View upgrades recommended for your org**
+3. On the subscription details page, under **Product details and upgrades**, select **View upgrades recommended for your org**.
 4. Find the plan to which you want to upgrade, then select the **Upgrade** button.
 5. Enter the number of licenses that you need, choose whether to pay each month or for the whole year, then select **Go to checkout**.
     > [!NOTE]
