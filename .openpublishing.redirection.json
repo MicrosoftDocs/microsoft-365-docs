@@ -342,7 +342,7 @@
     },
     {
       "source_path": "microsoft-365/business/map-protection-features-to-intune-settings.md",
-      "redirect_url": "/microsoft-365/admin/devices/map-protection-features-to-intune-settings",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-map-protection-features-to-intune-settings",
       "redirect_document_id": true
     },
     {
@@ -6794,8 +6794,8 @@
     "redirect_document_id": false
     },
     {
-    "source_path": "old.md",
-    "redirect_url": "new",
+    "source_path": "microsoft-365/admin/devices/map-protection-features-to-intune-settings.md",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-map-protection-features-to-intune-settings",
     "redirect_document_id": false
     },
     {
