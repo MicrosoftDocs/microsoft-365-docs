@@ -33,9 +33,13 @@ For detailed step-by-step instructions, see [Set up Customer Key](customer-key-s
 
 After you complete the setup, Microsoft 365 encrypts all data in your organization, including audit records, using the keys that are identified in the multi-workload DEP that you created.
 
-## Offboarding Customer Key
+## Offboarding from Customer Key
 
 (notes from Kedar Sane, auditing dev): 
+
+(include link to: [Roll back from Customer Key to Microsoft managed Keys](customer-key-manage.md#roll-back-from-customer-key-to-microsoft-managed-keys) )
+
+The key point is this: "If you decide not to use Customer Key for assigning multi-workload DEPs anymore then you'll need to reach out to Microsoft support with a request to “offboard” from Customer Key. Ask the support team to file a service request against Microsoft 365 Customer Key team. Reach out to m365-ck@service.microsoft.com if you have any questions."
 
 Customers may no longer want to manage their own keys and may opt to offboard from CMK.
 For Auditing - we have NOT ONBOARDED to MMK. So once the tenant offboards from CMK there will be NO fallback to second level of encryption. The data will be encrypted at rest by the default Azure storage encryption.
@@ -54,6 +58,10 @@ NOTE: Even after offboarding, tenant is expected to keep their pre-used encrypti
 ## Offboarding from Microsoft 365
 
 (notes from Kedar Sane, auditing dev): 
+
+(include link to: [Revoke your keys and start the data purge path process](customer-key-manage.md#revoke-your-keys-and-start-the-data-purge-path-process) or just leverage the para below and link [to article on deleted a tenant in AAD](/azure/active-directory/enterprise-users/directory-delete-howto)
+
+Key point is this: "Purging of multi-workload DEP is not supported for Microsoft 365 Customer Key. The multi-workload DEP is used to encrypt data across multiple workloads across all tenant users. Purging such DEP would result into data from across multiple workloads become inaccessible. If you decide to exit Microsoft 365 services altogether then you could pursue the path of tenant deletion per the documented process. See how to delete a tenant in Azure Active Directory."
 
 - Customer in this case wants to leave the M365 eco-system and ensure all their data is purged / deleted.
 
