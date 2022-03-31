@@ -33,7 +33,7 @@ The table in the next section describes which GDAP roles grant permission to rea
 
 The following table lists the recommended GDAP roles for some example MSP service tiers and the actions those roles can perform on the different Lighthouse pages.
 
-|| Account Managers| Service Desk Technician |System Administrators | Escalation Engineers|
+|| Account&nbsp;Managers| Service&nbsp;Desk&nbsp;Technician |System&nbsp;Administrators | Escalation&nbsp;Engineers|
 |---|---|---|---|---|
 | **Recommended GDAP roles** |<ul><li>Helpdesk Administrator</li></ul> |<ul><li>Security Reader<br>+</li><li>Helpdesk Administrator</li></ul> |<ul><li>Global Reader<br>+</li><li>User Administrator<br>+</li><li>Authentication Administrator</li></ul> |<ul><li>Global Reader<br>+</li><li>User Administrator<br>+</li><li>Intune Administrator<br>+</li><li>Security Administrator</li></ul>|
 |**Lighthouse&nbsp;page**  |
