@@ -4,8 +4,8 @@ f1.keywords:
 - NOCSH
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
-ms.date: 2/1/2021
+manager: scotv
+ms.date: 3/31/2022
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -23,7 +23,7 @@ description: "View a complete list of root certificates and certificate authorit
 
 Microsoft 365 leverages a number of different certificate providers. The following describes the complete list of known Microsoft 365 root certificates that customers may encounter when accessing Microsoft 365. For information on the certificates you may need to install in your own infrastructure, see [Plan for third-party SSL certificates for Microsoft 365](../enterprise/plan-for-third-party-ssl-certificates.md). The following certificate information applies to all worldwide and national cloud instances of Microsoft 365.
 
-Last updated: **10/16/2020**
+Last updated: **3/31/2022**
 
 > [!NOTE]
 > For certificate information that applies to **DOD and GCC High** customers, see [Microsoft 365 encryption chains - DOD and GCC High](encryption-office-365-certificate-chains-itar.md).
@@ -141,20 +141,6 @@ Expand the root and intermediate sections below to see additional details about 
 | **Pin (SHA-256)** | /zQvtsTIvTCkcG9zSJU58Z5uSMwF9GJUZU9mENvFQOk= |
 | **CRL URLs** | ldap://directory.d-trust.net/CN=D-TRUST%20Root%20Class%203%20CA%202%20EV%202009,O=D-Trust%20GmbH,C=DE?certificaterevocationlist<br>http://www.d-trust.net/crl/d-trust\_root\_class\_3\_ca\_2\_ev\_2009.crl |
 
-### **ISRG Root X1**
-
-| **Subject** | C = US, O = Internet Security Research Group, CN = ISRG Root X1 |
-| --- | --- |
-| **Serial Number** | 82:10:cf:b0:d2:40:e3:59:44:63:e0:bb:63:82:8b:00 |
-| **Public Key Length** | RSA 4096 bit |
-| **Signature Algorithm** | sha256WithRSAEncryption |
-| **Validity Not Before** | Jun  4 11:04:38 2015 UTC |
-| **Validity Not After** | Jun  4 11:04:38 2035 UTC |
-| **Subject Key Identifier** | 79:B4:59:E6:7B:B6:E5:E4:01:73:80:08:88:C8:1A:58:F6:E9:9B:6E |
-| **Thumbprint (SHA-1)** | CABD2A79A1076A31F21D253635CB039D4329A5E8 |
-| **Thumbprint (SHA-256)** | 96BCEC06264976F37460779ACF28C5A7CFE8A3C0AAE11A8FFCEE05C0BDDF08C6 |
-| **Pin (SHA-256)** | 0b9fa5a59eed715c26c1020c711b4f6ec42d58b0015e14337a39dad301c5afc3 |
-
 ### **Entrust Root Certification Authority - G2**
 
 | **Subject** | CN=Entrust Root Certification Authority - G2<br>OU=&quot;(c) 2009 Entrust, Inc. - for authorized use only&quot;<br>OU=See www.entrust.net/legal-terms<br>O=&quot;Entrust, Inc.&quot;<br>C=US |
@@ -211,6 +197,20 @@ Expand the root and intermediate sections below to see additional details about 
 | **Authority Key Identifier** | KeyID:8f:f0:4b:7f:a8:2e:45:24:ae:4d:50:fa:63:9a:8b:de:e2:dd:1b:bc |
 | **Thumbprint (SHA-1)** | D69B561148F01C77C54578C10926DF5B856976AD |
 | **Thumbprint (SHA-256)** | CBB522D7B7F127AD6A0113865BDF1CD4102E7D0759AF635A7CF4720DC963C53B |
+
+### **ISRG Root X1**
+
+| **Subject** | C = US, O = Internet Security Research Group, CN = ISRG Root X1 |
+| --- | --- |
+| **Serial Number** | 82:10:cf:b0:d2:40:e3:59:44:63:e0:bb:63:82:8b:00 |
+| **Public Key Length** | RSA 4096 bit |
+| **Signature Algorithm** | sha256WithRSAEncryption |
+| **Validity Not Before** | Jun  4 11:04:38 2015 UTC |
+| **Validity Not After** | Jun  4 11:04:38 2035 UTC |
+| **Subject Key Identifier** | 79:B4:59:E6:7B:B6:E5:E4:01:73:80:08:88:C8:1A:58:F6:E9:9B:6E |
+| **Thumbprint (SHA-1)** | CABD2A79A1076A31F21D253635CB039D4329A5E8 |
+| **Thumbprint (SHA-256)** | 96BCEC06264976F37460779ACF28C5A7CFE8A3C0AAE11A8FFCEE05C0BDDF08C6 |
+| **Pin (SHA-256)** | 0b9fa5a59eed715c26c1020c711b4f6ec42d58b0015e14337a39dad301c5afc3 |
 
 ### **thawte Primary Root CA - G3**
 
