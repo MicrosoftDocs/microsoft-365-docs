@@ -93,6 +93,8 @@ The following sections identify the licensing requirements for Basic Audit and A
 
 ### Basic Audit
 
+- Microsoft 365 Business Basic subscription
+- Microsoft 365 Apps for Business subscription
 - Microsoft 365 Enterprise E3 subscription
 - Microsoft 365 Business Premium
 - Microsoft 365 Education A3 subscription

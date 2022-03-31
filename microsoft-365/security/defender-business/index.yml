@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
 title: Microsoft Defender for Business
-summary: Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. Defender for Business as a standalone subscription is in preview, and will roll out gradually to customers and IT Partners who sign up at https://aka.ms/mdb-preview.
+summary: Starting March 1, 2022, Microsoft Defender for Business is included in Microsoft 365 Business Premium. Defender for Business as a standalone subscription is currently in preview, and will roll out gradually to customers and IT Partners who sign up at https://aka.ms/mdb-preview.
 metadata:
   title: Microsoft Defender for Business documentation
   description: Get an overview and setup information for Microsoft Defender for Business
-  ms.prod: 365-security
+  ms.prod: m365-security
   ms.technology: mdb
   ms.topic: landing-page
   ms.collection: 
@@ -15,7 +15,7 @@ metadata:
   ms.custom: intro-hub-or-landing
   author: denisebmsft
   ms.author: deniseb
-  ms.date: 02/24/2022
+  ms.date: 03/10/2022
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 

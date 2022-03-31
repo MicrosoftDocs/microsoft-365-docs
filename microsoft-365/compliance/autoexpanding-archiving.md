@@ -75,6 +75,10 @@ The following screenshots show a folder list before and after messages are moved
 
 To access messages that are stored in an auto-expanded archive, users have to use one of the following Outlook clients:
 
+- Outlook as a part of Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus)
+
+- Outlook as a part of Microsoft 365 Apps for business (previously named Office 365 Business)
+
 - Outlook 2016 or Outlook 2019 for Windows
 
 - Outlook on the web
