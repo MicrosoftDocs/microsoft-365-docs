@@ -452,7 +452,7 @@
     },
     {
       "source_path": "microsoft-365/business/add-autopilot-devices-and-profile.md",
-      "redirect_url": "/microsoft-365/admin/devices/add-autopilot-devices-and-profile",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-add-autopilot-devices-and-profile",
       "redirect_document_id": true
     }, 
     {
@@ -6771,6 +6771,71 @@
     {
     "source_path": "microsoft-365/admin/devices/app-protection-settings-for-android-and-ios.md",
     "redirect_url": "/microsoft-365/business-premium/m365bp-app-protection-settings-for-android-and-ios",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "microsoft-365/admin/devices/add-autopilot-devices-and-profile.md",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-add-autopilot-devices-and-profile",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "old.md",
+    "redirect_url": "new",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "old.md",
+    "redirect_url": "new",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "old.md",
+    "redirect_url": "new",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "old.md",
+    "redirect_url": "new",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "old.md",
+    "redirect_url": "new",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "old.md",
+    "redirect_url": "new",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "old.md",
+    "redirect_url": "new",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "old.md",
+    "redirect_url": "new",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "old.md",
+    "redirect_url": "new",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "old.md",
+    "redirect_url": "new",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "old.md",
+    "redirect_url": "new",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "old.md",
+    "redirect_url": "new",
     "redirect_document_id": false
     }
   ]
