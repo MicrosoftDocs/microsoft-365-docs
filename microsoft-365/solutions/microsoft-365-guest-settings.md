@@ -172,7 +172,7 @@ Because OneDrive is a hierarchy of sites within SharePoint, the organization-lev
 
 When files and folders are shared in SharePoint and OneDrive, sharing recipients are sent a link with permissions to the file or folder rather than being granted direct access to the file or folder themselves. Several types of links are available, and you can choose the default link type presented to users when they share a file or folder. You can also set permissions and expiration options for *Anyone* links.
 
-**Navigation:** SharePoint admin center > Policies > <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Sharing**</a>
+**Navigation:** SharePoint admin center > **Policies** > <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Sharing**</a>
 
 ![Screenshot of SharePoint organization-level files and folders sharing settings.](../media/sharepoint-organization-files-folders-sharing-settings.png)
 
