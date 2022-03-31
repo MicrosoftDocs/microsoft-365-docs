@@ -277,7 +277,7 @@
     },
     {
       "source_path": "microsoft-365/business/validate-protection-settings-on-windows-10-pcs.md",
-      "redirect_url": "/microsoft-365/admin/devices/protection-settings-for-windows-10-devices",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-protection-settings-for-windows-10-devices",
       "redirect_document_id": false
     },
     {
@@ -372,7 +372,7 @@
     },
     {
       "source_path": "microsoft-365/business/protection-settings-for-windows-10-devices.md",
-      "redirect_url": "/microsoft-365/admin/devices/protection-settings-for-windows-10-devices",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-protection-settings-for-windows-10-devices",
       "redirect_document_id": true
     },
     {
@@ -6799,8 +6799,8 @@
     "redirect_document_id": false
     },
     {
-    "source_path": "old.md",
-    "redirect_url": "new",
+    "source_path": "microsoft-365/admin/devices/protection-settings-for-windows-10-devices.md",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-protection-settings-for-windows-10-devices",
     "redirect_document_id": false
     },
     {
