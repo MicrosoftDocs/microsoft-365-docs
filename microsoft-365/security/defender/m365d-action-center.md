@@ -77,7 +77,7 @@ When you visit the Action center, you see two tabs: **Pending actions** and **Hi
 
 You can customize, sort, filter, and export data in the Action center.
 
-:::image type="content" source="../../media/m3d-action-center-columnsfilters.png" alt-text="The sort, filter, and customize capabilities of the Action center." lightbox="../../media/m3d-action-center-columnsfilters.png":::
+:::image type="content" source="../../media/m3d-action-center-columnsfilters.png" alt-text="The sort, filter, and customize capabilities of the Action center" lightbox="../../media/m3d-action-center-columnsfilters.png":::
 
 - Select a column heading to sort items in ascending or descending order.
 - Use the time period filter to view data for the past day, week, 30 days, or 6 months.
