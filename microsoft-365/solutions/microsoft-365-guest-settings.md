@@ -155,7 +155,7 @@ Because OneDrive is a hierarchy of sites within SharePoint, the organization-lev
 
 ### SharePoint and OneDrive advanced sharing settings
 
-**Navigation:** SharePoint admin center > Policies > <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Sharing**</a>
+**Navigation:** SharePoint admin center > **Policies** > <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Sharing**</a>
 
 ![Screenshot of SharePoint organization-level additional sharing settings.](../media/external-sharing.png)
 
