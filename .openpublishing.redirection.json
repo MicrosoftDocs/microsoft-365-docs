@@ -217,7 +217,7 @@
     },
     {
       "source_path": "microsoft-365/business/prepare-for-office-client-deployment.md",
-      "redirect_url": "/microsoft-365/admin/misc/prepare-for-office-client-deployment",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-prepare-for-office-client-deployment",
       "redirect_document_id": false
     },
     {
@@ -357,7 +357,7 @@
     },
     {
       "source_path": "microsoft-365/business/pre-requisites-for-data-protection.md",
-      "redirect_url": "/microsoft-365/admin/security-and-compliance/pre-requisites-for-data-protection",
+      "redirect_url": "/microsoft-365/business-premium/index",
       "redirect_document_id": true
     },
     {
@@ -412,7 +412,7 @@
     },
     {
       "source_path": "microsoft-365/business/view-policies-and-devices.md",
-      "redirect_url": "/microsoft-365/admin/devices/view-policies-and-devices",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-view-policies-and-devices",
       "redirect_document_id": true
     },
     {
@@ -6814,23 +6814,23 @@
     "redirect_document_id": false
     },
     {
-    "source_path": "old.md",
-    "redirect_url": "new",
+    "source_path": "microsoft-365/admin/devices/view-policies-and-devices.md",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-view-policies-and-devices",
     "redirect_document_id": false
     },
     {
-    "source_path": "old.md",
-    "redirect_url": "new",
+    "source_path": "microsoft-365/admin/misc/prepare-for-office-client-deployment.md",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-prepare-for-office-client-deployment",
     "redirect_document_id": false
     },
     {
-    "source_path": "old.md",
-    "redirect_url": "new",
+    "source_path": "microsoft-365/admin/misc/secure-windows-10-devices.md",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-secure-windows-devices",
     "redirect_document_id": false
     },
     {
-    "source_path": "old.md",
-    "redirect_url": "new",
+    "source_path": "microsoft-365/admin/security-and-compliance/pre-requisites-for-data-protection.md",
+    "redirect_url": "/microsoft-365/business-premium/index",
     "redirect_document_id": false
     },
     {
