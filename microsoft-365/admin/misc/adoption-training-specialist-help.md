@@ -27,7 +27,7 @@ As the admin of a Microsoft 365 organization, you get a report of the Microsoft 
 
 ## Interpret your organization's help article views
 
-Chart information gives you insight into the apps and services that you want to track data on. **Help article views** is the total number of help article page views that users in your organization have viewed in a Microsoft 365 app or on support.microsoft.com.
+Chart information gives you insight into the apps and services that you want to track data on. **Help article views** is the total number of help article page views that users in your organization have viewed in a Microsoft 365 app or on [support.microsoft.com](https://support.microsoft.com).
 
 :::image type="content" source="../../media/help-articles-detail-view2.png" alt-text="Screenshot: Image showing the number of help articles read and the corresponding Microsoft 365 product":::
 
@@ -35,15 +35,9 @@ Chart information gives you insight into the apps and services that you want to 
 |:-----|:-----|
 |1 |Use the Help content tab to see where people need help using the app or service. |
 |2 |You can filter for trends over the last 7 days, 30 days, 90 days, or 180 days. |
-|3 |Total number of help article page views in app or on support.microsoft.com. |
+|3 |Total number of help article page views in app or on [support.microsoft.com](https://support.microsoft.com). |
 |4 |List of the top help articles related to the app or service that your end-users are reading. |
 
-## Who can see the information on the adoption and training dashboard?
+## Example of support.office.com help article
 
-People who have the following permissions:
-  
-- Global admins: We recommend that only a few people in your company have this role. It reduces the risk to your business.
 
-- Adoption specialist admin role **verify role**
-
-To learn more, see [About admin roles](../add-users/about-admin-roles.md) and [Assign admin roles](../add-users/assign-admin-roles.md).
