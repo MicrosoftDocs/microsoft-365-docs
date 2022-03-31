@@ -60,7 +60,7 @@ Group members can send as or send on behalf of the group email address if this h
 
 Microsoft 365 Groups don't support nesting with other Microsoft 365 Groups or with distribution or security groups.
 
-Microsoft 365 Groups can be added to to one of the three SharePoint groups (owners, members or visitors) to give people permissions to the site.
+Microsoft 365 Groups can be added to one of the three SharePoint groups (Owners, Members, or Visitors) to give people permissions to the site.
 
 ## Distribution groups
 
