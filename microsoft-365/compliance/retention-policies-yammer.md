@@ -57,11 +57,6 @@ Copies of community messages can also be stored in the hidden folder of user mai
 
 These hidden folders are not designed to be directly accessible to users or administrators, but instead, store data that compliance administrators can search with eDiscovery tools.
 
-> [!IMPORTANT]
-> Because copies of community messages can also be stored in user mailboxes, a retention policy with a delete action for Yammer user messages can result in the original community message no longer visible to users in the Yammer app.
-> 
-> However, a copy of the original message is still available in the hidden folder of the community group mailbox, and accessible with eDiscovery searches for compliance purposes.
-
 Even though they are stored in Exchange, Yammer messages are only included in a retention policy that's configured for the **Yammer community messages** or **Yammer user messages** locations.
 
 > [!NOTE]
