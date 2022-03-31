@@ -23,9 +23,6 @@ description: "Learn about retention policies that apply to Yammer."
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-> [!NOTE]
-> This feature is in preview and subject to change.
-
 The information in this article supplements [Learn about retention](retention.md) because it has information that's specific to Yammer.
 
 For other workloads, see:
@@ -175,7 +172,7 @@ If the user stored any files in Yammer, see the [equivalent section](retention-p
 
 ## Limitations
 
-Yammer retention policies are currently in preview and we're continuously working on optimizing retention functionality. In the meantime, be aware of the following limitation when you use retention for Yammer community messages and user messages:
+Be aware of the following limitation when you use retention for Yammer community messages and user messages:
 
 - When you select **Edit** for the **Yammer user messages** location, you might see guests and non-mailbox users. Retention policies aren't designed for these users, so don't select them.
 
