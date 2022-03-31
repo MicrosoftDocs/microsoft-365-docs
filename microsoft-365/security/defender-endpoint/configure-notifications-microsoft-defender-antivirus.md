@@ -24,6 +24,7 @@ ms.collection: M365-security-compliance
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- Microsoft Defender Antivirus on Windows
 
 In Windows 10 and Windows 11, application notifications about malware detection and remediation are more robust, consistent, and concise. Microsoft Defender Antivirus notifications appear on endpoints when scans are completed and threats are detected. Notifications follow both scheduled and manually triggered scans. These notifications also appear in the **Notification Center**, and a summary of scans and threat detections appear at regular time intervals.
 
@@ -108,3 +109,12 @@ To add custom contact information to endpoint notifications, see [Customize the 
 
 5. Select **OK**. This will prevent additional notifications from appearing.
 
+> [!TIP]
+> If you’re looking for Antivirus related information for other platforms, see:
+> - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
+> - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
+> - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md)
+> - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
+> - [Configure Defender for Endpoint on Android features](android-configure.md)
+> - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
