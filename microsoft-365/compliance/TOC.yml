@@ -453,8 +453,8 @@
               href: ome-sensitive-info-types.md
             - name: Manage Office 365 Message Encryption
               href: manage-office-365-message-encryption.md
-            - name: OME message tracking and revocation
-              href: ome-message-tracking-and-revocation.md
+            - name: Encrypted message access log by Advance Message Encryption
+              href: ome-message-access-logs.md
             - name: Office 365 Advanced Message Encryption
               href: ome-advanced-message-encryption.md
             - name: Set an expiration date for email encrypted by Office 365 Advanced Message Encryption

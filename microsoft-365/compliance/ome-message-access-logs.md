@@ -1,5 +1,5 @@
 ---
-title: "OME message tracking and revocation"
+title: "Encrypted message access log by Advanced Message Encryption"
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -9,16 +9,16 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.date: 03/30/2022
+ms.date: 03/31/2022
 ms.collection: 
 - Strat_O365_IP
 - M365-security-compliance
 search.appverid:
 - MET150
-description: "OME auditing enables tracking and revocation of encrypted messages."
+description: "Access logs are available for encrypted messages retrieved through the OME portal."
 ---
 
-# Office 365 Message Encryption message tracking and revocation
+# Encrypted message access log by Advanced Message Encryption
 
 Tracking encrypted messages through the Office 365 Message Encryption (OME) portal lets you determine when custom branded messages are sent, read, and forwarded. To use this feature you must apply a custom branding template to your emails and then enable tracking. See [Add your organization's brand to your encrypted messages](add-your-organization-brand-to-encrypted-messages.md).
 
