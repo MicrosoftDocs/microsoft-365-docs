@@ -25,6 +25,7 @@ Access logs are available for encrypted messages through the Office 365 Message 
 ## Enabling message tracking audit logs in PowerShell
 
 Access log can be enabled using Exchange Online PowerShell. The *-EnablePortalTrackingLogs* parameter of Set-IrmConfiguration specifies whether to enable the audit logs of accessing the OME portal. Valid values are:
+
 - $true: Turn on audit feature.
 - $false: Turn off audit feature
 
