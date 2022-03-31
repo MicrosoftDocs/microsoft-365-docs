@@ -12,7 +12,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority: high
-description: Learn how to use advanced metadata search to find items in SharePoint document libraries using SharePoint Syntex.
+description: Learn how to use advanced metadata search and search for custom site columns to find items in SharePoint document libraries using SharePoint Syntex.
 ---
 
 # Search for metadata in document libraries in Microsoft SharePoint Syntex
