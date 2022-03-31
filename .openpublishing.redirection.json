@@ -347,7 +347,7 @@
     },
     {
       "source_path": "microsoft-365/business/set-up-compliance.md",
-      "redirect_url": "/microsoft-365/admin/security-and-compliance/set-up-compliance",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-set-up-compliance",
       "redirect_document_id": true
     },
     {
@@ -6446,12 +6446,12 @@
     },
     {
       "source_path": "microsoft-365/business-video/set-up-dlp.md",
-      "redirect_url": "/microsoft-365/admin/security-and-compliance/set-up-compliance#set-up-dlp-features",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-set-up-compliance",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/business-video/create-sensitivity-labels.md",
-      "redirect_url": "/microsoft-365/admin/security-and-compliance/set-up-compliance#set-up-sensitivity-labels",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-set-up-compliance",
       "redirect_document_id": false
     },
     {
