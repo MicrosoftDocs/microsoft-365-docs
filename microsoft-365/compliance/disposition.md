@@ -183,9 +183,7 @@ As you can see from the example shown, the actions supported are:
 - **Approve disposal**:
     - When this action is selected for an interim stage of disposition review (you have configured multiple stages): The item moves to the next disposition stage.
     
-    - When this action is selected for the final stage of disposition review, or there is only one stage of disposition: The item is marked as eligible for permanent deletion, which a timer job then actions within 7 days.
-        
-        The exact timing for the item to then be permanently deleted depends on the workload. For more information, see [How retention works for SharePoint and OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive) and [How retention works for Exchange](retention-policies-exchange.md#how-retention-works-for-exchange).
+    - When this action is selected for the final stage of disposition review, or there is only one stage of disposition: The item is marked as eligible for permanent deletion, which a timer job then actions within 7 days. The exact timing for the item to then be permanently deleted depends on the workload. For more information, see [How retention works for SharePoint and OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive) and [How retention works for Exchange](retention-policies-exchange.md#how-retention-works-for-exchange).
 
 - **Relabel**:
     - When this action is selected, the item exits the disposition review process for the original label. The item is then subject to the retention settings of the newly selected retention label.
