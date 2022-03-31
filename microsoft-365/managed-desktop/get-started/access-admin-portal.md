@@ -3,18 +3,18 @@ title: Access the Admin portal
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 description: How to find and use the Admin portal, including controlling access to it.
 ms.service: m365-md
-ms.author: jaimeo
-author: jaimeo
+ms.author: tiaraquan
+author: tiaraquan
 ms.topic: article
 audience: ITPro
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-manager: laurawi
+manager: dougeby
 ---
 
 # Access the admin portal
 
-Your gateway to the Microsoft Managed Desktop service is [Microsoft Endpoint Manager](https://endpoint.microsoft.com/). If you are unfamiliar with the capabilities of this portal for device management, see the [Microsoft Endpoint Manager documentation](/mem/).
+Your gateway to the Microsoft Managed Desktop service is [Microsoft Endpoint Manager](https://endpoint.microsoft.com/). If you're unfamiliar with the capabilities of this portal for device management, see the [Microsoft Endpoint Manager documentation](/mem/).
 
 > [!NOTE]
 > In [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) the following browsers are supported:
@@ -23,18 +23,22 @@ Your gateway to the Microsoft Managed Desktop service is [Microsoft Endpoint Man
 > - Chrome (latest version)
 > - Firefox (latest version)
 
-Your administrative account will need specific permissions in order to access the Microsoft Managed Desktop administrative features in Microsoft Endpoint Manager. You can manage admin access to these features within your organization by using role-based access control. Several Azure Active Directory (Azure AD) administrator roles and built-in Microsoft Managed Desktop roles are available to provide more granular control to different features within the Microsoft Managed Desktop Admin portal. For more information about Azure Active Directory roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference). Unlike Azure AD administrator roles that apply to various Microsoft products and services, the built-in roles are specific to Microsoft Managed Desktop and will only guarantee access to the Admin features for this service. Admins can assign built-in roles to users individually or in combination with Azure AD administrator roles to add Microsoft Managed Desktop permissions to existing admin accounts.
+Your administrative account will need specific permissions in order to access the Microsoft Managed Desktop administrative features in Microsoft Endpoint Manager.
+
+You can manage admin access to these features within your organization by using role-based access control. Several Azure Active Directory (Azure AD) administrator roles, and built-in Microsoft Managed Desktop roles are available to provide more granular control to different features within the Microsoft Managed Desktop Admin portal. For more information about Azure Active Directory roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).
+
+Unlike Azure AD administrator roles that apply to various Microsoft products and services, the built-in roles are specific to Microsoft Managed Desktop and will only guarantee access to the Admin features for this service. Admins can assign built-in roles to users individually, or in combination with Azure AD administrator roles to add Microsoft Managed Desktop permissions to existing admin accounts.
 
 ## Azure Active Directory roles with Microsoft Managed Desktop access
 
-|Azure AD role  |Microsoft Managed Desktop permissions  |
-|---------|---------|
-|Global Administrator     | Admins with this role will have **read and write permissions to all features** in the Microsoft Managed Desktop Admin portal.         |
-|Global Reader     | Admins with this role will have **read-only permissions to all features** in the Microsoft Managed Desktop Admin portal.         |
-|Intune Service Administrator     |  Admins with this role will have **read and write permissions to features not related to security** in the Microsoft Managed Desktop Admin portal.       |
-|Service Support Administrator     | Admins with this role will have **read-only permissions to features not related to security** and **write permissions to manage support requests** in the Microsoft Managed Desktop Admin portal.         |
-|Security Admin | Admins with this role will have **read-only permissions to all features** and **write permissions for security related features** in Microsoft Managed Desktop in the Admin portal. |
-|Security Reader |Admins with this role will have **read-only permissions to all features** in the Microsoft Managed Desktop Admin portal.|
+| Azure AD role | Microsoft Managed Desktop permissions |
+| ----- | ----- |
+| Global Administrator | Admins with this role will have **read and write permissions to all features** in the Microsoft Managed Desktop Admin portal. |
+| Global Reader | Admins with this role will have **read-only permissions to all features** in the Microsoft Managed Desktop Admin portal. |
+| Intune Service Administrator | Admins with this role will have **read and write permissions to features not related to security** in the Microsoft Managed Desktop Admin portal. |
+| Service Support Administrator | Admins with this role will have **read-only permissions to features not related to security** and **write permissions to manage support requests including escalation requests** in the Microsoft Managed Desktop Admin portal. |
+| Security Admin | Admins with this role will have **read-only permissions to all features** and **write permissions for security related features** in Microsoft Managed Desktop in the Admin portal. |
+| Security Reader |Admins with this role will have **read-only permissions to all features** in the Microsoft Managed Desktop Admin portal. |
 
 If you need help with assigning Azure Active Directory roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).
 
@@ -43,32 +47,37 @@ If you need help with assigning Azure Active Directory roles, see [Azure AD buil
 
 ## Built-in roles provided by Microsoft Managed Desktop
 
+The following are the built-in roles provided by Microsoft Managed Desktop:
 
-|Built-in role  |Microsoft Managed Desktop permissions  |
-|---------|---------|
-|Microsoft Managed Desktop Service Administrator  | When assigned to a user, this role gives the admin **read and write permissions to features not related to security** in the Microsoft Managed Desktop Admin portal.  |
-|Microsoft Managed Desktop Service Reader | When assigned to a user, this role gives the admin **read-only permissions to features not related to security** in the Microsoft Managed Desktop Admin portal. |
-|Microsoft Managed Desktop Security Manager |When assigned to a user, this role gives that admin **read and write permissions only for security related features** in the Microsoft Managed Desktop Admin portal.   |
+| Built-in role | Microsoft Managed Desktop permissions |
+| ----- | ----- |
+| Microsoft Managed Desktop Service Administrator | When assigned to a user, this role gives the admin **read and write permissions to Microsoft Managed Desktop features not related to security** in the Microsoft Managed Desktop Admin portal. |
+| Microsoft Managed Desktop Service Reader | When assigned to a user, this role gives the admin **read-only permissions to Microsoft Managed Desktop features not related to security** in the Microsoft Managed Desktop Admin portal. |
+| Microsoft Managed Desktop Security Manager | When assigned to a user, this role gives that admin **read and write permissions only for security related features** in the Microsoft Managed Desktop Admin portal. |
+| Microsoft Managed Desktop Support Partner |When assigned to a user, this role gives the admin **read and write permissions only for creating and managing elevation requests and support partner engaged escalation requests** in the Microsoft Managed Desktop Admin portal. |
 
 > [!NOTE]
-> Security features include security-related communications, management of security contacts, management of security-related support requests, and access to security related reports. 
+> Security features include security-related communications, management of security contacts, management of security-related support requests, and access to security related reports.
 
 ### Assigning built-in roles to user
 
-For easy management of built-in roles, there is a security group for each custom role with the name "Modern Workplace Roles - _Role Name_"(for example, “Modern Workplace Roles – Security Manager”). To assign users to one of these security groups, follow these steps:
+For easy management of built-in roles, there's a security group for each custom role with the name "Modern Workplace Roles - _Role Name_". For example, “Modern Workplace Roles – Security Manager”).
+
+**To assign users to one of these security groups:**
+
 1. Go the Microsoft Endpoint Manager portal.
-2. Select **Groups** on the left side.
-3. Search for **Modern Workplace Roles**, and then select the group associated with the role you want to assign. 
-4. Select **Members** on the left side, and then select **+ Add members** on the command bar.
-5. Enter the email of the person being added. If they are a guest, you must invite them before you can assign the group.
+2. In the left pane, select **Groups**.
+3. Search for **Modern Workplace Roles**, and then select the group associated with the role you want to assign.
+4. Select **Members** on the left side, and then select **+ Add members** in the command bar.
+5. Enter the email of the person being added. If they're a guest, you must invite them before you can assign the group.
 6. Select **Select** at the bottom.
 
 > [!NOTE]
-> Nesting security groups for role assignment is not currently supported. 
+> Nesting security groups for role assignment is not currently supported.
 
 ### Assigning built-in roles to groups
 
-If you need to assign one or more of the built-in roles to a existing group, follow these steps:
+**To assign one or more of the built-in roles to a existing group:**
 
 1. Go to [portal.azure.com](https://portal.azure.com/).
 2. Search for and open **Enterprise applications**.
@@ -87,7 +96,7 @@ If you need to assign one or more of the built-in roles to a existing group, fol
 1. Deploy and assign [Intune Company Portal](company-portal.md).
 1. [Assign licenses](assign-licenses.md).
 1. [Deploy apps](deploy-apps.md).
-1. [Set up devices](set-up-devices.md).
+1. [Prepare devices](prepare-devices.md).
 1. Set up [first-run experience with Autopilot and the Enrollment Status Page](esp-first-run.md).
 1. [Enable user support features](enable-support.md).
 1. [Get your users ready to use devices](get-started-devices.md).

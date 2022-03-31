@@ -1,8 +1,8 @@
 ---
 title: Zero Trust identity and device access configurations - Microsoft 365 for enterprise
 description: Describes Microsoft recommendations and core concepts for deploying secure email, docs, and apps policies and configurations for Zero Trust.
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 ms.prod: m365-security
 ms.topic: article
@@ -23,18 +23,7 @@ ms.technology: mdo
 ---
 # Zero Trust identity and device access configurations
 
-**Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-
-<!--
-The modern security perimeter of your organization now extends beyond your network to include users accessing cloud-based apps from any location with a variety of devices. Your security infrastructure needs to determine whether a given access request should be granted and under what conditions.
-
-This determination should be based on the user account of the sign-in, the device being used, the app the user is using for access, the location from which the access request is made, and an assessment of the risk of the request. This capability helps ensure that only approved users and devices can access your critical resources.
-
---> 
-
-Security architectures that rely on network firewalls and virtual private networks (VPNs) to isolate and restrict access to an organization’s technology resources and services are no longer sufficient for a workforce that regularly requires access to applications and resources that exist beyond traditional corporate network boundaries.
+Security architectures that rely on network firewalls and virtual private networks (VPNs) to isolate and restrict access to an organization's technology resources and services are no longer sufficient for a workforce that regularly requires access to applications and resources that exist beyond traditional corporate network boundaries.
 
 To address this new world of computing, Microsoft highly recommends the Zero Trust security model, which is based on these guiding principles:
 
@@ -44,7 +33,7 @@ To address this new world of computing, Microsoft highly recommends the Zero Tru
 
 - Use least privilege access
 
-  Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection.	
+  Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection.
 
 - Assume breach
 
@@ -117,7 +106,7 @@ Each industry also has their own set of specialized regulations. Rather than pro
 - **Enterprise**: Some customers have a subset of data that must be protected at higher levels, or they may require all data to be protected at a higher level. You can apply increased protection to all or specific data sets in your Microsoft 365 environment. We recommend protecting identities and devices that access sensitive data with comparable levels of security.
 - **Specialized security**: As needed, a few customers have a small amount of data that is highly classified, constitutes trade secrets, or is regulated. Microsoft provides capabilities to help these customers meet these requirements, including added protection for identities and devices.
 
-![Security cone - All customers > Some customers > A few customers](../../media/microsoft-365-policies-configurations/M365-idquality-threetiers.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/M365-idquality-threetiers.png" alt-text="The Security cone" lightbox="../../media/microsoft-365-policies-configurations/M365-idquality-threetiers.png":::
 
 This guidance shows you how to implement Zero Trust protection for identities and devices for each of these levels of protection. Use this guidance as a minimum for your organization and adjust the policies to meet your organization's specific requirements.
 
@@ -136,7 +125,7 @@ Additionally, see the [Deploy information protection for data privacy regulation
 
 Implementing any security strategy requires trade-offs between security and productivity. It's helpful to evaluate how each decision affects the balance of security, functionality, and ease of use.
 
-![Security triad balancing security, functionality, and ease of use.](../../media/microsoft-365-policies-configurations/security-triad.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/security-triad.png" alt-text="The Security triad balancing security, functionality, and ease of use" lightbox="../../media/microsoft-365-policies-configurations/security-triad.png":::
 
 The recommendations provided are based on the following principles:
 
@@ -162,11 +151,10 @@ Azure AD provides a full suite of identity management capabilities. We recommend
 |[Azure AD Identity Protection](/azure/active-directory/identity-protection/overview)|Enables you to detect potential vulnerabilities affecting your organization's identities and configure automated remediation policy to low, medium, and high sign-in risk and user risk. This guidance relies on this risk evaluation to apply Conditional Access policies for multi-factor authentication. This guidance also includes a Conditional Access policy that requires users to change their password if high-risk activity is detected for their account.|Microsoft 365 E5, Microsoft 365 E3 with the E5 Security add-on, EMS E5, or Azure AD Premium P2 licenses|
 |[Self-service password reset (SSPR)](/azure/active-directory/authentication/concept-sspr-howitworks)|Allow your users to reset their passwords securely and without help-desk intervention, by providing verification of multiple authentication methods that the administrator can control.|Microsoft 365 E3 or E5|
 |[Azure AD password protection](/azure/active-directory/authentication/concept-password-ban-bad)|Detect and block known weak passwords and their variants and additional weak terms that are specific to your organization. Default global banned password lists are automatically applied to all users in an Azure AD tenant. You can define additional entries in a custom banned password list. When users change or reset their passwords, these banned password lists are checked to enforce the use of strong passwords.|Microsoft 365 E3 or E5|
-|
 
 Here are the components of Zero Trust identity and device access, including Intune and Azure AD objects, settings, and subservices.
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-components.png" alt-text="Components of Zero Trust identity and device access." lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-components.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-components.png" alt-text="The Components of Zero Trust identity and device access" lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-components.png":::
 
 ### Microsoft Intune
 
@@ -204,7 +192,6 @@ The following table summarizes our recommendations for using these capabilities 
 |**Enforce password change**|For high-risk users|For high-risk users|For high-risk users|
 |**Enforce Intune application protection**|Yes|Yes|Yes|
 |**Enforce Intune enrollment for organization-owned device**|Require a compliant or domain-joined PC, but allow bring-your-own devices (BYOD) phones and tablets|Require a compliant or domain-joined device|Require a compliant or domain-joined device|
-|
 
 ## Device ownership
 
@@ -233,7 +220,7 @@ Microsoft recommends that you do not create policy sets that apply to all apps b
 
 ## Steps to configure Zero Trust identity and device access
 
-![Steps to configure Zero Trust identity and device access.](../../media/microsoft-365-policies-configurations/identity-device-access-steps.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-steps.png" alt-text="The steps to configure Zero Trust identity and device access" lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-steps.png":::
 
 1. Configure prerequisite identity features and their settings.
 2. Configure the common identity and access Conditional Access policies.

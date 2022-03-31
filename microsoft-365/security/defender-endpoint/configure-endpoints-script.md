@@ -32,9 +32,11 @@ ms.technology: mde
 You can also manually onboard individual devices to Defender for Endpoint. You might want to do this first when testing the service before you commit to onboarding all devices in your network.
 
 > [!IMPORTANT]
-> This script has been optimized for use on up to 10 devices.
->
-> To deploy at scale, use [other deployment options](configure-endpoints.md). For example, you can deploy an onboarding script to more than 10 devices in production with the script available in [Onboard Windows devices using Group Policy](configure-endpoints-gp.md).
+> This script has been optimized for use on up to ten devices.
+> Local scripting is a special onboarding method for evaluating Microsoft Defender for Endpoint.
+> The data reporting frequency is set higher than with other onboarding methods when onboarding using a local script.
+> This setting is for evaluation purposes and is not normally used in production deployments. For this reason, there are concerns about environmental impact, so we recommend limiting the number of deployments using local scripts to ten.
+> If you are deploying to a production environment as previously described, use [other deployment options](configure-endpoints.md) like  Group Policy or Microsoft Endpoint Configuration Manager.
 
 Check out the [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  or  [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) to see the various paths in deploying Defender for Endpoint. 
 
@@ -59,7 +61,7 @@ Check out the [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-
    1. Go to **Start** and type **cmd**.
    2. Right-click **Command prompt** and select **Run as administrator**.
 
-    ![Window Start menu pointing to Run as administrator.](images/run-as-admin.png)
+    :::image type="content" source="images/run-as-admin.png" alt-text="The Window Start menu pointing to Run as administrator" lightbox="images/run-as-admin.png":::
 
 4.  Type the location of the script file. If you copied the file to the desktop, type: *%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd*
 
@@ -114,7 +116,7 @@ For security reasons, the package used to Offboard devices will expire 30 days a
    1. Go to **Start** and type **cmd**.
    2. Right-click **Command prompt** and select **Run as administrator**.
 
-        ![Window Start menu pointing to Run as administrator.](images/run-as-admin.png)
+      :::image type="content" source="images/run-as-admin.png" alt-text="The Windows Start menu pointing to the Run as administrator option" lightbox="images/run-as-admin.png":::
 
 4. Type the location of the script file. If you copied the file to the desktop, type: *%userprofile%\Desktop\WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*
 

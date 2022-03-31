@@ -13,7 +13,9 @@ ms.author: macapara
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+  - M365-security-compliance
+  - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
 ---
@@ -30,7 +32,7 @@ ms.technology: mde
 - Windows Server 2019 and later
 - Windows Server 2019 core edition
 - Windows Server 2022
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -40,22 +42,21 @@ Defender for Endpoint extends support to also include the Windows Server operati
 
 This topic describes how to onboard specific Windows servers to Microsoft Defender for Endpoint.
 
-
-
-For a practical guidance on what needs to be in place for licensing and infrastructure, see [Protecting Windows Servers with Defender for Endpoint](https://techcommunity.microsoft.com/t5/What-s-New/Protecting-Windows-Server-with-Windows-Defender-ATP/m-p/267114#M128).
-
 For guidance on how to download and use Windows Security Baselines for Windows servers, see [Windows Security Baselines](/windows/device-security/windows-security-baselines).
 
 ## Windows Server onboarding overview
 
 You'll need to complete the following general steps to successfully onboard servers.
 
-![Illustration of onboarding flow for Windows Servers and Windows 10 devices](images/server-onboarding-tools-methods.png)
+:::image type="content" source="images/server-onboarding-tools-methods.png" alt-text="An illustration of onboarding flow for Windows Servers and Windows 10 devices" lightbox="images/server-onboarding-tools-methods.png":::
 
 **Windows Server 2012 R2 and Windows Server 2016 (Preview)**
 
+>[!IMPORTANT]
+> You'll need to turn on the preview features in the Endpoints section of Microsoft 365 Defender to use this functionality. Navigate to [Microsoft 365 Defender > Settings > Endpoints > Advanced features](https://security.microsoft.com/preferences2/integration) and turn on Preview features.
+
 - Download installation and onboarding packages
-- Install application
+- Apply the installation package
 - Follow the onboarding steps for the corresponding tool
 
 **Windows Server Semi-Annual Enterprise Channel and Windows Server 2019**
@@ -68,7 +69,7 @@ You'll need to complete the following general steps to successfully onboard serv
 
 
 
-### New functionality in the modern unified solution for Windows Server 2012 R2 and 2016 Preview
+### New Windows Server 2012 R2 and 2016 functionality in the modern unified solution (Preview)
 
 Previous implementation of onboarding Windows Server 2012 R2 and Windows Server 2016 required the use of Microsoft Monitoring Agent (MMA).
 
@@ -86,17 +87,27 @@ The new unified solution package makes it easier to onboard servers by removing 
 - [Automated Investigation and Response (AIR)](/microsoft-365/security/defender-endpoint/automated-investigations)
 - [Tamper Protection](/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection)
 
+Depending on the server that you're onboarding, the unified solution installs Microsoft Defender Antivirus and/or the EDR sensor. The following table indicates what component is installed and what is built in by default.
+
+|Server version|AV|EDR|
+|----|----|----|
+|Windows Server 2012 R2 SP1|![Yes.](images/svg/check-yes.svg)|![Yes.](images/svg/check-yes.svg)|
+|Windows Server 2016|Built-in|![Yes.](images/svg/check-yes.svg)|
+|Windows Server 2019 or later|Built-in|Built-in|
+
 If you have previously onboarded your servers using MMA, follow the guidance provided in [Server migration](server-migration.md) to migrate to the new solution.
 
 >[!NOTE]
 >While this method of onboarding Windows Server 2012 R2 and Windows Server 2016 is in preview, you can choose to continue to use the previous onboarding method using Microsoft Monitoring Agent (MMA). For more information, see [Install and configure endpoints using MMA](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma).
 
-#### Known issues and limitations
+#### Known issues and limitations on the new, unified solution package for Windows Server 2012 R2 and 2016
 
 The following specifics apply to the new unified solution package for Windows Server 2012 R2 and 2016:
 
-- Ensure connectivity requirements as specified in [Enable access to Microsoft Defender for Endpoint service URLs in the proxy server](/microsoft-365/security/defender-endpoint/configure-proxy-internet?enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server) are met. They are equivalent to those for Windows Server 2019.
+- Ensure connectivity requirements as specified in [Enable access to Microsoft Defender for Endpoint service URLs in the proxy server](/microsoft-365/security/defender-endpoint/configure-proxy-internet?enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server) are met. They are equivalent to those for Windows Server 2019. 
+- We are investigating an issue with Windows Server 2012 R2 connectivity to cloud when static TelemetryProxyServer is used and the certificate revocation list (CRL) URLs are not reachable from the SYSTEM account context. The immediate mitigation is to either use an alternative proxy option that provides such connectivity, or configure the same proxy via the WinInet setting on the SYSTEM account context.
 - Previously, the use of the Microsoft Monitoring Agent (MMA) on Windows Server 2016 and below allowed for the OMS / Log Analytics gateway to provide connectivity to Defender cloud services. The new solution, like Microsoft Defender for Endpoint on Windows Server 2019, Windows Server 2022, and Windows 10, does not support this gateway.
+
 - On Windows Server 2016, verify that Microsoft Defender Antivirus is installed, is active and up to date. You can download and install the latest platform version using Windows Update. Alternatively, download the update package manually from the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623) or from [MMPC](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64).  
 - On Windows Server 2012 R2, there is no user interface for Microsoft Defender Antivirus. In addition, the user interface on Windows Server 2016 only allows for basic operations. To perform operations on a device locally, refer to [Manage Microsoft Defender for Endpoint with PowerShell, WMI, and MPCmdRun.exe](/microsoft-365/security/defender-endpoint/manage-mde-post-migration-other-tools). As a result, features that specifically rely on user interaction, such as where the user is prompted to make a decision or perform a specific task, may not work as expected. It is recommended to disable or not enable the user interface nor require user interaction on any managed server as it may impact protection capability.
 - Not all Attack Surface Reduction rules are available on all operating systems. See [Attack Surface Reduction (ASR) rules](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules).
@@ -110,6 +121,20 @@ The following specifics apply to the new unified solution package for Windows Se
 - On Windows Server 2012 R2, Network Events may not populate in the timeline. This issue requires a Windows Update released as part of the [October 12, 2021 monthly rollup (KB5006714)](https://support.microsoft.com/topic/october-12-2021-kb5006714-monthly-rollup-4dc4a2cd-677c-477b-8079-dcfef2bda09e).
 - Operating system upgrades are not supported. Offboard then uninstall before upgrading.
 - Automatic exclusions for *server roles* are not supported on Windows Server 2012 R2; however, built-in exclusions for operating system files are. For more information about adding exclusions, see [Virus scanning recommendations for Enterprise computers that are running currently supported versions of Windows](https://support.microsoft.com/topic/virus-scanning-recommendations-for-enterprise-computers-that-are-running-currently-supported-versions-of-windows-kb822158-c067a732-f24a-9079-d240-3733e39b40bc).
+- Currently, if you choose to offboard and uninstall the modern, unified solution and re-onboard the previous MMA-based EDR sensor, you may encounter repeated `MsSenseS.exe` crashes. 
+
+As a workaround, remove the following registry keys if they exist:
+- `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WMI\Security\fdedb2b8-61e4-4a7e-8b15-abf214a08fcc`
+- `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WMI\Security\c60418cc-7e07-400f-ae3b-d521c5dbd96f`
+
+You can use the following commands:
+
+```cmd
+reg delete HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WMI\Security /v fdedb2b8-61e4-4a7e-8b15-abf214a08fcc /f
+reg delete HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WMI\Security /v c60418cc-7e07-400f-ae3b-d521c5dbd96f /f
+```
+No restart is required.
+
 
 <a name="integration-with-azure-defender"></a>
 
@@ -120,7 +145,11 @@ Microsoft Defender for Endpoint integrates seamlessly with Microsoft Defender fo
 For more information, see [Integration with Microsoft Defender for Cloud](azure-server-integration.md).
 
 > [!NOTE]
-> For Windows Server 2012 R2 and 2016 running the modern unified solution preview, integration with Microsoft Defender for Cloud / Microsoft Defender for servers for alerting and automated deployment is not yet available. Whilst you can install the new solution on these machines, no alerts will be displayed in Microsoft Defender for Cloud.
+> For Windows Server 2012 R2 and 2016 running the modern unified solution preview, integration with Microsoft Defender for Cloud / Microsoft Defender for servers for alerting and automated deployment is not yet available. Whilst you can manually install the new solution on these machines, no alerts will be displayed in Microsoft Defender for Cloud.
+
+> [!NOTE]
+> - The integration between Microsoft Defender for servers and Microsoft Defender for Endpoint has been expanded to support Windows Server 2022, [Windows Server 2019, and Windows Virtual Desktop (WVD)](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview).
+> - Server endpoint monitoring utilizing this integration has been disabled for Office 365 GCC customers.
 
 ## Windows Server 2012 R2 and Windows Server 2016
 
@@ -131,8 +160,7 @@ For more information, see [Integration with Microsoft Defender for Cloud](azure-
 
 **Prerequisites for Windows Server 2012 R2**
 
-If you have fully updated your machines with the latest [monthly rollup](/troubleshoot/windows-client/deployment/standard-terminology-software-updates.md#monthly-rollup) package, there are **no** additional prerequisites.
-
+If you have fully updated your machines with the latest [monthly rollup](https://support.microsoft.com/topic/october-12-2021-kb5006714-monthly-rollup-4dc4a2cd-677c-477b-8079-dcfef2bda09e) package, there are **no** additional prerequisites.
 
 The installer package will check if the following components have already been installed via an update:
 
@@ -146,35 +174,74 @@ Aside from fully updating the machine with the Latest Cumulative Update (LCU), v
 > [!NOTE]
 > In order to successfully update the built-in version of Windows Defender, which has a version number starting with 4.10, to the latest available platform, a servicing stack update must have been applied as well as the Latest Cumulative Update (LCU) equal to or later than September 20, 2018—KB4457127 (OS Build 14393.2515).
 
+**Prerequisites for running with third-party security solutions**
+
+If you intend to use a third-party antimalware solution, you'll need to run Microsoft Defender Antivirus in passive mode. You must remember to set to passive mode during the installation and onboarding process.
+
 **New update package for Microsoft Defender for Endpoint on Windows Server 2012 R2 and 2016**
 
 To receive regular product improvements and fixes for the EDR Sensor component, ensure Windows Update [KB5005292](https://go.microsoft.com/fwlink/?linkid=2168277) gets applied or approved. In addition, to keep protection components updated, see [Manage Microsoft Defender Antivirus updates and apply baselines](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions).
 
-### Download installation and onboarding packages
+### Onboarding steps summary
 
-1. In Microsoft Defender Security Center, go to **Settings > Device Management > Onboarding**.
+- STEP 1: [Download the installation and onboarding packages](#step-1-download-installation-and-onboarding-packages)
+- STEP 2: [Apply the installation and onboarding package](#step-2-apply-the-installation-and-onboarding-package)
+- STEP 3: [Complete the onboarding steps](#step-3-complete-the-onboarding-steps) 
+
+
+### STEP 1: Download installation and onboarding packages
+
+You will need to download both the **installation** and **onboarding** packages from the portal.
+
+> [!div class="mx-imgBorder"]
+> ![Image of onboarding dashboard](images/install-agent-onboard.png)
+
+
+   > [!NOTE]
+   > On Windows Server 2012R2, Microsoft Defender Antivirus will get installed by the installation package and will be active unless you set it to passive mode. On Windows Server 2016, Microsoft Defender Antivirus must be installed as a feature (see [Switch to MDE](/microsoft-365/security/defender-endpoint/switch-to-mde-phase-2#re-enable-microsoft-defender-antivirus-on-windows-server-2016)) first and fully updated before proceeding with the installation.
+   > 
+   > If you are running a non-Microsoft antimalware solution ensure you add exclusions for Microsoft Defender Antivirus ([from this list of Microsoft Defender Processes on the Defender Processes tab](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)) to the non-Microsoft solution before installation.  It is also recommended to add non-Microsoft security solutions to the Defender Antivirus exclusion list.
+
+
+The **installation package** contains an MSI file that installs the Microsoft Defender for Endpoint agent.
+
+The **onboarding package** contains the following files:
+
+- `OptionalParamsPolicy` - contains the setting that enables sample collection
+- `WindowsDefenderATPOnboardingScript.cmd` - contains the onboarding script
+
+Use the following steps to download the packages: 
+
+1. In Microsoft 365 Defender, go to **Settings > Device Management > Onboarding**.
 
 2. Select **Windows Server 2012 R2 and 2016**.
 
-3. Select **Download installation package** and save the .msi file. You can run the msi package through the installation wizard, or follow the command-line steps in [Install Microsoft Defender for Endpoint using the command line](#install-microsoft-defender-for-endpoint-using-command-line).
+3. Select **Download installation package** and save the .msi file. 
+ 
+4. Select **Download onboarding package** and save the .zip file.
+
+5. Install the installation package using any of the options to install Microsoft Defender Antivirus. The installation requires administrative permissions.
+
+
+
+### STEP 2: Apply the installation and onboarding package
+In this step you will install the prevention and detection components required before onboarding your device to the Microsoft Defender for Endpoint cloud environment, to prepare the machine for onboarding. Ensure all [prerequisites](#prerequisites) have been met. 
 
    > [!NOTE]
    > Microsoft Defender Antivirus will get installed and will be active unless you set it to passive mode. 
- 
 
-4. Select **Download onboarding package** and save the .zip file.
+#### Options to install the Microsoft Defender for Endpoint packages
 
-5. Install the installation package using any of the options to install Microsoft Defender Antivirus. 
+In the previous section, you downloaded an installation package. The installation package contains the installer for all Microsoft Defender for Endpoint components. 
 
-6. Follow the steps provided in the [onboarding steps](#onboarding-steps) section.
+You can use any of the following options to install the agent:
+- [Install using the command line](#install-microsoft-defender-for-endpoint-using-the-command-line)
+- [Install using a script](#install-microsoft-defender-for-endpoint-using-a-script)
+- [Apply the installation and onboarding packages using Group Policy](#apply-the-microsoft-defender-for-endpoint-installation-and-onboarding-packages-using-group-policy)
 
-### Options to install Microsoft Defender for Endpoint
+##### Install Microsoft Defender For Endpoint using the command line
+Use the installation package from the previous step to install Microsoft Defender for Endpoint. 
 
-In the previous section, you downloaded an installation package. The installation package contains the installer for all Microsoft Defender for Endpoint components.
-
-### Install Microsoft Defender for Endpoint using command line
-
-Use the installation package from the previous step to install Microsoft Defender for Endpoint.
 
 Run the following command to install Microsoft Defender for Endpoint:
 
@@ -196,15 +263,73 @@ The `/quiet` switch suppresses all notifications.
 
 > [!NOTE]
 > Microsoft Defender Antivirus doesn't automatically go into passive mode. You can choose to set Microsoft Defender Antivirus to run in passive mode if you are running a non-Microsoft antivirus/antimalware solution. For command line installations, the optional `FORCEPASSIVEMODE=1` immediately sets the Microsoft Defender Antivirus component to Passive mode to avoid interference. Then, to ensure Defender Antivirus remains in passive mode after onboarding to support capabilities like EDR Block, set the "ForceDefenderPassiveMode" registry key.
->
-> - The Onboarding package for Windows Server 2019 and Windows Server 2022 through Microsoft Endpoint Manager currently ships a script. For more information on how to deploy scripts in Configuration Manager, see [Packages and programs in Configuration Manager](/configmgr/apps/deploy-use/packages-and-programs).
-> - A local script is suitable for a proof of concept but should not be used for production deployment. For a production deployment, we recommend using Group Policy, or Microsoft Endpoint Configuration Manager.
 
 Support for Windows Server provides deeper insight into server activities, coverage for kernel and memory attack detection, and enables response actions.
 
-### Install Microsoft Defender for Endpoint using a script
+##### Install Microsoft Defender for Endpoint using a script
 
-You can also use the [installer script](server-migration.md#installer-script) to help automate installation, uninstallation, and onboarding. 
+You can use the [installer script](server-migration.md#installer-script) to help automate installation, uninstallation, and onboarding. For more information, see the instructions in the following section to use the script with Group Policy.
+
+##### Apply the Microsoft Defender for Endpoint installation and onboarding packages using Group policy
+
+1. Create a group policy: <br> Open the [Group Policy Management Console](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC), right-click **Group Policy Objects** you want to configure and click **New**. Enter the name of the new GPO in the dialogue box that is displayed and click **OK**.
+
+2. Open the [Group Policy Management Console](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC), right-click the Group Policy Object (GPO) you want to configure and click **Edit**.
+
+3. In the **Group Policy Management Editor**, go to **Computer configuration**, then **Preferences**, and then **Control panel settings**.
+
+4. Right-click **Scheduled tasks**, point to **New**, and then click **Immediate Task (At least Windows 7)**.
+
+5. In the **Task** window that opens, go to the **General** tab. Under **Security options** click **Change User or Group** and type SYSTEM and then click **Check Names** then **OK**. NT AUTHORITY\SYSTEM appears as the user account the task will run as.
+
+6. Select **Run whether user is logged on or not** and check the **Run with highest privileges** check box.
+
+7. In the Name field, type an appropriate name for the scheduled task (for example, Defender for Endpoint Deployment).
+
+8. Go to the **Actions** tab and select **New...** Ensure that **Start a program** is selected in the **Action** field. The [installer script](server-migration.md#installer-script) handles the installation, and immediately perform the onboarding step after installation completes. Select *C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe* then provide the arguments:
+
+    ```console
+     -ExecutionPolicy RemoteSigned \\servername-or-dfs-space\share-name\install.ps1 -OnboardingScript \\servername-or-dfs-space\share-name\windowsdefenderatponboardingscript.cmd
+    ```  
+
+     >[!NOTE]
+    >If you need to troubleshoot agent installation issues, add '-etl -log' to the install.ps1 script parameters.
+    >
+    >The recommended execution policy setting is `Allsigned`. This requires importing the script's signing certificate into the Local Computer Trusted Publishers store if the script is running as SYSTEM on the endpoint.
+
+    Replace \\servername-or-dfs-space\share-name with the UNC path, using the file server's fully qualified domain name (FQDN), of the shared *install.ps1* file. The installer package md4ws.msi must be placed in the same directory.  Also ensure that the permissions of the UNC path allow read access to the computer account that's installing the platform.
+
+   
+
+    For scenarios where you want Microsoft Defender Antivirus to co-exist with non-Microsoft antimalware solutions, add the $Passive parameter to set passive mode during installation.
+
+9. Select **OK** and close any open GPMC windows.
+
+10. To link the GPO to an Organization Unit (OU), right-click and select **Link an existing GPO**. In the dialogue box that is displayed, select the Group Policy Object that you wish to link. Click **OK**.
+
+For additional configuration settings, see [Configure sample collection settings](configure-endpoints-gp.md#configure-sample-collection-settings) and [Other recommended configuration settings](configure-endpoints-gp.md#other-recommended-configuration-settings).
+
+### STEP 3: Complete the onboarding steps
+
+The following steps are only applicable if you're using a third-party anti-malware solution. You'll need to apply the following Microsoft Defender Antivirus passive mode setting. Verify that it was configured correctly:
+
+1. Set the following registry entry:
+    - Path: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
+    - Name: `ForceDefenderPassiveMode`
+    - Type: `REG_DWORD`
+    - Value: `1`
+
+       :::image type="content" source="images/atp-verify-passive-mode.png" alt-text="The passive mode verification result" lightbox="images/atp-verify-passive-mode.png":::
+> [!IMPORTANT]
+>
+> - When you use Microsoft Defender for Cloud to monitor servers, a Defender for Endpoint tenant is automatically created (in the US for US users, in the EU for European users, and in the UK for UK users).
+Data collected by Defender for Endpoint is stored in the geo-location of the tenant as identified during provisioning.
+> - If you use Defender for Endpoint before using Microsoft Defender for Cloud, your data will be stored in the location you specified when you created your tenant even if you integrate with Microsoft Defender for Cloud at a later time.
+> - Once configured, you cannot change the location where your data is stored. If you need to move your data to another location, you need to contact Microsoft Support to reset the tenant.
+> - The Onboarding package for Windows Server 2019 and Windows Server 2022 through Microsoft Endpoint Manager currently ships a script. For more information on how to deploy scripts in Configuration Manager, see [Packages and programs in Configuration Manager](/configmgr/apps/deploy-use/packages-and-programs).
+> - A local script is suitable for a proof of concept but should not be used for production deployment. For a production deployment, we recommend using Group Policy, or Microsoft Endpoint Configuration Manager.
+
+
 
 ## Windows Server Semi-Annual Enterprise Channel and Windows Server 2019 and Windows Server 2022
 
@@ -212,46 +337,14 @@ The onboarding package for Windows Server 2019 and Windows Server 2022 through M
 
 ### Download package
 
-1. In Microsoft Defender Security Center, go to **Settings > Device Management > Onboarding**.
+1. In Microsoft 365 Defender, go to **Settings > Device Management > Onboarding**.
 
 2. Select **Windows Server 1803 and 2019**.
 
 3. Select **Download package**. Save it as WindowsDefenderATPOnboardingPackage.zip.
 
-4. Follow the steps provided in the [onboarding steps](#onboarding-steps) section.
+4. Follow the steps provided in the [Complete the onboarding steps](#step-3-complete-the-onboarding-steps) section.
 
-## Onboarding steps
-
-1. Now that you have downloaded the required onboarding packages use the guidance listed in [onboarding tools and methods](configure-endpoints.md#endpoint-onboarding-tools) for your server.
-
-2. (Only applicable if you're using a third-party anti-malware solution). You'll need to apply the following Microsoft Defender Antivirus passive mode settings. Verify that it was configured correctly:
-
-    1. Set the following registry entry:
-       - Path: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
-       - Name: `ForceDefenderPassiveMode`
-       - Type: `REG_DWORD`
-       - Value: `1`
-
-    2. Run the following PowerShell command to verify that the passive mode was configured:
-
-        ```powershell
-        Get-WinEvent -FilterHashtable @{ProviderName="Microsoft-Windows-Sense" ;ID=84}
-        ```
-
-        > [!NOTE]
-        > - The integration between Microsoft Defender for servers and Microsoft Defender for Endpoint has been expanded to support Windows Server 2022, [Windows Server 2019, and Windows Virtual Desktop (WVD)](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview).
-        > - Server endpoint monitoring utilizing this integration has been disabled for Office 365 GCC customers.
-
-    3. Confirm that a recent event containing the passive mode event is found:
-
-       ![Image of passive mode verification result](images/atp-verify-passive-mode.png)
-
-> [!IMPORTANT]
->
-> - When you use Microsoft Defender for Cloud to monitor servers, a Defender for Endpoint tenant is automatically created (in the US for US users, in the EU for European users, and in the UK for UK users).
-Data collected by Defender for Endpoint is stored in the geo-location of the tenant as identified during provisioning.
-> - If you use Defender for Endpoint before using Microsoft Defender for Cloud, your data will be stored in the location you specified when you created your tenant even if you integrate with Microsoft Defender for Cloud at a later time.
-> - Once configured, you cannot change the location where your data is stored. If you need to move your data to another location, you need to contact Microsoft Support to reset the tenant.
 
 ## Verify the onboarding and installation
 
@@ -293,7 +386,7 @@ After successfully onboarding devices to the service, you'll need to configure t
 
 ## Offboard Windows servers
 
-You can offboard Windows Server 2012 R2, Windows Server 2016, Windows Server (SAC), Windows Server 2019, Windows Server 2019 Core edition in the same method available for Windows 10 client devices.
+You can offboard Windows Server 2012 R2, Windows Server 2016, Windows Server (SAC), Windows Server 2019, and Windows Server 2019 Core edition in the same method available for Windows 10 client devices.
 
 - [Offboard devices using Group Policy](configure-endpoints-gp.md#offboard-devices-using-group-policy)
 - [Offboard devices using Configuration Manager](configure-endpoints-sccm.md#offboard-devices-using-configuration-manager)
@@ -305,8 +398,8 @@ For other Windows server versions, you have two options to offboard Windows serv
 - Uninstall the MMA agent
 - Remove the Defender for Endpoint workspace configuration
 
->[!NOTE]
->*These offboarding instructions for other Windows server versions also apply if you are running the previous Microsoft Defender for Endpoint for Windows Server 2016 and Windows Server 2012 R2 that requires the MMA. Instructions to migrate to the new unfiied solution are at [Server migration scenarios in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/server-migration).
+> [!NOTE]
+> These offboarding instructions for other Windows server versions also apply if you are running the previous Microsoft Defender for Endpoint for Windows Server 2016 and Windows Server 2012 R2 that requires the MMA. Instructions to migrate to the new unified solution are at [Server migration scenarios in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/server-migration).
 
 ## Related topics
 

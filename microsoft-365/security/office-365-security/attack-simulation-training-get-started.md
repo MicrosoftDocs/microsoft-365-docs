@@ -18,7 +18,6 @@ ms.collection:
   - m365initiative-m365-defender
 ms.custom: 
   - seo-marvel-apr2020
-  - admindeeplinkDEFENDER
 description: Admins can learn how to use Attack simulation training to run simulated phishing and password attacks in their Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2 organizations.
 ms.technology: mdo
 ms.prod: m365-security
@@ -38,12 +37,12 @@ If your organization has Microsoft 365 E5 or Microsoft Defender for Office 365 P
 
 ## What do you need to know before you begin?
 
-- To open the Microsoft 365 Defender portal, go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a>. Attack simulation training is available at **Email and collaboration** \> **Attack simulation training**. To go directly to Attack simulation training, open <https://security.microsoft.com/attacksimulator>.
+- To open the Microsoft 365 Defender portal, go to <https://security.microsoft.com>. Attack simulation training is available at **Email and collaboration** \> **Attack simulation training**. To go directly to Attack simulation training, use <https://security.microsoft.com/attacksimulator>.
 
 - For more information about the availability of Attack simulation training across different Microsoft 365 subscriptions, see [Microsoft Defender for Office 365 service description](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
 - You need to be assigned permissions in **Azure Active Directory** before you can do the procedures in this article. Specifically, you need to be a member of one of the following roles:
-  - **Organization Management**
+  - **Global Administrator**
   - **Security Administrator**
   - **Attack Simulation Administrators**<sup>\*</sup>: Create and manage all aspects of attack simulation campaigns.
   - **Attack Payload Author**<sup>\*</sup>: Create attack payloads that an admin can initiate later.
@@ -57,7 +56,7 @@ If your organization has Microsoft 365 E5 or Microsoft Defender for Office 365 P
 - Attack simulation and training related data is stored with other customer data for Microsoft 365 services. For more information see [Microsoft 365 data locations](../../enterprise/o365-data-locations.md). Attack simulation is available in the following regions: NAM, APC, EUR, IND, CAN, AUS, FRA, GBR, JPN, KOR, BRA, LAM, CHE, NOR, ZAF, ARE and DEU.
 
   > [!NOTE]
-  > NOR, ZAF, ARE and DEU are the latest additions. All features except reported email telemetry will be available in these regions. We are working to enable this and will notify our customers as soon as reported email telemetry becomes available. 
+  > NOR, ZAF, ARE and DEU are the latest additions. All features except reported email telemetry will be available in these regions. We are working to enable this and will notify our customers as soon as reported email telemetry becomes available.
 
 - As of June 15 2021, Attack simulation training is available in GCC. If your organization has Office 365 G5 GCC or Microsoft Defender for Office 365 (Plan 2) for Government, you can use Attack simulation training in the Microsoft 365 Defender portal to run realistic attack scenarios in your organization as described in this article. Attack simulation training is not yet available in GCC High or DoD environments.
 
@@ -123,4 +122,4 @@ For step by step instructions on how to create a payload for use within a simula
 For step by step instructions on how to gain insights with reporting, see [Gain insights through Attack simulation training](attack-simulation-training-insights.md).
 
 > [!NOTE]
-> Attack Simulator uses Safe Links in Defender for Office 365 to securely track click data for the URL in the payload message that's sent to targeted recipients of a phishing campaign, even if the **Do not track user clicks** setting in Safe Links policies is turned on.
+> Attack Simulator uses Safe Links in Defender for Office 365 to securely track click data for the URL in the payload message that's sent to targeted recipients of a phishing campaign, even if the **Track user clicks** setting in Safe Links policies is turned off.

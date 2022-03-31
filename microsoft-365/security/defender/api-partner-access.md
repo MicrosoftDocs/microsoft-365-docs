@@ -20,6 +20,7 @@ search.appverid:
   - MOE150
   - MET150
 ms.technology: m365d
+ms.custom: api
 ---
 
 # Create an app with partner access to Microsoft 365 Defender APIs
@@ -71,7 +72,7 @@ The following steps with guide you how to create a multi-tenant Azure AD applica
 
 2. Navigate to **Azure Active Directory** > **App registrations** > **New registration**.
 
-   ![Image of Microsoft Azure and navigation to application registration.](../../media/atp-azure-new-app2.png)
+   :::image type="content" source="../../media/atp-azure-new-app2.png" alt-text="An application's registration section in the Microsoft 365 Defender portal" lightbox="../../media/atp-azure-new-app2.png":::
 
 3. In the registration form:
 
@@ -81,18 +82,18 @@ The following steps with guide you how to create a multi-tenant Azure AD applica
 
    After you're done filling out the form, select **Register**.
 
-   ![Image of the Register an application form.](../..//media/atp-api-new-app-partner.png)
+   :::image type="content" source="../..//media/atp-api-new-app-partner.png" alt-text="An application's registration sections in the Microsoft 365 Defender portal" lightbox="../..//media/atp-api-new-app-partner.png":::
 
 4. On your application page, select **API Permissions** > **Add permission** > **APIs my organization uses** >, type **Microsoft Threat Protection**, and select **Microsoft Threat Protection**. Your app can now access Microsoft 365 Defender.
 
    > [!TIP]
    > *Microsoft Threat Protection* is a former name for Microsoft 365 Defender, and will not appear in the original list. You need to start writing its name in the text box to see it appear.
 
-   ![Image of API permission selection.](../../media/apis-in-my-org-tab.PNG)
+   :::image type="content" source="../../media/apis-in-my-org-tab.PNG" alt-text="The APIs usage section in the Microsoft 365 Defender portal" lightbox="../../media/apis-in-my-org-tab.PNG":::
 
 5. Select **Application permissions**. Choose the relevant permissions for your scenario (for example, **Incident.Read.All**), and then select **Add permissions**.
 
-   ![Image of API access and API selection.](../../media/request-api-permissions.PNG)
+   :::image type="content" source="../../media/request-api-permissions.PNG" alt-text="An application's permission pane in the Microsoft 365 Defender portal" lightbox="../../media/request-api-permissions.PNG":::
 
     > [!NOTE]
     > You need to select the relevant permissions for your scenario. *Read all incidents* is just an example. To determine which permission you need, please look at the **Permissions** section in the API you want to call.
@@ -101,18 +102,18 @@ The following steps with guide you how to create a multi-tenant Azure AD applica
 
 6. Select **Grant admin consent**. Every time you add a permission, you must select **Grant admin consent** for it to take effect.
 
-    ![Image of Grant permissions.](../../media/grant-consent.PNG)
+    :::image type="content" source="../../media/grant-consent.PNG" alt-text="A section to grant admin consent in the Microsoft 365 Defender portal" lightbox="../../media/grant-consent.PNG":::
 
 7. To add a secret to the application, select **Certificates & secrets**, add a description to the secret, then select **Add**.
 
     > [!TIP]
     > After you select **Add**, select **copy the generated secret value**. You won't be able to retrieve the secret value after you leave.
 
-    ![Image of create app key.](../../media/webapp-create-key2.png)
+      :::image type="content" source="../../media/webapp-create-key2.png" alt-text="The Secret addition section in the Microsoft 365 Defender portal" lightbox="../../media/webapp-create-key2.png":::
 
 8. Record your application ID and your tenant ID somewhere safe. They're listed under **Overview** on your application page.
 
-   ![Image of created app id.](../../media/app-and-tenant-ids.png)
+   :::image type="content" source="../../media/app-and-tenant-ids.png" alt-text="The Overview pane in the Microsoft 365 Defender portal" lightbox="../../media/app-and-tenant-ids.png":::
 
 9. Add the application to your user's tenant.
 
@@ -130,7 +131,7 @@ The following steps with guide you how to create a multi-tenant Azure AD applica
 
    After clicking on the consent link, sign in with the Global Administrator of the user's tenant and consent the application.
 
-   ![Image of consent.](../../media/app-consent-partner.png)
+   :::image type="content" source="../../media/app-consent-partner.png" alt-text="The consent application page in the Microsoft 365 Defender portal" lightbox="../../media/app-consent-partner.png":::
 
    You'll also need to ask your user for their tenant ID. The tenant ID is one of the identifiers used to acquire access tokens.
 
@@ -260,7 +261,8 @@ A successful response will look like this:
 
 In the following image, you can see a decoded token acquired from an app, with ```Incidents.Read.All```, ```Incidents.ReadWrite.All```, and ```AdvancedHunting.Read.All``` permissions:
 
-![Image of token validation.](../../media/webapp-decoded-token.png)
+:::image type="content" source="../../media/webapp-decoded-token.png" alt-text="The Decoded Token pane in the Microsoft 365 Defender portal" lightbox="../../media/webapp-decoded-token.png":::
+
 
 ## Use the token to access the Microsoft 365 Defender API
 

@@ -198,9 +198,9 @@ A panel will open where you can select the priority and add more details such as
 
 ### URL category lookup
 
-To determine the category of a website, you can use the URL search function available on the Microsoft 365 Defender portal (<https://security.microsoft.com>) under **Endpoints** \> **Search**. In the URL search results, the web content filtering category appears under **URL/Domain details**. Administrators can also dispute the category of the domain directly from this page, as shown in the following image. If the category result is not shown, the URL is not currently assigned to an existing web content filtering category.
+To determine the category of a website, you can use the URL search function available on the Microsoft 365 Defender portal (<https://security.microsoft.com>) under **Endpoints** \> **Search**. In the URL search results, the web content filtering category appears under **URL/Domain details**. If the category result is not shown, the URL is not currently assigned to an existing web content filtering category.
 
-![Image of web content filtering category lookup results.](../../media/web-content-filtering-category-lookup.png)
+<!---:::image type="content" source="../../media/web-content-filtering-category-lookup.png" alt-text="The web content filtering category lookup results" lightbox="../../media/web-content-filtering-category-lookup.png":::--->
 
 ## Web content filtering cards and details
 
@@ -212,25 +212,25 @@ This card lists the parent web content categories with the largest increase or d
 
 In the first 30 days of using this feature, your organization might not have enough data to display this information.
 
-![Image of web activity by category card.](images/web-activity-by-category600.png)
+:::image type="content" source="images/web-activity-by-category600.png" alt-text="The web activity by category card" lightbox="images/web-activity-by-category600.png":::
 
 ### Web content filtering  summary card
 
 This card displays the distribution of blocked access attempts across the different parent web content categories. Select one of the colored bars to view more information about a specific parent web category.
 
-![Image of web content filtering summary card.](images/web-content-filtering-summary.png)
+:::image type="content" source="images/web-content-filtering-summary.png" alt-text="The web content filtering summary card" lightbox="images/web-content-filtering-summary.png":::
 
 ### Web activity summary card
 
 This card displays the total number of requests for web content in all URLs.
 
-![Image of web activity summary card.](images/web-activity-summary.png)
+:::image type="content" source="images/web-activity-summary.png" alt-text="The web activity summary card" lightbox="images/web-activity-summary.png":::
 
 ### View card details
 
 You can access the **Report details** for each card by selecting a table row or colored bar from the chart in the card. The report details page for each card contains extensive statistical data about web content categories, website domains, and device groups.
 
-![Image of web protection report details.](images/web-protection-report-details.png)
+:::image type="content" source="images/web-protection-report-details.png" alt-text="The web protection report details" lightbox="images/web-protection-report-details.png":::
 
 - **Web categories**: Lists the web content categories that have had access attempts in your organization. Select a specific category to open a summary flyout.
 
@@ -243,6 +243,8 @@ Use the time range filter at the top left of the page to select a time period. Y
 ### Known issues and limitations
 
 Only Microsoft Edge is supported if your device's OS configuration is Server (**cmd** \> **Systeminfo** \> **OS Configuration**). Network Protection is only supported in Inspect mode on Server devices, which is responsible for securing traffic across supported third-party browsers.
+
+Only Microsoft Edge is supported and Network Protection is not supported on Windows 10 Azure Virtual Desktop multi-session hosts.
 
 Network Protection does not currently support SSL inspection, which may result in some sites being allowed by Web Content Filtering that would normally be blocked. Sites would be allowed due to a lack of visibility into encrypted traffic after the TLS handshake has taken place and an inability to parse certain redirects.  This includes redirections from some web-based mail login pages to the mailbox page. As an accepted workaround, you can create a custom block indicator for the login page to ensure no users are able to access the site. Keep in mind, this may block their access to other services associated with the same website. 
 

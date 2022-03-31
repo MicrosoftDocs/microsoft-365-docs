@@ -8,7 +8,6 @@
 ### [Preview features](preview.md)
 ### [Data storage and privacy](data-storage-privacy.md)
 ### [Overview of Microsoft Defender Security Center](use.md)
-### [Portal overview](portal-overview.md)
 ### [Defender for Endpoint Plan 1]()
 #### [Overview](defender-endpoint-plan-1.md)
 #### [Setup and configuration](mde-p1-setup-configuration.md)
@@ -76,7 +75,6 @@
 #### [Configure proxy and Internet connectivity settings](configure-proxy-internet.md)
 #### [Create an onboarding or offboarding notification rule](onboarding-notification.md)
 
-#### [Application license terms](mde-terms-windows.md)
 
 
 ### [Microsoft Defender for Endpoint on other Operating Systems]()
@@ -118,7 +116,7 @@
 
 ##### [Privacy](mac-privacy.md)
 ##### [Resources](mac-resources.md)
-##### [Application license terms](mde-terms-mac.md)
+
 
 #### [Microsoft Defender for Endpoint on Linux]()
 ##### [Overview of Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
@@ -185,7 +183,6 @@
 
 ###### [Privacy](ios-privacy.md)
 
-##### [Microsoft Defender for Endpoint application license terms](mde-terms-mobile.md) 
 
 ### [Manage Microsoft Defender for Endpoint configuration settings on devices with Microsoft Endpoint Manager](security-config-management.md)
 
@@ -199,7 +196,7 @@
 
 
 ### [Configure portal settings]()
-#### [Set up preferences](preferences-setup.md)
+#### [Configure general Defender for Endpoint settings](preferences-setup.md)
 #### [General]()
 ##### [Verify data storage location and  update data retention settings](data-retention-settings.md)
 ##### [Configure alert notifications](configure-email-notifications.md)
@@ -262,22 +259,45 @@
 #### [Enable Corelight data integration](corelight-integration.md)
 #### [Device discovery FAQ](device-discovery-faq.md)
 
+### [Device inventory]()
+#### [Device inventory](machines-view-overview.md)
+#### [Exclude devices](exclude-devices.md)
+#### [Device timeline event flags](device-timeline-event-flag.md)
+#### [Manage device group and tags](machine-tags.md)
+
 ### [Network devices](network-devices.md)
 
 ### [Host firewall reporting in Microsoft Defender for Endpoint](host-firewall-reporting.md)
 
 ### [Attack surface reduction]()
-#### [Understand and use attack surface reduction](overview-attack-surface-reduction.md)
+#### [Attack surface reduction overview](overview-attack-surface-reduction.md)
 #### [Attack surface reduction (ASR) rules]()
 ##### [Learn about ASR rules](attack-surface-reduction.md)
-##### [Deploy ASR rules](attack-surface-reduction-rules-deployment.md)
-###### [ASR rules deployment phase 1 - plan](attack-surface-reduction-rules-deployment-phase-1.md)
-###### [ASR rules deployment phase 2 - test](attack-surface-reduction-rules-deployment-phase-2.md)
-###### [ASR rules deployment phase 3 - implement](attack-surface-reduction-rules-deployment-phase-3.md)
-###### [ASR rules deployment phase 4 - operationalize](attack-surface-reduction-rules-deployment-phase-4.md)
+##### [Attack surface reduction (ASR) rules deployment guide]()
+###### [ASR rules deployment prerequisites](attack-surface-reduction-rules-deployment.md)
+###### [Step 1: Plan ASR rules deployment](attack-surface-reduction-rules-deployment-plan.md)
+###### [Step 2: Test ASR rules](attack-surface-reduction-rules-deployment-test.md)
+###### [Step 3: Implement ASR rules](attack-surface-reduction-rules-deployment-implement.md)
+###### [Step 4: Operationalize ASR rules](attack-surface-reduction-rules-deployment-operationalize.md)
 ##### [ASR rules reference](attack-surface-reduction-rules-reference.md)
-##### [Enable ASR rules alternate methods](enable-attack-surface-reduction.md)
-#### [Attack surface reduction FAQ](attack-surface-reduction-faq.yml)
+##### [Enable ASR rules alternate configuration methods](enable-attack-surface-reduction.md)
+##### [Attack surface reduction FAQ](attack-surface-reduction-faq.yml)
+#### [Controlled folder access]()
+##### [Protect folders](controlled-folders.md)
+##### [Evaluate controlled folder access](evaluate-controlled-folder-access.md)
+##### [Enable controlled folder access](enable-controlled-folders.md)
+##### [Customize controlled folder access](customize-controlled-folders.md)
+#### [Exploit protection]()
+##### [Protect devices from exploits](exploit-protection.md)
+##### [Exploit protection evaluation](evaluate-exploit-protection.md)
+##### [Enable exploit protection](enable-exploit-protection.md)
+##### [Customize exploit protection](customize-exploit-protection.md)
+##### [Import, export, and deploy exploit protection configurations](import-export-exploit-protection-emet-xml.md)
+##### [Exploit protection reference](exploit-protection-reference.md)
+#### [Network protection]()
+##### [Protect your network](network-protection.md)
+##### [Evaluate network protection](evaluate-network-protection.md)
+##### [Turn on network protection](enable-network-protection.md)
 
 ### Next-generation protection
 #### [Next-generation protection overview](next-generation-protection.md)
@@ -304,8 +324,8 @@
 ##### [Schedule scans using PowerShell](schedule-antivirus-scans-powershell.md)
 ##### [Schedule scans using WMI](schedule-antivirus-scans-wmi.md)
 #### [Use limited periodic scanning in Microsoft Defender Antivirus](limited-periodic-scanning-microsoft-defender-antivirus.md)
-#### [Tune performance of Microsoft Defender Antivirus](tune-performance-defender-antivirus.md)
 #### [Compatibility with other security products](microsoft-defender-antivirus-compatibility.md)
+#### [Find malware detection names for Microsoft Defender for Endpoint](find-defender-malware-name.md)
 
 #### [Get your antivirus and antimalware updates](manage-updates-baselines-microsoft-defender-antivirus.md)
 ##### [Manage the sources for Microsoft Defender Antivirus protection updates](manage-protection-updates-microsoft-defender-antivirus.md)
@@ -343,24 +363,15 @@
 ##### [Exclusions for Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)
 ##### [Common mistakes to avoid](common-exclusion-mistakes-microsoft-defender-antivirus.md)
 
-#### Troubleshooting Microsoft Defender Antivirus
+#### Diagnostics and performance for Microsoft Defender Antivirus
+##### [Device health and compliance reports](machine-reports.md)
+##### [Troubleshoot performance issues related to real-time protection](troubleshoot-performance-issues.md) 
 ##### [Troubleshoot Microsoft Defender Antivirus reporting in Update Compliance](troubleshoot-reporting.md)
-##### [Troubleshoot performance issues](troubleshoot-performance-issues.md)
+##### [Tune performance of Microsoft Defender Antivirus](tune-performance-defender-antivirus.md)
+
+#### Troubleshooting Microsoft Defender Antivirus
 ##### [Review event logs and error codes to troubleshoot issues with Microsoft Defender Antivirus](troubleshoot-microsoft-defender-antivirus.md)
 ##### [Troubleshoot Microsoft Defender Antivirus while migrating from a third-party solution](troubleshoot-microsoft-defender-antivirus-when-migrating.md)
-
-#### [Exploit protection]()
-##### [Protect devices from exploits](exploit-protection.md)
-##### [Exploit protection evaluation](evaluate-exploit-protection.md)
-##### [Enable exploit protection](enable-exploit-protection.md)
-##### [Customize exploit protection](customize-exploit-protection.md)
-##### [Import, export, and deploy exploit protection configurations](import-export-exploit-protection-emet-xml.md)
-##### [Exploit protection reference](exploit-protection-reference.md)
-
-#### [Network protection]()
-##### [Protect your network](network-protection.md)
-##### [Evaluate network protection](evaluate-network-protection.md)
-##### [Turn on network protection](enable-network-protection.md)
 
 #### [Web protection]()
 ##### [Web protection overview](web-protection-overview.md)
@@ -369,12 +380,6 @@
 ###### [Monitor web security](web-protection-monitoring.md)
 ###### [Respond to web threats](web-protection-response.md)
 ##### [Web content filtering](web-content-filtering.md)
-
-#### [Controlled folder access]()
-##### [Protect folders](controlled-folders.md)
-##### [Evaluate controlled folder access](evaluate-controlled-folder-access.md)
-##### [Enable controlled folder access](enable-controlled-folders.md)
-##### [Customize controlled folder access](customize-controlled-folders.md)
 
 #### [Device Control]()
 ##### [Removable Storage Protection](device-control-removable-storage-protection.md)
@@ -419,11 +424,6 @@
 ###### [Investigate connection events that occur behind forward proxies](investigate-behind-proxy.md)
 ##### [Investigate a user account](investigate-user.md)
 
-#### [Devices list]()
-##### [View and organize the Devices list](machines-view-overview.md)
-##### [Device timeline event flags](device-timeline-event-flag.md)
-##### [Manage device group and tags](machine-tags.md)
-
 #### [Take response actions]()
 ##### [Take response actions on a device]()
 ###### [Response actions on devices](respond-machine-alerts.md)
@@ -459,7 +459,6 @@
 #### [Reporting]()
 ##### [Power BI - How to use API - Samples](api-power-bi.md)
 ##### [Threat protection reports](threat-protection-reports.md)
-#### [Device health and compliance reports](machine-reports.md)
 
 ### [Advanced hunting]()
 #### [Advanced hunting overview](advanced-hunting-overview.md)
@@ -554,6 +553,12 @@
 ####### [Get IP related alerts](get-ip-related-alerts.md)
 ####### [Get IP statistics](get-ip-statistics.md)
 
+###### [Live response library]()
+####### [Live response library methods and properties](live-response-library-methods.md)
+####### [List library files](list-library-files.md)
+####### [Upload to live response library](upload-library.md)
+####### [Delete from library](delete-library.md)
+
 
 ###### [Machine]()
 ####### [Machine methods and properties](machine.md)
@@ -646,8 +651,6 @@
 
 #### [SIEM integration]()
 ##### [Integrate SIEM tools with Microsoft Defender for Endpoint](configure-siem.md)
-##### [Microsoft Defender for Endpoint detection fields](api-portal-mapping.md)
-##### [Pull detections using SIEM REST API](pull-alerts-using-rest-api.md)
 ##### [Troubleshoot SIEM tool integration issues](troubleshoot-siem.md)
 
 #### [Partners & APIs]()
@@ -713,7 +716,6 @@
 
 ### [Troubleshoot Microsoft Defender for Endpoint service issues]()
 #### [Troubleshoot service issues](troubleshoot-mdatp.md)
-#### [Check service health](service-status.md)
 #### [Contact Microsoft Defender for Endpoint support](contact-support.md)
 
 ### [Troubleshoot live response issues](troubleshoot-live-response.md)

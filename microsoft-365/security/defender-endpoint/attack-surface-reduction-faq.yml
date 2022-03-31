@@ -11,12 +11,13 @@ metadata:
   audience: ITPro
   author: martyav
   ms.author: dansimp
-  ms.reviewer:
+  ms.reviewer: oogunrinde, sugamar 
   manager: dansimp
   ms.custom: asr
-  ms.topic: article
+  ms.topic: faq
   ms.technology: mde
-  ms.collection: M365-security-compliance
+  ms.collection: m365-security-compliance
+  ms.date: 1/18/2022
 
 title: Attack surface reduction frequently asked questions (FAQ)
 summary: |
@@ -126,6 +127,11 @@ sections:
           * [Block persistence through WMI event subscription](attack-surface-reduction-rules-reference.md#block-persistence-through-wmi-event-subscription)
 
       - question: |
+          Is Local security authority subsystem enabled by default?
+        answer: |
+          The default state for the Attack Surface Reduction (ASR) rule “Block credential stealing from the Windows local security authority subsystem (lsass.exe)” will change from **Not Configured** to **Configured** and the default mode set to **Block**. All other ASR rules will remain in their default state: **Not Configured**. Additional filtering logic has already been incorporated in the rule to reduce end user notifications. Customers can configure the rule to **Audit**, **Warn** or **Disabled** modes, which will override the default mode. The functionality of this rule is the same, whether the rule is configured in the on-by-default mode, or if you enable Block mode manually.  
+
+      - question: |
           What are some good recommendations for getting started with ASR?
         answer: |
           Test how ASR rules will impact your organization before enabling them by running ASR rules in audit mode for a brief period of time. While you are running the rules in audit mode, you can identify any line-of-business applications that might get blocked erroneously, and exclude them from ASR.
@@ -198,12 +204,12 @@ sections:
           Is it a good idea to enable the rule, 'Block credential stealing from the Windows local security authority subsystem (lsass.exe)', alongside LSA protection?
         answer: |
           Enabling this rule will not provide additional protection if you have [LSA protection](/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection#BKMK_HowToConfigure) enabled as well. Both the rule and LSA protection work in much the same way, so having both running at the same time would be redundant. However, sometimes you may not be able to enable LSA protection. In those cases, you can enable this rule to provide equivalent protection against malware that target lsass.exe.
-
+ 
       - question: |
           See also
         answer: |
           * [Attack surface reduction overview](attack-surface-reduction.md)
           * [Evaluate attack surface reduction rules](evaluate-attack-surface-reduction.md)
-          * [Attack surface reduction rules deployment phase 3: implement](attack-surface-reduction-rules-deployment-phase-3.md)
+          * [Attack surface reduction rules deployment Step 3: Implement ASR rules](attack-surface-reduction-rules-deployment-implement.md)
           * [Enable attack surface reduction rules](enable-attack-surface-reduction.md)
           * [Compatibility of Microsoft Defender Antivirus with other antivirus/antimalware](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)

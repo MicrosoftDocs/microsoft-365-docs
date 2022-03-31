@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -37,7 +37,7 @@ Microsoft 365 Defender can help address several aspects of incident prevention:
 - Implementing a [Zero Trust](/security/zero-trust/) framework
 - Determining your security posture by assigning a score with [Microsoft Secure Score](microsoft-secure-score.md)
 - Preventing threats through vulnerability assessments in [Threat and Vulnerability Management](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)
-- Understanding the latest security threats so you can prepare for them
+- Understanding the latest security threats so you can prepare for them with [threat analytics](threat-analytics.md)
 
 ## Step 1. Implement Zero Trust
 
@@ -53,7 +53,7 @@ Automation is a crucial part of implementing and maintaining a Zero Trust enviro
 
 Next, organizations can use the [Microsoft Secure Score](microsoft-secure-score.md) in Microsoft 365 Defender to determine your current security posture and consider recommendations on how to improve it. The higher the score is, the more security recommendations and improvement actions have been taken by the organization. Secure Score recommendations can be taken across different products and allow organizations to raise their scores even higher. 
 
-:::image type="content" source="../../media/first-incident-prepare/first-incident-secure-score.png" alt-text="Example of Microsoft Secure Score in the Microsoft security center.":::
+:::image type="content" source="../../media/first-incident-prepare/first-incident-secure-score.png" alt-text="The Microsoft Secure Score page in the Microsoft 365 Defender portal" lightbox="../../media/first-incident-prepare/first-incident-secure-score.png":::
  
 ## Step 3. Assess your organization’s vulnerability exposure
 
@@ -61,7 +61,7 @@ Preventing incidents can help streamline security operations efforts to focus on
 
 To check your software patching progress, visit the [Threat and Vulnerability Management](../defender-endpoint/next-gen-threat-and-vuln-mgt.md) page in Defender for Endpoint, which you can access from Microsoft 365 Defender through the **More resources** tab.
 
-:::image type="content" source="../../media/first-incident-prepare/first-incident-vulnerability.png" alt-text="Example of the Threat and Vulnerability page in the Microsoft security center."::: 
+:::image type="content" source="../../media/first-incident-prepare/first-incident-vulnerability.png" alt-text="The Threat and Vulnerability page in the  Microsoft 365 Defender portal portal" lightbox="../../media/first-incident-prepare/first-incident-vulnerability.png"::: 
  
 ## 4. Understand emerging threats
 
@@ -77,11 +77,9 @@ Threat analytics also looks at your configuration and alerts to determine how at
 
 You can implement the recommendations of an emerging threat to strengthen your security posture and minimize your attack surface area.
 
-Make time in your schedule to regularly check the [Threat Analytics](threat-analytics.md) section of the Microsoft 365 Defender portal.
+Make time in your schedule to regularly check the [Threat Analytics](threat-analytics.md) section of the Microsoft 365 Defender portal. See the [example security operations for Microsoft 365 Defender](incidents-overview.md#example-security-operations-for-microsoft-365-defender) for more information.
 
 ## Next step
-
-[![Step 1: Learn how to triage and analyze incidents.](../../media/first-incident-overview/first-incident-path-step1.png)](first-incident-analyze.md)
 
 Learn how to [triage and analyze incidents](first-incident-analyze.md).
 

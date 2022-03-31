@@ -7,13 +7,15 @@ ms.author: deniseb
 manager: dansimp 
 audience: ITPro
 ms.topic: overview
-ms.date: 01/03/2022
+ms.date: 01/19/2022
 ms.prod: m365-security
 ms.technology: mdep1
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
-ms.collection: M365-security-compliance
+ms.collection: 
+- M365-security-compliance
+- m365initiative-defender-endpoint
 ms.custom: intro-overview
 ---
 
@@ -30,7 +32,7 @@ Microsoft Defender for Endpoint is an enterprise endpoint security platform desi
 
 The green boxes in the following image depict what's included in Defender for Endpoint Plan 1:
 
-:::image type="content" source="../../media/mde-p1/mde-p1-overview-diagram.png" alt-text="Defender for Endpoint Plan 1 diagram":::
+:::image type="content" source="../../media/mde-p1/mde-p1-overview-diagram.png" alt-text="What's inculded with Defender for Endpoint Plan 1" lightbox="../../media/mde-p1/mde-p1-overview-diagram.png":::
 
 Use this guide to:
 
@@ -124,7 +126,7 @@ To learn more, see [Control USB devices and removable media](control-usb-devices
 With web protection, you can protect your organization’s devices from web threats and unwanted content. Web protection includes web threat protection and web content filtering.
 
 - [Web threat protection](web-threat-protection.md) prevents access to phishing sites, malware vectors, exploit sites, untrusted or low-reputation sites, and sites that you explicitly block.
-- [Web content filtering](web-content-filtering.md) (preview) prevents access to certain sites based on their category. Categories can include adult content, leisure sites, legal liability sites, and more.
+- [Web content filtering](web-content-filtering.md) prevents access to certain sites based on their category. Categories can include adult content, leisure sites, legal liability sites, and more.
 
 To learn more, see [web protection](web-protection-overview.md).
 
@@ -183,6 +185,8 @@ To learn more, see [Defender for Endpoint APIs](management-apis.md).
 
 Most organizations use various devices and operating systems. Currently, Defender for Endpoint Plan 1 supports the following operating systems:
 
+- Windows 7 (ESU required)
+- Windows 8.1
 - Windows 10, version 1709, or later
 - macOS: 11.5 (Big Sur), 10.15.7 (Catalina), or 10.14.6 (Mojave)
 - iOS

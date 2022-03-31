@@ -1,13 +1,13 @@
 ### YamlMime:Hub
 
 title: Microsoft 365 documentation # < 60 chars
-summary: Find the solutions, scenarios, and resources you need to get started with Microsoft 365 for your business or organization.
+summary: Find the solutions, scenarios, and resources you need to get started with Microsoft 365 for your business or organization. Microsoft 365 includes services such as Teams and SharePoint, and Microsoft 365 Apps such as Outlook, Word, Excel, and PowerPoint.
 # brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
 brand: m365
 
 metadata:
   title: Microsoft 365 documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Find the solutions, scenarios, and resources you need to get started with Microsoft 365 for your business or organization. # Required; article description that is displayed in search results. < 160 chars.
+  description: Find the solutions, scenarios, and resources you need to get started with Microsoft 365, including Office, for your business or organization. # Required; article description that is displayed in search results. < 160 chars.
   ms.service: o365-solutions #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: hub-page # Required
   ms.collection: m365-security-compliance
@@ -54,7 +54,7 @@ productDirectory:
           text: Deploy threat protection
         - url: solutions/information-protection-deploy.md
           text: Deploy information protection for data privacy regulations
-        - url: campaigns/index.md
+        - url: business-premium/index.md
           text: Microsoft 365 for smaller businesses and campaigns
     # Card
     - title: Meet and communicate
@@ -221,8 +221,8 @@ additionalContent:
               url: /DeployOffice/plan-microsoft-365-apps
             - text: Office for Mac
               url: /DeployOffice/mac
-            - text: Office 2019
-              url: /DeployOffice/office2019
+            - text: Office LTSC 2021
+              url: /DeployOffice/ltsc2021/overview
             - text: More >
               url: /DeployOffice
         # Card

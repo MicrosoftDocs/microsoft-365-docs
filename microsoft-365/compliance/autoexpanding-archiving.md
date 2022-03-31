@@ -1,9 +1,9 @@
 ---
-title: "Overview of auto-expanding archiving"
+title: "Learn about auto-expanding archiving"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 audience: Admin
 ms.topic: overview
@@ -19,7 +19,7 @@ ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: "Learn about auto-expanding archiving, which provides additional archive storage for Exchange Online mailboxes."
 ---
 
-# Overview of auto-expanding archiving
+# Learn about auto-expanding archiving
 
 In Office 365, archive mailboxes provide users with additional mailbox storage space. After a user's archive mailbox is enabled, up to 100 GB of additional storage is available. In the past, when the 100-GB storage quota was reached, organizations had to contact Microsoft to request additional storage space for an archive mailbox. That's no longer the case.
 
@@ -75,6 +75,10 @@ The following screenshots show a folder list before and after messages are moved
 
 To access messages that are stored in an auto-expanded archive, users have to use one of the following Outlook clients:
 
+- Outlook as a part of Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus)
+
+- Outlook as a part of Microsoft 365 Apps for business (previously named Office 365 Business)
+
 - Outlook 2016 or Outlook 2019 for Windows
 
 - Outlook on the web
@@ -89,9 +93,9 @@ Here are some things to consider when using Outlook or Outlook on the web to acc
 
 - You can delete items in an auto-expanded storage area. However, you can't use the Recover Deleted Items feature to recover an item after auto-expanding archiving is enabled for a mailbox.
 
-- Search for auto-expanded archiving is available in Outlook for the web (OWA). Similar to Online Archive, you can search for items that were moved to an additional storage area. When archive is selected as the search scope in OWA, all archives (including auto-expanded archives) and their corresponding subfolders will be searched.
+- Search for auto-expanded archiving is available in Outlook for the web (OWA). Similar to Online Archive, you can search for items that were moved to an additional storage area. When archive is selected as the search scope in OWA, all archives (including auto-expanded archives) and their corresponding subfolders will be searched. Note that search is not supported for the auto-expanded archive feature in a cloud-only archive situation (primary mailbox still on-premises).
 
-- Auto-expanded archive search is available in Outlook Desktop in Current Channel (Preview). Within this preview, the Current Mailbox scope is available, thus allowing you to search the auto-expanded archive. For more information about this and other Microsoft Search support features, see [How Outlook for Windows connected to Exchange Online utilizes Microsoft Search](https://techcommunity.microsoft.com/t5/outlook-global-customer-service/how-outlook-for-windows-connected-to-exchange-online-utilizes/ba-p/1715045). 
+- Auto-expanded archive search is available in Outlook for Windows in Monthly Enterprise Channel. With this update the Current Mailbox scope is available, thus allowing you to search the auto-expanded archive. Note that search is not supported for the auto-expanded archive feature in a cloud-only archive situation (primary mailbox still on-premises). For more information about this and other Microsoft Search support features, see [How Outlook for Windows connected to Exchange Online utilizes Microsoft Search](https://techcommunity.microsoft.com/t5/outlook-global-customer-service/how-outlook-for-windows-connected-to-exchange-online-utilizes/ba-p/1715045). 
 
 - Item counts in Outlook and Read/Unread counts (in Outlook and Outlook on the web) in an auto-expanded archive might not be accurate.
 
@@ -107,6 +111,8 @@ This section explains the functionality between auto-expanding archiving and oth
 
 - **Import service:** You can use the Office 365 Import service to import PST files to a user's auto-expanded archive. You can import up to 100 GB of data from PST files to the user's archive mailbox.
 
-## More information
+## Next steps
 
 For more technical details about auto-expanding archiving, see [Microsoft 365: Auto-Expanding Archives FAQ](https://techcommunity.microsoft.com/t5/exchange-team-blog/office-365-auto-expanding-archives-faq/ba-p/607784).
+
+If you're ready to enable auto-expanding archiving, see [Enable auto-expanding archiving](enable-autoexpanding-archiving.md).

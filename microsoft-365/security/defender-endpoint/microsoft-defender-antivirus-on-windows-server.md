@@ -13,8 +13,10 @@ ms.reviewer: pahuijbr, shwjha
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.date: 10/18/2021
-ms.collection: M365-security-compliance
+ms.date: 01/26/2022
+ms.collection: 
+- M365-security-compliance
+- m365initiative-defender-endpoint
 ---
 
 # Microsoft Defender Antivirus on Windows Server
@@ -36,7 +38,7 @@ In some instances, Microsoft Defender Antivirus is referred to as *Endpoint Prot
 
 - On Windows Server, [automatic exclusions](configure-server-exclusions-microsoft-defender-antivirus.md) are applied based on your defined Server Role.
 
-- On Windows Server, if you are running a non-Microsoft antivirus/antimalware solution, Microsoft Defender Antivirus does not go into either passive mode or disabled mode automatically. However, you can set Microsoft Defender Antivirus to passive or disabled mode manually.
+- On Windows Server, if you’re running a non-Microsoft antivirus/antimalware solution, Microsoft Defender Antivirus doesn’t go into either passive mode or disabled mode automatically. However, you can set Microsoft Defender Antivirus to passive or disabled mode manually.
 
 ## Setting up Microsoft Defender Antivirus on Windows Server
 
@@ -52,12 +54,12 @@ The process of setting up and running Microsoft Defender Antivirus on a server p
 
 ## Enable the user interface on Windows Server
 
-By default, Microsoft Defender Antivirus is installed and functional on Windows Server. Sometimes, the user interface (GUI) is installed by default, but the GUI is not required. You can use PowerShell, Group Policy, or other methods to manage Microsoft Defender Antivirus.
+By default, Microsoft Defender Antivirus is installed and functional on Windows Server. Sometimes, the user interface (GUI) is installed by default, but the GUI isn’t required. You can use PowerShell, Group Policy, or other methods to manage Microsoft Defender Antivirus.
 
-If the GUI is not installed on your server, and you want to install it, either the **Add Roles and Features** wizard or PowerShell cmdlets.
+If the GUI isn’t installed on your server, and you want to install it, either the **Add Roles and Features** wizard or PowerShell cmdlets.
 
 > [!NOTE]
-> This option is not available for Windows Server 2012 R2. For more information, see [Options to install Microsoft Defender for Endpoint](configure-server-endpoints.md#options-to-install-microsoft-defender-for-endpoint).
+> This option is not available for Windows Server 2012 R2. For more information, see [Options to install Microsoft Defender for Endpoint](configure-server-endpoints.md#options-to-install-the-microsoft-defender-for-endpoint-packages).
 
 ### Turn on the GUI using the Add Roles and Features Wizard
 
@@ -67,7 +69,7 @@ If the GUI is not installed on your server, and you want to install it, either t
 
    In Windows Server 2016, the **Add Roles and Features Wizard** looks like this:
 
-   ![Add roles and feature wizard showing the GUI for Windows Defender option.](images/server-add-gui.png)
+   :::image type="content" source="images/server-add-gui.png" alt-text="The Add roles and feature wizard showing the GUI for Windows Defender option." lightbox="images/server-add-gui.png":::
 
    In Windows Server 2019 and Windows Server 2022, the **Add Roles and Feature Wizard** is similar.
 
@@ -97,7 +99,7 @@ To use PowerShell to install Microsoft Defender Antivirus, run the following cmd
 Install-WindowsFeature -Name Windows-Defender
 ```
 
-Event messages for the antimalware engine included with Microsoft Defender Antivirus can be found in [Microsoft Defender AV Events](troubleshoot-microsoft-defender-antivirus.md).
+Event messages for the antimalware engine included with Microsoft Defender Antivirus can be found in [Microsoft Defender Antivirus Events](troubleshoot-microsoft-defender-antivirus.md).
 
 ## Verify Microsoft Defender Antivirus is running
 
@@ -121,19 +123,25 @@ sc query Windefend
 
 The `sc query` command returns information about the Microsoft Defender Antivirus service. When Microsoft Defender Antivirus is running, the `STATE` value displays `RUNNING`.
 
+To view all the services that aren’t running, run the following PowerShell cmdlet:
+
+```console
+sc query state= all
+```
+
 ## Update antimalware Security intelligence
 
 To get updated antimalware security intelligence, you must have the Windows Update service running. If you use an update management service, like Windows Server Update Services (WSUS), make sure that updates for Microsoft Defender Antivirus Security intelligence are approved for the computers you manage.
 
-By default, Windows Update does not download and install updates automatically on Windows Server 2019 or Windows Server 2022, or Windows Server 2016. You can change this configuration by using one of the following methods:
+By default, Windows Update doesn’t download and install updates automatically on Windows Server 2019 or Windows Server 2022, or Windows Server 2016. You can change this configuration by using one of the following methods:
 
 <br/><br/>
 
 | Method | Description |
 |---|---|
-| **Windows Update** in Control Panel | **Install updates automatically** results in all updates being automatically installed, including Windows Defender Security intelligence updates. <br/><br/> **Download updates but let me choose whether to install them** allows Windows Defender to download and install Security intelligence updates automatically, but other updates are not automatically installed. |
+| **Windows Update** in Control Panel | **Install updates automatically** results in all updates being automatically installed, including Windows Defender Security intelligence updates. <br/><br/> **Download updates but let me choose whether to install them** allows Windows Defender to download and install Security intelligence updates automatically, but other updates aren’t automatically installed. |
 | **Group Policy** | You can set up and manage Windows Update by using the settings available in Group Policy, in the following path: **Administrative Templates\Windows Components\Windows Update\Configure Automatic Updates** |
-| The **AUOptions** registry key | The following two values allow Windows Update to automatically download and install Security intelligence updates: <br/><br/> **4** - **Install updates automatically**. This value results in all updates being automatically installed, including Windows Defender Security intelligence updates. <br/><br/> **3** - **Download updates but let me choose whether to install them**. This value allows Windows Defender to download and install Security intelligence updates automatically, but other updates are not automatically installed. |
+| The **AUOptions** registry key | The following two values allow Windows Update to automatically download and install Security intelligence updates: <br/><br/> **4** - **Install updates automatically**. This value results in all updates being automatically installed, including Windows Defender Security intelligence updates. <br/><br/> **3** - **Download updates but let me choose whether to install them**. This value allows Windows Defender to download and install Security intelligence updates automatically, but other updates aren’t automatically installed. |
 
 To ensure that protection from malware is maintained, we recommend that you enable the following services:
 
@@ -154,7 +162,7 @@ The following table lists the services for Microsoft Defender Antivirus and the 
 
 ## Submit samples
 
-Sample submission allows Microsoft to collect samples of potentially malicious software. To help provide continued and up-to-date protection, Microsoft researchers use these samples to analyze suspicious activities and produce updated antimalware Security intelligence. We collect program executable files, such as .exe files and .dll files. We do not collect files that contain personal data, like Microsoft Word documents and PDF files.
+Sample submission allows Microsoft to collect samples of potentially malicious software. To help provide continued and up-to-date protection, Microsoft researchers use these samples to analyze suspicious activities and produce updated antimalware Security intelligence. We collect program executable files, such as .exe files and .dll files. We don’t collect files that contain personal data, like Microsoft Word documents and PDF files.
 
 ### Submit a file
 
@@ -169,9 +177,9 @@ To enable automatic sample submission, start a Windows PowerShell console as an 
 
 |Setting|Description|
 |---|---|
-| **0** - **Always prompt** | The Microsoft Defender Antivirus service prompts you to confirm submission of all required files. This is the default setting for Microsoft Defender Antivirus, but is not recommended for installations on Windows Server 2016 or 2019, or Windows Server 2022 without a GUI. |
+| **0** - **Always prompt** | The Microsoft Defender Antivirus service prompts you to confirm submission of all required files. This is the default setting for Microsoft Defender Antivirus, but isn’t recommended for installations on Windows Server 2016 or 2019, or Windows Server 2022 without a GUI. |
 | **1**  - **Send safe samples automatically** | The Microsoft Defender Antivirus service sends all files marked as "safe" and prompts for the remainder of the files. |
-| **2** - **Never send** | The Microsoft Defender Antivirus service does not prompt and does not send any files. |
+| **2** - **Never send** | The Microsoft Defender Antivirus service doesn’t prompt and doesn’t send any files. |
 | **3** - **Send all samples automatically** | The Microsoft Defender Antivirus service sends all files without a prompt for confirmation. |
 
 > [!NOTE]
@@ -186,7 +194,7 @@ See [Configure exclusions in Microsoft Defender Antivirus on Windows Server](con
 
 ## Passive mode and Windows Server
 
-If you are using a non-Microsoft antivirus product as your primary antivirus solution on Windows Server, you must set Microsoft Defender Antivirus to passive mode or disabled mode.
+If you’re using a non-Microsoft antivirus product as your primary antivirus solution on Windows Server, you must set Microsoft Defender Antivirus to passive mode or disabled mode.
 
 For more information, see [Install Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md#install-microsoft-defender-antivirus-on-windows-server).
 
@@ -205,9 +213,9 @@ You can set Microsoft Defender Antivirus to passive mode by setting the followin
 
 2. When you get to the **Features** step of the wizard, clear the **Windows Defender Features** option.
 
-    If you clear **Windows Defender** by itself under the **Windows Defender Features** section, you will be prompted to remove the interface option **GUI for Windows Defender**.
+    If you clear **Windows Defender** by itself under the **Windows Defender Features** section, you’ll be prompted to remove the interface option **GUI for Windows Defender**.
 
-    Microsoft Defender Antivirus will still run normally without the user interface, but the user interface cannot be enabled if you disable the core **Windows Defender** feature.
+    Microsoft Defender Antivirus will still run normally without the user interface, but the user interface can’t be enabled if you disable the core **Windows Defender** feature.
 
 ### Turn off the Microsoft Defender Antivirus user interface using PowerShell
 
@@ -219,14 +227,14 @@ Uninstall-WindowsFeature -Name Windows-Defender-GUI
 
 ### Are you using Windows Server 2012 R2 or Windows Server 2016?
 
-You can now run Microsoft Defender Antivirus in passive mode on Windows Server 2012 R2 and and Windows Server 2016. For more information, see [Options to install Microsoft Defender for Endpoint](configure-server-endpoints.md#options-to-install-microsoft-defender-for-endpoint).
+You can now run Microsoft Defender Antivirus in passive mode on Windows Server 2012 R2 and Windows Server 2016. For more information, see [Options to install Microsoft Defender for Endpoint](configure-server-endpoints.md#options-to-install-the-microsoft-defender-for-endpoint-packages).
 
 <br/><br/>
 
 | Procedure | Description |
 |---|---|
 | Disable Microsoft Defender Antivirus using Group Policy | In your Local Group Policy Editor, navigate to **Administrative Template** > **Windows Component** > **Endpoint Protection** > **Disable Endpoint Protection**, and then select **Enabled** > **OK**. |
-| Disable Microsoft Defender Antivirus using a registry key | To use the the [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) registry key, navigate to `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`, and set or create a DWORD entry called `DisableAntiSpyware`. Set its value to `1` (which sets the registry key's value to *true*). |
+| Disable Microsoft Defender Antivirus using a registry key | To use the [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) registry key, navigate to `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`, and set or create a DWORD entry called `DisableAntiSpyware`. Set its value to `1` (which sets the registry key's value to *true*). |
 | Disable Microsoft Defender Antivirus using PowerShell | Use the following PowerShell cmdlet: `Set-MpPreference -DisableRealtimeMonitoring $true` |
 | Uninstall Microsoft Defender Antivirus using PowerShell | Use the following PowerShell cmdlet: `Uninstall-WindowsFeature -Name Windows-Defender` |
 

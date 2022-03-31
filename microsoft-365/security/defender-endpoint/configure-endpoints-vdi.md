@@ -16,7 +16,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
-ms.date: 09/22/2021
+ms.date: 02/14/2022
 ms.technology: mde
 ---
 
@@ -58,7 +58,10 @@ The following steps will guide you through onboarding VDI devices and will highl
 > [!WARNING]
 > For environments where there are low resource configurations, the VDI boot procedure might slow the Defender for Endpoint sensor onboarding.
 
-### For Windows 10, or Windows 11, or Windows Server 2019, or Windows Server 2022
+### For Windows 10, or Windows 11, or Windows Server 2012 R2 and later
+
+> [!NOTE]
+> Windows Server 2016 and Windows Server 2012 R2 will need to be prepared by applying the installation package first using the instructions in [Onboard Windows servers](/microsoft-365/security/defender-endpoint/configure-server-endpoints#windows-server-2012-r2-and-windows-server-2016) for this feature to work.
 
 1.  Open the VDI configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>:
 
@@ -69,8 +72,6 @@ The following steps will guide you through onboarding VDI devices and will highl
     1.  In the **Deployment method** field, select **VDI onboarding scripts for non-persistent endpoints**.
 
     1. Click **Download package** and save the .zip file.
-
-2. Copy the files from the WindowsDefenderATPOnboardingPackage folder extracted from the .zip file into the golden/master image under the path `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`. 
 
 2. Copy the files from the WindowsDefenderATPOnboardingPackage folder extracted from the .zip file into the golden/master image under the path `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`.
     1. If you are implementing multiple entries for each device - one for each session, copy WindowsDefenderATPOnboardingScript.cmd.
@@ -106,7 +107,10 @@ The following steps will guide you through onboarding VDI devices and will highl
 
 7. Use the search function by entering the device name and select **Device** as search type.
 
-## For downlevel SKUs (Windows Server 2008 R2/2012 R2/2016)
+## For downlevel SKUs (Windows Server 2008 R2)
+
+> [!NOTE]
+> These instructions for other Windows server versions also apply if you are running the previous Microsoft Defender for Endpoint for Windows Server 2016 and Windows Server 2012 R2 that requires the MMA. Instructions to migrate to the new unified solution are at [Server migration scenarios in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/server-migration).
 
 > [!NOTE]
 > The following registry is relevant only when the aim is to achieve a 'Single entry for each device'.

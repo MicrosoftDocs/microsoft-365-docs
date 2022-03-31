@@ -32,13 +32,21 @@ A maximum of 1,000 retention labels are supported per tenant.
 
 ## Maximum number of policies per tenant
 
-A single tenant can have a maximum of 10,000 policies (any configuration). This maximum number includes the different policies for retention, and other policies for compliance such as policies for DLP, information barriers, eDiscovery holds, and sensitivity labels.
+A single tenant can have a maximum of 10,000 policies (any configuration). This maximum number includes the different policies for retention, and other policies for compliance such as policies for DLP, information barriers, eDiscovery holds, Litigation holds, In-Place Holds, and sensitivity labels. However, this maximum excludes:
+
+- Auto-labeling policies for SharePoint and OneDrive, unless they are for cloud attachments.
+- Published label policies for SharePoint and OneDrive that delete-only, rather than retain-only, or retain and then delete.
+- Exchange retention policies from [messaging records management (MRM)](/exchange/security-and-compliance/messaging-records-management/messaging-records-management).
 
 Within this 10,000 policies limit, there are also some limits on the maximum number of policies for retention per workload:
 
 - Exchange (any configuration): 1,800
+    - Per mailbox: 25 is the recommended maximum before performance might be impacted; 50 is the supported limit.
 - SharePoint or OneDrive: (all sites automatically included): 13
 - SharePoint or OneDrive (specific locations included or excluded): 2,600
+
+> [!NOTE]
+> These maximum numbers for Exchange and SharePoint are not exclusive to retention but are shared with other types of hold policies that include eDiscovery holds, Litigation holds, and In-Place Holds.
 
 Although retention policies for Microsoft Teams and Yammer use mailboxes to store data for retention purposes, the maximum number of policies for Exchange Online exclude retention policies for Teams and Yammer.
 

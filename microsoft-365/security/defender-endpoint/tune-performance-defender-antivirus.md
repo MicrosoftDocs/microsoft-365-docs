@@ -71,7 +71,7 @@ For more information on command-line parameters and options, see the [New-MpPerf
 
 Based on the query, the user will be able to view data for scan counts, duration (total/min/average/max/median), path, process, and reason for scan. The image below shows sample output for a simple query of the top 10 files for scan impact. 
 
-:::image type="content" source="images/example-output.png" alt-text="Example output for a basic TopFiles query":::
+:::image type="content" source="images/example-output.png" alt-text="Example output for a basic TopFiles query" lightbox="images/example-output.png":::
 
 ### Additional functionality: exporting and converting to CSV and JSON
 
@@ -96,7 +96,7 @@ Microsoft Defender Antivirus performance analyzer has the following prerequisite
 
 - Supported Windows versions: Windows 10, Windows 11, and Windows Server 2016 and above
 - Platform Version: 4.18.2108.7+
-- PowerShell Version: PowerShell Version 5.1
+- PowerShell Version: PowerShell Version 5.1, PowerShell ISE, Remote PowerShell (4.18.2201.10+), PowerShell 7.x (4.18.2201.10+)
 
 ## PowerShell reference
 There are two new PowerShell cmdlets used to tune performance of Microsoft Defender Antivirus: 
@@ -142,6 +142,15 @@ New-MpPerformanceRecording -RecordTo:.\Defender-scans.etl
 
 The above command collects a performance recording and saves it to the specified path: **.\Defender-scans.etl**.
 
+##### Example 2: Collect a performance recording for Remote PowerShell session
+
+```powershell
+$s = New-PSSession -ComputerName Server02 -Credential Domain01\User01
+New-MpPerformanceRecording -RecordTo C:\LocalPathOnServer02\trace.etl -Session $s
+```
+
+The above command collects a performance recording on Server02 (as specified by argument $s of parameter Session) and saves it to the specified path: **C:\LocalPathOnServer02\trace.etl** on Server02.
+
 #### Parameters: New-MpPerformanceRecording
 
 ##### -RecordTo
@@ -150,6 +159,17 @@ Specifies the location in which to save the Microsoft Defender Antimalware perfo
 ```yaml
 Type: String
 Position: Named
+Default value: None
+Accept pipeline input: False 
+Accept wildcard characters: False
+```
+
+##### -Session 
+Specifies the PSSession object in which to create and save the Microsoft Defender Antivirus performance recording. When you use this parameter the RecordTo parameter refers to the local path on the remote machine. Available with Defender platform version 4.18.2201.10.
+
+```yaml
+Type: PSSession[]
+Position: 0
 Default value: None
 Accept pipeline input: False 
 Accept wildcard characters: False

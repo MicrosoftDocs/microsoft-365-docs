@@ -45,8 +45,14 @@
           items: 
             - name: Overview of VPN split tunneling
               href: microsoft-365-vpn-split-tunnel.md
+            - name: Common VPN split tunneling scenarios
+              href: microsoft-365-vpn-common-scenarios.md
             - name: Implementing VPN split tunneling
               href: microsoft-365-vpn-implement-split-tunnel.md
+            - name: Securing Teams media traffic for VPN split tunneling
+              href: microsoft-365-vpn-securing-teams.md
+            - name: Stream and live events in VPN environments
+              href: microsoft-365-vpn-stream-and-live-events.md
             - name: Microsoft 365 optimization for China users
               href: microsoft-365-networking-china.md
             - name: Optimizing Microsoft 365 traffic for remote workers with the native Windows 10 VPN client
@@ -113,20 +119,6 @@
               href: azure-integration.md
             - name: Azure ExpressRoute
               href: azure-expressroute.md
-        - name: Client and services app support
-          items: 
-            - name: Client and services app support
-              href: microsoft-365-client-services-app-support.md
-            - name: Certificate-based authentication
-              href: microsoft-365-client-support-certificate-based-authentication.md
-            - name: Conditional Access
-              href: microsoft-365-client-support-conditional-access.md
-            - name: Multifactor authentication
-              href: microsoft-365-client-support-multi-factor-authentication.md
-            - name: Single sign-on
-              href: microsoft-365-client-support-single-sign-on.md
-            - name: Choose between Basic Mobility Security and Intune
-              href: /office365/securitycompliance/choose-between-mdm-and-intune
         - name: Hybrid modern authentication
           items: 
             - name: Prerequisites for Skype for Business Server and Exchange Server
@@ -191,13 +183,22 @@
       items: 
         - name: Microsoft 365 service health status
           href: microsoft-365-service-health.md
-        - name: Exchange Online monitoring
-          href: microsoft-365-exchange-monitoring.md
+        - name: Microsoft 365 monitoring
+          href: microsoft-365-monitoring.md
           items:
-            - name: Service alerts for Mailbox utilization
-              href: microsoft-365-mailbox-utilization-service-alerts.md
-            - name: Service alerts for MRS source delays
-              href: microsoft-365-mrs-source-delays-service-alerts.md
+            - name: Exchange Online monitoring
+              href: microsoft-365-exchange-monitoring.md
+              items:
+                - name: Service alerts for Mailbox utilization
+                  href: microsoft-365-mailbox-utilization-service-alerts.md
+                - name: Service alerts for MRS source delays
+                  href: microsoft-365-mrs-source-delays-service-alerts.md
+                - name: Service alerts for queued messages for external recipients
+                  href: microsoft-365-external-recipient-service-alerts.md
+            - name: Microsoft 365 Apps monitoring
+              href: microsoft-365-apps-monitoring.md
+            - name: Microsoft 365 Teams monitoring
+              href: microsoft-365-teams-monitoring.md
         - name: Setup guides
           href: setup-guides-for-microsoft-365.md
     - name: Multiple tenants
@@ -271,20 +272,19 @@
           href: o365-data-locations.md
         - name: Data locations for the European Union
           href: eu-data-storage-locations.md
+
 - name: Identity
   items: 
-    - name: Roadmap
-      href: identity-roadmap-microsoft-365.md
-    - name: Plan
+    - name: Overview
+      href: deploy-identity-solution-overview.md
+    - name: Step 1. Determine your identity model
+      href: deploy-identity-solution-identity-model.md
+    - name: Step 2. Protect your privileged accounts
+      href: protect-your-global-administrator-accounts.md
+    - name: Step 3. Protect your user accounts
+      href: microsoft-365-secure-sign-in.md
+    - name: Step 4. Deploy your identity model
       items: 
-        - name: Identity models
-          href: about-microsoft-365-identity.md
-        - name: Hybrid identity
-          href: plan-for-directory-synchronization.md
-    - name: Deploy
-      items: 
-        - name: Protect your global administrator accounts
-          href: protect-your-global-administrator-accounts.md
         - name: Cloud-only identity
           href: cloud-only-identities.md
         - name: Hybrid identity
@@ -320,8 +320,6 @@
                     href: high-availability-federated-authentication-phase-5-configure-federated-authentic.md
               - name: SharePoint Server 2013 Disaster Recovery in Microsoft Azure
                 href: sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md
-        - name: Secure user sign-ins
-          href: microsoft-365-secure-sign-in.md
     - name: Manage
       items: 
         - name: User accounts

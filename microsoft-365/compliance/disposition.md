@@ -44,7 +44,7 @@ Additionally:
 
 - To view the contents of items during the disposition process, add users to the **Content Explorer Content Viewer** role group. If users don't have the permissions from this role group, they can still select a disposition review action to complete the disposition review, but must do so without being able to view the item's contents from the mini-preview pane in the compliance center.
 
-- By default, each person that accesses the **Disposition** page sees only items that they are assigned to review. For a records management administrator to see all items assigned to all users, and all retention labels that are configured for disposition review: Navigate to **Records management settings** > **General** > **Security group for records manager** to select and then enable a mail-enabled security group that contains the administrator accounts.
+- By default, each person that accesses the **Disposition** page sees only items that they are assigned to review. For a records management administrator to see all items assigned to all users, and all retention labels that are configured for disposition review: Navigate to **Records management settings** > **Disposition** to select and then enable a mail-enabled security group that contains the administrator accounts.
     
     Microsoft 365 groups and security groups that aren't mail-enabled don't support this feature and don't display in the list to select. If you need to create a new mail-enabled security group, use the link to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> to create the new group. 
     
@@ -81,7 +81,7 @@ When a disposition review is triggered at the end of the retention period, the r
 
 You can customize the notification email that reviewers receive, including instructions in different languages. For multi-language support, you must specify the translations yourself and this custom text is displayed to all reviewers irrespective of their locale.
 
-Users receive an initial email notification per label at the end of the item's retention period, with a reminder per label once a week of all disposition reviews that they are assigned. They can click the link in the notification and reminder emails to go to the **Disposition** page in the Microsoft 365 compliance center to review the content and take an action. Alternately, the reviewers can go directly to the **Disposition** page in the compliance center. Then:
+Users receive an initial email notification per label at the end of the item's retention period, with a reminder per label once a week of all disposition reviews that they are assigned. They can click the link in the notification and reminder emails to go directly to the **Records management** > **Disposition** page in the Microsoft 365 compliance center to review the content and take an action. Alternately, the reviewers can navigate to this **Disposition** page in the compliance center. Then:
 
 - Reviewers see only the disposition reviews that are assigned to them, whereas administrators who are added to the selected security group for records manager see all disposition reviews.
 
@@ -150,11 +150,11 @@ Example default email notification sent to a reviewer:
 
 You can customize the email messages that are sent to disposition reviewers for the initial notification and then reminders.
 
-From any of the Disposition pages in the compliance center, select **Records management settings**:  
+From any of the Records management pages in the compliance center, select **Records management settings**:  
 
 ![Records management settings.](../media/record-management-settings.png)
 
-Then select the **Disposition notifications** tab, and specify whether you want to use just the default email message, or add your own text to the default message. Your custom text is added to the email instructions after the information about the retention label and before the next steps instructions.
+From the **Disposition** tab, in the **Email notifications for disposition reviews** section, select and specify whether you want to use just the default email message, or add your own text to the default message. Your custom text is added to the email instructions after the information about the retention label and before the next steps instructions.
 
 Text for all languages can be added, but formatting and images are unsupported. URLs and email addresses can be entered as text and depending on the email client, display as hyperlinks or unformatted text in the customized email.
 
@@ -182,14 +182,16 @@ As you can see from the example shown, the actions supported are:
   
 - **Approve disposal**:
     - When this action is selected for an interim stage of disposition review (you have configured multiple stages): The item moves to the next disposition stage.
-    - When this action is selected for the final stage of disposition review, or there is only one stage of disposition: The item is marked as eligible for permanent deletion. The exact timing for that deletion depends on the workload. For more information, see [How retention settings work with content in place](retention.md#how-retention-settings-work-with-content-in-place).
+    - When this action is selected for the final stage of disposition review, or there is only one stage of disposition: The item is marked as eligible for permanent deletion, which a timer job then actions within 7 days. The exact timing for the item to then be permanently deleted depends on the workload. For more information, see [How retention works for SharePoint and OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive) and [How retention works for Exchange](retention-policies-exchange.md#how-retention-works-for-exchange).
+
 - **Relabel**:
     - When this action is selected, the item exits the disposition review process for the original label. The item is then subject to the retention settings of the newly selected retention label.
+
 - **Extend**:
     - When this action is selected, disposition review is effectively suspended until the end of the extended period and then disposition review is triggered again from the first stage.
+
 - **Add reviewers**:
     - When this action is selected, the user is prompted to specify and add other users for review.
-    
     > [!NOTE]
     > This action doesn't automatically grant the [required permissions](#permissions-for-disposition) to the users who are added. If they don't have these permissions, they can't participate in the disposition review.
 
@@ -199,7 +201,7 @@ During a disposition review, the content never moves from its original location,
 
 ## Disposition of records
 
-Use the **Disposition** tab from the **Records management** page to identify:
+From the **Records management** main page > **Disposition** tab, you can identify:
 
 - Items deleted as a result of a disposition review.
 - Items marked as a record or regulatory record that were automatically deleted at the end of their retention period.

@@ -112,12 +112,6 @@ In order to preview new features and provide early feedback, it is recommended t
     sudo rpm --import http://packages.microsoft.com/keys/microsoft.asc
     ```
 
-- Download and make usable all the metadata for the currently enabled yum repositories:
-
-    ```bash
-    yum makecache
-    ```
-
 ### SLES and variants
 
 > [!NOTE]
@@ -305,7 +299,7 @@ Download the onboarding package from Microsoft 365 Defender portal.
 2. In the first drop-down menu, select **Linux Server** as the operating system. In the second drop-down menu, select **Local Script** as the deployment method.
 3. Select **Download onboarding package**. Save the file as WindowsDefenderATPOnboardingPackage.zip.
 
-    ![Microsoft 365 Defender portal screenshot.](images/portal-onboarding-linux.png)
+   :::image type="content" source="images/portal-onboarding-linux.png" alt-text="Downloading an onboarding package in the Microsoft 365 Defender portal" lightbox="images/portal-onboarding-linux.png":::
 
 4. From a command prompt, verify that you have the file, and extract the contents of the archive:
 
@@ -382,6 +376,12 @@ Download the onboarding package from Microsoft 365 Defender portal.
 
         ```bash
         mdatp health --field real_time_protection_enabled
+        ```
+        
+      If it is not enabled, execute the following command:
+      
+       ```bash
+        mdatp config real-time-protection --value enabled
         ```
 
     - Open a Terminal window and execute the following command:

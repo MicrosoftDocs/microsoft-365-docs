@@ -11,15 +11,12 @@ author: denisebmsft
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-  - M365-security-compliance
-  - m365solution-migratetomdatp
-  - m365solution-overview
-  - m365solution-mcafeemigrate
-  - m365solution-symantecmigrate
+ms.collection: 
+- m365solution-scenario
+- M365-security-compliance
 ms.topic: conceptual
 ms.custom: migrationguides
-ms.date: 11/30/2021
+ms.date: 03/28/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
 ---
@@ -94,6 +91,21 @@ Value: `1`
 > For passive mode to work on endpoints running Windows Server 2016 and Windows Server 2012 R2, those endpoints must be onboarded using the instructions in [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016).
 
 For more information, see [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md).
+
+## Microsoft Defender Antivirus seems to be stuck in passive mode
+
+If Microsoft Defender Antivirus is stuck in passive mode, set it to active mode manually by following these steps:
+
+1. On your Windows device, open Registry Editor as an administrator.
+
+2. Go to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.
+
+3. Set or define a **REG_DWORD** entry called `ForceDefenderPassiveMode`, and set its value to `0`.
+
+4. Reboot the device.
+
+> [!IMPORTANT]
+> If you're still having trouble setting Microsoft Defender Antivirus to active mode after following this procedure, [contact support](../../admin/get-help-support.md).
 
 ## I am having trouble re-enabling Microsoft Defender Antivirus on Windows Server 2016
 

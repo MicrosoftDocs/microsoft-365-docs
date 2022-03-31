@@ -32,13 +32,13 @@ description: "Describes how to prepare to provision users to Microsoft 365 by us
 
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
-The benefits to hybrid identity and directory synchronization your organization include:
+If you have chosen the hybrid identity model and configured protection for administrator accounts in [Step 2](protect-your-global-administrator-accounts.md) and user accounts in [Step 3](microsoft-365-secure-sign-in.md) of this solution, your next task is to deploy directory synchronization. The benefits of directory synchronization for your organization include:
 
 - Reducing the administrative programs in your organization
 - Optionally enabling single sign-on scenario
 - Automating account changes in Microsoft 365
 
-For more information about the advantages of using directory synchronization, see [hybrid identity with Azure Active Directory (Azure AD)](/azure/active-directory/hybrid/whatis-hybrid-identity) and [hybrid identity for Microsoft 365](plan-for-directory-synchronization.md).
+For more information about the advantages of using directory synchronization, see [hybrid identity with Azure Active Directory (Azure AD)](/azure/active-directory/hybrid/whatis-hybrid-identity).
 
 However, directory synchronization requires planning and preparation to ensure that your Active Directory Domain Services (AD DS) synchronizes to the Azure AD tenant of your Microsoft 365 subscription with a minimum of errors.
 
@@ -46,6 +46,50 @@ Follow these steps in order for the best results.
 
 > [!NOTE]
 > Non-ASCII characters do not sync for any attributes on the AD DS user account.
+
+## AD DS Preparation
+
+To help ensure a seamless transition to Microsoft 365 by using synchronization, you must prepare your AD DS forest before you begin your Microsoft 365 directory synchronization deployment.
+  
+Your directory preparation should focus on the following tasks:
+
+- Remove duplicate **proxyAddress** and **userPrincipalName** attributes.
+- Update blank and invalid **userPrincipalName** attributes with valid **userPrincipalName** attributes.
+- Remove invalid and questionable characters in the **givenName**, surname ( **sn** ), **sAMAccountName**, **displayName**, **mail**, **proxyAddresses**, **mailNickname**, and **userPrincipalName** attributes. For details about preparing attributes, see [List of attributes that are synced by the Azure Active Directory Sync Tool](https://go.microsoft.com/fwlink/p/?LinkId=396719).
+
+    > [!NOTE]
+    > These are the same attributes that Azure AD Connect synchronizes. 
+  
+## Multi-forest deployment considerations
+
+For multiple forests and SSO options, use a [Custom Installation of Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-install-custom).
+  
+If your organization has multiple forests for authentication (logon forests), we highly recommend the following:
+  
+- **Consider consolidating your forests.** In general, there's more overhead required to maintain multiple forests. Unless your organization has security constraints that dictate the need for separate forests, consider simplifying your on-premises environment.
+- **Use only in your primary logon forest.** Consider deploying Microsoft 365 only in your primary logon forest for your initial rollout of Microsoft 365. 
+
+If you can't consolidate your multi-forest AD DS deployment or are using other directory services to manage identities, you may be able to synchronize these with the help of Microsoft or a partner.
+  
+See [Topologies for Azure AD Connect](/azure/active-directory/hybrid/plan-connect-topologies) for more information.
+  
+## Features that are dependent on directory synchronization
+  
+Directory synchronization is required for the following features and functionality:
+  
+- Azure AD Seamless Single Sign-On (SSO)
+- Skype coexistence
+- Exchange hybrid deployment, including:
+  - Fully shared global address list (GAL) between your on-premises Exchange environment and Microsoft 365.
+  - Synchronizing GAL information from different mail systems.
+  - The ability to add users to and remove users from Microsoft 365 service offerings. This requires the following:
+  - Two-way synchronization must be configured during directory synchronization setup. By default, directory synchronization tools write directory information only to the cloud. When you configure two-way synchronization, you enable write-back functionality so that a limited number of object attributes are copied from the cloud, and then written them back to your local AD DS. Write-back is also referred to as Exchange hybrid mode. 
+  - An on-premises Exchange hybrid deployment
+  - The ability to move some user mailboxes to Microsoft 365 while keeping other user mailboxes on-premises.
+  - Safe senders and blocked senders on-premises are replicated to Microsoft 365.
+  - Basic delegation and send-on-behalf-of email functionality.
+  - You have an integrated on-premises smart card or multi-factor authentication solution.
+- Synchronization of photos, thumbnails, conference rooms, and security groups
 
 ## 1. Directory cleanup tasks
 
@@ -121,6 +165,7 @@ The attributes that you need to prepare are listed here:
   - The attribute value must not contain a space.
   - The attribute value must be unique within the directory.
   - Invalid characters: \< \> ( ) ; , [ ] "
+  - Letters with diacritical marks, such as umlauts, accents, and tildes, are invalid characters.
 
     Note that the invalid characters apply to the characters following the type delimiter and ":", such that SMTP:User@contso.com is allowed, but SMTP:user:M@contoso.com is not.
 
@@ -188,4 +233,4 @@ Also see [How to prepare a non-routable domain (such as .local domain) for direc
 
 ## Next steps
 
-If you have done steps 1 through 5 above, see [Set up directory synchronization](set-up-directory-synchronization.md).
+After you have done 1 through 5 above, see [Set up directory synchronization](set-up-directory-synchronization.md).

@@ -35,7 +35,7 @@ ms.technology: m365d
 Advanced hunting is a query-based threat hunting tool that lets you explore up to 30 days of raw data. You can proactively inspect events in your network to locate threat indicators and entities. The flexible access to data enables unconstrained hunting for both known and potential threats.
 <br><br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bp7O]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4G6DO]
 
 You can use the same threat hunting queries to build custom detection rules. These rules run automatically to check for and then respond to suspected breach activity, misconfigured machines, and other findings.
 

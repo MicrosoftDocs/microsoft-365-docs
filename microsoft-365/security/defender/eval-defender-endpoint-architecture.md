@@ -17,7 +17,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
   - M365-security-compliance
-  - m365solution-overview
+  - m365solution-scenario
   - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
@@ -38,7 +38,7 @@ Before enabling Microsoft Defender for Endpoint, be sure you understand the arch
 
 The following diagram illustrates Microsoft Defender for Endpoint architecture and integrations. 
 
-![Steps for adding Microsoft Defender for Office to the Defender evaluation environment.](../../media/defender/m365-defender-endpoint-architecture.png)
+:::image type="content" source="../../media/defender/m365-defender-endpoint-architecture.png" alt-text="The steps for adding Microsoft Defender for Office to the Defender evaluation environment" lightbox="../../media/defender/m365-defender-endpoint-architecture.png":::
 
 The following table describes the illustration.
 
