@@ -37,7 +37,7 @@ Follow the instructions in the following sections to validate app protection set
   
 ### Check that the app protection settings are working on user devices
 
-After you [set app protection settings for Android or iOS devices](../business-premium/m365bp-app-protection-settings-for-android-and-ios.md)  to protect the apps, you can follow these steps to validate that the settings you chose work. 
+After you [set app protection settings for Android or iOS devices](../../business-premium/m365bp-app-protection-settings-for-android-and-ios.md) to protect the apps, you can follow these steps to validate that the settings you chose work. 
   
 First, make sure that the policy applies to the app in which you're going to validate it.
   
