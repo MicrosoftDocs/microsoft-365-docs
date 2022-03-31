@@ -71,7 +71,7 @@ This article lists the known issues for Microsoft 365 Lighthouse by feature area
 > [!NOTE]
 > GDAP is currently in [technical preview](/partner-center/announcements/2022-february#6) (public preview) to allow partners to assign granular permissions before GDAP is generally available.
 
-Currently, DAP is required to onboard customers to Lighthouse. We recommend also establishing GDAP with your customers to enable more secure delegated access. While DAP and GDAP coexist, GDAP will take precedence for customers where both models are in place. Soon, customers with just GDAP (and no DAP) will be able to onboard to Lighthouse.
+Currently, DAP is required to onboard customers to Lighthouse. We recommend also establishing GDAP with your customers to enable more secure delegated access. While DAP and GDAP coexist, GDAP will take precedence for customers where both models are in place. Soon, customers with just GDAP (and no DAP) will be able to onboard to Lighthouse.<br><br>
 
 | Issue | Description | Solution |
 | ---------------- | ---------------- | ---------------- |
