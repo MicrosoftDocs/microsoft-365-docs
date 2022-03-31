@@ -193,7 +193,7 @@ As you can see from the example shown, the actions supported are:
 - **Add reviewers**:
     - When this action is selected, the user is prompted to specify and add other users for review.
     > [!NOTE]
-        > This action doesn't automatically grant the [required permissions](#permissions-for-disposition) to the users who are added. If they don't have these permissions, they can't participate in the disposition review.
+    > This action doesn't automatically grant the [required permissions](#permissions-for-disposition) to the users who are added. If they don't have these permissions, they can't participate in the disposition review.
 
 Each action taken has a corresponding audit event in the [Disposition review activities](search-the-audit-log-in-security-and-compliance.md#disposition-review-activities) auditing activities group.
 
