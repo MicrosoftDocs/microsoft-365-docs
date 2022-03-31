@@ -33,7 +33,7 @@ sections:
           
       - question: What's the difference between Microsoft 365 Lighthouse and Azure Lighthouse?
         answer: |
-          Microsoft 365 Lighthouse is focused on Microsoft 365 services rather than Azure services. While Azure Lighthouse is built into the Azure portal and allows IT partners to manage multiple tenants for Azure, Microsoft 365 Lighthouse is a standalone portal that helps MSPs manage multiple Microsoft 365 Business Premium , Microsoft 365 E3, or Windows 365 Business customer tenants. For more information about Microsoft 365 Lighthouse, see [Overview of Microsoft 365 Lighthouse](m365-lighthouse-overview.md). For more information about Azure Lighthouse, see [What is Azure Lighthouse?](/azure/lighthouse/overview)
+          Microsoft 365 Lighthouse is focused on Microsoft 365 services rather than Azure services. While Azure Lighthouse is built into the Azure portal and allows IT partners to manage multiple tenants for Azure, Microsoft 365 Lighthouse is a standalone portal that helps MSPs manage multiple Microsoft 365 Business Premium, Microsoft 365 E3, or Windows 365 Business customer tenants. For more information about Microsoft 365 Lighthouse, see [Overview of Microsoft 365 Lighthouse](m365-lighthouse-overview.md). For more information about Azure Lighthouse, see [What is Azure Lighthouse?](/azure/lighthouse/overview)
           
       - question: How much does Microsoft 365 Lighthouse cost?
         answer: |
