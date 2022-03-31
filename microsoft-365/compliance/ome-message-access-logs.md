@@ -20,16 +20,17 @@ description: "Access logs are available for encrypted messages retrieved through
 
 # Encrypted message access log by Advanced Message Encryption
 
-Tracking encrypted messages through the Office 365 Message Encryption (OME) portal lets you determine when custom branded messages are sent, read, and forwarded. To use this feature you must apply a custom branding template to your emails and then enable tracking. See [Add your organization's brand to your encrypted messages](add-your-organization-brand-to-encrypted-messages.md).
+Access logs are available for encrypted messages through the Office 365 Message Encryption (OME) portal that lets your organization determine when messages are read, and forwarded by your external recipients. To ensure logs are available for any external recipients, you should enable tracking and should apply a custom branding template to your emails. See [Add your organization's brand to your encrypted messages](add-your-organization-brand-to-encrypted-messages.md).
 
 ## Enabling message tracking audit logs in PowerShell
 
-This parameter is available only in the cloud-based service.
-The *-EnablePortalTrackingLogs* parameter of Set-IrmConfiguration specifies whether to enable the audit logs of accessing the OME portal. Valid values are:
+Access log can be enabled using Exchange Online PowerShell. The *-EnablePortalTrackingLogs* parameter of Set-IrmConfiguration specifies whether to enable the audit logs of accessing the OME portal. Valid values are:
 - $true: Turn on audit feature.
 - $false: Turn off audit feature
 
 Example: Set-IrmConfiguration -EnablePortalTrackingLogs $true
+
+To learn more, see [Set-IRMConfiguration (ExchangePowerShell)](/powershell/module/exchange/set-irmconfiguration).
 
 ## Message tracking audit information
 
