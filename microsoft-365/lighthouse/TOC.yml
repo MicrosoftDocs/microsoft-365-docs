@@ -12,7 +12,7 @@
   items: 
     - name: Configure portal security
       href: m365-lighthouse-configure-portal-security.md
-    - name: Overview of permissions in Microsoft 365 Lighthouse
+    - name: Overview of permissions
       href: m365-lighthouse-overview-of-permissions.md
     - name: Review audit logs
       href: m365-lighthouse-review-audit-logs.md
