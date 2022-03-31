@@ -11,7 +11,7 @@ search.appverid:
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
-localization_priority: Priority
+ms.localizationpriority: high
 description: Learn how to use advanced metadata search to find items in SharePoint document libraries using SharePoint Syntex.
 ---
 

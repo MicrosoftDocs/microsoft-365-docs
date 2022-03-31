@@ -44,10 +44,6 @@ A variety of reports are available in the Microsoft 365 Defender portal at <http
 
 The Exchange Online Protection (EOP) and Microsoft Defender for Office 365 reports in the Microsoft 365 Defender portal that have been replaced, moved, or deprecated are described in the following table.
 
-<br>
-
-****
-
 |Deprecated report and cmdlets|New report and cmdlets|Message Center ID|Date|
 |---|---|:---:|:---:|
 |**URL trace** <p> Get-URLTrace|[URL protection report](view-reports-for-mdo.md#url-protection-report) <p> [Get-SafeLinksAggregateReport](/powershell/module/exchange/get-safelinksaggregatereport) <br> [Get-SafeLinksDetailReport](/powershell/module/exchange/get-safelinksdetailreport)|MC239999|June 2021|
@@ -58,9 +54,8 @@ The Exchange Online Protection (EOP) and Microsoft Defender for Office 365 repor
 |**Malware detected in email report** <p> Get-MailTrafficReport <br> Get-MailDetailMalwareReport|[Threat protection status report: View data by Email \> Malware](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250530|June 2021|
 |**Spam detection report** <p> Get-MailTrafficReport <br> Get-MailDetailSpamReport|[Threat protection status report: View data by Email \> Spam](#view-data-by-email--spam-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250529|October 2021|
 |Get-AdvancedThreatProtectionDocumentReport <p> Get-AdvancedThreatProtectionDocumentDetail|[Get-ContentMalwareMdoAggregateReport](/powershell/module/exchange/get-contentmalwaremdoaggregatereport) <p> [Get-ContentMalwareMdoDetailReport](/powershell/module/exchange/get-contentmalwaremdodetailreport)|TBA|May 2022|
-|**Exchange transport rule report** <p> Get-MailTrafficPolicyReport <br> Get-MailDetailTransportRuleReport|[Exchange transport rule report in the EAC](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report) <p> no cmdlets|MC316157|April 2022|
+|**Exchange transport rule report** <p> [Get-MailTrafficPolicyReport](/powershell/module/exchange/get-mailtrafficpolicyreport) <br> [Get-MailDetailTransportRuleReport](/powershell/module/exchange/get-maildetailtransportrulereport)|[Exchange transport rule report in the EAC](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report) <p> [Get-MailTrafficPolicyReport](/powershell/module/exchange/get-mailtrafficpolicyreport) <br> [Get-MailDetailTransportRuleReport](/powershell/module/exchange/get-maildetailtransportrulereport)|MC316157|April 2022|
 |Get-MailTrafficTopReport|[Threat protection status report: View data by Email \> Malware](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport) <p> **Note**: There is no replacement for the encryption reporting capabilities in Get-MailTrafficTopReport.|MC315742|April 2022|
-|
 
 ## Compromised users report
 
@@ -69,7 +64,7 @@ The Exchange Online Protection (EOP) and Microsoft Defender for Office 365 repor
 
 The **Compromised users** report shows the number of user accounts that were marked as **Suspicious** or **Restricted** within the last 7 days. Accounts in either of these states are problematic or even compromised. With frequent use, you can use the report to spot spikes, and even trends, in suspicious or restricted accounts. For more information about compromised users, see [Responding to a compromised email account](responding-to-a-compromised-email-account.md).
 
-![Compromised users widget on the Email & collaboration reports page.](../../media/compromised-users-report-widget.png)
+:::image type="content" source="../../media/compromised-users-report-widget.png" alt-text="The Compromised users widget on the Email & collaboration reports page" lightbox="../../media/compromised-users-report-widget.png":::
 
 The aggregate view shows data for the last 90 days and the detail view shows data for the last 30 days.
 
@@ -85,26 +80,36 @@ The details table below the graph shows the following information:
 - **Creation time**
 - **User ID**
 - **Action**
+- **Tags**: For more information about user tags, see [User tags](user-tags.md).
 
 You can filter both the chart and the details table by clicking **Filter** and selecting one or more of the following values in the flyout that appears:
 
 - **Date (UTC)**: **Start date** and **End date**.
 - **Activity**: **Restricted** or **Suspicious**
+- **Tag**: **All** or the specified user tag (including priority accounts).
 
 When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
 
 On the **Compromised users** page, the ![Create schedule icon.](../../media/m365-cc-sc-create-icon.png) **[Create schedule](#schedule-report)**, ![Request report icon.](../../media/m365-cc-sc-download-icon.png) **[Request report](#request-report)**, and ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](#export-report)** buttons are available.
 
-![Report view in the Compromised users report.](../../media/compromised-users-report-activity-view.png)
+:::image type="content" source="../../media/compromised-users-report-activity-view.png" alt-text="The Report view in the Compromised users report" lightbox="../../media/compromised-users-report-activity-view.png":::
 
 ## Exchange transport rule report
 
+The **Exchange transport rule** report shows the effect of mail flow rules (also known as transport rules) on incoming and outgoing messages in your organization.
+
+To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **Exchange transport rule** and then click **View details**. To go directly to the report, open <https://security.microsoft.com/reports/ETRRuleReport>.
+
+:::image type="content" source="../../media/transport-rule-report-widget.png" alt-text="The Exchange transport rule widget on the Email & collaboration reports page" lightbox="../../media/transport-rule-report-widget.png":::
+
+On the **Exchange transport rule report** page, the available charts and data are described in the following sections.
 > [!NOTE]
 > The **Exchange transport rule report** is now available in the EAC. For more information, see [Exchange transport rule report in the new EAC](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report).
 
+
 ### Chart breakdown by Direction
 
-![Direction view for Exchange Transport rules in the Exchange transport rule report.](../../media/transport-rule-report-etr-direction-view.png)
+:::image type="content" source="../../media/transport-rule-report-etr-direction-view.png" alt-text="The Direction view for Exchange Transport rules in the Exchange transport rule report" lightbox="../../media/transport-rule-report-etr-direction-view.png":::
 
 If you select **Chart breakdown by Direction**, the follow charts are available:
 
@@ -134,7 +139,7 @@ On the **Exchange transport rule report** page, the ![Create schedule icon.](../
 
 ### Chart breakdown by Severity
 
-![Severity view for Exchange Transport rules in the Exchange transport rule report.](../../media/transport-rule-report-etr-severity-view.png)
+:::image type="content" source="../../media/transport-rule-report-etr-severity-view.png" alt-text="The Severity view for Exchange Transport rules in the Exchange transport rule report" lightbox="../../media/transport-rule-report-etr-severity-view.png":::
 
 If you select **Chart breakdown by Severity**, the follow charts are available:
 
@@ -174,11 +179,11 @@ The **Mailflow status report** is a smart report that shows information about in
 
 To view the report in the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **Mailflow status summary** and then click **View details**. To go directly to the report, open <https://security.microsoft.com/reports/mailflowStatusReport>.
 
-![Mailflow status summary widget on the Email & collaboration reports page.](../../media/mail-flow-status-report-widget.png)
+:::image type="content" source="../../media/mail-flow-status-report-widget.png" alt-text="The Mailflow status summary widget on the Email & collaboration reports page" lightbox="../../media/mail-flow-status-report-widget.png":::
 
 ### Type view for the Mailflow status report
 
-![Type view in the Mailflow status report.](../../media/mail-flow-status-report-type-view.png)
+:::image type="content" source="../../media/mail-flow-status-report-type-view.png" alt-text="The Type view in the Mailflow status report" lightbox="../../media/mail-flow-status-report-type-view.png":::
 
 On the **Mailflow status report** page, the **Type** tab is selected by default. The chart shows the following information for the specified date range:
 
@@ -225,7 +230,7 @@ On the **Mailflow status report** page, the ![Create schedule icon.](../../media
 
 ### Direction view for the Mailflow status report
 
-![Direction view in the Mailflow status report.](../../media/mail-flow-status-report-direction-view.png)
+:::image type="content" source="../../media/mail-flow-status-report-direction-view.png" alt-text="The Direction view in the Mailflow status report" lightbox="../../media/mail-flow-status-report-direction-view.png":::
 
 If you click the **Direction** tab, the chart shows the following information for the specified date range:
 
@@ -259,7 +264,7 @@ On the **Mailflow status report** page, the ![Create schedule icon.](../../media
 
 The **Mailflow** view shows you how Microsoft's email threat protection features filter incoming and outgoing email in your organization. This view uses a horizontal flow diagram (known as a _Sankey_ diagram) to provide details on the total email count, and how the configured threat protection features, including edge protection, anti-malware, anti-phishing, anti-spam, and anti-spoofing affect this count.
 
-![Mailflow view in the Mailflow status report.](../../media/mail-flow-status-report-mailflow-view.png)
+:::image type="content" source="../../media/mail-flow-status-report-mailflow-view.png" alt-text="The Mailflow view in the Mailflow status report" lightbox="../../media/mail-flow-status-report-mailflow-view.png":::
 
 The aggregate view and details table view allow for 90 days of filtering.
 
@@ -285,7 +290,7 @@ If you hover over a horizontal band in the diagram, you'll see the number of rel
 
 <sup>\*</sup> If you click on this element, the diagram is expanded to show further details. For a description of each element in the expanded nodes, see [Detection technologies](/office/office-365-management-api/office-365-management-activity-api-schema#detection-technologies).
 
-![Phishing block details in Mailflow view in the Mailflow status report.](../../media/mail-flow-status-report-mailflow-view-details.png)
+:::image type="content" source="../../media/mail-flow-status-report-mailflow-view-details.png" alt-text="The Phishing block details in Mailflow view in the Mailflow status report" lightbox="../../media/mail-flow-status-report-mailflow-view-details.png":::
 
 The details table below the diagram shows the following information:
 
@@ -311,7 +316,7 @@ When you're finished configuring the filters, click **Apply**, **Cancel**, or **
 
 Back on the **Mailflow status report** page, you can click **Show trends** to see trend graphs in the **Mailflow trends** flyout that appears.
 
-![Mailflow trends flyout in Mailflow view in the Mailflow status report.](../../media/mail-flow-status-report-mailflow-view-show-trends.png)
+:::image type="content" source="../../media/mail-flow-status-report-mailflow-view-show-trends.png" alt-text="The Mailflow trends flyout in Mailflow view in the Mailflow status report" lightbox="../../media/mail-flow-status-report-mailflow-view-show-trends.png":::
 
 On the **Mailflow status report** page, the ![Export icon.](../../media/m365-cc-sc-download-icon.png) **Export** button is available.
 
@@ -335,9 +340,9 @@ The **Spoof detections** report shows information about messages that were block
 
 The aggregate view of the report allows for 90 days of filtering, while the detail view only allows for ten days of filtering.
 
-To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **Spoof detections** and then click **View details**. To go directly to the report, open <https://security.microsoft.com/reports/SpoofMailReportV2>.
+To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **Spoof detections** and then click **View details**. To go directly to the report, open <https://security.microsoft.com/reports/SpoofMailReport>.
 
-![Spoof detections widget on the Email & collaboration reports page.](../../media/spoof-detections-widget.png)
+:::image type="content" source="../../media/spoof-detections-widget.png" alt-text="The Spoof detections widget on the Email & collaboration reports page" lightbox="../../media/spoof-detections-widget.png":::
 
 The chart shows the following information:
 
@@ -360,7 +365,7 @@ You can filter both the chart and the details table by clicking **Filter** and s
   - **Other**
 - **Spoof type**: **Internal** and **External**
 
-![Spoof mail report page in the Microsoft 365 Defender portal.](../../media/spoof-detections-report-page.png)
+:::image type="content" source="../../media/spoof-detections-report-page.png" alt-text="The Spoof mail report page in the Microsoft 365 Defender portal" lightbox="../../media/spoof-detections-report-page.png":::
 
 The details table below the graph shows the following information:
 
@@ -385,7 +390,7 @@ The **Submissions** report shows information about items that admins have report
 
 To view the report in the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **Submissions** and then click **View details**. To go directly to the report, open <https://security.microsoft.com/adminSubmissionReport>. To go to [admin submissions in the Microsoft 365 Defender portal](admin-submission.md), click **Go to Submissions**. Admins will be able to view the report for last 30 days.
 
-![Submissions widget on the Email & collaboration reports page.](../../media/submissions-report-widget.png)
+:::image type="content" source="../../media/submissions-report-widget.png" alt-text="The Submissions widget on the Email & collaboration reports page" lightbox="../../media/submissions-report-widget.png":::
 
 The chart shows the following information:
 
@@ -417,7 +422,7 @@ The details table below the graph shows the same information and has the same **
 
 On the **Submissions** page, the **[Export](#export-report)** button is available.
 
-![Submissions report page in the Microsoft 365 Defender portal.](../../media/submissions-report-page.png)
+:::image type="content" source="../../media/submissions-report-page.png" alt-text="The Submissions report page in the Microsoft 365 Defender portal" lightbox="../../media/submissions-report-page.png":::
 
 ## Threat protection status report
 
@@ -432,7 +437,7 @@ To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **
 - Defender for Office 365: <https://security.microsoft.com/reports/TPSAggregateReportATP>
 - EOP: <https://security.microsoft.com/reports/TPSAggregateReport>
 
-![Threat protection status widget on the Email & collaboration reports page.](../../media/threat-protection-status-report-widget.png)
+:::image type="content" source="../../media/threat-protection-status-report-widget.png" alt-text="The Threat protection status widget on the Email & collaboration reports page" lightbox="../../media/threat-protection-status-report-widget.png":::
 
 By default, the chart shows data for the past 7 days. If you click **Filter** on the **Threat protection status report** page, you can select a 90 day date range (trial subscriptions might be limited to 30 days). The details table allows filtering for 30 days.
 
@@ -440,7 +445,7 @@ The available views are described in the following sections.
 
 ### View data by Overview
 
-![Overview view in the Threat protection status report.](../../media/threat-protection-status-report-overview-view.png)
+:::image type="content" source="../../media/threat-protection-status-report-overview-view.png" alt-text="The Overview view in the Threat protection status report" lightbox="../../media/threat-protection-status-report-overview-view.png":::
 
 In the **View data by Overview** view, the following detection information is shown in the chart:
 
@@ -479,7 +484,7 @@ When you're finished configuring the filters, click **Apply**, **Cancel**, or **
 
 ### View data by Email \> Phish and Chart breakdown by Detection Technology
 
-![Detection technology view for phishing email in the Threat protection status report.](../../media/threat-protection-status-report-phishing-detection-tech-view.png)
+:::image type="content" source="../../media/threat-protection-status-report-phishing-detection-tech-view.png" alt-text="The Detection technology view for phishing email in the Threat protection status report" lightbox="../../media/threat-protection-status-report-phishing-detection-tech-view.png":::
 
 > [!NOTE]
 > Starting in May 2021, phishing detections in email were updated to include **message attachments** that contain phishing URLs. This change might shift some of the detection volume out of the **View data by Email \> Malware** view and into the **View data by Email \> Phish** view. In other words, message attachments with phishing URLs that were traditionally identified as malware now might be identified as phishing instead.
@@ -516,7 +521,7 @@ In the details table below the chart, the following information is available:
 - **Detection technology**
 - **Delivery status**
 - **Sender IP**
-- **Tags**
+- **Tags**: For more information about user tags, see [User tags](user-tags.md).
 
 If you click **Filter**, the following filters are available:
 
@@ -527,7 +532,7 @@ If you click **Filter**, the following filters are available:
   - **All**
   - **Inbound**
   - **Outbound**
-- **Tag**: **All** or the specified user tag (including priority accounts). For more information about user tags, see [User tags](user-tags.md).
+- **Tag**: **All** or the specified user tag (including priority accounts).
 - **Domain**: **All** or an [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 - **Policy type**:
   - **All**
@@ -546,7 +551,7 @@ On the **Threat protection status** page, the ![Create schedule icon.](../../med
 
 ### View data by Email \> Spam and Chart breakdown by Detection Technology
 
-![Detection technology view for spam in the Threat protection status report.](../../media/threat-protection-status-report-spam-detection-tech-view.png)
+:::image type="content" source="../../media/threat-protection-status-report-spam-detection-tech-view.png" alt-text="The Detection technology view for spam in the Threat protection status report" lightbox="../../media/threat-protection-status-report-spam-detection-tech-view.png":::
 
 In the **View data by Email \> Spam** and **Chart breakdown by Detection Technology** view, the following information is shown in the chart:
 
@@ -568,7 +573,7 @@ In the details table below the chart, the following information is available:
 - **Detection technology**
 - **Delivery status**
 - **Sender IP**
-- **Tags**
+- **Tags**: For more information about user tags, see [User tags](user-tags.md).
 
 If you click **Filter**, the following filters are available:
 
@@ -578,7 +583,7 @@ If you click **Filter**, the following filters are available:
   - **All**
   - **Inbound**
   - **Outbound**
-- **Tag**: **All** or the specified user tag (including priority accounts). For more information about user tags, see [User tags](user-tags.md).
+- **Tag**: **All** or the specified user tag (including priority accounts).
 - **Domain**: **All** or an [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 - **Policy type**:
   - **All**
@@ -597,7 +602,7 @@ On the **Threat protection status** page, the ![Create schedule icon.](../../med
 
 ### View data by Email \> Malware and Chart breakdown by Detection Technology
 
-![Detection technology view for malware in the Threat protection status report.](../../media/threat-protection-status-report-malware-detection-tech-view.png)
+:::image type="content" source="../../media/threat-protection-status-report-malware-detection-tech-view.png" alt-text="The Detection technology view for malware in the Threat protection status report" lightbox="../../media/threat-protection-status-report-malware-detection-tech-view.png":::
 
 > [!NOTE]
 > Starting in May 2021, malware detections in email were updated to include **harmful URLs** in messages attachments. This change might shift some of the detection volume out of the **View data by Email \> Phish** view and into the **View data by Email \> Malware** view. In other words, harmful URLs in message attachments that were traditionally identified as phishing now might be identified as malware instead.
@@ -623,7 +628,7 @@ In the details table below the chart, the following information is available:
 - **Detection technology**
 - **Delivery Status**
 - **Sender IP**
-- **Tags**
+- **Tags**: For more information about user tags, see [User tags](user-tags.md).
 
 If you click **Filter**, the following filters are available:
 
@@ -634,7 +639,7 @@ If you click **Filter**, the following filters are available:
   - **All**
   - **Inbound**
   - **Outbound**
-- **Tag**: **All** or the specified user tag (including priority accounts). For more information about user tags, see [User tags](user-tags.md).
+- **Tag**: **All** or the specified user tag (including priority accounts).
 - **Domain**: **All** or an [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 - **Policy type**:
   - **All**
@@ -653,7 +658,7 @@ On the**Threat protection status** page, the ![Create schedule icon.](../../medi
 
 ### Chart breakdown by Policy type
 
-![Policy type view for phishing email, spam email, or malware email in the Threat protection status report.](../../media/threat-protection-status-report-phishing-policy-type-view.png)
+:::image type="content" source="../../media/threat-protection-status-report-phishing-policy-type-view.png" alt-text="The Policy type view for phishing email, spam email, or malware email in the Threat protection status report" lightbox="../../media/threat-protection-status-report-phishing-policy-type-view.png":::
 
 In the **View data by Email \> Phish**, **View data by Email \> Spam**, or **View data by Email \> Malware** views, selecting **Chart breakdown by Policy type** shows the following information in the chart:
 
@@ -673,7 +678,7 @@ In the details table below the chart, the following information is available:
 - **Detection technology**
 - **Delivery status**
 - **Sender IP**
-- **Tags**
+- **Tags**: For more information about user tags, see [User tags](user-tags.md).
 
 If you click **Filter**, the following filters are available:
 
@@ -702,7 +707,7 @@ If you click **Filter**, the following filters are available:
   - **All**
   - **Inbound**
   - **Outbound**
-- **Tag**: **All** or the specified user tag (including priority accounts). For more information about user tags, see [User tags](user-tags.md).
+- **Tag**: **All** or the specified user tag (including priority accounts).
 - **Domain**: **All** or an [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 - **Policy type**:
   - **All**
@@ -723,7 +728,7 @@ On the **Threat protection status** page, the ![Create schedule icon.](../../med
 
 ### Chart breakdown by Delivery status
 
-![Delivery status view for phishing email and malware email in the Threat protection status report.](../../media/threat-protection-status-report-phishing-delivery-status-view.png)
+:::image type="content" source="../../media/threat-protection-status-report-phishing-delivery-status-view.png" alt-text="The Delivery status view for phishing email and malware email in the Threat protection status report" lightbox="../../media/threat-protection-status-report-phishing-delivery-status-view.png":::
 
 In the **View data by Email \> Phish**, **View data by Email \> Spam**, or **View data by Email \> Malware** views, selecting **Chart breakdown by Delivery status** shows the following information in the chart:
 
@@ -746,7 +751,7 @@ In the details table below the chart, the following information is available:
 - **Detection technology**
 - **Delivery status**
 - **Sender IP**
-- **Tags**
+- **Tags**: For more information about user tags, see [User tags](user-tags.md).
 
 If you click **Filter**, the following filters are available:
 
@@ -775,7 +780,7 @@ If you click **Filter**, the following filters are available:
   - **All**
   - **Inbound**
   - **Outbound**
-- **Tag**: **All** or the specified user tag (including priority accounts). For more information about user tags, see [User tags](user-tags.md).
+- **Tag**: **All** or the specified user tag (including priority accounts).
 - **Domain**: **All** or an [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 - **Policy type**:
   - **All**
@@ -796,7 +801,7 @@ On the **Threat protection status** page, the ![Create schedule icon.](../../med
 
 ### View data by Content \> Malware
 
-![Content malware view in the Threat protection status report.](../../media/threat-protection-status-report-content-malware-view.png)
+:::image type="content" source="../../media/threat-protection-status-report-content-malware-view.png" alt-text="The Content malware view in the Threat protection status report" lightbox="../../media/threat-protection-status-report-content-malware-view.png":::
 
 In the **View data by Content \> Malware** view, the following information is shown in the chart for Microsoft Defender for Office 365 organizations:
 
@@ -825,7 +830,7 @@ On the **Threat protection status** page, the ![Create schedule icon.](../../med
 
 ### View data by System override and Chart breakdown by Reason
 
-![Message override and Chart breakdown by Reason view in the Threat protection status report.](../../media/threat-protection-status-report-system-override-view-breakdown-by-reason.png)
+:::image type="content" source="../../media/threat-protection-status-report-system-override-view-breakdown-by-reason.png" alt-text="The Message override and Chart breakdown by Reason view in the Threat protection status report" lightbox="../../media/threat-protection-status-report-system-override-view-breakdown-by-reason.png":::
 
 In the **View data by System override** and **Chart breakdown by Reason** view, the following override reason information is shown in the chart:
 
@@ -848,7 +853,7 @@ In the details table below the chart, the following information is available:
 - **Recipients**
 - **System override**
 - **Sender IP**
-- **Tags**
+- **Tags**: For more information about user tags, see [User tags](user-tags.md).
 
 If you click **Filter**, the following filters are available:
 
@@ -859,7 +864,7 @@ If you click **Filter**, the following filters are available:
   - **All**
   - **Inbound**
   - **Outbound**
-- **Tag**: **All** or the specified user tag (including priority accounts). For more information about user tags, see [User tags](user-tags.md).
+- **Tag**: **All** or the specified user tag (including priority accounts).
 - **Domain**: **All** or an [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 - **Policy type**: **All**
 - **Policy name (details table view only)**: **All**
@@ -871,7 +876,7 @@ On the **Threat protection status** page, the ![Export icon.](../../media/m365-c
 
 ### View data by System override and Chart breakdown by Delivery location
 
-![Message override and Chart breakdown by Delivery Location view in the Threat protection status report.](../../media/threat-protection-status-report-system-override-view-breakdown-by-delivery-location.png)
+:::image type="content" source="../../media/threat-protection-status-report-system-override-view-breakdown-by-delivery-location.png" alt-text="The Message override and Chart breakdown by Delivery Location view in the Threat protection status report" lightbox="../../media/threat-protection-status-report-system-override-view-breakdown-by-delivery-location.png":::
 
 In the **View data by System override** and **Chart breakdown by Delivery location** view, the following override reason information is shown in the chart:
 
@@ -886,7 +891,7 @@ In the details table below the chart, the following information is available:
 - **Recipients**
 - **System override**
 - **Sender IP**
-- **Tags**
+- **Tags**: For more information about user tags, see [User tags](user-tags.md).
 
 If you click **Filter**, the following filters are available:
 
@@ -932,7 +937,7 @@ The **Top malware** report shows the various kinds of malware that was detected 
 
 To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **Top malware** and then click **View details**. To go directly to the report, open <https://security.microsoft.com/reports/TopMalware>.
 
-![Top malware widget on the Email & collaboration reports page.](../../media/top-malware-report-widget.png)
+:::image type="content" source="../../media/top-malware-report-widget.png" alt-text="The Top malware widget on the Email & collaboration reports page" lightbox="../../media/top-malware-report-widget.png":::
 
 When you hover over a wedge in the pie chart, you can see the name of a kind of malware and how many messages were detected as having that malware.
 
@@ -945,7 +950,7 @@ If you click **Filter**, you can specify a date range with **Start date** and **
 
 On the **Top malware** page, the ![Create schedule icon.](../../media/m365-cc-sc-create-icon.png) **[Create schedule](#schedule-report)** and ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](#export-report)** buttons are available.
 
-![Top malware report view.](../../media/top-malware-report-view.png)
+:::image type="content" source="../../media/top-malware-report-view.png" alt-text="The Top malware report view" lightbox="../../media/top-malware-report-view.png":::
 
 ## Top senders and recipients report
 
@@ -958,7 +963,7 @@ To view the report in the Microsoft 365 Defender portal at <https://security.mic
 - Defender for Office 365: <https://security.microsoft.com/reports/TopSenderRecipientsATP>
 - EOP: <https://security.microsoft.com/reports/TopSenderRecipient>
 
-![Top senders and recipients widget in the Reports dashboard.](../../media/top-senders-and-recipients-widget.png)
+:::image type="content" source="../../media/top-senders-and-recipients-widget.png" alt-text="The Top senders and recipients widget in the Reports dashboard" lightbox="../../media/top-senders-and-recipients-widget.png":::
 
 When you hover over a wedge in the pie chart, you can see the number of messages for the sender or recipient.
 
@@ -984,7 +989,7 @@ When you're finished configuring the filters, click **Apply**, **Cancel**, or **
 
 On the **Top senders and recipients** page, the ![Export icon.](../../media/m365-cc-sc-download-icon.png) **Export** button is available.
 
-![Show data for Top mail senders view in the Top senders and recipients report.](../../media/top-senders-and-recipients-report-view.png)
+:::image type="content" source="../../media/top-senders-and-recipients-report-view.png" alt-text="The Show data for Top mail senders view in the Top senders and recipients report" lightbox="../../media/top-senders-and-recipients-report-view.png":::
 
 ## URL protection report
 
@@ -999,7 +1004,7 @@ The **User reported messages** report shows information about email messages tha
 
 To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **User reported messages** and then click **View details**. To go directly to the report, open <https://security.microsoft.com/reports/userSubmissionReport>. To go to [admin submissions in the Microsoft 365 Defender portal](admin-submission.md), click **Go to Submissions**.
 
-![User reported messages widget on the Email & collaboration reports page.](../../media/user-reported-messages-widget.png)
+:::image type="content" source="../../media/user-reported-messages-widget.png" alt-text="The user-reported messages widget on the Email & collaboration reports page" lightbox="../../media/user-reported-messages-widget.png":::
 
 You can filter both the chart and the details table by clicking **Filter** and selecting one or more of the following values in the flyout that appears:
 
@@ -1026,7 +1031,7 @@ To group the entries, click **Group** and select one of the following values fro
 - **Rescan result**
 - **Phish simulation**
 
-![User reported messages report.](../../media/user-reported-messages-report.png)
+:::image type="content" source="../../media/user-reported-messages-report.png" alt-text="The user-reported messages report" lightbox="../../media/user-reported-messages-report.png":::
 
 The details table below the graph shows the following information:
 
@@ -1036,7 +1041,7 @@ The details table below the graph shows the following information:
 - **Sender**
 - **Reported reason**
 - **Rescan result**
-- **Tags**
+- **Tags**: For more information about user tags, see [User tags](user-tags.md).
 
 To submit a message to Microsoft for analysis, select the message entry from the table, click **Submit to Microsoft for analysis** and then select one of the following values from the drop down list:
 
