@@ -367,7 +367,7 @@
     },
     {
       "source_path": "microsoft-365/business/create-and-edit-autopilot-devices.md",
-      "redirect_url": "/microsoft-365/admin/devices/create-and-edit-autopilot-devices",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-create-and-edit-autopilot-devices",
       "redirect_document_id": true
     },
     {
@@ -387,7 +387,7 @@
     },
     {
       "source_path": "microsoft-365/business/autopilot-profile-settings.md",
-      "redirect_url": "/microsoft-365/admin/devices/autopilot-profile-settings",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-autopilot-profile-settings",
       "redirect_document_id": true
     },
     {
@@ -6779,13 +6779,13 @@
     "redirect_document_id": false
     },
     {
-    "source_path": "old.md",
-    "redirect_url": "new",
+    "source_path": "microsoft-365/admin/devices/autopilot-profile-settings.md",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-autopilot-profile-settings",
     "redirect_document_id": false
     },
     {
-    "source_path": "old.md",
-    "redirect_url": "new",
+    "source_path": "microsoft-365/admin/devices/create-and-edit-autopilot-devices.md",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-create-and-edit-autopilot-devices",
     "redirect_document_id": false
     },
     {
