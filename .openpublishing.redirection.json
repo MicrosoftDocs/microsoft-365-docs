@@ -6834,8 +6834,18 @@
     "redirect_document_id": false
     },
     {
-    "source_path": "old.md",
-    "redirect_url": "new",
+    "source_path": "microsoft-365/admin/setup/manage-windows-devices.md",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-manage-windows-devices",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "microsoft-365/admin/devices/protection-settings-for-windows-10-pcs.md",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-protection-settings-for-windows-10-pcs",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "microsoft-365/admin/security-and-compliance/set-up-compliance.md",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-set-up-compliance",
     "redirect_document_id": false
     }
   ]
