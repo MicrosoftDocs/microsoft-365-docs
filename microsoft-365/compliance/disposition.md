@@ -181,21 +181,25 @@ If you use the horizontal scroll bar, or close the min-review pane, you see more
 As you can see from the example shown, the actions supported are: 
   
 - **Approve disposal**:
+    
     - When this action is selected for an interim stage of disposition review (you have configured multiple stages): The item moves to the next disposition stage.
     
     - When this action is selected for the final stage of disposition review, or there is only one stage of disposition: The item is marked as eligible for permanent deletion, which a timer job then actions within 7 days. The exact timing for the item to then be permanently deleted depends on the workload. For more information, see [How retention works for SharePoint and OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive) and [How retention works for Exchange](retention-policies-exchange.md#how-retention-works-for-exchange).
 
 - **Relabel**:
+    
     - When this action is selected, the item exits the disposition review process for the original label. The item is then subject to the retention settings of the newly selected retention label.
 
 - **Extend**:
+    
     - When this action is selected, disposition review is effectively suspended until the end of the extended period and then disposition review is triggered again from the first stage.
 
 - **Add reviewers**:
-    - When this action is selected, the user is prompted to specify and add other users for review.
     
-    > [!NOTE]
-    > This action doesn't automatically grant the [required permissions](#permissions-for-disposition) to the users who are added. If they don't have these permissions, they can't participate in the disposition review.
+    - When this action is selected, the user is prompted to specify and add other users for review.
+        
+        > [!NOTE]
+        > This action doesn't automatically grant the [required permissions](#permissions-for-disposition) to the users who are added. If they don't have these permissions, they can't participate in the disposition review.
 
 Each action taken has a corresponding audit event in the [Disposition review activities](search-the-audit-log-in-security-and-compliance.md#disposition-review-activities) auditing activities group.
 
