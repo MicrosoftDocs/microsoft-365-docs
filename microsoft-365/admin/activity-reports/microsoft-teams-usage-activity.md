@@ -85,6 +85,19 @@ The Teams usage chart shows data on the following metrics.
 |Item|Description|
 |:-----|:-----|
 |**Metric**|**Definition**|
+|Private teams    <br/> |A private team that is either active or inactive.  |
+|Public teams     <br/> |A public team that is either active or inactive.  |
+|Active private teams      <br/> |A team that is private and active.  |
+|Active public teams      <br/> |A team that is public and active.   |
+|||
+
+### Teams details
+
+Data for following metrics are available for individual teams.
+
+|Item|Description|
+|:-----|:-----|
+|**Metric**|**Definition**|
 |Team ID  <br/> |Team identifier <br/>|  
 |Internal active users   <br/> |Users that have at least one panel action in the specified time period including guests. <br/> <br/> Internal users and guests that reside in the same tenant. Internal users exclude guests.   |
 |Active guests     <br/> |Guests that have at least one panel action in the specified time period. <br/> <br/> A guest is defined as persons from outside your organization who accesses shared resources by signing in to a guest account in my directory.   |
@@ -102,19 +115,10 @@ The Teams usage chart shows data on the following metrics.
 |||
 
 
-### Teams details
 
-Data for following metrics are available for individual teams.
 
-|Item|Description|
-|:-----|:-----|
-|**Metric**|**Definition**|
-|Posts    <br/> |Count of all the post messages in channels in the specified time period.  |
-|Replies     <br/> |Count of all the reply messages in channels in the specified time period.  |
-|Urgent messages      <br/> |Count of urgent messages in the specified time period.  |
-|Tenant name      <br/> |Tenant name of this user’s origin.   |
-|Host tenant name      <br/> |Tenant names of this user all involved shared channel origin.   |
-|||
+
+
 
 ## See also
 [Microsoft Teams device usage report](../activity-reports/microsoft-teams-device-usage-preview.md)

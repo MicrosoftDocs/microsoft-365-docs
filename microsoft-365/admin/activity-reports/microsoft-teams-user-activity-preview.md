@@ -32,9 +32,9 @@ The Microsoft 365 Reports dashboard shows you the activity overview across the p
 
 ## Interpret the Microsoft Teams user activity report
 
-You can view the user activity in the Teams report by choosing the **User activity** tab. <br/>![Microsoft 365 reports - Microsoft Teams user activity.](../../media/1011877f-3cf0-4417-9447-91d0b2312aab.png)
+You can view the user activity in the Teams report by choosing the **User activity** tab. <br/>![Microsoft 365 reports - Microsoft Teams user activity.](../../media/user-activity-charts.png)
 
-Select **Choose columns** to add or remove columns from the report.  <br/> ![Teams user activity report - choose columns.](../../media/6d3c013e-2c5e-4d66-bb41-998aa4bd1c20.png)
+Select **Choose columns** to add or remove columns from the report.  <br/> ![Teams user activity report - choose columns.](../../media/user-activity-columns.png)
 
 You can also export the report data into an Excel .csv file by selecting the **Export** link. This exports data of all users and enables you to do simple sorting and filtering for further analysis. If you have less than 2000 users, you can sort and filter within the table in the report itself. If you have more than 2000 users, in order to filter and sort, you will need to export the data. The exported format for **audio time**, **video time**, and **screen share time** follows ISO8601 duration format.
 
@@ -46,9 +46,8 @@ To ensure data quality, we perform daily data validation checks for the past thr
 |:-----|:-----|
 |**Metric**|**Definition**|
 |User name  <br/> |The email address of the user. You can display the actual email address or make this field anonymous.   <br/> |
-|Tenant name  <br/> |The tenant name of this user’s origin.   <br/> |
-|Shared channel tenant names   <br/> |Tenant names of this user all involved shared channel origin.   <br/> |
-|Is external    <br/> |Indicates if the user is external user or not.   <br/> |
+|Tenant name  <br/> |The name of the tenant where the user was created.   <br/> |
+|Shared channel tenant names   <br/> |The name of the tenant or tenants of the shared channels that have been created that involves this user.   <br/> |
 |Channel messages   <br/> |The number of unique messages that the user posted in a team chat during the specified time period.  <br/> |
 |Posts   <br/> |The number of post messages in all channels during the specified time period <br/> |
 |Replies   <br/> |The number of replied messages in all channels during the specified time period. <br/> |
