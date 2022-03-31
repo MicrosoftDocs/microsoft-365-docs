@@ -37,7 +37,6 @@ The following table lists the limits for cases and review sets in Advanced eDisc
 |Maximum number of unique tags per case. <br/> |1,000<sup>1</sup> |
 |Maximum concurrent jobs in your organization to add content to a review set. These jobs are named **Adding data to a review set** and are displayed on the **Jobs** tab in a case.| 10<sup>2</sup> |
 |Maximum concurrent jobs to add content to a review set per user. These jobs are named **Adding data to a review set** and are displayed on the **Jobs** tab in a case. | 3 |
-|||
 
 ## Hold limits
 
@@ -59,7 +58,6 @@ The following table lists the indexing limits in Advanced eDiscovery.
 |Maximum size of a single file.   <br/> |150 MB<sup>4</sup> <br/> |
 |Maximum depth of embedded items in a document.  <br/> |25<sup>4</sup> <br/> |
 |Maximum size of files processed by Optical Character Recognition (OCR).  <br/> |24 MB<sup>4</sup> <br/>  
-|||
 
 ## Search limits
 
@@ -82,28 +80,26 @@ The limits described in this section are related to using the search tool on the
 |Maximum number of items per public folder mailbox displayed on preview page for searches. |100|
 |Maximum number of items found in all public folder mailbox items displayed on preview page for searches. |200|
 |Maximum number of public folder mailboxes that can be previewed for search results. If there are more than 500 public folder mailboxes that contain items that match the search query, only the top 500 mailboxes with the most results are available for preview.|500|
-|||
+|The maximum size of an item that can be viewed on the sample page of a draft collection.|10,000,000 bytes (approximately 9.5 MB)|
 
 ## Search times
 
 Microsoft collects performance information for searches run by all organizations. While the complexity of the search query can impact search times, the biggest factor that affects how long searches take is the number of mailboxes searched. Although Microsoft doesn't provide a Service Level Agreement for search times, the following table lists average search times for collection searches based on the number of mailboxes included in the search.
   
-  | Number of mailboxes | Average search time |
-  |:-----|:-----|
-  |100  <br/> |30 seconds  <br/> |
-  |1,000  <br/> |45 seconds  <br/> |
-  |10,000  <br/> |4 minutes  <br/> |
-  |25,000  <br/> |10 minutes  <br/> |
-  |50,000  <br/> |20 minutes  <br/> |
-  |100,000  <br/> |25 minutes  <br/> |
-  |||
+| Number of mailboxes | Average search time |
+|:-----|:-----|
+|100  <br/> |30 seconds  <br/> |
+|1,000  <br/> |45 seconds  <br/> |
+|10,000  <br/> |4 minutes  <br/> |
+|25,000  <br/> |10 minutes  <br/> |
+|50,000  <br/> |20 minutes  <br/> |
+|100,000  <br/> |25 minutes  <br/> |
 
 ## Viewer limits
 
 | Description of limit | Limit |
 |:-----|:-----|
 |Maximum size of Excel file that can be viewed in the native viewer.  <br/> |4 MB  <br/> |
-|||
 
 ## Export limits - Final export out of Review Set
 
@@ -113,14 +109,12 @@ The limits described in this section are related to exporting documents out of a
 |:-----|:-----|
 |Maximum size of a single export.|5 million documents or 500 GB, whichever is smaller|
 |Maximum concurrent exports per review set. | 1 |
-|||
 
 ## Review set download limits
 
 | Description of limit | Limit |
 |:-----|:-----|
 |Total file size or maximum number of documents downloaded from a review set.  <br/> |3 MB or 50 documents<sup>7</sup>|
-|||
 
 ## Notes
 

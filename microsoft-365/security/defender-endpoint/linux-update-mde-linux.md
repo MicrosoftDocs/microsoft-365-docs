@@ -88,7 +88,7 @@ CRON_TZ=America/Los_Angeles
 > #!RHEL and variants (CentOS and Oracle Linux)
 >
 > ```bash
-> 0 6 * * sun [ $(date +%d) -le 15 ] && sudo yum update mdatp >> ~/mdatp_cron_job.log
+> 0 6 * * sun [ $(date +%d) -le 15 ] && sudo yum update mdatp -y >> ~/mdatp_cron_job.log
 > ```
 
 > #!SLES and variants
