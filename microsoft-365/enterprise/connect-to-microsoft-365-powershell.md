@@ -96,7 +96,7 @@ Are you sure you want to install the modules from 'PSGallery'?
 
 Answer **Yes** or **Yes to All** to continue with the installation.
 
-3.  Run this command to import the module
+3.  Run this command to import the module:
     
     ```powershell
     Import-Module  AzureAD
