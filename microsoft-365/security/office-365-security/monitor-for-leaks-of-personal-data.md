@@ -28,7 +28,7 @@ ms.prod: m365-security
 
 There are many tools that can be used to monitor the use and transport of personal data. This topic describes three tools that work well.
 
-![Tools to monitor the use and transport of personal data.](../../media/Monitor-for-leaks-of-personal-data-image1.png)
+:::image type="content" source="../../media/Monitor-for-leaks-of-personal-data-image1.png" alt-text="The tools to monitor the use and transport of personal data" lightbox="../../media/Monitor-for-leaks-of-personal-data-image1.png":::
 
 In the illustration:
 
@@ -36,7 +36,7 @@ In the illustration:
 
 - Next, use alert policies and the audit log to monitor activity across services. Set up ongoing monitoring or search the audit log to investigate an incident. The audit log works across services—Sway, Power BI, eDiscovery, Dynamics 365, Power Automate, Microsoft Teams, Admin activity, OneDrive for Business, SharePoint Online, mail in transit, and mailboxes at rest. Skype conversations are included in mailboxes at rest.
 
-- Finally, Use Microsoft Cloud App Security to monitor files with sensitive data in other SaaS providers. Coming soon is the ability to use sensitive information types and unified labels across Azure Information Protection and Office with Cloud App Security. You can set up policies that apply to all of your SaaS apps or specific apps (like Box). Cloud App Security doesn't discover files in Exchange Online, including files attached to email.
+- Finally, Use Microsoft Defender for Cloud Apps to monitor files with sensitive data in other SaaS providers. Coming soon is the ability to use sensitive information types and unified labels across Azure Information Protection and Office with Defender for Cloud Apps. You can set up policies that apply to all of your SaaS apps or specific apps (like Box). Defender for Cloud Apps doesn't discover files in Exchange Online, including files attached to email.
 
 ## Data loss prevention reports
 
@@ -57,7 +57,7 @@ DLP reports are in the Microsoft 365 compliance center. Go to **Reports** \> **O
 
 For more information, see [View the reports for data loss prevention](../../compliance/view-the-dlp-reports.md).
 
-![Report showing DLP policy matches.](../../media/Monitor-for-leaks-of-personal-data-image2.png)
+:::image type="content" source="../../media/Monitor-for-leaks-of-personal-data-image2.png" alt-text="The report showing DLP policy matches" lightbox="../../media/Monitor-for-leaks-of-personal-data-image2.png":::
 
 ## Audit log and alert policies
 
@@ -83,51 +83,47 @@ More information about alert policies and searching the audit log:
 - [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) (cmdlet)
 - [Detailed properties in the audit log](../../compliance/detailed-properties-in-the-office-365-audit-log.md)
 
-## Microsoft Cloud App Security
+## Microsoft Defender for Cloud Apps
 
-Microsoft Cloud App Security helps you discover other SaaS apps in use across your networks and sensitive data sent to and from these apps.
+Microsoft Defender for Cloud Apps helps you discover other SaaS apps in use across your networks and sensitive data sent to and from these apps.
 
-Microsoft Cloud App Security is a comprehensive service providing deep visibility, granular controls, and enhanced threat protection for your cloud apps. It identifies more than 15,000 cloud applications in your network-from all devices-and provides risk scoring and ongoing risk assessment and analytics. No agents required: information is collected from your firewalls and proxies to give you complete visibility and context for cloud usage and shadow IT.
+Microsoft Defender for Cloud Apps is a comprehensive service providing deep visibility, granular controls, and enhanced threat protection for your cloud apps. It identifies more than 15,000 cloud applications in your network-from all devices-and provides risk scoring and ongoing risk assessment and analytics. No agents required: information is collected from your firewalls and proxies to give you complete visibility and context for cloud usage and shadow IT.
 
-To better understand your cloud environment, the Cloud App Security investigate feature provides deep visibility into all activities, files, and accounts for sanctioned and managed apps. You can gain detailed information on a file level and discover where data travels in the cloud apps.
+To better understand your cloud environment, the Defender for Cloud Apps investigate feature provides deep visibility into all activities, files, and accounts for sanctioned and managed apps. You can gain detailed information on a file level and discover where data travels in the cloud apps.
 
-For examples, the following illustration demonstrates two Cloud App Security policies that can help with GDPR.
+For examples, the following illustration demonstrates two Defender for Cloud Apps policies that can help with GDPR.
 
-![Example Cloud App Security policies.](../../media/Monitor-for-leaks-of-personal-data-image3.png)
+:::image type="content" source="../../media/Monitor-for-leaks-of-personal-data-image3.png" alt-text="The Defender for Cloud Apps policies" lightbox="../../media/Monitor-for-leaks-of-personal-data-image3.png":::
 
 The first policy alerts when files with a predefined PII attribute or custom expression that you choose is shared outside the organization from the SaaS apps that you choose.
 
 The second policy blocks downloads of files to any unmanaged device. You choose the attributes within the files to look for and the SaaS apps you want the policy to apply to.
 
-These attribute types are coming soon to Cloud App Security:
+These attribute types are coming soon to Defender for Cloud Apps:
 
 - Sensitive information types
 - Unified labels across Microsoft 365 and Azure Information Protection
 
-### Cloud App Security dashboard
+### Defender for Cloud Apps dashboard
 
-If you haven't yet started to use Cloud App Security, begin by starting it up. To access Cloud App Security: <https://portal.cloudappsecurity.com>.
+If you haven't yet started to use Defender for Cloud Apps, begin by starting it up. To access Defender for Cloud Apps: <https://portal.cloudappsecurity.com>.
 
 > [!NOTE]
-> Be sure to enable 'Automatically scan files for Azure Information Protection classification labels' (in General settings) when getting started with Cloud App Security or before you assign labels. After setup, Cloud App Security does not scan existing files again until they are modified.
+> Be sure to enable 'Automatically scan files for Azure Information Protection classification labels' (in General settings) when getting started with Defender for Cloud Apps or before you assign labels. After setup, Defender for Cloud Apps does not scan existing files again until they are modified.
 
-![Dashboard showing information about alerts.](../../media/Monitor-for-leaks-of-personal-data-image4.png)
+:::image type="content" source="../../media/Monitor-for-leaks-of-personal-data-image4.png" alt-text="The dashboard showing information about alerts" lightbox="../../media/Monitor-for-leaks-of-personal-data-image4.png":::
 
 More information:
 
-- [Deploy Cloud App Security](/cloud-app-security/getting-started-with-cloud-app-security)
-- [More information about Microsoft Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security)
-- [Block downloads of sensitive information using the Microsoft Cloud App Security proxy](/cloud-app-security/use-case-proxy-block-session-aad)
+- [Deploy Defender for Cloud Apps](/cloud-app-security/getting-started-with-cloud-app-security)
+- [More information about Microsoft Defender for Cloud Apps](https://www.microsoft.com/cloud-platform/cloud-app-security)
+- [Block downloads of sensitive information using the Microsoft Defender for Cloud Apps proxy](/cloud-app-security/use-case-proxy-block-session-aad)
 
 ## Example file and activity policies to detect sharing of personal data
 
 ### Detect sharing of files containing PII — Credit card number
 
 Alert when a file containing a credit card number is shared from an approved cloud app.
-
-<br>
-
-****
 
 |Control|Settings|
 |---|---|
@@ -140,7 +136,6 @@ Alert when a file containing a credit card number is shared from an approved clo
 |Content inspection|Includes files that match a present expression: All countries: Finance: Credit card number <p> Don't require relevant context: unchecked (this setting will match keywords as well as regex) <p> Includes files with at least 1 match <p> Unmask the last 4 characters of the violation: checked|
 |Alerts|Create an alert for each matching file: checked <p> Daily alert limit: 1000 <p> Select an alert as email: checked <p> To: infosec@contoso.com|
 |Governance|Microsoft OneDrive for Business <p> Make private: check Remove External Users <p> All other settings: unchecked <p> Microsoft SharePoint Online <p> Make private: check Remove External Users <p> All other settings: unchecked|
-|
 
 Similar policies:
 
@@ -156,10 +151,6 @@ Notes:
 - Box monitoring requires a connector be configured using the API Connector SDK.
 - This policy requires capabilities that are currently in private preview.
 
-<br>
-
-****
-
 |Control|Settings|
 |---|---|
 |Policy type|Activity policy|
@@ -170,7 +161,6 @@ Notes:
 |Filter settings|Activity type = Upload File <p> App = Microsoft OneDrive for Business and Box <p> Classification Label (currently in private preview): Azure Information Protection = Customer Data, Human Resources—Salary Data, Human Resources—Employee Data|
 |Alerts|Create an alert: checked <p> Daily alert limit: 1000 <p> Select an alert as email: checked <p> To: infosec@contoso.com|
 |Governance|All apps <p> Put user in quarantine: check <p> All other settings: unchecked <p> Office 365 <p> Put user in quarantine: check <p> All other settings: unchecked|
-|
 
 Similar policies:
 

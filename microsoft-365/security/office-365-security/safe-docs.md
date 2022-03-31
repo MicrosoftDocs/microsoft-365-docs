@@ -7,19 +7,18 @@ ms.reviewer: kshi
 ms.date:
 audience: ITPro
 ms.topic: how-to
-
 ms.localizationpriority: medium
 search.appverid:
   - MET150
 ms.assetid:
 ms.collection:
   - M365-security-compliance
-description: Learn about Safe Documents in Microsoft 365 E5 or Microsoft 365 E5 Security.
+description: Learn about Safe Documents in Microsoft 365 E5/A5 or Microsoft 365 E5/A5 Security.
 ms.technology: mdo
 ms.prod: m365-security
 ---
 
-# Safe Documents in Microsoft 365 E5
+# Safe Documents in Microsoft 365 E5/A5
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -69,7 +68,7 @@ Files sent by Safe Documents are not retained in Defender for Endpoint beyond th
 
 ## Use the Microsoft 365 Defender portal to configure Safe Documents
 
-1. Open the Microsoft 365 Defender portal and go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Safe Attachments** in the **Policies** section.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Safe Attachments** in the **Policies** section. To go directly to the **Safe Attachments** page, use <https://security.microsoft.com/safeattachmentv2>.
 
 2. On the **Safe Attachments** page, click **Global settings**.
 
@@ -79,7 +78,7 @@ Files sent by Safe Documents are not retained in Defender for Endpoint beyond th
 
    When you're finished, click **Save**.
 
-   ![Safe Documents settings after selecting Global settings on the Safe Attachments page.](../../media/safe-docs-global-settings.png)
+   :::image type="content" source="../../media/safe-docs-global-settings.png" alt-text="The Safe Documents settings after selecting Global settings on the Safe Attachments page" lightbox="../../media/safe-docs-global-settings.png":::
 
 ### Use Exchange Online PowerShell to configure Safe Documents
 

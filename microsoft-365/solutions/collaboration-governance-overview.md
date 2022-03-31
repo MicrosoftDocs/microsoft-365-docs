@@ -1,5 +1,5 @@
 ---
-title: "What is collaboration governance?"
+title: "A collaboration governance framework for Microsoft 365"
 ms.reviewer: mmclean
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -16,7 +16,7 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 recommendations: false
-description: "Learn about how to govern related features in Microsoft 365 groups, Teams, SharePoint, and Yammer."
+description: "Learn governance best practices for Microsoft 365 collaboration tools, including Microsoft 365 Groups, Teams, SharePoint, and Yammer."
 ---
 
 # What is collaboration governance?
@@ -31,17 +31,17 @@ Services such as Microsoft 365 groups, Teams, and Yammer empower users and reduc
 
 ![Chart showing collaboration governance options in Microsoft 365.](../media/collaboration-governance-overview.png)
 
-This series of articles will help you understand how groups, teams, and SharePoint settings interact, what governance capabilities are available, and how to create and implement a governance plan for the collaboration features in Microsoft 365.
+This series of articles will help you understand how groups, teams, and SharePoint settings interact, what governance capabilities are available, and how to create and implement a governance framework for the collaboration features in Microsoft 365.
 
 ### Setting up secure collaboration with Microsoft 365
 
-There are many options for deploying Microsoft 365 Groups and Teams for secure collaboration in your organization. We recommend you use this governance content alongside [Set up secure collaboration with Microsoft 365](setup-secure-collaboration-with-teams.md) and its associated articles to create the best collaboration solution for your organization.
+There are many options for deploying Microsoft 365 Groups and Teams for secure collaboration in your organization. We recommend you use this governance content alongside [Set up secure file sharing and collaboration with Microsoft Teams](setup-secure-collaboration-with-teams.md) and its associated articles to create the best collaboration solution for your organization.
 
-### Data residency
+### Data residency governance
 
 If your organization is multi-national and you have data residency requirements for different geographies, include [Microsoft 365 Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo) as part of your collaboration governance plan.
 
-## Why Microsoft 365 groups are important
+## Why Microsoft 365 groups are important in collaboration governance
 
 Microsoft 365 groups lets you choose a set of people with whom you wish to collaborate, and easily set up a collection of resources for those people to share. Adding members to the group automatically grants the needed permissions to all assets provided by the group. Both Teams and Yammer use Microsoft 365 groups to manage their membership.
 
@@ -64,7 +64,7 @@ Microsoft 365 groups include a suite of linked resources that users can use for 
 
 Microsoft 365 Groups includes a variety of governance controls, including an expiration policy, naming conventions, and a blocked words policy, to help you manage groups in your organization. Because groups control membership and access to this suite of resources, managing groups is a key part of governing collaboration in Microsoft 365.
 
-## Define a collaboration strategy for your organization
+## Define collaboration governance best practices for your organization
 
 There are multiple places to collaborate and have conversations within Microsoft 365. Understanding where users can start conversations can help you define a strategy for communication.
 
@@ -95,8 +95,7 @@ As you determine how you want to use collaboration features in Microsoft 365, co
 > [!NOTE]
 > When a new Office 365 Group is created via Yammer or Teams, the group isn't visible in Outlook or the address book because the primary communication between those users happens in their respective clients. Yammer groups cannot be connected to Teams.
 
-
-## Best practices
+## Collaboration governance best practices checklist
 
 As you start your governance planning process, keep these best practices in mind:
 
@@ -133,7 +132,7 @@ Because groups and teams can be created in several ways, we recommend training y
 
 This helps avoid confusion if users are unfamiliar with how groups relate to their related services. For more information about how to talk to your users about groups, see [Explaining Microsoft 365 Groups to your users](../admin/create-groups/explain-groups-knowledge-worker.md).
 
-## Key governance capabilities and licensing requirements
+## Key collaboration governance capabilities and licensing requirements
 
 Governance capabilities for collaboration in Microsoft 365 include features in Microsoft 365, Teams, SharePoint, and Azure Active Directory.
 
@@ -148,7 +147,7 @@ Governance capabilities for collaboration in Microsoft 365 include features in M
 |Group expiration policy|Set inactive groups and teams to expire and be deleted after a specified period of time.|Microsoft 365 E5 or E3 with Azure AD Premium licenses|
 |Per-group guest access|Allow or prevent team and group sharing with people outside your organization on a per-group basis.|Microsoft 365 E5 or E3|
 
-## Collaboration governance planning step-by-step
+## Collaboration governance planning recommendations
 
 Follow these basic steps to create your governance plan:
 

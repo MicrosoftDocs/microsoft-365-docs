@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
-ms.date: 10/18/2021
+ms.date: 02/03/2022
 ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
@@ -21,7 +21,7 @@ ms.collection: m365-security-compliance
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Microsoft Defender Antivirus
 
 [Cloud protection in Microsoft Defender Antivirus](cloud-protection-microsoft-defender-antivirus.md) delivers accurate, real-time, and intelligent protection. Cloud protection should be enabled by default; however, you can configure cloud protection to suit your organization's needs.
@@ -39,11 +39,11 @@ You can also turn cloud protection on or off on individual endpoints using the W
 For more information about the specific network-connectivity requirements to ensure your endpoints can connect to the cloud protection service, see [Configure and validate network connections](configure-network-connections-microsoft-defender-antivirus.md).
 
 > [!NOTE]
-> In Windows 10 and Windows 11, there is no difference between the **Basic** and **Advanced** reporting options described in this topic. This is a legacy distinction and choosing either setting will result in the same level of cloud protection. There is no difference in the type or amount of information that is shared. For more information on what we collect, see the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=521839).
+> In Windows 10 and Windows 11, there is no difference between the **Basic** and **Advanced** reporting options described in this article. This is a legacy distinction and choosing either setting will result in the same level of cloud protection. There is no difference in the type or amount of information that is shared. For more information on what we collect, see the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=521839).
 
 ## Use Intune to turn on cloud protection
 
-1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and log in.
+1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
 
 2. On the **Home** pane, select **Device configuration > Profiles**.
 
@@ -59,7 +59,7 @@ For more information about Intune device profiles, including how to create and c
 
 ## Use Microsoft Endpoint Manager to turn on cloud protection
 
-1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and log in.
+1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
 
 2. Choose **Endpoint security** \> **Antivirus**.
 
@@ -69,7 +69,7 @@ For more information about Intune device profiles, including how to create and c
 
 5. Expand **Cloud protection**, and then in the **Cloud-delivered protection level** list, select one of the following:
    - **High**: Applies a strong level of detection.
-   - **High plus**: Uses the **High** level and applies additional protection measures (may impact client performance).
+   - **High plus**: Uses the **High** level and applies more protection measures (may affect client performance).
    - **Zero tolerance**: Blocks all unknown executables.
 
 6. Select **Review + save**, then choose **Save**.
@@ -86,7 +86,16 @@ For more information about configuring Microsoft Endpoint Configuration Manager,
 
 4. Expand the tree to **Windows components** > **Microsoft Defender Antivirus > MAPS**
 
+    > [!NOTE]
+    > MAPS settings are equal to cloud-delivered protection.
+
 5. Double-click **Join Microsoft MAPS**. Ensure the option is turned on and set to **Basic MAPS** or **Advanced MAPS**. Select **OK**.
+
+    You can choose to send basic or additional information about detected software:
+
+    - Basic MAPS: Basic membership will send basic information to Microsoft about malware and potentially unwanted software that has been detected on your device. Information includes where the software came from (like URLs and partial paths), the actions taken to resolve the threat, and whether the actions were successful.
+
+    - Advanced MAPS: In addition to basic information, advanced membership will send detailed information about malware and potentially unwanted software, including the full path to the software, and detailed information about how the software has affected your device.
 
 6. Double-click **Send file samples when further analysis is required**. Ensure that the first option is set to **Enabled** and that the other options are set to either:
 
@@ -108,7 +117,7 @@ Set-MpPreference -MAPSReporting Advanced
 Set-MpPreference -SubmitSamplesConsent SendAllSamples
 ```
 
-For more information on how to use PowerShell with Microsoft Defender Antivirus, see [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](/powershell/module/defender/). [Policy CSP - Defender](/windows/client-management/mdm/policy-csp-defender) also has more information specifically on [-SubmitSamplesConsent](/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent).
+For more information on how to use PowerShell with Microsoft Defender Antivirus, see [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Microsoft Defender Antivirus cmdlets](/powershell/module/defender/). [Policy CSP - Defender](/windows/client-management/mdm/policy-csp-defender) also has more information specifically on [-SubmitSamplesConsent](/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent).
 
 > [!IMPORTANT]
 > You can set **-SubmitSamplesConsent** to `SendSafeSamples` (the default, recommended setting), `NeverSend`, or `AlwaysPrompt`. 
@@ -131,11 +140,11 @@ For more information about allowed parameters, see [Windows Defender WMIv2 APIs]
 > [!NOTE]
 > If the **Configure local setting override for reporting Microsoft MAPS** Group Policy setting is set to **Disabled**, then the **Cloud-based protection** setting in Windows Settings will be greyed-out and unavailable. Changes made through a Group Policy Object must first be deployed to individual endpoints before the setting will be updated in Windows Settings.
 
-1. Open the Windows Security app by selecting the shield icon in the task bar, or by searching the start menu for **Defender**.
+1. Open the Windows Security app by selecting the shield icon in the task bar, or by searching the start menu for **Windows Security**.
 
-2. Select the **Virus & threat protection** tile (or the shield icon on the left menu bar) and then the **Virus & threat protection settings** label:
+2. Select the **Virus & threat protection** tile (or the shield icon on the left menu bar), and then, under **Manage settings** select **Virus & threat protection settings**.
 
-    :::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="Screenshot of the Virus & threat protection settings":::
+   :::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="The Virus & threat protection settings" lightbox="../../media/wdav-protection-settings-wdsc.png":::
 
 3. Confirm that **Cloud-based Protection** and **Automatic sample submission** are switched to **On**.
 

@@ -2,8 +2,8 @@
 title: "Upgrade to a different business plan"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -14,9 +14,9 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- commerce_subscriptions
 - SaRA
 - AdminSurgePortfolio
-- commerce_subscriptions
 - AdminTemplateSet
 search.appverid: MET150 
 description: "The easiest way to upgrade plans is to use the Upgrade tab in the admin center. However, the Upgrade tab isn't always supported."
@@ -51,7 +51,7 @@ If the **Upgrade** tab is empty, you'll see an explanation of why you can't upgr
 
 When you use the **Upgrade** tab, the plans that you can upgrade to are displayed based on the services in your current plan. You can only use the **Upgrade** tab to move to a plan that has the same data-related services, or to a higher version. This ensures that users don't lose data related to those services during the change.
 
-If you want to move to a plan with fewer services, you can [change plans manually](change-plans-manually.md), or [call support](../../business-video/get-help-support.md) for help.
+If you want to move to a plan with fewer services, you can [change plans manually](change-plans-manually.md), or [call support](../../admin/get-help-support.md) for help.
 
 ## I only want to upgrade some of my users. How do I do that?
 
@@ -71,13 +71,13 @@ If you don't see any plans on the **Upgrade** tab, it means your plan can't be u
 
 #### You can't upgrade subscriptions now because you have more users than licenses
 
-To upgrade plans automatically, all of your users need to be assigned valid licenses. If you have assigned more licenses than you have purchased, you'll see an alert on the <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page that says you have a licensing conflict that needs to be resolved. [Learn how to resolve license conflicts](../../commerce/licenses/buy-licenses.md). After you have resolved any licensing conflicts, you should see plans listed on the **Upgrade** tab. If not, you can [change plans manually](change-plans-manually.md), or [call support](../../business-video/get-help-support.md).
+To upgrade plans automatically, all of your users need to be assigned valid licenses. If you have assigned more licenses than you have purchased, you'll see an alert on the <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page that says you have a licensing conflict that needs to be resolved. [Learn how to resolve license conflicts](../../commerce/licenses/buy-licenses.md). After you have resolved any licensing conflicts, you should see plans listed on the **Upgrade** tab. If not, you can [change plans manually](change-plans-manually.md), or [call support](../../admin/get-help-support.md).
 
 #### You can't upgrade subscriptions right now because this subscription isn't fully set up or the service isn't available
 
 For example, if one of the services has an incident, you won't be able to upgrade until all services are healthy. To see if there are provisioning or service health issues, in the admin center, go to the **Health** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">Service health</a> page.
 
-If you find that a service is not fully provisioned, or you have a service health issue, please wait a few hours for your service to become available, and try again. If you still have a problem, please [call support](../../business-video/get-help-support.md).
+If you find that a service is not fully provisioned, or you have a service health issue, please wait a few hours for your service to become available, and try again. If you still have a problem, please [call support](../../admin/get-help-support.md).
 
 #### You can't upgrade plans because another plan is in the process of being upgraded or is pending a credit check
 
@@ -85,11 +85,11 @@ Wait until the credit check has been completed before upgrading plans. Credit ch
 
 #### Currently, this subscription is not eligible to upgrade
 
-You can [change plans manually](change-plans-manually.md) or [call support](../../business-video/get-help-support.md).
+You can [change plans manually](change-plans-manually.md) or [call support](../../admin/get-help-support.md).
 
 #### I see a different message than what's listed here
 
-You can [change plans manually](change-plans-manually.md) or [call support](../../business-video/get-help-support.md).
+You can [change plans manually](change-plans-manually.md) or [call support](../../admin/get-help-support.md).
 
 ### Additional reasons you can't upgrade
 
@@ -101,11 +101,11 @@ You can only use the **Upgrade** tab if all users subscribe to the same plan. Fo
 
 If you've paid for your subscription in advance, you might be able to [change plans manually](change-plans-manually.md). However, you won't receive a credit for unused time remaining on your current subscription if you upgrade plans before the current plan expires.
 
-You can also [call support](../../business-video/get-help-support.md) for help.
+You can also [call support](../../admin/get-help-support.md) for help.
 
 #### You have a government or non-profit plan
 
-If you have a government or non-profit plan, you can [change plans manually](change-plans-manually.md) or [call support](../../business-video/get-help-support.md) for help.
+If you have a government or non-profit plan, you can [change plans manually](change-plans-manually.md) or [call support](../../admin/get-help-support.md) for help.
 
 #### The subscription that you want to upgrade from has a temporary issue
 
@@ -115,7 +115,7 @@ You might not see any plans on the **Upgrade** tab because the service is in the
 
 When you upgrade plans, the plans that are available for you to upgrade to are displayed based on the services in your current plan. You can only upgrade to a plan that has the same data-related services, such as Exchange Online or SharePoint Online, or to a higher version of them. This ensures that users don\'t lose data related to those services during the upgrade.
 
-If your plan isn't eligible to upgrade plans automatically, you might be able to [change plans manually](change-plans-manually.md) instead. You can also [call support](../../business-video/get-help-support.md) for help.
+If your plan isn't eligible to upgrade plans automatically, you might be able to [change plans manually](change-plans-manually.md) instead. You can also [call support](../../admin/get-help-support.md) for help.
 
 #### Your subscription has an add-on
 
@@ -155,7 +155,7 @@ The day your plan upgrade is complete, the billing on your old subscription will
 
 ## Call support to help you upgrade plans
 
-[Call Microsoft support](../../business-video/get-help-support.md)
+[Call Microsoft support](../../admin/get-help-support.md).
 
 ## Related content
 

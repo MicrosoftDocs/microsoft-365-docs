@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Reports in the admin center - Microsoft 365 groups"
+title: "Microsoft 365 admin center groups reports"
 ms.author: kwekua
 author: kwekua
 manager: scotv
@@ -70,6 +70,6 @@ The **groups** report can be viewed for trends over the last 7 days, 30 days, 90
 ## Related content
 
 [Microsoft 365 Reports in the admin center](activity-reports.md) (article)\
-[Reports in the Security & Compliance Center](../../compliance/reports-in-security-and-compliance.md) (article)\
+[Smart reports and insights in the Security & Compliance Center](/microsoft-365/security/office-365-security/reports-and-insights-in-security-and-compliance) (article)\
 [Microsoft 365 Reports in the admin center - Active Users](../../admin/activity-reports/active-users-ww.md) (article)
 

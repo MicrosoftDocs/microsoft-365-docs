@@ -2,8 +2,8 @@
 title: "What's new in Microsoft Compliance Manager"
 f1.keywords:
 - NOCSH
-ms.author: v-jgriffee
-author: jmgriffee
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -23,9 +23,35 @@ description: "Find out what’s new in Compliance Manger and what’s to come. R
 
 **In this article:** Learn about recent updates in Compliance Manager.
 
+## February 2022
+
+### Continuous compliance assessment of improvement actions
+
+We're adding automated testing and evidence generation for over 35 improvement actions in Compliance Manager that were not previously covered by Secure Score. With continuous compliance assessment, you can receive updates about which of these improvement actions you've completed if they're relevant for your compliance assessments and you're licensed to access the relevant solutions. Continuous compliance assessment also gives users visibility into the scoring logic of your improvement actions and provides insight and evidence about why you received a certain score. This feature works alongside existing integrations with Microsoft 365 Secure Score, and any automated actions you've previously configured will continue to work as-is. Learn more about [automated testing settings](compliance-manager-setup.md#set-up-automated-testing).
+### Alerts and alert policies
+
+Users can now set alerts for changes in Compliance Manager that an organization wants to track. Using an easy setup wizard, you can build alert policies to create notifications when the following types of events happen: an improvement action score change, an improvement action assignment change, a testing or implementation status change in an improvement action, and a file upload or deletion in an improvement action's Documents tab. Learn more by visiting [Compliance Manager alerts and alert policies](compliance-manager-alert-policies.md).
+
+### Try recommended assessment templates for your organization
+
+Your organization can now get recommendations from Compliance Manager about which assessments may be most relevant to you, with a quick setup process to get up and running. To learn more about recommendations and how to try premium assessment templates before buying a license, see [Start a premium assessments trial](compliance-manager-setup.md#start-a-premium-assessments-trial).
+
 ## November 2021
 
-### New assessment templates
+### Zero Trust integration for the Data Protection Baseline template
+
+Zero Trust is a proactive, integrated approach to security across all layers of the digital estate that explicitly and continuously verifies every transaction, asserts least privilege, and relies on intelligence, advanced detection, and real-time response to threats. Compliance Manager's Data Protection Baseline template, included for all users, now integrates 57 new controls and 36 new actions for Zero Trust aligned across the following control families:
+
+- Zero Trust Application
+- Zero Trust App development guidance
+- Zero Trust Endpoint
+- Zero Trust Data
+- Zero Trust Identity
+- Zero Trust Infrastructure
+- Zero Trust Network
+- Zero Trust Visibility, automation, and orchestration
+
+### New preview templates
 
 The following assessment templates are now available in preview:
 
@@ -53,9 +79,9 @@ We published new assessment templates, including:
 - Australia - ASD Essential 8 Maturity Level 2
 - Australia - ASD Essential 8 Maturity Level 3
 
-### Integration with privacy management
+### Integration with Microsoft Priva
 
-Compliance Manager can now work hand in hand with privacy management, a solution that can help you safeguard the personal data your organization stores in Microsoft 365. Privacy management offers tools to help you visualize and understand your data, implement policies to manage key risk scenarios, and handle subject rights requests. When you take steps in privacy management to protect the personal data you store, this can contribute to your privacy assessments in Compliance Manager and can help you improve your compliance score. To see how privacy management and other solutions are contributing to your score, and learn about potential opportunities for further improvements, see the **Solutions** tab in Compliance Manager. You can also find more details about privacy management at [Learn about privacy management](/privacy/solutions/privacymanagement/privacy-management).
+Compliance Manager can now work hand in hand with Microsoft Priva, a solution that can help you safeguard the personal data your organization stores in Microsoft 365. Priva offers tools to help you visualize and understand your data, implement policies to manage key risk scenarios, and handle subject rights requests. When you take steps in Priva to protect the personal data you store, this can contribute to your privacy assessments in Compliance Manager and can help you improve your compliance score. To see how Priva and other solutions are contributing to your score, and learn about potential opportunities for further improvements, see the **Solutions** tab in Compliance Manager. You can also find more details about Priva at [Learn about Microsoft Priva](/privacy/priva).
 
 ## July 2021
 

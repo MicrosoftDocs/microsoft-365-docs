@@ -1,14 +1,12 @@
 ---
 title: Understand your bill or invoice
-f1.keywords:
-- CSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - 'MACBillingBillsPaymentsInvoices'
 ms.service: o365-administration
 ms.localizationpriority: medium
@@ -16,12 +14,11 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom: 
-- AdminSurgePortfolio
 - commerce_billing
+- AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid: MET150
 description: "Learn how to read and understand your bill or invoice for Microsoft business products."
-keywords: billing accounts, organization info, invoices
 ms.date: 05/04/2021
 ---
 
@@ -145,7 +142,7 @@ Azure prepayment is available as a payment method only for eligible Azure produc
 
 If you have questions or need help with your Azure credits, <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">create a support request with Azure support</a>.
 
-If you have questions or need help with your invoice in Microsoft 365 admin center, [contact support for business products](../../business-video/get-help-support.md).
+If you have questions or need help with your invoice in Microsoft 365 admin center, [contact support for business products](../../admin/get-help-support.md).
 
 ## Related content
 

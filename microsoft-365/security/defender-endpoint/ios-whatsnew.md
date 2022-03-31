@@ -13,7 +13,6 @@ manager: sunasing
 audience: ITPro
 ms.collection: 
   - m365-security-compliance
-  - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
 ---
@@ -23,10 +22,39 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+## Improved experience on supervised iOS devices
+
+Microsoft Defender for Endpoint on iOS now has specialized ability on supervised iOS/iPadOS devices, given the increased management capabilities provided by the platform on these types of devices. It can also provide Web Protection **without setting up a local VPN on the device**. This gives end-users a seamless experience while still being protected from phishing and other web-based attacks. For details, visit [this documentation](ios-install.md#complete-deployment-for-supervised-devices)
+
+## Microsoft Defender for Endpoint is now Microsoft Defender in the App store
+
+Microsoft Defender for Endpoint is now available as **Microsoft Defender** in the app store. With this update, the app will be available as preview for **Consumers in the US region**. Based on how you log into the app with your work or personal account, you will have access to features for Microsoft Defender for Endpoint or to features for Microsoft Defender for individuals. For more information, see [this blog](https://www.microsoft.com/en-us/microsoft-365/microsoft-defender-for-individuals).
+
+## Threat and Vulnerability Management
+
+On January 25, 2022, we announced the general availability of Threat and Vulnerability management on Android and iOS. For more details, see [the techcommunity post here](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-general-availability-of-vulnerability-management/ba-p/3071663).
+
+## 1.1.24210103
+
+- Resolved internet connectivity issues on supervised devices. For more information, see [Deploy Defender for Endpoint on enrolled iOS devices](ios-install.md).
+- Bug fixes.
+
+## 1.1.23250104
+
+- Performance optimizations - Test battery performance with this version and let us know your feedback.
+- **Zero-touch onboard for enrolled iOS devices** - With this version, the preview of Zero-touch onboard for devices enrolled through Microsoft Endpoint Manager (Intune) has been added. For more information, see this [documentation](ios-install.md#zero-touch-onboarding-of-microsoft-defender-for-endpoint-preview) for more details on setup and configuration.
+- **Privacy Controls** - Configure privacy controls for phish alert report. For more information, see [Configure iOS features](ios-configure-features.md).
+
+## 1.1.23010101
+
+- Bug fixes and performance improvements 
+  - Performance optimizations were made in this release. Test battery performance with this version and let us know your feedback.
 
 ## 1.1.20240103
 - Device Health card - Device Health card notifies end-users about any pending software updates.

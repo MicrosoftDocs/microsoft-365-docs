@@ -15,13 +15,15 @@ search.appverid:
 ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - M365-security-compliance
-ms.custom: admindeeplinkMAC
+ms.custom: 
+- admindeeplinkMAC
+- admindeeplinkEXCHANGE
 description: "Admins can learn to create mail flow rules (transport rules) to encrypt and decrypt messages using Office 365 Message Encryption."
 ---
 
 # Define mail flow rules to encrypt email messages
 
-As an administrator that manages Exchange Online, you can create mail flow rules (also known as transport rules) to help protect email messages you send and receive. You can set up rules to encrypt any outgoing email messages and remove encryption from encrypted messages coming from inside your organization or from replies to encrypted messages sent from your organization. You can use the Exchange admin center (EAC) or Exchange Online PowerShell to create these rules. In addition to overall encryption rules, you can also choose to enable or disable individual message encryption options for end users.
+As an administrator that manages Exchange Online, you can create mail flow rules (also known as transport rules) to help protect email messages you send and receive. You can set up rules to encrypt any outgoing email messages and remove encryption from encrypted messages coming from inside your organization or from replies to encrypted messages sent from your organization. You can use the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center (EAC)</a> or Exchange Online PowerShell to create these rules. In addition to overall encryption rules, you can also choose to enable or disable individual message encryption options for end users.
 
 You can't encrypt inbound mail from senders outside of your organization.
 
@@ -96,7 +98,7 @@ You can define mail flow rules for triggering remove message encryption with the
 
 ### Use the EAC to create a rule to remove encryption from email messages with the new OME capabilities
 
-You can remove encryption that is applied by your organization.
+You can remove encryption from messages that was applied by your organization. You can also remove encryption from any encrypted attachments to ensure the whole email message is without any protection.
 
 1. In a web browser, using a work or school account that has been granted global administrator permissions, [sign in to Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser).
 
@@ -110,9 +112,11 @@ You can remove encryption that is applied by your organization.
 
 6. In **Apply this rule if**, select the conditions where encryption should be removed from messages. Add **The sender is located** \> **Inside the organization** for sending mail _or_ **The recipient is located** \> **Inside the organization** for receiving mail.
 
-7. In **Do the following**, select **Modify the message security** \> **Remove Office 365 Message Encryption and rights protection**.
+7. In **Do the following**, select **Modify the message security** \> **Remove Office 365 Message Encryption and rights protection applied by the organization**.
 
-8. Select **Save**.
+8. (Optional) In **Do the following**, select **Modify the message security** \> **Remove attachment rights protection protection applied by the organization**.
+
+Save the rule.
 
 ## Create mail flow rules for Office 365 Message Encryption without the new capabilities
 

@@ -16,6 +16,7 @@ search.appverid:
 ms.assetid:
 ms.collection:
   - M365-security-compliance
+ms.custom:
 description: Admins can learn how to use the configuration analyzer to find and fix security policies that are below the settings in Standard protection and Strict protection in preset security policies.
 ms.technology: mdo
 ms.prod: m365-security
@@ -68,7 +69,7 @@ The Standard and Strict policy setting values that are used as baselines are des
 
 ## Use the configuration analyzer in the Microsoft 365 Defender portal
 
-In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Configuration analyzer** in the **Templated policies** section.
+In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Configuration analyzer** in the **Templated policies** section. To go directly to the **Configuration analyzer** page, use <https://security.microsoft.com/configurationAnalyzer>.
 
 The **Configuration analyzer** page has three main tabs:
 
@@ -80,7 +81,7 @@ The **Configuration analyzer** page has three main tabs:
 
 By default, the configuration analyzer opens on the **Standard recommendations** tab. You can switch to the **Strict recommendations** tab. The settings, layout, and actions are the same on both tabs.
 
-![Settings and recommendations view in the Configuration analyzer.](../../media/configuration-analyzer-settings-and-recommendations-view.png)
+:::image type="content" source="../../media/configuration-analyzer-settings-and-recommendations-view.png" alt-text="The Settings and recommendations view in the Configuration analyzer" lightbox="../../media/configuration-analyzer-settings-and-recommendations-view.png":::
 
 The first section of the tab displays the number of settings in each type of policy that need improvement as compared to Standard or Strict protection. The types of policies are:
 
@@ -143,4 +144,4 @@ To export the results to a .csv file, click **Export**.
 
 To filter the results by a specific **Modified by**, **Setting name**, or **Type** value, use the **Search** box.
 
-![Configuration drift analysis and history view in the Configuration analyzer.](../../media/configuration-analyzer-configuration-drift-analysis-view.png)
+:::image type="content" source="../../media/configuration-analyzer-configuration-drift-analysis-view.png" alt-text="The Configuration drift analysis and history view in the Configuration analyzer" lightbox="../../media/configuration-analyzer-configuration-drift-analysis-view.png":::

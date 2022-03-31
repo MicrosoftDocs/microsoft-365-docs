@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Reports in the admin center - OneDrive for Business usage"
+title: "Microsoft 365 OneDrive for Business usage reports"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -57,3 +57,6 @@ The **OneDrive for Business usage** report can be viewed for trends over the las
 |Active files  <br/> | The number of active files within the time period.<br/> NOTE: If files were removed during the specified time period for the report, the number of active files shown in the report may be larger than the current number of files in the OneDrive. >  Deleted users will continue to appear in reports for 180 days.  <br/> |
 |Storage used (MB)  <br/> |The amount of storage the OneDrive uses in MB. |
 |||
+   
+> [!NOTE]
+> The report only includes users who have a valid OneDrive for Business license.

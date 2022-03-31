@@ -14,7 +14,6 @@ audience: ITPro
 ms.collection:
   - M365-security-compliance
   - m365solution-endpointprotect
-  - m365solution-overview
 ms.topic: article
 ms.technology: mde
 ---
@@ -24,7 +23,7 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
@@ -38,7 +37,7 @@ The deployment rings can be applied in the following scenarios:
 
 ## New deployments
 
-![Image of deployment rings.](images/deployment-rings.png)
+:::image type="content" source="images/deployment-rings.png" alt-text="The deployment rings" lightbox="images/deployment-rings.png":::
 
 A ring-based approach is a method of identifying a set of endpoints to onboard and verifying that certain criteria is met before proceeding to deploy the service to a larger set of devices. You can define the exit criteria for each ring and ensure that they are satisfied before moving on to the next ring.
 
@@ -80,7 +79,7 @@ The following table shows the supported endpoints and the corresponding tool you
 
 | Endpoint     | Deployment tool                       |
 |--------------|------------------------------------------|
-| **Windows**  |  [Local script (up to 10 devices)](configure-endpoints-script.md) <br> NOTE: If you want to deploy more than 10 devices in a production environment, use the Group Policy method instead or the other supported tools listed below.<br>  [Group Policy](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Mobile Device Manager](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI scripts](configure-endpoints-vdi.md) <br> [Integration with Azure Defender](configure-server-endpoints.md#integration-with-azure-defender)  |
+| **Windows**  |  [Local script (up to 10 devices)](configure-endpoints-script.md) <br> NOTE: If you want to deploy more than 10 devices in a production environment, use the Group Policy method instead or the other supported tools listed below.<br>  [Group Policy](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Mobile Device Manager](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI scripts](configure-endpoints-vdi.md) <br> [Integration with Microsoft Defender for Cloud](configure-server-endpoints.md#integration-with-azure-defender)  |
 | **macOS**    | [Local script](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Mobile Device Management](mac-install-with-other-mdm.md) |
 | **Linux Server** | [Local script](linux-install-manually.md) <br> [Puppet](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
 | **iOS**      | [Microsoft Endpoint Manager](ios-install.md)                                |
@@ -94,7 +93,7 @@ Use the following material to select the appropriate Microsoft Defender for Endp
 
 |**Item**|**Description**|
 |:-----|:-----|
-|[![Thumb image for Microsoft Defender for Endpoint deployment strategy.](images/mde-deployment-strategy.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)  \| [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) | The architectural material helps you plan your deployment for the following architectures: <ul><li> Cloud-native </li><li> Co-management </li><li> On-premise</li><li>Evaluation and local onboarding</li></ul>
+|[:::image type="content" source="images/mde-deployment-strategy.png" alt-text="The strategy for Microsoft Defender for Endpoint deployment" lightbox="images/mde-deployment-strategy.png":::](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)  \| [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) | The architectural material helps you plan your deployment for the following architectures: <ul><li> Cloud-native </li><li> Co-management </li><li> On-premise</li><li>Evaluation and local onboarding</li></ul>
 
 ## Existing deployments
 
@@ -116,7 +115,8 @@ With macOS and Linux, you could take a couple of systems and run in the Beta cha
 
 The choice of the channel determines the type and frequency of updates that are offered to your device. Devices in Beta are the first ones to receive updates and new features, followed later by Preview and lastly by Current.
 
-![Image of insider rings.](images/insider-rings.png)
+:::image type="content" source="images/insider-rings.png" alt-text="The insider rings" lightbox="images/insider-rings.png":::
+
 
 In order to preview new features and provide early feedback, it is recommended that you configure some devices in your enterprise to use either Beta or Preview.
 

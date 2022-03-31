@@ -2,8 +2,8 @@
 title: "Microsoft Compliance Manager quickstart guide"
 f1.keywords:
 - NOCSH
-ms.author: v-jgriffee
-author: jmgriffee
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -46,7 +46,7 @@ Our [Compliance Manager overview page](compliance-manager.md) is the best first 
 
 ## Ramping up: configure Compliance Manager to manage your compliance activities
 
-Once you're familiar with the basics, it's time to set things up to meet your organization's needs. You can start working with assessments and taking improvement actions to implement controls and improve your compliance score. Knowing how to perform all the activities at this stage can help your organization comply and demonstrate compliance with regulations across your industry and region. Visit the links below to dive in:
+Once you're familiar with the basics, it's time to set up things to meet your organization's needs. You can start working with assessments and taking improvement actions to implement controls and improve your compliance score. Knowing how to perform all the activities at this stage can help your organization comply and demonstrate compliance with regulations across your industry and region. Visit the links below to dive in:
 
 - [Choose a pre-built assessment to create and manage your first assessment](compliance-manager-assessments.md)
 - [Understand how to use templates for building assessments](compliance-manager-templates.md)

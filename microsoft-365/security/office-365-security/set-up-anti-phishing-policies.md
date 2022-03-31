@@ -40,10 +40,6 @@ Examples of Microsoft Defender for Office 365 organizations include:
 
 The high-level differences between anti-phishing policies in EOP and anti-phishing policies in Defender for Office 365 are described in the following table:
 
-<br>
-
-****
-
 |Feature|Anti-phishing policies in EOP|Anti-phishing policies in Defender for Office 365|
 |---|:---:|:---:|
 |Automatically created default policy|![Check mark.](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|
@@ -53,7 +49,6 @@ The high-level differences between anti-phishing policies in EOP and anti-phishi
 |First contact safety tip|![Check mark.](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|
 |Impersonation settings||![Check mark](../../media/checkmark.png)|
 |Advanced phishing thresholds||![Check mark](../../media/checkmark.png)|
-|
 
 <sup>\*</sup> In the default policy, the policy name, and description are read-only (the description is blank), and you can't specify who the policy applies to (the default policy applies to all recipients).
 
@@ -115,13 +110,13 @@ The following spoof settings are available in anti-phishing policies in EOP and 
     - [Manage quarantined messages and files as an admin in Microsoft 365](manage-quarantined-messages-and-files.md)
     - [Find and release quarantined messages as a user in Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
 
-    If you select **Quarantine the message**, you can also select the quarantine policy that applies to messages that were quarantined by spoof intelligence protection. Quarantine policies define what users are able to do to quarantined messages. For more information, see [Quarantine policies](quarantine-policies.md).
+    If you select **Quarantine the message**, you can also select the quarantine policy that applies to messages that were quarantined by spoof intelligence protection. Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Quarantine policies](quarantine-policies.md).
 
 ### Unauthenticated sender
 
 The unauthenticated sender notifications are part of the [Spoof settings](#spoof-settings) that are available in anti-phishing policies in EOP and Defender for Office 365 as described in the previous section. The following settings are available only when spoof intelligence is turned on:
 
-- **Show (?) for unauthenticated senders for spoof**: This notification adds a question mark is added to the sender's photo in the From box if the message does not pass SPF or DKIM checks **and** the message does not pass DMARC or [composite authentication](email-validation-and-authentication.md#composite-authentication). When this setting is turned off, the question mark isn't added to the sender's photo.
+- **Show (?) for unauthenticated senders for spoof**: This notification adds a question mark to the sender's photo in the From box if the message does not pass SPF or DKIM checks **and** the message does not pass DMARC or [composite authentication](email-validation-and-authentication.md#composite-authentication). When this setting is turned off, the question mark isn't added to the sender's photo.
 
 - **Show "via" tag?**: This notification adds the via tag (chris@contoso.com <u>via</u> fabrikam.com) in the From box if the domain in the From address (the message sender that's displayed in email clients) is different from the domain in the DKIM signature or the **MAIL FROM** address. For more information about these addresses, see [An overview of email message standards](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards).
 
@@ -141,9 +136,9 @@ The **Show first contact safety tip** settings is available in EOP and Defender 
 - The first time they get a message from a sender
 - They don't often get messages from the sender.
 
-![First contact safety tip for messages with one recipient.](../../media/safety-tip-first-contact-one-recipient.png)
+:::image type="content" source="../../media/safety-tip-first-contact-one-recipient.png" alt-text="The First contact safety tip for messages with one recipient" lightbox="../../media/safety-tip-first-contact-one-recipient.png":::
 
-![First contact safety tip for messages with with multiple recipients.](../../media/safety-tip-first-contact-multiple-recipients.png)
+:::image type="content" source="../../media/safety-tip-first-contact-multiple-recipients.png" alt-text="The First contact safety tip for messages with with multiple recipients" lightbox="../../media/safety-tip-first-contact-multiple-recipients.png":::
 
 This capability adds an extra layer of security protection against potential impersonation attacks, so we recommend that you turn it on.
 
@@ -164,7 +159,7 @@ This section describes the policy settings that are only available in anti-phish
 Impersonation is where the sender or the sender's email domain in a message looks similar to a real sender or domain:
 
 - An example impersonation of the domain contoso.com is ćóntoso.com.
-- An example impersonation of the user michelle@contoso.com is michele@contoso.com.
+- User impersonation is the combination of the user's display name and email address. For example, Valeria Barrios (vbarrios@contoso.com) might be impersonated as Valeria Barrios, but with a completely different email address.
 
 > [!NOTE]
 > Impersonation protection looks for domains that are similar. For example, if your domain is contoso.com, we check for different top-level domains (.com, .biz, etc.) as impersonation attempts, but also domains that are even somewhat similar. For example, contosososo.com or contoabcdef.com might be seen as impersonation attempts of contoso.com.
@@ -224,7 +219,7 @@ The following impersonation settings are only available in anti-phishing policie
   - **Don't apply any action**: Note that this value has the same result as turning on **Mailbox intelligence** but turning off **Enable intelligence impersonation protection**.
   - **Redirect message to other email addresses**
   - **Move message to the recipients' Junk Email folders**
-  - **Quarantine the message**: If you select this action, you can also select the quarantine policy that applies to messages that are quarantined by mailbox intelligence protection. Quarantine policies define what users are able to do to quarantined messages. For more information, see [Quarantine policies](quarantine-policies.md).
+  - **Quarantine the message**: If you select this action, you can also select the quarantine policy that applies to messages that are quarantined by mailbox intelligence protection. Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Quarantine policies](quarantine-policies.md).
   - **Deliver the message and add other addresses to the Bcc line**
   - **Delete the message before it's delivered**
 

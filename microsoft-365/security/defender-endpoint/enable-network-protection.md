@@ -1,8 +1,7 @@
 ---
 title: Turn on network protection
 description: Enable network protection with Group Policy, PowerShell, or Mobile Device Management and Configuration Manager.
-keywords: ANetwork protection, exploits, malicious website, ip, domain, domains, enable, turn on
-search.product: eADQiWindows 10XVcnh
+keywords: Network protection, exploits, malicious website, ip, domain, domains, enable, turn on
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -11,10 +10,11 @@ ms.localizationpriority: medium
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
-ms.reviewer:
+ms.reviewer: mkaminska
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
+ms.date:
 ---
 
 # Turn on network protection
@@ -22,7 +22,8 @@ ms.collection: m365-security-compliance
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
@@ -42,13 +43,15 @@ Check if network protection has been enabled on a local device by using Registry
 
 3. Navigate through the nested menus to **SOFTWARE** \> **Policies** \> **Microsoft** \> **Windows Defender** \> **Windows Defender Exploit Guard** \> **Network Protection**.
 
+If the Key is missing,  Navigate to **SOFTWARE** \> **Microsoft** \> **Windows Defender** \> **Windows Defender Exploit Guard** \> **Network Protection**.
+
 4. Select **EnableNetworkProtection** to see the current state of network protection on the device:
 
    - 0, or **Off**
    - 1, or **On**
    - 2, or **Audit** mode
 
-    :::image type="content" alt-text="Network Protection registry key." source="../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png" lightbox="../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png":::
+    :::image type="content" source="../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png" alt-text="Network Protection registry key" lightbox="../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png":::
 
 ## Enable network protection
 
@@ -56,7 +59,7 @@ Enable network protection by using any of these methods:
 
 - [PowerShell](#powershell)
 - [Mobile Device Management (MDM)](#mobile-device-management-mdm)
-- [Microsoft Endpoint Manager / Intune](#microsoft-endpoint-manager-formerly-intune)
+- [Microsoft Endpoint Manager](#microsoft-endpoint-manager)
 - [Group Policy](#group-policy)
 - [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
 
@@ -82,13 +85,18 @@ Enable network protection by using any of these methods:
 
 Use the [./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](/windows/client-management/mdm/policy-csp-defender) configuration service provider (CSP) to enable or disable network protection or enable audit mode.
 
-### Microsoft Endpoint Manager (formerly Intune)
+[Update Microsoft Defender antimalware platform to the latest version](https://support.microsoft.com/topic/update-for-microsoft-defender-antimalware-platform-92e21611-8cf1-8e0e-56d6-561a07d144cc) before you enable or disable network protection or enable audit mode.
+
+
+### Microsoft Endpoint Manager
 
 1. Sign into the Microsoft Endpoint Manager admin center (https://endpoint.microsoft.com).
 
 2. Go to **Devices** > **Configuration profiles** > **Create profile**.
 
-3. In the **Create a profile** flyout, select **Endpoint protection** from the list of templates, and then select **Create**.
+3. In the **Create a profile** flyout, select **Platform** and choose the **Profile Type** as **Templates**.
+
+4. In the **Template name**, Choose **Endpoint protection** from the list of templates, and then select **Create**.
 
 4. Go to **Endpoint protection** > **Basics**, provide a name for your profile, and then select **Next**.
 
@@ -153,6 +161,7 @@ Confirm network protection is enabled on a local computer by using Registry edit
 6. Complete the rest of the steps, and save the policy. 
 
 7. From the ribbon, select **Deploy** to deploy the policy to a collection.
+
 
 > [!IMPORTANT]
 > Once you deploy an Exploit Guard policy from Configuration Manager, the Exploit Guard settings will not be removed from the clients if you remove the deployment. `Delete not supported` is recorded in the Configuration Manager client's ExploitGuardHandler.log if you remove the client's Exploit Guard deployment. <!--CMADO8538577-->

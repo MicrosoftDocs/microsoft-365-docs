@@ -29,15 +29,7 @@ The data classification content explorer allows you to natively view the items t
 
 ## Prerequisites
 
-Every account that accesses and uses data classification must have a license assigned to it from one of these subscriptions:
-
-- Microsoft 365 (E5)
-- Office 365 (E5)
-- Advanced Compliance (E5) add-on
-- Advanced Threat Intelligence (E5) add-on
-- Microsoft 365 E5/A5 Info Protection & Governance
-- Microsoft 365 E5/A5 Compliance
-
+For licensing requirements, see [Information Protection: Data Classification Analytics: Over Content & Activity Explorer](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-classification-analytics-overview-content--activity-explorer)
 
 ### Permissions
 
@@ -75,6 +67,25 @@ You can also assign either or both of the roles to a custom role group to tailor
 
 A Global admin, can assign the necessary Content Explorer List Viewer, and Content Explorer Content Viewer role group membership.
 
+#### Roles and Role Groups in preview
+
+There are roles and role groups in preview that you can test out to fine tune your access controls.
+
+Here's a list of Microsoft Information Protection (MIP) roles that are in preview. To learn more about them, see [Roles in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+
+- Information Protection Admin
+- Information Protection Analyst
+- Information Protection Investigator
+- Information Protection Reader
+
+Here's a list of MIP role groups that are in preview. To learn more, see [Role groups in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+
+- Information Protection
+- Information Protection Admins
+- Information Protection Analysts
+- Information Protection Investigators
+- Information Protection Readers
+
 ## Content explorer
 
 Content explorer shows a current snapshot of the items that have a sensitivity label, a retention label or have been classified as a sensitive information type in your organization.
@@ -82,9 +93,6 @@ Content explorer shows a current snapshot of the items that have a sensitivity l
 ### Sensitive information types
 
 A [DLP policy](dlp-learn-about-dlp.md) can help protect sensitive information, which is defined as a **sensitive information type**. Microsoft 365 includes [definitions for many common sensitive information types](sensitive-information-type-entity-definitions.md) from across many different regions that are ready for you to use. For example, a credit card number, bank account numbers, national ID numbers, and Windows Live ID service numbers.
-
-> [!NOTE]
-> Content explorer doesn't currently scan for sensitive information types in Exchange Online.
 
 ### Sensitivity labels
 
@@ -110,29 +118,26 @@ The **export** control will create a .csv file that contains a listing of whatev
 ![data classification export control.](../media/data_classification_export_control.png)
 
 
+> [!NOTE]
+> It can take up to *seven days* for counts to be updated in content explorer.
+
 ### Search
 
-When you drill down into a location, such as an Exchange folder, or a SharePoint or OneDrive site, the **search** tool appears.
+When you drill down into a location, such as an Exchange or Teams folder, or a SharePoint or OneDrive site, the **search** tool appears.
 
 ![content explorer search tool.](../media/data_classification_search_tool.png)
 
-
 The scope of the search tool is what is displaying in the **All locations** pane and what you can search on varies depending on the selected location. 
 
-When **Exchange** is the selected location, you can search on the full email address of the mailbox, for example `user@domainname.com`.
+When **Exchange** or **Teams** is the selected location, you can search on the full email address of the mailbox, for example `user@domainname.com`.
 
 When either **SharePoint** or **OneDrive** are selected location, the search tool will appear when you drill down to site names, folders and files. 
 
-> [!NOTE]
-> **OneDrive** We have listened to your valuable feedback on OneDrive integration during our preview program. Based on that feedback, the OneDrive functionality will remain in preview till all fixes are in place. Depending on your tenant, some customers may not see OneDrive as a location. We appreciate your continued support on this.
-
 You can search on:
-
 
 |value|example  |
 |---------|---------|
 |full site name    |`https://contoso.onmicrosoft.com/sites/sitename`    |
-|root folder name - gets all subfolders    | `/sites`        |
 |file name    |    `RES_Resume_1234.txt`     |
 |text at the beginning of file name| `RES`|
 |text after an underscore character ( _ ) in file name|`Resume` or `1234`| 

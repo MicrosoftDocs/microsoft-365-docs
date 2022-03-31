@@ -22,7 +22,8 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -32,7 +33,7 @@ Turn on the preview experience setting to be among the first to try upcoming fea
 
 1. In the navigation pane, select **Settings** \> **Endpoints** \> **Advanced features**.
 
-    :::image type="content" source="../../media/atp-preview-features-new.png" alt-text="settings and preview experience image.":::
+    :::image type="content" source="../../media/atp-preview-features-new.png" alt-text="The settings and preview experience" lightbox="../../media/atp-preview-features-new.png":::
 
 
 2. Toggle the setting between **On** and **Off** and select **Save preferences**.
@@ -41,5 +42,5 @@ Turn on the preview experience setting to be among the first to try upcoming fea
 - [Update general settings in Microsoft Defender for Endpoint](data-retention-settings.md)
 - [Turn on advanced features in Microsoft Defender for Endpoint](advanced-features.md)
 - [Configure email notifications in Microsoft Defender for Endpoint](configure-email-notifications.md)
-- [Enable SIEM integration in Microsoft Defender for Endpoint](enable-siem-integration.md)
+
 

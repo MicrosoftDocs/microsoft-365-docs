@@ -13,6 +13,7 @@ ms.localizationpriority: medium
 ms.assetid:
 ms.collection:
   - M365-security-compliance
+ms.custom:
 description: Admins can learn how to create, modify, and delete the anti-phishing policies that are available in Exchange Online Protection (EOP) organizations with or without Exchange Online mailboxes.
 ms.technology: mdo
 ms.prod: m365-security
@@ -83,7 +84,7 @@ To increase the effectiveness of anti-phishing protection, you can create custom
 
 Creating a custom anti-phishing policy in the Microsoft 365 Defender portal creates the anti-phish rule and the associated anti-phish policy at the same time using the same name for both.
 
-1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-phishing** in the **Policies** section.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-phishing** in the **Policies** section. To go directly to the **Anti-phishing** page, use <https://security.microsoft.com/antiphishing>.
 
 2. On the **Anti-phishing** page, click ![Create icon.](../../media/m365-cc-sc-create-icon.png) **Create**.
 
@@ -104,7 +105,7 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
 
    Multiple values in the same condition use OR logic (for example, _\<recipient1\>_ or _\<recipient2\>_). Different conditions use AND logic (for example, _\<recipient1\>_ and _\<member of group 1\>_).
 
-   - **Exclude these users, groups, and domains**: To add exceptions for the internal recipients that the policy applies to (recpient exceptions), select this option and configure the exceptions. The settings and behavior are exactly like the conditions.
+   - **Exclude these users, groups, and domains**: To add exceptions for the internal recipients that the policy applies to (recipient exceptions), select this option and configure the exceptions. The settings and behavior are exactly like the conditions.
 
    When you're finished, click **Next**.
 
@@ -120,13 +121,13 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
 6. On the **Actions** page that appears, configure the following settings:
    - **If message is detected as spoof**: This setting is available only if you selected **Enable spoof intelligence** on the previous page. Select one of the following actions in the drop down list for messages from blocked spoofed senders:
      - **Move message to the recipients' Junk Email folders**
-     - **Quarantine the message**: If you select this action, an **Apply quarantine policy** box appears where you select the quarantine policy that applies to messages that are quarantined by spoof intelligence protection. Quarantine policies define what users are able to do to quarantined messages. For more information, see [Quarantine policies](quarantine-policies.md).
+     - **Quarantine the message**: If you select this action, an **Apply quarantine policy** box appears where you select the quarantine policy that applies to messages that are quarantined by spoof intelligence protection. Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Quarantine policies](quarantine-policies.md).
 
        A blank **Apply quarantine policy** value means the default quarantine policy is used (DefaultFullAccessPolicy for spoof intelligence detections). When you later edit the anti-phishing policy or view the settings, the default quarantine policy name is shown. For more information about default quarantine policies that are used for supported protection filtering verdicts, see [this table](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features).
 
    - **Safety tips & indicators**:
      - **Show first contact safety tip**: For more information, see [First contact safety tip](set-up-anti-phishing-policies.md#first-contact-safety-tip).
-     - **Show (?) for unauthenticated senders for spoof**<sup>\*</sup>: Adds a question mark to the sender's photo in the From box in Outlook if the message does not pass SPF or DKIM checks **and** the message does not pass DMARC or [composite authentication](email-validation-and-authentication.md#composite-authentication).
+     - **Show (?) for unauthenticated senders for spoof**<sup>\*</sup>: Adds a question mark (?) to the sender's photo in the From box in Outlook if the message does not pass SPF or DKIM checks **and** the message does not pass DMARC or [composite authentication](email-validation-and-authentication.md#composite-authentication).
      - **Show "via" tag**<sup>\*</sup>: Adds a via tag (chris@contoso.com via fabrikam.com) to the From address if it's different from the domain in the DKIM signature or the **MAIL FROM** address.
 
      To turn on a setting, select the check box. To turn it off, clear the check box.
@@ -143,7 +144,7 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
 
 ## Use the Microsoft 365 Defender portal to view anti-phishing policies
 
-1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-phishing** in the **Policies** section.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-phishing** in the **Policies** section. To go directly to the **Anti-phishing** page, use <https://security.microsoft.com/antiphishing>.
 
 2. On the **Anti-phishing** page, the following properties are displayed in the list of policies:
 
@@ -156,7 +157,7 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
 
 ## Use the Microsoft 365 Defender portal to modify anti-phishing policies
 
-1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-phishing** in the **Policies** section.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-phishing** in the **Policies** section. To go directly to the **Anti-phishing** page, use <https://security.microsoft.com/antiphishing>.
 
 2. On the **Anti-phishing** page, select a policy from the list by clicking on the name.
 
@@ -170,7 +171,7 @@ To enable or disable a policy or set the policy priority order, see the followin
 
 You can't disable the default anti-phishing policy.
 
-1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-phishing** in the **Policies** section.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-phishing** in the **Policies** section. To go directly to the **Anti-phishing** page, use <https://security.microsoft.com/antiphishing>.
 
 2. On the **Anti-phishing** page, select a custom policy from the list by clicking on the name.
 
@@ -195,7 +196,7 @@ To change the priority of a policy, you click **Increase priority** or **Decreas
 - In the Microsoft 365 Defender portal, you can only change the priority of the anti-phishing policy after you create it. In PowerShell, you can override the default priority when you create the anti-phish rule (which can affect the priority of existing rules).
 - Anti-phishing policies are processed in the order that they're displayed (the first policy has the **Priority** value 0). The default anti-phishing policy has the priority value **Lowest**, and you can't change it.
 
-1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-phishing** in the **Policies** section.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-phishing** in the **Policies** section. To go directly to the **Anti-phishing** page, use <https://security.microsoft.com/antiphishing>.
 
 2. On the **Anti-phishing** page, select a custom policy from the list by clicking on the name.
 
@@ -212,7 +213,7 @@ To change the priority of a policy, you click **Increase priority** or **Decreas
 
 When you use the Microsoft 365 Defender portal to remove a custom anti-phishing policy, the anti-phish rule and the corresponding anti-phish policy are both deleted. You can't remove the default anti-phishing policy.
 
-1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-phishing** in the **Policies** section.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-phishing** in the **Policies** section. To go directly to the **Anti-phishing** page, use <https://security.microsoft.com/antiphishing>.
 
 2. On the **Anti-phishing** page, select a custom policy from the list by clicking on the name.
 
@@ -464,7 +465,7 @@ For detailed syntax and parameter information, see [Remove-AntiPhishRule](/power
 
 To verify that you've successfully configured anti-phishing policies in EOP, do any of the following steps:
 
-- In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-phishing** in the **Policies** section. Verify the list of policies, their **Status** values, and their **Priority** values. To view more details, select the policy from the list by clicking on the name and viewing the details in the flyout that appears.
+- On the **Anti-phishing** page in the Microsoft 365 Defender portal at <https://security.microsoft.com/antiphishing>, verify the list of policies, their **Status** values, and their **Priority** values. To view more details, select the policy from the list by clicking on the name and viewing the details in the flyout that appears.
 
 - In Exchange Online PowerShell, replace \<Name\> with the name of the policy or rule, run the following command, and verify the settings:
 

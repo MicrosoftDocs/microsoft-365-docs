@@ -2,7 +2,6 @@
 title: Manage how and where Microsoft Defender Antivirus receives updates
 description: Manage the fallback order for how Microsoft Defender Antivirus receives protection updates.
 keywords: updates, security baselines, protection, fallback order, ADL, MMPC, UNC, file path, share, wsus
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -24,7 +23,8 @@ ms.collection: m365-security-compliance
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=22154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 <a id="protection-updates"></a>
 <!-- this has been used as anchor in VDI content -->
@@ -43,7 +43,7 @@ This article describes how to specify from where updates should be downloaded (t
 
 ## Fallback order
 
-Typically, you configure endpoints to individually download updates from a primary source followed by other sources in order of priority, based on your network configuration. Updates are obtained from sources in the order you specify. If a source is not available, the next source in the list is used immediately.
+Typically, you configure endpoints to individually download updates from a primary source followed by other sources in order of priority, based on your network configuration. Updates are obtained from sources in the order you specify. If updates from the current source are out-of-date, the next source in the list is used immediately.
 
 When updates are published, some logic is applied to minimize the size of the update. In most cases, only the differences between the latest update and the update that is currently installed (this is referred to as the delta) on the device is downloaded and applied. However, the size of the delta depends on two main factors:
 
@@ -58,11 +58,11 @@ There are five locations where you can specify where an endpoint should obtain u
 - [Windows Server Update Service](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus) <sup>[[1](#fn1)]<sup></sup>  
 - [Microsoft Endpoint Configuration Manager](/configmgr/core/servers/manage/updates)
 - [Network file share](#unc-share)
-- [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/wdsi/defenderupdates) <sup>[[2](#fn1)]<sup></sup>
+- [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft anti-malware](https://www.microsoft.com/wdsi/defenderupdates) <sup>[[2](#fn1)]<sup></sup>
 
-  (<a id="fn1">1</a>) Intune Internal Definition Update Server - If you use SCCM/SUP to get definition updates for Microsoft Defender Antivirus, and need to access Windows Update on blocked on client devices, you can transition to co-management and offload the endpoint protection workload to Intune. In the AntiMalware policy configured in Intune there is an option for 'internal definition update server' which can be configured to use on-premises WSUS as the update source. This helps you control which updates from the official WU server are approved for the enterprise, and also help proxy and save network traffic to the official Windows UPdates network.
+(<a id="fn1">1</a>) Intune Internal Definition Update Server - If you use SCCM/SUP to get definition updates for Microsoft Defender Antivirus, and need to access Windows Update on blocked on client devices, you can transition to co-management and offload the endpoint protection workload to Intune. In the anti-malware policy configured in Intune there is an option for 'internal definition update server' which can be configured to use on-premises WSUS as the update source. This helps you control which updates from the official WU server are approved for the enterprise, and also help proxy and save network traffic to the official Windows UPdates network.
 
-  (<a id="fn1">2</a>) Your policy and registry might have this listed as Microsoft Malware Protection Center (MMPC) security intelligence, its former name.
+(<a id="fn1">2</a>) Your policy and registry might have this listed as Microsoft Malware Protection Center (MMPC) security intelligence, its former name.
 
 To ensure the best level of protection, Microsoft Update allows for rapid releases, which means smaller downloads on a frequent basis. The Windows Server Update Service, Microsoft Endpoint Configuration Manager, and Microsoft security intelligence updates sources deliver less frequent updates. Thus, the delta can be larger, resulting in larger downloads.
 
@@ -81,7 +81,7 @@ Each source has typical scenarios that depend on how your network is configured,
 |Microsoft Update|You want your endpoints to connect directly to Microsoft Update. This can be useful for endpoints that irregularly connect to your enterprise network, or if you do not use Windows Server Update Service to manage your updates.|
 |File share|You have non-Internet-connected devices (such as VMs). You can use your Internet-connected VM host to download the updates to a network share, from which the VMs can obtain the updates. See the [VDI deployment guide](deployment-vdi-microsoft-defender-antivirus.md) for how file shares can be used in virtual desktop infrastructure (VDI) environments.|
 |Microsoft Endpoint Manager|You are using Microsoft Endpoint Manager to update your endpoints.|
-|Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware (formerly referred to as MMPC)|[Make sure your devices are updated to support SHA-2](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus). Microsoft Defender Antivirus Security intelligence updates are delivered through Windows Update, and starting Monday October 21, 2019 security intelligence updates will be SHA-2 signed exclusively. <br/>Download the latest protection updates because of a recent infection or to help provision a strong, base image for [VDI deployment](deployment-vdi-microsoft-defender-antivirus.md). This option should generally be used only as a final fallback source, and not the primary source. It will only be used if updates cannot be downloaded from Windows Server Update Service or Microsoft Update for [a specified number of days](/windows/threat-protection/microsoft-defender-antivirus/manage-outdated-endpoints-microsoft-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date).|
+|Security intelligence updates for Microsoft Defender Antivirus and other Microsoft anti-malware (formerly referred to as MMPC)|[Make sure your devices are updated to support SHA-2](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus). Microsoft Defender Antivirus Security intelligence updates are delivered through Windows Update, and starting Monday October 21, 2019 security intelligence updates will be SHA-2 signed exclusively. <br/>Download the latest protection updates because of a recent infection or to help provision a strong, base image for [VDI deployment](deployment-vdi-microsoft-defender-antivirus.md). This option should generally be used only as a final fallback source, and not the primary source. It will only be used if updates cannot be downloaded from Windows Server Update Service or Microsoft Update for [a specified number of days](/windows/threat-protection/microsoft-defender-antivirus/manage-outdated-endpoints-microsoft-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date).|
 
 You can manage the order in which update sources are used with Group Policy, Microsoft Endpoint Configuration Manager, PowerShell cmdlets, and WMI.
 
@@ -104,7 +104,7 @@ The procedures in this article first describe how to set the order, and then how
 
    2. Enter the order of sources, separated by a single pipe, for example: `InternalDefinitionUpdateServer|MicrosoftUpdateServer|MMPC`, as shown in the following screenshot.
 
-      :::image type="content" source="../../media/wdav-order-update-sources.png" alt-text="group policy setting listing the order of sources.":::
+      :::image type="content" source="../../media/wdav-order-update-sources.png" alt-text="Group policy setting listing the order of sources" lightbox="../../media/wdav-order-update-sources.png":::
 
    3. Select **OK**. This will set the order of protection update sources.
 
@@ -136,7 +136,7 @@ See the following articles for more information:
 - [Set-MpPreference -SignatureFallbackOrder](/powershell/module/defender/set-mppreference)
 - [Set-MpPreference -SignatureDefinitionUpdateFileSharesSource](/powershell/module/defender/set-mppreference#-signaturedefinitionupdatefilesharessources)
 - [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md)
-- [Defender cmdlets](/powershell/module/defender/index)
+- [Defender Antivirus cmdlets](/powershell/module/defender/index)
 
 ## Use Windows Management Instruction (WMI) to manage the update location
 
@@ -192,7 +192,7 @@ Set up a network file share (UNC/mapped drive) to download security intelligence
 
 6. Extract the file.
 
-7. Copy the file SignatureDownloadCustomTask.ps1 to the folder you previously created, C:\Tool\PS-Scripts\ .
+7. Copy the file SignatureDownloadCustomTask.ps1 to the folder you previously created, `C:\Tool\PS-Scripts\` .
 
 8. Use the command line to set up the scheduled task.
 
@@ -240,12 +240,12 @@ Set up a network file share (UNC/mapped drive) to download security intelligence
        ```
 
    > [!NOTE]
-   > When the scheduled tasks are created, you can find these in the Task Scheduler under Microsoft\Windows\Windows Defender
+   > When the scheduled tasks are created, you can find these in the Task Scheduler under `Microsoft\Windows\Windows Defender`.
 
-9. Run each task manually and verify that you have data (mpam-d.exe, mpam-fe.exe, and nis_full.exe) in the following folders (you might have chosen different locations):
+9. Run each task manually and verify that you have data (`mpam-d.exe`, `mpam-fe.exe`, and `nis_full.exe`) in the following folders (you might have chosen different locations):
 
-   - C:\Temp\TempSigs\x86
-   - C:\Temp\TempSigs\x64
+   - `C:\Temp\TempSigs\x86`
+   - `C:\Temp\TempSigs\x64`
 
    If the scheduled task fails, run the following commands:
 
@@ -262,10 +262,10 @@ Set up a network file share (UNC/mapped drive) to download security intelligence
     > [!NOTE]
     > Issues could also be due to execution policy.
 
-10. Create a share pointing to C:\Temp\TempSigs (e.g., \\server\updates).
+10. Create a share pointing to `C:\Temp\TempSigs` (e.g., `\\server\updates`).
 
     > [!NOTE]
-    > At a minimum, authenticated users must have "Read" access.
+    > At a minimum, authenticated users must have "Read" access. This requirement also applies to domain computers, the share, and NTFS (security).
 
 11. Set the share location in the policy to the share.
 

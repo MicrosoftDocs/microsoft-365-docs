@@ -3,8 +3,6 @@ title: Partner applications in Microsoft Defender for Endpoint
 ms.reviewer:
 description: View supported partner applications to enhance the detection, investigation, and threat intelligence capabilities of the platform
 keywords: partners, applications, third-party, connections, sentinelone, lookout, bitdefender, corrata, morphisec, paloalto, ziften, better mobile
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -24,7 +22,7 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -49,7 +47,7 @@ Microsoft Defender for Endpoint seamlessly integrates with existing security sol
 Logo|Partner name|Description
 :---|:---|:---
 ![Image of AttackIQ logo.](images/attackiq-logo.png)|[AttackIQ Platform](https://go.microsoft.com/fwlink/?linkid=2103502)|AttackIQ Platform validates Defender for Endpoint is configured properly by launching continuous attacks safely on production assets
-![Image of Azure Sentinel logo.](images/sentinel-logo.png)|[AzureSentinel](https://go.microsoft.com/fwlink/?linkid=2135705)|Stream alerts from Microsoft Defender for Endpoint into Azure Sentinel
+![Image of Microsoft Sentinel logo.](images/sentinel-logo.png)|[AzureSentinel](https://go.microsoft.com/fwlink/?linkid=2135705)|Stream alerts from Microsoft Defender for Endpoint into Microsoft Sentinel
 ![Image of Cymulate logo.](images/cymulate-logo.png)|[Cymulate](https://go.microsoft.com/fwlink/?linkid=2135574)|Correlate Defender for Endpoint findings with simulated attacks to validate accurate detection and effective response actions
 ![Image of Elastic security logo.](images/elastic-security-logo.png)|[Elastic Security](https://go.microsoft.com/fwlink/?linkid=2139303)|Elastic Security is a free and open solution for preventing, detecting, and responding to threats
 ![Image of IBM QRadar logo.](images/ibm-qradar-logo.png)|[IBM QRadar](https://go.microsoft.com/fwlink/?linkid=2113903)|Configure IBM QRadar to collect detections from Defender for Endpoint
@@ -86,6 +84,7 @@ Logo|Partner name|Description
 :---|:---|:---
 ![Image of Aruba ClearPass Policy Manager logo.](images/aruba-logo.png)|[Aruba ClearPass Policy Manager](https://go.microsoft.com/fwlink/?linkid=2127544)|Ensure Defender for Endpoint is installed and updated on each endpoint before allowing access to the network
 ![Image of Blue Hexagon for Network logo.](images/bluehexagon-logo.png)|[Blue Hexagon for Network](https://go.microsoft.com/fwlink/?linkid=2104613)|Blue Hexagon has built the industry's first real-time deep learning platform for network threat protection
+![Image of Corelight logo.](images/logo-corelight.png)| [Corelight]( https://corelight.com/integrations/iot-security)| Using data, sent from Corelight network appliances, Microsoft 365 Defender gains increased visibility into the network activities of unmanaged devices, including communication with other unmanaged devices or external networks.
 ![Image of CyberMDX logo.](images/cybermdx-logo.png)|[CyberMDX](https://go.microsoft.com/fwlink/?linkid=2135620)|Cyber MDX integrates comprehensive healthcare assets visibility, threat prevention and repose into your Defender for Endpoint environment
 ![Image of HYAS Protect logo.](images/hyas-logo.png)|[HYAS Protect](https://go.microsoft.com/fwlink/?linkid=2156763)|HYAS Protect utilizes authoritative knowledge of attacker infrastructure to proactively protect Microsoft Defender for Endpoint endpoints from cyberattacks
 ![Image of Vectra Network Detection and Response (NDR) logo.](images/vectra-logo.png)|[Vectra Network Detection and Response (NDR)](https://go.microsoft.com/fwlink/?linkid=866934)|Vectra applies AI & security research to detect and respond to cyber-attacks in real time
@@ -106,12 +105,12 @@ Logo|Partner name|Description
 Logo|Partner name|Description
 :---|:---|:---
 ![Image of Cyren Web Filter logo.](images/cyren-logo.png)|[Cyren Web Filter](https://go.microsoft.com/fwlink/?linkid=2108221)|Enhance your Defender for Endpoint with advanced Web Filtering
-![Image of Morphisec logo.](images/morphisec-logo.png)|[Morphisec](https://go.microsoft.com/fwlink/?linkid=2086215)|Provides Moving Target Defense-powered advanced threat prevention. Integrates forensics data directly into WD Security Center dashboards to help prioritize alerts, determine device at-risk score and visualize full attack timeline including internal memory information
+![Image of Morphisec logo.](images/morphisec-logo.png)|[Morphisec](https://go.microsoft.com/fwlink/?linkid=2086215)|Provides Moving Target Defense-powered advanced threat prevention. Integrates forensics data directly into WD Defender for Cloud dashboards to help prioritize alerts, determine device at-risk score and visualize full attack timeline including internal memory information
 ![Image of THOR Cloud logo.](images/nextron-thor-logo.png)|[THOR Cloud](https://go.microsoft.com/fwlink/?linkid=862988)|Provides on-demand live forensics scans using a signature base with focus on persistent threats
 
 ## SIEM integration
 
-Defender for Endpoint supports SIEM integration through various of methods. This can include specialized SIEM system interface with out of the box connectors, a generic alert API enabling custom implementations, and an action API enabling alert status management. For more information, see [Enable SIEM integration](enable-siem-integration.md).
+Defender for Endpoint supports SIEM integration through various of methods. This can include specialized SIEM system interface with out of the box connectors, a generic alert API enabling custom implementations, and an action API enabling alert status management.
 
 ## Ticketing and IT service management
 

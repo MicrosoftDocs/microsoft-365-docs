@@ -2,7 +2,6 @@
 title: Web protection
 description: Learn about the web protection in Microsoft Defender for Endpoint and how it can protect your organization
 keywords: web protection, web threat protection, web browsing, security, phishing, malware, exploit, websites, network protection, Edge, Internet Explorer, Chrome, Firefox, web browser, malicious websites
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -24,7 +23,8 @@ ms.technology: mde
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -35,7 +35,7 @@ ms.technology: mde
 
 Web protection in Microsoft Defender for Endpoint is a capability made up of [Web threat protection](web-threat-protection.md), [Web content filtering](web-content-filtering.md), and [Custom indicators](manage-indicators.md). Web protection lets you secure your devices against web threats and helps you regulate unwanted content. You can find Web protection reports in the Microsoft 365 Defender portal by going to **Reports > Web protection**.
 
-:::image type="content" alt-text="Image of all web protection cards." source="images/web-protection.png" lightbox="images/web-protection.png":::
+:::image type="content" source="images/web-protection.png" alt-text="The web protection cards" lightbox="images/web-protection.png":::
 
 ### Web threat protection
 
@@ -77,7 +77,7 @@ For more information, see [Web content filtering](web-content-filtering.md).
 
 Web protection is made up of the following components, listed in order of precedence. Each of these components is enforced by the SmartScreen client in Microsoft Edge and by the Network Protection client in all other browsers and processes.
 
-- Custom indicators (IP/URL, Microsoft Cloud App Security (MCAS) policies)
+- Custom indicators (IP/URL, Microsoft Defender for Cloud Apps policies)
   - Allow
   - Warn
   - Block
@@ -89,7 +89,7 @@ Web protection is made up of the following components, listed in order of preced
 - Web Content Filtering (WCF)
 
 > [!NOTE]
-> Microsoft Cloud App Security (MCAS) currently generates indicators only for blocked URLs.
+> Microsoft Defender for Cloud Apps currently generates indicators only for blocked URLs.
 
 The order of precedence relates to the order of operations by which a URL or IP is evaluated. For example, if you have a web content filtering policy you can create exclusions through custom IP/URL indicators. Custom Indicators of compromise (IoC) are higher in the order of precedence than WCF blocks.
 
@@ -101,7 +101,7 @@ The table below summarizes some common configurations that would present conflic
 
 ****
 
-|Custom Indicator policy|Web threat policy|WCF policy|MCAS policy|Result|
+|Custom Indicator policy|Web threat policy|WCF policy|Defender for Cloud Apps policy|Result|
 |---|---|---|---|---|
 |Allow|Block|Block|Block|Allow (Web protection override)|
 |Allow|Allow|Block|Block|Allow (WCF exception)|
@@ -114,7 +114,7 @@ Internal IP addresses are not supported by custom indicators. For a warn policy 
 
 In all web protection scenarios, SmartScreen and Network Protection can be used together to ensure protection across both first and third-party browsers and processes. SmartScreen is built directly into Microsoft Edge, while Network Protection monitors traffic in third-party browsers and processes. The diagram below illustrates this concept. This diagram of the two clients working together to provide multiple browser/app coverages is accurate for all features of Web Protection (Indicators, Web Threats, Content Filtering).
 
-:::image type="content" alt-text="Using SmartScreen and Network Protection together." source="../../media/web-protection-protect-browsers.png" lightbox="../../media/web-protection-protect-browsers.png":::
+:::image type="content" source="../../media/web-protection-protect-browsers.png" alt-text="The usage of smartScreen and Network Protection together" lightbox="../../media/web-protection-protect-browsers.png":::
 
 ## Troubleshoot endpoint blocks
 
@@ -132,7 +132,7 @@ The table below shows the responses and their correlated features.
 |---|---|
 |CustomPolicy|WCF|
 |CustomBlockList|Custom indicators|
-|CasbPolicy|MCAS|
+|CasbPolicy|Defender for Cloud Apps|
 |Malicious|Web threats|
 |Phishing|Web threats|
 |||
@@ -142,21 +142,21 @@ The table below shows the responses and their correlated features.
 Kusto queries in advanced hunting can be used to summarize web protection blocks in your organization for up to 30 days. These queries use the information listed above to distinguish between the various sources of blocks and summarize them in a user-friendly manner. For example, the query below lists all WCF blocks originating from Microsoft Edge.
 
 ```kusto
-DeviceEvents 
-| where ActionType == "SmartScreenUrlWarning"
-| extend ParsedFields=parse_json(AdditionalFields)
-| project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, Experience=tostring(ParsedFields.Experience)
-| where Experience == "CustomPolicy"
+DeviceEvents
+| where ActionType == "SmartScreenUrlWarning"
+| extend ParsedFields=parse_json(AdditionalFields)
+| project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, Experience=tostring(ParsedFields.Experience)
+| where Experience == "CustomBlockList"
 ```
 
 Similarly, you can use the query below to list all WCF blocks originating from Network Protection (for example, a WCF block in a third-party browser). Note that the ActionType has been updated and 'Experience' has been changed to 'ResponseCategory'.
 
 ```kusto
-DeviceEvents 
-| where ActionType == "ExploitGuardNetworkProtectionBlocked"
-| extend ParsedFields=parse_json(AdditionalFields)
-| project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, ResponseCategory=tostring(ParsedFields.ResponseCategory)
-| where ResponseCategory == "CustomPolicy"
+DeviceEvents
+| where ActionType == "ExploitGuardNetworkProtectionBlocked"
+| extend ParsedFields=parse_json(AdditionalFields)
+| project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, ResponseCategory=tostring(ParsedFields.ResponseCategory)
+| where ResponseCategory == "CustomPolicy"
 ```
 
 To list blocks that are due to other features (like Custom Indicators), refer to the table above outlining each feature and their respective response category. These queries may also be modified to search for telemetry related to specific machines in your organization. Note that the ActionType shown in each query above will show only those connections that were blocked by a Web Protection feature, and not all network traffic.
@@ -166,17 +166,17 @@ To list blocks that are due to other features (like Custom Indicators), refer to
 If a user visits a web page that poses a risk of malware, phishing, or other web threats, Microsoft Edge will trigger a block page that reads ‘This site has been reported as unsafe’ along with information related to the threat.
 
 > [!div class="mx-imgBorder"]
-> ![Page blocked by Microsoft Edge.](../../media/web-protection-malicious-block.png)
+> :::image type="content" source="../../media/web-protection-malicious-block.png" alt-text="The page blocked by Microsoft Edge" lightbox="../../media/web-protection-malicious-block.png":::
 
 If blocked by WCF or a custom indicator, a block page shows in Microsoft Edge that tells the user this site is blocked by their organization.
 
 > [!div class="mx-imgBorder"]
-> ![Page blocked by your organization.](../../media/web-protection-indicator-blockpage.png)
+> :::image type="content" source="../../media/web-protection-indicator-blockpage.png" alt-text="The page blocked by your organization" lightbox="../../media/web-protection-indicator-blockpage.png":::
 
 In any case, no block pages are shown in third-party browsers, and the user sees a ‘Secure Connection Failed’ page along with a toast notification. Depending on the policy responsible for the block, a user will see a different message in the toast notification. For example, web content filtering will display the message ‘This content is blocked’.
 
 > [!div class="mx-imgBorder"]
-> ![Page blocked by WCF.](../../media/web-protection-np-block.png)
+> :::image type="content" source="../../media/web-protection-np-block.png" alt-text="The page blocked by WCF" lightbox="../../media/web-protection-np-block.png":::
 
 ## Report false positives
 

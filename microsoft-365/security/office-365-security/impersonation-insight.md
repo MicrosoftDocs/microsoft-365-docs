@@ -17,7 +17,8 @@ ms.assetid:
 ms.collection:
   - M365-security-compliance
 description: Admins can learn how the impersonation insight works. They can quickly determine which senders are legitimately sending email into their organizations from domains that don't pass email authentication checks (SPF, DKIM, or DMARC).
-ms.custom: seo-marvel-apr2020
+ms.custom: 
+- seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
 ---
@@ -46,7 +47,7 @@ You can use the impersonation insight in the Microsoft 365 Defender portal to qu
 
 ## What do you need to know before you begin?
 
-- You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. To go directly to the impersonation insight on the **Anti-phishing** page, use <https://security.microsoft.com/antiphishing>. To go directly to the **Impersonation insight** page, use <https://security.microsoft.com/impersonationinsight>.
+- You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. To go directly to the **Anti-phishing** page, use <https://security.microsoft.com/antiphishing>. To go directly to the **Impersonation insight** page, use <https://security.microsoft.com/impersonationinsight>.
 
 - You need to be assigned permissions in the Microsoft 365 Defender portal before you can do the procedures in this article:
   - **Organization Management**
@@ -62,11 +63,11 @@ You can use the impersonation insight in the Microsoft 365 Defender portal to qu
 
 ## Open the impersonation insight in the Microsoft 365 Defender portal
 
-1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-phishing** in the **Policies** section.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-phishing** in the **Policies** section. To go directly to the **Anti-phishing** page, use <https://security.microsoft.com/antiphishing>.
 
 2. On the **Anti-phishing** page, the impersonation insight looks like this:
 
-   ![Impersonation insight and spoof intelligence on the Anti-phishing policy page.](../../media/m365-sc-impersonation-and-spoof-intelligence-insight.png)
+   :::image type="content" source="../../media/m365-sc-impersonation-and-spoof-intelligence-insight.png" alt-text="The impersonation insight and spoof intelligence on the Anti-phishing policy page" lightbox="../../media/m365-sc-impersonation-and-spoof-intelligence-insight.png":::
 
    The insight has two modes:
 

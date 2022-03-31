@@ -32,9 +32,9 @@ While our goal is to deliver all commercial features and functionality to custom
 
 The following list includes the existing gaps between AIP for Office 365 operated by 21Vianet and our commercial offerings as of January 2021:
 
-- Information Rights Management (IRM) is supported only for Microsoft 365 Apps for enterprise (build 11731.10000 or higher). Office 2010, Office 2013, and other Office 2016 versions are not supported.
+- Active Directory Rights Management Services (AD RMS) encryption is supported only in Microsoft 365 Apps for enterprise (build 11731.10000 or later). Office Professional Plus doesn't support AD RMS.
 
-- Migration from Active Directory Rights Management Services (AD RMS) to AIP is currently not available.
+- Migration from AD RMS to AIP is currently not available.
   
 - Sharing of protected emails with users in the commercial cloud is supported.
   
@@ -47,6 +47,10 @@ The following list includes the existing gaps between AIP for Office 365 operate
 - The [Mobile Viewer](/azure/information-protection/rms-client/mobile-app-faq) is not supported by Azure China 21Vianet.
 
 - The AIP area of the Azure portal is unavailable to customers in China. Use [PowerShell commands](#step-6-install-the-aip-on-premises-scanner-and-manage-content-scan-jobs) instead of performing actions in the portal, such as managing and running your content scan jobs.
+
+- AIP endpoints in Office 365 operated by 21Vianet are different than the endpoints required for other cloud services. Network connectivity from clients to the following endpoints is required:
+    - Download label and label policies: `*.protection.partner.outlook.cn`
+    - Azure Rights Management service: `*.aadrm.cn`
 
 ## Configure AIP for customers in China
 
@@ -79,9 +83,17 @@ For the encryption to work correctly, RMS must be enabled for the tenant.
 
 ### Step 2: Add the Microsoft Information Protection Sync Service service principal
 
-The **Microsoft Information Protection Sync Service** service principal is not available in Azure China tenants by default, and is required for Azure Information Protection.
+The **Microsoft Information Protection Sync Service** service principal is not available in Azure China tenants by default, and is required for Azure Information Protection. Create this service principal manually via the Azure Az PowerShell module.
 
-1. Create this service principal manually using the [New-AzADServicePrincipal](/powershell/module/az.resources/new-azadserviceprincipal) cmdlet and the `870c4f2e-85b6-4d43-bdda-6ed9a579b725` application ID for the Microsoft Information Protection Sync Service. 
+1. If you don't have the Azure Az module installed, install it or use a resource where the Azure Az module comes preinstalled, such as [Azure Cloud Shell](/azure/cloud-shell/overview). For more information, see [Install the Azure Az PowerShell module](/powershell/azure/install-az-ps).
+
+1. Connect to the service using the [Connect-AzAccount](/powershell/module/az.accounts/Connect-AzAccount) cmdlet and the `azurechinacloud` environment name:
+
+    ```powershell
+    Connect-azaccount -environmentname azurechinacloud
+    ```
+
+1. Create the **Microsoft Information Protection Sync Service** service principal manually using the [New-AzADServicePrincipal](/powershell/module/az.resources/new-azadserviceprincipal) cmdlet and the `870c4f2e-85b6-4d43-bdda-6ed9a579b725` application ID for the Microsoft Information Protection Sync Service:
 
     ```powershell 
     New-AzADServicePrincipal -ApplicationId 870c4f2e-85b6-4d43-bdda-6ed9a579b725

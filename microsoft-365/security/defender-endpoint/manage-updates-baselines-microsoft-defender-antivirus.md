@@ -2,7 +2,6 @@
 title: Manage Microsoft Defender Antivirus updates and apply baselines
 description: Manage how Microsoft Defender Antivirus receives protection and product updates.
 keywords: updates, security baselines, protection, schedule updates, force updates, mobile updates, wsus
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -16,15 +15,16 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 11/02/2021
-ms.collection: M365-security-compliance
+ms.date: 03/22/2022
+ms.collection: 
+- M365-security-compliance
+- m365initiative-defender-endpoint
 ---
 
 # Manage Microsoft Defender Antivirus updates and apply baselines
 
 **Applies to:**
-
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plans 1 and 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Microsoft Defender Antivirus
 
 Keeping Microsoft Defender Antivirus up to date is critical to assure your devices have the latest technology and features needed to protect against new malware and attack techniques. Make sure to update your antivirus protection, even if Microsoft Defender Antivirus is running in [passive mode](microsoft-defender-antivirus-compatibility.md). There are two types of updates related to keeping Microsoft Defender Antivirus up to date:
@@ -37,11 +37,10 @@ Keeping Microsoft Defender Antivirus up to date is critical to assure your devic
 
 ## Security intelligence updates
 
-Microsoft Defender Antivirus uses [cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md) (also called the Microsoft Advanced Protection Service or MAPS) and periodically downloads security intelligence updates to provide protection.
+Microsoft Defender Antivirus uses [cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md) (also called the Microsoft Advanced Protection Service or MAPS) and periodically downloads dynamic security intelligence updates to provide additional protection. These dynamic updates do not take the place of regular security intelligence updates via security intelligence update KB2267602.
 
 > [!NOTE]
-> Updates are released under the below KB numbers:
->
+> Updates are released under the following KBs:
 > - Microsoft Defender Antivirus: KB2267602
 > - System Center Endpoint Protection: KB2461484
 
@@ -64,11 +63,10 @@ You can manage the distribution of updates through one of the following methods:
 For more information, see [Manage the sources for Microsoft Defender Antivirus protection updates](/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus).
 
 > [!NOTE]
->
 > - Monthly updates are released in phases, resulting in multiple packages visible in your [Window Server Update Services](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus).
 > - This article lists changes that are included in the broad release channel. [See the latest broad channel release here](https://www.microsoft.com/security/encyclopedia/adlpackages.aspx?action=info).
 > - To learn more about the gradual rollout process, and to see more information about the next release, see [Manage the gradual rollout process for Microsoft Defender updates](manage-gradual-rollout.md).
-> - To learn more about security intelligence updates, see [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/wdsi/defenderupdates).
+> - To learn more about security intelligence updates, see [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/en-us/wdsi/defenderupdates).
 > - If you're looking for a list of Microsoft Defender processes, **[download the mde-urls workbook](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)**, and then select the **Microsoft Defender Processes** worksheet. The mde-urls workbook also lists the services and their associated URLs that your network must be able to connect to, as described in [Enable access to Microsoft Defender for Endpoint service URLs in the proxy server](configure-proxy-internet.md).
 
 ## Monthly platform and engine versions
@@ -82,13 +80,104 @@ All our updates contain
 - Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
-<summary> October-2021 (Platform: 4.18.2110.6| Engine: 1.1.18700.4)</summary>
+<summary>February-2022 (Platform: 4.18.2202.4 | Engine: 1.1.19000.8)</summary>
+
+&ensp;Security intelligence update version: **1.361.14.0**<br/>
+&ensp;Released: **March 14, 2022**<br/>
+&ensp;Platform: **4.18.2202.4**<br/>
+&ensp;Engine: **1.1.19000.8**<br/>
+&ensp;Support phase: **Security and Critical Updates**<br/>
+
+Engine version: 1.1.19000.8 <br/>
+Security intelligence update version: 1.361.14.0 <br/>
+
+### What's new
+
+- Improvements to detection and behavior monitoring logic
+- Fixed false positive triggering attack surface reduction detections
+- Added fix resulting in better fidelity of EDR and Advanced Hunting detection alerts
+- Defender no longer supports custom notifications on toast pop ups. Modified GPO/Intune/SCCM and docs to reflect this change.
+- Improvements to capture both information and copy of files written to removable storage. To learn more, see [Microsoft Defender for Endpoint Device Control Removable Storage Access Control, removable storage media](device-control-removable-storage-access-control.md).
+- Improved traffic output when SmartScreen service is unreachable 
+- Connectivity improvements for customers using proxies with authentication requirements
+- Fixed VDI device update bug for network FileShares 
+- EDR in block mode now supports granular device targetting with new CSPs. See [Endpoint detection and response (EDR) in block mode](edr-in-block-mode.md).
+
+### Known Issues
+
+No known issues
+
+<br/><br/>
+</details><details>
+<summary>January-2022 (Platform: 4.18.2201.10 | Engine: 1.1.18900.2)</summary>
+
+&ensp;Security intelligence update version: **1.357.8.0**<br/>
+&ensp;Released: **February 9, 2022**<br/>
+&ensp;Platform: **4.18.2201.10**<br/>
+&ensp;Engine: **1.1.18900.2**<br/>
+&ensp;Support phase: **Security and Critical Updates**<br/>
+
+Engine version: 1.1.18900.2 <br/>
+Security intelligence update version: 1.357.8.0 <br/>
+
+### What's new
+
+- Behavior monitoring improvements in filtering performance
+- Hardening to TrustedInstaller
+- Tamper protection improvements
+- Replaced `ScanScheduleTime` with new `ScanScheduleOffest` cmdlet in [Set-MpPreference](/powershell/module/defender/set-mppreference). This policy configures the number of minutes after midnight to perform a scheduled scan.
+- Added the `-ServiceHealthReportInterval` setting to [Set-MpPreference](/powershell/module/defender/set-mppreference). This policy configures the time interval (in minutes) to perform a scheduled scan.
+- Added the `AllowSwitchToAsyncInspection` setting to [Set-MpPreference](/powershell/module/defender/set-mppreference). This policy enables a performance optimization, that allows synchronously inspected network flows, to switch to async inspection once they have been checked and validated.
+- Performance Analyzer v2 updates: Remote PowerShell and PowerShell 7.x support added. See [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md).
+- Fixed potential duplicate packet bug in Microsoft Defender Antivirus network inspection system driver.
+
+### Known Issues
+
+No known issues
+
+<br/><br/>
+</details><details>
+<summary>November-2021 (Platform: 4.18.2111.5 | Engine: 1.1.18800.4)</summary>
+
+&ensp;Security intelligence update version: **1.355.2.0**<br/>
+&ensp;Released: **December 9th, 2021**<br/>
+&ensp;Platform: **4.18.2111.5**<br/>
+&ensp;Engine: **1.1.18800.4**<br/>
+&ensp;Support phase: **Security and Critical Updates**<br/>
+
+Engine version: 1.1.18800.4
+Security intelligence update version: 1.355.2.0
+
+### What's new
+
+- Improved CPU usage efficiency of certain intensive scenarios on Exchange servers
+- Added new device control status fields under Get-MpComputerStatus in Defender PowerShell module. For more information, see [Microsoft Defender for Endpoint Device Control Removable Storage Access Control](device-control-removable-storage-access-control.md).
+- Fixed bug in which `SharedSignatureRoot` value could not be removed when set with PowerShell
+- Fixed bug in which [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) failed to be enabled, even though Microsoft Defender for Endpoint indicated that tamper protection was turned on
+- Added supportability and bug fixes to performance analyzer for Microsoft Defender Antivirus tool. For more information, see [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md).   
+   - PowerShell ISE support added for `New-MpPerformanceRecording`
+   - Fixed bug errors for `Get-MpPerformanceReport -TopFilesPerProcess`
+   - Fixed performance recording session leak when using `New-MpPerformanceRecording` in PowerShell 7.x, remote sessions, and PowerShell ISE
+
+
+### Known Issues
+No known issues
+<br/>
+</details>
+
+
+### Previous version updates: Technical upgrade support only
+
+After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, and are provided for technical upgrade support only.<br/><br/>
+
+<details>
+<summary> October-2021 (Platform: 4.18.2110.6 | Engine: 1.1.18700.4)</summary>
 
 &ensp;Security intelligence update version: **1.353.3.0**<br/>
 &ensp;Released: **October 28th, 2021**<br/>
 &ensp;Platform: **4.18.2110.6**<br/>
 &ensp;Engine: **1.1.18700.4**<br/>
-&ensp;Support phase: **Security and Critical Updates**<br/>
+&ensp;Support phase: **Technical upgrade support (only)**<br/>
 
 Engine version: 1.1.18700.4
 Security intelligence update version: 1.353.3.0
@@ -111,7 +200,7 @@ No known issues
 &ensp;Released: **October 7th, 2021**<br/>
 &ensp;Platform: **4.18.2109.6**<br/>
 &ensp;Engine: **1.1.18600.4**<br/>
-&ensp;Support phase: **Security and Critical Updates**<br/>
+&ensp;Support phase: **Technical upgrade support (only)**<br/>
 
 Engine version: 1.1.18600.4
 Security intelligence update version: 1.351.7.0
@@ -130,27 +219,19 @@ No known issues
 &ensp;Released: **September 2, 2021**<br/>
 &ensp;Platform: **4.18.2108.7**<br/>
 &ensp;Engine: **1.1.18500.10**<br/>
-&ensp;Support phase: **Security and Critical Updates**<br/>
+&ensp;Support phase: **Technical upgrade support (only)**<br/>
 
 ### What's new
 - Improvements to the behavior monitoring engine
 - Released new [performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md)
 - Microsoft Defender Antivirus hardened against loading malicious DLLs
 - Microsoft Defender Antivirus hardened against the TrustedInstaller bypass
-- Added support for configuring per-rule [attack surface reduction rule exclusions](customize-attack-surface-reduction.md)
 - Extending file change notifications to include more data for Human-Operated Ransomware (HumOR)
 
 ### Known Issues
 No known issues
 <br/>
-</details>
-
-
-### Previous version updates: Technical upgrade support only
-
-After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, and are provided for technical upgrade support only.<br/><br/>
-
-<details>
+</details><details>
 <summary> July-2021 (Platform: 4.18.2107.4 | Engine: 1.1.18400.4)</summary>
 
 &ensp;Security intelligence update version: **1.345.13.0**<br/>
@@ -525,12 +606,12 @@ Engine: **1.1.16700.2**<br/>
 </details>
 
 <details>
-<summary> November-2019 (Platform: 4.18.1911.3 | Engine: 1.1.16600.7)</summary>
+<summary> November-2019 (Platform: 4.18.1911.3 | Engine: 1.1.16600.7)</summary>
 
-Security intelligence update version: **1.307.13.0**<br/>
-Released: **December 7, 2019**<br/>
-Platform: **4.18.1911.3**<br/>
-Engine: **1.1.17000.7**<br/>
+Security intelligence update version: **1.307.13.0**<br/>
+Released: **December 7, 2019**<br/>
+Platform: **4.18.1911.3**<br/>
+Engine: **1.1.17000.7**<br/>
 Support phase: **No support**<br/>
 
 ### What's new
@@ -585,6 +666,92 @@ We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Wind
 For more information, see [Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
+<summary>20220321.1</summary>
+
+&ensp;Package version: **20220321.1**<br/>
+&ensp;Platform version: **4.18.2202.4**<br/>
+&ensp;Engine version: **1.1.19000.8**<br/>
+&ensp;Signature version: **1.351.337.0**<br/>
+
+### Fixes
+- None
+
+### Additional information
+- None
+
+<br/>
+</details><details>
+<summary>20220305.1</summary>
+
+&ensp;Package version: **20220305.1**<br/>
+&ensp;Platform version: **4.18.2201.10**<br/>
+&ensp;Engine version: **1.1.18900.3**<br/>
+&ensp;Signature version: **1.359.1405.0**<br/>
+
+### Fixes
+- None
+
+### Additional information
+- None
+
+<br/>
+</details><details>
+<summary>20220203.1</summary>
+
+&ensp;Package version: **20220203.1**<br/>
+&ensp;Platform version: **4.18.2111.5**<br/>
+&ensp;Engine version: **1.1.18900.2**<br/>
+&ensp;Signature version: **1.357.32.0**<br/>
+
+### Fixes
+- None
+
+### Additional information
+- None
+<br/>
+</details><details>
+<summary>20220105.1</summary>
+
+&ensp;Package version: **20220105.1**<br/>
+&ensp;Platform version: **4.18.2111.5**<br/>
+&ensp;Engine version: **1.1.18800.4**<br/>
+&ensp;Signature version: **1.355.1482.0**<br/>
+
+### Fixes
+- None
+
+### Additional information
+- None
+<br/>
+</details><details>
+<summary>1.1.2112.01</summary>
+
+&ensp;Package version: **1.1.2112.01**<br/>
+&ensp;Platform version: **4.18.2110.6**<br/>
+&ensp;Engine version: **1.1.18700.4**<br/>
+&ensp;Signature version: **1.353.2283.0**<br/>
+
+### Fixes
+- None
+
+### Additional information
+- None
+<br/>
+</details><details>
+<summary>1.1.2111.02</summary>
+
+&ensp;Package version: **1.1.2111.02**<br/>
+&ensp;Platform version: **4.18.2110.6**<br/>
+&ensp;Engine version: **1.1.18700.4**<br/>
+&ensp;Signature version: **1.353.613.0**<br/>
+
+### Fixes
+- Fixed an issue pertaining to localization files
+
+### Additional information
+- None
+<br/>
+</details><details>
 <summary>1.1.2110.01</summary>
 
 &ensp;Package version: **1.1.2110.01**<br/>
@@ -793,4 +960,3 @@ For more information, see [Microsoft Defender update for Windows operating syste
 |[Manage event-based forced updates](manage-event-based-updates-microsoft-defender-antivirus.md) | You can set protection updates to be downloaded at startup or after certain cloud-delivered protection events. |
 |[Manage updates for mobile devices and virtual machines (VMs)](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)| You can specify settings, such as whether updates should occur on battery power, that are especially useful for mobile devices and virtual machines. |
 | [Microsoft Defender for Endpoint update for EDR Sensor](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac) | You can update the EDR sensor (MsSense.exe) that is included in the new Microsoft Defender for Endpoint unified solution package released in 2021.   |
-

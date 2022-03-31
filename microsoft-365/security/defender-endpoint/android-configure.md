@@ -22,7 +22,8 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 ## Conditional Access with Defender for Endpoint on Android
@@ -45,18 +46,30 @@ Defender for Endpoint on Android allows IT Administrators the ability to configu
 > Defender for Endpoint on Android would use a VPN in order to provide the Web Protection feature. This is not a regular VPN and is a local/self-looping VPN that does not take traffic outside the device.
 > For more information, see [Configure web protection on devices that run Android](/mem/intune/protect/advanced-threat-protection-manage-android).
 
+## Privacy Controls
+
+> [!IMPORTANT]
+> Privacy Controls for Microsoft Defender for Endpoint on Android is in preview. The following information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
+Following privacy controls are available for configuring the data that is sent by Defender for Endpoint from Android devices:
+
+|Threat Report     |Details      |
+|--------------------|-------------|
+|Malware report |Admins can set up privacy control for malware report - If privacy is enabled, then Defender for Endpoint will not send the malware app name and other app details as part of the malware alert report |
+|Phish report |Admins can set up privacy control for phish report - If privacy is enabled, then Defender for Endpoint will not send the domain name and details of the unsafe website as part of the phish alert report |
+|Vulnerability assessment of apps (Android-only) |By default only information about apps installed in the work profile are sent for vulnerability assessment. Admins can disable privacy to include personal apps|
 
 ## Configure vulnerability assessment of apps for BYOD devices
 
-From version 1.0.3425.0303 of Microsoft Defender for Endpoint on Android, we have the capability to run vulnerability assessment of OS and apps installed on the onboarded mobile devices.
+From version 1.0.3425.0303 of Microsoft Defender for Endpoint on Android, you'll be able to run vulnerability assessments of OS and apps installed on the onboarded mobile devices.
 
 > [!NOTE]
-> Vulnerability assessment is part of [Threat and Vulnerability management](next-gen-threat-and-vuln-mgt.md) in Microsoft Defender for Endpoint. On Android, this feature is currently in preview and may be substantially modified before it's commercially released.
+> Vulnerability assessment is part of [Threat and Vulnerability management](next-gen-threat-and-vuln-mgt.md) in Microsoft Defender for Endpoint. 
 
 **Notes about privacy related to apps from personal devices (BYOD):**
 
 - For Android Enterprise with a work profile, only apps installed on the work profile will be supported.
-- For other BYOD modes, by default, vulnerability assessment of apps will **not** be enabled. However, when the device is on administrator mode, admins can explicitly enable this feature through Microsoft Endpoint Manager to get the list of apps installed on the device. Visit the documentation to learn more.
+- For other BYOD modes, by default, vulnerability assessment of apps will **not** be enabled. However, when the device is on administrator mode, admins can explicitly enable this feature through Microsoft Endpoint Manager to get the list of apps installed on the device. For more information, see details below.
 
 ### Configure privacy for device administrator mode
 
@@ -89,26 +102,63 @@ Defender for Endpoint supports vulnerability assessment of apps in the work prof
 2. Give the policy a name; **Platform > Android Enterprise**; select the profile type.
 3. Select **Microsoft Defender for Endpoint** as the target app.
 4. In Settings page, select **Use configuration designer** and add **DefenderTVMPrivacyMode** as the key and value type as **Integer**
-   - To disable vulnerability of apps in the work profile, enter value as 1 and assign this policy to users. By default, this value is set 0.
-   - For users with key set as ‘0’, Defender will send the list of apps from the work profile to the backend service for vulnerability assessment.
+   - To disable vulnerability of apps in the work profile, enter value as `1` and assign this policy to users. By default, this value is set to `0`.
+   - For users with key set as `0`, Defender for Endpoint will send the list of apps from the work profile to the backend service for vulnerability assessment.
 5. Click **Next** and assign this profile to targeted devices/users.
 
 Turning the above privacy controls on or off will not impact the device compliance check or conditional access.
 
+## Configure privacy for phishing alert report
 
-## Configure privacy for malware threat report
+Privacy control for phish report can be used to disable the collection of domain name or website information in the phish threat report. This gives organizations the flexibility to choose whether they want to collect the domain name when a malicious or phish website is detected and blocked by Defender for Endpoint.
 
-> [!NOTE]
-> Privacy controls for Defender for Endpoint on Android is currently in preview and may be substantially modified before it's commercially released.
-
-Privacy control for malware threat report can be used to disable the collection of app details (name and package information) from the malware threat report. This gives organizations the flexibility to choose whether they want to collect the app name when a malicious app is detected. *This feature is currently only available for devices enrolled in **Android Device Administrator** mode.*
+### Configure privacy for phishing alert report on Android Device Administrator enrolled devices:
 
 Use the following steps to turn it on for targeted users:
 
 1. In [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) , go to **Devices** > **Configuration profiles** > **Create profile** and enter the following settings:
 
-   - **Platform**: Select Android device administrator
-   - **Profile**: Select “Custom” and click Create
+   - **Platform**: Select Android device administrator.
+   - **Profile**: Select "Custom" and click **Create**.
+
+2. In the **Basics** section, specify a name and description of the profile.
+
+3. In the **Configuration settings**, select Add **OMA-URI** setting:
+
+   - **Name**: Enter a unique name and description for this OMA-URI setting so you can find it easily later.
+   - OMA-URI: **./Vendor/MSFT/DefenderATP/DefenderExcludeURLInReport**
+   - Data type: Select Integer in the drop-down list.
+   - Value: Enter 1 to enable privacy setting. The default value is 0.
+
+4. Click **Next** and assign this profile to targeted devices/users.
+
+Using this privacy control will not impact the device compliance check or conditional access.
+
+### Configure privacy for phishing alert report on Android Enterprise work profile
+
+Use the following steps to turn on privacy for targeted users in the work profile:
+
+1. In [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and go to **Apps** > **App configuration policies** > **Add** > **Managed devices**.
+2. Give the policy a name, **Platform > Android Enterprise**, select the profile type.
+3. Select **Microsoft Defender for Endpoint** as the target app.
+4. In Settings page, select **Use configuration designer** and add **DefenderExcludeURLInReport** as the key and value type as **Integer**.
+   - Enter **1 to enable privacy**. The default value is 0.
+5. Click **Next** and assign this profile to targeted devices/users.
+
+Turning the above privacy controls on or off will not impact the device compliance check or conditional access.
+
+## Configure privacy for malware threat report
+
+Privacy control for malware threat report can be used to disable the collection of app details (name and package information) from the malware threat report. This gives organizations the flexibility to choose whether they want to collect the app name when a malicious app is detected.
+
+### Configure privacy for malware alert report on Android Device Administrator enrolled devices:
+
+Use the following steps to turn it on for targeted users:
+
+1. In [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) , go to **Devices** > **Configuration profiles** > **Create profile** and enter the following settings:
+
+   - **Platform**: Select Android device administrator.
+   - **Profile**: Select "Custom" and click **Create**.
 
 2. In the **Basics** section, specify a name and description of the profile.
 
@@ -117,9 +167,22 @@ Use the following steps to turn it on for targeted users:
    - **Name**: Enter a unique name and description for this OMA-URI setting so you can find it easily later.
    - OMA-URI: **./Vendor/MSFT/DefenderATP/DefenderExcludeAppInReport**
    - Data type: Select Integer in the drop-down list.
-   - Value: Enter 1 to enable privacy setting (By default, the value is 0)
+   - Value: Enter 1 to enable privacy setting. The default value is 0.
 
 4. Click **Next** and assign this profile to targeted devices/users.
+
+Using this privacy control will not impact the device compliance check or conditional access. For example, devices with a malicious app will always have a risk level of "Medium".
+
+### Configure privacy for malware alert report on Android Enterprise work profile
+
+Use the following steps to turn on privacy for targeted users in the work profile:
+
+1. In [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and go to **Apps** > **App configuration policies** > **Add** > **Managed devices**.
+2. Give the policy a name, **Platform > Android Enterprise**, select the profile type.
+3. Select **Microsoft Defender for Endpoint** as the target app.
+4. In Settings page, select **Use configuration designer** and add **DefenderExcludeAppInReport** as the key and value type as **Integer**
+   - Enter **1 to enable privacy**. The default value is 0.
+5. Click **Next** and assign this profile to targeted devices/users.
 
 Using this privacy control will not impact the device compliance check or conditional access. For example, devices with a malicious app will always have a risk level of "Medium".
 

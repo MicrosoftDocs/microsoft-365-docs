@@ -45,6 +45,11 @@ For a quick overview of communication compliance, see the [Detect workplace hara
 
 Check out how [TD Securities is using communication compliance](https://customers.microsoft.com/story/1391545301764211731-td-securities-banking-capital-markets-compliance) to address their regulatory obligations and meet their security and stability needs.
 
+To keep up with the latest communication compliance updates, select **What's new** in [communication compliance](https://compliance.microsoft.com/) for your organization.
+
+> [!IMPORTANT]
+> Communication compliance is currently available in tenants hosted in geographical regions and countries supported by Azure service dependencies. To verify that communication compliance is supported for your organization, see [Azure dependency availability by country/region](/troubleshoot/azure/general/dependency-availability-by-country).
+
 ## Scenarios for communication compliance
 
 Communication compliance policies can assist with reviewing messages in your organization in several important compliance areas:
@@ -84,12 +89,12 @@ Intelligent customizable templates in communication compliance allow you to appl
 Built-in remediation workflows allow you to quickly identify and take action on messages with policy matches in your organization. The following new features increase efficiency for investigation and remediation activities:
 
 - **Flexible remediation workflow**: New remediation workflow helps you quickly take action on policy matches, including new options to escalate messages to other reviewers and to send email notifications to users with policy matches.
-- **Conversation policy matching**: Messages in conversations are grouped by policy matches to give you more visibility about how conversations relate to your communication policies. For example, conversation policy matching in the *Pending Alerts* view will automatically show all messages in a Teams channel that have matches for your Inappropriate Content policy. Other messages in the conversation that don't match the Inappropriate Content policy would not be displayed.
+- **Conversation policy matching**: Messages in conversations are grouped by policy matches to give you more visibility about how conversations relate to your communication policies. For example, conversation policy matching in the *Pending Alerts* view will automatically show all messages in a Teams channel that have matches for your Inappropriate Content policy. Other messages in the conversation that don't match the Inappropriate Content policy wouldn't be displayed.
 - **Keyword highlighting**: Terms matching policy conditions are highlighted in the message text view to help reviewers quickly locate and remediate policy alerts.
 - **Exact and near duplicate detection**: In addition to scanning for exact terms matching communication compliance policies, near duplicate detection groups textually similar terms and messages together to help speed up your review process.
 - **Optical character recognition (OCR) (preview)**: Scan, detect, and investigate printed and handwritten text within images embedded or attached to email or Microsoft Teams chat messages.
 - **New filters**: Investigate and remediate policy alerts faster with message filters for several fields, including sender, recipient, date, domains, and many more.
-- **Improved message views**: Investigation and remediation actions are now quicker with new message source, text, and annotation views. Message attachments are now viewable to provide complete context when taking remediation actions.
+- **Improved message views**: Investigation and remediation actions are now quicker with new message source and text views. Message attachments are now viewable to provide complete context when taking remediation actions.
 - **User history**: Historical view of all user message remediation activities, such as past notifications and escalations for policy matches, now provides reviewers with more context during the remediation workflow process. First-time or repeat instances of policy matches for users are now archived and easily viewable.
 - **Pattern detected notification**: Many harassing and bullying actions take place over time and involve reoccurring instances of the same behavior by a user. The new pattern detected notification displayed in alert details helps raise attention to these alerts and this type of behavior.
 - **Translation**: Quickly investigate message details in eight languages using translate support in the remediation workflow. Messages in other languages are automatically converted to the display language of the reviewer.
@@ -132,7 +137,8 @@ In this workflow step, you identify your compliance requirements and configure a
 
 You can choose from the following policy templates in the Microsoft 365 compliance center:
 
-- **Monitor for inappropriate content**: Use this template to quickly create a policy that uses built-in classifiers to automatically detect content that may be considered inappropriate, abusive, or offensive.
+- **Monitor for inappropriate text**: Use this template to quickly create a policy that uses built-in classifiers to automatically detect text in messages that may be considered inappropriate, abusive, or offensive.
+- **Monitor for inappropriate images**: Use this template to quickly create a policy that uses built-in classifiers to automatically detect content that contains adult and racy images that may be considered as inappropriate in your organization.
 - **Monitor for sensitive information**: Use this template to quickly create a policy to scan communications containing defined sensitive information types or keywords to help make sure that important data isn't shared with people that shouldn't have access.
 - **Monitor for financial regulatory compliance**: Use this template to quickly create a policy to scan communications for references to standard financial terms associated with regulatory standards.
 - **Monitor for conflict of interest**: Use this template to quickly create a policy to monitor communications between two groups or two users to help avoid conflicts of interest.
@@ -147,7 +153,7 @@ In this step, you look deeper into the issues detected as matching your communic
 
 - **Alerts**: When a message matches a policy condition, an alert is automatically generated. For each alert, you can see the status, the severity, the time detected, and if an Advanced eDiscovery case is assigned and its status. New alerts are displayed on the communication compliance home page and the **Alerts** page and are listed in order of severity.
 - **Issue management**: For each alert, you can take investigative actions to help remediate the issue detected in the message.
-- **Document review**: During the investigation of an issue, you can use several views of the message to help properly evaluate the detected issue. The views include a conversation summary, text-only, annotated, and detail views of the communication conversation.
+- **Document review**: During the investigation of an issue, you can use several views of the message to help properly evaluate the detected issue. The views include a conversation summary, text-only, and detail views of the communication conversation.
 - **Reviewing user activity history**: View the history of user message activities and remediation actions, such as past notifications and escalations, for policy matches.
 - **Filters**: Use filters such as sender, recipient, date, and subject to quickly narrow down the message alerts that you want to review.
 

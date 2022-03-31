@@ -2,8 +2,6 @@
 title: Web content filtering
 description: Use web content filtering in Microsoft Defender for Endpoint to track and regulate access to websites based on their content categories.
 keywords: web protection, web threat protection, web browsing, monitoring, reports, cards, domain list, security, phishing, malware, exploit, websites, network protection, Edge, Internet Explorer, Chrome, Firefox, web browser
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,6 +12,7 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
 ---
@@ -23,7 +22,8 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
@@ -49,9 +49,9 @@ Before trying out this feature, make sure you meet the following requirements:
 
 - Your subscription includes one of the following: Windows 10 Enterprise E5, Microsoft 365 E5, Microsoft 365 E5 Security, Microsoft 365 E3 + Microsoft 365 E5 Security add-on, or the Microsoft Defender for Endpoint standalone license. 
 
-- You have access to Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)).
+- You have access to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
 
-- Your organization's devices are running Windows 10 Anniversary Update (version 1607) or later with the [latest antivirus/antimalware updates](manage-updates-baselines-microsoft-defender-antivirus.md).
+- Your organization's devices are running Windows 10 Anniversary Update (version 1607) or later, or Windows 11 with the [latest antivirus/antimalware updates](manage-updates-baselines-microsoft-defender-antivirus.md).
 
 - Windows Defender SmartScreen and Network Protection are enabled on your organization's devices.
 
@@ -61,7 +61,7 @@ Data is stored in the region that was selected as part of your [Microsoft Defend
 
 ## Turn on web content filtering
 
-From the left-hand navigation menu, select **Settings** \> **Endpoints** \> **General** \> **Advanced Features**. Scroll down until you see the entry for **Web content filtering**. Switch the toggle to **On** and **Save preferences**.
+From the left-hand navigation in <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, select **Settings** \> **Endpoints** \> **General** \> **Advanced Features**. Scroll down until you see the entry for **Web content filtering**. Switch the toggle to **On** and **Save preferences**.
 
 ### Configure web content filtering policies
 
@@ -156,7 +156,7 @@ Policies can be deployed to block any of the following parent or child categorie
 
 To add a new policy, follow these steps:
 
-1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), choose **Settings** > **Web content filtering** > **+ Add policy**.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, choose **Settings** > **Web content filtering** > **+ Add policy**.
 
 2. Specify a name.
 
@@ -182,7 +182,7 @@ It's possible to override the blocked category in web content filtering to allow
 
 To define a custom indicator, follow these steps:
 
-1. In the Microsoft 365 Defender portal (<https://security.microsoft.com>), go to **Settings** \> **Endpoints** \> **Indicators** \> **URL/Domain** \> **Add Item**.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Settings** \> **Endpoints** \> **Indicators** \> **URL/Domain** \> **Add Item**.
 
 2. Enter the domain of the site.
 
@@ -200,7 +200,7 @@ A panel will open where you can select the priority and add more details such as
 
 To determine the category of a website, you can use the URL search function available on the Microsoft 365 Defender portal (<https://security.microsoft.com>) under **Endpoints** \> **Search**. In the URL search results, the web content filtering category appears under **URL/Domain details**. Administrators can also dispute the category of the domain directly from this page, as shown in the following image. If the category result is not shown, the URL is not currently assigned to an existing web content filtering category.
 
-![Image of web content filtering category lookup results.](../../media/web-content-filtering-category-lookup.png)
+:::image type="content" source="../../media/web-content-filtering-category-lookup.png" alt-text="The web content filtering category lookup results" lightbox="../../media/web-content-filtering-category-lookup.png":::
 
 ## Web content filtering cards and details
 
@@ -212,25 +212,25 @@ This card lists the parent web content categories with the largest increase or d
 
 In the first 30 days of using this feature, your organization might not have enough data to display this information.
 
-![Image of web activity by category card.](images/web-activity-by-category600.png)
+:::image type="content" source="images/web-activity-by-category600.png" alt-text="The web activity by category card" lightbox="images/web-activity-by-category600.png":::
 
 ### Web content filtering  summary card
 
 This card displays the distribution of blocked access attempts across the different parent web content categories. Select one of the colored bars to view more information about a specific parent web category.
 
-![Image of web content filtering summary card.](images/web-content-filtering-summary.png)
+:::image type="content" source="images/web-content-filtering-summary.png" alt-text="The web content filtering summary card" lightbox="images/web-content-filtering-summary.png":::
 
 ### Web activity summary card
 
 This card displays the total number of requests for web content in all URLs.
 
-![Image of web activity summary card.](images/web-activity-summary.png)
+:::image type="content" source="images/web-activity-summary.png" alt-text="The web activity summary card" lightbox="images/web-activity-summary.png":::
 
 ### View card details
 
 You can access the **Report details** for each card by selecting a table row or colored bar from the chart in the card. The report details page for each card contains extensive statistical data about web content categories, website domains, and device groups.
 
-![Image of web protection report details.](images/web-protection-report-details.png)
+:::image type="content" source="images/web-protection-report-details.png" alt-text="The web protection report details" lightbox="images/web-protection-report-details.png":::
 
 - **Web categories**: Lists the web content categories that have had access attempts in your organization. Select a specific category to open a summary flyout.
 
@@ -243,6 +243,8 @@ Use the time range filter at the top left of the page to select a time period. Y
 ### Known issues and limitations
 
 Only Microsoft Edge is supported if your device's OS configuration is Server (**cmd** \> **Systeminfo** \> **OS Configuration**). Network Protection is only supported in Inspect mode on Server devices, which is responsible for securing traffic across supported third-party browsers.
+
+Only Microsoft Edge is supported and Network Protection is not supported on Windows 10 Azure Virtual Desktop multi-session hosts.
 
 Network Protection does not currently support SSL inspection, which may result in some sites being allowed by Web Content Filtering that would normally be blocked. Sites would be allowed due to a lack of visibility into encrypted traffic after the TLS handshake has taken place and an inability to parse certain redirects.  This includes redirections from some web-based mail login pages to the mailbox page. As an accepted workaround, you can create a custom block indicator for the login page to ensure no users are able to access the site. Keep in mind, this may block their access to other services associated with the same website. 
 

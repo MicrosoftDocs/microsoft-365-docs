@@ -2,8 +2,8 @@
 title: "Delete an inactive mailbox"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: 
 audience: Admin
@@ -35,9 +35,9 @@ See the [More information](#more-information) section for a description of what 
 
 - You can copy the contents of an inactive mailbox to another mailbox before you remove the hold and delete an inactive mailbox. For details, see [Restore an inactive mailbox in Office 365](restore-an-inactive-mailbox.md).
 
-- If you remove the hold or retention policy from an inactive mailbox and the soft-deleted mailbox retention period for the mailbox has expired, the mailbox will be permanently deleted. After it's deleted, it can't be recovered. Before you remove the hold, be sure that you no longer need the contents in the mailbox. If you want to reactivate an inactive mailbox, you can recover it. For details, see [Recover an inactive mailbox in Office 365](recover-an-inactive-mailbox.md).
+- If you remove the hold or retention policy from an inactive mailbox and the soft-deleted mailbox retention period for the mailbox has expired, the mailbox will be permanently deleted after the 183-day soft-deleted mailbox retention period expires. For more information about the soft-deleted mailbox retention period, see the [More information](#more-information) section in this article. After the inactive mailbox is permanently deleted, it can't be recovered. Before you remove the hold, be sure that you no longer need the contents in the mailbox. If you want to reactivate an inactive mailbox, you can recover it. For details, see [Recover an inactive mailbox in Office 365](recover-an-inactive-mailbox.md).
 
-- For more information about inactive mailboxes, see [Inactive mailboxes in Office 365](inactive-mailboxes-in-office-365.md).
+- For more information about inactive mailboxes, see [Learn about inactive mailboxes](inactive-mailboxes-in-office-365.md).
 
 ## Step 1: Identify the holds on an inactive mailbox
 
@@ -121,7 +121,7 @@ For more information identifying specific location retention policies applied to
 
 ### Remove In-Place Holds
 
- There are two ways to remove an In-Place Hold from an inactive mailbox: 
+ There are two ways to remove an In-Place Hold from an inactive mailbox:
   
 - **Delete the In-Place Hold object**. If the inactive mailbox that you want to permanently delete is the only source mailbox for an In-Place Hold, you can just delete the In-Place Hold object. 
 
@@ -205,7 +205,7 @@ If the In-Place Hold contains a large number of source mailboxes, it's possible 
 
 - **What happens after you remove the hold on an inactive mailbox?** The mailbox is treated like other soft-deleted mailboxes and is marked for permanent deletion after the 183-day soft-deleted mailbox retention period expires. This retention period starts on the date when the hold is removed from the inactive mailbox. The *InactiveMailboxRetireTime* property is set when the mailbox transitions from being inactive (soft-deleted on hold) to no longer being inactive (soft-deleted with no holds). At that point, the *InactiveMailboxRetireTime* property is set to the current date when the transition occurred. There is an assistant that runs (called the *MailboxLifeCycle* assistant) that looks for mailboxes that have the *InactiveMailboxRetireTime* property set. If "InactiveMailboxRetireTime + 183 days" is less than the current date, then it will purge the mailbox.
 
-- **Is an inactive mailbox permanently deleted immediately after the hold is removed?** A formerly inactive mailbox will be available in the soft-deleted state for 183 days. After 183 days the mailbox will be marked for permanent deletion.
+- **Is an inactive mailbox permanently deleted immediately after the hold is removed?** A formerly inactive mailbox will be available in the soft-deleted state for 183 days. After 183 days, the mailbox will be marked for permanent deletion.
 
 - **How do you display information about an inactive mailbox after the hold is removed?** After a hold is removed and the inactive mailbox is reverted back to a soft-deleted mailbox, it won't be returned by using the  *InactiveMailboxOnly*  parameter with the **Get-Mailbox** cmdlet. But you can display information about the mailbox by using the **Get-Mailbox -SoftDeletedMailbox** command. For example:
 
@@ -223,4 +223,3 @@ If the In-Place Hold contains a large number of source mailboxes, it's possible 
   ```
 
   In the above example, the *WhenSoftDeleted* property identifies the soft-deleted date, which in this example is June 16, 2020. The *WasInactiveMailbox* property is listed as `True` because it was previously an inactive mailbox. The mailbox will be permanently deleted 183 days after September 30, 2020.
-

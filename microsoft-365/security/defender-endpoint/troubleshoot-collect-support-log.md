@@ -1,6 +1,6 @@
 ---
-title: Collect support logs in Microsoft Defender for Endpoints using live response
-description: Learn how to collect logs using live response to troubleshoot Microsoft Defender for Endpoints issues
+title: Collect support logs in Microsoft Defender for Endpoint using live response
+description: Learn how to collect logs using live response to troubleshoot Microsoft Defender for Endpoint issues
 keywords: support, log, collect, troubleshoot, live response, liveanalyzer, analyzer, live, response
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,7 +20,7 @@ ms.technology: mde
 
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
@@ -30,25 +30,23 @@ When contacting support, you may be asked to provide the output package of the M
 
 This topic provides instructions on how to run the tool via Live Response.
 
-1. Download the appropriate script
-   - Microsoft Defender for Endpoint client sensor logs only: [LiveAnalyzer.ps1 script](https://aka.ms/MDELiveAnalyzer).
-      - Result package approximate size: ~100Kb
-   - Microsoft Defender for Endpoint client sensor and Antivirus logs: [LiveAnalyzer+MDAV.ps1 script](https://aka.ms/MDELiveAnalyzerAV).
-       - Result package approximate size: ~10Mb
+1. Download and fetch the required scripts available from within the 'Tools' sub-directory of the [Microsoft Defender for Endpoint Client Analyzer](https://aka.ms/BetaMDEAnalyzer). <br>
+For example, to get the basic sensor and device health logs, fetch "..\Tools\MDELiveAnalyzer.ps1".<br>
+If you also require Defender Antivirus support logs (MpSupportFiles.cab), then fetch "..\Tools\MDELiveAnalyzerAV.ps1" 
 
 2. Initiate a [Live Response session](live-response.md#initiate-a-live-response-session-on-a-device) on the machine you need to investigate.
 
 3. Select **Upload file to library**.
 
-    ![Image of upload file.](images/upload-file.png)
+   :::image type="content" source="images/upload-file.png" alt-text="The upload file" lightbox="images/upload-file.png":::
 
 4. Select **Choose file**.
 
-    ![Image of choose file button1.](images/choose-file.png)
+   :::image type="content" source="images/choose-file.png" alt-text="The choose file button-1" lightbox="images/choose-file.png":::
 
 5. Select the downloaded file named MDELiveAnalyzer.ps1 and then click on **Confirm**
 
-   ![Image of choose file button2.](images/analyzer-file.png)
+   :::image type="content" source="images/analyzer-file.png" alt-text="The choose file button-2" lightbox="images/analyzer-file.png":::
 
 6. While still in the LiveResponse session, use the commands below to run the analyzer and collect the result file:
 
@@ -88,4 +86,3 @@ This topic provides instructions on how to run the tool via Live Response.
 - [Run the client analyzer on macOS or Linux](run-analyzer-macos-linux.md)
 - [Data collection for advanced troubleshooting on Windows](data-collection-analyzer.md)
 - [Understand the analyzer HTML report](analyzer-report.md)
-

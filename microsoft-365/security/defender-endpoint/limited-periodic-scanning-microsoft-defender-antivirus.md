@@ -25,7 +25,8 @@ ms.collection: m365-security-compliance
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Limited periodic scanning is a special type of threat detection and remediation that can be enabled when you have installed another antivirus product on a Windows 10 or Windows 11 device.
 
@@ -39,7 +40,7 @@ By default, Microsoft Defender Antivirus will enable itself on a Windows 10 or a
 
 If Microsoft Defender Antivirus is enabled, the usual options will appear to configure it on that device:
 
-![Windows Security app showing Microsoft Defender AV options, including scan options, settings, and update options.](images/vtp-wdav.png)
+:::image type="content" source="images/vtp-wdav.png" alt-text="The Windows Security app showing Microsoft Defender AV options, including scan options, settings, and update options" lightbox="images/vtp-wdav.png":::
 
 If another antivirus product is installed and working correctly, Microsoft Defender Antivirus will disable itself. The Windows Security app will change the **Virus & threat protection** section to show status about the AV product, and provide a link to the product's configuration options.
 

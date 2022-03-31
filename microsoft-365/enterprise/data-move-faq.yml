@@ -5,7 +5,7 @@ metadata:
   author: kelleyvice-msft
   manager: laurawi
   audience: ITPro
-  ms.topic: article
+  ms.topic: faq
   ms.service: o365-administration
   ms.localizationpriority: medium
   search.appverid:
@@ -161,6 +161,12 @@ sections:
           SharePoint Online and OneDrive for Business cannot migrate to the new datacenter geo at the tenant level through this program. The customer administrator can configure OneDrive for Business shares to move to any available region using Multi-Geo, but the default location for the tenant cannot be changed once Multi-Geo has been configured for a tenant.
 
           For customers that opt-in for migration - we will move all Exchange Online mailboxes from your current default geo to your new local datacenter geo and update the default Exchange Online region. We will not move any EXO mailboxes configured in Multi Geo satellite regions to continue to respect satellite region data residency as you’ve intended.  Teams chat service tenant migrations for customers with a Multi Geo configuration behave similarly to Exchange Online.
+     
+      - question: |
+          I have public folders deployed in my tenant. What will be the impact on public folder access during or after the move? 
+        answer: |
+          There is no impact to end users accessing public folders during or after the move of public folders. However, the public folders may not be available for administration in the Exchange Admin Center tool till all public folder mailboxes are moved in same region. Please check [this article](https://aka.ms/pfxrf) for more details.
+
 
 additionalContent: |
 
@@ -173,9 +179,8 @@ additionalContent: |
 
     [Microsoft 365 interactive datacenter map](https://office.com/datamaps)
 
-    [Microsoft 365 Support](../business-video/get-help-support.md)
+    [Microsoft 365 Support](../admin/get-help-support.md)
 
     [New datacenter geos for Microsoft Dynamics CRM Online](/power-platform/admin/new-datacenter-regions)
 
     [Azure services by region](https://azure.microsoft.com/regions/)
-

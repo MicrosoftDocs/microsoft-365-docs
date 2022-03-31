@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: 
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
@@ -243,6 +243,7 @@ Advanced eDiscovery supports many file types at many different levels. The suppo
 |Mime type|File identification|Metadata extraction|Text extraction|Native viewer|Annotate viewer|Possible Extensions|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 |application/json|Yes|Yes|Yes|Yes|Yes|n/a|
+|application/octet-stream|Yes|No|No|No|No|.fluid|
 |application/vnd.ms-graph|Yes|Yes|No|No|No||
 |application/winhlp|Yes|Yes|No|No|No|.hlp|
 |application/x-tnef|Yes|Yes|No|No|No||

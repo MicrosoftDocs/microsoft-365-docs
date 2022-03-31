@@ -8,7 +8,7 @@ metadata:
   manager: laurawi
   ms.date: 07/14/2021
   audience: ITPro
-  ms.topic: overview
+  ms.topic: faq
   ms.service: O365-seccomp
   ms.localizationpriority: medium
   search.appverid:
@@ -16,7 +16,6 @@ metadata:
   ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
   description: "Have a question about how the new message protection capabilities work? Check for an answer here."
   ms.custom: seo-marvel-apr2020
-    
 title: Message Encryption FAQ
 summary: |
   Have a question about how the new message protection capabilities work? Check for an answer here. Also, take a look at [Frequently asked questions about data protection in Azure Information Protection](/information-protection/get-started/faqs-rms) for answers to questions about the data protection service, Azure Rights Management, in Azure Information Protection.
@@ -45,9 +44,9 @@ sections:
           What subscriptions do I need to use the new OME capabilities?
         answer: |
           To use the new OME capabilities, you need one of the following plans:
-            
-          - Office 365 Message Encryption is offered as part of Office 365 Enterprise E3 and E5, Microsoft Enterprise E3 and E5, Microsoft 365 Business Premium, Office 365 A1, A3, and A5, and Office 365 Government G3 and G5. You don't need additional licenses to receive the new protection capabilities powered by Azure Information Protection.
           
+          - Office 365 Message Encryption is offered as part of Office 365 Enterprise E3 and E5, Microsoft 365 Enterprise E3 and E5, Microsoft 365 Business Premium, Office 365 A1, A3, and A5, and Office 365 Government G3 and G5. You don't need additional licenses to receive the new protection capabilities powered by Azure Information Protection.
+
           - You can also add Azure Information Protection Plan 1 to the following plans to receive the new Office 365 Message Encryption capabilities: Exchange Online Plan 1, Exchange Online Plan 2, Office 365 F1, Microsoft 365 Business Basic, Microsoft 365 Business Standard, or Office 365 Enterprise E1.
           
           - Each user benefiting from Office 365 Message Encryption needs to be licensed to be covered by the feature.
@@ -162,7 +161,12 @@ sections:
           What email clients support revocation of protected emails?
         answer: |
           Outlook on the web supports revocation of protected mail.  See [How to revoke an encrypted message that you sent](revoke-ome-encrypted-mail.md#how-to-revoke-an-encrypted-message-that-you-sent) for details.
-          
+
+      - question: |
+          Does the OME portal support preview of encrypted attachments in protected emails?
+        answer: |
+          The OME portal support preview of any encrypted attachment copies added to the encrypted mail. The support file types includes Word, Excel, Powerpoint, and PDF files.  
+
       - question: |
           Can I automatically encrypt messages by setting up policies?
         answer: |
@@ -196,7 +200,7 @@ sections:
       - question: |
           Can I remove encryption from email?
         answer: |
-          Admins can set up a mail flow rule to remove encryption. You can't remove encryption using a mail flow rule from mail that is applied by another organization, unless the mail is encrypted using encrypt-only protection.
+          Admins can set up a mail flow rule to remove encryption. You can't remove encryption using a mail flow rule from mail that is applied by another organization.
 
       - question: |
           Can I send as a shared mailbox and encrypt emails?
@@ -210,7 +214,7 @@ sections:
           
           - Users can open protected mails in a shared mailbox where the shared mailbox received a protected mail as part of a distribution group.
           
-          - Users can view attachments that inherit protection from email when they use Outlook for Windows, Outlook for Mac, and Outlook on the web.
+          - Users can view attachments that inherit protection from email when they use Outlook for Windows, Outlook for Mac, Outlook for Android, Outlook for iOS, and Outlook on the web.
           
           The following table lists the supported clients for shared mailboxes.
           
@@ -219,15 +223,17 @@ sections:
           | Outlook on the web | Yes | Yes                |
           | Outlook for Windows| Yes | Yes                |
           | Outlook for Mac    | Yes | Yes                |
-          | Outlook for Android| Yes | No                 |
-          | Outlook for iOS    | Yes | No                 |
-          |
+          | Outlook for Android| Yes | Yes                |
+          | Outlook for iOS    | Yes | Yes                 |
+          
+          > [!NOTE]
+          > Android and iOS would use the Office mobile app to view the encrypted attachments, and not directly in Outlook mobile.
           
           There are currently two known limitations:
           
           - You can't open attachments to emails that you receive on mobile devices by using Outlook mobile.
           
-          - We don't support assignment through an email-enabled security group, because Outlook and Azure Information Protection unified labeling clients require the user to have full access permissions and have automapping enabled. Automapping is enabled by default for Exchange Online.
+          - In Outlook Win32, for users assigned to a shared mailbox through an email-enabled security group, the user will see a notification mail to view the encrypted mail using a web browser.  In order to view the encrypted mail directly in Outlook Win32, Outlook and Azure Information Protection unified labeling clients require the user to be directly assigned to the shared mailbox with full access permissions and automapping enabled. Automapping is enabled by default for Exchange Online.
           
           **To assign a user to the shared mailbox**
           

@@ -1,5 +1,5 @@
 ---
-title: Set up secure collaboration with Microsoft 365
+title: Set up secure file and document sharing and collaboration with Teams in Microsoft 365
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -16,28 +16,28 @@ ms.custom:
 - seo-marvel-jun2020
 f1.keywords: NOCSH
 recommendations: false
-description: Learn how to set up secure content collaboration in Teams to protect your data based on its sensitivity.
+description: Learn best practices to set up secure file collaboration and sharing in Teams to protect your data based on its sensitivity.
 ---
 
-# Set up secure collaboration with Microsoft 365 and Microsoft Teams
+# Set up secure file sharing and collaboration with Microsoft Teams
 
-Being able to easily share information with the right people while preventing oversharing is key to an organization's success. This includes being able to share sensitive data safely with only those who should have access to it. Depending on the project, this might include sharing sensitive data with people outside your organization.
+Being able to easily share files and documents with the right people while preventing oversharing is key to an organization's success. This includes being able to share confidential or other sensitive data safely with only those who should have access to it. Depending on the project, this might include sharing sensitive data with people outside your organization.
 
 This collaboration solution guidance includes two components to help you:
 
-- Deploy Microsoft Teams with the right level of protection for each project
+- Deploy Teams with the right level of protection for each project
 - Configure external sharing with appropriate security settings for each project
 
 ![Deploy Teams with appropriate protection and configure external sharing with appropriate security settings.](..\media\solutions-architecture-center\secure-collaboration-overview.png)
 
-If versatile and easy-to-use content collaboration tools aren't available, users will often collaborate by emailing documents. This is a tedious and error-prone method of collaboration, and can increase the risk of inappropriate sharing of information. If people find sharing information too difficult, they could revert to using consumer products that are not governed by IT. This can pose an even greater risk.
+If versatile and easy-to-use file collaboration tools aren't available, users will often collaborate by emailing documents. This is a tedious and error-prone method of collaboration, and can increase the risk of inappropriate sharing of information. If people find sharing files too difficult, they could revert to using consumer products that are not governed by IT. This can pose an even greater risk.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxMmL?autoplay=false]
 
 With Microsoft 365, you can deploy Teams with a variety of configurations that help:
 
 - Protect your intellectual property
-- Enable easy collaboration
+- Enable easy collaboration with documents and other files
 - Create a balance between security and usability that increases user satisfaction and reduces the risk of shadow IT
 
 Most organizations have a variety of information, with varying degrees of sensitivity and varying degrees of business impact if the information is inappropriately shared. Depending on the sensitivity of a given piece of information, you may want to allow sharing with:
@@ -65,14 +65,14 @@ To configure secure collaboration, you use these Microsoft 365 capabilities and 
 |---|---|---|
 |Microsoft Defender for Office 365|Safe Attachments for SPO, OneDrive and Teams; Safe Documents; Safe Links for Teams|Microsoft 365 E1, E3 and E5|
 |SharePoint|Site and file sharing policies, Site sharing permissions, Sharing links, Access requests, Site guest sharing settings|Microsoft 365 E1, E3 and E5|
-|Microsoft Teams|Guest access, private teams, private channels|Microsoft 365 E1, E3 and E5|
+|Microsoft Teams|Guest access, private teams, private channels, shared channels|Microsoft 365 E1, E3 and E5|
 |Microsoft 365 Compliance|Sensitivity labels|Microsoft 365 E3 and E5|
 
-## Collaboration governance
+## Collaboration governance framework for Teams and Microsoft 365
 
 Microsoft 365 provides many options for governing your collaboration solution. We recommend you use this deployment content alongside the [collaboration governance content](collaboration-governance-overview.md) to create the best collaboration solution for your organization.
 
-### Using Teams for all kinds of data
+### Securing Teams for sensitive and highly sensitive data
 
 To manage access to information with different sensitivities, we've developed [three different tiers of protection for Teams](configure-teams-three-tiers-protection.md). You can customize any of these tiers to better address the needs or your business.
 
@@ -114,6 +114,7 @@ These resources will help you get started with setting up your environment for c
 - [Collaborate on documents](collaborate-on-documents.md) for sharing individual files of folders.
 - [Collaborate in a site](collaborate-in-site.md) for collaborating with guests in a SharePoint site.
 - [Collaborate as a team](collaborate-as-team.md) for collaborating with guests in a team.
+- [Collaborate with external participants in a channel](/microsoft-365/solutions/collaborate-teams-direct-connect) for collaborating with people outside the organization in a shared channel.
 
 Depending on the sensitivity of the information being shared, you can add safeguards to help prevent oversharing. These resources will help you set up the protections that you need for your organization:
 
@@ -121,7 +122,7 @@ Depending on the sensitivity of the information being shared, you can add safegu
 - [Limit accidental exposure to files when sharing with people outside your organization](share-limit-accidental-exposure.md)
 - [Create a secure guest sharing environment](create-secure-guest-sharing-environment.md)
 
-If you have a major project with a partner organization, you can use Azure Entitlement Management to manage the guests from that organization in a team that you set up for the project. See [Create a B2B extranet with managed guests](b2b-extranet.md) for details.
+If you have a major project with a partner organization, you can use either [shared channels](/microsoft-365/solutions/collaborate-teams-direct-connect) or [Azure Entitlement Management](b2b-extranet.md) to manage the people outside your organization who you need to collaborate with.
 
 ## Training for administrators
 
@@ -149,7 +150,7 @@ These training modules from Microsoft Learn can help you learn the collaboration
 
 |Training:|Protect enterprise information with Microsoft 365|
 |---|---|
-|![Teams info protection training icon.](../media/protect-enterprise-information-microsoft-365.svg)|Protecting and securing your organization's information is more challenging than ever. The Protect enterprise information with Microsoft 365 learning path discusses how to protect your sensitive information from accidental oversharing or misuse, how to discover and classify data, how to protect it with sensitivity labels, and how to both monitor and analyze your sensitive information to protect against its loss. This learning path can help you prepare for the Microsoft 365 Certified: Security Administrator Associate and Microsoft 365 Certified: Enterprise Administration Expert certifications..<p>1 hr - Learning Path - 5 Modules|
+|![Teams info protection training icon.](../media/protect-enterprise-information-microsoft-365.svg)|Protecting and securing your organization's information is more challenging than ever. The Protect enterprise information with Microsoft 365 learning path discusses how to protect your sensitive information from accidental oversharing or misuse, how to discover and classify data, how to protect it with sensitivity labels, and how to both monitor and analyze your sensitive information to protect against its loss. This learning path can help you prepare for the Microsoft 365 Certified: Security Administrator Associate and Microsoft 365 Certified: Enterprise Administration Expert certifications.<p>1 hr - Learning Path - 5 Modules|
 
 > [!div class="nextstepaction"]
 > [Start >](/learn/modules/m365-security-info-overview/introduction/)

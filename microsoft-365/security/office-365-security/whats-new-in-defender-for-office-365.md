@@ -16,7 +16,7 @@ ms.collection:
   - M365-security-compliance
   - m365initiative-defender-office365
 ms.topic: conceptual
-ms.date: 07/27/2021
+ms.date: 12/03/2021
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
@@ -42,9 +42,18 @@ Learn more by watching [this video](https://www.youtube.com/watch?v=Tdz6KfruDGo&
 For more information on what's new with other Microsoft Defender security products, see:
 
 - [What's new in Microsoft 365 Defender](../defender/whats-new.md)
-- [What's new in Microsoft Defender for Endpoint](../defender-endpoint/whats-new-in-microsoft-defender-atp.md)
+- [What's new in Microsoft Defender for Endpoint](../defender-endpoint/whats-new-in-microsoft-defender-endpoint.md)
 - [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
 - [What's new in Microsoft Cloud App Security](/cloud-app-security/release-notes)
+
+## March 2022
+
+- [Streamlined the submission experience in Microsoft Defender for Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/streamlining-the-submissions-experience-in-microsoft-defender/ba-p/3152080): Introducing the new unified and streamlined submission process to make your experience simpler.
+
+
+## January 2022
+
+- [Updated Hunting and Investigation Experiences for Microsoft Defender for Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/updated-hunting-and-investigation-experiences-for-microsoft/ba-p/3002015): Introducing the email summary panel for experiences in Defender for Office 365, along with experience updates for Threat Explorer and Real-time detections.
 
 
 ## October 2021

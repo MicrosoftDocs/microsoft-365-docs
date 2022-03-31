@@ -1,14 +1,12 @@
 ---
 title: Understand billing profiles
-f1.keywords:
-- NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - 'MACBillingBillsPaymentsBillingProfiles'
 ms.service: o365-administration
 ms.localizationpriority: medium
@@ -16,8 +14,8 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom: 
-- AdminSurgePortfolio
 - commerce_billing
+- AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid: MET150
 description: "Learn how billing profiles support invoices."
@@ -69,7 +67,7 @@ Each billing profile includes the following information:
 
 If you have questions or need help with your Azure charges, <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">create a support request with Azure support</a>.
 
-If you have questions or need help with your billing profile in Microsoft 365 admin center, [contact support](../../business-video/get-help-support.md).
+If you have questions or need help with your billing profile in Microsoft 365 admin center, [contact support](../../admin/get-help-support.md).
 
 ## Related content
 

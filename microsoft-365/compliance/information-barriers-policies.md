@@ -46,7 +46,7 @@ When you define policies for information barriers, you'll work with user account
 | **Step 3**: [Define information barrier policies](#step-3-define-information-barrier-policies) | - Define your policies (do not apply yet)<br/>- Choose from two kinds (block or allow) |
 | **Step 4**: [Apply information barrier policies](#step-4-apply-information-barrier-policies) | - Set policies to active status<br/>- Run the policy application<br/>- View policy status |
 | **Step 5**: [Configuration for information barriers on SharePoint and OneDrive (optional)](#step-5-configuration-for-information-barriers-on-sharepoint-and-onedrive) | - Configure information barriers for SharePoint and OneDrive |
-| **Step 6**: [Information barriers modes (optional)](#step-6-information-barriers-modes-preview) | - Update information barrier modes if applicable |
+| **Step 6**: [Information barriers modes (optional)](#step-6-information-barriers-modes) | - Update information barrier modes if applicable |
 
 ## Step 1: Make sure prerequisites are met
 
@@ -274,19 +274,16 @@ If you're configuring information barriers for SharePoint and OneDrive, you'll n
 
 To enable information barriers in SharePoint and OneDrive, follow the guidance and steps in the [Use information barriers with SharePoint](/sharepoint/information-barriers) article.
 
-## Step 6: Information barriers modes (preview)
+## Step 6: Information barriers modes
 
 Modes can help strengthen access, sharing, and membership of a Microsoft 365 resource based on the resource's IB mode. Modes are supported on Microsoft 365 Groups, Microsoft Teams, OneDrive, and SharePoint sites and are automatically enabled in your new or existing IB configuration.
-
->[!IMPORTANT]
->If you've enabled information barriers in your tenant before October 15, 2021, additional steps aren't needed. If you are onboarding information barriers in your tenant after October 15, 2021, you'll need to set IB modes on all existing Microsoft 365 groups connected to Microsoft Teams to bring the groups into information barriers compliance.
 
 The following IB modes are supported on Microsoft 365 resources:
 
 | **Mode** | **Description** | **Example** |
 |:-----|:------------|:--------|
 | **Open** | There aren't any IB policies or segments associated with the Microsoft 365 resource. Anyone can be invited to be a member of the resource. | A team site created for picnic event for your organization. |
-| **Owner Moderated** | The IB policy of the Microsoft 365 resource is determined from the resource owner's IB policy. The resource owners can invite any user to the resource based on their IB policies. This mode is useful when your company wants to allow collaboration among incompatible segment users that are moderated by the owner. Only the resource owner can add new members per their IB policy. | The VP of the HR want to collaborate with the VPs of Sales and Research. A new SharePoint site that is set with IB mode *Owner Moderated* to add both Sales and Research segment users to the same site. It is the responsibility of the owner to ensure appropriate members are added to the resource. |
+| **Owner Moderated (preview)** | The IB policy of the Microsoft 365 resource is determined from the resource owner's IB policy. The resource owners can invite any user to the resource based on their IB policies. This mode is useful when your company wants to allow collaboration among incompatible segment users that are moderated by the owner. Only the resource owner can add new members per their IB policy. | The VP of the HR want to collaborate with the VPs of Sales and Research. A new SharePoint site that is set with IB mode *Owner Moderated* to add both Sales and Research segment users to the same site. It is the responsibility of the owner to ensure appropriate members are added to the resource. |
 | **Implicit** | The IB policy or segments of the Microsoft 365 resource is inherited from the resource members IB policy. The owner can add members as long as they are compatible with the existing members of the resource. This is the default IB mode for Microsoft Teams. | The Sales segment user creates a Microsoft Teams team to collaborate with other compatible segments in the organization. |
 | **Explicit** | The IB policy of the Microsoft 365 resource is per the segments associated with the resource. The resource owner or SharePoint administrator has the ability to manage the segments on the resource.  | A site created only for Sales segment members to collaborate by associating the Sales segment with the site.   |
 

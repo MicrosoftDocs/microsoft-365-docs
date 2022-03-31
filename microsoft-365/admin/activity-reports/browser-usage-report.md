@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Reports in the admin center - Microsoft browser usage
+title: "Microsoft 365 admin center browser usage reports"
 ms.author: waxiaoyu
 author: sarahwxy
 manager: scotv
@@ -34,9 +34,11 @@ The Microsoft 365 Reports dashboard shows you an activity overview across the pr
 
 :::image type="content" alt-text="Microsoft browser usage report action flow." source="../../media/1ef4eb08-18b8-4dda-aa15-1aad013ecd70.png" lightbox="../../media/1ef4eb08-18b8-4dda-aa15-1aad013ecd70.png":::
 
-Global admins can opt-in to sending messages to users, who are using Microsoft 365 services on Edge Legacy (unsupported) and Internet Explorer (soon to be unsupported). This targeted message notifies users that support for these browsers will send soon and links to a support article with information on Microsoft Edge and simple steps to follow to switch browsers. 
+Global admins can opt-in to sending messages to users, who are accessing Microsoft 365 services from Internet Explorer (as a reminder, the Internet Explorer desktop application will be retired on June 15, 2022). This targeted message notifies users that support for these browsers will send soon and links to a support article with information on Microsoft Edge and simple steps to follow to switch browsers. 
 
-You can find this feature on the report page. Once the message is created, users will get notified at the frequency specified until August 17, 2021. You can turn off this feature at any time to stop sending notifications to users. To begin sending notifications again, turn the feature back on.
+You can find this feature on the Microsoft browser usage report page if your organization has Internet Explorer usage shown on the report (global admin permissions needed). Once the message is created, users will get notified at the frequency specified until June 15, 2022. You can turn this feature on or off at any time.
+
+This is a time-limited feature that is currently only available for global admins in the US and allows user notifications in Excel online.
 
 ## Interpret the Microsoft browser usage report
 

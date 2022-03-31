@@ -15,6 +15,7 @@ ms.collection:
   - M365-security-compliance
   - m365solution-endpointprotect
   - m365solution-scenario
+ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
 ---
@@ -25,14 +26,14 @@ ms.technology: mde
 
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Deploying Defender for Endpoint is a three-phase process:
 
-|[![deployment phase - prepare.](images/phase-diagrams/prepare.png)](prepare-deployment.md)<br>[Phase 1: Prepare](prepare-deployment.md) | ![deployment phase - setup](images/phase-diagrams/setup.png)<br>Phase 2: Setup | [![deployment phase - onboard](images/phase-diagrams/onboard.png)](onboarding.md)<br>[Phase 3: Onboard](onboarding.md)|
+|[![deployment phase - prepare.](images/phase-diagrams/prepare.png#lightbox)](prepare-deployment.md)<br>[Phase 1: Prepare](prepare-deployment.md) | ![deployment phase - setup](images/phase-diagrams/setup.png#lightbox)<br>Phase 2: Setup | [![deployment phase - onboard](images/phase-diagrams/onboard.png#lightbox)](onboarding.md)<br>[Phase 3: Onboard](onboarding.md)|
 |---|---|---|
 ||*You are here!*||
 
@@ -53,13 +54,13 @@ Checking for the license state and whether it got properly provisioned, can be d
 
 1. To view your licenses, go to the **Microsoft Azure portal** and navigate to the [Microsoft Azure portal license section](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products).
 
-   ![Image of Azure Licensing page.](images/atp-licensing-azure-portal.png)
+   :::image type="content" source="images/atp-licensing-azure-portal.png" alt-text="The Azure Licensing page" lightbox="images/atp-licensing-azure-portal.png":::
 
 1. Alternately, in the admin center, navigate to **Billing** \> **Subscriptions**.
 
     On the screen, you'll see all the provisioned licenses and their current **Status**.
 
-    ![Image of billing licenses.](images/atp-billing-subscriptions.png)
+    :::image type="content" source="images/atp-billing-subscriptions.png" alt-text="The billing licenses page" lightbox="images/atp-billing-subscriptions.png":::
 
 ## Cloud Service Provider validation
 
@@ -69,13 +70,16 @@ To gain access into which licenses are provisioned to your company, and to check
 
 2. Clicking on the **Partner portal** link will open the **Admin on behalf** option and will give you access to the customer admin center.
 
-   ![Image of O365 admin portal.](images/atp-O365-admin-portal-customer.png)
+   :::image type="content" source="images/atp-O365-admin-portal-customer.png" alt-text="The Office 365 admin portal" lightbox="images/atp-O365-admin-portal-customer.png":::
 
 ## Tenant Configuration
 
 Onboarding to Microsoft Defender for Endpoint is easy. From the navigation menu, select any item under the Endpoints section, or any Microsoft 365 Defender feature such as Incidents, Hunting, Action center, or Threat analytics to initiate the onboarding process.
 
-From a web browser, navigate to the [Microsoft 365 Security Center](https://security.microsoft.com).
+From a web browser, navigate to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
+
+## Data center location
+Microsoft Defender for Endpoint will store and process data in the [same location as used by Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable). If Microsoft 365 Defender has not been turned on yet, onboarding to Microsoft Defender for Endpoint will also turn on Microsoft 365 Defender and a new data center location is automatically selected based on the location of active Microsoft 365 security services. The selected data center location is shown on the screen.
 
 ## Network configuration
 
@@ -106,13 +110,13 @@ Configure a registry-based static proxy to allow only Microsoft Defender for End
 2. Create a policy or edit an existing policy based off the organizational practices.
 3. Edit the Group Policy and navigate to **Administrative Templates \> Windows Components \> Data Collection and Preview Builds \> Configure Authenticated Proxy usage for the Connected User Experience and Telemetry Service**.
 
-   ![Image of Group Policy configuration.](images/atp-gpo-proxy1.png)
+   :::image type="content" source="images/atp-gpo-proxy1.png" alt-text="The options related to configuration of the usage policy" lightbox="images/atp-gpo-proxy1.png":::
 
 4. Select **Enabled**.
 5. Select **Disable Authenticated Proxy usage**.
 6. Navigate to **Administrative Templates \> Windows Components \> Data Collection and Preview Builds \> Configure connected user experiences and telemetry**.
 
-    ![Image of Group Policy configuration setting.](images/atp-gpo-proxy2.png)
+   :::image type="content" source="images/atp-gpo-proxy2.png" alt-text="The options related to configuration of the connected user experience and telemetry" lightbox="images/atp-gpo-proxy2.png":::
 
 7. Select **Enabled**.
 8. Enter the **Proxy Server Name**.
@@ -166,11 +170,12 @@ The following downloadable spreadsheet lists the services and their associated U
 
 ****
 
-|Spreadsheet of domains list|Description|
+
+|Spreadsheet of domains list| Description|
 |---|---|
-|![Thumb image for Microsoft Defender for Endpoint URLs spreadsheet.](images/mdatp-urls.png)|Spreadsheet of specific DNS records for service locations, geographic locations, and OS. <p> [Download the spreadsheet here.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)|
-|
+|Microsoft Defender for Endpoint URL list for commercial customers| Spreadsheet of specific DNS records for service locations, geographic locations, and OS for commercial customers. <p> [Download the spreadsheet here.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
+| Microsoft Defender for Endpoint URL list for Gov/GCC/DoD | Spreadsheet of specific DNS records for service locations, geographic locations, and OS for Gov/GCC/DoD customers. <p> [Download the spreadsheet here.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
 
 ## Next step
 
-![**Phase 3: Onboard**.](images/onboard.png) <br> [Phase 3: Onboard](onboarding.md): Onboard devices to the service so that the Microsoft Defender for Endpoint service can get sensor data from them.
+[![**Phase 3: Onboard**.](images/onboard.png#lightbox)] <br> [Phase 3: Onboard](onboarding.md): Onboard devices to the service so that the Microsoft Defender for Endpoint service can get sensor data from them.

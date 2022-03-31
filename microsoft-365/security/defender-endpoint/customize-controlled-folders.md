@@ -1,8 +1,7 @@
 ---
 title: Customize controlled folder access
 description: Add other folders that should be protected by controlled folder access, or allow apps that are incorrectly blocking changes to important files.
-keywords: Controlled folder access, windows 10, windows defender, ransomware, protect, files, folders, customize, add folder, add app, allow, add executable
-search.product: eADQiWindows 10XVcnh
+keywords: Controlled folder access, windows 10, windows 11, windows defender, ransomware, protect, files, folders, customize, add folder, add app, allow, add executable
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -10,24 +9,24 @@ ms.localizationpriority: medium
 audience: ITPro
 author: denisebmsft
 ms.author: deniseb
-ms.reviewer: jcedola, dbodorin, vladiso, nixanm, anvascon
+ms.reviewer: oogunrinde, dbodorin, vladiso, nixanm, anvascon
 manager: dansimp
-ms.date: 05/10/2021
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
+ms.date:
 ---
 
 # Customize controlled folder access
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-Controlled folder access helps you protect valuable data from malicious apps and threats, such as ransomware. Controlled folder access is supported on Windows Server 2019, Windows Server 2022, and Windows 10 clients. This article describes how to customize controlled folder access capabilities, and includes the following sections:
+Controlled folder access helps you protect valuable data from malicious apps and threats, such as ransomware. Controlled folder access is supported on Windows Server 2019, Windows Server 2022, Windows 10, and Windows 11 clients. This article describes how to customize controlled folder access capabilities, and includes the following sections:
 
 - [Protect additional folders](#protect-additional-folders)
 - [Add apps that should be allowed to access protected folders](#allow-specific-apps-to-make-changes-to-controlled-folders)
@@ -86,7 +85,7 @@ You can use the Windows Security app, Group Policy, PowerShell cmdlets, or mobil
     ```
 3. Repeat step 2 for each folder that you want to protect. Folders that are protected are visible in the Windows Security app.
 
-   :::image type="content" source="images/cfa-allow-folder-ps.png" alt-text="PowerShell window with cmdlet shown.":::
+   :::image type="content" source="images/cfa-allow-folder-ps.png" alt-text="The PowerShell window with cmdlet shown" lightbox="images/cfa-allow-folder-ps.png":::
 
 > [!IMPORTANT]
 > Use `Add-MpPreference` to append or add apps to the list and not `Set-MpPreference`. Using the `Set-MpPreference` cmdlet will overwrite the existing list.
@@ -116,7 +115,7 @@ An allowed application or service only has write access to a controlled folder a
 
 4. Select **Add an allowed app** and follow the prompts to add apps.
 
-   :::image type="content" source="images/cfa-allow-app.png" alt-text="Add an allowed app button.":::
+   :::image type="content" source="images/cfa-allow-app.png" alt-text="The Add an allowed app button" lightbox="images/cfa-allow-app.png":::
 
 ### Use Group Policy to allow specific apps
 
@@ -145,7 +144,7 @@ An allowed application or service only has write access to a controlled folder a
 
    Continue to use `Add-MpPreference -ControlledFolderAccessAllowedApplications` to add more apps to the list. Apps added using this cmdlet will appear in the Windows Security app.
 
-   :::image type="content" source="images/cfa-allow-app-ps.png" alt-text="PowerShell cmdlet to allow an app.":::
+   :::image type="content" source="images/cfa-allow-app-ps.png" alt-text="The PowerShell cmdlet to allow an application" lightbox="images/cfa-allow-app-ps.png":::
 
 > [!IMPORTANT]
 > Use `Add-MpPreference` to append or add apps to the list. Using the `Set-MpPreference` cmdlet will overwrite the existing list.

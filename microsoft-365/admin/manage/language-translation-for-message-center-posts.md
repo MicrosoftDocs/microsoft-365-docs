@@ -47,7 +47,7 @@ To set Message center posts to automatically machine-translate and display in yo
 
 ## Related content
 
-[Overview of the Microsoft 365 admin center](../../business-video/admin-center-overview.md) (video)\
+[Overview of the Microsoft 365 admin center](Overview of the Microsoft 365 admin center](../admin-overview/admin-center-overview.md) (video)\
 [What subscription do I have?](../admin-overview/what-subscription-do-i-have.md) (article)\
 [Stay on top of changes](../manage/stay-on-top-of-updates.md) (article)
 

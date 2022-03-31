@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: 
 audience: ITPro
 ms.topic: conceptual
-
+ms.collection: M365-security-compliance
 ms.localizationpriority: medium
 ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
 ms.custom: 
@@ -39,16 +39,16 @@ This insight appears only after the condition is detected (if you don't have any
 
 You can use this notification to help you to identify and fine-tune mail flow rules to help reduce mail flow delays.
 
-![Fix slow mail flow rules insight in the Recommended for you area of the Mail flow dashboard.](../../media/mfi-fix-slow-mail-flow-rules.png)
+:::image type="content" source="../../media/mfi-fix-slow-mail-flow-rules.png" alt-text="The Fix slow mail flow rules insight in the Recommended for you area of the Mail flow dashboard" lightbox="../../media/mfi-fix-slow-mail-flow-rules.png":::
 
 When you click **View details** on the widget, a flyout appears with more information:
 
-- **Rule**: You can hover over the summary to see all of the conditions, exceptions, and actions of the rule. You can click on the summary to edit the rule in the Exchange admin center (EAC).
+- **Rule**: You can hover over the summary to see all of the conditions, exceptions, and actions of the rule. You can click on the summary to edit the rule in the Exchange admin center (EAC) at <https://admin.exchange.microsoft.com/#/transportrules>.
 - **Number of messages evaluated**: You can click **View sample messages** to see the [message trace](message-trace-scc.md) results for a sample of the messages that were affected by the rule.
 - **Average time spent on each message**
 - **Median time spent on a message**: The middle value that separates the upper half from the lower half of time data.
 
-![Details flyout that appears after clicking View details on the Fix slow mail flow rules insight.](../../media/mfi-fix-slow-mail-flow-rules-details.png)
+:::image type="content" source="../../media/mfi-fix-slow-mail-flow-rules-details.png" alt-text="The Details flyout that appears after you click View details on the Fix slow mail flow rules insight" lightbox="../../media/mfi-fix-slow-mail-flow-rules-details.png":::
 
 For more information about conditions and exceptions in mail flow rules, see [Mail flow rule conditions and exceptions (predicates) in Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
 

@@ -2,8 +2,6 @@
 title: Microsoft Defender for Endpoint Device Control Removable Storage Protection
 description: Understand the `capabilities that help prevent user or machine or both from using unauthorized removable storage media
 keywords: removable storage media
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -20,6 +18,11 @@ ms.technology: mde
 
 # Microsoft Defender for Endpoint Device Control Removable Storage Protection
 
+
+**Applies to:**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
 Device control removable storage protection in Microsoft Defender for Endpoint prevents users, endpoints, or both from using unauthorized removable storage media.
@@ -33,14 +36,14 @@ Device control removable storage protection in Microsoft Defender for Endpoint p
 - *Audit* Read or Write or Execute access to removable storage based on various device properties, with or without an exclusion.
 - *Prevent* Read or Write or Execute access with or without an exclusion - Allow specific device based on various device properties.
 
-**Windows 10 support details**:
+**Windows 10 and Windows 11 support details**:
 
 - Applied at either the device level, user level. or both. Only allow specific people performing Read/Write/Execute access to specific removable storage on specific machine.
 - Support MEM OMA-URI and GPO.
 - Supported  '[Device Properties](#device-properties)' as listed.
 - For feature in Windows, see [Removable storage Access Control](device-control-removable-storage-access-control.md).
 
-**Supported Platform** - Windows 10
+**Supported Platform** - Windows 10, Windows 11
 
 **macOS support details**:
 
@@ -54,14 +57,14 @@ Device control removable storage protection in Microsoft Defender for Endpoint p
 
 **Capabilities** - Prevent installation with or without exclusion based on various device properties.
 
-**Windows 10 support details**:
+**Windows 10 and Windows 11 support details**:
 
 - Applied at the device level: the same policy applies for any logged on user.
 - Supports Microsoft Endpoint Manager and Group Policy Objects.
 - Supported  '[Device Properties](#device-properties)' as listed.
 - For more information on Windows, see [How to control USB devices and other removable media using Microsoft Defender for Endpoint](control-usb-devices-using-intune.md).
 
-**Supported Platform** - Windows 10
+**Supported Platform** - Windows 10, Windows 11
 
 **macOS support details**:
 
@@ -76,7 +79,7 @@ Device control removable storage protection in Microsoft Defender for Endpoint p
 
 **Description** - For more information on Windows, see [Learn about Microsoft 365 Endpoint data loss prevention](../../compliance/endpoint-dlp-learn-about.md).
 
-**Supported Platform** - Windows 10
+**Supported Platform** - Windows 10, Windows 11
 
 ### BitLocker
 
@@ -87,7 +90,7 @@ Device control removable storage protection in Microsoft Defender for Endpoint p
 
 **Description** - For more information on Windows, see [BitLocker - Removable Drive Settings](/mem/intune/protect/endpoint-security-disk-encryption-profile-settings).
 
-**Supported Platform** - Windows 10
+**Supported Platform** - Windows 10, Windows 11
 
 ## Device properties
 
@@ -104,4 +107,4 @@ Microsoft Defender for Endpoint Device Control Removable Storage Protection allo
 |Instance ID|[Removable storage Access Control](device-control-removable-storage-access-control.md) <p> Device Installation|Windows|A string uniquely identifies the device in the system, for example, USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0|
 |Friendly Name|[Removable storage Access Control](device-control-removable-storage-access-control.md)|Windows|A string attached to the device, for example, Generic Flash Disk USB Device|
 |Vendor ID / Product ID|[Removable storage Access Control](device-control-removable-storage-access-control.md)|Windows <p> macOS|Vendor ID is the four-digit vendor code that the USB committee assigns to the vendor. Product ID is the four-digit product code that the vendor assigns to the device; Support wildcard.|
-|Serial NumberId|[Removable storage Access Control](device-control-removable-storage-access-control.md)|Windows <p> macOS |For example, <SerialNumberId>002324B534BCB431B000058A</SerialNumberId>|
+|Serial NumberId|[Removable storage Access Control](device-control-removable-storage-access-control.md)|Windows <p> macOS |For example, `<SerialNumberId>002324B534BCB431B000058A</SerialNumberId>`|

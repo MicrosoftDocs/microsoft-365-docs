@@ -2,7 +2,6 @@
 title: Use network protection to help prevent connections to bad sites
 description: Protect your network by preventing users from accessing known malicious and suspicious network addresses
 keywords: Network protection, exploits, malicious website, ip, domain, domains
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -16,7 +15,10 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: overview
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365initiative-m365-defender
+- M365-security-compliance
+ms.date:
 ---
 
 # Protect your network
@@ -24,7 +26,7 @@ ms.collection: M365-security-compliance
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -38,6 +40,9 @@ Network protection extends the protection in [Web protection](web-protection-ove
 > [!TIP]
 > See the Microsoft Defender for Endpoint testground site at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to see how network protection works.
 
+> [!NOTE]
+> The Defender for Endpoint demo site at demo.wd.microsoft.com is deprecated and will be removed in the future.
+
 ## Requirements for network protection
 
 Network protection requires Windows 10 Pro or Enterprise, and Microsoft Defender Antivirus real-time protection.
@@ -48,7 +53,7 @@ Network protection requires Windows 10 Pro or Enterprise, and Microsoft Defender
 
 |Windows version|Microsoft Defender Antivirus|
 |---|---|
-|Windows 10 version 1709 or later <p> Windows Server 1803 or later|[Microsoft Defender Antivirus real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md) and [cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md) must be enabled|
+|Windows 10 version 1709 or later <p> Windows 11 <p> Windows Server 1803 or later|[Microsoft Defender Antivirus real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md) and [cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md) must be enabled|
 |
 
 After you have enabled the services, you might need to configure your network or firewall to allow the connections between the services and your devices (also referred to as endpoints).
@@ -64,7 +69,7 @@ For more information about how to enable network protection, see **[Enable netwo
 
 Network protection works best with [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md), which gives you detailed reporting into exploit protection events and blocks as part of [alert investigation scenarios](investigate-alerts.md).
 
-When network protection blocks a connection, a notification is displayed from the Action Center. Your security operations team can [customize the notification](customize-attack-surface-reduction.md#customize-the-notification) with your organization's details and contact information. In addition, individual attack surface reduction rules can be enabled and customized to suit certain techniques to monitor.
+When network protection blocks a connection, a notification is displayed from the Action Center. Your security operations team can [customize the notification](attack-surface-reduction-rules-deployment-implement.md#customize-attack-surface-reduction-rules) with your organization's details and contact information. In addition, individual attack surface reduction rules can be enabled and customized to suit certain techniques to monitor.
 
 You can also use [audit mode](audit-windows-defender.md) to evaluate how network protection would impact your organization if it were enabled.
 

@@ -4,7 +4,7 @@ author: msfttracyp
 ms.author: tracyp
 manager: dansimp
 ms.topic: article
-
+ms.collection: M365-security-compliance
 audience: admin
 f1.keywords: 
   - NOCSH
@@ -12,8 +12,6 @@ ms.localizationpriority: medium
 MS.collection: 
 search.appverid: MET150
 description: Threat remediation
-appliesto: 
-  - Microsoft 365 Defender
 ms.technology: mdo
 ms.prod: m365-security
 ---
@@ -130,7 +128,7 @@ Open any remediation item to view details about it, including its name, creation
   - **Already in destination**: The desired action was already taken on the email OR the email already existed in the destination location. For example: An email was soft deleted by the admin through Explorer on day one. Then similar emails show up on day 2, which are again soft deleted by the admin. While selecting these emails, admin ends up picking some emails from day one that are already soft deleted. Now these emails will not be acted upon again, they will just show as "already in destination", since no action was taken on them as they existed in the destination location.
 
   - **New**: An *Already in destination* column has been added in the Action Log. This feature uses the latest delivery location in Threat Explorer to signal if the mail has already been remediated. *Already in destination* will help security teams understand the total number of messages that still need to be addressed.
-				
+
 Actions can only be taken on messages in Inbox, Junk, Deleted, and Soft Deleted folders of Threat Explorer. Here's an example of how the new column works. A *soft delete action* takes place on the message present in the Inbox, then the message will be handled according to policies. The next time a soft delete is performed, this message will show under the column 'Already in destination' signaling it doesn't need to be addressed again.
 
 Select any item in the action log to display remediation details. If the details say "successful" or "not found in mailbox", that item was already removed from the mailbox. Sometimes there's a system error during remediation. In those cases, it's a good idea to retry the remediation action.

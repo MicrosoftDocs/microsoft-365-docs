@@ -61,17 +61,12 @@ Admins can use Exchange Online PowerShell to configure entries in the safelist c
 
 The safelist collection on a mailbox includes the Safe Senders list, the Safe Recipients list, and the Blocked Senders list. By default, users can configure the safelist collection on their own mailbox in Outlook or Outlook on the web. Administrators can use the corresponding parameters on the **Set-MailboxJunkEmailConfiguration** cmdlet to configure the safelist collection on a user's mailbox. These parameters are described in the following table.
 
-<br>
-
-****
-
 |Parameter on Set-MailboxJunkEmailConfiguration|Outlook on the web setting|
 |---|---|
 |_BlockedSendersAndDomains_|**Move email from these senders or domains to my Junk Email folder**|
 |_ContactsTrusted_|**Trust email from my contacts**|
 |_TrustedListsOnly_|**Only trust email from addresses in my Safe senders and domains list and Safe mailing lists**|
 |_TrustedSendersAndDomains_<sup>\*</sup>|**Don't move email from these senders to my Junk Email folder**|
-|
 
 <sup>\*</sup> **Notes**:
 

@@ -21,7 +21,8 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Business](/microsoft-365/security/defender-business/mdb-overview)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-respondmachine-abovefoldlink)
 
@@ -40,6 +41,7 @@ Response actions run along the top of a specific device page and include:
 - Action center
 
 [![Image of response actions.](images/response-actions.png)](images/response-actions.png#lightbox)
+
 
  You can find device pages from any of the following views:
 
@@ -92,11 +94,11 @@ Alternate way:
 
 1. Select **Action center** from the response actions section of the device page.
 
-    ![Image of action center button.](images/action-center-package-collection.png)
+   :::image type="content" source="images/action-center-package-collection.png" alt-text="The Action center option" lightbox="images/action-center-package-collection.png":::
 
 2. In the Action center fly-out, select **Package collection package available** to download the zip file.
 
-    ![Image of download package button.](images/collect-package.png)
+   :::image type="content" source="images/collect-package.png" alt-text="The download package option" lightbox="images/collect-package.png":::
 
 The package contains the following folders:
 
@@ -128,11 +130,11 @@ As part of the investigation or response process, you can remotely initiate an a
 
 >[!IMPORTANT]
 >- This action is not currently supported for macOS and Linux. Use live response to run the action. For more information on live response, see [Investigate entities on devices using live response](live-response.md)
->- A Microsoft Defender Antivirus (Microsoft Defender AV) scan can run alongside other antivirus solutions, whether Microsoft Defender AV is the active antivirus solution or not. Microsoft Defender AV can be in Passive mode. For more information, see [Microsoft Defender Antivirus compatibility](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md).
+>- A Microsoft Defender Antivirus (Microsoft Defender AV) scan can run alongside other antivirus solutions, whether Microsoft Defender AV is the active antivirus solution or not. Microsoft Defender AV can be in Passive mode. For more information, see [Microsoft Defender Antivirus compatibility](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility).
 
 One you have selected **Run antivirus scan**, select the scan type that you'd like to run (quick or full) and add a comment before confirming the scan.
 
-![Image of notification to select quick scan or full scan and add comment.](images/run-antivirus.png)
+:::image type="content" source="images/run-antivirus.png" alt-text="The notification to select quick scan or full scan and add comment" lightbox="images/run-antivirus.png":::
 
 The Action center will show the scan information and the device timeline will include a new event, reflecting that a scan action was submitted on the device. Microsoft Defender AV alerts will reflect any detections that surfaced during the scan.
 
@@ -159,13 +161,13 @@ To restrict an application from running, a code integrity policy is applied that
 
 Once you have selected **Restrict app execution** on the device page, type a comment and select **Confirm**. The Action center will show the scan information and the device timeline will include a new event.
 
-![Image of app restriction notification.](images/restrict-app-execution.png)
+:::image type="content" source="images/restrict-app-execution.png" alt-text="The application restriction notification" lightbox="images/restrict-app-execution.png":::
 
 ### Notification on device user
 
 When an app is restricted, the following notification is displayed to inform the user that an app is being restricted from running:
 
-![Image of app restriction.](images/atp-app-restriction.png)
+:::image type="content" source="images/atp-app-restriction.png" alt-text="The application restriction message" lightbox="images/atp-app-restriction.png":::
 
 >[!NOTE]
 >The notification is not available on Windows Server 2016 and Windows Server 2012 R2.
@@ -189,7 +191,7 @@ On Windows 10, version 1709 or later, you'll have more control over the network 
 
 Once you have selected **Isolate device** on the device page, type a comment and select **Confirm**. The Action center will show the scan information and the device timeline will include a new event.
 
-![Image of isolate device.](images/isolate-device.png)
+:::image type="content" source="images/isolate-device.png" alt-text="An isolated device details page" lightbox="images/isolate-device.png":::
 
 > [!NOTE]
 > The device will remain connected to the Defender for Endpoint service even if it is isolated from the network. If you've chosen to enable Outlook and Skype for Business communication, then you'll be able to communicate to the user while the device is isolated.
@@ -198,11 +200,11 @@ Once you have selected **Isolate device** on the device page, type a comment and
 
 When a device is being isolated, the following notification is displayed to inform the user that the device is being isolated from the network:
 
-![Image of no network connection.](images/atp-notification-isolate.png)
+:::image type="content" source="images/atp-notification-isolate.png" alt-text="A no network connection message" lightbox="images/atp-notification-isolate.png":::
 
 ## Consult a threat expert
 
-You can consult a Microsoft threat expert for more insights regarding a potentially compromised device or already compromised ones. Microsoft Threat Experts can be engaged directly from within the Microsoft Defender Security Center for timely and accurate response. Experts provide insights not just regarding a potentially compromised device, but also to better understand complex threats, targeted attack notifications that you get, or if you need more information about the alerts, or a threat intelligence context that you see on your portal dashboard.
+You can consult a Microsoft threat expert for more insights regarding a potentially compromised device or already compromised ones. Microsoft Threat Experts can be engaged directly from within the Microsoft 365 Defender for timely and accurate response. Experts provide insights not just regarding a potentially compromised device, but also to better understand complex threats, targeted attack notifications that you get, or if you need more information about the alerts, or a threat intelligence context that you see on your portal dashboard.
 
 See [Consult a Microsoft Threat Expert](/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization) for details.
 
@@ -217,10 +219,11 @@ The **Action center** provides information on actions that were taken on a devic
 
 All other related details are also shown, for example, submission date/time, submitting user, and if the action succeeded or failed.
 
-![Image of action center with information.](images/action-center-details.png)
+:::image type="content" source="images/action-center-details.png" alt-text="The action center with information" lightbox="images/action-center-details.png":::
+
 
 ## See also
 
 - [Take response actions on a file](respond-file-alerts.md)
-- [Manual response actions in Microsoft Defender for Endpoint Plan 1 (preview)](defender-endpoint-plan-1.md#manual-response-actions)
+- [Manual response actions in Microsoft Defender for Endpoint Plan 1](defender-endpoint-plan-1.md#manual-response-actions)
 - [Report inaccuracy](/microsoft-365/security/defender-endpoint/tvm-security-recommendation#report-inaccuracy)

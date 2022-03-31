@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -62,7 +62,7 @@ Use the following steps to validate that your endpoints have successfully comple
 
 1.  Verify that the device appears in the Device Inventory section of [Microsoft 365 Defender](https://security.microsoft.com/).
 
-2.  In the [Azure Active Directory portal](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade/MsGraphUsers), verify that the device has successfully been enrolled.
+2.  In the [Azure Active Directory portal](https://aad.portal.azure.com/#blade/Microsoft_AAD_Devices/DevicesMenuBlade/Devices/menuId/), verify that the device has successfully been enrolled.
 
 3.  In the [Microsoft Endpoint Manager Admin Center](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/mDMDevicesPreview),  verify that the device has successfully been enrolled by looking it up in the **Devices > All devices** section.
 

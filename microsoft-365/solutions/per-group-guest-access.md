@@ -39,7 +39,7 @@ You must use the preview version of [Azure Active Directory PowerShell for Graph
 > [!NOTE]
 > You must have global admin rights to run these commands. 
 
-Run the following script, changing */<GroupName/>* to the name of the group where you want to block guest access.
+Run the following script, changing *\<GroupName\>* to the name of the group where you want to block guest access.
 
 ```PowerShell
 $GroupName = "<GroupName>"
@@ -80,7 +80,7 @@ Set-AzureADObjectSetting -TargetType Groups -TargetObjectId $groupID -DirectoryS
 
 ## Allow or block guest access based on their domain
 
-You can allow or block guests who are using a specific domain. For example, if your business (Contoso) has a partnership with another business (Fabrikam), you can add Fabrikam to your Allow list so your users can add those guests to their groups.
+You can allow or block guests who are using a specific domain. For example, if your business (Contoso) has a partnership with another business (Fabrikam), you can add Fabrikam to your allowlist so your users can add those guests to their groups.
 
 For more information, see [Allow or block invitations to B2B users from specific organizations](/azure/active-directory/b2b/allow-deny-list).
 
@@ -102,7 +102,7 @@ Set-AzureADUser -ObjectId cfcbd1a0-ed18-4210-9b9d-cf0ba93cf6b2 -ShowInAddressLis
 
 ## Related topics
 
-[Collaboration governance planning step-by-step](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[Collaboration governance planning recommendations](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
 
 [Create your collaboration governance plan](collaboration-governance-first.md)
 

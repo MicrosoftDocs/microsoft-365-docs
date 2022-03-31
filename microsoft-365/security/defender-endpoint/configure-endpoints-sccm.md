@@ -12,6 +12,7 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 09/22/2021
 ms.technology: mde
@@ -23,7 +24,8 @@ ms.technology: mde
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Microsoft Endpoint Configuration Manager current branch
 - System Center 2012 R2 Configuration Manager
@@ -138,7 +140,7 @@ If you use Microsoft Endpoint Manager current branch, see [Create an offboarding
 
 ### Offboard devices using System Center 2012 R2 Configuration Manager
 
-1. Get the offboarding package from [Microsoft 365 Defender portal](https://security.microsoft.com/):
+1. Get the offboarding package from <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>:
     1. In the navigation pane, select **Settings** \> **Endpoints** \> **Device management** \>  **Offboarding**.
     1. Select Windows 10 or Windows 11 as the operating system.
     1. In the **Deployment method** field, select **System Center Configuration Manager 2012/2012 R2/1511/1602**.
@@ -175,7 +177,7 @@ If you're using System Center 2012 R2 Configuration Manager, monitoring consists
 
     If there are failed deployments (devices with **Error**, **Requirements Not Met**, or **Failed statuses**), you may need to  troubleshoot the devices. For more information, see, [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md).
 
-    ![Configuration Manager showing successful deployment with no errors.](images/sccm-deployment.png)
+    :::image type="content" source="images/sccm-deployment.png" alt-text="The Configuration Manager showing successful deployment with no errors" lightbox="images/sccm-deployment.png":::
 
 ### Check that the devices are compliant with the Microsoft Defender for Endpoint service
 

@@ -24,9 +24,9 @@ description: "A requirement for all Microsoft Information Protection solutions: 
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-All Microsoft Information Protection solutions (sometimes abbreviated to MIP) are implemented by using [sensitivity labels](sensitivity-labels.md). To create and publish these labels, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>. You can also use the older portal, Office 365 Security & Compliance Center.
+All Microsoft Information Protection solutions (sometimes abbreviated to MIP) are implemented by using [sensitivity labels](sensitivity-labels.md). To create and publish these labels, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>.
 
-First, create and configure the sensitivity labels that you want to make available for apps and other services. For example, the labels you want users to see and apply from Office apps. 
+First, create and configure the sensitivity labels that you want to make available for apps and other services. For example, the labels you want users to see and apply from Office apps.
 
 Then, create one or more label policies that contain the labels and policy settings that you configure. It's the label policy that publishes the labels and settings for your chosen users and locations.
 
@@ -40,7 +40,7 @@ The global admin for your organization has full permissions to create and manage
     
     If you don't immediately see this option, first select **Show all**.
 
-2. On the **Labels** page, select **+ Create a label** to start the New sensitivity label wizard. 
+2. On the **Labels** page, select **+ Create a label** to start the New sensitivity label configuration. 
 
     For example, from the Microsoft 365 compliance center:
 
@@ -53,15 +53,15 @@ The global admin for your organization has full permissions to create and manage
 
     ![Scopes for sensitivity labels.](../media/sensitivity-labels-scopes.png)
 
-    - If **Files & emails** is selected, you can configure settings in this wizard that apply to apps that support sensitivity labels, such as Office Word and Outlook. If this option isn't selected, the wizard displays the first page of these settings but you can't configure them and the labels won't be available for users to select in these apps.
+    - If **Files & emails** is selected, you can configure settings that apply to apps that support sensitivity labels, such as Office Word and Outlook. If this option isn't selected, you see the first page of these settings but you can't configure them and the labels won't be available for users to select in these apps.
 
-    - If **Groups & sites** is selected, you can configure settings in this wizard that apply to Microsoft 365 groups, and sites for Teams and SharePoint. If this option isn't selected, the wizard displays the first page of these settings but you can't configure them and the labels won't be available for users to select for groups and site.
+    - If **Groups & sites** is selected, you can configure settings that apply to Microsoft 365 groups, and sites for Teams and SharePoint. If this option isn't selected, you see the first page of these settings but you can't configure them and the labels won't be available for users to select for groups and site.
 
-    For information about the **Azure Purview assets (preview)** scope, see [Automatically label your content in Azure Purview](/azure/purview/create-sensitivity-label).
+    For information about the **Schematized data assets** scope, see [Automatically label your content in Azure Purview](/azure/purview/create-sensitivity-label).
 
-4. Follow the prompts in the wizard for the label settings.
+4. Follow the configuration prompts for the label settings.
 
-    For more information about the label settings, see [What sensitivity labels can do](sensitivity-labels.md#what-sensitivity-labels-can-do) from the overview information and use the help in the wizard for individual settings.
+    For more information about the label settings, see [What sensitivity labels can do](sensitivity-labels.md#what-sensitivity-labels-can-do) from the overview information and use the help in the UI for individual settings.
 
 5. Repeat these steps to create more labels. However, if you want to create a sublabel, first select the parent label and select **...** for **More actions**, and then select **Add sub label**.
 
@@ -71,12 +71,12 @@ To edit an existing label, select it, and then select the **Edit label** button:
 
 ![Edit label button to edit a sensitivity label.](../media/edit-sensitivity-label-full.png)
 
-This button starts the **Edit sensitivity label** wizard, which lets you change all the label settings in step 4.
+This button starts the **Edit sensitivity label** configuration, which lets you change all the label settings in step 4.
 
 Don't delete a label unless you understand the impact for users. For more information, see the [Removing and deleting labels](#removing-and-deleting-labels) section. 
 
 > [!NOTE]
-> If you edit a label that's already published by using a label policy, no extra steps are needed when you finish the wizard. For example, you don't need to add it to a new label policy for the changes to become available to the same users. However, allow up to 24 hours for the changes to replicate to all apps and services.
+> If you edit a label that's already published by using a label policy, no extra steps are needed when you finish the configuration. For example, you don't need to add it to a new label policy for the changes to become available to the same users. However, allow up to 24 hours for the changes to replicate to all apps and services.
 
 Until you publish your labels, they won't be available to select in apps or for services. To publish the labels, they must be [added to a label policy](#publish-sensitivity-labels-by-creating-a-label-policy).
 
@@ -127,7 +127,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
     
     If you don't immediately see this option, first select **Show all**.
 
-2. Select the **Label policies** tab, and then **Publish labels** to start the Create policy wizard:
+2. Select the **Label policies** tab, and then **Publish label** to start the **Create policy** configuration:
 
     For example, from the Microsoft 365 compliance center:
 
@@ -136,7 +136,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
     > [!NOTE]
     > By default, tenants don't have any label policies and you must create them. 
 
-3. In the wizard, select **Choose sensitivity labels to publish**. Select the labels that you want to make available in apps and to services, and then select **Add**.
+3. On the **Choose sensitivity labels to publish** page, select the **Choose sensitivity labels to publish** link. Select the labels that you want to make available in apps and to services, and then select **Add**.
 
     > [!IMPORTANT]
     > If you select a sublabel, make sure you also select its parent label.
@@ -147,7 +147,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
     The policy settings that you see match the scope of the labels that you selected. For example, if you selected labels that have just the **Files & emails** scope, you don't see the policy settings **Apply this label by default to groups and sites** and **Require users to apply a label to their groups and sites**.
 
-    For more information about these settings, see [What label policies can do](sensitivity-labels.md#what-label-policies-can-do) from the overview information and use the help in the wizard for individual settings.
+    For more information about these settings, see [What label policies can do](sensitivity-labels.md#what-label-policies-can-do) from the overview information and use the help in the UI for individual settings.
 
     For labels configured for **Azure Purview assets (preview)**: These labels don't have any associated policy settings.
 
@@ -155,28 +155,25 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 7. If you create more than one label policy that might result in a conflict for a user, review the policy order and if necessary, move them up or down. To change the order of a label policy, select **...** for **More actions**, and then select **Move up** or **Move down**. For more information, see [Label policy priority (order matters)](sensitivity-labels.md#label-policy-priority-order-matters) from the overview information.
 
-Completing the wizard automatically publishes the label policy. To make changes to a published policy, simply edit it. There is no specific publish or republish action for you to select.
+Completing the **Create policy** configuration automatically publishes the label policy. To make changes to a published policy, simply edit it. There is no specific publish or republish action for you to select.
 
 To edit an existing label policy, select it, and then select the **Edit Policy** button: 
 
 ![Edit a sensitivity label.](../media/edit-sensitivity-label-policy-full.png)
 
-This button starts the **Create policy** wizard, which lets you edit which labels are included and the label settings. When you complete the wizard, any changes are automatically replicated to the selected users and services.
-
-When you use built-in labeling for Office apps on Windows, macOS, iOS, and Android, users see new labels within four hours, and within one hour for Word, Excel, and PowerPoint on the web when you refresh the browser. However, allow up to 24 hours for changes to replicate to all apps and services.
-
-Other apps and services that support sensitivity labels might update more frequently than 24 hours with their own update schedules and triggers for policy updates. Check their documentation for details. For example, for the Azure Information Protection unified labeling client, see the **Policy update** row in the [Detailed comparisons for the Azure Information Protection clients](/azure/information-protection/rms-client/use-client#detailed-comparisons-for-the-azure-information-protection-clients) table.
-
-> [!TIP]
-> Remember to factor in timing dependencies that can sometimes delay sensitivity labels and label policies from working as expected. For example, populating a new group and group membership changes, network replication latency and bandwidth restrictions, and [group membership caching by the Azure Information Protection service](/azure/information-protection/prepare#group-membership-caching-by-azure-information-protection) for labels that apply encryption.
-> 
-> With many external dependencies that each have their own timing cycles, it’s a good idea to wait 24 hours before you spend time troubleshooting labels and label policies for recent changes.
+This button starts the **Create policy** configuration, which lets you edit which labels are included and the label settings. When you complete the configuration, any changes are automatically replicated to the selected users and services.
 
 ### Additional label policy settings with Security & Compliance Center PowerShell
 
 Additional label policy settings are available with the [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) cmdlet from [Security & Compliance Center PowerShell](/powershell/exchange/scc-powershell).
 
 The Azure Information Protection unified labeling client supports many [advanced settings](/azure/information-protection/rms-client/clientv2-admin-guide-customizations) that include migrating from other labeling solutions, and pop-up messages in Outlook that warn, justify, or block emails being sent. For the full list, see [Available advanced settings for label policies](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-label-policies) from this client's admin guide.
+
+## When to expect new labels and changes to take effect
+
+For labels and label policy settings, allow 24 hours for the changes to propagate through the services. There are many external dependencies that each have their own timing cycles, so it's a good idea to wait this 24-hour time period before you spend time troubleshooting labels and label policies for recent changes.
+
+However, there are some scenarios where label and label policy changes can take effect much faster or be longer than 24 hours. For example, for new and deleted sensitivity labels for Word, Excel, and PowerPoint on the web, you might see updates replicate within the hour. But for configurations that depend on populating a new group and group membership changes, or network replication latency and bandwidth restrictions, these changes might take 24-48 hours.
 
 ## Use PowerShell for sensitivity labels and their policies
 

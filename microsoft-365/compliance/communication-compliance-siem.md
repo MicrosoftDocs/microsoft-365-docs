@@ -22,7 +22,7 @@ search.appverid:
 
 # Communication compliance with SIEM solutions
 
-[Communication compliance](communication-compliance.md) is an insider risk solution in Microsoft 365 that helps minimize communication risks by helping you detect, capture, and act on inappropriate messages in your organization. Security information and event management (SIEM) solutions such as [Azure Sentinel](https://azure.microsoft.com/services/azure-sentinel) or [Splunk](https://www.splunk.com/) are commonly used to aggregate and track threats within an organization.
+[Communication compliance](communication-compliance.md) is an insider risk solution in Microsoft 365 that helps minimize communication risks by helping you detect, capture, and act on inappropriate messages in your organization. Security information and event management (SIEM) solutions such as [Microsoft Sentinel](https://azure.microsoft.com/services/azure-sentinel) or [Splunk](https://www.splunk.com/) are commonly used to aggregate and track threats within an organization.
 
 A common need for organizations is to integrate communication compliance alerts and these SIEM solutions. With this integration, organizations can view communication compliance alerts in their SIEM solution and then remediate alerts within the communication compliance workflow and user experience. For example, an employee sends an offensive message to another employee and that message is detected by a communication compliance policy monitoring for inappropriate content. These events are tracked in Microsoft 365 Audit (also known as "unified audit log") by the communication compliance solution and imported into the SIEM solution. An alert is then triggered in the SIEM solution for the organization from events monitored in Microsoft 365 Audit that are associated with communication compliance alerts. Investigators are notified of the alert in the SIEM solutions and then they investigate and remediate the alert in the communication compliance solution.
 
@@ -65,12 +65,12 @@ ObjectState: Unchanged
 > [!NOTE]
 > Currently, there may be up to a 24-hour delay between the time a policy match is recorded in Microsoft 365 Audit and the time in which you can investigate policy matches in communication compliance.
 
-## Configure communication compliance and Azure Sentinel integration
+## Configure communication compliance and Microsoft Sentinel integration
 
-When you're using the Azure Sentinel to aggregate communication compliance policy matches, Sentinel uses Microsoft 365 Audit as the data source. To integrate communication compliance alerts with Sentinel, complete the following steps:
+When you're using the Microsoft Sentinel to aggregate communication compliance policy matches, Sentinel uses Microsoft 365 Audit as the data source. To integrate communication compliance alerts with Sentinel, complete the following steps:
 
-1. [Onboard to Azure Sentinel](/azure/sentinel/quickstart-onboard). As part of the onboarding process, you'll configure your data sources.
-2. Configure the Azure Sentinel [Microsoft Office 365 data connector](/azure/sentinel/data-connectors-reference#microsoft-office-365) and under connector configuration, select *Exchange*.
+1. [Onboard to Microsoft Sentinel](/azure/sentinel/quickstart-onboard). As part of the onboarding process, you'll configure your data sources.
+2. Configure the Microsoft Sentinel [Microsoft Office 365 data connector](/azure/sentinel/data-connectors-reference#microsoft-office-365) and under connector configuration, select *Exchange*.
 3. Configure search query to retrieve communication compliance alerts. For example:
 
     *| OfficeActivity
@@ -83,7 +83,7 @@ When you're using the Azure Sentinel to aggregate communication compliance polic
     | where OfficeWorkload == "Exchange" and Operation == "SupervisionRuleMatch" and UserId == "User1@Contoso.com"
     | sort by TimeGenerated*
 
-For more information about the Microsoft 365 Audit logs for Office 365 collected by Azure Sentinel, see [Azure Monitor Logs reference](/azure/azure-monitor/reference/tables/OfficeActivity).
+For more information about the Microsoft 365 Audit logs for Office 365 collected by Microsoft Sentinel, see [Azure Monitor Logs reference](/azure/azure-monitor/reference/tables/OfficeActivity).
 
 ## Configure communication compliance and Splunk integration
 

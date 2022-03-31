@@ -11,6 +11,7 @@ metadata:
   ms.technology: mdo
   ms.topic: landing-page # Required 
   ms.collection: m365-security-compliance
+  ms.custom: intro-hub-or-landing
   author: mjcaparas #Required; your GitHub user alias, with correct capitalization.
   ms.author: macapara #Required; microsoft alias of author; optional team alias.
   ms.date: 04/13/2021 #Required; mm/dd/yyyy format.

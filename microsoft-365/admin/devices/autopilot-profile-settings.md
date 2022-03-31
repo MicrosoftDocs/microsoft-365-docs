@@ -1,13 +1,11 @@
 ---
 title: "About AutoPilot Profile settings"
-f1.keywords:
-- NOCSH
 ms.author: efrene
 author: efrene
 manager: scotv
 audience: Admin
 ms.topic: conceptual
-f1_keywords:
+f1.keywords:
 - 'ZTDProfileSettings'
 - 'O365E_ZTDProfileSettings'
 - 'BCS365_ZTDProfileSettings'
@@ -37,6 +35,9 @@ description: "AutoPilot profiles help you control how Windows gets installed on 
 
 ## AutoPilot profile settings
 
+> [!NOTE]
+> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../../security/defender-business/mdb-overview.md).
+
 You can use AutoPilot profiles to control how Windows is installed on user devices. The profiles contain the following settings.
   
  **AutoPilot default features (required) that are set automatically:**
@@ -53,3 +54,7 @@ You can use AutoPilot profiles to control how Windows is installed on user devic
 |:-----|:-----|
 |Skip privacy settings (Off by default)  <br/> |If this option is set to **On**, the device user will not see the license agreement for the device and Windows when he or she first signs in.  <br/> |
 |Don't allow the user to become the local admin  <br/> |If this option is set to **On**, the device user will not be able to install any personal apps, such as Cortana.<br/> |
+
+## See also
+
+[Top 10 ways to secure Microsoft 365 for business plans](../security-and-compliance/secure-your-business-data.md)

@@ -67,7 +67,7 @@ The rest of this article explains how to use the spoof intelligence insight in t
 
 ## What do you need to know before you begin?
 
-- You open the Microsoft 365 Defender portal at <https://security.microsoft.com/>. To go directly to the **Spoofing** tab on the **Tenant Allow/Block List** page, use <https://security.microsoft.com/tenantAllowBlockList?viewid=SpoofItem>. To go directly to the **Spoof intelligence insight** page, use <https://security.microsoft.com/spoofintelligence>.
+- You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. To go directly to the **Spoofing** tab on the **Tenant Allow/Block List** page, use <https://security.microsoft.com/tenantAllowBlockList?viewid=SpoofItem>. To go directly to the **Spoof intelligence insight** page, use <https://security.microsoft.com/spoofintelligence>.
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -88,11 +88,11 @@ The rest of this article explains how to use the spoof intelligence insight in t
 
 ## Open the spoof intelligence insight in the Microsoft 365 Defender portal
 
-1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Tenant Allow/Block Lists** in the **Rules** section.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Tenant Allow/Block Lists** in the **Rules** section. To go directly to the **Spoofing** tab on the **Tenant Allow/Block List** page, use <https://security.microsoft.com/tenantAllowBlockList?viewid=SpoofItem>.
 
 2. On the **Tenant Allow/Block Lists** page, the spoof intelligence insight looks like this:
 
-   ![Spoof intelligence insight on the Anti-phishing policy page.](../../media/m365-sc-spoof-intelligence-insight.png)
+   :::image type="content" source="../../media/m365-sc-spoof-intelligence-insight.png" alt-text="The Spoof intelligence insight on the Anti-phishing policy page" lightbox="../../media/m365-sc-spoof-intelligence-insight.png":::
 
    The insight has two modes:
 
@@ -118,7 +118,7 @@ On the **Spoof intelligence insight** page that appears after you click **View s
   - **Internal**: The spoofed sender is in a domain that belongs to your organization (an [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)).
   - **External**: The spoofed sender is in an external domain.
 - **Action**: This value is **Allowed** or **Blocked**:
-  - **Allowed**: The domain failed explicit email authentication checks [SPF](how-office-365-uses-spf-to-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md), and [DMARC](use-dmarc-to-validate-email.md)). However, the domain passed our implicit email authentication checks ([composite authentication](email-validation-and-authentication.md#composite-authentication)). As a result, no anti-spoofing action was taken on the message.
+  - **Allowed**: The domain failed explicit email authentication checks [SPF](how-office-365-uses-spf-to-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md), and [DMARC](use-dmarc-to-validate-email.md). However, the domain passed our implicit email authentication checks ([composite authentication](email-validation-and-authentication.md#composite-authentication)). As a result, no anti-spoofing action was taken on the message.
   - **Blocked**: Messages from the combination of the spoofed domain _and_ sending infrastructure are marked as bad by spoof intelligence. The action that's taken on the spoofed messages is controlled by the default anti-phishing policy or custom anti-phishing policies (the default value is **Move message to Junk Email folder**). For more information, see [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md).
 
 You can click selected column headings to sort the results.

@@ -11,6 +11,7 @@ metadata:
   ms.subservice: subservice
   ms.topic: landing-page # Required
   ms.collection: m365-security-compliance
+  ms.custom: intro-hub-or-landing
   author: mjcaparas #Required; your GitHub user alias, with correct capitalization.
   ms.author: macapara #Required; microsoft alias of author; optional team alias.
   ms.date: 09/13/2019 #Required; mm/dd/yyyy format.
@@ -99,13 +100,13 @@ landingContent:
 
             
    # Card
-  - title: Microsoft Cloud App Security
+  - title: Microsoft Defender for Cloud Apps
     linkLists:
       - linkListType: overview
         links:
-          - text: What is Microsoft Cloud App Security?
+          - text: What is Microsoft Defender for Cloud Apps?
             url: /cloud-app-security/what-is-cloud-app-security
-          - text: Get started with Microsoft Cloud App Security
+          - text: Get started with Microsoft Defender for Cloud Apps
             url: /cloud-app-security/getting-started-with-cloud-app-security
 
 # Card

@@ -34,7 +34,7 @@ Setting up an Epic connector consists of the following tasks:
 
 ## Before you set up the connector
 
-- The user who creates the Epic connector in Step 3 must be assigned the Mailbox Import Export role in Exchange Online. By default, this role isn't assigned to any role group in Exchange Online. You can add the Mailbox Import Export role to the Organization Management role group in Exchange Online. Or you can create a new role group, assign the Mailbox Import Export role, and then add the appropriate users as members. For more information, see the [Create role groups](\Exchange\permissions-exo\role-groups#create-role-groups) or [Modify role groups](\Exchange\permissions-exo\role-groups#modify-role-groups) sections in the article "Manage role groups in Exchange Online".
+- The user who creates the Epic connector in Step 3 must be assigned the Data Connector Admin role. This role is required to add connectors on the **Data connectors** page in the Microsoft 365 compliance center. This role is added by default to multiple role groups. For a list of these role groups, see the "Roles in the security and compliance centers" section in [Permissions in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatively, an admin in your organization can create a custom role group, assign the Data Connector Admin role, and then add the appropriate users as members. For instructions, see the "Create a custom role group" section in [Permissions in the Microsoft 365 compliance center](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
 - You need to determine how to retrieve or export the data from your organization's Epic EHR system (on a daily basis) and create a text file that's described in Step 2. The script that you run in Step 4 will push the data in the text file to the API endpoint.
 
@@ -56,6 +56,9 @@ For step-by-step instructions for creating an app in Azure AD, see [Register an 
 
 The next step is to create a text file that contains information about employees' access to patient health records in your organization's Epic EHR system. As previously explained, you need to determine how to generate this text file from your Epic EHR system. The Epic connector workflow requires a text file with tab-separated values to map that data in the text file with required connector schema. The file format supported is a pipe- or tab- separated .txt file.
 
+> [!NOTE]
+> The maximum size of the text file that contains the auditing data is 3 GB. The maximum number of rows is 5 million. Also, be sure to only include the relevant auditing data from your healthcare EHR system.
+
 The following table lists the fields that are required to enable insider risk management scenarios. A subset of these fields is mandatory. These fields are highlighted with an asterisk (*). If any of the mandatory fields are missing in the text file, the file won't be validated and data in the file won't be imported.
 
 |Field|Category|
@@ -67,6 +70,7 @@ The following table lists the fields that are required to enable insider risk ma
 |||
 
 > [!NOTE]
+> Make sure you are exporting only the relevant Log metrics from Epic. 
 > <sup>1</sup>This field isn't available by default in Epic. You need to configure the export to ensure the text file contains this field.
 
 ## Step 3: Create the Epic connector
@@ -111,7 +115,10 @@ You can also click **Edit** to change the Azure App ID or the column header name
 
 The last step in setting up an Epic connector is to run a sample script that will upload the Epic EHR audit records data in the text file (that you created in Step 1) to the Microsoft cloud. Specifically, the script uploads the data to the Epic connector. After you run the script, the Epic connector that you created in Step 3 imports the Epic EHR audit records data to your Microsoft 365 organization where it can be accessed by other compliance tools, such as the Insider risk management solution. After you run the script, consider scheduling a task to run it automatically on a daily basis so the most current employee termination data is uploaded to the Microsoft cloud. See [(Optional) Step 6: Schedule the script to run automatically](#optional-step-6-schedule-the-script-to-run-automatically).
 
-1. Go to window that you left open from the previous step to access the GitHub site with the sample script. Alternatively, open the bookmarked site or use the URL that you copied.
+> [!NOTE]
+> As previously stated, the maximum size of the text file that contains the auditing data is 3 GB. The maximum number of rows is 5 million. The script that you run in this step will take about 30 to 40 minutes to import the auditing data from large text files. Additionally, the script will divide large text files into smaller blocks of 100K rows, and then import those blocks sequentially.
+
+1. Go to window that you left open from the previous step to access the GitHub site with the sample script. Alternatively, open the bookmarked site or use the URL that you copied. You can also access the script [here](https://github.com/microsoft/m365-compliance-connector-sample-scripts/blob/main/sample_script.ps1).
 
 2. Click the **Raw** button to display the script in text view.
 
@@ -134,7 +141,7 @@ The following table describes the parameters to use with this script and their r
 |Parameter  |Description|
 |:----------|:----------|
 |tenantId|This is the Id for your Microsoft 365 organization that you obtained in Step 1. You can also obtain the tenant Id for your organization on the **Overview** blade in the Azure AD admin center. This is used to identify your organization.|
-|appId|This is the Azure AD application Id for the app that you created in Azure AD in Step 1. This is used by Azure AD for authentication when the script attempts to accesses your Microsoft 365 organization.|
+|appId|This is the Azure AD application Id for the app that you created in Azure AD in Step 1. This is used by Azure AD for authentication when the script attempts to access your Microsoft 365 organization.|
 |appSecret|This is the Azure AD application secret for the app that you created in Azure AD in Step 1. This also used for authentication.|
 |jobId|This is the job ID for the Epic connector that you created in Step 3. This is used to associate the Epic EHR audit records that are uploaded to the Microsoft cloud with the Epic connector.|
 |filePath|This is the file path for the text file (stored on the same system as the script) that you created in Step 2. Try to avoid spaces in the file path; otherwise use single quotation marks.|
@@ -149,7 +156,7 @@ Here's an example of the syntax for the Epic connector script using actual value
 If the upload is successful, the script displays the **Upload Successful** message.
 
 > [!NOTE]
-> If you have problems running the previous command because of execution policies, see [About Execution Policies](\powershell\module\microsoft.powershell.core\about\about_execution_policies) and [Set-ExecutionPolicy](\powershell\module\microsoft.powershell.security\set-executionpolicy) for guidance about setting execution policies.
+> If you have problems running the previous command because of execution policies, see [About Execution Policies](/powershell/module/microsoft.powershell.core/about/about_execution_policies) and [Set-ExecutionPolicy](/powershell/module/microsoft.powershell.security/set-executionpolicy) for guidance about setting execution policies.
 
 ## Step 5: Monitor the Epic connector
 
@@ -169,9 +176,9 @@ If you've haven't run the script in Step 4, a link to download the script is dis
 
 ## (Optional) Step 6: Schedule the script to run automatically
 
-To make sure the latest audit records from your Epic EHR system are available to tools like the insider risk management solution, we recommend that you schedule the script to run automatically on a daily basis. This also requires that you update the Epic audit record data in the text file on a similar (if not the same) schedule so that it contains the latest information about patient records access activities by your employees. The goal is to upload the most current audit records so that the Epic connector can make it available to the insider risk management solution.
+To make sure the latest audit records from your Epic EHR system are available to tools like the insider risk management solution, we recommend that you schedule the script to run automatically on a daily basis. This also requires that you update the Epic audit record data in the same text file on a similar (if not the same) schedule so that it contains the latest information about patient records access activities by your employees. The goal is to upload the most current audit records so that the Epic connector can make it available to the insider risk management solution. 
 
-You can user the Task Scheduler app in Windows to automatically run the script every day.
+You can use the Task Scheduler app in Windows to automatically run the script every day.
 
 1. On your local computer, click the Windows **Start** button and then type **Task Scheduler**.
 
@@ -179,7 +186,7 @@ You can user the Task Scheduler app in Windows to automatically run the script e
 
 3. In the **Actions** section, click **Create Task**.
 
-4. On the **General** tab, type a descriptive name for the scheduled task; for example, **Epic connector Script**. You can also add an optional description.
+4. On the **General** tab, type a descriptive name for the scheduled task; for example, **Epic connector script**. You can also add an optional description.
 
 5. Under **Security options**, do the following things:
 
@@ -189,7 +196,7 @@ You can user the Task Scheduler app in Windows to automatically run the script e
 
 6. Select the **Triggers** tab, click **New**, and then do the following things:
 
-    1. Under **Settings**, select the **Daily** option, and then choose a date and time to run the script for the first time. The script will every day at the same specified time.
+    1. Under **Settings**, select the **Daily** option, and then choose a date and time to run the script for the first time. The script will run every day at the same specified time.
 
     2. Under **Advanced settings**, make sure the **Enabled** checkbox is selected.
 
@@ -197,15 +204,13 @@ You can user the Task Scheduler app in Windows to automatically run the script e
 
 7. Select the **Actions** tab, click **New**, and then do the following things:
 
-   Action settings to create a new scheduled task for the epic connector script
-
-    Action settings to create a new scheduled task for the epic connector script
+   ![Action settings to create a new scheduled task for the epic connector script.](../media/EpicConnectorScheduleTask1.png)
 
     1. In the **Action** dropdown list, make sure that **Start a program** is selected.
 
     2. In the **Program/script** box, click **Browse**, and go to the following location and select it so the path is displayed in the box: C:.0.exe.
 
-    3. In the **Add arguments (optional)** box, paste the same script command that you ran in Step 4. For example, `..ps1-tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn" -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -filePath "C:\Epic\audit\records.txt"`
+    3. In the **Add arguments (optional)** box, paste the same script command that you ran in Step 4. For example, `.\EpicConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn" -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -filePath "C:\Epic\audit\records.txt"`
 
     4. In the **Start in (optional)** box, paste the folder location of the script that you ran in Step 4. For example, C:\Epic\audit.
 
@@ -213,6 +218,10 @@ You can user the Task Scheduler app in Windows to automatically run the script e
 
 8. In the **Create Task** window, click **Ok** to save the scheduled task. You might be prompted to enter your user account credentials.
 
-The last time the script ran and the next time it's scheduled to run is displayed. You can double-click the task to edit it.
+   The new task is displayed in the Task Scheduler Library.
 
-You can also verify the last time the script ran on the flyout page of the corresponding Epic connector in the compliance center.
+   ![The new task for the healthcare connector script is displayed in the Task Scheduler Library.](../media/EpicConnectorTaskSchedulerLibrary.png)
+
+   The last time the script ran and the next time it's scheduled to run is displayed. You can double-click the task to edit it.
+
+   You can also verify the last time the script ran on the flyout page of the corresponding Epic connector in the compliance center.

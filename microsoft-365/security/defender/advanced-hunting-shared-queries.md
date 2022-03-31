@@ -33,7 +33,7 @@ ms.technology: m365d
 
 [Advanced hunting](advanced-hunting-overview.md) queries can be shared among users in the same organization. You can also find queries shared publicly on GitHub. These queries let you quickly pursue specific threat hunting scenarios without having to write queries from scratch.
 
-![Image of shared queries.](../../media/shared-query-1.png)
+:::image type="content" source="../../media/shared-query-1.png" alt-text="The shared queries information in the Microsoft 365 Defender portal" lightbox="../../media/shared-query-1.png":::
 
 ## Save, modify, and share a query
 You can save a new or existing query so that it is only accessible to you or shared with other users in your organization. 
@@ -44,7 +44,7 @@ You can save a new or existing query so that it is only accessible to you or sha
     
 3. Enter a name for the query. 
 
-   ![Image of saving a query.](../../media/shared-query-2.png)
+   :::image type="content" source="../../media/shared-query-2.png" alt-text="The new query that is about to be saved in the Microsoft 365 Defender portal" lightbox="../../media/shared-query-2.png":::
 
 4. Select the folder where you'd like to save the query.
     - **Shared queries** — shared to all users your organization
@@ -55,7 +55,7 @@ You can save a new or existing query so that it is only accessible to you or sha
 ## Delete or rename a query
 1. Select the three dots to the right of a query you want to rename or delete.
 
-    ![Image of delete query.](../../media/shared-query-3.png)
+    :::image type="content" source="../../media/shared-query-3.png" alt-text="The options for a shared query in the Advanced Hunting page in the Microsoft 365 Defender portal" lightbox="../../media/shared-query-3.png":::
 
 2. Select **Delete** and confirm deletion. Or select **Rename** and provide a new name for the query.
 
@@ -66,7 +66,7 @@ To generate a link that opens your query directly in the advanced hunting query 
 Microsoft security researchers regularly share advanced hunting queries in a [designated public repository on GitHub](https://aka.ms/hunting-queries). This repository is open to contributions. To contribute, [join GitHub for free](https://github.com/).
 
 >[!tip]
->Microsoft security researchers also provide advanced hunting queries that you can use to locate activities and indicators associated with emerging threats. These queries are provided as part of the [threat analytics](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics) reports in Microsoft Defender Security Center.
+>Microsoft security researchers also provide advanced hunting queries that you can use to locate activities and indicators associated with emerging threats. These queries are provided as part of the [threat analytics](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics) reports in Microsoft 365 Defender.
 
 
 ## Related topics

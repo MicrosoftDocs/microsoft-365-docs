@@ -3,11 +3,11 @@ metadata:
   title: Domains Frequently Asked Questions
   f1.keywords:
   - NOCSH
-  ms.author: pebaum
-  author: pebaum
+  ms.author: efrene
+  author: efrene
   manager: scotv
   audience: Admin
-  ms.topic: article
+  ms.topic: faq
   ms.service: o365-administration
   ms.localizationpriority: medium
   ms.collection: 
@@ -26,7 +26,6 @@ metadata:
   - GEA150
   ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
   description: Learn more about domains (onmicrosoft domain and transfer domain) by finding answers to your questions in FAQ.
-    
 title: Domains FAQ
 summary: |
 
@@ -69,6 +68,10 @@ sections:
           Using a custom domain like "**rob\@contoso.com**" with Microsoft 365 can help build credibility and recognition for your brand. 
             
           You can [buy a domain in Microsoft 365 and we'll set it up automatically](../get-help-with-domains/buy-a-domain-name.md), or you can buy or bring one you already own from a domain registrar.
+          
+      - question: Is it possible to connect a domain with Personal or Family offerings?
+        answer: |
+           As a benefit of your Microsoft 365 Family or Microsoft 365 Personal subscription, you can create a personalized email address that's associated with your Outlook.com mailbox, for example, yourname@example.com. At the moment, we only support connecting domains managed by GoDaddy with Outlook.com. For more information, see [Get a personalized email address in Microsoft 365](https://support.microsoft.com/office/get-a-personalized-email-address-in-microsoft-365-75416a58-b225-4c02-8c07-8979403b427b).
               
       - question: What happens if my DNS provider doesn't support certain record types?
         answer: |
@@ -81,6 +84,8 @@ sections:
           - eNomCentral
               
           - Europe Registry
+          
+          - Cloudflare
               
           - GoDaddy
               
@@ -110,12 +115,6 @@ sections:
           
           ::: moniker-end
           
-          ::: moniker range="o365-germany"
-          
-          1. In the admin center, go to the **Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> page.
-          
-          ::: moniker-end
-          
           ::: moniker range="o365-21vianet"
           
           1. In the admin center, go to the **Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a> page.
@@ -129,12 +128,6 @@ sections:
           ::: moniker range="o365-worldwide"
           
           You cannot change the name of your initial  *.onmicrosoft.com*  domain. 
-          
-          ::: moniker-end
-          
-          ::: moniker range="o365-germany"
-          
-          You cannot change the name of your initial  *.onmicrosoft.de*  domain. 
           
           ::: moniker-end
           
@@ -152,12 +145,6 @@ sections:
           ::: moniker range="o365-worldwide"
           
           Yes. To add subdomains, you must manage your own DNS settings at your registrar's website. If you are letting Microsoft manage your DNS settings with NS records, or if you bought the domain from Microsoft, you can't add subdomains.
-          
-          ::: moniker-end
-          
-          ::: moniker range="o365-germany"
-          
-          Yes! To add subdomains, you must manage your own DNS settings at your registrar's website. If you are letting Microsoft manage your DNS settings with NS records, or if you bought the domain from Microsoft, you can't add subdomains.
           
           ::: moniker-end
           
@@ -197,7 +184,7 @@ sections:
             
           - **You can't rename the onmicrosoft domain after sign-up.** For example, if the initial domain you chose was fourthcoffee.onmicrosoft.com, you can't change it to be fabrikam.onmicrosoft.com. To use a different onmicrosoft.com domain, you'd have to start a new subscription with Microsoft 365. 
               
-          - **You can't rename your team site URL.** Your team site URL is based on your onmicrosoft.com domain name. Unfortunately, because of the way SharePoint Online architecture works, you can't rename the team site. 
+          - **You might not be able to change your SharePoint domain name.** Your SharePoint domain name is based on your onmicrosoft.com domain name. The ability to [change the SharePoint domain name](/sharepoint/change-your-sharepoint-domain-name) is available in public preview for organizations whose total SharePoint sites and OneDrive accounts number fewer than 1000.
               
           - **You can't remove your onmicrosoft domain.** Microsoft 365 needs to keep it around because it's used behind the scenes for your subscription. But you don't have to use the domain yourself after you've added a custom domain. 
               
@@ -212,7 +199,7 @@ sections:
             
           - **You can't rename the onmicrosoft domain after sign-up.** For example, if the initial domain you chose was fourthcoffee.onmicrosoft.de, you can't change it to be fabrikam.onmicrosoft.de. To use a different onmicrosoft.de domain, you'd have to start a new subscription with Microsoft 365. 
               
-          - **You can't rename your team site URL.** Your team site URL is based on your onmicrosoft.de domain name.Unfortunately, because of the way SharePoint Online architecture works, you can't rename the team site. 
+          - **You can't rename your team site URL.** Your team site URL is based on your onmicrosoft.de domain name. Unfortunately, because of the way SharePoint Online architecture works, you can't rename the team site. 
               
           - **You can't remove your onmicrosoft domain.** Microsoft 365 needs to keep it around because it's used behind the scenes for your subscription. But you don't have to use the domain yourself after you've added a custom domain. 
               
@@ -233,3 +220,18 @@ sections:
             
           Want to know more about becoming the admin for your school? [Learn all about it](/microsoft-365/education/deploy/becoming-an-admin-in-office-365-education
           ).
+
+      - question: How can I create a website for my business?
+        answer: |
+         Watch a <a href="https://www.microsoft.com/videoplayer/embed/4839abc6-9323-4cbf-a79d-2907235f9ebb?autoplay=false" target="_blank">short video: Create your business website</a> about using a web hosting provider to create a website for your domain.
+
+         Microsoft 365 does not include a public website for your business. To set one up, consider using a web hosting company like GoDaddy, Wix, or WordPress.
+          1. Search for a web hosting provider where you can build your website.
+          
+          2. You may find it easiest to choose the website builder at the same company where your domain name is registered.
+          
+          3. Design your business website, making sure to include your business logo, business purpose, text, images, and links.
+          
+          4. To integrate the website with Microsoft 365, you can add your business email to the website and a link to Microsoft Teams, SharePoint, or other collaboration tool.
+          
+          5. Make sure to connect your website to your domain name, which you&#39;re also using for email on Microsoft 365.

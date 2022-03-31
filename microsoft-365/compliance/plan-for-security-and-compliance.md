@@ -7,7 +7,7 @@ author: chrfox
 manager: laurawi
 ms.date: 
 audience: Admin
-ms.topic: hub-page
+ms.topic: landing-page
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid: 
@@ -77,4 +77,4 @@ Configure your security and compliance settings in these admin centers and dashb
 |:-----|:-----|:-----|
 |Microsoft 365  <br/> |`https://admin.microsoft.com`  <br/> | Microsoft 365 admin center  <br/>  Security &amp; Compliance Center  <br/>  Exchange admin center  <br/>  SharePoint admin center and OneDrive for Business admin center  <br/> |
 |Enterprise Mobility + Security  <br/> |`https://portal.azure.com`  <br/> | Azure Active Directory  <br/>  Microsoft Mobile Application Management  <br/>  Microsoft Intune  <br/> |
-|Enterprise Mobility + Security  <br/> |`https://portal.cloudappsecurity.com`  <br/> | Cloud App Security  <br/> |
+|Enterprise Mobility + Security  <br/> |`https://portal.cloudappsecurity.com`  <br/> | Defender for Cloud Apps  <br/> |

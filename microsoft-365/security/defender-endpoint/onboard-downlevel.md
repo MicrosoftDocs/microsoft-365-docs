@@ -20,12 +20,12 @@ ms.technology: mde
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 **Platforms**
+
 - Windows 7 SP1 Enterprise
 - Windows 7 SP1 Pro
 - Windows 8.1 Pro
@@ -36,22 +36,15 @@ ms.technology: mde
 
 Defender for Endpoint extends support to include down-level operating systems, providing advanced attack detection and investigation capabilities on supported Windows versions.
 
-
-
 To onboard down-level Windows client endpoints to Defender for Endpoint, you'll need to:
-
 
 - [Configure and update System Center Endpoint Protection clients](#configure-and-update-system-center-endpoint-protection-clients)
 - [Install and configure Microsoft Monitoring Agent (MMA) to report sensor data](#install-and-configure-microsoft-monitoring-agent-mma)
 
-
-For Windows Server 2008 R2 SP1, you have the option of [onboarding through Azure Defender](#onboard-windows-servers-through-azure-defender).
-
+For Windows Server 2008 R2 SP1, you have the option of [onboarding through Microsoft Defender for Cloud](#onboard-windows-servers-through-microsoft-defender-for-cloud).
 
 > [!NOTE]
-> Defender for Endpoint standalone server license is required, per node, in order to onboard a Windows server through Microsoft Monitoring Agent (Option 1). Alternatively, an Azure Defender for Servers license is required, per node, in order to onboard a Windows server through Azure Defender (Option 2), see [Supported features available in Azure Defender](/azure/security-center/security-center-services).
-
-
+> Defender for Endpoint standalone server license is required, per node, in order to onboard a Windows server through Microsoft Monitoring Agent (Option 1). Alternatively, a Microsoft Defender for servers license is required, per node, in order to onboard a Windows server through Microsoft Defender for Cloud (Option 2), see [Supported features available in Microsoft Defender for Cloud](/azure/security-center/security-center-services).
 
 > [!TIP]
 > After onboarding the device, you can choose to run a detection test to verify that it is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Defender for Endpoint endpoint](run-detection-test.md).
@@ -69,7 +62,7 @@ The following steps are required to enable this integration:
 - Configure the SCEP client Cloud Protection Service membership to the **Advanced** setting
 - Configure your network to allow connections to the Microsoft Defender Antivirus cloud. For more information, see [Configure and validate Microsoft Defender Antivirus network connections](/microsoft-365/security/defender-endpoint/configure-network-connections-microsoft-defender-antivirus)
 
-## Install and configure Microsoft Monitoring Agent (MMA) 
+## Install and configure Microsoft Monitoring Agent (MMA)
 
 ### Before you begin
 
@@ -92,7 +85,6 @@ Review the following details to verify minimum system requirements:
     > Installation of .NET 4.5 might require you to restart your computer after installation.
 
 - Meet the Azure Log Analytics agent minimum system requirements. For more information, see [Collect data from computers in you environment with Log Analytics](/azure/log-analytics/log-analytics-concept-hybrid#prerequisites)
-
 
 ### Installation steps
 
@@ -129,22 +121,21 @@ If a proxy or firewall is in use, please ensure that servers can access all of t
 
 Once completed, you should see onboarded Windows servers in the portal within an hour.
 
+## Onboard Windows servers through Microsoft Defender for Cloud
 
-## Onboard Windows servers through Azure Defender
-
-1. In the Microsoft Defender Security Center navigation pane, select **Settings** > **Device management** > **Onboarding**.
+1. In the Microsoft 365 Defender navigation pane, select **Settings** > **Device management** > **Onboarding**.
 
 2. Select **Windows Server 2008 R2 SP1** as the operating system.
 
-3. Click **Onboard Servers in Azure Security Center**.
+3. Click **Onboard Servers in Microsoft Defender for Cloud**.
 
-4. Follow the onboarding instructions in [Microsoft Defender for Endpoint with Azure Defender](/azure/security-center/security-center-wdatp) and If you are using Azure ARC, follow the onboarding instructions in [Enabling the Microsoft Defender for Endpoint integration](/azure/security-center/security-center-wdatp#enabling-the-microsoft-defender-for-endpoint-integration).
+4. Follow the onboarding instructions in [Microsoft Defender for Endpoint with Microsoft Defender for Cloud](/azure/security-center/security-center-wdatp) and If you are using Azure ARC, follow the onboarding instructions in [Enabling the Microsoft Defender for Endpoint integration](/azure/security-center/security-center-wdatp#enabling-the-microsoft-defender-for-endpoint-integration).
 
 After completing the onboarding steps, you'll need to [Configure and update System Center Endpoint Protection clients](#configure-and-update-system-center-endpoint-protection-clients).
 
 > [!NOTE]
 >
-> - For onboarding via Azure Defender for Servers to work as expected, the server must have an appropriate workspace and key configured within the Microsoft Monitoring Agent (MMA) settings.
+> - For onboarding via Microsoft Defender for servers to work as expected, the server must have an appropriate workspace and key configured within the Microsoft Monitoring Agent (MMA) settings.
 > - Once configured, the appropriate cloud management pack is deployed on the machine and the sensor process (MsSenseS.exe) will be deployed and started.
 > - This is also required if the server is configured to use an OMS Gateway server as proxy.
 
@@ -243,22 +234,22 @@ Create a new group policy specifically for onboarding devices such as "Microsoft
 
 - Create a Group Policy Folder named "c:\windows\MMA"
 
-     :::image type="content" source="images/grppolicyconfig1.png" alt-text="folders":::
+     :::image type="content" source="images/grppolicyconfig1.png" alt-text="The folders location" lightbox="images/grppolicyconfig1.png":::
 
     **This will add a new folder on every server that gets the GPO applied, called MMA, and will be stored in c:\windows. This will contain the installation files for the MMA, prerequisites, and install script.**
 
 - Create a Group Policy Files preference for each of the files stored in Net logon.
 
-     :::image type="content" source="images/grppolicyconfig2.png" alt-text="group policy image1":::
+     :::image type="content" source="images/grppolicyconfig2.png" alt-text="The group policy - 1" lightbox="images/grppolicyconfig2.png":::
 
 It copies the files from DOMAIN\NETLOGON\MMA\filename to
 C:\windows\MMA\filename - **so the installation files are local to the server**:
 
-:::image type="content" source="images/deploymma.png" alt-text="deploy mma cmd":::
+:::image type="content" source="images/deploymma.png" alt-text="The deploy mma cmd properties" lightbox="images/deploymma.png":::
 
 Repeat the process but create item level targeting on the COMMON tab, so the file only gets copied to the appropriate platform/Operating system version in scope:
 
-:::image type="content" source="images/targeteditor.png" alt-text="target editor":::
+:::image type="content" source="images/targeteditor.png" alt-text="The target editor" lightbox="images/targeteditor.png":::
 
 For Windows Server 2008 R2 you'll need (and it will only copy down) the following:
 - Windows6.1-KB3080149-x64.msu
@@ -268,7 +259,7 @@ For Windows Server 2008 R2 you'll need (and it will only copy down) the followin
 
 Once this is done, you'll need to create a start-up script policy:
 
-:::image type="content" source="images/startupprops.png" alt-text="start up properties":::
+:::image type="content" source="images/startupprops.png" alt-text="The start up properties" lightbox="images/startupprops.png":::
 
 The name of the file to run here is c:\windows\MMA\DeployMMA.cmd.
 Once the server is restarted as part of the start-up process it will install the Update for customer experience and diagnostic telemetry KB, and then install the MMA Agent, while setting the Workspace ID and Key, and the server will be onboarded.
@@ -279,13 +270,13 @@ This could be done in two phases. First create **the files and the folder in** G
 
 As the Script has an exit method and wont re-run if the MMA is installed, you could also use a daily scheduled task to achieve the same result. Similar to a Configuration Manager compliance policy it will check daily to ensure the MMA is present.
 
-:::image type="content" source="images/schtask.png" alt-text="schedule task":::
+:::image type="content" source="images/schtask.png" alt-text="schedule task" lightbox="images/schtask.png":::
 
-:::image type="content" source="images/newtaskprops.png" alt-text="new task properties":::
+:::image type="content" source="images/newtaskprops.png" alt-text="The new task properties" lightbox="images/newtaskprops.png":::
 
-:::image type="content" source="images/deploymmadowmload.png" alt-text="deploy mma download props":::
+:::image type="content" source="images/deploymmadowmload.png" alt-text="The deploy mma download properties" lightbox="images/deploymmadowmload.png":::
 
-:::image type="content" source="images/tasksch.png" alt-text="task scheduler":::
+:::image type="content" source="images/tasksch.png" alt-text="The task scheduler" lightbox="images/tasksch.png":::
 
 As mentioned in the onboarding documentation for Server specifically around Server 2008 R2 please see below:
 For Windows Server 2008 R2 SP1, ensure that you fulfill the following requirements:
@@ -324,7 +315,7 @@ You can use either of the following methods:
 
 2. Select the Defender for Endpoint workspace, and click **Remove**.
 
-    ![Image of Microsoft Monitoring Agent Properties](images/atp-mma.png)
+    :::image type="content" source="images/atp-mma.png" alt-text="The Workspaces pane" lightbox="images/atp-mma.png":::
 
 #### Run a PowerShell command to remove the configuration
 

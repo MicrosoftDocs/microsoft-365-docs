@@ -17,7 +17,9 @@ search.appverid:
 ms.assetid: 
 
 description: Use the Advanced eDiscovery Custodian Management tool to easily access and search the activity for custodians within your case.
-ms.custom: seo-marvel-mar2020
+ms.custom: 
+- seo-marvel-mar2020
+- admindeeplinkEXCHANGE
 ---
 # View custodian audit activity
 
@@ -25,7 +27,7 @@ Need to find if a user viewed a specific document or purged an item from their m
 
 ## Get permissions
 
-You have to be assigned the View-Only Audit Logs or Audit Logs role in Exchange Online to search the audit log. By default, these roles are assigned to the Compliance Management and Organization Management role groups on the Permissions page in the Exchange admin center. To give a user the ability to search the Advanced eDiscovery audit log with the minimum level of privileges, you can create a custom role group in Exchange Online, add the View-Only Audit Logs or Audit Logs role, and then add the user as a member of the new role group. For more information, see Manage role groups in Exchange Online.
+You have to be assigned the View-Only Audit Logs or Audit Logs role in Exchange Online to search the audit log. By default, these roles are assigned to the Compliance Management and Organization Management role groups on the Permissions page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>. To give a user the ability to search the Advanced eDiscovery audit log with the minimum level of privileges, you can create a custom role group in Exchange Online, add the View-Only Audit Logs or Audit Logs role, and then add the user as a member of the new role group. For more information, see Manage role groups in Exchange Online.
 
 > [!IMPORTANT]
 > If you assign a user the View-Only Audit Logs or Audit Logs role on the Permissions page in the Microsoft 365 compliance center, they won't be able to search the audit log. You have to assign the permissions in Exchange Online. This is because the underlying cmdlet used to search the audit log is an Exchange Online cmdlet.

@@ -3,8 +3,6 @@
   items: 
     - name: Get started
       items: 
-        - name: What is Microsoft 365
-          href: what-is-microsoft-365.md
         - name: Overview of setup
           href: setup-overview.md
         - name: Choose a subscription
@@ -27,22 +25,16 @@
           href: connect.md
         - name: Install Microsoft Office apps
           href: install-office.md
-        - name: Set up Outlook for email
-          href: setup-outlook.md 
         - name: Import and redirect mail
           href: import-email.md
-        - name: Move your files to OneDrive
-          href: files-to-onedrive.md
-        - name: Move company files to SharePoint
-          href: files-to-sharepoint.md    
     - name: Mobile
       items: 
         - name: Work from anywhere
           href: work-from-anywhere.md
         - name: Install Office apps on Android
-          href: install-apps-android.md
+          href: https://support.microsoft.com/office/6ef2ebf2-fc2d-474a-be4a-5a801365c87f
         - name: Install Office apps on iOS
-          href: install-apps-ios.md
+          href: https://support.microsoft.com/office/0402b37e-49c4-4419-a030-f34c2013041f
         - name: Get the Admin mobile app
           href: admin-mobile.md 
     - name: Collaborate
@@ -50,35 +42,33 @@
         - name: Use Outlook and Teams
           href: collab-outlook-teams.md
         - name: Get started with Teams
-          href: get-started-teams-small-business.md
+          href: https://support.microsoft.com/office/6723dc43-dbc0-46e6-af49-8a2d1c5cb937
         - name: Create a group email address
-          href: group-email.md
+          href: https://support.microsoft.com/office/3f73d218-52d6-4f88-a733-9ff37073ee4c
         - name: Create a shared calendar
-          href: shared-calendar.md
+          href: https://support.microsoft.com/office/353ed2c1-3ec5-449d-8c73-6931a0adab88
         - name: Create an org-wide team
-          href: org-wide-team.md 
+          href: /microsoftteams/create-an-org-wide-team
         - name: Create a team with guests
-          href: team-with-guests.md
+          href: https://support.microsoft.com/office/fccb4fa6-f864-4508-bdde-256e7384a14f
         - name: Join a team as a guest
-          href: join-team-guest.md
+          href: /microsoftteams/guest-experience
         - name: Chat with employees and customers
-          href: start-and-pin-chats.md  
-        - name: Online meetings overview
-          href: overview-online-meetings.md 
+          href: https://support.microsoft.com/office/65748808-a403-462c-a6e1-b169e5bc6c92
         - name: Schedule a meeting with guests
-          href: schedule-guest-meeting.md
+          href: https://support.microsoft.com/office/943507a9-8583-4c58-b5d2-8ec8265e04e5
         - name: Join a meeting with guests
-          href: join-guest-meeting.md   
+          href: https://support.microsoft.com/office/c6efc38f-4e03-4e79-b28f-e65a4c039508
     - name: Cloud storage
       items:
         - name: Sharing overview
           href: overview-file-sharing.md
         - name: Where to store files
-          href: store-files.md
+          href: https://support.microsoft.com/office/d18d21a0-1f9f-4f6c-ac45-d52afa0a4a2e
         - name: Securely share files externally
-          href: securely-share-files-externally.md
+          href: https://support.microsoft.com/office/9fcc2f7d-de0c-4cec-93b0-a82024800c07
         - name: Easily share files externally
-          href: share-files-externally.md  
+          href: https://support.microsoft.com/office/9fcc2f7d-de0c-4cec-93b0-a82024800c07
     - name: Business Voice
       items:
         - name: Overview of Business Voice
@@ -88,17 +78,11 @@
     - name: Productivity apps
       items:
         - name: Overview of Bookings
-          href: overview-bookings.md
-        - name: Track business info with Microsoft Lists
-          href: track-info-lists.md
-        - name: Plan an event
-          href: plan-event.md   
+          href: https://support.microsoft.com/office/42d4e852-8e99-4d8f-9b70-d7fc93973cb5
     - name: Manage services
       items: 
         - name: What is an admin
           href: what-is-admin.md
-        - name: Overview of the admin center
-          href: admin-center-overview.md
         - name: View, download, or print your bill
           href: view-bill.md
         - name: Buy new licenses
@@ -113,8 +97,6 @@
           href: set-up-self-serve-password-reset.md
         - name: Add a user
           href: add-user.md  
-        - name: Delete a user
-          href: delete-user.md 
         - name: Add another admin
           href: add-admin.md
         - name: Change a user name or email
@@ -125,8 +107,6 @@
           href: company-wide-signature.md 
         - name: Act on usage report
           href: act-on-report.md
-        - name: Add another domain
-          href: add-domain.md 
         - name: Set up a new business email address
           href: set-up-a-new-business-email-address.md
     - name: Manage devices
@@ -140,30 +120,12 @@
         - name: Overview of Microsoft 365 Business Premium security
           href: overview-m365-security.md
         - name: Secure employee accounts with MFA
-          href: turn-on-mfa.md
+          href: ../admin/security-and-compliance/set-up-multi-factor-authentication.md
         - name: Set up two-factor sign-in on your phone
-          href: set-up-mfa.md
-        - name: Turn on malware detection
-          href: anti-malware.md 
-        - name: Create email rules for ransomware
-          href: prevent-ransom-in-email.md
-        - name: Set up anti-phishing
-          href: setup-anti-phishing.md  
-        - name: Manage safe attachments
-          href: safe-attachments.md 
-        - name: Manage safe links
-          href: safe-links.md
-        - name: Prevent data loss
-          href: set-up-dlp.md 
-        - name: Create sensitivity labels
-          href: create-sensitivity-labels.md 
+          href: https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14
     - name: Support
       items:
-        - name: Get help or support
-          href: get-help-support.md 
         - name: Find docs and training
-          href: find-help-answers.md
-        - name: Employee quick setup  
-          href: employee-quick-setup.md  
+          href: ../admin/index.yml
     - name: Switch from Google Workspace
       href: moveto-microsoft-365/move-from-google-workspace-overview.md  

@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date:
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
@@ -50,23 +50,26 @@ The following table lists the metadata fields for documents in a review set in a
 |Content*|Content||Extracted text of the item.|
 |Conversation Body|ConversationBody||Conversation body of the item.|
 |Conversation ID|ConversationId|Conversation_ID|Conversation Id from the message. For Teams 1:1 and group chats, all transcript files and their family items within the same conversation share the same Conversation ID. For more information, see [Advanced eDiscovery workflow for content in Microsoft Teams](teams-workflow-in-advanced-ediscovery.md).|
+|Conversation Family ID|ConversationFamilyID|ConversationFamilyID|The Id that identifies individual elements of a conversation as well as the related items in the conversation.|
 |Conversation Index||Conversation_index|Conversation index from the message.|
-|Conversation Name||ConversationName|Name of the channel in Teams. The format of the name depends on the type of channel: <br>Teams channel chats and private channel chats: \<Name of team, name of channel\> <br>Teams 1:1 and group chats: Display name and email address of all chat participants<br>Yammer community: Community name + first 120 chars of a post<br>Yammer private: Sender name and email address + first 120 chars of a message|
+|Conversation Name||ConversationName|This field depends on content type.<br>**Teams 1:1 chat:** first 40 characters of first message.<br>**Teams 1:N chat:** Name of group chat; if not available, the first 40 characters of the first message.<br>**Teams Channel Post:** Post title or announcement subhead; if not available, the first 40 characters of the first message.|
 |Conversation Pdf Time|ConversationPdfTime||Date when the PDF version of the conversation was created.|
 |Conversation Redaction Burn Time|ConversationRedactionBurnTime||Date when the PDF version of the conversation was created for Chat.|
 |Conversation Topic|ConversationTopic||Conversation topic of the item.|
-|Conversation Type|ConversationType|ConversationType|The type of chat conversation. Values are: <br> Teams 1:1 and group chats and all Yammer conversations: **Group** for<br>Teams channels and private channels: **Channel**|
-|Contains Edited Message|ContainsEditedMessage|ContainsEditedMessage|Indicates if the Teams chat transcript includes an edited message
+|Conversation Type|ConversationType|ConversationType|The type of chat conversation. Values are: <br>**Teams 1:1 and group chats and all Yammer conversations:** Group<br>**Teams channels and private channels:** Channel|
+|Contains Deleted Message|ContainsDeletedMessage|ContainsDeletedMessage|Indicates if the chat transcript includes a deleted message|
+|Contains Edited Message|ContainsEditedMessage|ContainsEditedMessage|Indicates if the chat transcript includes an edited message|
+|Teams Announcement Title|TeamsAnnouncementTitle|TeamsAnnouncementTitle|Title from a [teams announcement](https://support.microsoft.com/office/send-an-announcement-to-a-channel-8f244ea6-235a-4dcc-9143-9c5b801b4992).|
 |||Converted_file_path|The path of the converted export file. For internal Microsoft use only.|
 |Custodian|Custodian|Custodian|Name of the custodian the item was associated with.|
-|Date|Date|Date|Date is a computed field that depends on the file type.<p>Email: Sent date<br>Email attachments: Last modified date of the document;if not available, the parent's Sent date<br>Embedded documents: Last modified date of the document; if not available, the parent's last modified date<br>SPO documents (includes modern attachments): SharePoint Last modified date; if not available, the documents last modified date<br>Non-Office 365 documents: Last modified date<br>Meetings: Meeting start date<br>VoiceMail: Sent date<br>IM: Sent date<br>Teams: Sent date|
+|Date|Date|Date|Date is a computed field that depends on the file type.<p>**Email**: Sent date<br>**Email attachments**: Last modified date of the document; if not available, the parent's sent date<br>**Embedded documents**: Last modified date of the document; if not available, the parent's last modified date<br>**SPO documents (includes modern attachments)**: Last modified date of the document; if not available, SharePoint last modified date<br>**Non-Office 365 documents**: Last modified date<br>**Meetings**: Meeting start date<br>**VoiceMail**: Sent date<br>**IM**: Sent date<br>**Teams**: Sent date|
 |Document comments|DocComments|Doc_comments|Comments from the document metadata.|
 |Document company||Doc_company|Company from the document metadata.|
 |Document date created|CreatedTime|Doc_date_created|Create date from document metadata.|
 |DocIndex*|||The index in the family. **-1** or **0** means it is the root.|
 |Document keywords||Doc_keywords|Keywords from the document metadata.|
-|Document modified by||Doc_modified_by|Last modified date by from document metadata.|
-|Document Revision|Doc_Version|Doc_Version|Revision from the document metadata.|
+|Document modified by||Doc_modified_by|The user who last modified the document from document metadata.|
+|Document revision|Doc_Version|Doc_Version|Revision from the document metadata.|
 |Document subject||Doc_subject|Subject from the document metadata.|
 |Document template||Doc_template|Template from the document metadata.|
 |DocLastSavedBy||Doc_last_saved_by|The name of the user who last saved the document.|
@@ -131,8 +134,8 @@ The following table lists the metadata fields for documents in a review set in a
 |O365 authors||O365_authors|Author from SharePoint.|
 |O365 created by||O365_created_by|Created by from SharePoint.|
 |O365 date created||O365_date_created|Created date from SharePoint.|
-|O365 date modified||O365_date_modified|Last modified date from SharePoint.|
-|O365 modified by||O365_modified_by|Modified by from SharePoint.|
+|O365ModifiedDate||O365_date_modified|The date a document (or document version) collected from SharePoint or OneDrive for Business was modified. This is the same modified date as the one displayed in the version history in the SharePoint and OneDrive user experience.|
+|O365 modified by||O365_modified_by|Modified by from SharePoint or OneDrive.|
 |Other custodians|DedupedCustodians|Deduped_custodians|List of custodians of documents that are exact duplicates (for email, based on content; for documents, based on hash).|
 |Other file IDs|DedupedFileIds|Deduped_file_IDs|List of file IDs of documents that are exact duplicates (for email, based on content; for documents, based on hash).|
 |Other paths|Dedupedcompoundpath|Deduped_compound_path|List of compound paths of documents that are exact duplicates (email: based on content, documents: based on hash).|
@@ -166,12 +169,14 @@ The following table lists the metadata fields for documents in a review set in a
 |Subject|Subject|Email_subject|Subject of the message.|
 |Subject/Title|SubjectTitle||Calculated field comprised of the subject or title of the item.|
 |Tags|Tags|Tags|Tags applied in a review set.|
-|Teams Channel Name|TeamsChannel|Channel_Name|Name of the channel in Microsoft Teams.|
+|Channel Name|Channel|ChannelName|This is the Teams channel name. Only applies to Microsoft Teams content.|
+|Team Name|TeamName|TeamName|**Teams:** Name of team<br>**Yammer:** Community name|
 |Themes list|ThemesList|Themes_list|Themes list as calculated for analytics.|
 |Title|Title|Doc_title|Title from the document metadata. Title from the document metadata. For Teams and Yammer content, this is the value from the ConversationName property.|
 |To|To|Email_to|To field for message types. Format is **DisplayName\<SmtpAddress>**|
 |Unique in email set|UniqueInEmailSet||**False** if there's a duplicate of the attachment in its email set.|
 |Version Group ID||Version_Group_Id|Groups together the different versions of the same document.|
+|VersionNumber||Version_Number|The version number of a document collected from SharePoint or OneDrive for Business. This is the same version number as the one displayed in the version history in the SharePoint and OneDrive user experience.|
 |Was Remediated|WasRemediated|Was_Remediated|**True** if the item was remediated, otherwise **False**.|
 |Word count|WordCount|Word_count|Number of words in the item.|
 |||||

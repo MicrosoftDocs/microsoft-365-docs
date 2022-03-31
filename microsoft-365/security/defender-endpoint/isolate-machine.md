@@ -2,7 +2,6 @@
 title: Isolate machine API
 description: Learn how to use the Isolate machine API to isolate a device from accessing external network in Microsoft Defender for Endpoint.
 keywords: apis, graph api, supported apis, isolate device
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -24,7 +23,8 @@ ms.custom: api
 
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -46,8 +46,8 @@ Isolates a device from accessing external network.
 
 > [!IMPORTANT]
 >
-> - Full isolation is available for devices on Windows 10, version 1703.
-> - Selective isolation is available for devices on Windows 10, version 1709 or later.
+> - Full isolation is available for devices on Windows 10, version 1703, and on Windows 11.
+> - Selective isolation is available for devices on Windows 10, version 1709 or later, and on Windows 11.
 > - When isolating a device, only certain processes and destinations are allowed. Therefore, devices that are behind a full VPN tunnel won't be able to reach the Microsoft Defender for Endpoint cloud service after the device is isolated. We recommend using a split-tunneling VPN for Microsoft Defender for Endpoint and Microsoft Defender Antivirus cloud-based protection-related traffic.
 
 ## Permissions

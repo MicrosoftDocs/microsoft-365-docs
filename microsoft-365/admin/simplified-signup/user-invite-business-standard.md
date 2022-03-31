@@ -63,7 +63,7 @@ Check your spam folder. If it’s not there, contact your admin or business owne
 
 ### I have a question about upgrading my account, who can I talk to?
 
-Contact our small business support experts who can help you upgrade your Microsoft 365 subscription. Learn more at [Get support](../../business-video/get-help-support.md).
+Contact our small business support experts who can help you upgrade your Microsoft 365 subscription. Learn more at [Get support](../get-help-support.md).
 
 ### What happens to my data and account when I upgrade?
 
@@ -90,7 +90,7 @@ No it doesn’t, you can still login the same way as before.
 
 When you launch Microsoft Outlook using your new business account, your new mailbox will be automatically set up for you.
 
-1. First follow: [Set up Outlook for business email](../../business-video/setup-outlook.md).
+1. First follow: [Set up Outlook for business email](Set up Outlook for Microsoft 365 for business email](../setup/setup-outlook.md).
 2. Then follow: [Create and send email in Outlook](https://support.microsoft.com/office/create-and-send-email-in-outlook-19c32deb-08b6-4f90-a211-02bc5f77f360).
 
 ### How can I leave this business (and stop using this license)?

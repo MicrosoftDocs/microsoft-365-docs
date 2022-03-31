@@ -35,7 +35,7 @@ Depending on its size, each tenant has access to a set amount of CPU resources a
 
 After running your query, you can see the execution time and its resource usage (Low, Medium, High). High indicates that the query took more resources to run and could be improved to return results more efficiently.
 
-![Image showing low resource indicator](../../media/resource-usage.png)
+:::image type="content" source="../../media/resource-usage.png" alt-text="The query details under **Results** tab in the Microsoft 365 Defender portal" lightbox="../../media/resource-usage.png":::
 
 Customers who run multiple queries regularly should track consumption and apply the optimization guidance in this article to minimize disruption resulting from exceeding quotas or usage parameters.
 

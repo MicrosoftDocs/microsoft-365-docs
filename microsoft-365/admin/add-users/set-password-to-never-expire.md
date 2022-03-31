@@ -30,9 +30,9 @@ This article explains how to set a password for an individual user to not expire
 
 ## Before you begin
 
-This article is for people who set password expiration policy for a business, school, or nonprofit. To complete these steps, you need to sign in with your Microsoft 365 admin account. [What's an admin account?](../../business-video/admin-center-overview.md).
+This article is for people who set password expiration policy for a business, school, or nonprofit. To complete these steps, you need to sign in with your Microsoft 365 admin account. See [Overview of the Microsoft 365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview?view=o365-worldwide).
 
-You must be an [global admin or password administrator](about-admin-roles.md) to perform these steps.
+You must be a [global admin or password administrator](about-admin-roles.md) to perform these steps.
 
 A global admin for a Microsoft cloud service can use the [Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2) to set passwords not to expire for specific users. You can also use [AzureAD](/powershell/module/Azuread) cmdlets to remove the never-expires configuration or to see which user passwords are set to never expire.
 

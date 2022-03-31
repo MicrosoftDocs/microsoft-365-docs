@@ -2,8 +2,8 @@
 title: "Microsoft Productivity Score"
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -158,4 +158,4 @@ Share your thoughts about Productivity Score and your ideas about how to improve
 
 [Monitor Microsoft 365 activity by using reports](../../admin/activity-reports/activity-reports.md) (article)\
 [Enable Microsoft 365 usage analytics](../../admin/usage-analytics/enable-usage-analytics.md) (article)\
-[Overview of the Microsoft 365 admin center](../../business-video/admin-center-overview.md) (video)
+[Overview of the Microsoft 365 admin center](Overview of the Microsoft 365 admin center](../admin-overview/admin-center-overview.md) (video)

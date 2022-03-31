@@ -2,7 +2,6 @@
 title: Submit or Update Indicator API
 description: Learn how to use the Submit or Update Indicator API to submit or update a new Indicator entity in Microsoft Defender for Endpoint.
 keywords: apis, graph api, supported apis, submit, ti, indicator, update
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -23,7 +22,8 @@ ms.custom: api
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -75,15 +75,15 @@ Parameter|Type|Description
 :---|:---|:---
 indicatorValue|String|Identity of the [Indicator](ti-indicator.md) entity. **Required**
 indicatorType|Enum|Type of the indicator. Possible values are: "FileSha1", "FileMd5", "CertificateThumbprint", "FileSha256", "IpAddress", "DomainName" and "Url". **Required**
-action|Enum|The action that will be taken if the indicator will be discovered in the organization. Possible values are: "Alert", "Warn", "Block", "Audit, "BlockAndRemediate", "AlertAndBlock", and "Allowed". **Required**
+action|Enum|The action that will be taken if the indicator will be discovered in the organization. Possible values are: "Alert", "Warn", "Block", "Audit, "BlockAndRemediate", "AlertAndBlock", and "Allowed". **Required**. The "GenerateAlert" parameter must be set to "TRUE" when creating an action with "Audit".
 application|String|The application associated with the indicator. This field only works for new indicators. It will not update the value on an existing indicator. **Optional**
 title|String|Indicator alert title. **Required**
 description|String|Description of the indicator. **Required**
 expirationTime|DateTimeOffset|The expiration time of the indicator. **Optional**
-severity|Enum|The severity of the indicator. possible values are: "Informational", "Low", "Medium" and "High". **Optional**
+severity|Enum|The severity of the indicator. Possible values are: "Informational", "Low", "Medium", and "High". **Optional**
 recommendedActions|String|TI indicator alert recommended actions. **Optional**
 rbacGroupNames|String|Comma-separated list of RBAC group names the indicator would be applied to. **Optional**
-
+generateAlert|Enum|**True** if alert generation is required, **False** if this indicator should not generate an alert.
 ## Response
 
 - If successful, this method returns 200 - OK response code and the created / updated [Indicator](ti-indicator.md) entity in the response body.

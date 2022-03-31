@@ -2,7 +2,6 @@
 title: Common mistakes to avoid when defining exclusions
 description: Avoid common mistakes when defining exclusions for Microsoft Defender Antivirus scans.
 keywords: exclusions, files, extension, file type, folder name, file name, scans
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -15,11 +14,14 @@ ms.reviewer:
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.date: 09/22/2021
+ms.date: 10/19/2021
 ms.collection: M365-security-compliance
 ---
 
 # Common mistakes to avoid when defining exclusions
+
+**Applies to:**
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 You can define an exclusion list for items that you don't want Microsoft Defender Antivirus to scan. Such excluded items could contain threats that make your device vulnerable. This article describes some common mistake that you should avoid when defining exclusions.
 

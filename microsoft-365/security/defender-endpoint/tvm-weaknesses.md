@@ -2,8 +2,6 @@
 title: Vulnerabilities in my organization - threat and vulnerability management
 description: Lists the common vulnerabilities and exposures (CVE) ID of weaknesses found in the software running in your organization. Discovered by the Microsoft Defender for Endpoint threat and vulnerability management capability.
 keywords: Microsoft Defender for Endpoint threat & vulnerability management, threat and vulnerability management, Microsoft Defender for Endpoint tvm weaknesses page, finding weaknesses through tvm, tvm vulnerability list, vulnerability details in tvm
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -24,11 +22,14 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Threat and vulnerability management](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
+
+> [!IMPORTANT]
+> Threat and vulnerability management can help identify Log4j vulnerabilities in applications and components. [Learn more](https://www.microsoft.com/security/blog/2021/12/11/guidance-for-preventing-detecting-and-hunting-for-cve-2021-44228-log4j-2-exploitation/#TVM).
 
 Threat and vulnerability management uses the same signals in Defender for Endpoint's endpoint protection to scan and detect vulnerabilities.
 
@@ -44,7 +45,7 @@ The **Weaknesses** page lists the software vulnerabilities your devices are expo
 
 Access the Weaknesses page a few different ways:
 
-- Selecting **Weaknesses** from the **Vulnerability management** navigation menu in the [Microsoft 365 Defender portal] (portal-overview.md)
+- Selecting **Weaknesses** from the **Vulnerability management** navigation menu in the [Microsoft 365 Defender portal](portal-overview.md)
 - Global search
 
 ### Navigation menu
@@ -55,7 +56,9 @@ Go to the **Vulnerability management** navigation menu and select **Weaknesses**
 
 1. Go to the global search drop-down menu.
 2. Select **Vulnerability** and key-in the Common Vulnerabilities and Exposures (CVE) ID that you're looking for, then select the search icon. The **Weaknesses** page opens with the CVE information that you're looking for.
-![Global search box with the dropdown option "vulnerability" selected and an example CVE.](images/tvm-vuln-globalsearch.png)
+
+:::image type="content" source="images/tvm-vuln-globalsearch.png" alt-text="The Global search box with the dropdown option vulnerability selected" lightbox="images/tvm-vuln-globalsearch.png":::
+
 3. Select the CVE to open a flyout panel with more information, including the vulnerability description, details, threat insights, and exposed devices.
 
 To see the rest of the vulnerabilities in the **Weaknesses** page, type CVE, then select search.
@@ -64,7 +67,7 @@ To see the rest of the vulnerabilities in the **Weaknesses** page, type CVE, the
 
 Remediate the vulnerabilities in exposed devices to reduce the risk to your assets and organization. If the **Exposed Devices** column shows 0, that means you aren't at risk.
 
-![Weaknesses landing page.](images/tvm-weaknesses-overview.png)
+:::image type="content" source="images/tvm-weaknesses-overview.png" alt-text="The Weaknesses landing page" lightbox="images/tvm-weaknesses-overview.png":::
 
 ### Breach and threat insights
 
@@ -87,7 +90,7 @@ If you select a CVE, a flyout panel will open with more information such as the 
 - The "OS Feature" category is shown in relevant scenarios
 - You can go to the related security recommendation for every CVE with exposed device
 
- ![Weakness flyout example.](images/tvm-weakness-flyout400.png)
+ :::image type="content" source="images/tvm-weakness-flyout400.png" alt-text="The Vulnerability description page" lightbox="images/tvm-weakness-flyout400.png":::
 
 ### Software that isn't supported
 
@@ -103,7 +106,7 @@ Exposed device information will not be available for CVEs with unsupported softw
 
 1. Go to the [threat and vulnerability management dashboard](tvm-dashboard-insights.md) and scroll down to the **Top vulnerable software** widget. You will see the number of vulnerabilities found in each software, along with threat information and a high-level view of device exposure over time.
 
-    ![Top vulnerable software card with four columns: software, weaknesses, threats, exposed devices.](images/tvm-top-vulnerable-software500.png)
+   :::image type="content" source="images/tvm-top-vulnerable-software500.png" alt-text="The Weaknesses column in the Top vulnerable software page" lightbox="images/tvm-top-vulnerable-software500.png":::
 
 2. Select the software you want to investigate to go to a drilldown page.
 
@@ -111,7 +114,7 @@ Exposed device information will not be available for CVEs with unsupported softw
 
 4. Select the vulnerability you want to investigate for more information on vulnerability details
 
-    ![Windows Server 2019 drill down overview.](images/windows-server-drilldown.png)
+   :::image type="content" source="images/windows-server-drilldown.png" alt-text="The Windows Server 2019 drill down overview" lightbox="images/windows-server-drilldown.png":::
 
 ### Discover vulnerabilities in the device page
 
@@ -121,13 +124,13 @@ View related weaknesses information in the device page.
 
 2. In the **Device inventory** page, select the device name that you want to investigate.
 
-    ![Device list with selected device to investigate.](images/tvm_machinetoinvestigate.png)
+   :::image type="content" source="images/tvm_machinetoinvestigate.png" alt-text="The Device list with a selected device to investigate" lightbox="images/tvm_machinetoinvestigate.png":::
 
 3. The device page will open with details and response options for the device you want to investigate.
 
 4. Select **Discovered vulnerabilities**.
 
-   :::image type="content" alt-text="Device page with details and response options." source="images/tvm-discovered-vulnerabilities.png" lightbox="images/tvm-discovered-vulnerabilities.png":::
+   :::image type="content" source="images/tvm-discovered-vulnerabilities.png" alt-text="The Device page with details and response options." lightbox="images/tvm-discovered-vulnerabilities.png":::
 
 5. Select the vulnerability that you want to investigate to open up a flyout panel with the CVE details, such as: vulnerability description, threat insights, and detection logic.
 
@@ -137,7 +140,7 @@ Similar to the software evidence, we now show the detection logic we applied on 
 
 The "OS Feature" category is also shown in relevant scenarios. A CVE would affect devices that run a vulnerable OS only if a specific OS component is enabled. Let's say Windows Server 2019 or Windows Server 2022 has vulnerability in its DNS component. With this new capability, we'll only attach this CVE to the Windows Server 2019 and Windows Server 2022 devices with the DNS capability enabled in their OS.
 
-:::image type="content" alt-text="Detection Logic example which lists the software detected on the device and the KBs." source="images/tvm-cve-detection-logic.png":::
+:::image type="content" source="images/tvm-cve-detection-logic.png" alt-text="The Detection Logic example which lists the software detected on the device and the KBs" lightbox="images/tvm-cve-detection-logic.png":::
 
 ## Report inaccuracy
 

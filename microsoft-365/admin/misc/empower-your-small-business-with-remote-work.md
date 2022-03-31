@@ -3,7 +3,7 @@ title: "Empower your small business with remote work"
 f1.keywords:
 - NOCSH
 ms.author: twerner
-author: twerner
+author: twernermsft
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -32,7 +32,7 @@ As businesses adapt to the increased need to have people work remotely and conne
 
 In light of the COVID-19 (Novel Coronavirus) outbreak, many business owners are finding themselves with a completely remote work staff. Here's what you can do to make a transition to remote work safe, secure, and productive.
 
-For more information, see [Get started with Microsoft Teams in your small business](../../business-video/get-started-teams-small-business.md).
+For more information, see [Get started with Microsoft Teams in your small business](https://support.microsoft.com/office/6723dc43-dbc0-46e6-af49-8a2d1c5cb937).
 
 Already have a subscription but need to get set up? See [Microsoft 365 small business training](../../business-video/index.yml).
 
@@ -44,7 +44,7 @@ You can still connect with employees, customers, clients, and partners, even if 
 
 Host audio, video, and web meetings with employees, customers, or partners through Microsoft Teams.
 
-For more information, see [Host online meetings](../../business-video/start-and-pin-chats.md) and [Chat with employees and customers](https://support.microsoft.com/office/chat-with-employees-and-customers-65748808-a403-462c-a6e1-b169e5bc6c92).
+For more information, see [Host online meetings](https://support.microsoft.com/office/65748808-a403-462c-a6e1-b169e5bc6c92) and [Chat with employees and customers](https://support.microsoft.com/office/65748808-a403-462c-a6e1-b169e5bc6c92).
 
 ### Store and share files
 
@@ -56,7 +56,7 @@ For more information, see this [Overview of sharing business files](../../busine
 
 Invite employees and customers to a team so you can work directly with them to coordinate and collaborate all in one place.
 
-For more information, see [Create a team](../../business-video/team-with-guests.md) and [Enable guest access](/MicrosoftTeams/guest-access).
+For more information, see [Create a team](https://support.microsoft.com/office/fccb4fa6-f864-4508-bdde-256e7384a14f) and [Enable guest access](/MicrosoftTeams/guest-access).
 
 ## Manage and secure your business to run remotely
 
@@ -66,7 +66,7 @@ Just a few steps can help you keep your business secure, even with remote emplo
 
 Use multi-factor authentication to protect your data and devices.
 
-For more information, see [Turn on multi-factor authentication](../../business-video/turn-on-mfa.md).
+For more information, see [Turn on multi-factor authentication](../security-and-compliance/set-up-multi-factor-authentication.md).
 
 ### Secure your devices
 

@@ -38,6 +38,9 @@ For other workloads, see:
 
 ## What's included for retention and deletion
 
+> [!NOTE]
+> Retention policies now support [shared channels](/MicrosoftTeams/shared-channels), currently in preview. Any shared channels inherit retention settings from the parent channel.
+
 Teams chats messages, channel messages, and private channel messages can be deleted by using retention policies for Teams, and in addition to the text in the messages, the following items can be retained for compliance reasons: Embedded images, tables, hypertext links, links to other Teams messages and files, and [card content](/microsoftteams/platform/task-modules-and-cards/what-are-cards). Chat messages and private channel messages include all the names of the people in the conversation, and channel messages include the team name and the message title (if supplied). 
 
 Code snippets, recorded voice memos from the Teams mobile client, thumbnails, announcement images, and reactions from others in the form of emoticons are not retained when you use retention policies for Teams.
@@ -55,22 +58,27 @@ These mailboxes are, listed by their RecipientTypeDetails attribute:
 - **UserMailbox**: These mailboxes store message data for cloud-based Teams users.
 - **MailUser**: These mailboxes store message data for [on-premises Teams users](search-cloud-based-mailboxes-for-on-premises-users.md).
 - **GroupMailbox**: These mailboxes store message data for Teams standard channels.
+- **SubstrateGroup**: These mailboxes store message data for Teams shared channels.
 
 Other mailbox types, such as RoomMailbox that is used for Teams conference rooms, are not supported for Teams retention policies.
 
 Teams uses an Azure-powered chat service as its primary storage for all messages (chats and channel messages). If you need to delete Teams messages for compliance reasons, retention policies for Teams can delete messages after a specified period, based on when they were created. Messages are then permanently deleted from both the Exchange mailboxes where they stored for compliance operations, and from the primary storage used by the underlying Azure-powered chat service. For more information about the underlying architecture, see [Security and compliance in Microsoft Teams](/MicrosoftTeams/security-compliance-overview) and specifically, the [Information Protection Architecture](/MicrosoftTeams/security-compliance-overview#information-protection-architecture) section.
 
-Although this data from Teams chats and channel messages are stored in mailboxes, you must configure a retention policy for the **Teams channel messages** and **Teams chats** locations. Teams chats and channel messages are not included in retention policies that are configured for Exchange user or group mailboxes.
+Although this data from Teams chats and channel messages are stored in mailboxes, you must configure a retention policy for the **Teams channel messages** and **Teams chats** locations. Teams chats and channel messages are not included in retention policies that are configured for Exchange user or group mailboxes. Similarly, retention policies for Teams don't affect other email items stored mailboxes.
+
+If a user is added to a chat, a copy of all messages shared with them are ingested into their mailbox. The created date of those messages does not change for the new user and remains the same for all users.
 
 > [!NOTE]
-> If a user is included in an active retention policy that retains Teams messages and you delete a mailbox of a user who is included in this policy, the mailbox is converted into an [inactive mailbox](inactive-mailboxes-in-office-365.md) to retain the Teams data. If you don't need to retain this Teams data for the user, exclude the user account from the retention policy before you delete their mailbox.
+> If a user is included in an active retention policy that retains Teams messages and you delete a mailbox of a user who is included in this policy, the mailbox is converted into an [inactive mailbox](inactive-mailboxes-in-office-365.md) to retain the Teams data. If you don't need to retain this Teams data for the user, exclude the user account from the retention policy and [wait for this change to take effect](create-retention-policies.md#how-long-it-takes-for-retention-policies-to-take-effect) before you delete their mailbox.
 
-After a retention policy is configured for chat and channel messages, a timer job from the Exchange service periodically evaluates items in the hidden folder where these Teams messages are stored. The timer job typically takes 1-7 days to run. When these items have expired their retention period, they are moved to the SubstrateHolds folder—another hidden folder that's in every user or group mailbox to store "soft-deleted" items before they are permanently deleted. 
+After a retention policy is configured for chat and channel messages, a timer job from the Exchange service periodically evaluates items in the hidden mailbox folder where these Teams messages are stored. The timer job typically takes 1-7 days to run. When these items have expired their retention period, they are moved to the SubstrateHolds folder—another hidden folder that's in every user or group mailbox to store "soft-deleted" items before they are permanently deleted. 
 
 Messages remain in the SubstrateHolds folder for at least 1 day, and then if they are eligible for deletion, the timer job permanently deletes them the next time it runs.
 
-> [!NOTE]
-> Because of the [first principle of retention](retention.md#the-principles-of-retention-or-what-takes-precedence), permanent deletion is always suspended if the same item must be retained because of another retention policy, or it is under eDiscovery holds for legal or investigative reasons.
+> [!IMPORTANT]
+> Because of the [first principle of retention](retention.md#the-principles-of-retention-or-what-takes-precedence) and since Teams chat and channel messages are stored in Exchange Online mailboxes, permanent deletion from the SubstrateHolds folder is always suspended if the mailbox is affected by another retention policy (including policies applied to the Exchange location), litigation hold, delay hold, or if an eDiscovery hold is applied to the mailbox for legal or investigative reasons.
+>
+> While the mailbox is included in an applicable hold, Teams chat and channel messages that have been deleted will no longer be visible in the Teams app but will continue to be discoverable with eDiscovery.
 
 After a retention policy is configured for chat and channel messages, the paths the content takes depend on whether the retention policy is to retain and then delete, to retain only, or delete only.
 
@@ -87,7 +95,12 @@ For the two paths in the diagram:
 > [!NOTE]
 > Messages stored in mailboxes, including the hidden folders, are searchable by eDiscovery tools. Until messages are permanently deleted from the SubstrateHolds folder, they remain searchable by eDiscovery tools.
 
-When messages are permanently deleted from the SubstrateHolds folder, a delete operation is communicated to the backend Azure chat service, that then relays the same operation to the Teams client app. Delays in this communication or caching can explain why, for a short period of time, users might still see these messages in their Teams app, but data from these messages isn't returned in eDiscovery searches. Messages visible in the Teams app are not an accurate reflection of whether they are retained or permanently deleted for compliance requirements.
+When the retention period expires and moves a message to the SubstrateHolds folder, a delete operation is communicated to the backend Azure chat service, that then relays the same operation to the Teams client app. Delays in this communication or caching can explain why, for a short period of time, users continue to see these messages in their Teams app.
+
+In this scenario where the Azure chat service receives a delete command because of a retention policy, the corresponding message in the Teams client app is deleted for all users in the conversation. Some of these users might be from another organization, have a retention policy with a longer retention period, or no retention policy assigned to them. For these users, copies of the messages are still stored in their mailboxes and remain searchable for eDiscovery until the messages are permanently deleted by another retention policy.
+
+> [!IMPORTANT]
+> Messages visible in the Teams app are not an accurate reflection of whether they are retained or permanently deleted for compliance requirements.
 
 When the retention policy is retain-only, or delete-only, the content's paths are variations of retain and delete.
 
@@ -180,7 +193,7 @@ Impromptu and scheduled meeting messages are stored in the same way as group cha
 
 When external users are included in a meeting that your organization hosts:
 
-- If an external user joins by using a guest account in your tenant, this user has a shadow mailbox that can be subject to your organization's retention policy for Teams. Any messages from the meeting are stored in both your users' mailbox and the shadow mailbox. 
+- If an external user joins by using a guest account in your tenant, any messages from the meeting are stored in both your users' mailbox and a shadow mailbox that's granted to the guest account. However, retention policies are not supported for shadow mailboxes, even though they can be reported as included in a retention policy for the entire location (sometimes known as an "organization-wide policy").
 
 - If an external user joins by using an account from another Microsoft 365 organization, your retention policies can't delete messages for this user because they are stored in that user's mailbox in another tenant. For the same meeting however, your retention policies can delete messages for your users.
 
@@ -192,6 +205,6 @@ If the user stored any files in Teams, see the [equivalent section](retention-po
 
 ## Configuration guidance
 
-If you're new to configuring retention in Microsoft 365, see [Get started with retention policies and retention labels](get-started-with-retention.md).
+If you're new to configuring retention in Microsoft 365, see [Get started with information governance](get-started-with-information-governance.md).
 
 If you're ready to configure a retention policy for Teams, see [Create and configure retention policies](create-retention-policies.md).

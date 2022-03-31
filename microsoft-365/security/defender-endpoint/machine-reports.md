@@ -22,16 +22,17 @@ ms.technology: mde
 
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 The devices status report provides high-level information about the devices in your organization. The report includes trending information showing the sensor health state, antivirus status, OS platforms, and Windows 10 (and Windows 11) versions.
 
 The dashboard is structured into two sections:
 
-![Image of the device report.](images/device-reports.png)
+:::image type="content" source="images/device-reports.png" alt-text="The device report" lightbox="images/device-reports.png":::
+
 
 <br>
 
@@ -45,11 +46,11 @@ The dashboard is structured into two sections:
 
 ## Device trends
 
-By default, the device trends displays device information from the 30-day period ending in the latest full day. To gain better perspective on trends occurring in your organization, you can fine-tune the reporting period by adjusting the time period shown. To adjust the time period, select a time range from the drop-down options:
+By default, the device trends display device information from the 30-day period ending in the latest full day. To gain better perspective on trends occurring in your organization, you can fine-tune the reporting period by adjusting the time period shown. To adjust the time period, select a time range from the drop-down options:
 
 - 30 days
-- 3 months
-- 6 months
+- Three months
+- Six months
 - Custom
 
 > [!NOTE]
@@ -57,7 +58,7 @@ By default, the device trends displays device information from the 30-day period
 
 ## Device summary
 
-While the devices trends shows trending device information, the device summary shows device information scoped to the current day.
+While the devices trends show trending device information, the device summary shows device information scoped to the current day.
 
 > [!NOTE]
 > The data reflected in the summary section is scoped to 180 days prior to the current date. For example if today's date is March 27, 2019, the data on the summary section will reflect numbers starting from September 28, 2018 to March 27, 2019.

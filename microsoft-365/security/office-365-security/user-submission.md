@@ -8,13 +8,13 @@ manager: dansimp
 ms.date:
 audience: ITPro
 ms.topic: how-to
-
 ms.localizationpriority: medium
 search.appverid:
   - MET150
 ms.collection:
   - M365-security-compliance
   - m365initiative-defender-office365
+ms.custom:
 description: Admins can learn how to configure a mailbox to collect spam and phishing email that are reported by users.
 ms.technology: mdo
 ms.prod: m365-security
@@ -50,7 +50,7 @@ Use the following articles to configure the prerequisites required so user repor
 
 - [Create an anti-spam policy](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) that includes the custom mailbox where ZAP for spam and ZAP for phishing are turned off (**Zero-hour auto purge** section \> **Enabled zero-hour auto purge (ZAP)** is not selected).
 
-If you have Microsoft Defender for Office 365, you should also configure the the following settings so that our advanced filtering does not impact the users reporting messages:
+If you have Microsoft Defender for Office 365, you should also configure the following settings so that our advanced filtering does not impact the users reporting messages:
 
 - [Create a Safe Links policy](set-up-safe-links-policies.md) that includes the custom mailbox where Safe Links scanning is turned off (**Select the action for unknown potentially malicious URLs in messages** section \> **Off**).
 
@@ -60,7 +60,7 @@ After you've verified that your mailbox meets all applicable prerequisites, you 
 
 ## What do you need to know before you begin?
 
-- You open the Microsoft 365 Defender portal at <https://security.microsoft.com/>. To go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
+- You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. To go directly to the **User submissions** page, use <https://security.microsoft.com/reportsubmission>.
 
 - To modify the configuration for User submissions, you need to be a member of one of the following role groups:
 
@@ -77,7 +77,7 @@ After you've verified that your mailbox meets all applicable prerequisites, you 
 
 ## Use the Microsoft 365 Defender portal to configure the user submissions mailbox
 
-1. In the Microsoft 365 Defender portal, go to **Policies & rules** \> **Threat policies** \> **User reported message settings** in the **Others** \> **User submissions**.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat policies** \> **User reported message settings** in the **Others** section. To go directly to the **User submissions** page, use <https://security.microsoft.com/reportsubmission>.
 
 2. On the **User submissions** page, what you see is determined by whether the **Microsoft Outlook Report Message button** setting is **Off** or **On**:
 
@@ -108,7 +108,7 @@ After you've verified that your mailbox meets all applicable prerequisites, you 
      - **User reporting experience section**
        - **Before reporting** tab: In the **Title** and **Message body** boxes, enter the descriptive text that users see before they report a message using the Report Message add-in or the Report Phishing add-in. You can use the variable %type% to include the submission type (junk, not junk, phish, etc.).
        - **After reporting** tab: In the **Title** and **Confirmation message** boxes, enter the descriptive text that users see after they report a message using the Report Message add-in or the Report Phishing add-in. You can use the variable %type% to include the submission type.
-       -  **Only display when user reports phishing**: Check this option if you want to display the message only when an email is reported as phish. If not, checked messages will be shown for any kind of report.
+       - **Only display when user reports phishing**: Check this option if you want to display the message only when an email is reported as phish. If not, checked messages will be shown for any kind of report.
 
        As shown on the page, if you select an option that sends the reported messages to Microsoft, the following text is also added to the notification:
 
@@ -117,7 +117,7 @@ After you've verified that your mailbox meets all applicable prerequisites, you 
    - **Microsoft Outlook Report Message button** \> **Off** ![Toggle off.](../../media/scc-toggle-off.png): Select this option if you use third-party reporting tools instead of the Report Message add-in, the Report Phishing add-in, or the built-in reporting in Outlook on the web, and then configure the following settings:
      - Select **Use this custom mailbox to receive user reported submissions**. In the box that appears, enter the email address of an existing Exchange Online mailbox that can receive email.
 
-   - **Microsoft Outlook Report Message button**: Enable this feature if you want to let end users report messages from quarantine.
+   - **Quarantine report message button**: Enable this feature if you want to let end users report messages from quarantine.
 
    When you're finished, click **Confirm**. To clear these values, click **Restore**
 

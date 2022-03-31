@@ -2,8 +2,8 @@
 title: "Understand the proposal workflow"
 f1.keywords:
 - CSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: presharm, jmueller
 audience: Admin
@@ -14,8 +14,8 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom: 
-- AdminSurgePortfolio
 - commerce_purchase
+- AdminSurgePortfolio
 search.appverid: MET150 
 description: "Learn about proposals to help you buy Microsoft products and services."
 ROBOTS: NOINDEX
@@ -92,7 +92,7 @@ After you sign in, the first thing you do is review your organization's informat
 
 The **Your organization** section displays the billing account associated with it. The billing account information is either pulled from an existing billing account or created for you by the Microsoft representative. If your organization is an affiliate of another organization, you also see a **Lead organization** section with the name and address of that organization.
 
-If this is the first time your organization is establishing a commercial relationship with Microsoft, and you haven't yet signed an MCA, if the information under **Your organization** or **Lead organization** is incorrect, contact the representative to make changes for you. After you've accepted an MCA, you can review and change your organization's address and contact information on the [Billing accounts](https://go.microsoft.com/fwlink/p/?linkid=2084771) page in the Microsoft 365 admin center. If your organization name changes, open a service request to have it updated. [Learn how to open a service request.](../business-video/get-help-support.md)
+If this is the first time your organization is establishing a commercial relationship with Microsoft, and you haven't yet signed an MCA, if the information under **Your organization** or **Lead organization** is incorrect, contact the representative to make changes for you. After you've accepted an MCA, you can review and change your organization's address and contact information on the [Billing accounts](https://go.microsoft.com/fwlink/p/?linkid=2084771) page in the Microsoft 365 admin center. If your organization name changes, open a service request to have it updated. [Learn how to open a service request](../admin/get-help-support.md).
 
 ### Your information
 

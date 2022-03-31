@@ -2,8 +2,6 @@
 title: Exposure score in threat and vulnerability management
 description: The threat and vulnerability management exposure score reflects how vulnerable your organization is to cybersecurity threats.
 keywords: exposure score, Microsoft Defender for Endpoint exposure score, Microsoft Defender for Endpoint tvm exposure score, organization exposure score, tvm organization exposure score, threat and vulnerability management, Microsoft Defender for Endpoint
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -25,7 +23,7 @@ ms.technology: mde
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Threat and vulnerability management](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -39,7 +37,7 @@ Your exposure score is visible in the [Threat and vulnerability management dashb
 
 The card gives you a high-level view of your exposure score trend over time. Any spikes in the chart give you a visual indication of a high cybersecurity threat exposure that you can investigate further.
 
-![Exposure score card.](images/tvm_exp_score.png)
+:::image type="content" source="images/tvm_exp_score.png" alt-text="The Exposure scorecard" lightbox="images/tvm_exp_score.png":::
 
 ## How it works
 

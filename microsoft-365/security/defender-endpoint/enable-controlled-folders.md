@@ -1,8 +1,7 @@
 ---
 title: Enable controlled folder access
-keywords: Controlled folder access, windows 10, windows defender, ransomware, protect, files, folders, enable, turn on, use
+keywords: Controlled folder access, windows 10, windows 11, windows defender, ransomware, protect, files, folders, enable, turn on, use
 description: Learn how to protect your important files by enabling Controlled folder access
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.topic: article
 ms.mktglfcycl: manage
@@ -12,10 +11,11 @@ ms.localizationpriority: medium
 audience: ITPro
 author: dansimp
 ms.author: dansimp
-ms.reviewer:
+ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
+ms.date:
 ---
 
 # Enable controlled folder access
@@ -23,16 +23,17 @@ ms.collection: m365-security-compliance
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-[Controlled folder access](controlled-folders.md) helps you protect valuable data from malicious apps and threats, such as ransomware. Controlled folder access is included with Windows 10 and Windows Server 2019.
+[Controlled folder access](controlled-folders.md) helps you protect valuable data from malicious apps and threats, such as ransomware. Controlled folder access is included with Windows 10, Windows 11, and Windows Server 2019. Controlled folder access is also included as part of the [modern, unified solution for Windows Server 2012R2 and 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview).
 
 You can enable controlled folder access by using any of these methods:
 
-- [Windows Security app](#windows-security-app)
+- [Windows Security app *](#windows-security-app)
 - [Microsoft Endpoint Manager](#endpoint-manager)
 - [Mobile Device Management (MDM)](#mobile-device-management-mdm)
 - [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
@@ -50,13 +51,15 @@ For more information about disabling local list merging, see [Prevent or allow u
 
 ## Windows Security app
 
-1. Open the Windows Security app by selecting the shield icon in the task bar. You can also search the start menu for **Defender**.
+1. Open the Windows Security app by selecting the shield icon in the task bar. You can also search the start menu for **Windows Security**.
 
 2. Select the **Virus & threat protection** tile (or the shield icon on the left menu bar) and then select **Ransomware protection**.
 
 3. Set the switch for **Controlled folder access** to **On**.
 
 > [!NOTE]
+> *This method is not available on Windows Server 2012R2 or 2016.
+> 
 > If controlled folder access is configured with Group Policy, PowerShell, or MDM CSPs, the state will change in the Windows Security app after a restart of the device.
 > If the feature is set to **Audit mode** with any of those tools, the Windows Security app will show the state as **Off**.
 > If you are protecting user profile data, we recommend that the user profile should be on the default Windows installation drive.
@@ -101,7 +104,7 @@ Use the [./Vendor/MSFT/Policy/Config/ControlledFolderAccessProtectedFolders](/wi
 4. Choose whether block or audit changes, allow other apps, or add other folders, and select **Next**.
 
    > [!NOTE]
-   > Wilcard is supported for applications, but not for folders. Subfolders are not protected. Allowed apps will continue to trigger events until they are restarted.
+   > Wildcard is supported for applications, but not for folders. Subfolders are not protected. Allowed apps will continue to trigger events until they are restarted.
 
 5. Review the settings and select **Next** to create the policy.
 
@@ -122,7 +125,7 @@ Use the [./Vendor/MSFT/Policy/Config/ControlledFolderAccessProtectedFolders](/wi
    - **Block disk modification only** - Attempts by untrusted apps to write to disk sectors will be logged in Windows Event log. These logs can be found in **Applications and Services Logs** \> Microsoft \> Windows \> Windows Defender \> Operational \> ID 1123.
    - **Audit disk modification only** - Only attempts to write to protected disk sectors will be recorded in the Windows event log (under **Applications and Services Logs** \> **Microsoft** \> **Windows** \> **Windows Defender** \> **Operational** \> **ID 1124**). Attempts to modify or delete files in protected folders won't be recorded.
 
-      ![Screenshot of the group policy option Enabled and Audit Mode selected in the drop-down.](../../media/cfa-gp-enable.png)
+    :::image type="content" source="../../media/cfa-gp-enable.png" alt-text="The group policy option Enabled and Audit Mode selected" lightbox="../../media/cfa-gp-enable.png":::
 
 > [!IMPORTANT]
 > To fully enable controlled folder access, you must set the Group Policy option to **Enabled** and select **Block** in the options drop-down menu.

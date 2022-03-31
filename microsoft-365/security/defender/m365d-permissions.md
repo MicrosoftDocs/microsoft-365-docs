@@ -30,7 +30,7 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
-There are two ways to manage access to Microsoft 365 Defender
+There are two ways to manage access to Microsoft 365 Defender:
 - **Global Azure Active Directory (AD) roles**
 - **Custom role access**
 
@@ -43,7 +43,7 @@ Accounts assigned the following **Global Azure Active Directory (AD) roles** can
 
 To review accounts with these roles, [view Permissions in the Microsoft 365 Defender portal](https://security.microsoft.com/permissions).
 
-**Custom role** access is a new capability in Microsoft 365 Defender and allows you to manage access to specific data, tasks, and capabilities in Microsoft Defender 365. Custom roles offer more control than global Azure AD roles, providing users only the access they need with the least-permissive roles necessary.  Custom roles can be created in addition to global Azure AD roles. [Learn more about custom roles](custom-roles.md).
+**Custom role** access is a new capability in Microsoft 365 Defender and allows you to manage access to specific data, tasks, and capabilities in Microsoft 365 Defender. Custom roles offer more control than global Azure AD roles, providing users only the access they need with the least-permissive roles necessary.  Custom roles can be created in addition to global Azure AD roles. [Learn more about custom roles](custom-roles.md).
 
 > [!NOTE]
 > This article applies only to managing global Azure Active Directory roles. For more information about using custom role-based access control, see [Custom roles for role-based access control](custom-roles.md)
@@ -59,11 +59,11 @@ Access to Microsoft 365 Defender data can be controlled using the scope assigned
 
 For example, if you belong to only one user group with a Microsoft Defender for Endpoint role and that user group has been given access to sales devices only, you will see only data about sales devices in Microsoft 365 Defender. [Learn more about RBAC settings in Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/rbac)
 
-### Microsoft Cloud App Security access controls
-During the preview, Microsoft 365 Defender does not enforce access controls based on  Cloud App Security settings. Access to Microsoft 365 Defender data is not affected by these settings.
+### Microsoft Defender for Cloud Apps access controls
+During the preview, Microsoft 365 Defender does not enforce access controls based on  Defender for Cloud Apps settings. Access to Microsoft 365 Defender data is not affected by these settings.
 
 ## Related topics
 - [Custom roles in role-based access control for Microsoft 365 Defender](custom-roles.md)
 - [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference)
 - [Microsoft Defender for Endpoint RBAC](/windows/security/threat-protection/microsoft-defender-atp/rbac)
-- [Cloud App Security roles](/cloud-app-security/manage-admins)
+- [Defender for Cloud Apps roles](/cloud-app-security/manage-admins)

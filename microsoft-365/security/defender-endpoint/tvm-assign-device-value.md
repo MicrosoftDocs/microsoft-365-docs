@@ -2,8 +2,6 @@
 title: Assign device value - threat and vulnerability management
 description: Learn how to assign a low, normal, or high value to a device to help you differentiate between asset priorities.
 keywords: Microsoft Defender for Endpoint device value, threat and vulnerability management device value, high value devices, device value exposure score
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -25,8 +23,7 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Threat and vulnerability management](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -57,10 +54,11 @@ Examples of devices that should be assigned a high value:
 
 2. Select **Device value** from three dots next to the actions bar at the top of the page.
 
-    ![Example of the device value dropdown.](images/tvm-device-value-dropdown.png)
+   :::image type="content" source="images/tvm-device-value-dropdown.png" alt-text="The Device value option" lightbox="images/tvm-device-value-dropdown.png":::
 
 3. A flyout will appear with the current device value and what it means. Review the value of the device and choose the one that best fits your device.
-![Example of the device value flyout.](images/tvm-device-value-flyout.png)
+
+:::image type="content" source="images/tvm-device-value-flyout.png" alt-text="The Device value page" lightbox="images/tvm-device-value-flyout.png":::
 
 ## How device value impacts your exposure score
 

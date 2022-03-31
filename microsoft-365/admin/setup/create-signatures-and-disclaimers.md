@@ -20,6 +20,7 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
@@ -36,6 +37,11 @@ description: "Manage email signatures, including legal disclaimers or disclosure
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf] 
 
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, select **Exchange**.
+1. Select **Mail flow**.
+1. Select **Add +**, and then select **Apply disclaimers**.
+1. On the **New rule** page, complete the steps. 
+
 If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../../business-video/index.yml).
 
 ## Create a signature that applies to all messages
@@ -46,12 +52,6 @@ If you found this video helpful, check out the [complete training series for sma
 ::: moniker range="o365-worldwide"
 
 Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a>.
 
 ::: moniker-end
 
@@ -117,5 +117,5 @@ For information about using PowerShell, see [Organization-wide message disclaime
 
 [Migrate email and contacts to Microsoft 365](migrate-email-and-contacts-admin.md) (video)\
 [User email settings](../email/office-365-user-email-settings.md) (article)\
-[Overview of the Microsoft 365 admin center](../../business-video/admin-center-overview.md) (video)
+[Overview of the Microsoft 365 admin center](Overview of the Microsoft 365 admin center](../admin-overview/admin-center-overview.md) (video)
 

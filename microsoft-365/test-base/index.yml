@@ -41,7 +41,9 @@ landingContent:
         links:
           - text: Create Test Base Account
             url: createAccount.md 
-          - text: Upload your application
+          - text: Build a Package
+            url: buildpackage.md
+          - text: Upload your package
             url: uploadApplication.md
           - text: Upload your binaries
             url: binaries.md

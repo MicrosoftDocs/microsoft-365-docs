@@ -1,6 +1,6 @@
 ---
-title: Promote your Microsoft 365 Defender evaluation environment to Production
-description: Use this article to promote your evals of MDI, MDO, MDE, and MCAS to your live environment in Microsoft 365 Defender or M365D.
+title: Step 7. Promote your Microsoft 365 Defender evaluation environment to Production
+description: Use this article to promote your evals of MDI, MDO, MDE, and Defender for Cloud Apps to your live environment in Microsoft 365 Defender or M365D.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,13 +16,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
   - M365-security-compliance
-  - m365solution-overview
+  - m365solution-scenario
   - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
 ---
 
-# Promote your Microsoft 365 Defender evaluation environment to production
+# Step 7. Promote your Microsoft 365 Defender evaluation environment to production
 
 **Applies to:**
 - Microsoft 365 Defender
@@ -56,6 +56,6 @@ Use the following general guidelines to onboard more devices to Microsoft Defend
 3. Use the appropriate management tool and deployment method for your devices.
 4. Run a detection test to verify that the devices are properly onboarded and reporting to the service.
 
-## Microsoft Cloud App Security
+## Microsoft Defender for Cloud Apps
 
-Microsoft Cloud App Security doesn't require any additional configuration. Just make sure you've purchased the necessary licenses. If you've scoped the deployment to certain user groups, increase the scope of these groups until you reach production scale.
+Microsoft Defender for Cloud Apps doesn't require any additional configuration. Just make sure you've purchased the necessary licenses. If you've scoped the deployment to certain user groups, increase the scope of these groups until you reach production scale.

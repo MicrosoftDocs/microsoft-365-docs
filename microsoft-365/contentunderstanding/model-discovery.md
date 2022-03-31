@@ -12,7 +12,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to make trained model available to others and how to apply other trained models in Microsoft SharePoint Syntex.
+description: Learn how to make trained models available to others and how to apply other trained models in Microsoft SharePoint Syntex.
 ---
 
 # Publish and discover models in Microsoft SharePoint Syntex
@@ -34,7 +34,7 @@ To make your trained model available for others to use:
 
 3. At this point, the **Select the sites where this model is available** panel will be different depending on whether or not you are an administrator. 
 
-    If you are an administrator, you will see this view.
+    If you are a SharePoint administrator, you will see this view.
 
     ![Screenshot of the Select the sites where this model is available panel showing the options of where you want the model to be available for others.](../media/content-understanding/select-sites.png)
 
@@ -42,7 +42,7 @@ To make your trained model available for others to use:
     - **All sites** – The model will be available in the content type gallery for others to use.
     - **Only selected sites** – You can choose which site or sites in which the model will be available. Click in the text box to search for and choose the sites to which you want the model applied. You'll only see sites for which you have access.
 
-    If you are *not* an administrator, you will see this view.
+    If you are *not* a SharePoint administrator, you will see this view.
 
     ![Screenshot of the Select the sites where this model is available panel showing the options for end users with only a few available sites.](../media/content-understanding/select-site-user.png)
 

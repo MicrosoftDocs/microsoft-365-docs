@@ -1,7 +1,7 @@
 ---
 title: "Assess the Microsoft 365 Active Users report"
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: overview

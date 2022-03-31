@@ -198,7 +198,7 @@ This is currently not on the roadmap.
 
 ### I have a specific question about the data I'm seeing for my organization. Who can I reach out to?
 
-You can use the feedback button in the admin center activity overview page, or you can open a [support case](../../business-video/get-help-support.md) to get help with the template app. 
+You can use the feedback button in the admin center activity overview page, or you can open a support case([Get support](../get-help-support.md) to get help with the template app. 
 
 ### How can partners access the data?
 
@@ -212,4 +212,4 @@ Yes, see [Make the collected data anonymous](enable-usage-analytics.md#make-the-
 
 [Enable Microsoft 365 usage analytics](enable-usage-analytics.md) (article)\
 [Navigate and utilize the reports in Microsoft 365 usage analytics](navigate-and-utilize-reports.md) (article)\
-[Review usage reports in Microsoft 365](../../business-video/act-on-report.md) (video)
+[Microsoft 365 Reports in the admin center](../activity-reports/activity-reports.md) (video)

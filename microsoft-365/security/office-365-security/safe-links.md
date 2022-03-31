@@ -51,6 +51,8 @@ Safe Links protection is available in the following locations:
   
   > [!NOTE]
   > Safe Links does not work on mail-enabled public folders.
+  >
+  > Safe Links supports only HTTP(S) and FTP formats.
 
 - **Microsoft Teams**: Safe Links protection for links in Teams conversations, group chats, or from channels is also controlled by Safe Links policies.
 
@@ -75,11 +77,7 @@ This article includes detailed descriptions of the following types of Safe Links
   - [Safe Links settings for Office 365 apps](#safe-links-settings-for-office-365-apps)
   - ["Block the following URLs" list for Safe Links](#block-the-following-urls-list-for-safe-links)
 
-The following table describes scenarios for Safe Links in Microsoft 365 and Office 365 organizations that include Defender for Office 365 (in other words, lack of licensing is never an issue in the examples).
-
-<br>
-
-****
+The following table describes scenarios for Safe Links in Microsoft 365 and Office 365 organizations that include Defender for Office 365 (note that lack of licensing is never an issue in the examples).
 
 |Scenario|Result|
 |---|---|
@@ -88,44 +86,43 @@ The following table describes scenarios for Safe Links in Microsoft 365 and Offi
 |In Pat's organization, no admins have created any Safe Links policies, but Safe Links protection for Office 365 apps is turned on. Pat opens a Word document and clicks a URL in the file.|Pat is not protected by Safe Links. <p> Although Safe Links protection for Office 365 apps is turned on globally, Pat is not included in any active Safe Links policies, so the protection can't be applied.|
 |In Lee's organization, `https://tailspintoys.com` is configured in the **Block the following URLs** list in the global settings for Safe Links. A Safe Links policy that includes Lee already exists. Lee receives an email message that contains the URL `https://tailspintoys.com/aboutus/trythispage`. Lee clicks the URL.|The URL might be automatically blocked for Lee; it depends on the URL entry in the list and the email client Lee used. For more information, see the ["Block the following URLs" list for Safe Links](#block-the-following-urls-list-for-safe-links) section later in this article.|
 |Jamie and Julia both work for contoso.com. A long time ago, admins configured Safe Links policies that apply to both of Jamie and Julia. Jamie sends an email to Julia, not knowing that the email contains a malicious URL.|Julia is protected by Safe Links **if** the Safe Links policy that applies to her is configured to apply to messages between internal recipients. For more information, see the [Safe Links settings for email messages](#safe-links-settings-for-email-messages) section later in this article.|
-|
 
 ## Safe Links settings for email messages
 
 Safe Links scans incoming email for known malicious hyperlinks. Scanned URLs are rewritten using the Microsoft standard URL prefix: `https://nam01.safelinks.protection.outlook.com`. After the link is rewritten, it's analyzed for potentially malicious content.
 
-After Safe Links rewrites a URL, the URL remains rewritten even if the message is *manually* forwarded or replied to (both to internal and external recipients). Additional links that are added to the forwarded or replied-to message are not rewritten. However, in the case of *automatic* forwarding by Inbox rules or SMTP forwarding, the URL will not be rewritten in the message that's intended for the final recipient *unless* that recipient is also protected by Safe Links or the URL had already been rewritten in a previous communication. Rewritten URLs apply only to HTML email, as rewriting the URL would make rich and plain text URLs unreadable, but these URLs are still scanned prior to delivery. Rich text and plain text emails containing URLs will also still be checked by a client-side API call to Safe Links at the time of click in Outlook for Desktop version 16.0.12513 or later.
+After Safe Links rewrites a URL, the URL remains rewritten even if the message is _manually_ forwarded or replied to (both to internal and external recipients). Additional links that are added to the forwarded or replied-to message are not rewritten. However, in the case of _automatic_ forwarding by Inbox rules or SMTP forwarding, the URL will not be rewritten in the message that's intended for the final recipient _unless_ that recipient is also protected by Safe Links, or the URL had already been rewritten in a previous communication. As long as Safe Links is enabled, URLs are still scanned prior to delivery, regardless of whether they were rewritten or not. Unwrapped URLs will also still be checked by a client-side API call to Safe Links at the time of click in Outlook for Desktop version 16.0.12513 or later.
 
 The settings in Safe Links policies that apply to email messages are described in the following list:
 
-- **Select the action for unknown potentially malicious URLs in messages**: Enables or disables Safe Links scanning in email messages. The recommended value is **On**. Turning on this setting results in the following actions.
-
+- **On: Safe Links checks a list of known, malicious links when users click links in email**: Enables or disables Safe Links scanning in email messages. The recommended value is selected (on), and results in the following actions:
   - Safe Links scanning is enabled in Outlook (C2R) on Windows.
   - URLs are rewritten and users are routed through Safe Links protection when they click URLs in messages.
   - When clicked, URLs are checked against a list of known malicious URLs and the ["Block the following URLs" list](#block-the-following-urls-list-for-safe-links).
   - URLs that don't have a valid reputation are detonated asynchronously in the background.
 
-- **Apply real-time URL scanning for suspicious links and links that point to files**: Enables real-time scanning of links, including links in email messages that point to downloadable content. The recommended value is enabled.
+  The following settings are available only if Safe Links scanning is on in email messages:
+
+  - **Apply Safe Links to email messages sent within the organization**: Enables or disables Safe Links scanning on messages sent between internal senders and internal recipients within the same Exchange Online organization. The recommended value is selected (on).
+
+  - **Apply real-time URL scanning for suspicious links and links that point to files**: Enables real-time scanning of links, including links in email messages that point to downloadable content. The recommended value is selected (on).
+
   - **Wait for URL scanning to complete before delivering the message**:
-    - Enabled: Messages that contain URLs are held until scanning is finished. Messages are delivered only after the URLs are confirmed to be safe. This is the recommended value.
-    - Disabled: If URL scanning can't complete, deliver the message anyway.
+    - Selected (on): Messages that contain URLs are held until scanning is finished. Messages are delivered only after the URLs are confirmed to be safe. This is the recommended value.
+    - Not selected (off): If URL scanning can't complete, deliver the message anyway.
 
-- **Apply Safe Links to email messages sent within the organization**: Enables or disables Safe Links scanning on messages sent between internal senders and internal recipients within the same Exchange Online organization. The recommended value is enabled.
+  - **Do not rewrite URLs, do checks via SafeLinks API only**: If this setting is enabled, no URL wrapping takes place. Safe Links is called exclusively via APIs at the time of URL click by Outlook clients that support it. The recommend value is disabled.
 
-- **Do not track user clicks**: Enables or disables storing Safe Links click data for URLs clicked in email messages. The recommend value is to leave this setting unselected (to track user clicks).
+- **Track user clicks**: Enables or disables storing Safe Links click data for URLs clicked in email messages. The recommend value is to leave this setting selected (track user clicks).
 
   URL click tracking for links in email messages sent between internal senders and internal recipients is currently not supported.
 
-- **Do not allow users to click through to original URL**: Allows or blocks users from clicking through the [warning page](#warning-pages-from-safe-links) to the original URL. The recommend value is enabled.
+- **Let users click through to the original URL**: Allows or blocks users from clicking through the [warning page](#warning-pages-from-safe-links) to the original URL. The recommend value is disabled.
 
 - **Display the organization branding on notification and warning pages**: This option shows your organization's branding on warning pages. Branding helps users identify legitimate warnings, because default Microsoft warning pages are often used by attackers. For more information about customized branding, see [Customize the Microsoft 365 theme for your organization](../../admin/setup/customize-your-organization-theme.md).
 
-- **Do not rewrite the following URLs**: Leaves URLs as they are. Keeps a custom list of safe URLs that don't need scanning. The list is unique for each Safe Links policy. For more information about the **Do not rewrite the following URLs** list, see the ["Do not rewrite the following URLs" lists in Safe Links policies](#do-not-rewrite-the-following-urls-lists-in-safe-links-policies) section later in this article.
-
   For more information about the recommended values for Standard and Strict policy settings for Safe Links policies, see [Safe Links policy settings](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings).
 
-- **Do not rewrite URLs, do checks via SafeLinks API only**: If this setting is enabled, no URL wrapping takes place. Safe Links is called exclusively via APIs at the time of URL click by Outlook clients that support it. The recommend value is disabled.
-  
 - **Recipient filters**: You need to specify the recipient conditions and exceptions that determine who the policy applies to. You can use these properties for conditions and exceptions:
   - **The recipient is**
   - **The recipient domain is**
@@ -178,7 +175,7 @@ After you turn on Safe Links protection for Microsoft Teams, URLs in Teams are c
 
 If the user who sent the link isn't included in a Safe Links policy where Teams protection is enabled, the user is free to click through to the original URL on their computer or device.
 
-![A Safe Links for Teams page reporting a malicious link.](../../media/tp-safe-links-for-teams-malicious.png)
+:::image type="content" source="../../media/tp-safe-links-for-teams-malicious.png" alt-text="A Safe Links for Teams page reporting a malicious link" lightbox="../../media/tp-safe-links-for-teams-malicious.png":::
 
 Clicking the **Go Back** button on the warning page will return the user to their original context or URL location. However, clicking on the original link again will cause Safe Links to rescan the URL, so the warning page will reappear.
 
@@ -203,6 +200,7 @@ Safe Links protection for Office 365 apps has the following client requirements:
   - Office apps on iOS or Android devices.
   - Visio on Windows.
   - OneNote in a web browser.
+  - Outlook for Windows when opening saved EML or MSG files.
 
 - Office 365 apps are configured to use modern authentication. For more information, see [How modern authentication works for Office 2013, Office 2016, and Office 2019 client apps](../../enterprise/modern-auth-for-office-2013-and-2016.md).
 
@@ -216,7 +214,7 @@ The following Safe Links settings are available for Office 365 apps:
 
 - **Do not track when users click Safe Links**: Enables or disables storing Safe Links click data for URLs clicked in the desktop versions Word, Excel, PowerPoint, and Visio. The recommended value is **Off**, which means user clicks are tracked.
 
-- **Do not let users click through safe links to original URL**: Allows or blocks users from clicking through the [warning page](#warning-pages-from-safe-links) to the original URL in in the desktop versions Word, Excel, PowerPoint, and Visio. The default and recommended value is **On**.
+- **Do not let users click through safe links to original URL**: Allows or blocks users from clicking through the [warning page](#warning-pages-from-safe-links) to the original URL in the desktop versions Word, Excel, PowerPoint, and Visio. The default and recommended value is **On**.
 
 To configure the Safe Links settings for Office 365 apps, see [Configure Safe Links protection for Office 365 apps](configure-global-settings-for-safe-links.md#configure-safe-links-protection-for-office-365-apps-in-the-microsoft-365-defender-portal).
 
@@ -265,7 +263,7 @@ You configure the list of URLs in the global settings for Safe Links. For instru
   - The maximum length of an entry is 128 characters.
   - All of the entries can't exceed 10,000 characters.
 - Don't include a forward slash (`/`) at the end of the URL. For example, use `https://www.contoso.com`, not `https://www.contoso.com/`.
-- A domain only-URL (for example `contoso.com` or `tailspintoys.com`) will block any URL that contains the domain.
+- A domain-only-URL (for example `contoso.com` or `tailspintoys.com`) will block any URL that contains the domain.
 - You can block a subdomain without blocking the full domain. For example, `toys.contoso.com*` blocks any URL that contains the subdomain, but it doesn't block URLs that contain the full domain `contoso.com`.
 - You can include up to three wildcards (`*`) per URL entry.
 
@@ -273,17 +271,12 @@ You configure the list of URLs in the global settings for Safe Links. For instru
 
 Examples of the values that you can enter and their results are described in the following table:
 
-<br>
-
-****
-
 |Value|Result|
 |---|---|
 |`contoso.com` <p> or <p> `*contoso.com*`|Blocks the domain, subdomains, and paths. For example, `https://www.contoso.com`, `https://sub.contoso.com`, and `https://contoso.com/abc` are blocked.|
 |`https://contoso.com/a`|Blocks `https://contoso.com/a` but not additional subpaths like `https://contoso.com/a/b`.|
 |`https://contoso.com/a*`|Blocks `https://contoso.com/a` and additional subpaths like `https://contoso.com/a/b`.|
 |`https://toys.contoso.com*`|Blocks a subdomain (`toys` in this example) but allow clicks to other domain URLs (like `https://contoso.com` or `https://home.contoso.com`).|
-|
 
 ## "Do not rewrite the following URLs" lists in Safe Links policies
 
@@ -296,24 +289,24 @@ To add entries to the list in new or existing Safe Links policies, see [Create S
 
 **Notes**:
 
-- The following clients don't recognize the **Do not rewrite the following URLs** lists in Safe Links policies. Users included in the polices can be blocked from accessing the URLs based on the results of Safe Links scanning in these clients:
+- The following clients don't recognize the **Do not rewrite the following URLs** lists in Safe Links policies. Users included in the policies can be blocked from accessing the URLs based on the results of Safe Links scanning in these clients:
   - Microsoft Teams
   - Office web apps
 
-  For a truly universal list of URLs that are allowed everywhere, see [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
+  For a truly universal list of URLs that are allowed everywhere, see [Manage the Tenant Allow/Block List](tenant-allow-block-list.md). However, note that URLs added there will not be excluded from Safe Links rewriting, as that must be done in a Safe Links policy.
 
 - Consider adding commonly used internal URLs to the list to improve the user experience. For example, if you have on-premises services, such as Skype for Business or SharePoint, you can add those URLs to exclude them from scanning.
 - If you already have **Do not rewrite the following URLs** entries in your Safe Links policies, be sure to review the lists and add wildcards as required. For example, your list has an entry like `https://contoso.com/a` and you later decide to include subpaths like `https://contoso.com/a/b`. Instead of adding a new entry, add a wildcard to the existing entry so it becomes `https://contoso.com/a/*`.
 - You can include up to three wildcards (`*`) per URL entry. Wildcards explicitly include prefixes or subdomains. For example, the entry `contoso.com` is not the same as `*.contoso.com/*`, because `*.contoso.com/*` allows people to visit subdomains and paths in the specified domain.
 - If a URL uses automatic redirection for HTTP to HTTPS (for example, 302 redirection for `http://www.contoso.com` to `https://www.contoso.com`), and you try to enter both HTTP and HTTPS entries for the same URL to the list, you might notice that the second URL entry replaces the first URL entry. This behavior does not occur if the HTTP and HTTPS versions of the URL are completely separate.
+- Do not specify http:// or https:// (that is, contoso.com) in order to exclude both HTTP and HTTPS versions.
+- `*.contoso.com` does **not** cover contoso.com, so you would need to exclude both to cover both the specified domain and any child domains.
+- `contoso.com/*` covers **only** contoso.com, so there's no need to exclude both `contoso.com` and `contoso.com/*`; just `contoso.com/*` would suffice.
+- To exclude all iterations of a domain, two exclusion entries are needed; `contoso.com/*` and `*.contoso.com/*`. These combine to exclude both HTTP and HTTPS, the main domain contoso.com and any child domains, as well as any or not ending part (for example, both contoso.com and contoso.com/vdir1 are covered).
 
 ### Entry syntax for the "Do not rewrite the following URLs" list
 
 Examples of the values that you can enter and their results are described in the following table:
-
-<br>
-
-****
 
 |Value|Result|
 |---|---|
@@ -321,7 +314,6 @@ Examples of the values that you can enter and their results are described in the
 |`*.contoso.com/*`|Allows access to a domain, subdomains, and paths (for example, `https://www.contoso.com`, `https://www.contoso.com`, `https://maps.contoso.com`, or `https://www.contoso.com/a`). <p> This entry is inherently better than `*contoso.com*`, because it doesn't allow potentially fraudulent sites, like `https://www.falsecontoso.com` or `https://www.false.contoso.completelyfalse.com`|
 |`https://contoso.com/a`|Allows access to `https://contoso.com/a`, but not subpaths like `https://contoso.com/a/b`|
 |`https://contoso.com/a/*`|Allows access to `https://contoso.com/a` and subpaths like `https://contoso.com/a/b`|
-|
 
 ## Warning pages from Safe Links
 
@@ -333,33 +325,33 @@ Note that several warning pages have been updated. If you're not already seeing 
 
 The clicked URL is being scanned by Safe Links. You might need to wait a few moments before trying the link again.
 
-!["The link is being scanned" notification](../../media/ee8dd5ed-6b91-4248-b054-12b719e8d0ed.png)
+:::image type="content" source="../../media/ee8dd5ed-6b91-4248-b054-12b719e8d0ed.png" alt-text="The notification that the link is being scanned" lightbox="../../media/ee8dd5ed-6b91-4248-b054-12b719e8d0ed.png":::
 
 The original notification page looked like this:
 
-![Original "The link is being scanned" notification](../../media/04368763-763f-43d6-94a4-a48291d36893.png)
+:::image type="content" source="../../media/04368763-763f-43d6-94a4-a48291d36893.png" alt-text="The link is being scanned notification" lightbox="../../media/04368763-763f-43d6-94a4-a48291d36893.png":::
 
 ### Suspicious message warning
 
 The clicked URL was in an email message that's similar to other suspicious messages. We recommend that you double-check the email message before proceeding to the site.
 
-!["A link was clicked from a suspicious message" warning](../../media/33f57923-23e3-4b0f-838b-6ad589ba897b.png)
+:::image type="content" source="../../media/33f57923-23e3-4b0f-838b-6ad589ba897b.png" alt-text="A link was clicked from a suspicious message warning" lightbox="../../media/33f57923-23e3-4b0f-838b-6ad589ba897b.png":::
 
 ### Phishing attempt warning
 
 The clicked URL was in an email message that has been identified as a phishing attack. As a result, all URLs in the email message are blocked. We recommend that you do not proceed to the site.
 
-!["The link was clicked from a phishing message" warning](../../media/6e544a28-0604-4821-aba6-d5a57bb917e5.png)
+:::image type="content" source="../../media/6e544a28-0604-4821-aba6-d5a57bb917e5.png" alt-text="The warning that states that a link was clicked from a phishing message" lightbox="../../media/6e544a28-0604-4821-aba6-d5a57bb917e5.png":::
 
 ### Malicious website warning
 
 The clicked URL points to a site that has been identified as malicious. We recommend that you do not proceed to the site.
 
-!["This website is classified as malicious" warning](../../media/058883c8-23f0-4672-9c1c-66b084796177.png)
+:::image type="content" source="../../media/058883c8-23f0-4672-9c1c-66b084796177.png" alt-text="The warning that states that the website is classified as malicious" lightbox="../../media/058883c8-23f0-4672-9c1c-66b084796177.png":::
 
 The original warning page looked like this:
 
-![Original "This website has been classified as malicious" warning](../../media/b9efda09-6dd8-46ef-82cb-56e4d538b8f5.png)
+:::image type="content" source="../../media/b9efda09-6dd8-46ef-82cb-56e4d538b8f5.png" alt-text="The original warning that states that the website is classified as malicious" lightbox="../../media/b9efda09-6dd8-46ef-82cb-56e4d538b8f5.png":::
 
 ### Blocked URL warning
 
@@ -367,18 +359,18 @@ The clicked URL has been manually blocked by an admin in your organization (the 
 
 There are several reasons why an admin would manually block specific URLs. If you think the site should not be blocked, contact your admin.
 
-!["This website was blocked by your admin" warning](../../media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png)
+:::image type="content" source="../../media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png" alt-text="The warning that states that website was blocked by your admin" lightbox="../../media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png":::
 
 The original warning page looked like this:
 
-![Original "This website has been blocked per your organization's URL policy" warning](../../media/3d6ba028-30bf-45fc-958e-d3aad3defc83.png)
+:::image type="content" source="../../media/3d6ba028-30bf-45fc-958e-d3aad3defc83.png" alt-text="The original warning that states that website has been blocked per your organization's URL policy" lightbox="../../media/3d6ba028-30bf-45fc-958e-d3aad3defc83.png":::
 
 ### Error warning
 
 Some kind of error has occurred, and the URL can't be opened.
 
-!["The page that you are trying to access cannot be loaded" warning](../../media/2f7465a4-1cf4-4c1c-b7d4-3c07e4b795b4.png)
+:::image type="content" source="../../media/2f7465a4-1cf4-4c1c-b7d4-3c07e4b795b4.png" alt-text="The warning that states the page that you are trying to access cannot be loaded" lightbox="../../media/2f7465a4-1cf4-4c1c-b7d4-3c07e4b795b4.png":::
 
 The original warning page looked like this:
 
-![Original "This web page could not be loaded" warning](../../media/9aaa4383-2f23-48be-bdaa-8efbcb2acc70.png)
+:::image type="content" source="../../media/9aaa4383-2f23-48be-bdaa-8efbcb2acc70.png" alt-text="The warning that states that the web page could not be loaded" lightbox="../../media/9aaa4383-2f23-48be-bdaa-8efbcb2acc70.png":::

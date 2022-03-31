@@ -12,7 +12,9 @@ ms.localizationpriority: medium
 ms.collection: 
 - Adm_O365
 - Adm_NonTOC
-ms.custom: AdminSurgePortfolio
+ms.custom: 
+- AdminSurgePortfolio
+- admindeeplinkEXCHANGE
 search.appverid:
 - MET150
 - MOE150
@@ -28,7 +30,7 @@ description: "Learn how to choose which mobile apps people can use to access ema
 Use the mobile email access settings to choose which mobile apps people in your organization can use to access their work or school account to access email, calendar and contacts.
   
 > [!IMPORTANT]
-> Your organization will have access to this setting unless you're using Microsoft Intune or you've configured mobile device management settings in the Exchange admin center. 
+> Your organization will have access to this setting unless you're using Microsoft Intune or you've configured mobile device management settings in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>. 
   
 ## Manage email app options
 

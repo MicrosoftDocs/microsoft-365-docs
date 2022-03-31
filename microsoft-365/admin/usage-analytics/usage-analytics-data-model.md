@@ -63,12 +63,12 @@ This table provides user level details for all users that have a license assigne
 |UPN  <br/> |User principal name, uniquely identifies the user to be able to join with other external data sources.  <br/> |
 |DisplayName  <br/> |User's display name.  <br/> |
 |IDType  <br/> |ID type is set to 1 if the user is a Yammer user who connects by using their Yammer ID or 0 if they connect to Yammer by using their Microsoft 365 ID.  <br/> Value is 1 to represent that this user connects to Yammer with their Yammer ID and not their Microsoft 365 ID  <br/> |
-|HasLicenseEXO  <br/> |Set to true if user is assigned a license and enabled to use Exchange.  <br/> |
-|HasLicenseODB  <br/> |Set to true if user is assigned a license and enabled to use OneDrive for Business.  <br/> |
-|HasLicenseSPO  <br/> |Set to true if user is assigned a license and enabled to use SharePoint Online.  <br/> |
-|HasLicenseYAM  <br/> |Set to true if user is assigned a license and enabled to use Yammer.  <br/> |
-|HasLicenseSFB  <br/> |Set to true if user is assigned a license and enabled to use Skype For Business.  <br/> |
-|HasLicenseTeams  <br/> |Set to true if user is assigned a license and enable to use Microsoft Teams.  <br/> |
+|HasLicenseEXO  <br/> |Set to true if user is assigned a license and enabled to use Exchange on the last day of the month.  <br/> |
+|HasLicenseODB  <br/> |Set to true if user is assigned a license and enabled to use OneDrive for Business on the last day of the month.  <br/> |
+|HasLicenseSPO  <br/> |Set to true if user is assigned a license and enabled to use SharePoint Online on the last day of the month.  <br/> |
+|HasLicenseYAM  <br/> |Set to true if user is assigned a license and enabled to use Yammer on the last day of the month.  <br/> |
+|HasLicenseSFB  <br/> |Set to true if user is assigned a license and enabled to use Skype For Business on the last day of the month.  <br/> |
+|HasLicenseTeams  <br/> |Set to true if user is assigned a license and enable to use Microsoft Teams on the last day of the month.  <br/> |
 |Company  <br/> |Company data represented in Azure Active Directory for this user.  <br/> |
 |Department  <br/> |Department data represented in Azure Active Directory for this user.  <br/> |
 |LocationCity  <br/> |City data represented in Azure Active Directory for this user.  <br/> |

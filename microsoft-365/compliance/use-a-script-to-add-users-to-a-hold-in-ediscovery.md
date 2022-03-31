@@ -18,7 +18,9 @@ search.appverid:
 - MBS150
 - MET150
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
-ms.custom: seo-marvel-apr2020
+ms.custom: 
+- seo-marvel-apr2020
+- admindeeplinkSPO
 description: "Learn how to run a script to add mailboxes & OneDrive for Business sites to a new hold associated with an eDiscovery case in the Microsoft 365 compliance center."
 ---
 
@@ -78,7 +80,7 @@ When you run the script in this step, it will prompt you for the following infor
   
 - **Your user credentials:** The script will use your credentials to connect to Security & Compliance Center with PowerShell. It will also use these credentials to access SharePoint Online to get the OneDrive for Business URLs for the list of users.
 
-- **Name of your SharePoint domain:** The script prompts you to enter this name so it can connect to the SharePoint admin center. It also uses the domain name for the OneDrive URLs in your organization. For example, if the URL for your admin center is `https://contoso-admin.sharepoint.com` and the URL for OneDrive is `https://contoso-my.sharepoint.com`, then you would enter `contoso` when the script prompts you for your domain name.
+- **Name of your SharePoint domain:** The script prompts you to enter this name so it can connect to the <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint admin center</a>. It also uses the domain name for the OneDrive URLs in your organization. For example, if the URL for your admin center is `https://contoso-admin.sharepoint.com` and the URL for OneDrive is `https://contoso-my.sharepoint.com`, then you would enter `contoso` when the script prompts you for your domain name.
 
 - **Name of the case:** The name of an existing case. The script will create a new hold that is associated with this case.
 

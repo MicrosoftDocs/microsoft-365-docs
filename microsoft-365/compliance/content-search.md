@@ -53,9 +53,6 @@ After you run a search, the number of content locations and an estimated number 
 
 3. On the **Content search** page, click **New search**.
 
-   > [!NOTE]
-   > The **Search by ID list** option lets you search for specific email messages and other mailbox items using a list of Exchange IDs. To create an ID list search, you submit a comma-separated value (CSV) file that identifies the specific mailbox items to search for. For instructions, see [Prepare a CSV file for an ID list search](csv-file-for-an-id-list-content-search.md).
-
 4. Type a name for the search, an optional description that helps identify the search. The name of the search must be unique in your organization.
 
 5. On the **Locations** page, choose the content locations that you want to search. You can search mailboxes, sites, and public folders.

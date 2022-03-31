@@ -44,26 +44,38 @@ If you have requirements for specific stakeholders to be involved in case invest
 
 ## Plan for the review and investigation workflow
 
-Select dedicated stakeholders to monitor and review the alerts and cases on a regular cadence in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>. Make sure understand how you will assign different stakeholders to the different role groups available in insider risk management.
+Depending on how you wish to manage insider risk management policies and alerts, you'll need to assign users to specific role groups to manage different sets of insider risk management features. You have the option to assign users with different compliance responsibilities to specific role groups to manage different areas of insider risk management features. Or you may decide to assign all user accounts for designated administrators, analysts, investigators, and viewers to the Insider Risk Management role group. Use a single role group or multiple role groups to best fit your compliance management requirements.
+
+You'll choose from these role group options and solution actions when working with insider risk management:
+
+|**Actions**|**Insider Risk Management**|**Insider Risk Management Admin**|**Insider Risk Management Analysts**|**Insider Risk Management Investigators**|**Insider Risk Management Auditors**|
+|:----------|:--------------------------|:--------------------------------|:-----------------------------------|:----------------------------------------|:-----------------------------------|
+| Configure policies and settings | Yes | Yes | No | No | No |
+| Access analytics insights | Yes | Yes | Yes | No | No |
+| Access & investigate alerts | Yes | No | Yes | Yes | No |
+| Access & investigate cases | Yes | No | Yes | Yes | No |
+| Access & view the Content Explorer | Yes | No | No | Yes | No |
+| Configure notice templates | Yes | No | Yes | Yes | No |
+| View & export audit logs | Yes | No | No | No | Yes |
 
 >[!IMPORTANT]
->Make sure you always have at least one user in the **Insider Risk Management** or **Insider Risk Management Admin** role groups (depending on the option you choose) so that your insider risk management configuration doesn't get in to a 'zero administrator' scenario if specific users leave your organization.
+>Make sure you always have at least one user in the *Insider Risk Management* or *Insider Risk Management Admin* role groups (depending on the option you choose) so that your insider risk management configuration doesn't get in to a 'zero administrator' scenario if specific users leave your organization.
 
-Depending on the structure of your compliance management team, you have options to assign users to specific role groups to manage different sets of insider risk management features. To view the **Permissions** tab in the Microsoft 365 compliance center and manage role groups, you need to be assigned to the *Organization Management* role group or need to be assigned the *Role Management* role. Choose from these role group options when configuring insider risk management:
+Members of the following roles can assign users to insider risk management role groups and have the same solution permissions included with the *Insider Risk Management Admin* role group:
 
-| **Role group** | **Role permissions** |
-| :------------- | :------------------- |
-| **Insider Risk Management** | Use this role group to manage insider risk management for your organization in a single group. By adding all user accounts for designated administrators, analysts, investigators, and auditors you can configure insider risk management permissions in a single group. This role group contains all the insider risk management permission roles and associated permissions. This configuration is the easiest way to quickly get started with insider risk management and is a good fit for organizations that do not need separate permissions defined for separate groups of users. ***When using this configuration, you should make sure to always have at least one user assigned to this role group to ensure that your policies work as expected and so the user can create and edit policies, configure solution settings, and review policy health warnings***.|
-| **Insider Risk Management Admin** | Use this role group to initially configure insider risk management and later to separate insider risk administrators into a defined group. Users in this role group can enable and view analytics insights and create, read, update, and delete insider risk management policies, global settings, and role group assignments. ***When using this configuration, you should make sure to always have at least one user assigned to this role group to ensure that your policies work as expected and so the user can create and edit policies, configure solution settings, and review policy health warnings***. |
-| **Insider Risk Management Analysts** | Use this group to assign permissions to users that will act as insider risk case analysts. Users in this role group can access and view all insider risk management alerts, cases, analytics insights, and notices templates. They cannot access the insider risk Content explorer. |
-| **Insider Risk Management Investigators** | Use this group to assign permissions to users that will act as insider risk data investigators. Users in this role group can access to all insider risk management alerts, cases, notices templates, and the Content explorer for all cases. |
-| **Insider Risk Management Auditors** | Use this group to assign permissions to users that will audit insider risk management activities. Users in this role group can access the insider risk audit log. |
+- Azure Active Directory *Global Administrator*
+- Azure Active Directory *Compliance Administrator*
+- Microsoft 365 compliance center *Organization Management*
+- Microsoft 365 compliance center *Compliance Administrator*
 
 ## Understand requirements and dependencies
 
 Depending on how you plan to implement insider risk management policies, you need to have the proper Microsoft 365 licensing subscriptions and understand and plan for some solution prerequisites.
 
 **Licensing:** Insider risk management is available as part of wide selection of Microsoft 365 licensing subscriptions. For details, see the [Getting started with insider risk management](insider-risk-management-configure.md#subscriptions-and-licensing) article.
+
+> [!IMPORTANT]
+> Insider risk management is currently available in tenants hosted in geographical regions and countries supported by Azure service dependencies. To verify that insider risk management is supported for your organization, see [Azure dependency availability by country/region](/troubleshoot/azure/general/dependency-availability-by-country).
 
 If you don't have an existing Microsoft 365 Enterprise E5 plan and want to try insider risk management, you can [add Microsoft 365](/office365/admin/try-or-buy-microsoft-365) to your existing subscription or [sign up for a trial](https://www.microsoft.com/microsoft-365/enterprise) of Microsoft 365 Enterprise E5.
 
@@ -80,7 +92,7 @@ Before enabling the solution broadly in your production environment, you may con
 
 Keep the anonymization feature in policy settings enabled to anonymize user display names in the insider risk management console during this testing to maintain privacy within the tool. This setting helps protect the privacy of users that have policy matches and can help promote objectivity in data investigation and analysis reviews for insider risk alerts.
 
-If you don't see any alerts immediately after configuring an insider risk management policy, it may mean the minimum risk threshold has not been met yet. A good way to check if the policy is triggered and working as expected is to see if the user is in-scope for the policy on the **Users** page.
+If you don't see any alerts immediately after configuring an insider risk management policy, it may mean the minimum risk threshold hasn't been met yet. A good way to check if the policy is triggered and working as expected is to see if the user is in-scope for the policy on the **Users** page.
 
 ## Resources for stakeholders
 

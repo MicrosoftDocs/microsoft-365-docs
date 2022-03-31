@@ -26,23 +26,20 @@ DLP policy tips in Outlook Web Access is supported for all the conditions, excep
 
 **Conditions:**
 
-- Sender Is
-- Sender Domain Is
 - Recipient is a member of
 - Header contains words or phrases
 - Header matches patterns
-- Document size equals or is greater than
 - Message type is
-- Message importance is
 - Content character set contains words
-- Subject or body contains words or phrases
-- Subject or body matches patterns
-- Content character set contains words
-- Content is received from
 - Has sender overridden the policy tip
 - Message size equals or is greater than
 - Sender AD attribute contains words or phrases
 - Sender AD attribute matches patterns
+- Sender IP ranges
+- Recipient AD attribute contains words or phrases
+- Recipient AD attribute matches patterns
+- Document name contains words or phrases
+- Document name matches patterns
 - Document content contains words or phrases
 - Document content matches patterns
 
@@ -389,7 +386,7 @@ Please note that custom sensitive information types will also be detected in add
 |**App and platform**|**DLP policy tip support**|**Sensitive information types supported**|**Predicates and actions supported**|**Comments**|
 |:--|:--|:--|:--|:--|
 |**Outlook On the Web**|:::image type="icon" source="../media/rightmrk.png" border="false":::|all|subset||
-|**Outlook Win32 (ver. 2105 build 14026.20000 and semi-annual channel ver. 2102 build 13801.20862)**|:::image type="icon" source="../media/rightmrk.png" border="false":::|all|subset|See [Outlook 2013 and later supports showing policy tips for only some conditions and exceptions](#outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions-and-exceptions) and [Outlook 2013 and later and Office apps on Desktop support showing policy tips for only some sensitive information types](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types) for details on support for sensitive information types and DLP conditions and actions supported for showing DLP policy tips on Outlook Win32.|
+|**Outlook Win32 (ver. 2105 build 14026.20000 and semi-annual channel ver. 2102 build 13801.20862)**|:::image type="icon" source="../media/rightmrk.png" border="false":::|subset|subset|See [Outlook 2013 and later supports showing policy tips for only some conditions and exceptions](#outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions-and-exceptions) and [Outlook 2013 and later and Office apps on Desktop support showing policy tips for only some sensitive information types](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types) for details on support for sensitive information types and DLP conditions and actions supported for showing DLP policy tips on Outlook Win32.|
 |**Outlook Mobile (iOS, Android)/Outlook Mac**|:::image type="icon" source="../media/crsmrk.png" border="false":::|none|none|DLP policy tips are not supported on Outlook mobile|
 |**SharePoint Online/OneDrive for Business Web client**|:::image type="icon" source="../media/rightmrk.png" border="false":::|all|all SPO/ODB predicates and actions in DLP||
 |**SharePoint Win32/ OneDrive for Business Win32 client**|:::image type="icon" source="../media/crsmrk.png" border="false":::|none|none|DLP policy tips are not supported on SharePoint or OneDrive desktop client apps|

@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -18,7 +18,9 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: how-to
-ms.custom: autoir
+ms.custom: 
+- autoir
+- admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
 ms.technology: m365d
 ---
@@ -44,13 +46,13 @@ Threat protection features in Microsoft 365 Defender can result in certain remed
 
 It's important to approve (or reject) pending actions as soon as possible so that your automated investigations can proceed and complete in a timely manner. 
 
-1. Go to [https://security.microsoft.com](https://security.microsoft.com) and sign in. 
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and sign in. 
 
 2. In the navigation pane, choose **Action center**. 
 
 3. In the Action center, on the **Pending** tab, select an item in the list. Its flyout pane opens. Here's an example.
 
-   ![Approve or reject an action.](../../media/air-actioncenter-itemselected.png)
+   :::image type="content" source="../../media/air-actioncenter-itemselected.png" alt-text="The options to approve or reject an action" lightbox="../../media/air-actioncenter-itemselected.png":::
 
 4. Review the information in the flyout pane, and then take one of the following steps:
    - Select **Open investigation page** to view more details about the investigation.

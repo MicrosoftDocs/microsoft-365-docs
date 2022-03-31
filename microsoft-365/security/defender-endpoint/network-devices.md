@@ -2,8 +2,6 @@
 title: Network device discovery and vulnerability management
 description: Security recommendations and vulnerability detection are now available for operating systems of switches, routers, WLAN controllers, and firewalls.
 keywords: network devices, network devices vulnerability detection, operating systems of switches, routers, WLAN controllers, and firewalls
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,6 +14,7 @@ audience: ITPro
 ms.collection:
   - m365-security-compliance
   - m365initiative-defender-endpoint
+ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
 ---
@@ -24,8 +23,7 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Threat and vulnerability management](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -34,7 +32,7 @@ ms.technology: mde
 > [!NOTE]
 > The [Network device discovery and vulnerability assessments](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/network-device-discovery-and-vulnerability-assessments/ba-p/2267548) Blog \(published 04-13-2021\) provides insights into the new **Network device discovery** capabilities in Defender for Endpoint. This article provides an overview of the challenge that **Network device discovery** is designed to address, and detailed information about how get started using these new capabilities.
 
-Network discovery capabilities are available in the **Device inventory** section of the Microsoft 365 security center and Microsoft 365 Defender consoles.
+Network discovery capabilities are available in the **Device inventory** section of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and Microsoft 365 Defender consoles.
 
 A designated Microsoft Defender for Endpoint device will be used on each network segment to perform periodic authenticated scans of preconfigured network devices. Once discovered, Defender for Endpoint's threat and vulnerability management capabilities provide integrated workflows to secure discovered switches, routers, WLAN controllers, firewalls, and VPN gateways.
 
@@ -94,7 +92,7 @@ Your first step is to select a device that will perform the authenticated networ
 
 ## Permissions
 
-To configure assessment jobs, the following user permission option is required: **Manage security settings in Security Center**. You can find the permission by going to **Settings** \> **Roles**. For more information, see [Create and manage roles for role-based access control](user-roles.md).
+To configure assessment jobs, the following user permission option is required: **Manage security settings in Defender**. You can find the permission by going to **Settings** \> **Roles**. For more information, see [Create and manage roles for role-based access control](user-roles.md).
 
 ## Install the network scanner
 
@@ -104,7 +102,7 @@ To configure assessment jobs, the following user permission option is required: 
 2. Download the network scanner and install it on the designated Defender for Endpoint assessment device.
 
     > [!div class="mx-imgBorder"]
-    > ![Download scanner button.](images/assessment-jobs-download-scanner.png)
+    > :::image type="content" source="images/assessment-jobs-download-scanner.png" alt-text="The Download scanner button" lightbox="images/assessment-jobs-download-scanner.png":::
 
 ## Network scanner installation & registration
 
@@ -117,7 +115,7 @@ To complete the network scanner registration process:
     > [!NOTE]
     > You may need to change Command Prompt settings to be able to copy the URL.
 
-2. Enter the code and sign in using a Microsoft account that has the Defender for Endpoint permission called "Manage security settings in Security Center."
+2. Enter the code and sign in using a Microsoft account that has the Defender for Endpoint permission called "Manage security settings in Defender."
 
 3. When finished, you should see a message confirming you have signed in.
 
@@ -128,7 +126,7 @@ In the Assessment jobs page in **Settings**, select **Add network assessment job
 To prevent device duplication in the network device inventory, make sure each IP address is configured only once across multiple assessment devices.
 
 > [!div class="mx-imgBorder"]
-> ![Add network assessment job button.](images/assessment-jobs-add.png)
+> :::image type="content" source="images/assessment-jobs-add.png" alt-text="The Add network assessment job button" lightbox="images/assessment-jobs-add.png":::
 
 Adding a network assessment job steps:
 
@@ -158,7 +156,7 @@ Once the results show up, you can choose which devices will be included in the p
 Newly discovered devices will be shown under the new **Network devices** tab in the **Device inventory** page. It may take up to two hours after adding an assessment job until the devices are updated.
 
 > [!div class="mx-imgBorder"]
-> ![Network devices section in the Device inventory.](images/assessment-jobs-device-inventory.png)
+> :::image type="content" source="images/assessment-jobs-device-inventory.png" alt-text="The Network devices section in the Device inventory" lightbox="images/assessment-jobs-device-inventory.png":::
 
 ## Troubleshooting
 
@@ -184,7 +182,7 @@ Validate that the scanner is running properly. Then go to the scan definition an
 
 ### Required threat and vulnerability management user permission
 
-Registration finished with an error: "It looks like you don't have sufficient permissions for adding a new agent. The required permission is 'Manage security settings in Security Center'."
+Registration finished with an error: "It looks like you don't have sufficient permissions for adding a new agent. The required permission is 'Manage security settings in Defender'."
 
 Press any key to exit.
 

@@ -2,8 +2,6 @@
 title: Dashboard insights - threat and vulnerability management
 description: The threat and vulnerability management dashboard can help SecOps and security admins address cybersecurity threats and build their organization's security resilience.
 keywords: Microsoft Defender for Endpoint-tvm, Microsoft Defender for Endpoint-tvm dashboard, threat & vulnerability management, threat and vulnerability management, risk-based threat & vulnerability management, security configuration, Microsoft Secure Score for Devices, exposure score
-search.appverid: met150
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,6 +14,7 @@ audience: ITPro
 ms.collection:
   - m365-security-compliance
   - m365initiative-defender-endpoint
+ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
 ---
@@ -25,7 +24,7 @@ ms.technology: mde
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Threat and vulnerability management](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -37,9 +36,9 @@ Threat and vulnerability management is a component of Defender for Endpoint, and
 - Invaluable device vulnerability context during incident investigations
 - Built-in remediation processes through Microsoft Intune and Microsoft Endpoint Configuration Manager
 
-You can use the threat and vulnerability management capability in [Microsoft 365 Defender portal](https://security.microsoft.com/) to:
+You can use the threat and vulnerability management capability in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> to:
 
-- View you exposure score and Microsoft Secure Score for Devices, along with top security recommendations, software vulnerability, remediation activities, and exposed devices
+- View your exposure score and Microsoft Secure Score for Devices, along with top security recommendations, software vulnerability, remediation activities, and exposed devices
 - Correlate EDR insights with endpoint vulnerabilities and process them
 - Select remediation options to triage and track the remediation tasks
 - Select exception options and track active exceptions
@@ -53,7 +52,7 @@ Watch this video for a quick overview of what is in the threat and vulnerability
 
 ## Threat and vulnerability management dashboard
 
-:::image type="content" source="../../media/tvmdashboard.png" lightbox="../../media/tvmdashboard.png" alt-text="Threat and Vulnerability Management dashboard for Devices.":::
+:::image type="content" source="../../media/tvmdashboard.png" alt-text="Threat and Vulnerability Management dashboard for Devices" lightbox="../../media/tvmdashboard.png":::
 
 <br>
 

@@ -1,8 +1,7 @@
 ---
 title: Get domain-related alerts API
-description: Learn how to use the Get domain related alerts API to retrieve alerts related to a given domain address in Microsoft Defender for Endpoint.
+description: Learn how to use the Get domain-related alerts API to retrieve alerts related to a given domain address in Microsoft Defender for Endpoint.
 keywords: apis, graph api, supported apis, get, domain, related, alerts
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -23,7 +22,8 @@ ms.custom: api
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -38,8 +38,8 @@ Retrieves a collection of [Alerts](alerts.md) related to a given domain address.
 
 ## Limitations
 
-1. You can query on alerts last updated according to your configured retention period.
-2. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
+- You can query on alerts last updated according to your configured retention period.
+- Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
 
 ## Permissions
 
@@ -82,7 +82,7 @@ If successful and domain exists - 200 OK with list of [alert](alerts.md) entitie
 
 ### Request
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/domains/client.wns.windows.com/alerts

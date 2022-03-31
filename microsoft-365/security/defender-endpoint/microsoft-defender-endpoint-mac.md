@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
   - m365-security-compliance
-  - m365initiative-defender-endpoint
+  - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
 ---
@@ -24,7 +24,8 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -32,11 +33,11 @@ ms.technology: mde
 This topic describes how to install, configure, update, and use Defender for Endpoint on Mac.
 
 > [!CAUTION]
-> Running other third-party endpoint protection products alongside Microsoft Defender for Endpoint on Mac is likely to lead to performance problems and unpredictable side effects. If non-Microsoft endpoint protection is an absolute requirement in your environment, you can still safely take advantage of Defender for Endpoint on Mac EDR functionality after configuring the antivirus functionality to run in [Passive mode](mac-preferences.md#enable--disable-passive-mode).
+> Running other third-party endpoint protection products alongside Microsoft Defender for Endpoint on Mac is likely to lead to performance problems and unpredictable side effects. If non-Microsoft endpoint protection is an absolute requirement in your environment, you can still safely take advantage of Defender for Endpoint on Mac EDR functionality after configuring the antivirus functionality to run in [Passive mode](mac-preferences.md#enforcement-level-for-antivirus-engine).
 
 ## What's new in the latest release
 
-[What's new in Microsoft Defender for Endpoint](whats-new-in-microsoft-defender-atp.md)
+[What's new in Microsoft Defender for Endpoint](whats-new-in-microsoft-defender-endpoint.md)
 
 [What's new in Microsoft Defender for Endpoint on Mac](mac-whatsnew.md)
 
@@ -72,7 +73,7 @@ The three most recent major releases of macOS are supported.
 > [!IMPORTANT]
 > On macOS 11 (Big Sur) and above, Microsoft Defender for Endpoint requires additional configuration profiles. If you are an existing customer upgrading from earlier versions of macOS, make sure to deploy the additional configuration profiles listed on [New configuration profiles for macOS Catalina and newer versions of macOS](mac-sysext-policies.md).
 
-- 12 (Monterey), 11 (Big Sur), 10.15 (Catalina), 10.14 (Mojave)
+- 12 (Monterey), 11 (Big Sur), 10.15 (Catalina)
 - Disk space: 1GB
 
 Beta versions of macOS are not supported.
@@ -89,7 +90,8 @@ Microsoft Defender for Endpoint on Mac requires one of the following Microsoft V
 - Microsoft 365 E5 Security
 - Microsoft 365 A5 (M365 A5)
 - Windows 10 Enterprise E5
-- Windows 11
+- Microsoft 365 Business Premium
+- Windows 11 Enterprise E5
 - Microsoft Defender for Endpoint
 
 > [!NOTE]
@@ -104,9 +106,11 @@ When adding exclusions, be mindful of [common exclusion mistakes for Microsoft D
 
 The following downloadable spreadsheet lists the services and their associated URLs that your network must be able to connect to. You should ensure that there are no firewall or network filtering rules that would deny access to these URLs, or you may need to create an *allow* rule specifically for them.
 
-|Spreadsheet of domains list|Description|
+
+|Spreadsheet of domains list| Description|
 |---|---|
-|![Thumb image for Microsoft Defender for Endpoint URLs spreadsheet.](images/mdatp-urls.png)|Spreadsheet of specific DNS records for service locations, geographic locations, and OS. <p> Download the spreadsheet here: [mdatp-urls.xlsx](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx).
+|Microsoft Defender for Endpoint URL list for commercial customers| Spreadsheet of specific DNS records for service locations, geographic locations, and OS for commercial customers. <p> [Download the spreadsheet here.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
+| Microsoft Defender for Endpoint URL list for Gov/GCC/DoD | Spreadsheet of specific DNS records for service locations, geographic locations, and OS for Gov/GCC/DoD customers. <p> [Download the spreadsheet here.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
 
 Microsoft Defender for Endpoint can discover a proxy server by using the following discovery methods:
 

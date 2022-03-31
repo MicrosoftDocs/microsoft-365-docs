@@ -2,8 +2,6 @@
 title: Stream Microsoft Defender for Endpoint events to your Storage account
 description: Learn how to configure Microsoft Defender for Endpoint to stream Advanced Hunting events to your Storage account.
 keywords: raw data export, streaming API, API, Event Hubs, Azure storage, storage account, Advanced Hunting, raw data sharing
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -23,9 +21,9 @@ ms.custom: api
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configuresiem-abovefoldlink)
 
@@ -37,9 +35,9 @@ ms.custom: api
 
 ## Enable raw data streaming
 
-1. Log in to [Microsoft Defender for Endpoint portal](https://securitycenter.windows.com) as a ***Global Administrator*** or ***Security Administrator***.
+1. Log in to [Microsoft 365 Defender](https://security.microsoft.com) as a ***Global Administrator*** or ***Security Administrator***.
 
-2. Go to [Data export settings page](https://securitycenter.windows.com/interoperability/dataexport) on Microsoft Defender Security Center.
+2. Go to [Data export settings page](https://security.microsoft.com/interoperability/dataexport) in Microsoft 365 Defender.
 
 3. Click on **Add data export settings**.
 
@@ -49,7 +47,7 @@ ms.custom: api
 
 6. Type your **Storage Account Resource ID**. In order to get your **Storage Account Resource ID**, go to your Storage account page on [Azure portal](https://ms.portal.azure.com/) \> properties tab \> copy the text under **Storage account resource ID**:
 
-   ![Image of event hub resource ID1.](images/storage-account-resource-id.png)
+   :::image type="content" source="images/storage-account-resource-id.png" alt-text="The Event Hubs with resource ID1" lightbox="images/storage-account-resource-id.png":::
 
 7. Choose the events you want to stream and click **Save**.
 
@@ -57,16 +55,16 @@ ms.custom: api
 
 - A blob container will be created for each event type:
 
-  ![Image of event hub resource ID2.](images/storage-account-event-schema.png)
+  :::image type="content" source="images/storage-account-event-schema.png" alt-text="The Event Hubs with resource ID2" lightbox="images/storage-account-event-schema.png":::
 
 - The schema of each row in a blob is the following JSON:
 
   ```json
   {
-          "time": "<The time WDATP received the event>"
-          "tenantId": "<Your tenant ID>"
-          "category": "<The Advanced Hunting table name with 'AdvancedHunting-' prefix>"
-          "properties": { <WDATP Advanced Hunting event as Json> }
+	  "time": "<The time WDATP received the event>"
+	  "tenantId": "<Your tenant ID>"
+	  "category": "<The Advanced Hunting table name with 'AdvancedHunting-' prefix>"
+	  "properties": { <WDATP Advanced Hunting event as Json> }
   }
   ```
 
@@ -82,7 +80,7 @@ ms.custom: api
 
 In order to get the data types for our events properties do the following:
 
-1. Log in to [Microsoft Defender Security Center](https://securitycenter.windows.com) and go to [Advanced Hunting page](https://securitycenter.windows.com/hunting-package).
+1. Log in to [Microsoft 365 Defender](https://security.microsoft.com) and go to [Advanced Hunting page](https://security.microsoft.com/hunting-package).
 
 2. Run the following query to get the data types mapping for each event:
 
@@ -94,7 +92,7 @@ In order to get the data types for our events properties do the following:
 
 - Here is an example for Device Info event:
 
-  ![Image of event hub resource ID3.](images/data-types-mapping-query.png)
+  :::image type="content" source="images/data-types-mapping-query.png" alt-text="The Event Hubs with resource ID3" lightbox="images/data-types-mapping-query.png":::
 
 ## Related topics
 

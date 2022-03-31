@@ -3,11 +3,11 @@ title: Compliance
 description:  This article lists the compliance standards relevant to Microsoft Managed Desktop.
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
 ---
 
@@ -34,13 +34,12 @@ Microsoft Managed Desktop has achieved the following certifications:
 - [Health Insurance Portability and Accountability Act (HIPAA)](/compliance/regulatory/offering-hipaa-hitech)
 - [Health Information Trust Alliance (HITRUST) Common Security Framework (CSF)](/compliance/regulatory/offering-hitrust)
 
-
 ## Auditor reports and compliance certificates
 
-You can find relevant information, including control and technical requirements, in the [Service Trust Portal (STP)](https://servicetrust.microsoft.com/), the central repository for such information about Microsoft Cloud Service offerings. You can download auditor reports, compliance certificates, and more from the [Audit Reports](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide) section of the STP.
+You can find relevant information, including control and technical requirements, in the [Service Trust Portal (STP)](https://servicetrust.microsoft.com/). This portal is the central repository for such information about Microsoft Cloud Service offerings. You can download auditor reports, compliance certificates, and more from the [Audit Reports](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide) section of the STP.
 
 > [!NOTE]
-> Because Microsoft Managed Desktop runs on Azure, relevant documents usually have file names such as “Microsoft Azure, Dynamics 365, and other Online Services”. In those documents, you can usually find Microsoft Managed Desktop under the category “Microsoft Online Services” or “Monitoring + Management”.
+> Because Microsoft Managed Desktop runs on Azure, relevant documents usually have file names such as "Microsoft Azure, Dynamics 365, and other Online Services". In those documents, you can usually find Microsoft Managed Desktop under the category "Microsoft Online Services" or "Monitoring + Management".
 
 ## Shared responsibility
 

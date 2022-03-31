@@ -13,9 +13,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
 ---
@@ -23,7 +21,7 @@ ms.technology: m365d
 # Download the Microsoft Defender for Endpoint client analyzer
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Learn how to download the Microsoft Defender for Endpoint client analyzer on supported Windows, macOS, and Linux Operating Systems.
 

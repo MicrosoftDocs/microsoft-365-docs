@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -18,7 +18,9 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: how-to
-ms.custom: autoir
+ms.custom: 
+- autoir
+- admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
 ---
 
@@ -42,13 +44,13 @@ Because the Action center provides a comprehensive view of Microsoft 365 Defende
 
 The unified Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) lists pending and completed remediation actions for your devices, email & collaboration content, and identities in one location.
 
-:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Unified Action center in Microsoft 365 Defender.":::
+:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="The unified Action center in the Microsoft 365 Defender portal." lightbox="../../media/m3d-action-center-unified.png":::
 
 For example: 
 
-- If you were previously using the Office 365 Security & Compliance Center ([https://protection.office.com](https://protection.office.com)), try the unified Action center in the Microsoft 365 Defender portal ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)).
-- If you were using the Action center in the Microsoft Defender Security Center ([https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)), try the unified Action center in the Microsoft 365 Defender portal ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)).
-- If you were already using the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), you'll see several improvements in the Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)).
+- If you were previously using the Office 365 Security & Compliance Center ([https://protection.office.com](https://protection.office.com)), try the unified Action center in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
+- If you were using the Action center in the Microsoft Defender Security Center ([https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)), try the unified Action center in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
+- If you were already using the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, you'll see several improvements in the Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)).
 
 The unified Action center brings together remediation actions across Defender for Endpoint and Defender for Office 365. It defines a common language for all remediation actions and provides a unified investigation experience. Your security operations team has a "single pane of glass" experience to view and manage remediation actions.  
 
@@ -63,7 +65,7 @@ You can use the unified Action center if you have appropriate permissions and on
 
 ## Using the Action center
 
-1. Go to [https://security.microsoft.com](https://security.microsoft.com) and sign in. 
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and sign in. 
 2. In the navigation pane, choose **Action center**. 
 
 When you visit the Action center, you see two tabs: **Pending actions** and **History**. The following table summarizes what you'll see on each tab:
@@ -75,7 +77,7 @@ When you visit the Action center, you see two tabs: **Pending actions** and **Hi
 
 You can customize, sort, filter, and export data in the Action center.
 
-:::image type="content" source="../../media/m3d-action-center-columnsfilters.png" alt-text="The Action center enables you to sort, filter, and customize your list of actions":::
+:::image type="content" source="../../media/m3d-action-center-columnsfilters.png" alt-text="The sort, filter, and customize capabilities of the Action center" lightbox="../../media/m3d-action-center-columnsfilters.png":::
 
 - Select a column heading to sort items in ascending or descending order.
 - Use the time period filter to view data for the past day, week, 30 days, or 6 months.

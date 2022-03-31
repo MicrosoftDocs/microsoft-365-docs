@@ -3,7 +3,7 @@ title: "Moving core data to new Microsoft 365 datacenter geos"
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 12/10/2019
+ms.date: 11/16/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -29,7 +29,7 @@ Core customer data is a term that refers to a subset of customer data including:
   
 Existing customers that have their core customer data stored in an already existing datacenter geo are not impacted by the launch of a new datacenter geo. We introduce no unique capabilities, features or compliance certifications with the new datacenter geo. As a customer in any of those two geos, you will experience the same quality of service, performance and security controls as you did before. We offer existing customers listed in the table below an option to request early migration of their organization's core customer data at rest to their new datacenter geo.
   
-|**Customers with tenant signup country in**|**Previous datacenter geo**|**New datacenter geo**|**Geo available since**|
+| Customers with tenant signup country in | Previous datacenter geo | New datacenter geo | Geo available since |
 |:-----|:-----|:-----|:-----|
 |**Japan**| Asia/Pacific | Japan | December 2014 |
 |**Australia, New Zealand, Fiji**| Asia/Pacific | Australia | March 2015 |
@@ -44,6 +44,7 @@ Existing customers that have their core customer data stored in an already exist
 |**Germany**| European Union | Germany | December 2019 |
 |**Norway**| European Union | Norway | April 2020 |
 |**Brazil**| Americas | Brazil | November 2020 |
+|**Sweden**| European Union | Sweden | November 2021 |
 
 As of October 1, 2020 customers with an Office 365 Education subscription included in the tenant are not eligible for migration.
 

@@ -16,7 +16,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Contact support for Aland Islands
 
-[Find another country or region](../../business-video/get-help-support.md).
+[Find another country or region](../get-help-support.md).
 
 ## Phone number
 08009 8462

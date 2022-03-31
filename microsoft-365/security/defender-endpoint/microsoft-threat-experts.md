@@ -15,7 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection:
   - m365-security-compliance
-  - m365initiative-defender-endpoint
+  - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
 ---
@@ -25,7 +25,7 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -58,7 +58,7 @@ Microsoft Threat Experts - Targeted attack notification provides proactive hunti
 
 ## Microsoft Threat Experts - Experts on Demand
 
-Customers can engage our security experts directly from within Microsoft Defender Security Center for timely and accurate response. Experts provide insights needed to better understand the complex threats affecting your organization, from alert inquiries, potentially compromised devices, root cause of a suspicious network connection, to additional threat intelligence regarding ongoing advanced persistent threat campaigns. With this capability, you can:
+Customers can engage our security experts directly from within Microsoft 365 Defender for timely and accurate response. Experts provide insights needed to better understand the complex threats affecting your organization, from alert inquiries, potentially compromised devices, root cause of a suspicious network connection, to additional threat intelligence regarding ongoing advanced persistent threat campaigns. With this capability, you can:
 
 - Get additional clarification on alerts including root cause or scope of the incident
 - Gain clarity into suspicious device behavior and next steps if faced with an advanced attacker
@@ -68,22 +68,22 @@ The option to **Consult a threat expert** is available in several places in the 
 
 - ***Help and support menu***
 
-  ![Screenshot of MTE-EOD menu option.](images/mte-eod-menu.png)
+  :::image type="content" source="images/mte-eod-menu.png" alt-text="The MTE-EOD menu item" lightbox="images/mte-eod-menu.png":::
 
 - ***Device page actions menu***
 
-  ![Screenshot of MTE-EOD device page action menu option.](images/mte-eod-machines.png)
+  :::image type="content" source="images/mte-eod-machines.png" alt-text="The MTE-EOD device page action menu option" lightbox="images/mte-eod-machines.png":::
 
 - ***Alerts page actions menu***
 
-  ![Screenshot of MTE-EOD alert page action menu option.](images/mte-eod-alerts.png)
+  :::image type="content" source="images/mte-eod-alerts.png" alt-text="The MTE-EOD alert page action menu option" lightbox="images/mte-eod-alerts.png":::
 
 - ***File page actions menu***
 
-  ![Screenshot of MTE-EOD file page action menu option.](images/mte-eod-file.png)
+  :::image type="content" source="images/mte-eod-file.png" alt-text="The MTE-EOD file page action menu option" lightbox="images/mte-eod-file.png":::
 
 > [!NOTE]
-> If you would like to track the status of your Experts on Demand cases through Microsoft Services Hub, reach out to your Technical Account Manager.
+> If you would like to track the status of your Experts on Demand cases through Microsoft Services Hub, reach out to your Customer Success Account Manager.
 
 Watch this video for a quick overview of the Microsoft Services Hub.
 

@@ -11,7 +11,7 @@ search.appverid:
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
-localization_priority: Priority
+ms.localizationpriority: high
 description: Learn how to use advanced metadata search to find items in SharePoint document libraries using SharePoint Syntex.
 ---
 
@@ -34,14 +34,15 @@ Advanced metadata search lets you use the metadata associated with a document to
 
     ![Screenshot of a document library page showing the metadata search pane.](../media/content-understanding/metadata-search-pane.png)
 
-   Five metadata search fields are currently available. More fields will be added in the future.
+   Six metadata search fields are currently available. More fields will be added in the future.
 
    |Field    |Use this field to  |
    |---------|---------|
    |Keywords |Search for a string match in metadata or in the full text of a document. |
-   |Name     |Search in the **Name** column in the library.          |
+   |File name     |Search in the **Name** column in the library.          |
    |People   |Search for a match on people in any column in the library.   |
-   |Modified |Search by selected date range in the **Modified** column in the library.         |
-   |Type     |Search by selected file type.        |
+   |Modified date |Search by selected date range in the **Modified** column in the library.         |
+   |File type     |Search by selected file type (for example, Word document or PDF).        |
+   |Content type  |Search by selected content type. This option will only appear if there is a non-default content type applied to the library. Default content types are *document* and *folder*.        |
 
 3. Select **Search**. The documents that match your metadata search are shown on the results page. 

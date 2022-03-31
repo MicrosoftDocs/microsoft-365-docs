@@ -20,7 +20,7 @@ description: "Groups services interactions"
 
 # Groups services interactions
 
-Microsoft 365 Groups provides a common fabric for a number of services and workloads within the Microsoft 365 platform to deliver a connected experience for end-users. At its core, a Microsoft 365 group exists to provide:
+Microsoft 365 Groups provides a common fabric for several services and workloads within the Microsoft 365 platform to deliver a connected experience for end users. At its core, a Microsoft 365 group exists to provide:
 
 - A way to manage the membership (Azure AD)
 - A place for messaging and conversations to take place (Exchange mailbox, Microsoft Teams, Yammer)
@@ -28,7 +28,7 @@ Microsoft 365 Groups provides a common fabric for a number of services and workl
 - A calendar for scheduling (Exchange)
 - A notebook for capturing notes (OneNote)
 
-At the point of group creation, a number of other resources are also provisioned, however they are not visible until accessed for the first time from the service:
+At the point of group creation, several other resources are also provisioned, however they are not visible until accessed for the first time from the service:
 
 - A board for managing group tasks (Planner)
 - A workspace for reporting (Power BI)
@@ -46,7 +46,7 @@ Examples of this include:
 
 ## User interactions with groups
 
-Microsoft 365 Groups can be created and managed from a variety of interfaces, both by administrators and end-users. 
+Microsoft 365 Groups can be created and managed from various interfaces, both by administrators and end users. 
 
 ### Administrative experiences
 
@@ -54,7 +54,7 @@ Administrators can create and manage Microsoft 365 groups from several of the wo
 
 **Related settings**
 
-Across the various administrative interfaces that can manage group settings exists several overlaps which you should be aware of.
+Across the various administrative interfaces that can manage group settings exists several overlaps that you should be aware of.
 
 **Microsoft 365 admin center**
 
@@ -64,11 +64,11 @@ In the Microsoft 365 admin center, guest access to Groups is enabled by default,
 
 The Azure AD admin center offers controls around whether users can create Groups or assign owners in Azure portals, as well as expiration and naming policy settings.
 
-The admin center also provides a number of guest invitation control measures that go beyond that of the Microsoft 365 admin center, such as the ability to limit whether non-owners can also invite guests
+The admin center also provides several guest invitation control measures that go beyond that of the Microsoft 365 admin center, such as the ability to limit whether non-owners can also invite guests
 
 **SharePoint**
 
-SharePoint sites are created with Owner, Member and Visitor security groups, with the first two matching up to their Microsoft 365 Group counterparts. While membership for SharePoint Online sites is generally managed by the associated Microsoft 365 Group, it is not a bidirectional relationship. Any changes to membership at the Microsoft 365 group level are reflected in SharePoint, however if membership is changed in the SharePoint group, this is not reflected in the Microsoft 365 group.
+SharePoint sites are created with Owner, Member, and Visitor security groups, with the first two matching up to their Microsoft 365 group counterparts. While membership for SharePoint Online sites is generally managed by the associated Microsoft 365 group, it is not a bidirectional relationship. Any changes to membership at the Microsoft 365 group level are reflected in SharePoint, however if membership is changed in the SharePoint group, this is not reflected in the Microsoft 365 group.
 
 ### User experiences
 
@@ -86,7 +86,7 @@ The following services allow creation of groups by end users:
 
 #### Restriction of group creation
 
-A common approach to control sprawl of teams is to limit which users can create them. This can only be done by limiting the creation of groups. Doing this impacts the ability to create groups from other services where that may be necessary for end-user. Microsoft 365 Groups does not support the ability to restrict the creation of groups from some apps or services while allowing it from others.
+A common approach to control sprawl of teams is to limit which users can create them. This can only be done by limiting the creation of groups. Doing this impacts the ability to create groups from other services where that may be necessary for end user. Microsoft 365 Groups does not support the ability to restrict the creation of groups from some apps or services while allowing it from others.
 
 The experience of group creation restriction varies between apps and services:
 
@@ -110,7 +110,7 @@ See the Groups in Microsoft 365 poster for information about different types of 
 
 The following table provides an overview of Microsoft 365 Groups interactions with various services:
 
-|Product|Features|Does the service<br>exist without a group?|Can the service<br>create a group?|Does deleting the<br>instance delete the group?|
+|Product|Features|Does the service exist without a group?|Can the service create a group?|Does deleting the instance delete the group?|
 |---|---|---|---|---|
 |Azure AD|Membership, Group controls, Guests|Yes|Yes|Yes|
 |Exchange|Calendar, mailbox|Yes|Yes|Yes|
@@ -128,7 +128,7 @@ The following table provides an overview of Microsoft 365 Groups interactions wi
 |Teams|Team|No|Yes|Yes|
 |Yammer|Group|Yes|Yes|Yes|
 
-While the table above provides a high-level overview of group interactions with Microsoft 365 services, there are a number of nuances and intricacies that you should understand. The following sections take a more in-depth look at the specific workloads and their interactions with groups.
+While the table above provides a high-level overview of group interactions with Microsoft 365 services, there are several nuances and intricacies that you should understand. The following sections take a more in-depth look at the specific workloads and their interactions with groups.
 
 ## Azure AD
 
@@ -168,9 +168,9 @@ Deleting the group in Azure AD will delete relevant group-associated services an
 
 ## Teams
 
-Teams is a chat-centered workspace aimed at enhancing collaboration by providing a singular interface to interact with a variety of Microsoft and third-party services.
+Teams is a chat-centered workspace aimed at enhancing collaboration by providing a singular interface to interact with various Microsoft and third-party services.
 
-By default, when a team is created, the mailbox and calendar associated with the Microsoft 365 group are hidden from both the Global Address List in Exchange, as well as Outlook. This can be manually overridden by an administrator if the user would like to use both Outlook and Teams on the same Microsoft 365 Group.
+By default, when a team is created, the mailbox and calendar associated with the Microsoft 365 group are hidden from both the Global Address List in Exchange, as well as Outlook. This can be manually overridden by an administrator if the user would like to use both Outlook and Teams on the same Microsoft 365 group.
 
 **Key features provided to Groups**
 
@@ -218,7 +218,7 @@ Yes, it is possible to create a group from the Exchange Online admin center, as 
 
 **Does Exchange exist without a Group?**
 
-Yes, Exchange Online provides a number of services, including shared mailboxes and calendars, without any group association.
+Yes, Exchange Online provides several services, including shared mailboxes and calendars, without any group association.
 
 **Can there be multiple instances of Exchange mailboxes or calendars per group?**
 
@@ -250,7 +250,7 @@ No, Forms cannot create a group.
 
 **Do forms exist without a group?**
 
-Yes, surveys and quizzes can be created directly in an end-user’s account.
+Yes, surveys and quizzes can be created directly in an end user’s account.
 
 **Can there be multiple forms per group?**
 
@@ -440,7 +440,7 @@ Yes, deleting the workspace in Power BI will delete group and  group-associated 
 
 Power BI provides interactive data-driven dashboards and reports.
 
-While creating a new workspace in Power BI does not create a Microsoft 365 Group, creating a group by any other means creates a  new (not classic) workspace in Power BI.
+While creating a new workspace in Power BI does not create a Microsoft 365 group, creating a group by any other means creates a  new (not classic) workspace in Power BI.
 
 **Key features provided to groups**
 
@@ -535,7 +535,7 @@ No, deleting the roadmap will not delete the group.
 
 ## SharePoint
 
-SharePoint is a web-based content management platform that provides among other things, storage services for a number of Microsoft 365 services.
+SharePoint is a web-based content management platform that provides among other things, storage services for several Microsoft 365 services.
 
 **Key features provided to Groups**
 
@@ -549,11 +549,11 @@ Yes, creating a team site in SharePoint will create a Microsoft 365 group by def
 
 **Do SharePoint sites exist without a group?**
 
-Yes, SharePoint offers a number of non-group-associated services and sites such as communication and hub sites. 
+Yes, SharePoint offers several non-group-associated services and sites such as communication and hub sites. 
 
 **Can there be multiple sites per group?**
 
-No, there can only be a single site per group. Private channels in Teams use additional sites that are not connected to the group.
+No, there can only be a single site per group. Private and shared channels in Teams use additional sites that are not connected to the group.
 
 **Can sites be associated with multiple groups?**
 
@@ -643,6 +643,6 @@ Yes, deleting the group in Yammer will delete related Microsoft group and group-
 
 ## Related topics
 
-[Collaboration governance planning step-by-step](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[Collaboration governance planning recommendations](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
 
 [Create your collaboration governance plan](collaboration-governance-first.md)

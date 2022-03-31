@@ -2,7 +2,6 @@
 title: Microsoft Defender Antivirus event IDs and error codes
 description: Look up the causes and solutions for Microsoft Defender Antivirus event IDs and errors
 keywords: event, error code, siem, logging, troubleshooting, wef, windows event forwarding
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -11,7 +10,7 @@ ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 09/11/2018
+ms.date: 01/27/2022
 ms.reviewer:
 manager: dansimp
 ms.technology: mde
@@ -24,14 +23,13 @@ ms.collection: M365-security-compliance
 
 
 **Applies to:**
-
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 If you encounter a problem with Microsoft Defender Antivirus, you can search the tables in this topic to find a matching issue and potential solution.
 
 The tables list:
 
-- [Microsoft Defender Antivirus event IDs](#windows-defender-av-ids) (these apply to both Windows 10 and Windows Server 2016)
+- [Microsoft Defender Antivirus event IDs](#windows-defender-av-ids) (these apply to Windows 10, Windows 11, and Windows Server 2016)
 - [Microsoft Defender Antivirus client error codes](#error-codes)
 - [Internal Microsoft Defender Antivirus client error codes (used by Microsoft during development and testing)](#internal-error-codes)
 
@@ -41,6 +39,9 @@ The tables list:
 > - Cloud-delivered protection
 > - Fast learning (including Block at first sight)
 > - Potentially unwanted application blocking
+
+> [!NOTE]
+> The Defender for Endpoint demo site at demo.wd.microsoft.com is deprecated and will be removed in the future.
 
 <a id="windows-defender-av-ids"></a>
 ## Microsoft Defender Antivirus event IDs
@@ -401,7 +402,7 @@ For more information, see the following:
 <li>IEPROTECT: IE - IExtensionValidation; this protects against malicious webpage controls</li>
 <li>Early Launch Antimalware (ELAM). This includes malware detected by the boot sequence</li>
 <li>Remote attestation</li>
-</ul>Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PS, VBS), though it can be invoked by third parties as well.
+</ul>Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PowerShell, VBS), though it can be invoked by third parties as well.
 UAC</dt>
 <dt>Status: &lt;Status&gt;</dt>
 <dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
@@ -834,7 +835,7 @@ Microsoft Defender Antivirus has detected a suspicious behavior.<br/>For more in
 <li>IEPROTECT: IE - IExtensionValidation; this protects against malicious webpage controls</li>
 <li>Early Launch Antimalware (ELAM). This includes malware detected by the boot sequence</li>
 <li>Remote attestation</li>
-</ul>Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PS, VBS), though it can be invoked by third parties as well.
+</ul>Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PowerShell, VBS), though it can be invoked by third parties as well.
 UAC</dt>
 <dt>Status: &lt;Status&gt;</dt>
 <dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
@@ -911,7 +912,7 @@ Microsoft Defender Antivirus has detected malware or other potentially unwanted 
 <li>IEPROTECT: IE - IExtensionValidation; this protects against malicious webpage controls</li>
 <li>Early Launch Antimalware (ELAM). This includes malware detected by the boot sequence</li>
 <li>Remote attestation</li>
-</ul>Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PS, VBS), though it can be invoked by third parties as well.
+</ul>Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PowerShell, VBS), though it can be invoked by third parties as well.
 UAC</dt>
 <dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
 <dt>Process Name: &lt;Process in the PID&gt;</dt>
@@ -992,7 +993,7 @@ Microsoft Defender Antivirus has taken action to protect this machine from malwa
 <li>IEPROTECT: IE - IExtensionValidation; this protects against malicious webpage controls</li>
 <li>Early Launch Antimalware (ELAM). This includes malware detected by the boot sequence</li>
 <li>Remote attestation</li>
-</ul>Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PS, VBS), though it can be invoked by third parties as well.
+</ul>Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PowerShell, VBS), though it can be invoked by third parties as well.
 UAC</dt>
 <dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
 <dt>Process Name: &lt;Process in the PID&gt;</dt>
@@ -1119,7 +1120,7 @@ Microsoft Defender Antivirus has encountered a non-critical error when taking ac
 <li>IEPROTECT: IE - IExtensionValidation; this protects against malicious webpage controls</li>
 <li>Early Launch Antimalware (ELAM). This includes malware detected by the boot sequence</li>
 <li>Remote attestation</li>
-</ul>Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PS, VBS), though it can be invoked by third parties as well.
+</ul>Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PowerShell, VBS), though it can be invoked by third parties as well.
 UAC</dt>
 <dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
 <dt>Process Name: &lt;Process in the PID&gt;</dt>
@@ -1214,7 +1215,7 @@ Microsoft Defender Antivirus has encountered a critical error when taking action
 <li>IEPROTECT: IE - IExtensionValidation; this protects against malicious webpage controls</li>
 <li>Early Launch Antimalware (ELAM). This includes malware detected by the boot sequence</li>
 <li>Remote attestation</li>
-</ul>Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PS, VBS), though it can be invoked by third parties as well.
+</ul>Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PowerShell, VBS), though it can be invoked by third parties as well.
 UAC</dt>
 <dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
 <dt>Process Name: &lt;Process in the PID&gt;</dt>
@@ -1327,6 +1328,61 @@ Microsoft Defender Antivirus client is up and running in a healthy state.
 <td >
 <div class="alert"><b>Note: This event will only be logged if the following policy is set: <b>ThreatFileHashLogging     unsigned</b>.</div>
 <div> </div>
+</td>
+</tr>
+<tr>
+<th colspan="2">Event ID: 1127</th>
+</tr>
+<tr><td>
+Symbolic name:
+</td>
+<td >
+<b>MALWAREPROTECTION_FOLDER_GUARD_SECTOR_BLOCK</b>
+</td>
+</tr>
+<tr>
+<td>
+Message:
+</td>
+<td >
+<b>Controlled Folder Access(CFA) blocked an untrusted process from making changes to the memory.
+</b>
+</td>
+</tr>
+<tr>
+<td>
+Description:
+</td>
+<td >
+Controlled Folder Access has blocked an untrusted process from potentially modifying disk sectors.
+<br/> For more information about the event record, see the following:
+<dl>
+<dt>EventID: &lt;EventID&gt;, for example: 1127</dt>
+<dt>Version: &lt;Version&gt;, for example: 0</dt>
+<dt>Level: &lt;Level&gt;, for example: win:Warning</dt>
+<dt>TimeCreated: &lt;SystemTime&gt;, time when the event was created</dt>
+<dt>EventRecordID: &lt;EventRecordID&gt;, index number of the event in the event log</dt>
+<dt>Execution ProcessID: &lt;Execution ProcessID&gt;, process that generated the event</dt>
+<dt>Channel: &lt;Event channel&gt;, for example: Microsoft-Windows-Windows Defender/Operational</dt>
+<dt>Computer: &lt;Computer name&gt;</dt>
+<dt>Security UserID: &lt;Security UserID&gt;</dt>
+<dt>Product Name: &lt;Product Name&gt;, for example: Microsoft Defender Antivirus</dt>
+<dt>Product Version: &lt;Product Version&gt;</dt>
+<dt>Detection Time: &lt;Detection Time&gt;, time when CFA blocked an untrusted process</dt>
+<dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
+<dt>Path: &lt;Device name&gt;, name of the device or disk that an untrusted process accessed for modification</dt>
+<dt>Process Name: &lt;Process path&gt;, the process path name that CFA blocked from accessing the device or disk for modification</dt>
+<dt>Security Intelligence Version: &lt;Security intelligence version&gt;</dt>
+<dt>Engine Version: &lt;Antimalware Engine version&gt;</dt>
+</dl>
+</td>
+</tr>
+<tr>
+<td>
+User action:
+</td>
+<td >
+The user can add the blocked process to the <i>Allowed Process</i> list for CFA, using Powershell or Windows Security Center.
 </td>
 </tr>
 <tr>
@@ -2637,6 +2693,34 @@ Microsoft Defender Antivirus scanning for viruses is disabled.
 </td>
 </tr>
 <tr>
+<th colspan="2">Event ID: 5013</th>
+</tr>
+<tr><td>
+Symbolic name:
+</td>
+<td >
+<b>
+</b>
+</td>
+</tr>
+<tr>
+<td>
+Message:
+</td>
+<td >
+<b>Tamper protection blocked a change to Microsoft Defender Antivirus.
+</b>
+</td>
+</tr>
+<tr>
+<td>
+Description:
+</td>
+<td >
+If Tamper protection is enabled then, any attempt to change any of Defender’s settings if blocked and Event ID 5013 is generated that states which setting change was blocked.
+</td>
+</tr>
+<tr>
 <th colspan="2">Event ID: 5100</th>
 </tr>
 <tr><td>
@@ -2906,7 +2990,7 @@ Run offline Microsoft Defender Antivirus. You can read about how to do this in t
 <td>
 This error indicates that Microsoft Defender Antivirus does not support the current version of the platform and requires a new version of the platform.
 </td></tr><tr><td>Resolution</td><td>
-You can only use Microsoft Defender Antivirus in Windows 10. For Windows 8, Windows 7 and Windows Vista, you can use <a href="https://www.microsoft.com/server-cloud/system-center/endpoint-protection-2012.aspx">System Center Endpoint Protection</a>.<br/></td>
+You can only use Microsoft Defender Antivirus in Windows 10 and Windows 11. For Windows 8, Windows 7 and Windows Vista, you can use <a href="https://www.microsoft.com/server-cloud/system-center/endpoint-protection-2012.aspx">System Center Endpoint Protection</a>.<br/></td>
 </tr>
 </table>
 

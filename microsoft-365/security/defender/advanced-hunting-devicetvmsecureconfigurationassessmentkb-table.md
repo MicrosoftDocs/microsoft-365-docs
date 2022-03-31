@@ -30,23 +30,39 @@ ms.technology: m365d
 - Microsoft Defender for Endpoint
 
 
+The `DeviceTvmSecureConfigurationAssessmentKB` table in the advanced hunting schema contains information about the various secure configurations checked by [Threat & Vulnerability Management](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt). It also includes risk information, related industry benchmarks, and applicable MITRE ATT&CK techniques and tactics.
 
-The `DeviceTvmSecureConfigurationAssessmentKB` table in the advanced hunting schema contains information about the various secure configurations — such as whether a device has automatic updates on — checked by [Threat & Vulnerability Management](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt). It also includes risk information, related industry benchmarks, and applicable MITRE ATT&CK techniques and tactics. Use this reference to construct queries that return information from the table.
+This table doesn't return events or records. We recommend joining this table to the [DeviceTvmSecureConfigurationAssessment](advanced-hunting-devicetvmsecureconfigurationassessment-table.md) table using `ConfigurationId` to view text information about the security configurations in the returned assessments.
+
+For example, when you query the `DeviceTvmSecureConfigurationAssessment` table you might want to view the `ConfigurationDescription` for the security configurations that come up in the assessment results. You can see this information by joining this table to `DeviceTvmSecureConfigurationAssessment` using `ConfigurationId` and project `ConfigurationDescription`.
 
 For information on other tables in the advanced hunting schema, see [the advanced hunting reference](advanced-hunting-schema-tables.md).
 
 | Column name | Data type | Description |
 |-------------|-----------|-------------|
-| `ConfigurationId` | string | Unique identifier for a specific configuration |
-| `ConfigurationImpact` | string | Rated impact of the configuration to the overall configuration score (1-10) |
-| `ConfigurationName` | string | Display name of the configuration |
-| `ConfigurationDescription` | string | Description of the configuration |
-| `RiskDescription` | string | Description of the associated risk |
-| `ConfigurationCategory` | string | Category or grouping to which the configuration belongs: Application, OS, Network, Accounts, Security controls|
-| `ConfigurationSubcategory` | string |Subcategory or subgrouping to which the configuration belongs. In many cases, this describes specific capabilities or features. |
-| `ConfigurationBenchmarks` | string | List of industry benchmarks recommending the same or similar configuration |
-| `Tags` | string | Labels representing various attributes used to identify or categorize a security configuration |
-| `RemediationOptions` | string | Recommended actions to reduce or address any associated risks |
+| `ConfigurationId` | `string` | Unique identifier for a specific configuration |
+| `ConfigurationImpact` | `string` | Rated impact of the configuration to the overall configuration score (1-10) |
+| `ConfigurationName` | `string` | Display name of the configuration |
+| `ConfigurationDescription` | `string` | Description of the configuration |
+| `RiskDescription` | `string` | Description of the associated risk |
+| `ConfigurationCategory` | `string` | Category or grouping to which the configuration belongs: Application, OS, Network, Accounts, Security controls|
+| `ConfigurationSubcategory` | `string` |Subcategory or subgrouping to which the configuration belongs. In many cases, this describes specific capabilities or features. |
+| `ConfigurationBenchmarks` | `string` | List of industry benchmarks recommending the same or similar configuration |
+| `Tags` | `string` | Labels representing various attributes used to identify or categorize a security configuration |
+| `RemediationOptions` | `string` | Recommended actions to reduce or address any associated risks |
+
+You can try this example query to return relevant configuration metadata along with information on devices with non-compliant antivirus configurations from the `DeviceTvmSecureConfigurationAssessment` table:
+
+```kusto
+// Get information on devices with antivirus configurations issues
+DeviceTvmSecureConfigurationAssessment
+| where ConfigurationSubcategory == 'Antivirus' and IsApplicable == 1 and IsCompliant == 0
+| join kind=leftouter (
+    DeviceTvmSecureConfigurationAssessmentKB
+    | project ConfigurationId, ConfigurationName, ConfigurationDescription, RiskDescription, Tags, ConfigurationImpact
+) on ConfigurationId
+| project DeviceName, OSPlatform, ConfigurationId, ConfigurationName, ConfigurationCategory, ConfigurationSubcategory, ConfigurationDescription, RiskDescription, ConfigurationImpact, Tags
+```
 
 ## Related topics
 

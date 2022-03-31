@@ -13,7 +13,6 @@ manager: dansimp
 audience: ITPro
 ms.collection:
   - m365-security-compliance
-  - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
 ---
@@ -24,7 +23,8 @@ ms.technology: mde
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -82,6 +82,14 @@ There are several ways to uninstall Microsoft Defender for Endpoint on macOS. No
 
 - Open **Finder > Applications**. Right click on **Microsoft Defender for Endpoint > Move to Trash**.
 
+### Supported output types
+
+Supports table and JSON format output types. For each command, there's a default output behavior. You can modify the output in your preferred output format using the following commands:
+
+`-output json`
+
+`-output table`
+
 ### From the command line
 
 - `sudo '/Library/Application Support/Microsoft/Defender/uninstall/uninstall'`
@@ -124,7 +132,7 @@ Important tasks, such as controlling product settings and triggering on-demand s
 To enable autocompletion in bash, run the following command and restart the Terminal session:
 
 ```bash
-echo "source /Applications/Microsoft\ Defender\ ATP.app/Contents/Resources/Tools/mdatp_completion.bash" >> ~/.bash_profile
+echo "source /Applications/Microsoft\ Defender.app/Contents/Resources/Tools/mdatp_completion.bash" >> ~/.bash_profile
 ```
 
 To enable autocompletion in zsh:
@@ -146,7 +154,7 @@ To enable autocompletion in zsh:
    ```zsh
    sudo mkdir -p /usr/local/share/zsh/site-functions
 
-   sudo ln -svf "/Applications/Microsoft Defender ATP.app/Contents/Resources/Tools/mdatp_completion.zsh" /usr/local/share/zsh/site-functions/_mdatp
+   sudo ln -svf "/Applications/Microsoft Defender.app/Contents/Resources/Tools/mdatp_completion.zsh" /usr/local/share/zsh/site-functions/_mdatp
    ```
 
 ## Client Microsoft Defender for Endpoint quarantine directory

@@ -15,6 +15,7 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkEXCHANGE
 description: Learn how to set up a custom connector to import third-party data from  data sources such as Salesforce Chatter, Yahoo Messenger, or Yammer.
 ---
 
@@ -501,7 +502,7 @@ Here are the steps for creating and configuring a third-party data mailbox for i
 
 ## Step 3: Configure user mailboxes for third-party data
 
-The next step is to configure user mailboxes to support third-party data. Complete these tasks by using the Exchange admin center or by using the corresponding Windows PowerShell cmdlets.
+The next step is to configure user mailboxes to support third-party data. Complete these tasks by using the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a> or by using the corresponding Windows PowerShell cmdlets.
 
 1. Enable the archive mailbox for each user; see [Enable archive mailboxes](enable-archive-mailboxes.md) and [Enable auto-expanding archiving](enable-autoexpanding-archiving.md).
 

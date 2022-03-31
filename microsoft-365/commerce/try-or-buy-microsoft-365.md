@@ -2,8 +2,8 @@
 title: "Try or buy a Microsoft 365 for business subscription"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: drjones, jmueller
 audience: Admin
@@ -15,10 +15,11 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom: 
-- AdminSurgePortfolio
 - commerce_purchase
+- AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
+- adminvideo
 search.appverid: GEA150 
 description: "Sign up for a free 30-day trial for Microsoft 365 Business Standard, Microsoft 365 Business Premium, or Microsoft 365 Apps for business."
 ms.date: 08/07/2020
@@ -102,6 +103,15 @@ When you add a subscription through the <a href="https://go.microsoft.com/fwlink
 ## Buy a different subscription
 
 If you already have a Microsoft 365 for business subscription, you can go through the Microsoft 365 admin center to buy a different subscription for your organization.
+
+### Watch: Move users to a different subscription
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SBE2?autoplay=false]
+
+As your users change roles, they may need features that aren't available in their current Microsoft 365 Business Premium subscription. When this happens, you can add a new subscription that includes those features, and assign licenses to the people who need them.
+
+> [!NOTE]
+> For some subscriptions, you can only cancel during a limited window of time after you buy or renew your subscription. If the cancellation window has passed, turn off recurring billing to cancel the subscription at the end of its term.
 
 When you buy another subscription through the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, the new subscription is associated with the same organization (domain name space) as your existing subscription. This makes it easier to move users in your organization between subscriptions or assign them a license for the additional subscription they need.
 

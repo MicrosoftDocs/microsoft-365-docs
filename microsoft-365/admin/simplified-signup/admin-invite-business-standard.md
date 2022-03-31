@@ -18,6 +18,9 @@ description: "Invite users to join Microsoft 365 Business Standard organization"
 
 # Invite users to Microsoft 365 Business Standard (Admin)
 
+> [!IMPORTANT]
+> These steps apply to Microsoft 365 Business Standard and Microsoft 365 Apps for business.
+
 As the admin of a Microsoft 365 Business Standard subscription, you can invite your colleagues and coworkers to share and use your Microsoft 365 for business subscription. When you invite your colleagues and coworkers to your subscription, you share all the following features and services:
 
 - Get desktop versions of Office apps, including Outlook, Word, Excel, PowerPoint, and OneNote (plus Access and Publisher for PC only).
@@ -26,12 +29,12 @@ As the admin of a Microsoft 365 Business Standard subscription, you can invite y
 - Use one license to cover fully installed Office apps on five mobile devices, five tablets, and five PCs or Macs per user.
 - Get help anytime with around-the-clock phone and web support from Microsoft.
 
-> [!IMPORTANT]
-> The person who signs up for Microsoft 365 for business (usually the business owner) automatically becomes the technical administrator of the organization. You can add other people as admins if you want help managing your Microsoft 365 services. Check out [Add an admin](../../business-video/add-admin.md) for more info.
+> [!Note]
+> The person who signs up for Microsoft 365 for business (usually the business owner) automatically becomes the technical administrator of the organization. You can add other people as admins if you want help managing your Microsoft 365 services. Check out [Assign admin roles](../add-users/assign-admin-roles.md) for more info.
 
 ## Before you begin
 
-Make sure you’ve already [signed up for Microsoft 365 Business Standard](signup-business-standard.md) and you’ve [set up your Business Standard organization](../setup/setup-business-standard.md). Once you’ve completed those steps, you can share an invite to your users.
+Make sure you’ve already [signed up for Microsoft 365 Business Standard](signup-business-standard.md) or Microsoft 365 Apps for business. And make sure you've already [set up your Business Standard organization](../setup/setup-business-standard.md) or [Set up Microsoft 365 Apps for business](../setup/setup-apps-for-business.md). Once you’ve completed those steps, you can share an invite to your users.
 
 ## Share an invitation to a Microsoft 365 Business Standard subscription
 

@@ -2,7 +2,6 @@
 title: Evaluate network protection
 description: See how network protection works by testing common scenarios that it protects against.
 keywords: Network protection, exploits, malicious website, ip, domain, domains, evaluate, test, demo
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -14,7 +13,10 @@ ms.author: dansimp
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
-ms.collection: m365-security-compliance
+ms.collection: 
+- m365solution-scenario
+- M365-security-compliance
+ms.date:
 ---
 
 # Evaluate network protection
@@ -22,8 +24,9 @@ ms.collection: m365-security-compliance
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-- - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 [Network protection](network-protection.md) helps prevent employees from using any application to access dangerous domains that may host phishing scams, exploits, and other malicious content on the Internet.
 
@@ -31,6 +34,9 @@ This article helps you evaluate network protection by enabling the feature and g
 
 > [!TIP]
 > You can also visit the Microsoft Defender demo scenarios website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to see how other protection features work.
+
+> [!NOTE]
+> The Defender for Endpoint demo site at demo.wd.microsoft.com is deprecated and will be removed in the future.
 
 ## Enable network protection in audit mode
 
@@ -49,16 +55,16 @@ Enable network protection in audit mode to see which IP addresses and domains wo
 
 2. Go to [https://smartscreentestratings2.net](https://smartscreentestratings2.net).
 
-The network connection will be allowed and a test message will be displayed.
-
-![Example notification that says Connection blocked: Your IT administrator caused Windows Security to block this network connection. Contact your IT help desk.](images/np-notif.png)
+    The network connection will be allowed and a test message will be displayed.
+    
+    :::image type="content" source="images/np-notif.png" alt-text="The connection blockage notification" lightbox="images/np-notif.png":::
 
 > [!NOTE]
 > Network connections can be successful even though a site is blocked by network protection. To learn more, see [Network protection and the TCP three-way handshake](network-protection.md#network-protection-and-the-tcp-three-way-handshake).
 
 ## Review network protection events in Windows Event Viewer
 
-To review apps that would have been blocked, open Event Viewer and filter for Event ID 1125 in the Microsoft-Windows-Windows-Defender/Operational log. The following table lists all network protection events.
+To review apps that would have been blocked, open Event Viewer and filter for Event ID 1125 in the Microsoft-Windows-Windows Defender/Operational log. The following table lists all network protection events.
 
 | Event ID | Provide/Source | Description |
 |---|---|---|

@@ -15,6 +15,7 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
+ms.custom: 
 description: Microsoft Defender for Office 365 E5 and P1 and P2 customers can now get a 360-degree view of each email with email entity page.
 ---
 # The Email entity page
@@ -29,13 +30,13 @@ Admins of Microsoft Defender for Office 365 E5, and Defender for Office P1 and P
 
 ## Reach the email entity page
 
-The email entity page is available in the Microsoft 365 Defender portal (<https://security.microsoft.com>) at **Email & collaboration** \> **Explorer**. Or, to go directly to the **Explorer** page, use <https://security.microsoft.com/threatexplorer>.
+The email entity page is available in the Microsoft 365 Defender portal at <https://security.microsoft.com> at **Email & collaboration** \> **Explorer**. Or, to go directly to the **Explorer** page, use <https://security.microsoft.com/threatexplorer>.
 
 In **Explorer**, select the subject of an email you're investigating. A gold bar will display at the top of the email fly-out for that mail. This invitation to the new page, reads 'Try out our new email entity page with enriched data...'. Select to view the new page.
 
-:::image type="content" source="../../media/email-entities-1-navigation-to-ee.png" alt-text="You'll see a gold banner with the words *Try out our new email entity page with enriched data* to navigate to the new experience.":::
+:::image type="content" source="../../media/email-entities-1-navigation-to-ee.png" alt-text="The gold banner with the words *Try out our new email entity page with enriched data* to navigate to the new experience" lightbox="../../media/email-entities-1-navigation-to-ee.png":::
 
-:::image type="content" source="../../media/email-entities-2-eep.png" alt-text="This graphic of the email entity page focuses on headings that you'll see. Note the email header is displayed here.":::
+:::image type="content" source="../../media/email-entities-2-eep.png" alt-text="The graphic of the email entity page that focuses on headings that you'll see" lightbox="../../media/email-entities-2-eep.png":::
 
 > [!NOTE]
 > The permissions needed to view and use this page are the same as to view **Explorer**. The admin must be a member of Global admin or global reader, or Security admin or Security Reader. For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
@@ -46,15 +47,15 @@ The structure is designed to be easy to read and navigate through at a glance. V
 
 1. The most required fields are on the left side of the fly-out. These details are 'sticky', meaning they're anchored to the left no matter the tab you navigate to in the rest of the fly-out.
 
-    :::image type="content" source="../../media/email-entities-3-left-panel.png" alt-text="Graphic of the email entity page with the left side highlighted. The title and facts about the mail delivery are over here.":::
+    :::image type="content" source="../../media/email-entities-3-left-panel.png" alt-text="The Graphic of the email entity page with the left side highlighted" lightbox="../../media/email-entities-3-left-panel.png":::
 
 2. On the top-right corner are the actions that can be taken on an email. Any actions that can be taken through **Explorer** will also be available through email entity page.
 
-    :::image type="content" source="../../media/email-entities-5-preview.png" alt-text="Graphic of the email entity page with the *right* side highlighted, this time. Actions like 'Email preview' and 'Go to quarantine' are here.":::
+    :::image type="content" source="../../media/email-entities-5-preview.png" alt-text="The Graphic of the email entity page with the right side highlighted" lightbox="../../media/email-entities-5-preview.png":::
 
 3. Deeper analysis can be done by sorting through the rest of the page. Check the email detection details, email authentication status, and header. This area should be looked on a case-by-case basis, but the info in these tabs is available for any email.
 
-    :::image type="content" source="../../media/email-entities-4-middle-panel.png" alt-text="The main panel of this page includes the email header and authentication status.":::
+    :::image type="content" source="../../media/email-entities-4-middle-panel.png" alt-text="The main panel of the page which includes the email header and authentication status" lightbox="../../media/email-entities-4-middle-panel.png":::
 
 ### Use email entity page tabs
 
@@ -83,7 +84,7 @@ These details are specific to email attachments and URLs. Users can see these de
 
 Users will see enriched detonation details for known malicious attachments or URLs found in their emails, which got detonated for their specific tenant. It will comprise of Detonation chain, Detonation summary, Screenshot, and Observed behavior details to help customers understand why the attachment or URL was deemed malicious and detonated.
 
-1. *Detonation chain*. A single file or URL detonation can trigger multiple detonations. The Detonation chain tracks the path of detonations, including the original malicious file or URL that caused the verdict, and all other files or URLs effected by the detonation. These URLs or attached files may not be directly present in the email, but including that analysis is important to determining why the file or URL was found to be malicious.  
+1. *Detonation chain*. A single file or URL detonation can trigger multiple detonations. The Detonation chain tracks the path of detonations, including the original malicious file or URL that caused the verdict, and all other files or URLs affected by the detonation. These URLs or attached files may not be directly present in the email, but including that analysis is important to determining why the file or URL was found to be malicious.  
 
     > [!NOTE]
     > This may show just the top level item if none of the entities linked to it were found to be problematic, or were detonated.
@@ -95,7 +96,7 @@ Users will see enriched detonation details for known malicious attachments or UR
 1. *Behavior Details* are an export that shows behavior details like exact events that took place during detonation, and observables that contain URLs, IPs, domains, and files that were found during detonation (and can either be problematic or benign). Be aware, there may be no behavior details for:
     - Container files like .zip or .rar that are holding other files.
 
-:::image type="content" source="../../media/email-entities-6-detonation-page.png" alt-text="Screenshot of the detonation summary showing the chain, summary, detonation details, and screenshot under the heading *Deep Analysis*.":::
+:::image type="content" source="../../media/email-entities-6-detonation-page.png" alt-text="The detonation summary showing the chain, summary, detonation details, and screenshot under the heading *Deep Analysis*" lightbox="../../media/email-entities-6-detonation-page.png":::
 
 ### Other innovations
 
@@ -105,7 +106,7 @@ Users will see enriched detonation details for known malicious attachments or UR
 
 *Email details*: Details required for a deeper understanding of email available in the *Analysis* tab.
 
-- *Exchange transport rules (also known as mail flow rules or ETRs)*: These rules are applied to a message at the transport layer and take precedence over phish and spam verdicts. These can be only created and modified in the Exchange admin center, but if any ETR applies to a message, the ETR name and GUID will be shown here. Valuable information for tracking purposes.
+- *Exchange transport rules (also known as mail flow rules or ETRs)*: These rules are applied to a message at the transport layer and take precedence over phish and spam verdicts. Mail flow rules are created and modified in the Exchange admin center at <https://admin.exchange.microsoft.com/#/transportrules>, but if any mail flow rule applies to a message, the rule name and GUID will be shown here. Valuable information for tracking purposes.
 
 - *System Overrides*: This is a means of making exceptions to the delivery location intended for a message by overriding the delivery location given by system (as per the threat and detection tech).
 
@@ -125,7 +126,7 @@ Users will see enriched detonation details for known malicious attachments or UR
 
 - Sender Policy Framework (**SPF**):  Describes results for SPF check for the message. Possible values can be:
   - Pass (IP address): The SPF check for the message passed and includes the sender's IP address. The client is authorized to send or relay email on behalf of the sender's domain.
-  - Fail (IP address): The SPF check for the message failed and includes the sender's IP address. This is sometimes called hard fail.
+  - Fail (IP address): The SPF check for the message failed, and includes the sender's IP address. This is sometimes called hard fail.
   - Softfail (reason): The SPF record designated the host as not being allowed to send but is in transition.
   - Neutral: The SPF record explicitly states that it does not assert whether the IP address is authorized to send.
   - None: The domain doesn't have an SPF record, or the SPF record doesn't evaluate to a result.
@@ -144,3 +145,47 @@ Users will see enriched detonation details for known malicious attachments or UR
   - None: Indicates that no DMARC TXT record exists for the sending domain in DNS.
 
 *Composite Authentication*: This is a value used by Microsoft 365 to combine email authentication like SPF, DKIM, and DMARC, to determine if the message is authentic. It uses the *From:* domain of the mail as the basis of evaluation.
+
+### Email summary panel
+
+The email summary panel is a summarized view of the full email entity page. It contains standardized details about the email (e.g., detections), as well as context-specific information (e.g., for Quarantine or Submissions metadata). The email summary panel replaces the traditional Real-time Detections, Threat Explorer, Submissions, and Reporting flyouts.
+
+> [!div class="mx-imgBorder"]
+> ![Open the email entity link.](../../media/open-email-entity-mdo.png)
+
+> [!NOTE]
+> To view all the components, click on the **Open email entity** link to open the full email entity page.  
+
+The email summary panel is divided into the following sections:  
+
+- *Delivery details*: Contains information about threats and corresponding confidence level, detection technologies, and original and latest delivery location.
+
+- *Email details*: Contains information about email properties like sender name, sender address, time received, authentication details, and other several other details.
+
+- *URLs*: By default, you will see 3 URLs and their corresponding threats. You can always click **View all URLs** to expand and see all URLs and export them.  
+
+- *Attachments*: By default, you will see 3 attachments. You can always click **View all attachments** to expand and see all attachments. 
+
+In addition to the above sections, you will also see sections specific to few experiences which are integrated with the summary panel: 
+
+- Submissions: 
+
+    - *Submission details*: Contains information about the specific submissions such as:
+        - Date submitted
+        - Subject
+        - Submission type
+        - Reason for submitting
+        - Submission ID
+        - Submitted by
+
+    - *Result details*: Messages that are submitted are reviewed. You can see the result of your submission as well as any recommended next steps.
+
+- Quarantine:  
+
+    - *Quarantine details*: Contains quarantine-specific details. For more information, see [Manage quarantined messages](manage-quarantined-messages-and-files.md#view-quarantined-message-details).
+
+        - Expires: The date/time when the message will be automatically and permanently deleted from quarantine.
+        - Released to: All email addresses (if any) to which the message has been released.
+        - Not yet released to: All email addresses (if any) to which the message has not yet been released.
+
+    - *Quarantine actions*: For more information on different quarantine actions, see [Manage quarantined messages](manage-quarantined-messages-and-files.md#take-action-on-quarantined-email).

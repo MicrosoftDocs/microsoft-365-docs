@@ -14,6 +14,7 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
 ---
@@ -48,7 +49,7 @@ Once the Event Hub namespace is created you will need to:
 
 ## Enable raw data streaming
 
-1. Log in to the [Microsoft 365 Defender security center](https://security.microsoft.com) as a ***Global Administrator*** or ***Security Administrator***.
+1. Log in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> as a ***Global Administrator*** or ***Security Administrator***.
 
 2. Go to the [Streaming API settings page](https://security.microsoft.com/settings/mtp_settings/raw_data_export).
 
@@ -64,7 +65,7 @@ Once the Event Hub namespace is created you will need to:
 
    To get your **Event Hub resource ID**, go to your Azure Event Hub namespace page on [Azure](https://ms.portal.azure.com/) > **Properties** tab > copy the text under **Resource ID**:
 
-   ![Image of Event Hub resource Id1.](../defender-endpoint/images/event-hub-resource-id.png)
+   :::image type="content" source="../defender-endpoint/images/event-hub-resource-id.png" alt-text="An Event Hub resource ID" lightbox="../defender-endpoint/images/event-hub-resource-id.png":::
 
 8. Go to the [Supported Microsoft 365 Defender event types in event streaming API](supported-event-types.md) to review the support status of event types in the Microsoft 365 Streaming API.
 
@@ -98,7 +99,7 @@ Once the Event Hub namespace is created you will need to:
 
 To get the data types for event properties do the following:
 
-1. Log in to [Microsoft 365 Defender portal](https://security.microsoft.com) and go to [Advanced Hunting page](https://security.microsoft.com/hunting-package).
+1. Log in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> and go to [Advanced Hunting page](https://security.microsoft.com/hunting-package).
 
 2. Run the following query to get the data types mapping for each event:
 
@@ -110,7 +111,7 @@ To get the data types for event properties do the following:
 
 - Here is an example for Device Info event:
 
-  ![Image of Event Hub resource Id2.](../defender-endpoint/images/machine-info-datatype-example.png)
+  :::image type="content" source="../defender-endpoint/images/machine-info-datatype-example.png" alt-text="An example query for device info" lightbox="../defender-endpoint/images/machine-info-datatype-example.png":::
 
 ## Related topics
 

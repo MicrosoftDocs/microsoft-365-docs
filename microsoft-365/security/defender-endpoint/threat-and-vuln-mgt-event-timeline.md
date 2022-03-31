@@ -2,8 +2,6 @@
 title: Event timeline in threat and vulnerability management
 description: Event timeline is a risk news feed that helps you interpret how risk is introduced into the organization, and which mitigations happened to reduce it.
 keywords: event timeline, Microsoft Defender for Endpoint event timeline, Microsoft Defender for Endpoint tvm event timeline, threat and vulnerability management, Microsoft Defender for Endpoint
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,9 +11,7 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-  - m365-security-compliance
-  - m365initiative-defender-endpoint
+ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
 ---
@@ -25,7 +21,7 @@ ms.technology: mde
 
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
@@ -51,18 +47,18 @@ In the threat and vulnerability management dashboard, hover over the Exposure sc
 
 If there are no events that affect your devices or your score for devices, then none will be shown.
 
-![Exposure score hover.](images/tvm-event-timeline-exposure-score350.png) 
-![Microsoft Secure Score for Devices hover.](images/tvm-event-timeline-device-hover360.png)
+:::image type="content" source="images/tvm-event-timeline-exposure-score350.png" alt-text="The Exposure score hover" lightbox="images/tvm-event-timeline-exposure-score350.png":::
+:::image type="content" source="images/tvm-event-timeline-device-hover360.png" alt-text="The Microsoft Secure Score for Devices hover" lightbox="images/tvm-event-timeline-device-hover360.png":::
 
 ### Drill down to events from that day
 
 Selecting **Show all events from this day** takes you to the Event timeline page with a custom date range for that day.
 
-![Event timeline selected custom date range.](images/tvm-event-timeline-drilldown.png)
+:::image type="content" source="images/tvm-event-timeline-drilldown.png" alt-text="The Event timeline page" lightbox="images/tvm-event-timeline-drilldown.png":::
 
 Select **Custom range** to change the date range to another custom one, or a pre-set time range.
 
-![Event timeline date range options.](images/tvm-event-timeline-dates.png)
+:::image type="content" source="images/tvm-event-timeline-dates.png" alt-text="The Event timeline date range options" lightbox="images/tvm-event-timeline-dates.png":::
 
 ## Event timeline overview
 
@@ -76,7 +72,7 @@ Features:
 
 The two large numbers at the top of the page show the number of new vulnerabilities and exploitable vulnerabilities, not events. Some events can have multiple vulnerabilities, and some vulnerabilities can have multiple events.
 
-![Event timeline page.](images/tvm-event-timeline-overview-mixed-type.png)
+:::image type="content" source="images/tvm-event-timeline-overview-mixed-type.png" alt-text="The Event timeline" lightbox="images/tvm-event-timeline-overview-mixed-type.png":::
 
 ### Columns
 
@@ -108,7 +104,7 @@ Once you select an event, a flyout will appear with a list of the details and cu
 
 The arrow below "score trend" helps you determine whether this event potentially raised or lowered your organizational exposure score. Higher exposure score means devices are more vulnerable to exploitation.
 
-![Event timeline flyout.](images/tvm-event-timeline-flyout500.png)
+:::image type="content" source="images/tvm-event-timeline-flyout500.png" alt-text="The Event timeline flyout" lightbox="images/tvm-event-timeline-flyout500.png":::
 
 From there, select **Go to related security recommendation** view the recommendation that addresses the new software vulnerability in the [security recommendations page](tvm-security-recommendation.md). After reading the description and vulnerability details in the security recommendation, you can submit a remediation request, and track the request in the [remediation page](tvm-remediation.md).
 
@@ -118,11 +114,11 @@ To open a software page, select an event > select the hyperlinked software name 
 
 A full page will appear with all the details of a specific software. Mouse over the graph to see the timeline of events for that specific software.
 
-![Software page with an Event timeline graph.](images/tvm-event-timeline-software2.png)
+:::image type="content" source="images/tvm-event-timeline-software2.png" alt-text="The software page with an Event timeline graph" lightbox="images/tvm-event-timeline-software2.png":::
 
 Navigate to the event timeline tab to view all the events related to that software. You can also see security recommendations, discovered vulnerabilities, installed devices, and version distribution.
 
-![Software page with an Event timeline tab.](images/tvm-event-timeline-software-pages.png)
+:::image type="content" source="images/tvm-event-timeline-software-pages.png" alt-text="The software page with an Event timeline tab" lightbox="images/tvm-event-timeline-software-pages.png":::
 
 ## Related topics
 

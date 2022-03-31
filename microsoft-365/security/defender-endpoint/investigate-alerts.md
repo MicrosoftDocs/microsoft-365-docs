@@ -13,7 +13,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
   - m365-security-compliance
-  - m365initiative-defender-endpoint
+  - m365-initiative-defender-endpoint
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
@@ -24,7 +24,8 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigatealerts-abovefoldlink)
@@ -46,7 +47,7 @@ Expand entities to view details at a glance. Selecting an entity will switch the
 > [!NOTE]
 > The alert story section may contain more than one alert, with additional alerts related to the same execution tree appearing before or after the alert you've selected.
 
-![An example of an alert story with an alert in focus and some expanded cards.](images/alert-story-tree.png)
+:::image type="content" source="images/alert-story-tree.png" alt-text="an alert story with an alert in focus and some expanded cards" lightbox="images/alert-story-tree.png":::
 
 ## Take action from the details pane
 
@@ -56,11 +57,11 @@ Once you're done investigating, go back to the alert you started with, mark the 
 
 If you classify it as a true alert, you can also select a determination, as shown in the image below.
 
-![A snippet of the details pane with a resolved alert and the determination drop-down expanded.](images/alert-details-resolved-true.png)
+:::image type="content" source="images/alert-details-resolved-true.png" alt-text="The details pane with a resolved alert and the determination drop-down expanded" lightbox="images/alert-details-resolved-true.png":::
 
 If you are experiencing a false alert with a line-of-business application, create a suppression rule to avoid this type of alert in the future.
 
-![actions and classification in the details pane with the suppression rule highlighted.](images/alert-false-suppression-rule.png)
+:::image type="content" source="images/alert-false-suppression-rule.png" alt-text="The actions and classification in the details pane with the suppression rule highlighted" lightbox="images/alert-false-suppression-rule.png":::
 
 > [!TIP]
 > If you're experiencing any issues not described above, use the 🙂 button to provide feedback or open a support ticket.

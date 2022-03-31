@@ -2,7 +2,6 @@
 title: Configure local overrides for Microsoft Defender Antivirus settings
 description: Enable or disable users from locally changing settings in Microsoft Defender AV.
 keywords: local override, local policy, group policy, gpo, lockdown,merge, lists
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: manage
@@ -13,7 +12,7 @@ author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
-ms.date: 09/14/2021
+ms.date: 10/18/2021
 ms.reviewer: 
 manager: dansimp
 ms.collection: M365-security-compliance
@@ -24,7 +23,8 @@ ms.collection: M365-security-compliance
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 By default, Microsoft Defender Antivirus settings that are deployed via a Group Policy Object to the endpoints in your network will prevent users from locally changing the settings. You can change this in some instances.
 

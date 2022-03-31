@@ -39,7 +39,7 @@ However, security needs to be balanced with productivity. This can include balan
 
 Microsoft 365 organizations with mailboxes in Exchange Online are protected by Exchange Online Protection (EOP). This protection includes:
 
-- Email with suspected malware will automatically be quarantined and recipients will be notified. See [Configure anti-malware policies in EOP](configure-anti-malware-policies.md).
+- Email with suspected malware will automatically be quarantined. Whether recipients are notified about quarantined malware messages is controlled by the quarantine policy and the settings in the anti-malware policy. For more information, see [Configure anti-malware policies in EOP](configure-anti-malware-policies.md).
 - Email identified as high confidence phishing will be handled according to the anti-spam policy action. See [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
 
 For more information about EOP, see [Exchange Online Protection overview](exchange-online-protection-overview.md).
@@ -72,7 +72,7 @@ To put it another way: as a security service, we're acting on your behalf to pre
 
 You should only consider using overrides in the following scenarios:
 
-- Phishing simulations: Simulated attacks can help you identify vulnerable users before a real attack impacts your organization.
-- Security/SecOps mailboxes: Dedicated mailboxes used by security teams to get unfiltered messages (both good and bad). Teams can then review to see if they contain malicious content.
-- Third-party filters: Secure by default does not apply when the domain's MX record does not point to Office 365.
+- Phishing simulations: Simulated attacks can help you identify vulnerable users before a real attack impacts your organization. To prevent phishing simulation messages from being filtered, see [Configure third-party phishing simulations in the advanced delivery policy](/microsoft-365/security/office-365-security/configure-advanced-delivery#use-the-microsoft-365-defender-portal-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy).
+- Security/SecOps mailboxes: Dedicated mailboxes used by security teams to get unfiltered messages (both good and bad). Teams can then review to see if they contain malicious content. For more information, see [Configure SecOps mailboxes in the advanced delivery policy](/microsoft-365/security/office-365-security/configure-advanced-delivery#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy).
+- Third-party filters: Secure by default only applies when the MX record for your domain is set to Exchange Online Protection (contoso.mail.protection.outlook.com). If it’s set to another service or device, it is possible to override Secure by default with a [Transport Rule](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl) to bypass all spam filtering. When Microsoft detects messages as High Confidence Phish with this rule in place, they still deliver to the Inbox. 
 - False positives: You might want to temporarily allow certain messages that are still being analyzed by Microsoft [via Admin submissions](admin-submission.md). As with all overrides, it is recommended that they are temporary.

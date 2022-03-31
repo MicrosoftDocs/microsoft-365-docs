@@ -17,6 +17,8 @@ ms.custom:
 - okr_smb
 - AdminSurgePortfolio
 - AdminTemplateSet
+- adminvideo
+- business_assist
 search.appverid:
 - MET150
 description: "Each team member needs a user account before they can sign in and access Microsoft 365 for business. Learn how to add users and assign licenses."
@@ -27,38 +29,12 @@ ms.date: 07/01/2020
 
 The people on your team each need a user account before they can sign in and access [Microsoft 365 for business](https://www.microsoft.com/microsoft-365/business). The easiest way to add user accounts is to add them one at a time in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. After you do this step, your users have Microsoft 365 licenses, sign in credentials, and Microsoft 365 mailboxes.
 
+> [!TIP]
+> If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
+
 ## Before you begin
 
 You must be a global, license, or a user admin to add users and assign licenses. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
-
-## Add a user in the admin simplified view
-
-If you're seeing this page in the admin center, you're on the **admin simplified view**. Follow the steps below to add a user.
-
-:::image type="content" source="../../media/vsb-add-user-view.png" alt-text="Screenshot: Simplified admin center view":::
-
-::: moniker range="o365-worldwide"
-
-1. Go to the admin center at <https://admin.microsoft.com>.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a>.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a>.
-
-::: moniker-end 
-
-2. Select **Create an account for another person**.
-3. On the **Add a user account** page, fill in the first and last name, display name, and username they'll use to sign in.
-4. Add the email address of the user in the **Up to 5 email addresses...** text box. This will make sure the new user gets the information they need to sign into Microsoft 365 services.
-5. Select **Add user** and **Download sign-in info** if you want to save this info.
 
 ## Watch: Add users in the dashboard view
 
@@ -74,12 +50,6 @@ If you're seeing this page in the admin center, you're on the **admin simplified
 ::: moniker range="o365-worldwide"
 
 1. Go to the admin center at <https://admin.microsoft.com>.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a>.
 
 ::: moniker-end
 
@@ -100,6 +70,29 @@ If you're seeing this page in the admin center, you're on the **admin simplified
 5. In the **Optional settings** pane, expand **Roles** to make this user an admin. Expand **Profile info** to add additional information about the user.
 6. Select **Next**, review your new user's settings, make any changes you like, then select **Finish adding**, then **Close**.
 
+## Add a user in the admin simplified view
+
+If you're seeing this page in the admin center, you're on the **admin simplified view**. Follow the steps below to add a user.
+
+:::image type="content" source="../../media/vsb-add-user-view.png" alt-text="Screenshot: Simplified admin center view":::
+
+::: moniker range="o365-worldwide"
+
+1. Go to the admin center at <https://admin.microsoft.com>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a>.
+
+::: moniker-end 
+
+2. Select **Create an account for another person**.
+3. On the **Add a user account** page, fill in the first and last name, display name, and username they'll use to sign in.
+4. Add the email address of the user in the **Up to 5 email addresses...** text box. This will make sure the new user gets the information they need to sign into Microsoft 365 services.
+5. Select **Add user** and **Download sign-in info** if you want to save this info.
+
 ## Add multiple users at the same time
 
 You can use any of the following methods to add multiple users at the same time:
@@ -111,7 +104,7 @@ You can use any of the following methods to add multiple users at the same time:
 
 ## Next steps
 
-After you add a user, you get an email notification from Microsoft. The email contains the person's user ID and password so they can sign in to Microsoft 365. Use your normal process for communicating new passwords. Share the [Employee quickstart guide](../../business-video/employee-quick-setup.md) with your new users to set up things, like how to [download and install Office apps on a PC or Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) and how to [set up Office apps and email on a mobile device](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f).
+After you add a user, you get an email notification from Microsoft. The email contains the person's user ID and password so they can sign in to Microsoft 365. Use your normal process for communicating new passwords. Share the [Employee quickstart guide](../setup/employee-quick-setup.md) with your new users to set up things, like how to [download and install Office apps on a PC or Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) and how to [set up Office apps and email on a mobile device](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f).
 
 ## Related content
 

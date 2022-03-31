@@ -28,7 +28,7 @@ ms.prod: m365-security
 
 <br>
 
-|[![Phase 1: Prepare.](../../media/phase-diagrams/prepare.png)](migrate-to-defender-for-office-365-prepare.md) <br> [Phase 1: Prepare](migrate-to-defender-for-office-365-prepare.md)|![Phase 2: Set up.](../../media/phase-diagrams/setup.png) <br> Phase 2: Set up|[![Phase 3: Onboard.](../../media/phase-diagrams/onboard.png)](migrate-to-defender-for-office-365-onboard.md) <br> [Phase 3: Onboard](migrate-to-defender-for-office-365-onboard.md)|
+|[![Phase 1: Prepare.](../../media/phase-diagrams/prepare.png#lightbox)](migrate-to-defender-for-office-365-prepare.md) <br> [Phase 1: Prepare](migrate-to-defender-for-office-365-prepare.md)|![Phase 2: Set up.](../../media/phase-diagrams/setup.png) <br> Phase 2: Set up|[![Phase 3: Onboard.](../../media/phase-diagrams/onboard.png#lightbox)](migrate-to-defender-for-office-365-onboard.md) <br> [Phase 3: Onboard](migrate-to-defender-for-office-365-onboard.md)|
 |---|---|---|
 ||*You are here!*||
 
@@ -99,7 +99,7 @@ The SCL=-1 mail flow rule is important during the migration for the following re
 
   Before or during the cutover of your MX record to Microsoft 365, you'll disable this rule to turn on the full protection of the Microsoft 365 protection stack for all recipients in your organization.
 
-For more information, see [Use mail flow rules to set the spam confidence level (SCL) in messages in Exchange Online](https://docs.microsoft.comexchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
+For more information, see [Use mail flow rules to set the spam confidence level (SCL) in messages in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
 
 **Notes**:
 
@@ -116,7 +116,7 @@ For more information, see [Use mail flow rules to set the spam confidence level 
 
 The first thing to do is configure [Enhanced Filtering for Connectors](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) (also known as *skip listing*) on the connector that's used for mail flow from your existing protection service into Microsoft 365. You can use the [Inbound messages report](/exchange/monitoring/mail-flow-reports/mfr-inbound-messages-and-outbound-messages-reports) to help identify the connector.
 
-Enhanced Filtering for Connectors is required by Defender for Office 365 to see where internet messages actually came from. Enhanced Filtering for Connectors greatly improves the accuracy of the Microsoft filtering stack (especially [spoof intelligence](anti-spoofing-protection.md)), as well as post-breach capabilities in [Threat Explorer](threat-explorer.md) and [Automated Investigation & Response (AIR)](automated-investigation-response-office.md).
+Enhanced Filtering for Connectors is required by Defender for Office 365 to see where internet messages actually came from. Enhanced Filtering for Connectors greatly improves the accuracy of the Microsoft filtering stack (especially [spoof intelligence](anti-spoofing-protection.md), as well as post-breach capabilities in [Threat Explorer](threat-explorer.md) and [Automated Investigation & Response (AIR)](automated-investigation-response-office.md).
 
 To correctly enable Enhanced Filtering for Connectors, you need to add the **public** IP addresses of \*\***all\*\*** third-party services and/or on-premises email system hosts that route inbound mail to Microsoft 365.
 

@@ -25,26 +25,29 @@ description: "Microsoft 365 Endpoint data loss prevention extends monitoring of 
 
 You can use Microsoft 365 data loss prevention (DLP) to monitor the actions that are being taken on items you've determined to be sensitive and to help prevent the unintentional sharing of those items. For more information on DLP, see [Learn about data loss prevention](dlp-learn-about-dlp.md).
 
-**Endpoint data loss prevention** (Endpoint DLP) extends the activity monitoring and protection capabilities of DLP to sensitive items that are physically stored on Windows 10 and macOS (Catalina 10.15 and higher) devices. Once devices are onboarded into the Microsoft 365 compliance solutions, the information about what users are doing with sensitive items is made visible in [activity explorer](data-classification-activity-explorer.md) and you can enforce protective actions on those items via [DLP policies](create-test-tune-dlp-policy.md).
+**Endpoint data loss prevention** (Endpoint DLP) extends the activity monitoring and protection capabilities of DLP to sensitive items that are physically stored on Windows 10, Windows 11, and macOS (Catalina 10.15 and higher) devices. Once devices are onboarded into the Microsoft 365 compliance solutions, the information about what users are doing with sensitive items is made visible in [activity explorer](data-classification-activity-explorer.md) and you can enforce protective actions on those items via [DLP policies](create-test-tune-dlp-policy.md).
 
 > [!TIP]
 > If you are looking for device control for removable storage, see [Microsoft Defender for Endpoint Device Control Removable Storage Access Control](../security/defender-endpoint/device-control-removable-storage-access-control.md#microsoft-defender-for-endpoint-device-control-removable-storage-access-control).
 
+> [!NOTE]
+> In Microsoft 365 Compliance, DLP policy evaluation of sensitive items occurs centrally, so there is no time lag for policies and policy updates to be distributed to individual devices. When a policy is updated in compliance center, it generally takes about an hour for those updates to be synchronized across the service. Once policy updates are synchronized, items on targeted devices are automatically re-evaluated the next time they are accessed or modified.
+
 ## Endpoint activities you can monitor and take action on
 
-Microsoft Endpoint DLP enables you to audit and manage the following types of activities users take on sensitive items that are physically stored Windows 10 devices or macOS devices.
+Microsoft Endpoint DLP enables you to audit and manage the following types of activities users take on sensitive items that are physically stored Windows 10, Windows 11, or macOS devices.
 
-|Activity |Description  | Auditable/restrictable|
-|---------|---------|---------|
-|upload to cloud service, or access by unallowed browsers    | Detects when a user attempts to upload an item to a restricted service domain or access an item through a browser.  If they are using a browser that is listed in DLP as an being an unallowed browser, the upload activity will be blocked and the user is redirected to use Edge Chromium. Edge Chromium will then either allow or block the upload or access based on the DLP policy configuration         |auditable and restrictable|
-|copy to other app    |Detects when a user attempts to copy information from a protected item and then paste it into another app, process or item. Copying and pasting information within the same app, process, or item is not detected by this activity.         | auditable and restrictable|
-|copy to USB removable media |Detects when a user attempts to copy an item or information to removable media or USB device.         | auditable and restrictable|
-|copy to a network share    |Detects when a user attempts to copy an item to a network share or mapped network drive         |auditable and restrictable|
-|print a document    |Detects when a user attempts to print a protected item to a local or network printer.| auditable and restrictable         |
-|copy to a remote session|Detects when a user attempts to copy an item to a remote desktop session |  auditable and restrictable|
-|copy to a Bluetooth device|Detects when a user attempts to copy an item to an unallowed Bluetooth app (as defined in the list of unallowed Bluetooth aps in Endpoint DLP settings).| auditable and restrictable|
-|create an item|Detects when a user creates an item| auditable|
-|rename an item|Detects when a user renames an item| auditable|
+|Activity |Description  |Windows 10 1809 and later/ Windows 11| macOS Catalina 10.15 (preview) | Auditable/restrictable|
+|---------|---------|---------|---------|---------|
+|upload to cloud service, or access by unallowed browsers    | Detects when a user attempts to upload an item to a restricted service domain or access an item through a browser.  If they are using a browser that is listed in DLP as an unallowed browser, the upload activity will be blocked and the user is redirected to use Microsoft Edge . Microsoft Edge will then either allow or block the upload or access based on the DLP policy configuration         |supported | supported|auditable and restrictable|
+|copy to other app    |Detects when a user attempts to copy information from a protected item and then paste it into another app, process or item. Copying and pasting information within the same app, process, or item is not detected by this activity.|supported|supported         | auditable and restrictable|
+|copy to USB removable media |Detects when a user attempts to copy an item or information to removable media or USB device.|supported|supported         | auditable and restrictable|
+|copy to a network share    |Detects when a user attempts to copy an item to a network share or mapped network drive |supported|supported         |auditable and restrictable|
+|print a document    |Detects when a user attempts to print a protected item to a local or network printer.|supported|supported|auditable and restrictable         |
+|copy to a remote session|Detects when a user attempts to copy an item to a remote desktop session |supported|not supported|  auditable and restrictable|
+|copy to a Bluetooth device|Detects when a user attempts to copy an item to an unallowed Bluetooth app (as defined in the list of unallowed Bluetooth aps in Endpoint DLP settings).|supported|not supported| auditable and restrictable|
+|create an item|Detects when a user creates an item|supported | |auditable|
+|rename an item|Detects when a user renames an item|supported | |auditable|
 
 ## Monitored files
 
@@ -73,8 +76,33 @@ If you only want monitoring data from policy matches, you can turn off the **Alw
 > [!TIP]
 > To ensure activities are audited for all supported file types, create a [custom DLP policy](create-test-tune-dlp-policy.md).
 
-
 Endpoint DLP monitors activity-based on MIME type, so activities will be captured even if the file extension is changed.
+
+### File types (preview)
+
+File Types are a grouping of file formats which are utilized to protect specific workflows or areas of business. You can use one or more File types as conditions in your DLP policies.
+
+|File Type |App  |monitored file extensions  |
+|---------|---------|---------|
+|word processing |Word, PDF | .doc, .docx,  .docm, .dot, .dotx, .dotm, .docb, .pdf |
+|spreadsheet    |Excel, CSV, TSV |.xls, .xlsx, .xlt, .xlm, .xlsm, .xltx, .xltm, .xlsb, .xlw, .csv, .tsv         |
+|presentation |PowerPoint|.ppt, .pptx, .pos, .pps, .pptm, .potx, .potm, .ppam, .ppsx|
+|archive  |file archive and compression tools | .zip, .zipx, .rar, .7z, .tar, .gz        |
+|email    |Outlook |.pst, .ost, .msg         |
+
+### File extensions (preview)
+
+If the File types don't cover the file extensions you need to list as a condition in a policy, you can use file extensions separated by comma instead.
+
+> [!IMPORTANT]
+> The file extensions and file types options cannot be used as conditions in the same rule. If you want to use them as conditions in the same policy, they must be in separate rules. 
+
+> [!IMPORTANT]
+> These Windows versions support File types and File extension features:
+>- Windows 10 versions 20H1/20H2/21H1 (KB 5006738)
+>- Windows 10 versions 19H1/19H2 (KB 5007189)
+>- Windows 10 RS5 (KB 5006744)
+
 
 ## What's different in Endpoint DLP
 
@@ -100,7 +128,7 @@ Onboarding and offboarding are handled via scripts you download from the Device 
 
  Use the procedures in [Getting started with Microsoft 365 Endpoint DLP](endpoint-dlp-getting-started.md) to onboard devices.
 
-If you have onboarded devices through [Microsoft Defender for Endpoint](/windows/security/threat-protection/), those devices will automatically show up in the list of devices.
+If you have onboarded devices through [Microsoft Defender for Endpoint](/windows/security/threat-protection/), those devices will automatically show up in the list of devices. You can **Turn on device monitoring** to use endpoint DLP.
 
 > [!div class="mx-imgBorder"]
 > ![managed devices list.](../media/endpoint-dlp-learn-about-2-device-list.png)
@@ -158,8 +186,10 @@ For example, if a file is copied to removable USB media, you'd see these attribu
 
 Now that you've learned about Endpoint DLP, your next steps are:
 
-1. [Getting started with Microsoft Endpoint data loss prevention](endpoint-dlp-getting-started.md)
-2. [Using Microsoft Endpoint data loss prevention](endpoint-dlp-using.md)
+1. [Onboard Windows 10 or Windows 11 devices into Microsoft 365 overview](device-onboarding-overview.md)
+1. [Onboard macOS devices into Microsoft 365 overview (preview)](device-onboarding-macos-overview.md)
+1. [Configure endpoint data loss prevention settings](dlp-configure-endpoint-settings.md)
+1. [Using Microsoft Endpoint data loss prevention](endpoint-dlp-using.md)
 
 ## See also
 

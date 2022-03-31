@@ -13,7 +13,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
   - m365-security-compliance
-  - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
 ---
@@ -23,7 +22,8 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -104,7 +104,7 @@ The following code shows the schema you need to use to schedule a quick scan.
             <key>Hour</key>
             <integer>2</integer>
             <key>Minute</key>
-            <integer>0</integer>
+            <integer>50</integer>
             <key>Weekday</key>
             <integer>5</integer>
         </dict>
@@ -126,10 +126,14 @@ The following code shows the schema you need to use to schedule a quick scan.
     launchctl start <your file name>
     ```
 
-3. Your scheduled scan will run at the date, time, and frequency you defined in your p-list. In the examples above, the scan runs at 2:00 AM every Friday. 
+3. Your scheduled scan will run at the date, time, and frequency you defined in your p-list. In the previous examples, the scan runs at 2:50 AM every Friday. 
 
-    The `Weekday` value of `StartCalendarInterval` uses an integer to indicate the fifth day of the week, or Friday.
-
+    - The `Weekday` value of `StartCalendarInterval` uses an integer to indicate the fifth day of the week, or Friday. The range is between 0 and 7 with 7 representing Sunday.
+    - The `Day` value of `StartCalendarInterval` uses an integer to indicate the third day of the month. The range is between 1 and 31.
+    - The `Hour` value of `StartCalendarInterval` uses an integer to indicate the second hour of the day. The range is between 0 and 24.
+    The `Minute` value of `StartCalendarInterval` uses an integer to indicate fifty minutes of the hour. The range is between 0 and 59.
+    
+    
  > [!IMPORTANT]
  > Agents executed with *launchd* will not run at the scheduled time while the device is asleep. They will instead run once the device resumes from sleep mode.
  >

@@ -25,7 +25,7 @@ In Microsoft 365, you implement data loss prevention by defining and applying DL
 
 - Microsoft 365 services such as Teams, Exchange, SharePoint, and OneDrive
 - Office applications such as Word, Excel, and PowerPoint
-- Windows 10 endpoints
+- Windows 10, Windows 11 and macOS (Catalina 10.15 and higher) endpoints
 - non-Microsoft cloud apps
 - on-premises file shares and on-premises SharePoint.
 
@@ -64,7 +64,7 @@ Microsoft 365 DLP monitoring and protection are native to the applications that 
 
 **Technology planning for DLP**
 
-Keep in mind that DLP as a technology can monitor and protect your data at rest, data in use and data in motion across Microsoft 365 services, Windows 10 devices, on-premises file shares, and on-premises SharePoint. There are planning implications for the different locations, the type of data you want to monitor and protect, and the actions to be taken when a policy match occurs.
+Keep in mind that DLP as a technology can monitor and protect your data at rest, data in use and data in motion across Microsoft 365 services, Windows 10, Windows 11, and macOS (Catalina 10.15 and higher) devices, on-premises file shares, and on-premises SharePoint. There are planning implications for the different locations, the type of data you want to monitor and protect, and the actions to be taken when a policy match occurs.
 
 **Business processes planning for DLP**
 
@@ -85,8 +85,9 @@ You can apply DLP policies to data at rest, data in use, and data in motion in l
 - OneDrive accounts
 - Teams chat and channel messages
 - Microsoft Cloud App Security
-- Windows 10 devices
+- Windows 10, Windows 11, and macOS (Catalina 10.15 and higher) devices
 - On-premises repositories
+- PowerBI sites
 
 Each one has different pre-requisites. Sensitive items in some locations, like Exchange online, can be brought under the DLP umbrella by just configuring a policy that applies to them. Others, such as on-premises file repositories require a deployment of Azure Information Protection (AIP) scanner. You'll need to prepare your environment, code draft policies, and test them thoroughly before activating any blocking actions.
 
@@ -137,12 +138,12 @@ location | include/exclude by|
 |Exchange email| distribution groups|
 |SharePoint sites |sites |
 |OneDrive accounts |accounts or distribution groups |
-|Teams chat and channel messages |accounts |
-|Windows 10 devices |user or group |
+|Teams chat and channel messages |account or distribution group |
+|Windows 10, Windows 11, and macOS (Catalina 10.15 and higher)  devices |user or group |
 |Microsoft Cloud App Security |instance |
 |On-premises repositories| repository file path|
 
-3. **Choose the conditions that must be matched for a policy to be applied to an item** - you can accept pre-configured conditions or define custom conditions. Some examples are:
+3. **Choose the conditions that must be matched for a policy to be applied to an item** - You can accept pre-configured conditions or define custom conditions. Some examples are:
 
 - item contains a specified kind of sensitive information that is being used in a certain context. For example, 95 social security numbers being emailed to recipient outside your org.
 - item has a specified sensitivity label
@@ -152,7 +153,7 @@ location | include/exclude by|
 
 - SharePoint/Exchange/OneDrive: Block people who are outside your organization form accessing the content. Show the user a tip and send them an email notification that they are taking an action that is prohibited by the DLP policy.
 - Teams Chat and Channel: Block sensitive information from being shared in the chat or channel
-- Windows 10 Devices: Audit or restrict copying a sensitive item to a removeable USB device
+- Windows 10, Windows 11, and macOS (Catalina 10.15 and higher)  Devices: Audit or restrict copying a sensitive item to a removeable USB device
 - Office Apps: Show a popup notifying the user that they are engaging in a risky behavior and block or block but allow override.
 - On-premises file shares: move the file from where it is stored to a quarantine folder
 
@@ -214,3 +215,7 @@ To learn more about Microsoft 365 DLP, see:
 - [Learn about the data loss prevention Alerts dashboard](dlp-alerts-dashboard-learn.md)
 
 To learn how to use data loss prevention to comply with data privacy regulations, see [Deploy information protection for data privacy regulations with Microsoft 365](../solutions/information-protection-deploy.md)  (aka.ms/m365dataprivacy).
+
+## Licensing and Subscriptions
+
+See the [licensing requirements for Information Protection](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection) for details on the subscriptions that support DLP.

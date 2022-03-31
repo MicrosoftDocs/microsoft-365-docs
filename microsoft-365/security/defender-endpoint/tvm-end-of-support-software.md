@@ -2,8 +2,6 @@
 title: Plan for end-of-support software and software versions
 description: Discover and plan for software and software versions that are no longer supported and won't receive security updates.
 keywords: threat and vulnerability management, Microsoft Defender for Endpoint tvm security recommendation, cybersecurity recommendation, actionable security recommendation
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -25,7 +23,7 @@ ms.technology: mde
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Threat and vulnerability management](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -43,11 +41,11 @@ It's crucial for Security and IT Administrators to work together and ensure that
 1. From the threat and vulnerability management menu, navigate to [**Security recommendations**](tvm-security-recommendation.md).
 2. Go to the **Filters** panel and look for the tags section. Select one or more of the EOS tag options. Then **Apply**.
 
-    ![Screenshot tags that say EOS software, EOS versions, and Upcoming EOS versions.](images/tvm-eos-tag.png)
+   :::image type="content" source="images/tvm-eos-tag.png" alt-text="The EOS software, EOS versions, and Upcoming EOS versions" lightbox="images/tvm-eos-tag.png":::
 
 3. You'll see a list of recommendations related to software with ended support, software versions that are end of support, or versions with upcoming end of support. These tags are also visible in the [software inventory](tvm-software-inventory.md) page.
 
-    ![Recommendations with EOS tag.](images/tvm-eos-tags-column.png)
+   :::image type="content" source="images/tvm-eos-tags-column.png" alt-text="The Recommendations with EOS tag" lightbox="images/tvm-eos-tags-column.png":::
 
 ## List of versions and dates
 
@@ -55,15 +53,15 @@ To view a list of versions that have reached end of support, or end or support s
 
 1. A message will appear in the security recommendation flyout for software with versions that have reached end of support, or will reach end of support soon.
 
-    ![Screenshot of version distribution link.](images/eos-upcoming-eos.png)
+   :::image type="content" source="images/eos-upcoming-eos.png" alt-text="The version distribution link" lightbox="images/eos-upcoming-eos.png":::
 
 2. Select the **version distribution** link to go to the software drill-down page. There, you can see a filtered list of versions with tags identifying them as end of support, or upcoming end of support.
 
-    ![Screenshot of software drilldown page with end of support software.](images/software-drilldown-eos.png)
+   :::image type="content" source="images/software-drilldown-eos.png" alt-text="The software drilldown page with details of the end of support software" lightbox="images/software-drilldown-eos.png":::
 
 3. Select one of the versions in the table to open. For example, version 10.0.18362.1. A flyout will appear with the end of support date.
 
-    ![Screenshot of end of support date.](images/version-eos-date.png)
+   :::image type="content" source="images/version-eos-date.png" alt-text="The display of the end of support date" lightbox="images/version-eos-date.png":::
 
 Once you identify which software and software versions are vulnerable due to their end-of-support status, you must decide whether to update or remove them from your organization. Doing so will lower your organizations exposure to vulnerabilities and advanced persistent threats.
 

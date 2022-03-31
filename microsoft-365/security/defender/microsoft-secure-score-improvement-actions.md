@@ -11,7 +11,9 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- M365-security-compliance
+- m365initiative-m365-defender
 ms.topic: article
 search.appverid: 
 - MOE150
@@ -32,14 +34,14 @@ To help you find the information you need more quickly, Microsoft improvement ac
 
 - Identity (Azure Active Directory accounts & roles)
 - Device (Microsoft Defender for Endpoint, known as [Microsoft Secure Score for Devices](/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices))
-- Apps (email and cloud apps, including Office 365 and Microsoft Cloud App Security)
+- Apps (email and cloud apps, including Office 365 and Microsoft Defender for Cloud Apps)
 
 >[!NOTE]
 >In the recent release of Microsoft Secure Score, an improved scoring model has been released which made Microsoft Secure Score temporarily incompatible with Identity Secure Score and the Graph API. [View details](microsoft-secure-score-whats-new.md)
 
 In the Microsoft Secure Score overview page, view how points are split between these groups and what points are available. You can also get an all-up view of the total score, historical trend of your secure score with benchmark comparisons, and prioritized improvement actions that can be taken to improve your score.
 
-![Secure Score homepage.](../../media/secure-score/secure-score-home-page.png)
+:::image type="content" source="../../media/secure-score/secure-score-home-page.png" alt-text="The Secure Score homepage in the Microsoft 365 Defender portal" lightbox="../../media/secure-score/secure-score-home-page.png":::
 
 ## Check your current score
 
@@ -55,7 +57,7 @@ The following are scores you can add to your view of your overall score to give 
 
 This view is what it will look like if you've included all possible score views:
 
-![Your secure score including planned score, current license score, and achievable score.](../../media/secure-score/secure-score-achievable.png)
+:::image type="content" source="../../media/secure-score/secure-score-achievable.png" alt-text="Your secure score including planned score, current license score, and achievable score in the Microsoft 365 Defender portal" lightbox="../../media/secure-score/secure-score-achievable.png":::
 
 ## Take action to improve your score
 
@@ -69,11 +71,11 @@ Ranking is based on the number of points left to achieve, implementation difficu
 
 When you select a specific improvement action, a full page flyout appears.  
 
-![Improvement action flyout example.](../../media/secure-score/secure-score-improvement-action-details.png)
+:::image type="content" source="../../media/secure-score/secure-score-improvement-action-details.png" alt-text="The flyout of an improvement action in the Microsoft 365 Defender portal" lightbox="../../media/secure-score/secure-score-improvement-action-details.png":::
 
 To complete the action, you have a few options:
 
-- Select **Manage** to go the configuration screen and make the change. You'll then gain the points that the action is worth, visible in the fly out. Points generally take about 24 hours to update.
+- Select **Manage in Microsoft 365 Defender** to go to the configuration screen and make the change. You'll then gain the points that the action is worth, visible in the flyout. Points generally take about 24 hours to update.
 
 - Select **Share** to copy the direct link to the improvement action. You can also choose the platform to share the link, such as email, Microsoft Teams, or Microsoft Planner.
 
@@ -90,7 +92,7 @@ Choose any statuses and record notes specific to the improvement action.
 
 #### Threat & vulnerability management improvement actions
 
-For improvement actions in the "Device" category, you can't choose statuses. Instead, you'll be directed to the associated [threat and vulnerability management security recommendation](/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation) in the [Microsoft Defender Security Center](/windows/security/threat-protection/microsoft-defender-atp/use) to take action. The exception you choose and justification you write will be specific to that portal. It won't be present in the Microsoft Secure Score portal.
+For improvement actions in the "Device" category, you can't choose statuses. Instead, you'll be directed to the associated [threat and vulnerability management security recommendation](/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation) in the Microsoft 365 Defender to take action. The exception you choose and justification you write will be specific to that portal. It won't be present in the Microsoft Secure Score portal.
 
 #### Completed improvement actions
 

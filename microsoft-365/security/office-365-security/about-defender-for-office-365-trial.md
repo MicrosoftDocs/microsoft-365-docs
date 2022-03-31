@@ -17,14 +17,14 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
-ROBOTS: NOINDEX
+ROBOTS: NOINDEX, NOFOLLOW
 description: "Admins can learn about the trial mode of Microsoft Defender for Office 365"
 ---
 
 # About the Microsoft Defender for Office 365 trial
 
 > [!IMPORTANT]
-> Get started quickly with our easy to use [Microsoft Defender for Office 365 playbook](https://download.microsoft.com/download/8/8/8/888e96ce-eb6a-487a-babc-a7e4ae1cd151/MDO%20Trial%20Playbook.pdf). This playbook will help you make the most of your free trial by showing you how to safeguard your organization with Microsoft Defender for Office 365.
+> Get started quickly with our easy to use [Trial playbook for Microsoft Defender for Office 365](trial-playbook-defender-for-office-365.md). This playbook will help you make the most of your free trial by showing you how to safeguard your organization with Microsoft Defender for Office 365.
 
 Microsoft Defender for Office 365 safeguards your organization against malicious threats that are posed by email messages, links (URLs), and collaboration tools. Defender for Office 365 includes:
 
@@ -34,10 +34,6 @@ Microsoft Defender for Office 365 safeguards your organization against malicious
 - **Automated investigation and response capabilities**: Save time and effort investigating and mitigating threats.
 
 A Microsoft Defender for Office 365 trial is an easy way to try out the capabilities of Defender for Office 365 Plan 2 for free, after only a few clicks. These high level capabilities are described in the following table:
-
-<br>
-
-****
 
 |Feature|Description|
 |---|---|
@@ -51,19 +47,21 @@ A Microsoft Defender for Office 365 trial is an easy way to try out the capabili
 |[Campaign Views](campaigns.md)<sup>\*</sup>|Investigate and respond to large-scale malicious email activity.|
 |[Reports using Defender for Office 365 capabilities](view-reports-for-mdo.md)|View reports including threat protection status, URL threat protection, mail latency, and more.|
 |[Priority account protection](/microsoft-365/admin/setup/priority-accounts)<sup>\*</sup>|Users that you identify as Priority accounts are tagged in alerts, reports, and investigations so they stand out. You can also use the Priority tag in filters.|
-|
 
 <sup>\*</sup> This feature is exclusive to Defender for Office 365 Plan 2.
 
 ## Set up a Defender for Office 365 trial
 
-A trial allows organizations to easily set up and configure the Defender for Office 365 capabilities. During setup, policies that are exclusive to Defender for Office 365 (specifically, [Safe Attachments for email messages](safe-attachments.md), [Safe Links for email messages and Microsoft Teams](safe-links.md), and [impersonation protection in anti-spam policies](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)) are applied using the Standard template for [preset security policies](preset-security-policies.md).
+A trial allows organizations to easily set up and configure the Defender for Office 365 capabilities. During setup, policies that are exclusive to Defender for Office 365 (specifically, [Safe Attachments for email messages](safe-attachments.md), [Safe Links for email messages and Microsoft Teams](safe-links.md), and [impersonation protection in anti-phishing policies](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)) are applied using the Standard template for [preset security policies](preset-security-policies.md).
 
 By default, these policies are scoped to all users in the organization, but during or after the setup of the trial, you can change the policy assignment to specific users.
 
+> [!NOTE]
+> Your existing anti-spam policies are likely configured with the action **Move message to Junk Email folder** for the high confidence spam verdict in anti-spam policies. The Standard template for preset security policies uses the action **Quarantine message** for high confidence spam, and preset security policies are always applied before custom anti-spam policies or the default anti-spam policy. For more information about default, Standard, and Strict settings, see [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md).
+
 Other workloads are also available for protection (for example, [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](mdo-for-spo-odb-and-teams.md) and [Safe Links for supported Office 365 apps](safe-links.md#safe-links-settings-for-office-365-apps).
 
-During the setup of the trial, response functionality that's exclusive to Defender for Office 365 Plan 2 (for example, [AIR](office-365-air.md) and [Threat Explorer](threat-explorer.md)) is also set up for the entire organization. No policy scoping is required.
+During the setup of the trial, response functionality that's exclusive to Defender for Office 365 Plan 2 (for example, [AIR](office-365-air.md) and [Threat Explorer](threat-explorer.md) is also set up for the entire organization. No policy scoping is required.
 
 ## Licensing
 
@@ -71,7 +69,7 @@ As part of the trial setup, the Defender for Office 365 licenses are automatical
 
 The licensing card for the trial shows the following information:
 
-![The Licensing card in the Microsoft Defender for Office 365 trial.](../../media/mdo-trial-licensing-card.png)
+:::image type="content" source="../../media/mdo-trial-licensing-card.png" alt-text="The Licensing card in the Microsoft Defender for Office 365 trial" lightbox="../../media/mdo-trial-licensing-card.png":::
 
 - **Usage type** section:
   - **Trial**: The number of trial Defender for Office 365 licenses that are available for you to use.
@@ -97,7 +95,7 @@ After you start the trial, it might take up to 2 hours for the changes and updat
 
 ## Availability
 
-The Defender for Office 365 trial is gradually rolling out to existing customers who meet specific criteria and who don't have existing Defender for Office 365 Plan Plan 2 licenses (included in their subscription or as an add-on).
+The Defender for Office 365 trial is gradually rolling out to existing customers who meet specific criteria and who don't have existing Defender for Office 365 Plan 2 licenses (included in their subscription or as an add-on).
 
 ## Terms and conditions
 
@@ -123,7 +121,7 @@ Defender for Office 365 helps organizations secure their enterprise by offering 
 
 You can also learn more about Defender for Office 365 at this [interactive guide](https://aka.ms/MS365D.InteractiveGuide).
 
-![Microsoft Defender for Office 365 conceptual diagram.](../../media/microsoft-defender-for-office-365.png)
+:::image type="content" source="../../media/microsoft-defender-for-office-365.png" alt-text="The Microsoft Defender for Office 365 conceptual diagram" lightbox="../../media/microsoft-defender-for-office-365.png":::
 
 ### Prevention
 

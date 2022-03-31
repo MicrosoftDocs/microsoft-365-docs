@@ -93,7 +93,7 @@ SharePoint Online only allows you to roll one key at a time. If you want to roll
 2. To see the progress of the key roll operation, run the Get-SPODataEncryptionPolicy cmdlet as follows:
 
    ```powershell
-   Get-SPODataEncryptionPolicy  <SPOAdminSiteUrl>
+   Get-SPODataEncryptionPolicy <SPOAdminSiteUrl>
    ```
 
 ## Related articles

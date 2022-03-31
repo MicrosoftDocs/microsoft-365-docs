@@ -35,9 +35,8 @@ Site permissions must be set up separately from waves as part of the launch. For
 
 > [!NOTE]
 >
-> - This feature will be accessible from the **Settings** panel on the home page of SharePoint communication sites for Targeted release customers starting in May 2021 and will become available to all customers by July 2021.
-> - The PowerShell version of this tool is available today.
-> - This feature can only be used on modern SharePoint communication sites.
+> - This feature will be accessible from the **Settings** panel on the home page of SharePoint communication sites.
+> - This feature can only be used on modern SharePoint communication sites using site pages, as they are the default and recommended type to be used for portals.
 > - You must have site owner permissions for the site to customize and schedule the launch of a portal.
 > - Launches must be scheduled at least seven days in advance and each wave can last one to seven days.
 > - The number of waves required is automatically determined by the expected number of users.
@@ -88,7 +87,7 @@ Formerly, portal launches could only be scheduled through SharePoint PowerShell.
    - Less than 10k users: Two waves
    - 10k to 30k users: Three waves
    - 30k+ to 100k users: Five waves
-   - More than 100k users: Five waves and contact your Microsoft via the steps listed in Launch portal with over 100k users section.
+   - More than 100k users: Five waves and contact Microsoft support via the steps listed in Launch portal with over 100k users section.
 
 5. Then, determine the **Type of redirect** needed:
 
@@ -141,9 +140,10 @@ If you are planning to launch a portal with over 100,000 users, submit a support
 4. Fill out the remaining info, and select **Contact me**.
 
 5. After the ticket has been created, ensure you provide the support agent with the following information:
-   - Portal URL's
+   - Portal URL
    - Number of users expected
-   - Estimated launch schedule
+   - Estimated launch schedule (detailing the wave sizes)
+   - Use the Page Diagnostics tool to "Export the HAR file" of the launch page and share the file with support
 
 ## Make changes to a scheduled portal launch
 

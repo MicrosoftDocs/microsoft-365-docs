@@ -2,8 +2,6 @@
 title: Remediate vulnerabilities with threat and vulnerability management
 description: Remediate security weaknesses discovered through security recommendations, and create exceptions if needed, in threat and vulnerability management.
 keywords: Microsoft Defender for Endpoint tvm remediation, Microsoft Defender for Endpoint tvm, threat and vulnerability management, threat & vulnerability management, threat & vulnerability management remediation, tvm remediation intune, tvm remediation sccm
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -24,7 +22,7 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Threat and vulnerability management](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -74,7 +72,7 @@ If you chose the "attention required" remediation option, there will be no progr
 
 Once you are in the Remediation page, select the remediation activity that you want to view. You can follow the remediation steps, track progress, view the related recommendation, export to CSV, or mark as complete.
 
-:::image type="content" source="../../media/remediation-flyouteolswnew.png" lightbox="../../media/remediation-flyouteolswnew.png" alt-text="Example of the Remediation page, with a selected remediation  activity, and that activity's flyout listing the description, IT service and device management tools, and device remediation":::
+:::image type="content" source="../../media/remediation-flyouteolswnew.png" alt-text="The Remediation page, with a selected remediation  activity, and that activity's flyout listing the description, IT service and device management tools, and device remediation" lightbox="../../media/remediation-flyouteolswnew.png":::
 
 > [!NOTE]
 > There is a 180 day retention period for completed remediation activities. To keep the Remediation page performing optimally, the remediation activity will be removed 6 months after its completion.
@@ -87,13 +85,13 @@ Track who closed the remediation activity with the "Completed by" column on the 
 - **System confirmation**: The task was automatically completed (all devices remediated)
 - **N/A**: Information is not available because we don't know how this older task was completed
 
-:::image type="content" alt-text="Created by and completed by columns with two rows. One row for completed by has example of an email, the other row says system confirmation." source="images/tvm-completed-by.png":::
+:::image type="content" source="images/tvm-completed-by.png" alt-text="The Created by and completed by columns with two rows" lightbox="images/tvm-completed-by.png":::
 
 ### Top remediation activities in the dashboard
 
 View **Top remediation activities** in the [threat and **Vulnerability management** dashboard](tvm-dashboard-insights.md). Select any of the entries to go to the **Remediation** page. You can mark the remediation activity as completed after the IT admin team remediates the task.
 
-![Example of Top remediation activities card with a table that lists top activities that were generated from security recommendations.](images/tvm-remediation-activities-card.png)
+:::image type="content" source="images/tvm-remediation-activities-card.png" alt-text="The Top remediation activities card" lightbox="images/tvm-remediation-activities-card.png":::
 
 ## Related articles
 

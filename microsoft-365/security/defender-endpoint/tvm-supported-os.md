@@ -2,8 +2,6 @@
 title: Supported operating systems platforms and capabilities
 description: Ensure that you meet the operating system or platform requisites for threat and vulnerability management, so the activities in your all devices are properly accounted for.
 keywords: threat & vulnerability management, threat and vulnerability management, operating system, platform requirements, prerequisites, Microsoft Defender for Endpoint-tvm supported os, Microsoft Defender for Endpoint-tvm, supported operating systems, supported platforms, linux support, mac support
-search.appverid: met150
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -25,7 +23,7 @@ ms.technology: mde
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Threat and vulnerability management](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -51,15 +49,16 @@ Windows Server 2008 R2|Yes|Yes|Yes|Yes|Yes
 Windows Server 2012 R2|Yes|Yes|Yes|Yes|Yes
 Windows Server 2016|Yes|Yes|Yes|Yes|Yes
 Windows Server 2019|Yes|Yes|Yes|Yes|Yes
-Windows Server 2022|Yes|Yes|Yes|Yes|Yes
+Windows Server 2022|Yes|Yes|Yes|Not supported|Yes
 macOS 10.14 "Mojave" and above|Yes|Yes|Yes|Yes|Yes 
-Red Hat Enterprise Linux 7.2 or higher (\* See "Important" notice below)|Yes|Yes|Yes|Yes|Yes
+Red Hat Enterprise Linux 7.2 or higher including matching EUS releases (\* See "Important" notice below)|Yes|Yes|Yes|Yes|Yes
 CentOS 7.2 or higher|Yes|Yes|Yes|Yes|Yes
 Ubuntu 16.04 LTS or higher LTS|Yes|Yes|Yes|Yes|Yes
 Oracle Linux 7.2 or higher|Yes|Yes|Yes|Yes|Yes
 SUSE Linux Enterprise Server 12 or higher|Yes|Yes|Yes|Yes|Yes
-Android 6.0 or higher (in preview)|Yes|Yes|Not supported|Not supported|Not supported
-iOS 12.0 or higher (in preview)|Yes|Not supported|Not supported|Not supported|Not supported
+Linux Debian 9 or higher|Yes|Yes|Yes|Yes|Yes
+Android 6.0 or higher|Yes|Yes|Not supported|Not supported|Not supported
+iOS 12.0 or higher|Yes|Not supported|Not supported|Not supported|Not supported
 
 > [!NOTE]
 > Some features are not available for down-level Operating System, check the Microsoft 365 Defender Portal for more details on supported OS.

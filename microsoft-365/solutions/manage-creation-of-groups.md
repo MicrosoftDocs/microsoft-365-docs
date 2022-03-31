@@ -24,7 +24,7 @@ description: "Learn how to control which users can create Microsoft 365 Groups."
 
 By default, all users can create Microsoft 365 groups. This is the recommended approach because it allows users to start collaborating without requiring assistance from IT.
 
-If your business requires that you restrict who can create groups, you can restrict Microsoft 365 Group creation to the members of a particular Microsoft 365 group or security group.
+If your business requires that you restrict who can create groups, you can restrict Microsoft 365 Groups creation to the members of a particular Microsoft 365 group or security group.
 
 If you're concerned about users creating teams or groups that don't comply with your business standards, consider requiring users to complete a training course and then adding them to the group of allowed users.
 
@@ -41,13 +41,13 @@ When you limit who can create a group, it affects all services that rely on grou
 
 The steps in this article won't prevent members of certain roles from creating Groups. Office 365 Global admins can create Groups via the Microsoft 365 admin center, Planner, Exchange, and SharePoint Online. Other roles can create Groups via limited means, listed below.
 
-- Exchange Administrator: Exchange Admin center, Azure AD
-- Partner Tier 1 Support: Microsoft 365 Admin center, Exchange Admin center, Azure AD
-- Partner Tier 2 Support: Microsoft 365 Admin center, Exchange Admin center, Azure AD
+- Exchange Administrator: Exchange admin center, Azure AD
+- Partner Tier 1 Support: Microsoft 365 admin center, Exchange admin center, Azure AD
+- Partner Tier 2 Support: Microsoft 365 admin center, Exchange admin center, Azure AD
 - Directory Writers: Azure AD
-- SharePoint Administrator: SharePoint Admin center, Azure AD
-- Teams Service Administrator: Teams Admin center, Azure AD
-- User Administrator: Microsoft 365 Admin center, Azure AD
+- SharePoint Administrator: SharePoint admin center, Azure AD
+- Teams Service Administrator: Teams admin center, Azure AD
+- User Administrator: Microsoft 365 admin center, Azure AD
 
 If you're a member of one of these roles, you can create Microsoft 365 Groups for restricted users, and then assign the user as the owner of the group.
 
@@ -163,7 +163,7 @@ Try the same procedure again with a member of the group.
 
 ## Related topics
 
-[Collaboration governance planning step-by-step](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[Collaboration governance planning recommendations](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
 
 [Create your collaboration governance plan](collaboration-governance-first.md)
 
