@@ -50,7 +50,7 @@ And if you'd like to know what's new with other Microsoft cloud services:
 
 ### Microsoft 365 Lighthouse GA
 
-Small and medium businesses often rely on trusted IT partners to manage their IT environment. We’re making it easier for partners to secure customers at scale with the general availability of [Microsoft 365 Lighthouse](https://aka.ms/March1SMBPartnerBlog), a multi-tenant administration portal for Managed Service Providers (MSPs). Microsoft 365 Lighthouse provides a complete experience for customers by empowering their partners to quickly identify and act on threats, anomalous sign-ins, and device compliance alerts to keep them safe.
+Small and medium businesses often rely on trusted IT partners to manage their IT environments. We’re making it easier for partners to secure customers at scale with the general availability of [Microsoft 365 Lighthouse](https://aka.ms/March1SMBPartnerBlog), a multi-tenant administration portal for Managed Service Providers (MSPs). Microsoft 365 Lighthouse provides a complete experience for customers by empowering their partners to quickly identify and act on threats, anomalous sign-ins, and device compliance alerts to keep them safe.
 
 :::image type="content" source="../media/lighthouse.png" alt-text="Screenshot: Microsoft 365 Lighthouse dashboard":::
 
