@@ -397,7 +397,7 @@
     },
     {
       "source_path": "microsoft-365/business/remove-company-data.md",
-      "redirect_url": "/microsoft-365/admin/devices/remove-company-data",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-remove-company-data",
       "redirect_document_id": true
     },
     {
@@ -6804,8 +6804,8 @@
     "redirect_document_id": false
     },
     {
-    "source_path": "old.md",
-    "redirect_url": "new",
+    "source_path": "microsoft-365/admin/devices/remove-company-data.md",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-remove-company-data",
     "redirect_document_id": false
     },
     {
