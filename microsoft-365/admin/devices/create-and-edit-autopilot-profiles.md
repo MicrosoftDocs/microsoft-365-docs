@@ -49,7 +49,7 @@ A profile applies to a device, or a group of devices,
   
 ### Apply profile to a device
 
-After you create a profile, you can apply it to a device or a group of devices. You can pick an existing profile in the [step-by-step guide](add-autopilot-devices-and-profile.md) and apply it to new devices, or replace an existing profile for a device or group of devices. 
+After you create a profile, you can apply it to a device or a group of devices. You can pick an existing profile in the [step-by-step guide](../../business-premium/m365bp-add-autopilot-devices-and-profile.md) and apply it to new devices, or replace an existing profile for a device or group of devices. 
   
 1. On the **Prepare Windows** page, choose the **Devices** tab. 
     
