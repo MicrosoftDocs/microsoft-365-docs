@@ -70,6 +70,9 @@ You can edit case details, for example, updating the primary case contact or cha
 
 Once a case is resolved, it can no longer be edited. If a request has been resolved for less than 24 hours, you'll see the option to **reactivate** instead of **Edit**. Once reactivated, you can again edit the request.  
 
+> [!NOTE]
+> Severity can only be set for certain support request types. If choosing a severity was not an option when you created the support request you will not be able to edit it.
+
 ### Provide feedback
 
 We appreciate your feedback and use it to improve the admin support experience.
