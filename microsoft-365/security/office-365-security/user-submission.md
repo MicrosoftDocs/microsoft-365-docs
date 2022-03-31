@@ -136,8 +136,8 @@ To correctly identify the original attached messages, messages that are sent to 
 If you want to specify the reported reason for the original attached messages, messages that are sent to the custom mailbox (don't modify the attachment) need to start with one of the following prefixes in the Subject (Envelope Title):
 
 - 1| or Junk:
-- 2| or Not junk
-- 3| or Phishing
+- 2| or Not junk:
+- 3| or Phishing:
 
 For example:
 
