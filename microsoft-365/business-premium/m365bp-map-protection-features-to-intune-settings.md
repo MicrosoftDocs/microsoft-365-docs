@@ -52,7 +52,6 @@ Under **Protect work files when devices are lost or stolen**
 |:-----|:-----|
 |Delete work files from an inactive device after  |Offline interval (days) before app data is wiped  |
 |Force users to save work files to OneDrive for Business  <br/> Note that only OneDrive for Business is allowed  |Select which storage services corporate data can be saved to  |
-|||
    
 Under **Manage how user access Office files in mobile devices**
   
