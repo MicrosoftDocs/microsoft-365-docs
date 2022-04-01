@@ -107,6 +107,7 @@ You can use the [Malware Protection Command-Line Utility](command-line-arguments
 2. Edit (or create) a DWORD entry called **ForceDefenderPassiveMode**, and specify the following settings:
 
    - Set the DWORD's value to **1**.
+
    - Under **Base**, select **Hexadecimal**.
 
 > [!NOTE]
@@ -164,8 +165,11 @@ When you add [exclusions to Microsoft Defender Antivirus scans](/windows/securit
 Keep the following points in mind:
 
 - *Path exclusions* exclude specific files and whatever those files access.
+
 - *Process exclusions* exclude whatever a process touches, but does not exclude the process itself.
+
 - List your process exclusions using their full path and not by their name only. (The name-only method is less secure.)
+
 - If you list each executable (.exe) as both a path exclusion and a process exclusion, the process and whatever it touches are excluded.
 
 ## Set up your device groups, device collections, and organizational units

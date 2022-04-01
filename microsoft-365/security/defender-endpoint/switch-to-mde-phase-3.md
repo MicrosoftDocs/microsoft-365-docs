@@ -77,7 +77,6 @@ Deployment methods vary, depending on operating system and preferred methods. Th
 
 (<a id="fn1">1</a>) Windows Server 2016 and Windows Server 2012 R2 will need to be onboarded using the instructions in [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016).
 
-
 ## Run a detection test
 
 To verify that your onboarded devices are properly connected to Defender for Endpoint, you can run a detection test.
@@ -115,7 +114,7 @@ To set Microsoft Defender Antivirus to passive mode on Windows Server, version 1
 2. Edit (or create) a DWORD entry called **ForceDefenderPassiveMode**, and specify the following settings:
 
    - Set the DWORD's value to **1**.
-   
+
    - Under **Base**, select **Hexadecimal**.
 
 > [!NOTE]
