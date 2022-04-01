@@ -1,5 +1,5 @@
 ---
-title:  Manage incidents and alerts in Defender for Office 365 in Microsoft 365 Defender
+title:  Manage incidents and alerts from Defender for Office 365 in Microsoft 365 Defender
 f1.keywords: 
   - NOCSH
 ms.author: chrisda
@@ -22,11 +22,11 @@ ms.prod: m365-security
 ---
 
 
-# Manage incidents and alerts in Microsoft Defender for Office 365 in Microsoft 365 Defender
+# Manage incidents and alerts from Microsoft Defender for Office 365 in Microsoft 365 Defender
 
 An [incident](/microsoft-365/security/defender/incidents-overview) in Microsoft 365 Defender is a collection of correlated alerts and associated data that define the complete story of an attack. Defender for Office 365 [alerts](/microsoft-365/compliance/alert-policies#default-alert-policies), [automated investigation and response (AIR)](office-365-air.md#the-overall-flow-of-air), and the outcome of the investigations are natively integrated and correlated on the **Incidents** page in Microsoft 365 Defender at <https://security.microsoft.com/incidents-queue>. We'll refer to this page as the _Incidents queue_.
 
-Alerts are created when malicious or suspicious activity affects an entity (for example, email, users, or mailboxes). Alerts provide valuable insights about in-progress or completed attacks. However, an ongoing attack can affect multiple entities, which will result in multiple alerts from different sources. Some built-in alerts will automatically trigger AIR playbooks. These playbooks do a series of investigation steps to look for other impacted entities or suspicious activity.
+Alerts are created when malicious or suspicious activity affects an entity (for example, email, users, or mailboxes). Alerts provide valuable insights about in-progress or completed attacks. However, an ongoing attack can affect multiple entities, which results in multiple alerts from different sources. Some built-in alerts will automatically trigger AIR playbooks. These playbooks do a series of investigation steps to look for other impacted entities or suspicious activity.
 
 Defender for Office 365 alerts, investigations, and their data are automatically correlated. When a relationship is determined, an incident is created by the system to give security teams visibility for the entire attack.
 
@@ -44,7 +44,7 @@ We strongly recommend that SecOps teams manage incidents and alerts from Defende
 
   <sup>\*</sup>Microsoft Defender for Endpoint, Microsoft Defender for Identity, and Microsoft Defender for Cloud Apps.
 
-- Complex correlation logic isn't required, because the correlation logic is provided by the system.
+- Complex correlation logic isn't required, because the logic is provided by the system.
 
 - If the correlation logic doesn't fully meet your needs, you can add alerts to existing incidents or create new incidents.
 
@@ -67,7 +67,7 @@ We strongly recommend that SecOps teams manage incidents and alerts from Defende
   - Malicious files
 
 > [!NOTE]
-> Incidents don't just represent static events. They also represent attack stories that happen over a period of time. As the attack is in progress, new Defender for Office 365 alerts, AIR investigations, and their data are continuously added to the existing incident.
+> Incidents don't just represent static events. They also represent attack stories that happen over time. As the attack progresses, new Defender for Office 365 alerts, AIR investigations, and their data are continuously added to the existing incident.
 
 Manage incidents on the **Incidents** page in the Microsoft 365 Defender portal at <https://security.microsoft.com/incidents-queue>:
 
