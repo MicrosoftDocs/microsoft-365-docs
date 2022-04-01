@@ -35,7 +35,7 @@ ms.custom: admindeeplinkDEFENDER
 The image and the table below lists the changes in navigation between the Microsoft Defender Security Center and Microsoft 365 Defender.
 
 > [!div class="mx-imgBorder"]
-> ![Image of what moved to where.](../../media/mde-m3d-security-center.png)
+> :::image type="content" source="../../media/mde-m3d-security-center.png" alt-text="The new locations in the Microsoft 365 Defender portal" lightbox="../../media/mde-m3d-security-center.png":::
 
 | Microsoft Defender Security Center | Microsoft 365 Defender |
 |---------|---------|
@@ -70,7 +70,7 @@ Microsoft Defender for Endpoint in Microsoft 365 Defender supports [granting acc
 >- US Department of Defense
 >- All US government institutions with commercial licenses
 
-Take a look at Microsoft 365 Defender at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a>.
+Take a look in Microsoft 365 Defender at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a>.
 
 Learn more about the benefits: [Overview of Microsoft 365 Defender](microsoft-365-defender.md)
 
@@ -124,7 +124,7 @@ Brings together incident and alert management across your email, devices, and id
 - [Learn more about incidents](incidents-overview.md)
 - [Learn more about managing alerts](investigate-alerts.md)
 
-![The Alerts and Actions quick launch bar.](../../media/converge-1-alerts-and-actions.png)
+:::image type="content" source="../../media/converge-1-alerts-and-actions.png" alt-text="The Alerts and Actions quick launch bar in the Microsoft 365 Defender portal" lightbox="../../media/converge-1-alerts-and-actions.png":::
 
 ### Hunting
 
@@ -155,13 +155,13 @@ Learn more about how to [track and respond to emerging threats with threat analy
 
 View and manage the security of endpoints in your organization. If you've used the Microsoft Defender Security Center, it will look familiar.
 
-![The Endpoints quick launch bar.](../../media/converge-2-endpoints.png)
+:::image type="content" source="../../media/converge-2-endpoints.png" alt-text="The Endpoints quick launch bar in the Microsoft 365 Defender portal" lightbox="../../media/converge-2-endpoints.png":::
 
 ### Access and reports
 
 View reports, change your settings, and modify user roles.
 
-![The Access and Reporting quicklaunch bar.](../../media/converge-4-access-and-reporting-new.png)
+:::image type="content" source="../../media/converge-4-access-and-reporting-new.png" alt-text="The Access and Reporting quicklaunch bar in the Microsoft 365 Defender portal" lightbox="../../media/converge-4-access-and-reporting-new.png":::
 
 ### SIEM API connections
 

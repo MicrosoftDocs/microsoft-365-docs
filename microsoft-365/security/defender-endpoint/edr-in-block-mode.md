@@ -43,7 +43,7 @@ ms.technology: mde
 
 EDR in block mode is integrated with [threat & vulnerability management](next-gen-threat-and-vuln-mgt.md). Your organization's security team will get a [security recommendation](tvm-security-recommendation.md) to turn EDR in block mode on if it isn't already enabled.
 
-:::image type="content" source="images/edrblockmode-TVMrecommendation.png" alt-text="recommendation to turn on EDR in block mode.":::
+:::image type="content" source="images/edrblockmode-TVMrecommendation.png" alt-text="The recommendation to turn on EDR in block mode" lightbox="images/edrblockmode-TVMrecommendation.png":::
 
 > [!TIP]
 > To get the best protection, make sure to **[deploy Microsoft Defender for Endpoint baselines](configure-machines-security-baseline.md)**.
@@ -54,7 +54,7 @@ When EDR in block mode is turned on, and a malicious artifact is detected, Micro
 
 The following image shows an instance of unwanted software that was detected and blocked through EDR in block mode:
 
-:::image type="content" source="images/edr-in-block-mode-detection.png" alt-text="EDR in block mode detected something.":::
+:::image type="content" source="images/edr-in-block-mode-detection.png" alt-text="The detection by EDR in block mode" lightbox="images/edr-in-block-mode-detection.png":::
 
 
 ## Enable EDR in block mode
@@ -170,9 +170,6 @@ If Microsoft Defender Antivirus is running in active mode or passive mode, EDR i
 - Windows Server 2016 and Windows Server 2012 R2 (with the [new unified client solution](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution-preview))
 
 With the [new unified client solution](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution-preview) for Windows Server 2016 and Windows Server 2012 R2, you can run EDR in block mode in either passive mode or active mode.
-
-If you are using the [Microsoft Monitoring Agent](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) (MMA) and not the new unified client solution, EDR in block mode works only in active mode on Windows Server 2016.
-
 
 > [!NOTE]
 > Windows Server 2016 and Windows Server 2012 R2 must be onboarded using the instructions in [Onboard Windows servers](configure-server-endpoints.md) for this feature to work. 

@@ -57,11 +57,7 @@ Deploy Removable Storage Access Control on Windows 10 and Windows 11 devices tha
 
 - **4.18.2107 or later**: Add Windows Portable Device (WPD) support (for mobile devices, such as tablets); add AccountName into [advanced hunting](device-control-removable-storage-access-control.md#view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint)
 
-- **4.18.2111 or later**: Add 'Enable or Disable Removable Storage Access Control', 'Default Enforcement', client machine policy update time through PowerShell, file information
-
-- **4.18.2201 or later**: Support a copy of file written to allowed storage through OMA-URI
-
-:::image type="content" source="images/powershell.png" alt-text="The PowerShell interface.":::
+:::image type="content" source="images/powershell.png" alt-text="The PowerShell interface" lightbox="images/powershell.png":::
 
 > [!NOTE]
 > None of Windows Security components need to be active as you can run Removable Storage Access Control independent of Windows Security status.
@@ -149,7 +145,7 @@ Before you get started with Removable Storage Access Control, you must confirm y
 
     The following image illustrates the example of [Scenario 1: Prevent Write and Execute access to all but allow specific approved USBs](#scenario-1-prevent-write-and-execute-access-to-all-but-allow-specific-approved-usbs).
 
-    :::image type="content" source="images/prevent-write-access-allow-usb.png" alt-text="The screen displaying the configuration settings that allow specific approved USBs on devices.":::
+    :::image type="content" source="images/prevent-write-access-allow-usb.png" alt-text="The configuration settings that allow specific approved USBs on devices" lightbox="images/prevent-write-access-allow-usb.png":::
 
 2. Combine all rules within `<PolicyRules>` `</PolicyRules>` into one xml file.
 
@@ -159,7 +155,7 @@ Before you get started with Removable Storage Access Control, you must confirm y
 
     The following image illustrates the usage of SID property, and an example of [Scenario 1: Prevent Write and Execute access to all but allow specific approved USBs](#scenario-1-prevent-write-and-execute-access-to-all-but-allow-specific-approved-usbs).
 
-    :::image type="content" source="images/usage-sid-property.png" alt-text="The screen displaying a code that indicates usage of the SID property attribute.":::
+    :::image type="content" source="images/usage-sid-property.png" alt-text="The code that indicates usage of the SID property attribute" lightbox="images/usage-sid-property.png":::
 
 3. Save both rule and group XML files on the network share folder and put the network share folder path into the Group Policy setting: **Computer Configuration** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus** \> **Device Control**: **'Define device control policy groups'** and **'Define device control policy rules'**.
 
@@ -167,7 +163,7 @@ Before you get started with Removable Storage Access Control, you must confirm y
 
    - The target machine must be able to access the network share to have the policy. However, once the policy is read, the network share connection is no longer required, even after machine reboot.
 
-    :::image type="content" source="images/device-control.png" alt-text="The Device Control screen.":::
+    :::image type="content" source="images/device-control.png" alt-text="The Device Control screen" lightbox="images/device-control.png":::
 
 4. Default enforcement: allows you to set default access (Deny or Allow) to removable media if there is no policy. For example, you only have policy (either Deny or Allow) for RemovableMediaDevices, but do not have any policy for CdRomDevices or WpdDevices, and you set default Deny through this policy, Read/Write/Execute access to CdRomDevices or WpdDevices will be blocked.
 
@@ -224,7 +220,7 @@ Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>) \> *
 
     - Data Type: String (XML file)
 
-      :::image type="content" source="images/xml-data-type-string.png" alt-text="The xml file for the STRING data type.":::
+      :::image type="content" source="images/xml-data-type-string.png" alt-text="The Data type field in the Add Row page" lightbox="images/xml-data-type-string.png":::
 
 2. For each policy, also create an OMA-URI:
 
@@ -310,7 +306,7 @@ DeviceEvents
 ```
 
 ```kusto
-//RemovableStorageFileEvent: event triggered by File level enforcement, information of files written to removable storage 
+//information of file written to removable storage 
 DeviceEvents
 | where ActionType contains "RemovableStorageFileEvent"
 | extend parsed=parse_json(AdditionalFields)
@@ -322,17 +318,14 @@ DeviceEvents
 | extend MediaProductId = tostring(parsed.ProductId) 
 | extend MediaVendorId = tostring(parsed.VendorId) 
 | extend MediaSerialNumber = tostring(parsed.SerialNumber) 
-| extend DuplicatedOperation = tostring(parsed.DuplicatedOperation)
+| extend FileInformationOperation = tostring(parsed.DuplicatedOperation)
 | extend FileEvidenceLocation = tostring(parsed.TargetFileLocation) 
-| project Timestamp, DeviceId, DeviceName, InitiatingProcessAccountName, 
-    ActionType, Policy, PolicyRuleId, DuplicatedOperation, 
-    MediaClassName, MediaInstanceId, MediaName, MediaProductId, MediaVendorId, MediaSerialNumber,
-    FileName, FolderPath, FileSize, FileEvidenceLocation,
-    AdditionalFields
+| project Timestamp, DeviceId, DeviceName, InitiatingProcessAccountName, ActionType, Policy, PolicyRuleId, FileInformationOperation, MediaClassName, MediaInstanceId, MediaName, MediaProductId, MediaVendorId, MediaSerialNumber, FileName, FolderPath, FileSize, FileEvidenceLocation, AdditionalFields
 | order by Timestamp desc
 ```
     
 :::image type="content" source="images/block-removable-storage.png" alt-text="The screen depicting the blockage of the removable storage.":::
+
 
 ## Frequently asked questions
 
