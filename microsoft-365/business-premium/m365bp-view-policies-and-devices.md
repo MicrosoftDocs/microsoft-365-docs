@@ -31,7 +31,7 @@ description: "View device policies and actions by signing in to Microsoft 365 fo
 This article applies to Microsoft 365 Business Premium.
 
 > [!NOTE]
-> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../../security/defender-business/mdb-overview.md).
+> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../security/defender-business/mdb-overview.md).
 
 ## View and edit device policies
 
@@ -40,7 +40,7 @@ This article applies to Microsoft 365 Business Premium.
 
     On this page, you can create, edit, change target group, or delete a policy.
 
-    ![Screenshot of the Policies page.](../../media/devicepolicies.png)
+    ![Screenshot of the Policies page.](../media/devicepolicies.png)
   
 ## View and manage devices
 
@@ -48,7 +48,7 @@ This article applies to Microsoft 365 Business Premium.
     
     On this page, you can select one or more devices and remove company data. For Windows 10 devices that you have set device protections settings for, you can also choose to reset the device to factory settings.
   
-   ![Manage devices page.](../../media/devicesmanage.png)
+   ![Manage devices page.](../media/devicesmanage.png)
 
 ## See also
 
