@@ -44,9 +44,9 @@ Most tracker pages include trending numbers that are updated periodically, widge
 
 :::image type="content" source="../../media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png" alt-text="The example of campaign information in Explorer" lightbox="../../media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png":::
 
-Trackers are just a few of the many great features you get with [Microsoft Defender for Office 365 Plan 2](office-365-ti.md). Threat Trackers include [Noteworth trackers](#noteworthy-trackers), [Trending trackers](#trending-trackers), [Tracked queries](#tracked-queries), and [Saved queries](#saved-queries).
+Trackers are just a few of the many great features you get with [Microsoft Defender for Office 365 Plan 2](office-365-ti.md). Threat Trackers include [Noteworthy trackers](#noteworthy-trackers), [Trending trackers](#trending-trackers), [Tracked queries](#tracked-queries), and [Saved queries](#saved-queries).
 
-To view and use your Threat Trackers for your organization, open the Microsoft 365 Defender portal at <https://security.microsoft.com>, and go to **Email & collaboration** \> **Threat tracker**. To go directly to the **Threat tracker** page, use <https://security.microsoft.com/threattracker>.
+To view and use your Threat Trackers for your organization, open the Microsoft 365 Defender portal at <https://security.microsoft.com>, and go to **Email & collaboration** \> **Threat tracker**. To go directly to the **Threat tracker** page, use <https://security.microsoft.com/threattrackerv2>.
 
 > [!NOTE]
 > To use Threat Trackers, you must be a global administrator, security administrator, or security reader. See [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
@@ -59,7 +59,7 @@ Typically Noteworthy trackers will be posted for just a couple of weeks when we 
 
 ### Trending trackers
 
-Trending trackers (formerly called Campaigns) highlight new threats received in your organization's email in the past week.
+Trending trackers (formerly called Campaigns) highlight new threats received in your organization's email in the past week. The Trending trackers view provides dynamic assessments of email threats impacting your organization’s Office 365 environment. This view shows tenant level malware trends, identifying malware families on the rise, flat, or declining, giving admins greater insight into which threats require further attention.
 
 :::image type="content" source="../../media/d2ccc1a0-2a1d-4e36-99b5-6766c207772f.png" alt-text="The example of trending malware campaigns widget" lightbox="../../media/d2ccc1a0-2a1d-4e36-99b5-6766c207772f.png":::
 
