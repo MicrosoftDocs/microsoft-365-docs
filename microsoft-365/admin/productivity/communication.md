@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Productivity Score - Communication"
+title: "Microsoft Adoption Score - Communication"
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -18,12 +18,12 @@ monikerRange: 'o365-worldwide'
 search.appverid:
 - MET150
 - MOE150
-description: "Details of the Communication - People experience Productivity Score."
+description: "Details of the Communication - People experience Adoption Score."
 ---
 
 # Communication – People experiences
 
-Productivity   Score supports the journey to digital transformation with insights about how your organization uses Microsoft 365 and the technology experiences that support it. Your organization’s score reflects people and technology experience measurements and can be compared to benchmarks from organizations similar in size to yours. The communication category is part of the people experiences measures. To learn more, check out the [Productivity Score overview](productivity-score.md) and read [Microsoft's Privacy Statement](https://privacy.microsoft.com/privacystatement).
+Productivity   Score supports the journey to digital transformation with insights about how your organization uses Microsoft 365 and the technology experiences that support it. Your organization’s score reflects people and technology experience measurements and can be compared to benchmarks from organizations similar in size to yours. The communication category is part of the people experiences measures. To learn more, check out the [Adoption Score overview](productivity-score.md) and read [Microsoft's Privacy Statement](https://privacy.microsoft.com/privacystatement).
 
 ## Prerequisites
 
@@ -69,7 +69,7 @@ Microsoft 365 provides people the flexibility to fit everyone's communication st
      - **Denominator**: # of people marked as enabled for more than one communication product in the last 28 days
    - **Peer Benchmark** value of the key metric is also shown as a percentage
 
-4. **View communication resources:** Clicking here would enlist all the support content in the form of videos/articles related to Communication. From these you can navigate to the custom playlist for Communication and subsequently, for all Productivity Score categories.
+4. **View communication resources:** Clicking here would enlist all the support content in the form of videos/articles related to Communication. From these you can navigate to the custom playlist for Communication and subsequently, for all Adoption Score categories.
 
 #### Trend visualization of primary insight
 
@@ -85,7 +85,7 @@ Scores are not provided at the individual user level.
 
 ## Explore how your organization communicates
 
-We also provide you with information that helps you gain visibility into how your organization communicates. These additional metrics don't directly influence your Productivity Score, but can help you create an action plan as a part of your digital transformation.
+We also provide you with information that helps you gain visibility into how your organization communicates. These additional metrics don't directly influence your Adoption Score, but can help you create an action plan as a part of your digital transformation.
 
 ### Breakdown of communication by modes
 
@@ -175,11 +175,20 @@ We also provide you with information that helps you gain visibility into how you
 
 4. **View related content:** Select this link to view collated videos, and other related help content.
 
+## View trends over time
+
+For each of the insights above, you can see how the metrics trend over time by selecting an option from the dropdown shown below:
+
+<br/>![Trends over time.](../../media/trends-over-time.png)
+
+After you select an option, the charts in the report will update to show a trend over time rather than a snapshot of the past month.  
+
+
 ## Related content
 
 [Microsoft 365 apps health – Technology experiences](apps-health.md) (article)\
 [Content collaboration – People experiences](content-collaboration.md) (article)\
 [Meetings – People experiences](meetings.md) (article)\
 [Mobility – People experiences](mobility.md) (article)\
-[Privacy controls for Productivity Score](privacy.md) (article)\
+[Privacy controls for Adoption Score](privacy.md) (article)\
 [Teamwork – People experiences](teamwork.md) (article)

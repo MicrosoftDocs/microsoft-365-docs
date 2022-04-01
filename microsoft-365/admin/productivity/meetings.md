@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Productivity Score - Meetings"
+title: "Microsoft Adoption Score - Meetings"
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -18,12 +18,12 @@ monikerRange: 'o365-worldwide'
 search.appverid:
 - MET150
 - MOE150
-description: "Details of the Meetings - people experiences Productivity score."
+description: "Details of the Meetings - people experiences Adoption Score."
 ---
 
 # Meetings – People experiences
 
-Productivity Score provides insights into your organization's digital transformation journey through its use of Microsoft 365 and the technology experiences that support it. Your organization's score reflects people and technology experience measurements and can be compared to benchmarks from organizations similar to yours. The meetings category is part of the people experiences measures. To learn more, check out the [Productivity Score overview](productivity-score.md) and read [Microsoft's Privacy Statement](https://privacy.microsoft.com/privacystatement).
+Adoption Score provides insights into your organization's digital transformation journey through its use of Microsoft 365 and the technology experiences that support it. Your organization's score reflects people and technology experience measurements and can be compared to benchmarks from organizations similar to yours. The meetings category is part of the people experiences measures. To learn more, check out the [Adoption Score overview](productivity-score.md) and read [Microsoft's Privacy Statement](https://privacy.microsoft.com/privacystatement).
 
 ## Prerequisites
 
@@ -72,7 +72,7 @@ The meetings score for your organization measures the degree to which online Mic
 
 ## Explore more about meetings in your organization
 
-We also provide you with supporting information to hep you understand how people in your organization, as an aggregate, conduct meetings. These additional metrics don't directly contribute to your Productivity Score, but can help you create an action plan as part of your digital transformation.
+We also provide you with supporting information to hep you understand how people in your organization, as an aggregate, conduct meetings. These additional metrics don't directly contribute to your Adoption Score, but can help you create an action plan as part of your digital transformation.
 
 ### Breakdown of how many meetings follow best practices
 
@@ -141,5 +141,5 @@ We also provide you with supporting information to hep you understand how people
 [Communication – People experiences](communication.md) (article)\
 [Content collaboration – People experiences](content-collaboration.md) (article)\
 [Mobility – People experiences](mobility.md) (article)\
-[Privacy controls for Productivity Score](privacy.md) (article)\
+[Privacy controls for Adoption Score](privacy.md) (article)\
 [Teamwork – People experiences](teamwork.md) (article)

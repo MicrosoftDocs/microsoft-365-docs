@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Productivity Score - Microsoft 365 apps health"
+title: "Microsoft Adoption Score - Microsoft 365 apps health"
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -18,12 +18,12 @@ monikerRange: 'o365-worldwide'
 search.appverid:
 - MET150
 - MOE150
-description: "Details of the Microsoft 365 Apps health - technology experiences Productivity score."
+description: "Details of the Microsoft 365 Apps health - technology experiences Adoption Score."
 ---
 
 # Microsoft 365 Apps health – technology experiences
 
-Productivity Score provides insights into your organization's digital transformation journey through its use of Microsoft 365 and the technology experiences that support it. Your organization's score reflects people and technology experience measurements and can be compared to benchmarks from organizations similar to yours. The apps health category is part of the measurements that falls under technology experiences. To learn more, check out the [Productivity Score overview](productivity-score.md) and read [Microsoft's Privacy Statement](https://privacy.microsoft.com/privacystatement).
+Adoption Score provides insights into your organization's digital transformation journey through its use of Microsoft 365 and the technology experiences that support it. Your organization's score reflects people and technology experience measurements and can be compared to benchmarks from organizations similar to yours. The apps health category is part of the measurements that falls under technology experiences. To learn more, check out the [Adoption Score overview](productivity-score.md) and read [Microsoft's Privacy Statement](https://privacy.microsoft.com/privacystatement).
 
 ## Why your organization&#39;s Microsoft 365 apps health score matters
 
@@ -62,7 +62,7 @@ The Microsoft 365 apps health score measures whether devices are running Microso
 
 ## Explore your organization Microsoft 365 app channels and versions
 
-We also provide supporting information that helps you gain additional visibility into what channels and versions devices in your organization are currently running. These additional metrics do not contribute to your Productivity Score but can help you create an action plan to increase your Microsoft 365 apps health score by making sure devices run Microsoft 365 apps on recommended channels.
+We also provide supporting information that helps you gain additional visibility into what channels and versions devices in your organization are currently running. These additional metrics do not contribute to your Adoption Score but can help you create an action plan to increase your Microsoft 365 apps health score by making sure devices run Microsoft 365 apps on recommended channels.
 
 ### Devices on current channel and running supported versions
 
@@ -113,5 +113,5 @@ The following columns are presented in the table at the channel/version level:
 [Content collaboration – People experiences](content-collaboration.md) (article)\
 [Meetings – People experiences](meetings.md) (article)\
 [Mobility – People experiences](mobility.md) (article)\
-[Privacy controls for Productivity Score](privacy.md) (article)\
+[Privacy controls for Adoption Score](privacy.md) (article)\
 [Teamwork – People experiences](teamwork.md) (article)

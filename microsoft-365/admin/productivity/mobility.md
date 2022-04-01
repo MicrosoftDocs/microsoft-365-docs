@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Productivity Score - Mobility"
+title: "Microsoft Adoption Score - Mobility"
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -18,12 +18,12 @@ monikerRange: 'o365-worldwide'
 search.appverid:
 - MET150
 - MOE150
-description: "Details of the Mobility - people experiences Productivity score."
+description: "Details of the Mobility - people experiences Adoption Score."
 ---
 
 # Mobility – People experiences
 
-Productivity Score provides insights into your organization's digital transformation journey through its use of Microsoft 365 and the technology experiences that support it. Your organization's score reflects people and technology experience measurements and can be compared to benchmarks from organizations similar to yours. The mobility category is part of the people experiences measures. To learn more, check out the [Productivity Score overview](productivity-score.md) and read [Microsoft's Privacy Statement](https://privacy.microsoft.com/privacystatement).
+Adoption Score provides insights into your organization's digital transformation journey through its use of Microsoft 365 and the technology experiences that support it. Your organization's score reflects people and technology experience measurements and can be compared to benchmarks from organizations similar to yours. The mobility category is part of the people experiences measures. To learn more, check out the [Adoption Score overview](productivity-score.md) and read [Microsoft's Privacy Statement](https://privacy.microsoft.com/privacystatement).
 
 ## Prerequisites
 
@@ -52,7 +52,7 @@ We provide a primary insight in the experience that contains the key metrics for
 
 Microsoft 365 lets people work flexibly across apps, including Microsoft Outlook, Word, Excel, PowerPoint, OneNote, Microsoft Teams, Yammer, and Skype for Business. People can also work from anywhere by using a seamless experience across desktop, web, and mobile platforms. The primary insight looks at the products that are enabled for people in your organization – and how many of these people are active on at least two platforms.
 
-:::image type="content" source="../../media/primary-mobility.png" alt-text="Chart showing primary insight for Mobility - people experiences productivity score.":::
+:::image type="content" source="../../media/primary-mobility.png" alt-text="Chart showing primary insight for Mobility - people experiences Adoption Score.":::
 
 1. **Header:** Shows the percentage of people in your org who have access to any of Microsoft 365 Apps, and who are active on at least one of these applications on more than one platform.
 2. **Body:** Provides more information on how the use of these applications on multiple platforms can promote efficiency and satisfaction.
@@ -78,7 +78,7 @@ The scores are not provided at the individual user level.
 
 ## Explore how your org works across platforms and locations
 
-We also provide you with information that helps you gain visibility into how people in your organization work across platforms. These additional metrics do not directly contribute to your Productivity Score, but help you create an action plan as part of your digital transformation.  
+We also provide you with information that helps you gain visibility into how people in your organization work across platforms. These additional metrics do not directly contribute to your Adoption Score, but help you create an action plan as part of your digital transformation.  
 
 ### Use of Outlook across platforms
 
@@ -140,11 +140,19 @@ We also provide you with information that helps you gain visibility into how peo
 2. **Body:** Highlights the importance of facilitating remote work for people without access to your organization's physical offices.
 3. **Visualization:** Shows trend-line for daily percentage of people who only work remotely as well as daily percentage of people who also work onsite. Users are considered onsite if they perform at least three hours of activity in Microsoft 365 Apps in a day.
 
+## View trends over time
+
+For each of the insights above, you can see how the metrics trend over time by selecting an option from the dropdown shown below:
+
+<br/>![Trends over time.](../../media/trends-over-time.png)
+
+After you select an option, the charts in the report will update to show a trend over time rather than a snapshot of the past month. 
+
 ## Related content
 
 [Microsoft 365 apps health – Technology experiences](apps-health.md) (article)\
 [Communication – People experiences](communication.md) (article)\
 [Content collaboration – People experiences](content-collaboration.md) (article)\
 [Meetings – People experiences](meetings.md) (article)\
-[Privacy controls for Productivity Score](privacy.md) (article)\
+[Privacy controls for Adoption Score](privacy.md) (article)\
 [Teamwork – People experiences](teamwork.md) (article)

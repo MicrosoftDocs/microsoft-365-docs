@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Productivity Score"
+title: "Microsoft Adoption Score"
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -20,12 +20,12 @@ ms.custom:
 search.appverid:
 - MET150
 - MOE150
-description: "Learn how Microsoft Productivity Score reflects people and technology experience measurements and compare to organizations of similar size."
+description: "Learn how Microsoft Adoption Score reflects people and technology experience measurements and compare to organizations of similar size."
 ---
 
-# Microsoft Productivity Score 
+# Microsoft Adoption Score 
 
-Productivity Score supports the journey to digital transformation with insights about how your organization uses Microsoft 365 and the technology experiences that support it. Your organization's score reflects people and technology experience measurements and can be compared to benchmarks from organizations similar in size to yours.
+Adoption Score supports the journey to digital transformation with insights about how your organization uses Microsoft 365 and the technology experiences that support it. Your organization's score reflects people and technology experience measurements and can be compared to benchmarks from organizations similar in size to yours.
 
 It provides:
 
@@ -48,9 +48,9 @@ See [What is Endpoint Analytics](/mem/analytics/overview) for an overview and pr
 For people experiences data, you need a Microsoft 365 for business or Office 365 for enterprise subscription. For endpoint analytics data for your tenant, you need to add Microsoft Intune to your subscription. Intune helps protect your organization's data by managing devices and apps. Once you have Intune, you can turn on endpoint analytics within the Intune experience. To learn more about Microsoft Intune, see the [Microsoft Intune documentation](/mem/intune/). 
 
 > [!NOTE]
-> A license to Workplace Analytics is not required to get the Productivity Score features.
+> A license to Workplace Analytics is not required to get the Adoption Score features.
 
-Productivity Score is only available in the Microsoft 365 admin center and can only be accessed by IT professionals who have one of the following roles:  
+Adoption Score is only available in the Microsoft 365 admin center and can only be accessed by IT professionals who have one of the following roles:  
 
 - Global admin
 - Exchange admins
@@ -62,17 +62,17 @@ Productivity Score is only available in the Microsoft 365 admin center and can o
 - Usage Summary Reports Reader
 
 > [!NOTE]
-> Only an IT professional with the Global Administrator role can sign up or opt in a tenant for Productivity Score.
+> Only an IT professional with the Global Administrator role can sign up or opt in a tenant for Adoption Score.
 
-The role-based access control model for Productivity Score helps organizations further digital transformation efforts with Microsoft 365 by providing the flexibility to assign roles to IT professionals within an organization.
+The role-based access control model for Adoption Score helps organizations further digital transformation efforts with Microsoft 365 by providing the flexibility to assign roles to IT professionals within an organization.
 
 Microsoft is committed to protecting individual privacy. This [privacy document](privacy.md)  explains the controls we provide you, as your organization's IT administrator, to ensure that the information is actionable while not compromising the trust you place in Microsoft.
 
-You can access the experience from Microsoft 365 Admin home under **Reports** > **Productivity Score**.
+You can access the experience from Microsoft 365 Admin home under **Reports** > **Adoption Score**.
   
 ## How the score is calculated
 
-Your Productivity Score is based on the combined scores of your people and technology experiences categories. Each category is weighted equally, with a total of 100 points. The highest possible Productivity Score is 800.
+Your Adoption Score is based on the combined scores of your people and technology experiences categories. Each category is weighted equally, with a total of 100 points. The highest possible Adoption Score is 800.
 
 ### Score categories 
 
@@ -88,17 +88,17 @@ Your Productivity Score is based on the combined scores of your people and techn
  
 In each score category, we quantify the key indicators for how your organization is using Microsoft 365 in its journey towards digital transformation. We provide 28-day and 180-day views of the key activities. We also provide supporting metrics that are not part of the score calculation, but are important for helping you identify underlying usage statistics and configurations that you can address.
 
-### Products included in Productivity Score 
+### Products included in Adoption Score 
 
-Productivity Score includes data from Exchange, SharePoint, OneDrive, Teams, Word, Excel, PowerPoint, OneNote, Outlook, Yammer, and Skype.
+Adoption Score includes data from Exchange, SharePoint, OneDrive, Teams, Word, Excel, PowerPoint, OneNote, Outlook, Yammer, and Skype.
 
 Your organization's score is updated daily and reflects user actions completed in the last 28 (including the current day).
 
-## Interpreting your organization's Productivity Score 
+## Interpreting your organization's Adoption Score 
 
-The Productivity Score home page shows your organization's total score and score history and the primary insight for each category.
+The Adoption Score home page shows your organization's total score and score history and the primary insight for each category.
 
-:::image type="content" source="../../media/prodscore-landing.png" alt-text="Productivity Score page in Reports.":::
+:::image type="content" source="../../media/prodscore-landing.png" alt-text="Adoption Score page in Reports.":::
 
 **Your organization's score** is shown as a percent value and in points. You can see your points in the numerator and the maximum possible points in the denominator.
 
@@ -111,7 +111,7 @@ The endpoint analytics peer benchmark includes targets for device startup perfor
 
 For network connectivity, the recommended benchmark is 80 points.
 
-The **Score breakdown** section provides a breakdown of your Productivity Score with benchmarks by people and technology experience areas.
+The **Score breakdown** section provides a breakdown of your Adoption Score with benchmarks by people and technology experience areas.
 
 Score history displays how your score in each category has changed in the past six months.
 
@@ -152,7 +152,7 @@ This report helps organizations understand:
 
 ## We want to hear from you
 
-Share your thoughts about Productivity Score and your ideas about how to improve it. Use the **Feedback** sections within the product and/or reach out to the Productivity Score team at prodscorefeedback@microsoft.com.
+Share your thoughts about Adoption Score and your ideas about how to improve it. Use the **Feedback** sections within the product and/or reach out to the Adoption Score team at prodscorefeedback@microsoft.com.
 
 ## Related content
 

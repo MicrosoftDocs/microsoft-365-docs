@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Productivity Score - Content collaboration"
+title: "Microsoft Adoption Score - Content collaboration"
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -18,12 +18,12 @@ monikerRange: 'o365-worldwide'
 search.appverid:
 - MET150
 - MOE150
-description: "Details of the Content collaboration - people experiences Productivity Score."
+description: "Details of the Content collaboration - people experiences Adoption Score."
 ---
 
 # Content collaboration – People experiences
 
-Productivity Score provides insights into your organization's digital transformation journey through its use of Microsoft 365 and the technology experiences that support it. Your organization's score reflects people and technology experience measurements and can be compared to benchmarks from organizations similar to yours. The content collaboration category is part of the people experiences measurements. To learn more, check out the [Productivity Score overview](productivity-score.md) and read [Microsoft's Privacy Statement](https://privacy.microsoft.com/privacystatement).
+Adoption Score provides insights into your organization's digital transformation journey through its use of Microsoft 365 and the technology experiences that support it. Your organization's score reflects people and technology experience measurements and can be compared to benchmarks from organizations similar to yours. The content collaboration category is part of the people experiences measurements. To learn more, check out the [Adoption Score overview](productivity-score.md) and read [Microsoft's Privacy Statement](https://privacy.microsoft.com/privacystatement).
 
 ## Prerequisites
 
@@ -101,7 +101,7 @@ Scores are not provided at the individual user level.
 
 ## Explore how your organization collaborates
 
-We also provide you with information that helps you gain visibility into how your organization collaborates on content. These additional metrics don't directly contribute to your Productivity Score but help you create an action plan as part of your digital transformation to help optimize the way people work.
+We also provide you with information that helps you gain visibility into how your organization collaborates on content. These additional metrics don't directly contribute to your Adoption Score but help you create an action plan as part of your digital transformation to help optimize the way people work.
 
 ### Creating files in OneDrive or SharePoint
 
@@ -187,11 +187,19 @@ Understand how many users are attaching physical files in email rather than link
       - **21-40**: The red (colored) portion of the bar represents the percentage of devices with a network performance score between 20-40. 
       - **0-20**: The dark red (colored) portion of the bar represents the percentage of devices with the worst network performance score between 0-20. 
 
+## View trends over time
+
+For each of the insights above, you can see how the metrics trend over time by selecting an option from the dropdown shown below:
+
+<br/>![Trends over time.](../../media/trends-over-time.png)
+
+After you select an option, the charts in the report will update to show a trend over time rather than a snapshot of the past month. 
+
 ## Related content
 
 [Microsoft 365 apps health – Technology experiences](apps-health.md) (article)\
 [Communication – People experiences](communication.md) (article)\
 [Meetings – People experiences](meetings.md) (article)\
 [Mobility – People experiences](mobility.md) (article)\
-[Privacy controls for Productivity Score](privacy.md) (article)\
+[Privacy controls for Adoption Score](privacy.md) (article)\
 [Teamwork – People experiences](teamwork.md) (article)

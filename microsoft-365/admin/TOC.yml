@@ -249,9 +249,11 @@
       items:
          - name: Monitor Microsoft 365 activity by using reports
            href: activity-reports/activity-reports.md
-         - name: Microsoft Productivity Score - overview
+         - name: Microsoft Adoption Score - overview
            href: productivity/productivity-score.md
            items:
+            - name: Default enablement in June 2022
+              href: productivity/adoption-score-default-enablement.md
             - name: Content collaboration
               href: productivity/content-collaboration.md
             - name: Communication 

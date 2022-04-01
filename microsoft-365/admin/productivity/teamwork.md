@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Productivity Score - Teamwork"
+title: "Microsoft Adoption Score - Teamwork"
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -18,12 +18,12 @@ monikerRange: 'o365-worldwide'
 search.appverid:
 - MET150
 - MOE150
-description: "Details of the Teamwork - people experiences Productivity score."
+description: "Details of the Teamwork - people experiences Adoption Score."
 ---
 
 # Teamwork – People experiences
 
-Productivity Score provides insights into your organization's digital transformation journey through its use of Microsoft 365 and the technology experiences that support it. Your organization's score reflects people and technology experience measurements and can be compared to benchmarks from organizations similar to yours. The teamwork category is part of the measurements that falls under people experiences. To learn more, check out the [Productivity Score overview](productivity-score.md) and read [Microsoft's Privacy Statement](https://privacy.microsoft.com/privacystatement).
+Adoption Score provides insights into your organization's digital transformation journey through its use of Microsoft 365 and the technology experiences that support it. Your organization's score reflects people and technology experience measurements and can be compared to benchmarks from organizations similar to yours. The teamwork category is part of the measurements that falls under people experiences. To learn more, check out the [Adoption Score overview](productivity-score.md) and read [Microsoft's Privacy Statement](https://privacy.microsoft.com/privacystatement).
 
 ## Prerequisites
 
@@ -86,7 +86,7 @@ Scores are not provided at the individual user level .
 
 ## Explore more about teamwork in your organization
 
-We also provide additional information about how people in your organization work together. These additional metrics don't directly contribute to your Productivity Score, but are relevant in helping you create an action plan as part of your digital transformation.
+We also provide additional information about how people in your organization work together. These additional metrics don't directly contribute to your Adoption Score, but are relevant in helping you create an action plan as part of your digital transformation.
 
 ### Breakdown of how people engage in shared workspaces
 
@@ -97,10 +97,10 @@ We also provide additional information about how people in your organization wor
 3. **Visualization:** The visualization shows the extent to which people who are communicating or interacting with content are doing so in shared workspaces, as follows:
       - **Sending email**: The colored portion and the fraction represent the percentage of people sending email to group mailboxes. The fraction is comprised of:
         - Numerator: People sending emails to group mailboxes in the last 28 days.
-        - Denominator: People sending emails in the last 28 days. This is the same group of people who are marked as sending email in the primary insight of communication productivity score.
+        - Denominator: People sending emails in the last 28 days. This is the same group of people who are marked as sending email in the primary insight of communication Adoption Score.
       - **Sending messages**: The colored portion and the fraction represent the percentage of people sending messages in channels in Microsoft Teams. The fraction is comprised of:
         - Numerator: People sending channel messages within the last 28 days.
-        - Denominator: People sending chat or channel messages in the last 28 days. This is the same group of people who are marked as sending messages in Microsoft Teams in the primary insight of the communication category in Productivity Score.
+        - Denominator: People sending chat or channel messages in the last 28 days. This is the same group of people who are marked as sending messages in Microsoft Teams in the primary insight of the communication category in Adoption Score.
     - **Creating content**: The colored portion and the fraction represent the percentage of people reading or creating content on Microsoft 365 SharePoint team sites.
         - Numerator: Number of people reading or creating content on Microsoft 365 group connected team sites.
         - Denominator: Number of people with access to SharePoint, who read or created content of any kind in OneDrive or SharePoint sites in the last 28 days.
@@ -150,6 +150,14 @@ We also provide additional information about how people in your organization wor
         The number in the center of the donut chart represents the total number of shared workspaces that have a Microsoft Teams team associated with them.
 4. **View related content:** Select this link to view help content.
 
+## View trends over time
+
+For each of the insights above, you can see how the metrics trend over time by selecting an option from the dropdown shown below:
+
+<br/>![Trends over time.](../../media/trends-over-time.png)
+
+After you select an option, the charts in the report will update to show a trend over time rather than a snapshot of the past month. 
+
 ## Related content
 
 [Microsoft 365 apps health – Technology experiences](apps-health.md) (article)\
@@ -157,4 +165,4 @@ We also provide additional information about how people in your organization wor
 [Content collaboration – People experiences](content-collaboration.md) (article)\
 [Meetings – People experiences](meetings.md) (article)\
 [Mobility – People experiences](mobility.md) (article)\
-[Privacy controls for Productivity Score](privacy.md) (article)
+[Privacy controls for Adoption Score](privacy.md) (article)
