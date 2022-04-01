@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.date: 08/11/2021
+ms.date: 03/04/2022
 ms.collection: 
 - Strat_O365_IP
 - M365-security-compliance
@@ -37,7 +37,7 @@ Your organization must have a subscription that includes Office 365 Advanced Mes
 
 If you do not have Office 365 Message Encryption set up already, see [Set up new Office 365 Message Encryption capabilities](set-up-new-message-encryption-capabilities.md).
 
-With Advanced Message Encryption, you're not limited to a single branding template. Instead, you can create and use multiple branding templates. For information, see [Add your organization's brand to your encrypted messages](add-your-organization-brand-to-encrypted-messages.md). When you use custom branding, external recipients receive a notification email that contains a link to the OME portal. The mail flow rule determines which branding template the notification email and OME Portal use. This way, your secure content isn't sent outside your organization.
+With Advanced Message Encryption, you're not limited to a single branding template. Instead, you can create and use multiple branding templates. Adding custom branding also lets you enable tracking a revocation of encrypted messages. For information, see [Add your organization's brand to your encrypted messages](add-your-organization-brand-to-encrypted-messages.md). When you use custom branding, external recipients receive a notification email that contains a link to the OME portal. The mail flow rule determines which branding template the notification email and OME Portal use. This way, your secure content isn't sent outside your organization.
 
 You can only revoke messages and apply expiration dates to messages that users receive through the portal. In other words, email that has a custom branding template applied. For more information and an example, see the guidance in [Ensure all external recipients use the OME Portal to read encrypted mail](manage-office-365-message-encryption.md#ensure-all-external-recipients-use-the-ome-portal-to-read-encrypted-mail).
 

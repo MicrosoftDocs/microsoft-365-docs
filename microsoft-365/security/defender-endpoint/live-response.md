@@ -82,6 +82,8 @@ Before you can initiate a session on a device, make sure you fulfill the followi
 
   > [!NOTE]
   > Only users with manage security or global admin roles can edit these settings.
+  > 
+  > Automated Investigation must be enabled in the [Advanced features settings](advanced-features.md) prior to enabling live response.
 
 - **Enable live response for servers from the advanced settings page** (recommended).
 
@@ -94,7 +96,7 @@ Before you can initiate a session on a device, make sure you fulfill the followi
 
   You'll receive the following error:
 
-  ![Image of error message.](images/live-response-error.png)
+  :::image type="content" source="images/live-response-error.png" alt-text="The error message" lightbox="images/live-response-error.png":::
 
 - **Enable live response unsigned script execution** (optional).
 
@@ -272,7 +274,7 @@ Anytime during a session, you can cancel a command by pressing CTRL + C.
 
 ## Run a script
 
-Before you can run a PowerShell/Bash scripts, you must first upload it to the library.
+Before you can run a PowerShell/Bash script, you must first upload it to the library.
 
 After uploading the script to the library, use the `run` command to run the script.
 

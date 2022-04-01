@@ -41,7 +41,7 @@
                   href: model-usage-analytics.md
                 - name: Leverage term store taxonomy when creating an extractor
                   href: leverage-term-store-taxonomy.md
-                - name: SharePoint Syntex accessibility mode
+                - name: Accessibility mode
                   href: accessibility-mode.md
             - name: Form processing
               items:

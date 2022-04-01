@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 01/21/2021
+ms.date: 04/01/2022
 audience: ITPro
 ms.topic: article
 ms.prod: m365-security
@@ -34,9 +34,9 @@ The email entity page is available in the Microsoft 365 Defender portal at <http
 
 In **Explorer**, select the subject of an email you're investigating. A gold bar will display at the top of the email fly-out for that mail. This invitation to the new page, reads 'Try out our new email entity page with enriched data...'. Select to view the new page.
 
-:::image type="content" source="../../media/email-entities-1-navigation-to-ee.png" alt-text="You'll see a gold banner with the words *Try out our new email entity page with enriched data* to navigate to the new experience.":::
+:::image type="content" source="../../media/email-entities-1-navigation-to-ee.png" alt-text="The gold banner with the words *Try out our new email entity page with enriched data* to navigate to the new experience" lightbox="../../media/email-entities-1-navigation-to-ee.png":::
 
-:::image type="content" source="../../media/email-entities-2-eep.png" alt-text="This graphic of the email entity page focuses on headings that you'll see. Note the email header is displayed here.":::
+:::image type="content" source="../../media/email-entities-2-eep.png" alt-text="The graphic of the email entity page that focuses on headings that you'll see" lightbox="../../media/email-entities-2-eep.png":::
 
 > [!NOTE]
 > The permissions needed to view and use this page are the same as to view **Explorer**. The admin must be a member of Global admin or global reader, or Security admin or Security Reader. For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
@@ -47,15 +47,15 @@ The structure is designed to be easy to read and navigate through at a glance. V
 
 1. The most required fields are on the left side of the fly-out. These details are 'sticky', meaning they're anchored to the left no matter the tab you navigate to in the rest of the fly-out.
 
-    :::image type="content" source="../../media/email-entities-3-left-panel.png" alt-text="Graphic of the email entity page with the left side highlighted. The title and facts about the mail delivery are over here.":::
+    :::image type="content" source="../../media/email-entities-3-left-panel.png" alt-text="The Graphic of the email entity page with the left side highlighted" lightbox="../../media/email-entities-3-left-panel.png":::
 
 2. On the top-right corner are the actions that can be taken on an email. Any actions that can be taken through **Explorer** will also be available through email entity page.
 
-    :::image type="content" source="../../media/email-entities-5-preview.png" alt-text="Graphic of the email entity page with the *right* side highlighted, this time. Actions like 'Email preview' and 'Go to quarantine' are here.":::
+    :::image type="content" source="../../media/email-entities-5-preview.png" alt-text="The Graphic of the email entity page with the right side highlighted" lightbox="../../media/email-entities-5-preview.png":::
 
 3. Deeper analysis can be done by sorting through the rest of the page. Check the email detection details, email authentication status, and header. This area should be looked on a case-by-case basis, but the info in these tabs is available for any email.
 
-    :::image type="content" source="../../media/email-entities-4-middle-panel.png" alt-text="The main panel of this page includes the email header and authentication status.":::
+    :::image type="content" source="../../media/email-entities-4-middle-panel.png" alt-text="The main panel of the page which includes the email header and authentication status" lightbox="../../media/email-entities-4-middle-panel.png":::
 
 ### Use email entity page tabs
 
@@ -82,7 +82,7 @@ Admins can preview emails in Cloud mailboxes, ***if*** the mails are still prese
 
 These details are specific to email attachments and URLs. Users can see these details by going to Explorer and applying the *detection technology* filter set to file detonation or URL detonation. Emails filtered for file detonation will contain a malicious file with detonation details, and those filtered for URLs contain a malicious URL and its detonation details.
 
-Users will see enriched detonation details for known malicious attachments or URLs found in their emails, which got detonated for their specific tenant. It will comprise of Detonation chain, Detonation summary, Screenshot, and Observed behavior details to help customers understand why the attachment or URL was deemed malicious and detonated.
+Users will see enriched detonation details for known malicious attachments or URLs found in their emails, which got detonated for their specific tenant. It will include the Detonation chain, Detonation summary, Screenshot, and Observed behavior details to help customers understand why the attachment or URL was deemed malicious and detonated.
 
 1. *Detonation chain*. A single file or URL detonation can trigger multiple detonations. The Detonation chain tracks the path of detonations, including the original malicious file or URL that caused the verdict, and all other files or URLs affected by the detonation. These URLs or attached files may not be directly present in the email, but including that analysis is important to determining why the file or URL was found to be malicious.  
 
@@ -96,7 +96,7 @@ Users will see enriched detonation details for known malicious attachments or UR
 1. *Behavior Details* are an export that shows behavior details like exact events that took place during detonation, and observables that contain URLs, IPs, domains, and files that were found during detonation (and can either be problematic or benign). Be aware, there may be no behavior details for:
     - Container files like .zip or .rar that are holding other files.
 
-:::image type="content" source="../../media/email-entities-6-detonation-page.png" alt-text="Screenshot of the detonation summary showing the chain, summary, detonation details, and screenshot under the heading *Deep Analysis*.":::
+:::image type="content" source="../../media/email-entities-6-detonation-page.png" alt-text="The detonation summary showing the chain, summary, detonation details, and screenshot under the heading *Deep Analysis*" lightbox="../../media/email-entities-6-detonation-page.png":::
 
 ### Other innovations
 
@@ -113,6 +113,14 @@ Users will see enriched detonation details for known malicious attachments or UR
 - *Bulk Complaint Level (BCL)*: The bulk complaint level (BCL) of the message. A higher BCL indicates a bulk mail message is more likely to generate complaints (the natural result if the email is likely to be spam).
 
 - *Spam Confidence Level (SCL)*: The spam confidence level (SCL) of the message. A higher value indicates the message is more likely to be spam.
+
+- *Client type*: Indicates the Client type from which the email was sent like REST.
+
+- *Forwarding*: For scenarios with autoforwaridng, it indicates the forwarding user as well as the forwarding type like ETR or SMTP forwarding. 
+
+- *Distribution list*: Shows the distribution list, if the recipient receieved the email as a member of the list. It shows the top level distribution list if there are nested distribution lists involved.  
+
+- *To, Cc*: Indicates the addresses which are listed in To, Cc fields of an email. The information in these fields is restricted to 5000 characters. 
 
 - *Domain Name*: Is the sender domain name.
 

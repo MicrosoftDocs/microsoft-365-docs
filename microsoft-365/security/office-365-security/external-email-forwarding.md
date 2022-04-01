@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: 11/17/2021
 audience: ITPro
 ms.topic: overview
-
+ms.collection: M365-security-compliance
 ms.localizationpriority: medium
 ms.assetid: 
 ms.custom: 
@@ -61,16 +61,11 @@ As an admin, you might have already configured other controls to allow or block 
 
 When one setting allows external forwarding, but another setting blocks external forwarding, the block typically wins. Examples are described in the following table:
 
-<br>
-
-****
-
 |Scenario|Result|
 |---|---|
 |<ul><li>You configure remote domain settings to allow automatic forwarding.</li><li>Automatic forwarding in the outbound spam filter policy is set to **Off**.</li></ul>|Automatically forwarded messages to recipients in the affected domains are blocked.|
 |<ul><li>You configure remote domain settings to allow automatic forwarding.</li><li>Automatic forwarding in the outbound spam filter policy is set to **Automatic - System-controlled**.</li></ul>|Automatically forwarded messages to recipients in the affected domains are blocked. <p> As described earlier, **Automatic - System-controlled** used to mean **On**, but the setting has changed over time to mean **Off** in all organizations. <p> For absolute clarity, you should configure your outbound spam filter policy to **On** or **Off**.|
 |<ul><li>Automatic forwarding in the outbound spam filter policy is set to **On**</li><li>You use mail flow rules or remote domains to block automatically forwarded email.</li></ul>|Automatically forwarded messages to affected recipients are blocked by mail flow rules or remote domains.|
-|
 
 You can use this behavior (for example) to allow automatic forwarding in outbound spam filter policies, but use remote domains to control the external domains that users can forward messages to.
 
@@ -91,7 +86,8 @@ The following information is required to create the mail flow rule in the Exchan
 - (Optional) **Do the following** (action): You can configure an optional action. For example, you can use the action **Modify the message properties** \> **set a message header**, with the header name **X-Forwarded** and the value **True**. But, configuring an action is not required.
 - Set **Audit this rue with severity level** to the value **Low**, **Medium**, or **High**. This setting allows you to use the [Exchange transport rule report](view-email-security-reports.md#exchange-transport-rule-report) to get details of users that are forwarding.
 
-![Mail flow rule properties in the EAC for a rule to identify forwarded messages.](../../media/mail-flow-rule-for-forwarded-messages.png)
+:::image type="content" source="../../media/mail-flow-rule-for-forwarded-messages.png" alt-text="The Mail flow rule properties in the EAC for a rule to identify forwarded messages" lightbox="../../media/mail-flow-rule-for-forwarded-messages.png":::
+
 
 ## Blocked email forwarding messages
 
