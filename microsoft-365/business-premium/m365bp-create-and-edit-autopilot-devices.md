@@ -32,14 +32,11 @@ description: "Learn how to upload devices using AutoPilot in Microsoft 365 Busin
 # Create and edit AutoPilot devices
 
 > [!NOTE]
-> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../../security/defender-business/mdb-overview.md).
+> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../security/defender-business/mdb-overview.md).
 
 ## Upload a list of devices
 
-> [!NOTE]
-> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../../security/defender-business/mdb-overview.md)
-
-You can use the [Step-by-step guide](add-autopilot-devices-and-profile.md) to upload devices, but you can also upload devices in the **Devices** tab. 
+You can use the [Step-by-step guide](m365bp-add-autopilot-devices-and-profile.md) to upload devices, but you can also upload devices in the **Devices** tab. 
   
 Devices must meet these requirements:
   
@@ -51,9 +48,9 @@ Devices must meet these requirements:
   
 2. On the **AutoPilot** page, choose the **Devices** tab \> **Add devices**.
     
-    ![In the Devices tab, choose Add devices.](../../media/6ba81e22-c873-40ad-8a72-ce64d15ea6ba.png)
+    ![In the Devices tab, choose Add devices.](./../media/6ba81e22-c873-40ad-8a72-ce64d15ea6ba.png)
   
-3. On the **Add devices** panel, browse to a [Device list CSV file](../misc/device-list.md) that you prepared \> **Save** \> **Close**.
+3. On the **Add devices** panel, browse to a [Device list CSV-file](../admin/misc/device-list.md)  that you prepared \> **Save** \> **Close**.
     
     You can get this information from your hardware vendor, or you can use the [Get-WindowsAutoPilotInfo PowerShell script](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) to generate a CSV file. 
     
@@ -63,8 +60,8 @@ Devices must meet these requirements:
     
 2. On the **Device** panel, select a profile from the **Assigned profile** drop-down. 
     
-    If you don't have any profiles yet, see [Create and edit AutoPilot profiles](create-and-edit-autopilot-profiles.md) for instructions. 
+    If you don't have any profiles yet, see [Create and edit AutoPilot profiles](../admin/devices/create-and-edit-autopilot-profiles.md) for instructions. 
 
 ## See also
 
-[Top 10 ways to secure Microsoft 365 for business plans](../security-and-compliance/secure-your-business-data.md)
+[Top 10 ways to secure Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)

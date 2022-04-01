@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 03/18/2022
+ms.date: 04/01/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -25,12 +25,17 @@ Now that you've enrolled the devices, you must onboard them to Microsoft Defende
 To onboard devices, you can choose from several options:
 
 - [Use automatic onboarding for Windows devices that are already enrolled in Microsoft Endpoint Manager](#use-automatic-onboarding-for-windows-devices-that-are-already-enrolled-in-microsoft-endpoint-manager)
+
 - [Use a local script to onboard Windows and macOS devices](#use-a-local-script-to-onboard-windows-and-macos-devices)
+
 - [Use Endpoint Manager to enroll devices](#use-microsoft-endpoint-manager-to-enroll-devices) (Windows, macOS, iOS, and Android) and then apply Defender for Business policies to those devices
 
 This article also includes:
 
+- [How to run a detection test on a Windows device](#run-a-detection-test-on-a-windows-device)
+
 - [How to onboard devices gradually](#onboard-devices-gradually)
+
 - [How to offboard a device](#offboard-a-device) if a device is replaced or someone leaves the organization
 
 > [!IMPORTANT]
@@ -63,10 +68,9 @@ You can use a local script to onboard Windows and Mac devices. When you run the 
 
 5. Follow the guidance in the following table:
 
-   | Operating System | Procedure |
-   |---|---|
-   | Windows | 1. On a Windows device, extract the contents of the configuration package to a location, such as the Desktop folder. You should have a file named `WindowsDefenderATPLocalOnboardingScript.cmd`. <br/><br/>2. Open Command Prompt as an administrator.<br/><br/>3. Type the location of the script file. For example, if you copied the file to the Desktop folder, you would type: `%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd`, and then press the Enter key (or select **OK**).<br/><br/>4. After the script runs, proceed to [Run a detection test](#run-a-detection-test-on-a-windows-device). |
-   | macOS | 1. On a Mac computer, save the installation package as `wdav.pkg` to a local directory. <br/><br/>2. Save the onboarding package as `WindowsDefenderATPOnboardingPackage.zip` to the same directory you used for the installation package. <br/><br/>3. Use Finder to navigate to `wdav.pkg` you saved, and then open it.<br/><br/>4. Select **Continue**, agree with the License terms, and then enter your password when prompted.<br/><br/>5. You will be prompted to allow a driver from Microsoft to be installed (either "System Extension Blocked" or "Installation is on hold", or both. The driver must be allowed to be installed. To allow the installation, select **Open Security Preferences** or **Open System Preferences** > **Security & Privacy**, and then select **Allow**.<br/><br/>6. Use the following Python command in Bash to run the onboarding package: `/usr/bin/python MicrosoftDefenderATPOnboardingMacOs.py`. <br/><br/>7. To confirm that the device is associated with your organization, use the following Python command in Bash: `mdatp health --field org_id`.<br/><br/>8. If you are using macOS 10.15 (Catalina) or later, grant Defender for Business consent to protect your device. Go to **System Preferences** > **Security & Privacy** > **Privacy** > **Full Disk Access**.  Select the lock icon to make changes (bottom of the dialog box), and then select Microsoft Defender for Business (or Defender for Endpoint, if that's what you see). <br/><br/>9. To verify that the device is onboarded, use the following command in Bash: `mdatp health --field real_time_protection_enabled`.    |
+   - Windows devices: [Onboard Windows devices using a local script](../security/defender-endpoint/configure-endpoints-script.md#onboard-windows-devices-using-a-local-script)
+
+   - macOS devices: [Manual deployment for Microsoft Defender for Endpoint on macOS](../security/defender-endpoint/mac-install-manually.md#download-installation-and-onboarding-packages)
 
 ## Use Microsoft Endpoint Manager to enroll devices
 
@@ -113,10 +117,21 @@ If you prefer to onboard devices in phases, which we call *gradual device onboar
 
 If you want to offboard a device, use one of the following procedures:
 
-| Operating system | Procedure |
-|---|---|
-| Windows | 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.<br/><br/>2. In the navigation pane, choose **Settings**, and then choose **Endpoints**.<br/><br/>3. Under **Device management**, choose **Offboarding**.<br/><br/>4. Select an operating system, such as **Windows 10 and 11**, and then, under **Offboard a device**, in the **Deployment method** section, choose **Local script**. <br/><br/>5. In the confirmation screen, review the information, and then choose **Download** to proceed.<br/><br/>6. Select **Download offboarding package**. We recommend saving the offboarding package to a removable drive.<br/><br/>7. Run the script on each device that you want to offboard.| 
-| macOS | 1. Go to **Finder** > **Applications**. <br/><br/>2. Right click on Microsoft Defender for Business, and then choose **Move to Trash**. <br/><br/>--- or --- <br/><br/> Use the following command: `sudo '/Library/Application Support/Microsoft/Defender/uninstall/uninstall'`.|
+2. In the navigation pane, choose **Settings**, and then choose **Endpoints**.
+
+3. Under **Device management**, choose **Offboarding**.
+
+4. Select an operating system, such as **Windows 10 and 11**, and then, under **Offboard a device**, in the **Deployment method** section, choose **Local script**. 
+
+5. In the confirmation screen, review the information, and then choose **Download** to proceed.
+
+6. Select **Download offboarding package**. We recommend saving the offboarding package to a removable drive.
+
+7. Run the script on each device that you want to offboard. Need help with this task? See the following resources:   
+
+   - Windows devices: [Offboard Windows devices using a local script](../security/defender-endpoint/configure-endpoints-script.md#offboard-devices-using-a-local-script)
+   
+   - macOS devices: [Uninstalling on macOS](../security/defender-endpoint/mac-resources.md#uninstalling)
 
 > [!IMPORTANT]
 > Offboarding a device causes the devices to stop sending data to Defender for Business. However, data received prior to offboarding is retained for up to six (6) months.

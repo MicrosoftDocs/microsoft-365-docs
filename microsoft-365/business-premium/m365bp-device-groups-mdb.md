@@ -46,6 +46,7 @@ You can create a new device group while you are in the process of creating or ed
 3. Take one of the following actions:
 
     1. Select an existing policy, and then choose **Edit**.
+    
     2. Choose **+ Add** to create a new policy.
 
     > [!TIP]
