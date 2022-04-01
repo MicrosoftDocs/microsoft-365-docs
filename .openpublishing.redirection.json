@@ -358,7 +358,7 @@
     {
       "source_path": "microsoft-365/business/pre-requisites-for-data-protection.md",
       "redirect_url": "/microsoft-365/business-premium/index",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/business/increase-threat-protection.md",
