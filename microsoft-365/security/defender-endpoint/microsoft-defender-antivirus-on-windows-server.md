@@ -189,7 +189,8 @@ See [Configure exclusions in Microsoft Defender Antivirus on Windows Server](con
 
 If you’re using a non-Microsoft antivirus product as your primary antivirus solution on Windows Server, you must set Microsoft Defender Antivirus to passive mode or disabled mode. If your Windows Server endpoint is onboarded to Microsoft Defender for Endpoint, you can set Microsoft Defender Antivirus to passive mode. If you're not using Microsoft Defender for Endpoint, set Microsoft Defender Antivirus to disabled mode. 
 
-For more information, see [Microsoft Defender Antivirus compatibility with other security products](microsoft-defender-antivirus-compatibility.md).
+> [!TIP]
+> See [Microsoft Defender Antivirus compatibility with other security products](microsoft-defender-antivirus-compatibility.md).
 
 The following table describes methods to set Microsoft Defender Antivirus to passive mode, disable Microsoft Defender Antivirus, and uninstall Microsoft Defender Antivirus:
 
