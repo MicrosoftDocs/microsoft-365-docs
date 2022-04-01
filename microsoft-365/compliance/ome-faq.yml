@@ -121,6 +121,11 @@ sections:
           Yes. The maximum message size you can send with OME, including attachments, is 25 MB. For more information, see [Message limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits-1).
           
       - question: |
+          What type of messages does OME portal support?
+        answer: |
+          OME portal only supports mail. It does not support other message types such as calendar or voice mail.
+          
+      - question: |
           What file types are supported as attachments in protected emails? Do attachments inherit the protection policies associated with protected emails?
         answer: |
           You can attach any file type to a protected mail. With one exception, protection policies are applied only on the file formats mentioned in [File types supported by the Azure Information Protection client](/information-protection/rms-client/client-admin-guide-file-types). OME does not support the 97-2003 versions of the following Office programs: Word (.doc), Excel (.xls), and PowerPoint (.ppt).
