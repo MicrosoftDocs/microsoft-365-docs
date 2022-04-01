@@ -53,44 +53,31 @@ The process of setting up and running Microsoft Defender Antivirus on Windows Se
 
 By default, Microsoft Defender Antivirus is installed and functional on Windows Server. Sometimes, the user interface (GUI) is installed by default. The GUI isn’t required; you can use PowerShell, Group Policy, or other methods to manage Microsoft Defender Antivirus. However, many organizations prefer to use the GUI for Microsoft Defender Antivirus. To install the GUI, use one of the procedures in the following table:
 
+| Procedure | What to do |
+|:---|:---|
 | Turn on the GUI using the Add Roles and Features Wizard | 1. See [Install roles, role services, and features by using the add Roles and Features Wizard](/windows-server/administration/server-manager/install-or-uninstall-roles-role-services-or-features#install-roles-role-services-and-features-by-using-the-add-roles-and-features-wizard), and use the **Add Roles and Features Wizard**. <br/><br/>2. When you get to the **Features** step of the wizard, under **Windows Defender Features**, select the **GUI for Windows Defender** option. |
 | Turn on the GUI using PowerShell | 1. On your Windows Server, open Windows PowerShell as an administrator. <br/><br/>2. Run the following PowerShell cmdlet: `Install-WindowsFeature -Name Windows-Defender-GUI` |
 
 ## Install Microsoft Defender Antivirus on Windows Server
 
-If you need to install or reinstall Microsoft Defender Antivirus on Windows Server, you can do that by using either the [Add Roles and Features Wizard](#use-the-add-roles-and-features-wizard-to-install-microsoft-defender-antivirus) or [Windows PowerShell](#use-powershell-to-install-microsoft-defender-antivirus).
+If you need to install or reinstall Microsoft Defender Antivirus on Windows Server, use one of the procedures in the following table:
 
-### Use the Add Roles and Features Wizard to install Microsoft Defender Antivirus
+| Procedure | What to do |
+|:---|:---|
+| Use the Add Roles and Features Wizard to install Microsoft Defender Antivirus | 1. See [Install or Uninstall Roles, Role Services, or Features](/windows-server/administration/server-manager/install-or-uninstall-roles-role-services-or-features#install-roles-role-services-and-features-by-using-the-add-roles-and-features-wizard), and use the **Add Roles and Features Wizard**. <br/><br/>2. When you get to the **Features** step of the wizard, select the Microsoft Defender Antivirus option. Also select the **GUI for Windows Defender** option. |
+| Use PowerShell to install Microsoft Defender Antivirus | 1. On your Windows Server, open Windows PowerShell as an administrator. <br/><br/>2. Run the following PowerShell cmdlet: `Install-WindowsFeature -Name Windows-Defender` |
 
-1. See [Install or Uninstall Roles, Role Services, or Features](/windows-server/administration/server-manager/install-or-uninstall-roles-role-services-or-features#install-roles-role-services-and-features-by-using-the-add-roles-and-features-wizard), and use the **Add Roles and Features Wizard**.
-
-2. When you get to the **Features** step of the wizard, select the Microsoft Defender Antivirus option. Also select the **GUI for Windows Defender** option.
-
-### Use PowerShell to install Microsoft Defender Antivirus
-
-1. On your Windows Server, open Windows PowerShell as an administrator.
-
-2. Run the following PowerShell cmdlet:
-
-   ```powershell
-   Install-WindowsFeature -Name Windows-Defender
-   ```
-
-Event messages for the antimalware engine included with Microsoft Defender Antivirus can be found in [Microsoft Defender Antivirus Events](troubleshoot-microsoft-defender-antivirus.md).
+> [!NOTE]
+> Event messages for the antimalware engine included with Microsoft Defender Antivirus can be found in [Microsoft Defender Antivirus Events](troubleshoot-microsoft-defender-antivirus.md).
 
 ## Verify Microsoft Defender Antivirus is running
 
-After you've installed (or reinstalled) Microsoft Defender Antivirus, your next step is to verify that it's running. On your Windows Server endpoint, run the following PowerShell cmdlet:
+After you've installed (or reinstalled) Microsoft Defender Antivirus, your next step is to verify that it's running. Use the PowerShell cmdlets in the following table:
 
-```powershell
-Get-Service -Name windefend
-```
-
-To verify that firewall protection is turned on, run the following PowerShell cmdlet:
-
-```powershell
-Get-Service -Name mpssvc
-```
+| Procedure | PowerShell cmdlet |
+|:---|:---|
+| Verify that Microsoft Defender Antivirus is running | `Get-Service -Name windefend` |
+| Verify that firewall protection is turned on | `Get-Service -Name mpssvc` |
 
 As an alternative to PowerShell, you can use Command Prompt to verify that Microsoft Defender Antivirus is running. To do that, run the following command from a command prompt:
 
