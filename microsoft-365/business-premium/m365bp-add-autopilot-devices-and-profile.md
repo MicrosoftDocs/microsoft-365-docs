@@ -52,7 +52,7 @@ If you haven't created device groups or profiles yet, the best way to get starte
 
 2. On the left navigation pane, choose **Devices** \> **AutoPilot**.
 
-    ![In the admin center, choose devices and then AutoPilot.](../../media/AutoPilot.png)
+    ![In the admin center, choose devices and then AutoPilot.](../media/AutoPilot.png)
   
 2. On the **AutoPilot** page, click or tap **Start guide**.
     
