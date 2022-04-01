@@ -40,9 +40,18 @@ When you sign up for Microsoft 365, Microsoft provides an *onmicrosoft.com* doma
 
 It serves as a default email routing address for your Microsoft 365 environment. When a user is setup with a mailbox, email is routed to the fallback domain.  Even if a custom domain is used (for example, tailspintoys.com), if that custom domain is deleted from your Microsoft 365 environment, the fallback domain ensures that your users email is successfully routed.
 
-While you can add additional onmicrosoft.com domains (limit of three), only one onmicrosoft.com domain can be used as your fallback domain. The steps in this article describes how to:
+You can change your fallback domain in the Microsoft 365 admin center. Common reasons customers change their fallback name include:
+
+- Not knowing the company name to use when they first signed up for Microsoft 365. Now that they know the company name, they want their users to have login account names that are appropriate. 
+- They want to change how their Sharepoint URLs look like when they create a new site.. SharePoint URLs in your Microsoft 365 environment are created based on your fallback domain name. If you did not use the correct company name when you first signed up, your SharePoint URLs for your sites will continue to use that name when you create new SharePoint sites. 
+
+
+While you can add additional onmicrosoft.com domains, only one onmicrosoft.com domain can be used as your fallback domain. The steps in this article describes how to:
 - Create a new onmicrosoft.com domain
 - Assign it as your fallback domain
+
+> [!NOTE]
+> You are limited a total of five onmicrosoft.com domains in your Microsoft 365 environment. Once they are added, currently they cannot be removed. 
   
 ## Before you begin
 
@@ -60,10 +69,13 @@ To add, modify, or remove domains, you **must** be a **Domain Name Administrator
 
     ![Screenshot of Domains page.](../../media/add-onmicrosoft-domain-link.png)
 
-4. In the **Add onmicrosoft domain** page, in the **Domain name** box, type the name for your new onmicrosoft.com domain.
+4. In the **Add onmicrosoft domain** page, in the **Domain name** box, type the name for your new onmicrosoft.com domain. 
 
     ![Screenshot of Add onmicrosoft domain page.](../../media/add-an-onmicrosoftcom-domain-page.png)
-    
+
+    > [!NOTE]
+    > Make sure to verify the spelling and accuracy of the domain name you entered. You are limited to five onmicrosoft.com domains, and currently they cannot be deleted once they are created.     
+
 5. Select **Add domain**. When successfully added, you will see a message stating this. 
     
     ![Screenshot of domain added successfully.](../../media/domain-added.png)
