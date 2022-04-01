@@ -51,33 +51,10 @@ The process of setting up and running Microsoft Defender Antivirus on Windows Se
 > [!IMPORTANT]
 > If you're using Windows Server 2012 R2, see [Options to install Microsoft Defender for Endpoint](configure-server-endpoints.md#options-to-install-the-microsoft-defender-for-endpoint-packages).
 
-By default, Microsoft Defender Antivirus is installed and functional on Windows Server. Sometimes, the user interface (GUI) is installed by default. The GUI isn’t required; you can use PowerShell, Group Policy, or other methods to manage Microsoft Defender Antivirus. However, many organizations prefer to use the GUI for Microsoft Defender Antivirus. To install the GUI, use one of the following procedures:
+By default, Microsoft Defender Antivirus is installed and functional on Windows Server. Sometimes, the user interface (GUI) is installed by default. The GUI isn’t required; you can use PowerShell, Group Policy, or other methods to manage Microsoft Defender Antivirus. However, many organizations prefer to use the GUI for Microsoft Defender Antivirus. To install the GUI, use one of the procedures in the following table:
 
-- [Turn on the GUI using the Add Roles and Features Wizard](#turn-on-the-gui-using-the-add-roles-and-features-wizard)
-
-- [Turn on the GUI using PowerShell](#turn-on-the-gui-using-powershell)
-
-### Turn on the GUI using the Add Roles and Features Wizard
-
-1. See [Install roles, role services, and features by using the add Roles and Features Wizard](/windows-server/administration/server-manager/install-or-uninstall-roles-role-services-or-features#install-roles-role-services-and-features-by-using-the-add-roles-and-features-wizard), and use the **Add Roles and Features Wizard**.
-
-2. When you get to the **Features** step of the wizard, under **Windows Defender Features**, select the **GUI for Windows Defender** option.
-
-   In Windows Server 2016, the **Add Roles and Features Wizard** looks like this:
-
-   :::image type="content" source="images/server-add-gui.png" alt-text="The Add roles and feature wizard showing the GUI for Windows Defender option." lightbox="images/server-add-gui.png":::
-
-   In Windows Server 2019 and Windows Server 2022, the **Add Roles and Feature Wizard** is similar.
-
-### Turn on the GUI using PowerShell
-
-1. On your Windows Server, open Windows PowerShell as an administrator.
-
-2. Run the following PowerShell cmdlet:
-
-   ```powershell
-   Install-WindowsFeature -Name Windows-Defender-GUI
-   ```
+| Turn on the GUI using the Add Roles and Features Wizard | 1. See [Install roles, role services, and features by using the add Roles and Features Wizard](/windows-server/administration/server-manager/install-or-uninstall-roles-role-services-or-features#install-roles-role-services-and-features-by-using-the-add-roles-and-features-wizard), and use the **Add Roles and Features Wizard**. <br/><br/>2. When you get to the **Features** step of the wizard, under **Windows Defender Features**, select the **GUI for Windows Defender** option. |
+| Turn on the GUI using PowerShell | 1. On your Windows Server, open Windows PowerShell as an administrator. <br/><br/>2. Run the following PowerShell cmdlet: `Install-WindowsFeature -Name Windows-Defender-GUI` |
 
 ## Install Microsoft Defender Antivirus on Windows Server
 
