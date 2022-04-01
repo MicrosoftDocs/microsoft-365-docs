@@ -8,8 +8,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: v-jweston
+author: jweston-1
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -111,7 +111,7 @@ Two cards, [Antivirus mode](#antivirus-mode) and [Recent antivirus scan results]
 
 The remaining six cards report the Microsoft Defender Antivirus status for devices in your organization:
 
-| version_ cards: | _update_ cards{<a id="fn1">1</a>} |
+| _version_ cards: | _update_ cards{<a id="fn1">1</a>} |
 |:---|:---|
 | [Antivirus engine version](#antivirus-engine-version) <br> [Antivirus security intelligence version](#antivirus-security-intelligence-version) <br> [Antivirus platform version](#antivirus-platform-version) | [Antivirus engine updates](#antivirus-engine-updates) <br> [Security intelligence updates](#security-intelligence-updates) <br> [Antivirus platform updates](#antivirus-platform-updates)  |
 
@@ -192,7 +192,7 @@ Definition of ‘**Up to date**’ – the security intelligence version on the 
 
 <!-- Hide {this intro with no subsequent list items}
 [Confirm that it is versus as apposed to "out of date" only.]
--->c
+-->
 
 <!-- Hide {this intro with no subsequent list items}
 [link - https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus?view=o365-worldwide#security-intelligence-updates]
