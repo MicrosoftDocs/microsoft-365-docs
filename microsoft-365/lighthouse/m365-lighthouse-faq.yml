@@ -75,7 +75,7 @@ sections:
 
       - question: Will Microsoft 365 Lighthouse work if my customer tenants have other subscriptions besides Microsoft 365 Business Premium, Microsoft 365 E3, or Windows 365 Business?
         answer: |
-          Lighthouse helps you manage customer tenants that have Microsoft 365 Business Premium, Microsoft 365 E3 licenses, or Windows 365 Business in place for their users. For users in customer tenants who don't have these licenses, Lighthouse functionality will be limited. For example, if a user is missing a license that includes Intune, that user's devices, device compliance status, and threats status will be unavailable; and if a user is missing a license that includes Azure AD P1, that user's password and sign-in management will be unavailable. For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
+          Lighthouse helps you manage customer tenants that have Microsoft 365 Business Premium, Microsoft 365 E3, or Windows 365 Business licenses in place for their users. For users in customer tenants who don't have these licenses, Lighthouse functionality will be limited. For example, if a user is missing a license that includes Intune, that user's devices, device compliance status, and threats status will be unavailable; and if a user is missing a license that includes Azure AD P1, that user's password and sign-in management will be unavailable. For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
 
       - question: How do I qualify to manage customer Cloud PCs in Microsoft 365 Lighthouse?
         answer: |
