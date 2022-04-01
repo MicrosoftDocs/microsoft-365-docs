@@ -23,7 +23,9 @@ This article lists new and updated articles in the [Microsoft Managed Desktop do
 
 New or changed article | Description
 --- | ---
-| [Configurable settings reference](working-with-managed-desktop/config-setting-ref.md) | Added additional Proxy requirements |
+| [Device images](service-description/device-images.md) | Added Windows 10 Pro section |
+| [Admin support](working-with-managed-desktop/admin-support.md) | Added severity note to the Edit case details section |
+| [Configurable settings reference](working-with-managed-desktop/config-setting-ref.md) | Added additional proxy requirements |
 | [Localize the user experience](get-started/localization.md) | Added note to the Install more languages section |
 | [Configurable settings reference](working-with-managed-desktop/config-setting-ref.md) | Added note about legacy Edge |
 
