@@ -2,8 +2,8 @@
 title: "Reset Windows 10 devices to their factory settings"
 f1.keywords:
 - NOCSH
-ms.author: sharik
-author: skjerland
+ms.author: deniseb
+author: denisebmsft
 manager: scotv
 audience: Admin
 ms.topic: article
