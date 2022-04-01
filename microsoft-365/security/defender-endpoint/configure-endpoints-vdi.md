@@ -22,6 +22,11 @@ ms.technology: mde
 
 # Onboard non-persistent virtual desktop infrastructure (VDI) devices in Microsoft 365 Defender
 
+Virtual desktop infrastructure (VDI) is an IT infrastructure concept that lets end users access enterprise virtual desktops instances from almost any device (such as your personal computer, smartphone, or tablet), eliminating the need for organization to provide users with physical machines. Using VDI devices reduce cost as IT departments are no longer responsible for managing, repairing, and replacing physical endpoints. Authorized users can access the same company servers, files, apps, and services from any approved device through a secure desktop client or browser.
+
+Like any other system in an IT environment, these too should have an Endpoint Detection and Response (EDR) and Antivirus solution to protect against advanced threats and attacks.
+
+
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
@@ -39,15 +44,16 @@ ms.technology: mde
 
 Defender for Endpoint supports non-persistent VDI session onboarding.
 
-There might be associated challenges when onboarding VDIs. The following are typical challenges for this scenario:
+There might be associated challenges when onboarding VDI instances. The following are typical challenges for this scenario:
 
 - Instant early onboarding of a short-lived session, which must be onboarded to Defender for Endpoint prior to the actual provisioning.
 - The device name is typically reused for new sessions.
 
-VDI devices can appear in Defender for Endpoint portal as either:
+In a VDI environment, VDI instances can have short lifespans. VDI devices can appear in Defender for Endpoint portal as either:
 
 
-- Single entry for each device. If the machine is deleted and a new machine is created with the same host name, a new object will be created in the portal. 
+- Single portal entry for each VDI instance. If the VDI instance was already onboarded to Microsoft Defender for Endpoint and at some point deleted then  recreated with the same host name, a new object representing this VDI instance will NOT be created in the portal. 
+
 
   > [!NOTE]
   > In this case, the *same* device name must be configured when the session is created, for example using an unattended answer file.

@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: 09/18/2020
 audience: ITPro
 ms.topic: overview
-
+ms.collection: M365-security-compliance
 ms.localizationpriority: medium
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 ms.custom: 
@@ -40,7 +40,7 @@ The rest of this article explains how EOP works and the features that are availa
 
 To understand how EOP works, it helps to see how it processes incoming email:
 
-:::image type="content" source="../../media/tp_emailprocessingineopt3.png" alt-text="Graphic of email from the internet or Customer feedback passing into EOP and through the Connection, Anti-malware, Mailflow Rules-slash-Policy Filtering, and Content Filtering, before the verdict of either junk mail or quarantine, or end user mail delivery.":::
+:::image type="content" source="../../media/tp_emailprocessingineopt3.png" alt-text="Graphic of email from the internet or Customer feedback passing into EOP and through the Connection, Anti-malware, Mailflow Rules-slash-Policy Filtering, and Content Filtering, before the verdict of either junk mail or quarantine, or end user mail delivery" lightbox="../../media/tp_emailprocessingineopt3.png":::
 
 1. When an incoming message enters EOP, it initially passes through connection filtering, which checks the sender's reputation. The majority of spam is stopped at this point and rejected by EOP. For more information, see [Configure connection filtering](configure-the-connection-filter-policy.md).
 

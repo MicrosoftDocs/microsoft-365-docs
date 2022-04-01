@@ -4593,6 +4593,7 @@
     {
       "source_path": "microsoft-365/business-video/index.yml",
       "redirect_url": "/microsoft-365/admin/admin-video-library",
+      "redirect_document_id": true
     },
     {
       "source_path": "microsoft-365/security/defender-endpoint/get-assessmnt-1methods-properties.md",
@@ -6557,6 +6558,7 @@
     {
       "source_path": "microsoft-365/security/defender/m365d-whats-new.md",
       "redirect_url": "/microsoft-365/security/defender/whats-new?view=o365-worldwide",
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/defender-endpoint/old-index.md",
@@ -6740,18 +6742,33 @@
     },    
     {
     "source_path": "microsoft-365/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md",
-    "redirect_url": "/microsoft-365/business-premium/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o",
+    "redirect_url": "/microsoft-365/solutions/productivity-illustrations#security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations",
     "redirect_document_id": true
-    },    
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/alerts.md",
+      "redirect_url": "/microsoft-365/security/defender/investigate-alerts",
+      "redirect_document_id": true
+    }, 
     {
     "source_path": "microsoft-365/compliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md",
     "redirect_url": "/microsoft-365/compliance/compliance-manager",
     "redirect_document_id": false
     },    
+        {
+    "source_path": "microsoft-365/business-premium/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md",
+    "redirect_url": "/microsoft-365/solutions/productivity-illustrations#security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations",
+    "redirect_document_id": false
+    },
     {
     "source_path": "microsoft-365/compliance/compliance-manager-and-the-gdpr.md",
     "redirect_url": "/microsoft-365/compliance/compliance-manager",
     "redirect_document_id": false
     },
+    {
+      "source_path": "microsoft-365/lighthouse/m365-lighthouse-set-up-roles.md",
+      "redirect_url": "/microsoft-365/lighthouse/m365-lighthouse-overview-of-permissions",
+      "redirect_document_id": true
+    } 
   ]
 }

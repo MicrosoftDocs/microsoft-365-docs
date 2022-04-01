@@ -90,11 +90,11 @@ If you're properly connected, you'll see a warning Microsoft Defender Antivirus 
 
 If you're using Microsoft Edge, you'll also see a notification message:
 
-:::image type="content" source="../../media/wdav-bafs-edge.png" alt-text="Screenshot of notification that malware was found in Azure IoT Edge.":::
+:::image type="content" source="../../media/wdav-bafs-edge.png" alt-text="The notification that malware was found in Edge" lightbox="../../media/wdav-bafs-edge.png":::
 
 A similar message occurs if you're using Internet Explorer:
 
-:::image type="content" source="../../media/wdav-bafs-ie.png" alt-text="Microsoft Defender AV notification that malware was found.":::
+:::image type="content" source="../../media/wdav-bafs-ie.png" alt-text="The Microsoft Defender AV notification that malware was found" lightbox="../../media/wdav-bafs-ie.png":::
 
 #### View the fake malware detection in your Windows Security app
 

@@ -50,9 +50,7 @@ Allow senders (or domains) on the **Submissions** page in Microsoft 365 Defender
 
 7. When you're finished, click the **Submit** button.
 
-> [!div class="mx-imgBorder"]
 > ![Submit malware to Microsoft for analysis example.](../../media/admin-submission-allow-messages.png)
-
 ## Add URL allows using the Submissions portal
 
 Allow URLs on the **Submissions** page in Microsoft 365 Defender.
@@ -73,7 +71,6 @@ Allow URLs on the **Submissions** page in Microsoft 365 Defender.
 
 > [!div class="mx-imgBorder"]
 > ![Submit URL for analysis.](../../media/submit-url-for-analysis.png)
-
 ## Add File allows using the Submissions portal
 
 Allow Files  on the **Submissions** page in Microsoft 365 Defender.
