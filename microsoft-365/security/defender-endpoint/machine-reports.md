@@ -44,7 +44,7 @@ The devices status report provides high-level information about the devices in y
 In the Microsoft 365 Security dashboard navigation panel, select **Reports**, and then open **Device health and compliance**.
 The Device health and compliance dashboard is structured in two tabs:
 
-- The [**Sensor health & OS** tab](#sensor-health-&-os-tab) provides general operating system information, divided into three cards that display the following device attributes:
+- The [**Sensor health & OS** tab](#sensor-health--os-tab) provides general operating system information, divided into three cards that display the following device attributes:
   - [Sensor health](#sensor-health)
   - [Operating systems and platforms](#os-systems-and-platforms)
   - [Windows 10 versions](#windows-10-versions)
@@ -107,16 +107,15 @@ The Windows version trend graph can help you quickly determine whether your orga
 
 The Microsoft Defender Antivirus health tab contains eight cards that report on several aspects of Microsoft Defender Antivirus in your organization:
 
-Two cards, [Antivirus mode](#antivirus-mode) and [Recent antivirus scan results](#recent-antivirus-scan-results), report about Microsoft Defender Antivirus functions. 
+Two cards, [Antivirus mode](#antivirus-mode) and [Recent antivirus scan results](#recent-antivirus-scan-results), report about Microsoft Defender Antivirus functions.
 
-The remaining six cards report about the Microsoft Defender Antivirus _versions_ and _updates_ for devices in your organization:
+The remaining six cards report the Microsoft Defender Antivirus status for devices in your organization:
 
-|  |  |  |  |
-|:---|:---|:---|:---|
-| **Versions**: | [Antivirus engine version](#antivirus-engine-version) | [Antivirus security intelligence version](#antivirus-security-intelligence-version) | [Antivirus platform version](#antivirus-platform-version) |
-| **Updates**:<sup>{[1](#fn1)}</sup>| [Antivirus engine updates](#antivirus-engine-updates) | [Security intelligence updates](#security-intelligence-updates) | [Antivirus platform updates](#antivirus-platform-updates) |
+| version_ cards: | _update_ cards{<a id="fn1">1</a>} |
+|:---|:---|
+| [Antivirus engine version](#antivirus-engine-version) <br> [Antivirus security intelligence version](#antivirus-security-intelligence-version) <br> [Antivirus platform version](#antivirus-platform-version) | [Antivirus engine updates](#antivirus-engine-updates) <br> [Security intelligence updates](#security-intelligence-updates) <br> [Antivirus platform updates](#antivirus-platform-updates)  |
 
-{<a id="fn1">1</a>} For the three _updates_ cards, "**No data available**" indicates devices that are not reporting update status. This can be do to a variety of reasons, such as:
+<sup>{[1](#fn1)}</sup> For the three _updates_ cards, "**No data available**" indicates devices that are not reporting update status. This can be do to a variety of reasons, such as:
 
 - Computer is disconnected from the network
 - Computer is powered down or in a hibernation state
