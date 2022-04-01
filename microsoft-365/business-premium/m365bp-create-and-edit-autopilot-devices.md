@@ -32,7 +32,7 @@ description: "Learn how to upload devices using AutoPilot in Microsoft 365 Busin
 # Create and edit AutoPilot devices
 
 > [!NOTE]
-> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../../security/defender-business/mdb-overview.md).
+> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../security/defender-business/mdb-overview.md).
 
 ## Upload a list of devices
 
@@ -48,7 +48,7 @@ Devices must meet these requirements:
   
 2. On the **AutoPilot** page, choose the **Devices** tab \> **Add devices**.
     
-    ![In the Devices tab, choose Add devices.](../../media/6ba81e22-c873-40ad-8a72-ce64d15ea6ba.png)
+    ![In the Devices tab, choose Add devices.](./../media/6ba81e22-c873-40ad-8a72-ce64d15ea6ba.png)
   
 3. On the **Add devices** panel, browse to a [Device list CSV file](../misc/device-list.md) that you prepared \> **Save** \> **Close**.
     
@@ -64,4 +64,4 @@ Devices must meet these requirements:
 
 ## See also
 
-[Top 10 ways to secure Microsoft 365 for business plans](../security-and-compliance/secure-your-business-data.md)
+[Top 10 ways to secure Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)
