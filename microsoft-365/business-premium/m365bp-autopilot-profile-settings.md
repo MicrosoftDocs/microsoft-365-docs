@@ -57,4 +57,4 @@ You can use AutoPilot profiles to control how Windows is installed on user devic
 
 ## See also
 
-[Top 10 ways to secure Microsoft 365 for business plans](../security-and-compliance/secure-your-business-data.md)
+[Top 10 ways to secure Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)
