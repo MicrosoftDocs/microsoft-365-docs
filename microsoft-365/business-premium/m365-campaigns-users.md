@@ -37,7 +37,9 @@ The security recommendations for Microsoft 365 in this solution make it much har
 All users should be aware of and use these email practices to help keep their email secure:
 
 - Set up email to use multi-factor authentication with the authenticator app.
-- Verify legitimate emails and look for safety tips from Advanced Phishing in Defender for Office 365 Protection.
+
+- Verify legitimate emails and look for safety tips from advanced phishing protection (Defender for Office 365).
+
 - Open only safe links and attachments, as verified by Safe Links and Safe Attachments.
 
 Learn more about [multi-factor authentication](m365bp-multifactor-authentication.md) and [phishing and other attacks](m365-campaigns-phishing-and-attacks.md).
@@ -49,7 +51,9 @@ Download an [infographic](m365-campaigns-protect-campaign-infographic.md) with t
 All users you add to your environment will need to take a few minutes to [setup iPhones and Android devices](../business/set-up-mobile-devices.md) to work securely:
 
 - Set up devices to use multi-factor authentication with the authenticator app.
+
 - Use Microsoft mobile apps, including Outlook Mobile, Word, OneDrive, and other Microsoft apps from the app store. The native mail apps that are included on iPhones and Android devices aren't supported. 
+
 - Require a PIN for users to unlock their device.
 
 After setting these up, your users will be prompted to use the authenticator app when accessing your organization data on these devices, including mail.
@@ -59,6 +63,7 @@ After setting these up, your users will be prompted to use the authenticator app
 It's also important that users keep their primary work device up to date:
 
 - Install the latest versions of Office desktop apps and keep these fresh with updates, when prompted.
+
 - Stay on top of operating system updates, such as Windows updates.
 
 For [unmanaged Windows 10 and Mac devices](m365bp-protect-pcs-macs.md), users have the responsibility to ensure that basic security features are enabled.

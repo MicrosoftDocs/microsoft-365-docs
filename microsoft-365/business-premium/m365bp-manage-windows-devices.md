@@ -87,7 +87,7 @@ Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.c
   
         -  Add the desired domain users synced in Azure AD to a [security group](/admin/create-groups/create-groups.md).
   
-        -  Choose **Select groups** to enable MDM user scope for that security group.
+       -  Choose **Select groups** to enable MDM user scope for that security group.
 
 ## 4. Create the required resources 
 

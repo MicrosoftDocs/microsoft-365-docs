@@ -46,7 +46,7 @@ Devices must meet these requirements:
     
 ## Use the setup guide to create devices and profiles
 
-If you haven't created device groups or profiles yet, the best way to get started is by using the step-by-step guide. You can also [add AutoPilot devices](m365bp-create-and-edit-autopilot-devices.md) and [assign profiles](m365bp-create-and-edit-autopilot-profiles.md) to them without using the guide. 
+If you haven't created device groups or profiles yet, the best way to get started is by using the step-by-step guide. You can also [add AutoPilot devices](m365bp-create-and-edit-autopilot-devices.md) and [assign profiles](../admin/devices/create-and-edit-autopilot-profiles.md) to them without using the guide. 
   
 1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
 
@@ -96,5 +96,6 @@ If you haven't created device groups or profiles yet, the best way to get starte
 ## Related content
 
 - [About AutoPilot Profile settings](../business-premium/m365bp-autopilot-profile-settings.md) (article)\
+
 - [Options for protecting your devices and app data](../admin/devices/choose-device-security.md) (article)
 - [Top 10 ways to secure Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)
