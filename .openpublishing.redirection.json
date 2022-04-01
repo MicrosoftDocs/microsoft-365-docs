@@ -6826,11 +6826,6 @@
     "redirect_document_id": false
     },
     {
-    "source_path": "microsoft-365/admin/misc/secure-windows-10-devices.md",
-    "redirect_url": "/microsoft-365/business-premium/m365bp-secure-windows-devices",
-    "redirect_document_id": false
-    },
-    {
     "source_path": "microsoft-365/admin/security-and-compliance/pre-requisites-for-data-protection.md",
     "redirect_url": "/microsoft-365/business-premium/index",
     "redirect_document_id": false
