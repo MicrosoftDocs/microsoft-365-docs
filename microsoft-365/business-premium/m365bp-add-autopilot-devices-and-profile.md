@@ -97,4 +97,4 @@ If you haven't created device groups or profiles yet, the best way to get starte
 
 - [About AutoPilot Profile settings](../business-premium/m365bp-autopilot-profile-settings.md) (article)\
 - [Options for protecting your devices and app data](../admin/devices/choose-device-security.md) (article)
-- [Top 10 ways to secure Microsoft 365 for business plans](..admin/security-and-compliance/secure-your-business-data.md)
+- [Top 10 ways to secure Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)
