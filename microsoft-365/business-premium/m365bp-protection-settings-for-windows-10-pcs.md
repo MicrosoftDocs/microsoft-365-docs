@@ -32,7 +32,11 @@ description: "Learn about settings available in Microsoft 365 for business to se
 This article applies to Microsoft 365 Business Premium.
 
 > [!NOTE]
+<<<<<<< Updated upstream
 > Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [See overview of Microsoft Defender for Business](../security/defender-business/mdb-overview.md).
+=======
+> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../security/defender-business/mdb-overview.md).
+>>>>>>> Stashed changes
 
 After you have set set up default Windows protection settings on the Setup page, you can add new ones that apply to either all users, or a set of users. You can also edit any of the ones you have created.
 

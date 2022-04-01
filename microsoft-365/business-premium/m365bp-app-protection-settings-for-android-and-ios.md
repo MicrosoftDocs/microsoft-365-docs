@@ -33,7 +33,7 @@ description: "Learn how to create, edit, or delete an app management policy, and
 This article applies to Microsoft 365 Business Premium.
 
 > [!NOTE]
-> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../security/defender-business/mdb-overview.md).
+> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../business-premium/m365bp-app-protection-settings-for-android-and-ios.md).
 
 ## Watch: Secure Office apps on iOS
 
@@ -69,7 +69,7 @@ You can set up a user access policy that requires mobile users to enter a PIN or
     
     You can always use the **Reset default settings** link to return to the default setting. 
     
-    ![Screenshot of Create a policy with Application management for Android selected.](./../media/eabbe06d-ac0a-4f3a-8630-68c808b1e662.png)
+    ![Screenshot of Create a policy with Application management for Android selected.](/media/eabbe06d-ac0a-4f3a-8630-68c808b1e662.png)
   
 6. Next decide **Who will get these settings?** If you don't want to use the default **All Users** security group, choose **Change**, choose the security groups that get these settings \> **Select**.
     
