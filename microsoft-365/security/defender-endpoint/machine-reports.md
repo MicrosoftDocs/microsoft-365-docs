@@ -44,20 +44,22 @@ The devices status report provides high-level information about the devices in y
 In the Microsoft 365 Security dashboard navigation panel, select **Reports**, and then open **Device health and compliance**.
 The Device health and compliance dashboard is structured in two tabs:
 
-- The [**Sensor health** tab](#sensor-health-tab) provides general operating system information, divided into three cards that display the following device attributes:
-
+- The [**Sensor health & OS** tab](#sensor-health-&-os-tab) provides general operating system information, divided into three cards that display the following device attributes:
   - [Sensor health](#sensor-health)
   - [Operating systems and platforms](#os-systems-and-platforms)
   - [Windows 10 versions](#windows-10-versions)
 
-- The [**Microsoft Defender Antivirus health** tab](#microsoft-defender-antivirus-health-tab) has eight cards organized in four columns that report on aspects of Microsoft Defender Antivirus:
+- The [**Microsoft Defender Antivirus health** tab](#microsoft-defender-antivirus-health-tab) has eight cards that report on aspects of Microsoft Defender Antivirus:
+  - [Antivirus mode](#antivirus-mode)
+  - [Antivirus engine version](#antivirus-engine-version)
+  - [Antivirus security intelligence version](#antivirus-security-intelligence-version)
+  - [Antivirus platform version](#antivirus-platform-version)
+  - [Recent antivirus scan results](#recent-antivirus-scan-results)
+  - [Antivirus engine updates](#antivirus-engine-updates)
+  - [Security intelligence updates](#security-intelligence-updates)
+  - [Antivirus platform updates](#antivirus-platform-updates)
 
-| first column | second column | third column | fourth column |
-|:---|:---|:---|:---|
-| [Antivirus mode](#antivirus-mode) | [Antivirus engine version](#antivirus-engine-version) | [Antivirus security intelligence version](#antivirus-security-intelligence-version) | [Antivirus platform version](#antivirus-platform-version)
-| [Recent antivirus scan results](#recent-antivirus-scan-results) | [Antivirus engine updates](#antivirus-engine-updates) | [Security intelligence updates](#security-intelligence-updates) | [Antivirus platform updates](#antivirus-platform-updates) |
-
-### Sensor health tab
+### Sensor health & OS tab
 
 Each of the three cards on the **Sensor health** tab have two reporting sections, _Current state_ and _device trends_, presented as graphs:
 
@@ -103,12 +105,22 @@ The Windows version trend graph can help you quickly determine whether your orga
 
 ### Microsoft Defender Antivirus health tab  
 
-The Microsoft Defender Antivirus health tab contains eight cards that report on several aspects of Microsoft Defender Antivirus in your organization. Two cards, _mode_ and _scan results_, report about Microsoft Defender Antivirus functions. The remaining six cards report about the Microsoft Defender Antivirus versions and updates for devices in your organization, as follows:
+The Microsoft Defender Antivirus health tab contains eight cards that report on several aspects of Microsoft Defender Antivirus in your organization:
+
+Two cards, [Antivirus mode](#antivirus-mode) and [Recent antivirus scan results](#recent-antivirus-scan-results), report about Microsoft Defender Antivirus functions. 
+
+The remaining six cards report about the Microsoft Defender Antivirus _versions_ and _updates_ for devices in your organization:
 
 |  |  |  |  |
 |:---|:---|:---|:---|
-| **Versions**: | engine versions | security intelligence versions | platform versions |
-| **Updates**: | engine updates | security intelligence updates | platform updates |
+| **Versions**: | [Antivirus engine version](#antivirus-engine-version) | [Antivirus security intelligence version](#antivirus-security-intelligence-version) | [Antivirus platform version](#antivirus-platform-version) |
+| **Updates**:<sup>{[1](#fn1)}</sup>| [Antivirus engine updates](#antivirus-engine-updates) | [Security intelligence updates](#security-intelligence-updates) | [Antivirus platform updates](#antivirus-platform-updates) |
+
+{<a id="fn1">1</a>} For the three _updates_ cards, "**No data available**" indicates devices that are not reporting update status. This can be do to a variety of reasons, such as:
+
+- Computer is disconnected from the network
+- Computer is powered down or in a hibernation state
+- Microsoft Defender Antivirus is disabled
 
 > [!NOTE]
 >
@@ -147,18 +159,16 @@ Reports on how many devices in your organization – on the date indicated on th
 | 0 | Active |
 | 1 | Passive |
 | 2 | Disabled ( uninstalled, disabled, or SideBySidePassive {also known as Low Periodic Scan}) |
-| 3 | Others (Not running , Unknown and "") |
+| 3 | Others (Not running, Unknown) |
 | 4 | EDRBlocked |
-| 5 | PassiveAudit |
 
 Following are descriptions for each mode:
 
 - **Active** mode - In active mode, Microsoft Defender Antivirus is used as the primary antivirus app on the device. Files are scanned, threats are remediated, and detected threats are listed in your organization's security reports and in your Windows Security app.
 - **Passive** mode - In passive mode, Microsoft Defender Antivirus is not used as the primary antivirus app on the device. Files are scanned, and detected threats are reported, but threats are not remediated by Microsoft Defender Antivirus. IMPORTANT: Microsoft Defender Antivirus can run in passive mode only on endpoints that are onboarded to Microsoft Defender for Endpoint. See [Requirements for Microsoft Defender Antivirus to run in passive mode](microsoft-defender-antivirus-compatibility.md#requirements-for-microsoft-defender-antivirus-to-run-in-passive-mode).
 - **Disabled** mode  - synonymous with: uninstalled, disabled, sideBySidePassive, and Low Periodic Scan. When disabled, Microsoft Defender Antivirus is not used. Files are not scanned, and threats are not remediated. In general, Microsoft does not recommend disabling or uninstalling Microsoft Defender Antivirus.
-- **Others** mode -
+- **Others** mode - Not running, Unknown
 - **EDRBlocked** mode - In endpoint detection and response (EDR) blocked mode,
-- **PasiveAudit** mode -
 
 Devices that are in either passive, LPS, or Off present a potential security risk and should be investigated.
 
@@ -178,12 +188,12 @@ Microsoft continually updates Microsoft Defender security intelligence to addres
 
 #### Security intelligence updates
 
-This card dentifies devices that have security intellegence versions that are up to date versus out of date.
-Definition of ‘**Up to date** – the security intelligence version on the device was written in the past 7 days.
+This card identifies devices that have security intelligence versions that are up to date versus out of date.
+Definition of ‘**Up to date**’ – the security intelligence version on the device was written in the past 7 days.
 
 <!-- Hide {this intro with no subsequent list items}
 [Confirm that it is versus as apposed to "out of date" only.]
--->
+-->c
 
 <!-- Hide {this intro with no subsequent list items}
 [link - https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus?view=o365-worldwide#security-intelligence-updates]
@@ -196,8 +206,8 @@ For more details on the current versions and how to update the different Microso
 
 #### Antivirus engine updates
 
-This card dentifies deices that have antivirus engine versions that are up to date versus out of date.
-Definition of ‘_Up to date_ – the engine version on the device is the most recent engine release {the Engine is usually released monthly, via Windows Update (WU)}.  There is a 3-day grace period from the day when WU is released.
+This card identifies deices that have antivirus engine versions that are up to date versus out of date.
+Definition of ‘_Up to date_’ – the engine version on the device is the most recent engine release {the Engine is usually released monthly, via Windows Update (WU)}.  There is a 3-day grace period from the day when WU is released.
 
 <!-- Hide {this intro with no subsequent list items}
 [Confirm that it is versus as apposed to "out of date" only.]
@@ -212,10 +222,10 @@ Definition of ‘_Up to date_ – the engine version on the device is the most r
 Shows the real-time results of the most current Microsoft Defender Antivirus platform versions installed across versions of Windows, Mac, and Linux devices in your organization. Microsoft Defender Antivirus platform is updated monthly.
 For more details on the current versions and how to update the different Microsoft Defender Antivirus components, see [Microsoft Defender Antivirus platform support](manage-updates-baselines-microsoft-defender-antivirus.md)
 
-### Antivirus platform updates
+#### Antivirus platform updates
 
-This card dentifies deices that have Antivirus platform versions that are up to date versus out of date.
-Definition of ‘_Up to date_ – the platform version on the device is the most recent platform release (Platform is usually released monthly, via Windows Update).  There is a 3-day grace period from the day when WU is released.
+This card identifies devices that have Antivirus platform versions that are up to date versus out of date.
+Definition of ‘_Up to date_’ – the platform version on the device is the most recent platform release (Platform is usually released monthly, via Windows Update).  There is a 3-day grace period from the day when WU is released.
 
 For information about Manage Microsoft Defender Antivirus update versions, see: [Monthly platform and engine versions](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
 
@@ -231,7 +241,7 @@ For information about Manage Microsoft Defender Antivirus update versions, see: 
 
 [Threat protection report](threat-protection-reports.md)
 
-**_End of section, Public Preview: Device health and antivirus compliance report in Microsoft Defender for Endpoint_**
+## End of section - Public Preview: Device health and antivirus compliance report in Microsoft Defender for Endpoint
 
 ## Publicly-released: Device health and compliance report in Microsoft Defender for Endpoint
 
