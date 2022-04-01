@@ -34,7 +34,7 @@ You can define exclusions for Microsoft Defender Antivirus that apply to [schedu
 > Microsoft Defender Antivirus exclusions don't apply to other Microsoft Defender for Endpoint capabilities, including [endpoint detection and response (EDR)](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response), [attack surface reduction (ASR) rules](/microsoft-365/security/defender-endpoint/attack-surface-reduction), and [controlled folder access](/microsoft-365/security/defender-endpoint/controlled-folders). Files that you exclude using the methods described in this article can still trigger EDR alerts and other detections.
 > To exclude files broadly, add them to the Microsoft Defender for Endpoint [custom indicators](/microsoft-365/security/defender-endpoint/manage-indicators).
 
-## Before you begin...
+## Before you begin
 
 See [Recommendations for defining exclusions](configure-exclusions-microsoft-defender-antivirus.md) before defining your exclusion lists.
 
@@ -47,8 +47,7 @@ To exclude certain files from Microsoft Defender Antivirus scans, you modify you
 >
 > Automatic exclusions apply only to Windows Server 2016 and later. These exclusions are not visible in the Windows Security app and in PowerShell.
 
-The following table lists some examples of exclusions based on file extension and folder location. 
-<br/><br/>
+The following table lists some examples of exclusions based on file extension and folder location.
 
 |Exclusion|Examples|Exclusion list|
 |---|---|---|
@@ -106,7 +105,7 @@ See [How to create and deploy antimalware policies: Exclusion settings](/configm
     1. Set the option to **Enabled**.
     2. Under the **Options** section, select **Show**.
     3. Specify each folder on its own line under the **Value name** column.
-    4. If you are specifying a file, ensure that you enter a fully qualified path to the file, including the drive letter, folder path, file name, and extension. 
+    4. If you are specifying a file, ensure that you enter a fully qualified path to the file, including the drive letter, folder path, file name, and extension.
     5. Enter **0** in the **Value** column.
 
 5. Choose **OK**.
@@ -133,8 +132,6 @@ The format for the cmdlets is as follows:
 
 The following table lists cmdlets that you can use in the `<cmdlet>` portion of the PowerShell cmdlet:
 
-<br/><br/>
-
 |Configuration action|PowerShell cmdlet|
 |:---|:---|
 |Create or overwrite the list|`Set-MpPreference`|
@@ -142,8 +139,6 @@ The following table lists cmdlets that you can use in the `<cmdlet>` portion of 
 |Remove item from the list|`Remove-MpPreference`|
 
 The following table lists values that you can use in the `<exclusion list>` portion of the PowerShell cmdlet:
-
-<br/><br/>
 
 |Exclusion type|PowerShell parameter|
 |---|---|
@@ -220,8 +215,6 @@ The following table describes how the wildcards can be used and provides some ex
 
 The following table lists and describes the system account environment variables.
 
-<br/><br/>
-
 |This system environment variable...|Redirects to this|
 |---|---|
 |`%APPDATA%`|`C:\Users\UserName.DomainName\AppData\Roaming`|
@@ -291,8 +284,8 @@ You can retrieve the items in the exclusion list using one of the following meth
 
 - [Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
 - [Microsoft Endpoint Configuration Manager](/configmgr/protect/deploy-use/endpoint-antimalware-policies)
-- MpCmdRun
-- PowerShell
+- [MpCmdRun](command-line-arguments-microsoft-defender-antivirus.md)
+- [PowerShell](/powershell/module/defender)
 - [Windows Security app](microsoft-defender-security-center-antivirus.md)
 
 > [!IMPORTANT]
