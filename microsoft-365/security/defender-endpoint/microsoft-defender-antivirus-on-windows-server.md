@@ -191,6 +191,8 @@ If you’re using a non-Microsoft antivirus product as your primary antivirus so
 
 For more information, see [Microsoft Defender Antivirus compatibility with other security products](microsoft-defender-antivirus-compatibility.md).
 
+The following table describes methods to set Microsoft Defender Antivirus to passive mode, disable Microsoft Defender Antivirus, and uninstall Microsoft Defender Antivirus:
+
 | Procedure | Description |
 |---|---|
 | Set Microsoft Defender Antivirus to passive mode by using a registry key | Set the ForceDefenderPassiveMode registry key as follows: <br/>- Path: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection` <br/>- Name: `ForceDefenderPassiveMode` <br/>- Type: `REG_DWORD` <br/>- Value: `1` |
