@@ -56,3 +56,8 @@ The **Microsoft Teams device usage** report can be viewed for trends over the la
 |Last activity date (UTC)  <br/> |The last date (UTC) that the user participated in a Teams activity .  <br/> |
 |Is licensed|Selected if the user is licensed to use Teams.|
 |||
+
+## See also
+[Microsoft Teams user activity report](../activity-reports/microsoft-teams-user-activity-preview.md) 
+
+[Microsoft Teams usage activity report](../activity-reports/microsoft-teams-usage-activity.md) 
