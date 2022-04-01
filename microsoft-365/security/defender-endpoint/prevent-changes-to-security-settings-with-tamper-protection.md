@@ -133,7 +133,7 @@ For more information about releases, see [Windows 10 release information](/windo
 
 ### Turn tamper protection on (or off) in the Microsoft 365 Defender portal
 
-:::image type="content" source="../../media/mde-turn-tamperprotectionon.png" alt-text="Turn tamper protection on in the Microsoft 365 Defender portal.":::
+:::image type="content" source="../../media/mde-turn-tamperprotectionon.png" alt-text="Turn tamper protection turned on in the Microsoft 365 Defender portal" lightbox="../../media/mde-turn-tamperprotectionon.png":::
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
@@ -161,7 +161,7 @@ If your organization uses Microsoft Endpoint Manager (MEM) you can turn tamper p
 
 ### Turn tamper protection on (or off) in Microsoft Endpoint Manager
 
-![Turn tamper protection on with Endpoint Manager.](images/turnontamperprotectinmem.png)
+:::image type="content" source="images/turnontamperprotectinmem.png" alt-text="Turn tamper protection turned on with Intune" lightbox="images/turnontamperprotectinmem.png":::
 
 1. In the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Endpoint security** \> **Antivirus**, and then choose **+ Create Policy**.
 
@@ -210,7 +210,7 @@ If you are a home user, or you are not subject to settings managed by a security
 
 Here's what you see in the Windows Security app:
 
-![Tamper protection turned on in Windows 10 Home.](images/tamperprotectionturnedon.png)
+:::image type="content" source="images/tamperprotectionturnedon.png" alt-text="Turn tamper protection turned on in Windows 10 Home" lightbox="images/tamperprotectionturnedon.png":::
 
 1. Select **Start**, and start typing *Security*. In the search results, select **Windows Security**.
 
@@ -238,7 +238,7 @@ Tampering attempts typically indicate bigger cyberattacks. Bad actors try to cha
 
 When a tampering attempt is detected, an alert is raised in the [Microsoft 365 Defender portal](/microsoft-365/security/defender-endpoint/portal-overview) ([https://security.microsoft.com](https://security.microsoft.com)).
 
-![Microsoft 365 Defender.](images/tamperattemptalert.png)
+:::image type="content" source="images/tamperattemptalert.png" alt-text="The Microsoft 365 Defender portal" lightbox="images/tamperattemptalert.png":::
 
 Using [endpoint detection and response](overview-endpoint-detection-response.md) and [advanced hunting](advanced-hunting-overview.md) capabilities in Microsoft Defender for Endpoint, your security operations team can investigate and address such attempts.
 
@@ -246,7 +246,7 @@ Using [endpoint detection and response](overview-endpoint-detection-response.md)
 
 Tamper protection integrates with [Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) capabilities. [Security recommendations](tvm-security-recommendation.md) include making sure tamper protection is turned on. For example, you can search on *tamper*. In the results, you can select **Turn on Tamper Protection** to learn more and turn it on.
 
-![Turn on tamper protection.](images/tamperprotectsecurityrecos.png)
+:::image type="content" source="images/tamperprotectsecurityrecos.png" alt-text="Turning on tamper protection in the Microsoft Defender Security Center portal" lightbox="images/tamperprotectsecurityrecos.png":::
 
 To learn more about Threat & Vulnerability Management, see [Dashboard insights - threat and vulnerability management](tvm-dashboard-insights.md#dashboard-insights---threat-and-vulnerability-management).
 

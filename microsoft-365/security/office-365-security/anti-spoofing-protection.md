@@ -44,7 +44,7 @@ The following anti-spoofing technologies are available in EOP:
 
   EOP analyzes and blocks messages that can't be authenticated by the combination of standard email authentication methods and sender reputation techniques.
 
-  ![EOP anti-spoofing checks.](../../media/eop-anti-spoofing-protection.png)
+  :::image type="content" source="../../media/eop-anti-spoofing-protection.png" alt-text="The EOP anti-spoofing checks" lightbox="../../media/eop-anti-spoofing-protection.png":::
 
 - **Spoof intelligence insight**: Review spoofed messages from senders in internal and external domains during the last 7 days, and allow or block those senders. For more information, see [Spoof intelligence insight in EOP](learn-about-spoof-intelligence.md).
 

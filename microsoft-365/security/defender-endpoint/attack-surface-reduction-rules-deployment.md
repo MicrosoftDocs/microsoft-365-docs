@@ -41,7 +41,7 @@ During your initial preparation, it's vital that you understand the capabilities
 >[!IMPORTANT]
 >This guide provides images and examples to help you decide how to configure ASR rules; these images and examples might not reflect the best configuration options for your environment.
 
-Before you start, review [Overview of attack surface reduction](overview-attack-surface-reduction.md), and [Demystifying attack surface reduction rules - Part 1](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-1/ba-p/1306420) for foundational information. To understand the areas of coverage and potential impact, familiarize yourself with the current set of ASR rules; see [Attack surface reduction rules reference](attack-surface-reduction-rules-reference.md).
+Before you start, review [Overview of attack surface reduction](overview-attack-surface-reduction.md), and [Demystifying attack surface reduction rules - Part 1](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-1/ba-p/1306420) for foundational information. To understand the areas of coverage and potential impact, familiarize yourself with the current set of ASR rules; see [Attack surface reduction rules reference](attack-surface-reduction-rules-reference.md).  While you are familiarizing yourself with the ASR rules set, take note of the per-rule GUID mappings; see: [ASR rules and GUIDs matrix](attack-surface-reduction-rules-reference.md#asr-rules-and-guids-matrix).
 
 ASR rules are only one capability of the attack surface reduction capabilities within Microsoft Defender for Endpoint. This document will go into more detail on deploying ASR rules effectively to stop advanced threats like human-operated ransomware and other threats.  
 
@@ -117,7 +117,7 @@ Some rules don’t work well if un-signed, internally developed application and 
 As with any new, wide-scale implementation which could potentially impact your line-of-business operations, it is important to be methodical in your planning and implementation. Because of the powerful capabilities of ASR rules in preventing malware, careful planning and deployment of these rules is necessary to ensure they work best for your unique customer workflows. To work in your environment, you need to plan, test, implement, and operationalize ASR rules carefully.  
 
 > [!div class="mx-imgBorder"]
-> ![ASR rules deployment phases](images/asr-rules-deployment-phases.png)
+> :::image type="content" source="images/asr-rules-deployment-phases.png" alt-text="The ASR rules deployment phases" lightbox="images/asr-rules-deployment-phases.png":::
 
 >[!Note]
 >For Customers who are using a non-Microsoft HIPS and are transitioning to Microsoft Defender for Endpoint attack surface reduction rules:
