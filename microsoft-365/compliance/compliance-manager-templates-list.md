@@ -24,7 +24,7 @@ description: "Microsoft Compliance Manager provides templates for building asses
 **In this article:** View the comprehensive list of **templates** available for creating assessments in Compliance Manager.
 
 > [!IMPORTANT]
-> The assessment templates that are available to your organization depend on your licensing agreement. [Review the details](compliance-manager-templates.md#template-availability-and-licensing).
+> The assessment templates that are available to your organization depend on your licensing agreement. [Review details](compliance-manager-templates.md#template-availability-and-licensing).
 
 ## Overview
 
@@ -36,17 +36,28 @@ Templates are added to Compliance Manager as new laws and regulations are enacte
 
 Below is the complete list of templates in Compliance Manager. Template names match the associated regulation or certification. Where available, links in the template names below take you to related documentation about that standard, regulation, or law.
 
-Each template (apart from the baseline) is available in at least one version designed for use with a specific product, such as Microsoft 365, along with a universal version that you can use to assess other products of your choice. To learn more about template options, see [Learn about assessment templates](compliance-manager-templates.md).
+Each template (except for the [Microsoft Data Protection Baseline](compliance-manager-assessments.md#data-protection-baseline-default-assessment) default template) is available in at least one version designed for use with a specific product, such as Microsoft 365, along with a universal version that you can use to assess other products of your choice. To learn more about template options, see [Learn about assessment templates](compliance-manager-templates.md).
 
 You can also select individual templates in Compliance Manager to view more information about them, including a description of the regulation and properties of the template. Read the **About** section for a summary.
 
-### Where to find your templates
+Jump to a section below to view templates by area or industry:
+- [Global](#global)
+- [Industry](#industry)
+- [US Government](#us-government)
+- [US States and Territories](#us-states-and-territories)
+- [Asia-Pacific Countries](#asia-pacific-countries)
+- [Europe, Middle East, and Africa (EMEA)](#europe-middle-east-and-africa-emea)
+- [Latin America](#latin-america)
+- [North America](#north-america)
+- [South America](#south-america)
+
+### Where to find your templates in Compliance Manager
 
 To review the templates available to your organization, go to your **Assessment templates** page. Learn more about [how to view and manage your templates](compliance-manager-templates.md#view-and-manage-templates).
 
 ## Included templates
 
-One or more of these templates will be available based on your licensing agreement. The Data Protection Baseline template is included for all users.
+One or more of the templates listed below are included as part of your licensing agreement. The Microsoft Data Protection Baseline template is included for all organizations.
 
 - [Microsoft Data Protection Baseline](compliance-manager-assessments.md#data-protection-baseline-default-assessment)
 - [European Union GDPR](/compliance/regulatory/gdpr)
@@ -58,7 +69,7 @@ One or more of these templates will be available based on your licensing agreeme
 
 ## Preview templates
 
-These templates are currently available for preview. Creating assessments using these templates will not count toward your total of licensed templates used.
+The templates listed below are currently available for preview. Creating assessments using these templates will not count toward your total of licensed templates used.
 
 - ISO 27001:2013 for Azure (Preview)
 - ISO 27001:2013 for Dynamics 365 (Preview)
@@ -73,7 +84,7 @@ These templates are currently available for preview. Creating assessments using 
 
 ## Premium templates
 
-These templates may be purchased by your organization.
+The templates listed below may be purchased by your organization.
 
 ### Global
 
