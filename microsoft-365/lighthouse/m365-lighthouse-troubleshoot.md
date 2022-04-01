@@ -48,7 +48,7 @@ This article describes error messages and problems that you might encounter whil
 
 **Cause:** Your customer tenants don't meet the following criteria:
 
-  - Must have delegated (DAP) set up for the Managed Service Provider (MSP) to be able to manage the customer tenant*
+  - Must have delegated access set up for the Managed Service Provider (MSP) to be able to manage the customer tenant*
   - Must have at least one Microsoft 365 Business Premium, Microsoft 365 E3 license, or Windows 365 Business license
   - Must have no more than 1000 licensed users 
 
@@ -74,7 +74,7 @@ If you confirmed that your customer tenant meets the onboarding criteria and the
 
 **Cause:** You don't belong to the correct security group in Azure AD, or you haven't been assigned the correct role in Partner Center to be able to access Lighthouse.
 
-**Resolution:** Make sure that an admin from your partner tenant with the appropriate permissions has assigned you to the correct GDAP security group in Azure AD and assigned you the correct role in Partner Center. Also, keep in mind that some actions in Lighthouse require you to be a Global admin. To learn more about the GDAP roles and what each role can do, see [Configure Microsoft 365 Lighthouse portal security](m365-lighthouse-configure-portal-security.md). For a detailed description of all Azure AD built-in roles and permissions for GDAP, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).
+**Resolution:** Make sure that an admin from your partner tenant with the appropriate permissions has assigned you to the correct GDAP security group in Azure AD and assigned you the correct role in Partner Center. Also, keep in mind that some actions in Lighthouse require you to be a Global admin. To learn more about the GDAP roles and what each role can do, see [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md). For a detailed description of all Azure AD built-in roles and permissions for GDAP, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).
 
 For customers with DAP relationships, the partner admin will need to assign you to either the Admin agent or Helpdesk agent role in Partner Center. For a detailed description of all Partner Center roles and permissions, see [Assign roles and permissions to users](/partner-center/permissions-overview).
 
@@ -82,7 +82,7 @@ For customers with DAP relationships, the partner admin will need to assign you 
 
 **Cause:** You have limited GDAP access based on the roles assigned to the Azure AD security group that you're in.
 
-**Resolution:** Make sure that an admin from your partner tenant with the appropriate permissions has assigned you to the correct GDAP security group in Azure AD. Also, keep in mind that some actions in Lighthouse require you to be a Global admin. To learn more about the GDAP roles and what each role can do, see [Configure Microsoft 365 Lighthouse portal security](m365-lighthouse-configure-portal-security.md). For a detailed description of all Azure AD built-in roles and permissions for GDAP, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).
+**Resolution:** Make sure that an admin from your partner tenant with the appropriate permissions has assigned you to the correct GDAP security group in Azure AD. Also, keep in mind that some actions in Lighthouse require you to be a Global admin. To learn more about the GDAP roles and what each role can do, see [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md). For a detailed description of all Azure AD built-in roles and permissions for GDAP, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).
 
 ## Customer tenant management  
 
