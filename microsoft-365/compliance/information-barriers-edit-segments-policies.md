@@ -158,7 +158,7 @@ Use this procedure edit the definition of a user segment. For example, you might
     >[!TIP]
     >Print or save your list of segments for reference later. For example, if you want to edit a segment, you will need to know its name or identify value (this is used with the Identity parameter).
 
-2. Identify the segment to be removed and make sure the IB policy associated with the segment has been removed. See the Remove a policy procedure for details.
+2. Identify the segment to be removed and make sure the IB policy associated with the segment has been removed. See the [Remove a policy](#remove-a-policy) procedure for details.
 
 3. Edit the segment that will be removed to remove the relationship of users to that segment. This action updates the segment definition and removes all users from the segment. You'll use the UserGroupFilter parameter to disassociate users from the segment prior to removal.
 
@@ -166,7 +166,7 @@ Use this procedure edit the definition of a user segment. For example, you might
 
     |**Syntax**|**Example**|
     |:---------|:----------|
-    | `Set-OrganizationSegment -Identity GUID -UserGroupFilter "attribute -eq 'attributevalue'"` | `Set-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd -UserGroupFilter "Department -eq 'FakeDept'"` <br> In this example, for the segment that has the GUID c96e0837-c232-4a8a-841e-ef45787d8fcd, we updated the department name to FakeDept to remove users from the segment. This example uses the *Department* attribute, but you can use other attributes as appropriate. The example uses *FakeDept* because this doesn't exist and is certain to not contain any users. |
+    | `Set-OrganizationSegment -Identity GUID -UserGroupFilter "attribute -eq 'attributevalue'"` | `Set-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd -UserGroupFilter "Department -eq 'FakeDept'"` <br> In this example, for the segment that has the GUID c96e0837-c232-4a8a-841e-ef45787d8fcd, we defined the department name as *FakeDept* to remove users from the segment. This example uses the *Department* attribute, but you can use other attributes as appropriate. The example uses *FakeDept* because this doesn't exist and is certain to not contain any users. |
 
 4. To apply your changes, use the **Start-InformationBarrierPoliciesApplication** cmdlet.
 
