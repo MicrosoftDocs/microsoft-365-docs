@@ -73,7 +73,7 @@ Use this procedure edit the definition of a user segment. For example, you might
     |:---------|:----------|
     | `Set-OrganizationSegment -Identity GUID -UserGroupFilter "attribute -eq 'attributevalue'"` |`Set-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd -UserGroupFilter "Department -eq 'HRDept'"` <br> In this example, we updated the department name to *HRDept* for the segment with GUID *c96e0837-c232-4a8a-841e-ef45787d8fcd*. |
 
-When you have finished editing segments for your organization, you can either [define](information-barriers-policies.md#step-3-define-information-barrier-policies) or [edit](#edit-a-policy) information barriers policies.
+3. When you have finished editing segments for your organization, you can either [define](information-barriers-policies.md#step-3-define-information-barrier-policies) or [edit](#edit-a-policy) information barriers policies.
 
 ## Edit a policy
 
@@ -113,11 +113,11 @@ When you have finished editing segments for your organization, you can either [d
 
     Changes are applied user-by-user for your organization. If your organization is large, it can take 24 hours (or more) for this process to complete. As a general guideline, it takes about an hour to process 5,000 user accounts.
 
-At this point, one or more information barriers policies are set to inactive status. From here, you can do any of the following actions:
+4. At this point, one or more information barriers policies are set to inactive status. From here, you can do any of the following actions:
 
-- Keep it as is (a policy set to inactive status has no effect on users)
-- [Edit a policy](#edit-a-policy) 
-- [Remove a policy](#remove-a-policy)
+    - Keep it as is (a policy set to inactive status has no effect on users)
+    - [Edit a policy](#edit-a-policy) 
+    - [Remove a policy](#remove-a-policy)
 
 ## Remove a policy
 
