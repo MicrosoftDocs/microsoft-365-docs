@@ -32,7 +32,11 @@ description: "Learn how to use Windows AutoPilot to set up new Windows 10 device
 # Use the step-by-step guide to add Autopilot devices and profile
 
 > [!NOTE]
+<<<<<<< Updated upstream
 > Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Overview of Microsoft Defender for Business](../security/defender-business/mdb-overview.md).
+=======
+> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../business-premium/m365bp-add-autopilot-devices-and-profile.md).
+>>>>>>> Stashed changes
 
 You can use Windows AutoPilot to set up **new** Windows 10 devices for your business so they're ready for use when you give them to your employees.
   
@@ -46,7 +50,11 @@ Devices must meet these requirements:
     
 ## Use the setup guide to create devices and profiles
 
+<<<<<<< Updated upstream
 If you haven't created device groups or profiles yet, the best way to get started is by using the step-by-step guide. You can also [add AutoPilot devices](m365bp-create-and-edit-autopilot-devices.md) and [assign profiles](m365bp-create-and-edit-autopilot-profiles.md) to them without using the guide. 
+=======
+If you haven't created device groups or profiles yet, the best way to get started is by using the step-by-step guide. You can also [add devices](../business-premium/m365bp-create-and-edit-autopilot-devices.md) and [assign profiles](m365bp-create-and-edit-autopilot-profiles.md) to them without using the guide. 
+>>>>>>> Stashed changes
   
 1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
 
@@ -68,7 +76,11 @@ If you haven't created device groups or profiles yet, the best way to get starte
     
     You can get this information from your hardware vendor, or you can use the [Get-WindowsAutoPilotInfo PowerShell script](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) to generate a CSV file. 
     
+<<<<<<< Updated upstream
     For more information, see [Device list CSV-file](../admin/misc/device-list.md). You can also download a sample file on the **Upload .csv file with list of devices** page. 
+=======
+    For more information, see [Device list CSV-file](/admin/misc/device-list.md). You can also download a sample file on the **Upload .csv file with list of devices** page. 
+>>>>>>> Stashed changes
     
 > [!NOTE]
 > This script uses WMI to retrieve properties needed for a customer to register a device with Windows Autopilot. Note that it is normal for the resulting CSV file to not collect a Windows Product ID (PKID) value since this is not required to register a device and PKID being NULL in the output CSV is totally fine. Only the serial number and hardware hash will be populated.
@@ -95,6 +107,12 @@ If you haven't created device groups or profiles yet, the best way to get starte
 
 ## Related content
 
+<<<<<<< Updated upstream
 - [About AutoPilot Profile settings](../business-premium/m365bp-autopilot-profile-settings.md) (article)\
 - [Options for protecting your devices and app data](../admin/devices/choose-device-security.md) (article)
 - [Top 10 ways to secure Microsoft 365 for business plans](..admin/security-and-compliance/secure-your-business-data.md)
+=======
+[About AutoPilot Profile settings](../business-premium/m365bp-autopilot-profile-settings.md) (article)\
+[Options for protecting your devices and app data](/admin/devices/choose-device-security.md) (article)
+[Top 10 ways to secure Microsoft 365 for business plans](../security-and-compliance/secure-your-business-data.md)
+>>>>>>> Stashed changes
