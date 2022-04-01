@@ -20,7 +20,7 @@ description: "Access logs are available for encrypted messages retrieved through
 
 # Encrypted message access log by Advanced Message Encryption
 
-Access logs are available for encrypted messages through the Office 365 Message Encryption (OME) portal that lets your organization determine when messages are read, and forwarded by your external recipients. To ensure logs are available for any external recipients, you should enable tracking and should apply a custom branding template to your emails. See [Add your organization's brand to your encrypted messages](add-your-organization-brand-to-encrypted-messages.md).
+Access logs are available for encrypted messages through the Office 365 Message Encryption (OME) portal that lets your organization determine when messages are read, and forwarded by your external recipients. To ensure logs are available for any external recipients, you should enable tracking and should apply a custom branding template to protected emails sent by your organization to external recipients. See [Add your organization's brand to your encrypted messages](add-your-organization-brand-to-encrypted-messages.md).
 
 ## Enabling message tracking audit logs in PowerShell
 
