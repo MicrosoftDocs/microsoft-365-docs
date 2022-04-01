@@ -44,7 +44,7 @@ To manage your cloud services:
   - [Exchange Online](/Exchange/exchange-online)
   - [SharePoint](https://support.office.com/article/79eb0420-8cbd-4bcb-a90b-ddc7d3ab4b3a)
   - [Skype for Business](/SkypeForBusiness/skype-for-business-online)
-  - [Teams](//MicrosoftTeams/quality-of-experience-review-guide)
+  - [Teams](/MicrosoftTeams/quality-of-experience-review-guide)
   - [Yammer](https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe)
 - [Perform performance tuning for your cloud services](tune-microsoft-365-performance.md)
 
