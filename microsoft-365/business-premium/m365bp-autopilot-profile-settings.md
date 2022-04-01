@@ -40,17 +40,17 @@ description: "AutoPilot profiles help you control how Windows gets installed on 
 
 You can use AutoPilot profiles to control how Windows is installed on user devices. The profiles contain the following settings.
   
- **AutoPilot default features (required) that are set automatically:**
+## AutoPilot default features (required) that are set automatically
   
-|**Setting**|**Description**|
+| Setting | Description |
 |:-----|:-----|
 |Skip Cortana, OneDrive, and OEM registration  |Skips the installation of consumer apps like Cortana and personal OneDrive. The device user can install these later as long as the user is a local admin on the device. The original manufacturer registration is skipped because the device will be managed by Microsoft 365 Business Premium.  |
 |Sign in experience with your company brand  |If your company has a [Add your company branding to Microsoft 365 Sign In page](..admin/setup/customize-sign-in-page.md), the device user will get that experience when signing in.  |
 |MDM auto-enrollment with configured AAD accounts.  |The user identity will be managed by Azure Active Directory, and users will sign in to Windows and Microsoft 365 with their Microsoft 365 Business Premium credentials.  |
-   
- **Optional settings:**
+
+## Optional settings
   
-|**Setting**|**Description**|
+| Setting | Description |
 |:-----|:-----|
 |Skip privacy settings (Off by default)  |If this option is set to **On**, the device user will not see the license agreement for the device and Windows when he or she first signs in.  |
 |Don't allow the user to become the local admin  |If this option is set to **On**, the device user will not be able to install any personal apps, such as Cortana.|
