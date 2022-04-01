@@ -173,7 +173,7 @@ Use this procedure edit the definition of a user segment. For example, you might
     Syntax: `Start-InformationBarrierPoliciesApplication -CleanupGroupSegmentLink`
 
     >[!NOTE]
-    >The CleanupGroupSegmentLink attribute removes group associations with the segment with no user associations.
+    >The *CleanupGroupSegmentLink* attribute removes group associations with the segment with no user associations.
 
     Changes are applied user-by-user for your organization. If your organization is large, it can take 24 hours (or more) for this process to complete. As a general guideline, it takes about an hour to process 5,000 user accounts.
 
@@ -219,7 +219,7 @@ Use this procedure edit the definition of a user segment. For example, you might
     Syntax: `Start-InformationBarrierPoliciesApplication -CleanupGroupSegmentLink`
 
     >[!NOTE]
-    >The CleanupGroupSegmentLink attribute removes group associations with the segment with no user associations.
+    >The *CleanupGroupSegmentLink* attribute removes group associations with the segment with no user associations.
 
     Changes are applied user-by-user for your organization. If your organization is large, it can take 24 hours (or more) for this process to complete. As a general guideline, it takes about an hour to process 5,000 user accounts.
 
