@@ -76,11 +76,7 @@ If you haven't created device groups or profiles yet, the best way to get starte
     
     You can get this information from your hardware vendor, or you can use the [Get-WindowsAutoPilotInfo PowerShell script](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) to generate a CSV file. 
     
-<<<<<<< Updated upstream
     For more information, see [Device list CSV-file](../admin/misc/device-list.md). You can also download a sample file on the **Upload .csv file with list of devices** page. 
-=======
-    For more information, see [Device list CSV-file](/admin/misc/device-list.md). You can also download a sample file on the **Upload .csv file with list of devices** page. 
->>>>>>> Stashed changes
     
 > [!NOTE]
 > This script uses WMI to retrieve properties needed for a customer to register a device with Windows Autopilot. Note that it is normal for the resulting CSV file to not collect a Windows Product ID (PKID) value since this is not required to register a device and PKID being NULL in the output CSV is totally fine. Only the serial number and hardware hash will be populated.
@@ -107,12 +103,6 @@ If you haven't created device groups or profiles yet, the best way to get starte
 
 ## Related content
 
-<<<<<<< Updated upstream
 - [About AutoPilot Profile settings](../business-premium/m365bp-autopilot-profile-settings.md) (article)\
 - [Options for protecting your devices and app data](../admin/devices/choose-device-security.md) (article)
 - [Top 10 ways to secure Microsoft 365 for business plans](..admin/security-and-compliance/secure-your-business-data.md)
-=======
-[About AutoPilot Profile settings](../business-premium/m365bp-autopilot-profile-settings.md) (article)\
-[Options for protecting your devices and app data](/admin/devices/choose-device-security.md) (article)
-[Top 10 ways to secure Microsoft 365 for business plans](../security-and-compliance/secure-your-business-data.md)
->>>>>>> Stashed changes
