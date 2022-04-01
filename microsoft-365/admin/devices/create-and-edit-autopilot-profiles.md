@@ -43,7 +43,7 @@ A profile applies to a device, or a group of devices,
   
 2. On the **AutoPilot** page, choose the **Profiles** tab \> **Create profile**.
     
-3. On the **Create profile** page, enter a name for the profile that helps you identify it, for example Marketing. Turn on the setting you want, and then choose **Save**. For more information about AutoPilot profile settings, see [About AutoPilot Profile settings](../business-premium/m365bp-autopilot-profile-settings.md).
+3. On the **Create profile** page, enter a name for the profile that helps you identify it, for example Marketing. Turn on the setting you want, and then choose **Save**. For more information about AutoPilot profile settings, see [About AutoPilot Profile settings](../../business-premium/m365bp-autopilot-profile-settings.md).
     
     ![Enter name and turn on settings in the Create profile panel.](../../media/63b5a00d-6a5d-48d0-9557-e7531e80702a.png)
   
