@@ -133,7 +133,7 @@ At this point, one or more information barriers policies are set to inactive sta
     |:---------|:----------|
     | `Set-InformationBarrierPolicy -Identity GUID -State Inactive`  | `Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c9377247 -State Inactive` <br> In this example, we set an information barriers policy that has GUID *43c37853-ea10-4b90-a23d-ab8c9377247* to an inactive status. |
 
-3. To apply your changes on the policy, use the Start-InformationBarrierPoliciesApplication cmdlet.
+3. To apply your changes on the policy, use the **Start-InformationBarrierPoliciesApplication** cmdlet.
 
     Syntax: `Start-InformationBarrierPoliciesApplication`
 
@@ -162,22 +162,22 @@ At this point, one or more information barriers policies are set to inactive sta
 
 3. Edit the segment that will be removed to remove the relationship of users to that segment. This action updates the segment definition and removes all users from the segment. You'll use the UserGroupFilter parameter to disassociate users from the segment prior to removal.
 
-    To edit a segment, use the Set-OrganizationSegment cmdlet with the Identity parameter and relevant details.
+    To edit a segment, use the **Set-OrganizationSegment** cmdlet with the *Identity* parameter and relevant details.
 
     |**Syntax**|**Example**|
     |:---------|:----------|
     | `Set-OrganizationSegment -Identity GUID -UserGroupFilter "attribute -eq 'attributevalue'"` | `Set-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd -UserGroupFilter "Department -eq 'FakeDept'"` <br> In this example, for the segment that has the GUID c96e0837-c232-4a8a-841e-ef45787d8fcd, we updated the department name to FakeDept to remove users from the segment. This example uses the *Department* attribute, but you can use other attributes as appropriate. The example uses *FakeDept* because this doesn't exist and is certain to not contain any users. |
 
-4. To apply your changes, use the Start-InformationBarrierPoliciesApplication cmdlet.
+4. To apply your changes, use the **Start-InformationBarrierPoliciesApplication** cmdlet.
 
-    Syntax: Start-InformationBarrierPoliciesApplication -CleanupGroupSegmentLink
+    Syntax: `Start-InformationBarrierPoliciesApplication -CleanupGroupSegmentLink`
 
     >[!NOTE]
     >The CleanupGroupSegmentLink attribute removes group associations with the segment with no user associations.
 
     Changes are applied user-by-user for your organization. If your organization is large, it can take 24 hours (or more) for this process to complete. As a general guideline, it takes about an hour to process 5,000 user accounts.
 
-5. To remove a segment, use the Remove-OrganizationSegment cmdlet with the Identity parameter and relevant details.
+5. To remove a segment, use the **Remove-OrganizationSegment** cmdlet with the *Identity* parameter and relevant details.
 
     |**Syntax**|**Example**|
     |:---------|:----------|
@@ -208,7 +208,7 @@ At this point, one or more information barriers policies are set to inactive sta
 
 4. Edit the segment that will be removed to remove the relationship of users to that segment. This action updates the segment definition and removes all users from the segment. You'll use the *UserGroupFilter* parameter to disassociate users from the segment prior to removal.
 
-    To edit a segment, use the **Set-OrganizationSegment** cmdlet with the Identity parameter and relevant details.
+    To edit a segment, use the **Set-OrganizationSegment** cmdlet with the *Identity* parameter and relevant details.
 
     |**Syntax**|**Example**|
     |:---------|:----------|
