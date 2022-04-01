@@ -378,12 +378,10 @@
           href: devices/device-states.md
         - name: App protection settings for Windows 10 PCs
           href: devices/protection-settings-for-windows-10-devices.md
-          items: 
-            - name: Validate settings on Android or iOS
-              href: devices/validate-settings-on-android-or-ios.md
-          items: 
-            - name: Validate settings on Windows 10 PCs
-              href: devices/validate-settings-on-windows-10-pcs.md
+        - name: Validate settings on Android or iOS
+          href: devices/validate-settings-on-android-or-ios.md
+        - name: Validate settings on Windows 10 PCs
+          href: devices/validate-settings-on-windows-10-pcs.md
         - name: Autopilot
           items: 
             - name: Create and edit AutoPilot profiles
