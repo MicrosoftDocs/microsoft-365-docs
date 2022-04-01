@@ -30,7 +30,7 @@ description: "Learn how to automatically install the 32-bit Office apps on Windo
 This article applies to Microsoft 365 Business Premium.
 
 > [!NOTE]
-> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../../security/defender-business/mdb-overview.md).
+> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../security/defender-business/mdb-overview.md).
 
 ## Prepare to automatically install Office apps to client computers
 

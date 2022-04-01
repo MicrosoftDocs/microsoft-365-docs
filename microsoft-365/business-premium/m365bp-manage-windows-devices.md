@@ -31,7 +31,7 @@ description: "Learn how to enable Microsoft 365 to protect local Active-Director
 # Enable domain-joined Windows 10 devices to be managed by Microsoft 365 Business Premium
 
 > [!NOTE]
-> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../../security/defender-business/mdb-overview.md).
+> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../security/defender-business/mdb-overview.md).
 
 If your organization uses Windows Server Active Directory on-premises, you can set up Microsoft 365 Business Premium to protect your Windows 10 devices, while still maintaining access to on-premises resources that require local authentication.
 To set up this protection, you can implement **Hybrid Azure AD joined devices**. These devices are joined to both your on-premises Active Directory and your Azure Active Directory.
@@ -64,7 +64,7 @@ Go to [Endpoint Manager](https://endpoint.microsoft.com/#blade/Microsoft_Intune_
 - Verify**Users may join devices to Azure AD** is enabled 
     1. To enable all users, set to **All**.
     2. To enable specific users, set to **Selected** to enable a specific group of users.
-        - Add the desired domain users synced in Azure AD to a [security group](../../admin/create-groups/create-groups.md).
+        - Add the desired domain users synced in Azure AD to a [security group](../admin/create-groups/create-groups.md).
         - Choose **Select groups** to enable MDM user scope for that security group.
 
 ## 3. Verify Azure AD is enabled for MDM
@@ -122,6 +122,6 @@ At this point you should be able to see the policy **Enable automatic MDM enroll
 ## Related content
 
 [Synchronize domain users to Microsoft 365](manage-domain-users.md) (article)\
-[Create a group in the admin center](../create-groups/create-groups.md) (article)\
+[Create a group in the admin center](../admin/create-groups/create-groups.md) (article)\
 [Tutorial: Configure hybrid Azure Active Directory join for managed domains](/azure/active-directory/devices/hybrid-azuread-join-managed-domains) (article)
-[Top 10 ways to secure Microsoft 365 for business plans](../security-and-compliance/secure-your-business-data.md)
+[Top 10 ways to secure Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)
