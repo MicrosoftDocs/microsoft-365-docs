@@ -93,4 +93,4 @@ For more information, see [How do protection features in Microsoft 365 Premium m
 
 ## See also
 
-[Top 10 ways to secure Microsoft 365 for business plans](../security-and-compliance/secure-your-business-data.md)
+[Top 10 ways to secure Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md) 
