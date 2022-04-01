@@ -24,8 +24,11 @@ ms.collection:
 
 **Applies to:**
 
-- Microsoft Defender Antivirus on Windows 
+- Microsoft Defender Antivirus
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
+**Platforms**
+- Windows
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 

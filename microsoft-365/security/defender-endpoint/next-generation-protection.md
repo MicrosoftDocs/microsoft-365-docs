@@ -21,9 +21,12 @@ ms.collection: M365-security-compliance
 
 **Applies to**
 
-- Microsoft Defender Antivirus on Windows
+- Microsoft Defender Antivirus
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
+**Platforms**
+- Windows
 
 Microsoft Defender for Endpoint includes next-generation protection to reinforce the security perimeter of your network. Next-generation protection was designed to catch all types of emerging threats. In addition to Microsoft Defender Antivirus, your next-generation protection services include the following capabilities:
 

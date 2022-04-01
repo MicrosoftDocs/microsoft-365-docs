@@ -21,8 +21,11 @@ ms.collection: m365-security-compliance
 
 **Applies to:**
 
-- Microsoft Defender Antivirus on Windows
+- Microsoft Defender Antivirus
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
+**Platforms**
+- Windows
 
 [Cloud protection in Microsoft Defender Antivirus](cloud-protection-microsoft-defender-antivirus.md) delivers accurate, real-time, and intelligent protection. Cloud protection should be enabled by default; however, you can configure cloud protection to suit your organization's needs.
 

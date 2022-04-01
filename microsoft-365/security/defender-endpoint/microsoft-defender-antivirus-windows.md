@@ -24,7 +24,10 @@ ms.collection:
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- Microsoft Defender Antivirus on Windows 
+- Microsoft Defender Antivirus
+
+**Platforms**
+- Windows 
 
 Microsoft Defender Antivirus is available in Windows 10 and Windows 11, and in versions of Windows Server.
 

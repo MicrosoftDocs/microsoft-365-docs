@@ -24,9 +24,12 @@ ms.collection: m365-security-compliance
 
 **Applies to:**
 
-- Microsoft Defender Antivirus on Windows
+- Microsoft Defender Antivirus
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+
+**Platforms**
+- Windows
 
 Use this guide to determine how well Microsoft Defender Antivirus protects you from viruses, malware, and potentially unwanted applications.
 
