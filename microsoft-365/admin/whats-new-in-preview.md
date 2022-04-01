@@ -48,15 +48,17 @@ And if you'd like to know what's new with other Microsoft cloud services:
 
 ## April 2022
 
-### Search in distribution lists to add Priority accounts
+### Search in distribution lists to add Priority Accounts
 
 Previously, you could only tag priority accounts by searching for them using the person's name, e-mail address or job title. With this update, you can now search for people to add to priority accounts in a distribution list. This allows you to bulk add people in an efficient way and reduces the time needed to tag individual people in your organization.
 
+:::image type="content" source="../media/search-by-distribution-list-priority-accounts.png" alt-text="Screenshot: Search for priority accounts to add using a distribution list":::
 
-1.	Up-to 50 users from a distribution list can be tagged as priority in a single action.
-2.	Additional useful meta data about the user like Department & Job Title has been introduced on the Priority Accounts Home page.
-3.	You can only tag user accounts within distribution lists, and not the list itself. Users who have already been tagged won’t be searchable from distribution lists.
+- You can tag up to 50 users from a distribution list as priority accounts in a single action.
 
+- Additional information about the user like department and job title has been introduced on the Priority Accounts page.
+
+- You can only tag user accounts within distribution lists, and not the list itself. Users who have already been tagged won’t show up in your distribution list search.
 
 ## March 2022
 
