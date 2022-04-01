@@ -60,7 +60,7 @@ Devices must meet these requirements:
     
 2. On the **Device** panel, select a profile from the **Assigned profile** drop-down. 
     
-    If you don't have any profiles yet, see [Create and edit AutoPilot profiles](m65bp-create-and-edit-autopilot-profiles.md) for instructions. 
+    If you don't have any profiles yet, see [Create and edit AutoPilot profiles](../admin/devices/create-and-edit-autopilot-profiles.md) for instructions. 
 
 ## See also
 
