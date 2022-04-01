@@ -32,7 +32,7 @@ description: "Learn how to use Windows AutoPilot to set up new Windows 10 device
 # Use the step-by-step guide to add Autopilot devices and profile
 
 > [!NOTE]
-> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../../security/defender-business/mdb-overview.md).
+> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Overview of Microsoft Defender for Business](../security/defender-business/mdb-overview.md).
 
 You can use Windows AutoPilot to set up **new** Windows 10 devices for your business so they're ready for use when you give them to your employees.
   
@@ -46,7 +46,7 @@ Devices must meet these requirements:
     
 ## Use the setup guide to create devices and profiles
 
-If you haven't created device groups or profiles yet, the best way to get started is by using the step-by-step guide. You can also [add devices](create-and-edit-autopilot-devices.md) and [assign profiles](m365bp-create-and-edit-autopilot-profiles.md) to them without using the guide. 
+If you haven't created device groups or profiles yet, the best way to get started is by using the step-by-step guide. You can also [add AutoPilot devices](m365bp-create-and-edit-autopilot-devices.md) and [assign profiles](m365bp-create-and-edit-autopilot-profiles.md) to them without using the guide. 
   
 1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
 
