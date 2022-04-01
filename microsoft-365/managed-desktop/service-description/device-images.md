@@ -25,9 +25,9 @@ When you order a new device from an [approved manufacturer](device-requirements.
 Anytime you plan to enroll a particular device model in the service for the first time, you should test an example to ensure it will deliver the user experience you expect. For more information, see [Validate new devices](/microsoft-365/managed-desktop/get-started/validate-device).
 
 ### Windows 10 Pro
-If you're ordering devices with Windows 10, work directly with your OEM sales preresentative. As of November 1, 2022, OEMs can only sell Windows 10 Pro under the Windows 11 Pro with Windows 10 Pro Downgrade license. For more information, see [Windows 10 support dates](https://docs.microsoft.com/lifecycle/products/windows-10-enterprise-and-education?msclkid=4a74c7b9b04111eca478c6fdafbc51a5) for the retirement dates of Windows 10 versions.
+If you're ordering devices with Windows 10, work directly with your OEM sales preresentative. As of November 1, 2022, OEMs can only sell Windows 10 Pro under the Windows 11 Pro with Windows 10 Pro Downgrade license. For more information, see [Windows 10 support dates](/lifecycle/products/windows-10-enterprise-and-education?msclkid=4a74c7b9b04111eca478c6fdafbc51a5) for the retirement dates of Windows 10 versions.
 
-For customers interested in moving to Windows 11, you can find more information on the recommended process [here](https://docs.microsoft.com/microsoft-365/managed-desktop/intro/win11-overview?view=o365-worldwide). 
+For customers interested in moving to Windows 11, you can find more information on the recommended process [here](/microsoft-365/managed-desktop/intro/win11-overview). 
 
 ### Dell
 
