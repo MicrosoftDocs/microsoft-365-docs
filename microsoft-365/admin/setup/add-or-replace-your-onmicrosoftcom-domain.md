@@ -43,7 +43,7 @@ It serves as a default email routing address for your Microsoft 365 environment.
 You can change your fallback domain in the Microsoft 365 admin center. Common reasons customers change their fallback name include:
 
 - Not knowing the company name to use when they first signed up for Microsoft 365. Now that they know the company name, they want their users to have login account names that are appropriate. 
-- They want to change how their Sharepoint URLs look like when they create a new site.. SharePoint URLs in your Microsoft 365 environment are created based on your fallback domain name. If you did not use the correct company name when you first signed up, your SharePoint URLs for your sites will continue to use that name when you create new SharePoint sites. 
+- They want to change how their Sharepoint URLs look like when they create a new site. SharePoint URLs in your Microsoft 365 environment are created based on your fallback domain name. If you did not use the correct company name when you first signed up, your SharePoint URLs for your sites will continue to use that name when you create new SharePoint sites. 
 
 
 While you can add additional onmicrosoft.com domains, only one onmicrosoft.com domain can be used as your fallback domain. The steps in this article describes how to:
