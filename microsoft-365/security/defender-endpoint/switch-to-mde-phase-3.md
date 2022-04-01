@@ -113,7 +113,9 @@ To set Microsoft Defender Antivirus to passive mode on Windows Server, version 1
 1. Open Registry Editor, and then navigate to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.
 
 2. Edit (or create) a DWORD entry called **ForceDefenderPassiveMode**, and specify the following settings:
+
    - Set the DWORD's value to **1**.
+   
    - Under **Base**, select **Hexadecimal**.
 
 > [!NOTE]
@@ -134,6 +136,7 @@ Keeping Microsoft Defender Antivirus up to date is critical to assure your devic
 There are two types of updates related to keeping Microsoft Defender Antivirus up to date:
 
 - Security intelligence updates
+
 - Product updates
 
 To get your updates, follow the guidance in [Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md).
@@ -143,6 +146,7 @@ To get your updates, follow the guidance in [Manage Microsoft Defender Antivirus
 If at this point you have:
 
 - Onboarded your organization's devices to Defender for Endpoint, and
+
 - Microsoft Defender Antivirus is installed and enabled,
 
 Then your next step is to uninstall your non-Microsoft antivirus, antimalware, and endpoint protection solution. When you uninstall your non-Microsoft solution, Microsoft Defender Antivirus switches from passive mode to active mode. In most cases, this happens automatically. 
@@ -170,4 +174,5 @@ Now that you have onboarded to Defender for Endpoint, and you have uninstalled y
 **Congratulations**! You have completed your [migration to Defender for Endpoint](switch-to-mde-overview.md#the-migration-process)!
 
 - [Visit your security operations dashboard](security-operations-dashboard.md) in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)).
+
 - [Manage Defender for Endpoint, post migration](manage-mde-post-migration.md).
