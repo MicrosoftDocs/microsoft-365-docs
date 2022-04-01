@@ -29,7 +29,7 @@ sections:
     questions:
       - question: What is Microsoft 365 Lighthouse?
         answer: |
-          Microsoft 365 Lighthouse is an admin portal that helps Managed Service Providers (MSPs) secure and manage devices, data, and users at scale for small- and medium-sized business (SMB) customers who are using Microsoft 365 Business Premium, Microsoft 365 E3, or Windows 365 Business.  Lighthouse simplifies onboarding of tenants by recommending security configuration baselines tailored to SMBs and providing multi-tenant views across all customer environments. For more information, see [Overview of Microsoft 365 Lighthouse](m365-lighthouse-overview.md).
+          Microsoft 365 Lighthouse is an admin portal that helps Managed Service Providers (MSPs) secure and manage devices, data, and users at scale for small- and medium-sized business (SMB) customers who are using Microsoft 365 Business Premium, Microsoft 365 E3, or Windows 365 Business. Lighthouse simplifies onboarding of tenants by recommending security configuration baselines tailored to SMBs and providing multi-tenant views across all customer environments. For more information, see [Overview of Microsoft 365 Lighthouse](m365-lighthouse-overview.md).
           
       - question: What's the difference between Microsoft 365 Lighthouse and Azure Lighthouse?
         answer: |
