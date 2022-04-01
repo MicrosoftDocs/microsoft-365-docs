@@ -89,7 +89,7 @@ Depending on your subscription, here are the available reports in all environmen
 |[Office activations](microsoft-office-activations-ww.md)|Yes|Yes|Yes|Yes|Yes|
 |[Active Users](active-users-ww.md)|Yes|Yes|Yes|Yes|Yes|
 |[Microsoft 365 groups](office-365-groups-ww.md)|Yes|Yes|Yes|Yes|Yes|
-|[Microsoft 365 Apps usage](microsoft365-apps-usage-ww.md)|Yes|Yes|No[^1]|No[^1]|No[^1]|
+|[Microsoft 365 Apps usage](microsoft365-apps-usage-ww.md)|Yes|Yes|No[^1]|No[^1]|Yes
 |[OneDrive for Business user activity](onedrive-for-business-activity-ww.md)|Yes|Yes|Yes|Yes|Yes|
 |[OneDrive for Business usage](onedrive-for-business-usage-ww.md)|Yes|Yes|Yes|Yes|Yes|
 |[SharePoint site usage](sharepoint-site-usage-ww.md)|Yes|Yes|Yes|Yes|Yes|
