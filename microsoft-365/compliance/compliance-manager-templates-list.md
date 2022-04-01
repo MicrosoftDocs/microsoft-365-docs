@@ -89,12 +89,15 @@ These templates may be purchased by your organization.
 - ISO 27799: 2016, Health informatics — Information security management in health (Microsoft 365)
 - ISO 28000 – Specifications for Security Management Systems for the Supply Chain (Microsoft 365)
 - ISO 31000:2018 (Microsoft 365)
+- ISO 37301 (Microsoft 365)
 - ISO 55001 – Asset management -- Management systems--Requirements (Microsoft 365)
 - ISO IEC 80001-1:2010 (Microsoft 365)
 - ISO/IEC 27001:2013
 - [ISO/IEC 27018:2019](/compliance/regulatory/offering-iso-27018) (Microsoft 365)
 - ISO/IEC 27033-1:2015 (Microsoft 365)
 - [ISO/IEC 27701:2019](/compliance/regulatory/offering-iso-27701) (Microsoft 365)
+- NIST 800-207 - Zero Trust Architecture (Microsoft 365)
+- SIG 2022 (Microsoft 365)
 - [System and Organization Controls (SOC) 1](/compliance/regulatory/offering-soc)
 - [System and Organization Controls (SOC) 2](/compliance/regulatory/offering-soc)
 
@@ -127,6 +130,8 @@ These templates may be purchased by your organization.
 - [CFR - Code of Federal Regulations Title 21, Part 11, Electronic Records, Electronic Signatures](/compliance/regulatory/offering-fda-cfr-title-21-part-11) (Microsoft 365)
 - Children's Online Privacy Protection Rule (COPPA) (Microsoft 365)
 - CMMC Level 1, Level 2, Level 3, Level 4, Level 5 (Microsoft 365)
+- CMMC v2 Level 1 (Microsoft 365)
+- CMMC v2 Level 2 (Microsoft 365)
 - CMS Information Systems Security and Privacy Policy (IS2P2) (Microsoft 365)
 - Computer Fraud and Abuse Act (CFAA) (Microsoft 365)
 - Content of Premarket Submissions for Management of Cybersecurity in Medical Devices (Microsoft 365)
@@ -421,6 +426,7 @@ These templates may be purchased by your organization.
 - Canada - Protected B
 - Canada Cybersecure - Baseline Cyber Security Controls for Small and Medium Organizations (Microsoft 365)
 - CAN-SPAM Act (Microsoft 365)
+- Information Security Management Act - Province of British Columbia, CA (Microsoft 365)
 - Mexico - Federal Consumer Protection Law (Microsoft 365)
 - Mexico - Federal Law on Protection of Personal Data Held by Private Parties (Microsoft 365)
 
