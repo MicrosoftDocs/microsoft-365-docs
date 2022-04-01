@@ -54,14 +54,14 @@ This article describes error messages and problems that you might encounter whil
 
 **Resolution:** The following table describes the different tenant statuses that require action and explains how to resolve them.
 
-*Delegated Admin Privileges (DAP) is required to onboard customers to Lighthouse. We recommend also establishing Granular Delegated Admin Privileges (GDAP) with your customers to enable more secure delegated access. While DAP and GDAP coexist, GDAP will take precedence for customers where both models are in place. Soon, customers with just GDAP (and no DAP) will be able to onboard to Lighthouse.<br><br>
+*Delegated Admin Privileges (DAP) is required to onboard customers to Lighthouse. We recommend also establishing Granular Delegated Admin Privileges (GDAP) with your customers to enable more secure delegated access. While DAP and GDAP coexist, GDAP will take precedence for customers where both models are in place. Soon, customers with just GDAP (and no DAP) will be able to onboard to Lighthouse.
 
 
 | Status | Description | Resolution |
 |--|--|--|
 | Inactive | The tenant was offboarded at the request of the MSP and is no longer being managed in Lighthouse. | You need to reactivate the tenant. On the **Tenants** page, select the three dots (more actions) next to the tenant that you want to reactivate, and then select **Activate tenant**. It can take 24–48 hours for initial customer data to appear in Lighthouse. |
 | Ineligible - DAP or GDAP is not set up | You don't have DAP or GDAP admin privileges set up with the tenant, which is required by Lighthouse. | Set up DAP or GDAP admin privileges in the Microsoft Partner Center. |
-| Ineligible - Required license is missing | The tenant is missing a required license. They need at least one Microsoft 365 Business Premium or Microsoft 365 E3 license. | Make sure the tenant has at least one Microsoft 365 Business Premium or Microsoft 365 E3 license assigned. |
+| Ineligible - Required license is missing | The tenant is missing a required license. They need at least one Microsoft 365 Business Premium, Microsoft 365 E3, or Windows 365 Business license. | Make sure the tenant has at least one Microsoft 365 Business Premium, Microsoft 365 E3, or Windows 365 Business license assigned. |
 | Ineligible - User count exceeded | The tenant has more than the maximum of 1000 licensed users allowed by Lighthouse. | Verify that the tenant doesn't have more than 1000 licensed users. |
 | Ineligible - Geo check failed | You and your customer don't reside in the same geographic region, which is required by Lighthouse. | Verify that the customer resides in your geographic region. If not, then you can't manage the tenant in Lighthouse. |
 | In process | Lighthouse discovered the tenant but is still in the process of onboarding them. | Allow Lighthouse 48 hours to complete onboarding of the tenant. |
