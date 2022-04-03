@@ -15,7 +15,7 @@ ms.custom:
   - next-gen
   - edr
   - admindeeplinkDEFENDER
-ms.date: 03/18/2022
+ms.date: 04/01/2022
 ms.collection: m365-security-compliance
 ms.technology: mde
 ---
@@ -43,7 +43,7 @@ ms.technology: mde
 
 EDR in block mode is integrated with [threat & vulnerability management](next-gen-threat-and-vuln-mgt.md). Your organization's security team will get a [security recommendation](tvm-security-recommendation.md) to turn EDR in block mode on if it isn't already enabled.
 
-:::image type="content" source="images/edrblockmode-TVMrecommendation.png" alt-text="recommendation to turn on EDR in block mode.":::
+:::image type="content" source="images/edrblockmode-TVMrecommendation.png" alt-text="The recommendation to turn on EDR in block mode" lightbox="images/edrblockmode-TVMrecommendation.png":::
 
 > [!TIP]
 > To get the best protection, make sure to **[deploy Microsoft Defender for Endpoint baselines](configure-machines-security-baseline.md)**.
@@ -54,7 +54,7 @@ When EDR in block mode is turned on, and a malicious artifact is detected, Micro
 
 The following image shows an instance of unwanted software that was detected and blocked through EDR in block mode:
 
-:::image type="content" source="images/edr-in-block-mode-detection.png" alt-text="EDR in block mode detected something.":::
+:::image type="content" source="images/edr-in-block-mode-detection.png" alt-text="The detection by EDR in block mode" lightbox="images/edr-in-block-mode-detection.png":::
 
 
 ## Enable EDR in block mode
@@ -109,7 +109,7 @@ You can also define an exclusion for Microsoft Defender Antivirus. See [Configur
 
 ### Do I need to turn EDR in block mode on if I have Microsoft Defender Antivirus running on devices?
 
-The primary purpose of EDR in block mode is to remediate post-breach detections that were missed by a non-Microsoft antivirus product. However, we recommend keeping EDR in block mode turned on, whether Microsoft Defender Antivirus is running in passive mode or in active mode.
+The primary purpose of EDR in block mode is to remediate post-breach detections that were missed by a non-Microsoft antivirus product. There is minimal benefit in enabling EDR in block mode when Microsoft Defender Antivirus is in active mode, because real-time protection is expected to catch and remediate detections first. We recommend enabling EDR in block mode on endpoints where Microsoft Defender for Antivirus is running in passive mode. EDR detections can be automatically remediated by [PUA protection](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md) or by [automated investigation & remediation capabilities](automated-investigations.md) in block mode.
 
 - When Microsoft Defender Antivirus is in passive mode, EDR in block mode provides another layer of defense together with Microsoft Defender for Endpoint.
 
