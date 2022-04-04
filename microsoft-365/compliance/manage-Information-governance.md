@@ -25,7 +25,7 @@ description: "Implement capabilities from Microsoft Purview Data Lifecycle Manag
 
 Use the capabilities from Microsoft Purview Data Lifecycle Management and Microsoft Purview Records Management to govern your data for compliance or regulatory requirements.
 
-From a [licensing perspective](#licensing-requirements), there can be considerable overlap between data lifecycle management, records management, and data connectors. All three areas support retention and deletion of data for Microsoft 365 apps and services. Connectors are used by compliance solutions other than information governance and records management.
+From a [licensing perspective](#licensing-requirements), there can be considerable overlap between data lifecycle management, records management, and data connectors. All three areas support retention and deletion of data for Microsoft 365 apps and services. Connectors are used by compliance solutions other than data lifecycle management and records management.
 
 Use the following graphic to help you identify the main configurable components for these three different solutions that each have their own configuration area in the Microsoft Purview portal:
 

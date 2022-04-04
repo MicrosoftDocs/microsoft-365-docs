@@ -131,7 +131,7 @@ The top applied retention labels card shows you how many items have a given rete
 
 > [!NOTE]
 > If this card displays the message, "No retention labels detected", it means you haven't created or published any retention labels or no content has had a retention label applied. To get started with retention labels, see:
->- [Get started with information governance](get-started-with-information-governance.md)
+>- [Get started with data lifecycle management](get-started-with-information-governance.md)
 
 ## Top activities detected
 

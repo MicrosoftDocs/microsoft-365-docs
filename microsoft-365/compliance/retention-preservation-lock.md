@@ -88,4 +88,4 @@ You should see **RestrictiveRetention** is set to **True**. For example:
 
 ## See also
 
-[Resources to help you meet regulatory requirements for information governance and records management](retention-regulatory-requirements.md)
+[Resources to help you meet regulatory requirements for data lifecycle management and records management](retention-regulatory-requirements.md)

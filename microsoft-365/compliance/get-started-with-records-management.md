@@ -64,7 +64,7 @@ These permissions are required only to create, configure, and apply retention la
 Use the following table to help you map your business requirements to the scenarios that are supported by records management.
 
 > [!TIP]
-> Need to comply with a specific industry regulation? Check [Regulatory requirements for information governance and records management](retention-regulatory-requirements.md) for regulation-specific guidance.
+> Need to comply with a specific industry regulation? Check [Regulatory requirements for data lifecycle management and records management](retention-regulatory-requirements.md) for regulation-specific guidance.
 
 |I want to ...|Documentation|
 |----------------|---------------|

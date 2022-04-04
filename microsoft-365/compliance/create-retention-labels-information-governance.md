@@ -16,7 +16,7 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: Instructions to create retention labels for exceptions to retention policies for information governance so you can retain what you need and delete what you don't.
+description: Instructions to create retention labels for exceptions to retention policies for data lifecycle management so you can retain what you need and delete what you don't.
 ---
 
 # Create retention labels for exceptions to your retention policies
@@ -37,16 +37,16 @@ For more examples of how retention labels can be used as exceptions to retention
 
 Retention labels also support more capabilities than retention policies. For more information, see [Compare capabilities for retention policies and retention labels](retention.md#compare-capabilities-for-retention-policies-and-retention-labels).
 
-Use the following information to help you create retention labels to supplement retention policies as part of your information governance strategy.
+Use the following information to help you create retention labels to supplement retention policies as part of your data lifecycle management strategy.
 
 > [!NOTE]
-> Create retention labels from the **Records management** solution rather than **Information governance** if you need to use retention labels for the lifecycle management of high-value items for business, legal, or regulatory record-keeping requirements. For example, you want to use event-based retention or disposition review. For instructions, see [Use file plan to create and manage retention labels](file-plan-manager.md).
+> Create retention labels from the **Records management** solution rather than **Information governance** if you need to use retention labels to manage high-value items for business, legal, or regulatory record-keeping requirements. For example, you want to use event-based retention or disposition review. For instructions, see [Use file plan to create and manage retention labels](file-plan-manager.md).
 
 ## Before you begin
 
 The global admin for your organization has full permissions to create and edit retention labels and their policies. If you aren't signing in as a global admin, see [Permissions for retention policies and retention labels](get-started-with-information-governance.md#permissions-for-retention-policies-and-retention-labels).
 
-## How to create retention labels for information governance
+## How to create retention labels for data lifecycle management
 
 1. In the [Microsoft Purview portal](https://compliance.microsoft.com/), navigate to: **Solutions** > **Information governance** > **Labels** tab > + **Create a label**
     

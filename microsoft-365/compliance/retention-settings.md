@@ -85,8 +85,8 @@ Specifically for SharePoint sites, there might be additional SharePoint configur
     - If you are using the records management solution:
         - **Solutions** > **Records management** > **Adaptive scopes** tab > + **Create scope**
         
-    - If you are using the information governance solution:
-       - **Solutions** > **Information governance** > **Adaptive scopes** tab > + **Create scope**
+    - If you are using the data lifecycle management solution:
+       - **Solutions** > **Data lifecycle management** > **Adaptive scopes** tab > + **Create scope**
     
     Don't immediately see your solution in the navigation pane? First select **Show all**. 
 

@@ -118,7 +118,7 @@ The Compliance Manager settings in the Microsoft Purview portal allow you to ena
 
 ### Set up automated testing
 
-Compliance Manager detects signals from other Microsoft Purview solutions that your organization subscribes to, including information governance, information protection, Microsoft Purview Data Loss Prevention, communication compliance, and insider risk management. In each improvement action's details page, the **Testing logic** field on the **Testing** tab will show what's required in the other solution in order for the action to pass and earn points toward your compliance score.
+Compliance Manager detects signals from other Microsoft Purview solutions that your organization subscribes to, including data lifecycle management, information protection, Microsoft Purview Data Loss Prevention, communication compliance, and insider risk management. In each improvement action's details page, the **Testing logic** field on the **Testing** tab will show what's required in the other solution in order for the action to pass and earn points toward your compliance score.
 
 Compliance Manager also detects signals from complementary improvement actions that are also monitored by [Microsoft Secure Score](../security/defender/microsoft-secure-score.md). Using these signals, Compliance Manager can automatically test certain improvement actions for you, which helps maximize efficiency in your compliance activities. When an improvement action is successfully tested and implemented, you receive the full amount of points, which gets credited to your overall compliance score.
 

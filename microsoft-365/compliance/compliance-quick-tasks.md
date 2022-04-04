@@ -84,7 +84,7 @@ When content is subject to a retention policy, people can continue to edit and w
 
 You can quickly put retention policies in place for multiple services in your Microsoft 365 environment that include Teams and Yammer messages, Exchange mail, SharePoint sites, and OneDrive accounts. There are no limits to the number of users, mailboxes or sites that a retention policy can automatically include. But if you need to get more selective, you can do so by configuring either an adaptive scope that's query-based to dynamically target specific instances, or a static scope that specifies specific instances to always include or always exclude.
 
-For step-by-step guidance to configure retention policies, see [Create and configure retention policies](create-retention-policies.md). Because retention policies form the cornerstone of an information governance strategy for Microsoft 365, see [Get started with information governance](get-started-with-information-governance.md).
+For step-by-step guidance to configure retention policies, see [Create and configure retention policies](create-retention-policies.md). Because retention policies form the cornerstone of a data lifecycle management strategy for Microsoft 365, see [Get started with data lifecycle management](get-started-with-information-governance.md).
 
 ## Task 7: Configure sensitive information and offensive language policies
 

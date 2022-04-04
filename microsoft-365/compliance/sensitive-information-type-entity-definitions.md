@@ -505,7 +505,7 @@ This sensitive information type is only available for use in:
 
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -569,7 +569,7 @@ This sensitive information type is only available for use in:
 
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -1121,7 +1121,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -1406,7 +1406,7 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -2326,7 +2326,7 @@ Medium
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -2861,7 +2861,7 @@ Medium
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -4537,7 +4537,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -4677,7 +4677,7 @@ Medium
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -5789,7 +5789,7 @@ dokumendi nr
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -6565,7 +6565,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -6971,7 +6971,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -7324,7 +7324,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -7836,7 +7836,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -8204,7 +8204,7 @@ Medium
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -8263,7 +8263,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -8659,7 +8659,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -8796,7 +8796,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -8878,7 +8878,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -10365,7 +10365,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -10545,7 +10545,7 @@ Medium
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -10778,7 +10778,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -10840,7 +10840,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -11693,7 +11693,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -12030,7 +12030,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -12531,7 +12531,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -13209,7 +13209,7 @@ Medium
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -13293,7 +13293,7 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -13356,7 +13356,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -13419,7 +13419,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -13535,7 +13535,7 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -13655,7 +13655,7 @@ Medium
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -14189,7 +14189,7 @@ Medium
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -14257,7 +14257,7 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -14975,7 +14975,7 @@ Pașaport nr
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -15084,7 +15084,7 @@ Medium
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -15147,7 +15147,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -15551,7 +15551,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -15914,7 +15914,7 @@ Medium
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -15986,7 +15986,7 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -16165,7 +16165,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -16593,7 +16593,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -17134,7 +17134,7 @@ Medium
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -17300,7 +17300,7 @@ Medium
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -18013,7 +18013,7 @@ Medium
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -18521,7 +18521,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -18570,7 +18570,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
