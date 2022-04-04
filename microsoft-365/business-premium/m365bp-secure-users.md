@@ -42,6 +42,8 @@ Your Microsoft 365 Business Premium subscription includes:
 - **Compliance and privacy features** to protect and control access to your and your customers' sensitive information
 - **Device management capabilities** that enable your security team to help keep devices up to date and secure
 
+### Top 5 benefits of Microsoft 365 Business Premium
+
 Watch the following video to learn more about how Microsoft 365 Business Premium helps your business be more productive and secure: <p>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Pq0G]
@@ -51,7 +53,7 @@ Watch the following video to learn more about how Microsoft 365 Business Premium
 
 ## Resources to train your users
 
-The security recommendations provided here make it much harder for cyber attackers to gain access to your environment. As the one responsible for the integrity of the network, your front line is the members of the org who use the systems regularly. The tradeoff is your users need to be aware of how to work within and maintain a more secure environment. Training these front-line users in proper safeguarding and maintenance of the network plays a big part in overall security. We understand a little extra patience is required, but it's worth it to keep the organization protected. 
+The security recommendations provided in this library make it much harder for cyber attackers to gain access to your environment. Your front line of defense includes the people in your company who use your systems regularly. Your users need to be aware of how to work productively while maintaining a more secure environment. Training your front-line users in proper safeguarding and maintenance of the network plays a big part in your overall security strategy. We understand a little extra patience might be required, but it's worth the effort to help keep your organization protected. 
 
 This information summarizes a number of security recommendations specific to end-users. The same tasks are covered in the course of the following missions, but it's helpful to be aware of it up-front.
 
@@ -83,7 +85,7 @@ All users you add to your environment will need to take a few minutes to [setup 
 
 After setting these up, your users will be prompted to use the authenticator app when accessing your organization data on these devices, including email.
 
-## Recommendations for BYOD Mac and Windows devices
+## BYOD Mac and Windows devices
 
 It's also important that users keep their primary work device up to date:
 
@@ -100,11 +102,11 @@ For [unmanaged Windows and Mac devices](m365bp-protect-pcs-macs.md), users have 
 
 To learn more about these recommendations, see [Protect your account and devices from hackers and malware](https://support.office.com/article/Protect-your-account-and-devices-from-hackers-and-malware-066d6216-a56b-4f90-9af3-b3a1e9a327d6#ID0EAABAAA=Windows_10).
 
-## Collaborate using Microsoft Teams, OneDrive, SharePoint Online, and other tools
+## Microsoft Teams, OneDrive, SharePoint Online, and other collaboration tools
 
 Your users might be tempted to share and store your organization files in places other than Microsoft 365. Microsoft 365 makes it as easy as possible to collaborate and share securely. You can [share files and videos](share-files-and-videos.md) directly from Microsoft Teams, OneDrive, Stream, and even from within a file. Sharing from within these tools helps keep your data from leaking. You can add additional protection to sensitive data to prevent sharing outside your organization.
 
-## Device management capabilities
+## Device management
 
 We recommend that your most important staff members use freshly acquired Windows devices that you manage. We'll show you how to [Set up managed devices](m365bp-managed-devices-setup.md) and apply security policies to protect them.
 
