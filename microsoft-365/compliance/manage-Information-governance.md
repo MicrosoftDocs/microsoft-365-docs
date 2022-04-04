@@ -23,7 +23,7 @@ description: "Implement capabilities from Microsoft Purview Data Lifecycle Manag
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Use the capabilities from Microsoft Purview Data Lifecycle Management and Microsoft Purview Records Management to govern your data for compliance or regulatory requirements.
+Use the capabilities from Microsoft Purview Data Lifecycle Management (formerly Microsoft Information Governance) and Microsoft Purview Records Management to govern your data for compliance or regulatory requirements.
 
 From a [licensing perspective](#licensing-requirements), there can be considerable overlap between data lifecycle management and records management. Both solutions support retention and deletion of data for Microsoft 365 apps and services.
 
