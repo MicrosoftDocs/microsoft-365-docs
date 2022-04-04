@@ -76,15 +76,15 @@ To take any of the described actions, select one or more records in your query r
 Apart from device-focused remediation steps, you can also take the following actions on emails and links inside email from your query results:
 - `Move to mailbox folder` - move email messages to Junk, Inbox, or Deleted items folder
 - `Delete email` - move email messages to the Deleted items folder or delete them permanently
-- `Block URL` - add the URL to the [Safe Links policy](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-safe-links-policies) as a malicious URL for blocking
+- `Block URL` - add the URL to the [Safe Links policy](office-365-security/set-up-safe-links-policies.md) as a malicious URL for blocking
 
 :::image type="content" source="../../media/choose-email-actions.png" alt-text="take actions wizard for email messages or links" lightbox="../../media/choose-email-actions.png":::
 
 You can also provide a remediation name and a short description of the action taken to easily track it in the action center history. You can also use the Approval ID to filter for these actions in the action center. This ID is provided at the end of the wizard:
 
-:::image type="content" source="../../media/choose-email-actions-entities.png" alt-text="take actions wizard showing choose actions for entities" lightbox="../../media/choose-email-actions-entities":::
+:::image type="content" source="../../media/choose-email-actions-entities.png" alt-text="take actions wizard showing choose actions for entities" lightbox="../../media/choose-email-actions-entities.png":::
 
-These email actions are applicable to [custom detections](custom-detections-overview) as well.
+These email actions are applicable to [custom detections](custom-detections-overview.md) as well.
 
 
 ## Review actions taken
