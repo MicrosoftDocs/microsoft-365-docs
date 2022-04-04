@@ -11,7 +11,7 @@ f1.keywords:
 - CSH
 ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
-description: Learn how to conduct key Microsoft OneLTI management tasks including deleting, viewing, editing, and troubleshooting an LTI registration.
+description: Learn how to conduct key Microsoft OneLTI management tasks including deleting, viewing, editing, and troubleshooting.
 ---
 
 # Manage Microsoft OneLTI for any LMS
@@ -35,7 +35,7 @@ If you would like to delete a Microsoft OneLTI registration, follow the steps be
 3. In the registration list, find the LTI registration you wish to delete.
 4. Select the **trash can icon** next to the listing.
 5. In the confirmation dialog box, select **Delete** to confirm deletion.
-6. You will see a success message once it's deleted.
+6. You'll see a success message once it's deleted.
 
 ## View an LTI registration
 
@@ -45,7 +45,7 @@ If you would like to view the details of an LTI registration, follow the steps b
 2. Sign in with a Microsoft 365 administrator account.
 3. In the registration list, find the LTI registration you wish to view.
 4. Select the **eye icon** next to the listing.
-5. This will open the registration details panel.
+5. The registration details panel will open.
 
 ## Edit an LTI registration
 
@@ -71,10 +71,10 @@ If so, here are some common issues and how to resolve them.
   - These cookies are needed to complete the LTI 1.3 handshake per the IMS specifications.
 
 - Registration details not found
-  - This can happen if registration of the LTI tool hasn't been completed or if the registration has been deleted in the OneLTI admin portal.
+  - This issue happens when registration of the LTI tool wasn't completed or if the registration was deleted in the OneLTI admin portal.
   - The IT admin will need to complete registration of the LTI tool.
 
-- Some details from LMS are not valid
+- Some details from LMS aren't valid
   - This issue happens when the details sent from the LMS in the tool launch request aren't aligned with the IMS LTI 1.3 specification.
   - The IT admin will need to reach out to [Microsoft's education support team](https://edusupport.microsoft.com/support?product_id=lti_apps&platform_id=web) if the issue persists.
 
@@ -86,5 +86,5 @@ To report any issues or submit feedback on Microsoft OneLTI, follow the steps be
 
 1. In the Microsoft OneLTI registration portal, select the **question mark icon** in the page header.
 2. In the dropdown, select **Report a problem**.
-3. The Microsoft Education Support page will open. Log in with your Microsoft 365 credentials.
+3. The Microsoft Education Support page will open. Sign in with your Microsoft 365 credentials.
 4. Fill out the form and submit.

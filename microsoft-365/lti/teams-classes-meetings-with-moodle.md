@@ -37,7 +37,7 @@ For details on managing all OneLTI tools for any LMS, see [Manage Microsoft OneL
 
 5. Enter in an easily identifiable **Registration** name and select **Moodle** as the LMS platform. Select **Next**.
 
-6. You will be given a list of keys that need to be added to your Moodle site.
+6. You'll be given a list of keys that need to be added to your Moodle site.
 
 7. Open Moodle in another tab. Don't close the Microsoft LTI portal tab.
 
