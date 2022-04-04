@@ -15,7 +15,7 @@ metadata:
   ms.custom: intro-hub-or-landing
   author: denisebmsft
   ms.author: deniseb
-  ms.date: 03/10/2022
+  ms.date: 04/04/2022
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 
@@ -128,6 +128,6 @@ landingContent:
           - text: Troubleshooting
             url: mdb-troubleshooting.yml
           - text: Microsoft 365 Business Premium
-            url: /microsoft-365/business-premium/index.md
+            url: /microsoft-365/business-premium/
           - text: Microsoft 365 Lighthouse
             url: /microsoft-365/lighthouse/m365-lighthouse-overview
