@@ -25,9 +25,9 @@ description: "Implement capabilities from Microsoft Purview Data Lifecycle Manag
 
 Use the capabilities from Microsoft Purview Data Lifecycle Management and Microsoft Purview Records Management to govern your data for compliance or regulatory requirements.
 
-From a [licensing perspective](#licensing-requirements), there can be considerable overlap between data lifecycle management, records management, and data connectors. All three areas support retention and deletion of data for Microsoft 365 apps and services. Connectors are used by compliance solutions other than data lifecycle management and records management.
+From a [licensing perspective](#licensing-requirements), there can be considerable overlap between data lifecycle management and records management. Both solutions support retention and deletion of data for Microsoft 365 apps and services.
 
-Use the following graphic to help you identify the main configurable components for these three different solutions that each have their own configuration area in the Microsoft Purview portal:
+Use the following graphic to help you identify the main configurable components for these solutions that each have their own configuration area in the Microsoft Purview portal:
 
 ![Main components to manage for Microsoft Purview Information Goevernance.](../media/information-governance-components.png)
 
@@ -52,20 +52,10 @@ Lifecycle management of high-value items for legal, business, or regulatory obli
 |:------|:------------|---------------------|:----------------------------|
 |[Records management](records-management.md)| A single solution for email and documents that incorporates flexible retention and deletion schedules and requirements to support the full lifecycle of your content with records declaration and defensible disposition when needed |[Get started with records management](get-started-with-records-management.md) |
 
-## Microsoft Purview data connectors for third-party data
-
-Extend your compliance tools to imported and archived third-party data from social media platforms, instant messaging platforms, and document collaboration platforms:
-
-|Capability|What problems does it solve?|Get started|
-|:------|:------------|:--------------------|:-----------------------------|
-|[Data connectors](archiving-third-party-data.md)| Import, archive, and apply compliance solutions to third-party data from social media platforms, instant messaging platforms, and document collaboration platforms| [Third-party connectors](archiving-third-party-data.md#third-party-data-connectors)|
-
 ## Licensing requirements
 
 License requirements for Microsoft Purview Data Lifecycle Management and Microsoft Purview Records Management depend on the scenarios and features you use, rather than set licensing requirements for each capability listed on this page. To understand your licensing requirements and options, see the following sections from the [Microsoft 365 licensing documentation](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance): 
 - [Information Governance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-governance) 
 - [Records Management](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management) 
-- [Data connectors](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#data-connectors)
 
 Any additional licensing requirements will be included in the documentation instructions. For example, licensing specific to managing mailboxes might require licenses from Exchange Online.
-
