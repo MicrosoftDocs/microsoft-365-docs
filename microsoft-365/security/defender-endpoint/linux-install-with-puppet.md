@@ -127,7 +127,7 @@ $version = undef
         'Debian' : {
             apt::source { 'microsoftpackages' :
                 location => "https://packages.microsoft.com/${distro}/${version}/prod",
-                release  => $channel,
+                release  => $facts['os']['distro']['codename'],
                 repos    => 'main',
                 key      => {
                     'id'     => 'BC528686B50D79E339D3721CEB3E94ADBE1229CF',
