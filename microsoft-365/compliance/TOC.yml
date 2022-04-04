@@ -569,7 +569,7 @@
               href: dlp-migrate-exo-policy-to-unified-dlp.md
             - name: Data Loss Prevention policy tips reference
               href: dlp-policy-tips-reference.md
-- name: Manage information governance & records
+- name: Manage data lifecycle & records
   items: 
     - name: Govern your data
       href: manage-information-governance.md
@@ -593,11 +593,11 @@
           href: retention-settings.md
         - name: Limits for retention and deletion
           href: retention-limits.md
-    - name: Information governance
+    - name: Data lifecycle management
       items: 
-        - name: Learn about information governance
+        - name: Learn about data lifecycle management
           href: information-governance.md
-        - name: Get started with information governance
+        - name: Get started with data lifecycle management
           href: get-started-with-information-governance.md
         - name: Create retention policies
           href: create-retention-policies.md
