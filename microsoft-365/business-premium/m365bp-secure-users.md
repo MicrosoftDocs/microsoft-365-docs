@@ -35,52 +35,68 @@ Microsoft 365 Business Premium provides your business with productivity and secu
 Your Microsoft 365 Business Premium subscription includes:
 
 - **Windows 10 and 11 Pro** upgrades for your company's Windows devices
+
 - **Office apps**, such as Word, Excel, and PowerPoint, that you can install on your computers (Windows and Mac), and on your mobile devices (Windows, iOS, and Android). You also get Publisher and Access for your Windows devices.
+
 - **Microsoft Teams, Outlook, and Exchange** for email, calendars, meetings, and collaboration
+
 - **SharePoint and OneDrive** to store and manage your files
+
 - **Sophisticated protection from threats** like phishing, malware, and ransomware protection
+
 - **Compliance and privacy features** to protect and control access to your and your customers' sensitive information
+
 - **Device management capabilities** that enable your security team to help keep devices up to date and secure
 
-### Top 5 benefits of Microsoft 365 Business Premium
+### Video: Top 5 benefits of Microsoft 365 Business Premium
 
 Watch the following video to learn more about how Microsoft 365 Business Premium helps your business be more productive and secure: <p>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Pq0G]
 
 > [!TIP]
-> For more information about what's included, see [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium?activetab=pivot:overviewtab).
+> For more information, see [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium?activetab=pivot:overviewtab).
 
 ## Resources to train your users
 
-The security recommendations provided in this library make it much harder for cyber attackers to gain access to your environment. Your front line of defense includes the people in your company who use your systems regularly. Your users need to be aware of how to work productively while maintaining a more secure environment. Training your front-line users in proper safeguarding and maintenance of the network plays a big part in your overall security strategy. We understand a little extra patience might be required, but it's worth the effort to help keep your organization protected. 
+The security recommendations provided in this library make it much harder for cyber attackers to gain access to your environment. However, an important part of your security strategy includes training users&mdash; the people in your company who use your systems regularly. Users can help be your front line of defense. They need to be aware of how to work productively while maintaining a more secure environment. 
 
-This information summarizes a number of security recommendations specific to end-users. The same tasks are covered in the course of the following missions, but it's helpful to be aware of it up-front.
+We have resources to help you train your users in all of these areas:
 
-:::image type="content" source="media/m365-democracy-users.png" alt-text="Illustration summarizing key points for devices.":::
+- [Using email securely](m365bp-protect-email-overview.md)
+
+- [Protecting their devices](m365bp-devices-overview.md) (company managed, or personal devices that people use to access company data)
+
+- [Collaborating and sharing information securely](m365bp-collaborate-share-securely.md)
+
+
 
 ## Best practices for using email securely
 
 All users should be aware of and use these email practices to help keep their email secure:
 
 - Set up email to use multi-factor authentication with the authenticator app
+
 - Verify legitimate emails and look for safety tips from advanced anti-phishing protection
+
 - Allow Safe Links and Safe Attachments protection to check URLs and email attachments
 
 Learn more about [multi-factor authentication](m365bp-multifactor-authentication.md) and [phishing and other attacks](avoid-phishing-and-attacks.md).
 
-Download this infographic with tips for you and the members of your campaign team or business:
+Download this infographic with tips for you and your team:
 
 [:::image type="content" source="media/m365bp-whatuserscandotosecure.png" alt-text="Thumbnail of downloadable guide.":::](https://download.microsoft.com/download/9/1/f/91fa8f24-9953-4f33-9d87-a95624db5e0b/M365BPWhatCanUsersDoToSecure.pdf)
 
 [PDF](https://download.microsoft.com/download/9/1/f/91fa8f24-9953-4f33-9d87-a95624db5e0b/M365BPWhatCanUsersDoToSecure.pdf) | [PowerPoint](https://download.microsoft.com/download/9/1/f/91fa8f24-9953-4f33-9d87-a95624db5e0b/M365BPWhatCanUsersDoToSecure.pptx)
 
-## Support for iOS and Android devices
+## iOS and Android devices
 
-All users you add to your environment will need to take a few minutes to [setup iPhones and Android devices](../business/set-up-mobile-devices.md?toc=%2Fmicrosoft-365%2Fcampaigns%2Ftoc.json) to work securely:
+All users you add to your environment will need to take a few minutes to [setup their iPhones and Android devices](../business/set-up-mobile-devices.md) to work securely:
 
-- Set up devices to use multi-factor authentication with the authenticator app.
-- Use Microsoft mobile apps, including Outlook Mobile, Word, OneDrive, and other Microsoft apps from the app store. The native mail apps that are included on iPhones and Android devices aren't supported.
+- Set up devices to use multi-factor authentication with the authenticator app
+
+- Use Microsoft mobile apps, such as Microsoft Outlook, Word, OneDrive, and other Microsoft apps from the app store. The native mail apps that are included on iPhones and Android devices aren't supported
+
 - Require a PIN for users to unlock their device.
 
 After setting these up, your users will be prompted to use the authenticator app when accessing your organization data on these devices, including email.
