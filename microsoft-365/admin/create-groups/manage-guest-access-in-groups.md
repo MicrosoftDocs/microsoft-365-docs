@@ -45,7 +45,7 @@ Guest access in groups is often used as part of a broader scenario that includes
 
 If you want to enable or disable guest access in groups, you can do so in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Groups**</a>.
 
-1. In the admin center, go to **Show all** \> **Settings** \> **Org settings** and on the **Services** tab, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Microsoft 365 Groups**</a>.
+1. In the admin center, go to **Show all** \> **Settings** \> **Org settings** and on the <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**Services** tab</a>, select **Microsoft 365 Groups**.
   
 2. On the **Microsoft 365 Groups** page, choose whether you want to let people outside your organization access group resources or let group owners add people outside your organization to groups.
 
