@@ -50,8 +50,6 @@ Ready to start governing your organization's data by retaining the content that 
 
 5. If you have PST files that contain data you want to govern: **Import PST files to online mailboxes** by using network upload or drive shipping: [Learn about importing your organization's PST files](importing-pst-files-to-office-365.md)
 
-Independently from these steps, **Use connectors to import and archive third-party-data** that includes data from social media platforms, instant messaging platforms, and document collaboration platforms. When this data is imported to online mailboxes, it supports not just data lifecycle management from Microsoft Purview, but also other compliance solutions such as communication compliance, insider risk management, and eDiscovery. For more information, see [Learn about connectors for third-party data](archiving-third-party-data.md).
-
 ## Subscription and licensing requirements
 
 A number of different subscriptions support data lifecycle management capabilities.
