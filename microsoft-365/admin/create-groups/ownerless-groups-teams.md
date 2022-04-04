@@ -20,12 +20,20 @@ ms.custom:
 search.appverid:
 - MET150
 - MOE150
-description: "Learn how to automatically invite members to become owners in an ownerless Microsoft 365 group or a Microsoft Teams team."
+description: "Learn how to automatically invite members to become owners in an ownerless Microsoft 365 group or a team in Microsoft Teams."
 ---
 
 # Manage ownerless Microsoft 365 groups and teams
 
+A team in Microsoft Teams or a Microsoft 365 group can become ownerless if an owner's account is deleted or disabled in Microsoft 365. Groups and teams require an owner to add or remove members and change group settings.
 
+You can create a policy what automatically asks the most active members or an ownerless group or team if they'll accept ownership. When a member accepts the invitation to become an owner, the action is logged in the compliance center audit log. Guests are never invited to be owners.
+
+When creating the policy, you can specify:
+- If you want to limit who can be invited to be an owner by specifying a security group
+- The sender address of the notifications
+- The number of weeks that the notifications will be sent
+- Which groups or teams are part of the policy
 
 To set an ownerless group or team policy
 
@@ -37,7 +45,7 @@ To set an ownerless group or team policy
 
 1. On the *Weekly notification options* page, specify who can receive ownership notifications. If you choose to allow or block certain members, then search for and add the security group that you want to use.
 
-1. Type the number of active members that you want to notify and select the number of weeks to send the notification, and then select **Next**.
+1. Type the number of active members that you want to notify and select the number of weeks to send the notification. (The notification list is created during the first notification and does not change.) Select **Next**.
 
 1. On the *Who is this email coming from* page, select a sender for the email, and then select **Next**.
 
@@ -48,3 +56,5 @@ To set an ownerless group or team policy
 1. Select **Next**.
 
 1. On the *Review and finish* page, confirm your settings and click **Finish**, and then select **Done**.
+
+Notifications are sent weekly starting within 24 hours of policy creation.
