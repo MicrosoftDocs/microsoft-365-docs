@@ -43,11 +43,13 @@ For more information on what's new with other Microsoft Defender security produc
 You can also get product updates and important notifications through the [message center](https://admin.microsoft.com/Adminportal/Home#/MessageCenter). 
 
 
+## April 2022
+- (Preview) [Actions](advanced-hunting-take-action.md) can now be taken on email and links inside emails straight from hunting query results. Emails can be moved to other folders or deleted. Links can be added to a Safe Links policy for blocking.
 
 ## March 2022
 
 - (Preview) The incident queue has been enhanced with several features designed to help your investigations. Enhancements include capabilities such as ability to search for incidents by ID or name, specify a custom time range, and others.
-- (Preview) [Actions](advanced-hunting-take-action.md) can now be taken on email and links inside emails straight from hunting query results. Emails can be moved to other folders or deleted. Links can be added to a Safe Links policy for blocking.
+
 
 ## December 2021
 
