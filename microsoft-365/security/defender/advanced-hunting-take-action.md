@@ -54,7 +54,7 @@ You can take the following actions on devices identified by the `DeviceId` colum
 
 To learn more about how these response actions are performed through Microsoft Defender for Endpoint, [read about response actions on devices](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts).
    
-## Quarantine files
+### Quarantine files
 You can deploy the *quarantine* action on files so that they are automatically quarantined when encountered. When selecting this action, you can choose between the following columns to identify which files in your query results to quarantine:
 
 - `SHA1`: In most advanced hunting tables, this column refers to the SHA-1 of the file that was affected by the recorded action. For example, if a file was copied, this affected file would be the copied file.
@@ -66,16 +66,25 @@ To learn more about how quarantine actions are taken and how files can be restor
 
 >[!NOTE]
 >To locate files and quarantine them, the query results should also include `DeviceId` values as device identifiers.  
-## Take various actions on emails
-You can take the following actions on emails and links inside email from your query results:
-- Move to mailbox folder - move email messages to Junk, Inbox, or Deleted items folder
-- Delete email - move email messages to the Deleted items folder or delete them permanently
-- Block URL - add the URL to the Safe Links policy as a malicious URL for blocking
-- 
-## Take action
+
 To take any of the described actions, select one or more records in your query results and then select **Take actions**. A wizard will guide you through the process of selecting and then submitting your preferred actions.
 
 :::image type="content" source="../../media/take-action-multiple.png" alt-text="The Take actions option in the Microsoft 365 Defender portal" lightbox="../../media/take-action-multiple.png":::
+
+
+## Take various actions on emails
+Apart from device-focused remediation steps, you can also take the following actions on emails and links inside email from your query results:
+- `Move to mailbox folder` - move email messages to Junk, Inbox, or Deleted items folder
+- `Delete email` - move email messages to the Deleted items folder or delete them permanently
+- `Block URL` - add the URL to the [Safe Links policy](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-safe-links-policies) as a malicious URL for blocking
+
+[image]
+You can also provide a remediation name and a short description of the action taken to easily track it in the action center history. You can also use the Approval ID to filter for these actions in the action center. This ID is provided at the end of the wizard:
+
+[image]
+
+These email actions are applicable to [custom detections](custom-detections-overview) as well.
+
 
 ## Review actions taken
 Each action is individually recorded in the [action center](m365d-action-center.md) under **Action center** > **History** ([security.microsoft.com/action-center/history](https://security.microsoft.com/action-center/history)). Go to the action center to check the status of each action.
