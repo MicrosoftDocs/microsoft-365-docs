@@ -45,6 +45,7 @@ First, [connect to your Microsoft 365 tenant](/graph/powershell/get-started#auth
 To view summary information about your current licensing plans and the available licenses for each plan, run this command:
   
 ```powershell
+Connect-Graph -Scopes Organization.Read.All
 Get-MgSubscribedSku | Select -Property Sku*, ConsumedUnits -ExpandProperty PrepaidUnits | Format-List
 ```
 
@@ -59,6 +60,7 @@ The results contain:
 To view details about the Microsoft 365 services that are available in all of your license plans, first display a list of your license plans.
 
 ```powershell
+Connect-Graph -Scopes Organization.Read.All
 Get-MgSubscribedSku | Select SkuPartNumber
 ```
 
