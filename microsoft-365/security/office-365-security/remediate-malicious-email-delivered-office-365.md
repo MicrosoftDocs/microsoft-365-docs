@@ -37,7 +37,7 @@ Admins can take required action on emails, but to get those actions approved, th
 *Manual hunting* occurs when security teams identify threats manually by using the search and filtering capabilities in Explorer. Manual email remediation can be triggered through any email view (*Malware*, *Phish*, or *All email*) after you identify a set of emails that need to be remediated.
 
 > [!div class="mx-imgBorder"]
-> [![Manual hunting in Office 365 Threat Explorer by date.](../../media/tp-RemediationArticle1.png)](../../media/tp-RemediationArticle1.png#lightbox)
+> [![Screenshot of manual hunting in Office 365 Threat Explorer by date.](../../media/tp-RemediationArticle1.png)](../../media/tp-RemediationArticle1.png#lightbox)
 
 Security teams can use Explorer to select emails in several ways:
 
@@ -70,7 +70,7 @@ Open any remediation item to view details about it, including its name, creation
 - **Mail submission** tab: Displays the number of emails submitted through Threat Explorer or automated investigations to be remediated. These emails can be actionable or not actionable.
 
   > [!div class="mx-imgBorder"]
-  > [![The action center with actionable and not actionable threats.](../../media/tp-RemediationArticle5.png)](../../media/tp-RemediationArticle5.png#lightbox)
+  > [![Screenshot of the action center with actionable and not actionable threats.](../../media/tp-RemediationArticle5.png)](../../media/tp-RemediationArticle5.png#lightbox)
 
   - **Actionable**: Emails in the following cloud mailbox locations can be acted on and moved:
     - Inbox
