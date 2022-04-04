@@ -94,8 +94,8 @@ If you experience any installation failures, refer to [Troubleshooting installat
   - Red Hat Enterprise Linux 6 and CentOS 6:
     - For 6.7: 2.6.32-573.*
     - For 6.8: 2.6.32-642.*
-    - For 6.9: 2.6.32-696.*
-    - For 6.10: 2.6.32.754.2.1.el6.x86_64 to 2.6.32-754.41.2:
+    - For 6.9: 2.6.32-696.* (except 2.6.32-696.el6.x86_64)
+    - For 6.10: 2.6.32.754.2.1.el6.x86_64 to 2.6.32-754.43.1:
     
        - 2.6.32-754.10.1.el6.x86_64
        - 2.6.32-754.11.1.el6.x86_64
@@ -127,8 +127,8 @@ If you experience any installation failures, refer to [Troubleshooting installat
     For Red Hat Enterprise Linux 6 and CentOS 6, the list of supported kernel versions are:
        - For 6.7: 2.6.32-573.* 
        - For 6.8: 2.6.32-642.* 
-       - For 6.9: 2.6.32-696.* 
-       - For 6.10: 2.6.32.754.2.1.el6.x86_64 to 2.6.32-754.41.2:
+       - For 6.9: 2.6.32-696.* (except 2.6.32-696.el6.x86_64)
+       - For 6.10: 2.6.32.754.2.1.el6.x86_64 to 2.6.32-754.43.1:
 
  > [!NOTE]
  > After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that that are listed in this section are provided for technical upgrade support only.
