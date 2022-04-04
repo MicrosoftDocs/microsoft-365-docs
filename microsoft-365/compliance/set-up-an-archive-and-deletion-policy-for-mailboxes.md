@@ -70,7 +70,7 @@ The first step is to enable the archive mailbox for each user in your organizati
 
 2. Sign in using your global administrator account.
     
-3. In the Microsoft Purview portal, select **Information governance**, and then click the **Archive** tab.
+3. In the Microsoft Purview portal, select **Data lifecycle management**, and then click the **Archive** tab.
 
     A list of the mailboxes in your organization is displayed and whether the corresponding archive mailbox is enabled or disabled.
 

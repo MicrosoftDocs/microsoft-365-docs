@@ -40,7 +40,7 @@ Retention labels also support more capabilities than retention policies. For mor
 Use the following information to help you create retention labels to supplement retention policies as part of your data lifecycle management strategy.
 
 > [!NOTE]
-> Create retention labels from the **Records management** solution rather than **Information governance** if you need to use retention labels to manage high-value items for business, legal, or regulatory record-keeping requirements. For example, you want to use event-based retention or disposition review. For instructions, see [Use file plan to create and manage retention labels](file-plan-manager.md).
+> Create retention labels from the **Records management** solution rather than **Data lifecycle management** if you need to use retention labels to manage high-value items for business, legal, or regulatory record-keeping requirements. For example, you want to use event-based retention or disposition review. For instructions, see [Use file plan to create and manage retention labels](file-plan-manager.md).
 
 ## Before you begin
 
@@ -48,9 +48,9 @@ The global admin for your organization has full permissions to create and edit r
 
 ## How to create retention labels for data lifecycle management
 
-1. In the [Microsoft Purview portal](https://compliance.microsoft.com/), navigate to: **Solutions** > **Information governance** > **Labels** tab > + **Create a label**
+1. In the [Microsoft Purview portal](https://compliance.microsoft.com/), navigate to: **Solutions** > **Data lifecycle management** > **Labels** tab > + **Create a label**
     
-    Don't immediately see the **Information governance** solution? First select **Show all**. 
+    Don't immediately see the **Data lifecycle management** solution? First select **Show all**. 
 
 2. Follow the prompts to create the retention label. Be careful what name you choose, because this can't be changed after the label is saved.
     

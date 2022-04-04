@@ -61,7 +61,7 @@ To view a list of the inactive mailboxes in your organization:
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview portal</a> and sign in using the credentials for a Global administrator or a Compliance administrator account in your organization.
 
-2. In the left navigation pane, click **Show all**, and then click **Information governance** > **Retention**.
+2. In the left navigation pane, click **Show all**, and then click **Data lifecycle management** > **Retention**.
 
    ![Click the Inactive Mailbox button on the Retention page.](../media/MCCInactiveMailboxes1.png)
 

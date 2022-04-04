@@ -70,7 +70,7 @@ To meet the challenges of today’s decentralized, data-rich workplace, we’re 
 - [Manage custodian communications templates in Advanced eDiscovery](advanced-ediscovery-communications-library.md) - eDiscovery managers can now create custodian communications templates that can be used in any Advanced eDiscovery case in the organization.
 - [Manage issuing officers in Advanced eDiscovery](advanced-ediscovery-issuing-officers.md) - eDiscovery managers can add a list of issuing officers that can be assigned to custodian communications in any Advanced eDiscovery case in the organization.
 
-### Information governance and records management
+### Data lifecycle management and records management
 
 - [Adaptive scopes](retention.md#adaptive-or-static-policy-scopes-for-retention) for retention policies and retention label policies are now generally available (GA). The instructions for [configuring an adaptive scope](retention-settings.md#to-configure-an-adaptive-scope) now include more information for SharePoint site scopes: Blog post reference for using custom site properties and how to use the site property SiteTemplate to include or exclude specific site types with the advanced query builder.
 - [Policy lookup](retention.md#policy-lookup) in the Information Governance solution is now generally available (GA.
@@ -117,7 +117,7 @@ To meet the challenges of today’s decentralized, data-rich workplace, we’re 
 
 - [Advanced eDiscovery workflow for content in Microsoft Teams](teams-workflow-in-advanced-ediscovery.md#reference-guide) - updated with a new downloadable quick reference guide for managing Teams content in Advanced eDiscovery
 
-### Information governance
+### Data lifecycle management
 
 - [Enable archive mailboxes in the compliance center](enable-archive-mailboxes.md#run-diagnostics-on-archive-mailboxes) - added section about new diagnostics tool for archive mailboxes
 - [Use network upload to import your organization's PST files to Microsoft 365](use-network-upload-to-import-pst-files.md#step-2-upload-your-pst-files-to-microsoft-365) - PST import now supports AzCopy v10
@@ -216,7 +216,7 @@ Datacenter asset management
 
 - [Use end-to-end encryption for one-to-one Microsoft Teams calls (Public preview)](/microsoftteams/teams-end-to-end-encryption) New content for the public preview.
 
-### Information governance
+### Data lifecycle management
 
 - [Set up a connector to import Epic EHR audit data](import-epic-data.md) new connector lets you import data from Epic electronic healthcare records system to support new general patient data misuse scenario for insider risk management.
 - [Set up a connector to import healthcare EHR audit data](import-healthcare-data.md) new connector lets you import data from an electronic healthcare records system to support new general patient data misuse scenario for insider risk management.

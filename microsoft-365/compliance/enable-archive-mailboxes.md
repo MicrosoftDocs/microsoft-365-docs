@@ -43,7 +43,7 @@ If you don't see the **Archive** page in the Microsoft Purview portal, ask your 
 
 1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview portal</a> and sign in.
 
-2. In the left pane of the Microsoft Purview portal, click **Information governance**, and then click the **Archive** tab.
+2. In the left pane of the Microsoft Purview portal, click **Data lifecycle management**, and then click the **Archive** tab.
 
    The **Archive** page is displayed. The **Archive mailbox** column indicates whether an archive mailbox is enabled or disabled for each user.
 
@@ -75,7 +75,7 @@ To disable an archive mailbox:
 
 1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview portal</a> and sign in.
 
-2. In the left pane of the Microsoft Purview portal, click **Information governance**, and then click the **Archive** tab.
+2. In the left pane of the Microsoft Purview portal, click **Data lifecycle management**, and then click the **Archive** tab.
 
    The **Archive** page is displayed. The **Archive mailbox** column indicates whether an archive mailbox is enabled or disabled for each user.
 
