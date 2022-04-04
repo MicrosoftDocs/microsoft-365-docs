@@ -75,7 +75,7 @@ When you select a specific improvement action, a full page flyout appears.
 
 To complete the action, you have a few options:
 
-- Select **Manage** to go the configuration screen and make the change. You'll then gain the points that the action is worth, visible in the fly out. Points generally take about 24 hours to update.
+- Select **Manage in Microsoft 365 Defender** to go to the configuration screen and make the change. You'll then gain the points that the action is worth, visible in the flyout. Points generally take about 24 hours to update.
 
 - Select **Share** to copy the direct link to the improvement action. You can also choose the platform to share the link, such as email, Microsoft Teams, or Microsoft Planner.
 
