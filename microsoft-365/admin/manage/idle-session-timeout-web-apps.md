@@ -63,7 +63,7 @@ When a user has been inactive in Microsoft 365 web apps for the time period you 
 
 - Idle session timeout works on a per-browser session basis. A user’s activity on Microsoft Edge is treated differently than their activity in other browsers such as Google Chrome. Users will be signed out from all tabs corresponding to their account within that browser session.
 
-- Once you turn on idle session timeout, it applies to your entire organization and can't be scoped to specific users, organizational units, or groups. Use [Azure AD Conditional Access](/azure/active-directory/conditional-access/)  policies for different users and groups to access SharePoint and Exchange Online.
+- Once you turn on idle session timeout, it applies to your entire organization and can't be scoped to specific users, organizational units, or groups. Use [Azure AD Conditional Access](/azure/active-directory/conditional-access/) policies for different users and groups to access SharePoint and Exchange Online.
 
 - Users must be inactive on all Microsoft 365 web app tabs for the configured duration. If the user is active on one tab (say OWA) while being inactive on another tab (say SPO), they will be considered active and will not be signed out.  
 
