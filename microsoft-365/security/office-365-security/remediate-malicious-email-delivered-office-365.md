@@ -37,19 +37,23 @@ Admins can take required action on emails, but to get those actions approved, th
 *Manual hunting* occurs when security teams identify threats manually by using the search and filtering capabilities in Explorer. Manual email remediation can be triggered through any email view (*Malware*, *Phish*, or *All email*) after you identify a set of emails that need to be remediated.
 
 > [!div class="mx-imgBorder"]
-> [![Manual hunting in Office 365 Threat Explorer by date.](../../media/tp-RemediationArticle1.png)](../../media/tp-RemediationArticle1.png#lightbox)
+> ![image](https://user-images.githubusercontent.com/78144677/161120340-282f579a-2287-40f1-9a19-a54011ecd6cd.png)
+
+
 
 Security teams can use Explorer to select emails in several ways:
 
 - Choose emails by hand: Use filters in various views. Select up to 100 emails to remediate.
 
-- Query selection: Select an entire query by using the top **select all** button. The same query is also shown in action center mail submission details.
+- Query selection: Select an entire query by using the top **select all** button. The same query is also shown in action center mail submission details.Customers can submit maximum 200,000 emails from threat explorer.  
 
 - Query selection with exclusion: Sometimes security operations teams may want to remediate emails by selecting an entire query and excluding certain emails from the query manually. To do so, an admin can use the **Select all** check box and scroll down to exclude emails manually. The query can hold a maximum of 1,000 emails. The maximum number of exclusions is 100.
 
 Once emails are selected through Explorer, you can start remediation by taking direct action or by queuing up emails for an action:
 
-- Direct approval: When actions like *move to inbox*, *move to junk*, *move to deleted items*, *soft delete*, or *hard delete* are selected by security personnel who have appropriate permissions, and the next steps in remediation are followed, the remediation process begins to execute the selected action. A temporary flyout shows remediation in progress.
+- Direct approval: When actions like *move to inbox*, *move to junk*, *move to deleted items*, *soft delete*, or *hard delete* are selected by security personnel who have appropriate permissions, and the next steps in remediation are followed, the remediation process begins to execute the selected action.
+> [!NOTE]
+>As the remediation gets kicked-off, it generates an alert and an investigation in parallel. Alert shows up in the alerts queue with the name "Administrative action submitted by an Administrator" suggesting that security personnel took the action of remediating an entity. It presents details like name of the person who performed the action, supporting investigation link, time etc. It works really well to know every time a harsh action like remediation is performed on entities. All these actions can be trcaked under the **Actions & Submissions** \> **Action center**  -> **History tab** (public preview).
 
 - Two-step approval: An "add to remediation" action can be taken by admins who don't have appropriate permissions or who need to wait to execute the action. In this case, the targeted emails are added to a remediation container. Approval is needed before the remediation is executed.
 
@@ -58,19 +62,27 @@ Once emails are selected through Explorer, you can start remediation by taking d
 > [!div class="mx-imgBorder"]
 > [![Mail with malware in "Zapped" page showing time of Zap execution.](../../media/tp-RemediationArticle3.png)](../../media/tp-RemediationArticle3.png#lightbox)
 
-All remediations (either direct approval or two-step approval) that were created in Explorer as well as approved actions coming from automated investigations are displayed in the Action Center. Access these via the left navigation panel under **Review** \> **Action Center**.
+
+All remediations (direct approvals ) that were created in Explorer or  Advanced hunting or through Automated investigation  are displayed in the Action Center. Access these via the left navigation panel under **Actions & Submissions** \> **Action center**  -> **History tab**. 
+
+Manual actions pending approval using the two-step approval process (1. add to remediation by one security opertaion team member, 2. reviewed and approved by another security opertaion team member) are only visible in the legacy Defender for Office 365 action center **Review** \> **Action center** and not in incidents/investigations and the Unified Action center.
+
+> [!NOTE]
+> Two-step approval: actions only avialbe in the office action center  **Review** \> **Action center**
 
 > [!div class="mx-imgBorder"]
-> [![The action center with a list of threats by date and severity.](../../media/tp-RemediationArticle4.png)](../../media/tp-RemediationArticle4.png#lightbox)
+> ![image](https://user-images.githubusercontent.com/78144677/161103011-a1c7e3db-95a0-473a-a38a-e948c3e2cc96.png)
 
-Action Center shows all remediation actions for the past 30 days. Actions taken through Explorer are listed by the name that the security operations team provided when the remediation was created. Actions taken through automated investigations have titles that begin with the related alert that triggered the investigation, such as "Zap email cluster... ."
+Unified Action Center shows remediation actions for the past 30 days. Actions taken through Explorer are listed by the name that the security operations team provided when the remediation was created as well as approval Id, Investigation Id. Actions taken through automated investigations have titles that begin with the related alert that triggered the investigation, such as "Zap email cluster... ."
 
-Open any remediation item to view details about it, including its name, creation date, description, threat severity, and status. It also shows the following two tabs.
+Open any remediation item to view details about it, including its remediation name,approval Id, Investigation Id, creation date, description, status, action source, action type, decided by, status. It also opens a side pane with action details, email cluster deatils, alert and Incident details.
 
-- **Mail submission** tab: Displays the number of emails submitted through Threat Explorer or automated investigations to be remediated. These emails can be actionable or not actionable.
+- *Open Investigation page* this opens up an admin Investigation that contains fewer details and tabs. It shows details like: related alert, entity selected for remediation, action taken, remediation status, entity count, logs, approver of action. This investigation keeps a track of investigation done by the admin manually and  contains details to selections made by the admin, hence is called admin action investigation. No need to act on the investigation and alert it's alredy in approved state.   
+- *Email count* Displays the number of emails submitted through Threat Explorer. These emails can be actionable or not actionable. 
+- *Action logs* Shows the details of remediation status like successful/ failed/ already in destination
 
   > [!div class="mx-imgBorder"]
-  > [![The action center with actionable and not actionable threats.](../../media/tp-RemediationArticle5.png)](../../media/tp-RemediationArticle5.png#lightbox)
+  > ![image](https://user-images.githubusercontent.com/78144677/161103376-a77ae4e8-2f16-49ff-bbc7-2da64f66cd63.png)
 
   - **Actionable**: Emails in the following cloud mailbox locations can be acted on and moved:
     - Inbox
@@ -102,14 +114,8 @@ Open any remediation item to view details about it, including its name, creation
 
   Admins can take actions on emails in quarantine if necessary, but those emails will expire out of quarantine if they're not manually purged. By default, emails quarantined because of malicious content aren't accessible by users, so security personnel don't have to take any action to get rid of threats in quarantine. If the emails are on-premises or external, the user can be contacted to address the suspicious email. Or the admins can use separate email server/security tools for removal. These emails can be identified by applying the *delivery location = on-prem* external filter in Explorer. For failed or dropped email, or email not accessible by users, there won't be any email to mitigate, since these mails don't reach the mailbox.
 
-  The following image shows how a submission looks in Action Center. A remediation can contain multiple submissions. If multiple actions get approved through one automated investigation, each email or email cluster action appears in the same remediation as a different submission.
-
-  > [!div class="mx-imgBorder"]
-  > [![ZAP email cluster flyout panel.](../../media/tp-RemediationArticle6.png)](../../media/tp-RemediationArticle6.png#lightbox)
-
-  Select a mail submission item to show the details of that remediation, such as the query (when remediation is triggered through automated investigations or Explorer through selecting a query) and the start and end times of remediation. It also displays a list of messages that were submitted for remediation. As messages move out of the Explorer retention period, the messages disappear from this list. The list also shows individual messages that are remediable.
-
-- **Action logs**: This tab shows the messages remediated, including approved date, admin who approved the action, action, status, and counts.
+ 
+- **Action logs**: This shows the messages remediated, successful, failed, already in destination.
 
   Status can be:
 
