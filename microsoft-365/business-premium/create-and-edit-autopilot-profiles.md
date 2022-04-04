@@ -33,7 +33,7 @@ description: "Learn to create an AutoPilot profile and apply it to a device, as 
 # Create and edit AutoPilot profiles
 
 > [!NOTE]
-> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../../security/defender-business/mdb-overview.md).
+> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../security/defender-business/mdb-overview.md).
 
 ## Create a profile
 
@@ -43,19 +43,19 @@ A profile applies to a device, or a group of devices,
   
 2. On the **AutoPilot** page, choose the **Profiles** tab \> **Create profile**.
     
-3. On the **Create profile** page, enter a name for the profile that helps you identify it, for example Marketing. Turn on the setting you want, and then choose **Save**. For more information about AutoPilot profile settings, see [About AutoPilot Profile settings](../../business-premium/m365bp-autopilot-profile-settings.md).
+3. On the **Create profile** page, enter a name for the profile that helps you identify it, for example Marketing. Turn on the setting you want, and then choose **Save**. For more information about AutoPilot profile settings, see [About AutoPilot Profile settings](m365bp-autopilot-profile-settings.md).
     
-    ![Enter name and turn on settings in the Create profile panel.](../../media/63b5a00d-6a5d-48d0-9557-e7531e80702a.png)
+    ![Enter name and turn on settings in the Create profile panel.](./../media/63b5a00d-6a5d-48d0-9557-e7531e80702a.png)
   
 ### Apply profile to a device
 
-After you create a profile, you can apply it to a device or a group of devices. You can pick an existing profile in the [step-by-step guide](../../business-premium/m365bp-add-autopilot-devices-and-profile.md) and apply it to new devices, or replace an existing profile for a device or group of devices. 
+After you create a profile, you can apply it to a device or a group of devices. You can pick an existing profile in the [step-by-step guide](m365bp-add-autopilot-devices-and-profile.md) and apply it to new devices, or replace an existing profile for a device or group of devices. 
   
 1. On the **Prepare Windows** page, choose the **Devices** tab. 
     
 2. Select the check box next to a device name, and in the **Device** panel, choose a profile from the **Assigned profile** drop-down list \> **Save**.
     
-    ![In the Device panel, select an Assigned profile to apply it.](../../media/ed0ce33f-9241-4403-a5de-2dddffdc6fb9.png)
+    ![In the Device panel, select an Assigned profile to apply it.](./../media/ed0ce33f-9241-4403-a5de-2dddffdc6fb9.png)
   
 ## Edit, delete, or remove a profile
 
@@ -85,4 +85,4 @@ Once you've assigned a profile to a device, you can update it, even if you've al
     
 ## See also
 
-[Top 10 ways to secure Microsoft 365 for business plans](../security-and-compliance/secure-your-business-data.md)
+[Top 10 ways to secure Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)
