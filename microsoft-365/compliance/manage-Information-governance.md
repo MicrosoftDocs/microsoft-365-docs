@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Purview Data Lifecycle Management & Microsoft Purview Records Management"
+title: "Govern your data with data lifecycle management & records management from Microsoft Purview"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
