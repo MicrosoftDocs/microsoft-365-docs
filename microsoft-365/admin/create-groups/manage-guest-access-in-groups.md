@@ -21,16 +21,16 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
-description: "Learn how to add guests to a Microsoft 365 group, view guest users, and use PowerShell to control guest access."
+description: "Learn how to add guests to a Microsoft 365 group, view guests, and use PowerShell to control guest access."
 ---
 
 # Manage guest access in Microsoft 365 groups
 
 By default, guest access for Microsoft 365 groups is turned on for your organization. Admins can control whether to allow guest access to groups for their whole organization or for individual groups.
 
-When it's turned on, group members can invite guest users to a Microsoft 365 group through Outlook on Web. Invitations are sent to the group owner for approval.
+When it's turned on, group members can invite guests to a Microsoft 365 group through Outlook on Web. Invitations are sent to the group owner for approval.
 
-Once approved, the guest user is added to the directory and the group.
+Once approved, the guest is added to the directory and the group.
 
 > [!Note]
 > Yammer Enterprise networks that are in Native Mode or the [EU Geo](/yammer/manage-security-and-compliance/manage-data-compliance) do not support network guests.
@@ -67,7 +67,7 @@ If you want to edit any of a guest's information, you can [Add or update a user'
 
 ## Related content
 
-[Block guest users from a specific group](../../solutions/per-group-guest-access.md) (article)\
+[Block guests from a specific group](../../solutions/per-group-guest-access.md) (article)\
 [Manage group membership in the Microsoft 365 admin center](add-or-remove-members-from-groups.md) (article)\
 [Azure Active Directory access reviews](/azure/active-directory/active-directory-azure-ad-controls-perform-access-review) (article)\
 [Set-AzureADUser](/powershell/module/azuread/set-azureaduser) (article)
