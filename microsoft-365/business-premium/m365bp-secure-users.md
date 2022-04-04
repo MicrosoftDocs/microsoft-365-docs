@@ -1,5 +1,5 @@
 ---
-title: "How security recommendations protect your business"
+title: "How Microsoft 365 Business Premium helps your business"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -23,30 +23,33 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn how security recommendations for Microsoft 365 Business Premium affect your users and protect your data."
+description: "Learn how Microsoft 365 Business Premium helps your business with productivity and security."
 ---
 
 # How Microsoft 365 Business Premium helps your business
 
 ## Productivity and security
 
-Microsoft 365 Business Premium provides your business with productivity and security features and capabilities that can help you run your business securely, from anywhere. Microsoft 365 Business Premium brings together best-in-class Office apps, collaboration tools like Microsoft Teams, and comprehensive security. Your subscription includes:
+Microsoft 365 Business Premium provides your business with productivity and security capabilities that can help you run your business more securely, from anywhere. Microsoft 365 Business Premium brings together best-in-class Office apps, collaboration tools like Microsoft Teams, and comprehensive security. 
 
-- **Windows 10 and 11 Pro** upgrades for your Windows devices
-- **Office apps**, such as Word, Excel, and PowerPoint that you can install on your computers (Windows and Mac), and mobile devices (Windows, iOS, and Android). You also get Publisher and Access for your Windows devices.
+Your Microsoft 365 Business Premium subscription includes:
+
+- **Windows 10 and 11 Pro** upgrades for your company's Windows devices
+- **Office apps**, such as Word, Excel, and PowerPoint, that you can install on your computers (Windows and Mac), and on your mobile devices (Windows, iOS, and Android). You also get Publisher and Access for your Windows devices.
 - **Microsoft Teams, Outlook, and Exchange** for email, calendars, meetings, and collaboration
 - **SharePoint and OneDrive** to store and manage your files
-- **Sophisticated protection from threats** like phishing, malware, and ransomware
-- **Compliance and privacy features** to protect and control access to sensitive information
-- **Device management capabilities** that enables your security team to help keep devices up to date and secure
+- **Sophisticated protection from threats** like phishing, malware, and ransomware protection
+- **Compliance and privacy features** to protect and control access to your and your customers' sensitive information
+- **Device management capabilities** that enable your security team to help keep devices up to date and secure
 
 Watch the following video to learn more about how Microsoft 365 Business Premium helps your business be more productive and secure: <p>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Pq0G]
 
-For more information about what's included, see [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium?activetab=pivot:overviewtab).
+> [!TIP]
+> For more information about what's included, see [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium?activetab=pivot:overviewtab).
 
-## Train your users
+## Resources to train your users
 
 The security recommendations provided here make it much harder for cyber attackers to gain access to your environment. As the one responsible for the integrity of the network, your front line is the members of the org who use the systems regularly. The tradeoff is your users need to be aware of how to work within and maintain a more secure environment. Training these front-line users in proper safeguarding and maintenance of the network plays a big part in overall security. We understand a little extra patience is required, but it's worth it to keep the organization protected. 
 
@@ -54,7 +57,7 @@ This information summarizes a number of security recommendations specific to end
 
 :::image type="content" source="media/m365-democracy-users.png" alt-text="Illustration summarizing key points for devices.":::
 
-## Use secure email practices
+## Best practices for using email securely
 
 All users should be aware of and use these email practices to help keep their email secure:
 
@@ -70,7 +73,7 @@ Download this infographic with tips for you and the members of your campaign tea
 
 [PDF](https://download.microsoft.com/download/9/1/f/91fa8f24-9953-4f33-9d87-a95624db5e0b/M365BPWhatCanUsersDoToSecure.pdf) | [PowerPoint](https://download.microsoft.com/download/9/1/f/91fa8f24-9953-4f33-9d87-a95624db5e0b/M365BPWhatCanUsersDoToSecure.pptx)
 
-## Set up iPhones and Android devices
+## Support for iOS and Android devices
 
 All users you add to your environment will need to take a few minutes to [setup iPhones and Android devices](../business/set-up-mobile-devices.md?toc=%2Fmicrosoft-365%2Fcampaigns%2Ftoc.json) to work securely:
 
@@ -80,7 +83,7 @@ All users you add to your environment will need to take a few minutes to [setup 
 
 After setting these up, your users will be prompted to use the authenticator app when accessing your organization data on these devices, including email.
 
-## Keep BYOD Macs and Windows PCs fresh
+## Recommendations for BYOD Mac and Windows devices
 
 It's also important that users keep their primary work device up to date:
 
@@ -101,11 +104,11 @@ To learn more about these recommendations, see [Protect your account and devices
 
 Your users might be tempted to share and store your organization files in places other than Microsoft 365. Microsoft 365 makes it as easy as possible to collaborate and share securely. You can [share files and videos](share-files-and-videos.md) directly from Microsoft Teams, OneDrive, Stream, and even from within a file. Sharing from within these tools helps keep your data from leaking. You can add additional protection to sensitive data to prevent sharing outside your organization.
 
-## Set up managed devices
+## Device management capabilities
 
 We recommend that your most important staff members use freshly acquired Windows devices that you manage. We'll show you how to [Set up managed devices](m365bp-managed-devices-setup.md) and apply security policies to protect them.
 
-## Contact support
+## How to contact support (if needed)
 
  **If you need to contact support:**
   
