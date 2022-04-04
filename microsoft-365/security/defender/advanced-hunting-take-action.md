@@ -44,7 +44,7 @@ To take action through advanced hunting, you need a role in Microsoft Defender f
 *Active remediation actions > Threat and vulnerability management - Remediation handling*
 
 ## Take various actions on devices
-You can take the following actions on devices identified by the `DeviceId` column in you query results:
+You can take the following actions on devices identified by the `DeviceId` column in your query results:
 
 - Isolate affected devices to contain an infection or prevent attacks from moving laterally
 - Collect investigation package to obtain more forensic information
@@ -66,7 +66,12 @@ To learn more about how quarantine actions are taken and how files can be restor
 
 >[!NOTE]
 >To locate files and quarantine them, the query results should also include `DeviceId` values as device identifiers.  
-
+## Take various actions on emails
+You can take the following actions on emails and links inside email from your query results:
+- Move to mailbox folder - move email messages to Junk, Inbox, or Deleted items folder
+- Delete email - move email messages to the Deleted items folder or delete them permanently
+- Block URL - add the URL to the Safe Links policy as a malicious URL for blocking
+- 
 ## Take action
 To take any of the described actions, select one or more records in your query results and then select **Take actions**. A wizard will guide you through the process of selecting and then submitting your preferred actions.
 
