@@ -1,22 +1,20 @@
 ---
 title: Working with Microsoft Managed Desktop 
-description:  
+description:  Landing page for the "working with" section
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jaimeo
-ms.localizationpriority: normal
+author: tiaraquan
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
 ---
 
 # Working with Microsoft Managed Desktop
 
-This section includes information about your day-to-day life with the service, such as how your IT admins can get support if needed, how your users get support, managing your apps once deployed, and how to work the customizable settings on devices.
+This section includes information about your day-to-day life with the service:
 
-
-- [Work with insights](insights.md)
 - [Admin support for Microsoft Managed Desktop](admin-support.md)
 - [Getting help for users](end-user-support.md)
 - [Manage line-of-business apps in Microsoft Managed Desktop](manage-apps.md)

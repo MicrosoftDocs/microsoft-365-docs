@@ -1,28 +1,30 @@
 ---
-title: Supported regions and languages 
-description:  Regions and languages supported by Microsoft Managed Desktop
+title: Supported regions 
+description:  Regions supported by Microsoft Managed Desktop
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jaimeo
-ms.author: jaimeo
-ms.localizationpriority: normal
+author: tiaraquan
+f1.keywords:
+- NOCSH
+ms.author: tiaraquan
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
+manager: dougeby
+ms.topic: article
+audience: Admin
 ---
 
-# Microsoft Managed Desktop supported regions and languages
+# Microsoft Managed Desktop supported regions
 
-This article provides details about regions and languages supported by Microsoft Managed Desktop and the regions where you can use it.
+This article provides details about which regions support Microsoft Managed Desktop.
 
-## Supported languages
+You can still use managed devices outside of these regions without interruption to the Microsoft Managed Desktop service. For example, an employee in the United Kingdom can work securely and receive updates on their managed device while traveling to Asia, Europe, or South America.
 
-English is the only language available to users of Microsoft Managed Desktop. This includes all user interfaces for both users and administrators and all interactions with both [admin support](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/admin-support) and [end-user support](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/end-user-support).
+For more information about languages supported by Microsoft Managed Desktop, see [Localize devices for users](../get-started/localization.md).
 
+For more information about user support with Microsoft Managed Desktop, see [Support for Microsoft Managed Desktop](support.md).
 
-You can still use managed devices outside of English-speaking regions without an interruption to the Microsoft Managed Desktop service. For example, an employee based in the United Kingdom can work securely and receive updates on their managed device while traveling Asia, Europe, or South America. 
-
-For more information about user support with Microsoft Managed Desktop, see [Support for Microsoft Managed Desktop](https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/support).
-
-## Availability of the service
+## Service availability
 
 Organizations in the following countries can subscribe to Microsoft Managed Desktop:
 
@@ -40,5 +42,3 @@ Organizations in the following countries can subscribe to Microsoft Managed Desk
 - Iceland
 - Australia
 - New Zealand
-
-Both users and administrators in these regions must use English for their devices and management tools. 

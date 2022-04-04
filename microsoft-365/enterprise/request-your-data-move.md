@@ -7,7 +7,7 @@ ms.date: 12/10/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
@@ -28,19 +28,20 @@ Eligible Microsoft 365 customers may request migration for their entire organiza
 
 | Customers with signup country in | Request period begins | Request deadline |
 |:-----|:-----|:-----|
-|Japan  <br/> |January 1, 2020  <br/> |June 30, 2020  <br/> |
-|Australia, New Zealand, Fiji  <br/> |January 1, 2020  <br/> |June 30, 2020  <br/> |
-|India  <br/> |January 1, 2020  <br/> |June 30, 2020  <br/> |
-|Canada  <br/> |January 1, 2020  <br/> |June 30, 2020  <br/> |
-|United Kingdom  <br/> |January 1, 2020  <br/> |June 30, 2020  <br/> |
-|South Korea  <br/> |January 1, 2020  <br/> |June 30, 2020  <br/> |
-|France  <br/> |January 1, 2020  <br/> |June 30, 2020  <br/> |
-|United Arab Emirates  <br/> |July 15, 2019  <br/> |June 30, 2020  <br/> |
-|South Africa  <br/> |July 25, 2019  <br/> |June 30, 2020  <br/> |
-|Switzerland, Liechtenstein  <br/> |December 10, 2019  <br/> |June 30, 2020  <br/> |
-|Norway  <br/> |April 15, 2020  <br/> |October 31, 2020  <br/> |
-|Germany  <br/> |November 1, 2020  <br/> |April 30, 2021  <br/> |
-|Brazil  <br/> |November 18, 2020  <br/> |May 31, 2021  <br/> |
+|Japan  | |Request period closed  |
+|Australia, New Zealand, Fiji  | |Request period closed  |
+|India  | |Request period closed  |
+|Canada  | |Request period closed  |
+|United Kingdom  | |Request period closed  |
+|South Korea  | |Request period closed  |
+|France  | |Request period closed  |
+|United Arab Emirates  | |Request period closed  |
+|South Africa  | |Request period closed  |
+|Switzerland, Liechtenstein  | |Request period closed  |
+|Norway  | |Request period closed  |
+|Germany  | |Request period closed  |
+|Brazil  | |Request period closed  |
+|Sweden  |November 16, 2021  |May 31, 2022  |
 
 ## How to request a move
 
@@ -51,7 +52,7 @@ Select the tab **Organization profile**, then select the option **Data residency
   
 You will not see this section if your tenant is not eligible for the Microsoft 365 Move Program.  If your organization has data residency requirements and you need to request migration, mark the checkbox and then **Save**.
   
-![Datacenter opt-in action screen](../media/dataresidencyflyoutae.jpg)
+![Datacenter opt-in action screen.](../media/dataresidencyflyoutae.jpg)
   
 The text in the **Data residency** will section change to indicate **Your organization has requested to move its data** to the appropriate country and date. You'll also have a confirmation message in your message center. This confirms that you have successfully requested a move. 
   
@@ -69,10 +70,8 @@ As of January 2020, customers in eligible Office 365 countries can opt-in for mi
 
 [Moving core data to new Office 365 datacenter geos](moving-data-to-new-datacenter-geos.md)
 
-[Data move general FAQ](data-move-faq.md)
+[Data move general FAQ](data-move-faq.yml)
 
-[New datacenter geos for Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
+[New datacenter geos for Microsoft Dynamics CRM Online](/power-platform/admin/new-datacenter-regions)
   
 [Azure services by region](https://azure.microsoft.com/regions/)
-  
-

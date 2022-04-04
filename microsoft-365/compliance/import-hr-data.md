@@ -9,10 +9,11 @@ ms.date:
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
 - MET150
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 description: "Administrators can set up a data connector to import employee data from their organization's human resources (HR) system to Microsoft 365. This lets you use HR data in insider risk management policies to help you detect activity by specific users that may pose an internal threat to your organization."
 ---
 
@@ -22,43 +23,50 @@ You can set up a data connector in the Microsoft 365 compliance center to import
 
 Setting up a connector for HR data that insider risk management policies can use to generate risk indicators consists of creating a CSV file that contains that contains the HR data, creating an app in Azure Active Directory that's used for authentication, creating an HR data connector in the Microsoft 365 compliance center, and then running a script (on a scheduled basis) that ingests the HR data in CSV files to the Microsoft cloud so it's available to the insider risk management solution.
 
+> [!IMPORTANT]
+> A new version of the HR connector is now available for public preview. To create a new HR connector or to import data for the [new employee profile scenario](#csv-file-for-employee-profile-data-preview) for the healthcare policy scenario for insider risk management, go to the **Data connectors** page in the Microsoft 365 compliance center, select the **Connectors** tab, and then click **Add a connector > HR (preview)** to start the set up. Existing HR connectors will continue to work without any disruption.
+
 ## Before you begin
 
 - Determine which HR scenarios and data to import to Microsoft 365. This will help you determine how many CSV files and HR connectors you'll need to create, and how to generate and structure the CSV files. The HR data that you import is determined by the insider risk management policies that you want to implement. For more information, see Step 1.
 
 - Determine how to retrieve or export the data from your organization's HR system (and on a regular basis) and add it to the CSV files that you create in Step 1. The script that you run in Step 4 will upload the HR data in the CSV files to the Microsoft cloud.
 
-- Your organization must consent to allow the Office 365 Import service to access data in your organization. To consent to this request, go to [this page](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), sign in with the credentials of a Microsoft 365 global admin, and then accept the request. You have to complete this step before you can successfully create the HR connector in Step 3.
-
-- The user who creates the HR connector in Step 3 must be assigned the Mailbox Import Export role in Exchange Online. By default, this role isn't assigned to any role group in Exchange Online. You can add the Mailbox Import Export role to the Organization Management role group in Exchange Online. Or you can create a new role group, assign the Mailbox Import Export role, and then add the appropriate users as members. For more information, see the [Create role groups](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) or [Modify role groups](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) sections in the article "Manage role groups in Exchange Online".
+- The user who creates the HR connector in Step 3 must be assigned the Data Connector Admin role. This role is required to add connectors on the **Data connectors** page in the Microsoft 365 compliance center. This role is added by default to multiple role groups. For a list of these role groups, see the "Roles in the security and compliance centers" section in [Permissions in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatively, an admin in your organization can create a custom role group, assign the Data Connector Admin role, and then add the appropriate users as members. For instructions, see the "Create a custom role group" section in [Permissions in the Microsoft 365 compliance center](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
 - The sample script that you run in Step 4 will upload your HR data to the Microsoft cloud so that it can be used by the insider risk management solution. This sample script isn't supported under any Microsoft standard support program or service. The sample script is provided AS IS without warranty of any kind. Microsoft further disclaims all implied warranties including, without limitation, any implied warranties of merchantability or of fitness for a particular purpose. The entire risk arising out of the use or performance of the sample script and documentation remains with you. In no event shall Microsoft, its authors, or anyone else involved in the creation, production, or delivery of the scripts be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss) arising out of the use of or inability to use the sample scripts or documentation, even if Microsoft has been advised of the possibility of such damages.
+
+- This connector is available in GCC environments in the Microsoft 365 US Government cloud. Third-party applications and services might involve storing, transmitting, and processing your organization's customer data on third-party systems that are outside of the Microsoft 365 infrastructure and therefore are not covered by the Microsoft 365 compliance and data protection commitments. Microsoft makes no representation that use of this product to connect to third-party applications implies that those third-party applications are FEDRAMP compliant. For step-by-step instructions for setting up an HR connector in a GCC environment, see [Set up a connector to import HR data in US Government](import-hr-data-US-government.md).
 
 ## Step 1: Prepare a CSV file with your HR data
 
 The first step is to create a CSV file that contains the HR data that the connector will import to Microsoft 365. This data will be used by the insider risk solution to generate potential risk indicators. Data for the following HR scenarios can be imported to Microsoft 365:
 
-- Employee resignation. Information about users who have left your organization.
+- Employee resignation. Information about employees who have left your organization.
 
-- Job level changes. Information about job level changes for users, such as promotions and demotions.
+- Job level changes. Information about job level changes for employees, such as promotions and demotions.
 
-- Performance reviews. Information about user performance.
+- Performance reviews. Information about employee performance.
 
-- Performance improvement plans. Information about performance improvement plans for users.
+- Performance improvement plans. Information about performance improvement plans for employees.
+
+- Employee profile (preview). General information about an employee.
 
 The type of HR data to import depends on the insider risk management policy and corresponding policy template that you want to implement. The following table shows which HR data type is required for each policy template:
 
 |  Policy template |  HR data type |
-|:-----------------------------------------------|:---------------------------------------------------------------------|
-| Data theft by departing users                   | Employee resignations                                                 |
-| General data leaks                              | Not applicable                                                        |
-| Data leaks by priority users                    | Not applicable                                                        |
-| Data leaks by disgruntled users                 | Job level changes, Performance reviews, Performance improvement plans |
-| General security policy violations              | Not applicable                                                        |
-| Security policy violations by departing users   | Employee resignations                                                 |
-| Security policy violations by priority users    | Not applicable                                                        |
-| Security policy violations by disgruntled users | Job level changes, Performance reviews, Performance improvement plans |
-| Offensive language in email                     | Not applicable                                                        |
+|:------------------------------|:--------------------------------|
+| Data theft by departing users | Employee resignations|
+| General data leaks                             | Not applicable|
+| Data leaks by priority users                   | Not applicable |
+| Data leaks by disgruntled users                | Job level changes, Performance reviews, Performance improvement plans|
+| General security policy violations             | Not applicable |
+| Security policy violations by departing users  | Employee resignations|
+| Security policy violations by priority users   | Not applicable|
+| Security policy violations by disgruntled users| Job level changes, Performance reviews, Performance improvement plans |
+| Offensive language in email                    | Not applicable |
+| Healthcare policy| Employee profile |
+|||
 
 For more information about policy templates for insider risk management, see [Insider risk management policies](insider-risk-management-policies.md#policy-templates).
 
@@ -69,7 +77,7 @@ After you create the CSV file with the required HR data, store it on the local c
 > [!IMPORTANT]
 > The column names described in the following sections are not required parameters, but only examples. You can use any column name in your CSV files. However, the column names you use in a CSV file *must* be mapped to the data type when you create the HR connector in Step 3. Also note that the sample CSV files in the following sections are show in NotePad view. It's much easier to view and edit CSV files in Microsoft Excel.
 
-The follow sections describe the required CSV data for each HR scenario.
+The following sections describe the required CSV data for each HR scenario.
 
 ### CSV file for employee resignation data
 
@@ -148,8 +156,43 @@ The following table describes each column in the CSV file for performance review
 | **EmailAddress**  | Specifies the user's email address (UPN).|
 | **EffectiveDate** | Specifies the date when the user was officially informed about their performance improvement plan. You must use the following date format: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm`, which is the [ISO 8601 date and time format](https://www.iso.org/iso-8601-date-and-time-format.html).|
 | **Remarks**| Specifies any remarks that evaluator has provided about the performance improvement plan. This is a text parameter with a limit of 200 characters. This is an optional parameter. You don't have to include it in the CSV file. |
-| **Rating**| Specifies any rating or other information related to the performance review. performance improvement plan. This is a text parameter and can contain any free form text that your organization uses to recognize the evaluation. For example, "3 Met expectations" or "2 Below average". This is a text parameter with limit of 25 characters. This is an optional parameter. You don't have to include it in the CSV file.|
+| **Rating**| Specifies any rating or other information related to the performance review. This is a text parameter and can contain any free form text that your organization uses to recognize the evaluation. For example, "3 Met expectations" or "2 Below average". This is a text parameter with limit of 25 characters. This is an optional parameter. You don't have to include it in the CSV file.|
 |||
+
+### CSV file for employee profile data (preview)
+
+> [!NOTE]
+> The capability to create an HR connector for employee profile data is in public preview. To create an HR connector that supports employee profile data, go to the **Data connectors** page in the Microsoft 365 compliance center, select the **Connectors** tab, and then click **Add a connector** > **HR (preview)**. Follow the steps to create a connector in [Step 3: Create the HR connector](#step-3-create-the-hr-connector).
+
+Here's an example of a CSV file for the data for the employee profile data.
+
+```text
+EmailAddress,UserName,EmployeeFirstName,EmployeeLastName,EmployeeAddLine1,EmployeeAddLine2,EmployeeCity,EmployeeState,EmployeeZipCode,EmployeeDept,EmployeeType,EmployeeRole
+jackq@contoso.com,jackq,jack,qualtz,50 Oakland Ave,#206,City,Florida,32104,Orthopaedic,Regular,Nurse
+```
+
+The following table describes each column in the CSV file for employee profile data.
+
+|  Column |  Description |
+|:----------|:---------------|
+| EmailAddress<sup>*</sup>    | The user principal name (UPN) or email address of the employee.|
+| EmployeeFirstName<sup>*</sup>   | First name of the employee.|
+| EmployeeLastName<sup>*</sup>   | Last name of the employee.|
+| EmployeeAddressLine1<sup>*</sup>    | Street address of the employee.|
+| EmployeeAddressLine2   | Secondary address information, such as apartment number, for employee.|
+| EmployeeCity | City of residence for employee.|
+| EmployeeState | State of residence for employee.|
+| EmployeeZipCode<sup>*</sup>  | Zip code of residence for employee. |
+| EmployeeCountry| Country of residence for employee.|
+| EmployeeDepartment | Employee's department in the organization.|
+| EmployeeType |Employment type for employee, such as Regular, Exempt, or Contractor.|
+| EmployeeRole |Employees's role, designation, or job title in the organization.|
+|||
+
+> [!NOTE]
+> <sup>*</sup> This column is mandatory. If a mandatory column is missing, the CSV file won't be validated and other data in the file won't be imported.
+
+We recommend that you create an HR connector that only imports employee profile data. For this connector, be sure to frequently refresh the employee profile data, preferably in every 15 to 20 days. Employee profile records will be deleted if they aren't updated in the past 30 days.
 
 ### Determining how many CSV files to use for HR data
 
@@ -169,7 +212,7 @@ Here are requirements for configuring a CSV file with multiple data types:
 
 - You have to add the required columns (and optional if you use them) for each data type and the corresponding column name in the header row. If a data type doesn't correspond to a column, you can leave the value blank.
 
-- To use a CSV file with multiple types of HR data, the HR connector needs to know which rows in the CSV file contain which type HR data. This is accomplished by adding an additional **HRScenario** column to the CSV file. The values in this column identify the type of HR data in each row. For example, values that correspond to the four HR scenarios could be \`Resignation\`, \`Job level change\`, \`Performance review\`, and \`Performance improvement plan\`.
+- To use a CSV file with multiple types of HR data, the HR connector needs to know which rows in the CSV file contain which type HR data. This is accomplished by adding an additional **HRScenario** column to the CSV file. The values in this column identify the type of HR data in each row. For example, values that correspond to the four HR scenarios could be \`Resignation\`, \`Job level change\`, \`Performance review\`, \`Performance improvement plan\`, and \`Employee profile\`.
 
 - If you have multiple CSV files that contain an HRScenario** column, be sure that each file uses the same column name and the same values that identify the specific HR scenarios.
 
@@ -204,7 +247,7 @@ The next step is to create and register a new app in Azure Active Directory (Azu
 
 - Tenant Id (also called the *directory Id*)
 
-For step-by-step instructions for creating an app in Azure AD, see [Register an application with the Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
+For step-by-step instructions for creating an app in Azure AD, see [Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app).
 
 ## Step 3: Create the HR connector
 
@@ -212,21 +255,23 @@ The next step is to create an HR connector in the Microsoft 365 compliance cente
 
 After you complete this step, be sure to copy the job ID that's generated when you create the connector. You'll use the job ID when you run the script.
 
-1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and then click **Data connectors** in the left nav.
+1. Go to the Microsoft 365 compliance center, and select <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**Data connectors**</a>.
 
-2. On the **Data connectors** page under **HR**, click **View**.
+2. On the **Data connectors** page, click **HR (preview)**.
 
-3. On the **HR Custom** page, click **Add connector**.
+3. On the **HR (preview)** page, click **Add connector**.
 
 4. On the **Setup the connection** page, do the following and then click **Next**:
 
    1. Type or paste the Azure AD application ID for the Azure app that you created in Step 2.
 
-   1. Type a name for the HR connector.
+   2. Type a name for the HR connector.
 
-5. On the HR scenarios page, select one or more HR scenarios that you want to import data for, and then click **Next**.
+5. On the HR scenarios page, select one or more HR scenarios that you want to import data for and then click **Next**.
 
-6. On the file mapping method page, select one of the following options and then click **Next**.
+   ![Select one or more HR scenarios.](../media/HRConnectorScenarios.png)
+
+6. On the file mapping method page, select a file type if necessary, and then select one of the following options and then click **Next**.
 
    - **Upload a sample file**. If you select this option, click **Upload sample file** to upload the CSV file that you prepared in Step 1. This option allows you to quickly select column names in your CSV file from a drop-down list to map them to the data types for the HR scenarios that you previously selected.
 
@@ -244,11 +289,11 @@ After you complete this step, be sure to copy the job ID that's generated when y
 
    A status page is displayed that confirms the connector was created. This page contains two important things that you need to complete the next step to run the sample script to upload your HR data.
 
-   ![Review page with job ID and link to github for sample script](../media/HRConnector_Confirmation.png)
+   ![Review page with job ID and link to github for sample script.](../media/HRConnector_Confirmation.png)
 
    1. **Job ID.** You'll need this job ID to run the script in the next step. You can copy it from this page or from the connector flyout page.
 
-   1. **Link to sample script.** Click the **here** link to go to the GitHub site to access the sample script (the link opens a new window). Keep this window open so that you can copy the script in Step 4. Alternatively, you can bookmark the destination or copy the URL so you can access it again when you run the script. This link is also available on the connector flyout page.
+   2. **Link to sample script.** Click the **here** link to go to the GitHub site to access the sample script (the link opens a new window). Keep this window open so that you can copy the script in Step 4. Alternatively, you can bookmark the destination or copy the URL so you can access it again when you run the script. This link is also available on the connector flyout page.
 
 9. Click **Done**.
 
@@ -256,7 +301,7 @@ After you complete this step, be sure to copy the job ID that's generated when y
 
 10. Click the HR connector that you just created to display the flyout page, which contains properties and other information about the connector.
 
-   ![Flyout page for new HR connector](../media/HRConnectorWizard7.png)
+   ![Flyout page for new HR connector.](../media/HRConnectorWizard7.png)
 
 If you haven't already done so, you can copy the values for the **Azure App ID** and **Connector job ID**. You'll need these to run the script in the next step. You can also download the script from the flyout page (or download it using the link in the next step.)
 
@@ -264,9 +309,9 @@ You can also click **Edit** to change the Azure App ID or the column header name
 
 ## Step 4: Run the sample script to upload your HR data
 
-The last step in setting up an HR connector is to run a sample script that will upload the HR data in the CSV file (that you created in Step 1) to the Microsoft cloud. Specifically, the script uploads the data to the HR connector. After you run the script, the HR connector that you created in Step 3 imports the HR data to your Microsoft 365 organization where it can accessed by other compliance tools, such as the Insider risk management solution. After you run the script, consider scheduling a task to run it automatically on a daily basis so the most current employee termination data is uploaded to the Microsoft cloud. See [Schedule the script to run automatically](#optional-step-6-schedule-the-script-to-run-automatically).
+The last step in setting up an HR connector is to run a sample script that will upload the HR data in the CSV file (that you created in Step 1) to the Microsoft cloud. Specifically, the script uploads the data to the HR connector. After you run the script, the HR connector that you created in Step 3 imports the HR data to your Microsoft 365 organization where it can be accessed by other compliance tools, such as the Insider risk management solution. After you run the script, consider scheduling a task to run it automatically on a daily basis so the most current employee termination data is uploaded to the Microsoft cloud. See [Schedule the script to run automatically](#optional-step-6-schedule-the-script-to-run-automatically).
 
-1. Go to window that you left open from the previous step to access the GitHub site with the sample script. Alternatively, open the bookmarked site or use the URL that you copied.
+1. Go to window that you left open from the previous step to access the GitHub site with the sample script. Alternatively, open the bookmarked site or use the URL that you copied. You can also access the script [here](https://github.com/microsoft/m365-compliance-connector-sample-scripts/blob/main/sample_script.ps1).
 
 2. Click the **Raw** button to display the script in text view.
 
@@ -274,14 +319,14 @@ The last step in setting up an HR connector is to run a sample script that will 
 
 4. Modify the sample script for your organization, if necessary.
 
-5. Save the text file as a Windows PowerShell script file by using a filename suffix of `.ps1`; for example, `HRConnector.ps1`.
+5. Save the text file as a Windows PowerShell script file by using a filename suffix of `.ps1`; for example, `HRConnector.ps1`. Alternatively, you can use the GitHub filename for the script, which is `upload_termination_records.ps1`.
 
-6. Open a Command Prompt on your local computer, and go to the directory where you saved the script.
+6. Open a command prompt on your local computer, and go to the directory where you saved the script.
 
 7. Run the following command to upload the HR data in the CSV file to the Microsoft cloud; for example:
 
     ```powershell
-    .\HRConnector.ps1 -tenantId <tenantId> -appId <appId>  -appSecret <appSecret>  -jobId <jobId>  -csvFilePath '<csvFilePath>'
+    .\HRConnector.ps1 -tenantId <tenantId> -appId <appId>  -appSecret <appSecret>  -jobId <jobId>  -filePath '<filePath>'
     ```
 
    The following table describes the parameters to use with this script and their required values. The information you obtained in the previous steps is used in the values for these parameters.
@@ -289,36 +334,36 @@ The last step in setting up an HR connector is to run a sample script that will 
    | Parameter | Description |
    |:-----|:-----|:-----|
    |`tenantId`|This is the Id for your Microsoft 365 organization that you obtained in Step 2. You can also obtain the tenant Id for your organization on the **Overview** blade in the Azure AD admin center. This is used to identify your organization.|
-   |`appId` |This is the Azure AD application Id for the app that you created in Azure AD in Step 2. This is used by Azure AD for authentication when the script attempts to accesses your Microsoft 365 organization. | 
+   |`appId` |This is the Azure AD application Id for the app that you created in Azure AD in Step 2. This is used by Azure AD for authentication when the script attempts to access your Microsoft 365 organization. | 
    |`appSecret`|This is the Azure AD application secret for the app that you created in Azure AD in Step 2. This also used for authentication.|
    |`jobId`|This is the job ID for the HR connector that you created in Step 3. This is used to associate the HR data that is uploaded to the Microsoft cloud with the HR connector.|
-   |`csvFilePath`|This is the file path for the CSV file (stored on the same system as the script) that you created in Step 1. Try to avoid spaces in the file path; otherwise use single quotation marks.|
+   |`filePath`|This is the file path for the file (stored on the same system as the script) that you created in Step 1. Try to avoid spaces in the file path; otherwise use single quotation marks.|
    |||
 
    Here's an example of the syntax for the HR connector script using actual values for each parameter:
 
    ```powershell
-    .\HRConnector.ps1 -tenantId d5723623-11cf-4e2e-b5a5-01d1506273g9 -appId 29ee526e-f9a7-4e98-a682-67f41bfd643e -appSecret MNubVGbcQDkGCnn -jobId b8be4a7d-e338-43eb-a69e-c513cd458eba -csvFilePath 'C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv'
+    .\HRConnector.ps1 -tenantId d5723623-11cf-4e2e-b5a5-01d1506273g9 -appId 29ee526e-f9a7-4e98-a682-67f41bfd643e -appSecret MNubVGbcQDkGCnn -jobId b8be4a7d-e338-43eb-a69e-c513cd458eba -filePath 'C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv'
     ```
 
    If the upload is successful, the script displays the **Upload Successful** message.
 
    > [!NOTE]
-   > If you have problems running the previous command because of execution policies, see [About Execution Policies](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_execution_policies) and [Set-ExecutionPolicy](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy) for guidance about setting execution policies.
+   > If you have problems running the previous command because of execution policies, see [About Execution Policies](/powershell/module/microsoft.powershell.core/about/about_execution_policies) and [Set-ExecutionPolicy](/powershell/module/microsoft.powershell.security/set-executionpolicy) for guidance about setting execution policies.
 
 ## Step 5: Monitor the HR connector
 
 After you create the HR connector and run the script to upload your HR data, you can view the connector and upload status in the Microsoft 365 compliance center. If you schedule the script to run automatically on a regular basis, you can also view the current status after the last time the script ran.
 
-1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and click **Data connectors** in the left nav.
+1. Go to the Microsoft 365 compliance center, and select <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**Data connectors**</a>.
 
 2. Click the **Connectors** tab and then select the HR connector to display the flyout page. This page contains the properties and information about the connector.
 
-   ![HR connector flyout page with properties and status](../media/HRConnectorFlyout1.png)
+   ![HR connector flyout page with properties and status.](../media/HRConnectorFlyout1.png)
 
 3. Under **Progress**, click the **Download log** link to open (or save) the status log for the connector. This log contains information about each time the script runs and uploads the data from the CSV file to the Microsoft cloud. 
 
-   ![HR connector log file displays number rows from CSV file that were uploaded](../media/HRConnectorLogFile.png)
+   ![HR connector log file displays number rows from CSV file that were uploaded.](../media/HRConnectorLogFile.png)
 
    The `RecordsSaved` field indicates the number of rows in the CSV file that uploaded. For example, if the CSV file contains four rows, then the value of the `RecordsSaved` fields is 4, if the script successfully uploaded all the rows in the CSV file.
 
@@ -328,7 +373,7 @@ If you've haven't run the script in Step 4, a link to download the script is dis
 
 To make sure the latest HR data from your organization is available to tools like the insider risk management solution, we recommend that you schedule the script to run automatically on a recurring basis, such as once a day. This also requires that you update the HR data in the CSV file on a similar (if not the same) schedule so that it contains the latest information about employees who leave your organization. The goal is to upload the most current HR data so that the HR connector can make it available to the insider risk management solution.
 
-You can user the Task Scheduler app in Windows to automatically run the script every day.
+You can use the Task Scheduler app in Windows to automatically run the script every day.
 
 1. On your local computer, click the Windows **Start** button and then type **Task Scheduler**.
 
@@ -346,7 +391,7 @@ You can user the Task Scheduler app in Windows to automatically run the script e
 
 6. Select the **Triggers** tab, click **New**, and then do the following things:
 
-   1. Under **Settings**, select the **Daily** option, and then choose a date and time to run the script for the first time. The script will every day at the same specified time.
+   1. Under **Settings**, select the **Daily** option, and then choose a date and time to run the script for the first time. The script will run every day at the same specified time.
 
    1. Under **Advanced settings**, make sure the **Enabled** checkbox is selected.
 
@@ -354,13 +399,13 @@ You can user the Task Scheduler app in Windows to automatically run the script e
 
 7. Select the **Actions** tab, click **New**, and then do the following things:
 
-   ![Action settings to create a new scheduled task for the HR connector script](../media/HRConnectorScheduleTask1.png)
+   ![Action settings to create a new scheduled task for the HR connector script.](../media/HRConnectorScheduleTask1.png)
 
    1. In the **Action** dropdown list, make sure that **Start a program** is selected.
 
    1. In the **Program/script** box, click **Browse**, and go to the following location and select it so the path is displayed in the box: `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe`.
 
-   1. In the **Add arguments (optional)** box, paste the same script command that you ran in Step 4. For example, `.\HRConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn"  -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -csvFilePath "C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv"`
+   1. In the **Add arguments (optional)** box, paste the same script command that you ran in Step 4. For example, `.\HRConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn"  -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -filePath "C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv"`
 
    1. In the **Start in (optional)** box, paste the folder location of the script that you ran in Step 4. For example, `C:\Users\contosoadmin\Desktop\Scripts`.
 
@@ -370,7 +415,7 @@ You can user the Task Scheduler app in Windows to automatically run the script e
 
    The new task is displayed in the Task Scheduler Library.
 
-   ![The new task is displayed in the Task Scheduler Library](../media/HRConnectorTaskSchedulerLibrary.png)
+   ![The new task is displayed in the Task Scheduler Library.](../media/HRConnectorTaskSchedulerLibrary.png)
 
    The last time the script ran and the next time it's scheduled to run is displayed. You can double-click the task to edit it.
 
@@ -378,6 +423,6 @@ You can user the Task Scheduler app in Windows to automatically run the script e
 
 ## Existing HR connectors
 
-On July 20, 2020, we released additional scenarios that are supported by HR connectors. These are the HR scenarios that were previously described in this article. Any HR connector created before this date only supports the Employee resignation scenario. If you created an HR connector before July 20, 2020, we have migrated it so that it continues to migrate your HR data to the Microsoft cloud. You don't have to do anything to maintain this functionality. You can keep using the connector without any disruption.
+On December 13, 2021, we released the employee profile data scenario for HR connectors. If you created an HR connector before this date, we will migrate the existing instances or your organization's HR connectors so your HR data continues to be imported to the Microsoft cloud. You don't have to do anything to maintain this functionality. You can keep using these connectors without disruption.
 
-If you want to implement additional HR scenarios, please create a new HR connector and configure it for the additional HR scenarios that were released. You'll also need to create one or more new CSV files that contain the data to support the additional HR scenarios. After you create a new HR connector, run the script using the job ID of the new connector and CSV file(s) with the data for your additional HR scenarios.
+If you want to implement the employee profile data scenario, you create a new HR connector and configure it as required. After you create a new HR connector, run the script using the job ID of the new connector and CSV files with [employee profile data](#csv-file-for-employee-profile-data-preview) previously described in this article.

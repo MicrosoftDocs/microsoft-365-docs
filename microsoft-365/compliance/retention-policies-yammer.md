@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: 
 - M365-security-compliance
 - SPO_Content
@@ -21,7 +21,7 @@ description: "Learn about retention policies that apply to Yammer."
 
 # Learn about retention for Yammer
 
->*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
+>*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 The information in this article supplements [Learn about retention](retention.md) because it has information that's specific to Yammer.
 
@@ -33,26 +33,44 @@ For other workloads, see:
 
 ## What's included for retention and deletion
 
-The following Yammer items can be retained and deleted by using retention policies for Yammer: Community messages and private messages.
+Yammer user messages and community messages can be deleted by using retention policies for Yammer, and in addition to the text in these messages, the following items can be retained for compliance reasons: Hypertext links and links to other Yammer messages.
 
-Reactions from others in the form of emoticons are not included in these messages.
+> [!NOTE]
+> As explained in the following section, user messages include private messages for an individual user, and any community messages associated with that user.
+
+User messages include all the names of the people in the conversation, and community messages include the community name and the message title (if supplied).
+
+Reactions from others in the form of emoticons are not retained when you use retention policies for Yammer.
+
+Files that you use with Yammer aren't included in retention policies for Yammer. These items have their own retention policies.
 
 ## How retention works with Yammer
 
-You can use a retention policy to retain and delete community messages and private messages in Yammer. Private messages are stored in a hidden folder in the mailbox of each user included in the message, and community messages are stored in a similar hidden folder in the group mailbox for the community.
+Use this section to understand how your compliance requirements are met by backend storage and processes, and should be verified by eDiscovery tools rather than by messages that are currently visible in the Yammer app.
 
-Yammer messages are not affected by retention policies that are configured for user or group mailboxes. Even though Yammer messages are stored in Exchange, this Yammer data is included only by a retention policy that's configured for the **Yammer community messages** and **Yammer private messages** locations.
+You can use a retention policy to retain data from community messages and user messages in Yammer, and delete these messages. Behind the scenes, Exchange mailboxes are used to store data copied from these messages. Data from Yammer user messages is stored in a hidden folder in the mailbox of each user included in the user message, and a similar hidden folder in a group mailbox is used for community messages.
+
+Copies of community messages can also be stored in the hidden folder of user mailboxes when they @ mention users or notify the user of a reply. Although these messages originate as a community message, a retention policy for Yammer user messages will often include copies of community messages. As a result, user messages are not restricted to private messages.
+
+These hidden folders are not designed to be directly accessible to users or administrators, but instead, store data that compliance administrators can search with eDiscovery tools.
+
+Even though they are stored in Exchange, Yammer messages are only included in a retention policy that's configured for the **Yammer community messages** or **Yammer user messages** locations.
 
 > [!NOTE]
 > If a user is included in an active retention policy that retains Yammer data and you a delete a mailbox of a user who is included in this policy, to retain the Yammer data, the mailbox is converted into an [inactive mailbox](inactive-mailboxes-in-office-365.md). If you don't need to retain this Yammer data for the user, exclude the user account from the retention policy before you delete their mailbox.
 
 After a retention policy is configured for Yammer messages, a timer job from the Exchange service periodically evaluates items in the hidden folder where these Yammer messages are stored. The timer job takes up to seven days to run. When these items have expired their retention period, they are moved to the SubstrateHolds folder—a hidden folder that's in every user or group mailbox to store "soft-deleted" items before they are permanently deleted.
 
+> [!IMPORTANT]
+> Because of the [first principle of retention](retention.md#the-principles-of-retention-or-what-takes-precedence) and since Yammer messages are stored in Exchange Online mailboxes, permanent deletion from the SubstrateHolds folder is always suspended if the mailbox is affected by another retention policy (including policies applied to the Exchange location), litigation hold, delay hold, or if an eDiscovery hold is applied to the mailbox for legal or investigative reasons.
+>
+> While the mailbox is included in an applicable hold, Yammer messages that have been deleted will no longer be visible in Yammer but will continue to be discoverable with eDiscovery.
+
 After a retention policy is configured for Yammer messages, the paths the content takes depend on whether the retention policy is to retain and then delete, to retain only, or delete only.
 
 When the retention policy is to retain and then delete:
 
-![Diagram of retention flow for Yammer messages](../media/yammerretentionlifecycle.png)
+![Diagram of retention flow for Yammer messages.](../media/yammerretentionlifecycle.png)
 
 For the two paths in the diagram:
 
@@ -77,27 +95,89 @@ When the retention policy is retain-only, or delete-only, the content's paths ar
 
 2. **If the Yammer message is deleted by the user** during the period, the item is immediately moved to the SubstrateHolds folder where it is immediately permanently deleted.
 
+#### Example flows and timings for retention policies
+
+Use the following examples to see how the processes and timings explained in the previous sections apply to retention policies that have the following configurations:
+
+- [Example 1: Retain-only for 7 years](#example-1-retain-only-for-7-years)
+- [Example 2: Retain for 30 days and then delete](#example-2-retain-for-30-days-and-then-delete)
+- [Example 3: Delete-only after 1 day](#example-3-delete-only-after-1-day)
+
+For all examples that refer to permanent deletion, because of the [principles of retention](retention.md#the-principles-of-retention-or-what-takes-precedence), this action is suspended if the message is subject to another retention policy to retain the item or it is subject to an eDiscovery hold.
+
+##### Example 1: Retain-only for 7 years
+
+On day 1, a user posts a new Yammer message.
+
+On day 5, the user edits that message.
+
+On day 30, the user deletes the current message.
+
+Retention outcomes:
+
+- For the original message:
+    - On day 5, the message is copied to the SubstrateHolds folder where it can still be searched with eDiscovery tools for a minimum of 7 years from day 1 (the retention period).
+
+- For the current (edited) message:
+    - On day 30, the message moves to the SubstrateHolds folder where it can still be searched with eDiscovery tools for a minimum of 7 years from day 1 (the retention period).
+
+If the user had deleted the current message after the specified retention period, instead of within the retention period, the message would still be moved to the SubstrateHolds folder. However, now the retention period has expired, the message would be permanently deleted after the minimum of 1 day and then typically within 1-7 days.
+
+##### Example 2: Retain for 30 days and then delete
+
+On day 1, a user posts a new Yammer message.
+
+On day 10, the user edits that message.
+
+The user doesn't make further edits and doesn't delete the message.
+
+Retention outcomes:
+
+- For the original message:
+    - On day 10, the message is copied to the SubstrateHolds folder, where it can still be searched with eDiscovery tools.
+    - At the end of the retention period (30 days from day 1), the message is permanently deleted typically within 1-7 days after the minimum of 1 day, and then won't be returned with eDiscovery searches.
+
+- For the current (edited) message:
+    - At the end of the retention period (30 days from day 1), the message moves to the SubstrateHolds folder typically within 1-7 days, where it can still be searched with eDiscovery tools.
+    - The message is then permanently deleted typically within 1-7 days after the minimum of 1 day, and then won't be returned with eDiscovery searches.
+
+##### Example 3: Delete-only after 1 day
+
+> [!NOTE]
+> Because of the short one-day duration of this configuration and retention processes that operate within a time period of 1-7 days, this section shows example timings that are within the typical time ranges.
+
+On day 1, a user posts a new Yammer message.
+
+Example retention outcome if the user doesn't edit or delete the message:
+
+- Day 5 (typically 1-7 days after the start of the retention period on day 2):
+    - The message moves to the SubstrateHolds folder and remains there for at least 1 day where it can still be searched with eDiscovery tools.
+
+- Day 9 (typically 1-7 days after a minimum of 1 day in the SubstrateHolds folder):
+    - The message is permanently deleted and then won't be returned with eDiscovery searches.
+
+As this example shows, although you can configure a retention policy to delete messages after just one day, the service undergoes multiple processes to ensure a compliant deletion. As a result, a delete action after 1 day could take 16 days before the message is permanently deleted so that it's no longer returned in eDiscovery searches.
 
 ## Messages and external users
 
-By default, a retention policy for Yammer private messages applies to all users in your organization, but not external users. You can apply a retention policy to external users if you use the **Choose user** and specify their account. 
+By default, a retention policy for Yammer user messages applies to all users in your organization, but not external users. You can apply a retention policy to external users if you use the **Edit** option for users included, and specify their account.
 
 At this time, Azure B2B guest users are not supported.
 
 ## When a user leaves the organization 
 
-If a user leaves your organization and their Microsoft 365 account is deleted, their Yammer private messages that are subject to retention are stored in an inactive mailbox. These messages remain subject to any retention policy that was placed on the user before their mailbox was made inactive, and the contents are available to an eDiscovery search. For more information, see [Inactive mailboxes in Exchange Online](inactive-mailboxes-in-office-365.md). 
+If a user leaves your organization and their Microsoft 365 account is deleted, their Yammer user messages that are subject to retention are stored in an inactive mailbox. These messages remain subject to any retention policy that was placed on the user before their mailbox was made inactive, and the contents are available to an eDiscovery search. For more information, see [Inactive mailboxes in Exchange Online](inactive-mailboxes-in-office-365.md). 
 
 If the user stored any files in Yammer, see the [equivalent section](retention-policies-sharepoint.md#when-a-user-leaves-the-organization) for SharePoint and OneDrive.
 
 ## Limitations
 
-Yammer retention policies are currently in preview and we're continuously working on optimizing retention functionality. In the meantime, be aware of the following limitation when you use retention for Yammer community messages and private messages:
+Be aware of the following limitation when you use retention for Yammer community messages and user messages:
 
-- When you select **Choose users** for the **Yammer private messages** location, you might see guests and non-mailbox users. Retention policies aren't designed for these users, so don't select them.
+- When you select **Edit** for the **Yammer user messages** location, you might see guests and non-mailbox users. Retention policies aren't designed for these users, so don't select them.
 
 ## Configuration guidance
 
-If you're new to configuring retention in Microsoft 365, see [Get started with retention policies and retention labels](get-started-with-retention.md).
+If you're new to configuring retention in Microsoft 365, see [Get started with information governance](get-started-with-information-governance.md).
 
 If you're ready to configure a retention policy for Yammer, see [Create and configure retention policies](create-retention-policies.md).

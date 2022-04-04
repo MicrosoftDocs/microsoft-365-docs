@@ -2,13 +2,13 @@
 title: "Microsoft Productivity Score - Teamwork"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
@@ -24,6 +24,18 @@ description: "Details of the Teamwork - people experiences Productivity score."
 # Teamwork – People experiences
 
 Productivity Score provides insights into your organization's digital transformation journey through its use of Microsoft 365 and the technology experiences that support it. Your organization's score reflects people and technology experience measurements and can be compared to benchmarks from organizations similar to yours. The teamwork category is part of the measurements that falls under people experiences. To learn more, check out the [Productivity Score overview](productivity-score.md) and read [Microsoft's Privacy Statement](https://privacy.microsoft.com/privacystatement).
+
+## Prerequisites
+
+To get started with teamwork insights, people in your organization need to be licensed for:
+
+- Microsoft Teams
+- SharePoint
+- Exchange Online
+
+For more information, see [assign licenses to users](../manage/assign-licenses-to-users.md).
+
+After people have been active in the above products at least once in the last 28 days, you will start to see the insights.
 
 ## Why your org's teamwork score matters
 

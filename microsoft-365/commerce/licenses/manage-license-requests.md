@@ -2,27 +2,30 @@
 title: "Manage license requests"
 f1.keywords:
 - CSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
-ms.audience: Admin
+ms.reviewer: micurn, nicholak
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
-- commerce
-ms.custom: MACBillingLicensesRequests
-search.appverid:
-- MET150
+- Adm_O365
+ms.custom: 
+- commerce_licensing
+- MACBillingLicensesRequests
+- AdminSurgePortfolio
+search.appverid: MET150
 description: "Learn how to review and approve or deny license requests from users for your Microsoft 365 for business subscription."
-ms.date: 08/07/2020
+ms.date: 06/07/2021
 ---
 
 # Manage license requests
 
 > [!NOTE]
-> The information in this article only applies to self-service purchased products. To learn more, see [Self-service purchase FAQ](../subscriptions/self-service-purchase-faq.md).
+> The information in this article only applies to self-service purchased products. To learn more, see [Self-service purchase FAQ](../subscriptions/self-service-purchase-faq.yml).
 
 If you disable self-service purchases in your organization, you can use licenses requests to manage the license request process for your users. When a user tries to make a self-service purchase for a product that you’ve blocked, they can submit a request for a license to you, the admin. When they make a request, they can add the names of other users who also need licenses for the product.
 

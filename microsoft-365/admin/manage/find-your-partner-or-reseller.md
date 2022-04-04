@@ -2,13 +2,13 @@
 title: "Find your partner or reseller"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
@@ -16,13 +16,14 @@ ms.collection:
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 - BEA160
 ms.assetid: b6c18a9b-2aed-4c84-9d75-af709160258c
-description: "Learn how to find a new Microsoft 365 partner, or get contact information for a partner you've worked with in the past. "
+description: "Learn how to find a new Microsoft 365 partner, or get contact information for a partner you've worked with in the past."
 ---
 
 # Find your partner or reseller
@@ -35,7 +36,7 @@ As an admin, you can work with a partner to purchase, activate, and renew Micros
 
 If you're ready to buy or renew Microsoft 365 through Open Volume Licensing, or you simply want more information about working with a partner, choose an option below. 
   
-- [Search for a partner using Microsoft PinPoint](https://go.microsoft.com/fwlink/p/?LinkId=613304)
+- [Search for a Microsoft-certified service partner](https://go.microsoft.com/fwlink/p/?LinkId=613304)
     
 - [Call Microsoft Volume Licensing](https://go.microsoft.com/fwlink/p/?LinkId=613305)
     

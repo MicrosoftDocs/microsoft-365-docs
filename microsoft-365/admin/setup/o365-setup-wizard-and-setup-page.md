@@ -2,13 +2,13 @@
 title: "Difference between the setup wizard and the Setup page"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
@@ -35,7 +35,7 @@ The setup wizard provides a guided walkthrough for setting up the basic Microsof
 
 To set up your account, go to the [admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339), select **Setup** in the left navigation pane, and then select **Guided setup** on the **Setup** page.
 
-![Start the Microsoft 365 Apps for business setup wizard](../../media/o365b-guided-setup.png)
+![Start the Microsoft 365 Apps for business setup wizard.](../../media/o365b-guided-setup.png)
 
 The setup wizard guides you through the following steps:
 
@@ -53,7 +53,7 @@ To access the **Setup** page in the [admin center](https://go.microsoft.com/fwli
 
 You'll see the complete list of setup tasks arranged in logical categories, including those that you completed in the setup wizard.
 
-![Microsoft 365 for business Setup page](../../media/o365b-setup-page.png)
+![Microsoft 365 for business Setup page.](../../media/o365b-setup-page.png)
 
 Choose **View** for any task to get at-a-glance information, such as task description, user impact, prerequisites, effort to implement, and security and adoption statistics to help you understand consequences and impact before proceeding.
 
@@ -63,4 +63,4 @@ For access to comprehensive articles about the features you're setting up, selec
 
 When you're ready to complete a task, select **Get started** to walk through the configuration process. Once you complete a task, the **Get started** button changes to a **Manage** button, allowing you to manage the task, as needed.
 
-![Task view showing at-a-glance information](../../media/o365b-at-a-glance.png)
+![Task view showing at-a-glance information.](../../media/o365b-at-a-glance.png)

@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
@@ -49,4 +49,4 @@ Based on the configuration of your legal hold notification, your custodians may 
 
 In addition to the email notifications, each custodian will have access to a unique Compliance Portal. Through the portal, each custodian can view, access, and acknowledge their active hold notifications.
 
-![Compliance Portal for a custodian](../media/CustodianPortal.jpg)
+![Compliance Portal for a custodian.](../media/CustodianPortal.jpg)

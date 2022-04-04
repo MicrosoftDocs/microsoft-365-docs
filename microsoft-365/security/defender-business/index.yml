@@ -1,0 +1,133 @@
+### YamlMime:Landing
+
+title: Microsoft Defender for Business
+summary: Starting March 1, 2022, Microsoft Defender for Business is included in Microsoft 365 Business Premium. Defender for Business as a standalone subscription is currently in preview, and will roll out gradually to customers and IT Partners who sign up at https://aka.ms/mdb-preview.
+metadata:
+  title: Microsoft Defender for Business documentation
+  description: Get an overview and setup information for Microsoft Defender for Business
+  ms.prod: m365-security
+  ms.technology: mdb
+  ms.topic: landing-page
+  ms.collection: 
+  - SMB
+  - M365-security-compliance
+  - m365-initiative-defender-business
+  ms.custom: intro-hub-or-landing
+  author: denisebmsft
+  ms.author: deniseb
+  ms.date: 04/04/2022
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Overview
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is Defender for Business?
+            url: mdb-overview.md
+          - text: The simplified configuration process
+            url: mdb-simplified-configuration.md
+          - text: Compare plans for small and medium-sized businesses
+            url: compare-mdb-m365-plans.md
+          - text: Integration with Microsoft 365 Lighthouse
+            url: mdb-lighthouse-integration.md
+
+  # Card
+  - title: Get started
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Get Defender for Business
+            url: get-defender-business.md
+          - text: Use the setup wizard
+            url: mdb-use-wizard.md
+          - text: Navigate the portal
+            url: mdb-get-started.md
+          - text: View your Threat & Vulnerability Management dashboard
+            url: mdb-view-tvm-dashboard.md
+          - text: Try tutorials and simulations
+            url: mdb-tutorials.md
+
+
+  # Card
+  - title: Set up and configure
+    linkLists:
+      - linkListType: deploy
+        links:
+          - text: Setup overview
+            url: mdb-setup-configuration.md
+          - text: Step 1 - Review the requirements
+            url: mdb-requirements.md
+          - text: Step 2 - Assign roles and permissions
+            url: mdb-roles-permissions.md
+          - text: Step 3 - Set up email notifications
+            url: mdb-email-notifications.md
+          - text: Step 4 - Onboard devices
+            url: mdb-onboard-devices.md
+          - text: Step 5 - Configure security policies
+            url: mdb-view-edit-policies.md
+
+
+  # Card
+  - title: View and respond to threats
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: View and manage incidents
+            url: mdb-view-manage-incidents.md
+          - text: Respond to and mitigate threats
+            url: mdb-respond-mitigate-threats.md
+          - text: Review remediation actions
+            url: mdb-review-remediation-actions.md
+          - text: View and use reports
+            url: mdb-reports.md
+
+  # Card
+  - title: Manage security policies
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: View, edit, and create policies
+            url: mdb-view-edit-create-policies.md
+          - text: Manage rules for firewall policies
+            url: mdb-custom-rules-firewall.md
+      - linkListType: reference
+        links:
+          - text: Policy order
+            url: mdb-policy-order.md
+          - text: Next-generation protection settings
+            url: mdb-next-gen-configuration-settings.md
+          - text: Firewall settings
+            url: mdb-firewall.md
+
+  # Card
+  - title: Manage devices
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: View and manage devices
+            url: mdb-manage-devices.md
+          - text: Create device groups
+            url: mdb-create-edit-device-groups.md
+          - text: Onboard devices
+            url: mdb-onboard-devices.md
+
+  # Card
+  - title: Help and support
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: How to get help or contact support
+            url: mdb-get-help.md
+          - text: Frequently asked questions
+            url: mdb-faq.yml
+          - text: Troubleshooting
+            url: mdb-troubleshooting.yml
+          - text: Microsoft 365 Business Premium
+            url: /microsoft-365/business-premium/
+          - text: Microsoft 365 Lighthouse
+            url: /microsoft-365/lighthouse/m365-lighthouse-overview

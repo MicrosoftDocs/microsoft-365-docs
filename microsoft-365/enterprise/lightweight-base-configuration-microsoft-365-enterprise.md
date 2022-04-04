@@ -2,20 +2,21 @@
 title: "Lightweight base configuration"
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/14/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
+- admindeeplinkMAC
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: Use this Test Lab Guide to create a lightweight test environment for testing Microsoft 365 for enterprise.
 ---
@@ -26,7 +27,7 @@ description: Use this Test Lab Guide to create a lightweight test environment fo
 
 This article describes how to create a simplified environment with a Microsoft 365 E5 subscription and a computer running Windows 10 Enterprise.
 
-![The lightweight Microsoft 3656 Enterprise test environment](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
+![The lightweight Microsoft 3656 Enterprise test environment.](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
 
 Creating a lightweight test environment involves five phases:
 - [Phase 1: Create your Microsoft 365 E5 subscription](#phase-1-create-your-microsoft-365-e5-subscription)
@@ -37,7 +38,7 @@ Creating a lightweight test environment involves five phases:
 
 Use the resulting environment to test the features and functionality of [Microsoft 365 for enterprise](https://www.microsoft.com/microsoft-365/enterprise).
 
-![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Test Lab Guides for the Microsoft cloud.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
   
 > [!TIP]
 > For a visual map to all the articles in the Microsoft 365 for enterprise Test Lab Guide stack, see [Microsoft 365 for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
@@ -54,13 +55,13 @@ We start with an Microsoft 365 E5 trial subscription and then add the Microsoft 
 
 To start your Microsoft 365 E5 trial subscription, you first need a fictitious company name and a new Microsoft account.
   
-1. We recommend that you use a variant of the company name Contoso for your company name, which is a fictitious company used in Microsoft sample content, but it isn't required. Record your fictitious company name here: ![Line](../media/Common-Images/TableLine.png)
+1. We recommend that you use a variant of the company name Contoso for your company name, which is a fictitious company used in Microsoft sample content, but it isn't required. Record your fictitious company name here: ![Line.](../media/Common-Images/TableLine.png)
     
 2. To sign up for a new Microsoft account, go to [https://outlook.com](https://outlook.com) and create an account with a new email account and address. You will use this account to sign up for Office 365.
     
-    - Record the first and last name of your new account here: ![Line](../media/Common-Images/TableLine.png)
+    - Record the first and last name of your new account here: ![Line.](../media/Common-Images/TableLine.png)
     
-    - Record the new email account address here: ![Line](../media/Common-Images/TableLine.png)@outlook.com
+    - Record the new email account address here: ![Line.](../media/Common-Images/TableLine.png)@outlook.com
     
 ### Sign up for an Office 365 E5 trial subscription
 
@@ -69,8 +70,8 @@ To start your Microsoft 365 E5 trial subscription, you first need a fictitious c
 2. In step 1 of the **Thank you for choosing Office 365 E5** page, enter your new email account address.
 3. In step 2 of the trail subscription process, enter the requested information, and then perform the verification.
 4. In step 3, enter an organization name and then an account name that will be the global admin for the subscription.
-5. For step 4, record the sign-in page here (select and copy): ![Line](../media/Common-Images/TableLine.png)
-6. Record the user ID here: ![Line](../media/Common-Images/TableLine.png).onmicrosoft.com  
+5. For step 4, record the sign-in page here (select and copy): ![Line.](../media/Common-Images/TableLine.png)
+6. Record the user ID here: ![Line.](../media/Common-Images/TableLine.png).onmicrosoft.com  
    Record the password that you entered in a secure location.
    This value will be referred to as the **global administrator name**.
 7. Select **Go to Setup**.
@@ -95,29 +96,17 @@ $commonPW="<common user account password>"
 $PasswordProfile=New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfile
 $PasswordProfile.Password=$commonPW
 
-$userUPN= "user2@" + $orgName + ".onmicrosoft.com"
-New-AzureADUser -DisplayName "User 2" -GivenName User -SurName 2 -UserPrincipalName $userUPN -UsageLocation $loc -AccountEnabled $true -PasswordProfile $PasswordProfile -MailNickName "user2"
 $License = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
 $License.SkuId = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value "ENTERPRISEPREMIUM" -EQ).SkuID
 $LicensesToAssign = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
 $LicensesToAssign.AddLicenses = $License
-Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
 
-$userUPN= "user3@" + $orgName + ".onmicrosoft.com"
-New-AzureADUser -DisplayName "User 3" -GivenName User -SurName 3 -UserPrincipalName $userUPN -UsageLocation $loc -AccountEnabled $true -PasswordProfile $PasswordProfile -MailNickName "user3"
-$License = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
-$License.SkuId = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value "ENTERPRISEPREMIUM" -EQ).SkuID
-$LicensesToAssign = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
-$LicensesToAssign.AddLicenses = $License
-Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
-
-$userUPN= "user4@" + $orgName + ".onmicrosoft.com"
-New-AzureADUser -DisplayName "User 4" -GivenName User -SurName 4 -UserPrincipalName $userUPN -UsageLocation $loc -AccountEnabled $true -PasswordProfile $PasswordProfile -MailNickName "user4"
-$License = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
-$License.SkuId = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value "ENTERPRISEPREMIUM" -EQ).SkuID
-$LicensesToAssign = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
-$LicensesToAssign.AddLicenses = $License
-Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
+for($i=2;$i -le 4; $i++) {
+    $userUPN= "user$($i)@$($orgName).onmicrosoft.com"
+    New-AzureADUser -DisplayName "User $($i)" -GivenName User -SurName $i -UserPrincipalName $userUPN -UsageLocation $loc -AccountEnabled $true -PasswordProfile $PasswordProfile -MailNickName "user$($i)"
+    $userObjectID = (Get-AzureADUser -SearchString $userupn).ObjectID
+    Set-AzureADUserLicense -ObjectId $userObjectID -AssignedLicenses $LicensesToAssign
+}
 ```
 > [!NOTE]
 > The use of a common password here is for automation and ease of configuration for a test environment. Obviously, this is highly discouraged for production subscriptions. 
@@ -126,11 +115,11 @@ Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
 
 If you haven't already recorded these values, record them now:
   
-- Global administrator name: ![Line](../media/Common-Images/TableLine.png).onmicrosoft.com (from step 6 of Phase 1)
+- Global administrator name: ![Line.](../media/Common-Images/TableLine.png).onmicrosoft.com (from step 6 of Phase 1)
     
     Also record the password for this account in a secure location.
     
-- Your trial subscription organization name: ![Line](../media/Common-Images/TableLine.png) (from step 4 of Phase 1)
+- Your trial subscription organization name: ![Line.](../media/Common-Images/TableLine.png) (from step 4 of Phase 1)
     
 - To list the accounts for User 2, User 3, User 4, and User 5, run the following command from the Windows Azure Active Directory Module for Windows PowerShell prompt:
     
@@ -140,13 +129,13 @@ If you haven't already recorded these values, record them now:
 
     Record the account names here:
     
-  - User 2 account name: user2@![Line](../media/Common-Images/TableLine.png).onmicrosoft.com
+  - User 2 account name: user2@![Line.](../media/Common-Images/TableLine.png).onmicrosoft.com
     
-  - User 3 account name: user3@![Line](../media/Common-Images/TableLine.png).onmicrosoft.com
+  - User 3 account name: user3@![Line.](../media/Common-Images/TableLine.png).onmicrosoft.com
     
-  - User 4 account name: user4@![Line](../media/Common-Images/TableLine.png).onmicrosoft.com
+  - User 4 account name: user4@![Line.](../media/Common-Images/TableLine.png).onmicrosoft.com
     
-  - User 5 account name: user5@![Line](../media/Common-Images/TableLine.png).onmicrosoft.com
+  - User 5 account name: user5@![Line.](../media/Common-Images/TableLine.png).onmicrosoft.com
     
     Also record the common password for these accounts in a secure location.
    
@@ -164,7 +153,7 @@ First, add the Microsoft 365 E5 trial subscription and assign the new Microsoft 
   
 1. In an internet browser private window, use your global administrator account credentials to sign in to the Microsoft 365 admin center at [https://admin.microsoft.com](https://admin.microsoft.com).
     
-2. On the **Microsoft 365 admin center** page, in the left navigation, select **Billing > Purchase services**.
+2. On the **Microsoft 365 admin center** page, in the left navigation, select **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">**Purchase services**</a>.
     
 3. On the **Purchase services** page, select **Microsoft 365 E5**, and then select **Get free trial**.
 
@@ -174,7 +163,7 @@ First, add the Microsoft 365 E5 trial subscription and assign the new Microsoft 
 
 6. On the **Order receipt** page, select **Continue**.
 
-7. In the Microsoft 365 admin center, select **Users > Active users**.
+7. In the Microsoft 365 admin center, select **Users** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>.
 
 8. In **Active users**, select your administrator account.
 
@@ -196,7 +185,7 @@ Your test environment now has:
     
 Your resulting configuration, which adds Microsoft 365 E5, looks like this:
   
-![Phase 3 of the Microsoft 3656 Enterprise test environment](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase2.png)
+![Phase 3 of the Microsoft 3656 Enterprise test environment.](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase2.png)
   
 ## Phase 4: Create a Windows 10 Enterprise computer
 
@@ -212,10 +201,10 @@ Use the hypervisor of your choice to create a virtual machine, and then install 
   
 ### Virtual machine in Azure
 
-To create a Windows 10 virtual machine in Microsoft Azure, ***you must have a Visual Studio-based subscription***, which has access to the image for Windows 10 Enterprise. Other types of Azure subscriptions, such as trial and paid subscriptions, do not have access to this image. For the latest information, see [Use Windows client in Azure for dev/test scenarios](https://docs.microsoft.com/azure/virtual-machines/windows/client-images).
+To create a Windows 10 virtual machine in Microsoft Azure, ***you must have a Visual Studio-based subscription***, which has access to the image for Windows 10 Enterprise. Other types of Azure subscriptions, such as trial and paid subscriptions, do not have access to this image. For the latest information, see [Use Windows client in Azure for dev/test scenarios](/azure/virtual-machines/windows/client-images).
   
 > [!NOTE]
-> The following command sets use the latest version of Azure PowerShell. See [Get started with Azure PowerShell cmdlets](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/). These command sets build a Windows 10 Enterprise virtual machine named WIN10 and all of its required infrastructure, including a resource group, a storage account, and a virtual network. If you are already familiar with Azure infrastructure services, adapt these instructions to suit your currently deployed infrastructure.
+> The following command sets use the latest version of Azure PowerShell. See [Get started with Azure PowerShell cmdlets](/powershell/azureps-cmdlets-docs/). These command sets build a Windows 10 Enterprise virtual machine named WIN10 and all of its required infrastructure, including a resource group, a storage account, and a virtual network. If you are already familiar with Azure infrastructure services, adapt these instructions to suit your currently deployed infrastructure.
   
 First, start a Microsoft PowerShell prompt.
   
@@ -279,7 +268,7 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 After the physical or virtual machine with Windows 10 Enterprise is created, sign in with a local administrator account.
   
 > [!NOTE]
-> For a virtual machine in Azure, use  [these instructions](https://docs.microsoft.com/azure/virtual-machines/windows/connect-logon) to connect to it.
+> For a virtual machine in Azure, use  [these instructions](/azure/virtual-machines/windows/connect-logon) to connect to it.
   
 Next, join the WIN10 computer to the Azure AD tenant of your Microsoft 365 E5 subscription.
   
@@ -307,7 +296,7 @@ Next, install Microsoft 365 Apps for enterprise on the WIN10 computer:
     
 Your resulting environment looks like this:
 
-![Phase 5 of the Microsoft 3656 Enterprise test environment](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
+![Phase 5 of the Microsoft 3656 Enterprise test environment.](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
 
 This includes the WIN10 computer that has:
 
@@ -332,4 +321,4 @@ Explore these additional sets of Test Lab Guides:
 
 [Microsoft 365 for enterprise overview](microsoft-365-overview.md)
 
-[Microsoft 365 for enterprise documentation](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Microsoft 365 for enterprise documentation](/microsoft-365-enterprise/)

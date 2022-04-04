@@ -8,8 +8,8 @@ manager: laurawi
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Normal
-ms.date: 06/11/2020
+ms.localizationpriority: medium
+ms.date: 03/04/2022
 ms.collection: 
 - Strat_O365_IP
 - M365-security-compliance
@@ -25,6 +25,9 @@ Email revocation is offered as part of Office 365 Advanced Message Encryption. O
 This article is part of a larger series of articles about [Office 365 Message Encryption](ome.md).
 
 If a message was encrypted using Office 365 Advanced Message Encryption, and you are a Microsoft 365 admin or you are the sender of the message, you can revoke the message under certain conditions. Admins revoke messages using PowerShell. As a sender, you revoke a message that you sent directly from Outlook on the web. This article describes the circumstances under which revocation is possible and how to do it.
+
+> [!NOTE]
+> To guarantee that the ability to track and revoke OME messages is available, you must add a custom branding template. See [Add your organization's brand to your encrypted messages](add-your-organization-brand-to-encrypted-messages.md)
   
 ## Encrypted emails that you can revoke
 
@@ -43,6 +46,10 @@ Once an email has been revoked, the recipient receives an error when they access
 ![Screenshot that shows a revoked encrypted email.](../media/revoked-encrypted-email.png)
 
 ## How to revoke an encrypted message that you sent
+
+You can revoke a mail that you sent to a single recipient that uses a social account such as gmail.com or yahoo.com. In other words, you can revoke an email sent to a single recipient that received the link-based experience.
+
+You cannot revoke a mail that you sent to a recipient that uses a work or school account from Office 365 or Microsoft 365 or a user that uses a Microsoft account, for example, an outlook.com account. 
 
 To revoke an encrypted message that you sent, complete these steps
 
@@ -94,7 +101,7 @@ To verify whether you can revoke a message, check whether the Revocation Status 
 
 To verify whether you can revoke a particular email message by using Windows PowerShell, complete these steps.
 
-1. Using a work or school account that has global administrator permissions in your organization, start a Windows PowerShell session and connect to Exchange Online. For instructions, see [Connect to Exchange Online PowerShell](https://aka.ms/exopowershell).
+1. Using a work or school account that has global administrator permissions in your organization, start a Windows PowerShell session and connect to Exchange Online. For instructions, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Run the Get-OMEMessageStatus cmdlet as follows:
 
@@ -104,7 +111,7 @@ To verify whether you can revoke a particular email message by using Windows Pow
 
    This command returns the subject of the message and whether the message is revocable. For example,
 
-     ```text
+     ```console
      Subject        IsRevocable
      -------        -----------
      "Test message" True
@@ -122,7 +129,7 @@ To revoke the message using the Security &amp; Compliance Center
 
 To revoke an email by using Windows PowerShell, use the Set-OMEMessageRevocation cmdlet.
 
-1. Using a work or school account that has global administrator permissions in your organization, [Connect to Exchange Online PowerShell](https://aka.ms/exopowershell).
+1. Using a work or school account that has global administrator permissions in your organization, [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Run the Set-OMEMessageRevocation cmdlet as follows:
 
@@ -138,7 +145,7 @@ To revoke an email by using Windows PowerShell, use the Set-OMEMessageRevocation
 
     If revocation was successful, the cmdlet returns the following result:  
 
-     ```text
+     ```console
      Revoked: True
      ```
 
@@ -148,4 +155,4 @@ To revoke an email by using Windows PowerShell, use the Set-OMEMessageRevocation
 
 - [Office 365 Advanced Message Encryption - email expiration](ome-advanced-expiration.md)
 
-- [Message policy and compliance service description](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/message-policy-and-compliance)
+- [Message policy and compliance service description](/office365/servicedescriptions/exchange-online-service-description/message-policy-and-compliance)

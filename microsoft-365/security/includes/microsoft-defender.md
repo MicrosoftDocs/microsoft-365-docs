@@ -1,12 +1,11 @@
 ---
+manager: dansimp
 ms.author: dansimp
 author: dansimp
-ms.service: microsoft-365-enterprise 
+ms.prod: m365-security
 ms.topic: include
-ms.date: 09/21/2020
-f1.keywords:
-- NOCSH
+ms.custom: admindeeplinkDEFENDER
 ---
 
 > [!IMPORTANT]
-> Welcome to **Microsoft 365 Defender**, the new name for **Microsoft Threat Protection**. Read more about this and other updates [here](https://www.microsoft.com/security/blog/?p=91813). 
+> The improved <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> is now available. This new experience brings Defender for Endpoint, Defender for Office 365, Microsoft 365 Defender, and more into the Microsoft 365 Defender portal. [Learn what's new](/microsoft-365/security/mtp/overview-security-center).
