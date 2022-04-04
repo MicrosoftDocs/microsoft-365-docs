@@ -43,7 +43,7 @@ Security teams can use Explorer to select emails in several ways:
 
 - Choose emails by hand: Use filters in various views. Select up to 100 emails to remediate.
 
-- Query selection: Select an entire query by using the top **select all** button. The same query is also shown in action center mail submission details.Customers can submit maximum 200,000 emails from threat explorer.  
+- Query selection: Select an entire query by using the top **select all** button. The same query is also shown in action center mail submission details. Customers can submit maximum 200,000 emails from threat explorer.  
 
 - Query selection with exclusion: Sometimes security operations teams may want to remediate emails by selecting an entire query and excluding certain emails from the query manually. To do so, an admin can use the **Select all** check box and scroll down to exclude emails manually. The query can hold a maximum of 1,000 emails. The maximum number of exclusions is 100.
 
@@ -63,7 +63,7 @@ Once emails are selected through Explorer, you can start remediation by taking d
 
 All remediations (direct approvals ) that were created in Explorer or  Advanced hunting or through Automated investigation  are displayed in the Action Center. Access these via the left navigation panel under **Actions & Submissions** \> **Action center**  -> **History tab**. 
 
-Manual actions pending approval using the two-step approval process (1. add to remediation by one security opertaion team member, 2. reviewed and approved by another security opertaion team member) are only visible in the legacy Defender for Office 365 action center **Review** \> **Action center** and not in incidents/investigations and the Unified Action center.
+Manual actions pending approval using the two-step approval process (1. add to remediation by one security operation team member, 2. reviewed and approved by another security operation team member) are only visible in the legacy Defender for Office 365 action center **Review** \> **Action center** and not in incidents/investigations and the Unified Action center.
 
 > [!NOTE]
 > Two-step approval: actions only avialbe in the office action center  **Review** \> **Action center**
@@ -73,9 +73,9 @@ Manual actions pending approval using the two-step approval process (1. add to r
 
 Unified Action Center shows remediation actions for the past 30 days. Actions taken through Explorer are listed by the name that the security operations team provided when the remediation was created as well as approval Id, Investigation Id. Actions taken through automated investigations have titles that begin with the related alert that triggered the investigation, such as "Zap email cluster... ."
 
-Open any remediation item to view details about it, including its remediation name,approval Id, Investigation Id, creation date, description, status, action source, action type, decided by, status. It also opens a side pane with action details, email cluster deatils, alert and Incident details.
+Open any remediation item to view details about it, including its remediation name, approval Id, Investigation Id, creation date, description, status, action source, action type, decided by, status. It also opens a side pane with action details, email cluster details, alert and Incident details.
 
-- *Open Investigation page* this opens up an admin Investigation that contains fewer details and tabs. It shows details like: related alert, entity selected for remediation, action taken, remediation status, entity count, logs, approver of action. This investigation keeps a track of investigation done by the admin manually and  contains details to selections made by the admin, hence is called admin action investigation. No need to act on the investigation and alert it's alredy in approved state.   
+- *Open Investigation page* this opens up an admin Investigation that contains fewer details and tabs. It shows details like: related alert, entity selected for remediation, action taken, remediation status, entity count, logs, approver of action. This investigation keeps a track of investigation done by the admin manually and  contains details to selections made by the admin, hence is called admin action investigation. No need to act on the investigation and alert its already in approved state.   
 - *Email count* Displays the number of emails submitted through Threat Explorer. These emails can be actionable or not actionable. 
 - *Action logs* Shows the details of remediation status like successful/ failed/ already in destination
 
