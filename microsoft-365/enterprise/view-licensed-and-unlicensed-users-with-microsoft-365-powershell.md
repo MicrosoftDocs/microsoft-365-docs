@@ -28,6 +28,66 @@ description: This article explains how to use PowerShell to view licensed and un
 
 User accounts in your Microsoft 365 organization may have some, all, or none of the available licenses assigned to them from the licensing plans that are available in your organization. You can use PowerShell for Microsoft 365 to quickly find the licensed and unlicensed users in your organization.
 
+## Use the Microsoft Graph PowerShell SDK
+
+First, [connect to your Microsoft 365 tenant](/graph/powershell/get-started#authentication).
+ 
+To view the list of all user accounts in your organization that have NOT been assigned any of your licensing plans (unlicensed users), run the following command:
+  
+```powershell
+Connect-Graph -Scopes User.Read.All
+
+$graphUri = 'https://graph.microsoft.com/v1.0/users?$filter=assignedLicenses/$count eq 0&$select=displayName,mail,userPrincipalName,id,userType,assignedLicenses&$count=true'
+
+$results = Invoke-MgGraphRequest -Uri $graphUri -Headers @{ ConsistencyLevel = 'eventual' }
+$count = $results.'@odata.count'
+
+Write-Host "Found $count unlicensed users."
+
+$hasMoreData = $true
+while ($hasMoreData) {
+    foreach ($userObject in $results.value) {
+        [Microsoft.Graph.PowerShell.Models.MicrosoftGraphUser1]$user = $userObject
+        $user 
+    }
+    $nextLink = $results.'@odata.nextLink'
+    if ($nextLink) {
+        $results = Invoke-MgGraphRequest -Uri $nextLink -Headers @{ ConsistencyLevel = 'eventual' }
+    } else {
+        $hasMoreData = $false
+    }
+}
+
+```
+
+To view the list of all user accounts in your organization that have been assigned any of your licensing plans (licensed users), run the following command:
+  
+```powershell
+Connect-Graph -Scopes User.Read.All
+
+$graphUri = 'https://graph.microsoft.com/v1.0/users?$filter=assignedLicenses/$count ne 0&$select=displayName,mail,userPrincipalName,id,userType,assignedLicenses&$count=true'
+
+$results = Invoke-MgGraphRequest -Uri $graphUri -Headers @{ ConsistencyLevel = 'eventual' }
+$count = $results.'@odata.count'
+
+Write-Host "Found $count licensed users."
+
+$hasMoreData = $true
+while ($hasMoreData) {
+    foreach ($userObject in $results.value) {
+        [Microsoft.Graph.PowerShell.Models.MicrosoftGraphUser1]$user = $userObject
+        $user
+    }
+    $nextLink = $results.'@odata.nextLink'
+    if ($nextLink) {
+        $results = Invoke-MgGraphRequest -Uri $nextLink -Headers @{ ConsistencyLevel = 'eventual' }
+    } else {
+        $hasMoreData = $false
+    }
+}
+
+```
+
 ## Use the Azure Active Directory PowerShell for Graph module
 
 First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
