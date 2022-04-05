@@ -63,11 +63,11 @@ To add, modify, or remove domains, you **must** be a **Domain Name Administrator
 1. In the Microsoft 365 admin center, select **Settings**, and then select **Domains**.
 2. Select your onmicrosoft.com default domain.
 
-    ![Screenshot of Domains page.](../../media/onmicrosoft-domains.png)
+    ![Domains page.](../../media/onmicrosoft-domains.png)
   
 3. On the domain properties page, in the **About this domain** section, select **Add onmicrosoft domain**.
 
-    ![Screenshot of Domains page.](../../media/add-onmicrosoft-domain-link.png)
+    ![About this domains page.](../../media/add-onmicrosoft-domain-link.png)
 
 4. In the **Add onmicrosoft domain** page, in the **Domain name** box, type the name for your new onmicrosoft.com domain. 
 
@@ -94,7 +94,7 @@ After you have created your new onmicrsoft.com domain, do the following to chang
 
 2. Select the new onmicrosoft.com domain you had created.
 
-    ![Screenshot of Domains page.](../../media/onmicrosoft-domains-added.png) 
+    ![Select a domains.](../../media/onmicrosoft-domains-added.png) 
 
 3. On the domain's property page, select **Make fallback domain**.
  
@@ -102,7 +102,7 @@ After you have created your new onmicrsoft.com domain, do the following to chang
 
 4. A message will display on the page stating that your fallback domain has changed to the new domain.
 
-    ![Screenshot of selecting a new fallback domain.](../../media/fallback-success.png) 
+    ![Successfully added new fallback domain.](../../media/fallback-success.png) 
 
 
 
