@@ -300,6 +300,13 @@
        href: remediate-malicious-email-delivered-office-365.md
      - name: Responding to a Compromised Email Account in Office 365
        href: responding-to-a-compromised-email-account.md
+     - name: Respond to a compromised connector
+       href: respond-compromised-connector.md
+       items: 
+       - name: Remove blocked connectors
+         href: remove-blocked-connectors.md
+       - name: Remove blocked entities
+         href: remove-blocked-entities.md
      - name: Review and approve (or reject) pending actions
        href: air-review-approve-pending-completed-actions.md
      - name: Tune anti-phishing protection

@@ -40,7 +40,7 @@ Here are some of the characteristics of a compromised connector:
 
 - Mismatch between P1 and P2 senders in outbound mails. For more information on P1 and P2 senders, see [How EOP validates the From address to prevent phishing](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards).
 
-- Outbound mails sent from an unprovisioned/unregistered domain. 
+- Outbound mails sent from a domain that is not provisioned or registered. 
 
 - The connector is blocked from sending relaying mail. 
 
