@@ -121,7 +121,7 @@ Microsoft also recommends that users protect their personal email accounts by ta
 
 The administrative accounts you use to administer your Microsoft 365 environment include elevated privileges. These are valuable targets for hackers and cyber attackers. Use admin accounts only for administration. Admins should have a separate user account for regular, non-administrative use and only use their administrative account when necessary to complete a task associated with their job function. Additional recommendations:
 
-- Be sure accounts are added to Azure Active Directory.
+- Be sure accounts are added to [Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-whatis).
  
 - Be sure admin accounts are also set up for multi-factor authentication.
 
@@ -217,33 +217,27 @@ For more information, see:
 - [Restore your OneDrive](https://support.microsoft.com/office/fa231298-759d-41cf-bcd0-25ac53eb8a15)
 
 
-## Encrypt sensitive emails
+## Protect sensitive emails
 
-Office Message Encryption is included with Microsoft 365. It's already set up. With Office Message Encryption, your organization can send and receive encrypted email messages between people inside and outside your organization. Office 365 Message Encryption works with Outlook.com, Yahoo!, Gmail, and other email services. Email message encryption helps ensure that only intended recipients can view message content.
+Microsoft 365 includes Office Message Encryption which allows you to send and receive encrypted email messages between people inside and outside your organization, and only the intended recipients may view them. The encryption works with Outlook.com, Yahoo!, Gmail, and other email services. 
 
-Office Message Encryption provides two protection options when sending mail:
+>[!Tip]
+>If a more stringent security level is desired, your organization should also configure and use sensitivity labeling for emails or files. [Sensitivity labels](../../compliance/sensitivity-labels.md) allow control over content, no matter where it goes. 
 
-- Do not forward
+### Send encrypted email
 
-- Encrypt
+To encrypt your email:
 
-Your organization might have configured other options that apply a label to email, such as Confidential.
+1. With a new email open, select the **Options** menu.
+1. From the **Encrypt** drop-down choose the appropriate permission level.
 
-### To send protected email
+![Email message encryption in Outlook.](../../media/08e90a7e-a2d2-41a4-bae9-0a46b4ce639b.png)
 
-In Outlook for PC, select **Options** in the email, and then choose **Permissions**.
-
-![Email message encryption in Outlook.](../../media/08e90a7e-a2d2-41a4-bae9-0a46b4ce639a.png)
-
-In Outlook.com, select **Protect** in the email. The default protection is **Do not forward**. To change this to encrypt, select **Change Permissions** \> **Encrypt**.
-
-![Email message encryption in Outlook.com.](../../media/329ccf50-f6b1-4fb8-b249-60b907a82b7e.png)
-
-### To receive encrypted email
+### Receive encrypted email
 
 If the recipient has Outlook 2013 or Outlook 2016 and a Microsoft email account, they'll see an alert about the item's restricted permissions in the Reading pane. After opening the message, the recipient can view the message just like any other.
 
-If the recipient is using another email client or email account, such as Gmail or Yahoo, they'll see a link that lets them either sign in to read the email message or request a one-time passcode to view the message in a web browser. If users aren't receiving the email, have them check their Spam or Junk folder.
+If the recipient is using another email client or email account, such as Gmail or Yahoo, they'll see a link that lets them either sign in to read the email message or request a one-time passcode to view the message in a web browser. If users aren't receiving the email, they should check their Spam or Junk email folder.
 
 > [!TIP]
 > For more information, see [Send, view, and reply to encrypted messages in Outlook for PC](https://support.microsoft.com/office/eaa43495-9bbb-4fca-922a-df90dee51980).
