@@ -94,7 +94,7 @@ With Intune you have the following set of actions:
 - [Rename device](/mem/intune/remote-actions/device-rename)
 - [Reset passcode](/mem/intune/remote-actions/device-passcode-reset) [Restart](/mem/intune/remote-actions/device-restart) (Windows only)
 - [Update Windows Defender Security Intelligence](https://www.microsoft.com/en-us/wdsi/defenderupdates) (Windows only)
-- [Windows 10 PIN reset](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-feature-pin-reset) (Windows only)
+- [Windows 10 PIN reset](/windows/security/identity-protection/hello-for-business/hello-feature-pin-reset) (Windows only)
 - [Send custom notifications](/mem/intune/remote-actions/custom-notifications#send-a-custom-notification-to-a-single-device) (Android, iOS, iPad OS)
 - [Synchronize device](/mem/intune/remote-actions/device-sync)
 
