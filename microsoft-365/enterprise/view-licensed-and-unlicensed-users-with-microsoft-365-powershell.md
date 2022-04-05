@@ -32,11 +32,15 @@ User accounts in your Microsoft 365 organization may have some, all, or none of 
 
 First, [connect to your Microsoft 365 tenant](/graph/powershell/get-started#authentication).
 
+Reading user properties including license details requires the User.Read.All permission scope or one of the other permissions listed in the ['Get a user' Graph API reference page](/graph/api/user-get).
+
+```powershell
+Connect-Graph -Scopes User.Read.All
+```
+
 To view the list of all user accounts in your organization that have NOT been assigned any of your licensing plans (unlicensed users), run the following command:
   
 ```powershell
-Connect-Graph -Scopes User.Read.All
-
 Get-MgUser -Filter 'assignedLicenses/$count eq 0' -ConsistencyLevel eventual -CountVariable unlicensedUserCount -All
 
 Write-Host "Found $unlicensedUserCount unlicensed users."
@@ -45,8 +49,6 @@ Write-Host "Found $unlicensedUserCount unlicensed users."
 To view the list of all member user accounts (excluding guests) in your organization that have NOT been assigned any of your licensing plans (unlicensed users), run the following command:
   
 ```powershell
-Connect-Graph -Scopes User.Read.All
-
 Get-MgUser -Filter "assignedLicenses/`$count eq 0 and userType eq 'Member'" -ConsistencyLevel eventual -CountVariable unlicensedUserCount -All
 
 Write-Host "Found $unlicensedUserCount unlicensed users (excluding guests)."
@@ -55,8 +57,6 @@ Write-Host "Found $unlicensedUserCount unlicensed users (excluding guests)."
 To view the list of all user accounts in your organization that have been assigned any of your licensing plans (licensed users), run the following command:
   
 ```powershell
-Connect-Graph -Scopes User.Read.All
-
 Get-MgUser -Filter 'assignedLicenses/$count ne 0' -ConsistencyLevel eventual -CountVariable licensedUserCount -All -Select UserPrincipalName,DisplayName,AssignedLicenses | Format-Table -Property UserPrincipalName,DisplayName,AssignedLicenses
 
 Write-Host "Found $licensedUserCount licensed users."
@@ -65,8 +65,6 @@ Write-Host "Found $licensedUserCount licensed users."
 To view the list of all user accounts in your organization that have an E5 license assigned, run the following command:
 
 ```powershell
-Connect-Graph -Scopes User.Read.All
-
 $e5Sku = Get-MgSubscribedSku -All | Where-Object SkuPartNumber -eq 'SPE_E5'
 
 Get-MgUser -Filter "assignedLicenses/any(x:x/skuId eq $($e5sku.SkuId) )" -ConsistencyLevel eventual -CountVariable e5licensedUserCount -All
