@@ -52,7 +52,9 @@ To find a solution provider in your area, take the following steps:
 
 ## What does Microsoft 365 Business Premium include?
 
-[View the Microsoft 365 User Subscription Suites for Small and Medium-sized Businesses](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWR6bM)
+Microsoft 365 Business Premium includes your favorite Office productivity apps, collaboration tools like Microsoft Teams, and enterprise-grade security, identity, and device management solutions. To learn more, see [How Microsoft 365 Business Premium helps your business](m365bp-secure-users.md).
+
+For more detailed information about what's included in Microsoft 365 Business Premium, see the [Microsoft 365 User Subscription Suites for Small and Medium-sized Businesses](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWR6bM).
 
 ## Next steps
 
