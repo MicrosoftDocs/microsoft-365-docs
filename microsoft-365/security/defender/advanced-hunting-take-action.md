@@ -39,9 +39,11 @@ You can quickly contain threats or address compromised assets that you find in [
 - Quarantine files
 
 ## Required permissions
-To take action through advanced hunting, you need a role in Microsoft Defender for Endpoint with [permissions to submit remediation actions on devices](/windows/security/threat-protection/microsoft-defender-atp/user-roles#permission-options). If you can't take action, contact a global administrator about getting the following permission:
+To take action on devices through advanced hunting, you need a role in Microsoft Defender for Endpoint with [permissions to submit remediation actions on devices](/windows/security/threat-protection/microsoft-defender-atp/user-roles#permission-options). If you can't take action, contact a global administrator about getting the following permission:
 
 *Active remediation actions > Threat and vulnerability management - Remediation handling*
+
+To take action on emails through advanced hunting, you need a role in Microsoft Defender for Office 365 to search and purge emails.
 
 ## Take various actions on devices
 You can take the following actions on devices identified by the `DeviceId` column in your query results:
@@ -75,8 +77,12 @@ To take any of the described actions, select one or more records in your query r
 ## Take various actions on emails
 Apart from device-focused remediation steps, you can also take the following actions on emails and links inside email from your query results:
 - `Move to mailbox folder` - move email messages to Junk, Inbox, or Deleted items folder
+
+
+:::image type="content" source="../../media/advanced-hunting-take-actions-email.png" alt-text="The Take actions option in the Microsoft 365 Defender portal" lightbox="../../media/advanced-hunting-take-actions-email.png":::
+
 - `Delete email` - move email messages to the Deleted items folder or delete them permanently
-- `Block URL` - add the URL to the [Safe Links policy](/office-365-security/set-up-safe-links-policies.md) as a malicious URL for blocking
+
 
 :::image type="content" source="../../media/choose-email-actions.png" alt-text="take actions wizard for email messages or links" lightbox="../../media/choose-email-actions.png":::
 
