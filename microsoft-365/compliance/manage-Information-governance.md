@@ -1,5 +1,5 @@
 ---
-title: "Govern your data with data lifecycle management & records management from Microsoft Purview"
+title: "Microsoft Purview Data Lifecycle Management & Microsoft Purview Records Management"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,7 +17,7 @@ recommendations: false
 description: "Implement capabilities from Microsoft Purview Data Lifecycle Management & Microsoft Purview Records Management to govern your data for compliance or regulatory requirements."
 ---
 
-# Microsoft Purview Data Lifecycle Management & Microsoft Purview Records Management
+# Govern your sensitive data with Microsoft Purview
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
