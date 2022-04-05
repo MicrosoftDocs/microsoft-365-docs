@@ -83,8 +83,7 @@ Apart from device-focused remediation steps, you can also take the following act
 
 - `Delete email` - move email messages to the Deleted items folder or delete them permanently
 
-
-:::image type="content" source="../../media/choose-email-actions.png" alt-text="take actions wizard for email messages or links" lightbox="../../media/choose-email-actions.png":::
+:::image type="content" source="../../media/advanced-hunting-take-actions-email-del.png" alt-text="The Take actions option in the Microsoft 365 Defender portal" lightbox="../../media/advanced-hunting-take-actions-email-del.png":::
 
 You can also provide a remediation name and a short description of the action taken to easily track it in the action center history. You can also use the Approval ID to filter for these actions in the action center. This ID is provided at the end of the wizard:
 
