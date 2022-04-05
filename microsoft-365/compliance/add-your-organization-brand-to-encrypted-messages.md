@@ -46,7 +46,7 @@ If you'd like more control, use Office 365 Advanced Message Encryption to create
 - Whether you want to allow emails to be revoked
 - Whether you want emails sent to external recipients to expire after a specified number of days.
 
-Once you've created the templates, you can apply them to encrypted emails sent from by using Exchange mail flow rules. If you have Office 365 Advanced Message Encryption, you can revoke any email that you've branded by using these templates.
+Once you've created the templates, you can apply them to encrypted emails sent from your online mailbox by using Exchange mail flow rules. If you have Office 365 Advanced Message Encryption, you can revoke any email that you've branded by using these templates.
 
 ## Work with OME branding templates
 
