@@ -1,7 +1,7 @@
 ---
-title: Submit suspected files in Microsoft Defender for Endpoint
+title: Submit suspicious files in Microsoft Defender for Endpoint
 description: Learn how to use the unified submissions feature in the Microsoft 365 Defender to submit suspicious emails, suspected phishing mails, spam, and other potentially harmful messages, URLs, and files to Microsoft for scanning.
-keywords: antivirus, spam, phish, Microsoft Defender for Endpoint, false positive, false negative, blocked file, blocked url
+keywords: antivirus, spam, phish, Microsoft Defender for Endpoint, false positive, false negative, blocked file, blocked url, submission, submit, report
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.date: 06/15/2021
@@ -24,7 +24,7 @@ ms.collection:
 ms.custom: FPFN
 ---
 
-# Submit suspected files in Microsoft Defender for Endpoint
+# Submit suspicious files in Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -37,12 +37,6 @@ ms.custom: FPFN
 
 In Microsoft Defender for Endpoint, admins can use the unified submissions feature in the Microsoft 365 Defender to submit files and file hashes (SHAs) to Microsoft for review.
 
-## Microsoft Defender for Endpoint interactive guide
-
-In this interactive guide, you'll learn how Microsoft Defender for Endpoint can help you identify suspicious activities, investigate risks to your organization, and remediate threats.
-
-[Check out the interactive guide](https://aka.ms/MSDE-IG)
-
 ## What do you need to know before you begin?
 
 - To submit files to Microsoft, you need to be a member of one of the following role groups:
@@ -51,13 +45,16 @@ In this interactive guide, you'll learn how Microsoft Defender for Endpoint can 
 
 - For more information about how you can submit spam, phish, URLs, and email attachments to Microsoft, see [Report messages and files to Microsoft](../office-365-security/report-junk-email-messages-to-microsoft.md).
 
-## Report suspicious content to Microsoft
+> [!NOTE]
+> The new unified submissions experience is available only in subscriptions that include Microsoft 365 Defender, Microsoft Defender for Endpoint Plan 2, or Microsoft Defender for Office Plan 2.
 
-If you have a file that you suspect might be malware or is being incorrectly detected, you can submit it to Microsoft for analysis using Microsoft 365 Defender at https://security.microsoft.com/.
+## Report suspicious items to Microsoft from the portal
+
+If you have a file that you suspect might be malware or is being incorrectly detected, you can submit it to Microsoft for analysis using the Microsoft 365 Defender portal at https://security.microsoft.com/.
 
 ### Submit a suspected file or file hash
 
-1. Open the Microsoft 365 Defender at <https://security.microsoft.com/>, click **Actions & submissions**, click **Submissions**, go to **Files** tab, and then select **Add new submission**. 
+1. Open Microsoft 365 Defender at <https://security.microsoft.com/>, click **Actions & submissions**, click **Submissions**, go to **Files** tab, and then select **Add new submission**. 
 
     > [!div class="mx-imgBorder"]
     > ![Add new submission](../../media/unified-admin-submission-new.png) 
@@ -77,9 +74,9 @@ If you have a file that you suspect might be malware or is being incorrectly det
 
 8. Click **Submit**. 
  
-    If you want to view the details of your submission, select your submission from the **Submissions name** list to open the **Result details** flyout.
+   If you want to view the details of your submission, select your submission from the **Submissions name** list to open the **Result details** flyout.
 
-## Submit items to Microsoft from the Alerts page
+## Report suspicious items to Microsoft from the Alerts page
 
 You can also submit a file or file hash directly from the list of alerts on the **Alerts** page. 
 
@@ -107,5 +104,4 @@ You can also submit a file or file hash directly from the list of alerts on the 
 
 - [Microsoft Defender for Endpoint in Microsoft 365 Defender](../defender/microsoft-365-security-center-mde.md)
 - [Address false positives/negatives](defender-endpoint-false-positives-negatives.md)
-- [Submit malware and non-malware for analysis](../office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis.md)
 - [View and organize alerts queue in Microsoft Defender for Endpoint](alerts-queue.md)
