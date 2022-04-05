@@ -18,7 +18,7 @@ description: "Admins can set up a connector to import and archive XIP source dat
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Use a Veritas connector in the Microsoft Purview portal to import and archive data from the XIP source platform to user mailboxes in your Microsoft 365 organization. Veritas provides a [XIP](https://globanet.com/xip/) connector that allows using an XIP file to import items to Microsoft 365. An XIP file is similar to a ZIP file, but allows for a digital signature to be used. The digital signature is verified by Veritas Merge 1 before the XIP source file is extracted. The connector converts the content from the XIP source file to an email message format and then imports those items to the user mailboxes in Microsoft 365.
+Use a Veritas connector in the Microsoft Purview compliance portal to import and archive data from the XIP source platform to user mailboxes in your Microsoft 365 organization. Veritas provides a [XIP](https://globanet.com/xip/) connector that allows using an XIP file to import items to Microsoft 365. An XIP file is similar to a ZIP file, but allows for a digital signature to be used. The digital signature is verified by Veritas Merge 1 before the XIP source file is extracted. The connector converts the content from the XIP source file to an email message format and then imports those items to the user mailboxes in Microsoft 365.
 
 After XIP source data is stored in user mailboxes, you can apply Microsoft Purview features such as Litigation Hold, eDiscovery, retention policies and retention labels, and communication compliance. Using an XIP connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
 
@@ -32,7 +32,7 @@ The following overview explains the process of using a connector to archive the 
 
 2. Once every 24 hours, XIP source items are copied to the Veritas Merge1 site. The connector also converts the content to an email message format.
 
-3. The XIP connector that you create in the Microsoft Purview portal, connects to the Veritas Merge1 site every day and transfers the messages to a secure Azure Storage location in the Microsoft cloud.
+3. The XIP connector that you create in the Microsoft Purview compliance portal, connects to the Veritas Merge1 site every day and transfers the messages to a secure Azure Storage location in the Microsoft cloud.
 
 4. The connector imports the converted message items to the mailboxes of specific users using the value of the *Email* property of the automatic user mapping as described in [Step 3](#step-3-map-users-and-complete-the-connector-setup). A subfolder in the Inbox folder named **XIP** is created in the user mailboxes, and the items are imported to that folder. The connector determines which mailbox to import items to by using the value of the *Email* property. Every source item contains this property, which is populated with the email address of every participant.
 
@@ -40,13 +40,13 @@ The following overview explains the process of using a connector to archive the 
 
 - Create a Veritas Merge1 account for Microsoft connectors. To create an account, contact [Veritas Customer Support](https://www.veritas.com/content/support/). You need to sign into this account when you create the connector in Step 1.
 
-- The user who creates the XIP connector in Step 1 (and completes it in Step 3) must be assigned the Data Connector Admin role. This role is required to add connectors on the **Data connectors** page in the Microsoft Purview portal. This role is added by default to multiple role groups. For a list of these role groups, see the "Roles in the security and compliance centers" section in [Permissions in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatively, an admin in your organization can create a custom role group, assign the Data Connector Admin role, and then add the appropriate users as members. For instructions, see the "Create a custom role group" section in [Permissions in the Microsoft Purview portal](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- The user who creates the XIP connector in Step 1 (and completes it in Step 3) must be assigned the Data Connector Admin role. This role is required to add connectors on the **Data connectors** page in the Microsoft Purview compliance portal. This role is added by default to multiple role groups. For a list of these role groups, see the "Roles in the security and compliance centers" section in [Permissions in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatively, an admin in your organization can create a custom role group, assign the Data Connector Admin role, and then add the appropriate users as members. For instructions, see the "Create a custom role group" section in [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
 - This Veritas data connector is in public preview in GCC environments in the Microsoft 365 US Government cloud. Third-party applications and services might involve storing, transmitting, and processing your organization's customer data on third-party systems that are outside of the Microsoft 365 infrastructure and therefore are not covered by the Microsoft Purview and data protection commitments. Microsoft makes no representation that use of this product to connect to third-party applications implies that those third-party applications are FEDRAMP compliant.
 
 ## Step 1: Set up the XIP connector
 
-The first step is to access to the **Data Connectors** page in the Microsoft Purview portal and create a connector for the XIP source data.
+The first step is to access to the **Data Connectors** page in the Microsoft Purview compliance portal and create a connector for the XIP source data.
 
 1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and then click **Data connectors** \> **XIP**.
 
@@ -62,7 +62,7 @@ The first step is to access to the **Data Connectors** page in the Microsoft Pur
 
 The second step is to configure the XIP connector on the Merge1 site. For information about how to configure the XIP connector, see [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20XIP%20User%20Guide%20.pdf).
 
-After you click **Save & Finish**, the **User mapping** page in the connector wizard in the Microsoft Purview portal is displayed.
+After you click **Save & Finish**, the **User mapping** page in the connector wizard in the Microsoft Purview compliance portal is displayed.
 
 ## Step 3: Map users and complete the connector setup
 
@@ -74,7 +74,7 @@ To map users and complete the connector setup, follow these steps:
 
 ## Step 4: Monitor the XIP connector
 
-After you create the XIP connector, you can view the connector status in the Microsoft Purview portal.
+After you create the XIP connector, you can view the connector status in the Microsoft Purview compliance portal.
 
 1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and click **Data connectors** in the left nav.
 

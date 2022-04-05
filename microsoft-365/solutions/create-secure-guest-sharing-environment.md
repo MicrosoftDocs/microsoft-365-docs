@@ -203,13 +203,13 @@ To configure a guest session timeout policy
 
 ## Create a sensitive information type for a highly sensitive project
 
-Sensitive information types are predefined strings that can be used in policy workflows to enforce compliance requirements. The Microsoft Purview portal comes with over one hundred sensitive information types, including driver's license numbers, credit card numbers, bank account numbers, etc.
+Sensitive information types are predefined strings that can be used in policy workflows to enforce compliance requirements. The Microsoft Purview compliance portal comes with over one hundred sensitive information types, including driver's license numbers, credit card numbers, bank account numbers, etc.
 
 You can create custom sensitive information types to help manage content specific to your organization. In this example, we'll create a custom sensitive information type for a highly sensitive project. We can then use this sensitive information type to automatically apply a sensitivity label.
 
 To create a sensitive information type
 
-1. In the [Microsoft Purview portal](https://compliance.microsoft.com), in the left navigation, expand **Classification**, and then click **Sensitive info types**.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), in the left navigation, expand **Classification**, and then click **Sensitive info types**.
 2. Click **Create**.
 3. For **Name** and **Description**, type **Project Saturn**, and then click **Next**.
 4. Click **Add an element**.

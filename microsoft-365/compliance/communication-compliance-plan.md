@@ -55,17 +55,17 @@ Identify the appropriate stakeholders in your organization to collaborate for ta
 
 ### Permissions
 
-Select dedicated stakeholders to monitor and review the alerts and cases on a regular cadence in the [Microsoft Purview portal](https://compliance.microsoft.com/). Make sure you understand how you will assign users and stakeholders to different communication compliance role groups in your organization.
+Select dedicated stakeholders to monitor and review the alerts and cases on a regular cadence in the [Microsoft Purview compliance portal](https://compliance.microsoft.com/). Make sure you understand how you will assign users and stakeholders to different communication compliance role groups in your organization.
 
 > [!IMPORTANT]
 > After configuring your role groups, it may take up to 30 minutes for the role group permissions to apply to assigned users across your organization.
 
-There are six role groups used to configure initial permissions to manage communication compliance features. To make **Communication compliance** available as a menu option in Microsoft Purview portal and to continue with these configuration steps, you must be assigned to one of the following roles or role groups:
+There are six role groups used to configure initial permissions to manage communication compliance features. To make **Communication compliance** available as a menu option in Microsoft Purview compliance portal and to continue with these configuration steps, you must be assigned to one of the following roles or role groups:
 
 - Azure Active Directory [*Global Administrator*](/azure/active-directory/roles/permissions-reference#global-administrator) role
 - Azure Active Directory [*Compliance Administrator*](/azure/active-directory/roles/permissions-reference#compliance-administrator) role
-- Microsoft Purview portal [*Organization Management*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) role group
-- Microsoft Purview portal [*Compliance Administrator*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) role group
+- Microsoft Purview compliance portal [*Organization Management*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) role group
+- Microsoft Purview compliance portal [*Compliance Administrator*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) role group
 - *Communication Compliance* role group
 - *Communication Compliance Admin* role group
 
@@ -73,8 +73,8 @@ Members of the following roles have the same solution permissions included with 
 
 - Azure Active Directory *Global Administrator*
 - Azure Active Directory *Compliance Administrator*
-- Microsoft Purview portal *Organization Management*
-- Microsoft Purview portal *Compliance Administrator*
+- Microsoft Purview compliance portal *Organization Management*
+- Microsoft Purview compliance portal *Compliance Administrator*
 
 > [!IMPORTANT]
 > Make sure you always have at least one user in the *Communication Compliance* or *Communication Compliance Admin* role groups (depending on the option you choose) so that your communication compliance configuration doesn't get in to a 'zero administrator' scenario if specific users leave your organization.

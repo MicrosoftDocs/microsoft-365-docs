@@ -101,7 +101,7 @@ Create custom reports and review details for messages contained in specific poli
 
 To create a new message details report, complete the following steps:
 
-1. Sign into the Microsoft Purview portal with an account that is a member of the *Communication Compliance Investigators* role group.
+1. Sign into the Microsoft Purview compliance portal with an account that is a member of the *Communication Compliance Investigators* role group.
 2. Navigate to the **Policies** tab, select a policy, and then select **Create message details report**.
 3. On the **Create message details report** pane, enter a name for the report in the **Report name** field.
 4. In **Choose a date range**, select a *Start date* and *End date* for the report.

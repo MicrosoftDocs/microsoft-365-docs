@@ -104,7 +104,7 @@ Make sure that the Windows devices that you need to onboard meet these requireme
 
 ## Onboarding Windows 10 or Windows 11 devices
 
-You must enable device monitoring and onboard your endpoints before you can monitor and protect sensitive items on a device. Both of these actions are done in the Microsoft Purview portal.
+You must enable device monitoring and onboard your endpoints before you can monitor and protect sensitive items on a device. Both of these actions are done in the Microsoft Purview compliance portal.
 
 When you want to onboard devices that haven't been onboarded yet, you'll download the appropriate script and deploy it to those devices. Follow the device onboarding procedures below.
 
@@ -112,7 +112,7 @@ If you already have devices onboarded into [Microsoft Defender for Endpoint](/wi
 
 In this deployment scenario, you'll onboard Windows 10 or Windows 11 devices that have not been onboarded yet.
 
-1. Open the [Microsoft Purview portal](https://compliance.microsoft.com). Choose **Settings** > **Enable device monitoring**.
+1. Open the [Microsoft Purview compliance portal](https://compliance.microsoft.com). Choose **Settings** > **Enable device monitoring**.
 
    > [!NOTE]
    > While it usually takes about 60 seconds for device onboarding to be enabled, please allow up to 30 minutes before engaging with Microsoft support.
@@ -142,13 +142,13 @@ Once an device is onboarded, it should be visible in the devices list and also s
 
 ### Viewing Endpoint DLP alerts in DLP Alerts Management dashboard
 
-1. Open the **Data loss prevention** page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview portal</a> and choose Alerts.
+1. Open the **Data loss prevention** page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> and choose Alerts.
 
 2. Refer to the procedures in [How to configure and view alerts for your DLP policies](dlp-configure-view-alerts-policies.md) to view alerts for your Endpoint DLP policies.
 
 ### Viewing Endpoint DLP data in activity explorer
 
-1. Open the [Data classification page](https://compliance.microsoft.com/dataclassification?viewid=overview) for your domain in the Microsoft Purview portal and choose Activity explorer.
+1. Open the [Data classification page](https://compliance.microsoft.com/dataclassification?viewid=overview) for your domain in the Microsoft Purview compliance portal and choose Activity explorer.
 
 2. Refer to the procedures in [Get started with Activity explorer](data-classification-activity-explorer.md) to access and filter all the data for your Endpoint devices.
 

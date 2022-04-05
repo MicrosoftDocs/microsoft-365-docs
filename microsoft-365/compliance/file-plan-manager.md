@@ -25,7 +25,11 @@ ms.custom: seo-marvel-may2020
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
+<<<<<<< HEAD
 Although you can create and manage retention labels from **Data lifecycle management** in the Microsoft Purview portal, file plan from **Records management** has additional management capabilities:
+=======
+Although you can create and manage retention labels from **Information governance** in the Microsoft Purview compliance portal, file plan from **Records management** has additional management capabilities:
+>>>>>>> cc4e987d404a2907f68680eb3a695587bdf756a9
 
 - You can bulk-create retention labels by importing the relevant information from a spreadsheet.
 
@@ -47,7 +51,7 @@ To access file plan, you must have one of the following admin roles:
 
 - View-only Retention Manager
 
-In the Microsoft Purview portal, go to **Solutions** > **Records management** > **File plan**:
+In the Microsoft Purview compliance portal, go to **Solutions** > **Records management** > **File plan**:
 
 ![File plan page](../media/compliance-file-plan.png). 
 
@@ -55,7 +59,11 @@ If **Records management** doesn't display in the navigation pane, first scroll d
 
 ## Navigating your file plan
 
+<<<<<<< HEAD
 If you've already created retention labels from **Data lifecycle management** in the Microsoft Purview portal, these labels automatically display in your file plan. 
+=======
+If you've already created retention labels from **Information governance** in the Microsoft Purview compliance portal, these labels automatically display in your file plan. 
+>>>>>>> cc4e987d404a2907f68680eb3a695587bdf756a9
 
 Similarly, if you now create retention labels in file plan, they are also available from **Data lifecycle management** if the labels aren't configured to mark content as a record.
 
@@ -193,7 +201,7 @@ Use the following information to help you fill out the downloaded template to im
 |Property|Type|Required|Valid values|
 |:-----|:-----|:-----|:-----|
 |LabelName|String|Yes|This property specifies the name of the retention label and must be unique in your tenant. Supported characters for import: a-z, A-Z, 0-9, hyphen (-) and the space character.|
-|Comment|String|No|Use this property to add a description about the retention label for admins. This description appears only to admins who manage the retention label in the Microsoft Purview portal.|
+|Comment|String|No|Use this property to add a description about the retention label for admins. This description appears only to admins who manage the retention label in the Microsoft Purview compliance portal.|
 |Notes|String|No|Use this property to add a description about the retention label for users. This description appears when users hover over the label in apps like Outlook, SharePoint, and OneDrive. If you leave this property blank, a default description is displayed, which explains the label's retention settings. |
 |IsRecordLabel|String|No, unless **Regulatory** is **TRUE**|This property specifies whether the label marks the content as a record. Valid values are: </br>**TRUE**: The label marks the item as a record and as a result, the item can't be deleted. </br>**FALSE**: The label doesn't mark the content as a record. This is the default value. </br> </br> Group dependencies: When this property is specified, RetentionAction, RetentionDuration, and RetentionType must also be specified.|
 |RetentionAction|String|No, unless **RetentionDuration**, **RetentionType**, or **ReviewerEmail** are specified|This property specifies what action to take after the value specified by the RetentionDuration property (if specified) expires. Valid values are: </br>**Delete**: Items older than the value specified by the RetentionDuration property are deleted.</br>**Keep**: Retain items for the duration specified by the RetentionDuration property and then do nothing when the duration period expires. </br>**KeepAndDelete**: Retain items for the duration specified by the RetentionDuration property and then delete them when the duration period expires. </br> </br> Group dependencies: When this property is specified, RetentionDuration and RetentionType must also be specified. |

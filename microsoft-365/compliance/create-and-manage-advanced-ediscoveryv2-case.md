@@ -32,11 +32,11 @@ This article also provides a high-level overview of using cases to manage the Ad
 
 ## Create a case
 
-Complete the following steps to create a case and add members. The user who creates the case is automatically added as a member. Members of the case can access the case in the Microsoft Purview portal and perform Advanced eDiscovery tasks.
+Complete the following steps to create a case and add members. The user who creates the case is automatically added as a member. Members of the case can access the case in the Microsoft Purview compliance portal and perform Advanced eDiscovery tasks.
 
-1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview portal</a> and sign in using the credentials for user account that has been assigned eDiscovery permissions. Members of the Organization Management role group can also create Advanced eDiscovery cases.
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> and sign in using the credentials for user account that has been assigned eDiscovery permissions. Members of the Organization Management role group can also create Advanced eDiscovery cases.
 
-2. In the left navigation pane of the Microsoft Purview portal, click **Show all**, and then select **eDiscovery** > **Advanced**, and then select the  <a href="https://go.microsoft.com/fwlink/p/?linkid=2173764" target="_blank">**Cases** tab</a>.
+2. In the left navigation pane of the Microsoft Purview compliance portal, click **Show all**, and then select **eDiscovery** > **Advanced**, and then select the  <a href="https://go.microsoft.com/fwlink/p/?linkid=2173764" target="_blank">**Cases** tab</a>.
 
 3. Select **Create a case**.
 

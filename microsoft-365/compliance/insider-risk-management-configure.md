@@ -25,7 +25,7 @@ ms.custom: admindeeplinkCOMPLIANCE
 Use insider risk management policies to identify risky activities and management tools to act on risk alerts in your organization. Complete the following steps to set up prerequisites and configure an insider risk management policy.
 
 > [!IMPORTANT]
-> The insider risk management solution provides a tenant level option to help customers facilitate internal governance at the user level. Tenant level administrators can set up permissions to provide access to this solution for members of your organization and set up data connectors in the Microsoft Purview portal to import relevant data to support user level identification of potentially risky activity. Customers acknowledge insights related to the individual user's behavior, character, or performance materially related to employment can be calculated by the administrator and made available to others in the organization. In addition, customers acknowledge that they must conduct their own full investigation related to the individual user's behavior, character, or performance materially related to employment, and not just rely on insights from the insider risk management service. Customers are solely responsible for using the insider risk management service, and any associated feature or service in compliance with all applicable laws, including laws relating to individual user identification and any remediation actions.
+> The insider risk management solution provides a tenant level option to help customers facilitate internal governance at the user level. Tenant level administrators can set up permissions to provide access to this solution for members of your organization and set up data connectors in the Microsoft Purview compliance portal to import relevant data to support user level identification of potentially risky activity. Customers acknowledge insights related to the individual user's behavior, character, or performance materially related to employment can be calculated by the administrator and made available to others in the organization. In addition, customers acknowledge that they must conduct their own full investigation related to the individual user's behavior, character, or performance materially related to employment, and not just rely on insights from the insider risk management service. Customers are solely responsible for using the insider risk management service, and any associated feature or service in compliance with all applicable laws, including laws relating to individual user identification and any remediation actions.
 
 For more information about how insider risk policies can help you manage risk in your organization, see [Learn about insider risk management](insider-risk-management.md).
 
@@ -74,12 +74,12 @@ Select a recommendation from the list to get started with configuring insider ri
 > [!IMPORTANT]
 > After configuring your role groups, it may take up to 30 minutes for the role group permissions to apply to assigned users across your organization.
 
-There are six role groups used to configure insider risk management features. To make **Insider risk management** available as a menu option in Microsoft Purview portal and to continue with these configuration steps, you must be assigned to one of the following roles or role groups:
+There are six role groups used to configure insider risk management features. To make **Insider risk management** available as a menu option in Microsoft Purview compliance portal and to continue with these configuration steps, you must be assigned to one of the following roles or role groups:
 
 - Azure Active Directory [*Global Administrator*](/azure/active-directory/roles/permissions-reference#global-administrator) role
 - Azure Active Directory [*Compliance Administrator*](/azure/active-directory/roles/permissions-reference#compliance-administrator) role
-- Microsoft Purview portal [*Organization Management*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) role group
-- Microsoft Purview portal [*Compliance Administrator*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) role group
+- Microsoft Purview compliance portal [*Organization Management*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) role group
+- Microsoft Purview compliance portal [*Compliance Administrator*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) role group
 - *Insider Risk Management* role group
 - *Insider Risk Management Admin* role group
 
@@ -104,8 +104,8 @@ Members of the following roles can assign users to insider risk management role 
 
 - Azure Active Directory *Global Administrator*
 - Azure Active Directory *Compliance Administrator*
-- Microsoft Purview portal *Organization Management*
-- Microsoft Purview portal *Compliance Administrator*
+- Microsoft Purview compliance portal *Organization Management*
+- Microsoft Purview compliance portal *Compliance Administrator*
 
 > [!NOTE]
 > These role groups are currently not supported on Privileged Identity Management (PIM). To learn more about PIM, see [Assign Azure AD roles in Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-how-to-add-role-to-user).
@@ -114,7 +114,7 @@ Members of the following roles can assign users to insider risk management role 
 
 Complete the following steps to add users to an insider risk management role group:
 
-1. Sign into [Microsoft Purview portal](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization.
+1. Sign into [Microsoft Purview compliance portal](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization.
 
 2. In the Security &amp; Compliance Center, go to **Permissions**. Select the link to view and manage roles in Office 365.
 
@@ -144,7 +144,7 @@ To enable insider risk Analytics, you must be a member of the *Insider Risk Mana
 
 Complete the following steps to enable insider risk analytics:
 
-1. In the [Microsoft Purview portal](https://compliance.microsoft.com), go to **Insider risk management**.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management**.
 2. Select **Run scan** on the **Scan for insider risks in your organization** card on the insider risk management **Overview** tab. This action turns on analytics scanning for your organization. You can also turn on scanning in your organization by navigating to **Insider risk settings** > **Analytics** and enabling **Scan your tenant's user activity to identify potential insider risks**.
 3. On the **Analytics details** pane, select **Run scan to start the scan for your organization**. Analytics scan results may take up to 48 hours before insights are available as reports for review.
 
@@ -232,7 +232,7 @@ See the [Configure advanced features in Defender for Endpoint](/windows/security
 
 Before configuring a policy, define the following insider risk settings:
 
-1. In the [Microsoft Purview portal](https://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings** from the top-right corner of any page.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings** from the top-right corner of any page.
 2. On the **Privacy** page, select a privacy setting for displaying usernames for policy alerts.
 3. On the **Indicators** page, select the alert indicators you want to apply to all insider risk policies.
 
@@ -257,7 +257,7 @@ Before configuring a policy, define the following insider risk settings:
 
 Insider risk management policies include assigned users and define which types of risk indicators are configured for alerts. Before activities can trigger alerts, a policy must be configured. Use the policy wizard to create new insider risk management policies.
 
-1. In the [Microsoft Purview portal](https://compliance.microsoft.com), go to **Insider risk management** and select the **Policies** tab.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select the **Policies** tab.
 2. Select **Create policy** to open the policy wizard.
 3. On the **Policy template** page, choose a policy category and then select the template for the new policy. These templates are made up of conditions and indicators that define the risk activities you want to detect and investigate. Review the template prerequisites, triggering events, and detected activities to confirm this policy template fits your needs.
 

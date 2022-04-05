@@ -38,7 +38,7 @@ When you create a hold, you have the following options to scope the content that
 
 To create an eDiscovery hold that's associated with a Core eDiscovery case:
   
-1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview portal</a> and sign in using the credentials for user account that has been assigned the appropriate eDiscovery permissions.
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> and sign in using the credentials for user account that has been assigned the appropriate eDiscovery permissions.
 
 2. In the left navigation pane, click **Show all**, and then click **eDiscovery > Core**.
 

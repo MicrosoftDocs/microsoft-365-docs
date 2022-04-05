@@ -38,7 +38,7 @@ Ready to start governing your organization's data by retaining the content that 
     
     If needed, [create and apply retention labels for your exceptions](create-retention-labels-information-governance.md).
 
-3. **Enable mailbox archiving** to provide users with additional mailbox storage space: [Enable archive mailboxes in the Microsoft Purview portal](enable-archive-mailboxes.md)
+3. **Enable mailbox archiving** to provide users with additional mailbox storage space: [Enable archive mailboxes in the Microsoft Purview compliance portal](enable-archive-mailboxes.md)
     
     If required to support archive mailboxes:
     
@@ -64,11 +64,11 @@ For permissions to manage mailboxes for archiving, inactive mailboxes, and impor
 
 ### Permissions for retention policies and retention labels
 
-Members of your compliance team who will create and manage retention policies and retention labels need permissions to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview portal</a>. By default, the tenant admin (global administrator) has access to this location and can give compliance officers and other people access without giving them all the permissions of a tenant admin. To grant permissions for this limited administration, we recommend that you add users to the **Compliance Administrator** admin role group.
+Members of your compliance team who will create and manage retention policies and retention labels need permissions to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>. By default, the tenant admin (global administrator) has access to this location and can give compliance officers and other people access without giving them all the permissions of a tenant admin. To grant permissions for this limited administration, we recommend that you add users to the **Compliance Administrator** admin role group.
 
 Alternatively to using this default role, you can create a new role group and add the **Retention Management** role to this group. For a read-only role, use **View-Only Retention Management**. 
 
-For instructions to add users to the default roles or create your own role groups, see [Permissions in the Microsoft Purview portal](microsoft-365-compliance-center-permissions.md).
+For instructions to add users to the default roles or create your own role groups, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
 
 These permissions are required only to create, configure, and apply retention policies and retention labels. The person configuring these policies and labels doesn't require access to the content.
 
@@ -79,7 +79,7 @@ Use the following table to help you map your business requirements to the most c
 |I want to ...|Documentation|
 |----------------|---------------|
 |Efficiently retain or delete data for Microsoft 365 services: <br />-  Exchange  <br />- SharePoint  <br />- OneDrive  <br />- Microsoft 365 Groups <br />- Teams <br />- Yammer <br />- Skype for Business |[Create and configure retention policies](create-retention-policies.md)|
-|Provide users with additional mailbox storage |[Enable archive mailboxes in the Microsoft Purview portal](enable-archive-mailboxes.md)|
+|Provide users with additional mailbox storage |[Enable archive mailboxes in the Microsoft Purview compliance portal](enable-archive-mailboxes.md)|
 |Retain mailbox data after employees leave the organization |[Create and manage inactive mailboxes](create-and-manage-inactive-mailboxes.md)|
 |Upload mailbox data from PST files |[Use network upload to import PST files](use-network-upload-to-import-pst-files.md)|
 

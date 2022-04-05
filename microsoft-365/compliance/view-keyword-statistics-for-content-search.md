@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 search.appverid: 
 - MOE150
 - MET150
-description: "Learn how to use the search statistics feature to display statistics for Content searches and searches associated with a Core eDiscovery case in the Microsoft Purview portal."
+description: "Learn how to use the search statistics feature to display statistics for Content searches and searches associated with a Core eDiscovery case in the Microsoft Purview compliance portal."
 ms.custom: seo-marvel-apr2020
 ---
 
@@ -32,7 +32,7 @@ You can also download search statistics to a CSV file. This lets you use the fil
 
 To display statistics for a Content search or a search associated with a Core eDiscovery case.:
   
-1. In the Microsoft Purview portal, click **Show all**, and then do one of the following:
+1. In the Microsoft Purview compliance portal, click **Show all**, and then do one of the following:
 
    - Click **Content search** and then select a search to display the flyout page.
 
@@ -94,7 +94,7 @@ As previous explained, the **Condition report** section shows the search query a
 
 To create a keyword list and view keyword statistics for a search:
   
-1. In the Microsoft Purview portal, create a new Content search or a search associated with a Core eDiscovery case.
+1. In the Microsoft Purview compliance portal, create a new Content search or a search associated with a Core eDiscovery case.
 
 2. On the **Conditions** page of the search wizard. select the **Show keyword list** checkbox.
 

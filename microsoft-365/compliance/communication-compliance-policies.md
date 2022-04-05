@@ -30,7 +30,7 @@ search.appverid:
 > [!IMPORTANT]
 > Using PowerShell to create and manage communication compliance policies is not supported. To create and manage these policies, you must use the policy management controls in the [communication compliance solution](https://compliance.microsoft.com/supervisoryreview).
 
-You create communication compliance policies for Microsoft 365 organizations in the Microsoft Purview portal. Communication compliance policies define which communications and users are subject to review in your organization, define which custom conditions the communications must meet, and specify who should do reviews. Users assigned the *Communication Compliance Admin* role can set up policies, and anyone who has this role assigned can access the **Communication compliance** page and global settings in the Microsoft Purview portal. If needed, you can export the history of modifications to a policy to a .csv (comma-separated values) file that also includes the status of alerts pending review, escalated items, and resolved items. Policies can't be renamed and can be deleted when no longer needed.
+You create communication compliance policies for Microsoft 365 organizations in the Microsoft Purview compliance portal. Communication compliance policies define which communications and users are subject to review in your organization, define which custom conditions the communications must meet, and specify who should do reviews. Users assigned the *Communication Compliance Admin* role can set up policies, and anyone who has this role assigned can access the **Communication compliance** page and global settings in the Microsoft Purview compliance portal. If needed, you can export the history of modifications to a policy to a .csv (comma-separated values) file that also includes the status of alerts pending review, escalated items, and resolved items. Policies can't be renamed and can be deleted when no longer needed.
 
 ## Policy templates
 
@@ -264,15 +264,15 @@ For communication compliance policies, the following alert policy values are con
 > [!NOTE]
 > The alert policy threshold trigger settings for activities supports a minimum value of 3 or higher for communication compliance policies.
 
-You can change the default settings for triggers on number of activities, period for the activities, and for specific users in alert policies on the **Alert policies** page in the Microsoft Purview portal.
+You can change the default settings for triggers on number of activities, period for the activities, and for specific users in alert policies on the **Alert policies** page in the Microsoft Purview compliance portal.
 
 ### Change the severity level for an alert policy
 
 If you'd like to change the severity level assigned in an alert policy for a specific communication compliance policy, complete the following steps:
 
-1. Sign into [Microsoft Purview portal](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization.
+1. Sign into [Microsoft Purview compliance portal](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization.
 
-2. In the Microsoft Purview portal, go to **Policies**.
+2. In the Microsoft Purview compliance portal, go to **Policies**.
 
 3. Select **Office 365 alert** on the **Policies** page to open the **Alerts policies** page.
 

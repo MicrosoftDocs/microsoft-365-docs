@@ -44,7 +44,7 @@ There might be associated challenges when onboarding VDIs. The following are typ
 - Instant early onboarding of short-lived sessions, which must be onboarded to Microsoft 365 prior to the actual provisioning.
 - The device name is typically reused for new sessions.
 
-VDI devices can appear in the Microsoft Purview portal as either:
+VDI devices can appear in the Microsoft Purview compliance portal as either:
 
 - Single entry for each device.
 Note that in this case, the *same* device name must be configured when the session is created, for example using an unattended answer file.
@@ -55,7 +55,7 @@ The following steps will guide you through onboarding VDI devices and will highl
 > [!WARNING]
 > For environments where there are low resource configurations, the VDI boot procedure might slow the device onboarding process.
 
-1. Get the VDI configuration package .zip file (*DeviceCompliancePackage.zip*) from [Microsoft Purview portal](https://compliance.microsoft.com).
+1. Get the VDI configuration package .zip file (*DeviceCompliancePackage.zip*) from [Microsoft Purview compliance portal](https://compliance.microsoft.com).
 
 2. In the navigation pane, select **Settings** > **Device onboarding** > **Onboarding**.
 

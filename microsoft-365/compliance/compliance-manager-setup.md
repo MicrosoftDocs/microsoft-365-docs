@@ -36,7 +36,7 @@ The Microsoft 365 global administrator for your organization will likely be the 
 
 ## Sign in
 
-1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview portal</a> and **sign in** with your Microsoft 365 global administrator account.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> and **sign in** with your Microsoft 365 global administrator account.
 2. Select **Compliance Manager** on the left navigation pane. You'll arrive at your [Compliance Manager dashboard](#understand-the-compliance-manager-dashboard).
 
 The direct link to access Compliance Manager is [https://compliance.microsoft.com/compliancemanager](https://compliance.microsoft.com/compliancemanager).
@@ -47,14 +47,14 @@ Compliance Manager uses a role-based access control (RBAC) permission model. Onl
 
 ### Where to set permissions
 
-The person holding the global admin role for your organization can set user permissions for Compliance Manager. Permissions can be set in the Microsoft Purview portal as well as in Azure Active Directory (Azure AD).
+The person holding the global admin role for your organization can set user permissions for Compliance Manager. Permissions can be set in the Microsoft Purview compliance portal as well as in Azure Active Directory (Azure AD).
 
 > [!NOTE]
 > Customers in US Government Community (GCC) High and Department of Defense (DoD) environments can only set user permissions and roles for Compliance Manager in Azure AD. See below for Azure AD instructions and role type definitions.
 
-To set permissions and assign roles in the Microsoft Purview portal, follow the steps below:
+To set permissions and assign roles in the Microsoft Purview compliance portal, follow the steps below:
 
-1. Go to the Microsoft Purview portal, and select <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**Permissions**</a>.
+1. Go to the Microsoft Purview compliance portal, and select <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**Permissions**</a>.
 
 2. Under the **Compliance center** dropdown, select **Roles**.
 
@@ -74,7 +74,7 @@ To set permissions and assign roles in the Microsoft Purview portal, follow the 
 
 To assign roles and set permissions in Azure AD, see [Assign administrator and non-administrator roles to users with Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).
 
-Users with Azure AD identities who don't have Office 365 or Microsoft 365 subscriptions won't be able to access Compliance Manager in the Microsoft Purview portal. To seek assistance in accessing Compliance Manager, contact [cmresearch@microsoft.com](mailto:cmresearch@microsoft.com).
+Users with Azure AD identities who don't have Office 365 or Microsoft 365 subscriptions won't be able to access Compliance Manager in the Microsoft Purview compliance portal. To seek assistance in accessing Compliance Manager, contact [cmresearch@microsoft.com](mailto:cmresearch@microsoft.com).
 
 ### Role types
 
@@ -111,7 +111,7 @@ Learn more about getting started with assessments by visiting the [Assessments p
 
 ## Settings for automated testing and user history
 
-The Compliance Manager settings in the Microsoft Purview portal allow you to enable and disable automatic testing of improvement actions. The settings also allow you to manage the data of users associated to improvement actions, including the ability to reassign improvement actions to a different user.  Only people with a global administrator or Compliance Manager Administrator role can access the Compliance Manager settings.
+The Compliance Manager settings in the Microsoft Purview compliance portal allow you to enable and disable automatic testing of improvement actions. The settings also allow you to manage the data of users associated to improvement actions, including the ability to reassign improvement actions to a different user.  Only people with a global administrator or Compliance Manager Administrator role can access the Compliance Manager settings.
 
 > [!NOTE]
 > The automated testing feature is not available to customers in GCC High and DoD environments because Secure Score isn't available in these environments. GCC High and DoD customers will need to manually implement and test their improvement actions.
@@ -128,7 +128,7 @@ Automatic testing is turned on by default for organizations new to Compliance Ma
 
 The global administrator for your organization can change the settings for automated testing at any time. You can turn off automated testing for common improvement actions, or turn it on for individual actions. Follow the instructions below to change your automated testing settings.
 
-1. Select <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Settings**</a> in the Microsoft Purview portal.
+1. Select <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Settings**</a> in the Microsoft Purview compliance portal.
 
 2. On the settings page, select **Compliance Manager**.
 
@@ -154,7 +154,7 @@ The user history settings also allow you to reassign all improvement actions fro
 
 **To find the user history settings:**
 
-1. Select <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Settings**</a> in the Microsoft Purview portal.
+1. Select <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Settings**</a> in the Microsoft Purview compliance portal.
 
 2. On the settings page, select **Compliance Manager**.
 
@@ -172,7 +172,7 @@ The report reflects the improvement action’s status as of its creation date. I
 
 **Follow the steps below to export a report by user:**
 
-1. Select <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Settings**</a> in the Microsoft Purview portal.
+1. Select <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Settings**</a> in the Microsoft Purview compliance portal.
 
 2. On the settings page, select **Compliance Manager**.
 
@@ -190,7 +190,7 @@ You can reassign improvement actions from one user to another. When you reassign
 
 **Follow the steps below to reassign improvement actions to another user:**
 
-1. Select <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Settings**</a> in the Microsoft Purview portal.
+1. Select <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Settings**</a> in the Microsoft Purview compliance portal.
 
 2. On the settings page, select **Compliance Manager**.
 
@@ -217,7 +217,7 @@ Deleting a user’s history will remove them as an owner of improvement actions,
 
 To delete a user’s history, follow the steps below:
 
-1. Select <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Settings**</a> in the Microsoft Purview portal.
+1. Select <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Settings**</a> in the Microsoft Purview compliance portal.
 
 2. On the settings page, select **Compliance Manager**.
 

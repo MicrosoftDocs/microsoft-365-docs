@@ -80,7 +80,7 @@ Before you configure your adaptive scope, use the previous section to identify w
 
 Specifically for SharePoint sites, there might be additional SharePoint configuration needed if you plan to use [custom site properties](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/using-custom-sharepoint-site-properties-to-apply-microsoft-365/ba-p/3133970).
 
-1. In the [Microsoft Purview portal](https://compliance.microsoft.com/), navigate to one of the following locations:
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), navigate to one of the following locations:
     
     - If you are using the records management solution:
         - **Solutions** > **Records management** > **Adaptive scopes** tab > + **Create scope**
@@ -409,7 +409,7 @@ Some settings can't be changed after a policy for retention is created and saved
 
 If you edit a retention policy and items are already subject to the original settings in your retention policy, your updated settings will be automatically applied to these items in addition to items that are newly identified.
 
-Usually this update is fairly quick but can take several days. When the policy replication across your Microsoft 365 locations is complete, you'll see the status of the retention policy in the Microsoft Purview portal change from **On (Pending)** to **On (Success)**.
+Usually this update is fairly quick but can take several days. When the policy replication across your Microsoft 365 locations is complete, you'll see the status of the retention policy in the Microsoft Purview compliance portal change from **On (Pending)** to **On (Success)**.
 
 ## Locking the policy to prevent changes
 

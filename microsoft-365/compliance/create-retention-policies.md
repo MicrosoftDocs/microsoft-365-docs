@@ -73,7 +73,7 @@ When you have more than one retention policy, and when you also use retention la
 > [!NOTE]
 > Retention policies now support [shared channels](/MicrosoftTeams/shared-channels), currently in preview. When you configure retention settings for the **Teams channel message** location, if a team has any shared channels, they inherit retention settings from their parent team.
 
-1. From the [Microsoft Purview portal](https://compliance.microsoft.com/), select **Information Governance** > **Retention Policies**.
+1. From the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), select **Information Governance** > **Retention Policies**.
 
 2. Select **New retention policy** to start the **Create retention policy** configuration, and name your new retention policy.
 
@@ -129,7 +129,7 @@ It's possible that a retention policy that's applied to Microsoft 365 groups, Sh
 >
 > To use this feature, your Yammer network must be [Native Mode](/yammer/configure-your-yammer-network/overview-native-mode), not Hybrid Mode.
 
-1. From the [Microsoft Purview portal](https://compliance.microsoft.com/), select **Information Governance** > **Retention Policies**.
+1. From the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), select **Information Governance** > **Retention Policies**.
 
 2. Select **New retention policy** to create a new retention policy.
 
@@ -177,7 +177,7 @@ Use the following instructions for retention policies that apply to any of these
 - Microsoft 365 groups
 - Skype for Business
 
-1. From the [Microsoft Purview portal](https://compliance.microsoft.com/), select **Information Governance** > **Retention Policies**.
+1. From the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), select **Information Governance** > **Retention Policies**.
 
 2. Select **New retention policy** to start the **Create retention policy** configuration, and name your new retention policy.
 
@@ -207,7 +207,7 @@ When you create and submit a retention policy, it can take up to seven days for 
   
 ![Diagram of when retention policy take effect.](../media/retention-policy-timings.png)
 
-First, the retention policy needs to be distributed to the locations that you selected, and then applied to content. You can always check the distribution status of the retention policy by selecting it from the **Retention policies** page in the Microsoft Purview portal. From the flyout pane, if you see **(Error)** included in the status, and in the details for the locations see a message that it's taking longer than expected to deploy the policy or to try redeploying the policy, try running the [Set-AppRetentionCompliancePolicy](/powershell/module/exchange/set-appretentioncompliancepolicy) or [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell command to retry the policy distribution:
+First, the retention policy needs to be distributed to the locations that you selected, and then applied to content. You can always check the distribution status of the retention policy by selecting it from the **Retention policies** page in the Microsoft Purview compliance portal. From the flyout pane, if you see **(Error)** included in the status, and in the details for the locations see a message that it's taking longer than expected to deploy the policy or to try redeploying the policy, try running the [Set-AppRetentionCompliancePolicy](/powershell/module/exchange/set-appretentioncompliancepolicy) or [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell command to retry the policy distribution:
 
 1. [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
 

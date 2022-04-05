@@ -42,7 +42,7 @@ Finally, as an admin, when you configure a sensitivity label to apply encryption
 - **Assign permissions now**, so that you determine exactly which users get which permissions to content with that label.
 - **Let users assign permissions** when they apply the label to content. This way, you can allow people in your organization some flexibility that they might need to collaborate and get their work done.
 
-The encryption settings are available when you [create a sensitivity label](create-sensitivity-labels.md) in the Microsoft Purview portal.
+The encryption settings are available when you [create a sensitivity label](create-sensitivity-labels.md) in the Microsoft Purview compliance portal.
 
 ## Understand how the encryption works
 

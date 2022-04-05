@@ -55,7 +55,7 @@ See [Sensitive information type entity definitions](sensitive-information-type-e
 
 ### Use the exact data match schema and sensitive information type pattern wizard
 
-1. In the Microsoft Purview portal for your tenant go to **Data classification** > **Exact data matches**.
+1. In the Microsoft Purview compliance portal for your tenant go to **Data classification** > **Exact data matches**.
 
 2. Choose **EDM sensitive info types** and **Create EDM sensitive info type** to open the sensitive info type configuration wizard.
 

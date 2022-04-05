@@ -136,7 +136,7 @@ Asset ID is simply another document property that's available in SharePoint and 
   
 ### Step 5: Create an event
 
-When a particular instance of that event type occurs, such as a product reaches its end of life, go to the **Records management** > **Events** page in the Microsoft Purview portal, and select **+ Create** to create an event. You trigger the event by creating it, here.
+When a particular instance of that event type occurs, such as a product reaches its end of life, go to the **Records management** > **Events** page in the Microsoft Purview compliance portal, and select **+ Create** to create an event. You trigger the event by creating it, here.
 
 ![Create an event to trigger start of retention for event-based retention labels.](../media/create-event-records-management.png)
 
@@ -217,7 +217,7 @@ https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentio
 
 Check the response code. If it's 302, get the redirected URL from the Location property of the response header and use that URL instead of `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent` in the instructions that follow.
 
-The events that get automatically created can be confirmed by viewing them in the Microsoft Purview portal > **Records management** >  **Events**.
+The events that get automatically created can be confirmed by viewing them in the Microsoft Purview compliance portal > **Records management** >  **Events**.
 
 ### Use Microsoft Power Automate to create the event
 

@@ -26,13 +26,13 @@ search.appverid:
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-After you've configured your communication compliance policies, you'll start to receive alerts in the Microsoft Purview portal for message issues that match your policy conditions. Follow the workflow instructions here to investigate and remediate alert issues.
+After you've configured your communication compliance policies, you'll start to receive alerts in the Microsoft Purview compliance portal for message issues that match your policy conditions. Follow the workflow instructions here to investigate and remediate alert issues.
 
 ## Investigate alerts
 
-The first step to investigate issues detected by your policies is to review communication compliance alerts in the Microsoft Purview portal. There are several areas in the communication compliance solution area to help you to quickly investigate alerts, depending on how you prefer to view alert grouping:
+The first step to investigate issues detected by your policies is to review communication compliance alerts in the Microsoft Purview compliance portal. There are several areas in the communication compliance solution area to help you to quickly investigate alerts, depending on how you prefer to view alert grouping:
 
-- **Communication compliance policy page**: When you sign into the [Microsoft Purview portal](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization, select **Communication compliance** to display the communication compliance **Policy** page. This page displays communication compliance policies configured for your Microsoft 365 organization and links to recommended policy templates. Each policy listed includes the count of alerts that need review, the number of escalated and resolved items, status of the policy, and the date and time of the last policy scan. Selecting a policy displays all the pending alerts for matches to the policy, select a specific alert to launch the policy details page and to start remediation actions.
+- **Communication compliance policy page**: When you sign into the [Microsoft Purview compliance portal](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization, select **Communication compliance** to display the communication compliance **Policy** page. This page displays communication compliance policies configured for your Microsoft 365 organization and links to recommended policy templates. Each policy listed includes the count of alerts that need review, the number of escalated and resolved items, status of the policy, and the date and time of the last policy scan. Selecting a policy displays all the pending alerts for matches to the policy, select a specific alert to launch the policy details page and to start remediation actions.
 - **Alerts**: Navigate to **Communication compliance** > **Alerts** to display the last 30 days of alerts grouped by policy matches. This view allows you to quickly see which communication compliance policies are generating the most alerts ordered by severity. To start remediation actions, select the policy associated with the alert to launch the **Policy details** page. From the **Policy details** page, you can review a summary of the activities on the **Overview** page, review and act on alert messages on the **Pending** page, or review the history of closed alerts on the **Resolved** page.
 - **Reports**: Navigate to **Communication compliance** > **Reports** to display communication compliance report widgets. Each widget provides an overview of communication compliance activities and statuses, including access to deeper insights about policy matches and remediation actions.
 
@@ -67,9 +67,9 @@ The following table outlines filter details:
 
 #### To configure a filter
 
-1. Sign into the [Microsoft Purview portal](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization.
+1. Sign into the [Microsoft Purview compliance portal](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization.
 
-2. In the Microsoft Purview portal, go to **Communication compliance**.
+2. In the Microsoft Purview compliance portal, go to **Communication compliance**.
 
 3. Select the **Policies** tab and then select a policy for investigation, double-click to open the **Policy** page.
 
@@ -91,9 +91,9 @@ Communication compliance policies automatically scan and pre-group near and exac
 
 #### To remediate duplicates
 
-1. Sign into the [Microsoft Purview portal](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization.
+1. Sign into the [Microsoft Purview compliance portal](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization.
 
-2. In the Microsoft Purview portal, go to **Communication compliance**.
+2. In the Microsoft Purview compliance portal, go to **Communication compliance**.
 
 3. Select the **Policies** tab and then select a policy for investigation, double-click to open the **Policy** page.
 
@@ -174,7 +174,7 @@ To create a Power Automate flow from a recommended default template, you'll use 
 
 Complete the following steps to create a Power Automate flow from a default template:
 
-1. In the [Microsoft Purview portal](https://compliance.microsoft.com), go to **Communication compliance** > **Policies** and select the policy with the alert you want review.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Communication compliance** > **Policies** and select the policy with the alert you want review.
 2. From the policy, select the **Pending** tab and select a pending alert.
 3. Select **Power Automate** from the alert action menu.
 4. On the **Power Automate** page, select a default template from the **Communication compliance templates you may like** section on the page.
@@ -191,7 +191,7 @@ By default, Power Automate flows created by a user are only available to that us
 To share a Power Automate flow, you must be a member of at least one communication compliance role group.
 Complete the following steps to share a Power Automate flow:
 
-1. In the [Microsoft Purview portal](https://compliance.microsoft.com), go to **Communication compliance** > **Policies** and select the policy with the alert you want review.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Communication compliance** > **Policies** and select the policy with the alert you want review.
 2. From the policy, select the **Pending** tab and select a pending alert.
 3. Select **Power Automate** from the alert action menu.
 4. On the **Power Automate flows** page, select the **My flows** or **Team flows** tab.
@@ -205,7 +205,7 @@ If you need to edit a flow, you'll use the **Power Automate** control when worki
 
 Complete the following steps to edit a Power Automate flow:
 
-1. In the [Microsoft Purview portal](https://compliance.microsoft.com), go to **Communication compliance** > **Policies** and select the policy with the alert you want review.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Communication compliance** > **Policies** and select the policy with the alert you want review.
 2. From the policy, select the **Pending** tab and select a pending alert.
 3. Select **Power Automate** from the alert action menu.
 4. On the **Power Automate flows** page, select flow to edit. Select **Edit** from the flow control menu.
@@ -218,7 +218,7 @@ If you need to delete a flow, you'll use the **Power Automate** control when wor
 
 Complete the following steps to delete a Power Automate flow:
 
-1. In the [Microsoft Purview portal](https://compliance.microsoft.com), go to **Communication compliance** > **Policies** and select the policy with the alert you want review.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Communication compliance** > **Policies** and select the policy with the alert you want review.
 2. From the policy, select the **Pending** tab and select a pending alert.
 3. Select **Power Automate** from the alert action menu.
 4. On the **Power Automate flows** page, select flow to delete. Select **Delete** from the flow control menu.
@@ -264,8 +264,8 @@ When messages are resolved, they're removed from the **Pending** tab view and di
 
 To unresolve messages, complete the following steps:
 
-1. Sign into the [Microsoft Purview portal](https://compliance.microsoft.com) using credentials for a user assigned to the *Communication Compliance Analyst* or *Communication Compliance Investigator* role groups in your Microsoft 365 organization.
-2. In the Microsoft Purview portal, go to **Communication compliance**.
+1. Sign into the [Microsoft Purview compliance portal](https://compliance.microsoft.com) using credentials for a user assigned to the *Communication Compliance Analyst* or *Communication Compliance Investigator* role groups in your Microsoft 365 organization.
+2. In the Microsoft Purview compliance portal, go to **Communication compliance**.
 3. Select the **Policies** tab and then select a policy that contains the resolved alert message, double-click to open the **Policy** page.
 4. On the **Policy** page, select the **Resolved** tab.
 5. On the **Resolved** tab, select one or more messages to move back to *Pending*.

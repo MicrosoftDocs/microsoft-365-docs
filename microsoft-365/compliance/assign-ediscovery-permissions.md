@@ -1,5 +1,5 @@
 ---
-title: "Assign eDiscovery permissions in the Microsoft Purview portal"
+title: "Assign eDiscovery permissions in the Microsoft Purview compliance portal"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,25 +16,25 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
-description: "Assign the permissions required to perform eDiscovery-related tasks using the Microsoft Purview portal."
+description: "Assign the permissions required to perform eDiscovery-related tasks using the Microsoft Purview compliance portal."
 ms.custom: 
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 ---
 
-# Assign eDiscovery permissions in the Microsoft Purview portal
+# Assign eDiscovery permissions in the Microsoft Purview compliance portal
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-If you want people to use any of the [eDiscovery-related tools](ediscovery.md) in the Microsoft Purview portal, you have to assign them the appropriate permissions. The easiest way to do this is to add the person the appropriate role group on the **Permissions** page in the compliance center. This topic describes the permissions required to perform eDiscovery tasks.
+If you want people to use any of the [eDiscovery-related tools](ediscovery.md) in the Microsoft Purview compliance portal, you have to assign them the appropriate permissions. The easiest way to do this is to add the person the appropriate role group on the **Permissions** page in the compliance center. This topic describes the permissions required to perform eDiscovery tasks.
   
-The primary eDiscovery-related role group in Microsoft Purview portal is called **eDiscovery Manager**. There are two subgroups within this role group.
+The primary eDiscovery-related role group in Microsoft Purview compliance portal is called **eDiscovery Manager**. There are two subgroups within this role group.
   
 - **eDiscovery Manager** - An eDiscovery Manager can use eDiscovery search tools to search content locations in the organization, and perform various search-related actions such as preview and export search results. Members can also create and manage cases in Core eDiscovery and Advanced eDiscovery, add and remove members to a case, create case holds, run searches associated with a case, and access case data. eDiscovery Managers can only access and manage the cases they create. They can't access or manage cases created by other eDiscovery Managers.
   
 - **eDiscovery Administrator** - An eDiscovery Administrator is a member of the eDiscovery Manager role group, and can perform the same content search and case management-related tasks that an eDiscovery Manager can perform. Additionally, an eDiscovery Administrator can:
   
-  - Access all cases that are listed on the **Core eDiscovery** and **Advanced eDiscovery** pages in the Microsoft Purview portal.
+  - Access all cases that are listed on the **Core eDiscovery** and **Advanced eDiscovery** pages in the Microsoft Purview compliance portal.
 
   - Access case data in Advanced eDiscovery for any case in the organization.
   
@@ -49,13 +49,13 @@ The primary eDiscovery-related role group in Microsoft Purview portal is called 
   
 ## Before you assign permissions
 
-- You have to be a member of the Organization Management role group or be assigned the Role Management role to assign eDiscovery permissions in the Microsoft Purview portal.
+- You have to be a member of the Organization Management role group or be assigned the Role Management role to assign eDiscovery permissions in the Microsoft Purview compliance portal.
 
 - You can use the [Add-RoleGroupMember](/powershell/module/exchange/Add-RoleGroupMember) cmdlet in Security & Compliance Center PowerShell to add a mail-enabled security group as a member of the eDiscovery Managers subgroup in the eDiscovery Manager role group. However, you can't add a mail-enabled security group to the eDiscovery Administrators subgroup. For details, see [More information](#more-information).
   
 ## Assign eDiscovery permissions
 
-1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview portal</a> and sign in using an account that can assign permissions.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> and sign in using an account that can assign permissions.
   
 2. In the left pane, select **Permissions**.
 
@@ -72,11 +72,11 @@ The primary eDiscovery-related role group in Microsoft Purview portal is called 
 > [!NOTE]
 > You can also use the **Add-eDiscoveryCaseAdmin** cmdlet to make a user an eDiscovery Administrator. However, the user must be assigned the Case Management role before you can use this cmdlet to make them an eDiscovery Administrator. For more information, see [Add-eDiscoveryCaseAdmin](/powershell/module/exchange/add-ediscoverycaseadmin). 
   
-On the **Permissions** page in the Microsoft Purview portal, you can also assign users eDiscovery-related permissions by adding them to the Compliance Administrator, Organization Management, and Reviewer role groups. For a description of the eDiscovery-related RBAC roles assigned to each of these role groups, see [RBAC roles related to eDiscovery](#rbac-roles-related-to-ediscovery).
+On the **Permissions** page in the Microsoft Purview compliance portal, you can also assign users eDiscovery-related permissions by adding them to the Compliance Administrator, Organization Management, and Reviewer role groups. For a description of the eDiscovery-related RBAC roles assigned to each of these role groups, see [RBAC roles related to eDiscovery](#rbac-roles-related-to-ediscovery).
 
 ## RBAC roles related to eDiscovery
 
-The following table lists the eDiscovery-related RBAC roles in the Microsoft Purview portal, and indicates the built-in role groups that each role is assigned to by default.
+The following table lists the eDiscovery-related RBAC roles in the Microsoft Purview compliance portal, and indicates the built-in role groups that each role is assigned to by default.
   
 | Role | Compliance Administrator | eDiscovery Manager & Administrator | Organization Management | Reviewer |
 |:-----|:-----:|:-----:|:-----:|:-----:|
@@ -96,7 +96,7 @@ The following sections describe each of the eDiscovery-related RBAC roles listed
 
 ### Case Management
 
-This role lets users create, edit, delete, and control access to Core eDiscovery and Advanced eDiscovery cases in the Microsoft Purview portal. As previously explained, a user must be assigned the Case Management role before you can use the **Add-eDiscoveryCaseAdmin** cmdlet to make them an eDiscovery Administrator.
+This role lets users create, edit, delete, and control access to Core eDiscovery and Advanced eDiscovery cases in the Microsoft Purview compliance portal. As previously explained, a user must be assigned the Case Management role before you can use the **Add-eDiscoveryCaseAdmin** cmdlet to make them an eDiscovery Administrator.
 
 For more information, see:
 
@@ -112,7 +112,7 @@ For more information, see [Work with communications in Advanced eDiscovery](mana
 
 ### Compliance Search
 
-This role lets users run the Content Search tool in the Microsoft Purview portal to search mailboxes and public folders, SharePoint Online sites, OneDrive for Business sites, Skype for Business conversations, Microsoft 365 groups, and Microsoft Teams, and Yammer groups. This role allows a user to get an estimate of the search results and create export reports, but other roles are needed to initiate content search actions such as previewing, exporting, or deleting search results.
+This role lets users run the Content Search tool in the Microsoft Purview compliance portal to search mailboxes and public folders, SharePoint Online sites, OneDrive for Business sites, Skype for Business conversations, Microsoft 365 groups, and Microsoft Teams, and Yammer groups. This role allows a user to get an estimate of the search results and create export reports, but other roles are needed to initiate content search actions such as previewing, exporting, or deleting search results.
 
 In  Content search and Core eDiscovery, users who are assigned the Compliance Search role but don't have the Preview role can preview the results of a search in which the preview action has been initiated by a user who is assigned the Preview role. The user without the Preview role can preview results for up to two weeks after the initial preview action was created.
 
@@ -130,7 +130,7 @@ For more information, see [Work with custodians in Advanced eDiscovery](managing
 
 The role lets users export the results of a Content Search to a local computer. It also lets them prepare search results for analysis in Advanced eDiscovery.
 
-For more information about exporting search results, see [Export search results from Microsoft Purview portal](export-search-results.md).
+For more information about exporting search results, see [Export search results from Microsoft Purview compliance portal](export-search-results.md).
 
 ### Hold
 
@@ -148,7 +148,7 @@ This role lets users view a list of items that were returned from a Content Sear
 
 ### Review
 
-This role lets users access review sets in [Advanced eDiscovery](overview-ediscovery-20.md). Users who are assigned this role can see and open the list of cases on the **eDiscovery > Advanced** page in the Microsoft Purview portal that they're members of. After the user accesses an Advanced eDiscovery case, they can select **Review sets** to access case data. This role doesn't allow the user to preview the results of a collection search that's associated with the case or do other search or case management tasks. Users with this role can only access the data in a review set.
+This role lets users access review sets in [Advanced eDiscovery](overview-ediscovery-20.md). Users who are assigned this role can see and open the list of cases on the **eDiscovery > Advanced** page in the Microsoft Purview compliance portal that they're members of. After the user accesses an Advanced eDiscovery case, they can select **Review sets** to access case data. This role doesn't allow the user to preview the results of a collection search that's associated with the case or do other search or case management tasks. Users with this role can only access the data in a review set.
 
 ### RMS Decrypt
 

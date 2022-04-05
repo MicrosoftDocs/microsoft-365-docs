@@ -66,12 +66,12 @@ Activity involving [sensitive information types](/microsoft-365/compliance/commu
 > [!IMPORTANT]
 > After configuring your role groups, it may take up to 30 minutes for the role group permissions to apply to assigned users across your organization.
 
-There are six role groups used to configure initial permissions to manage communication compliance features. To make **Communication compliance** available as a menu option in Microsoft Purview portal and to continue with these configuration steps, you must be assigned to one of the following roles or role groups:
+There are six role groups used to configure initial permissions to manage communication compliance features. To make **Communication compliance** available as a menu option in Microsoft Purview compliance portal and to continue with these configuration steps, you must be assigned to one of the following roles or role groups:
 
 - Azure Active Directory [*Global Administrator*](/azure/active-directory/roles/permissions-reference#global-administrator) role
 - Azure Active Directory [*Compliance Administrator*](/azure/active-directory/roles/permissions-reference#compliance-administrator) role
-- Microsoft Purview portal [*Organization Management*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) role group
-- Microsoft Purview portal [*Compliance Administrator*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) role group
+- Microsoft Purview compliance portal [*Organization Management*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) role group
+- Microsoft Purview compliance portal [*Compliance Administrator*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) role group
 - *Communication Compliance* role group
 - *Communication Compliance Admin* role group
 
@@ -79,8 +79,8 @@ Members of the following roles have the same solution permissions included with 
 
 - Azure Active Directory *Global Administrator*
 - Azure Active Directory *Compliance Administrator*
-- Microsoft Purview portal *Organization Management*
-- Microsoft Purview portal *Compliance Administrator*
+- Microsoft Purview compliance portal *Organization Management*
+- Microsoft Purview compliance portal *Compliance Administrator*
 
 > [!IMPORTANT]
 > Make sure you always have at least one user in the *Communication Compliance* or *Communication Compliance Admin* role groups (depending on the option you choose) so that your communication compliance configuration doesn't get in to a 'zero administrator' scenario if specific users leave your organization.
@@ -117,7 +117,7 @@ Choose from these solution role group options when configuring and managing comm
 
 Use this option to assign users to specific role groups to segment communication compliance access and responsibilities among different users in your organization.
 
-1. Sign into the [Microsoft Purview portal](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization, and then go to the **Permissions**</a>.
+1. Sign into the [Microsoft Purview compliance portal](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization, and then go to the **Permissions**</a>.
 
 2. Select the link to view and manage roles in Office 365.
 
@@ -211,9 +211,9 @@ For more information about configuring Yammer in Native Mode, see:
 >[!TIP]  
 >Want to see an in-depth walkthrough of setting up a new communication compliance policy and remediating an alert? Check out [this 15-minute video](communication-compliance-plan.md#creating-a-communication-compliance-policy-walkthrough) to see a demonstration of how communication compliance policies can help you detect inappropriate messages, investigate potential violations, and remediate compliance issues.
 
-1. Sign into the [Microsoft Purview portal](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization.
+1. Sign into the [Microsoft Purview compliance portal](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization.
 
-2. In the Microsoft Purview portal, select **Communication compliance**.
+2. In the Microsoft Purview compliance portal, select **Communication compliance**.
 
 3. Select the **Policies** tab.
 
@@ -283,9 +283,9 @@ If you want to have the option of responding to a policy alert by sending a remi
 
 You can also choose to enable anonymization for displayed usernames when investigating policy matches and taking action on messages.
 
-1. Sign into the [Microsoft Purview portal](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization.
+1. Sign into the [Microsoft Purview compliance portal](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization.
 
-2. In the Microsoft Purview portal, go to **Communication compliance**.
+2. In the Microsoft Purview compliance portal, go to **Communication compliance**.
 
 3. To configure anonymization for usernames, select the **Privacy** tab.
 

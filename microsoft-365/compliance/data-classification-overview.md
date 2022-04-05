@@ -41,7 +41,7 @@ You also manage these features on the data classification page:
 - [content explorer](data-classification-content-explorer.md)
 - [activity explorer](data-classification-activity-explorer.md)
 
-You can find data classification in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview portal</a> or <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> > **Classification** > **Data Classification**.
+You can find data classification in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> or <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> > **Classification** > **Data Classification**.
 
 Take a video tour of our data classification features.
 

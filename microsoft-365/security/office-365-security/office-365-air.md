@@ -94,7 +94,7 @@ Microsoft 365 provides many built-in alert policies that help identify Exchange 
 |A user is restricted from sending email|**High**|This alert is generated when someone in your organization is restricted from sending outbound mail. This alert typically results when an [email account is compromised](responding-to-a-compromised-email-account.md). <p> For more information about restricted users, see [Remove blocked users from the Restricted Users portal in Microsoft 365](removing-user-from-restricted-users-portal-after-spam.md).|
 
 > [!TIP]
-> To learn more about alert policies or edit the default settings, see [Alert policies in the Microsoft Purview portal](../../compliance/alert-policies.md).
+> To learn more about alert policies or edit the default settings, see [Alert policies in the Microsoft Purview compliance portal](../../compliance/alert-policies.md).
 
 ## Required permissions to use AIR capabilities
 

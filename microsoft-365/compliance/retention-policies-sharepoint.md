@@ -75,7 +75,7 @@ Users also see an error message if they try to delete a labeled item in any of t
 
 - The records management setting that allows users to delete labeled items is turned off.
     
-    To check or change this setting, go to the **Records management** solution in the Microsoft Purview portal > **Records management** > **Records management settings** > **Retention labels** > **Deletion of items**. There are separate settings for SharePoint and OneDrive.
+    To check or change this setting, go to the **Records management** solution in the Microsoft Purview compliance portal > **Records management** > **Records management settings** > **Retention labels** > **Deletion of items**. There are separate settings for SharePoint and OneDrive.
     
     Alternatively, and if you don't have access to the **Records management** solution, you can use *AllowFilesWithKeepLabelToBeDeletedSPO* and *AllowFilesWithKeepLabelToBeDeletedODB* from [Get-PnPTenant](/powershell/module/sharepoint-pnp/get-pnptenant) and [Set-PnPTenant](/powershell/module/sharepoint-pnp/set-pnptenant).
 

@@ -25,25 +25,29 @@ ms.custom:
 description: "Learn how to enable or disable archive mailboxes to support your organization's message retention, eDiscovery, and hold requirements."
 ---
 
-# Enable archive mailboxes in the Microsoft Purview portal
+# Enable archive mailboxes in the Microsoft Purview compliance portal
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Archiving in Microsoft 365 (also called *In-Place Archiving*) provides users with additional mailbox storage space. For more information, see [Learn about archive mailboxes](archive-mailboxes.md).
 
-Use the information in this article to enable or disable an archive mailbox in the Microsoft Purview portal, or by using PowerShell. Also learn how to run an automated diagnostic check on a user's archive mailbox to identify any problems and suggested resolutions.
+Use the information in this article to enable or disable an archive mailbox in the Microsoft Purview compliance portal, or by using PowerShell. Also learn how to run an automated diagnostic check on a user's archive mailbox to identify any problems and suggested resolutions.
 
 ## Get the necessary permissions
 
 You must be assigned the Mail Recipients role in Exchange Online to enable or disable archive mailboxes. By default, this role is assigned to the Recipient Management and Organization Management role groups on the **Permissions** page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>. 
 
-If you don't see the **Archive** page in the Microsoft Purview portal, ask your administrator to assign you the necessary permissions.
+If you don't see the **Archive** page in the Microsoft Purview compliance portal, ask your administrator to assign you the necessary permissions.
 
 ## Enable an archive mailbox
 
-1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview portal</a> and sign in.
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> and sign in.
 
+<<<<<<< HEAD
 2. In the left pane of the Microsoft Purview portal, click **Data lifecycle management**, and then click the **Archive** tab.
+=======
+2. In the left pane of the Microsoft Purview compliance portal, click **Information governance**, and then click the **Archive** tab.
+>>>>>>> cc4e987d404a2907f68680eb3a695587bdf756a9
 
    The **Archive** page is displayed. The **Archive mailbox** column indicates whether an archive mailbox is enabled or disabled for each user.
 
@@ -67,15 +71,19 @@ If you don't see the **Archive** page in the Microsoft Purview portal, ask your 
 
 ## Disable an archive mailbox
 
-You can also use the **Archive** page in the Microsoft Purview portal to disable a user's archive mailbox. After you disable an archive mailbox, you can reconnect it to the user's primary mailbox within 30 days of disabling it. In this case, the original contents of the archive mailbox are restored. After 30 days, the contents of the original archive mailbox are permanently deleted and can't be recovered. So if you re-enable the archive more than 30 days after disabling it, a new archive mailbox is created.
+You can also use the **Archive** page in the Microsoft Purview compliance portal to disable a user's archive mailbox. After you disable an archive mailbox, you can reconnect it to the user's primary mailbox within 30 days of disabling it. In this case, the original contents of the archive mailbox are restored. After 30 days, the contents of the original archive mailbox are permanently deleted and can't be recovered. So if you re-enable the archive more than 30 days after disabling it, a new archive mailbox is created.
 
 The default archive policy assigned to users' mailboxes moves items to the archive mailbox two years after the date the item is delivered. If you disable a user's archive mailbox, no action will be taken on mailbox items and they will remain in the user's primary mailbox.
 
 To disable an archive mailbox:
 
-1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview portal</a> and sign in.
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> and sign in.
 
+<<<<<<< HEAD
 2. In the left pane of the Microsoft Purview portal, click **Data lifecycle management**, and then click the **Archive** tab.
+=======
+2. In the left pane of the Microsoft Purview compliance portal, click **Information governance**, and then click the **Archive** tab.
+>>>>>>> cc4e987d404a2907f68680eb3a695587bdf756a9
 
    The **Archive** page is displayed. The **Archive mailbox** column indicates whether an archive mailbox is enabled or disabled for each user.
 

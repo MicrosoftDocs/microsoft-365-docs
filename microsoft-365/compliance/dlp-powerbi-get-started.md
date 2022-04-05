@@ -97,7 +97,7 @@ Follow the procedures in [Create, test, and tune a DLP policy](create-test-tune-
 > [!IMPORTANT]
 > When you select the locations for your DLP policy for Power BI, select only the Power BI location. Do not select any other locations, this configuration is not supported. 
 
-<!--1. Log into the [Microsoft Purview portal](https://compliance.microsoft.com).
+<!--1. Log into the [Microsoft Purview compliance portal](https://compliance.microsoft.com).
 
 1. Choose the **Data loss prevention** solution in the navigation pane, select the **Policies** tab, choose **Create policy**.
 
@@ -217,7 +217,7 @@ Assign a severity level that will be shown in alerts generated from this policy.
  
 ## Monitor and manage policy alerts
 
-Log into the Microsoft Purview portal and navigate to **Data loss prevention > Alerts**.
+Log into the Microsoft Purview compliance portal and navigate to **Data loss prevention > Alerts**.
 
 ![Screenshot of D L P Alerts tab.](media/service-security-dlp-policies-for-power-bi/power-bi-dlp-alerts-tab.png)
 

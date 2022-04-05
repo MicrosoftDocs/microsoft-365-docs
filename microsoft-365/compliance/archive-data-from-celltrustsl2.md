@@ -42,13 +42,13 @@ CellTrust's SL2 platform captures communication data from multiple sources. SL2 
 
 - Obtain the credentials to access the administrator account for your SL2 domain.
 
-- The user who creates the CellTrust SL2 data connector in Step 1 (and completes it in Step 3) must be assigned the Data Connector Admin role. This role is required to add connectors on the **Data connectors** page in the Microsoft Purview portal. This role is added by default to multiple role groups. For a list of these role groups, see the "Roles in the security and compliance centers" section in [Permissions in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatively, an admin in your organization can create a custom role group, assign the Data Connector Admin role, and then add the appropriate users as members. For instructions, see the "Create a custom role group" section in [Permissions in the Microsoft Purview portal](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- The user who creates the CellTrust SL2 data connector in Step 1 (and completes it in Step 3) must be assigned the Data Connector Admin role. This role is required to add connectors on the **Data connectors** page in the Microsoft Purview compliance portal. This role is added by default to multiple role groups. For a list of these role groups, see the "Roles in the security and compliance centers" section in [Permissions in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatively, an admin in your organization can create a custom role group, assign the Data Connector Admin role, and then add the appropriate users as members. For instructions, see the "Create a custom role group" section in [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
 - This CellTrust data connector is available in GCC environments in the Microsoft 365 US Government cloud. Third-party applications and services might involve storing, transmitting, and processing your organization's customer data on third-party systems that are outside of the Microsoft 365 infrastructure and therefore are not covered by the Microsoft Purview and data protection commitments. Microsoft makes no representation that use of this product to connect to third-party applications implies that those third-party applications are FEDRAMP compliant.
 
 ## Step 1: Create a CellTrust SL2 connector
 
-The first step is to create a data connector in the Microsoft Purview portal.
+The first step is to create a data connector in the Microsoft Purview compliance portal.
 
 1. Go to <https://compliance.microsoft.com> and click **Data connectors** on the left navigation pane.
 
@@ -82,11 +82,11 @@ The next step is to sign into an administrator account for your CellTrust SL2 do
 
    ![Enable OUs to archive.](../media/EnableCellTrustOUs.png)
 
-4. When you're finished with your selections, close the browser window and return to the wizard page in Microsoft Purview portal. After a few seconds, the wizard automatically advances to the next step of mapping users.
+4. When you're finished with your selections, close the browser window and return to the wizard page in Microsoft Purview compliance portal. After a few seconds, the wizard automatically advances to the next step of mapping users.
 
 ## Step 3: Map users and complete the connector setup
 
-The last step is to map users and complete the connector setup in the Microsoft Purview portal.
+The last step is to map users and complete the connector setup in the Microsoft Purview compliance portal.
 
 1. On the **User mapping** page, select **Enable automatic user mapping** if the email address for users is the same in both SL2 and  Microsoft 365. Otherwise, you should manually user email addresses by uploading a CSV file that maps users' SL2 address to their Microsoft 365 address.
 

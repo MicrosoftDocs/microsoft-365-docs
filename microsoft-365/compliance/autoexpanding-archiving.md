@@ -107,7 +107,7 @@ This section explains the functionality between auto-expanding archiving and oth
 
 - **eDiscovery:** When you use an eDiscovery tool, such as Content Search or In-Place eDiscovery, the additional storage areas in an auto-expanded archive are also searched.
 
-- **Retention:** When you put a mailbox on hold by using tools such as Litigation Hold in Exchange Online or eDiscovery case holds and retention policies in the Microsoft Purview portal, content located in an auto-expanded archive is also placed on hold.
+- **Retention:** When you put a mailbox on hold by using tools such as Litigation Hold in Exchange Online or eDiscovery case holds and retention policies in the Microsoft Purview compliance portal, content located in an auto-expanded archive is also placed on hold.
 
 - **Messaging records management (MRM):** If you use MRM deletion policies in Exchange Online to permanently delete expired mailbox items, expired items located in the auto-expanded archive will also be deleted.
 

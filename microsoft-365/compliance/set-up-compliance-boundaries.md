@@ -39,7 +39,7 @@ In this example, Contoso LTD is an organization that consists of two subsidiarie
 
 - [Role groups](assign-ediscovery-permissions.md#rbac-roles-related-to-ediscovery) provide the following functions for compliance boundaries:
 
-  - Control who can see the eDiscovery cases in the Microsoft Purview portal. This means that eDiscovery managers and investigators can only see the eDiscovery cases in their agency.
+  - Control who can see the eDiscovery cases in the Microsoft Purview compliance portal. This means that eDiscovery managers and investigators can only see the eDiscovery cases in their agency.
 
   - Control who can assign members to an eDiscovery case. This means eDiscovery managers and investigators can only assign members to cases that they themselves are a member of.
 
@@ -89,9 +89,9 @@ For a complete list, see the full list of supported [mailbox filters](/powershel
 
 ## Step 2: Create a role group for each agency
 
-The next step is to create the role groups in the Microsoft Purview portal that will align with your agencies. We recommend that you create a role group by copying the built-in eDiscovery Managers group, adding the appropriate members, and removing roles that may not be applicable to your needs. For more information about eDiscovery-related roles, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
+The next step is to create the role groups in the Microsoft Purview compliance portal that will align with your agencies. We recommend that you create a role group by copying the built-in eDiscovery Managers group, adding the appropriate members, and removing roles that may not be applicable to your needs. For more information about eDiscovery-related roles, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
   
-To create the role groups, go to the **Permissions** page in the Microsoft Purview portal and create a role group for each team in each agency that will use compliance boundaries and eDiscovery cases to manage investigations.
+To create the role groups, go to the **Permissions** page in the Microsoft Purview compliance portal and create a role group for each team in each agency that will use compliance boundaries and eDiscovery cases to manage investigations.
   
 Using the Contoso compliance boundaries scenario, four role groups need to be created and the appropriate members added to each one.
   
@@ -165,15 +165,15 @@ Here's how the search permission filters are applied for each agency in this sce
 
 ## Step 4: Create an eDiscovery case for intra-agency investigations
 
-The final step is to create a Core eDiscovery case or Advanced eDiscovery case in the Microsoft Purview portal and then add the role group that you created in Step 2 as a member of the case. This results in two important characteristics of using compliance boundaries:
+The final step is to create a Core eDiscovery case or Advanced eDiscovery case in the Microsoft Purview compliance portal and then add the role group that you created in Step 2 as a member of the case. This results in two important characteristics of using compliance boundaries:
   
-- Only members of the role group added to the case will be able to see and access the case in the Microsoft Purview portal. For example, if the Fourth Coffee Investigators role group is the only member of a case, then members of the Fourth Coffee eDiscovery Managers role group (or members of any other role group) won't be able to see or access the case.
+- Only members of the role group added to the case will be able to see and access the case in the Microsoft Purview compliance portal. For example, if the Fourth Coffee Investigators role group is the only member of a case, then members of the Fourth Coffee eDiscovery Managers role group (or members of any other role group) won't be able to see or access the case.
 
 - When a member of the role group assigned to a case runs a search associated with the case, they will only be able to search the content locations within their agency (which is defined by the search permissions filter that you created in Step 3.)
 
 To create a case and assign members:
 
-1. Go to the **Core eDiscovery** or **Advanced eDiscovery** page in the Microsoft Purview portal and create a case.
+1. Go to the **Core eDiscovery** or **Advanced eDiscovery** page in the Microsoft Purview compliance portal and create a case.
 
 2. In the list of cases, click the name of the case you created.
 
@@ -301,7 +301,7 @@ Keep the following limitations in mind when managing eDiscovery cases and invest
 
 **Who can create and manage search permissions filters (using New-ComplianceSecurityFilter and Set-ComplianceSecurityFilter cmdlets)?**
   
-To create, view, and modify search permissions filters, you have to be a member of the Organization Management role group in the Microsoft Purview portal.
+To create, view, and modify search permissions filters, you have to be a member of the Organization Management role group in the Microsoft Purview compliance portal.
   
 **If an eDiscovery manager is assigned to more than one role group that spans multiple agencies, how do they search for content in one agency or the other?**
   

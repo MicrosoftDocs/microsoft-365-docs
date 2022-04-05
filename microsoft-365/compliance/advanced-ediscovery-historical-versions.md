@@ -43,7 +43,7 @@ The next step is to turn on historical versions in Advanced eDiscovery. To turn 
 > [!IMPORTANT]
 > After you turn on historical versions, you won't be able to turn it off during the public preview. You will be able to turn it off after historical versions is released for general availability.
 
-1. In the Microsoft Purview portal, go to [Advanced eDiscovery](https://go.microsoft.com/fwlink/p/?linkid=2173764), and then click **Advanced eDiscovery settings**.
+1. In the Microsoft Purview compliance portal, go to [Advanced eDiscovery](https://go.microsoft.com/fwlink/p/?linkid=2173764), and then click **Advanced eDiscovery settings**.
 
    ![Select Advanced eDiscovery settings](..\media\HistoricalVersions1.png)
 

@@ -57,7 +57,7 @@ Access to content explorer is highly restricted because it lets you read the con
 > [!IMPORTANT]
 > These permissions supercede permissions that are locally assigned to the items, which allows viewing of the content. 
 
-There are two roles that grant access to content explorer and it is granted using the <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">Microsoft Purview portal</a>:
+There are two roles that grant access to content explorer and it is granted using the <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">Microsoft Purview compliance portal</a>:
 
 - **Content Explorer List viewer**: Membership in this role group allows you to see each item and its location in list view. The `data classification list viewer` role has been pre-assigned to this role group.
 
@@ -108,7 +108,7 @@ A [retention label](retention.md) allows you to define how long a labeled item i
 
 ### How to use content explorer
 
-1. Open **Microsoft Purview portal**  > **Data classification** > **Content explorer**.
+1. Open **Microsoft Purview compliance portal**  > **Data classification** > **Content explorer**.
 2. If you know the name of the label, or the sensitive information type, you can type that into the filter box.
 3. Alternately, you can browse for the item by expanding the label type and selecting the label from the list.
 4. Select a location under **All locations** and drill down the folder structure to the item.

@@ -24,7 +24,7 @@ ms.custom: seo-marvel-mar2020
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Whether it be adding new solutions to the [Microsoft Purview portal](microsoft-365-compliance-center.md), updating existing features based on your feedback, or rolling out fresh and updated documentation, Microsoft 365 helps you stay on top of the ever-changing compliance landscape. Take a look below to see what’s new in Microsoft Purview today.
+Whether it be adding new solutions to the [Microsoft Purview compliance portal](microsoft-365-compliance-center.md), updating existing features based on your feedback, or rolling out fresh and updated documentation, Microsoft 365 helps you stay on top of the ever-changing compliance landscape. Take a look below to see what’s new in Microsoft Purview today.
 
 > [!NOTE]
 > Some compliance features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, try adding yourself to [targeted release](/office365/admin/manage/release-options-in-office-365).
@@ -61,7 +61,7 @@ To meet the challenges of today’s decentralized, data-rich workplace, we’re 
 | Privileged Access Management in Microsoft 365 | Microsoft Purview Privileged Access Management | Privileged Access Management helps protect your organization from breaches and helps to meet compliance best practices by limiting standing access to sensitive data or access to critical configuration settings. To learn more, see [Microsoft Purview Privileged Access Management](privileged-access-management-solution-overview.md). |
 | Microsoft data connectors | Microsoft Purview data connectors | Microsoft 365 lets administrators use data connectors to import and archive non-Microsoft, third-party data from social media platforms, instant messaging platforms, and document collaboration platforms, to mailboxes in your Microsoft 365 organization. To learn more, see [Microsoft Purview data connectors](compliance-extensibility.md). |
 | Microsoft 365 Advanced eDiscovery | Microsoft Purview eDiscovery Premium | Electronic discovery, or eDiscovery, is the process of identifying and delivering electronic information that can be used as evidence in legal cases. To learn more, see [Microsoft Purview eDiscovery Premium](overview-ediscovery-20.md). |
-| Microsoft 365 compliance center | Microsoft Purview portal | Admin portal to access solutions and solution catalog within the Microsoft 365 E5 Compliance suite. To learn more, see [Microsoft Purview portal](microsoft-365-compliance-center.md). |
+| Microsoft 365 compliance center | Microsoft Purview compliance portal | Admin portal to access solutions and solution catalog within the Microsoft 365 E5 Compliance suite. To learn more, see [Microsoft Purview compliance portal](microsoft-365-compliance-center.md). |
 
 ## February 2022
 
@@ -90,6 +90,7 @@ To meet the challenges of today’s decentralized, data-rich workplace, we’re 
 
 ### Microsoft Purview Data Lifecycle Management
 
+<<<<<<< HEAD
 - The documentation for what was formerly Microsoft Information Governance has been substantially revised and restructured to help you more easily find information that relates to the solutions you configure in the Microsoft Purview portal: Data Connectors, Data Lifecycle Management, and Records Management. As part of this revision, the documentation provides a clearer distinction for the retention scenarios for data lifecycle management vs. records management.
 - [Learn about data lifecycle management](information-governance.md) - new, to support the restructure.
 - [Get started with data lifecycle management](get-started-with-information-governance.md) - new, to replace "Get started with retention", this article includes getting started steps for all data lifecycle management capabilities, which include retention.

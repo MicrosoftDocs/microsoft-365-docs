@@ -137,11 +137,11 @@ The following table lists the triggering events and prerequisites for policies c
 | **General data leaks** | Data leak policy activity that creates a *High severity* alert or built-in exfiltration event triggers | DLP policy configured for *High severity* alerts <br><br> OR <br><br> Customized triggering indicators |
 | **Data leaks by priority users** | Data leak policy activity that creates a *High severity* alert or built-in exfiltration event triggers | DLP policy configured for *High severity* alerts <br><br> OR <br><br> Customized triggering indicators <br><br> Priority user groups configured in insider risk settings |
 | **Data leaks by disgruntled users** | Performance improvement, poor performance, or job level change indicators from HR connector | Microsoft 365 HR connector configured for disgruntlement indicators |
-| **General security policy violations** | Defense evasion of security controls or unwanted software detected by Microsoft Defender for Endpoint | Active Microsoft Defender for Endpoint subscription <br><br> Microsoft Defender for Endpoint integration with Microsoft Purview portal configured |
+| **General security policy violations** | Defense evasion of security controls or unwanted software detected by Microsoft Defender for Endpoint | Active Microsoft Defender for Endpoint subscription <br><br> Microsoft Defender for Endpoint integration with Microsoft Purview compliance portal configured |
 | **General patient data misuse** | Defense evasion of security controls from EMR systems <br><br> User and patient address matching indicators from HR systems | Healthcare access indicators selected in policy or insider risk settings <br><br> Microsoft 365 HR connector configured for address matching <br><br> Microsoft Healthcare or Epic connector configured |
-| **Security policy violations by departing users** | Resignation or termination date indicators from HR connector or Azure Active Directory account deletion | (optional) Microsoft 365 HR connector configured for termination and resignation date indicators <br><br> Active Microsoft Defender for Endpoint subscription <br><br> Microsoft Defender for Endpoint integration with Microsoft Purview portal configured |
-| **Security policy violations by priority users** | Defense evasion of security controls or unwanted software detected by Microsoft Defender for Endpoint | Active Microsoft Defender for Endpoint subscription <br><br> Microsoft Defender for Endpoint integration with Microsoft Purview portal configured <br><br> Priority user groups configured in insider risk settings |
-| **Security policy violations by disgruntled user** | Performance improvement, poor performance, or job level change indicators from HR connector | Microsoft 365 HR connector configured for disgruntlement indicators <br><br> Active Microsoft Defender for Endpoint subscription <br><br> Microsoft Defender for Endpoint integration with Microsoft Purview portal configured |
+| **Security policy violations by departing users** | Resignation or termination date indicators from HR connector or Azure Active Directory account deletion | (optional) Microsoft 365 HR connector configured for termination and resignation date indicators <br><br> Active Microsoft Defender for Endpoint subscription <br><br> Microsoft Defender for Endpoint integration with Microsoft Purview compliance portal configured |
+| **Security policy violations by priority users** | Defense evasion of security controls or unwanted software detected by Microsoft Defender for Endpoint | Active Microsoft Defender for Endpoint subscription <br><br> Microsoft Defender for Endpoint integration with Microsoft Purview compliance portal configured <br><br> Priority user groups configured in insider risk settings |
+| **Security policy violations by disgruntled user** | Performance improvement, poor performance, or job level change indicators from HR connector | Microsoft 365 HR connector configured for disgruntlement indicators <br><br> Active Microsoft Defender for Endpoint subscription <br><br> Microsoft Defender for Endpoint integration with Microsoft Purview compliance portal configured |
 
 ## Prioritize content in policies
 
@@ -265,11 +265,11 @@ Use the following table to determine the maximum number of in-scope users suppor
 
 ## Create a new policy
 
-To create a new insider risk management policy, you'll use the policy wizard in **Insider risk management** solution in the Microsoft Purview portal.
+To create a new insider risk management policy, you'll use the policy wizard in **Insider risk management** solution in the Microsoft Purview compliance portal.
 
 Complete the following steps to create a new policy:
 
-1. In the [Microsoft Purview portal](https://compliance.microsoft.com), go to **Insider risk management** and select the **Policies** tab.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select the **Policies** tab.
 2. Select **Create policy** to open the policy wizard.
 3. On the **Policy template** page, choose a policy category and then select the template for the new policy. These templates are made up of conditions and indicators that define the risk activities you want to detect and investigate. Review the template prerequisites, triggering events, and detected activities to confirm this policy template fits your needs.
 
@@ -327,11 +327,11 @@ Complete the following steps to create a new policy:
 
 ## Update a policy
 
-To update an existing insider risk management policy, you'll use the policy wizard in **Insider risk management** solution in the Microsoft Purview portal.
+To update an existing insider risk management policy, you'll use the policy wizard in **Insider risk management** solution in the Microsoft Purview compliance portal.
 
 Complete the following steps to manage an existing policy:
 
-1. In the [Microsoft Purview portal](https://compliance.microsoft.com), go to **Insider risk management** and select the **Policies** tab.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select the **Policies** tab.
 2. On the policy dashboard, select the policy you want to manage.
 3. On the policy details page, select **Edit policy**
 4. In the policy wizard, you can’t edit the following:
@@ -388,7 +388,7 @@ You may need to create a new policy that is similar to an existing policy but ne
 
 Complete the following steps to copy an existing policy:
 
-1. In the [Microsoft Purview portal](https://compliance.microsoft.com), go to **Insider risk management** and select the **Policies** tab.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select the **Policies** tab.
 2. On the policy dashboard, select the policy you want to copy.
 3. On the policy details page, select Copy.
 4. In the policy wizard, name the new policy and update the policy configuration as needed.
@@ -408,7 +408,7 @@ Some scenarios where you may want to immediately start scoring user activities:
 
 To manually start scoring activity for users in one or more insider risk management policies, complete the following steps:
 
-1. In the [Microsoft Purview portal](https://compliance.microsoft.com), go to **Insider risk management** and select the **Policies** tab.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select the **Policies** tab.
 2. On the policy dashboard, select the policy or policies you want to add users to.
 3. Select **Start scoring activity for users**.
 4. In the **Reason field** in the **Add users to multiple policies** pane, add a reason for adding the users.
@@ -435,7 +435,7 @@ To stop scoring users in a policy, see the [Insider risk management users: Remov
 
 To delete an existing insider risk management policy, complete the following steps:
 
-1. In the [Microsoft Purview portal](https://compliance.microsoft.com), go to **Insider risk management** and select the **Policies** tab.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select the **Policies** tab.
 2. On the policy dashboard, select the policy you want to delete.
 3. Select **Delete** on the dashboard toolbar.
 4. On the **Delete** dialog, Select **Yes** to delete the policy, or select **Cancel** to close the dialog.

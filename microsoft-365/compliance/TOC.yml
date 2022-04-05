@@ -14,11 +14,11 @@
       href: compliance-quick-tasks.md
     - name: Microsoft 365 solution catalog
       href: microsoft-365-solution-catalog.md
-    - name: Microsoft Purview portal
+    - name: Microsoft Purview compliance portal
       href: microsoft-365-compliance-center.md
-    - name: Permissions in the Microsoft Purview portal
+    - name: Permissions in the Microsoft Purview compliance portal
       href: microsoft-365-compliance-center-permissions.md
-    - name: Redirecting users to the Microsoft Purview portal
+    - name: Redirecting users to the Microsoft Purview compliance portal
       href: microsoft-365-compliance-center-redirection.md
     - name: Use your free Azure Active Directory subscription
       href: use-your-free-azure-ad-subscription-in-office-365.md

@@ -22,7 +22,7 @@ description: "Learn about the default data loss prevention policy in Microsoft T
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-[Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md) capabilities have been extended to include Microsoft Teams chat and channel messages, including private channel messages. As a part of this release, we created a default DLP policy for Microsoft Teams for first-time customers to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview portal</a>.
+[Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md) capabilities have been extended to include Microsoft Teams chat and channel messages, including private channel messages. As a part of this release, we created a default DLP policy for Microsoft Teams for first-time customers to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>.
 
 ## Licensing
 
