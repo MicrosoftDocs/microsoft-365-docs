@@ -30,9 +30,9 @@ ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: "Protect your business email and data from cyberthreats, including ransomware, phishing, and malicious attachments."
 ---
 
-# Leading ways to secure Microsoft 365 for business
+# The best ways to secure Microsoft 365 for business
 
-If you are a small or medium-size organization using one of Microsoft's business plans, the guidance in this article helps you tighten the security of your organization. Among your choices, Microsoft 365 Business Premium provides the best [security protections](../../business-premium/get-microsoft-365-business-premium.md) of all of them. The recommended actions included here will help you achieve the goals described in the Harvard Kennedy School [Cybersecurity Campaign Handbook](https://go.microsoft.com/fwlink/p/?linkid=2015598).
+If you are a small or medium-size organization using one of Microsoft's business plans, the guidance in this article helps you tighten the security of your organization. Among your choices, Microsoft 365 Business Premium leads the way since it now includes Microsoft Defender for Business and other [security protections](../../business-premium/get-microsoft-365-business-premium.md). The recommended actions included here will help you achieve the goals described in the Harvard Kennedy School [Cybersecurity Campaign Handbook](https://go.microsoft.com/fwlink/p/?linkid=2015598).
 
 > [!TIP]
 > If you need help with the steps in this article, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
@@ -74,7 +74,7 @@ Multi-factor authentication is also called 2-step verification. Individuals can 
 For businesses using Microsoft 365, add a setting that requires your users to log in using multifactor authentication. When you make this change, users will be prompted to set up their phone for two-factor authentication next time they log in.
 To see a training video for how to set up MFA and how users complete the setup, see [set up MFA](set-up-multi-factor-authentication.md) and [user set up](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14).
 
-### To set up multi-factor authentication, you turn on security defaults
+### To set up multi-factor authentication, first turn on security defaults
 
 For most organizations, security defaults offer a good level of added sign-in security. For more information, see [What are security defaults?](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
 
@@ -94,8 +94,8 @@ You enable or disable security defaults from the **Properties** pane for Azure A
 
 After you set up multi-factor authentication for your organization, your users will be required to set up two-step verification on their devices. For more information, see [Set up 2-step verification for Microsoft 365](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14).
 
->[!Tip]
->If you need more granular control of multi-factor authentication, you can enable Conditional Access with Microsoft 365 Business Premium. If you do this, we recommend implementing the equivalent policies to Security Defaults. Go here for more information about [security defaults](m365bp-conditional-access.md)
+> [!Tip]
+> If you need more granular control of multi-factor authentication, you can enable Conditional Access with Microsoft 365 Business Premium. If you do this, we recommend implementing the equivalent policies to Security Defaults. Go here for more information about [security defaults](m365bp-conditional-access.md).
 
 For more details and recommendations, see [Set up multi-factor authentication for users](set-up-multi-factor-authentication.md).
 
@@ -153,7 +153,7 @@ You can increase your malware protection by blocking attachments with file types
 
 For more information, see [Antimalware protection in EOP](../../security/office-365-security/anti-malware-protection.md).
 
-### Use antivirus and antimalware protection
+### Use antivirus and anti-malware protection
 
 Microsoft Defender Antivirus provides strong antivirus and antimalware protection, and is built into the Windows operating system.
 
@@ -221,8 +221,8 @@ For more information, see:
 
 Microsoft 365 includes Office Message Encryption which allows you to send and receive encrypted email messages between people inside and outside your organization, and only the intended recipients may view them. The encryption works with Outlook.com, Yahoo!, Gmail, and other email services. 
 
->[!Tip]
->If a more stringent security level is desired, your organization should also configure and use sensitivity labeling for emails or files. [Sensitivity labels](../../compliance/sensitivity-labels.md) allow control over content, no matter where it goes. 
+> [!Tip]
+> If a more stringent security level is needed, your organization should also configure and use sensitivity labeling for emails or files. [Sensitivity labels](../../compliance/sensitivity-labels.md) allow control over content, no matter where it goes. 
 
 ### Send encrypted email
 
@@ -242,13 +242,14 @@ If the recipient is using another email client or email account, such as Gmail o
 > [!TIP]
 > For more information, see [Send, view, and reply to encrypted messages in Outlook for PC](https://support.microsoft.com/office/eaa43495-9bbb-4fca-922a-df90dee51980).
 
-## Protect your email from phishing attacks
+## Protect the organization
 
-If you've configured one or more custom domains for your Microsoft 365 environment, you can configure targeted anti-phishing protection. Anti-phishing protection, a part of Microsoft Defender for Office 365, can help protect your organization from malicious impersonation-based phishing attacks and other phishing attacks. If you haven't configured a custom domain, you do not need to do this.
+If you've configured one or more custom domains for your Microsoft 365 environment, you can configure targeted anti-phishing protection. Anti-phishing protection is included in Microsoft Defender for Office 365, and can help protect your organization from malicious impersonation-based phishing and other attacks. 
 
-We recommend that you get started with this protection by creating a policy to protect your most important users and your custom domain.
+> [!Note]
+> If you haven't configured a custom domain, you don't need to do this.
 
-To create an anti-phishing policy in Defender for Office 365, view a [short training video](increase-threat-protection.md#protect-your-email-from-phishing-attacks), or complete the following steps:
+We recommend you get started with this protection by creating a policy for your most important users and your custom domain. A good place to do this is in Microsoft 365 Defender, included with Microsoft Business Premium. To create an anti-phishing policy in Defender for Office 365, complete the following steps:
 
 1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
 
@@ -280,7 +281,7 @@ People regularly send, receive, and share attachments, such as documents, presen
 
 ### Set up Safe Attachments
 
-To create a Safe Attachments policy, view a [short training video](increase-threat-protection.md), or complete the following steps:
+You can use pre-set Safe Attachments policies, or create your own. To create a Safe Attachments policy, view a [short training video](increase-threat-protection.md), or complete the following st    eps:
 
 1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, and sign in with your admin account.
 
@@ -343,7 +344,9 @@ To modify the default policy:
 
 Microsoft Defender Antivirus is built into the Windows operating system and provides good protection against viruses and malware. However, you can increase protection for your organization's devices by onboarding them to Microsoft Defender for Business, a new offering for small and medium-sized businesses like yours. With Defender for Business, your organization's devices are better protected from ransomware, malware, phishing, and other threats.
 
-**Beginning March 1, 2022, [Microsoft Defender for Business](../../security/defender-business/index.yml) capabilities are being added to Microsoft 365 Business Premium**. 
+Microsoft 365 Business Basic and Standard provide you base-level protections you can depend on, including Defender antivirus, and join Azure AD.
+
+With Microsoft 365 Business Premium you get this in addition to heightened security features including all the capabilities of Defender for Business, such as device management and advanced threat protection. When you enroll devices to Microsoft 365 Business for Defender, the devices are monitored and protected by InTune.
 
 
 To learn more, see the following resources:
