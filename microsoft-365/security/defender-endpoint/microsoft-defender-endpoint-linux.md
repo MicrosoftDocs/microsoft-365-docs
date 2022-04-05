@@ -91,7 +91,7 @@ If you experience any installation failures, refer to [Troubleshooting installat
     > Distributions and version that are not explicitly listed are unsupported (even if they are derived from the officially supported distributions).
 
 - List of supported kernel versions
-  - Minimum kernel version 3.10.0-327
+  - Minimum kernel version 3.10.0-327 (For all the supported Linux distributions mentioned above except Red Hat Enterprise Linux 6 and CentOS 6)
   - The `fanotify` kernel option must be enabled
   - Red Hat Enterprise Linux 6 and CentOS 6:
     - For 6.7: 2.6.32-573.*
