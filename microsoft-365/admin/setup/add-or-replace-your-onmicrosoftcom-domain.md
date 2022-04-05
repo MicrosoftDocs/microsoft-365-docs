@@ -38,7 +38,7 @@ When you sign up for Microsoft 365, Microsoft provides an *onmicrosoft.com* doma
 - Microsoft 365 teams & groups email aliases
 - Automatic domain dependency moves
 
-It serves as a default email routing address for your Microsoft 365 environment. When a user is setup with a mailbox, email is routed to the fallback domain.  Even if a custom domain is used (for example, tailspintoys.com), if that custom domain is deleted from your Microsoft 365 environment, the fallback domain ensures that your users email is successfully routed.
+It serves as a default email routing address for your Microsoft 365 environment. When a user is set up with a mailbox, email is routed to the fallback domain.  Even if a custom domain is used (for example, tailspintoys.com), if that custom domain is deleted from your Microsoft 365 environment, the fallback domain ensures that your user's email is successfully routed.
 
 You can change your fallback domain in the Microsoft 365 admin center. Common reasons customers change their fallback domain include:
 
@@ -46,7 +46,7 @@ You can change your fallback domain in the Microsoft 365 admin center. Common re
 - They want to change how their Sharepoint URLs look like when they create a new site. SharePoint URLs in your Microsoft 365 environment are created based on your fallback domain name. If you did not use the correct company name when you first signed up, your SharePoint URLs for your sites will continue to use that name when you create new SharePoint sites. 
 
 
-While you can add additional onmicrosoft.com domains, only one onmicrosoft.com domain can be used as your fallback domain. The steps in this article describes how to:
+While you can add additional onmicrosoft.com domains, only one onmicrosoft.com domain can be used as your fallback domain. The steps in this article describe how to:
 - Create a new onmicrosoft.com domain
 - Assign it as your fallback domain
 
