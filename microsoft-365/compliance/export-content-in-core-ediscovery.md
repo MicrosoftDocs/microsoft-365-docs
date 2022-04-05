@@ -28,9 +28,9 @@ After a search associated with a Core eDiscovery case is successfully run, you c
   
 ## Export search results
 
-1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview portal</a> and sign in using the credentials for user account that has been assigned the appropriate eDiscovery permissions.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> and sign in using the credentials for user account that has been assigned the appropriate eDiscovery permissions.
 
-2. In the left navigation pane of the Microsoft Purview portal, select **Show all**, and then select **eDiscovery** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2174007" target="_blank">**Core**</a>.
+2. In the left navigation pane of the Microsoft Purview compliance portal, select **Show all**, and then select **eDiscovery** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2174007" target="_blank">**Core**</a>.
 
 3. On the **Core eDiscovery** page, click the name of the case that you want to create the hold in.
 

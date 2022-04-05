@@ -36,7 +36,7 @@ The first step is to specify the appropriate details for legal hold notices or o
 
 ![Name Communication page.](../media/NameCommunication.PNG)
 
-1. In the Microsoft Purview portal, go to **eDiscovery > Advanced** to display the list of cases in your organization.
+1. In the Microsoft Purview compliance portal, go to **eDiscovery > Advanced** to display the list of cases in your organization.
 
 2. Select a case, click the **Communications** tab, and then click **New communication**.
 

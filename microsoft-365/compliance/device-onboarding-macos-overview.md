@@ -74,13 +74,13 @@ Once a macOS device is onboarded into Microsoft Purview solutions, you can monit
 
 ## Onboarding devices into device management
 
-You must enable device monitoring and onboard your endpoints before you can monitor and protect sensitive items on a device. Both of these actions are done in the Microsoft Purview portal.
+You must enable device monitoring and onboard your endpoints before you can monitor and protect sensitive items on a device. Both of these actions are done in the Microsoft Purview compliance portal.
 
 When you want to onboard devices that haven't been onboarded yet, you'll download the appropriate script and deploy it to those devices. <!--Follow the [Onboarding devices procedure](endpoint-dlp-getting-started.md#onboarding-devices).-->
 
 <!--If you already have devices onboarded into [Microsoft Defender for Endpoint](/windows/security/threat-protection/), they will already appear in the managed devices list.-->
 
-1. Open the [Microsoft Purview portal](https://compliance.microsoft.com) **Settings** page and choose **Enable device monitoring**.
+1. Open the [Microsoft Purview compliance portal](https://compliance.microsoft.com) **Settings** page and choose **Enable device monitoring**.
 
    > [!NOTE]
    > While it usually takes about 60 seconds for device onboarding to be enabled, please allow up to 30 minutes before engaging with Microsoft support.

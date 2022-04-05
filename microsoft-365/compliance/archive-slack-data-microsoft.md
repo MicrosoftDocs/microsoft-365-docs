@@ -40,7 +40,7 @@ The following overview explains the process of using a Microsoft data connector 
 
 - Obtain the username and password for your organization's Slack enterprise account. You use these credentials to sign into this account when you create the data connector. It's also recommended that you have automated user provisioning in your Slack organization configured to use single sign-on (SSO). [Roles in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
 
-- The user who creates the Slack eDiscovery connector must be assigned the Data Connector Admin role. This role is required to add connectors on the **Data connectors** page in the Microsoft Purview portal. This role is added by default to multiple role groups. For a list of these role groups, see the "Roles in the security and compliance centers" section in [Permissions in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatively, an admin in your organization can create a custom role group, assign the Data Connector Admin role, and then add the appropriate users as members. For instructions, see the "Create a custom role group" section in [Permissions in the Microsoft Purview portal](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- The user who creates the Slack eDiscovery connector must be assigned the Data Connector Admin role. This role is required to add connectors on the **Data connectors** page in the Microsoft Purview compliance portal. This role is added by default to multiple role groups. For a list of these role groups, see the "Roles in the security and compliance centers" section in [Permissions in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatively, an admin in your organization can create a custom role group, assign the Data Connector Admin role, and then add the appropriate users as members. For instructions, see the "Create a custom role group" section in [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
 ## Step 1: Create a Slack eDiscovery connector
 
@@ -110,7 +110,7 @@ Select one of the following options to specify which users whose Slack eDiscover
 
 ## Step 5: Monitor the Slack eDiscovery connector
 
-After you create the Slack eDiscovery connector, you can view the connector status in the Microsoft Purview portal.
+After you create the Slack eDiscovery connector, you can view the connector status in the Microsoft Purview compliance portal.
 
 1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and click **Data connectors** in the left nav.
 

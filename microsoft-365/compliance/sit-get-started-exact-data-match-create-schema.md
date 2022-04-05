@@ -82,7 +82,7 @@ You can use this wizard to help simplify the schema file creation process.
 
 ## Use the exact data match schema and sensitive information type pattern wizard
 
-1. In the Microsoft Purview portal for your tenant go to **Data classification** > **Exact data matches** > **EDM schemas**.
+1. In the Microsoft Purview compliance portal for your tenant go to **Data classification** > **Exact data matches** > **EDM schemas**.
 
 2. Choose **Create EDM schema** to open the schema wizard configuration flyout.
 

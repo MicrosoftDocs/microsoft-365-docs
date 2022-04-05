@@ -95,7 +95,7 @@ Use the following table to help you identify the differences in behavior for the
 |Assign a Rights Management owner for emails sent from another organization |No |Yes|
 |For emails, replace existing label that has same or lower priority |No |Yes (configurable)|
 
-\* Auto-labeling isn't currently available in all regions because of a backend Azure dependency. If your tenant can't support this functionality, the **Auto-labeling** tab isn't visible in the Microsoft Purview portal. For more information, see [Azure dependency availability by country](/troubleshoot/azure/general/dependency-availability-by-country).
+\* Auto-labeling isn't currently available in all regions because of a backend Azure dependency. If your tenant can't support this functionality, the **Auto-labeling** tab isn't visible in the Microsoft Purview compliance portal. For more information, see [Azure dependency availability by country](/troubleshoot/azure/general/dependency-availability-by-country).
 
 ## How multiple conditions are evaluated when they apply to more than one label
 
@@ -121,7 +121,7 @@ Default behavior whether automatic labeling will override an existing label:
 - Automatic labeling will replace a [lower priority sensitivity label](sensitivity-labels.md#label-priority-order-matters) that was automatically applied, but not a higher priority label.
     
     > [!TIP]
-    > For example, the sensitivity label at the top of the list in the Microsoft Purview portal is named **Public** with an order number (priority) of 0, and the sensitivity label at the bottom of the list is named **Highly Confidential** with an order number (priority of 4). The **Highly Confidential** label can override the **Public** label but not the other way around.
+    > For example, the sensitivity label at the top of the list in the Microsoft Purview compliance portal is named **Public** with an order number (priority) of 0, and the sensitivity label at the bottom of the list is named **Highly Confidential** with an order number (priority of 4). The **Highly Confidential** label can override the **Public** label but not the other way around.
 
 For email auto-labeling policies only, you can select a setting to always override an existing sensitivity label, regardless of how it was applied.
 
@@ -275,7 +275,7 @@ Finally, you can use simulation mode to provide an approximation of the time nee
 
 ### Creating an auto-labeling policy
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview portal</a>, navigate to sensitivity labels:
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>, navigate to sensitivity labels:
 
     - **Solutions** > **Information protection**
 

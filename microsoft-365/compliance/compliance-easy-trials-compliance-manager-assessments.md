@@ -30,7 +30,7 @@ See the [terms and conditions](terms-conditions.md) for Microsoft Purview trials
 
 ## Set up a premium assessment trial
 
-You can sign up for a trial in the Microsoft Purview portal using the **Trials** link in the left navigation pane. Select the **Compliance Manager premium assessment trial** to start a trial for premium assessment templates.
+You can sign up for a trial in the Microsoft Purview compliance portal using the **Trials** link in the left navigation pane. Select the **Compliance Manager premium assessment trial** to start a trial for premium assessment templates.
 
 This premium assessment trial is available to organizations using Compliance Manager under a commercial license. For GCC and DOD information and trial options, see [Working with Compliance Manager templates](compliance-manager-templates.md).
 

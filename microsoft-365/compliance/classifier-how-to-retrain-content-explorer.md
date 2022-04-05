@@ -38,7 +38,7 @@ Watch this video for a quick summary of the tuning and retraining process. You'l
 
 ## Permissions
 
-To access classifiers in the Microsoft Purview portal:
+To access classifiers in the Microsoft Purview compliance portal:
 
 - the Compliance admin role or Compliance Data Administrator is required to train a classifier
 
@@ -60,7 +60,7 @@ To understand more about the overall workflow of retraining a classifier, see [P
 
 ## How to retrain a classifier in content explorer
 
-1. Sign in to Microsoft Purview portal with compliance admin or security admin role access and open **Microsoft Purview portal** > **Data classification** > **Content explorer**. 
+1. Sign in to Microsoft Purview compliance portal with compliance admin or security admin role access and open **Microsoft Purview compliance portal** > **Data classification** > **Content explorer**. 
 2. Under the **Filter on labels, info types, or categories** list, expand **Trainable classifiers**.
 
 > [!IMPORTANT]

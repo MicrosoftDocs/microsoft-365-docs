@@ -51,9 +51,9 @@ In addition to this capability, you can also use eDiscovery tools to search, pre
 
 ## Searching for Teams chat content for on-premises users
 
-Here's how to use Content search in the Microsoft Purview portal to search for Teams chat data for on-premises users. You can also use the search tool in Core eDiscovery to search for chat data for on-premises users.
+Here's how to use Content search in the Microsoft Purview compliance portal to search for Teams chat data for on-premises users. You can also use the search tool in Core eDiscovery to search for chat data for on-premises users.
   
-1. In the Microsoft Purview portal, go to **Content search**.
+1. In the Microsoft Purview compliance portal, go to **Content search**.
 
 2. On the **Searches** tab, click **New search**, and name the new search.
 

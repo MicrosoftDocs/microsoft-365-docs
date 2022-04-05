@@ -28,7 +28,7 @@ description: "Learn about records to help you implement a records management sol
 > [!NOTE]
 > Because regulatory records block editing, record versioning is not available for regulatory records.
 >
-> You can also prevent record versioning for your tenant, even if you're not using regulatory records: Go to **Records management** in the Microsoft Purview portal > **Records management settings** > **Retention labels** > **Configure record versioning** and then turn off the setting for **Enable record versioning**.
+> You can also prevent record versioning for your tenant, even if you're not using regulatory records: Go to **Records management** in the Microsoft Purview compliance portal > **Records management settings** > **Retention labels** > **Configure record versioning** and then turn off the setting for **Enable record versioning**.
 
 The ability to mark a document as a [record](records-management.md#records) and restrict actions that can be performed on the record is an essential goal for any records management solution. However, collaboration might also be needed for people to create subsequent versions.
 

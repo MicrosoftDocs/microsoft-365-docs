@@ -154,7 +154,7 @@ Use the following information to help you identify if you're using a feature fro
 
 The AIP client supports many customizations by using [PowerShell advanced settings](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#configuring-advanced-settings-for-the-client-via-powershell). Some of these advanced settings are now supported by built-in labeling, as documented in [New-Label](/powershell/module/exchange/new-label) or [Set-Label](/powershell/module/exchange/set-label), and [New-LabelPolicy](/powershell/module/exchange/new-labelpolicy) or [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy).
 
-However, you might find you don't need to use PowerShell to configure the supported settings because they're included in the standard configuration from the Microsoft Purview portal. For example, the ability to turn off mandatory labeling for Outlook and set a different default label.
+However, you might find you don't need to use PowerShell to configure the supported settings because they're included in the standard configuration from the Microsoft Purview compliance portal. For example, the ability to turn off mandatory labeling for Outlook and set a different default label.
 
 The following configurations from the AIP add-in aren't yet supported by built-in labeling include:
 
@@ -177,4 +177,4 @@ Although new capabilities for built-in labeling are being added all the time, th
 For instructions to create and configure these labeling capabilities, see [Create and configure sensitivity labels and their policies](create-sensitivity-labels.md).
 
 > [!TIP]
-> If you already have sensitivity labels in the Microsoft Purview portal, you won't be eligible for the automatic creation of default labels. However, you might still find it useful to reference their configuration: [Default sensitivity labels](mip-easy-trials.md#default-sensitivity-labels). 
+> If you already have sensitivity labels in the Microsoft Purview compliance portal, you won't be eligible for the automatic creation of default labels. However, you might still find it useful to reference their configuration: [Default sensitivity labels](mip-easy-trials.md#default-sensitivity-labels). 

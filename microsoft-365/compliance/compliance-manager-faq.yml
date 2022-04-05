@@ -30,23 +30,23 @@ sections:
           
           - [Your organization primarily used Compliance Manager (either the classic or public preview versions), located in the Microsoft Service Trust Portal](#your-organization-regularly-used-compliance-manager-in-the-service-trust-portal)
           
-          - [Your organization primarily used Compliance Score (public preview), located in the Microsoft Purview portal](#your-organization-used-compliance-score-public-preview-in-the-microsoft-purview-portal)
+          - [Your organization primarily used Compliance Score (public preview), located in the Microsoft Purview compliance portal](#your-organization-used-compliance-score-public-preview-in-the-microsoft-purview-portal)
           
           - [Your organization is new to Compliance Manager](#youre-new-to-compliance-manager
           )
           ### The basics
           
-          Microsoft Purview Compliance Manager began as a compliance management solution inside the Microsoft Service Trust Portal.  As compliance solutions came into in the Microsoft Purview portal, we developed a new experience with a more user-friendly design for this location. Compliance Score public preview was released in the Microsoft Purview portal in November 2019. Compliance Score shared the same backend as Compliance Manager, allowing customers to work in both places. Since November 2019, we’ve released several updates as we built new functionality and responded to customer feedback.
+          Microsoft Purview Compliance Manager began as a compliance management solution inside the Microsoft Service Trust Portal.  As compliance solutions came into in the Microsoft Purview compliance portal, we developed a new experience with a more user-friendly design for this location. Compliance Score public preview was released in the Microsoft Purview compliance portal in November 2019. Compliance Score shared the same backend as Compliance Manager, allowing customers to work in both places. Since November 2019, we’ve released several updates as we built new functionality and responded to customer feedback.
           
-          The general availability of Compliance Manager in the Microsoft Purview portal in September 2020 completes this evolution. Compliance Manager is the unified, end-to-end compliance solution. Your compliance score remains a key component of Compliance Manager.
+          The general availability of Compliance Manager in the Microsoft Purview compliance portal in September 2020 completes this evolution. Compliance Manager is the unified, end-to-end compliance solution. Your compliance score remains a key component of Compliance Manager.
           
           Read this [blog post](https://aka.ms/compliancemanager/GAblog) to learn more about what’s new with the GA release of Compliance Manager.
           
           ### Your organization regularly used Compliance Manager in the Service Trust Portal
           
-          If you used Compliance Manager in the Service Trust Portal, all of your organization’s data now exists in Compliance Manager in the Microsoft Purview portal at https://compliance.microsoft.com/compliancemanager. There’s nothing you need to do to resume your Compliance Manager work in its new location, other than to update any bookmarks you have to its previous location. All of your assessments and other data have been brought over for you.
+          If you used Compliance Manager in the Service Trust Portal, all of your organization’s data now exists in Compliance Manager in the Microsoft Purview compliance portal at https://compliance.microsoft.com/compliancemanager. There’s nothing you need to do to resume your Compliance Manager work in its new location, other than to update any bookmarks you have to its previous location. All of your assessments and other data have been brought over for you.
           
-          Note that Compliance Manager (preview) is no longer accessible in the Service Trust Portal, and all links to it will redirect you to its new location in the Microsoft Purview portal.
+          Note that Compliance Manager (preview) is no longer accessible in the Service Trust Portal, and all links to it will redirect you to its new location in the Microsoft Purview compliance portal.
           
           Everything you used to do in previous versions of Compliance Manager, such as completing actions (now called “improvement actions”) and creating assessments, can be done in the new Compliance Manager. We’ve added over 150 new assessment templates and improved the template creation process. We'll add more enhancements in future releases.
           
@@ -54,11 +54,11 @@ sections:
           
           - [Get familiar with your new Compliance Manager experience](compliance-manager-setup.md#understand-the-compliance-manager-dashboard)
           - [Find permissions and other setup information for Compliance Manager in its new home](compliance-manager-setup.md#who-can-access-compliance-manager)
-          - [Learn more about the Microsoft Purview portal](microsoft-365-compliance-center.md)
+          - [Learn more about the Microsoft Purview compliance portal](microsoft-365-compliance-center.md)
           
-          ### Your organization used Compliance Score (public preview) in the Microsoft Purview portal
+          ### Your organization used Compliance Score (public preview) in the Microsoft Purview compliance portal
           
-          If you used Compliance Score in public preview, you’ll notice Compliance Manager looks largely the same, with your score featured prominently on your dashboard. With the GA release, you no longer need to leave the Microsoft Purview portal in order to perform certain assessment management functions, such as creating and modifying templates for assessments. All functionality now resides in one place. Any data you had in the preview version of Compliance Score remains in the GA version of Compliance Manager.
+          If you used Compliance Score in public preview, you’ll notice Compliance Manager looks largely the same, with your score featured prominently on your dashboard. With the GA release, you no longer need to leave the Microsoft Purview compliance portal in order to perform certain assessment management functions, such as creating and modifying templates for assessments. All functionality now resides in one place. Any data you had in the preview version of Compliance Score remains in the GA version of Compliance Manager.
           
           Note that if you filtered your Compliance Score dashboard view, those filters were reset when we deployed the new Compliance Manager in September. You will need to reapply any filters you had.
           
@@ -66,11 +66,11 @@ sections:
           
           ### You're new to Compliance Manager
           
-          Compliance Manager is an end-to-end solution in the Microsoft Purview portal for managing and tracking compliance activities. It’s a great place to begin your compliance journey because it gives you an initial assessment of your compliance posture the first time you visit. Below are good places to start learning more:
+          Compliance Manager is an end-to-end solution in the Microsoft Purview compliance portal for managing and tracking compliance activities. It’s a great place to begin your compliance journey because it gives you an initial assessment of your compliance posture the first time you visit. Below are good places to start learning more:
           
           - [Get an overview of Compliance Manager](compliance-manager.md)
           - [Use our quickstart guide to help ramp up in stages](compliance-manager-quickstart.md)
-          - [Learn more about the Microsoft Purview portal](microsoft-365-compliance-center.md)
+          - [Learn more about the Microsoft Purview compliance portal](microsoft-365-compliance-center.md)
           
       - question: |
           Are there licensing requirements for using Compliance Manager?

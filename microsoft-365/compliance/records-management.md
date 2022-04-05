@@ -90,10 +90,10 @@ A standard retention label has retention settings and actions but doesn't mark c
 Footnotes:
 
 <sup>1</sup>
-Editing properties for a locked record is allowed by default but can be blocked by a tenant setting in the [Microsoft Purview portal](https://compliance.microsoft.com/) > **Records management** > **Records management settings** > **Retention labels** > **Allow editing of record properties**.
+Editing properties for a locked record is allowed by default but can be blocked by a tenant setting in the [Microsoft Purview compliance portal](https://compliance.microsoft.com/) > **Records management** > **Records management settings** > **Retention labels** > **Allow editing of record properties**.
 
 <sup>2</sup>
-Deleting labeled items in SharePoint and OneDrive can be blocked as a tenant setting in the [Microsoft Purview portal](https://compliance.microsoft.com/) > **Records management** > **Records management settings** > **Retention labels** > **Deletion of items**.
+Deleting labeled items in SharePoint and OneDrive can be blocked as a tenant setting in the [Microsoft Purview compliance portal](https://compliance.microsoft.com/) > **Records management** > **Records management settings** > **Retention labels** > **Deletion of items**.
 
 When you apply a retention label to a list item that has a document attachment, that document doesn't inherit the retention settings and can be deleted from the list item. In comparison, if that list item was declared a record with a retention label, the document attachment would inherit the retention settings and couldn't be deleted.
 

@@ -32,7 +32,7 @@ This article explains how to add and remove users to the list of organization-wi
 
 ## Before you add an issuing officer
 
-- You must be an eDiscovery Administrator in your organization to add or remove issuing officers. For more information, see [Assign eDiscovery permissions in the Microsoft Purview portal](assign-ediscovery-permissions.md)  
+- You must be an eDiscovery Administrator in your organization to add or remove issuing officers. For more information, see [Assign eDiscovery permissions in the Microsoft Purview compliance portal](assign-ediscovery-permissions.md)  
 
 - The user who is added as an issuing officer must have an active mailbox in your Microsoft 365 organization.
 
@@ -40,7 +40,7 @@ This article explains how to add and remove users to the list of organization-wi
 
 ## Add an issuing officer
 
-1. In the Microsoft Purview portal, go to [Advanced eDiscovery](https://go.microsoft.com/fwlink/p/?linkid=2173764), and then click **Advanced eDiscovery settings**.
+1. In the Microsoft Purview compliance portal, go to [Advanced eDiscovery](https://go.microsoft.com/fwlink/p/?linkid=2173764), and then click **Advanced eDiscovery settings**.
 
    ![Select Advanced eDiscovery settings](..\media\HistoricalVersions1.png)
 
@@ -54,7 +54,7 @@ After you add users as issuing officers, you or other users will be able to spec
 
 ## Remove an issuing officer
 
-1. In the Microsoft Purview portal, go to [Advanced eDiscovery](https://go.microsoft.com/fwlink/p/?linkid=2173764), and then click **Advanced eDiscovery settings**.
+1. In the Microsoft Purview compliance portal, go to [Advanced eDiscovery](https://go.microsoft.com/fwlink/p/?linkid=2173764), and then click **Advanced eDiscovery settings**.
 
 2. On the **Settings** page, select the **Issuing officers** tab.
 

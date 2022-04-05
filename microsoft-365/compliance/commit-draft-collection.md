@@ -26,7 +26,7 @@ When you're satisfied with the items you've collected in a draft collection and 
 
 ## Commit a draft collection to a review set
 
-1. In the Microsoft Purview portal, open the Advanced eDiscovery case, and then select the **Collections** tab to display a list of the collections in the case.
+1. In the Microsoft Purview compliance portal, open the Advanced eDiscovery case, and then select the **Collections** tab to display a list of the collections in the case.
 
    ![List of collections in a case.](../media/CommitDraftCollections1.png)
 

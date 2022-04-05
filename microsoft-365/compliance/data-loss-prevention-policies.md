@@ -69,7 +69,7 @@ With a DLP policy, you can:
 -->
 ## Create and manage DLP policies
 
-You create and manage DLP policies on the data loss prevention page in the Microsoft Purview portal.
+You create and manage DLP policies on the data loss prevention page in the Microsoft Purview compliance portal.
 
 ![Data loss prevention page in the Office 365 Security &amp; Compliance Center.](../media/943fd01c-d7aa-43a9-846d-0561321a405e.png)
 

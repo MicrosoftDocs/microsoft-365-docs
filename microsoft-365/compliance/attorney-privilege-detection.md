@@ -54,7 +54,7 @@ To enable the attorney-client privilege detection model, your organization has t
 
 A person who is an eDiscovery Administrator in your organization (a member of the eDiscovery Administrator subgroup in the eDiscovery Manager role group) must make the model available in your Advanced eDiscovery cases.
 
-1. In the Microsoft Purview portal, go to [Advanced eDiscovery](https://go.microsoft.com/fwlink/p/?linkid=2173764), and then click **Advanced eDiscovery settings**.
+1. In the Microsoft Purview compliance portal, go to [Advanced eDiscovery](https://go.microsoft.com/fwlink/p/?linkid=2173764), and then click **Advanced eDiscovery settings**.
 
    ![Select Advanced eDiscovery settings](..\media\HistoricalVersions1.png)
 

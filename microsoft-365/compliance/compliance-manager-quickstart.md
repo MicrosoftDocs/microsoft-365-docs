@@ -32,7 +32,7 @@ Whether you’re coming to Compliance Manager for the first time, or are ready t
 
 ## First visit: get to know Compliance Manager
 
-Compliance Manager is located in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview portal</a>. Your organization's global administrator will need to [set up user permissions and assign roles](compliance-manager-setup.md#set-user-permissions-and-assign-roles) before you start using Compliance Manager.
+Compliance Manager is located in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>. Your organization's global administrator will need to [set up user permissions and assign roles](compliance-manager-setup.md#set-user-permissions-and-assign-roles) before you start using Compliance Manager.
 
 The first time you visit Compliance Manager, you'll see a compliance score for your organization. Compliance Manager is already assessing your current Microsoft 365 environment against the data protection baseline. The best way to start getting familiar with Compliance Manager is to understand what it's showing you, its key elements, and how to customize your dashboard.
 

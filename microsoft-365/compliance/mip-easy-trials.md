@@ -46,7 +46,7 @@ Eligibility includes customers who have a [free trial for Microsoft Purview](com
 
 To get these preconfigured labels and policies: 
 
-1. From the [Microsoft Purview portal](https://compliance.microsoft.com/), select **Solutions** > **Information protection**
+1. From the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), select **Solutions** > **Information protection**
     
     If you don't immediately see this option, first select **Show all** from the navigation pane. 
     

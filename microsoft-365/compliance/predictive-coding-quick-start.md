@@ -34,7 +34,7 @@ For a detailed overview of predictive coding, see [Learn about predictive coding
 
 The first step is to create a new predictive coding model in the review set
 
-1. In the Microsoft Purview portal, open an Advanced eDiscovery case and then select the **Review sets** tab.
+1. In the Microsoft Purview compliance portal, open an Advanced eDiscovery case and then select the **Review sets** tab.
 
 2. Open a review set and then click **Analytics** > **Manage predictive coding (preview)**.
 

@@ -30,7 +30,7 @@ After you’ve completed these basic compliance tasks, consider expanding compli
 
 ## Task 1: Configure compliance permissions
 
-It’s important to manage who in your organization has access to the Microsoft Purview portal to view content and perform management tasks. Microsoft 365 provides administrative roles specific to compliance and for using the tools included in the Microsoft Purview portal.
+It’s important to manage who in your organization has access to the Microsoft Purview compliance portal to view content and perform management tasks. Microsoft 365 provides administrative roles specific to compliance and for using the tools included in the Microsoft Purview compliance portal.
 
 Start by assigning compliance permissions to the people in your organization so that they can perform these tasks and to prevent unauthorized people from having access to areas outside of their responsibilities. You’ll want to make sure that you’ve assigned the proper people to the **Compliance data administrator** and the **Compliance administrator** admin roles before you start to configure and implement compliance solutions included with Microsoft 365. You’ll also need to assign users to the Azure Active Directory global reader role to view data in Compliance Manager.
 

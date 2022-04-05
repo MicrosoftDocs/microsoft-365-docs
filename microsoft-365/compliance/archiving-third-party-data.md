@@ -35,7 +35,7 @@ Watch this interactive guide that demonstrates how to create data connectors to 
 
 ## Third-party data connectors
 
-The Microsoft Purview portal provides native third-party data connectors from Microsoft to import data from various data sources, such as LinkedIn, Instant Bloomberg, and Twitter and data connectors that support the insider risk management solution. In addition to these data connectors, Microsoft works with the following partners to provide many more third part data connectors in the Microsoft Purview portal. Your organization works with these partners to set up their archiving service before creating a corresponding data connector in the Microsoft Purview portal.
+The Microsoft Purview compliance portal provides native third-party data connectors from Microsoft to import data from various data sources, such as LinkedIn, Instant Bloomberg, and Twitter and data connectors that support the insider risk management solution. In addition to these data connectors, Microsoft works with the following partners to provide many more third part data connectors in the Microsoft Purview compliance portal. Your organization works with these partners to set up their archiving service before creating a corresponding data connector in the Microsoft Purview compliance portal.
 
 - [Veritas](#veritas-data-connectors)
 
@@ -49,7 +49,7 @@ The third-party data listed in the next sections (except for HR data and physica
 
 ### Microsoft data connectors
 
-The following table lists the native third-party data connectors available in the Microsoft Purview portal. The table also summarizes the compliance solutions that you can apply after you import and archive third-party data in Microsoft 365. See the [Overview of compliance solutions that support third-party data](#overview-of-compliance-solutions-that-support-third-party-data) section for a more detailed description of each compliance solution and how it supports third-party data.
+The following table lists the native third-party data connectors available in the Microsoft Purview compliance portal. The table also summarizes the compliance solutions that you can apply after you import and archive third-party data in Microsoft 365. See the [Overview of compliance solutions that support third-party data](#overview-of-compliance-solutions-that-support-third-party-data) section for a more detailed description of each compliance solution and how it supports third-party data.
 
 Click the link in the **Third-party data** column to go the step-by-step instructions for creating a connector for that data type.
 
@@ -350,6 +350,6 @@ Some data connectors are available in the US Government cloud. The following sec
 
 ## Working with a Microsoft partner to archive third-party data
 
-Another option for importing and archiving third-party data is for your organization to work with a Microsoft Partner. If a third-party data type isn't supported by the data connectors available in the Microsoft Purview portal, you can work with a partner who can provide a custom connector that will be configured to extract items from the third-party data source on a regular basis and then connect to the Microsoft cloud by a third-party API and import those items to Microsoft 365. The partner connector also converts the content of an item from the third-party data source to an email message and then imports it to a mailbox in Microsoft 365.
+Another option for importing and archiving third-party data is for your organization to work with a Microsoft Partner. If a third-party data type isn't supported by the data connectors available in the Microsoft Purview compliance portal, you can work with a partner who can provide a custom connector that will be configured to extract items from the third-party data source on a regular basis and then connect to the Microsoft cloud by a third-party API and import those items to Microsoft 365. The partner connector also converts the content of an item from the third-party data source to an email message and then imports it to a mailbox in Microsoft 365.
 
 For a list of partners that you can work with and the step-by-step process for this method, see [Work with a partner to archive third-party data in Microsoft 365](work-with-partner-to-archive-third-party-data.md).

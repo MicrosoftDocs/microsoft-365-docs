@@ -83,7 +83,7 @@ The manufacturing company's compliance and data governance policies dictate how 
 | All other types of documents | Don't actively retain  | Delete when document is older than 3 years <br /><br /> A document is considered older than 3 years if it hasn't been modified within the last 3 years. |
 |||
 
-We use the Microsoft Purview portal to create the following [retention labels](retention.md#retention-labels):
+We use the Microsoft Purview compliance portal to create the following [retention labels](retention.md#retention-labels):
 
   - Product Specification
 
@@ -111,7 +111,7 @@ Here's the [file plan](file-plan-manager.md) for the Product Specification reten
 
 - **File plan descriptors:** For simplifying the scenario, no optional file descriptors are provided.
 
-The following screenshot shows the settings when you create the Product Specification retention label in the Microsoft Purview portal. You can create the *Product Cessation* event type when you create the retention label. See the procedure in the following section.
+The following screenshot shows the settings when you create the Product Specification retention label in the Microsoft Purview compliance portal. You can create the *Product Cessation* event type when you create the retention label. See the procedure in the following section.
 
 ![Retention settings for the Product Specification label.](../media/SPRetention5.png)
 
@@ -215,7 +215,7 @@ Now in the search box, type **RefinableString00:"Product Specification" AND Refi
 
 Now that we've verified that the KQL query is working, let's create an auto-apply label policy that uses a KQL query to automatically apply the Product Specification retention label to the appropriate documents.
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview portal</a>, go to **Records management** > **Label policies** > **Auto-apply a label**.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>, go to **Records management** > **Label policies** > **Auto-apply a label**.
 
    [ ![Select "Auto-apply a label" on the Labels page](../media/SPRetention16.png) ](../media/SPRetention16.png#lightbox)
 
@@ -253,7 +253,7 @@ Now that we've verified that the KQL query is working, let's create an auto-appl
 
 ### Verify that the retention label was automatically applied
 
-After 7 days, use [activity explorer](data-classification-activity-explorer.md) in the Microsoft Purview portal to verify that the auto-apply label policy that we created did automatically apply the retention labels to the product documents.
+After 7 days, use [activity explorer](data-classification-activity-explorer.md) in the Microsoft Purview compliance portal to verify that the auto-apply label policy that we created did automatically apply the retention labels to the product documents.
 
 Also look at the properties of the documents in the Document Library. In the information panel, you can see that the retention label is applied to a selected document.
 
@@ -267,7 +267,7 @@ Because the retention labels were auto-applied to documents, those documents are
 
 Now that the retention labels are applied, let's focus on the event that will indicate the end of production for a particular product. This event triggers the beginning of the retention period that's defined in the retention labels. For example, for product specification documents, the 5-year retention period begins when the "end of production" event is triggered.
 
-You can manually create the event in the Microsoft Purview portal by going to **Records Managements** > **Events**. You would choose the event type, set the correct asset IDs, and enter a date for the event. For more information, see [Start retention when an event occurs](event-driven-retention.md).
+You can manually create the event in the Microsoft Purview compliance portal by going to **Records Managements** > **Events**. You would choose the event type, set the correct asset IDs, and enter a date for the event. For more information, see [Start retention when an event occurs](event-driven-retention.md).
 
 But for this scenario, we'll automatically generate the event from an external production system. The system is a simple SharePoint list that indicates whether a product is in production. A [Power Automate](/power-automate/getting-started) flow that's associated with the list will trigger the event. In a real-world scenario, you could use various systems to generate the event, such as an HR or CRM system. Power Automate contains many ready-to-use interactions and building block for Microsoft 365 workloads, such as Microsoft Exchange, SharePoint, Teams, and Dynamics 365, plus third-party apps such as Twitter, Box, Salesforce, and Workdays. This feature makes it easy to integrate Power Automate with various systems. For more information, see [Automate event-driven retention](./event-driven-retention.md#automate-events-by-using-a-rest-api).
 
@@ -306,7 +306,7 @@ To create this flow, start from a SharePoint connector and select the **When an 
 
 This list describes the parameters in the **Body** property of the action that must be configured for this scenario:
 
-- **Name**: This parameter specifies the name of the event that will be created in the Microsoft Purview portal. For this scenario, the name is "Cessation Production *xxx*", where *xxx* is the value of the **ProductName** managed property that we created earlier.
+- **Name**: This parameter specifies the name of the event that will be created in the Microsoft Purview compliance portal. For this scenario, the name is "Cessation Production *xxx*", where *xxx* is the value of the **ProductName** managed property that we created earlier.
 - **EventType**: The value for this parameter corresponds to the event type that the created event will apply to. This event type was defined when you created the retention label. For this scenario, the event type is "Product Cessation."
 - **SharePointAssetIdQuery**: This parameter defines the asset ID for the event. Event-based retention needs a unique identifier for the document. We can use asset IDs to identify the documents that a particular event applies to or, as in this scenario, the metadata column **Product Name**. To do  this, we need to create a new **ProductName** managed property that can be used in the KQL query. (Alternatively, we could use **RefinableString00** instead of creating a new managed property). We also need to map this new managed property to the **ows_Product_x0020_Name** crawled property. Here's a screenshot of this managed property.
 
@@ -316,9 +316,9 @@ This list describes the parameters in the **Body** property of the action that m
 
 ### Putting it all together
 
-Now the retention label is created and auto-applied, and the flow is configured and created. When the value in the **In Production** column for the Spinning Widget product in the Products list is changed from ***Yes*** to ***No***, the flow is triggered to create the event. To see this event in the Microsoft Purview portal, go to **Records management** > **Events**.
+Now the retention label is created and auto-applied, and the flow is configured and created. When the value in the **In Production** column for the Spinning Widget product in the Products list is changed from ***Yes*** to ***No***, the flow is triggered to create the event. To see this event in the Microsoft Purview compliance portal, go to **Records management** > **Events**.
 
-[ ![The event that was triggered by the flow is displayed on the Events page in the Microsoft Purview portal.](../media/SPRetention28.png) ](../media/SPRetention28.png#lightbox)
+[ ![The event that was triggered by the flow is displayed on the Events page in the Microsoft Purview compliance portal.](../media/SPRetention28.png) ](../media/SPRetention28.png#lightbox)
 
 Select the event to view the details on the flyout page. Notice that even though the event is created, the event status shows that no SharePoint sites or documents have been processed.
 

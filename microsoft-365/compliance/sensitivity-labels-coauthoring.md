@@ -138,7 +138,7 @@ Before you enable the tenant setting for co-authoring for files encrypted with s
 
 If you've already turned on this setting during the preview period, no further action is needed and you can skip this procedure.
 
-1. Sign in to the [Microsoft Purview portal](https://compliance.microsoft.com) as a global admin for your tenant.
+1. Sign in to the [Microsoft Purview compliance portal](https://compliance.microsoft.com) as a global admin for your tenant.
 
 2. From the navigation pane, select **Settings** > **Co-authoring for files with sensitivity files**.
 

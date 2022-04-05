@@ -32,7 +32,7 @@ This article discusses the steps necessary to set up Core eDiscovery. This inclu
 
 Licensing for Core eDiscovery requires the appropriate organization subscription and per-user licensing.
 
-- **Organization subscription:** To access Core eDiscovery in the Microsoft Purview portal and use the hold and export features, your organization must have a Microsoft 365 E3 or Office 365 E3 subscription or higher. Microsoft 365 Frontline organizations must have an F5 subscription.
+- **Organization subscription:** To access Core eDiscovery in the Microsoft Purview compliance portal and use the hold and export features, your organization must have a Microsoft 365 E3 or Office 365 E3 subscription or higher. Microsoft 365 Frontline organizations must have an F5 subscription.
 
 - **Per-user licensing:** To place an eDiscovery hold on mailboxes and sites, users must be assigned one of the following licenses, depending on your organization subscription:
 
@@ -60,11 +60,11 @@ For information and guidance on security and compliance:
 
 ## Step 2: Assign eDiscovery permissions
 
-To access Core eDiscovery or be added as a member of a Core eDiscovery case, a user must be assigned the appropriate permissions. Specifically, a user must be added as a member of the eDiscovery Manager role group in the Microsoft Purview portal. Members of this role group can create and manage Core eDiscovery cases. They can add and remove members, place an eDiscovery hold on users, create and edit searches, and export content from a Core eDiscovery case.
+To access Core eDiscovery or be added as a member of a Core eDiscovery case, a user must be assigned the appropriate permissions. Specifically, a user must be added as a member of the eDiscovery Manager role group in the Microsoft Purview compliance portal. Members of this role group can create and manage Core eDiscovery cases. They can add and remove members, place an eDiscovery hold on users, create and edit searches, and export content from a Core eDiscovery case.
 
 Complete the following steps to add users to the eDiscovery Manager role group:
 
-1. Go to the Microsoft Purview portal and sign in using the credentials for an admin account in your Microsoft 365 or Office 365 organization.
+1. Go to the Microsoft Purview compliance portal and sign in using the credentials for an admin account in your Microsoft 365 or Office 365 organization.
 
 2. On the <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**Permissions**</a> page, select the **eDiscovery Manager** role group.
 
@@ -102,9 +102,9 @@ For more information about eDiscovery permissions and a description of each role
 
 The next step is to create a case and start using Core eDiscovery. Complete the following steps to create a case and add members. The user who creates the case is automatically added as a member.
 
-1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview portal</a> and sign in using the credentials for a user account that has been assigned the appropriate eDiscovery permissions. Members of the Organization Management role group can also create Core eDiscovery cases.
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> and sign in using the credentials for a user account that has been assigned the appropriate eDiscovery permissions. Members of the Organization Management role group can also create Core eDiscovery cases.
 
-2. In the left navigation pane of the Microsoft Purview portal, click **Show all**, and then click **eDiscovery** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2174007" target="_blank">**Core**</a>.
+2. In the left navigation pane of the Microsoft Purview compliance portal, click **Show all**, and then click **eDiscovery** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2174007" target="_blank">**Core**</a>.
 
 3. On the **Core eDiscovery** page, click **Create a case**.
 
@@ -118,7 +118,7 @@ The next step is to create a case and start using Core eDiscovery. Complete the 
 
 If you create a case in Step 3 and you're the only person who will use the case, then you don't have to perform this step. You can start using the case to create eDiscovery holds, search for content, and export search results. Perform this step if you want to give other users (or roles group) access to the case.
 
-1. On the **Core eDiscovery** page in the Microsoft Purview portal, click the name of the case that you want to add members to.
+1. On the **Core eDiscovery** page in the Microsoft Purview compliance portal, click the name of the case that you want to add members to.
 
 2. On the case home page, select the **Settings** tab, and then select **Access & permissions**.
 
