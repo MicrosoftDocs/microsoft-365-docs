@@ -67,7 +67,7 @@ To view the list of all user accounts in your organization that have an E5 licen
 ```powershell
 Connect-Graph -Scopes User.Read.All
 
-$e5Sku = Get-MgSubscribedSku -All | Where-Object { $_.SkuPartNumber -eq 'SPE_E5' }
+$e5Sku = Get-MgSubscribedSku -All | Where-Object SkuPartNumber -eq 'SPE_E5'
 
 Get-MgUser -Filter "assignedLicenses/any(x:x/skuId eq $($e5sku.SkuId) )" -ConsistencyLevel eventual -CountVariable e5licensedUserCount -All
 
