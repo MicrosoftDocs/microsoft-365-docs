@@ -49,34 +49,17 @@ Get-MgSubscribedSku
 Use these commands to list the services that are available in each licensing plan.
 
 ```powershell
-$allSKUs=Get-AzureADSubscribedSku
-$licArray = @()
-for($i = 0; $i -lt $allSKUs.Count; $i++)
-{
-$licArray += "Service Plan: " + $allSKUs[$i].SkuPartNumber
-$licArray +=  Get-AzureADSubscribedSku -ObjectID $allSKUs[$i].ObjectID | Select -ExpandProperty ServicePlans
-$licArray +=  ""
+
+$allSKUs = Get-MgSubscribedSku -Property SkuPartNumber, ServicePlans 
+$allSKUs | ForEach-Object {
+    Write-Host "Service Plan:" $_.SkuPartNumber
+    $_.ServicePlans | ForEach-Object {$_}
 }
-$licArray
+
 ```
 
 Use these commands to list the licenses that are assigned to a user account.
 
-```powershell
-$userUPN="<user account UPN, such as belindan@contoso.com>"
-$licensePlanList = Get-AzureADSubscribedSku
-$userList = Get-AzureADUser -ObjectID $userUPN | Select -ExpandProperty AssignedLicenses | Select SkuID 
-$userList | ForEach { $sku=$_.SkuId ; $licensePlanList | ForEach { If ( $sku -eq $_.ObjectId.substring($_.ObjectId.length - 36, 36) ) { Write-Host $_.SkuPartNumber } } }
-```
-
-
-
-
-
-
-----
-To view the license details of a specific user account, run the following command:
-  
 ```powershell
 Get-MgUserLicenseDetail -UserId "<user sign-in name (UPN)>"
 ```
@@ -87,6 +70,37 @@ For example:
 Get-MgUserLicenseDetail -UserId "belindan@litwareinc.com"
 ```
 
+### To view services for a user account
+
+To view all the Microsoft 365 services that a user has access to, use the following syntax:
+  
+```powershell
+(Get-MgUserLicenseDetail -UserId <user account UPN> -Property ServicePlans)[<LicenseIndexNumber>].ServicePlans
+```
+
+This example shows the services to which the user BelindaN@litwareinc.com has access. This shows the services that are associated with all licenses that are assigned to her account.
+  
+```powershell
+(Get-MgUserLicenseDetail -UserId belindan@litwareinc.com -Property ServicePlans).ServicePlans
+```
+
+This example shows the services that user BelindaN@litwareinc.com has access to from the first license that's assigned to her account (the index number is 0).
+  
+```powershell
+(Get-MgUserLicenseDetail -UserId belindan@litwareinc.com -Property ServicePlans)[0].ServicePlans
+```
+
+To view all the services for a user who has been assigned *multiple licenses*, use the following syntax:
+
+```powershell
+$userUPN="<user account UPN>"
+$allLicenses = Get-MgUserLicenseDetail -UserId $userUPN -Property SkuPartNumber, ServicePlans
+$allLicenses | ForEach-Object {
+    Write-Host "License:" $_.SkuPartNumber
+    $_.ServicePlans | ForEach-Object {$_}
+}
+
+```
 
 ## Use the Azure Active Directory PowerShell for Graph module
 
@@ -180,7 +194,7 @@ $licArray +=  ""
 }
 $licArray
 ```
- 
+
 ## See also
 
 [Manage Microsoft 365 user accounts, licenses, and groups with PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
