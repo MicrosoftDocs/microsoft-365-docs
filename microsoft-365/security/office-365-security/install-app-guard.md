@@ -46,7 +46,7 @@ To learn more about Office update channels, see [Overview of update channels for
 * Microsoft 365 E5 or Microsoft 365 E5 Security
 
 > [!NOTE]
-> Microsoft 365 Apps for enterprise with the device-based license do not have access to Application Guard for Office.
+> Microsoft 365 Apps for enterprise with shared computer activation or device-based licensing do not have access to Application Guard for Office.
 
 ## Deploy Application Guard for Office
 

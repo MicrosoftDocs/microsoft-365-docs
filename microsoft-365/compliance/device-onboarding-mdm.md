@@ -35,8 +35,8 @@ For more information on enabling MDM with Microsoft Intune, see [Device enrollme
 
 ## Onboard devices using Microsoft Intune
 
-Follow the instructions from [Intune](/intune/advanced-threat-protection).
-
+Follow the instructions from [Intune](/mem/intune/protect/advanced-threat-protection-configure).
+ 
 > [!NOTE]
 > - The **Health Status for onboarded devices** policy uses read-only properties and can't be remediated.
 
