@@ -70,6 +70,14 @@ Wondering what you can experience in your free trial? The compliance solutions t
 
   Compliance Manager can help you throughout your compliance journey, from taking inventory of your data protection risks to managing the complexities of implementing controls, staying current with regulations and certifications, and reporting to auditors. [Learn more about Compliance Manager](compliance-manager.md)
 
+- **Data Loss Prevention (DLP)** 
+  Data Loss Prevention helps you control sharing and use of sensitive info on devices, apps, and services. With trials, you can extend coverage of DLP polices to Teams and devices, protect even more sensitive content using trainable classifiers and exact data match (EDM), and get started quickly with our recommended DLP policies.  [Learn more about Data Loss Prevention](dlp-learn-about-dlp.md) 
+  
+   When the trial ends:
+
+  - Your existing policies will stay turned on unless you turn them off.
+  - If you edit DLP policies that include either the Teams or Devices locations after the trial ends, those locations will be removed from the policy.
+
 - **eDiscovery**
 
   Take advantage of an end-to-end workflow for preserving, collecting, analyzing, and exporting content that's responsive to your organization's internal and external investigations. Legal teams can also manage the entire legal hold notification process by communicating with custodians involved in a case. [Learn more about eDiscovery](ediscovery.md)
@@ -80,18 +88,17 @@ Wondering what you can experience in your free trial? The compliance solutions t
 
 - **Information Protection**
 
-  Implement Microsoft Information Protection with [sensitivity labels](sensitivity-labels.md) and [data loss prevention policies](dlp-learn-about-dlp.md) to help you discover, classify, and protect your sensitive content wherever it lives or travels.
+  Implement Microsoft Information Protection with [sensitivity labels](sensitivity-labels.md) to help you discover, classify, and protect your sensitive content wherever it lives or travels.
+  
+  With the trials, you can recommend users apply sensitivity labels to their emails and docs, discover and automatically label sensitive content, take advantage of machine learning based classifiers, and get started quickly with our recommended labels and policies. 
 
-  The Information Protection trial provides you with default labels, auto-labeling for documents and emails, and data loss prevention to protect credit card numbers shared in Teams and by devices. The default policies we create for you get you up and running quickly, but you can fully customize them as you want.
-
-    When the trial ends, you'll receive an email that informs you:
+    When the trial ends:
 
   - All files and emails labeled during your trial stay labeled. You can manually remove the labels.
-  - You'll be downgraded to your previous Microsoft E3 license package that doesn't support auto-labeling and data loss prevention. Your existing policies will stay turned on unless you turn them off.
+  - Your existing policies will stay turned on unless you turn them off.
   - Any auto-labeling policies cannot be edited after the trial ends, but can be deleted.
-  - If you edit DLP policies that include either the Teams or Devices locations after the trial ends, those locations will be removed from the policy.
 
-  For more information about each of these preconfigured features and how they will impact users, see [Learn about the free trial for Microsoft Information Protection](mip-easy-trials.md).
+  For more information about our recommended labels and policies and how they will impact users, see [Get started quickly with Microsoft Information Protection](mip-easy-trials.md).
 
   For more information about the full range of features for Microsoft Information Protection, see [Microsoft Information Protection in Microsoft 365](information-protection.md).
 
