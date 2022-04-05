@@ -38,7 +38,7 @@ When you export documents from a review set in an Advanced eDiscovery case, you 
 
 The first step is to create an export job to export documents out of a review set. For more detailed instructions about all the export options, see [Export documents from a review set](export-documents-from-review-set.md). The following procedure highlights the settings to export documents to your organization's Azure Storage account.
 
-1. In the Microsoft Purview portal, open the Advanced eDiscovery case, select the **Review sets** tab, and then select the review set that you want to export.
+1. In the Microsoft Purview compliance portal, open the Advanced eDiscovery case, select the **Review sets** tab, and then select the review set that you want to export.
 
 2. In the review set, click **Action** > **Export**.
 

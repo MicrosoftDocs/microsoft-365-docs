@@ -20,7 +20,7 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-description: "This article contains reference information about the Content search eDiscovery tool in the Microsoft Purview portal to help you learn the many details about Content search."
+description: "This article contains reference information about the Content search eDiscovery tool in the Microsoft Purview compliance portal to help you learn the many details about Content search."
 ---
 
 # Feature reference for Content search

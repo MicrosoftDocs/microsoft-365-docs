@@ -75,7 +75,7 @@ Audit log retention policies are part of the new Advanced Audit capabilities in 
 
 1. Before you create an audit log retention policy – [key things to know](audit-log-retention-policies.md#before-you-create-an-audit-log-retention-policy) before creating your policy.
 1. [Create an audit log retention policy​](audit-log-retention-policies.md#create-an-audit-log-retention-policy)
-1. [Manage audit log retention policies in the Microsoft Purview portal](audit-log-retention-policies.md#manage-audit-log-retention-policies-in-the-microsoft-365-compliance-center) - Audit log retention policies are listed on the Audit retention policies tab (also called the dashboard). You can use the dashboard to view, edit, and delete audit retention policies.
+1. [Manage audit log retention policies in the Microsoft Purview compliance portal](audit-log-retention-policies.md#manage-audit-log-retention-policies-in-the-microsoft-365-compliance-center) - Audit log retention policies are listed on the Audit retention policies tab (also called the dashboard). You can use the dashboard to view, edit, and delete audit retention policies.
 1. Create and manage audit log retention policies on PowerShell - You can also use Security & Compliance Center PowerShell to [create and manage audit log retention policies](audit-log-retention-policies.md#create-and-manage-audit-log-retention-policies-in-powershell). One reason to use PowerShell is to create a policy for a record type or activity that isn't available in the UI.
 
 ## Communication Compliance
@@ -188,7 +188,7 @@ If your organization has data loss prevention (DLP), you can define policies tha
 Microsoft Endpoint DLP allows you to monitor Windows 10 devices and detect when sensitive items are used and shared.
 
 1. Prepare your endpoints  - make sure that the Windows 10 and macOS devices that you plan on deploying Endpoint DLP to [meet these requirements](endpoint-dlp-getting-started.md)
-1. [Onboard devices into device management](endpoint-dlp-getting-started.md)  - You must enable device monitoring and onboard your endpoints before you can monitor and protect sensitive items on a device. Both of these actions are done in the Microsoft Purview portal.
+1. [Onboard devices into device management](endpoint-dlp-getting-started.md)  - You must enable device monitoring and onboard your endpoints before you can monitor and protect sensitive items on a device. Both of these actions are done in the Microsoft Purview compliance portal.
    - Scenario 1 – [Onboarding devices](endpoint-dlp-getting-started.md) that have not been onboarded yet.
    - Scenario 2 - [Microsoft Defender for Endpoint is already deployed and there are endpoints reporting in](endpoint-dlp-getting-started.md). All these endpoints will appear in the managed devices list.
 1. [Configure our default DLP policy for devices](mip-easy-trials.md#dlp-for-devices) or [Define a new DLP policy for devices](endpoint-dlp-learn-about.md).
@@ -258,7 +258,7 @@ Set up compliance boundaries for eDiscovery investigations:
 
 ### Step 5 (optional): [Learn about Content search tool](search-for-content.md)
 
-Use the Content search tool in the Microsoft Purview portal to quickly find email in Exchange mailboxes, documents in SharePoint sites and OneDrive locations, and instant messaging conversations in Skype for Business. You can use the content search tool to search for email, documents, and instant messaging conversations in collaboration tools such as Microsoft Teams and Microsoft 365 Groups.
+Use the Content search tool in the Microsoft Purview compliance portal to quickly find email in Exchange mailboxes, documents in SharePoint sites and OneDrive locations, and instant messaging conversations in Skype for Business. You can use the content search tool to search for email, documents, and instant messaging conversations in collaboration tools such as Microsoft Teams and Microsoft 365 Groups.
 
 - [Learn more about Advanced eDiscovery search](search-for-content.md#search-for-content)
 

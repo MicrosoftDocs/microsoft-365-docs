@@ -34,7 +34,7 @@ This article describes how to configure information barrier policies. Several st
 When you define policies for information barriers, you'll work with user account attributes, segments, 'block' and/or 'allow' policies, and policy application.
 
 - User account attributes are defined in Azure Active Directory (or Exchange Online). These attributes can include department, job title, location, team name, and other job profile details.
-- Segments are sets of users that are defined in the Microsoft Purview portal using a selected **user account attribute**. (See the [list of supported attributes](information-barriers-attributes.md).)
+- Segments are sets of users that are defined in the Microsoft Purview compliance portal using a selected **user account attribute**. (See the [list of supported attributes](information-barriers-attributes.md).)
 - Information barrier policies determine communication limits or restrictions. When you define information barrier policies, you choose from two kinds of policies:
   - *Block* policies prevent one segment from communicating with another segment.
   - *Allow* policies allow one segment to communicate with only certain other segments.

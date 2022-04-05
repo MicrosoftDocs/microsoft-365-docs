@@ -17,7 +17,7 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: "Learn how to modify a keyword dictionary in the Microsoft Purview portal."
+description: "Learn how to modify a keyword dictionary in the Microsoft Purview compliance portal."
 ---
 
 # Modify a keyword dictionary

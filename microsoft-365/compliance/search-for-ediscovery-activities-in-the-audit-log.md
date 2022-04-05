@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
-description: Learn what events are logged when users assigned eDiscovery permissions perform Content search, Core eDiscovery, and Advanced eDiscovery tasks in the Microsoft Purview portal.
+description: Learn what events are logged when users assigned eDiscovery permissions perform Content search, Core eDiscovery, and Advanced eDiscovery tasks in the Microsoft Purview compliance portal.
 ms.custom: seo-marvel-apr2020
 ---
 
@@ -23,7 +23,7 @@ ms.custom: seo-marvel-apr2020
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Content Search and eDiscovery-related activities (for Core eDiscovery and Advanced eDiscovery) that are performed in Microsoft Purview portal or by running the corresponding PowerShell cmdlets are logged in the audit log. Events are logged when administrators or eDiscovery managers (or any user assigned eDiscovery permissions) perform the following Content Search and Core eDiscovery tasks in the Microsoft Purview portal:
+Content Search and eDiscovery-related activities (for Core eDiscovery and Advanced eDiscovery) that are performed in Microsoft Purview compliance portal or by running the corresponding PowerShell cmdlets are logged in the audit log. Events are logged when administrators or eDiscovery managers (or any user assigned eDiscovery permissions) perform the following Content Search and Core eDiscovery tasks in the Microsoft Purview compliance portal:
   
 - Creating and managing Core and Advanced eDiscovery cases
 
@@ -37,7 +37,7 @@ Content Search and eDiscovery-related activities (for Core eDiscovery and Advanc
 
 - Managing the eDiscovery Administrator role
   
-For more information about searching the audit log, the permissions that are required, and exporting search results, see [Search the audit log in the Microsoft Purview portal](search-the-audit-log-in-security-and-compliance.md).
+For more information about searching the audit log, the permissions that are required, and exporting search results, see [Search the audit log in the Microsoft Purview compliance portal](search-the-audit-log-in-security-and-compliance.md).
   
 ## How to search for and view eDiscovery activities
 
@@ -45,7 +45,7 @@ Currently, you have to do a few specific things to view eDiscovery activities in
   
 1. Go to <https://compliance.microsoft.com> and sign in using your work or school account.
 
-2. In the left navigation pane of the Microsoft Purview portal, click **Audit**.
+2. In the left navigation pane of the Microsoft Purview compliance portal, click **Audit**.
 
 3. In the **Activities** drop-down list, under **eDiscovery activities** or **Advanced eDiscovery activities**, click one or more activities to search for.
 
@@ -68,7 +68,7 @@ Currently, you have to do a few specific things to view eDiscovery activities in
 
 ## eDiscovery activities
 
-The following table describes the Content Search and Core eDiscovery activities that are logged when an administrator or eDiscovery manager performs an eDiscovery-related activity using the Microsoft Purview portal. Some activities performed in Advanced eDiscovery may be returned when you search for activities in this list.
+The following table describes the Content Search and Core eDiscovery activities that are logged when an administrator or eDiscovery manager performs an eDiscovery-related activity using the Microsoft Purview compliance portal. Some activities performed in Advanced eDiscovery may be returned when you search for activities in this list.
   
 > [!NOTE]
 > The eDiscovery activities described in this section provide similar information to the eDiscovery cmdlet activities described in the next section. We recommend that you use the eDiscovery activities described in this section because they will appear in the audit log search results within 30 minutes. It may take up to 24 hours for eDiscovery cmdlet activities to appear in audit log search results.
@@ -105,7 +105,7 @@ The following table describes the Content Search and Core eDiscovery activities 
 |Removed purge action performed on content search  <br/> |RemovedSearchResultsPurged  <br/> |Remove-ComplianceSearchAction  <br/> |A content search purge action was deleted.  <br/> |
 |Removed search report  <br/> |SearchReportRemoved  <br/> |Remove-ComplianceSearchAction  <br/> |A content search export report action was deleted.  <br/> |
 |Started analysis of content search  <br/> |SearchResultsSentToZoom  <br/> |New-ComplianceSearchAction  <br/> |The results of a content search were prepared for analysis in Advanced eDiscovery.  <br/> |
-|Started content search  <br/> |SearchStarted  <br/> |Start-ComplianceSearch  <br/> |A content search was started. When you create or change a content search by using the Microsoft Purview portal, the search is automatically started.<br/> |
+|Started content search  <br/> |SearchStarted  <br/> |Start-ComplianceSearch  <br/> |A content search was started. When you create or change a content search by using the Microsoft Purview compliance portal, the search is automatically started.<br/> |
 |Started export of content search  <br/> |SearchExported  <br/> |New-ComplianceSearchAction  <br/> |A user exported the results of a content search.  <br/> |
 |Started export report  <br/> |SearchReport  <br/> |New-ComplianceSearchAction  <br/> |A user exported a content search report.  <br/> |
 |Stopped content search  <br/> |SearchStopped  <br/> |Stop-ComplianceSearch  <br/> |A user stopped a content search.  <br/> |

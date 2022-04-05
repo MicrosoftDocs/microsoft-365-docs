@@ -37,7 +37,7 @@ To run the following cmdlets, [connect to Security & Compliance Center PowerShel
 After reviewing the generated text file and redacting sensitive information, send it to the Microsoft Support engineer working on your case.
 
 > [!NOTE]
-> You can also run the commands in this section to collect diagnostic information for the searches and exports listed on the **Content search** page in the Microsoft Purview portal.
+> You can also run the commands in this section to collect diagnostic information for the searches and exports listed on the **Content search** page in the Microsoft Purview compliance portal.
 
 ### Collect information about searches
 
@@ -65,7 +65,7 @@ Get-CaseHoldPolicy "<Case hold policy name>" | %{"--CaseHoldPolicy--";$_|FL;"--C
 
 ### Collect all case information
 
-Sometimes, it's not apparent what information is required by Microsoft Support to investigate your issue. In this situation, you can collect all of the diagnostics information for a Core eDiscovery case. The *Core eDiscovery case name* in the following command is the same as the name of a case that's displayed on the **Core eDiscovery** page in the Microsoft Purview portal.
+Sometimes, it's not apparent what information is required by Microsoft Support to investigate your issue. In this situation, you can collect all of the diagnostics information for a Core eDiscovery case. The *Core eDiscovery case name* in the following command is the same as the name of a case that's displayed on the **Core eDiscovery** page in the Microsoft Purview compliance portal.
 
 ```powershell
 Get-ComplianceCase "<Core eDiscovery case name>"| %{$_|fl;"`t==Searches==";Get-ComplianceSearch -Case $_.Name | FL;"`t==Search Actions==";Get-ComplianceSearchAction -Case $_.Name |FL;"`t==Holds==";Get-CaseHoldPolicy -Case $_.Name | %{$_|FL;"`t`t ==$($_.Name) Rules==";Get-CaseHoldRule -Policy $_.Name | FL}} > "eDiscoveryCase.txt"
@@ -75,7 +75,7 @@ Get-ComplianceCase "<Core eDiscovery case name>"| %{$_|fl;"`t==Searches==";Get-C
 
 The **Settings** tab in an Advanced eDiscovery case lets you quickly copy the diagnostic information for the case. The diagnostic information is saved to the clipboard so you can paste it to a text file and send to Microsoft Support.
 
-1. Go to the Microsoft Purview portal, and select **eDiscovery** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2174006" target="_blank">**Advanced**</a>.
+1. Go to the Microsoft Purview compliance portal, and select **eDiscovery** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2174006" target="_blank">**Advanced**</a>.
 
 2. Select a case and then click the **Settings** tab.
 

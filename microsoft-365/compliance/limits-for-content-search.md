@@ -16,20 +16,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
-description: "Learn about the limits in effect for the Content search and Core eDiscovery features in the Microsoft Purview portal."
+description: "Learn about the limits in effect for the Content search and Core eDiscovery features in the Microsoft Purview compliance portal."
 ---
 
 # Limits for eDiscovery search
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Various limits are applied to eDiscovery search tools in the Microsoft Purview portal. This includes searches run on the **Content search** page and searches that are associated with an eDiscovery case on the **Core eDiscovery** page. These limits help to maintain the health and quality of services provided to organizations. There are also limits related to the indexing of email messages in Exchange Online for search. You can't modify the limits for eDiscovery searches or email indexing, but you should be aware of them so that you can take these limits into consideration when planning, running, and troubleshooting eDiscovery searches.
+Various limits are applied to eDiscovery search tools in the Microsoft Purview compliance portal. This includes searches run on the **Content search** page and searches that are associated with an eDiscovery case on the **Core eDiscovery** page. These limits help to maintain the health and quality of services provided to organizations. There are also limits related to the indexing of email messages in Exchange Online for search. You can't modify the limits for eDiscovery searches or email indexing, but you should be aware of them so that you can take these limits into consideration when planning, running, and troubleshooting eDiscovery searches.
 
 For limits related to the Advanced eDiscovery tool, see [Limits in Advanced eDiscovery](limits-ediscovery20.md)
 
 ## Search limits
 
-The following table lists the search limits when using the content search tool in the Microsoft Purview portal and for searches that are associated with a Core eDiscovery case.
+The following table lists the search limits when using the content search tool in the Microsoft Purview compliance portal and for searches that are associated with a Core eDiscovery case.
 
 <br>
 
@@ -57,7 +57,7 @@ The following table lists the search limits when using the content search tool i
 |The maximum number of locations in a search that you can export items from. If the search that you're exporting has more locations than this limit, the export will fail. For more information, see [Export content search results](export-search-results.md).|100,000|
 
 > [!NOTE]
-> <sup>1</sup> Although you can search an unlimited number of mailboxes in a single search, you can only download the exported search results from a maximum of 100,000 mailboxes using the eDiscovery Export Tool in the Microsoft Purview portal.
+> <sup>1</sup> Although you can search an unlimited number of mailboxes in a single search, you can only download the exported search results from a maximum of 100,000 mailboxes using the eDiscovery Export Tool in the Microsoft Purview compliance portal.
 >
 > <sup>2</sup> The intent of the preview page is to show a limited sample of the results. Even for massive searches with thousands of results, the number of items that are shown on the preview page can, and often will, be much less than maximum possible value of 1000. To see the complete search results, you need to export the results.
 >

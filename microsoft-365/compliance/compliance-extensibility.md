@@ -36,15 +36,15 @@ There are two key building blocks for compliance extensibility:
 
 ## Data connectors
 
-Microsoft provides third-party data connectors that can be configured in the Microsoft Purview portal. For a list of data connectors provided by Microsoft, see the [Third-party data connectors](archiving-third-party-data.md#third-party-data-connectors) table. The table of third-party data connectors also summarizes the compliance solutions that you can apply to third-party data after you import and archive data in Microsoft 365, and links to the step-by-step instructions for each connector.
+Microsoft provides third-party data connectors that can be configured in the Microsoft Purview compliance portal. For a list of data connectors provided by Microsoft, see the [Third-party data connectors](archiving-third-party-data.md#third-party-data-connectors) table. The table of third-party data connectors also summarizes the compliance solutions that you can apply to third-party data after you import and archive data in Microsoft 365, and links to the step-by-step instructions for each connector.
 
-To learn more about Microsoft 365 data connectors, see [Archiving third-party data](archiving-third-party-data.md). If a third-party data type isn't supported by the data connectors available in the Microsoft Purview portal, you can work with a partner who can provide you with a custom connector. For a list of partners you can work with and the step-by-step process for this method, see [Work with a partner to archive third-party data](work-with-partner-to-archive-third-party-data.md).
+To learn more about Microsoft 365 data connectors, see [Archiving third-party data](archiving-third-party-data.md). If a third-party data type isn't supported by the data connectors available in the Microsoft Purview compliance portal, you can work with a partner who can provide you with a custom connector. For a list of partners you can work with and the step-by-step process for this method, see [Work with a partner to archive third-party data](work-with-partner-to-archive-third-party-data.md).
 
 ### Prerequisites for data connectors
 
-Many of the data connectors available in the Microsoft Purview portal to import and archive third-party data require that you prepare and perform configuration tasks in the third-party data source. These prerequisites are documented in detail for each third-party data connector.
+Many of the data connectors available in the Microsoft Purview compliance portal to import and archive third-party data require that you prepare and perform configuration tasks in the third-party data source. These prerequisites are documented in detail for each third-party data connector.
 
-For data connectors in the Microsoft Purview portal provided by one of Microsoft's partners, your organization will need a business relationship with the partner before you can deploy a connector.
+For data connectors in the Microsoft Purview compliance portal provided by one of Microsoft's partners, your organization will need a business relationship with the partner before you can deploy a connector.
 
 For guidance and requirements for third-party data connectors, see the "Data connectors" section in [Microsoft 365 guidance for security & compliance - Service Descriptions | Microsoft Docs](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 

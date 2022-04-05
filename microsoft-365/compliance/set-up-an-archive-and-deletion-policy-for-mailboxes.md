@@ -66,11 +66,11 @@ The first step is to enable the archive mailbox for each user in your organizati
 > [!NOTE]
 > You can enable archive mailboxes any time during this process, just as long as they're enabled at some point before you complete the process. If an archive mailbox isn't enabled, no action is taken on any items that have an archive or deletion policy assigned to it.
   
-1. Go to the [Microsoft Purview portal](https://compliance.microsoft.com).
+1. Go to the [Microsoft Purview compliance portal](https://compliance.microsoft.com).
 
 2. Sign in using your global administrator account.
     
-3. In the Microsoft Purview portal, select **Information governance**, and then click the **Archive** tab.
+3. In the Microsoft Purview compliance portal, select **Information governance**, and then click the **Archive** tab.
 
     A list of the mailboxes in your organization is displayed and whether the corresponding archive mailbox is enabled or disabled.
 

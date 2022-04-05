@@ -75,4 +75,4 @@ For Microsoft Stream, when a user is deleted from Azure Active Directory (Azure 
 
 ## Insider risk management as an investigative tool
 
-[Insider risk management](../compliance/insider-risk-management.md) is a feature of the Microsoft Purview portal to help you minimize internal risk by enabling you to detect, investigate, and take action on risky activities in your organization.
+[Insider risk management](../compliance/insider-risk-management.md) is a feature of the Microsoft Purview compliance portal to help you minimize internal risk by enabling you to detect, investigate, and take action on risky activities in your organization.

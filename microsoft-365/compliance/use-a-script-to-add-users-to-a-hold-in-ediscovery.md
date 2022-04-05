@@ -21,14 +21,14 @@ ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 ms.custom: 
 - seo-marvel-apr2020
 - admindeeplinkSPO
-description: "Learn how to run a script to add mailboxes & OneDrive for Business sites to a new hold associated with an eDiscovery case in the Microsoft Purview portal."
+description: "Learn how to run a script to add mailboxes & OneDrive for Business sites to a new hold associated with an eDiscovery case in the Microsoft Purview compliance portal."
 ---
 
 # Use a script to add users to a hold in a Core eDiscovery case
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Security & Compliance Center PowerShell provides cmdlets that let you automate time-consuming tasks related to creating and managing eDiscovery cases. Currently, using the Core eDiscovery case in the Microsoft Purview portal to place a large number of custodian content locations on hold takes time and preparation. For example, before you create a hold, you have to collect the URL for each OneDrive for Business site that you want to place on hold. Then for each user you want to place on hold, you have to add their mailbox and their OneDrive for Business site to the hold. You can use the script in this article to automate this process.
+Security & Compliance Center PowerShell provides cmdlets that let you automate time-consuming tasks related to creating and managing eDiscovery cases. Currently, using the Core eDiscovery case in the Microsoft Purview compliance portal to place a large number of custodian content locations on hold takes time and preparation. For example, before you create a hold, you have to collect the URL for each OneDrive for Business site that you want to place on hold. Then for each user you want to place on hold, you have to add their mailbox and their OneDrive for Business site to the hold. You can use the script in this article to automate this process.
   
 The script prompts you for the name of your organization's My Site domain (for example, `contoso` in the URL https://contoso-my.sharepoint.com), the name of an existing eDiscovery case, the name of the new hold that associated with the case, a list of email addresses of the users you want to put on hold, and a search query to use if you want to create a query-based hold. The script then gets the URL for the OneDrive for Business site for each user in the list, creates the new hold, and then adds the mailbox and OneDrive for Business site for each user in the list to the hold. The script also generates log files that contain information about the new hold.
   
@@ -42,9 +42,9 @@ Here are the steps to make this happen:
   
 ## Before you add users to a hold
 
-- You have to be a member of the eDiscovery Manager role group in the Microsoft Purview portal and a SharePoint Online administrator to run the script in Step 3. For more information, see [Assign eDiscovery permissions in the Office‍ 365 Security & Compliance Center](assign-ediscovery-permissions.md).
+- You have to be a member of the eDiscovery Manager role group in the Microsoft Purview compliance portal and a SharePoint Online administrator to run the script in Step 3. For more information, see [Assign eDiscovery permissions in the Office‍ 365 Security & Compliance Center](assign-ediscovery-permissions.md).
 
-- A maximum of 1,000 mailboxes and 100 sites can be added to a hold that's associated with an eDiscovery case in the Microsoft Purview portal. Assuming that every user that you want to place on hold has a OneDrive for Business site, you can add a maximum of 100 users to a hold using the script in this article.
+- A maximum of 1,000 mailboxes and 100 sites can be added to a hold that's associated with an eDiscovery case in the Microsoft Purview compliance portal. Assuming that every user that you want to place on hold has a OneDrive for Business site, you can add a maximum of 100 users to a hold using the script in this article.
 
 - Be sure to save the list of users that you create in Step 2 and the script in Step 3 to the same folder. That will make it easier to run the script.
 
@@ -90,7 +90,7 @@ When you run the script in this step, it will prompt you for the following infor
 
 - **Search query for a query-based hold:** You can create a query-based hold so that only the content that meets the specified search criteria is placed on hold. To place all content on hold, just press **Enter** when you're prompted for a search query.
 
-- **Turning on the hold or not:** You can have the script turn on the hold after it's created or you can have the script create the hold without enabling it. If you don't have the script turn on the hold, you can turn it on later in the Microsoft Purview portal or by running the following PowerShell commands:
+- **Turning on the hold or not:** You can have the script turn on the hold after it's created or you can have the script create the hold without enabling it. If you don't have the script turn on the hold, you can turn it on later in the Microsoft Purview compliance portal or by running the following PowerShell commands:
 
   ```powershell
   Set-CaseHoldPolicy -Identity <name of the hold> -Enabled $true
@@ -280,7 +280,7 @@ Write-host "Script complete!" -foregroundColor Yellow
 
 4. Enter the information that the script prompts you for.
 
-   The script connects to Security & Compliance Center PowerShell, and then creates the new hold in the eDiscovery case and adds the mailboxes and OneDrive for Business for the users in the list. You can go to the case on the **eDiscovery** page in the Microsoft Purview portal to view the new hold.
+   The script connects to Security & Compliance Center PowerShell, and then creates the new hold in the eDiscovery case and adds the mailboxes and OneDrive for Business for the users in the list. You can go to the case on the **eDiscovery** page in the Microsoft Purview compliance portal to view the new hold.
 
 After the script is finished running, it creates the following log files, and saves them to the folder where the script is located.
   

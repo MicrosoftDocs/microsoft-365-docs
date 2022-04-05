@@ -64,7 +64,7 @@ To use DLP policy to a specific non-Microsoft cloud app, the app must be connect
 After you connect your cloud apps to Defender for Cloud Apps, you can create Microsoft 365 DLP policies for them.
 
 > [!NOTE]
-> It's also possible to use Microsoft Defender for Cloud Apps to create DLP policies to Microsoft cloud apps. However, it's recommended to use Microsoft Purview Portal to create and manage DLP policies to Microsoft cloud apps.
+> It's also possible to use Microsoft Defender for Cloud Apps to create DLP policies to Microsoft cloud apps. However, it's recommended to use Microsoft Purview compliance portal to create and manage DLP policies to Microsoft cloud apps.
 
 ## Create a DLP policy to a non-Microsoft cloud app
 

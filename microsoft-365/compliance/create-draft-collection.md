@@ -36,7 +36,7 @@ After you've identified custodians and any non-custodian data sources for the ca
 
 ## Create a draft collection
 
-1. In the Microsoft Purview portal, open the Advanced eDiscovery case, and then select the **Collections** tab.
+1. In the Microsoft Purview compliance portal, open the Advanced eDiscovery case, and then select the **Collections** tab.
 
 2. On the **Collections** page, select **New collection** > **Standard collection**.
 

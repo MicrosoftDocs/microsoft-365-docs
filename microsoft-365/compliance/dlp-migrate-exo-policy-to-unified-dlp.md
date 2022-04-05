@@ -24,7 +24,7 @@ description: "Learn how to plan for and migrate your Exchange online data loss p
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-[Exchange Online data loss prevention (DLP) policies](/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention) are being deprecated. [Much richer DLP functionality](dlp-learn-about-dlp.md), including Exchange Online DLP, is offered in the [Microsoft Purview portal](https://compliance.microsoft.com/datalossprevention?viewid=policies). You can use the DLP policy migration wizard to help you bring your Exchange Online DLP policies over to the Compliance center where you'll manage them.
+[Exchange Online data loss prevention (DLP) policies](/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention) are being deprecated. [Much richer DLP functionality](dlp-learn-about-dlp.md), including Exchange Online DLP, is offered in the [Microsoft Purview compliance portal](https://compliance.microsoft.com/datalossprevention?viewid=policies). You can use the DLP policy migration wizard to help you bring your Exchange Online DLP policies over to the Compliance center where you'll manage them.
 
 The migration wizard works by reading the configuration of your DLP policies in Exchange and then creating duplicate policies in the Compliance center. By default the wizard creates the new versions of the policies in **Test** mode, so you can see what impact they'd have in your environment without enforcing any of the actions. Once you're ready to fully transition to the Compliance center versions, ***you must***:
 
@@ -91,7 +91,7 @@ The account that you use to run the migration wizard must have access to both th
 
 After you have evaluated all your Exchange and Compliance center DLP policies for need and compatibility, you can use the migration wizard.
 
-1. Open the [Microsoft Purview portal](https://compliance.microsoft.com/datalossprevention?viewid=policies) DLP console.
+1. Open the [Microsoft Purview compliance portal](https://compliance.microsoft.com/datalossprevention?viewid=policies) DLP console.
 2. If there are Exchange DLP policies that can be migrated, a banner will appear at the top of the page letting you know.
 3. Choose **Migrate policies** in the banner to open the migration wizard. All the Exchange DLP policies are listed. Previously migrated policies cannot be selected.
 4. Select the policies you want to migrate. You can migrate them individually, or in groups using a phased approach or all at once. Select **Next**.
@@ -155,7 +155,7 @@ Once you are satisfied with how your migrated policies are functioning, you can 
 
 1. Open the Exchange Admin Center DLP console.
 2. Deactivate or delete the source policy.
-3. Open the [Microsoft Purview portal](https://compliance.microsoft.com/datalossprevention?viewid=policies) DLP console and select the policy you want to make active to edit it.
+3. Open the [Microsoft Purview compliance portal](https://compliance.microsoft.com/datalossprevention?viewid=policies) DLP console and select the policy you want to make active to edit it.
 4. Change the status to **Turn on**.
 
 ## Related articles

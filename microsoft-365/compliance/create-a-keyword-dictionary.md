@@ -71,7 +71,7 @@ Remove-Item $rawFile
 
 The keywords for your dictionary could come from various sources, most commonly from a file (such as a .csv or .txt list) imported in the service or by PowerShell cmdlet, from a list you enter directly in the PowerShell cmdlet, or from an existing dictionary. When you create a keyword dictionary, you follow the same core steps:
 
-1. Use the *<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview portal</a> or connect to  **Security &amp; Compliance Center PowerShell**.
+1. Use the *<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> or connect to  **Security &amp; Compliance Center PowerShell**.
 
 2. **Define or load your keywords from your intended source**. The wizard and the cmdlet both accept a comma-separated list of keywords to create a custom keyword dictionary, so this step will vary slightly depending on where your keywords come from. Once loaded, they're encoded and converted to a byte array before they're imported.
 
@@ -81,7 +81,7 @@ The keywords for your dictionary could come from various sources, most commonly 
 
 Use the following steps to create and import keywords for a custom dictionary:
 
-1. Connect to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview portal</a>.
+1. Connect to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>.
 
 2. Navigate to **Classifications > Sensitive info types**.
 

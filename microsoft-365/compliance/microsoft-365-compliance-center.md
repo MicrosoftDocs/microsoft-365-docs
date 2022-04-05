@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Purview portal"
+title: "Microsoft Purview compliance portal"
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -9,48 +9,48 @@ ms.service: O365-seccomp
 audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
-description: Learn about the Microsoft Purview portal, including what it contains, how to get it, and your next steps.
+description: Learn about the Microsoft Purview compliance portal, including what it contains, how to get it, and your next steps.
 ms.collection: M365-security-compliance
 ms.custom: 
 - admindeeplinkCOMPLIANCE
 - intro-overview
 ---
 
-# Microsoft Purview portal
+# Microsoft Purview compliance portal
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-If you're interested in your organization's compliance posture, you're going to love the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview portal</a>. The Microsoft Purview portal provides easy access to the data and tools you need to manage to your organization's compliance needs.
+If you're interested in your organization's compliance posture, you're going to love the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>. The Microsoft Purview compliance portal provides easy access to the data and tools you need to manage to your organization's compliance needs.
 
-Read this article to get acquainted with the Microsoft Purview portal, [how to get it](#how-do-i-get-the-compliance-center), [frequently asked questions](#frequently-asked-questions), and your [next steps](#next-steps).
+Read this article to get acquainted with the Microsoft Purview compliance portal, [how to get it](#how-do-i-get-the-compliance-center), [frequently asked questions](#frequently-asked-questions), and your [next steps](#next-steps).
 
-[![Microsoft Purview portal home page.](../media/m365-compliance-center-home.png)](https://compliance.microsoft.com)
+[![Microsoft Purview compliance portal home page.](../media/m365-compliance-center-home.png)](https://compliance.microsoft.com)
 
 ## Welcome to Microsoft Purview
 
-When you go to your Microsoft Purview portal for the first time, you're greeted with the following welcome message:
+When you go to your Microsoft Purview compliance portal for the first time, you're greeted with the following welcome message:
 
-![Microsoft Purview portal intro.](../media/m365-compliance-center-welcome-steps.png)
+![Microsoft Purview compliance portal intro.](../media/m365-compliance-center-welcome-steps.png)
 
 The welcome banner gives you some pointers on how to get started, with next steps, and an invitation for you to give us feedback.
 
 ## Card section
 
-When you first visit the Microsoft Purview portal, the card section on the home page shows you at a glance how your organization is doing with data compliance, what solutions are available for your organization, and a summary of any active alerts.
+When you first visit the Microsoft Purview compliance portal, the card section on the home page shows you at a glance how your organization is doing with data compliance, what solutions are available for your organization, and a summary of any active alerts.
 
 From here, you can:
 
 - Review the **Microsoft Purview Compliance Manager** card, which leads you to the [Compliance Manager](compliance-manager.md) solution. Compliance Manager helps simplify the way you manage compliance. It calculates a risk-based score measuring your progress toward completing recommended actions that help reduce risks around data protection and regulatory standards. It also provides workflow capabilities and built-in control mapping to help you efficiently carry out improvement actions.
 
-    ![Compliance Manager card Microsoft Purview portal.](../media/m365-compliance-center-compliance-manager-card.png)
+    ![Compliance Manager card Microsoft Purview compliance portal.](../media/m365-compliance-center-compliance-manager-card.png)
 
 - Review the new **Solution catalog** card, which links to collections of [integrated solutions](microsoft-365-solution-catalog.md) you can use to help you manage end-to-end compliance scenarios. A solution's capabilities and tools might include a combination of policies, alerts, reports, and more.
 
-    ![Solution catalog card Microsoft Purview portal.](../media/m365-compliance-center-solution-catalog-card.png)
+    ![Solution catalog card Microsoft Purview compliance portal.](../media/m365-compliance-center-solution-catalog-card.png)
 
 - Review the **Active alerts** card, which includes a summary of the most [active alerts](alert-policies.md) and includes a link where you can view more detailed information, such as Severity, Status, Category, and more.
 
-    ![Active alerts card Microsoft Purview portal.](../media/m365-compliance-center-active-alerts-card.png)
+    ![Active alerts card Microsoft Purview compliance portal.](../media/m365-compliance-center-active-alerts-card.png)
 
 You can also use the **Add cards** feature to add additional cards, such as one showing your organization's cloud app compliance, and another showing data about users with shared files, with links to [Defender for Cloud Apps](/cloud-app-security/) or other tools where you can explore data.
 
@@ -66,19 +66,19 @@ In addition to links in cards on the home page, you'll see a navigation pane on 
 
 |Navigation|Comments|
 |---|---|
-|![Navigation in the Microsoft Purview portal.](../media/m365-compliance-center-leftnav.png)|Select **Home** to return to the Microsoft Purview portal main page. <p> Visit **Compliance Manager** to check your compliance score and start [managing compliance](compliance-manager.md) for your organization. <p> Select the **Data classification** section to access [trainable classifiers](classifier-learn-about.md), [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md), content and [activity](data-classification-activity-explorer.md) explorers. <p> Select **Data connectors** to [configure connectors](archiving-third-party-data.md) to import and archive data in your Microsoft 365 subscription. <p> Go to **Alerts** to view and resolve [alerts](alert-policies.md) <p>Visit **Reports** to view data about [label usage and retention](sensitivity-labels.md), [DLP policy matches and overrides](view-the-dlp-reports.md), [shared files](/cloud-app-security/file-filters), [third-party apps in use](/cloud-app-security/discovered-apps), and more. <p> Go to **Policies** to set up policies to govern data, manage devices, and receive [alerts](../security/office-365-security/alerts.md). You can also access your [DLP](dlp-learn-about-dlp.md) and [retention](retention.md) policies. <p> Select **Permissions** to manage who in your organization has access to the Microsoft Purview portal to view content and complete tasks. <p> Use the links in the **Solutions** section to access your organization's compliance solutions. These include: <p> [Catalog](microsoft-365-solution-catalog.md) <br> Discover, learn about, and start using the intelligent compliance and risk management solutions available to your organization. <p> [Audit](search-the-audit-log-in-security-and-compliance.md) <br> Use the Audit log to investigate common support and compliance issues. <p> [Content search](search-for-content.md) <br> Use Content search to quickly find email in Exchange mailboxes, documents in SharePoint sites and OneDrive locations, and instant messaging conversations in Microsoft Teams and Skype for Business. <p> [Communication compliance](communication-compliance.md) <br> Minimize communication risks by automatically capturing inappropriate messages, investigating possible policy violations, and taking steps to remediate. <p> [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md) <br> Detect sensitive content as it's used and shared throughout your organization, in the cloud and on devices, and helps prevent accidental data loss. <p> [Data subject requests](/compliance/regulatory/gdpr-manage-gdpr-data-subject-requests-with-the-dsr-case-tool) <br> Find and export a user's personal data to help you respond to data subject requests for the General Data Protection Regulation (GDPR). <p> [eDiscovery](overview-ediscovery-20.md) <br> Expand this section to use the core and Advanced eDiscovery for preserving, collecting, reviewing, analyzing, and exporting content that's responsive to your organization's internal and external investigations. <p> [Information governance](manage-information-governance.md) <br> Manage your content lifecycle using features to import, store, and classify business-critical data so you can keep what you need and delete what you don't. <p> [Information protection](information-protection.md) <br> Discover, classify, and protect sensitive and business-critical content throughout its lifecycle across your organization. <p> [Insider risk management](insider-risk-management.md) <br> Detect risky activity across your organization to help you quickly identify, investigate, and take action on insider risks and threats. <p> [Records management](records-management.md) <br> Automate and simplify the retention schedule for regulatory, legal and business-critical records in your organization.|
+|![Navigation in the Microsoft Purview compliance portal.](../media/m365-compliance-center-leftnav.png)|Select **Home** to return to the Microsoft Purview compliance portal main page. <p> Visit **Compliance Manager** to check your compliance score and start [managing compliance](compliance-manager.md) for your organization. <p> Select the **Data classification** section to access [trainable classifiers](classifier-learn-about.md), [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md), content and [activity](data-classification-activity-explorer.md) explorers. <p> Select **Data connectors** to [configure connectors](archiving-third-party-data.md) to import and archive data in your Microsoft 365 subscription. <p> Go to **Alerts** to view and resolve [alerts](alert-policies.md) <p>Visit **Reports** to view data about [label usage and retention](sensitivity-labels.md), [DLP policy matches and overrides](view-the-dlp-reports.md), [shared files](/cloud-app-security/file-filters), [third-party apps in use](/cloud-app-security/discovered-apps), and more. <p> Go to **Policies** to set up policies to govern data, manage devices, and receive [alerts](../security/office-365-security/alerts.md). You can also access your [DLP](dlp-learn-about-dlp.md) and [retention](retention.md) policies. <p> Select **Permissions** to manage who in your organization has access to the Microsoft Purview compliance portal to view content and complete tasks. <p> Use the links in the **Solutions** section to access your organization's compliance solutions. These include: <p> [Catalog](microsoft-365-solution-catalog.md) <br> Discover, learn about, and start using the intelligent compliance and risk management solutions available to your organization. <p> [Audit](search-the-audit-log-in-security-and-compliance.md) <br> Use the Audit log to investigate common support and compliance issues. <p> [Content search](search-for-content.md) <br> Use Content search to quickly find email in Exchange mailboxes, documents in SharePoint sites and OneDrive locations, and instant messaging conversations in Microsoft Teams and Skype for Business. <p> [Communication compliance](communication-compliance.md) <br> Minimize communication risks by automatically capturing inappropriate messages, investigating possible policy violations, and taking steps to remediate. <p> [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md) <br> Detect sensitive content as it's used and shared throughout your organization, in the cloud and on devices, and helps prevent accidental data loss. <p> [Data subject requests](/compliance/regulatory/gdpr-manage-gdpr-data-subject-requests-with-the-dsr-case-tool) <br> Find and export a user's personal data to help you respond to data subject requests for the General Data Protection Regulation (GDPR). <p> [eDiscovery](overview-ediscovery-20.md) <br> Expand this section to use the core and Advanced eDiscovery for preserving, collecting, reviewing, analyzing, and exporting content that's responsive to your organization's internal and external investigations. <p> [Information governance](manage-information-governance.md) <br> Manage your content lifecycle using features to import, store, and classify business-critical data so you can keep what you need and delete what you don't. <p> [Information protection](information-protection.md) <br> Discover, classify, and protect sensitive and business-critical content throughout its lifecycle across your organization. <p> [Insider risk management](insider-risk-management.md) <br> Detect risky activity across your organization to help you quickly identify, investigate, and take action on insider risks and threats. <p> [Records management](records-management.md) <br> Automate and simplify the retention schedule for regulatory, legal and business-critical records in your organization.|
 |
 
 ## How do I get the compliance center?
 
-- If you don't have the new Microsoft Purview portal already, you'll have it soon. The Microsoft Purview portal is generally available now to Microsoft 365 SKU customers.
-- To visit the Microsoft Purview portal, as a global administrator, compliance administrator, or compliance data administrator go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and sign in.
+- If you don't have the new Microsoft Purview compliance portal already, you'll have it soon. The Microsoft Purview compliance portal is generally available now to Microsoft 365 SKU customers.
+- To visit the Microsoft Purview compliance portal, as a global administrator, compliance administrator, or compliance data administrator go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and sign in.
 
 ## Frequently asked questions
 
-**Why don't I see the new Microsoft Purview portal yet?**
+**Why don't I see the new Microsoft Purview compliance portal yet?**
 
-First, make sure that you have the appropriate licenses and permissions. Then, sign in at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview portal</a>. If you don't see the new compliance center yet, you'll have it soon.
+First, make sure that you have the appropriate licenses and permissions. Then, sign in at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>. If you don't see the new compliance center yet, you'll have it soon.
 
 ![More resources.](../media/m365-compliance-center-more-resources.png)
 
@@ -94,4 +94,4 @@ First, make sure that you have the appropriate licenses and permissions. Then, s
 
 - **Learn about and create communication compliance policies** to quickly identify and remediate corporate code-of-conduct policy violations. See [Learn about communication compliance](communication-compliance.md).
 
-- **Visit your Microsoft Purview portal often**, and make sure to review any alerts or potential risks that arise. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and sign in.
+- **Visit your Microsoft Purview compliance portal often**, and make sure to review any alerts or potential risks that arise. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and sign in.

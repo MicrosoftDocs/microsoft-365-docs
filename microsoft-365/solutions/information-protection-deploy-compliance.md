@@ -32,7 +32,7 @@ This article provides guidance on the use of this tool for data privacy purposes
 
 #### What is Compliance Manager
 
-[Compliance Manager](../compliance/compliance-manager.md) is a workflow-based risk assessment tool in the Microsoft Purview portal for managing regulatory compliance activities related to Microsoft cloud services. As part of your Microsoft 365 or Azure Active Directory (Azure AD) subscription, Compliance Manager helps you manage regulatory compliance within the shared responsibility model for Microsoft cloud services.
+[Compliance Manager](../compliance/compliance-manager.md) is a workflow-based risk assessment tool in the Microsoft Purview compliance portal for managing regulatory compliance activities related to Microsoft cloud services. As part of your Microsoft 365 or Azure Active Directory (Azure AD) subscription, Compliance Manager helps you manage regulatory compliance within the shared responsibility model for Microsoft cloud services.
 
 **Ready to use assessments**
 

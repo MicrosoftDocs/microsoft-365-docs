@@ -40,7 +40,7 @@ And if you'd like to know what's new with other Microsoft cloud services:
 - [What's new in Azure Active Directory](/azure/active-directory/fundamentals/whats-new)
 - [What's new in the Exchange admin center](/Exchange/whats-new)
 - [What's new in Microsoft Intune](/mem/intune/fundamentals/whats-new)
-- [What's new in the Microsoft Purview portal](/Office365/SecurityCompliance/whats-new)
+- [What's new in the Microsoft Purview compliance portal](/Office365/SecurityCompliance/whats-new)
 - [What's new in Microsoft 365 Defender](../security/mtp/whats-new.md)
 - [What's new in the SharePoint admin center](/sharepoint/what-s-new-in-admin-center)
 - [Office updates](/OfficeUpdates/)

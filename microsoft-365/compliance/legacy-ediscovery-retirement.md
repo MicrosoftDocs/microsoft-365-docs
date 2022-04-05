@@ -21,11 +21,11 @@ description: "In-Place eDiscovery and In-Place Hold (and the corresponding Power
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!IMPORTANT]
-> The functionality of the legacy eDiscovery tools described in this article has either been removed from the Microsoft 365 service or is still available, but no longer supported. Any functionality that's still available may be removed without notice. If you're still using any of these legacy tools, consider migrating to the eDiscovery tools in the Microsoft Purview portal or one of the alternatives described in this article.
+> The functionality of the legacy eDiscovery tools described in this article has either been removed from the Microsoft 365 service or is still available, but no longer supported. Any functionality that's still available may be removed without notice. If you're still using any of these legacy tools, consider migrating to the eDiscovery tools in the Microsoft Purview compliance portal or one of the alternatives described in this article.
 
-Over the years, Microsoft has provided eDiscovery tools that let you search, preview, and export email content from Exchange Online. However, these tools no longer offer an effective way to search for non-Exchange content in other Microsoft 365 services, such as SharePoint Online and Microsoft 365 Groups. To address this, Microsoft offers other eDiscovery tools that help you search for a wide variety of Microsoft 365 content. And we've been working hard to incorporate the most current and powerful eDiscovery functionality in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview portal</a>. This allows organizations to respond to legal, internal, and other document requests for content across many Microsoft 365 services, including Exchange Online.
+Over the years, Microsoft has provided eDiscovery tools that let you search, preview, and export email content from Exchange Online. However, these tools no longer offer an effective way to search for non-Exchange content in other Microsoft 365 services, such as SharePoint Online and Microsoft 365 Groups. To address this, Microsoft offers other eDiscovery tools that help you search for a wide variety of Microsoft 365 content. And we've been working hard to incorporate the most current and powerful eDiscovery functionality in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>. This allows organizations to respond to legal, internal, and other document requests for content across many Microsoft 365 services, including Exchange Online.
 
-As a result of this new and improved eDiscovery functionality in the Microsoft Purview portal, we're retiring the following eDiscovery-related features and functionality related to searching for email content in Exchange Online and Microsoft 365:
+As a result of this new and improved eDiscovery functionality in the Microsoft Purview compliance portal, we're retiring the following eDiscovery-related features and functionality related to searching for email content in Exchange Online and Microsoft 365:
 
 - [In-Place eDiscovery](/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery) and [In-Place Holds](/exchange/security-and-compliance/create-or-remove-in-place-holds) in the Exchange admin center.
 
@@ -54,7 +54,7 @@ As a result of this new and improved eDiscovery functionality in the Microsoft P
 
    - [GetHoldOnMailboxes](/exchange/client-developer/web-service-reference/getholdonmailboxes-operation)
 
-- [Office 365 Advanced eDiscovery v1.0](./overview-ediscovery-20.md), which is the first version of Advanced eDiscovery that's accessed through a Core eDiscovery case in the Microsoft Purview portal. The retirement of Advanced eDiscovery v1.0 doesn't impact your ability to create and manage Core eDiscovery cases.
+- [Office 365 Advanced eDiscovery v1.0](./overview-ediscovery-20.md), which is the first version of Advanced eDiscovery that's accessed through a Core eDiscovery case in the Microsoft Purview compliance portal. The retirement of Advanced eDiscovery v1.0 doesn't impact your ability to create and manage Core eDiscovery cases.
 
 > [!NOTE]
 > The eDiscovery functionality being retired only applies to cloud-based versions of Microsoft 365 and Office 365. eDiscovery functionality in on-premises versions of Exchange and SharePoint will still be supported until further notice.
@@ -65,7 +65,7 @@ The following sections in this article provide guidance about each feature being
 
 As per the original announcement on July 1, 2017, the In-Place eDiscovery & Hold functionality in the Exchange admin center (EAC) is being retired. The In-Place eDiscovery & Holds page in the EAC allowed you to search, hold, and export content from Exchange Online. In-Place eDiscovery also let you copy search results to a discovery mailbox so that you or other eDiscovery managers could review content and make it available for legal, regulatory, and public requests.
 
-Because all of these capabilities (except for copying search results to a discovery mailbox) are now available in the content search, eDiscovery and Advanced eDiscovery tools in the [Microsoft Purview portal](./microsoft-365-compliance-center.md) (with improved functionality, reliability, and support for a wide range of Microsoft 365 services), we recommend that you start using these tools as soon as possible. To help you in the transition to these other eDiscovery tools, the table below lists the tools you can use instead of In-Place eDiscovery and In-Place Hold.
+Because all of these capabilities (except for copying search results to a discovery mailbox) are now available in the content search, eDiscovery and Advanced eDiscovery tools in the [Microsoft Purview compliance portal](./microsoft-365-compliance-center.md) (with improved functionality, reliability, and support for a wide range of Microsoft 365 services), we recommend that you start using these tools as soon as possible. To help you in the transition to these other eDiscovery tools, the table below lists the tools you can use instead of In-Place eDiscovery and In-Place Hold.
 
 ### Scope of affected organizations
 
@@ -98,7 +98,7 @@ The following table describes other tools that you can use to replace the existi
 <tbody>
 <tr class="odd">
 <td>Search, export, and hold for legal purposes</td>
-<td>Core eDiscovery cases in the Microsoft Purview portal </td>
+<td>Core eDiscovery cases in the Microsoft Purview compliance portal </td>
 <td><p>Using the capabilities of core eDiscovery cases provide the functional parity to In-Place eDiscovery and In-Place Holds. This includes the following:</p>
 <ul>
 <li>
@@ -113,7 +113,7 @@ The following table describes other tools that you can use to replace the existi
 </tr>
 <tr class="even">
 <td>Hold for retention purposes</td>
-<td>Retention policies in the Microsoft Purview portal</td>
+<td>Retention policies in the Microsoft Purview compliance portal</td>
 <td><p>You can use Retention policies to retain content and, if desired, delete it after the retention period expires. Other capabilities include:</p>
 <ul>
 <li>
@@ -154,21 +154,21 @@ The following table describes other tools that you can use to replace the existi
 
 **I use the copy search results functionality of In-Place eDiscovery & Holds in the EAC to copy search results to a discovery mailbox for review by attorneys. What options do I have now?**
 
-There are two ways to replicate this functionality today. The first is to use [review sets in Advanced eDiscovery v2.0](./view-documents-in-review-set.md). Review sets have many of the same capabilities you see in a traditional review tool like fast search of documents, tagging, email threading, near duplicate grouping, themes analysis, and predictive coding. If you still want to use discovery mailboxes for review, the second option is to export search results to PST files and then import the PST files to a discovery mailbox by using the [PST import feature](use-network-upload-to-import-pst-files.md) in the Microsoft Purview portal.
+There are two ways to replicate this functionality today. The first is to use [review sets in Advanced eDiscovery v2.0](./view-documents-in-review-set.md). Review sets have many of the same capabilities you see in a traditional review tool like fast search of documents, tagging, email threading, near duplicate grouping, themes analysis, and predictive coding. If you still want to use discovery mailboxes for review, the second option is to export search results to PST files and then import the PST files to a discovery mailbox by using the [PST import feature](use-network-upload-to-import-pst-files.md) in the Microsoft Purview compliance portal.
 
 **How do I control which content locations (such as mailboxes or sites) that can an eDiscovery manager can search using the new tools?**
 
-The Microsoft Purview portal also uses [compliance boundaries](set-up-compliance-boundaries.md) to control which content locations an eDiscovery Manager can search. Compliance boundaries are useful in government entities that need to stay within agency boundaries or multi-national corporations required to respect geographical boarders.
+The Microsoft Purview compliance portal also uses [compliance boundaries](set-up-compliance-boundaries.md) to control which content locations an eDiscovery Manager can search. Compliance boundaries are useful in government entities that need to stay within agency boundaries or multi-national corporations required to respect geographical boarders.
 
-**How can I move my current searches and holds to the Microsoft Purview portal?**
+**How can I move my current searches and holds to the Microsoft Purview compliance portal?**
 
-It's possible to migrate In-Place eDiscovery searches and holds from the EAC by using PowerShell. For instructions, see [Migrate searches and holds from the EAC to the Microsoft Purview portal](./migrate-legacy-ediscovery-searches-and-holds.md).
+It's possible to migrate In-Place eDiscovery searches and holds from the EAC by using PowerShell. For instructions, see [Migrate searches and holds from the EAC to the Microsoft Purview compliance portal](./migrate-legacy-ediscovery-searches-and-holds.md).
 
 ## \*-MailboxSearch cmdlets
 
 As per the original notice announced on July 1, 2017 in the Exchange admin center, the In-Place eDiscovery & Hold functionality and the corresponding **\*-MailboxSearch** cmdlets are being retired. These cmdlets provide users the ability to search, hold, and export mailbox content for legal, regulatory, and public requests.
 
-Because these capabilities are now available in the [<span class="underline">Microsoft Purview portal</span>](./microsoft-365-compliance-center.md) and Office 365 Security & Compliance Center PowerShell with improved performance and scalability, you should using these improved cmdlets. These cmdlets include [<span class="underline">\*-ComplianceCase</span>](/powershell/module/exchange/get-compliancecase), [<span class="underline">\*-ComplianceSearch</span>](/powershell/module/exchange/get-compliancesearch), [<span class="underline">\*-CaseHoldPolicy</span>](/powershell/module/exchange/get-caseholdpolicy), [<span class="underline">\*-CaseHoldRule</span>](/powershell/module/exchange/get-caseholdrule), and [<span class="underline">\*-ComplianceSearchAction</span>](/powershell/module/exchange/get-compliancesearchaction).
+Because these capabilities are now available in the [<span class="underline">Microsoft Purview compliance portal</span>](./microsoft-365-compliance-center.md) and Office 365 Security & Compliance Center PowerShell with improved performance and scalability, you should using these improved cmdlets. These cmdlets include [<span class="underline">\*-ComplianceCase</span>](/powershell/module/exchange/get-compliancecase), [<span class="underline">\*-ComplianceSearch</span>](/powershell/module/exchange/get-compliancesearch), [<span class="underline">\*-CaseHoldPolicy</span>](/powershell/module/exchange/get-caseholdpolicy), [<span class="underline">\*-CaseHoldRule</span>](/powershell/module/exchange/get-caseholdrule), and [<span class="underline">\*-ComplianceSearchAction</span>](/powershell/module/exchange/get-compliancesearchaction).
 
 ### Scope of affected organizations
 
@@ -205,9 +205,9 @@ The following table describes other tools that you can use to replace the existi
 <p><a href="/powershell/module/exchange/get-compliancesearchaction"><span class="underline">*-ComplianceSearchAction</span></a></p>
 <p><a href="/powershell/module/exchange/get-compliancecase"><span class="underline">*-ComplianceCase</span></a></p>
 <p> </p></td>
-<td><p>The ComplianceSearch and ComplianceSearchAction cmdlets work together to help you search and export content. You can create a new search and view the search estimate by using the <strong>New-</strong>, <strong>Get-</strong>, and <strong>Start-ComplianceSearch</strong> cmdlets. Then you can use the <strong>New-ComplianceSearchAction</strong> cmdlet to export the search results. You'll still have to use the core eDiscovery tool in the Microsoft Purview portal to download those search results to your local computer.</p>
+<td><p>The ComplianceSearch and ComplianceSearchAction cmdlets work together to help you search and export content. You can create a new search and view the search estimate by using the <strong>New-</strong>, <strong>Get-</strong>, and <strong>Start-ComplianceSearch</strong> cmdlets. Then you can use the <strong>New-ComplianceSearchAction</strong> cmdlet to export the search results. You'll still have to use the core eDiscovery tool in the Microsoft Purview compliance portal to download those search results to your local computer.</p>
 <p>
-<p><strong>Note:</strong> If you use these cmdlets to create searches that aren't associated with a core eDiscovery case, these searches will be located on the <strong>Content search</strong> page in the Microsoft Purview portal.</p></td>
+<p><strong>Note:</strong> If you use these cmdlets to create searches that aren't associated with a core eDiscovery case, these searches will be located on the <strong>Content search</strong> page in the Microsoft Purview compliance portal.</p></td>
 </tr>
 <tr class="even">
 <td>Hold content in a mailbox</td>
@@ -215,7 +215,7 @@ The following table describes other tools that you can use to replace the existi
 <p><a href="/powershell/module/exchange/get-caseholdrule"><span class="underline">*-CaseHoldRule</span></a></p>
 <p><a href="/powershell/module/exchange/get-compliancecase"><span class="underline">*-ComplianceCase</span></a></p>
 <p> </p></td>
-<td><p>Holds in the Microsoft Purview portal must be associated with a ComplianceCase. First, create the compliance case, and then create a CaseHoldPolicy and a CaseHoldRule.</p>
+<td><p>Holds in the Microsoft Purview compliance portal must be associated with a ComplianceCase. First, create the compliance case, and then create a CaseHoldPolicy and a CaseHoldRule.</p>
 <p><strong>Note:</strong> Creating a CaseHoldPolicy without a creating CaseHoldRule will render the hold inoperable until the CaseHoldRule is created and associated to the CaseHoldPolicy. See the cmdlet documentation for more information.</p></td>
 </tr>
 <tr class="odd">
@@ -239,9 +239,9 @@ The following table describes other tools that you can use to replace the existi
 
 The [<span class="underline">Microsoft Graph APIs</span>](https://developer.microsoft.com/en-us/graph) provide a number of methods for extracting data for analysis and other purposes that are far more resilient and scalable than the using the **\*-MailboxSearch** cmdlets.
 
-**How can I migrate my searches and holds to the Microsoft Purview portal?**
+**How can I migrate my searches and holds to the Microsoft Purview compliance portal?**
 
-It's possible to migrate In-Place eDiscovery searches and holds from the Exchange admin center by using a PowerShell script. For more information, see [Migrate legacy eDiscovery searches and holds to the Microsoft Purview portal](migrate-legacy-eDiscovery-searches-and-holds.md).
+It's possible to migrate In-Place eDiscovery searches and holds from the Exchange admin center by using a PowerShell script. For more information, see [Migrate legacy eDiscovery searches and holds to the Microsoft Purview compliance portal](migrate-legacy-eDiscovery-searches-and-holds.md).
 
 **After the cmdlets are retired, will I still be able to remove or retrieve searches?**
 
@@ -283,7 +283,7 @@ The following table describes other tools that you can use to replace the existi
 <td><p><a href="/powershell/module/exchange/get-compliancesearch"><span class="underline">*-ComplianceSearch</span></a></p>
 <p><a href="/powershell/module/exchange/get-compliancesearchaction"><span class="underline">*-ComplianceSearchAction</span></a></p>
 <p></a></p></td>
-<td><p>The ComplianceSearch and ComplianceSearchAction cmdlets work together to help you search and export content. You can create a new search and view the search estimate by using the <strong>New-</strong>, <strong>Get-</strong>, and <strong>Start-ComplianceSearch</strong> cmdlets. Then you can use the <strong>New-ComplianceSearchAction -Export</strong> command to export the search results. You'll still have to use the core eDiscovery tool in the Microsoft Purview portal to download those search results to your local computer.</p></p>
+<td><p>The ComplianceSearch and ComplianceSearchAction cmdlets work together to help you search and export content. You can create a new search and view the search estimate by using the <strong>New-</strong>, <strong>Get-</strong>, and <strong>Start-ComplianceSearch</strong> cmdlets. Then you can use the <strong>New-ComplianceSearchAction -Export</strong> command to export the search results. You'll still have to use the core eDiscovery tool in the Microsoft Purview compliance portal to download those search results to your local computer.</p></p>
 </td>
 </tr>
 <tr class="even">
@@ -339,11 +339,11 @@ These operations in the Exchange Web Services API are used by the In-Place eDisc
 
 ## Advanced eDiscovery v1.0
 
-Advanced eDiscovery v1.0, which is the version of Advanced eDiscovery available in a core eDiscovery case by clicking **Switch to Advanced eDiscovery**, is being retired. Its functionality has been replaced by the new [Advanced eDiscovery solution](./ediscovery.md) in the Microsoft Purview portal.
+Advanced eDiscovery v1.0, which is the version of Advanced eDiscovery available in a core eDiscovery case by clicking **Switch to Advanced eDiscovery**, is being retired. Its functionality has been replaced by the new [Advanced eDiscovery solution](./ediscovery.md) in the Microsoft Purview compliance portal.
 
 To determine if your organization is using Advanced eDiscovery v1.0:
 
-1. Go to the Microsoft Purview portal, select **eDiscovery** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2174007" target="_blank">**Core**</a>, and open a Core eDiscovery case.
+1. Go to the Microsoft Purview compliance portal, select **eDiscovery** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2174007" target="_blank">**Core**</a>, and open a Core eDiscovery case.
 
 1. If you see the **Switch to Advanced eDiscovery** button, then clicking it will take you to the 1.0 version of Advanced eDiscovery, which is being retired. The ability to create and manage cases in Core eDiscovery won't be affected. Only the ability to add and analyze case data in Advanced eDiscovery v1.0 (by clicking **Switch to Advanced eDiscovery**) is being retired.
 
@@ -351,7 +351,7 @@ The new Advanced eDiscovery solution in Microsoft 365 (also known as *Advanced e
 
 To access Advanced eDiscovery v2.0:
 
-Go to the Microsoft Purview portal, select **eDiscovery** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2174006" target="_blank">**Advanced**</a>, and open a Core eDiscovery case.
+Go to the Microsoft Purview compliance portal, select **eDiscovery** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2174006" target="_blank">**Advanced**</a>, and open a Core eDiscovery case.
 
 At this time, we recommend that you begin to transition your eDiscovery workflow to the new Advanced eDiscovery functionality. If necessary, you can archive your Advanced eDiscovery 1.0 cases by exporting the content and storing it offline. Although you'll still be able to access Advanced eDiscovery v1.0 in existing cases until December 31, 2020, Microsoft Support won't provide support after October 1, 2020. See the following timeline for more details.
 
@@ -375,4 +375,4 @@ At this time, we recommend that you begin to transition your eDiscovery workflow
 
 ### Alternative tools
 
-The [Advanced eDiscovery solution](./overview-ediscovery-20.md) in the Microsoft Purview portal.
+The [Advanced eDiscovery solution](./overview-ediscovery-20.md) in the Microsoft Purview compliance portal.

@@ -30,7 +30,7 @@ To review the predictive coding workflow, see [Learn about predictive coding in 
 
 ## Train a model for the first time
 
-1. In the Microsoft Purview portal, open an Advanced eDiscovery case and then select the **Review sets** tab.
+1. In the Microsoft Purview compliance portal, open an Advanced eDiscovery case and then select the **Review sets** tab.
 
 2. Open a review set and then click **Analytics** > **Manage predictive coding (preview)**.
 

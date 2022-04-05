@@ -52,7 +52,7 @@ If you change your mind about seeing this option in the retention label wizard, 
 
 ## Configuring retention labels to declare records
 
-When you create a retention label from the **Records Management** solution in the Microsoft Purview portal, you have the option to mark items as a record. If you ran the PowerShell command from the previous section, you can alternatively mark items as a regulatory record.
+When you create a retention label from the **Records Management** solution in the Microsoft Purview compliance portal, you have the option to mark items as a record. If you ran the PowerShell command from the previous section, you can alternatively mark items as a regulatory record.
 
 For example:
 
@@ -70,7 +70,7 @@ For full instructions:
 
 If you'll use retention labels to declare items as records (rather than regulatory records) in SharePoint and OneDrive, consider whether you need to change the default tenant setting that allows users to edit the properties for a [locked record](record-versioning.md) when files are larger than 0 bytes.
 
-To change this default, go to the [Microsoft Purview portal](https://compliance.microsoft.com/) > **Records management** > **Records management settings** > **Retention labels** > **Allow editing of record properties** and then turn off the setting **Allow users to edit record properties**.
+To change this default, go to the [Microsoft Purview compliance portal](https://compliance.microsoft.com/) > **Records management** > **Records management settings** > **Retention labels** > **Allow editing of record properties** and then turn off the setting **Allow users to edit record properties**.
 
 ## Applying the configured retention label to content
 

@@ -107,7 +107,7 @@ If you have an internal partner or stakeholder group who should be able to view 
 
 To create a sensitivity label
 
-1. Open the Microsoft Purview portal, and under **Solutions**, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**Information protection**</a>.
+1. Open the Microsoft Purview compliance portal, and under **Solutions**, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**Information protection**</a>.
 1. Click **Create a label**.
 1. Give the label a name. We suggest naming it after the team that you'll be using it with.
 1. Add a display name and description, and then click **Next**.
@@ -139,7 +139,7 @@ Once you've created the label, you need to publish it to the users who will use 
 
 To publish a sensitivity label:
 
-1. In the Microsoft Purview portal, on the <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**Information protection** page</a>, choose the **Label policies** tab.
+1. In the Microsoft Purview compliance portal, on the <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**Information protection** page</a>, choose the **Label policies** tab.
 2. Click **Publish labels**.
 3. On the **Choose sensitivity labels to publish** page, click **Choose sensitivity labels to publish**.
 4. Select the label that you created, and then click **Add**.

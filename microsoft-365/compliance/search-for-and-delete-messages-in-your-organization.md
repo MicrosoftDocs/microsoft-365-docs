@@ -16,7 +16,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
-description: "Use the search and purge feature in the Microsoft Purview portal to search for and delete an email message from all mailboxes in your organization."
+description: "Use the search and purge feature in the Microsoft Purview compliance portal to search for and delete an email message from all mailboxes in your organization."
 ---
 
 # Search for and delete email messages
@@ -40,10 +40,10 @@ You can use the Content search feature to search for and delete email messages f
 
 - The search and purge workflow described in this article doesn't delete chat messages or other content from Microsoft Teams. If the Content search that you create in Step 2 returns items from Microsoft Teams, those items won't be deleted when you purge items in Step 3.
 
-- To create and run a Content search, you have to be a member of the **eDiscovery Manager** role group or be assigned the **Compliance Search** role in the Microsoft Purview portal. To delete messages, you have to be a member of the **Organization Management** role group or be assigned the **Search And Purge** role in the compliance center For information about adding users to a role group, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
+- To create and run a Content search, you have to be a member of the **eDiscovery Manager** role group or be assigned the **Compliance Search** role in the Microsoft Purview compliance portal. To delete messages, you have to be a member of the **Organization Management** role group or be assigned the **Search And Purge** role in the compliance center For information about adding users to a role group, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
 
   > [!NOTE]
-  > The **Organization Management** role group exists in both Exchange Online and in the Microsoft Purview portal. These are separate role groups that give different permissions. Being a member of **Organization Management** in Exchange Online does not grant the required permissions to delete email messages. If you aren't assigned the **Search And Purge** role in the compliance center (either directly or through a role group such as **Organization Management**), you'll receive an error in Step 3 when you run the **New-ComplianceSearchAction** cmdlet with the message "A parameter cannot be found that matches parameter name 'Purge'".
+  > The **Organization Management** role group exists in both Exchange Online and in the Microsoft Purview compliance portal. These are separate role groups that give different permissions. Being a member of **Organization Management** in Exchange Online does not grant the required permissions to delete email messages. If you aren't assigned the **Search And Purge** role in the compliance center (either directly or through a role group such as **Organization Management**), you'll receive an error in Step 3 when you run the **New-ComplianceSearchAction** cmdlet with the message "A parameter cannot be found that matches parameter name 'Purge'".
 
 - You have to use Security & Compliance Center PowerShell to delete messages. See [Step 1](#step-1-connect-to-security--compliance-center-powershell) for instructions about how to connect.
 
@@ -61,7 +61,7 @@ The first step is to connect to Security & Compliance Center PowerShell for your
 
 ## Step 2: Create a Content Search to find the message to delete
 
-The second step is to create and run a Content search to find the message that you want to remove from mailboxes in your organization. You can create the search by using the Microsoft Purview portal or by running the **New-ComplianceSearch** and **Start-ComplianceSearch** cmdlets in Security & Compliance PowerShell. The messages that match the query for this search will be deleted by running the **New-ComplianceSearchAction -Purge** command in [Step 3](#step-3-delete-the-message). For information about creating a Content search and configuring search queries, see the following topics:
+The second step is to create and run a Content search to find the message that you want to remove from mailboxes in your organization. You can create the search by using the Microsoft Purview compliance portal or by running the **New-ComplianceSearch** and **Start-ComplianceSearch** cmdlets in Security & Compliance PowerShell. The messages that match the query for this search will be deleted by running the **New-ComplianceSearchAction -Purge** command in [Step 3](#step-3-delete-the-message). For information about creating a Content search and configuring search queries, see the following topics:
 
 - [Content search in Office 365](content-search.md)
 
@@ -86,7 +86,7 @@ The goal of the search query is to narrow the results of the search to only the 
 
 - Preview the search results to verify that the search returned only the message (or messages) that you want to delete.
 
-- Use the search estimate statistics (displayed in the details pane of the search in the Microsoft Purview portal or by using the [Get-ComplianceSearch](/powershell/module/exchange/get-compliancesearch) cmdlet) to get a count of the total number of results.
+- Use the search estimate statistics (displayed in the details pane of the search in the Microsoft Purview compliance portal or by using the [Get-ComplianceSearch](/powershell/module/exchange/get-compliancesearch) cmdlet) to get a count of the total number of results.
 
 Here are two examples of queries to find suspicious email messages.
 

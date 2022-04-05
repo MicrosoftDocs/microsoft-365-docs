@@ -1,5 +1,5 @@
 ---
-title: "Search the audit log in the Microsoft Purview portal"
+title: "Search the audit log in the Microsoft Purview compliance portal"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,7 +17,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: "Use the Microsoft Purview portal to search the unified audit log to view user and administrator activity in your organization."
+description: "Use the Microsoft Purview compliance portal to search the unified audit log to view user and administrator activity in your organization."
 ms.custom: 
 - seo-marvel-apr2020
 - admindeeplinkMAC
@@ -27,7 +27,7 @@ ms.custom:
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Need to find if a user viewed a specific document or purged an item from their mailbox? If so, you can use the audit log search tool in Microsoft Purview portal to search the unified audit log to view user and administrator activity in your organization. Thousands of user and admin operations performed in dozens of Microsoft 365 services and solutions are captured, recorded, and retained in your organization's unified audit log. Users in your organization can use the audit log search tool to search for, view, and export (to a CSV file) the audit records for these operations.
+Need to find if a user viewed a specific document or purged an item from their mailbox? If so, you can use the audit log search tool in Microsoft Purview compliance portal to search the unified audit log to view user and administrator activity in your organization. Thousands of user and admin operations performed in dozens of Microsoft 365 services and solutions are captured, recorded, and retained in your organization's unified audit log. Users in your organization can use the audit log search tool to search for, view, and export (to a CSV file) the audit records for these operations.
 
 ## Microsoft 365 services that support auditing
 
@@ -89,7 +89,7 @@ Be sure to read the following items before you start searching the audit log.
 - You have to be assigned the View-Only Audit Logs or Audit Logs role in Exchange Online to search the audit log. By default, these roles are assigned to the Compliance Management and Organization Management role groups on the **Permissions** page in the Exchange admin center. Global administrators in Office 365 and Microsoft 365 are automatically added as members of the Organization Management role group in Exchange Online. To give a user the ability to search the audit log with the minimum level of privileges, you can create a custom role group in Exchange Online, add the View-Only Audit Logs or Audit Logs role, and then add the user as a member of the new role group. For more information, see [Manage role groups in Exchange Online](/Exchange/permissions-exo/role-groups).
 
   > [!IMPORTANT]
-  > If you assign a user the View-Only Audit Logs or Audit Logs role on the **Permissions** page in the Microsoft Purview portal, they won't be able to search the audit log. You have to assign the permissions in Exchange Online. This is because the underlying cmdlet used to search the audit log is an Exchange Online cmdlet.
+  > If you assign a user the View-Only Audit Logs or Audit Logs role on the **Permissions** page in the Microsoft Purview compliance portal, they won't be able to search the audit log. You have to assign the permissions in Exchange Online. This is because the underlying cmdlet used to search the audit log is an Exchange Online cmdlet.
 
 - When an audited activity is performed by a user or admin, an audit record is generated and stored in the audit log for your organization. The length of time that an audit record is retained (and searchable in the audit log) depends on your Office 365 or Microsoft 365 Enterprise subscription, and specifically the type of the license that is assigned to specific users.
 
@@ -101,7 +101,7 @@ Be sure to read the following items before you start searching the audit log.
   - For users assigned any other (non-E5) Office 365 or Microsoft 365 license, audit records are retained for 90 days. For a list of Office 365 and Microsoft 365 subscriptions that support unified audit logging, see [the security and compliance center service description](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
 
     > [!NOTE]
-    > Even when mailbox auditing on by default is turned on, you might notice that mailbox audit events for some users aren't found in audit log searches in the Microsoft Purview portal or via the Office 365 Management Activity API. For more information, see [More information about mailbox audit logging](enable-mailbox-auditing.md#more-information).
+    > Even when mailbox auditing on by default is turned on, you might notice that mailbox audit events for some users aren't found in audit log searches in the Microsoft Purview compliance portal or via the Office 365 Management Activity API. For more information, see [More information about mailbox audit logging](enable-mailbox-auditing.md#more-information).
 
 - If you want to turn off audit log search for your organization, you can run the following command in remote PowerShell connected to your Exchange Online organization:
 
@@ -117,7 +117,7 @@ Be sure to read the following items before you start searching the audit log.
 
   For more information, see [Turn off audit log search](turn-audit-log-search-on-or-off.md).
 
-- As previously stated, the underlying cmdlet used to search the audit log is an Exchange Online cmdlet, which is **Search-UnifiedAuditLog**. That means you can use this cmdlet to search the audit log instead of using the search tool on the **Audit** page in the Microsoft Purview portal. You have to run this cmdlet in Exchange Online PowerShell. For more information, see [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog).
+- As previously stated, the underlying cmdlet used to search the audit log is an Exchange Online cmdlet, which is **Search-UnifiedAuditLog**. That means you can use this cmdlet to search the audit log instead of using the search tool on the **Audit** page in the Microsoft Purview compliance portal. You have to run this cmdlet in Exchange Online PowerShell. For more information, see [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog).
 
   For information about exporting the search results returned by the **Search-UnifiedAuditLog** cmdlet to a CSV file, see the "Tips for exporting and viewing the audit log" section in [Export, configure, and view audit log records](export-view-audit-log-records.md#tips-for-exporting-and-viewing-the-audit-log).
 
@@ -141,7 +141,7 @@ Be sure to read the following items before you start searching the audit log.
   |Microsoft Teams|![Check mark.](../media/checkmark.png)||
   |Power Apps||![Check mark.](../media/checkmark.png)|
   |Power BI|![Check mark.](../media/checkmark.png)||
-  |Microsoft Purview portal|![Check mark.](../media/checkmark.png)||
+  |Microsoft Purview compliance portal|![Check mark.](../media/checkmark.png)||
   |Sensitivity labels||![Check mark.](../media/checkmark.png)|
   |SharePoint Online and OneDrive for Business|![Check mark.](../media/checkmark.png)||
   |Workplace Analytics|![Check mark.](../media/checkmark.png)||
@@ -166,9 +166,9 @@ Here's the process for searching the audit log in Microsoft 365.
 1. Go to <https://compliance.microsoft.com> and sign in.
 
     > [!TIP]
-    > Use a private browsing session (not a regular session) to access the Microsoft Purview portal because this will prevent the credential that you are currently logged on with from being used. Press **CTRL+SHIFT+N** to open an InPrivate Browsing session in Microsoft Edge or a private browsing session in Google Chrome (called an incognito window).
+    > Use a private browsing session (not a regular session) to access the Microsoft Purview compliance portal because this will prevent the credential that you are currently logged on with from being used. Press **CTRL+SHIFT+N** to open an InPrivate Browsing session in Microsoft Edge or a private browsing session in Google Chrome (called an incognito window).
 
-2. In the left pane of the Microsoft Purview portal, click **Audit**.
+2. In the left pane of the Microsoft Purview compliance portal, click **Audit**.
 
     The **Audit** page is displayed.
 
@@ -890,7 +890,7 @@ The following table lists the user and admin activities in Yammer that are logge
 
 ### Microsoft Power Automate activities
 
-You can search the audit log for activities in Power Automate (formerly called Microsoft Flow). These activities include creating, editing, and deleting flows, and changing flow permissions. For information about auditing for Power Automate activities, see the blog  [Power Automate audit events now available in Microsoft Purview portal](https://flow.microsoft.com/blog/security-and-compliance-center).
+You can search the audit log for activities in Power Automate (formerly called Microsoft Flow). These activities include creating, editing, and deleting flows, and changing flow permissions. For information about auditing for Power Automate activities, see the blog  [Power Automate audit events now available in Microsoft Purview compliance portal](https://flow.microsoft.com/blog/security-and-compliance-center).
 
 ### Microsoft Power Apps activities
 
@@ -902,7 +902,7 @@ You can search the audit log for activities in Microsoft Stream. These activitie
 
 ### Content explorer activities
 
-The following table lists the activities in content explorer that are logged in the audit log. Content explorer, which is accessed on the Data classifications tool in the Microsoft Purview portal. For more information, see [Using data classification content explorer](data-classification-content-explorer.md).
+The following table lists the activities in content explorer that are logged in the audit log. Content explorer, which is accessed on the Data classifications tool in the Microsoft Purview compliance portal. For more information, see [Using data classification content explorer](data-classification-content-explorer.md).
 
 |Friendly name|Operation|Description|
 |:-----|:-----|:-----|

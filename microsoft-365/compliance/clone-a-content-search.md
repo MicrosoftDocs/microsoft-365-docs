@@ -36,7 +36,7 @@ Why clone Content Searches?
   
 ## Script information
 
-- You have to be a member of the eDiscovery Manager role group in the Microsoft Purview portal to run the script described in this topic.
+- You have to be a member of the eDiscovery Manager role group in the Microsoft Purview compliance portal to run the script described in this topic.
     
 - The script includes minimal error handling. The primary purpose of the script is to quickly clone a content search.
     

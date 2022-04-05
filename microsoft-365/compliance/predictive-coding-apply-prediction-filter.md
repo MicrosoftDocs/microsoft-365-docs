@@ -36,7 +36,7 @@ Here are two ways you can use the prediction score filter:
 
 ## Apply a prediction score filter
 
-1. In the Microsoft Purview portal, open the Advanced eDiscovery case, select the **Review sets** tab, and then open the review set.
+1. In the Microsoft Purview compliance portal, open the Advanced eDiscovery case, select the **Review sets** tab, and then open the review set.
 
    ![Click Filters to display the Filters flyout page.](..\media\PredictionScoreFilter0.png)   
 

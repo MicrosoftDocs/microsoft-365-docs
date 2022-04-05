@@ -187,11 +187,11 @@ This step involves identification of particular sensitive information types that
 
 Finding content in your environment containing personal can be a formidable task, formerly involving a combination of using Compliance Search, eDiscovery, Advanced eDiscovery, DLP, and auditing.
 
-With the new **Data Classification** solution in the Microsoft Purview portal, this has become much easier with the [Content Explorer](../compliance/data-classification-content-explorer.md) capability, which works with either built-in or custom sensitive information types, including those related to personal data.
+With the new **Data Classification** solution in the Microsoft Purview compliance portal, this has become much easier with the [Content Explorer](../compliance/data-classification-content-explorer.md) capability, which works with either built-in or custom sensitive information types, including those related to personal data.
 
 ### Sensitive information types
 
-The Microsoft Purview portal comes pre-loaded with over 100 sensitive information types, most of them related to identifying and locating personal data. These built-in sensitive information types can help identify and protect credit card numbers, bank account numbers, passport numbers, and more, based on patterns that are defined by a regular expression (regex) or a function. To learn more, see [What the sensitive information types look for](../compliance/sensitive-information-type-entity-definitions.md).
+The Microsoft Purview compliance portal comes pre-loaded with over 100 sensitive information types, most of them related to identifying and locating personal data. These built-in sensitive information types can help identify and protect credit card numbers, bank account numbers, passport numbers, and more, based on patterns that are defined by a regular expression (regex) or a function. To learn more, see [What the sensitive information types look for](../compliance/sensitive-information-type-entity-definitions.md).
 
 If you need to identify and protect an organization-specific or regional type of sensitive items, such as a custom format for employee IDs, or other personal information not already covered by a built-in sensitive information type, you can create a custom sensitive information type with these methods:
 

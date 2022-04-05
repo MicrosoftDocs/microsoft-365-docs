@@ -140,7 +140,7 @@ The case notes dashboard displays notes by the user that created the note and th
 
 To add a note to a case:
 
-1. In the [Microsoft Purview portal](https://compliance.microsoft.com), go to **Insider risk management** and select the **Cases** tab.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select the **Cases** tab.
 2. Select a case, then select the **Case notes** tab.
 3. Select **Add case note**.
 4. On the **Add case note** dialog, type your note for the case. Select **Save** to add the note to the case or select **Cancel** close without saving the note to the case.
@@ -157,7 +157,7 @@ Temporary access to a case can be granted by adding a user as a contributor. Con
 
 To add a contributor to a case:
 
-1. In the [Microsoft Purview portal](https://compliance.microsoft.com), go to **Insider risk management** and select the **Cases** tab.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select the **Cases** tab.
 2. Select a case, then select the **Contributors** tab.
 3. Select **Add contributor**.
 4. On the **Add contributor** dialog, start typing the name of the user you want to add and then select the user from the suggested user list. This list is generated from the Azure Active Directory of your tenant subscription.
@@ -175,7 +175,7 @@ It's important to remember that sending an email notice to a user ***does not***
 
 To send a notice to the user assigned to a case:
 
-1. In the [Microsoft Purview portal](https://compliance.microsoft.com), go to **Insider risk management** and select the **Cases** tab.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select the **Cases** tab.
 2. Select a case, then select the **Send email notice** button on the case action toolbar.
 3. On the **Send e-mail notice** dialog, select the **Choose a notice template** dropdown control to select the notice template for the notice. This selection pre-fills the other fields on the notice.
 4. Review the notice fields and update as appropriate. The values entered here will override the values on the template.
@@ -187,13 +187,13 @@ Escalate the case for user investigation in situations where additional legal re
 
 To escalate a case to a user investigation:
 
-1. In the [Microsoft Purview portal](https://compliance.microsoft.com), go to **Insider risk management** and select the **Cases** tab.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select the **Cases** tab.
 2. Select a case, then select the **Escalate for investigation** button on the case action toolbar.
 3. On the **Escalate for investigation** dialog, enter a name for the new user investigation. If needed, enter notes about the case and select **Escalate**.
 4. Review the notice fields and update as appropriate. The values entered here will override the values on the template.
 5. Select **Confirm** to create the user investigation case or select **Cancel** to close the dialog without creating a new user investigation case.
 
-After the insider risk management case has been escalated to a new user investigation case, you can review the new case in the **eDiscovery** > **Advanced** area in the Microsoft Purview portal.
+After the insider risk management case has been escalated to a new user investigation case, you can review the new case in the **eDiscovery** > **Advanced** area in the Microsoft Purview compliance portal.
 
 ### Run automated tasks with Power Automate flows for the case
 
@@ -231,7 +231,7 @@ After risk analysts and investigators have completed their review and investigat
 
 To resolve a case:
 
-1. In the [Microsoft Purview portal](https://compliance.microsoft.com), go to **Insider risk management** and select the **Cases** tab.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select the **Cases** tab.
 2. Select a case, then select the **Resolve case** button on the case action toolbar.
 3. On the **Resolve case** dialog, select the **Resolve as** dropdown control to select the resolution classification for the case. The options are **Benign** or **Confirmed policy violation**.
 4. On the **Resolve case** dialog, enter the reasons for the resolution classification in the **Action taken** text field.

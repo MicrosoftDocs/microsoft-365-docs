@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
-description: "Learn about unindexed items in Exchange and SharePoint that you can include in an eDiscovery search that you run in the Microsoft Purview portal."
+description: "Learn about unindexed items in Exchange and SharePoint that you can include in an eDiscovery search that you run in the Microsoft Purview compliance portal."
 ---
 
 # Partially indexed items in eDiscovery
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-An eDiscovery search that you run from the Microsoft Purview portal automatically includes partially indexed items in the estimated search results when you run a search. Partially indexed items are Exchange mailbox items and documents on SharePoint and OneDrive for Business sites that for some reason weren't completely indexed for search. In Exchange, a partially indexed item typically contains a file (of a file type that can't be indexed) that is attached to an email message. Here are some other reasons why items can't be indexed for search and are returned as partially indexed items when you run an eDiscovery search:
+An eDiscovery search that you run from the Microsoft Purview compliance portal automatically includes partially indexed items in the estimated search results when you run a search. Partially indexed items are Exchange mailbox items and documents on SharePoint and OneDrive for Business sites that for some reason weren't completely indexed for search. In Exchange, a partially indexed item typically contains a file (of a file type that can't be indexed) that is attached to an email message. Here are some other reasons why items can't be indexed for search and are returned as partially indexed items when you run an eDiscovery search:
   
 - The file type is unrecognized or unsupported for indexing.
 
@@ -66,7 +66,7 @@ Not every email message with a partially indexed file attachment or every partia
   
 Similarly, messages with partially indexed file attachments and documents of a partially indexed file type are included in search results when other message or document properties, which are indexed and searchable, match the search criteria. Message properties that are indexed for search include sent and received dates, sender and recipient, the file name of an attachment, and text in the message body. Document properties indexed for search include created and modified dates. So even though a message attachment may be a partially indexed item, the message will be included in the regular search results if the value of other message or document properties matches the search criteria.
   
-For a list of email and document properties that you can search for by using eDiscovery tools in the Microsoft Purview portal, see [Keyword queries and search conditions for eDiscovery](keyword-queries-and-search-conditions.md).
+For a list of email and document properties that you can search for by using eDiscovery tools in the Microsoft Purview compliance portal, see [Keyword queries and search conditions for eDiscovery](keyword-queries-and-search-conditions.md).
   
 > [!NOTE]
 > If a mailbox item is moved from a folder that is indexed to a folder that is not indexed, a flag is set to unindex the item and the item is removed from the index and will not be searchable. Later, if that same item is moved back to a folder that is indexed, the flag is not reset. That means the item will remain unindexed, and not searchable.

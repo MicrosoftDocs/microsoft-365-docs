@@ -19,14 +19,14 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 - admindeeplinkDEFENDER
-description: "Create alert policies in the Microsoft Purview portal or the Microsoft 365 Defender portal to monitor potential threats, data loss, and permissions issues."
+description: "Create alert policies in the Microsoft Purview compliance portal or the Microsoft 365 Defender portal to monitor potential threats, data loss, and permissions issues."
 ---
 
 # Alert policies in Microsoft 365
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-You can use alert policies and the alert dashboard in the Microsoft Purview portal or the Microsoft 365 Defender portal to create alert policies and then view the alerts generated when users perform activities that match the conditions of an alert policy. There are several default alert policies that help you monitor activities such as assigning admin privileges in Exchange Online, malware attacks, phishing campaigns, and unusual levels of file deletions and external sharing.
+You can use alert policies and the alert dashboard in the Microsoft Purview compliance portal or the Microsoft 365 Defender portal to create alert policies and then view the alerts generated when users perform activities that match the conditions of an alert policy. There are several default alert policies that help you monitor activities such as assigning admin privileges in Exchange Online, malware attacks, phishing campaigns, and unusual levels of file deletions and external sharing.
 
 > [!TIP]
 > Go to the [Default alert policies](#default-alert-policies) section in this article for a list and description of the available alert policies.
@@ -42,16 +42,16 @@ Here's a quick overview of how alert policies work and the alerts that are trigg
 
 ![Overview of how alert policies work.](../media/M365ComplianceDefender-AlertPolicies-Overview.png)
 
-1. An admin in your organization creates, configures, and turns on an alert policy by using the **Alert policies** page in the Microsoft Purview portal or the Microsoft 365 Defender portal. You can also create alert policies by using the [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert) cmdlet in Security & Compliance Center PowerShell.
+1. An admin in your organization creates, configures, and turns on an alert policy by using the **Alert policies** page in the Microsoft Purview compliance portal or the Microsoft 365 Defender portal. You can also create alert policies by using the [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert) cmdlet in Security & Compliance Center PowerShell.
 
-   To create alert policies, you have to be assigned the Manage Alerts role or the Organization Configuration role in the Microsoft Purview portal or the Defender portal.
+   To create alert policies, you have to be assigned the Manage Alerts role or the Organization Configuration role in the Microsoft Purview compliance portal or the Defender portal.
 
    > [!NOTE]
    > It takes up to 24 hours after creating or updating an alert policy before alerts can be triggered by the policy. This is because the policy has to be synced to the alert detection engine.
 
 2. A user performs an activity that matches the conditions of an alert policy. In the case of malware attacks, infected email messages sent to users in your organization trigger an alert.
 
-3. Microsoft 365 generates an alert that's displayed on the **Alerts** page in Microsoft Purview portal or Defender portal. Also, if email notifications are enabled for the alert policy, Microsoft sends a notification to a list of recipients. The alerts that an admin or other users can see that on the Alerts page is determined by the roles assigned to the user. For more information, see [RBAC permissions required to view alerts](#rbac-permissions-required-to-view-alerts).
+3. Microsoft 365 generates an alert that's displayed on the **Alerts** page in Microsoft Purview compliance portal or Defender portal. Also, if email notifications are enabled for the alert policy, Microsoft sends a notification to a list of recipients. The alerts that an admin or other users can see that on the Alerts page is determined by the roles assigned to the user. For more information, see [RBAC permissions required to view alerts](#rbac-permissions-required-to-view-alerts).
 
 4. An admin manages alerts in the compliance center. Managing alerts consists of assigning an alert status to help track and manage any investigation.
 
@@ -61,9 +61,9 @@ An alert policy consists of a set of rules and conditions that define the user o
 
 To view and create alert policies:
 
-### Microsoft Purview portal
+### Microsoft Purview compliance portal
 
-Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview portal</a>, and then select **Policies** > **Alert** > **Alert policies**.
+Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>, and then select **Policies** > **Alert** > **Alert policies**.
 
 ![In the compliance center, select Policies,and under Alert, select Alert policies to view and create alert policies.](../media/LaunchAlertPoliciesMCC.png)
 
@@ -167,7 +167,7 @@ The table also indicates the Office 365 Enterprise and Office 365 US Government 
 |**Unusual increase in email reported as phish**|Generates an alert when there's a significant increase in the number of people in your organization using the Report Message add-in in Outlook to report messages as phishing mail. This policy has a **Medium** severity setting. For more information about this add-in, see [Use the Report Message add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).|Threat management|No|E5/G5 or Defender for Office 365 P2 add-on subscription|
 |**User impersonation phish delivered to inbox/folder**<sup>1,</sup><sup>2</sup>|Generates an alert when Microsoft detects that an admin or user override has allowed the delivery of a user impersonation phishing message to the inbox (or other user-accessible folder) of a mailbox. Examples of overrides include an inbox or mail flow rule that allows messages from a specific sender or domain, or an anti-spam policy that allows messages from specific senders or domains. This policy has a **Medium** severity setting.|Threat management|No|E5/G5 or Defender for Office 365 P2 add-on subscription|
 |**User requested to release a quarantined message**|Generates an alert when a user requests release for a quarantined message. To request the release of quarantined messages, the **Allow recipients to request a message to be released from quarantine** (_PermissionToRequestRelease_) permission is required in the quarantine policy (for example, from the **Limited access** preset permissions group). For more information, see [Allow recipients to request a message to be released from quarantine permission](../security/office-365-security/quarantine-policies.md#allow-recipients-to-request-a-message-to-be-released-from-quarantine-permission). This policy has an **Informational** severity setting.|Threat management|No|E1/F1/G1, E3/F3/G3, or E5/G5|
-|**User restricted from sending email**|Generates an alert when someone in your organization is restricted from sending outbound mail. This typically results when an account is compromised, and the user is listed on the **Restricted Users** page in the Microsoft Purview portal. (To access this page, go to **Threat management > Review > Restricted Users**). This policy has a **High** severity setting. For more information about restricted users, see [Removing a user, domain, or IP address from a block list after sending spam email](/office365/securitycompliance/removing-user-from-restricted-users-portal-after-spam).|Threat management|Yes|E1/F1/G1, E3/F3/G3, or E5/G5|
+|**User restricted from sending email**|Generates an alert when someone in your organization is restricted from sending outbound mail. This typically results when an account is compromised, and the user is listed on the **Restricted Users** page in the Microsoft Purview compliance portal. (To access this page, go to **Threat management > Review > Restricted Users**). This policy has a **High** severity setting. For more information about restricted users, see [Removing a user, domain, or IP address from a block list after sending spam email](/office365/securitycompliance/removing-user-from-restricted-users-portal-after-spam).|Threat management|Yes|E1/F1/G1, E3/F3/G3, or E5/G5|
 |**User restricted from sharing forms and collecting responses**|Generates an alert when someone in your organization has been restricted from sharing forms and collecting responses using Microsoft Forms due to detected repeated phishing attempt behavior. This policy has a **High** severity setting.|Threat management|No|E1, E3/F3, or E5|
 
 > [!NOTE]
@@ -183,11 +183,11 @@ When an activity performed by users in your organization matches the settings of
 
 To view alerts:
 
-### Microsoft Purview portal
+### Microsoft Purview compliance portal
 
  Go to <https://compliance.microsoft.com> and then select **Alerts**. Alternatively, you can go directly to <https://compliance.microsoft.com/compliancealerts>.
 
-![In the Microsoft Purview portal, select Alerts.](../media/ViewAlertsMCC.png)
+![In the Microsoft Purview compliance portal, select Alerts.](../media/ViewAlertsMCC.png)
 
 ### Microsoft 365 Defender portal
 
@@ -243,7 +243,7 @@ Keep the following things in mind about alert aggregation:
 
 ## RBAC permissions required to view alerts
 
-The Role Based Access Control (RBAC) permissions assigned to users in your organization determine which alerts a user can see on the **Alerts** page. How is this accomplished? The management roles assigned to users (based on their membership in role groups in the Microsoft Purview portal or the Microsoft 365 Defender portal) determine which alert categories a user can see on the **Alerts** page. Here are some examples:
+The Role Based Access Control (RBAC) permissions assigned to users in your organization determine which alerts a user can see on the **Alerts** page. How is this accomplished? The management roles assigned to users (based on their membership in role groups in the Microsoft Purview compliance portal or the Microsoft 365 Defender portal) determine which alert categories a user can see on the **Alerts** page. Here are some examples:
 
 - Members of the Records Management role group can view only the alerts that are generated by alert policies that are assigned the **Information governance** category.
 
@@ -253,7 +253,7 @@ The Role Based Access Control (RBAC) permissions assigned to users in your organ
 
 This design (based on RBAC permissions) lets you determine which alerts can be  viewed (and managed) by users in specific job roles in your organization.
 
-The following table lists the roles that are required to view alerts from the six different alert categories. The first column in the tables lists all roles in the Microsoft Purview portal or the Microsoft 365 Defender portal.  A check mark indicates that a user who is assigned that role can view alerts from the corresponding alert category listed in the top row.
+The following table lists the roles that are required to view alerts from the six different alert categories. The first column in the tables lists all roles in the Microsoft Purview compliance portal or the Microsoft 365 Defender portal.  A check mark indicates that a user who is assigned that role can view alerts from the corresponding alert category listed in the top row.
 
 To see which category a default alert policy is assigned to, see the table in [Default alert policies](#default-alert-policies).
 
@@ -302,7 +302,7 @@ To see which category a default alert policy is assigned to, see the table in [D
 > $RoleGroups | foreach {Write-Output -InputObject `r`n,$_.Name,"-----------------------"; Get-RoleGroup $_.Identity | Select-Object -ExpandProperty Roles}
 > ```
 >
-> You can also view the roles assigned to a role group in the Microsoft Purview portal or the Microsoft 365 Defender portal. Go to the **Permissions** page, and select a role group. The assigned roles are listed on the flyout page.
+> You can also view the roles assigned to a role group in the Microsoft Purview compliance portal or the Microsoft 365 Defender portal. Go to the **Permissions** page, and select a role group. The assigned roles are listed on the flyout page.
 
 <a name="manage-alerts"></a>
 
@@ -338,7 +338,7 @@ Here are some tasks you can perform to manage alerts.
 
 Alerts that are triggered by Office 365 Cloud App Security policies are now displayed on the **Alerts** page in the compliance center. This includes alerts that are triggered by activity policies and alerts that are triggered by anomaly detection policies in Office 365 Cloud App Security. This means you can view all alerts in the compliance center. Office 365 Cloud App Security is only available for organizations with an Office 365 Enterprise E5 or Office 365 US Government G5 subscription. For more information, see [Overview of Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security).
 
-Organizations that have Microsoft Defender for Cloud Apps as part of an Enterprise Mobility + Security E5 subscription or as a standalone service can also view Defender for Cloud Apps alerts that are related to Microsoft 365 apps and services in the Microsoft Purview portal or the Microsoft 365 Defender portal.
+Organizations that have Microsoft Defender for Cloud Apps as part of an Enterprise Mobility + Security E5 subscription or as a standalone service can also view Defender for Cloud Apps alerts that are related to Microsoft 365 apps and services in the Microsoft Purview compliance portal or the Microsoft 365 Defender portal.
 
 To display only Defender for Cloud Apps alerts in the compliance center or the Defender portal, use the **Source** filter and select **Defender for Cloud Apps**.
 

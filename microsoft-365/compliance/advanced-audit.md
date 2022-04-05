@@ -24,7 +24,7 @@ description: "Advanced Audit in Microsoft 365 provides new auditing capabilities
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-The [Audit functionality](search-the-audit-log-in-security-and-compliance.md) in Microsoft 365 provides organizations with visibility into many types of audited activities across many different services in Microsoft 365. Advanced Audit helps organizations to conduct forensic and compliance investigations by increasing audit log retention required to conduct an investigation, providing access to crucial events (by using Audit log search in the Microsoft Purview portal and the Office 365 Management Activity API) that help determine scope of compromise, and faster access to Office 365 Management Activity API.
+The [Audit functionality](search-the-audit-log-in-security-and-compliance.md) in Microsoft 365 provides organizations with visibility into many types of audited activities across many different services in Microsoft 365. Advanced Audit helps organizations to conduct forensic and compliance investigations by increasing audit log retention required to conduct an investigation, providing access to crucial events (by using Audit log search in the Microsoft Purview compliance portal and the Office 365 Management Activity API) that help determine scope of compromise, and faster access to Office 365 Management Activity API.
 
 > [!NOTE]
 > Advanced Audit is available for organizations with an Office 365 E5/A5/G5 or Microsoft 365 Enterprise E5/A5/G5 subscription. A Microsoft 365 E5/A5/G5 Compliance or E5/A5/G5 eDiscovery and Audit add-on license should be assigned to users for Advanced Audit features such as long-term retention of audit logs and the generation of Advanced Audit events for investigations. For more information about licensing, see:<br/>- [Advanced Audit licensing requirements](auditing-solutions-overview.md#licensing-requirements)<br/>- [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-audit).
@@ -82,7 +82,7 @@ The MailItemsAccessed event replaces MessageBind in mailbox auditing logging in 
 
 For information about audit records for MailItemsAccessed activities, see [Use Advanced Audit to investigate compromised accounts](mailitemsaccessed-forensics-investigations.md).
 
-To search for MailItemsAccessed audit records, you can search for the **Accessed mailbox items** activity in the **Exchange mailbox activities** drop-down list in the [audit log search tool](search-the-audit-log-in-security-and-compliance.md) in the Microsoft Purview portal.
+To search for MailItemsAccessed audit records, you can search for the **Accessed mailbox items** activity in the **Exchange mailbox activities** drop-down list in the [audit log search tool](search-the-audit-log-in-security-and-compliance.md) in the Microsoft Purview compliance portal.
 
 ![Searching for MailItemsAccessed actions in the audit log search tool.](../media/AdvAudit_MailItemsAccessed.png)
 
@@ -100,7 +100,7 @@ The Send event is also a mailbox auditing action and is triggered when a user pe
 
 Investigators can use the Send event to identify email sent from a compromised account. The audit record for a Send event contains information about the message, such as when the message was sent, the InternetMessage ID, the subject line, and if the message contained attachments. This auditing information can help investigators identify information about email messages sent from a compromised account or sent by an attacker. Additionally, investigators can use a Microsoft 365 eDiscovery tool to search for the message (by using the subject line or message ID) to identify the recipients the message was sent to and the actual contents of the sent message.
 
-To search for Send audit records, you can search for the **Sent message** activity in the **Exchange mailbox activities** drop-down list in the [audit log search tool](search-the-audit-log-in-security-and-compliance.md) in the Microsoft Purview portal.
+To search for Send audit records, you can search for the **Sent message** activity in the **Exchange mailbox activities** drop-down list in the [audit log search tool](search-the-audit-log-in-security-and-compliance.md) in the Microsoft Purview compliance portal.
 
 ![Searching for Sent message actions in the audit log search tool.](../media/AdvAudit_SentMessage.png)
 

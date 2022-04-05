@@ -177,7 +177,7 @@ Known limitations for this preview:
 
 ### Configure settings for the default sharing link type for a site by using PowerShell advanced settings
 
-In addition to the label settings for sites and groups that you can configure from the Microsoft Purview portal, you can also configure the default sharing link type for a site. Sensitivity labels for documents can also be configured for a default sharing link type. These settings that help to prevent over-sharing are automatically selected when users select the **Share** button in their Office apps. 
+In addition to the label settings for sites and groups that you can configure from the Microsoft Purview compliance portal, you can also configure the default sharing link type for a site. Sensitivity labels for documents can also be configured for a default sharing link type. These settings that help to prevent over-sharing are automatically selected when users select the **Share** button in their Office apps. 
 
 For more information and instructions, see [Use sensitivity labels to configure the default sharing link type for sites and documents in SharePoint and OneDrive](sensitivity-labels-default-sharing-link.md).
 
@@ -338,7 +338,7 @@ The following apps and services support sensitivity labels configured for sites 
   - SharePoint admin center
   - Teams admin center
   - Microsoft 365 admin center
-  - Microsoft Purview portal
+  - Microsoft Purview compliance portal
 
 - User apps and services:
 

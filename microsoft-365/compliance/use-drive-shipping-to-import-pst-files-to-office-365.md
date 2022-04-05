@@ -50,7 +50,7 @@ For frequently asked questions about using drive shipping to import PST files to
   
 ## Before you import PST files
 
-- You have to be assigned the Mailbox Import Export role in Exchange Online to create import jobs in the Microsoft Purview portal and import PST files to user mailboxes. By default, this role isn't assigned to any role group in Exchange Online. You can add the Mailbox Import Export role to the Organization Management role group. Or you can create a role group, assign the Mailbox Import Export role, and then add yourself as a member. For more information, see the "Add a role to a role group" or the "Create a role group" sections in [Manage role groups](/Exchange/permissions-exo/role-groups).
+- You have to be assigned the Mailbox Import Export role in Exchange Online to create import jobs in the Microsoft Purview compliance portal and import PST files to user mailboxes. By default, this role isn't assigned to any role group in Exchange Online. You can add the Mailbox Import Export role to the Organization Management role group. Or you can create a role group, assign the Mailbox Import Export role, and then add yourself as a member. For more information, see the "Add a role to a role group" or the "Create a role group" sections in [Manage role groups](/Exchange/permissions-exo/role-groups).
 
     In addition to the Mailbox Import Export role, you also have to be assigned the Mail Recipients role in Exchange Online. By default, this role is assigned to the Organization Management and Recipient Management roles groups in Exchange Online.
 
@@ -106,14 +106,14 @@ For frequently asked questions about using drive shipping to import PST files to
 The first step is to download the tool and that you use in Step 2 to copy PST files to the hard drive.
   
 > [!IMPORTANT]
-> You have to use Azure Import/Export tool version 1 (WAimportExportV1) to successfully import PST files by using the drive shipping method. Version 2 of the Azure Import/Export tool isn't supported and using it will result in incorrectly preparing the hard drive for the import job. Be sure to download the Azure Import/Export tool from the Microsoft Purview portal by following the procedures in this step. 
+> You have to use Azure Import/Export tool version 1 (WAimportExportV1) to successfully import PST files by using the drive shipping method. Version 2 of the Azure Import/Export tool isn't supported and using it will result in incorrectly preparing the hard drive for the import job. Be sure to download the Azure Import/Export tool from the Microsoft Purview compliance portal by following the procedures in this step. 
   
 1. Go to <https://compliance.microsoft.com> and sign in using the credentials for an administrator account in your organization.
 
-2. In the left navigation pane of the Microsoft Purview portal, click **Information governance** \> **Import**.
+2. In the left navigation pane of the Microsoft Purview compliance portal, click **Information governance** \> **Import**.
     
     > [!NOTE]
-    > As previously stated, you have to be assigned the appropriate permissions to access the **Import** page in the Microsoft Purview portal. 
+    > As previously stated, you have to be assigned the appropriate permissions to access the **Import** page in the Microsoft Purview compliance portal. 
   
 3. On the **Import** tab, click ![Add Icon.](../media/ITPro-EAC-AddIcon.gif) **New import job**.
     
@@ -133,7 +133,7 @@ The first step is to download the tool and that you use in Step 2 to copy PST fi
     
 7. Click **Cancel** to close the wizard. 
     
-    You come back to the **Import** page in the Microsoft Purview portal when you create the import job in Step 4. 
+    You come back to the **Import** page in the Microsoft Purview compliance portal when you create the import job in Step 4. 
 
 ## Step 2: Copy the PST files to the hard drive
 
@@ -238,12 +238,12 @@ The next step is to create the PST Import job in the Import service in Office 36
   
 1. Go to <https://compliance.microsoft.com> and sign in using the credentials for an administrator account in your organization.
 
-2. In the left navigation pane of the Microsoft Purview portal, click **Information governance** \> **Import**.
+2. In the left navigation pane of the Microsoft Purview compliance portal, click **Information governance** \> **Import**.
 
 3. On the **Import** tab, click ![Add Icon.](../media/ITPro-EAC-AddIcon.gif) **New import job**.
 
     > [!NOTE]
-    > As previously stated, you have to be assigned the appropriate permissions to access the **Import** page in the Microsoft Purview portal.
+    > As previously stated, you have to be assigned the appropriate permissions to access the **Import** page in the Microsoft Purview compliance portal.
   
 4. Type a name for the PST import job, and then click **Next**. Use lowercase letters, numbers, hyphens, and underscores. You can't use uppercase letters or include spaces in the name.
 
@@ -322,7 +322,7 @@ After you've shipped the hard drive to Microsoft, complete the following procedu
   
 1. Go to <https://compliance.microsoft.com> and sign in using the credentials for an administrator account in your organization.
 
-2. In the left navigation pane of the Microsoft Purview portal, click **Information governance > Import**.
+2. In the left navigation pane of the Microsoft Purview compliance portal, click **Information governance > Import**.
 
 3. On the **Import** tab, click the job for the drive shipment that you want to enter the tracking number for.
 
@@ -348,7 +348,7 @@ After PST files are uploaded to Azure, the status is changed to **Analysis in pr
   
 1. Go to <https://compliance.microsoft.com> and sign in using the credentials for an administrator account in your organization.
 
-2. In the left navigation pane of the Microsoft Purview portal, click **Information governance** \> **Import****.
+2. In the left navigation pane of the Microsoft Purview compliance portal, click **Information governance** \> **Import****.
 
 3. On the **Import** tab, select the import job that you created in Step 4 and click **Import to Office 365**.
   
@@ -387,7 +387,7 @@ To install the Azure Storage Explorer and connect to your Azure Storage area:
 
 1. Go to <https://compliance.microsoft.com> and sign in using the credentials for an administrator account in your organization.
 
-2. In the left pane of the Microsoft Purview portal, click **Information governance > Import**.
+2. In the left pane of the Microsoft Purview compliance portal, click **Information governance > Import**.
 
 3. On the **Import** tab, click ![Add Icon.](../media/ITPro-EAC-AddIcon.gif) **New import job**.
 

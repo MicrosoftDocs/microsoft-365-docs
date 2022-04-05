@@ -56,7 +56,7 @@ To see the options for licensing your users to benefit from Microsoft Purview fe
 
 ## Permissions required to create and manage sensitivity labels
 
-Members of your compliance team who will create sensitivity labels need permissions to the Microsoft Purview portal.
+Members of your compliance team who will create sensitivity labels need permissions to the Microsoft Purview compliance portal.
 
 By default, global administrators for your tenant have access to this admin center and can give compliance officers and other people access, without giving them all of the permissions of a tenant admin. For this delegated limited admin access, add users to the **Compliance Data Administrator**, **Compliance Administrator**, or **Security Administrator** role group. 
 
@@ -70,9 +70,9 @@ Alternatively to using the default roles, you can create a new role group and ad
 > - **Information Protection Investigators**
 > - **Information Protection Readers**
 >
-> For an explanation of each one, and the new roles that they contain, select a role group in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview portal</a> > **Permissions & roles** > **Compliance center** > **Roles**, and then review the description in the flyout pane. Or, see [Role groups in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center).
+> For an explanation of each one, and the new roles that they contain, select a role group in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> > **Permissions & roles** > **Compliance center** > **Roles**, and then review the description in the flyout pane. Or, see [Role groups in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center).
 
-For instructions to add users to the default role group, roles, or create your own role groups, see [Permissions in the Microsoft Purview portal](microsoft-365-compliance-center-permissions.md).
+For instructions to add users to the default role group, roles, or create your own role groups, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
 
 These permissions are required only to create and configure sensitivity labels and their label policies. They are not required to apply the labels in apps or services. If additional permissions are needed for specific configurations that relate to sensitivity labels, those permissions will be listed in their respective documentation instructions.
 

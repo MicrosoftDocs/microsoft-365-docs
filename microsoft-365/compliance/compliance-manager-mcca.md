@@ -152,7 +152,7 @@ Select a box to view improvements and recommendations.
 
 **Items with the Improvement status**
 
-Select the dropdown next to the **Improvement** label to the right of the improvement action. You’ll see a quick summary and details about your current settings and the recommended improvement actions. The summary includes direct links into Compliance Manager, the applicable solution in the Microsoft Purview portal, and relevant documentation.
+Select the dropdown next to the **Improvement** label to the right of the improvement action. You’ll see a quick summary and details about your current settings and the recommended improvement actions. The summary includes direct links into Compliance Manager, the applicable solution in the Microsoft Purview compliance portal, and relevant documentation.
 
 Clicking on the Compliance Manager link takes you to a filtered view of all the improvement actions within that solution that you have not yet implemented. From there, you can see the number of points you can achieve to increase your [compliance score](compliance-score-calculation.md), and the assessments they apply to, and the applicable regulations and certifications.
 

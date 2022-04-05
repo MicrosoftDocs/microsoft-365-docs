@@ -33,13 +33,13 @@ When the legal case or investigation supported by a Core eDiscovery case is comp
 
 - Closing a case only turns off the holds that are associated with that case. If other holds are placed on a content location (such as a Litigation Hold, a retention policy, or a hold from a different Core eDiscovery case) those holds will still be maintained.
 
-- The case is still listed on the Core eDiscovery page in the Microsoft Purview portal. The details, holds, searches, and members of a closed case are retained.
+- The case is still listed on the Core eDiscovery page in the Microsoft Purview compliance portal. The details, holds, searches, and members of a closed case are retained.
 
 - You can edit a case after it's closed. For example, you can add or remove members, create searches, and export search results. The primary difference between active and closed cases is that eDiscovery holds are turned off when a case is closed.
 
 To close a case:
   
-1. In the Microsoft Purview portal, click **eDiscovery** > **Core** to display the list of Core eDiscovery cases in your organization.
+1. In the Microsoft Purview compliance portal, click **eDiscovery** > **Core** to display the list of Core eDiscovery cases in your organization.
 
 2. Click the name of the case that you want to close.
 
@@ -61,7 +61,7 @@ To close a case:
 
 When you reopen a case, any eDiscovery holds that were in place when the case was closed won't be automatically reinstated. After the case is reopened, you'll have to go to the **Holds** page and turn on the previous holds. To turn on a hold, select it to display the flyout page, and then set the **Status** toggle to **On**.
   
-1. In the Microsoft Purview portal, click **eDiscovery** > **Core** to display the list of Core eDiscovery cases in your organization.
+1. In the Microsoft Purview compliance portal, click **eDiscovery** > **Core** to display the list of Core eDiscovery cases in your organization.
 
 2. Click the name of the case that you want to reopen.
 
@@ -83,7 +83,7 @@ When you reopen a case, any eDiscovery holds that were in place when the case wa
   
 ## Delete a case
 
-You can also delete active and closed Core eDiscovery cases. When you delete a case, all searches and exports in the case are deleted, and the case is removed from the list of cases on the **Core eDiscovery** page in the Microsoft Purview portal. You can't reopen a deleted case.
+You can also delete active and closed Core eDiscovery cases. When you delete a case, all searches and exports in the case are deleted, and the case is removed from the list of cases on the **Core eDiscovery** page in the Microsoft Purview compliance portal. You can't reopen a deleted case.
 
 Before you can delete a case (whether it's active or closed), you must first delete *all* eDiscovery holds associated with the case. That includes deleting holds with a status of **Off**. 
 
@@ -99,7 +99,7 @@ To delete an eDiscovery hold:
 
 To delete a case:
 
-1. In the Microsoft Purview portal, click **eDiscovery** > **Core** to display the list of Core eDiscovery cases in your organization.
+1. In the Microsoft Purview compliance portal, click **eDiscovery** > **Core** to display the list of Core eDiscovery cases in your organization.
 
 2. Click the name of the case that you want to delete.
 

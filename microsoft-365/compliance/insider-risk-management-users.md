@@ -96,7 +96,7 @@ There may be scenarios where you need to stop assigning risk scores to a user's 
 
 To manually remove users from in-scope status in all insider risk management policies, complete the following steps:
 
-1. In the [Microsoft Purview portal](https://compliance.microsoft.com), go to **Insider risk management** and select the **Users** tab.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select the **Users** tab.
 2. On the **Users dashboard**, select the user or users you want to remove from being in-scope in insider risk management policies.
 3. Select **Remove users**.
 4. On the **Remove user** pane, Select **Remove** or **Cancel** to discard the changes and close the dialog.
