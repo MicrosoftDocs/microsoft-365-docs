@@ -57,9 +57,21 @@ To view the list of all user accounts in your organization that have been assign
 ```powershell
 Connect-Graph -Scopes User.Read.All
 
-Get-MgUser -Filter 'assignedLicenses/$count ne 0' -ConsistencyLevel eventual -CountVariable licensedUserCount -All
+Get-MgUser -Filter 'assignedLicenses/$count ne 0' -ConsistencyLevel eventual -CountVariable licensedUserCount -All -Select UserPrincipalName,DisplayName,AssignedLicenses | Format-Table -Property UserPrincipalName,DisplayName,AssignedLicenses
 
 Write-Host "Found $licensedUserCount licensed users."
+```
+
+To view the list of all user accounts in your organization that have an E5 license assigned, run the following command:
+
+```powershell
+Connect-Graph -Scopes User.Read.All
+
+$e5Sku = Get-MgSubscribedSku -All | Where-Object { $_.SkuPartNumber -eq 'SPE_E5' }
+
+Get-MgUser -Filter "assignedLicenses/any(x:x/skuId eq $($e5sku.SkuId) )" -ConsistencyLevel eventual -CountVariable e5licensedUserCount -All
+
+Write-Host "Found $e5licensedUserCount E5 licensed users."
 ```
 
 ## Use the Azure Active Directory PowerShell for Graph module
