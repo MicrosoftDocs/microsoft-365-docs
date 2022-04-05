@@ -127,7 +127,7 @@ The following global geographies can store data at rest. The locations where cus
 
 | Global Geographies | Locations where customer data may be stored |
 | --- | --- |
-| Global Geography 1 – EMEA (Europe, Middle East and Africa) | Austria, Finland, France, Ireland, Netherlands |
+| Global Geography 1 – EMEA (Europe, Middle East and Africa) | Austria, Finland, France, Ireland, Netherlands, Sweden |
 | Global Geography 2 – Asia Pacific | Hong Kong, Japan, Malaysia, Singapore, South Korea |
 | Global Geography 3 - Americas | Brazil, Chile, United States |
 
@@ -140,7 +140,7 @@ For country/region specific data centers, the following defines the cities where
 | Australia | Sydney, Melbourne |
 | Brazil | Rio, Campinas |
 | Canada | Quebec City, Toronto |
-| European Union | Austria (Vienna), Finland (Helsinki), France (Paris, Marseille), Ireland (Dublin), Netherlands (Amsterdam) |
+| European Union | Austria (Vienna), Finland (Helsinki), France (Paris, Marseille), Ireland (Dublin), Netherlands (Amsterdam), Sweden (Gävle, Sandviken, Staffanstorp) |
 | France | Paris, Marseille |
 | Germany | Frankfurt, Berlin |
 | India | Chennai, Mumbai, Pune |

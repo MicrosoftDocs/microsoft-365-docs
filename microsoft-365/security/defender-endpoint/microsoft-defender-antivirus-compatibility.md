@@ -156,7 +156,7 @@ The table in this section summarizes the features and capabilities that are acti
 
 (<a id="fn5">5</a>) When Microsoft Defender Antivirus is in passive mode, scans are not scheduled.
 
-(<a id="fn6">6</a>) When Microsoft Defender Antivirus is in passive mode, it does not remediate threats. However, Threats can be remediated by [Endpoint detection and response (EDR) in block mode](edr-in-block-mode.md). In this case, you might see alerts showing Microsoft Defender Antivirus as a source, even when Microsoft Defender Antivirus is in passive mode.
+(<a id="fn6">6</a>) When Microsoft Defender Antivirus is in passive mode, it does not remediate threats. However, threats can be remediated by [Endpoint detection and response (EDR) in block mode](edr-in-block-mode.md). In this case, you might see alerts showing Microsoft Defender Antivirus as a source, even when Microsoft Defender Antivirus is in passive mode.
 
 > [!NOTE]
 > [Endpoint data loss prevention](/microsoft-365/compliance/endpoint-dlp-learn-about) protection continues to operate normally when Microsoft Defender Antivirus is in either active or passive mode.

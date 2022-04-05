@@ -28,7 +28,7 @@ While Microsoft 365 includes several tools and methodologies for managing and pr
 
 - Plan to enroll devices into Intune through Azure AD Join (including Hybrid Azure AD Join).
 - Plan to manually enroll devices into Intune.
-- Allow BYOD devices with plans to implement protection for apps and data and/or enroll these devices into management.
+- Allow BYOD devices with plans to implement protection for apps and data and/or enroll these devices to Intune.
 
 On the other hand, if your environment includes plans for co-management including Microsoft Endpoint Configuration Manager, see [Co-management documentation](/mem/configmgr/comanage/) to develop the best path for your organization. If your environment includes plans for Windows 365 Cloud PC, see [Windows 365 Enterprise documentation](/windows-365/enterprise/) to develop the best path for your organization.
 
@@ -55,7 +55,7 @@ In this illustration:
 |&nbsp;|Step|Description|Licensing requirements|
 |---|---|---|---|
 |1|Configure starting-point Zero Trust identity and device access policies|Work with your identity administrator to [Implement Level 2 App Protection Policies (APP) data protection](manage-devices-with-intune-app-protection.md). These policies do not require that you manage devices. You configure the APP policies in Intune. Your identity admin configures a Conditional Access policy to require approved apps.|E3, E5, F1, F3, F5|
-|2|Enroll devices into management|This task requires more planning and time to implement. Microsoft recommends using Intune to enroll devices because this tool provides optimal integration. There are several options for enrolling devices, depending on the platform. For example, Windows devices can be enrolled by using Azure AD Join or by using Autopilot. You need to review the options for each platform and decide which enrollment option is best for your environment. See [Step 3—Enroll devices into management](manage-devices-with-intune-enroll.md) for more information.|E3, E5, F1, F3, F5|
+|2|Enroll devices to Intune|This task requires more planning and time to implement. Microsoft recommends using Intune to enroll devices because this tool provides optimal integration. There are several options for enrolling devices, depending on the platform. For example, Windows devices can be enrolled by using Azure AD Join or by using Autopilot. You need to review the options for each platform and decide which enrollment option is best for your environment. See [Step 3—Enroll devices to Intune](manage-devices-with-intune-enroll.md) for more information.|E3, E5, F1, F3, F5|
 |3|Configure compliance policies|You want to be sure devices that are accessing your apps and data meet minimum requirements, for example devices are password or pin-protected and the operating system is up to date. Compliance policies are the way to define the requirements that devices must meet. [Step 3. Set up compliance policies](manage-devices-with-intune-compliance-policies.md) helps you configure these policies.|E3, E5, F3, F5|
 |4|Configure Enterprise (recommended) Zero Trust identity and device access policies|Now that your devices are enrolled, you can work with your identity admin to [tune Conditional Access policies to require healthy and compliant devices](manage-devices-with-intune-require-compliance.md).|E3, E5, F3, F5|
 |5|Deploy configuration profiles|As opposed to device compliance policies that simply mark a device as compliant or not based on criteria you configure, configuration profiles actually change the configuration of settings on a device. You can use configuration policies to harden devices against cyberthreats. See [Step 5. Deploy configuration profiles](manage-devices-with-intune-configuration-profiles.md).|E3, E5, F3, F5|
@@ -73,7 +73,7 @@ Here’s an illustration of the recommended policy set with step callouts for th
 In this illustration:
 
 - In Step 1, [Implement Level 2 App Protection Policies (APP)](manage-devices-with-intune-app-protection.md) you configure the recommended level of data protection with APP policies. Then you work with your identity team to configure the related Conditional Access rule to require use of this protection.
-- In Steps 2, 3 and 4, you enroll devices into management with Intune/MEM, define device compliance policies, and then coordinate with your identity team to configure the related Conditional Access rule to only allow access to compliant devices.
+- In Steps 2, 3 and 4, you enroll devices into management with Intune, define device compliance policies, and then coordinate with your identity team to configure the related Conditional Access rule to only allow access to compliant devices.
 
 <!---
 ## Managing change with users
@@ -81,10 +81,10 @@ In this illustration:
 
 ## Enrolling devices vs. onboarding devices
 
-If you follow this guidance, you will enroll devices into management using Intune (or another tool) and you will onboard devices for two services:
+If you follow this guidance, you will enroll devices into management using Intune and you will onboard devices for the following Microsoft 365 capabilities:
 
-- Defender for Endpoint
-- Endpoint DLP
+- Microsoft Defender for Endpoint
+- Microsoft 365 Compliance (for endpoint data loss prevention (DLP)) 
 
 The following illustration details how this works using Intune.
 
@@ -107,12 +107,12 @@ Note that only Intune is managing devices. Onboarding refers to the ability for 
 |Other methods     |   Other methods of enrollment depend on the platform of the device and whether it is BYOD or managed by your organization.      | Other methods for onboarding devices include, in recommended order:<br><li>Configuration Manager<li>Other mobile device management tool (if the device is managed by one)<li>Local script<li>VDI configuration package for onboarding non-persistent virtual desktop infrastructure (VDI) devices<li>Group Policy|
 | | |     |
 
-Note that only Intune is managing devices. Onboarding refers to the ability for a device to share information with a specific service. The following table summarizes the differences between enrolling devices into management and onboarding devices for a specific service.
+Note that only Intune is managing devices. Onboarding refers to the ability for a device to share information with a specific service capability. The following table summarizes the differences between enrolling devices into management and onboarding devices for a specific capability.
 
 |&nbsp;|Enroll|Onboard|
 |---|---|---|
 |Description|Enrollment applies to managing devices. Devices are enrolled for management with Intune or Configuration Manager.|Onboarding configures a device to work with a specific set of capabilities in Microsoft 365. Currently, onboarding applies to Microsoft Defender for Endpoint and Microsoft compliance capabilities. <br/><br/> On Windows devices, onboarding involves toggling a setting in Windows Defender that allows Defender to connect to the online service and accept policies that apply to the device.|
-|Scope|These device management tools manage the entire device, including configuring the device to meet specific objectives, like security.|Onboarding only affects the services that apply.|
+|Scope|These device management tools manage the entire device, including configuring the device to meet specific objectives, like security.|Onboarding only affects the capabilities that apply.|
 |Recommended method|Azure Active Directory join automatically enrolls devices into Intune.|Intune is the preferred method for onboarding devices to Windows Defender for Endpoint, and consequently Microsoft 365 compliance capabilities. <br/><br/> Note that devices that are onboarded to Microsoft 365 compliance capabilities using other methods are not automatically enrolled for Defender for Endpoint.|
 |Other methods|Other methods of enrollment depend on the platform of the device and whether it is BYOD or managed by your organization.|Other methods for onboarding devices include, in recommended order: <ul><li>Configuration Manager</li><li>Other mobile device management tool (if the device is managed by one)</li><li>Local script</li><li>VDI configuration package for onboarding non-persistent virtual desktop infrastructure (VDI) devices</li><li>Group Policy</li></ul>|
 
