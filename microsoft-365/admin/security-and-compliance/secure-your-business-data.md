@@ -342,11 +342,9 @@ To modify the default policy:
 
 ## Increase protection for your organization's devices
 
-Microsoft Defender Antivirus is built into the Windows operating system and provides good protection against viruses and malware. However, you can increase protection for your organization's devices by onboarding them to Microsoft Defender for Business, a new offering for small and medium-sized businesses like yours. With Defender for Business, your organization's devices are better protected from ransomware, malware, phishing, and other threats.
+Microsoft Defender Antivirus is built into the Windows operating system and provides good protection against viruses and malware. However, you can increase protection for your organization's devices by onboarding them to Microsoft Defender for Business which is a new offering for small and medium-sized businesses like yours, and is included with [Microsoft 365 Business Premium](../../business-premium/index.md). With Defender for Business, your organization's devices are better protected from ransomware, malware, phishing, and other threats.
 
-Microsoft 365 Business Basic and Standard provide you base-level protections you can depend on, including Defender antivirus, and join Azure AD.
-
-With Microsoft 365 Business Premium you get this in addition to heightened security features including all the capabilities of Defender for Business, such as device management and advanced threat protection. When you enroll devices to Microsoft 365 Business for Defender, the devices are monitored and protected by InTune.
+With Microsoft 365 Business Premium you get heightened security features such as device management and advanced threat protection. When you enroll devices to Microsoft 365 Business for Defender, the devices are monitored and protected by InTune.
 
 
 To learn more, see the following resources:
