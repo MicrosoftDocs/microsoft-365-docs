@@ -190,7 +190,7 @@ sections:
       - question: |
           Can I customize encrypted messages with my company branding?
         answer: |
-          Yes, for mail sent from an Exchange Online mailbox in your organization! For information on customizing email messages and the OME portal, see Add your organization's brand to your encrypted messages. See [Add your organization's brand to your encrypted messages](add-your-organization-brand-to-encrypted-messages.md).
+          Yes, for mail sent from an Exchange Online mailbox in your organization! For information on customizing email messages and the OME portal, see [Add your organization's brand to your encrypted messages](add-your-organization-brand-to-encrypted-messages.md).
             
       - question: |
           Are there any reporting capabilities or insights for encrypted emails?
