@@ -81,7 +81,7 @@ Basic Mobility and Security remote actions include retire, wipe and full wipe. F
 
 With Intune you have the following set of actions:
 
-- [Autopilot reset](https://docs.microsoft.com/mem/autopilot/windows-autopilot-reset) (Windows only)
+- [Autopilot reset](/mem/autopilot/windows-autopilot-reset) (Windows only)
 - [Bitlocker key recovery](https://support.microsoft.com/en-us/windows/finding-your-bitlocker-recovery-key-in-windows-6b71ad27-0b89-ea08-f143-056f5ab347d6) (Windows only)
 - [Use wipe, retire, or manually unenrolling the device](/mem/intune/remote-actions/devices-wipe#delete-devices-from-the-intune-portal)
 - [Disable activation lock](/mem/intune/remote-actions/device-activation-lock-disable) (iOS only)
