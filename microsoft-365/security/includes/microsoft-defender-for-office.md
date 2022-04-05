@@ -8,4 +8,4 @@ ms.custom: admindeeplinkDEFENDER
 ---
 
 > [!NOTE]
-> Want to experience Microsoft 365 Defender? You can [evaluate it in a lab environment](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) or [run your pilot project in production](m365d-pilot.md?ocid=cx-evalpilot).
+> Want to experience Microsoft 365 Defender? You can [evaluate it in a lab environment](/microsoft-365/security/defender/eval-overview.md?ocid=cx-docs-MTPtriallab) or [run your pilot project in production](/microsoft-365/security/defender/eval-overview/m365d-pilot.md?ocid=cx-evalpilot).
