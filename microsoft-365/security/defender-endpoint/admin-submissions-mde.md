@@ -1,7 +1,7 @@
 ---
 title: Submit suspicious files in Microsoft Defender for Endpoint
-description: Learn how to use the unified submissions feature in the Microsoft 365 Defender to submit suspicious emails, suspected phishing mails, spam, and other potentially harmful messages, URLs, and files to Microsoft for scanning.
-keywords: antivirus, spam, phish, Microsoft Defender for Endpoint, false positive, false negative, blocked file, blocked url, submission, submit, report
+description: Learn how to use the unified submissions feature in Microsoft 365 Defender to submit suspicious emails, URLs, email attachments, and files to Microsoft for scanning.
+keywords: antivirus, spam, phish, file, alert, Microsoft Defender for Endpoint, false positive, false negative, blocked file, blocked url, submission, submit, report
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.date: 06/15/2021
@@ -35,18 +35,17 @@ ms.custom: FPFN
 
 >Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-usewdatp-abovefoldlink).
 
-In Microsoft Defender for Endpoint, admins can use the unified submissions feature in the Microsoft 365 Defender to submit files and file hashes (SHAs) to Microsoft for review.
+In Microsoft Defender for Endpoint, admins can use the unified submissions feature to submit files and file hashes (SHAs) to Microsoft for review. The unified submissions experience is a one-stop shop for submitting emails, URLs, email attachments, and files in one, easy-to-use submission experience. Admins can use the Microsoft 365 Defender portal or the Microsoft Defender for Endpoint Alert page to submit suspicious files.  
 
 ## What do you need to know before you begin?
+
+- The new unified submissions experience is available only in subscriptions that include Microsoft 365 Defender, Microsoft Defender for Endpoint Plan 2, or Microsoft Defender for Office Plan 2.
 
 - To submit files to Microsoft, you need to be a member of one of the following role groups:
 
   - **Organization Management** or **Security Administrator** in the [Microsoft 365 Defender portal](../office-365-security/permissions-microsoft-365-security-center.md).
 
 - For more information about how you can submit spam, phish, URLs, and email attachments to Microsoft, see [Report messages and files to Microsoft](../office-365-security/report-junk-email-messages-to-microsoft.md).
-
-> [!NOTE]
-> The new unified submissions experience is available only in subscriptions that include Microsoft 365 Defender, Microsoft Defender for Endpoint Plan 2, or Microsoft Defender for Office Plan 2.
 
 ## Report suspicious items to Microsoft from the portal
 
