@@ -303,14 +303,11 @@
      - name: Respond to a compromised connector
        href: respond-compromised-connector.md
      - name: Remove blocked entities
-       href: remove-blocked-entities.md
-       items: 
-       - name: Remove blocked users and connectors
-         items:
-         - name: Remove blocked users
-           href: removing-user-from-restricted-users-portal-after-spam.md
-         - name: Remove blocked connectors
-           href: remove-blocked-connectors.md
+       items:
+        - name: Remove blocked users
+          href: removing-user-from-restricted-users-portal-after-spam.md
+        - name: Remove blocked connectors
+          href: remove-blocked-connectors.md
      - name: Review and approve (or reject) pending actions
        href: air-review-approve-pending-completed-actions.md
      - name: Tune anti-phishing protection
