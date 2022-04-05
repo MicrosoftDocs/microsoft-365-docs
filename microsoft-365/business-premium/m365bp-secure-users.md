@@ -71,6 +71,13 @@ Resources are available to help everyone in your organization to:
 
 Use the recommendations in this library to help your users be productive and more secure in their work.
 
+## Download the digital threats guide
+
+Download this visual guide for you and your team:
+
+[:::image type="content" source="media/m365bp-whatuserscandotosecure.png" alt-text="Thumbnail of downloadable guide.":::](https://download.microsoft.com/download/9/1/f/91fa8f24-9953-4f33-9d87-a95624db5e0b/M365BPWhatCanUsersDoToSecure.pdf)
+
+[PDF](https://download.microsoft.com/download/9/1/f/91fa8f24-9953-4f33-9d87-a95624db5e0b/M365BPWhatCanUsersDoToSecure.pdf) | [PowerPoint](https://download.microsoft.com/download/9/1/f/91fa8f24-9953-4f33-9d87-a95624db5e0b/M365BPWhatCanUsersDoToSecure.pptx)
 
 ## Next steps
 
