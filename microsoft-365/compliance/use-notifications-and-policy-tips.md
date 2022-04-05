@@ -224,7 +224,7 @@ If the policy tips are configured to allow override, you can choose **Show Detai
 
 ![Policy tip dialog where you can override the policy tip.](../media/f97e836c-04bd-44b4-aec6-ed9526ea31f8.png)
 
-Note that when you add sensitive information to an email, there may be latency between when the sensitive information is added and when the policy tip appears.
+Note that when you add sensitive information to an email, there may be latency between when the sensitive information is added and when the policy tip appears. Currently, the policy tips do not appear on emails with condition to detect encryption when they are encrypted via OME.
 
 ### Outlook 2013 and later supports showing policy tips for only some conditions
 
