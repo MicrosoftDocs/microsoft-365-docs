@@ -182,7 +182,6 @@ When you evaluate Defender for Office 365, the policies that control protection 
 
 - The [Threat protection status report](view-email-security-reports.md#threat-protection-status-report) shows detections by Defender for Office 365 in the following views:
   - [View data by Email \> Malware and Chart breakdown by Detection Technology](view-email-security-reports.md#view-data-by-email--malware-and-chart-breakdown-by-detection-technology)
-  - [View data by Email \> Spam and Chart breakdown by Detection Technology](view-email-security-reports.md#view-data-by-email--spam-and-chart-breakdown-by-detection-technology)
   - [View data by Email \> Phish and Chart breakdown by Detection Technology](view-email-security-reports.md#view-data-by-email--phish-and-chart-breakdown-by-detection-technology)
 
 - In [Threat Explorer](threat-explorer.md), messages that were detected by the Defender for Office 365 evaluation show the following banner in the details of the entry:
