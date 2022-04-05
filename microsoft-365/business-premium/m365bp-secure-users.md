@@ -57,11 +57,23 @@ Watch the following video to learn more about how Microsoft 365 Business Premium
 > [!TIP]
 > For more information, see [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium?activetab=pivot:overviewtab).
 
+## Resources to train your users
+
+The security recommendations provided in this library make it much harder for cyber attackers to gain access to your environment. However, an important part of your security strategy includes training users&mdash; the people in your company who use your systems regularly. Users can help be your front line of defense. Everyone needs to know how to work productively while maintaining a more secure environment. 
+
+Resources are available to help everyone in your organization to:
+
+- [Protect devices](m365bp-devices-overview.md)
+
+- [Use email more securely](m365bp-protect-email-overview.md)
+
+- [Collaborate and share information more securely](m365bp-collaborate-share-securely.md)
+
+Use the recommendations in this library to help your users be productive and more secure in their work.
+
+
 ## Next steps
 
+- [Get Microsoft 365 Business Premium](get-microsoft-365-business-premium.md) or [Get Microsoft 365 for Campaigns](get-microsoft-365-campaigns.md)
 
-| If you're getting this subscription  | Take these next steps  |
-|---------|---------|
-| Microsoft 365 Business Premium     | [Get Microsoft 365 Business Premium](get-microsoft-365-business-premium.md) <br/><br/>Then proceed to [Set up Microsoft 365 Business Premium](m365bp-setup.md) |
-| Microsoft 365 for Campaigns     | [See how to get Microsoft 365 for Campaigns](get-microsoft-365-campaigns.md) <br/><br/>[Sign up](m365-campaigns-sign-up.md) and then [Sign in](m365-campaigns-sign-in.md) |
-
+- [Start the setup process](m365bp-setup-overview.md)
