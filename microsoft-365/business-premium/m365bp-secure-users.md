@@ -28,9 +28,11 @@ description: "Learn how Microsoft 365 Business Premium helps your business with 
 
 # How Microsoft 365 Business Premium helps your business
 
+Microsoft 365 Business Premium is a cost-effective solution that empowers small and medium-sized businesses to work more efficiently and more securely than before. This article describes how Microsoft 365 Business Premium can serve your business or campaign with productivity and advanced security capabilities for business users, email, and devices. This article also includes resources to train your team and all staff, and a downloadable guide that describes digital threats and how to protect against such threats.
+
 ## Productivity and security
 
-Microsoft 365 Business Premium provides your business with productivity and security capabilities that can help you run your business more securely, from anywhere. Microsoft 365 Business Premium brings together best-in-class Office apps, collaboration tools like Microsoft Teams, and comprehensive security. Your Microsoft 365 Business Premium subscription includes the following productivity and security capabilities:
+With Microsoft 365 Business Premium, you can run your business more securely, across devices, and from just about anywhere. Microsoft 365 Business Premium brings together best-in-class Office apps, collaboration tools like Microsoft Teams, and comprehensive security:
 
 - **Windows 10 and 11 Pro** upgrades for your company's Windows devices
 
@@ -45,8 +47,6 @@ Microsoft 365 Business Premium provides your business with productivity and secu
 - **Compliance and privacy features** to protect and control access to your and your customers' sensitive information
 
 - **Device management capabilities** that enable your security team to help keep devices up to date and secure
-
-Use this article to learn more about how you can use Microsoft 365 Business Premium
 
 ## Watch the video: Top 5 benefits of Microsoft 365 Business Premium
 
@@ -73,7 +73,7 @@ Use the recommendations in this library to help your users be productive and mor
 
 ## Download the digital threats guide
 
-Download this visual guide for you and your team:
+Our digital threats guide describes different kinds of threats and what you and your staff can do to protect against these threats. Download this visual guide for you and your team:
 
 [:::image type="content" source="media/m365bp-whatuserscandotosecure.png" alt-text="Thumbnail of downloadable guide.":::](https://download.microsoft.com/download/9/1/f/91fa8f24-9953-4f33-9d87-a95624db5e0b/M365BPWhatCanUsersDoToSecure.pdf)
 
