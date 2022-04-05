@@ -43,9 +43,17 @@ To see how the guided setup works, watch the following video: <br/><br/>
 
 After you have finished the guided setup, there are additional steps to complete to help ensure that your security and compliance capabilities are properly set up and applied. These steps include:
 
-- [Bump up security protection](m365bp-security-overview.md)
-- [Set up devices](m365bp-devices-overview.md)
-- [Protect devices](m365bp-protect-devices.md)
+- [Setting up your security protection](m365bp-security-overview.md)
+
+- Training your team:
+
+   - [Set up personal devices used to access business data](m365bp-devices-overview.md)
+
+   - [Use email more securely](m365bp-protect-email-overview.md)
+
+   - [Collaborate and share more securely](m365bp-collaborate-share-securely.md)
+
+- [Protecting managed devices](m365bp-protect-devices.md)
 
 ## Work with a Microsoft partner
 
