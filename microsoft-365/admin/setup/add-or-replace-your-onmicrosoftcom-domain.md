@@ -104,10 +104,6 @@ After you have created your new onmicrsoft.com domain, do the following to chang
 
     ![Successfully added new fallback domain.](../../media/fallback-success.png) 
 
-
-
-
-
 ## Related content
 
 [Domains FAQ](domains-faq.yml) (article)</br>
