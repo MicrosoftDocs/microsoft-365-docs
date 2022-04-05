@@ -30,9 +30,9 @@ ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: "Protect your business email and data from cyberthreats, including ransomware, phishing, and malicious attachments."
 ---
 
-# Top 10 ways to secure Microsoft 365 for business plans
+# Leading ways to secure Microsoft 365 for business
 
-If you are a small or medium-size organization using one of Microsoft's business plans, you can use the guidance in this article to increase the security of your organization. This guidance helps your organization achieve the goals described in the Harvard Kennedy School [Cybersecurity Campaign Handbook](https://go.microsoft.com/fwlink/p/?linkid=2015598).
+If you are a small or medium-size organization using one of Microsoft's business plans, the guidance in this article helps you tighten the security of your organization. Among your choices, Microsoft 365 Business Premium provides the best [security protections](../../business-premium/get-microsoft-365-business-premium.md) of all of them. The recommended actions included here will help you achieve the goals described in the Harvard Kennedy School [Cybersecurity Campaign Handbook](https://go.microsoft.com/fwlink/p/?linkid=2015598).
 
 > [!TIP]
 > If you need help with the steps in this article, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
@@ -43,34 +43,33 @@ If you are a small or medium-size organization using one of Microsoft's business
 
 Microsoft 365 Business Premium provides threat protection, data protection, and device management features to help you protect your company from online threats and unauthorized access, as well as protect and manage company data on your phones, tablets, and computers.
 
-## Security tasks to complete
+## Security features
 
-Microsoft recommends that you complete the tasks listed in the following table that apply to your service plan.
+Microsoft recommends that you complete the tasks listed in the following table that apply to your service plan's features. 
 
-|*Number*|Task|Microsoft 365 Business Standard|Microsoft 365 Business Premium|
-|---|---|---|---|
-| 1 | [Protect against lost or stolen passwords](#1-set-up-multi-factor-authentication) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
-| 2 | [Train your users](#2-train-your-users) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
-| 3 | [Use dedicated admin accounts](#3-use-dedicated-admin-accounts)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | 
-| 4 | [Protect against malware](#4-protect-against-malware) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(protection for email) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(increased protection for email and devices) |
-| 5 | [Protect against ransomware](#5-protect-against-ransomware) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(protection for email and cloud storage) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(increased protection for devices, email, and cloud storage) |
-| 6 | [Stop auto-forwarding for email](#6-stop-auto-forwarding-for-email) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
-| 7 | [Use encryption](#7-use-office-message-encryption) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
-| 8 | [Protect your email from phishing attacks](#8-protect-your-email-from-phishing-attacks) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(antiphishing protection) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(advanced antiphishing protection) |
-| 9 | [Protect against malicious attachments, files, and URLs in email and Office files](#9-protect-against-malicious-attachments-files-and-urls) | | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(Safe Links and Safe Attachments) |
-| 10 | [Increase protection for your organization's devices](#10-increase-protection-for-your-organizations-devices) | | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(enterprise-grade device protection) |
+|Task|Microsoft 365 Business Standard|Microsoft 365 Business Premium|
+|---|---|---|
+[Protect against lost or stolen passwords](#1-set-up-multi-factor-authentication) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
+[Train your users](#2-train-your-users) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
+[Use dedicated admin accounts](#3-use-dedicated-admin-accounts)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | 
+[Protect against malware](#4-protect-against-malware) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(protection for email) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(increased protection for email and devices) |
+[Protect against ransomware](#5-protect-against-ransomware) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(protection for email and cloud storage) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(increased protection for devices, email, and cloud storage) |
+[Encrypt sensitive emails](#7-use-office-message-encryption) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
+[Protect your email from phishing attacks](#8-protect-your-email-from-phishing-attacks) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(antiphishing protection) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(advanced antiphishing protection) |
+[Protect against malicious attachments, files, and URLs in email and Office files](#9-protect-against-malicious-attachments-files-and-urls) | | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(Safe Links and Safe Attachments) |
+[Increase protection for your organization's devices](#10-increase-protection-for-your-organizations-devices) | | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(enterprise-grade device protection) |
 
-If you have Microsoft Business Premium, the quickest way to setup security and begin collaborating safely is to follow the guidance in this library: [Microsoft 365 Business Premium](../../business-premium/index.md). This guidance was developed in partnership with the Microsoft Defending Democracy team to protect all small business customers against cyberthreats that are launched by sophisticated hackers.
+If you have Microsoft Business Premium, the quickest way to set up security and begin collaborating safely is to follow the provided guidance: [Microsoft 365 Business Premium](../../business-premium/index.md). The Business Premium information was developed in partnership with the Microsoft Defending Democracy team to protect all small business customers against cyber threats that are launched by sophisticated hackers.
 
 Before you begin, check your [Microsoft 365 Secure Score](../../security/defender/microsoft-secure-score.md) in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. From a centralized dashboard, you can monitor and improve the security for your Microsoft 365 identities, data, apps, devices, and infrastructure. You are given points for configuring recommended security features, performing security-related tasks (such as viewing reports), or addressing recommendations with a third-party application or software. With added insights and more visibility into a broader set of Microsoft products and services, you can feel confident reporting about your organization's security health.
 
 ![Screenshot of Microsoft Secure Score.](../../media/secure-score.png)
 
-## 1: Set up multi-factor authentication
+## Set up multi-factor authentication
 
-Protect against lost or stolen passwords by using multifactor authentication (MFA). When multifactor authentication is set up, it requires people to use a code on their phone to sign into Microsoft 365. This extra step can prevent hackers from taking over if they know your password. 
+Protect against lost or stolen passwords by using multi-factor authentication (MFA). When multi-factor authentication is set up, it requires people to use a code on their phone to sign into Microsoft 365. This extra step can prevent hackers from taking over if they know your password. 
 
-Multifactor authentication is also called 2-step verification. Individuals can add 2-step verification to most accounts easily, for example, to their Google or Microsoft accounts. Here's how to [add two-step verification to your personal Microsoft account](https://go.microsoft.com/fwlink/p/?linkid=2016403).
+Multi-factor authentication is also called 2-step verification. Individuals can add 2-step verification to most accounts easily, for example, to their Google or Microsoft accounts. Here's how to [add two-step verification to your personal Microsoft account](https://go.microsoft.com/fwlink/p/?linkid=2016403).
 
 For businesses using Microsoft 365, add a setting that requires your users to log in using multifactor authentication. When you make this change, users will be prompted to set up their phone for two-factor authentication next time they log in.
 To see a training video for how to set up MFA and how users complete the setup, see [set up MFA](set-up-multi-factor-authentication.md) and [user set up](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14).
@@ -95,10 +94,12 @@ You enable or disable security defaults from the **Properties** pane for Azure A
 
 After you set up multi-factor authentication for your organization, your users will be required to set up two-step verification on their devices. For more information, see [Set up 2-step verification for Microsoft 365](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14).
 
-> [!TIP]
-> For more details and recommendations, see [Set up multi-factor authentication for users](set-up-multi-factor-authentication.md).
+>[!Tip]
+>If you need more granular control of multi-factor authentication, you can enable Conditional Access with Microsoft 365 Business Premium. If you do this, we recommend implementing the equivalent policies to Security Defaults. Go here for more information about [security defaults](m365bp-conditional-access.md)
 
-## 2: Train your users
+For more details and recommendations, see [Set up multi-factor authentication for users](set-up-multi-factor-authentication.md).
+
+## Train your users
 
 The Harvard Kennedy School [Cybersecurity Campaign Handbook](https://go.microsoft.com/fwlink/p/?linkid=2015598) provides excellent guidance on establishing a strong culture of security awareness within your organization, including training users to identify phishing attacks.
 
@@ -116,22 +117,25 @@ Microsoft also recommends that users protect their personal email accounts by ta
 
 - [Protect your Gmail account with 2-step verification](https://go.microsoft.com/fwlink/p/?linkid=2015688&)
 
-## 3: Use dedicated admin accounts
+## Use dedicated admin accounts
 
-The administrative accounts you use to administer your Microsoft 365 environment include elevated privileges. These are valuable targets for hackers and cyberattackers. Use admin accounts only for administration. Admins should have a separate user account for regular, non-administrative use and only use their administrative account when necessary to complete a task associated with their job function. Additional recommendations:
+The administrative accounts you use to administer your Microsoft 365 environment include elevated privileges. These are valuable targets for hackers and cyber attackers. Use admin accounts only for administration. Admins should have a separate user account for regular, non-administrative use and only use their administrative account when necessary to complete a task associated with their job function. Additional recommendations:
 
+- Be sure accounts are added to Azure Active Directory.
+ 
 - Be sure admin accounts are also set up for multi-factor authentication.
 
 - Before using admin accounts, close out all unrelated browser sessions and apps, including personal email accounts.
 
 - After completing admin tasks, be sure to log out of the browser session.
 
-## 4: Protect against malware
+## Protect against malware
 
 Your Microsoft 365 environment includes protection against malware. You can increase your malware protection by:
 
+- Using [pre-set policies for Microsoft Office 365](../../../microsoft-365/security/office-365-security/preset-security-policies.md).
 - Blocking attachments with certain file types
-- Using antivirus/antimalware protection on your devices
+- Using antivirus/anti-malware protection on your devices, especially Microsoft Defender for Business. It includes features such as [automated investigative reporting](../../security/office-365-security/air-view-investigation-results.md) (AIR) and the Threat and Vulnerability Management (TVM) Dashboard. When Microsoft Defender for Business is not your primary anti-virus software, you can still run it in passive mode and use [endpoint protection and response (EDR)](../../security/defender-endpoint/overview-endpoint-detection-response.md), especially in [block mode](../../security/defender-endpoint/edr-in-block-mode.md) where it works behind the scenes to remediate malicious artifacts that were detected by EDR's capabilities, and missed by the primary virus detector software. 
 
 ### Block attachments with certain file types
 
@@ -165,7 +169,7 @@ These capabilities are included in Microsoft Defender for Business, an offering 
 
 [Learn more about Microsoft Defender for Business](../../security/defender-business/mdb-overview.md).
 
-## 5: Protect against ransomware
+## Protect against ransomware
 
 Ransomware restricts access to data by encrypting files or locking computer screens. It then attempts to extort money from victims by asking for "ransom," usually in form of cryptocurrencies like Bitcoin, in exchange for access to data.
 
@@ -173,6 +177,8 @@ You get ransomware protection for email hosted in Microsoft 365 and for files th
 
 You can protect against ransomware by creating one or more mail flow rules to block file extensions that are commonly used for ransomware, or to warn users who receive these attachments in email. A good starting point is to create two rules:
 
+- Use OneDrive for moving files, so that they are always access-controlled and protected.
+ 
 - Warn users before opening Office file attachments that include macros. Ransomware can be hidden inside macros, so we'll warn users to not open these files from people they do not know.
 
 - Block file types that could contain ransomware or other malicious code. We'll start with a common list of executables (listed in the table below). If your organization uses any of these executable types and you expect them to be sent in email, add them to the previous rule (warn users).
@@ -210,34 +216,8 @@ For more information, see:
 
 - [Restore your OneDrive](https://support.microsoft.com/office/fa231298-759d-41cf-bcd0-25ac53eb8a15)
 
-## 6: Stop auto-forwarding for email
 
-Hackers who gain access to a user's mailbox can exfiltrate mail by configuring the mailbox to automatically forward email. This issue can happen even without the user's awareness. You can prevent this from happening by configuring a mail flow rule.
-
-To create a mail transport rule:
-
-1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>.
-
-2. In the **mail flow** category, select **rules**.
-
-3. Select **+**, and then **Create a new rule**.
-
-4. Select **More options** at the bottom of the dialog box to see the full set of options.
-
-5. Apply the settings in the following table. Leave the rest of the settings at the default, unless you want to change these.
-
-6. Select **Save**.
-
-|Setting|Reject Auto-Forward emails to external domains|
-|---|---|
-|Name|Prevent auto-forwarding of email to external domains|
-|Apply this rule if ...|The sender . . . is external/internal . . . Inside the organization|
-|Add condition|The recipient . . . is external/internal . . . Outside the organization|
-|Add condition|The message properties . . . include the message type . . . Auto-forward|
-|Do the following ...|Block the message . . . reject the message and include an explanation.|
-|Provide message text|Auto-forwarding email outside this organization is prevented for security reasons.|
-
-## 7: Use Office Message Encryption
+## Encrypt sensitive emails
 
 Office Message Encryption is included with Microsoft 365. It's already set up. With Office Message Encryption, your organization can send and receive encrypted email messages between people inside and outside your organization. Office 365 Message Encryption works with Outlook.com, Yahoo!, Gmail, and other email services. Email message encryption helps ensure that only intended recipients can view message content.
 
@@ -268,7 +248,7 @@ If the recipient is using another email client or email account, such as Gmail o
 > [!TIP]
 > For more information, see [Send, view, and reply to encrypted messages in Outlook for PC](https://support.microsoft.com/office/eaa43495-9bbb-4fca-922a-df90dee51980).
 
-## 8. Protect your email from phishing attacks
+## Protect your email from phishing attacks
 
 If you've configured one or more custom domains for your Microsoft 365 environment, you can configure targeted anti-phishing protection. Anti-phishing protection, a part of Microsoft Defender for Office 365, can help protect your organization from malicious impersonation-based phishing attacks and other phishing attacks. If you haven't configured a custom domain, you do not need to do this.
 
@@ -300,7 +280,7 @@ To create an anti-phishing policy in Defender for Office 365, view a [short trai
 > [!TIP]
 > For more information, see [Set up anti-phishing policies in Defender for Office 365](../../security/office-365-security/configure-atp-anti-phishing-policies.md).
 
-## 9: Protect against malicious attachments, files, and URLs
+## Protect against malicious attachments, files, and URLs
 
 People regularly send, receive, and share attachments, such as documents, presentations, spreadsheets, and more. It's not always easy to tell whether an attachment is safe or malicious just by looking at an email message. Microsoft Defender for Office 365 includes Safe Attachment protection, but this protection is not turned on by default. We recommend that you create a new rule to begin using this protection. This protection extends to files in SharePoint, OneDrive, and Microsoft Teams.
 
@@ -365,7 +345,7 @@ To modify the default policy:
 > [!TIP]
 > For more information, see [Safe Links in Microsoft Defender for Office 365](../../security/office-365-security/atp-safe-links.md).
 
-## 10: Increase protection for your organization's devices
+## Increase protection for your organization's devices
 
 Microsoft Defender Antivirus is built into the Windows operating system and provides good protection against viruses and malware. However, you can increase protection for your organization's devices by onboarding them to Microsoft Defender for Business, a new offering for small and medium-sized businesses like yours. With Defender for Business, your organization's devices are better protected from ransomware, malware, phishing, and other threats.
 
