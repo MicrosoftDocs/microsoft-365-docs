@@ -13,7 +13,7 @@ description: Plan your upgrade from Office 2013 servers and clients, because sup
 
 # Resources to help you upgrade from Office 2013 servers and clients
 
-If you're using Office 2013 servers and clients, be aware that **support ends on April 11, 2013**. If you haven't already begun to upgrade from them to newer versions, we recommend you start now.
+If you're using Office 2013 servers and clients, be aware that ***support ends on April 11, 2013***. If you haven't already begun to upgrade from them to newer versions, we recommend you start now.
 
 As you plan your upgrade, consider moving to Microsoft 365.
 
@@ -29,7 +29,7 @@ The following table provides links to planning resources to help you upgrade fro
 |---|---|
 |Office 2013 (desktop apps)|[Plan an upgrade from older versions of Office to Microsoft 365 Apps](/deployoffice/endofsupport/plan-upgrade-older-versions-office.md)|
 |Exchange Server 2013|[Exchange 2013 end of support roadmap](exchange-2013-end-of-support.md)|
-|SharePoint Server 2013 and SharePoint Foundation 2013|[Upgrading from SharePoint 2013](upgrade-from-sharepoint-2013.md)|
+|SharePoint Server 2013 <br/> SharePoint Foundation 2013|[Upgrading from SharePoint 2013](upgrade-from-sharepoint-2013.md)|
 |Project Server 2013|[Project Server 2013 end of support roadmap](project-server-2013-end-of-support.md)|
 |Lync Server 2013|[Upgrading from Lync Server 2013](upgrade-from-lync-2013.md)|
 
