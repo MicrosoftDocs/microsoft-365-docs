@@ -24,7 +24,10 @@ ms.collection: M365-security-compliance
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- Microsoft Defender Antivirus on Windows
+- Microsoft Defender Antivirus
+
+**Platforms**
+- Windows
 
 In Windows 10 and Windows 11, application notifications about malware detection and remediation are more robust, consistent, and concise. Microsoft Defender Antivirus notifications appear on endpoints when scans are completed and threats are detected. Notifications follow both scheduled and manually triggered scans. These notifications also appear in the **Notification Center**, and a summary of scans and threat detections appear at regular time intervals.
 

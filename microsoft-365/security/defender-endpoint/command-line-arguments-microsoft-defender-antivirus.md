@@ -22,7 +22,10 @@ ms.collection: M365-security-compliance
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- Microsoft Defender Antivirus on Windows
+- Microsoft Defender Antivirus 
+
+**Platforms**
+- Windows
 
 You can perform various functions in Microsoft Defender Antivirus using the dedicated command-line tool **mpcmdrun.exe**. This utility is useful when you want to automate Microsoft Defender Antivirus tasks. You can find the utility in `%ProgramFiles%\Windows Defender\MpCmdRun.exe`. Run it from a command prompt.
 

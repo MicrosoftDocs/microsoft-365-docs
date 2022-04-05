@@ -27,7 +27,10 @@ ms.collection: m365-security-compliance
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
-- Microsoft Defender Antivirus on Windows
+- Microsoft Defender Antivirus
+
+**Platforms**
+- Windows
 
 Windows Management Instrumentation (WMI) is a scripting interface that allows you to retrieve, modify, and update settings.
 

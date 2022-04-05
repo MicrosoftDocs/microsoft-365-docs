@@ -25,7 +25,10 @@ ms.collection:
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plans 1 and 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- Microsoft Defender Antivirus on Windows
+- Microsoft Defender Antivirus
+
+**Platforms**
+- Windows
 
 Keeping Microsoft Defender Antivirus up to date is critical to assure your devices have the latest technology and features needed to protect against new malware and attack techniques. Make sure to update your antivirus protection, even if Microsoft Defender Antivirus is running in [passive mode](microsoft-defender-antivirus-compatibility.md). There are two types of updates related to keeping Microsoft Defender Antivirus up to date:
 

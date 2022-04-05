@@ -27,7 +27,10 @@ ms.collection: m365-security-compliance
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
-- Microsoft Defender Antivirus on Windows
+- Microsoft Defender Antivirus
+
+**Platforms**
+- Windows
 
 You can use [Group Policy](/windows/win32/srvnodes/group-policy) to configure and manage Microsoft Defender Antivirus on your endpoints.
 

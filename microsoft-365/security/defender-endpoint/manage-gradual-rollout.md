@@ -27,7 +27,10 @@ ms.technology: m365d
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- Microsoft Defender Antivirus on Windows
+- Microsoft Defender Antivirus
+
+**Platforms**
+- Windows
 
 It is important to ensure that client components are up-to-date to deliver critical protection capabilities and prevent attacks.
 
