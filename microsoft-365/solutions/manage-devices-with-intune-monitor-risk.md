@@ -26,6 +26,8 @@ keywords:
 
 After your organization has deployed Microsoft Defender for Endpoint, you can gain greater insights and protection of your devices by integrating Microsoft Intune with Defender for Endpoint. For mobile devices, this includes the ability to monitor device risk as a condition for access. For Windows devices, you can monitor compliance of these devices to security baselines. 
 
+Note: Deploying Microsoft Defender for Endpoint includes onboarding endpoints. For more information about onboarding devices for Microsoft 365 capabilties, see [Enrolling devices vs. onboarding devices](manage-devices-with-intune-overview.md#enrolling-devices-vs-onboarding-devices).  
+
 ![Defender for Endpoint and Microsoft Intune integration illustration](../media/devices/devices-defender-for-endpoint-steps.png#lightbox)
 
 In this illustration:

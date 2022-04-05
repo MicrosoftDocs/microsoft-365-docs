@@ -42,7 +42,7 @@ If your information protection and governance team is ready to extend DLP polici
 
 ![Endpoint DLP steps for the device admin](../media/devices/endpoint-dlp-steps.png#lightbox)
 
-If you completed [Step 2. Enroll devices into management](manage-devices-with-intune-enroll.md) and [Step 6. Enroll devices into Defender for Endpoint to monitor device risk and compliance to security baselines](manage-devices-with-intune-monitor-risk.md), your devices are already enabled for Endpoint DLP. 
+If you completed [Step 2. Enroll devices to Intune](manage-devices-with-intune-enroll.md) and [Step 6. Enroll devices into Defender for Endpoint to monitor device risk and compliance to security baselines](manage-devices-with-intune-monitor-risk.md), your devices are already enabled for Endpoint DLP. 
 
 
 Use the following steps to work with your information protection team.

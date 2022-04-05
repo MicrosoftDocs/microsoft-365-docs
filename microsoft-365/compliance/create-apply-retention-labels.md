@@ -153,7 +153,7 @@ End users, as well as administrators, can manually apply retention labels from t
     
 - SharePoint
     
-- Microsoft 365 groups (both the group site and group mailbox in Outlook on the web)
+- Microsoft 365 group site for Teams
     
 Use the following sections to understand how to apply retention labels. 
 

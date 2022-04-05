@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.date: 03/04/2022
+ms.date: 04/01/2022
 ms.collection: 
 - Strat_O365_IP
 - M365-security-compliance
