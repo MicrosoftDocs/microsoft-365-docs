@@ -44,7 +44,7 @@ You can also get product updates and important notifications through the [messag
 
 
 ## April 2022
-- (Preview) [Actions](advanced-hunting-take-action.md) can now be taken on email and links inside emails straight from hunting query results. Emails can be moved to other folders or deleted. Links can be added to a Safe Links policy for blocking.
+- (Preview) [Actions](advanced-hunting-take-action.md) can now be taken on email messages straight from hunting query results. Emails can be moved to other folders or deleted permanently. 
 
 ## March 2022
 

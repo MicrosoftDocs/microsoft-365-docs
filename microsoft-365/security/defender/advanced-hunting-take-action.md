@@ -75,13 +75,12 @@ To take any of the described actions, select one or more records in your query r
 
 
 ## Take various actions on emails
-Apart from device-focused remediation steps, you can also take the following actions on emails and links inside email from your query results:
-- `Move to mailbox folder` - move email messages to Junk, Inbox, or Deleted items folder
-
+Apart from device-focused remediation steps, you can also take some actions on emails from your query results. Select the records you want to take action on, select **Take actions**, then under **Choose actions**, select your choice from the following:
+- `Move to mailbox folder` - select this to move the email messages to Junk, Inbox, or Deleted items folder
 
 :::image type="content" source="../../media/advanced-hunting-take-actions-email.png" alt-text="The Take actions option in the Microsoft 365 Defender portal" lightbox="../../media/advanced-hunting-take-actions-email.png":::
 
-- `Delete email` - move email messages to the Deleted items folder or delete them permanently
+- `Delete email` - select this to move email messages to the Deleted items folder (**Soft delete**) or delete them permanently (**Hard delete**)
 
 :::image type="content" source="../../media/advanced-hunting-take-actions-email-del.png" alt-text="The Take actions option in the Microsoft 365 Defender portal" lightbox="../../media/advanced-hunting-take-actions-email-del.png":::
 
