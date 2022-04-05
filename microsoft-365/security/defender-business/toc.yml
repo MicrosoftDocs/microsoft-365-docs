@@ -74,6 +74,6 @@
       - name: Troubleshooting
         href: mdb-troubleshooting.yml
       - name: Microsoft 365 Business Premium
-        href: /microsoft-365/business-premium
+        href: /microsoft-365/business-premium/
       - name: Microsoft 365 Lighthouse
         href: /microsoft-365/lighthouse/m365-lighthouse-overview
