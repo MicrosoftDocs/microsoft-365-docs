@@ -65,7 +65,7 @@ Before you begin, check your [Microsoft 365 Secure Score](../../security/defende
 
 ![Screenshot of Microsoft Secure Score.](../../media/secure-score.png)
 
-## 1: Set up multi-factor authentication
+## Set up multi-factor authentication
 
 Protect against lost or stolen passwords by using multi-factor authentication (MFA). When multi-factor authentication is set up, it requires people to use a code on their phone to sign into Microsoft 365. This extra step can prevent hackers from taking over if they know your password. 
 
@@ -99,7 +99,7 @@ After you set up multi-factor authentication for your organization, your users w
 
 For more details and recommendations, see [Set up multi-factor authentication for users](set-up-multi-factor-authentication.md).
 
-## 2: Train your users
+## Train your users
 
 The Harvard Kennedy School [Cybersecurity Campaign Handbook](https://go.microsoft.com/fwlink/p/?linkid=2015598) provides excellent guidance on establishing a strong culture of security awareness within your organization, including training users to identify phishing attacks.
 
@@ -117,7 +117,7 @@ Microsoft also recommends that users protect their personal email accounts by ta
 
 - [Protect your Gmail account with 2-step verification](https://go.microsoft.com/fwlink/p/?linkid=2015688&)
 
-## 3: Use dedicated admin accounts
+## Use dedicated admin accounts
 
 The administrative accounts you use to administer your Microsoft 365 environment include elevated privileges. These are valuable targets for hackers and cyber attackers. Use admin accounts only for administration. Admins should have a separate user account for regular, non-administrative use and only use their administrative account when necessary to complete a task associated with their job function. Additional recommendations:
 
@@ -129,7 +129,7 @@ The administrative accounts you use to administer your Microsoft 365 environment
 
 - After completing admin tasks, be sure to log out of the browser session.
 
-## 4: Protect against malware
+## Protect against malware
 
 Your Microsoft 365 environment includes protection against malware. You can increase your malware protection by:
 
@@ -169,7 +169,7 @@ These capabilities are included in Microsoft Defender for Business, an offering 
 
 [Learn more about Microsoft Defender for Business](../../security/defender-business/mdb-overview.md).
 
-## 5: Protect against ransomware
+## Protect against ransomware
 
 Ransomware restricts access to data by encrypting files or locking computer screens. It then attempts to extort money from victims by asking for "ransom," usually in form of cryptocurrencies like Bitcoin, in exchange for access to data.
 
@@ -217,7 +217,7 @@ For more information, see:
 - [Restore your OneDrive](https://support.microsoft.com/office/fa231298-759d-41cf-bcd0-25ac53eb8a15)
 
 
-## 6: Use Office Message Encryption
+## Encrypt sensitive emails
 
 Office Message Encryption is included with Microsoft 365. It's already set up. With Office Message Encryption, your organization can send and receive encrypted email messages between people inside and outside your organization. Office 365 Message Encryption works with Outlook.com, Yahoo!, Gmail, and other email services. Email message encryption helps ensure that only intended recipients can view message content.
 
@@ -248,7 +248,7 @@ If the recipient is using another email client or email account, such as Gmail o
 > [!TIP]
 > For more information, see [Send, view, and reply to encrypted messages in Outlook for PC](https://support.microsoft.com/office/eaa43495-9bbb-4fca-922a-df90dee51980).
 
-## 7. Protect your email from phishing attacks
+## Protect your email from phishing attacks
 
 If you've configured one or more custom domains for your Microsoft 365 environment, you can configure targeted anti-phishing protection. Anti-phishing protection, a part of Microsoft Defender for Office 365, can help protect your organization from malicious impersonation-based phishing attacks and other phishing attacks. If you haven't configured a custom domain, you do not need to do this.
 
@@ -280,7 +280,7 @@ To create an anti-phishing policy in Defender for Office 365, view a [short trai
 > [!TIP]
 > For more information, see [Set up anti-phishing policies in Defender for Office 365](../../security/office-365-security/configure-atp-anti-phishing-policies.md).
 
-## 8: Protect against malicious attachments, files, and URLs
+## Protect against malicious attachments, files, and URLs
 
 People regularly send, receive, and share attachments, such as documents, presentations, spreadsheets, and more. It's not always easy to tell whether an attachment is safe or malicious just by looking at an email message. Microsoft Defender for Office 365 includes Safe Attachment protection, but this protection is not turned on by default. We recommend that you create a new rule to begin using this protection. This protection extends to files in SharePoint, OneDrive, and Microsoft Teams.
 
@@ -345,7 +345,7 @@ To modify the default policy:
 > [!TIP]
 > For more information, see [Safe Links in Microsoft Defender for Office 365](../../security/office-365-security/atp-safe-links.md).
 
-## 9: Increase protection for your organization's devices
+## Increase protection for your organization's devices
 
 Microsoft Defender Antivirus is built into the Windows operating system and provides good protection against viruses and malware. However, you can increase protection for your organization's devices by onboarding them to Microsoft Defender for Business, a new offering for small and medium-sized businesses like yours. With Defender for Business, your organization's devices are better protected from ransomware, malware, phishing, and other threats.
 
