@@ -116,4 +116,4 @@ Remove-BlockedConnector -ConnectorId <connectorId>
 ## More information
 
 - [Respond to a compromised connector](respond-compromised-connector.md)
-- [Remove blocked entities](remove-blocked-entities.md)
+- [Remove blocked users](removing-user-from-restricted-users-portal-after-spam.md)

@@ -43,4 +43,4 @@ There are 2 types of restricted entities:
 ## More information
 
 - [Respond to a compromised connector](respond-compromised-connector.md)
-- [Remove blocked connectors](remove-blocked-connectors.md)
+- [Remove blocked users](removing-user-from-restricted-users-portal-after-spam.md)

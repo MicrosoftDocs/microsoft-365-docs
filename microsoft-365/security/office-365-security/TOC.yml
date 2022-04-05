@@ -302,13 +302,13 @@
        href: responding-to-a-compromised-email-account.md
      - name: Respond to a compromised connector
        href: respond-compromised-connector.md
-       items:
-       - name: Remove blocked connectors and entities
-         items: 
-         - name: Remove blocked connectors
-           href: remove-blocked-connectors.md
-         - name: Remove blocked entities
-           href: remove-blocked-entities.md
+     - name: Remove blocked entities
+       href: remove-blocked-entities.md
+       items: 
+       - name: Remove blocked users
+         href: removing-user-from-restricted-users-portal-after-spam.md
+       - name: Remove blocked connectors
+         href: remove-blocked-connectors.md
      - name: Review and approve (or reject) pending actions
        href: air-review-approve-pending-completed-actions.md
      - name: Tune anti-phishing protection
@@ -321,8 +321,6 @@
        href: quarantine-policies.md
      - name: Release quarantined messages from shared mailboxes
        href: view-and-release-quarantined-messages-from-shared-mailboxes.md
-     - name: Remove blocked users from the Restricted Users portal
-       href: removing-user-from-restricted-users-portal-after-spam.md
      - name: Use the delist portal to remove yourself from the blocked senders list
        href: use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md
    - name: FAQ
