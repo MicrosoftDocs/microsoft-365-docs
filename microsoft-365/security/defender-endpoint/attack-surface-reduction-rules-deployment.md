@@ -110,7 +110,7 @@ Keeping Microsoft Defender Antivirus versions current helps reduce ASR rules fal
 
 ### Caveat
 
-Some rules don’t work well if un-signed, internally developed application and scripts are in high usage. It is more difficult to deploy ASR rules if code signing is not enforced.
+Some rules don't work well if un-signed, internally developed application and scripts are in high usage. It is more difficult to deploy ASR rules if code signing is not enforced.
 
 ## ASR rules deployment steps
 
