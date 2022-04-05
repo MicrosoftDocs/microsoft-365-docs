@@ -382,7 +382,7 @@
     },
     {
       "source_path": "microsoft-365/business/create-and-edit-autopilot-profiles.md",
-      "redirect_url": "/microsoft-365/admin/devices/create-and-edit-autopilot-profiles",
+      "redirect_url": "/microsoft-365/business-premium/create-and-edit-autopilot-profiles",
       "redirect_document_id": true
     },
     {
@@ -6853,6 +6853,11 @@
     {
       "source_path": "microsoft-365/business-premium/m365-campaigns-phishing-and-attacks.md",
       "redirect_url": "/microsoft-365/business-premium/avoid-phishing-and-attacks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/devices/create-and-edit-autopilot-profiles.md",
+      "redirect_url": "/microsoft-365/business-premium/create-and-edit-autopilot-profiles",
       "redirect_document_id": false
     } 
   ]
