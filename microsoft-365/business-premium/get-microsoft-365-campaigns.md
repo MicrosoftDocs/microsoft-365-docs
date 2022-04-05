@@ -1,5 +1,5 @@
 ---
-title: "Get Microsoft 365 for Campaigns"
+title: "How to get Microsoft 365 for Campaigns"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -26,27 +26,28 @@ ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: "Get Microsoft 365 for Campaigns so you can protect your campaign from cybersecurity threats to email, data, and communications."
 ---
 
-# Get Microsoft 365 for Campaigns
+# How to get Microsoft 365 for Campaigns
 
-Anybody with Microsoft 365 Business Premium can use this guidance to configure extra security for email and collaboration. However, campaigns and political parties in the USA are eligible for special pricing for Microsoft 365. Currently this special pricing is available to:
+Campaigns and political parties in the USA are eligible for special pricing for Microsoft 365 Business Premium. Currently this special pricing is available to:
 
 - National-level political parties in the United States, Canada, and New Zealand
 
 - National or federal political campaigns in the United States and New Zealand
 
-- U.S. State-wide political campaigns (eg: campaigns seeking office for governor, state legislature, or attorney general)*
+- U.S. State-wide political campaigns (eg: campaigns seeking office for governor, state legislature, or attorney general)
 
-    *Due to local regulations, we are unable to offer Microsoft 365 for Campaigns in the following states at this time: CO, DE, IL, OK, WI & WY. We encourage campaigns in those states to explore additional offerings at [Microsoft 365 for business](https://www.office.com/business).
+   > [!IMPORTANT]
+   > Due to local regulations, we are unable to offer Microsoft 365 for Campaigns in the following states at this time: CO, DE, IL, OK, WI & WY. We encourage campaigns in those states to explore additional offerings at [Microsoft 365 for business](https://www.office.com/business).
 
 - State-level political parties in the United States
 
 If your campaign or political party qualifies, Microsoft 365 for Campaigns is the least expensive plan available through Microsoft. See [Sign up for Microsoft 365 for Campaigns](m365-campaigns-sign-up.md).  
 
-If you're not eligible for special pricing, Microsoft 365 Business Premium is still the most cost-effective way obtain comprehensive security for a collaboration environment. See [Set up Microsoft 365 Business Premium](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json&bc=/microsoft-365/campaigns/breadcrumb/toc.json) and then use this library to configure extra security and to help your team collaborate securely.
+If you're not eligible for special pricing, Microsoft 365 Business Premium is still the most cost-effective way obtain comprehensive security for a collaboration environment. See [How to get Microsoft 365 Business Premium](get-microsoft-365-business-premium.md) and then use this library to configure extra security and to help your team collaborate securely.
 
 ## What does Microsoft 365 for Campaigns include?
 
-This configuration of Microsoft 365 Business Premium includes simple controls that help you and your staff work together securely:
+Microsoft 365 for Campaigns includes simple controls that help you and your staff work together securely:
 
 - **Protect user identity**: Make sure that users are who they say they are when they sign in to send email or to access files (multifactor authentication).
 
@@ -62,8 +63,10 @@ This configuration of Microsoft 365 Business Premium includes simple controls th
 
 ## What does it cost, who needs it, and what is the commitment?
 
-If your campaign qualifies for special pricing Microsoft 365 for Campaigns costs $5 per user per month.
+If your campaign qualifies for special pricing, Microsoft 365 for Campaigns costs $5 per user per month.
+
 To protect your campaign, we recommend a license for the candidate, the campaign manager, all senior staff who are part of the campaign or party, and usually all full-time staff. Certain volunteer employees might also need a license. In general, assign a license to anyone in your campaign who needs protected email and devices.
+
 There's no minimum time commitment when you sign up for Microsoft 365 for Campaigns. You can pay monthly for the licenses you need and stop using the service anytime.
 
 ## How do I qualify for special pricing?
