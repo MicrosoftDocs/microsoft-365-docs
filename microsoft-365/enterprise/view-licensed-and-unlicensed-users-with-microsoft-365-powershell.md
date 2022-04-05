@@ -38,6 +38,18 @@ Reading user properties including license details requires the User.Read.All per
 Connect-Graph -Scopes User.Read.All
 ```
 
+To view the license details of a specific user account, run the following command:
+  
+```powershell
+Get-MgUserLicenseDetail -UserId "<user sign-in name (UPN)>"
+```
+
+For example:
+
+```powershell
+Get-MgUserLicenseDetail -UserId "belindan@litwareinc.com"
+```
+
 To view the list of all user accounts in your organization that have NOT been assigned any of your licensing plans (unlicensed users), run the following command:
   
 ```powershell
@@ -65,7 +77,7 @@ Write-Host "Found $licensedUserCount licensed users."
 To view the list of all user accounts in your organization that have an E5 license assigned, run the following command:
 
 ```powershell
-$e5Sku = Get-MgSubscribedSku -All | Where-Object SkuPartNumber -eq 'SPE_E5'
+$e5Sku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'SPE_E5'
 
 Get-MgUser -Filter "assignedLicenses/any(x:x/skuId eq $($e5sku.SkuId) )" -ConsistencyLevel eventual -CountVariable e5licensedUserCount -All
 
