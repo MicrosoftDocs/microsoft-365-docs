@@ -30,6 +30,15 @@ description: "Learn how Microsoft 365 Business Premium helps your business with 
 
 Microsoft 365 Business Premium is a cost-effective solution that empowers small and medium-sized businesses to work more efficiently and more securely than before. This article describes how Microsoft 365 Business Premium can serve your business or campaign with productivity and advanced security capabilities for business users, email, and devices. This article also includes resources to train your team and all staff, and a downloadable guide that describes digital threats and how to protect against such threats.
 
+## Watch the video: Top 5 benefits of Microsoft 365 Business Premium
+
+Watch the following video to learn see how Microsoft 365 Business Premium helps your business be more productive and secure: <p>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Pq0G]
+
+> [!TIP]
+> For more information, see [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium?activetab=pivot:overviewtab).
+
 ## Productivity and security
 
 With Microsoft 365 Business Premium, you can run your business more securely, across devices, and from just about anywhere. Microsoft 365 Business Premium brings together best-in-class Office apps, collaboration tools like Microsoft Teams, and comprehensive security:
@@ -47,15 +56,6 @@ With Microsoft 365 Business Premium, you can run your business more securely, ac
 - **Compliance and privacy features** to protect and control access to your and your customers' sensitive information
 
 - **Device management capabilities** that enable your security team to help keep devices up to date and secure
-
-## Watch the video: Top 5 benefits of Microsoft 365 Business Premium
-
-Watch the following video to learn more about how Microsoft 365 Business Premium helps your business be more productive and secure: <p>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Pq0G]
-
-> [!TIP]
-> For more information, see [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium?activetab=pivot:overviewtab).
 
 ## Resources to train your users
 
