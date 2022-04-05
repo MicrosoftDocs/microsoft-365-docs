@@ -52,12 +52,12 @@ To learn more about a feature specific to a service plan, click on its heading i
 [Protect against lost or stolen passwords](set-up-multi-factor-authentication) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
 [Train your users](train-your-users) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
 [Use dedicated admin accounts](use-dedicated-admin-accounts)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | 
-[Protect against malware](protect-against-malware) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(protection for email) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(increased protection for email and devices) |
-[Protect against ransomware](protect-against-ransomware) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(protection for email and cloud storage) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(increased protection for devices, email, and cloud storage) |
-[Encrypt sensitive emails](use-office-message-encryption) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
-[Protect your email from phishing attacks](protect-your-email-from-phishing-attacks) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(antiphishing protection) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(advanced antiphishing protection) |
-[Protect against malicious attachments, files, and URLs in email and Office files](protect-against-malicious-attachments-files-and-urls) | | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(Safe Links and Safe Attachments) |
-[Increase protection for your organization's devices](#10-increase-protection-for-your-organizations-devices) | | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(enterprise-grade device protection) |
+[Protect against malware](protect-against-malware) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(#protection for email) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(#increased protection for email and devices) |
+[Protect against ransomware](protect-against-ransomware) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(#protection for email and cloud storage) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(#increased protection for devices, email, and cloud storage) |
+[Encrypt sensitive emails](#use-office-message-encryption) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
+[Protect your email from phishing attacks](protect-your-email-from-phishing-attacks) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(#antiphishing protection) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(#advanced antiphishing protection) |
+[Protect against malicious attachments, files, and URLs in email and Office files](protect-against-malicious-attachments-files-and-urls) | | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(#Safe Links and Safe Attachments) |
+[Increase protection for your organization's devices](increase-protection-for-your-organizations-devices) | | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(#enterprise-grade device protection) |
 
 If you have Microsoft Business Premium, the quickest way to set up security and begin collaborating safely is to follow the provided guidance: [Microsoft 365 Business Premium](../../business-premium/index.md). The Business Premium information was developed in partnership with the Microsoft Defending Democracy team to protect all small business customers against cyber threats that are launched by sophisticated hackers.
 
@@ -65,7 +65,7 @@ Before you begin, check your [Microsoft 365 Secure Score](../../security/defende
 
 ![Screenshot of Microsoft Secure Score.](../../media/secure-score.png)
 
-## Set up multi-factor authentication
+## Set up multifactor authentication
 
 Protect against lost or stolen passwords by using multi-factor authentication (MFA). When multi-factor authentication is set up, it requires people to use a code on their phone to sign into Microsoft 365. This extra step can prevent hackers from taking over if they know your password. 
 
