@@ -13,13 +13,13 @@ description: Plan your upgrade from Office 2013 servers and clients, because sup
 
 # Resources to help you upgrade from Office 2013 servers and clients
 
-If you're using Office 2013 servers and clients, be aware that **support ends on April 11, 2013**. If you haven't already begun to upgrade from them, we recommend you start now.
+If you're using Office 2013 servers and clients, be aware that **support ends on April 11, 2013**. If you haven't already begun to upgrade from them to newer versions, we recommend you start now.
 
 As you plan your upgrade, consider moving to Microsoft 365.
 
 - Microsoft 365 has cloud-based services, such as Exchange Online, SharePoint, and Teams.
 
-- Microsoft 365 Apps for enterprise provides Office client apps that you can install on local devices. The apps are updated with new productivity and security features regularly from the Microsoft cloud.
+- Microsoft 365 Apps for enterprise provides Office client apps that you can install on local devices. The apps are updated regularly from the Microsoft cloud with new productivity and security features.
 
 ## Upgrade planning resources
 
