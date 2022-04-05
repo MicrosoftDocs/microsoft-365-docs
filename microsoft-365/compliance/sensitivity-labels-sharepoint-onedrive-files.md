@@ -82,7 +82,7 @@ Use the OneDrive sync app version 19.002.0121.0008 or later on Windows, and vers
   - **User access to content expires** is set to a value other than **Never**.
   - **Double Key Encryption** is selected.
   - Encryption that was applied **independently from a label**, for example, by directly applying a Rights Management protection template.
-  - Encryption that uses an on-premises key ("**hold your own key**" or HYOK)
+  - Encryption that uses an on-premises key ("**hold your own key**" or HYOK).
 
     For labels with any of these encryption configurations, the labels aren't displayed to users in Office for the web. Additionally, the new capabilities can't be used with labeled documents that already have these encryption settings. For example, these documents won't be returned in search results, even if they are updated. Documents that have been encrypted in one of these ways can't be opened in Office for the web.
 
