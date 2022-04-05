@@ -30,9 +30,11 @@ description: "Learn how Microsoft 365 Business Premium helps your business with 
 
 Microsoft 365 Business Premium is a cost-effective solution that empowers small and medium-sized businesses to work more efficiently and more securely than before. This article describes:
 
-- How Microsoft 365 Business Premium can serve your business or campaign with productivity and advanced security capabilities for business users, email, and devices. 
+- How Microsoft 365 Business Premium can serve your business or campaign with [productivity and advanced security capabilities](#productivity-and-security) for business users, email, and devices. 
 
-- Resources to train your team and all staff, including a downloadable guide that describes digital threats and how to protect against such threats.
+- [Resources to train your team and all staff](#resources-to-train-your-users), including a [downloadable guide](#download-the-digital-threats-guide) that describes digital threats and how to protect against such threats.
+
+- Your [next steps](#next-steps)
 
 ## Video: Top 5 benefits of Microsoft 365 Business Premium
 
