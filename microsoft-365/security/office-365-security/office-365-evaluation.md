@@ -88,10 +88,6 @@ You'll have a 30-day window with the evaluation to monitor and report on advance
 
 The following roles are needed:
 
-<br>
-
-****
-
 |Task|Role (in Exchange Online)|
 |---|---|
 |Get a free trial or buy Microsoft Defender for Office 365 (Plan 2)|Billing admin role OR Global admin role|
@@ -99,7 +95,6 @@ The following roles are needed:
 |Edit evaluation policy|Remote and Accepted Domains role; Security admin role|
 |Delete evaluation policy|Remote and Accepted Domains role; Security admin role |
 |View evaluation report|Security admin role OR Security reader role|
-|
 
 ### Enhanced Filtering for Connectors
 

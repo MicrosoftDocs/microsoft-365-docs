@@ -225,11 +225,10 @@ You'll need to define three separate sets of permissions for each key vault, dep
    ```
 
    Where:
-
-  - *vault name* is the name of the key vault you created.
-  - For Exchange Online, replace  *Office 365 appID* with `00000002-0000-0ff1-ce00-000000000000`
-  - For SharePoint Online, OneDrive for Business, and Teams files stored in SharePoint Online / OneDrive for Business, replace *Office 365 appID* with `00000003-0000-0ff1-ce00-000000000000`
-  - For multi-workload policy (Exchange, Teams, MIP EDM) that applies to all tenant users, replace *Office 365 appID* with `c066d759-24ae-40e7-a56f-027002b5d3e4`
+   - *vault name* is the name of the key vault you created.
+   - For Exchange Online and Skype for Business, replace  *Office 365 appID* with `00000002-0000-0ff1-ce00-000000000000`
+   - For SharePoint Online, OneDrive for Business, and Teams files, replace  *Office 365 appID* with `00000003-0000-0ff1-ce00-000000000000`
+   - For multi-workload policy (Exchange, Teams, Microsoft Information Protection) that applies to all tenant users, replace *Office 365 appID* with `c066d759-24ae-40e7-a56f-027002b5d3e4`
 
   Example: Setting permissions for Exchange Online and Skype for Business:
 
