@@ -63,7 +63,7 @@ Integrating Microsoft OneDrive LTI with Canvas is a two step process. The first 
 
 7. Next, expand the **Additional settings** dropdown and set the **Privacy Level** to **Public**. 
   
-  Setting the **Privacy Level** to **Public** allows course members' names to appear to other members for collaboration.
+   Setting the **Privacy Level** to **Public** allows course members' names to appear to other members for collaboration.
 
 8. Save the key, and it becomes available in Canvas in an **Off** state. Turn the key **On** and copy the key given in the **Details** column to be used in the next step.
 
