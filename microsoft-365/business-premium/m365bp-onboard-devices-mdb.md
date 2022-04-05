@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 03/14/2022
+ms.date: 04/01/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -26,13 +26,17 @@ Onboard devices to Microsoft Defender for Business to protect them with next-gen
 To onboard devices, you can choose from several options:
 
 - [Use automatic onboarding for Windows devices that are already enrolled in Microsoft Endpoint Manager](#use-automatic-onboarding-for-windows-devices-that-are-already-enrolled-in-microsoft-endpoint-manager)
+
 - [Use a local script to onboard Windows and macOS devices](#use-a-local-script-to-onboard-windows-and-macos-devices)
+
 - [Use Endpoint Manager to enroll devices](#use-microsoft-endpoint-manager-to-enroll-devices) (Windows, macOS, iOS, and Android) and then apply Defender for Business policies to those devices
 
 This article also includes:
 
 - [How to run a detection test on a Windows device](#run-a-detection-test-on-a-windows-device)
+
 - [How to onboard devices gradually](#onboard-devices-gradually)
+
 - [How to offboard a device](#offboard-a-device) if a device is replaced or someone leaves the organization
 
 > [!IMPORTANT]
@@ -63,6 +67,7 @@ You can onboard up to 10 devices at a time with this method.
 5. Follow the guidance in the following articles:
 
    - Windows devices: [Onboard Windows devices using a local script](../security/defender-endpoint/configure-endpoints-script.md#onboard-windows-devices-using-a-local-script)
+
    - macOS devices: [Manual deployment for Microsoft Defender for Endpoint on macOS](../security/defender-endpoint/mac-install-manually.md#download-installation-and-onboarding-packages)
 
 ## Use Microsoft Endpoint Manager to enroll devices
@@ -126,6 +131,7 @@ If you want to offboard a device, follow these steps:
 7. Run the script on each device that you want to offboard. Need help with this task? See the following resources:   
 
    - Windows devices: [Offboard Windows devices using a local script](../security/defender-endpoint/configure-endpoints-script.md#offboard-devices-using-a-local-script)
+   
    - macOS devices: [Uninstalling on macOS](../security/defender-endpoint/mac-resources.md#uninstalling)
 
 > [!IMPORTANT]

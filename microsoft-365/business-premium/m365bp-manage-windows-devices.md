@@ -31,7 +31,7 @@ description: "Learn how to enable Microsoft 365 to protect local Active-Director
 # Enable domain-joined Windows 10 devices to be managed by Microsoft 365 Business Premium
 
 > [!NOTE]
-> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../../security/defender-business/mdb-overview.md).
+> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../security/defender-business/mdb-overview.md).
 
 If your organization uses Windows Server Active Directory on-premises, you can set up Microsoft 365 Business Premium to protect your Windows 10 devices, while still maintaining access to on-premises resources that require local authentication.
 To set up this protection, you can implement **Hybrid Azure AD joined devices**. These devices are joined to both your on-premises Active Directory and your Azure Active Directory.
@@ -48,35 +48,46 @@ This video describes the steps for how to set this up for the most common scenar
 - Complete Azure AD Connect Organizational Unit (OU) sync.
 - Make sure all the domain users you sync have licenses to Microsoft 365 Business Premium.
 
-See [Synchronize domain users to Microsoft](manage-domain-users.md) for the steps.
+See [Synchronize domain users to Microsoft 365](../admin/setup/manage-domain-users.md) for the steps.
 
 ## 1. Verify MDM Authority in Intune
 
-Go to [Endpoint Manager](https://endpoint.microsoft.com/#blade/Microsoft_Intune_Enrollment/EnrollmentMenu/overview) and on the Microsoft Intune page, select **Device enrollment**, then on the **Overview** page, make sure **MDM authority** is **Intune**.
+Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com/#blade/Microsoft_Intune_Enrollment/EnrollmentMenu/overview)) and select **Device enrollment**, then on the **Overview** page, make sure **MDM authority** is **Intune**.
 
 - If **MDM authority** is **None**, click the **MDM authority** to set it to **Intune**.
 - If **MDM authority** is **Microsoft Office 365**,go to **Devices** > **Enroll devices** and use the **Add MDM authority** dialog on the right to add **Intune MDM** authority (the **Add MDM Authority** dialog is only available if the **MDM Authority** is set to Microsoft Office 365).
 
 ## 2. Verify Azure AD is enabled for joining computers
 
-- Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>  and select **Azure Active Directory** (select Show all if Azure Active Directory is not visible) in the **Admin centers** list. 
-- In the **Azure Active Directory admin center**, go to **Azure Active Directory** , choose **Devices** and then **Device settings**.
-- Verify**Users may join devices to Azure AD** is enabled 
+1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>  and select **Azure Active Directory** (select Show all if Azure Active Directory is not visible) in the **Admin centers** list. 
+
+2. In the **Azure Active Directory admin center**, go to **Azure Active Directory** , choose **Devices** and then **Device settings**.
+
+3. Verify**Users may join devices to Azure AD** is enabled 
+
     1. To enable all users, set to **All**.
+
     2. To enable specific users, set to **Selected** to enable a specific group of users.
-        - Add the desired domain users synced in Azure AD to a [security group](../../admin/create-groups/create-groups.md).
+
+        - Add the desired domain users synced in Azure AD to a [security group](../admin/create-groups/create-groups.md).
+
         - Choose **Select groups** to enable MDM user scope for that security group.
 
 ## 3. Verify Azure AD is enabled for MDM
 
-- Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>  and select **Endpoint Managemen**t (select **Show all** if **Endpoint Manager** is not visible)
-- In the **Microsoft Endpoint Manager admin center**, go to **Devices** > **Windows** > **Windows Enrollment** > **Automatic Enrollment**.
-- Verify MDM user scope is enabled.
+1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>  and select **Endpoint Management** (select **Show all** if **Endpoint Manager** is not visible)
+
+2. In the **Microsoft Endpoint Manager admin center**, go to **Devices** > **Windows** > **Windows Enrollment** > **Automatic Enrollment**.
+
+3. Verify MDM user scope is enabled.
 
     1. To enroll all computers, set to **All** to automatically enroll all user computers that are joined to Azure AD and new computers  when the users add a work account to Windows.
+  
     2. Set to **Some** to enroll the computers of a specific group of users.
-        -  Add the desired domain users synced in Azure AD to a [security group](../create-groups/create-groups.md).
-        -  Choose **Select groups** to enable MDM user scope for that security group.
+  
+        -  Add the desired domain users synced in Azure AD to a [security group](/admin/create-groups/create-groups.md).
+  
+       -  Choose **Select groups** to enable MDM user scope for that security group.
 
 ## 4. Create the required resources 
 
@@ -89,7 +100,7 @@ Install-Module SecMgmt
 ```
 
 > [!IMPORTANT]
-> It is recommended that you install this module on the Windows Server running Azure AD Connect.
+> Install this module on the Windows Server running Azure AD Connect.
 
 To create the required service connection point and group policy, you will invoke the  [Initialize-SecMgmtHybirdDeviceEnrollment](https://github.com/microsoft/secmgmt-open-powershell/blob/master/docs/help/Initialize-SecMgmtHybirdDeviceEnrollment.md) cmdlet. You will need your Microsoft 365 Business Premium global admin credentials when performing this task. When you are ready to create the resources, invoke the following:
 
@@ -103,6 +114,7 @@ The first command will establish a connection with the Microsoft cloud, and when
 ## 5. Link the Group Policy
 
 1. In the Group Policy Management Console (GPMC), right-click on the location where you want to link the policy and select *Link an existing GPO...* from the context menu.
+
 2. Select the policy created in the above step, then click **OK**.
 
 ## Get the latest Administrative Templates
@@ -110,18 +122,27 @@ The first command will establish a connection with the Microsoft cloud, and when
 If you do not see the policy **Enable automatic MDM enrollment using default Azure AD credentials**, it may be because you don’t have the ADMX installed for Windows 10, version 1803, or later. To fix the issue, follow these steps (Note: the latest MDM.admx is backwards compatible):
 
 1. Download: [Administrative Templates (.admx) for Windows 10 October 2020 Update (20H2)](https://www.microsoft.com/download/102157).
+
 2. Install the package on a Domain Controller.
+
 3. Navigate, depending on the Administrative Templates version to the folder: **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 October 2020 Update (20H2)**.
+
 4. Rename the **Policy Definitions** folder in the above path to **PolicyDefinitions**.
-5. Copy the **PolicyDefinitions** folder to your SYSVOL share, by default located at **C:\Windows\SYSVOL\domain\Policies**.
-   - If you plan to use a central policy store for your entire domain, add the contents of PolicyDefinitions there.
+
+5. Copy the **PolicyDefinitions** folder to your SYSVOL share, by default located at `C:\Windows\SYSVOL\domain\Policies`.
+
+   If you plan to use a central policy store for your entire domain, add the contents of PolicyDefinitions there.
+
 6. In case you have several Domain Controllers, wait for SYSVOL to replicate for the policies to be available. This procedure will work for any future version of the Administrative Templates as well.
 
 At this point you should be able to see the policy **Enable automatic MDM enrollment using default Azure AD credentials** available.
 
 ## Related content
 
-[Synchronize domain users to Microsoft 365](manage-domain-users.md) (article)\
-[Create a group in the admin center](../create-groups/create-groups.md) (article)\
-[Tutorial: Configure hybrid Azure Active Directory join for managed domains](/azure/active-directory/devices/hybrid-azuread-join-managed-domains) (article)
-[Top 10 ways to secure Microsoft 365 for business plans](../security-and-compliance/secure-your-business-data.md)
+- [Synchronize domain users to Microsoft 365](../admin/setup/manage-domain-users.md)(article)\
+
+- [Create a group in the admin center](../admin/create-groups/create-groups.md) (article)\
+
+- [Tutorial: Configure hybrid Azure Active Directory join for managed domains](/azure/active-directory/devices/hybrid-azuread-join-managed-domains) (article)
+
+- [Top 10 ways to secure Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)
