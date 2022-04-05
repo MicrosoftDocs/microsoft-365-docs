@@ -65,7 +65,7 @@ The results contain:
 To view details about the Microsoft 365 services that are available in all of your license plans, first display a list of your license plans.
 
 ```powershell
-Get-MgSubscribedSku | Select SkuPartNumber
+Get-MgSubscribedSku
 ```
 
 Next, store the license plans information in a variable.

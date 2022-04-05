@@ -52,41 +52,6 @@ Assigning and removing licenses for a user requires the User.ReadWrite.All permi
 Connect-Graph -Scopes User.ReadWrite.All
 ```
 
-Next, list the license plans for your tenant with this command.
-
-```powershell
-Get-MgSubscribedSku | Select SkuPartNumber
-```
-
-Next, get the sign-in name of the account to which you want to add a license, also known as the user principal name (UPN).
-
-Next, ensure that the user account has a usage location assigned.
-
-```powershell
-Get-MgUser -UserId <user sign-in name (UPN)> | Select DisplayName, UsageLocation
-```
-
-If there is no usage location assigned, you can assign one with these commands:
-
-```powershell
-$userUPN="<user sign-in name (UPN)>"
-$userLoc="<ISO 3166-1 alpha-2 country code>"
-
-Update-MgUser -UserId $userUPN -UsageLocation $userLoc
-```
-
-Finally, specify the user sign-in name and license plan name and run these commands.
-
-```powershell
-$userUPN="<user sign-in name (UPN)>"
-$planName="<license plan name from the list of license plans>"
-
-$e5Sku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'SPE_E5'
-Set-MgUserLicense -UserId $userUPN -AddLicenses @{SkuId = $e5Sku.SkuId} -RemoveLicenses @()
-```
-
----------------
-
 Run the `Get-MgSubscribedSku` command to view the available licensing plans and the number of available licenses in each plan in your organization. The number of available licenses in each plan is **ActiveUnits** - **WarningUnits** - **ConsumedUnits**. For more information about licensing plans, licenses, and services, see [View licenses and services with PowerShell](view-licenses-and-services-with-microsoft-365-powershell.md).
 
 To find the unlicensed accounts in your organization, run this command.
@@ -96,11 +61,11 @@ Get-MgUser -Filter 'assignedLicenses/$count eq 0' -ConsistencyLevel eventual -Co
 ```
 
 You can only assign licenses to user accounts that have the **UsageLocation** property set to a valid ISO 3166-1 alpha-2 country code. For example, US for the United States, and FR for France. Some Microsoft 365 services aren't available in certain countries. For more information, see [About license restrictions](https://go.microsoft.com/fwlink/p/?LinkId=691730).
-    
+
 To find accounts that don't have a **UsageLocation** value, run this command.
 
 ```powershell
-Get-MgUser -Select Id,DisplayName,Mail,UserPrincipalName,UsageLocation,UserType | where { $_.UsageLocation -eq $null -and $_.UserType -eq 'member' }
+Get-MgUser -Select Id,DisplayName,Mail,UserPrincipalName,UsageLocation,UserType | where { $_.UsageLocation -eq $null -and $_.UserType -eq 'Member' }
 ```
 
 To set the **UsageLocation** value on an account, run this command.
