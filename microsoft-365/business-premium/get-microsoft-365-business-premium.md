@@ -27,14 +27,17 @@ description: "Get Microsoft 365 Business Premium so you can protect your company
 
 # How to get Microsoft 365 Business Premium
 
-This article describes how to get Microsoft 365 Business Premium for your company. You can choose to:
+You have several options for getting Microsoft 365 Business Premium for your company. You can:
 
 - [Try or buy Microsoft 365 Business Premium on your own](#get-microsoft-365-business-premium-on-your-own)
+
 - [Work with a solution provider](#work-with-a-microsoft-solution-provider-to-get-microsoft-365-business-premium)
 
 ## Get Microsoft 365 Business Premium on your own
 
-See [Try or buy a Microsoft 365 for business subscription](../commerce/try-or-buy-microsoft-365.md). On the [Microsoft 365 Products site](https://www.aka.ms/office365signup), choose **Microsoft 365 Business Premium**.
+1. Visit the [Microsoft 365 Business Premium product page](https://www.microsoft.com/en-us/microsoft-365/business/microsoft-365-business-premium?activetab=pivot%3aoverviewtab).
+
+2. Choose to try or buy your subscription. See [Try or buy a Microsoft 365 for business subscription](../commerce/try-or-buy-microsoft-365.md). On the [Microsoft 365 Products site](https://www.aka.ms/office365signup), choose **Microsoft 365 Business Premium**.
 
 ## Work with a Microsoft Solution Provider to get Microsoft 365 Business Premium
 
