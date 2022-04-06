@@ -31,15 +31,12 @@ description: "Get Microsoft 365 for Campaigns so you can protect your campaign f
 Campaigns and political parties in the USA are eligible for special pricing for Microsoft 365 Business Premium. Currently this special pricing is available to:
 
 - National-level political parties in the United States, Canada, and New Zealand
-
 - National or federal political campaigns in the United States and New Zealand
-
+- State-level political parties in the United States
 - U.S. State-wide political campaigns (eg: campaigns seeking office for governor, state legislature, or attorney general)
 
    > [!IMPORTANT]
    > Due to local regulations, we are unable to offer Microsoft 365 for Campaigns in the following states at this time: CO, DE, IL, OK, WI & WY. We encourage campaigns in those states to explore additional offerings at [Microsoft 365 for business](https://www.office.com/business).
-
-- State-level political parties in the United States
 
 If your campaign or political party qualifies, Microsoft 365 for Campaigns is the least expensive plan available through Microsoft. See [Sign up for Microsoft 365 for Campaigns](m365-campaigns-sign-up.md).  
 
@@ -50,15 +47,10 @@ If you're not eligible for special pricing, Microsoft 365 Business Premium is st
 Microsoft 365 for Campaigns includes simple controls that help you and your staff work together securely:
 
 - **Protect user identity**: Make sure that users are who they say they are when they sign in to send email or to access files (multifactor authentication).
-
 - **Protect sensitive information**: Protect sensitive information to monitor information that gets shared outside your organization (data loss prevention).
-
 - **Protect mobile devices**: Protect data on mobile devices (mobile app protection policy).
-
 - **Guard against malicious content**: Prevent access to malicious content by scanning email attachments (Defender for Office 365).
-
 - **Protect passwords**: Set passwords to never expire which is more secure and helps prevent work stoppages (password policy).
-
 - **AccountGuard Program Access**: Microsoft AccountGuard is a security service offered at no additional cost to customers in the political space. The service is designed to inform and help these highly targeted customers protect themselves from cybersecurity threats across their organizational and personal Microsoft email accounts. View more information at [Microsoft AccountGuard](https://www.microsoftaccountguard.com/).
 
 ## What does it cost, who needs it, and what is the commitment?
