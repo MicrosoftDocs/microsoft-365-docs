@@ -81,7 +81,7 @@ Manage incidents on the **Incidents** page in the Microsoft 365 Defender portal 
 
 ![Evidence and alerts tab of the incident details in the Microsoft 365 Defender portal.](../../media/mdo-sec-ops-incident-evidence-and-response-tab.png)
 
-Manage incidents on the **Incidents** page in Microsoft Sentinel at <https://portal.azure.com/#blade/Microsot_Azure_Security_Insights/ManeMenuBlade>:
+Manage incidents on the **Incidents** page in Microsoft Sentinel at <https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/microsoft.securityinsightsarg%2Fsentinel>:
 
 ![Incidents page in Microsoft Sentinel.](../../media/mdo-sec-ops-microsoft-sentinel-incidents.png)
 
@@ -118,4 +118,4 @@ The most effective way to take action is to use the built-in integration with In
 - You benefit from the built-in correlation with other workloads: Microsoft Defender for Endpoint, Microsoft Defender for Identity, and Microsoft Defender for Cloud Apps.
 - You take actions on email from a single place.
 
-You take action on email based on the result of a manual investigation or hunting activity. [Threat Explorer](threat-explorer.md) allows security team members to take action on any email messages that might still exist in cloud mailboxes. They can take action on intra-org messages that were sent between users in your organization. TThreat Explorer data is available for the last 30 days.
+You take action on email based on the result of a manual investigation or hunting activity. [Threat Explorer](threat-explorer.md) allows security team members to take action on any email messages that might still exist in cloud mailboxes. They can take action on intra-org messages that were sent between users in your organization. Threat Explorer data is available for the last 30 days.

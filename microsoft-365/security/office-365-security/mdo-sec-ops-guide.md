@@ -40,7 +40,7 @@ The **Incidents** page in the Microsoft 365 Defender portal at <https://security
 
 For more information about the Incidents queue, see [Prioritize incidents in Microsoft 365 Defender](../defender/incident-queue.md).
 
-You triage plan for monitoring the Incidents queue should use the following order of precedence for incidents:
+Your triage plan for monitoring the Incidents queue should use the following order of precedence for incidents:
 
 1. **A potentially malicious URL click was detected**.
 2. **User restricted from sending email**.
@@ -54,10 +54,10 @@ Incident queue management and the responsible personas are described in the foll
 
 |Activity|Cadence|Description|Persona|
 |---|---|---|---|
-|Triage incidents in the Incidents queue at <https://security.microsoft.com/incidents-queue>.|Daily|Verify that all **Medium** and **High** severity incidents from Defender for Office 365 are triaged.|Security Operation Team|
-|Investigate and take Response actions on incidents.|Daily|Investigate all incidents and actively take the recommended or manual response actions.|Security Operation Team|
-|Resolve incidents.|Daily|If the incident has been remediated, resolve the incident. Resolving the incident resolves all linked and related active alerts.|Security Operation Team|
-|Classify incidents.|Daily|Classify incidents as true or false. For true alerts, specify the threat type. This classifications helps your security team see threat patterns and defend your organization from them.|Security Operation Team|
+|Triage incidents in the Incidents queue at <https://security.microsoft.com/incidents-queue>.|Daily|Verify that all **Medium** and **High** severity incidents from Defender for Office 365 are triaged.|Security Operations Team|
+|Investigate and take Response actions on incidents.|Daily|Investigate all incidents and actively take the recommended or manual response actions.|Security Operations Team|
+|Resolve incidents.|Daily|If the incident has been remediated, resolve the incident. Resolving the incident resolves all linked and related active alerts.|Security Operations Team|
+|Classify incidents.|Daily|Classify incidents as true or false. For true alerts, specify the threat type. This classifications helps your security team see threat patterns and defend your organization from them.|Security Operations Team|
 
 ### Manage false positive and false negative detections
 
@@ -65,6 +65,7 @@ In Defender for Office 365, you manage false positives (good mail marked as bad)
 
 - The [Submissions portal (admin submissions)](admin-submission.md).
 - The [Tenant Allow/Block List](tenant-allow-block-list.md)
+- [Threat Explorer](threat-explorer.md)
 
 For more information, see the [Manage false positive and false negative detections](#manage-false-positive-and-false-negative-detections) section later in this article.
 
@@ -72,16 +73,16 @@ False positive and false negative management and the responsible personas are de
 
 |Activity|Cadence|Description|Persona|
 |---|---|---|---|
-|Submit false positives and false negatives to Microsoft at <https://security.microsoft.com/reportsubmission>.|Daily|Provide signals to Microsoft by reporting incorrect email, URL, and file detections.|Security Operation Team|
-|Analyze admin submission details.|Daily|Understand the following factors for the submissions you make to Microsoft: <ul><li>What caused the false positive ofr false negative.</li><li>The state of your Defender for Office 365 configuration at the time of the submission.</li><li>Whether you need to make changes to your Defender for Office 365 configuration.</li></ul>|Security Operation Team <br/><br/> Security Administration|
-|Add block entries in the Tenant Allow/Block List at <https://security.microsoft.com/tenantAllowBlockList>.|Daily|Use the Tenant Allow/Block List to add block entries for false negative URL, file, or sender detections as needed.|Security Operation Team|
+|Submit false positives and false negatives to Microsoft at <https://security.microsoft.com/reportsubmission>.|Daily|Provide signals to Microsoft by reporting incorrect email, URL, and file detections.|Security Operations Team|
+|Analyze admin submission details.|Daily|Understand the following factors for the submissions you make to Microsoft: <ul><li>What caused the false positive ofr false negative.</li><li>The state of your Defender for Office 365 configuration at the time of the submission.</li><li>Whether you need to make changes to your Defender for Office 365 configuration.</li></ul>|Security Operations Team <br/><br/> Security Administration|
+|Add block entries in the Tenant Allow/Block List at <https://security.microsoft.com/tenantAllowBlockList>.|Daily|Use the Tenant Allow/Block List to add block entries for false negative URL, file, or sender detections as needed.|Security Operations Team|
 |Release false negatives from quarantine.|Daily|After the recipient confirms that the message was incorrectly quarantined, you can release or approve release requests for users. <br/><br/> To control what users can do to their own quarantined messages (including release or request release), see [Quarantine policies](quarantine-policies.md).|Security Operations Team <br/><br/> Messaging Team|
 
 ### Review phishing and malware campaigns that resulted in delivered mail
 
 |Activity|Cadence|Description|Persona|
 |---|---|---|---|
-|Review email campaigns.|Daily|[Review email campaigns](campaigns.md) that targeted your organization at <https://security.microsoft.com/campaigns>. Focus on campaigns that resulted in messages being delivered to recipients. <br/><br/> Remove messages from campaigns that exist in user mailboxes. This action is required only when a campaign contains email that hasn't already been remediated by actions from incidents, [zero-hour auto purge (ZAP)](zero-hour-auto-purge.md), or manual remediation.|Security Operation Team|
+|Review email campaigns.|Daily|[Review email campaigns](campaigns.md) that targeted your organization at <https://security.microsoft.com/campaigns>. Focus on campaigns that resulted in messages being delivered to recipients. <br/><br/> Remove messages from campaigns that exist in user mailboxes. This action is required only when a campaign contains email that hasn't already been remediated by actions from incidents, [zero-hour auto purge (ZAP)](zero-hour-auto-purge.md), or manual remediation.|Security Operations Team|
 
 ## Weekly activities
 
@@ -94,7 +95,7 @@ In Defender for Office 365, you can use the following reports to review email de
 
 |Activity|Cadence|Description|Persona|
 |---|---|---|---|
-|Review email detection reports at: <ul><li><https://security.microsoft.com/reports/TPSAggregateReportATP></li><li><https://security.microsoft.com/reports/mailflowStatusReport></li></ul>|Weekly|Review email detection trends for malware, phishing, and spam as compared to good email. Observation over time allows you to see threat patterns and determine whether you need to adjust your Defender for Office 365 policies.|Security Administration <br/><br/> Security Operations Team|
+|Review email detection reports at: <ul><li><https://security.microsoft.com/reports/TPSAggregateReportATP></li><li><https://security.microsoft.com/mailflowStatusReport?viewid=type></li></ul>|Weekly|Review email detection trends for malware, phishing, and spam as compared to good email. Observation over time allows you to see threat patterns and determine whether you need to adjust your Defender for Office 365 policies.|Security Administration <br/><br/> Security Operations Team|
 
 ### Track and respond to emerging threats using Threat analytics
 
@@ -102,7 +103,7 @@ Use [Threat analytics](/microsoft-365/security/defender-endpoint/threat-analytic
 
 |Activity|Cadence|Description|Persona|
 |---|---|---|---|
-|Review threats in Threat analytics at <https://security.microsoft.com/threatanalytics3>.|Weekly|Threat analytics provides detailed analysis, including the following items: <ul><li>IOCs.</li><li>Hunting queries about active threat actors and their campaigns.</li><li>Popular and new attack techniques.</li><li>Critical vulnerabilities.</li><li>Common attack surfaces.</li><li>Prevalent malware.</li></ul>|Security Operation Team <br/><br/> Threat hunting team|
+|Review threats in Threat analytics at <https://security.microsoft.com/threatanalytics3>.|Weekly|Threat analytics provides detailed analysis, including the following items: <ul><li>IOCs.</li><li>Hunting queries about active threat actors and their campaigns.</li><li>Popular and new attack techniques.</li><li>Critical vulnerabilities.</li><li>Common attack surfaces.</li><li>Prevalent malware.</li></ul>|Security Operations Team <br/><br/> Threat hunting team|
 
 ### Review top targeted users for malware and phishing
 
@@ -153,7 +154,7 @@ Campaign Views reveals malware and phishing attacks against your organization. F
 
 |Activity|Cadence|Description|Persona|
 |---|---|---|---|
-|Review who's defined as a priority account at <https://admin.microsoft.com/Adminportal/Home#/priorityaccounts>.|Ad-hoc|Keep the membership of [priority accounts](/microsoft-365/admin/setup/priority-accounts) current with organizational changes to get the following benefits for those users: <ul><li>Better visibility in reports.</li><li>Filtering in incidents and alerts.</li><li>Tailored heuristics for executive mail flow patterns (priority account protection).</li></ul> <br/> Use custom [user tags](user-tags.md) for other users to get: <ul><li>Better visibility in reports.</li><li>Filtering in incidents and alerts.</li></ul>|Security Operations Team|
+|Review who's defined as a priority account at <https://security.microsoft.com/securitysettings/userTags>.|Ad-hoc|Keep the membership of [priority accounts](/microsoft-365/admin/setup/priority-accounts) current with organizational changes to get the following benefits for those users: <ul><li>Better visibility in reports.</li><li>Filtering in incidents and alerts.</li><li>Tailored heuristics for executive mail flow patterns (priority account protection).</li></ul> <br/> Use custom [user tags](user-tags.md) for other users to get: <ul><li>Better visibility in reports.</li><li>Filtering in incidents and alerts.</li></ul>|Security Operations Team|
 
 ## Appendix
 
@@ -169,7 +170,10 @@ Short videos for specific tasks are also available in the [Microsoft Defender fo
 
 Permissions for managing Defender for Office 365 in the Microsoft 365 Defender portal and PowerShell are based on the role-based access control (RBAC) permissions model. RBAC is the same permissions model that's used by most Microsoft 365 services. For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
 
-The following permissions (roles and role groups) are available in the portal and can be used to grant access to security team members:
+> [!NOTE]
+> Privileged Identity Management (PIM) in Azure AD is also a way to assign required permissions to SecOps personnel. For more information, see [Privileged Identity Management (PIM) and why to use it with Microsoft Defender for Office 365](use-privileged-identity-management-in-defender-for-office-365.md).
+
+The following permissions (roles and role groups) are available in Defender for Office 365 and can be used to grant access to security team members:
 
 - **Azure AD roles**: Centralized roles that assign permissions for _all_ Microsoft 365 services, including Defender for Office 365. You can view the Azure AD roles and assigned users in the Microsoft 365 Defender portal, but you can't manage them directly there. Instead, you manage Azure AD roles and members at <https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/RolesAndAdministrators>. The most frequent roles used by security teams are:
   - **Security administrator**
@@ -196,9 +200,9 @@ The following permissions (roles and role groups) are available in the portal an
 
     To assign this role to a new or existing role group, see [Modify Email & collaboration role membership in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md#modify-email--collaboration-role-membership-in-the-microsoft-365-defender-portal).
 
-  - **Tenant AllowBlockList Manager**: Manage allow and block list entries using the [Tenant Allow/Block List](tenant-allow-block-list.md). Blocking URLs, files (using file hash) or senders is a useful response action to take when investigating malicious email that was delivered.
+  - **Tenant AllowBlockList Manager**: Manage allow and block entries in the [Tenant Allow/Block List](tenant-allow-block-list.md). Blocking URLs, files (using file hash) or senders is a useful response action to take when investigating malicious email that was delivered.
 
-    By default, this role is assigned to the **Security Operator** role.
+    By default, this role is assigned only to the **Security Operator** role group. But, members of the **Security Administrators** and **Organization management** role groups can also manage entries in the Tenant Allow/Block List.
 
 ### SIEM/SOAR integration
 
@@ -220,9 +224,9 @@ Defender for Office 365 exposes most of its data through a set of programmatic A
 
 To connect Defender for Office 365 incidents and raw data with Microsoft Sentinel, you can use the [Microsoft 365 Defender (M365D) connector](/azure/sentinel/connect-microsoft-365-defender?tabs=MDO)
 
-<!--- Docs for Splunk, Qradar other 3rd party guidance/connector of already available? --->
-
 You can use this simple "Hello World" example to test API access to Microsoft Defender APIs: [Hello World for Microsoft 365 Defender REST API](/microsoft-365/security/defender/api-hello-world).
+
+For more information about SIEM tool integration, see [Integrate your SIEM tools with Microsoft 365 Defender](/microsoft-365/security/defender/configure-siem-defender).
 
 ## Address false positives and false negatives in Defender for Office 365
 
@@ -259,9 +263,9 @@ Security team members can do submissions from multiple location in the Microsoft
 
   You can select up to 10 messages to perform a bulk submission. Admin submissions created this way also visible in the Submission portal.
 
-For the short-term mitigation of false negatives, security teams can directly manage [block entries](manage-tenant-blocks.md) for file, URL, and senders in the [Tenant Allow/Block List](tenant-allow-block-list.md).
+For the short-term mitigation of false positives, security teams can directly manage [block entries](manage-tenant-blocks.md) for files, URLs, and senders in the [Tenant Allow/Block List](tenant-allow-block-list.md).
 
-For the short-term mitigation of false negatives, security teams can't can manage [allow entries](manage-tenant-allows.md) in the Tenant Allow/Block List. Instead, they need to use the **Allow messages like this** setting during admin submissions.
+For the short-term mitigation of false negatives, security teams can't directly manage [allow entries](manage-tenant-allows.md) in the Tenant Allow/Block List. Instead, they need to use [admin submissions](admin-submission.md) and the the **Allow messages like this** option.
 
 [Quarantine](manage-quarantined-messages-and-files.md) in Defender for Office 365 holds potentially dangerous or unwanted messages and files. Security teams can view, release, and delete all types of quarantined messages for all users. This capability enables security teams to respond effectively when a false positive message or file is quarantined.
 
