@@ -49,6 +49,7 @@ To learn about one of the service plan features, click on the heading in the fol
 
 |Task|Microsoft 365 Business Standard|Microsoft 365 Business Premium|
 |---|---|---|
+<<<<<<< Updated upstream
 [Protect against lost or stolen passwords](set-up-multi-factor-authentication.md) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
 [Train your users](train-your-users.md) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
 [Use dedicated admin accounts](use-dedicated-admin-accounts.md)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | 
@@ -56,6 +57,15 @@ To learn about one of the service plan features, click on the heading in the fol
 [Protect against ransomware](protect-against-ransomware) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(#protection for email and cloud storage) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(#increased protection for devices, email, and cloud storage) |
 [Encrypt sensitive emails](#use-office-message-encryption) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
 [Protect your email from phishing attacks](#protect-your-email-from-phishing-attacks) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(anti-phishing protection) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(advanced antiphishing protection) |
+=======
+[Protect against lost or stolen passwords](#set-up-multifactor-authentication) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
+[Train your users](#train-your-users) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
+[Use dedicated admin accounts](#use-dedicated-admin-accounts)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | 
+[Protect against malware](#protect-against-malware) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(protection for email) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(increased protection for email and devices) |
+[Protect against ransomware](#protect-against-ransomware) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(protection for email and cloud storage) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(increased protection for devices, email, and cloud storage) |
+[Encrypt sensitive emails](#send-encrypted-email) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
+[Protect your email from phishing attacks](#protect-sensitive-emails) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(anti-phishing protection) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(advanced anti-phishing protection) |
+>>>>>>> Stashed changes
 [Protect against malicious attachments, files, and URLs in email and Office files](#protect-against-malicious-attachments-files-and-urls) | | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(Safe Links and Safe Attachments) |
 [Increase protection for your organization's devices](#increase-protection-for-your-organizations-devices) | | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(enterprise-grade device protection) |
 
@@ -95,7 +105,7 @@ Enable or disable security defaults from the **Properties** pane for Azure Activ
 After you set up multi-factor authentication for your organization, your users will be required to set up two-step verification on their devices. For more information, see [Set up 2-step verification for Microsoft 365](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14).
 
 > [!Tip]
-> If you need more granular control of multi-factor authentication, you can enable Conditional Access with Microsoft 365 Business Premium. If you do this, we recommend implementing the equivalent policies to Security Defaults. Go here for more information about [security defaults](m365bp-conditional-access.md).
+> If you need more granular control of multi-factor authentication, you can enable Conditional Access with Microsoft 365 Business Premium. If you do this, we recommend implementing the equivalent policies to Security Defaults. Go here for more information about [security defaults](/business-premium/m365bp-conditional-access.md).
 
 For more details and recommendations, see [Set up multi-factor authentication for users](set-up-multi-factor-authentication.md).
 
@@ -119,7 +129,7 @@ Microsoft also recommends that users protect their personal email accounts by ta
 
 The administrative accounts you use to administer your Microsoft 365 environment include elevated privileges. These are valuable targets for hackers and cyber attackers. Use admin accounts only for administration. Admins should have a separate user account for regular, non-administrative use and only use their administrative account when necessary to complete a task associated with their job function. Additional recommendations:
 
-- Be sure accounts are added to [Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-whatis).
+- Be sure accounts are added to [Azure Active Directory](../../admin/add-users/add-users.md).
 - Be sure admin accounts are also set up for multi-factor authentication.
 - Before using admin accounts, close out all unrelated browser sessions and apps, including personal email accounts.
 - After completing admin tasks, be sure to log out of the browser session.
