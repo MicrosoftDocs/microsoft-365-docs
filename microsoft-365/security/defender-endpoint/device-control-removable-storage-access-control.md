@@ -25,7 +25,6 @@ ms.date: 03/18/2022
 > [!NOTE]
 > The Group Policy management and Intune OMA-URI/Custom Policy management of this product are now generally available (4.18.2106): See [Tech Community blog: Protect your removable storage and printer with Microsoft Defender for Endpoint](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/protect-your-removable-storage-and-printers-with-microsoft/ba-p/2324806).
 
-
 Microsoft Defender for Endpoint Device Control Removable Storage Access Control enables you to do the following task:
 
 - auditing, allowing or preventing the read, write or execute access to removable storage with or without exclusion
@@ -150,7 +149,7 @@ Before you get started with Removable Storage Access Control, you must confirm y
 2. Combine all rules within `<PolicyRules>` `</PolicyRules>` into one xml file.
 
     If you want to restrict a specific user, then use SID property into the Entry. If there is no SID in the policy Entry, the Entry will be applied to everyone login instance for the machine.
-    
+
     If you want to monitor file information for Write access, use the right AccessMask with the right Option (16); here is the example of [Capture file information](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Audit%20File%20Information.xml).
 
     The following image illustrates the usage of SID property, and an example of [Scenario 1: Prevent Write and Execute access to all but allow specific approved USBs](#scenario-1-prevent-write-and-execute-access-to-all-but-allow-specific-approved-usbs).
@@ -181,7 +180,7 @@ Before you get started with Removable Storage Access Control, you must confirm y
     :::image type="content" source="images/148609685-4c05f002-5cbe-4aab-9245-83e730c5449e.png" alt-text="Enabled or Disabled device control in PowerShell code":::
 
 6. Set location for a copy of the file: if you want to have a copy of the file when Write access happens, you have to set the location where system can save the copy.
-    
+
     Deploy this together with the right AccessMask and Option - see step 2 above.
 
     :::image type="content" source="../../media/define-device-control-policy-rules.png" alt-text="Group Policy - Set locaiton for file evidence":::
@@ -233,7 +232,7 @@ Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>) \> *
       `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bc544a991-5786-4402-949e-a032cb790d0e%7d/RuleData`
 
     - Data Type: String (XML file)
-       
+
     If you want to monitor file information for Write access, use the right AccessMask with the right Option (16); here is the example of [Capture file information](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Audit%20File%20Information.xml).
 
 3. Default enforcement: allows you to set default access (Deny or Allow) to removable media if there is no policy. For example, you only have policy (either Deny or Allow) for RemovableMediaDevices, but do not have any policy for CdRomDevices or WpdDevices, and you set default Deny through this policy, Read/Write/Execute access to CdRomDevices or WpdDevices will be blocked.
@@ -265,15 +264,15 @@ Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>) \> *
     :::image type="content" source="images/148609770-3e555883-f26f-45ab-9181-3fb1ff7a38ac.png" alt-text="Removeable Storage Access Control in PowerShell code":::
 
 5. Set the location for a copy of the file: if you want to have a copy of the file when Write access happens, you have to set the location where the system can save the copy.
-    
+
     - OMA-URI: `./Vendor/MSFT/Defender/Configuration/DataDuplicationRemoteLocation;**username**;**password**`
 
     - Data Type: String
-    
+
     You have to deploy this together with the right AccessMask and the right Option - see step 2 above.
 
     :::image type="content" source="../../media/device-control-oma-uri-edit-row.png" alt-text="Set locaiton for file evidence":::
-    
+
 ## Deploying and managing policy by using Intune user interface
 
 (*Coming soon!*) This capability will be available in the Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>). Go to **Endpoint Security** > **Attack Surface Reduction** > **Create Policy**. Choose **Platform: Windows 10 and later** with **Profile: Device Control**.
@@ -323,19 +322,17 @@ DeviceEvents
 | project Timestamp, DeviceId, DeviceName, InitiatingProcessAccountName, ActionType, Policy, PolicyRuleId, FileInformationOperation, MediaClassName, MediaInstanceId, MediaName, MediaProductId, MediaVendorId, MediaSerialNumber, FileName, FolderPath, FileSize, FileEvidenceLocation, AdditionalFields
 | order by Timestamp desc
 ```
-    
-:::image type="content" source="images/block-removable-storage.png" alt-text="The screen depicting the blockage of the removable storage.":::
 
+:::image type="content" source="images/block-removable-storage.png" alt-text="The screen depicting the blockage of the removable storage.":::
 
 ## Frequently asked questions
 
-
 ### How to generate GUID for Group Id/PolicyRule Id/Entry Id?
 
-You can generate GUID through online open source, or through PowerShell - [How to generate GUID through PowerShell](/powershell/module/microsoft.powershell.utility/new-guid?msclkid=c1398a25a6d911ec9c888875fa1f24f5&view=powershell-7.2)
-    
+You can generate GUID through online open source, or through PowerShell - [How to generate GUID through PowerShell](/powershell/module/microsoft.powershell.utility/new-guid)
+
 ![image](https://user-images.githubusercontent.com/81826151/159046476-26ea0a21-8087-4f01-b8ae-5aa73b392d8f.png)
-    
+
 ### What is the removable storage media limitation for the maximum number of USBs?
 
 We've validated one USB group with 100,000 media - up to 7 MB in size. The policy works in both Intune and GPO without performance issues.
@@ -347,8 +344,8 @@ We've validated one USB group with 100,000 media - up to 7 MB in size. The polic
 2. Another reason could be that the XML file isn't correctly formatted, for example, not using the correct markdown formatting for the "&" character in the XML file, or the text editor might add a byte order mark (BOM) 0xEF 0xBB 0xBF at the beginning of the files, which causes the XML parsing not to work. One simple solution is to download the [sample file](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) (select **Raw** and then **Save as**) and then update.
 
 3. If you are deploying and managing the policy via Group Policy, please make sure combine all PolicyRule into one XML file within a parent node called PolicyRules and all Group into one XML file within a parent node called Groups; if you manage through Intune, keep one PolicyRule one XML file, same thing, one Group one XML file.
-    
-If still not working, you may want to contact us and share support cab by running cmd with administrator: “%programfiles%\Windows Defender\MpCmdRun.exe" -GetFiles
+
+If still not working, you may want to contact us and share support cab by running cmd with administrator: "%programfiles%\Windows Defender\MpCmdRun.exe" -GetFiles
 
 ### There is no configuration UX for 'Define device control policy groups' and 'Define device control policy rules' on my Group Policy
 
@@ -356,7 +353,7 @@ We don't backport the Group Policy configuration UX, but you can still get the r
 
 ### How can I know whether the latest policy has been deployed to the target machine?
 
-You can run ‘Get-MpComputerStatus’ on PowerShell as an Administrator. The following value will show whether the latest policy has been applied to the target machine.
+You can run "Get-MpComputerStatus' on PowerShell as an Administrator. The following value will show whether the latest policy has been applied to the target machine.
 
 :::image type="icon" source="images/148609885-bea388a9-c07d-47ef-b848-999d794d24b8.png" border="false":::
 
