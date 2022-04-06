@@ -20,7 +20,7 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-description: With records management in Microsoft 365, you can apply your retention schedules into a file plan that manages retention, records declaration, and disposition.
+description: Learn how Microsoft Purview Records Management supports high-value items for business, legal, or regulatory record-keeping requirements.
 ---
 
 # Learn about records management
