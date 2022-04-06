@@ -48,10 +48,11 @@ By default, advanced hunting displays query results as tabular data. You can als
 | **Table** | Displays the query results in tabular format |
 | **Column chart** | Renders a series of unique items on the x-axis as vertical bars whose heights represent numeric values from another field |
 | **Pie chart** | Renders sectional pies representing unique items. The size of each pie represents numeric values from another field. |
-| **Donut chart** | Renders sectional arcs representing unique items. The length of each arc represents numeric values from another field. |
 | **Line chart** | Plots numeric values for a series of unique items and connects the plotted values |
 | **Scatter chart** | Plots numeric values for a series of unique items |
 | **Area chart** | Plots numeric values for a series of unique items and fills the sections below the plotted values |
+| **Stacked area chart** | [fill up] |
+| **Time chart** | [fill up] |
 
 ### Construct queries for effective charts
 
