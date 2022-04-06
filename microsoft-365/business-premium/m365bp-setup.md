@@ -26,9 +26,6 @@ After you have [started a trial or purchased Microsoft 365 Business Premium](get
 
 Use this article as a guide.
 
-> [!TIP]
-> Need some help? Consider getting [Business Assist for Microsoft 365](https://support.microsoft.com/en-us/office/business-assist-for-microsoft-365-37deb8fe-61cc-4cf9-9ad1-1c8d93475070)
-
 ## Use the guided process for basic setup
 
 Microsoft 365 Business Premium includes a guided process for basic setup. The guided process includes these tasks:
@@ -37,14 +34,12 @@ Microsoft 365 Business Premium includes a guided process for basic setup. The gu
 - [Adding users and assigning licenses](../admin/add-users/add-users.md)
 - [Updating your DNS records](../admin/setup/setup-business-basic.md#connect-your-domain)
 
-The following video shows the guided setup process for Microsoft 365 Business Basic. 
-
-The basic setup process works the same way in Microsoft 365 Business Premium.<br/><br/>
+The following video shows the guided setup process for Microsoft 365 Business Basic, which works the same way in Microsoft 365 Business Premium.<br/><br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vk3W?autoplay=false]
 
 > [!TIP]
-> [Learn about the differences between the guided setup process and the Setup page](../admin/setup/o365-setup-wizard-and-setup-page.md).
+> After you have added users, give them a link to the [Employee quick setup guide](../admin/setup/employee-quick-setup.md). The guidance walks them through signing in, getting Office apps, and saving, copying, and sharing files.
 
 ## Work with a Microsoft partner
 
