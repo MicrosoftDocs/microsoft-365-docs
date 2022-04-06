@@ -126,7 +126,7 @@ DeviceInfo
 | where OnboardingStatus != "Onboarded" 
 ```
 
-By invoking the **SeenBy** function in your advanced hunting query you can get detail on which onboarded devices a discovered device was seen by. This information can help determine the network location of each discovered device and subsequently, help to identify it in the network.  
+By invoking the **SeenBy** function in your advanced hunting query you can get detail on which onboarded device a discovered device was seen by. This information can help determine the network location of each discovered device and subsequently, help to identify it in the network.  
 
 ```text
 DeviceInfo
@@ -146,10 +146,12 @@ Device discovery leverages Microsoft Defender for Endpoint onboarded devices as 
 
 New events are Transmission Control Protocol (TCP) connections-based and will fit to the current DeviceNetworkEvents scheme. TCP ingress to the Microsoft Defender for Endpoint enabled device from a non-Microsoft Defender for Endpoint enabled.
 
-You can try this example query to return details on:
+The following action types have also been added:
 
-- **ConnectionAttempt**  - an attempt to establish a TCP connection (syn)
-- **ConnectionAcknowledged** - an acknowledgment that a TCP connection was accepted (syn\ack)
+- ConnectionAttempt - An attempt to establish a TCP connection (syn)
+- ConnectionAcknowledged - An acknowledgment that a TCP connection was accepted (syn\ack)
+
+You can try this example query:
 
 ```text
 DeviceNetworkEvents
