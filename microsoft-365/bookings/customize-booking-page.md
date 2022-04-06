@@ -38,7 +38,7 @@ The section below gives you information about setting up your bookings page and 
 
 - **Booking page access control: Disable direct search engine indexing of booking page** This setting prevents your page from appearing in the search results for Google, Bing, or other search engines. Selecting this box will ensure access to the page is limited to the generated page link.
 
-- **Customer data usage consent** When selected, text requesting the user's or customer's consent for your organization to use their data will appear on the Self-Service page. The box will have to be checked by the user in order to to complete the booking.
+- **Customer data usage consent** When selected, text requesting the user's or customer's consent for your organization to use their data will appear on the Self-Service page. The box will have to be checked by the user in order to complete the booking.
 
 - **Scheduling policy**, **Email notifications**, and **Staff** All of these settings are similar to the ones available for each service on the Services tab.
 
