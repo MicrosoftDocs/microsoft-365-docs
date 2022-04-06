@@ -60,13 +60,13 @@ After you've verified that your mailbox meets all applicable prerequisites, you 
 
 ## What do you need to know before you begin?
 
-- You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. To go directly to the **User submissions** page, use <https://security.microsoft.com/reportsubmission>.
+- You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. To go directly to the **User submissions** page, use <https://security.microsoft.com/userSubmissionsReportMessage>.
 
 - To modify the configuration for User submissions, you need to be a member of one of the following role groups:
 
   - **Organization Management** or **Security Administrator** in the [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
 
-- You need access to Exchange Online PowerShell. If the account that you're trying to use doesn't have access to Exchange Online PowerShell, you'll receive an error that looks like this when specify the submissions mailbox:
+- You need access to Exchange Online PowerShell. If the account that you're trying to use doesn't have access to Exchange Online PowerShell, you'll receive an error that looks like this when specifying the submissions mailbox:
 
   > Specify an email address in your domain
 
@@ -77,7 +77,7 @@ After you've verified that your mailbox meets all applicable prerequisites, you 
 
 ## Use the Microsoft 365 Defender portal to configure the user submissions mailbox
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat policies** \> **User reported message settings** in the **Others** section. To go directly to the **User submissions** page, use <https://security.microsoft.com/reportsubmission>.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat policies** \> **User reported message settings** in the **Others** section. To go directly to the **User submissions** page, use <https://security.microsoft.com/userSubmissionsReportMessage>.
 
 2. On the **User submissions** page, what you see is determined by whether the **Microsoft Outlook Report Message button** setting is **Off** or **On**:
 
@@ -136,8 +136,8 @@ To correctly identify the original attached messages, messages that are sent to 
 If you want to specify the reported reason for the original attached messages, messages that are sent to the custom mailbox (don't modify the attachment) need to start with one of the following prefixes in the Subject (Envelope Title):
 
 - 1| or Junk:
-- 2| or Not junk
-- 3| or Phishing
+- 2| or Not junk:
+- 3| or Phishing:
 
 For example:
 
