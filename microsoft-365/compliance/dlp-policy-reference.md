@@ -195,7 +195,7 @@ In the below example, Rule 1 takes precedence over the other matching rules sinc
 - Rule 3: only audits all activity
 - Rule 4: no enforcement
 
-All the other rules are evaluated but activity restrictions on only the most restrictive rule are enforced on the file. Audit logs will only show the most restrictive rule applied on the file. Please note that if there are more than one matching rules that are equally restrictive, then policy and rule priority governs which rule would be applied on the file.
+All the other rules are evaluated but their actions are not enforced. Audit logs will show the most restrictive rule applied on the file. If there is more than one rule that matches and they are equally restrictive, then policy and rule priority governs which rule would be applied on the file.
 
 For rules that are applied to endpoints, you can take advantage of configuring restrictions across all supported activities in a single rule for a particular sensitive detection logic.
 
