@@ -25,12 +25,14 @@ There are a couple of ways to get started:
 - **[Buy](https://go.microsoft.com/fwlink/?linkid=2109654) Microsoft 365 Business Standard and complete your own setup**. To purchase Microsoft 365 Business Standard, [follow the steps below](#sign-up-steps).
 - **For Microsoft partners**: If you're a partner, see [Get Microsoft 365 Business](../../business/get-microsoft-365-business.md).
 
-**Need something different?** You can:
+## Sign up for Microsoft 365 for business
 
-- [Sign up for a home or family plan](https://go.microsoft.com/fwlink/?linkid=2109398) if you're not buying for a business.
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3znhX]
+
 
 > [!IMPORTANT]
 > Microsoft 365 Business Standard subscriptions are for commercial use and are intended for business and enterprise customers.
+
 
 ## Sign up steps
 

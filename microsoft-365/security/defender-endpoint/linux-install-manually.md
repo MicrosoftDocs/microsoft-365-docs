@@ -412,7 +412,7 @@ Alternatively, you can use an automated [installer bash script](https://github.c
 The script identifies the distribution and version, simplifies the selection of the right repository, sets up the device to pull the latest package, and combines the product installation and onboarding steps.
 
 ```bash
-❯ ./mde_installer.sh --help
+> ./mde_installer.sh --help
 usage: basename ./mde_installer.sh [OPTIONS]
 Options:
 -c|--channel      specify the channel from which you want to install. Default: insiders-fast
