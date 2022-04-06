@@ -21,7 +21,7 @@ ms.collection:
 
 After you have [started a trial or purchased Microsoft 365 Business Premium](get-microsoft-365-business-premium.md), your next step is to get everything set up. You have several options available. You can:
 
-- [Start with the guided setup experience](#guided-process-for-basic-setup) for basic setup and configuration; or
+- [Start with the guided setup experience](#use-the-guided-process-for-basic-setup) for basic setup and configuration; or
 - [Work with a partner, such as a Microsoft Cloud Solution Provider (CSP)](#work-with-a-microsoft-partner).
 
 Use this article as a guide.
@@ -29,7 +29,7 @@ Use this article as a guide.
 > [!TIP]
 > Need some help? Consider getting [Business Assist for Microsoft 365](https://support.microsoft.com/en-us/office/business-assist-for-microsoft-365-37deb8fe-61cc-4cf9-9ad1-1c8d93475070)
 
-## Guided process for basic setup
+## Use the guided process for basic setup
 
 Microsoft 365 Business Premium includes a guided process for basic setup. The guided process includes these tasks:
 

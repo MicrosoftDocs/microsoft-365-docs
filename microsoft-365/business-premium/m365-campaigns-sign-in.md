@@ -53,6 +53,6 @@ Users who have been added to your Microsoft 365 for Campaigns (or Microsoft 365 
 
 1. [Customize your sign-in page with a privacy and consent notice](m365-customize-sign-in.md)
 
-2. [Use the guided process for basic setup](m365bp-setup.md#guided-process-for-basic-setup)
+2. [Use the guided process for basic setup](m365bp-setup.md#use-the-guided-process-for-basic-setup)
 
 3. [Set up your security capabilities](m365bp-security-overview.md).

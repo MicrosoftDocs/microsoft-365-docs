@@ -45,6 +45,6 @@ For examples of privacy and consent notices, see Appendix A in [Searching and Se
 
 ## Next steps
 
-1. [Use the Guided process for basic setup](m365bp-setup.md#guided-process-for-basic-setup).
+1. [Use the Guided process for basic setup](m365bp-setup.md#use-the-guided-process-for-basic-setup).
 
 2. [Set up your security capabilities](m365bp-security-overview.md).
