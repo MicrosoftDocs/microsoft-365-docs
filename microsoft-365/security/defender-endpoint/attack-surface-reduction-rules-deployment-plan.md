@@ -1,5 +1,5 @@
 ---
-title: Plan ASR rules attack surface reduction deployment rules deployment
+title: Plan attack surface reduction (ASR) rules deployment
 description: Provides guidance to plan your attack surface reduction (ASR) rules deployment.
 keywords: Attack surface reduction rules deployment, ASR deployment, enable asr rules, configure ASR, host intrusion prevention system, protection rules, anti-exploit rules, anti-exploit, exploit rules, infection prevention rules, Microsoft Defender for Endpoint, configure ASR rules
 search.product: eADQiWindows 10XVcnh
@@ -22,7 +22,7 @@ ms.collection:
 ms.date: 1/18/2022
 ---
 
-# Step 1: Plan ASR rules deployment
+# Plan attack surface reduction (ASR) rules deployment
 
 When testing attack surface reduction (ASR) rules it is important to start with the right business unit. You'll want to start with a small group of people in a specific business unit. You can identify some ASR champions within a particular business unit who can provide real-world impact about the ASR rules, and help you tune your implementation.
 
@@ -77,10 +77,12 @@ See: [Create a deployment plan for Windows](/windows/deployment/update/create-de
 
 ## Additional topics in this deployment collection
 
-[ASR rules deployment prerequisites](attack-surface-reduction-rules-deployment.md)
+Attack surface reduction (ASR) rules deployment overview](attack-surface-reduction-rules-deployment.md)
 
-[Step 2: Test ASR rules](attack-surface-reduction-rules-deployment-test.md)
+[Test attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-test.md)
 
-[Step 3: Implement ASR rules](attack-surface-reduction-rules-deployment-implement.md)
+[Enable attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-implement.md)
 
-[Step 4: Operationalize ASR rules](attack-surface-reduction-rules-deployment-operationalize.md)
+[Operationalize attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-operationalize.md)
+
+[Attack surface reduction (ASR) rules reference](attack-surface-reduction-rules-reference.md)
