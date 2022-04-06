@@ -65,7 +65,7 @@ sections:
       - question: |
           How do I become the assigned IT Admin of a managed tenant?
         answer: |
-          You must create a special record in DNS to prove you own your company domain, ex:contoso.com.
+          You must create a special record in DNS to prove you own your company domain, for example, contoso.com.
           
           For a step-by-step process for becoming a managed tenant, see [Take over an unmanaged directory as administrator in Azure Active](/azure/active-directory/users-groups-roles/domains-admin-takeover).
           
