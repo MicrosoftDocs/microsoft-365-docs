@@ -127,7 +127,11 @@ You can customize the notification for when a rule is triggered and blocks an ap
 ## Additional topics in this deployment collection
 
 [Attack surface reduction (ASR) rules deployment overview](attack-surface-reduction-rules-deployment.md)
+
 [Plan attack surface reduction (ASR) rules deployment](attack-surface-reduction-rules-deployment-plan.md)
+
 [Test attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-test.md)
+
 [Operationalize attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-operationalize.md)
+
 [Attack surface reduction (ASR) rules reference](attack-surface-reduction-rules-reference.md)
