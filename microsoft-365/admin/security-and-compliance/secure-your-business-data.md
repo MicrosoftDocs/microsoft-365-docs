@@ -41,29 +41,37 @@ If you are a small or medium-size organization using one of Microsoft's business
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mzxI?autoplay=false]
 
-All the Microsoft 365 plans offer baseline protection and security with Defender Antivirus, but with Microsoft 365 Business Premium you have threat protection, data protection, and device management features due to the inclusion of Microsoft Defender for Business.  These additional capabilities protect your organization from online threats and unauthorized access, as well as allow you to manage company data on your phones, tablets, and computers.
+All the Microsoft 365 plans offer baseline protection and security with Defender Antivirus, but with Microsoft 365 Business Premium you also have threat protection, data protection, and device management features due to the inclusion of Microsoft Defender for Business.  These additional capabilities protect your organization from online threats and unauthorized access, as well as allow you to manage company data on your phones, tablets, and computers.
 
 ## Security features comparison
 
-To learn more about a particular service plan feature, click on its heading in the following table. 
+To learn about one of the service plan features, click on the heading in the following table. 
 
 |Task|Microsoft 365 Business Standard|Microsoft 365 Business Premium|
 |---|---|---|
+<<<<<<< Updated upstream
 [Protect against lost or stolen passwords](set-up-multi-factor-authentication.md) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
-[Train your users](#train-your-users) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
+[Train your users](train-your-users.md) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
 [Use dedicated admin accounts](use-dedicated-admin-accounts.md)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | 
 [Protect against malware](protect-against-malware) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(#protection for email) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(#increased protection for email and devices) |
-[Protect against ransomware](#protect-against-ransomware) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(#protection for email and cloud storage) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(#increased protection for devices, email, and cloud storage) |
+[Protect against ransomware](protect-against-ransomware) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(#protection for email and cloud storage) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(#increased protection for devices, email, and cloud storage) |
+=======
+[Protect against lost or stolen passwords](#set-up-multifactor-authentication) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
+[Train your users](#train-your-users) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
+[Use dedicated admin accounts](#use-dedicated-admin-accounts)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | 
+[Protect against malware](#protect-against-malware) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(protection for email) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(increased protection for email and devices) |
+[Protect against ransomware](#protect-against-ransomware) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(protection for email and cloud storage) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(increased protection for devices, email, and cloud storage) |
+>>>>>>> Stashed changes
 [Encrypt sensitive emails](#use-office-message-encryption) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
-[Protect your email from phishing attacks](protect-your-email-from-phishing-attacks) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(#antiphishing protection) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(#advanced antiphishing protection) |
-[Protect against malicious attachments, files, and URLs in email and Office files](protect-against-malicious-attachments-files-and-urls) | | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(#Safe Links and Safe Attachments) |
-[Increase protection for your organization's devices](increase-protection-for-your-organizations-devices) | | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(#enterprise-grade device protection) |
+[Protect your email from phishing attacks](#protect-your-email-from-phishing-attacks) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(anti-phishing protection) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(advanced antiphishing protection) |
+[Protect against malicious attachments, files, and URLs in email and Office files](#protect-against-malicious-attachments-files-and-urls) | | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(Safe Links and Safe Attachments) |
+[Increase protection for your organization's devices](#increase-protection-for-your-organizations-devices) | | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(enterprise-grade device protection) |
 
-Quickly set up security and begin collaborating safely with the guidance in the [Microsoft 365 Business Premium](../../business-premium/index.md) library. The Business Premium information was developed in partnership with the Microsoft Defending Democracy team to protect all small business customers against cyber threats launched by sophisticated cyber attacks and hackers.
+You can quickly set up security and begin collaborating safely with the guidance we provide in the [Microsoft 365 Business Premium](../../business-premium/index.md) library. The Business Premium information was developed in partnership with the Microsoft Defending Democracy team to protect all small business customers against cyber threats launched by sophisticated cyber attacks and hackers.
 
 ### About the Microsoft 365 Secure Score
 
-Before you begin, check your [Microsoft 365 Secure Score](../../security/defender/microsoft-secure-score.md) in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. From a centralized dashboard, you can monitor and improve the security for your Microsoft 365 identities, data, apps, devices, and infrastructure. You are given points for configuring recommended security features, performing security-related tasks (such as viewing reports), or addressing recommendations with a third-party application or software. With added insights and more visibility into a broader set of Microsoft products and services, you can feel confident reporting about your organization's security health.
+It's important that before you begin, you check your [Microsoft 365 Secure Score](../../security/defender/microsoft-secure-score.md) in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. From a centralized dashboard, you can monitor and improve the security for your Microsoft 365 identities, data, apps, devices, and infrastructure. You are given points for configuring recommended security features, performing security-related tasks (such as viewing reports), or addressing recommendations with a third-party application or software. With added insights and more visibility into a broader set of Microsoft products and services, you can feel confident reporting about your organization's security health.
 
 ![Screenshot of Microsoft Secure Score.](../../media/secure-score.png)
 
@@ -76,13 +84,11 @@ Multi-factor authentication is also called 2-step verification. Individuals can 
 For businesses using Microsoft 365, add a setting that requires your users to log in using multifactor authentication. When you make this change, users will be prompted to set up their phone for two-factor authentication next time they log in.
 To see a training video for how to set up MFA and how users complete the setup, see [set up MFA](set-up-multi-factor-authentication.md) and [user set up](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14).
 
-### To set up multi-factor authentication, first turn on security defaults
+### Turn on security defaults
 
-For most organizations, security defaults offer a good level of added sign-in security. For more information, see [What are security defaults?](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
+For most organizations, security defaults offer a good level of added sign-in security. For more information, see [What are security defaults?](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). If your subscription is new, security defaults might already be turned on for you automatically.
 
-If your subscription is new, security defaults might already be turned on for you automatically.
-
-You enable or disable security defaults from the **Properties** pane for Azure Active Directory (Azure AD) in the Azure portal.
+Enable or disable security defaults from the **Properties** pane for Azure Active Directory (Azure AD) in the Azure portal.
 
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) with global admin credentials.
 
@@ -108,9 +114,7 @@ The Harvard Kennedy School [Cybersecurity Campaign Handbook](https://go.microsof
 In addition, Microsoft recommends that your users take the actions described in this article: [Protect your account and devices from hackers and malware](https://support.microsoft.com/office/066d6216-a56b-4f90-9af3-b3a1e9a327d6). These actions include:
 
 - Using strong passwords
-
 - Protecting devices
-
 - Enabling security features on Windows 10 and Mac PCs
 
 Microsoft also recommends that users protect their personal email accounts by taking the actions recommended in the following articles:
@@ -124,11 +128,8 @@ Microsoft also recommends that users protect their personal email accounts by ta
 The administrative accounts you use to administer your Microsoft 365 environment include elevated privileges. These are valuable targets for hackers and cyber attackers. Use admin accounts only for administration. Admins should have a separate user account for regular, non-administrative use and only use their administrative account when necessary to complete a task associated with their job function. Additional recommendations:
 
 - Be sure accounts are added to [Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-whatis).
- 
 - Be sure admin accounts are also set up for multi-factor authentication.
-
 - Before using admin accounts, close out all unrelated browser sessions and apps, including personal email accounts.
-
 - After completing admin tasks, be sure to log out of the browser session.
 
 ## Protect against malware
@@ -136,7 +137,7 @@ The administrative accounts you use to administer your Microsoft 365 environment
 Your Microsoft 365 environment includes protection against malware. You can increase your malware protection by:
 
 - Using [pre-set policies for Microsoft Office 365](../../../microsoft-365/security/office-365-security/preset-security-policies.md).
-- Blocking attachments with certain file types
+- Blocking attachments with certain file types.
 - Using antivirus/anti-malware protection on your devices, especially Microsoft Defender for Business. It includes features such as [automated investigative reporting](../../security/office-365-security/air-view-investigation-results.md) (AIR) and the Threat and Vulnerability Management (TVM) Dashboard. When Microsoft Defender for Business is not your primary anti-virus software, you can still run it in passive mode and use [endpoint protection and response (EDR)](../../security/defender-endpoint/overview-endpoint-detection-response.md), especially in [block mode](../../security/defender-endpoint/edr-in-block-mode.md) where it works behind the scenes to remediate malicious artifacts that were detected by EDR's capabilities, and missed by the primary virus detector software. 
 
 ### Block attachments with certain file types
@@ -144,13 +145,9 @@ Your Microsoft 365 environment includes protection against malware. You can incr
 You can increase your malware protection by blocking attachments with file types that are commonly used for malware. To bump up malware protection in email, view a [short training video](increase-threat-protection.md#raise-the-level-of-protection-against-malware-in-mail), or complete the following steps:
 
 1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Anti-malware** in the **Policies** section.
-
-2. On the **Anti-malware** page, double-click on **Default (Default)**. A flyout appears. 
-
+2. On the **Anti-malware** page, double-click on **Default**. A flyout appears. 
 3. Select **Edit protection settings** at the bottom of the flyout. 
-
 4. In the next page, under **Protection settings**, select the checkbox next to **Enable the common attachments filter**. The file types that are blocked are listed directly below this option. To add or delete file types, select **Customize file types** at the end of the list. 
-
 5. Select **Save**. 
 
 For more information, see [Antimalware protection in EOP](../../security/office-365-security/anti-malware-protection.md).
@@ -162,9 +159,7 @@ Microsoft Defender Antivirus provides strong antivirus and antimalware protectio
 If your organization is using Microsoft 365 Business Premium, you get additional device protection that includes:
 
 - Next-generation protection
-
 - Firewall protection
-
 - Web content filtering
 
 These capabilities are included in Microsoft Defender for Business, an offering that will begin rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. 
@@ -234,6 +229,8 @@ To encrypt your email:
 1. From the **Encrypt** drop-down choose the appropriate permission level.
 
 ![Email message encryption in Outlook.](../../media/08e90a7e-a2d2-41a4-bae9-0a46b4ce639b.png)
+
+[:::image type="content" source="/../../media/08e90a7e-a2d2-41a4-bae9-0a46b4ce639b.png" alt-text="Email message encryption in Outlook":::]()
 
 ### Receive encrypted email
 
