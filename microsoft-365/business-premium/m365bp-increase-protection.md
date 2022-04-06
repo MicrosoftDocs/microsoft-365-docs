@@ -29,20 +29,27 @@ description: "Get help with increasing the level of protection in Microsoft 365 
 
 # Increase threat protection for Microsoft 365 Business Premium
 
-In this objective, you increase your threat protection with Microsoft 365 Business Premium. It's critical to protect the org against phishing, malware, and other threats. These recommendations are especially appropriate for political campaigns, law offices, and health care clinics, which have an increased need for security.
+In this objective, you increase your threat protection with Microsoft 365 Business Premium. It's critical to protect your business against phishing, malware, and other threats. The recommendations in this article apply for all businesses, including political campaigns, law offices, and health care clinics, who might have an increased need for security.
 
-## Review and apply preset security policies (suitable for most businesses)
+- 
 
-Your subscription includes [preset security policies](../security/office-365-security/preset-security-policies.md) that use recommended settings for anti-spam, anti-malware, and anti-phishing protection. By default, built-in protection is enabled; consider applying standard or strict protection for increased security. 
+## Review and apply preset security policies
+
+Your subscription includes [preset security policies](../security/office-365-security/preset-security-policies.md) that use recommended settings for anti-spam, anti-malware, and anti-phishing protection. By default, built-in protection is enabled; however, consider applying standard or strict protection for increased security. 
 
 :::image type="content" source="media/m365bp-presetsecuritypolicies.png" alt-text="Screenshot of preset security policies.":::
+
+> [!IMPORTANT]
+> Preset security policies are suitable for most businesses. However, if your business or campaign requires it, you can use Conditional Access policies instead of preset security policies. See [Conditional Access](m365bp-conditional-access.md#conditional-access)
 
 ### What are preset security policies?
 
 Preset security policies provide protection for your email and collaboration content. These policies consist of:
 
 - *Profiles*, which determine the level of protection
+
 - *Policies* (such as anti-spam, anti-malware, anti-phishing, spoof settings, impersonation, Safe Attachments, and Safe Links)
+
 - *Policy settings* (such as groups, users, or domains to receive the policies and any exceptions)
 
 The following table summarizes the levels of protection and preset policy types.
@@ -61,8 +68,11 @@ The following table summarizes the levels of protection and preset policy types.
 If users are assigned multiple policies, an order of priority is used to apply the policies. The order of priority works as follows:
 
 1. **Strict protection** receives the highest priority and overrides all other policies
+
 2. **Standard protection** 
+
 3. Custom security policies
+
 4. **Built-in protection** receives the lowest priority and is overridden by strict protection, standard protection, and custom policies.
 
 Strict protection overrides all other policies, and built-in protection is overridden by the other policies. 
@@ -93,7 +103,7 @@ To assign preset security policies, follow these steps:
    - **Groups**
    - **Domains**
 
-   Click in the appropriate box, start typing a value, and then select the value that you want from the results. Repeat this process as many times as necessary. To remove an existing value, select the Remove icon next to the value.
+   Click in the appropriate box, start typing a value, and then select the value that you want from the results. Repeat this process as many times as necessary. To remove an existing value, select the **Remove** icon next to the value.
 
    For users or groups, you can use most identifiers (name, display name, alias, email address, account name, etc.), but the corresponding display name is shown in the results. For users, type an asterisk (\*) by itself to see all available values.
 
@@ -101,7 +111,7 @@ To assign preset security policies, follow these steps:
 
    When you're finished, select **Next**.
 
-4. On the **Defender for Office 365 protections apply to** page to identify the internal recipients that the policies apply to (recipient conditions). Specify users, groups, and domains just like what you did in step 4.
+4. On the **Defender for Office 365 protections apply to** page to identify the internal recipients that the policies apply to (recipient conditions). Specify users, groups, and domains just like what you did in the previous step.
 
    When you're finished, click **Next**.
 
@@ -112,11 +122,19 @@ To assign preset security policies, follow these steps:
 > - [Assign preset security policies to users](../security/office-365-security/preset-security-policies.md#assign-preset-security-policies-to-users)
 > - [Recommended settings for email and collaboration content](../security/office-365-security/recommended-settings-for-eop-and-office365.md) (Microsoft 365 Business Premium includes Exchange Online Protection and Microsoft Defender for Office 365 Plan 1)
 
-## Create custom security policies (if necessary)
+## Create custom security policies
 
 The [preset security policies](#what-are-preset-security-policies) described earlier in this article provide strong protection for most businesses. However, you're not limited to using preset security policies only. You can define your own custom security policies to suit your company's needs. 
 
-Use our quick-start guide, [Protect against threats](../security/office-365-security/protect-against-threats.md), to get started creating your own custom policies. The guide not only walks you through how to set up your own security policies, it also provides recommended settings to use as a starting point.
+Use our quick-start guide, [Protect against threats](../security/office-365-security/protect-against-threats.md), to get started creating your own custom policies. The guidance not only walks you through how to set up your own security policies, it also provides recommended settings to use as a starting point for:
+
+- Antimalware protection
+
+- Advanced antiphishing protection
+
+- Antispam protection
+
+- Safe Links and Safe Attachments
 
 ## Tune-up anonymous sharing settings for SharePoint and OneDrive files and folders
 

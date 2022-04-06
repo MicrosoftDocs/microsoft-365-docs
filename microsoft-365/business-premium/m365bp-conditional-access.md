@@ -35,6 +35,7 @@ Some businesses require additional security. If your organization has complex se
 This article provides information about:
 
 - [Security defaults](#security-defaults) (for most businesses)
+
 - [Conditional Access](#conditional-access) (for businesses with more stringent security requirements)
 
 > [!NOTE]
@@ -44,10 +45,13 @@ This article provides information about:
 
 Security defaults were designed to help protect your company's user accounts from the start. When turned on, security defaults provide secure default settings that help keep your company safe by:
 
-- Requiring all users and admins to register for MFA using the Microsoft Authenticator app
+- Requiring all users and admins to register for MFA using the Microsoft Authenticator app.
+
 - Challenging users with MFA, mostly when they show up on a new device or app, but more often for critical roles and tasks.
+
 - Disabling authentication from legacy authentication clients that can’t do MFA.
-- Protecting admins by requiring extra authentication every time they sign in
+
+- Protecting admins by requiring extra authentication every time they sign in.
 
 MFA is an important first step in securing your company, and security defaults make enabling MFA easy to implement. If your subscription was created on or after October 22, 2019, security defaults might have been automatically enabled for you&mdash;you should check your settings to confirm.
 
@@ -76,7 +80,7 @@ If your company or business has complex security requirements or you need more g
 
 Conditional Access lets you create and define policies that react to sign-in events and request additional actions before a user is granted access to an application or service. Conditional Access policies can be granular and specific, empowering users to be productive wherever and whenever, but also protecting your organization.
 
-Security defaults are available to all customers, while Conditional Access requires a license for one of the following plans:
+Security defaults are available to all customers, while Conditional Access requires one of the following plans:
 
 - Azure Active Directory Premium P1 or P2
 - Microsoft 365 Business Premium
