@@ -29,10 +29,9 @@ description: "Learn how to set up and protect your administrator accounts in Mic
 Because admin accounts come with elevated privileges, they're valuable targets for hackers and cyber criminals. This article describes:
 
 - How to set up an additional administrator account for emergencies.
-
 - How to protect these accounts.
 
-When you sign up for Microsoft 365 and enter your information, you automatically become the Global admin. A Global admin has the ultimate control of user accounts and all the other settings in the Microsoft admin center, but there are many different kinds of admin accounts with varying degrees of access. See [about admin roles](/office365/admin/add-users/about-admin-roles) for information about the different access levels for each kind of admin role.
+When you sign up for Microsoft 365 and enter your information, you automatically become the Global Administrator (also referred to as the Global admin). A Global admin has the ultimate control of user accounts and all the other settings in the Microsoft admin center (), but there are many different kinds of admin accounts with varying degrees of access. See [about admin roles](/office365/admin/add-users/about-admin-roles) for information about the different access levels for each kind of admin role.
 
 ## Create additional admin accounts
 
@@ -42,7 +41,7 @@ You'll want to set up at least one additional Global admin account to give admin
 
 To create additional admin accounts:
 
- 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">admin center</a> and then choose **Users** \> **Active users** in the left nav.
+ 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">Microsoft 365 admin center</a> and then choose **Users** \> **Active users** in the left nav.
 
     ![Choose Users and then Active users in the left nav.](../media/Activeusers.png)
 
@@ -75,10 +74,6 @@ To create a new user account:
 3. Expand the **Roles** section, and choose **User (no administrative access)**.
 
 4. In the **Product licenses** section, move the selector for **Microsoft 365 Business** to **On**.
-
-## Turn on security defaults
-
-Security defaults help protect your organization from identity-related attacks by providing preconfigured security settings that Microsoft manages on behalf of your organization. These settings include enabling multi-factor authentication (MFA) for all admins and user accounts. For more information about security defaults and to learn how to enable them on, see [Turn on security defaults](m365bp-conditional-access.md).
 
 ## Additional recommendations
 
