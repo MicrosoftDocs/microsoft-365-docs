@@ -50,9 +50,7 @@ Your subscription includes [preset security policies](../security/office-365-sec
 Preset security policies provide protection for your email and collaboration content. These policies consist of:
 
 - *Profiles*, which determine the level of protection
-
 - *Policies* (such as anti-spam, anti-malware, anti-phishing, spoof settings, impersonation, Safe Attachments, and Safe Links)
-
 - *Policy settings* (such as groups, users, or domains to receive the policies and any exceptions)
 
 The following table summarizes the levels of protection and preset policy types.
@@ -132,11 +130,8 @@ The [preset security policies](#what-are-preset-security-policies) described ear
 Use our quick-start guide, [Protect against threats](../security/office-365-security/protect-against-threats.md), to get started creating your own custom policies. The guidance not only walks you through how to set up your own security policies, it also provides recommended settings to use as a starting point for:
 
 - [Antimalware protection](../security/office-365-security/protect-against-threats.md#part-1---anti-malware-protection-in-eop)
-
 - [Advanced antiphishing protection](../security/office-365-security/protect-against-threats.md#part-2---anti-phishing-protection-in-eop-and-defender-for-office-365)
-
 - [Antispam protection](../security/office-365-security/protect-against-threats.md#part-3---anti-spam-protection-in-eop)
-
 - [Safe Links and Safe Attachments](../security/office-365-security/protect-against-threats.md#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
 
 ## Tune-up anonymous sharing settings for SharePoint and OneDrive files and folders
