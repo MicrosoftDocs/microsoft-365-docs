@@ -37,15 +37,15 @@ If you are a small or medium-size organization using one of Microsoft's business
 > [!TIP]
 > If you need help with the steps in this article, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
 
-## Watch: Overview of security
+## Watch: A quick overview of security
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mzxI?autoplay=false]
 
-Microsoft 365 Business Premium provides threat protection, data protection, and device management features to help you protect your company from online threats and unauthorized access, as well as protect and manage company data on your phones, tablets, and computers.
+All the Microsoft 365 plans offer baseline protection and security with Defender Antivirus, but with Microsoft 365 Business Premium you have threat protection, data protection, and device management features due to the inclusion of Microsoft Defender for Business.  These additional capabilities protect your organization from online threats and unauthorized access, as well as allow you to manage company data on your phones, tablets, and computers.
 
 ## Security features comparison
 
-To learn more about a feature specific to a service plan, click on its heading in the table. 
+To learn more about a particular service plan feature, click on its heading in the following table. 
 
 |Task|Microsoft 365 Business Standard|Microsoft 365 Business Premium|
 |---|---|---|
@@ -59,7 +59,9 @@ To learn more about a feature specific to a service plan, click on its heading i
 [Protect against malicious attachments, files, and URLs in email and Office files](protect-against-malicious-attachments-files-and-urls) | | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(#Safe Links and Safe Attachments) |
 [Increase protection for your organization's devices](increase-protection-for-your-organizations-devices) | | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(#enterprise-grade device protection) |
 
-If you have Microsoft Business Premium, the quickest way to set up security and begin collaborating safely is to follow the provided guidance: [Microsoft 365 Business Premium](../../business-premium/index.md). The Business Premium information was developed in partnership with the Microsoft Defending Democracy team to protect all small business customers against cyber threats that are launched by sophisticated hackers.
+Quickly set up security and begin collaborating safely with the guidance in the [Microsoft 365 Business Premium](../../business-premium/index.md) library. The Business Premium information was developed in partnership with the Microsoft Defending Democracy team to protect all small business customers against cyber threats launched by sophisticated cyber attacks and hackers.
+
+### About the Microsoft 365 Secure Score
 
 Before you begin, check your [Microsoft 365 Secure Score](../../security/defender/microsoft-secure-score.md) in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. From a centralized dashboard, you can monitor and improve the security for your Microsoft 365 identities, data, apps, devices, and infrastructure. You are given points for configuring recommended security features, performing security-related tasks (such as viewing reports), or addressing recommendations with a third-party application or software. With added insights and more visibility into a broader set of Microsoft products and services, you can feel confident reporting about your organization's security health.
 
