@@ -47,7 +47,7 @@ Users who have been added to your Microsoft 365 for Campaigns (or Microsoft 365 
 2. Sign in using the user name and password for the account. Users will have this information in the email they should have received when they were added as users. If they can't find the email, see [I shared an email invite but the user didn’t receive the email](../admin/simplified-signup/admin-invite-business-standard.md#i-shared-an-email-invite-but-the-user-didnt-receive-the-email).
 
 > [!TIP]
-> Give your staff a link to the [Employee quick setup guide](../admin/setup/employee-quick-setup.md). The guidance walks them through signing in, getting Office apps, and saving, copying, and sharing files.
+> Give your staff a link to the [Employee quick setup guide](../admin/setup/employee-quick-setup.md). The guide walks them through signing in, getting Office apps, and saving, copying, and sharing files.
 
 ## Next steps
 

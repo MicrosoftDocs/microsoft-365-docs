@@ -28,7 +28,7 @@ description: "Protect against phishing and other attacks with Microsoft 365."
 
 # Protect yourself against phishing and other attacks
 
-In addition to the protection Microsoft 365 Business Premium offers against attacks, there are other measures all members must take to defend the organization. Make sure everyone in your org is aware of the following information.
+In addition to the protection Microsoft 365 Business Premium offers against attacks, there are other measures all members must take to defend the organization. Make sure everyone understands the following concepts:
 
 - **Spam or junk mail** There are many reasons you might receive junk e-mail and not all junk mail is the same. However, you can reduce what gets through to you, and thus reduce the risks of attacks, by filtering out junk mail.
 
@@ -37,6 +37,9 @@ In addition to the protection Microsoft 365 Business Premium offers against atta
 - **Spoofing** Scammers can also use a technique called spoofing to make it appear as if you've received an email from yourself. 
 
 - **Malware** is malicious software that can be installed on your computer, usually installed after you've clicked a link or opened a document from an email. There are various types of malware (for example, ransomware, when your computer is taken over), but you don't want to have any of them. 
+
+> [!TIP]
+> To learn more security concepts, see our [Glossary of terms](m365bp-glossary.md).
 
 ## Best practices
 
@@ -48,9 +51,9 @@ Follow these [10 tips on how to help reduce spam](https://support.microsoft.com/
 
 ### Report it!
 
-Report any phishing or other scam emails you receive. 
-Select the message, and choose **Report message** on the ribbon.
-Here's more information about [reporting junk and phishing emails](https://support.office.com/article/Use-the-Report-Message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
+Report any phishing or other scam emails you receive. Select the message, and choose **Report message** on the ribbon.
+
+For more information, see [reporting junk and phishing emails](https://support.office.com/article/Use-the-Report-Message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
 
 ### Avoid phishing
 
