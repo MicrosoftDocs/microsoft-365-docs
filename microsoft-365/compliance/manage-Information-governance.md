@@ -44,6 +44,8 @@ To keep what you need and delete what you don't:
 |[Inactive mailboxes](inactive-mailboxes-in-office-365.md)| Lets you retain mailbox content after employees leave the organization so that this content remains accessible to administrators, compliance officers, and records managers. |
 |[Import service for PST files](importing-pst-files-to-office-365.md)| Supports bulk-importing PST files to Exchange Online mailboxes to retain and search email messages for compliance or regulatory requirements. |
 
+Want to learn more? See [Learn about data lifecycle management](information-governance.md).
+
 Ready to start using some or all of these capabilities? See [Get started with data lifecycle management](get-started-with-information-governance.md).
 
 
@@ -56,6 +58,8 @@ Manage high-value items for business, legal, or regulatory record-keeping requir
 |[File plan](file-plan-manager.md)| Lets you create retention labels interactively or import in bulk, and export for analysis. Labels support additional administrative information (optional) to help you identify and track business or regulatory requirements. |
 |[Retention labels for individual items, retention policies if needed for baseline retention](retention.md)| Labels support flexible retention and deletion schedules that can be applied manually or automatically, with records declaration when needed. |
 |[Disposition review and proof of disposition](disposition.md)| Manual review of content before it's permanently deleted, with proof of disposition of records.|
+
+Want to learn more? See [Learn about records management](records-management.md).
 
 Ready to start using some or all of these capabilities? See [Get started with records management](get-started-with-records-management.md).
 
