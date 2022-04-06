@@ -19,12 +19,12 @@ ms.custom:
 - manage_licenses
 search.appverid: MET150 
 description: "Learn how to move users between subscriptions."
-ms.date: 07/01/2020 
+ms.date: 04/05/2022 
 ---
 
 # Move users to a different subscription
 
-If you have more than one subscription, have users with a license for one subscription, but want to move them to another subscription, you can replace their existing license with a different one.
+If you have more than one product, have users with a license for one product, but want to move them to another product, you can replace their existing license with a different one.
 
 ## Before you begin
 
@@ -44,7 +44,7 @@ You must be a Global, License, or User admin to assign licenses. For more inform
 
 ::: moniker-end
 
-2. Select the circles next to the names of the users that you want to replace existing licenses for.
+2. Select the check-boxes next to the names of the users that you want to replace existing licenses for.
 
 3. At the top, select **Manage product licenses**.
 
