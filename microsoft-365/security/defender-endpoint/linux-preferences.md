@@ -607,7 +607,7 @@ When you run the `mdatp health` command for the first time, the value for the ta
   ```
 
   > [!NOTE]
-  > Don’t forget to add the comma after the closing curly bracket at the end of the `cloudService` block. Also, make sure that there are two closing curly brackets after adding Tag or Group ID block (please see the above example). At the moment, the only supported key name for tags is `GROUP`. 
+  > Don't forget to add the comma after the closing curly bracket at the end of the `cloudService` block. Also, make sure that there are two closing curly brackets after adding Tag or Group ID block (please see the above example). At the moment, the only supported key name for tags is `GROUP`. 
   
 ## Configuration profile validation
 
