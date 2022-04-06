@@ -42,7 +42,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ### Changes to product names
 
-To meet the challenges of today’s decentralized, data-rich workplace, we’re introducing [Microsoft Purview](https://aka.ms/microsoftpurview)—a comprehensive set of solutions which helps you understand, govern, and protect your entire data estate. This new brand family combines the capabilities of the former Azure Purview and the Microsoft 365 Compliance portfolio that customers already rely on, providing unified data governance and risk management for your organization.
+To meet the challenges of today’s decentralized, data-rich workplace, we’re introducing [Microsoft Purview](https://aka.ms/microsoftpurview)—a comprehensive set of solutions which helps you understand, govern, and protect your entire data estate. This new brand family combines the capabilities of the former Microsoft Purview Data Map and the Microsoft 365 Compliance portfolio that customers already rely on, providing unified data governance and risk management for your organization.
 
 | **Former Name** | **New Name** | **Description** |
 |:----------------|:-------------|:----------------|
@@ -175,7 +175,7 @@ Added the following new articles:
 - [Refresh your sensitive information source table file](sit-use-exact-data-refresh-data.md)
 
 ### Sensitivity labels
-- The scope name for [Azure Purview labels](/azure/purview/create-sensitivity-label) is now "Schematized data assets".
+- The scope name for [Microsoft Purview Data Map labels](/azure/purview/create-sensitivity-label) is now "Schematized data assets".
 
 ## October 2021
 
