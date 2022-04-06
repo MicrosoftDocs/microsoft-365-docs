@@ -25,7 +25,7 @@ ms.collection:
 > 
 > Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. 
 
-If you don’t already have Microsoft Defender for Business, you can choose from several options:
+If you don't already have Microsoft Defender for Business, you can choose from several options:
 
 - [Work with a Microsoft solution provider](#work-with-a-microsoft-solution-provider)
 - [Get Microsoft 365 Business Premium](#get-microsoft-365-business-premium)
