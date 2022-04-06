@@ -165,7 +165,7 @@ The following image shows some of the default policies that are included with Mi
 
 2. In the navigation pane, choose **Policies**, and then choose **Alert policies**.
 
-3. Select an individual policy to view more details or to edit the policy.
+3. Select an individual policy to view more details or to edit the policy. The following image shows a list of alert policies with one policy selected:
 
    :::image type="content" source="media/selected-alert-policy.png" alt-text="Screenshot of an selected alert policy.":::
 
@@ -197,11 +197,11 @@ You can prevent people in your organization from sharing their calendars. You ca
 
 3. Choose **Save changes** on the bottom of the page.
 
-   The following figure shows that calendar sharing is not allowed.
+   The following image shows that calendar sharing is not allowed.
 
    ![Screenshot of showing external calendar sharing as not allowed.](../media/nocalendarsharing.png)
 
-   The following figure shows the settings when calendar sharing is allowed with an email link with only free/busy information.
+   The following image shows the settings when calendar sharing is allowed with an email link with only free/busy information.
 
    ![Screenshot of calendar free/busy sharing with anyone.](../media/sharefreebusy.png)
 
