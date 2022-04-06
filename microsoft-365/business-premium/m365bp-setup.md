@@ -33,11 +33,9 @@ Use this article as a guide.
 
 Microsoft 365 Business Premium includes a guided process for basic setup. The guided process includes these tasks:
 
-1. [Add your existing domain to personalize sign-in](../admin/setup/setup-business-basic.md#add-your-domain-to-personalize-sign-in).
-
-2. [Add users and assign licenses](../admin/add-users/add-users.md). 
-
-3. [Update your DNS records](../admin/setup/setup-business-basic.md#connect-your-domain).
+- [Adding your existing domain to personalize sign-in](../admin/setup/setup-business-basic.md#add-your-domain-to-personalize-sign-in)
+- [Adding users and assigning licenses](../admin/add-users/add-users.md)
+- [Updating your DNS records](../admin/setup/setup-business-basic.md#connect-your-domain)
 
 The following video shows the guided setup process for Microsoft 365 Business Basic. 
 
