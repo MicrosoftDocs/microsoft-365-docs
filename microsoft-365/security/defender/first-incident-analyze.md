@@ -30,7 +30,7 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
-As you spend some time establishing, implementing, and maintaining security measures according to the organization’s standards, you can set up security solutions to help you quickly identify security risks and threats. Microsoft 365 Defender allows you to detect, triage, and investigate incidents through its single-pane-of-glass experience where you can find the information you need to make timely decisions.
+As you spend some time establishing, implementing, and maintaining security measures according to the organization's standards, you can set up security solutions to help you quickly identify security risks and threats. Microsoft 365 Defender allows you to detect, triage, and investigate incidents through its single-pane-of-glass experience where you can find the information you need to make timely decisions.
 
 Once a security incident is detected, Microsoft 365 Defender presents details you will need to triage or prioritize an incident or incidents over others. After determining prioritization, analysts can then focus their energy on investigating cases assigned to them.
 
@@ -49,7 +49,7 @@ In Microsoft 365 Defender, [incidents](incidents-overview.md) are identified by 
 
 ## Triage your incidents
 
-Incident response in Microsoft 365 Defender starts once you triage the list of incidents using your organization’s recommended method of prioritization. To triage means to assign a level of importance or urgency to incidents, which then determines the order in which they will be investigated.
+Incident response in Microsoft 365 Defender starts once you triage the list of incidents using your organization's recommended method of prioritization. To triage means to assign a level of importance or urgency to incidents, which then determines the order in which they will be investigated.
 
 A useful sample guide for determining which incident to prioritize in Microsoft 365 Defender can be summarized by the formula: *Severity + Impact = Priority*.
 
@@ -74,7 +74,7 @@ One approach to triage is described below:
 
    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-incident-flyout.png" alt-text="The Incidents page showing example of an incident side pane in the Microsoft 365 security portal" lightbox="../../media/first-incident-analyze/first-incident-analyze-incident-flyout.png":::
 
-   For example, by looking at which [MITRE ATT&CK](https://attack.mitre.org/) tactics the attacker used based on the incident’s categories, you might prioritize this incident because the attacker used stolen credentials, established command and control, performed lateral movement, and exfiltrated some data. These actions suggest that the attacker has already gone deep into the network and possibly stolen confidential information.
+   For example, by looking at which [MITRE ATT&CK](https://attack.mitre.org/) tactics the attacker used based on the incident's categories, you might prioritize this incident because the attacker used stolen credentials, established command and control, performed lateral movement, and exfiltrated some data. These actions suggest that the attacker has already gone deep into the network and possibly stolen confidential information.
 
    Additionally, if your organization has implemented the Zero Trust framework, you would consider credential access as an important security violation worth prioritizing.
 
@@ -108,7 +108,7 @@ Here's an example:
 
     :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-link-to-mcas.png" alt-text="A corresponding page in the Microsoft Defender for Cloud Apps" lightbox="../../media/first-incident-analyze/first-incident-analyze-link-to-mcas.png":::
 
-3. To investigate our example further, scrolling to the bottom of the page to view the **Users affected**. To see the activity and context surrounding the malware detection, select Annette Hill’s user page.
+3. To investigate our example further, scrolling to the bottom of the page to view the **Users affected**. To see the activity and context surrounding the malware detection, select Annette Hill's user page.
 
     :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-user-page.png" alt-text="A user page" lightbox="../../media/first-incident-analyze/first-incident-analyze-user-page.png":::
 
@@ -116,7 +116,7 @@ Here's an example:
 
     :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-user-event-list.png" alt-text="The chronological list of events for a user" lightbox="../../media/first-incident-analyze/first-incident-analyze-user-event-list.png":::
 
-5. Each alert can be selected to obtain more information on the activity. For example, selecting **Activity from a Tor IP Address** alert leads you to that alert’s own page. Annette is an Administrator of Office 365, which indicates elevated privileges and that the source incident might have led to access to confidential information.
+5. Each alert can be selected to obtain more information on the activity. For example, selecting **Activity from a Tor IP Address** alert leads you to that alert's own page. Annette is an Administrator of Office 365, which indicates elevated privileges and that the source incident might have led to access to confidential information.
 
     :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-mcas-alert.png" alt-text="The alerts details for the Microsoft Defender for Cloud Apps" lightbox="../../media/first-incident-analyze/first-incident-analyze-mcas-alert.png" :::
 
