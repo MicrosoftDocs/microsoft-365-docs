@@ -42,7 +42,7 @@ Shared device mode isn't a good choice in these situations:
 
 ## Register new devices in shared device mode
 
-Starting in 2203, whether you or a partner are handling device enrollment, you can choose to use the [Windows Autopilot self-deploying mode](/mem/autopilot/self-deploying) profile in Microsoft Managed Desktop.
+Starting in 2203, whether you or a partner are handling device enrollment, you can choose to use the [Windows Autopilot self-deploying mode](https://docs.microsoft.com/en-us/mem/autopilot/self-deploying) profile in Microsoft Managed Desktop.
 
 If you're enrolling devices yourself, you must import new devices into the Windows Autopilot Devices blade.
 
