@@ -109,9 +109,9 @@ Search for "SSH" related security recommendations to find SSH vulnerabilities th
 :::image type="content" source="images/1156c82ffadd356ce329d1cf551e806c.png" alt-text="The security recommendations dashboard" lightbox="images/1156c82ffadd356ce329d1cf551e806c.png":::
 
 
-## Use Advanced Hunting on discovered devices
+## Use advanced hunting on discovered devices
 
-You can use Advanced Hunting queries to gain visibility on discovered devices. Find details about discovered endpoints in the DeviceInfo table, or network-related information about those devices in the DeviceNetworkInfo table.
+You can use advanced hunting queries to gain visibility on discovered devices. Find details about discovered endpoints in the DeviceInfo table, or network-related information about those devices in the DeviceNetworkInfo table.
 
 :::image type="content" source="images/f48ba1779eddee9872f167453c24e5c9.png" alt-text="The Advanced hunting page on which queries can be used" lightbox="images/f48ba1779eddee9872f167453c24e5c9.png":::
 
@@ -126,7 +126,7 @@ DeviceInfo
 | where OnboardingStatus != "Onboarded" 
 ```
 
-By invoking the **SeenBy** function in your advanced hunting query you can get detail on which onboarded device a discovered device was seen by. This information can help determine the network location of each discovered device and subsequently, help to identify it in the network.  
+By invoking the **SeenBy** function in your advanced hunting query you can get detail on which onboarded devices a discovered device was seen by. This information can help determine the network location of each discovered device and subsequently, help to identify it in the network.  
 
 ```text
 DeviceInfo
@@ -146,12 +146,10 @@ Device discovery leverages Microsoft Defender for Endpoint onboarded devices as 
 
 New events are Transmission Control Protocol (TCP) connections-based and will fit to the current DeviceNetworkEvents scheme. TCP ingress to the Microsoft Defender for Endpoint enabled device from a non-Microsoft Defender for Endpoint enabled.
 
-The following action types have also been added:
+You can try the example query below to return details on the ActionTypes:
 
-- ConnectionAttempt - An attempt to establish a TCP connection (syn)
-- ConnectionAcknowledged - An acknowledgment that a TCP connection was accepted (syn\ack)
-
-You can try this example query:
+- **ConnectionAttempt**  - an attempt to establish a TCP connection (syn)
+- **ConnectionAcknowledged** - an acknowledgment that a TCP connection was accepted (syn\ack)
 
 ```text
 DeviceNetworkEvents
