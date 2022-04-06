@@ -28,7 +28,7 @@ Here are some indications of unwanted software:
 
 - There are programs that you did not install and that may be difficult to uninstall
 
-- Browser features or settings have changed, and you can’t view or modify them
+- Browser features or settings have changed, and you can't view or modify them
 
 - There are excessive messages about your device's health or about files and programs
 
