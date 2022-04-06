@@ -77,7 +77,7 @@ See: [Create a deployment plan for Windows](/windows/deployment/update/create-de
 
 ## Additional topics in this deployment collection
 
-Attack surface reduction (ASR) rules deployment overview](attack-surface-reduction-rules-deployment.md)
+[Attack surface reduction (ASR) rules deployment overview](attack-surface-reduction-rules-deployment.md)
 
 [Test attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-test.md)
 
