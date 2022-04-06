@@ -128,13 +128,13 @@ The [preset security policies](#what-are-preset-security-policies) described ear
 
 Use our quick-start guide, [Protect against threats](../security/office-365-security/protect-against-threats.md), to get started creating your own custom policies. The guidance not only walks you through how to set up your own security policies, it also provides recommended settings to use as a starting point for:
 
-- Antimalware protection
+- [Antimalware protection](../security/office-365-security/protect-against-threats.md#part-1---anti-malware-protection-in-eop)
 
-- Advanced antiphishing protection
+- [Advanced antiphishing protection](../security/office-365-security/protect-against-threats.md#part-2---anti-phishing-protection-in-eop-and-defender-for-office-365)
 
-- Antispam protection
+- [Antispam protection](../security/office-365-security/protect-against-threats.md#part-3---anti-spam-protection-in-eop)
 
-- Safe Links and Safe Attachments
+- [Safe Links and Safe Attachments](../security/office-365-security/protect-against-threats.md#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
 
 ## Tune-up anonymous sharing settings for SharePoint and OneDrive files and folders
 
@@ -155,7 +155,7 @@ By default, sharing levels are set to the most permissive level for both SharePo
 
 ## Review your alert policies
 
-You can use activity alerts to track admin and user activities and detect malware and data loss prevention incidents in your organization. Your subscription includes a set of default policies, but you can also create custom ones. For example, if you store an important file in SharePoint that you don't want anyone to share externally, you can create a notification that alerts you if someone does share it.
+You can use activity alerts to track admin and user activities, and detect potential malware and data loss prevention incidents in your business. Your subscription includes a set of default policies, but you can also create custom ones. For example, if you store an important file in SharePoint that you don't want anyone to share externally, you can create a notification that alerts you if someone does share it.
 
 The following figure shows the default policies that are included with Microsoft 365.
 
@@ -165,19 +165,19 @@ For more information, see [alert policies](../compliance/alert-policies.md).
 
 ## Disable or manage calendar sharing
 
-You can prevent people in your organization from sharing their calendars, or you can also manage what they can share. For example, you can restrict the sharing to free/busy times only.
+You can prevent people in your organization from sharing their calendars. You can also manage what level of detail they can share. For example, you can restrict the sharing to free/busy times only.
 
 1. Go [Org settings in the Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2053743) and sign in.
 
 2. Choose **Calendar**, and choose whether people in your organization can share their calendars with people outside who have Office 365 or Exchange, or with anyone.
 
-   We recommend clearing the External sharing option.
+   We recommend clearing the **External sharing** option.
 
    If you choose the share with anyone option, you can decide to also only share free/busy information.
 
 3. Choose **Save changes** on the bottom of the page.
 
-   The following figure shows calendar sharing not allowed.
+   The following figure shows that calendar sharing is not allowed.
 
    ![Screenshot of showing external calendar sharing as not allowed.](../media/nocalendarsharing.png)
 
@@ -187,3 +187,12 @@ You can prevent people in your organization from sharing their calendars, or you
 
 If your users are allowed to share their calendars, see [these instructions](https://support.office.com/article/7ecef8ae-139c-40d9-bae2-a23977ee58d5) for how to share from Outlook on the web.
 
+## Next steps
+
+Train your team to:
+
+- [Set up unmanaged (BYOD) devices](m365bp-devices-overview.md)
+
+- [Protect all email](m365bp-protect-email-overview.md)
+
+- [Collaborate and share securely](m365bp-collaborate-share-securely.md)
