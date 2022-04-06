@@ -209,11 +209,7 @@ Run the following command in [Security & Compliance Center PowerShell](/powershe
 Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
 ```
 
-<<<<<<< HEAD
-After you identify the retention policy, go to the **Data lifecycle management** > **Retention** page in the Microsoft Purview portal, edit the retention policy that you identified in the previous step, and remove the mailbox from the list of recipients that are included in the retention policy.
-=======
-After you identify the retention policy, go to the **Information governance** > **Retention** page in the Microsoft Purview compliance portal, edit the retention policy that you identified in the previous step, and remove the mailbox from the list of recipients that are included in the retention policy.
->>>>>>> cc4e987d404a2907f68680eb3a695587bdf756a9
+After you identify the retention policy, go to the **Data lifecycle management** > **Retention** page in the Microsoft Purview compliance portal, edit the retention policy that you identified in the previous step, and remove the mailbox from the list of recipients that are included in the retention policy.
   
 ### Organization-wide retention policies
   
@@ -222,12 +218,7 @@ Organization-wide, Exchange-wide, and Teams-wide retention policies are applied 
 ```powershell
 Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
 ```
-
-<<<<<<< HEAD
-After you identify the organization-wide retention policies, go to the **Data lifecycle management** > **Retention** page in the Microsoft Purview portal, edit each organization-wide retention policy that you identified in the previous step, and add the mailbox to the list of excluded recipients. Doing this will remove the user's mailbox from the retention policy.
-=======
-After you identify the organization-wide retention policies, go to the **Information governance** > **Retention** page in the Microsoft Purview compliance portal, edit each organization-wide retention policy that you identified in the previous step, and add the mailbox to the list of excluded recipients. Doing this will remove the user's mailbox from the retention policy.
->>>>>>> cc4e987d404a2907f68680eb3a695587bdf756a9
+After you identify the organization-wide retention policies, go to the **Data lifecycle management** > **Retention** page in the Microsoft Purview compliance portal, edit each organization-wide retention policy that you identified in the previous step, and add the mailbox to the list of excluded recipients. Doing this will remove the user's mailbox from the retention policy.
 
 > [!IMPORTANT]
 > After you exclude a mailbox from an organization-wide retention policy, it may take up to 24 hours to synchronize this change and remove the mailbox from the policy.
@@ -402,19 +393,11 @@ Perform the following steps (in the specified sequence) in Exchange Online Power
 
     **Retention policies applied to specific mailboxes**
 
-<<<<<<< HEAD
-    Use the Microsoft Purview portal to add the mailbox back to the retention policy. Go to the **Data lifecycle management** > **Retention** page in the compliance center, edit the retention policy, and add the mailbox back to the list of recipients that the retention policy is applied to.
+    Use the Microsoft Purview compliance portal to add the mailbox back to the retention policy. Go to the **Data lifecycle management** > **Retention** page in the compliance center, edit the retention policy, and add the mailbox back to the list of recipients that the retention policy is applied to.
 
     **Organization-wide retention policies**
 
-    If you removed an organization-wide or Exchange-wide retention policy by excluding it from the policy, then use the Microsoft Purview portal to remove the mailbox from the list of excluded users. Go to the **Data lifecycle management** > **Retention** page in the compliance center, edit the organization-wide retention policy, and remove the mailbox from the list of excluded recipients. Doing this will reapply the retention policy to the user's mailbox.
-=======
-    Use the Microsoft Purview compliance portal to add the mailbox back to the retention policy. Go to the **Information governance** > **Retention** page in the compliance center, edit the retention policy, and add the mailbox back to the list of recipients that the retention policy is applied to.
-
-    **Organization-wide retention policies**
-
-    If you removed an organization-wide or Exchange-wide retention policy by excluding it from the policy, then use the Microsoft Purview compliance portal to remove the mailbox from the list of excluded users. Go to the **Information governance** > **Retention** page in the compliance center, edit the organization-wide retention policy, and remove the mailbox from the list of excluded recipients. Doing this will reapply the retention policy to the user's mailbox.
->>>>>>> cc4e987d404a2907f68680eb3a695587bdf756a9
+    If you removed an organization-wide or Exchange-wide retention policy by excluding it from the policy, then use the Microsoft Purview compliance portal to remove the mailbox from the list of excluded users. Go to the **Data lifecycle management** > **Retention** page in the compliance center, edit the organization-wide retention policy, and remove the mailbox from the list of excluded recipients. Doing this will reapply the retention policy to the user's mailbox.
 
     **eDiscovery case holds**
 
