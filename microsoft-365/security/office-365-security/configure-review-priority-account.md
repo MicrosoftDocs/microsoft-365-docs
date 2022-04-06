@@ -1,5 +1,5 @@
 ---
-title: Priority account tags in Microsoft Defender for Office 365
+title: Configure and review priority account protection in Microsoft Defender for Office 365
 f1.keywords: 
   - NOCSH
 ms.author: dansimp
@@ -19,7 +19,7 @@ ms.technology: mdo
 ms.prod: m365-security
 ---
 
-# Priority account tags in Microsoft Defender for Office 365
+# Configure and review priority account protection in Microsoft Defender for Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -33,23 +33,23 @@ Priority accounts are targeted by attackers more often and are generally attacke
 
 ## Configure priority account protection
 
-Priority account protection is turned on be default for pre-identified critical users. However, the security administrator of your organization can also turn on priority account protection by following these steps:
+Priority account protection is turned on by default for pre-identified critical users. However, the security administrator of your organization can also turn on priority account protection by following these steps:
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Settings** \> **Email & collaboration** \> **Priority account protection**. 
- 
+
 2. Turn on **Priority account protection**. 
 
-    [Need screenshot]
+    > [!div class="mx-imgBorder"]
+    > ![Turn on Priority account protection.](../../media/mdo-priority-account-protection.png)
 
 > [!NOTE]
-> Don't disable or turn off priority account protection if it is already enabled.  
-
+> It is not recommended to disable or turn off priority account protection.  
 
 ## Enable the priority account tag
 
 Microsoft Defender for Office 365 supports priority accounts as tags that can be used as filters in alerts, reports, and investigations.
 
-[Need more info]
+For more information, see [User tags in Microsoft Defender for Office 365](office-365-security\user-tags.md).
 
 ## Review differentiated protection in Threat protection status report, Threat Explorer, and email entity page
 
