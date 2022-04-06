@@ -18,5 +18,7 @@
         href: teams-classes-with-blackboard.md
     - name: Moodle integrations
       items:
+      - name: Set up and configure the Moodle plugin
+        href: moodle-plugin-configuration.md
       - name: Use Microsoft Teams classes and meetings with Moodle
         href: teams-classes-meetings-with-moodle.md
