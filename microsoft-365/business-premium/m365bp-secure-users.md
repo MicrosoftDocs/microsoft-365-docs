@@ -31,9 +31,7 @@ description: "Learn how Microsoft 365 Business Premium helps your business with 
 Microsoft 365 Business Premium is a cost-effective solution that empowers small and medium-sized businesses to work more efficiently and more securely than before. This article describes:
 
 - How Microsoft 365 Business Premium can serve your business or campaign with [productivity and advanced security capabilities](#productivity-and-security) for business users, email, and devices. 
-
 - [Resources to train your team and all staff](#resources-to-train-your-users), including a [downloadable guide](#download-the-digital-threats-guide) that describes digital threats and how to protect against such threats.
-
 - Your [next steps](#next-steps)
 
 ## Video: Top 5 benefits of Microsoft 365 Business Premium
@@ -50,17 +48,11 @@ Watch the following video to learn see how Microsoft 365 Business Premium helps 
 Microsoft 365 Business Premium includes your favorite Office productivity apps, collaboration tools like Microsoft Teams, and enterprise-grade security, identity, and device management solutions. With Microsoft 365 Business Premium, you can run your business more securely, across devices, and from just about anywhere. Microsoft 365 Business Premium includes:
 
 - **Windows 10 and 11 Pro** upgrades for your company's Windows devices
-
 - **Office apps**, such as Word, Excel, and PowerPoint, that you can install on your computers (Windows and Mac), and on your mobile devices (Windows, iOS, and Android). You also get Publisher and Access for your Windows devices.
-
 - **Microsoft Teams, Outlook, and Exchange** for email, calendars, meetings, and collaboration
-
 - **SharePoint and OneDrive** to store and manage your business files
-
 - **Sophisticated protection from threats** like phishing, malware, and ransomware protection
-
 - **Compliance and privacy features** to protect and control access to your and your customers' sensitive information
-
 - **Device management capabilities** that enable your security team to help keep computers, tablets, and phones up to date and secure
 
 > [!TIP]
@@ -73,9 +65,7 @@ The security recommendations provided in this library make it much harder for cy
 Resources are available to help everyone in your organization to:
 
 - [Protect devices](m365bp-devices-overview.md)
-
 - [Use email more securely](m365bp-protect-email-overview.md)
-
 - [Collaborate and share information more securely](m365bp-collaborate-share-securely.md)
 
 Use the recommendations in this library to help your users be productive and more secure in their work.
@@ -91,5 +81,4 @@ Our digital threats guide describes different kinds of threats and what you and 
 ## Next steps
 
 - [Get Microsoft 365 Business Premium](get-microsoft-365-business-premium.md) or [Get Microsoft 365 for Campaigns](get-microsoft-365-campaigns.md)
-
 - [Start the setup process](m365bp-setup-overview.md)
