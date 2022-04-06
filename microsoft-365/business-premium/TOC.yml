@@ -10,7 +10,7 @@
       href: get-microsoft-365-campaigns.md
 - name: Fortify your environment
   items: 
-  - name: Set up and sign in
+  - name: Sign in and set up
     items: 
       - name: Overview
         href: m365bp-setup-overview.md
