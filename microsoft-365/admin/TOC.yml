@@ -233,6 +233,8 @@
           href: get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host.md
         - name: Pilot Microsoft 365 from my custom domain
           href: misc/pilot-microsoft-365-from-my-custom-domain.md
+        - name: Add or replace your onmicrosoft.com domain
+          href: setup/add-or-replace-your-onmicrosoftcom-domain.md
         - name: Domains FAQ
           href: setup/domains-faq.yml
         - name: DNS instructions
