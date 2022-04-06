@@ -26,7 +26,7 @@ description: "Implement Microsoft Purview Information Protection capabilities to
 
 >*[Licensing for Microsoft 365 Security & Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
-Implement capabilities from **Microsoft Purview Information Protection** to help you discover, classify, and protect sensitive information wherever it lives or travels.
+Implement capabilities from **Microsoft Purview Information Protection**, formerly Microsoft Information Protection, to help you discover, classify, and protect sensitive information wherever it lives or travels.
 
 These information protection capabilities give you the tools to [know your data](#know-your-data), [protect your data](#protect-your-data), and [prevent data loss](#prevent-data-loss).
 
