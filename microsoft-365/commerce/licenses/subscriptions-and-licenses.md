@@ -21,12 +21,12 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: "The applications and services that you receive depend on which Microsoft 365 product you purchased, such as Microsoft 365 Apps for business."
-ms.date: 07/01/2020
+ms.date: 04/05/2022
 ---
 
 # Understand subscriptions and licenses in Microsoft 365 for business
 
-When you buy a subscription to Microsoft 365 for business, you sign up for a set of apps and services that you pay for on either a monthly or an annual basis. The applications and services that you receive as part of your subscription depend on which product you purchased, such as Microsoft 365 Apps for business or Microsoft 365 Business Standard. You can see what comes with each product on the [Microsoft 365 for small and medium-sized businesses](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1) page.
+When you buy a subscription to Microsoft 365 for business, you sign up for a set of apps and services that you pay for on either a monthly or an annual basis. The applications and services that you receive as part of your subscription depend on which product you purchased, such as Microsoft 365 Apps for business or Microsoft 365 Business Standard. You can see what comes with each product on the [Microsoft 365 for small and medium-sized businesses](https://www.microsoft.com/microsoft-365/business/compare-all-microsoft-365-business-products) page.
 
 When you buy a subscription, you specify the number of licenses that you need, based on how many people you have in your organization. After you buy a subscription, you create accounts for people in your organization, and then assign a license to each person. As your organizational needs change, you can buy more licenses to accommodate new people, or reassign licenses to other users when someone leaves your organization.
 
@@ -38,8 +38,8 @@ If your subscription includes any of the following products, each person can ins
 
 :::row:::
    :::column span="":::
-        - Microsoft 365 Apps for business
-        - Microsoft 365 Apps for enterprise
+        - Microsoft 365 Apps for Business
+        - Microsoft 365 Apps for Enterprise
         - Microsoft 365 Business Standard
         - Microsoft 365 Business Premium
         - Microsoft 365 A3
@@ -64,7 +64,7 @@ The following table lists what automatically happens when you assign a license t
 |:-----|:-----|
 |Exchange Online  <br/> |A mailbox is created for that person. <br/> To learn about the SLA for this task to be completed, see ["Setting up..." messages in the Microsoft 365 admin center](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center). |
 |SharePoint Online  <br/> |Edit permissions to the default SharePoint Online team site are assigned to that person.  <br/> |
-|Skype for Business Online  <br/> |The person has access to the features associated with the license.  <br/> |
+|Microsoft Teams  <br/> |The person has access to the features associated with the license.  <br/> |
 |Microsoft 365 Apps for enterprise and Microsoft 365 Apps for business  <br/> |The person can download Office apps on up to five Macs or PCs, five tablets, and five smartphones.  <br/> |
 
 ## Understand licenses for non-user mailboxes
