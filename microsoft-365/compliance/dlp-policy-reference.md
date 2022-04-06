@@ -182,16 +182,22 @@ For example, you might have a DLP policy that helps you detect the presence of i
 
 Priority for rules on endpoints is also assigned according to the order in which it's created. That means, the rule created first has first priority, the rule created second has second priority, and so on. 
 
-When a file on an endpoint matches multiple DLP policies, the first rule that's enabled with restrictions is the one that gets enforced on the content. For example, if content matches all of the following rules, *Rule 2 is enforced because it's the highest priority rule that's configured with a restriction*.
-  
-- Rule 1: only notifies users
-- *Rule 2: notifies users, restricts access, and allows user overrides*
-- Rule 3: notifies users, restricts access, and does not allow user overrides
-- Rule 4: restricts access
+When a file on an endpoint matches multiple DLP policies, the first rule that's enabled with most restrictive enforcement on the [endpoint activities](../endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on) is the one that gets enforced on the content. For example, if content matches all of the following rules, then rule 2 takes precedence over the other rules since its the most restrictive.
 
-Rules 1, 3, and 4 would be evaluated, but not applied. In this example, matches for all of the rules are recorded in the audit logs and shown in the DLP reports, even though only the first rule with a restriction is applied.
+- Rule 1: only audits all activity 
+- *Rule 2: blocks all activity*
+- Rule 3: blocks all activity with option for end user to override
 
-For rules that are applied to endpoints, you can take advantage of the ability to re-order the rule priority to make sure the restrictions you want applied are applied.
+In the below example, Rule 1 takes precedence over the other matching rules since its the most restrictive.
+
+- *Rule 1: blocks activity and does not allow user override*
+- Rule 2: blocks activity and allows user overrides
+- Rule 3: only audits all activity
+- Rule 4: no enforcement
+
+All the other rules are evaluated but their actions are not enforced. Audit logs will show the most restrictive rule applied on the file. If there is more than one rule that matches and they are equally restrictive, then policy and rule priority governs which rule would be applied on the file.
+
+For endpoints, you can configuring the actions that DLP takes for all supported activities in a single rule for a particular set of inclusion conditions.
 
 ### Conditions
 
@@ -267,24 +273,34 @@ The available context options change depending on which location you choose. If 
  
 - Content contains
 - Content is shared from Microsoft 365
-- File extension is
+- Document created by
+- Document created by member of
+- Document name contains words or phrases
+- Document name matches patterns
+- Document size over
 - Document property is
+- File extension is
 
 ##### Conditions OneDrive accounts supports
 
 - Content contains
 - Content is shared from Microsoft 365
-- File extension is
+- Document created by
+- Document created by member of
+- Document name contains words or phrases
+- Document name matches patterns
+- Document size over
 - Document property is
+- File extension is
 
 ##### Conditions Teams chat and channel messages supports
 
 - Content contains
 - Content is shared from Microsoft 365
-- Sender is (Preview)
-- Sender domain is (Preview)
-- Recipient domain is (Preview)
-- Recipient is (Preview)
+- Sender is 
+- Sender domain is 
+- Recipient domain is 
+- Recipient is 
 
 ##### Conditions Devices supports
 
@@ -391,17 +407,54 @@ The actions that are available in a rule are dependent on the locations that hav
 
 - Audit or restrict activities on Windows devices
 
-> [!NOTE]
-> Devices gives the option to **Audit** an activity, **Block** an activity, or **Block with override** an activity.
+To use these settings, you have to configure options in **DLP settings** and in the policy in which you want to use them. See, [Restricted apps and app groups](dlp-configure-endpoint-settings.md#restricted-apps-and-app-groups) for more information.
 
-The devices location provides many subactivities (conditions) and actions. To learn more, see [Endpoint activities you can monitor and take action on](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on). 
+The devices location provides many subactivities (conditions) and actions. To learn more, see [Endpoint activities you can monitor and take action on](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on).
 
-#### Microsoft Defender for Cloud Apps
+When you select **Audit or restrict activities on Windows devices**, you can restrict the user activities by service domain or browser, and scope the actions that DLP takes by:
+
+- All apps
+- By a list of restricted apps that you define
+- A restricted app group (preview) that you define.
+
+##### Service domain and browser activities
+
+When you configure the **Allow/Block cloud service domains** and the **Unallowed browsers** list (see [Browser and domain restrictions to sensitive data](dlp-configure-endpoint-settings.md#browser-and-domain-restrictions-to-sensitive-data)) and a user attempts to upload a protected file to a cloud service domain or access it from an unallowed browser, you can configure the policy action to `Audit only`, `Block with override`, or `Block` the activity.
+
+##### File activities for all apps
+
+With the **File activities for all apps** option, you select either **Don't restrict file activities** or **Apply restrictions to specific activities**. When you select to apply restrictions to specific activities, the actions that you select here are applied when a user has accessed a DLP protected item. You can tell DLP to `Audit only`, `Block with override`, `Block` (the actions) on these user activities:
+
+- **Copy to clipboard**
+- **Copy to a USB removable drive** 
+- **Copy to a network share**
+- **Print**
+- **Copy or move using an unallowed Bluetooth app**
+- **Remote desktop services**
+
+
+##### Restricted app activities  
+
+Previously called Unallowed apps, you define a list of apps in Endpoint DLP settings that you want to place restrictions on. When a user attempts to access a DLP protected file using an app that is on the list, you can either `Audit only`, `Block with override`, or `Block` the activity. DLP actions defined in **Restricted app activities** are overridden if the app is a member of restricted app group. Then the actions defined in the restricted app group are applied.
+
+##### File activities for apps in restricted app groups (preview)
+
+You define your restricted app groups in Endpoint DLP settings and add restricted app groups to your policies. When you add a restricted app group to a policy, you must select one of these options:
+
+- Don't restrict file activity
+- Apply restrictions to all activity
+- Apply restrictions to specific activity
+
+When you select either of the *Apply restrictions* options, and a user attempts to access a DLP protected file using an app that is in the restricted app group, you can either `Audit only`, `Block with override`, or `Block` by activity. DLP actions that you define here override actions defined in **Restricted app activities** and **File activities for all apps** for the app.
+
+See, [Restricted apps and app groups](dlp-configure-endpoint-settings.md#restricted-apps-and-app-groups) for more information. 
+
+#### Microsoft Defender for Cloud Apps actions
 
 - Restrict access or encrypt the content in Microsoft 365 locations
 - Restrict Third Party Apps
 
-#### On-premises repositories
+#### On-premises repositories actions
 
 - Restrict access or remove on-premises files
 

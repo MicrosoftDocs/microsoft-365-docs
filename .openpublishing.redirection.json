@@ -217,7 +217,7 @@
     },
     {
       "source_path": "microsoft-365/business/prepare-for-office-client-deployment.md",
-      "redirect_url": "/microsoft-365/admin/misc/prepare-for-office-client-deployment",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-prepare-for-office-client-deployment",
       "redirect_document_id": false
     },
     {
@@ -277,7 +277,7 @@
     },
     {
       "source_path": "microsoft-365/business/validate-protection-settings-on-windows-10-pcs.md",
-      "redirect_url": "/microsoft-365/admin/devices/protection-settings-for-windows-10-devices",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-protection-settings-for-windows-10-devices",
       "redirect_document_id": false
     },
     {
@@ -342,23 +342,23 @@
     },
     {
       "source_path": "microsoft-365/business/map-protection-features-to-intune-settings.md",
-      "redirect_url": "/microsoft-365/admin/devices/map-protection-features-to-intune-settings",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-map-protection-features-to-intune-settings",
       "redirect_document_id": true
     },
     {
       "source_path": "microsoft-365/business/set-up-compliance.md",
-      "redirect_url": "/microsoft-365/admin/security-and-compliance/set-up-compliance",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-set-up-compliance",
       "redirect_document_id": true
     },
     {
       "source_path": "microsoft-365/business/device-states.md",
-      "redirect_url": "/microsoft-365/admin/devices/device-states",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-device-states",
       "redirect_document_id": true
     },
     {
       "source_path": "microsoft-365/business/pre-requisites-for-data-protection.md",
-      "redirect_url": "/microsoft-365/admin/security-and-compliance/pre-requisites-for-data-protection",
-      "redirect_document_id": true
+      "redirect_url": "/microsoft-365/business-premium/index",
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/business/increase-threat-protection.md",
@@ -367,12 +367,12 @@
     },
     {
       "source_path": "microsoft-365/business/create-and-edit-autopilot-devices.md",
-      "redirect_url": "/microsoft-365/admin/devices/create-and-edit-autopilot-devices",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-create-and-edit-autopilot-devices",
       "redirect_document_id": true
     },
     {
       "source_path": "microsoft-365/business/protection-settings-for-windows-10-devices.md",
-      "redirect_url": "/microsoft-365/admin/devices/protection-settings-for-windows-10-devices",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-protection-settings-for-windows-10-devices",
       "redirect_document_id": true
     },
     {
@@ -382,12 +382,12 @@
     },
     {
       "source_path": "microsoft-365/business/create-and-edit-autopilot-profiles.md",
-      "redirect_url": "/microsoft-365/admin/devices/create-and-edit-autopilot-profiles",
+      "redirect_url": "/microsoft-365/business-premium/create-and-edit-autopilot-profiles",
       "redirect_document_id": true
     },
     {
       "source_path": "microsoft-365/business/autopilot-profile-settings.md",
-      "redirect_url": "/microsoft-365/admin/devices/autopilot-profile-settings",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-autopilot-profile-settings",
       "redirect_document_id": true
     },
     {
@@ -397,22 +397,22 @@
     },
     {
       "source_path": "microsoft-365/business/remove-company-data.md",
-      "redirect_url": "/microsoft-365/admin/devices/remove-company-data",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-remove-company-data",
       "redirect_document_id": true
     },
     {
       "source_path": "microsoft-365/business/reset-devices-to-factory-settings.md",
-      "redirect_url": "/microsoft-365/admin/devices/reset-devices-to-factory-settings",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-reset-devices-to-factory-settings",
       "redirect_document_id": true
     },
     {
       "source_path": "microsoft-365/business/protection-settings-for-windows-10-pcs.md",
-      "redirect_url": "/microsoft-365/admin/devices/protection-settings-for-windows-10-pcs",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-protection-settings-for-windows-10-pcs",
       "redirect_document_id": true
     },
     {
       "source_path": "microsoft-365/business/view-policies-and-devices.md",
-      "redirect_url": "/microsoft-365/admin/devices/view-policies-and-devices",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-view-policies-and-devices",
       "redirect_document_id": true
     },
     {
@@ -452,7 +452,7 @@
     },
     {
       "source_path": "microsoft-365/business/add-autopilot-devices-and-profile.md",
-      "redirect_url": "/microsoft-365/admin/devices/add-autopilot-devices-and-profile",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-add-autopilot-devices-and-profile",
       "redirect_document_id": true
     }, 
     {
@@ -4593,6 +4593,7 @@
     {
       "source_path": "microsoft-365/business-video/index.yml",
       "redirect_url": "/microsoft-365/admin/admin-video-library",
+      "redirect_document_id": true
     },
     {
       "source_path": "microsoft-365/security/defender-endpoint/get-assessmnt-1methods-properties.md",
@@ -6141,7 +6142,7 @@
     },
     {
       "source_path": "microsoft-365/business-video/secure-office-on-ios.md",
-      "redirect_url": "/microsoft-365/admin/devices/app-protection-settings-for-android-and-ios",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-app-protection-settings-for-android-and-ios",
       "redirect_document_id": false
     },
     {
@@ -6446,12 +6447,12 @@
     },
     {
       "source_path": "microsoft-365/business-video/set-up-dlp.md",
-      "redirect_url": "/microsoft-365/admin/security-and-compliance/set-up-compliance#set-up-dlp-features",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-set-up-compliance",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/business-video/create-sensitivity-labels.md",
-      "redirect_url": "/microsoft-365/admin/security-and-compliance/set-up-compliance#set-up-sensitivity-labels",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-set-up-compliance",
       "redirect_document_id": false
     },
     {
@@ -6557,6 +6558,7 @@
     {
       "source_path": "microsoft-365/security/defender/m365d-whats-new.md",
       "redirect_url": "/microsoft-365/security/defender/whats-new?view=o365-worldwide",
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/defender-endpoint/old-index.md",
@@ -6586,6 +6588,11 @@
     {
       "source_path": "microsoft-365/security/office-365-security/create-team-sites-in-a-political-campaign-dev-test-environment.md",
       "redirect_url": "/microsoft-365/enterprise/m365-enterprise-test-lab-guides",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender/microsoft-365-security-mdo-redirection.md",
+      "redirect_url": "/microsoft-365/security/defender/microsoft-365-security-center-mdo",
       "redirect_document_id": false
     },
     {
@@ -6735,8 +6742,118 @@
     },    
     {
     "source_path": "microsoft-365/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md",
-    "redirect_url": "/microsoft-365/business-premium/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o",
+    "redirect_url": "/microsoft-365/solutions/productivity-illustrations#security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations",
     "redirect_document_id": true
-    }
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/alerts.md",
+      "redirect_url": "/microsoft-365/security/defender/investigate-alerts",
+      "redirect_document_id": true
+    }, 
+    {
+    "source_path": "microsoft-365/compliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md",
+    "redirect_url": "/microsoft-365/compliance/compliance-manager",
+    "redirect_document_id": false
+    },    
+        {
+    "source_path": "microsoft-365/business-premium/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md",
+    "redirect_url": "/microsoft-365/solutions/productivity-illustrations#security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "microsoft-365/compliance/compliance-manager-and-the-gdpr.md",
+    "redirect_url": "/microsoft-365/compliance/compliance-manager",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "microsoft-365/admin/misc/secure-windows-10-devices.md",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-secure-windows-devices",
+    "redirect_document_id": true
+    },
+    {
+    "source_path": "microsoft-365/admin/devices/app-protection-settings-for-android-and-ios.md",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-app-protection-settings-for-android-and-ios",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "microsoft-365/admin/devices/add-autopilot-devices-and-profile.md",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-add-autopilot-devices-and-profile",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "microsoft-365/admin/devices/autopilot-profile-settings.md",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-autopilot-profile-settings",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "microsoft-365/admin/devices/create-and-edit-autopilot-devices.md",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-create-and-edit-autopilot-devices",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "microsoft-365/admin/devices/device-states.md",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-device-states",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "microsoft-365/admin/devices/map-protection-features-to-intune-settings.md",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-map-protection-features-to-intune-settings",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "microsoft-365/admin/devices/protection-settings-for-windows-10-devices.md",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-protection-settings-for-windows-10-devices",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "microsoft-365/admin/devices/remove-company-data.md",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-remove-company-data",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "microsoft-365/admin/devices/reset-devices-to-factory-settings.md",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-reset-devices-to-factory-settings",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "microsoft-365/admin/devices/view-policies-and-devices.md",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-view-policies-and-devices",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "microsoft-365/admin/misc/prepare-for-office-client-deployment.md",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-prepare-for-office-client-deployment",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "microsoft-365/admin/security-and-compliance/pre-requisites-for-data-protection.md",
+    "redirect_url": "/microsoft-365/business-premium/index",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "microsoft-365/admin/setup/manage-windows-devices.md",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-manage-windows-devices",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "microsoft-365/admin/devices/protection-settings-for-windows-10-pcs.md",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-protection-settings-for-windows-10-pcs",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "microsoft-365/admin/security-and-compliance/set-up-compliance.md",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-set-up-compliance",
+    "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/lighthouse/m365-lighthouse-set-up-roles.md",
+      "redirect_url": "/microsoft-365/lighthouse/m365-lighthouse-overview-of-permissions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/devices/create-and-edit-autopilot-profiles.md",
+      "redirect_url": "/microsoft-365/business-premium/create-and-edit-autopilot-profiles",
+      "redirect_document_id": false
+    } 
   ]
 }

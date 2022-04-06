@@ -7,12 +7,13 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 02/24/2022
+ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH 
+ms.collection: M365-security-compliance
 ---
 
 # Set up email notifications
@@ -56,7 +57,7 @@ When you set up email notifications, you can choose from two types, as described
 
 ## View and edit email notifications
 
-To view or edit email notification settings for your organization, follow these steps:
+To view or edit email notification settings for your company, follow these steps:
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 

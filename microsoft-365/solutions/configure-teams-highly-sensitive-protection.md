@@ -57,7 +57,7 @@ To allow or block guest sharing, we use a combination of a sensitivity label for
 
 For the highly sensitive level of protection, we'll be using a sensitivity label to classify the team. This label can also be used to classify and encrypt individual files in this or other teams or in other file locations such as SharePoint or OneDrive. 
 
-As a first step, you must enable sensitivity labels for Teams. See [Use sensitivity labels to protect content in Microsoft Teams, Office 365 groups, and SharePoint sites](../compliance/sensitivity-labels-teams-groups-sites.md) for details.
+As a first step, you must enable sensitivity labels for Teams. See [Use sensitivity labels to protect content in Microsoft Teams, Office 365 Groups, and SharePoint sites](../compliance/sensitivity-labels-teams-groups-sites.md) for details.
 
 If you already have sensitivity labels deployed in your organization, consider how this label fits with your overall label strategy. You can change the name or settings if needed to meet the needs of your organization.
 
@@ -114,6 +114,10 @@ To restrict private channel creation
 
 You can also use [teams policies](/MicrosoftTeams/teams-policies) to control who can create private channels.
 
+## Shared channel settings
+
+[Shared channels](/MicrosoftTeams/shared-channels) doesn't have team-level settings. The shared channel settings you configure in the Teams admin center and Azure AD will be available for all teams regardless of sensitivity.
+
 ## SharePoint settings
 
 Each time you create a new team with the highly sensitive label, there are two steps to do in SharePoint:
@@ -131,9 +135,7 @@ To update the site default sharing link type
 1. Under Default sharing link type, clear the **Same as organization-level setting** check box, and select **People with existing access**.
 1. Select **Save**.
 
-#### Private channels
-
-If you add private channels to the team, each private channel creates a new SharePoint site with the default sharing settings. These sites are not visible in the SharePoint admin center, so you must use the Set-SPOSite PowerShell cmdlet to update the guest sharing settings.
+Note that if you add private or shared channels to the team, each creates a new SharePoint site with the default sharing settings. You can update them in the SharePoint admin center by selecting the sites associated with the team.
 
 ### Site sharing settings
 

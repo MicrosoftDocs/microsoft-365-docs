@@ -16,8 +16,6 @@
           href: microsoft-365-security-center-mdo.md
         - name: Redirecting Defender for Endpoint to Microsoft 365 Defender
           href: microsoft-365-security-mde-redirection.md
-        - name: Redirecting Office 365 Security and Compliance Center to Microsoft 365 Defender
-          href: microsoft-365-security-mdo-redirection.md
       - name: Microsoft 365 Defender integration with Microsoft Sentinel
         href: microsoft-365-defender-integration-with-azure-sentinel.md
       - name: Microsoft 365 Defender for US Government customers
@@ -414,7 +412,6 @@
                       href: api-update-incidents.md
                     - name: Get Incident
                       href: api-get-incident.md
-
             - name: Fetch Microsoft 365 Defender incidents 
               href: fetch-incidents.md
             - name: SIEM integration
@@ -425,6 +422,61 @@
                  href: ../defender-endpoint/troubleshoot-siem.md
             - name: Understand threat intelligence concepts
               href: ../defender-endpoint/threat-indicator-concepts.md 
+        - name: Security intelligence
+          items: 
+          - name: Safety Scanner download
+            href: ../intelligence/safety-scanner-download.md
+          - name: Understand malware & other threats
+            href: ../intelligence/understanding-malware.md
+            items: 
+            - name: Prevent malware infection
+              href: ../intelligence/prevent-malware-infection.md
+            - name: Malware names
+              href: ../intelligence/malware-naming.md
+            - name: Coin miners
+              href: ../intelligence/coinminer-malware.md
+            - name: Exploits and exploit kits
+              href: ../intelligence/exploits-malware.md
+            - name: Fileless threats
+              href: ../intelligence/fileless-threats.md
+            - name: Macro malware
+              href: ../intelligence/macro-malware.md
+            - name: Phishing
+              href: ../intelligence/phishing.md
+            - name: Ransomware
+              href: /security/compass/human-operated-ransomware
+            - name: Rootkits
+              href: ../intelligence/rootkits-malware.md
+            - name: Supply chain attacks
+              href: ../intelligence/supply-chain-malware.md
+            - name: Tech support scams
+              href: ../intelligence/support-scams.md
+            - name: Trojans
+              href: ../intelligence/trojans-malware.md
+            - name: Unwanted software
+              href: ../intelligence/unwanted-software.md
+            - name: Worms
+              href: ../intelligence/worms-malware.md
+          - name: How Microsoft identifies malware and PUA
+            href: ../intelligence/criteria.md
+          - name: Submit files for analysis
+            href: ../intelligence/submission-guide.md
+          - name: Industry collaboration programs
+            href: ../intelligence/cybersecurity-industry-partners.md
+          - name: Virus information alliance
+            href: ../intelligence/virus-information-alliance-criteria.md
+          - name: Microsoft virus initiative
+            href: ../intelligence/virus-initiative-criteria.md
+          - name: Coordinated malware eradication
+            href: ../intelligence/coordinated-malware-eradication.md
+          - name: Microsoft Bug Bounty Program
+            href: ../intelligence/microsoft-bug-bounty-program.md
+          - name: Information for developers
+            items: 
+              - name: Software developer FAQ
+                href: ../intelligence/developer-faq.yml
+              - name: Software developer resources
+                href: ../intelligence/developer-resources.md
     - name: Microsoft 365 Defender docs
       items: 
        - name: Defender for Office 365

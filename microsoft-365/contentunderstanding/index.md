@@ -36,7 +36,7 @@ The resources on this page are designed to get you started with learning about a
 
 ## Get started
 
-The resources in this section help you learn more about the three methods of data classification and extraction used by SharePoint Syntex: document understanding, form processing, and prebuilt.
+The resources in this section help you learn more about the methods of data classification and extraction used by SharePoint Syntex. There are two custom model types—[document understanding](document-understanding-overview.md) and [form processing](form-processing-overview.md)—and a [prebuilt](prebuilt-overview.md) model type.
 
 > [!NOTE]
 > You can get started with SharePoint Syntex without buying licenses by [creating a content center from the SharePoint admin center](create-a-content-center.md). Unlicensed users can create document understanding models but can't apply them to a document library.

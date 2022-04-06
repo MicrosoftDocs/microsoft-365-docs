@@ -53,7 +53,7 @@ Use the settings below to control who can use Bookings, decide on what Bookings 
 
 ### Block bookings from outside your organization
 
-You can set up Bookings so only people in your organization can book appointments. Only users in your organization who've signed and are authenticated can book appointments.
+You can set up Bookings so only people in your organization can book appointments. Only users in your organization who've signed in and are authenticated can book appointments.
 
 ### Block social sharing options
 
