@@ -138,7 +138,7 @@ DeviceInfo
 | project DeviceId, DeviceName, DeviceType, SeenBy  
 ```
 
-For more information, see the [SeenBy()](/defender/advanced-hunting-seenby-function.md) function.
+For more information, see the [SeenBy()](/microsoft-365/security/defender/advanced-hunting-seenby-function.md) function.
 
 ### DeviceNetworkInfo table
 
