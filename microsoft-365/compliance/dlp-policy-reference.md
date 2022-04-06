@@ -197,7 +197,7 @@ In the below example, Rule 1 takes precedence over the other matching rules sinc
 
 All the other rules are evaluated but their actions are not enforced. Audit logs will show the most restrictive rule applied on the file. If there is more than one rule that matches and they are equally restrictive, then policy and rule priority governs which rule would be applied on the file.
 
-For rules that are applied to endpoints, you can take advantage of configuring restrictions across all supported activities in a single rule for a particular sensitive detection logic.
+For endpoints, you can configuring the actions that DLP takes for all supported activities in a single rule for a particular set of inclusion conditions.
 
 ### Conditions
 
