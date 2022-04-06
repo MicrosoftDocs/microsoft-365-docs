@@ -36,13 +36,9 @@ To update the customizable elements on the sign-in page, you have to be a global
 
 The elements you can update are:
 
-- **Sign-in page text**
-     An easy place to add the privacy and consent statement.
-
+- Sign-in page text (an easy place to add the privacy and consent statement)
 - Sign-in page background image
-
 - Banner logo
-
 - Username hint
 
 For examples of privacy and consent notices, see Appendix A in [Searching and Seizing Computers and Obtaining Electronic Evidence in Criminal Investigations](https://www.justice.gov/sites/default/files/criminal-ccips/legacy/2015/01/14/ssmanual2009.pdf).
