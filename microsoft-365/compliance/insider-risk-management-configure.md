@@ -31,9 +31,9 @@ For more information about how insider risk policies can help you manage risk in
 
 Before you get started with insider risk management, you should confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) and any add-ons. To access and use insider risk management, your organization must have one of the following subscriptions or add-ons:
 
-- Microsoft 365 E5/A5/G5 subscription (paid or trial version)
-- Microsoft 365 E3/A3/G3 subscription + the Microsoft 365 E5/A5/G5 Compliance add-on
-- Microsoft 365 E3/A3/G3 subscription + the Microsoft 365 E5/A5/G5 Insider Risk Management add-on
+- Microsoft 365 E5/A5/F5/G5 subscription (paid or trial version)
+- Microsoft 365 E3/A3/F3/G3 subscription + the Microsoft 365 E5/A5/F5/G5 Compliance add-on
+- Microsoft 365 E3/A3/F3/G3 subscription + the Microsoft 365 E5/A5/F5/G5 Insider Risk Management add-on
 - Office 365 E3 subscription + Enterprise Mobility and Security E3 + the Microsoft 365 E5 Compliance add-on
 
 Users included in insider risk management policies must be assigned one of the licenses above.
@@ -45,7 +45,7 @@ If you don't have an existing Microsoft 365 Enterprise E5 plan and want to try i
 
 ## Recommended actions (preview)
 
-Recommended actions can help your organization quickly get started and to get the most out of insider risk management capabilities. Included on the **Overview** page, recommended actions help guide you through the steps to configure and deploy policies and to take investigation actions for user actions that generate alerts from policy matches.
+Recommended actions can help your organization quickly get with insider risk management. Included on the **Overview** page, recommended actions help guide you through the steps to configure and deploy policies.
 
 ![Insider risk management recommended actions.](../media/insider-risk-recommended-actions.png)
 
@@ -57,9 +57,6 @@ The following recommendations are available to help you get started with or maxi
 - **Scan for potential insider risks**: Run an analytics scan to discover potential insider risks occurring in your org. After evaluating results, review recommended policies to set up.
 - **Assign permissions to others**: If there are additional team members who will be responsible for managing insider risk features, you'll need to assign them to the appropriate role groups.
 - **Create your first policy**: To receive alerts on potentially risky activities, you must set up policies based on predefined templates that define the user activities you want to detect and investigate.
-- **Review user whose activity is being scored**: The **Users dashboard** allows you to view users whose activity is currently being assigned risk scores, regardless of whether that activity met the threshold to generate an alert.
-- **Review alerts**: After a triggering event occurs for a user, policies start assigning risk scores to detected activity. If a risk score meets a policy's thresholds, you'll see an alert containing a detailed breakdown of all activity being scored for that user.
-- **Investigate a case**: Cases are manually created from alerts when further investigation is needed to identify potential insider risks. Each case is scoped to a single user and multiple alerts for the user can be added to an existing case or to a new case.
 
 Each recommended action included in this experience has four attributes:
 

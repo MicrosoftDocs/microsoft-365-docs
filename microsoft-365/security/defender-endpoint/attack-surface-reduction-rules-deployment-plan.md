@@ -24,10 +24,10 @@ ms.date: 1/18/2022
 
 # Step 1: Plan ASR rules deployment
 
-When testing attack surface reduction (ASR) rules it is important to start with the right business unit. You’ll want to start with a small group of people in a specific business unit. You can identify some ASR champions within a particular business unit who can provide real-world impact about the ASR rules, and help you tune your implementation.
+When testing attack surface reduction (ASR) rules it is important to start with the right business unit. You'll want to start with a small group of people in a specific business unit. You can identify some ASR champions within a particular business unit who can provide real-world impact about the ASR rules, and help you tune your implementation.
 
 > [!div class="mx-imgBorder"]
-> ![ASR rules planning steps](images/asr-rules-planning-steps.png)
+> :::image type="content" source="images/asr-rules-planning-steps.png" alt-text="The ASR rules planning steps" lightbox="images/asr-rules-planning-steps.png":::
 
 ## Start with the right business unit
 
@@ -71,7 +71,7 @@ Typical roles and responsibilities include:
 
 ## Ring deployment
 
-For large enterprises, Microsoft recommends deploying ASR  rules in “rings.” Rings are groups of devices that are visually represented as concentric circles that radiate outward like non-overlapping tree rings. When the innermost ring is successfully deployed, you can transition the next ring into the testing phase. Thorough assessment of your business units, ASR  rules champions, apps, and processes is imperative to defining your rings.
+For large enterprises, Microsoft recommends deploying ASR  rules in "rings." Rings are groups of devices that are visually represented as concentric circles that radiate outward like non-overlapping tree rings. When the innermost ring is successfully deployed, you can transition the next ring into the testing phase. Thorough assessment of your business units, ASR  rules champions, apps, and processes is imperative to defining your rings.
 In most cases, your organization will have designed deployment rings for phased rollouts of Windows updates. You can use your existing ring design to implement ASR  rules.
 See: [Create a deployment plan for Windows](/windows/deployment/update/create-deployment-plan)
 

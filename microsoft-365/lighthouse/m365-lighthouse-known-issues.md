@@ -60,20 +60,22 @@ This article lists the known issues for Microsoft 365 Lighthouse by feature area
 | **Deactivate and Reactivate actions are not listed in audit logs** | The following activities are currently not reported on the Audit logs page in  Lighthouse: <ul><li>Name: offboardTenant \| Action: Inactivate a customer</li> <li>Name: resetTenantOnboardingStatus \| Action: Reactive customer</li></ul> | There's no workaround, but we're working on a fix. These activities will appear in audit logs once the fix is deployed in the service. |
 | **Filter is not showing all users** | When MSP technicians try to filter by using **Initiated By**, the list of all User Principal Names (UPNs) – corresponding to email IDs of the technicians who initiated actions generating audit logs – isn't fully displayed under the filter.<br><br>Note that the audit logs themselves will be fully displayed; only the ability to filter them by using **Initiated By** is impacted. | There's no workaround, but we're working on a fix. The filter will revert to its expected behavior – displaying the full list of UPNs to filter by – once the fix is deployed in the service. |
 
-## Delegated Admin Permissions (DAP)
+## Delegated Admin Privileges (DAP)
 
 | Issue | Description | Solution |
 | ---------------- | ---------------- | ---------------- |
 | **Permissions delay when changing DAP roles** | If an MSP technician is added to or removed from the Admin Agent or Helpdesk Agent group, there may be a delay in reflecting the appropriate permissions within Lighthouse. | The issue will resolve within 30 minutes. No additional steps are required. |
 
-## Granular Delegated Admin Permissions (GDAP)
+## Granular Delegated Admin Privileges (GDAP)
 
 > [!NOTE]
 > GDAP is currently in [technical preview](/partner-center/announcements/2022-february#6) (public preview) to allow partners to assign granular permissions before GDAP is generally available.
 
+Currently, DAP is required to onboard customers to Lighthouse. We recommend also establishing GDAP with your customers to enable more secure delegated access. While DAP and GDAP coexist, GDAP will take precedence for customers where both models are in place. Soon, customers with just GDAP (and no DAP) will be able to onboard to Lighthouse.<br><br>
+
 | Issue | Description | Solution |
 | ---------------- | ---------------- | ---------------- |
-| **Various GDAP permission issues across Lighthouse** | <ul><li>GDAP Security Administrators are unable to view risky users, dismiss risks, or confirm compromised users.</li><li>GDAP Security Readers are unable to view risky users.</li><li>GDAP Global Administrators see an error message when trying to view service health.</li></ul> | Before GDAP General Availability, the workaround is to assign the user a Global Administrator GDAP role or Admin Agent DAP role. For instructions on how to assign the Global Administrator GDAP role, see [Obtain granular admin permissions to manage a customer's service](/partner-center/gdap-obtain-admin-permissions-to-manage-customer). For instructions on how to assign the Admin Agent DAP role, see [Assign roles and permissions to users](/partner-center/permissions-overview). For a list of actions in Lighthouse that require certain Azure Active Directory roles in the partner tenant, see [Configure Microsoft 365 Lighthouse portal security](/microsoft-365/lighthouse/m365-lighthouse-configure-portal-security).
+| **Various GDAP permission issues across Lighthouse** | Certain GDAP roles by themselves don't grant the same level of access to customer data in Lighthouse as they would in a single-tenant experience. If any of the following roles are assigned individually (this is, not in combination with other GDAP roles) to MSP technicians, they may encounter errors, including:<ul><li>GDAP Security Administrators are unable to view risky users, dismiss risks, or confirm compromised users within Lighthouse.</li><li>GDAP Security Readers are unable to view risky users within Lighthouse.</li><li>GDAP Global Administrators see an error message when trying to view service health within Lighthouse.</li><li>GDAP Global Administrators experience issues deploying deployment plan steps within Lighthouse.</li></ul> | The workaround is to assign a combination of GDAP roles to MSP technicians based on the level of access to customer data that they need. For a list of recommended GDAP roles to use Lighthouse, see [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md).<br><br>For issues where even GDAP Global Administrator permissions won't allow usage of a feature in Lighthouse, the workaround is to access the appropriate admin center from the customer tenant to manage the customer (for example, access the Microsoft 365 admin center from the customer tenant to check service health). For instructions on how to modify a GDAP relationship, see [Obtain granular admin permissions to manage a customer's service - Partner Center](/partner-center/gdap-obtain-admin-permissions-to-manage-customer). |
 
 ## Localization
 

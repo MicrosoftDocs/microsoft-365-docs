@@ -113,6 +113,9 @@ Retention policies can be applied to the following locations:
 - Yammer community messages
 - Yammer user messages
 
+> [!NOTE]
+> Teams channel messages now include [shared channels](/MicrosoftTeams/shared-channels) (currently in preview) as well as standard channels.
+
 You can very efficiently apply a single policy to multiple locations, or to specific locations or users.
 
 For the start of the retention period, you can choose when the content was created or, supported only for files and the SharePoint, OneDrive, and Microsoft 365 Groups locations, when the content was last modified.
