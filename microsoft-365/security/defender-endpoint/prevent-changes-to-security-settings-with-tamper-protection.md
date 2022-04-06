@@ -133,6 +133,7 @@ For more information about releases, see [Windows 10 release information](/windo
 
 > [!NOTE]
 > When tamper protection is enabled via the Microsoft 365 Defender portal, cloud-delivered protection is required, so that the enabled state of tamper protection can be controlled.  
+> 
 > Starting with the November 2021 update (platform version `4.18.2115` and anti-malware version `1.11800.4`), if cloud-delivered protection is not turned on for a device and tamper protection is turned on in the Microsoft 365 Defender portal, then cloud-delivered protection will be automatically turned on for that device along with tamper protection.   
 
 ### Turn tamper protection on (or off) in the Microsoft 365 Defender portal
