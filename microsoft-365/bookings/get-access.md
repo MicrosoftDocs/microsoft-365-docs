@@ -16,7 +16,7 @@ description: "Learn how to get access to the Bookings feature in Microsoft 365."
 > [!NOTE]
 > This article helps you to interact with the latest version of Microsoft Bookings. Previous versions will be retired in coming months.
 
-This topic describes how get access to Bookings for the first time. It also tells you how to turn on or off Bookings in your organization. It also explains how you can assign licenses to your users so they can access and use Bookings.
+This topic describes how to get access to Bookings for the first time. It also tells you how to turn on or off Bookings in your organization. It also explains how you can assign licenses to your users so they can access and use Bookings.
 
 ## Access Bookings for the first time
 
