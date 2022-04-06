@@ -17,9 +17,6 @@ description: "Create and grade assignments, build and curate course content, and
 
 # Integrate Microsoft OneDrive LTI with Canvas
 
-> [!IMPORTANT]
-> Some information relates to a pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
 Integrating Microsoft OneDrive LTI with Canvas is a two step process. The first step enables Microsoft OneDrive in Canvas, and the second step makes the Microsoft OneDrive LTI available within Canvas courses.
 
 ## Recommended browser settings
@@ -57,7 +54,13 @@ Integrating Microsoft OneDrive LTI with Canvas is a two step process. The first 
 
 :::image type="content" source="media/OneDrive-LTI-14.png" alt-text="A screenshot showing the left-hand navigation bar with Developer Keys selected, and the LTI key entry selected from a dropdown on the right of the page.":::
 
-6. On the Configure page, in the **Method** dropdown, select **Paste JSON** as the method and paste the JSON text you copied in Step 5 in the text field that appears.
+6. On the Configure page, in the **Method** dropdown, select **Paste JSON** as the method and paste the JSON text you copied in Step 4 in the text field that appears.
+
+    > [!TIP]
+    > **Optional Step:** If your school's educators wish to control for themselves which links appear in their courses' navigation, you can modify the ``default`` parameter in the copied JSON. The ``default`` parameter is set to ``enabled`` automatically; however, changing the ``default`` parameter to ``disabled`` allows educators to choose their own courses' navigation.
+    >
+    > For more information on how educators can modify their course navigation links, see [How do I manage Course Navigation links?](https://community.canvaslms.com/t5/Instructor-Guide/How-do-I-manage-Course-Navigation-links/ta-p/1020)
+
 7. Save the key, and it becomes available in Canvas in an **Off** state. Turn the key **On** and copy the key given in the **Details** column to be used in the next step.
 
 :::image type="content" source="media/OneDrive-LTI-19.png" alt-text="The Canvas page with the key set in an off state. It will need to be turned on and the key will need to be copied from the details column on this page.":::

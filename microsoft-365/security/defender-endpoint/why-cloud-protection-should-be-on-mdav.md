@@ -15,7 +15,9 @@ ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
 ms.date: 10/22/2021
-ms.collection: m365-security-compliance
+ms.collection: 
+- m365-security-compliance
+- m365initiative-defender-endpoint
 ---
 
 # Why cloud protection should be enabled for Microsoft Defender Antivirus
@@ -28,7 +30,7 @@ ms.collection: m365-security-compliance
 
 Microsoft Defender Antivirus cloud protection helps protect against malware on your endpoints and across your network. We recommend keeping cloud protection turned on, because certain security features and capabilities in Microsoft Defender for Endpoint only work when cloud protection is enabled. 
 
-[:::image type="content" source="images/mde-cloud-protection.png" alt-text="Diagram showing things that depend on cloud protection":::](enable-cloud-protection-microsoft-defender-antivirus.md)
+[![alt-text="Diagram showing things that depend on cloud protection](images/mde-cloud-protection.png#lightbox)](enable-cloud-protection-microsoft-defender-antivirus.md)
 
 The following table summarizes the features and capabilities that depend on cloud protection: <br/><br/>
 
@@ -44,7 +46,7 @@ The following table summarizes the features and capabilities that depend on clou
 | Indicators of compromise (IoCs) | Microsoft Defender for Endpoint Plan 2 (Standalone or included in a plan like Microsoft 365 E5) | IoCs in Defender for Endpoint can be configured to define the detection, prevention, and exclusion of entities. For example, "allow" indicators can be used to define exceptions to Microsoft Defender Antivirus scans and remediation actions in Defender for Endpoint. As another example, "alert and block" indicators can be used to prevent files or processes from executing, and to track these activities with alerts that are viewable in the Microsoft 365 Defender portal. <br/><br/>To learn more, see [Create indicators](manage-indicators.md).    |
 
 > [!TIP]
-> To learn more about Defender for Endpoint plans, see [Microsoft Defender for Endpoint Plan 1 (preview) and Plan 2](defender-endpoint-plan-1-2.md).
+> To learn more about Defender for Endpoint plans, see [Microsoft Defender for Endpoint Plan 1 and Plan 2](defender-endpoint-plan-1-2.md).
 
 ## Next steps
 

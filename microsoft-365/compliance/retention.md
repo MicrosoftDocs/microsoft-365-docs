@@ -54,7 +54,7 @@ With these two retention actions, you can configure retention settings for the f
 
 These retention settings work with content in place that saves you the additional overheads of creating and configuring additional storage when you need to retain content for compliance reasons. In addition, you don't need to implement customized processes to copy and synchronize this data.
 
-Use the following sections to learn more about how retention policies and retention labels work, when to use them, and how they supplement each other. But if you're ready to get started and deploy retention settings for some common scenarios, see [Get started with retention policies and retention labels](get-started-with-retention.md).
+Use the following sections to learn more about how retention policies and retention labels work, when to use them, and how they supplement each other. But if you're ready to get started and deploy retention settings for some common scenarios, see [Get started with information governance](get-started-with-information-governance.md).
 
 ## How retention settings work with content in place
 
@@ -113,6 +113,9 @@ Retention policies can be applied to the following locations:
 - Yammer community messages
 - Yammer user messages
 
+> [!NOTE]
+> Teams channel messages now include [shared channels](/MicrosoftTeams/shared-channels) (currently in preview) as well as standard channels.
+
 You can very efficiently apply a single policy to multiple locations, or to specific locations or users.
 
 For the start of the retention period, you can choose when the content was created or, supported only for files and the SharePoint, OneDrive, and Microsoft 365 Groups locations, when the content was last modified.
@@ -148,7 +151,7 @@ With retention labels, you can:
 
 - **Apply a default retention label to a document library, folder, or document set** in SharePoint, so that all documents that are stored in that location inherit the default retention label.
 
-Additionally, retention labels support [records management](records-management.md) for email and documents across Microsoft 365 apps and services. You can use a retention label to mark items as a record. When this happens and the content remains in Microsoft 365, the label places further restrictions on the content that might be needed for regulatory reasons. For more information, see [Compare restrictions for what actions are allowed or blocked](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked).
+- **Mark items as a record** as part of your [records management](records-management.md) strategy. When this labeled content remains in Microsoft 365, further restrictions are placed on the content that might be needed for regulatory reasons. For more information, see [Compare restrictions for what actions are allowed or blocked](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked).
 
 Retention labels, unlike [sensitivity labels](sensitivity-labels.md), do not persist if the content is moved outside Microsoft 365.
 
@@ -260,18 +263,53 @@ For retention labels that don't mark the content as a record or regulatory recor
 
 ### Combining retention policies and retention labels
 
-You don't have to choose between using retention policies only or retention labels only. Both methods can be used together and in fact, complementary each other for a more comprehensive solution. For example:
+You don't have to choose between using retention policies only or retention labels only. Both methods can be used together and in fact, complementary each other for a more comprehensive solution.
+
+The following examples are just some of the ways in which you can combine retention policies and retention labels for the same location.
+
+For more information about how retention policies and retention labels work together and how to determine their combined outcome, see the section on this page that explains the [principles of retention and what takes precedence](#the-principles-of-retention-or-what-takes-precedence).
+
+**Example for users to override automatic deletion**
+
+Scenario: By default, content in users' OneDrive accounts is automatically deleted after five years but users must have the option to override this for specific documents.
 
 1. You create and configure a retention policy that automatically deletes content five years after it's last modified, and apply the policy to all OneDrive accounts.
 
 2. You create and configure a retention label that keeps content forever and add this to a label policy that you publish to all OneDrive accounts. You explain to users how to manually apply this label to specific documents that should be excluded from automatic deletion if not modified after five years.
 
-For more information about how retention policies and retention labels work together and how to determine their combined outcome, see the next section that explains the principles of retention and what takes precedence.
+**Example to retain items for longer**
+
+Scenario: By default, SharePoint items are automatically retained and then deleted after five years, but documents in specific libraries must be retained for ten years.
+
+1. You create and configure a retention policy that automatically retains and then deletes content after five years, and apply the policy to all SharePoint and Microsoft 365 Groups instances.
+
+2. You create and configure a retention label that automatically retains content for ten years. You publish this label to SharePoint site admins, so that they can apply it as a default label to be inherited by all items in specific document libraries.
+
+**Example to delete items in a shorter time period**
+
+Scenario: By default, emails aren't retained but are automatically deleted after ten years. However, emails related to a specific project that has a prerelease code name must be automatically deleted after one year.
+
+1. You create and configure a retention policy that automatically deletes content after ten years, and apply the policy to all Exchange recipients.
+
+2. You create and configure a retention label that automatically deletes content after one year. Options for applying this label to relevant emails include:
+    - You create an auto-labeling policy that identifies content by using the project code name as the keyword, and apply the policy to all Exchange recipients
+    - You publish the label and instruct users involved in the project how to create an automatic rule in Outlook that applies this label
+    - You publish the label and instruct users to create a folder in Outlook for all emails related to the project and they apply the published label to the folder, and then create an Outlook rule to move all project-related emails to this folder
+
+## How long it takes for retention settings to apply
+
+When you submit retention policies for workloads and label policies to automatically apply a retention label, allow up to 7 days for the retention settings to be applied to content:
+
+- [How long it takes for retention policies to take effect](create-retention-policies.md#how-long-it-takes-for-retention-policies-to-take-effect)
+- [How long it takes for retention labels to take effect](apply-retention-labels-automatically.md#how-long-it-takes-for-retention-labels-to-take-effect)
+
+Similarly, allow up to 7 days for retention labels to be visible in apps after you publish the labels:
+
+- [When retention labels become available to apply](create-apply-retention-labels.md#when-retention-labels-become-available-to-apply)
+
+Often, the policies will take effect and labels will be visible quicker than 7 days. But with many potential variables that can impact this process, it's best to plan for the maximum of 7 days.
 
 ## Adaptive or static policy scopes for retention
-
-> [!NOTE]
-> Adaptive policy scopes as a new feature is currently in preview and subject to change. The alternative option is a static scope, which provides the same behavior before adaptive scopes were introduced and can be used if adaptive scopes don't meet your business requirements.
 
 When you create a retention policy or retention label policy, you must choose between adaptive and static to define the scope of the policy.
 
@@ -313,9 +351,6 @@ To watch a recorded webinar (requires registration), visit [Deep Dive on Adaptiv
 > Currently, adaptive scopes don't support [Preservation Lock to restrict changes to retention policies and retention label policies](#use-preservation-lock-to-restrict-changes-to-policies).
 
 ## Policy lookup
-
-> [!NOTE]
-> Policy lookup is currently in preview and subject to change.
 
 You can configure multiple retention policies for Microsoft 365 locations, as well as multiple retention label policies that you publish or auto-apply. To find the policies for retention that are assigned to specific users, sites, and Microsoft 365 groups, use **Policy lookup** from the **Information governance** solution in the Microsoft 365 compliance center:
 
@@ -603,4 +638,4 @@ If you have configured SharePoint sites for content type policies or information
 
 ## Configuration guidance
 
-See [Get started with retention policies and retention labels](get-started-with-retention.md). This article has information about subscriptions, permissions, and links to end-to-end configuration guidance for retention scenarios.
+See [Get started with information governance](get-started-with-information-governance.md). This article has information about subscriptions, permissions, and links to end-to-end configuration guidance for retention scenarios.

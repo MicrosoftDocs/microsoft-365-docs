@@ -43,9 +43,24 @@ The tables in the following sections describe the conditions and exceptions that
 
 ### Senders
 
-<br>
+If you use the sender address as a condition or exception the actual field where the value is looked for varies depending on the sender address location configured. By default,  DLP rules use the Header address as the sender address.
 
-****
+![Image of an email header showing the difference between the Envelope (P1) address and the Header (P2) address](../media/dlp-conditions-exceptions-meetinginvite-callouts.png)
+
+At the tenant level, you can configure a sender address location to be used across all rules, unless overridden by a single rule. To set tenant DLP policy configuration to evaluate the sender address from the Envelope across all rules, you can run the following command:
+
+```PowerShell
+Set-PolicyConfig –SenderAddressLocation Envelope
+```
+
+To configure the sender address location at a DLP rule level, the parameter is _SenderAddressLocation_. The available values are:
+
+- **Header**: Only examine senders in the message headers (for example, the **From**, **Sender**, or **Reply-To** fields). This is the default value.
+
+- **Envelope**: Only examine senders from the message envelope (the **MAIL FROM** value that was used in the SMTP transmission, which is typically stored in the **Return-Path** field).
+
+- **Header or envelope** (`HeaderOrEnvelope`) Examine senders in the message header and the message envelope.
+<br>
 
 |condition or exception in DLP|condition/exception parameters in Microsoft 365 PowerShell|property type|description|
 |---|---|---|---|
@@ -134,7 +149,7 @@ The tables in the following sections describe the conditions and exceptions that
 |With importance|condition: *WithImportance* <br/> exception: *ExceptIfWithImportance*|Importance|Messages that are marked with the specified importance level.|
 |Content character set contains words|condition: *ContentCharacterSetContainsWords* <br/> *ExceptIfContentCharacterSetContainsWords*|CharacterSets|Messages that have any of the specified character set names.|
 |Has sender override|condition: *HasSenderOverride* <br/> exception: *ExceptIfHasSenderOverride*|n/a|Messages where the sender has chosen to override a data loss prevention (DLP) policy. For more information about DLP policies see [Learn about data loss prevention](./dlp-learn-about-dlp.md)|
-|Message type matches|condition: *MessageTypeMatches* <br/> exception: *ExceptIfMessageTypeMatches*|MessageType|Messages of the specified type.|
+|Message type matches|condition: *MessageTypeMatches* <br/> exception: *ExceptIfMessageTypeMatches*|MessageType|Messages of the specified type. **Note**: The available message types are Automatic reply, Auto-forward, Encrypted (S/MIME), Calendaring, Permission controlled (rights management), Voicemail, Signed, Read receipt, and Approval request. |
 |The message size is greater than or equal to|condition: *MessageSizeOver* <br/> exception: *ExceptIfMessageSizeOver*|`Size`|Messages where the total size (message plus attachments) is greater than or equal to the specified value. **Note**: Message size limits on mailboxes are evaluated before mail flow rules. A message that's too large for a mailbox will be rejected before a rule with this condition is able to act on the message.|
 |
 
@@ -158,4 +173,8 @@ This table describes the actions that are available in DLP.
 Prepend subject|PrependSubject|String|Adds the specified text to the beginning of the Subject field of the message. Consider using a space or a colon (:) as the last character of the specified text to differentiate it from the original subject text.</br>To prevent the same string from being added to messages that already contain the text in the subject (for example, replies), add the "The subject contains words" (ExceptIfSubjectContainsWords) exception to the rule.|
 |Apply HTML disclaimer|ApplyHtmlDisclaimer|First property: *Text*</br>Second property: *Location*</br>Third property: *Fallback action*|Applies the specified HTML disclaimer to the required location of the message.</br>This parameter uses the syntax: @{ Text = “ ” ; Location = <Append \|Prepend>; FallbackAction = <Wrap \|Ignore \|Reject> }|
 |Remove Office 365 Message Encryption and rights protection|RemoveRMSTemplate|n/a|Removes Office 365 encryption applied on an email|
+|Deliver the message to the hosted quarantine |_Quarantine_|n/a| This action is currently in **public preview**. During this phase, emails quarantined by DLP policies will show policy type as ExchangeTransportRule.</br> Delivers the message to the quarantine in EOP. For more information, see [Quarantined email messages in EOP](/microsoft-365/security/office-365-security/quarantine-email-messages).|
 |
+
+<!--|Modify Subject|ModifySubject|PswsHashTable | Remove text from the subject line that matches a specific pattern and replace it with different text. See the example below. You can: </br>- **Replace** all matches in the subject with the replacement text </br>- **Append** to remove all matches in the subject and inserts the replacement text at the end of the subject. </br>- **Prepend** to remove all matches and inserts the replacement text at the beginning of the subject. See ModifySubject parameter in, /powershell/module/exchange/new-dlpcompliancerule|-->
+

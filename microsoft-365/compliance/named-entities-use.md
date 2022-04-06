@@ -12,7 +12,7 @@ ms.topic: article
 f1_keywords:
 - 'ms.o365.cc.UnifiedDLPRuleContainsSensitiveInformation'
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-security-compliance
 description: "Use these procedures to take advantage of named entities in your data loss prevention policies"
@@ -50,11 +50,13 @@ You can use named entity SITs and enhanced policies to detect and protect sensit
 - SharePoint sites
 - OneDrive accounts
 - Teams chat and channel messages
+- Devices (Windows 10 endpoint devices)
 
 Named entity SITs and enhanced policies are not supported for:
 
-- Devices (Windows 10 endpoint devices)
+
 - On-premises repositories
+- Power BI
 
 ## Create and edit enhanced policies
 
@@ -66,8 +68,8 @@ To create or edit a DLP policy, use the procedures in [Create, test, and tune a 
 - **Microsoft 3655 eDiscovery** supports the use of named entities in Substrate services.
 - **Microsoft Defender for Cloud Apps** supports the use of named entities in Defender for Cloud Apps policies.
 - **Insider Risk Management** supports the use of named entities in Substrate services.
-- **Communication Compliance** doesn't support the use of named entities in Exchange transport rules and data-at-rest.
-- **Microsoft Information Governance** (MIG) doesn't support the use of named entities in Exchange transport rules and data-at-rest.
+<!--- **Communication Compliance** doesn't support the use of named entities in Exchange transport rules and data-at-rest.
+- **Microsoft Information Governance** (MIG) doesn't support the use of named entities in Exchange transport rules and data-at-rest.-->
  
 ### Unified DLP
 
@@ -77,7 +79,7 @@ To create or edit a DLP policy, use the procedures in [Create, test, and tune a 
 |Office WAC clients policy tip    |supported         |
 |OWA policy tip     |not supported         |
 |Outlook policy tip     |not supported |
-|Endpoints (Windows 10 devices)     |not supported  |
+|Endpoints (Windows 10 devices)     |supported  |
 |Exchange Transport rules     |not supported |
 |OneDrive for Business data-at-rest     |supported         |
 |SharePoint Online data-at-rest     |supported         |
@@ -105,8 +107,9 @@ To create or edit a DLP policy, use the procedures in [Create, test, and tune a 
 |---------|---------|
 |DLP Policy tips (OWA, Outlook, Office Win32 clients)     |   Policy tips with entity condition will result in "no match"      |
 | Asian language support for person name (Chinese, Japanese, Korean)    | Named entities supported for Latin-based character set only (that is, kanji is not supported) for person name        |
-|Devices workload (Endpoint)     | Not supported as a workload – authoring policy with named entities will not be allowed        |
 |On-premises repositories    | Not supported as a workload|
+
+<!--|Devices workload (Endpoint)     | Not supported as a workload – authoring policy with named entities will not be allowed        |-->
 
 ## For further information
 <!-- - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)-->

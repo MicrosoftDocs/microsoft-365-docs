@@ -2,8 +2,8 @@
 title: "Tax Information"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: tugu, jmueller
 audience: Admin
@@ -16,9 +16,9 @@ ms.collection:
 search.appverid: MET150
 description: "Find out how much tax you will be charged for your Microsoft 365 for business subscription in different regions. "
 ms.custom:
+- commerce_billing
 - okr_SMB
 - AdminSurgePortfolio
-- commerce_billing
 - AdminTemplateSet
 ms.date: 03/17/2021
 ---

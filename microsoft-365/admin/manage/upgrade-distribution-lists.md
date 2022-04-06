@@ -69,9 +69,11 @@ You must be a global admin or Exchange admin to upgrade a distribution list grou
 
 Distribution lists that fail to upgrade remain unchanged.
 
-If one or more **eligible** distribution lists fail to be upgraded, open a [Support ticket](../../business-video/get-help-support.md). The issue will need to be escalated to the Groups Engineering team for them to figure out the problem.
+If one or more **eligible** distribution lists fail to be upgraded, 
 
-It's possible that the distribution list didn't get upgraded because of a service outage, but unlikely. If you want, wait a while and then try to upgrade the DL again.
+1. Use [this script](https://aka.ms/DLToM365Group) to scan for possible issues that can prevent distribution list to be upgraded to Microsoft 365 group, fix any issues reported by the script and try upgrading the distribution list one more time. 
+
+2. If the above script does not help or if the issue persists, open a [Support ticket](../../business-video/get-help-support.md). The issue will need to be escalated to the Groups Engineering team for them to figure out the problem.
 
 ## How to use PowerShell to upgrade several distribution lists at the same time
 
@@ -182,9 +184,19 @@ There are some cases in which though DL is eligible but could not be upgraded. T
 
 - DLs with **MemberJoinRestriction** or **MemberDepartRestriction** set to **Closed**, could not be upgraded
 
+- The Microsoft 365 Group creation is allowed only to few users, using the steps from [this article](/microsoft-365/solutions/manage-creation-of-groups). In this scenario, if the owner of distribution list is not allowed to create Microsoft 365 Group, the distribution list will not upgrade to Microsoft 365 Group. 
+Workaround: Use one of the following workaround for the above scenario:
+1)	Ensure all the users mentioned as owners of the DL are allowed to create M365 Group, i.e. are member of the security group that is allowed to M365 Group.
+OR
+2)	Temporarily, replace the owner of the DL that is not allowed to create M365 Group with user that is allowed to create M365 Group
+
 ### What happens to the DL if the upgrade from EAC fails?
 
 The upgrade will happen only when the call is submitted to the server. If the upgrade fails, your DLs will be intact. They will work like they used to.
+
+### What happens to message approval (moderation) settings on distribution groups after upgrading?
+
+The message approval (moderation) settings are preserved and continue to work fine after the distribution group is upgraded to a Microsoft 365 Group.
 
 ## Related content
 

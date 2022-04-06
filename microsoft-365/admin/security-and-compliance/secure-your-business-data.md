@@ -1,10 +1,10 @@
 ---
-title: "Top 10 ways to secure Microsoft 365 for business plans"
+title: Top 10 ways to secure Microsoft 365 for business plans
 f1.keywords:
 - CSH
-ms.author: sharik
-author: skjerland
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,17 +21,21 @@ ms.custom:
 - admindeeplinkDEFENDER
 - adminvideo
 - admindeeplinkEXCHANGE
+- business_assist
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
-description: "How to protect your business email and data from cyberthreats, including ransomware, phishing, and malicious attachments."
+description: "Protect your business email and data from cyberthreats, including ransomware, phishing, and malicious attachments."
 ---
 
 # Top 10 ways to secure Microsoft 365 for business plans
 
-If you are a small or medium-size organization using one of Microsoft's business plans and your type of organization is targeted by cybercriminals and hackers, use the guidance in this article to increase the security of your organization. This guidance helps your organization achieve the goals described in the Harvard Kennedy School [Cybersecurity Campaign Handbook](https://go.microsoft.com/fwlink/p/?linkid=2015598).
+If you are a small or medium-size organization using one of Microsoft's business plans, you can use the guidance in this article to increase the security of your organization. This guidance helps your organization achieve the goals described in the Harvard Kennedy School [Cybersecurity Campaign Handbook](https://go.microsoft.com/fwlink/p/?linkid=2015598).
+
+> [!TIP]
+> If you need help with the steps in this article, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
 
 ## Watch: Overview of security
 
@@ -39,59 +43,66 @@ If you are a small or medium-size organization using one of Microsoft's business
 
 Microsoft 365 Business Premium provides threat protection, data protection, and device management features to help you protect your company from online threats and unauthorized access, as well as protect and manage company data on your phones, tablets, and computers.
 
-## Complete top security tasks
+## Security tasks to complete
 
 Microsoft recommends that you complete the tasks listed in the following table that apply to your service plan.
 
 |*Number*|Task|Microsoft 365 Business Standard|Microsoft 365 Business Premium|
 |---|---|---|---|
-|1|[Set up multi-factor authentication](#1-set-up-multi-factor-authentication)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|2|[Train your users](#2-train-your-users)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|3|[Use dedicated admin accounts](#3-use-dedicated-admin-accounts)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|4|[Raise the level of protection against malware in mail](#4-raise-the-level-of-protection-against-malware-in-mail)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|5|[Protect against ransomware](#5-protect-against-ransomware)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|6|[Stop auto-forwarding for email](#6-stop-auto-forwarding-for-email)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|7|[Use Office Message Encryption](#7-use-office-message-encryption)||![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|8|[Protect your email from phishing attacks](#8-protect-your-email-from-phishing-attacks)||![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|9|[Protect against malicious attachments and files with Safe Attachments](#9-protect-against-malicious-attachments-and-files-with-safe-attachments)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|10|[Protect against phishing attacks with Safe Links](#10-protect-against-phishing-attacks-with-safe-links)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+| 1 | [Protect against lost or stolen passwords](#1-set-up-multi-factor-authentication) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
+| 2 | [Train your users](#2-train-your-users) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
+| 3 | [Use dedicated admin accounts](#3-use-dedicated-admin-accounts)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | 
+| 4 | [Protect against malware](#4-protect-against-malware) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(protection for email) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(increased protection for email and devices) |
+| 5 | [Protect against ransomware](#5-protect-against-ransomware) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(protection for email and cloud storage) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(increased protection for devices, email, and cloud storage) |
+| 6 | [Stop auto-forwarding for email](#6-stop-auto-forwarding-for-email) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
+| 7 | [Use encryption](#7-use-office-message-encryption) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
+| 8 | [Protect your email from phishing attacks](#8-protect-your-email-from-phishing-attacks) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(antiphishing protection) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(advanced antiphishing protection) |
+| 9 | [Protect against malicious attachments, files, and URLs in email and Office files](#9-protect-against-malicious-attachments-files-and-urls) | | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(Safe Links and Safe Attachments) |
+| 10 | [Increase protection for your organization's devices](#10-increase-protection-for-your-organizations-devices) | | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(enterprise-grade device protection) |
 
-If you have Microsoft Business Premium, the quickest way to setup security and begin collaborating safely is to follow the guidance in this library: [Microsoft 365 for smaller businesses and campaigns](../../campaigns/index.md). This guidance was developed in partnership with the Microsoft Defending Democracy team to protect all small business customers against cyberthreats launched by sophisticated hackers.
+If you have Microsoft Business Premium, the quickest way to setup security and begin collaborating safely is to follow the guidance in this library: [Microsoft 365 Business Premium](../../business-premium/index.md). This guidance was developed in partnership with the Microsoft Defending Democracy team to protect all small business customers against cyberthreats that are launched by sophisticated hackers.
 
-Before you begin, check your [Microsoft 365 Secure Score](../../security/defender/microsoft-secure-score.md) in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. From a centralized dashboard, you can monitor and improve the security for your Microsoft 365 identities, data, apps, devices, and infrastructure. You are given points for configuring recommended security features, performing security-related tasks (such as viewing reports), or addressing recommendations with a third-party application or software. With additional insights and more visibility into a broader set of Microsoft products and services, you can feel confident reporting about your organization's security health.
+Before you begin, check your [Microsoft 365 Secure Score](../../security/defender/microsoft-secure-score.md) in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. From a centralized dashboard, you can monitor and improve the security for your Microsoft 365 identities, data, apps, devices, and infrastructure. You are given points for configuring recommended security features, performing security-related tasks (such as viewing reports), or addressing recommendations with a third-party application or software. With added insights and more visibility into a broader set of Microsoft products and services, you can feel confident reporting about your organization's security health.
 
 ![Screenshot of Microsoft Secure Score.](../../media/secure-score.png)
 
 ## 1: Set up multi-factor authentication
 
-Using multi-factor authentication is one of the easiest and most effective ways to increase the security of your organization. It's easier than it sounds - when you log in, multi-factor authentication means you'll type a code from your phone to get access to Microsoft 365. This can prevent hackers from taking over if they know your password. Multi-factor authentication is also called 2-step verification. Individuals can add 2-step verification to most accounts easily, for example, to their Google or Microsoft accounts. Here's how to [add two-step verification to your personal Microsoft account](https://go.microsoft.com/fwlink/p/?linkid=2016403).
+Protect against lost or stolen passwords by using multifactor authentication (MFA). When multifactor authentication is set up, it requires people to use a code on their phone to sign into Microsoft 365. This extra step can prevent hackers from taking over if they know your password. 
 
-For businesses using Microsoft 365, add a setting that requires your users to log in using multi-factor authentication. When you make this change, users will be prompted to set up their phone for two-factor authentication next time they log in.
-To see a training video for how to set up MFA and how users complete the set up, see [set up MFA](set-up-multi-factor-authentication.md) and [user set up](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14).
+Multifactor authentication is also called 2-step verification. Individuals can add 2-step verification to most accounts easily, for example, to their Google or Microsoft accounts. Here's how to [add two-step verification to your personal Microsoft account](https://go.microsoft.com/fwlink/p/?linkid=2016403).
 
-To set up multi-factor authentication, you turn on Security defaults:
+For businesses using Microsoft 365, add a setting that requires your users to log in using multifactor authentication. When you make this change, users will be prompted to set up their phone for two-factor authentication next time they log in.
+To see a training video for how to set up MFA and how users complete the setup, see [set up MFA](set-up-multi-factor-authentication.md) and [user set up](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14).
 
-For most organizations, Security defaults offer a good level of additional sign-in security. For more information, see [What are security defaults?](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
+### To set up multi-factor authentication, you turn on security defaults
 
-If your subscription is new, Security defaults might already be turned on for you automatically.
+For most organizations, security defaults offer a good level of added sign-in security. For more information, see [What are security defaults?](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
+
+If your subscription is new, security defaults might already be turned on for you automatically.
 
 You enable or disable security defaults from the **Properties** pane for Azure Active Directory (Azure AD) in the Azure portal.
 
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) with global admin credentials.
+
 2. In the left nav choose **Show All** and under **Admin centers**, choose **Azure Active Directory**.
-3. In the **Azure Active Directory admin center** choose **Azure Active Directory** > **Properties**.
+
+3. In the **Azure Active Directory admin center**, choose **Azure Active Directory** > **Properties**.
+
 4. At the bottom of the page, choose **Manage Security defaults**.
+
 5. Choose **Yes** to enable security defaults or **No** to disable security defaults, and then choose **Save**.
 
 After you set up multi-factor authentication for your organization, your users will be required to set up two-step verification on their devices. For more information, see [Set up 2-step verification for Microsoft 365](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14).
 
-For full details and complete recommendations, see [Set up multi-factor authentication for users](set-up-multi-factor-authentication.md).
+> [!TIP]
+> For more details and recommendations, see [Set up multi-factor authentication for users](set-up-multi-factor-authentication.md).
 
 ## 2: Train your users
 
 The Harvard Kennedy School [Cybersecurity Campaign Handbook](https://go.microsoft.com/fwlink/p/?linkid=2015598) provides excellent guidance on establishing a strong culture of security awareness within your organization, including training users to identify phishing attacks.
 
-In addition to this guidance, Microsoft recommends that your users take the actions described in this article: [Protect your account and devices from hackers and malware](https://support.microsoft.com/office/066d6216-a56b-4f90-9af3-b3a1e9a327d6). These actions include:
+In addition, Microsoft recommends that your users take the actions described in this article: [Protect your account and devices from hackers and malware](https://support.microsoft.com/office/066d6216-a56b-4f90-9af3-b3a1e9a327d6). These actions include:
 
 - Using strong passwords
 
@@ -107,7 +118,7 @@ Microsoft also recommends that users protect their personal email accounts by ta
 
 ## 3: Use dedicated admin accounts
 
-The administrative accounts you use to administer your Microsoft 365 environment include elevated privileges. These are valuable targets for hackers and cybercriminals. Use admin accounts only for administration. Admins should have a separate user account for regular, non-administrative use and only use their administrative account when necessary to complete a task associated with their job function. Additional recommendations:
+The administrative accounts you use to administer your Microsoft 365 environment include elevated privileges. These are valuable targets for hackers and cyberattackers. Use admin accounts only for administration. Admins should have a separate user account for regular, non-administrative use and only use their administrative account when necessary to complete a task associated with their job function. Additional recommendations:
 
 - Be sure admin accounts are also set up for multi-factor authentication.
 
@@ -115,33 +126,56 @@ The administrative accounts you use to administer your Microsoft 365 environment
 
 - After completing admin tasks, be sure to log out of the browser session.
 
-## 4: Raise the level of protection against malware in mail
+## 4: Protect against malware
 
-Your Microsoft 365 environment includes protection against malware, but you can increase this protection by blocking attachments with file types that are commonly used for malware. To bump up malware protection in email, view a [short training video](increase-threat-protection.md#raise-the-level-of-protection-against-malware-in-mail), or complete the following steps:
+Your Microsoft 365 environment includes protection against malware. You can increase your malware protection by:
 
-1. Go to <https://protection.office.com> and sign in with your admin account credentials.
+- Blocking attachments with certain file types
+- Using antivirus/antimalware protection on your devices
 
-2. In the Security & Compliance Center, in the left navigation pane, under **Threat management**, choose **Policy** \> **Anti-Malware**.
+### Block attachments with certain file types
 
-3. Double-click the default policy to edit this company-wide policy.
+You can increase your malware protection by blocking attachments with file types that are commonly used for malware. To bump up malware protection in email, view a [short training video](increase-threat-protection.md#raise-the-level-of-protection-against-malware-in-mail), or complete the following steps:
 
-4. Select **Settings**.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Anti-malware** in the **Policies** section.
 
-5. Under **Common Attachment Types Filter**, select **On**. The file types that are blocked are listed in the window directly below this control. You can add or delete file types later, if needed.
+2. On the **Anti-malware** page, double-click on **Default (Default)**. A flyout appears. 
 
-6. Select **Save.**
+3. Select **Edit protection settings** at the bottom of the flyout. 
 
-For more information, see [Anti-malware protection in EOP](../../security/office-365-security/anti-malware-protection.md).
+4. In the next page, under **Protection settings**, select the checkbox next to **Enable the common attachments filter**. The file types that are blocked are listed directly below this option. To add or delete file types, select **Customize file types** at the end of the list. 
+
+5. Select **Save**. 
+
+For more information, see [Antimalware protection in EOP](../../security/office-365-security/anti-malware-protection.md).
+
+### Use antivirus and antimalware protection
+
+Microsoft Defender Antivirus provides strong antivirus and antimalware protection, and is built into the Windows operating system.
+
+If your organization is using Microsoft 365 Business Premium, you get additional device protection that includes:
+
+- Next-generation protection
+
+- Firewall protection
+
+- Web content filtering
+
+These capabilities are included in Microsoft Defender for Business, an offering that will begin rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. 
+
+[Learn more about Microsoft Defender for Business](../../security/defender-business/mdb-overview.md).
 
 ## 5: Protect against ransomware
 
 Ransomware restricts access to data by encrypting files or locking computer screens. It then attempts to extort money from victims by asking for "ransom," usually in form of cryptocurrencies like Bitcoin, in exchange for access to data.
 
+You get ransomware protection for email hosted in Microsoft 365 and for files that are stored in OneDrive. If you have Microsoft 365 Business Premium, you get additional ransomware protection for your organization's devices.
+
 You can protect against ransomware by creating one or more mail flow rules to block file extensions that are commonly used for ransomware, or to warn users who receive these attachments in email. A good starting point is to create two rules:
 
 - Warn users before opening Office file attachments that include macros. Ransomware can be hidden inside macros, so we'll warn users to not open these files from people they do not know.
 
-- Block file types that could contain ransomware or other malicious code. We'll start with a common list of executables (listed in the table below). If your organization uses any of these executable types and you expect these to be sent in email, add these to the previous rule (warn users).
+- Block file types that could contain ransomware or other malicious code. We'll start with a common list of executables (listed in the table below). If your organization uses any of these executable types and you expect them to be sent in email, add them to the previous rule (warn users).
 
 To create a mail transport rule, view a [short training video](increase-threat-protection.md#protect-against-ransomware), or complete the following steps:
 
@@ -153,7 +187,7 @@ To create a mail transport rule, view a [short training video](increase-threat-p
 
 4. Select **** at the bottom of the dialog box to see the full set of options.
 
-5. Apply the settings in the following table for each rule. Leave the rest of the settings at the default, unless you want to change these.
+5. Apply the settings in the following table for each rule. Leave the rest of the settings at the default, unless you want to change them.
 
 6. Select **Save**.
     
@@ -166,17 +200,19 @@ To create a mail transport rule, view a [short training video](increase-threat-p
 |Provide message text  <br/> |Do not open these types of files—unless you were expecting them—because the files may contain malicious code and knowing the sender isn't a guarantee of safety.  <br/> ||
    
 > [!TIP]
-> You can also add the files you want to block to the Anti-malware list in [step 4](#4-raise-the-level-of-protection-against-malware-in-mail).
+> You can also add the files you want to block to the anti-malware list in [Step 4: Protect against malware](#4-protect-against-malware).
 
 For more information, see:
 
 - [Ransomware: how to reduce risk](https://www.microsoft.com/security/blog/2020/04/28/ransomware-groups-continue-to-target-healthcare-critical-services-heres-how-to-reduce-risk/)
 
+- [Better together: Microsoft Defender Antivirus and Office 365](../../security/defender-endpoint/office-365-microsoft-defender-antivirus.md)
+
 - [Restore your OneDrive](https://support.microsoft.com/office/fa231298-759d-41cf-bcd0-25ac53eb8a15)
 
 ## 6: Stop auto-forwarding for email
 
-Hackers who gain access to a user's mailbox can exfiltrate mail by configuring the mailbox to automatically forward email. This can happen even without the user's awareness. You can prevent this from happening by configuring a mail flow rule.
+Hackers who gain access to a user's mailbox can exfiltrate mail by configuring the mailbox to automatically forward email. This issue can happen even without the user's awareness. You can prevent this from happening by configuring a mail flow rule.
 
 To create a mail transport rule:
 
@@ -194,7 +230,7 @@ To create a mail transport rule:
 
 |Setting|Reject Auto-Forward emails to external domains|
 |---|---|
-|Name|Prevent auto forwarding of email to external domains|
+|Name|Prevent auto-forwarding of email to external domains|
 |Apply this rule if ...|The sender . . . is external/internal . . . Inside the organization|
 |Add condition|The recipient . . . is external/internal . . . Outside the organization|
 |Add condition|The message properties . . . include the message type . . . Auto-forward|
@@ -211,7 +247,7 @@ Office Message Encryption provides two protection options when sending mail:
 
 - Encrypt
 
-Your organization might have configured additional options that apply a label to email, such as Confidential.
+Your organization might have configured other options that apply a label to email, such as Confidential.
 
 ### To send protected email
 
@@ -229,7 +265,8 @@ If the recipient has Outlook 2013 or Outlook 2016 and a Microsoft email account,
 
 If the recipient is using another email client or email account, such as Gmail or Yahoo, they'll see a link that lets them either sign in to read the email message or request a one-time passcode to view the message in a web browser. If users aren't receiving the email, have them check their Spam or Junk folder.
 
-For more information, see [Send, view, and reply to encrypted messages in Outlook for PC](https://support.microsoft.com/office/eaa43495-9bbb-4fca-922a-df90dee51980).
+> [!TIP]
+> For more information, see [Send, view, and reply to encrypted messages in Outlook for PC](https://support.microsoft.com/office/eaa43495-9bbb-4fca-922a-df90dee51980).
 
 ## 8. Protect your email from phishing attacks
 
@@ -237,21 +274,17 @@ If you've configured one or more custom domains for your Microsoft 365 environme
 
 We recommend that you get started with this protection by creating a policy to protect your most important users and your custom domain.
 
-![Creating an anti-phishing policy in Microsoft Defender for Office 365.](../../media/security-and-compliance-center.png)
-
 To create an anti-phishing policy in Defender for Office 365, view a [short training video](increase-threat-protection.md#protect-your-email-from-phishing-attacks), or complete the following steps:
 
-1. Go to <https://protection.office.com>.
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
 
-2. In the Security & Compliance Center, in the left navigation pane, under **Threat management**, select **Policy**.
+2. Go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Anti-phishing** in the **Policies** section.
 
-3. On the Policy page, select **Anti-phishing**.
+3. On the Anti-phishing page, select **+ Create**. A wizard launches that steps you through defining your anti-phishing policy.
 
-4. On the Anti-phishing page, select **+ Create**. A wizard launches that steps you through defining your anti-phishing policy.
+4. Specify the name, description, and settings for your policy as recommended in the chart below. For more information, see [Learn about anti-phishing policy in Microsoft Defender for Office 365 options](../../security/office-365-security/set-up-anti-phishing-policies.md).
 
-5. Specify the name, description, and settings for your policy as recommended in the chart below. See [Learn about anti-phishing policy in Microsoft Defender for Office 365 options](../../security/office-365-security/set-up-anti-phishing-policies.md) for more details.
-
-6. After you have reviewed your settings, select **Create this policy** or **Save**, as appropriate.
+5. After you have reviewed your settings, select **Create this policy** or **Save**, as appropriate.
 
 |Setting or option|Recommended setting|
 |---|---|
@@ -263,29 +296,27 @@ To create an anti-phishing policy in Defender for Office 365, view a [short trai
 |Mailbox intelligence|By default, mailbox intelligence is selected when you create a new anti-phishing policy. Leave this setting **On** for best results.|
 |Add trusted senders and domains|For this example, don't define any overrides.|
 |Applied to|Select **The recipient domain is**. Under **Any of these**, select **Choose**. Select **+ Add**. Select the check box next to the name of the domain, for example, contoso.com, in the list, and then select **Add**. Select **Done**.|
-|
 
-For more information, see [Set up anti-phishing policies in Defender for Office 365](../../security/office-365-security/configure-atp-anti-phishing-policies.md).
+> [!TIP]
+> For more information, see [Set up anti-phishing policies in Defender for Office 365](../../security/office-365-security/configure-atp-anti-phishing-policies.md).
 
-## 9: Protect against malicious attachments and files with Safe Attachments
+## 9: Protect against malicious attachments, files, and URLs
 
 People regularly send, receive, and share attachments, such as documents, presentations, spreadsheets, and more. It's not always easy to tell whether an attachment is safe or malicious just by looking at an email message. Microsoft Defender for Office 365 includes Safe Attachment protection, but this protection is not turned on by default. We recommend that you create a new rule to begin using this protection. This protection extends to files in SharePoint, OneDrive, and Microsoft Teams.
 
-To create a Safe attachment policy, view a [short training video](increase-threat-protection.md), or complete the following steps:
+### Set up Safe Attachments
 
-1. Go to <https://protection.office.com> and sign in with your admin account.
+To create a Safe Attachments policy, view a [short training video](increase-threat-protection.md), or complete the following steps:
 
-2. In the Security & Compliance Center, in the left navigation pane, under **Threat management**, select **Policy**.
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, and sign in with your admin account.
 
-3. On the Policy page, select **Safe Attachments**.
+2. Go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Anti-malware** in the **Policies** section.
 
-4. On the Safe attachments page, apply this protection broadly by selecting the **Turn on ATP for SharePoint, OneDrive, and Microsoft Teams** check box.
+3. Select **+ Create** to create a new policy.
 
-5. Select **+** to create a new policy.
+4. Apply the settings in the following table.
 
-6. Apply the settings in the following table.
-
-7. After you have reviewed your settings, select **Create this policy** or **Save**, as appropriate.
+5. After you have reviewed your settings, select **Create this policy** or **Save**, as appropriate.
 
 |Setting or option|Recommended setting|
 |---|---|
@@ -294,15 +325,15 @@ To create a Safe attachment policy, view a [short training video](increase-threa
 |Save attachments unknown malware response|Select **Block - Block the current and future emails and attachments with detected malware**.|
 |Redirect attachment on detection|Enable redirection (select this box) <br/> Enter the admin account or a mailbox setup for quarantine. <br/> Apply the above selection if malware scanning for attachments times out or error occurs (select this box).|
 |Applied to|The recipient domain is . . . select your domain.|
-|
 
-For more information, see [Set up anti-phishing policies in Defender for Office 365](../../security/office-365-security/configure-atp-anti-phishing-policies.md).
+> [!TIP]
+> For more information, see [Set up anti-phishing policies in Defender for Office 365](../../security/office-365-security/configure-atp-anti-phishing-policies.md).
 
-## 10: Protect against phishing attacks with Safe Links
+### Set up Safe Links
 
 Hackers sometimes hide malicious websites in links in email or other files. Safe Links, part of Microsoft Defender for Office 365, can help protect your organization by providing time-of-click verification of web addresses (URLs) in email messages and Office documents. Protection is defined through Safe Links policies.
 
-We recommend that you do the following:
+Do the following to protect against attacks:
 
 - Modify the default policy to increase protection.
 
@@ -310,29 +341,19 @@ We recommend that you do the following:
 
 To get to Safe Links, view a [short training video](increase-threat-protection.md#protect-against-phishing-attacks-with-safe-links), or complete the following steps:
 
-1. Go to <https://protection.office.com> and sign in with your admin account.
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, and sign in with your admin account.
 
-2. In the Security & Compliance Center, in the left navigation pane, under **Threat management**, select **Policy**.
+2. Go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Anti-malware** in the **Policies** section.
 
-3. On the Policy page, select **Safe Links**.
+3. Select **+ Create** to create a new policy, or modify the default policy.
 
 To modify the default policy:
 
-1. On the Safe links page, under **Policies that apply to the entire organization**, double-click the **Default** policy.
+1. Double-click the **Default** policy. A flyout appears. 
 
-2. Under **Settings that apply to content across Office 365**, enter a URL to be blocked, such as _example.com_, and select **+**.
+2. Select **Edit protection settings** at the bottom of the flyout.
 
-3. Under **Settings that apply to content except email**, select **Office 365 applications**, **Do not track when users click safe links**, and **Do not let users click through safe links to original URL**.
-
-4. Select **Save**.
-
-To create a new policy targeted to all recipients in your domain:
-
-1. On the Safe links page, under **Policies that apply to specific recipients**, select **+** to create a new policy.
-
-2. Apply the settings listed in the following table.
-
-3. Select **Save**.
+3. After modifying the default policy, select **Save**.
 
 |Setting or option|Recommended setting|
 |---|---|
@@ -340,9 +361,24 @@ To create a new policy targeted to all recipients in your domain:
 |Select the action for unknown potentially malicious URLs in messages|Select **On - URLs will be rewritten and checked against a list of known malicious links when user clicks on the link**.|
 |Apply real-time URL scanning for suspicious links and links that point to files|Select this box.|
 |Applied to|The recipient domain is . . . select your domain.|
-|
 
-For more information, see [Safe Links in Microsoft Defender for Office 365](../../security/office-365-security/atp-safe-links.md).
+> [!TIP]
+> For more information, see [Safe Links in Microsoft Defender for Office 365](../../security/office-365-security/atp-safe-links.md).
+
+## 10: Increase protection for your organization's devices
+
+Microsoft Defender Antivirus is built into the Windows operating system and provides good protection against viruses and malware. However, you can increase protection for your organization's devices by onboarding them to Microsoft Defender for Business, a new offering for small and medium-sized businesses like yours. With Defender for Business, your organization's devices are better protected from ransomware, malware, phishing, and other threats.
+
+**Beginning March 1, 2022, [Microsoft Defender for Business](../../security/defender-business/index.yml) capabilities are being added to Microsoft 365 Business Premium**. 
+
+
+To learn more, see the following resources:
+
+- [Overview of Microsoft Defender for Business](../../security/defender-business/mdb-overview.md)
+
+- [Set up and configure Microsoft Defender for Business](../../security/defender-business/mdb-setup-configuration.md)
+
+- [Get started using the Microsoft 365 Defender portal](../../security/defender-business/mdb-get-started.md)
 
 ## Related content
 

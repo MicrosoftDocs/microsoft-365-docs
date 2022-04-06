@@ -45,8 +45,8 @@ You can use [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) to conf
 
 6. Next to **Configuration settings**, choose **Edit**.
 
-> [!IMPORTANT]
-> AllowOnAccessProtection and AllowIntrusionPreventionSystem antivirus settings are officially being deprecated and as such cannot be configured. 
+   > [!IMPORTANT]
+   > AllowOnAccessProtection and AllowIntrusionPreventionSystem antivirus settings are officially being deprecated and as such cannot be configured. 
 
 7. Expand the **Scan** section, and review or edit your scanning settings.
 

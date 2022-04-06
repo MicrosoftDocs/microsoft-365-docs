@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Reports in the admin center - Mailbox usage"
+title: "Microsoft 365 admin center mailbox usage reports"
 ms.author: kwekua
 author: kwekua
 manager: scotv

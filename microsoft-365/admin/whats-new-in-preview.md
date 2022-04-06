@@ -46,6 +46,57 @@ And if you'd like to know what's new with other Microsoft cloud services:
 - [Office updates](/OfficeUpdates/)
 - [How to check Windows release health](/windows/deployment/update/check-release-health)
 
+## March 2022
+
+### Microsoft 365 Lighthouse GA
+
+Small and medium businesses often rely on trusted IT partners to manage their IT environments. We’re making it easier for partners to secure customers at scale with the general availability of [Microsoft 365 Lighthouse](https://aka.ms/March1SMBPartnerBlog), a multi-tenant administration portal for Managed Service Providers (MSPs). Microsoft 365 Lighthouse provides a complete experience for customers by empowering their partners to quickly identify and act on threats, anomalous sign-ins, and device compliance alerts to keep them safe.
+
+:::image type="content" source="../media/lighthouse.png" alt-text="Screenshot: Microsoft 365 Lighthouse dashboard":::
+
+Microsoft 365 Lighthouse is an IT partner service only, and it’s available to partners who are enrolled in the Cloud Solution Provider (CSP) program and are managing customers who have up to 1000 licensed users with Microsoft 365 Business Premium, Microsoft 365 E3, or Microsoft Defender for Business (in preview) subscriptions. If you’re a Microsoft CSP-enrolled IT Partner, Microsoft 365 Lighthouse is available at no cost to your organization and is designed to help your business scale and grow. Check out the [Microsoft 365 Lighthouse help library](../lighthouse/m365-lighthouse-overview.md) for more information.
+
+To get started using Microsoft 365 Lighthouse, see [Sign up for Microsoft 365 Lighthouse](../lighthouse/m365-lighthouse-sign-up.md). To learn more about Microsoft 365 Lighthouse, Defender for Business, and Microsoft 365 Business Premium, [join us for our Partner webinar series](https://aka.ms/M365MDBSeries).
+
+## February 2022
+
+### Net promoter score (NPS) survey insights
+
+You can now view NPS survey data and insights from your users in the Microsoft 365 admin center. With this new feature you can obtain actionable insights from NPS survey responses from your end users, and achieve higher end user delight by addressing any issues and concerns.
+
+In the admin center, go to **Health** > **Product feedback** > **NPS survey insights**.
+
+:::image type="content" source="../media/feedback-whatsnew.png" alt-text="Screenshot: Showing the Feedback page in the Microsoft 365 admin center":::
+
+We've identified the common themes from user feedback. Then we used machine learning models techniques to train the data sets and automatically organize the feedback into Top Topics.
+
+There are nine topics available. Look out for more topics in future updates.
+
+:::image type="content" source="../media/feedback-nine-topics.png" alt-text="Screenshot: Showning the 9 new feedback topics":::
+
+The NPS survey insight dashboard also contains these three new reports and pivots:
+
+- NPS monthly NPS trend volume for the last 12 months
+- Able to identify passives, promoters, and detractors
+- NPS volume per platform and app
+
+To provide you with a better experience using the NPS survey insight dashboard:
+
+- Encourage your end users to submit feedback
+- Confirm in-product surveys policies are enabled
+- Improve diagnosis by turning on Windows Error Reporting
+
+Learn more at [Microsoft product NPS feedback and insights for your organization](manage/manage-feedback-product-insights.md).  
+
+> [!NOTE]
+> If you're interested in joining our design sessions, send us an email at: prosight@microsoft.com
+
+### Microsoft 365 admin center video training
+
+We've updated our Microsoft 365 admin center video training. Go to the [Admin training video library](admin-video-library.yml) page to learn how to set up and manage Microsoft 365 for your business.
+
+:::image type="content" source="../media/admin-library-vid-training.png" alt-text="Screenshot: Showing the admin center video training library":::
+
 ## July 2021
 
 ### Microsoft 365 admin center search
@@ -300,10 +351,10 @@ For more information, see [Changes to update channels for Microsoft 365 Apps](/D
 
 ### New admin roles
 
-We've added some new Azure Active Directory admin roles to the <<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
+We've added some new Azure Active Directory admin roles to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
 - Hybrid identity admin role gives users permission to manage cloud provisioning and authentication services.
-- Network admin role lets users manage network locations and review network insights for Microsoft 365 Software as a Service apps.
+- Network admin role lets users manage network locations and review network insights for Microsoft 365 Software as a Service app.
 - Printer admin role grants permission to manage all aspects of printers and printer connections.
 - Printer technician is a subset of the Printer admin role where those users can register and unregister printers, and update printer status.
 To find out more about these roles, see [About admin roles](./add-users/about-admin-roles.md).
@@ -326,150 +377,3 @@ Just this month, we released a new site on docs.microsoft.com called the [Micros
 
 - **What's new in Microsoft 365 video series**: This month, we cover the new support experience in the Teams admin and Security and Compliance Centers, Planner integration with the Message Center, and the new 3x3 video layout in Microsoft Teams. 
 - The [Microsoft 365 admin center help](./index.yml) hub page was updated to help you find what you need more quickly. And if you go look at that page right now, we've added a card to inform you of important updates and changes.
-
-## April 2020
-
-### Intune roles management
-
-[April 2020](#april-2020)
-
-Well, we did it! We've taken the second step towards a unified roles experience and you can now manage Intune roles in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. You can also leverage features such as the ability to search for roles and view role permissions. This means you don’t need two separate tools to manage roles for Microsoft 365 and Intune. When you sign into the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, you’ll see that there are two pivots on the Roles page, one for Azure AD and one for Intune.
-
-![Roles page with the Intune pivot selected.](../media/MAC-WN-IntuneRoles.png)
-
-### Sync Message Center posts to Planner
-
-Starting in May, admins who are in Targeted release will start seeing the "Planner syncing" button in the message center. You can now track messages that need action, select the type of messages you'd like to track, assign messages to track as tasks, and tag messages for later attention.
-
-[Join Targeted Release](manage/release-options-in-office-365.md) to get started!
-
-### "Need help?" launched in Teams admin center & Security and Compliance centers
-
-The Teams admin center, Security center, and Compliance center are now using the same "Need help?" feature that the <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Microsoft 365 admin center</a> uses for finding help and contacting support. We've received a lot of feedback from admins that you wanted the same level of help and support and we're happy to bring that to you. Try it out and give us your feedback!
-
-#### Need chat?
-
-Our support agents have been working from home while still taking customer cases and limitations on internet bandwidth while working from home can impact customer call quality. In order to continue supporting you, we have launched live chat support option for commercial customers in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Microsoft 365 admin center</a>.
-
-While creating a service request, you'll now see chat as an option, in addition to phone and email. Select chat as a preferred channel of communication and create the request. Once you've created the  request, you can start the chat when you are ready to chat with Microsoft agents.
-
-### Teams updates
-
-With the increased usage of Teams, we've added a few features to help you manage them.
-
-- A new recommendation card on the admin center Home page shows which users have not actively used Teams for 30 days. You can send those users a training email to get them started using Teams.
-- **Bring people together with teams**: Go to **Setup** to see a new page to help you turn on Teams for licensed users and allow guest access, so you can work with external customers in Teams.
-- A Microsoft Teams card is now pinned by default to your Home page. It shows whether Teams is turned on, and if guest access is allowed. It also allows you to check the setup status for newly licensed Teams users, and check if network issues might be impacting Teams users.
-- Finally, Teams is now a step in the initial set up flow if you purchased a license that includes Teams.
-
-### Productivity score
-
-Productivity Score gives insights about how people use Microsoft cloud services and the technology experiences that support them. The score reflects your organization’s performance against employee and technology experience measures and compares your score with organizations like yours. This month, we are introducing the following new concepts to the preview experience:
-
-- Trend view of primary insights on home page and category detail pages
--Endpoint Analytics and Network Connectivity categories added to Technology Experience
-- Relevant Technology Experience insight shown in Employee Experience categories
-- New Communications category as part of Employee Experience
-- User details with organizational metadata in Employee Experience categories
-
-If you'd like to learn more, check out the blog: [Measure and improve the Microsoft 365 experience with Microsoft Productivity Score](https://techcommunity.microsoft.com/t5/microsoft-365-blog/measure-and-improve-the-microsoft-365-experience-with-microsoft/ba-p/1348618). Productivity score is currently in private preview. [Join the Productivity score private preview](https://aka.ms/productivityscorepreview) to get started.
-
-### Groups updates
-
-We've got two updates for Groups this month:
-
-- You can now edit email addresses for Office 365 groups (Also known as Groups in Outlook, and soon to be known as Microsoft 365 groups).
-- We've heard your feedback and we've added clearer error messaging for why you can't convert a group to a Microsoft Team.
-
-### Docs, videos, and training (April)
-
-**What's new in Microsoft 365 video series**: This month, we cover tips and resources to help small businesses transition to remote work including how to roll out Microsoft Teams, remote work training resources to stay connected with clients and partners, and the new Microsoft 365 Business Voice plan. [What's New in Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
-
-#### For your users
-
-- [Schedule a meeting](https://support.microsoft.com/office/943507a9-8583-4c58-b5d2-8ec8265e04e5)
-- [Join a Teams meeting](https://support.microsoft.com/office/078e9868-f1aa-4414-8bb9-ee88e9236ee4)
-- [Create an org-wide team](/microsoftteams/create-an-org-wide-team)
-- [Create a Team with guests](https://support.microsoft.com/office/fccb4fa6-f864-4508-bdde-256e7384a14f)
-- [Join a Team as a guest](/microsoftteams/guest-experience)
-- [Create a group email address](https://support.microsoft.com/office/3f73d218-52d6-4f88-a733-9ff37073ee4c)
-
-#### For admins and business owners
-
-- [Empower your small business with remote work](https://support.microsoft.com/office/9b91a85a-39b4-40a6-a590-0f9bea0ba8e6)
-- [Running a remote small business](admin-overview/sign-up-for-office-365.md)
-- [Sign up for Microsoft Business Basic]()
-- [Setting up two-factor sign-in](admin-overview/sign-up-for-office-365.md)
-
-## March 2020
-
-### Featured Feedback Fix: Improve "add user" reliability for licensing
-
-We received a lot of feedback from admins about the how hard it is to assign licenses when adding users. We've made the first update to this fix and we've migrated to a more reliable behind-the-scenes service to process those requests. And if something goes wrong, you'll now get an error message that lets you to try again.
-
-![Add user confirmation page with the error.](../media/MAC-WN-ImprovedLicensing.png)
-
-### Microsoft Teams home page card
-
-With the uptick in Teams usage, some orgs will get a pinned dashboard card that makes turning Teams on more discoverable. The card also has links to training and docs to help your org transition to remote work. Just go to the **Home** page to see the new card.
-
-![Microsoft Teams home page card.](../media/MAC-WN-TeamsCard.PNG)
-
-### Customize your organization's SharePoint mobile app theme
-
-Using the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, you can now customize your organization's theme in SharePoint mobile app for iOS and SharePoint mobile app for Android. This feature conveniently provides a mobile intranet app experience that can match your SharePoint Online for employees on the go. Theme customization includes your logo image, navigation bar color, text and icon colors, and accent colors, making for easy recognition.
-
-![Diagram mapping the admin center settings to the mobile app.](../media/MAC-WN-CustThemeSP.png)
-
-### Improvements to the "Add a group" wizard
-
-When admins created a new group - and made it a Team at they same time, they could assign owners who don't have a license that includes Teams. And that created some headaches. We've updated the wizard flow to verify that owners have a Teams license and if they don't the option to turn the group into a Team is disabled.
-
-### Microsoft 365 offerings for small and medium businesses
-
-We know that this is an announcement for next month, but we want to make sure you're prepared.
-
-Starting on April 21, we're making changes related to our Office 365 subscriptions for small and medium businesses – and to Office 365 ProPlus. These products will now use the Microsoft 365 brand.
-
-The new product names go into effect on April 21, 2020. This is a change to the product name only, and there are no pricing or feature changes at this time.
-
-|Current name |New name  |
-|---------|---------|
-|Office 365 Business Essentials     |   Microsoft 365 Business Basic      |
-|Office 365 Business Premium     |    Microsoft 365 Business Standard     |
-|Microsoft 365 Business     |    Microsoft 365 Business Premium     |
-|Office 365 Business     |    Microsoft 365 Apps for business       |
-|Office 365 ProPlus    |   Microsoft 365 apps for enterprise      |
-
-### Videos, training, and docs
-
-[What's New in Microsoft 365 web series](https://go.microsoft.com/fwlink/p/?linkid=2118096): In this month's episode, we highlight the 3-year anniversary of Microsoft Teams and cover new features including improved audio quality in online meetings, Targeted Communications for firstline managers with the Shifts app, Teams and Skype consumer interoperability, and more.
-
-## February 2020
-
-### Featured Feedback Fix: Multi-organization switcher
-
-We received a lot of feedback from partners and admins about the challenges of managing multiple Microsoft cloud orgs. One of our first multi-org management features is the **Organization switcher**, which lets you change between the orgs that you manage in just 2 clicks.
-> [!TIP]
-> You don't have to do anything to make the organization switcher appear as long as you are the Partner of record for at least one organization.
-
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, select the org name.
-![Screen capture: top of the Home page showing organization profile name with the switcher icon.](../media/MAC-Organization-switcher.png)
-
-2. In the organization switcher, select the org you want to manage.
-![Screen capture: My organizations tenant switcher with Consolidated Messenger tenant highlighted.](../media/MAC-OrgSwitcherSelected.png)
-
-That's literally it!!!
-
-### Groups
-
-A couple of changes in the groups area this month:
-
-- **Sort by group name**: You can sort the groups list alphabetically, by selecting the **Group name** column.
-- **Restore deleted Microsoft 365 groups**: You don't have to go to the Exchange admin center anymore to restore  deleted Microsoft 365 groups. Go to **Microsoft 365 admin center** \> **Groups** \> **Deleted groups** \> (select a group from the list) \> **Restore group**. It'll restore the group back to the **Groups** list and restore the group's email, conversations, notebook, files, and calendar.
-
-### Videos, training, and docs (February)
-
-- **What's new in Microsoft 365 video series**: This month, we're focused on custom search capabilities for SharePoint Online, the Office "What's New" management feature that lets you show or hide specific features from end-users via the in-app help pane, the latest security and compliance updates in Yammer, and more. Here's the latest episode: [What's New in Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
-
-- **Docs move**: We combined the Office 365 admin web articles with the Microsoft 365 content and you might've noticed the new URL. For example, this article used to be hosted at: **docs.microsoft.com/Office365/Admin/whats-new-in-preview**, but the URL is now: **docs.microsoft.com/microsoft-365/admin/whats-new-in-preview**. If you've bookmarked pages, you should update your links; however, content links will be redirected to the new content repo.

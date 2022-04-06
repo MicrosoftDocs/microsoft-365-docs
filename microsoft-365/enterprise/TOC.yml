@@ -45,8 +45,14 @@
           items: 
             - name: Overview of VPN split tunneling
               href: microsoft-365-vpn-split-tunnel.md
+            - name: Common VPN split tunneling scenarios
+              href: microsoft-365-vpn-common-scenarios.md
             - name: Implementing VPN split tunneling
               href: microsoft-365-vpn-implement-split-tunnel.md
+            - name: Securing Teams media traffic for VPN split tunneling
+              href: microsoft-365-vpn-securing-teams.md
+            - name: Stream and live events in VPN environments
+              href: microsoft-365-vpn-stream-and-live-events.md
             - name: Microsoft 365 optimization for China users
               href: microsoft-365-networking-china.md
             - name: Optimizing Microsoft 365 traffic for remote workers with the native Windows 10 VPN client
@@ -74,8 +80,6 @@
               href: microsoft-365-u-s-government-gcc-high-endpoints.md
             - name: Office 365 operated by 21Vianet endpoints
               href: urls-and-ip-address-ranges-21vianet.md
-            - name: Office 365 Germany endpoints
-              href: microsoft-365-germany-endpoints.md
         - name: Content delivery networks
           href: content-delivery-networks.md
         - name: IPv6 support in Office 365 services
@@ -115,20 +119,6 @@
               href: azure-integration.md
             - name: Azure ExpressRoute
               href: azure-expressroute.md
-        - name: Client and services app support
-          items: 
-            - name: Client and services app support
-              href: microsoft-365-client-services-app-support.md
-            - name: Certificate-based authentication
-              href: microsoft-365-client-support-certificate-based-authentication.md
-            - name: Conditional Access
-              href: microsoft-365-client-support-conditional-access.md
-            - name: Multifactor authentication
-              href: microsoft-365-client-support-multi-factor-authentication.md
-            - name: Single sign-on
-              href: microsoft-365-client-support-single-sign-on.md
-            - name: Choose between Basic Mobility Security and Intune
-              href: /office365/securitycompliance/choose-between-mdm-and-intune
         - name: Hybrid modern authentication
           items: 
             - name: Prerequisites for Skype for Business Server and Exchange Server
@@ -193,11 +183,22 @@
       items: 
         - name: Microsoft 365 service health status
           href: microsoft-365-service-health.md
-        - name: Exchange Online monitoring
-          href: microsoft-365-exchange-monitoring.md
+        - name: Microsoft 365 monitoring
+          href: microsoft-365-monitoring.md
           items:
-            - name: Mailbox utilization service alerts
-              href: microsoft-365-mailbox-utilization-service-alerts.md
+            - name: Exchange Online monitoring
+              href: microsoft-365-exchange-monitoring.md
+              items:
+                - name: Service alerts for Mailbox utilization
+                  href: microsoft-365-mailbox-utilization-service-alerts.md
+                - name: Service alerts for MRS source delays
+                  href: microsoft-365-mrs-source-delays-service-alerts.md
+                - name: Service alerts for queued messages for external recipients
+                  href: microsoft-365-external-recipient-service-alerts.md
+            - name: Microsoft 365 Apps monitoring
+              href: microsoft-365-apps-monitoring.md
+            - name: Microsoft 365 Teams monitoring
+              href: microsoft-365-teams-monitoring.md
         - name: Setup guides
           href: setup-guides-for-microsoft-365.md
     - name: Multiple tenants
@@ -271,47 +272,19 @@
           href: o365-data-locations.md
         - name: Data locations for the European Union
           href: eu-data-storage-locations.md
-        - name: Microsoft Cloud Deutschland
-          items: 
-          - name: Overview
-            href: ms-cloud-germany-transition.md
-          - name: What will change
-            href: ms-cloud-germany-transition-experience.md
-          - name: Opt-in for migration
-            href: ms-cloud-germany-migration-opt-in.md
-          - name: Pre-migration
-            href: ms-cloud-germany-transition-add-pre-work.md
-          - name: Migration phases actions and impacts
-            href: ms-cloud-germany-transition-phases.md
-          - name: Post-migration
-            href: ms-cloud-germany-transition-add-experience.md
-          - name: Additional information
-            items: 
-            - name: AD FS migration steps
-              href: ms-cloud-germany-transition-add-adfs.md
-            - name: Azure AD
-              href: ms-cloud-germany-transition-azure-ad.md
-            - name: CSPs
-              href: ms-cloud-germany-transition-add-csp.md
-            - name: Devices
-              href: ms-cloud-germany-transition-add-devices.md
-            - name: eDiscovery
-              href: ms-cloud-germany-transition-add-scc.md
 
 - name: Identity
   items: 
-    - name: Roadmap
-      href: identity-roadmap-microsoft-365.md
-    - name: Plan
+    - name: Overview
+      href: deploy-identity-solution-overview.md
+    - name: Step 1. Determine your identity model
+      href: deploy-identity-solution-identity-model.md
+    - name: Step 2. Protect your privileged accounts
+      href: protect-your-global-administrator-accounts.md
+    - name: Step 3. Protect your user accounts
+      href: microsoft-365-secure-sign-in.md
+    - name: Step 4. Deploy your identity model
       items: 
-        - name: Identity models
-          href: about-microsoft-365-identity.md
-        - name: Hybrid identity
-          href: plan-for-directory-synchronization.md
-    - name: Deploy
-      items: 
-        - name: Protect your global administrator accounts
-          href: protect-your-global-administrator-accounts.md
         - name: Cloud-only identity
           href: cloud-only-identities.md
         - name: Hybrid identity
@@ -347,8 +320,6 @@
                     href: high-availability-federated-authentication-phase-5-configure-federated-authentic.md
               - name: SharePoint Server 2013 Disaster Recovery in Microsoft Azure
                 href: sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md
-        - name: Secure user sign-ins
-          href: microsoft-365-secure-sign-in.md
     - name: Manage
       items: 
         - name: User accounts
@@ -449,8 +420,6 @@
           href: /Exchange/exchange-online
         - name: SharePoint
           href: /sharepoint/sharepoint-online
-        - name: Skype for Business
-          href: /SkypeForBusiness/skype-for-business-online
         - name: Microsoft Teams
           href: /MicrosoftTeams/Teams-overview
         - name: Yammer
@@ -470,9 +439,7 @@
         - name: Exchange Online
           href: /Exchange/exchange-online
         - name: SharePoint
-          href: https://support.office.com/article/79eb0420-8cbd-4bcb-a90b-ddc7d3ab4b3a
-        - name: Skype for Business
-          href: /SkypeForBusiness/skype-for-business-online
+          href: /sharepoint/introduction
         - name: Microsoft Teams
           href: /microsoftteams/upgrade-monitor-quality
         - name: Yammer
@@ -492,8 +459,6 @@
                   href: introduction-to-performance-tuning-for-sharepoint-online.md
                 - name: Diagnosing performance issues with SharePoint
                   href: diagnosing-performance-issues-with-sharepoint-online.md
-            - name: Tune Skype for Business Online performance
-              href: tune-skype-for-business-online-performance.md
             - name: Tune Project Online performance
               href: /ProjectOnline/tune-project-online-performance
             - name: Performance troubleshooting plan
@@ -624,13 +589,6 @@
           href: retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-ac.md
     - name: Manage Microsoft Teams
       href: /microsoftteams/teams-powershell-install
-    - name: Manage Skype for Business Online
-      href: manage-skype-for-business-online-with-microsoft-365-powershell.md
-      items: 
-        - name: Manage Skype for Business Online policies
-          href: manage-skype-for-business-online-policies-with-microsoft-365-powershell.md
-        - name: Assign per-user Skype for Business Online policies
-          href: assign-per-user-skype-for-business-online-policies-with-microsoft-365-powershell.md
     - name: Manage add-ins with Centralized Deployment PowerShell
       href: use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md
 

@@ -1,5 +1,5 @@
 ---
-title: Respond to and mitigate threats in Microsoft Defender for Business (preview)
+title: Respond to and mitigate threats in Microsoft Defender for Business
 description: As threats are detected, you can take actions to respond to and mitigate those threats.
 search.appverid: MET150
 author: denisebmsft
@@ -7,25 +7,33 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: how-to
-ms.date: 12/13/2021
+ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
-localization_priority: Normal
-ms.reviewer: inbadian, shlomiakirav
+ms.localizationpriority: medium
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
 - M365-security-compliance
+- m365-initiative-defender-business
 ---
 
-# Respond to and mitigate threats in Microsoft Defender for Business (preview)
+# Respond to and mitigate threats in Microsoft Defender for Business
 
 > [!IMPORTANT]
-> Microsoft Defender for Business is now in preview, and will roll out gradually to customers and IT Partners who [sign-up here](https://aka.ms/mdb-preview) to request it. We will onboard an initial set of customers and partners in the coming weeks and will expand the preview leading up to general availability. Note that preview will launch with an [initial set of scenarios](mdb-tutorials.md#try-these-preview-scenarios), and we will be adding capabilities regularly.
+> Microsoft Defender for Business is rolling out to [Microsoft 365 Business Premium](../../business-premium/index.md) customers, beginning March 1, 2022. Defender for Business as a standalone subscription is in in preview, and will roll out gradually to customers and IT Partners who [sign-up here](https://aka.ms/mdb-preview) to request it. Preview includes an [initial set of scenarios](mdb-tutorials.md#try-these-preview-scenarios), and we will be adding capabilities regularly.
 > 
 > Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. 
 
-The Microsoft 365 Defender portal enables your security team to respond to and mitigate detected threats.
+The Microsoft 365 Defender portal enables your security team to respond to and mitigate detected threats. This article walks you through an example of how you can use Defender for Business.
+
+>
+> **Got a minute?**
+> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about Microsoft Defender for Business</a>. We'd love to hear from you!
+>
+
+## View detected threats
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
@@ -53,6 +61,6 @@ The Microsoft 365 Defender portal enables your security team to respond to and m
 
 - [Review remediation actions in the Action center](mdb-review-remediation-actions.md)
 
-- [Manage devices in Microsoft Defender for Business (preview)](mdb-manage-devices.md)
+- [Manage devices in Microsoft Defender for Business](mdb-manage-devices.md)
 
-- [View and manage incidents in Microsoft Defender for Business (preview)](mdb-view-manage-incidents.md)
+- [View and manage incidents in Microsoft Defender for Business](mdb-view-manage-incidents.md)

@@ -49,16 +49,16 @@ Windows Server 2008 R2|Yes|Yes|Yes|Yes|Yes
 Windows Server 2012 R2|Yes|Yes|Yes|Yes|Yes
 Windows Server 2016|Yes|Yes|Yes|Yes|Yes
 Windows Server 2019|Yes|Yes|Yes|Yes|Yes
-Windows Server 2022|Yes|Yes|Yes|Yes|Yes
+Windows Server 2022|Yes|Yes|Yes|Not supported|Yes
 macOS 10.14 "Mojave" and above|Yes|Yes|Yes|Yes|Yes 
-Red Hat Enterprise Linux 7.2 or higher (\* See "Important" notice below)|Yes|Yes|Yes|Yes|Yes
+Red Hat Enterprise Linux 7.2 or higher including matching EUS releases (\* See "Important" notice below)|Yes|Yes|Yes|Yes|Yes
 CentOS 7.2 or higher|Yes|Yes|Yes|Yes|Yes
 Ubuntu 16.04 LTS or higher LTS|Yes|Yes|Yes|Yes|Yes
 Oracle Linux 7.2 or higher|Yes|Yes|Yes|Yes|Yes
 SUSE Linux Enterprise Server 12 or higher|Yes|Yes|Yes|Yes|Yes
-Linux Debian 9 or higher (in preview)|Yes|Yes|Yes|Yes|Yes
-Android 6.0 or higher (in preview)|Yes|Yes|Not supported|Not supported|Not supported
-iOS 12.0 or higher (in preview)|Yes|Not supported|Not supported|Not supported|Not supported
+Linux Debian 9 or higher|Yes|Yes|Yes|Yes|Yes
+Android 6.0 or higher|Yes|Yes|Not supported|Not supported|Not supported
+iOS 12.0 or higher|Yes|Not supported|Not supported|Not supported|Not supported
 
 > [!NOTE]
 > Some features are not available for down-level Operating System, check the Microsoft 365 Defender Portal for more details on supported OS.

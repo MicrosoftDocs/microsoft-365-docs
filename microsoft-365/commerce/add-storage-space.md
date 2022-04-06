@@ -2,8 +2,8 @@
 title: "Add more SharePoint storage to your subscription"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: drjones, jmueller
 audience: Admin
@@ -15,11 +15,13 @@ ms.collection:
 - Adm_O365
 - SPO_Content
 ms.custom:
+- commerce_purchase
 - MAX_CampaignID
 - okr_SMB
 - AdminSurgePortfolio
-- commerce_purchase
+- business_assist
 - AdminTemplateSet
+- admindeeplinkSPO
 search.appverid: MET150
 description: "Add file storage in your Microsoft 365 subscription. With extra file storage, you can store more content in SharePoint."
 ms.date: 04/02/2021
@@ -32,13 +34,16 @@ If you start to run out of storage for your SharePoint sites, you can add storag
 > If you bought your subscription through Volume Licensing or a CSP, you can't buy **Office 365 Extra File Storage** for your organization directly from Microsoft. Contact your representative or partner for help.
 > For information about OneDrive storage, see [Set the default storage space for OneDrive users](/onedrive/set-default-storage-space).
 
+> [!TIP]
+> If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
+
 ## Before you begin
 
 You must be a Global or SharePoint admin to do the tasks in this article. For more information, see [About admin roles](../admin/add-users/about-admin-roles.md).
 
 ## View available storage
 
-1. In the SharePoint admin center, go to the <a href="https://admin.microsoft.com/sharepoint?page=siteManagement&modern=true" target="_blank">Active sites</a> page, and sign in with an account that has [admin permissions](/sharepoint/sharepoint-admin-role) for your organization.
+1. In the SharePoint admin center, go to <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites**</a>, and sign in with an account that has [admin permissions](/sharepoint/sharepoint-admin-role) for your organization.
 
 2. In the upper right of the page, see the amount of storage used across all sites, and the total storage for your subscription. If your organization has configured Multi-Geo in Office 365, the bar also shows the amount of storage used across all geo locations.
 

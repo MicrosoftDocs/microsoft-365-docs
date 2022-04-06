@@ -11,7 +11,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+  - M365-security-compliance
+  - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
 ---
@@ -30,43 +32,13 @@ There are some minimum requirements for onboarding devices to the service. Learn
 
 > [!TIP]
 >
-> - This article describes the minimum requirements for Microsoft Defender for Endpoint Plan 2. If you are looking for information about Defender for Endpoint Plan 1 (preview), see [Requirements for Defender for Endpoint Plan 1 (preview)](mde-p1-setup-configuration.md#review-the-requirements).
+> - This article describes the minimum requirements for Microsoft Defender for Endpoint Plan 2. If you are looking for information about Defender for Endpoint Plan 1, see [Requirements for Defender for Endpoint Plan 1](mde-p1-setup-configuration.md#review-the-requirements).
 > - Learn about the latest enhancements in Defender for Endpoint: [Defender for Endpoint Tech Community](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced).
 > - Defender for Endpoint demonstrated industry-leading optics and detection capabilities in the recent MITRE evaluation. Read: [Insights from the MITRE ATT&CK-based evaluation](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
 
 ## Licensing requirements
+For information licensing requirements for Microsoft Defender for Endpoint, see [Microsoft Defender for Endpoint licensing information](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-endpoint).
 
-Microsoft Defender for Endpoint requires one of the following Microsoft volume licensing offers:
-
-- Windows 11 Enterprise E5
-- Windows 11 Education A5
-- Windows 10 Enterprise E5
-- Windows 10 Education A5
-- Microsoft 365 E5 (M365 E5) which includes Windows 10 Enterprise E5 or Windows 11 Enterprise E5
-- Microsoft 365 A5 (M365 A5) 
-- Microsoft 365 E3 (M365 E3) with Enterprise Mobility + Security E5 Add-on
-- Microsoft 365 Business Premium when purchased from a [Microsoft Cloud Solution Provider](https://partner.microsoft.com/membership/cloud-solution-provider/find-a-provider)
-- Microsoft 365 E5 Security
-- Microsoft 365 A5 Security
-- Microsoft Defender for Endpoint
-
-> [!NOTE]
-> Eligible licensed users may use Microsoft Defender for Endpoint on up to five concurrent devices.
-> Microsoft Defender for Endpoint is also available for purchase from a Cloud Solution Provider (CSP).
-> RDSH VMs do not require a separate Defender for Endpoint license.
-
-Microsoft Defender for Endpoint for servers requires one of the following licensing options:
-
-- [Microsoft Defender for Cloud with enhanced security features enabled](/azure/security-center/enable-enhanced-security)
-- Microsoft Defender for Endpoint for Server (one per covered server)
-
-> [!NOTE]
-> Customers may acquire server licenses (one per covered server Operating System Environment (OSE)) for Microsoft Defender for Endpoint for Servers if they have a combined minimum of 50 licenses for one or more of the following user licenses:
->
-> - Microsoft Defender for Endpoint
-> - Windows E5/A5
-> - Microsoft 365 E5/A5
-> - Microsoft 365 E5/A5 Security
 
 For detailed licensing information, see the [Product Terms site](https://www.microsoft.com/licensing/terms/) and work with your account team to learn more about the terms and conditions.
 
@@ -96,6 +68,11 @@ Access to Defender for Endpoint is done through a browser, supporting the follow
 - Windows 11 Pro Education
 - Windows 10 Enterprise
 - [Windows 10 Enterprise LTSC 2016 (or later)](/windows/whats-new/ltsc/)
+- Windows 10 Enterprise IoT
+
+    >[!NOTE]
+    >While Windows 10 IoT Enterprise is a supported OS in Microsoft Defender for Endpoint and enables OEMs/ODMs to distribute it as part of their product or solution, customers should follow the OEM/ODM's guidance around host-based installed software and supportability.
+
 - Windows 10 Education
 - Windows 10 Pro
 - Windows 10 Pro Education
@@ -112,6 +89,9 @@ Devices on your network must be running one of these editions.
 
 The hardware requirements for Defender for Endpoint on devices are the same for the supported editions.
 
+> Cores: 2 minimum, 4 preferred
+> Memory: 1 GB minimum, 4 preferred
+
 For more information on supported versions of Windows 10, see (/windows/release-health/release-information).
 
 > [!NOTE]
@@ -120,6 +100,13 @@ For more information on supported versions of Windows 10, see (/windows/release-
 > Virtual Machines running Windows 10 Enterprise 2016 LTSB may encounter performance issues if run on non-Microsoft virtualization platforms.
 >
 > For virtual environments, we recommend using Windows 10 Enterprise LTSC 2019 or later.
+
+When components are up-to-date on Microsoft Windows operating systems, Microsoft Defender for Endpoint support will follow the respective operating system's lifecycle. For more information, see [Lifecycle FAQ](/lifecycle/faq/general-lifecycle). New features or capabilities are typically provided only on operating systems that have not yet reached the end of their lifecycle. Security intelligence updates (definition and engine updates) and detection logic will continue to be provided until at least:
+
+- The [end of support date](/lifecycle/products/) (for operating systems that do not have an Extended Security Updates (ESU) program).
+- The [end of ESU date](/lifecycle/faq/extended-security-updates) (for operating systems that have an ESU program).
+
+
 
 ### Other supported operating systems
 
@@ -162,7 +149,7 @@ By default, this service is enabled. It's good practice to check to ensure that 
 
    If the service is enabled, then the result should look like the following screenshot:
 
-   ![Result of the sc query command for diagtrack.](images/windefatp-sc-qc-diagtrack.png)
+   :::image type="content" source="images/windefatp-sc-qc-diagtrack.png" alt-text="Result of the sc query command for diagtrack" lightbox="images/windefatp-sc-qc-diagtrack.png":::
 
 You'll need to set the service to automatically start if the **START_TYPE** isn't set to **AUTO_START**.
 

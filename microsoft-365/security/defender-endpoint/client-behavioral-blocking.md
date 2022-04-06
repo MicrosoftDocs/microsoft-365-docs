@@ -1,6 +1,6 @@
 ---
 title: Client behavioral blocking
-description: Client behavioral blocking is part of behavioral blocking and containment capabilities in Microsoft Defender for Endpoint
+description: Client behavioral blocking is part of behavioral blocking and containment capabilities at Microsoft Defender for Endpoint
 keywords: behavioral blocking, rapid protection, client behavior, Microsoft Defender for Endpoint
 ms.pagetype: security
 author: denisebmsft
@@ -14,9 +14,7 @@ ms.localizationpriority: medium
 ms.custom:
   - next-gen
   - edr
-ms.collection:
-  - m365-security-compliance
-  - m365initiative-defender-endpoint
+ms.collection: m365-security-compliance
 ms.technology: mde
 ---
 
@@ -32,7 +30,7 @@ ms.technology: mde
 
 Client behavioral blocking is a component of [behavioral blocking and containment capabilities](behavioral-blocking-containment.md) in Defender for Endpoint. As suspicious behaviors are detected on devices (also referred to as clients or endpoints), artifacts (such as files or applications) are blocked, checked, and remediated automatically.
 
-:::image type="content" alt-text="Cloud and client protection." source="images/pre-execution-and-post-execution-detection-engines.png" lightbox="images/pre-execution-and-post-execution-detection-engines.png":::
+:::image type="content" source="images/pre-execution-and-post-execution-detection-engines.png" alt-text="Cloud and client protection" lightbox="images/pre-execution-and-post-execution-detection-engines.png":::
 
 Antivirus protection works best when paired with cloud protection.
 
@@ -40,7 +38,7 @@ Antivirus protection works best when paired with cloud protection.
 
 [Microsoft Defender Antivirus](microsoft-defender-antivirus-in-windows-10.md) can detect suspicious behavior, malicious code, fileless and in-memory attacks, and more on a device. When suspicious behaviors are detected, Microsoft Defender Antivirus monitors and sends those suspicious behaviors and their process trees to the cloud protection service. Machine learning differentiates between malicious applications and good behaviors within milliseconds, and classifies each artifact. In almost real time, as soon as an artifact is found to be malicious, it's blocked on the device.
 
-Whenever a suspicious behavior is detected, an [alert](alerts-queue.md) is generated, and is visible in the [Microsoft 365 Defender portal](microsoft-defender-security-center.md) (formerly Microsoft 365 Defender).
+Whenever a suspicious behavior is detected, an [alert](alerts-queue.md) is generated, and is visible in the While the attack was detected and stopped, alerts, such as an "initial access alert," were triggered and appeared in the [Microsoft 365 Defender portal](/microsoft-365/security/defender/microsoft-365-defender) (formerly Microsoft 365 Defender).
 
 Client behavioral blocking is effective because it not only helps prevent an attack from starting, it can help stop an attack that has begun executing. And, with [feedback-loop blocking](feedback-loop-blocking.md) (another capability of behavioral blocking and containment), attacks are prevented on other devices in your organization.
 

@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 12/03/2021
+ms.date: 01/04/2022
 ms.reviewer: ksarens, jtoole, pahuijbr
 manager: dansimp
 ms.technology: mde
@@ -73,9 +73,9 @@ The following table lists commonly used Group Policy settings that are available
 |MAPS|Configure local setting override for reporting to Microsoft MAPS|[Prevent or allow users to locally modify policy settings](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
 |MpEngine|Configure extended cloud check|[Configure the cloud block timeout period](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md)|
 |MpEngine|Select cloud protection level|[Specify the cloud-delivered protection level](specify-cloud-protection-level-microsoft-defender-antivirus.md)|
-|Network inspection system|Specify additional definition sets for network traffic inspection|[Specify additional definition sets for network traffic inspection](specify-additional-definitions-network-traffic-inspection-mdav.md)|
-|Network inspection system|Turn on definition retirement|[Configure definition retirement](turn-on-definition-retirement.md)|
-|Network inspection system|Turn on protocol recognition|[Turn on protocol recognition](turn-on-protocol-recognition.md)|
+|Network inspection system|Specify additional definition sets for network traffic inspection| Not used (deprecated) |
+|Network inspection system|Turn on definition retirement| Not used (deprecated)|
+|Network inspection system|Turn on protocol recognition| Not used (deprecated)|
 |Quarantine|Configure local setting override for the removal of items from Quarantine folder|[Prevent or allow users to locally modify policy settings](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
 |Quarantine|Configure removal of items from Quarantine folder|[Configure remediation for Microsoft Defender Antivirus scans](configure-remediation-microsoft-defender-antivirus.md)|
 |Real-time protection|Configure local setting override for monitoring file and program activity on your computer|[Prevent or allow users to locally modify policy settings](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
@@ -95,7 +95,7 @@ The following table lists commonly used Group Policy settings that are available
 |Remediation|Specify the day of the week to run a scheduled full scan to complete remediation|[Configure scheduled Microsoft Defender Antivirus scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md)|
 |Remediation|Specify the time of day to run a scheduled full scan to complete remediation|[Configure scheduled Microsoft Defender Antivirus scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md)|
 |Reporting|Turn off enhanced notifications|[Configure the notifications that appear on endpoints](configure-notifications-microsoft-defender-antivirus.md)
-|Root|Turn off Microsoft Defender Antivirus|Not used (This setting must be set to **Not configured** to ensure any installed third-party antivirus apps work correctly)
+|Root|Turn off Microsoft Defender Antivirus|Not used. If you're using or planning to use a non-Microsoft antivirus product, see [Microsoft Defender Antivirus compatibility with other security products](microsoft-defender-antivirus-compatibility.md).|
 |Root|Define addresses to bypass proxy server|[Configure device proxy and Internet connectivity settings](configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus)|
 |Root|Define proxy autoconfig (.pac) for connecting to the network|[Configure device proxy and Internet connectivity settings](configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus)|
 |Root|Define proxy server for connecting to the network|[Configure device proxy and Internet connectivity settings](configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus)|

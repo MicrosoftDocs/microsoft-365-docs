@@ -206,6 +206,17 @@ You can choose the following options for this setting:
    ![Custom range.](../media/content-understanding/custom-file.png)
 
     In the viewer, you can manually adjust the select box to include the location where the phase occurs. For this setting, you need to select a **Start** and an **End** position. These values represent the number of tokens from the beginning of the document. While you can manually enter in these values, it's easier to manually adjust the select box in the viewer.
+    
+## Considerations when configuring explanations
+When training a classifier there a few things to keep in mind that will produce more predictable results:
+
+- The more documents you train with, the more accurate the classifier will be.  When possible, use more than 5 good documents and use more than 1 bad document.  If the libraries you’re working with have several different document types in it, several of each type lead to more predictable results.
+- Labeling the document plays an important role in the training process.  They are used together with explanations to train the model.  You may see some anomalies when training a classifier with documents that don’t have a lot of content in them.  The explanation may not match anything in the document but since it was labeled as a “good” document you may see it be a match during training.
+- When creating explanations, it uses OR logic in combination with the label to determine if it is a match.  Regular expression that uses AND logic may be more predictable.  Here is a sample regular expression to use on real documents as your training them.  Note the text highlighted in red is the phrase(s) you would be looking for.
+
+    <pre>(?=.*network provider)(?=.*participating providers).*</pre>
+    
+- Labels and explanations work together and are used in training the model.  It’s not a series of rules that can be de-coupled and precise weights or prediction applied to each variable that has been configured.  The greater the variation of documents used in the training will provide more accuracy in the model.
 
 ### See also
 

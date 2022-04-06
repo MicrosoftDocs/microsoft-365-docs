@@ -84,7 +84,7 @@ High-level workflow for event-driven retention:
 
 ### Step 1: Create a label whose retention period is based on an event
 
-To create and configure your retention label, see the instructions for [Create retention labels](./create-apply-retention-labels.md#step-1-create-retention-labels). But specific to event-based retention, on the **Define retention settings** page of the Create retention label wizard, after **Start the retention period based on**, select one of the default event types from the dropdown list, or create your own by selecting **Create new event type**:
+To create and configure your retention label, see the instructions for [Create retention labels](file-plan-manager.md#create-retention-labels) for records management, or [How to create retention labels for information governance](create-retention-labels-information-governance.md). But specific to event-based retention, on the **Define retention settings** page when you create the retention label, after **Start the retention period based on**, select one of the default event types from the dropdown list, or create your own by selecting **Create new event type**:
 
 ![Create a new event type for a retention label.](../media/SPRetention6.png)
 
@@ -115,7 +115,7 @@ Back on the **Define retention settings** page, for **Start the retention period
 ### Step 3: Publish or auto-apply the event-based retention labels
 
 Just like any retention label, you need to publish or auto-apply an event-based label, for it to be manually or automatically applied to content:
-- [Create retention labels and apply them in apps](create-apply-retention-labels.md)
+- [Publish retention labels and apply them in apps](create-apply-retention-labels.md)
 - [Apply a retention label to content automatically](apply-retention-labels-automatically.md)
 
 ### Step 4: Enter an asset ID
@@ -166,7 +166,7 @@ Finally, choose the date when the event occurred; this date is used as the start
 
 After creating an event, the retention settings take effect for the content that's already labeled and indexed. If the retention label is added to new content after the event is created, you must create a new event with the same details.
 
-Deleting an event doesn't cancel the retention settings that are now in effect for the content that's already labeled. To do that, create a new event with the same details, but leave the date blank. 
+Deleting an event doesn't cancel the retention settings that are now in effect for the content that's already labeled. Currently, you can't cancel events after they're triggered.
 
 ## Use Content Search to find all content with a specific label or asset ID
 

@@ -2,11 +2,11 @@
 title: "Understand subscriptions and licenses in Microsoft 365 for business"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: micurn, nicholak
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 ms.localizationpriority: medium
@@ -14,10 +14,10 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom: 
+- commerce_licensing
 - okr_smb
 - AdminSurgePortfolio
 - manage_licenses
-- commerce_licensing
 - AdminTemplateSet
 search.appverid: MET150
 description: "The applications and services that you receive depend on which Microsoft 365 product you purchased, such as Microsoft 365 Apps for business."
@@ -65,7 +65,7 @@ The following table lists what automatically happens when you assign a license t
 |Exchange Online  <br/> |A mailbox is created for that person. <br/> To learn about the SLA for this task to be completed, see ["Setting up..." messages in the Microsoft 365 admin center](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center). |
 |SharePoint Online  <br/> |Edit permissions to the default SharePoint Online team site are assigned to that person.  <br/> |
 |Skype for Business Online  <br/> |The person has access to the features associated with the license.  <br/> |
-|Microsoft 365 Apps for enterprise  <br/> |The person can download Office apps on up to five Macs or PCs, five tablets, and five smartphones.  <br/> |
+|Microsoft 365 Apps for enterprise and Microsoft 365 Apps for business  <br/> |The person can download Office apps on up to five Macs or PCs, five tablets, and five smartphones.  <br/> |
 
 ## Understand licenses for non-user mailboxes
 
