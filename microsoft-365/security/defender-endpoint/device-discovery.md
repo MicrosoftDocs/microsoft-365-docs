@@ -146,7 +146,7 @@ Device discovery leverages Microsoft Defender for Endpoint onboarded devices as 
 
 New events are Transmission Control Protocol (TCP) connections-based and will fit to the current DeviceNetworkEvents scheme. TCP ingress to the Microsoft Defender for Endpoint enabled device from a non-Microsoft Defender for Endpoint enabled.
 
-You can try the example query below to return details on the ActionTypes:
+You can try this example query to return details on:
 
 - **ConnectionAttempt**  - an attempt to establish a TCP connection (syn)
 - **ConnectionAcknowledged** - an acknowledgment that a TCP connection was accepted (syn\ack)
