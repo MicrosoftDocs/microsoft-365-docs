@@ -1,5 +1,5 @@
 ---
-title: "BitLocker for Encryption"
+title: "BitLocker for encryption"
 f1.keywords:
 - NOCSH
 ms.author: krowley

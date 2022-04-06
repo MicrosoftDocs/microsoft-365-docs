@@ -1,5 +1,5 @@
 ---
-title: "Create and run a Content search in the Microsoft 365 compliance center"
+title: "Create a Content search in the Microsoft 365 compliance center"
 f1.keywords:
 - NOCSH
 ms.author: markjjo

@@ -1,5 +1,5 @@
 ---
-title: "Learn about the default data loss prevention policy in Microsoft Teams (preview)"
+title: "Learn about the default DLP policy in Microsoft Teams (preview)"
 f1.keywords:
 - NOCSH
 ms.author: chrfox

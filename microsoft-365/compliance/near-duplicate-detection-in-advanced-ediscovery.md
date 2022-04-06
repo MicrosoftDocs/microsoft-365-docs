@@ -1,5 +1,5 @@
 ---
-title: Near duplicate detection - eDiscovery
+title: Near duplicate detection in eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo

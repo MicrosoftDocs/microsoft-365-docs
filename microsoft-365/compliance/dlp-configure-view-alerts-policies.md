@@ -1,5 +1,5 @@
 ---
-title: "Configure and view alerts for data loss prevention policies"
+title: "Configure and view alerts for DLP policies"
 f1.keywords:
 - CSH
 ms.author: chrfox

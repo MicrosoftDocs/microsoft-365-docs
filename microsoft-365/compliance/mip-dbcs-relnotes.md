@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 compliance support for double byte character set release notes"
+title: "Release notes: Microsoft 365 compliance support for double-byte character sets"
 ms.author: chrfox
 author: chrfox
 manager: laurawi

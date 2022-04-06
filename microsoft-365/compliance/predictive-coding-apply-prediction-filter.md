@@ -1,5 +1,5 @@
 ---
-title: "Apply the prediction score filter to items in a review set"
+title: "Apply the prediction score filter to a review set"
 f1.keywords:
 - NOCSH
 ms.author: markjjo

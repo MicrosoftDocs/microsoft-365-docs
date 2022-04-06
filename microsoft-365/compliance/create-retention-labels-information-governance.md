@@ -1,5 +1,5 @@
 ---
-title: "Create retention labels for exceptions to your retention policies"
+title: "Create retention labels for exceptions"
 f1.keywords:
 - NOCSH
 ms.author: cabailey

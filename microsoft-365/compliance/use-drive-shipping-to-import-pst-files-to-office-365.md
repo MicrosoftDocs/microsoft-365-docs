@@ -1,5 +1,5 @@
 ---
-title: "Use drive shipping to import your organization's PST files"
+title: "Use drive shipping to import PST files"
 f1.keywords:
 - NOCSH
 ms.author: markjjo

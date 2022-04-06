@@ -1,5 +1,5 @@
 ---
-title: Search the mailbox & OneDrive for Business site for a list of users with Content Search
+title: Use Content Search for a list of users on the mailbox & OneDrive for Business site
 f1.keywords:
 - NOCSH
 ms.author: markjjo

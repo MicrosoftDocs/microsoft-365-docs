@@ -1,5 +1,5 @@
 ---
-title: Delete items in the Recoverable Items folder of cloud mailbox's on hold
+title: Delete items in the Recoverable Items folder
 f1.keywords:
 - NOCSH
 ms.author: markjjo

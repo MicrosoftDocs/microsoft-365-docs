@@ -1,5 +1,5 @@
 ---
-title: "Use sensitivity labels to configure the default sharing link type for sites and documents in SharePoint and OneDrive"
+title: "Use sensitivity labels to configure the default sharing link type"
 f1.keywords:
 - NOCSH
 ms.author: cabailey

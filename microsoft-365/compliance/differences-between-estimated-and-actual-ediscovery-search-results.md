@@ -1,5 +1,5 @@
 ---
-title: "Differences between estimated and actual eDiscovery search results"
+title: "Estimated and actual eDiscovery search results"
 f1.keywords:
 - NOCSH
 ms.author: markjjo

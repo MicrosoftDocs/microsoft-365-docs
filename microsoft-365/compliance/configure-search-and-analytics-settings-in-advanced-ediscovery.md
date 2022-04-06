@@ -1,5 +1,5 @@
 ---
-title: Configure search and analytics settings - Advanced eDiscovery
+title: Configure search and analytics settings in Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo

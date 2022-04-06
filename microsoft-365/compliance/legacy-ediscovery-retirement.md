@@ -1,5 +1,5 @@
 ---
-title: "Retirement of legacy eDiscovery tools"
+title: "Legacy eDiscovery tools retired"
 f1.keywords:
 - NOCSH
 ms.author: markjjo

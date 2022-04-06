@@ -1,5 +1,5 @@
 ---
-title: "Learn about the default labels and policies for Microsoft Information Protection"
+title: "Default labels and policies for Microsoft Information Protection"
 f1.keywords:
 - CSH
 ms.author: cabailey

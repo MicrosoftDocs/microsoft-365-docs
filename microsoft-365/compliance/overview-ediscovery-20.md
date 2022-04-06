@@ -1,5 +1,5 @@
 ---
-title: "Overview of the Advanced eDiscovery solution in Microsoft 365"
+title: "Overview of the Advanced eDiscovery solution"
 f1.keywords:
 - NOCSH
 ms.author: markjjo

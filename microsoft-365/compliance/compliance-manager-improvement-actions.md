@@ -1,5 +1,5 @@
 ---
-title: "Working with improvement actions in Microsoft Compliance Manager"
+title: "Improvement actions in Microsoft Compliance Manager"
 f1.keywords:
 - NOCSH
 ms.author: chvukosw

@@ -1,5 +1,5 @@
 ---
-title: Use file plan to manage retention labels throughout the content lifecycle
+title: Use file plan to manage retention labels
 f1.keywords:
 - NOCSH
 ms.author: cabailey

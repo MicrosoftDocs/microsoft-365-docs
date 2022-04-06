@@ -1,5 +1,5 @@
 ---
-title: "Records Management in Microsoft 365"
+title: "Records management in Microsoft 365"
 f1.keywords:
 - NOCSH
 ms.author: cabailey

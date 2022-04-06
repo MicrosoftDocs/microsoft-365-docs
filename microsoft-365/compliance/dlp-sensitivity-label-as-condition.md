@@ -1,5 +1,5 @@
 ---
-title: "Use sensitivity labels as conditions in DLP policies"
+title: "Use sensitivity labels in DLP policies"
 f1.keywords:
 - CSH
 ms.author: chrfox

@@ -1,5 +1,5 @@
 ---
-title: "Redirection of users from the Office 365 Security and Compliance center to the Microsoft 365 compliance center"
+title: "Redirection of users from the Office 365 Security & Compliance center to Microsoft 365 compliance center"
 f1.keywords:
 - NOCSH
 ms.author: robmazz

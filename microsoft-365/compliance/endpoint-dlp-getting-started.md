@@ -1,5 +1,5 @@
 ---
-title: "Get started with Microsoft 365 Endpoint data loss prevention"
+title: "Get started with Microsoft 365 Endpoint DLP"
 f1.keywords:
 - CSH
 ms.author: chrfox

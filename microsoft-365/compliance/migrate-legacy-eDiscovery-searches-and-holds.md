@@ -1,5 +1,5 @@
 ---
-title: "Migrate legacy eDiscovery searches and holds to the Microsoft 365 compliance center"
+title: "Migrate legacy eDiscovery searches and holds"
 f1.keywords:
 - NOCSH
 ms.author: markjjo

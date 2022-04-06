@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Compliance Manager"
+title: "What is Microsoft Compliance Manager?"
 f1.keywords:
 - NOCSH
 ms.author: chvukosw

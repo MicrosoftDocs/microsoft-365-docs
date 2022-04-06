@@ -1,5 +1,5 @@
 ---
-title: Learn about and configure insider risk management browser signal detection
+title: Configure insider risk management browser signal detection
 description: Learn about insider risk management browser signal detection in Microsoft 365
 keywords: Microsoft 365, insider risk management, risk management, compliance
 ms.localizationpriority: medium

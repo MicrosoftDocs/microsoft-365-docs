@@ -1,5 +1,5 @@
 ---
-title: "Add your organization brand to your encrypted messages"
+title: "Add your brand to encrypted messages"
 f1.keywords:
 - NOCSH
 ms.author: krowley

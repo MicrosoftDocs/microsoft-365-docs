@@ -1,5 +1,5 @@
 ---
-title: "Format assessment template data in Excel for Microsoft Compliance Manager"
+title: "Format assessment template data for Microsoft Compliance Manager"
 f1.keywords:
 - NOCSH
 ms.author: chvukosw

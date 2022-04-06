@@ -1,5 +1,5 @@
 ---
-title: "Choose Microsoft Information Protection (MIP) built-in labeling for Office apps over the Azure Information Protection (AIP) add-in"
+title: "Choose MIP built-in labeling for Office apps"
 f1.keywords:
 - CSH
 ms.author: cabailey

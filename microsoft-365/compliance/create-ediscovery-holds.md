@@ -1,5 +1,5 @@
 ---
-title: "Create eDiscovery holds in a Core eDiscovery case"
+title: "Create eDiscovery holds in a Core case"
 f1.keywords:
 - NOCSH
 ms.author: markjjo

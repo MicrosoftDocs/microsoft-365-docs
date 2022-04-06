@@ -1,5 +1,5 @@
 ---
-title: "Learn about Microsoft 365 data loss prevention on-premises scanner"
+title: "Learn about Microsoft 365 DLP on-premises scanner"
 f1.keywords:
 - CSH
 ms.author: chrfox

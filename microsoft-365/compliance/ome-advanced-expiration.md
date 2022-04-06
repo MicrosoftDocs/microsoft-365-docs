@@ -1,5 +1,5 @@
 ---
-title: Set an expiration date for email encrypted by Office 365 Advanced Message Encryption
+title: Set an expiration date for encrypted email
 f1.keywords:
 - NOCSH
 ms.author: krowley

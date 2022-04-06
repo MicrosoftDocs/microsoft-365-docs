@@ -1,5 +1,5 @@
 ---
-title: "Manage custodian communications templates in the Communications library in Advanced eDiscovery"
+title: "Manage custodian communications templates in Advanced eDiscovery"
 f1.keywords:
 - NOCSH
 ms.author: markjjo

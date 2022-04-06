@@ -1,5 +1,5 @@
 ---
-title: "Migrate Exchange Online data loss prevention policies to Compliance center"
+title: "Migrate Exchange Online DLP policies to Compliance center"
 f1.keywords:
 - CSH
 ms.author: chrfox

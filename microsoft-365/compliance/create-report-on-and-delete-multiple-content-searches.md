@@ -1,5 +1,5 @@
 ---
-title: "Create, report on, and delete multiple Content Searches"
+title: "Create, report on, and delete Content Searches"
 f1.keywords:
 - NOCSH
 ms.author: markjjo

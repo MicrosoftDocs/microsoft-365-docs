@@ -1,5 +1,5 @@
 ---
-title: "Resources to help you meet regulatory requirements for information governance and records management"
+title: "Regulatory requirement resources for information governance and records management"
 f1.keywords:
 - NOCSH
 ms.author: cabailey

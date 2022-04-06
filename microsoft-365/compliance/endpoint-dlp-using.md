@@ -1,5 +1,5 @@
 ---
-title: "Using Endpoint data loss prevention"
+title: "Using Endpoint DLP"
 f1.keywords:
 - CSH
 ms.author: chrfox

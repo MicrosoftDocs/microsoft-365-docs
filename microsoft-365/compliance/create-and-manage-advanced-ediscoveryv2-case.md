@@ -1,5 +1,5 @@
 ---
-title: "Create and manage Advanced eDiscovery cases in Microsoft 365"
+title: "Create and manage Advanced eDiscovery cases"
 f1.keywords:
 - NOCSH
 ms.author: markjjo

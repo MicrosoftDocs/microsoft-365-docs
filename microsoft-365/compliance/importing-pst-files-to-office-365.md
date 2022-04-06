@@ -1,5 +1,5 @@
 ---
-title: "Learn about importing your organization's PST files"
+title: "Learn about importing organization PST files"
 f1.keywords:
 - NOCSH
 ms.author: markjjo

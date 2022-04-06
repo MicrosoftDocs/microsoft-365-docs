@@ -1,5 +1,5 @@
 ---
-title: "Working with assessment templates in Microsoft Compliance Manager"
+title: "Assessment templates in Microsoft Compliance Manager"
 f1.keywords:
 - NOCSH
 ms.author: chvukosw

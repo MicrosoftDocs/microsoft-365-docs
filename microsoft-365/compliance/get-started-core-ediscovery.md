@@ -1,5 +1,5 @@
 ---
-title: "Get started with Core eDiscovery cases in Microsoft 365"
+title: "Get started with Core eDiscovery cases"
 f1.keywords:
 - NOCSH
 ms.author: markjjo

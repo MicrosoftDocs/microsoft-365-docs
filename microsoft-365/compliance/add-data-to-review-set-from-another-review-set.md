@@ -1,5 +1,5 @@
 ---
-title: "Add data from one review set to another review set"
+title: "Add data from one review set to another"
 f1.keywords:
 - NOCSH
 ms.author: markjjo

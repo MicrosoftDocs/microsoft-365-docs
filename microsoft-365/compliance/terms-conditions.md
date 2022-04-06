@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Compliance trial terms and conditions"
+title: "Microsoft 365 compliance trial terms and conditions"
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips

@@ -1,5 +1,5 @@
 ---
-title: "Get started with the data loss prevention alert dashboard"
+title: "Get started with the DLP alert dashboard"
 f1.keywords:
 - CSH
 ms.author: chrfox

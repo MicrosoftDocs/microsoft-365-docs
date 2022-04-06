@@ -1,5 +1,5 @@
 ---
-title: "Use record versioning to update records stored in SharePoint or OneDrive"
+title: "Use record versioning in SharePoint or OneDrive"
 f1.keywords:
 - NOCSH
 ms.author: cabailey

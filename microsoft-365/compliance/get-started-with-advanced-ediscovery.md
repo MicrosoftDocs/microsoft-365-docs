@@ -1,5 +1,5 @@
 ---
-title: "Set up Advanced eDiscovery in Microsoft 365"
+title: "Set up Advanced eDiscovery"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
