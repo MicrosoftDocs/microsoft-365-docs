@@ -177,7 +177,7 @@ The following image shows some of the default policies that are included with Mi
 > [!TIP]
 > For more information, see [alert policies](../compliance/alert-policies.md).
 
-### View alerts
+### How to view alerts
 
 Depending on the specific alert, you can view your alerts in either the Microsoft 365 Defender portal or the Microsoft 365 Compliance center.
 
