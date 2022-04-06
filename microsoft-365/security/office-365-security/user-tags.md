@@ -141,4 +141,4 @@ To see how user tags are part of the strategy to help protect high-impact user a
 
 ## More information
 
-- [Priority account tags in Microsoft Defender for Office 365](priority-account-tags.md)
+- [Configure and review priority accounts in Microsoft Defender for Office 365](configure-review-priority-account.md)

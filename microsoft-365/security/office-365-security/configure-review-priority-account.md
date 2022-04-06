@@ -1,5 +1,5 @@
 ---
-title: Configure and review priority account protection in Microsoft Defender for Office 365
+title: Configure and review priority accounts in Microsoft Defender for Office 365
 f1.keywords: 
   - NOCSH
 ms.author: dansimp
@@ -19,7 +19,7 @@ ms.technology: mdo
 ms.prod: m365-security
 ---
 
-# Configure and review priority account protection in Microsoft Defender for Office 365
+# Configure and review priority accounts in Microsoft Defender for Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -49,7 +49,7 @@ Priority account protection is turned on by default for pre-identified critical 
 
 Microsoft Defender for Office 365 supports priority accounts as tags that can be used as filters in alerts, reports, and investigations.
 
-For more information, see [User tags in Microsoft Defender for Office 365](office-365-security\user-tags.md).
+For more information, see [User tags in Microsoft Defender for Office 365](user-tags.md).
 
 ## Review differentiated protection in Threat protection status report, Threat Explorer, and email entity page
 
