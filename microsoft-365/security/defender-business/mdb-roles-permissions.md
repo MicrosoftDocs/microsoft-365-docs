@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 03/15/2022
+ms.date: 04/01/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -39,7 +39,6 @@ To perform tasks in the Microsoft 365 Defender portal, such as configuring Micro
 > **Got a minute?**
 > Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about Microsoft Defender for Business</a>. We'd love to hear from you!
 >
-
 
 ## Roles in Defender for Business
 
@@ -73,6 +72,10 @@ The following table describes the three roles that can be assigned in Defender f
 
    - To add a role, choose **+ Add assignments**.
    - To remove a role, choose **X Remove assignments**. 
+
+## Need to add users?
+
+If you haven't already added users to your subscription, see [Add users and assign licenses at the same time](../../admin/add-users/add-users.md).
 
 ## Next steps
 

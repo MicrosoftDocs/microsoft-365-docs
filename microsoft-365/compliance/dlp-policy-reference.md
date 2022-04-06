@@ -409,7 +409,7 @@ When you select **Audit or restrict activities on Windows devices**, you can res
 
 - All apps
 - By a list of restricted apps that you define
-- Ay a restricted app group (preview) that you define.
+- A restricted app group (preview) that you define.
 
 ##### Service domain and browser activities
 
