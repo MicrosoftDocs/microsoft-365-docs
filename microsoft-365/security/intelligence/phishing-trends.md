@@ -59,7 +59,7 @@ Whaling is a form of phishing directed at high-level or senior executives within
 
 ## Business email compromise
 
-Business email compromise (BEC) is a sophisticated scam that targets businesses who frequently work with foreign suppliers or do money wire transfers. One of the most common schemes used by BEC attackers involves gaining access to a company’s network through a spear phishing attack. The attacker creates a domain similar to the company they're targeting, or spoofs their email to scam users into releasing personal account information for money transfers.
+Business email compromise (BEC) is a sophisticated scam that targets businesses who frequently work with foreign suppliers or do money wire transfers. One of the most common schemes used by BEC attackers involves gaining access to a company's network through a spear phishing attack. The attacker creates a domain similar to the company they're targeting, or spoofs their email to scam users into releasing personal account information for money transfers.
 
 ## More information about phishing attacks
 
