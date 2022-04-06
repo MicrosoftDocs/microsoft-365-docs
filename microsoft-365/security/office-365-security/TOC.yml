@@ -96,6 +96,8 @@
        href: configure-global-settings-for-safe-links.md
      - name: Configure outbound spam filtering
        href: configure-the-outbound-spam-policy.md
+     - name: Configure and review priority accounts
+       href: configure-review-priority-account.md
      - name: Create block sender lists
        href: Create-block-sender-lists-in-office-365.md
      - name: Create safe sender lists
