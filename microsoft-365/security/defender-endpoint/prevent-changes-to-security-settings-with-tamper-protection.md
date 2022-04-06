@@ -132,7 +132,7 @@ For more information about releases, see [Windows 10 release information](/windo
 - [Cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md) must be turned on.
 
 > [!NOTE]
-> In order to allow tamper protection to be disabled, if Cloud-delivered protection is not turned on for a device and tamper protection is turned on in the Microsoft 365 Defender portal, then Cloud-delievred protection will be turned on for that device along with tamper protection.   
+> When tamper protection is enabled via the Microsoft 365 Defender portal, cloud-delivered protection is required, so that the enabled state of tamper protection can be controlled.  If cloud-delivered protection is not turned on for a device and tamper protection is turned on in the Microsoft 365 Defender portal, then cloud-delievred protection will be turned on for that device along with tamper protection.   
 
 ### Turn tamper protection on (or off) in the Microsoft 365 Defender portal
 
