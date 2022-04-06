@@ -38,7 +38,7 @@ Use Microsoft Purview Information Protection to help you discover, classify, pro
 
 Watch the following Ignite session to see how these capabilities support and build on each other: [Know your data, protect your data, and prevent data loss with Microsoft Information Protection](https://myignite.microsoft.com/archives/IG20-OD273).
 
-For information about governing your data, see [Microsoft Purview Information Governance](manage-Information-governance.md).
+For information about governing your data, see [Govern your sensitive data with Microsoft Purview](manage-Information-governance.md).
 
 ## Licensing
 

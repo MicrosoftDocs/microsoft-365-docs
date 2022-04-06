@@ -87,13 +87,13 @@ The first step is to download the AzCopy tool, which is the tool that you run in
   
 1. Go to <https://compliance.microsoft.com> and sign in using the credentials for an administrator account in your organization.
 
-2. In the left pane of the Microsoft Purview compliance portal, click **Information governance** \> **Import**.
-
+2. In the left pane of the Microsoft Purview compliance portal, click **Data lifecycle management** \> **Import**.
+    
     > [!NOTE]
     > You have to be assigned the appropriate permissions to access the **Import** page in the Microsoft Purview compliance portal. See the **Before you begin** section for more information. 
 
 3. On the **Import** tab, click ![Add Icon.](../media/ITPro-EAC-AddIcon.gif) **New import job**.
-
+    
     The import job wizard is displayed.
 
 4. Type a name for the PST import job, and then click **Next**. Use lowercase letters, numbers, hyphens, and underscores. You can't use uppercase letters or include spaces in the name.
@@ -255,7 +255,7 @@ The next step is to create the PST Import job in the Import service in Microsoft
   
 1. Go to <https://compliance.microsoft.com> and sign in using the credentials for an administrator account in your organization.
 
-2. In the left pane of the Microsoft Purview compliance portal, click **Information governance > Import**.
+2. In the left pane of the Microsoft Purview compliance portal, click **Data lifecycle management > Import**.
 
 3. On the **Import** tab, click ![Add Icon.](../media/ITPro-EAC-AddIcon.gif) **New import job**.
 

@@ -180,6 +180,6 @@ Be aware of the following limitation when you use retention for Yammer community
 
 ## Configuration guidance
 
-If you're new to configuring retention in Microsoft 365, see [Get started with information governance](get-started-with-information-governance.md).
+If you're new to configuring retention in Microsoft 365, see [Get started with data lifecycle management](get-started-with-information-governance.md).
 
 If you're ready to configure a retention policy for Yammer, see [Create and configure retention policies](create-retention-policies.md).

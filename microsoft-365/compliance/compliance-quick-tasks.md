@@ -84,7 +84,7 @@ When content is subject to a retention policy, people can continue to edit and w
 
 You can quickly put retention policies in place for multiple services in your Microsoft 365 environment that include Teams and Yammer messages, Exchange mail, SharePoint sites, and OneDrive accounts. There are no limits to the number of users, mailboxes or sites that a retention policy can automatically include. But if you need to get more selective, you can do so by configuring either an adaptive scope that's query-based to dynamically target specific instances, or a static scope that specifies specific instances to always include or always exclude.
 
-For step-by-step guidance to configure retention policies, see [Create and configure retention policies](create-retention-policies.md). Because retention policies form the cornerstone of an information governance strategy for Microsoft 365, see [Get started with information governance](get-started-with-information-governance.md).
+For step-by-step guidance to configure retention policies, see [Create and configure retention policies](create-retention-policies.md). Because retention policies form the cornerstone of a data lifecycle management strategy for Microsoft 365 apps and services, also see [Get started with data lifecycle management](get-started-with-information-governance.md).
 
 ## Task 7: Configure sensitive information and offensive language policies
 
@@ -132,9 +132,9 @@ Now that you’ve configured the basics for compliance management for your organ
 
 Whereas retention policies automatically apply to all items at the container level (such as SharePoint sites, user mailboxes, and so on), [retention labels](retention.md#retention-labels) apply to individual items, such as a SharePoint document or an email message. You can apply these labels manually or automatically.
 
-Retention labels can be used as part of your governance information strategy to retain what you need and delete what you don't. Use these labels when you need exceptions to your retention policies when specific documents or emails need different retention or deletion settings. For example, your SharePoint policy retains all documents for three years, but specific business documents must be retained for five years. For more information, see [Create retention labels for exceptions to your retention policies](create-retention-labels-information-governance.md).
+Retention labels can be used as part of your data governance strategy to retain what you need and delete what you don't. Use these labels when you need exceptions to your retention policies when specific documents or emails need different retention or deletion settings. For example, your SharePoint policy retains all documents for three years, but specific business documents must be retained for five years. For more information, see [Create retention labels for exceptions to your retention policies](create-retention-labels-information-governance.md).
 
-However, retention labels, when used with [records management](records-management.md), provide many more management options to support the full lifecycle of documents and emails. This level of data management is well-suited to high-value items for business, legal, or regulatory record-keeping requirements. For more information, see [Get started with records management](get-started-with-records-management.md).
+However, retention labels, when used with [records management](records-management.md), provide many more management options to support documents and emails at the item level. This level of data management is well-suited to high-value items for business, legal, or regulatory record-keeping requirements. For more information, see [Get started with records management](get-started-with-records-management.md).
 
 ### Identify and define sensitive information types
 

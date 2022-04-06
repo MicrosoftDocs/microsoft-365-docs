@@ -41,8 +41,6 @@ Ready to start managing your organization's high-value content for legal, busine
     - [Create retention labels and apply them in apps](create-apply-retention-labels.md)
     - [Apply a retention label to content automatically](apply-retention-labels-automatically.md)
 
-Independently from these steps, **Use connectors to import and archive third-party-data** that includes data from social media platforms, instant messaging platforms, and document collaboration platforms. When this data is imported to online mailboxes, it supports not just records management from Microsoft Purview, but also other compliance solutions such as communication compliance, insider risk management, and eDiscovery. For more information, see [Learn about connectors for third-party data](archiving-third-party-data.md).
-
 ## Subscription and licensing requirements
 
 A number of different subscriptions support records management and the licensing requirements for users depend on the features you use.
@@ -64,7 +62,7 @@ These permissions are required only to create, configure, and apply retention la
 Use the following table to help you map your business requirements to the scenarios that are supported by records management.
 
 > [!TIP]
-> Need to comply with a specific industry regulation? Check [Regulatory requirements for information governance and records management](retention-regulatory-requirements.md) for regulation-specific guidance.
+> Need to comply with a specific industry regulation? Check [Regulatory requirements for data lifecycle management and records management](retention-regulatory-requirements.md) for regulation-specific guidance.
 
 |I want to ...|Documentation|
 |----------------|---------------|

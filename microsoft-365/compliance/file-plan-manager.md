@@ -25,7 +25,7 @@ ms.custom: seo-marvel-may2020
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Although you can create and manage retention labels from **Information governance** in the Microsoft Purview compliance portal, file plan from **Records management** has additional management capabilities:
+Although you can create and manage retention labels from **Data lifecycle management** in the Microsoft Purview compliance portal, file plan from **Records management** has additional management capabilities:
 
 - You can bulk-create retention labels by importing the relevant information from a spreadsheet.
 
@@ -55,9 +55,9 @@ If **Records management** doesn't display in the navigation pane, first scroll d
 
 ## Navigating your file plan
 
-If you've already created retention labels from **Information governance** in the Microsoft Purview compliance portal, these labels automatically display in your file plan. 
+If you've already created retention labels from **Data lifecycle management** in the Microsoft Purview compliance portal, these labels automatically display in your file plan. 
 
-Similarly, if you now create retention labels in file plan, they are also available from **Information governance** if the labels aren't configured to mark content as a record.
+Similarly, if you now create retention labels in file plan, they are also available from **Data lifecycle management** if the labels aren't configured to mark content as a record.
 
 On the **File plan** page, you see all your labels with their status and settings, optional file plan descriptors, an export option to analyze or enable offline reviews of your labels, and an import option to create retention labels. 
 

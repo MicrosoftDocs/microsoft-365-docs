@@ -20,7 +20,7 @@ recommendations: false
 description: "Implement Microsoft Purview Information Protection capabilities to help you protect sensitive information wherever it lives or travels."
 ---
 
-# Microsoft Purview Information Protection
+# Protect your sensitive data with Microsoft Purview
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
@@ -34,7 +34,7 @@ These information protection capabilities give you the tools to [know your data]
 
 For prescriptive guidance to deploy a Microsoft Purview Information Protection solution for your organization, see [Deploy a Microsoft Purview Information Protection solution](information-protection-solution.md).
 
-For information about governing your data, see [Microsoft Purview Information Governance for Microsoft 365](manage-Information-governance.md).
+For information about governing your data, see [Govern your sensitive data with Microsoft Purview](manage-Information-governance.md).
 
 ## Know your data
 

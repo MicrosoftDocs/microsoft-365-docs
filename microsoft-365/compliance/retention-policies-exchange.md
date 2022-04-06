@@ -94,7 +94,7 @@ When the retention settings no longer apply because the data is permanently dele
 
 ## Configuration guidance
 
-If you're new to configuring retention in Microsoft 365, see [Get started with information governance](get-started-with-information-governance.md).
+If you're new to configuring retention in Microsoft 365, see [Get started with data lifecycle management](get-started-with-information-governance.md).
 
 If you're ready to configure a retention policy or retention label for Exchange, see the following instructions:
 - [Create and configure retention policies](create-retention-policies.md)
