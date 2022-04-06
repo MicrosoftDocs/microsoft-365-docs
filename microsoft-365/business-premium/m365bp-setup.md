@@ -33,33 +33,33 @@ Use this article as a guide.
 
 Microsoft 365 Business Premium includes a guided process for basic setup. The guided process includes these tasks:
 
-1. [Add your domain to personalize sign-in](../admin/setup/setup-business-basic.md#add-your-domain-to-personalize-sign-in).
+1. [Add your existing domain to personalize sign-in](../admin/setup/setup-business-basic.md#add-your-domain-to-personalize-sign-in).
 
-2. [Add users and assign licenses at the same time](../admin/add-users/add-users.md). 
+2. [Add users and assign licenses](../admin/add-users/add-users.md). 
 
-3. [Update DNS records](../admin/setup/setup-business-basic.md#connect-your-domain).
+3. [Update your DNS records](../admin/setup/setup-business-basic.md#connect-your-domain).
 
-To see how the guided setup works, watch the following video: <br/><br/>
+## Video: The guided setup process
+
+The following video shows the guided setup process for Microsoft 365 Business Basic. The process works the same way in Microsoft 365 Business Premium, except for some [additional steps to complete](#additional-steps-to-complete-for-microsoft-365-business-premium) to set up your security capabilities.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vk3W?autoplay=false]
 
 [Learn more about the differences between the guided setup process and the Setup page](../admin/setup/o365-setup-wizard-and-setup-page.md).
 
-### Additional steps to complete
+## Additional steps to complete for Microsoft 365 Business Premium
 
 After you have finished the guided setup, there are additional steps to complete to help ensure that your security and compliance capabilities are properly set up and applied. These steps include:
 
-- [Setting up your security protection](m365bp-security-overview.md)
+1. [Setting up your security protection](m365bp-security-overview.md).
 
-- Training your team:
+2. Training your team:
 
    - [Set up personal devices used to access business data](m365bp-devices-overview.md)
-
    - [Use email more securely](m365bp-protect-email-overview.md)
-
    - [Collaborate and share more securely](m365bp-collaborate-share-securely.md)
 
-- [Protecting managed devices](m365bp-protect-devices.md)
+3. [Protecting managed devices](m365bp-protect-devices.md).
 
 ## Work with a Microsoft partner
 
