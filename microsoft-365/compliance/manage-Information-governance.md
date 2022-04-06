@@ -37,24 +37,36 @@ Looking to protect your data? See [Protect your data with Microsoft Purview](inf
 
 To keep what you need and delete what you don't:
  
-|Capability|What problems does it solve?|Get started|
-|:------|:------------|:--------------------|:-----------------------------|
-|[Retention policies for Microsoft 365 workloads, with retention labels for exceptions](retention.md) | Retain or delete content with policy management for email, documents, Teams and Yammer messages | [Create and configure retention policies](create-retention-policies.md) <br /><br /> [Create retention labels for exceptions to your retention policies](create-retention-labels-information-governance.md)|
-|[Archive mailboxes](archive-mailboxes.md)| Provides users with additional mailbox storage space | [Enable archive mailboxes](enable-archive-mailboxes.md) |
-|[Inactive mailboxes](inactive-mailboxes-in-office-365.md)| Retain mailbox content after employees leave the organization so that this content remains accessible to administrators, compliance officers, and records managers | [Create and manage inactive mailboxes](create-and-manage-inactive-mailboxes.md)|
-|[Import service for PST files](importing-pst-files-to-office-365.md)| Bulk-import PST files to Exchange Online mailboxes to retain and search email messages for compliance or regulatory requirements | [Use network upload to import your organization's PST files to Microsoft 365](use-network-upload-to-import-pst-files.md)|
+|Capability|What problems does it solve?|
+|:------|:------------|:----------------|
+|[Retention policies for Microsoft 365 workloads, with retention labels for exceptions](retention.md) | Lets you retain or delete content with policy management for email, documents, Teams and Yammer messages. |
+|[Archive mailboxes](archive-mailboxes.md)| Provides additional mailbox storage space for users.|
+|[Inactive mailboxes](inactive-mailboxes-in-office-365.md)| Lets you retain mailbox content after employees leave the organization so that this content remains accessible to administrators, compliance officers, and records managers. |
+|[Import service for PST files](importing-pst-files-to-office-365.md)| Supports bulk-importing PST files to Exchange Online mailboxes to retain and search email messages for compliance or regulatory requirements. |
+
+Want to learn more? See [Learn about data lifecycle management](information-governance.md).
+
+Ready to start using some or all of these capabilities? See [Get started with data lifecycle management](get-started-with-information-governance.md).
+
 
 ## Microsoft Purview Records Management
 
 Manage high-value items for business, legal, or regulatory record-keeping requirements:
 
-|Capability|What problems does it solve?|Get started|
-|:------|:------------|---------------------|:----------------------------|
-|[Records management](records-management.md)| A single solution for email and documents that incorporates flexible retention and deletion schedules and requirements to support your content with records declaration and defensible disposition when needed |[Get started with records management](get-started-with-records-management.md) |
+|Capability|What problems does it solve?|
+|:---------|:---------------------------|
+|[File plan](file-plan-manager.md)| Lets you create retention labels interactively or import in bulk, and export for analysis. Labels support additional administrative information (optional) to help you identify and track business or regulatory requirements. |
+|[Retention labels for individual items, retention policies if needed for baseline retention](retention.md)| Labels support flexible retention and deletion schedules that can be applied manually or automatically, with records declaration when needed. |
+|[Disposition review and proof of disposition](disposition.md)| Manual review of content before it's permanently deleted, with proof of disposition of records.|
+
+Want to learn more? See [Learn about records management](records-management.md).
+
+Ready to start using some or all of these capabilities? See [Get started with records management](get-started-with-records-management.md).
+
 
 ## Licensing requirements
 
-License requirements for Microsoft Purview Data Lifecycle Management and Microsoft Purview Records Management depend on the scenarios and features you use, rather than set licensing requirements for each capability listed on this page. To understand your licensing requirements and options, see the following sections from the [Microsoft 365 licensing documentation](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance): 
+To understand your licensing requirements and options, see the following sections from the [Microsoft 365 licensing documentation](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance): 
 - [Information Governance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-governance) 
 - [Records Management](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management) 
 

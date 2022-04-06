@@ -14,7 +14,7 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 - m365initiative-compliance
-description: Learn about what it means to govern your organization's data with Microsoft Purview.
+description: Learn how Microsoft Purview Data Lifecycle Management helps you keep what you need and delete what you don't.
 ---
 
 # Learn about data lifecycle management
