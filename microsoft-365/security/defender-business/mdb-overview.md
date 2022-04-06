@@ -56,7 +56,7 @@ With Defender for Business, you can help protect the devices and data your busin
 
 **This guide is intended to**:
 
-- **Provide you with an overview of Defender for Business** so you know what’s included and how it works
+- **Provide you with an overview of Defender for Business** so you know what's included and how it works
    - Use this article as a starting point
    - [Compare security features in Microsoft Defender for Business to other plans](compare-mdb-m365-plans.md) 
    - [Find out how to get Microsoft Defender for Business](get-defender-business.md)

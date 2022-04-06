@@ -283,7 +283,7 @@ If you are an organization using [Microsoft Defender for Endpoint](/microsoft-36
 
 ### How does configuring tamper protection in Intune affect how I manage Microsoft Defender Antivirus with Group Policy?
 
-Group policy doesn’t apply to tamper protection. Changes made to Microsoft Defender Antivirus settings are ignored when tamper protection is on.
+Group policy doesn't apply to tamper protection. Changes made to Microsoft Defender Antivirus settings are ignored when tamper protection is on.
 
 ### If we use Microsoft Intune to configure tamper protection, does it apply only to the entire organization?
 
