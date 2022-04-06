@@ -36,8 +36,11 @@ Admins can take required action on emails, but to get those actions approved, th
 
 *Manual hunting* occurs when security teams identify threats manually by using the search and filtering capabilities in Explorer. Manual email remediation can be triggered through any email view (*Malware*, *Phish*, or *All email*) after you identify a set of emails that need to be remediated.
 
-> [!div class="mx-imgBorder"]
-> [![Screenshot of manual hunting in Office 365 Threat Explorer by date.](../../media/tp-RemediationArticle1.png)](../../media/tp-RemediationArticle1.png#lightbox)
+:::image type="content" source="../../media/microsoft-365-defender-threat-explorer-manual-remediation.png" alt-text="Screenshot of manual hunting in Office 365 Explorer by date.":::
+
+*Action logs* Shows the details of remediation status like successful, failed, and already in destination.
+
+:::image type="content" source="../../media/microsoft-365-defender-action-center-history.png" alt-text="The Action Center shows the details of remediation status like successful, failed, and already in destination.":::
 
 Security teams can use Explorer to select emails in several ways:
 
