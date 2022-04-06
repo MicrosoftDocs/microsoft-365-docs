@@ -273,24 +273,34 @@ The available context options change depending on which location you choose. If 
  
 - Content contains
 - Content is shared from Microsoft 365
-- File extension is
+- Document created by
+- Document created by member of
+- Document name contains words or phrases
+- Document name matches patterns
+- Document size over
 - Document property is
+- File extension is
 
 ##### Conditions OneDrive accounts supports
 
 - Content contains
 - Content is shared from Microsoft 365
-- File extension is
+- Document created by
+- Document created by member of
+- Document name contains words or phrases
+- Document name matches patterns
+- Document size over
 - Document property is
+- File extension is
 
 ##### Conditions Teams chat and channel messages supports
 
 - Content contains
 - Content is shared from Microsoft 365
-- Sender is (Preview)
-- Sender domain is (Preview)
-- Recipient domain is (Preview)
-- Recipient is (Preview)
+- Sender is 
+- Sender domain is 
+- Recipient domain is 
+- Recipient is 
 
 ##### Conditions Devices supports
 
