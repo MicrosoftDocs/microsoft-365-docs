@@ -54,7 +54,7 @@ These settings affect how users are invited to the directory. They do not affect
 
 **Navigation:** [Azure Active Directory admin center](https://aad.portal.azure.com) > Azure Active Directory > External Identities > Cross-tenant access settings > Default settings tab
 
-The default settings apply to all external Azure AD organizations except those with organization-specific settings. Settings for a specific organization can be configure on the **Organizational settings** tab. There are separate settings for guests (B2B collaboration) and [Azure AD B2B direct connect](/azure/active-directory/external-identities/b2b-direct-connect-overview) users.
+The default settings apply to all external Azure AD organizations except those with organization-specific settings. Settings for a specific organization can be configured on the **Organizational settings** tab. There are separate settings for guests (B2B collaboration) and [Azure AD B2B direct connect](/azure/active-directory/external-identities/b2b-direct-connect-overview) users.
 
 ![Screenshot of Azure Active Directory Cross-tenant access settings page.](../media/azure-ad-cross-tenant-default-settings.png)
 
@@ -68,7 +68,7 @@ Inbound access settings control whether users from external Azure AD organizatio
 |B2B collaboration - applications|All allowed|Determines what apps in your organization guests can be granted access to.|
 |B2B direct connect - external users and groups|All blocked|Determines if people in other Azure AD organizations can be granted access to resources in your organization through B2B direct connect.|
 |B2B direct connect - applications|All blocked|Determines what apps in your organization B2B direct connect users can be granted access to.|
-|Trust settings|Disabled|Determines if your conditional access policies will accept claims from other Azure AD organizations when external users access your resources.|
+|Trust settings|Disabled|Determines if your conditional access policies will accept claims from other Azure AD organizations when people from those organizations access your resources.|
 
 **Outbound access settings**
 
@@ -124,7 +124,7 @@ The Teams master guest access switch, **Allow guest access in Teams**, must be *
 
 | Setting | Default | Description |
 |:-----|:-----|:-----|
-|Allow guest access in Teams|Off|Turns guest access on or off for Teams overall. This setting can take 24 hours to take effect once changed.|
+|Allow guest access in Teams|On|Turns guest access on or off for Teams overall. This setting can take 24 hours to take effect once changed.|
 
 ### Guest calling
 
