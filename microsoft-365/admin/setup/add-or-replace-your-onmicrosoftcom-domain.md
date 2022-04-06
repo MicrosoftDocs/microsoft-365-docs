@@ -51,7 +51,7 @@ While you can add additional onmicrosoft.com domains, only one onmicrosoft.com d
 - Assign it as your fallback domain
 
 > [!NOTE]
-> You are limited a total of five onmicrosoft.com domains in your Microsoft 365 environment. Once they are added, currently they cannot be removed. 
+> You are limited a total of five onmicrosoft.com domains in your Microsoft 365 environment. Once they are added, they cannot be removed. 
   
 ## Before you begin
 
