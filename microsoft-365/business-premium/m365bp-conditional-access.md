@@ -34,8 +34,7 @@ Some businesses require additional security. If your organization has complex se
 
 This article provides information about:
 
-- [Security defaults](#security-defaults) (for most businesses)
-
+- [Security defaults](#security-defaults) (suitable for most businesses)
 - [Conditional Access](#conditional-access) (for businesses with more stringent security requirements)
 
 > [!NOTE]
@@ -46,11 +45,8 @@ This article provides information about:
 Security defaults were designed to help protect your company's user accounts from the start. When turned on, security defaults provide secure default settings that help keep your company safe by:
 
 - Requiring all users and admins to register for MFA using the Microsoft Authenticator app.
-
 - Challenging users with MFA, mostly when they show up on a new device or app, but more often for critical roles and tasks.
-
 - Disabling authentication from legacy authentication clients that can’t do MFA.
-
 - Protecting admins by requiring extra authentication every time they sign in.
 
 MFA is an important first step in securing your company, and security defaults make enabling MFA easy to implement. If your subscription was created on or after October 22, 2019, security defaults might have been automatically enabled for you&mdash;you should check your settings to confirm.
@@ -90,13 +86,9 @@ Security defaults are available to all customers, while Conditional Access requi
 If you want to use Conditional Access to configure policies, see the following step-by-step guides:
 
 - [Require MFA for administrators](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa)
-
 - [Require MFA for Azure management](/azure/active-directory/conditional-access/howto-conditional-access-policy-azure-management)
-
 - [Block legacy authentication](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)
-
 - [Require MFA for all users](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)
-
 - [Require Azure AD MFA registration](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy) - Requires Azure AD Identity Protection, which is part of Azure Active Directory Premium P2
 
 To learn more about Conditional Access, see [What is Conditional Access?](/azure/active-directory/conditional-access/overview) For more information about creating Conditional Access policies, see [Create a Conditional Access policy](/azure/active-directory/authentication/tutorial-enable-azure-mfa#create-a-conditional-access-policy).
