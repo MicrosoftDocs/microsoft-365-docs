@@ -63,7 +63,7 @@ The comparison bar chart is available on the **Overview** tab. Hover over the ch
 
 :::image type="content" source="../../media/secure-score/secure-score-comparison-bar.png" alt-text="An example of the bar graph of similar organization's scores in the Microsoft 365 Defender portal" lightbox="../../media/secure-score/secure-score-comparison-bar.png":::
 
-The comparison data is anonymized so we don’t know exactly which others tenants are in the mix.
+The comparison data is anonymized so we don't know exactly which others tenants are in the mix.
 
 ![Bar graph of similar organization's scores.](../../media/secure-score/secure-score-comparison-screenshot.png)
 

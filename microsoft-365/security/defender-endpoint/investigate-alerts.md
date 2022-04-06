@@ -66,8 +66,8 @@ If you are experiencing a false alert with a line-of-business application, creat
 > [!TIP]
 > If you're experiencing any issues not described above, use the 🙂 button to provide feedback or open a support ticket.
 
-
 ## Related topics
+
 - [View and organize the Microsoft Defender for Endpoint Alerts queue](alerts-queue.md)
 - [Manage Microsoft Defender for Endpoint alerts](manage-alerts.md)
 - [Investigate a file associated with a Defender for Endpoint alert](investigate-files.md)
@@ -75,5 +75,3 @@ If you are experiencing a false alert with a line-of-business application, creat
 - [Investigate an IP address associated with a Defender for Endpoint alert](investigate-ip.md)
 - [Investigate a domain associated with a Defender for Endpoint alert](investigate-domain.md)
 - [Investigate a user account in Defender for Endpoint](investigate-user.md)
-
-
