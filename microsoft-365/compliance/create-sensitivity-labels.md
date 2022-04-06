@@ -57,7 +57,7 @@ The global admin for your organization has full permissions to create and manage
 
     - If **Groups & sites** is selected, you can configure settings that apply to Microsoft 365 groups, and sites for Teams and SharePoint. If this option isn't selected, you see the first page of these settings but you can't configure them and the labels won't be available for users to select for groups and site.
 
-    For information about the **Schematized data assets** scope, see [Automatically label your content in Azure Purview](/azure/purview/create-sensitivity-label).
+    For information about the **Schematized data assets** scope, see [Automatically label your content in Microsoft Purview Data Map](/azure/purview/create-sensitivity-label).
 
 4. Follow the configuration prompts for the label settings.
 
@@ -147,7 +147,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
     For more information about these settings, see [What label policies can do](sensitivity-labels.md#what-label-policies-can-do) from the overview information and use the help in the UI for individual settings.
 
-    For labels configured for **Azure Purview assets (preview)**: These labels don't have any associated policy settings.
+    For labels configured for **Microsoft Purview Data Map assets (preview)**: These labels don't have any associated policy settings.
 
 6. Repeat these steps if you need different policy settings for different users or scopes. For example, you want additional labels for a group of users, or a different default label for a subset of users. Or, if you have configured labels to have different scopes.
 

@@ -46,11 +46,11 @@ To keep what you need and delete what you don't:
 
 ## Microsoft Purview Records Management
 
-Lifecycle management of high-value items for legal, business, or regulatory obligations:
+Manage high-value items for business, legal, or regulatory record-keeping requirements:
 
 |Capability|What problems does it solve?|Get started|
 |:------|:------------|---------------------|:----------------------------|
-|[Records management](records-management.md)| A single solution for email and documents that incorporates flexible retention and deletion schedules and requirements to support the full lifecycle of your content with records declaration and defensible disposition when needed |[Get started with records management](get-started-with-records-management.md) |
+|[Records management](records-management.md)| A single solution for email and documents that incorporates flexible retention and deletion schedules and requirements to support your content with records declaration and defensible disposition when needed |[Get started with records management](get-started-with-records-management.md) |
 
 ## Licensing requirements
 
