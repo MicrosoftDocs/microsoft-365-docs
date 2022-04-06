@@ -39,7 +39,7 @@ The following video shows the guided setup process for Microsoft 365 Business Ba
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vk3W]
 
 > [!TIP]
-> After you have added users, give them a link to the [Employee quick setup guide](../admin/setup/employee-quick-setup.md). The guidance walks them through signing in, getting Office apps, and saving, copying, and sharing files.
+> After you have added users, give them a link to the [Employee quick setup guide](../admin/setup/employee-quick-setup.md). The guide walks them through signing in, getting Office apps, and saving, copying, and sharing files.
 
 ## Work with a Microsoft partner
 
