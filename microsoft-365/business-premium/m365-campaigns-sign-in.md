@@ -28,7 +28,7 @@ description: "Sign in to Microsoft 365. Protect your business, practice, or camp
 
 ## For business or campaign admins
 
-If you signed up for Microsoft 365, you're the Microsoft 365 admin. Here's how to sign in:
+If you signed up for Microsoft 365 for Campaigns (or Microsoft 365 Business Premium), you're the Microsoft 365 admin (also referred to as the Global Administrator). Here's how to sign in:
 
 1. Find the username and password that we sent to the email address that you gave us in step 2 of [Steps to sign up](m365-campaigns-sign-up.md#steps-to-sign-up).
 
@@ -40,8 +40,8 @@ If you signed up for Microsoft 365, you're the Microsoft 365 admin. Here's how t
 
 ## For staff
 
-Set up staff as described in [Add users](../admin/add-users/add-users.md?toc=%2fmicrosoft-365%2fcampaigns%2ftoc.json)
+Users who have been added to your Microsoft 365 for Campaigns (or Microsoft 365 Business Premium) subscription can sign in by following these steps:
 
-You can also reset and resend passwords on the **Add users** page.
+1. Go to <a href="https://office.com" target="_blank">https://Office.com</a>.
 
-All staff can sign in at <a href="https://office.com" target="_blank">https://Office.com</a>.
+2. Sign in using the user name and password for the account.
