@@ -54,7 +54,7 @@ Manage high-value items for business, legal, or regulatory record-keeping requir
 |Capability|What problems does it solve?|
 |:---------|:---------------------------|
 |[File plan](file-plan-manager.md)| Lets you create retention labels interactively or import in bulk, and export for analysis. Labels support additional administrative information (optional) to help you identify and track business or regulatory requirements. |
-|[Retention labels for individual items, retention policies if needed for baseline retention](retention.md)| Labels provide flexible retention and deletion schedules that can be applied manually or automatically, with records declaration when needed. |
+|[Retention labels for individual items, retention policies if needed for baseline retention](retention.md)| Labels support flexible retention and deletion schedules that can be applied manually or automatically, with records declaration when needed. |
 |[Disposition review and proof of disposition](disposition.md)| Manual review of content before it's permanently deleted, with proof of disposition of records.|
 
 Ready to start using some or all of these capabilities? See [Get started with records management](get-started-with-records-management.md).
