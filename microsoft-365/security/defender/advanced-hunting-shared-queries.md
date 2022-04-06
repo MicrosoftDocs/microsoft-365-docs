@@ -32,7 +32,7 @@ ms.technology: m365d
 Under the Queries tab in advanced hunting, you can find the **Shared queries**, **My queries**, and **Community queries** dropdowns. 
 
 
-:::image type="content" source="../../media/shared-query-1.png" alt-text="The shared queries information in the Microsoft 365 Defender portal" lightbox="../../media/shared-query-1.png":::
+:::image type="content" source="../../media/advanced-hunting-shared-queries-1.png" alt-text="The shared queries information in the Microsoft 365 Defender portal" lightbox="../../media/advanced-hunting-shared-queries-1.png":::
 
 [Advanced hunting](advanced-hunting-overview.md) queries can be shared among users in the same organization. You can also save queries that are only accessible to you. You can also find community queries that are shared publicly on GitHub. These saved queries let you quickly pursue specific threat hunting scenarios without having to write queries from scratch.
 
@@ -63,11 +63,12 @@ You can save a new or existing query so that it is only accessible to you or sha
 ## Create a direct link to a query
 To generate a link that opens your query directly in the advanced hunting query editor, finalize your query and select **Share link**.
 
-## Access queries in the GitHub repository  
+## Access community queries in the GitHub repository  
 Microsoft security researchers regularly share advanced hunting queries in a [designated public repository on GitHub](https://github.com/Azure/Azure-Sentinel/tree/master/Hunting%20Queries/Microsoft%20365%20Defender). Contributions to this repository are reviewed before getting published. To contribute, [join GitHub for free](https://github.com/).
 
 You can easily find these queries in the **Community queries** dropdown as well.
 
+:::image type="content" source="../../media/advanced-hunting-shared-queries-2.png" alt-text="The new query that is about to be saved in the Microsoft 365 Defender portal" lightbox="../../media/advanced-hunting-shared-queries-2.png":::
 
 
 >[!tip]
