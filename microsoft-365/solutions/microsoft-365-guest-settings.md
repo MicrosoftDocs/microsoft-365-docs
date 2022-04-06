@@ -50,6 +50,26 @@ Azure Active Directory is the directory service used by Microsoft 365. The Azure
 
 These settings affect how users are invited to the directory. They do not affect sharing with guests who are already in the directory.
 
+### Cross-tenant access settings
+
+**Navigation:** [Azure Active Directory admin center](https://aad.portal.azure.com) > Azure Active Directory > External Identities > Cross-tenant access settings > Default settings tab
+
+**Inbound access settings**
+
+Inbound access settings control whether users from external Azure AD organizations can access resources in your organization. Settings for a specific organization can be configure on the **Organizational settings** tab.
+
+| Setting | Default | Description |
+|:-----|:-----|:-----|
+|B2B collaboration - external users and groups|All Allowed|Determines if people in other Azure AD organizations can access resources in your organization as guests if invited.|
+|B2B collaboration - applications|All allowed|Determines what apps in your organization guests can be granted access to.|
+|B2B direct connect - external users and groups|All blocked||
+|B2B direct connect - applications|All blocked||
+|Trust settings|Disabled||
+
+**Outbound access settings**
+
+Outbound access settings control whether your users can access resources in an external organization. Settings for a specific organization can be configure on the **Organizational settings** tab.
+
 ## Microsoft 365
 
 **Admin role:** Global administrator
