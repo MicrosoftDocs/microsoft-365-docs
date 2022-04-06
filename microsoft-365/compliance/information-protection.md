@@ -34,7 +34,7 @@ These information protection capabilities give you the tools to [know your data]
 
 For prescriptive guidance to deploy a Microsoft Purview Information Protection solution for your organization, see [Deploy a Microsoft Purview Information Protection solution](information-protection-solution.md).
 
-For information about governing your data, see [Govern your sensitive data with Microsoft Purview](manage-Information-governance.md).
+For information about governing your data, see [Govern your data with Microsoft Purview](manage-Information-governance.md).
 
 ## Know your data
 
