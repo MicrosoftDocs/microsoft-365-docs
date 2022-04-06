@@ -45,7 +45,8 @@ The process works the same way in Microsoft 365 Business Premium, except for som
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vk3W?autoplay=false]
 
-[Learn more about the differences between the guided setup process and the Setup page](../admin/setup/o365-setup-wizard-and-setup-page.md).
+> [!TIP]
+> [Learn about the differences between the guided setup process and the Setup page](../admin/setup/o365-setup-wizard-and-setup-page.md).
 
 ## Work with a Microsoft partner
 
