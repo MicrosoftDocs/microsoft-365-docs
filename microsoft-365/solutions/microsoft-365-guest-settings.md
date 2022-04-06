@@ -54,21 +54,32 @@ These settings affect how users are invited to the directory. They do not affect
 
 **Navigation:** [Azure Active Directory admin center](https://aad.portal.azure.com) > Azure Active Directory > External Identities > Cross-tenant access settings > Default settings tab
 
+Default settings apply to all external Azure AD organizations except those with organization-specific settings. Settings for a specific organization can be configure on the **Organizational settings** tab.
+
+![Screenshot of Azure Active Directory Cross-tenant access settings page.](../media/azure-ad-cross-tenant-default-settings.png)
+
 **Inbound access settings**
 
-Inbound access settings control whether users from external Azure AD organizations can access resources in your organization. Settings for a specific organization can be configure on the **Organizational settings** tab.
+Inbound access settings control whether users from external Azure AD organizations can access resources in your organization.
 
 | Setting | Default | Description |
 |:-----|:-----|:-----|
-|B2B collaboration - external users and groups|All Allowed|Determines if people in other Azure AD organizations can access resources in your organization as guests if invited.|
+|B2B collaboration - external users and groups|All Allowed|Determines what people in other Azure AD organizations can be granted access to resources in your organization as guests.|
 |B2B collaboration - applications|All allowed|Determines what apps in your organization guests can be granted access to.|
-|B2B direct connect - external users and groups|All blocked||
-|B2B direct connect - applications|All blocked||
-|Trust settings|Disabled||
+|B2B direct connect - external users and groups|All blocked|Determines if people in other Azure AD organizations can be granted access to resources in your organization without using guest accounts.|
+|B2B direct connect - applications|All blocked|Determines what apps in your organization B2B direct connect users can be granted access to.|
+|Trust settings|Disabled|Determines if your conditional access policies will accept claims from other Azure AD organizations when external users access your resources.|
 
 **Outbound access settings**
 
-Outbound access settings control whether your users can access resources in an external organization. Settings for a specific organization can be configure on the **Organizational settings** tab.
+Outbound access settings control whether your users can access resources in an external organization.
+
+| Setting | Default | Description |
+|:-----|:-----|:-----|
+|B2B collaboration - external users and groups|All Allowed|Determines which users in your organization can be granted access to resources in other Azure AD organizations as guests.|
+|B2B collaboration - applications|All allowed|Determines what apps in other Azure AD organizations your users can be granted access to as guests.|
+|B2B direct connect - external users and groups|All blocked|Determines which users in your organization can be granted access to resources in other Azure AD organizations without using guest accounts.|
+|B2B direct connect - applications|All blocked|Determines what apps in other Azure AD organizations your users can be granted access to through B2B direct connect.|
 
 ## Microsoft 365
 
