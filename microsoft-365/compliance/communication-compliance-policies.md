@@ -79,6 +79,9 @@ To copy a policy and create a new policy, complete the following steps:
 
 ## User-reported messages policy
 
+>[!NOTE]
+>User-reported messages will begin to be available for organizations licensed for [communication compliance](/microsoft-365/compliance/communication-compliance-configure#subscriptions-and-licensing) and Microsoft Teams starting in May 2022. This feature should be available for all licensed organizations by August 31, 2022.
+
 As part of a layered defense to detect and remediate inappropriate messages in your organization, you can supplement communication compliance policies with user-reported messages in Microsoft Teams. This feature empowers users in your organization to self-report inappropriate messages, such as harassing or threatening language, sharing of adult content, and sharing of sensitive or confidential information, to help foster a safe and compliant work environment.
 
 Enabled by default in the [Teams admin center](/microsoftteams/manage-teams-in-modern-portal), the *Report a concern* option in Teams messages allows users in your organization to submit inappropriate messages for review by communication compliance reviewers for the policy. These messages are supported by a default system policy that supports reporting messages in Teams channels, group, and private chats.
