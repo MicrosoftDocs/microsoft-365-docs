@@ -45,7 +45,7 @@ Priority account protection is turned on by default for pre-identified critical 
 > [!NOTE]
 > It is not recommended to disable or turn off priority account protection.  
 
-## Enable the priority account tag
+### Enable the priority account tag
 
 Microsoft Defender for Office 365 supports priority accounts as tags that can be used as filters in alerts, reports, and investigations.
 
@@ -55,7 +55,7 @@ For more information, see [User tags in Microsoft Defender for Office 365](user-
 
 ### Threat protection status report
 
-The **Threat protection status** report is a single view that brings together information about malicious content and malicious email detected and blocked by Microsoft Defender for Office 365. 
+The Threat protection status report is a single view that brings together information about malicious content and malicious email detected and blocked by Microsoft Defender for Office 365. 
 
 To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **Threat protection status**, and then click **View details**.
 
