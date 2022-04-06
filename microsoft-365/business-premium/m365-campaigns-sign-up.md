@@ -30,12 +30,10 @@ description: "Step-by-step sign-up for Microsoft 365 for Campaigns. Protect your
 
 Here's how to complete your sign-up for Microsoft 365 for Campaigns.
 
-## Before you start:
+## Before you begin
 
 - Get your invite to Microsoft 365 for Campaigns by completing the steps in [Get Microsoft 365 for Campaigns](get-microsoft-365-campaigns.md).
-
 - Open your email invitation from Microsoft. The invite has a unique sign-up link for your organization. You need this to get campaigns special pricing.
-
 - Have your business credit card and a phone ready.
 
     > [!TIP]
@@ -52,7 +50,7 @@ Here's how to complete your sign-up for Microsoft 365 for Campaigns.
 3. **On the Create your user ID page**:
  
     1. In **Username**, enter the name or alias you want for your email address. For example, you might want to be known as just Alice, or Rob. In a larger campaign, AliceC or AliceChavez might make more sense.
- 
+
     2. In **Your company**, enter the name of the campaign you work for. For example, ContosoCampaign. If you already own a domain, use that name here. 
  
     3. In **Select a domain**, select **.onmicrosoft.com** for now. We can set you up with a domain later, or help you get Microsoft 365 connected to a domain that you already own.
@@ -112,10 +110,10 @@ If you already have and existing subscription to Microsoft 365 for business, for
 
 After you have completed these steps, you're ready to [assign the new licenses](../admin/manage/assign-licenses-to-users.md) to your campaign staff.
 
-## What's next?
+## Next steps
 
-- [Set up Microsoft 365](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) to complete your Microsoft 365 for Campaigns set up.
+1. [Sign in to Microsoft 365 Business Premium](m365-campaigns-sign-in.md).
 
-- [Add users](../admin/add-users/add-users.md?toc=%2fmicrosoft-365%2fcampaigns%2ftoc.json) to your plan. Include the campaign candidate, all senior campaign staff, and anyone who will have access to sensitive campaign or party information.
+2. [Customize your sign-in page with a privacy and consent notice](m365-customize-sign-in.md)
 
-- [Bump up protection for your campaign](m365-campaigns-security-overview.md)
+3. [Use the guided process for basic setup](m365bp-setup.md#guided-process-for-basic-setup), which includes adding users and assigning licenses.
