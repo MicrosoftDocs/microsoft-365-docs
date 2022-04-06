@@ -65,11 +65,7 @@ After you've created a PST import job, follow these steps to filter the data bef
   
 1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> and sign in using the credentials for an administrator account in your organization.
     
-<<<<<<< HEAD
-2. In the left pane of the Microsoft Purview portal, click **Data lifecycle management** \> **Import**.
-=======
-2. In the left pane of the Microsoft Purview compliance portal, click **Information governance** \> **Import**.
->>>>>>> cc4e987d404a2907f68680eb3a695587bdf756a9
+2. In the left pane of the Microsoft Purview compliance portal, click **Data lifecycle management** \> **Import**.
     
     The import jobs for your organization are listed on the **Import** tab. The **Analysis completed** value in the **Status** column indicates the import jobs that have been analyzed by Microsoft 365 and are ready for you to import.
     
