@@ -1,8 +1,8 @@
 ---
-title: "Microsoft SharePoint Syntex adoption: Get started"
-description: Learn how to use and implement SharePoint Syntex in your organization to help you solve your business problems.
-ms.author: samanro
-author: samanro
+title: Get started driving adoption of Microsoft SharePoint Syntex
+description: Learn how to use and implement SharePoint Syntex in your organization to help you streamline your business processes.
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
 ms.date: 
 audience: admin
@@ -16,7 +16,7 @@ search.appverid:
 ms.localizationpriority:  medium
 ---
 
-# Microsoft SharePoint Syntex adoption: Get started
+# Get started driving adoption of Microsoft SharePoint Syntex
 
 Think of the intelligent content services available in SharePoint Syntex as having three parts:
 

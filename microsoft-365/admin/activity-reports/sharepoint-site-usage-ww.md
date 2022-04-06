@@ -75,7 +75,7 @@ The **SharePoint site usage** report can be viewed for trends over the last 7 da
 |Unmanaged device policy  | The site access policy for unmanaged devices.  |
 |Geo location  | The Geo location of the site.  |
 |Files  |The number of files on the site. |
-|Active files  | The number of active files on the site.<br/> NOTE: If files were removed during the specified time period for the report, the number of active files shown in the report may be larger than the current number of files on the site.  |
+|Active files  | The number of active files on the site. A file is considered active if it has been saved, synced, modified, or shared within the specified time period.<br/> NOTE: If files were removed during the specified time period for the report, the number of active files shown in the report may be larger than the current number of files on the site.  |
 |Storage used (MB)  |The amount of storage currently being used on the site.  |
 |Storage allocated (MB)  |The maximum amount of storage allocated for the site.  |
 |Page views  |The number of times pages were viewed on the site.  |
