@@ -34,7 +34,7 @@ This guide provides specific and actionable steps for your migration, and assume
 
   :::image type="content" source="../../media/mdo-migration-before.png" alt-text="The Mail flows from the internet through the third-party protection service or device before delivery into Microsoft 365" lightbox="../../media/mdo-migration-before.png":::
 
-- You're beyond the investigation and consideration phase for protection by Defender for Office 365. If you need to evaluate Defender for Office 365 to decide whether it's right for your organization, we recommend that you consider [Evaluation Mode](office-365-evaluation.md).
+- You're beyond the investigation and consideration phase for protection by Defender for Office 365. If you need to evaluate Defender for Office 365 to decide whether it's right for your organization, we recommend that you consider the options described in [Try Microsoft Defender for Office 365](try-microsoft-defender-for-office-365.md).
 
 - You've already purchased Defender for Office 365 licenses.
 
