@@ -29,9 +29,12 @@ description: "Get help with increasing the level of protection in Microsoft 365 
 
 # Increase threat protection for Microsoft 365 Business Premium
 
-In this objective, you increase your threat protection with Microsoft 365 Business Premium. It's critical to protect your business against phishing, malware, and other threats. The recommendations in this article apply for all businesses, including political campaigns, law offices, and health care clinics, who might have an increased need for security.
+In this objective, you increase your threat protection with Microsoft 365 Business Premium. It's critical to protect your business against phishing, malware, and other threats. This article includes information about:
 
-- 
+- [Preset security policies](#review-and-apply-preset-security-policies) that can save a lot of time in setup and configuration
+- [Custom security policies](#create-custom-security-policies) that you can define to suit your business needs
+- [How to adjust your sharing settings for SharePoint and OneDrive files and folders](#tune-up-anonymous-sharing-settings-for-sharepoint-and-onedrive-files-and-folders)
+- Alert policies that can bring 
 
 ## Review and apply preset security policies
 
@@ -155,11 +158,17 @@ By default, sharing levels are set to the most permissive level for both SharePo
 
 ## Review your alert policies
 
-You can use activity alerts to track admin and user activities, and detect potential malware and data loss prevention incidents in your business. Your subscription includes a set of default policies, but you can also create custom ones. For example, if you store an important file in SharePoint that you don't want anyone to share externally, you can create a notification that alerts you if someone does share it.
+Alert policies are useful for tracking user and admin activities, potential malware threats, and data loss incidents in your business. Your subscription includes a set of default policies, but you can also create custom ones. For example, if you store an important file in SharePoint that you don't want anyone to share externally, you can create a notification that alerts you if someone does share it.
 
-The following figure shows the default policies that are included with Microsoft 365.
+The following image shows some of the default policies that are included with Microsoft 365 Business Premium.
 
 ![Default alert policies included with Microsoft 365.](../media/alertpolicies.png)
+
+### View your alert policies
+
+1. Go to the Microsoft 365 Compliance center at [https://compliance.microsoft.com](https://compliance.microsoft.com) and sign in.
+
+2. In the navigation pane, choose **Policies**, and then choose **Alert policies**.
 
 For more information, see [alert policies](../compliance/alert-policies.md).
 
