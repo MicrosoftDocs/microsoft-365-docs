@@ -33,7 +33,7 @@ The Microsoft 365 Defender portal ([https://security.microsoft.com](https://secu
 
 ## The Microsoft 365 Defender portal
 
-The Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) is where you'll view alerts, manage devices, and view reports. When you sign into the Microsoft 365 Defender portal, you’ll start with the Home page, as shown in the following image:
+The Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) is where you'll view alerts, manage devices, and view reports. When you sign into the Microsoft 365 Defender portal, you'll start with the Home page, as shown in the following image:
 
 :::image type="content" source="../../media/mde-p1/m365-defender-portal.png" alt-text="The portal of Microsoft 365 Defender" lightbox="../../media/mde-p1/m365-defender-portal.png":::
 
@@ -98,7 +98,7 @@ Use the **Alerts**, **Devices**, and **Users** tabs to view more information, su
 
 ## Manage devices
 
-To view and manage your organization’s devices, in the navigation bar, under **Endpoints**, select **Device inventory**. You’ll see a list of devices as shown in the following image:
+To view and manage your organization's devices, in the navigation bar, under **Endpoints**, select **Device inventory**. You'll see a list of devices as shown in the following image:
 
 :::image type="content" source="../../media/mde-p1/device-inventory.png" alt-text="Device inventory" lightbox="../../media/mde-p1/device-inventory.png":::
 

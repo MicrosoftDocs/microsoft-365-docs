@@ -59,7 +59,7 @@ You can filter alerts according to these criteria:
 
 ## Required roles for Defender for Office 365 alerts
 
-You’ll need to have any of the following roles to access Microsoft Defender for Office 365 alerts:
+You'll need to have any of the following roles to access Microsoft Defender for Office 365 alerts:
 
 - For Azure Active Directory (Azure AD) global roles:
 

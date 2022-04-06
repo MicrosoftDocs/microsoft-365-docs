@@ -79,7 +79,7 @@ Use the following table to understand when to use forms processing and when to u
 | Supported regions| Form processing relies on Power Platform. For information about global availability for Power Platform and AI Builder, see [Power Platform availability](https://dynamics.microsoft.com/geographic-availability/). | Available in all regions.|
 | Transactional cost | Uses AI Builder credits.<br>Credits can be purchased in batches of 1M.<br>1M credits are included when 300+ SharePoint Syntex licenses are purchased.<br>1M credits will allow processing of 2,000 file pages.<br>| N/A |
 | Capacity | Uses the default Power Platform environment (custom environments with Dataverse database supported). | Does not have capacity restrictions.|
-| Supported languages| English <br>Coming later in 2022: Latin alphabet languages | Models work on all Latin alphabet languages. In addition to English: German, Swedish, French, Spanish, Italian, and Portuguese.|
+| Supported languages| Language support for more [73 languages](/power-platform-release-plan/2021wave2/ai-builder/form-processing-new-language-support). | Models work on all Latin alphabet languages. In addition to English: German, Swedish, French, Spanish, Italian, and Portuguese.|
 
 ## See Also
 
