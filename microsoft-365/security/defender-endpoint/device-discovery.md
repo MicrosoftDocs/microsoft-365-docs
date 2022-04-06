@@ -126,7 +126,7 @@ DeviceInfo
 | where OnboardingStatus != "Onboarded" 
 ```
 
-The following query will return details, for a discovered device, on which onboarded devices it was seen by. This information can help determine the network location of each discovered device and subsequently, help to identify it in the network.  
+You can also invoke functions in your advanced hunting queries. The following query will return the details, for a discovered device, on which onboarded devices it was seen by. This information can help determine the network location of each discovered device and subsequently, help to identify it in the network.  
 
 ```text
 DeviceInfo
@@ -137,6 +137,8 @@ DeviceInfo
 | invoke SeenBy() 
 | project DeviceId, DeviceName, DeviceType, SeenBy  
 ```
+
+For more information, see [SeenBy()](advanced-hunting-seenby-function.md)
 
 ### DeviceNetworkInfo table
 
