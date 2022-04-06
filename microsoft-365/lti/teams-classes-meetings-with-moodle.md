@@ -14,13 +14,17 @@ ms.localizationpriority: medium
 description: Create and manage Teams classes and meetings with Microsoft OneDrive Learning Tools Interoperability for Moodle.
 ---
 
-# Integrate Microsoft Teams classes and meetings with Moodle
+# Integrate Microsoft Teams classes and meetings within Moodle
 
 This guide provides the IT admin steps for registering both Teams Classes and Teams Meetings LTI apps on Moodle.
 
 For details on managing all OneLTI tools for any LMS, see [Manage Microsoft OneLTI for any LMS](manage-microsoft-one-lti.md).
 
 ## Prerequisites before set up
+
+For the integration between Moodle and Teams to function correctly, Moodle and Teams must be set up to communicate with one another.
+
+Follow the [instructions for installing and configuring the Moodle plugin](moodle-plugin-configuration.md).
 
 ## Register Microsoft OneLTI tools for use in Moodle
 
