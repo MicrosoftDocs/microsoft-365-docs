@@ -16,7 +16,7 @@ description: Get ready to integrate Moodle and Microsoft Teams by setting up and
 
 # Set up and configure the Moodle plugin
 
-In this article you'll learn how to install and configure the Moodle LMS plugin for Microsoft Teams.
+In this article, you'll learn how to install and configure the Moodle LMS plugin to incorporate Microsoft Teams with your Moodle experience.
 
 ## Prerequisites
 
@@ -146,11 +146,14 @@ Use the generated `AppID` and `Key` in your Microsoft 365 Moodle Plugins setup p
         ✔ Update all accounts in Moodle for users in Azure AD.
 
     1. In the **User Creation Restriction** section, you can set up a filter to limit the Azure AD users that are synced to Moodle.
-    1. In the **Course Sync** section, you can select to automatically create Groups, such as teams for some, or all, of your existing Moodle courses.
+    1. In the **Course Sync** section, you can select **Course sync customization** option to enable the automatic creation of Groups and Teams for some, or all, of your existing Moodle courses.
 
 1. To validate [cron](https://docs.moodle.org/310/en/Cron) tasks and to run them manually for the first time, navigate to **Site administration** > **Server** > **Tasks** > **Scheduled tasks**.
 
-    1. Scroll down and find the **Sync users with Azure AD** task and select **Run now**.
+    1. Scroll down and find the **Sync Moodle courses to Microsoft Teams** task and select **Run now**.
+        1. This will create groups and Teams if any owner is found. 
+        1. If the user has `local/o365:teamowner` capability in the course context, the user is a team owner. If the user has `local/o365:teammember` capability in the course context, the user is a team member.  
+        1. The default *Teacher* role has the `local/o365:teamowner" capability`, and the default *Student* role has the the `local/o365:teammember` capability.
 
     > [!NOTE]
     >
