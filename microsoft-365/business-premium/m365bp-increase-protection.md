@@ -170,7 +170,23 @@ The following image shows some of the default policies that are included with Mi
 
 2. In the navigation pane, choose **Policies**, and then choose **Alert policies**.
 
-For more information, see [alert policies](../compliance/alert-policies.md).
+3. Select an individual policy to view more details or to edit the policy.
+
+   :::image type="content" source="media/selected-alert-policy.png" alt-text="Screenshot of an selected alert policy.":::
+
+> [!TIP]
+> For more information, see [alert policies](../compliance/alert-policies.md).
+
+### View alerts
+
+Depending on the specific alert, you can view your alerts in either the Microsoft 365 Defender portal or the Microsoft 365 Compliance center.
+
+| Type of alert  | What to do  |
+|---------|---------|
+| Security alert, such as when a user clicks a malicious link, an email is reported as malware or phish, or a device is detected as containing malware     | Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and under **Email & collaboration** select **Policies & rules** > **Alert policy**. Alternatively, you can go directly to <https://security.microsoft.com/alertpolicies>. |
+| Compliance alert, such as when a user shares sensitive or confidential information (data loss prevention alert) or there's an unusual volume of external file sharing (information governance alert)    | Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>, and then select **Policies** > **Alert** > **Alert policies**.  |
+
+For more information, see [View alerts](../compliance/alert-policies.md#view-alerts).
 
 ## Disable or manage calendar sharing
 
@@ -201,7 +217,5 @@ If your users are allowed to share their calendars, see [these instructions](htt
 Train your team to:
 
 - [Set up unmanaged (BYOD) devices](m365bp-devices-overview.md)
-
 - [Protect all email](m365bp-protect-email-overview.md)
-
 - [Collaborate and share securely](m365bp-collaborate-share-securely.md)
