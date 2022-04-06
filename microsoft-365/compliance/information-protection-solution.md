@@ -1,5 +1,5 @@
 ---
-title: "Deploy a Microsoft Purview Information Protection solution"
+title: "Deploy an information protection solution with Microsoft Purview"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -20,7 +20,7 @@ ms.collection:
 description: "Prescriptive guidance to deploy Microsoft Purview Information Protection for your organization."
 ---
 
-# Deploy a Microsoft Purview Information Protection solution
+# Deploy an information protection solution with Microsoft Purview
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
@@ -77,7 +77,7 @@ If you are a developer who wants to extend sensitivity labels to line-of-busines
 
 Microsoft Purview includes additional capabilities to help protect data. Not every customer needs these capabilities, and some might be superseded by more recent releases.
 
-Use the [Microsoft Purview Information Protection](information-protection.md) page for the full list of protection capabilities.
+Use the [Protect your data with Microsoft Purview](information-protection.md) page for the full list of protection capabilities.
 
 ## Prevent data loss
 

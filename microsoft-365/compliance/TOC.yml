@@ -306,7 +306,7 @@
       href: information-protection.md
     - name: Deploy an information protection solution
       href: information-protection-solution.md
-    - name: Default labels and policies for Microsoft Purview Information Protection
+    - name: Default labels and policies to protect your data
       href: mip-easy-trials.md
     - name: Sensitive information types
       items: 
