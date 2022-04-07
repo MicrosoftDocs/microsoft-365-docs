@@ -82,5 +82,6 @@ Our digital threats guide describes different kinds of threats and what you and 
 
 ## Next steps
 
-- [Get Microsoft 365 Business Premium](get-microsoft-365-business-premium.md) or [Get Microsoft 365 for Campaigns](get-microsoft-365-campaigns.md)
-- [Start the setup process](m365bp-setup-overview.md)
+1. Get [Microsoft 365 Business Premium](get-microsoft-365-business-premium.md) or [Microsoft 365 for Campaigns](get-microsoft-365-campaigns.md).
+
+2. [Start the setup process](m365bp-setup-overview.md).
