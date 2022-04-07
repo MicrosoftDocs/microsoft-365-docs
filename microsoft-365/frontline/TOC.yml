@@ -4,9 +4,9 @@
   - name: Get started
     items:
     - name: Overview
-      href: /microsoftteams/flw-landing-page?bc=%2fmicrosoft-365%2ffrontline%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2ffrontline%2ftoc.json
+      href: /microsoftteams/flw-landing-page?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
     - name: Licensing options for frontline workers
-      href: /microsoftteams/flw-licensing-options?bc=%2fmicrosoft-365%2ffrontline%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2ffrontline%2ftoc.json
+      href: /microsoftteams/flw-licensing-options?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
   - name: Deploy
     items:
     - name: Start with a pilot deployment
@@ -14,13 +14,13 @@
     - name: Extend your pilot to a full deployment
       href: 
   - name: Onboard your users
-    href: /microsoftteams/flw-onboarding-wizard?bc=%2fmicrosoft-365%2ffrontline%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2ffrontline%2ftoc.json
+    href: /microsoftteams/flw-onboarding-wizard?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
   - name: Scenarios
     items: 
     - name: Virtual appointments
-      href: /microsoftteams/expand-teams-across-your-org/bookings-virtual-visits?bc=%2fmicrosoft-365%2ffrontline%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2ffrontline%2ftoc.json
+      href: /microsoftteams/expand-teams-across-your-org/bookings-virtual-visits?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
     - name: Team collaboration
-      href: /microsoftteams/expand-teams-across-your-org/retail-team-collaboration?bc=%2fmicrosoft-365%2ffrontline%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2ffrontline%2ftoc.json
+      href: /microsoftteams/expand-teams-across-your-org/retail-team-collaboration?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
     - name: Simplify business processes
-      href: /microsoftteams/expand-teams-across-your-org/retail-business-processes?bc=%2fmicrosoft-365%2ffrontline%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2ffrontline%2ftoc.json
+      href: /microsoftteams/expand-teams-across-your-org/retail-business-processes?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
 

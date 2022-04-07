@@ -25,9 +25,9 @@ productDirectory:
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://office/media/icons/get-started-blue.svg
       links:
-        - url: /microsoftteams/flw-landing-page?bc=%2fmicrosoft-365%2ffrontline%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2ffrontline%2ftoc.json
+        - url: /microsoftteams/flw-landing-page?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
           text: Overview
-        - url: /microsoftteams/flw-licensing-options?bc=%2fmicrosoft-365%2ffrontline%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2ffrontline%2ftoc.json
+        - url: /microsoftteams/flw-licensing-options?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
           text: Licensing options for frontline workers
     # Card
     - title: Deploy
@@ -42,7 +42,7 @@ productDirectory:
     - title: Onboard and train users
       imageSrc: https://office/media/icons/users-group.svg
       links:
-        - url: /microsoftteams/flw-onboarding-wizard?bc=%2fmicrosoft-365%2ffrontline%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2ffrontline%2ftoc.json
+        - url: /microsoftteams/flw-onboarding-wizard?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
           text: Onboard your users
         - url: https://adoption.microsoft.com/microsoft-teams/frontline-workers/
           text: Adoption resources
@@ -52,10 +52,10 @@ productDirectory:
     - title: Scenarios to transform your business
       imageSrc: https://office/media/icons/lightbulb-idea-capture-blue.svg
       links:
-        - url: /microsoftteams/expand-teams-across-your-org/bookings-virtual-visits?bc=%2fmicrosoft-365%2ffrontline%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2ffrontline%2ftoc.json
+        - url: /microsoftteams/expand-teams-across-your-org/bookings-virtual-visits?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
           text: Virtual appointments
-        - url: /microsoftteams/expand-teams-across-your-org/retail-team-collaboration?bc=%2fmicrosoft-365%2ffrontline%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2ffrontline%2ftoc.json
+        - url: /microsoftteams/expand-teams-across-your-org/retail-team-collaboration?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
           text: Team collaboration
-        - url: /microsoftteams/expand-teams-across-your-org/retail-business-processes?bc=%2fmicrosoft-365%2ffrontline%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2ffrontline%2ftoc.json
+        - url: /microsoftteams/expand-teams-across-your-org/retail-business-processes?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
           text: Simplify business processes
 
