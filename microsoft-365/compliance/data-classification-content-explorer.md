@@ -29,7 +29,7 @@ The data classification content explorer allows you to natively view the items t
 
 ## Prerequisites
 
-For licensing requirements, see [Information Protection: Data Classification Analytics: Over Content & Activity Explorer](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-classification-analytics-overview-content--activity-explorer)
+For licensing requirements, see [Information Protection: Data Classification Analytics: Overview Content & Activity Explorer](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-classification-analytics-overview-content--activity-explorer)
 
 ### Permissions
 
