@@ -172,6 +172,49 @@ The **Recommendations** tab provides next-step actions and advice for investigat
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-recommendations-example.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-recommendations-example.png" alt-text="Example of alert recommendations":::
 
+## Suppress an alert
+
+The new alert suppression experience includes the following features:
+- Suppress any alert that meets the conditions of configured rules.
+- Suppress the triggering IOCs, multiple IOCs, or any IOC (using AND/OR operators and groupings). 
+
+> [!NOTE]
+> Adding at least one IOC to the rule condition is required to suppress any alert type.
+
+To suppress an alert, in the main alert page, select **Create suppression rule** in the summary details section of the alert page. 
+:::image type="content" source="../../media/investigate-alerts/create-suppression-rule-pane.png" alt-text="Create separation rule pane":::
+
+In the **Create suppression rule** pane, use the **Auto fill all alert related IOCs** option to generate the full rule quickly. Then, you can change and edit the fields as needed. 
+
+:::image type="content" source="../../media/investigate-alerts/auto-fill-all-alert-related-IOCs.png" alt-text="Auto fill all alert related IOCs in Create suppression rule pane":::
+
+For example, you can create a suppression rule by selecting devices, a device group, an entire organization, or by user. You can also add a user as an attribute of the chosen IOC if available. 
+
+> [!NOTE]
+> You must have Admin permissions to enable organization-wide alert suppression.
+
+:::image type="content" source="../../media/investigate-alerts/create-suppression-rule.png" alt-text="create suppression rule":::
+
+Once you save the suppression rule, you can add the selected IOCs as indicators to the “allow list” and prevent them from being blocked in the future.
+
+All alert-related IOCs will be shown in the list. IOCs that were selected in the suppression conditions will be selected by default.
+
+:::image type="content" source="../../media/investigate-alerts/successful-suppression-rule-creation.png" alt-text="successful suppression rule creation":::
+
+You can turn off the new experience in the Microsoft 365 Defender portal, by navigating to **Settings**-> **Endpoints**->**Alert suppression**, then switch off the toggle.
+
+:::image type="content" source="../../media/investigate-alerts/toggle-enabling-suppression-rule-creation.png" alt-text="Toggle for enabling suppression rule creation":::
+
+When alert suppression is enabled, you can edit the existing “simple” rules and then add more conditions and scope with the new advanced capabilities. 
+
+:::image type="content" source="../../media/investigate-alerts/edit-suppression-rule.png" alt-text="Edit suppression rule":::
+
+**Coming soon:**
+- Auto fill rule conditions based on the detection logic generating the alert you want to suppress. 
+- Additional entity roles (Parent/child).
+- Suppression based on un-determined entities such as WMI and their extracted attributes.
+
+
 ## Resolve an alert
 
 Once you're done analyzing an alert and it can be resolved, go to the **Manage alert** pane for the alert or similar alerts and mark the status as **Resolved** and then classify it as a **True positive** with a type of threat, an **Informational, expected activity** with a type of activity, or a **False positive**.
