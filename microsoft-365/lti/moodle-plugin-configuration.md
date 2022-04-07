@@ -20,7 +20,7 @@ In this article, you'll learn how to install and configure the Moodle LMS plugin
 
 ## Prerequisites
 
-Following are the prerequisites to install Moodle:
+Here are the prerequisites to install Moodle:
 
 * Moodle administrator credentials.
 * Azure AD administrator credentials.
@@ -32,7 +32,7 @@ Moodle integration in Microsoft Teams is powered by the open source [Microsoft 3
 
 ### Requisite applications and plugins
 
-Install and download the following before proceeding with the Microsoft 365 Moodle plugins installation:
+Install and download the following items before proceeding with the Microsoft 365 Moodle plugins installation:
 
 1. A [current stable version of Moodle](https://download.moodle.org/releases/latest/).
 1. Download and save the Moodle [OpenID Connect](https://moodle.org/plugins/auth_oidc) and the [Microsoft 365 Integration](https://moodle.org/plugins/local_o365) plugins to your local computer.
@@ -75,7 +75,7 @@ You must configure the connection between the Microsoft 365 plugins and Azure AD
 
 ### Requisites
 
-Register Moodle as an application in your Azure AD, using the PowerShell script. The script provisions the following:
+Register Moodle as an application in your Azure AD, using the PowerShell script. The script provisions the following items:
 
 * A new Azure AD application for your Microsoft 365 tenant, which is used by the Microsoft 365 Moodle Plugins.
 * The app for your Microsoft 365 tenant sets up the required reply URLs and permissions for the provisioned app and returns the `AppID` and `Key`.
@@ -129,7 +129,7 @@ Use the generated `AppID` and `Key` in your Microsoft 365 Moodle Plugins setup p
 
 1. In **Choose connection method**, select **Application access**, and then select **Save changes** again.
 
-1. After the page refreshes you can see another new section **Admin consent & additional information**.
+1. After the page refreshes, you can see another new section **Admin consent & additional information**.
     1. Select **Provide Admin Consent** link, enter your Microsoft 365 Global Administrator credentials, then **Accept** to grant the permissions.
     1. Next to the **Azure AD Tenant** field, select the **Detect** button.
     1. Next to the **OneDrive for Business URL**, select the **Detect** button.
@@ -140,7 +140,7 @@ Use the generated `AppID` and `Key` in your Microsoft 365 Moodle Plugins setup p
 1. Synchronize users between your Moodle server and Azure AD. Depending on your environment, you can select different options during this stage. To get started:
     1. Switch to the **Sync Settings tab**.
 
-    1. In the **Sync users with Azure AD** section, select the checkboxes that apply to your environment. You must select the following:  
+    1. In the **Sync users with Azure AD** section, select the checkboxes that apply to your environment. You must select the following options:  
 
         ✔ Create accounts in Moodle for users in Azure AD.
         ✔ Update all accounts in Moodle for users in Azure AD.
@@ -151,9 +151,9 @@ Use the generated `AppID` and `Key` in your Microsoft 365 Moodle Plugins setup p
 1. To validate [cron](https://docs.moodle.org/310/en/Cron) tasks and to run them manually for the first time, navigate to **Site administration** > **Server** > **Tasks** > **Scheduled tasks**.
 
     1. Scroll down and find the **Sync Moodle courses to Microsoft Teams** task and select **Run now**.
-        1. This will create groups and Teams if any owner is found.
+        1. This task will create groups and Teams if any owner is found.
         1. If the user has `local/o365:teamowner` capability in the course context, the user is a team owner. If the user has `local/o365:teammember` capability in the course context, the user is a team member.  
-        1. The default *Teacher* role has the `local/o365:teamowner" capability`, and the default *Student* role has the the `local/o365:teammember` capability.
+        1. The default *Teacher* role has the `local/o365:teamowner" capability`, and the default *Student* role has the `local/o365:teammember` capability.
 
     > [!NOTE]
     >
@@ -164,16 +164,16 @@ Use the generated `AppID` and `Key` in your Microsoft 365 Moodle Plugins setup p
 1. Configure the required settings to enable the Teams app integration.
 
     1. To enable **OpenID Connect**, go to **Site administration** > **Plugins** > **Manage authentication**.
-        1. Find **OpenID Connect**, and select the eye icon if it is greyed out. Save changes.
+        1. Find **OpenID Connect**, and select the eye icon if it's greyed out. Save changes.
     1. To enable frame embedding, go to **Site administration** and select **HTTP Security** in the **Security** section.
         1. Select the checkbox next to **Allow frame embedding**. Save changes.
-    1. To enable web services, which enables the Moodle API features, go to **Site administration** > **Advanced features**.
+    1. To enable web services, which enable the Moodle API features, go to **Site administration** > **Advanced features**.
         1. Ensure the checkbox next to **Enable web services** is selected. Save changes.
     1. To enable the external services for Microsoft 365, go to **Site administration** > **Plugins**, and select **External services** in the **Web services** section.
 
         ✔ In the **Built-in services** section, find **Moodle Microsoft 365 Webservices**.
         ✔ Select **Edit** on the **Moodle Microsoft 365 Webservices** row.
-        ✔ Select the eye icon if it is greyed out. Save changes.
+        ✔ Select the eye icon if it's greyed out. Save changes.
 
     1. Edit your authenticated user permissions to allow them to create web service tokens.
 

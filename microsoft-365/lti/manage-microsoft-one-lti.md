@@ -89,7 +89,7 @@ Here are some common sign-in issues and how to resolve them.
     - The account doesn't belong to a registered tenant, or
     - The account doesn't belong to an educator or an admin.
 
-  - For both these cases, you will see a **Sign out & switch accounts** button.
+  - For both these cases, you'll see a **Sign out & switch accounts** button.
     - Select this button or select the **Sign out** button under the user profile menu.
     - Sign in with an account that belongs to the tenant, an educator, or an admin.
 
@@ -101,7 +101,7 @@ Here are some common sign-in issues and how to resolve them.
     - If the issue persists, report the problem by selecting the **Report a problem** link at the top right.
 
 - **Authentication error**
-  - If you see the error message, “Authentication failed. Try again," the login session may have expired.
+  - If you see the error message, “Authentication failed. Try again," the sign-in session may have expired.
     - Sign out and sign back in again.
     - You can also clear cookies and local storage for the LTI registration portal and `https://login.microsoftonline.com/`.
     - Try to sign in again.
