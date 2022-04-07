@@ -69,17 +69,17 @@ If you'd prefer to have a Microsoft partner help you get and set up Microsoft 36
 
 Also see [Find your partner or reseller](../admin/manage/find-your-partner-or-reseller.md).
 
-## Next steps
+## Next objectives
 
-After you have finished the guided setup, there are additional steps to complete to help ensure that your security and compliance capabilities are properly set up and applied. These steps include:
+After you have finished your initial setup process, your next objectives are to set up your security and compliance capabilities:
 
-1. [Setting up your security protection](m365bp-security-overview.md).
+1. [Set up your security protection](m365bp-security-overview.md).
 
-2. Training your team:
+2. Train your team:
 
    - [Set up personal devices used to access business data](m365bp-devices-overview.md)
    - [Use email more securely](m365bp-protect-email-overview.md)
    - [Collaborate and share more securely](m365bp-collaborate-share-securely.md)
 
-3. [Protecting managed devices](m365bp-protect-devices.md).
+3. [Protect managed devices](m365bp-protect-devices.md).
 
