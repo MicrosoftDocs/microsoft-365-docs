@@ -54,7 +54,8 @@ You can also randomize the times when each endpoint checks and downloads protect
 ## Use Group Policy to schedule protection updates
 
 > [!IMPORTANT]
-> By default, Microsoft Defender Antivirus will check for an update 15 minutes before the time of any scheduled scans. Enabling these settings will override that default.
+> By default, "SignatureScheduleDay" is set as "8" and "SignatureUpdateInterval" is set as "0" so Microsoft Defender Antivirus will not schedule protection updates.
+Enabling these settings will override that default.
 
 1. On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and click **Edit**.
 

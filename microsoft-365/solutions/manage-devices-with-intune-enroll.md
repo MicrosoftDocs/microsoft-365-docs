@@ -4,7 +4,7 @@ ms.author: bcarter
 author: brendacarter
 f1.keywords:
 - enroll devices into management
-- enroll devices with Intune
+- enroll devices to Intune
 - Intune mobile device platforms
 manager: dougeby
 audience: ITPro
@@ -42,7 +42,7 @@ For additional options, including enrolling BYOD Windows devices, see, [Enroll W
 
 ## iOS and iPadOS enrollment
 
-For user owned (BYOD) devices, you can let users enroll their personal devices for Intune management using one of the following methods.
+For user owned (BYOD) devices, you can let users enroll their personal devices with Intune using one of the following methods.
 - Device enrollment is what you may think of as typical BYOD enrollment. It provides admins with a wide range of management options.
 - User enrollment is a more streamlined enrollment process that provides admins with a subset of device management options. This feature is currently in preview.
 
