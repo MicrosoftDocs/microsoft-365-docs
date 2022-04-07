@@ -120,4 +120,4 @@ additionalContent:
         # Card
         - title: Troubleshoot
           summary: Access resources to help you troubleshoot and fix problems with your Office products or services.
-          url: https://docs.microsoft.com/office/troubleshoot/
+          url: /office/troubleshoot/
