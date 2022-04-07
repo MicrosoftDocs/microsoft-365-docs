@@ -80,6 +80,31 @@ All our updates contain
 - Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
+<summary>March-2022 (Platform: 4.18.2203.5 | Engine:  1.1.19100.5)</summary>
+
+&ensp;Security intelligence update version: **1.361.1449.0**<br/>
+&ensp;Released: **March 7, 2022**<br/>
+&ensp;Platform: **4.18.2203.5**<br/>
+&ensp;Engine: **1.1.19100.5**<br/>
+&ensp;Support phase: **Security and Critical Updates**<br/>
+
+Engine version: 1.1.19100.5 <br/>
+Security intelligence update version: 1.361.1449.0<br/>
+
+### What's new
+
+- Added fix for [ASR rule](attack-surface-reduction.md) that blocked an Outlook add-in 
+- Added fix for [behavior monitoring](configure-protection-features-microsoft-defender-antivirus.md) performance issue related to short live processes 
+- Added fix for [AMSI](/windows/win32/amsi/antimalware-scan-interface-portal) exclusion 
+- Improved [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) capabilities 
+- Added a fix for [real-time protection](configure-protection-features-microsoft-defender-antivirus.md) getting disabled in some cases when using `SharedSignaturesPath` config (See [Set-MpPreference](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps) for more details about `SharedSignaturesPath`)
+
+### Known Issues
+
+No known issues
+
+<br/><br/>
+</details><details>
 <summary>February-2022 (Platform: 4.18.2202.4 | Engine: 1.1.19000.8)</summary>
 
 &ensp;Security intelligence update version: **1.361.14.0**<br/>
