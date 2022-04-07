@@ -19,22 +19,21 @@ description: "Learn about how people outside your organization can access your M
 
 With Microsoft 365, you can collaborate with people outside your organization in a variety of ways. 
 
-These are the primary ways people from outside your organization can access your Microsoft 365 resources:
+The following table show the primary ways people from outside your organization can access your Microsoft 365 resources:
 
-- As a guest in a Microsoft Teams team, a Microsoft 365 group, or a SharePoint site
-- As a guest with a sharing link to a file or folder
-- As a participant in a 1:1 or group chat
-- As a participant in a Teams shared channel
-- As an anonymous participant in a Teams meeting
-- By using an anonymous sharing link to a file or folder
-
-Collaboration Methods used in Microsoft Teams from Users Outside Your Organization 
-
-Guest access, external access, anonymous meeting join, and shared channels are the four primary mechanisms for external collaboration in Microsoft Teams. They each address different scenarios, and they can all be enabled simultaneously to achieve different types of collaboration within Teams. 
+|Activity|Account type|Default setting|
+|:-------|:-----------|:--------------|
+|Document sharing|Guest account|Enabled|
+|Site sharing|Guest account|Enabled|
+|Team sharing|Guest account|Enabled|
+|Shared channel in Teams|Existing external account|Disabled|
+|External chat and meetings|Existing external account|Enabled|
+|Anonymous file and folder access|None|Enabled|
+|Anonymous meeting join|None|Enabled|
 
 ## Collaborating with guests
 
-A *guest* is a type of account in Azure Active Directory. Guest accounts can be used to share resources in your organizations with anyone who has an email address. You can manage guest accounts the same way you manage users in your organization.
+A *guest* is a type of account in Azure Active Directory. Guest accounts can be used to share resources in your organizations with anyone who has an email address. You can manage guest accounts the same way you manage users in your organization. Guests do not require a license for most features of collaboration. 
 
 Guests can only access resources that you specifically share with them.
 
@@ -45,52 +44,65 @@ With guests you can:
 - Invite them to Microsoft 365 groups, teams, or SharePoint sites where they have nearly all the same capabilities as an internal member.
 - Share a single file or a folder with them which they can view or edit depending on the permissions you give them.
 
+For information about how to set up Microsoft 365 for collaboration with guests, see the following references:
 
-Guest Access 
-What is it? Guest access allows you to invite people from outside your organization to join one or multiple teams. With guest access, you can provide access to teams, documents in channels, resources, chats, and applications to people outside your organization, while maintaining control over your corporate data. 
+- [Set up secure file sharing and collaboration with Microsoft Teams](/microsoft-365/solutions/setup-secure-collaboration-with-teams)
+- [Plan external collaboration](/microsoft-365/solutions/plan-external-collaboration)
+- [Collaborate with guests on a document](/microsoft-365/solutions/collaborate-on-documents)
+- [Collaborate with guests in a site](/microsoft-365/solutions/collaborate-in-site)
+- [Collaborate with guests in a team](/microsoft-365/solutions/collaborate-as-team)
+ 
+## External chat and meetings
 
-When would I use it? Use guest access to add a person from outside your organization to a team, where they can chat, call, meet, and collaborate on files. For the teams that a guest is a member of, a guest can be given nearly all the same Teams capabilities as an internal team member. Guests are added to your organization's Azure Active Directory as B2B guest users and must sign in to Teams using their guest account. This means that they may have to sign out of their own organization to sign in to your organization. Guests do not require a license for most features of collaboration. 
+Users in your organization can chat, add users to meetings, and use audio or video conferencing with users in external organizations. By default, users in your organization can communicate with all other Microsoft 365 domains. You can allow or block specific domains or block all domains if you want to disable the feature.
 
+You can also allow users in your organization to communicate with people from other organizations who are using Teams accounts that are not managed by an organization, as well as Skype for Business (online and on-premises) and Skype users.
+
+
+
+
+When would I use it? If you just want to find, call, chat, and set up meetings with people in other organizations, use external access. External access is ideal if you don't need users outside of your organization to join Teams. If you want people from other organizations to have access to your teams and channels, use guest access instead 
+
+
+[Manage external access in Microsoft Teams](/microsoftteams/manage-external-access)
  
 
-Documentation: 
+## Teams meetings 
 
-Guest access in Microsoft Teams - Microsoft Teams | Microsoft Docs 
+A user who is not signed-in to Teams (and therefore hasn't been authenticated) is considered to be an anonymous user. These users  haven't logged in with their Microsoft or organization's account.  If the anonymous join setting is enabled in your tenant, anonymous users can only join a meeting using a meeting link that has been shared with them (such as a link in the meeting invitation). They will be prompted to enter a display name of their choosing when joining the meeting anonymously. 
 
-External Access 
+People from outside your organization can join meetings in the following ways:
 
-What is it? External access is a way for your users and Teams users from outside your organization to find, call, chat, and set up meetings with each other in Teams. You may allow or block specified domains, or allow all domains for external access. You can also use external access to communicate with people from other organizations who are still using Skype for Business (online and on-premises) and Skype. 
+- If they are logged in to your organization with a guest account, they join meetings as a guest.
+- If they are logged in to a different organization with a work or school account, they joing meetings as an external participant.
+- If they are not logged in to a Microsoft 365 or Azure AD organization, they must join meetings anonymously.
 
-When would I use it? If you just want to find, call, chat, and set up meetings with people in other organizations, use external access. External access is ideal if you don’t need users outside of your organization to join Teams. If you want people from other organizations to have access to your teams and channels, use guest access instead 
 
-Documentation: 
-
-Manage external access (federation) - Microsoft Teams | Microsoft Docs 
-
- 
-
-Anonymous Join for Meetings 
-
-What is it? A user who is not signed-in to Teams (and therefore hasn't been authenticated) is considered to be an anonymous user. These users  haven’t logged in with their Microsoft or organization’s account.  If the anonymous join setting is enabled in your tenant, anonymous users can only join a meeting using a meeting link that has been shared with them (such as a link in the meeting invitation). They will be prompted to enter a display name of their choosing when joining the meeting anonymously. 
-
-You can control anonymous users' ability to join meetings either at your organization level through Meeting Settings, or per meeting organizer through Meeting Policy settings. 
+You can control anonymous users' ability to join meetings either at your organization level through Meeting Settings, or per meeting organizer through meeting policy settings. 
 
 When would I use it?  If you must block guest and/or external access, but still want users from outside of your organization to join meetings, then you may consider using anonymous join. Enabling anonymous join makes it easy for anyone to join a meeting as long as they have the meeting link. This eases the reliance on guest access requirements (enabling guest access in Azure AD and ensuring that the guest user accepts the invitaiton) and external access requirements (that the other organization has external access enabled, too). However, it is not possible to verify the identity of anonymous users during or after the meeting. 
 
-Documentation: Manage meeting settings - Microsoft Teams | Microsoft Docs 
+This will bring you into the meeting lobby. We'll notify the meeting organizer that you're there, and someone in the meeting can then admit you.
 
- Join a meeting without a Teams account (microsoft.com) 
+[Manage meeting settings in Microsoft Teams](/microsoftteams/meeting-settings-in-teams)
 
-Teams Connect Shared Channels 
+
+## Shared Channels 
 
 What is it? Shared channels are a new channel type, in addition to the existing standard and private channel types. Shared channels enable users to collaborate seamlessly with internal and external users who are not in the team. Only the users who are owners or members of the shared channel can access the channel. While guests (people with Azure Active Directory guest accounts in your organization.) can't be added to a shared channel, you can invite people outside your organization to participate in a shared channel by using Azure AD B2B direct connect. 
 
 When would I use it? You might want to use a shared channel if you want to collaborate with a group of people who are all members of different teams or people from outside of your organization. Shared channels work well if you only want people to have access to a specific channel within a team, but not the other channels. In addition, external users can access the channel right from their Teams account without having to switch organizations, which makes collaboration easier than the alternative guest scenario. External collaboration for shared channels is off by default. 
 
-Documentation: 
 
-Shared channels in Microsoft Teams (Preview) - Microsoft Teams | Microsoft Docs 
+- [Plan external collaboration](/microsoft-365/solutions/plan-external-collaboration)
+- [Shared channels in Microsoft Teams](/MicrosoftTeams/shared-channels)
+- [Collaborate with external participants in a channel](/microsoft-365/solutions/collaborate-teams-direct-connect)
 
- 
+## Related topics
 
+[Intro to file collaboration in Microsoft 365, powered by SharePoint](/sharepoint/intro-to-file-collaboration)
+
+[File collaboration in SharePoint with Microsoft 365](/sharepoint/deploy-file-collaboration)
+
+[Use guest access and external access to collaborate with people outside your organization](/microsoftteams/communicate-with-users-from-other-organizations)
  
