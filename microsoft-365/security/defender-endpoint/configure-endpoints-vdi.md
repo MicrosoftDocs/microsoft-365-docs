@@ -139,45 +139,19 @@ The following steps will guide you through onboarding VDI devices and will highl
 
 ## Updating non-persistent virtual desktop infrastructure (VDI) images
 
-As a best practice, we recommend using offline servicing tools to patch golden/master images.
+With the ability to easily deploy updates to VMs running in VDIs, we've shortened this guide to focus on how you can get updates on your machines quickly and easily. You no longer need to create and seal golden images on a periodic basis, as updates are expanded into their component bits on the host server and then downloaded directly to the VM when it's turned on.
 
-For example, you can use the below commands to install an update while the image remains offline:
+This guide describes how to configure your VMs for optimal protection and performance, including how to:
 
-```console
-DISM /Mount-image /ImageFile:"D:\Win10-1909.vhdx" /index:1 /MountDir:"C:\Temp\OfflineServicing"
-DISM /Image:"C:\Temp\OfflineServicing" /Add-Package /Packagepath:"C:\temp\patch\windows10.0-kb4541338-x64.msu"
-DISM /Unmount-Image /MountDir:"C:\Temp\OfflineServicing" /commit
-```
+- [Set up a dedicated VDI file share for security intelligence updates](#set-up-a-dedicated-vdi-file-share)
+- [Randomize scheduled scans](#randomize-scheduled-scans)
+- [Use quick scans](#use-quick-scans)
+- [Prevent notifications](#prevent-notifications)
+- [Disable scans from occurring after every update](#disable-scans-after-an-update)
+- [Scan out-of-date machines or machines that have been offline for a while](#scan-vms-that-have-been-offline)
+- [Apply exclusions](#exclusions)
 
-For more information on DISM commands and offline servicing, refer to the articles below:
-
-- [Modify a Windows image using DISM](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism)
-- [DISM Image Management Command-Line Options](/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14)
-- [Reduce the Size of the Component Store in an Offline Windows Image](/windows-hardware/manufacture/desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image)
-
-If offline servicing isn't a viable option for your non-persistent VDI environment, the following steps should be taken to ensure consistency and sensor health:
-
-1. After booting the master image for online servicing or patching, run an offboarding script to turn off the Defender for Endpoint sensor. For more information, see [Offboard devices using a local script](configure-endpoints-script.md#offboard-devices-using-a-local-script).
-
-2. Ensure the sensor is stopped by running the command below in a CMD window:
-
-   ```console
-   sc query sense
-   ```
-
-3. Service the image as needed.
-
-4. Run the below commands using PsExec.exe (which can be downloaded from https://download.sysinternals.com/files/PSTools.zip) to cleanup the cyber folder contents that the sensor may have accumulated since boot:
-
-    ```console
-    PsExec.exe -s cmd.exe
-    cd "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Cyber"
-    del *.* /f /s /q
-    REG DELETE "HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection" /v senseGuid /f
-    exit
-    ```
-
-5. Reseal the golden/master image as you normally would.
+You can also download the whitepaper [Microsoft Defender Antivirus on Virtual Desktop Infrastructure](https://demo.wd.microsoft.com/Content/wdav-testing-vdi-ssu.pdf), which looks at the new shared security intelligence update feature, alongside performance testing and guidance on how you can test antivirus performance on your own VDI.
 
 ## Related topics
 - [Onboard Windows devices using Group Policy](configure-endpoints-gp.md)
