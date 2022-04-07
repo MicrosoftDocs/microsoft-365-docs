@@ -26,6 +26,17 @@ After you have [started a trial or purchased Microsoft 365 Business Premium](get
 
 Use this article as a guide.
 
+## Before you begin
+
+Make sure that you meet the following requirements before you begin your setup process:
+
+| Requirement | Description |
+|:---|:---|
+| Subscription | Microsoft 365 Business Premium <br/>--- or ---<br/>Microsoft 365 for Campaigns <br/><br/> To start a trial or purchase your subscription, see the following articles: <br/>- [Get Microsoft 365 Business Premium](get-microsoft-365-business-premium.md)<br/>- [Get Microsoft 365 for Campaigns](get-microsoft-365-campaigns.md) |
+| Permissions  | To complete the initial setup process, you must be a Global Admin.<br/><br/>For more information, see [About admin roles](../admin/add-users/about-admin-roles.md). |
+| Browser requirements | One of the following browsers: <br/>- Microsoft Edge<br/>- Safari<br/>- Chrome<br/>- Firefox<br/><br/>For more information, see [Browser requirements](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources#coreui-heading-uyetipy).  |
+| Operating system | One of the following operating systems: <br/><br/>**Windows OS**:<br/>- Windows 11<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Server 2019 or later<br/>- Windows Server 2016 <br/><br/>**macOS**: One of the three most recent versions of macOS. <br/><br/>For more information, see [Requirements for Microsoft 365 for business, education, and goverment](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources?rtc=1#coreui-heading-7142msj). |
+
 ## Use the guided process for basic setup
 
 Microsoft 365 Business Premium includes a guided process for basic setup. The guided process includes these tasks:
