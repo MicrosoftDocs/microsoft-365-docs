@@ -31,9 +31,9 @@ The following table show the primary ways people from outside your organization 
 |Anonymous file and folder access|None|Enabled|
 |Anonymous meeting join|None|Enabled|
 
-## Collaborating with guests
+## Guests
 
-A *guest* is a type of account in Azure Active Directory. Guest accounts can be used to share resources in your organizations with anyone who has an email address. You can manage guest accounts the same way you manage users in your organization. Guests do not require a license for most features of collaboration. 
+A *guest* is a type of account in Azure Active Directory. Guest accounts are managed through [Azure AD B2B collaboration](/azure/active-directory/external-identities/what-is-b2b). They can be used to share resources in your organizations with anyone who has an email address. You can manage guest accounts the same way you manage users in your organization. Guests do not require a license for most features of collaboration. 
 
 Guests can only access resources that you specifically share with them.
 
@@ -52,6 +52,20 @@ For information about how to set up Microsoft 365 for collaboration with guests,
 - [Collaborate with guests in a site](/microsoft-365/solutions/collaborate-in-site)
 - [Collaborate with guests in a team](/microsoft-365/solutions/collaborate-as-team)
  
+## Shared Channels
+
+Shared channels are a type of Teams channel that allow you to share with people outside the team, including people in other Microsoft 365 organizations. Shared channels uses [Azure AD B2B direct connect](/azure/active-directory/external-identities/b2b-direct-connect-overview) which allows you to add people from other Microsoft 365 organizations to Teams channels without the need for creating a guest account.
+
+Shared channels have a particular advantage over guest accounts in that they do not require people to log into your organization. External participants can remain logged in to their organization and access the channel directly.
+
+When would I use it? You might want to use a shared channel if you want to collaborate with a group of people who are all members of different teams or people from outside of your organization. Shared channels work well if you only want people to have access to a specific channel within a team, but not the other channels. In addition, external users can access the channel right from their Teams account without having to switch organizations, which makes collaboration easier than the alternative guest scenario. External collaboration for shared channels is off by default. 
+
+For information about how to set up Microsoft 365 for collaboration with shared channels, see the following references:
+
+- [Plan external collaboration](/microsoft-365/solutions/plan-external-collaboration)
+- [Shared channels in Microsoft Teams](/MicrosoftTeams/shared-channels)
+- [Collaborate with external participants in a channel](/microsoft-365/solutions/collaborate-teams-direct-connect)
+
 ## External chat and meetings
 
 Users in your organization can chat, add users to meetings, and use audio or video conferencing with users in external organizations. By default, users in your organization can communicate with all other Microsoft 365 domains. You can allow or block specific domains or block all domains if you want to disable the feature.
@@ -86,17 +100,7 @@ This will bring you into the meeting lobby. We'll notify the meeting organizer t
 
 [Manage meeting settings in Microsoft Teams](/microsoftteams/meeting-settings-in-teams)
 
-
-## Shared Channels 
-
-What is it? Shared channels are a new channel type, in addition to the existing standard and private channel types. Shared channels enable users to collaborate seamlessly with internal and external users who are not in the team. Only the users who are owners or members of the shared channel can access the channel. While guests (people with Azure Active Directory guest accounts in your organization.) can't be added to a shared channel, you can invite people outside your organization to participate in a shared channel by using Azure AD B2B direct connect. 
-
-When would I use it? You might want to use a shared channel if you want to collaborate with a group of people who are all members of different teams or people from outside of your organization. Shared channels work well if you only want people to have access to a specific channel within a team, but not the other channels. In addition, external users can access the channel right from their Teams account without having to switch organizations, which makes collaboration easier than the alternative guest scenario. External collaboration for shared channels is off by default. 
-
-
-- [Plan external collaboration](/microsoft-365/solutions/plan-external-collaboration)
-- [Shared channels in Microsoft Teams](/MicrosoftTeams/shared-channels)
-- [Collaborate with external participants in a channel](/microsoft-365/solutions/collaborate-teams-direct-connect)
+## Anonymous file and folder access
 
 ## Related topics
 
