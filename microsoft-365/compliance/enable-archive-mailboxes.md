@@ -79,7 +79,7 @@ To disable an archive mailbox:
    > [!NOTE]
    > The **Archive** page shows a maximum of 500 users.
 
-3. In the list of mailboxes, select the user that you want to disable the archive mailbox for and clikc on **Disable Archive**
+3. In the list of mailboxes, select the user that you want to disable the archive mailbox for and select **Disable Archive**.
 
 
    A warning message is displayed saying that you'll have 30 days to re-enable the archive mailbox, and that after 30 days, all information in the archive will be permanently deleted.
