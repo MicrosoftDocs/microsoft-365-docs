@@ -102,7 +102,7 @@ You can also add customized information and URLs to the email confirmation and r
 
    :::image type="content" source="media/bookings-additional-info.jpg" alt-text="Additional information in a Bookings email.":::
 
-9. **Enable text message notifications for your customer** If selected, SMS messages are sent to the customer, but only if they opt-in.
+9. **Enable text message notifications for your customer** If selected, SMS messages are sent to the customer, but only if they opt in.
 
    - Opt-in box on the manual booking and Self-Service Page:
 
