@@ -220,9 +220,9 @@ To encrypt your email:
 1. With a new email open, select the **Options** menu.
 1. From the **Encrypt** drop-down choose the appropriate permission level.
 
-![Email message encryption in Outlook.](../../media/08e90a7e-a2d2-41a4-bae9-0a46b4ce639b.png)
+:::image type="content" source="../../media/08e90a7e-a2d2-41a4-bae9-0a46b4ce639b.png" alt-text="Email message encryption in Outlook":::
 
-[:::image type="content" source="/../../media/08e90a7e-a2d2-41a4-bae9-0a46b4ce639b.png" alt-text="Email message encryption in Outlook":::]()
+![Email message encryption in Outlook.](../../media/08e90a7e-a2d2-41a4-bae9-0a46b4ce639b.png)
 
 ### Receive encrypted email
 
