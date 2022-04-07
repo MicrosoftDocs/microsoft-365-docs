@@ -66,7 +66,7 @@ When the tests are completed, the web page and the advanced tests client will bo
 
 ## Sharing your test report
 
-The test report requires authentication to your Microsoft 365 account. Your administrator selects how you can share your test report.
+The test report requires authentication to your Microsoft 365 account. Your administrator selects how you can share your test report. The default settings allow for sharing of your reports with other user within your organization and the ReportID link is not available. Reports will expire by default after 90 days.
 
 ### Sharing your report with your administrator
 
