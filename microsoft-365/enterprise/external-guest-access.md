@@ -56,9 +56,7 @@ For information about how to set up Microsoft 365 for collaboration with guests,
 
 Shared channels are a type of Teams channel that allow you to share with people outside the team, including people in other Microsoft 365 organizations. Shared channels uses [Azure AD B2B direct connect](/azure/active-directory/external-identities/b2b-direct-connect-overview) which allows you to add people from other Microsoft 365 organizations to Teams channels without the need for creating a guest account.
 
-Shared channels have a particular advantage over guest accounts in that they do not require people to log into your organization. External participants can remain logged in to their organization and access the channel directly.
-
-When would I use it? You might want to use a shared channel if you want to collaborate with a group of people who are all members of different teams or people from outside of your organization. Shared channels work well if you only want people to have access to a specific channel within a team, but not the other channels. In addition, external users can access the channel right from their Teams account without having to switch organizations, which makes collaboration easier than the alternative guest scenario. External collaboration for shared channels is off by default. 
+Shared channels have a particular advantage over guest accounts in that they do not require external participants to log into your organization. They can remain logged in to their organization and access the channel directly.
 
 For information about how to set up Microsoft 365 for collaboration with shared channels, see the following references:
 
@@ -68,22 +66,15 @@ For information about how to set up Microsoft 365 for collaboration with shared 
 
 ## External chat and meetings
 
-Users in your organization can chat, add users to meetings, and use audio or video conferencing with users in external organizations. By default, users in your organization can communicate with all other Microsoft 365 domains. You can allow or block specific domains or block all domains if you want to disable the feature.
+Users in your organization can chat, add users to meetings, and use audio or video conferencing with users in external organizations. By default, users in your organization can communicate in these ways with all other Microsoft 365 domains. You can allow or block specific domains or block all domains if you want to disable the feature.
 
-You can also allow users in your organization to communicate with people from other organizations who are using Teams accounts that are not managed by an organization, as well as Skype for Business (online and on-premises) and Skype users.
+You can also allow users in your organization to communicate with people from outside your organization who are using Teams accounts that are not managed by an organization, as well as Skype for Business (online and on-premises) and Skype users.
 
+Guest accounts are not used as part of external chat and meetings. External participants remain signed in to their organization or to Skype and can communicate directly with people in your organization.
 
-
-
-When would I use it? If you just want to find, call, chat, and set up meetings with people in other organizations, use external access. External access is ideal if you don't need users outside of your organization to join Teams. If you want people from other organizations to have access to your teams and channels, use guest access instead 
-
-
-[Manage external access in Microsoft Teams](/microsoftteams/manage-external-access)
- 
+For information about how to set up Microsoft 365 for external chat and meetings, see [Manage external access in Microsoft Teams](/microsoftteams/manage-external-access).
 
 ## Teams meetings 
-
-A user who is not signed-in to Teams (and therefore hasn't been authenticated) is considered to be an anonymous user. These users  haven't logged in with their Microsoft or organization's account.  If the anonymous join setting is enabled in your tenant, anonymous users can only join a meeting using a meeting link that has been shared with them (such as a link in the meeting invitation). They will be prompted to enter a display name of their choosing when joining the meeting anonymously. 
 
 People from outside your organization can join meetings in the following ways:
 
@@ -91,6 +82,8 @@ People from outside your organization can join meetings in the following ways:
 - If they are logged in to a different organization with a work or school account, they joing meetings as an external participant.
 - If they are not logged in to a Microsoft 365 or Azure AD organization, they must join meetings anonymously.
 
+
+A user who is not signed-in to Teams (and therefore hasn't been authenticated) is considered to be an anonymous user. These users  haven't logged in with their Microsoft or organization's account.  If the anonymous join setting is enabled in your tenant, anonymous users can only join a meeting using a meeting link that has been shared with them (such as a link in the meeting invitation). They will be prompted to enter a display name of their choosing when joining the meeting anonymously. 
 
 You can control anonymous users' ability to join meetings either at your organization level through Meeting Settings, or per meeting organizer through meeting policy settings. 
 
@@ -101,6 +94,9 @@ This will bring you into the meeting lobby. We'll notify the meeting organizer t
 [Manage meeting settings in Microsoft Teams](/microsoftteams/meeting-settings-in-teams)
 
 ## Anonymous file and folder access
+
+
+[Best practices for sharing files and folders with unauthenticated users](/microsoft-365/solutions/best-practices-anonymous-sharing)
 
 ## Related topics
 
