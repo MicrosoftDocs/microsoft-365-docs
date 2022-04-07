@@ -28,7 +28,7 @@ ms.collection:
 
 Microsoft Defender for Business features a simplified configuration process, designed especially for small and medium-sized businesses. This experience takes the guesswork out of onboarding and managing devices, with a wizard-like experience and default policies that are designed to protect your company's devices from day one. **We recommend using the simplified configuration process; however, you're not limited to this option**.
 
-When it comes to onboarding devices and configuring security settings for your company’s devices, you can choose from several experiences: 
+When it comes to onboarding devices and configuring security settings for your company's devices, you can choose from several experiences: 
 
 - The simplified configuration process in Microsoft Defender for Business (*recommended*) 
 - Microsoft Endpoint Manager, which includes Microsoft Intune (included in [Microsoft 365 Business Premium](../../business-premium/index.md))

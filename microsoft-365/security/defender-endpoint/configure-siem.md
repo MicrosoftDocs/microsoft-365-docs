@@ -80,7 +80,7 @@ The SmartConnector replaces the previous FlexConnector for Microsoft 365 Defende
 ### IBM QRadar
 
 >[!NOTE]
->IBM QRadar integration with Microsoft 365 Defender, which include Microsoft Defender for Endpoint is now supported by the new Microsoft 365 Defender Device Support Module (DSM) that calls the [Microsoft 365 Defender Streaming API](../defender/streaming-api.md) that allows ingesting streaming event data from Microsoft 365 Defender products, including Microsoft Defender for Endpoint. For more information on the new QRadar Microsoft 365 Defender DSM, see [IBM QRadar Product Documentation](https://www.ibm.com/docs/en/dsm?topic=microsoft-365-defender), and for more information on Streaming API supported event types, see [Supported event types](../defender/supported-event-types.md).
+>IBM QRadar integration with Microsoft 365 Defender, which include Microsoft Defender for Endpoint is now supported by the new Microsoft 365 Defender Device Support Module (DSM) that calls the [Microsoft 365 Defender Streaming API](../defender/streaming-api.md) that allows ingesting streaming event data from Microsoft 365 Defender products, including Microsoft Defender for Endpoint. For more information on the new QRadar Microsoft 365 Defender DSM, see [IBM QRadar Product Documentation](https://www.ibm.com/docs/en/dsm?topic=microsoft-365-defender), and for more information on Streaming API supported event types, see [Supported event types](../defender/supported-event-types.md).
 
 New customers are no longer being onboarded using the previous QRadar Microsoft Defender ATP Device Support Module (DSM), and existing customers are encouraged to adopt the new Microsoft 365 Defender DSM as their single point of integration with all Microsoft 365 Defender products.
 

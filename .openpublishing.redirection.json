@@ -382,7 +382,7 @@
     },
     {
       "source_path": "microsoft-365/business/create-and-edit-autopilot-profiles.md",
-      "redirect_url": "/microsoft-365/admin/devices/create-and-edit-autopilot-profiles",
+      "redirect_url": "/microsoft-365/business-premium/create-and-edit-autopilot-profiles",
       "redirect_document_id": true
     },
     {
@@ -6849,6 +6849,11 @@
       "source_path": "microsoft-365/lighthouse/m365-lighthouse-set-up-roles.md",
       "redirect_url": "/microsoft-365/lighthouse/m365-lighthouse-overview-of-permissions",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/devices/create-and-edit-autopilot-profiles.md",
+      "redirect_url": "/microsoft-365/business-premium/create-and-edit-autopilot-profiles",
+      "redirect_document_id": false
     } 
   ]
 }

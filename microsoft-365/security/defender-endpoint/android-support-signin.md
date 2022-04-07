@@ -132,7 +132,7 @@ Users can follow these steps to enable the same permissions from the device sett
 
    :::image type="content" source="images/show-all-apps-1.png" alt-text="The drop-down that displays the All Apps option under the Battery Optimisation pane" lightbox="images/show-all-apps-1.png":::
 
-5. Locate “Microsoft Defender for Endpoint” and select **Don’t Optimize**.
+5. Locate "Microsoft Defender for Endpoint" and select **Don't Optimize**.
 
    :::image type="content" source="images/select-dont-optimise.png" alt-text="The page that enables location of the option Microsoft Defender for Endpoint and selection of Don't Optimize" lightbox="images/select-dont-optimise.png":::
 
@@ -146,20 +146,20 @@ If a user faces an issue which is not already addressed in the above sections or
 
     :::image type="content" source="images/select-profile-icon-1.jpg" alt-text="The profile icon in the Microsoft Defender for Endpoint portal" lightbox="images/select-profile-icon-1.jpg":::
 
-2.	Select “Help & feedback”.
+2.	Select "Help & feedback".
 
     :::image type="content" source="images/selecthelpandfeedback2.png" alt-text="The Help & feedback option that can be selected in the Microsoft Defender for Endpoint portal" lightbox="images/selecthelpandfeedback2.png":::
 
-3.	Select “Send feedback to Microsoft”.
+3.	Select "Send feedback to Microsoft".
 
     :::image type="content" alt-text="Select send feedback to Microsoft" source="images/send-feedback-to-microsoft-3.jpg":::
 
-4.	Choose from the given options. To report an issue, select “I want to report an issue”.
+4.	Choose from the given options. To report an issue, select "I want to report an issue".
 
     :::image type="content" source="images/report-issue-4.jpg" alt-text="The I want to report an issue option" lightbox="images/report-issue-4.jpg":::
 
-5.	Provide details of the issue that you are facing and check “Send diagnostic data”. We recommend checking “Include your email address” so that the team can reach back to you with a solution or a follow-up.
+5.	Provide details of the issue that you are facing and check "Send diagnostic data". We recommend checking "Include your email address" so that the team can reach back to you with a solution or a follow-up.
 
     :::image type="content" source="images/finalsubmit5.png" alt-text="The pane on which you can add details and attach diagnostic data" lightbox="images/finalsubmit5.png":::
 
-6.	Click on “Submit” to successfully send the feedback.
+6.	Click on "Submit" to successfully send the feedback.
