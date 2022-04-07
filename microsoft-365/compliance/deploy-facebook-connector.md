@@ -20,8 +20,6 @@ description: "Administrators can set up a native connector to import and archive
 
 # Deploy a connector to archive Facebook Business pages data
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 This article contains the step-by-step process to deploy a connector that uses the Office 365 Import service to import data from Facebook Business pages to Microsoft 365. For a high-level overview of this process and a list of prerequisites required to deploy a Facebook connector, see [Set up a connector to archive Facebook data](archive-facebook-data-with-sample-connector.md).
 
 ## Step 1: Create an app in Azure Active Directory
@@ -184,7 +182,7 @@ This article contains the step-by-step process to deploy a connector that uses t
 
 5. Click **Save** to save the connector settings.
 
-## Step 5: Set up a Facebook connector in the Microsoft Purview compliance portal
+## Step 5: Set up a Facebook connector in the compliance portal
 
 1. Go to the Microsoft Purview compliance portal, and then select <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**Data connectors**</a.
 
