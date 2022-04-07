@@ -1,6 +1,6 @@
 ---
 title: Try and evaluate Defender for Office 365
-description:
+description: Learn how to evaluate and try the capabilities of Microsoft Defender for Office 365 without affecting your existing mail flow.
 keywords:
 f1.keywords:
   - NOCSH
