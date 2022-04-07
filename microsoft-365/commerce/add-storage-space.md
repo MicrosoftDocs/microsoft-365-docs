@@ -107,4 +107,4 @@ Office 365 Extra File Storage is available for the following subscriptions:
 
 ## Related content
 
-[Manage site storage limits](/sharepoint/manage-site-collection-storage-limits) (article)\
+[Manage site storage limits](/sharepoint/manage-site-collection-storage-limits) (article)
