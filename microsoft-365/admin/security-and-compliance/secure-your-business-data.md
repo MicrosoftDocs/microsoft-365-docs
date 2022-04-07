@@ -1,5 +1,5 @@
 ---
-title: Top 10 ways to secure Microsoft 365 for business plans
+title: Best practices for securing Microsoft 365 for business
 f1.keywords:
 - CSH
 ms.author: deniseb
@@ -30,7 +30,7 @@ ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: "Protect your business email and data from cyberthreats, including ransomware, phishing, and malicious attachments."
 ---
 
-# The best ways to secure Microsoft 365 for business
+# Best practices for securing Microsoft 365 for business
 
 If you are a small or medium-size organization using one of Microsoft's business plans, the guidance in this article helps you tighten the security of your organization. Among your choices, Microsoft 365 Business Premium leads the way since it now includes Microsoft Defender for Business and other [security protections](../../business-premium/get-microsoft-365-business-premium.md). The recommended actions included here will help you achieve the goals described in the Harvard Kennedy School [Cybersecurity Campaign Handbook](https://go.microsoft.com/fwlink/p/?linkid=2015598).
 
