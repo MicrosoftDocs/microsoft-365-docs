@@ -89,7 +89,7 @@ For more information, see [Device inventory](machines-view-overview.md).
 
 The large number of unmanaged network devices deployed in an organization creates a large surface area of attack, and represents a significant risk to the entire enterprise. Microsoft Defender for Endpoint network discovery capabilities helps you ensure network devices are discovered, accurately classified, and added to the asset inventory.
 
-Network devices are not managed as standard endpoints, as Defender for Endpoint doesn't have a sensor built into the network devices themselves. These types of devices require an agentless approach where a remote scan will obtain the necessary information from the devices. To do this, a designated Microsoft Defender for Endpoint device will be used on each network segment to perform periodic authenticated scans of preconfigured network devices. Once discovered, Defender for Endpoint’s threat and vulnerability management capabilities provide integrated workflows to secure discovered switches, routers, WLAN controllers, firewalls, and VPN gateways.
+Network devices are not managed as standard endpoints, as Defender for Endpoint doesn't have a sensor built into the network devices themselves. These types of devices require an agentless approach where a remote scan will obtain the necessary information from the devices. To do this, a designated Microsoft Defender for Endpoint device will be used on each network segment to perform periodic authenticated scans of preconfigured network devices. Once discovered, Defender for Endpoint's threat and vulnerability management capabilities provide integrated workflows to secure discovered switches, routers, WLAN controllers, firewalls, and VPN gateways.
 
 For more information, see [Network devices](network-devices.md).
 
@@ -99,7 +99,7 @@ To address the challenge of gaining enough visibility to locate, identify, and s
 
 - **Corelight**: Microsoft has partnered with Corelight to receive data from Corelight network appliances. This provides Microsoft 365 Defender with increased visibility into the network activities of unmanaged devices, including communication with other unmanaged devices or external networks. for more information, see [Enable Corelight data integration](corelight-integration.md).
 
-- **Microsoft Defender for IoT**: This integration combines Microsoft Defender for Endpoint’s device discovery capabilities, with the agentless monitoring capabilities of Microsoft Defender for IoT, to secure enterprise IoT devices connected to an IT network (for example, Voice over Internet Protocol (VoIP), printers, and smart TVs). For more information, see [Enable Microsoft Defender for IoT integration](enable-microsoft-defender-for-iot-integration.md).
+- **Microsoft Defender for IoT**: This integration combines Microsoft Defender for Endpoint's device discovery capabilities, with the agentless monitoring capabilities of Microsoft Defender for IoT, to secure enterprise IoT devices connected to an IT network (for example, Voice over Internet Protocol (VoIP), printers, and smart TVs). For more information, see [Enable Microsoft Defender for IoT integration](enable-microsoft-defender-for-iot-integration.md).
 
 ## Vulnerability assessment on discovered devices
 
