@@ -43,6 +43,8 @@ In these first missions, you're going to have to sign in and set up your initial
 
 [**Bump up security protection**](m365bp-security-overview.md). Now, set up a number of critical security measures to protect your organization. 
 
+:::image type="content" source="../media/bus-premium-card.png" alt-text="Microsoft 365 Business Premium protects your apps, file storage, email, devices, and identities.":::
+
 ## [**Train Your Team**](#tab/Train)
 
 We've included a set of missions here with some objectives that need to be completed by your team. You have to make sure the team's devices are protected, as well as that the team is trained to use email and file sharing safely, and to recognize and report threats. 
@@ -52,6 +54,8 @@ We've included a set of missions here with some objectives that need to be compl
 [**Protect email**](m365bp-protect-email-overview.md). Take the necessary steps to protect the email systems from attack.
 
 [**Collaborate and share securely**](m365bp-collaborate-share-securely.md). The objectives of this mission require you to set up secure file sharing for all members of the organization.
+
+:::image type="content" source="../media/bus-premium-card.png" alt-text="Microsoft 365 Business Premium protects your apps, file storage, email, devices, and identities.":::
 
 ## [**Safeguard Managed Devices**](#tab/Safeguard)
 
