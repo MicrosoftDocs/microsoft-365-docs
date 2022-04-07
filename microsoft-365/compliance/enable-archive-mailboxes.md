@@ -84,7 +84,7 @@ To disable an archive mailbox:
 
    A warning message is displayed saying that you'll have 30 days to re-enable the archive mailbox, and that after 30 days, all information in the archive will be permanently deleted.
 
-5. Click **Disable** to disable the archive mailbox.
+5. Select **Disable** to disable the archive mailbox.
 
    It might take a few moments to disable the archive mailbox. When it's disabled, **Archive mailbox: disabled** is displayed in the details pane for the selected user. You might have to click **Refresh** ![Refresh icon.](../media/O365-MDM-Policy-RefreshIcon.gif) to update the information in the details pane.
 
