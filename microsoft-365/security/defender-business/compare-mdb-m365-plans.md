@@ -73,8 +73,8 @@ Defender for Business brings enterprise-grade capabilities of Defender for Endpo
 
 The following table compares security features and capabilities in Defender for Business to Microsoft Defender for Endpoint Plans 1 and 2. <br/><br/>
 
-| Feature/Capability | [Defender for Business](mdb-overview.md) (preview) | [Defender for Endpoint Plan 1](../defender-endpoint/defender-endpoint-plan-1.md) | [Defender for Endpoint Plan 2](../defender-endpoint/microsoft-defender-endpoint.md) |
-|:---|:---|:---|
+| Feature/Capability | [Defender for Business](mdb-overview.md)<br/>(standalone; currently in preview) | [Defender for Endpoint Plan 1](../defender-endpoint/defender-endpoint-plan-1.md) | [Defender for Endpoint Plan 2](../defender-endpoint/microsoft-defender-endpoint.md) |
+|:---|:---|:---|:---|
 | [Centralized management](../defender-endpoint/manage-atp-post-migration.md) <sup>[[1](#fn1)]</sup> | Yes | Yes | Yes |
 | [Simplified client configuration](mdb-simplified-configuration.md) | Yes | No | No |
 | [Threat & vulnerability management](../defender-endpoint/next-gen-threat-and-vuln-mgt.md) | Yes | No | Yes |
@@ -98,7 +98,5 @@ The following table compares security features and capabilities in Defender for 
 ## Next steps
 
 - [See the requirements for Microsoft Defender for Business](mdb-requirements.md)
-
 - [Get Microsoft Defender for Business](get-defender-business.md)
-
 - [Learn how to set up and configure Microsoft Defender for Business](mdb-setup-configuration.md) 
