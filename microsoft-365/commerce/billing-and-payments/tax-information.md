@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: tugu, jmueller
+ms.reviewer: mijeffer, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 search.appverid: MET150
-description: "Find out how much tax you will be charged for your Microsoft 365 for business subscription in different regions. "
 ms.custom:
 - commerce_billing
 - okr_SMB
 - AdminSurgePortfolio
 - AdminTemplateSet
+description: "Find out how much tax you will be charged for your Microsoft 365 for business subscription in different regions."
 ms.date: 03/17/2021
 ---
 

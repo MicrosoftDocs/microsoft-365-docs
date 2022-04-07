@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: drjones, jmueller
+ms.reviewer: jkinms, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -28,6 +28,7 @@ ms.date: 04/02/2021
 ---
 
 # Add more SharePoint storage to your subscription
+
 If you start to run out of storage for your SharePoint sites, you can add storage to your subscription if your plan is eligible. If you don't see the **Office 365 Extra File Storage** in the list of available add-ons, it means your plan is not eligible. For more information, see [Is my plan eligible?](#is-my-plan-eligible-for-office-365-extra-file-storage)
 
 > [!NOTE]
@@ -107,4 +108,3 @@ Office 365 Extra File Storage is available for the following subscriptions:
 ## Related content
 
 [Manage site storage limits](/sharepoint/manage-site-collection-storage-limits) (article)\
-
