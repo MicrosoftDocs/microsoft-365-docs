@@ -28,10 +28,10 @@ The following table show the primary ways people from outside your organization 
 |Team sharing|Guest account|Enabled|
 |Shared channel in Teams|Existing external account|Disabled|
 |External chat and meetings|Existing external account|Enabled|
-|Anonymous file and folder access|None|Enabled|
 |Anonymous meeting join|None|Enabled|
+|Anonymous file and folder access|None|Enabled|
 
-## Guests
+## Document, site, and team sharing
 
 A *guest* is a type of account in Azure Active Directory. Guest accounts are managed through [Azure AD B2B collaboration](/azure/active-directory/external-identities/what-is-b2b). They can be used to share resources in your organizations with anyone who has an email address. You can manage guest accounts the same way you manage users in your organization. Guests do not require a license for most features of collaboration. 
 
@@ -74,7 +74,7 @@ Guest accounts are not used as part of external chat and meetings. External part
 
 For information about how to set up Microsoft 365 for external chat and meetings, see [Manage external access in Microsoft Teams](/microsoftteams/manage-external-access).
 
-## Teams meetings 
+## Anonymous meeting join 
 
 People from outside your organization can join meetings in the following ways:
 
