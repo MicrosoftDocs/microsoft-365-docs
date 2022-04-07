@@ -38,10 +38,6 @@ Admins can take required action on emails, but to get those actions approved, th
 
 :::image type="content" source="../../media/microsoft-365-defender-threat-explorer-manual-remediation.png" alt-text="Screenshot of manual hunting in Office 365 Explorer by date.":::
 
-*Action logs* Shows the details of remediation status like successful, failed, and already in destination.
-
-:::image type="content" source="../../media/microsoft-365-defender-action-center-history.png" alt-text="The Action Center shows the details of remediation status like successful, failed, and already in destination.":::
-
 Security teams can use Explorer to select emails in several ways:
 
 - Choose emails by hand: Use filters in various views. Select up to 100 emails to remediate.
@@ -78,12 +74,11 @@ Unified Action Center shows remediation actions for the past 30 days. Actions ta
 
 Open any remediation item to view details about it, including its remediation name, approval Id, Investigation Id, creation date, description, status, action source, action type, decided by, status. It also opens a side pane with action details, email cluster details, alert and Incident details.
 
-- *Open Investigation page* this opens up an admin Investigation that contains fewer details and tabs. It shows details like: related alert, entity selected for remediation, action taken, remediation status, entity count, logs, approver of action. This investigation keeps a track of investigation done by the admin manually and  contains details to selections made by the admin, hence is called admin action investigation. No need to act on the investigation and alert its already in approved state.   
-- *Email count* Displays the number of emails submitted through Threat Explorer. These emails can be actionable or not actionable. 
-- *Action logs* Shows the details of remediation status like successful/ failed/ already in destination
+- *Open Investigation page* this opens up an admin Investigation that contains fewer details and tabs. It shows details like: related alert, entity selected for remediation, action taken, remediation status, entity count, logs, approver of action. This investigation keeps a track of investigation done by the admin manually and  contains details to selections made by the admin, hence is called admin action investigation. No need to act on the investigation and alert its already in approved state.
+- *Email count* Displays the number of emails submitted through Threat Explorer. These emails can be actionable or not actionable.
+- *Action logs* Show the details of remediation statuses like successful, failed, and already in destination.
 
-  > [!div class="mx-imgBorder"]
-  > [![Screenshot of the action center with actionable and not actionable threats.](../../media/tp-RemediationArticle5.png)](../../media/tp-RemediationArticle5.png#lightbox)
+:::image type="content" source="../../media/microsoft-365-defender-action-center-history-panel.png" alt-text="The Action Center with the Move to Inbox option open.":::
 
   - **Actionable**: Emails in the following cloud mailbox locations can be acted on and moved:
     - Inbox
