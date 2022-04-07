@@ -195,7 +195,7 @@ To create a mail transport rule, view a [short training video](increase-threat-p
 |Provide message text  <br/> |Do not open these types of files—unless you were expecting them—because the files may contain malicious code and knowing the sender isn't a guarantee of safety.  <br/> ||
    
 > [!TIP]
-> You can also add the files you want to block to the anti-malware list in [Step 4: Protect against malware](#4-protect-against-malware).
+> You can also add the files you want to block to the anti-malware list in [Protect against malware](#protect-against-malware).
 
 For more information, see:
 
