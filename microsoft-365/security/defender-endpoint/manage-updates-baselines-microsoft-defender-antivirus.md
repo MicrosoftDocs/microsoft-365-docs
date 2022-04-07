@@ -15,7 +15,7 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 03/22/2022
+ms.date: 04/07/2022
 ms.collection: 
 - M365-security-compliance
 - m365initiative-defender-endpoint
@@ -136,14 +136,21 @@ Security intelligence update version: 1.357.8.0 <br/>
 No known issues
 
 <br/><br/>
-</details><details>
+</details>
+
+
+### Previous version updates: Technical upgrade support only
+
+After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, and are provided for technical upgrade support only.<br/><br/>
+
+<details>
 <summary>November-2021 (Platform: 4.18.2111.5 | Engine: 1.1.18800.4)</summary>
 
 &ensp;Security intelligence update version: **1.355.2.0**<br/>
 &ensp;Released: **December 9th, 2021**<br/>
 &ensp;Platform: **4.18.2111.5**<br/>
 &ensp;Engine: **1.1.18800.4**<br/>
-&ensp;Support phase: **Security and Critical Updates**<br/>
+&ensp;Support phase: **Technical upgrade support (only)**<br/>
 
 Engine version: 1.1.18800.4
 Security intelligence update version: 1.355.2.0
@@ -163,14 +170,7 @@ Security intelligence update version: 1.355.2.0
 ### Known Issues
 No known issues
 <br/>
-</details>
-
-
-### Previous version updates: Technical upgrade support only
-
-After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, and are provided for technical upgrade support only.<br/><br/>
-
-<details>
+</details><details>
 <summary> October-2021 (Platform: 4.18.2110.6 | Engine: 1.1.18700.4)</summary>
 
 &ensp;Security intelligence update version: **1.353.3.0**<br/>
