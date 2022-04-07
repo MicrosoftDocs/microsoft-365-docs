@@ -43,6 +43,10 @@ Microsoft Defender for Endpoint for Linux includes antimalware and endpoint dete
 
 - Access to the Microsoft 365 Defender portal
 - Linux distribution using the [systemd](https://systemd.io/) system manager
+
+  >[!NOTE]
+  >Linux distribution using system manager, except for RHEL/CentOS 6.x support both SystemV and Upstart.
+
 - Beginner-level experience in Linux and BASH scripting
 - Administrative privileges on the device (in case of manual deployment)
 
