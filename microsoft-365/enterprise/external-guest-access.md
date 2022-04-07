@@ -17,10 +17,11 @@ description: "Learn about how people outside your organization can access your M
 
 # Overview of external access in Microsoft 365
 
-There are _____ ways people from outside your organization can access your Microsoft 365 resources:
+With Microsoft 365, you can collaborate with people outside your organization in a variety of ways. 
 
-- As a guest in a Microsoft Teams team or a Microsoft 365 group
-- As a guest in a SharePoint site
+These are the primary ways people from outside your organization can access your Microsoft 365 resources:
+
+- As a guest in a Microsoft Teams team, a Microsoft 365 group, or a SharePoint site
 - As a guest with a sharing link to a file or folder
 - As a participant in a 1:1 or group chat
 - As a participant in a Teams shared channel
@@ -30,6 +31,20 @@ There are _____ ways people from outside your organization can access your Micro
 Collaboration Methods used in Microsoft Teams from Users Outside Your Organization 
 
 Guest access, external access, anonymous meeting join, and shared channels are the four primary mechanisms for external collaboration in Microsoft Teams. They each address different scenarios, and they can all be enabled simultaneously to achieve different types of collaboration within Teams. 
+
+## Collaborating with guests
+
+A *guest* is a type of account in Azure Active Directory. Guest accounts can be used to share resources in your organizations with anyone who has an email address. You can manage guest accounts the same way you manage users in your organization.
+
+Guests can only access resources that you specifically share with them.
+
+If the guest has a work or school account in another organization or a Microsoft account, they can log in with their regular username and password. If they have a different type of account - such as a Gmail account - they can log in by using a one-time passcode that is sent to their email address.
+
+With guests you can:
+
+- Invite them to Microsoft 365 groups, teams, or SharePoint sites where they have nearly all the same capabilities as an internal member.
+- Share a single file or a folder with them which they can view or edit depending on the permissions you give them.
+
 
 Guest Access 
 What is it? Guest access allows you to invite people from outside your organization to join one or multiple teams. With guest access, you can provide access to teams, documents in channels, resources, chats, and applications to people outside your organization, while maintaining control over your corporate data. 
