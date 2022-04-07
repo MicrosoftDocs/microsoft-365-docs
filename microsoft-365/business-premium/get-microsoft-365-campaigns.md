@@ -40,7 +40,8 @@ Campaigns and political parties in the USA are eligible for special pricing for 
 
 If your campaign or political party qualifies, Microsoft 365 for Campaigns is the least expensive plan available through Microsoft. See [Sign up for Microsoft 365 for Campaigns](m365-campaigns-sign-up.md).  
 
-If you're not eligible for special pricing, Microsoft 365 Business Premium is still the most cost-effective way obtain comprehensive security for a collaboration environment. See [How to get Microsoft 365 Business Premium](get-microsoft-365-business-premium.md).
+> [!TIP]
+> If you're not eligible for special pricing, Microsoft 365 Business Premium is still the most cost-effective way obtain comprehensive security for a collaboration environment. See [How to get Microsoft 365 Business Premium](get-microsoft-365-business-premium.md).
 
 ## What does Microsoft 365 for Campaigns include?
 
