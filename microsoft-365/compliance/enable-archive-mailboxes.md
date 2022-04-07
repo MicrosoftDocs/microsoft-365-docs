@@ -48,7 +48,7 @@ If you don't see the **Archive** page in the Microsoft 365 compliance center, as
    > [!NOTE]
    > The **Archive** page shows a maximum of 500 users.
 
-3. In the list of mailboxes, select the user that you want to enable the archive mailbox for and clck on **Enable Archive**.
+3. In the list of mailboxes, select the user that you want to enable the archive mailbox for and select **Enable Archive**.
 
    ![Click Enable in the details pane of the selected user to enable the archive mailbox.](../media/8b53cdec-d5c9-4c28-af11-611f95c37b34.png)
 
