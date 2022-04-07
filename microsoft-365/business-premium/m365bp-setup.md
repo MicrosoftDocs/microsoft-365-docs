@@ -60,6 +60,7 @@ The following video shows the guided setup process for Microsoft 365 Business Ba
 If you'd prefer to have a Microsoft partner help you get and set up Microsoft 365, follow these steps:
 
 1. Go to the **Microsoft Solution Providers** page ([https://www.microsoft.com/solution-providers](https://www.microsoft.com/solution-providers)).
+
 2. In the search box, fill in your location and company size. 
 
 3. In the **Search for products, services, skills, industries** box, put `Microsoft 365`, and then select **Go**.
