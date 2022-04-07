@@ -151,7 +151,7 @@ Use the generated `AppID` and `Key` in your Microsoft 365 Moodle Plugins setup p
 1. To validate [cron](https://docs.moodle.org/310/en/Cron) tasks and to run them manually for the first time, navigate to **Site administration** > **Server** > **Tasks** > **Scheduled tasks**.
 
     1. Scroll down and find the **Sync Moodle courses to Microsoft Teams** task and select **Run now**.
-        1. This will create groups and Teams if any owner is found. 
+        1. This will create groups and Teams if any owner is found.
         1. If the user has `local/o365:teamowner` capability in the course context, the user is a team owner. If the user has `local/o365:teammember` capability in the course context, the user is a team member.  
         1. The default *Teacher* role has the `local/o365:teamowner" capability`, and the default *Student* role has the the `local/o365:teammember` capability.
 
@@ -181,63 +181,14 @@ Use the generated `AppID` and `Key` in your Microsoft 365 Moodle Plugins setup p
         ✔ On the **Manage users** tab, find **Authenticated user** role, and select the edit icon.
         ✔ Scroll down and find the **Create a web service token** capability and select the **Allow** checkbox. Save changes.
 
-## 3. Deploy the Moodle Assistant Bot to Azure
-
-The free Moodle assistant bot for Microsoft Teams helps teachers and students answer questions about their courses, assignments, grades, and other information in Moodle. The bot also sends Moodle notifications to students and teachers within Teams. The bot is an open-source project maintained by Microsoft, and is available on [GitHub](https://github.com/microsoft/Moodle-Teams-Bot).
-
-> [!NOTE]
->
-> * Deploy resources to your Azure subscription. All resources were configured using the **free** tier. Depending on the usage of your bot, you may have to scale these resources.
-
-### Moodle bot information flow
-
-To install the bot, you must register it on the [Microsoft Identity Platform](https://identity.microsoft.com/Landing). This allows your bot to authenticate against your Microsoft endpoints.
-
-To register your bot:
-
-1. Sign in to the [Microsoft Application Registration Portal](https://portal.azure.com/).
-1. Select on the **Azure Active Directory** link from **Azure services** section, then **App Registrations** from the **Manage** section on the left.
-1. Enter a name for your application.
-1. Choose the **Accounts in any organizational directory (Any Azure AD directory - Multitenant)** option in **Supported account types** section. Multi-tenant application is required.
-1. Select the **Register** button to finish registration.
-1. You'll be redirected to the settings page of the newly registered app; if not, find the app from the list of apps, and go to the settings page by selecting its name.
-1. Note the **Application (client) ID** of the app, which will be used in plugin configuration in Moodle.
-1. From the **Manage** section on the left of the page, go to **Certificates & Secrets**, and create a new client secret by clicking the **New client secret** button. Note the secret which will be used in plugin configuration in Moodle.
-1. Go to **Site administration** > **Plugins** > **Microsoft 365 Integration** > **Teams Settings**, and fill in the Application (client) ID and the client secret in **Application ID** and **Client Secret** settings.
-1. Save changes.
-
-After generating your application ID and password, **deploy your bot to Azure**:
-
-1. Go to **Site administration** > **Plugins** > **Microsoft 365 Integration** > **Teams Settings**.
-1. Check that the **Application ID** and **Client secret** are correctly configured and saved.
-1. Select **Deploy to Azure** button.
-1. Configure the following in the **Custom deployment** window:
-    1. Choose a **Subscription**.
-    1. Choose a **Resource group**. You may need to create a new one.
-    1. Choose a **Location**.
-    1. Choose a [LUIS Pricing Tier](https://azure.microsoft.com/pricing/details/cognitive-services/language-understanding-intelligent-services/). The free tier can get you started.
-    1. **LUIS Region** - region where the LUIS resource will be deployed.
-    1. **Bot Application ID** - the application ID of the Moodle Teams integration application, which is the same as **Application ID** in **Teams Settings** tab of **Microsoft 365 Integration** configuration.
-    1. **Bot Application Password** - the client secret of the Moodle Teams integration application, which is the same as **Client Secret** in **Teams Settings** tab of **Microsoft 365 Integration** configuration.
-    1. **Moodle URL**.
-    1. **Azure AD Application ID** - the Application ID saved in the **Setup** tab of **Microsoft 365 Integration** configuration.
-    1. **Azure AD Application Key** - the Application Key saved in the **Setup** tab of **Microsoft 365 Integration** configuration.
-    1. **Azure AD Tenant** - the tenant name (xyz.onmicrosoft.com) of your Azure AD tenant.
-    1. **Shared Moodle Secret** - paste the **Shared Moodle Secret** setting of in the **Teams Settings** tab of **Microsoft 365 Integration** configuration.
-1. Once all configured, agree the terms and conditions, and click **Purchase**. This will start the bot deployment, which can take a few minutes to finish.
-
-After the resources have completed deploying to Azure, you must configure the Microsoft 365 Moodle plugins with a messaging endpoint. You must get the endpoint from your bot in Azure:
-
-1. Sign in to the [Microsoft Azure portal](https://portal.azure.com).
-1. In the left pane, select **Resource groups** and select the resource group you used or created, while deploying your bot.
-1. Select the **WebApp Bot** resource from the list of resources in the group.
-1. Copy the **Messaging Endpoint** from the **Overview** section. The URL must appear as follows: `https://botname.azurewebsites.net/api/webhook`.
-1. In Moodle, open the **Team Settings** of the **Microsoft 365 Integration** configuration page.
-1. In the **Bot webhook end point** field, paste the URL you just copied.
-1. On the **Teams Settings** page, check the **Bot feature enabled** box.
-1. Select **Save Changes**.
-
-After the bot is fully deployed and configured, you can:
+After the plugins are installed and configured, you can:
 
 * [Add Moodle tabs to Teams classes](/microsoftteams/install-moodle-integration#step-4-deploy-your-microsoft-teams-app).
 * [Add Teams classes and meetings to the Moodle LMS](teams-classes-meetings-with-moodle.md).
+
+## Extra Moodle plugin documentation
+
+If you would like to review Moodle's Microsoft 365 integration guides and release notes, see these resources:
+
+* [Moodle and Microsoft 365 3.10.6](https://docs.moodle.org/310/en/Microsoft_365).
+* [Moodle and Microsoft 365 3.11.3](https://docs.moodle.org/310/en/Microsoft_365).
