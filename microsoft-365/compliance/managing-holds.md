@@ -1,5 +1,5 @@
 ---
-title: "Manage holds in Advanced eDiscovery"
+title: "Manage holds in eDiscovery (Premium)"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,27 +17,25 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 
-description: Learn how to place holds on custodians and their data sources to preserve relevant content for your Advanced eDiscovery case.
+description: Learn how to place holds on custodians and their data sources to preserve relevant content for your eDiscovery (Premium) case.
 ms.custom: 
 - seo-marvel-mar2020
 - admindeeplinkMAC
 ---
 
-# Manage holds in Advanced eDiscovery
+# Manage holds in eDiscovery (Premium)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-You can use an Advanced eDiscovery case to create holds to preserve content that might be relevant to your case. Using the Advanced eDiscovery hold capabilities, you can place holds on custodians and their data sources. Additionally, you can place a non-custodial hold on mailboxes and OneDrive for Business sites. You can also place a hold on the group mailbox, SharePoint site, and OneDrive for Business site for a Microsoft 365 Group. Similarly, you can place a hold on the mailbox and site that are associated with Microsoft Teams. When you place content locations on hold, content is held until you release the custodian, remove a specific data location, or delete the hold policy entirely.
+You can use an Microsoft Purview eDiscovery (Premium) case to create holds to preserve content that might be relevant to your case. Using the eDiscovery (Premium) hold capabilities, you can place holds on custodians and their data sources. Additionally, you can place a non-custodial hold on mailboxes and OneDrive for Business sites. You can also place a hold on the group mailbox, SharePoint site, and OneDrive for Business site for a Microsoft 365 Group. Similarly, you can place a hold on the mailbox and site that are associated with Microsoft Teams. When you place content locations on hold, content is held until you release the custodian, remove a specific data location, or delete the hold policy entirely.
 
 ## Manage custodian-based holds
 
-In some cases, you may have a set of custodians that you have identified and have decided to preserve their data during the case. In Advanced eDiscovery, when these custodians are placed on hold, the user and their selected data sources are automatically added to a custodian hold policy.
+In some cases, you may have a set of custodians that you have identified and have decided to preserve their data during the case. In eDiscovery (Premium), when these custodians are placed on hold, the user and their selected data sources are automatically added to a custodian hold policy.
 
 To view the custodian hold policy:
 
 1. In the Microsoft Purview compliance portal, click **eDiscovery > Advanced** to display the list of cases in your organization.
 
-2. Go to the **Sources** tab to add custodians within your case. To learn how you can add and place custodians on hold within an Advanced eDiscovery case, see [Add Custodians to a case](add-custodians-to-case.md). If you have already added custodians and placed them on hold, go to step 3.
+2. Go to the **Sources** tab to add custodians within your case. To learn how you can add and place custodians on hold within an eDiscovery (Premium) case, see [Add Custodians to a case](add-custodians-to-case.md). If you have already added custodians and placed them on hold, go to step 3.
 
 3. Go to the **Holds** tab and click **CustodianHold\<HoldId>**.
 
@@ -51,9 +49,9 @@ When you create a hold, you have the following options to scope the content that
   
 - You can specify a date range to hold only the content that was sent, received, or created within that date range. Alternatively, you can hold all content regardless of when it was sent, received, or created.
 
-To create a non-custodial hold for an Advanced eDiscovery case:
+To create a non-custodial hold for an eDiscovery (Premium) case:
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>, click **eDiscovery > Advanced** to display the list of cases in your organization.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">compliance portal</a>, click **eDiscovery > Advanced** to display the list of cases in your organization.
   
 2. Click **Open** next to the case that you want to create the holds in.
   
@@ -121,7 +119,7 @@ Keep the following things in mind about hold statistics:
 
 ## Place a hold on Microsoft Teams and Office 365 Groups
 
-Microsoft Teams is built on Office 365 Groups. Therefore, placing them on hold in Advanced eDiscovery is similar.
+Microsoft Teams is built on Office 365 Groups. Therefore, placing them on hold in eDiscovery (Premium) is similar.
 
 - **How do I map an additional Microsoft 365 Groups or Microsoft Teams site to a custodian? And what about placing a non-Custodial hold on Microsoft 365 Groups and Microsoft Teams?** Microsoft Teams is built on Microsoft 365 Groups. Therefore, placing them on hold in an eDiscovery case is similar. Keep the following things in mind when placing Microsoft 365 Groups and Microsoft Teams on hold.
 
@@ -140,7 +138,7 @@ Microsoft Teams is built on Office 365 Groups. Therefore, placing them on hold i
     > [!NOTE]
     > To run the Get-UnifiedGroup cmdlet, you have to be assigned the View-Only Recipients role in Exchange Online or be a member of a role group that's assigned the View-Only Recipients role.
 
-  - When a user's mailbox is searched, any Microsoft 365 Group or Microsoft Team that the user is a member of won't be searched. Similarly, when you place a Microsoft 365 Group or Microsoft Team hold, only the group mailbox and group site are placed on hold; the mailboxes and OneDrive for Business sites of group members aren't placed on hold unless you explicitly add them as custodians or place their data sources hold. Therefore, if you the need to place a Microsoft 365 Group or Microsoft Team on hold for a specific custodian, consider mapping the group site and group mailbox to the custodian (See Managing Custodians in Advanced eDiscovery). If the Microsoft 365 Group or Microsoft Team is not attributable to a single custodian, consider adding the source to a non-custodial hold.
+  - When a user's mailbox is searched, any Microsoft 365 Group or Microsoft Team that the user is a member of won't be searched. Similarly, when you place a Microsoft 365 Group or Microsoft Team hold, only the group mailbox and group site are placed on hold; the mailboxes and OneDrive for Business sites of group members aren't placed on hold unless you explicitly add them as custodians or place their data sources hold. Therefore, if you the need to place a Microsoft 365 Group or Microsoft Team on hold for a specific custodian, consider mapping the group site and group mailbox to the custodian (See Managing Custodians in eDiscovery (Premium)). If the Microsoft 365 Group or Microsoft Team is not attributable to a single custodian, consider adding the source to a non-custodial hold.
   - To get a list of the members of a Microsoft 365 Group or Microsoft Team, you can view the properties on the **Home** > [**Groups**](https://go.microsoft.com/fwlink/p/?linkid=2052855) page in the Microsoft 365 admin center. Alternatively, you can run the following command in Exchange Online PowerShell:
 
     ```powershell

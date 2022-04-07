@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 
+ms.date: 04/05/2022
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,15 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 
-description: "Learn how to select documents from one review set and work with them individually in another set in an Advanced eDiscovery case."
+description: "Learn how to select documents from one review set and work with them individually in another set in an Microsoft Purview eDiscovery (Premium) case."
 ms.custom: 
 - seo-marvel-mar2020
 - seo-marvel-apr2020
 ---
 
 # Add data to a review set from another review set
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 In some cases, it may be necessary to select documents from one review set and work with them individually in another review set. This is especially useful if you've culled content in a review set and want to run analytics on the subset of data.
 

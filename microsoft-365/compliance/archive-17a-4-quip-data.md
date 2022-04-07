@@ -16,11 +16,9 @@ description: "Learn how to set up and use a 17a-4 Quip DataParser connector to i
 
 # Set up a connector to archive Quip data
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Use the [Quip DataParser](https://www.17a-4.com/quip-dataparser/) from 17a-4 LLC to import and archive data from Quip to user mailboxes in your Microsoft 365 organization. The DataParser includes a Quip connector that's configured to capture items from a third-party data source and import those items to Microsoft 365. The Quip DataParser connector converts Quip data to an email message format and then imports those items to user mailboxes in Microsoft 365.
 
-After Quip data is stored in user mailboxes, you can apply Microsoft Purview features such as Litigation Hold, eDiscovery, retention policies and retention labels, and communication compliance. Using a Quip connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
+After Quip data is stored in user mailboxes, you can apply Microsoft 365 compliance features such as Litigation Hold, eDiscovery, retention policies and retention labels, and communication compliance. Using a Quip connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
 
 ## Overview of archiving Quip data
 
@@ -40,13 +38,13 @@ The following overview explains the process of using a data connector to archive
 
 - Create a DataParser account for Microsoft connectors. To do this, contact [17a-4 LLC](https://www.17a-4.com/contact/). You need to sign into this account when you create the connector in Step 1.
 
-- The user who creates the Quip DataParser connector in Step 1 (and completes it in Step 3) must be assigned the Data Connector Admin role. This role is required to add connectors on the **Data connectors** page in the Microsoft Purview compliance portal. This role is added by default to multiple role groups. For a list of these role groups, see the "Roles in the security and compliance centers" section in [Permissions in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatively, an admin in your organization can create a custom role group, assign the Data Connector Admin role, and then add the appropriate users as members. For instructions, see the "Create a custom role group" section in [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- The user who creates the Quip DataParser connector in Step 1 (and completes it in Step 3) must be assigned the Data Connector Admin role. This role is required to add connectors on the **Data connectors** page in the compliance portal. This role is added by default to multiple role groups. For a list of these role groups, see the "Roles in the security and compliance centers" section in [Permissions in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatively, an admin in your organization can create a custom role group, assign the Data Connector Admin role, and then add the appropriate users as members. For instructions, see the "Create a custom role group" section in [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
-- This 17a-4 data connector is available in GCC environments in the Microsoft 365 US Government cloud. Third-party applications and services might involve storing, transmitting, and processing your organization's customer data on third-party systems that are outside of the Microsoft 365 infrastructure and therefore are not covered by the Microsoft Purview and data protection commitments. Microsoft makes no representation that use of this product to connect to third-party applications implies that those third-party applications are FEDRAMP compliant.
+- This 17a-4 data connector is available in GCC environments in the Microsoft 365 US Government cloud. Third-party applications and services might involve storing, transmitting, and processing your organization's customer data on third-party systems that are outside of the Microsoft 365 infrastructure and therefore are not covered by the Microsoft 365 compliance and data protection commitments. Microsoft makes no representation that use of this product to connect to third-party applications implies that those third-party applications are FEDRAMP compliant.
 
 ## Step 1: Set up a Quip DataParser connector
 
-The first step is to access to the Data connectors page in the Microsoft Purview compliance portal and create a 17a-4 connector for Quip data.
+The first step is to access to the Data connectors page in the compliance portal and create a 17a-4 connector for Quip data.
 
 1. Go to <https://compliance.microsoft.com> and then click **Data connectors** > **Quip DataParser**.
 
@@ -68,7 +66,7 @@ The Quip DataParser connector will automatically map users to their Microsoft 36
 
 ## Step 4: Monitor the Quip DataParser connector
 
-After you create a Quip DataParser connector, you can view the connector status in the Microsoft Purview compliance portal.
+After you create a Quip DataParser connector, you can view the connector status in the compliance portal.
 
 1. Go to <https://compliance.microsoft.com> and click **Data connectors** in the left nav.
 

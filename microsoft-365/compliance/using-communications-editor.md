@@ -22,8 +22,6 @@ ms.custom: seo-marvel-mar2020
 
 # Use the communications editor
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 As you define the content of your portal content, legal hold notifications, and related reminders/escalations, you can use the Communications Editor to format and dynamically customize your content.
 
 ## Rich text editor

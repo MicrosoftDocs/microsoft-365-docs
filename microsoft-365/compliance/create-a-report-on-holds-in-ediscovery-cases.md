@@ -24,9 +24,7 @@ description: Learn how to generate a report that contains information about all 
 
 # Use a script to create a report on holds in eDiscovery cases
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-The script in this article lets eDiscovery administrators and eDiscovery managers generate a report that contains information about all holds that are associated with Core and Advanced eDiscovery cases in the Microsoft Purview compliance portal. The report contains information such as the name of the case a hold is associated with, the content locations that are placed on hold, and whether the hold is query-based. If there are cases that don't have any holds, the script will create an additional report with a list of cases without holds.
+The script in this article lets eDiscovery administrators and eDiscovery managers generate a report that contains information about all holds that are associated with Core and eDiscovery (Premium) cases in the Microsoft Purview compliance portal. The report contains information such as the name of the case a hold is associated with, the content locations that are placed on hold, and whether the hold is query-based. If there are cases that don't have any holds, the script will create an additional report with a list of cases without holds.
 
 See the [More information](#more-information) section for a detailed description of the information included in the report.
 
@@ -102,7 +100,7 @@ After you've connected to Security & Compliance Center PowerShell, the next step
    }
    #get information on the cases and pass values to the case report function
    " "
-   write-host "Gathering a list of Core eDiscovery cases and holds..."
+   write-host "Gathering a list of eDiscovery (Standard) cases and holds..."
    " "
    $edc =Get-ComplianceCase -ErrorAction SilentlyContinue
    foreach($cc in $edc)
@@ -133,7 +131,7 @@ After you've connected to Security & Compliance Center PowerShell, the next step
    }
    #get information on the cases and pass values to the case report function
    " "
-   write-host "Gathering a list of Advanced eDiscovery cases and holds..."
+   write-host "Gathering a list of eDiscovery (Premium) cases and holds..."
    " "
    $edc =Get-ComplianceCase -CaseType Advanced -ErrorAction SilentlyContinue
    foreach($cc in $edc)
@@ -198,7 +196,7 @@ The case holds report that's created when you run the script in this article con
 
 - The name of the hold and the name of the eDiscovery case that the hold is associated with.
 
-- Whether the hold is associated with a Core or Advanced eDiscovery case.
+- Whether the hold is associated with a Core or eDiscovery (Premium) case.
 
 - Whether or not the eDiscovery case is active or closed.
 

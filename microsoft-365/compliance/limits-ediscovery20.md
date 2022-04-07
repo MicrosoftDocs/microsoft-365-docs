@@ -1,5 +1,5 @@
 ---
-title: "Advanced eDiscovery limits"
+title: "eDiscovery (Premium) limits"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,18 +15,16 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: "Learn about the case limits, indexing limits, and search limits in effect for the Advanced eDiscovery solution in Microsoft 365."
+description: "Learn about the case limits, indexing limits, and search limits in effect for the eDiscovery (Premium) solution in Microsoft 365."
 ---
 
-# Limits in Advanced eDiscovery
+# Limits in eDiscovery (Premium)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-This article describes the limits in the Advanced eDiscovery solution in Microsoft 365.
+This article describes the limits in the Microsoft Purview eDiscovery (Premium) solution in Microsoft 365.
 
 ## Case and review set limits
 
-The following table lists the limits for cases and review sets in Advanced eDiscovery.
+The following table lists the limits for cases and review sets in eDiscovery (Premium).
 
 | Description of limit | Limit |
 |:-----|:-----|
@@ -42,17 +40,17 @@ The following table lists the limits for cases and review sets in Advanced eDisc
 
 ## Hold limits
 
-The following table lists the limits for holds associated with an Advanced eDiscovery case.
+The following table lists the limits for holds associated with an eDiscovery (Premium) case.
 
 | Description of limit | Limit |
 |:-----|:-----|
-|Maximum number of hold policies for an organization. This limit includes the combined total of hold policies in Core eDiscovery and Advanced eDiscovery cases. <br/> |10,000<sup>3</sup>  <br/> |
+|Maximum number of hold policies for an organization. This limit includes the combined total of hold policies in Microsoft Purview eDiscovery (Standard) and Microsoft Purview eDiscovery (Premium) cases. <br/> |10,000<sup>3</sup>  <br/> |
 |Maximum number of mailboxes in a single case hold. This limit includes the combined total of user mailboxes, and the mailboxes associated with Microsoft 365 Groups, Microsoft Teams, and Yammer Groups. <br/> |1,000  <br/> |
 |Maximum number of sites in a single case hold. This limit includes the combined total of OneDrive for Business sites, SharePoint sites, and the sites associated with Microsoft 365 Groups, Microsoft Teams, and Yammer Groups.  <br/> |100  <br/> |
 
 ## Indexing limits
 
-The following table lists the indexing limits in Advanced eDiscovery.
+The following table lists the indexing limits in eDiscovery (Premium).
 
 | Description of limit | Limit |
 |:-----|:-----|
@@ -63,7 +61,7 @@ The following table lists the indexing limits in Advanced eDiscovery.
 
 ## Search limits
 
-The limits described in this section are related to using the search tool on the **Searches** tab to collect data for a case. For more information, see [Collect data for a case in Advanced eDiscovery](collecting-data-for-ediscovery.md).
+The limits described in this section are related to using the search tool on the **Searches** tab to collect data for a case. For more information, see [Collect data for a case in eDiscovery (Premium)](collecting-data-for-ediscovery.md).
 
 | Description of limit | Limit |
 |:-----|:-----|
@@ -123,7 +121,7 @@ The limits described in this section are related to exporting documents out of a
 > [!NOTE]
 > <sup>1</sup> This is the maximum number of tags that you can create in a case. This limit isn't related to the number of documents that can be tagged.
 >
-> <sup>2</sup> This limit is shared with exporting content in other eDiscovery tools. This means that concurrent exports in Content search and Core eDiscovery (and adding content to review sets in Advanced eDiscovery) are all applied against this limit.
+> <sup>2</sup> This limit is shared with exporting content in other eDiscovery tools. This means that concurrent exports in Content search and eDiscovery (Standard) (and adding content to review sets in eDiscovery (Premium)) are all applied against this limit.
 >
 > <sup>3</sup> When you put more than 1,000 mailboxes or 100 sites on hold in a single hold policy, the system will automatically scale the hold as needed. This means the system will automatically add data locations to multiple hold policies, instead of adding them to a single hold policy. However, the limit of 10,000 case hold policies per organization still applies.
 >
@@ -137,4 +135,4 @@ The limits described in this section are related to exporting documents out of a
 >
 > <sup>6</sup> For non-phrase queries (a keyword value that doesn't use double quotation marks) we use a special prefix index. This tells us that a word occurs in a document, but not where it occurs in the document. To do a phrase query (a keyword value with double quotation marks), we need to compare the position within the document for the words in the phrase. This means that we can't use the prefix index for phrase queries. In this case, we internally expand the query with all possible words that the prefix expands to; for example,  **time\*** can expand to  **"time OR timer OR times OR timex OR timeboxed OR …"**. The limit of 10,000 is the maximum number of variants the word can expand to, not the number of documents matching the query. There is no upper limit for non-phrase terms.
 >
-> <sup>7</sup> This limit applies to downloading selected documents from a review set. It doesn't apply to exporting documents from a review set. For more information about downloading and exporting documents, see [Export case data in Advanced eDiscovery](exporting-data-ediscover20.md).
+> <sup>7</sup> This limit applies to downloading selected documents from a review set. It doesn't apply to exporting documents from a review set. For more information about downloading and exporting documents, see [Export case data in eDiscovery (Premium)](exporting-data-ediscover20.md).

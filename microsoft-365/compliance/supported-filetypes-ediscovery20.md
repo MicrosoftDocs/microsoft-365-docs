@@ -1,5 +1,5 @@
 ---
-title: "Supported file types in Advanced eDiscovery"
+title: "Supported file types in eDiscovery (Premium)"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,15 +14,13 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-description: "A list of supported file types in Microsoft 365 Advanced eDiscovery, including image file types supported by the OCR functionality in Advanced eDiscovery."
+description: "A list of supported file types in Microsoft 365 eDiscovery (Premium), including image file types supported by the OCR functionality in eDiscovery (Premium)."
 ms.custom: seo-marvel-apr2020
 ---
 
-# Supported file types in Advanced eDiscovery
+# Supported file types in eDiscovery (Premium)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Advanced eDiscovery supports many file types at many different levels. The support files types are described in the following tables in this article. This list isn't finalized, and we will add new file types as we continue our validation testing. These tables indicate if a file type is supported for text extraction (and Optical Character Recognition or OCR text extraction for image files), viewable in the native viewer and also support in the Annotate viewer in Advanced eDiscovery.
+Microsoft Purview eDiscovery (Premium) supports many file types at many different levels. The support files types are described in the following tables in this article. This list isn't finalized, and we will add new file types as we continue our validation testing. These tables indicate if a file type is supported for text extraction (and Optical Character Recognition or OCR text extraction for image files), viewable in the native viewer and also support in the Annotate viewer in eDiscovery (Premium).
 
 ## Archive / Container
 
