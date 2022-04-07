@@ -4,9 +4,9 @@
   - name: Get started
     items:
     - name: Overview
-      href: /microsoftteams/flw-landing-page?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+      href: flw-landing-page.md
     - name: Licensing options for frontline workers
-      href: /microsoftteams/flw-licensing-options?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+      href: flw-licensing-options.md
   - name: Deploy
     items:
     - name: Start with a pilot deployment
@@ -14,13 +14,13 @@
     - name: Extend your pilot to a full deployment
       href: 
   - name: Onboard your users
-    href: /microsoftteams/flw-onboarding-wizard?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+    href: flw-onboarding-wizard.md
   - name: Scenarios
     items: 
     - name: Virtual appointments
-      href: /microsoftteams/expand-teams-across-your-org/bookings-virtual-visits?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+      href: bookings-virtual-visits.md
     - name: Team collaboration
-      href: /microsoftteams/expand-teams-across-your-org/retail-team-collaboration?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+      href: retail-team-collaboration.md
     - name: Simplify business processes
-      href: /microsoftteams/expand-teams-across-your-org/retail-business-processes?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+      href: retail-business-processes.md
 

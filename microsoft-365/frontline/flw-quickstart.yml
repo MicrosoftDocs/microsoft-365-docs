@@ -1,0 +1,251 @@
+### YamlMime:Tutorial
+title: Frontline Worker quick start guide
+metadata:
+  title: Quick start - Microsoft Teams Frontline Worker
+  description: Set up an effective pilot for frontline workers (such as shift, retail, or factory workers) based on agile principles and an iterative approach.
+  audience: IT Pro
+  level: Intermediate
+  displayType: one-column
+  ms.author: samanro
+  ms.reviewer: keschm
+  manager: serdars
+  ms.service: msteams
+  ms.topic: tutorial
+  f1.keywords:
+  - NOCSH
+  ms.localizationpriority: medium
+  search.appverid: MET150
+  ms.collection:
+    - M365-collaboration
+    - Teams_ITAdmin_FLW
+    - remotework
+  appliesto:
+    - Microsoft Teams
+
+items:
+- durationInMinutes: 2
+  content: |
+    In this training, we'll walk you through how to set up an effective pilot for frontline workers based on agile principles and an iterative approach. Frontline workers are workers who might be factory workers, retail specialists, healthcare specialists or any staff member who regularly engages with customers on behalf of your company.
+    
+    > [!NOTE]
+    > Please review and complete the [Prerequisites and environmental dependencies for Teams](upgrade-plan-journey-prerequisites.md) prior to beginning this work.
+
+    [!INCLUDE [tutorial-disclaimer-note](includes/tutorial-disclaimer-note.md)]
+
+    This training is for you if you’re:
+    -   An IT pro.
+    -   Responsible for planning, or deploying Teams for Frontline Workers.
+
+    We’ll cover the following sections:
+    -   Get your people together
+    -   Plan pilot logistics
+    -   Technical and pilot team configuration
+    -   Communicate
+    -   Measure
+    -   Iterate and expand
+
+    The following information is out of scope:
+    -   This content will reference documentation on how to prepare Teams for a frontline worker pilot, but overall Teams configuration is outside the scope of this article.
+
+    [!INCLUDE [tutorial-disclaimer-note](includes/tutorial-disclaimer-roadmap.md)]
+
+    If you have any questions or feedback about this training, you can:
+
+    -   Post in the comments section at the bottom of the “Next steps” page of this tutorial.
+
+    To give us product feedback about Teams, such as ideas for new features,
+    visit the [Teams feedback portal](https://feedbackportal.microsoft.com/feedback/forum/ad198462-1c1c-ec11-b6e7-0022481f8472).
+
+- title: Get your people together
+  durationInMinutes: 4
+  content: |
+
+    Assemble a group of individuals from your business, IT, and frontline communities to act as the stakeholder and decision-making group for your Teams pilot for frontline workers. Be sure to include individuals from all three communities to give yourself the best chance for success:
+
+    Next, identify your phase 1 pilot community and make sure it includes actual frontline workers in the smallest logical grouping for your organization. For example, one restaurant, one division of a department store, one store, one clinical ward, one precinct, one plant, one distribution center, etc.. The key is to optimize around the average frontline worker being part of one team only. Managers or specialists may be in more than one.
+
+    ### Best practice
+    It's important to include all roles within that smallest logical grouping, from managers to part time or seasonal workers to uncover valuable insights and enable modern communication scenarios. Your most junior staff will surprise you! Some key delightful and unintended valuable scenarios uncovered during pilots with sample customers include:
+    -   Standardized Expectations and Training: Taking a picture of a clean stove to illustrate to kitchen staff what clean means. “If it doesn’t look like this, then it isn’t clean!”
+
+    -   Reducing shrinkage: Taking a picture of a known shoplifter and notifying other employees immediately. Teams on future shifts will also see this picture to mitigate future risk.
+
+    ### Decision point
+    At the end of this phase, you should be able to answer these questions:
+    -   Who will participate in your pilot?
+
+    -   What's the smallest logical grouping for your organization?
+
+- title: Plan pilot logistics
+  durationInMinutes: 4
+  content: |
+
+    For a successful pilot for frontline workers, simplicity is key! For most customers, this community typically isn’t provided any company-supported communication or collaboration technology, but are likely already leveraging unsupported consumer tools to accomplish some basic needs. A recommended best practice it to begin where your users are, and mimic the capabilities they’re using in consumer tools today. As your pilot progresses and the iteration process begins, you can grow the experience.
+
+    ### Not sure what consumer tools these users are currently using?
+    Included in the frontline worker “Pilot in a Box” are sample user surveys. Utilize the pre-pilot survey to inventory the tools, capabilities, and scenarios.
+
+    ### Chat configuration options
+    Within Chat on mobile, you can have the normal traditional chat layout for Teams OR a layout that includes favorite channels in Chat. This second, simplified UI works well for frontline workers who are only in one team and is the recommended best practice. Configuring “Show favorite channels in chat” also creates an opportunity to remove the ‘Teams’ button from the frontline worker app setup policy to further streamline and simplify the end user experience without a loss of functionality. For users who will be in multiple teams, it is not recommended. Luckily, this can be configured on a per user basis and grow in sophistication as needed.
+
+    ### Best practice
+    Configure Phase 1 of the frontline Teams experience to mimic the consumer tools these users are already using! We recommend starting your pilot for frontline workers with “Show favorite channels in Chat” for simplified communications and Shifts (optional).
+    
+    |  With Shifts  |  Without Shifts  |
+    |---------------|------------------|
+    |:::image type="content" source="media/firstline-worker-chat-with-shifts.png" alt-text="Screenshot of phone screen with Shifts added":::    |:::image type="content" source="media/firstline-worker-chat-without-shifts.png" alt-text="Screenshot of phone screen without Shifts added":::|
+
+    ### Decision points:
+
+    -  Which capabilities will be in Phase 1 of your pilot for frontline workers?
+    -  Do your frontline workers need Shifts?
+    -  Which chat configuration will you use?
+
+- title: Technical and pilot team configuration
+  durationInMinutes: 25
+  content: |
+
+    If you haven't already done so, complete the technical prerequisites highlighted at the beginning of [Prerequisites and environmental dependencies for Teams](upgrade-plan-journey-prerequisites.md). Understanding the technical prerequisites and configuring the initial pilot team, efficient technical planning is the foundation of a great user experience. This includes creating the team and inviting the identified frontline workers.
+
+    To configure your pilot, we recommend using the Frontline Worker onboarding wizard. You can also manually configure your pilot. 
+
+    ### Use the Frontline Worker onboarding wizard to kick off your pilot (recommended)
+
+    The Frontline Worker onboarding wizard in the Microsoft 365 admin center simplifies onboarding frontline workers to your organization. Use the wizard to kick off your pilot and quickly deploy an experience in Teams that's tailored to your frontline workforce.
+
+    Check out this short video for an overview of how to run the wizard to get your frontline workforce up and running. 
+
+    > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWN6oh]
+
+    The wizard sets up a team for your frontline workers and assigns licenses and [policy packages](manage-policy-packages.md) to each team member. You can create your team from scratch or from a [team template](get-started-with-teams-templates-in-the-admin-console.md), and then you add users and assign roles. The role determines whether the wizard assigns the Frontline Manager or Frontline Worker policy package to the user.
+    
+    The wizard is available to all organizations that have at least one [F license](https://www.microsoft.com/microsoft-365/enterprise/frontline). You can run the wizard as many times as you need to roll out Teams to your frontline workforce in different locations or sites across your organization.
+
+    For step-by-step guidance, see [Use the Frontline Worker onboarding wizard to get your frontline workforce up and running](flw-onboarding-wizard.md).
+
+    ### Manually configure your pilot
+
+    If you prefer to manually configure your pilot, follow these steps. 
+    
+    #### Configure and assign Frontline Manager and Frontline Worker policy packages
+
+    A [policy package](manage-policy-packages.md) in Teams is a collection of predefined policies and policy settings that you can assign to users who have the same or similar roles in your organization. Policy packages simplify, streamline, and help provide consistency when managing policies for your frontline workforce. You can manage policy packages by using the Microsoft Teams admin center or PowerShell.
+
+    Teams includes the Frontline Manager and Frontline Worker policy packages. Each policy package creates a set of policies and policy settings that support collaboration and communication activities that are typical for that role. The policy packages support the following policy types:
+
+    - Messaging policy
+    - Meeting policy
+    - App setup policy
+    - Calling policy
+    - Live events policy
+
+    Each individual policy is given the name of the policy package so you can easily identify the policies that are linked to a policy package. For example, when you assign the frontline worker policy package to frontline workers in your organization, a policy named Frontline_Worker is created for each policy in the package.
+
+    :::image type="content" source="media/policy-packages-flw-firstline-worker.png" alt-text="Screenshot of policies in the frontline worker policy package":::
+
+    ##### View the policy settings in the policy package
+
+    View the settings of each policy in a policy package before you assign a package. In the left navigation of the Microsoft Teams admin center, go to **Policy packages**, select the package name, and then select the policy name.
+
+    Decide whether the predefined values are appropriate for your organization or whether you need to customize them to be more restrictive or lenient based on your organization's needs.
+
+    ##### Customize policy settings in the policy package
+
+    Customize the settings of policies in the policy package to fit the needs of your organization. Any changes you make to policy settings are automatically applied to users who are assigned the package. To edit the settings of a policy in a policy package, in the Microsoft Teams admin center, select the policy package, select the name of the policy you want to edit, and then select **Edit**.
+
+    Keep in mind that you can also change the settings of policies in a package after you assign the policy package. To learn more, see [Customize policies in a policy package](manage-policy-packages.md#customize-policies-in-a-policy-package). 
+
+    ##### Assign the policy package
+
+    Assign the policy package to frontline workers and managers. You can assign a policy package to an individual user, a group, or a batch of users. For step-by-step guidance on how to assign policy packages, see [Assign policy packages to users and groups](assign-policy-packages.md).
+    
+    If a user has a policy assigned, and then later you assign a different policy, the most recent assignment will take priority.
+    
+    #### Set up your pilot team
+    Configure the initial team for the pilot users that you identified.
+     
+    1. In the left navigation of the [Microsoft Teams admin center](https://admin.teams.microsoft.com/), go to **Teams** > **Manage teams**. 
+
+    2. Select **Add** from the Manage teams page.
+
+    3. Complete the required fields, including team name, description, and select an appropriate team owner and privacy level. Be sure to be descriptive in your team name and anticipate expanding the pilot out to several teams. Select **Apply**.
+   
+        :::image type="content" source="media/firstline-worker-create-new-team.png" alt-text="Screenshot of the Add a new team pane":::
+
+    4. Select the team you created to open the team details page.
+
+        :::image type="content" source="media/firstline-worker-team-details-page.png" alt-text="Screenshot of the teams detail page":::
+
+    5. Select **Channels** to view the current list of channels.
+    6. Select **Add Channel** to add any additional channels to the General channel that you think are needed for your pilot group.
+    
+        :::image type="content" source="media/firstline-worker-add-channel.png" alt-text="Screenshot of the Add channel pane":::
+
+    #### Decision point
+
+    -  How many channels/conversation topics do you want for your pilot?
+    -  Which topics feel right for your scenarios?
+
+    #### Best practice
+    **Keep the channels simple**. We recommend resisting the urge to create a channel for every possible topic of conversation and instead keep things very simple. It’s ok if channels are created over time as needed.
+      
+    :::image type="content" source="media/firstline-worker-channels-tab.png" alt-text="Screenshot of Channels tab":::
+
+    #### Invite the frontline manager and frontline workers
+    Now that the team structure is in place and the user policies are applied, it’s time to start inviting your frontline workers.
+    1. In the left navigation of the [Microsoft Teams admin center](https://admin.teams.microsoft.com/), go to **Teams** > **Manage teams**. 
+    2. Search for the team created during the "Set up your pilot team" phase.
+    3. Select the team you created to open the team details page.
+
+        :::image type="content" source="media/firstline-worker-team-details-page.png" alt-text="Screenshot of the teams detail page":::
+
+    4. Select **Add members**.
+    5. Search for the pilot members' names and click **Save**.
+
+- title: Communicate
+  durationInMinutes: 1
+  content: |
+
+    Inform your frontline workers of their participation in the pilot, the pilot goals, and provide training, if necessary, on the basic functions. For most customers, this can be a simple instruction to these users to go to the Google Play or Apple Store on their personal mobile devices, download the Microsoft Teams application, and log in with their company credentials. We’ve designed Microsoft Teams with a simple and easy to use interface that most frontline workers should find intuitive.
+
+    ### Best practice
+    Don’t forget to train your managers on Shifts! If you’re going to include Shifts in your pilot, then make sure to conduct a separate training session with your managers on how to create, manage, and publish schedules to their team. If you would like additional training materials and communication templates, you can find them in your frontline Pilot in a Box.
+
+- title: Measure
+  durationInMinutes: 1
+  content: |
+
+    Empowering your frontline workers is more about people than technology. To understand the impact of Teams, stay focused on your frontline workers’ experience. Survey them before, during and after the pilot in order to understand their needs, pain points, and reactions. If you are iterating your pilot and adding new features over time, this feedback can help guide the order, pace, or even whether additional features are needed. In order to help you evaluate the success of your pilot, you can find them in your frontline Pilot in a Box.
+    ### Best practice
+    **Nurture your champions and highlight your wins**. Reward your frontline workers for embracing these new tools and using them in innovative ways that relate to business outcomes for your company. This, above anything, will ensure continued adoption of Teams and value to your company.
+
+- title: Iterate
+  durationInMinutes: 1
+  content: |
+
+    Now that you’ve successfully completed your first pilot with an initial group of frontline workers, it’s time to expand! It’s time to go back to Step 1 with one of the several expansion options below. We recommend working through this process as many times as needed to arrive at a solution, set of best practices, and training documentation for all of your frontline workers.
+
+    -   Expand the number of teams. Use the Frontline Worker onboarding wizard to set up your next location or region.
+        -   Instead of one location, can you do one region? Would you want one team for the whole region or individual teams for each location?
+    -   Expand the features provided.
+       -   Was there a key feature that your frontline workers suggested I your feedback forms, like Shifts, that you didn’t include in your initial feature set?
+
+- title: Next steps
+  durationInMinutes: 1
+  content: |
+    We covered the following key learnings in this training:
+    -   Planning for a frontline worker pilot in Teams
+    -   Configuring the pilot
+    -   Communication, measuring and iteration based on the pilot implementation
+
+    ### Next steps
+
+    1.	Continue using Teams for your organization's changing frontline worker needs.
+    2.  Send us feedback:
+        - Post in the comments section at the bottom of this page.
+        - To give us Teams product feedback or to request a new feature, go to the [Teams feedback portal](https://feedbackportal.microsoft.com/feedback/forum/ad198462-1c1c-ec11-b6e7-0022481f8472).
+    3.  Stay up to date:
+        - Follow the [Teams Blog](https://aka.ms/teamsblog).
+        - Read the [Teams Roadmap](https://aka.ms/O365Roadmap).
+        - Learn about the latest released features in the [Release Notes](https://support.office.com/article/what-s-new-in-microsoft-teams-d7092a6d-c896-424c-b362-a472d5f105de).
+    4.  Explore [more training and tutorials](./itadmin-readiness.md).
