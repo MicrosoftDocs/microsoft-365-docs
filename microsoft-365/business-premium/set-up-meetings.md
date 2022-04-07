@@ -55,3 +55,9 @@ Follow these best practices for your online meetings:
 Learn more about meeting in Microsoft Teams:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWeokQ]
+
+## Next objective
+
+After this mission objective is accomplished, learn to securely [share files and videos](share-files-and-videos.md)
+
+

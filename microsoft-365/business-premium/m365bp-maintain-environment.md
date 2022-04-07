@@ -23,12 +23,10 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: "An overview of maintaining your org's environment"
+description: "An overview about maintaining your org's environment"
 ---
 
 # Maintain your environment
-
-## Overview
 
 As the users on your network change over time, a secure environment must be maintained. The missions you've completed so far have been about getting the system secured. But in addition to this, you also need to be able to safely and cleanly remove users from the system, thereby removing their access to all data and information. Learn how to protect and transition the data the user may have worked with, clean the company devices they owned, and otherwise, completely remove them from the network.
 

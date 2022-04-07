@@ -64,3 +64,8 @@ To create and share videos, follow these steps.
 Download an infographic in [PDF](https://go.microsoft.com/fwlink/?linkid=2079435) or [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079438) to get a quick overview of ways to share your files.
 
 [![An illustration of sharing files with different users.](../media/ShareYourfiles-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2079435)
+
+## Next objective
+
+Upon completion of this objective, [create a communication site](create-communication-site.md) for your team.
+

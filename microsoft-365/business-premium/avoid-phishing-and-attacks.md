@@ -77,15 +77,12 @@ Download this infographic with tips for you and the members of your campaign tea
 
 [PDF](https://download.microsoft.com/download/9/1/f/91fa8f24-9953-4f33-9d87-a95624db5e0b/M365BPWhatCanUsersDoToSecure.pdf) | [PowerPoint](https://download.microsoft.com/download/9/1/f/91fa8f24-9953-4f33-9d87-a95624db5e0b/M365BPWhatCanUsersDoToSecure.pptx)
 
-<!---
-KCNOTE: I think the above infographic should be re-done to reflect businesses and campaigns, not just campaigns. If not, we should greatly downplay the campaign references. TBD. Denise response: Updated!
---->
-
-## Set it up
-
 Learn more about how to:
 
 - [Keep your files and communications safe with Office](https://support.microsoft.com/en-us/office/keep-your-files-and-communications-safe-with-office-c4ddc381-7395-42da-887c-8836a3bb975f).
 
 - [Stay secure and private at work](https://support.office.com/article/stay-secure-and-private-at-work-104c7d91-b25a-453d-beee-ba64b6c6fc2d).
   
+### Next objective
+
+Once you've completed this mission objective, learn about how to [send encrypted email](send-encrypted-email.md). 

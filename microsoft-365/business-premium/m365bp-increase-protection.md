@@ -206,11 +206,3 @@ You can prevent people in your organization from sharing their calendars. You ca
    ![Screenshot of calendar free/busy sharing with anyone.](../media/sharefreebusy.png)
 
 If your users are allowed to share their calendars, see [these instructions](https://support.office.com/article/7ecef8ae-139c-40d9-bae2-a23977ee58d5) for how to share from Outlook on the web.
-
-## Next steps
-
-Train your team to:
-
-- [Set up unmanaged (BYOD) devices](m365bp-devices-overview.md)
-- [Protect all email](m365bp-protect-email-overview.md)
-- [Collaborate and share securely](m365bp-collaborate-share-securely.md)
