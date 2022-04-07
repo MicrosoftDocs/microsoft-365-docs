@@ -78,25 +78,30 @@ For information about how to set up Microsoft 365 for external chat and meetings
 
 People from outside your organization can join meetings in the following ways:
 
-- If they are logged in to your organization with a guest account, they join meetings as a guest.
-- If they are logged in to a different organization with a work or school account, they joing meetings as an external participant.
-- If they are not logged in to a Microsoft 365 or Azure AD organization, they must join meetings anonymously.
+- If they're logged in to your organization with a guest account, they join meetings as a guest.
+- If they're logged in to a different organization with a work or school account, they join meetings as an external participant.
+- If they're not logged in to a Microsoft 365 or Azure AD organization, they must join meetings anonymously.
 
+If the anonymous join setting is enabled for your organization, anonymous users can only join a meeting using a meeting link that has been shared with them (such as a link in the meeting invitation). They will be prompted to enter a display name of their choosing when joining the meeting anonymously. They are then added to a lobby and the meeting organizer is alerted and can allow or deny access to the meeting.
 
-A user who is not signed-in to Teams (and therefore hasn't been authenticated) is considered to be an anonymous user. These users  haven't logged in with their Microsoft or organization's account.  If the anonymous join setting is enabled in your tenant, anonymous users can only join a meeting using a meeting link that has been shared with them (such as a link in the meeting invitation). They will be prompted to enter a display name of their choosing when joining the meeting anonymously. 
+It is not possible to verify the identity of anonymous users during or after the meeting. 
 
-You can control anonymous users' ability to join meetings either at your organization level through Meeting Settings, or per meeting organizer through meeting policy settings. 
+You can control anonymous users' ability to join meetings either at the organization level, or meeting organizers can control anonymous join through meeting policy settings.
 
-When would I use it?  If you must block guest and/or external access, but still want users from outside of your organization to join meetings, then you may consider using anonymous join. Enabling anonymous join makes it easy for anyone to join a meeting as long as they have the meeting link. This eases the reliance on guest access requirements (enabling guest access in Azure AD and ensuring that the guest user accepts the invitaiton) and external access requirements (that the other organization has external access enabled, too). However, it is not possible to verify the identity of anonymous users during or after the meeting. 
-
-This will bring you into the meeting lobby. We'll notify the meeting organizer that you're there, and someone in the meeting can then admit you.
-
-[Manage meeting settings in Microsoft Teams](/microsoftteams/meeting-settings-in-teams)
+For information about configuring anonymous join for meetings, see [Manage meeting settings in Microsoft Teams](/microsoftteams/meeting-settings-in-teams).
 
 ## Anonymous file and folder access
 
+In Microsoft 365, files and folders in Teams, SharePoint, and OneDrive can be shared using anonymous - or *Anyone* - links. Anyone links give access to the item to anyone who has the link. Anyone links can be shared with others, giving those people access to the file or folder.
 
-[Best practices for sharing files and folders with unauthenticated users](/microsoft-365/solutions/best-practices-anonymous-sharing)
+People using an Anyone link do not have to authenticate, and their access cannot be audited. File and folder owners can revoke access at any time by deleting the link.
+
+Anyone links can't be used with files in a Teams shared channel site.
+
+For information about working with anonymous file and folder sharing, see the following references:
+
+- [Manage sharing settings](/sharepoint/turn-external-sharing-on-or-off)
+- [Best practices for sharing files and folders with unauthenticated users](/microsoft-365/solutions/best-practices-anonymous-sharing)
 
 ## Related topics
 
@@ -105,4 +110,7 @@ This will bring you into the meeting lobby. We'll notify the meeting organizer t
 [File collaboration in SharePoint with Microsoft 365](/sharepoint/deploy-file-collaboration)
 
 [Use guest access and external access to collaborate with people outside your organization](/microsoftteams/communicate-with-users-from-other-organizations)
- 
+
+[Limit guest sharing to specific organizations](/microsoft-365/solutions/limit-guest-sharing-to-specific-organization)
+
+[Limit organizations where users can have guest accounts](/microsoft-365/solutions/limit-organizations-where-users-have-guest-accounts)
