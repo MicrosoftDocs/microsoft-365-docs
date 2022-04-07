@@ -102,6 +102,8 @@
       href: ../business/reset-devices-to-factory-settings.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
 - name: Reference
   items:
+    - name: Glossary of terms
+      href: m365bp-glossary.md
     - name: Microsoft 365 admin content
       href: /microsoft-365/admin/
     - name: Microsoft Defender for Business
@@ -110,8 +112,7 @@
       href: ../security/office-365-security/overview.md
     - name: Microsoft 365 Lighthouse
       href: ../lighthouse/m365-lighthouse-overview.md
-    - name: Glossary of terms
-      href: m365bp-glossary.md
+
       
 
 
