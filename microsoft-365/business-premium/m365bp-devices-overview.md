@@ -29,8 +29,6 @@ description: "Set up all devices with protection"
 
 # Set up unmanaged (BYOD) devices
 
-## Overview
-
 You probably know this, but every  device is a possible attack avenue into your network and must be monitored and managed properly, even those devices that are personally owned but used for work. In this critical mission, you set up protection for all the bring-your-own devices (BYODs), which are those that are most risky to your organization due to being unmanaged. It's important to get these devices protected as soon as possible. 
 
 Your objectives are as follows:
@@ -40,6 +38,9 @@ Your objectives are as follows:
 - [Protected unmanaged PCs and Macs](m365bp-protect-pcs-macs.md)
 
 Once you've accomplished these objectives, proceed with your [next mission](m365bp-protect-email-overview.md).
+
+:::image type="content" source="../media/bus-premium-card-devices-all-staff.png" alt-text="Set up devices for all staff.":::
+
 
 
 <!---

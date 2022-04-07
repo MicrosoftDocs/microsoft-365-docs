@@ -59,13 +59,7 @@ A safe device is one that is monitored by the organization. In this last critica
 
 [**Set up and secure managed devices**](m365bp-protect-devices.md). Take the steps to secure those devices so they are monitored and protected by the organization! 
 
-## 
-
-:::image type="content" source="media/m365-whatisit-securityfocus2.png" alt-text="Microsoft 365 Business Premium protects your apps, file storage, email, devices, and identities.":::
-
-<!---
-NOTE: I THINK THIS IMAGE SHOULD BE RE-DONE TO REFLECT 6 MISSIONS, AND STYLISTICALLY TO HAVE A "DEFENDER" CHARACTER (SUCH AS IN THE POSTER) IN THE BACKGROUND BEHIND THE FRONT LAYER VISUALS FOR EACH MISSION CATEGORY. THE OBJECTIVES FOR EACH MISSION CAN BE BULLET POINTS IN EACH SECTION IN THE GRAPHIC.
---->
+:::image type="content" source="../media/bus-premium-card.png" alt-text="Microsoft 365 Business Premium protects your apps, file storage, email, devices, and identities.":::
 
 
 <!---

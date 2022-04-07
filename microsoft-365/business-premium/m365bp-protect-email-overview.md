@@ -29,8 +29,6 @@ description: "An overview on how to protect your email"
 
 # Protect all email
 
-## Overview
-
 As you know, emails are full of malicious attacks cloaked as harmless communications. Additionally, email systems are especially vulnerable because email is handled by everyone in the organization, and it relies upon humans making consistently safe decisions with those communications. In this mission you are ensuring email systems are safe from attackers. 
 
 The mission objectives are to:
@@ -39,6 +37,8 @@ The mission objectives are to:
 - [Set up encrypted email](send-encrypted-email.md)
 
 Accomplish these objectives before you move on to the [next mission](m365bp-collaborate-share-securely.md).
+
+:::image type="content" source="../media/bus-premium-card-email.png" alt-text="Protect your email.":::
    
 <!---
 To protect email:

@@ -39,4 +39,7 @@ Your mission objectives:
 - [Review and edit device policies](m365bp-view-edit-create-mdb-policies.md)
 - [Manage device groups](m365bp-device-groups-mdb.md)
 
-Once these objectives are achieved, your overall mission to protect the org is a success! Now, make sure to set up response teams to deal with any situation that may arise in defending the integrity of the system. 
+Once these objectives have been achieved, your overall mission to protect the org is a success! Now, make sure to set up your response teams to deal with any situation that may arise while defending the integrity of the system. 
+
+:::image type="content" source="../media/bus-premium-card-devices-manage.png" alt-text="Secure managed devices.":::
+

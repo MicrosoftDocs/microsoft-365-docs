@@ -27,9 +27,7 @@ ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: "Setup overview for Microsoft 365 Business Premium for campaigns or other businesses"
 ---
 
-# Set up Microsoft 365 Business Premium
-
-## Overview
+# Welcome to Microsoft 365 Business Premium
 
 For this first mission, you have to set up your initial security defenses right away. Sign in and initiate the [setup wizard](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) to configure overall security and licenses for your teams. 
 
@@ -39,6 +37,8 @@ Your objectives are to:
 - Set up your Microsoft 365 Business Premium environment
 
 Once you've achieved these the objectives, you can move on to the [next mission](m365bp-security-overview.md).
+
+:::image type="content" source="../media/bus-premium-card-set-up.png" alt-text="Business Premium setup":::
 
 <!--
 (In my opinion, this is only rehashing the same stuff covered in the TOC topics and references as "mission objectives" above. So, it's not needed here.)
