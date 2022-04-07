@@ -1,5 +1,5 @@
 ---
-title: Try Microsoft Defender for Office 365
+title: Try and evaluate Defender for Office 365
 description:
 keywords:
 f1.keywords:
@@ -18,7 +18,7 @@ ms.collection:
 ms.custom: 
 ms.technology: mdo
 ms.prod: m365-security
-ROBOTS: NOINDEX, NOFOLLOW
+ROBOTS:
 ---
 
 # Try Microsoft Defender for Office 365
