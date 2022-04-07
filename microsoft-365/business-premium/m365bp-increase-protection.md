@@ -134,7 +134,7 @@ Use our quick-start guide, [Protect against threats](../security/office-365-secu
 - [Antispam protection](../security/office-365-security/protect-against-threats.md#part-3---anti-spam-protection-in-eop)
 - [Safe Links and Safe Attachments](../security/office-365-security/protect-against-threats.md#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
 
-## Tune-up anonymous sharing settings for SharePoint and OneDrive files and folders
+## Set sharing settings for SharePoint and OneDrive files and folders
 
 By default, sharing levels are set to the most permissive level for both SharePoint and OneDrive. We recommend changing the default settings to better protect your business.
 
