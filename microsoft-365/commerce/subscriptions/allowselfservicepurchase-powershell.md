@@ -20,7 +20,7 @@ search.appverid:
 - MET150
 description: "Learn how to use the AllowSelfServicePurchase PowerShell cmdlet to turn self-service purchase on or off."
 ROBOTS: NOINDEX, NOFOLLOW
-ms.date: 12/15/2021
+ms.date: 4/7/2022
 ---
 
 # Use AllowSelfServicePurchase for the MSCommerce PowerShell module
@@ -90,7 +90,7 @@ The following table lists the available products and their **ProductId**.
 
 | Product | ProductId |
 |-----------------------------|--------------|
-| Power Apps per user | CFQ7TTC0KP0P |
+| Power Apps per user | CFQ7TTC0LH2H |
 | Power Automate per user | CFQ7TTC0KP0N |
 | Power Automate RPA | CFQ7TTC0KXG6  |
 | Power BI Premium (standalone) | CFQ7TTC0KXG7  |
