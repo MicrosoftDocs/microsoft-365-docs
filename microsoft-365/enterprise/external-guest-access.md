@@ -33,7 +33,7 @@ The following table show the primary ways people from outside your organization 
 
 ## Document, site, and team sharing
 
-A *guest* is a type of account in Azure Active Directory. Guest accounts are managed through [Azure AD B2B collaboration](/azure/active-directory/external-identities/what-is-b2b). They can be used to share resources in your organizations with anyone who has an email address. You can manage guest accounts the same way you manage users in your organization. Guests do not require a license for most features of collaboration. 
+Sharing documents, sites, and teams with people outside your organization uses *guest accounts*. Guest accounts are a type of account in Azure Active Directory that are managed through [Azure AD B2B collaboration](/azure/active-directory/external-identities/what-is-b2b). They can be used to share resources in your organization with anyone who has an email address. You can manage guest accounts the same way you manage users in your organization. Guests do not require a license for most features of collaboration. 
 
 Guests can only access resources that you specifically share with them.
 
