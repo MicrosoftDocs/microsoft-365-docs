@@ -76,7 +76,6 @@ The Channel usage chart shows data on the following metrics.
 |Active channel users  <br/> |This is the total of internal active users, active guests, and external active users.  <br/><br/> **Internal active users** - Users that have at least one panel action in the specified time period. This excludes guests.   <br/> **Active guests** - Guests that have at least one panel action in the specified time period. A guest is a person from outside your organization who accesses shared resources by signing in to a guest account in my directory.  <br/> **External active user** - External participants that have at least one panel action in the specified time period. An external participant is a person from outside your organization who is participating in a resource – such as a shared channel – using their own identity and not a guest account in your directory.  <br/>|  
 |Active channels   <br/> |Valid channels in active teams that have at least one active user in the specified time period. This includes public, private, or shared channels.   <br/> |
 |Channel messages    <br/> |The number of unique messages that the user posted in a private chat during the specified time period.  <br/> |
-|||
 
 ### Team usage metrics
 
@@ -89,7 +88,6 @@ The Teams usage chart shows data on the following metrics.
 |Public teams     <br/> |A public team that is either active or inactive.  |
 |Active private teams      <br/> |A team that is private and active.  |
 |Active public teams      <br/> |A team that is public and active.   |
-|||
 
 ### Teams details
 
@@ -112,7 +110,6 @@ Data for following metrics are available for individual teams.
 |Urgent messages      <br/> |Count of urgent messages in the specified time period.  |
 |Channel messages   <br/> |The number of unique messages that the user posted in a team chat during the specified time period. <br/>|  
 |Last activity date    <br/> |The latest date that any member of the team has committed an action. |
-|||
 
 ## Make the user-specific data anonymous
 
