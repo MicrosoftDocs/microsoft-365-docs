@@ -46,7 +46,7 @@ In these first missions, you're going to have to sign in and set up your initial
 
 [**Bump up security protection**](m365bp-security-overview.md). Now, set up a number of critical security measures to protect your organization. 
 
-:::image type="content" source="../media/bus-premium-card-manage.png" alt-text="Microsoft 365 Business Premium protects your apps, file storage, email, devices, and identities.":::
+:::image type="content" source="../media/bus-premium-card-overview-manage.png" alt-text="Microsoft 365 Business Premium protects your apps, file storage, email, devices, and identities.":::
 
 ## [**Train Your Team**](#tab/Train)
 
@@ -58,7 +58,7 @@ We've included a set of missions here with some objectives that need to be compl
 
 [**Collaborate and share securely**](m365bp-collaborate-share-securely.md). The objectives of this mission require you to set up secure file sharing for all members of the organization.
 
-:::image type="content" source="../media/bus-premium-card-train.png" alt-text="Microsoft 365 Business Premium protects your apps, file storage, email, devices, and identities.":::
+:::image type="content" source="../media/bus-premium-card-overview-train.png" alt-text="Microsoft 365 Business Premium protects your apps, file storage, email, devices, and identities.":::
 
 ## [**Safeguard Managed Devices**](#tab/Safeguard)
 
@@ -66,7 +66,7 @@ A safe device is one that is monitored by the organization. In this last critica
 
 [**Set up and secure managed devices**](m365bp-protect-devices.md). Take the steps to secure those devices so they are monitored and protected by the organization! 
 
-:::image type="content" source="../media/bus-premium-card-manage.png" alt-text="Microsoft 365 Business Premium protects your apps, file storage, email, devices, and identities.":::
+:::image type="content" source="../media/bus-premium-card-overview-manage.png" alt-text="Microsoft 365 Business Premium protects your apps, file storage, email, devices, and identities.":::
 
 ## Cybersecurity Playbook
 
