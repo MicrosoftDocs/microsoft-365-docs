@@ -222,7 +222,7 @@ Defender for Office 365 exposes most of its data through a set of programmatic A
 
 - [Advance Hunting API](/microsoft-365/security/defender/api-advanced-hunting): Allows cross-product threat hunting.
 
-- [Threat Assessment API](/graph/api/resources/threatassessment-api-overview?view=graph-rest-1.0): Can be used to report spam, phishing URLs, or malware attachments directly to Microsoft.
+- [Threat Assessment API](/graph/api/resources/threatassessment-api-overview): Can be used to report spam, phishing URLs, or malware attachments directly to Microsoft.
 
 To connect Defender for Office 365 incidents and raw data with Microsoft Sentinel, you can use the [Microsoft 365 Defender (M365D) connector](/azure/sentinel/connect-microsoft-365-defender?tabs=MDO)
 
