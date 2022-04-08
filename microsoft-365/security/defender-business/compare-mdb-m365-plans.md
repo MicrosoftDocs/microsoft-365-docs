@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: reference
-ms.date: 03/15/2022
+ms.date: 04/08/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -82,9 +82,9 @@ The following table compares security features and capabilities in Defender for 
 | [Next-generation protection](../defender-endpoint/next-generation-protection.md) | Yes | Yes | Yes |
 | [Endpoint detection and response](../defender-endpoint/overview-endpoint-detection-response.md) | Yes <sup>[[2](#fn2)]</sup> | No | Yes |
 | [Automated investigation and response](../defender-endpoint/automated-investigations.md) | Yes <sup>[[2](#fn2)]</sup> | No | Yes |
-| [Threat hunting](../defender-endpoint/advanced-hunting-overview.md) and six months of data retention | No | No | Yes |
+| [Threat hunting](../defender-endpoint/advanced-hunting-overview.md) and six months of data retention <sup>[[3](#fn3)]</sup> | No | No | Yes |
 | [Threat analytics](../defender-endpoint/threat-analytics.md) | Yes <sup>[[2](#fn2)]</sup> | No | Yes |
-| [Cross-platform support](../defender-endpoint/minimum-requirements.md) <br/>(Windows, macOS, iOS, and Android OS) | Yes <sup>[[3](#fn3)]</sup> | Yes | Yes |
+| [Cross-platform support](../defender-endpoint/minimum-requirements.md) <br/>(Windows, macOS, iOS, and Android OS) | Yes <sup>[[4](#fn4)]</sup> | Yes | Yes |
 | [Microsoft Threat Experts](../defender-endpoint/microsoft-threat-experts.md) | No | No | Yes |
 | Partner APIs | Yes | Yes | Yes |
 | [Microsoft 365 Lighthouse integration](../../lighthouse/m365-lighthouse-overview.md) <br/>(For viewing security incidents across customer tenants) | Yes | No | No |
@@ -93,7 +93,9 @@ The following table compares security features and capabilities in Defender for 
 
 (<a id="fn2">2</a>) These capabilities are optimized for small and medium-sized businesses.
 
-(<a id="fn3">3</a>) During the preview program, Windows client devices are supported in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)).
+(<a id="fn3">3</a>) There is no timeline tab in Defender for Business.
+
+(<a id="fn4">4</a>) During the preview program, Windows client devices are supported in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)).
 
 ## Next steps
 
