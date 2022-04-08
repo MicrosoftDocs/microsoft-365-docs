@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 
+ms.date: 04/08/2022
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -135,7 +135,7 @@ There are two quick and easy steps to get started with eDiscovery (Premium).
 
 ## eDiscovery (Premium) architecture
 
-Here's an eDiscovery (Premium) architecture diagram that shows the end-to-end workflow in a single-geo environment and in a multi-geo environment, and the end-to-end data flow that's aligned with the [EDRM](#advanced-ediscovery-alignment-with-the-electronic-discovery-reference-model).
+Here's an eDiscovery (Premium) architecture diagram that shows the end-to-end workflow in a single-geo environment and in a multi-geo environment, and the end-to-end data flow that's aligned with the [EDRM](#ediscovery-premium-alignment-with-the-electronic-discovery-reference-model).
 
 [![Model poster: eDiscovery (Premium) Architecture in Microsoft 365.](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
 

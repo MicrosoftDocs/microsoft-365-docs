@@ -32,7 +32,7 @@ This article discusses the following steps necessary to set up Audit (Standard).
 
 These steps include ensuring the proper organizational subscriptions and user licensing required to generate and preserve audit records and assigning permissions to team members of your security operations, IT, compliance, and legal teams so that can search the audit log.
 
-For more information, see [Audit (Standard) in Microsoft 365](auditing-solutions-overview.md#basic-audit).
+For more information, see [Audit (Standard) in Microsoft 365](auditing-solutions-overview.md#audit-standard).
 
 ## Step 1: Verify organization subscription and user licensing
 

@@ -53,18 +53,18 @@ Easily and quickly start trying Microsoft’s compliance solutions without chang
 
 Advanced Audit helps organizations to conduct forensic and compliance investigations by increasing audit log retention required to conduct an investigation, providing access to crucial events that help determine scope of compromise, and providing faster access to the Office 365 Management Activity API.
 
-### Step 1: [Apply the E5 license to each user for which you’d like to generate E5 events](set-up-advanced-audit.md#step-1-set-up-advanced-audit-for-users)
+### Step 1: [Apply the E5 license to each user for which you’d like to generate E5 events](set-up-advanced-audit.md#step-1-set-up-audit-premium-for-users)
 
 > [!TIP]
 > Trial best practice: Day 1
 
 Advanced Audit features such as the ability to log crucial events such as MailItemsAccessed and Send require an appropriate E5 license assigned to users. Additionally, the Advanced Auditing app/service plan must be enabled for those users.
 
-Set up Advanced Audit for users - to verify that the Advanced Auditing app is assigned to users, [perform the following steps for each user](set-up-advanced-audit.md#step-1-set-up-advanced-audit-for-users).
+Set up Advanced Audit for users - to verify that the Advanced Auditing app is assigned to users, [perform the following steps for each user](set-up-advanced-audit.md#step-1-set-up-audit-premium-for-users).
 
-1. Enable Advanced Audit events - [enable SearchQueryInitiatedExchange and SearchQueryInitiatedSharePoint](set-up-advanced-audit.md#step-2-enable-advanced-audit-events) to be audited for each user in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. Enable Advanced Audit events - [enable SearchQueryInitiatedExchange and SearchQueryInitiatedSharePoint](set-up-advanced-audit.md#step-2-enable-audit-premium-events) to be audited for each user in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 1. Set up audit retention policies - [create additional audit log retention policies](set-up-advanced-audit.md#step-3-set-up-audit-retention-policies) to meet the requirements of your organization's security operations, IT, and compliance teams.
-1. Search for Advanced Audit events - [search for crucial Advanced Audit events](set-up-advanced-audit.md#step-4-search-for-advanced-audit-events) and other activities when conducting forensic investigations.
+1. Search for Advanced Audit events - [search for crucial Advanced Audit events](set-up-advanced-audit.md#step-4-search-for-audit-premium-events) and other activities when conducting forensic investigations.
 
 ### Step 2: [Create new Audit Log policies to specify how long to retain audit logs in your org for activities performed by users and define priority levels for your policies​](audit-log-retention-policies.md#before-you-create-an-audit-log-retention-policy)
 
@@ -75,7 +75,7 @@ Audit log retention policies are part of the new Advanced Audit capabilities in 
 
 1. Before you create an audit log retention policy – [key things to know](audit-log-retention-policies.md#before-you-create-an-audit-log-retention-policy) before creating your policy.
 1. [Create an audit log retention policy​](audit-log-retention-policies.md#create-an-audit-log-retention-policy)
-1. [Manage audit log retention policies in the Microsoft Purview compliance portal](audit-log-retention-policies.md#manage-audit-log-retention-policies-in-the-microsoft-365-compliance-center) - Audit log retention policies are listed on the Audit retention policies tab (also called the dashboard). You can use the dashboard to view, edit, and delete audit retention policies.
+1. [Manage audit log retention policies in the Microsoft Purview compliance portal](audit-log-retention-policies.md#manage-audit-log-retention-policies-in-the-compliance-portal) - Audit log retention policies are listed on the Audit retention policies tab (also called the dashboard). You can use the dashboard to view, edit, and delete audit retention policies.
 1. Create and manage audit log retention policies on PowerShell - You can also use Security & Compliance Center PowerShell to [create and manage audit log retention policies](audit-log-retention-policies.md#create-and-manage-audit-log-retention-policies-in-powershell). One reason to use PowerShell is to create a policy for a record type or activity that isn't available in the UI.
 
 ## Communication Compliance
@@ -239,7 +239,7 @@ More organizations use the Advanced eDiscovery solution in Microsoft 365 for cri
 
 To allow people in your organization start to create and use cases, you must configure global settings that apply to all cases in your organization. At this time, the only global setting is **attorney-client privilege detection** (more global settings will be available in the future).
 
-1. [Set up Advanced eDiscovery – Global Settings](get-started-with-advanced-ediscovery.md#step-3-configure-global-settings-for-advanced-ediscovery)
+1. [Set up Advanced eDiscovery – Global Settings](get-started-with-advanced-ediscovery.md#step-3-configure-global-settings-for-ediscovery-premium)
 1. [Configure search and analytics settings](configure-search-and-analytics-settings-in-advanced-ediscovery.md)
 1. [Manage jobs in Advanced eDiscovery](managing-jobs-ediscovery20.md)
 

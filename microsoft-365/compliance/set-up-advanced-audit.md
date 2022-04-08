@@ -36,7 +36,7 @@ Audit (Premium) features such as the ability to log crucial events such as MailI
 
 2. On the user properties flyout page, click **Licenses and apps**.
 
-3. In the **Licenses** section, verify that the user is assigned an E5 license or is assigned an appropriate add-on license. For a list of licenses that support Audit (Premium), see [Audit (Premium) licensing requirements](auditing-solutions-overview.md#advanced-audit-1).
+3. In the **Licenses** section, verify that the user is assigned an E5 license or is assigned an appropriate add-on license. For a list of licenses that support Audit (Premium), see [Audit (Premium) licensing requirements](auditing-solutions-overview.md#audit-premium-1).
 
 4. Expand the **Apps** section, and verify that the **Microsoft 365 Advanced Auditing** checkbox is selected.
 
