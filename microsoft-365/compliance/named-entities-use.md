@@ -102,6 +102,29 @@ To create or edit a DLP policy, use the procedures in [Create, test, and tune a 
 
 <!--|Devices workload (Endpoint)     | Not supported as a workload – authoring policy with named entities will not be allowed        |-->
 
+## Best practices for using named entity SITs
+
+Best practices for creating a new or editing an existing policy  with a named entity:
+
+ 
+
+1. Consider the data type and format of the data file being classified, as well as the regulatory requirements. For a “strongly defined” SIT such as SSN, it’s best to use a lower instance count in the policy. For example, if you are trying to detect a list of US Social Security Numbers (SSNs) in structured data such as a spreadsheet, then it’s best to define a policy that is optimized for the confidence and frequency of occurrences. In this case, requiring a minimum instance count of 3 or 5 instances would be best as opposed to a larger instance count, because if a keyword required by the SSN definition were only present in the column header, then only the first few SSNs in the column would likely be found in the required character proximity of the keyword corroborative evidence. Requiring a larger instance count (e.g., 100 or even 500) would likely cause the policy not to match.
+ 
+
+2.    For a named entity SIT, such as All Full Names, it’s best to set a larger instance count such as 10 or 50. If both the person names and the SSNs are detected together, it’s more likely that the SSNs are truly SSNs, and we reduce the risk that the policy doesn’t trigger because not enough SSNs are detected.
+
+ 
+
+3.    Auto-labeling simulations can be leveraged to further fine tune accuracy by adjusting the instance counts and confidence levels defined in your custom policies or the enhanced template conditions across simulations, before enabling in production a DLP or auto-labeling policy containing named entities.
+
+1)	Identify the SIT or combination of SITs you want to test in simulation mode, either custom or cloned and edited.
+2)	Identify or create a sensitivity label to be applied when the auto-labeling policy finds a match in Exchange, SharePoint sites, or OneDrive accounts.
+3)	Create an sensitivity auto-labeling policy that uses the SIT from step 1 and with same Conditions and Exceptions that will be used in your DLP policy
+4)	Run the policy simulation
+5)	View the results
+6)	Tune the SIT and the instance count and confidence levels to reduce false positives.
+
+
 ## For further information
 <!-- - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)-->
 - [Learn about named entities (preview)](named-entities-learn.md).
