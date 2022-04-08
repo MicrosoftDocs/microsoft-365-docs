@@ -1,6 +1,6 @@
 ---
-title: Try Microsoft Defender for Office 365
-description:
+title: Try and evaluate Defender for Office 365
+description: Learn how to evaluate and try the capabilities of Microsoft Defender for Office 365 without affecting your existing mail flow.
 keywords:
 f1.keywords:
   - NOCSH
@@ -18,7 +18,7 @@ ms.collection:
 ms.custom: 
 ms.technology: mdo
 ms.prod: m365-security
-ROBOTS: NOINDEX, NOFOLLOW
+ROBOTS:
 ---
 
 # Try Microsoft Defender for Office 365
@@ -143,13 +143,13 @@ When you evaluate Defender for Office 365, the policies that control protection 
 
           As explained in the previous step, Enhanced Filtering for Connectors is automatically configured on the connector that you specify as the source of mail from the protection service.
 
-          Turning on Enhanced Filtering for Connectors without an SCL=-1 rule for incoming mail from the protection service will vastly improve the detection capabilities of EOP protection features like [spoof intelligence](anti-spoofing-protection.md), and could impact the delivery of those newly-detected message (for example, move to the Junk Email folder or to quarantine). This impact is limited to EOP policies; as previously explained, Defender for Office 365 policies are created in audit mode.
+          Turning on Enhanced Filtering for Connectors without an SCL=-1 rule for incoming mail from the protection service will vastly improve the detection capabilities of EOP protection features like [spoof intelligence](anti-spoofing-protection.md), and could impact the delivery of those newly-detected messages (for example, move to the Junk Email folder or to quarantine). This impact is limited to EOP policies; as previously explained, Defender for Office 365 policies are created in audit mode.
 
           To create an SCL=-1 mail flow rule or to review your existing rules, click the **Go to Exchange admin center** button on the page. For more information, see [Use mail flow rules to set the spam confidence level (SCL) in messages in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
 
           When you're finished, click **Finish**.
 
-     - **I'm only using Microsoft Exchange Online**: Yhe MX records for your domain point to Microsoft 365. There's nothing left to configure, so click **Finish**.
+     - **I'm only using Microsoft Exchange Online**: The MX records for your domain point to Microsoft 365. There's nothing left to configure, so click **Finish**.
 
 5. A progress dialog appears as your evaluation is set up. When set up is complete, click **Done**.
 
@@ -182,7 +182,6 @@ When you evaluate Defender for Office 365, the policies that control protection 
 
 - The [Threat protection status report](view-email-security-reports.md#threat-protection-status-report) shows detections by Defender for Office 365 in the following views:
   - [View data by Email \> Malware and Chart breakdown by Detection Technology](view-email-security-reports.md#view-data-by-email--malware-and-chart-breakdown-by-detection-technology)
-  - [View data by Email \> Spam and Chart breakdown by Detection Technology](view-email-security-reports.md#view-data-by-email--spam-and-chart-breakdown-by-detection-technology)
   - [View data by Email \> Phish and Chart breakdown by Detection Technology](view-email-security-reports.md#view-data-by-email--phish-and-chart-breakdown-by-detection-technology)
 
 - In [Threat Explorer](threat-explorer.md), messages that were detected by the Defender for Office 365 evaluation show the following banner in the details of the entry:

@@ -70,7 +70,7 @@ This topic guides you to set up a dedicated lab environment. For information on 
 
    :::image type="content" source="../../media/mtp-eval-16.png" alt-text="The Office 365 E5 Setup page where you should personalize your sign-in and email" lightbox="../../media/mtp-eval-16.png":::
  
-9. Add a TXT or MX record to validate the domain ownership. Once you’ve added the TXT or MX record to your domain, select **Verify**.
+9. Add a TXT or MX record to validate the domain ownership. Once you've added the TXT or MX record to your domain, select **Verify**.
 
    :::image type="content" source="../../media/mtp-eval-17.png" alt-text="The Office 365 E5 setup page where you should add a TXT of MX record to verify your domain" lightbox="../../media/mtp-eval-17.png":::
  

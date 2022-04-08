@@ -62,9 +62,9 @@ Insider risk management helps minimize internal risks by enabling you to detect,
 
 Insider risk management is available in the following subscriptions:
 
-- Microsoft 365 E5/A5/G5 subscription (paid or trial version)
-- Microsoft 365 E3/A3/G3 subscription + the Microsoft 365 E5/A5/G5 Compliance add-on
-- Microsoft 365 E3/A3/G3 subscription + the Microsoft 365 E5/A5/G5 Insider Risk Management add-on
+- Microsoft 365 E5/A5/F5/G5 subscription (paid or trial version)
+- Microsoft 365 E3/A3/F3/G3 subscription + the Microsoft 365 E5/A5/F5/G5 Compliance add-on
+- Microsoft 365 E3/A3/F3/G3 subscription + the Microsoft 365 E5/A5/F5/G5 Insider Risk Management add-on
 - Office 365 E3 subscription + Enterprise Mobility and Security E3 + the Microsoft 365 E5 Compliance add-on
 
 ### Information barriers

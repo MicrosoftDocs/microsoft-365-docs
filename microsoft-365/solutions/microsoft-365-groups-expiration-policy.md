@@ -30,9 +30,11 @@ When a group expires it is "soft-deleted" which means it can still be recovered 
 Administrators can specify an expiration period and any inactive group that reaches the end of that period, and is not renewed, will be deleted. (This includes archived teams.) The expiration period begins when the group is created, or on the date it was last renewed. Group owners will automatically be sent an email before the expiration that allows them to renew the group for another expiration interval. Teams users will see persistent notifications in Teams.
 
 Groups that are actively in use are renewed automatically. Any of the following actions will autorenew a group:
-- SharePoint - view, edit, download, move, share, or upload files. (Viewing a SharePoint page does not count as an action for automatic renewal.)
-- Outlook - join group, read or write group message from the group, and like a message (Outlook on the web).
-- Teams - visiting a teams channel.
+- SharePoint - View, edit, download, move, share, or upload files. (Viewing a SharePoint page does not count as an action for automatic renewal.)
+- Outlook - Join or edit group, read or write group message from the group, and like a message (Outlook on the web).
+- Teams - Visit a teams channel.
+- Yammer - View a post within a Yammer community or an interactive email in Outlook.
+- Forms - View, create, or edit forms, or submit a response to a form. 
 
 Note that the only Yammer activity that will trigger an automatic group renewal is the upload of a document to SharePoint within the community.
 
