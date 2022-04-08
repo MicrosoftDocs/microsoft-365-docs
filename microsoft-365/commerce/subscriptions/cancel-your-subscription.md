@@ -53,9 +53,6 @@ If you need to cancel within seven days after the start or renewal of your subsc
 
 If more than seven days have passed, [turn off recurring billing](renew-your-subscription.md). This prevents you from being charged again for your subscription, and lets you keep your access to your products and services for the remainder of your subscription.
 
-> [!NOTE]
-> In Chile, you have 10 days to cancel after the start or renewal of your subscription, not the seven days noted above.
-
 ### If you don't have a billing profile
 
 If you cancel after you start or renew your subscription, you receive a prorated credit or refund. The amount is either credited towards your next invoice or returned to you in the next billing cycle.
