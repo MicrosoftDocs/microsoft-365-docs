@@ -104,9 +104,7 @@ To create or edit a DLP policy, use the procedures in [Create, test, and tune a 
 
 ## Best practices for using named entity SITs
 
-Best practices for creating a new or editing an existing policy  with a named entity:
-
- 
+Here are some practices you can use when you create or edit a policy that uses a named entity SIT.
 
 1. Consider the data type and format of the data file being classified, as well as the regulatory requirements. For a “strongly defined” SIT such as SSN, it’s best to use a lower instance count in the policy. For example, if you are trying to detect a list of US Social Security Numbers (SSNs) in structured data such as a spreadsheet, then it’s best to define a policy that is optimized for the confidence and frequency of occurrences. In this case, requiring a minimum instance count of 3 or 5 instances would be best as opposed to a larger instance count, because if a keyword required by the SSN definition were only present in the column header, then only the first few SSNs in the column would likely be found in the required character proximity of the keyword corroborative evidence. Requiring a larger instance count (e.g., 100 or even 500) would likely cause the policy not to match.
  
