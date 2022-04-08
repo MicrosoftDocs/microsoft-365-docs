@@ -54,7 +54,7 @@ To meet the challenges of today’s decentralized, data-rich workplace, we’re 
 | Office 365 Data Loss Prevention | Microsoft Purview Data Loss Prevention | DLP helps protect sensitive data and reduce risk by preventing users from inappropriately sharing that data with people who shouldn't have it. To learn more, see [Learn about data loss prevention](dlp-learn-about-dlp.md). |
 | Double Key Encryption for Microsoft 365 | Microsoft Purview Double Key Encryption | Double Key Encryption (DKE) uses two keys together to access protected content. Microsoft stores one key in Microsoft Azure, and you hold the other key. To learn more, see [Microsoft Purview Double Key Encryption](double-key-encryption.md) |
 | Microsoft 365 Information Barriers | Microsoft Purview Information Barriers | Information Barriers is a solution which restricts communication and collaboration between certain people inside your organization to safeguard internal information. To learn more, see [Microsoft Purview Information Barriers](information-barriers-solution-overview.md). |
-| Microsoft Information Protection | Microsoft Purview Information Protection | Information Protection helps you discover, classify, and protect sensitive information wherever it lives or travels. To learn more, see [Protect your data with Microsoft Purview](information-protection.md). |
+| Microsoft Information Protection | Microsoft Purview Information Protection | Information protection helps you discover, classify, and protect sensitive information wherever it lives or travels. To learn more, see [Protect your data with Microsoft Purview](information-protection.md). |
 | Microsoft Information Governance | Microsoft Purview Data Lifecycle Management | Data lifecycle management provides you with tools and capabilities to retain the content that you need to keep and delete the content that you don't. To learn more, see [Govern your data with Microsoft Purview](information-governance.md). |
 | Microsoft 365 Insider Risk Management | Microsoft Purview Insider Risk Management | Insider risk management uses the full breadth of service and 3rd-party indicators to help you quickly identify, triage, and act on risky user activity. To learn more, see [Microsoft Purview Insider Risk Management](insider-risk-management.md). |
 | Office 365 Message Encryption | Microsoft Purview Message Encryption | With Message Encryption, your organization can send and receive encrypted email messages between people inside and outside your organization. To learn more, see [Microsoft Purview Message Encryption](ome.md). |
@@ -90,11 +90,11 @@ To meet the challenges of today’s decentralized, data-rich workplace, we’re 
 
 ### Microsoft Purview Data Lifecycle Management
 
-- The documentation for what was formerly Microsoft Information Governance has been substantially revised and restructured to help you more easily find information that relates to the solutions you configure in the Microsoft Purview portal: Data Connectors, Data Lifecycle Management, and Records Management. As part of this revision, the documentation provides a clearer distinction for the retention scenarios for data lifecycle management vs. records management.
+- The documentation for what was formerly Microsoft Information Governance has been substantially revised and restructured to help you more easily find information that relates to the solutions you configure in the Microsoft Purview compliance portal: Data Connectors, Data Lifecycle Management, and Records Management. As part of this revision, the documentation provides a clearer distinction for the retention scenarios for data lifecycle management vs. records management.
 - [Learn about data lifecycle management](information-governance.md) - new, to support the restructure.
 - [Get started with data lifecycle management](get-started-with-information-governance.md) - new, to replace "Get started with retention", this article includes getting started steps for all data lifecycle management capabilities, which include retention.
 - [Create retention labels for exceptions to your retention policies](create-retention-labels-information-governance.md) - new, identified scenario for using retention labels for data lifecycle management rather than records management.
-- [Learn about archive mailboxes](archive-mailboxes.md) - new, to support the restructure, contains conceptual information that was previously in Enable archive mailboxes.
+- [Learn about archive mailboxes](archive-mailboxes.md) - new, to support the restructure, contains conceptual information that was previously in the "Enable archive mailboxes" article.
 
 ### Microsoft Priva
 
@@ -125,7 +125,7 @@ To meet the challenges of today’s decentralized, data-rich workplace, we’re 
 
 ### Information protection
 
-- [Deploy a Microsoft Purview Information Protection solution](information-protection-solution.md) - New step-by-step guidance for customers looking for a prescriptive roadmap to deploy Microsoft Purview Information Protection
+- [Deploy an information protection solution with Microsoft Purview](information-protection-solution.md) - New step-by-step guidance for customers looking for a prescriptive roadmap to deploy Microsoft Purview Information Protection
 
 ### Retention and records management
 

@@ -48,5 +48,5 @@ Other data lifecycle management capabilities to help you keep what you need and 
 
 For deployment guidance for data lifecycle management that includes a recommended deployment roadmap, licensing information, permissions, a list of supported scenarios, and end-user documentation, see [Get started with data lifecycle management](get-started-with-information-governance.md).
 
-Looking for deployment guidance to protect your data? See [Deploy a Microsoft Purview Information Protection solution](information-protection-solution.md).
+Looking for deployment guidance to protect your data? See [Deploy an information protection solution with Microsoft Purview](information-protection-solution.md).
 
