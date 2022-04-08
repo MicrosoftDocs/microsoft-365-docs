@@ -158,6 +158,12 @@ conceptualContent:
         - url: ../business-premium/send-encrypted-email.md
           itemType: how-to-guide
           text: Encrypt or label sensitive email
+        - url: ../business-premium/create-teams-for-collaboration.md
+          itemType: how-to-guide
+          text: Use Microsoft Teams for collaboration
+        - url: ../business-premium/share-files-and-videos.md
+          itemType: overview
+          text: Share files and videos in Microsoft Teams or SharePoint
 
   # Card
     - title: Support and community
