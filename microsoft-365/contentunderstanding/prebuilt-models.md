@@ -129,6 +129,5 @@ To rename an extractor from the **Extractors** panel:
 > [!TIP]
 > You can change the view in your document library to fit your needs or preferences. For more information, see [Change the view in a document library](apply-a-model.md#change-the-view-in-a-document-library).
 
-## See also
+[!INCLUDE [Change the view in a document library](../includes/change-library-view.md)]
 
-[Apply a document understanding model](apply-a-model.md)
