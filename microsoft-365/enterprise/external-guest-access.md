@@ -74,7 +74,10 @@ You can also allow users in your organization to communicate with people from ou
 
 Guest accounts are not used as part of external chat and meetings. External participants remain signed in to their organization or to Skype and can communicate directly with people in your organization.
 
-For information about how to set up Microsoft 365 for external chat and meetings, see [Manage external access in Microsoft Teams](/microsoftteams/manage-external-access).
+For information about how to set up Microsoft 365 for external chat and meetings, see the following references:
+
+- [Manage external access in Microsoft Teams](/microsoftteams/manage-external-access).
+- [Use guest access and external access to collaborate with people outside your organization](/microsoftteams/communicate-with-users-from-other-organizations)
 
 ## Anonymous meeting join 
 
