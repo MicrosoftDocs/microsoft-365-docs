@@ -45,6 +45,15 @@ In these first missions, you're going to have to sign in and set up your initial
 
 :::image type="content" source="../media/bus-premium-card-overview-fortify.png" alt-text="Microsoft 365 Business Premium protects your apps, file storage, email, devices, and identities.":::
 
+## Cybersecurity Playbook
+
+The guidance in this library helps your business achieve the goals described in the Harvard Kennedy School Cybersecurity Campaign Handbook. A summary of this library guidance for Microsoft 365 Business Premium is available for you to download.
+
+:::image type="content" source="../media/zero-trust/zero-trust-architecture.png" alt-text="The Zero Trust security architecture" lightbox="../media/m365bp-cyber-security-playbook.png":::
+
+> [!Note]
+> When a term or directive is unclear, you can find definitions in the [glossary of terms](m365bp-glossary.md).
+
 ## [**Train Your Team**](#tab/Train)
 
 We've included a set of missions here with some objectives that need to be completed by your team. You have to make sure the team's devices are protected, as well as that the team is trained to use email and file sharing safely, and to recognize and report threats. 
@@ -56,6 +65,15 @@ We've included a set of missions here with some objectives that need to be compl
 [**Collaborate and share securely**](m365bp-collaborate-share-securely.md). The objectives of this mission require you to set up secure file sharing for all members of the organization.
 
 :::image type="content" source="../media/bus-premium-card-overview-train.png" alt-text="Microsoft 365 Business Premium protects your apps, file storage, email, devices, and identities.":::
+
+## Cybersecurity Playbook
+
+The guidance in this library helps your business achieve the goals described in the Harvard Kennedy School Cybersecurity Campaign Handbook. A summary of this library guidance for Microsoft 365 Business Premium is available for you to download.
+
+:::image type="content" source="../media/zero-trust/zero-trust-architecture.png" alt-text="The Zero Trust security architecture" lightbox="../media/m365bp-cyber-security-playbook.png":::
+
+> [!Note]
+> When a term or directive is unclear, you can find definitions in the [glossary of terms](m365bp-glossary.md).
 
 ## [**Safeguard Managed Devices**](#tab/Safeguard)
 
