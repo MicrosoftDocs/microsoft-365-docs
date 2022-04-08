@@ -29,6 +29,8 @@ The rest of this guide describes the required activities for SecOps personnel. T
 
 A companion article to this guide provides an overview to [manage incidents and alerts from Defender for Office 365 on the Incidents page in the Microsoft 365 Defender portal](mdo-manage-incident-and-alerts.md).
 
+The [Microsoft 365 Defender Security Operations Guide](/microsoft-365/security/defender/integrate-microsoft-365-defender-secops) contains additional information that you can use for planning and development.
+
 ## Daily activities
 
 ### Monitor the Microsoft 365 Defender Incidents queue
