@@ -20,15 +20,18 @@ description: "Learn how named entities help you detect sensitive items containin
 
 # Learn about named entities
 
-> [!IMPORTANT]
-> The named entities feature is rolling out and will appear in your tenant when it is available to you. Check for them in content explorer and in the data loss prevention (DLP) policy authoring flow. 
-
-*Named entities* are [sensitive information types](sensitive-information-type-learn-about.md) (SIT). They're complex dictionary and pattern-based classifiers that you can use to detect person names, physical addresses, and medical terms and conditions. You can see them in the **Compliance Center > Data classification > Sensitive info types**. Here is a partial list of where you can use SITs:
+*Named entities* are [sensitive information types](sensitive-information-type-learn-about.md) (SIT). They're complex dictionary and pattern-based classifiers that you can use to detect person names, physical addresses, and medical terms and conditions. You can see them in the **Microsoft Purview compliance portal > Data classification > Sensitive info types**. Here is a partial list of where you can use SITs:
 
 - [Data loss prevention policies (DLP)](dlp-learn-about-dlp.md) 
 - [Sensitivity labels](sensitivity-labels.md)
 - [Insider risk management](insider-risk-management-solution-overview.md)
 - [Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security)
+- [Microsoft Purview Information Protection <!--autolabeling-->](apply-sensitivity-label-automatically.md)
+- [Data Lifecycle Management <!--information governance-->](information-governance.md)
+- [Records management](records-management.md)
+- [Microsoft Purview eDiscovery](ediscovery.md)
+- [Microsoft Priva](/privacy/priva/priva-overview.md)
+- [Exact data match sensitive information types](sit-learn-about-exact-data-match-based-sits.md)
 
 DLP makes special use of named entities in *enhanced policy templates*, which are pre-configured DLP policies that you can customize for your organizations needs. You can also [create your own DLP policies](create-test-tune-dlp-policy.md) from a [blank template](create-a-dlp-policy-from-a-template.md) 
  and use a named entity SIT as a condition.

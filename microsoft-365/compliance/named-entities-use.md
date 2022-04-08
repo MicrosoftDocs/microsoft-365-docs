@@ -20,9 +20,6 @@ description: "Use these procedures to take advantage of named entities in your d
 
 # Use named entities in your data loss prevention policies
 
-> [!IMPORTANT]
-> The named entities feature is rolling out and will appear in your tenant when it is available to you. Check for them in content explorer and in the data loss prevention (DLP) policy authoring flow. 
-
 Read through [Learn about named entities](named-entities-learn.md) before you start to use them.
 
 ## Before you begin
@@ -44,6 +41,7 @@ You can use named entity SITs and enhanced policies to detect and protect sensit
 - OneDrive accounts
 - Teams chat and channel messages
 - Devices (Windows 10, and 11 endpoint devices)
+- Exchange mailboxes
 
 Named entity SITs and enhanced policies are not supported for:
 
