@@ -66,7 +66,7 @@ High-level MIP SDK use cases include:
 
 - A line-of-business application that applies classification labels to files on export.
 
-- A CAD/CAM design application that provides native support for MIP labeling.
+- A CAD/CAM design application that provides native support for sensitivity labels.
 
 - A cloud access security broker or data loss prevention solution that can encrypt data with Azure Information Protection.
 
