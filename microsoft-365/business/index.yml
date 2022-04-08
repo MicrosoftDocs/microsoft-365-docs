@@ -78,8 +78,8 @@ conceptualContent:
         - url: ../business-premium/m365bp-setup-overview.md
           itemType: how-to-guide
           text: 1. Complete the basic setup process
-        - url: ../business-premium/m365bp-setup.md
-          itemType: how-to-guide
+        - url: ../business-premium/m365bp-security-overview.md
+          itemType: overview
           text: 2. Protect your environment
         - url: ../business-premium/m365bp-devices-overview.md
           itemType: overview
@@ -130,30 +130,41 @@ conceptualContent:
   # Card
     - title: Protect devices
       links:
-        - url: ../security/defender-business/mdb-overview.md
+        - url: ../business-premium/m365bp-devices-overview.md
           itemType: overview
-          text: Overview of Microsoft Defender for Business
-        - url: ../security/defender-business/mdb-setup-configuration.md
+          text: Protect personal (unmanaged) devices
+        - url: ../business-premium/m365bp-multifactor-authentication.md
+          itemType: how-to-guide
+          text: Set up multi-factor authentication on devices
+        - url: ../business-premium/m365bp-install-office-apps.md
+          itemType: how-to-guide
+          text: Install Office apps on all devices
+        - url: ../business-premium/m365bp-protect-pcs-macs.md
+          itemType: how-to-guide
+          text: Protect unmanaged Windows PCs and Macs
+        - url: ../business-premium/m365bp-protect-devices.md
           itemType: overview
-          text: Set up and configure Defender for Business
-        - url: ../security/defender-business/compare-mdb-m365-plans.md
-          itemType: overview
-          text: Compare security features in Microsoft 365 plans
-        - url: ../security/defender-business/mdb-faq.yml
-          itemType: reference
-          text: Defender for Business FAQ
+          text: Set up and secure managed devices
+
   # Card
     - title: Protect email content and Office files
       links:
-        - url: ../security/office-365-security/defender-for-office-365.md
-          itemType: overview
-          text: Overview of Microsoft Defender for Office 365
-        - url: ../security/office-365-security/protect-against-threats.md
+        - url: ../business-premium/m365bp-increase-protection.md
           itemType: how-to-guide
-          text: Set up and configure Defender for Office 365
-        - url: ../security/office-365-security/anti-malware-protection-faq-eop.yml
-          itemType: reference
-          text: Defender for Office 365 FAQ
+          text: Set up your security policies
+        - url: ../business-premium/avoid-phishing-and-attacks.md
+          itemType: how-to-guide
+          text: Know what to watch for in email content
+        - url: ../business-premium/send-encrypted-email.md
+          itemType: how-to-guide
+          text: Encrypt or label sensitive email
+        - url: ../business-premium/create-teams-for-collaboration.md
+          itemType: how-to-guide
+          text: Use Microsoft Teams for collaboration
+        - url: ../business-premium/share-files-and-videos.md
+          itemType: overview
+          text: Share files and videos in Microsoft Teams or SharePoint
+
   # Card
     - title: Support and community
       links:

@@ -1,5 +1,5 @@
 ---
-title: "Create a team in Microsoft Teams so your small business or campaign can collaborate"
+title: "Use Microsoft Teams for collaboration"
 f1.keywords:
 - NOCSH
 ms.author: samanro
@@ -25,7 +25,7 @@ search.appverid:
 description: "Learn why and how to create a team in Microsoft Teams so your small business or campaign can collaborate."
 ---
 
-# Create a team in Microsoft Teams so your small business or campaign can collaborate
+# Use Microsoft Teams for collaboration
 
 Microsoft Teams is a collaboration app that helps your staff stay organized and have conversations, from any device. You can use Microsoft Teams to have instant conversations with members of your staff or guests outside your organization. You can also make phone calls, host meetings, and share files.
 
