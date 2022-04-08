@@ -170,8 +170,8 @@ You can choose from several options to create custom sensitive information types
 - **Use PowerShell** - You can set up custom sensitive information types using PowerShell. Although this method is more complex than using the UI, you have more configuration options. See [Create a custom sensitive information type in Security & Compliance Center PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md).
 
 > [!NOTE]
-> Improved confidence levels are available for immediate use within Microsoft Purview data loss prevention services, Microsoft Purview Information Protection, Communication Compliance, Information Governance, and Records Management.
-> Microsoft Purview Information Protection now  supports double byte character set languages for:
+> Improved confidence levels are available for immediate use within Microsoft Purview data loss prevention services, information protection, Communication Compliance, data lifecycle management, and records management.
+> Information Protection now supports double byte character set languages for:
 > - Chinese (simplified)
 > - Chinese (traditional)
 > - Korean

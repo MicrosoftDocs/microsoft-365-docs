@@ -73,7 +73,7 @@ When you have more than one retention policy, and when you also use retention la
 > [!NOTE]
 > Retention policies now support [shared channels](/MicrosoftTeams/shared-channels), currently in preview. When you configure retention settings for the **Teams channel message** location, if a team has any shared channels, they inherit retention settings from their parent team.
 
-1. From the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), select **Information Governance** > **Retention Policies**.
+1. From the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), select **Data lifecycle management** > **Retention Policies**.
 
 2. Select **New retention policy** to start the **Create retention policy** configuration, and name your new retention policy.
 
@@ -129,7 +129,7 @@ It's possible that a retention policy that's applied to Microsoft 365 groups, Sh
 >
 > To use this feature, your Yammer network must be [Native Mode](/yammer/configure-your-yammer-network/overview-native-mode), not Hybrid Mode.
 
-1. From the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), select **Information Governance** > **Retention Policies**.
+1. From the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), select **Data lifecycle management** > **Retention Policies**.
 
 2. Select **New retention policy** to create a new retention policy.
 
@@ -177,7 +177,7 @@ Use the following instructions for retention policies that apply to any of these
 - Microsoft 365 groups
 - Skype for Business
 
-1. From the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), select **Information Governance** > **Retention Policies**.
+1. From the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), select **Data lifecycle management** > **Retention Policies**.
 
 2. Select **New retention policy** to start the **Create retention policy** configuration, and name your new retention policy.
 
