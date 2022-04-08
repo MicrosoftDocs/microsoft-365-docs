@@ -130,18 +130,22 @@ conceptualContent:
   # Card
     - title: Protect devices
       links:
-        - url: ../security/defender-business/mdb-overview.md
+        - url: ../business-premium/m365bp-devices-overview.md
           itemType: overview
-          text: Overview of Microsoft Defender for Business
-        - url: ../security/defender-business/mdb-setup-configuration.md
+          text: Protect personal (unmanaged) devices
+        - url: ../business-premium/m365bp-multifactor-authentication.md
+          itemType: how-to-guide
+          text: Set up multi-factor authentication with your mobile device
+        - url: ../business-premium/m365bp-install-office-apps.md
+          itemType: how-to-guide
+          text: Install Office apps on all devices
+        - url: ../business-premium/m365bp-protect-pcs-macs.md
+          itemType: how-to-guide
+          text: Protect unmanaged Windows PCs and Macs
+        - url: ../business-premium/m365bp-protect-devices.md
           itemType: overview
-          text: Set up and configure Defender for Business
-        - url: ../security/defender-business/compare-mdb-m365-plans.md
-          itemType: overview
-          text: Compare security features in Microsoft 365 plans
-        - url: ../security/defender-business/mdb-faq.yml
-          itemType: reference
-          text: Defender for Business FAQ
+          text: Set up and secure managed devices
+
   # Card
     - title: Protect email content and Office files
       links:
