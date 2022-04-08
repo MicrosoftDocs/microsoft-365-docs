@@ -34,7 +34,7 @@ Groups that are actively in use are renewed automatically. Any of the following 
 - Outlook - Join or edit group, read or write group message from the group, and like a message (Outlook on the web).
 - Teams - Visit a teams channel.
 - Yammer - View a post within a Yammer community or an interactive email in Outlook.
-- Forms - View, create, or edit forms, Submit a response to a form. 
+- Forms - View, create, or edit forms, or submit a response to a form. 
 
 Note that the only Yammer activity that will trigger an automatic group renewal is the upload of a document to SharePoint within the community.
 
