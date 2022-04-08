@@ -13,6 +13,9 @@ description: "Instructions for entering service offerings information, including
 
 # Define your service offerings in Bookings
 
+> [!NOTE]
+> This article helps you to interact with the latest version of Microsoft Bookings. Previous versions will be retired in coming months.
+
 When you define your service offerings in Microsoft Bookings, you set a service name, description, location (choose whether you want to meet in person or have an online meeting), duration, default reminders to customers and staff, internal notes about the service, and pricing. You can also tag the employees who are qualified to provide the service. Then, when customers come to your business web site to book an appointment, they can see exactly what types of appointments are available, choose the person they want to provide the service, and how much their service will cost.
 
 You can also add customized information and URLs to the email confirmation and reminders that you send when someone books a service through your booking page.
@@ -21,7 +24,7 @@ You can also add customized information and URLs to the email confirmation and r
 
 1. In Microsoft 365, select the App launcher, and then select **Bookings**.
 
-2. Go to **Settings** -> [Manage services page](https://outlook.office.com/bookings/settings/services) and select **Add new service**.
+2. Go to **Your calendar** > **Services** and select **Add new service**.
 
 3. On the **Basic details** page, add your selections.
 
@@ -99,7 +102,7 @@ You can also add customized information and URLs to the email confirmation and r
 
    :::image type="content" source="media/bookings-additional-info.jpg" alt-text="Additional information in a Bookings email.":::
 
-9. **Enable text message notifications for your customer** If selected, SMS messages are sent to the customer, but only if they opt-in.
+9. **Enable text message notifications for your customer** If selected, SMS messages are sent to the customer, but only if they opt in.
 
    - Opt-in box on the manual booking and Self-Service Page:
 
