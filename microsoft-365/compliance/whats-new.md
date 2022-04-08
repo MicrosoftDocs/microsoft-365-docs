@@ -125,7 +125,7 @@ To meet the challenges of today’s decentralized, data-rich workplace, we’re 
 
 ### Information protection
 
-- [Deploy a Microsoft Purview Information Protection solution](information-protection-solution.md) - New step-by-step guidance for customers looking for a prescriptive roadmap to deploy Microsoft Purview Information Protection
+- [Deploy an information protection solution with Microsoft Purview](information-protection-solution.md) - New step-by-step guidance for customers looking for a prescriptive roadmap to deploy Microsoft Purview Information Protection
 
 ### Retention and records management
 
