@@ -31,7 +31,9 @@ description: "Learn how to collaborate securely in your small business or campai
 
 Let us begin by saying that you made a wise choice in adopting Microsoft 365 Business Premium. There are other small business productivity tools out there, but none compare to Microsoft 365 Business Premium for keeping your organization safe from cyber criminals. You took on the defense of your organization's systems, and that's good. You are your organization’s first and best defense against hackers and cyber attackers, including random individuals, organized crime, or highly-sophisticated nation states. 
 
-The task before you is this &mdash; let Microsoft 365 Business Premium help secure your organization’s future! These important missions are categorized in order of importance, and completing them is the most effective way to thwart hackers, protect against ransomware, and ensure your organization’s future is safeguarded. Let's get started.
+The task before you is this &mdash; let Microsoft 365 Business Premium help secure your organization’s future! These important missions are categorized in order of importance, and completing them is the most effective way to thwart hackers, protect against ransomware, and ensure your organization’s future is safeguarded. Let's get started. 
+
+Click through each tab below to learn more about how to secure your environment with Microsoft 365 Business Premium.
 
 > [!Note]
 > When a term or directive is unclear, you can find definitions in the [glossary of terms](m365bp-glossary.md).
@@ -44,7 +46,7 @@ In these first missions, you're going to have to sign in and set up your initial
 
 [**Bump up security protection**](m365bp-security-overview.md). Now, set up a number of critical security measures to protect your organization. 
 
-:::image type="content" source="../media/bus-premium-card.png" alt-text="Microsoft 365 Business Premium protects your apps, file storage, email, devices, and identities.":::
+:::image type="content" source="../media/bus-premium-card-manage.png" alt-text="Microsoft 365 Business Premium protects your apps, file storage, email, devices, and identities.":::
 
 ## [**Train Your Team**](#tab/Train)
 
@@ -56,7 +58,7 @@ We've included a set of missions here with some objectives that need to be compl
 
 [**Collaborate and share securely**](m365bp-collaborate-share-securely.md). The objectives of this mission require you to set up secure file sharing for all members of the organization.
 
-:::image type="content" source="../media/bus-premium-card.png" alt-text="Microsoft 365 Business Premium protects your apps, file storage, email, devices, and identities.":::
+:::image type="content" source="../media/bus-premium-card-train.png" alt-text="Microsoft 365 Business Premium protects your apps, file storage, email, devices, and identities.":::
 
 ## [**Safeguard Managed Devices**](#tab/Safeguard)
 
@@ -64,7 +66,13 @@ A safe device is one that is monitored by the organization. In this last critica
 
 [**Set up and secure managed devices**](m365bp-protect-devices.md). Take the steps to secure those devices so they are monitored and protected by the organization! 
 
-:::image type="content" source="../media/bus-premium-card.png" alt-text="Microsoft 365 Business Premium protects your apps, file storage, email, devices, and identities.":::
+:::image type="content" source="../media/bus-premium-card-manage.png" alt-text="Microsoft 365 Business Premium protects your apps, file storage, email, devices, and identities.":::
+
+## Cybersecurity Playbook
+
+The guidance in this library helps your business achieve the goals described in the Harvard Kennedy School Cybersecurity Campaign Handbook. A summary of this library guidance for Microsoft 365 Business Premium is available for you to download.
+
+:::image type="content" source="../media/zero-trust/zero-trust-architecture.png" alt-text="The Zero Trust security architecture" lightbox="../media/m365bp-cyber-security-playbook.png":::
 
 
 <!---
