@@ -93,11 +93,11 @@ Security intelligence update version: 1.361.1449.0<br/>
 
 ### What's new
 
-- Added fix for [ASR rule](attack-surface-reduction.md) that blocked an Outlook add-in 
+- Added fix for an [attack surface reduction rule](attack-surface-reduction.md) that blocked an Outlook add-in 
 - Added fix for [behavior monitoring](configure-protection-features-microsoft-defender-antivirus.md) performance issue related to short live processes 
 - Added fix for [AMSI](/windows/win32/amsi/antimalware-scan-interface-portal) exclusion 
 - Improved [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) capabilities 
-- Added a fix for [real-time protection](configure-protection-features-microsoft-defender-antivirus.md) getting disabled in some cases when using `SharedSignaturesPath` config (See [Set-MpPreference](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps) for more details about `SharedSignaturesPath`)
+- Added a fix for [real-time protection](configure-protection-features-microsoft-defender-antivirus.md) getting disabled in some cases when using `SharedSignaturesPath` config (For more details about the `SharedSignaturesPath` parameter, see [Set-MpPreference](/powershell/module/defender/set-mppreference))
 
 ### Known Issues
 
