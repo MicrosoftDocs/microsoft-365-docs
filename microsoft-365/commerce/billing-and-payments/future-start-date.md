@@ -15,7 +15,7 @@ ms.collection:
 - Adm_O365
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Learn what it means when your invoice has a subscriptions with a future start date."
+description: "Learn what it means when your invoice has a subscription with a future start date."
 ms.custom: 
 - commerce_billing
 ms.date: 04/08/2022
