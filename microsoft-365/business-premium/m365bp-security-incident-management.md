@@ -28,7 +28,7 @@ description: "An overview of security incident management"
 
 # Security incident management
 
-As threats are detected, remediation actions come into play. Depending on the particular threat and how your security settings are configured, actions can be taken automatically or only upon approval. 
+As threats are detected, remediation actions come into play. Depending on the particular threat and how your security settings are configured, actions are taken automatically or only upon approval. 
 
 To do this, use the following steps:
 
