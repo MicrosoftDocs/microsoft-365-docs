@@ -16,8 +16,6 @@ ms.localizationpriority:  medium
 description: Learn how to change the view in a document library in Microsoft SharePoint Syntex.
 ---
 
-## Change the view in a document library
-
 There are multiple ways to view how you see the information in a SharePoint document library. You can change the view in your document library to fit your needs or preferences.
 
 To change the view on the library page, select the view dropdown menu to show the options, and then select the view you want to use.
