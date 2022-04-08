@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 ms.reviewer: nickrob
 manager: laurawi
-ms.date: 
+ms.date: 04/08/2022
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -125,7 +125,7 @@ When you run a draft collection, an estimate of the number of items (and their t
 
     For example, multiple versions of SharePoint documents aren't included in the estimate for the draft collection. But if you select the option to include all document versions when you commit a draft collection, the actual number (and total size) of items added to the review set will increase.
 
-    For more information about these options, see [Commit a draft collection to a review set](commit-draft-collection.md#commit-a-draft-collection-to-a-review-set-in-advanced-ediscovery). 
+    For more information about these options, see [Commit a draft collection to a review set](commit-draft-collection.md#commit-a-draft-collection-to-a-review-set-in-ediscovery-premium).
 
 Here are other reasons why the estimated results from a draft collection can be different that the actual committed results.
 

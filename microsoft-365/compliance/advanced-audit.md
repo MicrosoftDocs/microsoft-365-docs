@@ -36,7 +36,7 @@ Audit (Premium) retains all Exchange, SharePoint, and Azure Active Directory aud
 In addition to the one-year retention capabilities of Audit (Premium), we have also released the capability to retain audit logs for 10 years. The 10-year retention of audit logs helps support long running investigations and respond to regulatory, legal, and internal obligations.
 
 > [!NOTE]
-> Retaining audit logs for 10 years will require an additional per-user add-on license. After this license is assigned to a user and an appropriate 10-year audit log retention policy is set for that user, audit logs covered by that policy will start to be retained for the 10-year period. This policy is not retroactive and can't retain audit logs that were generated before the 10-year audit log retention policy was created. For more information, see the [FAQs for Audit (Premium)](#faqs-for-advanced-audit) section in this article.
+> Retaining audit logs for 10 years will require an additional per-user add-on license. After this license is assigned to a user and an appropriate 10-year audit log retention policy is set for that user, audit logs covered by that policy will start to be retained for the 10-year period. This policy is not retroactive and can't retain audit logs that were generated before the 10-year audit log retention policy was created. For more information, see the [FAQs for Audit (Premium)](#faqs-for-audit-premium) section in this article.
 
 ### Audit log retention policies
 
@@ -64,7 +64,7 @@ Audit (Premium) provides the following events:
 
 - [SearchQueryInitiatedSharePoint](#searchqueryinitiatedsharepoint)
 
-- [Other Audit (Premium) events in Microsoft 365](#other-advanced-audit-events-in-microsoft-365)
+- [Other Audit (Premium) events in Microsoft 365](#other-audit-premium-events-in-microsoft-365)
 
 ### MailItemsAccessed
 
@@ -127,7 +127,7 @@ To search for SearchQueryInitiatedExchange audit records, you can search for the
 You can also run the [Search-UnifiedAuditLog -Operations SearchQueryInitiatedExchange](/powershell/module/exchange/search-unifiedauditlog) in Exchange Online PowerShell.
 
 > [!NOTE]
-> You must enable SearchQueryInitiatedExchange to be logged so you can search for this event in the audit log. For instructions, see [Set up Audit (Premium)](set-up-advanced-audit.md#step-2-enable-advanced-audit-events).
+> You must enable SearchQueryInitiatedExchange to be logged so you can search for this event in the audit log. For instructions, see [Set up Audit (Premium)](set-up-advanced-audit.md#step-2-enable-audit-premium-events).
 
 ### SearchQueryInitiatedSharePoint
 
@@ -150,7 +150,7 @@ To search for SearchQueryInitiatedSharePoint audit records, you can search for t
 You can also run the [Search-UnifiedAuditLog -Operations SearchQueryInitiatedSharePoint](/powershell/module/exchange/search-unifiedauditlog) in Exchange Online PowerShell.
 
 > [!NOTE]
-> You must enable SearchQueryInitiatedSharePoint to be logged so you can search for this event in the audit log. For instructions, see [Set up Audit (Premium)](set-up-advanced-audit.md#step-2-enable-advanced-audit-events).
+> You must enable SearchQueryInitiatedSharePoint to be logged so you can search for this event in the audit log. For instructions, see [Set up Audit (Premium)](set-up-advanced-audit.md#step-2-enable-audit-premium-events).
 
 ### Other Audit (Premium) events in Microsoft 365
 

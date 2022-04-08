@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 
+ms.date: 04/08/2022
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
@@ -118,7 +118,7 @@ During the completion of this step (by following the step-by-step instructions),
 
 The final step is to set up the Twitter connector in the compliance portal that will import data from your organization's Twitter account to a specified mailbox in Microsoft 365. After you complete this step, the Microsoft 365 Import service will start importing data from your organization's Twitter account to Microsoft 365.
 
-For step-by-step instructions, see [Set up a Twitter connector in the Microsoft Purview compliance portal](deploy-twitter-connector.md#step-5-set-up-a-twitter-connector-in-the-microsoft-365-compliance-center). 
+For step-by-step instructions, see [Set up a Twitter connector in the Microsoft Purview compliance portal](deploy-twitter-connector.md#step-5-set-up-a-twitter-connector-in-the-compliance-portal).
 
 During the completion of this step (by following the step-by-step instructions), you'll provide the following information (that you've copied to a text file after completing the steps).
 

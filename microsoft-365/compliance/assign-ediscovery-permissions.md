@@ -160,7 +160,7 @@ This role lets users perform bulk removal of data matching the criteria of a con
 
 You can add role groups as members of eDiscovery (Standard) and eDiscovery (Premium) cases so that members of the role groups can access and perform tasks in the assigned cases. The roles assigned to the role group define what members of the role group can do. Then adding a role group as a member of the case lets members access and perform those tasks in a specific case. For more information about adding role groups as members of cases, see:
 
-- [Get started with eDiscovery (Standard)](get-started-core-ediscovery.md#step-4-optional-add-members-to-a-core-ediscovery-case)
+- [Get started with eDiscovery (Standard)](get-started-core-ediscovery.md#step-4-optional-add-members-to-a-ediscovery-standard-case)
 
 - [Add or remove members from an eDiscovery (Premium) case](add-or-remove-members-from-a-case-in-advanced-ediscovery.md)
 

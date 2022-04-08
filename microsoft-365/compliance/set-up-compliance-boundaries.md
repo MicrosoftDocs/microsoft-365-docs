@@ -177,7 +177,7 @@ To create a case and assign members:
 
 3. Add role groups as members to the case. For instructions, see the one of the following articles:
 
-   - [Add members to a eDiscovery (Standard) case](get-started-core-ediscovery.md#step-4-optional-add-members-to-a-core-ediscovery-case)
+   - [Add members to a eDiscovery (Standard) case](get-started-core-ediscovery.md#step-4-optional-add-members-to-a-ediscovery-standard-case)
 
    - [Add members to an eDiscovery (Premium) case](add-or-remove-members-from-a-case-in-advanced-ediscovery.md)
 
