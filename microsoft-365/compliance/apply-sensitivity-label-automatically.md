@@ -196,7 +196,7 @@ If you prefer, you can recommend to your users that they apply the label. With t
 
 Here's an example of a prompt from the Azure Information Protection unified labeling client when you configure a condition to apply a label as a recommended action, with a custom policy tip. You can choose what text is displayed in the policy tip.
 
-![Prompt to apply a recommended label.](../media/Sensitivity-label-Prompt-for-required-label.png)
+![Prompt to apply a recommended label.](../media/Sensitivity-label-prompt-for-required-label.png)
 
 ### When automatic or recommended labels are applied
 
@@ -270,18 +270,6 @@ The simulated deployment runs like the WhatIf parameter for PowerShell. You see 
 Simulation mode also lets you gradually increase the scope of your auto-labeling policy before deployment. For example, you might start with a single location, such as a SharePoint site, with a single document library. Then, with iterative changes, increase the scope to multiple sites, and then to another location, such as OneDrive.
 
 Finally, you can use simulation mode to provide an approximation of the time needed to run your auto-labeling policy, to help you plan and schedule when to run it without simulation mode.
-
-#### Deleted OneDrive accounts and simulation results
-
-Expect possible display discrepancies in the simulation results when deleted OneDrive accounts are still in the [retention stage of the deletion process](/onedrive/retention-and-deletion#the-onedrive-deletion-process). For example, an employee has left the organization and their manager has temporary access to that user's OneDrive files.
-
-In this scenario, if the OneDrive account was specified by URL in the auto-labeling policy, matched files from the deleted OneDrive account are included in the simulation results.
-
-However, if the OneDrive account wasn't specified by URL, but was included with the **All** default setting:
-- When the SharePoint location is included in the policy, matched files from the deleted OneDrive account display as SharePoint items in the simulation results.
-- When the SharePoint location isn't included in the policy, matched files from the deleted OneDrive account aren't included in the simulation results.
-
-In all cases, matched files are labeled until the OneDrive account is permanently deleted. The display discrepancies listed apply only to the simulation results.
 
 ### Creating an auto-labeling policy
 

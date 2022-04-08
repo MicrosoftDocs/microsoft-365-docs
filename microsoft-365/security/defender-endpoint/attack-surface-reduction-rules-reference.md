@@ -32,9 +32,10 @@ This article provides information about attack reduction rules:
 - [Supported operating system versions](#supported-operating-systems)
 - [Supported configuration management systems](#supported-configuration-management-systems)
 - [Per-rule alert and notification details](#per-rule-alert-and-notification-details)
+- [ASR rules and GUIDs matrix](#asr-rules-and-guids-matrix)
+- [ASR rule modes](#asr-rule-modes)
 - [Per-rule-descriptions](#per-rule-descriptions)
   - Rule descriptions
-  - GUIDs
   - Configuration management system rule names
 
 ## Public preview: Supported operating systems
@@ -108,7 +109,7 @@ Links to information about configuration management system versions referenced i
 |Rule name | Intune | Microsoft Endpoint Manager |Microsoft Endpoint Configuration Manager |Group Policy<sup>[[1](#fn1)]<sup></sup> | PowerShell<sup>[[1](#fn1)]<sup></sup>  |
 |---|:---:|:---:|:---:|:---:|:---:|
 |[Block abuse of exploited vulnerable signed drivers](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y  | Y MEM OMA-URI |   | Y  |  Y  |
-|[Block Adobe Reader from creating child processes](#block-adobe-reader-from-creating-child-processes) | Y |   | Y | Y  | Y  |
+|[Block Adobe Reader from creating child processes](#block-adobe-reader-from-creating-child-processes) | Y |   |  | Y  | Y  |
 |[Block all Office applications from creating child processes](#block-all-office-applications-from-creating-child-processes) | Y |   |Y <br><br> CB 1710 | Y  | Y  |
 |[Block credential stealing from the Windows local security authority subsystem (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | Y  |   | Y <br><br>CB 1802 | Y  | Y  |
 |[Block executable content from email client and webmail](#block-executable-content-from-email-client-and-webmail) | Y |  |Y <br><br> CB 1710 | Y | Y  |
@@ -136,7 +137,7 @@ Links to information about configuration management system versions referenced i
 
 Toast notifications are generated for all rules in Block mode. Rules in any other mode will not generate toast notifications
 
-For rules with the “Rule State” specified:
+For rules with the "Rule State" specified:
 
 - ASR rules with \<ASR Rule, Rule State\> combinations are used to surface alerts (toast notifications) on Microsoft Defender for Endpoint only for devices at high-cloud block level. Devices not at high cloud block level will not generate alerts for any <ASR Rule, Rule State> combinations
 - EDR alerts are generated for ASR rules in the specified states, but only for devices at high cloud block level.
@@ -162,6 +163,27 @@ For rules with the “Rule State” specified:
 |[Use advanced protection against ransomware](#use-advanced-protection-against-ransomware) | Audit&nbsp;\|&nbsp;Block | Y \| Y <br> Requires device at high-cloud block level  | N \| Y <br> Requires device at high-cloud block level |
 |   |   |   |   |
   
+## ASR rules and GUIDs matrix
+
+| Rule Name | Rule GUID |
+|:-----|:-----|
+| Block abuse of exploited vulnerable signed drivers | 56a863a9-875e-4185-98a7-b882c64b5ce5 |
+| Block Adobe Reader from creating child processes | 7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c |
+| Block all Office applications from creating child processes | d4f940ab-401b-4efc-aadc-ad5f3c50688a |
+| Block credential stealing from the Windows local security authority subsystem (lsass.exe) | 9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2 |
+| Block executable content from email client and webmail | be9ba2d9-53ea-4cdc-84e5-9b1eeee46550 |
+| Block executable files from running unless they meet a prevalence, age, or trusted list criterion | 01443614-cd74-433a-b99e-2ecdc07bfc25 |
+| Block execution of potentially obfuscated scripts | 5beb7efe-fd9a-4556-801d-275e5ffc04cc |
+| Block JavaScript or VBScript from launching downloaded executable content | d3e037e1-3eb8-44c8-a917-57927947596d |
+| Block Office applications from creating executable content | 3b576869-a4ec-4529-8536-b80a7769e899 |
+| Block Office applications from injecting code into other processes | 75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84 |
+| Block Office communication application from creating child processes | 26190899-1602-49e8-8b27-eb1d0a1ce869 |
+| Block persistence through WMI event subscription <br>* File and folder exclusions not supported. | e6db77e5-3df2-4cf1-b95a-636979351e5b |
+| Block process creations originating from PSExec and WMI commands | d1e49aac-8f56-4280-b9ba-993a6d77406c |
+| Block untrusted and unsigned processes that run from USB | b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4 |
+| Block Win32 API calls from Office macros | 92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b |
+| Use advanced protection against ransomware | c1db55ab-c21a-4637-bb3f-a12568109d35 |
+
 ## ASR rule modes
 
 - **Not configured** or **Disable**: This is the state in which the ASR rule has not been enabled or has been disabled. The code for this state = 0.
@@ -173,7 +195,7 @@ _Warn mode_ is a block-mode type that alerts users about potentially risky actio
 
 If the allow button is clicked, the block will be suppressed for 24 hours. After 24 hours, the end-user will need to allow the block again. The warn mode for ASR rules is only supported for RS5+ (1809+) devices. If bypass is assigned to ASR rules on devices with older versions, the rule will be in blocked mode.
 
-You can also set a rule in warn mode via PowerShell by simply specifying the AttackSurfaceReductionRules_Actions as “Warn”. For example:
+You can also set a rule in warn mode via PowerShell by simply specifying the AttackSurfaceReductionRules_Actions as "Warn". For example:
 
 ```powershell
 -command "& {&'Add-MpPreference' -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions Warn"} 
@@ -209,7 +231,7 @@ Advanced hunting action type:
 -->
 
 <!-- 
-Dependencies:
+Dependencies: none provided by engineering
 -->
 
 ### Block Adobe Reader from creating child processes
@@ -260,7 +282,7 @@ LSASS authenticates users who sign in on a Windows computer. Microsoft Defender 
 > In some apps, the code enumerates all running processes and attempts to open them with exhaustive permissions. This rule denies the app's process open action and logs the details to the security event log. This rule can generate a lot of noise. If you have an app that simply enumerates LSASS, but has no real impact in functionality, there is no need to add it to the exclusion list. By itself, this event log entry doesn't necessarily indicate a malicious threat.
   
 > [!IMPORTANT]
-> The default state for the Attack Surface Reduction (ASR) rule “Block credential stealing from the Windows local security authority subsystem (lsass.exe)” will change from **Not Configured** to **Configured** and the default mode set to **Block**. All other ASR rules will remain in their default state: **Not Configured**. Additional filtering logic has already been incorporated in the rule to reduce end user notifications. Customers can configure the rule to **Audit**, **Warn** or **Disabled** modes, which will override the default mode. The functionality of this rule is the same, whether the rule is configured in the on-by-default mode, or if you enable Block mode manually.  
+> The default state for the Attack Surface Reduction (ASR) rule "Block credential stealing from the Windows local security authority subsystem (lsass.exe)" will change from **Not Configured** to **Configured** and the default mode set to **Block**. All other ASR rules will remain in their default state: **Not Configured**. Additional filtering logic has already been incorporated in the rule to reduce end user notifications. Customers can configure the rule to **Audit**, **Warn** or **Disabled** modes, which will override the default mode. The functionality of this rule is the same, whether the rule is configured in the on-by-default mode, or if you enable Block mode manually.
 
 Intune name: `Flag credential stealing from the Windows local security authority subsystem`
 
