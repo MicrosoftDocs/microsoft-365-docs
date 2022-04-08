@@ -150,8 +150,10 @@ Use the generated `AppID` and `Key` in your Microsoft 365 Moodle Plugins setup p
 
 1. To validate [cron](https://docs.moodle.org/310/en/Cron) tasks and to run them manually for the first time, navigate to **Site administration** > **Server** > **Tasks** > **Scheduled tasks**.
 
-    1. Scroll down and find the **Sync Moodle courses to Microsoft Teams** task and select **Run now**.
-        1. This task will create groups and Teams if any owner is found.
+    1. Scroll down and find the task **Sync users with Azure AD** and select **Run now**.
+        1. This will sync the AAD user to your Moodle site.
+    1. Next, find the **Sync Moodle courses to Microsoft Teams** task and select **Run now**.
+        1. This task will create groups and Teams if an owner is found.
         1. If the user has `local/o365:teamowner` capability in the course context, the user is a team owner. If the user has `local/o365:teammember` capability in the course context, the user is a team member.  
         1. The default *Teacher* role has the `local/o365:teamowner" capability`, and the default *Student* role has the `local/o365:teammember` capability.
 
