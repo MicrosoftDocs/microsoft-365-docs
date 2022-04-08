@@ -53,28 +53,43 @@ conceptualContent:
       links:
         - url: ../business-premium/index.md
           itemType: overview
-          text: Overview
+          text: Microsoft 365 Business Premium overview
         - url: ../business-premium/m365bp-secure-users.md
           itemType: overview
-          text: How Microsoft 365 Business Premium helps your business
+          text: How Microsoft 365 Business Premium helps your business with productivity and security
         - url: /office365/servicedescriptions/office-365-service-descriptions-technet-library
-          text: Microsoft 365 and Office 365 service descriptions
+          text: Microsoft 365 service descriptions
           itemType: reference
-        - url: ../business-video/index.yml
-          itemType: video
-          text: Microsoft 365 for business training videos
         - url: https://go.microsoft.com/fwlink/?linkid=2164213
           itemType: overview
           text: Compare Microsoft 365 for business plans
         - url: ../admin/misc/microsoft-365-business-faqs.yml
           itemType: reference
           text: Microsoft 365 for business FAQ
+        - url: ../business-video/index.yml
+          itemType: video
+          text: Microsoft 365 for business training videos
   # Card
     - title: Set up Microsoft 365 Business Premium
       links:
         - url: ../business-premium/get-microsoft-365-business-premium.md
           itemType: how-to-guide
           text: 1. Get Microsoft 365 Business Premium
+        - url: ../business-premium/m365bp-setup-overview.md
+          itemType: how-to-guide
+          text: 2. Set up Microsoft 365 Business Premium
+        - url: ../business-premium/m365bp-setup.md
+          itemType: how-to-guide
+          text: 3. Protect your environment
+        - url: ../business-premium/m365bp-devices-overview.md
+          itemType: overview
+          text: 4. Set up and protect unmanaged devices
+        - url: ../business-premium/m365bp-protect-email-overview.md
+          itemType: overview
+          text: 5. Use email more securely
+        - url: ../business-premium/m365bp-collaborate-share-securely.md
+          itemType: overview
+          text: Collaborate and share more securely
         - url: ../admin/setup/plan-your-setup.md
           itemType: how-to-guide
           text: 2. Plan your setup process
@@ -119,7 +134,7 @@ conceptualContent:
           text: Get started with Partner Center
 
   # Card
-    - title: Protect your company's devices
+    - title: Protect devices
       links:
         - url: ../security/defender-business/mdb-overview.md
           itemType: overview
@@ -134,7 +149,7 @@ conceptualContent:
           itemType: reference
           text: Defender for Business FAQ
   # Card
-    - title: Protect your email content and Office files
+    - title: Protect email content and Office files
       links:
         - url: ../security/office-365-security/defender-for-office-365.md
           itemType: overview
