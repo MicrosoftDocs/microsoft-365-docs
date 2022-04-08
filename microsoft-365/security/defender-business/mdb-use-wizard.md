@@ -55,7 +55,7 @@ The wizard is designed to help you set up and configure Defender for Business qu
 
    - If you're already using Microsoft Intune (part of Microsoft Endpoint Manager), and your company has devices enrolled in Endpoint Manager, you'll be asked whether you want to use [automatic onboarding](mdb-onboard-devices.md#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager) for some or all of your enrolled Windows devices. Automatic onboarding sets up a connection between Endpoint Manager and Defender for Business, and then onboards Windows devices to Defender for Business seamlessly.
 
-   - If you're not already using Endpoint Manager, or if you have non-Windows devices enrolled in Endpoint Manager, you can [onboard devices to Defender for Business manually](mdb-onboard-devices.md#local-script-in-defender-for-business). 
+   - If you're not already using Endpoint Manager, you can [onboard devices to Defender for Business by using a local script](mdb-onboard-devices.md#local-script-in-defender-for-business). 
    
 4. **Configure your security policies**. Defender for Business includes default security policies for next-generation protection and firewall protection that can be applied to your company's devices. These default policies use recommended settings and are designed to provide strong protection for your devices. 
 
@@ -65,9 +65,7 @@ The wizard is designed to help you set up and configure Defender for Business qu
 
 ## What happens if I don't use the wizard?
 
-If you choose not to use the wizard, or if the wizard is closed before your setup process is complete, you can still complete your setup and configuration process on your own. 
-
-See [Set up and configure Microsoft Defender for Business](mdb-setup-configuration.md) to walk through these steps:
+Using the setup wizard is optional. If you choose not to use the wizard, or if the wizard is closed before your setup process is complete, you can complete the setup and configuration process on your own. See [Set up and configure Microsoft Defender for Business](mdb-setup-configuration.md) to walk through these steps:
 
 1. [Assign roles and permissions](mdb-roles-permissions.md) so your security team can access and use the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)).
 
