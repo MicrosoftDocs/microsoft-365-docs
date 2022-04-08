@@ -107,7 +107,7 @@ Requires the [new Outlook for Mac](https://support.microsoft.com/office/the-new-
 If users have the [Azure Information Protection (AIP) client](/azure/information-protection/rms-client/aip-clientv2) installed on their Windows computers, by default, built-in labels are turned off in [Windows Office apps that support them](#labeling-client-for-desktop-apps). Because built-in labels don't use an Office add-in, as used by the AIP client, they have the benefit of more stability and better performance. They also support the latest features, such as advanced classifiers. 
 
 > [!NOTE]
-> If you're not seeing the labeling features you expect on Windows computers, despite confirming the minimum supported versions for your Office deployment channel, it might be because you need to [disable the AIP add-in](sensitivity-labels-aip.md#how-to-disable-the-aip-add-in-to-use-built-in-labeling-for-office-apps).
+> If you're not seeing the labeling features you expect on Windows computers, despite confirming the minimum supported versions for your Office update channel, it might be because you need to [disable the AIP add-in](sensitivity-labels-aip.md#how-to-disable-the-aip-add-in-to-use-built-in-labeling-for-office-apps).
 
 To learn more about labeling choices with the AIP client, see [Why choose MIP built-in labeling over the AIP add-in for Office apps](sensitivity-labels-aip.md).
 
