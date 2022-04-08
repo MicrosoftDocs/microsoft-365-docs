@@ -17,7 +17,7 @@ description: "Learn about how people outside your organization can access your M
 
 # Overview of external access in Microsoft 365
 
-With Microsoft 365, you can collaborate with people outside your organization in a variety of ways. 
+With Microsoft 365, your users can collaborate with people outside your organization in a variety of ways. 
 
 The following table show the primary ways people from outside your organization can access your Microsoft 365 resources:
 
@@ -31,13 +31,15 @@ The following table show the primary ways people from outside your organization 
 |Anonymous meeting join|None|Enabled|
 |Anonymous file and folder access|None|Enabled|
 
+People outside your organization do not have access unless a user in your organization initiates one of these activities. You can disable any of these settings if you don't want to allow that activity in your organization.
+
 ## Document, site, and team sharing
 
 Sharing documents, sites, and teams with people outside your organization uses *guest accounts*. Guest accounts are a type of account in Azure Active Directory that are managed through [Azure AD B2B collaboration](/azure/active-directory/external-identities/what-is-b2b). They can be used to share resources in your organization with anyone who has an email address. You can manage guest accounts the same way you manage users in your organization. Guests do not require a license for most features of collaboration. 
 
 Guests can only access resources that you specifically share with them.
 
-If the guest has a work or school account in another organization or a Microsoft account, they can log in with their regular username and password. If they have a different type of account - such as a Gmail account - they can log in by using a one-time passcode that is sent to their email address.
+If the guest has a work or school account in another organization, or a Microsoft account, they can log in with their regular username and password. If they have a different type of account - such as a Gmail account - they can log in by using a one-time passcode that is sent to their email address.
 
 With guests you can:
 
@@ -66,7 +68,7 @@ For information about how to set up Microsoft 365 for collaboration with shared 
 
 ## External chat and meetings
 
-Users in your organization can chat, add users to meetings, and use audio or video conferencing with users in external organizations. By default, users in your organization can communicate in these ways with all other Microsoft 365 domains. You can allow or block specific domains or block all domains if you want to disable the feature.
+Users in your organization can chat, add users to meetings, and use audio or video conferencing with users in external organizations. By default, users in your organization can communicate in these ways with all other Microsoft 365 domains. People in other organizations can communicate in these ways with your users if they know the user's email address. You can allow or block specific domains or block all domains if you want to disable the feature.
 
 You can also allow users in your organization to communicate with people from outside your organization who are using Teams accounts that are not managed by an organization, as well as Skype for Business (online and on-premises) and Skype users.
 
@@ -86,13 +88,13 @@ If the anonymous join setting is enabled for your organization, anonymous users 
 
 It is not possible to verify the identity of anonymous users during or after the meeting. 
 
-You can control anonymous users' ability to join meetings either at the organization level, or meeting organizers can control anonymous join through meeting policy settings.
+You can control anonymous users' ability to join meetings at the organization level. If it'ss enabled for the organization, meeting organizers can control anonymous join through meeting policy settings.
 
 For information about configuring anonymous join for meetings, see [Manage meeting settings in Microsoft Teams](/microsoftteams/meeting-settings-in-teams).
 
 ## Anonymous file and folder access
 
-In Microsoft 365, files and folders in Teams, SharePoint, and OneDrive can be shared using anonymous - or *Anyone* - links. Anyone links give access to the item to anyone who has the link. Anyone links can be shared with others, giving those people access to the file or folder.
+In Microsoft 365, files and folders in Teams, SharePoint, and OneDrive can be shared using anonymous - or *Anyone* - links. Anyone links give access to the shared item to anyone who has the link. Anyone links can be shared with others, giving those people access to the file or folder.
 
 People using an Anyone link do not have to authenticate, and their access cannot be audited. File and folder owners can revoke access at any time by deleting the link.
 
