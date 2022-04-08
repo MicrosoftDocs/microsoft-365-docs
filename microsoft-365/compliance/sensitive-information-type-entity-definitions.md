@@ -5489,7 +5489,7 @@ two letters followed by seven digits
 ### Pattern
 
 Pattern must include all of the following:
-- one letter (not case-sensitive) from this set of possible letters: abcdefghjklmnprstux, which is a registrant code
+- one letter (not case-sensitive) from this set of possible letters: A/B/F/G/M/P/R, which is a registrant code
 - one letter (not case-sensitive), which is the first letter of the registrant's last name or digit '9'
 - seven digits, the last of which is the check digit
 
@@ -8339,7 +8339,8 @@ Combination of 8-9 letters and numbers plus optional parentheses around the fina
 Combination of 8-9 letters:
 - 1-2 letters (not case-sensitive)
 - Six digits
-- The final character (any digit or the letter A), which is the check digit and is optionally enclosed in parentheses.
+- optional space
+- a check character (any digit or the letter A) which is optionally enclosed in parentheses
 
 ### Checksum
 
@@ -15254,7 +15255,7 @@ nine letters and digits
 ### Pattern
 
 - nine letters and digits:
-- the letter "F", "G", "S", or "T" (not case-sensitive)
+- the letter "F", "G", "M", "S", or "T" (not case-sensitive)
 - seven digits
 - an alphabetic check digit
 
@@ -15472,11 +15473,13 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ### Format
 
-one digit or letter followed by seven digits with no spaces or delimiters
+eight or nine character alphanumeric pattern
 
 ### Pattern
 
-one digit or letter (not case-sensitive) followed by seven digits
+one letter (not case-sensitive) followed by seven digits
+or
+two letters (not case-sensitive) followed by six or seven digits
 
 ### Checksum
 
@@ -18199,6 +18202,7 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 - ID numbers
 - LIC
 - LIC#
+- DLN
 
 #### Keyword_us_drivers_license
 
