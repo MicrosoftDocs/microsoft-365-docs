@@ -143,7 +143,9 @@ Use the generated `AppID` and `Key` in your Microsoft 365 Moodle Plugins setup p
     1. In the **Sync users with Azure AD** section, select the checkboxes that apply to your environment. You must select the following options:  
 
         ✔ Create accounts in Moodle for users in Azure AD.
+        
         ✔ Update all accounts in Moodle for users in Azure AD.
+        
 
     1. In the **User Creation Restriction** section, you can set up a filter to limit the Azure AD users that are synced to Moodle.
     1. In the **Course Sync** section, you can select **Course sync customization** option to enable the automatic creation of Groups and Teams for some, or all, of your existing Moodle courses.
@@ -174,14 +176,20 @@ Use the generated `AppID` and `Key` in your Microsoft 365 Moodle Plugins setup p
     1. To enable the external services for Microsoft 365, go to **Site administration** > **Plugins**, and select **External services** in the **Web services** section.
 
         ✔ In the **Built-in services** section, find **Moodle Microsoft 365 Webservices**.
+        
         ✔ Select **Edit** on the **Moodle Microsoft 365 Webservices** row.
+        
         ✔ Select the eye icon if it's greyed out. Save changes.
+        
 
     1. Edit your authenticated user permissions to allow them to create web service tokens.
 
         ✔ Go to **Site administration**, **Users** tab, and find **Define roles** in the **Permissions** section.
+        
         ✔ On the **Manage users** tab, find **Authenticated user** role, and select the edit icon.
+        
         ✔ Scroll down and find the **Create a web service token** capability and select the **Allow** checkbox. Save changes.
+        
 
 After the plugins are installed and configured, you can:
 
