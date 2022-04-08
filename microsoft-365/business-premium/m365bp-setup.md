@@ -35,7 +35,7 @@ Make sure that you meet the following requirements before you begin your setup p
 | Subscription | Microsoft 365 Business Premium <br/>--- or ---<br/>Microsoft 365 for Campaigns <br/><br/> To start a trial or purchase your subscription, see the following articles: <br/>- [Get Microsoft 365 Business Premium](get-microsoft-365-business-premium.md)<br/>- [Get Microsoft 365 for Campaigns](get-microsoft-365-campaigns.md) |
 | Permissions  | To complete the initial setup process, you must be a Global Admin. [Learn more about admin roles](../admin/add-users/about-admin-roles.md). |
 | Browser requirements | Microsoft Edge, Safari, Chrome or Firefox. For more information, see [Browser requirements](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources#coreui-heading-uyetipy).  |
-| Operating system | Windows:  Windows 11, Windows 10, Windows 8.1, Windows Server 2019 or later, or Windows Server 2016<br/><br/>macOS: One of the three most recent versions of macOS |
+| Operating system | **Windows**:  Windows 11, Windows 10, Windows 8.1, Windows Server 2019 or later, or Windows Server 2016<br/><br/>**macOS**: One of the three most recent versions of macOS |
 
 > [!TIP]
 > For more detailed information about Microsoft 365, Office, and system requirements, see [Microsoft 365 and Office Resources](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
