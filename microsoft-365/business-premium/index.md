@@ -31,9 +31,12 @@ description: "Learn how to collaborate securely in your small business or campai
 
 Let us begin by saying that you made a wise choice in adopting Microsoft 365 Business Premium. There are other small business productivity tools out there, but none of them compare to Microsoft 365 Business Premium for keeping your organization safe from cyber criminals.
 
-You took on the defense of your organization's systems, and that's good. You are your organization’s first and best defense against hackers and cyber attackers, including random individuals, organized crime, or even highly sophisticated nation-states. The task before you is this &mdash; let Microsoft 365 Business Premium help you secure your organization’s future!  
+You took on the defense of your organization's systems, and that's good. You are your organization’s first and best defense against hackers and cyber attackers, including random individuals, organized crime, or highly-sophisticated nation states. The task before you is this &mdash; let Microsoft 365 Business Premium help secure your organization’s future!  
 
-Success depends on you completing the assigned missions ahead which are grouped by category of importance. These will allow you to thwart hackers, protect against ransomware, and ensure that your organization’s purpose and potential are not disrupted. Let's get started.
+The missions ahead are categorized in order of importance. Completing them is the most effective way to thwart hackers, protect against ransomware, and ensure the organization’s future is safeguarded. Let's get started.
+
+> [!Note]
+> When a term or directive is unclear, find mission definitions in the [glossary of terms](m365bp-glossary.md).
 
 ## [**Fortify Your Environment**](#tab/Fortify)
 
