@@ -15,7 +15,7 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 03/22/2022
+ms.date: 04/07/2022
 ms.collection: 
 - M365-security-compliance
 - m365initiative-defender-endpoint
@@ -83,6 +83,31 @@ All our updates contain
 - Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
+<summary>March-2022 (Platform: 4.18.2203.5 | Engine:  1.1.19100.5)</summary>
+
+&ensp;Security intelligence update version: **1.361.1449.0**<br/>
+&ensp;Released: **March 7, 2022**<br/>
+&ensp;Platform: **4.18.2203.5**<br/>
+&ensp;Engine: **1.1.19100.5**<br/>
+&ensp;Support phase: **Security and Critical Updates**<br/>
+
+Engine version: 1.1.19100.5 <br/>
+Security intelligence update version: 1.361.1449.0<br/>
+
+### What's new
+
+- Added fix for an [attack surface reduction rule](attack-surface-reduction.md) that blocked an Outlook add-in 
+- Added fix for [behavior monitoring](configure-protection-features-microsoft-defender-antivirus.md) performance issue related to short live processes 
+- Added fix for [AMSI](/windows/win32/amsi/antimalware-scan-interface-portal) exclusion 
+- Improved [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) capabilities 
+- Added a fix for [real-time protection](configure-protection-features-microsoft-defender-antivirus.md) getting disabled in some cases when using `SharedSignaturesPath` config (For more details about the `SharedSignaturesPath` parameter, see [Set-MpPreference](/powershell/module/defender/set-mppreference))
+
+### Known Issues
+
+No known issues
+
+<br/><br/>
+</details><details>
 <summary>February-2022 (Platform: 4.18.2202.4 | Engine: 1.1.19000.8)</summary>
 
 &ensp;Security intelligence update version: **1.361.14.0**<br/>
@@ -139,14 +164,21 @@ Security intelligence update version: 1.357.8.0 <br/>
 No known issues
 
 <br/><br/>
-</details><details>
+</details>
+
+
+### Previous version updates: Technical upgrade support only
+
+After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, and are provided for technical upgrade support only.<br/><br/>
+
+<details>
 <summary>November-2021 (Platform: 4.18.2111.5 | Engine: 1.1.18800.4)</summary>
 
 &ensp;Security intelligence update version: **1.355.2.0**<br/>
 &ensp;Released: **December 9th, 2021**<br/>
 &ensp;Platform: **4.18.2111.5**<br/>
 &ensp;Engine: **1.1.18800.4**<br/>
-&ensp;Support phase: **Security and Critical Updates**<br/>
+&ensp;Support phase: **Technical upgrade support (only)**<br/>
 
 Engine version: 1.1.18800.4
 Security intelligence update version: 1.355.2.0
@@ -166,14 +198,7 @@ Security intelligence update version: 1.355.2.0
 ### Known Issues
 No known issues
 <br/>
-</details>
-
-
-### Previous version updates: Technical upgrade support only
-
-After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, and are provided for technical upgrade support only.<br/><br/>
-
-<details>
+</details><details>
 <summary> October-2021 (Platform: 4.18.2110.6 | Engine: 1.1.18700.4)</summary>
 
 &ensp;Security intelligence update version: **1.353.3.0**<br/>
