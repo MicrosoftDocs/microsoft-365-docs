@@ -22,19 +22,19 @@ On the **Staff** page, you can customize employee working hours to match the nee
 
 If you want to book time off for staff members so customers can't book them while they're out of the office, see [Schedule business closures, time off, and vacation time](schedule-closures-time-off-vacation.md) for instructions.
 
-## Customize employee working hours
+## Watch: Set employee working hours
 
 Watch this video or follow the steps below to set an employee's working hours.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuXUq]
 
+## Customize employee working hours
+
 1. In Microsoft 365, select the app launcher, and then select **Bookings**.
 
-1. Choose your calendar. 
+1. Choose your calendar.
 
 1. In the navigation pane, select **Staff**, and then select the staff member whose hours you want to set.
-
-   ![Image of Bookings staff screen with name highlighted.](../media/bookings-staff-name-highlight.png)
 
 1. Under Working hours, clear the **Use business hours** checkbox.
 
