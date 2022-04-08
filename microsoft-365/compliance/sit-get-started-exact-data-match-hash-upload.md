@@ -49,7 +49,7 @@ Separate the processes of hashing and uploading the sensitive data so you can mo
 
 Once in production, keep the two steps separate in most cases. Performing the hashing process on an isolated computer and then transferring the file for upload to an internet-facing computer ensures the actual data is never available in clear text form in a computer that could have been compromised due to its connection to the Internet.
 
-### Ensure your sensitive data table doesn’t have formatting issues.
+### Ensure your sensitive data table doesn't have formatting issues
 
 Before you hash and upload your sensitive data, do a search to validate the presence of special characters that may cause problems in parsing the content.
 You can validate that the table is in a format suitable to use with EDM by using the EDM upload agent with the following syntax:
@@ -62,7 +62,7 @@ If the tool indicates a mismatch in number of columns it might be due to the pre
 
 **If you find single or double quote characters surrounding full values**: you can leave them as they are.
 
-**If you find single quote characters or commas inside a value**: for example the person’s name Tom O’Neil or the city 's‑Gravenhage which starts with an apostrophe character, you will need to modify the data export process used to generate the sensitive information table to surround such columns with double quotes.
+**If you find single quote characters or commas inside a value**: for example the person's name Tom O'Neil or the city 's‑Gravenhage which starts with an apostrophe character, you will need to modify the data export process used to generate the sensitive information table to surround such columns with double quotes.
 
 **If double quote characters are found inside values**, it might be preferable to use the Tab-delimited format for the table which is less susceptible to such issues.
 
@@ -78,16 +78,16 @@ If the tool indicates a mismatch in number of columns it might be due to the pre
 
 #### Set up the security group and user account
 
-1. As a global administrator, go to the admin center using the appropriate [link for your subscription](sit-get-started-exact-data-match-based-sits-overview.md#portal-links-for-your-subscription) and [create a security group](/office365/admin/email/create-edit-or-delete-a-security-group) called **EDM\_DataUploaders**.
+1. As a global administrator, go to the admin center using the appropriate [link for your subscription](sit-get-started-exact-data-match-based-sits-overview.md#portal-links-for-your-subscription) and [create a security group](/office365/admin/email/create-edit-or-delete-a-security-group) called **EDM\_DataUploaders**.
 
-2. Add one or more users to the **EDM\_DataUploaders** security group. (These users will manage the database of sensitive information.)
+2. Add one or more users to the **EDM\_DataUploaders** security group. (These users will manage the database of sensitive information.)
 
 ### Hash and upload from one computer
 
 This computer must have direct access to your Microsoft 365 tenant.
 
 > [!NOTE]
-> Before you begin this procedure, make sure that you are a member of the **EDM\_DataUploaders** security group.
+> Before you begin this procedure, make sure that you are a member of the **EDM\_DataUploaders** security group.
 
 > [!TIP]
 >Optionally, you can run a validation against your sensitive information source table file to check it for errors before uploading by running:
