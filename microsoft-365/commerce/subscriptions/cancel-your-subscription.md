@@ -20,12 +20,15 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid: MET150
 description: "Learn how to cancel your Dynamics 365, Intune, Power Platform, and Microsoft 365 for business trial or paid subscriptions in the Microsoft 365 admin center."
-ms.date: 03/31/2022
+ms.date: 04/18/2022
 ---
 
 # Cancel your subscription
 
 If you want to cancel your subscription, the easiest way to do that is to [turn off recurring billing](renew-your-subscription.md). When you turn off recurring billing, you can continue to use your subscription until it expires at the end of the subscription term. If you want to cancel immediately, use the information and steps in this article to do that.
+
+> [!NOTE]
+> If you're supported by a [Microsoft Seller or Partner](https://docs.microsoft.com/microsoft-365/commerce/manage-partners#what-can-a-partner-do-for-my-organization-or-school), please contact them to cancel.
 
 > [!IMPORTANT]
 > This article only applies to Dynamics 365, Intune, Power Platform, and Microsoft 365 for business subscriptions. If you have Microsoft 365 Family or Personal, see [Cancel a Microsoft 365 subscription](https://support.microsoft.com/office/cancel-a-microsoft-365-subscription-46e2634c-c64b-4c65-94b9-2cc9c960e91b?OCID=M365_DocsCancel_Link).
@@ -49,6 +52,9 @@ You can only cancel and receive a prorated credit or refund if you cancel within
 If you need to cancel within seven days after the start or renewal of your subscription, go to [Steps to cancel your subscription](#steps-to-cancel-your-subscription) later in this article.
 
 If more than seven days have passed, [turn off recurring billing](renew-your-subscription.md). This prevents you from being charged again for your subscription, and lets you keep your access to your products and services for the remainder of your subscription.
+
+> [!NOTE]
+> In Chile, you have 10 days to cancel after the start or renewal of your subscription, not the seven days noted above.
 
 ### If you don't have a billing profile
 
