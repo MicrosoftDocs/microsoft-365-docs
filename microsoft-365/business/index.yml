@@ -135,7 +135,7 @@ conceptualContent:
           text: Protect personal (unmanaged) devices
         - url: ../business-premium/m365bp-multifactor-authentication.md
           itemType: how-to-guide
-          text: Set up multi-factor authentication with your mobile device
+          text: Set up multi-factor authentication on devices
         - url: ../business-premium/m365bp-install-office-apps.md
           itemType: how-to-guide
           text: Install Office apps on all devices
