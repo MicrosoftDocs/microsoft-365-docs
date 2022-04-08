@@ -28,8 +28,6 @@ description: "An overview for how to set up and secure managed devices"
 
 # Set up and secure managed devices
 
-## Overview
-
 Welcome to your final critical mission. Here, you will onboard and implement protection for all the managed devices in your organization. Onboard with Defender to ensure malware and antivirus is always up-to-date, and set policies that make your systems lock-tight. Rest assured, you're fully protected once these objectives have been achieved!
 
 Your mission objectives:
