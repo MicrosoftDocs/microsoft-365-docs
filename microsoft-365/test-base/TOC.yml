@@ -10,6 +10,8 @@
       href: createAccount.md
     - name: Test your application on Test Base
       href: testapplication.md
+    - name: Test your Intune application on Test Base
+      href: testintuneapplication.md
     - name: Build a Package
       href: buildpackage.md
     - name: Uploading a Package
