@@ -47,11 +47,11 @@ In Microsoft Defender for Endpoint, admins can use the unified submissions featu
 
 - For more information about how you can submit spam, phish, URLs, and email attachments to Microsoft, see [Report messages and files to Microsoft](../office-365-security/report-junk-email-messages-to-microsoft.md).
 
-## Report suspicious items to Microsoft from the portal
+## Report items to Microsoft from the portal
 
-If you have a file that you suspect might be malware or is being incorrectly detected, you can submit it to Microsoft for analysis using the Microsoft 365 Defender portal at https://security.microsoft.com/.
+If you have a file that you suspect might be malware or is being incorrectly detected (false positive), you can submit it to Microsoft for analysis using the Microsoft 365 Defender portal at https://security.microsoft.com/.
 
-### Submit a suspected file or file hash
+### Submit a file or file hash
 
 1. Open Microsoft 365 Defender at <https://security.microsoft.com/>, click **Actions & submissions**, click **Submissions**, go to **Files** tab, and then select **Add new submission**. 
 
@@ -75,7 +75,7 @@ If you have a file that you suspect might be malware or is being incorrectly det
  
    If you want to view the details of your submission, select your submission from the **Submissions name** list to open the **Result details** flyout.
 
-## Report suspicious items to Microsoft from the Alerts page
+## Report items to Microsoft from the Alerts page
 
 You can also submit a file or file hash directly from the list of alerts on the **Alerts** page. 
 
