@@ -26,7 +26,7 @@ ROBOTS:
 > [!NOTE]
 > The feature that's described by this article is in Preview, is not available in all organizations, and is subject to change.
 
-The unified **Trials** portal in the Microsoft 365 Defender portal provides a single point of entry for the formerly separate Trial and Evaluate experiences for Microsoft Defender for Office 365. The intent is to allow you to try the features of Defender for Office 365 Plan 2 for 30 days before you fully commit to it. But, there are differences in the evaluation experiences based on the nature of your Microsoft 365 organization:
+The unified **Trials** portal in the Microsoft 365 Defender portal provides a single point of entry for the formerly separate Trial and Evaluate experiences for Microsoft Defender for Office 365. The intent is to allow you to try the features of Defender for Office 365 Plan 2 for 90 days before you fully commit to it. But, there are differences in the evaluation experiences based on the nature of your Microsoft 365 organization:
 
 - You already have Microsoft 365 mailboxes, but you're currently using a third-party service or device for email protection. Mail from the internet flows through the protection service before delivery into your Microsoft 365 organization. Microsoft 365 protection is as low as possible (it's never completely off; for example, malware protection is always enforced).
 
