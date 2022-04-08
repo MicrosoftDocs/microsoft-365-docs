@@ -36,6 +36,16 @@ If an inbound connector is detected as potentially compromised, it is restricted
 
 Admins can remove connectors from the Restricted entities page in Microsoft 365 Defender or in Exchange Online PowerShell. 
 
+## Learn more on Restricted entities
+
+A restricted entity is an entity that has been blocked from sending email because either it has been potentially compromised, or it has exceeded sending limit.
+
+There are 2 types of restricted entities: 
+
+- **Restricted user**: For more information about why a user can be restricted and how to handle restricted users, see [Remove blocked users from the Restricted entities portal](removing-user-from-restricted-users-portal-after-spam.md). 
+
+- **Restricted connector**: For more information about why a connector can be restricted and how to handle restricted connectors, see [Remove blocked connectors from the Restricted entities portal](remove-blocked-connectors.md). 
+
 ## What do you need to know before you begin?
 
 - Open the Microsoft 365 Defender portal at <https://security.microsoft.com>. To go directly to the **Restricted entities** page, use <https://security.microsoft.com/restrictedentities>.
