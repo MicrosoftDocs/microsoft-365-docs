@@ -62,7 +62,7 @@ conceptualContent:
           itemType: reference
         - url: ../business-video/index.yml
           itemType: video
-          text: Microsoft 365 for business training
+          text: Microsoft 365 for business training videos
         - url: https://go.microsoft.com/fwlink/?linkid=2164213
           itemType: overview
           text: Compare Microsoft 365 for business plans
