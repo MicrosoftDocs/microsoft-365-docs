@@ -78,8 +78,8 @@ conceptualContent:
         - url: ../business-premium/m365bp-setup-overview.md
           itemType: how-to-guide
           text: 1. Complete the basic setup process
-        - url: ../business-premium/m365bp-setup.md
-          itemType: how-to-guide
+        - url: ../business-premium/m365bp-security-overview.md
+          itemType: overview
           text: 2. Protect your environment
         - url: ../business-premium/m365bp-devices-overview.md
           itemType: overview
