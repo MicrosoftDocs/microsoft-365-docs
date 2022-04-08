@@ -36,7 +36,7 @@ You can configure SMS notification in Bookings in a couple of ways:
 > [!NOTE]
 > You need to be a Teams admin to see Teams and Bookings data on the Teams admin center.
 
-You can track key data on SMS notifications usage in your organization in the Teams admin center. Usage reports includes data such as time and date sent, origin number, message type, event type and delivery status. You can use SMS notification telemetry during the promotional period to help forecast and budget for SMS notifications after May 1, 2022.
+You can track key data on SMS notifications usage in your organization in the Teams admin center. Usage reports include data such as time and date sent, origin number, message type, event type and delivery status. You can use SMS notification telemetry during the promotional period to help forecast and budget for SMS notifications after May 1, 2022.
 
 1. On the Teams admin center, **Virtual Visits SMS notifications**.
 
