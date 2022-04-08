@@ -51,7 +51,7 @@ The guidance in this library helps your business achieve the goals described in 
 
 A summary of this library guidance for Microsoft 365 Business Premium is available for you to download. Download link coming soon!
 
-:::image type="content" source="../media/cyber-security-playbook.png" alt-text="The Cyber Security Playbook" lightbox="../media/m365bp-cyber-security-playbook.png":::
+:::image type="content" source="../media/m365bp-cyber-security-playbook.png" alt-text="The Cyber Security Playbook" lightbox="../media/m365bp-cyber-security-playbook.png":::
 
 > [!Note]
 > When a term or directive is unclear, you can find definitions in the [glossary of terms](m365bp-glossary.md).
@@ -74,7 +74,7 @@ The guidance in this library helps your business achieve the goals described in 
 
 A summary of this library guidance for Microsoft 365 Business Premium is available for you to download. Download link coming soon!
 
-:::image type="content" source="../media/cyber-security-playbook.png" alt-text="The Cyber Security Playbook" lightbox="../media/m365bp-cyber-security-playbook.png":::
+:::image type="content" source="../media/m365bp-cyber-security-playbook.png" alt-text="The Cyber Security Playbook" lightbox="../media/m365bp-cyber-security-playbook.png":::
 
 > [!Note]
 > When a term or directive is unclear, you can find definitions in the [glossary of terms](m365bp-glossary.md).
@@ -93,7 +93,7 @@ The guidance in this library helps your business achieve the goals described in 
 
 A summary of this library guidance for Microsoft 365 Business Premium is available for you to download. Download link coming soon!
 
-:::image type="content" source="../media/cyber-security-playbook.png" alt-text="The Cyber Security Playbook" lightbox="../media/m365bp-cyber-security-playbook.png":::
+:::image type="content" source="../media/m365bp-cyber-security-playbook.png" alt-text="The Cyber Security Playbook" lightbox="../media/m365bp-cyber-security-playbook.png":::
 
 > [!Note]
 > When a term or directive is unclear, you can find definitions in the [glossary of terms](m365bp-glossary.md).
