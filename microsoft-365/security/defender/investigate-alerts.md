@@ -209,12 +209,6 @@ When alert suppression is enabled, you can edit the existing “simple” rules 
 
 :::image type="content" source="../../media/investigate-alerts/edit-suppression-rule.png" alt-text="Edit suppression rule":::
 
-**Coming soon:**
-- Auto fill rule conditions based on the detection logic generating the alert you want to suppress. 
-- Additional entity roles (Parent/child).
-- Suppression based on un-determined entities such as WMI and their extracted attributes.
-
-
 ## Resolve an alert
 
 Once you're done analyzing an alert and it can be resolved, go to the **Manage alert** pane for the alert or similar alerts and mark the status as **Resolved** and then classify it as a **True positive** with a type of threat, an **Informational, expected activity** with a type of activity, or a **False positive**.
