@@ -1,5 +1,5 @@
 ---
-title: Use the wizard to set up Microsoft Defender for Business
+title: Use setup wizard in Microsoft Defender for Business
 description: Defender for Business includes a wizard-like setup and configuration process. Use the wizard to save time and effort.
 search.appverid: MET150
 author: denisebmsft
@@ -20,14 +20,21 @@ ms.collection:
 ms.custom: intro-get-started
 ---
 
-# Use the wizard to set up Microsoft Defender for Business
+# Use the setup wizard in Microsoft Defender for Business
 
 > [!IMPORTANT]
 > Microsoft Defender for Business is rolling out to [Microsoft 365 Business Premium](../../business-premium/index.md) customers, beginning March 1, 2022. Defender for Business as a standalone subscription is in in preview, and will roll out gradually to customers and IT Partners who [sign-up here](https://aka.ms/mdb-preview) to request it. Preview includes an [initial set of scenarios](mdb-tutorials.md#try-these-preview-scenarios), and we will be adding capabilities regularly.
 > 
 > Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. 
 
-Microsoft Defender for Business was designed to save small and medium-sized businesses time and effort with a wizard-like experience for initial setup and configuration. This article describes the steps of the wizard and your options for setting up and configuring Defender for Business manually.
+Microsoft Defender for Business was designed to save small and medium-sized businesses time and effort with a wizard-like experience for initial setup and configuration. The setup wizard guides you through the following steps:
+
+1. Granting access to your security team
+
+2. Setting up email notifications
+
+3. Onboarding Windows devices
+
 
 :::image type="content" source="media/mdb-wizard-start.png" alt-text="Screenshot of wizard home screen to set up Defender for Business.":::
 
@@ -36,7 +43,10 @@ Microsoft Defender for Business was designed to save small and medium-sized busi
 > Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about Microsoft Defender for Business</a>. We'd love to hear from you!
 >
 
-## Overview of the wizard
+## Overview of the setup wizard
+
+> [!IMPORTANT]
+> Before you begin, make sure that you have already added users to your Microsoft 365 subscription. To get help with this task, see [Add users and assign licenses at the same time](../../admin/add-users/add-users.md).
 
 The wizard is designed to help you set up and configure Defender for Business quickly and efficiently. The wizard walks you through the following steps:
 
