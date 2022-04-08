@@ -47,7 +47,7 @@ In these first missions, you're going to have to sign in and set up your initial
 
 ## Cybersecurity Playbook
 
-The guidance in this library helps your business achieve the goals described in the Harvard Kennedy School Cybersecurity Campaign Handbook. A summary of this library guidance for Microsoft 365 Business Premium is available for you to download.
+The guidance in this library helps your business achieve the goals described in the Harvard Kennedy School  [Cybersecurity Campaign Handbook](https://go.microsoft.com/fwlink/p/?linkid=2015598). A summary of this library guidance for Microsoft 365 Business Premium is available for you to download.
 
 :::image type="content" source="../media/zero-trust/zero-trust-architecture.png" alt-text="The Zero Trust security architecture" lightbox="../media/m365bp-cyber-security-playbook.png":::
 
