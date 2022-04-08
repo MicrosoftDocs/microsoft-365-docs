@@ -33,10 +33,7 @@ Let us begin by saying that you made a wise choice in adopting Microsoft 365 Bus
 
 The task before you is this &mdash; let Microsoft 365 Business Premium help secure your organization’s future! These important missions are categorized in order of importance, and completing them is the most effective way to thwart hackers, protect against ransomware, and ensure your organization’s future is safeguarded. Let's get started. 
 
-Click through each tab below to learn more about how to secure your environment with Microsoft 365 Business Premium.
-
-> [!Note]
-> When a term or directive is unclear, you can find definitions in the [glossary of terms](m365bp-glossary.md).
+Click through the tabs below to learn about each mission and how to set up Microsoft 365 Business Premium security.
 
 ## [**Fortify Your Environment**](#tab/Fortify)
 
@@ -74,6 +71,8 @@ The guidance in this library helps your business achieve the goals described in 
 
 :::image type="content" source="../media/zero-trust/zero-trust-architecture.png" alt-text="The Zero Trust security architecture" lightbox="../media/m365bp-cyber-security-playbook.png":::
 
+> [!Note]
+> When a term or directive is unclear, you can find definitions in the [glossary of terms](m365bp-glossary.md).
 
 <!---
 KC Note: MOST OF THE FOLLOWING MAY BE USEFUL, BUT HERE JUST SERVES TO CLUTTER AND CONFUSE IMHO. I WILL MOVE THIS STUFF, BUT COMMENTING OUT FOR NOW...
