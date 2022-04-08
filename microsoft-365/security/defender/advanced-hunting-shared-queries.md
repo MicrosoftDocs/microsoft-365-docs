@@ -68,10 +68,11 @@ To generate a link that opens your query directly in the advanced hunting query 
 ## Access community queries in the GitHub repo  
 Microsoft security researchers regularly share advanced hunting queries in a [designated public repository on GitHub](https://github.com/Azure/Azure-Sentinel/tree/master/Hunting%20Queries/Microsoft%20365%20Defender). Contributions to this repository are reviewed before getting published. To contribute, [join GitHub for free](https://github.com/).
 
-You can easily find these queries in the **Community queries** dropdown as well.
+You can easily find these queries in the **Community queries** drop-down menu as well.
 
 :::image type="content" source="../../media/advanced-hunting-shared-queries-2.png" alt-text="The new query that is about to be saved in the Microsoft 365 Defender portal" lightbox="../../media/advanced-hunting-shared-queries-2.png":::
 
+Community queries are grouped into folders roughly 
 
 >[!tip]
 >Microsoft security researchers also provide advanced hunting queries that you can use to locate activities and indicators associated with emerging threats. These queries are provided as part of the [threat analytics](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics) reports in Microsoft 365 Defender.
