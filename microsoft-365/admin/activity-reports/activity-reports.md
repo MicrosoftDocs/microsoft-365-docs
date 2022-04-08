@@ -48,7 +48,7 @@ Reports are available for the last 7 days, 30 days, 90 days, and 180 days. Data 
 
 ::: moniker-end
 
-2. Click the **View more** button from the at-a-glance activity card for a service (such as email or OneDrive) to see the report detail page. In there different reports for the service are provided in tabs.
+2. Click the **View more** button from the at-a-glance activity card for a service (such as email or OneDrive) to see the report detail page. On that page, different reports for the service are provided in tabs.
 
    :::image type="content" alt-text="The Usage dashboard." source="../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png" lightbox="../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png":::
 
@@ -96,6 +96,7 @@ Depending on your subscription, here are the available reports in all environmen
 |[SharePoint activity](sharepoint-activity-ww.md)|Yes|Yes|Yes|Yes|Yes|
 |[Microsoft Teams user activity](microsoft-teams-user-activity-preview.md)|Yes|Yes|Yes|Yes|N/A[^2]|
 |[Microsoft Teams device usage](microsoft-teams-device-usage-preview.md)|Yes|Yes|Yes|Yes|N/A[^2]|
+|[Microsoft Teams usage activity](microsoft-teams-usage-activity.md)|Yes|Yes|N/A|N/A|N/A|
 |[Yammer activity](yammer-activity-report-ww.md)|Yes|Yes|N/A[^2]|N/A[^2]|N/A[^2]|
 |[Yammer device usage](yammer-device-usage-report-ww.md)|Yes|Yes|N/A[^2]|N/A[^2]|N/A[^2]|
 |[Yammer groups activity report](yammer-groups-activity-report-ww.md)|Yes|Yes|N/A[^2]|N/A[^2]|N/A[^2]|
@@ -146,7 +147,7 @@ Global administrators can revert this change for their tenant and show identifia
   
 3. Uncheck the statement **Display concealed user, group, and site names in all reports**, and then save your changes.  
   
-It'll take a few minutes for these changes to take effect on the reports in the reports dashboard. This setting also applies to the Microsoft 365 usage reports in [Microsoft Graph](/graph/api/resources/report?view=graph-rest-1.0) and [Power BI](/microsoft-365/admin/usage-analytics/usage-analytics?view=o365-worldwide) and [the usage reports in Microsoft Teams Admin center](/microsoftteams/teams-analytics-and-reports/teams-reporting-reference). Showing identifiable user information is a logged event in the Microsoft Purview compliance portal audit log.   
+It'll take a few minutes for these changes to take effect on the reports in the reports dashboard. This setting also applies to the Microsoft 365 usage reports in [Microsoft Graph](/graph/api/resources/report) and [Power BI](/microsoft-365/admin/usage-analytics/usage-analytics) and [the usage reports in Microsoft Teams Admin center](/microsoftteams/teams-analytics-and-reports/teams-reporting-reference). Showing identifiable user information is a logged event in the Microsoft 365 compliance center audit log.   
 
   
 ## What happens to usage data when a user account is closed?

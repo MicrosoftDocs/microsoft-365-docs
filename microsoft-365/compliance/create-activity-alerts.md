@@ -23,8 +23,6 @@ description: Add and manage activity alerts in the Microsoft Purview compliance 
 
 # Create activity alerts
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 You can create an activity alert that will send you an email notification when users perform specific activities in Office 365. Activity alerts are similar to searching for events in the audit log, except that you'll be sent an email message when an event for an activity that you've created an alert for happens.
 
  **Why use activity alerts instead of searching the audit log?** There might be certain kinds of activity or activity performed by specific users that you really want to know about. Instead of having to remember to search the audit log for those activities, you can use activity alerts to have Microsoft 365 send you an email message when users perform those activities. For example, you can create an activity alert to notify you when a user deletes files in SharePoint, or you can create an alert to notify you when a user permanently deletes messages from their mailbox. The email notification sent to you includes information about which activity was performed and the user who performed it.
@@ -36,15 +34,15 @@ You can create an activity alert that will send you an email notification when u
 
 - You must be assigned the Organization Configuration role in the Microsoft Purview compliance portal to manage activity alerts. By default, this role is assigned to the Compliance Administrator and Organization Management role groups. For more information about adding members to role groups, see [Give users access to the Microsoft Purview compliance portal](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
 
-- You (or another admin) must first turn on audit logging for your organization before you can start using activity alerts. To do this, just click **Start recording user and admin activity** on the **Activity alerts** page. (If you don't see this link, auditing has already been turned on for your organization.) You can also turn on auditing on the **Audit log search** page in the Microsoft Purview compliance portal (go to **Audit**). You only have to do this once for your organization.
+- You (or another admin) must first turn on audit logging for your organization before you can start using activity alerts. To do this, just click **Start recording user and admin activity** on the **Activity alerts** page. (If you don't see this link, auditing has already been turned on for your organization.) You can also turn on auditing on the **Audit log search** page in the compliance portal (go to **Audit**). You only have to do this once for your organization.
 
 - You can create alerts for the same activities that you can search for in the audit log. See the [More information](#more-information) section for a list of common scenarios (and the specific activity to monitor) that you can create alerts for.
 
-- You can use the **Activity alerts** page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> to create alerts only for activity performed by users who are listed in your organization's address book. You can't use this page to create alerts for activities performed by external users who aren't listed in the address book.
+- You can use the **Activity alerts** page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">compliance portal</a> to create alerts only for activity performed by users who are listed in your organization's address book. You can't use this page to create alerts for activities performed by external users who aren't listed in the address book.
 
 ## Create an activity alert
 
-1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>.
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">compliance portal</a>.
 
 2. Sign in using your work or school account.
 
@@ -83,7 +81,7 @@ You can create an activity alert that will send you an email notification when u
 
 You can turn off an activity alert so that an email notification isn't sent. After you turn off the activity alert, it's still displayed in the list of activity alerts for your organization, and you can still view its properties.
 
-1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>.
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">compliance portal</a>.
 
 2. Sign in using your work or school account.
 
@@ -97,7 +95,7 @@ To turn an activity alert back on, just repeat these steps and click the **Off**
 
 ## More information
 
-- Here's an example of the email notification that is sent to the users that are specified in the Sent this alert to field (and listed under **Recipients** on the **Activity alerts** page) in the Microsoft Purview compliance portal.
+- Here's an example of the email notification that is sent to the users that are specified in the Sent this alert to field (and listed under **Recipients** on the **Activity alerts** page) in the compliance portal.
 
     ![Example of an email notification sent for an activity alert.](../media/a5f91611-fae6-4fe9-82f5-58521a2e2541.png)
 

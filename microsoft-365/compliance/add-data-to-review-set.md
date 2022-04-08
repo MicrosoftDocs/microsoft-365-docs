@@ -17,12 +17,10 @@ search.appverid:
 ms.assetid: 
 ms.custom:
 - seo-marvel-apr2020
-description: Learn how to add search results or samples of those search results to an Advanced eDiscovery case review set.
+description: Learn how to add search results or samples of those search results to an eDiscovery (Premium) case review set.
 ---
 
 # Add search results to a review set
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 When you're satisfied with the results of a search and you're ready to review and analyze those search results, you can add them to a review set in the case. Copying the original data to the review set also facilitates the review and analysis process by providing you with advanced analytics tools such as themes detection, near-duplicate detection, and email thread identification. You can also add data from non-Microsoft 365 data sources to a review set so that you can review that data in addition to the data you collect from Microsoft 365.
 
@@ -50,9 +48,9 @@ When you add the content of a search to an existing or new review set, you have 
 
 - **Include versions from SharePoint (beta)**: Use this option to enable the collection of all version of a SharePoint document per the version limits and search parameters of the collection. Selecting this option will significantly increase the size of items that are added to the review set.
 
-- **Conversation retrieval options**: Items added to the review set are enabled for threaded conversations to help review content in context of the back and forth conversation. For more information, see [Review conversations in Advanced eDiscovery](conversation-review-sets.md).
+- **Conversation retrieval options**: Items added to the review set are enabled for threaded conversations to help review content in context of the back and forth conversation. For more information, see [Review conversations in eDiscovery (Premium)](conversation-review-sets.md).
 
-- **Enable retrieval for modern attachments**: Use this option to include modern attachments or linked files in the collection for further review. For more information about the searchable properties related to modern attachments, see [Document metadata fields in Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md).
+- **Enable retrieval for modern attachments**: Use this option to include modern attachments or linked files in the collection for further review. For more information about the searchable properties related to modern attachments, see [Document metadata fields in eDiscovery (Premium)](document-metadata-fields-in-Advanced-eDiscovery.md).
 
 ## Add a sample to a review set
 
@@ -68,6 +66,6 @@ After selecting and configuring one of the previous options, choose a review set
 
 ## Optical character recognition
 
-When you add search results to a review set, optical character recognition (OCR) functionality in Advanced eDiscovery automatically extracts text from images, and includes the image text with the data that's added to a review set. You can view the extracted text in the Text viewer of the selected image file in the review set. This lets you conduct further review and analysis on text in images. OCR is supported for loose files, email attachments, and embedded images. For a list of image file formats that are supported for OCR, see [Supported file types in Advanced eDiscovery](supported-filetypes-ediscovery20.md#image).
+When you add search results to a review set, optical character recognition (OCR) functionality in eDiscovery (Premium) automatically extracts text from images, and includes the image text with the data that's added to a review set. You can view the extracted text in the Text viewer of the selected image file in the review set. This lets you conduct further review and analysis on text in images. OCR is supported for loose files, email attachments, and embedded images. For a list of image file formats that are supported for OCR, see [Supported file types in eDiscovery (Premium)](supported-filetypes-ediscovery20.md#image).
 
-You have to enable OCR functionality for each case that you create in Advanced eDiscovery. For more information, see [Configure search and analytics settings](configure-search-and-analytics-settings-in-advanced-ediscovery.md#optical-character-recognition-ocr).
+You have to enable OCR functionality for each case that you create in eDiscovery (Premium). For more information, see [Configure search and analytics settings](configure-search-and-analytics-settings-in-advanced-ediscovery.md#optical-character-recognition-ocr).

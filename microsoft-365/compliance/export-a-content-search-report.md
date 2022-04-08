@@ -26,15 +26,13 @@ ms.custom: seo-marvel-apr2020
 
 # Export a Content search report
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Instead of exporting the full set of search results from a Content search in the Microsoft Purview compliance portal (or from a search that's associated with a Core eDiscovery case), you can export the same reports that are generated when you export the actual search results.
+Instead of exporting the full set of search results from a Content search in the Microsoft Purview compliance portal (or from a search that's associated with a Microsoft Purview eDiscovery (Standard) case), you can export the same reports that are generated when you export the actual search results.
   
 When you export a report, the report files are downloaded to a folder on your local computer that has the same name as the Content Search, but that's appended with *_ReportsOnly*. For example, if the Content Search is named  *ContosoCase0815*, then the report is downloaded to a folder named *ContosoCase0815_ReportsOnly*. For a list of documents that are included in the report, see [What's included in the report](#whats-included-in-the-report).
 
 ## Before you export a search report
 
-- To export a search report, you have to be assigned the Compliance Search management role in Microsoft Purview compliance portal. This role is assigned by default to the built-in eDiscovery Manager and Organization Management role groups. For more information, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
+- To export a search report, you have to be assigned the Compliance Search management role in compliance portal. This role is assigned by default to the built-in eDiscovery Manager and Organization Management role groups. For more information, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
 
 - When you export a report, the data is temporarily stored in an Azure Storage location in the Microsoft cloud before it's downloaded to your local computer. Be sure that your organization can connect to the endpoint in Azure, which is **\*.blob.core.windows.net** (the wildcard represents a unique identifier for your export). The search results data is deleted from the Azure Storage location two weeks after it's created.
 
@@ -61,7 +59,7 @@ When you export a report, the report files are downloaded to a folder on your lo
 
 The first step is to prepare the report for downloading to your computer exporting. When you export the report, the report documents are uploaded to an Azure Storage area in the Microsoft cloud.
   
-1. In the Microsoft Purview compliance portal, select the Content search that you want to export the report from.
+1. In the compliance portal, select the Content search that you want to export the report from.
   
 2. On the **Actions** menu at the bottom of the search flyout page, click **Export report**.
 
@@ -100,7 +98,7 @@ The next step is to download the report from the Azure Storage area to your loca
 > [!NOTE]
 > The exported search report must be downloaded within 14 days after you generated the report in Step 1.
 
-1. On the **Content search** page in the Microsoft Purview compliance portal, select the **Exports** tab
+1. On the **Content search** page in the compliance portal, select the **Exports** tab
   
    You may have to click **Refresh** to update the list of export jobs so that it shows the export job you created. Export report jobs have the same name as the corresponding search with **_ReportsOnly** appended to the search name.
   

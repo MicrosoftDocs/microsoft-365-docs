@@ -15,8 +15,6 @@ description: "In-Place Hold, Litigation Hold, and Microsoft 365 retention polici
 ---
 
 # Preserve Bcc and expanded distribution group recipients for eDiscovery
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
   
 Litigation holds, eDiscovery holds, and [Microsoft 365 retention policies](./retention.md) (created in the Microsoft Purview compliance portal) allow you to preserve mailbox content to meet regulatory compliance and eDiscovery requirements. Information about recipients directly addressed in the To and Cc fields of a message is included in all messages by default. But your organization may require the ability to search for and reproduce details about all recipients of a message. This includes:
   
@@ -24,7 +22,7 @@ Litigation holds, eDiscovery holds, and [Microsoft 365 retention policies](./ret
     
 - **Expanded distribution group recipients:** Recipients who receive the message because they're members of a distribution group to which the message was addressed, either in the To, Cc or Bcc fields. 
     
-Exchange Online and Exchange Server 2013 (Cumulative Update 7 and later versions) retain information about Bcc and expanded distribution group recipients. You can search for this information by using an eDiscovery tool in the Microsoft Purview compliance portal. 
+Exchange Online and Exchange Server 2013 (Cumulative Update 7 and later versions) retain information about Bcc and expanded distribution group recipients. You can search for this information by using an eDiscovery tool in the compliance portal.
   
 ## How Bcc recipients and expanded distribution group recipients are preserved
 

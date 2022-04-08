@@ -25,8 +25,6 @@ ms.custom:
 
 # Search the audit log in the compliance center
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Need to find if a user viewed a specific document or purged an item from their mailbox? If so, you can use the audit log search tool in Microsoft Purview compliance portal to search the unified audit log to view user and administrator activity in your organization. Thousands of user and admin operations performed in dozens of Microsoft 365 services and solutions are captured, recorded, and retained in your organization's unified audit log. Users in your organization can use the audit log search tool to search for, view, and export (to a CSV file) the audit records for these operations.
 
 ## Microsoft 365 services that support auditing
@@ -39,7 +37,7 @@ Why a unified audit log? Because you can search the audit log for activities per
 | Azure Information Protection|AipDiscover, AipSensitivityLabelAction, AipProtectionAction, AipFileDeleted, AipHeartBeat |
 | Communication compliance|ComplianceSuperVisionExchange|
 | Content explorer|LabelContentExplorer|
-| Microsoft Purview Data Loss Prevention (DLP)|ComplianceDLPSharePoint, ComplianceDLPExchange, DLPEndpoint|
+| Data loss prevention (DLP)|ComplianceDLPSharePoint, ComplianceDLPExchange, DLPEndpoint|
 | Dynamics 365|CRM|
 | eDiscovery|Discovery, AeD|
 | Exact Data Match|MipExactDataMatch|
@@ -89,7 +87,7 @@ Be sure to read the following items before you start searching the audit log.
 - You have to be assigned the View-Only Audit Logs or Audit Logs role in Exchange Online to search the audit log. By default, these roles are assigned to the Compliance Management and Organization Management role groups on the **Permissions** page in the Exchange admin center. Global administrators in Office 365 and Microsoft 365 are automatically added as members of the Organization Management role group in Exchange Online. To give a user the ability to search the audit log with the minimum level of privileges, you can create a custom role group in Exchange Online, add the View-Only Audit Logs or Audit Logs role, and then add the user as a member of the new role group. For more information, see [Manage role groups in Exchange Online](/Exchange/permissions-exo/role-groups).
 
   > [!IMPORTANT]
-  > If you assign a user the View-Only Audit Logs or Audit Logs role on the **Permissions** page in the Microsoft Purview compliance portal, they won't be able to search the audit log. You have to assign the permissions in Exchange Online. This is because the underlying cmdlet used to search the audit log is an Exchange Online cmdlet.
+  > If you assign a user the View-Only Audit Logs or Audit Logs role on the **Permissions** page in the compliance portal, they won't be able to search the audit log. You have to assign the permissions in Exchange Online. This is because the underlying cmdlet used to search the audit log is an Exchange Online cmdlet.
 
 - When an audited activity is performed by a user or admin, an audit record is generated and stored in the audit log for your organization. The length of time that an audit record is retained (and searchable in the audit log) depends on your Office 365 or Microsoft 365 Enterprise subscription, and specifically the type of the license that is assigned to specific users.
 
@@ -101,7 +99,7 @@ Be sure to read the following items before you start searching the audit log.
   - For users assigned any other (non-E5) Office 365 or Microsoft 365 license, audit records are retained for 90 days. For a list of Office 365 and Microsoft 365 subscriptions that support unified audit logging, see [the security and compliance center service description](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
 
     > [!NOTE]
-    > Even when mailbox auditing on by default is turned on, you might notice that mailbox audit events for some users aren't found in audit log searches in the Microsoft Purview compliance portal or via the Office 365 Management Activity API. For more information, see [More information about mailbox audit logging](enable-mailbox-auditing.md#more-information).
+    > Even when mailbox auditing on by default is turned on, you might notice that mailbox audit events for some users aren't found in audit log searches in the compliance portal or via the Office 365 Management Activity API. For more information, see [More information about mailbox audit logging](enable-mailbox-auditing.md#more-information).
 
 - If you want to turn off audit log search for your organization, you can run the following command in remote PowerShell connected to your Exchange Online organization:
 
@@ -117,7 +115,7 @@ Be sure to read the following items before you start searching the audit log.
 
   For more information, see [Turn off audit log search](turn-audit-log-search-on-or-off.md).
 
-- As previously stated, the underlying cmdlet used to search the audit log is an Exchange Online cmdlet, which is **Search-UnifiedAuditLog**. That means you can use this cmdlet to search the audit log instead of using the search tool on the **Audit** page in the Microsoft Purview compliance portal. You have to run this cmdlet in Exchange Online PowerShell. For more information, see [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog).
+- As previously stated, the underlying cmdlet used to search the audit log is an Exchange Online cmdlet, which is **Search-UnifiedAuditLog**. That means you can use this cmdlet to search the audit log instead of using the search tool on the **Audit** page in the compliance portal. You have to run this cmdlet in Exchange Online PowerShell. For more information, see [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog).
 
   For information about exporting the search results returned by the **Search-UnifiedAuditLog** cmdlet to a CSV file, see the "Tips for exporting and viewing the audit log" section in [Export, configure, and view audit log records](export-view-audit-log-records.md#tips-for-exporting-and-viewing-the-audit-log).
 
@@ -141,7 +139,7 @@ Be sure to read the following items before you start searching the audit log.
   |Microsoft Teams|![Check mark.](../media/checkmark.png)||
   |Power Apps||![Check mark.](../media/checkmark.png)|
   |Power BI|![Check mark.](../media/checkmark.png)||
-  |Microsoft Purview compliance portal|![Check mark.](../media/checkmark.png)||
+  |compliance portal|![Check mark.](../media/checkmark.png)||
   |Sensitivity labels||![Check mark.](../media/checkmark.png)|
   |SharePoint Online and OneDrive for Business|![Check mark.](../media/checkmark.png)||
   |Workplace Analytics|![Check mark.](../media/checkmark.png)||
@@ -166,9 +164,9 @@ Here's the process for searching the audit log in Microsoft 365.
 1. Go to <https://compliance.microsoft.com> and sign in.
 
     > [!TIP]
-    > Use a private browsing session (not a regular session) to access the Microsoft Purview compliance portal because this will prevent the credential that you are currently logged on with from being used. Press **CTRL+SHIFT+N** to open an InPrivate Browsing session in Microsoft Edge or a private browsing session in Google Chrome (called an incognito window).
+    > Use a private browsing session (not a regular session) to access the compliance portal because this will prevent the credential that you are currently logged on with from being used. Press **CTRL+SHIFT+N** to open an InPrivate Browsing session in Microsoft Edge or a private browsing session in Google Chrome (called an incognito window).
 
-2. In the left pane of the Microsoft Purview compliance portal, click **Audit**.
+2. In the left pane of the compliance portal, click **Audit**.
 
     The **Audit** page is displayed.
 
@@ -333,7 +331,7 @@ Click one of the following links to go to a specific table.
         [eDiscovery activities](#ediscovery-activities)
     :::column-end:::
     :::column:::
-        [Advanced eDiscovery activities](#advanced-ediscovery-activities)
+        [eDiscovery (Premium) activities](#advanced-ediscovery-activities)
     :::column-end:::
 :::row-end:::
 
@@ -663,7 +661,7 @@ The following table lists the activities that can be logged by mailbox audit log
 
 |Friendly name|Operation|Description|
 |:-----|:-----|:-----|
-|Accessed mailbox items|MailItemsAccessed|Messages were read or accessed in mailbox. Audit records for this activity are triggered in one of two ways: when a mail client (such as Outlook) performs a bind operation on messages or when mail protocols (such as Exchange ActiveSync or IMAP) sync items in a mail folder. This activity is only logged for users with an Office 365 or Microsoft 365 E5 license. Analyzing audit records for this activity is useful when investigating compromised email account. For more information, see the "Advanced Audit events" section in [Advanced Audit](advanced-audit.md#advanced-audit-events). |
+|Accessed mailbox items|MailItemsAccessed|Messages were read or accessed in mailbox. Audit records for this activity are triggered in one of two ways: when a mail client (such as Outlook) performs a bind operation on messages or when mail protocols (such as Exchange ActiveSync or IMAP) sync items in a mail folder. This activity is only logged for users with an Office 365 or Microsoft 365 E5 license. Analyzing audit records for this activity is useful when investigating compromised email account. For more information, see the "Audit (Premium) events" section in [Audit (Premium)](advanced-audit.md#advanced-audit-events). |
 |Added delegate mailbox permissions|Add-MailboxPermission|An administrator assigned the FullAccess mailbox permission to a user (known as a delegate) to another person's mailbox. The FullAccess permission allows the delegate to open the other person's mailbox, and read and manage the contents of the mailbox. The audit record for this activity is also generated when a system account in the Microsoft 365 service periodically performs maintenance tasks in behalf of your organization. A common task performed by a system account is updating the permissions for system mailboxes. For more information, see [System accounts in Exchange mailbox audit records](#system-accounts-in-exchange-mailbox-audit-records).|
 |Added or removed user with delegate access to calendar folder|UpdateCalendarDelegation|A user was added or removed as a delegate to the calendar of another user's mailbox. Calendar delegation gives someone else in the same organization permissions to manage the mailbox owner's calendar.|
 |Added permissions to folder|AddFolderPermissions|A folder permission was added. Folder permissions control which users in your organization can access folders in a mailbox and the messages located in those folders.|
@@ -679,7 +677,7 @@ The following table lists the activities that can be logged by mailbox audit log
 |Purged messages from the mailbox|HardDelete|A message was purged from the Recoverable Items folder (permanently deleted from the mailbox).|
 |Removed delegate mailbox permissions|Remove-MailboxPermission|An administrator removed the FullAccess permission (that was assigned to a delegate) from a person's mailbox. After the FullAccess permission is removed, the delegate can't open the other person's mailbox or access any content in it.|
 |Removed permissions from folder|RemoveFolderPermissions|A folder permission was removed. Folder permissions control which users in your organization can access folders in a mailbox and the messages located in those folders.|
-|Sent message|Send|A message was sent, replied to or forwarded. This activity is only logged for users with an Office 365 or Microsoft 365 E5 license. For more information, see the "Advanced Audit events" section in [Advanced Audit](advanced-audit.md#advanced-audit-events).|
+|Sent message|Send|A message was sent, replied to or forwarded. This activity is only logged for users with an Office 365 or Microsoft 365 E5 license. For more information, see the "Audit (Premium) events" section in [Audit (Premium)](advanced-audit.md#advanced-audit-events).|
 |Sent message using Send As permissions|SendAs|A message was sent using the SendAs permission. This means that another user sent the message as though it came from the mailbox owner.|
 |Sent message using Send On Behalf permissions|SendOnBehalf|A message was sent using the SendOnBehalf permission. This means that another user sent the message on behalf of the mailbox owner. The message indicates to the recipient whom the message was sent on behalf of and who actually sent the message.|
 |Updated inbox rules from Outlook client|UpdateInboxRules|A mailbox owner or other user with access to the mailbox created, modified, or removed an inbox rule by using the Outlook client.|
@@ -801,11 +799,11 @@ Content Search and eDiscovery-related activities that are performed in the secur
 For a list and detailed description of the eDiscovery activities that are logged, see [Search for eDiscovery activities in the audit log](search-for-ediscovery-activities-in-the-audit-log.md).
 
 > [!NOTE]
-> It takes up to 30 minutes for events that result from the activities listed under **eDiscovery activities** and **Advanced eDiscovery activities** in the **Activities** drop-down list to be displayed in the search results. Conversely, it takes up to 24 hours for the corresponding events from eDiscovery cmdlet activities to appear in the search results.
+> It takes up to 30 minutes for events that result from the activities listed under **eDiscovery activities** and **eDiscovery (Premium) activities** in the **Activities** drop-down list to be displayed in the search results. Conversely, it takes up to 24 hours for the corresponding events from eDiscovery cmdlet activities to appear in the search results.
 
-### Advanced eDiscovery activities
+### eDiscovery (Premium) activities
 
-You can also search the audit log for activities in Advanced eDiscovery. For a description of these activities, see the "Advanced eDiscovery activities" section in [Search for eDiscovery activities in the audit log](search-for-ediscovery-activities-in-the-audit-log.md#advanced-ediscovery-activities).
+You can also search the audit log for activities in Microsoft Purview eDiscovery (Premium). For a description of these activities, see the "eDiscovery (Premium) activities" section in [Search for eDiscovery activities in the audit log](search-for-ediscovery-activities-in-the-audit-log.md#advanced-ediscovery-activities).
 
 ### Power BI activities
 
@@ -859,7 +857,7 @@ For a description of Shifts app activities, see [Search the audit log for events
 The following table lists the user and admin activities in Yammer that are logged in the audit log. To return Yammer-related activities from the audit log, you have to select **Show results for all activities** in the **Activities** list. Use the date range boxes and the **Users** list to narrow the search results.
 
 > [!NOTE]
-> Some Yammer audit activities are only available in Advanced Audit. That means users must be assigned the appropriate license before these activities are logged in the audit log. For more information about activities only available in Advanced Audit, see [Advanced Audit in Microsoft 365](advanced-audit.md#advanced-audit-events). For Advanced Audit licensing requirements, see [Auditing solutions in Microsoft 365](auditing-solutions-overview.md#licensing-requirements). <br/><br/>In the following table, Advanced Audit activities are highlighted with an asterisk (*).
+> Some Yammer audit activities are only available in Audit (Premium). That means users must be assigned the appropriate license before these activities are logged in the audit log. For more information about activities only available in Audit (Premium), see [Audit (Premium) in Microsoft 365](advanced-audit.md#advanced-audit-events). For Audit (Premium) licensing requirements, see [Auditing solutions in Microsoft 365](auditing-solutions-overview.md#licensing-requirements). <br/><br/>In the following table, Audit (Premium) activities are highlighted with an asterisk (*).
 
 |Friendly name|Operation|Description|
 |:-----|:-----|:-----|
@@ -890,7 +888,7 @@ The following table lists the user and admin activities in Yammer that are logge
 
 ### Microsoft Power Automate activities
 
-You can search the audit log for activities in Power Automate (formerly called Microsoft Flow). These activities include creating, editing, and deleting flows, and changing flow permissions. For information about auditing for Power Automate activities, see the blog  [Power Automate audit events now available in Microsoft Purview compliance portal](https://flow.microsoft.com/blog/security-and-compliance-center).
+You can search the audit log for activities in Power Automate (formerly called Microsoft Flow). These activities include creating, editing, and deleting flows, and changing flow permissions. For information about auditing for Power Automate activities, see the blog  [Power Automate audit events now available in compliance portal](https://flow.microsoft.com/blog/security-and-compliance-center).
 
 ### Microsoft Power Apps activities
 
@@ -902,7 +900,7 @@ You can search the audit log for activities in Microsoft Stream. These activitie
 
 ### Content explorer activities
 
-The following table lists the activities in content explorer that are logged in the audit log. Content explorer, which is accessed on the Data classifications tool in the Microsoft Purview compliance portal. For more information, see [Using data classification content explorer](data-classification-content-explorer.md).
+The following table lists the activities in content explorer that are logged in the audit log. Content explorer, which is accessed on the Data classifications tool in the compliance portal. For more information, see [Using data classification content explorer](data-classification-content-explorer.md).
 
 |Friendly name|Operation|Description|
 |:-----|:-----|:-----|
@@ -929,7 +927,7 @@ The tables in this section the user and admin activities in Microsoft Forms that
 If a Forms activity is performed by a coauthor or an anonymous responder, it will be logged slightly differently. For more information, see the [Forms activities performed by coauthors and anonymous responders](#forms-activities-performed-by-coauthors-and-anonymous-responders) section.
 
 > [!NOTE]
-> Some Forms audit activities are only available in Advanced Audit. That means users must be assigned the appropriate license before these activities are logged in the audit log. For more information about activities only available in Advanced Audit, see [Advanced Audit in Microsoft 365](advanced-audit.md#advanced-audit-events). For Advanced Audit licensing requirements, see [Auditing solutions in Microsoft 365](auditing-solutions-overview.md#licensing-requirements). <br/><br/>In the following table, Advanced Audit activities are highlighted with an asterisk (*).
+> Some Forms audit activities are only available in Audit (Premium). That means users must be assigned the appropriate license before these activities are logged in the audit log. For more information about activities only available in Audit (Premium), see [Audit (Premium) in Microsoft 365](advanced-audit.md#advanced-audit-events). For Audit (Premium) licensing requirements, see [Auditing solutions in Microsoft 365](auditing-solutions-overview.md#licensing-requirements). <br/><br/>In the following table, Audit (Premium) activities are highlighted with an asterisk (*).
 
 |Friendly name|Operation|Description|
 |:-----|:-----|:-----|
@@ -1059,7 +1057,7 @@ The following table lists the activities in MyAnalytics that are logged in the M
 
 ### Information barriers activities
 
-The following table lists the activities in information barriers that are logged in the Microsoft 365 audit log. For more information about information barriers, see [Learn about information barriers](information-barriers.md).
+The following table lists the activities in information barriers that are logged in the Microsoft 365 audit log. For more information about information barriers, see [Learn about information barriers in Microsoft 365](information-barriers.md).
 
 |**Friendly name**|**Operation**|**Description**|
 |:----------------|:------------|:--------------|
@@ -1082,7 +1080,7 @@ The following table lists the activities a disposition reviewer took when an ite
 
 ### Communication compliance activities
 
-The following table lists communication compliance activities that are logged in the Microsoft 365 audit log. For more information, see [Learn about communication compliance](communication-compliance.md).
+The following table lists communication compliance activities that are logged in the Microsoft 365 audit log. For more information, see [Learn about communication compliance in Microsoft 365](communication-compliance.md).
 
 |**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|

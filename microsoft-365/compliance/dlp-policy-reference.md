@@ -184,16 +184,20 @@ For example, you might have a DLP policy that helps you detect the presence of i
 
 Priority for rules on endpoints is also assigned according to the order in which it's created. That means, the rule created first has first priority, the rule created second has second priority, and so on. 
 
-When a file on an endpoint matches multiple DLP policies, the first rule that's enabled with restrictions is the one that gets enforced on the content. For example, if content matches all of the following rules, *Rule 2 is enforced because it's the highest priority rule that's configured with a restriction*.
-  
-- Rule 1: only notifies users
-- *Rule 2: notifies users, restricts access, and allows user overrides*
-- Rule 3: notifies users, restricts access, and does not allow user overrides
-- Rule 4: restricts access
+When a file on an endpoint matches multiple DLP policies, the first rule that's enabled with most restrictive enforcement on the [endpoint activities](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on) is the one that gets enforced on the content. For example, if content matches all of the following rules, then rule 2 takes precedence over the other rules since its the most restrictive.
 
-Rules 1, 3, and 4 would be evaluated, but not applied. In this example, matches for all of the rules are recorded in the audit logs and shown in the DLP reports, even though only the first rule with a restriction is applied.
+- Rule 1: only audits all activity 
+- *Rule 2: blocks all activity*
+- Rule 3: blocks all activity with option for end user to override
 
-For rules that are applied to endpoints, you can take advantage of the ability to re-order the rule priority to make sure the restrictions you want applied are applied.
+In the below example, Rule 1 takes precedence over the other matching rules since its the most restrictive.
+
+- *Rule 1: blocks activity and does not allow user override*
+- Rule 2: blocks activity and allows user overrides
+- Rule 3: only audits all activity
+- Rule 4: no enforcement
+
+All the other rules are evaluated but their actions are not enforced. Audit logs will show the most restrictive rule applied on the file. If there is more than one rule that matches and they are equally restrictive, then policy and rule priority governs which rule would be applied on the file.
 
 ### Conditions
 
@@ -269,24 +273,34 @@ The available context options change depending on which location you choose. If 
  
 - Content contains
 - Content is shared from Microsoft 365
-- File extension is
+- Document created by
+- Document created by member of
+- Document name contains words or phrases
+- Document name matches patterns
+- Document size over
 - Document property is
+- File extension is
 
 ##### Conditions OneDrive accounts supports
 
 - Content contains
 - Content is shared from Microsoft 365
-- File extension is
+- Document created by
+- Document created by member of
+- Document name contains words or phrases
+- Document name matches patterns
+- Document size over
 - Document property is
+- File extension is
 
 ##### Conditions Teams chat and channel messages supports
 
 - Content contains
 - Content is shared from Microsoft 365
-- Sender is (Preview)
-- Sender domain is (Preview)
-- Recipient domain is (Preview)
-- Recipient is (Preview)
+- Sender is 
+- Sender domain is 
+- Recipient domain is 
+- Recipient is 
 
 ##### Conditions Devices supports
 

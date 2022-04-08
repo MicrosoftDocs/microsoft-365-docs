@@ -21,8 +21,6 @@ description: "Use eDiscovery cases in the Microsoft Purview compliance portal to
 
 # Manage legal investigations in Microsoft 365
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Organizations have many reasons to respond to a legal case involving certain executives or other employees in your organization. This might involve quickly finding and retaining for further investigation-specific information in email, documents, instant messaging conversations, and other content locations used by people in their day-to-day work tasks. You can perform these and many other similar activities by using the eDiscovery case tools in the security and compliance center.
   
 **Want to know how Microsoft manages its eDiscovery investigations?** Here's a [technical white paper](https://go.microsoft.com/fwlink/?linkid=852161) you can download that explains how we use the same search and investigation tools to manage our internal eDiscovery workflow.
@@ -47,13 +45,13 @@ Like the previous section that listed scripts for content search scenarios, we'v
 
 - [Add mailboxes and OneDrive locations](use-a-script-to-add-users-to-a-hold-in-ediscovery.md) for a list of users to an eDiscovery hold.
   
-## Manage legal investigations with the Advanced eDiscovery solution in Microsoft 365
+## Manage legal investigations with the eDiscovery (Premium) solution in Microsoft 365
 
-The Advanced eDiscovery solution in Microsoft 365 builds on the existing eDiscovery and analytics capabilities in Office 365. This new solution, called *Advanced eDiscovery*, provides an end-to-end workflow to preserve, collect, review, analyze, and export content that's responsive to your organization's internal and external investigations. It also lets legal teams manage the entire legal hold notification workflow to communicate with custodians involved in a case.
+The Microsoft Purview eDiscovery (Premium) solution in Microsoft 365 builds on the existing eDiscovery and analytics capabilities in Office 365. This new solution, called *eDiscovery (Premium)*, provides an end-to-end workflow to preserve, collect, review, analyze, and export content that's responsive to your organization's internal and external investigations. It also lets legal teams manage the entire legal hold notification workflow to communicate with custodians involved in a case.
 
-Advanced eDiscovery requires an E5 subscription for your Microsoft 365 or Office 365 organization. For more information about licensing, see [Set up Advanced eDiscovery](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses).
+eDiscovery (Premium) requires an E5 subscription for your Microsoft 365 or Office 365 organization. For more information about licensing, see [Set up eDiscovery (Premium)](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses).
 
-Here's a quick overview of the built-in workflow in Advanced eDiscovery. For more information, see [Manage the Advanced eDiscovery workflow](create-and-manage-advanced-ediscoveryv2-case.md#manage-the-workflow).
+Here's a quick overview of the built-in workflow in eDiscovery (Premium). For more information, see [Manage the eDiscovery (Premium) workflow](create-and-manage-advanced-ediscoveryv2-case.md#manage-the-workflow).
 
 - [Create a case](create-and-manage-advanced-ediscoveryv2-case.md#create-a-case) to get started.
 
@@ -71,4 +69,4 @@ Here's a quick overview of the built-in workflow in Advanced eDiscovery. For mor
 
 - [Export case data](exporting-data-ediscover20.md) for review by outside counsel.
 
-- [Manage long-running jobs](managing-jobs-ediscovery20.md) in Advanced eDiscovery.
+- [Manage long-running jobs](managing-jobs-ediscovery20.md) in eDiscovery (Premium).
