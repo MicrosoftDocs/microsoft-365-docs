@@ -13,7 +13,10 @@ description: "Follow these instructions to create your About Us page, including 
 
 # Enter your business information
 
-In Microsoft Bookings, the Business Information page within the web app contains all the details that you'd typically find on a business' "About us" page. These details include your a relevant name, address, phone number, web site URL, privacy policy URL, logo, and business hours.
+> [!NOTE]
+> This article helps you to interact with the latest version of Microsoft Bookings. Previous versions will be retired in coming months.
+
+In Microsoft Bookings, the Business Information page within the web app contains all the details that you'd typically find on a business' "About us" page. These details include a relevant name, address, phone number, web site URL, privacy policy URL, logo, and business hours.
 
 The information you provide here will be displayed on the page customers and clients use to book appointments (known as the booking page) and in messages and reminders sent to them by Bookings. An example of this information on the booking page is highlighted below.
 
@@ -26,7 +29,7 @@ The information you provide here will be displayed on the page customers and cli
 
 1. In Microsoft 365, select the App launcher, and then select **Bookings**.
 
-1. In the navigation pane, select **Settings** -> **Business information**.
+1. In the navigation pane, select **Your calendar** -> **Business information** in the left pane.
 
 1. On the **Basic details** section, enter your business name, address, and phone number you would like to use for your Bookings calendar.
 

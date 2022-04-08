@@ -137,7 +137,7 @@ Links to information about configuration management system versions referenced i
 
 Toast notifications are generated for all rules in Block mode. Rules in any other mode will not generate toast notifications
 
-For rules with the “Rule State” specified:
+For rules with the "Rule State" specified:
 
 - ASR rules with \<ASR Rule, Rule State\> combinations are used to surface alerts (toast notifications) on Microsoft Defender for Endpoint only for devices at high-cloud block level. Devices not at high cloud block level will not generate alerts for any <ASR Rule, Rule State> combinations
 - EDR alerts are generated for ASR rules in the specified states, but only for devices at high cloud block level.
@@ -195,7 +195,7 @@ _Warn mode_ is a block-mode type that alerts users about potentially risky actio
 
 If the allow button is clicked, the block will be suppressed for 24 hours. After 24 hours, the end-user will need to allow the block again. The warn mode for ASR rules is only supported for RS5+ (1809+) devices. If bypass is assigned to ASR rules on devices with older versions, the rule will be in blocked mode.
 
-You can also set a rule in warn mode via PowerShell by simply specifying the AttackSurfaceReductionRules_Actions as “Warn”. For example:
+You can also set a rule in warn mode via PowerShell by simply specifying the AttackSurfaceReductionRules_Actions as "Warn". For example:
 
 ```powershell
 -command "& {&'Add-MpPreference' -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions Warn"} 
@@ -282,7 +282,7 @@ LSASS authenticates users who sign in on a Windows computer. Microsoft Defender 
 > In some apps, the code enumerates all running processes and attempts to open them with exhaustive permissions. This rule denies the app's process open action and logs the details to the security event log. This rule can generate a lot of noise. If you have an app that simply enumerates LSASS, but has no real impact in functionality, there is no need to add it to the exclusion list. By itself, this event log entry doesn't necessarily indicate a malicious threat.
   
 > [!IMPORTANT]
-> The default state for the Attack Surface Reduction (ASR) rule “Block credential stealing from the Windows local security authority subsystem (lsass.exe)” will change from **Not Configured** to **Configured** and the default mode set to **Block**. All other ASR rules will remain in their default state: **Not Configured**. Additional filtering logic has already been incorporated in the rule to reduce end user notifications. Customers can configure the rule to **Audit**, **Warn** or **Disabled** modes, which will override the default mode. The functionality of this rule is the same, whether the rule is configured in the on-by-default mode, or if you enable Block mode manually.  
+> The default state for the Attack Surface Reduction (ASR) rule "Block credential stealing from the Windows local security authority subsystem (lsass.exe)" will change from **Not Configured** to **Configured** and the default mode set to **Block**. All other ASR rules will remain in their default state: **Not Configured**. Additional filtering logic has already been incorporated in the rule to reduce end user notifications. Customers can configure the rule to **Audit**, **Warn** or **Disabled** modes, which will override the default mode. The functionality of this rule is the same, whether the rule is configured in the on-by-default mode, or if you enable Block mode manually.
 
 Intune name: `Flag credential stealing from the Windows local security authority subsystem`
 

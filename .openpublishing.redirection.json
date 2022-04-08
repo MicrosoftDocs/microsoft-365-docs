@@ -6749,7 +6749,12 @@
       "source_path": "microsoft-365/security/office-365-security/alerts.md",
       "redirect_url": "/microsoft-365/security/defender/investigate-alerts",
       "redirect_document_id": true
-    }, 
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/office-365-evaluation.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/try-microsoft-defender-for-office-365",
+      "redirect_document_id": true
+    },
     {
     "source_path": "microsoft-365/compliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md",
     "redirect_url": "/microsoft-365/compliance/compliance-manager",

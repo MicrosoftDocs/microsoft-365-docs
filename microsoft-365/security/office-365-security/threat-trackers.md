@@ -59,7 +59,7 @@ Typically Noteworthy trackers will be posted for just a couple of weeks when we 
 
 ### Trending trackers
 
-Trending trackers (formerly called Campaigns) highlight new threats received in your organization's email in the past week. The Trending trackers view provides dynamic assessments of email threats impacting your organization’s Office 365 environment. This view shows tenant level malware trends, identifying malware families on the rise, flat, or declining, giving admins greater insight into which threats require further attention.
+Trending trackers (formerly called Campaigns) highlight new threats received in your organization's email in the past week. The Trending trackers view provides dynamic assessments of email threats impacting your organization's Office 365 environment. This view shows tenant level malware trends, identifying malware families on the rise, flat, or declining, giving admins greater insight into which threats require further attention.
 
 :::image type="content" source="../../media/d2ccc1a0-2a1d-4e36-99b5-6766c207772f.png" alt-text="The example of trending malware campaigns widget" lightbox="../../media/d2ccc1a0-2a1d-4e36-99b5-6766c207772f.png":::
 
