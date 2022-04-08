@@ -76,7 +76,7 @@ Wondering what you can experience in your free trial? The compliance solutions t
 
   Take advantage of an end-to-end workflow for preserving, collecting, analyzing, and exporting content that's responsive to your organization's internal and external investigations. Legal teams can also manage the entire legal hold notification process by communicating with custodians involved in a case. [Learn more about eDiscovery](ediscovery.md)
 
-- **Information Governance**
+- **Data lifecycle management**
 
   Automate your retention coverage by using adaptive policy scopes. This feature allows you to dynamically target policies for retention to specific users, groups, or sites. These policies automatically update when changes occur in your organization. In addition, policies that use adaptive scopes are not subject to location limits. [Learn more about adaptive policy scopes](retention.md#adaptive-or-static-policy-scopes-for-retention).
 

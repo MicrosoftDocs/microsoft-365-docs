@@ -165,7 +165,7 @@ The SIT instance count limit applies when SITs are used in these solutions:
 
 - DLP policies
 - Information Protection
-- Information Governance
+- Data Lifecycle Management
 - Communication Compliance
 - Records Management
 - Microsoft Defender for Cloud Apps
