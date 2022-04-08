@@ -22,6 +22,11 @@ ms.technology: mde
 
 # Onboard non-persistent virtual desktop infrastructure (VDI) devices in Microsoft 365 Defender
 
+Virtual desktop infrastructure (VDI) is an IT infrastructure concept that lets end users access enterprise virtual desktops instances from almost any device (such as your personal computer, smartphone, or tablet), eliminating the need for organization to provide users with physical machines. Using VDI devices reduce cost as IT departments are no longer responsible for managing, repairing, and replacing physical endpoints. Authorized users can access the same company servers, files, apps, and services from any approved device through a secure desktop client or browser.
+
+Like any other system in an IT environment, these too should have an Endpoint Detection and Response (EDR) and Antivirus solution to protect against advanced threats and attacks.
+
+
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
@@ -39,26 +44,31 @@ ms.technology: mde
 
 Defender for Endpoint supports non-persistent VDI session onboarding.
 
-There might be associated challenges when onboarding VDIs. The following are typical challenges for this scenario:
+There might be associated challenges when onboarding VDI instances. The following are typical challenges for this scenario:
 
 - Instant early onboarding of a short-lived session, which must be onboarded to Defender for Endpoint prior to the actual provisioning.
 - The device name is typically reused for new sessions.
 
-VDI devices can appear in Defender for Endpoint portal as either:
+In a VDI environment, VDI instances can have short lifespans. VDI devices can appear in Defender for Endpoint portal as either:
 
-- Single entry for each device.
+
+- Single portal entry for each VDI instance. If the VDI instance was already onboarded to Microsoft Defender for Endpoint and at some point deleted then  recreated with the same host name, a new object representing this VDI instance will NOT be created in the portal. 
+
 
   > [!NOTE]
   > In this case, the *same* device name must be configured when the session is created, for example using an unattended answer file.
 
-- Multiple entries for each device - one for each session.
+- Multiple entries for each device - one for each VDI instance.
 
 The following steps will guide you through onboarding VDI devices and will highlight steps for single and multiple entries.
 
 > [!WARNING]
 > For environments where there are low resource configurations, the VDI boot procedure might slow the Defender for Endpoint sensor onboarding.
 
-### For Windows 10, or Windows 11, or Windows Server 2019, or Windows Server 2022
+### For Windows 10, or Windows 11, or Windows Server 2012 R2 and later
+
+> [!NOTE]
+> Windows Server 2016 and Windows Server 2012 R2 will need to be prepared by applying the installation package first using the instructions in [Onboard Windows servers](/microsoft-365/security/defender-endpoint/configure-server-endpoints#windows-server-2012-r2-and-windows-server-2016) for this feature to work.
 
 1.  Open the VDI configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>:
 
@@ -104,7 +114,10 @@ The following steps will guide you through onboarding VDI devices and will highl
 
 7. Use the search function by entering the device name and select **Device** as search type.
 
-## For downlevel SKUs (Windows Server 2008 R2/2012 R2/2016)
+## For downlevel SKUs (Windows Server 2008 R2)
+
+> [!NOTE]
+> These instructions for other Windows server versions also apply if you are running the previous Microsoft Defender for Endpoint for Windows Server 2016 and Windows Server 2012 R2 that requires the MMA. Instructions to migrate to the new unified solution are at [Server migration scenarios in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/server-migration).
 
 > [!NOTE]
 > The following registry is relevant only when the aim is to achieve a 'Single entry for each device'.

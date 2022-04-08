@@ -68,6 +68,9 @@ When you have more than one retention policy, and when you also use retention la
 
 ### Retention policy for Teams locations
 
+> [!NOTE]
+> Retention policies now support [shared channels](/MicrosoftTeams/shared-channels), currently in preview. When you configure retention settings for the **Teams channel message** location, if a team has any shared channels, they inherit retention settings from their parent team.
+
 1. From the [Microsoft 365 compliance center](https://compliance.microsoft.com/), select **Information Governance** > **Retention Policies**.
 
 2. Select **New retention policy** to start the **Create retention policy** configuration, and name your new retention policy.
@@ -79,7 +82,7 @@ When you have more than one retention policy, and when you also use retention la
     - If you chose **Adaptive**: On the **Choose adaptive policy scopes and locations** page, select **Add scopes** and select one or more adaptive scopes that have been created. Then, select one or more locations. The locations that you can select depend on the [scope types](retention-settings.md#configuration-information-for-adaptive-scopes) added. For example, if you only added a scope type of **User**, you will be able to select **Teams chats** but not **Teams channel messages**. 
     
     - If you chose **Static**: On the **Choose locations to apply the policy** page, select one or more locations for Teams:
-        - **Teams channel message**: Messages from standard channel chats and standard channel meetings, but not from [private channels](/microsoftteams/private-channels) that have their own policy location.
+        - **Teams channel message**: Messages from standard and shared channel chats, and standard and shared channel meetings, but not from [private channels](/microsoftteams/private-channels) that have their own policy location.
         - **Teams chats**: Messages from private 1:1 chats, group chats, and meeting chats.
         - **Teams private channel messages**: Messages from private channel chats and private channel meetings.
         
@@ -98,8 +101,6 @@ For technical details about how retention works for Teams, including what elemen
 #### Known configuration issues
 
 - Although you can select the option to start the retention period when items were last modified, the value of **When items were created** is always used. For messages that are edited, a copy of the original message is saved with its original timestamp to identify when this pre-edited message was created, and the post-edited message has a newer timestamp.
-
-- When you select **Edit** for the **Teams channel messages** location, you might see Microsoft 365 groups that aren't also teams. Don't select these groups.
 
 - When you select **Edit** for the Teams chats location, you might see guests and non-mailbox users. Retention policies aren't designed for these users, so don't select them.
 
@@ -122,7 +123,7 @@ It's possible that a retention policy that's applied to Microsoft 365 groups, Sh
 ### Retention policy for Yammer locations
 
 > [!NOTE]
-> Retention policies for Yammer are in preview and currently do not inform users when messages are deleted as a result of a retention policy.
+> Retention policies for Yammer currently do not inform users when messages are deleted as a result of a retention policy.
 >
 > To use this feature, your Yammer network must be [Native Mode](/yammer/configure-your-yammer-network/overview-native-mode), not Hybrid Mode.
 
@@ -137,11 +138,6 @@ It's possible that a retention policy that's applied to Microsoft 365 groups, Sh
     - If you chose **Adaptive**: On the **Choose adaptive policy scopes and locations** page, select **Add scopes** and select one or more adaptive scopes that have been created. Then, select one or more locations. The locations that you can select depend on the [scope types](retention-settings.md#configuration-information-for-adaptive-scopes) added. For example, if you only added a scope type of **User**, you will be able to select **Yammer user messages** but not **Yammer community messages**. 
     
     - If you chose **Static**: On the **Choose locations to apply the policy** page, toggle on one or both of the locations for Yammer: **Yammer community message** and **Yammer user messages**.
-        
-        > [!IMPORTANT]
-        > Although you can create a retention policy for just Yammer user messages, a retention policy for this location can delete community messages from the Yammer app for all community members.
-        > 
-        > If you choose this option and the retention policy will be configured to delete user messages, make sure you understand this implication. For more information, see [How retention works with Yammer](retention-policies-yammer.md#how-retention-works-with-yammer).
         
         By default, all communities and users are selected, but you can refine this by specifying communities and users to be included or excluded.
         
@@ -221,7 +217,7 @@ First, the retention policy needs to be distributed to the locations that you se
         Set-AppRetentionCompliancePolicy -Identity <policy name> -RetryDistribution
         ```
     
-    - For all other policy locations, such as **Exchange email**, **SharePoint sites**, **Teams channel messages** etc:
+    - For all other policy locations, such as **Exchange email**, **SharePoint sites**, and **Teams channel messages**:
     
         ```PowerShell
         Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution

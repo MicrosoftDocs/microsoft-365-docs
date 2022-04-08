@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Reports in the admin center - Yammer device usage report"
+title: "Microsoft 365 admin center Yammer device usage reports"
 f1.keywords:
 - NOCSH
 ms.author: kwekua

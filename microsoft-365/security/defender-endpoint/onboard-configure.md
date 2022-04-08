@@ -35,7 +35,7 @@ Deploying Microsoft Defender for Endpoint is a two-step process.
 - Onboard devices to the service
 - Configure capabilities of the service
 
-![Illustration of onboarding and configuration process](images/deployment-steps.png)
+:::image type="content" source="images/deployment-steps.png" alt-text="The onboarding and configuration process" lightbox="images/deployment-steps.png":::
 
 ## Onboard devices to the service
 You'll need to go the onboarding section of the Defender for Endpoint portal to onboard any of the supported devices. Depending on the device, you'll be guided with appropriate steps and provided management and deployment tool options suitable for the device. 
@@ -64,7 +64,7 @@ The following table lists the available tools based on the endpoint that you nee
 The following table lists the available tools based on the endpoint that you need to onboard.
 
 ## Configure capabilities of the service
-Onboarding devices effectively enables the endpoint detection and response capability of Micorosft Defender for Endpoint.
+Onboarding devices effectively enables the endpoint detection and response capability of Microsoft Defender for Endpoint.
 
 After onboarding the devices, you'll then need to configure the other capabilities of the service. The following table lists the capabilities you can configure to get the best protection for your environment.
 
@@ -104,7 +104,7 @@ After onboarding the devices, you'll then need to configure the other capabiliti
 |File response capabilities: collect file, deep analysis, block file, stop, and quarantine processes     |      Y   |    Y     |     Y    |    Y    |    Y   |
 |Live Response    |      Y   |    Y     |     Y    |    Y    |    Y   |
 
-(<a id="fn1">1</a>) Refers to the modern, unified solution for Windows Server 2012 and 2016. For more information, see [Onboard Windows Servers to the Defender for Endpoint service](configure-server-endpoints.md).
+(<a id="fn1">1</a>) Refers to the modern, unified solution for Windows Server 2012 R2 and 2016. For more information, see [Onboard Windows Servers to the Defender for Endpoint service](configure-server-endpoints.md).
 
 >[!NOTE]
 >Windows 7, 8.1, Windows Server 2008 R2 include support for the EDR sensor, and AV using System Center Endpoint Protection (SCEP).
