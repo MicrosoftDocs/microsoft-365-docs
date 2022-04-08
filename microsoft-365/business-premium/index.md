@@ -35,6 +35,8 @@ The task before you is this &mdash; let Microsoft 365 Business Premium help secu
 
 Click through the tabs below to learn about each mission and how to set up Microsoft 365 Business Premium security.
 
+## {.tabset}
+
 ## [**Fortify Your Environment**](#tab/Fortify)
 
 In these first missions, you're going to have to sign in and set up your initial protective walls of defense, starting with account access protections.
@@ -86,6 +88,8 @@ A safe device is one that is monitored by the organization. In this last critica
 [**Set up and secure managed devices**](m365bp-protect-devices.md). Take the steps to secure those devices so they are monitored and protected by the organization! 
 
 :::image type="content" source="../media/bus-premium-card-overview-manage.png" alt-text="Microsoft 365 Business Premium protects your apps, file storage, email, devices, and identities.":::
+
+{-}
 
 ## Cybersecurity Playbook
 
