@@ -2,7 +2,7 @@
 title: Understand and use attack surface reduction (ASR)
 ms.reviewer: 
 description: Learn about the attack surface reduction capabilities of Microsoft Defender for Endpoint.
-keywords: asr, attack surface reduction, Microsoft Defender for Endpoint, microsoft defender, antivirus, av, windows defender
+keywords: asr, attack surface reduction, attack surface reduction rules, Microsoft Defender for Endpoint, microsoft defender, antivirus, av, windows defender
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -77,12 +77,12 @@ To configure attack surface reduction in your environment, follow these steps:
 
 ## Test attack surface reduction in Microsoft Defender for Endpoint
 
-As part of your organization's security team, you can configure attack surface reduction capabilities to run in audit mode to see how they'll work. In audit mode, you can enable:
+As part of your organization's security team, you can configure attack surface reduction capabilities to run in audit mode to see how they'll work. You can enable the following ASR security features in audit mode:
 
 - Attack surface reduction rules
 - Exploit protection
 - Network protection
-- And controlled folder access in audit mode
+- And controlled folder access
 
 Audit mode lets you see a record of what *would* have happened if you had enabled the feature.
 
@@ -105,9 +105,19 @@ You can enable audit mode using Group Policy, PowerShell, and configuration serv
 | Audit options | How to enable audit mode | How to view events |
 |---|---|---|
 | Audit applies to all events | [Enable controlled folder access](enable-controlled-folders.md) | [Controlled folder access events](evaluate-controlled-folder-access.md#review-controlled-folder-access-events-in-windows-event-viewer) |
-| Audit applies to individual rules | [Step 1: Test ASR rules using Audit](attack-surface-reduction-rules-deployment-test.md#step-1-test-asr-rules-using-audit) | [Step 2: Understand the Attack surface reduction rules reporting page](attack-surface-reduction-rules-deployment-test.md#step-2-understand-the-attack-surface-reduction-rules-reporting-page-in-the-microsoft-365-defender-portal) |
+| Audit applies to individual rules | [Step 1: Test ASR rules using Audit mode](attack-surface-reduction-rules-deployment-test.md#step-1-test-asr-rules-using-audit) | [Step 2: Understand the Attack surface reduction rules reporting page](attack-surface-reduction-rules-deployment-test.md#step-2-understand-the-attack-surface-reduction-rules-reporting-page-in-the-microsoft-365-defender-portal) |
 | Audit applies to all events | [Enable network protection](enable-network-protection.md) | [Network protection events](evaluate-network-protection.md#review-network-protection-events-in-windows-event-viewer) |
 | Audit applies to individual mitigations | [Enable exploit protection](enable-exploit-protection.md) | [Exploit protection events](exploit-protection.md#review-exploit-protection-events-in-windows-event-viewer) |
+
+### Attack surface reduction (ASR) rules
+
+Attack surface reduction (ASR) rules are pre-defined to harden common, known attack surfaces. There are several methods you can use to implement attack surface reduction rules. The preferred method is documented in the following attack surface reduction (ASR) rules deployment topics:
+
+- [Attack surface reduction (ASR) rules deployment overview](attack-surface-reduction-rules-deployment.md)
+- [Plan attack surface reduction (ASR) rules deployment](attack-surface-reduction-rules-deployment-plan.md)
+- [Test attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-test.md)
+- [Enable attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-implement.md)
+- [Operationalize attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-operationalize.md)
 
 ## View attack surface reduction events
 
@@ -286,15 +296,11 @@ As mentioned in the video, Defender for Endpoint includes several attack surface
 | [Controlled folder access](controlled-folders.md) | Help prevent malicious or suspicious apps (including file-encrypting ransomware malware) from making changes to files in your key system folders (Requires Microsoft Defender Antivirus) |
 | [Network protection](network-protection.md) | Extend protection to your network traffic and connectivity on your organization's devices. (Requires Microsoft Defender Antivirus) |
 | [Exploit protection](exploit-protection.md) | Help protect the operating systems and apps your organization uses from being exploited. Exploit protection also works with third-party antivirus solutions. |
-| [Attack surface reduction rules](attack-surface-reduction.md) | Reduce vulnerabilities (attack surfaces) in your applications with intelligent rules that help stop malware. (Requires Microsoft Defender Antivirus). |
 | [Device control](device-control-report.md) | Protects against data loss by monitoring and controlling media used on devices, such as removable storage and USB drives, in your organization. |
-
-> [!TIP]
-> If you’re looking for Antivirus related information for other platforms, see:
-> - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
-> - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
-> - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
-> - [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md)
-> - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
-> - [Configure Defender for Endpoint on Android features](android-configure.md)
-> - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
+| [Attack surface reduction (ASR) rules deployment guide](attack-surface-reduction-rules-deployment.md) | Presents overview information and prerequisites for deploying attack surface reduction rules |
+| [Plan attack surface reduction (ASR) rules deployment](attack-surface-reduction-rules-deployment-plan.md) | Lists the recommended steps for attack surface reduction rules deployment |
+| [Test attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-test.md) | Provides steps to use audit mode to test attack surface reduction rules. |
+| [Enable attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-implement.md) | Shows the steps to transition attack surface reduction rules from test (audit) mode to the active, enabled (Block) mode |
+| [Operationalize attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-operationalize.md) | Provides information about day-to-day review and maintenance activities. |
+| [Attack surface reduction (ASR) rules reference](attack-surface-reduction-rules-reference.md) | Provides details about each attack surface reduction rule. |
+| [Attack surface reduction rules](attack-surface-reduction.md) | Reduce vulnerabilities (attack surfaces) in your applications with intelligent rules that help stop malware. (Requires Microsoft Defender Antivirus). |

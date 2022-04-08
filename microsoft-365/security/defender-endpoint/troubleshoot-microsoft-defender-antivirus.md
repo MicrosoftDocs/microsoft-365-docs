@@ -2721,7 +2721,7 @@ Message:
 Description:
 </td>
 <td >
-If Tamper protection is enabled then, any attempt to change any of Defender’s settings if blocked and Event ID 5013 is generated that states which setting change was blocked.
+If Tamper protection is enabled then, any attempt to change any of Defender's settings if blocked and Event ID 5013 is generated that states which setting change was blocked.
 </td>
 </tr>
 <tr>

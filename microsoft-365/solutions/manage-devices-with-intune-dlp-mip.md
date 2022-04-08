@@ -26,7 +26,7 @@ description: Implement Endpoint DLP by working with your information protection 
 # Step 7. Implement data loss prevention (DLP) with information protection capabilities
 
 
-If your organization has already put the time into understanding your data, developing a data sensitivity schema, and applying the schema, you might be ready to extend elements of this schema to endpoints by using data loss prevention (DLP) policies. 
+If your organization uses Microsoft 365 Information Protection and has put the time into understanding your data, developing a data sensitivity schema, and applying the schema, you might be ready to extend elements of this schema to endpoints by using data loss prevention (DLP) policies. 
 
 Microsoft Endpoint data loss prevention (Endpoint DLP) currently applies to:
 - Windows 10, Windows 11
@@ -42,8 +42,6 @@ If your information protection and governance team is ready to extend DLP polici
 
 ![Endpoint DLP steps for the device admin](../media/devices/endpoint-dlp-steps.png#lightbox)
 
-If you completed [Step 2. Enroll devices to Intune](manage-devices-with-intune-enroll.md) and [Step 6. Enroll devices into Defender for Endpoint to monitor device risk and compliance to security baselines](manage-devices-with-intune-monitor-risk.md), your devices are already enabled for Endpoint DLP. 
-
 
 Use the following steps to work with your information protection team.
 
@@ -51,6 +49,5 @@ Use the following steps to work with your information protection team.
 |Step  |Description  |
 |---------|---------|
 |1     |  [Learn about Microsoft 365 Endpoint data loss prevention](../compliance/endpoint-dlp-learn-about.md).        |
-|2     | Enable devices for Endpoint DLP. If you onboarded devices to Microsoft Defender for Endpoint, your devices are already enabled for Endpoint DLP. If your devices are not onboarded to Defender for Endpoint, see [Get started with Endpoint data loss prevention](../compliance/endpoint-dlp-getting-started.md) for instructions.|
+|2     | Onboard devices for Endpoint DLP. If you onboarded devices to Microsoft Defender for Endpoint, your devices are already onboarded for Microsoft 365 Compliance, including Endpoint DLP. If your devices are not onboarded to Defender for Endpoint, see [Get started with Endpoint data loss prevention](../compliance/endpoint-dlp-getting-started.md) for instructions. For more information about how onboarding works, see [Enrolling devices vs. onboarding devices](manage-devices-with-intune-overview.md#enrolling-devices-vs-onboarding-devices)|
 |3     |   Work with your information protection and governance team to define, test, and tune policies. This includes monitoring the results. See these resources:<br>- [Using Endpoint data loss prevention](../compliance/endpoint-dlp-using.md)<br>- [View the reports for data loss prevention](../compliance/view-the-dlp-reports.md)      |
-|     |         |

@@ -62,7 +62,7 @@ To start recording system events, open PowerShell in administrative mode and per
 
 3. Press **ENTER** to stop and save recording, or **Ctrl+C** to cancel recording.
 
-4. Analyze the results using the performance analyzer’s `Get-MpPerformanceReport`parameter. For example, on executing the command `Get-MpPerformanceReport -Path <recording.etl> -TopFiles 3 -TopScansPerFile 10`, the user is provided with a list of top-ten scans for the top 3 files affecting performance. 
+4. Analyze the results using the performance analyzer's `Get-MpPerformanceReport`parameter. For example, on executing the command `Get-MpPerformanceReport -Path <recording.etl> -TopFiles 3 -TopScansPerFile 10`, the user is provided with a list of top-ten scans for the top 3 files affecting performance. 
 
 For more information on command-line parameters and options, see the [New-MpPerformanceRecording](#new-mpperformancerecording) and [Get-MpPerformanceReport](#get-mpperformancereport).
 
@@ -122,7 +122,7 @@ New-MpPerformanceRecording -RecordTo <String >
 #### Description: New-MpPerformanceRecording
 The `New-MpPerformanceRecording` cmdlet collects a performance recording of Microsoft Defender Antivirus scans. These performance recordings contain Microsoft-Antimalware-Engine and NT kernel process events and can be analyzed after collection using the [Get-MpPerformanceReport](#get-mpperformancereport) cmdlet.
 
-This `New-MpPerformanceRecording` cmdlet provides an insight into problematic files that could cause a degradation in the performance of Microsoft Defender Antivirus. This tool is provided “AS IS”, and is not intended to provide suggestions on exclusions. Exclusions can reduce the level of protection on your endpoints. Exclusions, if any, should be defined with caution.
+This `New-MpPerformanceRecording` cmdlet provides an insight into problematic files that could cause a degradation in the performance of Microsoft Defender Antivirus. This tool is provided "AS IS", and is not intended to provide suggestions on exclusions. Exclusions can reduce the level of protection on your endpoints. Exclusions, if any, should be defined with caution.
 
 For more information on the performance analyzer, see [Performance Analyzer](/windows-hardware/test/wpt/windows-performance-analyzer) docs.
 
@@ -281,7 +281,7 @@ Accept wildcard characters: False
 ```
 
 ### -TopExtensions 
-Specifies how many top extensions to output, sorted by "Duration”.
+Specifies how many top extensions to output, sorted by "Duration".
 
 ```yaml
 Type: Int32
@@ -292,7 +292,7 @@ Accept wildcard characters: False
 ```
 
 ### -TopExtensionsPerProcess 
-Specifies how many top extensions to output for each top process, sorted by "Duration”.
+Specifies how many top extensions to output for each top process, sorted by "Duration".
 
 ```yaml
 Type: Int32
@@ -338,7 +338,7 @@ Accept wildcard characters: False
 ```
 
 ### -TopProcesses
-Requests a top-processes report and specifies how many of the top processes to output, sorted by "Duration”.
+Requests a top-processes report and specifies how many of the top processes to output, sorted by "Duration".
 
 ```yaml
 Type: Int32
@@ -349,7 +349,7 @@ Accept wildcard characters: False
 ```
 
 ### -TopProcessesPerExtension 
-Specifies how many top processes to output for each top extension, sorted by "Duration”.
+Specifies how many top processes to output for each top extension, sorted by "Duration".
 
 
 ```yaml
@@ -362,7 +362,7 @@ Accept wildcard characters: False
 
 
 ### -TopProcessesPerFile
-Specifies how many top processes to output for each top file, sorted by "Duration “.
+Specifies how many top processes to output for each top file, sorted by "Duration ".
 
 
 ```yaml
@@ -400,7 +400,7 @@ Accept wildcard characters: False
 
 
 ### -TopScansPerExtensionPerProcess 
-Specifies how many top scans to output for each top extension for each top process, sorted by "Duration”.
+Specifies how many top scans to output for each top extension for each top process, sorted by "Duration".
 
 
 ```yaml
@@ -413,7 +413,7 @@ Accept wildcard characters: False
 
 
 ### -TopScansPerFile
-Specifies how many top scans to output for each top file, sorted by "Duration”.
+Specifies how many top scans to output for each top file, sorted by "Duration".
 
 
 ```yaml
@@ -438,7 +438,7 @@ Accept wildcard characters: False
 
 
 ### -TopScansPerFilePerProcess 
-Specifies how many top scans for output for each top file for each top process, sorted by "Duration”.
+Specifies how many top scans for output for each top file for each top process, sorted by "Duration".
 
 
 ```yaml
@@ -451,7 +451,7 @@ Accept wildcard characters: False
 
 
 ### -TopScansPerProcess 
-Specifies how many top scans to output for each top process in the Top Processes report, sorted by "Duration”.
+Specifies how many top scans to output for each top process in the Top Processes report, sorted by "Duration".
 
 
 ```yaml
@@ -463,7 +463,7 @@ Accept wildcard characters: False
 ```
 
 ### -TopScansPerProcessPerExtension
-Specifies how many top scans for output for each top process for each top extension, sorted by "Duration”.
+Specifies how many top scans for output for each top process for each top extension, sorted by "Duration".
 
 
 ```yaml
@@ -475,7 +475,7 @@ Accept wildcard characters: False
 ```
 
 ### -TopScansPerProcessPerFile
-Specifies how many top scans for output for each top process for each top file, sorted by "Duration”.
+Specifies how many top scans for output for each top process for each top file, sorted by "Duration".
 
 
 ```yaml
