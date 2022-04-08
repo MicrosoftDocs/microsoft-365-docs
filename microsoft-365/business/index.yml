@@ -149,15 +149,16 @@ conceptualContent:
   # Card
     - title: Protect email content and Office files
       links:
-        - url: ../security/office-365-security/defender-for-office-365.md
-          itemType: overview
-          text: Overview of Microsoft Defender for Office 365
-        - url: ../security/office-365-security/protect-against-threats.md
+        - url: ../business-premium/m365bp-increase-protection.md
           itemType: how-to-guide
-          text: Set up and configure Defender for Office 365
-        - url: ../security/office-365-security/anti-malware-protection-faq-eop.yml
-          itemType: reference
-          text: Defender for Office 365 FAQ
+          text: Set up your security policies
+        - url: ../business-premium/avoid-phishing-and-attacks.md
+          itemType: how-to-guide
+          text: Know what to watch for in email content
+        - url: ../business-premium/send-encrypted-email.md
+          itemType: how-to-guide
+          text: Encrypt or label sensitive email
+
   # Card
     - title: Support and community
       links:
