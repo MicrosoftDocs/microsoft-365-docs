@@ -35,7 +35,7 @@ The task before you is this &mdash; let Microsoft 365 Business Premium help secu
 
 Click through the tabs below to learn about each mission and how to set up Microsoft 365 Business Premium security.
 
-### [**Fortify Your Environment**](#tab/Fortify)
+## [**Fortify Your Environment**](#tab/Fortify)
 
 In these first missions, you're going to have to sign in and set up your initial protective walls of defense, starting with account access protections.
 
@@ -51,7 +51,7 @@ The guidance in this library helps your business achieve the goals described in 
 
 A summary of this library guidance for Microsoft 365 Business Premium is available for you to download. Download link coming soon!
 
-:::image type="content" source="../media/zero-trust/zero-trust-architecture.png" alt-text="The Zero Trust security architecture" lightbox="../media/m365bp-cyber-security-playbook.png":::
+:::image type="content" source="../media/cyber-security-playbook.png" alt-text="The Cyber Security Playbook" lightbox="../media/m365bp-cyber-security-playbook.png":::
 
 > [!Note]
 > When a term or directive is unclear, you can find definitions in the [glossary of terms](m365bp-glossary.md).
@@ -74,7 +74,7 @@ The guidance in this library helps your business achieve the goals described in 
 
 A summary of this library guidance for Microsoft 365 Business Premium is available for you to download. Download link coming soon!
 
-:::image type="content" source="../media/zero-trust/zero-trust-architecture.png" alt-text="The Zero Trust security architecture" lightbox="../media/m365bp-cyber-security-playbook.png":::
+:::image type="content" source="../media/cyber-security-playbook.png" alt-text="The Cyber Security Playbook" lightbox="../media/m365bp-cyber-security-playbook.png":::
 
 > [!Note]
 > When a term or directive is unclear, you can find definitions in the [glossary of terms](m365bp-glossary.md).
@@ -93,7 +93,7 @@ The guidance in this library helps your business achieve the goals described in 
 
 A summary of this library guidance for Microsoft 365 Business Premium is available for you to download. Download link coming soon!
 
-:::image type="content" source="../media/zero-trust/zero-trust-architecture.png" alt-text="The Zero Trust security architecture" lightbox="../media/m365bp-cyber-security-playbook.png":::
+:::image type="content" source="../media/cyber-security-playbook.png" alt-text="The Cyber Security Playbook" lightbox="../media/m365bp-cyber-security-playbook.png":::
 
 > [!Note]
 > When a term or directive is unclear, you can find definitions in the [glossary of terms](m365bp-glossary.md).
