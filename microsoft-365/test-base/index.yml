@@ -40,7 +40,11 @@ landingContent:
       - linkListType: quickstart
         links:
           - text: Create Test Base Account
-            url: createAccount.md 
+            url: createAccount.md
+          - text: Test your application on Test Base
+            url: testapplication.md
+          - text: Test your Intune application on Test Base
+            url: testintuneapplication.md
           - text: Build a Package
             url: buildpackage.md
           - text: Upload your package
