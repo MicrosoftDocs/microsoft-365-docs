@@ -90,7 +90,6 @@ To meet the challenges of today’s decentralized, data-rich workplace, we’re 
 
 ### Microsoft Purview Data Lifecycle Management
 
-<<<<<<< HEAD
 - The documentation for what was formerly Microsoft Information Governance has been substantially revised and restructured to help you more easily find information that relates to the solutions you configure in the Microsoft Purview portal: Data Connectors, Data Lifecycle Management, and Records Management. As part of this revision, the documentation provides a clearer distinction for the retention scenarios for data lifecycle management vs. records management.
 - [Learn about data lifecycle management](information-governance.md) - new, to support the restructure.
 - [Get started with data lifecycle management](get-started-with-information-governance.md) - new, to replace "Get started with retention", this article includes getting started steps for all data lifecycle management capabilities, which include retention.
