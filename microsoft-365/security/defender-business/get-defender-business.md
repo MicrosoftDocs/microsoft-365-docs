@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 03/15/2022
+ms.date: 04/08/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -110,23 +110,12 @@ When you receive your acceptance email, here's how to activate your trial subscr
 
 3. When you sign in for the first time, you'll go to the Microsoft 365 admin center ([https://admin.microsoft.com/](https://admin.microsoft.com/)). See [Overview of the Microsoft 365 admin center](../../admin/admin-overview/admin-center-overview.md).
 
-4. Use one of the following procedures:
+4. Use one of the following procedures:<br/>
 
-   - If you're setting up a Microsoft 365 subscription for the first time, select **Go to guided setup** and complete the following steps:
-
-      a. Either install your Office apps now, or choose **Continue** to skip this step. (You can install your Office apps later.)
-
-      b. If your company has a domain, you can add it now (this option is recommended). Alternately, you could choose to use your default `.onmicrosoft.com` domain for now.
-
-      c. Add users and assign licenses. Each user you list will be assigned a license automatically. See [Add users and assign licenses at the same time](../../admin/add-users/add-users.md).
-
-   - If you're adding a trial to an existing Microsoft 365 tenant, follow these steps to assign your new licenses to users:
-
-      a. Go to the Microsoft 365 admin center ([https://admin.microsoft.com/](https://admin.microsoft.com/)) and sign in.
-
-      b. In the navigation pane, choose **Users** > **Active users**. Review the list of users. 
-
-      c. To assign licenses, follow the guidance in [Assign licenses to users](../../admin/manage/assign-licenses-to-users.md).
+   | Scenario | Procedure |
+   |:---|:---|
+   | You're setting up a Microsoft 365 subscription for the first time. | Select **Go to guided setup** and complete the following steps:<br/><br/>1. Either install your Office apps now, or choose **Continue** to skip this step. (You can install your Office apps later.)<br/><br/>2. If your company has a domain, you can add it now (this option is recommended). Alternately, you could choose to use your default `.onmicrosoft.com` domain for now.<br/><br/>3. Add users and assign licenses. Each user you list will be assigned a license automatically. See [Add users and assign licenses at the same time](../../admin/add-users/add-users.md). |
+   | You're adding a trial to an existing Microsoft 365 tenant. | 1. Go to the Microsoft 365 admin center ([https://admin.microsoft.com/](https://admin.microsoft.com/)) and sign in.<br/><br/>2. In the navigation pane, choose **Users** > **Active users**. Review the list of users. <br/><br/>3. To assign licenses, follow the guidance in [Assign licenses to users](../../admin/manage/assign-licenses-to-users.md). |
 
 
 ## Next steps
