@@ -79,5 +79,5 @@ After your setup and configuration process is complete for your company, the bes
 
 The Microsoft 365 Defender portal is your one-stop shop for using and managing Microsoft Defender for Business. It includes a welcome banner and callouts to help you get started, cards that surface relevant information, and a navigation bar to give you easy access to the various features and capabilities.
 
-Use the navigation bar on the left side of the screen to access your incidents, view reports, and manage your security policies. A table that describes items you’ll see in your navigation bar can be found here.
+Use the navigation bar on the left side of the screen to access your incidents, view reports, and manage your security policies. See [Use the navigation bar](mdb-get-started.md#use-the-navigation-bar) for a list of items that you’ll see in your navigation bar.
 
