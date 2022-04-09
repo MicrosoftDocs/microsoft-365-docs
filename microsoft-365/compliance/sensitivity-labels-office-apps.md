@@ -123,6 +123,8 @@ If both of these conditions are met but you need to turn off the built-in labels
 1. Navigate to **User Configuration/Administrative Templates/Microsoft Office 2016/Security Settings**.
 
 2. Set **Use the Sensitivity feature in Office to apply and view sensitivity labels** to **0**. 
+
+If you later need to revert this configuration, change the value to **1**. You might also need to change this value to 1 if the **Sensitivity** button isn't displayed on the ribbon as expected. For example, a previous administrator turned this labeling setting off. 
  
 Deploy this setting by using Group Policy, or by using the [Office cloud policy service](/DeployOffice/overview-office-cloud-policy-service). The setting takes effect when these Office apps restart. 
 
