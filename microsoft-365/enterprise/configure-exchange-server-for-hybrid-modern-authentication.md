@@ -73,7 +73,7 @@ First, gather all the URLs that you need to add in AAD. Run these commands on-pr
 ```powershell
 Get-MapiVirtualDirectory | FL server,*url*
 Get-WebServicesVirtualDirectory | FL server,*url*
-Get-ClientAccessServer | fl Name, AutodiscoverServiceInternalUri
+Get-ClientAccessService | fl Name, AutodiscoverServiceInternalUri
 Get-OABVirtualDirectory | FL server,*url*
 Get-AutodiscoverVirtualDirectory | FL server,*url*
 Get-OutlookAnywhere | FL server,*hostname*
