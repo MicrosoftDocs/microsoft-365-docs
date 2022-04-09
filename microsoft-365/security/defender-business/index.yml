@@ -41,6 +41,8 @@ landingContent:
     linkLists:
       - linkListType: get-started
         links:
+          - text: Use the trial playbook
+            url: trial-playbook-defender-business.md
           - text: Get Defender for Business
             url: get-defender-business.md
           - text: Use the setup wizard
