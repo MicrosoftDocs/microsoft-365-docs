@@ -49,7 +49,7 @@ First, [connect to your Microsoft 365 tenant](/graph/powershell/get-started#auth
 Assigning and removing licenses for a user requires the User.ReadWrite.All permission scope or one of the other permissions listed in the ['Assign license' Graph API reference page](/graph/api/user-assignlicense).
 
 ```powershell
-Connect-Graph -Scopes User.ReadWrite.All
+Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
 ```
 
 Run the `Get-MgSubscribedSku` command to view the available licensing plans and the number of available licenses in each plan in your organization. The number of available licenses in each plan is **ActiveUnits** - **WarningUnits** - **ConsumedUnits**. For more information about licensing plans, licenses, and services, see [View licenses and services with PowerShell](view-licenses-and-services-with-microsoft-365-powershell.md).
@@ -98,6 +98,62 @@ This example assigns a license from the **SPE_E5** (Microsoft 365 E5) licensing 
 ```powershell
 $e5Sku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'SPE_E5'
 Set-MgUserLicense -UserId "belindan@litwareinc.com" -AddLicenses @{SkuId = $e5Sku.SkuId} -RemoveLicenses @()
+```
+
+This example assigns **SPE_E5** (Microsoft 365 E5) and **EMSPREMIUM** (ENTERPRISE MOBILITY + SECURITY E5) to the user **belindan\@litwareinc.com**:
+  
+```powershell
+$e5Sku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'SPE_E5'
+$e5EmsSku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'EMSPREMIUM'
+$addLicenses = @(
+    @{SkuId = $e5Sku.SkuId},
+    @{SkuId = $e5EmsSku.SkuId}
+)
+
+Set-MgUserLicense -UserId "belinda@litwareinc.com" -AddLicenses $addLicenses -RemoveLicenses @()
+```
+
+This example assigns **SPE_E5** (Microsoft 365 E5) with the **MICROSOFTBOOKINGS** (Microsoft Bookings)  service turned off:
+  
+```powershell
+$e5Sku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'SPE_E5'
+$disabledPlans = $e5Sku.ServicePlans | `
+    Where ServicePlanName -in ("LOCKBOX_ENTERPRISE", "MICROSOFTBOOKINGS") | `
+    Select -ExpandProperty ServicePlanId
+
+$addLicenses = @(
+    @{
+        SkuId = $e5Sku.SkuId
+        DisabledPlans = $disabledPlans
+    }
+)
+
+Set-MgUserLicense -UserId "belinda@litwareinc.com" -AddLicenses $addLicenses -RemoveLicenses @()
+```
+
+This example updates a user with **SPE_E5** (Microsoft 365 E5) and turns off the Sway and Forms service plans while leaving the user's existing disabled plans in their current state:
+  
+```powershell
+$userLicense = Get-MgUserLicenseDetail -UserId "belinda@fdoau.onmicrosoft.com"
+$userDisabledPlans = $userLicense.ServicePlans | `
+    Where ProvisioningStatus -eq "Disabled" | `
+    Select -ExpandProperty ServicePlanId
+
+$e5Sku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'SPE_E5'
+$newDisabledPlans = $e5Sku.ServicePlans | `
+    Where ServicePlanName -in ("SWAY", "FORMS_PLAN_E5") | `
+    Select -ExpandProperty ServicePlanId
+
+$disabledPlans = ($userDisabledPlans + $newDisabledPlans) | Select -Unique
+
+$addLicenses = @(
+    @{
+        SkuId = $e5Sku.SkuId
+        DisabledPlans = $disabledPlans
+    }
+)
+
+Set-MgUserLicense -UserId "belinda@litwareinc.onmicrosoft.com" -AddLicenses $addLicenses -RemoveLicenses @()
 ```
 
 ### Assign licenses to a user by copying the license assignment from another user
