@@ -31,6 +31,55 @@ description: "Explains how to use PowerShell to remove Microsoft 365 licenses th
 >[Learn how to remove licenses from user accounts](../admin/manage/remove-licenses-from-users.md) with the Microsoft 365 admin center. For a list of additional resources, see [Manage users and groups](/admin).
 >
 
+## Use the Microsoft Graph PowerShell SDK
+
+First, [connect to your Microsoft 365 tenant](/graph/powershell/get-started#authentication).
+
+Assigning and removing licenses for a user requires the User.ReadWrite.All permission scope or one of the other permissions listed in the ['Assign license' Graph API reference page](/graph/api/user-assignlicense).
+
+The Organization.Read.All permission scope is required to read the licenses available in the tenant.
+
+```powershell
+Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
+```
+
+To view the licensing plan information in your organization, see the following topics:
+
+- [View licenses and services with PowerShell](view-licenses-and-services-with-microsoft-365-powershell.md)
+
+- [View account license and service details with PowerShell](view-account-license-and-service-details-with-microsoft-365-powershell.md)
+
+### Removing licenses from user accounts
+
+To remove licenses from an existing user account, use the following syntax:
+  
+```powershell
+Set-MgUserLicense -UserId "<Account>" -RemoveLicenses @("<AccountSkuId1>") -AddLicenses @{}
+```
+
+This example removes the **SPE_E5** (Microsoft 365 E5) licensing plan from the user **BelindaN@litwareinc.com**:
+
+```powershell
+$e5Sku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'SPE_E5'
+Set-MgUserLicense -UserId "belindan@litwareinc.com" -RemoveLicenses @($e5Sku.SkuId) -AddLicenses @{}
+```
+
+To remove all licenses from a group of existing licensed users, use the following syntax:
+
+```powershell
+$licensedUsers = Get-MgUser -Filter 'assignedLicenses/$count ne 0' `
+    -ConsistencyLevel eventual -CountVariable licensedUserCount -All `
+    -Select UserPrincipalName,DisplayName,AssignedLicenses
+
+foreach($user in $licensedUsers)
+{
+    $licencesToRemove = $user.AssignedLicenses | Select -ExpandProperty SkuId
+    $user = Set-MgUserLicense -UserId $user.UserPrincipalName -RemoveLicenses $licencesToRemove -AddLicenses @{} 
+}
+```
+
+Another way to free up a license is by deleting the user account. For more information, see [Delete and restore user accounts with PowerShell](delete-and-restore-user-accounts-with-microsoft-365-powershell.md).
+
 ## Use the Azure Active Directory PowerShell for Graph module
 
 First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
