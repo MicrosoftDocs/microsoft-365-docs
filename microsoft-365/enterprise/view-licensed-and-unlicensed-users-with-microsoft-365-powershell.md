@@ -34,6 +34,8 @@ First, [connect to your Microsoft 365 tenant](/graph/powershell/get-started#auth
 
 Reading user properties including license details requires the User.Read.All permission scope or one of the other permissions listed in the ['Get a user' Graph API reference page](/graph/api/user-get).
 
+The Organization.Read.All permission scope is required to read the licenses available in the tenant.
+
 ```powershell
 Connect-Graph -Scopes User.Read.All, Organization.Read.All
 ```
