@@ -36,14 +36,13 @@ There are five categories of Teams content that you can collect and process usin
 
 A prerequisite to managing Teams content in Advanced eDiscovery is to understand the type of Teams content that you can collect, process, and review in Advanced eDiscovery and where that content is stored in Microsoft 365. The following table lists Teams content type and where each is stored.
 
-||Location of chat messages and posts  |Location of files and attachments |
-|:---------|:---------|:---------|
-|Teams 1:1 chats     |Messages in 1:1 chats are stored in the Exchange Online mailbox of all chat participants. |Files shared in a 1:1 chat are stored in the OneDrive for Business account of the person who shared the file. |
-|Teams group chats     |Messages in group chats are stored in the Exchange Online mailbox of all chat participants. |Files shared in group chats are stored in the OneDrive for Business account of the person who shared the file. |
-|Teams channels     |All channel messages and posts are stored in the Exchange Online mailbox associated with the team.|Files shared in a channel are stored in the SharePoint Online site associated with the team.           |
-|Private channels     |Messages sent in a private channel are stored in the Exchange Online mailboxes of all members of the private channel.|Files shared in a private channel are stored in a dedicated SharePoint Online site associated with the private channel.|
-|Shared channels     |Messages sent in a shared channel are stored in a system mailbox associated with the shared channel.<sup>1</sup>|Files shared in a shared channel are stored in a dedicated SharePoint Online site associated with the shared channel.|
-||||
+|&nbsp;|Location of chat messages and posts|Location of files and attachments|
+|---|---|---|
+|Teams 1:1 chats|Messages in 1:1 chats are stored in the Exchange Online mailbox of all chat participants.|Files shared in a 1:1 chat are stored in the OneDrive for Business account of the person who shared the file.|
+|Teams group chats|Messages in group chats are stored in the Exchange Online mailbox of all chat participants.|Files shared in group chats are stored in the OneDrive for Business account of the person who shared the file.|
+|Teams channels|All channel messages and posts are stored in the Exchange Online mailbox associated with the team.|Files shared in a channel are stored in the SharePoint Online site associated with the team.|
+|Private channels|Messages sent in a private channel are stored in the Exchange Online mailboxes of all members of the private channel.|Files shared in a private channel are stored in a dedicated SharePoint Online site associated with the private channel.|
+|Shared channels|Messages sent in a shared channel are stored in a system mailbox associated with the shared channel.<sup>1</sup>|Files shared in a shared channel are stored in a dedicated SharePoint Online site associated with the shared channel.|
 
 > [!NOTE]
 > <sup>1</sup> To search for (and preserve) messages sent in a shared channel, you have to search or specify the Exchange Online mailbox for the parent Team.
@@ -191,11 +190,10 @@ When content from Teams chat conversations is added to a review set, messages, p
 
 The following table describes how the different types of Teams chat content are grouped by family and conversation.
 
-| Teams content type|Group by family  |Group by conversation  |
-|:---------|:---------|:---------|
-|Teams 1:1 and group chats   | A transcript and all of its attachments and extracted items share the same **FamilyId**. Each transcript has a unique **FamilyId**. |All transcript files and their family items within the same conversation share the same **ConversationId**. This includes the following items:<br/><br/>  - All extracted items and attachments of all transcripts that share the same **ConversationId**. <br/> - All transcripts for the same chat conversation<br/> - All custodian copies of each transcript<br/> - Transcripts from subsequent collections from the same chat conversation <br/><br/>  For Teams 1:1 and group chat conversations, you might have multiple transcript files, each one corresponding to a different time frame within the conversation. Because these transcript files are from the same conversation with the same participants, they share the same **ConversationId**.|
-|Standard, private, and shared channel chats    | Each post and all replies and attachments are saved to its own transcript. This transcript and all of its attachments and extracted items share the same **FamilyId**.         |Each post and its attachments and extracted items have a unique **ConversationId**. If there are subsequent collections or new replies from the same post, the delta transcripts resulting from those collections will also have the same **ConversationId**.|
-||||
+|Teams content type|Group by family|Group by conversation|
+|---|---|---|
+|Teams 1:1 and group chats|A transcript and all of its attachments and extracted items share the same **FamilyId**. Each transcript has a unique **FamilyId**.|All transcript files and their family items within the same conversation share the same **ConversationId**. This includes the following items: <ul><li>All extracted items and attachments of all transcripts that share the same **ConversationId**.</li><li>All transcripts for the same chat conversation</li><li>All custodian copies of each transcript</li><li>Transcripts from subsequent collections from the same chat conversation</li></ul> <br/> For Teams 1:1 and group chat conversations, you might have multiple transcript files, each one corresponding to a different time frame within the conversation. Because these transcript files are from the same conversation with the same participants, they share the same **ConversationId**.|
+|Standard, private, and shared channel chats|Each post and all replies and attachments are saved to its own transcript. This transcript and all of its attachments and extracted items share the same **FamilyId**.|Each post and its attachments and extracted items have a unique **ConversationId**. If there are subsequent collections or new replies from the same post, the delta transcripts resulting from those collections will also have the same **ConversationId**.|
 
 Use the **Group** control in the command bar of a review set to view Teams content grouped by family or conversation.
 
@@ -232,11 +230,10 @@ Here's the logic used by Advanced eDiscovery to include additional messages and 
 
 - Queries that only use date ranges
 
-| Teams content type|Queries with search parameters  |Queries with date ranges  |
-|:---------|:---------|:---------|
-|Teams 1:1 and group chats   |Messages that were posted 12 hours before and 12 hours after responsive items are grouped with the responsive item in a single transcript file.   |Messages in a 24-hour window are grouped in a single transcript file.|
-|Standard, private, and shared Teams channel chats    |Each post that contains responsive items and all corresponding replies are grouped in a single transcript file. |Each post that contains responsive items and all corresponding replies are grouped in a single transcript file.|
-||||
+|Teams content type|Queries with search parameters|Queries with date ranges|
+|---|---|---|
+|Teams 1:1 and group chats|Messages that were posted 12 hours before and 12 hours after responsive items are grouped with the responsive item in a single transcript file.|Messages in a 24-hour window are grouped in a single transcript file.|
+|Standard, private, and shared Teams channel chats|Each post that contains responsive items and all corresponding replies are grouped in a single transcript file.|Each post that contains responsive items and all corresponding replies are grouped in a single transcript file.|
 
 ### Deduplication of Teams content
 
@@ -262,19 +259,18 @@ In large review sets with thousands or millions of items, it can be difficult to
 
 The following table describes metadata properties for Teams content.
 
-|Metadata property  |Description  |
-|:---------|:---------|
-|ContainsEditedMessage      | Indicates whether a transcript file contains an edited message. Edited messages are identified when viewing the transcript file.|
+|Metadata property|Description|
+|---|---|
+|ContainsEditedMessage|Indicates whether a transcript file contains an edited message. Edited messages are identified when viewing the transcript file.|
 |ConversationId|A GUID that identifies the conversation that the item is associated with. Transcript files and attachments from the same conversation have the same value for this property.|
-|Conversation name     | The name of the conversation the transcript file or attachment is associated with. For Teams 1:1 and group chats, the value of this property is the UPN of all participants of the conversation are concatenated. For example, `User3 <User3@contoso.onmicrosoft.com>,User4 <User4@contoso.onmicrosoft.com>,User2 <User2@contoso.onmicrosoft.com>`. Teams channel (standard, private, and shared) chats use the following format for conversation name: `<Team name>,<Channel name>`.  For example, `eDiscovery vNext, General`.          |
-|ConversationType     | Indicates the type of Team chat. For Teams 1:1 and group chats, the value for this property is `Group`. For standard, private, and shared channel chats, the value is `Channel`.|
-|Date | The time stamp of the first message in the transcript file.|
+|Conversation name|The name of the conversation the transcript file or attachment is associated with. For Teams 1:1 and group chats, the value of this property is the UPN of all participants of the conversation are concatenated. For example, `User3 <User3@contoso.onmicrosoft.com>,User4 <User4@contoso.onmicrosoft.com>,User2 <User2@contoso.onmicrosoft.com>`. Teams channel (standard, private, and shared) chats use the following format for conversation name: `<Team name>,<Channel name>`. For example, `eDiscovery vNext, General`.|
+|ConversationType|Indicates the type of Team chat. For Teams 1:1 and group chats, the value for this property is `Group`. For standard, private, and shared channel chats, the value is `Channel`.|
+|Date|The time stamp of the first message in the transcript file.|
 |FamilyId|A GUID that identifies the transcript file for a chat conversation. Attachments will have the same value for this property as the transcript file that contains the message the file was attached to.|
-|FileClass     |Indicates that type of content. Items from Teams chats have the value `Conversation`. In contrast, Exchange email messages have the value `Email`.|          |
-|MessageKind     | The message kind property. Teams content has the value `microsoftteams , im`. |
-|Recipients     | A list of all users who received a message within the transcript conversation.|
-|TeamsChannelName     | The Teams channel name of the transcript.|
-|||
+|FileClass|Indicates that type of content. Items from Teams chats have the value `Conversation`. In contrast, Exchange email messages have the value `Email`.|
+|MessageKind|The message kind property. Teams content has the value `microsoftteams , im`.|
+|Recipients|A list of all users who received a message within the transcript conversation.|
+|TeamsChannelName|The Teams channel name of the transcript.|
 
 For descriptions of other Advanced eDiscovery metadata properties, see [Document metadata fields in Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md).
 

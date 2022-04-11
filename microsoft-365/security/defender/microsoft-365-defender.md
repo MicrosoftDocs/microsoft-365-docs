@@ -36,9 +36,6 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
-> Want to experience Microsoft 365 Defender? You can [evaluate it in a lab environment](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) or [run your pilot project in production](m365d-pilot.md?ocid=cx-evalpilot).
->
-
 Microsoft 365 Defender is a unified pre- and post-breach enterprise defense suite that natively coordinates detection, prevention, investigation, and response across endpoints, identities, email, and applications to provide integrated protection against sophisticated attacks.
 
 With the integrated Microsoft 365 Defender solution, security professionals can stitch together the threat signals that each of these products receive and determine the full scope and impact of the threat; how it entered the environment, what it's affected, and how it's currently impacting the organization. Microsoft 365 Defender takes automatic action to prevent or stop the attack and self-heal affected mailboxes, endpoints, and user identities.
@@ -114,7 +111,7 @@ This single pane of glass brings together functionality from existing Microsoft 
 
 - **[Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)** Microsoft Defender for Office 365 helps organizations secure their enterprise with a set of prevention, detection, investigation and hunting features to protect email, and Office 365 resources.
 - **[Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection)** delivers preventative protection, post-breach detection, automated investigation, and response for devices in your organization.
-- **[Microsoft 365 Defender](microsoft-365-defender.md)** is part of Microsoft’s *Extended Detection and Response* (XDR) solution that leverages the Microsoft 365 security portfolio to automatically analyze threat data across domains, and build a picture of an attack on a single dashboard.
+- **[Microsoft 365 Defender](microsoft-365-defender.md)** is part of Microsoft's *Extended Detection and Response* (XDR) solution that leverages the Microsoft 365 security portfolio to automatically analyze threat data across domains, and build a picture of an attack on a single dashboard.
 - **[Microsoft Defender for Cloud Apps](/cloud-app-security/)** is a comprehensive cross-SaaS and PaaS solution bringing deep visibility, strong data controls, and enhanced threat protection to your cloud apps.
 
 If you need information about what's changed from the Office 365 Security & Compliance center or the Microsoft 365 Defender portal, see:
@@ -213,7 +210,7 @@ You can search across the following entities in Defender for Endpoint and Defend
 - **Files, IPs, and URLs** - same capabilities as in Defender for Endpoint.
 
     >[!NOTE]
-    >IP and URL searches are exact match and don’t appear in the search results page – they lead directly to the entity page. 
+    >IP and URL searches are exact match and don't appear in the search results page – they lead directly to the entity page. 
 
 - **TVM** -  same capabilities as in Defender for Endpoint (vulnerabilities, software, and recommendations). 
 
@@ -239,7 +236,7 @@ Track and respond to emerging threats with the following Microsoft 365 Defender 
 
 Inside the learning hub, Email & Collaboration (Microsoft Defender for Office 365) guidance is side-by-side with Endpoint (Microsoft Defender for Endpoint) and Microsoft 365 Defender learning resources.
 
-The learning hub opens with Learning paths organized around topics such as “How to Investigate Using Microsoft 365 Defender?” and “Microsoft Defender for Office 365 Best Practices”. This section is currently curated by the security Product Group inside Microsoft. Each Learning path reflects a projected time it takes to get through the concepts. For example 'Steps to take when a Microsoft Defender for Office 365 user account is compromised' is projected to take 8 minutes, and is valuable learning on the fly.
+The learning hub opens with Learning paths organized around topics such as "How to Investigate Using Microsoft 365 Defender?" and "Microsoft Defender for Office 365 Best Practices". This section is currently curated by the security Product Group inside Microsoft. Each Learning path reflects a projected time it takes to get through the concepts. For example 'Steps to take when a Microsoft Defender for Office 365 user account is compromised' is projected to take 8 minutes, and is valuable learning on the fly.
 
 After clicking through to the content, it may be useful to bookmark this site and organize bookmarks into a 'Security' or 'Critical' folder. To see all Learning paths, click the Show all link in the main panel.
 

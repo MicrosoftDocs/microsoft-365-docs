@@ -74,7 +74,7 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 
 ## November 2021
 
-- [Security configuration management](security-config-management.md) <br/> A capability for devices that aren’t managed by a Microsoft Endpoint Manager, either Microsoft Intune or Microsoft Endpoint Configuration Manager, to receive security configurations for Microsoft Defender directly from Endpoint Manager.
+- [Security configuration management](security-config-management.md) <br/> A capability for devices that aren't managed by a Microsoft Endpoint Manager, either Microsoft Intune or Microsoft Endpoint Configuration Manager, to receive security configurations for Microsoft Defender directly from Endpoint Manager.
 
 - Enhancements to cross-platform support.
 

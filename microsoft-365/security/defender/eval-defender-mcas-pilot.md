@@ -39,7 +39,6 @@ Use the following steps to set up and configure the pilot for Microsoft Defender
 - [Step 2. Configure protection—Conditional Access App Control](#step-2-configure-protectionconditional-access-app-control)
 - [Step 3. Try out capabilities—Walk through tutorials for protecting your environment](#step-3-try-out-capabilitieswalk-through-tutorials-for-protecting-your-environment) 
 
-
 ## Step 1. Create the pilot group—Scope your pilot deployment to certain user groups
 
 Microsoft Defender for Cloud Apps enables you to scope your deployment. Scoping allows you to select certain user groups to be monitored for apps or excluded from monitoring. You can include or exclude user groups. To scope your pilot deployment, see [Scoped Deployment](/cloud-app-security/scoped-deployment).

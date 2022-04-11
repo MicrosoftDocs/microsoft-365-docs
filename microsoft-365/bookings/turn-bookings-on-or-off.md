@@ -14,6 +14,11 @@ description: "Learn how to get access to Microsoft Bookings in Microsoft 365."
 
 # Turn Microsoft Bookings on or off
 
+> [!NOTE]
+> This article helps you to interact with the latest version of Microsoft Bookings. Previous versions will be retired in coming months.
+
+This article is for admins. 
+
 Bookings can be turned on or off for your entire organization or for specific users. When you turn on Bookings for users, they can create a Bookings page, create a calendar, and allow other people to book time with them.
 
 > [!NOTE]
@@ -40,13 +45,15 @@ To turn Bookings on or off for your organization using the PowerShell cmdlet [Se
    Set-OrganizationConfig -BookingsEnabled $false
 ```
 
+### Granular controls
+
 Use the settings below to control who can use Bookings, decide on what Bookings information is shared and whether staff need approval before they can be added to a Booking calendar.
 
 :::image type="content" source="../media/control-access-sharing-bookings.png" alt-text="Screenshot: Settings that allow you to control who can use Bookings, decide what Bookings info is shared and staff approval":::
 
 ### Block bookings from outside your organization
 
-You can set up Bookings so only people in your organization can book appointments. Only users in your organization who've signed and are authenticated can book appointments.
+You can set up Bookings so only people in your organization can book appointments. Only users in your organization who've signed in and are authenticated can book appointments.
 
 ### Block social sharing options
 
