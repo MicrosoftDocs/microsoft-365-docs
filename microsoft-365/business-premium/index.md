@@ -47,9 +47,9 @@ In these first missions, you're going to have to sign in and set up your initial
 
 ## Cybersecurity Playbook
 
-The guidance in this library helps your business achieve the goals described in the Harvard Kennedy School  [Cybersecurity Campaign Handbook](https://go.microsoft.com/fwlink/p/?linkid=2015598). A summary of this library guidance for Microsoft 365 Business Premium is available for you to download.
+The guidance in these missions helps your business achieve the goals described in the Harvard Kennedy School  [Cybersecurity Campaign Handbook](https://go.microsoft.com/fwlink/p/?linkid=2015598). A summary is available for you to download.
 
-A summary of this library guidance for Microsoft 365 Business Premium is available for you to download. Download link coming soon!
+Download link coming soon!
 
 :::image type="content" source="../media/m365bp-cyber-security-playbook.png" alt-text="The Cyber Security Playbook" lightbox="../media/m365bp-cyber-security-playbook.png":::
 
@@ -70,9 +70,9 @@ We've included a set of missions here with some objectives that need to be compl
 
 ## Cybersecurity Playbook
 
-The guidance in this library helps your business achieve the goals described in the Harvard Kennedy School  [Cybersecurity Campaign Handbook](https://go.microsoft.com/fwlink/p/?linkid=2015598). A summary of this library guidance for Microsoft 365 Business Premium is available for you to download.
+The guidance in these missions helps your business achieve the goals described in the Harvard Kennedy School  [Cybersecurity Campaign Handbook](https://go.microsoft.com/fwlink/p/?linkid=2015598). A summary is available for you to download.
 
-A summary of this library guidance for Microsoft 365 Business Premium is available for you to download. Download link coming soon!
+Download link coming soon!
 
 :::image type="content" source="../media/m365bp-cyber-security-playbook.png" alt-text="The Cyber Security Playbook" lightbox="../media/m365bp-cyber-security-playbook.png":::
 
@@ -89,9 +89,9 @@ A safe device is one that is monitored by the organization. In this last critica
 
 ## Cybersecurity Playbook
 
-The guidance in this library helps your business achieve the goals described in the Harvard Kennedy School  [Cybersecurity Campaign Handbook](https://go.microsoft.com/fwlink/p/?linkid=2015598). A summary of this library guidance for Microsoft 365 Business Premium is available for you to download.
+The guidance in these missions helps your business achieve the goals described in the Harvard Kennedy School  [Cybersecurity Campaign Handbook](https://go.microsoft.com/fwlink/p/?linkid=2015598). A summary is available for you to download.
 
-A summary of this library guidance for Microsoft 365 Business Premium is available for you to download. Download link coming soon!
+Download link coming soon!
 
 :::image type="content" source="../media/m365bp-cyber-security-playbook.png" alt-text="The Cyber Security Playbook" lightbox="../media/m365bp-cyber-security-playbook.png":::
 
