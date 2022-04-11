@@ -72,7 +72,7 @@ Here are some examples of enhanced DLP policies that use named entity SITs. You 
 
 ## Next steps
 
-- [Use named entities in your data loss prevention policies (preview)](named-entities-use.md)
+- [Use named entities in your data loss prevention policies](named-entities-use.md)
 
 
 ## For further information
