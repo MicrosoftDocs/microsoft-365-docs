@@ -106,14 +106,11 @@ To create or edit a DLP policy, use the procedures in [Create, test, and tune a 
 
 Here are some practices you can use when you create or edit a policy that uses a named entity SIT.
 
-1. Consider the data type and format of the data file being classified, as well as the regulatory requirements. For a “strongly defined” SIT such as SSN, it’s best to use a lower instance count in the policy. For example, if you are trying to detect a list of US Social Security Numbers (SSNs) in structured data such as a spreadsheet, then it’s best to define a policy that is optimized for the confidence and frequency of occurrences. In this case, requiring a minimum instance count of 3 or 5 instances would be best as opposed to a larger instance count, because if a keyword required by the SSN definition were only present in the column header, then only the first few SSNs in the column would likely be found in the required character proximity of the keyword corroborative evidence. Requiring a larger instance count (e.g., 100 or even 500) would likely cause the policy not to match.
- 
+- When you're looking for data that's in a spreadsheet and the keyword is only in the column header, use low instance counts, like three to five instances. For example, let's say you're looking for US Social Security numbers, and the keyword `Social Security Number` only occurs in the column header. Since the values (the corroborative evidence) is in the cells below, it's likely that only the first few instances would be in close enough proximity to the keyword to be detected.  
 
-2.    For a named entity SIT, such as All Full Names, it’s best to set a larger instance count such as 10 or 50. If both the person names and the SSNs are detected together, it’s more likely that the SSNs are truly SSNs, and we reduce the risk that the policy doesn’t trigger because not enough SSNs are detected.
+- If you are using a named entity SIT, like All Full Names, to help find US Social Security numbers, use larger instance counts such as 10 or 50. Then when both the person names and the SSNs are detected together, you're more likely to get getting true positives.
 
- 
-
-3.    Auto-labeling simulations can be leveraged to further fine tune accuracy by adjusting the instance counts and confidence levels defined in your custom policies or the enhanced template conditions across simulations, before enabling in production a DLP or auto-labeling policy containing named entities.
+-     Auto-labeling simulations can be leveraged to further fine tune accuracy by adjusting the instance counts and confidence levels defined in your custom policies or the enhanced template conditions across simulations, before enabling in production a DLP or auto-labeling policy containing named entities.
 
 1)	Identify the SIT or combination of SITs you want to test in simulation mode, either custom or cloned and edited.
 2)	Identify or create a sensitivity label to be applied when the auto-labeling policy finds a match in Exchange, SharePoint sites, or OneDrive accounts.
