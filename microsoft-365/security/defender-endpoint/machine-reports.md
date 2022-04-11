@@ -123,7 +123,7 @@ The remaining six cards report the Microsoft Defender Antivirus status for devic
 
 > [!NOTE]
 >
-> Up-to-date reporting information will be available for Windows devices with engine version: 19000.1 and newer.
+> Up-to-date" reporting is currently available for Windows devices only. Up-to-date reporting will generate information about Windows devices with engine version: 19000.1 and newer.
 
 #### Card functionality
 
