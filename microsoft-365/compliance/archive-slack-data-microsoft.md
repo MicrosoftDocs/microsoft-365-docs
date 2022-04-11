@@ -42,7 +42,7 @@ The following overview explains the process of using a Microsoft data connector 
 
 ## Step 1: Create a Slack eDiscovery connector
 
-1. Go to <https://compliance.microsoft.com> and click **Data connectors** on the left navigation pane.
+1. Go to <https://compliance.microsoft.com> and click **Data connectors** on the left navigation pane.
 
 2. On the **Overview** tab, click **Filter** and select **By Microsoft**, and then apply the filter.
 
