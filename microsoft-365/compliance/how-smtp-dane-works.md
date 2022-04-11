@@ -191,8 +191,8 @@ When troubleshooting, the below error codes may be generated:
 
 This usually indicates an issue with the destination mail server. The mail server that the Remote Connectivity Analyzer is testing connecting with. There are generally two scenarios that generate this code:
 
-1.	The destination mail server doesn't support secure communication at all, and plain, non-encrypted communication must be used.
-2.	The destination server is configured improperly and ignores the STARTTLS command.
+1. The destination mail server doesn't support secure communication at all, and plain, non-encrypted communication must be used.
+2. The destination server is configured improperly and ignores the STARTTLS command.
 
 After receiving the message:
 
