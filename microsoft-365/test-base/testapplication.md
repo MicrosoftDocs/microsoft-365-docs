@@ -29,12 +29,15 @@ In the [Azure portal](http://portal.azure.com/), go to the Test Base account in 
   <br/>
   
 **Step 1. Define content**
-1. In the **Package source** section, choose your package source. If you have an Intunewin app, select Intunewin, for others, e.g. exe or msi, select Binaries,
+1. In the **Package source** section, choose your package source. If you have an Intunewin app, select Intunewin, for others, e.g. exe or msi, select Binaries, <br/>
   ![Choose your package source](Media/testapplication02.png)
 2. Then upload your app file by clicking ‘Select file’ button or checking the box to use the Test Base sample template as a starting point if you don’t have your file ready yet.
   ![Select file](Media/testapplication03.png)
-3. Type in your package’s name and version in the **Basic information** section. Note: The combination of package name and version must be unique within your Test Base account.
+3. Type in your package’s name and version in the **Basic information** section.  
+  > [!Note] The combination of package name and version must be unique within your Test Base account.
+  
   ![Enter basic information](Media/testapplication04.png)
+  
 4. Once all required info is filled out, you can move to step 2 by clicking the Next button at the bottom.
   ![Next step](Media/testapplication05.png)
   <br/>
@@ -54,13 +57,14 @@ In the [Azure portal](http://portal.azure.com/), go to the Test Base account in 
 3. Once all required info is filled out, you can move to step 3 by clicking the Next button at the bottom. A notification will pop-up when the test scripts are generated successfully.<br/>
   ![Generate script prompts](Media/testapplication08.png)
   <br/>
-  
+
+
 **Step 3. Edit package**
 1. In the Edit package tab, you can 
-  - check your package folder and file structure in Package Preview, 
-  - edit your scripts online with the PowerShell code editor.
+  - check your package folder and file structure in **Package Preview**, 
+  - edit your scripts online with the **PowerShell code editor**.
   ![edit scripts online](Media/testapplication09.png)
-2. In the Package Preview, per your need, you can 
+2. In the **Package Preview**, per your need, you can 
   - create a new folder, 
   - create a new script, 
   - upload a new file. <br/>
