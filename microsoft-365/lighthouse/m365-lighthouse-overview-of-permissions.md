@@ -48,8 +48,8 @@ The following table lists the actions that the recommended GDAP roles&mdash;as a
 | Threat management  | <ul><li>View all data</li></ul> | <ul><li>View all data</li></ul> | <ul><li>View all data</li></ul> | <ul><li>View all data</li><li>Run full scan</li><li>Run quick scan</li><li>Update antivirus protection</li><li>Reboot device</li></ul>|
 | Baselines    | <ul><li>View all data</li></ul> | <ul><li>View all data</li></ul> | <ul><li>View all data</li></ul>  | <ul><li>View all data</li></ul> |
 | Windows 365 | <ul><li>View all data</li></ul> | <ul><li>View all data</li></ul> | <ul><li>View all data</li></ul> | <ul><li>View all data</li></ul> |
-| Service health**| N/A | N/A | N/A | N/A |
-| Audit logs**| N/A | N/A | N/A | N/A |
+| Service health**| &nbsp;&nbsp;&nbsp;&nbsp;N/A | &nbsp;&nbsp;&nbsp;&nbsp;N/A | &nbsp;&nbsp;&nbsp;&nbsp;N/A | &nbsp;&nbsp;&nbsp;&nbsp;N/A |
+| Audit logs**| &nbsp;&nbsp;&nbsp;&nbsp;N/A | &nbsp;&nbsp;&nbsp;&nbsp;N/A | &nbsp;&nbsp;&nbsp;&nbsp;N/A | &nbsp;&nbsp;&nbsp;&nbsp;N/A |
 
 *See [Password reset permissions](/azure/active-directory/roles/permissions-reference#password-reset-permissions) for a table that lists which roles are required to reset passwords for customer tenant administrators.
 
