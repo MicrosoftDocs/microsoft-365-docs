@@ -48,7 +48,7 @@ CellTrust's SL2 platform captures communication data from multiple sources. SL2 
 
 The first step is to create a data connector in the Microsoft 365 compliance center.
 
-1. Go to <https://compliance.microsoft.com> and click **Data connectors** on the left navigation pane.
+1. Go to <https://compliance.microsoft.com> and click **Data connectors** on the left navigation pane.
 
 2. On the **Overview** tab, click **Filter** and select **By CellTrust**, and then apply the filter.
 
