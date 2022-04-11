@@ -1,5 +1,5 @@
 ---
-title: Submit suspicious files in Microsoft Defender for Endpoint
+title: Submit files in Microsoft Defender for Endpoint
 description: Learn how to use the unified submissions feature in Microsoft 365 Defender to submit suspicious emails, URLs, email attachments, and files to Microsoft for scanning.
 keywords: antivirus, spam, phish, file, alert, Microsoft Defender for Endpoint, false positive, false negative, blocked file, blocked url, submission, submit, report
 search.product: eADQiWindows 10XVcnh
@@ -24,7 +24,7 @@ ms.collection:
 ms.custom: FPFN
 ---
 
-# Submit suspicious files in Microsoft Defender for Endpoint
+# Submit files in Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
