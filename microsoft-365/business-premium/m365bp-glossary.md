@@ -36,9 +36,10 @@ description: "Glossary of terms for Microsoft 365 Business Premium"
 |antivirus |Helps you remove viruses and other types of malicious programs from your computer or laptop by detecting and removing them.|
 |backdoor |A type of malware that gives malicious hackers remote access to and control of your device.|
 |BYODs |Bring-your-own devices (BYODs) are laptops, PCs, tablets and mobile phones that are personally owned by members of the organization, and therefore, not managed by the organization. |
-|cyber attack |An attack from cyber space. (See cyber space.) |
+|cyberattack |An attack from cyber space. (See cyber space.) |
 |cyber security |Maintenance and implementation of security defenses to protect the networks of businesses or organizations against cyber attack. |
-|cyber space |The concept of widespread interconnected digital technology, made up of computers and networks and the communication between them. |
+|cybercrime |Participating in the destruction or theft of data and information by means of computers or the internet.|
+|cyberspace |The concept of widespread interconnected digital technology, made up of computers and networks and the communication between them. |
 |data exfiltration |Data files that are stolen and sent outside the network through email or other means. |
 |Defender |Microsoft's antivirus software, Microsoft Defender antivirus. |
 |Device Group |A device group is a collection of devices that are grouped together because of certain specified criteria, such as operating system version. Devices that meet the criteria are included in that device group, unless you exclude them. In Microsoft 365 Business Premium (and Defender for Business), Device groups are stored in Azure Active Directory. |
@@ -57,6 +58,7 @@ description: "Glossary of terms for Microsoft 365 Business Premium"
 |Secure Score |Microsoft Secure Score is a measurement of an organization's security posture, with a higher number indicating more improvement actions taken. You can find Secure Score in the Microsoft 365 Defender portal (at https://security.microsoft.com/securescore). |
 |spam |When large numbers of pieces of content are sent to a large number of recipients, usually through email, and often containing malware.  |
 |spoofing |When a sender spoofs an email address, and they appear to be a user in one of your organization's domains, or a user in an external domain that sends email to your organization. |
+|spyware |software with that aims to gather information about a person or organization and send it to another entity in a way that harms the user. |
 |tenant |A unique dedicated instance of the services of Microsoft 365 and your organization data, stored within a specific default location such as Europe or North America. This location is specified when you create the tenant for your organization. |
 |threat landscape |The threat landscape is the realm of aggressive and tenacious threats, with attackers who have shifted their efforts from gaining recognition towards making money, such as by holding devices and data hostage until the owner pays the demanded ransom. Modern attacks increasingly focus on large-scale intellectual property theft, targeted system degradation that can result in financial loss, and cyberterrorism that threatens the security of individuals, businesses, and national interests all over the world. These attackers are typically highly-trained individuals and security experts, some of whom are in the employ of nation states that have large budgets and seemingly unlimited human resources. |
 |trojan horse |A type of malware that attempts to appear harmless. Unlike a virus or a worm, a trojan doesn't spread by itself. Instead, it tries to look legitimate to trick users into downloading and installing it. Once installed, trojans perform various malicious activities such as stealing personal information, downloading other malware, or giving attackers access to your device. |
