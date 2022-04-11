@@ -29,8 +29,7 @@ Compliance Manger can alert you to changes as soon as they happen so that you ca
 
 To create alerts, you first set up an alert policy to outline the conditions that trigger an alert and the frequency of notifications. When we detect a match to your policy conditions, you'll receive an email notification with details so you can determine whether to investigate or take further action.
 
-
-All alerts are listed on the **Alerts** tab in Compliance Manger, and all alert policies are listed on the **Alert Policies tab**.
+All alerts are listed on the **Alerts** tab in Compliance Manger, and all alert policies are listed on the **Alert Policies tab**.  All organizations have a [default score change policy](#default-score-change-policy) already set up for them.
 
 ## Understanding the Alerts and Alert policies pages
 
@@ -88,6 +87,11 @@ You can create policies to alert you when certain changes or events related to i
 - **Implementation status change**: a user has changed an improvement action's implementation status.
 - **Test status change**: a user has changed the testing status of an improvement action.
 - **Evidence change**: a user has uploaded or deleted an evidence document in the **Documents** tab of the improvement action.
+
+#### Default score change policy
+
+Compliance Manager sets up a default alert policy to monitor for score changes in improvement actions. The default policy will generate an alert each time an improvement action's score changes.
+Alerts carry a severity of medium, and email notifications are sent each time a match is detected. Most settings for the default policy can't be edited, but you can add additional recipients for notifications.
 
 ### Policy creation steps
 
