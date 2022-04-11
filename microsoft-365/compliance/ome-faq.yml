@@ -6,9 +6,9 @@ metadata:
   ms.author: krowley
   author: kccross
   manager: laurawi
-  ms.date: 07/14/2021
+  ms.date: 04/01/2022
   audience: ITPro
-  ms.topic: overview
+  ms.topic: faq
   ms.service: O365-seccomp
   ms.localizationpriority: medium
   search.appverid:
@@ -16,7 +16,6 @@ metadata:
   ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
   description: "Have a question about how the new message protection capabilities work? Check for an answer here."
   ms.custom: seo-marvel-apr2020
-    
 title: Message Encryption FAQ
 summary: |
   Have a question about how the new message protection capabilities work? Check for an answer here. Also, take a look at [Frequently asked questions about data protection in Azure Information Protection](/information-protection/get-started/faqs-rms) for answers to questions about the data protection service, Azure Rights Management, in Azure Information Protection.
@@ -120,6 +119,11 @@ sections:
           Is there a size limit for messages you can send with OME?
         answer: |
           Yes. The maximum message size you can send with OME, including attachments, is 25 MB. For more information, see [Message limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits-1).
+          
+      - question: |
+          What type of messages does the OME portal support?
+        answer: |
+          The OME portal only supports mail. The portal doesn't support other message types such as calendar or voice mail.
           
       - question: |
           What file types are supported as attachments in protected emails? Do attachments inherit the protection policies associated with protected emails?

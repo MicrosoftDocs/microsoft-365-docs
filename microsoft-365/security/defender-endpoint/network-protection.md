@@ -15,7 +15,9 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: overview
-ms.collection: m365initiative-m365-defender
+ms.collection: 
+- m365initiative-m365-defender
+- M365-security-compliance
 ms.date:
 ---
 
@@ -135,7 +137,11 @@ For Windows 10 Enterprise Multi-Session 1909 and up, used in Windows Virtual Des
 
 1. Use [Turn on network protection](enable-network-protection.md) and follow the instructions to apply your policy.
 
-2. Execute the following PowerShell command: `Set-MpPreference -AllowNetworkProtectionOnWinServer 1`
+2. Execute the following PowerShell commands:
+  - `Set-MpPreference -EnableNetworkProtection Enabled`
+  - `Set-MpPreference -AllowNetworkProtectionOnWinServer 1`
+  - `Set-MpPreference -AllowNetworkProtectionDownLevel 1`
+  - `Set-MpPreference -AllowDatagramProcessingOnWinServer 1`
 
 ## Network protection troubleshooting
 

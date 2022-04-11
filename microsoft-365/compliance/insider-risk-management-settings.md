@@ -32,6 +32,7 @@ Insider risk management settings apply to all insider risk management policies, 
 - Power Automate flows (preview)
 - Microsoft Teams (preview)
 - Analytics
+- Admin notifications
 
 Before you get started and create insider risk management policies, it's important to understand these settings and choose setting levels best for the compliance needs for your organization.
 
@@ -526,7 +527,7 @@ Analytics scans for risk activity events from several sources to help identify i
 - **Azure Active Directory**: Included in all scans, Azure Active Directory history helps identify risky activities associated with users with deleted user accounts.
 - **Microsoft 365 HR data connector**: If configured, HR connector events help identify risky activities associated with users that have resignation or upcoming termination dates.
 
-Analytics insights from scans are based on the same risk activity signals used by insider risk management policies and report results based on both single and sequence user activities. However, the risk scoring for analytics is based on up to 30 days of activity while insider risk policies use daily activity for insights. When you first enable and run analytics in your organization, you'll see the scan results for one day. If you leave analytics enabled, you'll see the results of each daily scan added to the insight reports for a maximum range of the previous 30 days of activity.
+Analytics insights from scans are based on the same risk activity signals used by insider risk management policies and report results based on both single and sequence user activities. However, the risk scoring for analytics is based on up to 10 days of activity while insider risk policies use daily activity for insights. When you first enable and run analytics in your organization, you'll see the scan results for one day. If you leave analytics enabled, you'll see the results of each daily scan added to the insight reports for a maximum range of the previous 10 days of activity.
 
 ### Enable analytics and start your scan
 
@@ -541,7 +542,9 @@ Complete the following steps to enable insider risk analytics:
 
 ### Viewing analytics insights and creating new policies
 
-After the first analytics scan is complete for your organization, you can view the insights and recommendations for potentially risky activities by your users. Daily scans will continue unless you turn off analytics for your organization. To view potential risks for your organization, go to the **Overview** tab and select **View results** on the **Insider risk analytics** card. If the scan for your organization isn't complete, you'll see a message that the scan is still active.
+After the first analytics scan is complete for your organization, members of the *Insider Risk Management Admin* role group will automatically receive an email notification and can view the initial insights and recommendations for potentially risky activities by your users. Daily scans continue unless you turn off analytics for your organization. Email notifications to admins are provided for each of the three in-scope categories for analytics (data leaks, theft, and exfiltration) after the first instance of activity in your organization. Email notifications aren't sent to admins for follow-up activity detection resulting from the daily scans. If analytics in **Insider risk management** > **Settings** > **Analytics** are disabled and then re-enabled in your organization, automatic email notifications are reset and emails are sent to members of the *Insider Risk Management Admin* role group for new scanning insights.
+
+To view potential risks for your organization, go to the **Overview** tab and select **View results** on the **Insider risk analytics** card. If the scan for your organization isn't complete, you'll see a message that the scan is still active.
 
 ![Insider risk management analytics report ready card.](../media/insider-risk-analytics-ready-card.png)
 
@@ -569,13 +572,21 @@ Complete the following steps to turn off insider risk analytics:
 
 ## Admin notifications
 
-Admin notifications automatically send an email notification to users included in the *Insider Risk Management*, *Insider Risk Management Analysts*, and *Insider Risk Management Investigators* role groups when the first alert is generated for a new policy. This is enabled by default for all organizations and policies are checked every 24 hours for first-time alerts. Notifications aren't sent for any alerts that occur in policies after the first alert.
+Admin notifications automatically send an email notification to selectable insider risk management role groups. You can enable notifications and assign which role groups will receive the notifications for the following scenarios:
 
-If you prefer to disable admin notifications, complete the following steps:
+- Send a notification email when the first alert is generated for a new policy. Policies are checked every 24 hours for first-time alerts and notifications are not sent on subsequent alerts for the policy.
+- Send a daily email when new high severity alerts are generated. Policies are checked every 24 hours for high severity alerts.
+- Send a weekly email summarizing policies that have unresolved warnings
+
+If you've enabled insider risk management analytics for your organization, members of the *Insider Risk Management Admin* role group automatically receive an email notification for initial analytics insights for data leaks, theft, and exfiltration activities.
+
+If you prefer to disable admin and analytics notifications, complete the following steps:
 
 1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** > **Insider risk settings**.
 2. Select the **Admin notifications** page.
-3. Clear the **Send a notification email when the first alert is generated for a new policy** checkbox.
-4. Select **Save** to configure and exit.
+3. Clear the check box for the following options as applicable:
+    - **Send a notification email when the first alert is generated for a new policy**
+    - **Send an email notification when a new insight is available in Analytics**
+    - **Send an email notification when Analytics is turned off**
 
-![Insider risk management admin notifications settings.](../media/insider-risk-admin-notifications.png)
+4. Select **Save** to configure and exit.

@@ -18,7 +18,7 @@ description: "Use eDiscovery and search tools to manage and respond to a data sp
 
 # eDiscovery solution series: Data spillage scenario - Search and purge
 
- **What is data spillage and why should you care?** Data spillage is when a confidential document is released into an untrusted environment. When a data spillage incident is detected, it's important to quickly assess the size and locations of the spillage, examine user activities around it,  and then permanently purge the spilled data from the system. 
+ **What is data spillage and why should you care?** Data spillage is when a confidential document is released into an untrusted environment. When a data spillage incident is detected, it's important to quickly assess the size and locations of the spillage, examine user activities around it, and then permanently purge the spilled data from the system.
   
 ## Data spillage scenario
 
@@ -81,8 +81,6 @@ To create a content search associated with an eDiscovery case, see [Search for c
 After you create a content search, you need to review and validate that the search results and verify that they consist only of the email messages that must be deleted. In a content search, you can preview a random sampling of 1,000 email messages without exporting the search results to avoid further data spillage. You can read more about the preview limitations at [Limits for Content Search](limits-for-content-search.md).
   
 If you have more than 1,000 mailboxes or more than 100 email messages per mailbox to review, you can divide the initial search into multiple searches by using additional keywords or conditions such as date range or sender/recipient and review the results of each search individually. Make sure to note down all search queries to use when you delete messages in [Step 7](#step-7-permanently-delete-the-spilled-data).
-
-If a custodian or end user is assigned an Office 365 E5 license, you can examine up to 10,000 search results at once using Advanced eDiscovery. If there are more than 10,000 email messages to review, you can divide the search query by date range and review each result individually as search results are sorted by date. In Advanced eDiscovery, you can tag search results using the **Label as** feature in the preview panel and filter the search result by the tag you labeled. This is helpful when you collaborate with a secondary reviewer. By using additional analytics tools in Advanced eDiscovery, such as optical character recognition, email threading, and predictive coding, you can quickly process and review thousands of messages and tag them for further review. See [Quick setup for Advanced eDiscovery](./get-started-with-advanced-ediscovery.md).
 
 When you find an email message that contains spilled data, check the recipients of the message to determine if it was shared externally. To further trace a message, you can collect sender information and date ranges so you can use the message trace logs. This process is described in [Step 5](#step-5-use-message-trace-log-to-check-how-spilled-data-was-shared).
 
