@@ -133,6 +133,7 @@ On New package page, there is a list of saved draft packages if have. You can co
 If you have a Zip file already, you can switch back to the legacy package upload experience (zip upload). Learn more about the Zip upload [Upload your package | Microsoft Docs](uploadApplication.md). 
 
   ![Upload package](Media/testapplication20.png)
+  ![Legacy upload experience](Media/testapplication21.png)
   <br/>
   
   
