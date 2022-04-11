@@ -178,7 +178,7 @@ The Microsoft Defender Antivirus feature must be installed and running version 4
 If you intend to use a third-party antimalware solution, you'll need to run Microsoft Defender Antivirus in passive mode. You must remember to set to passive mode during the installation and onboarding process.
 
 > [!NOTE]
-> If you're installing Microsoft Defender for Endpoint on Servers with McAfee Endpoint Security (ENS) or VirusScan Enterprise (VSE), the version of the McAfee platform may need to be updated to ensure Defender is not removed or disabled.  See this [McAfee Knowledge Center article](https://kc.mcafee.com/corporate/index?page=content&id=KB88214) for more information including the specific version numbers required.
+> If you're installing Microsoft Defender for Endpoint on Servers with McAfee Endpoint Security (ENS) or VirusScan Enterprise (VSE), the version of the McAfee platform may need to be updated to ensure Microsoft Defender Antivirus is not removed or disabled. For more information including the specific version numbers required, see, [McAfee Knowledge Center article](https://kc.mcafee.com/corporate/index?page=content&id=KB88214).
 
 **New update package for Microsoft Defender for Endpoint on Windows Server 2012 R2 and 2016**
 
