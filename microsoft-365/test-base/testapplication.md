@@ -17,7 +17,7 @@ f1.keywords: NOCSH
 ---
 
 # Test your application on Test Base
-> [!NOTE] This guide will guide you to create a new Test Base package from scratch. If you already have a Test Base package (.zip) in hand, you can switch to use our legacy upload experience [Upload your package | Microsoft Docs](uploadApplication.md).
+> [!NOTE] This guide will guide you to create a new Test Base package from scratch. If you already have a Test Base package (.zip) in hand, you can switch to use our legacy upload experience [Upload your Test Base package (Zip)](uploadApplication.md).
 
 ## Prerequisites
 - A Test Base account. If you don't have one, [create a Test Base account](createAccount.md).
@@ -43,18 +43,15 @@ In the [Azure portal](http://portal.azure.com/), go to the Test Base account in 
   <br/>
   
 **Step 2. Configure test**
-1. Under Test tool, PowerShell is selected by default. While Power Automate will be available soon.
-  ![Select test tool](Media/testapplication06.png)
-  
-2. Select the **Type of test**. There’re 2 test types supported:<br/>
-  An **Out of Box (OOB) test** performs an install, launch, close, and uninstall of your package. After the install, the launch-close routine is repeated 30 times before a single uninstall is run. The OOB test provides you with standardized telemetry on your package to compare across Windows builds.
+1. Select the **Type of test**. There’re 2 test types supported:<br/>
+  An **Out of Box (OOB) test** performs an install, launch, close, and uninstall of your package. After the install, the launch-close routine is repeated 30 times before a single uninstall is run. The OOB test provides you with standardized telemetry on your package to compare across Windows builds.<br/>
   A **Functional test** would execute your uploaded test script(s) on your package. The scripts are run in the sequence you specified and a failure in a particular script will stop subsequent scripts from executing. 
 
   > [!NOTE] Out of Box test is optional now. 
 
   ![Out of Box test is optional](Media/testapplication07.png)
   
-3. Once all required info is filled out, you can move to step 3 by clicking the Next button at the bottom. A notification will pop-up when the test scripts are generated successfully.<br/>
+2. Once all required info is filled out, you can move to step 3 by clicking the Next button at the bottom. A notification will pop-up when the test scripts are generated successfully.<br/>
   ![Generate script prompts](Media/testapplication08.png)
   <br/>
 
@@ -64,13 +61,15 @@ In the [Azure portal](http://portal.azure.com/), go to the Test Base account in 
   - check your package folder and file structure in **Package Preview**, 
   - edit your scripts online with the **PowerShell code editor**.
   ![edit scripts online](Media/testapplication09.png)
+  
 2. In the **Package Preview**, per your need, you can 
   - create a new folder, 
   - create a new script, 
   - upload a new file. <br/>
   ![Create resources](Media/testapplication10.png)
+  
 3. Under **scripts folder**, sample scripts and script tags have been created for you. All script tags are editable, you can reassign them to reference your script paths. <br/>
-  If the **Out of Box test** is selected in step 2, you can see the **outofbox** folder under the scripts folder. You also have the option to add **‘Reboot after install’** tag for the Install script. <br/>
+  - If the **Out of Box test** is selected in step 2, you can see the **outofbox** folder under the scripts folder. You also have the option to add **‘Reboot after install’** tag for the Install script. <br/>
   ![Resources in outofbox folder](Media/testapplication11.png) <br/>
   
    > [!NOTE] Install, Launch and Close script tags are mandatory for the OOB test type. <br/>
