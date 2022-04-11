@@ -30,7 +30,7 @@ The Microsoft 365 Reports dashboard shows you the activity overview across the p
 ## How to get to the Microsoft Teams app usage report
 
 1. In the admin center, go to the **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> page. 
-2. From the dashboard homepage, click on the **View more** button on the Microsoft Teams activity card.
+2. From the dashboard homepage, click on the **View more** button on the Microsoft Teams activity card.
   
 ## Interpret the Microsoft Teams app usage report
 
@@ -53,6 +53,10 @@ The **Microsoft Teams device usage** report can be viewed for trends over the la
 |Chrome OS  <br/> |Selected if the user was active in the Teams desktop client on a ChromeOS computer.|
 |Linux  <br/> | Selected if the user was active in the Teams desktop client on a Linux computer.  <br/> |
 |Web  <br/> |Selected if the user was active in the Teams web client on devices.|
-|Last activity date (UTC)  <br/> |The last date (UTC) that the user participated in a Teams activity .  <br/> |
+|Last activity date (UTC)  <br/> |The last date (UTC) that the user participated in a Teams activity.  <br/> |
 |Is licensed|Selected if the user is licensed to use Teams.|
-|||
+
+## See also
+[Microsoft Teams user activity report](../activity-reports/microsoft-teams-user-activity-preview.md) 
+
+[Microsoft Teams usage activity report](../activity-reports/microsoft-teams-usage-activity.md) 

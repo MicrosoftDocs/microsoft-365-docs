@@ -46,7 +46,7 @@ The following overview explains the process of using a data connector to archive
 
 The first step is to access to the Data connectors page in the Microsoft 365 compliance center and create a 17a-4 connector for Bloomberg data.
 
-1. Go to <https://compliance.microsoft.com> and then click **Data connectors** > **Bloomberg DataParser**.
+1. Go to <https://compliance.microsoft.com> and then click **Data connectors** > **Bloomberg DataParser**.
 
 2. On the **Bloomberg DataParser** product description page, click **Add connector**.
 

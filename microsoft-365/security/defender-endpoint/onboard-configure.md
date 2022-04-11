@@ -64,7 +64,7 @@ The following table lists the available tools based on the endpoint that you nee
 The following table lists the available tools based on the endpoint that you need to onboard.
 
 ## Configure capabilities of the service
-Onboarding devices effectively enables the endpoint detection and response capability of Micorosft Defender for Endpoint.
+Onboarding devices effectively enables the endpoint detection and response capability of Microsoft Defender for Endpoint.
 
 After onboarding the devices, you'll then need to configure the other capabilities of the service. The following table lists the capabilities you can configure to get the best protection for your environment.
 
