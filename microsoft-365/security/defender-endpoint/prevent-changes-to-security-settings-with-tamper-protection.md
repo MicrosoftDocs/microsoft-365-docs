@@ -43,7 +43,7 @@ Tamper protection is available for devices that are running one of the following
 - Windows Server 2012 R2
 
 > [!NOTE]
-> Tamper protection in Windows Server 2012 R2 is available for devices that are onboarded to Microsoft Defender for Endpoint by using the modern unified solution package. For more information, see [New functionality in the modern unified solution for Windows Server 2012 R2 and 2016 Preview](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview).
+> Tamper protection in Windows Server 2012 R2 is available for devices onboarded using the modern unified solution package. For more information, see [New functionality in the modern unified solution for Windows Server 2012 R2 and 2016 Preview](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016).
 
 ## Overview
 
