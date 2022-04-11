@@ -1,7 +1,6 @@
 ---
 title: "Sensitive information type entity definitions"
 f1.keywords:
-
 - CSH
 ms.author: chrfox
 author: chrfox
@@ -11,12 +10,10 @@ audience: Admin
 search.appverid: MET150
 ms.topic: reference
 f1_keywords:
-
 - 'ms.o365.cc.UnifiedDLPRuleContainsSensitiveInformation'
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-
 - M365-security-compliance
 hideEdit: true
 feedback_system: None
@@ -17412,7 +17409,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - le numéro de swift
 - swift numéro d'acheminement
 - le numéro BIC
-- # BIC
+- \# BIC
 - code identificateur de banque
 - SWIFTコード
 - SWIFT番号

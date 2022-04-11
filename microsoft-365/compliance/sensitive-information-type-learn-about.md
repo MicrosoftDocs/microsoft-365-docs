@@ -48,7 +48,7 @@ These SITs are created by Microsoft show up in the compliance console by default
 
 ### Named entity sensitive information types
 
-Named entity SITs also show up in the compliance console by default. They detect person names, physical addresses, and medical terms and conditions. They cannot be edited or copied. See, [Learn about named entities (preview)](named-entities-learn.md#learn-about-named-entities-preview) for more information. Named entity SITs come in two types:
+Named entity SITs also show up in the compliance console by default. They detect person names, physical addresses, and medical terms and conditions. They cannot be edited or copied. See, [Learn about named entities ](named-entities-learn.md#learn-about-named-entities) for more information. Named entity SITs come in two types:
 
 **un-bundled**
 
