@@ -33,7 +33,7 @@ Integrating Microsoft Defender for Office 365 with Microsoft Defender for Endpoi
 
 The following image depicts what the **Devices** tab looks like when you have Microsoft Defender for Endpoint integration enabled:
 
-![When Microsoft Defender for Endpoint is enabled, you can see a list of devices with alerts.](../../media/fec928ea-8f0c-44d7-80b9-a2e0a8cd4e89.PNG)
+:::image type="content" source="../../media/fec928ea-8f0c-44d7-80b9-a2e0a8cd4e89.PNG" alt-text="A list of devices with alerts" lightbox="../../media/fec928ea-8f0c-44d7-80b9-a2e0a8cd4e89.PNG":::
 
 In this example, you can see that the recipients of the detected email message have four devices and one has an alert. Clicking the link for a device opens its page in the [Microsoft 365 Defender portal](/microsoft-365/security/defender/microsoft-365-defender).
 
@@ -60,7 +60,7 @@ Integrating Microsoft Defender for Office 365 with Microsoft Defender for Endpoi
 
 3. In the **Microsoft Defender for Endpoint connection** flyout that appears, turn on **Connect to Microsoft Defender for Endpoint** (![Toggle on.](../../media/scc-toggle-on.png)) and then select **Close**.
 
-    :::image type="content" source="../../media/explorer-mdeconnection-dialognew.png" alt-text="MDE Connection.":::
+   :::image type="content" source="../../media/explorer-mdeconnection-dialognew.png" alt-text="The MDE Connection page" lightbox="../../media/explorer-mdeconnection-dialognew.png":::
 
 4. In the navigation pane, choose **Settings**. On the **Settings** page, choose **Endpoints**
 
