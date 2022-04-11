@@ -110,14 +110,15 @@ Here are some practices you can use when you create or edit a policy that uses a
 
 - If you are using a named entity SIT, like All Full Names, to help find US Social Security numbers, use larger instance counts such as 10 or 50. Then when both the person names and the SSNs are detected together, you're more likely to get getting true positives.
 
--     Auto-labeling simulations can be leveraged to further fine tune accuracy by adjusting the instance counts and confidence levels defined in your custom policies or the enhanced template conditions across simulations, before enabling in production a DLP or auto-labeling policy containing named entities.
+- You can use Auto-labeling simulations to see what items a named entity SIT finds. With this information you can fine tune accuracy by adjusting the instance counts and confidence levels in your custom policies or the enhanced template conditions. You can iterate simulations until the accuracy is where you want it, before deploying a DLP or auto-labeling policy containing named entities in production. Here's an overview of the flow:
 
-1)	Identify the SIT or combination of SITs you want to test in simulation mode, either custom or cloned and edited.
-2)	Identify or create a sensitivity label to be applied when the auto-labeling policy finds a match in Exchange, SharePoint sites, or OneDrive accounts.
-3)	Create an sensitivity auto-labeling policy that uses the SIT from step 1 and with same Conditions and Exceptions that will be used in your DLP policy
-4)	Run the policy simulation
-5)	View the results
-6)	Tune the SIT and the instance count and confidence levels to reduce false positives.
+1. Identify the SIT or combination of SITs you want to test in simulation mode, either custom or cloned and edited.
+1. Identify or create a sensitivity label to be applied when the auto-labeling policy finds a match in Exchange, SharePoint sites, or OneDrive accounts.
+1. Create an sensitivity auto-labeling policy that uses the SIT from step 1 and with same Conditions and Exceptions that will be used in your DLP policy
+1. Run the policy simulation
+1. View the results
+1. Tune the SIT or policy and the instance count and confidence levels to reduce false positives.
+1. Repeat until you get the accuracy results you want.
 
 
 ## For further information
