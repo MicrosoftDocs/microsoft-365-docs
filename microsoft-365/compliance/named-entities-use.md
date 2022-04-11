@@ -110,7 +110,7 @@ Here are some practices you can use when you create or edit a policy that uses a
 
 - If you are using a named entity SIT, like All Full Names, to help find US Social Security numbers, use larger instance counts such as 10 or 50. Then when both the person names and the SSNs are detected together, you're more likely to get getting true positives.
 
-- You can use Auto-labeling simulations to see what items a named entity SIT finds. With this information you can fine tune accuracy by adjusting the instance counts and confidence levels in your custom policies or the enhanced template conditions. You can iterate simulations until the accuracy is where you want it, before deploying a DLP or auto-labeling policy containing named entities in production. Here's an overview of the flow:
+- You can use [Auto-labeling simulations](apply-sensitivity-label-automatically.md#learn-about-simulation-mode) to see what items a named entity SIT finds. With this information you can fine tune accuracy by adjusting the instance counts and confidence levels in your custom policies or the enhanced template conditions. You can iterate simulations until the accuracy is where you want it, before deploying a DLP or auto-labeling policy containing named entities in production. Here's an overview of the flow:
 
 1. Identify the SIT or combination of SITs you want to test in simulation mode, either custom or cloned and edited.
 1. Identify or create a sensitivity label to be applied when the auto-labeling policy finds a match in Exchange, SharePoint sites, or OneDrive accounts.
