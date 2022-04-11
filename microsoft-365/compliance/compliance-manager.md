@@ -22,6 +22,9 @@ description: "Microsoft Compliance Manager helps organizations simplify and auto
 
 # Microsoft Compliance Manager
 
+> [!TIP]
+> Did you know you can try premium features of all Purview solutions for free? Use the 90-day trial with unlimited licenses to explore how Purview's robust capabilities can help you meet compliance needs. Microsoft 365 E3/A3/G3 and Office 365 E3/A3/G3 customers can start now at the [Microsoft Purview compliance portal trials hub](https://compliance.microsoft.com/trialHorizontalHub). [Learn details about who can sign up and trial terms](compliance-easy-trials.md).
+
 **In this article:** Learn what Compliance Manager is, how it helps simplify compliance and reduce risk, and its key components.
 
 ## What is Compliance Manager?
