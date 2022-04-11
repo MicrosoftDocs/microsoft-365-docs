@@ -63,7 +63,7 @@ All policies for retention and with any configuration support Preservation Lock.
 3. To place a Preservation Lock on your policy, run the [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) cmdlet with the name of the policy, and the *RestrictiveRetention* parameter set to true:
     
     ```powershell
-    Set-RetentionCompliancePolicy -Identity "<Name of Policy>" –RestrictiveRetention $true
+    Set-RetentionCompliancePolicy -Identity "<Name of Policy>" -RestrictiveRetention $true
     ```
     
     For example:

@@ -20,7 +20,7 @@ Bookings can be scheduled and staffed in two different ways. The first way is by
 
 1. In Microsoft 365, select the App launcher, and then select **Bookings**.
 
-   ![Image of Bookings in App launcher.](../media/bookings-applauncher.png)
+    :::image type="content" source="../media/bookings-applauncher.png" alt-text="Bookings in App launcher.":::
 
 1. In the navigation pane, select **Calendar** \> **New booking**.
 
@@ -44,4 +44,4 @@ Bookings can be scheduled and staffed in two different ways. The first way is by
 
    Here's an example email of the reminder your customer will receive:
 
-:::image type="content" source="../media/bookings-confirmed-email.png" alt-text="Screenshot: Example confirmation email from a manual booking":::
+   :::image type="content" source="media/bookings-remind-confirm-2.png" alt-text="Screenshot: Example confirmation email from a manual booking":::
