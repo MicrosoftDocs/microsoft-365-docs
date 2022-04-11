@@ -46,7 +46,7 @@ The following overview explains the process of using a data connector to archive
 
 The first step is to access to the Data connectors page in the Microsoft 365 compliance center and create a 17a-4 connector for ICE Connect Chat data.
 
-1. Go to <https://compliance.microsoft.com> and then click **Data connectors** > **ICE DataParser**.
+1. Go to <https://compliance.microsoft.com> and then click **Data connectors** > **ICE DataParser**.
 
 2. On the **ICE DataParser** product description page, click **Add connector**.
 

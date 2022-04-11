@@ -112,6 +112,6 @@ If you have a file that you think was missed or wrongly classified as malware, y
 
 ## See also
 
-[Top 10 ways to secure Microsoft 365 for business plans](secure-your-business-data.md)
+[Top 10 ways to secure Microsoft 365 for business plans](../../admin/security-and-compliance/secure-your-business-data.md)
 
 [Overview of Microsoft Defender for Business](../../security/defender-business/mdb-overview.md) (Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022)
