@@ -47,10 +47,10 @@ Applicable workloads: SharePoint, OneDrive, Teams, Exchange, and Skype for Busin
 
 Released November 2020, this report has been produced in partnership with Cohasset Associates, Inc. (Cohasset) to assess the capabilities of Microsoft 365 services for recording, storing, and managing requirements for electronic records, as specified by:  
 
-- Securities and Exchange Commission (SEC) in 17 CFR § 240.17a-4(f), which regulates exchange members, brokers or dealers.  
+- Securities and Exchange Commission (SEC) in 17 CFR § 240.17a-4(f), which regulates exchange members, brokers or dealers.  
 
 - Financial Industry Regulatory Authority (FINRA) Rule 4511(c), which defers to the format and media requirements of SEC Rule 17a-4(f).  
 
-- The principles-based electronic records requirements of the Commodity Futures Trading Commission (CFTC) in 17 CFR § 1.31(c)-(d).
+- The principles-based electronic records requirements of the Commodity Futures Trading Commission (CFTC) in 17 CFR § 1.31(c)-(d).
 
 The opinion from Cohasset is that when compliance features are properly configured and carefully applied and managed as described in their report, the assessed Microsoft 365 services meet the five requirements related to the recording and non-rewriteable, non-erasable storage of electronic records.

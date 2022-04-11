@@ -290,7 +290,7 @@ The templates listed below may be purchased by your organization.
 - [Australian Information Security Registered Assessor Program (IRAP) Version 3](/compliance/regulatory/offering-ccsl-irap-australia)  
 - [Australian Prudential Regulation Authority CPS](/compliance/regulatory/offering-apra-australia)  
 - Victorian Protective Data Security Standards V2.0 (VPDSS 2.0)  
-- Information Management Standard for Australian Government - National Archives of Australia (NAA)  
+- Information Management Standard for Australian Government - National Archives of Australia (NAA)  
 - China - Personal Information Security Specification  
 - Cybersecurity Law of the People's Republic of China  
 - Hong Kong - Personal Data (Privacy) Ordinance  

@@ -66,7 +66,7 @@ After you click **Save & Finish**, the **User mapping** page in the connector wi
 
 To map users and complete the connector setup in the compliance portal, follow these steps:
 
-1. On the **Map Skype for Business users to Microsoft 365 users** page, enable automatic user mapping. The Skype for Business items include a property called *Email*, which contains email addresses for users in your organization. If the connector can associate this address with a Microsoft 365 user, the items are imported to that user’s mailbox.
+1. On the **Map Skype for Business users to Microsoft 365 users** page, enable automatic user mapping. The Skype for Business items include a property called *Email*, which contains email addresses for users in your organization. If the connector can associate this address with a Microsoft 365 user, the items are imported to that user's mailbox.
 
 2. Click **Next**, review your settings, and then go to the **Data connectors** page to see the progress of the import process for the new connector.
 

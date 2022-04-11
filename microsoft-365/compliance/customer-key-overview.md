@@ -100,13 +100,13 @@ The key hierarchy used for DEPs that encrypt data for multiple Microsoft 365 wor
 
 ## Related articles
 
-- [Set up Customer Key](customer-key-set-up.md)
+- [Set up Customer Key](customer-key-set-up.md)
 
-- [Manage Customer Key](customer-key-manage.md)
+- [Manage Customer Key](customer-key-manage.md)
 
-- [Roll or rotate a Customer Key or an availability key](customer-key-availability-key-roll.md)
+- [Roll or rotate a Customer Key or an availability key](customer-key-availability-key-roll.md)
 
-- [Learn about the availability key](customer-key-availability-key-understand.md)
+- [Learn about the availability key](customer-key-availability-key-understand.md)
 
 - [Customer Lockbox](customer-lockbox-requests.md)
 

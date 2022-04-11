@@ -358,12 +358,12 @@ Once you've completed the steps in this article, you're ready to create and assi
 
 ## Related articles
 
-- [Service encryption with Customer Key](customer-key-overview.md)
+- [Service encryption with Customer Key](customer-key-overview.md)
 
-- [Manage Customer Key](customer-key-manage.md)
+- [Manage Customer Key](customer-key-manage.md)
 
-- [Roll or rotate a Customer Key or an availability key](customer-key-availability-key-roll.md)
+- [Roll or rotate a Customer Key or an availability key](customer-key-availability-key-roll.md)
 
-- [Learn about the availability key](customer-key-availability-key-understand.md)
+- [Learn about the availability key](customer-key-availability-key-understand.md)
 
 - [Service Encryption](office-365-service-encryption.md)

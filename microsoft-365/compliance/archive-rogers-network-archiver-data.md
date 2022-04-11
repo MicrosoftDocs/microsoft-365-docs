@@ -68,11 +68,11 @@ After you've completed the prerequisites described in the previous section, you 
 
 5. After the connector is created, you can close the pop-up window and go to the next page.
 
-6. On the **User mapping** page, enable automatic user mapping. To enable custom mapping, upload a CSV file that contains the user mapping information, and then click **Next**.
+6. On the **User mapping** page, enable automatic user mapping. To enable custom mapping, upload a CSV file that contains the user mapping information, and then click **Next**.
 
-7. Review your settings, and then click **Finish** to create the connector.
+7. Review your settings, and then click **Finish** to create the connector.
 
-8. Go to the Connectors tab in **Data connectors** page to see the progress of the import process for the new connector.
+8. Go to the Connectors tab in **Data connectors** page to see the progress of the import process for the new connector.
 
 ## Known issues
 

@@ -161,7 +161,7 @@ The **User activity** chart is one of the most powerful tools for internal risk 
     - The **risk activity category**. For example, *Email(s) with attachments sent outside the organization* or *File(s) downloaded from SharePoint Online*.
     - **Risk score** for the alert. This score is the numerical score for the alert risk severity level.
     - Number of events associated with the alert. Links to each file or email associated with the risk activity are also available.
-3.	**Filters and sorting (preview)**:
+3. **Filters and sorting (preview)**:
     - **Risk category**: Filter activities by the following risk categories: *Activities with risk scores > 15 (unless in a sequence)* and *Sequence activities*.
     - **Activity Type**: Filter activities by the following types: *Access*, *Deletion*, *Collection*, *Exfiltration*, *Infiltration*, *Obfuscation*, and *Security*.
     - **Sort by**: List the timeline activities by *Date occurred* or *Risk score*.
@@ -173,9 +173,9 @@ The **User activity** chart is one of the most powerful tools for internal risk 
     - **Number of events associated with each alert in the sequence**. Links to each file or email associated with each risk activity are also available.
     - **Show activities in sequence**. Displays sequence as a highlight line on the bubble chart and expands the alert details to display all related alerts in the sequence.
 
-4. **Risk activity legend**: Across the bottom of the user activity chart, a color-coded legend helps you quickly determine risk category for each alert.
-5. **Risk activity chronology**: The full chronology of all risk alerts associated with the case are listed, including all the details available in the corresponding alert bubble.
-6. **Case actions**: Options for resolving the case are on the case action toolbar. When viewing in a case, you can resolve a case, send an email notice to the user, or escalate the case for a data or user investigation.
+5. **Risk activity legend**: Across the bottom of the user activity chart, a color-coded legend helps you quickly determine risk category for each alert.
+6. **Risk activity chronology**: The full chronology of all risk alerts associated with the case are listed, including all the details available in the corresponding alert bubble.
+7. **Case actions**: Options for resolving the case are on the case action toolbar. When viewing in a case, you can resolve a case, send an email notice to the user, or escalate the case for a data or user investigation.
 
 ## Activity explorer
 
@@ -189,16 +189,16 @@ To filter alerts on the Activity explorer for column information, select the Fil
 Use the Activity scope and Risk insight filters to display and sort activities and insights for the following areas.
 
 - **Activity scope filters**: Filters all scored activities for the user.
-    - All scored activity for this user
-    - Only scored activity in this alert
+  - All scored activity for this user
+  - Only scored activity in this alert
 
 - **Risk factor filters**: Filters for risk factor activity applicable for all policies assigning risk scores This includes all activity for all policies for in-scope users.
-    - Unusual activity
-    - Includes events with priority content
-    - Includes events with unallowed domain
-    - Sequence activities
-    - Cumulative exfiltration activities
-    - Health record access activities
+  - Unusual activity
+  - Includes events with priority content
+  - Includes events with unallowed domain
+  - Sequence activities
+  - Cumulative exfiltration activities
+  - Health record access activities
 
 ![Insider risk management activity explorer overview.](../media/insider-risk-activity-explorer.png)
 
@@ -236,13 +236,13 @@ As insider risk management alerts age, their value to minimize risky activity di
 
 To help minimize the number of older items that provide limited current value, the following retention and limits apply for insider risk management alerts, cases, and user activity reports:
 
-|**Item**|**Retention/Limit**|
-|:-------|:------------------|
-| Alerts with Needs review status | 120 days from alert creation, then automatically deleted |
-| Active cases (and associated artifacts) | Indefinite retention, never expire |
-| Resolved cases (and associated artifacts) | 120 days from case resolution, then automatically deleted |
-| Maximum number of active cases | 100 |
-| User activities reports | 120 days from activity detection, then automatically deleted |
+|Item|Retention/Limit|
+|---|---|
+|Alerts with Needs review status|120 days from alert creation, then automatically deleted|
+|Active cases (and associated artifacts)|Indefinite retention, never expire|
+|Resolved cases (and associated artifacts)|120 days from case resolution, then automatically deleted|
+|Maximum number of active cases|100|
+|User activities reports|120 days from activity detection, then automatically deleted|
 
 ## Get help managing your insider risk alert queue
 

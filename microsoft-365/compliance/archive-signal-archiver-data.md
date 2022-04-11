@@ -22,7 +22,7 @@ After Signal Archiver connector data is stored in user mailboxes, you can apply 
 
 ## Overview of archiving Signal communications data
 
-The following overview explains the process of using a connector to archive  Signal communication data in Microsoft 365.
+The following overview explains the process of using a connector to archive Signal communication data in Microsoft 365.
 
 ![Signal communications archiving workflow.](../media/SignalConnectorWorkflow.png)
 
@@ -34,7 +34,7 @@ The following overview explains the process of using a connector to archive  Si
 
 4. The connector imports the mobile communication items to the mailbox of a specific user. A new folder named Signal Archiver will be created in the specific user's mailbox and the items will be imported to it. The connector does the mapping by using the value of the *User's Email address* property. Every email message contains this property, which is populated with the email address of every participant of the email message.
 
-   In addition to automatic user mapping using the value of the *User's Email address* property, you can also define a custom mapping by uploading a CSV mapping file. This mapping file should contain User's mobile Number and the corresponding Microsoft 365 mailbox address for each user. If you enable automatic user mapping and provide a custom mapping, for every email item the connector will first look at custom mapping file. If it doesn't find a valid Microsoft 365 user that corresponds to a user's mobile number, the connector will use the User ‘s email address property of the email item. If the connector doesn't find a valid Microsoft 365 user in either the custom mapping file or the *user's email address* property of the email item, the item won't be imported.
+   In addition to automatic user mapping using the value of the *User's Email address* property, you can also define a custom mapping by uploading a CSV mapping file. This mapping file should contain User's mobile Number and the corresponding Microsoft 365 mailbox address for each user. If you enable automatic user mapping and provide a custom mapping, for every email item the connector will first look at custom mapping file. If it doesn't find a valid Microsoft 365 user that corresponds to a user's mobile number, the connector will use the User's email address property of the email item. If the connector doesn't find a valid Microsoft 365 user in either the custom mapping file or the *user's email address* property of the email item, the item won't be imported.
 
 ## Before you set up a connector
 
@@ -66,11 +66,11 @@ After you've completed the prerequisites described in the previous section, you 
 
 5. After the connector is created, you can close the pop-up window and go to the next page.
 
-6. On the **User mapping** page, enable automatic user mapping. To enable custom mapping, upload a CSV file that contains the user mapping information, and then click **Next**.
+6. On the **User mapping** page, enable automatic user mapping. To enable custom mapping, upload a CSV file that contains the user mapping information, and then click **Next**.
 
-7. Review your settings, and then click **Finish** to create the connector.
+7. Review your settings, and then click **Finish** to create the connector.
 
-8. Go to the Connectors tab in **Data connectors** page to see the progress of the import process for the new connector.
+8. Go to the Connectors tab in **Data connectors** page to see the progress of the import process for the new connector.
 
 ## Known issues
 

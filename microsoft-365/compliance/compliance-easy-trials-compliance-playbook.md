@@ -90,6 +90,7 @@ Communication compliance helps you intelligently identify communication violatio
 > Trial best practice: Day 1
 
 [Assign all compliance users to the Communication Compliance role group](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance).
+
 ### Step 2: [Enable the audit log​](communication-compliance-configure.md#step-2-required-enable-the-audit-log)
 
 > [!TIP]
@@ -392,14 +393,14 @@ Trainable classifiers are tools that recognize various types of content, based o
 
 ### More information: Auto-apply retention labels + disposition review
 
-**Apply labels automatically to retain what you need…**
+**Apply labels automatically to retain what you need...**
 Retention labels can be automatically applied to content when it contains:
 
 - [Specific types of sensitive information](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-specific-types-of-sensitive-information)
 - [Specific keywords or searchable properties that match a query you create](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
 - [A match for trainable classifiers](apply-retention-labels-automatically.md#auto-apply-labels-to-content-by-using-trainable-classifiers)
 
-**…then dispose of it safely at the end.**
+**...then dispose of it safely at the end.**
 
 When a disposition review is triggered at the end of the retention period, the reviewers you choose receive an email notification that they have content to review.
 

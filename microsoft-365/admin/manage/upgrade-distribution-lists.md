@@ -107,7 +107,9 @@ Upgrade-DistributionGroup -DlIdentities <DL SMTP address1>, <DL SMTP address2>,
 
 For example, if you want to upgrade five DLs with SMTP address `dl1@contoso.com` and `dl2@contoso.com`, `dl3@contoso.com`, `dl4@contoso.com` and `dl5@contoso.com`, run the following command:
 
-`Upgrade-DistributionGroup -DlIdentities dl1@contoso.com, dl2@contoso.com, dl3@contoso.com, dl4@contoso.com, dl5@contoso.com`
+```powershell
+Upgrade-DistributionGroup -DlIdentities dl1@contoso.com, dl2@contoso.com, dl3@contoso.com, dl4@contoso.com, dl5@contoso.com
+```
 
 ### Upgrade all eligible DLs
 
@@ -118,19 +120,19 @@ There are two ways in which you can upgrade all the eligible DLs.
 
 1. Get the eligible DLs in the tenant and upgrade them using the upgrade command:
 
-```PowerShell
-Get-EligibleDistributionGroupForMigration | Foreach-Object{
-    Upgrade-DistributionGroup -DlIdentities $_.PrimarySMTPAddress
-}
-```
+   ```PowerShell
+   Get-EligibleDistributionGroupForMigration | Foreach-Object{
+       Upgrade-DistributionGroup -DlIdentities $_.PrimarySMTPAddress
+   }
+   ```
 
 2. Get the list of all DLs and upgrade only the eligible DLs:
 
-```PowerShell
-Get-DistributionGroup| Foreach-Object{
-    Upgrade-DistributionGroup -DlIdentities $_.PrimarySMTPAddress
-}
-```
+   ```PowerShell
+   Get-DistributionGroup| Foreach-Object{
+       Upgrade-DistributionGroup -DlIdentities $_.PrimarySMTPAddress
+   }
+   ```
 
 ## FAQ about upgrading distribution lists to Microsoft 365 Groups in Outlook
 
@@ -138,29 +140,33 @@ Get-DistributionGroup| Foreach-Object{
 
 You can only upgrade cloud-managed, simple, non-nested distribution lists. The table below lists distribution lists that **CANNOT** be upgraded.
 
-|**Property**|**Eligible?**|
-|:-----|:-----|
-|On-premises managed distribution list.  <br/> |No  <br/> |
-|Nested distribution lists. Distribution list either has child groups or is a member of another group.  <br/> |No  <br/> |
-|Distribution lists with member **RecipientTypeDetails** other than **UserMailbox**, **SharedMailbox**, **TeamMailbox**, **MailUser**  <br/> |No  <br/> |
-|Distribution list that has more than 100 owners  <br/> |No  <br/> |
-|Distribution list that only has members but no owner  <br/> |No  <br/> |
-|Distribution list that has alias containing special characters  <br/> |No  <br/> |
-|If the distribution list is configured to be a forwarding address for Shared Mailbox  <br/> |No  <br/> |
-|If the DL is part of **Sender Restriction** in another DL.  <br/> |No  <br/> |
-|Security groups  <br/> |No  <br/> |
-|Dynamic Distribution lists  <br/> |No  <br/> |
-|Distribution lists that were converted to **RoomLists**  <br/> |No  <br/> |
+|Property|Eligible?|
+|---|---|
+|On-premises managed distribution list.|No|
+|Nested distribution lists. Distribution list either has child groups or is a member of another group.|No|
+|Distribution lists with member **RecipientTypeDetails** other than **UserMailbox**, **SharedMailbox**, **TeamMailbox**, **MailUser**|No|
+|Distribution list that has more than 100 owners|No|
+|Distribution list that only has members but no owner|No|
+|Distribution list that has alias containing special characters|No|
+|If the distribution list is configured to be a forwarding address for Shared Mailbox|No|
+|If the DL is part of **Sender Restriction** in another DL.|No|
+|Security groups|No|
+|Dynamic Distribution lists|No|
+|Distribution lists that were converted to **RoomLists**|No|
 
 ### Check which DLs are eligible for upgrade
 
 If you want to check whether a DL is eligible or not, you can run the below command:
 
-`Get-DistributionGroup <DL SMTP address> | Get-EligibleDistributionGroupForMigration`
+```PowerShell
+Get-DistributionGroup <DL SMTP address> | Get-EligibleDistributionGroupForMigration
+```
 
 If you want to check which DLs are eligible for upgrade just run the following command:
 
-`Get-EligibleDistributionGroupForMigration`
+```PowerShell
+Get-EligibleDistributionGroupForMigration
+```
 
 ### Who can run the upgrade scripts?
 
@@ -184,11 +190,14 @@ There are some cases in which though DL is eligible but could not be upgraded. T
 
 - DLs with **MemberJoinRestriction** or **MemberDepartRestriction** set to **Closed**, could not be upgraded
 
-- The Microsoft 365 Group creation is allowed only to few users, using the steps from [this article](/microsoft-365/solutions/manage-creation-of-groups). In this scenario, if the owner of distribution list is not allowed to create Microsoft 365 Group, the distribution list will not upgrade to Microsoft 365 Group. 
+- The Microsoft 365 Group creation is allowed only to few users, using the steps from [this article](/microsoft-365/solutions/manage-creation-of-groups). In this scenario, if the owner of distribution list is not allowed to create Microsoft 365 Group, the distribution list will not upgrade to Microsoft 365 Group.
 Workaround: Use one of the following workaround for the above scenario:
-1)	Ensure all the users mentioned as owners of the DL are allowed to create M365 Group, i.e. are member of the security group that is allowed to M365 Group.
-OR
-2)	Temporarily, replace the owner of the DL that is not allowed to create M365 Group with user that is allowed to create M365 Group
+
+1. Ensure all the users mentioned as owners of the DL are allowed to create M365 Group, i.e. are member of the security group that is allowed to M365 Group.
+
+   OR
+
+2. Temporarily, replace the owner of the DL that is not allowed to create M365 Group with user that is allowed to create M365 Group.
 
 ### What happens to the DL if the upgrade from EAC fails?
 

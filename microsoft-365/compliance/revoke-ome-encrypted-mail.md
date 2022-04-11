@@ -116,7 +116,7 @@ To verify whether you can revoke a particular email message by using Windows Pow
      ```console
      Subject        IsRevocable
      -------        -----------
-     "Test message" True
+     "Test message" True
      ```
 
 ### Step 3. Revoke the mail

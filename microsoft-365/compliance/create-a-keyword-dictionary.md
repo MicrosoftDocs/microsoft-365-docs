@@ -189,11 +189,11 @@ Paste the identity into your custom sensitive information type's XML and upload 
 > Along with Chinese/Japanese/double byte characters, if the list of keywords/phrases also contain non Chinese/Japanese words also (like English only), it is recommended to create two dictionaries/keyword lists. One for keywords containing Chinese/Japanese/double byte characters and another one for English only.
 >
 > - For example, if you want to create a keyword dictionary/list with three phrases "Highly confidential", "機密性が高い" and "机密的document", the it you should create two keyword lists.
->     1. Highly confidential
->     2. 機密性が高い, 机密的document and 机密的 document
+>   1. Highly confidential
+>   2. 機密性が高い, 机密的document and 机密的 document
 >
 > While creating a regex using a double byte hyphen or a double byte period, make sure to escape both the characters like one would escape a hyphen or period in a regex. Here is a sample regex for reference:
 >
-> - `(?<!\d)([４][０-９]{3}[\-?\－\t]*[０-９]{4}`
+> - `(?<!\d)([4][0-9]{3}[\-?\-\t]*[0-9]{4}`
 >
 > We recommend using a string match instead of a word match in a keyword list.

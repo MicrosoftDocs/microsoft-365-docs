@@ -23,7 +23,7 @@ description: "Microsoft Purview Compliance Manager premium assessments trial pla
 
 Welcome to the Microsoft Purview Compliance Manager premium assessment trial playbook.
 
-This playbook will help you make the most of your 90-day free trial by teaching you how to use the comprehensive set of premium assessment templates (add-on).​
+This playbook will help you make the most of your 90-day free trial by teaching you how to use the comprehensive set of premium assessment templates (add-on).
 
 Using Microsoft recommendations, you'll quickly see how the premium assessment templates can help your organization assess risks and efficiently respond to global, regional and industrial regulatory requirements.
 
@@ -31,21 +31,21 @@ Using Microsoft recommendations, you'll quickly see how the premium assessment t
 
 Our [Compliance Manager overview page](compliance-manager.md) is the best first stop for a comprehensive review of what Compliance Manager is and how it works. You may also want to jump right to key sections of our documentation using the links below:
 
-1. [Understand your compliance score​](compliance-manager.md#understanding-your-compliance-score)
-1. [Overview of key elements: controls, assessments, templates, and improvement actions​](compliance-manager.md#key-elements-controls-assessments-templates-improvement-actions)
-1. [Understand the Compliance Manager dashboard​](compliance-manager-setup.md#understand-the-compliance-manager-dashboard)
-1. [Filter your dashboard view​](compliance-manager-setup.md#filtering-your-dashboard-view)
-1. [Learn about improvement actions​](compliance-manager-setup.md#improvement-actions-page)
-1. [Understand assessments​](compliance-manager.md#assessments)
+1. [Understand your compliance score](compliance-manager.md#understanding-your-compliance-score)
+1. [Overview of key elements: controls, assessments, templates, and improvement actions](compliance-manager.md#key-elements-controls-assessments-templates-improvement-actions)
+1. [Understand the Compliance Manager dashboard](compliance-manager-setup.md#understand-the-compliance-manager-dashboard)
+1. [Filter your dashboard view](compliance-manager-setup.md#filtering-your-dashboard-view)
+1. [Learn about improvement actions](compliance-manager-setup.md#improvement-actions-page)
+1. [Understand assessments](compliance-manager.md#assessments)
 1. [Do a quick scan of your environment using the Microsoft Compliance Configuration Manager](compliance-manager-mcca.md)
 
 ## Step 2: Configure Compliance Manager
 
 Start working with assessments and taking improvement actions to implement controls and improve your compliance score.
 
-1. [Choose a pre-built template to create and manage your first assessment​](compliance-manager-assessments.md)
-1. [Understand how to use templates for building assessments​](compliance-manager-templates.md)
-1. [Perform implementation and testing work on improvement actions to complete controls in your assessments​](compliance-manager-improvement-actions.md)
+1. [Choose a pre-built template to create and manage your first assessment](compliance-manager-assessments.md)
+1. [Understand how to use templates for building assessments](compliance-manager-templates.md)
+1. [Perform implementation and testing work on improvement actions to complete controls in your assessments](compliance-manager-improvement-actions.md)
 1. [Better understand how different actions impact your compliance score](compliance-score-calculation.md)
 
 ## Step 3: Review included assessment templates
@@ -84,11 +84,11 @@ After starting the premium assessment trial, you will see a summary on the dashb
 
 ## Additional resources
 
-**Microsoft Docs**: Get detailed information on how Compliance Manager premium assessments work and how to best implement them for your organization. Visit [Docs](compliance-manager-templates.md).​
+**Microsoft Docs**: Get detailed information on how Compliance Manager premium assessments work and how to best implement them for your organization. Visit [Docs](compliance-manager-templates.md).
 
 **How to videos**: Check out the following videos to learn more:
 
-- [Create assessments and monitor your progress with Compliance Manager​](https://techcommunity.microsoft.com/t5/video-hub/create-assessments-and-monitor-your-progress-with-compliance/ba-p/1687992?search-action-id=375363186777&search-result-uid=1687992)
-- [Extend and customize assessments to suit your needs in Compliance Manager​](https://techcommunity.microsoft.com/t5/video-hub/extend-and-customize-assessments-to-suit-your-needs-in/ba-p/1687991?search-action-id=375363186777&search-result-uid=1687991)
+- [Create assessments and monitor your progress with Compliance Manager](https://techcommunity.microsoft.com/t5/video-hub/create-assessments-and-monitor-your-progress-with-compliance/ba-p/1687992?search-action-id=375363186777&search-result-uid=1687992)
+- [Extend and customize assessments to suit your needs in Compliance Manager](https://techcommunity.microsoft.com/t5/video-hub/extend-and-customize-assessments-to-suit-your-needs-in/ba-p/1687991?search-action-id=375363186777&search-result-uid=1687991)
 
 **Purchase premium assessments**: Get information on available plans and pricing. [Visit Microsoft 365 admin center - Purchase services](https://admin.microsoft.com/#/catalog/offer-details/compliance-manager-premium-assessment-add-on/46E9BF2A-3C8D-4A69-A7E7-3DA04687636D)

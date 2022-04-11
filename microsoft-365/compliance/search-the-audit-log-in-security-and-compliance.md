@@ -1015,7 +1015,7 @@ The following table describes the configuration activities for [retention polici
 
 |Friendly name|Operation|Description|
 |:-----|:-----|:-----|
-| Changed adaptive scope membership |ApplicableAdaptiveScopeChange |Users, sites, or groups were added to or removed from the adaptive scope. These changes are the results of running the scope’s query. Because the changes are system-initiated, the reported user displays as a GUID rather than a user account.|
+| Changed adaptive scope membership |ApplicableAdaptiveScopeChange |Users, sites, or groups were added to or removed from the adaptive scope. These changes are the results of running the scope's query. Because the changes are system-initiated, the reported user displays as a GUID rather than a user account.|
 | Configured settings for a retention policy |NewRetentionComplianceRule |Administrator configured the retention settings for a new retention policy. Retention settings include how long items are retained, and what happens to items when the retention period expires (such as deleting items, retaining items, or retaining and then deleting them). This activity also corresponds to running the [New-RetentionComplianceRule](/powershell/module/exchange/new-retentioncompliancerule) cmdlet.|
 | Created adaptive scope |NewAdaptiveScope |Administrator created an adaptive scope.|
 | Created retention label |NewComplianceTag |Administrator created a new retention label.|

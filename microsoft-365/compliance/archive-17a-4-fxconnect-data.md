@@ -46,7 +46,7 @@ The following overview explains the process of using a data connector to archive
 
 The first step is to access to the Data connectors page in the compliance portal and create a 17a-4 connector for FX Connect data.
 
-1. Go to <https://compliance.microsoft.com> and then click **Data connectors** > **FX Connect DataParser**.
+1. Go to <https://compliance.microsoft.com> and then click **Data connectors** > **FX Connect DataParser**.
 
 2. On the **FX Connect DataParser** product description page, click **Add connector**.
 

@@ -143,7 +143,7 @@ To create a DEP, you need to remotely connect to SharePoint Online by using Wind
    Example:
   
    ```powershell
-   Register-SPODataEncryptionPolicy -PrimaryKeyVaultName 'stageRG3vault' -PrimaryKeyName 'SPKey3' -PrimaryKeyVersion 'f635a23bd4a44b9996ff6aadd88d42ba' -SecondaryKeyVaultName 'stageRG5vault' -SecondaryKeyName 'SPKey5' -SecondaryKeyVersion '2b3e8f1d754f438dacdec1f0945f251a’
+   Register-SPODataEncryptionPolicy -PrimaryKeyVaultName 'stageRG3vault' -PrimaryKeyName 'SPKey3' -PrimaryKeyVersion 'f635a23bd4a44b9996ff6aadd88d42ba' -SecondaryKeyVaultName 'stageRG5vault' -SecondaryKeyName 'SPKey5' -SecondaryKeyVersion '2b3e8f1d754f438dacdec1f0945f251a'
    ```
 
    When you register the DEP, encryption begins on the data in the geo. Encryption can take some time. For more information on using this parameter, see [Register-SPODataEncryptionPolicy](/powershell/module/sharepoint-online/register-spodataencryptionpolicy?preserve-view=true&view=sharepoint-ps).
@@ -212,11 +212,11 @@ Use the Get-MailboxStatistics cmdlet to determine if a mailbox is encrypted.
 Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl IsEncrypted
 ```
 
-The IsEncrypted property returns a value of **true** if the mailbox is encrypted and a value of **false** if the mailbox isn't encrypted. The time to complete mailbox moves depends on the number of mailboxes to which you assign a DEP for the first time, and the size of the mailboxes. If the mailboxes haven't been encrypted after a week from the time you assigned the DEP, contact Microsoft.
+The IsEncrypted property returns a value of **true** if the mailbox is encrypted and a value of **false** if the mailbox isn't encrypted. The time to complete mailbox moves depends on the number of mailboxes to which you assign a DEP for the first time, and the size of the mailboxes. If the mailboxes haven't been encrypted after a week from the time you assigned the DEP, contact Microsoft.
 
 The New-MoveRequest cmdlet is no longer available for local mailbox moves. Refer to [this announcement](https://techcommunity.microsoft.com/t5/exchange-team-blog/disabling-new-moverequest-for-local-mailbox-moves/bc-p/1332141) for additional information.
 
-### Verify encryption completes for SharePoint Online, OneDrive for Business, and Teams files
+### Verify encryption completes for SharePoint Online, OneDrive for Business, and Teams files
 
 Check on the status of encryption by running the Get-SPODataEncryptionPolicy cmdlet as follows:
 
@@ -343,7 +343,7 @@ If you need to revert to Microsoft-managed keys, you can. When you offboard, you
 > [!IMPORTANT]
 > Offboarding is not the same as a data purge. A data purge permanently crypto-deletes your organization's data from Microsoft 365, offboarding does not. You can't perform a data purge for a multiple workload policy.
 
-If you decide not to use Customer Key for assigning multi-workload DEPs anymore then you'll need to reach out to Microsoft support with a request to “offboard” from Customer Key. Ask the support team to file a service request against Microsoft 365 Customer Key team. Reach out to m365-ck@service.microsoft.com if you have any questions.
+If you decide not to use Customer Key for assigning multi-workload DEPs anymore then you'll need to reach out to Microsoft support with a request to "offboard" from Customer Key. Ask the support team to file a service request against Microsoft 365 Customer Key team. Reach out to m365-ck@service.microsoft.com if you have any questions.
 
 If you do not want to encrypt individual mailboxes using mailbox level DEPs anymore, then you can unassign mailbox level DEPs from all your mailboxes.
 
@@ -392,7 +392,7 @@ To initiate the data purge path, complete these steps:
     Set-DataEncryptionPolicy <Policy ID> -PermanentDataPurgeRequested -PermanentDataPurgeReason <Reason> -PermanentDataPurgeContact <ContactName>
     ```
 
-   If the command fails, ensure that you've removed the Exchange Online permissions from both keys in Azure Key Vault as specified earlier in this task. Once you've set the PermanentDataPurgeRequested switch using the Set-DataEncryptionPolicy cmdlet, you'll no longer be able to assign this DEP to mailboxes.
+   If the command fails, ensure that you've removed the Exchange Online permissions from both keys in Azure Key Vault as specified earlier in this task. Once you've set the PermanentDataPurgeRequested switch using the Set-DataEncryptionPolicy cmdlet, you'll no longer be able to assign this DEP to mailboxes.
 
 4. Contact Microsoft support and request the Data Purge eDocument.
 
@@ -402,9 +402,9 @@ To initiate the data purge path, complete these steps:
 
     Once Microsoft receives the legal document, Microsoft runs cmdlets to trigger the data purge which first deletes the policy, marks the mailboxes for permanent deletion, then deletes the availability key. Once the data purge process completes, the data has been purged, is inaccessible to Exchange Online, and is not recoverable.
 
-### Revoke your Customer Keys and the availability key for SharePoint Online, OneDrive for Business, and Teams files
+### Revoke your Customer Keys and the availability key for SharePoint Online, OneDrive for Business, and Teams files
 
-To initiate the data purge path for SharePoint Online, OneDrive for Business, and Teams files, complete these steps:
+To initiate the data purge path for SharePoint Online, OneDrive for Business, and Teams files, complete these steps:
 
 1. Revoke Azure Key Vault access. All key vault admins must agree to revoke access.
 
@@ -420,13 +420,13 @@ To initiate the data purge path for SharePoint Online, OneDrive for Business
 
 ## Related articles
 
-- [Service encryption with Customer Key](customer-key-overview.md)
+- [Service encryption with Customer Key](customer-key-overview.md)
 
-- [Learn about the availability key](customer-key-availability-key-understand.md)
+- [Learn about the availability key](customer-key-availability-key-understand.md)
 
-- [Set up Customer Key](customer-key-set-up.md)
+- [Set up Customer Key](customer-key-set-up.md)
 
-- [Roll or rotate a Customer Key or an availability key](customer-key-availability-key-roll.md)
+- [Roll or rotate a Customer Key or an availability key](customer-key-availability-key-roll.md)
 
 - [Customer Lockbox](customer-lockbox-requests.md)
 

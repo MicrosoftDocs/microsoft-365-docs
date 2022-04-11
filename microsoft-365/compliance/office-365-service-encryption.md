@@ -46,7 +46,7 @@ To learn how to set up Customer Key for Microsoft 365 for Exchange Online, Micro
 
 - [Service encryption with Customer Key](customer-key-overview.md)
 
-- [Set up Customer Key](customer-key-set-up.md)
+- [Set up Customer Key](customer-key-set-up.md)
 
 - [Manage Customer Key](customer-key-manage.md)
 

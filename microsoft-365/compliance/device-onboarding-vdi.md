@@ -105,7 +105,7 @@ As a best practice, we recommend using offline servicing tools to patch golden i
 
 For example, you can use the below commands to install an update while the image remains offline:
 
-```console
+```DOS
 DISM /Mount-image /ImageFile:"D:\Win10-1909.vhdx" /index:1 /MountDir:"C:\Temp\OfflineServicing"
 DISM /Image:"C:\Temp\OfflineServicing" /Add-Package /Packagepath:"C:\temp\patch\windows10.0-kb4541338-x64.msu"
 DISM /Unmount-Image /MountDir:"C:\Temp\OfflineServicing" /commit
@@ -123,7 +123,7 @@ If offline servicing is not a viable option for your non-persistent VDI environm
 
 2. Ensure the sensor is stopped by running the command below in a CMD window:
 
-   ```console
+   ```DOS
    sc query sense
    ```
 
@@ -131,11 +131,11 @@ If offline servicing is not a viable option for your non-persistent VDI environm
 
 4. Run the below commands using PsExec.exe (which can be downloaded from https://download.sysinternals.com/files/PSTools.zip) to cleanup the cyber folder contents that the sensor may have accumulated since boot:
 
-    ```console
+    ```DOS
     PsExec.exe -s cmd.exe
     cd "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Cyber"
     del *.* /f /s /q
-    REG DELETE “HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection" /v senseGuid /f
+    REG DELETE "HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection" /v senseGuid /f
     exit
     ```
 

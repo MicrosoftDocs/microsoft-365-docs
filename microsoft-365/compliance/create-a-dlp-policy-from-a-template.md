@@ -212,7 +212,7 @@ Here are the different statuses and what they mean.
 
 |Status|Explanation|
 |---|---|
-|**Turning on…**|The policy is being deployed to the content sources that it includes. The policy is not yet enforced on all sources.|
+|**Turning on...**|The policy is being deployed to the content sources that it includes. The policy is not yet enforced on all sources.|
 |**Testing, with notifications**|The policy is in test mode. The actions in a rule are not applied, but policy matches are collected and can be viewed by using the DLP reports. Notifications about policy matches are sent to the specified recipients.|
 |**Testing, without notifications**|The policy is in test mode. The actions in a rule are not applied, but policy matches are collected and can be viewed by using the DLP reports. Notifications about policy matches are not sent to the specified recipients.|
 |**On**|The policy is active and enforced. The policy was successfully deployed to all its content sources.|

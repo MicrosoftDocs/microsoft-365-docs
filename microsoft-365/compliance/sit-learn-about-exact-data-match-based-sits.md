@@ -26,7 +26,7 @@ ms.custom: seo-marvel-apr2020
 [Sensitive information types](sensitive-information-type-learn-about.md) are used to help identify sensitive items so that you can prevent them from being inadvertently or inappropriately shared, to help in locating relevant data in eDiscovery, and to apply governance actions to certain types of information. You define a custom sensitive information type (SIT) based on:
 
 - patterns
-- keyword evidence such as *employee*, *social security number*, or *ID*
+- keyword evidence such as *employee*, *social security number*, or *ID*
 - character proximity to evidence in a particular pattern
 - confidence levels
 
@@ -72,12 +72,11 @@ The sensitive source table contains the sensitive information values that the ED
 
 Here's a simple example of a sensitive information source table.
 
-|First Name  |Last Name  |Date of Birth  |
-|---------|---------|---------|
-|Isaiah   |Langer  | 05-05-1960 |
-|Ana   |Bowman         |11-24-1971 |
-|Oscar   |Ward         |02-12-1998 |
-
+|First Name|Last Name|Date of Birth|
+|---|---|---|
+|Isaiah|Langer| 05-05-1960|
+|Ana|Bowman|11-24-1971|
+|Oscar|Ward|02-12-1998|
 
 ### Rule package
 
@@ -85,9 +84,9 @@ Every SIT has a rule package. You use the rule package in an EDM SIT to define:
 
 - Matches, which specify the field that will be the primary element to be used in exact lookup. It can be a regular expression with or without a checksum validation, a keyword list, a keyword dictionary, or a function.
 - Classification, which specifies the sensitive type match that triggers EDM lookup.
-- Supporting element which are elements that, when found provide supporting evidence that help increase the confidence of the match. For example, keyword “SSN” in proximity of an SSN number. It can be a regular expression with or without a checksum validation, keyword list, keyword dictionary.
+- Supporting element which are elements that, when found provide supporting evidence that help increase the confidence of the match. For example, keyword "SSN" in proximity of an SSN number. It can be a regular expression with or without a checksum validation, keyword list, keyword dictionary.
 - Confidence levels (high, medium, low) reflect how much supporting evidence was detected along with the primary element. The more supporting evidence an item contains, the higher the confidence that a matched item contains the sensitive info you're looking for. See, [Fundamental parts of a sensitive information type](sensitive-information-type-learn-about.md#fundamental-parts-of-a-sensitive-information-type) for more on confidence levels.
-Proximity – Number of characters between primary and supporting element
+Proximity - Number of characters between primary and supporting element
 
 ### You supply your own schema and data
 

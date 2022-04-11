@@ -223,25 +223,25 @@ For more details about any recommendations or warnings, select a policy on the *
 
 Use the following table to learn more about recommendations and warning notifications and actions to take to resolve potential issues.
 
-|**Notification messages**|**Policy templates**|**Causes / Try this action to fix**|
-|:------------------------|:-------------------|:---------------------------|
-| Policy isn't assigning risk scores to activity | All policy templates | You may want to review your policy scope and triggering event configuration so that the policy can assign risk scores to activity <br><br> 1. Review the users that are selected for the policy. If you have few users selected, you may want to select additional users. <br> 2. If you're using an HR connector, check that your HR connector is sending the correct data. <br> 3. If you're using a DLP policy as your triggering event, check your DLP policy configuration to ensure it's configured to be used in this policy. <br> 4. For security violation policies, review the Microsoft Defender for Endpoint alert triage status selected in Insider risk settings > Intelligent detections. Confirm that the alert filter isn't too narrow. |
-| Policy hasn't generated any alerts | All policy templates | You may want to review your policy configuration so that you're analyzing the scoring the activity that you care about. <br><br> 1. Confirm that you've selected indicators that you want to score. The more indicators selected, the more activities are assigned risk scores. <br> 2. Review threshold customization for policy. If the thresholds selected don't align with your organization's risk tolerance, adjust the selections so that alerts are created based on your preferred thresholds. <br> 3. Review the users and groups selected for the policy. Confirm you've selected all of the applicable users and groups. <br> 4. For security violation policies, confirm you've selected the alert triage status that you want to score for Microsoft Defender for Endpoint alerts in Intelligent Detections in settings.|
-| No users or groups are included in this policy | All policy templates | Users or groups aren't assigned to the policy. <br><br> Edit your policy and select users or groups for the policy. |
-| No indicators have been selected for this policy | All policy templates | Indicators haven't been selected for the policy <br><br> Edit your policy and select appropriate policy indicators for the policy. |
-| No priority user groups are included in this policy | - Data leaks by priority users <br> - Security policy violations by priority users | Priority user groups aren't assigned to the policy. <br><br> Configure priority user groups in Insider risk management settings and assign priority user groups to the policy. |
-| No triggering event has been selected for this policy | All policy templates | A triggering event isn't configured for the policy <br><br> Risk scores won't be assigned to user activities until you edit the policy and select a triggering event. |
-| HR connector isn't configured or working as expected | - Data theft by departing user <br> - Security policy violations by departing user <br> - Data leaks by disgruntled users <br> - Security policy violations by disgruntled users | There's an issue with the HR connector. <br><br> 1. If you're using an HR connector, check that your HR connector is sending correct data <br><br> OR <br><br> 2. Select the Azure AD account deleted triggering event. |
-| No devices are onboarded | - Data theft by departing users <br> - General data leaks <br> - Data leaks by disgruntled users <br> - Data Leaks by priority users | Device indicators are selected but there aren't any devices onboarded to the Microsoft 365 <br><br> Check whether devices are onboarded and meet requirements. |
-| HR connector hasn't uploaded data recently | - Data theft by departing user <br> - Security policy violations by departing user <br> - Data leaks by disgruntled users <br> - Security policy violations by disgruntled users | HR connector hasn't imported data in more than 7 days. <br><br> Check that your HR connector is configured correctly and sending data. |
-| We're unable to check the status of your HR connector right now, please check again later | - Data theft by departing user <br> - Security policy violations by departing user <br> - Data leaks by disgruntled users <br> - Security policy violations by disgruntled users | The insider risk management solution is unable to check the status of your HR connector. <br><br> Check that your HR connector is configured correctly and sending data, or come back and check the policy status.  |
-| DLP policy isn't selected as the triggering event | - General Data leaks <br> - Data leaks by priority users | A DLP policy hasn't been selected as a triggering event or the selected DLP policy has been deleted. <br><br> Edit the policy and either select an active DLP policy or 'User performs an exfiltration activity' as the triggering event in the policy configuration. |
-| DLP policy used in this policy is turned off | - General Data leaks <br> - Data leaks by priority users | DLP policy used in this policy is turned off. <br><br> 1. Turn the DLP policy assigned to this policy on. <br><br> OR <br><br> 2. Edit this policy and either select a new DLP policy or 'User performs an exfiltration activity' as the triggering event in the policy configuration. |
-| DLP policy doesn't meet requirements | - General Data leaks <br> - Data leaks by priority users | DLP policies used as triggering events must be configured to generate high severity alerts. <br><br>  1. Edit your DLP policy to assign applicable alerts as *High severity*. <br><br> OR <br><br> 2. Edit this policy and select *User performs an exfiltration activity* as the triggering event. |
-| Your organization doesn't have a Microsoft Defender for Endpoint subscription | - General security policy violations <br> - Security policy violations by departing users <br> - Security policy violations by disgruntled users <br> - Security policy violations by priority users | An active Microsoft Defender for Endpoint subscription wasn't detected for your organization. <br><br> Until a Microsoft Defender for Endpoint subscription is added, these policies won't assign risk scores to user activity. |
-| Microsoft Defender for Endpoint alerts aren't being shared with the compliance center | - General security policy violations <br> - Security policy violations by departing users <br> - Security policy violations by disgruntled users <br> - Security policy violations by priority users | Microsoft Defender for Endpoint alerts aren't being shared with the compliance center. <br><br> Configure sharing of Microsoft Defender for Endpoint alerts. |
-| You're approaching the maximum limit of users being actively scored for this policy template. | All policy templates | Each policy template has a maximum number of in-scope users. See the template limit section details. <br><br> Review the users in the Users tab and remove any users who don't need to be scored anymore. |
-| Triggering event is repeatedly occurring for over 15% of users in this policy. | All policy templates | Adjust the triggering event to help reduce how often users are brought into the policy scope. |
+|Notification messages|Policy templates|Causes / Try this action to fix|
+|---|---|---|
+|Policy isn't assigning risk scores to activity|All policy templates|You may want to review your policy scope and triggering event configuration so that the policy can assign risk scores to activity <br><br> 1. Review the users that are selected for the policy. If you have few users selected, you may want to select additional users. <br> 2. If you're using an HR connector, check that your HR connector is sending the correct data. <br> 3. If you're using a DLP policy as your triggering event, check your DLP policy configuration to ensure it's configured to be used in this policy. <br> 4. For security violation policies, review the Microsoft Defender for Endpoint alert triage status selected in Insider risk settings > Intelligent detections. Confirm that the alert filter isn't too narrow.|
+|Policy hasn't generated any alerts|All policy templates|You may want to review your policy configuration so that you're analyzing the scoring the activity that you care about. <br><br> 1. Confirm that you've selected indicators that you want to score. The more indicators selected, the more activities are assigned risk scores. <br> 2. Review threshold customization for policy. If the thresholds selected don't align with your organization's risk tolerance, adjust the selections so that alerts are created based on your preferred thresholds. <br> 3. Review the users and groups selected for the policy. Confirm you've selected all of the applicable users and groups. <br> 4. For security violation policies, confirm you've selected the alert triage status that you want to score for Microsoft Defender for Endpoint alerts in Intelligent Detections in settings.|
+|No users or groups are included in this policy|All policy templates|Users or groups aren't assigned to the policy. <br><br> Edit your policy and select users or groups for the policy.|
+|No indicators have been selected for this policy|All policy templates|Indicators haven't been selected for the policy <br><br> Edit your policy and select appropriate policy indicators for the policy.|
+|No priority user groups are included in this policy|- Data leaks by priority users <br> - Security policy violations by priority users|Priority user groups aren't assigned to the policy. <br><br> Configure priority user groups in Insider risk management settings and assign priority user groups to the policy.|
+|No triggering event has been selected for this policy|All policy templates|A triggering event isn't configured for the policy <br><br> Risk scores won't be assigned to user activities until you edit the policy and select a triggering event.|
+|HR connector isn't configured or working as expected|- Data theft by departing user <br> - Security policy violations by departing user <br> - Data leaks by disgruntled users <br> - Security policy violations by disgruntled users|There's an issue with the HR connector. <br><br> 1. If you're using an HR connector, check that your HR connector is sending correct data <br><br> OR <br><br> 2. Select the Azure AD account deleted triggering event.|
+|No devices are onboarded|- Data theft by departing users <br> - General data leaks <br> - Data leaks by disgruntled users <br> - Data Leaks by priority users|Device indicators are selected but there aren't any devices onboarded to the Microsoft 365 <br><br> Check whether devices are onboarded and meet requirements.|
+|HR connector hasn't uploaded data recently|- Data theft by departing user <br> - Security policy violations by departing user <br> - Data leaks by disgruntled users <br> - Security policy violations by disgruntled users|HR connector hasn't imported data in more than 7 days. <br><br> Check that your HR connector is configured correctly and sending data.|
+|We're unable to check the status of your HR connector right now, please check again later|- Data theft by departing user <br> - Security policy violations by departing user <br> - Data leaks by disgruntled users <br> - Security policy violations by disgruntled users|The insider risk management solution is unable to check the status of your HR connector. <br><br> Check that your HR connector is configured correctly and sending data, or come back and check the policy status.|
+|DLP policy isn't selected as the triggering event|- General Data leaks <br> - Data leaks by priority users|A DLP policy hasn't been selected as a triggering event or the selected DLP policy has been deleted. <br><br> Edit the policy and either select an active DLP policy or 'User performs an exfiltration activity' as the triggering event in the policy configuration.|
+|DLP policy used in this policy is turned off|- General Data leaks <br> - Data leaks by priority users|DLP policy used in this policy is turned off. <br><br> 1. Turn the DLP policy assigned to this policy on. <br><br> OR <br><br> 2. Edit this policy and either select a new DLP policy or 'User performs an exfiltration activity' as the triggering event in the policy configuration.|
+|DLP policy doesn't meet requirements|- General Data leaks <br> - Data leaks by priority users|DLP policies used as triggering events must be configured to generate high severity alerts. <br><br>  1. Edit your DLP policy to assign applicable alerts as *High severity*. <br><br> OR <br><br> 2. Edit this policy and select *User performs an exfiltration activity* as the triggering event.|
+|Your organization doesn't have a Microsoft Defender for Endpoint subscription|- General security policy violations <br> - Security policy violations by departing users <br> - Security policy violations by disgruntled users <br> - Security policy violations by priority users|An active Microsoft Defender for Endpoint subscription wasn't detected for your organization. <br><br> Until a Microsoft Defender for Endpoint subscription is added, these policies won't assign risk scores to user activity.|
+|Microsoft Defender for Endpoint alerts aren't being shared with the compliance center|- General security policy violations <br> - Security policy violations by departing users <br> - Security policy violations by disgruntled users <br> - Security policy violations by priority users|Microsoft Defender for Endpoint alerts aren't being shared with the compliance center. <br><br> Configure sharing of Microsoft Defender for Endpoint alerts.|
+|You're approaching the maximum limit of users being actively scored for this policy template.|All policy templates|Each policy template has a maximum number of in-scope users. See the template limit section details. <br><br> Review the users in the Users tab and remove any users who don't need to be scored anymore.|
+|Triggering event is repeatedly occurring for over 15% of users in this policy.|All policy templates|Adjust the triggering event to help reduce how often users are brought into the policy scope.|
 
 ## Policy template limits
 
@@ -251,17 +251,17 @@ The limit for each policy is calculated based on the total number of unique user
 
 Use the following table to determine the maximum number of in-scope users supported for each policy template:
 
-|**Policy template**|**Current in-scope user maximum**|
-|:------------------|:--------------------------------|
-| General data leak | 15,000 |
-| Data leak by disgruntled users | 7,500 |
-| Data leak by priority users | 1,000 |
-| Data theft by departing users | 20,000 |
-| General security policy violations | 1,000 |
-| General patient data misuse | 5,000 |
-| Security policy violation by priority users | 1,000 |
-| Security policy violations by departing users | 15,000 |
-| Security policy violations by disgruntled users | 7,500 |
+|Policy template|Current in-scope user maximum|
+|---|---|
+|General data leak|15,000|
+|Data leak by disgruntled users|7,500|
+|Data leak by priority users|1,000|
+|Data theft by departing users|20,000|
+|General security policy violations|1,000|
+|General patient data misuse|5,000|
+|Security policy violation by priority users|1,000|
+|Security policy violations by departing users|15,000|
+|Security policy violations by disgruntled users|7,500|
 
 ## Create a new policy
 
@@ -308,9 +308,9 @@ Complete the following steps to create a new policy:
     If you've selected other policy templates, custom triggering events aren't supported. The built-in policy triggering events apply and you'll continue to Step 23 without defining policy attributes.
 
 14. Select **Next** to continue.
-15.	If you've selected the *General data leaks* or *Data leaks by priority users* templates and have selected the **User performs an exfiltration activity and associated indicators**, you can choose custom or default thresholds for the indicator triggering events that you've selected. Choose either the **Use default thresholds (Recommended)** or **Use custom thresholds for the triggering events**.
+15. If you've selected the *General data leaks* or *Data leaks by priority users* templates and have selected the **User performs an exfiltration activity and associated indicators**, you can choose custom or default thresholds for the indicator triggering events that you've selected. Choose either the **Use default thresholds (Recommended)** or **Use custom thresholds for the triggering events**.
 16. Select **Next** to continue.
-17.	If you've selected **Use custom thresholds for the triggering events**, for each triggering event indicator that you selected in Step 13, choose the appropriate level to generate the desired level of activity alerts.
+17. If you've selected **Use custom thresholds for the triggering events**, for each triggering event indicator that you selected in Step 13, choose the appropriate level to generate the desired level of activity alerts.
 18. Select **Next** to continue.
 19. On the **Policy indicators** page, you'll see the [indicators](insider-risk-management-settings.md#indicators) that you've defined as available on the **Insider risk settings** > **Indicators** page. Select the indicators you want to apply to the policy.
 
@@ -321,7 +321,7 @@ Complete the following steps to create a new policy:
     If you've selected a *Data theft* or *Data leaks* policy template, select one or more **Sequence detection** methods and a **Cumulative exfiltration detection** method to apply to the policy.
 
 20. Select **Next** to continue.
-21.	On the **Decide whether to use default or custom indicator thresholds** page, choose custom or default thresholds for the policy indicators that you've selected. Choose either the **Use default thresholds for all indicators** or **Specify custom thresholds** for the selected policy indicators. If you've selected Specify custom thresholds, choose the appropriate level to generate the desired level of activity alerts for each policy indicator.
+21. On the **Decide whether to use default or custom indicator thresholds** page, choose custom or default thresholds for the policy indicators that you've selected. Choose either the **Use default thresholds for all indicators** or **Specify custom thresholds** for the selected policy indicators. If you've selected Specify custom thresholds, choose the appropriate level to generate the desired level of activity alerts for each policy indicator.
 22. Select **Next** to continue.
 23. On the **Review** page, review the settings you've chosen for the policy and any suggestions or warnings for your selections. Select **Edit** to change any of the policy values or select **Submit** to create and activate the policy.
 
@@ -365,9 +365,9 @@ Complete the following steps to manage an existing policy:
     If you've selected other policy templates, custom triggering events aren't supported. The built-in policy triggering events apply and you'll continue to Step 23 without defining policy attributes.
 
 14. Select **Next** to continue.
-15.	If you've selected the *General data leaks* or *Data leaks by priority users* templates and have selected the **User performs an exfiltration activity and associated indicators**, you can choose custom or default thresholds for the indicator triggering events that you've selected. Choose either the **Use default thresholds (Recommended)** or **Use custom thresholds for the triggering events**.
+15. If you've selected the *General data leaks* or *Data leaks by priority users* templates and have selected the **User performs an exfiltration activity and associated indicators**, you can choose custom or default thresholds for the indicator triggering events that you've selected. Choose either the **Use default thresholds (Recommended)** or **Use custom thresholds for the triggering events**.
 16. Select **Next** to continue.
-17.	If you've selected **Use custom thresholds for the triggering events**, for each triggering event indicator that you selected in Step 13, choose the appropriate level to generate the desired level of activity alerts.
+17. If you've selected **Use custom thresholds for the triggering events**, for each triggering event indicator that you selected in Step 13, choose the appropriate level to generate the desired level of activity alerts.
 18. Select **Next** to continue.
 19. On the **Policy indicators** page, you'll see the [indicators](insider-risk-management-settings.md#indicators) that you've defined as available on the **Insider risk settings** > **Indicators** page. Select the indicators you want to apply to the policy.
 
@@ -378,7 +378,7 @@ Complete the following steps to manage an existing policy:
     If you've selected a *Data theft* or *Data leaks* policy template, select one or more **Sequence detection** methods and a **Cumulative exfiltration detection** method to apply to the policy.
 
 20. Select **Next** to continue.
-21.	On the **Decide whether to use default or custom indicator thresholds** page, choose custom or default thresholds for the policy indicators that you've selected. Choose either the **Use default thresholds for all indicators** or **Specify custom thresholds** for the selected policy indicators. If you've selected Specify custom thresholds, choose the appropriate level to generate the desired level of activity alerts for each policy indicator.
+21. On the **Decide whether to use default or custom indicator thresholds** page, choose custom or default thresholds for the policy indicators that you've selected. Choose either the **Use default thresholds for all indicators** or **Specify custom thresholds** for the selected policy indicators. If you've selected Specify custom thresholds, choose the appropriate level to generate the desired level of activity alerts for each policy indicator.
 22. Select **Next** to continue.
 23. On the **Review** page, review the settings you've chosen for the policy and any suggestions or warnings for your selections. Select **Edit** to change any of the policy values or select **Submit** to create and activate the policy.
 
