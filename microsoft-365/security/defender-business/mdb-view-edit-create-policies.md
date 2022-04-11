@@ -93,7 +93,7 @@ In Defender for Business, there are two main types of policies to protect your c
 8. On the **Review your policy** tab, review the general information, targeted devices, and configuration settings. 
 
    - Make any needed changes by selecting **Edit**.
-   - When you’re ready to proceed, choose **Update policy**.
+   - When you're ready to proceed, choose **Update policy**.
 
 ## Create a new policy
 
@@ -125,7 +125,7 @@ In Defender for Business, there are two main types of policies to protect your c
 9. On the **Review your policy** tab, review the general information, targeted devices, and configuration settings. 
 
    - Make any needed changes by selecting **Edit**.
-   - When you’re ready to proceed, choose **Create policy**.
+   - When you're ready to proceed, choose **Create policy**.
 
 
 ## Next steps

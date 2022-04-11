@@ -21,7 +21,7 @@ ms.topic: article
 ms.custom: 
 - migrationguides
 - admindeeplinkDEFENDER
-ms.date: 11/30/2021
+ms.date: 04/01/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ---
 
@@ -58,8 +58,6 @@ Need help? See your solution provider's documentation.
 ### Make sure your organization's devices are up to date
 
 Need help updating your organization's devices? See the following resources:
-
-<br/><br/>
 
 |OS|Resource|
 |---|---|
@@ -99,7 +97,9 @@ Permissions to the Microsoft 365 Defender portal can be granted by using either 
     If your organization requires a method other than Intune, choose one of the following options:
 
     - [Configuration Manager](/mem/configmgr/core/servers/deploy/configure/configure-role-based-administration)
+
     - [Advanced Group Policy Management](/microsoft-desktop-optimization-pack/agpm)
+    
     - [Windows Admin Center](/windows-server/manage/windows-admin-center/overview)
 
 3. Grant access to the Microsoft 365 Defender portal. (Need help? See [Manage portal access using RBAC](rbac.md).
@@ -107,8 +107,6 @@ Permissions to the Microsoft 365 Defender portal can be granted by using either 
 ## Configure device proxy and internet connectivity settings
 
 To enable communication between your devices and Defender for Endpoint, configure proxy and internet settings. The following table includes links to resources you can use to configure your proxy and internet settings for various operating systems and capabilities:
-
-<br/><br/>
 
 |Capabilities|Operating System|Resources|
 |---|---|---|

@@ -26,7 +26,7 @@ Scammers may call you directly on your phone and pretend to be representatives o
 
 Scammers might also initiate contact by displaying fake error messages on websites you visit, displaying support numbers and enticing you to call. They can also put your browser on full screen and display pop-up messages that won't go away, essentially locking your browser. These fake error messages aim to trick you into calling an indicated technical support hotline. Note that Microsoft error and warning messages never include phone numbers.
 
-When you engage with the scammers, they can offer fake solutions for your “problems” and ask for payment in the form of a one-time fee or subscription to a purported support service.
+When you engage with the scammers, they can offer fake solutions for your "problems" and ask for payment in the form of a one-time fee or subscription to a purported support service.
 
 **For more information, view [known tech support scam numbers and popular web scams](https://support.microsoft.com/help/4013405/windows-protect-from-tech-support-scams).**
 
@@ -40,9 +40,9 @@ It is also important to keep the following in mind:
 
 * Any communication with Microsoft has to be initiated by you.
 
-* Don’t call the number in the pop-ups. Microsoft’s error and warning messages never include a phone number.
+* Don't call the number in the pop-ups. Microsoft's error and warning messages never include a phone number.
 
-* Download software only from official vendor websites or the Microsoft Store. Be wary of downloading software from third-party sites, as some of them might have been modified without the author’s knowledge to bundle support scam malware and other threats.
+* Download software only from official vendor websites or the Microsoft Store. Be wary of downloading software from third-party sites, as some of them might have been modified without the author's knowledge to bundle support scam malware and other threats.
 
 * Use [Microsoft Edge](https://www.microsoft.com/windows/microsoft-edge) when browsing the internet. It blocks known support scam sites using Windows Defender SmartScreen (which is also used by Internet Explorer). Furthermore, Microsoft Edge can stop pop-up dialogue loops used by these sites.
 
