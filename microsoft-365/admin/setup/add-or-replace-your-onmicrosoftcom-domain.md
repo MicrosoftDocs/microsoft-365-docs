@@ -51,7 +51,7 @@ While you can add additional onmicrosoft.com domains, only one onmicrosoft.com d
 - Assign it as your fallback domain
 
 > [!NOTE]
-> You are limited a total of five onmicrosoft.com domains in your Microsoft 365 environment. Once they are added, currently they cannot be removed. 
+> You are limited a total of five onmicrosoft.com domains in your Microsoft 365 environment. Once they are added, they cannot be removed. 
   
 ## Before you begin
 
@@ -88,7 +88,7 @@ To add, modify, or remove domains, you **must** be a **Domain Name Administrator
 > [!NOTE]
 > Before changing your fallback domain to a new onmicrosoft.com domain, you may want to consider changing your onmicrosoft.com SharePoint domain. Creating an additional onmicrosoft domain and using it as your fallback domain will not do a rename for SharePoint Online. Your existing SharePoint and OneDrive URLs will remain the same.  You are able to change your.onmicrosoft SharePoint domain through the PowerShell steps provided in [SharePoint domain rename preview](/sharepoint/change-your-sharepoint-domain-name) (currently available to any tenant with less than 1,000 sites).
 
-After you have created your new onmicrsoft.com domain, do the following to change it to your fallback domain.
+After you have created your new onmicrosoft.com domain, do the following to change it to your fallback domain.
 
 1. In the Microsoft 365 admin center, select **Settings**, and then select **Domains**. 
 

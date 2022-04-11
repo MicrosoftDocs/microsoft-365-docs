@@ -47,6 +47,4 @@ Microsoft Defender for Business provides a streamlined setup and configuration e
 
 ## Next steps
 
-Proceed to:
-
-- [Step 1: Review the requirements for Microsoft Defender for Business](mdb-requirements.md)
+Proceed to [Step 1: Review the requirements for Microsoft Defender for Business](mdb-requirements.md).

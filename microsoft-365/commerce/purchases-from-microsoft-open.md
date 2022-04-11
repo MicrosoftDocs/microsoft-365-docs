@@ -1,5 +1,5 @@
 ---
-title: "Enter your product key purchased from Microsoft Open"
+title: "Enter your Microsoft Open product key"
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
