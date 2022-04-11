@@ -100,7 +100,7 @@ As a Test Base customer who has an standalone intunewin package. Customer can on
 2. Users are allowed to make their own selection on the OSes to be scheduled.
 
 
-**Step 5: Review + Publish**
+**Step 5: Review + Publish** <br/>
 Review the configuration after which the package could be published.
 
 
