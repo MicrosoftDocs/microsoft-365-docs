@@ -19,11 +19,20 @@ ms.localizationpriority: medium
 
 This article lists new and updated articles in the [Microsoft Managed Desktop documentation](index.yml). "Updated" articles have had material additions or corrections--minor fixes such as correction of typos, style, or formatting issues aren't listed. You can always view the history of specific commits (including details of any changes) by visiting the [repo on GitHub](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop).
 
+## April 2022
+
+New or changed article | Description
+--- | ---
+| [Shared devices](service-description/shared-devices.md) | Added Register new devices in shared mode section |
+| [Teams](get-started/teams.md) | Updated Microsoft Intune changes section |
+
 ## March 2022
 
 New or changed article | Description
 --- | ---
-| [Configurable settings reference](working-with-managed-desktop/config-setting-ref.md) | Added additional Proxy requirements |
+| [Device images](service-description/device-images.md) | Added Windows 10 Pro section |
+| [Admin support](working-with-managed-desktop/admin-support.md) | Added severity note to the Edit case details section |
+| [Configurable settings reference](working-with-managed-desktop/config-setting-ref.md) | Added additional proxy requirements |
 | [Localize the user experience](get-started/localization.md) | Added note to the Install more languages section |
 | [Configurable settings reference](working-with-managed-desktop/config-setting-ref.md) | Added note about legacy Edge |
 
