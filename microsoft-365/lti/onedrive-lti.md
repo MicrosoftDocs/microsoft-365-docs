@@ -1,5 +1,5 @@
 ---
-title: Use Microsoft OneDrive Learning Tools Interoperability
+title: Integrate Microsoft OneDrive LTI with Canvas
 ms.author: heidip
 author: MicrosoftHeidi
 manager: serdars
@@ -12,7 +12,7 @@ f1.keywords:
 ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Create and grade assignments, build and curate course content, and collaborate on files in real time with the new Microsoft OneDrive Learning Tools Interoperability App."
+description: Create and grade assignments, build and curate course content, and collaborate on files in real time with the new Microsoft OneDrive Learning Tools Interoperability App for Canvas.
 ---
 
 # Integrate Microsoft OneDrive LTI with Canvas

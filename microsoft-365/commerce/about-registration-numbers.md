@@ -1,5 +1,5 @@
 ---
-title: "About registration numbers and under review notifications"
+title: "About registration numbers and under-review notifications"
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT

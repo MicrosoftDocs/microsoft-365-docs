@@ -1,8 +1,8 @@
 ---
 title: Submit files for analysis by Microsoft
 description: Learn how to submit files to Microsoft for malware analysis, how to track your submissions, and dispute detections.
-ms.reviewer: 
-keywords: security, sample submission help, malware file, virus file, trojan file, submit, send to Microsoft, submit a sample, virus, trojan, worm, undetected, doesn’t detect, email microsoft, email malware, I think this is malware, I think it's a virus, where can I send a virus, is this a virus, MSE, doesn’t detect, no signature, no detection, suspect file, MMPC, Microsoft Malware Protection Center, researchers, analyst, WDSI, security intelligence
+ms.reviewer:
+keywords: security, sample submission help, malware file, virus file, trojan file, submit, send to Microsoft, submit a sample, virus, trojan, worm, undetected, doesn't detect, email microsoft, email malware, I think this is malware, I think it's a virus, where can I send a virus, is this a virus, MSE, doesn't detect, no signature, no detection, suspect file, MMPC, Microsoft Malware Protection Center, researchers, analyst, WDSI, security intelligence
 ms.prod: m365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
@@ -23,7 +23,7 @@ If you have a file that you suspect might be malware or is being incorrectly det
 
 ## How do I send a malware file to Microsoft?
 
-You can send us files that you think might be malware or files that have been incorrectly detected through the [sample submission portal](https://www.microsoft.com/en-us/wdsi/filesubmission).
+You can send us files that you think might be malware or files that have been incorrectly detected through the [sample submission portal](https://www.microsoft.com/wdsi/filesubmission).
 
 We receive a large number of samples from many sources. Our analysis is prioritized by the number of file detections and the type of submission. You can help us complete a quick analysis by providing detailed information about the product you were using and what you were doing when you found the file.
 
@@ -31,7 +31,7 @@ After you sign in, you will be able to track your submissions.
 
 ## Can I send a sample by email?
 
-No, we only accept submissions through our [sample submission portal](https://www.microsoft.com/en-us/wdsi/filesubmission).
+No, we only accept submissions through our [sample submission portal](https://www.microsoft.com/wdsi/filesubmission).
 
 ## Can I submit a sample without signing in?
 
@@ -43,15 +43,15 @@ The [Software Assurance ID (SAID)](https://www.microsoft.com/licensing/licensing
 
 ### How do I dispute the detection of my program?
 
-[Submit the file](https://www.microsoft.com/en-us/wdsi/filesubmission) in question as a software developer. Wait until your submission has a final determination.
+[Submit the file](https://www.microsoft.com/wdsi/filesubmission) in question as a software developer. Wait until your submission has a final determination.
 
-If you’re not satisfied with our determination of the submission, use the developer contact form provided with the submission results to reach Microsoft. We will use the information you provide to investigate further if necessary.
+If you're not satisfied with our determination of the submission, use the developer contact form provided with the submission results to reach Microsoft. We will use the information you provide to investigate further if necessary.
 
 We encourage all software vendors and developers to read about [how Microsoft identifies malware and unwanted software](criteria.md).
 
 ## How do I track or view past sample submissions?
 
-You can track your submissions through the [submission history page](https://www.microsoft.com/en-us/wdsi/submissionhistory).
+You can track your submissions through the [submission history page](https://www.microsoft.com/wdsi/submissionhistory).
 
 ## What does the submission status mean?
 
@@ -63,7 +63,7 @@ Each submission is shown to be in one of the following status types:
 
 * Closed—a final determination has been given by an analyst
 
-You can see the status of any files you submit to us on the [submission history page](https://www.microsoft.com/en-us/wdsi/submissionhistory).
+You can see the status of any files you submit to us on the [submission history page](https://www.microsoft.com/wdsi/submissionhistory).
 
 ## How does Microsoft prioritize submissions
 
