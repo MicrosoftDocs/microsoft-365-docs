@@ -58,7 +58,7 @@ You can save a new or existing query so that it is only accessible to you or sha
 ## Delete or rename a query
 1. Select the three dots to the right of a query you want to rename or delete.
 
-    :::image type="content" source="../../media/shared-query-3.png" alt-text="The options for a shared query in the Advanced Hunting page in the Microsoft 365 Defender portal" lightbox="../../media/shared-query-3.png":::
+    :::image type="content" source="../../media/advanced-hunting-del-save-query.png" alt-text="The options for a shared query in the Advanced Hunting page in the Microsoft 365 Defender portal" lightbox="../../media/advanced-hunting-del-save-query.png":::
 
 2. Select **Delete** and confirm deletion. Or select **Rename** and provide a new name for the query.
 
