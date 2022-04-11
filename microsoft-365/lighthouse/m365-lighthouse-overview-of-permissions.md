@@ -33,7 +33,7 @@ The tables in the next section describe which GDAP roles grant permission to rea
 
 The following table lists the recommended GDAP roles for some example MSP service tiers. 
 
-|| Account Managers| Service Desk Technicians |System Administrators | Escalation Engineers|
+|| Account Managers| Service Desk Technicians | System Administrators | Escalation Engineers|
 |---|---|---|---|---|
 | **Recommended GDAP roles** |<ul><li>Helpdesk Administrator</li></ul> |<ul><li>Security Reader<br>+</li><li>Helpdesk Administrator</li></ul> |<ul><li>Global Reader<br>+</li><li>User Administrator<br>+</li><li>Authentication Administrator</li></ul> |<ul><li>Global Reader<br>+</li><li>User Administrator<br>+</li><li>Intune Administrator<br>+</li><li>Security Administrator</li></ul>|
 
@@ -49,7 +49,7 @@ The following table lists the actions that the recommended GDAP roles&mdash;as a
 | Baselines    | <ul><li>View all data</li></ul> | <ul><li>View all data</li></ul> | <ul><li>View all data</li></ul>  | <ul><li>View all data</li></ul> |
 | Windows 365 | <ul><li>View all data</li></ul> | <ul><li>View all data</li></ul> | <ul><li>View all data</li></ul> | <ul><li>View all data</li></ul> |
 | Service health**| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;N/A | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;N/A | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;N/A | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;N/A |
-| Audit logs**| &nbsp;&nbsp;&nbsp;&nbsp;N/A | &nbsp;&nbsp;&nbsp;&nbsp;N/A | &nbsp;&nbsp;&nbsp;&nbsp;N/A | &nbsp;&nbsp;&nbsp;&nbsp;N/A |
+| Audit logs**| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;N/A | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;N/A | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;N/A | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;N/A |
 
 *See [Password reset permissions](/azure/active-directory/roles/permissions-reference#password-reset-permissions) for a table that lists which roles are required to reset passwords for customer tenant administrators.
 
