@@ -208,7 +208,7 @@ Turn off Cortana access to your organization's Microsoft hosted data
 
 3. Select **Save changes**.
 
-For services governed by the [Microsoft Services Agreement](https://go.microsoft.com/fwlink/p/?LinkId=2109174) and [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement), Microsoft is the data controller. As the data controller, Microsoft uses data to improve products and services in accordance with the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement).
+For services governed by the [Microsoft Services Agreement](https://go.microsoft.com/fwlink/p/?LinkId=2109174) and [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement), Microsoft is the data controller. As the data controller, Microsoft uses data to improve products and services in accordance with the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement).
 
 ## Related content
  
