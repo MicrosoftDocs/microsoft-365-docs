@@ -5,14 +5,14 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 
+ms.date:
 audience: ITPro
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - M365-security-compliance
-search.appverid: 
+search.appverid:
 - MET150
 description: "Learn how to design a data loss prevention (DLP) policy"
 ---
@@ -29,29 +29,29 @@ If you are new to Microsoft 365 DLP, it's helpful to work through these articles
 
 - [Learn about data loss prevention](dlp-learn-about-dlp.md#learn-about-data-loss-prevention) - this article introduces you to the data loss prevention discipline and Microsoft's implementation of DLP
 - [Plan for data loss prevention (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp) - by working through this article you will:
-    - [Identify stakeholders](dlp-overview-plan-for-dlp.md#identify-stakeholders)
-    - [Describe the categories of sensitive information to protect](dlp-overview-plan-for-dlp.md#describe-the-categories-of-sensitive-information-to-protect)
-    - [Set goals and strategy](dlp-overview-plan-for-dlp.md#set-goals-and-strategy)
+  - [Identify stakeholders](dlp-overview-plan-for-dlp.md#identify-stakeholders)
+  - [Describe the categories of sensitive information to protect](dlp-overview-plan-for-dlp.md#describe-the-categories-of-sensitive-information-to-protect)
+  - [Set goals and strategy](dlp-overview-plan-for-dlp.md#set-goals-and-strategy)
 - [Data Loss Prevention policy reference](dlp-policy-reference.md#data-loss-prevention-policy-reference) - this article introduces all the components of a DLP policy and how each one influences the behavior of a policy
 
 ## Policy design overview
 
-[Designing a policy](#policy-design-process) is mostly about clearly [defining your business needs, documenting them in a policy intent statement](#define-intent-for-the-policy) and then [mapping those needs to policy configuration](#map-business-needs-to-policy-configuration). You'll use the decisions you made in your planning phase to inform some of your policy design decisions. 
+[Designing a policy](#policy-design-process) is mostly about clearly [defining your business needs, documenting them in a policy intent statement](#define-intent-for-the-policy) and then [mapping those needs to policy configuration](#map-business-needs-to-policy-configuration). You'll use the decisions you made in your planning phase to inform some of your policy design decisions.
 
-### Define intent for the policy 
+### Define intent for the policy
 
-You should be able to summarize the business intent for every policy you have in a single statement. Developing this statement will drive conversations in your organization and, when fully fleshed out, this statement directly links the policy to a business purpose and provides a roadmap for policy design. The steps in the [Plan for data loss prevention (DLP)](dlp-overview-plan-for-dlp.md#overview-of-planning-process) article will help you get started on your policy intent statement.  
+You should be able to summarize the business intent for every policy you have in a single statement. Developing this statement will drive conversations in your organization and, when fully fleshed out, this statement directly links the policy to a business purpose and provides a roadmap for policy design. The steps in the [Plan for data loss prevention (DLP)](dlp-overview-plan-for-dlp.md#overview-of-planning-process) article will help you get started on your policy intent statement.
 
 Remember from [DLP policy configuration overview](dlp-learn-about-dlp.md#dlp-policy-configuration-overview) that all DLP policies require that you:
 
 - Choose what you want to monitor
 - Choose where you want to monitor
 - Choose the conditions that must be matched for a policy to be applied to an item
-- Choose the action to take when the policy conditions are met 
+- Choose the action to take when the policy conditions are met
 
-For example, here's a fictitious first draft of an intent statement that provides answers to all four questions: 
+For example, here's a fictitious first draft of an intent statement that provides answers to all four questions:
 
-*"We are a U.S. based organization, and we need to detect Office documents that contain sensitive health care information covered by HIPPA that are stored in OneDrive/SharePoint and protect against that information being shared in Teams chat and channel messages and restrict everyone from sharing them with unauthorized third parties".* 
+*"We are a U.S. based organization, and we need to detect Office documents that contain sensitive health care information covered by HIPPA that are stored in OneDrive/SharePoint and protect against that information being shared in Teams chat and channel messages and restrict everyone from sharing them with unauthorized third parties".*
 
 As you develop a policy design, you'll likely modify and extend the statement.
 
@@ -72,29 +72,28 @@ This example doesn't cover all the configuration points of a DLP policy, it woul
 
 ## Policy Design Process
 
-1. Complete the steps in:
-    1. [Plan for data loss prevention (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp) - by working through this article you will:
-        1. [Identify your stakeholders](dlp-overview-plan-for-dlp.md#identify-stakeholders)
-        1. [Describe the categories of sensitive information to protect](dlp-overview-plan-for-dlp.md#describe-the-categories-of-sensitive-information-to-protect)
-        1. [Set goals and strategy](dlp-overview-plan-for-dlp.md#set-goals-and-strategy)
-        1. [Define your policy deployment plan](dlp-overview-plan-for-dlp.md#policy-deployment)
+1. Complete the steps in [Plan for data loss prevention (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp) - by working through this article you will:
+   1. [Identify your stakeholders](dlp-overview-plan-for-dlp.md#identify-stakeholders)
+   1. [Describe the categories of sensitive information to protect](dlp-overview-plan-for-dlp.md#describe-the-categories-of-sensitive-information-to-protect)
+   1. [Set goals and strategy](dlp-overview-plan-for-dlp.md#set-goals-and-strategy)
+   1. [Define your policy deployment plan](dlp-overview-plan-for-dlp.md#policy-deployment)
 
-1. Familiarize yourself with [Data Loss Prevention policy reference](dlp-policy-reference.md#data-loss-prevention-policy-reference) so that you understand all the components of a DLP policy and how each one influences the behavior of a policy.
+2. Familiarize yourself with [Data Loss Prevention policy reference](dlp-policy-reference.md#data-loss-prevention-policy-reference) so that you understand all the components of a DLP policy and how each one influences the behavior of a policy.
 
-1. Familiarize yourself with [What the DLP policy templates include](what-the-dlp-policy-templates-include.md#what-the-dlp-policy-templates-include).
+3. Familiarize yourself with [What the DLP policy templates include](what-the-dlp-policy-templates-include.md#what-the-dlp-policy-templates-include).
 
-1. Develop your policy intent statement with your key stakeholders. Refer to the example earlier in this article.
+4. Develop your policy intent statement with your key stakeholders. Refer to the example earlier in this article.
 
-1. Determine how this policy fits into your overall DLP policy strategy.
+5. Determine how this policy fits into your overall DLP policy strategy.
 
-> [!IMPORTANT]
-> Policies can't be renamed once they are created. If you must rename a policy, you will have to create a new one with the desired name and retire the old one. So decide on the naming structure that all your policies will use now. 
+   > [!IMPORTANT]
+   > Policies can't be renamed once they are created. If you must rename a policy, you will have to create a new one with the desired name and retire the old one. So decide on the naming structure that all your policies will use now.
 
 6. Map the items in your policy intent statement to configuration options.
 
 7. Decide which policy template you will start from, predefined or custom.
 
-8. Go through the template and assemble all information required before you create the policy. It's likely that you will find that there are some configuration points that aren't covered in your policy intent statement. That's ok. Go back to your stakeholders to iron out the requirements for any missing configuration points. 
+8. Go through the template and assemble all information required before you create the policy. It's likely that you will find that there are some configuration points that aren't covered in your policy intent statement. That's ok. Go back to your stakeholders to iron out the requirements for any missing configuration points.
 
 9. Document the configuration of all the policy settings and review them with your stakeholders. You can re-use your policy intent statement mapping to configuration points, which is now fully fleshed out.
 
@@ -129,11 +128,11 @@ This example doesn't cover all the configuration points of a DLP policy, it woul
 
 
 - whether the protective actions you need are supported throught the associated location or if you need to compromise to extend coverage
-    - also usefule for identifying the most restrictive actions available 
+    - also usefule for identifying the most restrictive actions available
     - (we shouldn't mention here that the "content contains" condition is the primary staple for a DLP policy and should be utilized as a starting point for policy creation. The other workload-specific conditions can be ustilized as an extended or granular control of company's DLP policy. Useful for when "too much" data is being restricted and known sensitive data typically falls under certain conditions.)
     - (We can mention here that their quantitative goal such as "protect X% of data across all locations while maintaining x productivity" can be monitored throught alerts or reports. If protection is too high of working against their established goals, they can come back to policy and tweak their conditions/actions)
-- Finally, you should have a union of what, hwo and when to be covered which will easily map to generating a live policy via Microsoft DLP. 
-- 
+- Finally, you should have a union of what, hwo and when to be covered which will easily map to generating a live policy via Microsoft DLP.
+-
 5. At this stage you should asses how you should start this policy. ***LINK OUT TO DEPLOYING A POLICY COVERED IN THE PLANNING TOPIC TOO***
     - Test: your company is very large, conservative or the actions established are pretty restrictive
     - Test w/ notifications: same as above, but you get to test out investigation cadence or volume
@@ -159,7 +158,6 @@ Here are some examples of more detailed policy intent statement to configuration
 |...and restrict everyone from sharing those items with unauthorized third parties."  | - **Actions to take**: [You add](dlp-policy-reference.md#actions) *Restrict access or encrypt the content in Microsoft 365 locations* </br> - drives conversation on what actions to take when a policy is triggered including protective actions like sharing restrictions, awareness actions like notifications and alerts, and user empowerment actions like allow user overrides of a blocking action |
 
 -->
-
 
 ## See Also
 
