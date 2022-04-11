@@ -48,6 +48,8 @@ First, [connect to your Microsoft 365 tenant](/graph/powershell/get-started#auth
 
 Assigning and removing licenses for a user requires the User.ReadWrite.All permission scope or one of the other permissions listed in the ['Assign license' Graph API reference page](/graph/api/user-assignlicense).
 
+The Organization.Read.All permission scope is required to read the licenses available in the tenant.
+
 ```powershell
 Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
 ```
@@ -113,7 +115,7 @@ $addLicenses = @(
 Set-MgUserLicense -UserId "belinda@litwareinc.com" -AddLicenses $addLicenses -RemoveLicenses @()
 ```
 
-This example assigns **SPE_E5** (Microsoft 365 E5) with the **MICROSOFTBOOKINGS** (Microsoft Bookings)  service turned off:
+This example assigns **SPE_E5** (Microsoft 365 E5) with the **MICROSOFTBOOKINGS** (Microsoft Bookings) and **LOCKBOX_ENTERPRISE** (Customer LockBox) services turned off:
   
 ```powershell
 $e5Sku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'SPE_E5'
