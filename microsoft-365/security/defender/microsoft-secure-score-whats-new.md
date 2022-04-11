@@ -33,7 +33,7 @@ Microsoft Secure Score can be found at https://security.microsoft.com/securescor
 
 ## April 2022
 
-- Set user authentication for remote connections by using Network Level Authentication to 'Enabled'
+- Turn on user authentication for remote connections
 
 ## December 2021
 
