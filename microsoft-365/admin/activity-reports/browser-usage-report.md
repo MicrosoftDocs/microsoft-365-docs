@@ -28,7 +28,7 @@ The Microsoft 365 Reports dashboard shows you an activity overview across the pr
 
 1. In the admin center, go to the **Reports** \> <b><a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a></b> page.
 
-2. From the dashboard homepage, click on the **View more** button on the Microsoft browser usage card.
+2. From the dashboard homepage, click on the **View more** button on the Microsoft browser usage card.
 
 ## How to notify users to upgrade their browser
 
