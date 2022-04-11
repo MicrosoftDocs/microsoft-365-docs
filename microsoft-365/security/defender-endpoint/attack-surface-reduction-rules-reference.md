@@ -48,7 +48,7 @@ The following table lists the supported operating systems for rules that are  cu
 >
 > Attack surface reduction rules in Windows&nbsp;Server&nbsp;2012&nbsp;R2 and Windows&nbsp;Server&nbsp;2016 are available for devices onboarded using the modern unified solution package. For more information, see [New functionality in the modern unified solution for Windows Server 2012 R2 and 2016 Preview](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview).
 
-| Rule name|Windows&nbsp;10 | Windows&nbsp;Server 2019 | Windows&nbsp;Server | Windows&nbsp;Server 2016 <sup>[[1](#fn1)]<sup></sup> <sup>[[2](#fn1)]<sup></sup> | Windows&nbsp;Server 2012&nbsp;R2 <sup>[[1](#fn1)]<sup></sup> <sup>[2](#fn1)]<sup></sup> |
+| Rule name|Windows&nbsp;10 | Windows&nbsp;Server 2019 | Windows&nbsp;Server | Windows&nbsp;Server 2016 <sup>[[1, 2](#fn1)]<sup></sup> | Windows&nbsp;Server 2012&nbsp;R2 <sup>[[1, 2](#fn1)]<sup></sup> |
 |:---|:---:|:---:|:---:|:---:|:---:|
 | [Block abuse of exploited vulnerable signed drivers](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y | Y | Y <br> version 1803 (Semi-Annual Channel) or later |  Y | Y |
 | [Block Adobe Reader from creating child processes](#block-adobe-reader-from-creating-child-processes) | Y version 1809 or later | Y | Y |  Y | Y |
@@ -69,6 +69,7 @@ The following table lists the supported operating systems for rules that are  cu
 |  |  |  |  |  |  |
 
 (<a id="fn1">1</a>) Refers to the modern, unified solution for Windows Server 2012 and 2016. For more information, see [Onboard Windows Servers to the Defender for Endpoint service](configure-server-endpoints.md).
+
 (<a id="fn1">2</a>) For Windows&nbsp;Server 2016 and Windows&nbsp;Server 2012&nbsp;R2, the minimum required version of Microsoft Endpoint Configuration Manager is version 2111.
 
 ## Supported configuration management systems
