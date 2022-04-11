@@ -34,8 +34,6 @@ ms.technology: mde
 - Windows Server 2022
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-[!include[Prerelease information](../../includes/prerelease.md)]
-
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configserver-abovefoldlink)
 
 Defender for Endpoint extends support to also include the Windows Server operating system. This support provides advanced attack detection and investigation capabilities seamlessly through the Microsoft 365 Defender console. Support for Windows Server provides deeper insight into server activities, coverage for kernel and memory attack detection, and enables response actions.
@@ -48,12 +46,9 @@ For guidance on how to download and use Windows Security Baselines for Windows s
 
 You'll need to complete the following general steps to successfully onboard servers.
 
-![Illustration of onboarding flow for Windows Servers and Windows 10 devices](images/server-onboarding-tools-methods.png)
+:::image type="content" source="images/server-onboarding-tools-methods.png" alt-text="An illustration of onboarding flow for Windows Servers and Windows 10 devices" lightbox="images/server-onboarding-tools-methods.png":::
 
-**Windows Server 2012 R2 and Windows Server 2016 (Preview)**
-
->[!IMPORTANT]
-> You'll need to turn on the preview features in the Endpoints section of Microsoft 365 Defender to use this functionality. Navigate to [Microsoft 365 Defender > Settings > Endpoints > Advanced features](https://security.microsoft.com/preferences2/integration) and turn on Preview features.
+**Windows Server 2012 R2 and Windows Server 2016**
 
 - Download installation and onboarding packages
 - Apply the installation package
@@ -69,9 +64,9 @@ You'll need to complete the following general steps to successfully onboard serv
 
 
 
-### New Windows Server 2012 R2 and 2016 functionality in the modern unified solution (Preview)
+### New Windows Server 2012 R2 and 2016 functionality in the modern unified solution
 
-Previous implementation of onboarding Windows Server 2012 R2 and Windows Server 2016 required the use of Microsoft Monitoring Agent (MMA).
+The previous implementation of onboarding Windows Server 2012 R2 and Windows Server 2016 required the use of Microsoft Monitoring Agent (MMA).
 
 The new unified solution package makes it easier to onboard servers by removing dependencies and installation steps. In addition, this unified solution package comes with the following major improvements:
 
@@ -97,17 +92,13 @@ Depending on the server that you're onboarding, the unified solution installs Mi
 
 If you have previously onboarded your servers using MMA, follow the guidance provided in [Server migration](server-migration.md) to migrate to the new solution.
 
->[!NOTE]
->While this method of onboarding Windows Server 2012 R2 and Windows Server 2016 is in preview, you can choose to continue to use the previous onboarding method using Microsoft Monitoring Agent (MMA). For more information, see [Install and configure endpoints using MMA](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma).
-
-#### Known issues and limitations on the new, unified solution package for Windows Server 2012 R2 and 2016
+#### Known issues and limitations in the new, unified solution package for Windows Server 2012 R2 and 2016
 
 The following specifics apply to the new unified solution package for Windows Server 2012 R2 and 2016:
 
 - Ensure connectivity requirements as specified in [Enable access to Microsoft Defender for Endpoint service URLs in the proxy server](/microsoft-365/security/defender-endpoint/configure-proxy-internet?enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server) are met. They are equivalent to those for Windows Server 2019. 
 - We are investigating an issue with Windows Server 2012 R2 connectivity to cloud when static TelemetryProxyServer is used and the certificate revocation list (CRL) URLs are not reachable from the SYSTEM account context. The immediate mitigation is to either use an alternative proxy option that provides such connectivity, or configure the same proxy via the WinInet setting on the SYSTEM account context.
 - Previously, the use of the Microsoft Monitoring Agent (MMA) on Windows Server 2016 and below allowed for the OMS / Log Analytics gateway to provide connectivity to Defender cloud services. The new solution, like Microsoft Defender for Endpoint on Windows Server 2019, Windows Server 2022, and Windows 10, does not support this gateway.
-
 - On Windows Server 2016, verify that Microsoft Defender Antivirus is installed, is active and up to date. You can download and install the latest platform version using Windows Update. Alternatively, download the update package manually from the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623) or from [MMPC](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64).  
 - On Windows Server 2012 R2, there is no user interface for Microsoft Defender Antivirus. In addition, the user interface on Windows Server 2016 only allows for basic operations. To perform operations on a device locally, refer to [Manage Microsoft Defender for Endpoint with PowerShell, WMI, and MPCmdRun.exe](/microsoft-365/security/defender-endpoint/manage-mde-post-migration-other-tools). As a result, features that specifically rely on user interaction, such as where the user is prompted to make a decision or perform a specific task, may not work as expected. It is recommended to disable or not enable the user interface nor require user interaction on any managed server as it may impact protection capability.
 - Not all Attack Surface Reduction rules are available on all operating systems. See [Attack Surface Reduction (ASR) rules](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules).
@@ -121,22 +112,8 @@ The following specifics apply to the new unified solution package for Windows Se
 - On Windows Server 2012 R2, Network Events may not populate in the timeline. This issue requires a Windows Update released as part of the [October 12, 2021 monthly rollup (KB5006714)](https://support.microsoft.com/topic/october-12-2021-kb5006714-monthly-rollup-4dc4a2cd-677c-477b-8079-dcfef2bda09e).
 - Operating system upgrades are not supported. Offboard then uninstall before upgrading.
 - Automatic exclusions for *server roles* are not supported on Windows Server 2012 R2; however, built-in exclusions for operating system files are. For more information about adding exclusions, see [Virus scanning recommendations for Enterprise computers that are running currently supported versions of Windows](https://support.microsoft.com/topic/virus-scanning-recommendations-for-enterprise-computers-that-are-running-currently-supported-versions-of-windows-kb822158-c067a732-f24a-9079-d240-3733e39b40bc).
-- Currently, if you choose to offboard and uninstall the modern, unified solution and re-onboard the previous MMA-based EDR sensor, you may encounter repeated `MsSenseS.exe` crashes. 
-
-As a workaround, remove the following registry keys if they exist:
-- `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WMI\Security\fdedb2b8-61e4-4a7e-8b15-abf214a08fcc`
-- `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WMI\Security\c60418cc-7e07-400f-ae3b-d521c5dbd96f`
-
-You can use the following commands:
-
-```cmd
-reg delete HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WMI\Security /v fdedb2b8-61e4-4a7e-8b15-abf214a08fcc /f
-reg delete HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WMI\Security /v c60418cc-7e07-400f-ae3b-d521c5dbd96f /f
-```
-No restart is required.
-
-
-<a name="integration-with-azure-defender"></a>
+- On machines that have been upgraded from the previous, MMA-based solution and the EDR sensor is a (preview) version older than 10.8047.22439.1056, uninstalling and reverting back to the MMA-based solution may lead to crashes. 
+- Integration with Microsoft Defender for Cloud / Microsoft Defender for servers for alerting and automated deployment or upgrade is not yet available. Whilst you can manually install the new solution on these machines, no alerts will be displayed in Microsoft Defender for Cloud.
 
 ## Integration with Microsoft Defender for Cloud
 
@@ -145,16 +122,13 @@ Microsoft Defender for Endpoint integrates seamlessly with Microsoft Defender fo
 For more information, see [Integration with Microsoft Defender for Cloud](azure-server-integration.md).
 
 > [!NOTE]
-> For Windows Server 2012 R2 and 2016 running the modern unified solution preview, integration with Microsoft Defender for Cloud / Microsoft Defender for servers for alerting and automated deployment is not yet available. Whilst you can manually install the new solution on these machines, no alerts will be displayed in Microsoft Defender for Cloud.
+> For Windows Server 2012 R2 and 2016 running the modern unified solution, integration with Microsoft Defender for Cloud / Microsoft Defender for servers for alerting and automated deployment or upgrade is not yet available. Whilst you can manually install the new solution on these machines, no alerts will be displayed in Microsoft Defender for Cloud.
 
 > [!NOTE]
 > - The integration between Microsoft Defender for servers and Microsoft Defender for Endpoint has been expanded to support Windows Server 2022, [Windows Server 2019, and Windows Virtual Desktop (WVD)](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview).
 > - Server endpoint monitoring utilizing this integration has been disabled for Office 365 GCC customers.
 
 ## Windows Server 2012 R2 and Windows Server 2016
-
-> [!NOTE]
-> While this method of onboarding Windows Server 2012 R2 and Windows Server 2016 is in preview, you can choose to continue to use the previous onboarding method using Microsoft Monitoring Agent (MMA). For more information, see [Install and configure endpoints using MMA](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma).
 
 ### Prerequisites
 
@@ -169,16 +143,20 @@ The installer package will check if the following components have already been i
 
 **Prerequisites for Windows Server 2016** 
 
-Aside from fully updating the machine with the Latest Cumulative Update (LCU), verify that Microsoft Defender Antivirus is installed, is active and up to date. You can download and install the latest platform version using Windows Update. Alternatively, download the update package manually from the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623) or from [MMPC](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64). 
+The Servicing Stack Update (SSU) from September 14, 2021 or later must be installed.  The Latest Cumulative Update (LCU) from September 20, 2018 or later must be installed.  It is recommended to install the latest available SSU and LCU on the server.  
 
-> [!NOTE]
-> In order to successfully update the built-in version of Windows Defender, which has a version number starting with 4.10, to the latest available platform, a servicing stack update must have been applied as well as the Latest Cumulative Update (LCU) equal to or later than September 20, 2018—KB4457127 (OS Build 14393.2515).
+The Microsoft Defender Antivirus feature must be installed and running version 4.18.2109.6 or later.  You can download and install the latest platform version using Windows Update. Alternatively, download the update package manually from the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623) or from [MMPC](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64).
 
 **Prerequisites for running with third-party security solutions**
 
 If you intend to use a third-party antimalware solution, you'll need to run Microsoft Defender Antivirus in passive mode. You must remember to set to passive mode during the installation and onboarding process.
 
-**New update package for Microsoft Defender for Endpoint on Windows Server 2012 R2 and 2016**
+
+**Update package for Microsoft Defender for Endpoint on Windows Server 2012 R2 and 2016**
+> [!NOTE]
+> If you're installing Microsoft Defender for Endpoint on Servers with McAfee Endpoint Security (ENS) or VirusScan Enterprise (VSE), the version of the McAfee platform may need to be updated to ensure Microsoft Defender Antivirus is not removed or disabled. For more information including the specific version numbers required, see, [McAfee Knowledge Center article](https://kc.mcafee.com/corporate/index?page=content&id=KB88214).
+
+
 
 To receive regular product improvements and fixes for the EDR Sensor component, ensure Windows Update [KB5005292](https://go.microsoft.com/fwlink/?linkid=2168277) gets applied or approved. In addition, to keep protection components updated, see [Manage Microsoft Defender Antivirus updates and apply baselines](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions).
 
@@ -319,16 +297,7 @@ The following steps are only applicable if you're using a third-party anti-malwa
     - Type: `REG_DWORD`
     - Value: `1`
 
-2. Run the following PowerShell command to verify that the passive mode was configured:
-
-    ```powershell
-    Get-WinEvent -FilterHashtable @{ProviderName="Microsoft-Windows-Sense" ;ID=84}
-    ```
-
-3. Confirm that a recent event containing the passive mode event is found:
-
-    ![Image of passive mode verification result](images/atp-verify-passive-mode.png)
-
+       :::image type="content" source="images/atp-verify-passive-mode.png" alt-text="The passive mode verification result" lightbox="images/atp-verify-passive-mode.png":::
 > [!IMPORTANT]
 >
 > - When you use Microsoft Defender for Cloud to monitor servers, a Defender for Endpoint tenant is automatically created (in the US for US users, in the EU for European users, and in the UK for UK users).
@@ -402,13 +371,15 @@ You can offboard Windows Server 2012 R2, Windows Server 2016, Windows Server (SA
 - [Offboard and monitor devices using Mobile Device Management tools](configure-endpoints-mdm.md#offboard-and-monitor-devices-using-mobile-device-management-tools)
 - [Offboard devices using a local script](configure-endpoints-script.md#offboard-devices-using-a-local-script)
 
+After offboarding, you can proceed to uninstall the unified solution package on Windows Server 2012 R2 and Windows Server 2016.
+
 For other Windows server versions, you have two options to offboard Windows servers from the service:
 
 - Uninstall the MMA agent
 - Remove the Defender for Endpoint workspace configuration
 
->[!NOTE]
-> These offboarding instructions for other Windows server versions also apply if you are running the previous Microsoft Defender for Endpoint for Windows Server 2016 and Windows Server 2012 R2 that requires the MMA. Instructions to migrate to the new unfiied solution are at [Server migration scenarios in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/server-migration).
+> [!NOTE]
+> These offboarding instructions for other Windows server versions also apply if you are running the previous Microsoft Defender for Endpoint for Windows Server 2016 and Windows Server 2012 R2 that requires the MMA. Instructions to migrate to the new unified solution are at [Server migration scenarios in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/server-migration).
 
 ## Related topics
 

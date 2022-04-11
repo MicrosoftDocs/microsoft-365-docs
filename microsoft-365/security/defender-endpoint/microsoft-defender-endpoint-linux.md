@@ -43,6 +43,10 @@ Microsoft Defender for Endpoint for Linux includes antimalware and endpoint dete
 
 - Access to the Microsoft 365 Defender portal
 - Linux distribution using the [systemd](https://systemd.io/) system manager
+
+  >[!NOTE]
+  >Linux distribution using system manager, except for RHEL/CentOS 6.x support both SystemV and Upstart.
+
 - Beginner-level experience in Linux and BASH scripting
 - Administrative privileges on the device (in case of manual deployment)
 
@@ -72,7 +76,7 @@ If you experience any installation failures, refer to [Troubleshooting installat
 
 ### System requirements
 
-- Supported Linux server distributions and x64 (AMD64/EM64T) versions:
+- Supported Linux server distributions and x64 (AMD64/EM64T) and x86_64 versions:
 
   - Red Hat Enterprise Linux 6.7 or higher
   - Red Hat Enterprise Linux 7.2 or higher
@@ -91,11 +95,13 @@ If you experience any installation failures, refer to [Troubleshooting installat
     > Distributions and version that are not explicitly listed are unsupported (even if they are derived from the officially supported distributions).
 
 - List of supported kernel versions
+  - Minimum kernel version 3.10.0-327 (For all the supported Linux distributions mentioned above except Red Hat Enterprise Linux 6 and CentOS 6)
+  - The `fanotify` kernel option must be enabled
   - Red Hat Enterprise Linux 6 and CentOS 6:
     - For 6.7: 2.6.32-573.*
     - For 6.8: 2.6.32-642.*
-    - For 6.9: 2.6.32-696.*
-    - For 6.10: 2.6.32.754.2.1.el6.x86_64 to 2.6.32-754.41.2:
+    - For 6.9: 2.6.32-696.* (except 2.6.32-696.el6.x86_64)
+    - For 6.10: 2.6.32.754.2.1.el6.x86_64 to 2.6.32-754.43.1:
     
        - 2.6.32-754.10.1.el6.x86_64
        - 2.6.32-754.11.1.el6.x86_64
@@ -124,19 +130,12 @@ If you experience any installation failures, refer to [Troubleshooting installat
        - 2.6.32-754.6.3.el6.x86_64
        - 2.6.32-754.9.1.el6.x86_64
 
+ > [!NOTE]
+ > After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that that are listed in this section are provided for technical upgrade support only.
 
-    > [!NOTE]
-    > After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that that are listed in this section are provided for technical upgrade support only.
 
-  - For rest of the supported distributions, minimum kernel version required is 3.10.0-327
-
-- Event provider mechanism
-  - Red Hat Enterprise Linux 6 and CentOS 6: `Talpa` kernel module based solution
-  - For rest of the supported distributions: `Fanotify`
-    - The `fanotify` kernel option must be enabled
-
-      > [!CAUTION]
-      > Running Defender for Endpoint on Linux side by side with other `fanotify`-based security solutions is not supported. It can lead to unpredictable results, including hanging the operating system.
+  > [!CAUTION]
+  > Running Defender for Endpoint on Linux side by side with other `fanotify`-based security solutions is not supported. It can lead to unpredictable results, including hanging the operating system.
 
 - Disk space: 1 GB
 
@@ -187,13 +186,10 @@ The following downloadable spreadsheet lists the services and their associated U
 
 ****
 
-
 |Spreadsheet of domains list| Description|
 |---|---|
-|Microsoft Defender for Endpoint URL list for commercial customers | Spreadsheet of specific DNS records for service locations, geographic locations, and OS for commercial customers. <p> [Download the spreadsheet here.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
-| Microsoft Defender for Endpoint URL list for Gov/GCC/DoD customers| Spreadsheet of specific DNS records for service locations, geographic locations, and OS for Gov/GCC/DoD customers. <p> [Download the spreadsheet here.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
-|
-
+|Microsoft Defender for Endpoint URL list for commercial customers| Spreadsheet of specific DNS records for service locations, geographic locations, and OS for commercial customers. <p> [Download the spreadsheet here.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
+| Microsoft Defender for Endpoint URL list for Gov/GCC/DoD | Spreadsheet of specific DNS records for service locations, geographic locations, and OS for Gov/GCC/DoD customers. <p> [Download the spreadsheet here.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
 
 > [!NOTE]
 > For a more specific URL list, see [Configure proxy and internet connectivity settings](/microsoft-365/security/defender-endpoint/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server).
