@@ -70,8 +70,8 @@ Wondering what you can experience in your free trial? The compliance solutions t
 
   Compliance Manager can help you throughout your compliance journey, from taking inventory of your data protection risks to managing the complexities of implementing controls, staying current with regulations and certifications, and reporting to auditors. [Learn more about Compliance Manager](compliance-manager.md)
 
-- **Data Loss Prevention (DLP)** 
-  Data Loss Prevention helps you control sharing and use of sensitive info on devices, apps, and services. With trials, you can extend coverage of DLP polices to Teams and devices, protect even more sensitive content using trainable classifiers and exact data match (EDM), and get started quickly with our recommended DLP policies.  [Learn more about Data Loss Prevention](dlp-learn-about-dlp.md) 
+- **Data Loss Prevention** 
+  Data Loss Prevention (DLP) helps you control sharing and use of sensitive info on devices, apps, and services. With trials, you can extend coverage of DLP policies to Teams and devices, protect even more sensitive content using trainable classifiers and exact data match (EDM), and get started quickly with our recommended DLP policies.  [Learn more about Data Loss Prevention](dlp-learn-about-dlp.md)
   
    When the trial ends:
 
