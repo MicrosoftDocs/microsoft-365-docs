@@ -42,7 +42,7 @@ The following overview explains the process of using a Microsoft data connector 
 
 ## Step 1: Create a Slack eDiscovery connector
 
-1. Go to <https://compliance.microsoft.com> and click **Data connectors** on the left navigation pane.
+1. Go to <https://compliance.microsoft.com> and click **Data connectors** on the left navigation pane.
 
 2. On the **Overview** tab, click **Filter** and select **By Microsoft**, and then apply the filter.
 
@@ -72,7 +72,15 @@ The following overview explains the process of using a Microsoft data connector 
 
    After you click **Allow**, the Slack page closes and the **Map Slack eDiscovery users to Microsoft 365 users** page in the connector wizard is displayed.
 
-## Step 3: Map users and select data types to import
+## Step 3: Specify the users to import data for
+
+Select one of the following options to specify which users whose Slack eDiscovery data you want to import.
+
+- **All users in your organization**. Select this option to import data for all users.
+
+- **Only users on Litigation hold**. Select this option to import data only for users whose mailboxes are placed on Litigation hold. This option imports data to user mailboxes that have the LitigationHoldEnabled property set to True. For more information, see [Create a Litigation hold](create-a-litigation-hold.md).
+
+## Step 4: Map users and select data types to import
 
 1. Configure one or both of the following options to map Slack users to their Microsoft 365 mailboxes.
 
@@ -98,7 +106,7 @@ The following overview explains the process of using a Microsoft data connector 
 
 3. After you configure the data types to import, click **Next**, review the connector settings, and then click **Finish** to create the connector.
 
-## Step 4: Monitor the Slack eDiscovery connector
+## Step 5: Monitor the Slack eDiscovery connector
 
 After you create the Slack eDiscovery connector, you can view the connector status in the Microsoft 365 compliance center.
 
