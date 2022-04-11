@@ -169,14 +169,16 @@ The installer package will check if the following components have already been i
 
 **Prerequisites for Windows Server 2016** 
 
-Aside from fully updating the machine with the Latest Cumulative Update (LCU), verify that Microsoft Defender Antivirus is installed, is active and up to date. You can download and install the latest platform version using Windows Update. Alternatively, download the update package manually from the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623) or from [MMPC](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64). 
+The Servicing Stack Update (SSU) from September 14, 2021 or later must be installed.  The Latest Cumulative Update (LCU) from September 20, 2018 or later must be installed.  It is recommended to install the latest available SSU and LCU on the server.  
 
-> [!NOTE]
-> In order to successfully update the built-in version of Windows Defender, which has a version number starting with 4.10, to the latest available platform, a servicing stack update must have been applied as well as the Latest Cumulative Update (LCU) equal to or later than September 20, 2018—KB4457127 (OS Build 14393.2515).
+The Microsoft Defender Antivirus feature must be installed and running version 4.18.2109.6 or later.  You can download and install the latest platform version using Windows Update. Alternatively, download the update package manually from the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623) or from [MMPC](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64).
 
 **Prerequisites for running with third-party security solutions**
 
 If you intend to use a third-party antimalware solution, you'll need to run Microsoft Defender Antivirus in passive mode. You must remember to set to passive mode during the installation and onboarding process.
+
+> [!NOTE]
+> If you're installing Microsoft Defender for Endpoint on Servers with McAfee Endpoint Security (ENS) or VirusScan Enterprise (VSE), the version of the McAfee platform may need to be updated to ensure Defender is not removed or disabled.  See this [McAfee Knowledge Center article](https://kc.mcafee.com/corporate/index?page=content&id=KB88214) for more information including the specific version numbers required.
 
 **New update package for Microsoft Defender for Endpoint on Windows Server 2012 R2 and 2016**
 
