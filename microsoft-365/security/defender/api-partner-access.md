@@ -57,7 +57,7 @@ This article explains how to:
 
 Microsoft 365 Defender exposes much of its data and actions through a set of programmatic APIs. Those APIs will help you automate work flows and innovate based on Microsoft 365 Defender capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
-In general, you’ll need to take the following steps to use the APIs:
+In general, you'll need to take the following steps to use the APIs:
 
 - Create a **multi-tenant** Azure AD application.
 - Get authorized (consent) by your user administrator for your application to access Microsoft 365 Defender resources it needs.
@@ -262,7 +262,6 @@ A successful response will look like this:
 In the following image, you can see a decoded token acquired from an app, with ```Incidents.Read.All```, ```Incidents.ReadWrite.All```, and ```AdvancedHunting.Read.All``` permissions:
 
 :::image type="content" source="../../media/webapp-decoded-token.png" alt-text="The Decoded Token pane in the Microsoft 365 Defender portal" lightbox="../../media/webapp-decoded-token.png":::
-
 
 ## Use the token to access the Microsoft 365 Defender API
 

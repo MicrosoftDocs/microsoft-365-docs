@@ -29,7 +29,7 @@ The data classification content explorer allows you to natively view the items t
 
 ## Prerequisites
 
-For licensing requirements, see [Information Protection: Data Classification Analytics: Over Content & Activity Explorer](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-classification-analytics-overview-content--activity-explorer)
+For licensing requirements, see [Information Protection: Data Classification Analytics: Overview Content & Activity Explorer](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-classification-analytics-overview-content--activity-explorer)
 
 ### Permissions
 
@@ -96,7 +96,7 @@ A [DLP policy](dlp-learn-about-dlp.md) can help protect sensitive information, w
 
 ### Sensitivity labels
 
-A [sensitivity label](sensitivity-labels.md) is simply a tag that indicates the value of the item to your organization. It can be applied manually, or automatically. Once applied it gets embedded in the document and will follow it everywhere it goes. A sensitivity label enables various protective behaviors, such as mandatory watermarking or encryption.
+A [sensitivity label](sensitivity-labels.md) is simply a tag that indicates the value of the item to your organization. It can be applied manually, or automatically. Once applied, the label gets embedded in the document and will follow the document everywhere it goes. A sensitivity label enables various protective behaviors, such as mandatory watermarking or encryption.
 
 Sensitivity labels must be enabled for files that are in SharePoint and OneDrive in order for the corresponding data to surface in the data classification page. For more information, see [Enable sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
