@@ -13,7 +13,7 @@ ms.technology: mdb
 ms.localizationpriority: medium
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
-ms.collection
+ms.collection: 
 - SMB
 - m365-initiative-defender-business
 - m365-security-compliance
