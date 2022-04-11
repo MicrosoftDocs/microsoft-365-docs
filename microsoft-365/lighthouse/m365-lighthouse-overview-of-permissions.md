@@ -53,7 +53,7 @@ The following table lists the actions that the recommended GDAP roles&mdash;as a
 
 *See [Password reset permissions](/azure/active-directory/roles/permissions-reference#password-reset-permissions) for a table that lists which roles are required to reset passwords for customer tenant administrators.
 
-**Other roles and permissions are required to view service health and audit logs. For more information, see [Permissions in the partner tenant](#permissions-in-the-partner-tenant).
+**Other roles and permissions are required to view Service health and Audit logs. For more information, see [Permissions in the partner tenant](#permissions-in-the-partner-tenant).
 
 > [!NOTE]
 > If you get a message in Lighthouse saying that you don't have permission to view or edit information, you're assigned a role that doesn't have the appropriate permissions to perform the action. You'll need to reach out to an admin in your partner tenant who can assign you the appropriate role for the action you're trying to perform.
