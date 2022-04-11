@@ -43,7 +43,8 @@ Tamper protection is available for devices that are running one of the following
 - Windows Server 2012 R2
 
 > [!NOTE]
-> Tamper protection in Windows Server 2012 R2 is available for devices that are onboarded to Microsoft Defender for Endpoint by using the modern unified solution package. For more information, see [New functionality in the modern unified solution for Windows Server 2012 R2 and 2016 Preview](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview).
+> Tamper protection in Windows Server 2012 R2 is available for devices onboarded using the modern unified solution package. For more information, see [Onboard Windows servers to the Microsoft Defender for Endpoint service](/microsoft-365/security/defender-endpoint/configure-server-endpoints).
+
 
 ## Overview
 
@@ -169,7 +170,7 @@ If your organization uses Microsoft Endpoint Manager (MEM) you can turn tamper p
 If you're using [version 2006 of Configuration Manager](/mem/configmgr/core/plan-design/changes/whats-new-in-version-2006), you can manage tamper protection settings on Windows 10, Windows 10 Enterprise multi-session, Windows 11, Windows 11 Enterprise multi-session, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019, and Windows Server 2022 by using a method called *tenant attach*. Tenant attach enables you to sync your on-premises-only Configuration Manager devices into the Microsoft Endpoint Manager admin center, and then deliver endpoint security configuration policies to on-premises collections & devices.
 
 > [!NOTE]
-> The procedure can be used to extend tamper protection to devices running Windows 10, Windows 10 Enterprise multi-session, Windows 11, Windows 11 Enterprise multi-session, Windows Server 2019, and Windows Server 2022. Make sure to review the prerequisites and other information in the resources mentioned in this procedure.
+> The procedure can be used to extend tamper protection to devices running Windows 10, Windows 10 Enterprise multi-session, Windows 11, Windows 11 Enterprise multi-session, Windows Server 2019, and Windows Server 2022. Make sure to review the prerequisites and other information in the resources mentioned in this procedure. For Windows Server 2012 R2 running the modern, unified solution [version 2203 of Configuration Manager](/mem/configmgr/core/plan-design/changes/whats-new-in-version-2203) is required.
 
 1. Set up tenant attach. To learn more, see [Get started: Create and deploy endpoint security policies from the admin center](/mem/configmgr/tenant-attach/endpoint-security-get-started).
 
@@ -207,9 +208,9 @@ Here's what you see in the Windows Security app:
 
 3. Set **Tamper Protection** to **On** or **Off**.
 
-## Are you using Windows Server 2016, or Windows version 1709, 1803, or 1809?
+## Are you using Windows Server 2012 R2, 2016, or Windows version 1709, 1803, or 1809?
 
-If you are using Windows Server 2016, Windows 10 version 1709, 1803, or [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019), you won't see **Tamper Protection** in the Windows Security app. Instead, you can use PowerShell to determine whether tamper protection is enabled.
+If you are using Windows Server 2012 R2 using the modern unified solution, Windows Server 2016, Windows 10 version 1709, 1803, or [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019), you won't see **Tamper Protection** in the Windows Security app. Instead, you can use PowerShell to determine whether tamper protection is enabled.
 
 On Windows Server 2016, the Settings app will not accurately reflect the status of real-time protection when tamper protection is enabled.
 
