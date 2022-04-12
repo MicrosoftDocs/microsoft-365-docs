@@ -111,14 +111,23 @@ When you set up automatic enrollment, users add their work account to the device
        - MDM Discovery URL
        - MDM Compliance URL
 
+4. Choose **Save**.
+
+5. After a device has been enrolled in Intune, you can add it to a device group. [Learn more about device groups in Microsoft Defender for Business](mdb-create-edit-device-groups.md).
+
+
 > [!TIP]
 > To learn more about automatic enrollment, see [Enable Windows automatic enrollment](/mem/intune/enrollment/windows-enroll).
 
 #### To have users enroll their own Windows devices
 
+1. Watch the following video to see how enrollment works: <br/><br/>
 
+   > [!VIDEO https://www.youtube.com/embed/TKQxEckBHiE?rel=0]  
 
+2. Share this article with users in your organization: [Enroll Windows 10/11 devices in Intune](/mem/intune/user-help/enroll-windows-10-device).
 
+3. After a device has been enrolled in Intune, you can add it to a device group. [Learn more about device groups in Microsoft Defender for Business](mdb-create-edit-device-groups.md).
 
 ### Running a detection test on a Windows client
 
@@ -145,8 +154,6 @@ To view the list of devices that are onboarded to Defender for Business, in the 
 - If you have other devices to onboard, select the tab that corresponds to the operating system on the devices (Windows Server, macOS, or mobile devices), and follow the guidance on that tab.
 
 - If you're done onboarding devices, proceed to [Step 5: Configure your security settings and policies in Microsoft Defender for Business](mdb-configure-security-settings.md)
-
-- After a device has been enrolled in Intune, you can add it to a device group. [Learn more about device groups in Microsoft Defender for Business](mdb-create-edit-device-groups.md).
 
 - See [Get started using Microsoft Defender for Business](mdb-get-started.md).
 
