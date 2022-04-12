@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: how-to
-ms.date: 03/10/2022
+ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -31,7 +31,6 @@ As threats are detected, remediation actions come into play. Depending on the pa
 **This article describes**:
 
 - [How to use the Action center](#how-to-use-the-action-center)
-
 - [Remediation actions](#remediation-actions)
 
 >

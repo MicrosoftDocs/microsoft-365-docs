@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 03/15/2022
+ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -48,7 +48,6 @@ When it comes to onboarding devices and configuring security settings for your c
 ## Review your setup and configuration options
 
 The following table describes each experience:
-<br/><br/>
 
 | Portal experience  | Description  |
 |---------|---------|

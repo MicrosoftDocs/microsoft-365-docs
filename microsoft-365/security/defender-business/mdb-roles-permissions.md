@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 04/01/2022
+ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -40,7 +40,7 @@ To perform tasks in the Microsoft 365 Defender portal, such as configuring Micro
 
 ## Roles in Defender for Business
 
-The following table describes the three roles that can be assigned in Defender for Business. [Learn more about admin roles](../../admin/add-users/about-admin-roles.md). <br/><br/>
+The following table describes the three roles that can be assigned in Defender for Business. [Learn more about admin roles](../../admin/add-users/about-admin-roles.md).
 
 | Permission level | Description |
 |:---|:---|
