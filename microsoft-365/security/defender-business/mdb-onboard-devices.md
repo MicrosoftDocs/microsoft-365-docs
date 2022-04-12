@@ -258,6 +258,8 @@ You'll need Microsoft Intune to onboard mobile devices, such as Android and iOS/
 - [Enroll Android devices](/mem/intune/enrollment/android-enroll)
 - [Enroll iOS or iPadOS devices](/mem/intune/enrollment/ios-enroll)
 
+After a device has been enrolled in Intune, you can add it to a device group. [Learn more about device groups in Microsoft Defender for Business](mdb-create-edit-device-groups.md).
+
 ## Next steps
 
 Proceed to:
