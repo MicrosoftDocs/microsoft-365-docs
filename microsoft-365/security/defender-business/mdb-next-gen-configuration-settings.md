@@ -85,16 +85,12 @@ The following table describes settings that are preconfigured for Defender for B
 ## Next steps
 
 - [View and manage incidents in Microsoft Defender for Business](mdb-view-manage-incidents.md)
-
 - [Respond to and mitigate threats in Microsoft Defender for Business](mdb-respond-mitigate-threats.md)
-
 - [Review remediation actions in the Action center](mdb-review-remediation-actions.md)
 
 
 ## See also
 
 - [Visit the Microsoft 365 Defender portal](mdb-get-started.md)
-
 - [Manage firewall settings in Microsoft Defender for Business](mdb-custom-rules-firewall.md)
-
 - [Policy CSP - Defender](/windows/client-management/mdm/policy-csp-defender)

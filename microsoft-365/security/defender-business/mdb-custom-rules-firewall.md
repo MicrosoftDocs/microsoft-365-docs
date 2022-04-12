@@ -104,7 +104,5 @@ To learn more about firewall policies and settings, see [Firewall in Microsoft D
 ## Next steps
 
 - [View and manage incidents in Microsoft Defender for Business](mdb-view-manage-incidents.md)
-
 - [Respond to and mitigate threats in Microsoft Defender for Business](mdb-respond-mitigate-threats.md)
-
 - [Review remediation actions in the Action center](mdb-review-remediation-actions.md)

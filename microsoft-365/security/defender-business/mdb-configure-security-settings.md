@@ -73,7 +73,7 @@ The following table can help you choose where to manage your security policies a
 
 ## View or edit your next-generation protection policies
 
-Depending on whether you're using the Microsoft 365 Defender portal or Microsoft Endpoint Manager to manage your next-generation protection policies, use one of the procedures in the following table: <br/><br/>
+Depending on whether you're using the Microsoft 365 Defender portal or Microsoft Endpoint Manager to manage your next-generation protection policies, use one of the procedures in the following table:
 
 | Portal | Procedure |
 |:---|:---|
@@ -82,7 +82,7 @@ Depending on whether you're using the Microsoft 365 Defender portal or Microsoft
 
 ## View or edit your firewall policies and custom rules
 
-Depending on whether you're using the Microsoft 365 Defender portal or Microsoft Endpoint Manager to manage your firewall protection, use one of the procedures in the following table: <br/><br/>
+Depending on whether you're using the Microsoft 365 Defender portal or Microsoft Endpoint Manager to manage your firewall protection, use one of the procedures in the following table:
 
 | Portal | Procedure |
 |:---|:---|
@@ -131,9 +131,7 @@ In addition to security policies that are applied to devices, there are other se
 
 ### Settings to review for Defender for Business
 
-The following table describes settings to view (and if necessary, edit) in Defender for Business.
-
-<br/><br/>
+The following table describes settings to view (and if necessary, edit) in Defender for Business:
 
 | Category | Setting | Description |
 |:---|:---|:---|

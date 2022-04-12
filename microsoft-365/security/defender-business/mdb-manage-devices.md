@@ -71,9 +71,6 @@ See [Offboarding a device](mdb-onboard-devices.md#offboarding-a-device).
 ## Next steps
 
 - [View and manage incidents in Microsoft Defender for Business](mdb-view-manage-incidents.md)
-
 - [Respond to and mitigate threats in Microsoft Defender for Business](mdb-respond-mitigate-threats.md)
-
 - [Review remediation actions in the Action center](mdb-review-remediation-actions.md)
-
 - [Create or edit device groups](mdb-create-edit-device-groups.md)
