@@ -88,7 +88,7 @@ The following table compares security features and capabilities in Defender for 
 
 (<a id="fn1">1</a>) Onboard and manage devices in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) or with another tool, such as Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)).
 
-(<a id="fn2">2</a>) These capabilities are optimized for small and medium-sized businesses.
+(<a id="fn2">2</a>) These capabilities are optimized for small and medium-sized businesses. In Defender for Business, automated investigation and response is turned on by default, tenant wide. 
 
 (<a id="fn3">3</a>) There is no timeline tab in Defender for Business.
 
