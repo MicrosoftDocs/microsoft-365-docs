@@ -251,7 +251,7 @@
 ##### [Event timeline](threat-and-vuln-mgt-event-timeline.md)
 ##### [Vulnerable devices report](tvm-vulnerable-devices-report.md)
 ##### [Hunt for exposed devices](tvm-hunt-exposed-devices.md)
-#### [Active threat and campaign guidance]()
+#### [Guidance for active threats and campaigns]()
 ##### [Overview](threats-and-campaigns-overview.md)
 ##### [Manage the Log4j vulnerability](tvm-manage-log4j-guidance.md)
 ### [Device discovery]()

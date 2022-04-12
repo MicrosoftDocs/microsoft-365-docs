@@ -42,14 +42,16 @@ Threat and vulnerability management provides you with the following capabilities
 - **Discovery**: Detection of exposed devices, both Microsoft Defender for Endpoint onboarded devices as well as devices that have been discovered but are not yet onboarded, is based on vulnerable software and vulnerable files detected on disk.
 - **Threat awareness:** A consolidated view to assess your organizational exposure. This view shows your exposure at the device level and software level, and provides access to details on vulnerable files like, the last time it was seen, the last time it was executed and the last time it was executed with open ports. You can use this information to prioritize your remediation actions. It can take up to 24 hours for data related to exposed devices to appear on the dashboard.
 - **Mitigation options:** Apply mitigation options to help lower your exposure risk.
-  **Advanced hunting:** Use advanced hunting to return details for vulnerable log4j files identified on disk.
+- **Advanced hunting:** Use advanced hunting to return details for vulnerable log4j files identified on disk.
 
 > [!NOTE]
 > These capabilities are supported on Windows 10 & Windows 11, Windows Server, Linux and macOS.
+>
 > Support on Linux requires Microsoft Defender for Endpoint Linux client version 101.52.57 (30.121092.15257.0) or later.
+>
 > Support on macOS requires Microsoft Defender for Endpoint macOS client version 20.121111.15416.0 or later.
-
-For more details on supported versions, see [Supported operating systems platforms and capabilities](tvm-supported-os.md).
+>
+>For more details on supported versions, see [Supported operating systems platforms and capabilities](tvm-supported-os.md).
 
 ## Exposed devices discovery
 
