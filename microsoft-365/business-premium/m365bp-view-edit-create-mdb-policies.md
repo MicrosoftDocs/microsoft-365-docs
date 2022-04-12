@@ -37,8 +37,6 @@ Microsoft 365 Business Premium includes two main types of policies to protect yo
 
 - **Firewall policies**, which determine what network traffic is permitted to flow to and from your organization's devices
 
-:::image type="content" source="../media/mdb-deviceconfiguration.png" alt-text="Screenshot of Device Configuration page in the Microsoft 365 Defender portal.":::
-
 These policies are part of Microsoft Defender for Business, which is included in your Microsoft 365 Business Premium subscription.
 
 ## View your existing device protection policies
