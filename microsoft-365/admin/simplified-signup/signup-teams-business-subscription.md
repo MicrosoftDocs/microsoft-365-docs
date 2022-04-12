@@ -58,8 +58,8 @@ If you choose to use a domain you already own, you can use it for your email add
 
 ### How does recurring billing work?
 
-When Recurring billing is on, your subscription will continue to be billed each month (or year, depending on your billing plan) on the day you subscribed. You can turn it off or back on again in the admin center if your subscription is active. Learn more at [Turn Recurring billing off or on](../../commerce/subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on).
+When Recurring billing is on, your subscription will continue to be billed each month (or year, depending on your billing plan) on the day you subscribed. You can turn it off or back on again in the admin center if your subscription is active. Learn more at [Turn Recurring billing off or on](../../commerce/subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on).
 
 ### What do I do if I want to change my business name?
 
-Contact our small business support experts who can help you change your business name. Learn more at [Get support](../get-help-support.md).
+Contact our small business support experts who can help you change your business name. Learn more at [Get support](../get-help-support.md).

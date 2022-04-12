@@ -98,14 +98,14 @@ These appear in the **Microsoft 365 compliance center** > **Data classification*
 
 Pre-trained classifiers can scan content in these languages:
 
-•	Chinese (Simplified)
-•	English
-•	French
-•	German
-•	Italian
-•	Japanese
-•	Portuguese
-•	Spanish
+- Chinese (Simplified)
+- English
+- French
+- German
+- Italian
+- Japanese
+- Portuguese
+- Spanish
 
 ### Custom classifiers
 

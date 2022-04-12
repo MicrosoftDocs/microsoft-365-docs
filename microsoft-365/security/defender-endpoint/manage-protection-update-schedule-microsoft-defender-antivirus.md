@@ -26,6 +26,10 @@ ms.collection: m365-security-compliance
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- Microsoft Defender Antivirus
+
+**Platforms**
+- Windows
 
 Microsoft Defender Antivirus lets you determine when it should look for and download updates.
 
@@ -54,7 +58,8 @@ You can also randomize the times when each endpoint checks and downloads protect
 ## Use Group Policy to schedule protection updates
 
 > [!IMPORTANT]
-> By default, Microsoft Defender Antivirus will check for an update 15 minutes before the time of any scheduled scans. Enabling these settings will override that default.
+> By default, "SignatureScheduleDay" is set as "8" and "SignatureUpdateInterval" is set as "0" so Microsoft Defender Antivirus will not schedule protection updates.
+Enabling these settings will override that default.
 
 1. On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and click **Edit**.
 
@@ -93,6 +98,16 @@ SignatureUpdateInterval
 See the following for more information and allowed parameters:
 
 - [Windows Defender WMIv2 APIs](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
+
+> [!TIP]
+> If you’re looking for Antivirus related information for other platforms, see:
+> - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
+> - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
+> - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md)
+> - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
+> - [Configure Defender for Endpoint on Android features](android-configure.md)
+> - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
 
 ## Related articles
 
