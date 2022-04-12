@@ -81,17 +81,23 @@ For example - User-Agent: ${jndi:dns://192.168.1.3:5353/MDEDiscoveryUser-Agent} 
 Threat and vulnerability management provides layers of detection to help you discover:
 
 - **Vulnerable software**: Discovery is based on installed application Common Platform Enumerations (CPE) that are known to be vulnerable to Log4j remote code execution.
-- **Vulnerable files:** Both files in memory and files in the file system are assessed. These files can be Log4j-core jar files with the known vulnerable version or an Uber-JAR that contains either a vulnerable jndi lookup class or a vulnerable log4j-core file. Specifically, it:
-  - determines if a JAR file contains a vulnerable Log4j file by examining JAR files and searching for the following file: \\META-INF\\maven\\org.apache.logging.log4j\\log4j-core\\pom.properties; if the said file exists, the Log4j version is read and extracted
-  - searches for the JndiLookup.class file inside the JAR file by looking for paths that contain the string “/log4j/core/lookup/JndiLookup.class”; if the JndiLookup.class file exists, threat and vulnerability management determines if this JAR contains a Log4j file with the version defined in pom.properties
-  - searches for any vulnerable Log4j-core JAR files embedded within nested-JAR by searching for paths that contain any of these strings:
-    - lib/log4j-core-
-    - WEB-INF/lib/log4j-core-
-    - App-INF/lib/log4j-core-
+- **Vulnerable files:** Both files in memory and files in the file system are assessed. These files can be Log4j-core jar files with the known vulnerable version or an Uber-JAR that contains either a vulnerable jndi lookup class or a vulnerable log4j-core file.
+
+Specifically, it:
+
+- determines if a JAR file contains a vulnerable Log4j file by examining JAR files and searching for the following file:
+  \\META-INF\\maven\\org.apache.logging.log4j\\log4j-core\\pom.properties - if the said file exists, the Log4j version is read and extracted.
+
+- searches for the JndiLookup.class file inside the JAR file by looking for paths that contain the string “/log4j/core/lookup/JndiLookup.class” - if the JndiLookup.class file exists, threat and vulnerability management determines if this JAR contains a Log4j file with the version defined in pom.properties.
+
+- searches for any vulnerable Log4j-core JAR files embedded within nested-JAR by searching for paths that contain any of these strings:
+  - lib/log4j-core-
+  - WEB-INF/lib/log4j-core-
+  - App-INF/lib/log4j-core-
 
 This table describes the search capabilities supported platforms and versions:
 
-| Capability | File Type | Windows10+, server2019+ | Server 2008R2, server2012R2, server2016 |Linux + macOS|
+| Capability | File Type | Windows10+<br/>server2019+ | Server 2008R2, server2012R2<br />server2016 |Linux + macOS|
 |:---|:---|:---|:---|:---|
 |Search In Memory  | Log4j-core | Yes | - | Yes |
 | |Uber-JARs | Yes | - | Yes |
