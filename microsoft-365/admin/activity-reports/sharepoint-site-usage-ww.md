@@ -31,7 +31,7 @@ As a Microsoft 365 admin, the Reports dashboard shows you the activity overview 
 ## How to get to the SharePoint site usage report
 
 1. In the admin center, go to the **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> page. 
-2. From the dashboard homepage, click on the **View more** button on the SharePoint card.
+2. From the dashboard homepage, click on the **View more** button on the SharePoint card.
 
 ## Show user details in the reports
 
