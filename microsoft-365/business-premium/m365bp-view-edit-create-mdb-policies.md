@@ -47,9 +47,13 @@ These policies are part of Microsoft Defender for Business, which is included in
 
 2. In the navigation pane, choose **Device configuration**. Policies are organized by operating system (such as **Windows client**) and policy type (such as **Next-generation protection** and **Firewall**). 
 
+   :::image type="content" source="../media/mdb-deviceconfiguration.png" alt-text="Screenshot of Device Configuration page.":::
+
 3. Select an operating system tab (for example, **Windows clients**), and then review the list of policies under the **Next-generation protection** and **Firewall** categories. 
 
 4. To view more details about a policy, select its name. A side pane will open that provides more information about that policy, such as which devices are protected by that policy.
+
+   :::image type="content" source="../media/mdb-deviceconfig-selectedpolicy.png" alt-text="Screenshot of a policy selected in the Device Configuration page.":::
 
 ## Edit an existing device protection policy
 
