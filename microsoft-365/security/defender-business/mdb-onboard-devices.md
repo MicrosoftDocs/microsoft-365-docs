@@ -113,9 +113,11 @@ After the command has run, the Command Prompt window will close automatically. I
 
 Proceed to:
 
-- [Step 5: Configure your security settings and policies in Microsoft Defender for Business](mdb-configure-security-settings.md)
+- If you have other devices to onboard, select the tab that corresponds to the operating system on the devices (Windows Server, macOS, or mobile devices), and follow the guidance on that tab.
 
-- [Get started using Microsoft Defender for Business](mdb-get-started.md) 
+- If you're done onboarding devices, proceed to [Step 5: Configure your security settings and policies in Microsoft Defender for Business](mdb-configure-security-settings.md)
+
+- See [Get started using Microsoft Defender for Business](mdb-get-started.md) 
 
 ## [**Windows Server**](#tab/WindowsServers)
 
