@@ -157,6 +157,8 @@ To view the list of devices that are onboarded to Defender for Business, in the 
 
 ## [**Windows Server**](#tab/WindowsServers)
 
+You can onboard a Windows Server device by using a local script. 
+
 > [!IMPORTANT]
 > The ability to onboard Windows Server endpoints is currently in preview.
 
@@ -166,15 +168,25 @@ To view the list of devices that are onboarded to Defender for Business, in the 
 
 3. Select an operating system, such as **Windows Server 1803, 2019, and 2022**, and then, in the **Deployment method** section, choose **Local script**. 
 
+   If you select **Windows Server 2012 R2 and 2016**, you'll have two packages to download and run: an installation package, and an onboarding package. The installation package contains an MSI file that installs the Microsoft Defender for Business agent. The onboarding package contains the script to onboard your Windows Server endpoint to Defender for Business. 
+
 4. Select **Download onboarding package**. We recommend saving the onboarding package to a removable drive.
 
-5. On a Windows device, extract the contents of the configuration package to a location, such as the Desktop folder. You should have a file named `WindowsDefenderATPLocalOnboardingScript.cmd`. 
+   If you selected **Windows Server 2012 R2 and 2016**, also select **Download installation package**, and save it to a removable drive
+
+5. On your Windows Server endpoint, extract the contents of the installation/onboarding package(s) to a location, such as the Desktop folder. You should have a file named `WindowsDefenderATPLocalOnboardingScript.cmd`. 
+
+   If you're onboarding Windows Server 2012 R2 or Windows Server 2016, extract the installation package first.
 
 6. Open Command Prompt as an administrator.
 
-7. Type the location of the script file. For example, if you copied the file to the Desktop folder, you would type `%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd`, and then press the Enter key (or select **OK**).
+7. If you're onboarding Windows Server 2012R2 or Windows Server 2016, run the following command: `Msiexec /i md4ws.msi /quiet`. 
 
-8. Proceed to [Run a detection test on Windows Server](#running-a-detection-test-on-windows-server)
+   If you're onboarding Windows Server 1803, 2019, or 2022, skip this step and proceed to step 8.
+
+8. Type the location of the script file. For example, if you copied the file to the Desktop folder, you would type `%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd`, and then press the Enter key (or select **OK**).
+
+9. Proceed to [Run a detection test on Windows Server](#running-a-detection-test-on-windows-server)
 
 ### Running a detection test on Windows Server
 
