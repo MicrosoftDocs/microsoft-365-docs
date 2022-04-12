@@ -124,8 +124,8 @@ See LINK.
 
 Choose one of the following options to onboard macOS devices:
 
-- 
-
+- [Local script for macOS](#local-script-for-macos)
+- [Endpoint Manager for macOS](#endpoint-manager-for-macos)
 
 ### Local script for macOS
 
