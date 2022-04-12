@@ -140,7 +140,7 @@ Follow the steps below to add Microsoft Defender for Endpoint app into your mana
 
     :::image type="content" source="images/fa4ac18a6333335db3775630b8e6b353.png" alt-text="The page displaying the synced application" lightbox="images/fa4ac18a6333335db3775630b8e6b353.png":::
 
-9. Defender for Endpoint supports App configuration policies for managed devices via Intune. This capability can be leveraged to autogrant applicable Android permission(s), so the end user does not need to accept these permission(s).
+9. Defender for Endpoint supports App configuration policies for managed devices via Intune. This capability can be leveraged to select different configurations for Defender.
 
     1. In the **Apps** page, go to **Policy > App configuration policies > Add > Managed devices**.
 
@@ -155,18 +155,19 @@ Follow the steps below to add Microsoft Defender for Endpoint app into your mana
 
         :::image type="content" source="images/android-create-app.png" alt-text=" The Associated app details pane" lightbox="images/android-create-app.png":::
 
-    1. In the **Settings** page, go to the Permissions section click on Add to view the list of supported permissions. In the Add Permissions section, select the following permissions:
+    1. In the **Settings** page, go to the **Configuration settings** section and choose **‘Use configuration designer’** in Configuration settings format. 
 
-       - External storage (read)
-       - External storage (write)
+       :::image type="content" alt-text="Image of android create app configuration policy." source="images/configurationformat.png" lightbox="images/configurationformat.png":::
 
-       Then select **OK**.
+    1. Click on **Add** to view a list of supported configurations. Select the required configuration and click on **Ok**.
 
-       :::image type="content" source="images/android-create-app-config.png" alt-text="The Add permissions pane" lightbox="images/android-create-app-config.png":::
+       :::image type="content" alt-text="Image of selecting configuration policies for android." source="images/selectconfigurations.png" lightbox="images/selectconfigurations.png":::
 
-    1. You should now see both the permissions listed and now you can autogrant both by choosing autogrant in the **Permission state** drop-down and then select **Next**.
 
-       :::image type="content" source="images/android-auto-grant.png" alt-text="The Permission state pane" lightbox="images/android-auto-grant.png":::
+    1. You should see all the selected configurations listed. You can change the configuration value as required and then select **Next**.
+        
+        :::image type="content" alt-text="Image of selected configuration policies." source="images/listedconfigurations.png" lightbox="images/listedconfigurations.png":::
+       
 
     1. In the **Assignments** page, select the user group to which this app config policy would be assigned to. Click **Select groups to include** and selecting the applicable group and then selecting **Next**. The group selected here is usually the same group to which you would assign Microsoft Defender for Endpoint Android app.
 
