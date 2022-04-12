@@ -58,7 +58,5 @@ The Microsoft 365 Defender portal enables your security team to respond to and m
 ## Next steps
 
 - [Review remediation actions in the Action center](mdb-review-remediation-actions.md)
-
 - [Manage devices in Microsoft Defender for Business](mdb-manage-devices.md)
-
 - [View and manage incidents in Microsoft Defender for Business](mdb-view-manage-incidents.md)

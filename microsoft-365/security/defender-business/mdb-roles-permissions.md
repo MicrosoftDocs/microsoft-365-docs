@@ -80,5 +80,4 @@ If you haven't already added users to your subscription, see [Add users and assi
 Proceed to:
 
 - [Step 3: Set up email notifications](mdb-email-notifications.md)
-
 - [Step 4: Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md)

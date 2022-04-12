@@ -81,7 +81,5 @@ Using the setup wizard is optional. If you choose not to use the wizard, or if t
 ## Next steps
 
 - [Set up email notifications for your security team](mdb-email-notifications.md)
-
 - [Get started using the Microsoft 365 Defender portal](mdb-get-started.md)
-
 - [Use your Threat & Vulnerability Management dashboard](mdb-view-tvm-dashboard.md)

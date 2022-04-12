@@ -43,7 +43,5 @@ Several reports are available in the Microsoft 365 Defender portal ([https://sec
 ## See also
 
 - [Get started using Microsoft Defender for Business](mdb-get-started.md)
-
 - [View and manage incidents in Microsoft Defender for Business](mdb-view-manage-incidents.md)
-
 - [Manage devices in Microsoft Defender for Business](mdb-manage-devices.md)

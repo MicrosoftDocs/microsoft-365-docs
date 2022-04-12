@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: how-to
-ms.date: 03/15/2022
+ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -67,7 +67,5 @@ Microsoft Defender for Business assigns an alert severity based on the severity 
 ## Next steps
 
 - [Respond to and mitigate threats in Microsoft Defender for Business](mdb-respond-mitigate-threats.md)
-
 - [Review remediation actions in the Action center](mdb-review-remediation-actions.md)
-
 - [View or edit device policies in Microsoft Defender for Business](mdb-view-edit-policies.md)

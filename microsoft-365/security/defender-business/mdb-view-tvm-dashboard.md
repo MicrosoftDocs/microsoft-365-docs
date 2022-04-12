@@ -44,7 +44,5 @@ To learn more about Threat & Vulnerability Management, see [Threat and vulnerabi
 ## Next steps
 
 - [Tutorials and simulations in Microsoft Defender for Business](mdb-tutorials.md)
-
 - [Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md)
-
 - [View or edit policies in Microsoft Defender for Business](mdb-view-edit-create-policies.md)

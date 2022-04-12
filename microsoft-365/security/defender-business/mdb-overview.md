@@ -74,5 +74,4 @@ With Defender for Business, you can help protect the devices and data your busin
 ## Next steps
 
 - [Learn more about the simplified configuration process in Microsoft Defender for Business](mdb-simplified-configuration.md)
-
 - [Find out how to get Microsoft Defender for Business](get-defender-business.md)
