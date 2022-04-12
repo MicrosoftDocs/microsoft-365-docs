@@ -153,11 +153,11 @@ You can use a local script to onboard Mac devices. When you run the onboarding s
 
 10. Use the following Python command in Bash to run the onboarding package: 
 
-`/usr/bin/python MicrosoftDefenderATPOnboardingMacOs.py`
+   `/usr/bin/python MicrosoftDefenderATPOnboardingMacOs.py`
 
 11. To confirm that the device is associated with your company, use the following Python command in Bash: 
 
-`mdatp health --field org_id`.
+   `mdatp health --field org_id`.
 
 12. If you are using macOS 10.15 (Catalina) or later, grant Defender for Business consent to protect your device by following these steps:   
 
@@ -166,7 +166,7 @@ You can use a local script to onboard Mac devices. When you run the onboarding s
 
 13. To verify that the device is onboarded, use the following command in Bash: 
 
-`mdatp health --field real_time_protection_enabled`
+   `mdatp health --field real_time_protection_enabled`
 
 ### Endpoint Manager for macOS
 
