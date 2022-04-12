@@ -31,6 +31,9 @@ ms.collection: M365-security-compliance
 - Microsoft Defender Antivirus
 - Microsoft 365
 
+**Platforms**
+- Windows
+
 You might already know that:
 
 - **Microsoft Defender Antivirus protects your Windows device from software threats, such as viruses, malware, and spyware**. Microsoft Defender Antivirus is your complete, ongoing protection, built into Windows 10 and Windows 11, and ready to go. [Microsoft Defender Antivirus is your next-generation protection](./microsoft-defender-antivirus-in-windows-10.md). 
@@ -81,6 +84,16 @@ Protection from ransomware is one great reason to put your files in OneDrive. An
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/70b4d256-46fb-481f-ad9b-921ef5fd7bed]
 
+> [!TIP]
+> If you’re looking for Antivirus related information for other platforms, see:
+> - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
+> - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
+> - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md)
+> - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
+> - [Configure Defender for Endpoint on Android features](android-configure.md)
+> - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
+
 ## Want to learn more? See these resources:
 
 - [OneDrive](/onedrive)
@@ -88,3 +101,5 @@ Protection from ransomware is one great reason to put your files in OneDrive. An
 - [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/office-365-atp)
 
 - [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)
+
+
