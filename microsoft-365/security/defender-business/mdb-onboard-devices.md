@@ -45,7 +45,7 @@ Choose one of the following options to onboard Windows client devices to Defende
 
 - [Automatic onboarding](#automatic-onboarding-for-windows-clients) (for devices that are already enrolled in Microsoft Endpoint Manager, which includes Microsoft Intune and Mobile Device Management capabilities)
 - [Local script](#local-script-for-windows-clients) (for onboarding devices manually in the Microsoft 365 Defender portal)
-- [Microsoft Endpoint Manager](#endpoint-manager-for-windows-clients)
+- [Microsoft Endpoint Manager](#endpoint-manager-for-windows-clients) (included in [Microsoft 365 Business Premium](../../business-premium/index.md))
 
 ### Automatic onboarding for Windows clients
 
