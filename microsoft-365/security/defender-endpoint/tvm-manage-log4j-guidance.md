@@ -35,7 +35,7 @@ The Log4j vulnerability is a remote code execution (RCE) vulnerability found in 
 > [!NOTE]
 > Refer to the blogs [Guidance for preventing, detecting, and hunting for exploitation of the Log4j 2 vulnerability and](https://www.microsoft.com/security/blog/2021/12/11/guidance-for-preventing-detecting-and-hunting-for-cve-2021-44228-log4j-2-exploitation/) [Microsoft Security Response Center](https://msrc-blog.microsoft.com/2021/12/11/microsofts-response-to-cve-2021-44228-apache-log4j2/) for guidance and technical information about the vulnerability and product specific mitigation recommendations to protect your organization.
 
-## Overview of discovery, assessment and mitigation capabilities
+## Overview of discovery, monitoring and mitigation capabilities
 
 Threat and vulnerability management provides you with the following capabilities to help you identify, monitor, and mitigate your organizational exposure to the Log4j vulnerability:
 
@@ -67,7 +67,7 @@ To enable Log4 detection:
 2. Select **Enable Log4j detection (CVE-2021-44228)**
 3. Select **Save**
 
-:::image type="content" source="images/enable_log4j.png" alt-text="The enable log4j detection setting" lightbox="images/1156c82ffadd356ce329d1cf551e806c.png":::
+:::image type="content" source="images/enable_log4j.png" alt-text="The enable log4j detection setting" lightbox="images/enable_log4j.png":::
 
 Running these probes will trigger the standard Log4j flow without causing any harmful impact on either the device being probed or the probing device. The probing itself is done by sending multiple HTTP requests to discovered devices, targeting common web application ports (for example - 80,8000,8080,443,8443) and URLs. The request contains HTTP headers with a JNDI payload that triggers a DNS request from the probed machine.
 
@@ -84,7 +84,7 @@ Threat and vulnerability management provides layers of detection to help you dis
 - **Vulnerable files:** Both files in memory and files in the file system are assessed. These files can be Log4j-core jar files with the known vulnerable version or an Uber-JAR that contains either a vulnerable jndi lookup class or a vulnerable log4j-core file. Specifically, it:
 
   - determines if a JAR file contains a vulnerable Log4j file by examining JAR files and searching for the following file:
-      \\META-INF\\maven\\org.apache.logging.log4j\\log4j-core\\pom.properties - if the said file exists, the Log4j version is read and extracted.
+      \\META-INF\\maven\\org.apache.logging.log4j\\log4j-core\\pom.properties - if this file exists, the Log4j version is read and extracted.
   - searches for the JndiLookup.class file inside the JAR file by looking for paths that contain the string “/log4j/core/lookup/JndiLookup.class” - if the JndiLookup.class file exists, threat and vulnerability management determines if this JAR contains a Log4j file with the version defined in pom.properties.
   - searches for any vulnerable Log4j-core JAR files embedded within nested-JAR by searching for paths that contain any of these strings:
     - lib/log4j-core-
@@ -107,10 +107,9 @@ This table describes the search capabilities supported platforms and versions:
 Use the threat and vulnerability management dashboard to see your current exposure.
 
 1. In the Microsoft 365 Defender portal, go to **Vulnerability management** > **Dashboard** > **Threat awareness:**
-
-:::image type="content" source="images/awareness_dashboard.png" alt-text="The threat awareness dashboard" lightbox="images/1156c82ffadd356ce329d1cf551e806c.png":::
-
-2.Select **View vulnerability details** to see the consolidated view of your organizational exposure. Choose the relevant tab to see your exposure broken down by:
+:::image type="content" source="images/awareness_dashboard.png" alt-text="The threat awareness dashboard" lightbox="images/awareness_dashboard.png":::
+2. Select **View vulnerability details** to see the consolidated view of your organizational exposure.
+3. Choose the relevant tab to see your exposure broken down by:
 
 - Exposed devices – onboard
 - Exposed devices – not onboarded
@@ -126,13 +125,13 @@ The log4J vulnerability can be mitigated by preventing JNDI lookups on Log4j ver
 
 You can choose to apply the mitigation to all exposed devices or select specific onboarded devices. To complete the process and apply the mitigation on devices, select **Create mitigation action**.
 
-:::image type="content" source="images/mitigation_options.png" alt-text="Create mitigations" lightbox="images/1156c82ffadd356ce329d1cf551e806c.png":::
+:::image type="content" source="images/mitigation_options.png" alt-text="Create mitigations" lightbox="images/mitigation_options.png":::
 
 ### Mitigation status
 
 The mitigation status indicates whether the workaround mitigation to disable JDNI lookups has been applied to the device. You can view the mitigation status for each affected device in the Exposed devices tabs. This can help prioritize mitigation and/or patching of devices based on their mitigation status.
 
-:::image type="content" source="images/mitigation_status.png" alt-text="Possible mitigation statuses" lightbox="images/1156c82ffadd356ce329d1cf551e806c.png":::
+:::image type="content" source="images/mitigation_status.png" alt-text="Possible mitigation statuses" lightbox="/mitigation_status.png":::
 
 The table below lists the potential mitigation statuses:
 
@@ -183,7 +182,7 @@ The change will take effect after the device restarts.
 1. Select the Security recommendations tab from the **Threat awareness dashboard** to see Active security recommendation related to Apache log4j.
 2. Select **Update Apache Log4j** to see another flyout with more information and the option to apply the recommendation to update Apache Log4j:
 
-:::image type="content" source="images/update_apache_log4j.png" alt-text="Update apache log4j recommendation" lightbox="images/1156c82ffadd356ce329d1cf551e806c.png":::
+:::image type="content" source="images/update_apache_log4j.png" alt-text="Update apache log4j recommendation" lightbox="images/update_apache_log4j.png":::
 
 3. Select **Request remediation** to create a remediation request.
 
@@ -194,17 +193,17 @@ Once exposed devices, files and software are found, relevant information will al
 **Security recommendations page**
 Search for **CVE-2021-44228** to see security recommendations addressing the Log4j vulnerability:
 
-:::image type="content" source="images/security_recommendations_log4j.png" alt-text="log4j security recommendation" lightbox="images/1156c82ffadd356ce329d1cf551e806c.png":::
+:::image type="content" source="images/security_recommendations_log4j.png" alt-text="log4j security recommendation" lightbox="images/security_recommendations_log4j.png":::
 
 **Software inventory page**
  On the software inventory page, search for **CVE-2021-44228** to see details about the Log4j software installations and exposure:
 
-:::image type="content" source="images/software_inventory_log4j.png" alt-text="log4j software inventory" lightbox="images/1156c82ffadd356ce329d1cf551e806c.png":::
+:::image type="content" source="images/software_inventory_log4j.png" alt-text="log4j software inventory" lightbox="images/software_inventory_log4j.png":::
 
 **Weaknesses page**
 On the weaknesses page, search for **CVE-2021-44228** to see information about the Log4j vulnerability:
 
-:::image type="content" source="images/weaknesses_log4j.png" alt-text="log4j weaknesses" lightbox="images/1156c82ffadd356ce329d1cf551e806c.png":::
+:::image type="content" source="images/weaknesses_log4j.png" alt-text="log4j weaknesses" lightbox="images/weaknesses_log4j.png":::
 
 ## Use advanced hunting
 
