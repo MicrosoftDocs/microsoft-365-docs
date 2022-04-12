@@ -86,7 +86,33 @@ You can use a local script to onboard Windows client devices. When you run the o
 
 ### Endpoint Manager for Windows clients
 
+If you were already using Endpoint Manager (which includes Microsoft Intune and Mobile Device Management), before you got Defender for Business, you can continue to use Endpoint Manager to onboard your company's devices. With Endpoint Manager, you can onboard computers, tablets, and phones, including iOS and Android devices.
+
+See [Device enrollment in Microsoft Intune](/mem/intune/enrollment/device-enrollment).
+
 ### Running a detection test on a Windows client
+
+After you've onboarded Windows devices to Defender for Business, you can run a detection test on a Windows device to make sure that everything is working correctly.
+
+1. On the Windows device, create a folder: `C:\test-MDATP-test`.
+
+2. Open Command Prompt as an administrator.
+
+3. In the Command Prompt window, run the following PowerShell command:
+
+   ```powershell
+   powershell.exe -NoExit -ExecutionPolicy Bypass -WindowStyle Hidden $ErrorActionPreference = 'silentlycontinue';(New-Object System.Net.WebClient).DownloadFile('http://127.0.0.1/1.exe', 'C:\\test-MDATP-test\\invoice.exe');Start-Process 'C:\\test-MDATP-test\\invoice.exe'
+   ```
+
+After the command has run, the Command Prompt window will close automatically. If successful, the detection test will be marked as completed, and a new alert will appear in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) for the newly onboarded device in about 10 minutes.
+
+## Next steps
+
+Proceed to:
+
+- [Step 5: Configure your security settings and policies in Microsoft Defender for Business](mdb-configure-security-settings.md)
+
+- [Get started using Microsoft Defender for Business](mdb-get-started.md) 
 
 ## [**Windows Server**](#tab/WindowsServers)
 
