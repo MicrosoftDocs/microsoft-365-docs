@@ -1,6 +1,6 @@
 ---
 title: Learn how to mitigate the Log4j vulnerability in Microsoft Defender for Endpoint - threat and vulnerability management
-description: Learn how tmitigate the Log4j vulnerability in Microsoft Defender for Endpoint 
+description: Learn how to mitigate the Log4j vulnerability in Microsoft Defender for Endpoint 
 keywords: tvm, lo4j
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -51,7 +51,7 @@ Threat and vulnerability management provides you with the following capabilities
 >
 > Support on macOS requires Microsoft Defender for Endpoint macOS client version 20.121111.15416.0 or later.
 >
->For more details on supported versions, see [Supported operating systems platforms and capabilities](tvm-supported-os.md).
+>For more information on supported versions, see [Supported operating systems platforms and capabilities](tvm-supported-os.md).
 
 ## Exposed devices discovery
 
@@ -71,7 +71,7 @@ To enable Log4 detection:
 
 Running these probes will trigger the standard Log4j flow without causing any harmful impact on either the device being probed or the probing device. The probing itself is done by sending multiple HTTP requests to discovered devices, targeting common web application ports (for example - 80,8000,8080,443,8443) and URLs. The request contains HTTP headers with a JNDI payload that triggers a DNS request from the probed machine.
 
-For example - User-Agent: ${jndi:dns://192.168.1.3:5353/MDEDiscoveryUser-Agent} where 192.168.1.3 is the IP of the probing machine.
+For example, User-Agent: ${jndi:dns://192.168.1.3:5353/MDEDiscoveryUser-Agent} where 192.168.1.3 is the IP of the probing machine.
 
 > [!NOTE]
 > Enabling Log4j detection also means onboarded devices will use self-probing to detect local vulnerabilities.
