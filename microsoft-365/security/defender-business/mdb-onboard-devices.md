@@ -60,7 +60,7 @@ If you're not asked about automatic onboarding, it's most likely because you don
 
 ### Local script for Windows clients
 
-You can use a local script to onboard Windows client devices. When you run the onboarding script on a device, it creates a trust with Azure Active Directory (if that trust doesn't already exist), enrolls the device in Microsoft Endpoint Manager (if it isn't already enrolled), and then onboards the device to Defender for Business. 
+You can use a local script to onboard Windows client devices. When you run the onboarding script on a device, it creates a trust with Azure Active Directory (if that trust doesn't already exist), enrolls the device in Microsoft Endpoint Manager (if it isn't already enrolled), and then onboards the device to Defender for Business. The local script method works even if you don't currently have Endpoint Manager (or Microsoft Intune). We recommend onboarding up to 10 devices at a time using this method.
 
 > [!TIP]
 > We recommend onboarding up to 10 devices at a time when you use the local script method.
@@ -173,7 +173,7 @@ Choose one of the following options to onboard macOS devices:
 
 ### Local script for macOS
 
-When you run the local script on a macOS device, it creates a trust with Azure Active Directory (if that trust doesn't already exist), enrolls the device in Microsoft Endpoint Manager (if it isn't already enrolled), and then onboards the device to Defender for Business. We recommend onboarding up to 10 devices at a time using this method.
+When you run the local script on a macOS device, it creates a trust with Azure Active Directory (if that trust doesn't already exist), enrolls the device in Microsoft Endpoint Manager (if it isn't already enrolled), and then onboards the device to Defender for Business. The local script method works even if you don't currently have Endpoint Manager (or Microsoft Intune). We recommend onboarding up to 10 devices at a time using this method.
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.
 
