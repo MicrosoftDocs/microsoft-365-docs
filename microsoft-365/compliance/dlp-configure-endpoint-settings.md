@@ -233,7 +233,7 @@ For macOS devices, you must add the full file path. To find the full path of Mac
 #### Service domains
 
 > [!NOTE]
-> The **Service domains** setting only applies to files uploaded using Microsoft Edge or Google Chrome with the [the Microsoft Compliance Extension](dlp-chrome-learn-about.md#learn-about-the-microsoft-compliance-extension) installed.
+> The **Service domains** setting only applies to files uploaded using Microsoft Edge or Google Chrome with the [Microsoft Purview Extension](dlp-chrome-learn-about.md#learn-about-the-microsoft-purview-extension) installed.
 
 You can control whether sensitive files protected by your policies can be uploaded to specific service domains from Microsoft Edge.
 
