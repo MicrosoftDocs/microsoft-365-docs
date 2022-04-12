@@ -69,7 +69,9 @@ To enable Log4 detection:
 
 :::image type="content" source="images/enable_log4j.png" alt-text="The enable log4j detection setting" lightbox="images/1156c82ffadd356ce329d1cf551e806c.png":::
 
-Running these probes will trigger the standard Log4j flow without causing any harmful impact on either the device being probed or the probing device. The probing itself is done by sending multiple HTTP requests to discovered devices, targeting common web application ports (80,8000,8080,443,8443, etc.) and URLs. The request contains HTTP headers with a JNDI payload that triggers a DNS request from the probed machine. For example - User-Agent: ${jndi:dns://192.168.1.3:5353/MDEDiscoveryUser-Agent} where 192.168.1.3 is the IP of the probing machine.
+Running these probes will trigger the standard Log4j flow without causing any harmful impact on either the device being probed or the probing device. The probing itself is done by sending multiple HTTP requests to discovered devices, targeting common web application ports (for example - 80,8000,8080,443,8443) and URLs. The request contains HTTP headers with a JNDI payload that triggers a DNS request from the probed machine.
+
+For example - User-Agent: ${jndi:dns://192.168.1.3:5353/MDEDiscoveryUser-Agent} where 192.168.1.3 is the IP of the probing machine.
 
 > [!NOTE]
 > Enabling Log4j detection also means onboarded devices will use self-probing to detect local vulnerabilities.
