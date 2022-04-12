@@ -33,7 +33,7 @@ After you've signed up for Microsoft Defender for Business, you'll want to get a
 
 >
 > **Got a minute?**
-> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about Microsoft Defender for Business</a>. We'd love to hear from you!
+> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about security</a>. We'd love to hear from you!
 >
 
 ## Navigate the Microsoft 365 Defender portal
