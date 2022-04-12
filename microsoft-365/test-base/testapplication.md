@@ -93,9 +93,8 @@ In the [Azure portal](http://portal.azure.com/), go to the Test Base account in 
   -	The **Security updates** enable your package to be tested against incremental churns of Windows pre-release monthly security updates.
   -	The **Feature updates** enable your package to be tested against Windows pre-release bi-annual feature updates builds from the Windows Insider Program.
   
-2. Select the OS version(s) for Security update tests.
+2. Select the OS version(s) for Security update tests.<br/>
   If **Security updates** is selected in OS update type, you need to select the OS version(s) of Windows your package will be tested on.
-  
   > [!NOTE] If you select to test your package against both Server and Client OSes, please make sure that the package is compatible and can run on both OSes.
   
 3. Select options for Feature update tests
@@ -136,6 +135,5 @@ If you have a Zip file already, you can switch back to the legacy package upload
   <br/>
   
   
-**Intunewin Upload Flow** 
-
+**Intunewin Upload Flow** <br/>
 As part of commercial roadmap, Test Base started to support intunewin format for IT Pros who manages apps for their apps within Intune as the standard onboarding package format. The intunewin upload flow provides the experience for IT Pros to reuse their intunewin format packages which contains the apps they deployed to their end devices via MEM/Intune to onboarding their apps and test configurations quickly to Test Base.
