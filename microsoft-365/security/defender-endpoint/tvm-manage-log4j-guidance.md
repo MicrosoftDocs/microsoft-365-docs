@@ -86,7 +86,7 @@ Threat and vulnerability management provides layers of detection to help you dis
   - determines if a JAR file contains a vulnerable Log4j file by examining JAR files and searching for the following file:
       \\META-INF\\maven\\org.apache.logging.log4j\\log4j-core\\pom.properties - if this file exists, the Log4j version is read and extracted.
   - searches for the JndiLookup.class file inside the JAR file by looking for paths that contain the string “/log4j/core/lookup/JndiLookup.class” - if the JndiLookup.class file exists, threat and vulnerability management determines if this JAR contains a Log4j file with the version defined in pom.properties.
-  - searches for any vulnerable Log4j-core JAR files embedded within nested-JAR by searching for paths that contain any of these strings:
+  - searches for any vulnerable Log4j-core JAR files embedded within a nested-JAR by searching for paths that contain any of these strings:
     - lib/log4j-core-
     - WEB-INF/lib/log4j-core-
     - App-INF/lib/log4j-core-
@@ -111,11 +111,10 @@ Use the threat and vulnerability management dashboard to see your current exposu
 2. Select **View vulnerability details** to see the consolidated view of your organizational exposure.
 :::image type="content" source="images/view_vulnerability_details.png" alt-text="The vulnerability details page for CVE-2021-44228 (Log4j)" lightbox="images/view_vulnerability_details.png":::
 3. Choose the relevant tab to see your exposure broken down by:
-
-- Exposed devices – onboard
-- Exposed devices – not onboarded
-- Vulnerable files
-- Vulnerable software
+    - Exposed devices – onboard
+    - Exposed devices – not onboarded
+    - Vulnerable files
+    - Vulnerable software
 
 ### Log4j vulnerability mitigation
 
@@ -173,17 +172,17 @@ The change will take effect after the device restarts.
 
 **_For macOS:_**
 
-1. Remove the file setenv.LOG4J\_FORMAT\_MSG\_NO\_LOOKUPS.plist from the following folders:
+Remove the file setenv.LOG4J\_FORMAT\_MSG\_NO\_LOOKUPS.plist from the following folders:
 
-- */Library/LaunchDaemons/*
-- */Library/LaunchAgents/*
-- */Users/\[username\]/Library/LaunchAgents/ - for all users*
+  - */Library/LaunchDaemons/*
+  - */Library/LaunchAgents/*
+  - */Users/\[username\]/Library/LaunchAgents/ - for all users*
 
 The change will take effect after the device restarts.
 
 ### Apache Log4j security recommendations
 
-To see active security recommendation related to Apache log4j, select the Security recommendations tab from the **Threat awareness dashboard**.
+To see active security recommendation related to Apache log4j, select the **Security recommendations** tab from the **Threat awareness dashboard**.
 
 In this example, if you select **Update Apache Log4j** you'll see another flyout with more information and the option to apply th recommendation to update Apache Log4j:
 
