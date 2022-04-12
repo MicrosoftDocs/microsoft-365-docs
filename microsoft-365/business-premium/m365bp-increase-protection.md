@@ -29,7 +29,7 @@ description: "Get help with increasing the level of protection in Microsoft 365 
 
 # Increase threat protection for Microsoft 365 Business Premium
 
-In this objective, you increase your threat protection with Microsoft 365 Business Premium. It's critical to protect your business against phishing, malware, and other threats. This article includes information about:
+In this objective, you increase your threat protection with Microsoft 365 Business Premium. It's critical to protect your business against phishing, malware, and other threats. This objective includes information about:
 
 - [Preset security policies](#review-and-apply-preset-security-policies) that can save a lot of time in setup and configuration
 - [Custom security policies](#create-custom-security-policies) that you can define to suit your business needs
