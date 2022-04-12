@@ -30,7 +30,6 @@ You can use firewall protection to specify whether to allow or block connections
 **This article describes**:
 
 - [Default firewall settings in Defender for Business](#default-firewall-settings-in-defender-for-business)
-
 - [Firewall settings you can configure in Defender for Business](#firewall-settings-you-can-configure-in-defender-for-business)
 
 >
@@ -50,7 +49,7 @@ In Microsoft Defender for Business, you can define exceptions to block or allow 
 
 ## Firewall settings you can configure in Defender for Business
 
-Microsoft Defender for Business includes firewall protection through Windows Defender Firewall. The following table lists settings that can be configured for firewall protection in Microsoft Defender for Business. <br/><br/>
+Microsoft Defender for Business includes firewall protection through Windows Defender Firewall. The following table lists settings that can be configured for firewall protection in Microsoft Defender for Business.
 
 | Setting | Description |
 |--|--|

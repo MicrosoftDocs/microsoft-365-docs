@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 03/15/2022
+ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -39,7 +39,7 @@ You can set up email notifications for your security team. Then, as alerts are g
 
 ## Types of email notifications
 
-When you set up email notifications, you can choose from two types, as described in the following table: <br/><br/>
+When you set up email notifications, you can choose from two types, as described in the following table:
 
 | Notification type  | Description  |
 |---------|---------|

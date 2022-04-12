@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 02/24/2022
+ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -39,11 +39,8 @@ As policies are added, you'll notice that an order of priority is assigned. You 
 ## Key points to remember about policy order
 
 - Policies are assigned an order of priority.
-
 - Devices receive the first applied policy only.
-
 - You can change the order of priority for policies.
-
 - Default policies are given the lowest order of priority.
 
 ## Next steps

@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 03/15/2022
+ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -24,8 +24,6 @@ ms.collection:
 > Microsoft Defender for Business is now included in [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
 Several reports are available in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). This article describes these reports, how you can use them, and how to find them.
-
-<br/><br/>
 
 ## Reports in Defender for Business
 

@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 02/24/2022
+ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -36,9 +36,7 @@ To access the list of incidents, in Microsoft 365 Lighthouse, on the home page, 
 Microsoft 365 Lighthouse enables Microsoft Cloud Service Providers to secure and manage devices, data, and users at scale for small- and medium-sized business customers who are using one of the following subscriptions:
 
 - [Microsoft Defender for Business](/security/defender-business/mdb-overview.md)
-
 - [Microsoft 365 Business Premium](../../admin/admin-overview/what-is-microsoft-365.md)
-
 - [Microsoft 365 E3](../../enterprise/microsoft-365-overview.md) (which now includes [Microsoft Defender for Endpoint Plan 1](../defender-endpoint/defender-endpoint-plan-1.md))
 
 To learn more, see [Overview of Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md).

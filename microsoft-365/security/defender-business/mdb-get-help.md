@@ -37,5 +37,4 @@ If you don't see the answer to your question, you can open a support ticket.
 ## See also
 
 - [Microsoft Defender for Business - Frequently asked questions and answers](mdb-faq.yml)
-
 - [Microsoft Defender for Business troubleshooting](mdb-troubleshooting.yml) 
