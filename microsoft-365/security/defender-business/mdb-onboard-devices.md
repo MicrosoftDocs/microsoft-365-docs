@@ -262,9 +262,8 @@ After a device has been enrolled in Intune, you can add it to a device group. [L
 
 ## Next steps
 
-Proceed to:
+- If you have other devices to onboard, select the tab that corresponds to the operating system on the devices (Windows Server, macOS, or mobile devices), and follow the guidance on that tab.
 
-- [Step 5: Configure your security settings and policies in Microsoft Defender for Business](mdb-configure-security-settings.md)
+- If you're done onboarding devices, proceed to [Step 5: Configure your security settings and policies in Microsoft Defender for Business](mdb-configure-security-settings.md)
 
-- [Get started using Microsoft Defender for Business](mdb-get-started.md) 
-
+- See [Get started using Microsoft Defender for Business](mdb-get-started.md).
