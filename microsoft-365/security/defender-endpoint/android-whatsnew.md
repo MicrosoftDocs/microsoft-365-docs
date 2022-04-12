@@ -33,7 +33,7 @@ To update, users can use the following steps:
 >2. Tap on the profile icon on the top right corner and select "Manage apps and device".
 >3. Locate MDE under updates available and select update.
 >
->If you encounter any issues, [submit in-app feedback](https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/android-support-signin?view=o365-worldwide#send-in-app-feedback).
+>If you encounter any issues, [submit in-app feedback](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/android-support-signin?view=o365-worldwide#send-in-app-feedback).
 
 ## Microsoft Defender for Endpoint is now Microsoft Defender in the Play store
 
