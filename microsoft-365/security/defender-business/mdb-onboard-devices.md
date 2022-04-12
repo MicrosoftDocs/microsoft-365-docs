@@ -35,7 +35,11 @@ With Microsoft Defender for Business, you have several options to choose from fo
 
 ## What to do
 
-1. Select the tab for your operating system (Windows client, Windows Server, macOS, and mobile devices).
+1. Select the tab for your operating system: 
+   - [Windows client](#windows-clientstabwindowsclients)
+   - [Windows Server](#windows-servertabwindowsservers)
+   - [macOS](#macostabmacos)
+   - [mobile devices](#mobile-devicestabmobile)
 
 2. View your onboarding options for that operating system.
 
