@@ -1,5 +1,5 @@
 ---
-title: "Use the step-by-step guide to add Autopilot devices and profile"
+title: "Use this step-by-step guide to add Autopilot devices and profile"
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -29,7 +29,7 @@ ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
 description: "Learn how to use Windows AutoPilot to set up new Windows 10 devices for your business so they're ready for employee use."
 ---
 
-# Use the step-by-step guide to add Autopilot devices and profile
+# Use this step-by-step guide to add Autopilot devices and profile
 
 > [!NOTE]
 > Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Overview of Microsoft Defender for Business](../security/defender-business/mdb-overview.md).
@@ -44,7 +44,7 @@ Devices must meet these requirements:
     
 - New devices that haven't been through Windows out-of-box experience
     
-## Use the setup guide to create devices and profiles
+## Use the setup guide to add devices and profiles
 
 If you haven't created device groups or profiles yet, the best way to get started is by using the step-by-step guide. You can also [add AutoPilot devices](m365bp-create-and-edit-autopilot-devices.md) and [assign profiles](../admin/devices/create-and-edit-autopilot-profiles.md) to them without using the guide. 
   
@@ -97,4 +97,4 @@ If you haven't created device groups or profiles yet, the best way to get starte
 
 - [About AutoPilot Profile settings](../business-premium/m365bp-autopilot-profile-settings.md) (article)\
 - [Options for protecting your devices and app data](../admin/devices/choose-device-security.md) (article)
-- [Top 10 ways to secure Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)
+- [Best practices for securing Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)
