@@ -46,11 +46,7 @@ As policies are added, you'll notice that an order of priority is assigned. You 
 ## Next steps
 
 - [Get started using Defender for Business](mdb-get-started.md)
-
 - [Manage devices](mdb-manage-devices.md)
-
 - [View and manage incidents in Microsoft Defender for Business](mdb-view-manage-incidents.md)
-
 - [Respond to and mitigate threats in Microsoft Defender for Business](mdb-respond-mitigate-threats.md)
-
 - [Review remediation actions in the Action center](mdb-review-remediation-actions.md)
