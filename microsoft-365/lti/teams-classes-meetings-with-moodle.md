@@ -26,7 +26,7 @@ For the integration between Moodle and Teams to function correctly, Moodle and T
 
 Follow the [instructions for installing and configuring the Moodle plugin](moodle-plugin-configuration.md).
 
-## Register Microsoft OneLTI tools for use in Moodle
+## Register Microsoft Teams LTI for use in Moodle
 
 > [!IMPORTANT]
 > The person who performs this integration should be a Moodle administrator and a Microsoft 365 tenant administrator.
