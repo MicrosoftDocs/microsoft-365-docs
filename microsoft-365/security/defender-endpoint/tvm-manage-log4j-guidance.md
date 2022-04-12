@@ -138,7 +138,7 @@ The table below lists the potential mitigation statuses:
 
 | Mitigation status | Description |
 |:---|:---|
-| Workaround applied | _Windows_: The LOG4J_FORMAT_MSG_NO_LOOKUPS environment variable was observed before latest device reboot. <br/><br/> _Linux + macOS_: all running processes have LOG4J_FORMAT_MSG_NO_LOOKUPS=true in its environment variables. |
+| Workaround applied | _Windows_: The LOG4J_FORMAT_MSG_NO_LOOKUPS environment variable was observed before latest device reboot. <br/><br/> _Linux + macOS_: All running processes have LOG4J_FORMAT_MSG_NO_LOOKUPS=true in its environment variables. |
 | Workaround pending reboot | The LOG4J_FORMAT_MSG_NO_LOOKUPS environment variable is set, but no following reboot detected. |
 | Not applied | _Windows_: The LOG4J_FORMAT_MSG_NO_LOOKUPS environment variable was not observed. <br/><br/> _Linux + macOS_: Not all running processes have LOG4J_FORMAT_MSG_NO_LOOKUPS=true in its environment variables, and mitigation action was not applied on device. |
 | Partially mitigated | _Linux + macOS_: Although mitigation action was applied on device, not all running processes have LOG4J_FORMAT_MSG_NO_LOOKUPS=true in its environment variables. |
@@ -183,31 +183,35 @@ The change will take effect after the device restarts.
 
 ### Apache Log4j security recommendations
 
-1. Select the Security recommendations tab from the **Threat awareness dashboard** to see Active security recommendation related to Apache log4j.
-2. Select **Update Apache Log4j** to see another flyout with more information and the option to apply the recommendation to update Apache Log4j:
+To see active security recommendation related to Apache log4j, select the Security recommendations tab from the **Threat awareness dashboard**.
 
-:::image type="content" source="images/update_apache_log4j.png" alt-text="Update apache log4j recommendation" lightbox="images/update_apache_log4j.png":::
+In this example, if you select **Update Apache Log4j** you'll see another flyout with more information and the option to apply th recommendation to update Apache Log4j:
 
-3. Select **Request remediation** to create a remediation request.
+:::image type="content" source="images/update_apache_log4j.png" alt-text="Update apache log4j security recommendation" lightbox="images/update_apache_log4j.png":::
+
+Select **Request remediation** to create a remediation request.
 
 ## Explore the vulnerability in the Microsoft 365 Defender portal
 
 Once exposed devices, files and software are found, relevant information will also be conveyed through the following experiences in the Microsoft 365 Defender portal:
 
-**Security recommendations page**
+### Security recommendations
+
 Search for **CVE-2021-44228** to see security recommendations addressing the Log4j vulnerability:
 
-:::image type="content" source="images/security_recommendations_log4j.png" alt-text="log4j security recommendation" lightbox="images/security_recommendations_log4j.png":::
+:::image type="content" source="images/security_recommendations_log4j.png" alt-text="The log4j vulnerability on the security recommendations page" lightbox="images/security_recommendations_log4j.png":::
 
-**Software inventory page**
+### Software inventory
+
  On the software inventory page, search for **CVE-2021-44228** to see details about the Log4j software installations and exposure:
 
-:::image type="content" source="images/software_inventory_log4j.png" alt-text="log4j software inventory" lightbox="images/software_inventory_log4j.png":::
+:::image type="content" source="images/software_inventory_log4j.png" alt-text="The log4j vulnerability on the software inventory page" lightbox="images/software_inventory_log4j.png":::
 
-**Weaknesses page**
+### Weaknesses
+
 On the weaknesses page, search for **CVE-2021-44228** to see information about the Log4j vulnerability:
 
-:::image type="content" source="images/weaknesses_log4j.png" alt-text="log4j weaknesses" lightbox="images/weaknesses_log4j.png":::
+:::image type="content" source="images/weaknesses_log4j.png" alt-text="The log4j vulnerability on the weaknesses page" lightbox="images/weaknesses_log4j.png":::
 
 ## Use advanced hunting
 
