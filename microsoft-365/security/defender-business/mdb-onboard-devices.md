@@ -88,8 +88,12 @@ You can use a local script to onboard Windows client devices. When you run the o
 
 If your subscription includes [Microsoft Endpoint Manager](/mem/endpoint-manager-overview), you can onboard Windows clients and other devices in the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). For example, if you have [Microsoft 365 Business Premium](../../business/index.yml), you have Endpoint Manager as part of your subscription. Endpoint Manager includes [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) and [Mobile Device Management capabilities](/mem/intune/fundamentals/what-is-device-management). 
 
+There are several methods available for enrolling devices in Intune. We recommend starting with one of the following methods:
 
+- [Enable Windows automatic enrollment](/mem/intune/enrollment/windows-enroll) for company-owned or company-managed devices
+- [Ask users to enroll their own Windows 10/11 devices in Intune](/mem/intune/user-help/enroll-windows-10-device)
 
+After a device has been enrolled in Intune, you can 
 
 See [Device enrollment in Microsoft Intune](/mem/intune/enrollment/device-enrollment).
 
