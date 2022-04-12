@@ -28,12 +28,12 @@ Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](
 
 >[!NOTE]
 >Microsoft Defender is no longer supported for versions below 1.0.3011.0302. Users are requested to upgrade to latest versions to keep their devices secure.
-To update, users can follow the steps below –
+To update, users can use the following steps:
 >1. On your work profile, go to Managed Play Store.
 >2. Tap on the profile icon on the top right corner and select "Manage apps and device".
 >3. Locate MDE under updates available and select update.
 >
->If you face any issue, please [submit in-app feedback](https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/android-support-signin?view=o365-worldwide#send-in-app-feedback).
+>If you encounter any issues, [submit in-app feedback](https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/android-support-signin?view=o365-worldwide#send-in-app-feedback).
 
 ## Microsoft Defender for Endpoint is now Microsoft Defender in the Play store
 
