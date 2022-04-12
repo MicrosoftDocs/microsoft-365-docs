@@ -107,9 +107,9 @@ When you set up automatic enrollment, users add their work account to the device
    - For MDM User scope, we recommend selecting **All** so that all users can automatically enroll their Windows devices.
    - In the MAM user scope section, we recommend using the following default values for the URLs:
 
-       - MDM Terms of use URL
-       - MDM Discovery URL
-       - MDM Compliance URL
+       - **MDM Terms of use URL**
+       - **MDM Discovery URL**
+       - **MDM Compliance URL**
 
 4. Choose **Save**.
 
