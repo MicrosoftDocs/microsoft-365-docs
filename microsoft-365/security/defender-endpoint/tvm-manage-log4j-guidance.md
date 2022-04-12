@@ -87,9 +87,7 @@ Specifically, it:
 
 - determines if a JAR file contains a vulnerable Log4j file by examining JAR files and searching for the following file:
   \\META-INF\\maven\\org.apache.logging.log4j\\log4j-core\\pom.properties - if the said file exists, the Log4j version is read and extracted.
-
 - searches for the JndiLookup.class file inside the JAR file by looking for paths that contain the string “/log4j/core/lookup/JndiLookup.class” - if the JndiLookup.class file exists, threat and vulnerability management determines if this JAR contains a Log4j file with the version defined in pom.properties.
-
 - searches for any vulnerable Log4j-core JAR files embedded within nested-JAR by searching for paths that contain any of these strings:
   - lib/log4j-core-
   - WEB-INF/lib/log4j-core-
