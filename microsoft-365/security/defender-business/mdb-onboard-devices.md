@@ -159,7 +159,7 @@ You can use a local script to onboard Mac devices. When you run the onboarding s
 
 `mdatp health --field org_id`.
 
-12. If you are using macOS 10.15 (Catalina) or later, grant Defender for Business consent to protect your device by following these steps: 
+12. If you are using macOS 10.15 (Catalina) or later, grant Defender for Business consent to protect your device by following these steps:   
 
    1. Go to **System Preferences** > **Security & Privacy** > **Privacy** > **Full Disk Access**.  
    2. Select the lock icon to make changes (bottom of the dialog box), and then select Microsoft Defender for Business (or Defender for Endpoint, if that's what you see).
