@@ -6859,6 +6859,11 @@
       "source_path": "microsoft-365/admin/devices/create-and-edit-autopilot-profiles.md",
       "redirect_url": "/microsoft-365/business-premium/create-and-edit-autopilot-profiles",
       "redirect_document_id": false
-    } 
+    }, 
+    {
+      "source_path": "microsoft-365/security/defender/microsoft-secure-score-whats-coming.md",
+      "redirect_url": "/microsoft-365/security/defender/whats-new",
+      "redirect_document_id": false
+    }
   ]
 }
