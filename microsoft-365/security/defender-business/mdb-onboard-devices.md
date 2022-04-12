@@ -157,13 +157,14 @@ To view the list of devices that are onboarded to Defender for Business, in the 
 
 ## [**Windows Server**](#tab/WindowsServers)
 
-*The ability to onboard endpoints running Windows Server is currently in preview.*
+> [!IMPORTANT]
+> The ability to onboard Windows Server endpoints is currently in preview.
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.
 
 2. In the navigation pane, choose **Settings** > **Endpoints**, and then under **Device management**, choose **Onboarding**.
 
-3. Select an operating system, such as **Windows 10 and 11**, and then, in the **Deployment method** section, choose **Local script**. 
+3. Select an operating system, such as **Windows Server 1803, 2019, and 2022**, and then, in the **Deployment method** section, choose **Local script**. 
 
 4. Select **Download onboarding package**. We recommend saving the onboarding package to a removable drive.
 
