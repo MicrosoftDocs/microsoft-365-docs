@@ -90,15 +90,11 @@ You can create policies to alert you when certain changes or events related to i
 
 #### Default score change policy
 
-Compliance Manager sets up a default alert policy to monitor for score changes in improvement actions. The default policy will generate an alert each time an improvement action's score changes.
+Compliance Manager sets up a default alert policy to monitor for score changes in improvement actions. The default policy will generate an alert when an improvement action's score changes. Most settings for the default policy can't be edited, but you can add additional recipients for notifications.
 
-Most settings for the default policy can't be edited, but you can add additional recipients for notifications.
+Here are the settings for the default policy:
 
-You can't delete the default policy, but you can disable it by [following the steps outlined below](#activate-or-inactivate-a-policy).
-
-The settings for the default policy include:
-
-- All matches that are detected within a span of 60 minutes will be grouped into one single alert. This grouping is meant to  help prevent an excessive amount of alerts being generated.
+- All matches that are detected within a span of 60 minutes will be grouped into one single alert. For example, if five improvement actions experience a score change within one hour, one alert will be generated. This grouping is meant to help prevent an excessive amount of alerts being generated.
 
 - The severity level for these alerts is **medium**.
 
@@ -110,6 +106,8 @@ The settings for the default policy include:
     - Select the **Next** button until you come to the **Alert recipients** page.
     - Select **+Select recipients** and check the boxes next to each user name on the flyout pane whom you want to receive the email notification. When done, select **Add recipient**, then select **Next**.
     - On the **Review and finish** page, select **Update** to save your changes.
+
+- The default policy can't be deleted, but you can disable it by [following the steps outlined below](#activate-or-inactivate-a-policy).
 
 
 ### Policy creation steps
