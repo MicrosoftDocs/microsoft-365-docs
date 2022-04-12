@@ -93,7 +93,7 @@ Next, list the license plans for your tenant with this command.
 Get-AzureADSubscribedSku | Select SkuPartNumber
 ```
 
-Next, get the sign-in name of the account for which you want remove a license, also known as the user principal name (UPN).
+Next, get the sign-in name of the account for which you want to remove a license, also known as the user principal name (UPN).
 
 Finally, specify the user sign-in and license plan names, remove the "<" and ">" characters, and run these commands.
 
