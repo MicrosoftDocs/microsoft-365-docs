@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: article
-ms.date: 03/15/2022
+ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -34,9 +34,7 @@ If you've just finished setting up Microsoft Defender for Business, you might be
 
 ## Try these preview scenarios
 
-The following table summarizes several scenarios to try with Defender for Business. 
-<br/><br/>
-
+The following table summarizes several scenarios to try with Defender for Business:
 
 | Scenario  | Description  |
 |---------|---------|
@@ -50,8 +48,6 @@ The following table summarizes several scenarios to try with Defender for Busine
 ## Recommended tutorials for Defender for Business
 
 The following table describes the recommended tutorials for Defender for Business customers:
-<br/><br/>
-
 
 | Tutorial  | Description  |
 |---------|---------|
