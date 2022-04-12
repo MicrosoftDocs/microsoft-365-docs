@@ -182,8 +182,7 @@ The change will take effect after the device restarts.
 
 ### Apache Log4j security recommendations
 
-To see active security recommendation related to Apache log4j, select the **Security recommendations** tab from the vulnerability details page.
-In this example, if you select **Update Apache Log4j** you'll see another flyout with more information and the option to apply th recommendation to update Apache Log4j:
+To see active security recommendation related to Apache log4j, select the **Security recommendations** tab from the vulnerability details page. In this example, if you select **Update Apache Log4j** you'll see another flyout with more information:
 
 :::image type="content" source="images/update_apache_log4j.png" alt-text="Update apache log4j security recommendation" lightbox="images/update_apache_log4j.png":::
 
