@@ -14,6 +14,11 @@ description: "Learn how to get access to Microsoft Bookings in Microsoft 365."
 
 # Turn Microsoft Bookings on or off
 
+> [!NOTE]
+> This article helps you to interact with the latest version of Microsoft Bookings. Previous versions will be retired in coming months.
+
+This article is for admins. 
+
 Bookings can be turned on or off for your entire organization or for specific users. When you turn on Bookings for users, they can create a Bookings page, create a calendar, and allow other people to book time with them.
 
 > [!NOTE]
@@ -32,13 +37,43 @@ Bookings can be turned on or off for your entire organization or for specific us
 
 4. Select **Save Changes**.
 
-## Turn Bookings on or off for your organization using PowerShell
+### Turn Bookings on or off for your organization using PowerShell
 
 To turn Bookings on or off for your organization using the PowerShell cmdlet [Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig), [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) and run the following command:
 
 ```PowerShell
    Set-OrganizationConfig -BookingsEnabled $false
 ```
+
+### Granular controls
+
+Use the settings below to control who can use Bookings, decide on what Bookings information is shared and whether staff need approval before they can be added to a Booking calendar.
+
+:::image type="content" source="../media/control-access-sharing-bookings.png" alt-text="Screenshot: Settings that allow you to control who can use Bookings, decide what Bookings info is shared and staff approval":::
+
+### Block bookings from outside your organization
+
+You can set up Bookings so only people in your organization can book appointments. Only users in your organization who've signed in and are authenticated can book appointments.
+
+### Block social sharing options
+
+You can control how booking pages are shared on social networks. This setting is available in the Microsoft 365 admin center under **Settings** -> **Org settings** -> **Bookings**.
+
+### Block sharing staff details with customers
+
+Staff details, such as contact information, will never be sent to customers via email or any other communication.
+
+### Require staff approvals before sharing free/busy information
+
+You can require employees in your organization to opt-in before their availability information is shared through Bookings and before they can be bookable through a booking page.
+
+When this setting is enabled, people added as staff in booking calendars will get an email with a link to **Approve/Reject** the request.
+
+## Restrict collection of customer data
+
+For compliance reasons, you may not want to collect some customer information. If you select a checkbox for any of these options, these fields won't be included on any forms shown to your clients or customers.
+
+:::image type="content" source="../media/restrict-collection-customer-data.png" alt-text="Screenshot: Select the checkboxes to help prevent customers from sharing sensitive data with you":::
 
 ### Turn Bookings on or off for individual users
 
@@ -50,19 +85,9 @@ You can disable Bookings for individual users.
 
 1. Expand **Apps** and clear the checkbox for Microsoft Bookings.
 
-## Require staff approvals before sharing free/busy information
-
-Admins can require employees in their organization to opt-in before their availability information is shared through Bookings and before they can be bookable through a booking page. This setting is available in the Microsoft 365 admin center under **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**Org settings**</a> \> **Bookings**.
-
-When this setting is enabled, employees added as staff in booking calendars will find an Approve/Reject link in the email notification they receive.
-
-## Block social sharing options
-
-Admins can control how booking pages are shared on social networks. This setting is available in the Microsoft 365 admin center under **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**Org settings**</a> \> **Bookings**.
-
 ## Allow only selected users to create Bookings calendars
 
-By using policy restrictions, you can restrict licensed users from being able to create Bookings calendars. You must first enable Bookings for your entire organization. All users in you organization will have Bookings licenses, but only those included in the policy can create Bookings calendars and have full control over who can access the calendars they create.
+By using policy restrictions, you can restrict licensed users from being able to create Bookings calendars. You must first enable Bookings for your entire organization. All users in your organization will have Bookings licenses, but only those included in the policy can create Bookings calendars and have full control over who can access the calendars they create.
 
 Users who are included in this policy can create new Bookings calendars and can be added as staff in any capacity (including the administrator role) to existing Bookings calendars. Users who aren't included in this policy won't be able to create new Bookings calendars and will receive an error message if they try to do so.
 

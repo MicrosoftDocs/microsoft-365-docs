@@ -44,9 +44,7 @@ Advanced Audit features such as the ability to log crucial events such as MailIt
 
    The logging of audit records for MailItemsAccessed and Send will begin within 24 hours. You have to perform Step 3 to start logging of two other Advanced Audit events: SearchQueryInitiatedExchange and SearchQueryInitiatedSharePoint.
 
-For organizations that assign licenses to groups of users by using group-based licensing, you have to turn off the licensing assignment for Microsoft 365 Advanced Auditing for the group. After you save your changes, verify that Microsoft 365 Advanced Auditing is turned off for the group. Then turn the licensing assignment for the group back on. For instructions about group-based licensing, see [Assign licenses to users by group membership in Azure Active Directory](/azure/active-directory/users-groups-roles/licensing-groups-assign).
-
-Also, if you have customized the mailbox actions that are logged on user mailboxes or shared mailboxes, any new Advanced Audit events released by Microsoft will not be automatically audited on those mailboxes. For information about changing the mailbox actions that are audited for each logon type, see the "Change or restore mailbox actions logged by default" section in [Manage mailbox auditing](enable-mailbox-auditing.md#change-or-restore-mailbox-actions-logged-by-default).
+Also, if you've customized the mailbox actions that are logged on user mailboxes or shared mailboxes, any new Advanced Audit events released by Microsoft won't be automatically audited on those mailboxes. For information about changing the mailbox actions that are audited for each logon type, see the "Change or restore mailbox actions logged by default" section in [Manage mailbox auditing](enable-mailbox-auditing.md#change-or-restore-mailbox-actions-logged-by-default).
 
 ## Step 2: Enable Advanced Audit events
 

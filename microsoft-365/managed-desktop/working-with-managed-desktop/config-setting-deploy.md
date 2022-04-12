@@ -17,7 +17,7 @@ After you make changes to your setting categories and stage a deployment, the De
 
 ## Deployment statuses
 
-The following are the statuses you’ll see for each deployment.
+The following are the statuses you'll see for each deployment.
 
 Status | Explanation
 --- | ---
@@ -29,7 +29,7 @@ Reverted | The change was reverted to the last change that was successfully depl
 
 ## Deploy changes
 
-As an example, we’ll use a desktop background picture in these instructions. After you’ve staged a deployment, you deploy changes from the Deployment status page.
+As an example, we'll use a desktop background picture in these instructions. After you've staged a deployment, you deploy changes from the Deployment status page.
 
 **To deploy changes:**
 
@@ -39,7 +39,7 @@ As an example, we’ll use a desktop background picture in these instructions. A
 4. Select **Deploy** to deploy the change to one of the deployment groups.
 
 > [!NOTE]
-> The orange caution icon indicates there is a previous group available for deployment as it’s recommended to roll out in order.
+> The orange caution icon indicates there is a previous group available for deployment as it's recommended to roll out in order.
 
 <!-- Needs picture updated to show MEM ![Deployment status workspace. Trusted sites pane on the right. In the Deployment groups section are three columns: deployment groups, devices, and status. In the status column, "deploy" is highlighted.](../../media/1deployedit.png) -->
 
@@ -51,9 +51,9 @@ When changes complete in each group, the status changes to **Complete**.
 
 ## Revert deployment
 
-After you’ve deployed a change, you can revert from **Deployment status**. When you revert a change that is **In progress** or **Complete**, the current deployment stops. The setting will revert to the last version that was deployed to all groups.
+After you've deployed a change, you can revert from **Deployment status**. When you revert a change that is **In progress** or **Complete**, the current deployment stops. The setting will revert to the last version that was deployed to all groups.
 
-As an example, we’ll revert the desktop background picture.
+As an example, we'll revert the desktop background picture.
 
 **To revert a change:**
 

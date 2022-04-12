@@ -7,7 +7,7 @@ author: brendacarter
 manager: laurawi
 ms.date: 4/17/2018
 audience: Admin
-ms.topic: hub-page
+ms.topic: landing-page
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid: 
@@ -40,7 +40,7 @@ Next, configure privileged access management in Office 365. Privileged access ma
 - [Overview of privileged access management](privileged-access-management-overview.md)
 - [Configure privileged access management](privileged-access-management-configuration.md)
 
-Another top recommendation is to use workstations specifically configured for administrative work. These are dedicated devices that are only used for administrative tasks. See [Securing privileged access](/windows-server/identity/securing-privileged-access/securing-privileged-access).
+Another top recommendation is to use workstations especially configured for administrative work. These are dedicated devices that are only used for administrative tasks. See [Securing privileged access](/windows-server/identity/securing-privileged-access/securing-privileged-access).
 
 Finally, you can mitigate the impact of inadvertent lack of administrative access by creating two or more emergency access accounts in your tenant. See [Manage emergency access accounts in Azure AD](/azure/active-directory/users-groups-roles/directory-emergency-access). 
 
@@ -48,7 +48,7 @@ Finally, you can mitigate the impact of inadvertent lack of administrative acces
 Multi-factor authentication (MFA) and conditional access policies are powerful tools for mitigating against compromised accounts and unauthorized access. We recommend implementing a set of policies that have been tested together. For more information, including deployment steps, see [Identity and device access configurations](../security/office-365-security/microsoft-365-policies-configurations.md).
 
  These policies implement the following capabilities:
-- Mult-factor authentication
+- Multi-factor authentication
 - Conditional access
 - Intune app protection (app and data protection for devices)
 - Intune device compliance
@@ -58,7 +58,7 @@ Implementing Intune device compliance requires device enrollment. Managing devic
 
 ## Step 4: Configure SharePoint device access policies
 
-Microsoft recommends you protect content in SharePoint sites with sensitive and highly-regulated content with device access controls. For more information, see [Policy recommendations for securing SharePoint sites and files](../security/office-365-security/sharepoint-file-access-policies.md).
+Microsoft recommends you protect content in SharePoint sites with sensitive and highly regulated content with device access controls. For more information, see [Policy recommendations for securing SharePoint sites and files](../security/office-365-security/sharepoint-file-access-policies.md).
 
 
 

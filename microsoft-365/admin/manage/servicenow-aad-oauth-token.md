@@ -2,8 +2,8 @@
 title: "Configure Microsoft 365 support integration with Azure AD Auth Token"
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -97,7 +97,7 @@ These prerequisites are necessary to set up the Microsoft 365 support integratio
 
     - OIDC Metadata URL: `https://login.microsoftonline.com/{microsoft-365-tenant-name}/.well-known/openid-configuration`
 
-    - UserClaim: **appId**
+    - UserClaim: **appid**
 
     - UserField: **User ID**
 

@@ -20,9 +20,6 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 # Microsoft 365 Lighthouse Threat management page overview 
 
-> [!NOTE]
-> The features described in this article are in Preview, are subject to change, and are only available to partners who meet the [requirements](m365-lighthouse-requirements.md). If your organization does not have Microsoft 365 Lighthouse, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
-
 **Applies to:**
 
 - Windows 10
@@ -35,13 +32,13 @@ To access the Threat management page in Microsoft 365 Lighthouse, select **Threa
   
 On the Overview tab of the Threat management page, you can monitor the antivirus state across all your tenants to identify the areas that need attention.
 
-:::image type="content" source="../media/m365-lighthouse-threat-management-page-overview/threatmanagement-overview-tab.png" alt-text="Screenshot of the Overview tab.>.":::
+:::image type="content" source="../media/m365-lighthouse-threat-management-page-overview/threatmanagement-overview-tab.png" alt-text="Screenshot of the Overview tab.":::
 
 ## Threats tab
 
 On the Threats tab of the Threat management page, you can see the Active, Mitigated, Resolved, and Allowed threats across all your tenants. You can also remediate multiple threats at the same time across all your tenants by filtering and drilling down into each threat to learn which devices, users, or tenants are affected.
 
-:::image type="content" source="../media/m365-lighthouse-threat-management-page-overview/threatmanagement-threats-tab.png" alt-text="Screenshot of the Default baseline page.>.":::
+:::image type="content" source="../media/m365-lighthouse-threat-management-page-overview/threatmanagement-threats-tab.png" alt-text="Screenshot of the Default baseline page.":::
   
 You can filter threats by:
 

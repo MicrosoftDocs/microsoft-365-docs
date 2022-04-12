@@ -179,6 +179,9 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
 
      When you're finished, click **Done**.
 
+     > [!NOTE]
+     > The maximum number of sender and domain entries is 1024.
+
    - **Enable mailbox intelligence**: The default value is on (selected), and we recommend that you leave it on. To turn it off, clear the check box.
 
      - **Enable intelligence based impersonation protection**: This setting is available only if **Enable mailbox intelligence** is on (selected). This setting allows mailbox intelligence to take action on messages that are identified as impersonation attempts. You specify the action to take in the **If mailbox intelligence detects an impersonated user** setting on the next page.

@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -42,7 +42,7 @@ By mapping alerts to this industry framework, you can:
 - Identify skill gaps in attack method awareness.
 - Create a Power Automate Playbook for faster remediation.
 
-Post-incident review activity can also result in fine-tuning your security configuration and security team's processes, enhancing your organization’s response capabilities.
+Post-incident review activity can also result in fine-tuning your security configuration and security team's processes to streamline your organization's response capabilities.
 
 ## Next step
 

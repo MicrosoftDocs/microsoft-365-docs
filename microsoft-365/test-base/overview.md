@@ -2,8 +2,8 @@
 title: 'Overview'
 description: Understanding Test Base
 search.appverid: MET150
-author: mansipatel-usl
-ms.author: mapatel
+author: Tinacyt
+ms.author: tinachen
 manager: rshastri
 audience: Software-Vendor
 ms.topic: how-to
@@ -46,9 +46,9 @@ This guide is divided into four (4) parts to ensure a hitch free experience whil
 
 4. The **Reference** section that provides answers to the typical questions we receive from our customers.
 
-## Test Base is in public preview!
+## Test Base has reached general availability
 
-Test Base has officially been declared `Public Preview` during the Microsoft Inspire conference in July 2021.
+Test Base has officially been declared General Availability during the Microsoft Ignite conference in November 2021. 
 
 This means anyone with a valid enterprise Azure account is able to onboard their test collateral and quickly start testing their applications on the service.
 

@@ -2,8 +2,8 @@
 title: "Enter your product key for Microsoft 365 Business Standard"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -16,9 +16,9 @@ ms.collection:
 search.appverid: MET150
 ROBOTS: NOINDEX
 ms.custom: 
+- commerce_purchase
 - okr_SMB
 - AdminSurgePortfolio
-- commerce_purchase
 - AdminTemplateSet
 description: "If you purchased Microsoft 365 Business Standard from a retail store, learn how to redeem the product key and activate your subscription." 
 ms.date: 11/13/2020

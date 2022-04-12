@@ -2,8 +2,8 @@
 title: "Upgrade to a different business plan"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -14,9 +14,9 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- commerce_subscriptions
 - SaRA
 - AdminSurgePortfolio
-- commerce_subscriptions
 - AdminTemplateSet
 search.appverid: MET150 
 description: "The easiest way to upgrade plans is to use the Upgrade tab in the admin center. However, the Upgrade tab isn't always supported."

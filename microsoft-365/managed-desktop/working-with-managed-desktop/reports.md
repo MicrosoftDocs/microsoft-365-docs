@@ -31,6 +31,7 @@ When you select the **Reports** tab, you'll see descriptions for the available d
 | **Device status trend** (*in preview*) | This monitors trends in device status over the last 60 days for your Microsoft Managed Desktop devices. Trends can help  you associate device status with other changes over time, for example, new deployments. |
 | [**Windows security updates** report](security-updates-report.md) (*in preview*) | This report shows how Windows security updates are released across your Microsoft Managed Desktop devices. |
 | [**Application usage** report](app-usage-report.md) | This report provides information about typical app usage across your Microsoft Managed Desktop devices. For devices to provide data to this report, they must be set to the Optional diagnostic data level. |
+| [**Service Metrics Report**](service-metrics-report.md) (*in preview*) | This report provides straightforward summaries of key metrics for Microsoft Managed Desktop month over month. |
 
 ## Endpoint analytics
 
@@ -43,7 +44,9 @@ If Endpoint analytics weren't automatically configured for your Azure AD organiz
 
 ## Intune reports
 
-Microsoft Intune is one of the services we use to manage devices on your behalf. In some cases, it can be helpful to use Intune reports to specifically monitor administration of your Microsoft Managed Desktop devices. You can exclude the devices we manage from the report you use to manage other devices. The following reports let you filter capability to include or exclude Microsoft Managed Desktop devices.
+Microsoft Intune is one of the services we use to manage devices on your behalf.
+
+In some cases, it can be helpful to use Intune reports to specifically monitor administration of your Microsoft Managed Desktop devices. You can exclude the devices we manage from the report you use to manage other devices. The following reports let you filter capability to include or exclude Microsoft Managed Desktop devices.
 
 - [All devices](/mem/intune/remote-actions/device-management#get-to-your-devices)
 - [Device compliance](/mem/intune/fundamentals/reports#device-compliance-report-organizational)

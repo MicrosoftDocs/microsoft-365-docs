@@ -1,25 +1,24 @@
 ### YamlMime:FAQ
 metadata:
-  title: "Microsoft Home Use Program frequently-asked questions (FAQ)"
-  ms.author: cmcatee
+  title: "Microsoft Home Use Program FAQ"
   author: cmcatee-MSFT
+  ms.author: cmcatee
   manager: scotv
   ms.reviewer: tugu, jmueller
   audience: Admin
-  ms.topic: reference
+  ms.topic: faq
   ms.service: o365-administration
   ms.localizationpriority: medium
   ms.collection: 
   - M365-subscription-management
   - Adm_O365
   ms.custom: 
+  - commerce_subscriptions
   - okr_SMB
   - AdminSurgePortfolio
-  - commerce_subscriptions
   search.appverid: MET150 
   description: "Frequently-asked questions (FAQ) about the Microsoft Home Use Program."
   ms.date: 05/01/2021
-    
 title: Microsoft Home Use Program frequently-asked questions (FAQ)
 summary: |
   Volume Licensing customers use the Microsoft Home Use Program (HUP) on the [Microsoft Store for Business website](https://go.microsoft.com/fwlink/?linkid=2139192).
@@ -66,7 +65,7 @@ sections:
       - question: |
           How do I become the assigned IT Admin of a managed tenant?
         answer: |
-          You must create a special record in DNS to prove you own your company domain, ex:contoso.com.
+          You must create a special record in DNS to prove you own your company domain, for example, contoso.com.
           
           For a step-by-step process for becoming a managed tenant, see [Take over an unmanaged directory as administrator in Azure Active](/azure/active-directory/users-groups-roles/domains-admin-takeover).
           

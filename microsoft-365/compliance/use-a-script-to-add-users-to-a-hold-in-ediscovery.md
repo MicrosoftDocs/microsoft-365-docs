@@ -18,7 +18,9 @@ search.appverid:
 - MBS150
 - MET150
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
-ms.custom: seo-marvel-apr2020
+ms.custom: 
+- seo-marvel-apr2020
+- admindeeplinkSPO
 description: "Learn how to run a script to add mailboxes & OneDrive for Business sites to a new hold associated with an eDiscovery case in the Microsoft 365 compliance center."
 ---
 
@@ -38,7 +40,7 @@ Here are the steps to make this happen:
   
 ## Before you add users to a hold
 
-- You have to be a member of the eDiscovery Manager role group in the Microsoft 365 compliance center and a SharePoint Online administrator to run the script in Step 3. For more information, see [Assign eDiscovery permissions in the Office‍ 365 Security & Compliance Center](assign-ediscovery-permissions.md).
+- You have to be a member of the eDiscovery Manager role group in the Microsoft 365 compliance center and a SharePoint Online administrator to run the script in Step 3. For more information, see [Assign eDiscovery permissions in the Office 365 Security & Compliance Center](assign-ediscovery-permissions.md).
 
 - A maximum of 1,000 mailboxes and 100 sites can be added to a hold that's associated with an eDiscovery case in the Microsoft 365 compliance center. Assuming that every user that you want to place on hold has a OneDrive for Business site, you can add a maximum of 100 users to a hold using the script in this article.
 
@@ -78,7 +80,7 @@ When you run the script in this step, it will prompt you for the following infor
   
 - **Your user credentials:** The script will use your credentials to connect to Security & Compliance Center with PowerShell. It will also use these credentials to access SharePoint Online to get the OneDrive for Business URLs for the list of users.
 
-- **Name of your SharePoint domain:** The script prompts you to enter this name so it can connect to the SharePoint admin center. It also uses the domain name for the OneDrive URLs in your organization. For example, if the URL for your admin center is `https://contoso-admin.sharepoint.com` and the URL for OneDrive is `https://contoso-my.sharepoint.com`, then you would enter `contoso` when the script prompts you for your domain name.
+- **Name of your SharePoint domain:** The script prompts you to enter this name so it can connect to the <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint admin center</a>. It also uses the domain name for the OneDrive URLs in your organization. For example, if the URL for your admin center is `https://contoso-admin.sharepoint.com` and the URL for OneDrive is `https://contoso-my.sharepoint.com`, then you would enter `contoso` when the script prompts you for your domain name.
 
 - **Name of the case:** The name of an existing case. The script will create a new hold that is associated with this case.
 
