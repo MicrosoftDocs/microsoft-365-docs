@@ -141,17 +141,8 @@ The following steps will guide you through onboarding VDI devices and will highl
 
 With the ability to easily deploy updates to VMs running in VDIs, we've shortened this guide to focus on how you can get updates on your machines quickly and easily. You no longer need to create and seal golden images on a periodic basis, as updates are expanded into their component bits on the host server and then downloaded directly to the VM when it's turned on.
 
-This guide describes how to configure your VMs for optimal protection and performance, including how to:
+For more information, follow the guidance in [Deployment guide for Microsoft Defender Antivirus in a virtual desktop infrastructure (VDI) environment](/security/defender-endpoint/deployment-vdi-microsoft-defender-antivirus).
 
-- [Set up a dedicated VDI file share for security intelligence updates](#set-up-a-dedicated-vdi-file-share)
-- [Randomize scheduled scans](#randomize-scheduled-scans)
-- [Use quick scans](#use-quick-scans)
-- [Prevent notifications](#prevent-notifications)
-- [Disable scans from occurring after every update](#disable-scans-after-an-update)
-- [Scan out-of-date machines or machines that have been offline for a while](#scan-vms-that-have-been-offline)
-- [Apply exclusions](#exclusions)
-
-You can also download the whitepaper [Microsoft Defender Antivirus on Virtual Desktop Infrastructure](https://demo.wd.microsoft.com/Content/wdav-testing-vdi-ssu.pdf), which looks at the new shared security intelligence update feature, alongside performance testing and guidance on how you can test antivirus performance on your own VDI.
 
 ## Related topics
 - [Onboard Windows devices using Group Policy](configure-endpoints-gp.md)
