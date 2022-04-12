@@ -138,12 +138,12 @@ The table below lists the potential mitigation statuses:
 
 | Mitigation status | Description |
 |:---|:---|
-| Workaround applied | _Windows_: the LOG4J_FORMAT_MSG_NO_LOOKUPS environment variable was observed before latest device reboot. <br/><br/> _Linux + macOS_: all running processes have LOG4J_FORMAT_MSG_NO_LOOKUPS=true in its environment variables |
-| Workaround pending reboot | the LOG4J_FORMAT_MSG_NO_LOOKUPS environment variable is set, but no following reboot detected |
-| Not applied | _Windows_: the LOG4J_FORMAT_MSG_NO_LOOKUPS environment variable was not observed<. <br/><br/> _Linux + macOS_: not all running processes have LOG4J_FORMAT_MSG_NO_LOOKUPS=true in its environment variables, and mitigation action was not applied on device |
-| Partially mitigated | _Linux + macOS_: although mitigation action was applied on device, not all running processes have LOG4J_FORMAT_MSG_NO_LOOKUPS=true in its environment variables |
-|Not applicable | devices that have vulnerable files that are not in the version range of the mitigation |
-|Unknown | The mitigation status couldn’t be determined at this time |
+| Workaround applied | _Windows_: The LOG4J_FORMAT_MSG_NO_LOOKUPS environment variable was observed before latest device reboot. <br/><br/> _Linux + macOS_: all running processes have LOG4J_FORMAT_MSG_NO_LOOKUPS=true in its environment variables. |
+| Workaround pending reboot | The LOG4J_FORMAT_MSG_NO_LOOKUPS environment variable is set, but no following reboot detected. |
+| Not applied | _Windows_: The LOG4J_FORMAT_MSG_NO_LOOKUPS environment variable was not observed. <br/><br/> _Linux + macOS_: Not all running processes have LOG4J_FORMAT_MSG_NO_LOOKUPS=true in its environment variables, and mitigation action was not applied on device. |
+| Partially mitigated | _Linux + macOS_: Although mitigation action was applied on device, not all running processes have LOG4J_FORMAT_MSG_NO_LOOKUPS=true in its environment variables. |
+|Not applicable | Devices that have vulnerable files that are not in the version range of the mitigation. |
+|Unknown | The mitigation status couldn’t be determined at this time. |
 
 > [!NOTE]
 > It may take a few hours for the updated mitigation status of a device to be reflected.
@@ -156,13 +156,16 @@ In cases where the mitigation needs to be reverted, follow these steps:
 
 1. Open an elevated PowerShell window
 2. Run the following command:
-    \[Environment\]::SetEnvironmentVariable("LOG4J\_FORMAT\_MSG\_NO\_LOOKUPS", $null, \[EnvironmentVariableTarget\]::Machine)
+
+ ```Powershell
+   \[Environment\]::SetEnvironmentVariable("LOG4J\_FORMAT\_MSG\_NO\_LOOKUPS", $null, \[EnvironmentVariableTarget\]::Machine)
+```
 
 The change will take effect after the device restarts.
 
 **_For Linux:_**
 
-1. Open the file /etc/environment and delete the line LOG4J\_FORMAT\_MSG\_NO\_LOOKUPS=true from it
+1. Open the file /etc/environment and delete the line LOG4J\_FORMAT\_MSG\_NO\_LOOKUPS=true
 2. Delete the file /etc/systemd/system.conf.d/log4j\_disable\_jndi\_lookups.conf
 3. Delete the file /etc/systemd/user.conf.d/log4j\_disable\_jndi\_lookups.conf
 
@@ -170,11 +173,11 @@ The change will take effect after the device restarts.
 
 **_For macOS:_**
 
-1. Remove the file setenv.LOG4J\_FORMAT\_MSG\_NO\_LOOKUPS.plist from the following folders:*
+1. Remove the file setenv.LOG4J\_FORMAT\_MSG\_NO\_LOOKUPS.plist from the following folders:
 
-  - */Library/LaunchDaemons/*
-  - */Library/LaunchAgents/*
-  - */Users/\[username\]/Library/LaunchAgents/ - for all users*
+- */Library/LaunchDaemons/*
+- */Library/LaunchAgents/*
+- */Users/\[username\]/Library/LaunchAgents/ - for all users*
 
 The change will take effect after the device restarts.
 
