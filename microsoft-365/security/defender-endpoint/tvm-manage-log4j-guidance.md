@@ -102,7 +102,7 @@ Use the threat and vulnerability management dashboard to see your current exposu
 
 1. In the Microsoft 365 Defender portal, go to **Vulnerability management** > **Dashboard** > **Threat awareness:**
 
-:::image type="content" source="images/awarenessdashboard.png" alt-text="The threat awareness dashboard" lightbox="images/1156c82ffadd356ce329d1cf551e806c.png":::
+:::image type="content" source="images/awareness_dashboard.png" alt-text="The threat awareness dashboard" lightbox="images/1156c82ffadd356ce329d1cf551e806c.png":::
 
 2.Select **View vulnerability details** to see the consolidated view of your organizational exposure. Choose the relevant tab to see your exposure broken down by:
 
@@ -198,7 +198,7 @@ Search for **CVE-2021-44228** to see security recommendations addressing the Log
 **Weaknesses page**
 On the weaknesses page, search for **CVE-2021-44228** to see information about the Log4j vulnerability:
 
-:::image type="content" source="images/log4j_weaknesses.png" alt-text="log4j weaknesses" lightbox="images/1156c82ffadd356ce329d1cf551e806c.png":::
+:::image type="content" source="images/weaknesses_log4j.png" alt-text="log4j weaknesses" lightbox="images/1156c82ffadd356ce329d1cf551e806c.png":::
 
 ## Use advanced hunting
 
