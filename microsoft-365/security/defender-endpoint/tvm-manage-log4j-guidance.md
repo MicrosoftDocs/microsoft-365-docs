@@ -35,7 +35,7 @@ The Log4j vulnerability is a remote code execution (RCE) vulnerability found in 
 > [!NOTE]
 > Refer to the blogs [Guidance for preventing, detecting, and hunting for exploitation of the Log4j 2 vulnerability and](https://www.microsoft.com/security/blog/2021/12/11/guidance-for-preventing-detecting-and-hunting-for-cve-2021-44228-log4j-2-exploitation/) [Microsoft Security Response Center](https://msrc-blog.microsoft.com/2021/12/11/microsofts-response-to-cve-2021-44228-apache-log4j2/) for guidance and technical information about the vulnerability and product specific mitigation recommendations to protect your organization.
 
-## Threat and vulnerability management capabilities
+## Overview of discovery, assessment and mitigation capabilities
 
 Threat and vulnerability management provides you with the following capabilities to help you identify, monitor, and mitigate your organizational exposure to the Log4j vulnerability:
 
@@ -87,13 +87,13 @@ Threat and vulnerability management provides layers of detection to help you dis
       \\META-INF\\maven\\org.apache.logging.log4j\\log4j-core\\pom.properties - if the said file exists, the Log4j version is read and extracted.
   - searches for the JndiLookup.class file inside the JAR file by looking for paths that contain the string “/log4j/core/lookup/JndiLookup.class” - if the JndiLookup.class file exists, threat and vulnerability management determines if this JAR contains a Log4j file with the version defined in pom.properties.
   - searches for any vulnerable Log4j-core JAR files embedded within nested-JAR by searching for paths that contain any of these strings:
-      - lib/log4j-core-
-      - WEB-INF/lib/log4j-core-
-      - App-INF/lib/log4j-core-
+    - lib/log4j-core-
+    - WEB-INF/lib/log4j-core-
+    - App-INF/lib/log4j-core-
 
 This table describes the search capabilities supported platforms and versions:
 
-|Capability|File Type|Windows10+<br>server2019+|Server 2008R2<br>server2012R2, server2016|Linux + macOS|
+|Capability|File Type|Windows10+,<br>server2019+|Server 2008R2,<br>server2012R2, server2016|Linux + macOS|
 |:---|:---|:---|:---|:---|
 |Search In Memory  | Log4j-core | Yes | - | Yes |
 | |Uber-JARs | Yes | - | Yes |
