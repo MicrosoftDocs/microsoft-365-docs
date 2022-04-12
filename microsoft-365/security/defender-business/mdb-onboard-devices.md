@@ -49,7 +49,7 @@ Choose one of the following options to onboard Windows client devices to Defende
 - [Local script](#local-script-for-windows-clients) (for onboarding devices manually in the Microsoft 365 Defender portal)
 - [Microsoft Endpoint Manager](#endpoint-manager-for-windows-clients)
 
-## Automatic onboarding for Windows clients
+### Automatic onboarding for Windows clients
 
 If Windows devices are already enrolled in Endpoint Manager, Defender for Business will detect those devices while you are in the process of setting up and configuring Defender for Business. You'll be asked if you want to use automatic onboarding for all or some of your Windows devices. You can onboard all Windows devices at once, or select specific devices to start with, and then add more devices later.
 
@@ -80,7 +80,7 @@ You can use a local script to onboard Windows client devices. When you run the o
 
 6. Open Command Prompt as an administrator.
 
-7. Type the location of the script file. For example, if you copied the file to the Desktop folder, you would type: `%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd`, and then press the Enter key (or select **OK**).
+7. Type the location of the script file. For example, if you copied the file to the Desktop folder, you would type `%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd`, and then press the Enter key (or select **OK**).
 
 8. After the script runs, proceed to [Run a detection test](#running-a-detection-test-on-a-windows-client).
 
@@ -122,6 +122,11 @@ See LINK.
 
 ## [**macOS**](#tab/macOS)
 
+Choose one of the following options to onboard macOS devices:
+
+- 
+
+
 ### Local script for macOS
 
 You can use a local script to onboard Mac devices. When you run the onboarding script on a device, it creates a trust with Azure Active Directory (if that trust doesn't already exist), enrolls the device in Microsoft Endpoint Manager (if it isn't already enrolled), and then onboards the device to Defender for Business. 
@@ -147,22 +152,17 @@ You can use a local script to onboard Mac devices. When you run the onboarding s
 
 9. You will be prompted to allow a driver from Microsoft to be installed (either "System Extension Blocked" or "Installation is on hold", or both. The driver must be allowed to be installed. To allow the installation, select **Open Security Preferences** or **Open System Preferences** > **Security & Privacy**, and then select **Allow**.
 
-10. Use the following Python command in Bash to run the onboarding package: 
+10. Use the following Python command in Bash to run the onboarding package: `/usr/bin/python MicrosoftDefenderATPOnboardingMacOs.py`
 
-   `/usr/bin/python MicrosoftDefenderATPOnboardingMacOs.py`
-
-11. To confirm that the device is associated with your company, use the following Python command in Bash: 
-
-   `mdatp health --field org_id`.
+11. To confirm that the device is associated with your company, use the following Python command in Bash: `mdatp health --field org_id`.
 
 12. If you are using macOS 10.15 (Catalina) or later, grant Defender for Business consent to protect your device by following these steps:   
 
    1. Go to **System Preferences** > **Security & Privacy** > **Privacy** > **Full Disk Access**.  
+
    2. Select the lock icon to make changes (bottom of the dialog box), and then select Microsoft Defender for Business (or Defender for Endpoint, if that's what you see).
 
-13. To verify that the device is onboarded, use the following command in Bash: 
-
-   `mdatp health --field real_time_protection_enabled`
+13. To verify that the device is onboarded, use the following command in Bash: `mdatp health --field real_time_protection_enabled`
 
 ### Endpoint Manager for macOS
 
