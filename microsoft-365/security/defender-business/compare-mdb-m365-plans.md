@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: reference
-ms.date: 04/08/2022
+ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -79,7 +79,7 @@ The following table compares security features and capabilities in Defender for 
 |[Next-generation protection](../defender-endpoint/next-generation-protection.md)|Yes|Yes|Yes|
 |[Endpoint detection and response](../defender-endpoint/overview-endpoint-detection-response.md)|Yes <sup>[[2](#fn2)]</sup>|No|Yes|
 |[Automated investigation and response](../defender-endpoint/automated-investigations.md)|Yes <sup>[[2](#fn2)]</sup>|No|Yes|
-|[Threat hunting](../defender-endpoint/advanced-hunting-overview.md) and six months of data retention <sup>[[3](#fn3)]</sup>|No|No|Yes|
+|[Threat hunting](../defender-endpoint/advanced-hunting-overview.md) and six months of data retention |No <sup>[[3](#fn3)]</sup>|No|Yes|
 |[Threat analytics](../defender-endpoint/threat-analytics.md)|Yes <sup>[[2](#fn2)]</sup>|No|Yes|
 |[Cross-platform support](../defender-endpoint/minimum-requirements.md) <br/>(Windows, macOS, iOS, and Android OS)|Yes <sup>[[4](#fn4)]</sup>|Yes|Yes|
 |[Microsoft Threat Experts](../defender-endpoint/microsoft-threat-experts.md)|No|No|Yes|
