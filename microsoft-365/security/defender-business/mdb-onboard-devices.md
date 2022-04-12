@@ -207,7 +207,7 @@ If your subscription includes [Microsoft Endpoint Manager](/mem/endpoint-manager
 There are several methods available for enrolling devices in Intune. We recommend starting with one of the following methods:
 
 - [Choose an option for company-owned macOS devices](#options-for-company-owned-macos-devices)
-- Ask users to enroll their own macOS devices in Intune
+- [Ask users to enroll their own macOS devices in Intune](#ask-users-to-enroll-their-own-macos-devices-in-intune)
 
 #### Options for company-owned macOS devices
 
@@ -245,11 +245,11 @@ To view the list of devices that are onboarded to Defender for Business, in the 
 
 ## Next steps
 
-Proceed to:
+- If you have other devices to onboard, select the tab that corresponds to the operating system on the devices (Windows Server, macOS, or mobile devices), and follow the guidance on that tab.
 
-- [Step 5: Configure your security settings and policies in Microsoft Defender for Business](mdb-configure-security-settings.md)
+- If you're done onboarding devices, proceed to [Step 5: Configure your security settings and policies in Microsoft Defender for Business](mdb-configure-security-settings.md)
 
-- [Get started using Microsoft Defender for Business](mdb-get-started.md) 
+- See [Get started using Microsoft Defender for Business](mdb-get-started.md).
 
 ## [**mobile devices**](#tab/mobile)
 
