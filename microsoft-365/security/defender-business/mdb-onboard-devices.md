@@ -43,12 +43,20 @@ With Microsoft Defender for Business, you have several options to choose from fo
 
 ## [**Windows clients**](#tab/WindowsClients)
 
+Choose one of the following options to onboard Windows client devices to Defender for Business:
 
+- Automatic onboarding (for devices that are already enrolled in Microsoft Endpoint Manager, which includes Microsoft Intune and Mobile Device Management capabilities)
+- Local script (for onboarding devices manually in the Microsoft 365 Defender portal)
+- Microsoft Endpoint Manager
 
 ## [**Windows Server**](#tab/WindowsServers)
 
+text
+
 ## [**macOS**](#tab/macOS)
+
+text
 
 ## [**mobile devices**](#tab/mobile)
 
-
+text
