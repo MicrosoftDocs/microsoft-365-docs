@@ -67,7 +67,7 @@ To enable Log4 detection:
 2. Select **Enable Log4j detection (CVE-2021-44228)**
 3. Select **Save**
 
-:::image type="content" source="images/enable_log4j.png" alt-text="The enable log4j detection setting" lightbox="images/enable_log4j.png":::
+:::image type="content" source="images/enable_log4j.png" alt-text="Setting to enable log4j detection" lightbox="images/enable_log4j.png":::
 
 Running these probes will trigger the standard Log4j flow without causing any harmful impact on either the device being probed or the probing device. The probing itself is done by sending multiple HTTP requests to discovered devices, targeting common web application ports (for example - 80,8000,8080,443,8443) and URLs. The request contains HTTP headers with a JNDI payload that triggers a DNS request from the probed machine.
 
@@ -107,8 +107,9 @@ This table describes the search capabilities supported platforms and versions:
 Use the threat and vulnerability management dashboard to see your current exposure.
 
 1. In the Microsoft 365 Defender portal, go to **Vulnerability management** > **Dashboard** > **Threat awareness:**
-:::image type="content" source="images/awareness_dashboard.png" alt-text="The threat awareness dashboard" lightbox="images/awareness_dashboard.png":::
+:::image type="content" source="images/awareness_dashboard.png" alt-text="The threat awareness widget on the vulnerability management dashboard" lightbox="images/awareness_dashboard.png":::
 2. Select **View vulnerability details** to see the consolidated view of your organizational exposure.
+:::image type="content" source="images/view_vulnerability_details.png" alt-text="The vulnerability details page for CVE-2021-44228 (Log4j)" lightbox="images/view_vulnerability_details.png":::
 3. Choose the relevant tab to see your exposure broken down by:
 
 - Exposed devices – onboard
@@ -125,7 +126,7 @@ The log4J vulnerability can be mitigated by preventing JNDI lookups on Log4j ver
 
 You can choose to apply the mitigation to all exposed devices or select specific onboarded devices. To complete the process and apply the mitigation on devices, select **Create mitigation action**.
 
-:::image type="content" source="images/mitigation_options.png" alt-text="Create mitigations" lightbox="images/mitigation_options.png":::
+:::image type="content" source="images/mitigation_options.png" alt-text="Mitigation options for CVE-2021-44228" lightbox="images/mitigation_options.png":::
 
 ### Mitigation status
 
