@@ -253,7 +253,10 @@ To view the list of devices that are onboarded to Defender for Business, in the 
 
 ## [**mobile devices**](#tab/mobile)
 
-text
+You'll need Microsoft Intune to onboard mobile devices, such as Android and iOS/iPadOS devices. See the following resources to get help enrolling these devices into Intune:
+
+- [Enroll Android devices](/mem/intune/enrollment/android-enroll)
+- [Enroll iOS or iPadOS devices](/mem/intune/enrollment/ios-enroll)
 
 ## Next steps
 
