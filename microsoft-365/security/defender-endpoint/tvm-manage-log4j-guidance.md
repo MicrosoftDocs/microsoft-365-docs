@@ -97,7 +97,7 @@ Specifically, it:
 
 This table describes the search capabilities supported platforms and versions:
 
-| Capability | File Type | Windows10+<br/>server2019+ | Server 2008R2, server2012R2<br />server2016 |Linux + macOS|
+|Capability|File Type|Windows10+<br>server2019+|Server 2008R2, server2012R2<br>server2016|Linux + macOS|
 |:---|:---|:---|:---|:---|
 |Search In Memory  | Log4j-core | Yes | - | Yes |
 | |Uber-JARs | Yes | - | Yes |
