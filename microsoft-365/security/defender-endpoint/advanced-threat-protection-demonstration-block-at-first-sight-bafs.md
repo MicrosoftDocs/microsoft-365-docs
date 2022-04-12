@@ -1,0 +1,41 @@
+---
+title: Microsoft Defender Advanced Threat Protection Block at First Sight (BAFS)demonstration
+description: 
+keywords: Microsoft Defender Advanced Threat Protection, Microsoft Defender ATP, cloud-delivered protection, detect malware, block malware, 
+search.product: eADQiWindows 10XVcnh
+search.appverid: met150
+ms.prod: m365-security
+ms.mktglfcycl: evaluation
+ms.sitesec: library
+ms.pagetype: security
+ms.author: v-jweston
+author: jweston-1
+ms.localizationpriority: medium
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: article
+ms.technology: mde
+---
+
+# Block at First Sight (BAFS)demonstration
+
+Block at First Sight, is a feature of Microsoft Defender Antivirus cloud-delivered protection that provides a way to detect and block new malware within seconds. You can test that it is working as expected by downloading a fake malware file.
+
+Scenario requirements and setup
+
+- Windows 10 Anniversary update (1607) or later
+- Cloud protection enabled
+- You can download and use the Powershell script to enable this setting and others
+
+## Scenario
+
+### Test BAFS
+
+- Click the create and download new file button
+- You should see the browser scanning the file, followed by an antivirus block notification. 
+- Create & download new file!
+
+## Learn more
+
+Block at First Sight
