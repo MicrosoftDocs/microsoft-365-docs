@@ -94,7 +94,7 @@ Compliance Manager sets up a default alert policy to monitor for score changes i
 
 Here are the settings for the default policy:
 
-- All matches that are detected within a span of 60 minutes will be grouped into one single alert. For example, if five improvement actions experience a score change within one hour, one alert will be generated. This grouping is meant to help prevent an excessive amount of alerts being generated.
+- All matches that are detected within a span of 60 minutes will be grouped into one single alert to reduce excessive notifications. For example, if five improvement actions experience a score change within one hour, one alert will be generated.
 
 - The severity level for these alerts is **medium**.
 
