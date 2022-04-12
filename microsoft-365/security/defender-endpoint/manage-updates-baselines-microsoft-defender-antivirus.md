@@ -6,7 +6,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: medium
+ms.localizationpriority: high
 audience: ITPro
 ms.topic: article
 author: denisebmsft
