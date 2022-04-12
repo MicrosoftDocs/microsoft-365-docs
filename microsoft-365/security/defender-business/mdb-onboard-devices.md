@@ -51,12 +51,12 @@ Choose one of the following options to onboard Windows client devices to Defende
 
 If Windows devices are already enrolled in Endpoint Manager, Defender for Business will detect those devices while you are in the process of setting up and configuring Defender for Business. You'll be asked if you want to use automatic onboarding for all or some of your Windows devices. You can onboard all Windows devices at once, or select specific devices to start with, and then add more devices later.
 
-If you're not asked about automatic onboarding, it's most likely because you don't have devices enrolled in Endpoint Manager yet. In this case, choose either the [local script method](#local-script-for-windows-clients) (recommended), or proceed to [enroll your Windows client devices in Endpoint Manager](#endpoint-manager-for-windows-clients).
-
 > [!TIP]
 > - We recommend selecting the "all devices enrolled" option. That way, when Windows devices are enrolled in Endpoint Manager later on, they'll be onboarded to Defender for Business automatically. 
 > - If you've been managing security policies and settings in Endpoint Manager, we recommend switching to the Microsoft 365 Defender portal to manage your devices, policies, and settings. To learn more, see [Choose where to manage security policies and devices](mdb-configure-security-settings.md#choose-where-to-manage-security-policies-and-devices).
 > - To learn more about automatic onboarding, see step 3 in [Use the wizard to set up Microsoft Defender for Business](mdb-use-wizard.md).
+
+If you're not asked about automatic onboarding, it's most likely because you don't have devices enrolled in Endpoint Manager yet. In this case, choose either the [local script method](#local-script-for-windows-clients) (recommended), or proceed to [enroll your Windows client devices in Endpoint Manager](#endpoint-manager-for-windows-clients).
 
 ### Local script for Windows clients
 
