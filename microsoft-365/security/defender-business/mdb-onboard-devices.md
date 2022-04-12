@@ -41,9 +41,9 @@ With Microsoft Defender for Business, you have several options to choose from fo
    - [macOS](#macostabmacos)
    - [mobile devices](#mobile-devicestabmobile)
 
-2. View your onboarding options for that operating system.
+2. View your onboarding options and follow the guidance on the selected tab.
 
-3. See your next steps.
+3. Proceed to your next steps.
 
 ## [**Windows clients**](#tab/WindowsClients)
 
