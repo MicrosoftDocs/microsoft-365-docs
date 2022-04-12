@@ -17412,7 +17412,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - le numéro de swift
 - swift numéro d'acheminement
 - le numéro BIC
-- # BIC
+- \# BIC
 - code identificateur de banque
 - SWIFTコード
 - SWIFT番号
