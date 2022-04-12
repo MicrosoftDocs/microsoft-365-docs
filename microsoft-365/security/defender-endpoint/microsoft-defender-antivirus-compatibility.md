@@ -27,6 +27,9 @@ ms.collection:
 - Microsoft Defender Antivirus
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
+**Platforms**
+- Windows
+
 [!include[Prerelease information](../../includes/prerelease.md)]
 
 Microsoft Defender Antivirus is automatically installed on endpoints running the following versions of Windows:
@@ -189,6 +192,15 @@ The table in this section describes various states you might see with Microsoft 
  |  Passive mode  |  In passive mode, Microsoft Defender Antivirus is not used as the antivirus app, and threats are *not* remediated by Microsoft Defender Antivirus. Threats can be remediated by [Endpoint detection and response (EDR) in block mode](edr-in-block-mode.md), however. <br/><br/> Files are scanned by EDR, and reports are provided for threat detections that are shared with the Defender for Endpoint service. You might see alerts showing Microsoft Defender Antivirus as a source, even when Microsoft Defender Antivirus is in passive mode. <br/><br/> When Microsoft Defender Antivirus is in passive mode, you can still [manage updates for Microsoft Defender Antivirus](manage-updates-baselines-microsoft-defender-antivirus.md); however, you can't move Microsoft Defender Antivirus into active mode if your devices have a non-Microsoft antivirus product that is providing real-time protection from malware. <br/><br/> For optimal security layered defense and detection efficacy, make sure to get your antivirus and antimalware updates, even if Microsoft Defender Antivirus is running in passive mode. See [Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md). <br/><br/> Note that passive mode is only supported on Windows Server 2012 R2 & 2016 when the machine is onboarded using the [modern, unified solution](/microsoft-365/security/defender-endpoint/configure-server-endpoints).  | 
  |  Disabled <br/><br/> or <br/><br/> Uninstalled  |  When disabled or uninstalled, Microsoft Defender Antivirus is not used as the antivirus app. Files are not scanned and threats are not remediated. <br/><br/> Disabling or uninstalling Microsoft Defender Antivirus is not recommended in general; if possible, keep Microsoft Defender Antivirus in passive mode if you are using a non-Microsoft antimalware/antivirus solution. <br/><br/> In cases where Microsoft Defender Antivirus is disabled automatically, it can be re-enabled automatically if the non-Microsoft antivirus/antimalware product expires or otherwise stops providing real-time protection from viruses, malware, or other threats. The automatic re-enabling of Microsoft Defender Antivirus helps to ensure that antivirus protection is maintained on your endpoints. <br/><br/> You might also use [limited periodic scanning](limited-periodic-scanning-microsoft-defender-antivirus.md), which works with the Microsoft Defender Antivirus engine to periodically check for threats if you are using a non-Microsoft antivirus app.  | 
 
+> [!TIP]
+> If you’re looking for Antivirus related information for other platforms, see:
+> - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
+> - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
+> - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md)
+> - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
+> - [Configure Defender for Endpoint on Android features](android-configure.md)
+> - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
 
 ## See also
 
