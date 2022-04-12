@@ -44,7 +44,7 @@ You must be a Global, License, or User admin to assign licenses. For more inform
 
 ::: moniker-end
 
-2. Select the check-boxes next to the names of the users that you want to replace existing licenses for.
+2. Select the checkboxes next to the names of the users that you want to replace existing licenses for.
 
 3. At the top, select **Manage product licenses**.
 
