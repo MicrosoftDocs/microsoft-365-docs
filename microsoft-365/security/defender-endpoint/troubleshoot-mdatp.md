@@ -36,7 +36,7 @@ Configure your browser to allow cookies.
 
 ## Elements or data missing on the portal
 
-If some elements or data is missing on Microsoft 365 Defender it’s possible that proxy settings are blocking it.
+If some elements or data is missing on Microsoft 365 Defender it's possible that proxy settings are blocking it.
 
 Make sure that `*.security.microsoft.com` is included the proxy allowlist.
 

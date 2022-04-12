@@ -219,16 +219,13 @@ The following table lists the limits for eDiscovery cases and case holds.
   | Description of limit | Limit |
   |:-----|:-----|
   |Maximum number of cases for an organization.  <br/> |No limit  <br/> |
-  |Maximum number of eDiscovery hold policies for an organization. This limit includes the combined total of hold policies in Core eDiscovery and Advanced eDiscovery cases.  <br/> |10,000<sup>1</sup>  <br/> |
+  |Maximum number of eDiscovery hold policies for an organization. This limit includes the combined total of hold policies in Core eDiscovery and Advanced eDiscovery cases.  <br/> |10,000  <br/> |
   |Maximum number of mailboxes in a single eDiscovery hold. This limit includes the combined total of user mailboxes, and the mailboxes associated with Microsoft 365 Groups, Microsoft Teams, and Yammer Groups.  <br/> |1,000  <br/> |
   |Maximum number of sites in a single eDiscovery hold. This limit includes the combined total of OneDrive for Business sites, SharePoint sites, and the sites associated with Microsoft 365 Groups, Microsoft Teams, and Yammer Groups.  <br/> |100  <br/> |
-  |Maximum number of cases displayed on the eDiscovery home page, and the maximum number of items displayed on the Holds, Searches, and Export tabs within a case.  |1,000<sup>2</sup>|
-  |||
+  |Maximum number of cases displayed on the eDiscovery home page, and the maximum number of items displayed on the Holds, Searches, and Export tabs within a case.  |1,000<sup>1</sup>|
 
    > [!NOTE]
-   > <sup>1</sup> When you put more than 1,000 mailboxes or 100 sites on hold in a single hold policy, the system will automatically scale the hold as needed. This means the system will automatically add data locations to multiple hold policies, instead of adding them to a single hold policy. However, the limit of 10,000 case hold policies per organization still applies.
-   >
-   > <sup>2</sup> To view a list of more than 1,000 cases, holds, searches, or exports, you can use the corresponding Security & Compliance PowerShell cmdlet:
+   > <sup>1</sup> To view a list of more than 1,000 cases, holds, searches, or exports, you can use the corresponding Security & Compliance PowerShell cmdlet:
    >
    > - [Get-ComplianceCase](/powershell/module/exchange/get-compliancecase)
    > - [Get-CaseHoldPolicy](/powershell/module/exchange/get-caseholdpolicy)
