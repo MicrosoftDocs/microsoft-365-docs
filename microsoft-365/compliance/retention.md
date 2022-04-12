@@ -362,7 +362,7 @@ For example:
 
 ![Policy lookup to find the policies for retention that are assigned to specific users, sites, and Microsoft 365 groups ](../media/policy-lookup.png)
 
-You must specify the exact email address for a user, exact URL for a site, or exact email address for a Microsoft 365 group. You can't use wildcards, for example.
+You must specify the exact email address for a user, exact URL for a site, or exact email address for a Microsoft 365 group. You can't use wildcards, or partial matches, for example.
 
 The option for sites includes OneDrive accounts. For information how to specify the URL for a user's OneDrive account, see [Get a list of all user OneDrive URLs in your organization](/onedrive/list-onedrive-urls).
 
