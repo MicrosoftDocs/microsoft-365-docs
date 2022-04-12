@@ -356,11 +356,13 @@ To watch a recorded webinar (requires registration), visit [Deep Dive on Adaptiv
 
 ## Policy lookup
 
-You can configure multiple retention policies for Microsoft 365 locations, as well as multiple retention label policies that you publish or auto-apply. To find the policies for retention that are assigned to specific users, sites, and Microsoft 365 groups, use **Policy lookup** from the **Data lifecycle management** solution in the Microsoft Purview compliance portal:
+You can configure multiple retention policies for Microsoft 365 locations, as well as multiple retention label policies that you publish or auto-apply. To find the policies for retention that are assigned to specific users, sites, and Microsoft 365 groups, use **Policy lookup** from the **Data lifecycle management** or **Records management** solutions in the Microsoft Purview compliance portal.
+
+For example:
 
 ![Policy lookup to find the policies for retention that are assigned to specific users, sites, and Microsoft 365 groups ](../media/policy-lookup.png)
 
-You must specify the exact email address for a user, exact URL for a site, or exact email address for a Microsoft 365 group.
+You must specify the exact email address for a user, exact URL for a site, or exact email address for a Microsoft 365 group. You can't use wildcards, or partial matches, for example.
 
 The option for sites includes OneDrive accounts. For information how to specify the URL for a user's OneDrive account, see [Get a list of all user OneDrive URLs in your organization](/onedrive/list-onedrive-urls).
 
