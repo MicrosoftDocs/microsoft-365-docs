@@ -63,6 +63,27 @@ To learn more about automatic onboarding, see step 3 in [Use the wizard to set u
 
 ### Local script for Windows clients
 
+You can use a local script to onboard Windows client devices. When you run the onboarding script on a device, it creates a trust with Azure Active Directory (if that trust doesn't already exist), enrolls the device in Microsoft Endpoint Manager (if it isn't already enrolled), and then onboards the device to Defender for Business. 
+
+> [!TIP]
+> We recommend onboarding up to 10 devices at a time when you use the local script method.
+
+1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.
+
+2. In the navigation pane, choose **Settings** > **Endpoints**, and then under **Device management**, choose **Onboarding**.
+
+3. Select an operating system, such as **Windows 10 and 11**, and then, in the **Deployment method** section, choose **Local script**. 
+
+4. Select **Download onboarding package**. We recommend saving the onboarding package to a removable drive.
+
+5. On a Windows device, extract the contents of the configuration package to a location, such as the Desktop folder. You should have a file named `WindowsDefenderATPLocalOnboardingScript.cmd`. 
+
+6. Open Command Prompt as an administrator.
+
+7. Type the location of the script file. For example, if you copied the file to the Desktop folder, you would type: `%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd`, and then press the Enter key (or select **OK**).
+
+8. After the script runs, proceed to [Run a detection test](#running-a-detection-test-on-a-windows-client).
+
 ### Endpoint Manager for Windows clients
 
 ### Running a detection test on a Windows client
