@@ -38,8 +38,8 @@ If your subscription includes any of the following products, each person can ins
 
 :::row:::
    :::column span="":::
-        - Microsoft 365 Apps for Business
-        - Microsoft 365 Apps for Enterprise
+        - Microsoft 365 Apps for business
+        - Microsoft 365 Apps for enterprise
         - Microsoft 365 Business Standard
         - Microsoft 365 Business Premium
         - Microsoft 365 A3
