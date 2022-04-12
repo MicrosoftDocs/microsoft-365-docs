@@ -104,8 +104,8 @@ Here's an example of a CSV file for job level changes data.
 
 ```text
 EmailAddress,EffectiveDate,OldLevel,NewLevel
-sarad@contoso.com,2019-04-23T15:18:02.4675041+05:30,Level 61 – Sr. Manager,Level 60- Manager
-pillar@contoso.com,2019-04-23T15:18:02.4675041+05:30,Level 62 – Director,Level 60- Sr. Manager
+sarad@contoso.com,2019-04-23T15:18:02.4675041+05:30,Level 61 - Sr. Manager,Level 60- Manager
+pillar@contoso.com,2019-04-23T15:18:02.4675041+05:30,Level 62 - Director,Level 60- Sr. Manager
 ```
 
 The following table describes each column in the CSV file for job level changes data.

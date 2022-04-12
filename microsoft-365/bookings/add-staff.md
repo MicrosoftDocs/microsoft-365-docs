@@ -53,7 +53,7 @@ Although Bookings is a feature of Microsoft 365, not all of your staff members a
 
     For example, if a staff member has a team meeting or a personal appointment scheduled for 3pm on a Wednesday, Bookings will show that staff member as unavailable to be booked in that time slot. That time will appear as busy or tentative in the Bookings calendar view, as shown in the below example.
 
-    :::image type="content" source="media/bookings-busy-tentative-view.jpg" alt-text="A view of a Bookings calendar.":::
+    :::image type="content" source="media/bookings-busy-tentative-view-2.png" alt-text="A view of a Bookings calendar.":::
 
 > [!IMPORTANT]
 > We highly recommend leaving this setting on (it is turned on by default) to avoid double-bookings and to optimize the availability of your staff members.
