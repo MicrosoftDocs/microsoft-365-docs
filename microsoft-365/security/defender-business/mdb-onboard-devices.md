@@ -35,11 +35,7 @@ With Microsoft Defender for Business, you have several options to choose from fo
 
 ## What to do
 
-1. Select the tab for your operating system: 
-   - [Windows client](#windows-clientstabwindowsclients)
-   - [Windows Server](#windows-servertabwindowsservers)
-   - [macOS](#macostabmacos)
-   - [mobile devices](#mobile-devicestabmobile)
+1. Select the tab for your operating system: (Windows client, Windows Server, macOS, or mobile devices).
 
 2. View your onboarding options and follow the guidance on the selected tab.
 
@@ -170,6 +166,27 @@ You can use a local script to onboard Mac devices. When you run the onboarding s
 
 ### Endpoint Manager for macOS
 
+If you were already using Endpoint Manager (which includes Microsoft Intune and Mobile Device Management), before you got Defender for Business, you can continue to use Endpoint Manager to onboard your company's devices. With Endpoint Manager, you can onboard computers, tablets, and phones, including iOS and Android devices.
+
+See [Device enrollment in Microsoft Intune](/mem/intune/enrollment/device-enrollment).
+
+## Next steps
+
+Proceed to:
+
+- [Step 5: Configure your security settings and policies in Microsoft Defender for Business](mdb-configure-security-settings.md)
+
+- [Get started using Microsoft Defender for Business](mdb-get-started.md) 
+
 ## [**mobile devices**](#tab/mobile)
 
 text
+
+## Next steps
+
+Proceed to:
+
+- [Step 5: Configure your security settings and policies in Microsoft Defender for Business](mdb-configure-security-settings.md)
+
+- [Get started using Microsoft Defender for Business](mdb-get-started.md) 
+
