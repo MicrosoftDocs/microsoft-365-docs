@@ -122,9 +122,49 @@ See LINK.
 
 ## [**macOS**](#tab/macOS)
 
-## Local script for macOS
+### Local script for macOS
 
-## Endpoint Manager for macOS
+You can use a local script to onboard Mac devices. When you run the onboarding script on a device, it creates a trust with Azure Active Directory (if that trust doesn't already exist), enrolls the device in Microsoft Endpoint Manager (if it isn't already enrolled), and then onboards the device to Defender for Business. 
+
+> [!TIP]
+> We recommend onboarding up to 10 devices at a time when you use the local script method.
+
+1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.
+
+2. In the navigation pane, choose **Settings** > **Endpoints**, and then under **Device management**, choose **Onboarding**.
+
+3. Select **macOS**, and then, in the **Deployment method** section, choose **Local script**. 
+
+4. Select **Download onboarding package**, and save it to a removable drive. Also select **Download installation package**, and save it to your removable device.
+
+5. On a macOS device, save the installation package as `wdav.pkg` to a local directory.
+
+6. Save the onboarding package as `WindowsDefenderATPOnboardingPackage.zip` to the same directory you used for the installation package.
+
+7. Use Finder to navigate to `wdav.pkg` you saved, and then open it.
+
+8. Select **Continue**, agree with the License terms, and then enter your password when prompted.
+
+9. You will be prompted to allow a driver from Microsoft to be installed (either "System Extension Blocked" or "Installation is on hold", or both. The driver must be allowed to be installed. To allow the installation, select **Open Security Preferences** or **Open System Preferences** > **Security & Privacy**, and then select **Allow**.
+
+10. Use the following Python command in Bash to run the onboarding package: 
+
+`/usr/bin/python MicrosoftDefenderATPOnboardingMacOs.py`
+
+11. To confirm that the device is associated with your company, use the following Python command in Bash: 
+
+`mdatp health --field org_id`.
+
+12. If you are using macOS 10.15 (Catalina) or later, grant Defender for Business consent to protect your device by following these steps: 
+
+   1. Go to **System Preferences** > **Security & Privacy** > **Privacy** > **Full Disk Access**.  
+   2. Select the lock icon to make changes (bottom of the dialog box), and then select Microsoft Defender for Business (or Defender for Endpoint, if that's what you see).
+
+13. To verify that the device is onboarded, use the following command in Bash: 
+
+`mdatp health --field real_time_protection_enabled`
+
+### Endpoint Manager for macOS
 
 ## [**mobile devices**](#tab/mobile)
 
