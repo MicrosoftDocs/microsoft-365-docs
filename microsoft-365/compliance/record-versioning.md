@@ -32,7 +32,7 @@ The ability to mark a document as a [record](records-management.md#records) and 
 
 For example, you might mark a sales contract as a record, but then need to update the contract with new terms and mark the latest version as a new record while still retaining the previous record version. For these types of scenarios, SharePoint and OneDrive support *record versioning*. OneNote notebook folders don't support record versioning.
 
-To use record versioning, you first [label the document and mark it as a record](declare-records.md). At this point, a document property, called *Record status* is displayed next to the retention label. Depending on whether the label is configured to unlock the record by default (currently rolling out), the initial record status is either **Locked** or **Unlocked**.
+To use record versioning, you first label the document with a [retention label that's configured to mark items as a record](declare-records.md). At this point, a document property, called *Record status* is displayed next to the retention label. Depending on whether the label is configured to unlock the record by default (currently rolling out), the initial record status is either **Locked** or **Unlocked**.
 
 You can now do the following things:
 

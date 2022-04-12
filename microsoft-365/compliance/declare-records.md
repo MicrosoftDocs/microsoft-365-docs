@@ -50,7 +50,7 @@ If you change your mind about seeing this option in the retention label wizard, 
 
 ## Configuring retention labels to declare records
 
-When you create a retention label from the **Records Management** solution in the Microsoft 365 compliance center, you can select the option **Mark items as a record**. Then, as an additional option that's currently in preview, unlock the record by default for SharePoint and OneDrive.
+When you create a retention label from the **Records Management** solution in the Microsoft 365 compliance center, you can select the option **Mark items as a record**. Then, as an additional option that's currently rolling out in preview, unlock the record by default for SharePoint and OneDrive.
 
 The additional option of **Unlock this record by default** effectively lets users declare records themselves because they lock the record when they have finished editing the content. For more information about this supported scenario, see [Use record versioning to update records stored in SharePoint or OneDrive](record-versioning.md).
 

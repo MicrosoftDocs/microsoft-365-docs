@@ -76,6 +76,14 @@ All columns except the label **Name** can be displayed or hidden by selecting th
     - Yes
     - Yes(Regulatory)
 
+- **Is regulatory** —currently rolling out—identifies if the item is marked as a regulatory record when the label is applied. Valid values:
+    - No
+    - Yes
+
+- **Is unlocked by default** —currently rolling out—identifies if the item marked as a record is unlocked when the label is applied. Valid values:
+    - No
+    - Yes
+
 - **Retention duration** identifies the retention period. Valid values:
     - Days
     - Months
@@ -209,6 +217,11 @@ Use the following information to help you fill out the downloaded template to im
 |Regulatory|String|No|This property specifies whether the label marks the content as a regulatory record, which is [more restrictive](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked) than a record. To use this label configuration, your tenant must be configured to [display the option to mark content as a regulatory record](declare-records.md#how-to-display-the-option-to-mark-content-as-a-regulatory-record), or the import validation will fail. Valid values are: </br>**TRUE**: The label marks the item as a regulatory record. You must also set the **IsRecordLabel** property to TRUE.</br>**FALSE**: The label doesn't mark the content as a regulatory record. This is the default value.|
 |EventType|String|No, unless **RetentionType** is **EventAgeInDays**|This property specifies an event type used for [event-based retention](event-driven-retention.md). Specify an existing event type that's displayed in **Records management** > **Events** > **Manage event types**. Alternatively, use the [Get-ComplianceRetentionEventType](/powershell/module/exchange/get-complianceretentioneventtype) cmdlet to view the available event types. Although there are some built-in event types, such as **Employee activity** and **Product lifetime**, you can also create your own event types. </br> </br> If you specify your own event type, it must exist before the import because the name is validated as part of the import process.|
 |||
+
+Label settings not currently supported for import:
+
+- Multi-stage disposition review: Although you can configure the settings for a single disposition review stage when you import retention labels with a template, you can't specify additional review stages. Instead, configure these in the compliance center after the import succeeds.
+
 
 ## Next steps
 
