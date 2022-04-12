@@ -30,7 +30,7 @@ description: "Learn how security defaults can help protect your organization fro
 
 Microsoft 365 Business Premium was designed to help protect your company's user accounts with preconfigured security settings. These settings include enabling multi-factor authentication (MFA) for all your admins and user accounts. For most organizations, security defaults offer a good level of sign-in security.
 
-Some businesses require additional security. If your organization has complex security requirements or you need more granular control over your security policies, then you should consider using Conditional Access.
+For more information about security defaults and the policies they enforce, see [What are security defaults?](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
 
 This article provides information about:
 
@@ -56,21 +56,24 @@ MFA is an important first step in securing your company, and security defaults m
 
 ### To enable security defaults (or confirm they're already enabled)
 
-1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> with security administrator, Conditional Access administrator, or Global admin credentials.
+1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> with security administrator, Conditional Access administrator, or Global admin credentials.
 
-2. In the left pane, select **Show All,** and then under **Admin centers**, select **Azure Active Directory**.
+2. In the left pane, select **Show All,** and then under **Admin centers**, select **Azure Active Directory**.
 
-3. In the left pane of the **Azure Active Directory admin center,** select **Azure Active Directory**.
+3. In the left pane of the **Azure Active Directory admin center,** select **Azure Active Directory**.
 
-4. From the left menu of the Dashboard, in the **Manage** section, select **Properties**.
+4. From the left menu of the Dashboard, in the **Manage** section, select **Properties**.
 
     :::image type="content" source="../media/m365-campaigns-conditional-access/azure-ad-properties.png" alt-text="Screenshot of the Azure Active Directory admin center showing the location of the Properties menu item.":::
 
-5. At the bottom of the **Properties** page, select **Manage Security defaults**.
+5. At the bottom of the **Properties** page, select **Manage Security defaults**.
 
-6. In the right pane, you'll see the **Enable Security defaults** setting. If **Yes** is selected, then security defaults are already enabled and no further action is required. If security defaults are not currently enabled, then select **Yes** to enable them, and then select **Save**.
+6. In the right pane, you'll see the **Enable Security defaults** setting. If **Yes** is selected, then security defaults are already enabled and no further action is required. If security defaults are not currently enabled, then select **Yes** to enable them, and then select **Save**.
 
 ## Conditional Access
+
+> [!NOTE]
+> If you've been using security defaults, you'll need to turn them off before using Conditional Access. You can use either security defaults or Conditional Access policies, but you can't use both at the same time.
 
 If your company or business has complex security requirements or you need more granular control over your security policies, then you should consider using Conditional Access instead of security defaults to achieve a similar or higher security posture.
 
@@ -89,7 +92,7 @@ If you want to use Conditional Access to configure policies, see the following s
 - [Require MFA for Azure management](/azure/active-directory/conditional-access/howto-conditional-access-policy-azure-management)
 - [Block legacy authentication](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)
 - [Require MFA for all users](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)
-- [Require Azure AD MFA registration](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy) - Requires Azure AD Identity Protection, which is part of Azure Active Directory Premium P2
+- [Require Azure AD MFA registration](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy) - Requires Azure AD Identity Protection, which is part of Azure Active Directory Premium P2
 
 To learn more about Conditional Access, see [What is Conditional Access?](/azure/active-directory/conditional-access/overview) For more information about creating Conditional Access policies, see [Create a Conditional Access policy](/azure/active-directory/authentication/tutorial-enable-azure-mfa#create-a-conditional-access-policy).
 
