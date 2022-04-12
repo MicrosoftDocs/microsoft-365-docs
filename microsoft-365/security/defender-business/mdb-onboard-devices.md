@@ -167,7 +167,7 @@ See LINK.
 
 Choose one of the following options to onboard macOS devices:
 
-- [Local script for macOS](#local-script-for-macos)
+- [Local script for macOS](#local-script-for-macos) (*recommended*)
 - [Endpoint Manager for macOS](#endpoint-manager-for-macos)
 
 ### Local script for macOS
@@ -198,6 +198,37 @@ When you run the local script on a macOS device, it creates a trust with Azure A
 
 10. Use the following Python command in Bash to run the onboarding package: `/usr/bin/python MicrosoftDefenderATPOnboardingMacOs.py`
 
+11. After a device has been enrolled in Intune, you can add it to a device group. [Learn more about device groups in Microsoft Defender for Business](mdb-create-edit-device-groups.md).
+
+### Endpoint Manager for macOS
+
+If your subscription includes [Microsoft Endpoint Manager](/mem/endpoint-manager-overview), you can onboard macOS devices in the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). For example, if you have [Microsoft 365 Business Premium](../../business/index.yml), you have Endpoint Manager as part of your subscription. Endpoint Manager includes [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) and [Mobile Device Management capabilities](/mem/intune/fundamentals/what-is-device-management). 
+
+There are several methods available for enrolling devices in Intune. We recommend starting with one of the following methods:
+
+- [Choose an option for company-owned macOS devices](#options-for-company-owned-macos-devices)
+- Ask users to enroll their own macOS devices in Intune
+
+#### Options for company-owned macOS devices
+
+Choose one of the options in the following table to enroll company-managed macOS devices in Intune:
+
+| Option  | Description  |
+|---------|---------|
+| Apple Automated Device Enrollment |  Use this method to automate the enrollment experience on devices purchased through Apple Business Manager or Apple School Manager. Automated device enrollment deploys the enrollment profile over-the-air, so you don't need to have physical access to devices. <br/><br/>See [Automatically enroll macOS devices with the Apple Business Manager or Apple School Manager](/mem/intune/enrollment/device-enrollment-program-enroll-macos). |
+| Device enrolllment manager (DEM)  |  Use this method for large-scale deployments and when there are multiple people in your organization who can help with enrollment setup. Someone with device enrollment manager (DEM) permissions can enroll up to 1,000 devices with a single Azure Active Directory account. This method uses the Company Portal app or Microsoft Intune app to enroll devices. You can't use a DEM account to enroll devices via Automated Device Enrollment.<br/><br/> See [Enroll devices in Intune by using a device enrollment manager account](/mem/intune/enrollment/device-enrollment-manager-enroll).  |
+| Direct enrollment  | Direct enrollment enrolls devices with no user affinity, so this method is best for devices that aren't associated with a single user. This method requires you to have physical access to the Macs you're enrolling. <br/><br/>See [Use Direct Enrollment for macOS devices](/mem/intune/enrollment/device-enrollment-direct-enroll-macos).      |
+
+#### Ask users to enroll their own macOS devices in Intune
+
+If your business prefers to have people enroll their own devices in Intune, ask users to follow these steps:
+
+1. Go to the Company Portal website ([https://portal.manage.microsoft.com/](https://portal.manage.microsoft.com/)) and sign in.
+
+2. Follow the instructions on the Company Portal website to add their device.
+
+3. Install the Company Portal app at [https://aka.ms/EnrollMyMac](https://aka.ms/EnrollMyMac), and follow the instructions in the app.
+
 ### Confirm that a macOS device is onboarded
 
 1. To confirm that the device is associated with your company, use the following Python command in Bash: `mdatp health --field org_id`.
@@ -205,6 +236,8 @@ When you run the local script on a macOS device, it creates a trust with Azure A
 2. If you are using macOS 10.15 (Catalina) or later, grant Defender for Business consent to protect your device. Go to **System Preferences** > **Security & Privacy** > **Privacy** > **Full Disk Access**. Select the lock icon to make changes (bottom of the dialog box), and then select **Microsoft Defender for Business** (or **Defender for Endpoint**, if that's what you see).
 
 3. To verify that the device is onboarded, use the following command in Bash: `mdatp health --field real_time_protection_enabled`
+
+4. After a device has been enrolled in Intune, you can add it to a device group. [Learn more about device groups in Microsoft Defender for Business](mdb-create-edit-device-groups.md).
 
 ## View a list of onboarded devices
 
