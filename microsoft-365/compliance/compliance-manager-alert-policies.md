@@ -91,7 +91,26 @@ You can create policies to alert you when certain changes or events related to i
 #### Default score change policy
 
 Compliance Manager sets up a default alert policy to monitor for score changes in improvement actions. The default policy will generate an alert each time an improvement action's score changes.
-Alerts carry a severity of medium, and email notifications are sent each time a match is detected. Most settings for the default policy can't be edited, but you can add additional recipients for notifications.
+
+Most settings for the default policy can't be edited, but you can add additional recipients for notifications.
+
+You can't delete the default policy, but you can disable it by [following the steps outlined below](#activate-or-inactivate-a-policy).
+
+The settings for the default policy include:
+
+- All matches that are detected within a span of 60 minutes will be grouped into one single alert. This grouping is meant to  help prevent an excessive amount of alerts being generated.
+
+- The severity level for these alerts is **medium**.
+
+- The Global Admin for your organization is the default recipient of alert notifications.
+
+- You can add more alert recipients by following these steps:
+    - On the **Alert policies** page, find the **Compliance Manager default alert policy**.
+    - Check the box to thee left of its name and select the **Edit** button near the top, above the filters.
+    - Select the **Next** button until you come to the **Alert recipients** page.
+    - Select **+Select recipients** and check the boxes next to each user name on the flyout pane whom you want to receive the email notification. When done, select **Add recipient**, then select **Next**.
+    - On the **Review and finish** page, select **Update** to save your changes.
+
 
 ### Policy creation steps
 
