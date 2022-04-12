@@ -29,7 +29,7 @@ The tables in the next section describe which GDAP roles grant permission to rea
 > [!NOTE]
 >GDAP is currently in [technical preview](/partner-center/announcements/2022-february#6) (public preview) to allow partners to assign granular permissions before GDAP is generally available. Check [Known Issues](m365-lighthouse-known-issues.md) if you're having a problem accessing or performing an action in Lighthouse.
 
-## Example MSP service tiers and recommended GDAP roles
+## Example MSP service tiers, recommended GDAP roles, and permissions
 
 The following table lists the recommended GDAP roles for some example MSP service tiers. 
 
