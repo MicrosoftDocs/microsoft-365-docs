@@ -40,7 +40,7 @@ Microsoft Bookings is available in the following subscriptions:
 
 ## Watch: Introducing Microsoft Bookings
 
-> [!VIDEO https://youtu.be/G2HOsM767Sw]
+> [VIDEO](https://www.youtube.com/watch?v=G2HOsM767Sw)
 
 Bookings makes it easier for small businesses to schedule and manage appointments with their customers.
 
