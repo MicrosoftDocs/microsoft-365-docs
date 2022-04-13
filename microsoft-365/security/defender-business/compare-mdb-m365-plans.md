@@ -94,7 +94,7 @@ The following table compares security features and capabilities in Defender for 
 - Stop and quarantine a file
 - Add an indicator to block or allow a file
 
-(<a id="fn3">3</a>) In Defender for Business, automated investigation and response is turned on by default, tenant wide. If you turn off automated investigation and response, it affects real-time protection. See .  
+(<a id="fn3">3</a>) In Defender for Business, automated investigation and response is turned on by default, tenant wide. If you turn off automated investigation and response, it affects real-time protection. See [Review settings for advanced features](mdb-configure-security-settings.md#review-settings-for-advanced-features).  
 
 (<a id="fn4">4</a>) There is no timeline view in Defender for Business.
 
