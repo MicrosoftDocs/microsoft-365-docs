@@ -16,7 +16,7 @@ ms.reviewer: Tinacyt
 f1.keywords: NOCSH
 ---
 
-# Test your Intune application on Test Base
+# Test an Intune app on Test Base 
 > [!Note] This guide will guide you to upload your intunewin format package to Test Base via Package Studio. For general usage in Package Studio, please refer to this [doc](https://microsoft.sharepoint.com/:w:/t/AzureSUVPCoreTeam/EeHQIT3qA0FKqBDWI5TzmzgBiH2Syz39o5VbY2kdugMn4A?e=Rk1KD9).
 
 ## Intunewin Upload Flow
