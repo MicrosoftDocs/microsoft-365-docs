@@ -63,6 +63,10 @@ Download and run this [cleanup script](@@). You can perform these manual steps i
 
 - Set-MpPreference -EnableControlledFolderAccess Disabled
 
-## Learn more
+## See also
 
-Controlled Folder Access
+[Controlled folder access demonstration](advanced-threat-protection-demonstration-controlled-folder-access.md)
+
+[Controlled folder access](/windows/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard?ocid=wd-av-demo-cfa-bottom)
+
+[Microsoft Defender Advanced Threat Protection (ATP) - demonstration scenarios](advanced-threat-protection-demonstrations.md)

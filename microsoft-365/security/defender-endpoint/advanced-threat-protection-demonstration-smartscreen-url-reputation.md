@@ -31,48 +31,60 @@ Scenario requirements and setup
 
 ### Is This Phishing?
 
-Alerts the user to a suspicious page and ask for feedback.
+Alerts the user to a suspicious page and ask for feedback:
 
-[Is this Phishing?](https://demo.smartscreen.msft.net/other/areyousure.html)
+- [Is this Phishing?](https://demo.smartscreen.msft.net/other/areyousure.html)
 
-:::image type="content" source="images/atp-smartscreen-url-reputation-is-this-phishing.png" alt-text="Security for attack surface reduction rule":::
+  Launching this link should render a message similar to the following:
+
+  :::image type="content" source="images/atp-smartscreen-url-reputation-is-this-phishing.png" alt-text="Security for attack surface reduction rule":::
 
 ### Phishing Page
 
-A page known for phishing that should be blocked.
+A page known for phishing that should be blocked:
 
-[A known Phishing page](https://demo.smartscreen.msft.net/phishingdemo.html)
+- [A known Phishing page](https://demo.smartscreen.msft.net/phishingdemo.html)
 
-:::image type="content" source="images/atp-smartscreen-url-reputation-this-is-phishing.png" alt-text="Security for attack surface reduction rule":::
+  Launching this link should render a message similar to the following:
 
-### Malware Page
+  :::image type="content" source="images/atp-smartscreen-url-reputation-this-is-phishing.png" alt-text="Security for attack surface reduction rule":::
 
-A page that hosts malware and should be blocked.
+### Malware page
 
-[A known malware page](https://demo.smartscreen.msft.net/other/malware.html)
+A page that hosts malware and should be blocked:
 
-:::image type="content" source="images/atp-smartscreen-url-reputation-malware-page.png" alt-text="Security for attack surface reduction rule":::
+- [A known malware page](https://demo.smartscreen.msft.net/other/malware.html)
 
-### Blocked Download
+  Launching this link should render a message similar to the following:
+
+  :::image type="content" source="images/atp-smartscreen-url-reputation-malware-page.png" alt-text="Security for attack surface reduction rule":::
+
+### Blocked download
 
 Blocked from downloading because of its URL reputation
 
-[Download blocked due to URL reputation](https://demo.smartscreen.msft.net/download/malwaredemo/freevideo.exe)
+- [Download blocked due to URL reputation](https://demo.smartscreen.msft.net/download/malwaredemo/freevideo.exe)
 
-### Exploit Page
+  Launching this link should render a message similar to the Malware page message.
+
+### Exploit page
 
 A page that attacks a browser vulnerability
 
-[Known browser exploit page](https://demo.smartscreen.msft.net/other/exploit.html)
+- [Known browser exploit page](https://demo.smartscreen.msft.net/other/exploit.html)
+
+  Launching this link should render a message similar to the Malware page message.
 
 ### Malvertising
 
 A benign page hosting a malicious advertisement
 
-[A page known to contain malicious advertisements](https://demo.smartscreen.msft.net/other/exploit_frame.html)
+- [A page known to contain malicious advertisements](https://demo.smartscreen.msft.net/other/exploit_frame.html)
 
-:::image type="content" source="images/atp-smartscreen-url-reputation-malvertising.png" alt-text="Security for attack surface reduction rule":::
+  Launching this link should render a message similar to the following:
+
+  :::image type="content" source="images/atp-smartscreen-url-reputation-malvertising.png" alt-text="Security for attack surface reduction rule":::
 
 ## Learn more
 
-Microsoft Defender SmartScreen Documentation
+[Microsoft Defender SmartScreen Documentation](/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview.md)

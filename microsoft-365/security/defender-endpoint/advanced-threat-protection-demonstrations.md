@@ -43,11 +43,11 @@ You can confirm that potentially unwanted applications (PUAs) are being blocked 
 
 Download this guide to test new virtual desktop infrastructure security intelligence update features. This requires VMs and a host running Windows 10 Insider Preview build 18323 or later.   {link to: wdav-testing-vdi-ssu.pdf}
 
-## {{Microsoft Defender Advanced Threat Protection}} Attack surface reduction demonstration scenarios
+## Attack surface reduction demonstration scenarios
 
 Reduce your attack surfaces by minimizing the places where your organization is vulnerable to cyberthreats and attacks.
 
-For more information please refer to the [attack surface reduction](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/overview-attack-surface-reduction?ocid=wd-av-demo-home-middle) documentation, and download the [Evaluation guides](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/evaluate-windows-defender-antivirus?ocid=wd-av-demo-home-middle).
+For more information please refer to the [attack surface reduction](/windows/security/threat-protection/microsoft-defender-atp/overview-attack-surface-reduction?ocid=wd-av-demo-home-middle) documentation, and download the [Evaluation guides](/windows/security/threat-protection/windows-defender-antivirus/evaluate-windows-defender-antivirus?ocid=wd-av-demo-home-middle).
 
 ### Attack Surface Reduction (ASR) rules demonstration scenarios
 
@@ -74,7 +74,7 @@ Apply custom Exploit Protection settings
 Navigate to a suspicious URL to trigger network protection
 {https://demo.wd.microsoft.com/Page/NP}
 
-## {{Microsoft Defender Advanced Threat Protection}} Microsoft Defender SmartScreen
+## Microsoft Defender SmartScreen
 
 SmartScreen Filter helps you identify reported phishing and malware websites and also helps you make informed decisions about downloads.
 
@@ -88,7 +88,7 @@ Navigate to URL Reputation page to see the demonstration scenarios using edge.
 Navigate to App Reputation page to see the demonstration scenarios using edge.
 {https://demo.wd.microsoft.com/Page/AppRep}
 
-## {{Microsoft Defender Advanced Threat Protection}} Windows Enterprise Features ??? Keep???
+## Windows Enterprise Features ??? Keep???
 
 As part of Olympia [Windows Insider Lab for Enterprise](https://olympia.windows.com/), you can try out these Enterprise features.
 
@@ -96,3 +96,7 @@ As part of Olympia [Windows Insider Lab for Enterprise](https://olympia.windows.
 
 Visit Windows Insider lab for Enterprise for additional Enterprise and Security features.
 {https://olympia.windows.com/info/features}
+
+## See also
+
+[Link to Advanced Threat Protection]

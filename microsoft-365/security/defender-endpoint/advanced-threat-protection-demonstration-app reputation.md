@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender Advanced Threat Protection Microsoft Defender SmartScreen app reputation demonstration
+title: Microsoft Defender Advanced Threat Protection SmartScreen app reputation demonstration
 description: Test how Microsoft Defender SmartScreen helps you identify phishing and malware websites
 keywords: Microsoft Defender Advanced Threat Protection, Microsoft Defender ATP, phishing website, malware website, app reputation, 
 search.product: eADQiWindows 10XVcnh
@@ -32,24 +32,44 @@ Test how Microsoft Defender SmartScreen helps you identify phishing and malware 
 
 ### Known good program
 
-This program has a good reputation; the download should run uninterrupted.
+This program has a good reputation; the download should run uninterrupted:
 
-[Known good program download](https://demo.smartscreen.msft.net/download/known/freevideo.exe)
+- [Known good program download](https://demo.smartscreen.msft.net/download/known/freevideo.exe)
 
-:::image type="content" source="images/atp-smartscreen-app-reputation-known-good.png" alt-text="Security for attack surface reduction rule":::
+  <!-- Hide {this intro with no subsequent list items} [Replace this link when new/updated source becomes available] -->
+
+  Launching this link should render a message similar to the following:
+
+  :::image type="content" source="images/atp-smartscreen-app-reputation-known-good.png" alt-text="Security for attack surface reduction rule":::
 
 ### Unknown program
 
 Because the program download does not have sufficient reputation to ensure that it is trustworthy, SmartScreen will show a warning before running the program download.
 
-[Unknown program](https://demo.smartscreen.msft.net/download/unknown/freevideo.exe)
+- [Unknown program](https://demo.smartscreen.msft.net/download/unknown/freevideo.exe)
+
+  <!-- Hide {this intro with no subsequent list items} [Replace this link when new/updated source becomes available] -->
+  
+  Launching this link should render a message similar to the following:
+
+  :::image type="content" source="images/atp-smartscreen-app-reputation-unknown.png" alt-text="Security for attack surface reduction rule":::
 
 ### Known malware
 
 This download is known malware; SmartScreen should block this program from running.
 
-[Known malware](https://demo.smartscreen.msft.net/download/known/knownmalicious.exe)
+- [Known malware](https://demo.smartscreen.msft.net/download/known/knownmalicious.exe)
+
+  <!-- Hide {this intro with no subsequent list items} [Replace this link when new/updated source becomes available] -->  
+
+  Launching this link should render a message similar to the following:
+
+  :::image type="content" source="images/atp-smartscreen-app-reputation-known-malware.png" alt-text="Security for attack surface reduction rule":::
 
 ## Learn more
 
-[Microsoft Defender SmartScreen Documentation](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview)
+[Microsoft Defender SmartScreen Documentation](/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview.md)
+
+## See also
+
+[Microsoft Defender Advanced Threat Protection (ATP) - demonstration scenarios](advanced-threat-protection-demonstrations.md)

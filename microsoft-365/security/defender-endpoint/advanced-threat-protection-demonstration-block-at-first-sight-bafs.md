@@ -33,9 +33,11 @@ Scenario requirements and setup
 ### Test BAFS
 
 - Click the create and download new file button
-- You should see the browser scanning the file, followed by an antivirus block notification. 
+- You should see the browser scanning the file, followed by an antivirus block notification.
 - Create & download new file!
 
-## Learn more
+## See also
 
-Block at First Sight
+[Block at First Sight](/windows/threat-protection/windows-defender-antivirus/configure-block-at-first-sight-windows-defender-antivirus?ocid=wd-av-demo-fl-bottom)
+
+[Microsoft Defender Advanced Threat Protection (ATP) - demonstration scenarios](advanced-threat-protection-demonstrations.md)

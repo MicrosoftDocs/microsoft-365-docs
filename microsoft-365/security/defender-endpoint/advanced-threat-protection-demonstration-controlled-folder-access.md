@@ -36,6 +36,7 @@ Controlled Folder Access helps you protect valuable data from malicious apps and
 - Disabled = Off (0)
 
 ## Verify configuration
+
 Get-MpPreference
 Test file
 CFA ransomware test file
@@ -43,9 +44,11 @@ CFA ransomware test file
 ## Scenarios
 
 ### Setup
+
 Download and run this setup script. Before running the script set execution policy to Unrestricted using this PowerShell command: Set-ExecutionPolicy Unrestricted
 
 You can perform these manual steps instead:
+
 1. Create a folder under c: named demo, "c:\demo"
 2. Save this clean file into c:\demo (we need something to encrypt)
 3. Execute PowerShell commands above
@@ -57,7 +60,7 @@ You can perform these manual steps instead:
 3. Download the ransomware test file
 4. Execute the ransomware test file *this is not ransomware, it simple tries to encrypt c:\demo
 
-#### Expected results
+#### Scenario 1 expected results
 
 5 seconds after executing the ransomware test file you should see a notification CFA blocked it
 
@@ -66,7 +69,7 @@ You can perform these manual steps instead:
 1. Turn off CFA using this powershell command: Set-MpPreference -EnableControlledFolderAccess Disabled
 2. Execute the ransomware test file
 
-#### Expected results
+#### Scenario 2 expected results
 
 - The files in c:\demo will be encrypted and you should get a warning message
 - Execute the ransomware test file again to decrypt the files
@@ -78,6 +81,10 @@ Download and run this cleanup script. You can perform these manual steps instead
 - Set-MpPreference -EnableControlledFolderAccess Disabled
 - Cleanup c:\demo encryption run the encrypt/decrypt file
 
-## Learn more
+## See also
 
-Controlled Folder Access
+[Controlled folder access demonstration test tool](advanced-threat-protection-demonstration-controlled-folder-access-test-tool.md)
+
+[Controlled folder access](/windows/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard?ocid=wd-av-demo-cfa-bottom)
+
+[Microsoft Defender Advanced Threat Protection (ATP) - demonstration scenarios](advanced-threat-protection-demonstrations.md)

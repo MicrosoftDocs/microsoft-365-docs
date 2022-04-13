@@ -96,9 +96,9 @@ You can perform these manual steps instead:
 1. Enable all rules in block mode using the powershell commands above (you can copy paste all)
 2. Download and open any of the test file/documents linked above, enable editing and content if prompted.
 
-#### Expected results:
+#### Scenario 1 expected results
 
-- You should immediatly see an "Action blocked" notification.
+- You should immediately see an "Action blocked" notification.
 
 ### Scenario 2: ASR rule blocks the test file with the corresponding vulnerability
 
@@ -107,9 +107,9 @@ You can perform these manual steps instead:
 3. Download and open the test file/document for the rule you want to test linked above, enable editing and content if prompted
 4. Example: Block Office applications from creating child processes D4F940AB-401B-4EFC-AADC-AD5F3C50688A
 
-#### Expected results:
+#### Scenario 2 expected results
 
-You should immediatly see an "Action blocked" notification.
+You should immediately see an "Action blocked" notification.
 
 ### Scenario 3 (1803): ASR rule blocks unsigned USB content from executing
 
@@ -118,15 +118,16 @@ You should immediatly see an "Action blocked" notification.
 3. Download the file and put it on a USB stick and execute it
 4. Block Execution of untrusted or unsigned executables inside removable USB media
 
-#### Expected results:
+#### Scenario 3 expected results
 
 You should immediately see an "Action blocked" notification.
 
 ### Scenario 4: What would happen without ASR
 
-1.	Turn off all ASR rules using powershell commands below in the cleanup section
-2.	Dowload any test file/document linked above, enable editing and content if prompted
-Expected results:
+1. Turn off all ASR rules using powershell commands below in the cleanup section
+2. Dowload any test file/document linked above, enable editing and content if prompted
+
+#### Scenario 4 expected results
 
 - The files in c:\demo will be encrypted and you should get a warning message
 - Execute the test file again to decrypt the files
@@ -152,10 +153,10 @@ Alternately, you can perform these manual steps:
 - Add-MpPreference -AttackSurfaceReductionRules_Ids 7674BA52-37EB-4A4F-A9A1-F0F9A1619A2C -AttackSurfaceReductionRules_Actions Disabled
 - Cleanup c:\demo encryption run the encrypt/decrypt file
 
-Learn more:
+See also:
 
-Attack surface reduction rules deployment guide
+[Attack surface reduction rules deployment guide](attack-surface-reductioin-rules-deployment.md)
 
-Attack Surface reduction rules
+[Attack surface reduction rules reference](attack-surface-reductioin-rules-reference.md)
 
-Attack surface reduction rules reference
+[Microsoft Defender Advanced Threat Protection (ATP) - demonstration scenarios](advanced-threat-protection-demonstrations.md)
