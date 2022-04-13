@@ -382,6 +382,8 @@
       items: 
         - name: Get ready
           href: configure-services-and-applications.md
+        - name: External collaboration
+          href: external-guest-access.md
         - name: Exchange Online
           href: /Exchange/exchange-online
         - name: SharePoint
