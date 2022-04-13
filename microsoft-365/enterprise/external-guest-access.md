@@ -1,5 +1,5 @@
 ---
-title: "Overview of external access in Microsoft 365"
+title: "Overview of external collaboration options in Microsoft 365"
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -12,12 +12,12 @@ ms.custom:
 ms.collection: 
 - SPO_Content
 ms.localizationpriority: medium
-description: "Learn about how people outside your organization can access your Microsoft 365 subscription."
+description: "Learn about how people outside your organization can access your Microsoft 365 subscription for meetings, guest sharing, chat, and collaboration."
 ---
 
-# Overview of external access in Microsoft 365
+# Overview of external collaboration options in Microsoft 365
 
-With Microsoft 365, your users can collaborate with people outside your organization in a variety of ways. 
+With Microsoft 365, your users can collaborate with people outside your organization in a variety of ways. Users can share files, invite guests to teams, have meetings with external participants, and chat with people from other organizations. This article covers the external collaboration options available and links to the content you need to configure each.
 
 The following table shows the primary ways people from outside your organization can access your Microsoft 365 resources:
 
@@ -33,7 +33,7 @@ The following table shows the primary ways people from outside your organization
 
 People outside your organization do not have access unless a user in your organization initiates one of these activities. You can disable any of these settings if you don't want to allow that activity in your organization.
 
-## Document, site, and team sharing
+## Document, site, and team sharing with guest accounts
 
 Sharing documents, sites, and teams with people outside your organization uses *guest accounts*. Guest accounts are a type of account in Azure Active Directory that is managed through [Azure AD B2B collaboration](/azure/active-directory/external-identities/what-is-b2b). They can be used to share resources in your organization with anyone who has an email address. You can manage guest accounts the same way you manage users in your organization. Guests do not require a license for most features of collaboration. 
 
@@ -57,7 +57,7 @@ For information about how to set up Microsoft 365 for collaboration with guests,
 - [Collaborate with guests in a site](/microsoft-365/solutions/collaborate-in-site)
 - [Collaborate with guests in a team](/microsoft-365/solutions/collaborate-as-team)
  
-## Shared Channels
+## Shared channels
 
 Shared channels are a type of Teams channel that allows you to share with people outside the team, including people in other Microsoft 365 organizations. While shared channels is turned on by default in Teams, external collaboration with shared channels is disabled by default. External collaboration with shared channels uses [Azure AD B2B direct connect](/azure/active-directory/external-identities/b2b-direct-connect-overview) which allows you to add people from other Microsoft 365 organizations to Teams channels without the need for creating a guest account.
 
@@ -100,9 +100,9 @@ You can control anonymous users' ability to join meetings at the organization le
 
 For information about configuring anonymous join for meetings, see [Manage meeting settings in Microsoft Teams](/microsoftteams/meeting-settings-in-teams).
 
-## Anonymous file and folder access
+## Unauthenticated file and folder access
 
-In Microsoft 365, files and folders in Teams, SharePoint, and OneDrive can be shared using anonymous - or *Anyone* - links. Anyone links give access to the shared item to anyone who has the link. Anyone links can be shared with others, giving those people access to the file or folder.
+In Microsoft 365, files and folders in Teams, SharePoint, and OneDrive can be shared using unauthenticated - or *Anyone* - links. Anyone links give access to the shared item to anyone who has the link. Anyone links can be shared with others, giving those people access to the file or folder.
 
 People using an Anyone link do not have to authenticate, and their access cannot be audited. File and folder owners can revoke access at any time by deleting the link.
 

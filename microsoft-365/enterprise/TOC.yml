@@ -382,7 +382,7 @@
       items: 
         - name: Get ready
           href: configure-services-and-applications.md
-        - name: External access
+        - name: External collaboration
           href: external-guest-access.md
         - name: Exchange Online
           href: /Exchange/exchange-online
