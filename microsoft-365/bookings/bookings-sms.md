@@ -12,6 +12,9 @@ description: "Learn how to configure SMS text notifications for clients, custome
 
 # Configure SMS text notifications and reminders in Microsoft Bookings
 
+> [!NOTE]
+> This article helps you to interact with the latest version of Microsoft Bookings. Previous versions will be retired in coming months.
+
 With Microsoft Bookings, you can set up SMS text notifications to be sent to the person booking an appointment. You can set up SMS notifications in Bookings in the Bookings web app or Bookings app in Teams. Attendees, customers or partners can also opt in or out of getting SMS notifications on the self-serve booking page. They can also opt out of receiving SMS notifications by replying **STOP** to the sender.
 
 The SMS notifications will include the Teams meeting link for virtual booking appointments.
@@ -21,9 +24,6 @@ The SMS notifications will include the Teams meeting link for virtual booking ap
 Attendees, customers or partners need a valid United States or Canada phone number before they can receive SMS notifications.
 
 ## Configure SMS notification in Microsoft Bookings
-
-> [!IMPORTANT]
-> Microsoft Bookings will have unlimited SMS notifications for customers with Bookings licenses until April 30, 2022. As we get closer to the end of the promotion period, we will provide additional details on licensing requirements.
 
 You can configure SMS notification in Bookings in a couple of ways:
 
@@ -36,7 +36,7 @@ You can configure SMS notification in Bookings in a couple of ways:
 > [!NOTE]
 > You need to be a Teams admin to see Teams and Bookings data on the Teams admin center.
 
-You can track key data on SMS notifications usage in your organization in the Teams admin center. Usage reports includes data such as time and date sent, origin number, message type, event type and delivery status. You can use SMS notification telemetry during the promotional period to help forecast and budget for SMS notifications after May 1, 2022.
+You can track key data on SMS notifications usage in your organization in the Teams admin center. Usage reports include data such as time and date sent, origin number, message type, event type and delivery status. You can use SMS notification telemetry during the promotional period to help forecast and budget for SMS notifications after May 1, 2022.
 
 1. On the Teams admin center, **Virtual Visits SMS notifications**.
 

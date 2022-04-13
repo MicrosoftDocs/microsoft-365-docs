@@ -63,32 +63,37 @@ For each device, you can set a configuration value to state whether samples can 
 
 You can set a compliance rule for configuration item in Configuration Manager to change the sample share setting on a device.
 
-This rule should be a *remediating* compliance rule configuration item that sets the value of a registry key on targeted devices to make sure they’re complaint.
+This rule should be a *remediating* compliance rule configuration item that sets the value of a registry key on targeted devices to make sure they're complaint.
 
 The configuration is set through the following registry key entry:
 
-```
-Path: “HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection”
+```text
+Path: "HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection"
 Name: "AllowSampleCollection"
 Value: 0 or 1
 ```
-Where:<br>
-Key type is a D-WORD. <br>
+
+Where:
+
+Key type is a D-WORD.
+
 Possible values are:
+
 - 0 - doesn't allow sample sharing  from this device
 - 1 - allows sharing of all file types from this device
 
-The default value in case the registry key doesn’t exist is 1.
+The default value in case the registry key doesn't exist is 1.
 
 For more information about System Center Configuration Manager Compliance, see [Introduction to compliance settings in System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682139(v=technet.10)).
 
 
 ## Other recommended configuration settings
+
 After onboarding devices to the service, it's important to take advantage of the included threat protection capabilities by enabling them with the following recommended configuration settings.
 
 ### Device collection configuration
-If you're using Endpoint Configuration Manager, version 2002 or later, you can choose to broaden the deployment to include servers or down-level clients.
 
+If you're using Endpoint Configuration Manager, version 2002 or later, you can choose to broaden the deployment to include servers or down-level clients.
 
 ### Next generation protection configuration
 
@@ -117,13 +122,11 @@ Configure all available rules to Audit.
 
 Prior to enabling network protection in audit or block mode, ensure that you've installed the antimalware platform update, which can be obtained from the [support page](https://support.microsoft.com/en-us/help/4560203/windows-defender-anti-malware-platform-binaries-are-missing).
 
-
 **Controlled folder access**
 
 Enable the feature in audit mode for at least 30 days. After this period, review detections and create a list of applications that are allowed to write to protected directories.
 
 For more information, see [Evaluate controlled folder access](/windows/security/threat-protection/microsoft-defender-atp/evaluate-controlled-folder-access).
-
 
 ## Offboard devices using Configuration Manager
 
@@ -156,7 +159,6 @@ If you use Microsoft Endpoint Configuration Manager current branch, see [Create 
 
 > [!IMPORTANT]
 > Offboarding causes the device to stop sending sensor data to the portal but data from the device, including reference to any alerts it has had will be retained for up to 6 months.
-
 
 ## Monitor device configuration
 
@@ -192,14 +194,17 @@ You can set a compliance rule for configuration item in System Center 2012 R2 Co
 This rule should be a *non-remediating* compliance rule configuration item that monitors the value of a registry key on targeted devices.
 
 Monitor the following registry key entry:
+
+```text
+Path: "HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status"
+Name: "OnboardingState"
+Value: "1"
 ```
-Path: “HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status”
-Name: “OnboardingState”
-Value: “1”
-```
+
 For more information, see [Introduction to compliance settings in System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682139(v=technet.10)).
 
 ## Related topics
+
 - [Onboard Windows 10 and Windows 11 devices using Group Policy](device-onboarding-gp.md)
 - [Onboard Windows 10 and Windows 11 devices using Mobile Device Management tools](device-onboarding-mdm.md)
 - [Onboard Windows 10 and Windows 11 devices using a local script](device-onboarding-script.md)
