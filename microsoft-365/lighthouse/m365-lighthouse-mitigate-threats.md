@@ -13,7 +13,7 @@ ms.collection:
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
-- M365-Lighthouse                         
+- M365-Lighthouse
 search.appverid: MET150
 description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn about the mitigate threats with Microsoft Defender Antivirus."
 ---
@@ -24,7 +24,7 @@ Microsoft 365 Lighthouse lets partners investigate and mitigate threats across a
 
 ## Before you begin
 
-- Microsoft 365 Lighthouse is deployed in the partner tenant only—not in the customer tenants, but make sure you and your customer tenants meet the requirements listed in [Microsoft 365 Lighthouse requirements](m365-lighthouse-requirements.md).
+- Microsoft 365 Lighthouse is deployed in the partner tenant only—not in the customer tenants, but make sure you and your customer tenants meet the requirements listed in [Microsoft 365 Lighthouse requirements](m365-lighthouse-requirements.md).
 
 - Users must be running Microsoft Defender Antivirus (included with Windows). Lighthouse does not support non-Microsoft antivirus software. For more information, see [Turn on Microsoft Defender Antivirus](/mem/intune/user-help/turn-on-defender-windows).
 
@@ -125,7 +125,7 @@ You can also restart multiple devices by selecting the checkbox next to each dev
 ## Related content
 
 [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) (article)\
-[Threat management page overview ](m365-lighthouse-threat-management-page-overview.md) (article)\
+[Threat management page overview](m365-lighthouse-threat-management-page-overview.md) (article)\
 [Create a compliance policy in Microsoft Intune](/mem/intune/protect/create-compliance-policy) (article)\
 [Turn on Microsoft Defender Antivirus](/mem/intune/user-help/turn-on-defender-windows) (article)\
 [Microsoft Security Intelligence](https://www.microsoft.com/wdsi/threats) (web page)
