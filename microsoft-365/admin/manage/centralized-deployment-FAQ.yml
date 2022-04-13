@@ -7,7 +7,7 @@ metadata:
   author: kwekua
   manager: scotv
   audience: Admin
-  ms.topic: article
+  ms.topic: faq
   ms.service: o365-administration
   ms.localizationpriority: medium
   ms.collection: 
@@ -21,7 +21,6 @@ metadata:
   - MET150
   - MOE150
   description: "Review the answers to frequent questions about Centralized Deployment from the Microsoft 365 admin center."
-    
 title: Centralized Deployment FAQ
 summary: Centralized Deployment is the recommended way for an Office 365 admin to deploy Office add-ins (Word, Excel, PowerPoint, and Outlook) to users and groups within an organization, provided the organization meets all requirements for using Centralized Deployment as outlined in this article. 
 
@@ -36,7 +35,7 @@ sections:
            
           Centralized Deployment is only supported for online mailboxes. It does not support deployment to on-premises Exchange mailboxes.
           
-          You can use the [Centralized Deployment Compatibility Checker](centralized-deployment-of-add-ins.md#centralized-deployment-compatibility-checker) to determine if your subscription is eligible. 
+          You can use the [Centralized Deployment Compatibility Checker](centralized-deployment-of-add-ins.md#centralized-deployment-compatibility-checker) to determine if your subscription is eligible. 
             
       - question: |
           How do you target add-in user assignments with Centralized Deployment?

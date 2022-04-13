@@ -19,6 +19,7 @@ ms.custom:
 - okr_smb
 - AdminTemplateSet
 - admindeeplinkEXCHANGE
+- business_assist
 search.appverid:
 - BCS160
 - MET150
@@ -39,6 +40,9 @@ It's easy to create shared mailboxes so a group of people can monitor and send e
 Shared mailboxes include a shared calendar. A lot of small businesses like to use the shared calendar as a place for everyone to enter their appointments. For example, if you have 3 people who do customer visits, all can use the shared calendar to enter the appointments. This is an easy way to keep everyone informed where people are.
 
 Before creating a shared mailbox, be sure to read [About shared mailboxes](about-shared-mailboxes.md) for more information.
+
+> [!TIP]
+> If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
 
 ## Create a shared mailbox and add members
   

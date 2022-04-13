@@ -32,6 +32,8 @@ After publishing your model, use the content center to apply it to any SharePoin
 
 - Supported file formats: JPEG, PNG, BMP, TIFF, and PDF (text-embedded or scanned).
 
+- Supported languages: only English language invoices from the United States are currently supported. English sales receipts from Australia, Canada, United States, Great Britain, and India are supported.
+
 - Text-embedded PDFs are best to eliminate the possibility of error in character extraction and location.
 
 - For PDF and TIFF, up to 2,000 pages can be processed.

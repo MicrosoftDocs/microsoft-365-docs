@@ -21,18 +21,17 @@ description: "For Managed Service Providers (MSPs), learn how to sign up for Mic
 
 # Sign up for Microsoft 365 Lighthouse
 
-> [!NOTE]
-> The features described in this article are in Preview, are subject to change, and are only available to partners who meet the [requirements](m365-lighthouse-requirements.md). If your organization does not have Microsoft 365 Lighthouse, follow the instructions in this article to sign up.
+This article provides instructions for how to sign up for Microsoft 365 Lighthouse. Microsoft 365 Lighthouse is an admin portal that helps Managed Service Providers (MSPs) secure and manage devices, data, and users at scale for small- and medium-sized business (SMB) customers who are using Microsoft 365 Business Premium, Microsoft 365 E3, or Windows 365 Business. 
 
 ## Before you begin
 
 - Microsoft 365 Lighthouse is deployed in the partner tenant only&mdash;not in the customer tenants, but make sure you and your customer tenants meet the requirements listed in [Microsoft 365 Lighthouse requirements](m365-lighthouse-requirements.md).
 
-- You must be a Global Administrator in the partner tenant you're signing into.
+- You must be a Global Administrator in the partner tenant that you're signing in to.
 
 ## Steps to sign up for Microsoft 365 Lighthouse
 
-1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> and log in using your partner tenant credentials. 
+1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> and sign in using your partner tenant credentials. 
 
 1. Go to **Billing** > **Purchase Services** > **Other Services**.
 
@@ -40,7 +39,7 @@ description: "For Managed Service Providers (MSPs), learn how to sign up for Mic
 
     If you encounter the Purchase services error page, select **View products** at the bottom of the page.
 
-1. Under **Microsoft 365 Lighthouse for Partners Public Preview**, select **Details**. 
+1. Under **Microsoft 365 Lighthouse**, select **Details**. 
 
 1. Select **Buy**.
 

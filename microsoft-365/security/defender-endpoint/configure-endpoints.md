@@ -13,7 +13,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+  - M365-security-compliance
+  - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
 ---
@@ -35,7 +37,7 @@ Devices in your organization must be configured so that the Defender for Endpoin
 
 In general, you'll identify the Windows device you're onboarding, then follow the corresponding tool appropriate to the device or your environment.
 
-![Image of onboarding tools and methods](images/onboarding-config-tools.png)
+:::image type="content" source="images/onboarding-config-tools.png" alt-text="The onboarding tools and methods" lightbox="images/onboarding-config-tools.png":::
 
 ## Endpoint onboarding tools
 

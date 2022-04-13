@@ -81,7 +81,6 @@ Use the following table to help you identify the differences in behavior for the
 |:-----|:-----|:-----|
 |App dependency|Yes ([minimum versions](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)) |No \* |
 |Restrict by location|No |Yes |
-|Conditions: Exact Data Match for custom sensitive info types|Yes |No |
 |Conditions: Trainable classifiers|Yes |No |
 |Conditions: Sharing options and additional options for email|No |Yes |
 |Conditions: Exceptions|No |Yes (email only) |
@@ -127,8 +126,8 @@ For email auto-labeling policies only, you can select a setting to always overri
 |Existing label |Override with label setting: Auto-labeling for files and emails  |Override with policy: Auto-labeling|
 |:-----|:-----|:-----|
 |Manually applied, any priority|Word, Excel, PowerPoint: No <br /><br> Outlook: No  |SharePoint and OneDrive: No <br /><br> Exchange: No by default, but configurable |
-|Automatically applied, lower priority |Word, Excel, PowerPoint: Yes <br /><br> Outlook: Yes | SharePoint and OneDrive: Yes <br /><br> Exchange: Yes |
-|Automatically applied, higher priority |Word, Excel, PowerPoint: No <br /><br> Outlook: No |SharePoint and OneDrive: No <br /><br> Exchange: No by default, but configurable |
+|Automatically applied or default label from policy, lower priority |Word, Excel, PowerPoint: Yes <br /><br> Outlook: Yes | SharePoint and OneDrive: Yes <br /><br> Exchange: Yes |
+|Automatically applied or default label from policy, higher priority |Word, Excel, PowerPoint: No <br /><br> Outlook: No |SharePoint and OneDrive: No <br /><br> Exchange: No by default, but configurable |
 
 The configurable setting for email auto-labeling policies is on the **Additional settings for email** page. This page displays after you've selected a sensitivity label for an auto-labeling policy that includes the Exchange location.
 
@@ -136,7 +135,7 @@ The configurable setting for email auto-labeling policies is on the **Additional
 
 For built-in labeling in Office apps, check the [minimum versions required](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) for automatic labeling in Office apps.
 
-The Azure Information Protection unified labeling client supports automatic labeling for built-in and custom sensitive info types, but not for trainable classifiers or sensitive info types that use Exact Data Match (EDM).
+The Azure Information Protection unified labeling client supports automatic labeling only for built-in and custom sensitive info types, and doesn't support trainable classifiers or sensitive info types that use Exact Data Match (EDM) or named entities.
 
 The auto-labeling settings for Office apps are available when you [create or edit a sensitivity label](create-sensitivity-labels.md). Make sure **Files & emails** is selected for the label's scope:
 
@@ -178,7 +177,7 @@ If you configure a sensitivity label with only EDM for your sensitive informatio
 
 ### Configuring trainable classifiers for a label
 
-If you use this option, make sure you've published in your tenant at least one other sensitivity label that's configured for auto-labeling and the [sensitive info types option](#configuring-sensitive-info-types-for-a-label).
+If you use this option with Microsoft 365 Apps for Windows version 2106 or lower, or Microsoft 365 Apps for Mac version 16.50 or lower, make sure you've published in your tenant at least one other sensitivity label that's configured for auto-labeling and the [sensitive info types option](#configuring-sensitive-info-types-for-a-label). This requirement isn't necessary when you use later versions on these platforms.
 
 When you select the **Trainable classifiers** option, select one or more of the pre-trained or custom trainable classifiers:
 
@@ -197,7 +196,7 @@ If you prefer, you can recommend to your users that they apply the label. With t
 
 Here's an example of a prompt from the Azure Information Protection unified labeling client when you configure a condition to apply a label as a recommended action, with a custom policy tip. You can choose what text is displayed in the policy tip.
 
-![Prompt to apply a recommended label.](../media/Sensitivity-label-Prompt-for-required-label.png)
+![Prompt to apply a recommended label.](../media/Sensitivity-label-prompt-for-required-label.png)
 
 ### When automatic or recommended labels are applied
 
@@ -272,18 +271,6 @@ Simulation mode also lets you gradually increase the scope of your auto-labeling
 
 Finally, you can use simulation mode to provide an approximation of the time needed to run your auto-labeling policy, to help you plan and schedule when to run it without simulation mode.
 
-#### Deleted OneDrive accounts and simulation results
-
-Expect possible display discrepancies in the simulation results when deleted OneDrive accounts are still in the [retention stage of the deletion process](/onedrive/retention-and-deletion#the-onedrive-deletion-process). For example, an employee has left the organization and their manager has temporary access to that user's OneDrive files.
-
-In this scenario, if the OneDrive account was specified by URL in the auto-labeling policy, matched files from the deleted OneDrive account are included in the simulation results.
-
-However, if the OneDrive account wasn't specified by URL, but was included with the **All** default setting:
-- When the SharePoint location is included in the policy, matched files from the deleted OneDrive account display as SharePoint items in the simulation results.
-- When the SharePoint location isn't included in the policy, matched files from the deleted OneDrive account aren't included in the simulation results.
-
-In all cases, matched files are labeled until the OneDrive account is permanently deleted. The display discrepancies listed apply only to the simulation results.
-
 ### Creating an auto-labeling policy
 
 1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>, navigate to sensitivity labels:
@@ -307,19 +294,25 @@ In all cases, matched files are labeled until the OneDrive account is permanentl
 
 5. For the page **Name your auto-labeling policy**: Provide a unique name, and optionally a description to help identify the automatically applied label, locations, and conditions that identify the content to label.
 
-6. For the page **Choose locations where you want to apply the label**: Select and specify locations for Exchange, SharePoint, and OneDrive. If you don't want to keep the default of **All** for your chosen locations, select the link to choose specific instances. Then select **Next**.
+6. For the page **Choose locations where you want to apply the label**: Select and specify locations for Exchange, SharePoint, and OneDrive. If you don't want to keep the default of **All** included for your chosen locations, select the link to choose specific instances to include, or select the link to choose specific instances to exclude. Then select **Next**.
 
     ![Choose locations page for auto-labeling configuration.](../media/locations-auto-labeling-wizard.png)
     
-    To specify individual OneDrive accounts, see [Get a list of all user OneDrive URLs in your organization](/onedrive/list-onedrive-urls).
+    If you change the default settings by using **Included** or **Excluded**:
+    
+    - For the **Exchange** location, the policy is applied according to the sender address of the recipients specified. Most of the time, you'll want to keep the default of **All** included with **None** excluded. This configuration is suitable even if you're testing for a subset of users. Instead of specifying your subset of users here, use the advanced rules in the next step to configure conditions to include or exclude recipients in your organization. Otherwise, when you change the default settings here:
+        -  If you change the default of **All** included and instead, choose specific users or groups, email sent from outside your organization will be exempt from the policy. 
+        -  If you keep the default of **All** included but specify users or groups to exclude, email that these excluded users send will be exempt from the policy, but not email that they receive.
+    
+    - For OneDrive accounts, see [Get a list of all user OneDrive URLs in your organization](/onedrive/list-onedrive-urls) to help you specify individual OneDrive accounts to include or exclude.
 
-7. For the **Set up common or advanced rules** page: Keep the default of **Common rules** to define rules that identify content to label across all your selected locations. If you need different rules per location, select **Advanced rules**. Then select **Next**.
+7. For the **Set up common or advanced rules** page: Keep the default of **Common rules** to define rules that identify content to label across all your selected locations. If you need different rules per location, including more options for Exchange, select **Advanced rules**. Then select **Next**.
 
     The rules use conditions that include sensitive information types and sharing options:
     - For sensitive information types, you can select both built-in and custom sensitive information types.
     - For the shared options, you can choose **only with people inside my organization** or **with people outside my organization**.
 
-    If your only location is **Exchange**, or if you select **Advanced rules**, there are other conditions that you can select:
+    If your location is **Exchange** and you selected **Advanced rules**, there are other conditions that you can select:
     - Sender IP address is
     - Recipient domain is
     - Recipient is

@@ -26,23 +26,20 @@ DLP policy tips in Outlook Web Access is supported for all the conditions, excep
 
 **Conditions:**
 
-- Sender Is
-- Sender Domain Is
 - Recipient is a member of
 - Header contains words or phrases
 - Header matches patterns
-- Document size equals or is greater than
 - Message type is
-- Message importance is
 - Content character set contains words
-- Subject or body contains words or phrases
-- Subject or body matches patterns
-- Content character set contains words
-- Content is received from
 - Has sender overridden the policy tip
 - Message size equals or is greater than
 - Sender AD attribute contains words or phrases
 - Sender AD attribute matches patterns
+- Sender IP ranges
+- Recipient AD attribute contains words or phrases
+- Recipient AD attribute matches patterns
+- Document name contains words or phrases
+- Document name matches patterns
 - Document content contains words or phrases
 - Document content matches patterns
 

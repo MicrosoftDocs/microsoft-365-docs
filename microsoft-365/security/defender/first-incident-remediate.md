@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -30,9 +30,9 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
-Microsoft 365 Defender not only provides detection and analysis capabilities but also provides containment and eradication of malware. Containment includes steps to reduce the impact of the attack while eradication ensures all traces of attacker activity are removed from the network.  Microsoft 365 Defender offers several remediation actions which can be configured to [auto-remediate](m365d-autoir.md) depending on your operating system and the attack type.
+Microsoft 365 Defender not only provides detection and analysis capabilities but also provides containment and eradication of malware. Containment includes steps to reduce the impact of the attack while eradication ensures all traces of attacker activity are removed from the network. Microsoft 365 Defender offers several remediation actions that can be configured to [auto-remediate](m365d-autoir.md) depending on the operating system of affected devices and the attack type.
 
-Microsoft 365 Defender offers several remediation actions that analysts can manually initiate. Actions are separated into two categories, Actions on devices and Actions on files. Some actions can be used to immediately stop the threat while other actions assist in further forensic analysis.
+Microsoft 365 Defender offers several remediation actions that analysts can manually initiate. Actions are separated into two categories, Actions on devices and actions on files. Some actions can be used to immediately stop the threat while other actions assist in further forensic analysis.
 
 ## Actions on devices
 
@@ -62,7 +62,7 @@ Continuing the example in [Detect, triage, and analyze incidents](first-incident
 7. Create a custom indicator in Microsoft Defender for Endpoint to block a Tor IP address
 8. Create a governance action in Microsoft Defender for Cloud Apps for this type of alert such as those shown in the following image:
 
-   :::image type="content" source="../../media/first-incident-remediate/first-incident-mcas-governance.png" alt-text="Example of governance actions in the Microsoft Defender for Cloud Apps portal.":::
+   :::image type="content" source="../../media/first-incident-remediate/first-incident-mcas-governance.png" alt-text="Governance actions in the Microsoft Defender for Cloud Apps portal" lightbox="../../media/first-incident-remediate/first-incident-mcas-governance.png":::
 
 Most of the remediation actions can be applied and tracked in Microsoft 365 Defender.
 
@@ -79,13 +79,11 @@ Playbooks use Power Automate to create custom robotic process automation flows t
 
 Here's an example.
  
-:::image type="content" source="../../media/first-incident-remediate/first-incident-power-automate.png" alt-text="Example of a Power Automate custom robotic process automation flow."::: 
+:::image type="content" source="../../media/first-incident-remediate/first-incident-power-automate.png" alt-text="A Power Automate custom robotic process automation flow" lightbox="../../media/first-incident-remediate/first-incident-power-automate.png"::: 
  
-Playbooks can also be created during [post-incident review](first-incident-post.md) to create remediation actions from incidents for faster remediation actions. 
+Playbooks can also be created during [post-incident review](first-incident-post.md) to create remediation actions from resolved incidents. 
 
 ## Next step
-
-[![Step 3: Learn how to perform a post-incident review of an incident.](../../media/first-incident-overview/first-incident-path-step3.png)](first-incident-post.md)
 
 Learn how to [perform a post-incident review of an incident](first-incident-post.md).
 

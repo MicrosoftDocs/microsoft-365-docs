@@ -13,7 +13,7 @@ ms.author: dansimp
 ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.technology: mde
-ms.collection: m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.date:
 ---
 
@@ -24,6 +24,10 @@ ms.date:
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- Microsoft Defender Antivirus
+
+**Platforms**
+- Windows
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
@@ -36,6 +40,9 @@ This article helps you evaluate controlled folder access. It explains how to ena
 
 > [!TIP]
 > You can also visit the Microsoft Defender for Endpoint demo scenario website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the feature is working and see how it works.
+
+> [!NOTE]
+> The Defender for Endpoint demo site at demo.wd.microsoft.com is deprecated and will be removed in the future.
 
 ## Use audit mode to measure impact
 
