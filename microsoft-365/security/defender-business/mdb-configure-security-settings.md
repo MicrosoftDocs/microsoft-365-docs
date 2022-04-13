@@ -129,11 +129,27 @@ Web content filtering is available on the major web browsers, with blocks perfor
 
 In addition to next-generation protection, firewall, and web content filtering policies, Defender for Business includes advanced security features. These features are preconfigured using recommended settings; however, you can review them, and if necessary, edit settings to suit your business needs.
 
-To access settings for advanced features, follow these steps:
+To access settings for advanced features, in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), go to **Settings** > **Endpoints** > General > **Advanced features**.
 
-1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), go to **Settings** > **Endpoints** > General > **Advanced features**.
+The following table describes settings for advanced features:
 
-2. 
+| Setting | Description |
+|:---|:---|
+| Automated Investigation <br/>(turned on by default) | As alerts are generated, automated investigations can occur. Each automated investigation determines whether a detected threat requires action, and then takes (or recommends) remediation actions (such as sending a file to quarantine, stopping a process, isolating a device, or blocking a URL). While an investigation is running, any other related alerts that arise are added to the investigation until it completes. If an affected entity is seen elsewhere, the automated investigation expands its scope to include that entity, and the investigation process repeats.<br/><br/>You can view investigations on the **Incidents** page. Select an incident, and then select the **Investigations** tab.   |
+| Live Response <br/>(turned on by default) | Defender for Business includes the following types of manual response actions: <br/>- Run antivirus scan<br/>- Isolate device<br/>- Stop and quarantine a file<br/>- Add an indicator to block or allow a file  |
+| Live Response for Servers | (This setting is currently not available in Defender for Business)   |
+| Live Response unsigned script execution | (This setting is currently not available in Defender for Business)  | 
+| Enable EDR in block mode<br/>(turned on by default) | Provides added protection from malicious artifacts when Microsoft Defender Antivirus is not the primary antivirus product and is running in passive mode on a device. EDR in block mode works behind the scenes to remediate malicious artifacts that were detected by EDR capabilities. Such artifacts might have been missed by the primary, non-Microsoft antivirus product. For devices running Microsoft Defender Antivirus as their primary antivirus, EDR in block mode provides an extra layer of defense by allowing Microsoft Defender Antivirus to take automatic actions on post-breach, behavioral EDR detections.<br/><br/>[Learn more about EDR in block mode](../defender-endpoint/edr-in-block-mode.md) |
+| Allow or block a file <br/>(turned on by default) |  |
+| Custom network indicators |  |
+| Tamper protection |  |
+| Show user details |  |
+| Skype for Business integration |  |
+| Web content filtering |  |
+| Microsoft Intune connection |  |
+| Device discovery |  |
+| Preview features |  |
+
 
 ## View and edit other settings in the Microsoft 365 Defender portal
 
@@ -162,7 +178,6 @@ The following table describes settings to view (and if necessary, edit) in Defen
 2. Select **Settings**, and then select a category (such as **Security center**, **Microsoft 365 Defender**, or **Endpoints**).
 
 3. In the list of settings, select an item to view or edit.
-
 
 ## Next steps
 
