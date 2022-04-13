@@ -72,7 +72,7 @@ The following table compares security features and capabilities in Defender for 
 
 |Feature/Capability|[Defender for Business](mdb-overview.md)<br/>(standalone; currently in preview)|[Defender for Endpoint Plan 1](../defender-endpoint/defender-endpoint-plan-1.md)|[Defender for Endpoint Plan 2](../defender-endpoint/microsoft-defender-endpoint.md)|
 |---|---|---|---|
-|[Centralized management](../defender-endpoint/manage-atp-post-migration.md) <sup>[[1](#fn1)]</sup>|Yes|Yes|Yes|
+|[Centralized management](../defender-endpoint/manage-atp-post-migration.md) |Yes <sup>[[1](#fn1)]</sup>|Yes|Yes|
 |[Simplified client configuration](mdb-simplified-configuration.md)|Yes|No|No|
 |[Threat & vulnerability management](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)|Yes|No|Yes|
 |[Attack surface reduction capabilities](../defender-endpoint/overview-attack-surface-reduction.md)|Yes|Yes|Yes|
