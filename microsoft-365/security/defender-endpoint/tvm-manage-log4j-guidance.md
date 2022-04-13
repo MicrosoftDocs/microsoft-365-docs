@@ -95,13 +95,12 @@ This table describes the search capabilities supported platforms and versions:
 
 |Capability|File Type|Windows10+,<br>server2019+|Server 2012R2,<br>server2016|Server 2008R2|Linux + macOS|
 |:---|:---|:---|:---|:---|:---|
-|Search In Memory  | Log4j-core | Yes |Yes*| - | Yes |
-| |Uber-JARs | Yes |Yes*| - | Yes |
-| Search all files on disk  |Log4j-core | Yes |Yes*| Yes | - |
-| | Uber-JARs|Yes |Yes*| - | -|
+|Search In Memory  | Log4j-core | Yes |Yes<sup>[1]| - | Yes |
+| |Uber-JARs | Yes |Yes<sup>[1]| - | Yes |
+| Search all files on disk  |Log4j-core | Yes |Yes<sup>[1]| Yes | - |
+| | Uber-JARs|Yes |Yes<sup>[1]| - | -|
 
-* available once KB5005292 is installed:
-Microsoft Defender for Endpoint: Defending Windows Server 2012 R2 and 2016
+(1) Capabilities are available when [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac) is installed on Windows Server 2012 R2 and 2016.
 
 ## Learn about your Log4j exposure and mitigation options
 
