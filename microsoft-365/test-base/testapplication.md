@@ -140,4 +140,4 @@ As part of commercial roadmap, Test Base started to support intunewin format for
 <br/><br/>
 
 ## Next steps
-[Test an Intune app on Test Base](testintuneapplication.md)
+[Test your Intune app on Test Base](testintuneapplication.md)
