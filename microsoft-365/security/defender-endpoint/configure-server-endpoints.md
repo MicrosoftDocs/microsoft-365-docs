@@ -98,7 +98,7 @@ The following specifics apply to the new unified solution package for Windows Se
 
 - Ensure connectivity requirements as specified in [Enable access to Microsoft Defender for Endpoint service URLs in the proxy server](/microsoft-365/security/defender-endpoint/configure-proxy-internet?enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server) are met. They are equivalent to those for Windows Server 2019. 
 - We have identified an issue with Windows Server 2012 R2 connectivity to cloud when static TelemetryProxyServer is used **and** the certificate revocation list (CRL) URLs are not reachable from the SYSTEM account context. The immediate mitigation is to either use an alternative proxy option ("system-wide") that provides such connectivity, or configure the same proxy via the WinInet setting on the SYSTEM account context.
-Alternatively, use the instructions provided [here](https://github.com/microsoft/mdefordownlevelserver/blob/main/proxyworkaround) to install a certificate as a workaround.
+Alternatively, use the instructions provided at [Workaround for a known issue with TelemetryProxyServer on disconnected machines](#Workaround-for-a-known-issue-with-TelemetryProxyServer-on-disconnected-machines) to install a certificate as a workaround.
 - Previously, the use of the Microsoft Monitoring Agent (MMA) on Windows Server 2016 and below allowed for the OMS / Log Analytics gateway to provide connectivity to Defender cloud services. The new solution, like Microsoft Defender for Endpoint on Windows Server 2019, Windows Server 2022, and Windows 10, does not support this gateway.
 - On Windows Server 2016, verify that Microsoft Defender Antivirus is installed, is active and up to date. You can download and install the latest platform version using Windows Update. Alternatively, download the update package manually from the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623) or from [MMPC](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64).  
 - On Windows Server 2012 R2, there is no user interface for Microsoft Defender Antivirus. In addition, the user interface on Windows Server 2016 only allows for basic operations. To perform operations on a device locally, refer to [Manage Microsoft Defender for Endpoint with PowerShell, WMI, and MPCmdRun.exe](/microsoft-365/security/defender-endpoint/manage-mde-post-migration-other-tools). As a result, features that specifically rely on user interaction, such as where the user is prompted to make a decision or perform a specific task, may not work as expected. It is recommended to disable or not enable the user interface nor require user interaction on any managed server as it may impact protection capability.
@@ -115,6 +115,22 @@ Alternatively, use the instructions provided [here](https://github.com/microsoft
 - Automatic exclusions for **server roles** are not supported on Windows Server 2012 R2; however, built-in exclusions for operating system files are. For more information about adding exclusions, see [Virus scanning recommendations for Enterprise computers that are running currently supported versions of Windows](https://support.microsoft.com/topic/virus-scanning-recommendations-for-enterprise-computers-that-are-running-currently-supported-versions-of-windows-kb822158-c067a732-f24a-9079-d240-3733e39b40bc).
 - On machines that have been upgraded from the previous, MMA-based solution and the EDR sensor is a (preview) version older than 10.8047.22439.1056, uninstalling and reverting back to the MMA-based solution may lead to crashes. If you are on such a preview version, please update using KB5005292.
 - To deploy and onboard the new solution using Microsoft Endpoint Manager, this currently requires creating a package. For more information on how to deploy programs and scripts in Configuration Manager, see [Packages and programs in Configuration Manager](/configmgr/apps/deploy-use/packages-and-programs). MECM 2107 with the hotfix rollup or later is required to support policy configuration management using the Endpoint Protection node.
+
+# Workaround for a known issue with TelemetryProxyServer on disconnected machines**
+
+Problem description:
+When using the TelemetryProxyServer setting to specify a proxy to be used by the EDR component of Microsoft Defender for Endpoint, on machines that have no other way to access the Certificate Revocation List (CRL) URL, a missing intermediate certificate will cause the EDR sensor to not successfully connect to the cloud service.
+
+Affected scenario:
+-Microsoft Defender for Endpoint with Sense version number 10.8048.22439.1065 or earlier preview versions running on Windows Server 2012 R2
+-Using the TelemetryProxyServer proxy configuration; other methods are not affected
+
+Workaround:
+1. Ensure the machine is running Sense version 10.8048.22439.1065 or higher by either installing using the latest package available from the onboarding page, or by applying KB5005292.
+2. Download and unzip the certificate from https://github.com/microsoft/mdefordownlevelserver/blob/main/InterCA.zip
+3. Import the certificate to the Local Computer trusted “Intermediate Certification Authorities” store.
+You can use the PowerShell command:
+Import-Certificate -FilePath .\InterCA.cer -CertStoreLocation Cert:\LocalMachine\Ca
 
 ## Integration with Microsoft Defender for Cloud
 
