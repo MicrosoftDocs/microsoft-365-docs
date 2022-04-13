@@ -24,7 +24,7 @@ Base package upload instruction, please refer to this [doc](https://microsoft.sh
 As an effort to further enable commercial utilization, Test Base started to support intunewin format for IT Pros who manages apps for their apps within Intune as the standard onboarding package format. The intunewin upload flow provides the experience for IT Pros to reuse their intunewin format packages, which contains the apps they deployed to their end devices via MEM/Intune to onboarding their apps and test configurations quickly to Test Base. 
 
 **Prerequisites**
-  - Currently Test Base support synchronizing via the same subscription between Intune account and Test Base account (you don’t have to have an Intune account to upload your intunewin package however if you’d like to synchronize the Intune configuration for the intunewin file’s corresponding apps from Intune, you will need to make sure your Intune account is created under the same subscription as your Test Base account)
+  - Currently Test Base support synchronizing via the same subscription between Intune account and Test Base account (you don’t have to have an Intune account to upload your intunewin package however if you’d like to synchronize the Intune configuration for the intunewin file’s corresponding apps from Intune, you'll need to make sure your Intune account is created under the same subscription as your Test Base account)
   - Intunewin packages to be uploaded 
 
 **Intunwin file Upload Flow (synchronized with Intune account)** <br/>
@@ -39,9 +39,9 @@ As an Intune customer who has an Intune package, which has been already onboarde
 **Step 1: Define Content**
 1. Upload the intunewin package you choose
 2. Grant token by clicking on below link “Grant token and select app”
-3. After automatic sync with your Intune account, you will be listed with app your applications under your Intune account. Choose the app corresponding to your uploaded intunewin package then click “Select”
+3. After automatic sync with your Intune account, you'll be listed with app your applications under your Intune account. Choose the app corresponding to your uploaded intunewin package then click “Select”
 ![Upload the intune package](Media/testintuneapplication02.png)
-4. On the Step 1 page, you will see dependencies listed under the Dependency section, you can either choose to upload the dependency’s install file or remove it from this step (if you plan to manage the dependency in Step 3 by self provide the related binaries). Selected dependencies in this section will be pre-installed the same way as it will be installed viaIntune.
+4. On the Step 1 page, you'll see dependencies listed under the Dependency section, you can either choose to upload the dependency’s install file or remove it from this step (if you plan to manage the dependency in Step 3 by self provide the related binaries). Selected dependencies in this section will be pre-installed the same way as it will be installed viaIntune.
 ![Upload dependency package](Media/testintuneapplication03.png)
 
 **Step 2: Configure Test**
@@ -61,7 +61,7 @@ As an Intune customer who has an Intune package, which has been already onboarde
 **Step 4: Test Matrix**
 1. Check the default selections present in the OS list for the corresponding test types.
 Test base supports selecting multiple Windows cumulative update **from Windows 10 1909 except Windows 10 2004**, however Intune Win app would be assigned with a version from versions equal to or higher than **Windows 10 1607**.
-OS list will be default to include all OSes supported by Test base, which are higher than the minimum OS specified for the Intune Win app.
+OS list will be default to include all OSes supported by Test base, which is higher than the minimum OS specified for the Intune Win app.
 2. Users are allowed to modify the OS selection as need.
 
 
@@ -91,7 +91,7 @@ As a Test Base customer who has a standalone intunewin package. Customer can onb
 
 **Step 3: Edit Package**
 1. Check the scripts are tagged correctly (refer to this [doc](https://microsoft.sharepoint.com/:w:/t/AzureSUVPCoreTeam/EeHQIT3qA0FKqBDWI5TzmzgBiH2Syz39o5VbY2kdugMn4A?e=Rk1KD9))
-2. As no install/uninstall commands are synchronized from corresponding Intune account, you will need to provide all the scripts (install/uninstall/launch/close) by yourself
+2. As no install/uninstall commands are synchronized from corresponding Intune account, you'll need to provide all the scripts (install/uninstall/launch/close) by yourself
 3. Check the test app binaries are moved under bin folder
 4. You can edit the scripts as needed and save
 
