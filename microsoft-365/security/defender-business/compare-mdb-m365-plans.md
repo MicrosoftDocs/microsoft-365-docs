@@ -78,21 +78,29 @@ The following table compares security features and capabilities in Defender for 
 |[Attack surface reduction capabilities](../defender-endpoint/overview-attack-surface-reduction.md)|Yes|Yes|Yes|
 |[Next-generation protection](../defender-endpoint/next-generation-protection.md)|Yes|Yes|Yes|
 |[Endpoint detection and response](../defender-endpoint/overview-endpoint-detection-response.md)|Yes <sup>[[2](#fn2)]</sup>|No|Yes|
-|[Automated investigation and response](../defender-endpoint/automated-investigations.md)|Yes <sup>[[2](#fn2)]</sup>|No|Yes|
-|[Threat hunting](../defender-endpoint/advanced-hunting-overview.md) and six months of data retention |No <sup>[[3](#fn3)]</sup>|No|Yes|
-|[Threat analytics](../defender-endpoint/threat-analytics.md)|Yes <sup>[[2](#fn2)]</sup>|No|Yes|
-|[Cross-platform support](../defender-endpoint/minimum-requirements.md) <br/>(Windows, macOS, iOS, and Android OS)|Yes <sup>[[4](#fn4)]</sup>|Yes|Yes|
+|[Automated investigation and response](../defender-endpoint/automated-investigations.md)|Yes <sup>[[3](#fn3)]</sup>|No|Yes|
+|[Threat hunting](../defender-endpoint/advanced-hunting-overview.md) and six months of data retention |No <sup>[[4](#fn4)]</sup>|No|Yes|
+|[Threat analytics](../defender-endpoint/threat-analytics.md)|Yes <sup>[[5](#fn5)]</sup>|No|Yes|
+|[Cross-platform support](../defender-endpoint/minimum-requirements.md) <br/>(Windows, macOS, iOS, and Android OS)|Yes <sup>[[6](#fn6)]</sup>|Yes|Yes|
 |[Microsoft Threat Experts](../defender-endpoint/microsoft-threat-experts.md)|No|No|Yes|
 |Partner APIs|Yes|Yes|Yes|
 |[Microsoft 365 Lighthouse integration](../../lighthouse/m365-lighthouse-overview.md) <br/>(For viewing security incidents across customer tenants)|Yes|No|No|
 
-(<a id="fn1">1</a>) Onboard and manage devices in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) or with another tool, such as Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)).
+(<a id="fn1">1</a>) Onboard and manage devices in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) or with Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)).
 
-(<a id="fn2">2</a>) These capabilities are optimized for small and medium-sized businesses. In Defender for Business, automated investigation and response is turned on by default, tenant wide. 
+(<a id="fn2">2</a>) Endpoint detection and response (EDR) capabilities in Defender for Business include behavior-based detection and the following four types of manual response actions: 
+- Run antivirus scan
+- Isolate device
+- Stop and quarantine a file
+- Add an indicator to block or allow a file
 
-(<a id="fn3">3</a>) There is no timeline tab in Defender for Business.
+(<a id="fn3">3</a>) In Defender for Business, automated investigation and response is turned on by default, tenant wide. If you turn off automated investigation and response, it affects real-time protection. See .  
 
-(<a id="fn4">4</a>) During the preview program, Windows client devices are supported in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)).
+(<a id="fn4">4</a>) There is no timeline view in Defender for Business.
+
+(<a id="fn5">5</a>) In Defender for Business, threat analytics are optimized for small and medium-sized businesses.
+
+(<a id="fn6">6</a>) During the preview program, Windows client devices are supported for onboarding in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). You can use the local script method. See [Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md).
 
 ## Next steps
 

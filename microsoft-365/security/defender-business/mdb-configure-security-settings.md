@@ -31,6 +31,7 @@ After you've onboarded your company's devices to Microsoft Defender for Business
 - **[Next-generation protection policies](#view-or-edit-your-next-generation-protection-policies)**, which determine antivirus and antimalware protection for your company's devices
 - **[Firewall protection and rules](#view-or-edit-your-firewall-policies-and-custom-rules)**, which determine what network traffic is allowed to flow to or from your company's devices
 - **[Web content filtering](#set-up-web-content-filtering)**, which prevents people from visiting certain websites (URLs) based on categories, such as adult content or legal liability.
+- **Advanced features**, such as automated investigation and response, and endpoint detection and response (EDR) in block mode.
 
 In Defender for Business, security policies are applied to devices through [device groups](mdb-create-edit-device-groups.md#what-is-a-device-group). 
 
@@ -48,9 +49,11 @@ Use this article as a guide to managing your security policies and settings.
 
 4. [Set up web content filtering](#set-up-web-content-filtering).
 
-5. [View and edit other settings in the Microsoft 365 Defender portal](#view-and-edit-other-settings-in-the-microsoft-365-defender-portal). 
+5. Review settings for advanced features
 
-6. [Proceed to your next steps](#next-steps).
+6. [View and edit other settings in the Microsoft 365 Defender portal](#view-and-edit-other-settings-in-the-microsoft-365-defender-portal). 
+
+7. [Proceed to your next steps](#next-steps).
 
 >
 > **Got a minute?**
@@ -121,6 +124,16 @@ Web content filtering is available on the major web browsers, with blocks perfor
 
 > [!TIP]
 > To learn more about web content filtering, see [Web content filtering](../defender-endpoint/web-content-filtering.md).
+
+## Review settings for advanced features
+
+In addition to next-generation protection, firewall, and web content filtering policies, Defender for Business includes advanced security features. These features are preconfigured using recommended settings; however, you can review them, and if necessary, edit settings to suit your business needs.
+
+To access settings for advanced features, follow these steps:
+
+1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), go to **Settings** > **Endpoints** > General > **Advanced features**.
+
+2. 
 
 ## View and edit other settings in the Microsoft 365 Defender portal
 
