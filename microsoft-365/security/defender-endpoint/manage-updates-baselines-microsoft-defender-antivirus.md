@@ -6,7 +6,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: medium
+ms.localizationpriority: high
 audience: ITPro
 ms.topic: article
 author: denisebmsft
@@ -70,7 +70,7 @@ For more information, see [Manage the sources for Microsoft Defender Antivirus p
 > - This article lists changes that are included in the broad release channel. [See the latest broad channel release here](https://www.microsoft.com/security/encyclopedia/adlpackages.aspx?action=info).
 > - To learn more about the gradual rollout process, and to see more information about the next release, see [Manage the gradual rollout process for Microsoft Defender updates](manage-gradual-rollout.md).
 > - To learn more about security intelligence updates, see [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/en-us/wdsi/defenderupdates).
-> - If you're looking for a list of Microsoft Defender processes, **[download the mde-urls workbook](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)**, and then select the **Microsoft Defender Processes** worksheet. The mde-urls workbook also lists the services and their associated URLs that your network must be able to connect to, as described in [Enable access to Microsoft Defender for Endpoint service URLs in the proxy server](configure-proxy-internet.md).
+> - If you're looking for a list of Microsoft Defender processes, **[download the mde-urls workbook](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)**, and then select the **Microsoft Defender Processes** worksheet. The mde-urls workbook also lists the services and their associated URLs that your network must be able to connect to, as described in [Enable access to Microsoft Defender for Endpoint service URLs in the proxy server](configure-proxy-internet.md).
 
 ## Monthly platform and engine versions
 
@@ -129,7 +129,7 @@ Security intelligence update version: 1.361.14.0 <br/>
 - Improved traffic output when SmartScreen service is unreachable 
 - Connectivity improvements for customers using proxies with authentication requirements
 - Fixed VDI device update bug for network FileShares 
-- EDR in block mode now supports granular device targetting with new CSPs. See [Endpoint detection and response (EDR) in block mode](edr-in-block-mode.md).
+- EDR in block mode now supports granular device targeting with new CSPs. See [Endpoint detection and response (EDR) in block mode](edr-in-block-mode.md).
 
 ### Known Issues
 
