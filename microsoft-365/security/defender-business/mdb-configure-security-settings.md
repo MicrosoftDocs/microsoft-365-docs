@@ -31,7 +31,7 @@ After you've onboarded your company's devices to Microsoft Defender for Business
 - **[Next-generation protection policies](#view-or-edit-your-next-generation-protection-policies)**, which determine antivirus and antimalware protection for your company's devices
 - **[Firewall protection and rules](#view-or-edit-your-firewall-policies-and-custom-rules)**, which determine what network traffic is allowed to flow to or from your company's devices
 - **[Web content filtering](#set-up-web-content-filtering)**, which prevents people from visiting certain websites (URLs) based on categories, such as adult content or legal liability.
-- **Advanced features**, such as automated investigation and response, and endpoint detection and response (EDR) in block mode.
+- **[Advanced features](#review-settings-for-advanced-features)**, such as automated investigation and response, and endpoint detection and response (EDR) in block mode.
 
 In Defender for Business, security policies are applied to devices through [device groups](mdb-create-edit-device-groups.md#what-is-a-device-group). 
 
@@ -49,7 +49,7 @@ Use this article as a guide to managing your security policies and settings.
 
 4. [Set up web content filtering](#set-up-web-content-filtering).
 
-5. Review settings for advanced features
+5. [Review settings for advanced features](#review-settings-for-advanced-features).
 
 6. [View and edit other settings in the Microsoft 365 Defender portal](#view-and-edit-other-settings-in-the-microsoft-365-defender-portal). 
 
