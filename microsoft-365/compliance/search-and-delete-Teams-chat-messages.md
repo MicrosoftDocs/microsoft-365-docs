@@ -23,7 +23,7 @@ description: "Use Advanced eDiscovery and the Microsoft Graph Explorer to search
 You can use Advanced eDiscovery and the Microsoft Graph Explorer to search for and delete chat messages in Microsoft Teams. This can help you find and remove sensitive information or inappropriate content. This search and purge workflow will also help you respond to a data spillage incident, when content containing confidential or malicious information is released through Teams chat messages.​
 
 > [!NOTE]
-> This article applies to Public Cloud. Gov Clouds (GCC High & DOD) support will be coming soon.
+> This article applies to Microsoft 365 Enterprise organizations. Support for the US Government cloud (including GCC, GCC High, and DoD) is coming soon.
 
 ## Before you search and purge chat messages
 
