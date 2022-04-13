@@ -1,5 +1,5 @@
 ---
-title: "Increase threat protection for Microsoft 365 Business Premium"
+title: "Set up compliance features"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
