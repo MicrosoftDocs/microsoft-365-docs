@@ -41,7 +41,7 @@ You can now do the following things:
     > [!NOTE]
     > If the label is configured to unlock the record by default, but versioning is not enabled by the admin, or prevented by the records management setting, users will not be able to unlock the document after they lock it.
 
-- **Have the records automatically stored in an in-place records repository located with the site.** Each site in SharePoint and OneDrive preserves content in its Preservation Hold library. Record versions are stored in the Records folder in this library. For more information about how the Preservation Hold library works, see [How retention works for SharePoint and OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive)
+- **Have the records automatically stored in an in-place records repository located with the site.** Each site in SharePoint and OneDrive preserves content in its Preservation Hold library. Record versions are stored in the Records folder in this library. For more information about how the Preservation Hold library works, see [How retention works for SharePoint and OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive).
 
 - **Maintain an evergreen document that contains all versions.** By default, each SharePoint and OneDrive document has a version history available on the item menu. In this version history, you can easily see which versions are records and view those documents.
 
