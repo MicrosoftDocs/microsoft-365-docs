@@ -137,7 +137,7 @@ If you have a Zip file already, you can switch back to the legacy package upload
   
 **Intunewin Upload Flow** <br/>
 As part of commercial roadmap, Test Base started to support intunewin format for IT Pros who manages apps for their apps within Intune as the standard onboarding package format. The intunewin upload flow provides the experience for IT Pros to reuse their intunewin format packages which contains the apps they deployed to their end devices via MEM/Intune to onboarding their apps and test configurations quickly to Test Base.
+<br/><br/>
 
-
-# Next steps
+## Next steps
 [Test an Intune app on Test Base](testintuneapplication.md)
