@@ -35,7 +35,7 @@ People outside your organization do not have access unless a user in your organi
 
 ## Document, site, and team sharing
 
-Sharing documents, sites, and teams with people outside your organization uses *guest accounts*. Guest accounts are a type of account in Azure Active Directory that are managed through [Azure AD B2B collaboration](/azure/active-directory/external-identities/what-is-b2b). They can be used to share resources in your organization with anyone who has an email address. You can manage guest accounts the same way you manage users in your organization. Guests do not require a license for most features of collaboration. 
+Sharing documents, sites, and teams with people outside your organization uses *guest accounts*. Guest accounts are a type of account in Azure Active Directory that is managed through [Azure AD B2B collaboration](/azure/active-directory/external-identities/what-is-b2b). They can be used to share resources in your organization with anyone who has an email address. You can manage guest accounts the same way you manage users in your organization. Guests do not require a license for most features of collaboration. 
 
 Guests can only access resources that you specifically share with them.
 
@@ -59,7 +59,7 @@ For information about how to set up Microsoft 365 for collaboration with guests,
  
 ## Shared Channels
 
-Shared channels are a type of Teams channel that allow you to share with people outside the team, including people in other Microsoft 365 organizations. While shared channels is turned on by default in Teams, external collaboration with shared channels is disabled by default. External collaboration with shared channels uses [Azure AD B2B direct connect](/azure/active-directory/external-identities/b2b-direct-connect-overview) which allows you to add people from other Microsoft 365 organizations to Teams channels without the need for creating a guest account.
+Shared channels are a type of Teams channel that allows you to share with people outside the team, including people in other Microsoft 365 organizations. While shared channels is turned on by default in Teams, external collaboration with shared channels is disabled by default. External collaboration with shared channels uses [Azure AD B2B direct connect](/azure/active-directory/external-identities/b2b-direct-connect-overview) which allows you to add people from other Microsoft 365 organizations to Teams channels without the need for creating a guest account.
 
 Shared channels have a particular advantage over guest accounts in that they do not require external participants to switch orgs in the Teams desktop client or log into your organization. They can remain logged in to their organization and access the channel directly.
 
