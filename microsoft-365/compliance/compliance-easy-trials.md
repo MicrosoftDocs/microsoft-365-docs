@@ -53,7 +53,7 @@ Your trial will be effective immediately for 90 days. It can take up to two hour
 
 #### Licensing
 
-As part of the trial setup, 300 Microsoft E5 compliance licenses are automatically applied to your organization. The licenses are active for 90 days.
+As part of the trial setup, 300 Microsoft 365 E5 compliance licenses are automatically applied to your organization. The licenses are active for 90 days.
 
 #### Getting started
 
