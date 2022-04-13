@@ -18,7 +18,7 @@ metadata:
 
 # productDirectory section (optional)
 productDirectory:
-  title: Get started # < 60 chars (optional)
+  title: # < 60 chars (optional)
   items:
     # Card
     - title: What is Microsoft 365 for frontline workers?
@@ -30,7 +30,7 @@ productDirectory:
         - url: flw-licensing-options.md
           text: Licensing options for frontline workers
     # Card
-    - title: Deploy
+    - title: Set up and configure Microsoft 365 for frontline workers
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://office/media/icons/deploy-blue.svg
       links:
@@ -38,6 +38,8 @@ productDirectory:
           text: Start with a pilot deployment
         - url: ./file2a.md OR /file2a
           text: Extend your pilot to a full deployment
+        - url: ./file2a.md OR /file2a
+          text: Manage devices
     # Card
     - title: Onboard and train users
       imageSrc: https://office/media/icons/users-group.svg
@@ -49,13 +51,38 @@ productDirectory:
         - url: https://support.microsoft.com/en-us/office/microsoft-teams-video-training-4f108e54-240b-4351-8084-b1089f0d21d7
           text: End user training
     # Card
-    - title: Scenarios to transform your business
+    - title: Solutions to transform your business
       imageSrc: https://office/media/icons/lightbulb-idea-capture-blue.svg
       links:
+        - url: retail-team-collaboration.md
+          text: Communication
         - url: bookings-virtual-visits.md
           text: Virtual appointments
-        - url: retail-team-collaboration.md
-          text: Team collaboration
+        - url: /microsoftteams/expand-teams-across-your-org/shifts-for-teams-landing-page
+          text: Schedule management
+        - url: /sharepoint/onboard-employees
+          text: Training and onboarding
         - url: retail-business-processes.md
-          text: Simplify business processes
-
+          text: Digitized processes
+    # Card
+    - title: Solutions for your industry
+      imageSrc: https://office/media/icons/walkthrough-map-blue.svg
+      links:
+        - url: /MicrosoftTeams/expand-teams-across-your-org/healthcare/teams-in-hc
+          text: Healthcare
+        - url: /microsoftteams/expand-teams-across-your-org/teams-for-nonprofit-landing-page
+          text: Nonprofit
+        - url: /microsoftteams/expand-teams-across-your-org/teams-for-retail-landing-page
+          text: Retail
+    # Card
+    - title: Apps for frontline workers
+      imageSrc: https://office/media/icons/blocks-blue.svg
+      links:
+        - url: /microsoftteams/bookings-app-admin
+          text: Bookings
+        - url: /microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams
+          text: Shifts
+        - url: /microsoftteams/manage-tasks-app
+          text: Tasks
+        - url: ./file2a.md OR /file2a
+          text: More >
