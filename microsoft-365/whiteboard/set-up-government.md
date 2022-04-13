@@ -1,8 +1,8 @@
 ---
 title: Set up Microsoft Whiteboard for Government
-ms.author: faithall
-author: faithall
-manager: faithall
+ms.author: chucked
+author: chuckedmonson
+manager: alexfaulkner
 ms.reviewer: 
 audience: admin
 ms.topic: article

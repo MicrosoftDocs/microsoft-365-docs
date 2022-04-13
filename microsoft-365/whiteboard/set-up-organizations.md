@@ -1,8 +1,8 @@
 ---
 title: Set up Microsoft Whiteboard for your organization
-ms.author: faithall
-author: faithall
-manager: faithall
+ms.author: chucked
+author: chuckedmonson
+manager: alexfaulkner
 ms.reviewer: 
 audience: admin
 ms.topic: article

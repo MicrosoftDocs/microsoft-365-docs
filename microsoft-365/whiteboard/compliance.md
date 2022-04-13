@@ -1,8 +1,8 @@
 ---
 title: Compliance standards in Microsoft Whiteboard
-ms.author: faithall
-author: faithall
-manager: faithall
+ms.author: chucked
+author: chuckedmonson
+manager: alexfaulkner
 ms.reviewer: 
 audience: admin
 ms.topic: article

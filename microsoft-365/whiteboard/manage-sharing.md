@@ -1,8 +1,8 @@
 ---
 title: Manage sharing for Microsoft Whiteboard in OneDrive for Business
-ms.author: faithall
-author: faithall
-manager: faithall
+ms.author: chucked
+author: chuckedmonson
+manager: alexfaulkner
 ms.reviewer: 
 audience: admin
 ms.topic: article
