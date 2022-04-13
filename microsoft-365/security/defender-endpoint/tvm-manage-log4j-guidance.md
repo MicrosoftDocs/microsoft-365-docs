@@ -93,12 +93,15 @@ Threat and vulnerability management provides layers of detection to help you dis
 
 This table describes the search capabilities supported platforms and versions:
 
-|Capability|File Type|Windows10+,<br>server2019+|Server 2008R2,<br>server2012R2, server2016|Linux + macOS|
-|:---|:---|:---|:---|:---|
-|Search In Memory  | Log4j-core | Yes | - | Yes |
-| |Uber-JARs | Yes | - | Yes |
-| Search all files on disk  |Log4j-core | Yes | Yes | - |
-| | Uber-JARs|Yes | - | -|
+|Capability|File Type|Windows10+,<br>server2019+|Server 2012R2,<br>server2016|Server 2008R2|Linux + macOS|
+|:---|:---|:---|:---|:---|:---|
+|Search In Memory  | Log4j-core | Yes |Yes*| - | Yes |
+| |Uber-JARs | Yes |Yes*| - | Yes |
+| Search all files on disk  |Log4j-core | Yes |Yes*| Yes | - |
+| | Uber-JARs|Yes |Yes*| - | -|
+
+* available once KB5005292 is installed:
+Microsoft Defender for Endpoint: Defending Windows Server 2012 R2 and 2016
 
 ## Learn about your Log4j exposure and mitigation options
 
@@ -157,7 +160,7 @@ In cases where the mitigation needs to be reverted, follow these steps:
 2. Run the following command:
 
  ```Powershell
-   \[Environment\]::SetEnvironmentVariable("LOG4J\_FORMAT\_MSG\_NO\_LOOKUPS", $null, \[EnvironmentVariableTarget\]::Machine)
+   [Environment]::SetEnvironmentVariable("LOG4J\_FORMAT\_MSG\_NO\_LOOKUPS", $null,[EnvironmentVariableTarget]::Machine)
 ```
 
 The change will take effect after the device restarts.
