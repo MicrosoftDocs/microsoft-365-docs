@@ -129,7 +129,7 @@ Web content filtering is available on the major web browsers, with blocks perfor
 
 In addition to next-generation protection, firewall, and web content filtering policies, Defender for Business includes advanced security features. These features are preconfigured using recommended settings; however, you can review them, and if necessary, edit settings to suit your business needs.
 
-To access settings for advanced features, in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), go to **Settings** > **Endpoints** > General > **Advanced features**.
+To access settings for advanced features, in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), go to **Settings** > **Endpoints** > **General** > **Advanced features**.
 
 The following table describes settings for advanced features:
 
