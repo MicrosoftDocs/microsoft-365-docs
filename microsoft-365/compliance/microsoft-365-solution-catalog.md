@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 solution catalog"
+title: "Microsoft Purview solution catalog"
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -9,16 +9,16 @@ audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-description: Learn about the Microsoft 365 solution catalog, including what it contains, how to get it, and your next steps.
+description: Learn about the Microsoft Purview solution catalog, including what it contains, how to get it, and your next steps.
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 ---
 
-# Microsoft 365 solution catalog
+# Microsoft Purview solution catalog
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Are you looking for a way to quickly get started with compliance tasks in Microsoft 365? Check out the [Microsoft 365 solution catalog](https://compliance.microsoft.com/solutioncatalog) to discover, learn, and quickly get started with compliance and risk management solutions.
+Are you looking for a way to quickly get started with compliance tasks in Microsoft 365? Check out the [Microsoft Purview solution catalog](https://compliance.microsoft.com/solutioncatalog) to discover, learn, and quickly get started with compliance and risk management solutions.
 
 Compliance solutions in Microsoft 365 are collections of integrated capabilities you can use to help you manage end-to-end compliance scenarios. A solution's capabilities and tools might include a combination of policies, alerts, reports, and more.
 
@@ -28,7 +28,7 @@ Read this article to get acquainted with the new solution catalog in the Microso
 
 The solution catalog is organized into sections that contain information cards for each compliance solution available in your Microsoft 365 subscription. Each section contains cards for solutions grouped by compliance area.
 
-![Microsoft 365 solution catalog home page.](../media/m365-solution-catalog-home.png)
+![Microsoft Purview solution catalog home page.](../media/m365-solution-catalog-home.png)
 
 When you select **View** for a solution card, you'll see detailed information about the compliance solution and how to get started. This information includes an overview, pre-configuration requirements, learning resources, controls that allow you to pin the card to the navigation pane, and an option to share the solution as a link, email, or Microsoft Teams message.
 
@@ -38,7 +38,7 @@ When you select **View** for a solution card, you'll see detailed information ab
 
 The **Information protection & governance** section shows you at a glance how you can use Microsoft Purview solutions to protect and govern data in your organization.
 
-![Microsoft 365 solution catalog information protection and governance section.](../media/m365-solution-catalog-information-protection-governance.png)
+![Microsoft Purview solution catalog information protection and governance section.](../media/m365-solution-catalog-information-protection-governance.png)
 
 From here, you'll see cards for the following solutions:
 
@@ -51,7 +51,7 @@ From here, you'll see cards for the following solutions:
 
 The **Insider risk management** section on the home page shows you at a glance how your organization can identify, analyze, and take action on internal risks before they cause harm.
 
-![Microsoft 365 solution catalog insider risk management section.](../media/m365-solution-catalog-insider-risk-management.png)
+![Microsoft Purview solution catalog insider risk management section.](../media/m365-solution-catalog-insider-risk-management.png)
 
 From here, you'll see cards for the following solutions:
 
@@ -62,7 +62,7 @@ From here, you'll see cards for the following solutions:
 
 The **Discovery & response** section on the home page shows you at a glance how your organization can quickly find, investigate, and respond to compliance issues with relevant data.
 
-![Microsoft 365 solution catalog discovery and response section.](../media/m365-solution-catalog-discovery-response.png)
+![Microsoft Purview solution catalog discovery and response section.](../media/m365-solution-catalog-discovery-response.png)
 
 From here, you'll see cards for the following solutions:
 
@@ -74,13 +74,7 @@ From here, you'll see cards for the following solutions:
 
 ## How do I get this?
 
-To visit the Microsoft 365 solution catalog, go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and sign in as a global administrator, compliance administrator, or compliance data administrator. Select **Catalog** in the navigation pane on the left side of the screen to open the catalog home page.
-
-## Frequently asked questions
-
-**Why don't I see the Microsoft 365 solution catalog?**
-
-First, make sure that you have the appropriate licenses and permissions. Then, sign in at [https://compliance.microsoft.com](https://compliance.microsoft.com) as a global administrator, compliance administrator, or compliance data administrator. 
+To visit the Microsoft Purview solution catalog, go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and sign in as a global administrator, compliance administrator, or compliance data administrator. Select **Catalog** in the navigation pane on the left side of the screen to open the catalog home page.
 
 ## Next steps
 
@@ -90,8 +84,8 @@ First, make sure that you have the appropriate licenses and permissions. Then, s
 
 - **Learn about and create Communication compliance policies** to quickly identify and remediate corporate code-of-conduct policy violations. See [Communication compliance](communication-compliance.md).
 
-- **Microsoft Purview Information Protection**, learn how Microsoft 365 solutions help you discover, classify, and protect sensitive information wherever it lives or travels.
+- **Microsoft Purview Information Protection**, learn how Microsoft Purview solutions help you discover, classify, and protect sensitive information wherever it lives or travels.
     - **Get acquainted with and set up Microsoft Defender for Cloud Apps**. See [Quickstart: Get started with Microsoft Defender for Cloud Apps](/cloud-app-security/getting-started-with-cloud-app-security).
     - **Get started with classifiers**. Classifying content and then labeling it so it can be protected and handled properly is the starting place for the information protection discipline. See [Learn about trainable classifiers (preview)](classifier-learn-about.md).
 
-- **Visit your Microsoft 365 solution catalog often**, and make sure to review new solutions to help you with your compliance needs. Sign in at [https://compliance.microsoft.com](https://compliance.microsoft.com) and then select **Catalog** in the left navigation pane.
+- **Visit your Microsoft Purview solution catalog often**, and make sure to review new solutions to help you with your compliance needs. Sign in at [https://compliance.microsoft.com](https://compliance.microsoft.com) and then select **Catalog** in the left navigation pane.
