@@ -71,7 +71,7 @@ The **SharePoint site usage** report can be viewed for trends over the last 7 da
 |Site owner principal name  |The email address of the owner of the site. |
 |Last activity date (UTC)  | The date of the last time file activity was detected or a page was viewed on the site.  |
 |Site sensitivity label ID  | The sensitivity label on the site.  |
-|External sharing  | The external sharable settings on the site.  |
+|External sharing  | The value of the external sharing setting for the site. This value does not reflect changes to the setting made by site sensitivity labels. If you use sensitivity labels, use the [data access governance reports](/sharepoint/data-access-governance-reports) to get the correct values.|
 |Unmanaged device policy  | The site access policy for unmanaged devices.  |
 |Geo location  | The Geo location of the site.  |
 |Files  |The number of files on the site. |
