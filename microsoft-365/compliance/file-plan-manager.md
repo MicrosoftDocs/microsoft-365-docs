@@ -76,10 +76,6 @@ All columns except the label **Name** can be displayed or hidden by selecting th
     - Yes
     - Yes(Regulatory)
 
-- **Is regulatory** —currently rolling out—identifies if the item is marked as a regulatory record when the label is applied. Valid values:
-    - No
-    - Yes
-
 - **Is unlocked by default** —currently rolling out—identifies if the item marked as a record is unlocked when the label is applied. Valid values:
     - No
     - Yes
