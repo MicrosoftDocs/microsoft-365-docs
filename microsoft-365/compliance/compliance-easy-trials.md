@@ -67,7 +67,7 @@ You can extend the trial within the last 15 days of the trial period. You're lim
 
 #### Ending the trial
 
-Admins can disable the trial at any point by going to the **Purview solutions trial** card compliance in the Microsoft 365 trials hub (see [How to set up the trial](#how-to-set-up-the-trial)) and selecting **End trial**.
+Admins can disable the trial at any point by going to the **Purview solutions trial** card compliance in the Microsoft 365 trials hub (see [How to sign up for the trial](#how-to-sign-up-for-the-trial)) and selecting **End trial**.
 
 If you decide not to enroll in a feature that's part of the Purview solutions trial, unless stated otherwise for the solution, your trial data will be maintained for a period of time, usually 180 days, before being permanently deleted. You may continue to access the data gathered during the trial until that time.
 
