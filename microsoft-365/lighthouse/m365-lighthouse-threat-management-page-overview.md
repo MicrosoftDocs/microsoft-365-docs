@@ -13,7 +13,7 @@ ms.collection:
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
-- M365-Lighthouse                         
+- M365-Lighthouse
 search.appverid: MET150
 description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn about the Threat management page."
 ---
@@ -50,7 +50,7 @@ You can filter threats by:
 The following table lists the different threat statuses and their definition:<br><br>
 
 | Threat status | Definition |
-|--|--|
+|---|---|
 | Active | Threat is active on the device. |
 | No status | Threat status is unavailable. Run a full scan on the device to have Microsoft Defender Antivirus redetect the threat. |
 | Action failed | The device is not at risk. An action has failed but a potential threat has been stopped and isn't active on the device. Run a full scan on the device. |
@@ -71,5 +71,5 @@ The Antivirus protection tab on the Threats management page shows the devices ac
 
 ## Related content
 
-[Deploy Microsoft 365 Lighthouse baselines](m365-lighthouse-deploy-baselines.md) (article)\
+[Deploy Microsoft 365 Lighthouse baselines](m365-lighthouse-deploy-baselines.md) (article)\
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)

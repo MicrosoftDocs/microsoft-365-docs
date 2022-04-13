@@ -90,6 +90,10 @@ Review the following details to verify minimum system requirements:
 
 1. Download the agent setup file: [Windows 64-bit agent](https://go.microsoft.com/fwlink/?LinkId=828603) or [Windows 32-bit agent](https://go.microsoft.com/fwlink/?LinkId=828604).
 
+    >[!NOTE]
+    >Due to the [deprecation of SHA-1 support by the MMA agent](/azure/azure-monitor/agents/agent-windows#sha-2-code-signing-support-requirement), the MMA agent needs to be version 10.20.18029 or newer.
+    
+
 2. Obtain the workspace ID:
    - In the Defender for Endpoint navigation pane, select **Settings > Device management > Onboarding**
    - Select the operating system
