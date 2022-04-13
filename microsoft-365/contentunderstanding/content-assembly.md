@@ -50,16 +50,26 @@ Follow these steps to create a modern template.
 5. Create placeholders for all dynamic text in the document that users might want to change from one document to another. For example, you might want to create a placeholder for input such as company name, client name, address, phone number, or date.
 
     To create a placeholder, select the text (such as the date). The **All placeholders** panel will open, where you'll give the placeholder a relevant name and choose the type of input you want to associate with the placeholder.
+<<<<<<< Updated upstream
  
    ![Screenshot of the template viewer showing a field highlighted and the All placeholders panel.](../media/content-understanding/content-assembly-create-template-4a.png)
 
+=======
+
+   ![Screenshot of the template viewer showing a field highlighted and the All placeholders panel.](../media/content-understanding/content-assembly-create-template-4a.png)
+
+>>>>>>> Stashed changes
    Currently, there are two ways for users to fill in a placeholder:
 
    - [Enter text or select a date](#associate-a-placeholder-by-entering-text-or-selecting-a-date)
    - [Select from choices in a column of a list or library](#associate-a-placeholder-by-selecting-from-choices-in-a-column-of-a-list-or-library)
 
    > [!NOTE]
+<<<<<<< Updated upstream
    > You can create placeholders for text only. Currently, images, smart art, tables, and bullet lists are not supported.   
+=======
+   > You can create placeholders for text only. Currently, images, smart art, tables, and bullet lists are not supported.
+>>>>>>> Stashed changes
 
 ### Associate a placeholder by entering text or selecting a date 
 
@@ -100,11 +110,19 @@ On the **All placeholders** panel:
    ![Screenshot of the All placeholders panel showing the list field associated with the placeholder.](../media/content-understanding/content-assembly-create-template-9.png)
 
 6. If you want users to be able to add inputs manually, in addition to choosing from a list, select **Allow authors to add new choices**. In this case, the default for the manual input data type is *Single line of text*. Also the values input by the authors will only be used to generate the document. They won't be added to the SharePoint list.
+<<<<<<< Updated upstream
  
 You can create as many placeholders as you think are necessary. When you're done, you can choose to save the template as a draft or publish the template.
 
    - **Save draft** – Saves the template as a draft and you can access it later. You can view, edit, or publish saved drafts from the **Modern templates** section by selecting **New** > **Edit New menu** from the document library. 
    - **Publish** – Publishes the template to be used by other users in the organization to create documents. You can view, edit, or unpublish *published* templates from the **Modern templates** section by selecting **New** > **Edit New menu** from the document library. 
+=======
+
+   You can create as many placeholders as you think are necessary. When you're done, you can choose to save the template as a draft or publish the template.
+
+   - **Save draft** – Saves the template as a draft and you can access it later. You can view, edit, or publish saved drafts from the **Modern templates** section by selecting **New** > **Edit New menu** from the document library.
+   - **Publish** – Publishes the template to be used by other users in the organization to create documents. You can view, edit, or unpublish *published* templates from the **Modern templates** section by selecting **New** > **Edit New menu** from the document library.
+>>>>>>> Stashed changes
 
 ## Edit a modern template
 
@@ -148,6 +166,7 @@ You can use a *published* modern template to quickly create similar documents wi
       - Autofill placeholder values if able to uniquely identify a record for placeholders associated with the same list.
 
 > [!NOTE]
+<<<<<<< Updated upstream
 > - Currently, only Microsoft Word documents (.docx extension) are supported for creating a template. Before uploading the document, ensure that the Word document doesn't have **Track changes** enabled or comments. If your document contains text placeholders for images, ensure that they are not text-wrapped. We do not support **Content Controls** in Word at the moment. If you want to create a template from a Word document with content controls, please remove them before creating a modern template.
 >- The template and the document are associated with one document library. To use the template in another document library, you will need to create the template again in that document library.
 >- The uploaded document that is used to create the modern template will be saved as a separate copy and placed in the /forms directory of the document library. The original file on the disk will be unaffected.
@@ -157,3 +176,11 @@ You can use a *published* modern template to quickly create similar documents wi
 
 
  
+=======
+>
+> - Currently, only Microsoft Word documents (.docx extension) are supported for creating a template. Before uploading the document, ensure that the Word document doesn't have **Track changes** enabled or comments. If your document contains text placeholders for images, ensure that they are not text-wrapped. We do not support **Content Controls** in Word at the moment. If you want to create a template from a Word document with content controls, please remove them before creating a modern template.
+> - The template and the document are associated with one document library. To use the template in another document library, you will need to create the template again in that document library.
+> - The uploaded document that is used to create the modern template will be saved as a separate copy and placed in the /forms directory of the document library. The original file on the disk will be unaffected.
+> - You can create placeholders for text only. Currently, images, smart art, tables, and bullet lists are not supported.
+> - Once a document is created from a template, it is not associated with the template.
+>>>>>>> Stashed changes
