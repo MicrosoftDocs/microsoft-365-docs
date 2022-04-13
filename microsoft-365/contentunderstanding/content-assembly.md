@@ -7,8 +7,8 @@ audience: admin
 ms.reviewer: anrasto, shrganguly
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-search.appverid: 
-ms.collection: 
+search.appverid:
+ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
@@ -28,23 +28,23 @@ With content assembly, you can use an existing document to create a *modern temp
 
 Follow these steps to create a modern template.
 
-1. From a Sharepoint document library, select **New** > **Create modern template**. 
- 
+1. From a Sharepoint document library, select **New** > **Create modern template**.
+
    ![Screenshot of document library with the Create modern template option highlighted.](../media/content-understanding/content-assembly-create-template-1.png)
 
-2. Choose an existing Word document that you want to use as a basis for creating a modern template, and then select **Open**. 
- 
+2. Choose an existing Word document that you want to use as a basis for creating a modern template, and then select **Open**.
+
    ![Screenshot of upload page where you select a document.](../media/content-understanding/content-assembly-create-template-2.png)
 
    > [!NOTE]
    > Currently, you can upload only Word documents (.docx extension) to create templates. Upload Word documents from your local storage or desktop.
 
 3. After you upload the document, the document is displayed in the template studio where you can convert the document to a template.
- 
+
    ![Screenshot of the document in the template viewer.](../media/content-understanding/content-assembly-create-template-3.png)
 
 4. At the upper-left corner of the template studio, select the name for the template. The default name is the name of the document used to create the template. If you want to rename the template, select the default name or the pencil icon next to the name, type the new name, and then select **Enter**.
- 
+
    ![Screenshot of the template viewer showing the name of the document to select to rename.](../media/content-understanding/content-assembly-create-template-3a.png)
 
 5. Create placeholders for all dynamic text in the document that users might want to change from one document to another. For example, you might want to create a placeholder for input such as company name, client name, address, phone number, or date.
@@ -62,7 +62,7 @@ Follow these steps to create a modern template.
    > [!NOTE]
    > You can create placeholders for text only. Images, smart art, tables, and bullet lists are currently not supported.   
 
-### Associate a placeholder by entering text or selecting a date 
+### Associate a placeholder by entering text or selecting a date
 
 On the **All placeholders** panel:
 
@@ -90,7 +90,7 @@ On the **All placeholders** panel:
 
    ![Screenshot of the Select a list for adding a source column page showing lists.](../media/content-understanding/content-assembly-create-template-7.png)
 
-4. On the **Select a source column from the existing list** page, select the column name you want to associate with the placeholder, and then select **Save**. 
+4. On the **Select a source column from the existing list** page, select the column name you want to associate with the placeholder, and then select **Save**.
 
    ![Screenshot of the Select a source column from the existing list page showing column names.](../media/content-understanding/content-assembly-create-template-8.png)
 
@@ -135,22 +135,22 @@ You can create as many placeholders as you think are necessary. When you're done
 
 If you need to edit an existing template or to delete or unpublish a template, follow these steps.
 
-1. From a Sharepoint document library, select **New** > **Edit New menu**. 
- 
+1. From a Sharepoint document library, select **New** > **Edit New menu**.
+
    ![Screenshot of document library with the Edit New menu option highlighted.](../media/content-understanding/content-assembly-edit-template-1.png)
 
 2. On the **Edit New menu** panel, in the **Modern templates** section, select the published or draft template you want to edit.
- 
+
    ![Screenshot of the Edit New menu panel showing the Modern templates section.](../media/content-understanding/content-assembly-edit-template-2.png)
 
 3. To edit a published template or a draft template:
 
-   - For **Published templates**, select **Edit** to open the template studio where you can edit the published template. You can also choose to delete or unpublish the template. 
- 
+   - For **Published templates**, select **Edit** to open the template studio where you can edit the published template. You can also choose to delete or unpublish the template.
+
       ![Screenshot of the Modern templates section showing the published templates.](../media/content-understanding/content-assembly-edit-published.png)
 
-   - For **Draft templates**, select **Edit** to open the template studio where you can edit the draft template. You can also choose to delete or publish the template.
- 
+   - For **Draft templates**, select **Edit** to open the template studio where you can edit the draft template. You can also choose to delete or publish the template.
+
       ![Screenshot of the Modern templates section showing the draft templates.](../media/content-understanding/content-assembly-edit-draft.png)
 
 ## Create a document from a modern template
@@ -158,7 +158,7 @@ If you need to edit an existing template or to delete or unpublish a template, f
 You can use a *published* modern template to quickly create similar documents without having to start from scratch. To create a document using a published template, follow these steps:
 
 1. From a Sharepoint document library, select **New**, and then select the modern template you want to use.
- 
+
    ![Screenshot of document library showing the modern template choices on the New menu.](../media/content-understanding/content-assembly-create-document-1.png)
 
 2. The template opens in the template studio.

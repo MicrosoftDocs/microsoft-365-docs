@@ -23,6 +23,7 @@ ms.technology: mde
 
 **Applies to:**
 
+- [Microsoft Defender for Endpoint Plan 1](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -94,7 +95,7 @@ Choose if to Generate an alert on the file block event and define the alerts set
 - Description
 - Recommended actions
 
-![Alert settings for file indicators.](images/indicators-generate-alert.png)
+:::image type="content" source="images/indicators-generate-alert.png" alt-text="The Alert settings for file indicators" lightbox="images/indicators-generate-alert.png":::
 
 > [!IMPORTANT]
 >

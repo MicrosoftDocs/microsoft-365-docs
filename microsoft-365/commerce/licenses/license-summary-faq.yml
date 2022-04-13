@@ -1,6 +1,6 @@
 ### YamlMime:FAQ
 metadata:
-  title: "Contracts Frequently Asked Questions"
+  title: "Contracts FAQ"
   author: cmcatee-MSFT
   ms.author: cmcatee
   manager: scotv
@@ -118,8 +118,8 @@ sections:
 
           If the Active SA Quantity is shown as zero, it means that the licenses under the set of licensing IDs used to generate the statement don’t have any valid or active Software Assurance coverage. 
 
-          **NOTE**
-          For Online Services licenses, the Active SA Quantity is always zero, because Online Services don’t have SAs associated with them. 
+          >[!NOTE]
+          >For Online Services licenses, the Active SA Quantity is always zero because Online Services don’t have SAs associated with them. 
 
       - question: |
           Does the License Summary include Original Equipment Manufacturer (OEM) or retail license information?
