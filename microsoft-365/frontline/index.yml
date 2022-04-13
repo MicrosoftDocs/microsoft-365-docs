@@ -1,13 +1,13 @@
 ### YamlMime:Hub
 
 title: Microsoft 365 for frontline workers # < 60 chars
-summary: xxxx. # < 160 chars
+summary: Microsoft 365 for frontline workers provides simple, intuitive, and secure solutions you can deploy to support the frontline workers who are essential to your business. # < 160 chars
 # brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-apps | power-automate | power-bi | power-platform | power-virtual-agents | sql | sql-server | vs | visual-studio | windows | xamarin
 brand: m365
 
 metadata:
   title: Microsoft 365 for frontline workers # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: xxxx. # Required; article description that is displayed in search results. < 160 chars.
+  description: Deploy and manage simple, intuitive, and secure solutions for your essential frontline workers with Microsoft 365 for frontline workers. # Required; article description that is displayed in search results. < 160 chars.
   ms.service: microsoft-365-frontline #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: hub-page # Required
   author: samanro #Required; your GitHub user alias, with correct capitalization.
@@ -18,7 +18,6 @@ metadata:
 
 # productDirectory section (optional)
 productDirectory:
-  title: # < 60 chars (optional)
   items:
     # Card
     - title: What is Microsoft 365 for frontline workers?
