@@ -26,11 +26,11 @@ After you create a data connector to import non-Microsoft data to Microsoft 365,
 
 ## Before you view admin logs
 
-- Auditing must be enabled for your organization to generate and view admin log for your organization. Aduting is enabled by default in Microsoft 365. However, we recommend that you verify auditing status of your organization. For instructions, see [Verify the auditing status for your organization](turn-audit-log-search-on-or-off.md#verify-the-auditing-status-for-your-organization). If you need to enable enable audting for your organization, see [Turn on auditing](turn-audit-log-search-on-or-off.md#turn-on-auditing).
+- Auditing must be enabled for your organization to generate and view admin log for your organization. Auditing is enabled by default in Microsoft 365. However, we recommend that you verify auditing status of your organization. For instructions, see [Verify the auditing status for your organization](turn-audit-log-search-on-or-off.md#verify-the-auditing-status-for-your-organization). If you need to enable auditing for your organization, see [Turn on auditing](turn-audit-log-search-on-or-off.md#turn-on-auditing).
 
 - After auditing is turned on, it could take up to 48 hours to generate admin logs for data connectors. We recommend that you enable auditing before you create data connectors.
 
-- After a data connector is created, it can take up to 72 hours to generate admin logs that contains import status summary.
+- After a data connector is created, it can take up to 72 hours to generate admin logs that contain import status summary.
 
 - Admin logs are available for the previous seven days.
 
@@ -46,25 +46,25 @@ After you create a data connector to import non-Microsoft data to Microsoft 365,
 
 4. View the following import status information in the admin log:
 
-    - **Import completion time**: timestamp *(in UTC)* when connector completes import from data source and all the below events are computed/updated against the import.
+    - **Import completion time**: The timestamp (in UTC) when the connector completed importing data from the data source. The other properties in the admin log contain information about the import that was completed.
 
-    - **Items available from source**: count of items that were downloaded by Connector from data source
+    - **Items available from source**: The count of items from the data source that were imported to Microsoft 365 by the data connector.
 
     - **Items available for import**: The count of items that were available for import by the connector. This count includes the sum of items imported successfully, items partially imported, skipped items, and failed items.
 
-    - **Items imported successfully**: count of items that were imported successfully by Connector into user mailboxes after fanout
+    - **Items imported successfully**: The count of items that were successfully imported to user mailboxes.
 
-    - **Items partially imported**: count of items that were imported successfully by Connector into user mailboxes after fanout but had attachments dropped
+    - **Items partially imported**: The count of items that were successfully imported to user mailboxes but that had attachments that were dropped.
 
-    - **Items skipped**: count of items that were skipped from being imported into user mailboxes after fanout due to it being duplicate items
+    - **Items skipped**: The count of items that were skipped from being imported to user mailboxes due to items being duplicate items.
 
-    - **Items failed**: count of items that failed to be imported into user mailboxes after fanout due to it errors (like user mapping, item size exceeded etc.) &lt;*event is logged once per user for user mapping failures&gt;*
+    - **Items failed**: The count of items that failed to be imported to user mailboxes after due to it errors (for example user mapping errors and item size exceeded errors). Events for user mapping errors are logged once per user.
 
-    - A summary of the **Failed Item Details**:
+    - **Failed Item Details**: Includes the following summary:
 
         - **Item Id**: A unique identifier of the item.
 
-        - **Source User ID**: The user Id at source application. For example, the users Slack Id.
+        - **Source User ID**: The user Id in the source application; for example, the user's Slack Id.
 
         - **M365 User ID**: The user's user principal name in Microsoft 365.
 
