@@ -24,7 +24,7 @@ This is a comprehensive guide for you to create a new package and test it on Tes
 
 Learn more ([link](testapplication.md)) on how to create a package with Binaries (i.e., exe or msi).
 
-## Test an Intune app on Test Base
+## Test your Intune app on Test Base
 
 Learn more ([link](testintuneapplication.md)) on how to create a package with an Intunewin app.
 ## Upload your Test Base package (Zip)
