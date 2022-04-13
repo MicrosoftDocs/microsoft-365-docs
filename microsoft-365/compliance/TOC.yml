@@ -10,9 +10,9 @@
       href: compliance-easy-trials-compliance-manager-assessments.md
 - name: Get started
   items: 
-    - name: Quick tasks to get started with compliance
+    - name: Quick tasks to get started with Microsoft Purview
       href: compliance-quick-tasks.md
-    - name: Microsoft 365 solution catalog
+    - name: Microsoft Purview solution catalog
       href: microsoft-365-solution-catalog.md
     - name: Microsoft Purview compliance portal
       href: microsoft-365-compliance-center.md
