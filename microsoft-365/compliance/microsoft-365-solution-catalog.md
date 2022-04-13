@@ -22,7 +22,7 @@ Are you looking for a way to quickly get started with compliance tasks in Micros
 
 Compliance solutions in Microsoft 365 are collections of integrated capabilities you can use to help you manage end-to-end compliance scenarios. A solution's capabilities and tools might include a combination of policies, alerts, reports, and more.
 
-Read this article to get acquainted with the new solution catalog in the Microsoft Purview compliance portal, [how to get it](#how-do-i-get-this), [frequently asked questions](#frequently-asked-questions), and your [next steps](#next-steps).
+Read this article to get acquainted with the new solution catalog in the Microsoft Purview compliance portal, [how to get it](#how-do-i-get-this) and your [next steps](#next-steps).
 
 ## Catalog organization
 
