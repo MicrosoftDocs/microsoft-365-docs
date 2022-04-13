@@ -116,7 +116,7 @@ Alternatively, use the instructions provided at [Workaround for a known issue wi
 - On machines that have been upgraded from the previous, MMA-based solution and the EDR sensor is a (preview) version older than 10.8047.22439.1056, uninstalling and reverting back to the MMA-based solution may lead to crashes. If you are on such a preview version, please update using KB5005292.
 - To deploy and onboard the new solution using Microsoft Endpoint Manager, this currently requires creating a package. For more information on how to deploy programs and scripts in Configuration Manager, see [Packages and programs in Configuration Manager](/configmgr/apps/deploy-use/packages-and-programs). MECM 2107 with the hotfix rollup or later is required to support policy configuration management using the Endpoint Protection node.
 
-# Workaround for a known issue with TelemetryProxyServer on disconnected machines**
+## Workaround for a known issue with TelemetryProxyServer on disconnected machines
 
 Problem description:
 When using the TelemetryProxyServer setting to specify a proxy to be used by the EDR component of Microsoft Defender for Endpoint, on machines that have no other way to access the Certificate Revocation List (CRL) URL, a missing intermediate certificate will cause the EDR sensor to not successfully connect to the cloud service.
