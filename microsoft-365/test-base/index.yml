@@ -49,7 +49,7 @@ landingContent:
                     url: testoverview.md
                   - text: Test Binaries package on Test Base
                     url: testapplication.md
-                  - text: Test an Intune app on Test Base
+                  - text: Test your Intune app on Test Base
                     url: testintuneapplication.md
                   - text: Upload your Test Base package (Zip) 
                     url: uploadApplication.md
