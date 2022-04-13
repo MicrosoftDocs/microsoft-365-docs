@@ -29,7 +29,7 @@ From a [licensing perspective](#licensing-requirements), there can be considerab
 
 Use the following graphic to help you identify the main configurable components for these solutions that each have their own configuration area in the Microsoft Purview compliance portal:
 
-![Main components to manage for Microsoft Purview Information Goevernance.](../media/information-governance-components.png)
+![Main components to configure and use to govern your data with Microsoft Purview.](../media/govern-your-data.png)
 
 Looking to protect your data? See [Protect your data with Microsoft Purview](information-protection.md).
 
