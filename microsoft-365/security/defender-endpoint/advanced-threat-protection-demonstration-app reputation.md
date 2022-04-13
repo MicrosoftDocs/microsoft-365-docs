@@ -26,22 +26,30 @@ Test how Microsoft Defender SmartScreen helps you identify phishing and malware 
 
 - Windows 10
 - Internet Explorer or Edge browser required
-- To turn ON/OFF go to Settings -> Update & Security -> Windows Security -> Open Windows Security -> App & browser control > Check apps and files
+- To turn ON/OFF go to **Settings** > **Update & Security** > **Windows Security** > **Open Windows Security** > **App & browser control** > **Check apps and files**
 
 ## Scenario Demos
 
-### Known Good Program
+### Known good program
 
-This program should run (link)
+This program has a good reputation; the download should run uninterrupted.
 
-### Unknown Program
+[Known good program download](https://demo.smartscreen.msft.net/download/known/freevideo.exe)
 
-SmartScreen should show a warning before running
+:::image type="content" source="images/atp-smartscreen-app-reputation-known-good.png" alt-text="Security for attack surface reduction rule":::
 
-### Known Malware
+### Unknown program
 
-SmartScreen should block this program from running
+Because the program download does not have sufficient reputation to ensure that it is trustworthy, SmartScreen will show a warning before running the program download.
+
+[Unknown program](https://demo.smartscreen.msft.net/download/unknown/freevideo.exe)
+
+### Known malware
+
+This download is known malware; SmartScreen should block this program from running.
+
+[Known malware](https://demo.smartscreen.msft.net/download/known/knownmalicious.exe)
 
 ## Learn more
 
-Microsoft Defender SmartScreen Documentation (https://docs.microsoft.com/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview)
+[Microsoft Defender SmartScreen Documentation](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview)

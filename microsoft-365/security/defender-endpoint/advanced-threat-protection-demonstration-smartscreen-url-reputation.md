@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender Advanced Threat Protection Microsoft Defender SmartScreen URL reputation demonstration
+title: Microsoft Defender Advanced Threat Protection Microsoft Defender SmartScreen URL reputation demonstrations
 description: 
 keywords: Microsoft Defender Advanced Threat Protection, Microsoft Defender ATP, website phishing protection, website malware protection, URL reputation, demonstration, 
 search.product: eADQiWindows 10XVcnh
@@ -18,7 +18,7 @@ ms.topic: article
 ms.technology: mde
 ---
 
-# SmartScreen URL reputation demonstration
+# SmartScreen URL reputation demonstrations
 
 Test how Microsoft Defender SmartScreen helps you identify phishing and malware websites based on URL reputation.
 Scenario requirements and setup
@@ -27,33 +27,51 @@ Scenario requirements and setup
 - Internet Explorer or Edge browser required
 - To turn ON/OFF go to Settings -> Update & Security -> Windows Security -> Open Windows Security -> App & browser control >
 
-## SmartScreen for Microsoft Edge
+## SmartScreen for Microsoft Edge URL scenario demos
 
-### Scenario Demos
+### Is This Phishing?
 
-#### Is This Phishing?
+Alerts the user to a suspicious page and ask for feedback.
 
-Alert the user to a suspicious page and ask for feedback
+[Is this Phishing?](https://demo.smartscreen.msft.net/other/areyousure.html)
 
-#### Phishing Page
+:::image type="content" source="images/atp-smartscreen-url-reputation-is-this-phishing.png" alt-text="Security for attack surface reduction rule":::
 
-A page known for phishing that should be blocked
+### Phishing Page
 
-#### Malware Page
+A page known for phishing that should be blocked.
 
-A page that hosts malware and should be blocked
+[A known Phishing page](https://demo.smartscreen.msft.net/phishingdemo.html)
 
-#### Blocked Download
+:::image type="content" source="images/atp-smartscreen-url-reputation-this-is-phishing.png" alt-text="Security for attack surface reduction rule":::
+
+### Malware Page
+
+A page that hosts malware and should be blocked.
+
+[A known malware page](https://demo.smartscreen.msft.net/other/malware.html)
+
+:::image type="content" source="images/atp-smartscreen-url-reputation-malware-page.png" alt-text="Security for attack surface reduction rule":::
+
+### Blocked Download
 
 Blocked from downloading because of its URL reputation
 
-#### Exploit Page
+[Download blocked due to URL reputation](https://demo.smartscreen.msft.net/download/malwaredemo/freevideo.exe)
+
+### Exploit Page
 
 A page that attacks a browser vulnerability
 
-#### Malvertising
+[Known browser exploit page](https://demo.smartscreen.msft.net/other/exploit.html)
+
+### Malvertising
 
 A benign page hosting a malicious advertisement
+
+[A page known to contain malicious advertisements](https://demo.smartscreen.msft.net/other/exploit_frame.html)
+
+:::image type="content" source="images/atp-smartscreen-url-reputation-malvertising.png" alt-text="Security for attack surface reduction rule":::
 
 ## Learn more
 
