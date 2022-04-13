@@ -21,14 +21,14 @@ f1.keywords: NOCSH
 Base package upload instruction, please refer to this [doc](https://microsoft.sharepoint.com/:w:/t/AzureSUVPCoreTeam/EeHQIT3qA0FKqBDWI5TzmzgBiH2Syz39o5VbY2kdugMn4A?e=Rk1KD9).
 
 ## Intunewin Upload Flow
-As an effort to further enable commercial utilization, Test Base started to support intunewin format for IT Pros who manages apps for their apps within Intune as the standard onboarding package format. The intunewin upload flow provides the experience for IT Pros to reuse their intunewin format packages which contains the apps they deployed to their end devices via MEM/Intune to onboarding their apps and test configurations quickly to Test Base. 
+As an effort to further enable commercial utilization, Test Base started to support intunewin format for IT Pros who manages apps for their apps within Intune as the standard onboarding package format. The intunewin upload flow provides the experience for IT Pros to reuse their intunewin format packages, which contains the apps they deployed to their end devices via MEM/Intune to onboarding their apps and test configurations quickly to Test Base. 
 
 **Prerequisites**
   - Currently Test Base support synchronizing via the same subscription between Intune account and Test Base account (you don’t have to have an Intune account to upload your intunewin package however if you’d like to synchronize the Intune configuration for the intunewin file’s corresponding apps from Intune, you will need to make sure your Intune account is created under the same subscription as your Test Base account)
   - Intunewin packages to be uploaded 
 
 **Intunwin file Upload Flow (synchronized with Intune account)** <br/>
-As an Intune customer who has an Intune package which has been already onboarded to Intune portal. Customer can onboard the intunewin package (containing an app with/without dependencies of pre-install apps managed in Intune) to Test Base service. (via Intune account which has proper permission to sync the Intune app info)
+As an Intune customer who has an Intune package, which has been already onboarded to Intune portal. Customer can onboard the intunewin package (containing an app with/without dependencies of pre-install apps managed in Intune) to Test Base service. (via Intune account, which has proper permission to sync the Intune app info)
 
 **Prep Step**
 1. Login with your Test Base account
@@ -61,7 +61,7 @@ As an Intune customer who has an Intune package which has been already onboarded
 **Step 4: Test Matrix**
 1. Check the default selections present in the OS list for the corresponding test types.
 Test base supports selecting multiple Windows cumulative update **from Windows 10 1909 except Windows 10 2004**, however Intune Win app would be assigned with a version from versions equal to or higher than **Windows 10 1607**.
-OS list will be default to include all OSes supported by Test base which are higher than the minimum OS specified for the Intune Win app.
+OS list will be default to include all OSes supported by Test base, which are higher than the minimum OS specified for the Intune Win app.
 2. Users are allowed to modify the OS selection as need.
 
 
@@ -70,7 +70,7 @@ Review the configuration after which the package could be published.<br/><br/>
 
 
 **Intunwin file Upload Flow (unable to synchronize with Intune account)** <br/>
-As a Test Base customer who has an standalone intunewin package. Customer can onboard the intunewin package (containing an app with/without dependencies of pre-install apps managed in Intune) without needing to get permission granted against Intune account to finish the onboarding process.
+As a Test Base customer who has a standalone intunewin package. Customer can onboard the intunewin package (containing an app with/without dependencies of pre-install apps managed in Intune) without needing to get permission granted against Intune account to finish the onboarding process.
 
 **Prep Step**
 1. Login with your Test Base account
