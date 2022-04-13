@@ -171,6 +171,8 @@
              href: create-groups/restore-deleted-group.md
            - name: Manage guest access to groups
              href: create-groups/manage-guest-access-in-groups.md
+           - name: Manage ownerless groups and teams
+             href: create-groups/ownerless-groups-teams.md
         - name: Passwords 
           items:
            - name: Reset passwords
