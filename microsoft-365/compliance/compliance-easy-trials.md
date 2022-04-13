@@ -1,5 +1,5 @@
 ---
-title: "About the Microsoft 365 compliance trial"
+title: "About the Microsoft Purview solutions trial"
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -13,22 +13,22 @@ ms.localizationpriority: high
 search.appverid: 
 - MOE150
 - MET150
-description: "About the compliance solutions trials."
+description: "Learn how to sign up for the Microsoft Purview solutions trial."
 ---
 
-# About the compliance solutions trial
+# About the Microsoft Purview solutions trial
 
-Microsoft compliance solutions help protect your organization from internal threats rising from inappropriate permissions on files and emails, and helps your organization to comply with regulatory and policy requirements.
+Microsoft Purview solutions help protect your organization from internal threats rising from inappropriate permissions on files and emails, and helps your organization to comply with regulatory and policy requirements.
 
-The Microsoft 365 compliance solutions trial is the easiest way to try all the capabilities of Microsoft compliance solutions, and setting it up only takes a couple of minutes. After the trial setup is complete, all features of the Microsoft E5 license package are available for you to use for up to 90 days.
+The Microsoft Purview solutions trial is the easiest way to try all the capabilities of Microsoft Purview solutions, and setting it up only takes a couple of minutes. After the trial setup is complete, all features of the Microsoft E5 license package are available for you to use for up to 90 days.
 
 ## Terms and conditions
 
-See the [terms and conditions](terms-conditions.md) for Microsoft 365 compliance trials.
+See the [terms and conditions](terms-conditions.md) for Microsoft Purview trials.
 
 ## Eligibility
 
-Microsoft 365 E3 and Office 365 E3 customers who don't already have a Microsoft E5 license package are eligible for the Purview solutions trial. The trial is not available for Microsoft 365 Government customers.
+Microsoft 365 E3 and Office 365 E3 customers who don't already have a Microsoft E5 license package are eligible for the Purview solutions trial. The trial isn't available for Microsoft 365 Government customers.
 
 ## Required roles for starting the trial
 
@@ -39,7 +39,7 @@ Users must hold one of the following admin roles in order to sign up for or end 
 
 Get details on roles at [About admin roles](../admin/add-users/about-admin-roles.md).
 
-## How to set up the trial
+## How to sign up for the trial
 
 You can sign up for a trial following these steps:
 
