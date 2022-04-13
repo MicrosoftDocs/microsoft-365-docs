@@ -40,15 +40,33 @@ Shared device mode isn't a good choice in these situations:
 - If the user experience needs to be different for different users on the device
 - If the set of applications each user needs differs greatly
 
-## Register new devices in shared device mode
+## Register new devices using the Windows Autopilot Self-deploying mode profile in Microsoft Managed Desktop
 
-Starting in 2203, whether you or a partner are handling device enrollment, you can choose to use the [Windows Autopilot self-deploying mode](/mem/autopilot/self-deploying) profile in Microsoft Managed Desktop.
+Starting in 2203, whether you or a partner are handling device registration, you can choose to use the [Windows Autopilot self-deploying mode](/mem/autopilot/self-deploying) profile in Microsoft Managed Desktop.
 
-If you're enrolling devices yourself, you must import new devices into the Windows Autopilot Devices blade.
+### Before you begin
+
+Review the Windows Autopilot self-deploying mode requirements:
+
+> [!IMPORTANT]
+> You cannot automatically re-enroll a device through Autopilot after an initial deployment in self-deploying mode. Instead, delete the device record in the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431). From the admin center, choose **Devices** &gt; **All devices** &gt; choose the devices you want to delete &gt; **Delete**.  For more information, see [Updates to the Windows Autopilot sign-in and deployment experience](https://techcommunity.microsoft.com/t5/intune-customer-success/updates-to-the-windows-autopilot-sign-in-and-deployment/ba-p/2848452).
+
+#### Trusted Platform Module
+
+Self-deploying mode uses a device's TPM 2.0 hardware to authenticate the device into an organization's Azure AD tenant. Therefore, devices without TPM 2.0 can't be used with this mode. Devices must also support TPM device attestation. All new Windows devices should meet these requirements. The TPM attestation process also requires access to a set of HTTPS URLs that are unique for each TPM provider. For more information, see the entry for Autopilot self-Deploying mode and Autopilot pre-provisioning in [Networking requirements](networking-requirements.md#tpm). For Windows Autopilot software requirements, see [Windows Autopilot software requirements](./software-requirements.md).
+
+> [!TIP]
+> If you attempt a self-deploying mode deployment on a device that does not have support TPM 2.0 or on a virtual machine, the process will fail when verifying the device with an 0x800705B4 timeout error (Hyper-V virtual TPMs are not supported). Also note that Windows 10, version 1903 or later is required to use self-deploying mode due to issues with TPM device attestation in Windows 10, version 1809. Since Windows 10 Enterprise 2019 LTSC is based on Windows 10 version 1809, self-deploying mode is also not supported on Windows 10 Enterprise 2019 LTSC.
+>
+> See [Windows Autopilot known issues](known-issues.md) and [Troubleshoot Autopilot device import and enrollment](troubleshoot-device-enrollment.md) to review other known errors and solutions.
+
+### Steps to register devices to use Windows Autopilot self-deploying mode profile
+
+If you're registering devices yourself, you must import new devices into the Windows Autopilot Devices blade.
 
 **To import new devices into the Windows Autopilot Devices blade:**
 
-1. Collect the [hardware hash](../get-started/manual-registration.md#obtain-the-hardware-hash) for the new devices you want to assign the Windows Autopilot Self-deployment mode profile to.
+1. Collect the [hardware hash](../get-started/manual-registration.md#obtain-the-hardware-hash) for new devices you want to assign the Windows Autopilot Self-deployment mode profile to.
 2. Go to the [Microsoft Endpoint Manager portal](https://endpoint.microsoft.com).
 2. Select **Devices** from the left navigation menu.
 3. In the **By platform** section, select **Windows**. Then, select **Windows Enrollment**.
