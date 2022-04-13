@@ -1,6 +1,6 @@
 ---
-title: 'Test your application on Test Base'
-description: How to test your application
+title: 'Test Binaries package on Test Base'
+description: How to test Binaries package on Test Base
 search.appverid: MET150
 author: Tinacyt
 ms.author: tinachen
