@@ -155,11 +155,20 @@ If your organization has a subscription that supports Advanced Audit, perform th
 
 2. Enable Advanced Audit events to be logged when users perform searches in Exchange Online and SharePoint Online.
 
-3. Set up audit log retention policies. In additional to the default policy that retains Exchange, SharePoint, and Azure AD audit records for one year, you can create additional audit log retention policies to meet the requirements of your organization's security operations, IT, and compliance teams.
+3. Set up audit log retention policies. In addition to the default policy that retains Exchange, SharePoint, and Azure AD audit records for one year, you can create additional audit log retention policies to meet the requirements of your organization's security operations, IT, and compliance teams.
 
 4. Search for crucial Advanced Audit events and other activities when conducting forensic investigations. After completing step 1 and step 2, you can search the audit log for Advanced Audit events and other activities during forensic investigations of compromised accounts and other types of security or compliance investigations.
 
 For more detailed instructions, see [Set up Advanced Audit](set-up-advanced-audit.md).
+
+## Encrypt audit records
+
+You can enable Customer Key encryption for audit records. Auditing builds on the [Service encryption with Customer Key](customer-key-overview.md) to encrypt sensitive information in your organization's auditing data. Implementing Customer Key provides extra protection by preventing unauthorized systems or Microsoft data center personnel from viewing your auditing data in the auditing pipeline and at rest. Using Customer Key to encrypt your auditing data also helps you meet regulatory or compliance obligations because your organization provides and controls the encryption keys.
+
+To implement Customer Key for auditing, you have to create a multi-workload Data Encryption Policy (DEP), which defines the encryption hierarchy. For detailed step-by-step instructions, see [Set up Customer Key](customer-key-set-up.md).
+
+> [!NOTE]
+> Not all audit records in your organization are encrypted. The Microsoft 365 service that generates specific audit records for activity in that service defines whether the audit record is encrypted or not. Therefore, some audit records are not encrypted and are accessible for viewing by Microsoft data center personnel because the service that generates the audit record has determined it doesn't contain sensitive information that needs to be encrypted.
 
 ## Training
 
