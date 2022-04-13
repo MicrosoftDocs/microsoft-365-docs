@@ -43,7 +43,7 @@ In the [Azure portal](http://portal.azure.com/), go to the Test Base account in 
   <br/>
   
 **Step 2. Configure test**
-1. Select the **Type of test**. There’re 2 test types supported:<br/>
+1. Select the **Type of test**. There’re two test types supported:<br/>
   An **Out of Box (OOB) test** performs an install, launch, close, and uninstall of your package. After the install, the launch-close routine is repeated 30 times before a single uninstall is run. The OOB test provides you with standardized telemetry on your package to compare across Windows builds.<br/>
   A **Functional test** would execute your uploaded test script(s) on your package. The scripts are run in the sequence you specified and a failure in a particular script will stop subsequent scripts from executing. 
 
@@ -51,7 +51,7 @@ In the [Azure portal](http://portal.azure.com/), go to the Test Base account in 
 
   ![Out of Box test is optional](Media/testapplication07.png)
   
-2. Once all required info is filled out, you can move to step 3 by clicking the Next button at the bottom. A notification will pop-up when the test scripts are generated successfully.<br/>
+2. Once all required info is filled out, you can move to step 3 by clicking the Next button at the bottom. A notification will pop up when the test scripts are generated successfully.<br/>
   ![Generate script prompts](Media/testapplication08.png)
   <br/>
 
@@ -89,7 +89,7 @@ In the [Azure portal](http://portal.azure.com/), go to the Test Base account in 
 
 
 **Step 4. Test matrix**
-1. In the Test matrix tab, select the **OS update type**. There’re 2 OS update types supported
+1. In the Test matrix tab, select the **OS update type**. There’re two OS update types supported
   -	The **Security updates** enable your package to be tested against incremental churns of Windows pre-release monthly security updates.
   -	The **Feature updates** enable your package to be tested against Windows pre-release bi-annual feature updates builds from the Windows Insider Program.
   
@@ -107,19 +107,19 @@ In the [Azure portal](http://portal.azure.com/), go to the Test Base account in 
   <br/>
 
 **Step 5. Review + publish**
-1. can review all the information of your draft package and you are able to back to early steps to make changes if needed. 
+1. can review all the information of your draft package and you're able to back to early steps to make changes if needed. 
   ![Review package](Media/testapplication15.png)
 2. You can also check the notification box to receive the email notification of your package for the validation run completion notice.
   ![Notification](Media/testapplication16.png)
 3. Once you make sure all info is correct, you can proceed to upload your package to Test Base by clicking the **‘Publish’** button. A notification will pop up when the package has been published successfully.
   ![Package publish prompts](Media/testapplication17.png)
-4. You will be redirected to the **Manage Packages** page to check the progress of your newly uploaded package. 
+4. You'll be redirected to the **Manage Packages** page to check the progress of your newly uploaded package. 
   ![Manage packages](Media/testapplication18.png)
   <br/>
   
 **Continue package creation** 
 
-On New package page, there is a list of saved draft packages if have. You can continue your edit directly to the step you paused last time by clicking the ‘edit’ icon. 
+On New package page, there's a list of saved draft packages if have. You can continue your edit directly to the step you paused last time by clicking the ‘edit’ icon. 
 
 > [!NOTE] The dashboard only shows the working in progress package. For the published package, you can check the Manage Package page.
 
@@ -136,7 +136,7 @@ If you have a Zip file already, you can switch back to the legacy package upload
   
   
 **Intunewin Upload Flow** <br/>
-As part of commercial roadmap, Test Base started to support intunewin format for IT Pros who manages apps for their apps within Intune as the standard onboarding package format. The intunewin upload flow provides the experience for IT Pros to reuse their intunewin format packages which contains the apps they deployed to their end devices via MEM/Intune to onboarding their apps and test configurations quickly to Test Base.
+As part of commercial roadmap, Test Base started to support intunewin format for IT Pros who manages apps for their apps within Intune as the standard onboarding package format. The intunewin upload flow provides the experience for IT Pros to reuse their intunewin format packages, which contains the apps they deployed to their end devices via MEM/Intune to onboarding their apps and test configurations quickly to Test Base.
 <br/>
 
 [Test your Intune app on Test Base](testintuneapplication.md)
