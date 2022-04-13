@@ -41,18 +41,8 @@ landingContent:
         links:
           - text: Create Test Base Account
             url: createAccount.md
-          - title: Test your application on Test Base
-            linkLists:
-              - linkListType: quickstart
-                links:
-                  - text: Overview
-                    url: testoverview.md
-                  - text: Test Binaries package on Test Base
-                    url: testapplication.md
-                  - text: Test your Intune app on Test Base
-                    url: testintuneapplication.md
-                  - text: Upload your Test Base package (Zip) 
-                    url: uploadApplication.md
+          - text: Test your application on Test Base
+            url: testoverview.md
           - text: Build a Package
             url: buildpackage.md
           - text: Upload your binaries
