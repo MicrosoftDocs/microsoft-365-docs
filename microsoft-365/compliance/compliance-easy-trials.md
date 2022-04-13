@@ -26,37 +26,54 @@ The Microsoft 365 compliance solutions trial is the easiest way to try all the c
 
 See the [terms and conditions](terms-conditions.md) for Microsoft 365 compliance trials.
 
-## Set up a compliance trial
+## Eligibility
 
-You can sign up for a trial in the [Microsoft 365 compliance center](https://go.microsoft.com/fwlink/p/?linkid=2077149) using the **Trials** link in the left navigation pane.
+Microsoft 365 E3 and Office 365 E3 customers who don't already have a Microsoft E5 license package are eligible for the Purview solutions trial. The trial is not available for Microsoft 365 Government customers.
 
-## Licensing
+## Required roles for starting the trial
 
-As part of the trial setup, the Microsoft E5 compliance licenses are automatically applied to your organization. The licenses are active for 90 days.
+Users must hold one of the following admin roles in order to sign up for or end a trial:
+- Billing Administrator
+- Compliance Administrator
+- Global Administrator
 
-## Permissions
+Get details on roles at [About admin roles](../admin/add-users/about-admin-roles.md).
 
-To start or end the trial, you need to be a member of the Global Administrator or Security Administrator roles in Azure Active Directory. For details, see [About admin roles](../admin/add-users/about-admin-roles.md).
+## How to set up the trial
 
-## Additional information
+You can sign up for a trial following these steps:
 
-After you enroll in the trial, it might take up to 2 hours for the changes and updates to be available. And, admins must sign out and sign back in to see the changes.
+1. In the [Microsoft Purview compliance portal](https://go.microsoft.com/fwlink/p/?linkid=2077149), select **Trials** on the left navigation to get to the Microsoft 365 trials hub.
+2. Under **Compliance trials**, find the **Microsoft Purview solutions** card and select **Try now**.
+3. On the **Microsoft Purview solutions trial** flyout pane, review the information about what's included and what to expect when you start the trial, then select **Start trial.**
 
-You can extend the trial within the last 15 days of the trial period. You are limited to a maximum of two trial periods. If you do not extend by the time your trial period ends, you must wait at least 30 days before signing up for a second trial.
+Your trial will be effective immediately for 90 days. It can take up to two hours for all Purview solutions to appear in your left navigation. Sign out and sign back in to see the updates.
 
-## Ending the trial
+## Licensing, getting started, and ending the trial
 
-Admins can disable the trial at any point by going to the compliance card.
+#### Licensing
 
-If you decide not to enroll in a feature that is part of the compliance solutions trial, unless stated otherwise for the solution, your trial data will be maintained for a period of time, usually 180 days, before being permanently deleted. You may continue to access the data gathered during the trial until that time.
+As part of the trial setup, 300 Microsoft E5 compliance licenses are automatically applied to your organization. The licenses are active for 90 days.
 
-## Availability
+#### Getting started
 
-The Microsoft 365 compliance solutions trial is gradually rolling out to existing customers who meet specific criteria (including geography) who don't already have a Microsoft E5 license package.
+You can start using Purview solutions as soon as you see them in the Microsoft Purview compliance portal. Nothing is created automatically and users won't be affected. When you navigate to each solution, you may be guided to make additional setup configurations to start using features.
 
-## Learn more about compliance solutions
+Use our [trial playbook](compliance-easy-trials-compliance-playbook.md) to help you get started.
 
-Wondering what you can experience in your free trial? The compliance solutions trial includes the following solutions:
+#### Extending the trial
+
+You can extend the trial within the last 15 days of the trial period. You're limited to a maximum of two trial periods. If you don't extend by the time your trial period ends, you'll need to wait at least 30 days before signing up for a second trial.
+
+#### Ending the trial
+
+Admins can disable the trial at any point by going to the **Purview solutions trial** card compliance in the Microsoft 365 trials hub (see [How to set up the trial](#how-to-set-up-the-trial)).
+
+If you decide not to enroll in a feature that's part of the Purview solutions trial, unless stated otherwise for the solution, your trial data will be maintained for a period of time, usually 180 days, before being permanently deleted. You may continue to access the data gathered during the trial until that time.
+
+## Learn more about Purview solutions
+
+Wondering what you can experience in your free trial? The Purview solutions trial includes the following solutions:
 
 - **Audit**
 
