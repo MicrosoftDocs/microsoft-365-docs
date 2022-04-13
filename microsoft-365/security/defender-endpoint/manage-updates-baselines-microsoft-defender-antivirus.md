@@ -129,7 +129,7 @@ Security intelligence update version: 1.361.14.0 <br/>
 - Improved traffic output when SmartScreen service is unreachable 
 - Connectivity improvements for customers using proxies with authentication requirements
 - Fixed VDI device update bug for network FileShares 
-- EDR in block mode now supports granular device targetting with new CSPs. See [Endpoint detection and response (EDR) in block mode](edr-in-block-mode.md).
+- EDR in block mode now supports granular device targeting with new CSPs. See [Endpoint detection and response (EDR) in block mode](edr-in-block-mode.md).
 
 ### Known Issues
 
