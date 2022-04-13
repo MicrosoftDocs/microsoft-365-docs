@@ -34,7 +34,7 @@ As an Intune customer who has an Intune package which has been already onboarded
 1. Login with your Test Base account
 2. Prepare your intunewin package
 3. Start uploading by click on the “Create package with Intune App”  link as below
-![Create package with Intune App](Media/testintuneapplication01.png)
+![Start to build a package with Intune app](Media/testintuneapplication01.png)
 
 **Step 1: Define Content**
 1. Upload the intunewin package you choose
