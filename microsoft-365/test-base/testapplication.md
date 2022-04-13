@@ -16,7 +16,7 @@ ms.reviewer: Tinacyt
 f1.keywords: NOCSH
 ---
 
-# Test your application on Test Base
+# Test Binaries package on Test Base
 > [!NOTE] This guide will guide you to create a new Test Base package from scratch. If you already have a Test Base package (.zip) in hand, you can switch to use our legacy upload experience [Upload your Test Base package (Zip)](uploadApplication.md).
 
 ## Prerequisites
