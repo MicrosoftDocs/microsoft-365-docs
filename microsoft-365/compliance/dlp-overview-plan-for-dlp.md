@@ -157,7 +157,7 @@ Before you can monitor some DLP locations, there are prerequisites that must be 
 
 - [Get started with the data loss prevention on-premises scanner (preview)](dlp-on-premises-scanner-get-started.md#before-you-begin)
 - [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md#before-you-begin)
-- [Get started with the Microsoft compliance extension (preview)](dlp-chrome-get-started.md#before-you-begin)
+- [Get started with the Microsoft compliance extension](dlp-chrome-get-started.md#before-you-begin)
 - [Use data loss prevention policies for non-Microsoft cloud apps (preview)](dlp-use-policies-non-microsoft-cloud-apps.md#before-you-begin)
 
 #### Policy deployment

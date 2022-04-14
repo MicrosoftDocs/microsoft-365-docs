@@ -41,7 +41,7 @@ Before you get started, you should set up your DLP settings.
 
 ### Endpoint DLP Windows 10/11 and macOS settings
 
-|Setting |Windows 10, 1809 and later, Windows 11  |macOS Catalina 10.15 or later (preview)  |Notes  |
+|Setting |Windows 10, 1809 and later, Windows 11  |macOS Catalina 10.15 or later |Notes  |
 |---------|---------|---------|---------|
 |File path exclusions     |Supported         |Supported         |macOS includes a recommended list of exclusions that is on by default          |
 |Restricted apps     |Supported         |Supported         |         |
@@ -56,9 +56,9 @@ Before you get started, you should set up your DLP settings.
 
 ### Advanced classification scanning and protection
 
-Advanced classification scanning and protection allows the more advanced Microsoft 365 cloud based data classification service to scan items, classify them and return the results to the local machine. This means you can take advantage of classification techniques like [exact data match](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) classification, [named entities (preview)](named-entities-learn.md#learn-about-named-entities-preview), and [trainable classifiers](classifier-learn-about.md#learn-about-trainable-classifiers) in your DLP policies.
+Advanced classification scanning and protection allows the more advanced Microsoft 365 cloud based data classification service to scan items, classify them and return the results to the local machine. This means you can take advantage of classification techniques like [exact data match](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) classification, [named entities](named-entities-learn.md#learn-about-named-entities), and [trainable classifiers](classifier-learn-about.md#learn-about-trainable-classifiers) in your DLP policies.
 
-When advanced classification is turned on, content is sent from the local device to the cloud services for scanning and classification. If bandwidth utilization is a concern, you can set a limit on how much can be used in a rolling 24 hour period. The limit is configured in Endpoint DLP settings and is applied per device. If you set a bandwidth utilization limit and it's exceeded, DLP stops sending the user content to the cloud. At this point data classification continues locally on the device but classification using exact data match, named entities (preview), and trainable classifiers aren't available. When When the cumulative bandwidth utilization drops below the rolling 24 hour limit, communication with the cloud services will resume.
+When advanced classification is turned on, content is sent from the local device to the cloud services for scanning and classification. If bandwidth utilization is a concern, you can set a limit on how much can be used in a rolling 24 hour period. The limit is configured in Endpoint DLP settings and is applied per device. If you set a bandwidth utilization limit and it's exceeded, DLP stops sending the user content to the cloud. At this point data classification continues locally on the device but classification using exact data match, named entities, and trainable classifiers aren't available. When When the cumulative bandwidth utilization drops below the rolling 24 hour limit, communication with the cloud services will resume.
 
 If bandwidth utilization isn't a concern, you select **No limit** to allow unlimited bandwidth utilization.
 
@@ -98,7 +98,7 @@ You can use this logic to construct your exclusion paths for Windows 10 devices:
 
 - A mix of all the above. <br/>For example: `%SystemDrive%\Users\*\Documents\*(2)\Sub\`
 
-#### macOS devices (preview)
+#### macOS devices
 
 Similar to Windows 10 devices you can add your own exclusions for macOS devices.
 
@@ -122,7 +122,7 @@ For performance reasons, Endpoint DLP includes a list of recommended file path e
 
 #### Restricted apps
 
-**Restricted apps** (previously called **Unallowed apps**) is a list of applications that you create. You configure what actions DLP will take when a user uses an app on the list to ***access*** a DLP protected file on a device. It's available for Windows 10 and macOS devices (preview).
+**Restricted apps** (previously called **Unallowed apps**) is a list of applications that you create. You configure what actions DLP will take when a user uses an app on the list to ***access*** a DLP protected file on a device. It's available for Windows 10 and macOS devices.
 
 When **Access by restricted apps** is selected in a policy and a user uses an app that is on the restricted apps list to access a protected file, the activity will be `audited`, `blocked`, or `blocked with override` depending on how you configured it. That is unless the same app is a member of a **Restricted app group**, then the actions configured for activities in the **Restricted app group** override the actions configured for the access activity for the **Restricted apps** list. All activity is audited and available to review in activity explorer.
 
@@ -180,7 +180,7 @@ User A opens a DLP protected file using Notepad. DLP allows the access and audit
 
 If an app is not in **File activities for apps in restricted app groups (preview)** or is not in the **Restricted app activities** list or is in the **Restricted app activities** list with an action of `Audit only`, or 'Block with override`, any restrictions defined in the **File activities for all apps** are applied in the same rule.  
 
-#### macOS devices (preview)
+#### macOS devices
 
 Just like on Windows devices, you'll now be able to prevent macOS apps from accessing sensitive data by defining them in the **Restricted app activities** list. 
 
