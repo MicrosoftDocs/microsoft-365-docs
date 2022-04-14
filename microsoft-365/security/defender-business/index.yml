@@ -43,6 +43,8 @@ landingContent:
         links:
           - text: Get Defender for Business
             url: get-defender-business.md
+          - text: Add users and assign licenses
+            url: mdb-add-users.md
           - text: Use the setup wizard
             url: mdb-use-wizard.md
           - text: Navigate the portal
