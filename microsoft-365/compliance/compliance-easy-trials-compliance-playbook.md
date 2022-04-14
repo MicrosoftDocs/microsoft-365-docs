@@ -27,7 +27,7 @@ Trying each solution will help you make informed decisions to meet your organiza
 
 Features:
 
-- [Advanced Audit](#audit-premium)
+- [Audit (Premium)](#audit-premium)
 - [Communication Compliance](#communication-compliance)
 - [Compliance Manager](#compliance-manager)
 - [Microsoft Purview Data Loss Prevention](#data-loss-prevention)
