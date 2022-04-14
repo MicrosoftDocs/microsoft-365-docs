@@ -89,7 +89,7 @@ This role is assigned by default to the eDiscovery Manager role group on the **P
 
 Any rights-protected (RMS-protected) email messages included in the results of a Content search will be decrypted when you export them. Additionally, any file that's encrypted with a [Microsoft encryption technology](encryption.md) and is attached to an email message that's included in the search results will be decrypted when it's exported. This decryption capability is enabled by default for members of the eDiscovery Manager role group. This is because the RMS Decrypt management role is assigned to this role group by default. Keep the following things in mind when exporting encrypted email messages and attachments:
   
-- As previously explained, if you enable decryption of RMS-protected messages when you export them, you have to export the search results as individual messages. If you attempt to export search results to a PST file, RMS-protected messages will be exported as individual emails instead.
+- As previously explained, if you enable decryption of RMS-protected messages when you export them, you have to export the search results as individual messages. If you export search results to a PST file, RMS-protected messages will be exported as individual email messages.
 
 - Messages that are decrypted are identified in the **ResultsLog** report. This report contains a column named **Decode Status**, and a value of **Decoded** identifies the messages that were decrypted.
 
