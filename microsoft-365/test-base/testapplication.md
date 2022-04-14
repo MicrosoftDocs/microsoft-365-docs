@@ -163,7 +163,7 @@ In the [Azure portal](https://portal.azure.com/), go to the Test Base account in
   
 **Continue package creation** 
 
-On **New package** page, there's a list of saved draft packages if have. You can continue your edit directly to the step you paused last time by clicking the 'edit' icon. 
+On the **New package** page, you can see a list of all your previously saved draft packages. You can continue your edit directly to the step you paused last time by clicking the 'edit' icon. 
 
 > [!NOTE] 
 > The dashboard only shows the working in progress package. For the published package, you can check the Manage Package page.
