@@ -15,7 +15,7 @@
       items:
       - name: Get Defender for Business
         href: get-defender-business.md
-      - name: Add users
+      - name: Add users and assign licenses
         href: mdb-add-users.md
       - name: Visit the Microsoft 365 Defender portal
         href: mdb-get-started.md
