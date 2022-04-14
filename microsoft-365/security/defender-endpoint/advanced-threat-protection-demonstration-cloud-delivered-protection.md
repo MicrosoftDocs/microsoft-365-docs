@@ -26,7 +26,7 @@ Cloud-delivered protection for Microsoft Defender Antivirus, also referred to as
 
 - Windows 7, Windows 8.1 & Windows 10
 - Microsoft Defender Real-time protection is enabled
-- Cloud-delivered protection is enabled by default, however you may need to re-enable it if it has been disabled as part of previous organizational policies. See the [Enable cloud-delivered protection in Microsoft Defender AV](windows/threat-protection/windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus?ocid=wd-av-demo-cloud-middle) topic for more information.
+- Cloud-delivered protection is enabled by default, however you may need to re-enable it if it has been disabled as part of previous organizational policies. See the [Enable cloud-delivered protection in Microsoft Defender AV](/windows/threat-protection/windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus?ocid=wd-av-demo-cloud-middle) topic for more information.
 - You can also download and use the @@@[PowerShell script](https://www.powershellgallery.com/packages/WindowsDefender_InternalEvaluationSettings/) to enable this setting and others on Windows 10.
 
 ### Scenario

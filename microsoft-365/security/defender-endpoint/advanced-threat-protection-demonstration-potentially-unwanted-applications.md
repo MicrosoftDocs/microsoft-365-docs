@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender Advanced Threat Protection Potentially unwanted applications (PUA) demonstration
-description: 
+description: Demonstration to show how the Potentially Unwanted Applications (PUA) protection feature can identify and block PUAs from downloading and installing on endpoints.
 keywords: Microsoft Defender Advanced Threat Protection, Microsoft Defender ATP, potentially unwanted applications, (PUA), harmful application protection, 
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150

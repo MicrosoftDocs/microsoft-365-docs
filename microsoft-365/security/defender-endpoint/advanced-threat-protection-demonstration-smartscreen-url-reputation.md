@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender Advanced Threat Protection Microsoft Defender SmartScreen URL reputation demonstrations
-description: 
+description: Demonstrates how Microsoft Defender SmartScreen identifies phishing and malware websites based on URL reputation.
 keywords: Microsoft Defender Advanced Threat Protection, Microsoft Defender ATP, website phishing protection, website malware protection, URL reputation, demonstration, 
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -85,6 +85,6 @@ A benign page hosting a malicious advertisement
 
   :::image type="content" source="images/atp-smartscreen-url-reputation-malvertising.png" alt-text="Security for attack surface reduction rule":::
 
-## Learn more
+## See also
 
 [Microsoft Defender SmartScreen Documentation](/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview.md)

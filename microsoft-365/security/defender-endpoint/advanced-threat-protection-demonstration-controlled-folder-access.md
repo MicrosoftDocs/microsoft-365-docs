@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender Advanced Threat Protection Controlled folder access (CFA) demonstrations
-description: 
+description: Demonstrates how Controlled Folder Access protects valuable data from malicious apps and threats, such as ransomware.
 keywords: Microsoft Defender Advanced Threat Protection, Microsoft Defender ATP, Controlled folder access protection, 
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150

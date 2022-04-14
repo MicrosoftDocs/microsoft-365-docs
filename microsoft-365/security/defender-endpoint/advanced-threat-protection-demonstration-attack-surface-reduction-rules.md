@@ -153,10 +153,10 @@ Alternately, you can perform these manual steps:
 - Add-MpPreference -AttackSurfaceReductionRules_Ids 7674BA52-37EB-4A4F-A9A1-F0F9A1619A2C -AttackSurfaceReductionRules_Actions Disabled
 - Cleanup c:\demo encryption run the encrypt/decrypt file
 
-See also:
+## See also
 
-[Attack surface reduction rules deployment guide](attack-surface-reductioin-rules-deployment.md)
+[Attack surface reduction rules deployment guide](attack-surface-reduction-rules-deployment.md)
 
-[Attack surface reduction rules reference](attack-surface-reductioin-rules-reference.md)
+[Attack surface reduction rules reference](attack-surface-reduction-rules-reference.md)
 
 [Microsoft Defender Advanced Threat Protection (ATP) - demonstration scenarios](advanced-threat-protection-demonstrations.md)

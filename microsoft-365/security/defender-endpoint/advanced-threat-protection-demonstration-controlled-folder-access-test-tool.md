@@ -59,7 +59,7 @@ You can perform these manual steps instead:
 
 ## Clean-up
 
-Download and run this [cleanup script](@@). You can perform these manual steps instead:
+Download and run this [cleanup script]. You can perform these manual steps instead:
 
 - Set-MpPreference -EnableControlledFolderAccess Disabled
 
