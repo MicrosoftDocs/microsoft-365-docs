@@ -16,8 +16,18 @@
 ### [Microsoft Defender for Endpoint for US Government customers](gov.md)
 ### [Microsoft Defender for Endpoint on non-Windows platforms](non-windows.md)
 
-
 ## [Evaluate capabilities](evaluation-lab.md)
+### [Microsoft Defender Advanced Threat Protection demonstration scenarios](advanced-threat-protection-demonstrations.md)
+#### [Block at First Sight \(BAFS\) demonstration)](advanced-threat-protection-demonstration-block-at-first-sight-bafs.md)
+#### [Cloud-delivered protection demonstration](advanced-threat-protection-demonstration-cloud-delivered-protection.md)
+#### [Potentially unwanted applications \(PUA\) demonstration](advanced-threat-protection-demonstration-potentially-unwanted-applications.md)
+#### [Attack surface reduction rules demonstrations](advanced-threat-protection-demonstration-attack-surface-reduction-rules.md)
+#### [Controlled folder access \(CFA\) demonstration](advanced-threat-protection-demonstration-controlled-folder-access.md)
+#### [Controlled folder access \(CFA\) demonstration test tool](advanced-threat-protection-demonstration-controlled-folder-access-test-tool.md)
+#### [Exploit protection \(EP\) demonstrations](advanced-threat-protection-demonstration-exploit-protection.md)
+#### [Network protection demonstration](advanced-threat-protection-demonstration-network-protection.md)
+#### [Microsoft Defender SmartScreen app reputation demonstrations](advanced-threat-protection-demonstration-app-reputation.md)
+#### [Microsoft Defender SmartScreen URL reputation demonstrations](advanced-threat-protection-demonstration-smartscreen-url-reputation.md)
 
 ## [Plan deployment](deployment-strategy.md)
 
