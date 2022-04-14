@@ -14,7 +14,6 @@ search.appverid:
 - MOE150
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
 ms.custom: admindeeplinkDEFENDER
 ms.prod: m365-security
 ms.technology: m365d
@@ -68,11 +67,11 @@ The left navigation, or quick launch bar, will look familiar. However, there are
 
 With the unified Microsoft 365 Defender solution, you can stitch together the threat signals and determine the full scope and impact of the threat, and how it's currently impacting the organization.
 
-:::image type="content" source="../../media/M365-defender-converge-experience.png" alt-text="Image of Microsoft 365 Defender converged experience.":::
+:::image type="content" source="../../media/M365-defender-converge-experience.png" alt-text="The Microsoft 365 Defender converged experience" lightbox="../../media/M365-defender-converge-experience.png":::
 
 Defender for Office 365 safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools.
 
-:::image type="content" source="../../media/Defender-for-O365.png" alt-text="Image of Defender for Office 365.":::
+:::image type="content" source="../../media/Defender-for-O365.png" alt-text="The Defender for Office 365 portal" lightbox="../../media/Defender-for-O365.png":::
 
 ### Incidents and alerts
 
@@ -81,7 +80,7 @@ Brings together incident and alert management across your email, devices, and id
 - [Learn more about Investigations](incidents-overview.md)
 - [Learn more about managing alerts](/windows/security/threat-protection/microsoft-defender-atp/review-alerts)
 
-![The Alerts and Actions quick launch bar.](../../media/converge-1-alerts-and-actions.png)
+:::image type="content" source="../../media/converge-1-alerts-and-actions.png" alt-text="Alerts and Actions quick launch bar in the Microsoft 365 Defender portal" lightbox="../../media/converge-1-alerts-and-actions.png":::
 
 ### Hunting
 
@@ -113,7 +112,7 @@ Learn more about how to [track and respond to emerging threats with threat analy
 
 Track and investigate threats to your users' email, track campaigns, and more. If you've used the Security & Compliance Center, this will be familiar.
 
-:::image type="content" source="../../media/converge-3-email-and-collab-new.png" alt-text="The quick launch menu for Email & Collab (or MSDO), on the left side of Microsoft 365 Defender.":::
+:::image type="content" source="../../media/converge-3-email-and-collab-new.png" alt-text="The quick launch menu for Email & Collab (or MSDO), on the left navigation pane in the Microsoft 365 Defender portal" lightbox="../../media/converge-3-email-and-collab-new.png":::
 
 #### Email entity page
 
@@ -123,7 +122,7 @@ The [Email entity page](../office-365-security/mdo-email-entity-page.md) *unifie
 
 View reports, change your settings, and modify user roles.
 
-:::image type="content" source="../../media/converge-4-access-and-reporting-new.png" alt-text="The quick launch menu for Microsoft 365 Defender permissions and reporting, on the left side of the Microsoft 365 Defender portal.":::
+:::image type="content" source="../../media/converge-4-access-and-reporting-new.png" alt-text="The quick launch menu for Microsoft 365 Defender permissions and reporting, on the left navigation pane in the Microsoft 365 Defender portal" lightbox="../../media/converge-4-access-and-reporting-new.png":::
 
 > [!NOTE]
 > DomainKeys Identified Mail (DKIM) ensures that destination email systems trust messages sent outbound from your custom domain.

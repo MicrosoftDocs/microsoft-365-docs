@@ -9,14 +9,13 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
   - M365-security-compliance
-  - m365initiative-m365-defender
   - m365solution-m365dsecops
 ms.topic: conceptual
 search.appverid: 
@@ -66,7 +65,7 @@ Because Microsoft 365 Defender components and technologies span various function
 
 To integrate the capabilities of Microsoft 365 Defender, you will need to refine the SOC services. For more information about the capabilities of Microsoft 365 Defender, see the following articles:
 
-- [What is Microsoft Defender for Endpoint?](/defender-endpoint/microsoft-defender-endpoint)
+- [What is Microsoft Defender for Endpoint?](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)
 - [What is Microsoft Defender for Identity?](/defender-for-identity/what-is)
 - [What is Defender for Office 365?](/office-365-security/defender-for-office-365)
 - [What is Microsoft Defender for Cloud Apps?](/cloud-app-security/what-is-cloud-app-security)

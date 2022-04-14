@@ -111,6 +111,9 @@ Here's a list of MIP role groups that are in preview. To learn more about the, s
 
 To learn how to configure an alert in your DLP policy, see [Where to start with data loss prevention](create-test-tune-dlp-policy.md#where-to-start-with-data-loss-prevention).
 
+> [!IMPORTANT]
+> Your organizations audit log retention policy configuration controls how long an alert remains visible in the console. See, [Manage audit log retention policies](audit-log-retention-policies.md#manage-audit-log-retention-policies) for more information.
+
 ### Aggregate event alert configuration
 
 If your org is licensed for [aggregated alert configuration options](#licensing-for-alert-configuration-options),

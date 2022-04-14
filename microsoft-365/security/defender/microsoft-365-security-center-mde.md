@@ -18,7 +18,6 @@ search.appverid:
 - MET150
 ms.collection: 
 - M365-security-compliance 
-- m365initiative-m365-defender 
 ms.custom: admindeeplinkDEFENDER
 ---
 
@@ -36,7 +35,7 @@ ms.custom: admindeeplinkDEFENDER
 The image and the table below lists the changes in navigation between the Microsoft Defender Security Center and Microsoft 365 Defender.
 
 > [!div class="mx-imgBorder"]
-> ![Image of what moved to where.](../../media/mde-m3d-security-center.png)
+> :::image type="content" source="../../media/mde-m3d-security-center.png" alt-text="The new locations in the Microsoft 365 Defender portal" lightbox="../../media/mde-m3d-security-center.png":::
 
 | Microsoft Defender Security Center | Microsoft 365 Defender |
 |---------|---------|
@@ -71,7 +70,7 @@ Microsoft Defender for Endpoint in Microsoft 365 Defender supports [granting acc
 >- US Department of Defense
 >- All US government institutions with commercial licenses
 
-Take a look at Microsoft 365 Defender at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a>.
+Take a look in Microsoft 365 Defender at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a>.
 
 Learn more about the benefits: [Overview of Microsoft 365 Defender](microsoft-365-defender.md)
 
@@ -92,7 +91,7 @@ This table is a quick reference of the changes between the Microsoft Defender Se
 
 | Area | Description of change |
 |---------|---------|
-|Search   |  The search bar is located at the top of the page. Suggestions are provided as you type. You can search across the following entities in Defender for Endpoint and Defender for Identity: <br><br> - **Devices** - supported for both Defender for Endpoint and Defender for Identity. You can even use search operators, for example, you can use "contains" to search for part of a host name. <br><br> - **Users** - supported for both Defender for Endpoint and Defender for Identity. <br><br> - **Files, IPs, and URLs** - same capabilities as in Defender for Endpoint. <br> NOTE: *IP and URL searches are exact match and don’t appear in the search results page – they lead directly to the entity page.  <br><br> - **TVM** -  same capabilities as in Defender for Endpoint (vulnerabilities, software, and recommendations). <br><br>  The enhanced search results page centralizes the results from all entities.  |
+|Search   |  The search bar is located at the top of the page. Suggestions are provided as you type. You can search across the following entities in Defender for Endpoint and Defender for Identity: <br><br> - **Devices** - supported for both Defender for Endpoint and Defender for Identity. You can even use search operators, for example, you can use "contains" to search for part of a host name. <br><br> - **Users** - supported for both Defender for Endpoint and Defender for Identity. <br><br> - **Files, IPs, and URLs** - same capabilities as in Defender for Endpoint. <br> NOTE: *IP and URL searches are exact match and don't appear in the search results page – they lead directly to the entity page.  <br><br> - **TVM** -  same capabilities as in Defender for Endpoint (vulnerabilities, software, and recommendations). <br><br>  The enhanced search results page centralizes the results from all entities.  |
 |[Dashboard](/windows/security/threat-protection/microsoft-defender-atp/security-operations-dashboard)   |  This is your security operations dashboard. See an overview of how many active alerts were triggered, which devices are at risk, which users are at risk, and severity level for alerts, devices, and users. You can also see if any devices have sensor issues, your overall service health, and how any unresolved alerts were detected. |
 |Device inventory | No changes. |
 |[Vulnerability management](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)    |    Name was shortened to fit in the navigation pane. It's the same as the threat and vulnerability management section, with all the pages underneath.     |
@@ -125,7 +124,7 @@ Brings together incident and alert management across your email, devices, and id
 - [Learn more about incidents](incidents-overview.md)
 - [Learn more about managing alerts](investigate-alerts.md)
 
-![The Alerts and Actions quick launch bar.](../../media/converge-1-alerts-and-actions.png)
+:::image type="content" source="../../media/converge-1-alerts-and-actions.png" alt-text="The Alerts and Actions quick launch bar in the Microsoft 365 Defender portal" lightbox="../../media/converge-1-alerts-and-actions.png":::
 
 ### Hunting
 
@@ -156,17 +155,17 @@ Learn more about how to [track and respond to emerging threats with threat analy
 
 View and manage the security of endpoints in your organization. If you've used the Microsoft Defender Security Center, it will look familiar.
 
-![The Endpoints quick launch bar.](../../media/converge-2-endpoints.png)
+:::image type="content" source="../../media/converge-2-endpoints.png" alt-text="The Endpoints quick launch bar in the Microsoft 365 Defender portal" lightbox="../../media/converge-2-endpoints.png":::
 
 ### Access and reports
 
 View reports, change your settings, and modify user roles.
 
-![The Access and Reporting quicklaunch bar.](../../media/converge-4-access-and-reporting-new.png)
+:::image type="content" source="../../media/converge-4-access-and-reporting-new.png" alt-text="The Access and Reporting quicklaunch bar in the Microsoft 365 Defender portal" lightbox="../../media/converge-4-access-and-reporting-new.png":::
 
 ### SIEM API connections
 
-If you use the [Defender for Endpoint SIEM API](../defender-endpoint/enable-siem-integration.md), you can continue to do so. We’ve added new links on the API payload that point to the alert page or the incident page in the Microsoft 365 security portal. New API fields include LinkToMTP and IncidentLinkToMTP. For more information, see [Redirecting accounts from Microsoft Defender for Endpoint to Microsoft 365 Defender](./microsoft-365-security-mde-redirection.md).
+If you use the [Defender for Endpoint SIEM API](../defender-endpoint/enable-siem-integration.md), you can continue to do so. We've added new links on the API payload that point to the alert page or the incident page in the Microsoft 365 security portal. New API fields include LinkToMTP and IncidentLinkToMTP. For more information, see [Redirecting accounts from Microsoft Defender for Endpoint to Microsoft 365 Defender](./microsoft-365-security-mde-redirection.md).
 
 ### Email alerts
 

@@ -13,29 +13,19 @@ ms.collection: M365-modern-desktop
 
 # Preview and test Windows 11 with Microsoft Managed Desktop
 
- How to enroll and participate in the Windows 11 compatibility testing program within your Microsoft Managed Desktop environment. For more about Windows 11 and Microsoft Managed Desktop generally, see [Windows 11 and Microsoft Managed Desktop](../intro/win11-overview.md). 
+This article explains how to enroll and participate in the Windows 11 compatibility testing program within your Microsoft Managed Desktop environment. For more general information about Windows 11 and Microsoft Managed Desktop, see [Windows 11 and Microsoft Managed Desktop](../intro/win11-overview.md).  
 
 ## Add devices to the Windows 11 test group
 
-Upon request, we will create the device group (**Modern Workplace - Windows 11 Pre-Release Test Devices**) for testing and evaluating Windows 11. Devices in this group get new Windows 11 builds and Microsoft Managed Desktop baseline configurations as they become available, and are monitored for reliability issues.
+We've created the device group (**Modern Workplace - Windows 11 Pre-Release Test Devices**) for testing and evaluating Windows 11. Despite "pre-release" in the name, devices in this group receive Windows 11 General Availability builds, and Microsoft Managed Desktop baseline configurations as they become available. They're monitored for reliability issues.
 
-You can choose any of your existing or new devices for Windows 11 testing, but you shouldn't enroll production devices in this group due to the elevated risk of defects or compatibility issues in pre-release builds. Prior device group assignments are removed upon assignment to this group.
+You can use new devices or any existing devices for Windows 11 testing. However, you shouldn't enroll production devices in this group until you’re confident in the test devices' compatibility and overall experience.
 
-To enroll your devices in the pre-release test group:
+## Prioritize applications to submit to the Test Base
 
-1. Open a new service request with the Microsoft Managed Desktop Service Engineering team.
-2. Use these values for the fields:
-    - Title: Windows 11 compatibility enrollment
-    - Request type: Change request
-    - Category: Devices
-    - Subcategory: Deployment group assignment
-3. In the description field, list the serial numbers of the devices that you want to use for Windows 11 testing. Note which, if any, of the specified devices aren't yet deployed in your Microsoft Managed Desktop tenant.
+Business-critical applications are the best candidates for more validation in a closed Windows 11 environment. We can help you decide on apps for Windows 11 testing based on usage and reliability data. To request our recommendations, follow these steps:
 
-## Prioritize applications to submit to Test Base
-
-Business-critical applications are the best candidates for more validation in a closed Windows 11 environment. We can help you prioritize apps for Windows 11 testing based on usage and reliability data. To request our recommendations, follow these steps:
-
-1. Open a new service request with the Microsoft Managed Desktop Service Engineering team. If you need more info on how to file the request, see [Admin support](admin-support.md).
+1. Open a new support request with the Microsoft Managed Desktop Service Engineering team. If you need more info on how to file the request, see [Admin support](admin-support.md).
 2. Use these values for the fields:
     - Title: Windows 11 Test Base candidates
     - Request type: Request for information
@@ -44,14 +34,15 @@ Business-critical applications are the best candidates for more validation in a 
 
 ## Report issues
 
-If you encounter Windows 11 compatibility issues with your line-of-business or Microsoft 365 apps, report them to us for investigation and remediation. To report an issue, follow these steps:
+If you find Windows 11 compatibility issues with your line-of-business or Microsoft 365 apps, report them to us for investigation and remediation. To report an issue, follow these steps:
 
-1. Open a new service request with the Microsoft Managed Desktop Service Engineering team.
+1. Open a new support request with the Microsoft Managed Desktop Service Engineering team.
 2. Use these values for the fields:
     - Title: Windows 11 compatibility testing
     - Request type: Incident
     - Category: Devices
     - Subcategory: Windows Upgrade/Update
+
 3. Describe the behavior and how severely it would hinder your business in a production environment.
 
-Microsoft Managed Desktop triages and handles issues with pre-release builds based on the effect on productivity. While our service description doesn't cover issues with pre-release builds, we'll confer with customer admins to ensure that issues that block user productivity are resolved prior to starting migration within any given tenant.
+Microsoft Managed Desktop triages and handles Windows 11 issues based on the effect on productivity. When the request is opened, we'll communicate, with customer admins, to ensure issues that block user productivity are resolved before starting broader Windows 11 migrations within any given tenant.

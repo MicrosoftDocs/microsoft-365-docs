@@ -11,6 +11,7 @@ search.appverid:
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
+ms.custom: admindeeplinkSPO
 ms.localizationpriority:  medium
 description: Learn how to create a form processing model in SharePoint Syntex.
 ---
@@ -69,13 +70,13 @@ The first step in creating a form processing model is to name the model, define 
 
         - If you select **An existing list**, in the **Selected list** box, choose the list you want to use.
 
-4. When you create a form processing model, you create a new SharePoint content type. A SharePoint content type represents a category of documents that have common characteristics and share a collection of columns or metadata properties for that particular content. SharePoint content types are managed through the SharePoint admin center.
+4. When you create a form processing model, you create a new SharePoint content type. A SharePoint content type represents a category of documents that have common characteristics and share a collection of columns or metadata properties for that particular content. SharePoint content types are managed through the <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint admin center</a>.
 
    To map this model to an existing content type in the SharePoint content types gallery, select **Advanced settings**.
 
     ![Screenshot showing the Advanced settings in the Create a model to process forms panel.](../media/content-understanding/new-form-model-advanced-settings.png) 
 
-   1. In the **Content type** section, choose whether to create a new content type or to use an existing one. 
+   1. In the <a href="https://go.microsoft.com/fwlink/?linkid=2185074" target="_blank">Content type gallery</a>, choose whether to create a new content type or to use an existing one. 
 
    2. To use an existing content type, select **Select one**, and choose a content type from the list.
 
@@ -129,6 +130,9 @@ You need to tag the documents to teach the model to understand the fields and ta
 3. Upload files to your document library. Any files that the model identifies as its content type lists the files in your view and displays the extracted data in the columns.
 
     ![Done.](../media/content-understanding/doc-lib-done.png) 
+
+> [!NOTE]
+> If a custom form processing model and document understanding model are applied to the same library, the file is classified using the document understanding model and any trained extractors for that model. If there are any empty columns that match the form processing model, the columns will be populated using those extracted values.
 
 ### Use flows to extract information
 

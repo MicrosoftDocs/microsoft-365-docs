@@ -16,7 +16,7 @@ search.appverid:
 - MET150
 ms.assetid: 
 ROBOTS: NOINDEX, NOFOLLOW 
-description: "Smart tags let you apply the machine learning capabilities when reviewing content in an Advanced eDiscovery case. Use smart tag groups to display the results of machine-learning detection models, such as the attorney-client privilege model."
+description: "Smart tags let you apply the machine learning capabilities when reviewing content in an Advanced eDiscovery case. Use smart tag groups to display the results of machine learning detection models, such as the attorney-client privilege model."
 ---
 
 # Set up smart tags in Advanced eDiscovery

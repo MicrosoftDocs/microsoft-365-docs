@@ -49,6 +49,16 @@ Microsoft Endpoint DLP enables you to audit and manage the following types of ac
 |create an item|Detects when a user creates an item|supported | |auditable|
 |rename an item|Detects when a user renames an item|supported | |auditable|
 
+## Best practice for endpoint DLP policies
+
+Say you want to block all items that contain credit card numbers from leaving endpoints of Finance department users. We recommend:
+
+- Create a policy and scope it to endpoints and to that group of users.
+- Create a rule in the policy that detects the type of information that you want to protect. In this case, **content contains** set to *Sensitive information type**, and select **Credit Card**.
+- Set the actions for each activity to **Block**.
+
+See, [Design a data loss prevention policy](dlp-policy-design.md) for more guidance on designing your DLP policies.
+
 ## Monitored files
 
 Endpoint DLP supports monitoring of these file types. DLP audits the activities for these file types, even if there isn't a policy match. 
@@ -76,8 +86,33 @@ If you only want monitoring data from policy matches, you can turn off the **Alw
 > [!TIP]
 > To ensure activities are audited for all supported file types, create a [custom DLP policy](create-test-tune-dlp-policy.md).
 
-
 Endpoint DLP monitors activity-based on MIME type, so activities will be captured even if the file extension is changed.
+
+### File types (preview)
+
+File Types are a grouping of file formats which are utilized to protect specific workflows or areas of business. You can use one or more File types as conditions in your DLP policies.
+
+|File Type |App  |monitored file extensions  |
+|---------|---------|---------|
+|word processing |Word, PDF | .doc, .docx,  .docm, .dot, .dotx, .dotm, .docb, .pdf |
+|spreadsheet    |Excel, CSV, TSV |.xls, .xlsx, .xlt, .xlm, .xlsm, .xltx, .xltm, .xlsb, .xlw, .csv, .tsv         |
+|presentation |PowerPoint|.ppt, .pptx, .pos, .pps, .pptm, .potx, .potm, .ppam, .ppsx|
+|archive  |file archive and compression tools | .zip, .zipx, .rar, .7z, .tar, .gz        |
+|email    |Outlook |.pst, .ost, .msg         |
+
+### File extensions (preview)
+
+If the File types don't cover the file extensions you need to list as a condition in a policy, you can use file extensions separated by comma instead.
+
+> [!IMPORTANT]
+> The file extensions and file types options cannot be used as conditions in the same rule. If you want to use them as conditions in the same policy, they must be in separate rules. 
+
+> [!IMPORTANT]
+> These Windows versions support File types and File extension features:
+>- Windows 10 versions 20H1/20H2/21H1 (KB 5006738)
+>- Windows 10 versions 19H1/19H2 (KB 5007189)
+>- Windows 10 RS5 (KB 5006744)
+
 
 ## What's different in Endpoint DLP
 
@@ -103,7 +138,7 @@ Onboarding and offboarding are handled via scripts you download from the Device 
 
  Use the procedures in [Getting started with Microsoft 365 Endpoint DLP](endpoint-dlp-getting-started.md) to onboard devices.
 
-If you have onboarded devices through [Microsoft Defender for Endpoint](/windows/security/threat-protection/), those devices will automatically show up in the list of devices.
+If you have onboarded devices through [Microsoft Defender for Endpoint](/windows/security/threat-protection/), those devices will automatically show up in the list of devices. You can **Turn on device monitoring** to use endpoint DLP.
 
 > [!div class="mx-imgBorder"]
 > ![managed devices list.](../media/endpoint-dlp-learn-about-2-device-list.png)
@@ -162,7 +197,8 @@ For example, if a file is copied to removable USB media, you'd see these attribu
 Now that you've learned about Endpoint DLP, your next steps are:
 
 1. [Onboard Windows 10 or Windows 11 devices into Microsoft 365 overview](device-onboarding-overview.md)
-1. [Onboard macOS devices into Microsoft 365 overview (preview)](device-onboarding-macos-overview.md#onboard-macos-devices-into-microsoft-365-overview-preview)
+1. [Onboard macOS devices into Microsoft 365 overview (preview)](device-onboarding-macos-overview.md)
+1. [Configure endpoint data loss prevention settings](dlp-configure-endpoint-settings.md)
 1. [Using Microsoft Endpoint data loss prevention](endpoint-dlp-using.md)
 
 ## See also

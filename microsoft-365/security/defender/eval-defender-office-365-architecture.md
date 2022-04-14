@@ -1,6 +1,6 @@
 ---
 title: Review architecture requirements and planning concepts for Microsoft Defender for Office 365
-description: The technical diagram for Microsoft Defender for Office 365 in Microsoft 365 Defender will help you understand identity in Microsoft 365 before you build your trial lab or pilot environment.
+description: The technical diagram for Microsoft Defender for Office 365 in Microsoft 365 Defender will help you understand identity at Microsoft 365 before you build your trial lab or pilot environment.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,7 +17,8 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
   - M365-security-compliance
-
+  - m365solution-scenario
+  - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
 ---
@@ -34,20 +35,20 @@ Before enabling Defender for Office 365, be sure you understand the architecture
 
 ## Understand the architecture
 
-The following diagram illustrates baseline architecture for Microsoft Defender for Office, which can include a third-party SMTP gateway or on-premises integration. Hybrid coexistence scenarios (i.e. production mailboxes are both on-premise and online) require more complex configurations and are not covered in this article or evaluation guidance.
+The following diagram illustrates baseline architecture for Microsoft Defender for Office, which can include a third-party SMTP gateway or on-premises integration. Hybrid coexistence scenarios (that is, production mailboxes are both on-premise and online) require more complex configurations and are not covered in this article or evaluation guidance.
 
-![Architecture for Microsoft Defender for Office 365.](../../media/defender/m365-defender-office-architecture.png)
+:::image type="content" source="../../media/defender/m365-defender-office-architecture.png" alt-text="The architecture for the Microsoft Defender for Office 365" lightbox="../../media/defender/m365-defender-office-architecture.png":::
 
 The following table describes this illustration.
 
 |Call-out  |Description  |
 |---------|---------|
 |1     | The host server for the external sender typically performs a public DNS lookup for an MX record, which provides the target server to relay the message.  This referral can either be Exchange Online (EXO) directly or an SMTP gateway that has been configured to relay against EXO.  |
-|2     | Exchange Online Protection negotiates and validates the inbound connection and inspects the message headers and content to determine what additional policies, tagging, or processing is required.  |
+|2     | Exchange Online Protection negotiates and validates the inbound connection and inspects the message headers and content to determine what extra policies, tagging, or processing is required.  |
 |3     | Exchange Online integrates with Microsoft Defender for Office 365 to offer more advanced threat protection, mitigation, and remediation. |
 |4     | A message that is not malicious, blocked, or quarantined is processed and delivered to the recipient in EXO where user preferences related to junk mail, mailbox rules, or other settings are evaluated and triggered. |
 |5     | Integration with on-premises Active Directory can be enabled using Azure AD Connect to synchronize and provision mail-enabled objects and accounts to Azure Active Directory and ultimately Exchange Online. |
-|6     | When integrating an on-premises environment, it is strongly encouraged to use an Exchange server for supported management and administration of mail-related attributes, settings, and configurations |
+|6     | When integrating an on-premises environment, it is encouraged to use an Exchange server for supported management and administration of mail-related attributes, settings, and configurations |
 |7     | Microsoft Defender for Office 365 shares signals to Microsoft 365 Defender for extended detection and response (XDR).|
 
 On-premises integration is common but optional. If your environment is cloud-only, this guidance will also work for you.
@@ -59,13 +60,13 @@ The following table identified key concepts that are important to understand whe
 
 |Concept  |Description |More information  |
 |---------|---------|---------|
-|Exchange Online Protection      |    Exchange Online Protection (EOP) is the cloud-based filtering service that helps protect your organization against spam and malware emails. EOP is included in all Microsoft 365 licenses which include Exchange Online.     |   [Exchange Online Protection overview](../office-365-security/exchange-online-protection-overview.md)      |
+|Exchange Online Protection      |    Exchange Online Protection (EOP) is the cloud-based filtering service that helps protect your organization against spam and malware emails. EOP is included in all Microsoft 365 licenses that include Exchange Online.     |   [Exchange Online Protection overview](../office-365-security/exchange-online-protection-overview.md)      |
 |Anti-malware protection     |    Organizations with mailboxes in EXO are automatically protected against malware.     |  [Anti-malware protection in EOP](../office-365-security/anti-malware-protection.md)       |
 |Anti-spam protection     |   Organizations with mailboxes in EXO are automatically protected against junk mail and spam policies.      |  [Anti-spam protection in EOP](../office-365-security/anti-spam-protection.md)       |
-|Anti-phishing protection |  MDO offers more advanced anti-phishing  protection related to spear phishing, whaling, ransomware, and other malicious activities.   | [Additional anti-phishing protection in Microsoft Defender for Office 365](../office-365-security/anti-phishing-protection.md)   |
+|Anti-phishing protection |  MDO offers more advanced anti-phishing  protection related to spear phishing, whaling, ransomware, and other malicious activities.   | [Extra anti-phishing protection in Microsoft Defender for Office 365](../office-365-security/anti-phishing-protection.md)   |
 |Anti-spoofing protection     |   EOP includes features to help protect your organization from spoofed (forged) senders.      |   [Anti-spoofing protection in EOP](../office-365-security/anti-spoofing-protection.md)      |
-|Safe attachments     |   Safe Attachments provides an additional layer of protection by using a virtual environment to check and "detonate" attachments in email messages before they are delivered.      |   [Safe Attachments in Microsoft Defender for Office 365](../office-365-security/safe-attachments.md)      |
-|Safe attachments for SharePoint, OneDrive, and Microsoft Teams     |    In addition, Safe Attachments for SharePoint, OneDrive, and Microsoft Teams offers an additional layer of protection for files that have been uploaded to cloud storage repositories.     |  [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](../office-365-security/mdo-for-spo-odb-and-teams.md)       |
+|Safe attachments     |   Safe Attachments provides an extra layer of protection by using a virtual environment to check and "detonate" attachments in email messages before they are delivered.      |   [Safe Attachments in Microsoft Defender for Office 365](../office-365-security/safe-attachments.md)      |
+|Safe attachments for SharePoint, OneDrive, and Microsoft Teams     |    In addition, Safe Attachments for SharePoint, OneDrive, and Microsoft Teams offers an extra layer of protection for files that have been uploaded to cloud storage repositories.     |  [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](../office-365-security/mdo-for-spo-odb-and-teams.md)       |
 |Safe Links     | Safe Links is a feature that provides URL scanning and rewriting within inbound email messages and offers verification of those links before they are delivered or clicked.        |   [Safe Links in Microsoft Defender for Office 365](../office-365-security/safe-links.md)      |
 |    |         |         |
 

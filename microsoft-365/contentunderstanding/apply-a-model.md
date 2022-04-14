@@ -31,13 +31,13 @@ After publishing your document understanding model, you can apply it to one or m
 
 ## Apply your model to a document library
 
-To apply your model to to a SharePoint document library:
+To apply your model to a SharePoint document library:
 
 1. On model home page, on the **Apply model to libraries** tile, select **Apply model**. Or, in the **Where the model is applied** section, select **+Add library**.
 
     ![Screenshot of Where the model is applied section with the Add library option highlighted.](../media/content-understanding/apply-to-library.png)
 
-2. You can then select the SharePoint site that contains the document library that you want to apply the model to. If the site does not show in the list, use the search box to find it.
+2. You can then select the SharePoint site that contains the document library that you want to apply the model to. If the site doesn't show in the list, use the search box to find it.
 
     ![Select a site.](../media/content-understanding/site-search.png)
 
@@ -48,9 +48,11 @@ To apply your model to to a SharePoint document library:
 
     ![Select a doc library.](../media/content-understanding/select-doc-library.png)
 
-4. Because the model is associated to a content type, when you apply it to the library it will add the content type and its view with the labels you extracted showing as columns. By default, this view is the library's default view. However, you can optionally choose to not have it be the default view by selecting **Advanced settings** and clearing the **Set this new view as the default** checkbox.
+4. Because the model is associated to a content type, when you apply it to the library it will add the content type and update the default view with the labels you extracted showing as columns. However, you can select **Advanced settings** to optionally choose to retain the current library view or to use a new view with model information and file thumbnails. If you choose to keep the current library view, the new views with model information are still available under the library's view menu.
 
-    ![Library view.](../media/content-understanding/library-view.png)
+    ![Screenshot of the Advanced settings showing the library views.](../media/content-understanding/library-view.png)
+
+    For more information, see [Change the view in a document library](#change-the-view-in-a-document-library) later in this article.
 
 5. Select **Add** to apply the model to the library.
 
@@ -66,7 +68,10 @@ To apply your model to to a SharePoint document library:
 
 After applying the model to the document library, you can begin uploading documents to the site and see the results.
 
-The model identifies any files and folders with the model’s associated content type and lists them in your view. If your model has any extractors, the view displays columns for the data you are extracting from each file or folder.
+The model identifies any files and folders with the model’s associated content type and lists them in your view. If your model has any extractors, the view displays columns for the data you're extracting from each file or folder.
+
+> [!NOTE]
+> If two or more document understanding models are applied to the same library, the uploaded file is classified using the model that has the highest average confidence score. The extracted entities will be from the applied model only. <br><br>If a custom form processing model and document understanding model are applied to the same library, the file is classified using the document understanding model and any trained extractors for that model. If there are any empty columns that match the form processing model, the columns will be populated using those extracted values.
 
 ## Sync changes to one or more libraries
 
@@ -88,7 +93,7 @@ To sync changes to one or only selected libraries:
 
 ## Apply the model to files and folder content already in the document library
 
-While an applied model processes all files and folder content uploaded to the document library after it is applied, you can also do the following to run the model on files and folder content that already exist in the document library prior to the model being applied:
+While an applied model processes all files and folder content uploaded to the document library after it's applied, you can also do the following to run the model on files and folder content that already exist in the document library prior to the model being applied:
 
 1. In your document library, select the files and folders that you want to be processed by your model.
 
@@ -122,6 +127,10 @@ To run the flow:
 2. On the **Create a flow** panel, select **Send an email after SharePoint Syntex processes a file**.
 
     ![Screenshot showing the Create a flow panel and flow option highlighted.](../media/content-understanding/integrate-create-flow.png) 
+
+## Change the view in a document library
+
+[!INCLUDE [Change the view in a document library](../includes/change-library-view.md)]
 
 ## See Also
 

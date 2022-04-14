@@ -7,7 +7,7 @@ metadata:
   author: markjjo
   manager: laurawi
   audience: Admin
-  ms.topic: article
+  ms.topic: faq
   ms.service: O365-seccomp
   ms.localizationpriority: medium
   ms.collection: M365-security-compliance
@@ -23,7 +23,7 @@ title: FAQ about importing PST files
 summary: |
   **This article is for administrators. Do you want to import PST files to your own mailbox? See [Import email, contacts, and calendar from an Outlook .pst file](https://go.microsoft.com/fwlink/p/?LinkID=785075)**
 
-  Here are some frequently asked questions about using the Office 365 Import Service to bulk-import PST files to Microsoft 365 mailboxes. For more information about how to import PST files, see [Overview of importing PST files to Office 365](./importing-pst-files-to-office-365.md).
+  Here are some frequently asked questions about using the Office 365 Import Service to bulk-import PST files to Microsoft 365 mailboxes. For more information about how to import PST files, see [Learn about importing PST files to Office 365](./importing-pst-files-to-office-365.md).
 
   ## Using network upload to import PST files
 
@@ -155,7 +155,7 @@ sections:
           Only 2.5-inch solid-state drives (SSDs) or 2.5-inch or 3.5-inch SATA II/III internal hard drives are supported for use with the Office 365 Import service. You can use hard drives up to 10 TB. For import jobs, only the first data volume on the hard drive will be processed. The data volume must be formatted with NTFS. When copying data to a hard drive, you can attach it directly using a 2.5-inch SSD or 2.5-inch or 3.5-inch SATA II/III connector or you can attach it externally using an external 2.5-inch SSD or 2.5-inch or 3.5-inch SATA II/III USB adaptor.
 
           > [!IMPORTANT]
-          > External hard drives that come with an built-in USB adaptor aren't supported by the Office 365 Import service. Additionally, the disk inside the casing of an external hard drive can't be used. Please don't ship external hard drives.
+          > External hard drives that come with a built-in USB adaptor aren't supported by the Office 365 Import service. Additionally, the disk inside the casing of an external hard drive can't be used. Please don't ship external hard drives.
 
       - question: |
           How many hard drives can I ship for a single import job?

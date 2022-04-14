@@ -35,10 +35,10 @@ This guide helps you work across stakeholders to prepare your environment and th
 
 Each section corresponds to a separate article in this solution.
 
-![Image of deployment phases with details from table.](images/deployment-guide-phases.png)
+:::image type="content" source="images/deployment-guide-phases.png" alt-text="The deployment phases with details from the table" lightbox="images/deployment-guide-phases.png":::
 
 
-![Summary of deployment phases: prepare, setup, onboard.](images/phase-diagrams/deployment-phases.png)
+:::image type="content" source="images/phase-diagrams/deployment-phases.png" alt-text="The summary of deployment phases: prepare, setup, onboard" lightbox="images/phase-diagrams/deployment-phases.png":::
 
 <br>
 
@@ -76,7 +76,7 @@ All these capabilities are available for Microsoft Defender for Endpoint license
 
 ### In scope
 
-- Use of Microsoft Endpoint Manager and Microsoft Endpoint Manager to onboard endpoints into the service and configure capabilities
+- Use of Microsoft Endpoint Manager and Microsoft Endpoint Configuration Manager to onboard endpoints into the service and configure capabilities
 - Enabling Defender for Endpoint endpoint detection and response (EDR)  capabilities
 - Enabling Defender for Endpoint endpoint protection platform (EPP) capabilities
   - Next-generation protection

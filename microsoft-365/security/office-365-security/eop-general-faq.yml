@@ -8,7 +8,7 @@ metadata:
   manager: dansimp
   ms.date: 
   audience: ITPro
-  ms.topic: troubleshooting
+  ms.topic: faq
   
   ms.localizationpriority: medium
   ms.assetid: 9dbff00a-474e-4452-aeb5-5be9a6b8c6d5
@@ -17,7 +17,6 @@ metadata:
   description: Get answers to the most common general questions about the Exchange Online Protection (EOP) cloud-hosted email filtering service.
   ms.technology: mdo
   ms.prod: m365-security
-    
 title: EOP general FAQ
 summary: |
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]

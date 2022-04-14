@@ -12,7 +12,7 @@ ms.topic: article
 f1_keywords:
 - 'ms.o365.cc.UnifiedDLPRuleContainsSensitiveInformation'
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-security-compliance
 description: "Use these procedures to take advantage of named entities in your data loss prevention policies"
@@ -56,6 +56,7 @@ Named entity SITs and enhanced policies are not supported for:
 
 
 - On-premises repositories
+- Power BI
 
 ## Create and edit enhanced policies
 
@@ -67,8 +68,8 @@ To create or edit a DLP policy, use the procedures in [Create, test, and tune a 
 - **Microsoft 3655 eDiscovery** supports the use of named entities in Substrate services.
 - **Microsoft Defender for Cloud Apps** supports the use of named entities in Defender for Cloud Apps policies.
 - **Insider Risk Management** supports the use of named entities in Substrate services.
-- **Communication Compliance** doesn't support the use of named entities in Exchange transport rules and data-at-rest.
-- **Microsoft Information Governance** (MIG) doesn't support the use of named entities in Exchange transport rules and data-at-rest.
+<!--- **Communication Compliance** doesn't support the use of named entities in Exchange transport rules and data-at-rest.
+- **Microsoft Information Governance** (MIG) doesn't support the use of named entities in Exchange transport rules and data-at-rest.-->
  
 ### Unified DLP
 
@@ -78,7 +79,7 @@ To create or edit a DLP policy, use the procedures in [Create, test, and tune a 
 |Office WAC clients policy tip    |supported         |
 |OWA policy tip     |not supported         |
 |Outlook policy tip     |not supported |
-|Endpoints (Windows 10 devices)     |not supported  |
+|Endpoints (Windows 10 devices)     |supported  |
 |Exchange Transport rules     |not supported |
 |OneDrive for Business data-at-rest     |supported         |
 |SharePoint Online data-at-rest     |supported         |

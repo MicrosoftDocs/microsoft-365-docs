@@ -189,6 +189,8 @@ When you assign permissions, you can choose:
 - Any authenticated users. Make sure you understand the [requirements and limitations](#requirements-and-limitations-for-add-any-authenticated-users) of this setting before selecting it.
 
 - Any specific user or email-enabled security group, distribution group, or Microsoft 365 group ([formerly Office 365 group](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) in Azure AD. The Microsoft 365 group can have static or [dynamic membership](/azure/active-directory/users-groups-roles/groups-create-rule). Note that you can't use a [dynamic distribution group from Exchange](/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups) because this group type isn't synchronized to Azure AD, and you can't use a security group that isn't email-enabled.
+    
+    Although you can specify groups that contain mail contacts as a convenient method to grant access to multiple people outside your organization, there's currently a known issue with this configuration. For more information, see [Mail contacts in groups have intermittent access to encrypted content](/office365/troubleshoot/sensitivity-labels/mail-contacts-lose-access-encrypted-content).
 
 - Any email address or domain. Use this option to specify all users in another organization who uses Azure AD, by entering any domain name from that organization. You can also use this option for social providers, by entering their domain name such as **gmail.com**, **hotmail.com**, or **outlook.com**.
 
@@ -246,7 +248,7 @@ For more information, see [Rights Management issuer and Rights Management owner]
 > [!NOTE]
 > This feature is currently supported only by the Azure Information Protection unified labeling client.
 
-Select this option only after you have configured the Double Key Encryption service and you need to use this double key encryption for files that will have this label applied.
+Select this option only after you have configured the Double Key Encryption service and you need to use this double key encryption for files that will have this label applied. After the label is configured and saved, you won't be able to edit it.
 
 For more information, prerequisites, and configuration instructions, see [Double Key Encryption (DKE)](double-key-encryption.md).
 
@@ -259,7 +261,7 @@ You can use the following options to let users assign permissions when they manu
 
 - In Outlook, a user can select restrictions equivalent to the [Do Not Forward](/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails) option or [Encrypt-only](/azure/information-protection/configure-usage-rights#encrypt-only-option-for-emails) for their chosen recipients.
     
-    The Do Not Forward option is supported by all email clients that support sensitivity labels. However, applying the **Encrypt-Only** option with a sensitivity label is a recent release that's supported only by built-in labeling and not the Azure Information Protection unified labeling client. For email clients that don't support this capability, the label won't be visible.
+    The Do Not Forward option is supported by all email clients that support sensitivity labels. However, applying the **Encrypt-Only** option with a sensitivity label is a more recent release that's supported only by built-in labeling and not the Azure Information Protection unified labeling client. For email clients that don't support this capability, the label won't be visible.
     
     To check the minimum versions of Outlook apps that use built-in labeling to support applying the Encrypt-Only option with a sensitivity label, use the [capabilities table for Outlook](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-outlook) and the row **Let users assign permissions: - Encrypt-Only**.
 
@@ -425,7 +427,7 @@ Encrypting your most sensitive documents and emails helps to ensure that only au
 
 - When authorized users open encrypted documents in their Office apps, they see the label name and description in a yellow message bar at the top of their app. When the encryption permissions extend to people outside your organization, carefully review the label names and descriptions that will be visible in this message bar when the document is opened.
 
-- For multiple users to edit an encrypted file at the same time, they must all be using Office for the web.  Or, for Windows and Mac, you have [enabled co-authoring for files encrypted with sensitivity labels](sensitivity-labels-coauthoring.md) and users have the [required minimum versions](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) of Word, Excel, and PowerPoint. If this isn't the case, and the file is already open:
+- For multiple users to edit an encrypted file at the same time, they must all be using Office for the web or you've [enabled co-authoring for files encrypted with sensitivity labels](sensitivity-labels-coauthoring.md) and all users have [Office apps that support this feature](sensitivity-labels-coauthoring.md#prerequisites). If this isn't the case, and the file is already open:
 
   - In Office apps (Windows, Mac, Android, and iOS), users see a **File In Use** message with the name of the person who has checked out the file. They can then view a read-only copy or save and edit a copy of the file, and receive notification when the file is available.
   - In Office for the web, users see an error message that they can't edit the document with other people. They can then select **Open in Reading View**.
@@ -436,7 +438,7 @@ Encrypting your most sensitive documents and emails helps to ensure that only au
 
 - If a label that applies encryption is added by using an Office app when the document is [checked out in SharePoint](https://support.microsoft.com/office/check-out-check-in-or-discard-changes-to-files-in-a-library-7e2c12a9-a874-4393-9511-1378a700f6de), and the user then discards the checkout, the document remains labeled and encrypted.
 
-- The following actions for encrypted files aren't supported from Office apps (Windows, Mac, Android, and iOS), and users see an error message that something went wrong. However, SharePoint functionality can be used as an alternative:
+- Unless you have [enabled co-authoring for files encrypted with sensitivity labels](sensitivity-labels-coauthoring.md), the following actions for encrypted files aren't supported from Office apps (Windows, Mac, Android, and iOS), and users see an error message that something went wrong. However, SharePoint functionality can be used as an alternative:
 
   - View, restore, and save copies of previous versions. As an alternative, users can do these actions using Office on the web when you [enable and configure versioning for a list or library](https://support.office.com/article/enable-and-configure-versioning-for-a-list-or-library-1555d642-23ee-446a-990a-bcab618c7a37).
   - Change the name or location of files. As an alternative, users can [rename a file, folder, or link in a document library](https://support.microsoft.com/office/rename-a-file-folder-or-link-in-a-document-library-bc493c1a-921f-4bc1-a7f6-985ce11bb185) in SharePoint.

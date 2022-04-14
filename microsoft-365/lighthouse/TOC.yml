@@ -12,6 +12,10 @@
   items: 
     - name: Configure portal security
       href: m365-lighthouse-configure-portal-security.md
+    - name: Overview of permissions
+      href: m365-lighthouse-overview-of-permissions.md
+    - name: Review audit logs
+      href: m365-lighthouse-review-audit-logs.md
 - name: Protect customers with baselines
   items: 
     - name: Overview of using baselines to deploy standard tenant configurations
@@ -24,6 +28,8 @@
       href: m365-lighthouse-tenants-page-overview.md
     - name: Manage your tenant list
       href: m365-lighthouse-manage-tenant-list.md
+    - name: View tenant service health
+      href: m365-lighthouse-view-service-health.md
 - name: Manage users within tenants
   items: 
     - name: Users page overview
@@ -34,14 +40,18 @@
       href: m365-lighthouse-manage-mfa.md
     - name: Manage self-service password reset
       href: m365-lighthouse-manage-sspr.md
-    - name: Reset user password
+    - name: Reset a user password
       href: m365-lighthouse-reset-user-password.md
     - name: Search for users
       href: m365-lighthouse-search-for-users.md
+    - name: View and manage risky users
+      href: m365-lighthouse-view-manage-risky-users.md
 - name: Manage devices
   items: 
     - name: Device compliance page overview
       href: m365-lighthouse-device-compliance-page-overview.md
+    - name: Compare device compliance policy settings
+      href: m365-lighthouse-compare-compliance-policies.md
     - name: Windows 365 (Cloud PCs) page overview
       href: m365-lighthouse-win365-page-overview.md
 - name: Manage threats
@@ -54,5 +64,9 @@
   items: 
     - name: Get help and support
       href: m365-lighthouse-get-help-and-support.md
+    - name: Known issues
+      href: m365-lighthouse-known-issues.md
+    - name: Troubleshoot and resolve problems and error messages
+      href: m365-lighthouse-troubleshoot.md
     - name: Frequently asked questions (FAQs)
       href: m365-lighthouse-faq.yml

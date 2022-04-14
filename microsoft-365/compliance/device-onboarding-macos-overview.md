@@ -9,7 +9,7 @@ ms.date:
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-security-compliance 
 search.appverid:
@@ -21,20 +21,16 @@ description: Learn about onboarding macOS devices into Compliance solutions
 
 MacOS devices can be onboarded into Microsoft 365 compliance solutions using either Intune or JAMF Pro. The onboarding procedures differ depending on which management solution you are using. If your macOS devices have already been onboarded into Microsoft Defender for Endpoint (MDE), there are fewer steps. See [Next steps](#next-steps) for links to the appropriate procedures for you.
 
-## Get registered
-
-To get access to this feature, you must register your tenant with Microsoft. See, [get registered for Microsoft 365 macOS support](https://aka.ms/EndpointDLPIgnite21-Previews).
-
 **Applies to:**
 
-- [Microsoft 365 Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
+- [Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
 - [Insider risk management](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
 
 ## Before you begin
 
 Before you get started with Endpoint DLP on macOS devices (Catalina 10.15 or later), you should familiarize yourself with these articles:
 
-- [Learn about Microsoft 365 Endpoint data loss prevention](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention)
+- [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention)
 - [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention)
 
 If you are not familiar with DLP at all, you should familiarize yourself with these articles as well:
@@ -87,10 +83,7 @@ When you want to onboard devices that haven't been onboarded yet, you'll downloa
    > [!NOTE]
    > While it usually takes about 60 seconds for device onboarding to be enabled, please allow up to 30 minutes before engaging with Microsoft support.
 
-2. Open the Compliance Center settings page and choose **Onboard devices**.
-
-   > [!div class="mx-imgBorder"]
-   > ![enable device management.](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
+2. Open the Compliance Center settings page and choose **Turn on macOS device monitoring**.
 
 ## Next steps
 

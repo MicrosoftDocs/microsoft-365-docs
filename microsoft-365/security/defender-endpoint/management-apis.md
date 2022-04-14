@@ -50,7 +50,7 @@ The Microsoft Defender for Endpoint solution is built on top of an integration-r
 
 Defender for Endpoint exposes much of its data and actions through a set of programmatic APIs. Those APIs will enable you to automate workflows and innovate based on Defender for Endpoint capabilities.
 
-![Image of available API and integration in Microsoft Defender for Endpoint.](images/mdatp-apis.png)
+:::image type="content" source="images/mdatp-apis.png" alt-text="The available API and integration in Microsoft Defender for Endpoint" lightbox="images/mdatp-apis.png":::
 
 The Defender for Endpoint APIs can be grouped into three:
 
@@ -83,7 +83,7 @@ For more information, see [Microsoft 365 Defender Streaming API](../defender/str
 
 ## SIEM API
 
-When you enable security information and event management (SIEM) integration, it allows you to pull detections from Microsoft 365 Defender using your SIEM solution or by connecting directly to the detections REST API. This activates the SIEM connector access details section with pre-populated values and an application is created under your Azure Active Directory (Azure AD) tenant. For more information, see [SIEM integration](enable-siem-integration.md).
+When you enable security information and event management (SIEM) integration, it allows you to pull detections from Microsoft 365 Defender using your SIEM solution or by connecting directly to the detections REST API. This activates the SIEM connector access details section with pre-populated values and an application is created under your Azure Active Directory (Azure AD) tenant. 
 
 ## Related topics
 

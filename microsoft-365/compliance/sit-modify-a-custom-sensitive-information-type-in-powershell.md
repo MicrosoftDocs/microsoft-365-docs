@@ -9,9 +9,9 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - M365-security-compliance
-search.appverid: 
+search.appverid:
 - MOE150
 - MET150
 description: "Learn how to modify a custom sensitive information using PowerShell."
@@ -55,16 +55,16 @@ To connect to Compliance Center PowerShell, see [Connect to Compliance Center Po
    $rulepak = Get-DlpSensitiveInformationTypeRulePackage -Identity "Employee ID Custom Rule Pack"
    ```
 
-3. Use the [Set-Content](/powershell/module/microsoft.powershell.management/set-content) cmdlet to export the custom rule package to an XML file:
+3. Use the following syntax to export the custom rule package to an XML file:
 
    ```powershell
-   Set-Content -Path "XMLFileAndPath" -Encoding Byte -Value $rulepak.SerializedClassificationRuleCollection
+   [System.IO.File]::WriteAllBytes('XMLFileAndPath', $rulepak.SerializedClassificationRuleCollection)
    ```
 
-   This example export the rule package to the file named ExportedRulePackage.xml in the C:\My Documents folder.
+   This example exports the rule package to the file named ExportedRulePackage.xml in the C:\My Documents folder.
 
    ```powershell
-   Set-Content -Path "C:\My Documents\ExportedRulePackage.xml" -Encoding Byte -Value $rulepak.SerializedClassificationRuleCollection
+   [System.IO.File]::WriteAllBytes('C:\My Documents\ExportedRulePackage.xml', $rulepak.SerializedClassificationRuleCollection)
    ```
 
 #### Step 2: Modify the sensitive information type in the exported XML file
@@ -76,16 +76,13 @@ Sensitive information types in the XML file and other elements in the file are d
 To import the updated XML back into the existing rule package, use the [Set-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/set-dlpsensitiveinformationtyperulepackage) cmdlet:
 
 ```powershell
-Set-DlpSensitiveInformationTypeRulePackage -FileData ([Byte[]]$(Get-Content -Path "C:\My Documents\External Sensitive Info Type Rule Collection.xml" -Encoding Byte -ReadCount 0))
+Set-DlpSensitiveInformationTypeRulePackage -FileData ([System.IO.File]::ReadAllBytes('C:\My Documents\External Sensitive Info Type Rule Collection.xml'))
 ```
 
 For detailed syntax and parameter information, see [Set-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/set-dlpsensitiveinformationtyperulepackage).
 
-
 ## More information
 
 - [Learn about data loss prevention](dlp-learn-about-dlp.md)
-
 - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
-
-- [What the DLP functions look for](what-the-dlp-functions-look-for.md)
+- [Sensitive information type functions](sit-functions.md)

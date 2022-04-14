@@ -3,10 +3,10 @@ title: Office TLS Certificate Changes
 description: How to prepare for upcoming changes to Office TLS certificates.
 author: pshelton-skype
 ms.author: pshelton
-manager: elenip
+manager: toddbeckett
 ms.topic: article
 audience: Developer
-ms.date: 1/7/2021
+ms.date: 3/7/2022
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ---
@@ -32,13 +32,22 @@ Affected endpoints include (but are not limited to):
 - *.communication.azure.com
 - *.operatorconnect.microsoft.com
 
-This change will not affect certificates, domains, or services used in the US Government, China, or Germany national cloud instances of Microsoft 365.
+Additionally, Teams and Skype for Business Online endpoints in US Government national cloud instances of Microsoft 365 will make the same change, affecting endpoints such as:
+- *.gcc.teams.microsoft.com
+- *.dod.teams.microsoft.us
+- *.gov.teams.microsoft.us
+- *.online.dod.skypeforbusiness.us
+- *.online.gov.skypeforbusiness.us
+- *.um-dod.office365.us
+- *.um.office365.us
+
+This change will not affect certificates, domains, or services used in the China or Germany national cloud instances of Microsoft 365.
 
 All certificate information in this article was previously provided in [Microsoft 365 encryption chains](./encryption-office-365-certificate-chains.md) no later than October 2020.
 
 ## When will this change happen?
 
-Services will begin transitioning to the new Root CAs beginning in Jan 2022, possibly continuing into the third quarter (July-Sept) 2022.
+Services began transitioning to the new Root CAs in January 2022 and will continue through October 2022.
 
 ## What is changing?
 
@@ -52,8 +61,8 @@ with one of the following Intermediate CAs:
 
 | Common Name of the CA | Thumbprint (SHA1) |
 |--|--|
-| [Microsoft RSA TLS CA 01](http://www.microsoft.com/pki/mscorp/Microsoft%20RSA%20TLS%20CA%2001.crt) | 703d7a8f0ebf55aaa59f98eaf4a206004eb2516a |
-| [Microsoft RSA TLS CA 02](http://www.microsoft.com/pki/mscorp/Microsoft%20RSA%20TLS%20CA%2002.crt) | b0c2d2d13cdd56cdaa6ab6e2c04440be4a429c75 |
+| [Microsoft RSA TLS CA 01](https://www.microsoft.com/pki/mscorp/Microsoft%20RSA%20TLS%20CA%2001.crt) | 703d7a8f0ebf55aaa59f98eaf4a206004eb2516a |
+| [Microsoft RSA TLS CA 02](https://www.microsoft.com/pki/mscorp/Microsoft%20RSA%20TLS%20CA%2002.crt) | b0c2d2d13cdd56cdaa6ab6e2c04440be4a429c75 |
 
 New TLS certificates used by Microsoft 365 services will now chain up to one of the following Root CAs:
 
@@ -67,10 +76,14 @@ with one of the following Intermediate CAs:
 
 | Common Name of the CA | Thumbprint (SHA1) |
 |--|--|
-| [Microsoft Azure TLS Issuing CA 01](http://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2001%20-%20xsign.crt) | 2f2877c5d778c31e0f29c7e371df5471bd673173 |
-| [Microsoft Azure TLS Issuing CA 02](http://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2002%20-%20xsign.crt) | e7eea674ca718e3befd90858e09f8372ad0ae2aa |
-| [Microsoft Azure TLS Issuing CA 05](http://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2005%20-%20xsign.crt) | 6c3af02e7f269aa73afd0eff2a88a4a1f04ed1e5 |
-| [Microsoft Azure TLS Issuing CA 06](http://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2006%20-%20xsign.crt) | 30e01761ab97e59a06b41ef20af6f2de7ef4f7b0 |
+| [Microsoft Azure TLS Issuing CA 01](https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2001%20-%20xsign.crt) | 2f2877c5d778c31e0f29c7e371df5471bd673173 |
+| [Microsoft Azure TLS Issuing CA 02](https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2002%20-%20xsign.crt) | e7eea674ca718e3befd90858e09f8372ad0ae2aa |
+| [Microsoft Azure TLS Issuing CA 05](https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2005%20-%20xsign.crt) | 6c3af02e7f269aa73afd0eff2a88a4a1f04ed1e5 |
+| [Microsoft Azure TLS Issuing CA 06](https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2006%20-%20xsign.crt) | 30e01761ab97e59a06b41ef20af6f2de7ef4f7b0 |
+
+As an example, this is a valid certificate with one of the new certificate chains:
+
+![Teams TLS Certificate Chain](../media/teams-tls-certificate-chain.png)
 
 ## Will this change affect me?
 
@@ -96,16 +109,16 @@ Here are some ways to detect if your application may be impacted:
    - **IoT or embedded devices**: Embedded devices such as TV set top boxes often ship with a limited set of root authority certificates and have no easy way to update the certificate store. If you write code for, or manage deployments of, custom embedded or IoT devices, make sure the devices trust the new Root CAs. You may need to contact the device manufacturer.
 
 - If you have an environment where firewall rules allow outbound calls only to specific endpoints, allow the following Certificate Revocation List (CRL) or Online Certificate Status Protocol (OCSP) URLs:
-   - http://crl3.digicert.com
-   - http://crl4.digicert.com
-   - http://ocsp.digicert.com
-   - http://crl.microsoft.com
-   - http://oneocsp.microsoft.com
-   - http://ocsp.msocsp.com
-   - http://www.microsoft.com/pkiops
+   - `http://crl3.digicert.com`
+   - `http://crl4.digicert.com`
+   - `http://ocsp.digicert.com`
+   - `http://crl.microsoft.com`
+   - `http://oneocsp.microsoft.com`
+   - `http://ocsp.msocsp.com`
+   - `http://www.microsoft.com/pkiops`
 
 - If you are impacted by this change, you may see error messages dependent on the type of environment you are running in and scenario you are impacted by. Check Windows Application event logs, CAPI2 event logs, and custom application logs for messages that look like:
-   ```
+   ```output
    An operation failed because the following certificate has validation errors:
    
    Subject Name: CN=teams.microsoft.com
@@ -118,4 +131,4 @@ Here are some ways to detect if your application may be impacted:
 
 ## When can I retire the old CA information?
 
-The current Root CA, Intermediate CA, and leaf certificates will not be revoked. The existing CA Common Names and/or thumbprints will be required through at least Feb 2023 based on the lifetime of existing certificates.
+The current Root CA, Intermediate CA, and leaf certificates will not be revoked. The existing CA Common Names and/or thumbprints will be required through at least October 2023 based on the lifetime of existing certificates.

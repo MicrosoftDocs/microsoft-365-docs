@@ -91,7 +91,7 @@ Here's a list of MIP role groups that are in preview. To learn more about the, s
 
 6. Choose \> **Next**.
  
-1. <!-->, do one of the following:
+1. Do one of the following:
 
    - Choose **All locations in Office 365** \> **Next**.
    - Choose **Let me choose specific locations** \> **Next**. For this example, choose this.
@@ -100,9 +100,9 @@ Here's a list of MIP role groups that are in preview. To learn more about the, s
 
    To include only specific SharePoint sites or OneDrive for Business accounts, switch the **Status** to on, and then click the links under **Include** to choose specific sites or accounts. When you apply a policy to a site, the rules configured in that policy are automatically applied to all subsites of that site.
 
-   ![Options for locations where a DLP policy can be applied.](../media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
+   ![Options for locations where a DLP policy can be applied.](../media/all-locations.png)
 
-   In this example, to protect sensitive information stored in all OneDrive for Business accounts, turn off the **Status** for both **Exchange email** and **SharePoint sites**, and leave the **Status** on for **OneDrive accounts**.-->
+   In this example, to protect sensitive information stored in all OneDrive for Business accounts, turn off the **Status** for both **Exchange email** and **SharePoint sites**, and leave the **Status** on for **OneDrive accounts**.
 
 7. Choose **Review and customize default settings from the template** \> **Next**.
 
@@ -210,7 +210,7 @@ Here are the different statuses and what they mean.
 
 |Status|Explanation|
 |---|---|
-|**Turning on…**|The policy is being deployed to the content sources that it includes. The policy is not yet enforced on all sources.|
+|**Turning on...**|The policy is being deployed to the content sources that it includes. The policy is not yet enforced on all sources.|
 |**Testing, with notifications**|The policy is in test mode. The actions in a rule are not applied, but policy matches are collected and can be viewed by using the DLP reports. Notifications about policy matches are sent to the specified recipients.|
 |**Testing, without notifications**|The policy is in test mode. The actions in a rule are not applied, but policy matches are collected and can be viewed by using the DLP reports. Notifications about policy matches are not sent to the specified recipients.|
 |**On**|The policy is active and enforced. The policy was successfully deployed to all its content sources.|

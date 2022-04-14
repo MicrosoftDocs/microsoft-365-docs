@@ -10,7 +10,7 @@ ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 10/19/2018
+ms.date: 01/27/2022
 ms.reviewer:
 manager: dansimp
 ms.technology: mde
@@ -24,6 +24,10 @@ ms.collection: M365-security-compliance
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- Microsoft Defender Antivirus
+
+**Platforms**
+- Windows
 
 If you encounter a problem with Microsoft Defender Antivirus, you can search the tables in this topic to find a matching issue and potential solution.
 
@@ -39,6 +43,9 @@ The tables list:
 > - Cloud-delivered protection
 > - Fast learning (including Block at first sight)
 > - Potentially unwanted application blocking
+
+> [!NOTE]
+> The Defender for Endpoint demo site at demo.wd.microsoft.com is deprecated and will be removed in the future.
 
 <a id="windows-defender-av-ids"></a>
 ## Microsoft Defender Antivirus event IDs
@@ -2690,6 +2697,34 @@ Microsoft Defender Antivirus scanning for viruses is disabled.
 </td>
 </tr>
 <tr>
+<th colspan="2">Event ID: 5013</th>
+</tr>
+<tr><td>
+Symbolic name:
+</td>
+<td >
+<b>
+</b>
+</td>
+</tr>
+<tr>
+<td>
+Message:
+</td>
+<td >
+<b>Tamper protection blocked a change to Microsoft Defender Antivirus.
+</b>
+</td>
+</tr>
+<tr>
+<td>
+Description:
+</td>
+<td >
+If Tamper protection is enabled then, any attempt to change any of Defender's settings if blocked and Event ID 5013 is generated that states which setting change was blocked.
+</td>
+</tr>
+<tr>
 <th colspan="2">Event ID: 5100</th>
 </tr>
 <tr><td>
@@ -3293,6 +3328,17 @@ This is an internal error. It might have triggered when a scan fails to complete
 </td>
 </tr>
 </table>
+
+> [!TIP]
+> If you’re looking for Antivirus related information for other platforms, see:
+> - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
+> - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
+> - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md)
+> - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
+> - [Configure Defender for Endpoint on Android features](android-configure.md)
+> - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
+
 
 ## Related topics
 

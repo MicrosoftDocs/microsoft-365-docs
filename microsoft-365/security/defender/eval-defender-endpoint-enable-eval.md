@@ -17,7 +17,8 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
   - M365-security-compliance
-
+  - m365solution-scenario
+  - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
 ---
@@ -33,7 +34,7 @@ This article will guide you through the steps on setting up the evaluation envir
 
 Use the following steps to enable the evaluation for Microsoft Defender for Endpoint.
 
-![Steps to enable Microsoft Defender for Endpoint in the Microsoft Defender evaluation environment.](../../media/defender/m365-defender-endpoint-eval-enable-steps.png)
+:::image type="content" source="../../media/defender/m365-defender-endpoint-eval-enable-steps.png" alt-text="The steps to enable Microsoft Defender for Endpoint in the Microsoft Defender evaluation environment" lightbox="../../media/defender/m365-defender-endpoint-eval-enable-steps.png":::
 
 - [Step 1. Check license state](#step-1-check-license-state)
 - [Step 2. Onboard endpoints](#step-2-onboard-endpoints-using-any-of-the-supported-management-tools)
@@ -46,13 +47,14 @@ You'll first need to check the license state to verify that it was properly prov
 
 1. To view your licenses, go to the **Microsoft Azure portal** and navigate to the [Microsoft Azure portal license section](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products).
 
-   ![Image of Azure Licensing page.](../../media/defender/atp-licensing-azure-portal.png)
+   :::image type="content" source="../../media/defender/atp-licensing-azure-portal.png" alt-text="The Azure Licensing page in the Microsoft 365 Defender portal" lightbox="../../media/defender/atp-licensing-azure-portal.png":::
 
 1. Alternately, in the admin center, navigate to **Billing** > **Subscriptions**.
 
     On the screen, you'll see all the provisioned licenses and their current **Status**.
 
-    ![Image of billing licenses.](../../media/defender/atp-billing-subscriptions.png)
+    :::image type="content" source="../../media/defender/atp-billing-subscriptions.png" alt-text="The Billing licenses page in the Microsoft Azure portal" lightbox="../../media/defender/atp-billing-subscriptions.png":::
+    
 
 ## Step 2. Onboard endpoints using any of the supported management tools
 
@@ -74,7 +76,7 @@ The following table lists the available tools based on the endpoint that you nee
 
 Endpoint | Tool options
 :---|:---
-**Windows** | [Local script (up to 10 devices)](../defender-endpoint/configure-endpoints-script.md),  [Group Policy](../defender-endpoint/configure-endpoints-gp.md),  [Microsoft Endpoint Manager/ Mobile Device Manager](../defender-endpoint/configure-endpoints-mdm.md),  [Microsoft Endpoint Configuration Manager](../defender-endpoint/configure-endpoints-sccm.md),  [VDI scripts](../defender-endpoint/configure-endpoints-vdi.md),  [Integration with Microsoft Defender for Cloud](../defender-endpoint/configure-server-endpoints.md#integration-with-azure-defender)
+**Windows** | [Local script (up to 10 devices)](../defender-endpoint/configure-endpoints-script.md),  [Group Policy](../defender-endpoint/configure-endpoints-gp.md),  [Microsoft Endpoint Manager/ Mobile Device Manager](../defender-endpoint/configure-endpoints-mdm.md),  [Microsoft Endpoint Configuration Manager](../defender-endpoint/configure-endpoints-sccm.md),  [VDI scripts](../defender-endpoint/configure-endpoints-vdi.md),  [Integration with Microsoft Defender for Cloud](../defender-endpoint/configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)
 **macOS** | [Local scripts](../defender-endpoint/mac-install-manually.md),  [Microsoft Endpoint Manager](../defender-endpoint/mac-install-with-intune.md),  [JAMF Pro](../defender-endpoint/mac-install-with-jamf.md),  [Mobile Device Management](../defender-endpoint/mac-install-with-other-mdm.md)
 **Linux Server** | [Local script](../defender-endpoint/linux-install-manually.md),  [Puppet](../defender-endpoint/linux-install-with-puppet.md),  [Ansible](../defender-endpoint/linux-install-with-ansible.md)
 **iOS** | [App-based](../defender-endpoint/ios-install.md)

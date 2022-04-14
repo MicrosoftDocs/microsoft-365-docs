@@ -23,7 +23,7 @@ On  the tasks tab, you are expected to provide the paths to your test scripts wh
   - **Out of Box Test Scripts:** Type in the relative paths to your install, launch, close and uninstall scripts. You also have the option to select additional settings for the install script.
   - **Functional Test Scripts:** Type in the relative path to each functional test script uploaded. Additional functional test scripts can be added using the ```Add Script``` button. You need a minimum of one (1) script and can add up to eight (8) functional test scripts. 
   
-    The scripts are run in upload sequence and a failure in a particular script will stop subsequent scripts from executing.
+    The scripts run in the sequence they are listed. A failure in a particular script stops subsequent scripts from executing.
     You also have the option of selecting additional settings for each script provided.
 
 ## Set script path
