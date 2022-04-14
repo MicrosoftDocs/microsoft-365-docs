@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 02/24/2022
+ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -20,24 +20,20 @@ ms.collection:
 
 # Understand next-generation configuration settings in Microsoft Defender for Business
 
-> [!IMPORTANT]
-> Microsoft Defender for Business is rolling out to [Microsoft 365 Business Premium](../../business-premium/index.md) customers, beginning March 1, 2022. Defender for Business as a standalone subscription is in in preview, and will roll out gradually to customers and IT Partners who [sign-up here](https://aka.ms/mdb-preview) to request it. Preview includes an [initial set of scenarios](mdb-tutorials.md#try-these-preview-scenarios), and we will be adding capabilities regularly.
-> 
-> Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. 
+> [!NOTE]
+> Microsoft Defender for Business is now included in [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
 Next-generation protection in Defender for Business includes robust antivirus and antimalware protection. Your default policies are designed to protect your devices and users without hindering productivity; however, you can also customize your policies to suit your business needs. And, if you're using Microsoft Endpoint Manager, you can use that to manage your security policies.
 
 **This article describes**:
 
 - [Next-generation protection settings and options](#next-generation-protection-settings-and-options)
-
 - [Other preconfigured settings in Defender for Business](#other-preconfigured-settings-in-defender-for-business) 
-
 - [Defender for Business default settings and Microsoft Endpoint Manager](#defender-for-business-default-settings-and-microsoft-endpoint-manager)
 
 ## Next-generation protection settings and options
 
-The following table lists your settings and options:<br/><br/>
+The following table lists your settings and options:
 
 | Setting | Description |
 |:---|:---|
@@ -64,17 +60,13 @@ The following table lists your settings and options:<br/><br/>
 The following security settings are preconfigured in Defender for Business:
 
 - Scanning of removable drives is turned on ([AllowFullScanRemovableDriveScanning](/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning))
-
 - Daily quick scans don't have a preset time ([ScheduleQuickScanTime](/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime))
-
 - Security intelligence updates are checked before an antivirus scan runs ([CheckForSignaturesBeforeRunningScan](/windows/client-management/mdm/policy-csp-defender#defender-checkforsignaturesbeforerunningscan))
-
 - Security intelligence checks occur every four hours ([SignatureUpdateInterval](/windows/client-management/mdm/policy-csp-defender#defender-signatureupdateinterval))
 
 ## Defender for Business default settings and Microsoft Endpoint Manager
 
 The following table describes settings that are preconfigured for Defender for Business and how those settings correspond to what you might see in Microsoft Endpoint Manager (or Microsoft Intune). If you're using the [simplified configuration process in Defender for Business](mdb-simplified-configuration.md) (preview), you don't need to edit these settings.
-<br/><br/>
 
 | Setting  | Description  |
 |---------|---------|
@@ -93,16 +85,12 @@ The following table describes settings that are preconfigured for Defender for B
 ## Next steps
 
 - [View and manage incidents in Microsoft Defender for Business](mdb-view-manage-incidents.md)
-
 - [Respond to and mitigate threats in Microsoft Defender for Business](mdb-respond-mitigate-threats.md)
-
 - [Review remediation actions in the Action center](mdb-review-remediation-actions.md)
 
 
 ## See also
 
 - [Visit the Microsoft 365 Defender portal](mdb-get-started.md)
-
 - [Manage firewall settings in Microsoft Defender for Business](mdb-custom-rules-firewall.md)
-
 - [Policy CSP - Defender](/windows/client-management/mdm/policy-csp-defender)
