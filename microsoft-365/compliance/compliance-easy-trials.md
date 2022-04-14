@@ -13,12 +13,12 @@ ms.localizationpriority: high
 search.appverid: 
 - MOE150
 - MET150
-description: "Learn how to sign up for the Microsoft Purview solutions trial."
+description: "Learn details about the Microsoft Purview solutions trial and how to sign up."
 ---
 
 # About the Microsoft Purview solutions trial
 
-Microsoft Purview solutions help protect your organization from internal threats rising from inappropriate permissions on files and emails, and helps your organization to comply with regulatory and policy requirements.
+Microsoft Purview solutions help protect your organization from internal threats rising from inappropriate permissions on files and emails, and helps your organization to comply with regulatory and internal business requirements.
 
 The Microsoft Purview solutions trial is the easiest way to try all the capabilities of Microsoft Purview solutions, and setting it up only takes a couple of minutes. After the trial setup is complete, all features of the Microsoft E5 license package are available for you to use for up to 90 days.
 
@@ -41,7 +41,7 @@ Get details on roles at [About admin roles](../admin/add-users/about-admin-roles
 
 ## How to sign up for the trial
 
-You can sign up for a trial following these steps:
+Visit the [Microsoft 365 trials hub](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef) to sign up for the trial. You can also follow the steps below:
 
 1. In the [Microsoft Purview compliance portal](https://go.microsoft.com/fwlink/p/?linkid=2077149), select **Trials** on the left navigation to get to the Microsoft 365 trials hub.
 2. Under **Compliance trials**, find the **Microsoft Purview solutions** card and select **Try now**.
@@ -69,7 +69,7 @@ You can extend the trial within the last 15 days of the trial period. You're lim
 
 Admins can disable the trial anytime by going to the **Purview solutions trial** card in the Microsoft 365 trials hub (see [How to sign up for the trial](#how-to-sign-up-for-the-trial)) and selecting **End trial**.
 
-If you decide not to enroll in a feature that's part of the Purview solutions trial, unless stated otherwise for the solution, your trial data will be maintained for a period of time, usually 180 days, before being permanently deleted. You may continue to access the data gathered during the trial until that time.
+If you decide not to upgrade to the E5 level solutions, unless stated otherwise for the solution, your trial data will be maintained for a period of time, usually 180 days, before being permanently deleted. You may continue to access the data gathered during the trial until that time.
 
 ## Learn more about Purview solutions
 
