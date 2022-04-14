@@ -382,12 +382,18 @@
       items: 
         - name: Get ready
           href: configure-services-and-applications.md
+        - name: External collaboration
+          href: external-guest-access.md
         - name: Exchange Online
           href: /Exchange/exchange-online
         - name: SharePoint
           href: /sharepoint/sharepoint-online
         - name: Microsoft Teams
           href: /MicrosoftTeams/Teams-overview
+        - name: Meetings and conferencing
+          href: /microsoftteams/deploy-meetings-microsoft-teams-landing-page
+        - name: Teams voice
+          href: /microsoftteams/cloud-voice-landing-page
         - name: Yammer
           href: https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe
         - name: Activate rights management
@@ -407,7 +413,7 @@
         - name: SharePoint
           href: /sharepoint/introduction
         - name: Microsoft Teams
-          href: /microsoftteams/upgrade-monitor-quality
+          href: /microsoftteams/manage-teams-overview
         - name: Yammer
           href: https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe
         - name: Performance and tuning
