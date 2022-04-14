@@ -24,7 +24,13 @@ ms.collection:
 > [!NOTE]
 > Microsoft Defender for Business is now included in [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
-Microsoft Defender for Business provides a streamlined setup and configuration experience, designed especially for the small and medium-sized business. Use this article as a guide.
+Microsoft Defender for Business provides a streamlined setup and configuration experience, designed especially for the small and medium-sized business. Use this article as a guide for the overall process.
+
+> [!TIP]
+> If you used the [setup wizard](mdb-use-wizard.md), then you've already completed several steps of your basic setup process. In this case, you can:
+> - [Onboard more devices](mdb-onboard-devices.md)
+> - [Configure your security policies and settings](mdb-configure-security-settings.md)
+> - [Visit your vulnerability management dashboard](mdb-view-tvm-dashboard.md)
 
 >
 > **Got a minute?**
@@ -32,6 +38,8 @@ Microsoft Defender for Business provides a streamlined setup and configuration e
 >
 
 ## The setup and configuration process
+
+The following diagram depicts the overall setup and configuration process for Defender for Business. If you used the setup wizard, then you've likely already completed steps 1-3, and possibly step 4. 
 
 :::image type="content" source="media/mdb-setup-process-2.png" alt-text="Setup and configuration process for Microsoft Defender for Business.":::
 
