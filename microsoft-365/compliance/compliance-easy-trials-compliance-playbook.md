@@ -41,17 +41,17 @@ Optional add-ons:
 - [Compliance Manager premium assessments](#compliance-manager-premium-assessments)
 - [Microsoft Priva Privacy Risk Management and Microsoft Priva Subject Rights Requests](#microsoft-priva-privacy-risk-management-and-microsoft-priva-subject-rights-requests)
 
-## Compliance Actions with Microsoft 365
+## Compliance Actions with Microsoft Purview
 
 Easily and quickly start trying Microsoft’s compliance solutions without changing your organization’s meta data. Depending on your priorities, you can start with any of these solution areas to see immediate value. Below are five top organizational concerns as communicated by our customers and recommended solutions to start with.
 
 :::image type="content" source="../media/compliance-trial/workflow.png" alt-text="Compliance actions with Microsoft 365":::
 
-## Advanced Audit
+## Audit (Premium)
 
 **Conduct investigations**
 
-Advanced Audit helps organizations to conduct forensic and compliance investigations by increasing audit log retention required to conduct an investigation, providing access to crucial events that help determine scope of compromise, and providing faster access to the Office 365 Management Activity API.
+Microsoft Purview Audit (Premium) helps organizations to conduct forensic and compliance investigations by increasing audit log retention required to conduct an investigation, providing access to crucial events that help determine scope of compromise, and providing faster access to the Office 365 Management Activity API.
 
 ### Step 1: [Apply the E5 license to each user for which you’d like to generate E5 events](set-up-advanced-audit.md#step-1-set-up-audit-premium-for-users)
 
@@ -82,7 +82,7 @@ Audit log retention policies are part of the new Advanced Audit capabilities in 
 
 **Identify and act on code of conduct policy violations**
 
-Communication compliance helps you intelligently identify communication violations to support a compliant and healthy work environment by helping you detect inappropriate messages, investigate possible policy violations, and take steps to remediate.
+Microsoft Purview Communication Compliance helps you intelligently identify communication violations to support a compliant and healthy work environment by helping you detect inappropriate messages, investigate possible policy violations, and take steps to remediate.
 
 ### Step 1: [Enable permissions for communication compliance](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance)
 
@@ -110,7 +110,7 @@ To use this feature, turn on auditing so your organization can start recording u
 
 **Manage your organizational compliance easily**
 
-Compliance Manager can help you throughout your compliance journey, from taking inventory of your data protection risks to managing the complexities of implementing controls, staying current with regulations and certifications, and reporting to auditors.
+Microsoft Purview Compliance Manager can help you throughout your compliance journey, from taking inventory of your data protection risks to managing the complexities of implementing controls, staying current with regulations and certifications, and reporting to auditors.
 
 ### Step 1: [Get to know Compliance Manager](compliance-manager-quickstart.md#first-visit-get-to-know-compliance-manager)
 
@@ -168,7 +168,7 @@ Custom assessments are helpful for:
 
 **Protect sensitive data**
 
-To comply with business standards and industry regulations, organizations need to protect sensitive info to prevent its inadvertent disclosure. Set up data loss prevention policies to identify, monitor, and automatically protect sensitive info across Microsoft 365.
+To comply with business standards and industry regulations, organizations need to protect sensitive info to prevent its inadvertent disclosure. Set up Microsoft Purview Data Loss Prevention policies to identify, monitor, and automatically protect sensitive info across Microsoft 365.
 
 ### Step 1: [Protect data loss on Teams locations](dlp-microsoft-teams.md#dlp-licensing-for-microsoft-teams)
 
@@ -353,7 +353,7 @@ To enable insider risk Analytics, you must be a member of the Insider Risk Manag
 
 **Automate the retention schedule for business-critical records**
 
-Use integrated Records Management features to automate the retention schedule for organizational regulatory, legal, and business-critical records. Get full content lifecycle support, from creation to collaboration, record declaration, retention, and disposition.
+Use integrated Microsoft Purview Records Management features to automate the retention schedule for organizational regulatory, legal, and business-critical records. Get full content lifecycle support, from creation to collaboration, record declaration, retention, and disposition.
 
 ### Step 1: Dynamically target retention policies with Adaptive Policy Scopes
 

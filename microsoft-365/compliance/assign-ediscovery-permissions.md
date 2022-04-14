@@ -87,8 +87,8 @@ The following table lists the eDiscovery-related RBAC roles in the compliance po
 |Preview <br/>  | <br/> |![Check mark.](../media/checkmark.png) <br/> | <br/> | <br/> |
 |Review <br/>  | <br/> |![Check mark.](../media/checkmark.png) <br/> | <br/> |![Check mark](../media/checkmark.png) <br/> |
 |RMS Decrypt <br/>  ||![Check mark](../media/checkmark.png) <br/> |||
-|Search And Purge <br/> | <br/> | <br/> |![Check mark](../media/checkmark.png)           <br/> | <br/> |
-||||
+|Search And Purge <br/> | <br/> | <br/> |![Check mark](../media/checkmark.png)<br/> | <br/> |
+||||||
   
 The following sections describe each of the eDiscovery-related RBAC roles listed in the previous table.
 
