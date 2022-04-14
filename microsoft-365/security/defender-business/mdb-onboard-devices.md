@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 04/12/2022
+ms.date: 04/14/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -40,6 +40,8 @@ With Microsoft Defender for Business, you have several options to choose from fo
 3. Proceed to your next steps.
 
 ## [**Windows clients**](#tab/WindowsClients)
+
+## Windows clients
 
 Choose one of the following options to onboard Windows client devices to Defender for Business:
 
