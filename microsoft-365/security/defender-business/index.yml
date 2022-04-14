@@ -49,8 +49,6 @@ landingContent:
             url: mdb-get-started.md
           - text: Use the setup wizard
             url: mdb-use-wizard.md
-          - text: View your Threat & Vulnerability Management dashboard
-            url: mdb-view-tvm-dashboard.md
           - text: Try tutorials and simulations
             url: mdb-tutorials.md
 
@@ -79,6 +77,8 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
+          - text: View your Threat & Vulnerability Management dashboard
+            url: mdb-view-tvm-dashboard.md
           - text: View and manage incidents
             url: mdb-view-manage-incidents.md
           - text: Respond to and mitigate threats
