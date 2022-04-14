@@ -34,6 +34,15 @@ Microsoft Defender for Business was designed to save small and medium-sized busi
 > Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about security</a>. We'd love to hear from you!
 >
 
+## How to start the setup wizard
+
+> [!IMPORTANT]
+> You must be a global administrator to run the setup wizard. The person who signed up your company for Microsoft 365 or for Microsoft Defender for Business is a global administrator by default.
+
+1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
+
+2. Under **Endpoints**, choose **Device inventory**. 
+
 ## Overview of the setup wizard
 
 > [!IMPORTANT]
