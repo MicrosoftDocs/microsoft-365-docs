@@ -22,7 +22,7 @@ This is a comprehensive guide for you to create a new package and test it on Tes
 
 ## Test Binaries package on Test Base
 
-Learn more ([link](testapplication.md)) on how to create a package with Binaries (i.e., exe or msi).
+Learn more ([link](testapplication.md)) on how to create a package with Binaries (i.e., .exe or .msi).
 
 ## Test your Intune app on Test Base
 
