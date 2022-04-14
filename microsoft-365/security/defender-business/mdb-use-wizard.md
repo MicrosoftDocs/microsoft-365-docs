@@ -98,6 +98,4 @@ See [Set up and configure Microsoft Defender for Business](mdb-setup-configurati
 
 ## Next steps
 
-- [Set up email notifications for your security team](mdb-email-notifications.md)
-- [Get started using the Microsoft 365 Defender portal](mdb-get-started.md)
-- [Use your Threat & Vulnerability Management dashboard](mdb-view-tvm-dashboard.md)
+- [View and edit your security policies and settings in Microsoft Defender for Business](mdb-configure-security-settings.md)
