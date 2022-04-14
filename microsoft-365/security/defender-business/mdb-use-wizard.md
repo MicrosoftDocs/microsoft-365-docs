@@ -57,7 +57,7 @@ The wizard is designed to help you set up and configure Defender for Business qu
 
 3. **Onboard and configure Windows devices**. In this step, you can onboard your company's Windows devices to Defender for Business quickly. Onboarding devices right away helps to protect those devices from day one. 
 
-   - **If you're already using Microsoft Endpoint Manager** (which includes Microsoft Intune), and your company has devices enrolled in Endpoint Manager, you'll be asked whether you want to use [automatic onboarding](mdb-onboard-devices.md#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager) for some or all of your enrolled Windows devices. Automatic onboarding sets up a connection between Endpoint Manager and Defender for Business, and then onboards Windows devices to Defender for Business seamlessly. 
+   - **If you're already using Microsoft Endpoint Manager** (which includes Microsoft Intune), and your company has devices enrolled in Endpoint Manager, you'll be asked whether you want to use [automatic onboarding](#what-is-automatic-onboarding) for some or all of your enrolled Windows devices. Automatic onboarding sets up a connection between Endpoint Manager and Defender for Business, and then onboards Windows devices to Defender for Business seamlessly. 
    - **If you're not already using Endpoint Manager**, you can [onboard devices to Defender for Business by using a local script](mdb-onboard-devices.md#local-script-in-defender-for-business). 
    
    See [Learn more about onboarding devices to Microsoft Defender for Business](mdb-onboard-devices.md).
@@ -65,6 +65,16 @@ The wizard is designed to help you set up and configure Defender for Business qu
 4. **Configure your security policies**. Defender for Business includes default security policies for next-generation protection and firewall protection that can be applied to your company's devices. These default policies use recommended settings and are designed to provide strong protection for your devices. You can also create your own security policies. And, if you're already using Endpoint Manager, you can continue using that to manage your security policies.
 
    To learn more, see [View and edit your security policies and settings](mdb-configure-security-settings.md). |
+
+## What is automatic onboarding?
+
+Automatic onboarding is a simplified way to onboard Windows devices to Defender for Business. Automatic onboarding is only available for devices that are already enrolled in Microsoft Endpoint Manager (or Microsoft Intune). 
+
+While you are using the setup wizard, the system will detect whether Windows devices are already enrolled in Endpoint Manager. You'll be asked if you want to use automatic onboarding for all or some of those devices. You can onboard all Windows devices at once, or select specific devices to start with, and then add more devices later.
+
+> [!TIP]
+> - We recommend selecting the "all devices enrolled" option. That way, when Windows devices are enrolled in Endpoint Manager later on, they'll be onboarded to Defender for Business automatically. 
+> - If you've been managing security policies and settings in Endpoint Manager, we recommend switching to the Microsoft 365 Defender portal to manage your devices, policies, and settings. To learn more, see [Choose where to manage security policies and devices](mdb-configure-security-settings.md#choose-where-to-manage-security-policies-and-devices).
 
 ## What happens if I don't use the wizard?
 
