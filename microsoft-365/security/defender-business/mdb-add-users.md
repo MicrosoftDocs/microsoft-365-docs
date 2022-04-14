@@ -45,4 +45,5 @@ As soon as you have signed up for Microsoft Defender for Business, your first st
 
 ## Next steps
 
-Proceed to [Use the setup wizard in Microsoft Defender for Business](mdb-use-wizard.md).
+- [Visit the Microsoft 365 Defender portal](mdb-get-started.md)
+- [Use the setup wizard in Microsoft Defender for Business](mdb-use-wizard.md).
