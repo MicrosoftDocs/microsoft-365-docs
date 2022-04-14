@@ -17,6 +17,7 @@ ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
 - AdminTemplateSet
+- business_assist
 search.appverid:
 - BCS160
 - MET150
@@ -37,6 +38,9 @@ You can create up to 400 aliases for a user. No additional fees or licenses are 
   
 > [!Tip]
 > If you want multiple people to manage email sent to a single email address like info@NodPublishers.com or sales@NodPublishers.com, create a shared mailbox. To learn more, see [Create a shared mailbox](create-a-shared-mailbox.md).
+
+> [!TIP]
+> If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
   
 ## Add email aliases to a user
 
@@ -57,7 +61,7 @@ You must have Global Admin rights to add email aliases to a user.
 
 
    > [!IMPORTANT]
-   >  If you get the error message **This user is synchronized with your local Active Directory‎. Some details can be edited only through your local Active Directory**, It means that the Active Directory is authoritative for  attributes on synchronized users, you need to modify the attributes in your on-premises Active Directory.
+   >  If you get the error message **This user is synchronized with your local Active Directory. Some details can be edited only through your local Active Directory**, It means that the Active Directory is authoritative for  attributes on synchronized users, you need to modify the attributes in your on-premises Active Directory.
   
     > [!TIP]
     > The email alias must end with a domain from the drop-down list. To add another domain name to the list, see [Add a domain to Microsoft 365](../setup/add-domain.md). 

@@ -322,7 +322,7 @@
             href: named-entities-learn.md
         - name: Get started with sensitive information type
           items:
-          - name: Get started with custom sensitive information types - Compliance Center
+          - name: Create a custom sensitive information types - Compliance Center
             href: create-a-custom-sensitive-information-type.md
           - name: Get started with exact data match based sensitive information types
             href: sit-get-started-exact-data-match-based-sits-overview.md
@@ -342,8 +342,12 @@
             href: customize-a-built-in-sensitive-information-type.md
           - name: Modify exact data match schema to use configurable match
             href: sit-modify-edm-schema-configurable-match.md
-          - name: Create notifications for exact data match activities (preview)
+          - name: Create notifications for exact data match activities
             href: sit-edm-notifications-activities.md
+          - name: Manage custom sensitive information types in compliance center
+            href: sit-manage-custom-sits-compliance-center.md
+          - name: Sensitive information types REGEX validators and additional checks
+            href: sit-regex-validators-additional-checks.md
           - name: Create a custom sensitive information type - PowerShell
             href: create-a-custom-sensitive-information-type-in-scc-powershell.md
           - name: Remove a custom sensitive information type - PowerShell
@@ -366,8 +370,8 @@
           items:
           - name: Sensitive information type entity definitions 
             href: sensitive-information-type-entity-definitions.md
-          - name: What the DLP functions look for
-            href: what-the-dlp-functions-look-for.md
+          - name: Sensitive information type functions
+            href: sit-functions.md
           - name: Custom sensitive information type filters reference
             href: sit-custom-sit-filters.md
     - name: Trainable classifiers
@@ -392,6 +396,8 @@
       items:
         - name: Learn about sensitivity labels
           href: sensitivity-labels.md
+        - name: Why choose MIP built-in labeling for Office apps
+          href: sensitivity-labels-aip.md
         - name: Get started with sensitivity labels
           href: get-started-with-sensitivity-labels.md
         - name: Create and publish sensitivity labels
@@ -406,6 +412,8 @@
           href: sensitivity-labels-sharepoint-onedrive-files.md
         - name: Enable co-authoring for documents encrypted by sensitivity labels
           href: sensitivity-labels-coauthoring.md
+        - name: Set the default sharing link type by using sensitivity labels
+          href: sensitivity-labels-default-sharing-link.md
         - name: Manage sensitivity labels in Office apps
           href: sensitivity-labels-office-apps.md
     - name: Encryption
@@ -509,6 +517,8 @@
             href: dlp-policy-reference.md 
         - name: Get started with DLP
           items:
+          - name: Configure endpoint data loss prevention settings
+            href: dlp-configure-endpoint-settings.md
           - name: Get started with the default DLP policy
             href: get-started-with-the-default-dlp-policy.md
           - name: Create a DLP policy from a template
@@ -525,6 +535,8 @@
             href: dlp-chrome-get-started.md
           - name: Get started with the data loss prevention alert dashboard
             href: dlp-alerts-dashboard-get-started.md
+          - name: Get started with Data loss prevention policies for Power BI (preview)
+            href: dlp-powerbi-get-started.md
         - name: Use DLP
           items:
             - name: DLP and Microsoft Teams
@@ -770,7 +782,7 @@
             href: export-a-content-search-report.md
           - name: Use a script to add users to an eDiscovery hold
             href: use-a-script-to-add-users-to-a-hold-in-ediscovery.md
-          - name: Create a report on eDiscovery holds
+          - name: Use a script to create a holds report
             href: create-a-report-on-holds-in-ediscovery-cases.md
           - name: View statistics for search results
             href: view-keyword-statistics-for-content-search.md
@@ -826,11 +838,18 @@
               href: manage-hold-notification.md
             - name: Acknowledge a hold notification
               href: acknowledge-hold-notification.md
+            - name: Manage issuing officers
+              href: advanced-ediscovery-issuing-officers.md
+            - name: Manage custodian communications templates
+              href: advanced-ediscovery-communications-library.md
         - name: Manage holds
           href: managing-holds.md
+          items:
+            - name: Use a script to create a holds report
+              href: create-a-report-on-holds-in-ediscovery-cases.md
         - name: Manage processing errors
           href: processing-data-for-case.md
-          items: 
+          items:
             - name: Advanced indexing of custodian content
               href: indexing-custodian-data.md
             - name: Error remediation when processing content
@@ -922,6 +941,8 @@
               href: supported-filetypes-ediscovery20.md
             - name: Document metadata fields
               href: document-metadata-fields-in-advanced-ediscovery.md
+            - name: Search and purge Teams chat messages
+              href: search-and-delete-Teams-chat-messages.md
             - name: Set up historical versions
               href: advanced-ediscovery-historical-versions.md
             - name: Set up attorney-client privilege detection
@@ -1032,8 +1053,10 @@
           href: compliance-manager-templates-format-excel.md
         - name: Compliance Manager templates list
           href: compliance-manager-templates-list.md
-        - name: Assign and complete improvement actions
+        - name: Working with improvement actions
           href: compliance-manager-improvement-actions.md
+        - name: Create and manage alert policies
+          href: compliance-manager-alert-policies.md
         - name: How your compliance score is calculated
           href: compliance-score-calculation.md
         - name: Compliance Configuration Analyzer tool

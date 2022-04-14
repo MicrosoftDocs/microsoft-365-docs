@@ -17,6 +17,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.custom:
+- admindeeplinkCOMPLIANCE
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: With records management in Microsoft 365, you can apply your retention schedules into a file plan that manages retention, records declaration, and disposition.
@@ -81,16 +82,16 @@ A standard retention label has retention settings and actions but doesn't mark c
 |Move within container <sup>3</sup>|Allowed |Allowed | Allowed| Allowed|
 |Move across containers <sup>3</sup>|Allowed |Allowed if never unlocked | **Blocked** | **Blocked**|
 |Open/Read|Allowed |Allowed | Allowed| Allowed|
-|Change label|Allowed |Allowed - container admin only | Allowed - container admin only| **Blocked**
-|Remove label|Allowed |Allowed - container admin only | Allowed - container admin only| **Blocked**
+|Change label|Allowed |Allowed - container admin only | **Blocked**| **Blocked**
+|Remove label|Allowed |Allowed - container admin only | **Blocked**| **Blocked**
 
 Footnotes:
 
 <sup>1</sup>
-Allowed by default but can be blocked by a tenant setting for files that are larger than 0 bytes: Go to the **Records management** node in the Microsoft 365 compliance center > **Records management settings** > **Retention labels** > **Allow editing of record properties** and then turn off the setting **Allow users to edit record properties**.
+Editing properties for a locked record is allowed by default but can be blocked by a tenant setting in the [Microsoft 365 compliance center](https://compliance.microsoft.com/) > **Records management** > **Records management settings** > **Retention labels** > **Allow editing of record properties**.
 
 <sup>2</sup>
-For SharePoint and OneDrive, can be blocked as a tenant setting in the Microsoft 365 compliance center > **Records management** > **Records management settings** > **Retention labels** > **Deletion of items**
+Deleting labeled items in SharePoint and OneDrive can be blocked as a tenant setting in the [Microsoft 365 compliance center](https://compliance.microsoft.com/) > **Records management** > **Records management settings** > **Retention labels** > **Deletion of items**.
 
 When you apply a retention label to a list item that has a document attachment, that document doesn't inherit the retention settings and can be deleted from the list item. In comparison, if that list item was declared a record with a retention label, the document attachment would inherit the retention settings and couldn't be deleted.
 

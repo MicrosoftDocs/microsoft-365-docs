@@ -28,13 +28,13 @@ The [data classification overview](data-classification-overview.md) and [content
 
 There are over 30 different filters available for use, some are:
 
-- date range
-- activity type
-- location
-- user
-- sensitivity label
-- retention label
-- file path
+- Date range
+- Activity type
+- Location
+- User
+- Sensitivity label
+- Retention label
+- File path
 - DLP policy
 
 
@@ -96,29 +96,29 @@ Activity explorer gathers activity information from the audit logs on multiple s
 
 **Sensitivity label activities** and **Retention labeling activities** from Office native applications, Azure Information Protection add-in, SharePoint Online, Exchange Online (sensitivity labels only), and OneDrive. Some examples are:
 
-- label applied
-- label changed (upgraded, downgraded, or removed)
-- auto-labeling simulation
-- file read 
+- Label applied
+- Label changed (upgraded, downgraded, or removed)
+- Autolabeling simulation
+- File read
 
 **Azure Information Protection (AIP) scanner and AIP clients**
 
-- protection applied
-- protection changed
-- protection removed
-- files discovered 
+- Protection applied
+- Protection changed
+- Protection removed
+- Files discovered
 
 Activity explorer also gathers **DLP policy matches** events from Exchange Online, SharePoint Online, OneDrive, Teams Chat and Channel (preview), on-premises SharePoint folders and libraries, and on-premises file shares, and Windows 10 devices via **Endpoint data loss prevention (DLP)**. Some examples events from Windows 10 devices are file:
 
-- deletions
-- creations
-- copied to clipboard
-- modified
-- read
-- printed
-- renamed
-- copied to network share
-- accessed by unallowed app 
+- Deletions
+- Creations
+- Copied to clipboard
+- Modified
+- Read
+- Printed
+- Renamed
+- Copied to network share
+- Accessed by unallowed app 
 
 Understanding what actions are being taken with your sensitive labeled content helps you see if the controls that you have in place, such as [data loss prevention](dlp-learn-about-dlp.md) policies are effective or not. If not, or if you discover something unexpected, such as a large number of items that are labeled `highly confidential` and are downgraded `general`, you can manage your various policies and take new actions to restrict the undesired behavior.
 

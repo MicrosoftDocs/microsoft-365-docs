@@ -31,12 +31,12 @@ You can use the Content search feature to search for and delete email messages f
 
 - Messages that contain sensitive data
 
-> [!CAUTION]
-> Search and purge is a powerful feature that allows anyone that is assigned the necessary permissions to delete email messages from mailboxes in your organization.
+> [!TIP]
+> If your organization has a Defender for Office 365 Plan 2 subscription, we recommend using the procedure detailed in [Remediate malicious email delivered in Office 365](/microsoft-365/security/office-365-security/remediate-malicious-email-delivered-office-365), rather than following the procedure described in this article.
 
 ## Before you begin
 
-- The search and purge workflow described in this article doesn't delete chat messages or other content from Microsoft Teams. If the Content search that you create in Step 2 returns items from Microsoft Teams, those items won't be deleted when you purge items in Step 3.
+- The search and purge workflow described in this article doesn't delete chat messages or other content from Microsoft Teams. If the Content search that you create in Step 2 returns items from Microsoft Teams, those items won't be deleted when you purge items in Step 3. To search for and delete chat messages, see [Search and purge chat messages in Teams](search-and-delete-Teams-chat-messages.md).
 
 - To create and run a Content search, you have to be a member of the **eDiscovery Manager** role group or be assigned the **Compliance Search** role in the Microsoft 365 compliance center. To delete messages, you have to be a member of the **Organization Management** role group or be assigned the **Search And Purge** role in the compliance center For information about adding users to a role group, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
 

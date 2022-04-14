@@ -32,7 +32,7 @@ Validating devices ensures that they'll deliver the user experience you expect.
 **To validate devices:**
 
 1. Take one or more examples of new models through the steps in the following articles:
-    - [Set up Microsoft Managed Desktop devices](set-up-devices.md)
+    - [Prepare devices](prepare-devices.md)
     - [Localize the user experience](localization.md)
     - [First-run experience with Autopilot and the Enrollment Status Page](esp-first-run.md)
     - [Windows 10 location service](device-location.md)

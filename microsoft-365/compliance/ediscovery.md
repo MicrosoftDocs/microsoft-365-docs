@@ -79,7 +79,7 @@ Here's a description of each eDiscovery capability.
 
 - **Export search results**. Export search results to a local computer in your organization in a two-step process. When you export search results, items are copied from their original content location in Microsoft 365 to a Microsoft-provided Azure Storage location. Then you can download those items to a local computer.
 
-- **Role-based permissions**. Use role-based access (RBAC) permissions to control what eDiscovery-related tasks that different users can perform. You can users to built-in eDiscovery-related role group or create custom role groups that assign specific eDiscovery permissions.
+- **Role-based permissions**. Use role-based access (RBAC) permissions to control what eDiscovery-related tasks that different users can perform. You can use a built-in eDiscovery-related role group or create custom role groups that assign specific eDiscovery permissions.
 
 - **Case management**. eDiscovery cases in Core eDiscovery and Advanced eDiscovery let you associate specific searches and exports with a specific investigation. You can also assign members to a case to control who can access the case and view the contents of the case.
 
@@ -101,7 +101,7 @@ Here's a description of each eDiscovery capability.
 
 - **Conversation threading**. When chat messages from Teams and Yammer conversations are added to a review set, you can collect the entire conversation thread. This means that the entire chat conversation that contains items that match the collection criteria is added to the review set. This lets you review chat items in the context of the back-and-forth conversation.
 
-- **Collection statistics and reports**. After you create a draft collection or commit a commit a collection to a review set, you can view a rich set of statistics on the retrieved items, such as the content locations that contain the most items that matched the search criteria and the number of items returned by the search query. You can also preview a subset of the results. Additionally, this includes the number of child items extracted from their parent items and added as separate items to the review set.
+- **Collection statistics and reports**. After you create a draft collection or commit a collection to a review set, you can view a rich set of statistics on the retrieved items, such as the content locations that contain the most items that matched the search criteria and the number of items returned by the search query. You can also preview a subset of the results.
 
 - **Review set filtering**. After content is added to a review set, you can apply filters to display only the set of items that match your filtering criteria. Then you can save the filter sets as a query, which lets you quickly reapply the saved filters. Review set filtering and saved queries help you quickly cull content to the items that are most relevant to your investigation.
 
@@ -127,6 +127,8 @@ The following sections show the minimum subscription requirements for Content se
 - Microsoft 365 G1 subscription
 - Microsoft 365 F1 or F3 subscription, or F5 Security add-on
 - Microsoft 365 Business Premium subscription
+- Microsoft 365 Business Standard subscription
+- Microsoft 365 Business Basic subscription
 - Office 365 Education A1 subscription
 - Office 365 E1 subscription
 

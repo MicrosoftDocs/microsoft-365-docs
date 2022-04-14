@@ -13,7 +13,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
   - m365-security-compliance
-  - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
 ---
@@ -35,15 +34,15 @@ Set up the device groups similar to Group policy  organizational unite (OUs), Mi
 
 2. Select **New**. 
 
-    ![Image of Jamf Pro1.](images/jamf-pro-static-group.png)
+   :::image type="content" source="images/jamf-pro-static-group.png" alt-text="The Jamf Pro1 page" lightbox="images/jamf-pro-static-group.png":::
 
 3. Provide a display name and select **Save**.
 
-    ![Image of Jamf Pro2.](images/jamfpro-machine-group.png)
+   :::image type="content" source="images/jamfpro-machine-group.png" alt-text="The Jamf Pro2 page" lightbox="images/jamfpro-machine-group.png":::
 
 4. Now you will see the **Contoso's Machine Group** under **Static Computer Groups**.
 
-    ![Image of Jamf Pro3.](images/contoso-machine-group.png)
+   :::image type="content" source="images/contoso-machine-group.png" alt-text="The Jamf Pro3 page" lightbox="images/contoso-machine-group.png":::
 
 ## Next step
 - [Set up Microsoft Defender for Endpoint on macOS policies in Jamf Pro](mac-jamfpro-policies.md)

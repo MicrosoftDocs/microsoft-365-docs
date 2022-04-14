@@ -18,7 +18,7 @@ Microsoft Managed Desktop uses both [Windows Autopilot](/windows/deployment/wind
 
 ## Initial deployment
 
-To provide the ESP experience, you must register devices in the Microsoft Managed Desktop service. For more about registration, see [Register new devices yourself](../get-started/register-devices-self.md) or [Steps for Partners to register devices](../get-started/register-devices-partner.md).
+To provide the ESP experience, you must register devices in the Microsoft Managed Desktop service. For more about registration, see [Manual registration](../get-started/manual-registration.md) or [Partner registration](../get-started/partner-registration.md).
 Enrollment Status Page and Autopilot for pre-provisioned deployment are enabled by default in Microsoft Managed Desktop.
 
 ## Autopilot profile settings
@@ -125,7 +125,7 @@ You might want to request a different device name template. You can't, however, 
 1. Deploy and assign [Intune Company Portal](company-portal.md).
 1. [Assign licenses](assign-licenses.md).
 1. [Deploy apps](deploy-apps.md).
-1. [Set up devices](set-up-devices.md).
+1. [Prepare devices](prepare-devices.md).
 1. Set up first-run experience with Autopilot and the Enrollment Status Page (this article).
 1. [Enable user support features](enable-support.md).
 1. [Get your users ready to use devices](get-started-devices.md).
