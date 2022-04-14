@@ -100,4 +100,5 @@ See [Set up and configure Microsoft Defender for Business](mdb-setup-configurati
 
 ## Next steps
 
+- [Onboard more devices to Microsoft Defender for Business](mdb-onboard-devices.md)
 - [View and edit your security policies and settings in Microsoft Defender for Business](mdb-configure-security-settings.md)
