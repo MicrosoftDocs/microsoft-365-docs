@@ -25,27 +25,18 @@ ms.custom: intro-get-started
 > [!NOTE]
 > Microsoft Defender for Business is now included in [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
-After you've signed up for Microsoft Defender for Business, you'll want to get acquainted with the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). This article includes the following sections:
+After you've signed up for Microsoft Defender for Business, you'll want to get acquainted with the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). The Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) is your one-stop shop for using and managing Microsoft Defender for Business. It includes a welcome banner and callouts to help you get started, cards that surface relevant information, and a navigation bar to give you easy access to the various features and capabilities.
 
-- [How to navigate the Microsoft 365 Defender portal](#navigate-the-microsoft-365-defender-portal)
-- [Learning modules about incidents and response actions](#complete-a-learning-module-about-incidents-and-response-actions) 
-- [Next steps](#next-steps)
+:::image type="content" source="../../media/defender-business/mdb-portal-home.png" alt-text="Microsoft 365 Defender portal":::
 
+ 
 >
 > **Got a minute?**
 > Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about security</a>. We'd love to hear from you!
 >
 
 
-## How to navigate the Microsoft 365 Defender portal
-
-The Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) is your one-stop shop for using and managing Microsoft Defender for Business. It includes a welcome banner and callouts to help you get started, cards that surface relevant information, and a navigation bar to give you easy access to the various features and capabilities.
- 
-Take a moment to get acquainted with your Microsoft 365 Defender portal.
-
-:::image type="content" source="../../media/defender-business/mdb-portal-home.png" alt-text="Microsoft 365 Defender portal":::
-
-### Use the navigation bar
+## The navigation bar
 
 Use the navigation bar on the left side of the screen to access your incidents, view reports, and manage your security policies. The following table describes items you'll see in your navigation bar.
 
