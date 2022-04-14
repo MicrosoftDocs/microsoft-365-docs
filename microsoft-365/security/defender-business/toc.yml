@@ -21,8 +21,6 @@
         href: mdb-get-started.md
       - name: Use the setup wizard
         href: mdb-use-wizard.md
-      - name: View your vulnerability management dashboard
-        href: mdb-view-tvm-dashboard.md
       - name: Try tutorials and simulations
         href: mdb-tutorials.md
     - name: Set up and configure Defender for Business
@@ -41,6 +39,8 @@
         href: mdb-configure-security-settings.md
     - name: View and respond to detected threats
       items: 
+      - name: View your vulnerability management dashboard
+        href: mdb-view-tvm-dashboard.md
       - name: View and manage incidents
         href: mdb-view-manage-incidents.md
       - name: Respond to and mitigate threats
