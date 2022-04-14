@@ -84,7 +84,9 @@ While you are using the setup wizard, the system will detect whether Windows dev
 
 ## What happens if I don't use the wizard?
 
-Using the setup wizard is optional. If you choose not to use the wizard, or if the wizard is closed before your setup process is complete, you can complete the setup and configuration process on your own. See [Set up and configure Microsoft Defender for Business](mdb-setup-configuration.md) to walk through these steps:
+Using the setup wizard is optional. If you choose not to use the wizard, or if the wizard is closed before your setup process is complete, you can complete the setup and configuration process on your own. 
+
+See [Set up and configure Microsoft Defender for Business](mdb-setup-configuration.md) to walk through these steps:
 
 1. **[Assign roles and permissions](mdb-roles-permissions.md)** so your security team can access and use the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)).
 
