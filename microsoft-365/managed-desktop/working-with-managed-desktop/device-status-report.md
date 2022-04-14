@@ -37,4 +37,4 @@ We report device status using the following labels:
 | Active | Devices that are being used. <ul><li>They've met the activity criteria (six hours, two continuous) for the most recent security update release.</li> <li>They've checked in with Microsoft Intune at least once in the past five days.</li></ul> |
 | Synced | Devices that are being used and have checked in with Intune within the last 28 days.
 | Out of sync | Devices that are being used but haven't checked in with Intune in the last 28 days. |
-| Other | The label aggregates several error states that can occur, typically during device registration. For more information, see [Troubleshooting device registration](../get-started/register-devices-self.md#troubleshooting-device-registration). |
+| Other | The label aggregates several error states that can occur, typically during device registration. For more information, see [Troubleshooting device registration](../get-started/manual-registration.md#troubleshooting-device-registration). |

@@ -1,5 +1,5 @@
 ---
-title: "Using  Endpoint data loss prevention"
+title: "Using Endpoint data loss prevention"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -256,7 +256,7 @@ To help familiarize you with Endpoint DLP features and how they surface in DLP p
 >- [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md)
 >- [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
 
-### Scenario 1: Create a policy from a template, audit only
+## Scenario 1: Create a policy from a template, audit only
 
 These scenarios require that you already have devices onboarded and reporting into Activity explorer. If you haven't onboarded devices yet, see [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md).
 
@@ -282,11 +282,11 @@ These scenarios require that you already have devices onboarded and reporting in
 
 11. Check Activity explorer for data from the monitored endpoints. Set the location filter for devices and add the policy, then filter by policy name to see the impact of this policy; see [Get started with activity explorer](data-classification-activity-explorer.md), if needed.
 
-12. Attempt to share a test that contains content that will trigger the U.S. Personally Identifiable Information (PII) Data condition with someone outside your organization. This should trigger the policy.
+12. Attempt to share a test item that contains content that will trigger the U.S. Personally Identifiable Information (PII) Data condition with someone outside your organization. This should trigger the policy.
 
 13. Check Activity explorer for the event.
 
-### Scenario 2: Modify the existing policy, set an alert
+## Scenario 2: Modify the existing policy, set an alert
 
 1. Open the [Data loss prevention page](https://compliance.microsoft.com/datalossprevention?viewid=policies).
 
@@ -298,8 +298,7 @@ These scenarios require that you already have devices onboarded and reporting in
 
 5. Scroll down to the **Incident reports** section and set **Send an alert to admins when a rule match occurs** to **On**. Email alerts will be automatically sent to the administrator and anyone else you add to the list of recipients. 
 
-   > [!div class="mx-imgBorder"]
-   > ![turn-on-incident-reports.](../media/endpoint-dlp-2-using-dlp-incident-reports.png)
+![turn-on-incident-reports.](../media/endpoint-dlp-2-using-dlp-incident-reports.png)
    
 6. For the purposes of this scenario, choose **Send alert every time an activity matches the rule**.
 
@@ -307,11 +306,11 @@ These scenarios require that you already have devices onboarded and reporting in
 
 8. Retain all your previous settings by choosing **Next** and then **Submit** the policy changes.
 
-9. Attempt to share a test that contains content that will trigger the U.S. Personally Identifiable Information (PII) Data condition with someone outside your organization. This should trigger the policy.
+9. Attempt to share a test item that contains content that will trigger the U.S. Personally Identifiable Information (PII) Data condition with someone outside your organization. This should trigger the policy.
 
 10. Check Activity explorer for the event.
 
-### Scenario 3: Modify the existing policy, block the action with allow override
+## Scenario 3: Modify the existing policy, block the action with allow override
 
 1. Open the [Data loss prevention page](https://compliance.microsoft.com/datalossprevention?viewid=policies).
 
@@ -332,7 +331,7 @@ These scenarios require that you already have devices onboarded and reporting in
 
 8. Retain all your previous settings by choosing **Next** and then **Submit** the policy changes.
 
-9. Attempt to share a test that contains content that will trigger the U.S. Personally Identifiable Information (PII) Data condition with someone outside your organization. This should trigger the policy.
+9. Attempt to share a test item that contains content that will trigger the U.S. Personally Identifiable Information (PII) Data condition with someone outside your organization. This should trigger the policy.
 
    You'll see a popup like this on the client device:
 
@@ -341,9 +340,9 @@ These scenarios require that you already have devices onboarded and reporting in
 
 10. Check Activity explorer for the event.
 
-### Scenario 4: Avoid looping DLP notifications from cloud synchronization apps with auto-quarantine (preview)
+## Scenario 4: Avoid looping DLP notifications from cloud synchronization apps with auto-quarantine (preview)
 
-#### Before you begin
+### Before you begin
 
 In this scenario, synchronizing files with the **Highly Confidential** sensitivity label to OneDrive is blocked. This is a complex scenario with multiple components and procedures. You will need:
 
@@ -357,7 +356,7 @@ There are three procedures.
 2. Create a policy that blocks sensitive items that have the **Highly Confidential** sensitivity label.
 3. Create a Word document on the Windows 10 device that the policy is targeted to, apply the label, and copy it to the user accounts local OneDrive folder that is being synchronized.  
 
-#### Configure Endpoint DLP unallowed app and Auto-quarantine settings
+### Configure Endpoint DLP unallowed app and Auto-quarantine settings
 
 1. Open [Endpoint DLP settings](https://compliance.microsoft.com/datalossprevention?viewid=globalsettings)
 
@@ -392,7 +391,7 @@ There are three procedures.
 
 9. Choose **Save**
 
-#### Configure a policy to block OneDrive synchronization of files with the sensitivity label Highly Confidential
+### Configure a policy to block OneDrive synchronization of files with the sensitivity label Highly Confidential
 
 1. Open the [Data loss prevention page](https://compliance.microsoft.com/datalossprevention?viewid=policies).
 
@@ -424,9 +423,9 @@ There are three procedures.
 
 11. The new DLP policy will appear in the policy list.
 
-#### Test Auto-quarantine on the Windows 10 device
+### Test Auto-quarantine on the Windows 10 device
 
-1. Login to the Windows 10 computer with the user account you specified in [Configure a policy to block OneDrive synchronization of files with the sensitivity label Highly Confidential](#configure-a-policy-to-block-onedrive-synchronization-of-files-with-the-sensitivity-label-highly-confidential) step 5.
+1. Log in to the Windows 10 computer with the user account you specified in [Configure a policy to block OneDrive synchronization of files with the sensitivity label Highly Confidential](#configure-a-policy-to-block-onedrive-synchronization-of-files-with-the-sensitivity-label-highly-confidential) step 5.
 
 2. Create a folder whose contents will not be synchronized to OneDrive. For example:
 
@@ -452,6 +451,23 @@ There are three procedures.
 
 9. Check Activity explorer for the event.
 
+## Scenario 5: Restrict unintentional sharing to unallowed cloud apps and services
+
+With Endpoint DLP and Edge Web browser, you can restrict unintentional sharing of sensitive items to unallowed cloud apps and services. Edge understands when an item is restricted by an Endpoint DLP policy and enforces access restrictions.
+
+When you select **Devices** as a location in a properly configured DLP policy and use the Microsoft Edge browser, the unallowed browsers that you've defined in these settings will be prevented from accessing the sensitive items that match your DLP policy controls. Instead, users will be redirected to use Microsoft Edge which, with its understanding of DLP imposed restrictions, can block or restrict activities when the conditions in the DLP policy are met.
+
+To use this restriction, you’ll need to configure three important pieces:
+
+1. Specify the places – services, domains, IP addresses – that you want to prevent sensitive items from being shared to.
+
+2. Add the browsers that aren’t allowed to access certain sensitive items when a DLP policy match occurs.
+
+3. Configure DLP policies to define the kinds of sensitive items for which upload should be restricted to these places by turning on **Upload to cloud services** and **Access from unallowed browser**.
+
+You can continue to add new services, apps, and policies to extend and augment your restrictions to meet your business needs and protect sensitive data. 
+
+This configuration will help ensure your data remains safe while also avoiding unnecessary restrictions that prevent or restrict users from accessing and sharing non-sensitive items.
 ## See also
 
 - [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md)
@@ -460,7 +476,7 @@ There are three procedures.
 - [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
 - [Get started with Activity explorer](data-classification-activity-explorer.md)
 - [Microsoft Defender for Endpoint](/windows/security/threat-protection/)
-- [Onboarding tools and methods for Windows 10 machines](/microsoft-365/compliance/dlp-configure-endpoints)
+- [Onboard Windows 10 and Windows 11 devices into Microsoft 365 overview](/microsoft-365/compliance/device-onboarding-overview)
 - [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
 - [Azure Active Directory (AAD) joined](/azure/active-directory/devices/concept-azure-ad-join)
 - [Download the new Microsoft Edge based on Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)

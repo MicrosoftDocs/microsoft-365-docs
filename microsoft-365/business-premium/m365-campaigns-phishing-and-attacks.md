@@ -31,15 +31,18 @@ description: "Protect against phishing and other attacks with Microsoft 365."
 Microsoft 365 Business Premium includes many protections to guard against attacks, but there are things you can do yourself to limit and minimize the risk of online attacks.
 
 - **Spam or junk mail** There are many reasons you might receive junk e-mail and not all junk mail is the same. However, you can reduce what gets through to you, and thus reduce the risks of attacks, by filtering out junk mail.
+
 - **Phishing** A phishing scam is an email that seems legitimate but is an attempt to get your personal information or steal your money.
+
 - **Spoofing** Scammers can also use a technique called spoofing to make it appear as if you've received an email from yourself. 
+
 - **Malware** is malicious software that can be installed on your computer, usually installed after you've clicked a link or opened a document from an email. There are various types of malware (for example, ransomware, when your computer is taken over), but you don't want to have any of them. 
 
 ## Best practices
 
 ### Reduce spam mail
 
-Follow these [10 tips on how to help reduce spam](https://support.microsoft.com/en-us/office/10-tips-on-how-to-help-reduce-spam-55f756e8-688b-41c3-a086-8f68ccc592f6).
+Follow these [10 tips on how to help reduce spam](https://support.microsoft.com/office/10-tips-on-how-to-help-reduce-spam-55f756e8-688b-41c3-a086-8f68ccc592f6).
 
 ### Report it!
 
@@ -74,5 +77,6 @@ Download this infographic with tips for you and the members of your campaign tea
 Learn more about how to:
 
 - [Keep your files and communications safe with Office](https://support.microsoft.com/en-us/office/keep-your-files-and-communications-safe-with-office-c4ddc381-7395-42da-887c-8836a3bb975f).
+
 - [Stay secure and private at work](https://support.office.com/article/stay-secure-and-private-at-work-104c7d91-b25a-453d-beee-ba64b6c6fc2d).
   

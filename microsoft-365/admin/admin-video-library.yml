@@ -9,9 +9,9 @@ metadata:
   ms.service: O365-administration #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.prod: microsoft-365-business #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: landing-page # Required
-  author: pebaum #Required; your GitHub user alias, with correct capitalization.
-  ms.author: pebaum #Required; microsoft alias of author; optional team alias.
-  ms.date: 02/04/2022
+  author: efrene #Required; your GitHub user alias, with correct capitalization.
+  ms.author: efrene #Required; microsoft alias of author; optional team alias.
+  ms.date: 03/31/2022
   ms.localizationpriority: high
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
@@ -139,9 +139,9 @@ landingContent:
       - linkListType: video
         links:
         - text: Secure Windows 10 Pro devices
-          url: devices/protection-settings-for-windows-10-pcs.md
+          url: /microsoft-365/business-premium/m365bp-secure-windows-devices.md
         - text: Secure Office apps on iOS
-          url: devices/app-protection-settings-for-android-and-ios.md
+          url: /business-premium/m365bp-app-protection-settings-for-android-and-ios.md
 
   # Card
   - title: Security & compliance
@@ -150,7 +150,7 @@ landingContent:
         links:
         - text: Overview of Microsoft 365 Business Premium security
           url: security-and-compliance/secure-your-business-data.md
-        - text: (NEW!) Microsoft Defender for Business (preview)
+        - text: (NEW!) Microsoft Defender for Business
           url: /microsoft-365/security/defender-business/index.yml
         - text: Secure employee accounts with MFA
           url: security-and-compliance/set-up-multi-factor-authentication.md
@@ -165,9 +165,9 @@ landingContent:
         - text: Manage safe links
           url: /microsoft-365/admin/security-and-compliance/increase-threat-protection#protect-against-phishing-attacks-with-safe-links
         - text: Prevent data loss
-          url: security-and-compliance/set-up-compliance.md
+          url: /microsoft-365/business-premium/m365bp-set-up-compliance.md
         - text: Create sensitivity labels
-          url: security-and-compliance/set-up-compliance.md
+          url: /microsoft-365/business-premium/m365bp-set-up-compliance.md
   # Card
   - title: Support
     linkLists:

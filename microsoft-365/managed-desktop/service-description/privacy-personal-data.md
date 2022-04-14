@@ -72,7 +72,7 @@ Identifying data used by Microsoft Managed Desktop is stored by Azure Active Dir
 
 ### Microsoft Intune
 
-Microsoft Intune collects, processes, and shares data to Microsoft Managed Desktop to support business operations and services. For more information about the data collected in Intune, see [Data collection in Intune](/mem/intune/protect/privacy-data-collect) 
+Microsoft Intune collects, processes, and shares data to Microsoft Managed Desktop to support business operations and services. For more information about the data collected in Intune, see [Data collection in Intune](/mem/intune/protect/privacy-data-collect)
 
 For more information on Microsoft Intune data locations, see [Where your Microsoft 365 customer data is stored](/microsoft-365/enterprise/o365-data-locations). Intune respects the storage location selections made by the administrator for customer data.
 

@@ -38,8 +38,12 @@ Watch this video to see how you can protect your campaign or business:
 
 Then follow the steps to:
 
-- [Protect against malware and other threats](m365-campaigns-increase-protection.md)
-- [Protect access to your campaign data](m365-campaigns-conditional-access.md) by protecting your accounts and apps
-- [Protect admin accounts](m365-campaigns-protect-admin-accounts.md)
-- [Set up mobile devices](../business/set-up-mobile-devices.md?toc=/microsoft-365/campaigns/toc.json)
+- [Protect against malware and other threats](m365bp-increase-protection.md)
+
+- [Protect access to your campaign data](m365bp-conditional-access.md) by protecting your accounts and apps
+
+- [Protect admin accounts](m365bp-protect-admin-accounts.md)
+
+- [Set up mobile devices](../business/set-up-mobile-devices.md)
+
 - [Train your users](m365-campaigns-users.md)

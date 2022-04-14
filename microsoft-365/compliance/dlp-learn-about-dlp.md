@@ -138,7 +138,7 @@ location | include/exclude by|
 |Exchange email| distribution groups|
 |SharePoint sites |sites |
 |OneDrive accounts |accounts or distribution groups |
-|Teams chat and channel messages |accounts |
+|Teams chat and channel messages |account or distribution group |
 |Windows 10, Windows 11, and macOS (Catalina 10.15 and higher)  devices |user or group |
 |Microsoft Cloud App Security |instance |
 |On-premises repositories| repository file path|

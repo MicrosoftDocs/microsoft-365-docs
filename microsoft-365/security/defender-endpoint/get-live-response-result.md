@@ -14,9 +14,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
-- M365-security-compliance 
-- m365initiative-m365-defender 
+ms.collection: m365-security-compliance 
 ms.topic: article
 MS.technology: mde
 ms.custom: api
