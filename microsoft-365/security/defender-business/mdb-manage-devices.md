@@ -66,7 +66,7 @@ See [Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md)
 
 ## Offboard a device
 
-See [Offboarding a device](mdb-onboard-devices.md#offboarding-a-device).
+See [Offboarding a device](mdb-offboard-devices.md).
 
 ## Next steps
 
