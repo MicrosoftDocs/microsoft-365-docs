@@ -5,7 +5,7 @@
       items:
       - name: What is Microsoft Defender for Business?
         href: mdb-overview.md
-      - name: Trial playbook: Microsoft Defender for Business
+      - name: Trial playbook - Microsoft Defender for Business
         href: trial-playbook-defender-business.md
       - name: The simplified configuration process
         href: mdb-simplified-configuration.md
