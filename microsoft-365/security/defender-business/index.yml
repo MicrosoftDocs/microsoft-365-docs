@@ -117,6 +117,8 @@ landingContent:
             url: mdb-create-edit-device-groups.md
           - text: Onboard devices
             url: mdb-onboard-devices.md
+          - text: Remove devices
+            url: mdb-offboard-devices.md
 
   # Card
   - title: Help and support
