@@ -17,7 +17,8 @@ f1.keywords: NOCSH
 ---
 
 # Test your Intune application on Test Base 
-> [!Note] This guide will guide you to upload your intunewin format package to Test Base. For general Test
+> [!Note] 
+> This guide will guide you to upload your intunewin format package to Test Base. For general Test
 Base package upload instruction, please refer to this [doc](https://microsoft.sharepoint.com/:w:/t/AzureSUVPCoreTeam/EeHQIT3qA0FKqBDWI5TzmzgBiH2Syz39o5VbY2kdugMn4A?e=Rk1KD9).
 
 ## Intunewin Upload Flow
@@ -55,7 +56,8 @@ As an Intune customer who has an Intune package, which has been already onboarde
 3. Check the test app binaries are moved under **bin** folder.
 4. Check the dependency binaries **which has been uploaded** put under the **guid** folder.
 5. You can edit the scripts as needed and save.
-> [!Note] If the dependency package has not been uploaded, Test Base will not generate install/uninstall commands for it.
+> [!Note] 
+> If the dependency package has not been uploaded, Test Base will not generate install/uninstall commands for it.
 
 
 **Step 4: Test Matrix**
