@@ -941,6 +941,8 @@
               href: supported-filetypes-ediscovery20.md
             - name: Document metadata fields
               href: document-metadata-fields-in-advanced-ediscovery.md
+            - name: Search and purge Teams chat messages
+              href: search-and-delete-Teams-chat-messages.md
             - name: Set up historical versions
               href: advanced-ediscovery-historical-versions.md
             - name: Set up attorney-client privilege detection
