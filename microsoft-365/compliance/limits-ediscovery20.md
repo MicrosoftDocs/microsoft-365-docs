@@ -44,9 +44,9 @@ The following table lists the limits for holds associated with an Advanced eDisc
 
 |Description of limit|Limit|
 |---|---|
-|Maximum number of hold policies for an organization. This limit includes the combined total of hold policies in Core eDiscovery and Advanced eDiscovery cases.|10,000<sup>3</sup>|
-|Maximum number of mailboxes in a single case hold. This limit includes the combined total of user mailboxes, and the mailboxes associated with Microsoft 365 Groups, Microsoft Teams, and Yammer Groups.|1,000|
-|Maximum number of sites in a single case hold. This limit includes the combined total of OneDrive for Business sites, SharePoint sites, and the sites associated with Microsoft 365 Groups, Microsoft Teams, and Yammer Groups.|100|
+|Maximum number of hold policies for an organization. This limit includes the combined total of hold policies in Core eDiscovery and Advanced eDiscovery cases.|10,000|
+|Maximum number of mailboxes in a single case hold. This limit includes the combined total of user mailboxes, and the mailboxes associated with Microsoft 365 Groups, Microsoft Teams, and Yammer Groups.|1,000<sup>3</sup>|
+|Maximum number of sites in a single case hold. This limit includes the combined total of OneDrive for Business sites, SharePoint sites, and the sites associated with Microsoft 365 Groups, Microsoft Teams, and Yammer Groups.|100<sup>3</sup>|
 
 ## Indexing limits
 
