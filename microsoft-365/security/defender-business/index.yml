@@ -45,10 +45,10 @@ landingContent:
             url: get-defender-business.md
           - text: Add users and assign licenses
             url: mdb-add-users.md
+          - text: Visit the Microsoft 365 Defender portal
+            url: mdb-get-started.md
           - text: Use the setup wizard
             url: mdb-use-wizard.md
-          - text: Navigate the portal
-            url: mdb-get-started.md
           - text: View your Threat & Vulnerability Management dashboard
             url: mdb-view-tvm-dashboard.md
           - text: Try tutorials and simulations
