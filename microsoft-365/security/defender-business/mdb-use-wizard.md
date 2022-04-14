@@ -25,9 +25,7 @@ ms.custom: intro-get-started
 > [!NOTE]
 > Microsoft Defender for Business is now included in [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
-Microsoft Defender for Business was designed to save small and medium-sized businesses time and effort with a wizard-like experience for initial setup and configuration. The setup wizard guides you through granting access to your security team, setting up email notifications for your security team, and onboarding your company's Windows devices.
-
-:::image type="content" source="media/mdb-wizard-start.png" alt-text="Screenshot of wizard home screen to set up Defender for Business.":::
+Microsoft Defender for Business was designed to save small and medium-sized businesses time and effort. For example, you can do initial setup and configuration with a setup wizard. The setup wizard guides you through granting access to your security team, setting up email notifications for your security team, and onboarding your company's Windows devices.
 
 >
 > **Got a minute?**
@@ -36,29 +34,28 @@ Microsoft Defender for Business was designed to save small and medium-sized busi
 
 ## How to start the setup wizard
 
+The setup wizard is designed to run the first time someone in your company signs into the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). 
+
+If your company has been using Microsoft 365 Business Premium, the Defender for Business setup wizard will run the first time someone goes to **Endpoints** > **Device inventory**. 
+
+The setup wizard start screen looks like the following image:
+
+:::image type="content" source="media/mdb-wizard-start.png" alt-text="Screenshot of wizard home screen to set up Defender for Business.":::
+
+## The setup wizard flow
+
 > [!IMPORTANT]
 > You must be a global administrator to run the setup wizard. The person who signed up your company for Microsoft 365 or for Microsoft Defender for Business is a global administrator by default.
 
-1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
+The setup wizard is designed to help you set up and configure Defender for Business quickly and efficiently. The wizard walks you through the following steps:
 
-2. Under **Endpoints**, choose **Device inventory**. 
-
-## Overview of the setup wizard
-
-> [!IMPORTANT]
-> Before you begin, make sure that you have already added users to your Microsoft 365 subscription. To get help with this task, see [Add users and assign licenses in Microsoft Defender for Business](mdb-add-users.md).
-
-The wizard is designed to help you set up and configure Defender for Business quickly and efficiently. The wizard walks you through the following steps:
-
-1. **Assign user permissions**. In this step, you grant your security team access to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). This portal is where you and your security team will manage your security capabilities, view alerts, and take any needed actions on detected threats. Portal access is granted through roles that imply certain permissions.
-
-   In Defender for Business, members of your security team can be assigned one of three roles:<br/>
+1. **Assign user permissions**. In this step, you grant your security team access to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). This portal is where you and your security team will manage your security capabilities, view alerts, and take any needed actions on detected threats. Portal access is granted through roles that imply certain permissions. In Defender for Business, members of your security team can be assigned one of the following three roles:<br/>
    
-      - **Global Admin**: A global admin can view and edit all settings across your Microsoft 365 tenant. The global admin does the initial setup and configuration for your company's Microsoft 365 subscription. 
-      - **Security Administrator**: A security administrator can view and edit security settings, and take action when threats are detected.
-      - **Security Reader**: A security reader can view information in reports, but cannot change any security settings. 
+   - **Global Admin**: A global admin can view and edit all settings across your Microsoft 365 tenant. The global admin does the initial setup and configuration for your company's Microsoft 365 subscription. 
+   - **Security Administrator**: A security administrator can view and edit security settings, and take action when threats are detected.
+   - **Security Reader**: A security reader can view information in reports, but cannot change any security settings. 
       
-      [Learn more about roles and permissions](mdb-roles-permissions.md). 
+   [Learn more about roles and permissions](mdb-roles-permissions.md). 
 
 2. **Set up email notifications**. In this step, you can set up email notifications for your security team. Then, when an alert is generated or a new vulnerability is discovered, your security team will not about it even if they're away from their desk. 
 
