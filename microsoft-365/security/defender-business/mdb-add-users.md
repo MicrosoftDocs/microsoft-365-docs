@@ -18,7 +18,7 @@ f1.keywords: NOCSH
 
 # Add users and assign licenses in Microsoft Defender for Business
 
-As soon as you have signed up for Microsoft Defender for Business, your first step is to add users and assign licenses.
+As soon as you have signed up for Microsoft Defender for Business, your first step is to add users and assign licenses. This article describes how to add users and includes next steps.
 
 ## Add users and assign licenses
 

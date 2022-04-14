@@ -70,13 +70,5 @@ Use the navigation bar on the left side of the screen to access your incidents, 
 
 ## Next steps
 
-Now that you have an overview of Defender for Business, try one or more of the following tasks:
-
-
-
-- [Try tutorials and simulations in Microsoft Defender for Business](mdb-tutorials.md)
-- [Manage devices in Microsoft Defender for Business](mdb-manage-devices.md)
-- [View and manage incidents in Microsoft Defender for Business](mdb-view-manage-incidents.md)
-- [Respond to and mitigate threats in Microsoft Defender for Business](mdb-respond-mitigate-threats.md)
-- [Review remediation actions in the Action center](mdb-review-remediation-actions.md)
-- [View or edit policies in Microsoft Defender for Business](mdb-view-edit-policies.md)
+- [Use the setup wizard in Microsoft Defender for Business](mdb-use-wizard.md)
+- [See the setup and configuration process](mdb-setup-configuration.md)
