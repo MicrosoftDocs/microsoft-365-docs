@@ -13,7 +13,7 @@ ms.collection:
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
-- M365-Lighthouse                         
+- M365-Lighthouse
 search.appverid: MET150
 description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn about the Tenants page."
 ---
@@ -24,10 +24,10 @@ Microsoft 365 Lighthouse lets you manage tenant accounts by selecting **Tenants*
 
 The Tenants page also includes the following options:
 
-- **Export:** Select to export tenant data to an Excel comma-separated values (.csv) file.
-- **Manage Tags:** Select to add, edit, or delete a tag.
-- **Assign Tags:** Select to assign a tag to a tenant.
-- **Search:** Enter keywords to quickly locate a specific tenant in the list.
+- **Export:** Select to export tenant data to an Excel comma-separated values (.csv) file.
+- **Manage Tags:** Select to add, edit, or delete a tag.
+- **Assign Tags:** Select to assign a tag to a tenant.
+- **Search:** Enter keywords to quickly locate a specific tenant in the list.
 
 :::image type="content" source="../media/m365-lighthouse-tenants-page-overview/tenant-page-overview.png" alt-text="Screenshot of the Tenant page.":::
 
@@ -35,7 +35,7 @@ The Tenants page also includes the following options:
 
 The tenant list provides insights into the different tenants you have a contract with, including their tenant Lighthouse onboarding status. The tenant list also lets you tag tenants to provide different filters throughout Lighthouse, and drill down to learn more about a given tenant and the status of its deployment plan.
 
-After your tenants meet the [Lighthouse onboarding requirements](m365-lighthouse-requirements.md), its status will show as **Active** in the tenant list.
+After your tenants meet the [Lighthouse onboarding requirements](m365-lighthouse-requirements.md), its status will show as **Active** in the tenant list.
 
 The tenant list lets you:
 
@@ -122,9 +122,9 @@ The Deployment Plans tab provides status on a tenant's deployment plan. The depl
 
 The Deployment Plans tab also includes the following options:
 
-- **Export:** Select to export deployment step data to an Excel comma-separated values (.csv) file.
-- **Refresh:** Select to retrieve the most current deployment step data.
-- **Search:** Enter keywords to quickly locate a specific deployment step in the list.
+- **Export:** Select to export deployment step data to an Excel comma-separated values (.csv) file.
+- **Refresh:** Select to retrieve the most current deployment step data.
+- **Search:** Enter keywords to quickly locate a specific deployment step in the list.
 
 ## Related content
 

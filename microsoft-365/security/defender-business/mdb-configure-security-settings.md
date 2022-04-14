@@ -28,12 +28,10 @@ ms.collection:
 
 ## Overview
 
-After you've onboarded your company's devices to Microsoft Defender for Business, your next step is to view and if necessary, edit your security policies and settings. Security policies include:
+After you've onboarded your company's devices to Microsoft Defender for Business, your next step is to view and if necessary, edit your security policies and settings. Security policies to configure include:
 
 - **[Next-generation protection policies](#view-or-edit-your-next-generation-protection-policies)**, which determine antivirus and antimalware protection for your company's devices
-
 - **[Firewall protection and rules](#view-or-edit-your-firewall-policies-and-custom-rules)**, which determine what network traffic is allowed to flow to or from your company's devices
-
 - **[Web content filtering](#set-up-web-content-filtering)**, which prevents people from visiting certain websites (URLs) based on categories, such as adult content or legal liability.
 
 In Defender for Business, security policies are applied to devices through [device groups](mdb-create-edit-device-groups.md#what-is-a-device-group). 
@@ -166,9 +164,6 @@ The following table describes settings to view (and if necessary, edit) in Defen
 Proceed to one or more of the following tasks:
 
 - [Get started using Microsoft Defender for Business](mdb-get-started.md)
-
 - [Manage devices in Microsoft Defender for Business](mdb-manage-devices.md)
-
 - [View and manage incidents in Microsoft Defender for Business](mdb-view-manage-incidents.md)
-
 - [View or edit policies in Microsoft Defender for Business](mdb-view-edit-policies.md)

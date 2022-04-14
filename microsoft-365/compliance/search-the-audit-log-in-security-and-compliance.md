@@ -123,29 +123,7 @@ Be sure to read the following items before you start searching the audit log.
 
 - Azure Active Directory (Azure AD) is the directory service for Microsoft 365. The unified audit log contains user, group, application, domain, and directory activities performed in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> or in the Azure management portal. For a complete list of Azure AD events, see [Azure Active Directory Audit Report Events](/azure/active-directory/reports-monitoring/concept-audit-logs).
 
-- It can take up to 30 minutes or up to 24 hours after an event occurs for the corresponding audit log record to be returned in the results of an audit log search. The following table shows the time it takes for the different services in Microsoft 365.
-
-  |Microsoft 365 service or feature|30 minutes|24 hours|
-  |---|:---:|:---:|
-  |Defender for Microsoft 365 and Threat Intelligence|![Check mark.](../media/checkmark.png)||
-  |Azure Active Directory (user login events)||![Check mark.](../media/checkmark.png)|
-  |Azure Active Directory (admin events)||![Check mark.](../media/checkmark.png)|
-  |Data Loss Prevention|![Check mark.](../media/checkmark.png)||
-  |Dynamics 365 CRM||![Check mark.](../media/checkmark.png)|
-  |eDiscovery|![Check mark.](../media/checkmark.png)||
-  |Exchange Online|![Check mark.](../media/checkmark.png)||
-  |Microsoft Power Automate||![Check mark.](../media/checkmark.png)|
-  |Microsoft Stream|![Check mark.](../media/checkmark.png)||
-  |Microsoft Teams|![Check mark.](../media/checkmark.png)||
-  |Power Apps||![Check mark.](../media/checkmark.png)|
-  |Power BI|![Check mark.](../media/checkmark.png)||
-  |Microsoft 365 compliance center|![Check mark.](../media/checkmark.png)||
-  |Sensitivity labels||![Check mark.](../media/checkmark.png)|
-  |SharePoint Online and OneDrive for Business|![Check mark.](../media/checkmark.png)||
-  |Workplace Analytics|![Check mark.](../media/checkmark.png)||
-  |Yammer||![Check mark.](../media/checkmark.png)|
-  |Microsoft Forms|![Check mark.](../media/checkmark.png)||
-  ||||
+- Microsoft doesn't guarantee a specific time after an event occurs for the corresponding audit record to be returned in the results of an audit log search. For core services (such as Exchange, SharePoint, OneDrive, and Teams), audit record availability is typically 60 to 90 minutes after an event occurs. For other services, audit record availability may be longer. However, some issues that are unavoidable (such as a server outage) may occur outside of the audit service that delays the availability of audit records. For this reason, Microsoft doesn't commit to a specific time.
 
 - Audit logging for Power BI isn't enabled by default. To search for Power BI activities in the audit log, you have to enable auditing in the Power BI admin portal. For instructions, see the "Audit logs" section in [Power BI admin portal](/power-bi/service-admin-portal#audit-logs).
 
@@ -1015,7 +993,7 @@ The following table describes the configuration activities for [retention polici
 
 |Friendly name|Operation|Description|
 |:-----|:-----|:-----|
-| Changed adaptive scope membership |ApplicableAdaptiveScopeChange |Users, sites, or groups were added to or removed from the adaptive scope. These changes are the results of running the scope’s query. Because the changes are system-initiated, the reported user displays as a GUID rather than a user account.|
+| Changed adaptive scope membership |ApplicableAdaptiveScopeChange |Users, sites, or groups were added to or removed from the adaptive scope. These changes are the results of running the scope's query. Because the changes are system-initiated, the reported user displays as a GUID rather than a user account.|
 | Configured settings for a retention policy |NewRetentionComplianceRule |Administrator configured the retention settings for a new retention policy. Retention settings include how long items are retained, and what happens to items when the retention period expires (such as deleting items, retaining items, or retaining and then deleting them). This activity also corresponds to running the [New-RetentionComplianceRule](/powershell/module/exchange/new-retentioncompliancerule) cmdlet.|
 | Created adaptive scope |NewAdaptiveScope |Administrator created an adaptive scope.|
 | Created retention label |NewComplianceTag |Administrator created a new retention label.|
