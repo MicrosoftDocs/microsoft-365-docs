@@ -153,7 +153,7 @@ The table in this section summarizes the features and capabilities that are acti
 | [Limited periodic scanning availability](limited-periodic-scanning-microsoft-defender-antivirus.md) | No | No | Yes | No | 
 | [File scanning and detection information](review-scan-results-microsoft-defender-antivirus.md) | Yes | Yes<sup>[[5](#fn5)]</sup> | No | Yes | 
 | [Threat remediation](configure-remediation-microsoft-defender-antivirus.md) | Yes | See note <sup>[[6](#fn6)]</sup> | No | Yes | 
-| [Security intelligence updates](manage-updates-baselines-microsoft-defender-antivirus.md) | Yes | Yes<sup>[[7](#fn7)]</sup> | No | Yes<sup>[[7](#fn7)]</sup> | 
+| [Security intelligence updates](manage-updates-baselines-microsoft-defender-antivirus.md) | Yes | Yes <sup>[[7](#fn7)]</sup> | No | Yes <sup>[[7](#fn7)]</sup> | 
 | [Data Loss Prevention](../../compliance/endpoint-dlp-learn-about.md) | Yes | Yes | No | No |
 | [Controlled folder access](controlled-folders.md) | Yes |No | No | No |
 | [Web content filtering](web-content-filtering.md) | Yes | See note <sup>[[8](#fn8)]</sup> | No | No |
