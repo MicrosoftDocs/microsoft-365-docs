@@ -1,5 +1,5 @@
 ---
-title: Get started using the Microsoft 365 Defender portal
+title: Visit the Microsoft 365 Defender portal
 description: See how to get started using the Microsoft 365 Defender portal. Learn how to navigate the portal, and view your current security status and recommendations
 search.appverid: MET150
 author: denisebmsft
@@ -20,7 +20,7 @@ ms.collection:
 ms.custom: intro-get-started
 ---
 
-# Get started using the Microsoft 365 Defender portal
+# Visit the Microsoft 365 Defender portal
 
 > [!NOTE]
 > Microsoft Defender for Business is now included in [Microsoft 365 Business Premium](../../business-premium/index.md). 
@@ -36,7 +36,8 @@ After you've signed up for Microsoft Defender for Business, you'll want to get a
 > Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about security</a>. We'd love to hear from you!
 >
 
-## Navigate the Microsoft 365 Defender portal
+
+## How to navigate the Microsoft 365 Defender portal
 
 The Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) is your one-stop shop for using and managing Microsoft Defender for Business. It includes a welcome banner and callouts to help you get started, cards that surface relevant information, and a navigation bar to give you easy access to the various features and capabilities.
  
@@ -67,16 +68,11 @@ Use the navigation bar on the left side of the screen to access your incidents, 
 | **Settings** | Enables you to edit settings for the Microsoft 365 Defender portal and Microsoft Defender for Business. For example, you can onboard (or offboard) and your company's devices (also referred to as endpoints). You can also define rules, such as alert suppression rules, and set up indicators to block or allow certain files or processes.  |
 | **More resources** | Navigate to other portals, such as Azure Active Directory. Keep in mind that the Microsoft 365 Defender portal should meet your needs without requiring you to navigate to other portals. |
 
-## Complete a learning module about incidents and response actions
-
-See the learning module, [Detect and respond to security issues](/learn/modules/m365-detect-respond-security-issues-defender-endpoint/), to get an overview of incidents and response actions. You'll learn about the incident queue, alerts, and response actions that you can take. This course will help you get started working with incidents in Defender for Business.
-
-> [!NOTE]
-> Although the learning module ([Detect and respond to security issues](/learn/modules/m365-detect-respond-security-issues-defender-endpoint/)) is actually for Microsoft Defender for Endpoint, the basic concepts and overall flow are similar to what you'll see in Defender for Business.
-
 ## Next steps
 
 Now that you have an overview of Defender for Business, try one or more of the following tasks:
+
+
 
 - [Try tutorials and simulations in Microsoft Defender for Business](mdb-tutorials.md)
 - [Manage devices in Microsoft Defender for Business](mdb-manage-devices.md)

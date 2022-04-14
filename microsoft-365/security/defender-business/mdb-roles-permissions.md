@@ -73,7 +73,7 @@ The following table describes the three roles that can be assigned in Defender f
 
 ## Need to add users?
 
-If you haven't already added users to your subscription, see [Add users and assign licenses at the same time](../../admin/add-users/add-users.md).
+If you haven't already added users to your subscription, see [Add users and assign licenses at the same time](mdb-add-users.md).
 
 ## Next steps
 

@@ -46,7 +46,7 @@ Microsoft Defender for Business was designed to save small and medium-sized busi
 ## Overview of the setup wizard
 
 > [!IMPORTANT]
-> Before you begin, make sure that you have already added users to your Microsoft 365 subscription. To get help with this task, see [Add users and assign licenses at the same time](../../admin/add-users/add-users.md).
+> Before you begin, make sure that you have already added users to your Microsoft 365 subscription. To get help with this task, see [Add users and assign licenses in Microsoft Defender for Business](mdb-add-users.md).
 
 The wizard is designed to help you set up and configure Defender for Business quickly and efficiently. The wizard walks you through the following steps:
 
