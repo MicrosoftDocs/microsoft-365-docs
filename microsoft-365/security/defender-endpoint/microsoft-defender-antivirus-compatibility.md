@@ -154,11 +154,11 @@ The table in this section summarizes the features and capabilities that are acti
 | [File scanning and detection information](review-scan-results-microsoft-defender-antivirus.md) | Yes | Yes<sup>[[5](#fn5)]</sup> | No | Yes | 
 | [Threat remediation](configure-remediation-microsoft-defender-antivirus.md) | Yes | See note <sup>[[6](#fn6)]</sup> | No | Yes | 
 | [Security intelligence updates](manage-updates-baselines-microsoft-defender-antivirus.md) | Yes | Yes | No | Yes | 
-| Data Loss Prevention | Yes | Yes | No | No |
-| Controlled folder access | Yes |No | No | No |
-| Web content filtering | Yes | See note <sup>[[7](#fn7)]</sup> | No | No |
-| Device control | Yes | Yes | No | No |
-| PUA protection | Yes | No | No | No |
+| [Data Loss Prevention](../../compliance/endpoint-dlp-learn-about.md) | Yes | Yes | No | No |
+| [Controlled folder access](controlled-folders.md) | Yes |No | No | No |
+| [Web content filtering](web-content-filtering.md) | Yes | See note <sup>[[7](#fn7)]</sup> | No | No |
+| [Device control](device-control-report.md) | Yes | Yes | No | No |
+| [PUA protection](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md) | Yes | No | No | No |
 
 (<a id="fn4">4</a>) In general, when Microsoft Defender Antivirus is in passive mode, real-time protection does not provide any blocking or enforcement, even though it is enabled and in passive mode.
 
