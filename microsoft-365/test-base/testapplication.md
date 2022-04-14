@@ -23,13 +23,13 @@ f1.keywords: NOCSH
 - A Test Base account. If you don't have one, [create a Test Base account](createAccount.md).
 
 ## Create a new package
-In the [Azure portal](http://portal.azure.com/), go to the Test Base account in which you want to upload your package. In the left menu under **Package catalog**, select the **New package**. Then click the first card **‘Create new package’** to build your package within 5 steps!
+In the [Azure portal](https://portal.azure.com/), go to the Test Base account in which you want to upload your package. In the left menu under **Package catalog**, select the **New package**. Then click the first card **‘Create new package’** to build your package within 5 steps!
 
 ![Create a new Package wizard](Media/testapplication01.png)
   <br/>
   
 **Step 1. Define content**
-1. In the **Package source** section, choose your package source. If you have an Intunewin app, select Intunewin, for others, e.g. exe or msi, select Binaries, <br/>
+1. In the **Package source** section, choose your package source. If you have an Intunewin app, select Intunewin, for others, e.g. exe or msi, select Binaries. <br/>
   ![Choose your package source](Media/testapplication02.png)
 2. Then upload your app file by clicking ‘Select file’ button or checking the box to use the Test Base sample template as a starting point if you don’t have your file ready yet.
   ![Select file](Media/testapplication03.png)
@@ -44,8 +44,8 @@ In the [Azure portal](http://portal.azure.com/), go to the Test Base account in 
   
 **Step 2. Configure test**
 1. Select the **Type of test**. There’re two test types supported:<br/>
-  An **Out of Box (OOB) test** performs an install, launch, close, and uninstall of your package. After the install, the launch-close routine is repeated 30 times before a single uninstall is run. The OOB test provides you with standardized telemetry on your package to compare across Windows builds.<br/>
-  A **Functional test** would execute your uploaded test script(s) on your package. The scripts are run in the sequence you specified and a failure in a particular script will stop subsequent scripts from executing. 
+  - An **Out of Box (OOB) test** performs an install, launch, close, and uninstall of your package. After the install, the launch-close routine is repeated 30 times before a single uninstall is run. The OOB test provides you with standardized telemetry on your package to compare across Windows builds.<br/>
+  - A **Functional test** would execute your uploaded test script(s) on your package. The scripts are run in the sequence you specified and a failure in a particular script will stop subsequent scripts from executing. 
 
   > [!NOTE] Out of Box test is optional now. 
 
@@ -98,7 +98,7 @@ In the [Azure portal](http://portal.azure.com/), go to the Test Base account in 
   > [!NOTE] If you select to test your package against both Server and Client OSes, please make sure that the package is compatible and can run on both OSes.
   
 3. Select options for Feature update tests
-  -	If **Feature updates** is selected in OS update type, you need to finish the following options
+  -	If **Feature updates** is selected in OS update type, you need to finish the following options.
   -	For **Insider Channel**, select the Windows Insider Program Channel as the build that your packages should be tested against. We currently use builds flighted in the **Insider Beta Channel**.
   -	For **OS baseline for Insight**, select the Windows OS version to be used as a baseline in comparing your test results.
    ![Select the Windows OS version](Media/testapplication14.png)
@@ -107,19 +107,19 @@ In the [Azure portal](http://portal.azure.com/), go to the Test Base account in 
   <br/>
 
 **Step 5. Review + publish**
-1. can review all the information of your draft package and you're able to back to early steps to make changes if needed. 
+1. can review all the information of your draft package and you're able to back to early steps to make changes if needed. <br/>
   ![Review package](Media/testapplication15.png)
-2. You can also check the notification box to receive the email notification of your package for the validation run completion notice.
+2. You can also check the notification box to receive the email notification of your package for the validation run completion notice. <br/>
   ![Notification](Media/testapplication16.png)
-3. Once you make sure all info is correct, you can proceed to upload your package to Test Base by clicking the **‘Publish’** button. A notification will pop up when the package has been published successfully.
+3. Once you make sure all info is correct, you can proceed to upload your package to Test Base by clicking the **‘Publish’** button. A notification will pop up when the package has been published successfully.<br/>
   ![Package publish prompts](Media/testapplication17.png)
-4. You'll be redirected to the **Manage Packages** page to check the progress of your newly uploaded package. 
+4. You'll be redirected to the **Manage Packages** page to check the progress of your newly uploaded package. <br/>
   ![Manage packages](Media/testapplication18.png)
   <br/>
   
 **Continue package creation** 
 
-On New package page, there's a list of saved draft packages if have. You can continue your edit directly to the step you paused last time by clicking the ‘edit’ icon. 
+On New package page, there's a list of saved draft packages if have. You can continue your edit directly to the step you paused last time by clicking the 'edit' icon. 
 
 > [!NOTE] The dashboard only shows the working in progress package. For the published package, you can check the Manage Package page.
 
@@ -139,4 +139,4 @@ If you have a Zip file already, you can switch back to the legacy package upload
 As part of commercial roadmap, Test Base started to support intunewin format for IT Pros who manages apps for their apps within Intune as the standard onboarding package format. The intunewin upload flow provides the experience for IT Pros to reuse their intunewin format packages, which contains the apps they deployed to their end devices via MEM/Intune to onboarding their apps and test configurations quickly to Test Base.
 <br/>
 
-[Test your Intune app on Test Base](testintuneapplication.md)
+[Test your Intune app on Test Base.](testintuneapplication.md)
