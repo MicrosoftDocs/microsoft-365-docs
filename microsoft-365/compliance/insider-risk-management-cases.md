@@ -220,6 +220,8 @@ When a case is resolved, the associated Microsoft Team will be automatically arc
 
 To learn more about Microsoft Teams for insider risk management, see [Getting started with insider risk management settings](insider-risk-management-settings.md#microsoft-teams-preview).
 
+### Manage pseudonymize
+
 ### Resolve the case
 
 After risk analysts and investigators have completed their review and investigation, a case can be resolved to act on all the alerts currently included in the case. Resolving a case adds a resolution classification, changes the case status to *Closed*, and the resolution action reasons are automatically added to the case notes queue on the **Case notes** dashboard. Cases are resolved as either:
