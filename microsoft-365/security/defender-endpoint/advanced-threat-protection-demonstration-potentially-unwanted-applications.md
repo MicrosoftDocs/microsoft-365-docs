@@ -18,7 +18,7 @@ ms.topic: article
 ms.technology: mde
 ---
 
-# Microsoft Defender Advanced Threat Protection Potentially unwanted applications (PUA) demonstration
+# Potentially unwanted applications (PUA) demonstration
 
 The Potentially Unwanted Applications (PUA) protection feature in Microsoft Defender Antivirus can identify and block PUAs from downloading and installing on endpoints in your network. These applications are not considered viruses, malware, or other types of threats, but might perform actions on endpoints that adversely affect their performance or use.
 

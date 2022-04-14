@@ -18,7 +18,7 @@ ms.topic: article
 ms.technology: mde
 ---
 
-# Microsoft Defender Advanced Threat Protection Attack surface reduction rules demonstrations
+# Attack surface reduction rules demonstrations
 
 Attack Surface Reduction (ASR) is comprised of a number of rules, each of which target specific behaviors that are typically used by malware and malicious apps to infect machines, such as:
 
