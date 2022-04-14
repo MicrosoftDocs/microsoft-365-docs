@@ -17,7 +17,8 @@ f1.keywords: NOCSH
 ---
 
 # Test Binaries package on Test Base
-> [!NOTE] This guide will guide you to create a new Test Base package from scratch. If you already have a Test Base package (.zip) in hand, you can switch to use our legacy upload experience [Upload your Test Base package (Zip)](uploadApplication.md).
+> [!NOTE]
+> This guide will guide you to create a new Test Base package from scratch. If you already have a Test Base package (.zip) in hand, you can switch to use our legacy upload experience [Upload your Test Base package (Zip)](uploadApplication.md).
 
 ## Prerequisites
 - A Test Base account. If you don't have one, [create a Test Base account](createAccount.md).
@@ -34,7 +35,8 @@ In the [Azure portal](https://portal.azure.com/), go to the Test Base account in
 2. Then upload your app file by clicking ‘Select file’ button or checking the box to use the Test Base sample template as a starting point if you don’t have your file ready yet.
   ![Select file](Media/testapplication03.png)
 3. Type in your package’s name and version in the **Basic information** section.  
-  > [!Note] The combination of package name and version must be unique within your Test Base account.
+  > [!Note]
+  > The combination of package name and version must be unique within your Test Base account.
   
   ![Enter basic information](Media/testapplication04.png)
   
@@ -47,7 +49,8 @@ In the [Azure portal](https://portal.azure.com/), go to the Test Base account in
   - An **Out of Box (OOB) test** performs an install, launch, close, and uninstall of your package. After the install, the launch-close routine is repeated 30 times before a single uninstall is run. The OOB test provides you with standardized telemetry on your package to compare across Windows builds.<br/>
   - A **Functional test** would execute your uploaded test script(s) on your package. The scripts are run in the sequence you specified and a failure in a particular script will stop subsequent scripts from executing. 
 
-  > [!NOTE] Out of Box test is optional now. 
+  > [!NOTE] 
+  > Out of Box test is optional now. 
 
   ![Out of Box test is optional](Media/testapplication07.png)
   
@@ -72,12 +75,14 @@ In the [Azure portal](https://portal.azure.com/), go to the Test Base account in
   - If the **Out of Box test** is selected in step 2, you can see the **outofbox** folder under the scripts folder. You also have the option to add **‘Reboot after install’** tag for the Install script. <br/>
   ![Resources in outofbox folder](Media/testapplication11.png) <br/>
   
-   > [!NOTE] Install, Launch and Close script tags are mandatory for the OOB test type. <br/>
+   > [!NOTE] 
+   > Install, Launch and Close script tags are mandatory for the OOB test type. <br/>
   
   - If the **Functional test** is selected in step 2, you can see the **functional** folder under the scripts folder. Additional functional test scripts can be added using the **'Add to functional test list'** button. You need a minimum of one (1) script and can add up to eight (8) functional test scripts.<br/>
   ![Add to functional test list](Media/testapplication12.png)<br/>
   
-   > [!NOTE] At least 1 functional script tag is mandatory for the functional test type. <br/>
+   > [!NOTE] 
+   > At least 1 functional script tag is mandatory for the functional test type. <br/>
   
   By clicking the **'Add to functional test list'**, the action panel will pop up, you can 
   - Reorder the script paths by dragging with the left ellipse buttons. The functional scripts run in the sequence they are listed. A failure in a particular script stops subsequent scripts from executing. <br/>
@@ -95,7 +100,8 @@ In the [Azure portal](https://portal.azure.com/), go to the Test Base account in
   
 2. Select the OS version(s) for Security update tests.<br/>
   If **Security updates** is selected in OS update type, you need to select the OS version(s) of Windows your package will be tested on.
-  > [!NOTE] If you select to test your package against both Server and Client OSes, please make sure that the package is compatible and can run on both OSes.
+  > [!NOTE] 
+  > If you select to test your package against both Server and Client OSes, please make sure that the package is compatible and can run on both OSes.
   
 3. Select options for Feature update tests
   -	If **Feature updates** is selected in OS update type, you need to finish the following options.
@@ -121,7 +127,8 @@ In the [Azure portal](https://portal.azure.com/), go to the Test Base account in
 
 On New package page, there's a list of saved draft packages if have. You can continue your edit directly to the step you paused last time by clicking the 'edit' icon. 
 
-> [!NOTE] The dashboard only shows the working in progress package. For the published package, you can check the Manage Package page.
+> [!NOTE] 
+> The dashboard only shows the working in progress package. For the published package, you can check the Manage Package page.
 
   ![Manage packages page](Media/testapplication19.png)
   <br/>
