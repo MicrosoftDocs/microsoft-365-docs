@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 03/15/2022
+ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -21,19 +21,25 @@ ms.collection:
 
 # Set up and configure Microsoft Defender for Business
 
-> [!IMPORTANT]
-> Microsoft Defender for Business is rolling out to [Microsoft 365 Business Premium](../../business-premium/index.md) customers, beginning March 1, 2022. Defender for Business as a standalone subscription is in in preview, and will roll out gradually to customers and IT Partners who [sign-up here](https://aka.ms/mdb-preview) to request it. Preview includes an [initial set of scenarios](mdb-tutorials.md#try-these-preview-scenarios), and we will be adding capabilities regularly.
-> 
-> Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. 
+> [!NOTE]
+> Microsoft Defender for Business is now included in [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
-Microsoft Defender for Business provides a streamlined setup and configuration experience, designed especially for the small and medium-sized business. Use this article as a guide.
+Microsoft Defender for Business provides a streamlined setup and configuration experience, designed especially for the small and medium-sized business. Use this article as a guide for the overall process.
+
+> [!TIP]
+> If you used the [setup wizard](mdb-use-wizard.md), then you've already completed several steps of your basic setup process. In this case, you can:
+> - [Onboard more devices](mdb-onboard-devices.md)
+> - [Configure your security policies and settings](mdb-configure-security-settings.md)
+> - [Visit your vulnerability management dashboard](mdb-view-tvm-dashboard.md)
 
 >
 > **Got a minute?**
-> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about Microsoft Defender for Business</a>. We'd love to hear from you!
+> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about security</a>. We'd love to hear from you!
 >
 
 ## The setup and configuration process
+
+The following diagram depicts the overall setup and configuration process for Defender for Business. If you used the setup wizard, then you've likely already completed steps 1-3, and possibly step 4. 
 
 :::image type="content" source="media/mdb-setup-process-2.png" alt-text="Setup and configuration process for Microsoft Defender for Business.":::
 
