@@ -39,7 +39,7 @@ With Microsoft Defender for Business, you have several options to choose from fo
 
 3. Proceed to your next steps.
 
-## [**Windows clients**](#tab/WindowsClients)
+## [**Windows clients**](#tab/WindowsClientDevices)
 
 ## Windows clients
 
@@ -144,7 +144,7 @@ To view the list of devices that are onboarded to Defender for Business, in the 
 - If you're done onboarding devices, proceed to [Step 5: Configure your security settings and policies in Microsoft Defender for Business](mdb-configure-security-settings.md)
 - See [Get started using Microsoft Defender for Business](mdb-get-started.md).
 
-## [**Windows Server**](#tab/WindowsServers)
+## [**Windows Server**](#tab/WindowsServerEndpoints)
 
 ## Windows Server (preview)
 
@@ -205,7 +205,7 @@ To view the list of devices that are onboarded to Defender for Business, in the 
 - If you're done onboarding devices, proceed to [Step 5: Configure your security settings and policies in Microsoft Defender for Business](mdb-configure-security-settings.md)
 - See [Get started using Microsoft Defender for Business](mdb-get-started.md).
 
-## [**macOS**](#tab/macOS)
+## [**macOS**](#tab/macOSdevices)
 
 ## macOS computers
 
@@ -292,7 +292,7 @@ To view the list of devices that are onboarded to Defender for Business, in the 
 - If you're done onboarding devices, proceed to [Step 5: Configure your security settings and policies in Microsoft Defender for Business](mdb-configure-security-settings.md)
 - See [Get started using Microsoft Defender for Business](mdb-get-started.md).
 
-## [**mobile devices**](#tab/mobile)
+## [**mobile devices**](#tab/mobiles)
 
 ## Mobile devices
 
