@@ -93,10 +93,12 @@ When you evaluate Defender for Office 365, the policies that control protection 
 3. In the **Select the users you want to include** dialog, configure the following settings:
 
    - **All users**: This is the default and recommended option.
-   - **Select users**: If you select this option, you need to select who the evaluation applies to:
-     - **Users**: The specified mailboxes, mail users, or mail contacts in your organization.
-     - **Groups**: The specified distribution groups, mail-enabled security groups, or Microsoft 365 Groups in your organization.
-     - **Domains**: All recipients in the specified [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in your organization.
+   - **Select users**: If you select this option, you need to select the internal recipients that the evaluation applies to:
+     - **Users**: The specified mailboxes, mail users, or mail contacts.
+     - **Groups**:
+       - Members of the specified distribution groups or mail-enabled security groups.
+       - The specified Microsoft 365 Groups.
+       - **Domains**: All recipients in the specified [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in your organization.
 
      Click in the appropriate box, start typing a value, and select the value that you want from the results. Repeat this process as many times as necessary. To remove an existing value, click remove ![Remove icon.](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.
 
@@ -162,9 +164,11 @@ When you evaluate Defender for Office 365, the policies that control protection 
 3. In the **Select the users you want to include** dialog, configure the following settings:
 
    - **All users**: This is the default and recommended option.
-   - **Select users**: If you select this option, you need to select who the evaluation applies to:
-     - **Users**: The specified mailboxes, mail users, or mail contacts in your organization.
-     - **Groups**: The specified distribution groups, mail-enabled security groups, or Microsoft 365 Groups in your organization.
+   - **Select users**: If you select this option, you need to select the internal recipients that the evaluation applies to:
+     - **Users**: The specified mailboxes, mail users, or mail contacts.
+     - **Groups**:
+       - Members of the specified distribution groups or mail-enabled security groups.
+       - The specified Microsoft 365 Groups.
      - **Domains**: All recipients in the specified [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in your organization.
 
      Click in the appropriate box, start typing a value, and select the value that you want from the results. Repeat this process as many times as necessary. To remove an existing value, click remove ![Remove icon.](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.

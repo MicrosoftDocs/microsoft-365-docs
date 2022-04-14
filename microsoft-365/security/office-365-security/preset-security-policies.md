@@ -48,12 +48,14 @@ A profile determines the level of protection. The following profiles are availab
 - **Standard protection**: A baseline protection profile that's suitable for most users.
 - **Strict protection**: A more aggressive protection profile for selected users (high value targets or priority users).
 
-  for **Standard protection** and **Strict protection**, you use rules with conditions and exceptions that determine who the profiles are or are not applied to.
+  for **Standard protection** and **Strict protection**, you use rules with conditions and exceptions to determine the internal recipients that the policy applies to (recipient conditions).
 
   The available conditions and exceptions are:
 
-  - **Users**: The specified mailboxes, mail users, or mail contacts in your organization.
-  - **Groups**: The specified distribution groups, mail-enabled security groups, or Microsoft 365 Groups in your organization.
+  - **Users**: The specified mailboxes, mail users, or mail contacts.
+  - **Groups**:
+    - Members of the specified distribution groups or mail-enabled security groups.
+    - The specified Microsoft 365 Groups.
   - **Domains**: All recipients in the specified [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in your organization.
 
   You can only use a condition or exception once, but you can specify multiple values for the condition or exception. Multiple values of the same condition or exception use OR logic (for example, _\<recipient1\>_ or _\<recipient2\>_). Different conditions or exceptions use AND logic (for example, _\<recipient1\>_ and _\<member of group 1\>_).
