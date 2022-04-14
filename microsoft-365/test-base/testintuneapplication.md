@@ -35,15 +35,25 @@ As an Intune customer who has an Intune package, which has been already onboarde
 1. Login with your Test Base account.
 2. Prepare your intunewin package.
 3. Start uploading by click on the “Create package with Intune App”  link as below.
-![Start to build a package with Intune app](Media/testintuneapplication01.png)
+ 
+> [!div class="mx-imgBorder"] 
+> ![Start to build a package with Intune app](Media/testintuneapplication01.png) 
+
 
 **Step 1: Define Content**
 1. Upload the intunewin package you choose.
 2. Grant token by clicking on below link “Grant token and select app”.
 3. After automatic sync with your Intune account, you'll be listed with app your applications under your Intune account. Choose the app corresponding to your uploaded intunewin package then click “Select”.
-![Upload the intune package](Media/testintuneapplication02.png)
-4. On the Step 1 page, you'll see dependencies listed under the Dependency section, you can either choose to upload the dependency’s install file or remove it from this step (if you plan to manage the dependency in Step 3 by self provide the related binaries). Selected dependencies in this section will be pre-installed the same way as it will be installed via Intune.
-![Upload dependency package](Media/testintuneapplication03.png)
+ 
+> [!div class="mx-imgBorder"] 
+> ![Upload the intune package](Media/testintuneapplication02.png) 
+
+
+5. On the Step 1 page, you'll see dependencies listed under the Dependency section, you can either choose to upload the dependency’s install file or remove it from this step (if you plan to manage the dependency in Step 3 by self provide the related binaries). Selected dependencies in this section will be pre-installed the same way as it will be installed via Intune.
+ 
+> [!div class="mx-imgBorder"] 
+> ![Upload dependency package](Media/testintuneapplication03.png) 
+
 
 **Step 2: Configure Test**
 1. Select powershell.
@@ -78,7 +88,9 @@ As a Test Base customer who has a standalone intunewin package. Customer can onb
 1. Login with your Test Base account.
 2. Prepare your intunewin package.
 3. Start uploading by click on the “Create package with Intune App”  link as below.
-![Create package with Intune App](Media/testintuneapplication04.png)
+ 
+> [!div class="mx-imgBorder"] 
+> ![Create package with Intune App](Media/testintuneapplication04.png) 
 
 
 **Step 1: Define Content**
