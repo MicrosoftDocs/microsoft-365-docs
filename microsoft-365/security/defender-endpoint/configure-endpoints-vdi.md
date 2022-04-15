@@ -141,7 +141,7 @@ The following steps will guide you through onboarding VDI devices and will highl
 
 With the ability to easily deploy updates to VMs running in VDIs, we've shortened this guide to focus on how you can get updates on your machines quickly and easily. You no longer need to create and seal golden images on a periodic basis, as updates are expanded into their component bits on the host server and then downloaded directly to the VM when it's turned on.
 
-For more information, follow the guidance in [Deployment guide for Microsoft Defender Antivirus in a virtual desktop infrastructure (VDI) environment](/security/defender-endpoint/deployment-vdi-microsoft-defender-antivirus).
+For more information, follow the guidance in [Deployment guide for Microsoft Defender Antivirus in a Virtual Desktop Infrastructure (VDI) environment](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/deployment-vdi-microsoft-defender-antivirus?view=o365-worldwide).
 
 
 ## Related topics
