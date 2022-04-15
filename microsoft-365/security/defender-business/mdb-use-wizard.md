@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: article
-ms.date: 04/12/2022
+ms.date: 04/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -31,6 +31,11 @@ Microsoft Defender for Business was designed to save small and medium-sized busi
 > **Got a minute?**
 > Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about security</a>. We'd love to hear from you!
 >
+
+> [!TIP]
+> Using the setup wizard is optional. You can choose to work through the setup and configuration process manually. To learn more, see:
+> - [What happens if I don't use the wizard?](#what-happens-if-i-dont-use-the-wizard)
+> - [How to set up and configure Microsoft Defender for Business](mdb-setup-configuration.md)
 
 ## How to start the setup wizard
 
