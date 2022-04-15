@@ -72,9 +72,12 @@ Defender for Endpoint uses the following combination of technology built into Wi
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vnC4?rel=0]
 
 > [!TIP]
->
 > - Learn about the latest enhancements in Defender for Endpoint: [What's new in Microsoft Defender for Endpoint](whats-new-in-microsoft-defender-endpoint.md).
 > - Microsoft Defender for Endpoint demonstrated industry-leading optics and detection capabilities in the recent MITRE evaluation. Read: [Insights from the MITRE ATT&CK-based evaluation](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
+
+
+>[!IMPORTANT]
+>The capabilities on non-Windows platforms may be different from the ones for Windows. For more information on what capabilities are available for non-Windows platforms, see [Microsoft Defender for Endpoint for non-Windows platforms](/security/defender-endpoint/non-windows).
 
 <a name="tvm"></a>
 
