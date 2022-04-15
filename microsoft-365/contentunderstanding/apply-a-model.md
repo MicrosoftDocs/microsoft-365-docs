@@ -132,7 +132,7 @@ To run the flow:
 
 [!INCLUDE [Change the view in a document library](../includes/change-library-view.md)]
 
-## See Also
+## See also
 
 [Create a classifier](create-a-classifier.md)
 
