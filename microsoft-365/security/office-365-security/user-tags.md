@@ -36,6 +36,7 @@ After you apply system tags or custom tags to users, you can use those tags as f
 - [Alerts](alerts.md)
 - [Custom alert policies](../../compliance/alert-policies.md#viewing-alerts)
 - [Threat Explorer and real-time detections](threat-explorer.md)
+- Compromise user report 
 - [Email entity page](mdo-email-entity-page.md#other-innovations)
 - [Threat protection status report](view-email-security-reports.md#threat-protection-status-report)
 - [Attack simulation](attack-simulation-training.md#target-users)
