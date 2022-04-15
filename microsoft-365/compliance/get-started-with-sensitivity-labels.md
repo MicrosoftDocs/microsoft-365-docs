@@ -81,8 +81,6 @@ A successful strategy to deploy sensitivity labels for an organization is to cre
 
 Using the table in the next section, we recommend identifying your top one or two scenarios that map to your most impactful business requirements. After these scenarios are deployed, return to the list to identify the next one or two priorities for deployment.
 
-You'll find additional general deployment guidance and best practices in the [Deployment Acceleration Guide for Microsoft Information Protection and Data Loss Prevention](https://microsoft.github.io/ComplianceCxE/dag/mip-dlp/), one of the resources from the [Customer Acceleration Team (CAT)](https://microsoft.github.io/ComplianceCxE/) site.
-
 ## Common scenarios for sensitivity labels
 
 All scenarios require you to [Create and configure sensitivity labels and their policies](create-sensitivity-labels.md).
@@ -106,7 +104,6 @@ All scenarios require you to [Create and configure sensitivity labels and their 
 |Monitor and understand how sensitivity labels are being used in my organization|[Learn about data classification](data-classification-overview.md)|
 |Extend sensitivity labels to third-party apps and services|[Microsoft Information Protection SDK](/information-protection/develop/overview#microsoft-information-protection-sdk)|
 |Extend sensitivity labels across content in my Microsoft Purview Data Map assets, such as Azure Blob Storage, Azure Files, Azure Data Lake Storage, and multi-cloud data sources|[Labeling in Microsoft Purview Data Map](/azure/purview/create-sensitivity-label) |
-
 
 ## End-user documentation for sensitivity labels
 
