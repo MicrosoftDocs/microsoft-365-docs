@@ -22,7 +22,7 @@ ms.custom:
 
 If you're interested in your organization's compliance posture, you're going to love the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>. The Microsoft Purview compliance portal provides easy access to the data and tools you need to manage to your organization's compliance needs.
 
-Read this article to get acquainted with the compliance portal, [how to access it](#how-do-i-access-the-compliance-center), and your [next steps](#next-steps).
+Read this article to get acquainted with the compliance portal, [how to access it](#how-do-i-access-the-compliance-portal), and your [next steps](#next-steps).
 
 [![Microsoft Purview compliance portal home page.](../media/m365-compliance-center-home.png)](https://compliance.microsoft.com)
 
