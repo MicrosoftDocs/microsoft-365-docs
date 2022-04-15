@@ -27,8 +27,8 @@ ms.date: 04/18/2022
 
 > [!IMPORTANT]
 > - This article only applies to Dynamics 365, Intune, Power Platform, and Microsoft 365 for business subscriptions. If you have Microsoft 365 Family or Personal, see [Cancel a Microsoft 365 subscription](https://support.microsoft.com/office/cancel-a-microsoft-365-subscription-46e2634c-c64b-4c65-94b9-2cc9c960e91b?OCID=M365_DocsCancel_Link).
-> - If you bought your subscription through a Microsoft representative or a reseller partner, you have seven days to cancel. Contact your seller or partner to help you cancel your subscription. [Learn more about partners](../manage-partners.md#what-can-a-partner-do-for-my-organization-or-school).
-> - If your organization is located in Chile, and your partner is also in Chile, you have 10 days to cancel after you buy or renew a subscription.
+> - If you bought your subscription through a Microsoft representative or a reseller partner, you have seven days to cancel for a pro-rated refund. Contact your seller or partner to help you cancel your subscription. [Learn more about partners](../manage-partners.md#what-can-a-partner-do-for-my-organization-or-school).
+> - If your organization is located in Chile, and you bought your subscription through a partner in Chile, you have 10 days to cancel for a pro-rated refund.
 
 If you want to cancel your subscription, the easiest way to do that is to [turn off recurring billing](renew-your-subscription.md). When you turn off recurring billing, you can continue to use your subscription until it expires at the end of the subscription term. If you want to cancel immediately, use the information and steps in this article to do that.
 
