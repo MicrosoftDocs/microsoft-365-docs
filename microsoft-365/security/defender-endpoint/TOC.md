@@ -28,7 +28,7 @@
 ##### [Block at First Sight \(BAFS\) demonstration)](advanced-threat-protection-demonstration-block-at-first-sight-bafs.md)
 ##### [Cloud-delivered protection demonstration](advanced-threat-protection-demonstration-cloud-delivered-protection.md)
 ##### [Potentially unwanted applications \(PUA\) demonstration](advanced-threat-protection-demonstration-potentially-unwanted-applications.md)
-#### [Microsoft Defender SmartScreen]()
+#### [Microsoft Defender SmartScreen demonstrations]()
 ##### [Microsoft Defender SmartScreen app reputation demonstrations](advanced-threat-protection-demonstration-app-reputation.md)
 ##### [Microsoft Defender SmartScreen URL reputation demonstrations](advanced-threat-protection-demonstration-smartscreen-url-reputation.md)
 
