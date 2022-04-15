@@ -78,7 +78,7 @@ This table lists the filter names that are available.
 | Multiple categories  | Specify whether the filter is for more than one category. |
 | Categories | Choose categories to focus on specific tactics, techniques, or attack components seen. |
 | Entities | Specify the name of an asset such as a user, device, mailbox, or application name. |
-| Data sensitivity | Some attacks focus on targeting to exfiltrate sensitive or valuable data. By applying a filter for specific sensitivity labels, you can quickly determine if sensitive information has potentially been compromised and prioritize addressing those incidents. <br><br> This filter is only available if you're using [sensitivity labels](../../compliance/sensitivity-labels.md) from Microsoft Purview Information Protection. |
+| Data sensitivity | Some attacks focus on targeting to exfiltrate sensitive or valuable data. By applying a filter for specific sensitivity labels, you can quickly determine if sensitive information has potentially been compromised and prioritize addressing those incidents. <br><br> This filter displays information only when you've applied [sensitivity labels from Microsoft Purview Information Protection](../../compliance/sensitivity-labels.md). |
 | Device groups | Specify a [device group](/windows/security/threat-protection/microsoft-defender-atp/machine-groups) name. |
 | OS platform | Specify device operating systems. |
 | Classification | Specify the set of classifications of the related alerts. |
