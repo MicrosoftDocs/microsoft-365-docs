@@ -28,7 +28,7 @@ Read this article to get acquainted with the compliance portal, [how to access i
 
 ## Welcome to Microsoft Purview
 
-When you go to your compliance portal for the first time, you're greeted with the following welcome message:
+When you go to the compliance portal for the first time, you're greeted with the following welcome message:
 
 ![Microsoft Purview compliance portal intro.](../media/m365-compliance-center-welcome-steps.png)
 
@@ -71,7 +71,7 @@ In addition to links in cards on the home page, you'll see a navigation pane on 
 
 ## How do I access the compliance portal?
 
-To access the compliance portal, as a global administrator, compliance administrator, or compliance data administrator go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and sign in.
+To access the compliance portal, go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and sign in as a global administrator, compliance administrator, or compliance data administrator.
 
 ## Next steps
 
