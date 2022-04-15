@@ -60,11 +60,11 @@ The setup wizard is designed to help you set up and configure Defender for Busin
    
    - **Global Admin**: A global admin can view and edit all settings across your Microsoft 365 tenant. The global admin does the initial setup and configuration for your company's Microsoft 365 subscription. 
    - **Security Administrator**: A security administrator can view and edit security settings, and take action when threats are detected.
-   - **Security Reader**: A security reader can view information in reports, but cannot change any security settings. 
+   - **Security Reader**: A security reader can view information in reports, but can't change any security settings. 
 
    [Learn more about roles and permissions](mdb-roles-permissions.md). 
 
-2. **Set up email notifications**. In this step, you can set up email notifications for your security team. Then, when an alert is generated or a new vulnerability is discovered, your security team will not about it even if they're away from their desk. [Learn more about email notifications](mdb-email-notifications.md). 
+2. **Set up email notifications**. In this step, you can set up email notifications for your security team. Then, when an alert is generated or a new vulnerability is discovered, your security team won't about it even if they're away from their desk. [Learn more about email notifications](mdb-email-notifications.md). 
 
 3. **Onboard and configure Windows devices**. In this step, you can onboard your company's Windows devices to Defender for Business quickly. Onboarding devices right away helps to protect those devices from day one. 
 
@@ -81,7 +81,7 @@ The setup wizard is designed to help you set up and configure Defender for Busin
 
 Automatic onboarding is a simplified way to onboard Windows devices to Defender for Business. Automatic onboarding is only available for Windows devices that are already enrolled in Microsoft Endpoint Manager (or Microsoft Intune). 
 
-While you are using the setup wizard, the system will detect whether Windows devices are already enrolled in Endpoint Manager. You'll be asked if you want to use automatic onboarding for all or some of those devices. You can onboard all Windows devices at once, or select specific devices to start with, and then add more devices later. 
+While you're using the setup wizard, the system will detect whether Windows devices are already enrolled in Endpoint Manager. You'll be asked if you want to use automatic onboarding for all or some of those devices. You can onboard all Windows devices at once, or select specific devices to start with, and then add more devices later. 
 
 To onboard other devices, see [Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md).
 
