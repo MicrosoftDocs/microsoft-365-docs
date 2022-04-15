@@ -122,7 +122,8 @@ You can add a retention label to an existing form processing model that you own 
 > You must be the model owner for the model settings pane to be editable. 
 
 
-## See Also
+## See also
+
 [Create a classifier](create-a-classifier.md)
 
 [Create an extractor](create-an-extractor.md)
