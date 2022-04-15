@@ -177,7 +177,7 @@ On the **New package** page, you can see a list of all your previously saved dra
 If you have a Zip file already, you can switch back to the legacy package upload experience (zip upload). Learn more about the Zip upload [Upload your package | Microsoft Docs](uploadApplication.md). 
 
 > [!div class="mx-imgBorder"]
-> ![Upload package](Media/testapplication20.png)
+> ![Upload package](Media/testapplication01.png)
 
 > [!div class="mx-imgBorder"]
 > ![Legacy upload experience](Media/testapplication21.png)
