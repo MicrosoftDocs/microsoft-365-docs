@@ -20,37 +20,13 @@ ms.technology: mde
 
 # Microsoft Defender Advanced Threat Protection (ATP) - demonstration scenarios
 
-The following demonstration scenarios will help you learn about the capabilities of Microsoft Defender Advanced Threat Protection (ATP). None of the sample files are actually malicious, they are all harmless demonstration files.  We encourage you to read [Microsoft Defender Antivirus documentation](/windows/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10?ocid=wd-av-demo-home-top), and to download the [Evaluation guide](/windows/threat-protection/windows-defender-antivirus/evaluate-windows-defender-antivirus?ocid=wd-av-demo-home-top).
+The following demonstration scenarios will help you learn about the capabilities of Microsoft Defender Advanced Threat Protection (ATP). Demonstration scenarios are provided for the following areas Microsoft Defender Advanced Threat Protection:
 
-## [[ATP area name (ie, ~ to ASR and CFA, etc.)]]
+- [Attack surface reduction](#attack-surface-reduction-demonstration-scenarios)
+- [Cloud protection and Microsoft Defender Antivirus](#cloud-protection-and-microsoft-defender-antivirus)
+- [Microsoft Defender SmartScreen](#microsoft-defender-smartscreen)
 
-### Block at First Sight (BAFS)
-
-The BAFS feature in Microsoft Defender Antivirus analyzes newly-discovered files are analyzed and if found to be problematic, the files are blocked shortly thereafter from being accessed any ATP-enabled computer.
-
-Try the [Block at First Sight \(BAFS\) demonstration)](advanced-threat-protection-demonstration-block-at-first-sight-bafs.md).
-
-### Cloud-delivered protection
-
-Cloud-delivered protection enables Windows Defender Antivirus to block most new, previously-unseen threats at first sight. When Windows Defender Antivirus needs additional intelligence to verify the intent of a suspicious file, it sends metadata to the cloud protection service (created by Microsoft). Within milliseconds, the cloud protection service can determine whether a file is safe or malicious.
-
-Try our [Cloud-delivered protection demonstration](advanced-threat-protection-demonstration-cloud-delivered-protection.md) to confirm that cloud-delivered protection is working properly on your computer.
-
-### Potentially unwanted applications (PUA)s
-
-See how potentially unwanted applications are blocked on your network by running the [Potentially unwanted applications \(PUA\) demonstration](advanced-threat-protection-demonstration-potentially-unwanted-applications.md).
-
-### VDI testing guide
-
-Learn how Microsoft security intelligence update features function in a virtual desktop infrastructure to protect virtual machines while simultaneously minimizing impact on VDI hardware resources.
-
-Download this guide
-
-<!-- Hide {this intro with no subsequent list items}
-[CURRENTLY{https://demo.wd.microsoft.com/Content/wdav-testing-vdi-ssu.pdf}{NEED link to: wdav-testing-vdi-ssu.pdf} ]
--->
-
-to test new virtual desktop infrastructure security intelligence update features. This test requires VMs and a host running Windows 10 Insider Preview build 18323 or later.
+None of the sample files are actually malicious, they are all harmless demonstration files.  We encourage you to read [Microsoft Defender Antivirus documentation](/windows/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10?ocid=wd-av-demo-home-top), and to download the [Evaluation guide](/windows/threat-protection/windows-defender-antivirus/evaluate-windows-defender-antivirus?ocid=wd-av-demo-home-top).
 
 ## Attack surface reduction demonstration scenarios
 
@@ -89,6 +65,36 @@ See [Exploit protection \(EP\) demonstrations](advanced-threat-protection-demons
 Network protection is an attack surface reduction capability. It helps prevent employees from accessing dangerous domains through applications. Domains that host phishing scams, exploits, and other malicious content on the Internet are considered dangerous. Network protection expands the scope of Microsoft Defender SmartScreen to block all outbound HTTP(s) traffic that attempts to connect to low-reputation sources (based on the domain or hostname).
 
 Try the [Network protection demonstration](advanced-threat-protection-demonstration-network-protection.md) to see the response when you navigate to a suspicious URL and trigger network protection.
+
+## Cloud protection and Microsoft Defender Antivirus
+
+### Block at First Sight (BAFS)
+
+The BAFS feature in Microsoft Defender Antivirus analyzes newly-discovered files are analyzed and if found to be problematic, the files are blocked shortly thereafter from being accessed any ATP-enabled computer.
+
+Try the [Block at First Sight \(BAFS\) demonstration)](advanced-threat-protection-demonstration-block-at-first-sight-bafs.md).
+
+### Cloud-delivered protection
+
+Cloud-delivered protection enables Windows Defender Antivirus to block most new, previously-unseen threats at first sight. When Windows Defender Antivirus needs additional intelligence to verify the intent of a suspicious file, it sends metadata to the cloud protection service (created by Microsoft). Within milliseconds, the cloud protection service can determine whether a file is safe or malicious.
+
+Try our [Cloud-delivered protection demonstration](advanced-threat-protection-demonstration-cloud-delivered-protection.md) to confirm that cloud-delivered protection is working properly on your computer.
+
+### Potentially unwanted applications (PUA)s
+
+See how potentially unwanted applications are blocked on your network by running the [Potentially unwanted applications \(PUA\) demonstration](advanced-threat-protection-demonstration-potentially-unwanted-applications.md).
+
+### VDI testing guide
+
+Learn how Microsoft security intelligence update features function in a virtual desktop infrastructure to protect virtual machines while simultaneously minimizing impact on VDI hardware resources.
+
+Download this guide
+
+<!-- Hide {this intro with no subsequent list items}
+[CURRENTLY{https://demo.wd.microsoft.com/Content/wdav-testing-vdi-ssu.pdf}{NEED link to: wdav-testing-vdi-ssu.pdf} ]
+-->
+
+to test new virtual desktop infrastructure security intelligence update features. This test requires VMs and a host running Windows 10 Insider Preview build 18323 or later.
 
 ## Microsoft Defender SmartScreen
 
