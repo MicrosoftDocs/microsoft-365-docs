@@ -51,9 +51,9 @@ Use Microsoft Purview Data Lifecycle Management (formerly Microsoft Information 
 |1| Understand how retention and deletion works for Microsoft 365 services. <br /><br /> After you understand how you can use retention policies and retention labels, identify your workloads that need a retention policy and whether you need to create retention labels for exceptions. | [Learn about retention](retention.md)|
 |2| Create retention policies and if needed, retention labels for exceptions. | [Create retention policies](create-retention-policies.md) <p> [Create and apply retention labels for your exceptions](create-retention-labels-information-governance.md)|
 |3| Manage mailboxes.  <br /><br /> Enable mailboxes for archiving and auto-expanding archiving, consider whether you need to customize when emails are moved to the archive mailbox, and make mailboxes inactive when users leave the organization.| [Enable archive mailboxes](enable-archive-mailboxes.md) <p> [Enable auto-expanding archiving](enable-autoexpanding-archiving.md) <p> [Create and manage inactive mailboxes](create-and-manage-inactive-mailboxes.md)|
-|4| Import PST files to online mailboxes.  <br /><br /> If you have PST files that contain data you want to govern, you can import them them by using network upload or drive shipping.| [Use network upload to import your organization's PST files](use-network-upload-to-import-pst-files.md) <p> [Enable auto-expanding archiving](enable-autoexpanding-archiving.md) <p> [Use drive shipping to import your organization's PST files](use-drive-shipping-to-import-pst-files-to-office-365.md)|
+|4| Import PST files to online mailboxes.  <br /><br /> If you have PST files that contain data you want to govern, you can import them them by using network upload or drive shipping.| [Use network upload to import your organization's PST files](use-network-upload-to-import-pst-files.md) <p> [Use drive shipping to import your organization's PST files](use-drive-shipping-to-import-pst-files-to-office-365.md)|
 
-To learn more about these capabilities, see [Learn about data lifecycle management](information-governance.md).
+To learn more about the capabilities from this solution, see [Learn about data lifecycle management](information-governance.md).
 
 ## Manage high-value items
 
@@ -61,12 +61,12 @@ Use Microsoft Purview Records Management to manage your organization's high-valu
 
 |Step|Description|More information|
 |:---|:----------|:---------------|
-|1| Understand the records management solution. <br /><br /> Use retention labels with more flexible configuration options, require disposition review, and optionally declare items as records | [Learn about records management](records-management.md)|
+|1| Understand the records management solution. <br /><br /> Use retention labels with more flexible configuration options and when required, declare items as records | [Learn about records management](records-management.md)|
 |2| Use file plan to create and manage retention schedules. <br /><br /> File plan lets you create retention labels interactively or import in bulk, and export for analysis. Labels that you create with file plan support additional administrative information to help you identify and track business or regulatory requirements | [Use file plan to create and manage retention labels](file-plan-manager.md)|
 |3| Publish and apply your retention labels. Your retention labels can be applied manually or automatically. |[Publish retention labels and apply them in apps](create-apply-retention-labels.md) <p> [Apply a retention label to content automatically](apply-retention-labels-automatically.md)|
 |4| Manage content disposition. <br /><br /> You can require the manual review of content before it's permanently deleted, and provide proof of disposition of records |[Manage content disposition](disposition.md)|
 
-To learn more about these capabilities, see [Learn about records management](records-management.md).
+To learn more about the capabilities from this solution, see [Learn about records management](records-management.md).
 
 ## Training resources
 
