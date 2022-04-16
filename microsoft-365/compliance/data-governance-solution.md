@@ -34,10 +34,6 @@ Both solutions support retention and deletion of data for Microsoft 365 apps and
 
 Looking to protect your data? See [Protect your data with Microsoft Purview](information-protection.md).
 
-## Deploy solutions for data lifecycle management and records management
-
-Use Microsoft Purview Data Lifecycle Management and Microsoft Purview  Records to help you govern sensitive data for compliance or regulatory requirements.
-
 ## Licensing
 
 To understand your licensing requirements and options, see the following sections from the [Microsoft 365 licensing documentation](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance): 
@@ -59,7 +55,7 @@ Use Microsoft Purview Data Lifecycle Management (formerly Microsoft Information 
 
 To learn more about these capabilities, see [Learn about data lifecycle management](information-governance.md).
 
-## Manage high-value items for business, legal, or regulatory record-keeping requirements
+## Manage high-value items
 
 Use Microsoft Purview Records Management to manage your organization's high-value items for business, legal, or regulatory record-keeping requirements:
 
