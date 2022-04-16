@@ -76,11 +76,4 @@ Learning modules for consultants and admins:
 - [Govern information in Microsoft 365](/learn/modules/m365-compliance-information-govern-information/)
 - [Manage records in Microsoft 365](/learn/modules/m365-compliance-information-manage-records/)
 
-For your users, see the [end-user documentation](get-started-with-records-management.md#end-user-documentation) section.
-
-
-
-- 
-
-
-
+For documentation to support users when these solutions are deployed, see the end user documentation sections for [data lifecycle management](get-started-with-information-governance.md#end-user-documentation) and [record-management](get-started-with-records-management.md#end-user-documentation).
