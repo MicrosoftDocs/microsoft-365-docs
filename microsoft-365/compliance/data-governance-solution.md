@@ -61,10 +61,10 @@ Use Microsoft Purview Records Management to manage your organization's high-valu
 
 |Step|Description|More information|
 |:---|:----------|:---------------|
-|1| Understand the records management solution. <br /><br /> Use retention labels with more flexible configuration options and when required, declare items as records | [Learn about records management](records-management.md)|
-|2| Use file plan to manage your retention schedules. <br /><br /> File plan lets you create retention labels interactively or import in bulk, and export for analysis. Labels that you create with file plan support additional administrative information to help you identify and track business or regulatory requirements | [Use file plan to create and manage retention labels](file-plan-manager.md)|
+|1| Understand the records management solution. <br /><br /> Use retention labels with more flexible configuration options and when required, declare items as records. | [Learn about records management](records-management.md)|
+|2| Use file plan to manage your retention schedules. <br /><br /> File plan lets you create retention labels interactively or import in bulk, and export for analysis. Labels that you create with file plan support additional administrative information to help you identify and track business or regulatory requirements. | [Use file plan to create and manage retention labels](file-plan-manager.md)|
 |3| Publish and apply your retention labels. Your retention labels can be applied manually or automatically. |[Publish retention labels and apply them in apps](create-apply-retention-labels.md) <p> [Apply a retention label to content automatically](apply-retention-labels-automatically.md)|
-|4| Manage content disposition. <br /><br /> You can require the manual review of content before it's permanently deleted, and provide proof of disposition of records |[Manage content disposition](disposition.md)|
+|4| Manage content disposition. <br /><br /> You can require the manual review of content before it's permanently deleted, and provide proof of disposition of records. |[Manage content disposition](disposition.md)|
 
 To learn more about the capabilities from this solution, see [Learn about records management](records-management.md).
 
