@@ -28,9 +28,7 @@ description: "Prescriptive guidance to deploy Microsoft Purview for your organiz
 
 Use the capabilities from **Microsoft Purview Data Lifecycle Management** (formerly Microsoft Information Governance) and **Microsoft Purview Records Management** to govern your data for compliance or regulatory requirements.
 
-From a [licensing perspective](#licensing), there can be considerable overlap between data lifecycle management and records management. Both solutions support retention and deletion of data for Microsoft 365 apps and services.
-
-Use the following graphic to help you identify the main configurable components for these solutions that each have their own configuration area in the Microsoft Purview compliance portal:
+Both solutions support retention and deletion of data for Microsoft 365 apps and services. Use the following graphic to help you identify the main configurable components for these solutions that each have their own configuration area in the Microsoft Purview compliance portal:
 
 ![Main components to configure and use to govern your data with Microsoft Purview.](../media/govern-your-data.png)
 
