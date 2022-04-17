@@ -27,7 +27,7 @@ ms.custom:
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Microsoft Purview Message Encryption, previously the new OME capabilities, allows organizations to share protected email with anyone on any device. Users can exchange protected messages with other Microsoft 365 organizations, as well as third-parties using Outlook.com, Gmail, and other email services.
+Microsoft Purview Message Encryption allows organizations to share protected email with anyone on any device. Users can exchange protected messages with other Microsoft 365 organizations, as well as third-parties using Outlook.com, Gmail, and other email services.
 
 Follow the steps below to ensure that Microsoft Purview Message Encryption is available in your organization.
 
@@ -58,17 +58,17 @@ If you disabled Azure RMS, or if it was not automatically activated for any reas
 
 This is an optional step. Allowing Microsoft to manage the root key for Azure Information Protection is the default setting and recommended best practice for most organizations. If this is the case, you don't need to do anything.
 
-There are many reasons, for example compliance requirements, that may necessitate you generating and managing your own root key (also known as bring your own key (BYOK)). If this is the case, we recommend that you complete the required steps before setting up the new OME capabilities. See [Planning and implementing your Azure Information Protection tenant key](/information-protection/plan-design/plan-implement-tenant-key) for more.
+There are many reasons, for example compliance requirements, that may necessitate you generating and managing your own root key (also known as bring your own key (BYOK)). If this is the case, we recommend that you complete the required steps before setting up Microsoft Purview Message Encryption. See [Planning and implementing your Azure Information Protection tenant key](/information-protection/plan-design/plan-implement-tenant-key) for more.
 
-## Verify new OME configuration in Exchange Online PowerShell
+## Verify Microsoft Purview Message Encryption configuration in Exchange Online PowerShell
 
-You can verify that your Microsoft 365 tenant is properly configured to use the new OME capabilities in [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell).
+You can verify that your Microsoft 365 tenant is properly configured to use Microsoft Purview Message Encryption in [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell).
 
 1. [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) using an account with global administrator permissions in your Microsoft 365 tenant.
 
 2. Run the Get-IRMConfiguration cmdlet.
 
-     You should see a value of $True for the AzureRMSLicensingEnabled parameter, which indicates that OME is configured in your tenant. If it is not, use Set-IRMConfiguration to set the value of AzureRMSLicensingEnabled to $True to enable OME.
+     You should see a value of $True for the AzureRMSLicensingEnabled parameter, which indicates that Microsoft Purview Message Encryption is configured in your tenant. If it is not, use Set-IRMConfiguration to set the value of AzureRMSLicensingEnabled to $True to enable Microsoft Purview Message Encryption.
 
 3. Run the Test-IRMConfiguration cmdlet using the following syntax:
 
@@ -110,18 +110,18 @@ You can verify that your Microsoft 365 tenant is properly configured to use the 
      Remove-PSSession $session
      ```
 
-## Next steps: Define mail flow rules to use new OME capabilities
+## Next steps: Define mail flow rules to use Microsoft Purview Message Encryption
 
-If there are previously configured mail flow rules to encrypt email in your organization, you need to update the existing rules to use the new OME capabilities. For new deployments, you need to create new mail flow rules.
+If there are previously configured mail flow rules to encrypt email in your organization, you need to update the existing rules to use Microsoft Purview Message Encryption. For new deployments, you need to create new mail flow rules.
 
 > [!IMPORTANT]
-> If you do not update existing mail flow rules, your users will continue to receive encrypted mail that uses the previous HTML attachment format, instead of the new seamless OME experience.
+> If you do not update existing mail flow rules, your users will continue to receive encrypted mail that uses the previous HTML attachment format, instead of the new seamless experience.
 
 Mail flow rules determine under what conditions email messages should be encrypted, as well as conditions for removing that encryption. When you set an action for a rule, any messages that match the rule conditions are encrypted when they're sent.
 
-For steps on creating mail flow rules for OME, see [Define mail flow rules to encrypt email messages in Office 365](define-mail-flow-rules-to-encrypt-email.md).
+For steps on creating mail flow rules message encryption, see [Define mail flow rules to encrypt email messages in Office 365](define-mail-flow-rules-to-encrypt-email.md).
 
-To update existing rules to use the new OME capabilities:
+To update existing rules to use Microsoft Purview Message Encryption:
 
 1. In the Microsoft 365 admin center, go to **Admin centers** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">**Exchange**</a>.
 2. In the Exchange admin center, go to **Mail flow > Rules**.

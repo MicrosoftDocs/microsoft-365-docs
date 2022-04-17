@@ -25,7 +25,7 @@ This topic describes the steps you need to follow in order to activate and then 
 
 ## This article only applies to the previous version of OME
 
-If you haven't yet moved your organization to the new OME capabilities, but you have already deployed OME, then the information in this article applies to your organization. Microsoft recommends that you make a plan to move to the new OME capabilities as soon as it is reasonable for your organization. For instructions, see [Set up new Office 365 Message Encryption capabilities](set-up-new-message-encryption-capabilities.md). If you want to find out more about how the new capabilities work first, see [Office 365 Message Encryption](ome.md). The rest of this article refers to OME behavior before the release of the new OME capabilities.
+If you haven't yet moved your organization to Microsoft Purview Message Encryption, but you have already deployed OME, then the information in this article applies to your organization. Microsoft recommends that you make a plan to move to Microsoft Purview Message Encryption as soon as it is reasonable for your organization. For instructions, see [Set up Microsoft Purview Message Encryption](set-up-new-message-encryption-capabilities.md). If you want to find out more about how the new capabilities work first, see [Message Encryption](ome.md). The rest of this article refers to OME behavior before the release of Microsoft Purview Message Encryption.
 
 ## Prerequisites for using the previous version of Office 365 Message Encryption
 <a name="warmprereqs"> </a>
@@ -47,7 +47,7 @@ You need to activate Azure Rights Management so that the users in your organizat
 A TPD is an XML file that contains information about your organization's rights management settings. For example, the TPD contains information about the server licensor certificate (SLC) used for signing and encrypting certificates and licenses, the URLs used for licensing and publishing, and so on. You import the TPD into your organization by using Windows PowerShell.
   
 > [!IMPORTANT]
-> Previously, you could choose to import TPDs from the Active Directory Rights Management service (AD RMS) into your organization. However, doing so will prevent you from using the new OME capabilities and is not recommended. If your organization is currently configured this way, Microsoft recommends that you create a plan to migrate from your on-premises Active Directory RMS to cloud-based Azure Information Protection. For more information, see [Migrating from AD RMS to Azure Information Protection](/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms). You will not be able to use the new OME capabilities until you have completed the migration to Azure Information Protection.
+> Previously, you could choose to import TPDs from the Active Directory Rights Management service (AD RMS) into your organization. However, doing so will prevent you from using Microsoft Purview Message Encryption and is not recommended. If your organization is currently configured this way, Microsoft recommends that you create a plan to migrate from your on-premises Active Directory RMS to cloud-based Azure Information Protection. For more information, see [Migrating from AD RMS to Azure Information Protection](/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms). You will not be able to use Microsoft Purview Message Encryption until you have completed the migration to Azure Information Protection.
   
  **To import TPDs from Azure RMS**
   
@@ -108,14 +108,14 @@ A TPD is an XML file that contains information about your organization's rights 
 ## I have the previous version of OME set up with Active Directory Rights Management not Azure Information Protection, what do I do?
 <a name="importTPDs"> </a>
 
-You can continue to use your existing Office 365 Message Encryption mail flow rules with Active Directory Rights Management, but you can't configure or use the new OME capabilities. Instead, you need to migrate to Azure Information Protection. For information about migration and what this means for your organization, see [Migrating from AD RMS to Azure Information Protection](/information-protection/deploy-use/prepare-environment-adrms).
+You can continue to use your existing Office 365 Message Encryption mail flow rules with Active Directory Rights Management, but you can't configure or use Microsoft Purview Message Encryption. Instead, you need to migrate to Azure Information Protection. For information about migration and what this means for your organization, see [Migrating from AD RMS to Azure Information Protection](/information-protection/deploy-use/prepare-environment-adrms).
   
 ## Next steps
 <a name="importTPDs"> </a>
 
-Once you've completed Azure Rights Management setup, if you want to enable the new OME capabilities, see [Set up new Office 365 Message Encryption capabilities built on top of Azure Information Protection.](./set-up-new-message-encryption-capabilities.md)
+Once you've completed Azure Rights Management setup, if you want to enable Microsoft Purview Message Encryption, see [Set up Microsoft Purview Message Encryption](./set-up-new-message-encryption-capabilities.md).
   
-After you've set up your organization to use the new OME capabilities, you're ready to [Define mail flow rules to protect email messages with new OME capabilities](define-mail-flow-rules-to-encrypt-email.md).
+After you've set up your organization to use Microsoft Purview Message Encryption, you're ready to [Define mail flow rules](define-mail-flow-rules-to-encrypt-email.md).
   
 ## Related topics
 <a name="importTPDs"> </a>
