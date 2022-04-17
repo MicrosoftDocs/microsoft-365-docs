@@ -62,7 +62,7 @@ The new capabilities provide the following advantages:
 
 ## Microsoft Purview Advanced Message Encryption capabilities
 
-Office 365 Advanced Message Encryption offers additional capabilities on top of Microsoft Purview Message Encryption. You must have Microsoft Purview Message Encryption set up in your organization in order to use Advanced Message Encryption. Also, in order to use these capabilities, recipients must view and reply to secure mail through the Microsoft Purview Message Encryption Portal. The advanced capabilities include:
+Microsoft Purview Advanced Message Encryption offers additional capabilities on top of Microsoft Purview Message Encryption. You must have Microsoft Purview Message Encryption set up in your organization in order to use Advanced Message Encryption. Also, in order to use these capabilities, recipients must view and reply to secure mail through the Microsoft Purview Message Encryption Portal. The advanced capabilities include:
 
 - Message revocation
 
