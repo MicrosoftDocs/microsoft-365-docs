@@ -64,7 +64,7 @@ After Microsoft encrypts a message, recipients have unrestricted access to attac
 You may want to update any applicable end-user documentation and training materials to prepare people in your organization for this change. Share these Office 365 Message Encryption resources with your users as appropriate:
 
 - [Send, view, and reply to encrypted messages in Outlook for PC](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)
-- [Microsoft 365 Essentials Video: Office Message Encryption](https://youtu.be/CQR0cG_iEUc)
+- [Microsoft 365 Essentials Video: Message Encryption](https://youtu.be/CQR0cG_iEUc)
 
 ## View these changes in the audit log
 

@@ -29,7 +29,7 @@ This article compares encryption options in Microsoft 365 including Office 365 M
   
 Microsoft 365 delivers multiple encryption options to help you meet your business needs for email security. This article presents three ways to encrypt email in Office 365. If you want to learn more about all security features in Office 365, visit the [Office 365 Trust Center](https://go.microsoft.com/fwlink/p/?LinkID=282470). This article introduces the three types of encryption available for Microsoft 365 administrators to help secure email in Office 365:
   
-- Office Message Encryption (OME).
+- Microsoft Purview Message Encryption.
 
 - Secure/Multipurpose Internet Mail Extensions (S/MIME).
 

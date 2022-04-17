@@ -237,11 +237,11 @@ To create a mail transport rule:
 |Do the following ...|Block the message . . . reject the message and include an explanation.|
 |Provide message text|Auto-forwarding email outside this organization is prevented for security reasons.|
 
-## 7: Use Office Message Encryption
+## 7: Use Microsoft Purview Message Encryption
 
-Office Message Encryption is included with Microsoft 365. It's already set up. With Office Message Encryption, your organization can send and receive encrypted email messages between people inside and outside your organization. Office 365 Message Encryption works with Outlook.com, Yahoo!, Gmail, and other email services. Email message encryption helps ensure that only intended recipients can view message content.
+Microsoft Purview Message Encryption is included with Microsoft 365. It's already set up. With Message Encryption, your organization can send and receive encrypted email messages between people inside and outside your organization. Office 365 Message Encryption works with Outlook.com, Yahoo!, Gmail, and other email services. Email message encryption helps ensure that only intended recipients can view message content.
 
-Office Message Encryption provides two protection options when sending mail:
+Microsoft Purview Message Encryption provides two protection options when sending mail:
 
 - Do not forward
 
