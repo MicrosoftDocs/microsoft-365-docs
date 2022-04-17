@@ -1,11 +1,11 @@
 ---
-title: "Set up new Message Encryption capabilities"
+title: "Set up Microsoft Purview Message Encryption"
 f1.keywords:
 - NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 4/30/2019
+ms.date: 4/16/2022
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,35 +16,35 @@ ms.assetid: 7ff0c040-b25c-4378-9904-b1b50210d00e
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-description: Learn about the new Office 365 Message Encryption capabilities that enable protected email communication with people inside and outside your organization.
+description: Learn about Microsoft Purview Message Encryption that enables protected email communication with people inside and outside your organization.
 ms.custom: 
 - seo-marvel-apr2020
 - admindeeplinkMAC
 - admindeeplinkEXCHANGE
 ---
 
-# Set up new Message Encryption capabilities
+# Set up Message Encryption
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-The new Office 365 Message Encryption (OME) capabilities allow organizations to share protected email with anyone on any device. Users can exchange protected messages with other Microsoft 365 organizations, as well as non-customers using Outlook.com, Gmail, and other email services.
+Microsoft Purview Message Encryption, previously the new OME capabilities, allows organizations to share protected email with anyone on any device. Users can exchange protected messages with other Microsoft 365 organizations, as well as third-parties using Outlook.com, Gmail, and other email services.
 
-Follow the steps below to ensure that the new OME capabilities are available in your organization.
+Follow the steps below to ensure that Microsoft Purview Message Encryption is available in your organization.
 
 ## Verify that Azure Rights Management is active
 
-The new OME capabilities leverage the protection features in [Azure Rights Management Services (Azure RMS)](/azure/information-protection/what-is-information-protection), the technology used by [Azure Information Protection](/azure/information-protection/what-is-azure-rms) to protect emails and documents via encryption and access controls.
+Microsoft Purview Message Encryption leverages the protection features in [Azure Rights Management Services (Azure RMS)](/azure/information-protection/what-is-information-protection), the technology used by [Azure Information Protection](/azure/information-protection/what-is-azure-rms) to protect emails and documents via encryption and access controls.
 
-The only prerequisite for using the new OME capabilities is that [Azure Rights Management](/azure/information-protection/what-is-azure-rms) must be activated in your organization's tenant. If it is, Microsoft 365 activates the new OME capabilities automatically and you don't need to do anything.
+The only prerequisite for using Microsoft Purview Message Encryption is that [Azure Rights Management](/azure/information-protection/what-is-azure-rms) must be activated in your organization's tenant. If it is, Microsoft 365 activates message encryption automatically and you don't need to do anything.
 
 Azure RMS is also activated automatically for most eligible plans, so you probably don't have to do anything in this regard either. See [Activating Azure Rights Management](/azure/information-protection/activate-service) for more information.
 
 > [!IMPORTANT]
-> If you use Active Directory Rights Management service (AD RMS) with Exchange Online, you need to [migrate to Azure Information Protection](/azure/information-protection/migrate-from-ad-rms-to-azure-rms) before you can use the new OME capabilities. OME is not compatible with AD RMS.
+> If you use Active Directory Rights Management service (AD RMS) with Exchange Online, you need to [migrate to Azure Information Protection](/azure/information-protection/migrate-from-ad-rms-to-azure-rms) before you can use message encryption. Microsoft Purview Message Encryption is not compatible with AD RMS.
 
 For more information, see:
 
-- [What subscriptions do I need to use the new OME capabilities?](ome-faq.yml#what-subscriptions-do-i-need-to-use-the-new-ome-capabilities-) to check whether your subscription plan includes Azure Information Protection (which includes Azure RMS functionality).
+- [What subscriptions do I need to use Microsoft Purview Message Encryption?](ome-faq.yml#what-subscriptions-do-i-need-to-use-the-new-ome-capabilities-) to check whether your subscription plan includes Azure Information Protection (which includes Azure RMS functionality).
 - [Azure Information Protection](https://azure.microsoft.com/services/information-protection/) for information about purchasing an eligible subscription.
 
 ### Manually activating Azure Rights Management
