@@ -49,6 +49,8 @@ Use Microsoft Purview Data Lifecycle Management (formerly Microsoft Information 
 
 To learn more about the capabilities from this solution, see [Learn about data lifecycle management](information-governance.md).
 
+To map business requirements to scenarios supported by data lifecycle management, see the list of [common scenarios](get-started-with-information-governance.md#common-scenarios).
+
 ## Manage high-value items
 
 Use Microsoft Purview Records Management to manage your organization's high-value items for business, legal, or regulatory record-keeping requirements:
@@ -61,6 +63,8 @@ Use Microsoft Purview Records Management to manage your organization's high-valu
 |4| Manage the permanent deletion of data. <br /><br /> Known as *content disposition*, you can require a manual review of content before it's permanently deleted, and provide proof of disposition for records. |[Manage content disposition](disposition.md)|
 
 To learn more about the capabilities from this solution, see [Learn about records management](records-management.md).
+
+To map business requirements to scenarios supported by records management, see the list of [common scenarios](get-started-with-records-management.md#common-scenarios).
 
 ## Training resources
 
