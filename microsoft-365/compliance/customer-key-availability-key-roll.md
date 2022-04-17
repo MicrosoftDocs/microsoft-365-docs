@@ -100,10 +100,10 @@ SharePoint Online only allows you to roll one key at a time. If you want to roll
 
 ## Related articles
 
-- [Service encryption with Customer Key for Office 365](customer-key-overview.md)
+- [Service encryption with Customer Key](customer-key-overview.md)
 
-- [Set up Customer Key for Office 365](customer-key-set-up.md)
+- [Set up Customer Key](customer-key-set-up.md)
 
-- [Manage Customer Key for Office 365](customer-key-manage.md)
+- [Manage Customer Key](customer-key-manage.md)
 
 - [Learn about the availability key](customer-key-availability-key-understand.md)

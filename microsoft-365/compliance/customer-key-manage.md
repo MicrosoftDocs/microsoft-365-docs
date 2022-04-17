@@ -18,11 +18,11 @@ description: "After you set up Customer Key, learn how to manage it by restoring
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-After you've set up Customer Key for Office 365, you'll need to create and assign one or more data encryption policies (DEP). Once you've assigned your DEPs, you can manage your keys as described in this article. Learn more about Customer Key in the related topics.
+After you've set up Customer Key, you'll need to create and assign one or more data encryption policies (DEP). Once you've assigned your DEPs, you can manage your keys as described in this article. Learn more about Customer Key in the related topics.
 
 ## Create a DEP for use with multiple workloads for all tenant users
 
-Before you begin, ensure that you've completed the tasks required to set up Customer. For information, see [Set up Customer Key](customer-key-set-up.md). To create the DEP, you need the Key Vault URIs you obtained during setup. For information, see [Obtain the URI for each Azure Key Vault key](customer-key-set-up.md#obtain-the-uri-for-each-azure-key-vault-key).
+Before you begin, ensure that you've completed the tasks required to set up Customer Key. For information, see [Set up Customer Key](customer-key-set-up.md). To create the DEP, you need the Key Vault URIs you obtained during setup. For information, see [Obtain the URI for each Azure Key Vault key](customer-key-set-up.md#obtain-the-uri-for-each-azure-key-vault-key).
 
 To create a multi-workload DEP, follow these steps:
   
@@ -343,7 +343,7 @@ If you need to revert to Microsoft-managed keys, you can. When you offboard, you
 > [!IMPORTANT]
 > Offboarding is not the same as a data purge. A data purge permanently crypto-deletes your organization's data from Microsoft 365, offboarding does not. You can't perform a data purge for a multiple workload policy.
 
-If you decide not to use Customer Key for assigning multi-workload DEPs anymore then you'll need to reach out to Microsoft support with a request to "offboard" from Customer Key. Ask the support team to file a service request against Microsoft 365 Customer Key team. Reach out to m365-ck@service.microsoft.com if you have any questions.
+If you decide not to use Customer Key for assigning multi-workload DEPs anymore then you'll need to reach out to Microsoft support with a request to "offboard" from Customer Key. Ask the support team to file a service request against the Microsoft Purview Customer Key team. Reach out to m365-ck@service.microsoft.com if you have any questions.
 
 If you do not want to encrypt individual mailboxes using mailbox level DEPs anymore, then you can unassign mailbox level DEPs from all your mailboxes.
 
@@ -369,7 +369,7 @@ Microsoft 365 audits and validates the data purge path. For more information, se
 
 - [O365 Exit Planning Considerations](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=77ea7ebf-ce1b-4a5f-9972-d2d81a951d99&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 
-Purging of multi-workload DEP is not supported for Microsoft 365 Customer Key. The multi-workload DEP is used to encrypt data across multiple workloads across all tenant users. Purging such DEP would result into data from across multiple workloads become inaccessible. If you decide to exit Microsoft 365 services altogether then you could pursue the path of tenant deletion per the documented process. See [how to delete a tenant in Azure Active Directory](/azure/active-directory/enterprise-users/directory-delete-howto).
+Purging of multi-workload DEP is not supported for Customer Key. The multi-workload DEP is used to encrypt data across multiple workloads across all tenant users. Purging such DEP would result into data from across multiple workloads become inaccessible. If you decide to exit Microsoft 365 services altogether then you could pursue the path of tenant deletion per the documented process. See [how to delete a tenant in Azure Active Directory](/azure/active-directory/enterprise-users/directory-delete-howto).
 
 ### Revoke your Customer Keys and the availability key for Exchange Online and Skype for Business
 
@@ -420,7 +420,7 @@ To initiate the data purge path for SharePoint Online, OneDrive for Business, an
 
 ## Related articles
 
-- [Service encryption with Customer Key](customer-key-overview.md)
+- [Service encryption with Microsoft Purview Customer Key](customer-key-overview.md)
 
 - [Learn about the availability key](customer-key-availability-key-understand.md)
 

@@ -67,9 +67,9 @@ To learn more, see the following resources:
 
 - [Set up Information Rights Management (IRM) in SharePoint admin center](set-up-irm-in-sp-admin-center.md)
 
-- [Service encryption with Customer Key in Office 365](customer-key-overview.md)
+- [Service encryption with Microsoft Purview Customer Key](customer-key-overview.md)
 
-- [Double Key Encryption for Microsoft 365](double-key-encryption.md)
+- [Double Key Encryption](double-key-encryption.md)
 
 ## How do I...
 

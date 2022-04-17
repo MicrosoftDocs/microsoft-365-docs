@@ -428,7 +428,7 @@
           href: office-365-service-encryption.md
         - name: Customer Key
           items: 
-            - name: Customer Key in Microsoft 365
+            - name: Service encryption with Microsoft Purview Customer Key
               href: customer-key-overview.md
             - name: Set up Customer Key for Microsoft 365
               href: customer-key-set-up.md
