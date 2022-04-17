@@ -122,7 +122,7 @@ Save the rule.
 
 ## Create mail flow rules for Office 365 Message Encryption without the new capabilities
 
-If you haven't yet moved your organization to Microsoft Purview Message Encryption, Microsoft recommends that you make a plan to move as soon as it is reasonable for your organization. For instructions, see [Set up Microsoft Purview Message Encryption](set-up-new-message-encryption-capabilities.md). Otherwise, see [Defining mail flow rules for Office 365 Message Encryption that don't use Microsoft Purview Message Encryption](legacy-information-for-message-encryption.md#defining-mail-flow-rules-for-office-365-message-encryption-that-dont-use-the-new-ome-capabilities).
+If you haven't yet moved your organization to Microsoft Purview Message Encryption, Microsoft recommends that you make a plan to move as soon as it is reasonable for your organization. For instructions, see [Set up Microsoft Purview Message Encryption](set-up-new-message-encryption-capabilities.md). Otherwise, see [Defining mail flow rules for Office 365 Message Encryption that don't use Microsoft Purview Message Encryption](legacy-information-for-message-encryption.md#defining-mail-flow-rules-for-office-365-message-encryption-that-dont-use-microsoft-purview-message-encryption).
 
 ## Related content
 

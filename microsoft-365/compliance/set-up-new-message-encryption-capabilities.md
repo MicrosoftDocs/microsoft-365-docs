@@ -44,7 +44,7 @@ Azure RMS is also activated automatically for most eligible plans, so you probab
 
 For more information, see:
 
-- [What subscriptions do I need to use Microsoft Purview Message Encryption?](ome-faq.yml#what-subscriptions-do-i-need-to-use-the-new-ome-capabilities-) to check whether your subscription plan includes Azure Information Protection (which includes Azure RMS functionality).
+- [Message Encryption FAQ](ome-faq.yml) to check whether your subscription plan includes Azure Information Protection (which includes Azure RMS functionality).
 - [Azure Information Protection](https://azure.microsoft.com/services/information-protection/) for information about purchasing an eligible subscription.
 
 ### Manually activating Azure Rights Management
