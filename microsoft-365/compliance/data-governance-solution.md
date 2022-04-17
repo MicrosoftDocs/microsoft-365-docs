@@ -50,8 +50,6 @@ Use Microsoft Purview Data Lifecycle Management (formerly Microsoft Information 
 |3| Manage mailboxes. <br /><br /> Enable mailboxes for archiving and auto-expanding archiving, consider whether you need to customize when emails are moved to the archive mailbox, and make mailboxes inactive when users leave the organization.| [Enable archive mailboxes](enable-archive-mailboxes.md) <p> [Enable auto-expanding archiving](enable-autoexpanding-archiving.md) <p> [Create and manage inactive mailboxes](create-and-manage-inactive-mailboxes.md)|
 |4| Import PST files to online mailboxes.  <br /><br /> If you have PST files that contain data you want to govern, you can import them them by using network upload or drive shipping.| [Use network upload to import your organization's PST files](use-network-upload-to-import-pst-files.md) <p> [Use drive shipping to import your organization's PST files](use-drive-shipping-to-import-pst-files-to-office-365.md)|
 
-Check the list of [common scenarios](get-started-with-information-governance.md#common-scenarios) for additional configurations supported by data lifecycle management.
-
 To learn more about the capabilities from this solution, see [Learn about data lifecycle management](information-governance.md).
 
 ## Manage high-value items
@@ -67,7 +65,8 @@ Use Microsoft Purview Records Management to manage your organization's high-valu
 |3| Publish and apply your retention labels. <br /><br /> Your retention labels can be applied manually or automatically in apps, or automatically applied based on sensitive information, keywords or searchable properties, trainable classifiers, or cloud attachments. |[Publish retention labels and apply them in apps](create-apply-retention-labels.md) <p> [Apply a retention label to content automatically](apply-retention-labels-automatically.md)|
 |4| Manage the permanent deletion of data. <br /><br /> Known as *content disposition*, you can require a manual review of content before it's permanently deleted, and provide proof of disposition for records. |[Manage content disposition](disposition.md)|
 
-Check the list of [common scenarios](get-started-with-records-management.md#common-scenarios) for additional configurations supported by records management. 
+> [!TIP]
+> Check the list of [common scenarios](get-started-with-records-management.md#common-scenarios) for additional configurations supported by records management.
 
 To learn more about the capabilities from this solution, see [Learn about records management](records-management.md).
 
