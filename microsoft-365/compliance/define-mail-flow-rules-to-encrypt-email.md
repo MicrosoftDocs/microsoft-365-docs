@@ -86,7 +86,7 @@ You can define mail flow rules for triggering message encryption with by using t
 
 6. To enable encryption using Microsoft Purview Message Encryption, from **Do the following**, choose **Modify the message security** and then choose **Apply Office 365 Message Encryption and rights protection**. Select an RMS template from the list, choose **Save** and then choose **OK**.
 
-   The list of templates includes all default templates and options as well as any custom templates you've created for use by Office 365. If the list is empty, ensure that you have set up Office 365 Message Encryption with the new capabilities as described in [Set up Microsoft Purview Message Encryption](set-up-new-message-encryption-capabilities.md). For information about the default templates, see [Configuring and managing templates for Azure Information Protection](/information-protection/deploy-use/configure-policy-templates). For information about the Do Not Forward option, see [Do Not Forward option for emails](/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails). For information about the encrypt-only option, see [Encrypt Only option for emails](/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
+   The list of templates includes all default templates and options as well as any custom templates you've created for use by Office 365. If the list is empty, ensure that you have set up Microsoft Purview Message Encryption as described in [Set up Microsoft Purview Message Encryption](set-up-new-message-encryption-capabilities.md). For information about the default templates, see [Configuring and managing templates for Azure Information Protection](/information-protection/deploy-use/configure-policy-templates). For information about the Do Not Forward option, see [Do Not Forward option for emails](/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails). For information about the encrypt-only option, see [Encrypt Only option for emails](/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
 
    You can choose **add action** if you want to specify another action.
 
@@ -120,7 +120,7 @@ You can remove encryption from messages that was applied by your organization. Y
 
 Save the rule.
 
-## Create mail flow rules for Office 365 Message Encryption without the new capabilities
+## Create mail flow rules for Office 365 Message Encryption without Microsoft Purview Message Encryption
 
 If you haven't yet moved your organization to Microsoft Purview Message Encryption, Microsoft recommends that you make a plan to move as soon as it is reasonable for your organization. For instructions, see [Set up Microsoft Purview Message Encryption](set-up-new-message-encryption-capabilities.md). Otherwise, see [Defining mail flow rules for Office 365 Message Encryption that don't use Microsoft Purview Message Encryption](legacy-information-for-message-encryption.md#defining-mail-flow-rules-for-office-365-message-encryption-that-dont-use-microsoft-purview-message-encryption).
 
