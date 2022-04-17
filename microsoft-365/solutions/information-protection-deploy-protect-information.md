@@ -27,7 +27,7 @@ These controls are within following solution areas:
 
 - Sensitivity labels
 - Microsoft Purview Data loss prevention (DLP)
-- Office message encryption (OME)
+- Microsoft Purview Message Encryption
 - Teams and sites access controls
 
 ![Key services to protect personal information subject to data privacy regulation.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-grid.png)
