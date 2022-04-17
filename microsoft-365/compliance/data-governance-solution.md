@@ -28,6 +28,8 @@ description: "Prescriptive guidance to deploy Microsoft Purview for your organiz
 
 Use **Microsoft Purview Data Lifecycle Management** (formerly Microsoft Information Governance) and **Microsoft Purview Records Management** to govern your data for compliance or regulatory requirements.
 
+Graphic that shows the solution overview with steps
+
 ## Licensing
 
 To understand your licensing requirements and options, see the following sections from the [Microsoft 365 licensing documentation](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance): 
@@ -37,6 +39,8 @@ To understand your licensing requirements and options, see the following section
 Any additional licensing requirements will be included in the documentation instructions. For example, licensing specific to managing mailboxes might require licenses from Exchange Online.
 
 ## Keep what you need and delete what you don't
+
+Graphic that shows the 4 data lifecycle steps
 
 Use Microsoft Purview Data Lifecycle Management (formerly Microsoft Information Governance) to keep what you need and delete what you don't:
 
@@ -52,6 +56,8 @@ To learn more about the capabilities from this solution, see [Learn about data l
 To map business requirements to scenarios supported by data lifecycle management, see the list of [common scenarios](get-started-with-information-governance.md#common-scenarios).
 
 ## Manage high-value items
+
+Graphic that shows the 4 record management steps
 
 Use Microsoft Purview Records Management to manage your organization's high-value items for business, legal, or regulatory record-keeping requirements:
 
