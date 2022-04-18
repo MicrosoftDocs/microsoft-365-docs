@@ -195,7 +195,7 @@ Here's a quick overview of the information you'll see in each column.
 
 - Compliance administrator
 - Conditional access administrator
-- Customer LockBox access approver
+- Customer Lockbox access approver
 - Device administrators
 - Directory readers
 - Directory synchronization accounts

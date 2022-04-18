@@ -1,5 +1,5 @@
 ---
-title: "Customer Lockbox Requests"
+title: "Customer Lockbox requests"
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -20,7 +20,7 @@ ms.custom: admindeeplinkMAC
 description: "Learn about Customer Lockbox requests that allow you to control how a Microsoft support engineer can access your data when you encounter an issue."
 ---
 
-# Customer Lockbox in Office 365
+# Microsoft Purview Customer Lockbox
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
@@ -99,7 +99,7 @@ You can turn on Customer Lockbox controls in the Microsoft 365 admin center. Whe
     ![Deny Customer Lockbox requests.](../media/CustomerLockbox8.png)
 
 > [!NOTE]
-> Use the Set-AccessToCustomerDataRequest cmdlet to approve, deny, or cancel Microsoft 365 customer lockbox requests that control access to your data by Microsoft support engineers. For more information, see [Set-AccessToCustomerDataRequest](/powershell/module/exchange/set-accesstocustomerdatarequest).
+> Use the Set-AccessToCustomerDataRequest cmdlet to approve, deny, or cancel Microsoft Purview Customer Lockbox requests that control access to your data by Microsoft support engineers. For more information, see [Set-AccessToCustomerDataRequest](/powershell/module/exchange/set-accesstocustomerdatarequest).
 
 ## Auditing Customer Lockbox requests
 
