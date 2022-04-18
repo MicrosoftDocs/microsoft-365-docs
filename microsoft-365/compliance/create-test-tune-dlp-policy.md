@@ -89,7 +89,7 @@ See [Sensitive information type entity definitions](sensitive-information-type-e
 
 When the risks of data leakage aren't entirely obvious, it's difficult to work out where exactly you should start with implementing DLP. Fortunately, DLP policies can be run in "test mode", allowing you to gauge their effectiveness and accuracy before you turn them on.
 
-DLP policies for Exchange Online can be managed through the Exchange admin center. But you can configure DLP policies for all workloads through the Security & Compliance Center, so that's what I'll use for demonstrations in this article. In the Security & Compliance Center, you'll find the DLP policies under **Data loss prevention** > **Policy**. Choose **Create a policy** to start.
+DLP policies for Exchange Online can be managed through the Exchange admin center. But you can configure DLP policies for all workloads through the Microsoft Purview Portal, so that's what I'll use for demonstrations in this article. In the Microsoft Purview Portal, you'll find the DLP policies under **Data loss prevention** > **Policy**. Choose **Create a policy** to start.
 
 Microsoft 365 provides a range of [DLP policy templates](what-the-dlp-policy-templates-include.md) you can use to create policies. Let's say that you're an Australian business. You can filter the templates on Australia, and choose Financial, Medical and Health, and Privacy.
 

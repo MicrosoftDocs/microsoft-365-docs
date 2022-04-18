@@ -60,7 +60,7 @@ Here are some examples of named entity SITs. You can find all 52 of them in the 
 
 ## Examples of enhanced DLP policies
 
-Here are some examples of enhanced DLP policies that use named entity SITs. You can find all 10 of them in the **Compliance Center > Data loss prevention > Create policy**. Enhanced templates can be used in DLP and auto-labeling.
+Here are some examples of enhanced DLP policies that use named entity SITs. You can find all 10 of them in the **Microsoft Purview Portal > Data loss prevention > Create policy**. Enhanced templates can be used in DLP and auto-labeling.
 
 |Policy category  |Template  |Description  |
 |---------|---------|---------|

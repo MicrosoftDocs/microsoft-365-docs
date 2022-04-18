@@ -20,7 +20,7 @@ search.appverid:
 description: "Learn how to plan for and migrate your Exchange online data loss prevention policies into DLP."
 ---
 
-# Migrate Exchange Online data loss prevention policies to Compliance center
+# Migrate Exchange Online data loss prevention policies to Microsoft Purview Portal
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 

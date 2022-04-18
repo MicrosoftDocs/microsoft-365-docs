@@ -84,7 +84,7 @@ Now that you've learned about DLP on-premises scanner, your next steps are:
 
 ## See also
 
-- [Getting started with the Microsoft data loss prevention on-premises scanner](dlp-on-premises-scanner-get-started.md)
+- [Getting started with the data loss prevention on-premises scanner](dlp-on-premises-scanner-get-started.md)
 - [Use the data loss prevention on-premises scanner](dlp-on-premises-scanner-use.md)
 - [Learn about data loss prevention](dlp-learn-about-dlp.md)
 - [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
