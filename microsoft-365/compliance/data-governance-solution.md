@@ -39,7 +39,7 @@ Any additional licensing requirements will be included in the documentation inst
 
 ## Keep what you need and delete what you don't
 
-Graphic that shows the 4 data lifecycle steps
+Graphic that shows the 4 steps for data lifecycle
 
 Use Microsoft Purview Data Lifecycle Management (formerly Microsoft Information Governance) to keep what you need and delete what you don't:
 
@@ -54,7 +54,7 @@ To learn more about the capabilities from this solution, see [Learn about data l
 
 ## Manage high-value items
 
-Graphic that shows the 4 record management steps
+Graphic that shows the 4 steps for record management
 
 Use Microsoft Purview Records Management to manage your organization's high-value items for business, legal, or regulatory record-keeping requirements:
 
