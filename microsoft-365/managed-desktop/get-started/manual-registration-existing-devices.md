@@ -1,6 +1,6 @@
 ---
-title: Register existing devices yourself
-description: Register reused devices you might already have yourself so they can be managed by Microsoft Managed Desktop
+title: Manual registration for existing devices
+description: Register existing devices so they can be managed by Microsoft Managed Desktop
 ms.service: m365-md
 author: tiaraquan
 f1.keywords:
@@ -13,7 +13,7 @@ ms.topic: article
 audience: Admin
 ---
 
-# Register existing devices yourself
+# Manual registration for existing devices
 
 >[!NOTE]
 >This article describes the steps for you to reuse devices you already have, and register them in Microsoft Managed Desktop. If you are working with brand-new devices, follow the steps in [Register new devices in Microsoft Managed Desktop yourself](manual-registration.md) instead. <br> <br> The process for Partners is documented in [Steps for Partners to register devices](partner-registration.md).

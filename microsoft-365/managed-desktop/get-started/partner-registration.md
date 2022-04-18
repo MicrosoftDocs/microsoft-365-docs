@@ -1,6 +1,6 @@
 ---
-title: Steps for Partners to register devices
-description: How Partners can register devices so they can be managed by Microsoft Managed Desktop
+title: Partner registration
+description: Partners can register devices to be managed by Microsoft Managed Desktop
 ms.service: m365-md
 author: tiaraquan
 f1.keywords:
@@ -13,7 +13,7 @@ ms.topic: article
 audience: Admin
 ---
 
-# Steps for Partners to register devices
+# Partner registration
 
 This article describes the steps for Partners to register devices. The process for registering devices yourself is documented in [Manual registration](manual-registration.md).
 

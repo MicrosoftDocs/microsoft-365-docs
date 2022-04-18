@@ -88,7 +88,7 @@ The benefit of [archiving a team](/microsoftteams/archive-or-delete-a-team) is t
 
 When a team is archived by an owner, it's set to read-only for members both for content within the team and if selected, the associated SharePoint site. The objective of this action is to ensure that conversations in channels are preserved in their existing state, along with SharePoint-based content such as files and wikis.
 
-In the SharePoint site there are no visible changes. However, no changes can be made to any files or lists because the SharePoint permissions for the Microsoft 365 Group are set to **Site visitors**. This includes the OneNote notebook for the team, which is stored in the Site Assets library within the SharePoint site.
+In the SharePoint site there are no visible changes. However, no changes can be made to any files or lists because the SharePoint permissions for the Microsoft 365 group are set to **Site visitors**. This includes the OneNote notebook for the team, which is stored in the Site Assets library within the SharePoint site.
 
 When a team is archived, the underlying Microsoft 365 group is still subject to the expiration policy (if set), and as such the owner must continue to renew the team.
 
@@ -163,7 +163,7 @@ If it's only required to keep a copy of the plan for record-keeping purposes, th
 
 **Copy and move tasks to another Plan**
 
-While copying or moving tasks to another plan seems like a solution, individual tasks can only be [copied or moved between plans](https://support.microsoft.com/office/ad43a5d8-c1ad-42fd-b3da-fe97d72c8a1b) within the same group. This won't back up the data if the group associated With the plan is being deleted.
+While copying or moving tasks to another plan seems like a solution, individual tasks can only be [copied or moved between plans](https://support.microsoft.com/office/ad43a5d8-c1ad-42fd-b3da-fe97d72c8a1b) within the same group. This won't back up the data if the group associated with the plan is being deleted.
 
 **Copy entire plan**
 
@@ -216,7 +216,7 @@ Files are generally stored in three primary locations within a SharePoint site:
 - Files in channels – Documents library
 - Wiki pages – Teams Wiki Data library
 
-If the site has one or more subsites, the off-boarding process will need to be repeated for each subsite. If the team contains private channels, there's a separate SharePoint site for each channel.
+If the site has one or more subsites, the off-boarding process will need to be repeated for each subsite. If the team contains private or shared channels, there's a separate SharePoint site for each channel.
 
 It's important when removing files from a group or team to consider that they may be shared with users who aren't members of the group or team. You may want to communicate the impending change to them.
 

@@ -9,7 +9,9 @@ ms.topic: article
 ms.service: o365-solutions
 f1.keywords:
 - NOCSH
-ms.custom: seo-marvel-apr2020
+ms.custom: 
+- seo-marvel-apr2020
+- admindeeplinkSPO
 ms.collection: 
 - Strat_SP_gtc
 - SPO_Content
@@ -23,7 +25,7 @@ Here's a look at how Microsoft 365 services work in a multi-geo environment.
 
 ## Administrator experience
 
-The [SharePoint admin center](https://admin.microsoft.com/sharepoint) has a **Geo locations** tab in the left navigation which features a geo locations map where you can view and manage your geo locations. Use this page to add or delete geo locations for your tenant.
+The SharePoint admin center has a <a href="https://go.microsoft.com/fwlink/?linkid=2185076" target="_blank">**Geo locations** tab</a> in the left navigation that features a geo locations map where you can view and manage your geo locations. Use this page to add or delete geo locations for your tenant.
 
 ## Audit log search
 

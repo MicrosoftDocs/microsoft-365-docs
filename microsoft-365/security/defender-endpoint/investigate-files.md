@@ -11,9 +11,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-  - m365-security-compliance
-  - m365-initiative-defender-endpoint
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
@@ -71,13 +69,13 @@ The file prevalence card shows where the file was seen in devices in the organiz
 > [!NOTE]
 > Different users may see dissimilar values in the *devices in organization* section of the file prevalence card. This is because the card displays information based on the RBAC scope that a user has. Meaning, if a user has been granted visibility on a specific set of devices, they will only see the file organizational prevalence on those devices.
 
-![Image of file information.](images/atp-file-information.png)
+:::image type="content" source="images/atp-file-information.png" alt-text="The file information" lightbox="images/atp-file-information.png":::
 
 ## Alerts
 
 The **Alerts** tab provides a list of alerts that are associated with the file. This list covers much of the same information as the Alerts queue, except for the device group, if any, the affected device belongs to. You can choose what kind of information is shown by selecting **Customize columns** from the toolbar above the column headers.
 
-![Image of alerts related to the file section.](images/atp-alerts-related-to-file.png)
+:::image type="content" source="images/atp-alerts-related-to-file.png" alt-text="The alerts related to the file section" lightbox="images/atp-alerts-related-to-file.png":::
 
 ## Observed in organization
 
@@ -86,7 +84,7 @@ The **Observed in organization** tab allows you to specify a date range to see w
 > [!NOTE]
 > This tab will show a maximum number of 100 devices. To see _all_ devices with the file, export the tab to a CSV file, by selecting **Export** from the action menu above the tab's column headers.
 
-![Image of most recent observed device with the file.](images/atp-observed-machines.png)
+:::image type="content" source="images/atp-observed-machines.png" alt-text="The most recent observed devices with the file" lightbox="images/atp-observed-machines.png":::
 
 Use the slider or the range selector to quickly specify a time period that you want to check for events involving the file. You can specify a time window as small as a single day. This will allow you to see only files that communicated with that IP Address at that time, drastically reducing unnecessary scrolling and searching.
 
@@ -94,13 +92,13 @@ Use the slider or the range selector to quickly specify a time period that you w
 
 The **Deep analysis** tab allows you to [submit the file for deep analysis](respond-file-alerts.md#deep-analysis), to uncover more details about the file's behavior, as well as the effect it is having within your organizations. After you submit the file, the deep analysis report will appear in this tab once results are available. If deep analysis did not find anything, the report will be empty and the results space will remain blank.
 
-![Image of deep analysis tab.](images/submit-file.png)
+:::image type="content" source="images/submit-file.png" alt-text="The Deep analysis tab" lightbox="images/submit-file.png":::
 
 ## File names
 
 The **File names** tab lists all names the file has been observed to use, within your organizations.
 
-![Image of file names tab.](images/atp-file-names.png)
+:::image type="content" source="images/atp-file-names.png" alt-text="The File names tab" lightbox="images/atp-file-names.png":::
 
 ## Related topics
 

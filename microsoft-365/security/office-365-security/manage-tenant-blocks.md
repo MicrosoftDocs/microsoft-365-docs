@@ -49,7 +49,7 @@ ms.prod: m365-security
 4. When you're finished, click **Add**.
 
 > [!NOTE]
-> The emails from these senders will be blocked as *spam*. 
+> The emails from these senders will be blocked as *high confidence spam (SCL = 9)*. 
 
 ### Create block URL entries in the Tenant Allow/Block List
 
@@ -100,7 +100,7 @@ ms.prod: m365-security
 - Only the _combination_ of the spoofed user _and_ the sending infrastructure as defined in the domain pair is specifically allowed or blocked from spoofing.
 - When you configure an allow or block entry for a domain pair, messages from that domain pair no longer appear in the spoof intelligence insight.
 - Entries for spoofed senders never expire.
-- Spoof supports both allow and block. URL supports only allow.
+- Spoof supports both allow and block.
 
 1. In the Microsoft 365 Defender portal, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
 

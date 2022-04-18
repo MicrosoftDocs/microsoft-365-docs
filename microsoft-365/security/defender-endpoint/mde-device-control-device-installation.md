@@ -50,7 +50,7 @@ The following device properties are supported by Device Installation support:
 - Hardware ID
 - Compatible ID
 - Device Class
-- ‘Removable Device’ Device type: Some devices could be classified as Removable Device. A device is considered removable when the driver for the device to which it's connected indicates that the device is removable. For example, a USB device is reported to be removable by the drivers for the USB hub to which the device is connected.
+- 'Removable Device' Device type: Some devices could be classified as Removable Device. A device is considered removable when the driver for the device to which it's connected indicates that the device is removable. For example, a USB device is reported to be removable by the drivers for the USB hub to which the device is connected.
 For more information, see [Device Installation in Windows](/windows/client-management/manage-device-installation-with-group-policy).
 
 ## Policies
@@ -196,31 +196,33 @@ In Microsoft Endpoint Manager [https://endpoint.microsoft.com/](https://endpoint
 
     - Open Endpoint security > Attack surface reduction > Create Policy > Platform: Windows 10 (and later) & Profile: Device control.
 
-      :::image type="content" source="../../media/devicepolicy-editprofile.png" alt-text="edit profile":::
+      :::image type="content" source="../../media/devicepolicy-editprofile.png" alt-text="The Edit profile page" lightbox="../../media/devicepolicy-editprofile.png":::
 
 2. Plug in a USB, device and you will see following error message:
 
-      :::image type="content" source="../../media/devicepolicy-errormsg.png" alt-text="error message":::
+      :::image type="content" source="../../media/devicepolicy-errormsg.png" alt-text="The error message" lightbox="../../media/devicepolicy-errormsg.png":::
 
 3. Enable **Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria**.
 
     - **only support OMA-URI for now**: Devices > Configuration profiles > Create profile > Platform: Windows 10 (and later) & Profile: Custom
 
-      :::image type="content" source="../../media/devicepolicy-editrow.png" alt-text="edit row":::
+      :::image type="content" source="../../media/devicepolicy-editrow.png" alt-text="The Edit Row page" lightbox="../../media/devicepolicy-editrow.png":::
 
 4. Enable and add allowed USB Instance ID – **Allow installation of devices that match any of these device IDs**.
 
     - Update the step 1 Device control profile
 
-      :::image type="content" source="../../media/devicepolicy-devicecontrol.png" alt-text="devicecontrol":::
+      :::image type="content" source="../../media/devicepolicy-devicecontrol.png" alt-text="An identifier in the Device Control page" lightbox="../../media/devicepolicy-devicecontrol.png":::
 
-    Adding PCI\CC_0C03; PCI\CC_0C0330; PCI\VEN_8086; PNP0CA1; PNP0CA1&HOST; USB\ROOT_HUB30; USB\ROOT_HUB20; USB\USB20_HUB on above screen capture is because it's not enough to enable only a single hardware ID to enable a single USB thumb-drive. You have to ensure all the USB devices that preceding the target one aren't blocked (allowed) as well. You can open Device Manager and change view to ‘Devices by connections’ to see the way devices are installed in the PnP tree. In Our case the following devices has to be allowed so the target USB thumb-drive could be allowed as well:
+    Adding PCI\CC_0C03; PCI\CC_0C0330; PCI\VEN_8086; PNP0CA1; PNP0CA1&HOST; USB\ROOT_HUB30; USB\ROOT_HUB20; USB\USB20_HUB on above screen capture is because it's not enough to enable only a single hardware ID to enable a single USB thumb-drive. You have to ensure all the USB devices that preceding the target one aren't blocked (allowed) as well. You can open Device Manager and change view to 'Devices by connections' to see the way devices are installed in the PnP tree. In Our case the following devices has to be allowed so the target USB thumb-drive could be allowed as well:
 
-    - “Intel(R) USB 3.0 eXtensible Host Controller – 1.0 (Microsoft)” -> PCI\CC_0C03
-    - “USB Root Hub (USB 3.0)” -> USB\ROOT_HUB30
-    - “Generic USB Hub” -> USB\USB20_HUB
+    Adding PCI\CC_0C03; PCI\CC_0C0330; PCI\VEN_8086; PNP0CA1; PNP0CA1&HOST; USB\ROOT_HUB30; USB\ROOT_HUB20; USB\USB20_HUB on above screen capture is because it's not enough to enable only a single hardware ID to enable a single USB thumb-drive. You have to ensure all the USB devices that preceding the target one aren't blocked (allowed) as well. You can open Device Manager and change view to 'Devices by connections' to see the way devices are installed in the PnP tree. In Our case the following devices has to be allowed so the target USB thumb-drive could be allowed as well:
 
-    :::image type="content" source="../../media/devicepolicy-devicemgr.png" alt-text="device control":::
+    - "Intel(R) USB 3.0 eXtensible Host Controller – 1.0 (Microsoft)" -> PCI\CC_0C03
+    - "USB Root Hub (USB 3.0)" -> USB\ROOT_HUB30
+    - "Generic USB Hub" -> USB\USB20_HUB
+
+    :::image type="content" source="../../media/devicepolicy-devicemgr.png" alt-text="The View menu item in the Device Manager page" lightbox="../../media/devicepolicy-devicemgr.png":::
 
     > [!NOTE]
     > Some devices in the system have several layers of connectivity to define their installation on the system. USB thumb drives are such devices. Thus, when looking to either block or allow them on a system, it's important to understand the path of connectivity for each device. There are several generic device IDs that are commonly used in systems and could provide a good start to build an "Allow list" in such cases. The following is one example (it is not always the same for all USBs; you need to understand the PnP tree of the device you want to manage through the Device Manager):
@@ -231,9 +233,9 @@ In Microsoft Endpoint Manager [https://endpoint.microsoft.com/](https://endpoint
     >
     > Different PC manufacturers sometimes have different ways to nest USB devices in the PnP tree, but in general this is how it's done.
 
-5. Plug in the allowed USB again. You’ll see that it's now allowed and available.
+5. Plug in the allowed USB again. You'll see that it's now allowed and available.
 
-    :::image type="content" source="../../media/devicepolicy-removedrive.png" alt-text="remove drive":::
+    :::image type="content" source="../../media/devicepolicy-removedrive.png" alt-text="The Remove drive details page" lightbox="../../media/devicepolicy-removedrive.png":::
 
 #### Deploying and managing policy via Group Policy
 
@@ -265,7 +267,7 @@ DeviceEvents
 | order by Timestamp desc
 ```
 
-:::image type="content" source="../../media/block-removable-storage2.png" alt-text="block storage":::
+:::image type="content" source="../../media/block-removable-storage2.png" alt-text="The Block storage" lightbox="../../media/block-removable-storage2.png":::
 
 ## Frequently asked questions
 
@@ -284,4 +286,4 @@ DeviceRegistryEvents
 
 It is not enough to enable only a single hardware ID to enable a single USB thumb-drive. Ensure that all the USB devices that precede the target one aren't blocked (allowed) as well.
 
-:::image type="content" source="../../media/devicemgrscrnshot.png" alt-text="Device install faq":::
+:::image type="content" source="../../media/devicemgrscrnshot.png" alt-text="The Device install faq" lightbox="../../media/devicemgrscrnshot.png":::

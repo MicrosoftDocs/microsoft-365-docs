@@ -13,6 +13,7 @@ ms.localizationpriority: high
 ms.collection: 
 - M365-security-compliance
 - SPO_Content
+ms.custom: admindeeplinkSPO
 search.appverid: 
 - MOE150
 - MET150
@@ -52,6 +53,9 @@ Before you enable sensitivity labels for containers and configure sensitivity la
 After you enable and configure sensitivity labels for containers, users can additionally see and apply sensitivity labels to Microsoft team sites, Microsoft 365 groups, and SharePoint sites. For example, when you create a new team site from SharePoint:
 
 ![A sensitivity label when creating a team site from SharePoint.](../media/sensitivity-labels-new-team-site.png)
+
+> [!NOTE]
+> Sensitivity labels for containers support [Teams shared channels](/MicrosoftTeams/shared-channels), currently in preview. If a team has any shared channels, they automatically inherit sensitivity label settings from their parent team, and that label can't be removed or replaced with a different label.
 
 ## How to enable sensitivity labels for containers and synchronize labels
 
@@ -207,14 +211,16 @@ Use the following guidance for when you create, modify, or delete sensitivity la
 
 ### Creating and publishing labels that are configured for sites and groups
 
-When a new sensitivity label is created and published, it's visible for users in teams, groups, and sites within one hour. However, if you modify an existing label, allow up to 24 hours. Use the following guidance to publish a label for your users when that label is configured for site and group settings:
+Use the following guidance to publish a label for your users when that label is configured for site and group settings:
 
 1. After you create and configure the sensitivity label, add this label to a label policy that applies to just a few test users.
 
 2. Wait for the change to replicate:
-
-   - New label: Wait for one hour.
-   - Existing label: Wait for 24 hours.
+    
+   - New label: Wait for at least one hour.
+   - Existing label: Wait for at least 24 hours.
+    
+    For more information about the timing of labels, see [When to expect new labels and changes to take effect](create-sensitivity-labels.md#when-to-expect-new-labels-and-changes-to-take-effect).
 
 3. After this wait period, use one of the test user accounts to create a team, Microsoft 365 group, or SharePoint site with the label that you created in step 1.
 
@@ -222,7 +228,7 @@ When a new sensitivity label is created and published, it's visible for users in
 
 ### Modifying published labels that are configured for sites and groups
 
-As a best practice, don't change the site and group settings for a sensitivity label after the label has been applied to teams, groups, or sites. If you do, remember to wait for 24 hours for the changes to replicate to all containers that have the label applied.
+As a best practice, don't change the site and group settings for a sensitivity label after the label has been applied to teams, groups, or sites. If you do, remember to wait for at least 24 hours for the changes to replicate to all containers that have the label applied.
 
 In addition, if your changes include the **External users access** setting:
 
@@ -236,7 +242,7 @@ If you delete a sensitivity label that has the site and group settings enabled, 
 
 1. Remove the sensitivity label from all label policies that include the label.
 
-2. Wait for one hour.
+2. Wait for at least one hour.
 
 3. After this wait period, try creating a team, group, or site and confirm that the label is no longer visible.
 
@@ -331,7 +337,7 @@ This series of commands lets you label multiple sites across your tenant with th
 
 ## View and manage sensitivity labels in the SharePoint admin center
 
-To view, sort, and search the applied sensitivity labels, use the **Active sites** page in the new SharePoint admin center. You might need to first add the **Sensitivity** column:
+To view, sort, and search the applied sensitivity labels, use <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites**</a> in the new SharePoint admin center. You might need to first add the **Sensitivity** column:
 
 ![The Sensitivity column on the Active sites page.](../media/manage-site-sensitivity-labels.png)
 
@@ -347,7 +353,7 @@ You can also change and apply a label from this page:
 
 ## Support for sensitivity labels
 
-When you use admin centers that support sensitivity labels, you see all sensitivity labels for your tenant. In comparison, user apps and services that filter sensitivity labels according to publishing policies can result in you seeing a subset of those labels.
+When you use admin centers that support sensitivity labels, with the exception of the Azure Active Directory portal, you see all sensitivity labels for your tenant. In comparison, user apps and services that filter sensitivity labels according to publishing policies can result in you seeing a subset of those labels. The Azure Active Directory portal also filters the labels according to publishing policies.
 
 The following apps and services support sensitivity labels configured for sites and group settings:
 
@@ -355,9 +361,9 @@ The following apps and services support sensitivity labels configured for sites 
 
   - SharePoint admin center
   - Teams admin center
-  - Azure Active Directory portal
   - Microsoft 365 admin center
   - Microsoft 365 compliance center
+  - Azure Active Directory portal
 
 - User apps and services:
 
