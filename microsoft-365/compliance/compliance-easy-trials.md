@@ -39,6 +39,10 @@ Users must hold one of the following admin roles in order to sign up for or end 
 
 Get details on roles at [About admin roles](../admin/add-users/about-admin-roles.md).
 
+## Licensing
+
+As part of the trial setup, 300 Microsoft 365 E5 compliance licenses are automatically applied to your organization. The licenses are active for 90 days.
+
 ## How to sign up for the trial
 
 Visit the [Microsoft 365 trials hub](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef) to sign up for the trial. You can also follow the steps below:
@@ -49,17 +53,17 @@ Visit the [Microsoft 365 trials hub](https://compliance.microsoft.com/trialHoriz
 
 Your trial will be effective immediately for 90 days. It can take up to two hours for all Purview solutions to appear in your left navigation. Sign out and sign back in to see the updates.
 
-## Licensing, getting started, and ending the trial
-
-#### Licensing
-
-As part of the trial setup, 300 Microsoft 365 E5 compliance licenses are automatically applied to your organization. The licenses are active for 90 days.
+## Getting started, finding support, and ending the trial
 
 #### Getting started
 
 You can start using Purview solutions as soon as you see them in the Microsoft Purview compliance portal. Nothing is created automatically and users won't be affected. When you navigate to each solution, you may be guided to make additional setup configurations to start using features.
 
 Use our [trial playbook](compliance-easy-trials-compliance-playbook.md) to help you get started.
+
+#### Finding support
+
+Organizations can leverage FastTrack to assist with deploying the trial if the customer tenant has at least 150 license. Get more [details about FastTrack](https://docs.microsoft.com/en-us/fasttrack/eligibility).
 
 #### Extending the trial
 
