@@ -101,7 +101,7 @@ Shared channels are integrated with Microsoft 365 compliance features.
 
 ##### Communications compliance
 
-Admins can set policies to monitor content for all users in the channel. All messages content in channels, including the shared channel, are covered by [communication compliance policies](/microsoft-365/compliance/communication-compliance). Shared channels inherit the policy of the host organization.
+Admins can set policies to monitor content for all users in the channel. All messages content in channels, including shared channels, is covered by [communication compliance policies](/microsoft-365/compliance/communication-compliance). Shared channels inherit the policy of the host organization.
 
 ##### Conditional access
 
