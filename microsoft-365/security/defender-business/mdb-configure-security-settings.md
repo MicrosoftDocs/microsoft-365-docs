@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 04/12/2022
+ms.date: 04/18/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -26,7 +26,12 @@ ms.collection:
 
 ## Overview
 
-After you've onboarded your company's devices to Microsoft Defender for Business, your next step is to view and if necessary, edit your security policies and settings. Security policies to configure include:
+After you've onboarded your company's devices to Microsoft Defender for Business, your next step is to review your security policies. If necessary, you can edit your security policies and settings. 
+
+> [!TIP]
+> Defender for Business includes preconfigured security policies that use recommended settings. However, you can edit your settings to suit your business needs.
+
+Security policies to review and configure include:
 
 - **[Next-generation protection policies](#view-or-edit-your-next-generation-protection-policies)**, which determine antivirus and antimalware protection for your company's devices
 - **[Firewall protection and rules](#view-or-edit-your-firewall-policies-and-custom-rules)**, which determine what network traffic is allowed to flow to or from your company's devices
