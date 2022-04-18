@@ -60,7 +60,7 @@ Before creating a shared mailbox, be sure to read [About shared mailboxes](about
 
 ::: moniker-end
     
-3. On the **Shared mailboxes** page, select **+ Add a shared mailbox**. Enter a name for the shared mailbox. The chooses the email address, but you can edit it if needed.
+3. On the **Shared mailboxes** page, select **+ Add a shared mailbox**. Enter a name for the shared mailbox. This chooses the email address, but you can edit it if needed.
     
     ![Name your shared mailbox.](../../media/e3035132-8986-4ec7-b7c0-f2752080d2c0.png)
   
