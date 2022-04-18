@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 04/14/2022
+ms.date: 04/18/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -36,7 +36,6 @@ With Microsoft Defender for Business, you have several options to choose from fo
 1. Select the tab for your operating system: 
 
    - Windows clients
-   - Windows Server (preview)
    - macOS computers
    - mobile devices
 
@@ -51,6 +50,7 @@ With Microsoft Defender for Business, you have several options to choose from fo
 Choose one of the following options to onboard Windows client devices to Defender for Business:
 
 - [Local script](#local-script-for-windows-clients) (for onboarding devices manually in the Microsoft 365 Defender portal)
+- Group Policy
 - [Microsoft Endpoint Manager](#endpoint-manager-for-windows-clients) (included in [Microsoft 365 Business Premium](../../business-premium/index.md))
 
 
@@ -76,6 +76,10 @@ You can use a local script to onboard Windows client devices. When you run the o
 7. Type the location of the script file. For example, if you copied the file to the Desktop folder, you would type `%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd`, and then press the Enter key (or select **OK**).
 
 8. After the script runs, proceed to [Run a detection test](#running-a-detection-test-on-a-windows-client).
+
+### Group Policy for Windows clients
+
+If you prefer to use Group Policy to onboard Windows clients, follow the guidance in [Onboard Windows devices using Group Policy](../defender-endpoint/configure-endpoints-gp.md). This article describes the steps for onboarding to Microsoft Defender for Endpoint; however, the steps for onboarding to Defender for Business are similar.
 
 ### Endpoint Manager for Windows clients
 
@@ -151,64 +155,6 @@ To view the list of devices that are onboarded to Defender for Business, in the 
 
 ## [**Windows Server**](#tab/WindowsServerEndpoints)
 
-## Windows Server (preview)
-
-You can onboard a Windows Server device by using a local script. 
-
-> [!IMPORTANT]
-> The ability to onboard Windows Server endpoints is currently in preview.
-
-1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.
-
-2. In the navigation pane, choose **Settings** > **Endpoints**, and then under **Device management**, choose **Onboarding**.
-
-3. Select an operating system, such as **Windows Server 1803, 2019, and 2022**, and then, in the **Deployment method** section, choose **Local script**. 
-
-   If you select **Windows Server 2012 R2 and 2016**, you'll have two packages to download and run: an installation package, and an onboarding package. The installation package contains an MSI file that installs the Microsoft Defender for Business agent. The onboarding package contains the script to onboard your Windows Server endpoint to Defender for Business. 
-
-4. Select **Download onboarding package**. We recommend saving the onboarding package to a removable drive.
-
-   If you selected **Windows Server 2012 R2 and 2016**, also select **Download installation package**, and save it to a removable drive
-
-5. On your Windows Server endpoint, extract the contents of the installation/onboarding package(s) to a location, such as the Desktop folder. You should have a file named `WindowsDefenderATPLocalOnboardingScript.cmd`. 
-
-   If you're onboarding Windows Server 2012 R2 or Windows Server 2016, extract the installation package first.
-
-6. Open Command Prompt as an administrator.
-
-7. If you're onboarding Windows Server 2012R2 or Windows Server 2016, run the following command: `Msiexec /i md4ws.msi /quiet`. 
-
-   If you're onboarding Windows Server 1803, 2019, or 2022, skip this step and proceed to step 8.
-
-8. Type the location of the script file. For example, if you copied the file to the Desktop folder, you would type `%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd`, and then press the Enter key (or select **OK**).
-
-9. Proceed to [Run a detection test on Windows Server](#running-a-detection-test-on-windows-server)
-
-### Running a detection test on Windows Server
-
-After you've onboarded your Windows Server endpoint to Defender for Business, you can run a detection test to make sure that everything is working correctly.
-
-1. On the Windows Server device, create a folder: `C:\test-MDATP-test`.
-
-2. Open Command Prompt as an administrator.
-
-3. In the Command Prompt window, run the following PowerShell command:
-
-   ```powershell
-   powershell.exe -NoExit -ExecutionPolicy Bypass -WindowStyle Hidden $ErrorActionPreference = 'silentlycontinue';(New-Object System.Net.WebClient).DownloadFile('http://127.0.0.1/1.exe', 'C:\\test-MDATP-test\\invoice.exe');Start-Process 'C:\\test-MDATP-test\\invoice.exe'
-   ```
-
-After the command has run, the Command Prompt window will close automatically. If successful, the detection test will be marked as completed, and a new alert will appear in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) for the newly onboarded device in about 10 minutes.
-
-## View a list of onboarded devices
-
-To view the list of devices that are onboarded to Defender for Business, in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, under **Endpoints**, choose **Device invetory**.
-
-## Next steps
-
-- If you have other devices to onboard, select the tab that corresponds to the operating system on the devices [(Windows clients, Windows Server, macOS, or mobile devices](#what-to-do)), and follow the guidance on that tab.
-- If you're done onboarding devices, proceed to [Step 5: Configure your security settings and policies in Microsoft Defender for Business](mdb-configure-security-settings.md)
-- See [Get started using Microsoft Defender for Business](mdb-get-started.md).
 
 ## [**macOS**](#tab/macOSdevices)
 
