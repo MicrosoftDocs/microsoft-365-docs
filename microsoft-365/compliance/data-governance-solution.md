@@ -29,6 +29,8 @@ Use **Microsoft Purview Data Lifecycle Management** (formerly Microsoft Informat
 
 Graphic that shows the solution overview with steps
 
+For a data protection solution, see [Protect your data with Microsoft Purview](manage-Information-governance.md).
+
 ## Licensing
 
 To understand your licensing requirements and options, see the following sections from the [Microsoft 365 licensing documentation](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance): 
@@ -41,7 +43,7 @@ Any additional licensing requirements will be included in the documentation inst
 
 Graphic that shows the 4 steps for data lifecycle
 
-Use Microsoft Purview Data Lifecycle Management (formerly Microsoft Information Governance) to keep what you need and delete what you don't:
+Use Microsoft Purview Data Lifecycle Management (formerly Microsoft Information Governance) to keep what you need and delete what you don't.
 
 |Step|Description|More information|
 |:---|:----------|:---------------|
@@ -56,7 +58,7 @@ To learn more about the capabilities from this solution, see [Learn about data l
 
 Graphic that shows the 4 steps for record management
 
-Use Microsoft Purview Records Management to manage your organization's high-value items for business, legal, or regulatory record-keeping requirements:
+Use Microsoft Purview Records Management to manage your organization's high-value items for business, legal, or regulatory record-keeping requirements.
 
 |Step|Description|More information|
 |:---|:----------|:---------------|
