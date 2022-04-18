@@ -27,7 +27,7 @@ You can use Advanced eDiscovery and the Microsoft Graph Explorer to search for a
 
 ## Before you search and purge chat messages
 
-- To create an Advanced eDiscovery case and use collections to search for chat messages, you have to be a member of the **eDiscovery Manager** role group in the Microsoft 365 compliance center. To delete chat messages, you have to be assigned the **Search And Purge** role. This role is assigned to the Data Investigator and Organization Management role groups by default. For more information, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
+- To create an Advanced eDiscovery case and use collections to search for chat messages, you have to be a member of the **eDiscovery Manager** role group in the Microsoft Purview compliance portal. To delete chat messages, you have to be assigned the **Search And Purge** role. This role is assigned to the Data Investigator and Organization Management role groups by default. For more information, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
 - Search and purge is supported for conversations within your tenant. Support for Teams Connect Chat (External Access or Federation) conversations is enabled in the interface in some cases but is not working as intended.
 - A maximum of 10 items per mailbox can be removed at one time. Because the capability to search for and remove chat messages is intended to be an incident-response tool, this limit helps ensure that chat messages are quickly removed.
 
@@ -102,7 +102,7 @@ For information about using Graph Explorer, see [Use Graph Explorer to try Micro
 
 ### Get the case Id
 
-1. Go to <https://developer.microsoft.com/graph/graph-explorer> and sign in to the Graph Explorer with an account that's assigned the **Search And Purge** role in the Microsoft 365 compliance center.
+1. Go to <https://developer.microsoft.com/graph/graph-explorer> and sign in to the Graph Explorer with an account that's assigned the **Search And Purge** role in the Microsoft Purview compliance portal.
 
 2. Run the following GET request to retrieve the Id for the Advanced eDiscovery case. Use the value `https://graph.microsoft.com/beta/compliance/ediscovery/cases` in the address bar of the request query. Be sure to select **v1.0** in the API version dropdown list.
 
@@ -117,7 +117,7 @@ For information about using Graph Explorer, see [Use Graph Explorer to try Micro
 4. Copy the corresponding Id (or copy and paste it to a text file). You'll use this Id in the next task to get the collection Id.
 
 > [!TIP]
-> Instead of using the previous procedure to obtain the case Id, you can open the case in the Microsoft 365 compliance center and copy the case Id from the URL.
+> Instead of using the previous procedure to obtain the case Id, you can open the case in the Microsoft Purview compliance portal and copy the case Id from the URL.
 
 ### Get the collection Id
 

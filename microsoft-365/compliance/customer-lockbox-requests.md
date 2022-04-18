@@ -26,7 +26,7 @@ description: "Learn about Customer Lockbox requests that allow you to control ho
 
 This article provides deployment and configuration guidance for Customer Lockbox. Customer Lockbox supports requests to access data in Exchange Online, SharePoint Online, OneDrive for Business, and Teams. To recommend support for other services, submit a request at [Feedback Portal](https://feedbackportal.microsoft.com).
 
-To see the options for licensing your users to benefit from Microsoft 365 compliance offerings, see the [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+To see the options for licensing your users to benefit from Microsoft Purview offerings, see the [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 Customer Lockbox ensures that Microsoft can't access your content to do service operations without your explicit approval. Customer Lockbox brings you into the approval workflow process that Microsoft uses to ensure only authorized requests allow access to your content. To learn more about Microsoft's workflow process, see [Privileged access management](privileged-access-management-solution-overview.md).
 
