@@ -90,9 +90,9 @@ You can use the following permissions with a shared mailbox:
 
 ### Use the EAC to edit shared mailbox delegation
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>, go to **Recipients** \> **Shared**. Select the shared mailbox, and then select **Edit** ![Edit icon.](../../media/ITPro-EAC-EditIcon.png).
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>, go to **Recipients** \> **Mailboxes**. Select the shared mailbox, and then select **Edit** ![Edit icon.](../../media/ITPro-EAC-EditIcon.png).
 
-2. Select **Mailbox delegation**.
+2. Under **Mailbox permissions**, select **Manage mailbox delegation**.
 
 3. To grant or remove Full Access and Send As permissions, select **Add** ![Add Icon.](../../media/ITPro-EAC-AddIcon.png) or **Remove** ![Remove icon](../../media/ITPro-EAC-RemoveIcon.gif) and then select the users you want to grant permissions to.
 
