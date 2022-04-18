@@ -63,7 +63,7 @@ Here's how to get started:
 
    Follow the information on the screen to set up your DLP policy.
 
-For more information about compliance features in Microsoft 365 for business, see [Microsoft 365 compliance documentation](../compliance/index.yml).
+For more information about compliance features in Microsoft 365 for business, see [Microsoft Purview documentation](../compliance/index.yml).
 
 ## Use sensitivity labels
 
