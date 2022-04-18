@@ -17,8 +17,8 @@ f1.keywords: NOCSH
 ---
 
 # Test your Intune application on Test Base 
-> [!Note] 
-> This guide will guide you to upload your intunewin format package to Test Base. For general Test
+  > [!Note] 
+  > This guide will guide you to upload your intunewin format package to Test Base. For general Test
 Base package upload instruction, please refer to this [doc](https://microsoft.sharepoint.com/:w:/t/AzureSUVPCoreTeam/EeHQIT3qA0FKqBDWI5TzmzgBiH2Syz39o5VbY2kdugMn4A?e=Rk1KD9).
 
 ## Intunewin Upload Flow
@@ -35,24 +35,24 @@ As an Intune customer who has an Intune package, which has been already onboarde
 1. Login with your Test Base account.
 2. Prepare your intunewin package.
 3. Start uploading by click on the "Create package with Intune App"  link as below.
- 
-> [!div class="mx-imgBorder"] 
-> ![Start to build a package with Intune app](Media/testintuneapplication01.png) 
+    
+    > [!div class="mx-imgBorder"] 
+    > ![Start to build a package with Intune app](Media/testintuneapplication01.png) 
 
 
 **Step 1: Define Content**
 1. Upload the intunewin package you choose.
 2. Grant token by clicking on below link "Grant token and select app".
 3. After automatic sync with your Intune account, you'll be listed with app your applications under your Intune account. Choose the app corresponding to your uploaded intunewin package then click "Select".
- 
-> [!div class="mx-imgBorder"] 
-> ![Upload the intune package](Media/testintuneapplication02.png) 
+    
+    > [!div class="mx-imgBorder"] 
+    > ![Upload the intune package](Media/testintuneapplication02.png) 
 
 
 5. On the Step 1 page, you'll see dependencies listed under the Dependency section, you can either choose to upload the dependency’s install file or remove it from this step (if you plan to manage the dependency in Step 3 by self provide the related binaries). Selected dependencies in this section will be pre-installed the same way as it will be installed via Intune.
- 
-> [!div class="mx-imgBorder"] 
-> ![Upload dependency package](Media/testintuneapplication03.png) 
+    
+    > [!div class="mx-imgBorder"] 
+    > ![Upload dependency package](Media/testintuneapplication03.png) 
 
 
 **Step 2: Configure Test**
@@ -72,8 +72,8 @@ As an Intune customer who has an Intune package, which has been already onboarde
 
 **Step 4: Test Matrix**
 1. Check the default selections present in the OS list for the corresponding test types.
-  - Test base supports selecting multiple Windows cumulative update **from Windows 10 1909 except Windows 10 2004**, however Intune Win app would be assigned with a version from versions equal to or higher than **Windows 10 1607**.
-  - OS list will be default to include all OSes supported by Test base, which is higher than the minimum OS specified for the Intune Win app.
+    - Test base supports selecting multiple Windows cumulative update **from Windows 10 1909 except Windows 10 2004**, however Intune Win app would be assigned with a version from versions equal to or higher than **Windows 10 1607**.
+    - OS list will be default to include all OSes supported by Test base, which is higher than the minimum OS specified for the Intune Win app.
 2. Users are allowed to modify the OS selection as need.
 
 
@@ -88,9 +88,9 @@ As a Test Base customer who has a standalone intunewin package. Customer can onb
 1. Login with your Test Base account.
 2. Prepare your intunewin package.
 3. Start uploading by click on the "Create package with Intune App" link as below.
- 
-> [!div class="mx-imgBorder"] 
-> ![Create package with Intune App](Media/testintuneapplication04.png) 
+    
+    > [!div class="mx-imgBorder"] 
+    > ![Create package with Intune App](Media/testintuneapplication04.png) 
 
 
 **Step 1: Define Content**
