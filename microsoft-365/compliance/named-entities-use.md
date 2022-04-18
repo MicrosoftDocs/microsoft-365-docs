@@ -45,7 +45,6 @@ You can use named entity SITs and enhanced policies to detect and protect sensit
 
 Named entity SITs and enhanced policies are not supported for:
 
-
 - On-premises repositories
 - Power BI
 
@@ -59,8 +58,8 @@ To create or edit a DLP policy, use the procedures in [Create, test, and tune a 
 - **Microsoft 365 eDiscovery** supports the use of named entities in Substrate services.
 - **Microsoft Defender for Cloud Apps** supports the use of named entities in Defender for Cloud Apps policies.
 - **Insider Risk Management** supports the use of named entities in Substrate services.
-- **Records Management**
-- **Exact Data Match Sensitive Information Types**
+- **Records Management** supports the use of named entities.
+- **Exact Data Match Sensitive Information Types** supports the use of named entities.
 <!--- **Communication Compliance** doesn't support the use of named entities in Exchange transport rules and data-at-rest.
 - **Microsoft Information Governance** (MIG) doesn't support the use of named entities in Exchange transport rules and data-at-rest.-->
  
