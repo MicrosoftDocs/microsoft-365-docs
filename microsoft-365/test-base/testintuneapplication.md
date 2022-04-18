@@ -34,7 +34,7 @@ As an Intune customer who has an Intune package, which has been already onboarde
 **Prep Step**
 1. Login with your Test Base account.
 2. Prepare your intunewin package.
-3. Start uploading by click on the “Create package with Intune App”  link as below.
+3. Start uploading by click on the "Create package with Intune App"  link as below.
  
 > [!div class="mx-imgBorder"] 
 > ![Start to build a package with Intune app](Media/testintuneapplication01.png) 
@@ -42,8 +42,8 @@ As an Intune customer who has an Intune package, which has been already onboarde
 
 **Step 1: Define Content**
 1. Upload the intunewin package you choose.
-2. Grant token by clicking on below link “Grant token and select app”.
-3. After automatic sync with your Intune account, you'll be listed with app your applications under your Intune account. Choose the app corresponding to your uploaded intunewin package then click “Select”.
+2. Grant token by clicking on below link "Grant token and select app".
+3. After automatic sync with your Intune account, you'll be listed with app your applications under your Intune account. Choose the app corresponding to your uploaded intunewin package then click "Select".
  
 > [!div class="mx-imgBorder"] 
 > ![Upload the intune package](Media/testintuneapplication02.png) 
@@ -61,7 +61,7 @@ As an Intune customer who has an Intune package, which has been already onboarde
 
 
 **Step 3: Edit Package**
-1. Check the scripts auto-generated are tagged correctly. (refer to this [doc](https://microsoft.sharepoint.com/:w:/t/AzureSUVPCoreTeam/EeHQIT3qA0FKqBDWI5TzmzgBiH2Syz39o5VbY2kdugMn4A?e=Rk1KD9)).
+1. Check the scripts auto-generated are tagged correctly. (refer to this doc).
 2. If you synchronized the configuration from Intune successfully, you should be able to see the install/uninstall commands of the test app have been added in the install/uninstall scripts, the commands of the dependency **which has been uploaded** should also be inserted in the package explorer tree for review.
 3. Check the test app binaries are moved under **bin** folder.
 4. Check the dependency binaries **which has been uploaded** put under the **guid** folder.
@@ -87,7 +87,7 @@ As a Test Base customer who has a standalone intunewin package. Customer can onb
 **Prep Step**
 1. Login with your Test Base account.
 2. Prepare your intunewin package.
-3. Start uploading by click on the “Create package with Intune App”  link as below.
+3. Start uploading by click on the "Create package with Intune App" link as below.
  
 > [!div class="mx-imgBorder"] 
 > ![Create package with Intune App](Media/testintuneapplication04.png) 
@@ -104,7 +104,7 @@ As a Test Base customer who has a standalone intunewin package. Customer can onb
 
 
 **Step 3: Edit Package**
-1. Check the scripts are tagged correctly (refer to this [doc](https://microsoft.sharepoint.com/:w:/t/AzureSUVPCoreTeam/EeHQIT3qA0FKqBDWI5TzmzgBiH2Syz39o5VbY2kdugMn4A?e=Rk1KD9)).
+1. Check the scripts are tagged correctly (refer to this doc).
 2. As no install/uninstall commands are synchronized from corresponding Intune account, you'll need to provide all the scripts (install/uninstall/launch/close) by yourself.
 3. Check the test app binaries are moved under bin folder.
 4. You can edit the scripts as needed and save.
