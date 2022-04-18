@@ -63,7 +63,7 @@ Use our [trial playbook](compliance-easy-trials-compliance-playbook.md) to help 
 
 #### Finding support
 
-Organizations may use FastTrack to assist with deploying the trial if the customer tenant has at least 150 license. Get more [details about FastTrack](../../fasttrack/introduction).
+Organizations may use FastTrack to assist with deploying the trial if the tenant has at least 150 licenses. Get more [details about FastTrack](../fasttrack/introduction).
 
 #### Extending the trial
 
