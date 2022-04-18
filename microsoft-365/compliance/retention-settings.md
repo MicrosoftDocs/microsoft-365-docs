@@ -30,7 +30,7 @@ Many settings for retention are common to both retention policies and retention 
 For the scenarios that support these policies for retention, see:
 
 - [Create and configure retention policies](create-retention-policies.md).
-- [Create retention labels and apply them in apps](create-apply-retention-labels.md)
+- [Publish retention labels and apply them in apps](create-apply-retention-labels.md)
 - [Apply a retention label to content automatically](apply-retention-labels-automatically.md)
 
 Settings that are specific to each scenario are explained in their respective documentation.
