@@ -40,7 +40,7 @@ Shared device mode isn't a good choice in these situations:
 - If the user experience needs to be different for different users on the device.
 - If the set of applications each user needs differs greatly.
 
-## Register new devices using the Windows Autopilot self-deploying mode profile in Microsoft Managed Desktop
+## Register new devices using the Windows Autopilot self-deploying mode profile
 
 Whether you or a partner are handling device registration, you can choose to use the [Windows Autopilot self-deploying mode](/mem/autopilot/self-deploying) profile in Microsoft Managed Desktop.
 
