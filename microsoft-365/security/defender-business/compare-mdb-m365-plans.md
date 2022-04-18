@@ -68,7 +68,7 @@ The following table compares security features and capabilities in Defender for 
 
 Defender for Business brings enterprise-grade capabilities of Defender for Endpoint to small and medium-sized businesses.
 
-The following table compares security features and capabilities in Defender for Business to Microsoft Defender for Endpoint Plans 1 and 2.
+The following table compares security features and capabilities in Defender for Business to the enterprise offerings, Microsoft Defender for Endpoint Plans 1 and 2.
 
 |Feature/Capability|[Defender for Business](mdb-overview.md)<br/>(standalone; currently in preview)|[Defender for Endpoint Plan 1](../defender-endpoint/defender-endpoint-plan-1.md)<br/>(for enterprise customers) |[Defender for Endpoint Plan 2](../defender-endpoint/microsoft-defender-endpoint.md)<br/>(for enterprise customers) |
 |---|---|---|---|
