@@ -75,16 +75,16 @@ In the [Azure portal](https://portal.azure.com/), go to the Test Base account in
 
 **Step 3. Edit package**
 1. In the Edit package tab, you can 
-  - check your package folder and file structure in **Package Preview**, 
-  - edit your scripts online with the **PowerShell code editor**.
+  - Check your package folder and file structure in **Package Preview**. 
+  - Edit your scripts online with the **PowerShell code editor**.
   
   > [!div class="mx-imgBorder"]
   > ![edit scripts online](Media/testapplication09.png)
   
 2. In the **Package Preview**, per your need, you can 
-  - create a new folder, 
-  - create a new script, 
-  - upload a new file. <br/>
+  - Create a new folder. 
+  - Create a new script. 
+  - Upload a new file. <br/>
   
   > [!div class="mx-imgBorder"]
   > ![Create resources](Media/testapplication10.png)
@@ -106,7 +106,7 @@ In the [Azure portal](https://portal.azure.com/), go to the Test Base account in
   > [!NOTE] 
   > At least 1 functional script tag is mandatory for the functional test type. <br/>
   
-  By clicking the **'Add to functional test list'**, the action panel will pop up, you can 
+  By clicking the **'Add to functional test list'**, the action panel will pop up, you can: 
   - Reorder the script paths by dragging with the left ellipse buttons. The functional scripts run in the sequence they are listed. A failure in a particular script stops subsequent scripts from executing. <br/>
   - Set ‘Restart after execution’ for multiple scripts.<br/>
   - Apply update before on specific script path. This is for users who wish to perform functional tests to indicate when the Windows Update patch should be applied in the sequence of executing their functional test scripts.  <br/>
@@ -118,7 +118,7 @@ In the [Azure portal](https://portal.azure.com/), go to the Test Base account in
 
 
 **Step 4. Test matrix**
-1. In the Test matrix tab, select the **OS update type**. There’re two OS update types supported
+1. In the Test matrix tab, select the **OS update type**. There’re two OS update types supported.
   -	The **Security updates** enable your package to be tested against incremental churns of Windows pre-release monthly security updates.
   -	The **Feature updates** enable your package to be tested against Windows pre-release bi-annual feature updates builds from the Windows Insider Program.
   
@@ -127,7 +127,7 @@ In the [Azure portal](https://portal.azure.com/), go to the Test Base account in
   > [!NOTE] 
   > If you select to test your package against both Server and Client OSes, please make sure that the package is compatible and can run on both OSes.
   
-3. Select options for Feature update tests
+3. Select options for Feature update tests.
   -	If **Feature updates** is selected in OS update type, you need to finish the following options.
   -	For **Insider Channel**, select the Windows Insider Program Channel as the build that your packages should be tested against. We currently use builds flighted in the **Insider Beta Channel**.
   -	For **OS baseline for Insight**, select the Windows OS version to be used as a baseline in comparing your test results.
