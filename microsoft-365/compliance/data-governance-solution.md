@@ -39,6 +39,14 @@ To understand your licensing requirements and options, see the following section
 
 Any additional licensing requirements will be included in the documentation instructions. For example, licensing specific to managing mailboxes might require licenses from Exchange Online.
 
+## Capabilities and overlap
+
+There's considerable overlap between data lifecycle management and records management. Both solutions support retention and deletion of data for Microsoft 365 apps and services.
+
+Use the following graphic to help you identify the main configurable components for these solutions that each have their own configuration area in the Microsoft Purview compliance portal:
+
+![Main components to configure and use to govern your data with Microsoft Purview.](../media/govern-your-data.png)
+
 ## Keep what you need and delete what you don't
 
 Graphic that shows the 4 steps for data lifecycle

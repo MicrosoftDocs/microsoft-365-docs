@@ -572,8 +572,6 @@
 - name: Manage data lifecycle & records
   items: 
     - name: Govern your data
-      href: manage-information-governance.md
-    - name: Deploy a data governance solution
       href: data-governance-solution.md
     - name: Understand retaining and deleting data
       items: 
