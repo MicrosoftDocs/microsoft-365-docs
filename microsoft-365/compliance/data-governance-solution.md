@@ -31,14 +31,6 @@ Graphic that shows the solution overview with steps
 
 For a data protection solution, see [Protect your data with Microsoft Purview](manage-Information-governance.md).
 
-## Capabilities and overlap
-
-There's considerable overlap between data lifecycle management and records management. Both solutions support retention and deletion of data for Microsoft 365 apps and services.
-
-Use the following graphic to help you identify the main configurable components for these solutions that each have their own configuration area in the Microsoft Purview compliance portal:
-
-![Main components to configure and use to govern your data with Microsoft Purview.](../media/govern-your-data.png)
-
 ## Licensing
 
 To understand your licensing requirements and options, see the following sections from the [Microsoft 365 licensing documentation](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance): 
