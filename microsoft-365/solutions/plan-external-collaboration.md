@@ -1,5 +1,5 @@
 ---
-title: "Plan external collaboration"
+title: "Plan external collaboration with channel conversations, file collaboration, and shared apps"
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -17,10 +17,10 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 recommendations: false
-description: Plan which external collaboration options to use in Microsoft 365.
+description: Learn the difference between guest collaboration and shared channels in Teams and how to choose which one to use.
 ---
 
-# Plan external collaboration
+# Plan external collaboration with channel conversations, file collaboration, and shared apps
 
 Microsoft 365 offers several options for collaborating with people outside your organization:
 
