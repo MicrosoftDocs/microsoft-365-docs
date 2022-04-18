@@ -50,7 +50,7 @@ With Microsoft Defender for Business, you have several options to choose from fo
 Choose one of the following options to onboard Windows client devices to Defender for Business:
 
 - [Local script](#local-script-for-windows-clients) (for onboarding devices manually in the Microsoft 365 Defender portal)
-- Group Policy
+- [Group Policy](#group-policy-for-windows-clients)
 - [Microsoft Endpoint Manager](#endpoint-manager-for-windows-clients) (included in [Microsoft 365 Business Premium](../../business-premium/index.md))
 
 
