@@ -84,7 +84,7 @@ In this illustration:
 If you follow this guidance, you will enroll devices into management using Intune and you will onboard devices for the following Microsoft 365 capabilities:
 
 - Microsoft Defender for Endpoint
-- Microsoft 365 Compliance (for endpoint data loss prevention (DLP)) 
+- Microsoft Purview (for endpoint data loss prevention (DLP)) 
 
 The following illustration details how this works using Intune.
 

@@ -32,7 +32,7 @@ For complete licensing information for DLP in Microsoft Teams, see [Information 
 
 The default DLP policy for Teams tracks all the credit card numbers shared internally and externally to the organization. This policy is on by default for all users of the tenant. It does not generate any policy tips for end users but does generate an Alert event and also triggers a low severity email to the admin (added in the policy). Administrator can view the activities and edit the policies details by logging into the Compliance center.
 
-Admins can view this policy in the [Compliance center](https://compliance.microsoft.com/compliancesettings) > Data Loss prevention policies page.
+Admins can view this policy in the [Microsoft Purview Portal](https://compliance.microsoft.com/compliancesettings) > Data Loss prevention policies page.
 
 
 > [!div class="mx-imgBorder"]

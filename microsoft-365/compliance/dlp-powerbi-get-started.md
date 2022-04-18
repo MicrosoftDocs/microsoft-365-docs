@@ -86,7 +86,7 @@ When a dataset matches a DLP policy:
     >[!NOTE]
     > If you hide the policy tip, it doesn’t get deleted. It will appear the next time you visit the page.
 
-- If alerts are enabled in the policy, an alert will be recorded on the dlp **Alerts** tab in the compliance center, and (if configured) an email will be sent to administrators and/or specified users. The following image shows the **Alerts** tab in the data loss prevention section of the compliance center.
+- If alerts are enabled in the policy, an alert will be recorded on the dlp **Alerts** tab in the compliance center, and (if configured) an email will be sent to administrators and/or specified users. The following image shows the **Alerts** tab in the data loss prevention section of the Microsoft Purview Portal.
 
     ![Screenshot of Alerts tab in the compliance center.](../media/dlp-power-bi-alerts-tab.png)
 

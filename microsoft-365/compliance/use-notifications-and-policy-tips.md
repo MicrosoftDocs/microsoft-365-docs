@@ -52,7 +52,7 @@ When you create a DLP policy, you can enable **User notifications**. When user n
 
 2. Sign in using your work or school account. You're now in the Security &amp; Compliance Center.
 
-3. In the Security &amp; Compliance Center \> left navigation \> **Data loss prevention** \> **Policy** \> **+ Create a policy**.
+3. In the Microsoft Purview Portal \> left navigation \> **Data loss prevention** \> **Policy** \> **+ Create a policy**.
 
     ![Create a policy button.](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
 

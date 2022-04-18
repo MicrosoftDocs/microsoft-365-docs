@@ -30,7 +30,7 @@ description: Deploy the configuration package on virtual desktop infrastructure 
 - Virtual desktop infrastructure (VDI) devices
 
 > [!WARNING]
-> Microsoft 365 Endpoint data loss prevention support for Windows Virtual Desktop supports single session scenarios. Multi-session scenarios on Windows Virtual Desktop are currently not supported.
+> Endpoint data loss prevention support for Windows Virtual Desktop supports single session scenarios. Multi-session scenarios on Windows Virtual Desktop are currently not supported.
 
 ## Onboard VDI devices
 
