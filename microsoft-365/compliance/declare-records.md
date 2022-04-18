@@ -62,7 +62,7 @@ Using this retention label, you can now apply it to SharePoint or OneDrive docum
 
 For full instructions:
 
-- [Create retention labels and apply them in apps](create-apply-retention-labels.md)
+- [Publish retention labels and apply them in apps](create-apply-retention-labels.md)
 
 - [Apply a retention label to content automatically](apply-retention-labels-automatically.md) (not supported for regulatory records)
 

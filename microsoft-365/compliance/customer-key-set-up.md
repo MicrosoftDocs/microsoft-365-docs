@@ -11,7 +11,7 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: "Learn how to set up Customer Key for Microsoft 365."
+description: "Learn how to set up Customer Key."
 ---
 
 # Set up Customer Key
@@ -20,7 +20,7 @@ description: "Learn how to set up Customer Key for Microsoft 365."
 
 With Customer Key, you control your organization's encryption keys and then configure Microsoft 365 to use them to encrypt your data at rest in Microsoft's data centers. In other words, Customer Key allows customers to add a layer of encryption that belongs to them, with their keys.
 
-Set up Azure before you can use Customer Key for Office 365. This article describes the steps you need to follow to create and configure the required Azure resources and then provides the steps for setting up Customer Key in Office 365. After you set up Azure, you determine which policy, and therefore, which keys, to assign to encrypt data across various Microsoft 365 workloads in your organization. For more information about Customer Key, or for a general overview, see [Service encryption with Customer Key in Office 365](customer-key-overview.md).
+Set up Azure before you can use Customer Key. This article describes the steps you need to follow to create and configure the required Azure resources and then provides the steps for setting up Customer Key. After you set up Azure, you determine which policy, and therefore, which keys, to assign to encrypt data across various Microsoft 365 workloads in your organization. For more information about Customer Key, or for a general overview, see [Service encryption with Microsoft Purview Customer Key](customer-key-overview.md).
   
 > [!IMPORTANT]
 > We strongly recommend that you follow the best practices in this article. These are called out as **TIP** and **IMPORTANT**. Customer Key gives you control over root encryption keys whose scope can be as large as your entire organization. This means that mistakes made with these keys can have a broad impact and may result in service interruptions or irrevocable loss of your data.

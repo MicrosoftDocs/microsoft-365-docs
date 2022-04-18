@@ -239,7 +239,7 @@ Once the search is created, you will start the search using the following comman
 Start-ComplianceSearch "MeganB Inactive Mailbox HR-Content Label Search"
 ```
 
-Using this method, you can then identify which labels from the identified label policy apply to content within the inactive mailbox so that you can modify their retention periods. Be aware that retention labels are typically applied to more than one location, so modifying a label will affect all applied locations and labeled content, which may also include locations and content other than Exchange. For more information, see [Create retention labels and apply them in apps](create-apply-retention-labels.md).
+Using this method, you can then identify which labels from the identified label policy apply to content within the inactive mailbox so that you can modify their retention periods. Be aware that retention labels are typically applied to more than one location, so modifying a label will affect all applied locations and labeled content, which may also include locations and content other than Exchange. For more information, see [Publish retention labels and apply them in apps](create-apply-retention-labels.md).
 
 > [!NOTE]
 > Not all types of retention labels can be modified.  For some labels, you may only be able to increase the time of retention, and for others you may not be able to modify the retention period at all.
