@@ -18,7 +18,7 @@ description: "Learn details about the Microsoft Purview solutions trial and how 
 
 # About the Microsoft Purview solutions trial
 
-Microsoft Purview solutions help protect your organization from internal threats rising from inappropriate permissions on files and emails, and helps your organization to comply with regulatory and internal business requirements.
+Microsoft Purview solutions help protect your organization from internal threats arising from inappropriate permissions on files and emails, and helps your organization to comply with regulatory and internal business requirements.
 
 The Microsoft Purview solutions trial is the easiest way to try all the capabilities of Microsoft Purview solutions, and setting it up only takes a couple of minutes. After the trial setup is complete, all features of the Microsoft E5 license package are available for you to use for up to 90 days.
 
@@ -63,7 +63,7 @@ Use our [trial playbook](compliance-easy-trials-compliance-playbook.md) to help 
 
 #### Finding support
 
-Organizations may use FastTrack to assist with deploying the trial if the tenant has at least 150 licenses. Get more [details about FastTrack](../fasttrack/introduction.md).
+Organizations may use FastTrack to assist with deploying the trial if the tenant has at least 150 licenses. Get more [details about FastTrack](../../fasttrack/introduction.md).
 
 #### Extending the trial
 
