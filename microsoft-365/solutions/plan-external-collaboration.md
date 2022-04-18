@@ -29,7 +29,7 @@ Microsoft 365 offers several options for collaborating with people outside your 
 - Sharing individual files or folders with people outside your organization
 - Collaboration in a team, with channel conversations, file collaboration, and shared apps
 
-This article covers the fourth option, group collaboration with channel conversations, file collaboration, and shared apps. 
+This article covers the fourth option, group collaboration with channel conversations, file collaboration, and shared apps. (For an overview of all the options, see [Overview of external collaboration options in Microsoft 365](/microsoft-365/enterprise/external-guest-access).)
 
 ## Terms
 
