@@ -20,7 +20,7 @@ description: "Microsoft Defender for Business trial playbook."
 
 # Trial playbook: Microsoft Defender for Business
 
-Welcome to the Microsoft Defender for Business trial playbook. This playbook is a simple guide to help you make the most of your 30-day free trial. Using the recommendations in this article from the Microsoft Defender team, you'll learn how Defender for Business can help you elevate your security from traditional antivirus to next-gen protection, endpoint detection and response, and threat and vulnerability management. 
+Welcome to the Microsoft Defender for Business trial playbook. This playbook is a simple guide to help you make the most of your 30-day free trial. Using the recommendations in this article from the Microsoft Defender team, you'll learn how Defender for Business can help you elevate your security from traditional antivirus to next-generation protection, endpoint detection and response, and threat and vulnerability management. 
 
 ## What is Microsoft Defender for Business? 
 
@@ -29,6 +29,15 @@ Microsoft Defender for Business is a new endpoint security solution that was des
 :::image type="content" source="media/mdb-offering-overview.png" alt-text="Microsoft Defender for Business features and capabilities.":::
 
 Let’s get started.
+
+## Setting up your trial
+
+### Step 1: Add users and assign licenses
+
+As soon as you have signed up for Microsoft Defender for Business, your first step is to add users and assign licenses. Follow the steps in [Add users and assign licenses in Microsoft Defender for Business](mdb-add-users.md).
+
+> [!NOTE]
+> You must be a global administrator to perform this task. The person who signed your company up for Microsoft 365 or Microsoft Defender for Business is the global administrator by default. 
 
 ## Step 1: Setting up your trial
 
