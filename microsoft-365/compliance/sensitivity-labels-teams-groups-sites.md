@@ -34,6 +34,7 @@ In addition to using [sensitivity labels](sensitivity-labels.md) to classify and
 - Access from unmanaged devices
 - Authentication contexts (in preview)
 - Default sharing link for a SharePoint site (PowerShell-only configuration)
+- In preview: Site sharing settings (PowerShell-only configuration)
 
 > [!IMPORTANT]
 > The settings for unmanaged devices and authentication contexts work in conjunction with Azure Active Directory Conditional Access. You must configure this dependent feature if you want to use a sensitivity label for these settings. Additional information is included in the instructions that follow.
@@ -121,7 +122,7 @@ After sensitivity labels are enabled for containers as described in the previous
             
              - You choose an authentication context that is configured to require [multifactor authentication (MFA)](/azure/active-directory/conditional-access/untrusted-networks). This label is then applied to a SharePoint site that contains highly confidential items. As a result, when users from an untrusted network attempt to access a document in this site, they see the MFA prompt that they must complete before they can access the document.
              
-             - You choose an authentication context that is configured for [terms of use (ToU) policies](/azure/active-directory/conditional-access/terms-of-use). This label is then applied to a SharePoint site that contains items that require a terms of use acceptance for legal or compliance reasons. As a result, when users attempt to access a document in this site, they see a terms of use document that they must accept before they can access the original document.
+             - You choose an authentication context that is configured for [terms-of-use (ToU) policies](/azure/active-directory/conditional-access/terms-of-use). This label is then applied to a SharePoint site that contains items that require a terms-of-use acceptance for legal or compliance reasons. As a result, when users attempt to access a document in this site, they see a terms-of-use document that they must accept before they can access the original document.
 
 > [!IMPORTANT]
 > Only these site and group settings take effect when you apply the label to a team, group, or site. If the [label's scope](sensitivity-labels.md#label-scopes) includes files and emails, other label settings such as encryption and content marking aren't applied to the content within the team, group, or site.
@@ -180,6 +181,31 @@ Known limitations for this preview:
 In addition to the label settings for sites and groups that you can configure from the Microsoft Purview compliance portal, you can also configure the default sharing link type for a site. Sensitivity labels for documents can also be configured for a default sharing link type. These settings that help to prevent over-sharing are automatically selected when users select the **Share** button in their Office apps. 
 
 For more information and instructions, see [Use sensitivity labels to configure the default sharing link type for sites and documents in SharePoint and OneDrive](sensitivity-labels-default-sharing-link.md).
+
+### Configure site sharing permissions by using PowerShell advanced settings
+
+> [!NOTE]
+> This label setting is currently in preview.
+
+Another PowerShell advanced setting that you can configure for the sensitivity label to be applied to a SharePoint site is **MembersCanShare**. This setting is the equivalent configuration that you can set from the SharePoint admin center > **Site permissions** > **Site Sharing** > **Change how members can share** > **Sharing permissions**. 
+
+The three options are listed with the equivalent values for the PowerShell advanced setting **MembersCanShare**:
+
+|Option from the SharePoint admin center |Equivalent PowerShell value for MembersCanShare |
+|----------------------------------------|------------------------------------------------|
+|**Site owners and members can share files, folders, and the site. People with Edit permissions can share files and folders.**| MemberShareAll|
+|**Site owners and members, and people with Edit permissions can share files and folders, but only site owners can share the site.**|MemberShareFileAndFolder|
+|**Only site owners can share files, folders, and the site.**|MemberShareNone|
+
+For more information about these configuration options, see [Change how members can share](/microsoft-365/community/sharepoint-security-a-team-effort#change-how-members-can-share) from the SharePoint community documentation.
+
+Example, where the sensitivity label GUID is **8faca7b8-8d20-48a3-8ea2-0f96310a848e**:
+
+````powershell
+Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{MembersCanShare="MemberShareNone"}
+````
+
+For more help in specifying PowerShell advanced settings, see [PowerShell tips for specifying the advanced settings](sensitivity-labels-default-sharing-link.md#powershell-tips-for-specifying-the-advanced-settings).
 
 ## Sensitivity label management
 

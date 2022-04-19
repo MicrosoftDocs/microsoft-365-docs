@@ -75,7 +75,6 @@ EMSPREMIUM
 SPE_E5
 RIGHTSMANAGEMENT_ADHOC
 
-$LO = New-MsolLicenseOptions -AccountSkuId <AccountSkuId> -DisabledPlans "<UndesiredService1>", "<UndesiredService2>"...
 ```
 
 Next, use the SkuPartNumber from the command above, list the service plans available for a given license plan (Sku).
