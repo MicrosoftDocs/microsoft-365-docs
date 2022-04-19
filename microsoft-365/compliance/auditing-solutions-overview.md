@@ -89,7 +89,7 @@ The following table compares the key capabilities available in Audit (Standard) 
 
 ## Licensing requirements
 
-The following sections identify the licensing requirements for Audit (Standard) and Audit (Premium). Audit (Standard) functionality is included with Advanced Auditing.
+The following sections identify the licensing requirements for Audit (Standard) and Audit (Premium). Audit (Standard) functionality is included with Audit (Premium).
 
 ### Audit (Standard)
 
