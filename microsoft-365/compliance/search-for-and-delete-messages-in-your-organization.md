@@ -16,7 +16,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
-description: "Use the search and purge feature in the Microsoft 365 compliance center to search for and delete an email message from all mailboxes in your organization."
+description: "Use the search and purge feature in the Microsoft Purview compliance portal to search for and delete an email message from all mailboxes in your organization."
 ---
 
 # Search for and delete email messages
@@ -38,10 +38,10 @@ You can use the Content search feature to search for and delete email messages f
 
 - The search and purge workflow described in this article doesn't delete chat messages or other content from Microsoft Teams. If the Content search that you create in Step 2 returns items from Microsoft Teams, those items won't be deleted when you purge items in Step 3. To search for and delete chat messages, see [Search and purge chat messages in Teams](search-and-delete-Teams-chat-messages.md).
 
-- To create and run a Content search, you have to be a member of the **eDiscovery Manager** role group or be assigned the **Compliance Search** role in the Microsoft 365 compliance center. To delete messages, you have to be a member of the **Organization Management** role group or be assigned the **Search And Purge** role in the compliance center For information about adding users to a role group, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
+- To create and run a Content search, you have to be a member of the **eDiscovery Manager** role group or be assigned the **Compliance Search** role in the Microsoft Purview compliance portal. To delete messages, you have to be a member of the **Organization Management** role group or be assigned the **Search And Purge** role in the compliance center For information about adding users to a role group, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
 
   > [!NOTE]
-  > The **Organization Management** role group exists in both Exchange Online and in the Microsoft 365 compliance center. These are separate role groups that give different permissions. Being a member of **Organization Management** in Exchange Online does not grant the required permissions to delete email messages. If you aren't assigned the **Search And Purge** role in the compliance center (either directly or through a role group such as **Organization Management**), you'll receive an error in Step 3 when you run the **New-ComplianceSearchAction** cmdlet with the message "A parameter cannot be found that matches parameter name 'Purge'".
+  > The **Organization Management** role group exists in both Exchange Online and in the compliance portal. These are separate role groups that give different permissions. Being a member of **Organization Management** in Exchange Online does not grant the required permissions to delete email messages. If you aren't assigned the **Search And Purge** role in the compliance center (either directly or through a role group such as **Organization Management**), you'll receive an error in Step 3 when you run the **New-ComplianceSearchAction** cmdlet with the message "A parameter cannot be found that matches parameter name 'Purge'".
 
 - You have to use Security & Compliance Center PowerShell to delete messages. See [Step 1](#step-1-connect-to-security--compliance-center-powershell) for instructions about how to connect.
 
@@ -51,7 +51,7 @@ You can use the Content search feature to search for and delete email messages f
 
 - The procedure in this article can only be used to delete items in Exchange Online mailboxes and public folders. You can't use it to delete content from SharePoint or OneDrive for Business sites.
 
-- Email items in a review set in an Advanced eDiscovery case can't be deleted by using the procedures in this article. That's because items in a review set are stored in an Azure Storage location, and not in the live service. This means they won't be returned by the content search that you create in Step 1. To delete items in a review set, you have to delete the Advanced eDiscovery case that contains the review set. For more information, see [Close or delete an Advanced eDiscovery case](close-or-delete-case.md).
+- Email items in a review set in an eDiscovery (Premium) case can't be deleted by using the procedures in this article. That's because items in a review set are stored in an Azure Storage location, and not in the live service. This means they won't be returned by the content search that you create in Step 1. To delete items in a review set, you have to delete the eDiscovery (Premium) case that contains the review set. For more information, see [Close or delete an eDiscovery (Premium) case](close-or-delete-case.md).
 
 ## Step 1: Connect to Security & Compliance Center PowerShell
 
@@ -59,7 +59,7 @@ The first step is to connect to Security & Compliance Center PowerShell for your
 
 ## Step 2: Create a Content Search to find the message to delete
 
-The second step is to create and run a Content search to find the message that you want to remove from mailboxes in your organization. You can create the search by using the Microsoft 365 compliance center or by running the **New-ComplianceSearch** and **Start-ComplianceSearch** cmdlets in Security & Compliance PowerShell. The messages that match the query for this search will be deleted by running the **New-ComplianceSearchAction -Purge** command in [Step 3](#step-3-delete-the-message). For information about creating a Content search and configuring search queries, see the following topics:
+The second step is to create and run a Content search to find the message that you want to remove from mailboxes in your organization. You can create the search by using the compliance portal or by running the **New-ComplianceSearch** and **Start-ComplianceSearch** cmdlets in Security & Compliance PowerShell. The messages that match the query for this search will be deleted by running the **New-ComplianceSearchAction -Purge** command in [Step 3](#step-3-delete-the-message). For information about creating a Content search and configuring search queries, see the following topics:
 
 - [Content search in Office 365](content-search.md)
 
@@ -84,7 +84,7 @@ The goal of the search query is to narrow the results of the search to only the 
 
 - Preview the search results to verify that the search returned only the message (or messages) that you want to delete.
 
-- Use the search estimate statistics (displayed in the details pane of the search in the Microsoft 365 compliance center or by using the [Get-ComplianceSearch](/powershell/module/exchange/get-compliancesearch) cmdlet) to get a count of the total number of results.
+- Use the search estimate statistics (displayed in the details pane of the search in the compliance portal or by using the [Get-ComplianceSearch](/powershell/module/exchange/get-compliancesearch) cmdlet) to get a count of the total number of results.
 
 Here are two examples of queries to find suspicious email messages.
 

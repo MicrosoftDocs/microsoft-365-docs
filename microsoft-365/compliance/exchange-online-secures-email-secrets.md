@@ -20,6 +20,8 @@ description: "In addition to the Office 365 Trust Center that provides Security,
 
 # How Exchange Online secures your email secrets
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 This article describes how Microsoft secures your email secrets in its datacenters.
   
 ## How do we secure secret information provided by you?
