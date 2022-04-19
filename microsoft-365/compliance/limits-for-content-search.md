@@ -1,5 +1,5 @@
 ---
-title: "Limits for Content search and Core eDiscovery in the compliance center"
+title: "Limits for Content search and eDiscovery (Standard) in the compliance center"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,18 +16,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
-description: "Learn about the limits in effect for the Content search and Core eDiscovery features in the Microsoft 365 compliance center."
+description: "Learn about the limits in effect for the Content search and eDiscovery (Standard) features in the Microsoft Purview compliance portal."
 ---
 
 # Limits for eDiscovery search
 
-Various limits are applied to eDiscovery search tools in the Microsoft 365 compliance center. This includes searches run on the **Content search** page and searches that are associated with an eDiscovery case on the **Core eDiscovery** page. These limits help to maintain the health and quality of services provided to organizations. There are also limits related to the indexing of email messages in Exchange Online for search. You can't modify the limits for eDiscovery searches or email indexing, but you should be aware of them so that you can take these limits into consideration when planning, running, and troubleshooting eDiscovery searches.
+Various limits are applied to eDiscovery search tools in the Microsoft Purview compliance portal. This includes searches run on the **Content search** page and searches that are associated with an eDiscovery case on the **eDiscovery (Standard)** page. These limits help to maintain the health and quality of services provided to organizations. There are also limits related to the indexing of email messages in Exchange Online for search. You can't modify the limits for eDiscovery searches or email indexing, but you should be aware of them so that you can take these limits into consideration when planning, running, and troubleshooting eDiscovery searches.
 
-For limits related to the Advanced eDiscovery tool, see [Limits in Advanced eDiscovery](limits-ediscovery20.md)
+For limits related to the Microsoft Purview eDiscovery (Premium) tool, see [Limits in eDiscovery (Premium)](limits-ediscovery20.md)
 
 ## Search limits
 
-The following table lists the search limits when using the content search tool in the Microsoft 365 compliance center and for searches that are associated with a Core eDiscovery case.
+The following table lists the search limits when using the content search tool in the compliance portal and for searches that are associated with a Microsoft Purview eDiscovery (Standard) case.
 
 <br>
 
@@ -55,7 +55,7 @@ The following table lists the search limits when using the content search tool i
 |The maximum number of locations in a search that you can export items from. If the search that you're exporting has more locations than this limit, the export will fail. For more information, see [Export content search results](export-search-results.md).|100,000|
 
 > [!NOTE]
-> <sup>1</sup> Although you can search an unlimited number of mailboxes in a single search, you can only download the exported search results from a maximum of 100,000 mailboxes using the eDiscovery Export Tool in the Microsoft 365 compliance center.
+> <sup>1</sup> Although you can search an unlimited number of mailboxes in a single search, you can only download the exported search results from a maximum of 100,000 mailboxes using the eDiscovery Export Tool in the compliance portal.
 >
 > <sup>2</sup> The intent of the preview page is to show a limited sample of the results. Even for massive searches with thousands of results, the number of items that are shown on the preview page can, and often will, be much less than maximum possible value of 1000. To see the complete search results, you need to export the results.
 >
@@ -82,7 +82,7 @@ Microsoft collects performance information for searches run by all organizations
 
 ## Export limits
 
-The following table lists the limits when exporting the results of a content search. These limits also apply when you export content from a Core eDiscovery case.
+The following table lists the limits when exporting the results of a content search. These limits also apply when you export content from a eDiscovery (Standard) case.
 
 <br>
 
@@ -133,12 +133,12 @@ For information about content searches, see:
 
 - [Content search in Microsoft 365](content-search.md)
 
-- [Search for content in a Core eDiscovery case](search-for-content-in-core-ediscovery.md)
+- [Search for content in a eDiscovery (Standard) case](search-for-content-in-core-ediscovery.md)
 
 - [Keyword queries and search conditions for content search](keyword-queries-and-search-conditions.md)
 
-For case limits related to Core eDiscovery and Advanced eDiscovery, see:
+For case limits related to eDiscovery (Standard) and eDiscovery (Premium), see:
 
-- [Limits in Core eDiscovery](limits-core-ediscovery.md)
+- [Limits in eDiscovery (Standard)](limits-core-ediscovery.md)
 
-- [Limits in Advanced eDiscovery](limits-ediscovery20.md)
+- [Limits in eDiscovery (Premium)](limits-ediscovery20.md)

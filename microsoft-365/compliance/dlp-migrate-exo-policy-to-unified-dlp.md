@@ -1,5 +1,5 @@
 ---
-title: "Migrate Exchange Online data loss prevention policies to Compliance center"
+title: "Migrate Exchange Online DLP policies to Compliance center"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -17,12 +17,14 @@ ms.collection:
 - SPO_Content
 search.appverid:
 - MET150
-description: "Learn how to plan for and migrate your Exchange online data loss prevention policies into Microsoft 365 DLP."
+description: "Learn how to plan for and migrate your Exchange online data loss prevention policies into DLP."
 ---
 
-# Migrate Exchange Online data loss prevention policies to Compliance center
+# Migrate Exchange Online data loss prevention policies to Microsoft Purview compliance portal
 
-[Exchange Online data loss prevention (DLP) policies](/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention) are being deprecated. [Much richer DLP functionality](dlp-learn-about-dlp.md), including Exchange Online DLP, is offered in the [Microsoft 365 Compliance center](https://compliance.microsoft.com/datalossprevention?viewid=policies). You can use the DLP policy migration wizard to help you bring your Exchange Online DLP policies over to the Compliance center where you'll manage them.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+[Exchange Online data loss prevention (DLP) policies](/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention) are being deprecated. [Much richer DLP functionality](dlp-learn-about-dlp.md), including Exchange Online DLP, is offered in the [Microsoft Purview compliance portal](https://compliance.microsoft.com/datalossprevention?viewid=policies). You can use the DLP policy migration wizard to help you bring your Exchange Online DLP policies over to the Compliance center where you'll manage them.
 
 The migration wizard works by reading the configuration of your DLP policies in Exchange and then creating duplicate policies in the Compliance center. By default the wizard creates the new versions of the policies in **Test** mode, so you can see what impact they'd have in your environment without enforcing any of the actions. Once you're ready to fully transition to the Compliance center versions, ***you must***:
 
@@ -72,7 +74,7 @@ The account that you use to run the migration wizard must have access to both th
 
 1. If you are unfamiliar with DLP, the Compliance center DLP console, or the Exchange Admin center DLP console, you should familiarize yourself before attempting a policy migration.
     1. [Exchange Online data loss prevention (DLP) policies](/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
-    1. [Learn about Microsoft 365 Endpoint data loss prevention](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention)
+    1. [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md)
     1. [Create, Test, and Tune a DLP policy](create-test-tune-dlp-policy.md)
 1. Evaluate your Exchange DLP and Compliance center policies by asking these questions:
 
@@ -86,7 +88,7 @@ The account that you use to run the migration wizard must have access to both th
 
 After you have evaluated all your Exchange and Compliance center DLP policies for need and compatibility, you can use the migration wizard.
 
-1. Open the [Microsoft 365 Compliance center](https://compliance.microsoft.com/datalossprevention?viewid=policies) DLP console.
+1. Open the [Microsoft Purview compliance portal](https://compliance.microsoft.com/datalossprevention?viewid=policies) DLP console.
 2. If there are Exchange DLP policies that can be migrated, a banner will appear at the top of the page letting you know.
 3. Choose **Migrate policies** in the banner to open the migration wizard. All the Exchange DLP policies are listed. Previously migrated policies cannot be selected.
 4. Select the policies you want to migrate. You can migrate them individually, or in groups using a phased approach or all at once. Select **Next**.
@@ -94,17 +96,16 @@ After you have evaluated all your Exchange and Compliance center DLP policies fo
 6. Select the mode you want the new Compliance center policy created in, **Active**, **Test**, or **Disabled**.  The default is **Test**. Select **Next**.
 7. If desired, you can create more policies that are based on the Exchange DLP policies for other unified DLP locations. This will result in one new unified DLP policy for the migrated Exchange policy and one new unified DLP policy for any other locations that you pick here.
 
-   > [!IMPORTANT]
-   > Any Exchange DLP policy conditions and actions that are not supported by other DLP locations, like Devices, SharePoint, OneDrive, On-premises, MCAS or Teams chat and channel messages will be dropped from the additional policy. Also, there is pre-work that must be done for the other locations. See:
-   >
-   > - [Learn about Microsoft 365 Endpoint data loss prevention](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention)
-   > - [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention)
-   > - [Using Endpoint data loss prevention](endpoint-dlp-using.md#using-endpoint-data-loss-prevention)
-   > - [Learn about the Microsoft 365 data loss prevention on-premises scanner](dlp-on-premises-scanner-learn.md#learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner)
-   > - [Get started with the data loss prevention on-premises scanner](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-scanner)
-   > - [Use the Microsoft 365 data loss prevention on-premises scanner](dlp-on-premises-scanner-use.md#use-the-microsoft-365-data-loss-prevention-on-premises-scanner)
-   > - [Use data loss prevention policies for non-Microsoft cloud apps](dlp-use-policies-non-microsoft-cloud-apps.md#use-data-loss-prevention-policies-for-non-microsoft-cloud-apps)
-
+> [!IMPORTANT]
+> Any Exchange DLP policy conditions and actions that are not supported by other DLP locations, like Devices, SharePoint, OneDrive, On-premises, MCAS or Teams chat and channel messages will be dropped from the additional policy. Also, there is pre-work that must be done for the other locations. See:
+>- [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md)
+>- [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md)
+>- [Using Endpoint data loss prevention](endpoint-dlp-using.md)
+>- [Learn about the data loss prevention on-premises scanner](dlp-on-premises-scanner-learn.md)
+>- [Get started with the data loss prevention on-premises scanner](dlp-on-premises-scanner-get-started.md)
+>- [Use the Microsoft Purview data loss prevention on-premises scanner](dlp-on-premises-scanner-use.md)
+>- [Use data loss prevention policies for non-Microsoft cloud apps](dlp-use-policies-non-microsoft-cloud-apps.md)
+ 
 8. Review the migration wizard session settings. Select **Next**.
 9. Review the migration report. Pay attention to any failures involving Exchange mail flow rules. You can fix them and remigrate the associated policies.
 
@@ -129,7 +130,7 @@ Test and review your policies.
 1. Follow the [Test a DLP policy](create-test-tune-dlp-policy.md#test-a-dlp-policy) procedures.
 2. Review the events created by the policy in [Activity explorer](data-classification-activity-explorer.md).
 
-## Review the policy matches between Exchange Admin Center DLP and Microsoft 365 Unified DLP
+## Review the policy matches between Exchange Admin Center DLP and Microsoft Purview Unified DLP
 
 To ensure that the migrated policies behave as expected, you can export the reports from both admin centers and do a comparison of the policy matches.
 
@@ -152,13 +153,13 @@ Once you are satisfied with how your migrated policies are functioning, you can 
 
 1. Open the Exchange Admin Center DLP console.
 2. Deactivate or delete the source policy.
-3. Open the [Microsoft 365 Compliance center](https://compliance.microsoft.com/datalossprevention?viewid=policies) DLP console and select the policy you want to make active to edit it.
+3. Open the [Microsoft Purview compliance portal](https://compliance.microsoft.com/datalossprevention?viewid=policies) DLP console and select the policy you want to make active to edit it.
 4. Change the status to **Turn on**.
 
 ## Related articles
 
 - [Exchange Online data loss prevention (DLP) policies](/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
-- [Learn about data loss prevention](dlp-learn-about-dlp.md#learn-about-data-loss-prevention)
+- [Learn about data loss prevention](dlp-learn-about-dlp.md)
 - [Get started with Activity explorer](data-classification-activity-explorer.md)
 - [Create, Test, and Tune a DLP policy](create-test-tune-dlp-policy.md)
 - [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md)

@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: article
-ms.date: 03/15/2022
+ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -29,18 +29,16 @@ If you've just finished setting up Microsoft Defender for Business, you might be
 
 >
 > **Got a minute?**
-> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about Microsoft Defender for Business</a>. We'd love to hear from you!
+> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about security</a>. We'd love to hear from you!
 >
 
 ## Try these preview scenarios
 
-The following table summarizes several scenarios to try with Defender for Business. 
-<br/><br/>
-
+The following table summarizes several scenarios to try with Defender for Business:
 
 | Scenario  | Description  |
 |---------|---------|
-| Onboard devices using a local script <br/>(*not for production deployment*)     | In Defender for Business, you can onboard up to ten Windows 10 and 11 devices using a script that you download and run on each device. Suitable for evaluating how Defender for Business will work in your environment, the script creates a trust with Azure Active Directory (Azure AD) and enrolls the device with Microsoft Intune. To learn more, see [Local script in Defender for Business](mdb-onboard-devices.md#local-script-in-defender-for-business).         |
+| Onboard devices using a local script <br/>(*not for production deployment*)     | In Defender for Business, you can onboard up to ten Windows 10 and 11 devices using a script that you download and run on each device. Suitable for evaluating how Defender for Business will work in your environment, the script creates a trust with Azure Active Directory (Azure AD) and enrolls the device with Microsoft Intune. To learn more, see [Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md).         |
 | Onboard devices using Microsoft Intune     | If you were already using Microsoft Intune before getting Defender for Endpoint, you can continue to use Microsoft Intune to onboard devices. Try onboarding macOS, iOS, and Android devices with Microsoft Intune. To learn more, see [Device enrollment in Microsoft Intune](/mem/intune/enrollment/device-enrollment).        |
 | Edit security policies     | If you're managing your security policies in Defender for Business, use the **Device configuration** page to view and edit your policies. To learn more, see [View or edit policies in Microsoft Defender for Business](mdb-view-edit-policies.md).        |
 | Execute a simulated attack   | Several tutorials and simulations are available in Defender for Business. These tutorials and simulations are designed to show you firsthand how the threat protection features of Defender for Business can work for your company. To try one or more of the tutorials, see [Recommended tutorials for Microsoft Defender for Business](#recommended-tutorials-for-defender-for-business).         |
@@ -50,8 +48,6 @@ The following table summarizes several scenarios to try with Defender for Busine
 ## Recommended tutorials for Defender for Business
 
 The following table describes the recommended tutorials for Defender for Business customers:
-<br/><br/>
-
 
 | Tutorial  | Description  |
 |---------|---------|
@@ -79,9 +75,6 @@ Each tutorial includes a walkthrough document that explains the scenario, how it
 ## Next steps
 
 - [Manage devices in Microsoft Defender for Business](mdb-manage-devices.md)
-
 - [View and manage incidents in Microsoft Defender for Business](mdb-view-manage-incidents.md)
-
 - [Respond to and mitigate threats in Microsoft Defender for Business](mdb-respond-mitigate-threats.md)
-
 - [Review remediation actions in the Action center](mdb-review-remediation-actions.md)

@@ -284,7 +284,7 @@ You'll be able to see both the GUID and the name of the transport rules that wer
 > [!IMPORTANT]
 > ETR search and name availability depend on the specific role that's assigned to you. You need to have one of the following roles/permissions to view the ETR names and search. If you don't have any of these roles assigned to you, you can't see the names of the transport rules or search for messages by using ETR names. However, you could see the ETR label and GUID information in the Email Details. Other record-viewing experiences in Email Grids, Email flyouts, Filters, and Export are not affected.
 >
-> - EXO Only - Data Loss Prevention: All
+> - EXO Only - data loss prevention: All
 > - EXO Only - O365SupportViewConfig: All
 > - Microsoft Azure Active Directory or EXO - Security Admin: All
 > - AAD or EXO - Security Reader: All

@@ -1,24 +1,24 @@
-- name: Microsoft 365 compliance
+- name: Microsoft Purview
   href: index.yml
-- name: What's new in Microsoft 365 compliance
+- name: What's new in Microsoft Purview
   href: whats-new.md
 - name: Compliance trials
   items:
-    - name: About the free trial for Microsoft 365 compliance
+    - name: About the free trial for Microsoft Purview
       href: compliance-easy-trials.md
-    - name: About the free trial for Microsoft Compliance Manager premium assessments
+    - name: About the free trial for Microsoft Purview Compliance Manager premium assessments
       href: compliance-easy-trials-compliance-manager-assessments.md
 - name: Get started
   items: 
-    - name: Quick tasks to get started with compliance
+    - name: Quick tasks to get started with Microsoft Purview
       href: compliance-quick-tasks.md
-    - name: Microsoft 365 solution catalog
+    - name: Microsoft Purview solution catalog
       href: microsoft-365-solution-catalog.md
-    - name: Microsoft 365 compliance center
+    - name: Microsoft Purview compliance portal
       href: microsoft-365-compliance-center.md
-    - name: Permissions in the Microsoft 365 compliance center
+    - name: Permissions in the Microsoft Purview compliance portal
       href: microsoft-365-compliance-center-permissions.md
-    - name: Redirecting users to the Microsoft 365 compliance center
+    - name: Redirecting users to the Microsoft Purview compliance portal
       href: microsoft-365-compliance-center-redirection.md
     - name: Use your free Azure Active Directory subscription
       href: use-your-free-azure-ad-subscription-in-office-365.md
@@ -216,7 +216,7 @@
      href: use-content-search-to-search-third-party-data-that-was-imported.md
 - name: Manage insider risks
   items:
-    - name: Microsoft 365 insider risk solutions
+    - name: Microsoft Purview insider risk solutions
       href: insider-risk-solution-overview.md
     - name: Communication compliance
       items:
@@ -304,9 +304,9 @@
   items:
     - name: Know your data, protect your data, prevent data loss
       href: information-protection.md
-    - name: Deploy a MIP solution
+    - name: Deploy an information protection solution
       href: information-protection-solution.md
-    - name: Default labels and policies for Microsoft Information Protection
+    - name: Default labels and policies to protect your data
       href: mip-easy-trials.md
     - name: Sensitive information types
       items: 
@@ -396,7 +396,7 @@
       items:
         - name: Learn about sensitivity labels
           href: sensitivity-labels.md
-        - name: Why choose MIP built-in labeling for Office apps
+        - name: Why choose built-in labeling for Office apps
           href: sensitivity-labels-aip.md
         - name: Get started with sensitivity labels
           href: get-started-with-sensitivity-labels.md
@@ -428,7 +428,7 @@
           href: office-365-service-encryption.md
         - name: Customer Key
           items: 
-            - name: Customer Key in Microsoft 365
+            - name: Service encryption with Microsoft Purview Customer Key
               href: customer-key-overview.md
             - name: Set up Customer Key for Microsoft 365
               href: customer-key-set-up.md
@@ -441,27 +441,27 @@
         - name: Email encryption
           href: email-encryption.md
           items: 
-            - name: Office 365 Message Encryption (OME)
+            - name: Message encryption
               href: ome.md
-            - name: Set up new Office 365 Message Encryption capabilities
+            - name: Set up Microsoft Purview Message Encryption
               href: set-up-new-message-encryption-capabilities.md
-            - name: Define mail flow rules to encrypt email messages in Office 365
+            - name: Define mail flow rules to encrypt email messages
               href: define-mail-flow-rules-to-encrypt-email.md
             - name: Add your organization's brand to your encrypted messages
               href: add-your-organization-brand-to-encrypted-messages.md
-            - name: Create a sensitive information type policy for your organization using Office 365 Message Encryption
+            - name: Create a sensitive information type policy for your organization using Microsoft Purview Message Encryption
               href: ome-sensitive-info-types.md
-            - name: Manage Office 365 Message Encryption
+            - name: Manage message encryption
               href: manage-office-365-message-encryption.md
-            - name: Office 365 Advanced Message Encryption
+            - name: Advanced message encryption
               href: ome-advanced-message-encryption.md
-            - name: Set an expiration date for email encrypted by Office 365 Advanced Message Encryption
+            - name: Set an expiration date for email encrypted by Microsoft Purview Advanced Message Encryption
               href: ome-advanced-expiration.md
-            - name: Revoke email encrypted by Office 365 Advanced Message Encryption
+            - name: Revoke email encrypted by Microsoft Purview Advanced Message Encryption
               href: revoke-ome-encrypted-mail.md
-            - name: Compare versions of OME
+            - name: Compare versions of message encryption
               href: ome-version-comparison.md
-            - name: Office 365 Message Encryption FAQ
+            - name: Message encryption FAQ
               href: ome-faq.yml
             - name: How Exchange Online secures your email secrets
               href: exchange-online-secures-email-secrets.md
@@ -501,7 +501,7 @@
             href: endpoint-dlp-learn-about.md
           - name: Learn about the default data loss prevention policy in Microsoft Teams (preview)
             href: dlp-teams-default-policy.md
-          - name: Learn about Microsoft 365 data loss prevention on-premises scanner
+          - name: Learn about data loss prevention on-premises scanner
             href: dlp-on-premises-scanner-learn.md
           - name: Learn about the Microsoft Compliance Extension
             href: dlp-chrome-learn-about.md
@@ -525,7 +525,7 @@
             href: create-a-dlp-policy-from-a-template.md
           - name: Create, test, and tune a DLP policy
             href: create-test-tune-dlp-policy.md
-          - name: Get started with Microsoft 365 data loss prevention on-premises scanner
+          - name: Get started with data loss prevention on-premises scanner
             href: dlp-on-premises-scanner-get-started.md
           - name: Get started with Endpoint data loss prevention
             href: endpoint-dlp-getting-started.md
@@ -543,7 +543,7 @@
               href: dlp-microsoft-teams.md
             - name: Using Endpoint data loss prevention
               href: endpoint-dlp-using.md
-            - name: Use Microsoft 365 data loss prevention on-premises scanner
+            - name: Use data loss prevention on-premises scanner
               href: dlp-on-premises-scanner-use.md  
             - name: Use notifications and policy tips in DLP policies
               href: use-notifications-and-policy-tips.md
@@ -569,10 +569,10 @@
               href: dlp-migrate-exo-policy-to-unified-dlp.md
             - name: Data Loss Prevention policy tips reference
               href: dlp-policy-tips-reference.md
-- name: Manage information governance & records
+- name: Manage data lifecycle & records
   items: 
     - name: Govern your data
-      href: manage-information-governance.md
+      href: manage-data-governance.md
     - name: Understand retaining and deleting data
       items: 
         - name: Learn about retention policies & retention labels
@@ -593,16 +593,16 @@
           href: retention-settings.md
         - name: Limits for retention and deletion
           href: retention-limits.md
-    - name: Information governance
+    - name: Data lifecycle management
       items: 
-        - name: Learn about information governance
-          href: information-governance.md
-        - name: Get started with information governance
-          href: get-started-with-information-governance.md
+        - name: Learn about data lifecycle management
+          href: data-lifecycle-management.md
+        - name: Get started with data lifecycle management
+          href: get-started-with-data-lifecycle-management.md
         - name: Create retention policies
           href: create-retention-policies.md
         - name: Use retention labels for exceptions
-          href: create-retention-labels-information-governance.md
+          href: create-retention-labels-data-lifecycle-management.md
         - name: Archive mailbox data
           items: 
             - name: Learn about archive mailboxes
@@ -673,7 +673,7 @@
           href: disposition.md
 - name: Manage eDiscovery
   items:
-    - name: Microsoft 365 eDiscovery solutions
+    - name: Microsoft Purview eDiscovery solutions
       href: ediscovery.md
     - name: Content search
       items:
@@ -742,9 +742,9 @@
             href: create-report-on-and-delete-multiple-content-searches.md
           - name: Clone a search
             href: clone-a-content-search.md
-    - name: Core eDiscovery
+    - name: eDiscovery (Standard)
       items:
-        - name: Get started with Core eDiscovery
+        - name: Get started with eDiscovery (Standard)
           href: get-started-core-ediscovery.md
         - name: Create eDiscovery holds
           href: create-ediscovery-holds.md
@@ -754,7 +754,7 @@
           href: export-content-in-core-ediscovery.md
         - name: Close, reopen, and delete a case
           href: close-reopen-delete-core-ediscovery-cases.md
-        - name: Core eDiscovery reference
+        - name: eDiscovery (Standard) reference
           items:
           - name: eDiscovery search limits
             href: limits-for-content-search.md
@@ -800,19 +800,19 @@
             href: configure-edge-to-export-search-results.md
           - name: Search for eDiscovery activities in the audit log
             href: search-for-ediscovery-activities-in-the-audit-log.md
-    - name: Advanced eDiscovery
+    - name: eDiscovery (Premium)
       items:
         - name: Overview
           href: overview-ediscovery-20.md
-        - name: Set up Advanced eDiscovery
+        - name: Set up eDiscovery (Premium)
           href: get-started-with-advanced-ediscovery.md
-        - name: Create Advanced eDiscovery cases
+        - name: Create eDiscovery (Premium) cases
           items:
             - name: Create and manage a case
               href: create-and-manage-advanced-ediscoveryv2-case.md
             - name: Use the new case format
               href: advanced-ediscovery-new-case-format.md
-        - name: Advanced eDiscovery workflow for Teams content
+        - name: eDiscovery (Premium) workflow for Teams content
           href: teams-workflow-in-advanced-ediscovery.md
         - name: Manage custodians and non-custodial data sources
           href: managing-custodians.md
@@ -933,9 +933,9 @@
               href: add-or-remove-members-from-a-case-in-advanced-ediscovery.md
             - name: Configure search and analytics settings
               href: configure-search-and-analytics-settings-in-advanced-ediscovery.md
-        - name: Advanced eDiscovery reference
+        - name: eDiscovery (Premium) reference
           items:
-            - name: Advanced eDiscovery limits
+            - name: eDiscovery (Premium) limits
               href: limits-ediscovery20.md
             - name: Supported file types
               href: supported-filetypes-ediscovery20.md
