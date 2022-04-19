@@ -1,5 +1,5 @@
 ---
-title: Onboard and offboard macOS devices into Microsoft 365 Compliance solutions using JAMF Pro
+title: Onboard and offboard macOS devices into Microsoft Purview solutions using JAMF Pro
 f1.keywords:
     NOCSH
 ms.author: chrfox
@@ -14,27 +14,29 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150 
-description: Learn how to onboard and offboard macOS devices into Microsoft 365 Compliance solutions using JAMF Pro
+description: Learn how to onboard and offboard macOS devices into Microsoft Purview solutions using JAMF Pro
 ---
 
-# Onboard and offboard macOS devices into Microsoft 365 Compliance solutions using JAMF Pro
+# Onboard and offboard macOS devices into Microsoft Purview solutions using JAMF Pro
 
-You can use JAMF Pro to onboard macOS devices into Microsoft 365 compliance solutions like Endpoint data loss prevention.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+You can use JAMF Pro to onboard macOS devices into Microsoft Purview solutions like Endpoint data loss prevention.
 
 > [!IMPORTANT]
 > Use this procedure if you ***do not*** have Microsoft Defender for Endpoint (MDE) deployed to your macOS devices
 
 **Applies to:**
 
-- [Microsoft 365 Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
-- [Insider risk management](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+- [Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
+- [Insider risk management](insider-risk-management.md)
 
 ## Before you begin
 
 - Make sure your [macOS devices are managed through JAMF pro](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) and are associated with an identity (Azure AD joined UPN) through JAMF Connect or Intune.
 - Install the v95+ Edge browser on your macOS devices
 
-## Onboard devices into Microsoft 365 Compliance solutions using JAMF Pro
+## Onboard devices into Microsoft Purview solutions using JAMF Pro
 
 1. You'll need these files for this procedure.
 

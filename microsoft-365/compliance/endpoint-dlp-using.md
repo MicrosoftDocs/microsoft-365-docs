@@ -17,10 +17,12 @@ ms.collection:
 - SPO_Content
 search.appverid: 
 - MET150
-description: "Learn how to configure data loss prevention (DLP) policies to use Microsoft 365 Endpoint data loss prevention (EPDLP) locations."
+description: "Learn how to configure data loss prevention (DLP) policies to use Endpoint data loss prevention (EPDLP) locations."
 ---
 
 # Using Endpoint data loss prevention
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]  
 
 This article walks you through four scenarios where you create and modify a DLP policy that uses devices as a location.
 
@@ -54,7 +56,7 @@ Or
 
 ### Advanced classification scanning and protection
 
-Advanced classification scanning and protection allows the more advanced Microsoft 365 cloud based data classification service to scan items, classify them and return the results to the local machine. This means you can take advantage of [exact data match](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) classification, [named entities (preview)](named-entities-learn.md#learn-about-named-entities-preview) classification techniques in your DLP policies.
+Advanced classification scanning and protection allows the more advanced Microsoft Purview cloud based data classification service to scan items, classify them and return the results to the local machine. This means you can take advantage of [exact data match](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) classification, [named entities](named-entities-learn.md) classification techniques in your DLP policies.
 
 In advanced classification, content is sent from the local device to the cloud services for scanning and classification. If bandwidth utilization is a concern, you can set a limit in this global setting that is applied per device on how much can be used in a rolling 24 hour period. If you set a bandwidth utilization limit and it is exceeded, DLP stops sending the user content to the cloud and data classification will continue locally on the device. When the cumulative bandwidth utilization drops below the rolling 24 hour limit, communication with the cloud services will resume.
 
@@ -74,7 +76,7 @@ These Windows versions support advanced classification scanning and protection:
 
 ### File path exclusions
 
-Open [Compliance center](https://compliance.microsoft.com) > **Data loss prevention** > **Endpoint DLP settings** > **File path exclusions**.
+Open [Microsoft Purview compliance portal](https://compliance.microsoft.com) > **Data loss prevention** > **Endpoint DLP settings** > **File path exclusions**.
 
 You may want to exclude certain paths from DLP monitoring, DLP alerting, and DLP policy enforcement on your devices because they are too noisy or don’t contain files you are interested in. Files in those locations will not be audited and any files that are created or modified in those locations will not be subject to DLP policy enforcement. You can configure path exclusions in DLP settings.
 
@@ -246,12 +248,13 @@ This configuration will help ensure your data remains safe while also avoiding u
 
 ## Endpoint DLP policy scenarios
 
+
 To help familiarize you with Endpoint DLP features and how they surface in DLP policies, we've put together some scenarios for you to follow.
 
 > [!IMPORTANT]
 > These Endpoint DLP scenarios are not the official procedures for creating and tuning DLP policies. Refer to the below topics when you need to work with DLP policies in general situations:
 >
->- [Learn about data loss prevention](dlp-learn-about-dlp.md)
+>- [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md)
 >- [Get started with the default DLP policy](get-started-with-the-default-dlp-policy.md)
 >- [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md)
 >- [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
@@ -476,7 +479,7 @@ This configuration will help ensure your data remains safe while also avoiding u
 - [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
 - [Get started with Activity explorer](data-classification-activity-explorer.md)
 - [Microsoft Defender for Endpoint](/windows/security/threat-protection/)
-- [Onboard Windows 10 and Windows 11 devices into Microsoft 365 overview](/microsoft-365/compliance/device-onboarding-overview)
+- [Onboard Windows 10 and Windows 11 devices into Microsoft Purview overview](/microsoft-365/compliance/device-onboarding-overview)
 - [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
 - [Azure Active Directory (AAD) joined](/azure/active-directory/devices/concept-azure-ad-join)
 - [Download the new Microsoft Edge based on Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)

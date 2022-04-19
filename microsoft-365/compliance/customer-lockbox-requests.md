@@ -1,5 +1,5 @@
 ---
-title: "Customer Lockbox Requests"
+title: "Customer Lockbox requests"
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -20,13 +20,15 @@ ms.custom: admindeeplinkMAC
 description: "Learn about Customer Lockbox requests that allow you to control how a Microsoft support engineer can access your data when you encounter an issue."
 ---
 
-# Customer Lockbox in Office 365
+# Microsoft Purview Customer Lockbox
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 This article provides deployment and configuration guidance for Customer Lockbox. Customer Lockbox supports requests to access data in Exchange Online, SharePoint Online, OneDrive for Business, and Teams. To recommend support for other services, submit a request at [Feedback Portal](https://feedbackportal.microsoft.com).
 
-To see the options for licensing your users to benefit from Microsoft 365 compliance offerings, see the [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+To see the options for licensing your users to benefit from Microsoft Purview offerings, see the [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
-Customer Lockbox ensures that Microsoft can't access your content to do service operations without your explicit approval. Customer Lockbox brings you into the approval workflow process that Microsoft uses to ensure only authorized requests allow access to your content. To learn more about Microsoft's workflow process, see [Privileged access management in Microsoft 365](privileged-access-management-solution-overview.md).
+Customer Lockbox ensures that Microsoft can't access your content to do service operations without your explicit approval. Customer Lockbox brings you into the approval workflow process that Microsoft uses to ensure only authorized requests allow access to your content. To learn more about Microsoft's workflow process, see [Privileged access management](privileged-access-management-solution-overview.md).
 
 Occasionally, Microsoft engineers help troubleshoot and fix issues that arise with the service. Usually, engineers fix issues using extensive telemetry and debugging tools Microsoft has in place for its services. However, some cases require a Microsoft engineer to access your content to determine the root cause and fix the issue. Customer Lockbox requires the engineer to request access from you as a final step in the approval workflow. This gives you the option to approve or deny the request for your organization, and provide direct-access control to your content.
 
@@ -97,11 +99,11 @@ You can turn on Customer Lockbox controls in the Microsoft 365 admin center. Whe
     ![Deny Customer Lockbox requests.](../media/CustomerLockbox8.png)
 
 > [!NOTE]
-> Use the Set-AccessToCustomerDataRequest cmdlet to approve, deny, or cancel Microsoft 365 customer lockbox requests that control access to your data by Microsoft support engineers. For more information, see [Set-AccessToCustomerDataRequest](/powershell/module/exchange/set-accesstocustomerdatarequest).
+> Use the Set-AccessToCustomerDataRequest cmdlet to approve, deny, or cancel Microsoft Purview Customer Lockbox requests that control access to your data by Microsoft support engineers. For more information, see [Set-AccessToCustomerDataRequest](/powershell/module/exchange/set-accesstocustomerdatarequest).
 
 ## Auditing Customer Lockbox requests
 
-Audit records that correspond to Customer Lockbox requests are logged in the Microsoft 365 audit log. You can access these logs by using the [audit log search tool](search-the-audit-log-in-security-and-compliance.md) in the Microsoft 365 compliance center. Actions related to accepting or denying a Customer Lockbox request and actions performed by Microsoft engineers (when access requests are approved) are also logged in the audit log. You can search for and review these audit records.
+Audit records that correspond to Customer Lockbox requests are logged in the Microsoft 365 audit log. You can access these logs by using the [audit log search tool](search-the-audit-log-in-security-and-compliance.md) in the Microsoft Purview compliance portal. Actions related to accepting or denying a Customer Lockbox request and actions performed by Microsoft engineers (when access requests are approved) are also logged in the audit log. You can search for and review these audit records.
 
 ### Search the audit log for activity related to Customer Lockbox requests
 
@@ -154,7 +156,7 @@ After you download the file, you can open it in Excel and then filter on the **O
 
 ### Use PowerShell to search and export audit records
 
-An alternative to using the audit search tool in the Microsoft 365 compliance center is to run the [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) cmdlet in Exchange Online PowerShell. One advantage of using PowerShell is that you can specifically search for **Set-AccessToCustomerDataRequest** activities or activities performed by Microsoft engineers related to a Customer Lockbox request.
+An alternative to using the audit search tool in the Microsoft Purview compliance portal is to run the [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) cmdlet in Exchange Online PowerShell. One advantage of using PowerShell is that you can specifically search for **Set-AccessToCustomerDataRequest** activities or activities performed by Microsoft engineers related to a Customer Lockbox request.
 
 After you [connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), run one of the following commands. Replace the placeholders with a specific date range.
 

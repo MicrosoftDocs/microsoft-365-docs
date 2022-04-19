@@ -20,8 +20,10 @@ description: "Use these procedures to take advantage of named entities in your d
 
 # Use named entities in your data loss prevention policies (preview)
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 > [!IMPORTANT]
-> The named entities feature is rolling out and will appear in your tenant when it is available to you. Check for them in content explorer and in the data loss prevention (DLP) policy authoring flow. 
+> The named entities feature is rolling out and will appear in your tenant when it is available to you. Check for them in content explorer and in the Microsoft Purview Data Loss Prevention (DLP) policy authoring flow. 
 
 Read through [Learn about named entities (preview)](named-entities-learn.md) before you start to use them.
 
@@ -65,11 +67,10 @@ To create or edit a DLP policy, use the procedures in [Create, test, and tune a 
 ## Workloads and services that support named entities
 
 
-- **Microsoft 3655 eDiscovery** supports the use of named entities in Substrate services.
+- **Microsoft 365 eDiscovery** supports the use of named entities in Substrate services.
 - **Microsoft Defender for Cloud Apps** supports the use of named entities in Defender for Cloud Apps policies.
 - **Insider Risk Management** supports the use of named entities in Substrate services.
-<!--- **Communication Compliance** doesn't support the use of named entities in Exchange transport rules and data-at-rest.
-- **Microsoft Information Governance** (MIG) doesn't support the use of named entities in Exchange transport rules and data-at-rest.-->
+- **Communication Compliance** doesn't support the use of named entities in Exchange transport rules and data-at-rest.
  
 ### Unified DLP
 

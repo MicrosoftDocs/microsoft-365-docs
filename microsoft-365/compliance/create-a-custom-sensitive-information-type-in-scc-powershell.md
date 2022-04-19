@@ -19,6 +19,8 @@ description: "Learn how to create and import a custom sensitive information type
 
 # Create a custom sensitive information type using PowerShell
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 This article shows you how to create an XML *rule package* file that defines custom [sensitive information types](sensitive-information-type-entity-definitions.md). This article describes a custom sensitive information type that identifies an employee ID. You can use the sample XML in this article as a starting point for your own XML file.
 
 For more information about sensitive information types, see [Learn about sensitive information types](sensitive-information-type-learn-about.md).
@@ -26,7 +28,7 @@ For more information about sensitive information types, see [Learn about sensiti
 After you've created a well-formed XML file, you can upload it to Microsoft 365 using PowerShell. Then, you're ready to use your custom sensitive information type in policies. You can test its effectiveness in detecting the sensitive information as you intended.
 
 > [!NOTE]
-> If you don't need the fine-grained control that PowerShell provides, you can create custom sensitive information types in the Microsoft 365 compliance center. For more information, see [Create a custom sensitive information type](create-a-custom-sensitive-information-type.md).
+> If you don't need the fine-grained control that PowerShell provides, you can create custom sensitive information types in the Microsoft Purview compliance portal. For more information, see [Create a custom sensitive information type](create-a-custom-sensitive-information-type.md).
 
 ## Important disclaimer
 
@@ -320,7 +322,7 @@ In addition to confidenceLevel for each Pattern, the Entity has a recommendedCon
 
 ## Do you want to support other languages in the UI of the Compliance center? [LocalizedStrings element]
 
-If your compliance team uses the Microsoft 365 Compliance center to create policies in different locales and in different languages, you can provide localized versions of the name and description of your custom sensitive information type. When your compliance team uses Microsoft 365 in a language that you support, they'll see the localized name in the UI.
+If your compliance team uses the Microsoft Purview compliance portal to create policies in different locales and in different languages, you can provide localized versions of the name and description of your custom sensitive information type. When your compliance team uses Microsoft 365 in a language that you support, they'll see the localized name in the UI.
 
 ![Instance count and match accuracy configuration.](../media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
 
@@ -905,6 +907,6 @@ You can copy this markup, save it as an XSD file, and use it to validate your ru
 
 ## More information
 
-- [Learn about data loss prevention](dlp-learn-about-dlp.md)
+- [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md)
 - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
 - [Sensitive information type functions](sit-functions.md)
