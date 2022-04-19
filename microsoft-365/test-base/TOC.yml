@@ -8,10 +8,18 @@
   items:  
     - name: Create Test Base Account
       href: createAccount.md
+    - name: Test your application on Test Base
+      items:
+      - name: Overview
+        href: testoverview.md
+      - name: Test Binaries package on Test Base
+        href: testapplication.md
+      - name: Test your Intune app on Test Base
+        href: testintuneapplication.md
+      - name: Upload your Test Base package (Zip) 
+        href: uploadApplication.md
     - name: Build a Package
       href: buildpackage.md
-    - name: Uploading a Package
-      href: uploadApplication.md
     - name: Upload Binaries & Dependencies
       href: binaries.md
     - name: Set Test Tasks
