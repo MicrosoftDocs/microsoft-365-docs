@@ -21,6 +21,8 @@ description: Learn how to access and use the Microsoft Service Trust Portal to h
 
 # Get started with the Microsoft Service Trust Portal
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 The Microsoft Service Trust Portal provides a variety of content, tools, and other resources about Microsoft security, privacy, and compliance practices.
 
 ## Accessing the Service Trust Portal
@@ -65,7 +67,7 @@ The **Service Trust Portal** link displays the home page. It provides a quick wa
 ### Compliance Manager
 
 > [!IMPORTANT]
-> Compliance Manager has moved from the Service Trust Portal to  the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>. All customer data has been moved over to the new location, so you can continue using Compliance Manager without interruption. Refer to the [Compliance Manager documentation](compliance-manager.md) for setup information and to learn about new features.
+> Compliance Manager has moved from the Service Trust Portal to  the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>. All customer data has been moved over to the new location, so you can continue using Compliance Manager without interruption. Refer to the [Compliance Manager documentation](compliance-manager.md) for setup information and to learn about new features.
 
 ### Trust Documents
 

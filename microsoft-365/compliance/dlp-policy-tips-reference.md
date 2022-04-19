@@ -22,6 +22,8 @@ ms.custom: seo-marvel-apr2021
 ---
 # Data Loss Prevention policy tips reference
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 DLP policy tips in Outlook Web Access is supported for all the conditions, exceptions and actions that are applicable on Exchange workload in a DLP policy except the following:
 
 **Conditions:**
