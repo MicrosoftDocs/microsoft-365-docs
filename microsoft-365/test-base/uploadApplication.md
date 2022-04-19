@@ -16,7 +16,7 @@ ms.reviewer: mapatel
 f1.keywords: NOCSH
 ---
 
-# Step 2: Uploading a Package
+# Upload your Test Base package (Zip) 
 
 On the Test Base portal page, navigate to the **Upload new package** option on the left navigation bar as shown below:
 

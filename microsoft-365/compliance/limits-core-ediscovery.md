@@ -19,9 +19,9 @@ search.appverid:
 description: "This article describes the limits in core eDiscovery case in Microsoft 365."
 ---
 
-# Limits in Core eDiscovery
+# Limits in eDiscovery (Standard)
 
-The following table lists the limits for core eDiscovery cases and holds associated with a core eDiscovery case. For more information about Core eDiscovery, see [Overview of Core eDiscovery](./get-started-core-ediscovery.md).
+The following table lists the limits for core eDiscovery cases and holds associated with a core eDiscovery case. For more information about Microsoft Purview eDiscovery (Standard), see [Overview of eDiscovery (Standard)](./get-started-core-ediscovery.md).
     
   | Description of limit | Limit |
   |:-----|:-----|
@@ -39,4 +39,4 @@ The following table lists the limits for core eDiscovery cases and holds associa
    > - [Get-ComplianceSearch](/powershell/module/exchange/get-compliancesearch)
    > - [Get-ComplianceSearchAction](/powershell/module/exchange/get-compliancesearchaction)
 
-For more information about limits related to searches and exports associated with a Core eDiscovery case, see [Limits for Content search and Core eDiscovery](limits-for-content-search.md).
+For more information about limits related to searches and exports associated with a eDiscovery (Standard) case, see [Limits for Content search and eDiscovery (Standard)](limits-for-content-search.md).

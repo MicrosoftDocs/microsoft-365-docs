@@ -1,7 +1,7 @@
 ---
 title: Learn about insider risk management
-description: Learn how to help minimize risk in your organization with insider risk management in Microsoft 365.
-keywords: Microsoft 365, insider risk, risk management, compliance
+description: Learn how to help minimize risk in your organization with insider risk management in Microsoft Purview.
+keywords: Microsoft 365, Microsoft Purview, insider risk, risk management, compliance
 ms.localizationpriority: medium
 ms.service: O365-seccomp
 ms.topic: article
@@ -17,9 +17,11 @@ ms.collection:
 - m365initiative-compliance
 ---
 
-# Learn about insider risk management in Microsoft 365
+# Learn about insider risk management
 
-Insider risk management is a compliance solution in Microsoft 365 that helps minimize internal risks by enabling you to detect, investigate, and act on malicious and inadvertent activities in your organization. Insider risk policies allow you to define the types of risks to identify and detect in your organization, including acting on cases and escalating cases to Microsoft Advanced eDiscovery if needed. Risk analysts in your organization can quickly take appropriate actions to make sure users are compliant with your organization's compliance standards.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Microsoft Purview Insider Risk Management is a compliance solution that helps minimize internal risks by enabling you to detect, investigate, and act on malicious and inadvertent activities in your organization. Insider risk policies allow you to define the types of risks to identify and detect in your organization, including acting on cases and escalating cases to Microsoft Advanced eDiscovery if needed. Risk analysts in your organization can quickly take appropriate actions to make sure users are compliant with your organization's compliance standards.
 
 Watch the videos below to learn how insider risk management can help your organization prevent, detect, and contain risks while prioritizing your organization values, culture, and user experience:
 <br>
@@ -54,7 +56,7 @@ Insider risk management is centered around the following principles:
 
 - **Transparency**: Balance user privacy versus organization risk with privacy-by-design architecture.
 - **Configurable**: Configurable policies based on industry, geographical, and business groups.
-- **Integrated**: Integrated workflow across Microsoft 365 compliance solutions.
+- **Integrated**: Integrated workflow across Microsoft Purview solutions.
 - **Actionable**: Provides insights to enable reviewer notifications, data investigations, and user investigations.
 
 ## Identifying potential risks with analytics
@@ -71,7 +73,7 @@ Whether you're setting up insider risk management for the first time or getting 
 
 The insider risk management workflow helps you identify, investigate, and take action to address internal risks in your organization. With focused policy templates, comprehensive activity signaling across the Microsoft 365 service, and alert and case management tools, you can use actionable insights to quickly identify and act on risky behavior.
 
-Identifying and resolving internal risk activities and compliance issues with insider risk management in Microsoft 365 uses the following workflow:
+Identifying and resolving internal risk activities and compliance issues with insider risk management uses the following workflow:
 
 ![Insider risk management workflow.](../media/insider-risk-workflow.png)
 
@@ -133,7 +135,7 @@ Additionally, the new [Audit log (preview)](insider-risk-management-audit-log.md
 
 After cases are investigated, reviewers can quickly act to resolve the case or collaborate with other risk stakeholders in your organization. If users accidentally or inadvertently violate policy conditions, a simple reminder notice can be sent to the user from notice templates you can customize for your organization. These notices may serve as simple reminders or may direct the user to refresher training or guidance to help prevent future risky behavior. For more information, see [Insider risk management notice templates](insider-risk-management-notices.md).
 
-In the more serious situations, you may need to share the insider risk management case information with other reviewers or services in your organization. Insider risk management is tightly integrated with other Microsoft 365 compliance solutions to help you with end-to-end risk resolution.
+In the more serious situations, you may need to share the insider risk management case information with other reviewers or services in your organization. Insider risk management is tightly integrated with other Microsoft Purview solutions to help you with end-to-end risk resolution.
 
 - **Advanced eDiscovery**: Escalating a case for investigation allows you to transfer data and management of the case to Advanced eDiscovery in Microsoft 365. Advanced eDiscovery provides an end-to-end workflow to preserve, collect, review, analyze, and export content that's responsive to your organization's internal and external investigations. It allows legal teams to manage the entire legal hold notification workflow. To learn more about Advanced eDiscovery cases, see [Overview of Advanced eDiscovery in Microsoft 365](overview-ediscovery-20.md).
 - **Office 365 Management APIs integration (preview)**: Insider risk management supports exporting alert information to security information and event management (SIEM) services via the Office 365 Management APIs. Having access to alert information in the platform the best fits your organization's risk processes gives you more flexibility in how to act on risk activities. To learn more about exporting alert information with Office 365 Management APIs, see [Export alerts](insider-risk-management-settings.md#export-alerts).

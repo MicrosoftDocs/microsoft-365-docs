@@ -1,5 +1,5 @@
 ---
-title: "Build and manage assessments in Microsoft Compliance Manager"
+title: "Build and manage assessments in Microsoft Purview Compliance Manager"
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -16,10 +16,12 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: "Build assessments in Microsoft Compliance Manager to help you meet the requirements of regulations and certifications that are important to your organization."
+description: "Build assessments in Microsoft Purview Compliance Manager to help you meet the requirements of regulations and certifications that are important to your organization."
 ---
 
 # Build and manage assessments in Compliance Manager
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **In this article:** Learn how to customize Compliance Manager for your organization by creating and managing **assessments**. This article walks you through how to create assessments, how to organize them into **groups**, working with **controls**, accepting **updates**, and exporting assessment **reports**.
 
