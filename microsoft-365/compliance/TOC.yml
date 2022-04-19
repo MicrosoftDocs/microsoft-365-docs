@@ -985,11 +985,11 @@
       href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
 - name: Manage auditing and alert policies
   items: 
-    - name: Microsoft 365 auditing solutions
+    - name: Microsoft Purview auditing solutions
       href: auditing-solutions-overview.md
-    - name: Basic Audit
+    - name: Audit (Standard)
       items:
-        - name: Set up Basic Audit
+        - name: Set up Audit (Standard)
           href: set-up-basic-audit.md
         - name: Search the audit log
           href: search-the-audit-log-in-security-and-compliance.md
@@ -1013,15 +1013,15 @@
               href: /office/office-365-management-api/office-365-management-activity-api-schema
             - name: Office 365 Management Activity API FAQs and troubleshooting
               href: /office/office-365-management-api/troubleshooting-the-office-365-management-activity-api
-    - name: Advanced Audit
+    - name: Audit (Premium)
       items:
-        - name: Overview of Advanced Audit
+        - name: Overview of Audit (Premium)
           href: advanced-audit.md
-        - name: Set up Advanced Audit
+        - name: Set up Audit (Premium)
           href: set-up-advanced-audit.md
         - name: Manage audit log retention policies
           href: audit-log-retention-policies.md
-        - name: Use Advanced Audit to investigate compromised accounts
+        - name: Use Audit (Premium) to investigate compromised accounts
           href: mailitemsaccessed-forensics-investigations.md
     - name: Mailbox auditing
       href: enable-mailbox-auditing.md
