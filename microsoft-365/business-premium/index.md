@@ -27,11 +27,11 @@ ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: "Learn how to implement cybersecurity for small or medium sized businesses with Microsoft 365 Business Premium."
 ---
 
-# Microsoft 365 Business Premium overview
+# Microsoft 365 Business Premium &mdash; Cybersecurity for small business
 
-Let us begin by saying that you made a wise choice in adopting Microsoft 365 Business Premium and its world class productivity tools. Microsoft 365 Business Premium is designed with cyber safety in mind, and by adopting Microsoft 365, you are taking on the defense of your organization's systems, helping to safeguard all data, devices and information. You are the first and best defense against hackers and cyber attackers, including random individuals, organized crime, or highly-sophisticated nation states. 
+Let us begin by saying that you made a wise choice in adopting Microsoft 365 Business Premium and its world class productivity tools. Microsoft 365 Business Premium is designed with cybersecurity in mind, and by adopting Microsoft 365, you are taking on the defense of your organization's systems, helping to safeguard all data, devices and information. You are the first and best defense against hackers and cyber attackers, including random individuals, organized crime, or highly-sophisticated nation states. 
 
-The task before you is this &mdash; let Microsoft 365 Business Premium help secure your organization’s future! Approach this task by taking on missions to fortify your environment, train your team, and safeguard managed devices. These important missions are categorized in order of importance, and completing them is the most effective way to thwart hackers, protect against ransomware, and ensure your organization’s future is safeguarded with the best cybersecurity. Let's get started. 
+The task before you is this &mdash; let Microsoft 365 Business Premium help secure your organization’s future! Approach this task by taking on missions to fortify your environment, train your team, and safeguard managed devices. The missions are categorized in order of importance, and completing them is the most effective way to thwart hackers, protect against ransomware, and ensure your organization’s future is safeguarded with the best cybersecurity defenses. Let's get started. 
 
 Click through the tabs below to learn about each mission and how to set up Microsoft 365 Business Premium security.
 
@@ -39,9 +39,9 @@ Click through the tabs below to learn about each mission and how to set up Micro
 
 In these first missions, sign in and set up your initial protective walls of defense, starting with account access protections.
 
-[**Set up your environment**](m365bp-setup-overview.md). This objective has you set up and implement security across all accounts in the system.
+[**Set up your environment**](m365bp-setup-overview.md). This objective requires you to set up and implement security across all accounts in the system.
 
-[**Bump up security protection**](m365bp-security-overview.md). Now, set up a number of critical security measures to protect your organization. 
+[**Bump up cybersecurity protections**](m365bp-security-overview.md). Set up critical front-line security measures to prevent cyber attacks. 
 
 [:::image type="content" source="../media/bus-premium-card-overview-fortify.png" alt-text="Microsoft 365 Business Premium protects your apps, file storage, email, devices, and identities.":::](m365bp-setup-overview.md)
 
