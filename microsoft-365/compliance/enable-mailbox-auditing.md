@@ -24,7 +24,9 @@ description: "Mailbox audit logging is turned on by default in Microsoft 365 (al
 
 # Manage mailbox auditing
 
-In January 2019, Microsoft turned on mailbox audit logging by default for all organizations. This configuration means that certain actions by mailbox owners, delegates, and admins are automatically logged. It also means the corresponding mailbox audit records will be available when you search for them in the mailbox audit log. Before mailbox auditing was turned on by default, you had to manually enable it for every user mailbox in your organization.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Starting in January 2019, Microsoft is turning on mailbox audit logging by default for all organizations. This means that certain actions performed by mailbox owners, delegates, and admins are automatically logged, and the corresponding mailbox audit records will be available when you search for them in the mailbox audit log. Before mailbox auditing was turned on by default, you had to manually enable it for every user mailbox in your organization.
 
 Here are some benefits of mailbox auditing on by default:
 
@@ -36,8 +38,7 @@ Here are some benefits of mailbox auditing on by default:
 > [!NOTE]
 >
 > - The important thing to remember about the release of mailbox auditing on by default is: you don't need to do anything to manage mailbox auditing. However, to learn more, customize mailbox auditing from the default settings, or turn it off altogether, this article can help you.
-> - By default, only mailbox audit events for users with licenses that include the [Advanced Audit](advanced-audit.md) feature are available in audit log searches in the Microsoft 365 compliance center or via the Office 365 Management Activity API. These licenses are described [here](auditing-solutions-overview.md#advanced-audit-1). For brevity, this article will collectively refer to licenses that include Advanced Audit as *E5/A5/G5 licenses*.
->   For more information about how licensing affects mailbox auditing events in the M365 compliance center, see the [More information](#more-information) section later in this article.
+> - By default, only mailbox audit events for E5 users are available in audit log searches in the Microsoft Purview compliance portal or via the Office 365 Management Activity API. For more information, see the [More information](#more-information) section in this article.
 
 ## Verify mailbox auditing on by default is turned on
 
@@ -316,11 +317,11 @@ The value **True** indicates that mailbox audit logging is bypassed for the user
 
 ## More information
 
-- Although mailbox audit logging on by default is enabled for all organizations, only users with [licenses that include the Advanced Audit feature](auditing-solutions-overview.md#advanced-audit-1) (collectively referred to as *E5/A5/G5 licenses*) will return mailbox audit log events in [audit log searches in the Microsoft 365 compliance center](search-the-audit-log-in-security-and-compliance.md) or via the [Office 365 Management Activity API](/office/office-365-management-api/office-365-management-activity-api-reference) **by default**.
+- Although mailbox audit logging on by default is enabled for all organizations, only users with E5 licenses will return mailbox audit log events in [audit log searches in the Microsoft Purview compliance portal](search-the-audit-log-in-security-and-compliance.md) or via the [Office 365 Management Activity API](/office/office-365-management-api/office-365-management-activity-api-reference) **by default**.
 
   To retrieve mailbox audit log entries for users without E5/A5/G5 licenses, you can use any of the following workarounds:
 
-  - Manually enable mailbox auditing on the affected user mailboxes by running the following command: `Set-Mailbox -Identity <MailboxIdentity> -AuditEnabled $true`. After you enable mailbox auditing on the mailbox, you can use audit log searches in the Microsoft 365 compliance center or via the Office 365 Management Activity API.
+  - Manually enable mailbox auditing on individual mailboxes (run the command, `Set-Mailbox -Identity <MailboxIdentity> -AuditEnabled $true`). After you do this, you can use audit log searches in the Microsoft Purview compliance portal or via the Office 365 Management Activity API.
 
     > [!NOTE]
     > If mailbox auditing already appears to be enabled on the mailbox, but your searches return no results, change the value of the *AuditEnabled* parameter to `$false` and then back to `$true`.
