@@ -24,7 +24,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
-description: "An overview on how to protect your email"
+description: "An overview on how to protect your email from malware, phishing, and other cyber attackers. "
 ---
 
 # Protect all email

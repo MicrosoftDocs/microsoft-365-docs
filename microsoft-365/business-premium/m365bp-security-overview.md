@@ -1,5 +1,5 @@
 ---
-title: "Overview of security in Microsoft 365 Business Premium"
+title: "Increase security in Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
 ms.author: v-kcirillo
@@ -23,7 +23,7 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: "Security overview for Microsoft 365 Business Premium"
+description: "Security overview for Microsoft 365 Business Premium which provides cybersecurity tools such as multi-factor authentication that you can use to prevent cyber attacks."
 ---
 
 # Bump up security

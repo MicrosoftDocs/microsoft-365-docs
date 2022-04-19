@@ -1,5 +1,5 @@
 ---
-title: "Set Up Microsoft 365 Business Premium"
+title: "Set up Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
 ms.author: v-kcirillo
@@ -24,7 +24,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
-description: "Setup overview for Microsoft 365 Business Premium for campaigns or other businesses"
+description: "Setup overview for Microsoft 365 Business Premium for campaigns or other businesses. How to set up cybersecurity and prevent cyber attacks."
 ---
 
 # Welcome to Microsoft 365 Business Premium
