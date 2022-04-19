@@ -39,7 +39,7 @@ Click through the tabs below to learn about each mission and how to set up Micro
 
 In these first missions, sign in and set up your initial protective walls of defense, starting with account access protections.
 
-[**Set up your environment**](m365bp-setup-overview.md). This objective requires you to set up and implement security across all accounts in the system.
+[**Set up your environment**](m365bp-setup-overview.md). This mission requires you to set up and implement security across all accounts in the system.
 
 [**Bump up cybersecurity protections**](m365bp-security-overview.md). Set up critical front-line security measures to prevent cyber attacks. 
 
