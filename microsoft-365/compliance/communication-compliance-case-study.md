@@ -1,5 +1,5 @@
 ---
-title: "Case study - Contoso quickly configures an inappropriate text policy for Microsoft Teams, Exchange, and Yammer communications"
+title: "Case study - Contoso configures an inappropriate text policy"
 description: "A case study for Contoso and how they quickly configure a communication compliance policy to monitor for inappropriate text in Microsoft Teams, Exchange Online, and Yammer communications."
 keywords: Microsoft 365, Microsoft Purview, compliance, communication compliance
 f1.keywords:

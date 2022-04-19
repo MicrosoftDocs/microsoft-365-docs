@@ -1,5 +1,5 @@
 ---
-title: "Publish retention labels and apply them in apps to retain or delete content"
+title: "Publish and apply retention labels"
 f1.keywords:
 - NOCSH
 ms.author: cabailey

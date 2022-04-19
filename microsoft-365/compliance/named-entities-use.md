@@ -1,5 +1,5 @@
 ---
-title: "Use named entities in your data loss prevention policies (preview)"
+title: "Use named entities in DLP policies (preview)"
 f1.keywords:
 - CSH
 ms.author: chrfox
