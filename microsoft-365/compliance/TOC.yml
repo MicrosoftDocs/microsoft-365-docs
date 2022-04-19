@@ -572,7 +572,7 @@
 - name: Manage data lifecycle & records
   items: 
     - name: Govern your data
-      href: manage-information-governance.md
+      href: manage-data-governance.md
     - name: Understand retaining and deleting data
       items: 
         - name: Learn about retention policies & retention labels
@@ -596,13 +596,13 @@
     - name: Data lifecycle management
       items: 
         - name: Learn about data lifecycle management
-          href: information-governance.md
+          href: data-lifecycle-management.md
         - name: Get started with data lifecycle management
-          href: get-started-with-information-governance.md
+          href: get-started-with-data-lifecycle-management.md
         - name: Create retention policies
           href: create-retention-policies.md
         - name: Use retention labels for exceptions
-          href: create-retention-labels-information-governance.md
+          href: create-retention-labels-data-lifecycle-management.md
         - name: Archive mailbox data
           items: 
             - name: Learn about archive mailboxes
