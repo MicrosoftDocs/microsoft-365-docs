@@ -154,9 +154,9 @@ The Twitter developer app is now ready to use.
 
 5. Click **Save** to save the connector settings.
 
-## Step 5: Set up a Twitter connector in the Microsoft 365 compliance center
+## Step 5: Set up a Twitter connector in the compliance portal
 
-1. Go to the Microsoft 365 compliance center, and select <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**Data connectors** page</a.
+1. Go to the Microsoft Purview compliance portal, and select <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**Data connectors** page</a.
 
 2. On the **Data connectors** page under **Twitter**, click **View**.
 

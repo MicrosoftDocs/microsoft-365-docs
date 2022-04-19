@@ -20,6 +20,8 @@ ms.custom: seo-marvel-apr2020
 ---
 # Create custom sensitive information types in the Compliance center
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 If the pre-configured sensitive information types don't meet your needs, you can create your own custom sensitive information types that you fully define or you can copy one of the pre-configured ones and modify it.
 
 The custom sensitive information types that you create by using this method are added to the rule package named `Microsoft.SCCManaged.CustomRulePack`.
@@ -39,9 +41,9 @@ There are two ways to create a new sensitive information type:
   - [Sensitive information type functions](sit-functions.md)
   - [confidence levels](sensitive-information-type-learn-about.md#more-on-confidence-levels)
 
-- You must have Global admin or Compliance admin permissions to create, test, and deploy a custom sensitive information type through the UI. See [About admin roles](/office365/admin/add-users/about-admin-roles) in Office 365.
+- Your organization must have a subscription, such as Office 365 Enterprise, that includes Microsoft Purview Data Loss Prevention (DLP). See [Messaging Policy and Compliance ServiceDescription](/office365/servicedescriptions/exchange-online-protection-service-description/messaging-policy-and-compliance-servicedesc). 
 
-- Your organization must have a subscription, such as Office 365 Enterprise, that includes Data Loss Prevention (DLP). See [Messaging Policy and Compliance ServiceDescription](/office365/servicedescriptions/exchange-online-protection-service-description/messaging-policy-and-compliance-servicedesc).
+- Your organization must have a subscription, such as Office 365 Enterprise, that includes data loss prevention (DLP). See [Messaging Policy and Compliance ServiceDescription](/office365/servicedescriptions/exchange-online-protection-service-description/messaging-policy-and-compliance-servicedesc).
 
 > [!IMPORTANT]
 > Microsoft Customer Service & Support can't assist with creating custom classifications or regular expression patterns. Support engineers can provide limited support for the feature, such as, providing sample regular expression patterns for testing purposes, or assisting with troubleshooting an existing regular expression pattern that's not triggering as expected, but can't provide assurances that any custom content-matching development will fulfill your requirements or obligations.
@@ -164,7 +166,7 @@ The SIT instance count limit applies when SITs are used in these solutions:
 
 - DLP policies
 - Information Protection
-- Information Governance
+- Data Lifecycle Management
 - Communication Compliance
 - Records Management
 - Microsoft Defender for Cloud Apps

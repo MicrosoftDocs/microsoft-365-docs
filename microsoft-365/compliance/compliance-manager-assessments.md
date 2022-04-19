@@ -1,5 +1,5 @@
 ---
-title: "Build and manage assessments in Microsoft Compliance Manager"
+title: "Build and manage assessments in Microsoft Purview Compliance Manager"
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -16,10 +16,12 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: "Build assessments in Microsoft Compliance Manager to help you meet the requirements of regulations and certifications that are important to your organization."
+description: "Build assessments in Microsoft Purview Compliance Manager to help you meet the requirements of regulations and certifications that are important to your organization."
 ---
 
 # Build and manage assessments in Compliance Manager
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **In this article:** Learn how to customize Compliance Manager for your organization by creating and managing **assessments**. This article walks you through how to create assessments, how to organize them into **groups**, working with **controls**, accepting **updates**, and exporting assessment **reports**.
 
@@ -30,7 +32,7 @@ Compliance Manager helps you create assessments that evaluate your compliance wi
 All of your assessments are listed on the assessments tab of Compliance Manager. Learn more about [how to filter your view of your assessments and interpret status states](compliance-manager-setup.md#assessments-page).
 
 > [!IMPORTANT]
-> The templates available to your organization for building assessments depend on your licensing agreement. [Review licensing details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+> The templates available to your organization for building assessments depend on your licensing agreement. [Review licensing details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance.md#microsoft-purview-compliance-manager).
 
 ## Data Protection Baseline default assessment
 
