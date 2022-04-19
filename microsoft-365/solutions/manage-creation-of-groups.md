@@ -39,7 +39,7 @@ When you limit who can create a group, it affects all services that rely on grou
 - Power BI (classic)
 - Project for the web / Roadmap
 
-The steps in this article won't prevent members of certain roles from creating Groups. Office 365 Global admins can create Groups via the Microsoft 365 admin center, Planner, Exchange, and SharePoint Online. Other roles can create Groups via limited means, listed below.
+The steps in this article won't prevent members of certain roles from creating Groups. Microsoft 365 global admins can create groups via the Microsoft 365 admin center, Planner, Exchange, and SharePoint, but not other locations such as Teams. Other roles can create Microsoft 365 Groups via limited means, listed below.
 
 - Exchange Administrator: Exchange admin center, Azure AD
 - Partner Tier 1 Support: Microsoft 365 admin center, Exchange admin center, Azure AD
@@ -67,7 +67,7 @@ The following people don't need Azure AD Premium or Azure AD Basic EDU licenses 
 
 ## Step 1: Create a group for users who need to create Microsoft 365 groups
 
-Only one group in your organization can be used to control who is able to create Groups. But, you can nest other groups as members of this group.
+Only one group in your organization can be used to control who is able to create Microsoft 365 Groups. But, you can nest other groups as members of this group.
 
 Admins in the roles listed above do not need to be members of this group: they retain their ability to create groups.
 
