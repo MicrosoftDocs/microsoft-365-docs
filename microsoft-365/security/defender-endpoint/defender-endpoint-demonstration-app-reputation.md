@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender Advanced Threat Protection SmartScreen app reputation demonstration
-description: Test how Microsoft Defender SmartScreen helps you identify phishing and malware websites
-keywords: Microsoft Defender Advanced Threat Protection, Microsoft Defender ATP, phishing website, malware website, app reputation, 
+title: Microsoft Defender for Endpoint SmartScreen app reputation demonstration
+description: Test how Microsoft Defender for Endpoint SmartScreen helps you identify phishing and malware websites
+keywords: Microsoft Defender for Endpoint, phishing website, malware website, app reputation, 
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,7 +20,7 @@ ms.technology: mde
 
 # SmartScreen app reputation demonstration
 
-Test how Microsoft Defender SmartScreen helps you identify phishing and malware websites based on App reputation.
+Test how Microsoft Defender for Endpoint SmartScreen helps you identify phishing and malware websites based on App reputation.
 
 ## Scenario requirements and setup
 
@@ -72,4 +72,4 @@ This download is known malware; SmartScreen should block this program from runni
 
 ## See also
 
-[Microsoft Defender Advanced Threat Protection (ATP) - demonstration scenarios](advanced-threat-protection-demonstrations.md)
+[Microsoft Defender for Endpoint - demonstration scenarios](defender-endpoint-demonstrations.md)

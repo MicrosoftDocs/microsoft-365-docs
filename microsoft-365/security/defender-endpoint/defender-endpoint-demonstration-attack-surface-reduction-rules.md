@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender Advanced Threat Protection Attack surface reduction rules demonstrations
+title: Microsoft Defender for Endpoint surface reduction rules demonstrations
 description: See how attack surface reduction rules block a variety of known threat types.
-keywords: Microsoft Defender Advanced Threat Protection, Microsoft Defender ATP, attack surface reduction rules, ASR rules, demonstration
+keywords: Microsoft Defender for Endpoint demonstration, attack surface reduction rules demonstration, ASR rules, demonstration
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -159,4 +159,4 @@ Alternately, you can perform these manual steps:
 
 [Attack surface reduction rules reference](attack-surface-reduction-rules-reference.md)
 
-[Microsoft Defender Advanced Threat Protection (ATP) - demonstration scenarios](advanced-threat-protection-demonstrations.md)
+[Microsoft Defender for Endpoint - demonstration scenarios](defender-endpoint-demonstrations.md)

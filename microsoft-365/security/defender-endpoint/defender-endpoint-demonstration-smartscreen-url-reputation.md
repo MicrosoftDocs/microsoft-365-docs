@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender Advanced Threat Protection Microsoft Defender SmartScreen URL reputation demonstrations
+title: Microsoft Defender for Endpoint SmartScreen URL reputation demonstrations
 description: Demonstrates how Microsoft Defender SmartScreen identifies phishing and malware websites based on URL reputation.
-keywords: Microsoft Defender Advanced Threat Protection, Microsoft Defender ATP, website phishing protection, website malware protection, URL reputation, demonstration, 
+keywords: Microsoft Defender for Endpoint, website phishing protection, website malware protection, URL reputation, demonstration, 
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -88,3 +88,5 @@ A benign page hosting a malicious advertisement
 ## See also
 
 [Microsoft Defender SmartScreen Documentation](/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview.md)
+
+[Microsoft Defender for Endpoint - demonstration scenarios](defender-endpoint-demonstrations.md)

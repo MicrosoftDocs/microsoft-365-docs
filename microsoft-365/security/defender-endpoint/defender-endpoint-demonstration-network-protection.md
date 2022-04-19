@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender Advanced Threat Protection Network protection demonstrations
-description: 
+title: Microsoft Defender for Endpoint Network protection demonstrations
+description: Shows how Network protection prevents employees from using any application to access dangerous domains that may host phishing scams, exploits, and other malicious content on the Internet.
 keywords: network protection, protect against phishing scams, protect against exploits, protect against malicious content, demonstration 
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -56,4 +56,4 @@ Set-MpPreference -EnableNetworkProtection Disabled
 
 [Network Protection](/windows/threat-protection/windows-defender-exploit-guard/network-protection-exploit-guard?ocid=wd-av-demo-np-bottom)
 
-[Microsoft Defender Advanced Threat Protection (ATP) - demonstration scenarios](advanced-threat-protection-demonstrations.md)
+[Microsoft Defender for Endpoint - demonstration scenarios](defender-endpoint-demonstrations.md)

@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender Advanced Threat Protection Cloud-delivered protection demonstration
+title: Microsoft Defender for Endpoint Cloud-delivered protection demonstration
 description: See how Cloud-delivered protection can automatically detect and delete malicious files. 
-keywords: Microsoft Defender Advanced Threat Protection, Microsoft Defender ATP, virus protection, virus detection, virus deletion, 
+keywords: Microsoft Defender for Endpoint, Microsoft Defender ATP, virus protection, virus detection, virus deletion, 
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -63,4 +63,4 @@ Failed to block (but stopped by Microsoft Defender SmartScreen)
 
 [Utilize Microsoft cloud-delivered protection in Microsoft Defender Antivirus](/windows/threat-protection/windows-defender-antivirus/utilize-microsoft-cloud-protection-windows-defender-antivirus?ocid=wd-av-demo-cloud-bottom)
 
-[Microsoft Defender Advanced Threat Protection (ATP) - demonstration scenarios](advanced-threat-protection-demonstrations.md)
+[Microsoft Defender for Endpoint - demonstration scenarios](defender-endpoint-demonstrations.md)

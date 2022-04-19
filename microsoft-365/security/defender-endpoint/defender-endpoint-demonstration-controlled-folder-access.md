@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender Advanced Threat Protection Controlled folder access (CFA) demonstrations
+title: Microsoft Defender for Endpoint Controlled folder access (CFA) demonstrations
 description: Demonstrates how Controlled Folder Access protects valuable data from malicious apps and threats, such as ransomware.
-keywords: Microsoft Defender Advanced Threat Protection, Microsoft Defender ATP, Controlled folder access protection, 
+keywords: Microsoft Defender for Endpoint, Controlled folder access protection, Controlled folder access demonstration
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -83,8 +83,8 @@ Download and run this cleanup script. You can perform these manual steps instead
 
 ## See also
 
-[Controlled folder access demonstration test tool](advanced-threat-protection-demonstration-controlled-folder-access-test-tool.md)
+[Controlled folder access demonstration test tool](defender-endpoint-demonstration-controlled-folder-access-test-tool.md)
 
 [Controlled folder access](/windows/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard?ocid=wd-av-demo-cfa-bottom)
 
-[Microsoft Defender Advanced Threat Protection (ATP) - demonstration scenarios](advanced-threat-protection-demonstrations.md)
+[Microsoft Defender for Endpoint - demonstration scenarios](defender-endpoint-demonstrations.md)
