@@ -77,7 +77,7 @@ Admins in the roles listed above do not need to be members of this group: they r
 
 3. Choose the group type you want. Remember the name of the group! You'll need it later.
 
-4. Finish setting up the group, adding people or other groups who you want to be able to create groups in your org.
+4. Finish setting up the group, adding people or other groups who you want to be able to create groups as members (not owners).
 
 For detailed instructions, see [Create, edit, or delete a security group in the Microsoft 365 admin center](../admin/email/create-edit-or-delete-a-security-group.md).
 
