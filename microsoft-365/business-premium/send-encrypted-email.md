@@ -54,7 +54,7 @@ You can learn all about setting up email encryption at [Email encryption in Micr
 
 Admins can create mail flow rules to automatically protect email messages that are sent and received from a campaign or business. Set up rules to encrypt any outgoing email messages, and remove encryption from encrypted messages coming from inside your organization or from replies to encrypted messages sent from your organization.
 
-You create mail flow rules to encrypt email messages with the new Office 365 Message Encryption (OME) capabilities. Define mail flow rules for triggering message encryption with the new OME capabilities by using the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center (EAC)</a>. 
+You create mail flow rules to encrypt email messages with Microsoft Purview Message Encryption. Define mail flow rules for triggering message encryption by using the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center (EAC)</a>.
 
 1. In a web browser, using a work or school account that has been granted global administrator permissions, sign in.
 2. Choose the Admin tile.

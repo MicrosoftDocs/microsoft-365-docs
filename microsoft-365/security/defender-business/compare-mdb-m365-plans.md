@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: reference
-ms.date: 04/12/2022
+ms.date: 04/18/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -68,9 +68,9 @@ The following table compares security features and capabilities in Defender for 
 
 Defender for Business brings enterprise-grade capabilities of Defender for Endpoint to small and medium-sized businesses.
 
-The following table compares security features and capabilities in Defender for Business to Microsoft Defender for Endpoint Plans 1 and 2.
+The following table compares security features and capabilities in Defender for Business to the enterprise offerings, Microsoft Defender for Endpoint Plans 1 and 2.
 
-|Feature/Capability|[Defender for Business](mdb-overview.md)<br/>(standalone; currently in preview)|[Defender for Endpoint Plan 1](../defender-endpoint/defender-endpoint-plan-1.md)|[Defender for Endpoint Plan 2](../defender-endpoint/microsoft-defender-endpoint.md)|
+|Feature/Capability|[Defender for Business](mdb-overview.md)<br/>(standalone; currently in preview)|[Defender for Endpoint Plan 1](../defender-endpoint/defender-endpoint-plan-1.md)<br/>(for enterprise customers) |[Defender for Endpoint Plan 2](../defender-endpoint/microsoft-defender-endpoint.md)<br/>(for enterprise customers) |
 |---|---|---|---|
 |[Centralized management](../defender-endpoint/manage-atp-post-migration.md) |Yes <sup>[[1](#fn1)]</sup>|Yes|Yes|
 |[Simplified client configuration](mdb-simplified-configuration.md)|Yes|No|No|

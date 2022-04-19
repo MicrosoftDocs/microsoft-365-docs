@@ -1,5 +1,5 @@
 ---
-title: "Use Preservation Lock to restrict changes to retention policies and retention label policies"
+title: "Use Preservation Lock to restrict changes to retention policies"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -18,6 +18,8 @@ description: "Use Preservation Lock with retention policies and retention label 
 ---
 
 # Use Preservation Lock to restrict changes to retention policies and retention label policies
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
@@ -86,4 +88,4 @@ You should see **RestrictiveRetention** is set to **True**. For example:
 
 ## See also
 
-[Resources to help you meet regulatory requirements for information governance and records management](retention-regulatory-requirements.md)
+[Resources to help you meet regulatory requirements for data lifecycle management and records management](retention-regulatory-requirements.md)

@@ -1,5 +1,5 @@
 ---
-title: "Use network upload to import your organization's PST files"
+title: "Use network upload to import PST files"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -44,7 +44,7 @@ You have to perform Step 1 only once to import PST files to Microsoft 365 mailbo
 
 ## Before you import PST files
   
-- You have to be assigned the Mailbox Import Export role in Exchange Online to create import jobs in the Microsoft 365 compliance center and import PST files to user mailboxes. By default, this role isn't assigned to any role group in Exchange Online. You can add the Mailbox Import Export role to the Organization Management role group. Or you can create a role group, assign the Mailbox Import Export role, and then add yourself as a member. For more information, see the "Add a role to a role group" or the "Create a role group" sections in [Manage role groups](/Exchange/permissions-exo/role-groups).
+- You have to be assigned the Mailbox Import Export role in Exchange Online to create import jobs in the Microsoft Purview compliance portal and import PST files to user mailboxes. By default, this role isn't assigned to any role group in Exchange Online. You can add the Mailbox Import Export role to the Organization Management role group. Or you can create a role group, assign the Mailbox Import Export role, and then add yourself as a member. For more information, see the "Add a role to a role group" or the "Create a role group" sections in [Manage role groups](/Exchange/permissions-exo/role-groups).
 
     In addition to the Mailbox Import Export role, you also have to be assigned the Mail Recipients role in Exchange Online. By default, this role is assigned to the Organization Management and Recipient Management roles groups in Exchange Online.
 
@@ -85,10 +85,10 @@ The first step is to download the AzCopy tool, which is the tool that you run in
   
 1. Go to <https://compliance.microsoft.com> and sign in using the credentials for an administrator account in your organization.
 
-2. In the left pane of the Microsoft 365 compliance center, click **Information governance** \> **Import**.
+2. In the left pane of the compliance portal, click **Information governance** \> **Import**.
 
     > [!NOTE]
-    > You have to be assigned the appropriate permissions to access the **Import** page in the Microsoft 365 compliance center. See the **Before you begin** section for more information. 
+    > You have to be assigned the appropriate permissions to access the **Import** page in the compliance portal. See the **Before you begin** section for more information. 
 
 3. On the **Import** tab, click ![Add Icon.](../media/ITPro-EAC-AddIcon.gif) **New import job**.
 
@@ -253,12 +253,12 @@ The next step is to create the PST Import job in the Import service in Microsoft
   
 1. Go to <https://compliance.microsoft.com> and sign in using the credentials for an administrator account in your organization.
 
-2. In the left pane of the Microsoft 365 compliance center, click **Information governance > Import**.
+2. In the left pane of the compliance portal, click **Information governance > Import**.
 
 3. On the **Import** tab, click ![Add Icon.](../media/ITPro-EAC-AddIcon.gif) **New import job**.
 
    > [!NOTE]
-   > You have to be assigned the appropriate permissions to access the **Import** page in the Microsoft 365 compliance center to create an import job. See the **Before you begin** section for more information. 
+   > You have to be assigned the appropriate permissions to access the **Import** page in the compliance portal to create an import job. See the **Before you begin** section for more information. 
 
 4. Type a name for the PST import job, and then click **Next**. Use lowercase letters, numbers, hyphens, and underscores. You can't use uppercase letters or include spaces in the name.
 
@@ -295,7 +295,7 @@ The next step is to create the PST Import job in the Import service in Microsoft
 
 After you create the import job in Step 5, Microsoft 365 analyzes the data in the PST files (in a safe and secure manner) by identifying the age of the items and the different message types included in the PST files. When the analysis is completed and the data is ready to import, you have the option to import all the data contained in the PST files or you can trim the data that's imported by setting filters that control what data gets imported.
   
-1. On the **Import** tab in the Microsoft 365 compliance center, select the import jobs that you created in Step 5 and then click **Import to Microsoft 365**.
+1. On the **Import** tab in the compliance portal, select the import jobs that you created in Step 5 and then click **Import to Microsoft 365**.
   
    The **Filter your data** page is displayed. It contains the data insights resulting from the analysis performed on the PST files by Microsoft 365, including information about the age of the data. At this point, you have the option to filter the data that will be imported or import all the data as is. 
 
@@ -323,7 +323,7 @@ After you create the import job in Step 5, Microsoft 365 analyzes the data in th
 
   - The data is available to the user from all devices because it's stored in the cloud.
 
-  - It helps address compliance needs of your organization by letting you apply Microsoft 365 compliance features to the data from the PST files that you imported. This includes:
+  - It helps address compliance needs of your organization by letting you apply Microsoft Purview features to the data from the PST files that you imported. This includes:
 
   - Enabling [archive mailboxes](enable-archive-mailboxes.md) and [auto-expanding archiving](enable-autoexpanding-archiving.md) to give users additional mailbox storage space to store the data that you imported.
 
@@ -355,7 +355,7 @@ Here's an illustration and description of the network upload process to import P
   
 ![Workflow of the network upload process to import PST files to Microsoft 365.](../media/9e05a19e-1e7a-4f1f-82df-9118f51588c4.png)
   
-1. **Download the PST import tool and key to private Azure Storage location:** The first step is to download the AzCopy command-line tool and an access key used to upload the PST files to an Azure Storage location in the Microsoft cloud. You obtain these from the **Import** page in the Microsoft 365 compliance center. The key (called a secure access signature (SAS) key, provides you with the necessary permissions to upload PST files to a private and secure Azure Storage location. This access key is unique to your organization and helps prevent unauthorized access to your PST files after they're uploaded to the Microsoft cloud. Importing PST files doesn't require your organization to have a separate Azure subscription. 
+1. **Download the PST import tool and key to private Azure Storage location:** The first step is to download the AzCopy command-line tool and an access key used to upload the PST files to an Azure Storage location in the Microsoft cloud. You obtain these from the **Import** page in the compliance portal. The key (called a secure access signature (SAS) key, provides you with the necessary permissions to upload PST files to a private and secure Azure Storage location. This access key is unique to your organization and helps prevent unauthorized access to your PST files after they're uploaded to the Microsoft cloud. Importing PST files doesn't require your organization to have a separate Azure subscription.
 
 2. **Upload the PST files to the Azure Storage location:** The next step is to use the azcopy.exe tool (downloaded in step 1) to upload and store your PST files in an Azure Storage location that resides in the same regional Microsoft datacenter where your organization is located. To upload them, the PST files that you want to import have to be located in a file share or file server in your organization.
 
@@ -363,8 +363,8 @@ Here's an illustration and description of the network upload process to import P
 
 3. **Create a PST import mapping file:** After the PST files have been uploaded to the Azure Storage location, the next step is to create a comma-separated value (CSV) file that specifies which user mailboxes the PST files will be imported to, note that a PST file can be imported to a user's primary mailbox or their archive mailbox. The Microsoft 365 Import service uses the information in the CSV file to import the PST files.
 
-4. **Create a PST import job:** The next step is to create a PST import job on the **Import PST files** page in the Microsoft 365 compliance center and submit the PST import mapping file created in the previous step. After you create the import job, Microsoft 365 analyzes the data in the PST files and then gives you an opportunity to set filters that control what data actually gets imported to the mailboxes specified in the PST import mapping file. 
+4. **Create a PST import job:** The next step is to create a PST import job on the **Import PST files** page in the compliance portal and submit the PST import mapping file created in the previous step. After you create the import job, Microsoft 365 analyzes the data in the PST files and then gives you an opportunity to set filters that control what data actually gets imported to the mailboxes specified in the PST import mapping file.
 
 5. **Filter the PST data that will be imported to mailboxes:** After the import job is created and started, Microsoft 365 analyzes the data in the PST files (safely and securely) by identifying the age of the items and the different message types included in the PST files. When the analysis is completed and the data is ready to import, you have the option to import all the data contained in the PST files or you can trim the data that's imported by setting filters that control what data gets imported.
 
-6. **Start the PST import job:** After the import job is started, Microsoft 365 uses the information in the PST import mapping file to import the PSTs files from the Azure Storage location to user mailboxes. Status information about the import job (including information about each PST file being imported) is displayed on the **Import PST files** page in the Microsoft 365 compliance center. When the import job is finished, the status for the job is set to **Complete**.
+6. **Start the PST import job:** After the import job is started, Microsoft 365 uses the information in the PST import mapping file to import the PSTs files from the Azure Storage location to user mailboxes. Status information about the import job (including information about each PST file being imported) is displayed on the **Import PST files** page in the compliance portal. When the import job is finished, the status for the job is set to **Complete**.
