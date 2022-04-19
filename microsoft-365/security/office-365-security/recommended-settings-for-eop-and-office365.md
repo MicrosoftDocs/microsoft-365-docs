@@ -107,9 +107,9 @@ To create and configure outbound spam policies, see [Configure outbound spam fil
 For more information about the default sending limits in the service, see [Sending limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-1).
 
 > [!NOTE]
-> Outbound spam policies are not part of Standard or Strict preset security policies. The **Standard** and **Strict** values indicate our **recommended** values in the default outbound spam policy or custom policies that you create.
+> Outbound spam policies are not part of Standard or Strict preset security policies. The **Standard** and **Strict** values indicate our **recommended** values in the default outbound spam policy or custom outbound spam policies that you create.
 
-|Security feature name|Default|Standard|Strict|Comment|
+|Security feature name|Default|Recommended<br/>Standard|Recommended<br/>Strict|Comment|
 |---|:---:|:---:|:---:|---|
 |**Set an external message limit** <br/><br/> _RecipientLimitExternalPerHour_|0|500|400|The default value 0 means use the service defaults.|
 |**Set an internal message limit** <br/><br/> _RecipientLimitInternalPerHour_|0|1000|800|The default value 0 means use the service defaults.|
