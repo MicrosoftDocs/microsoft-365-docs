@@ -34,7 +34,7 @@ landingContent:
           - text: Prevent data loss
             url: information-protection.md#prevent-data-loss
           - text: Govern your data
-            url: manage-information-governance.md
+            url: manage-data-governance.md
           - text: "Learning path: Manage information protection and governance"
             url: /learn/paths/m365-compliance-information
 

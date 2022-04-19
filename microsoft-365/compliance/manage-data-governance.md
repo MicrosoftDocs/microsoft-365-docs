@@ -44,9 +44,9 @@ To keep what you need and delete what you don't:
 |[Archive mailboxes](archive-mailboxes.md)| Provides additional mailbox storage space for users.|
 |[Import service for PST files](importing-pst-files-to-office-365.md)| Supports bulk-importing PST files to Exchange Online mailboxes to retain and search email messages for compliance or regulatory requirements. |
 
-Want to learn more? See [Learn about data lifecycle management](information-governance.md).
+Want to learn more? See [Learn about data lifecycle management](data-lifecycle-management.md).
 
-Ready to start using some or all of these capabilities? See [Get started with data lifecycle management](get-started-with-information-governance.md).
+Ready to start using some or all of these capabilities? See [Get started with data lifecycle management](get-started-with-data-lifecycle-management.md).
 
 
 ## Microsoft Purview Records Management
