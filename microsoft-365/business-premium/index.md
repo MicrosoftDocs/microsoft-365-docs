@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Business Premium Overview"
+title: "Microsoft 365 Business Premium overview"
 f1.keywords:
 - NOCSH
 ms.author: v-kcirillo
@@ -24,7 +24,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
-description: "Learn how to implement cybersecurity for small or medium sized businesses with Microsoft 365 Business Premium."
+description: "Learn how to implement cybersecurity for small or medium sized businesses with Microsoft 365 Business Premium. The cybersecurity capabilities and features are optimized to prevent cyber attacks and security breaches, and help safeguard data, devices and information with high-grade cyber defenses."
 ---
 
 # Microsoft 365 Business Premium &mdash; Cybersecurity for small business
