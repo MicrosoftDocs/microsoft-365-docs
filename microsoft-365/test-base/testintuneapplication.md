@@ -61,7 +61,7 @@ As an Intune customer who has an Intune package, which has been already onboarde
 
 
 **Step 3: Edit Package**
-1. Check the scripts auto-generated are tagged correctly. (refer to this doc).
+1. Check the scripts auto-generated are tagged correctly.
 2. If you synchronized the configuration from Intune successfully, you should be able to see the install/uninstall commands of the test app have been added in the install/uninstall scripts, the commands of the dependency **which has been uploaded** should also be inserted in the package explorer tree for review.
 3. Check the test app binaries are moved under **bin** folder.
 4. Check the dependency binaries **which has been uploaded** put under the **guid** folder.
@@ -104,7 +104,7 @@ As a Test Base customer who has a standalone intunewin package. Customer can onb
 
 
 **Step 3: Edit Package**
-1. Check the scripts are tagged correctly (refer to this doc).
+1. Check the scripts are tagged correctly.
 2. As no install/uninstall commands are synchronized from corresponding Intune account, you'll need to provide all the scripts (install/uninstall/launch/close) by yourself.
 3. Check the test app binaries are moved under bin folder.
 4. You can edit the scripts as needed and save.
