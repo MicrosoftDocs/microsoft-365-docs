@@ -56,9 +56,8 @@ To create or edit a DLP policy, use the procedures in [Create, test, and tune a 
 
 ## Workloads and services that support named entities
 
-
 - **Microsoft 365 eDiscovery** supports the use of named entities in Substrate services.
-- **Microsoft Defender for Cloud Apps** supports the use of named entities in Defender for Cloud Apps policies.
+- **Microsoft Defender for Cloud Apps** supports the use of named entities in Defender for Cloud Apps policies in the Defender for Cloud apps portal.
 - **Insider Risk Management** supports the use of named entities in Substrate services.
 - **Records Management** supports the use of named entities.
 - **Exact Data Match Sensitive Information Types** supports the use of named entities.
