@@ -20,7 +20,7 @@ description: "Learn how to detect errors and typos in your keyword query for eDi
 
 # Check your search query for errors
   
-Here's a list of the unsupported characters that we check for in search queries for Content search and Core eDiscovery. Unsupported characters are often hidden, and they typically cause a search error or return unintended results.
+Here's a list of the unsupported characters that we check for in search queries for Content search and Microsoft Purview eDiscovery (Standard). Unsupported characters are often hidden, and they typically cause a search error or return unintended results.
   
 - **Smart quotation marks** - Smart single and double quotation marks (also called curly quotes) aren't supported. Only straight quotation marks can be used in a search query. 
 

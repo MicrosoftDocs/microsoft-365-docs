@@ -1,5 +1,5 @@
 ---
-title: "Records management in Microsoft 365"
+title: "Learn about Microsoft Purview Records Management"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -20,16 +20,18 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-description: With records management in Microsoft 365, you can apply your retention schedules into a file plan that manages retention, records declaration, and disposition.
+description: Learn how Microsoft Purview Records Management supports high-value items for business, legal, or regulatory record-keeping requirements.
 ---
 
-# Learn about records management in Microsoft 365
+# Learn about records management
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Organizations of all types require a records-management solution to manage regulatory, legal, and business-critical records across their corporate data. Records management in Microsoft 365 helps an organization manage their legal obligations, provides the ability to demonstrate compliance with regulations, and increases efficiency with regular disposition of items that are no longer required to be retained, no longer of value, or no longer required for business purposes.
+Organizations of all types require a records-management solution to manage regulatory, legal, and business-critical records across their corporate data. Records management for Microsoft Purview helps an organization manage their legal obligations, provides the ability to demonstrate compliance with regulations, and increases efficiency with regular disposition of items that are no longer required to be retained, no longer of value, or no longer required for business purposes.
 
-Use the following capabilities to support your records management solution in Microsoft 365:
+Use the following capabilities to support your records management solution for Microsoft 365 services and apps:
 
 - **Label content as a record**. Create and configure retention labels to mark content as a [record](#records) that can then be applied by users or automatically applied by identifying sensitive information, keywords, or content types.
 
@@ -88,10 +90,10 @@ A standard retention label has retention settings and actions but doesn't mark c
 Footnotes:
 
 <sup>1</sup>
-Editing properties for a locked record is allowed by default but can be blocked by a tenant setting in the [Microsoft 365 compliance center](https://compliance.microsoft.com/) > **Records management** > **Records management settings** > **Retention labels** > **Allow editing of record properties**.
+Editing properties for a locked record is allowed by default but can be blocked by a tenant setting in the [Microsoft Purview compliance portal](https://compliance.microsoft.com/) > **Records management** > **Records management settings** > **Retention labels** > **Allow editing of record properties**.
 
 <sup>2</sup>
-Deleting labeled items in SharePoint and OneDrive can be blocked as a tenant setting in the [Microsoft 365 compliance center](https://compliance.microsoft.com/) > **Records management** > **Records management settings** > **Retention labels** > **Deletion of items**.
+Deleting labeled items in SharePoint and OneDrive can be blocked as a tenant setting in the [Microsoft Purview compliance portal](https://compliance.microsoft.com/) > **Records management** > **Records management settings** > **Retention labels** > **Deletion of items**.
 
 When you apply a retention label to a list item that has a document attachment, that document doesn't inherit the retention settings and can be deleted from the list item. In comparison, if that list item was declared a record with a retention label, the document attachment would inherit the retention settings and couldn't be deleted.
 

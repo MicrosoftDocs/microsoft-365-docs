@@ -1,5 +1,5 @@
 ---
-title: "Migrate legacy eDiscovery searches and holds"
+title: "Migrate legacy eDiscovery searches and holds to the Microsoft Purview compliance portal"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,18 +17,18 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: 
 ---
 
-# Migrate legacy eDiscovery searches and holds to the Microsoft 365 compliance center
+# Migrate legacy eDiscovery searches and holds to the compliance portal
 
-The Microsoft 365 compliance center provides an improved experience for eDiscovery usage, including: higher reliability, better performance, and many features tailored to eDiscovery workflows including cases to organize your content by matter, review sets to review content and analytics to help cull data for review such as near-duplicate grouping, email threading, themes analysis, and predictive coding.
+The Microsoft Purview compliance portal provides an improved experience for eDiscovery usage, including: higher reliability, better performance, and many features tailored to eDiscovery workflows including cases to organize your content by matter, review sets to review content and analytics to help cull data for review such as near-duplicate grouping, email threading, themes analysis, and predictive coding.
 
-To help customers take advantage of the new and improved functionality, this article provides basic guidance on how to migrate In-Place eDiscovery searches and holds from the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a> to the Microsoft 365 compliance center.
+To help customers take advantage of the new and improved functionality, this article provides basic guidance on how to migrate In-Place eDiscovery searches and holds from the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a> to the compliance portal.
 
 > [!NOTE]
-> Because there are many different scenarios, this article provides general guidance to transition searches and holds to a core eDiscovery case in the Microsoft 365 compliance center. Using eDiscovery cases aren't always required, but they add an extra layer of security by letting you assign permissions to control who has access to the eDiscovery cases in your organization.
+> Because there are many different scenarios, this article provides general guidance to transition searches and holds to a core eDiscovery case in the compliance portal. Using eDiscovery cases aren't always required, but they add an extra layer of security by letting you assign permissions to control who has access to the eDiscovery cases in your organization.
 
 ## Before you begin
 
-- You have to be a member of the eDiscovery Manager role group in the Microsoft 365 compliance center to run the PowerShell commands described in this article. You also have to be a member of the Discovery Management role group in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>.
+- You have to be a member of the eDiscovery Manager role group in the compliance portal to run the PowerShell commands described in this article. You also have to be a member of the Discovery Management role group in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>.
 
 - This article provides guidance on how to create an eDiscovery hold. The hold policy will be applied to mailboxes through an asynchronous process. When creating an eDiscovery hold, you must create both a CaseHoldPolicy and CaseHoldRule, otherwise the hold will not be created and content locations will not be placed on hold.
 
@@ -77,7 +77,7 @@ The output of these two commands will be similar to the following:
 > [!NOTE]
 > The duration of the In-Place Hold in this example is indefinite (*ItemHoldPeriod: Unlimited*). This is typical for eDiscovery and legal investigation scenarios. If the hold duration has is different value than indefinite, the reason is likely because the hold is being used to retain content in a retention scenario. Instead of using the eDiscovery cmdlets in Security & Compliance Center PowerShell for retention scenarios, we recommend that you use [New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy) and [New-RetentionComplianceRule](/powershell/module/exchange/new-retentioncompliancerule) to retain content. The result of using these cmdlets will be similar to using **New-CaseHoldPolicy** and **New-CaseHoldRule**, but you'll able to specify a retention period and a retention action, such as deleting content after the retention period expires. Also, using the retention cmdlets don't require you to associate the retention holds with an eDiscovery case.
 
-## Step 4: Create a case in the Microsoft 365 Compliance center
+## Step 4: Create a case in the Microsoft Purview compliance portal
 
 To create an eDiscovery hold, you have to create an eDiscovery case to associate the hold with. The following example creates an eDiscovery case using a name of your choice. We will store the properties of the new case in a variable for use later. You can view those properties by running the `$case | FL` command after you create the case.
 
@@ -126,21 +126,21 @@ New-ComplianceSearch -Name $search.Name -ExchangeLocation $search.SourceMailboxe
 
 ![PowerShell New-ComplianceSearch example.](../media/MigrateLegacyeDiscovery6.png)
 
-## Step 8: Verify the case, hold, and search in the Microsoft 365 compliance center
+## Step 8: Verify the case, hold, and search in the compliance portal
 
-To make sure that everything is set up correctly, go to the Microsoft 365 compliance center at [https://compliance.microsoft.com](https://compliance.microsoft.com), and click **eDiscovery > Core**.
+To make sure that everything is set up correctly, go to the compliance portal at [https://compliance.microsoft.com](https://compliance.microsoft.com), and click **eDiscovery > Core**.
 
-![Microsoft 365 Compliance Center eDiscovery.](../media/MigrateLegacyeDiscovery7.png)
+![Microsoft Purview compliance portal eDiscovery.](../media/MigrateLegacyeDiscovery7.png)
 
-The case that you created in Step 3 is listed on the **Core eDiscovery** page. Open the case and then notice the hold that you created in Step 4 in listed on the **Hold** tab. You can select the hold to see details on the flyout page, including the number of mailboxes the hold is applied to and the distribution status.
+The case that you created in Step 3 is listed on the **eDiscovery (Standard)** page. Open the case and then notice the hold that you created in Step 4 in listed on the **Hold** tab. You can select the hold to see details on the flyout page, including the number of mailboxes the hold is applied to and the distribution status.
 
-![eDiscovery holds in the Microsoft 365 compliance center.](../media/MigrateLegacyeDiscovery8.png)
+![eDiscovery holds in the compliance portal.](../media/MigrateLegacyeDiscovery8.png)
 
 The search that you created in Step 7 is listed on the **Searches** tab of the case.
 
-![eDiscovery case search in the Microsoft 365 compliance center.](../media/MigrateLegacyeDiscovery9.png)
+![eDiscovery case search in the compliance portal.](../media/MigrateLegacyeDiscovery9.png)
 
-If you migrate an In-Place eDiscovery search but don't associate it with an eDiscovery case, it will be listed on the Content search page in the Microsoft 365 compliance center.
+If you migrate an In-Place eDiscovery search but don't associate it with an eDiscovery case, it will be listed on the Content search page in the compliance portal.
 
 ## More information
 
@@ -166,4 +166,4 @@ If you migrate an In-Place eDiscovery search but don't associate it with an eDis
 
   - [Start-ComplianceSearch](/powershell/module/exchange/start-compliancesearch)
 
-- For more information about the Microsoft 365 compliance center, see [Overview of the Microsoft 365 compliance center](microsoft-365-compliance-center.md).
+- For more information about the compliance portal, see [Overview of the Microsoft Purview compliance portal](microsoft-365-compliance-center.md).

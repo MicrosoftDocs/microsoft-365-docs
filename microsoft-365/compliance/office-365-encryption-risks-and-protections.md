@@ -22,6 +22,8 @@ description: In this article, you'll learn about risks to Office 365 and the enc
 
 # Encryption Risks and Protections
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Microsoft follows a control and compliance framework that focuses on risks to the Microsoft 365 service and to customer data. Microsoft implements a large set of technology and process-based methods (referred to as controls) to mitigate these risks. Identification, evaluation, and mitigation of risks via controls is a continuous process. 
 
 The implementation of controls within various layers of our cloud services such as facilities, network, servers, applications, users (such as Microsoft administrators) and data form a defense-in-depth strategy. The key to this strategy is that many different controls are implemented at different layers to protect against the same or similar risk scenarios. This multi-layered approach provides fail-safe protection in case a control fails for some reason.

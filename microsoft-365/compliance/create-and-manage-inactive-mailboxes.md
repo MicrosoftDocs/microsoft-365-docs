@@ -25,6 +25,8 @@ description: "Create and manage inactive mailboxes that retain the contents of d
 
 # Create and manage inactive mailboxes
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Inactive mailboxes let you retain former employees' email after they leave your organization and can be accessed by authorized people who have been granted [eDiscovery permissions](assign-ediscovery-permissions.md) for compliance or legal reasons. For example, administrators, compliance officers, and records managers who can then use Content Search to search and export the contents of an inactive mailbox. Inactive mailboxes can't receive email and aren't displayed in your organization's shared address book or other lists.
 
 For more information about inactive mailboxes, see [Learn about inactive mailboxes](inactive-mailboxes-in-office-365.md).
@@ -57,9 +59,9 @@ The following table summarizes the process of making an inactive mailbox for dif
 
 To view a list of the inactive mailboxes in your organization:
 
-1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> and sign in using the credentials for a Global administrator or a Compliance administrator account in your organization.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> and sign in using the credentials for a Global administrator or a Compliance administrator account in your organization.
 
-2. In the left navigation pane, click **Show all**, and then click **Information governance** > **Retention**.
+2. In the left navigation pane, click **Show all**, and then click **Data lifecycle management** > **Retention**.
 
    ![Click the Inactive Mailbox button on the Retention page.](../media/MCCInactiveMailboxes1.png)
 
@@ -88,7 +90,7 @@ Get-Mailbox -InactiveMailboxOnly | Select Displayname,PrimarySMTPAddress,Disting
   
 ## Search and export the contents of an inactive mailbox
 
-You can access the contents of the inactive mailbox by using the Content Search tool in the Microsoft 365 compliance center. When you search an inactive mailbox, you can create a keyword search query to search for specific items or you can return the entire contents of the inactive mailbox. You can preview the search results or export the search results to an Outlook Data (PST) file or as individual email messages. For step-by-step procedures for searching mailboxes and exporting search results, see the following topics:
+You can access the contents of the inactive mailbox by using the Content Search tool in the Microsoft Purview compliance portal. When you search an inactive mailbox, you can create a keyword search query to search for specific items or you can return the entire contents of the inactive mailbox. You can preview the search results or export the search results to an Outlook Data (PST) file or as individual email messages. For step-by-step procedures for searching mailboxes and exporting search results, see the following topics:
   
 - [Content search](content-search.md)
 

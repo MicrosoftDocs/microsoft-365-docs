@@ -21,9 +21,11 @@ description: "Use sensitivity labels to configure the default sharing link type 
 
 # Use sensitivity labels to configure the default sharing link type for sites and documents in SharePoint and OneDrive
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-As an additional configuration to the settings you see in the Microsoft 365 compliance center for [sensitivity labels](sensitivity-labels.md), you can use these labels to configure settings for the default sharing link type for a SharePoint site or OneDrive account, and for individual documents. These settings are automatically selected, but not highly visible to users when they select the **Share** button in their Office apps. As an example:
+As an additional configuration to the settings you see in the Microsoft Purview compliance portal for [sensitivity labels](sensitivity-labels.md), you can use these labels to configure settings for the default sharing link type for a SharePoint site or OneDrive account, and for individual documents. These settings are automatically selected, but not highly visible to users when they select the **Share** button in their Office apps. As an example:
 
 ![Example default sharing link dialog box.](../media/default-sharing-link-example.png)
 
@@ -54,7 +56,7 @@ To apply the default sharing link type for documents in SharePoint and OneDrive,
 In a PowerShell session, you must [connect to Office 365 Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) to configure the settings for the default sharing link type.
 
 > [!NOTE]
-> Although not required, it's easiest to first [create and configure sensitivity labels in the Microsoft 365 compliance center](create-sensitivity-labels.md), and then modify these labels with the settings that configure the default sharing link type.
+> Although not required, it's easiest to first [create and configure sensitivity labels in the Microsoft Purview compliance portal](create-sensitivity-labels.md), and then modify these labels with the settings that configure the default sharing link type.
 
 ## How to configure settings for the default sharing link type
 
@@ -85,7 +87,7 @@ PowerShell examples, where the sensitivity label GUID is **8faca7b8-8d20-48a3-8e
     Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{DefaultShareLinkPermission="Edit"}
     ````
 
-To configure the settings for the default sharing link type for a site, the [scope of the sensitivity label](sensitivity-labels.md#label-scopes) must include **Groups & sites** when you create the sensitivity label in the Microsoft 365 compliance center. After it's created, you see this displayed as **Site, UnifiedGroup** in the **Scope** column on the **Labels** page, and the PowerShell *ContentType* setting also displays this same value. For documents, the scope must include **Files & emails**, which displays as **File, Email**. Then:
+To configure the settings for the default sharing link type for a site, the [scope of the sensitivity label](sensitivity-labels.md#label-scopes) must include **Groups & sites** when you create the sensitivity label in the Microsoft Purview compliance portal. After it's created, you see this displayed as **Site, UnifiedGroup** in the **Scope** column on the **Labels** page, and the PowerShell *ContentType* setting also displays this same value. For documents, the scope must include **Files & emails**, which displays as **File, Email**. Then:
 
 - When the scope includes **Groups & sites**, you can apply the label to a site, which sets the default sharing link type for that site. For information how to apply a sensitivity label to a site, see [How to apply sensitivity labels to containers](sensitivity-labels-teams-groups-sites.md#how-to-apply-sensitivity-labels-to-containers).
 

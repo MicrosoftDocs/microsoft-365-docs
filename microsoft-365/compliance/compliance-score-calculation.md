@@ -13,11 +13,13 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-description: "Understand how Microsoft Compliance Manager calculates a personalized score based on actions taken to address risks and improve your compliance posture."
+description: "Understand how Microsoft Purview Compliance Manager calculates a personalized score based on actions taken to address risks and improve your compliance posture."
 ms.custom: seo-marvel-apr2020
 ---
 
 # Compliance score calculation
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **In this article:** Learn how Compliance Manager calculates a compliance score for your organization. This article explains how to **interpret your score**, what the **Data Protection Baseline assessment** includes, **continuous monitoring**, and **how different types of actions are managed and scored**.
 
@@ -50,7 +52,7 @@ Because every organization has specific needs, Compliance Manager relies on you 
 
 ## How Compliance Manager continuously assesses controls
 
-Compliance Manager automatically identifies settings in your Microsoft 365 environment that help determine when certain configurations meet improvement action implementation requirements. Compliance Manager detects signals from other compliance solutions you may have deployed, including information governance, information protection, communication compliance, and insider risk management, and also leverages Microsoft Secure Score monitoring of complementary improvement actions.
+Compliance Manager automatically identifies settings in your Microsoft 365 environment that help determine when certain configurations meet improvement action implementation requirements. Compliance Manager detects signals from other compliance solutions you may have deployed, including data lifecycle management, information protection, communication compliance, and insider risk management, and also leverages Microsoft Secure Score monitoring of complementary improvement actions.
 
 Your action status is updated on your dashboard within 24 hours of a change being made. Once you follow a recommendation to implement a control, you’ll typically see the control status updated the next day.
 

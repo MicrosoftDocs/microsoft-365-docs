@@ -14,6 +14,8 @@ description: "Learn about the availability key used to recover lost Customer Key
 
 # Learn about the availability key for Customer Key
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 The availability key is a root key automatically generated and provisioned when you create a data encryption policy. Microsoft 365 stores and protects the availability key. The availability key is functionally like the two root keys that you supply for service encryption with Customer Key. The availability key wraps the keys one tier lower in the key hierarchy. Unlike the keys that you provide and manage in Azure Key Vault, you can't directly access the availability key. Microsoft 365 automated services manage the availability key programatically. These services initiate automated operations that never involve direct access to the availability key.
 
 The primary purpose of the availability key is to provide recovery capability from the unanticipated loss of root keys that you manage. Loss could be a result of mismanagement or malicious action. If you lose control of your root keys, contact Microsoft Support and Microsoft will assist you through the process of recovery using the availability key. You'll use the availability key to migrate to a new Data Encryption Policy with new root keys you provision.
@@ -36,7 +38,7 @@ The availability key provides recovery capability for scenarios in which an exte
 
 In addition to the recovery capability, Exchange Online and Skype for Business use the availability key to ensure data availability during transient, or intermittent operational issues, related to the service accessing root keys. When the service cannot reach either of your Customer Keys in Azure Key Vault due to transient errors, the service automatically uses the availability key. The service NEVER goes directly to the availability key.
 
-Automated systems in Exchange Online and Skype for Business may use the availability key during transient errors to support automated back-end services such as anti-virus, e-discovery, data loss prevention, mailbox moves, and data indexing.
+Automated systems in Exchange Online and Skype for Business may use the availability key during transient errors to support automated back-end services such as anti-virus, e-discovery, Microsoft Purview Data Loss Prevention, mailbox moves, and data indexing.
 
 ### SharePoint Online, OneDrive for Business, and Teams files uses
 
@@ -187,11 +189,11 @@ Microsoft 365 uses the availability key to wrap the tier of keys lower in the ke
 
 ### Encryption ciphers used to encrypt keys for Exchange Online and Skype for Business
 
-![Encryption ciphers for Exchange Online Customer Key](../media/customerkeyencryptionhierarchiesexchangeskype.png)
+![Encryption ciphers for Exchange Online in Customer Key](../media/customerkeyencryptionhierarchiesexchangeskype.png)
 
 ### Encryption ciphers used to encrypt keys for SharePoint Online and OneDrive for Business
 
-![Encryption ciphers for SharePoint Online Customer Key](../media/customerkeyencryptionhierarchiessharepointonedriveteamsfiles.png)
+![Encryption ciphers for SharePoint Online in Customer Key](../media/customerkeyencryptionhierarchiessharepointonedriveteamsfiles.png)
 
 ## Related articles
 

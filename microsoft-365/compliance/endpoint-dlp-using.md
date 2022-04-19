@@ -17,17 +17,19 @@ ms.collection:
 - SPO_Content
 search.appverid: 
 - MET150
-description: "Learn how to configure data loss prevention (DLP) policies to use Microsoft 365 Endpoint data loss prevention (EPDLP) locations."
+description: "Learn how to configure data loss prevention (DLP) policies to use Endpoint data loss prevention (EPDLP) locations."
 ---
 
 # Using Endpoint data loss prevention
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 To help familiarize you with Endpoint DLP features and how they surface in DLP policies, we've put together some scenarios for you to follow.
 
 > [!IMPORTANT]
 > These Endpoint DLP scenarios are not the official procedures for creating and tuning DLP policies. Refer to the below topics when you need to work with DLP policies in general situations:
 >
->- [Learn about data loss prevention](dlp-learn-about-dlp.md)
+>- [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md)
 >- [Get started with the default DLP policy](get-started-with-the-default-dlp-policy.md)
 >- [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md)
 >- [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
@@ -252,7 +254,7 @@ This configuration will help ensure your data remains safe while also avoiding u
 - [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
 - [Get started with Activity explorer](data-classification-activity-explorer.md)
 - [Microsoft Defender for Endpoint](/windows/security/threat-protection/)
-- [Onboard Windows 10 and Windows 11 devices into Microsoft 365 overview](/microsoft-365/compliance/device-onboarding-overview)
+- [Onboard Windows 10 and Windows 11 devices into Microsoft Purview overview](/microsoft-365/compliance/device-onboarding-overview)
 - [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
 - [Azure Active Directory (AAD) joined](/azure/active-directory/devices/concept-azure-ad-join)
 - [Download the new Microsoft Edge based on Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)

@@ -20,6 +20,8 @@ ms.custom: seo-marvel-apr2020
 ---
 # Manage custom sensitive information types in the Compliance center
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 This article walks you through the steps to modify and remove an existing custom sensitive information type in the Compliance center.
 
 ## Modify custom sensitive information types in the Compliance Center

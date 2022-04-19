@@ -20,12 +20,14 @@ description: "Learn how named entities help you detect sensitive items containin
 
 # Learn about named entities (preview)
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 > [!IMPORTANT]
 > The named entities feature is rolling out and will appear in your tenant when it is available to you. Check for them in content explorer and in the data loss prevention (DLP) policy authoring flow. 
 
 *Named entities* are [sensitive information types](sensitive-information-type-learn-about.md) (SIT). They're complex dictionary and pattern-based classifiers that you can use to detect person names, physical addresses, and medical terms and conditions. You can see them in the **Compliance Center > Data classification > Sensitive info types**. Here is a partial list of where you can use SITs:
 
-- [Data loss prevention policies (DLP)](dlp-learn-about-dlp.md) 
+- [Microsoft Purview Data Loss Prevention policies (DLP)](dlp-learn-about-dlp.md) 
 - [Sensitivity labels](sensitivity-labels.md)
 - [Insider risk management](insider-risk-management-solution-overview.md)
 - [Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security)
@@ -58,7 +60,7 @@ Here are some examples of named entity SITs. You can find all 52 of them in the 
 
 ## Examples of enhanced DLP policies
 
-Here are some examples of enhanced DLP policies that use named entity SITs. You can find all 10 of them in the **Compliance Center > Data loss prevention > Create policy**. Enhanced templates can be used in DLP and auto-labeling.
+Here are some examples of enhanced DLP policies that use named entity SITs. You can find all 10 of them in the **Microsoft Purview compliance portal > Data loss prevention > Create policy**. Enhanced templates can be used in DLP and auto-labeling.
 
 |Policy category  |Template  |Description  |
 |---------|---------|---------|

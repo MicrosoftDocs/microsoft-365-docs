@@ -1,6 +1,7 @@
 ---
 title: "Information barriers attributes"
-description: This article is a reference for the Azure Active Directory user account attributes that you can use to define information barrier segments.
+description: This article is a reference for the Azure Active Directory user account attributes that you can use to define information barriers segments.
+keywords: Microsoft 365, Microsoft Purview, compliance, information barriers
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -16,6 +17,8 @@ ms.custom: seo-marvel-apr2020
 ---
 
 # Information barriers attributes
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Certain attributes in Azure Active Directory can be used to segment users. Once segments are defined, those segments can be used as filters for information barrier policies. For example, you might use **Department** to define segments of users by department within your organization (assuming no single employee works for two departments at the same time).
 

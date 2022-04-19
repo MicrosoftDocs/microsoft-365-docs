@@ -22,6 +22,8 @@ description: "Activity explorer lets you see and filter on the actions users are
 
 # Get started with activity explorer
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 The [data classification overview](data-classification-overview.md) and [content explorer](data-classification-content-explorer.md) tabs give you visibility into what content has been discovered and labeled, and where that content is. Activity explorer rounds out this suite of functionality by allowing you to monitor what's being done with your labeled content. Activity explorer provides a historical view of activities on your labeled content. The activity information is collected from the Microsoft 365 unified audit logs, transformed, and made available in the Activity explorer UI. Activity explorer reports on up to 30 days worth of data.
 
 ![placeholder screenshot overview activity explorer.](../media/data-classification-activity-explorer-1.png)
@@ -58,14 +60,14 @@ An account must be explicitly assigned membership in any one of these role group
 
 There are roles and role groups in preview that you can test out to fine-tune your access controls.
 
-Here's a list of Microsoft Information Protection (MIP) roles that are in preview. To learn more about them, see [Roles in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+Here's a list of applicable roles that are in preview. To learn more about them, see [Roles in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
 
 - Information Protection Admin
 - Information Protection Analyst
 - Information Protection Investigator
 - Information Protection Reader
 
-Here's a list of MIP role groups that are in preview. To learn more about the, see [Role groups in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+Here's a list of applicable role groups that are in preview. To learn more about the, see [Role groups in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
 
 - Information Protection
 - Information Protection Admins
@@ -120,7 +122,7 @@ Activity explorer also gathers **DLP policy matches** events from Exchange Onlin
 - Copied to network share
 - Accessed by unallowed app 
 
-Understanding what actions are being taken with your sensitive labeled content helps you see if the controls that you have in place, such as [data loss prevention](dlp-learn-about-dlp.md) policies are effective or not. If not, or if you discover something unexpected, such as a large number of items that are labeled `highly confidential` and are downgraded `general`, you can manage your various policies and take new actions to restrict the undesired behavior.
+Understanding what actions are being taken with your sensitive labeled content helps you see if the controls that you have in place, such as [Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md) policies are effective or not. If not, or if you discover something unexpected, such as a large number of items that are labeled `highly confidential` and are downgraded `general`, you can manage your various policies and take new actions to restrict the undesired behavior.
 
 > [!NOTE]
 > Activity explorer doesn't currently monitor retention activities for Exchange Online.

@@ -1,5 +1,5 @@
 ---
-title: "Choose MIP built-in labeling for Office apps"
+title: "Choose Microsoft Purview Information Protection built-in labeling for Office apps over the Azure Information Protection (AIP) add-in"
 f1.keywords:
 - CSH
 ms.author: cabailey
@@ -19,15 +19,17 @@ search.appverid:
 description: When you use the Azure Information Protection (AIP) unified labeling client, understand the advantages of using built-in labeling for Office apps rather than the AIP add-in.
 ---
 
-# Why choose MIP built-in labeling over the AIP add-in for Office apps
+# Why choose built-in labeling over the AIP add-in for Office apps
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 When you use [sensitivity labels](sensitivity-labels.md) in Microsoft 365 Apps on Windows computers, you have a choice of using labeling that's built into Office apps, or an add-in from the [Azure Information Protection (AIP) unified labeling client](/azure/information-protection/rms-client/aip-clientv2). 
 
-Built-in labeling forms the cornerstone of a [Microsoft Information Protection (MIP) deployment](information-protection-solution.md) because this labeling technology extends across platforms (Windows, macOS, iOS, Android, and web), as well as across Microsoft apps and services, and beyond. Built-in labeling is also designed to work with other MIP capabilities, such as data classification and data loss prevention (DLP).
+Built-in labeling forms the cornerstone of a [Microsoft Purview information protection deployment](information-protection-solution.md) because this labeling technology extends across platforms (Windows, macOS, iOS, Android, and web), as well as across Microsoft apps and services, and beyond. Built-in labeling is also designed to work with other Microsoft Purview capabilities, such as data classification and Microsoft Purview data loss prevention (DLP).
 
-Because built-in labels don't use an Office add-in, they benefit from more stability and better performance. They also support the latest MIP features, such as advanced classifiers.
+Because built-in labels don't use an Office add-in, they benefit from more stability and better performance. They also support the latest Microsoft Purview features, such as advanced classifiers.
 
 By default, built-in labeling is turned off in Office for Windows apps when the AIP client is installed. You can change this default behavior by using the instructions in the following section, [How to disable the AIP add-in to use built-in labeling for Office apps](#how-to-disable-the-aip-add-in-to-use-built-in-labeling-for-office-apps).
 
@@ -79,7 +81,7 @@ Example showing how users can review and optionally remove identified sensitive 
 
 ![Credit card numbers identified to users as sensitivity content with an option to remove.](../media/detect-sensitive-content.png)
 
-To keep informed when new labeling capabilities become available for built-in labeling, see [What's new in Microsoft 365 compliance](whats-new.md) and the **Sensitivity labels** sections.
+To keep informed when new labeling capabilities become available for built-in labeling, see [What's new in Microsoft Purview](whats-new.md) and the **Sensitivity labels** sections.
 
 ## How to disable the AIP add-in to use built-in labeling for Office apps
 
@@ -152,7 +154,7 @@ Use the following information to help you identify if you're using a feature fro
 
 The AIP client supports many customizations by using [PowerShell advanced settings](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#configuring-advanced-settings-for-the-client-via-powershell). Some of these advanced settings are now supported by built-in labeling, as documented in [New-Label](/powershell/module/exchange/new-label) or [Set-Label](/powershell/module/exchange/set-label), and [New-LabelPolicy](/powershell/module/exchange/new-labelpolicy) or [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy).
 
-However, you might find you don't need to use PowerShell to configure the supported settings because they're included in the standard configuration from the Microsoft 365 compliance center. For example, the ability to turn off mandatory labeling for Outlook and set a different default label.
+However, you might find you don't need to use PowerShell to configure the supported settings because they're included in the standard configuration from the Microsoft Purview compliance portal. For example, the ability to turn off mandatory labeling for Outlook and set a different default label.
 
 The following configurations from the AIP add-in aren't yet supported by built-in labeling include:
 
@@ -175,4 +177,4 @@ Although new capabilities for built-in labeling are being added all the time, th
 For instructions to create and configure these labeling capabilities, see [Create and configure sensitivity labels and their policies](create-sensitivity-labels.md).
 
 > [!TIP]
-> If you already have sensitivity labels in the Microsoft 365 compliance center, you won't be eligible for the automatic creation of default labels. However, you might still find it useful to reference their configuration: [Default sensitivity labels](mip-easy-trials.md#default-sensitivity-labels). 
+> If you already have sensitivity labels in the Microsoft Purview compliance portal, you won't be eligible for the automatic creation of default labels. However, you might still find it useful to reference their configuration: [Default sensitivity labels](mip-easy-trials.md#default-sensitivity-labels). 

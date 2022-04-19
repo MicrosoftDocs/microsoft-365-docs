@@ -1,5 +1,5 @@
 ---
-title: "Quick tasks for getting started with Microsoft 365 compliance"
+title: "Quick tasks for getting started with Microsoft Purview"
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -18,17 +18,19 @@ ms.localizationpriority: medium
 description: "Learn about tasks that will help you quickly get started with compliance in Microsoft 365."
 ---
 
-# Quick tasks for getting started with Microsoft 365 compliance
+# Quick tasks for getting started with Microsoft Purview
 
-If you're new to Microsoft 365 compliance and wondering where to start, this article provides guidance on the basics and prioritizes important compliance tasks. This article will help you quickly get started with managing and monitoring your data, protecting information, and minimizing insider risks.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+If you're new to Microsoft Purview and wondering where to start, this article provides guidance on the basics and prioritizes important compliance tasks. This article will help you quickly get started with managing and monitoring your data, protecting information, and minimizing insider risks.
 
 This article is also helpful if you're figuring out how best to manage risks, protect your data, and remain compliant with regulations and standards with a newly remote workforce. Employees are now collaborating and connecting with each other in new ways, and this means your existing compliance processes and controls may need to adapt. Identifying and managing these new compliance risks within your organization is critical to safeguarding your data and minimizing threats and risks.
 
-After you’ve completed these basic compliance tasks, consider expanding compliance coverage in your organization by implementing additional Microsoft 365 compliance solutions.
+After you’ve completed these basic compliance tasks, consider expanding compliance coverage in your organization by implementing additional Microsoft Purview solutions.
 
 ## Task 1: Configure compliance permissions
 
-It’s important to manage who in your organization has access to the Microsoft 365 compliance center to view content and perform management tasks. Microsoft 365 provides administrative roles specific to compliance and for using the tools included in the Microsoft 365 compliance center.
+It’s important to manage who in your organization has access to the Microsoft Purview compliance portal to view content and perform management tasks. Microsoft 365 provides administrative roles specific to compliance and for using the tools included in the Microsoft Purview compliance portal.
 
 Start by assigning compliance permissions to the people in your organization so that they can perform these tasks and to prevent unauthorized people from having access to areas outside of their responsibilities. You’ll want to make sure that you’ve assigned the proper people to the **Compliance data administrator** and the **Compliance administrator** admin roles before you start to configure and implement compliance solutions included with Microsoft 365. You’ll also need to assign users to the Azure Active Directory global reader role to view data in Compliance Manager.
 
@@ -38,7 +40,7 @@ For step-by-step guidance to configure permissions and assign people to admin ro
 
 It’s difficult to know where to go if you don’t know where you are. Meeting your compliance needs includes understanding your current level of risk and what updates may be needed in these ever changing times. Whether your organization is new to compliance requirements or has deep experience with standards and regulations that govern your industry, the single best thing you can do to improve compliance is to understand where your organization stands.
 
-[Microsoft Compliance Manager](compliance-manager.md) can help you understand your organization's compliance posture and highlight areas that may need improvement. Compliance Manager uses a centralized dashboard to calculate a risk-based score, measuring your progress in completing actions that help reduce risks around data protection and regulatory standards. You can also use Compliance Manager as a tool to track all your risk assessments. It provides workflow capabilities to help you efficiently complete your risk assessments through a common tool.
+[Microsoft Purview Compliance Manager](compliance-manager.md) can help you understand your organization's compliance posture and highlight areas that may need improvement. Compliance Manager uses a centralized dashboard to calculate a risk-based score, measuring your progress in completing actions that help reduce risks around data protection and regulatory standards. You can also use Compliance Manager as a tool to track all your risk assessments. It provides workflow capabilities to help you efficiently complete your risk assessments through a common tool.
 
 For step-by-step guidance to get started with Compliance Manager, see [Get started with Compliance Manager](compliance-manager-setup.md).
 
@@ -82,7 +84,7 @@ When content is subject to a retention policy, people can continue to edit and w
 
 You can quickly put retention policies in place for multiple services in your Microsoft 365 environment that include Teams and Yammer messages, Exchange mail, SharePoint sites, and OneDrive accounts. There are no limits to the number of users, mailboxes or sites that a retention policy can automatically include. But if you need to get more selective, you can do so by configuring either an adaptive scope that's query-based to dynamically target specific instances, or a static scope that specifies specific instances to always include or always exclude.
 
-For step-by-step guidance to configure retention policies, see [Create and configure retention policies](create-retention-policies.md). Because retention policies form the cornerstone of an information governance strategy for Microsoft 365, see [Get started with information governance](get-started-with-information-governance.md).
+For step-by-step guidance to configure retention policies, see [Create and configure retention policies](create-retention-policies.md). Because retention policies form the cornerstone of a data lifecycle management strategy for Microsoft 365 apps and services, also see [Get started with data lifecycle management](get-started-with-information-governance.md).
 
 ## Task 7: Configure sensitive information and offensive language policies
 
@@ -130,9 +132,9 @@ Now that you’ve configured the basics for compliance management for your organ
 
 Whereas retention policies automatically apply to all items at the container level (such as SharePoint sites, user mailboxes, and so on), [retention labels](retention.md#retention-labels) apply to individual items, such as a SharePoint document or an email message. You can apply these labels manually or automatically.
 
-Retention labels can be used as part of your governance information strategy to retain what you need and delete what you don't. Use these labels when you need exceptions to your retention policies when specific documents or emails need different retention or deletion settings. For example, your SharePoint policy retains all documents for three years, but specific business documents must be retained for five years. For more information, see [Create retention labels for exceptions to your retention policies](create-retention-labels-information-governance.md).
+Retention labels can be used as part of your data governance strategy to retain what you need and delete what you don't. Use these labels when you need exceptions to your retention policies when specific documents or emails need different retention or deletion settings. For example, your SharePoint policy retains all documents for three years, but specific business documents must be retained for five years. For more information, see [Create retention labels for exceptions to your retention policies](create-retention-labels-information-governance.md).
 
-However, retention labels, when used with [records management](records-management.md), provide many more management options to support the full lifecycle of documents and emails. This level of data management is well-suited to high-value items for business, legal, or regulatory record-keeping requirements. For more information, see [Get started with records management](get-started-with-records-management.md).
+However, retention labels, when used with [records management](records-management.md), provide many more management options to support documents and emails at the item level. This level of data management is well-suited to high-value items for business, legal, or regulatory record-keeping requirements. For more information, see [Get started with records management](get-started-with-records-management.md).
 
 ### Identify and define sensitive information types
 
@@ -142,7 +144,7 @@ For step-by-step guidance to define custom sensitive information types, see [Cre
 
 ### Prevent data loss
 
-[Data loss prevention (DLP) policies](dlp-learn-about-dlp.md) allow you to identify, monitor, and automatically protect sensitive information across your Microsoft 365 organization. Use DLP policies to identify sensitive items across Microsoft services, prevent the accidental sharing of sensitive items, and help users learn how to stay compliant without interrupting their workflow.
+[Microsoft Purview Data Loss Prevention (DLP) policies](dlp-learn-about-dlp.md) allow you to identify, monitor, and automatically protect sensitive information across your Microsoft 365 organization. Use DLP policies to identify sensitive items across Microsoft services, prevent the accidental sharing of sensitive items, and help users learn how to stay compliant without interrupting their workflow.
 
 For step-by-step guidance to configure DLP policies, [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md). For data loss management licensing information, see [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#office-365-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business).
 
@@ -150,6 +152,6 @@ For step-by-step guidance to configure DLP policies, [Create, test, and tune a D
 
 More and more, employees have increasing access to create, manage, and share data across a broad spectrum of platforms and services. In most cases, organizations have limited resources and tools to identify and mitigate organization-wide risks while also meeting compliance requirements and employee privacy standards. These risks may include data theft by departing employees and data leaks of information outside your organization by accidental oversharing or malicious intent.
 
-[Insider risk management](insider-risk-management-policies.md) in Microsoft 365 uses the full breadth of service and 3rd-party indicators to help you quickly identify, triage, and act on risky user activity. By using logs from Microsoft 365 and Microsoft Graph, insider risk management allows you to define specific policies to identify risk indicators and to take action to mitigate these risks.
+[Insider risk management](insider-risk-management-policies.md) uses the full breadth of service and 3rd-party indicators to help you quickly identify, triage, and act on risky user activity. By using logs from Microsoft 365 and Microsoft Graph, insider risk management allows you to define specific policies to identify risk indicators and to take action to mitigate these risks.
 
 For step-by-step guidance to plan and configure insider risk management policies, see [Plan for insider risk management](insider-risk-management-plan.md) and [Get started with insider risk management](insider-risk-management-configure.md). For insider risk management licensing information, see [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#insider-risk-management).
