@@ -102,13 +102,13 @@ Recommended Zero Trust capabilities for protecting identities and devices that a
 --> 
 <a name="BKMK_ediscovery"></a>
 
-## Advanced eDiscovery architecture in Microsoft 365
+## eDiscovery (Premium) architecture in Microsoft 365
 
-Advanced eDiscovery end-to-end workflow and data flow, including within Microsoft 365 Multi-Geo environments.
+eDiscovery (Premium) end-to-end workflow and data flow, including within Microsoft 365 Multi-Geo environments.
 
 | Item | Description |
 |:-----|:-----|
-|[![Model poster: Advanced eDiscovery Architecture in Microsoft 365.](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) <br/> [View as an image](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) \| [Download as a PDF](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf)  \| [Download as a Visio](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx) <br/> Updated October 2020|Includes: <ul><li>  End-to-end workflow in a single environment</li><li>End-to-end workflow in a Microsoft 365 Multi-Geo environment </li><li>End-to-end data flow supporting the EDRM workflow</li> |
+|[![Model poster: eDiscovery (Premium) Architecture in Microsoft 365.](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) <br/> [View as an image](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) \| [Download as a PDF](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf)  \| [Download as a Visio](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx) <br/> Updated October 2020|Includes: <ul><li>  End-to-end workflow in a single environment</li><li>End-to-end workflow in a Microsoft 365 Multi-Geo environment </li><li>End-to-end data flow supporting the EDRM workflow</li> |
 
 ## Microsoft Telephony Solutions
 
