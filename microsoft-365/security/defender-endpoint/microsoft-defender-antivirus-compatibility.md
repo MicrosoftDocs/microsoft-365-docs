@@ -14,7 +14,7 @@ ms.custom: nextgen
 ms.reviewer: mkaminska, pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 04/14/2022
+ms.date: 04/19/2022
 ms.collection: 
 - M365-security-compliance
 - m365initiative-defender-endpoint
