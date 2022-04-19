@@ -50,17 +50,21 @@ If you change your mind about seeing this option in the retention label wizard, 
 
 ## Configuring retention labels to declare records
 
-When you create a retention label from the **Records Management** solution in the Microsoft 365 compliance center, you have the option to mark items as a record. If you ran the PowerShell command from the previous section, you can alternatively mark items as a regulatory record.
+When you create a retention label from the **Records Management** solution in the Microsoft 365 compliance center, you can select the option **Mark items as a record**. Then, as an additional option that's currently rolling out in preview, unlock the record by default for SharePoint and OneDrive.
+
+The additional option of **Unlock this record by default** effectively lets users declare records themselves because they lock the record when they have finished editing the content. For more information about this supported scenario, see [Use record versioning to update records stored in SharePoint or OneDrive](record-versioning.md).
+
+If you ran the PowerShell command from the previous section, you can alternatively mark items as a regulatory record.
 
 For example:
 
-![Configure a retention label to mark content as a record or regulatory.](../media/recordversioning6.png)
+![Configure a retention label to mark content as a record or regulatory.](../media/declare-records.png)
 
 Using this retention label, you can now apply it to SharePoint or OneDrive documents and Exchange emails, as needed.
 
 For full instructions:
 
-- [Create retention labels and apply them in apps](create-apply-retention-labels.md)
+- [Publish retention labels and apply them in apps](create-apply-retention-labels.md)
 
 - [Apply a retention label to content automatically](apply-retention-labels-automatically.md) (not supported for regulatory records)
 

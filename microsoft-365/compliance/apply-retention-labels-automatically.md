@@ -234,7 +234,7 @@ The following query contains typical keywords to help identify documents or emai
 (resume AND staff AND employee AND salary AND recruitment AND candidate)
 ```
 
-Note that this final example uses the best practice of always including  operators between keywords. A space between keywords (or two property:value expressions) is the same as using AND. By always adding operators, it's easier to see that this example query will identify only content that contains all these keywords, instead of content that contains any of the keywords. If your intention is to identify content that contains any of the keywords, specify OR instead of AND. As this example shows, when you always specify the operators, it's easier to correctly interpret the query. 
+Note that this final example uses the best practice of always including  operators between keywords. A space between keywords (or two property:value expressions) is the same as using AND. By always adding operators, it's easier to see that this example query will identify only content that contains all these keywords, instead of content that contains any of the keywords. If your intention is to identify content that contains any of the keywords, specify OR instead of AND. As this example shows, when you always specify the operators, it's easier to correctly interpret the query. 
 
 ##### Microsoft Teams meeting recordings
 

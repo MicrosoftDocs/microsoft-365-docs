@@ -60,7 +60,7 @@ The certificate information used by Exchange Online is described in the followin
   
 | Attribute | Value |
 |:-----|:-----|
-|Certificate authority root issuer|DigiCert CA – 1|
+|Certificate authority root issuer|DigiCert CA - 1|
 |Certificate name|mail.protection.outlook.com|
 |Organization|Microsoft Corporation|
 |Organization unit|www.digicert.com|

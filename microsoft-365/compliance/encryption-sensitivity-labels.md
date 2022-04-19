@@ -190,7 +190,7 @@ When you assign permissions, you can choose:
 
 - Any specific user or email-enabled security group, distribution group, or Microsoft 365 group ([formerly Office 365 group](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) in Azure AD. The Microsoft 365 group can have static or [dynamic membership](/azure/active-directory/users-groups-roles/groups-create-rule). Note that you can't use a [dynamic distribution group from Exchange](/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups) because this group type isn't synchronized to Azure AD, and you can't use a security group that isn't email-enabled.
     
-    Within a specified group that's supported for this option, each [user will be individually authenticated](/azure/information-protection/prepare#azure-information-protection-requirements-for-user-accounts) by the Azure Information Protection service before they can open the encrypted content.
+    Although you can specify groups that contain mail contacts as a convenient method to grant access to multiple people outside your organization, there's currently a known issue with this configuration. For more information, see [Mail contacts in groups have intermittent access to encrypted content](/office365/troubleshoot/sensitivity-labels/mail-contacts-lose-access-encrypted-content).
 
 - Any email address or domain. Use this option to specify all users in another organization who uses Azure AD, by entering any domain name from that organization. You can also use this option for social providers, by entering their domain name such as **gmail.com**, **hotmail.com**, or **outlook.com**.
 

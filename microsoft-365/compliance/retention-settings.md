@@ -28,7 +28,7 @@ Many settings for retention are common to both retention policies and retention 
 For the scenarios that support these policies for retention, see:
 
 - [Create and configure retention policies](create-retention-policies.md).
-- [Create retention labels and apply them in apps](create-apply-retention-labels.md)
+- [Publish retention labels and apply them in apps](create-apply-retention-labels.md)
 - [Apply a retention label to content automatically](apply-retention-labels-automatically.md)
 
 Settings that are specific to each scenario are explained in their respective documentation.
@@ -336,16 +336,30 @@ Be aware that **Conversation History**, a folder in Outlook, is a feature that h
 By choosing the settings for retaining and deleting content, your policy for retention will have one of the following configurations for a specified period of time:
 
 - Retain-only
-
-    For this configuration, choose **Retain items for a specific period** and **At end of the retention period: Do nothing**. Or, select **Retain items forever**.
+    
+    For this configuration, choose the following options:
+    
+    - For retention policies: On the **Decide if you want to retain content, delete it, or both** page, select **Retain items for a specific period**, specify the retention period and then for **At end of the retention period** select **Do nothing** for the retention settings to be removed.  Or to retain without an end date, select **Retain items forever** on this page.
+    
+    - For retention labels: On the **Define label settings page**, select **Retain items indefinitely or for a specific period**, and then:
+        - For the retention settings to no longer be in effect on the labeled content after a specific time: On the **Define the retention period** page, for **Retain items for**, specify the time period. Then on the **Choose what happens after the retention period** page, select **Deactivate retention settings**. The label remains on the content but with no restrictions, as if it's a [label that just classifies](retention.md#classifying-content-without-applying-any-actions).
+        - To retain without an end date: On the **Define the retention period** page, for **Retain items for**, select **An indefinite period**. The label remains on the content with any [existing restrictions](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked ).
 
 - Retain and then delete
 
-    For this configuration, choose **Retain items for a specific period** and **At end of the retention period: Delete items automatically**.
+    For this configuration, choose the following options:
+    
+    - For retention policies: On the **Decide if you want to retain content, delete it, or both** page, select **Retain items for a specific period**, specify the retention period and then for **At end of the retention period** select **Delete items automatically**.
+    
+    - For retention labels: On the **Define label settings** page, select **Retain items indefinitely or for a specific period**, specify the retention period and then for **Choose what happens after the retention period**, select either **Delete items automatically** or **Start a disposition review**. For information about disposition reviews, see [Disposition review](disposition.md#disposition-reviews).
 
 - Delete-only
 
-    For this configuration, choose **Only delete items when they reach a certain age**.
+    For this configuration, choose the following options:
+    
+    - For retention policies: On the **Decide if you want to retain content, delete it, or both** page, select **Only delete items when they reach a certain age**, and specify the time period.
+    
+    - For retention labels: On the **Define label settings** page, select **Enforce actions after a specific period** and specify the time period, still referred to as the retention period. The option **Choose what happens after the period** is automatically set to **Delete items automatically**.
 
 ### Retaining content for a specific period of time
 
@@ -359,7 +373,7 @@ Examples:
 
 - Exchange: If you want to retain items in a mailbox for seven years, and a message was sent six years ago, the message will be retained for only one year. For Exchange items, the age is based on the date received for incoming email, or the date sent for outgoing email. Retaining items based on when it was last modified applies only to site content in OneDrive and SharePoint.
 
-At the end of the retention period, you choose whether you want the content to be permanently deleted:
+At the end of the retention period, you choose whether you want the content to be permanently deleted. For example, for retention polices:
 
 ![Retention settings page.](../media/b05f84e5-fc71-4717-8f7b-d06a29dc4f29.png)
 
@@ -373,11 +387,11 @@ Before you configure retention, first familiarize yourself with capacity and sto
 
 ### Deleting content that's older than a specific age
 
-A policy for retention can retain and then delete items, or delete old items without retaining them.
+Retention settings can retain and then delete items, or delete old items without retaining them.
 
-In both cases, if your policy deletes items, it's important to understand that the time period you specify is not calculated from the time the policy was assigned, but according to the start of the retention period specified. For example, from the time when the item was created or modified, or labeled.
+In both cases, if your retention settings delete items, it's important to understand that the time period you specify is not calculated from the time the policy was assigned, but according to the start of the retention period specified. For example, from the time when the item was created or modified, or labeled.
 
-For this reason, first consider the age of the existing content and how the policy may impact that content. You might also want to communicate the new policy to your users before assigning it, to give them time to assess the possible impact.
+For this reason, first consider the age of the existing content and how the settings might impact that content. Consider communicating your chosen settings to your users and help desk before the settings are applied to content, which gives them time to assess the possible impact.
 
 ### A policy that applies to entire locations
 

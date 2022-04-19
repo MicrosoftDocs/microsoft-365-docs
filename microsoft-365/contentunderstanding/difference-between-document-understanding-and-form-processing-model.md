@@ -81,7 +81,8 @@ Use the following table to understand when to use forms processing and when to u
 | Capacity | Uses the default Power Platform environment (custom environments with Dataverse database supported). | Does not have capacity restrictions.|
 | Supported languages| Language support for more [73 languages](/power-platform-release-plan/2021wave2/ai-builder/form-processing-new-language-support). | Models work on all Latin alphabet languages. In addition to English: German, Swedish, French, Spanish, Italian, and Portuguese.|
 
-## See Also
+
+## See also
 
 [Training: Improve business performance with AI Builder](/learn/paths/improve-business-performance-ai-builder/?source=learn)
 

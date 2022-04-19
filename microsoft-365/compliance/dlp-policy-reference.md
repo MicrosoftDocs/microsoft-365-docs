@@ -182,7 +182,7 @@ For example, you might have a DLP policy that helps you detect the presence of i
 
 Priority for rules on endpoints is also assigned according to the order in which it's created. That means, the rule created first has first priority, the rule created second has second priority, and so on. 
 
-When a file on an endpoint matches multiple DLP policies, the first rule that's enabled with most restrictive enforcement on the [endpoint activities](../endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on) is the one that gets enforced on the content. For example, if content matches all of the following rules, then rule 2 takes precedence over the other rules since its the most restrictive.
+When a file on an endpoint matches multiple DLP policies, the first rule that's enabled with most restrictive enforcement on the [endpoint activities](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on) is the one that gets enforced on the content. For example, if content matches all of the following rules, then rule 2 takes precedence over the other rules since its the most restrictive.
 
 - Rule 1: only audits all activity 
 - *Rule 2: blocks all activity*
@@ -196,8 +196,6 @@ In the below example, Rule 1 takes precedence over the other matching rules sinc
 - Rule 4: no enforcement
 
 All the other rules are evaluated but their actions are not enforced. Audit logs will show the most restrictive rule applied on the file. If there is more than one rule that matches and they are equally restrictive, then policy and rule priority governs which rule would be applied on the file.
-
-For endpoints, you can configuring the actions that DLP takes for all supported activities in a single rule for a particular set of inclusion conditions.
 
 ### Conditions
 
