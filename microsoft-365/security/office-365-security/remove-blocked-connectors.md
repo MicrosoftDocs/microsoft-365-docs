@@ -32,7 +32,7 @@ If an inbound connector is detected as potentially compromised, it is restricted
 
 > Your message couldn’t be delivered. The most common reason for this is that your organization’s email connector is suspected of sending spam or phish and it’s no
 > longer allowed to send email. Contact your email admin for assistance. 
-> Remote Server returned ‘550;5.7.711 Access denied, bad inbound connector. AS(2204).” 
+> Remote Server returned '550;5.7.711 Access denied, bad inbound connector. AS(2204).' 
 
 Admins can remove connectors from the Restricted entities page in Microsoft 365 Defender or in Exchange Online PowerShell. 
 
