@@ -6859,6 +6859,7 @@
       "source_path": "microsoft-365/admin/devices/create-and-edit-autopilot-profiles.md",
       "redirect_url": "/microsoft-365/business-premium/create-and-edit-autopilot-profiles",
       "redirect_document_id": false
+    },
     {
       "source_path": "microsoft-365/compliance/manage-information-governance.md",
       "redirect_url": "/microsoft-365/compliance/manage-data-governance",
