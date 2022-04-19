@@ -1,5 +1,5 @@
 ---
-title: "Configure endpoint data loss prevention settings"
+title: "Configure endpoint DLP settings"
 f1.keywords:
 - CSH
 ms.author: chrfox

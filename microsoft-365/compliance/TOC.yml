@@ -673,7 +673,7 @@
           href: disposition.md
 - name: Manage eDiscovery
   items:
-    - name: Microsoft 365 eDiscovery solutions
+    - name: Microsoft Purview eDiscovery solutions
       href: ediscovery.md
     - name: Content search
       items:
@@ -742,9 +742,9 @@
             href: create-report-on-and-delete-multiple-content-searches.md
           - name: Clone a search
             href: clone-a-content-search.md
-    - name: Core eDiscovery
+    - name: eDiscovery (Standard)
       items:
-        - name: Get started with Core eDiscovery
+        - name: Get started with eDiscovery (Standard)
           href: get-started-core-ediscovery.md
         - name: Create eDiscovery holds
           href: create-ediscovery-holds.md
@@ -754,7 +754,7 @@
           href: export-content-in-core-ediscovery.md
         - name: Close, reopen, and delete a case
           href: close-reopen-delete-core-ediscovery-cases.md
-        - name: Core eDiscovery reference
+        - name: eDiscovery (Standard) reference
           items:
           - name: eDiscovery search limits
             href: limits-for-content-search.md
@@ -800,19 +800,19 @@
             href: configure-edge-to-export-search-results.md
           - name: Search for eDiscovery activities in the audit log
             href: search-for-ediscovery-activities-in-the-audit-log.md
-    - name: Advanced eDiscovery
+    - name: eDiscovery (Premium)
       items:
         - name: Overview
           href: overview-ediscovery-20.md
-        - name: Set up Advanced eDiscovery
+        - name: Set up eDiscovery (Premium)
           href: get-started-with-advanced-ediscovery.md
-        - name: Create Advanced eDiscovery cases
+        - name: Create eDiscovery (Premium) cases
           items:
             - name: Create and manage a case
               href: create-and-manage-advanced-ediscoveryv2-case.md
             - name: Use the new case format
               href: advanced-ediscovery-new-case-format.md
-        - name: Advanced eDiscovery workflow for Teams content
+        - name: eDiscovery (Premium) workflow for Teams content
           href: teams-workflow-in-advanced-ediscovery.md
         - name: Manage custodians and non-custodial data sources
           href: managing-custodians.md
@@ -933,9 +933,9 @@
               href: add-or-remove-members-from-a-case-in-advanced-ediscovery.md
             - name: Configure search and analytics settings
               href: configure-search-and-analytics-settings-in-advanced-ediscovery.md
-        - name: Advanced eDiscovery reference
+        - name: eDiscovery (Premium) reference
           items:
-            - name: Advanced eDiscovery limits
+            - name: eDiscovery (Premium) limits
               href: limits-ediscovery20.md
             - name: Supported file types
               href: supported-filetypes-ediscovery20.md

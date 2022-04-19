@@ -1,5 +1,5 @@
 ---
-title: "Get started with Data loss prevention for Power BI"
+title: "Get started with DLP for Power BI"
 f1.keywords:
 - CSH
 ms.author: chrfox
