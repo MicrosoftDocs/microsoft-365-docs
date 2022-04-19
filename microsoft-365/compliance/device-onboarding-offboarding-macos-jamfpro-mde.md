@@ -1,5 +1,5 @@
 ---
-title: Onboard and offboard macOS devices into Compliance solutions using JAMF Pro for Microsoft Defender for Endpoint customers (preview)
+title: Onboard and offboard macOS devices into Compliance solutions using JAMF Pro for Microsoft Defender for Endpoint customers
 f1.keywords:
     NOCSH
 ms.author: chrfox
@@ -14,9 +14,9 @@ ms.collection:
 - M365-security-compliance 
 search.appverid:
 - MET150 
-description: Learn how to onboard and offboard macOS devices into Microsoft Purview solutions using JAMF Pro for Microsoft Defender for Endpoint customers (preview)
+description: Learn how to onboard and offboard macOS devices into Microsoft Purview solutions using JAMF Pro for Microsoft Defender for Endpoint customers
 ---
-# Onboard and offboard macOS devices into Compliance solutions using JAMF Pro for Microsoft Defender for Endpoint customers (preview)
+# Onboard and offboard macOS devices into Compliance solutions using JAMF Pro for Microsoft Defender for Endpoint customers
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
