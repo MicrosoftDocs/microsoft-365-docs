@@ -46,9 +46,9 @@ To keep what you need and delete what you don't:
 |[Archive mailboxes](archive-mailboxes.md)| Provides additional mailbox storage space for users.|
 |[Import service for PST files](importing-pst-files-to-office-365.md)| Supports bulk-importing PST files to Exchange Online mailboxes to retain and search email messages for compliance or regulatory requirements. |
 
-Want to learn more? See [Learn about data lifecycle management](information-governance.md).
+Want to learn more? See [Learn about data lifecycle management](data-lifecycle-management.md).
 
-Ready to start using some or all of these capabilities? See [Get started with data lifecycle management](get-started-with-information-governance.md).
+Ready to start using some or all of these capabilities? See [Get started with data lifecycle management](get-started-with-data-lifecycle-management.md).
 
 
 ## Microsoft Purview Records Management
@@ -69,7 +69,7 @@ Ready to start using some or all of these capabilities? See [Get started with re
 ## Licensing requirements
 
 To understand your licensing requirements and options, see the following sections from the [Microsoft 365 licensing documentation](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance): 
-- [Information Governance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-governance) 
-- [Records Management](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management) 
+- [Microsoft Purview Data Lifecycle Management](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-lifecycle-management)
+- [Microsoft Purview Records Management](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-records-management)
 
 Any additional licensing requirements will be included in the documentation instructions. For example, licensing specific to managing mailboxes might require licenses from Exchange Online.

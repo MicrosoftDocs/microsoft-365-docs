@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 auditing solutions"
+title: "Microsoft Purview auditing solutions"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -21,11 +21,11 @@ description: "Learn how to audit the activities of users and administrators in y
 ms.custom: seo-marvel-apr2020
 ---
 
-# Auditing solutions in Microsoft 365
+# Auditing solutions in Microsoft Purview
 
-Microsoft 365 auditing solutions provide an integrated solution to help organizations effectively respond to security events, forensic investigations, internal investigations, and compliance obligations. Thousands of user and admin operations performed in dozens of Microsoft 365 services and solutions are captured, recorded, and retained in your organization's unified audit log. Audit records for these events are searchable by security ops, IT admins, insider risk teams, and compliance and legal investigators in your organization. This capability provides visibility into the activities performed across your Microsoft 365 organization.
+Microsoft Purview auditing solutions provide an integrated solution to help organizations effectively respond to security events, forensic investigations, internal investigations, and compliance obligations. Thousands of user and admin operations performed in dozens of Microsoft 365 services and solutions are captured, recorded, and retained in your organization's unified audit log. Audit records for these events are searchable by security ops, IT admins, insider risk teams, and compliance and legal investigators in your organization. This capability provides visibility into the activities performed across your Microsoft 365 organization.
 
-## Microsoft 365 auditing solutions
+## Microsoft Purview auditing solutions
 
 Microsoft Purview provides two auditing solutions: Audit (Standard) and Audit (Premium).
 
@@ -89,7 +89,7 @@ The following table compares the key capabilities available in Audit (Standard) 
 
 ## Licensing requirements
 
-The following sections identify the licensing requirements for Audit (Standard) and Audit (Premium). Audit (Standard) functionality is included with Advanced Auditing.
+The following sections identify the licensing requirements for Audit (Standard) and Audit (Premium). Audit (Standard) functionality is included with Audit (Premium).
 
 ### Audit (Standard)
 
@@ -121,9 +121,9 @@ The following sections identify the licensing requirements for Audit (Standard) 
 - Office 365 Enterprise E5 subscription
 - Office 365 Education A5 subscription
 
-## Set up Microsoft 365 auditing solutions
+## Set up Microsoft Purview auditing solutions
 
-To get started using the auditing solutions in Microsoft 365, see the following setup guidance.
+To get started using the auditing solutions in Microsoft Purview, see the following setup guidance.
 
 ### Set up Audit (Standard)
 

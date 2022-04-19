@@ -1,5 +1,5 @@
 ---
-title: "Audit (Premium) in Microsoft 365"
+title: "Microsoft Purview Audit (Premium)"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
