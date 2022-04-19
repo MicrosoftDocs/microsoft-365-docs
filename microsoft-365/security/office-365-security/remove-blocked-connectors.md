@@ -28,11 +28,11 @@ ms.prod: m365-security
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-If an inbound connector is detected as potentially compromised, it is restricted from sending any relaying email. The connector is then added to the **Restricted entities** page in the Microsoft 365 Defender portal. When the connector is used to send email, the message is returned in a non-delivery report (also known as an NDR or bounced message) with the error code 550 5.7.711 and the following text: 
+If an inbound connector is detected as potentially compromised, it is restricted from sending any relaying email. The connector is then added to the **Restricted entities** page in the Microsoft 365 Defender portal. When the connector is used to send email, the message is returned in a non-delivery report (also known as an NDR or bounced message) with the error code 550;5.7.711 and the following text: 
 
 > Your message couldn’t be delivered. The most common reason for this is that your organization’s email connector is suspected of sending spam or phish and it’s no
 > longer allowed to send email. Contact your email admin for assistance. 
-> Remote Server returned ‘550 5.7.711 Access denied, bad inbound connector. AS(2204).” 
+> Remote Server returned ‘550;5.7.711 Access denied, bad inbound connector. AS(2204).” 
 
 Admins can remove connectors from the Restricted entities page in Microsoft 365 Defender or in Exchange Online PowerShell. 
 
