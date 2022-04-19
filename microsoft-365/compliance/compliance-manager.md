@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Compliance Manager"
+title: "Microsoft Purview Compliance Manager"
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -17,16 +17,18 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
 - MOE150
 - MET150
-description: "Microsoft Compliance Manager helps organizations simplify and automate risk assessments, and suggests recommended actions to help address risks."
+description: "Microsoft Purview Compliance Manager helps organizations simplify and automate risk assessments, and suggests recommended actions to help address risks."
 ---
 
-# Microsoft Compliance Manager
+# Microsoft Purview Compliance Manager
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **In this article:** Learn what Compliance Manager is, how it helps simplify compliance and reduce risk, and its key components.
 
 ## What is Compliance Manager?
 
-[Microsoft Compliance Manager](https://compliance.microsoft.com/compliancemanager) is a feature in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> that helps you manage your organization’s compliance requirements with greater ease and convenience. Compliance Manager can help you throughout your compliance journey, from taking inventory of your data protection risks to managing the complexities of implementing controls, staying current with regulations and certifications, and reporting to auditors.
+[Microsoft Purview Compliance Manager](https://compliance.microsoft.com/compliancemanager) is a feature in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> that helps you manage your organization’s compliance requirements with greater ease and convenience. Compliance Manager can help you throughout your compliance journey, from taking inventory of your data protection risks to managing the complexities of implementing controls, staying current with regulations and certifications, and reporting to auditors.
 
 Watch the video below to learn how Compliance Manager can help simplify how your organization manages compliance:
 <br>

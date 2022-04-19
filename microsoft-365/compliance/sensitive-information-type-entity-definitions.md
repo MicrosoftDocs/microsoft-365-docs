@@ -1,6 +1,7 @@
 ---
 title: "Sensitive information type entity definitions"
 f1.keywords:
+
 - CSH
 ms.author: chrfox
 author: chrfox
@@ -10,10 +11,12 @@ audience: Admin
 search.appverid: MET150
 ms.topic: reference
 f1_keywords:
+
 - 'ms.o365.cc.UnifiedDLPRuleContainsSensitiveInformation'
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
+
 - M365-security-compliance
 hideEdit: true
 feedback_system: None
@@ -23,14 +26,16 @@ description: "There are many sensitive information types that are ready for you 
 
 # Sensitive information type entity definitions
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 This article lists all sensitive information type entity definitions. Each definition shows what a DLP policy looks for to detect each type. To learn more about sensitive information types, see [Sensitive information types](sensitive-information-type-learn-about.md)
 
 > [!NOTE]
 > Mapping of confidence level (high/medium/low) with accuracy number (numeric value of 1 to 100)
+>
 > - Low confidence: 65 or below
 > - Medium confidence: 75
 > - High confidence: 85
-
 
 ## ABA routing number
 
@@ -47,7 +52,6 @@ nine digits that may be in a formatted or unformatted pattern
 - an optional hyphen
 - a digit
 
-
 ### Checksum
 
 Yes
@@ -55,10 +59,12 @@ Yes
 ### Definition
 
 A policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_aba_routing finds content that matches the pattern.
 - A keyword from Keyword_ABA_Routing is found.
 
 A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_aba_routing finds content that matches the pattern.
 
 ```xml
@@ -78,7 +84,7 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 
 #### Keyword_aba_routing
 
-- aba number
+- aba number
 - aba#
 - aba
 - abarouting#
@@ -87,13 +93,12 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 - americanbankassociationroutingnumber
 - bankrouting#
 - bankroutingnumber
-- routing #
-- routing no
-- routing number
-- routing transit number
+- routing #
+- routing no
+- routing number
+- routing transit number
 - routing#
 - RTN
-
 
 ## All full names
 
@@ -115,9 +120,9 @@ No.
 
 This named entity SIT matches personal names that a human would identify as a name with high confidence. For example, if a string is found consisting of a given name and is followed by a family name then a match is made with high confidence. It uses three primary resources:
 
--	A dictionary of given names.
--	A dictionary of family names.
--	Patterns of how names are formed.
+- A dictionary of given names.
+- A dictionary of family names.
+- Patterns of how names are formed.
 
 The three resources are different for each country.  The strings *Olivia Wilson* would trigger a match. Common given/family names are given a higher confidence than rarer names. However, the pattern also allows partial matches. If a given name from the dictionary is found and it's followed by a family name that isn't in the dictionary, then a partial match is triggered. For example, *Tomas Richard* would trigger a partial match. Partial matches are given lower confidence.
 
@@ -154,7 +159,6 @@ In addition, patterns that a human would see as indicative of names are also mat
 - Swedish
 - Turkish
 
-
 ## All medical terms and conditions
 
 All medical terms and conditions is a bundled named entity that detects medical terms and medical conditions. It detects English terms only. Use this SIT to detect all possible matches of medical terms and conditions.
@@ -183,7 +187,7 @@ This bundled named entity matches text that mentions medical conditions that are
 
 This bundled named entity SIT contains these individual SITs.
 
-- Blood test terms 
+- Blood test terms
 - Types of medication
 - Diseases
 - Generic medication names
@@ -193,7 +197,6 @@ This bundled named entity SIT contains these individual SITs.
 - Medical specialties
 - Surgical procedures
 - Brand medication names
-
 
 ## All Physical Addresses
 
@@ -215,10 +218,10 @@ No
 
 The matching of street addresses is designed to match strings that a human would identify as a street address. To do this, it uses several primary resources:
 
--	A dictionary of settlements, counties and regions.
--	A dictionary of street suffixes, like Road, Street, or Avenue.
--	Patterns of postal codes.
--	Patterns of address formats.
+- A dictionary of settlements, counties and regions.
+- A dictionary of street suffixes, like Road, Street, or Avenue.
+- Patterns of postal codes.
+- Patterns of address formats.
 
 The resources are different for each country. The primary resources are the patterns of address formats that are used in a given country. Different formats are chosen to make sure that as many addresses as possible are matched. These formats allow flexibility, for example, an address may omit the postal code or omit a town name or have a street with no street suffix. In all cases, such matches are used to increase the confidence of the match.
 
@@ -298,7 +301,6 @@ This bundled named entity SIT contains these individual SITs:
 - Swedish
 - Turkish
 
-
 ## Argentina national identity (DNI) number
 
 ### Format
@@ -308,6 +310,7 @@ Eight digits with or without periods
 ### Pattern
 
 Eight digits:
+
 - two digits
 - an optional period
 - three digits
@@ -321,6 +324,7 @@ No
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The regular expression Regex_argentina_national_id finds content that matches the pattern.
 - A keyword from Keyword_argentina_national_id is found.
 
@@ -348,7 +352,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - registro nacional de las personas
 - rnp
 
-
 ## Argentina Unique Tax Identification Key (CUIT/CUIL)
 
 ### Format
@@ -358,6 +361,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 ### Pattern
 
 11 digits with a dash:
+
 - two digits in 20, 23, 24, 27, 30, 33 or 34
 - a hyphen (-)
 - eight digits
@@ -371,10 +375,12 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function `Func_Argentina_Unique_Tax_Key` finds content that matches the pattern.
 - A keyword from `Keyword_Argentina_Unique_Tax_Key` is found.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function `Func_Argentina_Unique_Tax_Key` finds content that matches the pattern.
 
 ```xml
@@ -394,43 +400,42 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 #### Keyword_Argentina_Unique_Tax_Key
 
-- Clave Unica de Identificacion Tributaria
+- Clave Unica de Identificacion Tributaria
 - CUIT
-- unique code of labour identification 
-- Clave Única de Identificación Tributaria
-- unique labour identification code
+- unique code of labour identification
+- Clave Única de Identificación Tributaria
+- unique labour identification code
 - CUIL
-- Unique Tax Identification Key
-- Unique Labour Identification Key
-- Unique Key of Labour Identification
-- Unique Work Identification Code
-- Unique Code of Work Identification
-- Unique Work Identification Key
-- Unique Key of Work Identification
-- Unique Code of Tax Identification
-- Unique Key of Tax Identification
-- Unique Labor Identification Code
-- Unique Code of Labor Identification
-- Unique Labor Identification Key
-- Unique Key of Labor Identification
-- tax ID
+- Unique Tax Identification Key
+- Unique Labour Identification Key
+- Unique Key of Labour Identification
+- Unique Work Identification Code
+- Unique Code of Work Identification
+- Unique Work Identification Key
+- Unique Key of Work Identification
+- Unique Code of Tax Identification
+- Unique Key of Tax Identification
+- Unique Labor Identification Code
+- Unique Code of Labor Identification
+- Unique Labor Identification Key
+- Unique Key of Labor Identification
+- tax ID
 - taxID#
 - taxId
 - taxidnumber
-- tax number
-- tax no
-- tax #
+- tax number
+- tax no
+- tax #
 - tax#
-- taxpayer ID
-- taxpayer number
-- taxpayer no
-- taxpayer #
+- taxpayer ID
+- taxpayer number
+- taxpayer no
+- taxpayer #
 - taxpayer#
-- tax identity
-- tax identification
-- Número de Identificación Fiscal
-- número de contribuyente
-
+- tax identity
+- tax identification
+- Número de Identificación Fiscal
+- número de contribuyente
 
 ## Australia bank account number
 
@@ -443,6 +448,7 @@ six to 10 digits with or without a bank state branch number
 Account number is 6 to 10 digits.
 
 Australia bank state branch number:
+
 - three digits
 - a hyphen
 - three digits
@@ -454,11 +460,13 @@ No
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The regular expression Regex_australia_bank_account_number finds content that matches the pattern.
 - A keyword from Keyword_australia_bank_account_number is found.
 - The regular expression Regex_australia_bank_account_number_bsb finds content that matches the pattern.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The regular expression Regex_australia_bank_account_number finds content that matches the pattern.
 
 - A keyword from Keyword_australia_bank_account_number is found.
@@ -496,14 +504,13 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - full names
 - iaea
 
-
 ## Australia business number
 
 This sensitive information type is only available for use in:
 
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -530,10 +537,12 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_australian_business_number finds content that matches the pattern.
 - A keyword from Keywords_australian_business_number is found.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_australian_business_number finds content that matches the pattern.
 
 ```xml
@@ -552,14 +561,13 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 #### Keyword_australia_business_number
 
-- australia business no
-- business number
+- australia business no
+- business number
 - abn#
 - businessid#
-- business id
+- business id
 - abn
 - businessno#
-
 
 ## Australia company number
 
@@ -567,7 +575,7 @@ This sensitive information type is only available for use in:
 
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -585,7 +593,6 @@ nine digits with delimiters:
 - a space
 - three digits
 
-
 ### Checksum
 
 Yes
@@ -593,10 +600,12 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_Australian_Company_Number finds content that matches the pattern.
 - A keyword from Keyword_Australian_Company_Number is found.
 
 A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_Australian_Company_Number finds content that matches the pattern.
 
 ```xml
@@ -616,13 +625,12 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 #### Keyword_australia_company_number
 
 - acn
-- australia company no
-- australia company no#
-- australia company number
-- australian company no
-- australian company no#
-- australian company number
-
+- australia company no
+- australia company no#
+- australia company number
+- australian company no
+- australian company no#
+- australian company number
 
 ## Australia driver's license number
 
@@ -654,6 +662,7 @@ No
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The regular expression Regex_australia_drivers_license_number finds content that matches the pattern.
 - A keyword from Keyword_australia_drivers_license_number is found.
 - No keyword from Keyword_australia_drivers_license_number_exclusions is found.
@@ -775,7 +784,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - Driver's License#
 - Driver's Licenses#
 
-
 ## Australia medical account number
 
 ### Format
@@ -785,6 +793,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 ### Pattern
 
 10-11 digits:
+
 - First digit is in the range 2-6
 - Ninth digit is a check digit
 - Tenth digit is the issue digit
@@ -797,10 +806,10 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_australian_medical_account_number finds content that matches the pattern.
 - A keyword from Keyword_Australia_Medical_Account_Number is found.
 - The checksum passes.
-
 
 ```xml
   <!-- Australia Medical Account Number -->
@@ -826,7 +835,6 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 - local service
 - medicare
 
-
 ## Australia passport number
 
 ### Format
@@ -846,10 +854,12 @@ No
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The regular expression `Regex_australia_passport_number` finds content that matches the pattern.
 - A keyword from `Keyword_australia_passport_number` is found.
 
 A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The regular expression `Regex_australia_passport_number` finds content that matches the pattern.
 
 ```xml
@@ -870,31 +880,29 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 #### Keyword_australia_passport_number
 
 - passport#
-- passport #
+- passport #
 - passportid
 - passports
 - passportno
-- passport no
+- passport no
 - passportnumber
-- passport number
+- passport number
 - passportnumbers
-- passport numbers
-- passport details
-- immigration and citizenship
-- commonwealth of australia
-- department of immigration
-- national identity card
-- travel document
-- issuing authority
+- passport numbers
+- passport details
+- immigration and citizenship
+- commonwealth of australia
+- department of immigration
+- national identity card
+- travel document
+- issuing authority
 
-
-## Australia physical addresses 
+## Australia physical addresses
 
 Unbundled named entity, detects patterns related to physical address from Australia. It is also included in the [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
 
 ### Confidence level
 medium
-
 
 ## Australia tax file number
 
@@ -905,6 +913,7 @@ eight to nine digits
 ### Pattern
 
 eight to nine digits typically presented with spaces as follows:
+
 - three digits
 - an optional space
 - three digits
@@ -918,6 +927,7 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_australian_tax_file_number finds content that matches the pattern.
 - No keyword from Keyword_Australia_Tax_File_Number or Keyword_number_exclusions is found.
 - The checksum passes.
@@ -946,7 +956,6 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 - tax file number
 - tfn
 
-
 ## Austria driver's license number
 
 ### Format
@@ -965,8 +974,8 @@ No
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The regular expression  `Regex_austria_eu_driver's_license_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_driver's_license_number` or `Keywords_austria_eu_driver's_license_number` is found.
+- The regular expression `Regex_austria_eu_driver's_license_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_driver's_license_number` or `Keywords_austria_eu_driver's_license_number` is found.
 
 ```xml
       <!-- Austria Driver's License Number -->
@@ -991,48 +1000,48 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - driverlicenses
 - driverlicence
 - driverlicences
-- driver lic
-- driver lics
-- driver license
-- driver licenses
-- driver licence
-- driver licences
+- driver lic
+- driver lics
+- driver license
+- driver licenses
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
-- drivers license
-- drivers licenses
-- drivers licence
-- drivers licences
+- drivers lic
+- drivers lics
+- drivers license
+- drivers licenses
+- drivers licence
+- drivers licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
 - driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
-- driver's license
-- driver's licenses
-- driver's licence
-- driver's licences
+- driver's lic
+- driver's lics
+- driver's license
+- driver's licenses
+- driver's licence
+- driver's licences
 - dl#
 - dls#
 - driverlic#
@@ -1041,69 +1050,68 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- driver lic#
-- driver lics#
-- driver license#
-- driver licenses#
-- driver licences#
+- driver lic#
+- driver lics#
+- driver license#
+- driver licenses#
+- driver licences#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
 - driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
-- driving licence 
-- driving license
+- driver's lic#
+- driver's lics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
+- driving licence
+- driving license
 - dlno#
-- driv lic
-- driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
-- driver licen
-- drivers licen
-- driver's licen
-- driving lic
-- driving licen
-- driving licenses
-- driving licence
-- driving licences
-- driving permit
-- dl no
+- driv lic
+- driv licen
+- driv license
+- driv licenses
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
+- driving licence
+- driving licences
+- driving permit
+- dl no
 - dlno
-- dl number
-
+- dl number
 
 #### Keywords_austria_eu_driver's_license_number
 
@@ -1113,13 +1121,13 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - Führerscheinnummer
 - Führerscheinnummern
 
-
 ## Austria identity card
 
 This sensitive information type is only available for use in:
+
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -1131,7 +1139,7 @@ A 24-character combination of letters, digits, and special characters
 
 24 characters:
 
--  22 letters (not case-sensitive), digits, backslashes, forward slashes, or plus signs
+- 22 letters (not case-sensitive), digits, backslashes, forward slashes, or plus signs
 
 - two letters (not case-sensitive), digits, backslashes, forward slashes, plus signs, or equal signs
 
@@ -1143,8 +1151,8 @@ Not applicable
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The regular expression  `Regex_austria_eu_national_id_card` finds content that matches the pattern.
-- A keyword from  `Keywords_austria_eu_national_id_card` is found.
+- The regular expression `Regex_austria_eu_national_id_card` finds content that matches the pattern.
+- A keyword from `Keywords_austria_eu_national_id_card` is found.
 
 ```xml
       <!-- Austria Identity Card -->
@@ -1160,10 +1168,9 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 #### Keywords_austria_eu_national_id_card
 
-- identity number
-- national id
-- personalausweis republik österreich
-
+- identity number
+- national id
+- personalausweis republik österreich
 
 ## Austria passport number
 
@@ -1186,13 +1193,15 @@ not applicable
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_austria_eu_passport_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_passport_number` or `Keywords_austria_eu_passport_number` is found.
+
+- The regular expression `Regex_austria_eu_passport_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_passport_number` or `Keywords_austria_eu_passport_number` is found.
 - The regular expression `Regex_eu_passport_date1` finds date in the format DD.MM.YYYY or a keyword from `Keywords_eu_passport_date` is found
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_austria_eu_passport_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_passport_number` or `Keywords_austria_eu_passport_number` is found.
+
+- The regular expression `Regex_austria_eu_passport_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_passport_number` or `Keywords_austria_eu_passport_number` is found.
 
 ```xml
       <!-- Austria Passport Number -->
@@ -1223,15 +1232,15 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 #### Keywords_eu_passport_number
 
 - passport#
-- passport #
+- passport #
 - passportid
 - passports
 - passportno
-- passport no
+- passport no
 - passportnumber
-- passport number
+- passport number
 - passportnumbers
-- passport numbers
+- passport numbers
 
 #### Keywords_austria_eu_passport_number
 
@@ -1248,7 +1257,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - date of issue
 - date of expiry
 
-
 ## Austria physical addresses
 
 This unbundled named entity detects patterns related to physical address from Austria. It is also included in the [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
@@ -1256,7 +1264,6 @@ This unbundled named entity detects patterns related to physical address from Au
 ### Confidence level
 
 Medium
-
 
 ## Austria social security number
 
@@ -1279,11 +1286,13 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_austria_eu_ssn_or_equivalent` finds content that matches the pattern.
-- a keyword from  `Keywords_austria_eu_ssn_or_equivalent` is found.
+
+- The function `Func_austria_eu_ssn_or_equivalent` finds content that matches the pattern.
+- a keyword from `Keywords_austria_eu_ssn_or_equivalent` is found.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_austria_eu_ssn_or_equivalent` finds content that matches the pattern.
+
+- The function `Func_austria_eu_ssn_or_equivalent` finds content that matches the pattern.
 
 ```xml
       <!-- Austria Social Security Number -->
@@ -1330,7 +1339,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - versicherungsnummer
 - zdravstveno zavarovanje
 
-
 ## Austria tax identification number
 
 ### Format
@@ -1354,11 +1362,13 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_austria_eu_tax_file_number` finds content that matches the pattern.
-- A keyword from  `Keywords_austria_eu_tax_file_number` is found.
+
+- The function `Func_austria_eu_tax_file_number` finds content that matches the pattern.
+- A keyword from `Keywords_austria_eu_tax_file_number` is found.
 
 A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_austria_eu_tax_file_number` finds content that matches the pattern.
+
+- The function `Func_austria_eu_tax_file_number` finds content that matches the pattern.
 
 ```xml
       <!-- Austria Tax Identification Number -->
@@ -1380,31 +1390,31 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 - österreich
 - st.nr.
 - steuernummer
-- tax id
-- tax identification no
-- tax identification number
-- tax no#
-- tax no
-- tax number
-- tax registration number
+- tax id
+- tax identification no
+- tax identification number
+- tax no#
+- tax no
+- tax number
+- tax registration number
 - taxid#
 - taxidno#
 - taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
-- tin id
-- tin no
+- tin id
+- tin no
 - tin#
 - tax number
-
 
 ## Austria value added tax
 
 This sensitive information type is only available for use in:
+
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -1434,10 +1444,12 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_Austria_Value_Added_Tax finds content that matches the pattern.
 - A keyword from Keyword_Austria_Value_Added_Tax is found.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_Austria_Value_Added_Tax finds content that matches the pattern.
 
 ```xml
@@ -1456,22 +1468,21 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 #### Keyword_austria_value_added_tax
 
-- vat number
+- vat number
 - vat#
-- austrian vat number
-- vat no.
+- austrian vat number
+- vat no.
 - vatno#
-- value added tax number
-- austrian vat
+- value added tax number
+- austrian vat
 - mwst
 - umsatzsteuernummer
 - mwstnummer
 - ust.-identifikationsnummer
 - umsatzsteuer-identifikationsnummer
-- vat identification number
-- atu number
-- uid number
-
+- vat identification number
+- atu number
+- uid number
 
 ## Azure DocumentDB auth key
 
@@ -1494,6 +1505,7 @@ No
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The regular expression CEP_Regex_AzureDocumentDBAuthKey finds content that matches the pattern.
 - The regular expression CEP_CommonExampleKeywords doesn't find content that matches the pattern.
 
@@ -1525,7 +1537,6 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 - testacs.<!--no-hyperlink-->com
 - s-int.<!--no-hyperlink-->net
 
-
 ## Azure IAAS database connection string and Azure SQL connection string
 
 ### Format
@@ -1555,6 +1566,7 @@ No
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The regular expression CEP_Regex_AzureConnectionString finds content that matches the pattern.
 - The regular expression CEP_CommonExampleKeywords doesn't find content that matches the pattern.
 
@@ -1586,7 +1598,6 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 - testacs.<!--no-hyperlink-->com
 - s-int.<!--no-hyperlink-->net
 
-
 ## Azure IoT connection string
 
 ### Format
@@ -1616,6 +1627,7 @@ No
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The regular expression CEP_Regex_AzureIoTConnectionString finds content that matches the pattern.
 - The regular expression CEP_CommonExampleKeywords doesn't find content that matches the pattern.
 
@@ -1647,7 +1659,6 @@ This sensitive information type identifies these keywords by using a regular exp
 - testacs.<!--no-hyperlink-->com
 - s-int.<!--no-hyperlink-->net
 
-
 ## Azure publish setting password
 
 ### Format
@@ -1667,9 +1678,9 @@ No
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The regular expression CEP_Regex_AzurePublishSettingPasswords finds content that matches the pattern.
 - The regular expression CEP_CommonExampleKeywords doesn't find content that matches the pattern.
-
 
 ```xml
 <!--Azure Publish Setting Password-->
@@ -1699,7 +1710,6 @@ This sensitive information type identifies these keywords by using a regular exp
 - testacs.<!--no-hyperlink-->com
 - s-int.<!--no-hyperlink-->net
 
-
 ## Azure Redis cache connection string
 
 ### Format
@@ -1724,6 +1734,7 @@ No
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The regular expression CEP_Regex_AzureRedisCacheConnectionString finds content that matches the pattern.
 - The regular expression CEP_CommonExampleKeywords doesn't find content that matches the pattern.
 
@@ -1755,7 +1766,6 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 - testacs.<!--no-hyperlink-->com
 - s-int.<!--no-hyperlink-->net
 
-
 ## Azure SAS
 
 ### Format
@@ -1779,6 +1789,7 @@ No
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The regular expression CEP_Regex_AzureSAS finds content that matches the pattern.
 
 ```xml
@@ -1819,6 +1830,7 @@ No
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The regular expression CEP_Regex_AzureServiceBusConnectionString finds content that matches the pattern.
 - The regular expression CEP_CommonExampleKeywords doesn't find content that matches the pattern.
 
@@ -1850,7 +1862,6 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 - testacs.<!--no-hyperlink-->com
 - s-int.<!--no-hyperlink-->net
 
-
 ## Azure storage account key
 
 ### Format
@@ -1878,6 +1889,7 @@ No
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The regular expression CEP_Regex_AzureStorageAccountKey finds content that matches the pattern.
 - The regular expression CEP_AzureEmulatorStorageAccountFilter doesn't find content that matches the pattern.
 - The regular expression CEP_CommonExampleKeywords doesn't find content that matches the pattern.
@@ -1917,7 +1929,6 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 - testacs.<!--no-hyperlink-->com
 - s-int.<!--no-hyperlink-->net
 
-
 ## Azure Storage account key (generic)
 
 ### Format
@@ -1937,6 +1948,7 @@ No
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The regular expression CEP_Regex_AzureStorageAccountKeyGeneric finds content that matches the pattern.
 
 ```xml
@@ -1947,7 +1959,6 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
   </Pattern>
 </Entity>
 ```
-
 
 ## Belgium driver's license number
 
@@ -1966,7 +1977,8 @@ No
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_belgium_eu_driver's_license_number` finds content that matches the pattern.
+
+- The regular expression `Regex_belgium_eu_driver's_license_number` finds content that matches the pattern.
 - A keyword from `Keywords_eu_driver's_license_number` or `Keywords_belgium_eu_driver's_license_number` is found.
 
 ```xml
@@ -1992,48 +2004,48 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - driverlicenses
 - driverlicence
 - driverlicences
-- driver lic
-- driver lics
-- driver license
-- driver licenses
-- driver licence
-- driver licences
+- driver lic
+- driver lics
+- driver license
+- driver licenses
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
-- drivers license
-- drivers licenses
-- drivers licence
-- drivers licences
+- drivers lic
+- drivers lics
+- drivers license
+- drivers licenses
+- drivers licence
+- drivers licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
 - driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
-- driver's license
-- driver's licenses
-- driver's licence
-- driver's licences
+- driver's lic
+- driver's lics
+- driver's license
+- driver's licenses
+- driver's licence
+- driver's licences
 - dl#
 - dls#
 - driverlic#
@@ -2042,68 +2054,68 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- driver lic#
-- driver lics#
-- driver license#
-- driver licenses#
-- driver licences#
+- driver lic#
+- driver lics#
+- driver license#
+- driver licenses#
+- driver licences#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
 - driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
-- driving licence 
-- driving license
+- driver's lic#
+- driver's lics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
+- driving licence
+- driving license
 - dlno#
-- driv lic
-- driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
-- driver licen
-- drivers licen
-- driver's licen
-- driving lic
-- driving licen
-- driving licenses
-- driving licence
-- driving licences
-- driving permit
-- dl no
+- driv lic
+- driv licen
+- driv license
+- driv licenses
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
+- driving licence
+- driving licences
+- driving permit
+- dl no
 - dlno
-- dl number
+- dl number
 
 #### Keywords_belgium_eu_driver's_license_number
 
@@ -2116,9 +2128,8 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - fuehrerschein
 - fuhrerscheinnummer
 - fuehrerscheinnummer
-- permis de conduire
-- numéro permis conduire
-
+- permis de conduire
+- numéro permis conduire
 
 ## Belgium national number
 
@@ -2129,6 +2140,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 ### Pattern
 
 11 digits plus delimiters:
+
 - six digits and two optional periods in the format YY.MM.DD for date of birth
 - An optional delimiter from dot, dash, space
 - three sequential digits (odd for males, even for females)
@@ -2142,11 +2154,13 @@ Yes
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_belgium_national_number finds content that matches the pattern.
 - A keyword from Keyword_belgium_national_number is found.
 - The checksum passes.
 
 A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_belgium_national_number finds content that matches the pattern.
 - The checksum passes.
 
@@ -2167,11 +2181,11 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 
 #### Keyword_belgium_national_number
 
-- belasting aantal
+- belasting aantal
 - bnn#
 - bnn
-- carte d’identité
-- identifiant national
+- carte d'identité
+- identifiant national
 - identifiantnational#
 - identificatie
 - identification
@@ -2183,47 +2197,46 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 - identiteitskaart
 - identity
 - inscription
-- national number
-- national register
+- national number
+- national register
 - nationalnumber#
 - nationalnumber
 - nif#
 - nif
-- numéro d'assuré
-- numéro de registre national
-- numéro de sécurité
-- numéro d'identification
-- numéro d'immatriculation
-- numéro national
+- numéro d'assuré
+- numéro de registre national
+- numéro de sécurité
+- numéro d'identification
+- numéro d'immatriculation
+- numéro national
 - numéronational#
-- personal id number
+- personal id number
 - personalausweis
 - personalidnumber#
 - registratie
 - registration
 - registrationsnumme
 - registrierung
-- social security number
+- social security number
 - ssn#
 - ssn
 - steuernummer
-- tax id
-- tax identification no
-- tax identification number
-- tax no#
-- tax no
-- tax number
-- tax registration number
+- tax id
+- tax identification no
+- tax identification number
+- tax no#
+- tax no
+- tax number
+- tax registration number
 - taxid#
 - taxidno#
 - taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
-- tin id
-- tin no
+- tin id
+- tin no
 - tin#
-
 
 ## Belgium passport number
 
@@ -2242,13 +2255,15 @@ not applicable
 ### Definition
 
  A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_belgium_eu_passport_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_passport_number` or `Keywords_belgium_eu_passport_number` is found.
+
+- The regular expression `Regex_belgium_eu_passport_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_passport_number` or `Keywords_belgium_eu_passport_number` is found.
 - The regular expression `Regex_eu_passport_date2` finds date in the format DD MM YY or a keyword from `Keywords_eu_passport_date` or `Keywords_belgium_eu_passport_number` is found
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_belgium_eu_passport_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_passport_number` or `Keywords_belgium_eu_passport_number` is found.
+
+- The regular expression `Regex_belgium_eu_passport_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_passport_number` or `Keywords_belgium_eu_passport_number` is found.
 
 ```xml
       <!-- Belgium Passport Number -->
@@ -2281,15 +2296,15 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 #### Keywords_eu_passport_number
 
 - passport#
-- passport #
+- passport #
 - passportid
 - passports
 - passportno
-- passport no
+- passport no
 - passportnumber
-- passport number
+- passport number
 - passportnumbers
-- passport numbers
+- passport numbers
 
 #### Keywords_belgium_eu_passport_number
 
@@ -2309,7 +2324,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - date of issue
 - date of expiry
 
-
 ## Belgium physical addresses
 
 This unbundled named entity detects patterns related to physical addresses from Belgium. It is also included in the [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
@@ -2318,13 +2332,13 @@ This unbundled named entity detects patterns related to physical addresses from 
 
 Medium
 
-
 ## Belgium value added tax number
 
 This sensitive information type is only available for use in:
+
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -2352,10 +2366,12 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_belgium_value_added_tax_number finds content that matches the pattern.
 - A keyword from Keywords_belgium_value_added_tax_number is found.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_belgium_value_added_tax_number finds content that matches the pattern.
 
 ```xml
@@ -2375,16 +2391,15 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 #### Keyword_belgium_value_added_tax_number
 
-- nº tva
-- vat number
-- vat no
-- numéro t.v.a
+- nº tva
+- vat number
+- vat no
+- numéro t.v.a
 - umsatzsteuer-identifikationsnummer
 - umsatzsteuernummer
 - btw
 - btw#
 - vat#
-
 
 ## Blood test terms
 
@@ -2402,7 +2417,6 @@ This unbundled named entity detects names of brand medication, such as *Tylenol*
 
 High
 
-
 ## Brazil CPF number
 
 ### Format
@@ -2412,6 +2426,7 @@ High
 ### Pattern
 
 Formatted:
+
 - three digits
 - a period
 - three digits
@@ -2421,6 +2436,7 @@ Formatted:
 - two digits that are check digits
 
 Unformatted:
+
 - 11 digits where the last two digits are check digits
 
 ### Checksum
@@ -2430,11 +2446,13 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_brazil_cpf finds content that matches the pattern.
 - A keyword from Keyword_brazil_cpf is found.
 - The checksum passes.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_brazil_cpf finds content that matches the pattern.
 - The checksum passes.
 
@@ -2465,7 +2483,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - Inscrição
 - Receita
 
-
 ## Brazil legal entity number (CNPJ)
 
 ### Format
@@ -2493,11 +2510,13 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_brazil_cnpj finds content that matches the pattern.
 - A keyword from Keyword_brazil_cnpj is found.
 - The checksum passes.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_brazil_cnpj finds content that matches the pattern.
 - The checksum passes.
 
@@ -2538,7 +2557,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - Inscrição
 - Empresa
 
-
 ## Brazil national identification card (RG)
 
 ### Format
@@ -2550,6 +2568,7 @@ Registro de Identidade (RIC) (new format): 11 digits
 ### Pattern
 
 Registro Geral (old format):
+
 - two digits
 - a period
 - three digits
@@ -2559,6 +2578,7 @@ Registro Geral (old format):
 - one digit that is a check digit
 
 Registro de Identidade (RIC) (new format):
+
 - 10 digits
 - a hyphen
 - one digit that is a check digit
@@ -2570,10 +2590,10 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_brazil_rg finds content that matches the pattern.
 - A keyword from Keyword_brazil_rg is found.
 - The checksum passes.
-
 
 ```xml
       <!-- Brazil National ID Card (RG) -->
@@ -2597,7 +2617,6 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 - registro geral
 - RG (this keyword is case-sensitive)
 - RIC (this keyword is case-sensitive)
-
 
 ## Brazil physical addresses
 
@@ -2624,8 +2643,9 @@ No
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_bulgaria_eu_driver's_license_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_driver's_license_number` or `Keywords_bulgaria_eu_driver's_license_number` is found.
+
+- The regular expression `Regex_bulgaria_eu_driver's_license_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_driver's_license_number` or `Keywords_bulgaria_eu_driver's_license_number` is found.
 
 ```xml
       <!-- Bulgaria Driver's License Number -->
@@ -2650,48 +2670,48 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - driverlicenses
 - driverlicence
 - driverlicences
-- driver lic
-- driver lics
-- driver license
-- driver licenses
-- driver licence
-- driver licences
+- driver lic
+- driver lics
+- driver license
+- driver licenses
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
-- drivers license
-- drivers licenses
-- drivers licence
-- drivers licences
+- drivers lic
+- drivers lics
+- drivers license
+- drivers licenses
+- drivers licence
+- drivers licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
 - driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
-- driver's license
-- driver's licenses
-- driver's licence
-- driver's licences
+- driver's lic
+- driver's lics
+- driver's license
+- driver's licenses
+- driver's licence
+- driver's licences
 - dl#
 - dls#
 - driverlic#
@@ -2700,68 +2720,68 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- driver lic#
-- driver lics#
-- driver license#
-- driver licenses#
-- driver licences#
+- driver lic#
+- driver lics#
+- driver license#
+- driver licenses#
+- driver licences#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
 - driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
-- driving licence 
-- driving license
+- driver's lic#
+- driver's lics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
+- driving licence
+- driving license
 - dlno#
-- driv lic
-- driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
-- driver licen
-- drivers licen
-- driver's licen
-- driving lic
-- driving licen
-- driving licenses
-- driving licence
-- driving licences
-- driving permit
-- dl no
+- driv lic
+- driv licen
+- driv license
+- driv licenses
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
+- driving licence
+- driving licences
+- driving permit
+- dl no
 - dlno
-- dl number
+- dl number
 
 #### Keywords_bulgaria_eu_driver's_license_number
 
@@ -2770,7 +2790,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - сумпс
 - шофьорска книжка
 - шофьорски книжки
-
 
 ## Bulgaria passport number
 
@@ -2789,13 +2808,15 @@ No
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_bulgaria_eu_passport_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_passport_number` or `Keywords_bulgaria_eu_passport_number` is found.
+
+- The regular expression `Regex_bulgaria_eu_passport_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_passport_number` or `Keywords_bulgaria_eu_passport_number` is found.
 - The regular expression `Regex_eu_passport_date1` finds date in the format DD.MM.YYYY or a keyword from `Keywords_eu_passport_date` is found
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_bulgaria_eu_passport_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_passport_number` or `Keywords_bulgaria_eu_passport_number` is found.
+
+- The regular expression `Regex_bulgaria_eu_passport_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_passport_number` or `Keywords_bulgaria_eu_passport_number` is found.
 
 ```xml
       <!-- Bulgaria Passport Number -->
@@ -2825,15 +2846,15 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 #### Keywords_eu_passport_number
 
 - passport#
-- passport #
+- passport #
 - passportid
 - passports
 - passportno
-- passport no
+- passport no
 - passportnumber
-- passport number
+- passport number
 - passportnumbers
-- passport numbers
+- passport numbers
 
 #### Keywords_bulgaria_eu_passport_number
 
@@ -2846,7 +2867,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - date of issue
 - date of expiry
 
-
 ## Bulgaria physical addresses
 
 This unbundled named entity detects patterns related to physical address from Bulgaria. It is also included in the [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
@@ -2857,9 +2877,10 @@ Medium
 
 ## Bulgaria uniform civil number
 This sensitive information type is only available for use in:
+
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -2883,11 +2904,13 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_bulgaria_eu_national_id_card` finds content that matches the pattern.
-- A keyword from  `Keywords_bulgaria_eu_national_id_card` is found.
+
+- The function `Func_bulgaria_eu_national_id_card` finds content that matches the pattern.
+- A keyword from `Keywords_bulgaria_eu_national_id_card` is found.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_bulgaria_eu_national_id_card` finds content that matches the pattern.
+
+- The function `Func_bulgaria_eu_national_id_card` finds content that matches the pattern.
 
 ```xml
       <!-- Bulgaria Uniform Civil Number -->
@@ -2914,45 +2937,44 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - bnn
 - bucn#
 - bucn
-- edinen grazhdanski nomer
+- edinen grazhdanski nomer
 - egn#
 - egn
-- identification number
-- national id
-- national number
+- identification number
+- national id
+- national number
 - nationalnumber#
 - nationalnumber
-- personal id
-- personal no
-- personal number
+- personal id
+- personal no
+- personal number
 - personalidnumber#
-- social security number
+- social security number
 - ssn#
 - ssn
-- uniform civil id
-- uniform civil no
-- uniform civil number
+- uniform civil id
+- uniform civil no
+- uniform civil number
 - uniformcivilno#
 - uniformcivilno
 - uniformcivilnumber#
 - uniformcivilnumber
-- unique citizenship number
+- unique citizenship number
 - егн#
 - егн
-- единен граждански номер
-- идентификационен номер
-- личен номер
-- лична идентификация
-- лично не
-- национален номер
-- номер на гражданството
-- униформ id
-- униформ граждански id
-- униформ граждански не
-- униформ граждански номер
+- единен граждански номер
+- идентификационен номер
+- личен номер
+- лична идентификация
+- лично не
+- национален номер
+- номер на гражданството
+- униформ id
+- униформ граждански id
+- униформ граждански не
+- униформ граждански номер
 - униформгражданскиid#
 - униформгражданскине.#
-
 
 ## Canada bank account number
 
@@ -2965,6 +2987,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 A Canada Bank Account Number is 7 or 12 digits.
 
 A Canada bank account transit number is:
+
 - five digits
 - a hyphen
 - three digits
@@ -2979,11 +3002,13 @@ No
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The regular expression Regex_canada_bank_account_number finds content that matches the pattern.
 - A keyword from Keyword_canada_bank_account_number is found.
 - The regular expression Regex_canada_bank_account_transit_number finds content that matches the pattern.
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The regular expression Regex_canada_bank_account_number finds content that matches the pattern.
 - A keyword from Keyword_canada_bank_account_number is found.
 
@@ -3028,7 +3053,6 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 - banking information
 - direct deposit
 
-
 ## Canada driver's license number
 
 ### Format
@@ -3038,6 +3062,7 @@ Varies by province
 ### Pattern
 
 Various patterns covering:
+
 - Alberta
 - British Columbia
 - Manitoba
@@ -3056,6 +3081,7 @@ No
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_[province_name]_drivers_license_number finds content that matches the pattern.
 - A keyword from Keyword_[province_name]_drivers_license_name is found.
 - A keyword from Keyword_canada_drivers_license is found.
@@ -3256,7 +3282,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - identification cards#
 - identification#
 
-
 ## Canada health service number
 
 ### Format
@@ -3274,6 +3299,7 @@ No
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The regular expression Regex_canada_health_service_number finds content that matches the pattern.
 - A keyword from Keyword_canada_health_service_number is found.
 
@@ -3303,7 +3329,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - workers compensation
 - disability
 
-
 ## Canada passport number
 
 ### Format
@@ -3321,6 +3346,7 @@ No
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The regular expression Regex_canada_passport_number finds content that matches the pattern.
 - A keyword from Keyword_canada_passport_number or Keyword_passport is found.
 
@@ -3371,7 +3397,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - PasseportNon
 - Passeportn °
 
-
 ## Canada personal health identification number (PHIN)
 
 ### Format
@@ -3389,6 +3414,7 @@ No
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The regular expression Regex_canada_phin finds content that matches the pattern.
 - At least two keywords from Keyword_canada_phin or Keyword_canada_provinces are found.
 
@@ -3442,7 +3468,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - Prince Edward Island
 - Canada
 
-
 ## Canada physical addresses
 
 This unbundled named entity detects patterns related to physical address from Canada. It is also included in the [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
@@ -3450,7 +3475,6 @@ This unbundled named entity detects patterns related to physical address from Ca
 ### Confidence level
 
 Medium
-
 
 ## Canada social insurance number
 
@@ -3461,6 +3485,7 @@ nine digits with optional hyphens or spaces
 ### Pattern
 
 Formatted:
+
 - three digits
 - a hyphen or space
 - three digits
@@ -3476,6 +3501,7 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_canadian_sin finds content that matches the pattern.
 - At least two of the following patterns:
     - A keyword from Keyword_sin is found.
@@ -3484,6 +3510,7 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 - The checksum passes.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_unformatted_canadian_sin finds content that matches the pattern.
 - A keyword from Keyword_sin is found.
 - The checksum passes.
@@ -3535,7 +3562,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - Birthday
 - Date of Birth
 
-
 ## Chile identity card number
 
 ### Format
@@ -3545,6 +3571,7 @@ seven to eight digits plus delimiters a check digit or letter
 ### Pattern
 
 seven to eight digits plus delimiters:
+
 - one to two digits
 - an optional period
 - three digits
@@ -3560,11 +3587,13 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_chile_id_card finds content that matches the pattern.
 - A keyword from Keyword_chile_id_card is found.
 - The checksum passes.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_chile_id_card finds content that matches the pattern.
 - The checksum passes.
 
@@ -3585,43 +3614,42 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 #### Keyword_chile_id_card
 
-- cédula de identidad
+- cédula de identidad
 - identificación
-- national identification
-- national identification number
-- national id
-- número de identificación nacional
-- rol único nacional
-- rol único tributario
+- national identification
+- national identification number
+- national id
+- número de identificación nacional
+- rol único nacional
+- rol único tributario
 - RUN
 - RUT
-- tarjeta de identificación
-- Rol Unico Nacional
-- Rol Unico Tributario
+- tarjeta de identificación
+- Rol Unico Nacional
+- Rol Unico Tributario
 - RUN#
 - RUT#
 - nationaluniqueroleID#
-- nacional identidad
-- número identificación
-- identidad número
-- numero identificacion
-- identidad numero
-- Chilean identity no.
-- Chilean identity number
-- Chilean identity #
-- Unique Tax Registry
-- Unique Tributary Role
-- Unique Tax Role
-- Unique Tributary Number
-- Unique National Number
-- Unique National Role
-- National unique role
-- Chile identity no.
-- Chile identity number
-- Chile identity #
+- nacional identidad
+- número identificación
+- identidad número
+- numero identificacion
+- identidad numero
+- Chilean identity no.
+- Chilean identity number
+- Chilean identity #
+- Unique Tax Registry
+- Unique Tributary Role
+- Unique Tax Role
+- Unique Tributary Number
+- Unique National Number
+- Unique National Role
+- National unique role
+- Chile identity no.
+- Chile identity number
+- Chile identity #
 - R.U.T
 - R.U.N
-
 
 ## China resident identity card (PRC) number
 
@@ -3632,6 +3660,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 ### Pattern
 
 18 digits:
+
 - six digits that are an address code
 - eight digits in the form YYYYMMDD, which are the date of birth
 - three digits that are an order code
@@ -3644,11 +3673,13 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_china_resident_id finds content that matches the pattern.
 - A keyword from Keyword_china_resident_id is found.
 - The checksum passes.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_china_resident_id finds content that matches the pattern.
 - The checksum passes.
 
@@ -3680,7 +3711,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - 居民 身份證
 - 鑑定
 
-
 ## Credit card number
 
 ### Format
@@ -3698,14 +3728,16 @@ Yes, the Luhn check
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_credit_card finds content that matches the pattern.
 - One of the following is true:
-    - A keyword from Keyword_cc_verification is found.
-    - A keyword from Keyword_cc_name is found.
-    - The function Func_expiration_date finds a date in the right date format.
+  - A keyword from Keyword_cc_verification is found.
+  - A keyword from Keyword_cc_name is found.
+  - The function Func_expiration_date finds a date in the right date format.
 - The checksum passes.
 
 A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_credit_card finds content that matches the pattern.
 - The checksum passes.
 
@@ -3730,161 +3762,162 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 
 #### Keyword_cc_verification
 
-- card verification
-- card identification number
+- card verification
+- card identification number
 - cvn
 - cid
 - cvc2
 - cvv2
-- pin block
-- security code
-- security number
-- security no
-- issue number
-- issue no
+- pin block
+- security code
+- security number
+- security no
+- issue number
+- issue no
 - cryptogramme
-- numéro de sécurité
-- numero de securite
+- numéro de sécurité
+- numero de securite
 - kreditkartenprüfnummer
 - kreditkartenprufnummer
 - prüfziffer
 - prufziffer
-- sicherheits Kode
+- sicherheits Kode
 - sicherheitscode
 - sicherheitsnummer
 - verfalldatum
-- codice di verifica
-- cod. sicurezza
-- cod sicurezza
-- n autorizzazione
+- codice di verifica
+- cod. sicurezza
+- cod sicurezza
+- n autorizzazione
 - código
 - codigo
-- cod. seg
-- cod seg
-- código de segurança
-- codigo de seguranca
-- codigo de segurança
-- código de seguranca
-- cód. segurança
-- cod. seguranca
-- cod. segurança
-- cód. seguranca
-- cód segurança
-- cod seguranca
-- cod segurança
-- cód seguranca
-- número de verificação
-- numero de verificacao
+- cod. seg
+- cod seg
+- código de segurança
+- codigo de seguranca
+- codigo de segurança
+- código de seguranca
+- cód. segurança
+- cod. seguranca
+- cod. segurança
+- cód. seguranca
+- cód segurança
+- cod seguranca
+- cod segurança
+- cód seguranca
+- número de verificação
+- numero de verificacao
 - ablauf
-- gültig bis
+- gültig bis
 - gültigkeitsdatum
-- gultig bis
+- gultig bis
 - gultigkeitsdatum
 - scadenza
-- data scad
-- fecha de expiracion
-- fecha de venc
+- data scad
+- fecha de expiracion
+- fecha de venc
 - vencimiento
-- válido hasta
-- valido hasta
+- válido hasta
+- valido hasta
 - vto
-- data de expiração
-- data de expiracao
-- data em que expira
+- data de expiração
+- data de expiracao
+- data em que expira
 - validade
 - valor
 - vencimento
 - transaction
-- transaction number
-- reference number
+- transaction number
+- reference number
 - セキュリティコード
-- セキュリティ コード
+- セキュリティ コード
 - セキュリティナンバー
-- セキュリティ ナンバー
+- セキュリティ ナンバー
 - セキュリティ番号
 
 #### Keyword_cc_name
 
 - amex
-- american express
+- american express
 - americanexpress
-- americano espresso
+- americano espresso
 - Visa
 - mastercard
-- master card
+- master card
 - mc
 - mastercards
-- master cards
-- diner's Club
-- diners club
+- master cards
+- diner's Club
+- diners club
 - dinersclub
 - discover
-- discover card
+- discover card
 - discovercard
-- discover cards
+- discover cards
 - JCB
 - BrandSmart
-- japanese card bureau
-- carte blanche
+- japanese card bureau
+- carte blanche
 - carteblanche
-- credit card
+- credit card
 - cc#
 - cc#:
-- expiration date
-- exp date
-- expiry date
-- date d’expiration
-- date d'exp
-- date expiration
-- bank card
+
+- expiration date
+- exp date
+- expiry date
+- date d'expiration
+- date d'exp
+- date expiration
+- bank card
 - bankcard
-- card number
-- card num
+- card number
+- card num
 - cardnumber
 - cardnumbers
-- card numbers
+- card numbers
 - creditcard
-- credit cards
+- credit cards
 - creditcards
 - ccn
-- card holder
+- card holder
 - cardholder
-- card holders
+- card holders
 - cardholders
-- check card
+- check card
 - checkcard
-- check cards
+- check cards
 - checkcards
-- debit card
+- debit card
 - debitcard
-- debit cards
+- debit cards
 - debitcards
-- atm card
+- atm card
 - atmcard
-- atm cards
+- atm cards
 - atmcards
 - enroute
-- en route
-- card type
-- Cardmember Acct
-- cardmember account
+- en route
+- card type
+- Cardmember Acct
+- cardmember account
 - Cardno
-- Corporate Card
-- Corporate cards
-- Type of card
-- card account number
-- card member account
-- Cardmember Acct.
-- card no.
-- card no
-- card number
-- carte bancaire
-- carte de crédit
-- carte de credit
-- numéro de carte
-- numero de carte
-- nº de la carte
-- nº de carte
+- Corporate Card
+- Corporate cards
+- Type of card
+- card account number
+- card member account
+- Cardmember Acct.
+- card no.
+- card no
+- card number
+- carte bancaire
+- carte de crédit
+- carte de credit
+- numéro de carte
+- numero de carte
+- nº de la carte
+- nº de carte
 - kreditkarte
 - karte
 - karteninhaber
@@ -3897,57 +3930,57 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 - kartennummer
 - kreditkartennummer
 - kreditkarten-nummer
-- carta di credito
-- carta credito
-- n. carta
-- n carta
-- nr. carta
-- nr carta
-- numero carta
-- numero della carta
-- numero di carta
-- tarjeta credito
-- tarjeta de credito
-- tarjeta crédito
-- tarjeta de crédito
-- tarjeta de atm
-- tarjeta atm
-- tarjeta debito
-- tarjeta de debito
-- tarjeta débito
-- tarjeta de débito
-- nº de tarjeta
-- no. de tarjeta
-- no de tarjeta
-- numero de tarjeta
-- número de tarjeta
-- tarjeta no
+- carta di credito
+- carta credito
+- n. carta
+- n carta
+- nr. carta
+- nr carta
+- numero carta
+- numero della carta
+- numero di carta
+- tarjeta credito
+- tarjeta de credito
+- tarjeta crédito
+- tarjeta de crédito
+- tarjeta de atm
+- tarjeta atm
+- tarjeta debito
+- tarjeta de debito
+- tarjeta débito
+- tarjeta de débito
+- nº de tarjeta
+- no. de tarjeta
+- no de tarjeta
+- numero de tarjeta
+- número de tarjeta
+- tarjeta no
 - tarjetahabiente
-- cartão de crédito
-- cartão de credito
-- cartao de crédito
-- cartao de credito
-- cartão de débito
-- cartao de débito
-- cartão de debito
-- cartao de debito
-- débito automático
-- debito automatico
-- número do cartão
-- numero do cartão
-- número do cartao
-- numero do cartao
-- número de cartão
-- numero de cartão
-- número de cartao
-- numero de cartao
-- nº do cartão
-- nº do cartao
-- nº. do cartão
-- no do cartão
-- no do cartao
-- no. do cartão
-- no. do cartao
+- cartão de crédito
+- cartão de credito
+- cartao de crédito
+- cartao de credito
+- cartão de débito
+- cartao de débito
+- cartão de debito
+- cartao de debito
+- débito automático
+- debito automatico
+- número do cartão
+- numero do cartão
+- número do cartao
+- numero do cartao
+- número de cartão
+- numero de cartão
+- número de cartao
+- numero de cartao
+- nº do cartão
+- nº do cartao
+- nº. do cartão
+- no do cartão
+- no do cartao
+- no. do cartão
+- no. do cartao
 - rupay
 - union pay
 - unionpay
@@ -3964,27 +3997,26 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 - カード＃
 - アメックス
 - アメリカンエクスプレス
-- アメリカン エクスプレス
+- アメリカン エクスプレス
 - Visaカード
-- Visa カード
+- Visa カード
 - マスターカード
-- マスター カード
+- マスター カード
 - マスター
 - ダイナースクラブ
-- ダイナース クラブ
+- ダイナース クラブ
 - ダイナース
 - 有効期限
 - 期限
 - キャッシュカード
-- キャッシュ カード
+- キャッシュ カード
 - カード名義人
 - カードの名義人
 - カードの名義
-- デビット カード
+- デビット カード
 - デビットカード
 - 中国银联
 - 银联
-
 
 ## Croatia driver's license number
 
@@ -4004,7 +4036,7 @@ No
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The regular expression  `Regex_croatia_eu_driver's_license_number` finds content that matches the pattern.
+- The regular expression `Regex_croatia_eu_driver's_license_number` finds content that matches the pattern.
 - A keyword from `Keywords_eu_driver's_license_number` or `Keywords_croatia_eu_driver's_license_number` is found.
 
 ```xml
@@ -4030,48 +4062,48 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - driverlicenses
 - driverlicence
 - driverlicences
-- driver lic
-- driver lics
-- driver license
-- driver licenses
-- driver licence
-- driver licences
+- driver lic
+- driver lics
+- driver license
+- driver licenses
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
-- drivers license
-- drivers licenses
-- drivers licence
-- drivers licences
+- drivers lic
+- drivers lics
+- drivers license
+- drivers licenses
+- drivers licence
+- drivers licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
 - driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
-- driver's license
-- driver's licenses
-- driver's licence
-- driver's licences
+- driver's lic
+- driver's lics
+- driver's license
+- driver's licenses
+- driver's licence
+- driver's licences
 - dl#
 - dls#
 - driverlic#
@@ -4080,77 +4112,76 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- driver lic#
-- driver lics#
-- driver license#
-- driver licenses#
-- driver licences#
+- driver lic#
+- driver lics#
+- driver license#
+- driver licenses#
+- driver licences#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
 - driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
-- driving licence 
-- driving license
+- driver's lic#
+- driver's lics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
+- driving licence
+- driving license
 - dlno#
-- driv lic
-- driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
-- driver licen
-- drivers licen
-- driver's licen
-- driving lic
-- driving licen
-- driving licenses
-- driving licence
-- driving licences
-- driving permit
-- dl no
+- driv lic
+- driv licen
+- driv license
+- driv licenses
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
+- driving licence
+- driving licences
+- driving permit
+- dl no
 - dlno
-- dl number
-
+- dl number
 
 #### Keywords_croatia_eu_driver's_license_number
 
 - vozačka dozvola
 - vozačke dozvole
 
-
 ## Croatia identity card number
+
 This entity is included in the EU National Identification Number sensitive information type. It's available as a stand-alone sensitive information type entity.
 
 ### Format
@@ -4168,6 +4199,7 @@ No
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_croatia_id_card finds content that matches the pattern.
 - A keyword from Keyword_croatia_id_card is found.
 
@@ -4185,35 +4217,34 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 #### Keyword_croatia_id_card
 
-- majstorski broj građana
-- master citizen number
-- nacionalni identifikacijski broj
-- national identification number
+- majstorski broj građana
+- master citizen number
+- nacionalni identifikacijski broj
+- national identification number
 - oib#
 - oib
-- osobna iskaznica
-- osobni id
-- osobni identifikacijski broj
-- personal identification number
-- porezni broj
-- porezni identifikacijski broj
-- tax id
-- tax identification no
-- tax identification number
-- tax no#
-- tax no
-- tax number
-- tax registration number
+- osobna iskaznica
+- osobni id
+- osobni identifikacijski broj
+- personal identification number
+- porezni broj
+- porezni identifikacijski broj
+- tax id
+- tax identification no
+- tax identification number
+- tax no#
+- tax no
+- tax number
+- tax registration number
 - taxid#
 - taxidno#
 - taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
-- tin id
-- tin no
+- tin id
+- tin no
 - tin#
-
 
 ## Croatia passport number
 
@@ -4232,13 +4263,15 @@ No
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_croatia_eu_passport_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_passport_number` or `Keywords_croatia_eu_passport_number` is found.
+
+- The regular expression `Regex_croatia_eu_passport_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_passport_number` or `Keywords_croatia_eu_passport_number` is found.
 - The regular expression `Regex_eu_passport_date1` finds date in the format DD.MM.YYYY or a keyword from `Keywords_eu_passport_date` is found
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_croatia_eu_passport_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_passport_number` or `Keywords_croatia_eu_passport_number` is found.
+
+- The regular expression `Regex_croatia_eu_passport_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_passport_number` or `Keywords_croatia_eu_passport_number` is found.
 
 ```xml
       <!-- Croatia Passport Number -->
@@ -4263,20 +4296,21 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
         </Pattern>
       </Entity>
 ```
+
 ### Keywords
 
 #### Keywords_eu_passport_number_common
 
 - passport#
-- passport #
+- passport #
 - passportid
 - passports
 - passportno
-- passport no
+- passport no
 - passportnumber
-- passport number
+- passport number
 - passportnumbers
-- passport numbers
+- passport numbers
 
 #### Keywords_croatia_eu_passport_number
 
@@ -4293,6 +4327,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 ### Pattern
 
 11 digits:
+
 - 10 digits
 - final digit is a check digit
 
@@ -4303,11 +4338,13 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_croatia_oib_number finds content that matches the pattern.
 - A keyword from Keywords_croatia_eu_tax_file_number is found.
 - The checksum passes.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_croatia_oib_number finds content that matches the pattern.
 - The checksum passes.
 
@@ -4328,35 +4365,34 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 #### Keyword_croatia_oib_number
 
-- majstorski broj građana
-- master citizen number
-- nacionalni identifikacijski broj
-- national identification number
+- majstorski broj građana
+- master citizen number
+- nacionalni identifikacijski broj
+- national identification number
 - oib#
 - oib
-- osobna iskaznica
-- osobni id
-- osobni identifikacijski broj
-- personal identification number
-- porezni broj
-- porezni identifikacijski broj
-- tax id
-- tax identification no
-- tax identification number
-- tax no#
-- tax no
-- tax number
-- tax registration number
+- osobna iskaznica
+- osobni id
+- osobni identifikacijski broj
+- personal identification number
+- porezni broj
+- porezni identifikacijski broj
+- tax id
+- tax identification no
+- tax identification number
+- tax no#
+- tax no
+- tax number
+- tax registration number
 - taxid#
 - taxidno#
 - taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
-- tin id
-- tin no
+- tin id
+- tin no
 - tin#
-
 
 ## Croatia physical addresses
 
@@ -4365,7 +4401,6 @@ This unbundled named entity detects patterns related to physical address from Cr
 ### Confidence level
 
 Medium
-
 
 ## Cyprus drivers license number
 
@@ -4384,8 +4419,9 @@ No
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_cyprus_eu_driver's_license_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_driver's_license_number` or `Keywords_cyprus_eu_driver's_license_number` is found.
+
+- The regular expression `Regex_cyprus_eu_driver's_license_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_driver's_license_number` or `Keywords_cyprus_eu_driver's_license_number` is found.
 
 ```xml
       <!-- Cyprus Driver's License Number -->
@@ -4410,48 +4446,48 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - driverlicenses
 - driverlicence
 - driverlicences
-- driver lic
-- driver lics
-- driver license
-- driver licenses
-- driver licence
-- driver licences
+- driver lic
+- driver lics
+- driver license
+- driver licenses
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
-- drivers license
-- drivers licenses
-- drivers licence
-- drivers licences
+- drivers lic
+- drivers lics
+- drivers license
+- drivers licenses
+- drivers licence
+- drivers licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
 - driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
-- driver's license
-- driver's licenses
-- driver's licence
-- driver's licences
+- driver's lic
+- driver's lics
+- driver's license
+- driver's licenses
+- driver's licence
+- driver's licences
 - dl#
 - dls#
 - driverlic#
@@ -4460,68 +4496,68 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- driver lic#
-- driver lics#
-- driver license#
-- driver licenses#
-- driver licences#
+- driver lic#
+- driver lics#
+- driver license#
+- driver licenses#
+- driver licences#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
 - driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
-- driving licence 
-- driving license
+- driver's lic#
+- driver's lics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
+- driving licence
+- driving license
 - dlno#
-- driv lic
-- driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
-- driver licen
-- drivers licen
-- driver's licen
-- driving lic
-- driving licen
-- driving licenses
-- driving licence
-- driving licences
-- driving permit
-- dl no
+- driv lic
+- driv licen
+- driv license
+- driv licenses
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
+- driving licence
+- driving licences
+- driving permit
+- dl no
 - dlno
-- dl number
+- dl number
 
 #### Keywords_cyprus_eu_driver's_license_number
 
@@ -4529,13 +4565,13 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - αριθμό άδειας οδήγησης
 - άδειες οδήγησης
 
-
 ## Cyprus identity card
 
 This sensitive information type is only available for use in:
+
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -4554,8 +4590,9 @@ not applicable
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_cyprus_eu_national_id_card` finds content that matches the pattern.
-- A keyword from  `Keywords_cyprus_eu_national_id_card` is found.
+
+- The regular expression `Regex_cyprus_eu_national_id_card` finds content that matches the pattern.
+- A keyword from `Keywords_cyprus_eu_national_id_card` is found.
 
 ```xml
       <!-- Cyprus Identity Card -->
@@ -4571,13 +4608,12 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 #### Keywords_cyprus_eu_national_id_card
 
-- id card number
-- identity card number
-- kimlik karti
-- national identification number
-- personal id number
+- id card number
+- identity card number
+- kimlik karti
+- national identification number
+- personal id number
 - ταυτοτητασ
-
 
 ## Cyprus passport number
 
@@ -4596,13 +4632,15 @@ No
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_cyprus_eu_passport_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_passport_number` or `Keywords_cyprus_eu_passport_number` is found.
+
+- The regular expression `Regex_cyprus_eu_passport_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_passport_number` or `Keywords_cyprus_eu_passport_number` is found.
 - The regular expression `Regex_cyprus_eu_passport_date` finds date in the format DD/MM/YYYY or a keyword from `Keywords_cyprus_eu_passport_date` is found
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_cyprus_eu_passport_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_passport_number` or `Keywords_cyprus_eu_passport_number` is found.
+
+- The regular expression `Regex_cyprus_eu_passport_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_passport_number` or `Keywords_cyprus_eu_passport_number` is found.
 
 ```xml
       <!-- Cyprus Passport Number -->
@@ -4633,15 +4671,15 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 #### Keywords_eu_passport_number_common
 
 - passport#
-- passport #
+- passport #
 - passportid
 - passports
 - passportno
-- passport no
+- passport no
 - passportnumber
-- passport number
+- passport number
 - passportnumbers
-- passport numbers
+- passport numbers
 
 #### Keywords_cyprus_eu_passport_number
 
@@ -4662,7 +4700,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - expires on
 - issued on
 
-
 ## Cyprus physical addresses
 
 This unbundled named entity detects patterns related to physical address from Cyprus. It is also included in the [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
@@ -4672,10 +4709,12 @@ This unbundled named entity detects patterns related to physical address from Cy
 Medium
 
 ## Cyprus tax identification number
+
 This sensitive information type is only available for use in:
+
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -4698,11 +4737,13 @@ not applicable
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_cyprus_eu_tax_file_number` finds content that matches the pattern.
-- A keyword from  `Keywords_cyprus_eu_tax_file_number` is found.
+
+- The function `Func_cyprus_eu_tax_file_number` finds content that matches the pattern.
+- A keyword from `Keywords_cyprus_eu_tax_file_number` is found.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_cyprus_eu_tax_file_number` finds content that matches the pattern.
+
+- The function `Func_cyprus_eu_tax_file_number` finds content that matches the pattern.
 
 ```xml
       <!-- Cyprus Tax Identification Number -->
@@ -4721,14 +4762,14 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 #### Keywords_cyprus_eu_tax_file_number
 
-- tax id
-- tax identification code
-- tax identification no
-- tax identification number
-- tax no#
-- tax no
-- tax number
-- tax registration number
+- tax id
+- tax identification code
+- tax identification no
+- tax identification number
+- tax no#
+- tax no
+- tax number
+- tax registration number
 - taxid#
 - taxidno#
 - taxidnumber#
@@ -4737,16 +4778,15 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - taxnumber
 - tic#
 - tic
-- tin id
-- tin no
+- tin id
+- tin no
 - tin#
-- vergi kimlik kodu
-- vergi kimlik numarası
-- αριθμός φορολογικού μητρώου
-- κωδικός φορολογικού μητρώου
-- φορολογική ταυτότητα
-- φορολογικού κωδικού
-
+- vergi kimlik kodu
+- vergi kimlik numarası
+- αριθμός φορολογικού μητρώου
+- κωδικός φορολογικού μητρώου
+- φορολογική ταυτότητα
+- φορολογικού κωδικού
 
 ## Czech driver's license number
 
@@ -4770,8 +4810,9 @@ No
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_czech_republic_eu_driver's_license_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_driver's_license_number` or `Keywords_czech_republic_eu_driver's_license_number` is found.
+
+- The regular expression `Regex_czech_republic_eu_driver's_license_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_driver's_license_number` or `Keywords_czech_republic_eu_driver's_license_number` is found.
 
 ```xml
       <Entity id="86b40d3b-d8ea-4c36-aab0-ef9416a6769c" patternsProximity="300" recommendedConfidence="75">
@@ -4796,48 +4837,48 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - driverlicenses
 - driverlicence
 - driverlicences
-- driver lic
-- driver lics
-- driver license
-- driver licenses
-- driver licence
-- driver licences
+- driver lic
+- driver lics
+- driver license
+- driver licenses
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
-- drivers license
-- drivers licenses
-- drivers licence
-- drivers licences
+- drivers lic
+- drivers lics
+- drivers license
+- drivers licenses
+- drivers licence
+- drivers licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
 - driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
-- driver's license
-- driver's licenses
-- driver's licence
-- driver's licences
+- driver's lic
+- driver's lics
+- driver's license
+- driver's licenses
+- driver's licence
+- driver's licences
 - dl#
 - dls#
 - driverlic#
@@ -4846,68 +4887,68 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- driver lic#
-- driver lics#
-- driver license#
-- driver licenses#
-- driver licences#
+- driver lic#
+- driver lics#
+- driver license#
+- driver licenses#
+- driver licences#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
 - driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
-- driving licence 
-- driving license
+- driver's lic#
+- driver's lics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
+- driving licence
+- driving license
 - dlno#
-- driv lic
-- driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
-- driver licen
-- drivers licen
-- driver's licen
-- driving lic
-- driving licen
-- driving licenses
-- driving licence
-- driving licences
-- driving permit
-- dl no
+- driv lic
+- driv licen
+- driv license
+- driv licenses
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
+- driving licence
+- driving licences
+- driving permit
+- dl no
 - dlno
-- dl number
+- dl number
 
 #### Keywords_czech_republic_eu_driver's_license_number
 
@@ -4915,7 +4956,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - řidičské průkazy
 - číslo řidičského průkazu
 - čísla řidičských průkazů
-
 
 ## Czech passport number
 
@@ -4934,13 +4974,15 @@ No
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_czech_republic_eu_passport_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_passport_number` or `Keywords_czech_republic_eu_passport_number` is found.
+
+- The regular expression `Regex_czech_republic_eu_passport_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_passport_number` or `Keywords_czech_republic_eu_passport_number` is found.
 - The regular expression `Regex_eu_passport_date1` finds date in the format DD.MM.YYYY or a keyword from `Keywords_eu_passport_date` is found
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_czech_republic_eu_passport_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_passport_number` or `Keywords_czech_republic_eu_passport_number` is found.
+
+- The regular expression `Regex_czech_republic_eu_passport_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_passport_number` or `Keywords_czech_republic_eu_passport_number` is found.
 
 ```xml
       <!-- Czech Republic Passport Number -->
@@ -4971,15 +5013,15 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 #### Keywords_eu_passport_number_common
 
 - passport#
-- passport #
+- passport #
 - passportid
 - passports
 - passportno
-- passport no
+- passport no
 - passportnumber
-- passport number
+- passport number
 - passportnumbers
-- passport numbers
+- passport numbers
 
 #### Keywords_czech_republic_eu_passport_number
 
@@ -4994,22 +5036,24 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - date of issue
 - date of expiry
 
-
 ## Czech personal identity number
 
 ### Format
 
 nine digits with optional forward slash (old format)
+
 10 digits with optional forward slash (new format)
 
 ### Pattern
 
 nine digits (old format):
+
 - six digits that represent date of birth
 - an optional forward slash
 - three digits
 
 10 digits (new format):
+
 - six digits that represent date of birth
 - an optional forward slash
 - four digits where last digit is a check digit
@@ -5050,51 +5094,50 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 #### Keyword_czech_id_card
 
-- birth number
-- czech republic id
+- birth number
+- czech republic id
 - czechidno#
-- daňové číslo
-- identifikační číslo
-- identity no
-- identity number
+- daňové číslo
+- identifikační číslo
+- identity no
+- identity number
 - identityno#
 - identityno
-- insurance number
-- national identification number
+- insurance number
+- national identification number
 - nationalnumber#
-- national number
-- osobní číslo
+- national number
+- osobní číslo
 - personalidnumber#
-- personal id number
-- personal identification number
-- personal number
+- personal id number
+- personal identification number
+- personal number
 - pid#
 - pid
-- pojištění číslo
+- pojištění číslo
 - rč
-- rodne cislo
-- rodné číslo
+- rodne cislo
+- rodné číslo
 - ssn
 - ssn#
-- social security number
-- tax id
-- tax identification no
-- tax identification number
-- tax no#
-- tax no
-- tax number
-- tax registration number
+- social security number
+- tax id
+- tax identification no
+- tax identification number
+- tax no#
+- tax no
+- tax number
+- tax registration number
 - taxid#
 - taxidno#
 - taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
-- tin id
-- tin no
+- tin id
+- tin no
 - tin#
-- unique identification number
-
+- unique identification number
 
 ## Czech Republic physical addresses
 
@@ -5121,8 +5164,9 @@ No
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_denmark_eu_driver's_license_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_driver's_license_number` or `Keywords_denmark_eu_driver's_license_number` is found.
+
+- The regular expression `Regex_denmark_eu_driver's_license_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_driver's_license_number` or `Keywords_denmark_eu_driver's_license_number` is found.
 
 ```xml
       <!-- Denmark Driver's License Number -->
@@ -5147,48 +5191,48 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - driverlicenses
 - driverlicence
 - driverlicences
-- driver lic
-- driver lics
-- driver license
-- driver licenses
-- driver licence
-- driver licences
+- driver lic
+- driver lics
+- driver license
+- driver licenses
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
-- drivers license
-- drivers licenses
-- drivers licence
-- drivers licences
+- drivers lic
+- drivers lics
+- drivers license
+- drivers licenses
+- drivers licence
+- drivers licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
 - driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
-- driver's license
-- driver's licenses
-- driver's licence
-- driver's licences
+- driver's lic
+- driver's lics
+- driver's license
+- driver's licenses
+- driver's licence
+- driver's licences
 - dl#
 - dls#
 - driverlic#
@@ -5197,74 +5241,73 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- driver lic#
-- driver lics#
-- driver license#
-- driver licenses#
-- driver licences#
+- driver lic#
+- driver lics#
+- driver license#
+- driver licenses#
+- driver licences#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
 - driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
-- driving licence 
-- driving license
+- driver's lic#
+- driver's lics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
+- driving licence
+- driving license
 - dlno#
-- driv lic
-- driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
-- driver licen
-- drivers licen
-- driver's licen
-- driving lic
-- driving licen
-- driving licenses
-- driving licence
-- driving licences
-- driving permit
-- dl no
+- driv lic
+- driv licen
+- driv license
+- driv licenses
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
+- driving licence
+- driving licences
+- driving permit
+- dl no
 - dlno
-- dl number
+- dl number
 
 #### Keywords_denmark_eu_driver's_license_number
 
 - kørekort
 - kørekortnummer
-
 
 ## Denmark passport number
 
@@ -5283,13 +5326,15 @@ No
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_denmark_eu_passport_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_passport_number` or `Keywords_denmark_eu_passport_number` is found.
+
+- The regular expression `Regex_denmark_eu_passport_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_passport_number` or `Keywords_denmark_eu_passport_number` is found.
 - The regular expression `Regex_eu_passport_date2` finds date in the format DD MM YY or a keyword from `Keywords_eu_passport_date` is found
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_denmark_eu_passport_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_passport_number` or `Keywords_denmark_eu_passport_number` is found.
+
+- The regular expression `Regex_denmark_eu_passport_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_passport_number` or `Keywords_denmark_eu_passport_number` is found.
 
 ```xml
       <!-- Denmark Passport Number -->
@@ -5321,15 +5366,15 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 #### Keywords_eu_passport_number_common
 
 - passport#
-- passport #
+- passport #
 - passportid
 - passports
 - passportno
-- passport no
+- passport no
 - passportnumber
-- passport number
+- passport number
 - passportnumbers
-- passport numbers
+- passport numbers
 
 #### Keywords_denmark_eu_passport_number
 
@@ -5342,7 +5387,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - date of issue
 - date of expiry
 
-
 ## Denmark personal identification number
 
 ### Format
@@ -5352,6 +5396,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 ### Pattern
 
 10 digits:
+
 - six digits in the format DDMMYY, which are the date of birth
 - an optional space or hyphen
 - four digits where the final digit is a check digit
@@ -5363,11 +5408,13 @@ Yes
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The regular expression Func_denmark_eu_tax_file_number finds content that matches the pattern.
 - A keyword from Keyword_denmark_id is found.
 - The checksum passes.
 
 A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The regular expression Func_denmark_eu_tax_file_number finds content that matches the pattern.
 - The checksum passes.
 
@@ -5389,62 +5436,62 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 
 #### Keyword_denmark_id
 
-- centrale personregister
-- civilt registreringssystem
+- centrale personregister
+- civilt registreringssystem
 - cpr
 - cpr#
-- gesundheitskarte nummer
-- gesundheitsversicherungkarte nummer
-- health card
-- health insurance card number
-- health insurance number
-- identification number
+- gesundheitskarte nummer
+- gesundheitsversicherungkarte nummer
+- health card
+- health insurance card number
+- health insurance number
+- identification number
 - identifikationsnummer
 - identifikationsnummer#
-- identity number
+- identity number
 - krankenkassennummer
 - nationalid#
 - nationalnumber#
-- national number
+- national number
 - personalidnumber#
 - personalidentityno#
-- personal id number
+- personal id number
 - personnummer
 - personnummer#
 - reisekrankenversicherungskartenummer
 - rejsesygesikringskort
 - ssn
 - ssn#
-- skat id
-- skat kode
-- skat nummer
+- skat id
+- skat kode
+- skat nummer
 - skattenummer
-- social security number
+- social security number
 - sundhedsforsikringskort
 - sundhedsforsikringsnummer
 - sundhedskort
 - sundhedskortnummer
 - sygesikring
 - sygesikringkortnummer
-- tax code
-- travel health insurance card
+- tax code
+- travel health insurance card
 - uniqueidentityno#
-- tax number
-- tax registration number
-- tax id
-- tax identification number
+- tax number
+- tax registration number
+- tax id
+- tax identification number
 - taxid#
 - taxnumber#
-- tax no
+- tax no
 - taxno#
 - taxnumber
-- tax identification no
+- tax identification no
 - tin#
 - taxidno#
 - taxidnumber#
-- tax no#
-- tin id
-- tin no
+- tax no#
+- tin id
+- tin no
 - cpr.nr
 - cprnr
 - cprnummer
@@ -5459,7 +5506,6 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 - sygesikringsnr
 - sygesikringsnummer
 
-
 ## Denmark physical addresses
 
 This unbundled named entity detects patterns related to physical address from Denmark. It is also included in the [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
@@ -5468,7 +5514,6 @@ This unbundled named entity detects patterns related to physical address from De
 
 Medium
 
-
 ## Diseases
 
 This unbundled named entity detects text that matches disease names, such as *diabetes*. It supports English terms only. It is also included in the [All medical terms and conditions](#all-medical-terms-and-conditions) bundled named entity SIT.
@@ -5476,7 +5521,6 @@ This unbundled named entity detects text that matches disease names, such as *di
 ### Confidence level
 
 High
-
 
 ## Drug Enforcement Agency (DEA) number
 
@@ -5487,7 +5531,8 @@ two letters followed by seven digits
 ### Pattern
 
 Pattern must include all of the following:
-- one letter (not case-sensitive) from this set of possible letters: abcdefghjklmnprstux, which is a registrant code
+
+- one letter (not case-sensitive) from this set of possible letters: A/B/F/G/M/P/R, which is a registrant code
 - one letter (not case-sensitive), which is the first letter of the registrant's last name or digit '9'
 - seven digits, the last of which is the check digit
 
@@ -5498,11 +5543,13 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_dea_number finds content that matches the pattern.
 - A keyword from `Keyword_dea_number` is found
 - The checksum passes.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_dea_number finds content that matches the pattern.
 - The checksum passes.
 
@@ -5535,7 +5582,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - drug enforcement administration
 - drug enforcement agency
 
-
 ## Estonia driver's license number
 
 ### Format
@@ -5556,8 +5602,9 @@ No
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_estonia_eu_driver's_license_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_driver's_license_number` or `Keywords_estonia_eu_driver's_license_number` is found.
+
+- The regular expression `Regex_estonia_eu_driver's_license_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_driver's_license_number` or `Keywords_estonia_eu_driver's_license_number` is found.
 
 ```xml
       <!-- Estonia Driver's License Number -->
@@ -5582,48 +5629,48 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - driverlicenses
 - driverlicence
 - driverlicences
-- driver lic
-- driver lics
-- driver license
-- driver licenses
-- driver licence
-- driver licences
+- driver lic
+- driver lics
+- driver license
+- driver licenses
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
-- drivers license
-- drivers licenses
-- drivers licence
-- drivers licences
+- drivers lic
+- drivers lics
+- drivers license
+- drivers licenses
+- drivers licence
+- drivers licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
 - driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
-- driver's license
-- driver's licenses
-- driver's licence
-- driver's licences
+- driver's lic
+- driver's lics
+- driver's license
+- driver's licenses
+- driver's licence
+- driver's licences
 - dl#
 - dls#
 - driverlic#
@@ -5632,68 +5679,68 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- driver lic#
-- driver lics#
-- driver license#
-- driver licenses#
-- driver licences#
+- driver lic#
+- driver lics#
+- driver license#
+- driver licenses#
+- driver licences#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
 - driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
-- driving licence 
-- driving license
+- driver's lic#
+- driver's lics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
+- driving licence
+- driving license
 - dlno#
-- driv lic
-- driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
-- driver licen
-- drivers licen
-- driver's licen
-- driving lic
-- driving licen
-- driving licenses
-- driving licence
-- driving licences
-- driving permit
-- dl no
+- driv lic
+- driv licen
+- driv license
+- driv licenses
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
+- driving licence
+- driving licences
+- driving permit
+- dl no
 - dlno
-- dl number
+- dl number
 
 #### Keywords_estonia_eu_driver's_license_number
 
@@ -5701,7 +5748,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - juhilubade numbrid
 - juhiloa number
 - juhiluba
-
 
 ## Estonia passport number
 
@@ -5720,13 +5766,15 @@ No
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_estonia_eu_passport_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_passport_number` or `Keywords_estonia_eu_passport_number` is found.
+
+- The regular expression `Regex_estonia_eu_passport_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_passport_number` or `Keywords_estonia_eu_passport_number` is found.
 - The regular expression `Regex_eu_passport_date1` finds date in the format DD.MM.YYYY or a keyword from `Keywords_eu_passport_date` is found
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_estonia_eu_passport_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_passport_number` or `Keywords_estonia_eu_passport_number` is found.
+
+- The regular expression `Regex_estonia_eu_passport_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_passport_number` or `Keywords_estonia_eu_passport_number` is found.
 
 ```xml
       <!-- Estonia Passport Number -->
@@ -5757,15 +5805,15 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 #### Keywords_eu_passport_number_common
 
 - passport#
-- passport #
+- passport #
 - passportid
 - passports
 - passportno
-- passport no
+- passport no
 - passportnumber
-- passport number
+- passport number
 - passportnumbers
-- passport numbers
+- passport numbers
 
 #### Keywords_estonia_eu_passport_number
 
@@ -5781,13 +5829,13 @@ dokumendi nr
 - date of issue
 - date of expiry
 
-
 ## Estonia Personal Identification Code
 
 This sensitive information type is only available for use in:
+
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -5811,11 +5859,13 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_estonia_eu_national_id_card` finds content that matches the pattern.
-- A keyword from  `Keywords_estonia_eu_national_id_card` is found.
+
+- The function `Func_estonia_eu_national_id_card` finds content that matches the pattern.
+- A keyword from `Keywords_estonia_eu_national_id_card` is found.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_estonia_eu_national_id_card` finds content that matches the pattern.
+
+- The function `Func_estonia_eu_national_id_card` finds content that matches the pattern.
 
 ```xml
       <!-- Estonia Personal Identification Code -->
@@ -5842,33 +5892,32 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - ik
 - isikukood#
 - isikukood
-- maksu id
-- maksukohustuslase identifitseerimisnumber
+- maksu id
+- maksukohustuslase identifitseerimisnumber
 - maksunumber
-- national identification number
-- national number
-- personal code
-- personal id number
-- personal identification code
-- personal identification number
+- national identification number
+- national number
+- personal code
+- personal id number
+- personal identification code
+- personal identification number
 - personalidnumber#
-- tax id
-- tax identification no
-- tax identification number
-- tax no#
-- tax no
-- tax number
-- tax registration number
+- tax id
+- tax identification no
+- tax identification number
+- tax no#
+- tax no
+- tax number
+- tax registration number
 - taxid#
 - taxidno#
 - taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
-- tin id
-- tin no
+- tin id
+- tin no
 - tin#
-
 
 ## Estonia physical addresses
 
@@ -5877,7 +5926,6 @@ This unbundled named entity detects patterns related to physical address from Es
 ### Confidence level
 
 Medium
-
 
 ## EU debit card number
 
@@ -5896,6 +5944,7 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_eu_debit_card finds content that matches the pattern.
 - At least one of the following is true:
     - A keyword from Keyword_eu_debit_card is found.
@@ -6228,7 +6277,6 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 - vto
 - válido hasta
 
-
 ## EU driver's license number
 
 These entities are in the EU Driver's License Number and are sensitive information types.
@@ -6262,7 +6310,6 @@ These entities are in the EU Driver's License Number and are sensitive informati
 - [Sweden](#sweden-drivers-license-number)
 - [U.K.](#uk-drivers-license-number)
 
-
 ## EU national identification number
 
 These entities are in the EU National Identification Number and are sensitive information types.
@@ -6294,7 +6341,6 @@ These entities are in the EU National Identification Number and are sensitive in
 - [Slovenia](#slovenia-unique-master-citizen-number)
 - [Spain](#spain-dni)
 - [U.K.](#uk-national-insurance-number-nino)
-
 
 ## EU passport number
 
@@ -6329,7 +6375,6 @@ These entities are in the EU passport number and are sensitive information types
 - [Sweden](#sweden-passport-number)
 - [U.S./U.K. passport number](#usuk-passport-number)
 
-
 ## EU social security number or equivalent identification
 
 These are the entities that are in the EU Social Security Number or equivalent identification and are sensitive information types.
@@ -6347,7 +6392,6 @@ These are the entities that are in the EU Social Security Number or equivalent i
 - [Portugal](#portugal-citizen-card-number)
 - [Spain](#spain-social-security-number-ssn)
 - [Sweden](#sweden-national-id)
-
 
 ## EU Tax identification number
 
@@ -6382,7 +6426,6 @@ These entities are in the EU Tax identification number sensitive information typ
 - [Sweden](#sweden-tax-identification-number)
 - [U.K.](#uk-unique-taxpayer-reference-number)
 
-
 ## Finland driver's license number
 
 ### Format
@@ -6405,8 +6448,9 @@ No
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_finland_eu_driver's_license_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_driver's_license_number` or `Keywords_finland_eu_driver's_license_number` is found.
+
+- The regular expression `Regex_finland_eu_driver's_license_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_driver's_license_number` or `Keywords_finland_eu_driver's_license_number` is found.
 
 ```xml
       <!-- Finland Driver's License Number -->
@@ -6431,48 +6475,48 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - driverlicenses
 - driverlicence
 - driverlicences
-- driver lic
-- driver lics
-- driver license
-- driver licenses
-- driver licence
-- driver licences
+- driver lic
+- driver lics
+- driver license
+- driver licenses
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
-- drivers license
-- drivers licenses
-- drivers licence
-- drivers licences
+- drivers lic
+- drivers lics
+- drivers license
+- drivers licenses
+- drivers licence
+- drivers licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
 - driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
-- driver's license
-- driver's licenses
-- driver's licence
-- driver's licences
+- driver's lic
+- driver's lics
+- driver's license
+- driver's licenses
+- driver's licence
+- driver's licences
 - dl#
 - dls#
 - driverlic#
@@ -6481,69 +6525,68 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- driver lic#
-- driver lics#
-- driver license#
-- driver licenses#
-- driver licences#
+- driver lic#
+- driver lics#
+- driver license#
+- driver licenses#
+- driver licences#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
 - driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
-- driving licence 
-- driving license
+- driver's lic#
+- driver's lics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
+- driving licence
+- driving license
 - dlno#
-- driv lic
-- driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
-- driver licen
-- drivers licen
-- driver's licen
-- driving lic
-- driving licen
-- driving licenses
-- driving licence
-- driving licences
-- driving permit
-- dl no
+- driv lic
+- driv licen
+- driv license
+- driv licenses
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
+- driving licence
+- driving licences
+- driving permit
+- dl no
 - dlno
-- dl number
-
+- dl number
 
 #### Keywords_finland_eu_driver's_license_number
 
@@ -6557,13 +6600,13 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - ajokortit
 - ajokortin numerot
 
-
 ## Finland european health insurance number
 
 This sensitive information type is only available for use in:
+
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -6586,6 +6629,7 @@ No
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The regex Regex_Finland_European_Health_Insurance_Number finds content that matches the pattern.
 - A keyword from Keyword_Finland_European_Health_Insurance_Number is found.
 
@@ -6605,19 +6649,18 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - ehic#
 - ehic
 - finlandehicnumber#
-- finska sjukförsäkringskort
-- health card
-- health insurance card
-- health insurance number
+- finska sjukförsäkringskort
+- health card
+- health insurance card
+- health insurance number
 - hälsokort
 - sairaanhoitokortin
 - sairausvakuutuskortti
 - sairausvakuutusnumero
-- sjukförsäkring nummer
+- sjukförsäkring nummer
 - sjukförsäkringskort
-- suomen sairausvakuutuskortti
+- suomen sairausvakuutuskortti
 - terveyskortti
-
 
 ## Finland national ID
 
@@ -6628,6 +6671,7 @@ six digits plus a character indicating a century plus three digits plus a check 
 ### Pattern
 
 Pattern must include all of the following:
+
 - six digits in the format DDMMYY, which are a date of birth
 - century marker (either '-', '+' or 'a')
 - three-digit personal identification number
@@ -6640,11 +6684,13 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - the function Func_finnish_national_id finds content that matches the pattern
 - a keyword from Keyword_finnish_national_id is found
 - the checksum passes
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - the function Func_finnish_national_id finds content that matches the pattern
 - the checksum passes
 
@@ -6663,54 +6709,53 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ### Keywords
 
-- ainutlaatuinen henkilökohtainen tunnus
-- henkilökohtainen tunnus
+- ainutlaatuinen henkilökohtainen tunnus
+- henkilökohtainen tunnus
 - henkilötunnus
 - henkilötunnusnumero#
 - henkilötunnusnumero
 - hetu
-- id no
-- id number
-- identification number
-- identiteetti numero
-- identity number
+- id no
+- id number
+- identification number
+- identiteetti numero
+- identity number
 - idnumber
-- kansallinen henkilötunnus
-- kansallisen henkilökortin
-- national id card
-- national id no.
-- personal id
-- personal identity code
+- kansallinen henkilötunnus
+- kansallisen henkilökortin
+- national id card
+- national id no.
+- personal id
+- personal identity code
 - personalidnumber#
 - personbeteckning
 - personnummer
-- social security number
+- social security number
 - sosiaaliturvatunnus
-- tax id
-- tax identification no
-- tax identification number
-- tax no#
-- tax no
-- tax number
-- tax registration number
+- tax id
+- tax identification no
+- tax identification number
+- tax no#
+- tax no
+- tax number
+- tax registration number
 - taxid#
 - taxidno#
 - taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
-- tin id
-- tin no
+- tin id
+- tin no
 - tin#
 - tunnistenumero
-- tunnus numero
+- tunnus numero
 - tunnusluku
 - tunnusnumero
 - verokortti
 - veronumero
 - verotunniste
 - verotunnus
-
 
 ## Finland passport number
 
@@ -6720,7 +6765,9 @@ This entity is available in the EU Passport Number sensitive information type an
 combination of nine letters and digits
 
 ### Pattern
+
 combination of nine letters and digits:
+
 - two letters (not case-sensitive)
 - seven digits
 
@@ -6731,11 +6778,13 @@ No
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The regular expression `Regex_finland_passport_number` finds content that matches the pattern.
 - A keyword from `Keywords_eu_passport_number` or `Keyword_finland_passport_number` is found.
 - The regular expression `Regex_eu_passport_date1` finds date in the format DD.MM.YYYY or a keyword from `Keywords_eu_passport_date` is found
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The regular expression `Regex_finland_passport_number` finds content that matches the pattern.
 - A keyword from `Keywords_eu_passport_number` or `Keyword_finland_passport_number` is found.
 
@@ -6767,15 +6816,15 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 #### Keywords_eu_passport_number
 
 - passport#
-- passport #
+- passport #
 - passportid
 - passports
 - passportno
-- passport no
+- passport no
 - passportnumber
-- passport number
+- passport number
 - passportnumbers
-- passport numbers
+- passport numbers
 
 #### Keyword_finland_passport_number
 
@@ -6792,7 +6841,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - date of issue
 - date of expiry
 
-
 ## Finland physical addresses
 
 This unbundled named entity detects patterns related to physical address from Finland. It is also included in the [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
@@ -6800,7 +6848,6 @@ This unbundled named entity detects patterns related to physical address from Fi
 ### Confidence level
 
 Medium
-
 
 ## France driver's license number
 
@@ -6821,6 +6868,7 @@ No
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - the function Func_french_drivers_license finds content that matches the pattern.
 - a keyword from Keyword_french_drivers_license is found.
 
@@ -6844,48 +6892,48 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - driverlicenses
 - driverlicence
 - driverlicences
-- driver lic
-- driver lics
-- driver license
-- driver licenses
-- driver licence
-- driver licences
+- driver lic
+- driver lics
+- driver license
+- driver licenses
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
-- drivers license
-- drivers licenses
-- drivers licence
-- drivers licences
+- drivers lic
+- drivers lics
+- drivers license
+- drivers licenses
+- drivers licence
+- drivers licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
 - driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
-- driver's license
-- driver's licenses
-- driver's licence
-- driver's licences
+- driver's lic
+- driver's lics
+- driver's license
+- driver's licenses
+- driver's licence
+- driver's licences
 - dl#
 - dls#
 - driverlic#
@@ -6894,82 +6942,82 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- driver lic#
-- driver lics#
-- driver license#
-- driver licenses#
-- driver licences#
+- driver lic#
+- driver lics#
+- driver license#
+- driver licenses#
+- driver licences#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
 - driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
-- driving licence 
-- driving license
+- driver's lic#
+- driver's lics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
+- driving licence
+- driving license
 - dlno#
-- driv lic
-- driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
-- driver licen
-- drivers licen
-- driver's licen
-- driving lic
-- driving licen
-- driving licenses
-- driving licence
-- driving licences
-- driving permit
-- dl no
+- driv lic
+- driv licen
+- driv license
+- driv licenses
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
+- driving licence
+- driving licences
+- driving permit
+- dl no
 - dlno
-- dl number
-- permis de conduire
-- licence number
-- license number
-- licence numbers
-- license numbers
-- numéros de licence
-
+- dl number
+- permis de conduire
+- licence number
+- license number
+- licence numbers
+- license numbers
+- numéros de licence
 
 ## France health insurance number
 
 This sensitive information type is only available for use in:
+
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -6987,7 +7035,6 @@ This sensitive information type is only available for use in:
 - an optional space
 - a digit
 
-
 ### Checksum
 
 No
@@ -6995,6 +7042,7 @@ No
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - the regex Regex_France_Health_Insurance_Number finds content that matches the pattern.
 - a keyword from Keyword_France_Health_Insurance_Number is found.
 
@@ -7011,10 +7059,9 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 #### Keyword_France_health_insurance_number
 
-- insurance card
-- carte vitale
-- carte d'assuré social
-
+- insurance card
+- carte vitale
+- carte d'assuré social
 
 ## France national id card (CNI)
 
@@ -7033,6 +7080,7 @@ No
 ### Definition
 
 A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The regular expression Regex_france_cni finds content that matches the pattern.
 - A keyword from Keywords_france_eu_national_id_card is found.
 
@@ -7050,18 +7098,17 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 
 #### Keywords_france_eu_national_id_card
 
-- card number
-- carte nationale d’identité
-- carte nationale d'idenite no
+- card number
+- carte nationale d'identité
+- carte nationale d'idenite no
 - cni#
 - cni
-- compte bancaire
-- national identification number
-- national identity
+- compte bancaire
+- national identification number
+- national identity
 - nationalidno#
-- numéro d'assurance maladie
-- numéro de carte vitale
-
+- numéro d'assurance maladie
+- numéro de carte vitale
 
 ## France passport number
 
@@ -7074,6 +7121,7 @@ nine digits and letters
 ### Pattern
 
 nine digits and letters:
+
 - two digits
 - two letters (not case-sensitive)
 - five digits
@@ -7085,14 +7133,15 @@ No
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function `Func_fr_passport` finds content that matches the pattern.
 - A keyword from `Keywords_eu_passport_number` or `Keywords_france_eu_passport_number` is found.
 - The regular expression `Regex_eu_passport_date3` finds date in the format DD MM YYYY or a keyword from `Keywords_eu_passport_date` is found
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function `Func_fr_passport` finds content that matches the pattern.
 - A keyword from `Keywords_eu_passport_number` or `Keywords_france_eu_passport_number` is found.
-
 
 ```xml
     <!-- France Passport Number -->
@@ -7123,38 +7172,37 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 #### Keywords_eu_passport_number
 
 - passport#
-- passport #
+- passport #
 - passportid
 - passports
 - passportno
-- passport no
+- passport no
 - passportnumber
-- passport number
+- passport number
 - passportnumbers
-- passport numbers
+- passport numbers
 
 #### Keywords_france_eu_passport_number
 
-- numéro de passeport
-- passeport n °
-- passeport non
-- passeport #
+- numéro de passeport
+- passeport n °
+- passeport non
+- passeport #
 - passeport#
 - passeportnon
-- passeportn °
-- passeport français
-- passeport livre
-- passeport carte
-- numéro passeport
-- passeport n°
-- n° du passeport
-- n° passeport
+- passeportn °
+- passeport français
+- passeport livre
+- passeport carte
+- numéro passeport
+- passeport n°
+- n° du passeport
+- n° passeport
 
 #### Keywords_eu_passport_date
 
 - date of issue
 - date of expiry
-
 
 ## France physical addresses
 
@@ -7163,7 +7211,6 @@ This unbundled named entity detects patterns related to physical address from Fr
 ### Confidence level
 
 Medium
-
 
 ## France social security number (INSEE)
 
@@ -7174,8 +7221,11 @@ Medium
 ### Pattern
 
 Must match one of two patterns:
-- 13 digits followed by a space followed by two digits<br/>
-or
+
+- 13 digits followed by a space followed by two digits
+
+  or
+
 - 15 consecutive digits
 
 ### Checksum
@@ -7185,11 +7235,13 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function `Func_french_insee` finds content that matches the pattern.
 - A keyword from Keyword_fr_insee is found.
 - The checksum passes.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_french_insee or Func_fr_insee finds content that matches the pattern.
 - The checksum passes.
 
@@ -7213,33 +7265,32 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 #### Keyword_fr_insee
 
-- code sécu
-- d'identité nationale
+- code sécu
+- d'identité nationale
 - insee
 - fssn#
-- le numéro d'identification nationale
-- le code de la sécurité sociale
-- national id
-- national identification
-- no d'identité
-- no. d'identité
-- numéro d'assurance
-- numéro d'identité
-- numero d'identite
-- numéro de sécu
-- numéro de sécurité sociale
-- no d'identite
-- no. d'identite
+- le numéro d'identification nationale
+- le code de la sécurité sociale
+- national id
+- national identification
+- no d'identité
+- no. d'identité
+- numéro d'assurance
+- numéro d'identité
+- numero d'identite
+- numéro de sécu
+- numéro de sécurité sociale
+- no d'identite
+- no. d'identite
 - ssn
 - ssn#
-- sécurité sociale
-- securité sociale
-- securite sociale
+- sécurité sociale
+- securité sociale
+- securite sociale
 - socialsecuritynumber
-- social security number
-- social security code
-- social insurance number
-
+- social security number
+- social security code
+- social insurance number
 
 ## France tax identification number
 
@@ -7262,7 +7313,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - A space (optional)
 - Three check digits
 
-
 ### Checksum
 
 Yes
@@ -7270,11 +7320,13 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_france_eu_tax_file_number` finds content that matches the pattern.
-- A keyword from  `Keywords_france_eu_tax_file_number` is found.
+
+- The function `Func_france_eu_tax_file_number` finds content that matches the pattern.
+- A keyword from `Keywords_france_eu_tax_file_number` is found.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_france_eu_tax_file_number` finds content that matches the pattern.
+
+- The function `Func_france_eu_tax_file_number` finds content that matches the pattern.
 
 ```xml
       <!-- France Tax Identification Number (numéro SPI.) -->
@@ -7298,31 +7350,31 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 #### Keywords_france_eu_tax_file_number
 
-- numéro d'identification fiscale
-- tax id
-- tax identification no
-- tax identification number
-- tax no#
-- tax no
-- tax number
-- tax registration number
+- numéro d'identification fiscale
+- tax id
+- tax identification no
+- tax identification number
+- tax no#
+- tax no
+- tax number
+- tax registration number
 - taxid#
 - taxidno#
 - taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
-- tin id
-- tin no
+- tin id
+- tin no
 - tin#
-
 
 ## France value added tax number
 
 This sensitive information type is only available for use in:
+
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -7351,10 +7403,12 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_france_value_added_tax_number finds content that matches the pattern.
 - A keyword from Keywords_france_value_added_tax_number is found.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_france_value_added_tax_number finds content that matches the pattern.
 
 ```xml
@@ -7373,17 +7427,16 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 #### Keyword_France_value_added_tax_number
 
-- vat number
-- vat no
+- vat number
+- vat no
 - vat#
-- value added tax
-- siren identification no numéro d'identification taxe sur valeur ajoutée
-- taxe valeur ajoutée
-- taxe sur la valeur ajoutée
-- n° tva
-- numéro de tva
-- numéro d'identification siren
-
+- value added tax
+- siren identification no numéro d'identification taxe sur valeur ajoutée
+- taxe valeur ajoutée
+- taxe sur la valeur ajoutée
+- n° tva
+- numéro de tva
+- numéro d'identification siren
 
 ## Generic medication names
 
@@ -7392,7 +7445,6 @@ This unbundled named entity detects names of generic medications, such as *aceta
 ### Confidence level
 
 High
-
 
 ## Germany driver's license number
 
@@ -7405,6 +7457,7 @@ combination of 11 digits and letters
 ### Pattern
 
 11 digits and letters (not case-sensitive):
+
 - a digit or letter
 - two digits
 - six digits or letters
@@ -7418,6 +7471,7 @@ Yes
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_german_drivers_license finds content that matches the pattern.
 - A keyword from Keyword_german_drivers_license_number is found.
 - The checksum passes.
@@ -7438,18 +7492,18 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 - ausstellungsdatum
 - ausstellungsort
-- ausstellende behöde
-- ausstellende behorde
-- ausstellende behoerde
+- ausstellende behöde
+- ausstellende behorde
+- ausstellende behoerde
 - führerschein
 - fuhrerschein
 - fuehrerschein
 - führerscheinnummer
 - fuhrerscheinnummer
 - fuehrerscheinnummer
-- führerschein- 
-- fuhrerschein- 
-- fuehrerschein- 
+- führerschein-
+- fuhrerschein-
+- fuehrerschein-
 - führerscheinnummernr
 - fuhrerscheinnummernr
 - fuehrerscheinnummernr
@@ -7465,55 +7519,55 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - n-führerschein
 - n-fuhrerschein
 - n-fuehrerschein
-- permis de conduire
+- permis de conduire
 - driverlic
 - driverlics
 - driverlicense
 - driverlicenses
 - driverlicence
 - driverlicences
-- driver lic
-- driver lics
-- driver license
-- driver licenses
-- driver licence
-- driver licences
+- driver lic
+- driver lics
+- driver license
+- driver licenses
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
-- drivers license
-- drivers licenses
-- drivers licence
-- drivers licences
+- drivers lic
+- drivers lics
+- drivers license
+- drivers licenses
+- drivers licence
+- drivers licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
 - driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
-- driver's license
-- driver's licenses
-- driver's licence
-- driver's licences
+- driver's lic
+- driver's lics
+- driver's license
+- driver's licenses
+- driver's licence
+- driver's licences
 - dl#
 - dls#
 - driverlic#
@@ -7522,67 +7576,66 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- driver lic#
-- driver lics#
-- driver license#
-- driver licenses#
-- driver licences#
+- driver lic#
+- driver lics#
+- driver license#
+- driver licenses#
+- driver licences#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
 - driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
-- driving licence 
-- driving license
+- driver's lic#
+- driver's lics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
+- driving licence
+- driving license
 - dlno#
-- driv lic
-- driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
-- driver licen
-- drivers licen
-- driver's licen
-- driving lic
-- driving licen
-- driving licenses
-- driving licence
-- driving licences
-- driving permit
+- driv lic
+- driv licen
+- driv license
+- driv licenses
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
+- driving licence
+- driving licences
+- driving permit
 - dlno
-
 
 ## Germany identity card number
 
@@ -7601,6 +7654,7 @@ since 1 November 2010: 9 to 11 characters alphanumeric pattern
 - Optional d/D
 
 from 1 April 1987 until 31 October 2010:
+
 - 10 digits
 
 ### Checksum
@@ -7610,34 +7664,36 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function `Func_german_id_card_with_check` finds content that matches the pattern.
 - A keyword from `Keyword_germany_id_card` is found.
 - The checksum passes.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The regular expression `Regex_germany_id_card` finds content that matches the pattern (9 characters without check digit issued pre-2010 or 10 digits pattern issued posy 2010).
 - A keyword from Keyword_germany_id_card is found.
 
 A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function `Func_german_id_card_with_check` finds content that matches the pattern.
 - The checksum passes.
 
-
 ```xml
       <!-- Germany Identity Card Number -->
-      <Entity id="e577372f-c42e-47a0-9d85-bebed1c237d4" patternsProximity="300" recommendedConfidence="75"> 
+      <Entity id="e577372f-c42e-47a0-9d85-bebed1c237d4" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
-         <IdMatch idRef="Regex_germany_id_card" /> 
-         <Match idRef="Keyword_germany_id_card" /> 
+         <IdMatch idRef="Regex_germany_id_card" />
+         <Match idRef="Keyword_germany_id_card" />
         </Pattern>
-        <Version minEngineVersion="15.20.4545.000"> 
+        <Version minEngineVersion="15.20.4545.000">
           <Pattern confidenceLevel="85">
            <IdMatch idRef="Func_german_id_card_with_check" />
-            <Match idRef="Keyword_germany_id_card" /> 
-          </Pattern> 
+            <Match idRef="Keyword_germany_id_card" />
+          </Pattern>
           <Pattern confidenceLevel="65">
-           <IdMatch idRef="Func_german_id_card_with_check" /> 
-          </Pattern> 
+           <IdMatch idRef="Func_german_id_card_with_check" />
+          </Pattern>
         </Version>
       </Entity>
 ```
@@ -7651,15 +7707,14 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 - identification
 - identifikation
 - identifizierungsnummer
-- identity card
-- identity number
+- identity card
+- identity number
 - id-nummer
-- personal id
+- personal id
 - personalausweis
-- persönliche id nummer
-- persönliche identifikationsnummer
+- persönliche id nummer
+- persönliche identifikationsnummer
 - persönliche-id-nummer
-
 
 ## Germany passport number
 
@@ -7681,15 +7736,18 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function `Func_german_passport_checksum` finds content that matches the pattern.
 - A keyword from `Keyword_german_passport` or `Keywords_eu_passport_number_common` is found.
 - The checksum passes.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function `Func_german_passport` finds content that matches the nine characters pattern (without check digit and optional d/D).
 - A keyword from `Keyword_german_passport` or `Keywords_eu_passport_number_common` is found.
 
 A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function `Func_german_passport_checksum` finds content that matches the pattern.
 - The checksum passes.
 
@@ -7735,16 +7793,15 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 #### Keywords_eu_passport_number_common
 
 - passport#
-- passport #
+- passport #
 - passportid
 - passports
 - passportno
-- passport no
+- passport no
 - passportnumber
-- passport number
+- passport number
 - passportnumbers
-- passport numbers
-
+- passport numbers
 
 ## Germany physical addresses
 
@@ -7753,7 +7810,6 @@ This unbundled named entity detects patterns related to physical address from Ge
 ### Confidence level
 
 Medium
-
 
 ## Germany tax identification number
 
@@ -7781,11 +7837,13 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_germany_eu_tax_file_number` finds content that matches the pattern.
-- A keyword from  `Keywords_germany_eu_tax_file_number` is found.
+
+- The function `Func_germany_eu_tax_file_number` finds content that matches the pattern.
+- A keyword from `Keywords_germany_eu_tax_file_number` is found.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_germany_eu_tax_file_number` finds content that matches the pattern.
+
+- The function `Func_germany_eu_tax_file_number` finds content that matches the pattern.
 
 ```xml
       <!-- Germany Tax Identification Number -->
@@ -7805,36 +7863,36 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 #### Keywords_germany_eu_tax_file_number
 
 - identifikationsnummer
-- steuer id
+- steuer id
 - steueridentifikationsnummer
 - steuernummer
-- tax id
-- tax identification no
-- tax identification number
-- tax no#
-- tax no
-- tax number
-- tax registration number
+- tax id
+- tax identification no
+- tax identification number
+- tax no#
+- tax no
+- tax number
+- tax registration number
 - taxid#
 - taxidno#
 - taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
-- tin id
-- tin no
+- tin id
+- tin no
 - tin#
 - zinn#
 - zinn
 - zinnnummer
 
-
 ## Germany value added tax number
 
 This sensitive information type is only available for use in:
+
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -7862,10 +7920,12 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_germany_value_added_tax_number finds content that matches the pattern.
 - A keyword from Keywords_germany_value_added_tax_number is found.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_germany_value_added_tax_number finds content that matches the pattern.
 
 ```xml
@@ -7884,14 +7944,13 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 #### Keyword_germany_value_added_tax_number
 
-- vat number
-- vat no
+- vat number
+- vat no
 - vat#
-- vat#  mehrwertsteuer
+- vat#  mehrwertsteuer
 - mwst
-- mehrwertsteuer identifikationsnummer
-- mehrwertsteuer nummer
-
+- mehrwertsteuer identifikationsnummer
+- mehrwertsteuer nummer
 
 ## Greece driver's license number
 
@@ -7912,8 +7971,9 @@ No
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_greece_eu_driver's_license_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_driver's_license_number` or `Keywords_greece_eu_driver's_license_number` is found.
+
+- The regular expression `Regex_greece_eu_driver's_license_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_driver's_license_number` or `Keywords_greece_eu_driver's_license_number` is found.
 
 ```xml
       <!-- Greece Driver's License Number -->
@@ -7938,48 +7998,48 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - driverlicenses
 - driverlicence
 - driverlicences
-- driver lic
-- driver lics
-- driver license
-- driver licenses
-- driver licence
-- driver licences
+- driver lic
+- driver lics
+- driver license
+- driver licenses
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
-- drivers license
-- drivers licenses
-- drivers licence
-- drivers licences
+- drivers lic
+- drivers lics
+- drivers license
+- drivers licenses
+- drivers licence
+- drivers licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
 - driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
-- driver's license
-- driver's licenses
-- driver's licence
-- driver's licences
+- driver's lic
+- driver's lics
+- driver's license
+- driver's licenses
+- driver's licence
+- driver's licences
 - dl#
 - dls#
 - driverlic#
@@ -7988,69 +8048,68 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- driver lic#
-- driver lics#
-- driver license#
-- driver licenses#
-- driver licences#
+- driver lic#
+- driver lics#
+- driver license#
+- driver licenses#
+- driver licences#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
 - driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
-- driving licence 
-- driving license
+- driver's lic#
+- driver's lics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
+- driving licence
+- driving license
 - dlno#
-- driv lic
-- driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
-- driver licen
-- drivers licen
-- driver's licen
-- driving lic
-- driving licen
-- driving licenses
-- driving licence
-- driving licences
-- driving permit
-- dl no
+- driv lic
+- driv licen
+- driv license
+- driv licenses
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
+- driving licence
+- driving licences
+- driving permit
+- dl no
 - dlno
-- dl number
-
+- dl number
 
 #### Keywords_greece_eu_driver's_license_number
 
@@ -8058,7 +8117,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - Adeia odigisis
 - Άδεια οδήγησης
 - Δίπλωμα οδήγησης
-
 
 ## Greece national ID card
 
@@ -8069,11 +8127,13 @@ Combination of 7-8 letters and numbers plus a dash
 ### Pattern
 
 Seven letters and numbers (old format):
+
 - One letter (any letter of the Greek alphabet)
 - A dash
 - Six digits
 
 Eight letters and numbers (new format):
+
 - Two letters whose uppercase character occurs in both the Greek and Latin alphabets (ABEZHIKMNOPTYX)
 - A dash
 - Six digits
@@ -8085,10 +8145,12 @@ No
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The regular expression Regex_greece_id_card finds content that matches the pattern.
 - A keyword from Keyword_greece_id_card is found.
 
 A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The regular expression Regex_greece_id_card finds content that matches the pattern.
 
 ```xml
@@ -8108,15 +8170,14 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 
 #### Keyword_greece_id_card
 
-- greek id
-- greek national id
-- greek personal id card
-- greek police id
-- identity card
+- greek id
+- greek national id
+- greek personal id card
+- greek police id
+- identity card
 - tautotita
 - ταυτότητα
 - ταυτότητας
-
 
 ## Greece passport number
 
@@ -8135,13 +8196,15 @@ No
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_greece_eu_passport_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_passport_number` or `Keywords_greece_eu_passport_number` is found.
+
+- The regular expression `Regex_greece_eu_passport_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_passport_number` or `Keywords_greece_eu_passport_number` is found.
 - The regular expression `Regex_greece_eu_passport_date` finds date in the format DD MMM YY (Example - 28 Aug 19) or a keyword from `Keywords_greece_eu_passport_date` is found
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_greece_eu_passport_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_passport_number` or `Keywords_greece_eu_passport_number` is found.
+
+- The regular expression `Regex_greece_eu_passport_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_passport_number` or `Keywords_greece_eu_passport_number` is found.
 
 ```xml
       <!-- Greece Passport Number -->
@@ -8172,22 +8235,21 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 #### Keywords_eu_passport_number
 
 - passport#
-- passport #
+- passport #
 - passportid
 - passports
 - passportno
-- passport no
+- passport no
 - passportnumber
-- passport number
+- passport number
 - passportnumbers
-- passport numbers
+- passport numbers
 
 #### Keywords_greece_eu_passport_number
 
 - αριθμός διαβατηρίου
 - αριθμούς διαβατηρίου
 - αριθμός διαβατηριο
-
 
 ## Greece physical addresses
 
@@ -8200,9 +8262,10 @@ Medium
 ## Greece Social Security Number (AMKA)
 
 This sensitive information type is only available for use in:
+
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -8223,11 +8286,13 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_greece_eu_ssn` finds content that matches the pattern.
-- A keyword from  `Keywords_greece_eu_ssn_or_equivalent` is found.
+
+- The function `Func_greece_eu_ssn` finds content that matches the pattern.
+- A keyword from `Keywords_greece_eu_ssn_or_equivalent` is found.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_greece_eu_ssn` finds content that matches the pattern.
+
+- The function `Func_greece_eu_ssn` finds content that matches the pattern.
 
 ```xml
       <!-- Greece Social Security Number (AMKA) -->
@@ -8255,13 +8320,13 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - a.m.k.a.
 - Αριθμού Μητρώου Κοινωνικής Ασφάλισης
 
-
 ## Greece tax identification number
 
 This sensitive information type is only available for use in:
+
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -8281,8 +8346,8 @@ Not applicable
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The regular expression  `Regex_greece_eu_tax_file_number` finds content that matches the pattern.
-- A keyword from  `Keywords_greece_eu_tax_file_number` is found.
+- The regular expression `Regex_greece_eu_tax_file_number` finds content that matches the pattern.
+- A keyword from `Keywords_greece_eu_tax_file_number` is found.
 
 ```xml
       <!-- Greek Tax Identification Number -->
@@ -8300,17 +8365,17 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 - afm#
 - afm
-- aφμ|aφμ αριθμός
+- aφμ|aφμ αριθμός
 - aφμ
-- tax id
-- tax identification no
-- tax identification number
-- tax no#
-- tax no
-- tax number
-- tax registration number
-- tax registry no
-- tax registry number
+- tax id
+- tax identification no
+- tax identification number
+- tax no#
+- tax no
+- tax number
+- tax registration number
+- tax registry no
+- tax registry number
 - taxid#
 - taxidno#
 - taxidnumber#
@@ -8318,13 +8383,12 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - taxnumber#
 - taxnumber
 - taxregistryno#
-- tin id
-- tin no
+- tin id
+- tin no
 - tin#
-- αριθμός φορολογικού μητρώου
-- τον αριθμό φορολογικού μητρώου
-- φορολογικού μητρώου νο
-
+- αριθμός φορολογικού μητρώου
+- τον αριθμό φορολογικού μητρώου
+- φορολογικού μητρώου νο
 
 ## Hong Kong identity card (HKID) number
 
@@ -8335,9 +8399,11 @@ Combination of 8-9 letters and numbers plus optional parentheses around the fina
 ### Pattern
 
 Combination of 8-9 letters:
+
 - 1-2 letters (not case-sensitive)
 - Six digits
-- The final character (any digit or the letter A), which is the check digit and is optionally enclosed in parentheses.
+- optional space
+- a check character (any digit or the letter A) which is optionally enclosed in parentheses
 
 ### Checksum
 
@@ -8346,11 +8412,13 @@ Yes
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_hong_kong_id_card finds content that matches the pattern.
 - A keyword from Keyword_hong_kong_id_card is found.
 - The checksum passes.
 
 A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_hong_kong_id_card finds content that matches the pattern.
 - The checksum passes.
 
@@ -8409,7 +8477,6 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 - 香港特別行政區非永久性居民身分證
 - 香港特別行政區非永久性居民身分証
 
-
 ## Hungary driver's license number
 
 ### Format
@@ -8431,8 +8498,8 @@ No
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The regular expression  `Regex_hungary_eu_driver's_license_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_driver's_license_number` or `Keywords_hungary_eu_driver's_license_number` is found.
+- The regular expression `Regex_hungary_eu_driver's_license_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_driver's_license_number` or `Keywords_hungary_eu_driver's_license_number` is found.
 
 ```xml
       <Entity id="9d31c46b-6e6b-444c-aeb1-6dd7e604bb24" patternsProximity="300" recommendedConfidence="75">
@@ -8456,48 +8523,48 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - driverlicenses
 - driverlicence
 - driverlicences
-- driver lic
-- driver lics
-- driver license
-- driver licenses
-- driver licence
-- driver licences
+- driver lic
+- driver lics
+- driver license
+- driver licenses
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
-- drivers license
-- drivers licenses
-- drivers licence
-- drivers licences
+- drivers lic
+- drivers lics
+- drivers license
+- drivers licenses
+- drivers licence
+- drivers licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
 - driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
-- driver's license
-- driver's licenses
-- driver's licence
-- driver's licences
+- driver's lic
+- driver's lics
+- driver's license
+- driver's licenses
+- driver's licence
+- driver's licences
 - dl#
 - dls#
 - driverlic#
@@ -8506,76 +8573,74 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- driver lic#
-- driver lics#
-- driver license#
-- driver licenses#
-- driver licences#
+- driver lic#
+- driver lics#
+- driver license#
+- driver licenses#
+- driver licences#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
 - driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
-- driving licence 
-- driving license
+- driver's lic#
+- driver's lics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
+- driving licence
+- driving license
 - dlno#
-- driv lic
-- driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
-- driver licen
-- drivers licen
-- driver's licen
-- driving lic
-- driving licen
-- driving licenses
-- driving licence
-- driving licences
-- driving permit
-- dl no
+- driv lic
+- driv licen
+- driv license
+- driv licenses
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
+- driving licence
+- driving licences
+- driving permit
+- dl no
 - dlno
-- dl number
-
+- dl number
 
 #### Keywords_hungary_eu_driver's_license_number
 
 - vezetoi engedely
 - vezetői engedély
 - vezetői engedélyek
-
 
 ## Hungary passport number
 
@@ -8594,13 +8659,15 @@ No
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_hungary_eu_passport_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_passport_number` or `Keywords_hungary_eu_passport_number` is found.
+
+- The regular expression `Regex_hungary_eu_passport_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_passport_number` or `Keywords_hungary_eu_passport_number` is found.
 - The regular expression `Regex_hungary_eu_passport_date` finds date in the format  DD MMM/MMM YY (Example - 01 MÁR/MAR 12) or a keyword from `Keywords_eu_passport_date` is found
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_hungary_eu_passport_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_passport_number` or `Keywords_hungary_eu_passport_number` is found.
+
+- The regular expression `Regex_hungary_eu_passport_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_passport_number` or `Keywords_hungary_eu_passport_number` is found.
 
 ```xml
       <!-- Hungary Passport Number -->
@@ -8630,15 +8697,15 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 #### Keywords_eu_passport_number
 
 - passport#
-- passport #
+- passport #
 - passportid
 - passports
 - passportno
-- passport no
+- passport no
 - passportnumber
-- passport number
+- passport number
 - passportnumbers
-- passport numbers
+- passport numbers
 
 #### Keywords_hungary_eu_passport_number
 
@@ -8651,13 +8718,13 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - date of issue
 - date of expiry
 
-
 ## Hungary personal identification number
 
 This sensitive information type is only available for use in:
+
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -8682,12 +8749,12 @@ Yes
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The function  `Func_hungary_eu_national_id_card` finds content that matches the pattern.
-- A keyword from  `Keywords_hungary_eu_national_id_card` is found.
+- The function `Func_hungary_eu_national_id_card` finds content that matches the pattern.
+- A keyword from `Keywords_hungary_eu_national_id_card` is found.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The function  `Func_hungary_eu_national_id_card` finds content that matches the pattern.
+- The function `Func_hungary_eu_national_id_card` finds content that matches the pattern.
 
 ```xml
       <!-- Hungary Personal Identification Number -->
@@ -8710,14 +8777,13 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 #### Keywords_hungary_eu_national_id_card
 
-- id number
-- identification number
-- sz ig
-- sz. ig.
+- id number
+- identification number
+- sz ig
+- sz. ig.
 - sz.ig.
-- személyazonosító igazolvány
-- személyi igazolvány
-
+- személyazonosító igazolvány
+- személyi igazolvány
 
 ## Hungary physical addresses
 
@@ -8726,7 +8792,6 @@ This unbundled named entity detects patterns related to physical address from Hu
 ### Confidence level
 
 Medium
-
 
 ## Hungary social security number (TAJ)
 
@@ -8746,12 +8811,12 @@ Yes
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The function  `Func_hungary_eu_ssn_or_equivalent` finds content that matches the pattern.
-- A keyword from  `Keywords_hungary_eu_ssn_or_equivalent` is found.
+- The function `Func_hungary_eu_ssn_or_equivalent` finds content that matches the pattern.
+- A keyword from `Keywords_hungary_eu_ssn_or_equivalent` is found.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The function  `Func_hungary_eu_ssn_or_equivalent` finds content that matches the pattern.
+- The function `Func_hungary_eu_ssn_or_equivalent` finds content that matches the pattern.
 
 ```xml
       <!-- Hungarian Social Security Number (TAJ) -->
@@ -8788,13 +8853,13 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - áfa szám
 - magyar áfa szám
 
-
 ## Hungary tax identification number
 
 This sensitive information type is only available for use in:
+
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -8818,12 +8883,12 @@ Yes
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The function  `Func_hungary_eu_tax_file_number` finds content that matches the pattern.
-- A keyword from  `Keywords_hungary_eu_tax_file_number` is found.
+- The function `Func_hungary_eu_tax_file_number` finds content that matches the pattern.
+- A keyword from `Keywords_hungary_eu_tax_file_number` is found.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The function  `Func_hungary_eu_tax_file_number` finds content that matches the pattern.
+- The function `Func_hungary_eu_tax_file_number` finds content that matches the pattern.
 
 ```xml
       <!-- Hungary Tax Identification Number -->
@@ -8846,37 +8911,37 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 #### Keywords_hungary_eu_tax_file_number
 
-- adóazonosító szám
-- adóhatóság szám
+- adóazonosító szám
+- adóhatóság szám
 - adószám
-- hungarian tin
+- hungarian tin
 - hungatiantin#
-- tax authority no
-- tax id
-- tax identification no
-- tax identification number
-- tax no#
-- tax no
-- tax number
-- tax registration number
+- tax authority no
+- tax id
+- tax identification no
+- tax identification number
+- tax no#
+- tax no
+- tax number
+- tax registration number
 - taxid#
 - taxidno#
 - taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
-- tin id
-- tin no
+- tin id
+- tin no
 - tin#
-- vat number
-
+- vat number
 
 ## Hungary value added tax number
 
 This sensitive information type is only available for use in:
+
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -8925,17 +8990,16 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 #### Keyword_Hungary_value_added_tax_number
 
 - vat
-- value added tax number
+- value added tax number
 - vat#
 - vatno#
 - hungarianvatno#
-- tax no.
-- value added tax áfa
-- közösségi adószám
-- általános forgalmi adó szám
-- hozzáadottérték adó
-- áfa szám
-
+- tax no.
+- value added tax áfa
+- közösségi adószám
+- általános forgalmi adó szám
+- hozzáadottérték adó
+- áfa szám
 
 ## Iceland physical addresses
 
@@ -8953,7 +9017,6 @@ This unbundled named entity detects names of impairments listed in the U.S. Disa
 
 High
 
-
 ## India Driver's License Number
 
 ### Format
@@ -8963,6 +9026,7 @@ High
 ### Pattern
 
 15 letters or digits:
+
 - two letters indicating state code
 - optional space or dash
 - two digits indicating city code
@@ -8978,12 +9042,13 @@ No
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The regular expression `Regex_india_driving_license` finds content that matches the pattern.
 - A keyword from `Keywords_eu_driver's_license_number_common` is found.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression `Regex_india_driving_license` finds content that matches the pattern.
 
+- The regular expression `Regex_india_driving_license` finds content that matches the pattern.
 
 ```xml
       <!-- India Driver's License Number -->
@@ -9099,7 +9164,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - driver's licenses#
 - driver's licence#
 - driver's licences#
-- driving licence 
+- driving licence
 - driving license
 - dlno#
 - driv lic
@@ -9121,8 +9186,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - dlno
 - dl number
 
-
-
 ## India GST Number
 
 ### Format
@@ -9132,9 +9195,10 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 ### Pattern
 
 15 letters or digits:
+
 - two digits representing valid state code
 - an optional space or dash
-- ten characters representing Permanent Account Number (PAN) 
+- ten characters representing Permanent Account Number (PAN)
 - one letter or digit
 - an optional space or dash
 - one letter 'z' or 'Z'
@@ -9148,12 +9212,13 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function `Func_india_gst_number` finds content that matches the pattern.
 - A keyword from `Keyword_india_gst_number` is found.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function `Func_india_gst_number` finds content that matches the pattern.
 
+- The function `Func_india_gst_number` finds content that matches the pattern.
 
 ```xml
     <!-- India GST number  -->
@@ -9177,7 +9242,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - goods and services tax
 - goods and service tax
 
-
 ## India permanent account number (PAN)
 
 ### Format
@@ -9187,6 +9251,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 ### Pattern
 
 10 letters or digits:
+
 - Three letters (not case-sensitive)
 - A letter in C, P, H, F, A, T, B, L, J, G (not case-sensitive)
 - A letter
@@ -9200,12 +9265,13 @@ No
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The regular expression Regex_india_permanent_account_number finds content that matches the pattern.
 - A keyword from Keyword_india_permanent_account_number is found.
 
 A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression Regex_india_permanent_account_number finds content that matches the pattern.
 
+- The regular expression Regex_india_permanent_account_number finds content that matches the pattern.
 
 ```xml
       <!-- India Permanent Account Number -->
@@ -9238,6 +9304,7 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 ### Pattern
 
 12 digits:
+
 - A digit that is not 0 or 1
 - Three digits
 - An optional space or dash
@@ -9252,6 +9319,7 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_india_aadhaar finds content that matches the pattern.
 - A keyword from Keyword_india_aadhar is found.
 - The checksum passes.
@@ -9283,7 +9351,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - आधार
 - uidai
 
-
 ## India Voter Id Card
 
 ### Format
@@ -9293,6 +9360,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 ### Pattern
 
 10 letters or digits:
+
 - three letters
 - seven digits
 
@@ -9303,12 +9371,13 @@ No
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The regular expression `Regex_india_voter_id_card` finds content that matches the pattern.
 - A keyword from `Keyword_india_voter_id_card` is found.
 
 A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression `Regex_india_voter_id_card` finds content that matches the pattern.
 
+- The regular expression `Regex_india_voter_id_card` finds content that matches the pattern.
 
 ```xml
       <!-- India Voter Id Card  -->
@@ -9336,7 +9405,6 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 - ECI
 - election commmision
 
-
 ## Indonesia identity card (KTP) number
 
 ### Format
@@ -9346,6 +9414,7 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 ### Pattern
 
 16 digits:
+
 - Two-digit province code
 - A period (optional)
 - Two-digit regency or city code
@@ -9484,7 +9553,6 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 
 None
 
-
 ## International classification of diseases (ICD-10-CM)
 
 ### Format
@@ -9502,10 +9570,12 @@ No
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - A keyword from Dictionary_icd_10_updated is found.
 - A keyword from Dictionary_icd_10_codes is found.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - A keyword from Dictionary_icd_10_ updated is found.
 
 ```xml
@@ -9527,7 +9597,6 @@ Any term from the Dictionary_icd_10_updated keyword dictionary, which is based o
 
 Any term from the Dictionary_icd_10_codes keyword dictionary, which is based on the [International Classification of Diseases, Tenth Revision, Clinical Modification (ICD-10-CM)](https://go.microsoft.com/fwlink/?linkid=852604). This type looks only for insurance codes, not the description.
 
-
 ## International classification of diseases (ICD-9-CM)
 
 ### Format
@@ -9545,10 +9614,12 @@ No
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - A keyword from Dictionary_icd_9_updated is found.
 - A keyword from Dictionary_icd_9_codes is found.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - A keyword from Dictionary_icd_9_updated is found.
 
 ```xml
@@ -9588,19 +9659,22 @@ No
 ### Definition
 
 For IPv6, a DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The regular expression Regex_ipv6_address finds content that matches the pattern.
 - No keyword from Keyword_ipaddress is found.
 
 For IPv4, a DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The regular expression Regex_ipv4_address finds content that matches the pattern.
 - A keyword from Keyword_ipaddress is found.
 
 For IPv6, a DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The regular expression Regex_ipv6_address finds content that matches the pattern.
 - No keyword from Keyword_ipaddress is found.
 
 ```xml
-    <!-- IP Address --> 
+    <!-- IP Address -->
     <Entity id="1daa4ad5-e2dd-4ca4-a788-54722c09efb2" patternsProximity="300" recommendedConfidence="85">
       <Pattern confidenceLevel="85">
         <IdMatch idRef="Regex_ipv6_address" />
@@ -9633,7 +9707,6 @@ For IPv6, a DLP policy has high confidence that it's detected this type of sensi
 - internet protocol
 - IP-כתובת ה
 
-
 ## IP Address v4
 
 ### Format
@@ -9642,7 +9715,6 @@ Complex pattern that accounts for formatted (periods) and unformatted (no period
 
 ### Pattern
 
-
 ### Checksum
 
 No
@@ -9650,15 +9722,16 @@ No
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The regular expression `Regex_ipv4_address` finds content that matches the pattern.
 - A keyword from `Keyword_ipaddress` is found.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The regular expression `Regex_ipv4_address` finds content that matches the pattern.
 
-
 ```xml
-      <!-- IP Address v4--> 
+      <!-- IP Address v4-->
       <Entity id="a7dd5e5f-e7f9-4626-a2c6-86a8cb6830d2" patternsProximity="300" recommendedConfidence="75" relaxProximity="true">
         <Pattern confidenceLevel="85">
           <IdMatch idRef="Regex_ipv4_address" />
@@ -9680,7 +9753,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - internet protocol
 - IP-כתובת ה
 
-
 ## IP Address v6
 
 ### Format
@@ -9689,7 +9761,6 @@ Complex pattern that accounts for formatted IPv6 numbers (which include colons)
 
 ### Pattern
 
-
 ### Checksum
 
 No
@@ -9697,12 +9768,13 @@ No
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The regular expression `Regex_ipv6_address` finds content that matches the pattern.
 - A keyword from `Keyword_ipaddress` is found.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression `Regex_ipv6_address` finds content that matches the pattern.
 
+- The regular expression `Regex_ipv6_address` finds content that matches the pattern.
 
 ```xml
       <!-- IP Address v6-->
@@ -9727,7 +9799,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - internet protocol
 - IP-כתובת ה
 
-
 ## Ireland driver's license number
 
 ### Format
@@ -9749,8 +9820,8 @@ No
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The regular expression  `Regex_ireland_eu_driver's_license_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_driver's_license_number` or `Keywords_ireland_eu_driver's_license_number` is found.
+- The regular expression `Regex_ireland_eu_driver's_license_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_driver's_license_number` or `Keywords_ireland_eu_driver's_license_number` is found.
 
 ```xml
       <!-- Ireland Driver's License Number -->
@@ -9775,48 +9846,48 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - driverlicenses
 - driverlicence
 - driverlicences
-- driver lic
-- driver lics
-- driver license
-- driver licenses
-- driver licence
-- driver licences
+- driver lic
+- driver lics
+- driver license
+- driver licenses
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
-- drivers license
-- drivers licenses
-- drivers licence
-- drivers licences
+- drivers lic
+- drivers lics
+- drivers license
+- drivers licenses
+- drivers licence
+- drivers licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
 - driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
-- driver's license
-- driver's licenses
-- driver's licence
-- driver's licences
+- driver's lic
+- driver's lics
+- driver's license
+- driver's licenses
+- driver's licence
+- driver's licences
 - dl#
 - dls#
 - driverlic#
@@ -9825,69 +9896,68 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- driver lic#
-- driver lics#
-- driver license#
-- driver licenses#
-- driver licences#
+- driver lic#
+- driver lics#
+- driver license#
+- driver licenses#
+- driver licences#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
 - driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
-- driving licence 
-- driving license
+- driver's lic#
+- driver's lics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
+- driving licence
+- driving license
 - dlno#
-- driv lic
-- driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
-- driver licen
-- drivers licen
-- driver's licen
-- driving lic
-- driving licen
-- driving licenses
-- driving licence
-- driving licences
-- driving permit
-- dl no
+- driv lic
+- driv licen
+- driv license
+- driv licenses
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
+- driving licence
+- driving licences
+- driving permit
+- dl no
 - dlno
-- dl number
-
+- dl number
 
 #### Keywords_ireland_eu_driver's_license_number
 
@@ -9914,13 +9984,15 @@ No
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_ireland_eu_passport_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_passport_number` or `Keywords_ireland_eu_passport_number` is found.
+
+- The regular expression `Regex_ireland_eu_passport_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_passport_number` or `Keywords_ireland_eu_passport_number` is found.
 - The regular expression `Regex_ireland_eu_passport_date` finds date in the format DD MMM/MMM YYYY (Example - 01 BEA/MAY 1988) or a keyword from `Keywords_eu_passport_date` is found
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_ireland_eu_passport_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_passport_number` or `Keywords_ireland_eu_passport_number` is found.
+
+- The regular expression `Regex_ireland_eu_passport_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_passport_number` or `Keywords_ireland_eu_passport_number` is found.
 
 ```xml
       <!-- Ireland Passport Number -->
@@ -9951,15 +10023,15 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 #### Keywords_eu_passport_number_common
 
 - passport#
-- passport #
+- passport #
 - passportid
 - passports
 - passportno
-- passport no
+- passport no
 - passportnumber
-- passport number
+- passport number
 - passportnumbers
-- passport numbers
+- passport numbers
 
 #### Keywords_ireland_eu_passport_number
 
@@ -9976,27 +10048,30 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - date of issue
 - date of expiry
 
-
 ## Ireland personal public service (PPS) number
 
 ### Format
 
 Old format (until 31 December 2012):
+
 - seven digits followed by 1-2 letters
 
 New format (1 January 2013 and after):
+
 - seven digits followed by two letters
 
 ### Pattern
 
 Old format (until 31 December 2012):
+
 - seven digits
 - one to two letters (not case-sensitive)
 
 New format (1 January 2013 and after):
+
 - seven digits
 - a letter (not case-sensitive) which is an alphabetic check digit
-- An optional letter in the range A-I, or “W”
+- An optional letter in the range A-I, or "W"
 
 ### Checksum
 
@@ -10005,11 +10080,13 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_ireland_pps finds content that matches the pattern.
 - A keyword from Keywords_ireland_eu_national_id_card is found.
 - The checksum passes.
 
 A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_ireland_pps finds content that matches the pattern.
 - The checksum passes.
 
@@ -10030,49 +10107,48 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 
 #### Keywords_ireland_eu_national_id_card
 
-- client identity service
-- identification number
-- personal id number
-- personal public service number
-- personal service no
-- phearsanta seirbhíse poiblí
-- pps no
-- pps number
-- pps num
-- pps service no
+- client identity service
+- identification number
+- personal id number
+- personal public service number
+- personal service no
+- phearsanta seirbhíse poiblí
+- pps no
+- pps number
+- pps num
+- pps service no
 - ppsn
 - ppsno#
 - ppsno
 - psp
-- public service no
+- public service no
 - publicserviceno#
 - publicserviceno
-- revenue and social insurance number
-- rsi no
-- rsi number
+- revenue and social insurance number
+- rsi no
+- rsi number
 - rsin
-- seirbhís aitheantais cliant
+- seirbhís aitheantais cliant
 - uimh
-- uimhir aitheantais chánach
-- uimhir aitheantais phearsanta
-- uimhir phearsanta seirbhíse poiblí
-- tax id
-- tax identification no
-- tax identification number
-- tax no#
-- tax no
-- tax number
-- tax registration number
+- uimhir aitheantais chánach
+- uimhir aitheantais phearsanta
+- uimhir phearsanta seirbhíse poiblí
+- tax id
+- tax identification no
+- tax identification number
+- tax no#
+- tax no
+- tax number
+- tax registration number
 - taxid#
 - taxidno#
 - taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
-- tin id
-- tin no
+- tin id
+- tin no
 - tin#
-
 
 ## Ireland physical addresses
 
@@ -10081,7 +10157,6 @@ This unbundled named entity detects patterns related to physical address from Ir
 ### Confidence level
 
 Medium
-
 
 ## Israel bank account number
 
@@ -10092,6 +10167,7 @@ Medium
 ### Pattern
 
 Formatted:
+
 - two digits
 - a dash
 - three digits
@@ -10099,6 +10175,7 @@ Formatted:
 - eight digits
 
 Unformatted:
+
 - 13 consecutive digits
 
 ### Checksum
@@ -10108,6 +10185,7 @@ No
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The regular expression Regex_israel_bank_account_number finds content that matches the pattern.
 - A keyword from Keyword_israel_bank_account_number is found.
 
@@ -10132,7 +10210,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - Account Number
 - מספר חשבון בנק
 
-
 ## Israel national identification number
 
 ### Format
@@ -10150,6 +10227,7 @@ Yes
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_israeli_national_id_number finds content that matches the pattern.
 - A keyword from Keyword_Israel_National_ID is found.
 - The checksum passes.
@@ -10170,23 +10248,22 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 #### Keyword_Israel_National_ID
 
--   מספר זהות
--   מספר זיה וי
--   מספר זיהוי ישר אלי      
--   זהותישר אלית
--   هو ية اسرائيل ية عدد
--   هوية إسرائ يلية
--   رقم الهوية
--   عدد هوية فريدة من نوعها
--   idnumber#
--   id number
--   identity no        
--   identitynumber#
--   identity number
--   israeliidentitynumber       
--   personal id
--   unique id  
-
+- מספר זהות
+- מספר זיה וי
+- מספר זיהוי ישר אלי
+- זהותישר אלית
+- هو ية اسرائيل ية عدد
+- هوية إسرائ يلية
+- رقم الهوية
+- عدد هوية فريدة من نوعها
+- idnumber#
+- id number
+- identity no
+- identitynumber#
+- identity number
+- israeliidentitynumber
+- personal id
+- unique id
 
 ## Italy driver's license number
 
@@ -10199,6 +10276,7 @@ a combination of 10 letters and digits
 ### Pattern
 
 a combination of 10 letters and digits:
+
 - one letter (not case-sensitive)
 - the letter "A" or "V" (not case-sensitive)
 - seven digits
@@ -10211,6 +10289,7 @@ No
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The regular expression `Regex_italy_drivers_license_number` finds content that matches the pattern.
 - A keyword from `Keywords_eu_driver's_license_number` or `Keyword_italy_drivers_license_number` is found.
 
@@ -10237,48 +10316,48 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - driverlicenses
 - driverlicence
 - driverlicences
-- driver lic
-- driver lics
-- driver license
-- driver licenses
-- driver licence
-- driver licences
+- driver lic
+- driver lics
+- driver license
+- driver licenses
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
-- drivers license
-- drivers licenses
-- drivers licence
-- drivers licences
+- drivers lic
+- drivers lics
+- drivers license
+- drivers licenses
+- drivers licence
+- drivers licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
 - driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
-- driver's license
-- driver's licenses
-- driver's licence
-- driver's licences
+- driver's lic
+- driver's lics
+- driver's license
+- driver's licenses
+- driver's licence
+- driver's licences
 - dl#
 - dls#
 - driverlic#
@@ -10287,68 +10366,68 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- driver lic#
-- driver lics#
-- driver license#
-- driver licenses#
-- driver licences#
+- driver lic#
+- driver lics#
+- driver license#
+- driver licenses#
+- driver licences#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
 - driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
-- driving licence 
-- driving license
+- driver's lic#
+- driver's lics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
+- driving licence
+- driving license
 - dlno#
-- driv lic
-- driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
-- driver licen
-- drivers licen
-- driver's licen
-- driving lic
-- driving licen
-- driving licenses
-- driving licence
-- driving licences
-- driving permit
-- dl no
+- driv lic
+- driv licen
+- driv license
+- driv licenses
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
+- driving licence
+- driving licences
+- driving permit
+- dl no
 - dlno
-- dl number
+- dl number
 
 #### Keyword_italy_drivers_license_number
 
@@ -10358,12 +10437,12 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - patenti di guida
 - patenti guida
 
-
 ## Italy fiscal code
 This sensitive information type is only available for use in:
+
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -10374,6 +10453,7 @@ a 16-character combination of letters and digits in the specified pattern
 ### Pattern
 
 A 16-character combination of letters and digits:
+
 - three letters that correspond to the first three consonants in the family name
 - three letters that correspond to the first, third, and fourth consonants in the first name
 - two digits that correspond to the last digits of the birth year
@@ -10389,11 +10469,13 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_italy_eu_national_id_card` finds content that matches the pattern.
-- A keyword from  `Keywords_italy_eu_national_id_card` is found.
+
+- The function `Func_italy_eu_national_id_card` finds content that matches the pattern.
+- A keyword from `Keywords_italy_eu_national_id_card` is found.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_italy_eu_national_id_card` finds content that matches the pattern.
+
+- The function `Func_italy_eu_national_id_card` finds content that matches the pattern.
 
 ```xml
       <!-- Italy Fiscal Code -->
@@ -10412,39 +10494,38 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 #### Keywords_italy_eu_national_id_card
 
-- codice fiscal
-- codice fiscale
-- codice id personale
-- codice personale
-- fiscal code
-- numero certificato personale
-- numero di identificazione fiscale
-- numero id personale
-- numero personale
-- personal certificate number
-- personal code
-- personal id code
-- personal id number
+- codice fiscal
+- codice fiscale
+- codice id personale
+- codice personale
+- fiscal code
+- numero certificato personale
+- numero di identificazione fiscale
+- numero id personale
+- numero personale
+- personal certificate number
+- personal code
+- personal id code
+- personal id number
 - personalcodeno#
-- tax code
-- tax id
-- tax identification no
-- tax identification number
-- tax identity number
-- tax no#
-- tax no
-- tax number
-- tax registration number
+- tax code
+- tax id
+- tax identification no
+- tax identification number
+- tax identity number
+- tax no#
+- tax no
+- tax number
+- tax registration number
 - taxid#
 - taxidno#
 - taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
-- tin id
-- tin no
+- tin id
+- tin no
 - tin#
-
 
 ## Italy passport number
 
@@ -10466,13 +10547,15 @@ not applicable
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_italy_eu_passport_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_passport_number` or `Keywords_italy_eu_passport_number` is found.
+
+- The regular expression `Regex_italy_eu_passport_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_passport_number` or `Keywords_italy_eu_passport_number` is found.
 - The regular expression `Regex_italy_eu_passport_date` finds date in the format DD MMM/MMM YYYY (Example - 01 GEN/JAN 1988) or a keyword from `Keywords_eu_passport_date` is found
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_italy_eu_passport_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_passport_number` or `Keywords_italy_eu_passport_number` is found.
+
+- The regular expression `Regex_italy_eu_passport_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_passport_number` or `Keywords_italy_eu_passport_number` is found.
 
 ```xml
       <!-- Italy Passport Number -->
@@ -10503,15 +10586,15 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 #### Keywords_eu_passport_number_common
 
 - passport#
-- passport #
+- passport #
 - passportid
 - passports
 - passportno
-- passport no
+- passport no
 - passportnumber
-- passport number
+- passport number
 - passportnumbers
-- passport numbers
+- passport numbers
 
 #### Keywords_italy_eu_passport_number
 
@@ -10528,7 +10611,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - date of issue
 - date of expiry
 
-
 ## Italy physical addresses
 
 This unbundled named entity detects patterns related to physical address from Italy. It is also included in the [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
@@ -10537,13 +10619,13 @@ This unbundled named entity detects patterns related to physical address from It
 
 Medium
 
-
 ## Italy value added tax number
 
 This sensitive information type is only available for use in:
+
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -10567,10 +10649,12 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_italy_value_added_tax_number finds content that matches the pattern.
 - A keyword from Keywords_italy_value_added_tax_number is found.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_italy_value_added_tax_number finds content that matches the pattern.
 
 ```xml
@@ -10590,12 +10674,11 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 #### Keyword_italy_value_added_tax_number
 
-- vat number
-- vat no
+- vat number
+- vat no
 - vat#
 - iva
 - iva#
-
 
 ## Japan bank account number
 
@@ -10606,8 +10689,10 @@ seven or eight digits
 ### Pattern
 
 bank account number:
+
 - seven or eight digits
 - bank account branch code:
+
 - four digits
 - a space or dash (optional)
 - three digits
@@ -10619,13 +10704,16 @@ No
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_jp_bank_account finds content that matches the pattern.
 - A keyword from Keyword_jp_bank_account is found.
 - One of the following is true:
+
 - The function Func_jp_bank_account_branch_code finds content that matches the pattern.
 - A keyword from Keyword_jp_bank_branch_code is found.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_jp_bank_account finds content that matches the pattern.
 - A keyword from Keyword_jp_bank_account is found.
 
@@ -10717,6 +10805,7 @@ No
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_jp_drivers_license_number finds content that matches the pattern.
 - A keyword from Keyword_jp_drivers_license_number is found.
 
@@ -10770,13 +10859,13 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - 免許証#
 - 免許#
 
-
 ## Japan My Number - Corporate
 
 This sensitive information type is only available for use in:
+
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -10798,10 +10887,12 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_japanese_my_number_corporate finds content that matches the pattern.
 - A keyword from Keywords_japanese_my_number_corporate is found.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_japanese_my_number_corporate finds content that matches the pattern.
 
 ```xml
@@ -10821,7 +10912,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 #### Keyword_japan_my_number_corporate
 
-- corporate number
+- corporate number
 - マイナンバー
 - 共通番号
 - マイナンバーカード
@@ -10832,13 +10923,13 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - 法人番号
 - 指定通知書
 
-
 ## Japan My Number - Personal
 
 This sensitive information type is only available for use in:
+
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -10863,10 +10954,12 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_japanese_my_number_personal finds content that matches the pattern.
 - A keyword from Keywords_japanese_my_number_personal is found.
 
 A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_japanese_my_number_personal finds content that matches the pattern.
 
 ```xml
@@ -10897,7 +10990,6 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 - 個人識別ナンバー
 - 通知カード
 
-
 ## Japan passport number
 
 ### Format
@@ -10915,6 +11007,7 @@ No
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_jp_passport finds content that matches the pattern.
 - A keyword from Keyword_jp_passport is found.
 
@@ -10933,9 +11026,9 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 #### Keyword_jp_passport
 
 - Passport
-- Passport Number
-- Passport No.
-- Passport #
+- Passport Number
+- Passport No.
+- Passport #
 - パスポート
 - パスポート番号
 - パスポートナンバー
@@ -10947,7 +11040,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - 旅券番号♯
 - 旅券ナンバー
 
-
 ## Japan residence card number
 
 ### Format
@@ -10957,6 +11049,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 ### Pattern
 
 12 letters and digits:
+
 - two letters (not case-sensitive)
 - eight digits
 - two letters (not case-sensitive)
@@ -10968,6 +11061,7 @@ No
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The regular expression Regex_jp_residence_card_number finds content that matches the pattern.
 - A keyword from Keyword_jp_residence_card_number is found.
 
@@ -11009,6 +11103,7 @@ No
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_jp_resident_registration_number finds content that matches the pattern.
 - A keyword from Keyword_jp_resident_registration_number is found.
 
@@ -11037,7 +11132,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - 登録番号
 - 外国人登録証
 
-
 ## Japan social insurance number (SIN)
 
 ### Format
@@ -11047,6 +11141,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 ### Pattern
 
 7-12 digits:
+
 - four digits
 - a hyphen (optional)
 - six digits
@@ -11060,10 +11155,12 @@ No
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_jp_sin finds content that matches the pattern.
 - A keyword from Keyword_jp_sin is found.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_jp_sin_pre_1997 finds content that matches the pattern.
 - A keyword from Keyword_jp_sin is found.
 
@@ -11104,7 +11201,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - 厚生年金
 - 厚生年金被保険者整理番号
 
-
 ## Lab test terms
 
 This unbundled named entity detects terms related to lab tests, such as *Insulin C-peptide*. It supports English terms only. It is also included in the [All medical terms and conditions](#all-medical-terms-and-conditions) bundled named entity SIT.
@@ -11112,7 +11208,6 @@ This unbundled named entity detects terms related to lab tests, such as *Insulin
 ### Confidence level
 
 High
-
 
 ## Latvia driver's license number
 
@@ -11134,8 +11229,9 @@ No
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_latvia_eu_driver's_license_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_driver's_license_number` or `Keywords_latvia_eu_driver's_license_number` is found.
+
+- The regular expression `Regex_latvia_eu_driver's_license_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_driver's_license_number` or `Keywords_latvia_eu_driver's_license_number` is found.
 
 ```xml
       <!-- Latvia Driver's License Number -->
@@ -11160,48 +11256,48 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - driverlicenses
 - driverlicence
 - driverlicences
-- driver lic
-- driver lics
-- driver license
-- driver licenses
-- driver licence
-- driver licences
+- driver lic
+- driver lics
+- driver license
+- driver licenses
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
-- drivers license
-- drivers licenses
-- drivers licence
-- drivers licences
+- drivers lic
+- drivers lics
+- drivers license
+- drivers licenses
+- drivers licence
+- drivers licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
 - driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
-- driver's license
-- driver's licenses
-- driver's licence
-- driver's licences
+- driver's lic
+- driver's lics
+- driver's license
+- driver's licenses
+- driver's licence
+- driver's licences
 - dl#
 - dls#
 - driverlic#
@@ -11210,76 +11306,74 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- driver lic#
-- driver lics#
-- driver license#
-- driver licenses#
-- driver licences#
+- driver lic#
+- driver lics#
+- driver license#
+- driver licenses#
+- driver licences#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
 - driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
-- driving licence 
-- driving license
+- driver's lic#
+- driver's lics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
+- driving licence
+- driving license
 - dlno#
-- driv lic
-- driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
-- driver licen
-- drivers licen
-- driver's licen
-- driving lic
-- driving licen
-- driving licenses
-- driving licence
-- driving licences
-- driving permit
-- dl no
+- driv lic
+- driv licen
+- driv license
+- driv licenses
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
+- driving licence
+- driving licences
+- driving permit
+- dl no
 - dlno
-- dl number
-
+- dl number
 
 #### Keywords_latvia_eu_driver's_license_number
 
 - autovadītāja apliecība
 - autovadītāja apliecības
 - vadītāja apliecība
-
 
 ## Latvia passport number
 
@@ -11301,13 +11395,15 @@ No
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_latvia_eu_passport_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_passport_number` or `Keywords_latvia_eu_passport_number` is found.
+
+- The regular expression `Regex_latvia_eu_passport_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_passport_number` or `Keywords_latvia_eu_passport_number` is found.
 - The regular expression `Regex_eu_passport_date1` finds date in the format DD.MM.YYYY or a keyword from `Keywords_eu_passport_date` is found
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_latvia_eu_passport_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_passport_number` or `Keywords_latvia_eu_passport_number` is found.
+
+- The regular expression `Regex_latvia_eu_passport_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_passport_number` or `Keywords_latvia_eu_passport_number` is found.
 
 ```xml
       <!-- Latvia Passport Number -->
@@ -11338,15 +11434,15 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 #### Keywords_eu_passport_number_common
 
 - passport#
-- passport #
+- passport #
 - passportid
 - passports
 - passportno
-- passport no
+- passport no
 - passportnumber
-- passport number
+- passport number
 - passportnumbers
-- passport numbers
+- passport numbers
 
 #### Keywords_latvia_eu_passport_number
 
@@ -11361,7 +11457,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 - date of issue
 - date of expiry
-
 
 ## Latvia personal code
 
@@ -11394,11 +11489,13 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_latvia_eu_national_id_card` or the regex `Regex_latvia_eu_national_id_card_new_format` finds content that matches the pattern.
-- A keyword from  `Keywords_latvia_eu_national_id_card` is found.
+
+- The function `Func_latvia_eu_national_id_card` or the regex `Regex_latvia_eu_national_id_card_new_format` finds content that matches the pattern.
+- A keyword from `Keywords_latvia_eu_national_id_card` is found.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_latvia_eu_national_id_card` or the regex `Regex_latvia_eu_national_id_card_new_format` finds content that matches the pattern.
+
+- The function `Func_latvia_eu_national_id_card` or the regex `Regex_latvia_eu_national_id_card_new_format` finds content that matches the pattern.
 
 ```xml
       <!-- Latvia Personal Code -->
@@ -11433,67 +11530,66 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 #### Keywords_latvia_eu_national_id_card
 
-- administrative number
-- alvas nē
-- birth number
-- citizen number
-- civil number
-- electronic census number
-- electronic number
-- fiscal code
-- healthcare user number
+- administrative number
+- alvas nē
+- birth number
+- citizen number
+- civil number
+- electronic census number
+- electronic number
+- fiscal code
+- healthcare user number
 - id#
 - id-code
-- identification number
-- identifikācijas numurs
+- identification number
+- identifikācijas numurs
 - id-number
-- individual number
-- latvija alva
-- nacionālais id
-- national id
-- national identifying number
-- national identity number
-- national insurance number
-- national register number
-- nodokļa numurs
-- nodokļu id
-- nodokļu identifikācija numurs
-- personal certificate number
-- personal code
-- personal id code
-- personal id number
-- personal identification code
-- personal identifier
-- personal identity number
-- personal number
-- personal numeric code
+- individual number
+- latvija alva
+- nacionālais id
+- national id
+- national identifying number
+- national identity number
+- national insurance number
+- national register number
+- nodokļa numurs
+- nodokļu id
+- nodokļu identifikācija numurs
+- personal certificate number
+- personal code
+- personal id code
+- personal id number
+- personal identification code
+- personal identifier
+- personal identity number
+- personal number
+- personal numeric code
 - personalcodeno#
-- personas kods
-- population identification code
-- public service number
-- registration number
-- revenue number
-- social insurance number
-- social security number
-- state tax code
-- tax file number
-- tax id
-- tax identification no
-- tax identification number
-- tax no#
-- tax no
-- tax number
+- personas kods
+- population identification code
+- public service number
+- registration number
+- revenue number
+- social insurance number
+- social security number
+- state tax code
+- tax file number
+- tax id
+- tax identification no
+- tax identification number
+- tax no#
+- tax no
+- tax number
 - taxid#
 - taxidno#
 - taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
-- tin id
-- tin no
+- tin id
+- tin no
 - tin#
-- voter’s number
-
+- voter's number
 
 ## Latvia physical addresses
 
@@ -11503,15 +11599,13 @@ This unbundled named entity detects patterns related to physical address from La
 
 Medium
 
-
 ## Liechtenstein physical addresses
 
-This unbundled named entity detects patterns related to physical address from Liechtenstein. It is also included in the [All Physical Addresses](#all-physical-addresses) bundled named entity SIT. 
+This unbundled named entity detects patterns related to physical address from Liechtenstein. It is also included in the [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
 
 ### Confidence level
 
 Medium
-
 
 ## Lifestyles that relate to medical conditions
 
@@ -11520,7 +11614,6 @@ This unbundled named entity detects terms related to lifestyles that might resul
 ### Confidence level
 
 High
-
 
 ## Lithuania driver's license number
 
@@ -11539,8 +11632,9 @@ No
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_lithuania_eu_driver's_license_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_driver's_license_number` or `Keywords_lithuania_eu_driver's_license_number` is found.
+
+- The regular expression `Regex_lithuania_eu_driver's_license_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_driver's_license_number` or `Keywords_lithuania_eu_driver's_license_number` is found.
 
 ```xml
       <!-- Lithuania Driver's License Number -->
@@ -11565,48 +11659,48 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - driverlicenses
 - driverlicence
 - driverlicences
-- driver lic
-- driver lics
-- driver license
-- driver licenses
-- driver licence
-- driver licences
+- driver lic
+- driver lics
+- driver license
+- driver licenses
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
-- drivers license
-- drivers licenses
-- drivers licence
-- drivers licences
+- drivers lic
+- drivers lics
+- drivers license
+- drivers licenses
+- drivers licence
+- drivers licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
 - driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
-- driver's license
-- driver's licenses
-- driver's licence
-- driver's licences
+- driver's lic
+- driver's lics
+- driver's license
+- driver's licenses
+- driver's licence
+- driver's licences
 - dl#
 - dls#
 - driverlic#
@@ -11615,69 +11709,68 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- driver lic#
-- driver lics#
-- driver license#
-- driver licenses#
-- driver licences#
+- driver lic#
+- driver lics#
+- driver license#
+- driver licenses#
+- driver licences#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
 - driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
-- driving licence 
-- driving license
+- driver's lic#
+- driver's lics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
+- driving licence
+- driving license
 - dlno#
-- driv lic
-- driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
-- driver licen
-- drivers licen
-- driver's licen
-- driving lic
-- driving licen
-- driving licenses
-- driving licence
-- driving licences
-- driving permit
-- dl no
+- driv lic
+- driv licen
+- driv license
+- driv licenses
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
+- driving licence
+- driving licences
+- driving permit
+- dl no
 - dlno
-- dl number
-
+- dl number
 
 #### Keywords_lithuania_eu_driver's_license_number
 
@@ -11685,13 +11778,13 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - vairuotojo pažymėjimo numeris
 - vairuotojo pažymėjimo numeriai
 
-
 ## Lithuania personal code
 
 This sensitive information type is only available for use in:
+
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -11715,11 +11808,13 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_lithuania_eu_tax_file_number` finds content that matches the pattern.
-- A keyword from  `Keywords_lithuania_eu_tax_file_number` is found.
+
+- The function `Func_lithuania_eu_tax_file_number` finds content that matches the pattern.
+- A keyword from `Keywords_lithuania_eu_tax_file_number` is found.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_lithuania_eu_tax_file_number` finds content that matches the pattern.
+
+- The function `Func_lithuania_eu_tax_file_number` finds content that matches the pattern.
 
 ```xml
       <!-- Lithuania Personal Code -->
@@ -11742,39 +11837,38 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 #### Keywords_lithuania_eu_national_id_card
 
-- asmeninis skaitmeninis kodas
-- asmens kodas
-- citizen service number
-- mokesčių id
-- mokesčių identifikavimas numeris
-- mokesčių identifikavimo numeris
-- mokesčių numeris
-- national identification number
-- personal code
-- personal numeric code
-- piliečio paslaugos numeris
-- tax id
-- tax identification no
-- tax identification number
-- tax no#
-- tax no
-- tax number
-- tax registration number
+- asmeninis skaitmeninis kodas
+- asmens kodas
+- citizen service number
+- mokesčių id
+- mokesčių identifikavimas numeris
+- mokesčių identifikavimo numeris
+- mokesčių numeris
+- national identification number
+- personal code
+- personal numeric code
+- piliečio paslaugos numeris
+- tax id
+- tax identification no
+- tax identification number
+- tax no#
+- tax no
+- tax number
+- tax registration number
 - taxid#
 - taxidno#
 - taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
-- tin id
-- tin no
+- tin id
+- tin no
 - tin#
-- unikalus identifikavimo kodas
-- unikalus identifikavimo numeris
-- unique identification number
-- unique identity number
+- unikalus identifikavimo kodas
+- unikalus identifikavimo numeris
+- unique identification number
+- unique identity number
 - uniqueidentityno#
-
 
 ## Lithuania physical addresses
 
@@ -11783,7 +11877,6 @@ This unbundled named entity detects patterns related to physical address from Li
 ### Confidence level
 
 Medium
-
 
 ## Lithuania passport number
 
@@ -11802,13 +11895,15 @@ not applicable
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_lithuania_eu_passport_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_passport_number` or `Keywords_lithuania_eu_passport_number` is found.
+
+- The regular expression `Regex_lithuania_eu_passport_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_passport_number` or `Keywords_lithuania_eu_passport_number` is found.
 - The regular expression `Regex_eu_passport_date3` finds date in the format DD MM YYYY or a keyword from `Keywords_eu_passport_date` is found
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_lithuania_eu_passport_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_passport_number` or `Keywords_lithuania_eu_passport_number` is found.
+
+- The regular expression `Regex_lithuania_eu_passport_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_passport_number` or `Keywords_lithuania_eu_passport_number` is found.
 
 ```xml
       <!-- Lithuania Passport Number -->
@@ -11839,15 +11934,15 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 #### Keywords_eu_passport_number
 
 - passport#
-- passport #
+- passport #
 - passportid
 - passports
 - passportno
-- passport no
+- passport no
 - passportnumber
-- passport number
+- passport number
 - passportnumbers
-- passport numbers
+- passport numbers
 
 #### Keywords_lithuania_eu_passport_number
 
@@ -11859,7 +11954,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 - date of issue
 - date of expiry
-
 
 ## Luxemburg driver's license number
 
@@ -11878,8 +11972,9 @@ No
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_luxemburg_eu_driver's_license_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_driver's_license_number` or `Keywords_luxemburg_eu_driver's_license_number` is found.
+
+- The regular expression `Regex_luxemburg_eu_driver's_license_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_driver's_license_number` or `Keywords_luxemburg_eu_driver's_license_number` is found.
 
 ```xml
       <!-- Luxemburg Driver's License Number -->
@@ -11904,48 +11999,48 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - driverlicenses
 - driverlicence
 - driverlicences
-- driver lic
-- driver lics
-- driver license
-- driver licenses
-- driver licence
-- driver licences
+- driver lic
+- driver lics
+- driver license
+- driver licenses
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
-- drivers license
-- drivers licenses
-- drivers licence
-- drivers licences
+- drivers lic
+- drivers lics
+- drivers license
+- drivers licenses
+- drivers licence
+- drivers licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
 - driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
-- driver's license
-- driver's licenses
-- driver's licence
-- driver's licences
+- driver's lic
+- driver's lics
+- driver's license
+- driver's licenses
+- driver's licence
+- driver's licences
 - dl#
 - dls#
 - driverlic#
@@ -11954,69 +12049,68 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- driver lic#
-- driver lics#
-- driver license#
-- driver licenses#
-- driver licences#
+- driver lic#
+- driver lics#
+- driver license#
+- driver licenses#
+- driver licences#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
 - driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
-- driving licence 
-- driving license
+- driver's lic#
+- driver's lics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
+- driving licence
+- driving license
 - dlno#
-- driv lic
-- driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
-- driver licen
-- drivers licen
-- driver's licen
-- driving lic
-- driving licen
-- driving licenses
-- driving licence
-- driving licences
-- driving permit
-- dl no
+- driv lic
+- driv licen
+- driv license
+- driv licenses
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
+- driving licence
+- driving licences
+- driving permit
+- dl no
 - dlno
-- dl number
-
+- dl number
 
 #### Keywords_luxemburg_eu_driver's_license_number
 
@@ -12026,9 +12120,10 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 ## Luxemburg national identification number (natural persons)
 
 This sensitive information type is only available for use in:
+
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -12050,12 +12145,13 @@ yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_luxemburg_eu_tax_file_number` finds content that matches the pattern.
-- A keyword from  `Keywords_luxemburg_eu_national_id_card` is found.
+
+- The function `Func_luxemburg_eu_tax_file_number` finds content that matches the pattern.
+- A keyword from `Keywords_luxemburg_eu_national_id_card` is found.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_luxemburg_eu_tax_file_number` finds content that matches the pattern.
 
+- The function `Func_luxemburg_eu_tax_file_number` finds content that matches the pattern.
 
 ```xml
       <!-- Luxemburg National Identification Number (Natural persons) -->
@@ -12078,27 +12174,26 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 #### Keywords_luxemburg_eu_national_id_card
 
-- eindeutige id
-- eindeutige id-nummer
+- eindeutige id
+- eindeutige id-nummer
 - eindeutigeid#
-- id personnelle
+- id personnelle
 - idpersonnelle#
 - idpersonnelle
-- individual code
-- individual id
-- individual identification
-- individual identity
-- numéro d'identification personnel
-- personal id
-- personal identification
-- personal identity
+- individual code
+- individual id
+- individual identification
+- individual identity
+- numéro d'identification personnel
+- personal id
+- personal identification
+- personal identity
 - personalidno#
 - personalidnumber#
-- persönliche identifikationsnummer
-- unique id
-- unique identity
+- persönliche identifikationsnummer
+- unique id
+- unique identity
 - uniqueidkey#
-
 
 ## Luxemburg national identification number (non-natural persons)
 
@@ -12126,11 +12221,13 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_luxemburg_eu_tax_file_number_non_natural` finds content that matches the pattern.
-- A keyword from  `Keywords_luxemburg_eu_tax_file_number` is found.
+
+- The function `Func_luxemburg_eu_tax_file_number_non_natural` finds content that matches the pattern.
+- A keyword from `Keywords_luxemburg_eu_tax_file_number` is found.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_luxemburg_eu_tax_file_number_non_natural` finds content that matches the pattern.
+
+- The function `Func_luxemburg_eu_tax_file_number_non_natural` finds content that matches the pattern.
 
 ```xml
       <!-- Luxemburg National Identification Number (Non-natural persons) -->
@@ -12153,44 +12250,43 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 #### Keywords_luxemburg_eu_tax_file_number
 
-- carte de sécurité sociale
-- étain non
+- carte de sécurité sociale
+- étain non
 - étain#
-- identifiant d'impôt
-- luxembourg tax identifikatiounsnummer
-- numéro d'étain
-- numéro d'identification fiscal luxembourgeois
-- numéro d'identification fiscale
-- social security
+- identifiant d'impôt
+- luxembourg tax identifikatiounsnummer
+- numéro d'étain
+- numéro d'identification fiscal luxembourgeois
+- numéro d'identification fiscale
+- social security
 - sozialunterstützung
 - sozialversécherung
 - sozialversicherungsausweis
-- steier id
-- steier identifikatiounsnummer
-- steier nummer
-- steuer id
+- steier id
+- steier identifikatiounsnummer
+- steier nummer
+- steuer id
 - steueridentifikationsnummer
 - steuernummer
-- tax id
-- tax identification no
-- tax identification number
-- tax no#
-- tax no
-- tax number
-- tax registration number
+- tax id
+- tax identification no
+- tax identification number
+- tax no#
+- tax no
+- tax number
+- tax registration number
 - taxid#
 - taxidno#
 - taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
-- tin id
-- tin no
+- tin id
+- tin no
 - tin#
 - zinn#
 - zinn
 - zinnzahl
-
 
 ## Luxemburg passport number
 
@@ -12209,13 +12305,15 @@ No
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_luxemburg_eu_passport_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_passport_number` or `Keywords_luxemburg_eu_passport_number` is found.
+
+- The regular expression `Regex_luxemburg_eu_passport_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_passport_number` or `Keywords_luxemburg_eu_passport_number` is found.
 - The regular expression `Regex_eu_passport_date3` finds date in the format DD MM YYYY or a keyword from `Keywords_eu_passport_date` is found
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_luxemburg_eu_passport_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_passport_number` or `Keywords_luxemburg_eu_passport_number` is found.
+
+- The regular expression `Regex_luxemburg_eu_passport_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_passport_number` or `Keywords_luxemburg_eu_passport_number` is found.
 
 ```xml
       <!-- Luxemburg Passport Number -->
@@ -12246,15 +12344,15 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 #### Keywords_eu_passport_number
 
 - passport#
-- passport #
+- passport #
 - passportid
 - passports
 - passportno
-- passport no
+- passport no
 - passportnumber
-- passport number
+- passport number
 - passportnumbers
-- passport numbers
+- passport numbers
 
 #### Keywords_luxemburg_eu_passport_number
 - ausweisnummer
@@ -12278,7 +12376,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - date of issue
 - date of expiry
 
-
 ## Luxemburg physical addresses
 
 This unbundled named entity detects patterns related to physical address from Luxemburg. It is also included in the [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
@@ -12286,7 +12383,6 @@ This unbundled named entity detects patterns related to physical address from Lu
 ### Confidence level
 
 Medium
-
 
 ## Malaysia identification card number
 
@@ -12297,6 +12393,7 @@ Medium
 ### Pattern
 
 12 digits:
+
 - six digits in the format YYMMDD, which are the date of birth
 - a dash (optional)
 - two-letter place-of-birth code
@@ -12311,6 +12408,7 @@ No
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The regular expression Regex_malaysia_id_card_number finds content that matches the pattern.
 - A keyword from Keyword_malaysia_id_card_number is found.
 
@@ -12354,7 +12452,6 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 - nric
 - personal identification card
 
-
 ## Malta driver's license number
 
 ### Format
@@ -12378,8 +12475,9 @@ No
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_malta_eu_driver's_license_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_driver's_license_number` or `Keywords_malta_eu_driver's_license_number` is found.
+
+- The regular expression `Regex_malta_eu_driver's_license_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_driver's_license_number` or `Keywords_malta_eu_driver's_license_number` is found.
 
 ```xml
       <!-- Malta Driver's License Number -->
@@ -12404,48 +12502,48 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - driverlicenses
 - driverlicence
 - driverlicences
-- driver lic
-- driver lics
-- driver license
-- driver licenses
-- driver licence
-- driver licences
+- driver lic
+- driver lics
+- driver license
+- driver licenses
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
-- drivers license
-- drivers licenses
-- drivers licence
-- drivers licences
+- drivers lic
+- drivers lics
+- drivers license
+- drivers licenses
+- drivers licence
+- drivers licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
 - driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
-- driver's license
-- driver's licenses
-- driver's licence
-- driver's licences
+- driver's lic
+- driver's lics
+- driver's license
+- driver's licenses
+- driver's licence
+- driver's licences
 - dl#
 - dls#
 - driverlic#
@@ -12454,82 +12552,81 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- driver lic#
-- driver lics#
-- driver license#
-- driver licenses#
-- driver licences#
+- driver lic#
+- driver lics#
+- driver license#
+- driver licenses#
+- driver licences#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
 - driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
-- driving licence 
-- driving license
+- driver's lic#
+- driver's lics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
+- driving licence
+- driving license
 - dlno#
-- driv lic
-- driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
-- driver licen
-- drivers licen
-- driver's licen
-- driving lic
-- driving licen
-- driving licenses
-- driving licence
-- driving licences
-- driving permit
-- dl no
+- driv lic
+- driv licen
+- driv license
+- driv licenses
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
+- driving licence
+- driving licences
+- driving permit
+- dl no
 - dlno
-- dl number
-
+- dl number
 
 #### Keywords_malta_eu_driver's_license_number
 
 - liċenzja tas-sewqan
 - liċenzji tas-sewwieq
 
-
 ## Malta identity card number
 
 This sensitive information type is only available for use in:
+
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -12551,11 +12648,13 @@ Not applicable
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_malta_eu_national_id_card` finds content that matches the pattern.
-- A keyword from  `Keywords_malta_eu_national_id_card` is found.
+
+- The regular expression `Regex_malta_eu_national_id_card` finds content that matches the pattern.
+- A keyword from `Keywords_malta_eu_national_id_card` is found.
 
 A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_malta_eu_national_id_card` finds content that matches the pattern.
+
+- The regular expression `Regex_malta_eu_national_id_card` finds content that matches the pattern.
 
 ```xml
       <!-- Malta Identity Card Number -->
@@ -12574,21 +12673,20 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 
 #### Keywords_malta_eu_national_id_card
 
-- citizen service number
-- id tat-taxxa
-- identifika numru tal-biljett
-- kodiċi numerali personali
-- numru ta 'identifikazzjoni personali
-- numru ta 'identifikazzjoni tat-taxxa
-- numru ta 'identifikazzjoni uniku
-- numru ta' identità uniku
-- numru tas-servizz taċ-ċittadin
-- numru tat-taxxa
-- personal numeric code
-- unique identification number
-- unique identity number
+- citizen service number
+- id tat-taxxa
+- identifika numru tal-biljett
+- kodiċi numerali personali
+- numru ta 'identifikazzjoni personali
+- numru ta 'identifikazzjoni tat-taxxa
+- numru ta 'identifikazzjoni uniku
+- numru ta' identità uniku
+- numru tas-servizz taċ-ċittadin
+- numru tat-taxxa
+- personal numeric code
+- unique identification number
+- unique identity number
 - uniqueidentityno#
-
 
 ## Malta passport number
 
@@ -12607,13 +12705,15 @@ No
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_malta_eu_passport_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_passport_number` or `Keywords_malta_eu_passport_number` is found.
+
+- The regular expression `Regex_malta_eu_passport_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_passport_number` or `Keywords_malta_eu_passport_number` is found.
 - A keyword from `Keywords_eu_passport_date` is found
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_malta_eu_passport_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_passport_number` or `Keywords_malta_eu_passport_number` is found.
+
+- The regular expression `Regex_malta_eu_passport_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_passport_number` or `Keywords_malta_eu_passport_number` is found.
 
 ```xml
       <!-- Malta Passport Number -->
@@ -12641,15 +12741,15 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 #### Keywords_eu_passport_number
 
 - passport#
-- passport #
+- passport #
 - passportid
 - passports
 - passportno
-- passport no
+- passport no
 - passportnumber
-- passport number
+- passport number
 - passportnumbers
-- passport numbers
+- passport numbers
 
 #### Keywords_malta_eu_passport_number
 
@@ -12662,7 +12762,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - date of issue
 - date of expiry
 
-
 ## Malta physical addresses
 
 This unbundled named entity detects patterns related to physical address from Malta. It is also included in the [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
@@ -12671,15 +12770,16 @@ This unbundled named entity detects patterns related to physical address from Ma
 
 Medium
 
-
 ## Malta tax identification number
 
 ### Format
 
 For Maltese nationals:
+
 - seven digits and one letter in the specified pattern
 
 Non-Maltese nationals and Maltese entities:
+
 - nine digits
 
 ### Pattern
@@ -12700,11 +12800,13 @@ Not applicable
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regex  `Regex_malta_eu_tax_file_number`  or `Regex_malta_eu_tax_file_number_non_maltese_national` finds content that matches the pattern.
-- A keyword from  `Keywords_malta_eu_tax_file_number` is found.
+
+- The regex `Regex_malta_eu_tax_file_number`  or `Regex_malta_eu_tax_file_number_non_maltese_national` finds content that matches the pattern.
+- A keyword from `Keywords_malta_eu_tax_file_number` is found.
 
 A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regex  `Regex_malta_eu_tax_file_number` or `Regex_malta_eu_tax_file_number_non_maltese_national` finds content that matches the pattern.
+
+- The regex `Regex_malta_eu_tax_file_number` or `Regex_malta_eu_tax_file_number_non_maltese_national` finds content that matches the pattern.
 
 ```xml
       <!-- Malta Tax ID Number -->
@@ -12730,35 +12832,35 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 
 #### Keywords_malta_eu_tax_file_number
 
-- citizen service number
-- id tat-taxxa
-- identifika numru tal-biljett
-- kodiċi numerali personali
-- numru ta 'identifikazzjoni personali
-- numru ta 'identifikazzjoni tat-taxxa
-- numru ta 'identifikazzjoni uniku
-- numru ta' identità uniku
-- numru tas-servizz taċ-ċittadin
-- numru tat-taxxa
-- personal numeric code
-- tax id
-- tax identification no
-- tax identification number
-- tax no#
-- tax no
-- tax number
-- tax registration number
+- citizen service number
+- id tat-taxxa
+- identifika numru tal-biljett
+- kodiċi numerali personali
+- numru ta 'identifikazzjoni personali
+- numru ta 'identifikazzjoni tat-taxxa
+- numru ta 'identifikazzjoni uniku
+- numru ta' identità uniku
+- numru tas-servizz taċ-ċittadin
+- numru tat-taxxa
+- personal numeric code
+- tax id
+- tax identification no
+- tax identification number
+- tax no#
+- tax no
+- tax number
+- tax registration number
 - taxid#
 - taxidno#
 - taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
-- tin id
-- tin no
+- tin id
+- tin no
 - tin#
-- unique identification number
-- unique identity number
+- unique identification number
+- unique identity number
 - uniqueidentityno#
 
 ## Medical specialities
@@ -12796,11 +12898,13 @@ No
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_mbi_card` finds content that matches the pattern.
-- A keyword from  `Keyword_mbi_card` is found.
+
+- The regular expression `Regex_mbi_card` finds content that matches the pattern.
+- A keyword from `Keyword_mbi_card` is found.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_mbi_card` finds content that matches the pattern.
+
+- The regular expression `Regex_mbi_card` finds content that matches the pattern.
 
 ```xml
     <!-- Medicare Beneficiary Identifier (MBI) card -->
@@ -12827,7 +12931,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - medicare beneficiary number
 - medicare beneficiary#
 
-
 ## Mexico Unique Population Registry Code (CURP)
 
 ### Format
@@ -12851,11 +12954,13 @@ No
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_mexico_population_registry_code` finds content that matches the pattern.
-- A keyword from  `Keyword_mexico_population_registry_code` is found.
+
+- The function `Func_mexico_population_registry_code` finds content that matches the pattern.
+- A keyword from `Keyword_mexico_population_registry_code` is found.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_mexico_population_registry_code` finds content that matches the pattern.
+
+- The function `Func_mexico_population_registry_code` finds content that matches the pattern.
 
 ```xml
     <!-- Mexico Unique Population Registry Code (CURP) -->
@@ -12874,25 +12979,24 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 #### Keyword_mexico_population_registry_code
 
-- Clave Única de Registro de Población
-- Clave Unica de Registro de Poblacion
-- Unique Population Registry Code 
-- unique population code
+- Clave Única de Registro de Población
+- Clave Unica de Registro de Poblacion
+- Unique Population Registry Code
+- unique population code
 - CURP
-- Personal ID
-- Unique ID
+- Personal ID
+- Unique ID
 - personalid
 - personalidnumber
 - uniqueidkey
 - uniqueidnumber
-- clave única
-- clave unica
-- clave personal Identidad
-- personal Identidad Clave
+- clave única
+- clave unica
+- clave personal Identidad
+- personal Identidad Clave
 - ClaveÚnica
 - claveunica
 - clavepersonalIdentidad
-
 
 ## Netherlands citizen's service (BSN) number
 
@@ -12903,6 +13007,7 @@ eight or nine digits containing optional spaces
 ### Pattern
 
 eight-nine digits:
+
 - three digits
 - a space (optional)
 - three digits
@@ -12916,6 +13021,7 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_netherlands_bsn finds content that matches the pattern.
 - A keyword from Keyword_netherlands_bsn is found.
 - The checksum passes.
@@ -12937,25 +13043,24 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 - bsn#
 - bsn
 - burgerservicenummer
-- citizen service number
-- person number
-- personal number
-- personal numeric code
-- person-related number
-- persoonlijk nummer
-- persoonlijke numerieke code
+- citizen service number
+- person number
+- personal number
+- personal numeric code
+- person-related number
+- persoonlijk nummer
+- persoonlijke numerieke code
 - persoonsgebonden
 - persoonsnummer
-- sociaal-fiscaal nummer
-- social-fiscal number
+- sociaal-fiscaal nummer
+- social-fiscal number
 - sofi
 - sofinummer
-- uniek identificatienummer
-- uniek identiteitsnummer
-- unique identification number
-- unique identity number
+- uniek identificatienummer
+- uniek identiteitsnummer
+- unique identification number
+- unique identity number
 - uniqueidentityno#
-
 
 ## Netherlands driver's license number
 
@@ -12974,8 +13079,9 @@ No
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_netherlands_eu_driver's_license_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_driver's_license_number` or `Keywords_netherlands_eu_driver's_license_number` is found.
+
+- The regular expression `Regex_netherlands_eu_driver's_license_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_driver's_license_number` or `Keywords_netherlands_eu_driver's_license_number` is found.
 
 ```xml
       <!-- Netherlands Driver's License Number -->
@@ -13000,48 +13106,48 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - driverlicenses
 - driverlicence
 - driverlicences
-- driver lic
-- driver lics
-- driver license
-- driver licenses
-- driver licence
-- driver licences
+- driver lic
+- driver lics
+- driver license
+- driver licenses
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
-- drivers license
-- drivers licenses
-- drivers licence
-- drivers licences
+- drivers lic
+- drivers lics
+- drivers license
+- drivers licenses
+- drivers licence
+- drivers licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
 - driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
-- driver's license
-- driver's licenses
-- driver's licence
-- driver's licences
+- driver's lic
+- driver's lics
+- driver's license
+- driver's licenses
+- driver's licence
+- driver's licences
 - dl#
 - dls#
 - driverlic#
@@ -13050,69 +13156,68 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- driver lic#
-- driver lics#
-- driver license#
-- driver licenses#
-- driver licences#
+- driver lic#
+- driver lics#
+- driver license#
+- driver licenses#
+- driver licences#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
 - driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
-- driving licence 
-- driving license
+- driver's lic#
+- driver's lics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
+- driving licence
+- driving license
 - dlno#
-- driv lic
-- driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
-- driver licen
-- drivers licen
-- driver's licen
-- driving lic
-- driving licen
-- driving licenses
-- driving licence
-- driving licences
-- driving permit
-- dl no
+- driv lic
+- driv licen
+- driv license
+- driv licenses
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
+- driving licence
+- driving licences
+- driving permit
+- dl no
 - dlno
-- dl number
-
+- dl number
 
 #### Keywords_netherlands_eu_driver's_license_number
 
@@ -13122,7 +13227,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - rijbewijzen
 - rijbewijs nummer
 - rijbewijsnummers
-
 
 ## Netherlands passport number
 
@@ -13141,13 +13245,15 @@ not applicable
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_netherlands_eu_passport_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_passport_number` or `Keywords_netherlands_eu_passport_number` is found.
+
+- The regular expression `Regex_netherlands_eu_passport_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_passport_number` or `Keywords_netherlands_eu_passport_number` is found.
 - The regular expression `Regex_netherlands_eu_passport_date` finds date in the format  DD MMM/MMM YYYY (Example - 26 MAA/MAR 2012)
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_netherlands_eu_passport_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_passport_number` or `Keywords_netherlands_eu_passport_number` is found.
+
+- The regular expression `Regex_netherlands_eu_passport_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_passport_number` or `Keywords_netherlands_eu_passport_number` is found.
 
 ```xml
       <!-- Netherlands Passport Number -->
@@ -13175,15 +13281,15 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 #### Keywords_eu_passport_number
 
 - passport#
-- passport #
+- passport #
 - passportid
 - passports
 - passportno
-- passport no
+- passport no
 - passportnumber
-- passport number
+- passport number
 - passportnumbers
-- passport numbers
+- passport numbers
 
 #### Keywords_netherlands_eu_passport_number
 
@@ -13191,7 +13297,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - paspoortnummers
 - paspoortnummer
 - paspoort nr
-
 
 ## Netherlands physical addresses
 
@@ -13201,13 +13306,13 @@ This unbundled named entity detects patterns related to physical address from th
 
 Medium
 
-
 ## Netherlands tax identification number
 
 This sensitive information type is only available for use in:
+
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -13226,11 +13331,13 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_netherlands_eu_tax_file_number` finds content that matches the pattern.
-- A keyword from  `Keywords_netherlands_eu_tax_file_number` is found.
+
+- The function `Func_netherlands_eu_tax_file_number` finds content that matches the pattern.
+- A keyword from `Keywords_netherlands_eu_tax_file_number` is found.
 
 A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_netherlands_eu_tax_file_number` finds content that matches the pattern.
+
+- The function `Func_netherlands_eu_tax_file_number` finds content that matches the pattern.
 
 ```xml
       <!-- Netherlands Tax Identification Number -->
@@ -13249,49 +13356,49 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 
 #### Keywords_netherlands_eu_tax_file_number
 
-- btw nummer
-- hollânske tax identification
-- hulandes impuesto id number
-- hulandes impuesto identification
-- identificatienummer belasting
-- identificatienummer van belasting
-- impuesto identification number
-- impuesto number
-- nederlands belasting id nummer
-- nederlands belasting identificatie
-- nederlands belasting identificatienummer
-- nederlands belastingnummer
-- nederlandse belasting identificatie
-- netherlands tax identification
-- netherland's tax identification
-- netherlands tin
-- netherland's tin
-- tax id
-- tax identification no
-- tax identification number
-- tax identification tal
-- tax no#
-- tax no
-- tax number
-- tax registration number
-- tax tal
+- btw nummer
+- hollânske tax identification
+- hulandes impuesto id number
+- hulandes impuesto identification
+- identificatienummer belasting
+- identificatienummer van belasting
+- impuesto identification number
+- impuesto number
+- nederlands belasting id nummer
+- nederlands belasting identificatie
+- nederlands belasting identificatienummer
+- nederlands belastingnummer
+- nederlandse belasting identificatie
+- netherlands tax identification
+- netherland's tax identification
+- netherlands tin
+- netherland's tin
+- tax id
+- tax identification no
+- tax identification number
+- tax identification tal
+- tax no#
+- tax no
+- tax number
+- tax registration number
+- tax tal
 - taxid#
 - taxidno#
 - taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
-- tin id
-- tin no
+- tin id
+- tin no
 - tin#
-
 
 ## Netherlands value added tax number
 
 This sensitive information type is only available for use in:
+
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -13318,10 +13425,12 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_netherlands_value_added_tax_number finds content that matches the pattern.
 - A keyword from Keywords_netherlands_value_added_tax_number is found.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_netherlands_value_added_tax_number finds content that matches the pattern.
 
 ```xml
@@ -13341,20 +13450,20 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 #### Keyword_netherlands_value_added_tax_number
 
-- vat number
-- vat no
+- vat number
+- vat no
 - vat#
-- wearde tafoege tax getal
-- btw nûmer
+- wearde tafoege tax getal
+- btw nûmer
 - btw-nummer
-
 
 ## New Zealand bank account number
 
 This sensitive information type is only available for use in:
+
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -13382,10 +13491,12 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_new_zealand_bank_account_number finds content that matches the pattern.
 - A keyword from Keywords_new_zealand_bank_account_number is found.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_new_zealand_bank_account_number finds content that matches the pattern.
 
 ```xml
@@ -13405,19 +13516,19 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 #### Keyword_new_zealand_bank_account_number
 
-- account number
-- bank account
+- account number
+- bank account
 - bank_acct_id
 - bank_acct_branch
 - bank_acct_nbr
 
-
 ## New Zealand driver's license number
 
 This sensitive information type is only available for use in:
+
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -13439,10 +13550,12 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_newzealand_driver_license_number finds content that matches the pattern.
 - A keyword from Keywords_newzealand_driver_license_number is found.
 
 A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_newzealand_driver_license_number finds content that matches the pattern.
 
 ```xml
@@ -13464,76 +13577,76 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 
 - driverlicence
 - driverlicences
-- driver lic
-- driver licence
-- driver licences
+- driver lic
+- driver licence
+- driver licences
 - driverslic
 - driverslicence
 - driverslicences
-- drivers lic
-- drivers lics
-- drivers licence
-- drivers licences
+- drivers lic
+- drivers lics
+- drivers licence
+- drivers licences
 - driver'lic
 - driver'lics
 - driver'licence
 - driver'licences
-- driver' lic
-- driver' lics
-- driver' licence
-- driver' licences
+- driver' lic
+- driver' lics
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
-- driver's licence
-- driver's licences
+- driver's lic
+- driver's lics
+- driver's licence
+- driver's licences
 - driverlic#
 - driverlics#
 - driverlicence#
 - driverlicences#
-- driver lic#
-- driver lics#
-- driver licence#
-- driver licences#
+- driver lic#
+- driver lics#
+- driver licence#
+- driver licences#
 - driverslic#
 - driverslics#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers licence#
-- drivers licences#
+- drivers lic#
+- drivers lics#
+- drivers licence#
+- drivers licences#
 - driver'lic#
 - driver'lics#
 - driver'licence#
 - driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' licence#
-- driver' licences#
+- driver' lic#
+- driver' lics#
+- driver' licence#
+- driver' licences#
 - driver'slic#
 - driver'slics#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's licence#
-- driver's licences#
-- international driving permit
-- international driving permits
-- nz automobile association
-- new zealand automobile association
-
+- driver's lic#
+- driver's lics#
+- driver's licence#
+- driver's licences#
+- international driving permit
+- international driving permits
+- nz automobile association
+- new zealand automobile association
 
 ## New Zealand inland revenue number
 
 This sensitive information type is only available for use in:
+
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -13558,10 +13671,12 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_new_zealand_inland_revenue_number finds content that matches the pattern.
 - A keyword from Keywords_new_zealand_inland_revenue_number is found.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_new_zealand_inland_revenue_number finds content that matches the pattern.
 
 ```xml
@@ -13581,13 +13696,12 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 #### Keyword_new_zealand_inland_revenue_number
 
-- ird no.
-- ird no#
-- nz ird
-- new zealand ird
-- ird number
-- inland revenue number
-
+- ird no.
+- ird no#
+- nz ird
+- new zealand ird
+- ird number
+- inland revenue number
 
 ## New Zealand ministry of health number
 
@@ -13607,11 +13721,13 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_new_zealand_ministry_of_health_number finds content that matches the pattern.
 - A keyword from Keyword_nz_terms is found.
 - The checksum passes.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_new_zealand_ministry_of_health_number finds content that matches the pattern.
 - The checksum passes.
 
@@ -13633,11 +13749,10 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 #### Keyword_nz_terms
 
 - NHI
-- New Zealand
-- National Health Index
+- New Zealand
+- National Health Index
 - NHI#
-- National Health Index#
-
+- National Health Index#
 
 ## New Zealand physical addresses
 
@@ -13647,13 +13762,13 @@ This unbundled named entity detects patterns related to physical address from Ne
 
 Medium
 
-
 ## New Zealand social welfare number
 
 This sensitive information type is only available for use in:
+
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -13678,10 +13793,12 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_newzealand_social_welfare_number finds content that matches the pattern.
 - A keyword from Keywords_newzealand_social_welfare_number is found.
 
 A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_newzealand_social_welfare_number finds content that matches the pattern.
 
 ```xml
@@ -13702,12 +13819,11 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 
 #### Keyword_new_zealand_social_welfare_number
 
-- social welfare #
-- social welfare#
-- social welfare No.
-- social welfare number
+- social welfare #
+- social welfare#
+- social welfare No.
+- social welfare number
 - swn#
-
 
 ## Norway identification number
 
@@ -13718,6 +13834,7 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 ### Pattern
 
 11 digits:
+
 - six digits in the format DDMMYY, which are the date of birth
 - three-digit individual number
 - two check digits
@@ -13729,11 +13846,13 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_norway_id_number finds content that matches the pattern.
 - A keyword from Keyword_norway_id_number is found.
 - The checksum passes.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_norway_id_numbe finds content that matches the pattern.
 - The checksum passes.
 
@@ -13761,7 +13880,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - Personnummer
 - Fødselsnummer
 
-
 ## Norway physical addresses
 
 This unbundled named entity detects patterns related to physical address from Norway. It is also included in the [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
@@ -13769,7 +13887,6 @@ This unbundled named entity detects patterns related to physical address from No
 ### Confidence level
 
 Medium
-
 
 ## Philippines unified multi-purpose identification number
 
@@ -13780,6 +13897,7 @@ Medium
 ### Pattern
 
 12 digits:
+
 - four digits
 - a hyphen
 - seven digits
@@ -13793,6 +13911,7 @@ No
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The regular expression Regex_philippines_unified_id finds content that matches the pattern.
 - A keyword from Keyword_philippines_id is found.
 
@@ -13814,7 +13933,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - UMID
 - Identity Card
 - Pinag-isang Multi-Layunin ID
-
 
 ## Poland driver's license number
 
@@ -13839,8 +13957,9 @@ No
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_poland_eu_driver's_license_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_driver's_license_number` or `Keywords_poland_eu_driver's_license_number` is found.
+
+- The regular expression `Regex_poland_eu_driver's_license_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_driver's_license_number` or `Keywords_poland_eu_driver's_license_number` is found.
 
 ```xml
       <!-- Poland Driver's License Number -->
@@ -13865,48 +13984,48 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - driverlicenses
 - driverlicence
 - driverlicences
-- driver lic
-- driver lics
-- driver license
-- driver licenses
-- driver licence
-- driver licences
+- driver lic
+- driver lics
+- driver license
+- driver licenses
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
-- drivers license
-- drivers licenses
-- drivers licence
-- drivers licences
+- drivers lic
+- drivers lics
+- drivers license
+- drivers licenses
+- drivers licence
+- drivers licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
 - driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
-- driver's license
-- driver's licenses
-- driver's licence
-- driver's licences
+- driver's lic
+- driver's lics
+- driver's license
+- driver's licenses
+- driver's licence
+- driver's licences
 - dl#
 - dls#
 - driverlic#
@@ -13915,75 +14034,73 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- driver lic#
-- driver lics#
-- driver license#
-- driver licenses#
-- driver licences#
+- driver lic#
+- driver lics#
+- driver license#
+- driver licenses#
+- driver licences#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
 - driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
-- driving licence 
-- driving license
+- driver's lic#
+- driver's lics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
+- driving licence
+- driving license
 - dlno#
-- driv lic
-- driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
-- driver licen
-- drivers licen
-- driver's licen
-- driving lic
-- driving licen
-- driving licenses
-- driving licence
-- driving licences
-- driving permit
-- dl no
+- driv lic
+- driv licen
+- driv license
+- driv licenses
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
+- driving licence
+- driving licences
+- driving permit
+- dl no
 - dlno
-- dl number
-
+- dl number
 
 #### Keywords_poland_eu_driver's_license_number
 
 - prawo jazdy
 - prawa jazdy
-
 
 ## Poland identity card
 
@@ -14002,6 +14119,7 @@ Yes
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_polish_national_id finds content that matches the pattern.
 - A keyword from Keyword_polish_national_id_passport_number is found.
 - The checksum passes.
@@ -14028,7 +14146,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - Dowód Tożsamości
 - dow. os.
 
-
 ## Poland national ID (PESEL)
 
 ### Format
@@ -14048,11 +14165,13 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_pesel_identification_number finds content that matches the pattern.
 - A keyword from Keyword_pesel_identification_number is found.
 - The checksum passes.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_pesel_identification_number finds content that matches the pattern.
 - The checksum passes.
 
@@ -14083,7 +14202,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - pesel
 - tożsamości narodowej
 
-
 ## Poland passport number
 
 This sensitive information type entity is included in the EU Passport Number sensitive information type. It's also available as a stand-alone sensitive information type entity.
@@ -14103,17 +14221,20 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function `Func_polish_passport_number_v2` finds content that matches the pattern.
 - The checksum passes.
 - A keyword from `Keywords_eu_passport_number` or `Keyword_polish_national_passport_number` is found.
 - A keyword from `Keywords_eu_passport_date` is found.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function `Func_polish_passport_number_v2` finds content that matches the pattern.
 - The checksum passes.
 - A keyword from `Keywords_eu_passport_number` or `Keyword_polish_national_passport_number` is found.
 
 A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function `Func_polish_passport_number_v2` finds content that matches the pattern.
 - The checksum passes.
 
@@ -14146,32 +14267,31 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 #### Keywords_eu_passport_number
 
 - passport#
-- passport #
+- passport #
 - passportid
 - passports
 - passportno
-- passport no
+- passport no
 - passportnumber
-- passport number
+- passport number
 - passportnumbers
-- passport numbers
+- passport numbers
 
 #### Keyword_polish_national_passport_number
 
-- numer paszportu
-- numery paszportów
-- numery paszportowe
-- nr paszportu
-- nr. paszportu
-- nr paszportów
-- n° passeport
-- passeport n°
+- numer paszportu
+- numery paszportów
+- numery paszportowe
+- nr paszportu
+- nr. paszportu
+- nr paszportów
+- n° passeport
+- passeport n°
 
 #### Keywords_eu_passport_date
 
 - date of issue
 - date of expiry
-
 
 ## Poland physical addresses
 
@@ -14181,13 +14301,13 @@ This unbundled named entity detects patterns related to physical address from Po
 
 Medium
 
-
 ## Poland REGON number
 
 This sensitive information type is only available for use in:
+
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -14212,10 +14332,12 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_polish_regon_number finds content that matches the pattern.
 - A keyword from Keywords_polish_regon_number is found.
 
 A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_polish_regon_number finds content that matches the pattern.
 
 ```xml
@@ -14234,28 +14356,28 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 
 #### Keywords_poland_regon_number
 
-- regon id
-- statistical number
-- statistical id
-- statistical no
-- regon number
+- regon id
+- statistical number
+- statistical id
+- statistical no
+- regon number
 - regonid#
 - regonno#
-- company id
+- company id
 - companyid#
 - companyidno#
-- numer statystyczny
-- numeru regon
+- numer statystyczny
+- numeru regon
 - numerstatystyczny#
 - numeruregon#
-
 
 ## Poland tax identification number
 
 This sensitive information type is only available for use in:
+
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -14274,9 +14396,9 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_poland_eu_tax_file_number` finds content that matches the pattern.
-- A keyword from  `Keywords_poland_eu_tax_file_number` is found.
 
+- The function `Func_poland_eu_tax_file_number` finds content that matches the pattern.
+- A keyword from `Keywords_poland_eu_tax_file_number` is found.
 
 ```xml
       <!-- Poland Tax Identification Number -->
@@ -14294,32 +14416,31 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 
 - nip#
 - nip
-- numer identyfikacji podatkowej
+- numer identyfikacji podatkowej
 - numeridentyfikacjipodatkowej#
-- tax id
-- tax identification no
-- tax identification number
-- tax no#
-- tax no
-- tax number
-- tax registration number
+- tax id
+- tax identification no
+- tax identification number
+- tax no#
+- tax no
+- tax number
+- tax registration number
 - taxid#
 - taxidno#
 - taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
-- tin id
-- tin no
+- tin id
+- tin no
 - tin#
-- vat id#
-- vat id
-- vat no
-- vat number
+- vat id#
+- vat id
+- vat no
+- vat number
 - vatid#
 - vatid
 - vatno#
-
 
 ## Portugal citizen card number
 
@@ -14338,6 +14459,7 @@ No
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The regular expression Regex_portugal_citizen_card finds content that matches the pattern.
 - A keyword from Keyword_portugal_citizen_card is found.
 
@@ -14355,24 +14477,23 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 
 #### Keyword_portugal_citizen_card
 
-- bilhete de identidade
-- cartão de cidadão
-- citizen card
-- document number
-- documento de identificação
-- id number
-- identification no
-- identification number
-- identity card no
-- identity card number
-- national id card
+- bilhete de identidade
+- cartão de cidadão
+- citizen card
+- document number
+- documento de identificação
+- id number
+- identification no
+- identification number
+- identity card no
+- identity card number
+- national id card
 - nic
-- número bi de portugal
-- número de identificação civil
-- número de identificação fiscal
-- número do documento
-- portugal bi number
-
+- número bi de portugal
+- número de identificação civil
+- número de identificação fiscal
+- número do documento
+- portugal bi number
 
 ## Portugal driver's license number
 
@@ -14384,6 +14505,7 @@ two patterns - two letters followed by 5-8 digits with special characters
 
 Pattern 1:
 Two letters followed by 5/6 with special characters:
+
 - Two letters (not case-sensitive)
 - A hyphen
 - Five or Six digits
@@ -14392,12 +14514,12 @@ Two letters followed by 5/6 with special characters:
 
 Pattern 2:
 One letter followed by 6/8 digits with special characters:
+
 - One letter (not case-sensitive)
 - A hyphen
 - Six or eight digits
 - A space
 - One digit
-
 
 ### Checksum
 
@@ -14406,8 +14528,9 @@ No
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_portugal_eu_driver's_license_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_driver's_license_number` or `Keywords_portugal_eu_driver's_license_number` is found.
+
+- The regular expression `Regex_portugal_eu_driver's_license_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_driver's_license_number` or `Keywords_portugal_eu_driver's_license_number` is found.
 
 ```xml
       <!-- Portugal Driver's License Number -->
@@ -14432,48 +14555,48 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - driverlicenses
 - driverlicence
 - driverlicences
-- driver lic
-- driver lics
-- driver license
-- driver licenses
-- driver licence
-- driver licences
+- driver lic
+- driver lics
+- driver license
+- driver licenses
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
-- drivers license
-- drivers licenses
-- drivers licence
-- drivers licences
+- drivers lic
+- drivers lics
+- drivers license
+- drivers licenses
+- drivers licence
+- drivers licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
 - driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
-- driver's license
-- driver's licenses
-- driver's licence
-- driver's licences
+- driver's lic
+- driver's lics
+- driver's license
+- driver's licenses
+- driver's licence
+- driver's licences
 - dl#
 - dls#
 - driverlic#
@@ -14482,69 +14605,68 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- driver lic#
-- driver lics#
-- driver license#
-- driver licenses#
-- driver licences#
+- driver lic#
+- driver lics#
+- driver license#
+- driver licenses#
+- driver licences#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
 - driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
-- driving licence 
-- driving license
+- driver's lic#
+- driver's lics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
+- driving licence
+- driving license
 - dlno#
-- driv lic
-- driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
-- driver licen
-- drivers licen
-- driver's licen
-- driving lic
-- driving licen
-- driving licenses
-- driving licence
-- driving licences
-- driving permit
-- dl no
+- driv lic
+- driv licen
+- driv license
+- driv licenses
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
+- driving licence
+- driving licences
+- driving permit
+- dl no
 - dlno
-- dl number
-
+- dl number
 
 #### Keywords_portugal_eu_driver's_license_number
 
@@ -14558,7 +14680,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - permissão condução
 - Licença condução Portugal
 - carta de condução
-
 
 ## Portugal passport number
 
@@ -14580,13 +14701,15 @@ No
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_portugal_eu_passport_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_passport_number` or `Keywords_portugal_eu_passport_number` is found.
+
+- The regular expression `Regex_portugal_eu_passport_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_passport_number` or `Keywords_portugal_eu_passport_number` is found.
 - The regular expression `Regex_eu_passport_date1` finds date in the format DD.MM.YYYY or a keyword from `Keywords_eu_passport_date` is found
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_portugal_eu_passport_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_passport_number` or `Keywords_portugal_eu_passport_number` is found.
+
+- The regular expression `Regex_portugal_eu_passport_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_passport_number` or `Keywords_portugal_eu_passport_number` is found.
 
 ```xml
       <!-- Portugal Passport Number -->
@@ -14617,15 +14740,15 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 #### Keywords_eu_passport_number
 
 - passport#
-- passport #
+- passport #
 - passportid
 - passports
 - passportno
-- passport no
+- passport no
 - passportnumber
-- passport number
+- passport number
 - passportnumbers
-- passport numbers
+- passport numbers
 
 #### Keywords_portugal_eu_passport_number
 
@@ -14645,7 +14768,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - date of issue
 - date of expiry
 
-
 ## Portugal physical addresses
 
 This unbundled named entity detects patterns related to physical address from Portugal. It is also included in the [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
@@ -14653,7 +14775,6 @@ This unbundled named entity detects patterns related to physical address from Po
 ### Confidence level
 
 Medium
-
 
 ## Portugal tax identification number
 
@@ -14676,11 +14797,13 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_portugal_eu_tax_file_number` finds content that matches the pattern.
-- A keyword from  `Keywords_portugal_eu_tax_file_number` is found.
+
+- The function `Func_portugal_eu_tax_file_number` finds content that matches the pattern.
+- A keyword from `Keywords_portugal_eu_tax_file_number` is found.
 
 A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_portugal_eu_tax_file_number` finds content that matches the pattern.
+
+- The function `Func_portugal_eu_tax_file_number` finds content that matches the pattern.
 
 ```xml
       <!-- Portugal Tax Identification Number -->
@@ -14703,25 +14826,24 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 - cpf
 - nif#
 - nif
-- número de identificação fisca
-- numero fiscal
-- tax id
-- tax identification no
-- tax identification number
-- tax no#
-- tax no
-- tax number
-- tax registration number
+- número de identificação fisca
+- numero fiscal
+- tax id
+- tax identification no
+- tax identification number
+- tax no#
+- tax no
+- tax number
+- tax registration number
 - taxid#
 - taxidno#
 - taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
-- tin id
-- tin no
+- tin id
+- tin no
 - tin#
-
 
 ## Romania driver's license number
 
@@ -14732,6 +14854,7 @@ one character followed by eight digits
 ### Pattern
 
 one character followed by eight digits:
+
 - one letter (not case-sensitive) or digit
 - eight digits
 
@@ -14742,8 +14865,9 @@ No
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_romania_eu_driver's_license_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_driver's_license_number` or `Keywords_romania_eu_driver's_license_number` is found.
+
+- The regular expression `Regex_romania_eu_driver's_license_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_driver's_license_number` or `Keywords_romania_eu_driver's_license_number` is found.
 
 ```xml
       <!-- Romania Driver's License Number -->
@@ -14768,48 +14892,48 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - driverlicenses
 - driverlicence
 - driverlicences
-- driver lic
-- driver lics
-- driver license
-- driver licenses
-- driver licence
-- driver licences
+- driver lic
+- driver lics
+- driver license
+- driver licenses
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
-- drivers license
-- drivers licenses
-- drivers licence
-- drivers licences
+- drivers lic
+- drivers lics
+- drivers license
+- drivers licenses
+- drivers licence
+- drivers licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
 - driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
-- driver's license
-- driver's licenses
-- driver's licence
-- driver's licences
+- driver's lic
+- driver's lics
+- driver's license
+- driver's licenses
+- driver's licence
+- driver's licences
 - dl#
 - dls#
 - driverlic#
@@ -14818,68 +14942,68 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- driver lic#
-- driver lics#
-- driver license#
-- driver licenses#
-- driver licences#
+- driver lic#
+- driver lics#
+- driver license#
+- driver licenses#
+- driver licences#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
 - driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
-- driving licence 
-- driving license
+- driver's lic#
+- driver's lics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
+- driving licence
+- driving license
 - dlno#
-- driv lic
-- driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
-- driver licen
-- drivers licen
-- driver's licen
-- driving lic
-- driving licen
-- driving licenses
-- driving licence
-- driving licences
-- driving permit
-- dl no
+- driv lic
+- driv licen
+- driv license
+- driv licenses
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
+- driving licence
+- driving licences
+- driving permit
+- dl no
 - dlno
-- dl number
+- dl number
 
 #### Keywords_romania_eu_driver's_license_number
 
@@ -14889,7 +15013,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - permisele de conducere
 - permisele conducere
 - permis conducere
-
 
 ## Romania passport number
 
@@ -14908,13 +15031,15 @@ No
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_romania_eu_passport_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_passport_number` or `Keywords_romania_eu_passport_number` is found.
+
+- The regular expression `Regex_romania_eu_passport_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_passport_number` or `Keywords_romania_eu_passport_number` is found.
 - The regular expression `Regex_romania_eu_passport_date` finds date in the format DD MMM/MMM YY (Example- 01 FEB/FEB 10) or a keyword from `Keywords_eu_passport_date` is found
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_romania_eu_passport_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_passport_number` or `Keywords_romania_eu_passport_number` is found.
+
+- The regular expression `Regex_romania_eu_passport_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_passport_number` or `Keywords_romania_eu_passport_number` is found.
 
 ```xml
       <!-- Romania Passport Number -->
@@ -14945,15 +15070,15 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 #### Keywords_eu_passport_number
 
 - passport#
-- passport #
+- passport #
 - passportid
 - passports
 - passportno
-- passport no
+- passport no
 - passportnumber
-- passport number
+- passport number
 - passportnumbers
-- passport numbers
+- passport numbers
 
 #### Keywords_romania_eu_passport_number
 
@@ -14967,13 +15092,13 @@ Pașaport nr
 - date of issue
 - date of expiry
 
-
 ## Romania personal numeric code (CNP)
 
 This sensitive information type is only available for use in:
+
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -14995,11 +15120,13 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_romania_eu_national_id_card` finds content that matches the pattern.
-- A keyword from  `Keywords_romania_eu_national_id_card` is found.
+
+- The function `Func_romania_eu_national_id_card` finds content that matches the pattern.
+- A keyword from `Keywords_romania_eu_national_id_card` is found.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_romania_eu_national_id_card` finds content that matches the pattern.
+
+- The function `Func_romania_eu_national_id_card` finds content that matches the pattern.
 
 ```xml
       <!-- Romania Personal Numerical Code (CNP) -->
@@ -15020,53 +15147,52 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 - cnp#
 - cnp
-- cod identificare personal
-- cod numeric personal
-- cod unic identificare
+- cod identificare personal
+- cod numeric personal
+- cod unic identificare
 - codnumericpersonal#
-- codul fiscal nr.
-- identificarea fiscală nr#
-- id-ul taxei
-- insurance number
+- codul fiscal nr.
+- identificarea fiscală nr#
+- id-ul taxei
+- insurance number
 - insurancenumber#
-- national id#
-- national id
-- national identification number
-- număr identificare personal
-- număr identitate
-- număr personal unic
+- national id#
+- national id
+- national identification number
+- număr identificare personal
+- număr identitate
+- număr personal unic
 - număridentitate#
 - număridentitate
 - numărpersonalunic#
 - numărpersonalunic
-- număru de identificare fiscală
-- numărul de identificare fiscală
-- personal numeric code
+- număru de identificare fiscală
+- numărul de identificare fiscală
+- personal numeric code
 - pin#
 - pin
-- tax file no
-- tax file number
-- tax id
-- tax identification no
-- tax identification number
-- tax no#
-- tax no
-- tax number
-- tax registration number
+- tax file no
+- tax file number
+- tax id
+- tax identification no
+- tax identification number
+- tax no#
+- tax no
+- tax number
+- tax registration number
 - taxid#
 - taxidno#
 - taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
-- tin id
-- tin no
+- tin id
+- tin no
 - tin#
-- unique identification number
-- unique identity number
+- unique identification number
+- unique identity number
 - uniqueidentityno#
 - uniqueidentityno
-
 
 ## Romania physical addresses
 
@@ -15076,13 +15202,13 @@ This unbundled named entity detects patterns related to physical address from Ro
 
 Medium
 
-
 ## Russia passport number domestic
 
 This sensitive information type is only available for use in:
+
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -15107,6 +15233,7 @@ No
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The regex Regex_Russian_Passport_Number_Domestic finds content that matches the pattern.
 - A keyword from Keyword_Russian_Passport_Number is found.
 
@@ -15124,28 +15251,28 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 #### Keyword_russia_passport_number_domestic
 
-- passport number
-- passport no
-- passport #
-- passport id
+- passport number
+- passport no
+- passport #
+- passport id
 - passportno#
 - passportnumber#
-- паспорт нет
-- паспорт id
-- pоссийской паспорт
-- pусский номер паспорта
+- паспорт нет
+- паспорт id
+- pоссийской паспорт
+- pусский номер паспорта
 - паспорт#
 - паспортid#
-- номер паспорта
+- номер паспорта
 - номерпаспорта#
-
 
 ## Russia passport number international
 
 This sensitive information type is only available for use in:
+
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -15168,6 +15295,7 @@ No
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The regex Regex_Russian_Passport_Number_International finds content that matches the pattern.
 - A keyword from Keyword_Russian_Passport_Number is found.
 
@@ -15185,21 +15313,20 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 #### Keywords_russia_passport_number_international
 
-- passport number
-- passport no
-- passport #
-- passport id
+- passport number
+- passport no
+- passport #
+- passport id
 - passportno#
 - passportnumber#
-- паспорт нет
-- паспорт id
-- pоссийской паспорт
-- pусский номер паспорта
+- паспорт нет
+- паспорт id
+- pоссийской паспорт
+- pусский номер паспорта
 - паспорт#
 - паспортid#
-- номер паспорта
+- номер паспорта
 - номерпаспорта#
-
 
 ## Saudi Arabia National ID
 
@@ -15218,6 +15345,7 @@ No
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The regular expression Regex_saudi_arabia_national_id finds content that matches the pattern.
 - A keyword from Keyword_saudi_arabia_national_id is found.
 
@@ -15242,7 +15370,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - ID number
 - الوطنية الهوية بطاقة رقم
 
-
 ## Singapore national registration identity card (NRIC) number
 
 ### Format
@@ -15252,7 +15379,8 @@ nine letters and digits
 ### Pattern
 
 - nine letters and digits:
-- the letter "F", "G", "S", or "T" (not case-sensitive)
+
+- the letter "F", "G", "M", "S", or "T" (not case-sensitive)
 - seven digits
 - an alphabetic check digit
 
@@ -15263,11 +15391,13 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The regular expression Regex_singapore_nric finds content that matches the pattern.
 - A keyword from Keyword_singapore_nric is found.
 - The checksum passes.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The regular expression Regex_singapore_nric finds content that matches the pattern.
 - The checksum passes.
 
@@ -15297,7 +15427,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - 身份证
 - 身份證
 
-
 ## Slovakia driver's license number
 
 ### Format
@@ -15318,8 +15447,9 @@ No
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_slovakia_eu_driver's_license_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_driver's_license_number` or `Keywords_slovakia_eu_driver's_license_number` is found.
+
+- The regular expression `Regex_slovakia_eu_driver's_license_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_driver's_license_number` or `Keywords_slovakia_eu_driver's_license_number` is found.
 
 ```xml
       <!-- Slovakia Driver's License Number -->
@@ -15344,48 +15474,48 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - driverlicenses
 - driverlicence
 - driverlicences
-- driver lic
-- driver lics
-- driver license
-- driver licenses
-- driver licence
-- driver licences
+- driver lic
+- driver lics
+- driver license
+- driver licenses
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
-- drivers license
-- drivers licenses
-- drivers licence
-- drivers licences
+- drivers lic
+- drivers lics
+- drivers license
+- drivers licenses
+- drivers licence
+- drivers licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
 - driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
-- driver's license
-- driver's licenses
-- driver's licence
-- driver's licences
+- driver's lic
+- driver's lics
+- driver's license
+- driver's licenses
+- driver's licence
+- driver's licences
 - dl#
 - dls#
 - driverlic#
@@ -15394,69 +15524,68 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- driver lic#
-- driver lics#
-- driver license#
-- driver licenses#
-- driver licences#
+- driver lic#
+- driver lics#
+- driver license#
+- driver licenses#
+- driver licences#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
 - driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
-- driving licence 
-- driving license
+- driver's lic#
+- driver's lics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
+- driving licence
+- driving license
 - dlno#
-- driv lic
-- driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
-- driver licen
-- drivers licen
-- driver's licen
-- driving lic
-- driving licen
-- driving licenses
-- driving licence
-- driving licences
-- driving permit
-- dl no
+- driv lic
+- driv licen
+- driv license
+- driv licenses
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
+- driving licence
+- driving licences
+- driving permit
+- dl no
 - dlno
-- dl number
-
+- dl number
 
 #### Keywords_slovakia_eu_driver's_license_number
 
@@ -15465,16 +15594,17 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - vodičského preukazu
 - vodičských preukazov
 
-
 ## Slovakia passport number
 
 ### Format
 
-one digit or letter followed by seven digits with no spaces or delimiters
+eight or nine character alphanumeric pattern
 
 ### Pattern
 
-one digit or letter (not case-sensitive) followed by seven digits
+one letter (not case-sensitive) followed by seven digits
+or
+two letters (not case-sensitive) followed by six or seven digits
 
 ### Checksum
 
@@ -15483,13 +15613,15 @@ No
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_slovakia_eu_passport_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_passport_number` or `Keywords_slovakia_eu_passport_number` is found.
+
+- The regular expression `Regex_slovakia_eu_passport_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_passport_number` or `Keywords_slovakia_eu_passport_number` is found.
 - The regular expression `Regex_eu_passport_date1` finds date in the format DD.MM.YYYY or a keyword from `Keywords_eu_passport_date` is found
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_slovakia_eu_passport_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_passport_number` or `Keywords_slovakia_eu_passport_number` is found.
+
+- The regular expression `Regex_slovakia_eu_passport_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_passport_number` or `Keywords_slovakia_eu_passport_number` is found.
 
 ```xml
       <!-- Slovakia Passport Number -->
@@ -15520,15 +15652,15 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 #### Keywords_eu_passport_number
 
 - passport#
-- passport #
+- passport #
 - passportid
 - passports
 - passportno
-- passport no
+- passport no
 - passportnumber
-- passport number
+- passport number
 - passportnumbers
-- passport numbers
+- passport numbers
 
 #### Keywords_slovakia_eu_passport_number
 
@@ -15543,13 +15675,13 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - date of issue
 - date of expiry
 
-
 ## Slovakia personal number
 
 This sensitive information type is only available for use in:
+
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -15571,11 +15703,13 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_slovakia_eu_national_id_card` finds content that matches the pattern.
-- A keyword from  `Keywords_slovakia_eu_national_id_card` is found.
+
+- The function `Func_slovakia_eu_national_id_card` finds content that matches the pattern.
+- A keyword from `Keywords_slovakia_eu_national_id_card` is found.
 
 A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_slovakia_eu_national_id_card` finds content that matches the pattern.
+
+- The function `Func_slovakia_eu_national_id_card` finds content that matches the pattern.
 
 ```xml
       <!-- Slovakia Personal Number -->
@@ -15595,51 +15729,50 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 
 #### Keywords_slovakia_eu_national_id_card
 
-- azonosító szám
-- birth number
-- číslo národnej identifikačnej karty
-- číslo občianského preukazu
-- daňové číslo
-- id number
-- identification no
-- identification number
-- identifikačná karta č
-- identifikačné číslo
-- identity card no
-- identity card number
-- národná identifikačná značka č
-- national number
+- azonosító szám
+- birth number
+- číslo národnej identifikačnej karty
+- číslo občianského preukazu
+- daňové číslo
+- id number
+- identification no
+- identification number
+- identifikačná karta č
+- identifikačné číslo
+- identity card no
+- identity card number
+- národná identifikačná značka č
+- national number
 - nationalnumber#
-- nemzeti személyazonosító igazolvány
+- nemzeti személyazonosító igazolvány
 - personalidnumber#
 - rč
-- rodne cislo
-- rodné číslo
-- social security number
+- rodne cislo
+- rodné číslo
+- social security number
 - ssn#
 - ssn
-- személyi igazolvány szám
-- személyi igazolvány száma
-- személyigazolvány szám
-- tax file no
-- tax file number
-- tax id
-- tax identification no
-- tax identification number
-- tax no#
-- tax no
-- tax number
-- tax registration number
+- személyi igazolvány szám
+- személyi igazolvány száma
+- személyigazolvány szám
+- tax file no
+- tax file number
+- tax id
+- tax identification no
+- tax identification number
+- tax no#
+- tax no
+- tax number
+- tax registration number
 - taxid#
 - taxidno#
 - taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
-- tin id
-- tin no
+- tin id
+- tin no
 - tin#
-
 
 ## Slovakia physical addresses
 
@@ -15648,7 +15781,6 @@ This unbundled named entity detects patterns related to physical address from Sl
 ### Confidence level
 
 Medium
-
 
 ## Slovenia driver's license number
 
@@ -15667,8 +15799,9 @@ No
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_slovenia_eu_driver's_license_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_driver's_license_number` or `Keywords_slovenia_eu_driver's_license_number` is found.
+
+- The regular expression `Regex_slovenia_eu_driver's_license_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_driver's_license_number` or `Keywords_slovenia_eu_driver's_license_number` is found.
 
 ```xml
       <!-- Slovenia Driver's License Number -->
@@ -15693,48 +15826,48 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - driverlicenses
 - driverlicence
 - driverlicences
-- driver lic
-- driver lics
-- driver license
-- driver licenses
-- driver licence
-- driver licences
+- driver lic
+- driver lics
+- driver license
+- driver licenses
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
-- drivers license
-- drivers licenses
-- drivers licence
-- drivers licences
+- drivers lic
+- drivers lics
+- drivers license
+- drivers licenses
+- drivers licence
+- drivers licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
 - driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
-- driver's license
-- driver's licenses
-- driver's licence
-- driver's licences
+- driver's lic
+- driver's lics
+- driver's license
+- driver's licenses
+- driver's licence
+- driver's licences
 - dl#
 - dls#
 - driverlic#
@@ -15743,68 +15876,68 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- driver lic#
-- driver lics#
-- driver license#
-- driver licenses#
-- driver licences#
+- driver lic#
+- driver lics#
+- driver license#
+- driver licenses#
+- driver licences#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
 - driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
-- driving licence 
-- driving license
+- driver's lic#
+- driver's lics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
+- driving licence
+- driving license
 - dlno#
-- driv lic
-- driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
-- driver licen
-- drivers licen
-- driver's licen
-- driving lic
-- driving licen
-- driving licenses
-- driving licence
-- driving licences
-- driving permit
-- dl no
+- driv lic
+- driv licen
+- driv license
+- driv licenses
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
+- driving licence
+- driving licences
+- driving permit
+- dl no
 - dlno
-- dl number
+- dl number
 
 #### Keywords_slovenia_eu_driver's_license_number
 
@@ -15813,7 +15946,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - vozniških dovoljenj
 - številka vozniškega dovoljenja
 - številke vozniških dovoljenj
-
 
 ## Slovenia passport number
 
@@ -15836,13 +15968,15 @@ No
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_slovenia_eu_passport_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_passport_number` or `Keywords_slovenia_eu_passport_number` is found.
+
+- The regular expression `Regex_slovenia_eu_passport_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_passport_number` or `Keywords_slovenia_eu_passport_number` is found.
 - The regular expression `Regex_eu_passport_date1` finds date in the format DD.MM.YYYY or a keyword from `Keywords_eu_passport_date` is found
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_slovenia_eu_passport_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_passport_number` or `Keywords_slovenia_eu_passport_number` is found.
+
+- The regular expression `Regex_slovenia_eu_passport_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_passport_number` or `Keywords_slovenia_eu_passport_number` is found.
 
 ```xml
       <!-- Slovenia Passport Number -->
@@ -15873,15 +16007,15 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 #### Keywords_eu_passport_number
 
 - passport#
-- passport #
+- passport #
 - passportid
 - passports
 - passportno
-- passport no
+- passport no
 - passportnumber
-- passport number
+- passport number
 - passportnumbers
-- passport numbers
+- passport numbers
 
 #### Keywords_slovenia_eu_passport_number
 
@@ -15897,7 +16031,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - date of issue
 - date of expiry
 
-
 ## Slovenia physical addresses
 
 This unbundled named entity detects patterns related to physical address from Slovenia. It is also included in the [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
@@ -15906,13 +16039,13 @@ This unbundled named entity detects patterns related to physical address from Sl
 
 Medium
 
-
 ## Slovenia tax identification number
 
 This sensitive information type is only available for use in:
+
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -15933,11 +16066,13 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_slovenia_eu_tax_file_number` finds content that matches the pattern.
-- A keyword from  `Keywords_slovenia_eu_tax_file_number` is found.
+
+- The function `Func_slovenia_eu_tax_file_number` finds content that matches the pattern.
+- A keyword from `Keywords_slovenia_eu_tax_file_number` is found.
 
 A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_slovenia_eu_tax_file_number` finds content that matches the pattern.
+
+- The function `Func_slovenia_eu_tax_file_number` finds content that matches the pattern.
 
 ```xml
       <!-- Slovenia Tax Identification Number -->
@@ -15956,35 +16091,35 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 
 #### Keywords_slovenia_eu_tax_file_number
 
-- davčna številka
-- identifikacijska številka davka
-- številka davčne datoteke
-- tax file no
-- tax file number
-- tax id
-- tax identification no
-- tax identification number
-- tax no#
-- tax no
-- tax number
-- tax registration number
+- davčna številka
+- identifikacijska številka davka
+- številka davčne datoteke
+- tax file no
+- tax file number
+- tax id
+- tax identification no
+- tax identification number
+- tax no#
+- tax no
+- tax number
+- tax registration number
 - taxid#
 - taxidno#
 - taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
-- tin id
-- tin no
+- tin id
+- tin no
 - tin#
-
 
 ## Slovenia Unique Master Citizen Number
 
 This sensitive information type is only available for use in:
+
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -16008,11 +16143,13 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_slovenia_eu_national_id_card` finds content that matches the pattern.
-- A keyword from  `Keywords_slovenia_eu_national_id_card` is found.
+
+- The function `Func_slovenia_eu_national_id_card` finds content that matches the pattern.
+- A keyword from `Keywords_slovenia_eu_national_id_card` is found.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_slovenia_eu_national_id_card` finds content that matches the pattern.
+
+- The function `Func_slovenia_eu_national_id_card` finds content that matches the pattern.
 
 ```xml
       <!-- Slovenia Unique Master Citizen Number -->
@@ -16031,32 +16168,31 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 #### Keywords_slovenia_eu_national_id_card
 
-- edinstvena številka glavnega državljana
+- edinstvena številka glavnega državljana
 - emšo
-- enotna maticna številka obcana
-- id card
-- identification number
-- identifikacijska številka
-- identity card
-- nacionalna id
-- nacionalni potni list
-- national id
-- osebna izkaznica
-- osebni koda
-- osebni ne
-- osebni številka
-- personal code
-- personal number
-- personal numeric code
-- številka državljana
-- unique citizen number
-- unique id number
-- unique identity number
-- unique master citizen number
-- unique registration number
-- uniqueidentityno #
+- enotna maticna številka obcana
+- id card
+- identification number
+- identifikacijska številka
+- identity card
+- nacionalna id
+- nacionalni potni list
+- national id
+- osebna izkaznica
+- osebni koda
+- osebni ne
+- osebni številka
+- personal code
+- personal number
+- personal numeric code
+- številka državljana
+- unique citizen number
+- unique id number
+- unique identity number
+- unique master citizen number
+- unique registration number
+- uniqueidentityno #
 - uniqueidentityno#
-
 
 ## South Africa identification number
 
@@ -16067,6 +16203,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 ### Pattern
 
 13 digits:
+
 - six digits in the format YYMMDD, which are the date of birth
 - four digits
 - a single-digit citizenship indicator
@@ -16080,6 +16217,7 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_south_africa_identification_number finds content that matches the pattern.
 - A keyword from Keyword_south_africa_identification_number is found.
 - The checksum passes.
@@ -16102,7 +16240,6 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 - ID
 - Identification
 
-
 ## South Korea resident registration number
 
 ### Format
@@ -16112,6 +16249,7 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 ### Pattern
 
 13 digits:
+
 - six digits in the format YYMMDD, which are the date of birth
 - a hyphen
 - one digit determined by the century and gender
@@ -16126,11 +16264,13 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_south_korea_resident_number finds content that matches the pattern.
 - A keyword from Keyword_south_korea_resident_number is found.
 - The checksum passes.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_south_korea_resident_number finds content that matches the pattern.
 - The checksum passes.
 
@@ -16157,13 +16297,13 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - RRN
 - 주민등록번호
 
-
 ## Spain DNI
 
 This sensitive information type is only available for use in:
+
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -16186,12 +16326,13 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_spain_eu_DL_and_NI_number_citizen` or `Func_spain_eu_DL_and_NI_number_foreigner` finds content that matches the pattern.
-- A keyword from  `Keywords_spain_eu_national_id_card"` is found.
+
+- The function `Func_spain_eu_DL_and_NI_number_citizen` or `Func_spain_eu_DL_and_NI_number_foreigner` finds content that matches the pattern.
+- A keyword from `Keywords_spain_eu_national_id_card"` is found.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_spain_eu_DL_and_NI_number_citizen` or `Func_spain_eu_DL_and_NI_number_foreigner` finds content that matches the pattern.
 
+- The function `Func_spain_eu_DL_and_NI_number_citizen` or `Func_spain_eu_DL_and_NI_number_foreigner` finds content that matches the pattern.
 
 ```xml
       <!-- Spain DNI -->
@@ -16217,28 +16358,27 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 #### Keywords_spain_eu_national_id_card
 
-- carné de identidad
+- carné de identidad
 - dni#
 - dni
 - dninúmero#
-- documento nacional de identidad
-- identidad único
+- documento nacional de identidad
+- identidad único
 - identidadúnico#
-- insurance number
-- national identification number
-- national identity
+- insurance number
+- national identification number
+- national identity
 - nationalid#
 - nationalidno#
 - nie#
 - nie
 - nienúmero#
-- número de identificación
-- número nacional identidad
-- personal identification number
-- personal identity no
-- unique identity number
+- número de identificación
+- número nacional identidad
+- personal identification number
+- personal identity no
+- unique identity number
 - uniqueid#
-
 
 ## Spain driver's license number
 
@@ -16260,11 +16400,13 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_spain_eu_DL_and_NI_number_citizen` or `Func_spain_eu_DL_and_NI_number_foreigner` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_driver's_license_number` or `Keywords_spain_eu_driver's_license_number` is found.
+
+- The function `Func_spain_eu_DL_and_NI_number_citizen` or `Func_spain_eu_DL_and_NI_number_foreigner` finds content that matches the pattern.
+- A keyword from `Keywords_eu_driver's_license_number` or `Keywords_spain_eu_driver's_license_number` is found.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_spain_eu_DL_and_NI_number_citizen` or `Func_spain_eu_DL_and_NI_number_foreigner` finds content that matches the pattern.
+
+- The function `Func_spain_eu_DL_and_NI_number_citizen` or `Func_spain_eu_DL_and_NI_number_foreigner` finds content that matches the pattern.
 
 ```xml
       <!-- Spain Driver's License Number -->
@@ -16302,48 +16444,48 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - driverlicenses
 - driverlicence
 - driverlicences
-- driver lic
-- driver lics
-- driver license
-- driver licenses
-- driver licence
-- driver licences
+- driver lic
+- driver lics
+- driver license
+- driver licenses
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
-- drivers license
-- drivers licenses
-- drivers licence
-- drivers licences
+- drivers lic
+- drivers lics
+- drivers license
+- drivers licenses
+- drivers licence
+- drivers licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
 - driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
-- driver's license
-- driver's licenses
-- driver's licence
-- driver's licences
+- driver's lic
+- driver's lics
+- driver's license
+- driver's licenses
+- driver's licence
+- driver's licences
 - dl#
 - dls#
 - driverlic#
@@ -16352,69 +16494,68 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- driver lic#
-- driver lics#
-- driver license#
-- driver licenses#
-- driver licences#
+- driver lic#
+- driver lics#
+- driver license#
+- driver licenses#
+- driver licences#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
 - driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
-- driving licence 
-- driving license
+- driver's lic#
+- driver's lics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
+- driving licence
+- driving license
 - dlno#
-- driv lic
-- driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
-- driver licen
-- drivers licen
-- driver's licen
-- driving lic
-- driving licen
-- driving licenses
-- driving licence
-- driving licences
-- driving permit
-- dl no
+- driv lic
+- driv licen
+- driv license
+- driv licenses
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
+- driving licence
+- driving licences
+- driving permit
+- dl no
 - dlno
-- dl number
-
+- dl number
 
 #### Keywords_spain_eu_driver's_license_number
 
@@ -16430,7 +16571,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - carnet de conducir
 - licencia de manejo
 - licencia manejo
-
 
 ## Spain passport number
 
@@ -16453,13 +16593,15 @@ Not applicable
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_spain_eu_passport_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_passport_number` or `Keywords_spain_eu_passport_number` is found.
+
+- The regular expression `Regex_spain_eu_passport_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_passport_number` or `Keywords_spain_eu_passport_number` is found.
 - The regular expression `Regex_spain_eu_passport_date` finds date in the format DD-MM-YYYY or a keyword from `Keywords_eu_passport_date` is found
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_spain_eu_passport_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_passport_number` or `Keywords_spain_eu_passport_number` is found.
+
+- The regular expression `Regex_spain_eu_passport_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_passport_number` or `Keywords_spain_eu_passport_number` is found.
 
 ```xml
       <!-- Spain Passport Number -->
@@ -16490,15 +16632,15 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 #### Keywords_eu_passport_number
 
 - passport#
-- passport #
+- passport #
 - passportid
 - passports
 - passportno
-- passport no
+- passport no
 - passportnumber
-- passport number
+- passport number
 - passportnumbers
-- passport numbers
+- passport numbers
 
 #### Keywords_spain_eu_passport_number
 
@@ -16520,7 +16662,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - date of issue
 - date of expiry
 
-
 ## Spain physical addresses
 
 This unbundled named entity detects patterns related to physical address from Spain. It is also included in the [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
@@ -16529,9 +16670,7 @@ This unbundled named entity detects patterns related to physical address from Sp
 
 Medium
 
-
 ## Spain social security number (SSN)
-
 
 ### Format
 
@@ -16540,6 +16679,7 @@ Medium
 ### Pattern
 
 11-12 digits:
+
 - two digits
 - a forward slash (optional)
 - seven to eight digits
@@ -16553,11 +16693,13 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_spanish_social_security_number finds content that matches the pattern.
 - The checksum passes.
-- - A keyword from  `Keywords_spain_eu_ssn_or_equivalent` is found.
+- - A keyword from `Keywords_spain_eu_ssn_or_equivalent` is found.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_spanish_social_security_number finds content that matches the pattern.
 - The checksum passes.
 
@@ -16585,13 +16727,13 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - social security number
 - número de la seguridad social
 
-
 ## Spain tax identification number
 
 This sensitive information type is only available for use in:
+
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -16637,11 +16779,13 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_spain_eu_tax_file_number` or `Func_spain_eu_DL_and_NI_number_citizen` finds content that matches the pattern.
-- A keyword from  `Keywords_spain_eu_tax_file_number` is found.
+
+- The function `Func_spain_eu_tax_file_number` or `Func_spain_eu_DL_and_NI_number_citizen` finds content that matches the pattern.
+- A keyword from `Keywords_spain_eu_tax_file_number` is found.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_spain_eu_tax_file_number` or `Func_spain_eu_DL_and_NI_number_citizen` finds content that matches the pattern.
+
+- The function `Func_spain_eu_tax_file_number` or `Func_spain_eu_DL_and_NI_number_citizen` finds content that matches the pattern.
 
 ```xml
       <!-- Spain Tax Identification Number -->
@@ -16670,32 +16814,31 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - cif
 - cifid#
 - cifnúmero#
-- número de contribuyente
-- número de identificación fiscal
-- número de impuesto corporativo
+- número de contribuyente
+- número de identificación fiscal
+- número de impuesto corporativo
 - spanishcifid#
 - spanishcifid
 - spanishcifno#
 - spanishcifno
-- tax file no
-- tax file number
-- tax id
-- tax identification no
-- tax identification number
-- tax no#
-- tax no
-- tax number
-- tax registration number
+- tax file no
+- tax file number
+- tax id
+- tax identification no
+- tax identification number
+- tax no#
+- tax no
+- tax number
+- tax registration number
 - taxid#
 - taxidno#
 - taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
-- tin id
-- tin no
+- tin id
+- tin no
 - tin#
-
 
 ## SQL Server connection string
 
@@ -16720,6 +16863,7 @@ No
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The regular expression CEP_Regex_SQLServerConnectionString finds content that matches the pattern.
 - A keyword from CEP_GlobalFilter isn't found.
 - The regular expression CEP_PasswordPlaceHolder doesn't find content that matches the pattern.
@@ -16774,7 +16918,6 @@ This sensitive information type identifies these keywords by using a regular exp
 - testacs.<!--no-hyperlink-->com
 - s-int.<!--no-hyperlink-->net
 
-
 ## Surgical procedures
 
 This unbundled named entity detects terms related to surgical procedures, such as *appendectomy*.  It supports English terms only. It is also included in the [All medical terms and conditions](#all-medical-terms-and-conditions) bundled named entity SIT.
@@ -16782,7 +16925,6 @@ This unbundled named entity detects terms related to surgical procedures, such a
 ### Confidence level
 
 High
-
 
 ## Sweden driver's license number
 
@@ -16805,8 +16947,9 @@ No
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_sweden_eu_driver's_license_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_driver's_license_number` or `Keywords_sweden_eu_driver's_license_number` is found.
+
+- The regular expression `Regex_sweden_eu_driver's_license_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_driver's_license_number` or `Keywords_sweden_eu_driver's_license_number` is found.
 
 ```xml
       <!-- Sweden Driver's License Number -->
@@ -16831,48 +16974,48 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - driverlicenses
 - driverlicence
 - driverlicences
-- driver lic
-- driver lics
-- driver license
-- driver licenses
-- driver licence
-- driver licences
+- driver lic
+- driver lics
+- driver license
+- driver licenses
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
-- drivers license
-- drivers licenses
-- drivers licence
-- drivers licences
+- drivers lic
+- drivers lics
+- drivers license
+- drivers licenses
+- drivers licence
+- drivers licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
 - driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
-- driver's license
-- driver's licenses
-- driver's licence
-- driver's licences
+- driver's lic
+- driver's lics
+- driver's license
+- driver's licenses
+- driver's licence
+- driver's licences
 - dl#
 - dls#
 - driverlic#
@@ -16881,69 +17024,68 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- driver lic#
-- driver lics#
-- driver license#
-- driver licenses#
-- driver licences#
+- driver lic#
+- driver lics#
+- driver license#
+- driver licenses#
+- driver licences#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
 - driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
-- driving licence 
-- driving license
+- driver's lic#
+- driver's lics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
+- driving licence
+- driving license
 - dlno#
-- driv lic
-- driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
-- driver licen
-- drivers licen
-- driver's licen
-- driving lic
-- driving licen
-- driving licenses
-- driving licence
-- driving licences
-- driving permit
-- dl no
+- driv lic
+- driv licen
+- driv license
+- driv licenses
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
+- driving licence
+- driving licences
+- driving permit
+- dl no
 - dlno
-- dl number
-
+- dl number
 
 #### Keywords_sweden_eu_driver's_license_number
 
@@ -16954,11 +17096,10 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - drivere lic.
 - körkort
 - numărul permisului de conducere
--  שאָפער דערלויבעניש נומער
+- שאָפער דערלויבעניש נומער
 - förare lic.
--  דריווערס דערלויבעניש
+- דריווערס דערלויבעניש
 - körkortsnummer
-
 
 ## Sweden national ID
 
@@ -16969,6 +17110,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 ### Pattern
 
 10 or 12 digits and an optional delimiter:
+
 - two digits (optional)
 - Six digits in date format YYMMDD
 - delimiter of "-" or "+" (optional)
@@ -16981,14 +17123,15 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function `Func_swedish_national_identifier` finds content that matches the pattern.
 - A keyword from `Keywords_swedish_national_identifier` is found
 - The checksum passes.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function `Func_swedish_national_identifier` finds content that matches the pattern.
 - The checksum passes.
-
 
 ```xml
     <!-- Sweden National ID -->
@@ -17007,23 +17150,22 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 #### Keywords_swedish_national_identifier
 
-- id no
-- id number
+- id no
+- id number
 - id#
-- identification no
-- identification number
+- identification no
+- identification number
 - identifikationsnumret#
 - identifikationsnumret
 - identitetshandling
-- identity document
-- identity no
-- identity number
+- identity document
+- identity no
+- identity number
 - id-nummer
-- personal id
+- personal id
 - personnummer#
 - personnummer
 - skatteidentifikationsnummer
-
 
 ## Sweden passport number
 
@@ -17042,14 +17184,15 @@ No
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - the regular expression Regex_sweden_passport_number finds content that matches the pattern.
 - a keyword from `Keywords_eu_passport_number` or `Keyword_sweden_passport` is found.
 - the regular expression `Regex_sweden_eu_passport_date` finds a date in the format DD MMM/MMM YY (01 JAN/JAN 12) or a keyword from `Keywords_eu_passport_date` is found.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - the regular expression Regex_sweden_passport_number finds content that matches the pattern.
 - a keyword from `Keywords_eu_passport_number` or `Keyword_sweden_passport` is found.
-
 
 ```xml
     <!-- Sweden Passport Number -->
@@ -17080,43 +17223,42 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 #### Keywords_eu_passport_number
 
 - passport#
-- passport #
+- passport #
 - passportid
 - passports
 - passportno
-- passport no
+- passport no
 - passportnumber
-- passport number
+- passport number
 - passportnumbers
-- passport numbers
+- passport numbers
 
 #### Keyword_sweden_passport
 
-- alien registration card
-- g3 processing fees
-- multiple entry
-- Numéro de passeport
-- passeport n °
-- passeport non
-- passeport #
+- alien registration card
+- g3 processing fees
+- multiple entry
+- Numéro de passeport
+- passeport n °
+- passeport non
+- passeport #
 - passeport#
 - passeportnon
-- passeportn °
+- passeportn °
 - passnummer
-- pass nr
-- schengen visa
-- schengen visas
-- single entry
-- sverige pass
-- visa requirements
-- visa processing
-- visa type
+- pass nr
+- schengen visa
+- schengen visas
+- single entry
+- sverige pass
+- visa requirements
+- visa processing
+- visa type
 
 #### Keywords_eu_passport_date
 
 - date of issue
 - date of expiry
-
 
 ## Sweden physical addresses
 
@@ -17126,13 +17268,13 @@ This unbundled named entity detects patterns related to physical address from Sw
 
 Medium
 
-
 ## Sweden tax identification number
 
 This sensitive information type is only available for use in:
+
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -17158,11 +17300,13 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_sweden_eu_tax_file_number` finds content that matches the pattern.
-- A keyword from  `Keywords_sweden_eu_tax_file_number` is found.
+
+- The function `Func_sweden_eu_tax_file_number` finds content that matches the pattern.
+- A keyword from `Keywords_sweden_eu_tax_file_number` is found.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_sweden_eu_tax_file_number` finds content that matches the pattern.
+
+- The function `Func_sweden_eu_tax_file_number` finds content that matches the pattern.
 
 ```xml
       <!-- Sweden Tax Identification Number -->
@@ -17185,30 +17329,29 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 #### Keywords_sweden_eu_tax_file_number
 
-- personal id number
+- personal id number
 - personnummer
-- skatt id nummer
-- skatt identifikation
-- skattebetalarens identifikationsnummer
-- sverige tin
-- tax file
-- tax id
-- tax identification no
-- tax identification number
-- tax no#
-- tax no
-- tax number
-- tax registration number
+- skatt id nummer
+- skatt identifikation
+- skattebetalarens identifikationsnummer
+- sverige tin
+- tax file
+- tax id
+- tax identification no
+- tax identification number
+- tax no#
+- tax no
+- tax number
+- tax registration number
 - taxid#
 - taxidno#
 - taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
-- tin id
-- tin no
+- tin id
+- tin no
 - tin#
-
 
 ## SWIFT code
 
@@ -17219,6 +17362,7 @@ four letters followed by 5-31 letters or digits
 ### Pattern
 
 four letters followed by 5-31 letters or digits:
+
 - four-letter bank code (not case-sensitive)
 - an optional space
 - 4-28 letters or digits (the Basic Bank Account Number (BBAN))
@@ -17232,6 +17376,7 @@ No
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The regular expression Regex_swift finds content that matches the pattern.
 - A keyword from Keyword_swift is found.
 
@@ -17248,41 +17393,40 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 #### Keyword_swift
 
-- international organization for standardization 9362
-- iso 9362
+- international organization for standardization 9362
+- iso 9362
 - iso9362
 - swift#
 - swiftcode
 - swiftnumber
 - swiftroutingnumber
-- swift code
-- swift number #
-- swift routing number
-- bic number
-- bic code
-- bic #
+- swift code
+- swift number #
+- swift routing number
+- bic number
+- bic code
+- bic #
 - bic#
-- bank identifier code
-- Organisation internationale de normalisation 9362
-- rapide #
-- code SWIFT
-- le numéro de swift
-- swift numéro d'acheminement
-- le numéro BIC
-- # BIC
-- code identificateur de banque
+- bank identifier code
+- Organisation internationale de normalisation 9362
+- rapide #
+- code SWIFT
+- le numéro de swift
+- swift numéro d'acheminement
+- le numéro BIC
+- \# BIC
+- code identificateur de banque
 - SWIFTコード
 - SWIFT番号
 - BIC番号
 - BICコード
-- SWIFT コード
-- SWIFT 番号
-- BIC 番号
-- BIC コード
+- SWIFT コード
+- SWIFT 番号
+- BIC 番号
+- BIC コード
 - 金融機関識別コード
 - 金融機関コード
 - 銀行コード
-
 
 ## Switzerland physical addresses
 
@@ -17292,13 +17436,13 @@ This unbundled named entity detects patterns related to physical address from Sw
 
 Medium
 
-
 ## Switzerland SSN AHV number
 
 This sensitive information type is only available for use in:
+
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -17325,10 +17469,12 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_swiss_social_security_number_ahv finds content that matches the pattern.
 - A keyword from Keywords_swiss_social_security_number_ahv is found.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_swiss_social_security_number_ahv finds content that matches the pattern.
 
 ```xml
@@ -17351,22 +17497,21 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - ahv
 - ssn
 - pid
-- insurance number
+- insurance number
 - personalidno#
-- social security number
-- personal id number
-- personal identification no.
+- social security number
+- personal id number
+- personal identification no.
 - insuranceno#
 - uniqueidno#
-- unique identification no.
-- avs number
-- personal identity no versicherungsnummer
+- unique identification no.
+- avs number
+- personal identity no versicherungsnummer
 - identifikationsnummer
-- einzigartige identität nicht
+- einzigartige identität nicht
 - sozialversicherungsnummer
-- identification personnelle id
-- numéro de sécurité sociale
-
+- identification personnelle id
+- numéro de sécurité sociale
 
 ## Taiwan national identification number
 
@@ -17377,6 +17522,7 @@ one letter (in English) followed by nine digits
 ### Pattern
 
 one letter (in English) followed by nine digits:
+
 - one letter (in English, not case-sensitive)
 - the digit "1" or "2"
 - eight digits
@@ -17388,11 +17534,13 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_taiwanese_national_id finds content that matches the pattern.
 - A keyword from Keyword_taiwanese_national_id is found.
 - The checksum passes.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_taiwanese_national_id finds content that matches the pattern.
 - The checksum passes.
 
@@ -17428,7 +17576,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - 簽名或蓋章
 - 簽章
 
-
 ## Taiwan passport number
 
 ### Format
@@ -17438,10 +17585,12 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ### Pattern
 biometric passport number:
+
 - the character "3"
 - eight digits
 
 non-biometric passport number:
+
 - nine digits
 
 ### Checksum
@@ -17451,6 +17600,7 @@ No
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The regular expression Regex_taiwan_passport finds content that matches the pattern.
 - A keyword from Keyword_taiwan_passport is found.
 
@@ -17477,7 +17627,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - 中華民國護照
 - Zhōnghuá Mínguó hùzhào
 
-
 ## Taiwan-resident certificate (ARC/TARC) number
 
 ### Format
@@ -17487,6 +17636,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 ### Pattern
 
 10 letters and digits:
+
 - two letters (not case-sensitive)
 - eight digits
 
@@ -17497,6 +17647,7 @@ No
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The regular expression Regex_taiwan_resident_certificate finds content that matches the pattern.
 - A keyword from Keyword_taiwan_resident_certificate is found.
 
@@ -17526,7 +17677,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - 外僑居留證
 - 台灣地區居留證
 
-
 ## Thai population identification code
 
 ### Format
@@ -17536,6 +17686,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 ### Pattern
 
 13 digits:
+
 - first digit isn't zero or nine
 - 12 digits
 
@@ -17546,10 +17697,12 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_Thai_Citizen_Id finds content that matches the pattern.
 - A keyword from Keyword_Thai_Citizen_Id is found.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_Thai_Citizen_Id finds content that matches the pattern.
 
 ```xml
@@ -17593,10 +17746,12 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_Turkish_National_Id finds content that matches the pattern.
 - A keyword from Keyword_Turkish_National_Id is found.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_Turkish_National_Id finds content that matches the pattern.
 
 ```xml
@@ -17621,7 +17776,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - Vatandaşlık numarası
 - Vatandaşlık no
 
-
 ## Turkey physical addresses
 
 This unbundled named entity detects patterns related to physical address from Turkey. It is also included in the [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
@@ -17630,7 +17784,6 @@ This unbundled named entity detects patterns related to physical address from Tu
 
 Medium
 
-
 ## Types of medication
 
 This unbundled named entity detects medication names, such as *insulin*.  It supports English terms only. It is also included in the [All medical terms and conditions](#all-medical-terms-and-conditions) bundled named entity SIT.
@@ -17638,7 +17791,6 @@ This unbundled named entity detects medication names, such as *insulin*.  It sup
 ### Confidence level
 
 High
-
 
 ## U.K. driver's license number
 
@@ -17649,6 +17801,7 @@ Combination of 18 letters and digits in the specified format
 ### Pattern
 
 18 letters and digits:
+
 - Five letters (not case-sensitive) or the digit "9" in place of a letter.
 - One digit.
 - Five digits in the date format MMDDY for date of birth. The seventh character is incremented by 50 if driver is female; for example, 51 to 62 instead of 01 to 12.
@@ -17662,11 +17815,13 @@ Yes
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function `Func_uk_drivers_license` finds content that matches the pattern.
 - A keyword from `Keywords_eu_driver's_license_number` is found.
 - The checksum passes.
 
 A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function `Func_uk_drivers_license` finds content that matches the pattern.
 - The checksum passes.
 
@@ -17693,48 +17848,48 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 - driverlicenses
 - driverlicence
 - driverlicences
-- driver lic
-- driver lics
-- driver license
-- driver licenses
-- driver licence
-- driver licences
+- driver lic
+- driver lics
+- driver license
+- driver licenses
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
-- drivers license
-- drivers licenses
-- drivers licence
-- drivers licences
+- drivers lic
+- drivers lics
+- drivers license
+- drivers licenses
+- drivers licence
+- drivers licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
 - driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
-- driver's license
-- driver's licenses
-- driver's licence
-- driver's licences
+- driver's lic
+- driver's lics
+- driver's license
+- driver's licenses
+- driver's licence
+- driver's licences
 - dl#
 - dls#
 - driverlic#
@@ -17743,69 +17898,68 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- driver lic#
-- driver lics#
-- driver license#
-- driver licenses#
-- driver licences#
+- driver lic#
+- driver lics#
+- driver license#
+- driver licenses#
+- driver licences#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
 - driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
-- driving licence 
-- driving license
+- driver's lic#
+- driver's lics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
+- driving licence
+- driving license
 - dlno#
-- driv lic
-- driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
-- driver licen
-- drivers licen
-- driver's licen
-- driving lic
-- driving licen
-- driving licenses
-- driving licence
-- driving licences
-- driving permit
-- dl no
+- driv lic
+- driv licen
+- driv license
+- driv licenses
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
+- driving licence
+- driving licences
+- driving permit
+- dl no
 - dlno
-- dl number
-
+- dl number
 
 ## U.K. electoral roll number
 
@@ -17824,6 +17978,7 @@ No
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The regular expression Regex_uk_electoral finds content that matches the pattern.
 - A keyword from Keyword_uk_electoral is found.
 
@@ -17848,7 +18003,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - electoral register
 - electoral roll
 
-
 ## U.K. national health service number
 
 ### Format
@@ -17858,6 +18012,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 ### Pattern
 
 10-17 digits:
+
 - either 3 or 10 digits
 - a space
 - three digits
@@ -17871,6 +18026,7 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_uk_nhs_number finds content that matches the pattern.
 - One of the following is true:
     - A keyword from Keyword_uk_nhs_number is found.
@@ -17916,7 +18072,6 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 - Date of Birth
 - Birth Date
 
-
 ## U.K. national insurance number (NINO)
 
 This sensitive information type entity is included in the EU National Identification Number sensitive information type. It's also available as a stand-alone sensitive information type entity.
@@ -17952,10 +18107,12 @@ No
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_uk_nino finds content that matches the pattern.
 - A keyword from Keyword_uk_nino is found.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_uk_nino finds content that matches the pattern.
 
 ```xml
@@ -17975,26 +18132,25 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 #### Keyword_uk_nino
 
-- national insurance number
-- national insurance contributions
-- protection act
+- national insurance number
+- national insurance contributions
+- protection act
 - insurance
-- social security number
-- insurance application
-- medical application
-- social insurance
-- medical attention
-- social security
-- great britain
-- NI Number
-- NI No.
-- NI #
+- social security number
+- insurance application
+- medical application
+- social insurance
+- medical attention
+- social security
+- great britain
+- NI Number
+- NI No.
+- NI #
 - NI#
 - insurance#
 - insurancenumber
 - nationalinsurance#
 - nationalinsurancenumber
-
 
 ## U.K. physical addresses
 
@@ -18004,21 +18160,19 @@ This unbundled named entity detects patterns related to physical address from th
 
 Medium
 
-
-
 ## U.K. Unique Taxpayer Reference Number
 
 This sensitive information type is only available for use in:
+
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
 ### Format
 
 10 digits without spaces and delimiters
-
 
 ### Pattern
 
@@ -18031,8 +18185,9 @@ No
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_uk_eu_tax_file_number` finds content that matches the pattern.
-- A keyword from  `Keywords_uk_eu_tax_file_number` is found.
+
+- The function `Func_uk_eu_tax_file_number` finds content that matches the pattern.
+- A keyword from `Keywords_uk_eu_tax_file_number` is found.
 
 ```xml
       <!-- U.K. Unique Taxpayer Reference Number -->
@@ -18048,24 +18203,23 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 #### Keywords_uk_eu_tax_file_number
 
-- tax number
-- tax file
-- tax id
-- tax identification no
-- tax identification number
-- tax no#
-- tax no
-- tax registration number
+- tax number
+- tax file
+- tax id
+- tax identification no
+- tax identification number
+- tax no#
+- tax no
+- tax registration number
 - taxid#
 - taxidno#
 - taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
-- tin id
-- tin no
+- tin id
+- tin no
 - tin#
-
 
 ## U.S. bank account number
 
@@ -18084,6 +18238,7 @@ No
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The regular expression Regex_usa_bank_account_number finds content that matches the pattern.
 - A keyword from Keyword_usa_Bank_Account is found.
 
@@ -18129,7 +18284,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - Debit Acct No.
 - Debit Account No.
 
-
 ## U.S. driver's license number
 
 ### Format
@@ -18139,6 +18293,7 @@ Depends on the state
 ### Pattern
 
 depends on the state - for example, New York:
+
 - nine digits formatted like ddd ddd ddd will match.
 - nine digits like ddddddddd will not match.
 
@@ -18149,11 +18304,13 @@ No
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_new_york_drivers_license_number finds content that matches the pattern.
 - A keyword from Keyword_[state_name]_drivers_license_name is found.
 - A keyword from Keyword_us_drivers_license is found.
 
 A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_new_york_drivers_license_number finds content that matches the pattern.
 - A keyword from Keyword_[state_name]_drivers_license_name is found.
 - A keyword from Keyword_us_drivers_license_abbreviations is found.
@@ -18197,6 +18354,7 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 - ID numbers
 - LIC
 - LIC#
+- DLN
 
 #### Keyword_us_drivers_license
 
@@ -18276,12 +18434,10 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 - identification card#
 - identification cards#
 
-
 #### Keyword_[state_name]_drivers_license_name
 
 - state abbreviation (for example, "NY")
 - state name (for example, "New York")
-
 
 ## U.S. individual taxpayer identification number (ITIN)
 
@@ -18292,6 +18448,7 @@ nine digits that start with a "9" and contain a "7" or "8" as the fourth digit, 
 ### Pattern
 
 formatted:
+
 - the digit "9"
 - two digits
 - a space or dash
@@ -18301,6 +18458,7 @@ formatted:
 - four digits
 
 unformatted:
+
 - the digit "9"
 - two digits
 - a "7" or "8"
@@ -18313,14 +18471,17 @@ No
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_formatted_itin finds content that matches the pattern.
 - A keyword from Keyword_itin is found.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_unformatted_itin finds content that matches the pattern.
 - A keyword from Keyword_itin is found.
 
 A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_formatted_itin or Func_unformatted_itin finds content that matches the pattern.
 
 ```xml
@@ -18360,7 +18521,6 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 - taxid
 - individual taxpayer
 
-
 ## U.S. physical addresses
 
 This unbundled named entity detects patterns related to physical address from the U.S.. It is also included in the [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
@@ -18368,7 +18528,6 @@ This unbundled named entity detects patterns related to physical address from th
 ### Confidence level
 
 Medium
-
 
 ## U.S. social security number (SSN)
 
@@ -18382,6 +18541,7 @@ nine digits, which may be in a formatted or unformatted pattern
 ### Pattern
 
 four functions look for SSNs in four different patterns:
+
 - Func_ssn finds SSNs with pre-2011 strong formatting that are formatted with dashes or spaces (ddd-dd-dddd OR ddd dd dddd)
 - Func_unformatted_ssn finds SSNs with pre-2011 strong formatting that are unformatted as nine consecutive digits (ddddddddd)
 - Func_randomized_formatted_ssn finds post-2011 SSNs that are formatted with dashes or spaces (ddd-dd-dddd OR ddd dd dddd)
@@ -18394,17 +18554,19 @@ No
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function `Func_ssn` finds content that matches the pattern.
 - A keyword from `Keyword_ssn` is found.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function  Func_unformatted_ssn` finds content that matches the pattern.
 - A keyword from `Keyword_ssn` is found.
 
 A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function `Func_randomized_formatted_ssn` or `Func_randomized_unformatted_ssn` finds content that matches the pattern.
 - A keyword from `Keyword_ssn` is found.
-
 
 ```xml
 <!-- U.S. Social Security Number (SSN) -->
@@ -18445,7 +18607,6 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 - SS#
 - SSID
 
-
 ## U.S./U.K. passport number
 
 ### Format
@@ -18464,11 +18625,13 @@ No
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_usa_uk_passport finds content that matches the pattern.
 - A keyword from `Keywords_eu_passport_number` or `Keywords_uk_eu_passport_number` is found.
 - A keyword from `Keywords_eu_passport_date` is found
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_usa_uk_passport finds content that matches the pattern.
 - A keyword from `Keywords_eu_passport_number` or `Keywords_uk_eu_passport_number` is found.
 
@@ -18498,28 +18661,28 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 #### Keywords_eu_passport_number
 
 - passport#
-- passport #
+- passport #
 - passportid
 - passports
 - passportno
-- passport no
+- passport no
 - passportnumber
-- passport number
+- passport number
 - passportnumbers
-- passport numbers
+- passport numbers
 
 #### Keywords_uk_eu_passport_number
 
 - british passport
 - uk passport
 
-
 ## Ukraine passport domestic
 
 This sensitive information type is only available for use in:
+
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -18538,6 +18701,7 @@ No
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The regex Regex_Ukraine_Passport_Domestic finds content that matches the pattern.
 - A keyword from Keyword_Ukraine_Passport_Domestic is found.
 
@@ -18555,20 +18719,20 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 #### Keyword_ukraine_passport_domestic
 
-- ukraine passport
-- passport number
-- passport no
-- паспорт України
-- номер паспорта
+- ukraine passport
+- passport number
+- passport no
+- паспорт України
+- номер паспорта
 - персональний
-
 
 ## Ukraine passport international
 
 This sensitive information type is only available for use in:
+
 - data loss prevention policies
 - communication compliance policies
-- information governance
+- data lifecycle management
 - records management
 - Microsoft Defender for Cloud Apps
 
@@ -18579,6 +18743,7 @@ eight-character alphanumeric pattern
 ### Pattern
 
 eight-character alphanumeric pattern:
+
 - two letters or digits
 - six digits
 
@@ -18589,6 +18754,7 @@ No
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The regex Regex_Ukraine_Passport_International finds content that matches the pattern.
 - A keyword from Keyword_Ukraine_Passport_International is found.
 
@@ -18606,10 +18772,8 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 #### Keyword_ukraine_passport_international
 
-- ukraine passport
-- passport number
-- passport no
-- паспорт України
-- номер паспорта
-
-
+- ukraine passport
+- passport number
+- passport no
+- паспорт України
+- номер паспорта

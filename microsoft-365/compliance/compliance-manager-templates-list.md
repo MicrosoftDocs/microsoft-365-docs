@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Compliance Manager templates list"
+title: "Microsoft Purview Compliance Manager templates list"
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -16,10 +16,12 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "Microsoft Compliance Manager provides templates for building assessments that align to national, regional, and industry regulations, standards, and laws."
+description: "Microsoft Purview Compliance Manager provides templates for building assessments that align to national, regional, and industry regulations, standards, and laws."
 ---
 
 # Compliance Manager templates list
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **In this article:** View the comprehensive list of **templates** available for creating assessments in Compliance Manager.
 
@@ -28,7 +30,7 @@ description: "Microsoft Compliance Manager provides templates for building asses
 
 ## Overview
 
-[Microsoft Compliance Manager](compliance-manager.md) provides a comprehensive set of templates for creating assessments. These templates can help your organization comply with national, regional, and industry-specific requirements governing the collection and use of data.
+[Microsoft Purview Compliance Manager](compliance-manager.md) provides a comprehensive set of templates for creating assessments. These templates can help your organization comply with national, regional, and industry-specific requirements governing the collection and use of data.
 
 Templates are added to Compliance Manager as new laws and regulations are enacted. Compliance Manager also updates its templates when the underlying laws or regulations change. Learn more about how to [review and accept updates](compliance-manager-assessments.md#accept-updates-to-assessments).
 
@@ -288,7 +290,7 @@ The templates listed below may be purchased by your organization.
 - [Australian Information Security Registered Assessor Program (IRAP) Version 3](/compliance/regulatory/offering-ccsl-irap-australia)  
 - [Australian Prudential Regulation Authority CPS](/compliance/regulatory/offering-apra-australia)  
 - Victorian Protective Data Security Standards V2.0 (VPDSS 2.0)  
-- Information Management Standard for Australian Government - National Archives of Australia (NAA)  
+- Information Management Standard for Australian Government - National Archives of Australia (NAA)  
 - China - Personal Information Security Specification  
 - Cybersecurity Law of the People's Republic of China  
 - Hong Kong - Personal Data (Privacy) Ordinance  

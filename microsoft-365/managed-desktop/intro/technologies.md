@@ -43,7 +43,7 @@ We recommend that your IT admins configure the following settings.
 | ----- | ----- |
 | Windows Hello for Business | You should implement Windows Hello for Business to replace passwords with strong two-factor authentication for Microsoft Managed Desktop devices. For more information, see [Windows Hello for Business](/windows/security/identity-protection/hello-for-business/hello-identity-verification). |
 | Application Virtualization | You can deploy Application Virtualization (App-V) packages using the Intune Win32 app management client. For more information, see [Application Virtualization](/windows/application-management/app-v/appv-technical-reference). |
-| Microsoft 365 data loss prevention | You should implement Microsoft 365 data loss prevention to monitor the actions taken on items you've determined to be sensitive, and to help prevent the unintentional sharing of those items. For more information, see [Microsoft 365 data loss prevention](../../compliance/endpoint-dlp-learn-about.md). |
+| Microsoft Purview data loss prevention | You should implement data loss prevention to monitor the actions taken on items you've determined to be sensitive, and to help prevent the unintentional sharing of those items. For more information, see [data loss prevention](../../compliance/endpoint-dlp-learn-about.md). |
 
 Features included and managed as part of Microsoft Managed Desktop:
 

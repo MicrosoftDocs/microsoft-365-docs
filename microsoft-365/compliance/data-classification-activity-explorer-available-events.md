@@ -22,6 +22,8 @@ description: "A list of labeling activities that are available in Activity explo
 
 # Labeling activities that are available in Activity explorer
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 ## Sensitivity label applied
 
 This event is generated each time an unlabeled document is labeled or an email is sent with a sensitivity label.

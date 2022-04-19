@@ -217,7 +217,13 @@
      - name: Run an administrator role group report
        href: /exchange/security-and-compliance/exchange-auditing-reports/search-role-group-changes
    - name: Investigate
-     items: 
+     items:
+     - name: Defender for Office 365 Security Operations Guide
+       items:
+         - name: Defender for Office 365 Security Operations Guide
+           href: mdo-sec-ops-guide.md
+         - name: Manage incidents and alerts from Defender for Office 365 in Microsoft 365 Defender
+           href: mdo-sec-ops-manage-incidents-and-alerts.md
      - name: Threat Explorer views
        href: threat-explorer-views.md
      - name: Campaign Views
