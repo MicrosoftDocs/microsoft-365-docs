@@ -48,7 +48,7 @@ Follow these steps to rename a document understanding model.
 
 5. Select **Rename**.
 
-## See Also
+## See also
 [Create a classifier](create-a-classifier.md)
 
 [Create an extractor](create-an-extractor.md)
