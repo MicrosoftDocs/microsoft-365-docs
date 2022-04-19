@@ -1,5 +1,5 @@
 ---
-title: Export documents to your organization's Azure Storage account
+title: Export documents to an organization Azure Storage account
 f1.keywords:
 - NOCSH
 ms.author: markjjo

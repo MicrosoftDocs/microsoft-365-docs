@@ -1,5 +1,5 @@
 ---
-title: "Customize an archive and deletion policy (MRM) for mailboxes in your organization"
+title: "Customize an archive and deletion policy (MRM) for mailboxes"
 f1.keywords:
 - NOCSH
 ms.author: cabailey

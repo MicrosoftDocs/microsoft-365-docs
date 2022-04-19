@@ -1,5 +1,5 @@
 ---
-title: Office TLS Certificate Changes
+title: Office TLS certificate changes
 description: How to prepare for upcoming changes to Office TLS certificates.
 author: pshelton-skype
 ms.author: pshelton

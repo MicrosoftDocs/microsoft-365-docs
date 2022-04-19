@@ -1,5 +1,5 @@
 ---
-title: "Get started with activity explorer"
+title: "Get started with Activity explorer"
 f1.keywords:
 - NOCSH
 ms.author: chrfox

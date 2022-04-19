@@ -1,5 +1,5 @@
 ---
-title: "Partially indexed items in Content Search and other eDiscovery tools"
+title: "Partially indexed items in Content Search"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
