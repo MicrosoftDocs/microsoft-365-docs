@@ -78,7 +78,7 @@ Logon types classify the user that did the audited actions on the mailbox. The f
 - **Admin**:
   - The mailbox is searched with one of the following Microsoft eDiscovery tools:
     - Content Search in the Compliance center.
-    - eDiscovery or Advanced eDiscovery in the Compliance center.
+    - eDiscovery or eDiscovery (Premium) in the Compliance center.
     - In-Place eDiscovery in Exchange Online.
   - The mailbox is accessed by using the Microsoft Exchange Server MAPI Editor.
 

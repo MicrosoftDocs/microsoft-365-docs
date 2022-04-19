@@ -97,7 +97,7 @@ The following table describes other tools that you can use to replace the existi
 <tr class="odd">
 <td>Search, export, and hold for legal purposes</td>
 <td>eDiscovery (Standard) cases in the compliance portal </td>
-<td><p>Using the capabilities of core eDiscovery cases provide the functional parity to In-Place eDiscovery and In-Place Holds. This includes the following:</p>
+<td><p>Using the capabilities of eDiscovery (Standard) cases provide the functional parity to In-Place eDiscovery and In-Place Holds. This includes the following:</p>
 <ul>
 <li>
 <p>Search scales to millions of locations</p>
@@ -203,9 +203,9 @@ The following table describes other tools that you can use to replace the existi
 <p><a href="/powershell/module/exchange/get-compliancesearchaction"><span class="underline">*-ComplianceSearchAction</span></a></p>
 <p><a href="/powershell/module/exchange/get-compliancecase"><span class="underline">*-ComplianceCase</span></a></p>
 <p> </p></td>
-<td><p>The ComplianceSearch and ComplianceSearchAction cmdlets work together to help you search and export content. You can create a new search and view the search estimate by using the <strong>New-</strong>, <strong>Get-</strong>, and <strong>Start-ComplianceSearch</strong> cmdlets. Then you can use the <strong>New-ComplianceSearchAction</strong> cmdlet to export the search results. You'll still have to use the core eDiscovery tool in the compliance portal to download those search results to your local computer.</p>
+<td><p>The ComplianceSearch and ComplianceSearchAction cmdlets work together to help you search and export content. You can create a new search and view the search estimate by using the <strong>New-</strong>, <strong>Get-</strong>, and <strong>Start-ComplianceSearch</strong> cmdlets. Then you can use the <strong>New-ComplianceSearchAction</strong> cmdlet to export the search results. You'll still have to use the eDiscovery (Standard) tool in the compliance portal to download those search results to your local computer.</p>
 <p>
-<p><strong>Note:</strong> If you use these cmdlets to create searches that aren't associated with a core eDiscovery case, these searches will be located on the <strong>Content search</strong> page in the compliance portal.</p></td>
+<p><strong>Note:</strong> If you use these cmdlets to create searches that aren't associated with a eDiscovery (Standard) case, these searches will be located on the <strong>Content search</strong> page in the compliance portal.</p></td>
 </tr>
 <tr class="even">
 <td>Hold content in a mailbox</td>
@@ -281,7 +281,7 @@ The following table describes other tools that you can use to replace the existi
 <td><p><a href="/powershell/module/exchange/get-compliancesearch"><span class="underline">*-ComplianceSearch</span></a></p>
 <p><a href="/powershell/module/exchange/get-compliancesearchaction"><span class="underline">*-ComplianceSearchAction</span></a></p>
 <p></a></p></td>
-<td><p>The ComplianceSearch and ComplianceSearchAction cmdlets work together to help you search and export content. You can create a new search and view the search estimate by using the <strong>New-</strong>, <strong>Get-</strong>, and <strong>Start-ComplianceSearch</strong> cmdlets. Then you can use the <strong>New-ComplianceSearchAction -Export</strong> command to export the search results. You'll still have to use the core eDiscovery tool in the compliance portal to download those search results to your local computer.</p></p>
+<td><p>The ComplianceSearch and ComplianceSearchAction cmdlets work together to help you search and export content. You can create a new search and view the search estimate by using the <strong>New-</strong>, <strong>Get-</strong>, and <strong>Start-ComplianceSearch</strong> cmdlets. Then you can use the <strong>New-ComplianceSearchAction -Export</strong> command to export the search results. You'll still have to use the eDiscovery (Standard) tool in the compliance portal to download those search results to your local computer.</p></p>
 </td>
 </tr>
 <tr class="even">
@@ -337,7 +337,7 @@ These operations in the Exchange Web Services API are used by the In-Place eDisc
 
 ## eDiscovery (Premium) v1.0
 
-eDiscovery (Premium) v1.0, which is the version of eDiscovery (Premium) available in a core eDiscovery case by clicking **Switch to eDiscovery (Premium)**, is being retired. Its functionality has been replaced by the new [eDiscovery (Premium) solution](./ediscovery.md) in the compliance portal.
+eDiscovery (Premium) v1.0, which is the version of eDiscovery (Premium) available in a eDiscovery (Standard) case by clicking **Switch to eDiscovery (Premium)**, is being retired. Its functionality has been replaced by the new [eDiscovery (Premium) solution](./ediscovery.md) in the compliance portal.
 
 To determine if your organization is using eDiscovery (Premium) v1.0:
 
