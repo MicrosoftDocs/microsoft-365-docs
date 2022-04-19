@@ -296,7 +296,7 @@ Here are some tips and best practices for viewing Teams content in a review set.
 
 ## Deleting Teams chat messages
 
-You can use Advanced eDiscovery and the Microsoft Graph Explorer to respond to data spillage incidents, when content containing confidential or malicious information is released through Teams chat messages.​ Admins in your organization can search for and delete chat messages in Microsoft Teams. This can help you remove sensitive information or inappropriate content in Teams chat messages. For more information, see [Search and purge chat messages in Teams](search-and-delete-Teams-chat-messages.md).
+You can use eDiscovery (Premium) and the Microsoft Graph Explorer to respond to data spillage incidents, when content containing confidential or malicious information is released through Teams chat messages.​ Admins in your organization can search for and delete chat messages in Microsoft Teams. This can help you remove sensitive information or inappropriate content in Teams chat messages. For more information, see [Search and purge chat messages in Teams](search-and-delete-Teams-chat-messages.md).
 
 ## Reference guide
 

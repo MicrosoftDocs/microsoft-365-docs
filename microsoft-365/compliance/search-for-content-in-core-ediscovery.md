@@ -1,5 +1,5 @@
 ---
-title: "Search for content in a core eDiscovery case"
+title: "Search for content in a eDiscovery (Standard) case"
 f1.keywords:
 - NOCSH
 ms.author: markjjo

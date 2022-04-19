@@ -137,7 +137,7 @@ If you create a case in Step 3 and you're the only person who will use the case,
 
 ## Explore the eDiscovery (Standard) workflow
 
-To get you started using core eDiscovery, here's a simple workflow of creating eDiscovery holds for people of interest, searching for content that relevant to your investigation, and then exporting that data for further review. In each of these steps, we'll also highlight some extended eDiscovery (Standard) functionality that you can explore.
+To get you started using eDiscovery (Standard), here's a simple workflow of creating eDiscovery holds for people of interest, searching for content that relevant to your investigation, and then exporting that data for further review. In each of these steps, we'll also highlight some extended eDiscovery (Standard) functionality that you can explore.
 
 ![eDiscovery (Standard) workflow.](../media/CoreEdiscoveryWorkflow.png)
 
