@@ -153,9 +153,6 @@ To view the list of devices that are onboarded to Defender for Business, in the 
 - If you're done onboarding devices, proceed to [Step 5: Configure your security settings and policies in Microsoft Defender for Business](mdb-configure-security-settings.md)
 - See [Get started using Microsoft Defender for Business](mdb-get-started.md).
 
-## [**Windows Server**](#tab/WindowsServerEndpoints)
-
-
 ## [**macOS**](#tab/macOSdevices)
 
 ## macOS computers
