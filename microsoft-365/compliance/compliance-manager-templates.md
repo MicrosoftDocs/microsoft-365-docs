@@ -1,5 +1,5 @@
 ---
-title: "Working with assessment templates in Microsoft Compliance Manager"
+title: "Working with assessment templates in Microsoft Purview Compliance Manager"
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -17,10 +17,12 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "Understand how to use and manage templates for building assessments in Microsoft Compliance Manager. Create and modify templates using a formatted Excel file."
+description: "Understand how to use and manage templates for building assessments in Microsoft Purview Compliance Manager. Create and modify templates using a formatted Excel file."
 ---
 
 # Learn about assessment templates in Compliance Manager
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **In this article:** Understand **how templates work** and **how to manage them** from your assessment templates page. Get instructions for **creating** new templates, **extending** and **modifying** existing templates, **formatting your template data with Excel**, and exporting template **reports**.
 
@@ -73,7 +75,7 @@ GCC High and DOD accounts must purchase template licenses through [volume licens
 
 To try out premium templates before you make a purchase, you may also acquire trial versions of the licenses. Trial licenses are good for up to 25 templates for 90 days. Once you obtain your trial license, the templates should become available in your tenant within 48 hours.
 
-If your organization has a commercial license for Compliance Manager, you can learn how to start your trial at [About the free trial for Microsoft Compliance Manager premium assessments](compliance-easy-trials-compliance-manager-assessments.md).
+If your organization has a commercial license for Compliance Manager, you can learn how to start your trial at [About the free trial for Microsoft Purview Compliance Manager premium assessments](compliance-easy-trials-compliance-manager-assessments.md).
 
 If your organization is under a GCC or DOD license, choose the appropriate trial link for your organization:
 
@@ -130,4 +132,4 @@ You can export an Excel file that contains all of a template's data. You'll need
 
 To export your template, go to your template details page and select the **Export to Excel** button.
 
-Note that when exporting a template you extended from a Compliance Manager template, the exported file will only contain the attributes you added to the template. The exported file won't include the original template data provided by Microsoft. To get such a report, see the instructions for [exporting an assessment report](compliance-manager-assessments.md#export-an-assessment-report).
+Note that when exporting a template you extended from a Compliance Manager template, the exported file will only contain the attributes you added to the template. The exported file won’t include the original template data provided by Microsoft. To get such a report, see the instructions for [exporting an assessment report](compliance-manager-assessments.md#export-an-assessment-report).

@@ -1,5 +1,5 @@
 ---
-title: "Differences between estimated and actual eDiscovery search results"
+title: "Estimated and actual eDiscovery search results"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -26,9 +26,9 @@ description: "Understand why estimated and actual search results may vary in sea
 This article applies to searches that you can run using one of the following Microsoft 365 eDiscovery tools: 
 
 - Content search
-- Core eDiscovery
+- eDiscovery (Standard)
 
-When you run an eDiscovery search, the tool you're using will return an estimate of the number of items (and their total size) that match the search criteria. For example, when you run a search in the Microsoft 365 compliance center, the estimated search results are displayed on the flyout page for the selected search.
+When you run an eDiscovery search, the tool you're using will return an estimate of the number of items (and their total size) that match the search criteria. For example, when you run a search in the Microsoft Purview compliance portal, the estimated search results are displayed on the flyout page for the selected search.
   
 ![Estimate of results displayed on the search flyout page.](../media/EstimatedSearchResults1.png)
   
