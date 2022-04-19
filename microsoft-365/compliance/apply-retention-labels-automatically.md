@@ -1,5 +1,5 @@
 ---
-title: "Automatically apply a retention label to retain or delete content"
+title: "Automatically apply a retention label"
 f1.keywords:
 - NOCSH
 ms.author: cabailey

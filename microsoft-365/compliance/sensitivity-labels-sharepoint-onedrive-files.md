@@ -1,5 +1,5 @@
 ---
-title: "Enable sensitivity labels for Office files in SharePoint and OneDrive"
+title: "Enable sensitivity labels for Office files"
 f1.keywords:
 - NOCSH
 ms.author: cabailey

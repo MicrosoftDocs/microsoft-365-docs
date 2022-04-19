@@ -1,5 +1,5 @@
 ---
-title: "Use Preservation Lock to restrict changes to retention policies and retention label policies"
+title: "Use Preservation Lock to restrict changes to retention policies"
 f1.keywords:
 - NOCSH
 ms.author: cabailey

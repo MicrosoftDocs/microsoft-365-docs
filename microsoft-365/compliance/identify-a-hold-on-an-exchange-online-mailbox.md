@@ -1,5 +1,5 @@
 ---
-title: "How to identify the type of hold placed on an Exchange Online mailbox"
+title: "How to identify the hold on an Exchange Online mailbox"
 f1.keywords:
 - NOCSH
 ms.author: markjjo

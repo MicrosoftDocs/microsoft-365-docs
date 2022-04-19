@@ -1,5 +1,5 @@
 ---
-title: "Create and configure retention policies to automatically retain or delete content"
+title: "Automatically retain or delete content by using retention policies"
 f1.keywords:
 - NOCSH
 ms.author: cabailey

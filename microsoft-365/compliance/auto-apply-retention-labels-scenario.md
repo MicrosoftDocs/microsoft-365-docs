@@ -1,5 +1,5 @@
 ---
-title: "Use retention labels to manage the lifecycle of documents stored in SharePoint"
+title: "Use retention labels to manage SharePoint document lifecycle"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
