@@ -101,5 +101,5 @@ To learn more about Conditional Access, see [What is Conditional Access?](/azure
 
 ## Next objective
 
-Set up ways to [protect against malware and other threats](m365bp-increase-protection.md)
+Set up ways to [protect against malware and other threats](m365bp-increase-protection.md).
 

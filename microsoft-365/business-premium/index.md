@@ -37,7 +37,7 @@ Click through the tabs below to learn about each mission and how to set up Micro
 
 ## [**Fortify Your Environment**](#tab/Fortify)
 
-In these first missions, sign in and set up your initial protective walls of defense, starting with account access protections.
+In these first missions, sign in and set up your initial walls of defense, starting with account access protections.
 
 [**Set up your environment**](m365bp-setup-overview.md). This mission requires you to set up and implement security across all accounts in the system.
 
@@ -52,6 +52,8 @@ The guidance in these missions helps your business achieve the goals described i
 Download link coming soon!
 
 :::image type="content" source="../media/m365bp-cyber-security-playbook.png" alt-text="The Cyber Security Playbook" lightbox="../media/m365bp-cyber-security-playbook.png":::
+
+Now, let's get started [fortifying your environment](m365bp-setup-overview.md)!
 
 > [!Note]
 > When a term or directive is unclear, you can find definitions in the [glossary of terms](m365bp-glossary.md).
@@ -76,6 +78,8 @@ Download link coming soon!
 
 :::image type="content" source="../media/m365bp-cyber-security-playbook.png" alt-text="The Cyber Security Playbook" lightbox="../media/m365bp-cyber-security-playbook.png":::
 
+Now, let's get started [fortifying your environment](m365bp-setup-overview.md)!
+
 > [!Note]
 > When a term or directive is unclear, you can find definitions in the [glossary of terms](m365bp-glossary.md).
 
@@ -95,72 +99,7 @@ Download link coming soon!
 
 :::image type="content" source="../media/m365bp-cyber-security-playbook.png" alt-text="The Cyber Security Playbook" lightbox="../media/m365bp-cyber-security-playbook.png":::
 
+Now, let's get started [fortifying your environment](m365bp-setup-overview.md)!
+
 > [!Note]
 > When a term or directive is unclear, you can find definitions in the [glossary of terms](m365bp-glossary.md).
-
-<!---
-KC Note: MOST OF THE FOLLOWING MAY BE USEFUL, BUT HERE JUST SERVES TO CLUTTER AND CONFUSE IMHO. I WILL MOVE THIS STUFF, BUT COMMENTING OUT FOR NOW...
-
-Pay close attention to the following guidance for productivity, collaboration, file storage, email, devices, and identity:
-
-| Protection for | Description | Links |
-| ----- | ----- | ----- | ----- |
-|Email | Use multi-factor authentication, advanced anti-phishing, Safe Links and Safe Attachments, and encrypted email for sensitive information.| [Set up multi-factor authentication](m365bp-multifactor-authentication.md) <br/><br/>[Protect against phishing attacks](avoid-phishing-and-attacks.md)<br/><br/>[Encrypt or label your sensitive email](send-encrypted-email.md) |
-|iPhones and Android devices |Use multi-factor authentication, set up Microsoft mobile apps, and require a PIN | [Set up multi-factor authentication](m365bp-multifactor-authentication.md)<br/><br/>[Set up mobile devices](../business/set-up-mobile-devices.md)|
-|Bring-your-own-devices (BYOD) for Mac and Windows PCs |Keep Office up to date, keep operating systems updated, and enable security features. | [Protect unmanaged Windows and Mac devices](m365bp-protect-pcs-macs.md) |
-|Storing and sharing files securely | Share files and videos from Microsoft Teams, OneDrive, SharePoint, and Microsoft Stream, and protect sensitive data.| [Share files and videos](share-files-and-videos.md) |
-|Managed Windows devices |Use managed devices for key staff and secure these devices. | [Set up managed devices](../business/set-up-windows-devices.md) |
-
-## A recommended security configuration for Microsoft 365 Business Premium
-
-This recommended secure configuration for Microsoft 365 Business Premium ensures you can:
-
-- Rely on your trusted business productivity and collaboration tools, such as Outlook, Word, Excel, and other Office products.
-
-- Protect your work files on all of your iOS, Android, and Windows devices with easy-to-manage, enterprise-grade security.
-
-- Apply extra protection for user accounts and identity.
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3clbH]
-
-While federal and some state election campaigns in the United States qualify for [special pricing](get-microsoft-365-campaigns.md) for the Microsoft 365 for Campaigns offering of Microsoft 365 Business Premium, any organization with the Business Premium plan can take advantage of this guidance to configure increased security and learn how to collaborate securely.
-
-This library includes the following:
-
-- Prescriptive setup guidance for increased security.
-
-- Help setting up devices for secure access.
-
-- Guidance on collaborating and sharing securely.
-
-For more information about what's included, see [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business).
-
-## Get started
-
-Follow these steps to get started:
-
-- For small and medium-sized businesses: [Get Microsoft 365 Business Premium](get-microsoft-365-business-premium.md)
-
-- For campaigns: [Get Microsoft 365 campaigns](get-microsoft-365-campaigns.md)
-
-## Solutions for your business
-
-After you set up your secure Microsoft 365 environment, you can use the following solutions to get working:
-
-| Create teams for collaboration | Set up online meetings |
-| ------------- | ------------- |
-| ![a SharePoint communication site.](../media/sm-m365-democracy-teams-collab.png) | ![an online meeting](../media/m365-democracy-teams-meetings.png) |
-| Collaborate with teams for key staff, all staff, and partners or vendors.<br>[Create your team](create-teams-for-collaboration.md) | Schedule a meeting with audio, video, and sharing with Microsoft Teams.<br>[Set up a meeting](set-up-meetings.md) |
-
-| Encrypt or label your sensitive email | Create a communications site |
-| ------------- | ------------- |
-| ![Encrypted and labeled email.](../media/sm-m365-campaign-email-encrypt.png) | ![a SharePoint communications site](../media/sm-m365-democracy-comms-site.png) |
-| Use encryption and sensitivity labels to protect email that contains confidential or sensitive information.<br>[Send encrypted email](send-encrypted-email.md) | Share events, message, images, and more with your team in an internal communications site created with SharePoint.<br>[Create your site](create-communications-site.md) |
-
-| Share files and videos |
-| ------------- |
-| ![sharing a file in Microsoft Teams.](../media/m365-democracy-teams-sharefiles.png) |
-| Save your files and videos to the cloud so they're available <br>to all of the appropriate people.<br>[Start sharing](share-files-and-videos.md) |
---->
-
-
