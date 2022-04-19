@@ -124,12 +124,12 @@ productDirectory:
       imageSrc: https://docs.microsoft.com/office/media/icons/certificate-blue.svg
       links:
         - url: compliance/insider-risk-solution-overview.md
-          text: Insider risk solutions in Microsoft 365
+          text: Insider risk solutions in Microsoft Purview
         - url: compliance/compliance-quick-tasks.md
-          text: Quick tasks for getting started with Microsoft 365 compliance
+          text: Quick tasks for getting started with Microsoft Purview
         - url: compliance/information-protection.md
           text: Manage information protection
-        - url: compliance/manage-information-governance.md
+        - url: compliance/manage-data-governance.md
           text: Manage information governance
         - url: compliance/auditing-solutions-overview.md
           text: Auditing solutions
@@ -195,7 +195,7 @@ additionalContent:
               url: business/index.yml
             - text: Microsoft 365 for enterprise
               url: enterprise/index.yml
-            - text: Microsoft 365 compliance
+            - text: Microsoft Purview
               url: compliance/index.yml
             - text: Microsoft 365 security
               url: security/index.yml

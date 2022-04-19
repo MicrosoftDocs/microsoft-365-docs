@@ -26,7 +26,9 @@ description: Learn how to add a policy tip to a data loss prevention (DLP) polic
 
 # Send email notifications and show policy tips for DLP policies
 
-You can use a data loss prevention (DLP) policy to identify, monitor, and protect sensitive information across Office 365. You want people in your organization who work with this sensitive information to stay compliant with your DLP policies, but you don't want to block them unnecessarily from getting their work done. This is where email notifications and policy tips can help.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+You can use a Microsoft Purview data loss prevention (DLP) policy to identify, monitor, and protect sensitive information across Office 365. You want people in your organization who work with this sensitive information to stay compliant with your DLP policies, but you don't want to block them unnecessarily from getting their work done. This is where email notifications and policy tips can help.
 
 ![Message bar shows policy tip in Excel 2016](../media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
 
@@ -50,7 +52,7 @@ When you create a DLP policy, you can enable **User notifications**. When user n
 
 2. Sign in using your work or school account. You're now in the Security &amp; Compliance Center.
 
-3. In the Security &amp; Compliance Center \> left navigation \> **Data loss prevention** \> **Policy** \> **+ Create a policy**.
+3. In the Microsoft Purview compliance portal \> left navigation \> **Data loss prevention** \> **Policy** \> **+ Create a policy**.
 
     ![Create a policy button.](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
 
@@ -224,7 +226,7 @@ If the policy tips are configured to allow override, you can choose **Show Detai
 
 ![Policy tip dialog where you can override the policy tip.](../media/f97e836c-04bd-44b4-aec6-ed9526ea31f8.png)
 
-Note that when you add sensitive information to an email, there may be latency between when the sensitive information is added and when the policy tip appears. When emails are encrypted with Office Message Encryption (OME) and the policy used to detect them uses the detect encryption condition policy tips will not appear.
+Note that when you add sensitive information to an email, there may be latency between when the sensitive information is added and when the policy tip appears. When emails are encrypted with Microsoft Purview Message Encryption and the policy used to detect them uses the detect encryption condition policy tips will not appear.
 
 ### Outlook 2013 and later supports showing policy tips for only some conditions
 

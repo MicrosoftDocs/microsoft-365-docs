@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Compliance Manager alerts and alert policies"
+title: "Microsoft Purview Compliance Manager alerts and alert policies"
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -17,10 +17,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
 - MOE150
 - MET150
-description: "Learn how to create alerts for activities in Microsoft Compliance Manager that can impact your compliance score."
+description: "Learn how to create alerts for activities in Microsoft Purview Compliance Manager that can impact your compliance score."
 ---
 
-# Microsoft Compliance Manager alerts and alert policies
+# Microsoft Purview Compliance Manager alerts and alert policies
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **In this article:** Learn how to **set alerts** for certain activities in Compliance Manager, how to manage alerts, and how to **create alert policies** for defining alert conditions.
 
@@ -63,7 +65,7 @@ The table below outlines which users can create and edit alerts and alert polici
 - The **Security reader** role in Azure AD for viewing alerts and alert policies
 - The **Security administrator** role in Azure AD for creating or updating alert policies
  
-Learn more about [Azure roles in the Microsoft 365 compliance center](microsoft-365-compliance-center-permissions.md#azure-roles-in-the-microsoft-365-compliance-center).
+Learn more about [Azure roles in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md#azure-roles-in-the-compliance-portal).
 
 
 | Role | Can create and edit policies | Can edit alerts | 

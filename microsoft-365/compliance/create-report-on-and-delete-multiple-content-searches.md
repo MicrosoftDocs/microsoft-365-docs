@@ -27,7 +27,7 @@ ms.custom: seo-marvel-apr2020
 
 ## Before you create a Content Search
 
-- You have to be a member of the eDiscovery Manager role group in the Microsoft 365 compliance center to run the scripts that are described in this topic.
+- You have to be a member of the eDiscovery Manager role group in the Microsoft Purview compliance portal to run the scripts that are described in this topic.
 
 - To collect a list of the URLs for the OneDrive for Business sites in your organization that you can add to the CSV file in Step 1, see [Create a list of all OneDrive locations in your organization](/onedrive/list-onedrive-urls).
 

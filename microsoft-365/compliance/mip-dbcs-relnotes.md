@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 compliance support for double byte character set release notes"
+title: "Microsoft Purview support for double byte character set release notes"
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -18,6 +18,8 @@ description: "Release notes for support for double byte character sets."
 
 # Support for double byte character set release notes
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
  Microsoft 365 Information Protection now supports double byte character set languages for:
 
 - Chinese (simplified)
@@ -25,7 +27,7 @@ description: "Release notes for support for double byte character sets."
 - Korean
 - Japanese
 
-This support is available for sensitive information types and keyword dictionaries and will be reflected in data loss prevention (for Exchange Online, SharePoint Online, OneDrive for Business, and Teams), Communications Compliance, Auto Labeling in office apps and Microsoft Defender for Cloud Apps.
+This support is available for sensitive information types and keyword dictionaries and will be reflected in Microsoft Purview Data Loss Prevention (for Exchange Online, SharePoint Online, OneDrive for Business, and Teams), Communications Compliance, Auto Labelling in office apps and Microsoft Defender for Cloud Apps.
 
 ## Known issues
 

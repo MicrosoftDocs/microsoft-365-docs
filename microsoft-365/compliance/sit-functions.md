@@ -23,6 +23,8 @@ description: Learn what the sensitive information type functions look for.
 
 # Sensitive information type functions
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Sensitive information types (SIT) can use functions as primary elements to identify sensitive items. For example, the Credit Card Number sensitive information type uses the Func_credit_card function to detect credit card number.
 
 This article explains what these functions look for, to help you understand how the predefined sensitive information types work. For more information, see [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
