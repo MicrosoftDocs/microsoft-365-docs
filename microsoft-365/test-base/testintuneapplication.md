@@ -66,8 +66,8 @@ As an Intune customer who has an Intune package, which has been already onboarde
 3. Check the test app binaries are moved under **bin** folder.
 4. Check the dependency binaries **which has been uploaded** put under the **guid** folder.
 5. You can edit the scripts as needed and save.
-> [!Note] 
-> If the dependency package has not been uploaded, Test Base will not generate install/uninstall commands for it.
+    > [!Note] 
+    > If the dependency package has not been uploaded, Test Base will not generate install/uninstall commands for it.
 
 
 **Step 4: Test Matrix**
