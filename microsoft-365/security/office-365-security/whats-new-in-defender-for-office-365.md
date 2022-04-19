@@ -45,7 +45,10 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft Defender for Endpoint](../defender-endpoint/whats-new-in-microsoft-defender-endpoint.md)
 - [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
 - [What's new in Microsoft Cloud App Security](/cloud-app-security/release-notes)
+## April 2022
 
+- [Manual email remediation enhancements](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/remediate-malicious-email-delivered-office-365?view=o365-worldwide): Bringing manual e-mail purge actions taken in Microsoft Defender for Office 365 to the Microsoft 365 Defender (M365D) unified Action Center using a new action focused investigation.
+ 
 ## March 2022
 
 - [Streamlined the submission experience in Microsoft Defender for Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/streamlining-the-submissions-experience-in-microsoft-defender/ba-p/3152080): Introducing the new unified and streamlined submission process to make your experience simpler.
