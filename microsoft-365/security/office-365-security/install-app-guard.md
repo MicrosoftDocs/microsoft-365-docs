@@ -46,7 +46,7 @@ To learn more about Office update channels, see [Overview of update channels for
 * Microsoft 365 E5 or Microsoft 365 E5 Security
 
 > [!NOTE]
-> Microsoft 365 Apps for enterprise with the device-based license do not have access to Application Guard for Office.
+> Microsoft 365 Apps for enterprise with shared computer activation or device-based licensing do not have access to Application Guard for Office.
 
 ## Deploy Application Guard for Office
 
@@ -233,7 +233,7 @@ When this heuristic is met, Office will pre-create an Application Guard containe
 
 * Selecting web links (`http` or `https`) doesn't open the browser.
 * The default setting for copy-paste protection policy is to enable clipboard access to text only.
-* The default setting for unsupported file types protection policy is to block opening untrusted unsupported file types that are encrypted or have Information Rights Management (IRM) set. This includes files that have Microsoft Information Protection sensitivity labels using encryption (confidential or highly confidential).
+* The default setting for unsupported file types protection policy is to block opening untrusted unsupported file types that are encrypted or have Information Rights Management (IRM) set. This includes files that are encrypted by using sensitivity labels from Microsoft Purview Information Protection.
 * CSV and HTML files are not supported at this time.
 * Application Guard for Office currently does not work with NTFS compressed volumes. If you are seeing an error "ERROR_VIRTUAL_DISK_LIMITATION" please try uncompressing the volume.
 * Updates to .NET might cause files to fail to open in Application Guard. As a workaround, users can restart their device when they come across this failure. Learn more about the issue at [Receiving an error message when attempting to open Windows Defender Application Guard or Windows Sandbox](https://support.microsoft.com/help/4575917/receiving-an-error-message-when-attempting-to-open-windows-defender-ap).

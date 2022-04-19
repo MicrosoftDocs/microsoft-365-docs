@@ -119,7 +119,7 @@ Learn more by watching [this video](https://www.youtube.com/watch?v=UoVzN0lYbfY&
 
 We've focused on platform and data-quality improvements to increase data accuracy and consistency for email records. Improvements include consolidation of pre-delivery and post-delivery information, such as actions executed on an email as part of the ZAP process, into a single record. Additional details like spam verdict, entity-level threats (for example, which URL was malicious), and latest delivery locations are also included.
 
-After these updates, you'll see a single entry for each message, regardless of the different post-delivery events that affect the message. Actions can include ZAP, manual remediation (which means admin action), dynamic delivery, and so on.
+After these updates, you'll see a single entry for each message, regardless of the different post-delivery events that affect the message. Actions can include ZAP, manual remediation (which means admin action), [Dynamic Delivery](safe-attachments.md#dynamic-delivery-in-safe-attachments-policies), and so on.
 
 In addition to showing malware and phishing threats, you see the spam verdict associated with an email. Within the email, see all the threats associated with the email along with the corresponding detection technologies. An email can have zero, one, or multiple threats. You'll see the current threats in the **Details** section of the email flyout. For multiple threats (such as malware and phishing), the **Detection tech** field shows the threat-detection mapping, which is the detection technology that identified the threat.
 
@@ -143,7 +143,7 @@ You can now see the specific threat for a URL on the email flyout **Details** ta
 Timeline view identifies all delivery and post-delivery events. It includes information about the threat identified at that point of time for a subset of these events. Timeline view also provides information about any additional action taken (such as ZAP or manual remediation), along with the result of that action. Timeline view information includes:
 
 - **Source:** Source of the event. It can be admin/system/user.
-- **Event:** Includes top-level events like original delivery, manual remediation, ZAP, submissions, and dynamic delivery.
+- **Event:** Includes top-level events like original delivery, manual remediation, ZAP, submissions, and Dynamic Delivery.
 - **Action:** The specific action that was taken either as part of ZAP or admin action (for example, soft delete).
 - **Threats:** Covers the threats (malware, phish, spam) identified at that point of time.
 - **Result/Details:** More information about the result of the action, such as whether it was performed as part of ZAP/admin action.
@@ -169,7 +169,7 @@ Currently, we surface delivery location in the email grid and email flyout. The 
 
 ### Additional actions
 
-*Additional actions* were applied after delivery of the email. They can include *ZAP*, *manual remediation* (action taken by an Admin such as soft delete), *dynamic delivery*, and *reprocessed* (for an email that was retroactively detected as good).
+*Additional actions* were applied after delivery of the email. They can include *ZAP*, *manual remediation* (action taken by an Admin such as soft delete), *Dynamic Delivery*, and *reprocessed* (for an email that was retroactively detected as good).
 
 > [!NOTE]
 > As part of the pending changes, the "Removed by ZAP" value currently surfaced in the Delivery Action filter is going away. You'll have a way to search for all email with the ZAP attempt through **Additional actions**.
@@ -284,7 +284,7 @@ You'll be able to see both the GUID and the name of the transport rules that wer
 > [!IMPORTANT]
 > ETR search and name availability depend on the specific role that's assigned to you. You need to have one of the following roles/permissions to view the ETR names and search. If you don't have any of these roles assigned to you, you can't see the names of the transport rules or search for messages by using ETR names. However, you could see the ETR label and GUID information in the Email Details. Other record-viewing experiences in Email Grids, Email flyouts, Filters, and Export are not affected.
 >
-> - EXO Only - Data Loss Prevention: All
+> - EXO Only - data loss prevention: All
 > - EXO Only - O365SupportViewConfig: All
 > - Microsoft Azure Active Directory or EXO - Security Admin: All
 > - AAD or EXO - Security Reader: All

@@ -36,6 +36,6 @@ After a user connects their device to your organization by signing in with their
 
 ## Related content
   
-[Remove company data from devices](remove-company-data.md) (article)\
+[Remove company data from devices](/business-premium/m365bp-remove-company-data.md) (article)\
 [Reset Windows 10 devices to their factory settings](reset-devices-to-factory-settings.md) (article)\
-[Add a managed device](./app-protection-settings-for-android-and-ios.md) (article)
+[Add a managed device](/business-premium/m365bp-app-protection-settings-for-android-and-ios.md) (article)
