@@ -62,7 +62,7 @@ See these articles for setting up auditing, advanced auditing, and alert policie
 
 - [Unified auditing](../compliance/search-the-audit-log-in-security-and-compliance.md)
 - [Mailbox auditing](../compliance/enable-mailbox-auditing.md)
-- [Advanced audit](../compliance/advanced-audit.md)
+- [Audit (Premium)](../compliance/advanced-audit.md)
 - [Alert policies](../compliance/alert-policies.md)
 
 ## Data subject requests for the GDPR and CCPA
