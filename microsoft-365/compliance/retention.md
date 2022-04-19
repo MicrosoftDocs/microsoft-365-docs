@@ -57,7 +57,7 @@ With these two retention actions, you can configure retention settings for the f
 
 These retention settings work with content in place that saves you the additional overheads of creating and configuring additional storage when you need to retain content for compliance reasons. In addition, you don't need to implement customized processes to copy and synchronize this data.
 
-Use the following sections to learn more about how retention policies and retention labels work, when to use them, and how they supplement each other. But if you're ready to get started and deploy retention settings for some common scenarios, see [Get started with data lifecycle management](get-started-with-information-governance.md).
+Use the following sections to learn more about how retention policies and retention labels work, when to use them, and how they supplement each other. But if you're ready to get started and deploy retention settings for some common scenarios, see [Get started with data lifecycle management](get-started-with-data-lifecycle-management.md).
 
 ## How retention settings work with content in place
 
@@ -643,4 +643,4 @@ If you have configured SharePoint sites for content type policies or information
 
 ## Configuration guidance
 
-See [Get started with data lifecycle management](get-started-with-information-governance.md). This article has information about subscriptions, permissions, and links to end-to-end configuration guidance for retention scenarios.
+See [Get started with data lifecycle management](get-started-with-data-lifecycle-management.md). This article has information about subscriptions, permissions, and links to end-to-end configuration guidance for retention scenarios.

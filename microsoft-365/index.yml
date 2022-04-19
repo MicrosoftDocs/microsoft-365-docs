@@ -129,7 +129,7 @@ productDirectory:
           text: Quick tasks for getting started with Microsoft Purview
         - url: compliance/information-protection.md
           text: Manage information protection
-        - url: compliance/manage-information-governance.md
+        - url: compliance/manage-data-governance.md
           text: Manage information governance
         - url: compliance/auditing-solutions-overview.md
           text: Auditing solutions

@@ -37,7 +37,7 @@ For more information about retention policies and how retention works in Microso
 
 ## Before you begin
 
-The global admin for your organization has full permissions to create and edit retention policies. If you aren't signing in as a global admin, see the [permissions information for data lifecycle management](get-started-with-information-governance.md#permissions-for-retention-policies-and-retention-labels).
+The global admin for your organization has full permissions to create and edit retention policies. If you aren't signing in as a global admin, see the [permissions information for data lifecycle management](get-started-with-data-lifecycle-management.md#permissions-for-retention-policies-and-retention-labels).
 
 Decide before you create your retention policy whether it will be **adaptive** or **static**. For more information, see [Adaptive or static policy scopes for retention](retention.md#adaptive-or-static-policy-scopes-for-retention). If you decide to use an adaptive policy, you must create one or more adaptive scopes before you create your retention policy, and then select them during the create retention policy process. For instructions, see [Configuration information for adaptive scopes](retention-settings.md#configuration-information-for-adaptive-scopes).
 
@@ -233,6 +233,6 @@ Some settings can't be changed after the policy is created and saved, which incl
 
 ## Next steps
 
-If some items for Exchange, SharePoint, OneDrive, or Microsoft 365 Groups need different retention settings from the retention policy settings you've configured, [create retention labels for these exceptions](create-retention-labels-information-governance.md).
+If some items for Exchange, SharePoint, OneDrive, or Microsoft 365 Groups need different retention settings from the retention policy settings you've configured, [create retention labels for these exceptions](create-retention-labels-data-lifecycle-management.md).
 
 However, if you're looking to manage high-value items for business, legal, or regulatory record-keeping requirements, [use file plan to create and manage retention labels](file-plan-manager.md).

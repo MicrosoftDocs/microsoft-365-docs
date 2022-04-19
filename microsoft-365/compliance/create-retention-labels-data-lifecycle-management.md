@@ -44,7 +44,7 @@ Use the following information to help you create retention labels to supplement 
 
 ## Before you begin
 
-The global admin for your organization has full permissions to create and edit retention labels and their policies. If you aren't signing in as a global admin, see [Permissions for retention policies and retention labels](get-started-with-information-governance.md#permissions-for-retention-policies-and-retention-labels).
+The global admin for your organization has full permissions to create and edit retention labels and their policies. If you aren't signing in as a global admin, see [Permissions for retention policies and retention labels](get-started-with-data-lifecycle-management.md#permissions-for-retention-policies-and-retention-labels).
 
 ## How to create retention labels for data lifecycle management
 
