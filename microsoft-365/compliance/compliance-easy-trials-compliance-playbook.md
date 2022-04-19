@@ -220,9 +220,9 @@ Take advantage of an end-to-end workflow for preserving, collecting, analyzing, 
 > [!TIP]
 > Trial best practice: Day 1
 
-To access Advanced eDiscovery or be added as a member of an Advanced eDiscovery case, a user must be assigned the appropriate permissions.
+To access eDiscovery (Premium) or be added as a member of an eDiscovery (Premium) case, a user must be assigned the appropriate permissions.
 
-1. [Set up Advanced eDiscovery – Assign eDiscovery permissions](get-started-with-advanced-ediscovery.md#step-2-assign-ediscovery-permissions)
+1. [Set up eDiscovery (Premium) – Assign eDiscovery permissions](get-started-with-advanced-ediscovery.md#step-2-assign-ediscovery-permissions)
 1. [Add or remove members from a case](add-or-remove-members-from-a-case-in-advanced-ediscovery.md)
 
 ### Step 2 (required): Create a Case
@@ -230,9 +230,9 @@ To access Advanced eDiscovery or be added as a member of an Advanced eDiscovery 
 > [!TIP]
 > Trial best practice: Create within the first 30 days
 
-More organizations use the Advanced eDiscovery solution in Microsoft 365 for critical eDiscovery processes. This includes responding to regulatory requests, investigations, and litigation.
+More organizations use the eDiscovery (Premium) solution in Microsoft 365 for critical eDiscovery processes. This includes responding to regulatory requests, investigations, and litigation.
 
-1. Manage Advanced eDiscovery – [learn how to configure Advanced eDiscovery, manage cases by using the Security & Compliance Center, manage a workflow in Advanced eDiscovery, and analyze Advanced eDiscovery search results](/learn/modules/manage-advanced-ediscovery).
+1. Manage eDiscovery (Premium) – [learn how to configure eDiscovery (Premium), manage cases by using the Security & Compliance Center, manage a workflow in eDiscovery (Premium), and analyze eDiscovery (Premium) search results](/learn/modules/manage-advanced-ediscovery).
 1. [Create an eDiscovery case using Advance eDiscovery's new case format](advanced-ediscovery-new-case-format.md)
 1. [Close or delete a case](close-or-delete-case.md) - When the legal case or investigation is completed, you can close or delete. You can also reopen a closed case.
 
@@ -240,9 +240,9 @@ More organizations use the Advanced eDiscovery solution in Microsoft 365 for cri
 
 To allow people in your organization start to create and use cases, you must configure global settings that apply to all cases in your organization. At this time, the only global setting is **attorney-client privilege detection** (more global settings will be available in the future).
 
-1. [Set up Advanced eDiscovery – Global Settings](get-started-with-advanced-ediscovery.md#step-3-configure-global-settings-for-ediscovery-premium)
+1. [Set up eDiscovery (Premium) – Global Settings](get-started-with-advanced-ediscovery.md#step-3-configure-global-settings-for-ediscovery-premium)
 1. [Configure search and analytics settings](configure-search-and-analytics-settings-in-advanced-ediscovery.md)
-1. [Manage jobs in Advanced eDiscovery](managing-jobs-ediscovery20.md)
+1. [Manage jobs in eDiscovery (Premium)](managing-jobs-ediscovery20.md)
 
 ### Step 4 (optional): [Compliance Boundaries](set-up-compliance-boundaries.md)
 
@@ -261,7 +261,7 @@ Set up compliance boundaries for eDiscovery investigations:
 
 Use the Content search tool in the Microsoft Purview compliance portal to quickly find email in Exchange mailboxes, documents in SharePoint sites and OneDrive locations, and instant messaging conversations in Skype for Business. You can use the content search tool to search for email, documents, and instant messaging conversations in collaboration tools such as Microsoft Teams and Microsoft 365 Groups.
 
-- [Learn more about Advanced eDiscovery search](search-for-content.md#search-for-content)
+- [Learn more about eDiscovery (Premium) search](search-for-content.md#search-for-content)
 
 ## Information Protection
 
