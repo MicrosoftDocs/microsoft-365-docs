@@ -270,7 +270,7 @@ As stated earlier, many customers are looking to achieve a more granular delegat
 
 ### Activity Logs
 
-Office 365 has a [unified audit log](../compliance/search-the-audit-log-in-security-and-compliance.md). It’s a very [detailed log](/office/office-365-management-api/office-365-management-activity-api-schema), but don’t read too much into the name. It may not contain everything you want or need for your security and compliance needs. Also, some customers are really interested in [Advanced Audit](../compliance/advanced-audit.md).
+Office 365 has a [unified audit log](../compliance/search-the-audit-log-in-security-and-compliance.md). It’s a very [detailed log](/office/office-365-management-api/office-365-management-activity-api-schema), but don’t read too much into the name. It may not contain everything you want or need for your security and compliance needs. Also, some customers are really interested in [Audit (Premium)](../compliance/advanced-audit.md).
 
 Examples of Microsoft 365 logs that are accessed through other APIs include the following:
 
