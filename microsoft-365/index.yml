@@ -134,7 +134,7 @@ productDirectory:
         - url: compliance/auditing-solutions-overview.md
           text: Auditing solutions
         - url: compliance/overview-ediscovery-20.md
-          text: Microsoft 365 Advanced eDiscovery
+          text: eDiscovery (Premium)
     # Card
     - title: Deploy and manage your desktops and devices
       # imageSrc should be square in ratio with no whitespace

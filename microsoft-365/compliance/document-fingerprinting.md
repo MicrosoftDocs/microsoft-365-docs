@@ -1,5 +1,5 @@
 ---
-title: "Document Fingerprinting"
+title: "About Document Fingerprinting"
 f1.keywords:
 - NOCSH
 ms.author: chrfox

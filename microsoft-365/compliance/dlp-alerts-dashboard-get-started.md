@@ -1,5 +1,5 @@
 ---
-title: "Get started with the data loss prevention alert dashboard"
+title: "Get started with the DLP Alerts dashboard"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -23,7 +23,7 @@ ms.custom:
 description: Get started with defining and managing alerts for data loss prevention policies. 
 ---
 
-# Get started with the data loss prevention alert dashboard
+# Get started with the data loss prevention Alerts dashboard
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 

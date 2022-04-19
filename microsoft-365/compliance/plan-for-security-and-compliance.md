@@ -1,5 +1,5 @@
 ---
-title: "Plan for security &amp; compliance"
+title: "Plan for security and compliance"
 f1.keywords:
 - NOCSH
 ms.author: chrfox

@@ -1,5 +1,5 @@
 ---
-title: "Automatically apply a sensitivity label to content in Microsoft 365"
+title: "Automatically apply a sensitivity label in Microsoft 365"
 f1.keywords:
 - NOCSH
 ms.author: cabailey

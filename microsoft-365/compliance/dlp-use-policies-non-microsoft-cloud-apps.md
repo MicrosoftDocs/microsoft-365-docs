@@ -1,5 +1,5 @@
 ---
-title: "Use Data loss prevention policies for non-Microsoft cloud apps"
+title: "Use DLP policies for non-Microsoft cloud apps"
 f1.keywords:
 - CSH
 ms.author: chrfox

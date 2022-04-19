@@ -1,5 +1,5 @@
 ---
-title: "Flowchart to determine when an item will be retained or permanently deleted"
+title: "Flowchart to determine when an item is retained or deleted"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
