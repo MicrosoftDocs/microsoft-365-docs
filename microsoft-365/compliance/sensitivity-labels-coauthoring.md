@@ -1,5 +1,5 @@
 ---
-title: "Enable co-authoring for documents encrypted by sensitivity labels in Microsoft 365"
+title: "Enable co-authoring for encrypted documents"
 f1.keywords:
 - NOCSH
 ms.author: cabailey

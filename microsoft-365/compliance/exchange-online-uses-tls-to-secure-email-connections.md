@@ -1,5 +1,5 @@
 ---
-title: "How Exchange Online uses Transport Layer Security (TLS) to secure email connections"
+title: "How Exchange Online uses TLS to secure email connections"
 f1.keywords:
 - NOCSH
 ms.author: krowley
