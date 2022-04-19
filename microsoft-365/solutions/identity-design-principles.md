@@ -134,7 +134,7 @@ If you agree with this expanded definition of authorization, then you need to im
 - [Microsoft Defender for Cloud Apps](/cloud-app-security/) (Defender for Cloud Apps)
 - [Microsoft 365 Defender](../security/defender/microsoft-365-defender.md)
 - [Microsoft Intune](/mem/intune/)
-- [Microsoft Information Protection](../compliance/information-protection.md) (MIP)
+- [Microsoft Purview Information Protection](../compliance/information-protection.md)
 - [Microsoft Sentinel](/azure/sentinel/)
 
 Of course, in addition to Azure AD, various services and applications have their own specific authorization models. Some of these are discussed later in the delegation section.
@@ -277,7 +277,7 @@ Examples of Microsoft 365 logs that are accessed through other APIs include the 
 - [Azure AD](/azure/azure-monitor/platform/diagnostic-settings) (activities not related to Office 365)
 - [Exchange Message Tracking](/powershell/module/exchange/get-messagetrace)
 - Threat/UEBA Systems discussed above (for example, Azure AD Identity Protection, Microsoft Defender for Cloud Apps, Microsoft Defender for Endpoint, and so on)
-- [Microsoft information protection](../compliance/data-classification-activity-explorer.md)
+- [Microsoft Purview Information Protection](../compliance/data-classification-activity-explorer.md)
 - [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/api-power-bi)
 - [Microsoft Graph](https://graph.microsoft.com)
 

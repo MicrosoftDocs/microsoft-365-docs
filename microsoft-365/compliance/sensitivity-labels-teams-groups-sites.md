@@ -22,6 +22,8 @@ description: "Use sensitivity labels to protect content in SharePoint and Micros
 
 # Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 groups, and SharePoint sites
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 In addition to using [sensitivity labels](sensitivity-labels.md) to classify and protect documents and emails, you can also use sensitivity labels to protect content in the following containers: Microsoft Teams sites, Microsoft 365 groups ([formerly Office 365 groups](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)), and SharePoint sites. For this container-level classification and protection, use the following label settings:
@@ -176,7 +178,7 @@ Known limitations for this preview:
 
 ### Configure settings for the default sharing link type for a site by using PowerShell advanced settings
 
-In addition to the label settings for sites and groups that you can configure from the compliance center, you can also configure the default sharing link type for a site. Sensitivity labels for documents can also be configured for a default sharing link type. These settings that help to prevent over-sharing are automatically selected when users select the **Share** button in their Office apps. 
+In addition to the label settings for sites and groups that you can configure from the Microsoft Purview compliance portal, you can also configure the default sharing link type for a site. Sensitivity labels for documents can also be configured for a default sharing link type. These settings that help to prevent over-sharing are automatically selected when users select the **Share** button in their Office apps. 
 
 For more information and instructions, see [Use sensitivity labels to configure the default sharing link type for sites and documents in SharePoint and OneDrive](sensitivity-labels-default-sharing-link.md).
 
@@ -362,8 +364,7 @@ The following apps and services support sensitivity labels configured for sites 
   - SharePoint admin center
   - Teams admin center
   - Microsoft 365 admin center
-  - Microsoft 365 compliance center
-  - Azure Active Directory portal
+  - Microsoft Purview compliance portal
 
 - User apps and services:
 

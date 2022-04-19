@@ -1,5 +1,5 @@
 ---
-title: Email threading in Advanced eDiscovery
+title: Email threading in eDiscovery (Premium)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,17 +14,17 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-description: "When conducting an Advanced eDiscovery analysis, email threading parses an email conversation and separates each message into different categories."
+description: "When conducting an eDiscovery (Premium) analysis, email threading parses an email conversation and separates each message into different categories."
 ms.custom: seo-marvel-mar2020
 ---
 
-# Email threading in Advanced eDiscovery
+# Email threading in eDiscovery (Premium)
 
 Consider an email conversation that has been going on for a while. In most cases, the last message in the email thread will include the contents of all the preceding messages. Therefore, reviewing the last message will give a complete context of the conversation that happened in the thread. Email threading identifies such messages so that reviewers can review a fraction of collected documents without losing any context.
 
 ## What does email threading do?
 
-Email threading parses each email thread and deconstructs it to individual messages. Each email thread is a chain of individual messages. Advanced eDiscovery analyzes all email messaes in the review set to determine whether an email message has unique content or if the chain (parent messages) are wholly contained in the final message in the email thread. Email messages are divided into four inclusive values:
+Email threading parses each email thread and deconstructs it to individual messages. Each email thread is a chain of individual messages. Microsoft Purview eDiscovery (Premium) analyzes all email messaes in the review set to determine whether an email message has unique content or if the chain (parent messages) are wholly contained in the final message in the email thread. Email messages are divided into four inclusive values:
 
 - **Inclusive**: An *Inclusive* email is the final email message in an email thread and contains all the previous content of that email thread.
 

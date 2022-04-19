@@ -20,10 +20,12 @@ description: Use Mobile Device Management tools to deploy the configuration pack
 
 # Onboard Windows 10 and Windows 11 devices using Mobile Device Management tools
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 **Applies to:**
 
-- [Microsoft 365 Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
-- [Insider risk management](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+- [Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
+- [Insider risk management](insider-risk-management.md)
 
 You can use mobile device management (MDM) solutions to configure devices. Microsoft 365 information protection supports MDMs by providing OMA-URIs to create policies to manage devices.
 
@@ -47,7 +49,7 @@ For security reasons, the package used to Offboard devices will expire 30 days a
 > [!NOTE]
 > Onboarding and offboarding policies must not be deployed on the same device at the same time, otherwise this will cause unpredictable collisions.
 
-1. Get the offboarding package from the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>.
+1. Get the offboarding package from the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>.
 
 2. In the navigation pane, select **Settings** > **Device onboarding** > **Offboarding**.
 

@@ -21,6 +21,8 @@ description: "Learn about retention policies that apply to Microsoft Teams."
 
 # Learn about retention for Microsoft Teams
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
@@ -205,6 +207,6 @@ If the user stored any files in Teams, see the [equivalent section](retention-po
 
 ## Configuration guidance
 
-If you're new to configuring retention in Microsoft 365, see [Get started with information governance](get-started-with-information-governance.md).
+If you're new to configuring retention in Microsoft 365, see [Get started with data lifecycle management](get-started-with-information-governance.md).
 
 If you're ready to configure a retention policy for Teams, see [Create and configure retention policies](create-retention-policies.md).

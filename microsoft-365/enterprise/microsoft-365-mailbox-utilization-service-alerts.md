@@ -114,6 +114,6 @@ If you don't take action to resolve the quota issues, you can expect to see this
 
 ## More information
 
-- For information about troubleshooting and resolving archive mailbox issues, see [Microsoft 365 compliance troubleshooting](/office365/troubleshoot/microsoft-365-compliance-welcome).
+- For information about troubleshooting and resolving archive mailbox issues, see [Microsoft Purview troubleshooting](/office365/troubleshoot/microsoft-365-compliance-welcome).
 
 - For guidance about identifying the holds placed on a mailbox, see [How to identify the type of hold placed on a mailbox](../compliance/identify-a-hold-on-an-exchange-online-mailbox.md).

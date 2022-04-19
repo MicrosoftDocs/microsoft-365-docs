@@ -17,6 +17,8 @@ description: "Turn on a setting that enables co-authoring and AutoSave in deskto
 
 # Enable co-authoring for files encrypted with sensitivity labels
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Enable the setting to support [co-authoring](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) for Office desktop apps so that when documents are labeled and encrypted by [sensitivity labels](sensitivity-labels.md), multiple users can edit these documents at the same time.
@@ -131,7 +133,7 @@ Before you enable the tenant setting for co-authoring for files encrypted with s
 
 If you've already turned on this setting during the preview period, no further action is needed and you can skip this procedure.
 
-1. Sign in to the [Microsoft 365 compliance center](https://compliance.microsoft.com) as a global admin for your tenant.
+1. Sign in to the [Microsoft Purview compliance portal](https://compliance.microsoft.com) as a global admin for your tenant.
 
 2. From the navigation pane, select **Settings** > **Co-authoring for files with sensitivity files**.
 

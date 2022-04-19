@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Information Governance in Microsoft 365"
+title: "Microsoft Purview Data Lifecycle Management & Microsoft Purview Records Management"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -14,56 +14,60 @@ search.appverid:
 - MOE150
 - MET150
 recommendations: false
-description: "Implement Microsoft Information Governance capabilities to govern your data for compliance or regulatory requirements."
+description: "Implement capabilities from Microsoft Purview Data Lifecycle Management & Microsoft Purview Records Management to govern your data for compliance or regulatory requirements."
 ---
 
-# Microsoft Information Governance in Microsoft 365
+# Govern your data with Microsoft Purview
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Use Microsoft Information Governance (sometimes abbreviated to MIG) capabilities to govern your data for compliance or regulatory requirements.
+Use the capabilities from **Microsoft Purview Data Lifecycle Management** (formerly Microsoft Information Governance) and **Microsoft Purview Records Management** to govern your data for compliance or regulatory requirements.
 
-From a [licensing perspective](#licensing-requirements), there can be considerable overlap between information governance, records management, and data connectors. All three areas support retention and deletion of data in Microsoft 365. Connectors are used by compliance solutions other than information governance and records management. 
+From a [licensing perspective](#licensing-requirements), there can be considerable overlap between data lifecycle management and records management. Both solutions support retention and deletion of data for Microsoft 365 apps and services.
 
-Use the following graphic to help you identify the main configurable components for these three different solutions that each have their own node in the compliance center:
+Use the following graphic to help you identify the main configurable components for these solutions that each have their own configuration area in the Microsoft Purview compliance portal:
 
-![Main components to manage for Microsoft Information Goevernance.](../media/information-governance-components.png)
+![Main components to configure and use to govern your data with Microsoft Purview.](../media/govern-your-data.png)
 
-Looking to protect your data? See [Microsoft Information Protection in Microsoft 365](information-protection.md).
+Looking to protect your data? See [Protect your data with Microsoft Purview](information-protection.md).
 
-## Information governance
+## Microsoft Purview Data Lifecycle Management
 
 To keep what you need and delete what you don't:
  
-|Capability|What problems does it solve?|Get started|
-|:------|:------------|:--------------------|:-----------------------------|
-|[Retention policies for Microsoft 365 workloads, with retention labels for exceptions](retention.md) | Retain or delete content with policy management for email, documents, Teams and Yammer messages | [Create and configure retention policies](create-retention-policies.md) <br /><br /> [Create retention labels for exceptions to your retention policies](create-retention-labels-information-governance.md)|
-|[Archive mailboxes](archive-mailboxes.md)| Provides users with additional mailbox storage space | [Enable archive mailboxes](enable-archive-mailboxes.md) |
-|[Inactive mailboxes](inactive-mailboxes-in-office-365.md)| Retain mailbox content after employees leave the organization so that this content remains accessible to administrators, compliance officers, and records managers | [Create and manage inactive mailboxes](create-and-manage-inactive-mailboxes.md)|
-|[Import service for PST files](importing-pst-files-to-office-365.md)| Bulk-import PST files to Exchange Online mailboxes to retain and search email messages for compliance or regulatory requirements | [Use network upload to import your organization's PST files to Microsoft 365](use-network-upload-to-import-pst-files.md)|
+|Capability|What problems does it solve?|
+|:------|:------------|:----------------|
+|[Retention policies for Microsoft 365 workloads, with retention labels for exceptions](retention.md) | Lets you retain or delete content with policy management for email, documents, Teams and Yammer messages. |
+|[Inactive mailboxes](inactive-mailboxes-in-office-365.md)| Lets you retain mailbox content after employees leave the organization so that this content remains accessible to administrators, compliance officers, and records managers. |
+|[Archive mailboxes](archive-mailboxes.md)| Provides additional mailbox storage space for users.|
+|[Import service for PST files](importing-pst-files-to-office-365.md)| Supports bulk-importing PST files to Exchange Online mailboxes to retain and search email messages for compliance or regulatory requirements. |
 
-## Records management
+Want to learn more? See [Learn about data lifecycle management](information-governance.md).
 
-Lifecycle management of high-value items for legal, business, or regulatory obligations:
+Ready to start using some or all of these capabilities? See [Get started with data lifecycle management](get-started-with-information-governance.md).
 
-|Capability|What problems does it solve?|Get started|
-|:------|:------------|---------------------|:----------------------------|
-|[Records management](records-management.md)| A single solution for email and documents that incorporates flexible retention and deletion schedules and requirements to support the full lifecycle of your content with records declaration and defensible disposition when needed |[Get started with records management](get-started-with-records-management.md) |
 
-## Connectors for third-party data
+## Microsoft Purview Records Management
 
-Extend your compliance tools to imported and archived third-party data from social media platforms, instant messaging platforms, and document collaboration platforms:
+Manage high-value items for business, legal, or regulatory record-keeping requirements:
 
-|Capability|What problems does it solve?|Get started|
-|:------|:------------|:--------------------|:-----------------------------|
-|[Data connectors](archiving-third-party-data.md)| Import, archive, and apply compliance solutions to third-party data from social media platforms, instant messaging platforms, and document collaboration platforms| [Third-party connectors](archiving-third-party-data.md#third-party-data-connectors)|
+|Capability|What problems does it solve?|
+|:---------|:---------------------------|
+|[File plan](file-plan-manager.md)| Lets you create retention labels interactively or import in bulk, and export for analysis. Labels support additional administrative information (optional) to help you identify and track business or regulatory requirements. |
+|[Retention labels for individual items, retention policies if needed for baseline retention](retention.md)| Labels support flexible retention and deletion schedules that can be applied manually or automatically, with records declaration when needed. |
+|[Disposition review and proof of disposition](disposition.md)| Manual review of content before it's permanently deleted, with proof of disposition of records.|
+
+Want to learn more? See [Learn about records management](records-management.md).
+
+Ready to start using some or all of these capabilities? See [Get started with records management](get-started-with-records-management.md).
+
 
 ## Licensing requirements
 
-License requirements for Microsoft Information Governance depend on the scenarios and features you use, rather than set licensing requirements for each capability listed on this page. To understand your licensing requirements and options, see the following sections from the [Microsoft 365 licensing documentation](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance): 
+To understand your licensing requirements and options, see the following sections from the [Microsoft 365 licensing documentation](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance): 
 - [Information Governance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-governance) 
 - [Records Management](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management) 
-- [Data connectors](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#data-connectors)
 
 Any additional licensing requirements will be included in the documentation instructions. For example, licensing specific to managing mailboxes might require licenses from Exchange Online.
-
