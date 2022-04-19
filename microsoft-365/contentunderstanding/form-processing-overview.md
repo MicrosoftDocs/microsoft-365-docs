@@ -50,12 +50,7 @@ Form processing supports documents in more than 73 languages. For the list of la
 
 When setting up SharePoint Syntex in a [Microsoft 365 Multi-Geo environment](../enterprise/microsoft-365-multi-geo.md), you can only configure it to use form processing in the central location. If you want to use form processing in a satellite location, contact Microsoft support.
 
-
-
-
-
-
-## See Also
+## See also
   
 [Power Automate documentation](/power-automate/)
 

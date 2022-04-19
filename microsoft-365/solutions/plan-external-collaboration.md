@@ -1,5 +1,5 @@
 ---
-title: "Plan external collaboration"
+title: "Plan external collaboration with channel conversations, file collaboration, and shared apps"
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -17,10 +17,10 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 recommendations: false
-description: Plan which external collaboration options to use in Microsoft 365.
+description: Learn the difference between guest collaboration and shared channels in Teams and how to choose which one to use.
 ---
 
-# Plan external collaboration
+# Plan external collaboration with channel conversations, file collaboration, and shared apps
 
 Microsoft 365 offers several options for collaborating with people outside your organization:
 
@@ -29,7 +29,7 @@ Microsoft 365 offers several options for collaborating with people outside your 
 - Sharing individual files or folders with people outside your organization
 - Collaboration in a team, with channel conversations, file collaboration, and shared apps
 
-This article covers the fourth option, group collaboration with channel conversations, file collaboration, and shared apps. 
+This article covers the fourth option, group collaboration with channel conversations, file collaboration, and shared apps. (For an overview of all the options, see [Overview of external collaboration options in Microsoft 365](/microsoft-365/enterprise/external-guest-access).)
 
 ## Terms
 
@@ -101,13 +101,13 @@ Shared channels are integrated with Microsoft Purview features.
 
 ##### Communications compliance
 
-Admins can set policies to monitor content for all users in the channel. All messages content in channels, including the shared channel, are covered by [communication compliance policies](/microsoft-365/compliance/communication-compliance). Shared channels inherit the policy of the host organization.
+Admins can set policies to monitor content for all users in the channel. All messages content in channels, including shared channels, is covered by [communication compliance policies](/microsoft-365/compliance/communication-compliance). Shared channels inherit the policy of the host organization.
 
 ##### Conditional access
 
 The host organization's [conditional access policies](/azure/active-directory/conditional-access/overview) are applied to external participants, including B2B direct connect users. The external organization's policies are not used. The following types of conditional access policies are supported with shared channels:
 
-- Policies that are scoped to all guest users, external participants, SharePoint Online cloud apps
+- Policies that are scoped to all guests, external participants, and SharePoint Online cloud apps.
 - Grant Access controls that require MFA, a compliant device, or a hybrid Azure AD joined device. 
 
 IP-based policies are supported at the SharePoint file level. So an external participant could access shared channel from a restricted location, but be blocked when trying to open a file.

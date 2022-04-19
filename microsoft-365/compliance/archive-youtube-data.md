@@ -18,7 +18,7 @@ description: "Admins can set up a connector to import and archive YouTube data f
 
 Use a Veritas connector in the Microsoft Purview compliance portal to import and archive data from YouTube to user mailboxes in your Microsoft 365 organization. Veritas provides a connector that is configured to capture items from a third-party data source and import those items to Microsoft 365. The connector converts content such as chats, attachments, tasks, notes, and posts from YouTube to an email message format and then imports those items to the user mailboxes in Microsoft 365.
 
-After YouTube data is stored in user mailboxes, you can apply Microsoft 365 compliance features such as Litigation Hold, eDiscovery, retention policies and retention labels. Using a YouTube connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
+After YouTube data is stored in user mailboxes, you can apply Microsoft Purview features such as Litigation Hold, eDiscovery, retention policies and retention labels. Using a YouTube connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
 
 ## Overview of archiving YouTube data
 

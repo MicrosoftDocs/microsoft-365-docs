@@ -77,7 +77,7 @@ The output of these two commands will be similar to the following:
 > [!NOTE]
 > The duration of the In-Place Hold in this example is indefinite (*ItemHoldPeriod: Unlimited*). This is typical for eDiscovery and legal investigation scenarios. If the hold duration has is different value than indefinite, the reason is likely because the hold is being used to retain content in a retention scenario. Instead of using the eDiscovery cmdlets in Security & Compliance Center PowerShell for retention scenarios, we recommend that you use [New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy) and [New-RetentionComplianceRule](/powershell/module/exchange/new-retentioncompliancerule) to retain content. The result of using these cmdlets will be similar to using **New-CaseHoldPolicy** and **New-CaseHoldRule**, but you'll able to specify a retention period and a retention action, such as deleting content after the retention period expires. Also, using the retention cmdlets don't require you to associate the retention holds with an eDiscovery case.
 
-## Step 4: Create a case in the Microsoft 365 Compliance center
+## Step 4: Create a case in the Microsoft Purview compliance portal
 
 To create an eDiscovery hold, you have to create an eDiscovery case to associate the hold with. The following example creates an eDiscovery case using a name of your choice. We will store the properties of the new case in a variable for use later. You can view those properties by running the `$case | FL` command after you create the case.
 
@@ -130,7 +130,7 @@ New-ComplianceSearch -Name $search.Name -ExchangeLocation $search.SourceMailboxe
 
 To make sure that everything is set up correctly, go to the compliance portal at [https://compliance.microsoft.com](https://compliance.microsoft.com), and click **eDiscovery > Core**.
 
-![Microsoft 365 Compliance Center eDiscovery.](../media/MigrateLegacyeDiscovery7.png)
+![Microsoft Purview compliance portal eDiscovery.](../media/MigrateLegacyeDiscovery7.png)
 
 The case that you created in Step 3 is listed on the **eDiscovery (Standard)** page. Open the case and then notice the hold that you created in Step 4 in listed on the **Hold** tab. You can select the hold to see details on the flyout page, including the number of mailboxes the hold is applied to and the distribution status.
 

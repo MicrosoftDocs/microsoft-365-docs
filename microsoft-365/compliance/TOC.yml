@@ -428,7 +428,7 @@
           href: office-365-service-encryption.md
         - name: Customer Key
           items: 
-            - name: Customer Key in Microsoft 365
+            - name: Service encryption with Microsoft Purview Customer Key
               href: customer-key-overview.md
             - name: Set up Customer Key for Microsoft 365
               href: customer-key-set-up.md
@@ -441,27 +441,27 @@
         - name: Email encryption
           href: email-encryption.md
           items: 
-            - name: Office 365 Message Encryption (OME)
+            - name: Message encryption
               href: ome.md
-            - name: Set up new Office 365 Message Encryption capabilities
+            - name: Set up Microsoft Purview Message Encryption
               href: set-up-new-message-encryption-capabilities.md
-            - name: Define mail flow rules to encrypt email messages in Office 365
+            - name: Define mail flow rules to encrypt email messages
               href: define-mail-flow-rules-to-encrypt-email.md
             - name: Add your organization's brand to your encrypted messages
               href: add-your-organization-brand-to-encrypted-messages.md
-            - name: Create a sensitive information type policy for your organization using Office 365 Message Encryption
+            - name: Create a sensitive information type policy for your organization using Microsoft Purview Message Encryption
               href: ome-sensitive-info-types.md
-            - name: Manage Office 365 Message Encryption
+            - name: Manage message encryption
               href: manage-office-365-message-encryption.md
-            - name: Office 365 Advanced Message Encryption
+            - name: Advanced message encryption
               href: ome-advanced-message-encryption.md
-            - name: Set an expiration date for email encrypted by Office 365 Advanced Message Encryption
+            - name: Set an expiration date for email encrypted by Microsoft Purview Advanced Message Encryption
               href: ome-advanced-expiration.md
-            - name: Revoke email encrypted by Office 365 Advanced Message Encryption
+            - name: Revoke email encrypted by Microsoft Purview Advanced Message Encryption
               href: revoke-ome-encrypted-mail.md
-            - name: Compare versions of OME
+            - name: Compare versions of message encryption
               href: ome-version-comparison.md
-            - name: Office 365 Message Encryption FAQ
+            - name: Message encryption FAQ
               href: ome-faq.yml
             - name: How Exchange Online secures your email secrets
               href: exchange-online-secures-email-secrets.md

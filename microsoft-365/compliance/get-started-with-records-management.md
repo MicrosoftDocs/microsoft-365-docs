@@ -38,7 +38,7 @@ Ready to start managing your organization's high-value content for legal, busine
 
 4. **Publish and apply your retention labels**. Retention labels are reusable building blocks that can be used in multiple policies and can be incorporated into user workflows:
 
-    - [Create retention labels and apply them in apps](create-apply-retention-labels.md)
+    - [Publish retention labels and apply them in apps](create-apply-retention-labels.md)
     - [Apply a retention label to content automatically](apply-retention-labels-automatically.md)
 
 ## Subscription and licensing requirements
@@ -68,10 +68,10 @@ Use the following table to help you map your business requirements to the scenar
 |----------------|---------------|
 |Declare a record |[Declare records by using retention labels](declare-records.md)|
 |Update a record |[Use record versioning to update records stored in SharePoint or OneDrive](record-versioning.md)|
-|Let admins and users manually apply retain and delete actions for documents and emails: <br />-  SharePoint <br />- OneDrive <br />- Outlook and Outlook on the web|[Create retention labels and apply them in apps](create-apply-retention-labels.md)|
-|Let site admins set default retain and delete actions for all content in a SharePoint library, folder, or document set|[Create retention labels and apply them in apps](create-apply-retention-labels.md)|
-|Let users automatically apply retain and delete actions to emails by using Outlook rules|[Create retention labels and apply them in apps](create-apply-retention-labels.md)|
-|Let admins apply retain and delete actions to a document understanding model, so that these are automatically applied to identified documents in a SharePoint library|[Create retention labels and apply them in apps](create-apply-retention-labels.md)|
+|Let admins and users manually apply retain and delete actions for documents and emails: <br />-  SharePoint <br />- OneDrive <br />- Outlook and Outlook on the web|[Publish retention labels and apply them in apps](create-apply-retention-labels.md)|
+|Let site admins set default retain and delete actions for all content in a SharePoint library, folder, or document set|[Publish retention labels and apply them in apps](create-apply-retention-labels.md)|
+|Let users automatically apply retain and delete actions to emails by using Outlook rules|[Publish retention labels and apply them in apps](create-apply-retention-labels.md)|
+|Let admins apply retain and delete actions to a document understanding model, so that these are automatically applied to identified documents in a SharePoint library|[Publish retention labels and apply them in apps](create-apply-retention-labels.md)|
 |Automatically apply retain and delete actions to documents and emails |[Apply a retention label to content automatically](apply-retention-labels-automatically.md)|
 |Start the retention period when an event occurs, such as:  <br />- Employees leave the organization <br />- Contracts expire <br />- End of product lifetime| [Start retention when an event occurs](event-driven-retention.md)|
 |Restrict changes to policies to help meet regulatory requirements or safeguard against rogue administrators| [Use Preservation Lock to restrict changes to retention policies and retention label policies](retention-preservation-lock.md)

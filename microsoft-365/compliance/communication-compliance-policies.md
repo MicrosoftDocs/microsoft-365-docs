@@ -101,8 +101,8 @@ User reported messages from Teams chats are the only messages processed by the U
 
 Admins should immediately assign custom reviewers to this policy as appropriate for your organization. This may include reviewers such as your Compliance Officer, Risk Officer, or members of your Human Resources department. To customize the reviewers for chat messages submitted as user-reported messages, complete the following steps:
 
-1. Sign into [Microsoft 365 compliance center](https://compliance.microsoft.com/) using credentials for an admin account in your Microsoft 365 organization.
-2. In the Microsoft 365 compliance center, go to **Communication compliance**.
+1. Sign into [Microsoft Purview compliance portal](https://compliance.microsoft.com/) using credentials for an admin account in your Microsoft 365 organization.
+2. In the compliance portal, go to **Communication compliance**.
 3. On the **Policy** tab, select the *User-reported messages* policy and select **Edit**.
 4. On the **Monitor for user-reported messages** pane, assign reviewers for the policy. Reviewers must have mailboxes hosted on Exchange Online. When reviewers are added to a policy, they automatically receive an email message that notifies them of the assignment to the policy and provides links to information about the review process.
 5. Select **Save**.
