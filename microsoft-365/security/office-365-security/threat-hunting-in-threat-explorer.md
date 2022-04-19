@@ -209,7 +209,7 @@ Names and GUIDs of the transport rules applied to the message appear. Analysts w
 > [!IMPORTANT]
 > Exchange transport rule search and name availability depend on the specific role assigned to you. You need to have one of the following roles or permissions to view the transport rule names and search. However, even without the roles or permissions below, an analyst may see the transport rule label and GUID information in the Email Details. Other record-viewing experiences in Email Grids, Email flyouts, Filters, and Export are not affected.
 >
-> - Exchange Online Only - Data Loss Prevention: All
+> - Exchange Online Only - data loss prevention: All
 > - Exchange Online Only - O365SupportViewConfig: All
 > - Microsoft Azure Active Directory or Exchange Online - Security Admin: All
 > - Azure Active Directory or Exchange Online - Security Reader: All

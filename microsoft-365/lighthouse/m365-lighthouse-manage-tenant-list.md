@@ -13,7 +13,7 @@ ms.collection:
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
-- M365-Lighthouse                         
+- M365-Lighthouse
 search.appverid: MET150
 description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn how to manage your tenant list."
 ---
@@ -101,6 +101,6 @@ After you've created and assigned tags, you can use them to filter your tenants.
 
 ## Related content
 
-[Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md) (article)  
-[Microsoft 365 Lighthouse Device compliance page overview](m365-lighthouse-device-compliance-page-overview.md) (article)  
-[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)
+[Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md) (article)
+[Microsoft 365 Lighthouse Device compliance page overview](m365-lighthouse-device-compliance-page-overview.md) (article)
+[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)
