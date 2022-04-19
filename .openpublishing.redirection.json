@@ -6867,17 +6867,17 @@
     }, 
     {
       "source_path": "microsoft-365/compliance/information-governance.md",
-      "redirect_url": "/microsoft-365/compliance/data-lifecycle-management.md",
+      "redirect_url": "/microsoft-365/compliance/data-lifecycle-management",
       "redirect_document_id": false
     },    
     {
       "source_path": "microsoft-365/compliance/get-started-with-information-governance.md",
-      "redirect_url": "/microsoft-365/compliance/get-started-with-data-lifecycle-management.md",
+      "redirect_url": "/microsoft-365/compliance/get-started-with-data-lifecycle-management",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/compliance/create-retention-labels-information-governance.md",
-      "redirect_url": "/microsoft-365/compliance/create-retention-labels-data-lifecycle-management.md",
+      "redirect_url": "/microsoft-365/compliance/create-retention-labels-data-lifecycle-management",
       "redirect_document_id": false
     },
     {
