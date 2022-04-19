@@ -32,7 +32,7 @@ Microsoft 365 Business Premium is a cost-effective solution that empowers small 
 
 - [Video: Top 5 benefits of Microsoft 365 Business Premium](#video-top-5-benefits-of-microsoft-365-business-premium)
 - [Productivity and advanced security capabilities](#productivity-and-security) that enable you to run your business more securely, across devices, and from just about anywhere
-- [Resources to train your team and all staff](#resources-to-train-your-users) on how to work productively while maintaining a more secure environment.
+- [Resources to train your team and all staff](#resources-to-train-your-users) on how to work productively while maintaining a more secure environment
 - A [downloadable digital threats guide](#download-the-digital-threats-guide) that describes different kinds of threats and how to protect against them in your day-to-day work
 - [Next steps](#next-steps)
 

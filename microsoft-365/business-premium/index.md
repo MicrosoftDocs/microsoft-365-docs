@@ -24,20 +24,20 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
-description: "Learn how to collaborate securely in your small business or campaign with Microsoft 365 Business Premium."
+description: "Learn how to implement cybersecurity for small or medium sized businesses with Microsoft 365 Business Premium."
 ---
 
-# Microsoft 365 Business Premium Overview
+# Microsoft 365 Business Premium overview
 
-Let us begin by saying that you made a wise choice in adopting Microsoft 365 Business Premium. There are other small business productivity tools out there, but none compare to Microsoft 365 Business Premium for keeping your organization safe from cyber criminals. You took on the defense of your organization's systems, and that's good. You are your organization’s first and best defense against hackers and cyber attackers, including random individuals, organized crime, or highly-sophisticated nation states. 
+Let us begin by saying that you made a wise choice in adopting Microsoft 365 Business Premium and its world class productivity tools. Microsoft 365 Business Premium is designed with cyber safety in mind, and by adopting Microsoft 365, you are taking on the defense of your organization's systems, helping to safeguard all data, devices and information. You are the first and best defense against hackers and cyber attackers, including random individuals, organized crime, or highly-sophisticated nation states. 
 
-The task before you is this &mdash; let Microsoft 365 Business Premium help secure your organization’s future! These important missions are categorized in order of importance, and completing them is the most effective way to thwart hackers, protect against ransomware, and ensure your organization’s future is safeguarded. Let's get started. 
+The task before you is this &mdash; let Microsoft 365 Business Premium help secure your organization’s future! Approach this task by taking on missions to fortify your environment, train your team, and safeguard managed devices. These important missions are categorized in order of importance, and completing them is the most effective way to thwart hackers, protect against ransomware, and ensure your organization’s future is safeguarded with the best cybersecurity. Let's get started. 
 
 Click through the tabs below to learn about each mission and how to set up Microsoft 365 Business Premium security.
 
 ## [**Fortify Your Environment**](#tab/Fortify)
 
-In these first missions, you're going to have to sign in and set up your initial protective walls of defense, starting with account access protections.
+In these first missions, sign in and set up your initial protective walls of defense, starting with account access protections.
 
 [**Set up your environment**](m365bp-setup-overview.md). This objective has you set up and implement security across all accounts in the system.
 
@@ -45,7 +45,7 @@ In these first missions, you're going to have to sign in and set up your initial
 
 [:::image type="content" source="../media/bus-premium-card-overview-fortify.png" alt-text="Microsoft 365 Business Premium protects your apps, file storage, email, devices, and identities.":::](m365bp-setup-overview.md)
 
-## Cybersecurity Playbook
+## Cybersecurity playbook
 
 The guidance in these missions helps your business achieve the goals described in the Harvard Kennedy School  [Cybersecurity Campaign Handbook](https://go.microsoft.com/fwlink/p/?linkid=2015598). A summary is available for you to download.
 
@@ -68,7 +68,7 @@ We've included a set of missions here with some objectives that need to be compl
 
 [:::image type="content" source="../media/bus-premium-card-overview-train.png" alt-text="Microsoft 365 Business Premium protects your apps, file storage, email, devices, and identities.":::](m365bp-devices-overview.md)
 
-## Cybersecurity Playbook
+## Cybersecurity playbook
 
 The guidance in these missions helps your business achieve the goals described in the Harvard Kennedy School  [Cybersecurity Campaign Handbook](https://go.microsoft.com/fwlink/p/?linkid=2015598). A summary is available for you to download.
 
@@ -87,7 +87,7 @@ A safe device is one that is monitored by the organization. In this last critica
 
 [:::image type="content" source="../media/bus-premium-card-overview-manage.png" alt-text="Microsoft 365 Business Premium protects your apps, file storage, email, devices, and identities.":::](m365bp-protect-devices.md)
 
-## Cybersecurity Playbook
+## Cybersecurity playbook
 
 The guidance in these missions helps your business achieve the goals described in the Harvard Kennedy School  [Cybersecurity Campaign Handbook](https://go.microsoft.com/fwlink/p/?linkid=2015598). A summary is available for you to download.
 
