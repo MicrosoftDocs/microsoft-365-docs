@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: v-kcirillo
 author: cirilk
 manager: scotv
-ms.date: 03/05/2022
+ms.date: 04/19/2022
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -35,13 +35,13 @@ description: "Glossary of terms for Microsoft 365 Business Premium"
 |adware |Software that automatically displays or downloads unwanted advertising material when a user is online. |
 |antivirus |Helps you remove viruses and other types of malicious programs from your computer or laptop by detecting and removing them.|
 |backdoor |A type of malware that gives malicious hackers remote access to and control of your device.|
-|BYODs |Bring-your-own devices (BYODs) are laptops, PCs, tablets and mobile phones that are personally owned by members of the organization, and therefore, not managed by the organization. |
+|BYODs |Bring-your-own devices (BYODs) are laptops, PCs, tablets and mobile phones that are personally owned by members of the organization, and therefore, are not managed by the organization. |
 |cyberattack |An attack from cyber space. (See cyber space.) |
 |cyber security |Maintenance and implementation of security defenses to protect the networks of businesses or organizations against cyber attack. |
 |cybercrime |Participating in the destruction or theft of data and information by means of computers or the internet.|
 |cyberspace |The concept of widespread interconnected digital technology, made up of computers and networks and the communication between them. |
 |data exfiltration |Data files that are stolen and sent outside the network through email or other means. |
-|Defender |Microsoft's antivirus software, Microsoft Defender antivirus. |
+|Defender |Microsoft's antivirus software, Microsoft Defender Antivirus. |
 |Device Group |A device group is a collection of devices that are grouped together because of certain specified criteria, such as operating system version. Devices that meet the criteria are included in that device group, unless you exclude them. In Microsoft 365 Business Premium (and Defender for Business), Device groups are stored in Azure Active Directory. |
 |encryption |Encryption is the process by which information is encoded so that only an authorized recipient can decode and consume the information. |
 |exploit |A piece of code that uses software vulnerabilities to gain access to your device and perform other tasks, such as installing malware. |
