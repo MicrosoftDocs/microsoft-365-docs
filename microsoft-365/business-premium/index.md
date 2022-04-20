@@ -43,7 +43,7 @@ In these first missions, sign in and set up your initial walls of defense, start
 
 [**Bump up cybersecurity protections**](m365bp-security-overview.md). Set up critical front-line security measures to prevent cyberattacks. 
 
-[:::image type="content" source="../media/bus-premium-card-overview-fortify.png" alt-text="Microsoft 365 Business Premium protects your apps, file storage, email, devices, and identities,.":::](m365bp-setup-overview.md)
+[:::image type="content" source="../media/m365bp-fortify-environment.jpg" alt-text="Microsoft 365 Business Premium protects your apps, file storage, email, devices, and identities,.":::](m365bp-setup-overview.md)
 
 ## Cybersecurity playbook
 
@@ -68,7 +68,7 @@ We've included a set of missions here with some objectives that need to be compl
 
 [**Collaborate and share securely**](m365bp-collaborate-share-securely.md). The objectives of this mission require you to set up secure file sharing for all members of the organization.
 
-[:::image type="content" source="../media/bus-premium-card-overview-train.png" alt-text="Microsoft 365 Business Premium protects your apps, file storage, email, devices, and identities.":::](m365bp-devices-overview.md)
+[:::image type="content" source="../media/m365bp-train-team.jpg" alt-text="Microsoft 365 Business Premium protects your apps, file storage, email, devices, and identities.":::](m365bp-devices-overview.md)
 
 ## Cybersecurity playbook
 
@@ -89,7 +89,7 @@ A safe device is one that is monitored by the organization. In this last critica
 
 [**Set up and secure managed devices**](m365bp-protect-devices.md). Take the steps to secure those devices so they are monitored and protected by the organization! 
 
-[:::image type="content" source="../media/bus-premium-card-overview-manage.png" alt-text="Microsoft 365 Business Premium protects your apps, file storage, email, devices, and identities.":::](m365bp-protect-devices.md)
+[:::image type="content" source="../media/m365bp-safeguard-managed-devices.jpg" alt-text="Microsoft 365 Business Premium protects your apps, file storage, email, devices, and identities.":::](m365bp-protect-devices.md)
 
 ## Cybersecurity playbook
 

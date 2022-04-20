@@ -40,5 +40,5 @@ This mission has the following objectives:
 
 Achieve these objectives and then start your [next mission](m365bp-devices-overview.md).
 
-:::image type="content" source="../media/bus-premium-card-bump-up.png" alt-text="Bump up security.":::
+:::image type="content" source="../media/m365bp-bump-up-protection.jpg" alt-text="Bump up security.":::
 
