@@ -17,14 +17,14 @@
       items:
       - name: Get Defender for Business
         href: get-defender-business.md
+      - name: Use the trial playbook
+        href: trial-playbook-defender-business.md
       - name: Add users and assign licenses
         href: mdb-add-users.md
       - name: Visit the Microsoft 365 Defender portal
         href: mdb-get-started.md
       - name: Use the setup wizard
         href: mdb-use-wizard.md
-      - name: Use our trial playbook
-        href: trial-playbook-defender-business.md
       - name: Try tutorials and simulations
         href: mdb-tutorials.md
     - name: Set up and configure Defender for Business
