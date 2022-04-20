@@ -45,6 +45,12 @@ To configure shared channels
     - To allow users to be invited to shared channels in other organizations, turn **Can be invited to external shared channels** on.
 1. Select **Apply**.
 
+In order for external channel participants to participate in meetings, external access must be enabled. This is also required to be able to see external participants' presence in the channel.
+
+To enable external access
+1. In the [Teams admin center](https://admin.teams.microsoft.com/), expand **Users**, and then select **External access**.
+1. Under **Teams and Skype for Business users in external organizations**, ensure that the organizations that you want to collaborate with are not blocked.
+
 ## Configure cross-tenant access settings in Azure AD
 
 Azure AD B2B direct connect is disabled by default. To enable collaboration in shared channels with people from other organizations, you must:

@@ -35,6 +35,10 @@ When you purchase Microsoft 365 Business Standard, you have the option of adding
 
 In this article, we'll walk you through the steps of adding an existing domain your already own or buying a new one. If you purchased a new domain when you signed up, your domain is all set up and you can move to [Add users and assign licenses](#add-users-and-assign-licenses).
 
+## Set up Microsoft 365 for business
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
+
 ## Before you begin
 
 To add, modify or remove domains you must be a global administrator. For more info, see [About admin roles](../add-users/about-admin-roles.md).

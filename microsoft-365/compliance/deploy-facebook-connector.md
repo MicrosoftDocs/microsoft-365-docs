@@ -182,9 +182,9 @@ This article contains the step-by-step process to deploy a connector that uses t
 
 5. Click **Save** to save the connector settings.
 
-## Step 5: Set up a Facebook connector in the Microsoft 365 compliance center
+## Step 5: Set up a Facebook connector in the compliance portal
 
-1. Go to the Microsoft 365 compliance center, and then select <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**Data connectors**</a.
+1. Go to the Microsoft Purview compliance portal, and then select <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**Data connectors**</a.
 
 2. On the **Data connectors** page under **Facebook Business pages**, click **View**.
 

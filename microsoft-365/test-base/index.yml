@@ -40,11 +40,11 @@ landingContent:
       - linkListType: quickstart
         links:
           - text: Create Test Base Account
-            url: createAccount.md 
+            url: createAccount.md
+          - text: Test your application on Test Base
+            url: testoverview.md
           - text: Build a Package
             url: buildpackage.md
-          - text: Upload your package
-            url: uploadApplication.md
           - text: Upload your binaries
             url: binaries.md
           - text: Set your Test Tasks
