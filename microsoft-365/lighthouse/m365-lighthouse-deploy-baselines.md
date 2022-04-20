@@ -20,7 +20,7 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 # Deploy Microsoft 365 Lighthouse baselines
 
-Microsoft 365 Lighthouse lets you deploy standard managed-tenant configurations to secure users, devices, and data within customer tenants. There are seven [default baseline configurations](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) that come standard with Lighthouse. Using the Lighthouse deployment plan feature, you can view, test, and deploy security configurations across all your tenants. A deployment plan is only available to active tenants. Once a tenant is onboarded, you can compare your customers’ current configuration against the default baseline configuration and take the appropriate actions.
+Microsoft 365 Lighthouse lets you deploy standard managed-tenant configurations to secure users, devices, and data within customer tenants. There are seven [default baseline configurations](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) that come standard with Lighthouse. Using the Lighthouse deployment plan feature, you can view, test, and deploy security configurations across all your tenants. A deployment plan is only available to active tenants. Once a tenant is onboarded, you can compare your customers' current configuration against the default baseline configuration and take the appropriate actions.
 
 ## Before you begin
 
@@ -34,7 +34,7 @@ Make sure you and your customer tenants meet the requirements listed in [Require
 
 3. Select the **Deployment Plan** tab.
 
-    The Deployment Plan tab provides a searchable and exportable list of each deployment step that is included in the tenant’s deployment plan that includes the following information for each deployment step:
+    The Deployment Plan tab provides a searchable and exportable list of each deployment step that is included in the tenant's deployment plan that includes the following information for each deployment step:
 
     | Column            | Description |
     |-----------------|-------------------------------------------------------------------------------------|
@@ -50,12 +50,12 @@ Make sure you and your customer tenants meet the requirements listed in [Require
 
     | Column            | Description |
     |-------------------|-----------------------------------------------------------------------------------------------|
-    | Summary        | A summary of the Deployment Step’s purpose.                                         |
+    | Summary        | A summary of the Deployment Step's purpose.                                         |
     | Baseline       | The baseline from which the deployment step is derived.                             |
     | Category       | Whether the deployment step is associated with managing Devices, Identity, or Data. |
     | Required SKU   | SKUs required to complete the deployment step.                                      |
-    | User impact    | The impact of deploying the step to the tenant’s users.                             |
-    | For your users | Links to resources the tenant’s users may find helpful.                             |
+    | User impact    | The impact of deploying the step to the tenant's users.                             |
+    | For your users | Links to resources the tenant's users may find helpful.                             |
     | Next steps     | Links and guidance around any applicable next steps.                                |
 
     Deployment steps are comprised of one or more processes that need to be completed to fulfill the requirements of the deployment step. The Deployment Step page includes the process table that lists each process included in the deployment step and provides the following information:
@@ -187,7 +187,7 @@ For more information on policy conflict management, see [Azure AD Conditional Ac
 
 ## Related content
 
-[Overview of using baselines to deploy standard tenant configurations](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) (article)\
-[Microsoft 365 lighthouse Tenants page overview](m365-lighthouse-tenants-page-overview.md) (article)\
+[Overview of using Microsoft 365 Lighthouse baselines to deploy standard tenant configurations](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) (article)\
+[Overview of the Windows 365 (Cloud PCs) page in Microsoft 365 Lighthouse](m365-lighthouse-tenants-page-overview.md) (article)\
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)\
 [Configure Microsoft 365 Lighthouse portal security](m365-lighthouse-configure-portal-security.md) (article) 

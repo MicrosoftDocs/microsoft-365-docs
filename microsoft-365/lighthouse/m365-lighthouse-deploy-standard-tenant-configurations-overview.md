@@ -1,5 +1,5 @@
 ---
-title: "Overview of using baselines to deploy standard tenant configurations"
+title: "Overview of using Microsoft 365 Lighthouse baselines to deploy standard tenant configurations"
 f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
@@ -18,9 +18,9 @@ search.appverid: MET150
 description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn about using baselines to deploy standard tenant configurations."
 ---
 
-# Overview of using baselines to deploy standard tenant configurations 
+# Overview of using Microsoft 365 Lighthouse baselines to deploy standard tenant configurations 
 
-Microsoft 365 Lighthouse baselines provide a repeatable and scalable way for you to manage Microsoft 365 security settings across multiple customer tenants. Baselines provide standard tenant configurations that deploy core security policies and compliance standards that keep your tenants’ users, devices, and data secure.
+Microsoft 365 Lighthouse baselines provide a repeatable and scalable way for you to manage Microsoft 365 security settings across multiple customer tenants. Baselines provide standard tenant configurations that deploy core security policies and compliance standards that keep your tenants' users, devices, and data secure.
 
 You can view the default baseline and its deployment steps from within Lighthouse. To apply a baseline to a tenant, select **Tenants** in the left navigation pane, and then select a tenant. Next, go to the **Deployment plans** tab to begin the deployment.
 
@@ -44,7 +44,7 @@ Lighthouse baseline configurations are designed to make sure all managed tenants
 
 ## Deployment Plans
 
-Each active tenant has a deployment plan that includes the deployment steps from the Microsoft 365 Lighthouse baseline. To access a tenant’s deployment plan, select an active tenant from the list on the **Tenants** page, and then select the **Deployment Plan** tab.
+Each active tenant has a deployment plan that includes the deployment steps from the Microsoft 365 Lighthouse baseline. To access a tenant's deployment plan, select an active tenant from the list on the **Tenants** page, and then select the **Deployment Plan** tab.
 
 :::image type="content" source="../media/m365-lighthouse-deploy-baselines/deployment-plan-tab.png" alt-text="Screenshot of the Deployment Plan tab.":::
 
@@ -68,7 +68,7 @@ The Deployment Plan tab also includes the following options:
 
 ## Deployment steps and processes
 
-Each tenant’s deployment plan includes the deployment steps from the Microsoft 365 Lighthouse baseline. Each deployment step is comprised of one or more processes that need to be completed to fulfill the requirements of the deployment step. When a new tenant becomes active, you must complete deployment activities associated with the deployment steps and processes.
+Each tenant's deployment plan includes the deployment steps from the Microsoft 365 Lighthouse baseline. Each deployment step is comprised of one or more processes that need to be completed to fulfill the requirements of the deployment step. When a new tenant becomes active, you must complete deployment activities associated with the deployment steps and processes.
 
 For each deployment step, you can take the following actions:
 
