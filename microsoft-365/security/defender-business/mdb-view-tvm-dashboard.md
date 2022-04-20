@@ -21,9 +21,6 @@ ms.custom: intro-get-started
 
 # Use your Threat & Vulnerability Management dashboard in Microsoft Defender for Business
 
-> [!NOTE]
-> Microsoft Defender for Business is now included in [Microsoft 365 Business Premium](../../business-premium/index.md). 
-
 Microsoft Defender for Business includes a Threat & Vulnerability Management dashboard that is designed to save your security team time and effort. In addition to providing an exposure score, you can also view information about exposed devices and security recommendations. You can use your Threat & Vulnerability Management dashboard to:
 
 - View your exposure score, which is associated with devices in your company

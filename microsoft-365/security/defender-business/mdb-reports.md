@@ -20,9 +20,6 @@ ms.collection:
 
 # Reports in Microsoft Defender for Business
 
-> [!NOTE]
-> Microsoft Defender for Business is now included in [Microsoft 365 Business Premium](../../business-premium/index.md). 
-
 Several reports are available in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). This article describes these reports, how you can use them, and how to find them.
 
 ## Reports in Defender for Business

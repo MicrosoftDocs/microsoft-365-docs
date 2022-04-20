@@ -21,9 +21,6 @@ ms.collection:
 
 # Set up and configure Microsoft Defender for Business
 
-> [!NOTE]
-> Microsoft Defender for Business is now included in [Microsoft 365 Business Premium](../../business-premium/index.md). 
-
 Microsoft Defender for Business provides a streamlined setup and configuration experience, designed especially for the small and medium-sized business. Use this article as a guide for the overall process.
 
 > [!TIP]

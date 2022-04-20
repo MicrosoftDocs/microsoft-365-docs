@@ -20,9 +20,6 @@ ms.collection:
 
 # Understand policy order in Microsoft Defender for Business
 
-> [!NOTE]
-> Microsoft Defender for Business is now included in [Microsoft 365 Business Premium](../../business-premium/index.md). 
-
 ## Policy order in Microsoft Defender for Business
 
 Microsoft Defender for Business includes predefined policies to help ensure the devices your employees use are protected. Your security team can add new policies as well. For example, suppose that you want to apply certain settings to some devices, and different settings to other devices. You can do that by adding policies, such as next-generation protection policies or firewall policies.

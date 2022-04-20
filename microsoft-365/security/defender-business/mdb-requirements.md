@@ -21,9 +21,6 @@ ms.collection:
 
 # Microsoft Defender for Business requirements
 
-> [!NOTE]
-> Microsoft Defender for Business is now included in [Microsoft 365 Business Premium](../../business-premium/index.md). 
-
 This article describes the requirements for Microsoft Defender for Business.
 
 ## What to do

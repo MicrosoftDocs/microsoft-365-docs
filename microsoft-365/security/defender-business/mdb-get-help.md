@@ -20,9 +20,6 @@ ms.date: 02/24/2022
 
 # Get help and support for Microsoft Defender for Business
 
-> [!NOTE]
-> Microsoft Defender for Business is now included in [Microsoft 365 Business Premium](../../business-premium/index.md). 
-
 ## Get help and support
 
 If you need help with Microsoft Defender for Business, select the Help icon (?) in the upper right corner of the screen. Type your question or issue. Several options, such as quick answers or help articles, will be listed.

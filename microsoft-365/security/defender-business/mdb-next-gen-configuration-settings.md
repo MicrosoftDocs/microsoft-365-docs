@@ -20,9 +20,6 @@ ms.collection:
 
 # Understand next-generation configuration settings in Microsoft Defender for Business
 
-> [!NOTE]
-> Microsoft Defender for Business is now included in [Microsoft 365 Business Premium](../../business-premium/index.md). 
-
 Next-generation protection in Defender for Business includes robust antivirus and antimalware protection. Your default policies are designed to protect your devices and users without hindering productivity; however, you can also customize your policies to suit your business needs. And, if you're using Microsoft Endpoint Manager, you can use that to manage your security policies.
 
 **This article describes**:

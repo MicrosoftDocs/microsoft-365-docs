@@ -20,9 +20,6 @@ ms.collection:
 
 # Microsoft 365 Lighthouse and Microsoft Defender for Business
 
-> [!NOTE]
-> Microsoft Defender for Business is now included in [Microsoft 365 Business Premium](../../business-premium/index.md). 
-
 ## Microsoft Defender for Business integrates with Microsoft 365 Lighthouse
 
 If you're a Microsoft Cloud Solution Provider (CSP) and you have [Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md), you can manage security for your customers (small and medium-sized businesses). Microsoft Defender for Business is designed to integrate with Microsoft 365 Lighthouse. When these capabilities become available, you'll be able to view security incidents across tenants in your Microsoft 365 Lighthouse portal ([https://lighthouse.microsoft.com](https://lighthouse.microsoft.com)). 
