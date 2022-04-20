@@ -52,6 +52,8 @@ If you have an earlier version of Windows and are using Microsoft Security Essen
 **Turn on Windows Firewall**<p>
 You should always run Windows Firewall even if you have another firewall turned on. Turning off Windows Firewall might make your device (and your network, if you have one) more vulnerable to unauthorized access. See [Turn Windows Firewall on or off](https://support.microsoft.com/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off) for instructions.
 
+Okay, mission complete! Now, let's work on [securing the email system](m365bp-protect-email-overview.md) against phishing and other attacks.
+
 ## [Mac](#tab/Mac)
 
 **Use FileVault to encrypt your Mac disk**<p>

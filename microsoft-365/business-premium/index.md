@@ -47,7 +47,7 @@ In these first missions, sign in and set up your initial walls of defense, start
 
 ## Cybersecurity playbook
 
-The guidance in these missions helps your business achieve the goals described in the Harvard Kennedy School  [Cybersecurity Campaign Handbook](https://go.microsoft.com/fwlink/p/?linkid=2015598). A summary is available for you to download.
+The guidance in these missions helps your business achieve the goals described in the Harvard Kennedy School  [Cybersecurity Campaign Playbook](https://go.microsoft.com/fwlink/p/?linkid=2015598). A summary is available for you to download.
 
 Download link coming soon!
 
