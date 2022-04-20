@@ -21,6 +21,8 @@ ms.custom: seo-marvel-mar2020
 
 # Export documents from a review set in eDiscovery (Premium)
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Export allows users to customize the content that is included in the download package when you export document from a review set in eDiscovery (Premium).
 
 To export documents from a review set:

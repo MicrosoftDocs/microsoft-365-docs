@@ -19,6 +19,8 @@ description: "You can add non-custodial data sources to an eDiscovery (Premium) 
 
 # Add non-custodial data sources to an eDiscovery (Premium) case
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 In Microsoft Purview eDiscovery (Premium) cases, it doesn't always meet your needs to associate a Microsoft 365 data source with a custodian in the case. But you may still need to associate that data with a case so that you can search it, add it to a review set, and analyze and review it. The feature in eDiscovery (Premium) is called *non-custodial data sources* and lets you add data to a case without having to associate it to a custodian. It also applies the same eDiscovery (Premium) functionality to non-custodial data that's available for data associated with custodian. Two of the most useful things that you can apply to non-custodial data is placing it on hold and processing it using [Advanced indexing](indexing-custodian-data.md).
 
 ## Add a non-custodial data source

@@ -16,6 +16,8 @@ description: "Learn how to set up and use a 17a-4 FactSet DataParser connector t
 
 # Set up a connector to archive FactSet data
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Use the [FactSet DataParser](https://www.17a-4.com/factset-dataparser/) from 17a-4 LLC to import and archive data from the FactSet platform to user mailboxes in your Microsoft 365 organization. The DataParser includes a FactSet connector that's configured to capture items from a third-party data source and import those items to Microsoft 365. The FactSet DataParser connector converts FactSet data to an email message format and then imports those items to user mailboxes in Microsoft 365.
 
 After FactSet data is stored in user mailboxes, you can apply Microsoft Purview features such as Litigation Hold, eDiscovery, retention policies and retention labels, and communication compliance. Using a FactSet connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.

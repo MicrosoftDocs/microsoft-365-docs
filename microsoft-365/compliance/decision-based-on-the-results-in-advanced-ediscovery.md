@@ -20,6 +20,8 @@ ms.custom: seo-marvel-apr2020
 ---
 
 # Decisions based on Relevance results in eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
   
 In the Relevance module in eDiscovery (Premium), the Decide tab provides additional information for viewing and using decision-support statistics for determining the size of the review set of case files.
   
