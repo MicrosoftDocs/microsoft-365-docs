@@ -43,6 +43,8 @@ To set an expiration date for Anyone links across the organization
    ![Screenshot of SharePoint organization-level Anyone link expiration settings.](../media/sharepoint-organization-anyone-link-expiration.png)
 1. Type a number of days in the box, and then click **Save**.
 
+If you change the expiration time, existing links will keep their current expiration time if the new setting is longer, or be updated to the new setting if the new setting is shorter.
+
 To set an expiration date for Anyone links on a specific site
 
 1. Open the SharePoint admin center, expand **Sites**, and then select <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites**</a>.
