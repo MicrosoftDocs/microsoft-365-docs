@@ -68,7 +68,7 @@ The Deployment Plan tab also includes the following options:
 
 ## Deployment steps and processes
 
-Each tenant's deployment plan includes the deployment steps from the Microsoft 365 Lighthouse baseline. Each deployment step is comprised of one or more processes that need to be completed to fulfill the requirements of the deployment step. When a new tenant becomes active, you must complete deployment activities associated with the deployment steps and processes.
+Each tenant's deployment plan includes the deployment steps from the Microsoft 365 Lighthouse baseline. Each deployment step includes one or more processes required to complete the deployment. When a new tenant becomes active, you must complete deployment activities associated with the deployment steps and processes.
 
 For each deployment step, you can take the following actions:
 
