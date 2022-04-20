@@ -13,7 +13,7 @@ ms.collection:
   - M365-security-compliance
   - m365initiative-defender-office365
 description: Use Threat Explorer or Real-time detections in the Microsoft 365 Defender portal to investigate and respond to threats efficiently.
-ms.custom: 
+ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
@@ -30,7 +30,6 @@ In this article:
 
 > [!NOTE]
 > This is part of a **3-article series** on **Threat Explorer (Explorer)**, **email security**, and **Explorer and Real-time detections** (such as differences between the tools, and permissions needed to operate them). The other two articles in this series are [Email security with Threat Explorer](email-security-in-microsoft-defender.md) and [Threat Explorer and Real-time detections](real-time-detections.md).
-
 
 **Applies to**
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
@@ -64,7 +63,6 @@ Once a security operations (Sec Ops) person selects the data they want to see, w
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/sender-drop-down.png" alt-text="The Sender button in Threat Explorer" lightbox="../../media/sender-drop-down.png":::
-
 
 Refining focus in Explorer or Real-time detection can be thought of in layers. The first is **View**. The second can be thought of as a *filtered focus*. For example, you can retrace the steps you took in finding a threat by recording your decisions like this: To find the issue in Explorer, **I chose the Malware View with a Recipient filter focus**. This makes retracing your steps easier.
 

@@ -105,7 +105,6 @@ After the add-in is installed and enabled, you'll see the following icons:
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="../../media/microsoft-365-admin-center-integrated-apps.png" alt-text="The Microsoft 365 admin center Integrated apps" lightbox="../../media/microsoft-365-admin-center-integrated-apps.png":::
 
-
 2. In the **Microsoft 365 Apps** page that appears, click in the **Search** box, enter **Report Message**, and then click **Search** ![Search icon.](../../media/search-icon.png). In the list of results, find and select **Report Message**. 
 
 3. The app details page opens. Select **Get It Now**. 
