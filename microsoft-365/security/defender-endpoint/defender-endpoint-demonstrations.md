@@ -81,7 +81,7 @@ When attempting to access a URL, SmartScreen responds in one of several ways, de
 
 Go to the [Microsoft Defender SmartScreen URL reputation demonstrations](defender-endpoint-demonstration-smartscreen-url-reputation.md) page to try several scenarios using edge.
 
-## Cloud protection and Microsoft Defender Antivirus
+## Cloud protection and Microsoft Defender Antivirus demonstrations
 
 ### Block at First Sight (BAFS)
 

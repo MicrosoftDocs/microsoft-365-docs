@@ -35,21 +35,21 @@ Cloud-delivered protection for Microsoft Defender Antivirus, also referred to as
 
 2. If you see file blocked by Microsoft Defender SmartScreen, click on "View downloads" button.
 
-   :::image type="content" source="images/atp-cloud-delivered-protection-smartscreen-block.png" alt-text="Security for attack surface reduction rule":::
+   :::image type="content" source="images/cloud-delivered-protection-smartscreen-block.png" alt-text="SmartScreen blocks an unsafe download, and provides a button to click to view the **Downloads** list details.":::
 
 3. In Downloads menu right click on the blocked file and click on **Download unsafe file**.
 
-   :::image type="content" source="images/atp-cloud-delivered-protection-smartscreen-block-view-downloads.png" alt-text="Security for attack surface reduction rule":::
+   :::image type="content" source="images/cloud-delivered-protection-smartscreen-block-view-downloads.png" alt-text="Lists the download as unsafe, but provides an option to proceed with the download":::
 
 4. If successful you should see that "Microsoft Defender Antivirus" found a virus and deleted it.
 
-   :::image type="content" source="images/atp-cloud-delivered-protection-smartscreen-blocked-successful.png" alt-text="Security for attack surface reduction rule":::
+   :::image type="content" source="images/cloud-delivered-protection-smartscreen-blocked-successful.png" alt-text="Microsoft Defender Antivirus detects the virus and deletes the unsafe download.":::
 
    > [!NOTE]
    >
    > In some cases, you might also see **Threat Found** notification from Microsoft Defender Security Center.
 
-   :::image type="content" source="images/atp-cloud-delivered-protection-smartscreen-threat-found-notification.png" alt-text="Security for attack surface reduction rule":::
+   :::image type="content" source="images/cloud-delivered-protection-smartscreen-threat-found-notification.png" alt-text="Microsoft Defender Antivirus Threats found notification provides options to get details":::
 
 5. If the file executes, or if you see it blocked by Microsoft Defender SmartScreen it means that cloud-delivered protection is not working and you should go to [Configure and validate network connections for Microsoft Defender Antivirus](/windows/threat-protection/windows-defender-antivirus/configure-network-connections-windows-defender-antivirus?ocid=wd-av-demo-cloud-middle) to learn more.
 
@@ -57,7 +57,7 @@ Cloud-delivered protection for Microsoft Defender Antivirus, also referred to as
 
 Failed to block (but stopped by Microsoft Defender SmartScreen)
 
-:::image type="content" source="images/atp-cloud-delivered-protection-smartscreen-blocked-failed.png" alt-text="Security for attack surface reduction rule":::
+:::image type="content" source="images/cloud-delivered-protection-smartscreen-blocked-failed.png" alt-text="Microsoft Defender SmartScreen detects an download that was not blocked by Microsoft Defender Antivirus is unsafe and stops the download":::
 
 ## See also
 

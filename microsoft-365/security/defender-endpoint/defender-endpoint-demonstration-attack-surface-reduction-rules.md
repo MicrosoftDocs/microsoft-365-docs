@@ -91,7 +91,7 @@ You can perform these manual steps instead:
 2. Save this clean file into c:\demo (we need something to encrypt)
 3. Enable all rules using the powershell commands above.
 
-### Scenario 1: ASR blocks a test file with multiple vulnerablilities
+### Scenario 1: ASR blocks a test file with multiple vulnerabilities
 
 1. Enable all rules in block mode using the powershell commands above (you can copy paste all)
 2. Download and open any of the test file/documents linked above, enable editing and content if prompted.

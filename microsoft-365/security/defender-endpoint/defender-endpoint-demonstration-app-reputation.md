@@ -40,7 +40,7 @@ This program has a good reputation; the download should run uninterrupted:
 
   Launching this link should render a message similar to the following:
 
-  :::image type="content" source="images/atp-smartscreen-app-reputation-known-good.png" alt-text="Security for attack surface reduction rule":::
+  :::image type="content" source="images/smartscreen-app-reputation-known-good.png" alt-text="Based on the target file's reputation, SmartScreen allows the download without interference.":::
 
 ### Unknown program
 
@@ -52,7 +52,7 @@ Because the program download does not have sufficient reputation to ensure that 
   
   Launching this link should render a message similar to the following:
 
-  :::image type="content" source="images/atp-smartscreen-app-reputation-unknown.png" alt-text="Security for attack surface reduction rule":::
+  :::image type="content" source="images/smartscreen-app-reputation-unknown.png" alt-text="SmartScreen does not have sufficient reputation information about the download file, and warns the user to stop or proceed with caution.":::
 
 ### Known malware
 
@@ -64,7 +64,7 @@ This download is known malware; SmartScreen should block this program from runni
 
   Launching this link should render a message similar to the following:
 
-  :::image type="content" source="images/atp-smartscreen-app-reputation-known-malware.png" alt-text="Security for attack surface reduction rule":::
+  :::image type="content" source="images/smartscreen-app-reputation-known-malware.png" alt-text="SmartScreen detects a file download with an unsafe reputation.; the download is blocked.":::
 
 ## Learn more
 
