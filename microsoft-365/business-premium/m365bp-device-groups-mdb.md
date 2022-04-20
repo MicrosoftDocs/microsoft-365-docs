@@ -66,4 +66,5 @@ You can create a new device group while you are in the process of creating or ed
 
 10. On the **Review your policy** step, review all the settings, make any needed edits, and then choose **Create policy** or **Update policy**.
 
+Now that you've completed your primary missions, set up your [response teams](m365bp-security-incident-management.md) and [maintain your environment](m365bp-maintain-environment.md).
 

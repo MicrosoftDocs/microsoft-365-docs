@@ -23,7 +23,7 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: "Security overview for Microsoft 365 Business Premium which provides cybersecurity tools such as multi-factor authentication that you can use to prevent cyber attacks."
+description: "Security overview for Microsoft 365 Business Premium which provides cybersecurity tools such as multi-factor authentication that you can use to prevent cyberattacks."
 ---
 
 # Bump up security

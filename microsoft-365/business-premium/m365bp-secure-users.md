@@ -62,7 +62,7 @@ Microsoft 365 Business Premium includes your favorite Office productivity apps, 
 
 ## Resources to train your users
 
-The security recommendations provided in this library make it much harder for cyber attackers to gain access to your environment. However, an important part of your security strategy includes training users&mdash; the people in your company who use your systems regularly. Users can help be your front line of defense. Everyone needs to know how to work productively while maintaining a more secure environment. 
+The security recommendations provided in this library make it much harder for cyberattackers to gain access to your environment. However, an important part of your security strategy includes training users&mdash; the people in your company who use your systems regularly. Users can help be your front line of defense. Everyone needs to know how to work productively while maintaining a more secure environment. 
 
 Resources are available to help everyone in your organization to:
 

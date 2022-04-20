@@ -36,8 +36,8 @@ description: "Glossary of terms for Microsoft 365 Business Premium"
 |antivirus |Helps you remove viruses and other types of malicious programs from your computer or laptop by detecting and removing them.|
 |backdoor |A type of malware that gives malicious hackers remote access to and control of your device.|
 |BYODs |Bring-your-own devices (BYODs) are laptops, PCs, tablets and mobile phones that are personally owned by members of the organization, and therefore, are not managed by the organization. |
-|cyber attack |An attack from cyberspace. (See cyberspace.) |
-|cybersecurity |Maintenance and implementation of security defenses to protect the networks of businesses or organizations against cyber attack. |
+|cyberattack |An attack from cyberspace. (See cyberspace.) |
+|cybersecurity |Maintenance and implementation of security defenses to protect the networks of businesses or organizations against cyberattack. |
 |cybercrime |Participating in the destruction or theft of data and information by means of computers or the internet.|
 |cyberspace |The concept of widespread interconnected digital technology, made up of computers and networks and the communication between them. |
 |data exfiltration |Data files that are stolen and sent outside the network through email or other means. |
