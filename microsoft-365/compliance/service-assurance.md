@@ -20,6 +20,8 @@ description: "Download third-party audits, find out how Microsoft keeps customer
 
 # Service assurance in the Security & Compliance Center
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Use Service assurance in the Security & Compliance Center to access documents that describe a variety of topics, including: 
   
 - Microsoft security practices for customer data that is stored in Office 365. 

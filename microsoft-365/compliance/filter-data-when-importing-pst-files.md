@@ -25,6 +25,8 @@ description: "Learn how to filter data using the intelligent import feature in t
 
 # Filter data when importing PST files
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Use the new Intelligent Import feature in the Microsoft 365 Import service to filter the items in PST files that actually get imported to the target mailboxes. Here's how it works:
   
 - After you create and submit a PST import job, PST files are uploaded to an Azure storage area in the Microsoft cloud.

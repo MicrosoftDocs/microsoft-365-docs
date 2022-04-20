@@ -20,6 +20,8 @@ description: "Learn about the case limits, indexing limits, and search limits in
 
 # Limits in eDiscovery (Premium)
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 This article describes the limits in the Microsoft Purview eDiscovery (Premium) solution in Microsoft 365.
 
 ## Case and review set limits

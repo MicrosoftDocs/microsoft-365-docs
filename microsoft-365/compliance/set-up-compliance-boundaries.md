@@ -23,6 +23,8 @@ ms.custom: seo-marvel-apr2020
 
 # Set up compliance boundaries for eDiscovery investigations
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 The guidance in this article can be applied when using either Microsoft Purview eDiscovery (Standard) or Microsoft Purview eDiscovery (Premium) to manage investigations.
 
 Compliance boundaries create logical boundaries within an organization that control the user content locations (such as mailboxes, OneDrive accounts, and SharePoint sites) that eDiscovery managers can search. Also, compliance boundaries control who can access eDiscovery cases used to manage the legal, human resources, or other investigations within your organization. The need for compliance boundaries is often necessary for multi-national corporations that have to respect geographical boarders and regulations and for governments, which are often divided into different agencies. In Microsoft 365, compliance boundaries help you meet these requirements when performing content searches and managing investigations with eDiscovery cases.

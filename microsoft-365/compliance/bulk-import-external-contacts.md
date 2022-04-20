@@ -20,6 +20,8 @@ description: "Learn how admins can use Exchange Online PowerShell and a CSV file
 
 # Bulk import external contacts to Exchange Online
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 **This article is for administrators. Are you trying to import contacts to your own mailbox? See [Import contacts to Outlook](https://support.office.com/article/bb796340-b58a-46c1-90c7-b549b8f3c5f8)**
    
 Does your company have lots of existing business contacts that you want to include in the shared address book (also called the global address list) in Exchange Online? Do you want to add external contacts as members of distribution groups, just like you can with users inside your company? If so, you can use Exchange Online PowerShell and a CSV (comma-separated value) file to bulk import external contacts into Exchange Online. It's a three-step process:
