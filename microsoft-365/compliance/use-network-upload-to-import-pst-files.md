@@ -1,5 +1,5 @@
 ---
-title: "Use network upload to import your organization's PST files"
+title: "Use network upload to import PST files"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -22,6 +22,8 @@ ms.custom: seo-marvel-apr2020
 ---
 
 # Use network upload to import your organization's PST files to Microsoft 365
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!NOTE]
 > This article is for administrators. Are you trying to import PST files to your own mailbox? See [Import email, contacts, and calendar from an Outlook .pst file](https://go.microsoft.com/fwlink/p/?LinkID=785075)

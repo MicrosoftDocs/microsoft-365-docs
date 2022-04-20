@@ -1,5 +1,5 @@
 ---
-title: "How to identify the type of hold placed on an Exchange Online mailbox"
+title: "How to identify the hold on an Exchange Online mailbox"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -22,6 +22,8 @@ description: "Learn how to identify the different types of hold that can be plac
 ---
 
 # How to identify the type of hold placed on an Exchange Online mailbox
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 This article explains how to identify holds placed on Exchange Online mailboxes in Microsoft 365.
 

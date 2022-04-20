@@ -1,5 +1,5 @@
 ---
-title: "Deprecating Message Encryption Viewer App"
+title: "Deprecating OME Viewer app"
 f1.keywords:
 - NOCSH
 ms.author: krowley

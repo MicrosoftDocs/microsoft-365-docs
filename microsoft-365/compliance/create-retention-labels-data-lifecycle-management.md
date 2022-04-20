@@ -1,5 +1,5 @@
 ---
-title: "Create retention labels for exceptions to your retention policies"
+title: "Create retention labels for exceptions"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -25,7 +25,7 @@ description: Instructions to create retention labels for exceptions to retention
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-As part of your governance information strategy to retain what you need and delete what you don't, you might need to create a few retention labels for items that need exceptions to your retention policies. 
+As part of your data governance strategy to retain what you need and delete what you don't, you might need to create a few retention labels for items that need exceptions to your retention policies.
 
 Whereas retention policies automatically apply to all items at the container level (such as SharePoint sites, user mailboxes, and so on), retention labels apply to individual items, such as a SharePoint document or an email message.
 
@@ -44,7 +44,7 @@ Use the following information to help you create retention labels to supplement 
 
 ## Before you begin
 
-The global admin for your organization has full permissions to create and edit retention labels and their policies. If you aren't signing in as a global admin, see [Permissions for retention policies and retention labels](get-started-with-information-governance.md#permissions-for-retention-policies-and-retention-labels).
+The global admin for your organization has full permissions to create and edit retention labels and their policies. If you aren't signing in as a global admin, see [Permissions for retention policies and retention labels](get-started-with-data-lifecycle-management.md#permissions-for-retention-policies-and-retention-labels).
 
 ## How to create retention labels for data lifecycle management
 

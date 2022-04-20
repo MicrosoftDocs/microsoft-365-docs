@@ -1,5 +1,5 @@
 ---
-title: "Refresh your exact data matchsensitive information source table file"
+title: "Refresh your exact data match sensitive information source table file"
 f1.keywords:
 - NOCSH
 ms.author: chrfox

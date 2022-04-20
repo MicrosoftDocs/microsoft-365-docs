@@ -34,7 +34,7 @@ landingContent:
           - text: Prevent data loss
             url: information-protection.md#prevent-data-loss
           - text: Govern your data
-            url: manage-information-governance.md
+            url: manage-data-governance.md
           - text: "Learning path: Manage information protection and governance"
             url: /learn/paths/m365-compliance-information
 
@@ -43,13 +43,13 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Insider risk management
+          - text: Microsoft Purview Insider Risk Management
             url: insider-risk-management.md
-          - text: Communication compliance
+          - text: Microsoft Purview Communication Compliance
             url: communication-compliance.md
-          - text: Information barriers
+          - text: Microsoft Purview Information Barriers
             url: information-barriers.md
-          - text: Privileged access management
+          - text: Microsoft Purview Privileged Access Management
             url: privileged-access-management-overview.md
           - text: Customer Lockbox
             url: customer-lockbox-requests.md
@@ -59,14 +59,14 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Advanced eDiscovery
+          - text: Microsoft Purview eDiscovery (Premium)
             url: overview-ediscovery-20.md
-          - text: Core eDiscovery
+          - text: Microsoft Purview eDiscovery (Standard)
             url: ./get-started-core-ediscovery.md
           - text: Content search
             url: search-for-content.md
-          - text: Auditing
-            url: search-the-audit-log-in-security-and-compliance.md   
+          - text: Microsoft Purview Audit solutions
+            url: auditing-solutions-overview.md   
 
     # Card
   - title: Get started with regulatory compliance

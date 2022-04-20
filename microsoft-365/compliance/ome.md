@@ -1,5 +1,5 @@
 ---
-title: "Message Encryption"
+title: "Office 365 Message Encryption"
 f1.keywords:
 - NOCSH
 ms.author: krowley

@@ -12,7 +12,7 @@
       items:
       - name: Overview
         href: testoverview.md
-      - name: Test Binaries package on Test Base
+      - name: Test your Binary Files on Test Base
         href: testapplication.md
       - name: Test your Intune app on Test Base
         href: testintuneapplication.md

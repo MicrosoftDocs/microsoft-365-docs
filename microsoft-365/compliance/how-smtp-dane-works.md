@@ -1,5 +1,5 @@
 ---
-title: "How SMTP DNS-based Authentication of Named Entities (DANE) works to secure email communications"
+title: "How SMTP DNS-based Authentication of Named Entities (DANE) secures email communications"
 f1.keywords:
 - NOCSH
 ms.author: v-mathavale

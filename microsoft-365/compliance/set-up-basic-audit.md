@@ -24,6 +24,8 @@ description: "This article describes how to set up Audit (Standard) so you can s
 
 # Set up Microsoft Purview Audit (Standard)
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Microsoft Purview Audit (Standard) in Microsoft 365 lets you search for audit records for activities performed in the different Microsoft 365 services by users and admins. Because Audit (Standard) is enabled by default for most Microsoft 365 and Office 365 organizations, there's only a few things you need to do before you and others in your organization can search the audit log.
 
 This article discusses the following steps necessary to set up Audit (Standard).
