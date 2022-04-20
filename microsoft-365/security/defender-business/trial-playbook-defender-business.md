@@ -62,7 +62,9 @@ Defender for Business was designed to save small and medium-sized businesses tim
 
 3. [Onboard and configure Windows devices](mdb-onboard-devices.md#windows-clientstabwindowsclientdevices). Onboarding devices right away helps protect those devices from day one.
 
-   What is automatic onboarding? [Automatic onboarding](mdb-use-wizard.md#what-is-automatic-onboarding) is a simplified way to onboard Windows devices to Defender for Business. Automatic onboarding is only available for Windows devices that are already enrolled in Microsoft Endpoint Manager (or Microsoft Intune). While you are using the setup wizard, the system will detect whether Windows devices are already enrolled in Endpoint Manager. You'll be asked if you want to use automatic onboarding for all or some of those devices. You can onboard all Windows devices at once, or select specific devices to start with, and then add more devices later. [Learn more about automatic onboarding](mdb-use-wizard.md#what-is-automatic-onboarding).
+   What is automatic onboarding? [Automatic onboarding](mdb-use-wizard.md#what-is-automatic-onboarding) is a simplified way to onboard Windows devices to Defender for Business. Automatic onboarding is only available for Windows devices that are already enrolled in Microsoft Endpoint Manager (or Microsoft Intune). 
+   
+   While you are using the setup wizard, the system will detect whether Windows devices are already enrolled in Endpoint Manager. You'll be asked if you want to use automatic onboarding for all or some of those devices. You can onboard all Windows devices at once, or select specific devices to start with, and then add more devices later. [Learn more about automatic onboarding](mdb-use-wizard.md#what-is-automatic-onboarding).
    
    To onboard other devices, see [step 4](#step-4-set-up-and-configure-defender-for-business).
 
@@ -132,22 +134,22 @@ If you used the wizard but need to onboard non-Windows devices go directly to st
 
 In the next 30 days, we recommend you try out the following features: 
 
-1.	Use your Threat & Vulnerability Management dashboard. Defender for Business includes a Threat & Vulnerability Management dashboard that is designed to save your security team time and effort. 
-You can use your Threat & Vulnerability Management dashboard to:
-•	View your exposure score, which is associated with devices in your organization
-•	View your top security recommendations, such as addressing impaired communications with devices, turning on firewall protection, or updating Microsoft Defender Antivirus definitions
-•	View remediation activities, such as any files that were sent to quarantine, or vulnerabilities found on devices
+1.	[Use your Threat & Vulnerability Management dashboard](mdb-view-tvm-dashboard.md). Defender for Business includes a Threat & Vulnerability Management dashboard that is designed to save your security team time and effort. You can use your Threat & Vulnerability Management dashboard to:
 
-2.	View and respond to detected threats
-As threats are detected and alerts are triggered, incidents are created. Your organization's security team can view and manage incidents in the Microsoft 365 Defender portal.
+   - View your exposure score, which is associated with devices in your organization
+   - View your top security recommendations, such as addressing impaired communications with devices, turning on firewall protection, or updating Microsoft Defender Antivirus definitions
+   - View remediation activities, such as any files that were sent to quarantine, or vulnerabilities found on devices
 
-	Must try features: 
-•	View and manage incidents 
-o	Monitor your incidents & alerts 
-•	Respond to and mitigate threats 
-o	View detected threats
-•	Review mediation actions in the Action Center 
-•	View and use reports 
+   [Use your Threat & Vulnerability Management dashboard](mdb-view-tvm-dashboard.md).
+
+2.	View and respond to detected threats. As threats are detected and alerts are triggered, incidents are created. Your organization's security team can view and manage incidents in the Microsoft 365 Defender portal.
+
+	Try these features:
+   
+   - View and manage incidents 
+   - Respond to and mitigate threats 
+   - Review mediation actions in the Action Center 
+   - View and use reports 
 
 3.	Manage security policies
 In Defender for Business, security settings are configured through policies that are applied to devices. To help simplify your setup and configuration experience, Defender for Business includes preconfigured policies to help protect your company's devices as soon as they are onboarded. You can use the default policies, edit policies, or create your own policies. 
