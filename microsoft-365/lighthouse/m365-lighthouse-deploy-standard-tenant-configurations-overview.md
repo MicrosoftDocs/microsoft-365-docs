@@ -1,5 +1,5 @@
 ---
-title: "Overview of using baselines to deploy standard tenant configurations"
+title: "Overview of using baselines for standard tenant configurations"
 f1.keywords: CSH
 ms.author: sharik
 author: SKjerland

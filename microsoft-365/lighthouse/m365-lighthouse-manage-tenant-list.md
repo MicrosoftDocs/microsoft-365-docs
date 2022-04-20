@@ -1,5 +1,5 @@
 ---
-title: "Manage your tenant list"
+title: "Manage Lighthouse tenant list"
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland

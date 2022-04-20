@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Lighthouse Device compliance page overview"
+title: "Microsoft 365 Lighthouse device compliance page overview"
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland

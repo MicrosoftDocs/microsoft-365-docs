@@ -1,5 +1,5 @@
 ---
-title: "Troubleshoot and resolve problems and error messages in Microsoft 365 Lighthouse"
+title: "Troubleshoot error messages and problems in Microsoft 365 Lighthouse"
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
