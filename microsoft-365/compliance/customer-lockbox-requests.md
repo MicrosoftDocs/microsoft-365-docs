@@ -107,7 +107,7 @@ Audit records that correspond to Customer Lockbox requests are logged in the Mic
 
 ### Search the audit log for activity related to Customer Lockbox requests
 
-Before you can use the audit log to track requests for Customer Lockbox, there are some steps you need to take to set up audit logging, including assigning permissions to search the audit log. For more information, see [Set up Basic Audit in Microsoft 365](set-up-basic-audit.md). Once you've completed the setup, use these steps to create an audit log search query to return audit records related to Customer Lockbox:
+Before you can use the audit log to track requests for Customer Lockbox, there are some steps you need to take to set up audit logging, including assigning permissions to search the audit log. For more information, see [Set up Microsoft Purview Audit (Standard)](set-up-basic-audit.md). Once you've completed the setup, use these steps to create an audit log search query to return audit records related to Customer Lockbox:
 
 1. Go to <https://compliance.microsoft.com>.
   

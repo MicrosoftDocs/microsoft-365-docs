@@ -1,5 +1,5 @@
 ---
-title: "Set up eDiscovery (Premium) in Microsoft 365"
+title: "Set up eDiscovery (Premium) in Microsoft Purview"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -22,9 +22,11 @@ search.appverid:
 description: "This article describes how to set up eDiscovery (Premium) so you can start creating and managing cases. It also describes the required Microsoft subscriptions and licensing. After you complete a few quick steps, the eDiscovery (Premium) tool is ready to use."
 ---
 
-# Set up Microsoft 365 eDiscovery (Premium)
+# Set up Microsoft Purview eDiscovery (Premium)
 
-Microsoft Purview eDiscovery (Premium) in Microsoft 365 provides an end-to-end workflow to preserve, collect, review, analyze, and export data that's responsive to your organization's internal and external investigations. Nothing is needed to deploy eDiscovery (Premium), but there are some prerequisite tasks that an IT admin and eDiscovery manager have to complete before your organization can start to create and use eDiscovery (Premium) cases to manage your investigations.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Microsoft Purview eDiscovery (Premium) provides an end-to-end workflow to preserve, collect, review, analyze, and export data that's responsive to your organization's internal and external investigations. Nothing is needed to deploy eDiscovery (Premium), but there are some prerequisite tasks that an IT admin and eDiscovery manager have to complete before your organization can start to create and use eDiscovery (Premium) cases to manage your investigations.
 
 This article discusses the following steps necessary to set up eDiscovery (Premium).
 

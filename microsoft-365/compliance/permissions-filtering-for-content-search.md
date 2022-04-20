@@ -24,6 +24,8 @@ ms.custom: seo-marvel-apr2020
 
 # Configure permissions filtering for eDiscovery
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 You can use search permissions filtering to let an eDiscovery manager search only a subset of mailboxes and sites in your organization. You can also use permissions filtering to let that same eDiscovery manager search only for mailbox or site content that meets a specific search criteria. For example, you might let an eDiscovery manager search only the mailboxes of users in a specific location or department. You do this by creating a filter that uses a supported recipient filter to limit which mailboxes a specific user or group of users can search. You can also create a filter that specifies what mailbox content a user can search for. This is done by creating a filter that uses a searchable message property. Similarly, you can let an eDiscovery manager search only specific SharePoint sites in your organization. You do this by creating a filter that limits which site can be searched. You can also create a filter that specifies what site content can be searched. This is done by creating a filter that uses a searchable site property.
 
 Search permissions filters are applied when you search for content using Content search, Microsoft Purview eDiscovery (Standard), and Microsoft Purview eDiscovery (Premium) in the Microsoft Purview compliance portal. When a search permissions filter is applied to a specific user, that user can perform the following search-related actions:

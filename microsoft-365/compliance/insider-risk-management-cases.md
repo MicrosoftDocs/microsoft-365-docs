@@ -26,7 +26,7 @@ After investigating the details of a case, you can take action by:
 - sending the user a notice
 - resolving the case as benign
 - sharing the case with your ServiceNow instance or with an email recipient
-- escalating the case for an Advanced eDiscovery investigation
+- escalating the case for an eDiscovery (Premium) investigation
 
 Check out the [Insider Risk Management Investigation and Escalation video](https://www.youtube.com/watch?v=UONUSmkRC8s) for an overview of how cases are investigated and managed in insider risk management.
 
@@ -183,7 +183,7 @@ To send a notice to the user assigned to a case:
 
 ### Escalate for investigation
 
-Escalate the case for user investigation in situations where additional legal review is needed for the user's risk activity. This escalation opens a new Advanced eDiscovery case in your Microsoft 365 organization. Advanced eDiscovery provides an end-to-end workflow to preserve, collect, review, analyze, and export content that's responsive to your organization's internal and external legal investigations. It also lets your legal team manage the entire legal hold notification workflow to communicate with custodians involved in a case. Assigning a reviewer as a custodian in an Advanced eDiscovery case created from an insider risk management case helps your legal team take appropriate action and manage content preservation. To learn more about Advanced eDiscovery cases, see [Overview of Advanced eDiscovery in Microsoft 365](overview-ediscovery-20.md).
+Escalate the case for user investigation in situations where additional legal review is needed for the user's risk activity. This escalation opens a new Microsoft Purview eDiscovery (Premium) case in your Microsoft 365 organization. eDiscovery (Premium) provides an end-to-end workflow to preserve, collect, review, analyze, and export content that's responsive to your organization's internal and external legal investigations. It also lets your legal team manage the entire legal hold notification workflow to communicate with custodians involved in a case. Assigning a reviewer as a custodian in an eDiscovery (Premium) case created from an insider risk management case helps your legal team take appropriate action and manage content preservation. To learn more about eDiscovery (Premium) cases, see [Overview of Microsoft Purview eDiscovery (Premium)](overview-ediscovery-20.md).
 
 To escalate a case to a user investigation:
 

@@ -1,5 +1,5 @@
 ---
-title: "Encryption Risks and Protections"
+title: "Encryption risks and protections"
 f1.keywords:
 - NOCSH
 ms.author: krowley

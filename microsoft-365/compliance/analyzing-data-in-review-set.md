@@ -22,6 +22,8 @@ ms.custom: seo-marvel-mar2020
 
 # Analyze data in a review set in eDiscovery (Premium)
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 When the number of collected documents is large, it can be difficult to review them all. Microsoft Purview eDiscovery (Premium) provides a number of tools to analyze the documents to reduce the volume of documents to be reviewed without any loss in information, and to help you organize the documents in a coherent manner. To learn more about these capabilities, see:
 
 - [Near duplicate detection](near-duplicate-detection-in-advanced-ediscovery.md)

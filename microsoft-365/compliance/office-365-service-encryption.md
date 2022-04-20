@@ -1,5 +1,5 @@
 ---
-title: "Service Encryption"
+title: "Service encryption"
 f1.keywords:
 - NOCSH
 ms.author: krowley

@@ -24,6 +24,8 @@ ms.custom:
 
 # Assign eDiscovery permissions in the compliance portal
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 If you want people to use any of the [eDiscovery-related tools](ediscovery.md) in the Microsoft Purview compliance portal, you have to assign them the appropriate permissions. The easiest way to do this is to add the person the appropriate role group on the **Permissions** page in the compliance center. This topic describes the permissions required to perform eDiscovery tasks.
   
 The primary eDiscovery-related role group in compliance portal is called **eDiscovery Manager**. There are two subgroups within this role group.
