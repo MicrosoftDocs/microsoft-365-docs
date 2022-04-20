@@ -183,12 +183,12 @@ landingContent:
       - linkListType: video
         links:
           - text: Set up Microsoft 365 for Google Workspace migration
-            url: /microsoft-365/admin/moveto-microsoft-365/set-up-microsoft-365-forgoogle
+            url: moveto-microsoft-365/set-up-microsoft-365-forgoogle.md
           - text: Add your Google Workspace domain to Microsoft 365
-            url: /microsoft-365/admin/moveto-microsoft-365/add-google-domain
+            url: moveto-microsoft-365/add-google-domain.md
           - text: Migrate business email and calendar from Google Workspace
-            url: /microsoft-365/admin/moveto-microsoft-365/migrate-email      
+            url: moveto-microsoft-365/migrate-email.md      
           - text: Connect your domain to Microsoft 365 for business
-            url: /microsoft-365/admin/moveto-microsoft-365/connect-domain-tom365
+            url: moveto-microsoft-365/connect-domain-tom365.md
           - text: Migrate Google files to Microsoft 365 for business with Migration Manager
-            url: /microsoft-365/admin/moveto-microsoft-365/migrate-files-migration-manager
+            url: moveto-microsoft-365/migrate-files-migration-manager.md
