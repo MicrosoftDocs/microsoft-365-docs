@@ -14,7 +14,7 @@ ms.collection:
 - M365-security-compliance                 
 search.appverid: MET150
 ms.reviewer: inbadian, shlomiakirav
-description: Find out how to get help or contact support in Microsoft Defender for Business
+description: See how to get help or contact support for issues with Defender for Business.
 ms.date: 02/24/2022
 ---
 
@@ -24,7 +24,7 @@ ms.date: 02/24/2022
 
 If you need help with Microsoft Defender for Business, select the Help icon (?) in the upper right corner of the screen. Type your question or issue. Several options, such as quick answers or help articles, will be listed.
 
-If you don't see the answer to your question, you can open a support ticket.
+If you don't see the answer to your question, you can open a support ticket. See [Get support](../../admin/get-help-support.md)
 
 >
 > **Got a minute?**
