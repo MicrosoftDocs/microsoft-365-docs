@@ -43,7 +43,7 @@ In these first missions, sign in and set up your initial walls of defense, start
 
 [**Bump up cybersecurity protections**](m365bp-security-overview.md). Set up critical front-line security measures to prevent cyberattacks. 
 
-[:::image type="content" source="../media/bus-premium-card-overview-fortify.png" alt-text="Microsoft 365 Business Premium protects your apps, file storage, email, devices, and identities.":::](m365bp-setup-overview.md)
+[:::image type="content" source="../media/bus-premium-card-overview-fortify.png" alt-text="Microsoft 365 Business Premium protects your apps, file storage, email, devices, and identities,.":::](m365bp-setup-overview.md)
 
 ## Cybersecurity playbook
 
