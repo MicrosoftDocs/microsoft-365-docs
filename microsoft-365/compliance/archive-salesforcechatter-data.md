@@ -16,6 +16,8 @@ description: "Admins can set up a connector to import and archive Salesforce Cha
 
 # Set up a connector to archive Salesforce Chatter data
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Use a Veritas connector in the Microsoft Purview compliance portal to import and archive data from the Salesforce Chatter platform to user mailboxes in your Microsoft 365 organization. Veritas provides a [Salesforce Chatter](http://globanet.com/chatter/) connector that captures items from the third-party data source and imports those items to Microsoft 365. The connector converts the content such as chats, attachments, and posts from Salesforce Chatter to an email message format and then imports those items to the user’s mailbox in Microsoft 365.
 
 After Salesforce Chatter data is stored in user mailboxes, you can apply Microsoft Purview features such as Litigation Hold, eDiscovery, retention policies and retention labels. Using a Salesforce Chatter connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.

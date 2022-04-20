@@ -16,6 +16,8 @@ description: "Admins can set up a connector to import and archive Pivot data fro
 
 # Set up a connector to archive Pivot data
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Use a Veritas connector in the Microsoft Purview compliance portal to import and archive data from the Pivot platform to user mailboxes in your Microsoft 365 organization. Veritas provides you with a [Pivot](https://globanet.com/pivot/) connector that is configured to capture items from the third-party data source (on a regular basis) and then import those items to Microsoft 365. Pivot is an instant messaging platform that allows collaboration with financial market participants. The connector converts items such as chat messages, from a users' Pivot accounts to an email message format and then imports those items to the user mailboxes in Microsoft 365.
 
 After Pivot data is stored in user mailboxes, you can apply Microsoft Purview features such as Litigation Hold, eDiscovery, retention policies and retention labels, and communication compliance. Using a Pivot connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
