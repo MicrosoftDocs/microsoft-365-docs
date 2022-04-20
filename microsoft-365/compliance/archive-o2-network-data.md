@@ -16,6 +16,8 @@ description: "Admins can set up a TeleMessage connector to import and archive SM
 
 # Set up a connector to archive O2 Network data
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Use a TeleMessage connector in the Microsoft Purview compliance portal to import and archive Short Messaging Service (SMS) messages and voice calls from the O2 mobile network. After you set up and configure a connector, it connects to your organization's O2 Network once every day, and imports SMS and voice calls to mailboxes in Microsoft 365.
 
 After SMS messages and voice calls are stored in user mailboxes, you can apply Microsoft Purview features such as Litigation Hold, Content Search, and Microsoft 365 retention policies to O2 Network data. For example, you can search O2 Network SMS messages and voice calls using Content Search or associate the mailbox that contains O2 Network data with a custodian in an eDiscovery (Premium) case. Using an O2 Network connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.

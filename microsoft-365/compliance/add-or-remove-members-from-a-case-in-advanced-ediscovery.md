@@ -20,6 +20,8 @@ ms.custom: seo-marvel-mar2020
 ---
 # Add or remove members from a case
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 You can add or remove members to manage who can access the case. However, before a member can access an eDiscovery (Premium) case (and perform tasks in the case), you must add the user to the eDiscovery Manager role group on the **Permissions** page in the Microsoft Purview compliance portal. For more information, see [Assign eDiscovery permissions](./assign-ediscovery-permissions.md).
 
 1. On the **eDiscovery (Premium)** page, go to the case that you want to add a member to.

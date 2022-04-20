@@ -19,6 +19,8 @@ description:
 
 # Migrate legacy eDiscovery searches and holds to the compliance portal
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 The Microsoft Purview compliance portal provides an improved experience for eDiscovery usage, including: higher reliability, better performance, and many features tailored to eDiscovery workflows including cases to organize your content by matter, review sets to review content and analytics to help cull data for review such as near-duplicate grouping, email threading, themes analysis, and predictive coding.
 
 To help customers take advantage of the new and improved functionality, this article provides basic guidance on how to migrate In-Place eDiscovery searches and holds from the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a> to the compliance portal.
