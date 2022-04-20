@@ -1,13 +1,13 @@
 ---
 title: Set up email notifications for your security team
-description: Set up email notifications to tell people about alerts and vulnerabilities with Microsoft Defender for Business
+description: Set up email notifications to tell your security team about alerts and vulnerabilities in Defender for Business.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 04/12/2022
+ms.date: 04/20/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -17,9 +17,6 @@ ms.collection: M365-security-compliance
 ---
 
 # Set up email notifications
-
-> [!NOTE]
-> Microsoft Defender for Business is now included in [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
 You can set up email notifications for your security team. Then, as alerts are generated, or new vulnerabilities are discovered, people on your security team will be notified automatically. 
 
