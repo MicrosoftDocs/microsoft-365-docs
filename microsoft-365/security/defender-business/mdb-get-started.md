@@ -1,13 +1,13 @@
 ---
 title: Visit the Microsoft 365 Defender portal
-description: See how to get started using the Microsoft 365 Defender portal. Learn how to navigate the portal, and view your current security status and recommendations
+description: Your security center in Defender for Business is the Microsoft 365 Defender portal. Learn how to navigate the portal, and see your next steps.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: article
-ms.date: 04/12/2022
+ms.date: 04/20/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium

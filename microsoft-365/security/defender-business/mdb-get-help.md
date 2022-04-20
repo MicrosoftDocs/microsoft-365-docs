@@ -35,3 +35,4 @@ If you don't see the answer to your question, you can open a support ticket. See
 
 - [Microsoft Defender for Business - Frequently asked questions and answers](mdb-faq.yml)
 - [Microsoft Defender for Business troubleshooting](mdb-troubleshooting.yml) 
+- [Microsoft 365 Business Premium Overview](../../business-premium/index.md)
