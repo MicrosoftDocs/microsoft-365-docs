@@ -16,7 +16,7 @@ search.appverid:
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 ms.custom:
 - seo-marvel-apr2020
-description: "Use eDiscovery cases in the Microsoft 365 compliance center to manage your organization's legal investigation."
+description: "Use eDiscovery cases in the Microsoft Purview compliance portal to manage your organization's legal investigation."
 ---
 
 # Manage legal investigations in Microsoft 365
@@ -45,13 +45,13 @@ Like the previous section that listed scripts for content search scenarios, we'v
 
 - [Add mailboxes and OneDrive locations](use-a-script-to-add-users-to-a-hold-in-ediscovery.md) for a list of users to an eDiscovery hold.
   
-## Manage legal investigations with the Advanced eDiscovery solution in Microsoft 365
+## Manage legal investigations with the eDiscovery (Premium) solution in Microsoft 365
 
-The Advanced eDiscovery solution in Microsoft 365 builds on the existing eDiscovery and analytics capabilities in Office 365. This new solution, called *Advanced eDiscovery*, provides an end-to-end workflow to preserve, collect, review, analyze, and export content that's responsive to your organization's internal and external investigations. It also lets legal teams manage the entire legal hold notification workflow to communicate with custodians involved in a case.
+The Microsoft Purview eDiscovery (Premium) solution in Microsoft 365 builds on the existing eDiscovery and analytics capabilities in Office 365. This new solution, called *eDiscovery (Premium)*, provides an end-to-end workflow to preserve, collect, review, analyze, and export content that's responsive to your organization's internal and external investigations. It also lets legal teams manage the entire legal hold notification workflow to communicate with custodians involved in a case.
 
-Advanced eDiscovery requires an E5 subscription for your Microsoft 365 or Office 365 organization. For more information about licensing, see [Set up Advanced eDiscovery](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses).
+eDiscovery (Premium) requires an E5 subscription for your Microsoft 365 or Office 365 organization. For more information about licensing, see [Set up eDiscovery (Premium)](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses).
 
-Here's a quick overview of the built-in workflow in Advanced eDiscovery. For more information, see [Manage the Advanced eDiscovery workflow](create-and-manage-advanced-ediscoveryv2-case.md#manage-the-workflow).
+Here's a quick overview of the built-in workflow in eDiscovery (Premium). For more information, see [Manage the eDiscovery (Premium) workflow](create-and-manage-advanced-ediscoveryv2-case.md#manage-the-workflow).
 
 - [Create a case](create-and-manage-advanced-ediscoveryv2-case.md#create-a-case) to get started.
 
@@ -69,4 +69,4 @@ Here's a quick overview of the built-in workflow in Advanced eDiscovery. For mor
 
 - [Export case data](exporting-data-ediscover20.md) for review by outside counsel.
 
-- [Manage long-running jobs](managing-jobs-ediscovery20.md) in Advanced eDiscovery.
+- [Manage long-running jobs](managing-jobs-ediscovery20.md) in eDiscovery (Premium).

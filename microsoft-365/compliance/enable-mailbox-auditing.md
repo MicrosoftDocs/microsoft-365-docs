@@ -24,7 +24,9 @@ description: "Mailbox audit logging is turned on by default in Microsoft 365 (al
 
 # Manage mailbox auditing
 
-In January 2019, Microsoft turned on mailbox audit logging by default for all organizations. This configuration means that certain actions by mailbox owners, delegates, and admins are automatically logged. It also means the corresponding mailbox audit records will be available when you search for them in the mailbox audit log. Before mailbox auditing was turned on by default, you had to manually enable it for every user mailbox in your organization.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Starting in January 2019, Microsoft is turning on mailbox audit logging by default for all organizations. This means that certain actions performed by mailbox owners, delegates, and admins are automatically logged, and the corresponding mailbox audit records will be available when you search for them in the mailbox audit log. Before mailbox auditing was turned on by default, you had to manually enable it for every user mailbox in your organization.
 
 Here are some benefits of mailbox auditing on by default:
 
@@ -36,8 +38,7 @@ Here are some benefits of mailbox auditing on by default:
 > [!NOTE]
 >
 > - The important thing to remember about the release of mailbox auditing on by default is: you don't need to do anything to manage mailbox auditing. However, to learn more, customize mailbox auditing from the default settings, or turn it off altogether, this article can help you.
-> - By default, only mailbox audit events for users with licenses that include the [Advanced Audit](advanced-audit.md) feature are available in audit log searches in the Microsoft 365 compliance center or via the Office 365 Management Activity API. These licenses are described [here](auditing-solutions-overview.md#advanced-audit-1). For brevity, this article will collectively refer to licenses that include Advanced Audit as *E5/A5/G5 licenses*.
->   For more information about how licensing affects mailbox auditing events in the M365 compliance center, see the [More information](#more-information) section later in this article.
+> - By default, only mailbox audit events for E5 users are available in audit log searches in the Microsoft Purview compliance portal or via the Office 365 Management Activity API. For more information, see the [More information](#more-information) section in this article.
 
 ## Verify mailbox auditing on by default is turned on
 
@@ -77,7 +78,7 @@ Logon types classify the user that did the audited actions on the mailbox. The f
 - **Admin**:
   - The mailbox is searched with one of the following Microsoft eDiscovery tools:
     - Content Search in the Compliance center.
-    - eDiscovery or Advanced eDiscovery in the Compliance center.
+    - eDiscovery or eDiscovery (Premium) in the Compliance center.
     - In-Place eDiscovery in Exchange Online.
   - The mailbox is accessed by using the Microsoft Exchange Server MAPI Editor.
 
@@ -98,15 +99,15 @@ The following table describes the mailbox actions that are available in mailbox 
 |**FolderBind**|A mailbox folder was accessed. This action is also logged when the admin or delegate opens the mailbox. <br/><br/> **Note**: Audit records for folder bind actions performed by delegates are consolidated. One audit record is generated for individual folder access within a 24-hour period.|![Check mark.](../media/checkmark.png)|![Check mark.](../media/checkmark.png)||
 |**HardDelete**|A message was purged from the Recoverable Items folder.|![Check mark.](../media/checkmark.png)<sup>\*</sup>|![Check mark.](../media/checkmark.png)<sup>\*</sup>|![Check mark.](../media/checkmark.png)<sup>\*</sup>|
 |**MailboxLogin**|The user signed into their mailbox.|||![Check mark](../media/checkmark.png)|
-|**MailItemsAccessed**|**Note**: This value is available only for users with E5/A5/G5 licenses. For more information, see [Set up Advanced Audit in Microsoft 365](set-up-advanced-audit.md). <br/><br/> Mail data is accessed by mail protocols and clients.|![Check mark.](../media/checkmark.png)<sup>\*</sup>|![Check mark.](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|
+|**MailItemsAccessed**|**Note**: This value is available only for users with E5/A5/G5 licenses. For more information, see [Set up Microsoft Purview Audit (Premium)](set-up-advanced-audit.md). <br/><br/> Mail data is accessed by mail protocols and clients.|![Check mark.](../media/checkmark.png)<sup>\*</sup>|![Check mark.](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|
 |**MessageBind**|**Note**: This value is available only for users *without* E5/A5/G5 licenses. <br/><br/> A message was viewed in the preview pane or opened by an admin.|![Check mark](../media/checkmark.png)|||
 |**ModifyFolderPermissions**|Although this value is accepted as a mailbox action, it's already included in the **UpdateFolderPermissions** action and isn't audited separately. In other words, don't use this value.||||
 |**Move**|A message was moved to another folder.|![Check mark.](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|
 |**MoveToDeletedItems**|A message was deleted and moved to the Deleted Items folder.|![Check mark.](../media/checkmark.png)<sup>\*</sup>|![Check mark.](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|
 |**RecordDelete**|An item that's labeled as a record was soft-deleted (moved to the Recoverable Items folder). Items labeled as records can't be permanently deleted (purged from the Recoverable Items folder).|![Check mark.](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|
 |**RemoveFolderPermissions**|Although this value is accepted as a mailbox action, it's already included in the **UpdateFolderPermissions** action and isn't audited separately. In other words, don't use this value.||||
-|**SearchQueryInitiated**|**Note**: This value is available only for users with E5/A5/G5 licenses. For more information, see [Set up Advanced Audit in Microsoft 365](set-up-advanced-audit.md). <br/><br/> A person uses Outlook (Windows, Mac, iOS, Android, or Outlook on the web) or the Mail app for Windows 10 to search for items in a mailbox.|||![Check mark](../media/checkmark.png)|
-|**Send**|**Note**: This value is available only for users with E5/A5/G5 licenses. For more information, see [Set up Advanced Audit in Microsoft 365](set-up-advanced-audit.md). <br/><br/> The user sends an email message, replies to an email message, or forwards an email message.|![Check mark.](../media/checkmark.png)<sup>\*</sup>||![Check mark](../media/checkmark.png)<sup>\*</sup>|
+|**SearchQueryInitiated**|**Note**: This value is available only for users with E5/A5/G5 licenses. For more information, see [Set up Microsoft Purview Audit (Premium)](set-up-advanced-audit.md). <br/><br/> A person uses Outlook (Windows, Mac, iOS, Android, or Outlook on the web) or the Mail app for Windows 10 to search for items in a mailbox.|||![Check mark](../media/checkmark.png)|
+|**Send**|**Note**: This value is available only for users with E5/A5/G5 licenses. For more information, see [Set up Microsoft Purview Audit (Premium)](set-up-advanced-audit.md). <br/><br/> The user sends an email message, replies to an email message, or forwards an email message.|![Check mark.](../media/checkmark.png)<sup>\*</sup>||![Check mark](../media/checkmark.png)<sup>\*</sup>|
 |**SendAs**|A message was sent using the SendAs permission. This means another user sent the message as though it came from the mailbox owner.|![Check mark.](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>||
 |**SendOnBehalf**|A message was sent using the SendOnBehalf permission. This means another user sent the message on behalf of the mailbox owner. The message indicates to the recipient who the message was sent on behalf of and who actually sent the message.|![Check mark.](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>||
 |**SoftDelete**|A message was permanently deleted or deleted from the Deleted Items folder. Soft-deleted items are moved to the Recoverable Items folder.|![Check mark.](../media/checkmark.png)<sup>\*</sup>|![Check mark.](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|
@@ -316,11 +317,11 @@ The value **True** indicates that mailbox audit logging is bypassed for the user
 
 ## More information
 
-- Although mailbox audit logging on by default is enabled for all organizations, only users with [licenses that include the Advanced Audit feature](auditing-solutions-overview.md#advanced-audit-1) (collectively referred to as *E5/A5/G5 licenses*) will return mailbox audit log events in [audit log searches in the Microsoft 365 compliance center](search-the-audit-log-in-security-and-compliance.md) or via the [Office 365 Management Activity API](/office/office-365-management-api/office-365-management-activity-api-reference) **by default**.
+- Although mailbox audit logging on by default is enabled for all organizations, only users with E5 licenses will return mailbox audit log events in [audit log searches in the Microsoft Purview compliance portal](search-the-audit-log-in-security-and-compliance.md) or via the [Office 365 Management Activity API](/office/office-365-management-api/office-365-management-activity-api-reference) **by default**.
 
   To retrieve mailbox audit log entries for users without E5/A5/G5 licenses, you can use any of the following workarounds:
 
-  - Manually enable mailbox auditing on the affected user mailboxes by running the following command: `Set-Mailbox -Identity <MailboxIdentity> -AuditEnabled $true`. After you enable mailbox auditing on the mailbox, you can use audit log searches in the Microsoft 365 compliance center or via the Office 365 Management Activity API.
+  - Manually enable mailbox auditing on individual mailboxes (run the command, `Set-Mailbox -Identity <MailboxIdentity> -AuditEnabled $true`). After you do this, you can use audit log searches in the Microsoft Purview compliance portal or via the Office 365 Management Activity API.
 
     > [!NOTE]
     > If mailbox auditing already appears to be enabled on the mailbox, but your searches return no results, change the value of the *AuditEnabled* parameter to `$false` and then back to `$true`.

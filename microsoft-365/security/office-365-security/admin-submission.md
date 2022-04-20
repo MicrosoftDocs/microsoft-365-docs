@@ -1,6 +1,6 @@
 ---
 title: Manage submissions
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: dansimp
 author: dansimp
@@ -8,9 +8,9 @@ manager: dansimp
 audience: ITPro
 ms.topic: how-to
 ms.localizationpriority: medium
-search.appverid: 
+search.appverid:
   - MET150
-ms.collection: 
+ms.collection:
   - M365-security-compliance
   - m365initiative-defender-office365
 ms.custom: seo-marvel-apr2020
@@ -26,7 +26,6 @@ ms.prod: m365-security
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-
 
 In Microsoft 365 organizations with Exchange Online mailboxes, admins can use the Submissions portal in the Microsoft 365 Defender portal to submit email messages, URLs, and attachments to Microsoft for scanning.
 
@@ -48,7 +47,7 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 - To submit messages and files to Microsoft, you need to have one of following roles:
   - **Security Administrator** or **Security Reader** in the [Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
-  
+
     Note that one of these roles is required to [View user submissions to the custom mailbox](#view-user-submissions-to-microsoft) as described later in this article.
 
 - Admins can submit messages as old as 30 days if it is still available in the mailbox and not purged by the user or another admin.
@@ -57,7 +56,7 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
   - Maximum submissions in any 15 minutes period: 150 submissions
   - Same submissions in a 24 hour period: 3 submissions
   - Same submissions in a 15 minute period: 1 submission
-  
+
 - For more information about how users can submit messages and files to Microsoft, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ## Report suspicious content to Microsoft
@@ -270,7 +269,7 @@ If you've deployed the [Report Message add-in](enable-the-report-message-add-in.
      - **Phish simulation**
      - **Converted to admin submission**
      - **Tags**
-   
+
    - To export the entries, click **Export**. In the dialog that appears, save the .csv file.
 
 > [!NOTE]
@@ -280,7 +279,7 @@ If you've deployed the [Report Message add-in](enable-the-report-message-add-in.
 
 Once a user submits a suspicious email to the custom mailbox, the user and admin don't have an option to undo the submission. If the user would like to recover the email, it will be available for recovery in the Deleted Items or Junk Email folders.
 
-### Converting user reported messages from the custom mailbox into an admin submission 
+### Converting user reported messages from the custom mailbox into an admin submission
 
 If you've configured the custom mailbox to intercept user-reported messages without sending the messages to Microsoft, you can find and send specific messages to Microsoft for analysis.
 

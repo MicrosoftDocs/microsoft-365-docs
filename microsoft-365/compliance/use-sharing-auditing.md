@@ -95,7 +95,7 @@ The first step is to search the audit log for sharing events. For more informati
 
 2. Sign in using your work or school account.
 
-3. In the left pane of the Microsoft 365 compliance center, click **Audit**.
+3. In the left pane of the Microsoft Purview compliance portal, click **Audit**.
 
     The **Audit** page is displayed.
 
