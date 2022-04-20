@@ -1,10 +1,10 @@
 ### YamlMime:Landing
 
 title: Microsoft Defender for Business
-summary: Starting March 1, 2022, Microsoft Defender for Business is included in Microsoft 365 Business Premium. Defender for Business as a standalone subscription is currently in preview, and will roll out gradually to customers and IT Partners who sign up at https://aka.ms/mdb-preview.
+summary: Simple, comprehensive endpoint security to help you protect your business, and focus on what matters.
 metadata:
   title: Microsoft Defender for Business documentation
-  description: Get an overview and setup information for Microsoft Defender for Business
+  description: Defender for Business is a cybersecurity solution for small and medium-sized businesses. Protect devices with enterprise-grade security at an affordable price.
   ms.prod: m365-security
   ms.technology: mdb
   ms.topic: landing-page
