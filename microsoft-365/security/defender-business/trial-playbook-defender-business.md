@@ -15,7 +15,7 @@ ms.technology: mdb
 search.appverid: 
 - MOE150
 - MET150
-description: "Microsoft Defender for Business trial playbook."
+description: "Make the most of your Defender for Business trial with this playbook. Get an overview of how to set things up quickly and get started using your security capabilities."
 ---
 
 # Trial playbook: Microsoft Defender for Business
@@ -142,42 +142,49 @@ In the next 30 days, we recommend you try out the following features:
 
    [Use your Threat & Vulnerability Management dashboard](mdb-view-tvm-dashboard.md).
 
-2.	View and respond to detected threats. As threats are detected and alerts are triggered, incidents are created. Your organization's security team can view and manage incidents in the Microsoft 365 Defender portal.
-
-	Try these features:
+2.	[View and respond to detected threats](mdb-view-manage-incidents.md). As threats are detected and alerts are triggered, incidents are created. Your organization's security team can view and manage incidents in the Microsoft 365 Defender portal. Try these features:
    
-   - View and manage incidents 
-   - Respond to and mitigate threats 
-   - Review mediation actions in the Action Center 
-   - View and use reports 
+   - [View and manage incidents](mdb-view-manage-incidents.md) 
+   - [Respond to and mitigate threats](mdb-respond-mitigate-threats.md) 
+   - [Review mediation actions in the Action Center](mdb-review-remediation-actions.md) 
+   - [View and use reports](mdb-reports.md) 
 
-3.	Manage security policies
-In Defender for Business, security settings are configured through policies that are applied to devices. To help simplify your setup and configuration experience, Defender for Business includes preconfigured policies to help protect your company's devices as soon as they are onboarded. You can use the default policies, edit policies, or create your own policies. 
+3.	Manage security policies. In Defender for Business, security settings are configured through policies that are applied to devices. To help simplify your setup and configuration experience, Defender for Business includes preconfigured policies to help protect your company's devices as soon as they are onboarded. You can use the default policies, edit policies, or create your own policies. Try these features:
 
-Must try features: 
-•	View, edit, and create policies
-o	Default policies
-o	View existing policies
-o	Edit an existing policy
-o	Create a new policy
-•	Policy order
-•	Understand next-generation protection settings
-•	Firewall settings
-o	Default firewall settings in Defender for Business
-o	Firewall settings you can configure 
-•	Manage rules for firewall policies 
-o	Create a custom rule
-o	Edit a custom rule 
-o	Delete a custom rule 
+   - View, edit, and create policies
+      - [Learn about the default policies](mdb-view-edit-create-policies.md#default-policies-in-defender-for-business)
+      - [View your existing policies](mdb-view-edit-create-policies.md#view-your-existing-policies)
+      - [Edit an existing policy](mdb-view-edit-create-policies.md#edit-an-existing-policy)
+      - [Create a new policy](mdb-view-edit-create-policies.md#create-a-new-policy)
+   
+   - [Understand policy order](mdb-policy-order.md)
 
-4.	Manage devices
-In Defender for Business, you can manage devices as follows:
-•	View a list of onboarded devices to see their risk level, exposure level, and health state
-•	Take action on a device that has threat detections
-•	Onboard a device to Defender for Business
-•	Offboard a device from Defender for Business
+   - [Understand next-generation configuration settings](mdb-next-gen-configuration-settings.md)
 
-Must try feature: 
-•	Create device groups
+   - Understand firewall settings
+      - [Default firewall settings in Defender for Business](mdb-firewall.md#default-firewall-settings-in-defender-for-business)
+      - [Firewall settings you can configure in Defender for Business](mdb-firewall.md#firewall-settings-you-can-configure-in-defender-for-business)
+
+   - Manage custom rules for firewall policies
+      - [Create a custom rule for a firewall policy](mdb-custom-rules-firewall.md#create-a-custom-rule-for-a-firewall-policy)
+      - [Edit a custom rule for a firewall policy](mdb-custom-rules-firewall.md#edit-a-custom-rule-for-a-firewall-policy)
+      - [Delete a custom rule](mdb-custom-rules-firewall.md#delete-a-custom-rule) 
+
+4.	Manage devices. In Defender for Business, you can manage devices as follows:
+
+   - [View a list of onboarded devices](mdb-manage-devices.md#view-the-list-of-onboarded-devices) to see their risk level, exposure level, and health state
+   - [Take action on a device](mdb-manage-devices.md#take-action-on-a-device-that-has-threat-detections) that has threat detections
+   - [Onboard a device to Defender for Business](mdb-manage-devices.md#onboard-a-device)
+   - [Offboard a device from Defender for Business](mdb-manage-devices.md#offboard-a-device)
+
+   Try this feature: [Create a device group](mdb-create-edit-device-groups.md#create-a-new-device-group)
+
+## Additional resources
+
+- [Overview of Microsoft Defender for Business](mdb-overview.md)
+- [Tutorials and simulations in Microsoft Defender for Business](mdb-tutorials.md)
+- Video: [Enterprise-Grade Protection for Small & Medium Sized Businesses](https://youtu.be/umhUNzMqZto)
+- [Get Microsoft Defender for Business](get-defender-business.md)
+- [Web content filtering](../defender-endpoint/web-content-filtering.md)
 
 
