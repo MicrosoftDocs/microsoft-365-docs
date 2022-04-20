@@ -22,6 +22,8 @@ description: "You can create a hold that's associated with a eDiscovery (Standar
 
 # Create an eDiscovery hold
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 You can use a Microsoft Purview eDiscovery (Standard) case to create holds to preserve content that might be relevant to the case. You can place a hold on the Exchange mailboxes and OneDrive for Business accounts of people you're investigating in the case. You can also place a hold on the mailboxes and sites that are associated with Microsoft Teams, Office 365 Groups, and Yammer Groups. When you place content locations on hold, content is preserved until you remove the content location from the hold or until you delete the hold.
 
 After you create an eDiscovery hold, it may take up to 24 hours for the hold to take effect.

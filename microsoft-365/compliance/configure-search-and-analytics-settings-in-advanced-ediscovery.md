@@ -21,6 +21,8 @@ description: "Configure Microsoft Purview eDiscovery (Premium) settings that app
 
 # Configure search and analytics settings in eDiscovery (Premium)
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 You can configure settings for each Microsoft Purview eDiscovery (Premium) case to control the following functionality.
 
 - Near duplicates and email threading
