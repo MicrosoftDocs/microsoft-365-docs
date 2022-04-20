@@ -23,6 +23,8 @@ ms.custom: seo-marvel-apr2020
 
 # Create, report on, and delete multiple Content Searches
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
  Quickly creating and reporting discovery searches is often an important step in eDiscovery and investigations when you're trying to learn about the underlying data, and the richness and quality of your searches. To help you do this, Security & Compliance Center PowerShell offers a set of cmdlets to automate time-consuming Content Search tasks. These scripts provide a quick and easy way to create a number of searches, and then run reports of the estimated search results that can help you determine the quantity of data in question. You can also use the scripts to create different versions of searches to compare the results each one produces. These scripts can help you to quickly and efficiently identify and cull your data.
 
 ## Before you create a Content Search

@@ -26,6 +26,8 @@ description: "Learn about email and document properties that you can search by u
 
 # Keyword queries and search conditions for eDiscovery
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 This article describes the email and document properties that you can search for in email items and Microsoft Teams chat conversations in Exchange Online, and documents stored on SharePoint and OneDrive for Business sites using the eDiscovery search tools in the Microsoft Purview compliance portal. This includes Content search, Microsoft Purview eDiscovery (Standard), and Microsoft Purview eDiscovery (Premium) (eDiscovery searches in eDiscovery (Premium) are called *collections*). You can also use the **\*-ComplianceSearch** cmdlets in Security & Compliance Center PowerShell to search for these properties. The article also describes:
 
 - Using Boolean search operators, search conditions, and other search query techniques to refine your search results.

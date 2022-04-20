@@ -21,6 +21,8 @@ ms.custom: seo-marvel-mar2020
 
 # Close or delete an eDiscovery (Premium) case
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 When the legal case or investigation supported by a Microsoft Purview eDiscovery (Premium) case is completed, you can close or delete a case. You can also reopen a closed case.
 
 ## Close a case

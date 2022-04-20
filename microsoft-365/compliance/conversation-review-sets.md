@@ -21,6 +21,8 @@ ms.custom: seo-marvel-mar2020
 
 # Conversation threading in eDiscovery (Premium)
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Instant messaging is a convenient way to ask questions, share ideas, or quickly communicate across large audiences. As instant messaging platforms, like Microsoft Teams and Yammer groups, become core to enterprise collaboration, organizations must evaluate how their eDiscovery workflow addresses these new forms of communication and collaboration.
 
 The conversation reconstruction feature in Microsoft Purview eDiscovery (Premium) is designed to help you identify contextual content and produce distinct conversation views. This capability allows you to efficiently and rapidly review complete instant message conversations (also called *threaded conversations*) that are generated in platforms like Microsoft Teams.

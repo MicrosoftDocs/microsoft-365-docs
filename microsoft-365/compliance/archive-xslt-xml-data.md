@@ -16,6 +16,8 @@ description: "Admins can set up a connector to import and archive XSLT/XML data 
 
 # Set up a connector to archive XSLT/XML data
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Use a Veritas connector in the Microsoft Purview compliance portal to import and archive data from the Web page source to user mailboxes in your Microsoft 365 organization. Veritas provides you with an [XSLT/XML connector](https://globanet.com/xslt-xml) that allows the rapid development of files created by using XSLT (Extensible Style sheet Language Transformations) to transform XML files into other file formats (such as HTML or text) that can be imported to Microsoft 365. The connector converts the content of an item from the XSLT/XML source to an email message format and then imports the converted item to Microsoft 365 mailboxes.
 
 After XSLT/XML data is stored in user mailboxes, you can apply Microsoft Purview features such as Litigation Hold, eDiscovery, and retention policies and retention labels. Using an XSLT/XML connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.

@@ -26,6 +26,8 @@ ms.custom: seo-marvel-apr2020
 
 # Export a Content search report
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Instead of exporting the full set of search results from a Content search in the Microsoft Purview compliance portal (or from a search that's associated with a Microsoft Purview eDiscovery (Standard) case), you can export the same reports that are generated when you export the actual search results.
   
 When you export a report, the report files are downloaded to a folder on your local computer that has the same name as the Content Search, but that's appended with *_ReportsOnly*. For example, if the Content Search is named  *ContosoCase0815*, then the report is downloaded to a folder named *ContosoCase0815_ReportsOnly*. For a list of documents that are included in the report, see [What's included in the report](#whats-included-in-the-report).
