@@ -20,6 +20,14 @@
         href: uploadApplication.md
     - name: Build a Package
       href: buildpackage.md
+    - name: Upload Binaries & Dependencies
+      href: binaries.md
+    - name: Set Test Tasks
+      href: testtask.md
+    - name: Set Test Options
+      href: testoptions.md
+    - name: Review
+      href: review.md
     - name: Package guideline
       href: contentguideline.md
     - name: Application/Test rules
