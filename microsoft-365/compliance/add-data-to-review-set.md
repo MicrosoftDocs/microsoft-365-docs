@@ -32,7 +32,7 @@ When you add the results of a search to a review set (the review sets in a case 
 
 - All items (including the content and metadata) are reindexed so that all data in the review set is fully searchable during the review of the case data. Reindexing the data results in thorough and fast searches when you search the data in the review set during the case investigation.
 
-- A file encrypted with a [Microsoft encryption technology](encryption.md) and is attached to an email message that's returned in the search results is decrypted when the email message and attached file are added to the review set. You can review and query the decrypted file in the review set. You have to be assigned the RMS Decrypt role to add decrypted email attachments to a review set. For more information, see [Decryption in Microsoft 365 eDiscovery tools](ediscovery-decryption.md).
+- A file encrypted with a [Microsoft encryption technology](encryption.md) and is attached to an email message that's returned in the search results is decrypted when the email message and attached file are added to the review set. You can review and query the decrypted file in the review set. You have to be assigned the RMS Decrypt role to add decrypted email attachments to a review set. For more information, see [Decryption in Microsoft Purview eDiscovery tools](ediscovery-decryption.md).
 
 To add data to a review set, click a search on the **Searches** tab, and then click **Add results to review set** on the flyout page.
 
