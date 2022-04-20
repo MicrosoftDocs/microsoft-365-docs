@@ -9,7 +9,7 @@ ms.date: 04/20/2022
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection: 
 - Adm_O365
 - M365-subscription-management 

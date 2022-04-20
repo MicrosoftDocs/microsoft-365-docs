@@ -12,7 +12,7 @@ ms.collection:
 - M365-subscription-management 
 - M365-identity-device-management
 - Adm_TOC
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven

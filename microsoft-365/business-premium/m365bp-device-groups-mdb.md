@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.date: 03/16/2022
 ms.prod: m365-security
 ms.technology: mdb
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
