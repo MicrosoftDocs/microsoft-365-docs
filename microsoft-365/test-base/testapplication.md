@@ -1,6 +1,6 @@
 ---
-title: 'Test Binaries package on Test Base'
-description: How to test Binaries package on Test Base
+title: 'Test your Binary Files on Test Base'
+description: How to test your Binaries Files on Test Base
 search.appverid: MET150
 author: Tinacyt
 ms.author: tinachen
@@ -16,7 +16,7 @@ ms.reviewer: Tinacyt
 f1.keywords: NOCSH
 ---
 
-# Test Binaries package on Test Base
+# Test your Binary Files on Test Base
 
 > [!NOTE]
 > This guide will guide you to create a new Test Base package from scratch. If you already have a Test Base package (.zip) in hand, you can switch to use our legacy upload experience [Upload your Test Base package (Zip)](uploadApplication.md).

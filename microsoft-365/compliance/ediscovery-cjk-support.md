@@ -20,6 +20,8 @@ description: "Learn how Microsoft Purview eDiscovery (Premium) in Microsoft 365 
 
 # CJK language support for eDiscovery (Premium)
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Microsoft Purview eDiscovery (Premium) supports double-byte character set languages (these include Simplified Chinese, Traditional Chinese, Japanese, and Korean, which are collectively known as *CJK* languages) for the following advanced scenarios in a review set:
 
 - When you [query the data in a review set](review-set-search.md).
