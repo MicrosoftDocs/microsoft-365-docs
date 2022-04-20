@@ -23,6 +23,8 @@
         href: mdb-get-started.md
       - name: Use the setup wizard
         href: mdb-use-wizard.md
+      - name: Use our trial playbook
+        href: trial-playbook-defender-business.md
       - name: Try tutorials and simulations
         href: mdb-tutorials.md
     - name: Set up and configure Defender for Business
