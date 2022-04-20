@@ -6,12 +6,12 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-ms.collection: 
+ms.collection:
 - M365-collaboration
 - m365solution-securecollab
 - m365solution-scenario
 - m365initiative-externalcollab
-ms.custom: 
+ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 localization_priority: Normal
@@ -46,7 +46,7 @@ This article covers the fourth option, group collaboration with channel conversa
 
 When collaborating in a team with people outside your organization, there are two options for how those people access the resources that you share with them.
 
-**Guest sharing**
+### Guest sharing
 
 Guest sharing uses Azure AD B2B collaboration to allow sharing and collaboration with people outside your organization by adding a guest account in Azure AD for each person. Guest accounts can be used for the following:
 
@@ -55,7 +55,7 @@ Guest sharing uses Azure AD B2B collaboration to allow sharing and collaboration
 
 Guests in a team have similar capabilities to regular team members.
 
-**External participants in shared channels**
+### External participants in shared channels
 
 External participants access shared resources in your organization by using their own Azure AD or Microsoft 365 identity. This is enabled by Azure AD B2B direct connect through an organizational relationship configured by both organizations. Guest accounts are not used in this relationship.
 
@@ -76,14 +76,15 @@ The following table describes the experiences available depending on the type of
 |Use private channels|Y|Y|N|
 |Account in your directory|Y|Y|N|
 |Access reviews|Y|Y|Y|
-			
+
 ## Planning considerations
 
-Most organizations will use both guest sharing and shared channels with external participants. 
+Most organizations will use both guest sharing and shared channels with external participants.
 
 Guest sharing is enabled by default in Azure AD and in Microsoft 365 (Teams, Microsoft 365 Groups, and SharePoint). This allows users to invite guests to teams and sites and to share files with them without having to request assistance from IT.
 
 You must use guest sharing if:
+
 - You want to invite people from outside your organization to the team rather than individual channels
 - You want to share files or folders in a channel with people outside your organization who are not in the channel
 - You want to collaborate with people outside your organization who do not have a work or school account.
@@ -97,51 +98,50 @@ If you plan to use shared channels with other organizations, you can choose betw
 
 ## Compliance in shared channels
 
-Shared channels are integrated with Microsoft 365 compliance features.
+Shared channels are integrated with Microsoft Purview features.
 
-##### Communications compliance
+### Communications compliance
 
 Admins can set policies to monitor content for all users in the channel. All messages content in channels, including shared channels, is covered by [communication compliance policies](/microsoft-365/compliance/communication-compliance). Shared channels inherit the policy of the host organization.
 
-##### Conditional access
+### Conditional access
 
 The host organization's [conditional access policies](/azure/active-directory/conditional-access/overview) are applied to external participants, including B2B direct connect users. The external organization's policies are not used. The following types of conditional access policies are supported with shared channels:
 
 - Policies that are scoped to all guests, external participants, and SharePoint Online cloud apps.
-- Grant Access controls that require MFA, a compliant device, or a hybrid Azure AD joined device. 
+- Grant Access controls that require MFA, a compliant device, or a hybrid Azure AD joined device.
 
 IP-based policies are supported at the SharePoint file level. So an external participant could access shared channel from a restricted location, but be blocked when trying to open a file.
 
-##### Data loss prevention (DLP)
+### Data loss prevention (DLP)
 
-Admins can apply [DLP policies](/microsoft-365/compliance/dlp-policy-design) to a team where all channels, including shared channels, inherit the policy. Shared channels inherit the policy of the host organization.
+Admins can apply [Microsoft Purview DLP policies](/microsoft-365/compliance/dlp-policy-design) to a team where all channels, including shared channels, inherit the policy. Shared channels inherit the policy of the host organization.
 
-##### Retention policy
+### Retention policy
 
 Admins can apply a [retention policy](/microsoft-365/compliance/retention) on a team where all channels, including shared channels, inherit the retention policy. Shared channels inherit the policy of the parent team.
 
-##### Sensitivity labels
+### Sensitivity labels
 
 [Sensitivity labels](/microsoft-365/compliance/sensitivity-labels) available in the host organization are the only labels that can be applied to the documents in a shared channel site. A file that is encrypted by a sensitivity label cannot be opened by external participants. Automatic labeling is not used.
 
 Shared channels and their associated SharePoint sites inherit the label from the parent team.
 
-##### Information barriers
+### Information barriers
 
 Users who are not allowed to communicate per [information barrier](/microsoftteams/information-barriers-in-teams) policies can't be part of shared channel. Information barrier policies are only effective for users in the host organization. If users are external participants in another organization's shared channel, information barrier policies don't apply.
 
-##### eDiscovery
+### eDiscovery
 
 Admins can perform searches for all users in the channel. All channels, including the shared channel, are discoverable. All message data in the channel regardless of who added the data is discoverable by the compliance admin.
 
-##### Legal hold
+### Legal hold
 
 Admins can place channel-only members from the host organization who are not a part of the team on hold. They can also [place the entire team on hold](/MicrosoftTeams/legal-hold). Admins cannot place an external participant on hold.
 
-##### Audit logs
+### Audit logs
 
 All the actions performed for [existing audit events](/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log) are audited in shared channels.
-
 
 ## Related topics
 
