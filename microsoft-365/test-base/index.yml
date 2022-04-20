@@ -45,6 +45,14 @@ landingContent:
             url: testoverview.md
           - text: Build a Package
             url: buildpackage.md
+          - text: Upload your binaries
+            url: binaries.md
+          - text: Set your Test Tasks
+            url: testtask.md
+          - text: Choose your Test options
+            url: testoptions.md
+          - text: Review your selections
+            url: review.md
           - text: Test Package Guidelines
             url: contentguideline.md
           - text: Memory Regression Analysis
