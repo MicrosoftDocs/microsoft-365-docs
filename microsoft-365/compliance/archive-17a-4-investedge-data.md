@@ -16,6 +16,8 @@ description: "Learn how to set up and use a 17a-4 InvestEdge DataParser connecto
 
 # Set up a connector to archive InvestEdge data
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Use the [InvestEdge DataParser](https://www.17a-4.com/investedge-dataparser/) from 17a-4 LLC to import and archive data from InvestEdge to user mailboxes in your Microsoft 365 organization. The DataParser includes a InvestEdge connector that's configured to capture items from a third-party data source and import those items to Microsoft 365. The InvestEdge DataParser connector converts InvestEdge data to an email message format and then imports those items to user mailboxes in Microsoft 365.
 
 After InvestEdge data is stored in user mailboxes, you can apply Microsoft Purview features such as Litigation Hold, eDiscovery, retention policies and retention labels, and communication compliance. Using a InvestEdge connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
