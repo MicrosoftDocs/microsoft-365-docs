@@ -1,17 +1,17 @@
 ---
 title: Manage your allows in the Tenant Allow/Block List
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: dansimp
 author: dansimp
 manager: dansimp
-ms.date: 
+ms.date:
 audience: ITPro
 ms.topic: how-to
 ms.localizationpriority: medium
-search.appverid: 
-  - MET150manage-tenant-allows.md 
-ms.collection: 
+search.appverid:
+  - MET150manage-tenant-allows.md
+ms.collection:
   - M365-security-compliance
 description: Admins can learn how to configure allows in the Tenant Allow/Block List in the Security portal.
 ms.technology: mdo
@@ -32,25 +32,26 @@ Admins can't add allows directly to the Tenant Allow/Block List. Instead, you us
 > [!IMPORTANT]
 > Since Microsoft manages the allows for you, sender, URL, or file allows that are not needed or considered to be bad will be removed. This is to protect your environment and prevent a misconfiguration of allows. In cases where you may disagree, a support cases may be needed to help determine why a message is still considered as bad.
 
-## Add sender allows using the Submissions portal 
+## Add sender allows using the Submissions portal
 
-Allow senders (or domains) on the **Submissions** page in Microsoft 365 Defender. 
+Allow senders (or domains) on the **Submissions** page in Microsoft 365 Defender.
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Actions & submissions** \> **Submissions**. Or, to go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
 
 2. On the **Submissions** page, verify that the **Emails** tab is selected, and then click ![Submit to Microsoft for analysis icon.](../../media/m365-cc-sc-create-icon.png) **Submit to Microsoft for analysis**.
 
-3. Use the **Submit to Microsoft for review** flyout to submit a message by adding the network message ID or uploading the email file. 
+3. Use the **Submit to Microsoft for review** flyout to submit a message by adding the network message ID or uploading the email file.
 
-4. In the **Select a reason for submitting to Microsoft** section, select **Should not have been blocked (false positive)**. 
+4. In the **Select a reason for submitting to Microsoft** section, select **Should not have been blocked (false positive)**.
 
-5. Turn on **Allow messages like this** option. 
+5. Turn on **Allow messages like this** option.
 
 6. From the **Remove after** drop-down list, specify how long you want the allow option to work.
 
 7. When you're finished, click the **Submit** button.
 
 > ![Submit malware to Microsoft for analysis example.](../../media/admin-submission-allow-messages.png)
+
 ## Add URL allows using the Submissions portal
 
 Allow URLs on the **Submissions** page in Microsoft 365 Defender.
@@ -71,11 +72,12 @@ Allow URLs on the **Submissions** page in Microsoft 365 Defender.
 
 > [!div class="mx-imgBorder"]
 > ![Submit URL for analysis.](../../media/submit-url-for-analysis.png)
+
 ## Add File allows using the Submissions portal
 
 Allow Files  on the **Submissions** page in Microsoft 365 Defender.
 
-In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Actions & submissions** \> **Submissions**. Or, to go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Actions & submissions** \> **Submissions**. Or, to go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
 
 2. On the **Submissions** page, select the **Email attachments** tab, and then click ![Submit to Microsoft for analysis icon.](../../media/m365-cc-sc-create-icon.png) **Submit to Microsoft for analysis**.
 
@@ -92,11 +94,10 @@ In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to 
 > [!div class="mx-imgBorder"]
 > ![Submit email for analysis.](../../media/submit-email-for-analysis.png)
 
-
 ## Create spoofed sender allow entries using Microsoft 365 Defender
 
 > [!NOTE]
-> 
+>
 > - Only the _combination_ of the spoofed user _and_ the sending infrastructure as defined in the domain pair is specifically allowed or blocked from spoofing.
 > - When you configure an allow or block entry for a domain pair, messages from that domain pair no longer appear in the spoof intelligence insight.
 > - Entries for spoofed senders never expire.

@@ -640,7 +640,7 @@ No, after a cross tenant mailbox migration, eDiscovery against the migrated user
 
       | Name                                             |
       | ------------------------------------------------ |
-      | Advanced eDiscovery Storage (500 GB)             |
+      | eDiscovery (Premium) Storage (500 GB)             |
       | Customer Lockbox                                 |
       | Data Loss Prevention                             |
       | Exchange Enterprise CAL Services (EOP, DLP)      |
@@ -665,7 +665,7 @@ No, after a cross tenant mailbox migration, eDiscovery against the migrated user
       | Microsoft Bookings                               |
       | Microsoft Business Center                        |
       | Microsoft MyAnalytics (Full)                     |
-      | Office 365 Advanced eDiscovery                   |
+      | Office 365 eDiscovery (Premium)                   |
       | Microsoft Defender for Office 365 (Plan 1)       |
       | Microsoft Defender for Office 365 (Plan 2)       |
       | Office 365 Privileged Access Management          |
