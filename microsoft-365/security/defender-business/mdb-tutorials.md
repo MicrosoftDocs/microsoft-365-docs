@@ -7,11 +7,11 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: article
-ms.date: 04/12/2022
+ms.date: 04/20/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.reviewer: inbadian, shlomiakirav
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
@@ -19,11 +19,6 @@ ms.collection:
 ---
 
 # Tutorials and simulations in Microsoft Defender for Business
-
-> [!IMPORTANT]
-> Microsoft Defender for Business is now in preview, and will roll out gradually to customers and IT Partners who [sign-up here](https://aka.ms/mdb-preview) to request it. We will onboard an initial set of customers and partners in the coming weeks and will expand the preview leading up to general availability. Note that preview will launch with an [initial set of scenarios](#try-these-preview-scenarios), and we will be adding capabilities regularly.
-> 
-> Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. 
 
 If you've just finished setting up Microsoft Defender for Business, you might be wondering where to start to learn about how Defender for Business works. This article describes preview scenarios to try, and several tutorials and simulations that are available for Defender for Business. These resources are designed to help you see how Defender for Business can work for your company.
 

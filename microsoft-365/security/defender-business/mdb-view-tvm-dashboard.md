@@ -1,13 +1,13 @@
 ---
 title: View your Threat & Vulnerability Management dashboard in Microsoft Defender for Business
-description: Use your threat & Threat & Threat & Vulnerability Management dashboard to see important items to address.
+description: Use your threat & Threat & Threat & Vulnerability Management dashboard to see important items to address in Defender for Business.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: article
-ms.date: 04/12/2022
+ms.date: 04/20/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium

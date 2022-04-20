@@ -1,17 +1,17 @@
 ---
 title: Use setup wizard in Microsoft Defender for Business
-description: Defender for Business includes a wizard-like setup and configuration process. Use the wizard to save time and effort.
+description: Defender for Business makes setup easy with a wizard that runs the first time you use Defender for Business. See how the setup wizard works.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: article
-ms.date: 04/15/2022
+ms.date: 04/20/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.reviewer: inbadian, shlomiakirav
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB

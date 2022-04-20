@@ -1,13 +1,13 @@
 ---
 title: View or edit policies in Microsoft Defender for Business
-description: Learn how to view, edit, create, and delete next-generation protection policies in Microsoft Defender for Business
+description: Learn how to view, edit, create, and delete cybersecurity policies in Defender for Business. Protect your devices with security policies.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 04/12/2022
+ms.date: 04/20/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
