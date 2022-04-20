@@ -1,17 +1,17 @@
 ---
 title: Set up and configure Microsoft Defender for Business
-description: Get an overview of the setup and configuration process for Microsoft Defender for Business
+description: See how to set up your Defender for Business cybersecurity solution. Onboard devices, review your policies, and edit your settings as needed.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 04/12/2022
+ms.date: 04/20/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.reviewer: inbadian, shlomiakirav
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB

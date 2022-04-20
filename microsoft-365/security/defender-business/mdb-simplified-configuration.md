@@ -1,17 +1,17 @@
 ---
 title: The simplified configuration process in Microsoft Defender for Business
-description: Learn about the simplified configuration process in Microsoft Defender for Business
+description: Defender for Business saves your business time with a simplified configuration process. See how it works and protects your business from day one.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 04/12/2022
+ms.date: 04/20/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.reviewer: inbadian, shlomiakirav
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
