@@ -96,6 +96,8 @@ sections:
 
           - [Run Microsoft Defender for Endpoint Client Analyzer on Windows](/microsoft-365/security/defender-endpoint/troubleshoot-security-config-mgt#run-microsoft-defender-for-endpoint-client-analyzer-on-windows)
 
+          Alternately, you can try onboarding devices manually. See [Onboard devices](mdb-onboard-devices.md).
+
 
 
 additionalContent: |
