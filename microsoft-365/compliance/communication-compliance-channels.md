@@ -1,6 +1,7 @@
 ---
 title: "Detect channel signals with communication compliance"
 description: "Learn more about detecting channel signals with communication compliance."
+keywords: Microsoft 365, Microsoft Purview, compliance, communication compliance
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -21,6 +22,8 @@ search.appverid:
 ---
 
 # Detect channel signals with communication compliance
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 With communication compliance policies, you can choose to scan messages in one or more of the following communication platforms as a group or as standalone sources. Original messages captured across these platforms are retained in the original platform location in accordance with your organization's [retention and hold policies](/microsoft-365/compliance/information-governance). Copies of messages used by communication compliance policies for analysis and investigation are retained for as long as policy is in place, even if users leave your organization and their mailboxes are deleted. When a communication policy is deleted, copies of messages associated with the policy are also deleted.
 

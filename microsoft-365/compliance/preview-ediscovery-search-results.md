@@ -19,16 +19,18 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: "Preview a sample of the results returned by a Content search or a Core eDiscovery search in the Microsoft 365 compliance center."
+description: "Preview a sample of the results returned by a Content search or a eDiscovery (Standard) search in the Microsoft Purview compliance portal."
 ---
 
 # Preview eDiscovery search results
 
-After you run a Content search or a search associated with a Core eDiscovery case, you can preview a sample of the results returned by the search. Previewing items returned by the search query can help you determine if the search is returning the results you hope for or if you need to change the search query and rerun the search.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+After you run a Content search or a search associated with a Microsoft Purview eDiscovery (Standard) case, you can preview a sample of the results returned by the search. Previewing items returned by the search query can help you determine if the search is returning the results you hope for or if you need to change the search query and rerun the search.
 
 To preview a sample of results returned by a search:
 
-1. In the Microsoft 365 compliance center, go to the Content search page or a Core eDiscovery case.
+1. In the Microsoft Purview compliance portal, go to the Content search page or a eDiscovery (Standard) case.
 
 2. Select search to display the flyout page.
 

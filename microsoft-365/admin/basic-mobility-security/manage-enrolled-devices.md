@@ -25,7 +25,7 @@ description: "Basic Mobility and Security can help you secure and manage your or
 
 The built-in mobile device management for Microsoft 365 helps you secure and manage your users' mobile devices like iPhones, iPads, Androids, and Windows phones. The first step is to sign in to Microsoft 365 and set up Basic Mobility and Security. For more info, see [Set up Basic Mobility and Security](set-up.md).
 
-After you've set it up, the people in your organization must enroll their devices in the service. For more info, see [Enroll your mobile device using Basic Mobility and Security](enroll-your-mobile-device.md). Then you can use Basic Mobility and Security to help manage devices in your organization. For example, you can use device security policies to help limit email access or other services, view devices reports, and remotely wipe a device. You'll typically go to the Security & Compliance Center to do these tasks. For more info, see [Microsoft 365 compliance center](../../compliance/microsoft-365-compliance-center.md).
+After you've set it up, the people in your organization must enroll their devices in the service. For more info, see [Enroll your mobile device using Basic Mobility and Security](enroll-your-mobile-device.md). Then you can use Basic Mobility and Security to help manage devices in your organization. For example, you can use device security policies to help limit email access or other services, view devices reports, and remotely wipe a device. You'll typically go to the Security & Compliance Center to do these tasks. For more info, see [Microsoft Purview compliance portal](../../compliance/microsoft-365-compliance-center.md).
 
 ## Device management tasks
 

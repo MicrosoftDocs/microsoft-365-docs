@@ -44,7 +44,7 @@ This series of articles walks through a recommended process for managing devices
 
 ## Implementing the layers of protection on and for devices
 
-Protecting the data and apps on devices and the devices themselves is a multi-layer process. There are some protections you can gain on unmanaged devices. After enrolling devices to Intune, you can implement more sophisticated controls. When threat protection is deployed across your endpoints, you gain even more insights and the ability to automatically remediate some attacks. Finally, if your organization has put the work into identifying sensitive data, applying classification and labels, and configuring data loss prevention policies, you can obtain even more granular protection for data on your endpoints.
+Protecting the data and apps on devices and the devices themselves is a multi-layer process. There are some protections you can gain on unmanaged devices. After enrolling devices into management, you can implement more sophisticated controls. When threat protection is deployed across your endpoints, you gain even more insights and the ability to automatically remediate some attacks. Finally, if your organization has put the work into identifying sensitive data, applying classification and labels, and configuring Microsoft Purview data loss prevention policies, you can obtain even more granular protection for data on your endpoints.
 
 The following diagram illustrates building blocks to achieve a Zero Trust security posture for Microsoft 365 and other SaaS apps that you introduce to this environment. The elements related to devices are numbered 1 through 7. These are the layers of protection device admins will coordinate with other administrators to accomplish.
 
@@ -84,7 +84,7 @@ In this illustration:
 If you follow this guidance, you will enroll devices into management using Intune and you will onboard devices for the following Microsoft 365 capabilities:
 
 - Microsoft Defender for Endpoint
-- Microsoft 365 Compliance (for endpoint data loss prevention (DLP)) 
+- Microsoft Purview (for endpoint data loss prevention (DLP)) 
 
 The following illustration details how this works using Intune.
 
@@ -93,8 +93,19 @@ The following illustration details how this works using Intune.
 In the illustration:
 
 1. Enroll devices into management with Intune.
-2. Use Intune to onboard devices to Microsoft Defender for Endpoint.
-3. Devices that are onboarded to Defender for Endpoint are also onboarded for Microsoft 365 compliance features, including endpoint DLP.
+2. Use Intune to onboard devices to Defender for Endpoint.
+3. Devices that are onboarded to Defender for Endpoint are also onboarded for Microsoft Purview features, including Endpoint DLP.
+ 
+Note that only Intune is managing devices. Onboarding refers to the ability for a device to share information with a specific service. The following table summarizes the differences between enrolling devices into management and onboarding devices for a specific service.
+
+
+|         |Enroll     |Onboard  |
+|---------|---------|---------|
+|Description     |  Enrollment applies to managing devices. Devices are enrolled for management with Intune or Configuration Manager.        | Onboarding configures a device to work with a specific set of capabilities in Microsoft 365. Currently, onboarding applies to Microsoft Defender for Endpoint and Microsoft compliance capabilities. <br><br>On Windows devices, onboarding involves toggling a setting in Windows Defender that allows Defender to connect to the online service and accept policies that apply to the device.        |
+|Scope     | These device management tools manage the entire device, including configuring the device to meet specific objectives, like security.        |Onboarding only affects the services that apply.     |
+|Recommended method     | Azure Active Directory join automatically enrolls devices into Intune.        | Intune is the preferred method for onboarding devices to Windows Defender for Endpoint, and consequently Microsoft Purview capabilities.<br><br>Note that devices that are onboarded to Microsoft Purview capabilities using other methods are not automatically enrolled for Defender for Endpoint.        |
+|Other methods     |   Other methods of enrollment depend on the platform of the device and whether it is BYOD or managed by your organization.      | Other methods for onboarding devices include, in recommended order:<br><li>Configuration Manager<li>Other mobile device management tool (if the device is managed by one)<li>Local script<li>VDI configuration package for onboarding non-persistent virtual desktop infrastructure (VDI) devices<li>Group Policy|
+| | |     |
 
 Note that only Intune is managing devices. Onboarding refers to the ability for a device to share information with a specific service capability. The following table summarizes the differences between enrolling devices into management and onboarding devices for a specific capability.
 
@@ -102,7 +113,7 @@ Note that only Intune is managing devices. Onboarding refers to the ability for 
 |---|---|---|
 |Description|Enrollment applies to managing devices. Devices are enrolled for management with Intune or Configuration Manager.|Onboarding configures a device to work with a specific set of capabilities in Microsoft 365. Currently, onboarding applies to Microsoft Defender for Endpoint and Microsoft compliance capabilities. <br/><br/> On Windows devices, onboarding involves toggling a setting in Windows Defender that allows Defender to connect to the online service and accept policies that apply to the device.|
 |Scope|These device management tools manage the entire device, including configuring the device to meet specific objectives, like security.|Onboarding only affects the capabilities that apply.|
-|Recommended method|Azure Active Directory join automatically enrolls devices into Intune.|Intune is the preferred method for onboarding devices to Windows Defender for Endpoint, and consequently Microsoft 365 compliance capabilities. <br/><br/> Note that devices that are onboarded to Microsoft 365 compliance capabilities using other methods are not automatically enrolled for Defender for Endpoint.|
+|Recommended method|Azure Active Directory join automatically enrolls devices into Intune.|Intune is the preferred method for onboarding devices to Windows Defender for Endpoint, and consequently Microsoft Purview capabilities. <br/><br/> Note that devices that are onboarded to Microsoft Purview capabilities using other methods are not automatically enrolled for Defender for Endpoint.|
 |Other methods|Other methods of enrollment depend on the platform of the device and whether it is BYOD or managed by your organization.|Other methods for onboarding devices include, in recommended order: <ul><li>Configuration Manager</li><li>Other mobile device management tool (if the device is managed by one)</li><li>Local script</li><li>VDI configuration package for onboarding non-persistent virtual desktop infrastructure (VDI) devices</li><li>Group Policy</li></ul>|
 
 ## Learning for administrators
