@@ -1,23 +1,23 @@
 ---
 title: View Defender for Office 365 reports
-f1.keywords: 
+f1.keywords:
   - CSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 
+ms.date:
 audience: ITPro
 ms.topic: conceptual
 ms.localizationpriority: medium
-search.appverid: 
+search.appverid:
   - MET150
   - MOE150
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
-ms.collection: 
+ms.collection:
   - M365-security-compliance
   - m365initiative-defender-office365
 description: Admins can learn how to find and use the Defender for Office 365 reports that are available in the Microsoft 365 Defender portal.
-ms.custom: 
+ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
@@ -39,7 +39,7 @@ Microsoft Defender for Office 365 organizations (for example, Microsoft 365 E5 s
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. To go directly to the **Email & collaboration reports** page, use <https://security.microsoft.com/emailandcollabreport>.
 
-1. Choose the report you want to view, and then select **View details**.  
+1. Choose the report you want to view, and then select **View details**.
 
 ### Download reports
 
@@ -72,7 +72,6 @@ Client side and network latency are not included.
 To view the report, open the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. To go directly to the **Email & collaboration reports** page, use <https://security.microsoft.com/emailandcollabreport>.
 
 On the **Email & collaboration reports** page, find **Mail latency report** and then click **View details**. To go directly to the report, use <https://security.microsoft.com/mailLatencyReport>.
-
 
 :::image type="content" source="../../media/mail-latency-report-widget.png" alt-text="The Mail latency report widget on the Email & collaboration reports page" lightbox="../../media/mail-latency-report-widget.png":::
 

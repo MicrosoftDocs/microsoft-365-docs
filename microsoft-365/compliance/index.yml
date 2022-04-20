@@ -65,8 +65,8 @@ landingContent:
             url: ./get-started-core-ediscovery.md
           - text: Content search
             url: search-for-content.md
-          - text: Auditing
-            url: search-the-audit-log-in-security-and-compliance.md   
+          - text: Microsoft Purview Audit solutions
+            url: auditing-solutions-overview.md   
 
     # Card
   - title: Get started with regulatory compliance

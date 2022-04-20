@@ -20,6 +20,8 @@ description: "You can add custodian communications templates (such as a template
 
 # Manage custodian communications templates in eDiscovery (Premium)
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 When you or other users create a hold notification or other types of custodian communications, you had to create the communication document from scratch by using the communications editor on the **Communications** tab in an eDiscovery (Premium) case. Now, we've released a new feature that lets you create communications templates that can be used to create communications in any case in your organization. After communication templates are created, they're available to be used in a case. This means that paralegals or other users who create custodian communications don't have to start from scratch to build a notification. Instead, they can select a template to build the notification that is sent to a custodian.
 
 This article explains how to create organization-wide communications templates and select them when creating a new custodian notification for a specific eDiscovery (Premium) case.

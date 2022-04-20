@@ -22,6 +22,8 @@ ms.custom: seo-marvel-mar2020
 
 # Manage review sets in eDiscovery (Premium)
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Review sets are a static set of documents where you can analyze, query, view, tag, and export data in a case. For more information about performing these tasks, see:
 
 - [Analyze data in a review set](analyzing-data-in-review-set.md)

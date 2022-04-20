@@ -185,7 +185,7 @@ GDPR assessment consists of these sections:
 
 This step involves identification of particular sensitive information types that are subject to specific regulatory controls, as well as the occurrence of them in your Microsoft 365 environment.
 
-Finding content in your environment containing personal can be a formidable task, formerly involving a combination of using Compliance Search, eDiscovery, Advanced eDiscovery, DLP, and auditing.
+Finding content in your environment containing personal can be a formidable task, formerly involving a combination of using Compliance Search, eDiscovery, eDiscovery (Premium), DLP, and auditing.
 
 With the new **Data Classification** solution in the Microsoft Purview compliance portal, this has become much easier with the [Content Explorer](../compliance/data-classification-content-explorer.md) capability, which works with either built-in or custom sensitive information types, including those related to personal data.
 
