@@ -1,13 +1,13 @@
 ---
 title: Overview of Microsoft Defender for Business
-description: Learn about Microsoft Defender for Business, including setup, getting started, and how to use the services
+description: Get an overview of Microsoft Defender for Business, a cybersecurity solution to protect devices.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 04/12/2022
+ms.date: 04/20/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
