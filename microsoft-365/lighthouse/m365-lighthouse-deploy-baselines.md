@@ -58,7 +58,7 @@ Make sure you and your customer tenants meet the requirements listed in [Require
     | For your users | Links to resources the tenant's users may find helpful.                             |
     | Next steps     | Links and guidance around any applicable next steps.                                |
 
-    Deployment steps are comprised of one or more processes that need to be completed to fulfill the requirements of the deployment step. The Deployment Step page includes the process table that lists each process included in the deployment step and provides the following information:
+    Deployment steps are one or more processes required to complete deployment. The Deployment Step page includes a table that lists each process in the deployment step and provides the following information:
 
     | Column            | Description |
     |-------------------|-------------------------------------------------------------|
