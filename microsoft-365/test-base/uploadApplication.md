@@ -22,7 +22,7 @@ On the Test Base portal page, navigate to the **New package** option on the left
 
 :::image type="content" alt-text="Upload a new package." source="Media/testapplication01.png" lightbox="Media/testapplication01.png":::
 
-:::image type="content" alt-text="Upload a new package." source="Media/testapplication21.png" lightbox="Media/testapplication21.png":::
+:::image type="content" alt-text="Apply the operation." source="Media/testapplication21.png" lightbox="Media/testapplication21.png":::
 
 Once there, follow the steps below to upload a new package.
 
