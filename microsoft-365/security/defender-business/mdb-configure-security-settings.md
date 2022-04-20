@@ -1,13 +1,13 @@
 ---
 title: View and edit your security settings in Microsoft Defender for Business
-description: Configure your security policies in Microsoft Defender for Business
+description: View and edit security policies to protect devices with Defender for Business
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 04/18/2022
+ms.date: 04/20/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -20,11 +20,6 @@ ms.collection:
 ---
 
 # View and edit your security policies and settings in Microsoft Defender for Business
-
-> [!NOTE]
-> Microsoft Defender for Business is now included in [Microsoft 365 Business Premium](../../business-premium/index.md). 
-
-## Overview
 
 After you've onboarded your company's devices to Microsoft Defender for Business, your next step is to review your security policies. If necessary, you can edit your security policies and settings. 
 

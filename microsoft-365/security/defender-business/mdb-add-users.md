@@ -1,13 +1,13 @@
 ---
 title: Add users and assign licenses in Microsoft Defender for Business
-description: Learn how to add users and assign licenses
+description: Add users and assign Defender for Business licenses to protect their devices
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: article
-ms.date: 04/14/2022
+ms.date: 04/20/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
