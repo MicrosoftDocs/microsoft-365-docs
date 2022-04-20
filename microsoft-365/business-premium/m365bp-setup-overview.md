@@ -1,11 +1,11 @@
 ---
-title: "Set up Microsoft 365 Business Premium"
+title: "Welcome to Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
 ms.author: v-kcirillo
 author: cirilk
 manager: scotv
-ms.date: 03/05/2022
+ms.date: 04/20/2022
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
