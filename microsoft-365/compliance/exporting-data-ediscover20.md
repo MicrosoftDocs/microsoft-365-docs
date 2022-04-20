@@ -21,6 +21,8 @@ ms.custom: seo-marvel-mar2020
 
 # Export case data in eDiscovery (Premium)
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 There are three ways to export data from a review set:
 
 **Download:** Download (by using a browser) a small set of native files. This is the quickest way to export a small set of data. This method preserves the native file names. For more information, see [Download documents from a review set](download-documents-from-review-set.md).
