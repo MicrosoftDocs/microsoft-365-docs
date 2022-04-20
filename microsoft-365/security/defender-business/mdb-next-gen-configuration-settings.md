@@ -1,13 +1,13 @@
 ---
 title: Understand next-generation protection configuration settings in Microsoft Defender for Business
-description: Understand configuration settings for next-generation protection in Microsoft Defender for Business
+description: Understand antivirus and next-generation protection settings in Defender for Business, endpoint security for small and medium sized businesses.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 04/12/2022
+ms.date: 04/20/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
