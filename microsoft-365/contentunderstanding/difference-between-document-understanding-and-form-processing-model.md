@@ -74,8 +74,8 @@ Use the following table to understand when to use forms processing and when to u
 | Classification type| Settable classifier is used to give clues to the system on what data to extract.| Trainable classifier with optional extractors using machine teaching to assign document location on what data to extract.|
 | Locations | Trained for a single document library.| Can be applied to multiple libraries.|
 | Supported file types| Train on PDF, JPG, PNG format, total 50 MB and 500 pages.| Train on 5-10 PDF, Office, or email files, including negative examples.<br>Office files are truncated at 64k characters. OCR-scanned files are limited to 20 pages.|
-| Integrate with managed metadata | No | Yes, by training entity extractor referencing a configured managed metadata field.|
-| Compliance feature integration when Microsoft Information Protection is enabled | Set published Retention labels.<br>Set Sensitivity labels is coming. | Set published Retention labels.<br>Set published Sensitivity labels. |
+| Integrate with Managed Metadata | No | Yes, by training entity extractor referencing a configured managed metadata field.|
+| Compliance feature integration with Microsoft Purview Information Protection | Set published retention labels.<br>Set sensitivity labels is coming. | Set published retention labels.<br>Set published sensitivity labels. |
 | Supported regions| Form processing relies on Power Platform. For information about global availability for Power Platform and AI Builder, see [Power Platform availability](https://dynamics.microsoft.com/geographic-availability/). | Available in all regions.|
 | Transactional cost | Uses AI Builder credits.<br>Credits can be purchased in batches of 1M.<br>1M credits are included when 300+ SharePoint Syntex licenses are purchased.<br>1M credits will allow processing of 2,000 file pages.<br>| N/A |
 | Capacity | Uses the default Power Platform environment (custom environments with Dataverse database supported). | Does not have capacity restrictions.|

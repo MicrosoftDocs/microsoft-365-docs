@@ -6859,7 +6859,27 @@
       "source_path": "microsoft-365/admin/devices/create-and-edit-autopilot-profiles.md",
       "redirect_url": "/microsoft-365/business-premium/create-and-edit-autopilot-profiles",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/manage-information-governance.md",
+      "redirect_url": "/microsoft-365/compliance/manage-data-governance",
+      "redirect_document_id": false
     }, 
+    {
+      "source_path": "microsoft-365/compliance/information-governance.md",
+      "redirect_url": "/microsoft-365/compliance/data-lifecycle-management",
+      "redirect_document_id": false
+    },    
+    {
+      "source_path": "microsoft-365/compliance/get-started-with-information-governance.md",
+      "redirect_url": "/microsoft-365/compliance/get-started-with-data-lifecycle-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/create-retention-labels-information-governance.md",
+      "redirect_url": "/microsoft-365/compliance/create-retention-labels-data-lifecycle-management",
+      "redirect_document_id": false
+    },
     {
       "source_path": "microsoft-365/security/defender/microsoft-secure-score-whats-coming.md",
       "redirect_url": "/microsoft-365/security/defender/whats-new",

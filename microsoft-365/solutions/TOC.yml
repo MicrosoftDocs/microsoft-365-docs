@@ -312,13 +312,13 @@
 
     - name: Compliance
       items:
-      - name: Insider risk solutions in Microsoft 365
+      - name: Insider risk solutions in Microsoft Purview
         href: ../compliance/insider-risk-solution-overview.md
       - name: Auditing solutions
         href: ../compliance/auditing-solutions-overview.md
       - name: eDiscovery solutions in Microsoft 365
         href: ../compliance/ediscovery.md
-      - name: Microsoft 365 Advanced eDiscovery
+      - name: Microsoft Purview eDiscovery (Premium)
         href: ../compliance/overview-ediscovery-20.md
       - name: Regulatory compliance action plans
         items: 

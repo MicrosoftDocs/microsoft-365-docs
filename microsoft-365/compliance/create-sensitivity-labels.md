@@ -17,14 +17,16 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
 - MOE150
 - MET150
-description: "A requirement for all Microsoft Information Protection solutions: Create, configure, and publish sensitivity labels to classify and protect your organization's data."
+description: "A requirement for all Microsoft Purview Information Protection solutions: Create, configure, and publish sensitivity labels to classify and protect your organization's data."
 ---
 
 # Create and configure sensitivity labels and their policies
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-All Microsoft Information Protection solutions (sometimes abbreviated to MIP) are implemented by using [sensitivity labels](sensitivity-labels.md). To create and publish these labels, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>.
+All Microsoft Purview Information Protection solutions are implemented by using [sensitivity labels](sensitivity-labels.md). To create and publish these labels, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>.
 
 First, create and configure the sensitivity labels that you want to make available for apps and other services. For example, the labels you want users to see and apply from Office apps.
 
@@ -36,14 +38,12 @@ The global admin for your organization has full permissions to create and manage
 
 ## Create and configure sensitivity labels
 
-1. From the [Microsoft 365 compliance center](https://compliance.microsoft.com/), select **Solutions** > **Information protection**
+1. From the [Microsoft Purview porta](https://compliance.microsoft.com/), select **Solutions** > **Information protection**
     
     If you don't immediately see this option, first select **Show all**.
 
-2. On the **Labels** page, select **+ Create a label** to start the New sensitivity label configuration. 
-
-    For example, from the Microsoft 365 compliance center:
-
+2. On the **Labels** page, select **+ Create a label** to start the New sensitivity label configuration: 
+    
     ![Create a sensitivity label.](../media/create-sensitivity-label-full.png)
 
     > [!NOTE]
@@ -57,7 +57,7 @@ The global admin for your organization has full permissions to create and manage
 
     - If **Groups & sites** is selected, you can configure settings that apply to Microsoft 365 groups, and sites for Teams and SharePoint. If this option isn't selected, you see the first page of these settings but you can't configure them and the labels won't be available for users to select for groups and site.
 
-    For information about the **Schematized data assets** scope, see [Automatically label your content in Azure Purview](/azure/purview/create-sensitivity-label).
+    For information about the **Schematized data assets** scope, see [Automatically label your content in Microsoft Purview Data Map](/azure/purview/create-sensitivity-label).
 
 4. Follow the configuration prompts for the label settings.
 
@@ -123,16 +123,14 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 ## Publish sensitivity labels by creating a label policy
 
-1. From the [Microsoft 365 compliance center](https://compliance.microsoft.com/), select **Solutions** > **Information protection**
+1. From the [Microsoft Purview porta](https://compliance.microsoft.com/), select **Solutions** > **Information protection**
     
     If you don't immediately see this option, first select **Show all**.
 
 2. Select the **Label policies** tab, and then **Publish label** to start the **Create policy** configuration:
-
-    For example, from the Microsoft 365 compliance center:
-
+    
     ![Publish labels.](../media/publish-sensitivity-labels-full.png)
-
+    
     > [!NOTE]
     > By default, tenants don't have any label policies and you must create them. 
 
@@ -149,7 +147,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
     For more information about these settings, see [What label policies can do](sensitivity-labels.md#what-label-policies-can-do) from the overview information and use the help in the UI for individual settings.
 
-    For labels configured for **Azure Purview assets (preview)**: These labels don't have any associated policy settings.
+    For labels configured for **Microsoft Purview Data Map assets (preview)**: These labels don't have any associated policy settings.
 
 6. Repeat these steps if you need different policy settings for different users or scopes. For example, you want additional labels for a group of users, or a different default label for a subset of users. Or, if you have configured labels to have different scopes.
 
