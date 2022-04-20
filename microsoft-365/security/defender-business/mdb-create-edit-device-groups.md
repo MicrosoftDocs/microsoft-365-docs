@@ -1,13 +1,13 @@
 ---
 title: Device groups in Microsoft Defender for Business
-description: Learn about device groups in Microsoft Defender for Business
+description: Policies are applied to devices through device groups in Defender for Business.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: how-to
-ms.date: 04/12/2022
+ms.date: 04/20/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -20,9 +20,6 @@ ms.collection:
 ---
 
 # Device groups in Microsoft Defender for Business
-
-> [!NOTE]
-> Microsoft Defender for Business is now included in [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
 In Microsoft Defender for Business, policies are applied to devices through certain collections that are called device groups. 
 
