@@ -1,5 +1,5 @@
 ---
-title: Themes in Advanced eDiscovery
+title: Themes in eDiscovery (Premium)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -20,6 +20,8 @@ ms.custom: seo-marvel-mar2020
 ---
 
 # Themes in eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 How does a person write a document? They generally start with one or more ideas they want to convey in the document, and compose using words that align with the ideas. The more prevalent an idea is, the more frequent the words that are related to that idea tend to be. This informs how people consume documents as well. The important thing to understand from reading a document is the ideas that the document is trying to convey, which ideas appear where, and what the relationships between the ideas are.
 

@@ -279,8 +279,8 @@
 | 3/21/2022 | [Get started with Data loss prevention for Power BI](/microsoft-365/compliance/dlp-powerbi-get-started?view=o365-21vianet) | added |
 | 3/21/2022 | [Create and configure retention policies to automatically retain or delete content](/microsoft-365/compliance/create-retention-policies?view=o365-21vianet) | modified |
 | 3/21/2022 | [Data loss prevention and Microsoft Teams](/microsoft-365/compliance/dlp-microsoft-teams?view=o365-21vianet) | modified |
-| 3/21/2022 | [Advanced eDiscovery limits](/microsoft-365/compliance/limits-ediscovery20?view=o365-21vianet) | modified |
-| 3/21/2022 | [Limits for Content search and Core eDiscovery in the compliance center](/microsoft-365/compliance/limits-for-content-search?view=o365-21vianet) | modified |
+| 3/21/2022 | [eDiscovery (Premium) limits](/microsoft-365/compliance/limits-ediscovery20?view=o365-21vianet) | modified |
+| 3/21/2022 | [Limits for Content search and eDiscovery (Standard) in the compliance center](/microsoft-365/compliance/limits-for-content-search?view=o365-21vianet) | modified |
 | 3/21/2022 | [Learn about retention for Teams](/microsoft-365/compliance/retention-policies-teams?view=o365-21vianet) | modified |
 | 3/21/2022 | [Configure retention settings to automatically retain or delete content](/microsoft-365/compliance/retention-settings?view=o365-21vianet) | modified |
 | 3/21/2022 | [Learn about retention policies & labels to automatically retain or delete content](/microsoft-365/compliance/retention?view=o365-21vianet) | modified |
@@ -928,7 +928,7 @@
 | 3/17/2022 | [Threat Explorer and Real-time detections](/microsoft-365/security/office-365-security/threat-explorer?view=o365-21vianet) | modified |
 | 3/17/2022 | [Microsoft Defender for Office 365 trial playbook](/microsoft-365/security/office-365-security/trial-playbook-defender-for-office-365?view=o365-21vianet) | modified |
 | 3/18/2022 | [Microsoft 365 admin center activity reports](/microsoft-365/admin/activity-reports/activity-reports?view=o365-21vianet) | modified |
-| 3/18/2022 | [Document metadata fields in Advanced eDiscovery](/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery?view=o365-21vianet) | modified |
+| 3/18/2022 | [Document metadata fields in eDiscovery (Premium)](/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery?view=o365-21vianet) | modified |
 | 3/18/2022 | [Apply a sensitivity label to a model in Microsoft SharePoint Syntex](/microsoft-365/contentunderstanding/apply-a-sensitivity-label-to-a-model) | modified |
 | 3/18/2022 | [Fix issues found by the readiness assessment tool](/microsoft-365/managed-desktop/get-ready/readiness-assessment-fix?view=o365-21vianet) | modified |
 | 3/18/2022 | [Microsoft Edge](/microsoft-365/managed-desktop/get-started/edge-browser-app?view=o365-21vianet) | modified |
@@ -1100,9 +1100,9 @@
 | 3/9/2022 | [Review remediation actions in Microsoft 365 Business Premium](/microsoft-365/business-premium/m365bp-review-remediation-actions-devices?view=o365-21vianet) | added |
 | 3/9/2022 | [View or edit device protection policies](/microsoft-365/business-premium/m365bp-view-edit-create-mdb-policies?view=o365-21vianet) | added |
 | 3/9/2022 | [Integrate Microsoft OneDrive LTI with Blackboard](/microsoft-365/lti/onedrive-lti-blackboard?view=o365-21vianet) | added |
-| 3/9/2022 | [Import custodians to an Advanced eDiscovery case](/microsoft-365/compliance/bulk-add-custodians?view=o365-21vianet) | modified |
-| 3/9/2022 | [Create eDiscovery holds in a Core eDiscovery case](/microsoft-365/compliance/create-ediscovery-holds?view=o365-21vianet) | modified |
-| 3/9/2022 | [Manage holds in Advanced eDiscovery](/microsoft-365/compliance/managing-holds?view=o365-21vianet) | modified |
+| 3/9/2022 | [Import custodians to an eDiscovery (Premium) case](/microsoft-365/compliance/bulk-add-custodians?view=o365-21vianet) | modified |
+| 3/9/2022 | [Create eDiscovery holds in a eDiscovery (Standard) case](/microsoft-365/compliance/create-ediscovery-holds?view=o365-21vianet) | modified |
+| 3/9/2022 | [Manage holds in eDiscovery (Premium)](/microsoft-365/compliance/managing-holds?view=o365-21vianet) | modified |
 | 3/9/2022 | [Search the audit log in the Microsoft Purview compliance portal](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-21vianet) | modified |
 | 3/9/2022 | [Use Content search for targeted collections](/microsoft-365/compliance/use-content-search-for-targeted-collections?view=o365-21vianet) | modified |
 | 3/9/2022 | [Overview of Microsoft Defender for Business](/microsoft-365/security/defender-business/mdb-overview?view=o365-21vianet) | modified |
@@ -1134,7 +1134,7 @@
 | 3/10/2022 | [Use Cost management in the Microsoft 365 admin center](/microsoft-365/commerce/use-cost-mgmt?view=o365-21vianet) | added |
 | 3/10/2022 | [Automatically apply a sensitivity label to content in Microsoft 365](/microsoft-365/compliance/apply-sensitivity-label-automatically?view=o365-21vianet) | modified |
 | 3/10/2022 | [eDiscovery solution series Data spillage scenario - Search and purge](/microsoft-365/compliance/data-spillage-scenariosearch-and-purge?view=o365-21vianet) | modified |
-| 3/10/2022 | [Predictive coding in Advanced eDiscovery - Quick start](/microsoft-365/compliance/predictive-coding-quick-start?view=o365-21vianet) | modified |
+| 3/10/2022 | [Predictive coding in eDiscovery (Premium) - Quick start](/microsoft-365/compliance/predictive-coding-quick-start?view=o365-21vianet) | modified |
 | 3/10/2022 | [Form processing overview in Microsoft SharePoint Syntex](/microsoft-365/contentunderstanding/form-processing-overview) | modified |
 | 3/10/2022 | [Introduction to Microsoft SharePoint Syntex](/microsoft-365/contentunderstanding/index) | modified |
 | 3/10/2022 | [Analyze how your models are used in Microsoft SharePoint Syntex](/microsoft-365/contentunderstanding/model-usage-analytics) | modified |
