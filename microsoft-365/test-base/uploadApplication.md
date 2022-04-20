@@ -18,11 +18,9 @@ f1.keywords: NOCSH
 
 # Upload your Test Base package (Zip) 
 
-On the Test Base portal page, navigate to the **New package** option on the left navigation bar an then click **Legacy upload experience** to enable the Zip upload experience as shown below:
+On the Test Base portal page, navigate to the **Upload new package** option on the left navigation bar as shown below:
 
-:::image type="content" alt-text="Upload a new package." source="Media/testapplication01.png" lightbox="Media/testapplication01.png":::
-
-:::image type="content" alt-text="Upload a new package." source="Media/testapplication21.png" lightbox="Media/testapplication21.png":::
+:::image type="content" alt-text="Upload a new package." source="Media/Upload-New-Package.png" lightbox="Media/Upload-New-Package.png":::
 
 Once there, follow the steps below to upload a new package.
 
