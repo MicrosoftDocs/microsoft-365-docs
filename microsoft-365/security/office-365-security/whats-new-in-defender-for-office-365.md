@@ -47,7 +47,7 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft Cloud App Security](/cloud-app-security/release-notes)
 ## April 2022
 
-- [Manual email remediation enhancements](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/remediate-malicious-email-delivered-office-365?view=o365-worldwide): Bringing manual e-mail purge actions taken in Microsoft Defender for Office 365 to the Microsoft 365 Defender (M365D) unified Action Center using a new action focused investigation.
+- [Manual email remediation enhancements](/microsoft-365/security/office-365-security/remediate-malicious-email-delivered-office-365): Bringing manual email purge actions taken in Microsoft Defender for Office 365 to the Microsoft 365 Defender (M365D) unified Action Center using a new action-focused investigation.
  
 ## March 2022
 
