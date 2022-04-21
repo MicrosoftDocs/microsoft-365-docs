@@ -9,7 +9,7 @@ ms.topic: article
 ms.custom: 
 ms.prod: microsoft-365-enterprise
 search.appverid: MET150
-ms.collection: 
+ms.collection: m365initiative-whiteboard
 ms.localizationpriority: medium
 description: Learn about compliance standards for Microsoft Whiteboard.
 
