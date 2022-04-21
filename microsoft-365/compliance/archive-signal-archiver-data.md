@@ -16,9 +16,11 @@ description: "Admins can set up a TeleMessage connector to import and archive Si
 
 # Set up a connector to archive Signal communications data
 
-Use the TeleMessage connector in the Microsoft 365 compliance center to import and archive Signal chats, attachments, files, and deleted messages and calls. After you set up and configure a connector, it connects to your organization's TeleMessage account, and imports the mobile communication of employees using the TeleMessage Signal Archiver to mailboxes in Microsoft 365.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-After Signal Archiver connector data is stored in user mailboxes, you can apply Microsoft 365 compliance features such as Litigation Hold, Content search, and Microsoft 365 retention policies to Signal communications data. For example, you can search Signal communication using Content search or associate the mailbox that contains the Signal Archiver connector data with a custodian in an Advanced eDiscovery case. Using a Signal Archiver connector to import and archive data in Microsoft 365 can help your organization stay compliant with corporate governance regulations and regulatory policies.
+Use the TeleMessage connector in the Microsoft Purview compliance portal to import and archive Signal chats, attachments, files, and deleted messages and calls. After you set up and configure a connector, it connects to your organization's TeleMessage account, and imports the mobile communication of employees using the TeleMessage Signal Archiver to mailboxes in Microsoft 365.
+
+After Signal Archiver connector data is stored in user mailboxes, you can apply Microsoft Purview features such as Litigation Hold, Content search, and Microsoft 365 retention policies to Signal communications data. For example, you can search Signal communication using Content search or associate the mailbox that contains the Signal Archiver connector data with a custodian in an eDiscovery (Premium) case. Using a Signal Archiver connector to import and archive data in Microsoft 365 can help your organization stay compliant with corporate governance regulations and regulatory policies.
 
 ## Overview of archiving Signal communications data
 
@@ -30,7 +32,7 @@ The following overview explains the process of using a connector to archive Sign
 
 2. In real time, your organization's Signal data is copied to the TeleMessage site.
 
-3. The Signal Archiver connector that you create in the Microsoft 365 compliance center connects to the TeleMessage site every day and transfers the email messages from the previous 24 hours to a secure Azure Storage area in the Microsoft Cloud.
+3. The Signal Archiver connector that you create in the compliance portal connects to the TeleMessage site every day and transfers the email messages from the previous 24 hours to a secure Azure Storage area in the Microsoft Cloud.
 
 4. The connector imports the mobile communication items to the mailbox of a specific user. A new folder named Signal Archiver will be created in the specific user's mailbox and the items will be imported to it. The connector does the mapping by using the value of the *User's Email address* property. Every email message contains this property, which is populated with the email address of every participant of the email message.
 
@@ -44,13 +46,13 @@ The following overview explains the process of using a connector to archive Sign
 
 - Install the Signal Archiver app on the mobile phones of your employees and activate it. The Signal Archiver app allows them to communicate and chat with other Signal users.
 
-- The user who creates a Signal Archiver connector in Step 3 must be assigned the Data Connector Admin role. This role is required to add connectors on the **Data connectors** page in the Microsoft 365 compliance center. This role is added by default to multiple role groups. For a list of these role groups, see the "Roles in the security and compliance centers" section in [Permissions in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatively, an admin in your organization can create a custom role group, assign the Data Connector Admin role, and then add the appropriate users as members. For instructions, see the "Create a custom role group" section in [Permissions in the Microsoft 365 compliance center](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- The user who creates a Signal Archiver connector in Step 3 must be assigned the Data Connector Admin role. This role is required to add connectors on the **Data connectors** page in the compliance portal. This role is added by default to multiple role groups. For a list of these role groups, see the "Roles in the security and compliance centers" section in [Permissions in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatively, an admin in your organization can create a custom role group, assign the Data Connector Admin role, and then add the appropriate users as members. For instructions, see the "Create a custom role group" section in [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
-- This TeleMessage data connector is available in GCC environments in the Microsoft 365 US Government cloud. Third-party applications and services might involve storing, transmitting, and processing your organization's customer data on third-party systems that are outside of the Microsoft 365 infrastructure and therefore are not covered by the Microsoft 365 compliance and data protection commitments. Microsoft makes no representation that use of this product to connect to third-party applications implies that those third-party applications are FEDRAMP compliant.
+- This TeleMessage data connector is available in GCC environments in the Microsoft 365 US Government cloud. Third-party applications and services might involve storing, transmitting, and processing your organization's customer data on third-party systems that are outside of the Microsoft 365 infrastructure and therefore are not covered by the Microsoft Purview and data protection commitments. Microsoft makes no representation that use of this product to connect to third-party applications implies that those third-party applications are FEDRAMP compliant.
 
 ## Create a Signal Archiver connector
 
-After you've completed the prerequisites described in the previous section, you can create the Signal Archiver connector in the Microsoft 365 compliance center. The connector uses the information you provide to connect to the TeleMessage site and transfers Signal communications data to the corresponding user mailbox boxes in Microsoft 365.
+After you've completed the prerequisites described in the previous section, you can create the Signal Archiver connector in the compliance portal. The connector uses the information you provide to connect to the TeleMessage site and transfers Signal communications data to the corresponding user mailbox boxes in Microsoft 365.
 
 1. Go to <https://compliance.microsoft.com> and then click **Data connectors** > **Signal Archiver**.
 

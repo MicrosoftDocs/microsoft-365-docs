@@ -20,7 +20,9 @@ description: "Content produced by cloud-based apps in Microsoft 365 is stored or
 
 # Content stored in Exchange Online mailboxes for eDiscovery
 
-A mailbox in Exchange Online is primarily used to store email-related items such as messages, calendar items, tasks, and notes. But that's changing as more cloud-based apps also store their data in a user's mailbox. One advantage of storing data in a mailbox is that you can use the search tools in content search, Core eDiscovery, and Advanced eDiscovery to find, view, and export the data from these cloud-based apps. The data from some of these apps is stored in hidden folders located in a non-interpersonal message (non-IPM) subtree in the mailbox. Data from other cloud-based apps might not be stored _in_ the mailbox, but it's _associated with_ the mailbox, and is returned in searches (if that data matches the search query). Regardless of whether cloud-based data is stored in or associated with a user mailbox, the data is typically not visible in an email client when a user opens their mailbox.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+A mailbox in Exchange Online is primarily used to store email-related items such as messages, calendar items, tasks, and notes. But that's changing as more cloud-based apps also store their data in a user's mailbox. One advantage of storing data in a mailbox is that you can use the search tools in content search, Microsoft Purview eDiscovery (Standard), and Microsoft Purview eDiscovery (Premium) to find, view, and export the data from these cloud-based apps. The data from some of these apps is stored in hidden folders located in a non-interpersonal message (non-IPM) subtree in the mailbox. Data from other cloud-based apps might not be stored _in_ the mailbox, but it's _associated with_ the mailbox, and is returned in searches (if that data matches the search query). Regardless of whether cloud-based data is stored in or associated with a user mailbox, the data is typically not visible in an email client when a user opens their mailbox.
 
 The following table lists the apps that either stores or associates data with a cloud-based mailbox. The table also describes the type of content that each app produces.
 
@@ -44,4 +46,4 @@ The following table lists the apps that either stores or associates data with a 
 |
 
 > [!NOTE]
-> <sup>*</sup> At this time, if a hold is placed on a mailbox (by using holds in Core eDiscovery or Advanced eDiscovery cases), content from this app will not be preserved by the hold.
+> <sup>*</sup> At this time, if a hold is placed on a mailbox (by using holds in eDiscovery (Standard) or eDiscovery (Premium) cases), content from this app will not be preserved by the hold.

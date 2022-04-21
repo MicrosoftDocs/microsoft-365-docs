@@ -106,7 +106,6 @@ On the **Exchange transport rule report** page, the available charts and data ar
 > [!NOTE]
 > The **Exchange transport rule report** is now available in the EAC. For more information, see [Exchange transport rule report in the new EAC](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report).
 
-
 ### Chart breakdown by Direction
 
 :::image type="content" source="../../media/transport-rule-report-etr-direction-view.png" alt-text="The Direction view for Exchange Transport rules in the Exchange transport rule report" lightbox="../../media/transport-rule-report-etr-direction-view.png":::
