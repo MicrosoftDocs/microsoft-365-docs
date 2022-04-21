@@ -1,5 +1,5 @@
 ---
-title: "Troubleshoot and resolve problems and error messages in Microsoft 365 Lighthouse"
+title: "Troubleshoot error messages and problems in Microsoft 365 Lighthouse"
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -15,10 +15,10 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse                         
 search.appverid: MET150
-description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, get help troubleshooting and resolving error messages and problems."
+description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, get help troubleshooting error messages and problems."
 ---
 
-# Troubleshoot and resolve problems and error messages in Microsoft 365 Lighthouse
+# Troubleshoot error messages and problems in Microsoft 365 Lighthouse
 
 This article describes error messages and problems that you might encounter while using Microsoft 365 Lighthouse and provides troubleshooting steps you can take to resolve them.
 
@@ -48,14 +48,13 @@ This article describes error messages and problems that you might encounter whil
 
 **Cause:** Your customer tenants don't meet the following criteria:
 
-  - Must have delegated access set up for the Managed Service Provider (MSP) to be able to manage the customer tenant*
-  - Must have at least one Microsoft 365 Business Premium, Microsoft 365 E3, or Windows 365 Business license
-  - Must have no more than 1000 licensed users 
+- Must have delegated access set up for the Managed Service Provider (MSP) to be able to manage the customer tenant*
+- Must have at least one Microsoft 365 Business Premium, Microsoft 365 E3, or Windows 365 Business license
+- Must have no more than 1000 licensed users 
 
 **Resolution:** The following table describes the different tenant statuses that require action and explains how to resolve them.
 
 *Delegated Admin Privileges (DAP) is required to onboard customers to Lighthouse. We recommend also establishing Granular Delegated Admin Privileges (GDAP) with your customers to enable more secure delegated access. While DAP and GDAP coexist, GDAP will take precedence for customers where both models are in place. Soon, customers with just GDAP (and no DAP) will be able to onboard to Lighthouse.
-
 
 | Status | Description | Resolution |
 |--|--|--|
@@ -132,4 +131,4 @@ If data is still not appearing on the Device compliance and Threat management pa
 
 [Known issues with Microsoft 365 Lighthouse](m365-lighthouse-known-issues.md) (article)\
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)\
-[Get help and support for Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md) (article)
+[Get help and support for Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md) (article)

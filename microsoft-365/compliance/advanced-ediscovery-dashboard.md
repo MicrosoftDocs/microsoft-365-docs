@@ -1,11 +1,11 @@
 ---
-title: "Advanced eDiscovery dashboard for review sets"
+title: "eDiscovery (Premium) dashboard for review sets"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 
+ms.date: 04/05/2022
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,16 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid:  
-description: "Use the Advanced eDiscovery dashboard for review sets to quickly analyze your corpus to identify trends or key statistics that will help you develop your review strategy."
+description: "Use the Microsoft Purview eDiscovery (Premium) dashboard for review sets to quickly analyze your corpus to identify trends or key statistics that will help you develop your review strategy."
 ---
 
-# Advanced eDiscovery dashboard for review sets
+# eDiscovery (Premium) dashboard for review sets
 
-For some cases in Advanced eDiscovery, you may have a large volume of documents and email messages that need to be reviewed. Before you start the review process, you may want to quickly analyze your corpus to identify trends or key statistics that will help you develop your review strategy. To do this, you can use the Advanced eDiscovery dashboard for review sets to quickly analyze your corpus.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+For some cases in Microsoft Purview eDiscovery (Premium), you may have a large volume of documents and email messages that need to be reviewed. Before you start the review process, you may want to quickly analyze your corpus to identify trends or key statistics that will help you develop your review strategy. To do this, you can use the eDiscovery (Premium) dashboard for review sets to quickly analyze your corpus.
 
 ## Step 1: Create a widget on the review set dashboard
 
-1. In the Microsoft 365 compliance center, go to **eDiscovery > Advanced eDiscovery** to display the list of cases in your organization.
+1. In the Microsoft Purview compliance portal, go to **eDiscovery > eDiscovery (Premium)** to display the list of cases in your organization.
   
 2. Select an existing case.
   
@@ -52,7 +54,7 @@ For some cases in Advanced eDiscovery, you may have a large volume of documents 
 
     a. Type a name for the widget, which is displayed in the widget title bar. Naming a widget is required, but it's helpful to identify the widget data.
 
-    b. Select a property in the **Choose pivot** dropdown list that will be used for the widget data. The items in this list are the searchable properties for the items in the review set. For a description of these properties, see [Document metadata fields in Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md). The pivot options for the widget are listed in the **Searchable field name** column in this topic.
+    b. Select a property in the **Choose pivot** dropdown list that will be used for the widget data. The items in this list are the searchable properties for the items in the review set. For a description of these properties, see [Document metadata fields in eDiscovery (Premium)](document-metadata-fields-in-Advanced-eDiscovery.md). The pivot options for the widget are listed in the **Searchable field name** column in this topic.
 
     c. Select a chart type to display the data from the selected pivot property.
 

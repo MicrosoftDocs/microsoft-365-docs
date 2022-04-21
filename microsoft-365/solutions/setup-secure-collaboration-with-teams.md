@@ -66,7 +66,7 @@ To configure secure collaboration, you use these Microsoft 365 capabilities and 
 |Microsoft Defender for Office 365|Safe Attachments for SPO, OneDrive and Teams; Safe Documents; Safe Links for Teams|Microsoft 365 E1, E3 and E5|
 |SharePoint|Site and file sharing policies, Site sharing permissions, Sharing links, Access requests, Site guest sharing settings|Microsoft 365 E1, E3 and E5|
 |Microsoft Teams|Guest access, private teams, private channels, shared channels|Microsoft 365 E1, E3 and E5|
-|Microsoft 365 Compliance|Sensitivity labels|Microsoft 365 E3 and E5|
+|Microsoft Purview|Sensitivity labels|Microsoft 365 E3 and E5|
 
 ## Collaboration governance framework for Teams and Microsoft 365
 
@@ -205,6 +205,6 @@ When you're ready to deploy this solution, continue with these steps:
 
 [Microsoft 365 security documentation](../security/index.yml)
 
-[Microsoft 365 compliance documentation](../compliance/index.yml)
+[Microsoft Purview documentation](../compliance/index.yml)
 
 [Welcome to Microsoft Teams](/MicrosoftTeams/Teams-overview)

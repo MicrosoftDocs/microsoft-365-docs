@@ -1,5 +1,5 @@
 ---
-title: "Get Access to Microsoft Bookings"
+title: "Get access to Microsoft Bookings"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -28,7 +28,7 @@ The first time you use [Bookings](https://outlook.office.com/bookings/onboarding
 
 1. If this isn't your first time on this page, you can select another booking calendar or do a search for another booking calendar.
 
-2. Enter your business name and business type and select **Continue**.
+1. Enter your business name and business type and select **Continue**.
 
 You're now ready to set up Bookings for your organization. You can get to the Bookings page with this [link](https://outlook.office.com/bookings/onboarding), from the app launcher or from office.com. Use the following topics to continue setting up your Bookings features.
 

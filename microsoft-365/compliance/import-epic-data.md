@@ -18,7 +18,9 @@ description: "Administrators can set up a data connector to import electronic he
 
 # Set up a connector to import Epic EHR audit data (preview)
 
-You can set up a data connector in the Microsoft 365 compliance center to import audit records for user activity in your organization's Epic Electronic Healthcare Records (EHR) system. Audit records from your Epic EHR system include records for events related to accessing a patient's health records. Epic EHR audit records can be used by the Microsoft 365 [insider risk management solution](insider-risk-management.md) to help protect your organization from unauthorized access to patient information.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+You can set up a data connector in the Microsoft Purview compliance portal to import audit records for user activity in your organization's Epic Electronic Healthcare Records (EHR) system. Audit records from your Epic EHR system include records for events related to accessing a patient's health records. Epic EHR audit records can be used by the Microsoft 365 [insider risk management solution](insider-risk-management.md) to help protect your organization from unauthorized access to patient information.
 
 Setting up an Epic connector consists of the following tasks:
 
@@ -26,7 +28,7 @@ Setting up an Epic connector consists of the following tasks:
 
 - Creating a text file with all the required fields as defined in the connector schema.
 
-- Creating an Epic connector instance in the Microsoft 365 compliance center.
+- Creating an Epic connector instance in the compliance portal.
 
 - Running a script to push Epic EHR audit records to the API endpoint.
 
@@ -34,7 +36,7 @@ Setting up an Epic connector consists of the following tasks:
 
 ## Before you set up the connector
 
-- The user who creates the Epic connector in Step 3 must be assigned the Data Connector Admin role. This role is required to add connectors on the **Data connectors** page in the Microsoft 365 compliance center. This role is added by default to multiple role groups. For a list of these role groups, see the "Roles in the security and compliance centers" section in [Permissions in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatively, an admin in your organization can create a custom role group, assign the Data Connector Admin role, and then add the appropriate users as members. For instructions, see the "Create a custom role group" section in [Permissions in the Microsoft 365 compliance center](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- The user who creates the Epic connector in Step 3 must be assigned the Data Connector Admin role. This role is required to add connectors on the **Data connectors** page in the compliance portal. This role is added by default to multiple role groups. For a list of these role groups, see the "Roles in the security and compliance centers" section in [Permissions in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatively, an admin in your organization can create a custom role group, assign the Data Connector Admin role, and then add the appropriate users as members. For instructions, see the "Create a custom role group" section in [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
 - You need to determine how to retrieve or export the data from your organization's Epic EHR system (on a daily basis) and create a text file that's described in Step 2. The script that you run in Step 4 will push the data in the text file to the API endpoint.
 
@@ -75,7 +77,7 @@ The following table lists the fields that are required to enable insider risk ma
 
 ## Step 3: Create the Epic connector
 
-The next step is to create an Epic connector in the Microsoft 365 compliance center. After you run the script in Step 4, the text file that you created in Step 2 will be processed and pushed to the API endpoint you set up in Step 1. In this step, be sure to copy the JobId that's generated when you create the connector. You'll use the JobId when you run the script.
+The next step is to create an Epic connector in the compliance portal. After you run the script in Step 4, the text file that you created in Step 2 will be processed and pushed to the API endpoint you set up in Step 1. In this step, be sure to copy the JobId that's generated when you create the connector. You'll use the JobId when you run the script.
 
 1. Go to <https://compliance.microsoft.com> and then click **Data connectors** in the left nav.
 
@@ -160,7 +162,7 @@ If the upload is successful, the script displays the **Upload Successful** messa
 
 ## Step 5: Monitor the Epic connector
 
-After you create the Epic connector and push your EHR audit records, you can view the connector and upload status in the Microsoft 365 compliance center. If you schedule the script to run automatically on a regular basis, you can also view the current status after the last time the script ran.
+After you create the Epic connector and push your EHR audit records, you can view the connector and upload status in the compliance portal. If you schedule the script to run automatically on a regular basis, you can also view the current status after the last time the script ran.
 
 1. Go to <https://compliance.microsoft.com> and click **Data connectors** in the left nav.
 

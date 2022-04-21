@@ -6,7 +6,7 @@ manager: dansimp
 ms.date: 07/21/2021
 audience: Admin
 ms.topic: conceptual
-ms.localizationpriority: medium
+ms.localizationpriority: high
 search.appverid: 
   - MET150
   - MOE150

@@ -69,18 +69,6 @@ If you're a global administrator or an Exchange Online administrator, and Exchan
 
 - Organizations that have a URL filtering or security solution (such as a proxy and/or firewall) in place, must have ipagave.azurewebsites.net and outlook.office.com endpoints allowed to be reached on HTTPS protocol.
 
-### Turn off the built-in reporting experience
-
-We don't recommend the built-in reporting experience in Outlook because it can't use the [user submission policy](./user-submission.md). We recommend using the Report Message add-in or the Report Phishing add-in instead.
-
-You need to be assigned permissions before you can run this cmdlet. To find the permissions required to run any cmdlet or parameter in your organization, see [Find the permissions required to run any Exchange cmdlet](/powershell/exchange/find-exchange-cmdlet-permissions).
-
-Run the following PowerShell command to disable the built-in reporting experience:
-
-```powershell
-Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -ReportJunkEmailEnabled $false
-```
-
 ## Get the Report Message add-in
 
 ### Get the Report Message add-in for yourself
@@ -116,7 +104,6 @@ After the add-in is installed and enabled, you'll see the following icons:
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="../../media/microsoft-365-admin-center-integrated-apps.png" alt-text="The Microsoft 365 admin center Integrated apps" lightbox="../../media/microsoft-365-admin-center-integrated-apps.png":::
-
 
 2. In the **Microsoft 365 Apps** page that appears, click in the **Search** box, enter **Report Message**, and then click **Search** ![Search icon.](../../media/search-icon.png). In the list of results, find and select **Report Message**. 
 
