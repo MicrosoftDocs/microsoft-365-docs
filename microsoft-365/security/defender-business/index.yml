@@ -55,6 +55,8 @@ landingContent:
             url: mdb-get-started.md
           - text: Use the setup wizard
             url: mdb-use-wizard.md
+      - linkListType: tutorial
+        links:
           - text: Try tutorials and simulations
             url: mdb-tutorials.md
 
@@ -127,7 +129,7 @@ landingContent:
             url: mdb-offboard-devices.md
 
   # Card
-  - title: Help and support
+  - title: Help and more resources
     linkLists:
       - linkListType: reference
         links:
