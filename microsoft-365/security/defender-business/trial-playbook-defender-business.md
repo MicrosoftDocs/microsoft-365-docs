@@ -110,8 +110,8 @@ If you used the setup wizard, but you need to onboard more devices, such as non-
       - [Local script for macOS](mdb-onboard-devices.md#macostabmacosdevices) (recommended)
       - [Endpoint Manager for macOS](mdb-onboard-devices.md#endpoint-manager-for-macos)
 
-   > [!NOTE]
-   > We recommend using a local script to onboard macOS devices. Although you can set up enrollment for macOS devices in Intune, the local script is the simplest method for onboarding macOS devices to Defender for Business.
+      > [!NOTE]
+      > We recommend using a local script to onboard macOS devices. Although you can set up enrollment for macOS devices in Intune, the local script is the simplest method for onboarding macOS devices to Defender for Business.
 
    - [Mobile devices](mdb-onboard-devices.md#mobile-devicestabmobiles): You'll need Microsoft Intune to onboard mobile devices, such as Android and iOS/iPadOS devices. If you have Microsoft 365 Business Premium, you have Endpoint Manager as part of your subscription. Endpoint Manager includes Microsoft Intune and Mobile Device Management capabilities.
    
