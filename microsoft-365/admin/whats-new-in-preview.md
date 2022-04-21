@@ -48,6 +48,35 @@ And if you'd like to know what's new with other Microsoft cloud services:
 
 ## April 2022
 
+### NPS Sentiment Insights
+
+NPS survey insights is an AI-driven dashboard available in the Microsoft 365 admin center.
+
+In the admin center, go to **Health** > **Product feedback** > **NPS survey insights**.
+
+This feature helps admins like you obtain actionable insights derived from Microsoft NPS surveys. Learn more at [Microsoft product NPS feedback and insights for your organization](manage/manage-feedback-product-insights.md).
+
+Based on your feedback, we're introducing a new feature that identifies the sentiment for each NPS verbatim feedback, so that you can learn what your users are feeling regarding Microsoft 365 products. Sentiment labels such as **Positive**, **Negative** and **Other** are assigned to the NPS verbatim feedback.
+
+With the sentiment feature on the NPS survey insights dashboard you'll be able to:
+
+- Visualize sentiment trend for the last 12 months based on the NPS verbatim feedback.
+
+- Identify the sentiment per app and platform.
+
+Three sentiments are available:
+
+To provide you with a better experience using the NPS survey insight dashboard, we suggest checking the following items:
+
+- Encourage your end users to submit feedback.
+
+- Confirm [in-product survey policies](https://config.office.com) are enabled.
+
+- Improve diagnosability by enabling [Windows Error Reporting](/windows/win32/wer/windows-error-reporting).
+
+> [!NOTE]
+> If you're an enterprise customer and you're interested in joining our design sessions, send us an email at: prosight@microsoft.com
+
 ### Microsoft 365 admin center search
 
 You can now view all search results in a separate browser page by searching in global search and selecting **Enter**.
