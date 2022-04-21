@@ -21,6 +21,8 @@ description: "Learn about retention policies that apply to Yammer."
 
 # Learn about retention for Yammer
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 The information in this article supplements [Learn about retention](retention.md) because it has information that's specific to Yammer.
@@ -178,6 +180,6 @@ Be aware of the following limitation when you use retention for Yammer community
 
 ## Configuration guidance
 
-If you're new to configuring retention in Microsoft 365, see [Get started with information governance](get-started-with-information-governance.md).
+If you're new to configuring retention in Microsoft 365, see [Get started with data lifecycle management](get-started-with-data-lifecycle-management.md).
 
 If you're ready to configure a retention policy for Yammer, see [Create and configure retention policies](create-retention-policies.md).

@@ -18,7 +18,9 @@ description: ""
 
 # Predictive coding reference (preview)
 
-This article describes the key concepts and metrics of the predictive coding tool in Advanced eDiscovery. The sections in the article are listed in alphabetical order.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+This article describes the key concepts and metrics of the predictive coding tool in Microsoft Purview eDiscovery (Premium). The sections in the article are listed in alphabetical order.
 
 ## Confidence level
 

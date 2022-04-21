@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 03/15/2022
+ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -22,10 +22,8 @@ ms.custom: intro-overview
 
 # Overview of Microsoft Defender for Business
 
-> [!IMPORTANT]
-> Microsoft Defender for Business is rolling out to [Microsoft 365 Business Premium](../../business-premium/index.md) customers, beginning March 1, 2022. Defender for Business as a standalone subscription is in in preview, and will roll out gradually to customers and IT Partners who [sign-up here](https://aka.ms/mdb-preview) to request it. Preview includes an [initial set of scenarios](mdb-tutorials.md#try-these-preview-scenarios), and we will be adding capabilities regularly.
-> 
-> Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. 
+> [!NOTE]
+> Microsoft Defender for Business is now included in [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
 Microsoft Defender for Business is a new endpoint security solution that was designed especially for the small and medium-sized business (up to 300 employees). With this endpoint security solution, your company's devices are better protected from ransomware, malware, phishing, and other threats. 
 
@@ -39,7 +37,7 @@ This article describes what's included in Defender for Business, with links to l
 
 >
 > **Got a minute?**
-> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about Microsoft Defender for Business</a>. We'd love to hear from you!
+> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about security</a>. We'd love to hear from you!
 >
 
 With Defender for Business, you can help protect the devices and data your business uses with:
@@ -56,7 +54,7 @@ With Defender for Business, you can help protect the devices and data your busin
 
 **This guide is intended to**:
 
-- **Provide you with an overview of Defender for Business** so you know what’s included and how it works
+- **Provide you with an overview of Defender for Business** so you know what's included and how it works
    - Use this article as a starting point
    - [Compare security features in Microsoft Defender for Business to other plans](compare-mdb-m365-plans.md) 
    - [Find out how to get Microsoft Defender for Business](get-defender-business.md)
@@ -76,5 +74,4 @@ With Defender for Business, you can help protect the devices and data your busin
 ## Next steps
 
 - [Learn more about the simplified configuration process in Microsoft Defender for Business](mdb-simplified-configuration.md)
-
 - [Find out how to get Microsoft Defender for Business](get-defender-business.md)

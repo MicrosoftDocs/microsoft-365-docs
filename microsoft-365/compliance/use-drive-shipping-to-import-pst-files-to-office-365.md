@@ -1,5 +1,5 @@
 ---
-title: "Use drive shipping to import your organization's PST files"
+title: "Use drive shipping to import PST files"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -22,6 +22,8 @@ description: Admin can learn how to bulk-import PST files to Microsoft 365 mailb
 ---
 
 # Use drive shipping to import your organization's PST files
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **This article is for administrators. Are you trying to import PST files to your own mailbox? See [Import email, contacts, and calendar from an Outlook .pst file](https://go.microsoft.com/fwlink/p/?LinkID=785075)**
    
@@ -48,7 +50,7 @@ For frequently asked questions about using drive shipping to import PST files to
   
 ## Before you import PST files
 
-- You have to be assigned the Mailbox Import Export role in Exchange Online to create import jobs in the Microsoft 365 compliance center and import PST files to user mailboxes. By default, this role isn't assigned to any role group in Exchange Online. You can add the Mailbox Import Export role to the Organization Management role group. Or you can create a role group, assign the Mailbox Import Export role, and then add yourself as a member. For more information, see the "Add a role to a role group" or the "Create a role group" sections in [Manage role groups](/Exchange/permissions-exo/role-groups).
+- You have to be assigned the Mailbox Import Export role in Exchange Online to create import jobs in the Microsoft Purview compliance portal and import PST files to user mailboxes. By default, this role isn't assigned to any role group in Exchange Online. You can add the Mailbox Import Export role to the Organization Management role group. Or you can create a role group, assign the Mailbox Import Export role, and then add yourself as a member. For more information, see the "Add a role to a role group" or the "Create a role group" sections in [Manage role groups](/Exchange/permissions-exo/role-groups).
 
     In addition to the Mailbox Import Export role, you also have to be assigned the Mail Recipients role in Exchange Online. By default, this role is assigned to the Organization Management and Recipient Management roles groups in Exchange Online.
 
@@ -104,14 +106,14 @@ For frequently asked questions about using drive shipping to import PST files to
 The first step is to download the tool and that you use in Step 2 to copy PST files to the hard drive.
   
 > [!IMPORTANT]
-> You have to use Azure Import/Export tool version 1 (WAimportExportV1) to successfully import PST files by using the drive shipping method. Version 2 of the Azure Import/Export tool isn't supported and using it will result in incorrectly preparing the hard drive for the import job. Be sure to download the Azure Import/Export tool from the Microsoft 365 compliance center by following the procedures in this step. 
+> You have to use Azure Import/Export tool version 1 (WAimportExportV1) to successfully import PST files by using the drive shipping method. Version 2 of the Azure Import/Export tool isn't supported and using it will result in incorrectly preparing the hard drive for the import job. Be sure to download the Azure Import/Export tool from the Microsoft Purview compliance portal by following the procedures in this step. 
   
 1. Go to <https://compliance.microsoft.com> and sign in using the credentials for an administrator account in your organization.
 
-2. In the left navigation pane of the Microsoft 365 compliance center, click **Information governance** \> **Import**.
+2. In the left navigation pane of the compliance portal, click **Information governance** \> **Import**.
     
     > [!NOTE]
-    > As previously stated, you have to be assigned the appropriate permissions to access the **Import** page in the Microsoft 365 compliance center. 
+    > As previously stated, you have to be assigned the appropriate permissions to access the **Import** page in the compliance portal.
   
 3. On the **Import** tab, click ![Add Icon.](../media/ITPro-EAC-AddIcon.gif) **New import job**.
     
@@ -125,30 +127,29 @@ The first step is to download the tool and that you use in Step 2 to copy PST fi
     
     **Download the Azure Import/Export tool** to download and install the Azure Import/Export (version 1) tool.
     
-    - In the pop-up window, click **Save** \> **Save as** to save the WaImportExportV1.zip file to a folder on your local computer. 
+    - In the pop-up window, click **Save** \> **Save as** to save the WaImportExportV1.zip file to a folder on your local computer.
     
     - Extract the WaImportExportV1.zip file.
     
-7. Click **Cancel** to close the wizard. 
+7. Click **Cancel** to close the wizard.
     
-    You come back to the **Import** page in the Microsoft 365 compliance center when you create the import job in Step 4. 
+    You come back to the **Import** page in the compliance portal when you create the import job in Step 4.
 
 ## Step 2: Copy the PST files to the hard drive
 
-The next step is to use the WAImportExport.exe tool to copy PST files to the hard drive. This tool encrypts the hard drive with BitLocker, copies the PSTs to the hard drive, and creates a journal file that stores information about the copy process. To complete this step, the PST files have to be located in a file share or file server in your organization. This is known as the source directory in the following procedure. 
+The next step is to use the WAImportExport.exe tool to copy PST files to the hard drive. This tool encrypts the hard drive with BitLocker, copies the PSTs to the hard drive, and creates a journal file that stores information about the copy process. To complete this step, the PST files have to be located in a file share or file server in your organization. This is known as the source directory in the following procedure.
 
  As previously stated, each PST file that you copy to the hard drive should be no larger than 20 GB. PST files larger than 20 GB may impact the performance of the PST import process that you start in Step 6.
   
 > [!IMPORTANT]
-> After you run the WAImportExport.exe tool the first time for a hard drive, you have to use a different syntax each time after that. This syntax is explained in step 4 of this procedure to copy PST files to the hard drive. 
+> After you run the WAImportExport.exe tool the first time for a hard drive, you have to use a different syntax each time after that. This syntax is explained in step 4 of this procedure to copy PST files to the hard drive.
   
 1. Open a Command Prompt on your local computer.
     
     > [!TIP]
-    > If you run the command prompt as an administrator (by selecting "Run as administrator" when you open it) error messages will be displayed in the command prompt window. This can help you troubleshoot problems running the WAImportExport.exe tool. 
+    > If you run the command prompt as an administrator (by selecting "Run as administrator" when you open it) error messages will be displayed in the command prompt window. This can help you troubleshoot problems running the WAImportExport.exe tool.
   
 2. Go to the directory where you installed the WAImportExport.exe tool in Step 1.
-    
 3. Run the following command the first time that you use the WAImportExport.exe to copy PST files to a hard drive.
 
     ```powershell
@@ -236,12 +237,12 @@ The next step is to create the PST Import job in the Import service in Office 36
   
 1. Go to <https://compliance.microsoft.com> and sign in using the credentials for an administrator account in your organization.
 
-2. In the left navigation pane of the Microsoft 365 compliance center, click **Information governance** \> **Import**.
+2. In the left navigation pane of the compliance portal, click **Information governance** \> **Import**.
 
 3. On the **Import** tab, click ![Add Icon.](../media/ITPro-EAC-AddIcon.gif) **New import job**.
 
     > [!NOTE]
-    > As previously stated, you have to be assigned the appropriate permissions to access the **Import** page in the Microsoft 365 compliance center.
+    > As previously stated, you have to be assigned the appropriate permissions to access the **Import** page in the compliance portal.
   
 4. Type a name for the PST import job, and then click **Next**. Use lowercase letters, numbers, hyphens, and underscores. You can't use uppercase letters or include spaces in the name.
 
@@ -320,7 +321,7 @@ After you've shipped the hard drive to Microsoft, complete the following procedu
   
 1. Go to <https://compliance.microsoft.com> and sign in using the credentials for an administrator account in your organization.
 
-2. In the left navigation pane of the Microsoft 365 compliance center, click **Information governance > Import**.
+2. In the left navigation pane of the compliance portal, click **Information governance > Import**.
 
 3. On the **Import** tab, click the job for the drive shipment that you want to enter the tracking number for.
 
@@ -346,7 +347,7 @@ After PST files are uploaded to Azure, the status is changed to **Analysis in pr
   
 1. Go to <https://compliance.microsoft.com> and sign in using the credentials for an administrator account in your organization.
 
-2. In the left navigation pane of the Microsoft 365 compliance center, click **Information governance** \> **Import****.
+2. In the left navigation pane of the compliance portal, click **Information governance** \> **Import****.
 
 3. On the **Import** tab, select the import job that you created in Step 4 and click **Import to Office 365**.
   
@@ -385,7 +386,7 @@ To install the Azure Storage Explorer and connect to your Azure Storage area:
 
 1. Go to <https://compliance.microsoft.com> and sign in using the credentials for an administrator account in your organization.
 
-2. In the left pane of the Microsoft 365 compliance center, click **Information governance > Import**.
+2. In the left pane of the compliance portal, click **Information governance > Import**.
 
 3. On the **Import** tab, click ![Add Icon.](../media/ITPro-EAC-AddIcon.gif) **New import job**.
 

@@ -163,7 +163,7 @@ To list blocks that are due to other features (like Custom Indicators), refer to
 
 ## User experience
 
-If a user visits a web page that poses a risk of malware, phishing, or other web threats, Microsoft Edge will trigger a block page that reads ‘This site has been reported as unsafe’ along with information related to the threat.
+If a user visits a web page that poses a risk of malware, phishing, or other web threats, Microsoft Edge will trigger a block page that reads 'This site has been reported as unsafe' along with information related to the threat.
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/web-protection-malicious-block.png" alt-text="The page blocked by Microsoft Edge" lightbox="../../media/web-protection-malicious-block.png":::
@@ -173,7 +173,7 @@ If blocked by WCF or a custom indicator, a block page shows in Microsoft Edge th
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/web-protection-indicator-blockpage.png" alt-text="The page blocked by your organization" lightbox="../../media/web-protection-indicator-blockpage.png":::
 
-In any case, no block pages are shown in third-party browsers, and the user sees a ‘Secure Connection Failed’ page along with a toast notification. Depending on the policy responsible for the block, a user will see a different message in the toast notification. For example, web content filtering will display the message ‘This content is blocked’.
+In any case, no block pages are shown in third-party browsers, and the user sees a "Secure Connection Failed' page along with a toast notification. Depending on the policy responsible for the block, a user will see a different message in the toast notification. For example, web content filtering will display the message 'This content is blocked'.
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/web-protection-np-block.png" alt-text="The page blocked by WCF" lightbox="../../media/web-protection-np-block.png":::
