@@ -51,7 +51,7 @@ The guidance in these missions helps your business achieve the goals described i
 
 Click the infographic to see a larger version, or [Download a copy of the Cybersecurity playbook poster](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)!
 
-:::image type="content" source="media/m365bp-cyber-security-playbook.png" alt-text="The Cybersecurity Playbook" lightbox=media/m365bp-cyber-security-playbook.png":::
+:::image type="content" source="media/m365bp-cyber-security-playbook.png" alt-text="The Cybersecurity Playbook" lightbox="media/m365bp-cyber-security-playbook.png":::
 
 [Get the PDF](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)!
 
