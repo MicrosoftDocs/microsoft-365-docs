@@ -58,6 +58,9 @@ Defender for Business was designed to save small and medium-sized businesses tim
 
 #### Setup wizard flow: what to expect
 
+> [!NOTE]
+>    **Using the setup wizard is optional** (see [What happens if I don't use the wizard?](mdb-use-wizard.md#what-happens-if-i-dont-use-the-wizard)). If you choose not to use the wizard, or if the wizard is closed before your set-up process is complete, you can complete the setup and configuration process on your own. See [Step 4](#step-4-set-up-and-configure-defender-for-business). 
+
 1. **[Assign user permissions](mdb-roles-permissions.md#view-or-edit-role-assignments)**. Grant your security team access to the Microsoft 365 Defender portal.
 
 2. **[Set up email notifications](mdb-email-notifications.md#view-and-edit-email-notifications)** for your security team.
@@ -72,9 +75,6 @@ Defender for Business was designed to save small and medium-sized businesses tim
    To onboard other devices, see [step 4](#step-4-set-up-and-configure-defender-for-business).
 
 4.  **[View and if necessary, edit your security policies](mdb-configure-security-settings.md)**. Defender for Business includes default security policies for next-generation protection and firewall protection that can be applied to your company’s devices. These preconfigured security policies use recommended settings so you are protected as soon as your devices are onboarded to Defender for Business. And you still have the ability to edit policies or create new ones. 
-
-   > [!NOTE]
-   >    **Using the setup wizard is optional** (see [What happens if I don't use the wizard?](mdb-use-wizard.md#what-happens-if-i-dont-use-the-wizard)). If you choose not to use the wizard, or if the wizard is closed before your set-up process is complete, you can complete the setup and configuration process on your own. See [Step 4](#step-4-set-up-and-configure-defender-for-business). 
 
 ### Step 4: Set up and configure Defender for Business
 
