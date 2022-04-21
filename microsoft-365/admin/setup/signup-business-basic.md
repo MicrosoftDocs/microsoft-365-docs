@@ -162,3 +162,4 @@ Contact our small business support experts who can help you change your business
 ## Set up Microsoft 365 Business Basic
 
 For steps on how to buy or add a domain, see [Set up Microsoft 365 Business Basic with a new or existing domain](../setup/setup-business-basic.md).
+
