@@ -52,7 +52,7 @@ And if you'd like to know what's new with other Microsoft cloud services:
 
 You can now view all search results in a separate browser page by searching in global search and selecting **Enter**.
 
-With our new separate page of search results, you can explore a more comprehensive list of results and can easily return to the browser page for a more efficient search experience.
+With our new separate page of search results, you can explore a more comprehensive list of results and easily return to the browser page for a more efficient search experience.
 
 :::image type="content" source="../media/whats-new-search-page.png" alt-text="Screenshot: New Microsoft 365 admin center browser search page":::
 
