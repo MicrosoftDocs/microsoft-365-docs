@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 compliance solutions trial playbook"
+title: "Microsoft Purview solutions trial playbook"
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -14,21 +14,23 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid: 
 - MOE150
 - MET150
-description: "Microsoft 365 compliance solutions trial playbook."
+description: "Microsoft Purview solutions trial playbook."
 ---
 
-# Trial playbook: Microsoft 365 Compliance solutions
+# Trial playbook: Microsoft Purview solutions
 
-Welcome to the Microsoft 365 compliance solutions trial playbook. This playbook will help you make the most of your 90-day free trial by helping you discover robust and comprehensive capabilities of Microsoft 365 compliance and security products.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Welcome to the Microsoft Purview solutions trial playbook. This playbook will help you make the most of your 90-day free trial by helping you discover robust and comprehensive capabilities of Microsoft Purview and security products.
 
 Trying each solution will help you make informed decisions to meet your organization’s compliance needs.
 
 Features:
 
-- [Advanced Audit](#advanced-audit)
+- [Audit (Premium)](#audit-premium)
 - [Communication Compliance](#communication-compliance)
 - [Compliance Manager](#compliance-manager)
-- [Data Loss Prevention](#data-loss-prevention)
+- [Microsoft Purview Data Loss Prevention](#data-loss-prevention)
 - [eDiscovery](#ediscovery)
 - [Information Protection](#information-protection)
 - [Insider Risk Management](#insider-risk-management)
@@ -39,48 +41,48 @@ Optional add-ons:
 - [Compliance Manager premium assessments](#compliance-manager-premium-assessments)
 - [Microsoft Priva Privacy Risk Management and Microsoft Priva Subject Rights Requests](#microsoft-priva-privacy-risk-management-and-microsoft-priva-subject-rights-requests)
 
-## Compliance Actions with Microsoft 365
+## Compliance Actions with Microsoft Purview
 
 Easily and quickly start trying Microsoft’s compliance solutions without changing your organization’s meta data. Depending on your priorities, you can start with any of these solution areas to see immediate value. Below are five top organizational concerns as communicated by our customers and recommended solutions to start with.
 
 :::image type="content" source="../media/compliance-trial/workflow.png" alt-text="Compliance actions with Microsoft 365":::
 
-## Advanced Audit
+## Audit (Premium)
 
 **Conduct investigations**
 
-Advanced Audit helps organizations to conduct forensic and compliance investigations by increasing audit log retention required to conduct an investigation, providing access to crucial events that help determine scope of compromise, and providing faster access to the Office 365 Management Activity API.
+Microsoft Purview Audit (Premium) helps organizations to conduct forensic and compliance investigations by increasing audit log retention required to conduct an investigation, providing access to crucial events that help determine scope of compromise, and providing faster access to the Office 365 Management Activity API.
 
-### Step 1: [Apply the E5 license to each user for which you’d like to generate E5 events](set-up-advanced-audit.md#step-1-set-up-advanced-audit-for-users)
+### Step 1: [Apply the E5 license to each user for which you’d like to generate E5 events](set-up-advanced-audit.md#step-1-set-up-audit-premium-for-users)
 
 > [!TIP]
 > Trial best practice: Day 1
 
-Advanced Audit features such as the ability to log crucial events such as MailItemsAccessed and Send require an appropriate E5 license assigned to users. Additionally, the Advanced Auditing app/service plan must be enabled for those users.
+Audit (Premium) features such as the ability to log crucial events such as MailItemsAccessed and Send require an appropriate E5 license assigned to users. Additionally, the Advanced Auditing app/service plan must be enabled for those users.
 
-Set up Advanced Audit for users - to verify that the Advanced Auditing app is assigned to users, [perform the following steps for each user](set-up-advanced-audit.md#step-1-set-up-advanced-audit-for-users).
+Set up Audit (Premium) for users - to verify that the Advanced Auditing app is assigned to users, [perform the following steps for each user](set-up-advanced-audit.md#step-1-set-up-audit-premium-for-users).
 
-1. Enable Advanced Audit events - [enable SearchQueryInitiatedExchange and SearchQueryInitiatedSharePoint](set-up-advanced-audit.md#step-2-enable-advanced-audit-events) to be audited for each user in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. Enable Audit (Premium) events - [enable SearchQueryInitiatedExchange and SearchQueryInitiatedSharePoint](set-up-advanced-audit.md#step-2-enable-audit-premium-events) to be audited for each user in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 1. Set up audit retention policies - [create additional audit log retention policies](set-up-advanced-audit.md#step-3-set-up-audit-retention-policies) to meet the requirements of your organization's security operations, IT, and compliance teams.
-1. Search for Advanced Audit events - [search for crucial Advanced Audit events](set-up-advanced-audit.md#step-4-search-for-advanced-audit-events) and other activities when conducting forensic investigations.
+1. Search for Audit (Premium) events - [search for crucial Audit (Premium) events](set-up-advanced-audit.md#step-4-search-for-audit-premium-events) and other activities when conducting forensic investigations.
 
 ### Step 2: [Create new Audit Log policies to specify how long to retain audit logs in your org for activities performed by users and define priority levels for your policies​](audit-log-retention-policies.md#before-you-create-an-audit-log-retention-policy)
 
 > [!TIP]
 > Trial best practice: Create within the first 30 days
 
-Audit log retention policies are part of the new Advanced Audit capabilities in Microsoft 365. An audit log retention policy lets you specify how long to retain audit logs in your organization.
+Audit log retention policies are part of the new Audit (Premium) capabilities in Microsoft 365. An audit log retention policy lets you specify how long to retain audit logs in your organization.
 
 1. Before you create an audit log retention policy – [key things to know](audit-log-retention-policies.md#before-you-create-an-audit-log-retention-policy) before creating your policy.
 1. [Create an audit log retention policy​](audit-log-retention-policies.md#create-an-audit-log-retention-policy)
-1. [Manage audit log retention policies in the Microsoft 365 compliance center](audit-log-retention-policies.md#manage-audit-log-retention-policies-in-the-microsoft-365-compliance-center) - Audit log retention policies are listed on the Audit retention policies tab (also called the dashboard). You can use the dashboard to view, edit, and delete audit retention policies.
+1. [Manage audit log retention policies in the Microsoft Purview compliance portal](audit-log-retention-policies.md#manage-audit-log-retention-policies-in-the-compliance-portal) - Audit log retention policies are listed on the Audit retention policies tab (also called the dashboard). You can use the dashboard to view, edit, and delete audit retention policies.
 1. Create and manage audit log retention policies on PowerShell - You can also use Security & Compliance Center PowerShell to [create and manage audit log retention policies](audit-log-retention-policies.md#create-and-manage-audit-log-retention-policies-in-powershell). One reason to use PowerShell is to create a policy for a record type or activity that isn't available in the UI.
 
 ## Communication Compliance
 
 **Identify and act on code of conduct policy violations**
 
-Communication compliance helps you intelligently identify communication violations to support a compliant and healthy work environment by helping you detect inappropriate messages, investigate possible policy violations, and take steps to remediate.
+Microsoft Purview Communication Compliance helps you intelligently identify communication violations to support a compliant and healthy work environment by helping you detect inappropriate messages, investigate possible policy violations, and take steps to remediate.
 
 ### Step 1: [Enable permissions for communication compliance](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance)
 
@@ -88,6 +90,7 @@ Communication compliance helps you intelligently identify communication violatio
 > Trial best practice: Day 1
 
 [Assign all compliance users to the Communication Compliance role group](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance).
+
 ### Step 2: [Enable the audit log​](communication-compliance-configure.md#step-2-required-enable-the-audit-log)
 
 > [!TIP]
@@ -107,7 +110,7 @@ To use this feature, turn on auditing so your organization can start recording u
 
 **Manage your organizational compliance easily**
 
-Compliance Manager can help you throughout your compliance journey, from taking inventory of your data protection risks to managing the complexities of implementing controls, staying current with regulations and certifications, and reporting to auditors.
+Microsoft Purview Compliance Manager can help you throughout your compliance journey, from taking inventory of your data protection risks to managing the complexities of implementing controls, staying current with regulations and certifications, and reporting to auditors.
 
 ### Step 1: [Get to know Compliance Manager](compliance-manager-quickstart.md#first-visit-get-to-know-compliance-manager)
 
@@ -165,7 +168,7 @@ Custom assessments are helpful for:
 
 **Protect sensitive data**
 
-To comply with business standards and industry regulations, organizations need to protect sensitive info to prevent its inadvertent disclosure. Set up data loss prevention policies to identify, monitor, and automatically protect sensitive info across Microsoft 365.
+To comply with business standards and industry regulations, organizations need to protect sensitive info to prevent its inadvertent disclosure. Set up Microsoft Purview Data Loss Prevention policies to identify, monitor, and automatically protect sensitive info across Microsoft 365.
 
 ### Step 1: [Protect data loss on Teams locations](dlp-microsoft-teams.md#dlp-licensing-for-microsoft-teams)
 
@@ -186,7 +189,7 @@ If your organization has data loss prevention (DLP), you can define policies tha
 Microsoft Endpoint DLP allows you to monitor Windows 10 devices and detect when sensitive items are used and shared.
 
 1. Prepare your endpoints  - make sure that the Windows 10 and macOS devices that you plan on deploying Endpoint DLP to [meet these requirements](endpoint-dlp-getting-started.md)
-1. [Onboard devices into device management](endpoint-dlp-getting-started.md)  - You must enable device monitoring and onboard your endpoints before you can monitor and protect sensitive items on a device. Both of these actions are done in the Microsoft 365 Compliance portal.
+1. [Onboard devices into device management](endpoint-dlp-getting-started.md)  - You must enable device monitoring and onboard your endpoints before you can monitor and protect sensitive items on a device. Both of these actions are done in the Microsoft Purview compliance portal.
    - Scenario 1 – [Onboarding devices](endpoint-dlp-getting-started.md) that have not been onboarded yet.
    - Scenario 2 - [Microsoft Defender for Endpoint is already deployed and there are endpoints reporting in](endpoint-dlp-getting-started.md). All these endpoints will appear in the managed devices list.
 1. [Configure our default DLP policy for devices](mip-easy-trials.md#dlp-for-devices) or [Define a new DLP policy for devices](endpoint-dlp-learn-about.md).
@@ -204,7 +207,7 @@ You have flexibility in how you configure your DLP policies. You can start with 
       - [Prevent external access to sensitive documents](dlp-microsoft-teams.md#prevent-external-access-to-sensitive-documents)
       - [Get policy tips to help educate users and instructions for customizing policy tips](dlp-microsoft-teams.md#policy-tips-help-educate-users)
    - Devices: switch from audit only to block
-1. [Configure and view alerts for data loss prevention policies - Microsoft 365 Compliance | Microsoft Docs](dlp-configure-view-alerts-policies.md)
+1. [Configure and view alerts for data loss prevention policies - Microsoft Purview | Microsoft Docs](dlp-configure-view-alerts-policies.md)
 
 ## eDiscovery
 
@@ -217,9 +220,9 @@ Take advantage of an end-to-end workflow for preserving, collecting, analyzing, 
 > [!TIP]
 > Trial best practice: Day 1
 
-To access Advanced eDiscovery or be added as a member of an Advanced eDiscovery case, a user must be assigned the appropriate permissions.
+To access eDiscovery (Premium) or be added as a member of an eDiscovery (Premium) case, a user must be assigned the appropriate permissions.
 
-1. [Set up Advanced eDiscovery – Assign eDiscovery permissions](get-started-with-advanced-ediscovery.md#step-2-assign-ediscovery-permissions)
+1. [Set up eDiscovery (Premium) – Assign eDiscovery permissions](get-started-with-advanced-ediscovery.md#step-2-assign-ediscovery-permissions)
 1. [Add or remove members from a case](add-or-remove-members-from-a-case-in-advanced-ediscovery.md)
 
 ### Step 2 (required): Create a Case
@@ -227,9 +230,9 @@ To access Advanced eDiscovery or be added as a member of an Advanced eDiscovery 
 > [!TIP]
 > Trial best practice: Create within the first 30 days
 
-More organizations use the Advanced eDiscovery solution in Microsoft 365 for critical eDiscovery processes. This includes responding to regulatory requests, investigations, and litigation.
+More organizations use the eDiscovery (Premium) solution in Microsoft 365 for critical eDiscovery processes. This includes responding to regulatory requests, investigations, and litigation.
 
-1. Manage Advanced eDiscovery – [learn how to configure Advanced eDiscovery, manage cases by using the Security & Compliance Center, manage a workflow in Advanced eDiscovery, and analyze Advanced eDiscovery search results](/learn/modules/manage-advanced-ediscovery).
+1. Manage eDiscovery (Premium) – [learn how to configure eDiscovery (Premium), manage cases by using the Security & Compliance Center, manage a workflow in eDiscovery (Premium), and analyze eDiscovery (Premium) search results](/learn/modules/manage-advanced-ediscovery).
 1. [Create an eDiscovery case using Advance eDiscovery's new case format](advanced-ediscovery-new-case-format.md)
 1. [Close or delete a case](close-or-delete-case.md) - When the legal case or investigation is completed, you can close or delete. You can also reopen a closed case.
 
@@ -237,9 +240,9 @@ More organizations use the Advanced eDiscovery solution in Microsoft 365 for cri
 
 To allow people in your organization start to create and use cases, you must configure global settings that apply to all cases in your organization. At this time, the only global setting is **attorney-client privilege detection** (more global settings will be available in the future).
 
-1. [Set up Advanced eDiscovery – Global Settings](get-started-with-advanced-ediscovery.md#step-3-configure-global-settings-for-advanced-ediscovery)
+1. [Set up eDiscovery (Premium) – Global Settings](get-started-with-advanced-ediscovery.md#step-3-configure-global-settings-for-ediscovery-premium)
 1. [Configure search and analytics settings](configure-search-and-analytics-settings-in-advanced-ediscovery.md)
-1. [Manage jobs in Advanced eDiscovery](managing-jobs-ediscovery20.md)
+1. [Manage jobs in eDiscovery (Premium)](managing-jobs-ediscovery20.md)
 
 ### Step 4 (optional): [Compliance Boundaries](set-up-compliance-boundaries.md)
 
@@ -256,22 +259,22 @@ Set up compliance boundaries for eDiscovery investigations:
 
 ### Step 5 (optional): [Learn about Content search tool](search-for-content.md)
 
-Use the Content search tool in the Microsoft 365 compliance center to quickly find email in Exchange mailboxes, documents in SharePoint sites and OneDrive locations, and instant messaging conversations in Skype for Business. You can use the content search tool to search for email, documents, and instant messaging conversations in collaboration tools such as Microsoft Teams and Microsoft 365 Groups.
+Use the Content search tool in the Microsoft Purview compliance portal to quickly find email in Exchange mailboxes, documents in SharePoint sites and OneDrive locations, and instant messaging conversations in Skype for Business. You can use the content search tool to search for email, documents, and instant messaging conversations in collaboration tools such as Microsoft Teams and Microsoft 365 Groups.
 
-- [Learn more about Advanced eDiscovery search](search-for-content.md#search-for-content)
+- [Learn more about eDiscovery (Premium) search](search-for-content.md#search-for-content)
 
 ## Information Protection
 
 **Discover, classify and protect your sensitive information**
 
-Implement Microsoft Information Protection and sensitivity labels, to help you discover, classify, and protect your sensitive content wherever it lives or travels.
+Implement Microsoft Purview Information Protection and sensitivity labels, to help you discover, classify, and protect your sensitive content wherever it lives or travels.
 
 ### Step 1: [Start your information protection trial](mip-easy-trials.md)
 
 > [!TIP]
 > Trial best practice: Day 1
 
-Eligible customers can activate default labels and policies for Microsoft Information Protection. When you enable the default configuration in the trial, it will take about 2 minutes to configure all policies for your tenant and up to 24 hours to see the results of these default policies.
+Eligible customers can activate default labels and policies for Microsoft Purview Information Protection. When you enable the default configuration in the trial, it will take about 2 minutes to configure all policies for your tenant and up to 24 hours to see the results of these default policies.
 
 Choosing the default configuration, with 1-click, the following is automatically configured:
 
@@ -350,7 +353,7 @@ To enable insider risk Analytics, you must be a member of the Insider Risk Manag
 
 **Automate the retention schedule for business-critical records**
 
-Use integrated Records Management features to automate the retention schedule for organizational regulatory, legal, and business-critical records. Get full content lifecycle support, from creation to collaboration, record declaration, retention, and disposition.
+Use integrated Microsoft Purview Records Management features to automate the retention schedule for organizational regulatory, legal, and business-critical records. Get full content lifecycle support, from creation to collaboration, record declaration, retention, and disposition.
 
 ### Step 1: Dynamically target retention policies with Adaptive Policy Scopes
 
@@ -390,14 +393,14 @@ Trainable classifiers are tools that recognize various types of content, based o
 
 ### More information: Auto-apply retention labels + disposition review
 
-**Apply labels automatically to retain what you need…**
+**Apply labels automatically to retain what you need...**
 Retention labels can be automatically applied to content when it contains:
 
 - [Specific types of sensitive information](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-specific-types-of-sensitive-information)
 - [Specific keywords or searchable properties that match a query you create](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
 - [A match for trainable classifiers](apply-retention-labels-automatically.md#auto-apply-labels-to-content-by-using-trainable-classifiers)
 
-**…then dispose of it safely at the end.**
+**...then dispose of it safely at the end.**
 
 When a disposition review is triggered at the end of the retention period, the reviewers you choose receive an email notification that they have content to review.
 
@@ -413,7 +416,7 @@ Help your organization assess risks and efficiently respond to nations, regional
 
 [More information on the Compliance Manager premium assessments trial](compliance-easy-trials-compliance-manager-assessments.md).
 
-[Trial playbook: Microsoft Compliance Manager premium assessments](compliance-easy-trials-compliance-manager-assessment-playbook.md)
+[Trial playbook: Microsoft Purview Compliance Manager premium assessments](compliance-easy-trials-compliance-manager-assessment-playbook.md)
 
 ### Microsoft Priva Privacy Risk Management and Microsoft Priva Subject Rights Requests
 
@@ -427,8 +430,8 @@ Proactively identify and protect against privacy risks such as data hoarding, da
 
 ## Additional resources
 
-**What’s included**: For a full list of Microsoft 365 compliance solutions and features listed by product tier, view the [Feature Matrix](https://go.microsoft.com/fwlink/?linkid=2139145).
+**What’s included**: For a full list of Microsoft Purview solutions and features listed by product tier, view the [Feature Matrix](https://go.microsoft.com/fwlink/?linkid=2139145).
 
-**Microsoft Security Technical Content Library**: Explore this library to find interactive guides and other learning content relevant to your needs. [Visit Library](/security/content-library).
+**Microsoft Security Technical Content Library**: Explore this library to find interactive guides and other learning content relevant to your needs. [Visit Library](/security).
 
 **Microsoft Security Resources**: From antimalware to Zero Trust, get all the relevant resources for your organization’s security needs. [Visit Resources](/security/business/resources).

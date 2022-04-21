@@ -91,7 +91,7 @@ Type "`:wq`" without the double quotes.
 
 To view your cron jobs, type `sudo crontab -l`
 
-:::image type="content" source="../../media/linux-mdatp-1.png" alt-text="linux mdatp.":::
+:::image type="content" source="../../media/linux-mdatp-1.png" alt-text="The linux mdatp page" lightbox="../../media/linux-mdatp-1.png":::
 
 #### To inspect cron job runs
 
@@ -204,9 +204,9 @@ crontab -u username -r
 
 ### Explanation
 
-+—————- minute (values: 0 - 59) (special characters: , - * /)  <br>
-| +————- hour (values: 0 - 23) (special characters: , - * /) <br>
-| | +———- day of month (values: 1 - 31) (special characters: , - * / L W C)  <br>
-| | | +——- month (values: 1 - 12) (special characters: ,- * / )  <br>
-| | | | +—- day of week (values: 0 - 6) (Sunday=0 or 7) (special characters: , - * / L W C) <br>
++—————- minute (values: 0 - 59) (special characters: , \- \* /)  <br>
+| +————- hour (values: 0 - 23) (special characters: , \- \* /) <br>
+| | +———- day of month (values: 1 - 31) (special characters: , \- \* / L W C)  <br>
+| | | +——- month (values: 1 - 12) (special characters: , \- \* / )  <br>
+| | | | +—- day of week (values: 0 - 6) (Sunday=0 or 7) (special characters: , \- \* / L W C) <br>
 | | | | |*****command to be executed

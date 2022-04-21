@@ -6,11 +6,11 @@ audience: ITPro
 author: dansimp
 ms.author: dansimp
 manager: dansimp
-ms.collection: M365-identity-device-management
+ms.collection: M365-security-compliance
 ms.topic: article
 ms.localizationpriority: medium
 ms.reviewer: 
-ms.technology: windows-sec
+ms.technology: m365d
 ---
 
 # About the Microsoft Bug Bounty Program

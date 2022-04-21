@@ -49,7 +49,7 @@ ms.prod: m365-security
 4. When you're finished, click **Add**.
 
 > [!NOTE]
-> The emails from these senders will be blocked as *spam*. 
+> The emails from these senders will be blocked as *high confidence spam (SCL = 9)*. 
 
 ### Create block URL entries in the Tenant Allow/Block List
 

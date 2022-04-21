@@ -99,7 +99,7 @@ As another example, you may manage lists of individual customers to
 send them notices about special offers, if they have consented to this.
 
 #### Microsoft 365 features that can help
-[Microsoft Information Protection in Microsoft 365](/microsoft-365/compliance/information-protection) can help you discover, classify, and protect sensitive information in your company. You can use trainable classifiers to help you identify and label document types that contain personal data. 
+[Microsoft Purview Information Protection](/microsoft-365/compliance/information-protection) can help you discover, classify, and protect sensitive information in your company. You can use trainable classifiers to help you identify and label document types that contain personal data. 
 
 ### Step 2: Inform your customers, employees, and other individuals when you need to collect their personal data
 
@@ -134,7 +134,8 @@ that they are not accessible by unauthorized persons.
 If you choose to store personal data in the cloud, such as through Microsoft 365, you have security features such as the ability to help you to manage permissions to files and folders, centralized secure locations to save your files (OneDrive or SharePoint document libraries), and data encryption when sending or retrieving your files. 
 
 #### Microsoft 365 features that can help
-You can use [Set up DLP features](set-up-compliance.md#watch-set-up-dlp-features) to help to protect your business's sensitive information. You can [set up a DLP policy](/microsoft-365/compliance/create-a-dlp-policy-from-a-template) that uses the [GDPR template](/microsoft-365/compliance/what-the-dlp-policy-templates-include#general-data-protection-regulation-gdpr).
+
+You can use [Set up compliance features](../../business-premium/m365bp-set-up-compliance.md) to help to protect your business's sensitive information. Compliance Manager can help you get started right away! For example, you can [set up a DLP policy](/microsoft-365/compliance/create-a-dlp-policy-from-a-template) that uses the [GDPR template](/microsoft-365/compliance/what-the-dlp-policy-templates-include#general-data-protection-regulation-gdpr).
 
 ### Step 5: Keep documentation on your data processing activities
 

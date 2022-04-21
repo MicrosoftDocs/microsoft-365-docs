@@ -15,17 +15,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 
-description: "Learn how to select and export content from an Advanced eDiscovery review set for presentations or external reviews."
+description: "Learn how to select and export content from an eDiscovery (Premium) review set for presentations or external reviews."
 ms.custom: seo-marvel-mar2020
 ---
 
-# Export documents from a review set in Advanced eDiscovery
+# Export documents from a review set in eDiscovery (Premium)
 
-Export allows users to customize the content that is included in the download package when you export document from a review set in Advanced eDiscovery.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Export allows users to customize the content that is included in the download package when you export document from a review set in eDiscovery (Premium).
 
 To export documents from a review set:
 
-1. In the Microsoft 365 compliance center, open the Advanced eDiscovery case, select the **Review sets** tab, and then select the review set that you want to export.
+1. In the Microsoft Purview compliance portal, open the eDiscovery (Premium) case, select the **Review sets** tab, and then select the review set that you want to export.
 
 2. In the review set, click **Action** > **Export**.
 

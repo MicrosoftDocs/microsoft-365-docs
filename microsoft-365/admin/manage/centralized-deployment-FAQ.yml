@@ -35,7 +35,7 @@ sections:
            
           Centralized Deployment is only supported for online mailboxes. It does not support deployment to on-premises Exchange mailboxes.
           
-          You can use the [Centralized Deployment Compatibility Checker](centralized-deployment-of-add-ins.md#centralized-deployment-compatibility-checker) to determine if your subscription is eligible. 
+          You can use the [Centralized Deployment Compatibility Checker](centralized-deployment-of-add-ins.md#centralized-deployment-compatibility-checker) to determine if your subscription is eligible. 
             
       - question: |
           How do you target add-in user assignments with Centralized Deployment?
@@ -47,9 +47,9 @@ sections:
           For more details, see [User and Group assignments](./centralized-deployment-of-add-ins.md?view=o365-worldwide#user-and-group-assignments).
            
       - question: |
-          How long does it take for add-ins to show up for all users? 
+          How long does it take for add-ins to show up for all users?
         answer: |
-          It can take up to 24 hours for an add-in to show up for all users. It can take the same amount of time for add-in updates, changes from turn on or turn off, or add-in removals. 
+          It can take up to 24 hours for a new add-in deployment to show up for all users. It can take up to 72 hours for add-in updates, changes from turn on or turn off, or add-in removals to reflect for users.
 
       - question: |
           As an administrator, how do I manage the user access to add-ins for my organization?
