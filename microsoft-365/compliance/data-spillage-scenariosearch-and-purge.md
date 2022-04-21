@@ -18,6 +18,8 @@ description: "Use eDiscovery and search tools to manage and respond to a data sp
 
 # eDiscovery solution series: Data spillage scenario - Search and purge
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
  **What is data spillage and why should you care?** Data spillage is when a confidential document is released into an untrusted environment. When a data spillage incident is detected, it's important to quickly assess the size and locations of the spillage, examine user activities around it, and then permanently purge the spilled data from the system.
   
 ## Data spillage scenario

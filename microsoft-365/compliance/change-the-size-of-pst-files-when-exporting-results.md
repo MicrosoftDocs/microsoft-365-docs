@@ -19,6 +19,8 @@ description: "You can change the default size of PST files that are downloaded t
 
 # Change the size of PST files when exporting eDiscovery search results
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 When you use the eDiscovery Export tool to export the email results of an eDiscovery search from the different Microsoft eDiscovery tools, the default size of a PST file that can be exported is 10 GB. If you want to change this default size, you can edit the Windows Registry on the computer that you use to export the search results. One reason to do this is so a PST file can fit on removable media, such a DVD, a compact disc, or a USB drive. 
   
 > [!NOTE]

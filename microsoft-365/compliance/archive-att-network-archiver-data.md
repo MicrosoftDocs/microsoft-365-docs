@@ -16,6 +16,8 @@ description: "Admins can set up a TeleMessage connector to import and archive SM
 
 # Set up a connector to archive AT&T SMS/MMS data
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Use a TeleMessage connector in the Microsoft Purview compliance portal to import and archive SMS and MMS data from AT&T Mobile Network. After you set up and configure a connector, it connects to your organization's AT&T Network once every day, and imports SMS and MMS data to mailboxes in Microsoft Purview.
 
 After SMS and MMS messages are stored in user mailboxes, you can apply Microsoft 365 Purview features such as Litigation Hold, Content Search, and Microsoft 365 retention policies to AT&T Network data. For example, you can search AT&T Network data using Content Search or associate the mailbox that contains the AT&T Network connector data with a custodian in an eDiscovery (Premium) case. Using a AT&T Network connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.

@@ -21,6 +21,8 @@ description: "Use eDiscovery cases in the Microsoft Purview compliance portal to
 
 # Manage legal investigations in Microsoft 365
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Organizations have many reasons to respond to a legal case involving certain executives or other employees in your organization. This might involve quickly finding and retaining for further investigation-specific information in email, documents, instant messaging conversations, and other content locations used by people in their day-to-day work tasks. You can perform these and many other similar activities by using the eDiscovery case tools in the security and compliance center.
   
 **Want to know how Microsoft manages its eDiscovery investigations?** Here's a [technical white paper](https://go.microsoft.com/fwlink/?linkid=852161) you can download that explains how we use the same search and investigation tools to manage our internal eDiscovery workflow.

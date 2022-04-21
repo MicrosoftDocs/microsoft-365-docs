@@ -21,6 +21,8 @@ description: "Learn about the limits in effect for the Content search and eDisco
 
 # Limits for eDiscovery search
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Various limits are applied to eDiscovery search tools in the Microsoft Purview compliance portal. This includes searches run on the **Content search** page and searches that are associated with an eDiscovery case on the **eDiscovery (Standard)** page. These limits help to maintain the health and quality of services provided to organizations. There are also limits related to the indexing of email messages in Exchange Online for search. You can't modify the limits for eDiscovery searches or email indexing, but you should be aware of them so that you can take these limits into consideration when planning, running, and troubleshooting eDiscovery searches.
 
 For limits related to the Microsoft Purview eDiscovery (Premium) tool, see [Limits in eDiscovery (Premium)](limits-ediscovery20.md)

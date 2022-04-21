@@ -21,6 +21,8 @@ description: "This article describes the limits in eDiscovery (Standard) case in
 
 # Limits in eDiscovery (Standard)
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 The following table lists the limits for eDiscovery (Standard) cases and holds associated with a eDiscovery (Standard) case. For more information about Microsoft Purview eDiscovery (Standard), see [Overview of eDiscovery (Standard)](./get-started-core-ediscovery.md).
     
   | Description of limit | Limit |
