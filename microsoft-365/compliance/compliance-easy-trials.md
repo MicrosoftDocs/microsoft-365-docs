@@ -110,6 +110,10 @@ Wondering what you can experience in your free trial? The Purview solutions tria
 
   Take advantage of an end-to-end workflow for preserving, collecting, analyzing, and exporting content that's responsive to your organization's internal and external investigations. Legal teams can also manage the entire legal hold notification process by communicating with custodians involved in a case. Learn more about [eDiscovery](ediscovery.md)
 
+- **Information Governance**
+
+  Automate your retention policy coverage using Adaptive Policy Scopes. This feature allows you to dynamically target retention policies to specific users, groups, or sites. These policies automatically update when changes occur in your organization. In addition, retention policies using adaptive scopes are not subject to location limits! Learn more about [Adaptive Policy Scopes](retention.md).
+
 - **Information Protection**
 
   Implement Microsoft Purview Information Protection with [sensitivity labels](sensitivity-labels.md) to help you discover, classify, and protect your sensitive content wherever it lives or travels. With the trials, you can recommend users apply sensitivity labels to their emails and docs, discover and automatically label sensitive content, take advantage of machine learning based classifiers, and get started quickly with our recommended labels and policies.
@@ -139,6 +143,7 @@ Wondering what you can experience in your free trial? The Purview solutions tria
 - **Records Management**
 
   Use integrated Microsoft Purview Records Management features to:
+
   - Classify content as a record to prevent users from editing, as required by regulations, laws, or organizational policy
   - Apply retention labels to content automatically when it matches criteria you specify, using auto-apply label policies
   - Use adaptive scope policies to dynamically target your retention label policies to locations, with no limit on how many locations are included
