@@ -85,7 +85,7 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: View your Threat & Vulnerability Management dashboard
+          - text: View your threat dashboard
             url: mdb-view-tvm-dashboard.md
           - text: View and manage incidents
             url: mdb-view-manage-incidents.md
