@@ -47,7 +47,7 @@ Web content filtering is available on the major web browsers, with blocks perfor
 
 Before trying out this feature, make sure you meet the following requirements:
 
-- Your subscription includes one of the following: Windows 10 Enterprise E5, Microsoft 365 E5, Microsoft 365 E5 Security, Microsoft 365 E3 + Microsoft 365 E5 Security add-on, or the Microsoft Defender for Endpoint standalone license. 
+- Your subscription includes one of the following: Windows 10 Enterprise E5, Microsoft 365 E5, Microsoft 365 E5 Security, Microsoft 365 E3, or the Microsoft Defender for Endpoint standalone license. 
 
 - You have access to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
 
@@ -195,12 +195,6 @@ If you encounter a domain that has been incorrectly categorized, you can dispute
 To dispute the category of a domain, navigate to **Reports** \> **Web protection** \> **Web Content Filtering Details** \> **Domains**. On the domains tab of the Web Content Filtering reports, you will see an ellipsis beside each of the domains. Hover over this ellipsis and select **Dispute Category**.
 
 A panel will open where you can select the priority and add more details such as the suggested category for recategorization. Once you complete the form, select **Submit**. Our team will review the request within one business day. For immediate unblocking, create a [custom allow indicator](indicator-ip-domain.md).
-
-### URL category lookup
-
-To determine the category of a website, you can use the URL search function available on the Microsoft 365 Defender portal (<https://security.microsoft.com>) under **Endpoints** \> **Search**. In the URL search results, the web content filtering category appears under **URL/Domain details**. If the category result is not shown, the URL is not currently assigned to an existing web content filtering category.
-
-<!---:::image type="content" source="../../media/web-content-filtering-category-lookup.png" alt-text="The web content filtering category lookup results" lightbox="../../media/web-content-filtering-category-lookup.png":::--->
 
 ## Web content filtering cards and details
 

@@ -1,5 +1,5 @@
 ---
-title: "Create a predictive coding model in Advanced eDiscovery"
+title: "Create a predictive coding model in eDiscovery (Premium)"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -13,14 +13,16 @@ ms.localizationpriority: medium
 search.appverid: 
 - MET150
 ms.collection: M365-security-compliance
-description: "Learn how to create a predictive coding model in Advanced eDiscovery. This is the first step in using the machine learning capabilities in Advanced eDiscovery to help you identify relevant and non-relevant content in a review set."
+description: "Learn how to create a predictive coding model in eDiscovery (Premium). This is the first step in using the machine learning capabilities in eDiscovery (Premium) to help you identify relevant and non-relevant content in a review set."
 ---
 
 # Create a predictive coding model (preview)
 
-The first step in using the machine learning capabilities of predictive coding in Advanced eDiscovery is to create a predictive coding model. After you create a model, you can train it identify the relevant and non-relevant content in a review set.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-To review the predictive coding workflow, see [Learn about predictive coding in Advanced eDiscovery](predictive-coding-overview.md#the-predictive-coding-workflow)
+The first step in using the machine learning capabilities of predictive coding in eDiscovery (Premium) is to create a predictive coding model. After you create a model, you can train it identify the relevant and non-relevant content in a review set.
+
+To review the predictive coding workflow, see [Learn about predictive coding in eDiscovery (Premium)](predictive-coding-overview.md#the-predictive-coding-workflow)
 
 ## Before you create a model
 
@@ -32,7 +34,7 @@ To review the predictive coding workflow, see [Learn about predictive coding in 
 
 ## Create a model
 
-1. In the Microsoft 365 compliance center, open an Advanced eDiscovery case and then select the **Review sets** tab.
+1. In the Microsoft Purview compliance portal, open an eDiscovery (Premium) case and then select the **Review sets** tab.
 
 2. Open a review set and then click **Analytics** > **Manage predictive coding (preview)**.
 

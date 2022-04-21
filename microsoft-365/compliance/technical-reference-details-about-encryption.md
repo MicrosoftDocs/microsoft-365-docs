@@ -24,6 +24,8 @@ ms.custom: seo-marvel-apr2020
 
 # Technical reference details about encryption
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Refer to this article to learn about certificates, technologies, and TLS cipher suites used for [encryption in Office 365](encryption.md). This article also provides details about planned deprecations.
   
 - If you're looking for overview information, see [Encryption in Office 365](encryption.md).

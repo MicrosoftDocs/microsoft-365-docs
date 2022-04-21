@@ -1,5 +1,5 @@
 ---
-title: "Plan for security &amp; compliance"
+title: "Plan for security and compliance"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -20,6 +20,8 @@ ms.custom: seo-marvel-apr2020
 ---
 
 # Plan for security &amp; compliance
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Managing security and compliance is a partnership. You are responsible for protecting your data, identities, and devices, while Microsoft vigorously protects Microsoft 365 services. You can use Microsoft 365 and Enterprise Mobility + Security (EMS) together to help you achieve the appropriate level of protection for your organization.
   

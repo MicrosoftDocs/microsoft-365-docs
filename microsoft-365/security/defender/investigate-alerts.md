@@ -31,7 +31,7 @@ ms.technology: m365d
 - Microsoft 365 Defender
 
 >[!Note]
->This article describes security alerts in Microsoft 365 Defender. However, you can use activity alerts to send email notifications to yourself or other admins when users perform specific activities in Microsoft 365. For more information, see [Create activity alerts - Microsoft 365 Compliance | Microsoft Docs](../../compliance/create-activity-alerts.md).
+>This article describes security alerts in Microsoft 365 Defender. However, you can use activity alerts to send email notifications to yourself or other admins when users perform specific activities in Microsoft 365. For more information, see [Create activity alerts - Microsoft Purview | Microsoft Docs](../../compliance/create-activity-alerts.md).
 
 Alerts are the basis of all incidents and indicate the occurrence of malicious or suspicious events in your environment. Alerts are typically part of a broader attack and provide clues about an incident.
 
@@ -59,7 +59,7 @@ You can filter alerts according to these criteria:
 
 ## Required roles for Defender for Office 365 alerts
 
-You’ll need to have any of the following roles to access Microsoft Defender for Office 365 alerts:
+You'll need to have any of the following roles to access Microsoft Defender for Office 365 alerts:
 
 - For Azure Active Directory (Azure AD) global roles:
 
