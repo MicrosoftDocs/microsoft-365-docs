@@ -81,7 +81,7 @@ The following table compares security features and capabilities in Defender for 
 |Partner APIs|Yes|Yes|Yes|
 |[Microsoft 365 Lighthouse integration](../../lighthouse/m365-lighthouse-overview.md) <br/>(For viewing security incidents across customer tenants)|Yes|No|No|
 
-(<a id="fn1">1</a>) Onboard and manage devices in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) or with Microsoft Intune (managed in the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)).
+(<a id="fn1">1</a>) Onboard and manage devices in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) or with Microsoft Intune, managed in the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)).
 
 (<a id="fn2">2</a>) Endpoint detection and response (EDR) capabilities in Defender for Business include behavior-based detection and the following four types of manual response actions: 
 - Run antivirus scan
