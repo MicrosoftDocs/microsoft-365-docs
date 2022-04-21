@@ -109,14 +109,14 @@ The steps below provides a guide on how to fill out your package details:
 
 
 
-# Upload your binaries, dependencies, and scripts
+## Upload your binaries, dependencies, and scripts
 
 On this tab, you will upload a single zip package containing your binaries, dependencies and scripts used to run your test suite.
 
 > [!NOTE]
 > The size of the zip package should be between a minimum of 10 MB and a maximum of 2 GB.
 
-## Upload package zip file
+**Upload package zip file**
 
 :::image type="content" alt-text="Upload your binaries." source="Media/AddBinaries.png":::
 
@@ -131,7 +131,7 @@ On this tab, you will upload a single zip package containing your binaries, depe
 
 
 
-# The tasks tab
+## The tasks tab
 
 On  the tasks tab, you are expected to provide the paths to your test scripts which are in the zip folder you uploaded under the binaries tab.
 
@@ -141,7 +141,7 @@ On  the tasks tab, you are expected to provide the paths to your test scripts wh
     The scripts run in the sequence they are listed. A failure in a particular script stops subsequent scripts from executing.
     You also have the option of selecting additional settings for each script provided.
 
-## Set script path
+**Set script path**
 
 :::image type="content" alt-text="Image of test task." source="Media/testtask.png":::
 
@@ -164,7 +164,7 @@ _**Zip_file_uploaded**_
 
 
 
-# Choose your test options. 
+## Choose your test options. 
 
 The ```Test Options``` tab is for users who wish to perform functional tests to indicate when the Windows Update patch should be applied in the sequence of executing their functional test scripts.
 
@@ -174,7 +174,7 @@ Select _**Review**_ to navigate to the next tab and review your selected test op
 
 
 
-# Review your selections to create your package.
+## Review your selections to create your package.
 
 1. On this tab, the service displays your test details and runs a quick completeness check.
 
