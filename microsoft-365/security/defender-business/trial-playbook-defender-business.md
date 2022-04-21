@@ -94,7 +94,7 @@ If you used the wizard but need to onboard non-Windows devices go directly to st
    - [Learn about types of email notifications](mdb-email-notifications.md#types-of-email-notifications).
    - [View and edit email notification settings](mdb-email-notifications.md#view-and-edit-email-notifications).
 
-4. Onboard devices - with Defender for Business, you have several options to choose from for onboarding your company's devices. Start by selecting the operating system you want to onboard. 
+4. Onboard devices. With Defender for Business, you have several options to choose from for onboarding your company's devices. Start by selecting the operating system you want to onboard. 
 
    - [Windows clients](mdb-onboard-devices.md#windows-clientstabwindowsclientdevices): Choose one of the following options to onboard Windows client devices to Defender for Business:
       - [Local script](mdb-onboard-devices.md#local-script-for-windows-clients) (for onboarding devices manually in the Microsoft 365 Defender portal)
