@@ -53,7 +53,7 @@ Click the infographic to see a larger version, or [Download a copy of the Cybers
 
 :::image type="content" source="../media/m365bp-cyber-security-playbook.png" alt-text="The Cybersecurity Playbook" lightbox="../media/m365bp-cyber-security-playbook.png":::
 
-[Get the PDF]((https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)!
+[Get the PDF](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)!
 
 Now, let's get started [fortifying your environment](m365bp-setup-overview.md)!
 
@@ -80,7 +80,7 @@ Click the infographic to see a larger version, or [Download a copy of the Cybers
 
 :::image type="content" source="../media/m365bp-cyber-security-playbook.png" alt-text="The Cybersecurity Playbook" lightbox="../media/m365bp-cyber-security-playbook.png":::
 
-[Get the PDF]((https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)!
+[Get the PDF](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)!
 
 > [!Note]
 > When a term or directive is unclear, you can find definitions in the [glossary of terms](m365bp-glossary.md).
@@ -101,7 +101,7 @@ Click the infographic to see a larger version, or [Download a copy of the Cybers
 
 :::image type="content" source="../media/m365bp-cyber-security-playbook.png" alt-text="The Cybersecurity Playbook" lightbox="../media/m365bp-cyber-security-playbook.png":::
 
-[Get the PDF]((https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)!
+[Get the PDF](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)!
 
 Now, let's get started [fortifying your environment](m365bp-setup-overview.md)!
 
