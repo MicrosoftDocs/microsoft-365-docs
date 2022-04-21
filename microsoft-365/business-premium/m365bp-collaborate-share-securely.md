@@ -39,4 +39,4 @@ Your objectives are as follows:
 
 After you complete these objectives, start your [final mission](m365bp-protect-devices.md).
 
-:::image type="content" source="../media/m365bp-collaborate-share-securely.jpg" alt-text="Collaborate and share securely.":::
+:::image type="content" source="media/m365bp-collaborate-share-securely.jpg" alt-text="Collaborate and share securely.":::

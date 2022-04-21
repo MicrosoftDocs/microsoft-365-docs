@@ -39,5 +39,5 @@ Your mission objectives:
 
 Once these objectives have been achieved, your overall mission to protect the organization against cyberattacks and other cybersecurity threats is a success! Now, make sure to set up your response teams to deal with any situation that may arise while defending the integrity of the system. 
 
-:::image type="content" source="../media/m365bp-secure-managed-devices.jpg" alt-text="Secure managed devices.":::
+:::image type="content" source="media/m365bp-secure-managed-devices.jpg" alt-text="Secure managed devices.":::
 

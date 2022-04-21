@@ -43,7 +43,7 @@ In these first missions, sign in and set up your initial walls of defense, start
 
 [**Bump up cybersecurity protections**](m365bp-security-overview.md). Set up critical front-line security measures to prevent cyberattacks. 
 
-[:::image type="content" source="../media/m365bp-fortify-environment.jpg" alt-text="Microsoft 365 Business Premium protects your apps, file storage, email, devices, and identities,.":::](m365bp-setup-overview.md)
+[:::image type="content" source="media/m365bp-fortify-environment.jpg" alt-text="Microsoft 365 Business Premium protects your apps, file storage, email, devices, and identities,.":::](m365bp-setup-overview.md)
 
 ## Cybersecurity playbook
 
@@ -51,7 +51,7 @@ The guidance in these missions helps your business achieve the goals described i
 
 Click the infographic to see a larger version, or [Download a copy of the Cybersecurity playbook poster](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)!
 
-:::image type="content" source="../media/m365bp-cyber-security-playbook.png" alt-text="The Cybersecurity Playbook" lightbox="../media/m365bp-cyber-security-playbook.png":::
+:::image type="content" source="media/m365bp-cyber-security-playbook.png" alt-text="The Cybersecurity Playbook" lightbox=media/m365bp-cyber-security-playbook.png":::
 
 [Get the PDF](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)!
 
@@ -76,7 +76,7 @@ We've included a set of missions here with some objectives that need to be compl
 
 [**Collaborate and share securely**](m365bp-collaborate-share-securely.md). The objectives of this mission require you to set up secure file sharing for all members of the organization.
 
-[:::image type="content" source="../media/m365bp-train-team.jpg" alt-text="Microsoft 365 Business Premium protects your apps, file storage, email, devices, and identities.":::](m365bp-devices-overview.md)
+[:::image type="content" source="media/m365bp-train-team.jpg" alt-text="Microsoft 365 Business Premium protects your apps, file storage, email, devices, and identities.":::](m365bp-devices-overview.md)
 
 ## Cybersecurity playbook
 
@@ -84,7 +84,7 @@ The guidance in these missions helps your business achieve the goals described i
 
 Click the infographic to see a larger version, or [Download a copy of the Cybersecurity playbook poster](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)!
 
-:::image type="content" source="../media/m365bp-cyber-security-playbook.png" alt-text="The Cybersecurity Playbook" lightbox="../media/m365bp-cyber-security-playbook.png":::
+:::image type="content" source="media/m365bp-cyber-security-playbook.png" alt-text="The Cybersecurity Playbook" lightbox="media/m365bp-cyber-security-playbook.png":::
 
 [Get the PDF](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)!
 
@@ -105,7 +105,7 @@ A safe device is one that is monitored by the organization. In this last critica
 
 [**Set up and secure managed devices**](m365bp-protect-devices.md). Take the steps to secure those devices so they are monitored and protected by the organization! 
 
-[:::image type="content" source="../media/m365bp-safeguard-managed-devices.jpg" alt-text="Microsoft 365 Business Premium protects your apps, file storage, email, devices, and identities.":::](m365bp-protect-devices.md)
+[:::image type="content" source="media/m365bp-safeguard-managed-devices.jpg" alt-text="Microsoft 365 Business Premium protects your apps, file storage, email, devices, and identities.":::](m365bp-protect-devices.md)
 
 ## Cybersecurity playbook
 
@@ -113,7 +113,7 @@ The guidance in these missions helps your business achieve the goals described i
 
 Click the infographic to see a larger version, or [Download a copy of the Cybersecurity playbook poster](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)!
 
-:::image type="content" source="../media/m365bp-cyber-security-playbook.png" alt-text="The Cybersecurity Playbook" lightbox="../media/m365bp-cyber-security-playbook.png":::
+:::image type="content" source="media/m365bp-cyber-security-playbook.png" alt-text="The Cybersecurity Playbook" lightbox="media/m365bp-cyber-security-playbook.png":::
 
 [Get the PDF](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)!
 

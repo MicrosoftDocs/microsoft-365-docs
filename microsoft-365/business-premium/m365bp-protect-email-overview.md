@@ -38,5 +38,5 @@ The mission objectives are to:
 
 Accomplish these objectives before you move on to the [next mission](m365bp-collaborate-share-securely.md).
 
-:::image type="content" source="../media/m365bp-use-email-securely.jpg" alt-text="Protect your email.":::
+:::image type="content" source="media/m365bp-use-email-securely.jpg" alt-text="Protect your email.":::
    

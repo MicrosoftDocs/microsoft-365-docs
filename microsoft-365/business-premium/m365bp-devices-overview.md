@@ -39,4 +39,4 @@ Your objectives are as follows:
 
 Once you've accomplished these objectives, proceed with your [next mission](m365bp-protect-email-overview.md).
 
-:::image type="content" source="../media/m365bp-set-up-devices-staff.jpg" alt-text="Set up devices for all staff.":::
+:::image type="content" source="media/m365bp-set-up-devices-staff.jpg" alt-text="Set up devices for all staff.":::
