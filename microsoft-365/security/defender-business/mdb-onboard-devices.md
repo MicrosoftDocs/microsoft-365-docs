@@ -47,13 +47,13 @@ With Microsoft Defender for Business, you have several options to choose from fo
 Choose one of the following options to onboard Windows client devices to Defender for Business:
 
 - [Local script](#local-script-for-windows-clients) (for onboarding devices manually in the Microsoft 365 Defender portal)
-- [Group Policy](#group-policy-for-windows-clients)
-- [Microsoft Endpoint Manager](#endpoint-manager-for-windows-clients) (included in [Microsoft 365 Business Premium](../../business-premium/index.md))
+- [Group Policy](#group-policy-for-windows-clients) (if you're already using Group Policy in your organization)
+- [Microsoft Intune](#endpoint-manager-for-windows-clients) (included in [Microsoft 365 Business Premium](../../business-premium/index.md))
 
 
 ### Local script for Windows clients
 
-You can use a local script to onboard Windows client devices. When you run the onboarding script on a device, it creates a trust with Azure Active Directory (if that trust doesn't already exist), enrolls the device in Microsoft Endpoint Manager (if it isn't already enrolled), and then onboards the device to Defender for Business. The local script method works even if you don't currently have Endpoint Manager (or Microsoft Intune). We recommend onboarding up to 10 devices at a time using this method.
+You can use a local script to onboard Windows client devices. When you run the onboarding script on a device, it creates a trust with Azure Active Directory (if that trust doesn't already exist), enrolls the device in Microsoft Intune (if it isn't already enrolled), and then onboards the device to Defender for Business. The local script method works even if you don't currently have Intune. We recommend onboarding up to 10 devices at a time using this method.
 
 > [!TIP]
 > We recommend onboarding up to 10 devices at a time when you use the local script method.
@@ -78,9 +78,9 @@ You can use a local script to onboard Windows client devices. When you run the o
 
 If you prefer to use Group Policy to onboard Windows clients, follow the guidance in [Onboard Windows devices using Group Policy](../defender-endpoint/configure-endpoints-gp.md). This article describes the steps for onboarding to Microsoft Defender for Endpoint; however, the steps for onboarding to Defender for Business are similar.
 
-### Endpoint Manager for Windows clients
+### Microsoft Intune for Windows clients
 
-If your subscription includes [Microsoft Endpoint Manager](/mem/endpoint-manager-overview), you can onboard Windows clients and other devices in the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). For example, if you have [Microsoft 365 Business Premium](../../business/index.yml), you have Endpoint Manager as part of your subscription. Endpoint Manager includes [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) and [Mobile Device Management capabilities](/mem/intune/fundamentals/what-is-device-management). 
+If your subscription includes Intune, you can onboard Windows clients and other devices in the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). For example, if you have [Microsoft 365 Business Premium](../../business/index.yml), you have Intune as part of your subscription.  
 
 There are several methods available for enrolling devices in Intune. We recommend starting with one of the following methods:
 
@@ -95,7 +95,7 @@ When you set up automatic enrollment, users add their work account to the device
 
 2. Select **Azure Active Directory** > **Mobility (MDM and MAM)** > **Microsoft Intune**.
 
-3. Configure the MDM User scope and the MAM user scope.
+3. Configure the **MDM User scope** and the **MAM user scope**.
 
    :::image type="content" source="media/mem-mam-scope-azure-ad.png" alt-text="Screenshot of setting MDM user scope and MAM user scope in Intune.":::
 
@@ -164,7 +164,7 @@ Choose one of the following options to onboard macOS devices:
 
 ### Local script for macOS
 
-When you run the local script on a macOS device, it creates a trust with Azure Active Directory (if that trust doesn't already exist), enrolls the device in Microsoft Endpoint Manager (if it isn't already enrolled), and then onboards the device to Defender for Business. The local script method works even if you don't currently have Endpoint Manager (or Microsoft Intune). We recommend onboarding up to 10 devices at a time using this method.
+When you run the local script on a macOS device, it creates a trust with Azure Active Directory (if that trust doesn't already exist), enrolls the device in Microsoft Intune (if it isn't already enrolled), and then onboards the device to Defender for Business. The local script method works even if you don't currently have Intune. We recommend onboarding up to 10 devices at a time using this method.
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.
 
