@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Lighthouse Threat management page overview"
+title: "Overview of the Threat management page in Microsoft 365 Lighthouse"
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -18,7 +18,7 @@ search.appverid: MET150
 description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn about the Threat management page."
 ---
 
-# Microsoft 365 Lighthouse Threat management page overview 
+# Overview of the Threat management page in Microsoft 365 Lighthouse 
 
 **Applies to:**
 
