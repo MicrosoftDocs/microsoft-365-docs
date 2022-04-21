@@ -24,6 +24,8 @@ description: "This article describes how to set up Audit (Premium) so you can pe
 
 # Set up Microsoft Purview Audit (Premium)
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 If your organization has a subscription and end-user licensing that supports Audit (Premium), perform the following steps to set up and use the additional capabilities in Audit (Premium).
 
 ![Workflow to set up Audit (Premium).](../media/AdvancedAuditWorkflow.png)

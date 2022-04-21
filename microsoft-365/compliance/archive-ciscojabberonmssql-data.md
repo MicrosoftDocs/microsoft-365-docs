@@ -16,6 +16,8 @@ description: "Admins can set up a connector to import and archive Cisco Jabber o
 
 # Set up a connector to archive Cisco Jabber on MS SQL data
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Use a Veritas connector in the Microsoft Purview compliance portal to import and archive data from the Cisco Jabber platform to user mailboxes in your Microsoft 365 organization. Veritas provides you with a [Cisco Jabber](https://globanet.com/jabber/) connector that is configured to capture items from the Jabber's MS SQL Database, such as 1:1 chat messages and group chats and then import those items to Microsoft 365. The connector retrieves data from the Cisco Jabber's MS SQL Database, processes it, and the converts the content from a user's Cisco Jabber account to an email message format and then imports those items to the user's mailbox in Microsoft 365.
 
 After Cisco Jabber data is stored in user mailboxes, you can apply Microsoft Purview features such as Litigation Hold, eDiscovery, retention policies and retention labels, and communication compliance. Using a Cisco Jabber connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.

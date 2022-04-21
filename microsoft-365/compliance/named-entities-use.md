@@ -78,7 +78,7 @@ To create or edit a DLP policy, use the procedures in [Create, test, and tune a 
 |SharePoint Online data-at-rest     |Supported         |
 |Teams data-at-rest     |Supported         |
 |Email messages data-at-rest     |Supported for tenants with Privacy Service Plan         |
-|Microsoft Defender for Cloud Apps     |supported         |
+<!--|Microsoft Defender for Cloud Apps     |supported         |-->
 
 ### Autolabeling
 

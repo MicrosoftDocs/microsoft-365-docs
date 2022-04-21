@@ -23,6 +23,8 @@ ms.custom: seo-marvel-apr2020
 
 # Detailed properties in the audit log
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 When you export the results of an audit log search from the Microsoft Purview compliance portal, you have the option to download all the results that meet your search criteria. You do this by selecting **Export results** \> **Download all results** on the **Audit log search** page. For more information, see [Search the audit log](search-the-audit-log-in-security-and-compliance.md).
   
  When your export all results for an audit log search, the raw data from the unified audit log is copied to a comma-separated value (CSV) file that is downloaded to your local computer. This file contains additional information from each audit record in a column named **AuditData**. This column contains a multi-value property for multiple properties from the audit log record. Each of the **property: value** pairs in this multi-value property are separated by a comma. 
