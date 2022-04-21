@@ -1,5 +1,5 @@
 ---
-title: "Reporting information for Microsoft Bookings"
+title: "View Bookings calendar information"
 ms.author: kwekua
 author: kwekuako
 manager: scotv

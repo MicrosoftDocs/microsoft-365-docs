@@ -107,7 +107,10 @@ Admins should immediately assign custom reviewers to this policy as appropriate 
 4. On the **Monitor for user-reported messages** pane, assign reviewers for the policy. Reviewers must have mailboxes hosted on Exchange Online. When reviewers are added to a policy, they automatically receive an email message that notifies them of the assignment to the policy and provides links to information about the review process.
 5. Select **Save**.
 
-To disable users from reporting Teams messages with the *Report a concern option*, disable the **End user reporting** option in the [Teams Admin Center](/microsoftteams/manage-teams-in-modern-portal).
+To disable users from reporting Teams messages with the *Report a concern option*, disable the **End user reporting** option in the [Teams Admin Center](/microsoftteams/manage-teams-in-modern-portal). 
+
+>[!IMPORTANT]
+>If you're using PowerShell to disable the **End user reporting** option in the Teams Admin Center, you must use [Microsoft Teams cmdlets module version 4.2.0](/MicrosoftTeams/teams-powershell-release-notes) or later.
 
 ## Storage limit notification (preview)
 

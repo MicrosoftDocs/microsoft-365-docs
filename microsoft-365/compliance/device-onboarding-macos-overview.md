@@ -50,7 +50,16 @@ Your macOS devices must already be managed through Intune or JAMF Pro.
  
 - To onboard into Intune, see [Deployment guide: Manage macOS devices in Microsoft Intune](/mem/intune/fundamentals/deployment-guide-platform-macos) and [Enroll your Mac with Intune Company Portal](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp). 
 - To onboard into JAMF Pro see, [JAMF Pro administrators guide](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/) and [JAMF Pro Installation and Configuration Guide for Mac](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/)
-- Install the v95+ Edge browser on your macOS devices 
+<!--- Install the v95+ Edge browser on your macOS devices--> 
+
+### Supported browsers
+
+Endpoint DLP supports these browsers on macOS Catalina 10.15 or higher:
+
+- Microsoft Edge (latest version)
+- Safari (latest version, macOS only)
+- Chrome (latest version)
+- Firefox (latest version)
 
 ## Licensing guidance
 

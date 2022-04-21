@@ -44,7 +44,6 @@ For significant updates, customers are initially notified by the [Microsoft 365 
 > [!NOTE]
 > You need a Microsoft 365 or Azure AD account to access your Message center through the [admin center](/office365/admin/admin-overview/about-the-admin-center). Microsoft 365 home plan users do not have an admin center.
 
-
 ## Standard release
 
 This is the default option where you and your users receive the latest updates when they're released broadly to all customers.
@@ -68,7 +67,10 @@ If you [Set up the release option in the admin center](#set-up-the-release-optio
   
 ### Targeted release for selected users
 
-If you [Set up the release option in the admin center](#set-up-the-release-option-in-the-admin-center) for this option, you can define specific users, usually power users, to receive early access to features and functionality. 
+If you [Set up the release option in the admin center](#set-up-the-release-option-in-the-admin-center) for this option, you can define specific users, usually power users, to receive early access to features and functionality.
+
+> [!IMPORTANT]
+> Some features only roll out on a per-organization basis. This means that the entire organization will receive access to the feature at the same time. For features like this, it’s not possible for selected users in the targeted release program to get the feature early. This means that your organization will not be able to receive these features early if you have configured selected users in targeted release. To make sure that you see all features in targeted release, you will need to configure targeted release for the entire organization or set up a test organization.
   
 ## Benefits of Targeted release
 
