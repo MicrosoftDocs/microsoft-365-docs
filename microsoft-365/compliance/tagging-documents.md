@@ -21,6 +21,8 @@ ms.custom: seo-marvel-mar2020
 
 # Tag documents in a review set in eDiscovery (Premium)
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Organizing content in a review set is important to complete various workflows in the eDiscovery process. This includes:
 
 - Culling unnecessary content

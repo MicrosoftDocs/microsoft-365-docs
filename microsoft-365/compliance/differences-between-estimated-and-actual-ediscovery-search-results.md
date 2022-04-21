@@ -1,5 +1,5 @@
 ---
-title: "Differences between estimated and actual eDiscovery search results"
+title: "Estimated and actual eDiscovery search results"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -22,6 +22,8 @@ description: "Understand why estimated and actual search results may vary in sea
 ---
 
 # Differences between estimated and actual eDiscovery search results
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 This article applies to searches that you can run using one of the following Microsoft 365 eDiscovery tools: 
 

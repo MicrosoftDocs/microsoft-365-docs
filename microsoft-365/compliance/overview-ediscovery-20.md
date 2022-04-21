@@ -1,5 +1,5 @@
 ---
-title: "Overview of the eDiscovery (Premium) solution in Microsoft 365"
+title: "Overview of the eDiscovery (Premium) solution in Microsoft Purview"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -18,13 +18,15 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "Learn about the eDiscovery (Premium) solution in Microsoft 365. This article provides an overview of eDiscovery (Premium) in Microsoft 365, a tool to help you manage internal and external investigations. It also frames the business reasons for using eDiscovery (Premium) to manage your legal investigations."
+description: "Learn about the eDiscovery (Premium) solution in Microsoft Purview. This article provides an overview of eDiscovery (Premium) in Microsoft Purview, a tool to help you manage internal and external investigations. It also frames the business reasons for using eDiscovery (Premium) to manage your legal investigations."
 ms.custom: seo-marvel-apr2020
 ---
 
-# Overview of Microsoft 365 eDiscovery (Premium)
+# Overview of Microsoft Purview eDiscovery (Premium)
 
-The Microsoft Purview eDiscovery (Premium) solution in Microsoft 365 builds on the existing Microsoft eDiscovery and analytics capabilities. eDiscovery (Premium) provides an end-to-end workflow to preserve, collect, analyze, review, and export content that's responsive to your organization's internal and external investigations. It also lets legal teams manage the entire legal hold notification workflow to communicate with custodians involved in a case.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+The Microsoft Purview eDiscovery (Premium) solution builds on the existing Microsoft eDiscovery and analytics capabilities. eDiscovery (Premium) provides an end-to-end workflow to preserve, collect, analyze, review, and export content that's responsive to your organization's internal and external investigations. It also lets legal teams manage the entire legal hold notification workflow to communicate with custodians involved in a case.
 
 ## eDiscovery (Premium) capabilities
 

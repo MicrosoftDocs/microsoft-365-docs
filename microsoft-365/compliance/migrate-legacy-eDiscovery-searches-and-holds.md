@@ -19,12 +19,14 @@ description:
 
 # Migrate legacy eDiscovery searches and holds to the compliance portal
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 The Microsoft Purview compliance portal provides an improved experience for eDiscovery usage, including: higher reliability, better performance, and many features tailored to eDiscovery workflows including cases to organize your content by matter, review sets to review content and analytics to help cull data for review such as near-duplicate grouping, email threading, themes analysis, and predictive coding.
 
 To help customers take advantage of the new and improved functionality, this article provides basic guidance on how to migrate In-Place eDiscovery searches and holds from the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a> to the compliance portal.
 
 > [!NOTE]
-> Because there are many different scenarios, this article provides general guidance to transition searches and holds to a core eDiscovery case in the compliance portal. Using eDiscovery cases aren't always required, but they add an extra layer of security by letting you assign permissions to control who has access to the eDiscovery cases in your organization.
+> Because there are many different scenarios, this article provides general guidance to transition searches and holds to a eDiscovery (Standard) case in the compliance portal. Using eDiscovery cases aren't always required, but they add an extra layer of security by letting you assign permissions to control who has access to the eDiscovery cases in your organization.
 
 ## Before you begin
 

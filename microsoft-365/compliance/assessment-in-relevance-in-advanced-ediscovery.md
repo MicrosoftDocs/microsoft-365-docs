@@ -21,6 +21,8 @@ ms.custom: seo-marvel-apr2020
 ---
 
 # Assessment in the Relevance module in eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
   
 Microsoft Purview eDiscovery (Premium) enables early assessment, for example, for the defined issues and the data imported for a case. eDiscovery (Premium) lets the expert make decisions about an adopted approach and to apply these decisions to the document review project.
   

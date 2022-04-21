@@ -1,5 +1,5 @@
 ---
-title: Restrict access to content using sensitivity labels to apply encryption
+title: Apply encryption using sensitivity labels
 f1.keywords:
 - NOCSH
 ms.author: cabailey

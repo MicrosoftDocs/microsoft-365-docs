@@ -57,7 +57,7 @@ With these two retention actions, you can configure retention settings for the f
 
 These retention settings work with content in place that saves you the additional overheads of creating and configuring additional storage when you need to retain content for compliance reasons. In addition, you don't need to implement customized processes to copy and synchronize this data.
 
-Use the following sections to learn more about how retention policies and retention labels work, when to use them, and how they supplement each other. But if you're ready to get started and deploy retention settings for some common scenarios, see [Get started with data lifecycle management](get-started-with-information-governance.md).
+Use the following sections to learn more about how retention policies and retention labels work, when to use them, and how they supplement each other. But if you're ready to get started and deploy retention settings for some common scenarios, see [Get started with data lifecycle management](get-started-with-data-lifecycle-management.md).
 
 ## How retention settings work with content in place
 
@@ -577,7 +577,7 @@ Although retention settings and [holds that you create with an eDiscovery case](
 
 - Retention settings that you specify in retention policies and retention labels are designed for a long-term data lifecycle management strategy to retain or delete data for compliance requirements. The scope is usually broad with the main focus being the location and content rather than individual users. The start and end of the retention period is configurable, with the option to automatically delete content without additional administrator intervention.
 
-- Holds for eDiscovery (either Core eDiscovery or Advanced eDiscovery cases) are designed for a limited duration to preserve data for a legal investigation. The scope is specific with the focus being content owned by identified users. The start and end of the preservation period isn't configurable but dependent on individual administrator actions, without an option to automatically delete content when the hold is released.
+- Holds for eDiscovery (either eDiscovery (Standard) or eDiscovery (Premium) cases) are designed for a limited duration to preserve data for a legal investigation. The scope is specific with the focus being content owned by identified users. The start and end of the preservation period isn't configurable but dependent on individual administrator actions, without an option to automatically delete content when the hold is released.
 
 Summary to compare retention with holds:
 
@@ -643,4 +643,4 @@ If you have configured SharePoint sites for content type policies or information
 
 ## Configuration guidance
 
-See [Get started with data lifecycle management](get-started-with-information-governance.md). This article has information about subscriptions, permissions, and links to end-to-end configuration guidance for retention scenarios.
+See [Get started with data lifecycle management](get-started-with-data-lifecycle-management.md). This article has information about subscriptions, permissions, and links to end-to-end configuration guidance for retention scenarios.

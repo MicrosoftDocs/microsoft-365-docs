@@ -1,5 +1,5 @@
 ---
-title: "Add data from one review set to another review set"
+title: "Add data from one review set to another"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -22,6 +22,8 @@ ms.custom:
 ---
 
 # Add data to a review set from another review set
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 In some cases, it may be necessary to select documents from one review set and work with them individually in another review set. This is especially useful if you've culled content in a review set and want to run analytics on the subset of data.
 
