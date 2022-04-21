@@ -43,12 +43,12 @@ landingContent:
         links:
           - text: Get Defender for Business
             url: get-defender-business.md
+          - text: Add users and assign licenses
+            url: mdb-add-users.md
+          - text: Visit the Microsoft 365 Defender portal
+            url: mdb-get-started.md
           - text: Use the setup wizard
             url: mdb-use-wizard.md
-          - text: Navigate the portal
-            url: mdb-get-started.md
-          - text: View your Threat & Vulnerability Management dashboard
-            url: mdb-view-tvm-dashboard.md
           - text: Try tutorials and simulations
             url: mdb-tutorials.md
 
@@ -77,6 +77,8 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
+          - text: View your Threat & Vulnerability Management dashboard
+            url: mdb-view-tvm-dashboard.md
           - text: View and manage incidents
             url: mdb-view-manage-incidents.md
           - text: Respond to and mitigate threats
@@ -115,6 +117,8 @@ landingContent:
             url: mdb-create-edit-device-groups.md
           - text: Onboard devices
             url: mdb-onboard-devices.md
+          - text: Remove devices
+            url: mdb-offboard-devices.md
 
   # Card
   - title: Help and support

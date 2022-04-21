@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 03/15/2022
+ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -21,10 +21,8 @@ ms.collection:
 
 # The simplified configuration process in Microsoft Defender for Business
 
-> [!IMPORTANT]
-> Microsoft Defender for Business is rolling out to [Microsoft 365 Business Premium](../../business-premium/index.md) customers, beginning March 1, 2022. Defender for Business as a standalone subscription is in in preview, and will roll out gradually to customers and IT Partners who [sign-up here](https://aka.ms/mdb-preview) to request it. Preview includes an [initial set of scenarios](mdb-tutorials.md#try-these-preview-scenarios), and we will be adding capabilities regularly.
-> 
-> Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. 
+> [!NOTE]
+> Microsoft Defender for Business is now included in [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
 Microsoft Defender for Business features a simplified configuration process, designed especially for small and medium-sized businesses. This experience takes the guesswork out of onboarding and managing devices, with a wizard-like experience and default policies that are designed to protect your company's devices from day one. **We recommend using the simplified configuration process; however, you're not limited to this option**.
 
@@ -44,13 +42,12 @@ When it comes to onboarding devices and configuring security settings for your c
 
 >
 > **Got a minute?**
-> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about Microsoft Defender for Business</a>. We'd love to hear from you!
+> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about security</a>. We'd love to hear from you!
 >
 
 ## Review your setup and configuration options
 
 The following table describes each experience:
-<br/><br/>
 
 | Portal experience  | Description  |
 |---------|---------|
@@ -68,5 +65,4 @@ Defender for Business is designed to provide strong protection while saving you 
 ## Next steps
 
 - [Set up and configure Microsoft Defender for Business](mdb-setup-configuration.md)
-
 - [Get started using Microsoft Defender for Business](mdb-get-started.md)
