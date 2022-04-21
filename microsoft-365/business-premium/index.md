@@ -31,9 +31,9 @@ description: "Learn how to implement cybersecurity for small or medium sized bus
 
 Let us begin by saying that you made a wise choice in adopting Microsoft 365 Business Premium and its world class productivity tools. Microsoft 365 Business Premium is designed with cybersecurity in mind, and by adopting Microsoft 365, you are taking on the defense of your organization's systems, helping to safeguard all data, devices and information. You are the first and best defense against hackers and cyberattackers, including random individuals, organized crime, or highly-sophisticated nation states. 
 
-The task before you is this &mdash; let Microsoft 365 Business Premium help secure your organization’s future! Approach this task by taking on missions to fortify your environment, train your team, and safeguard managed devices. The missions are categorized in order of importance, and completing them is the most effective way to thwart hackers, protect against ransomware, and ensure your organization’s future is safeguarded with the best cybersecurity defenses. Let's get started. 
+The task before you is this &mdash; let Microsoft 365 Business Premium help secure your organization’s future! Approach this task by taking on the following missions which will help you fortify your environment, train your team, and safeguard managed devices. The missions are categorized in order of importance, and completing them is the most effective way to thwart hackers, protect against ransomware, and ensure your organization’s future is safeguarded with the best cybersecurity defenses. Let's get started. 
 
-Click through the tabs below to learn about each mission and how to set up Microsoft 365 Business Premium security.
+Click through the tabs below to learn about each mission and how to set up Microsoft 365 Business Premium security. 
 
 ## [**Fortify Your Environment**](#tab/Fortify)
 
@@ -54,6 +54,10 @@ Click the infographic to see a larger version, or [Download a copy of the Cybers
 :::image type="content" source="../media/m365bp-cyber-security-playbook.png" alt-text="The Cybersecurity Playbook" lightbox="../media/m365bp-cyber-security-playbook.png":::
 
 [Get the PDF](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)!
+
+## How Microsoft 365 Business Premium helps you
+
+Click here to find out the [benefits of Microsoft 365 Business Premium](m365bp-secure0-users.md). 
 
 ## Next steps
 
@@ -84,6 +88,10 @@ Click the infographic to see a larger version, or [Download a copy of the Cybers
 
 [Get the PDF](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)!
 
+## How Microsoft 365 Business Premium helps you
+
+Click here to find out the [benefits of Microsoft 365 Business Premium](m365bp-secure0-users.md). 
+
 ## Next steps
 
 Now, let's [fortify your environment against cyberattackers](m365bp-setup-overview.md)!
@@ -108,6 +116,10 @@ Click the infographic to see a larger version, or [Download a copy of the Cybers
 :::image type="content" source="../media/m365bp-cyber-security-playbook.png" alt-text="The Cybersecurity Playbook" lightbox="../media/m365bp-cyber-security-playbook.png":::
 
 [Get the PDF](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)!
+
+## How Microsoft 365 Business Premium helps you
+
+Click here to find out the [benefits of Microsoft 365 Business Premium](m365bp-secure0-users.md). 
 
 ## Next steps
 
