@@ -1,5 +1,5 @@
 ---
-title: "Troubleshoot and resolve problems and error messages in Microsoft 365 Lighthouse"
+title: "Troubleshoot error messages and problems in Microsoft 365 Lighthouse"
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -15,10 +15,10 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse                         
 search.appverid: MET150
-description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, get help troubleshooting and resolving error messages and problems."
+description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, get help troubleshooting error messages and problems."
 ---
 
-# Troubleshoot and resolve problems and error messages in Microsoft 365 Lighthouse
+# Troubleshoot error messages and problems in Microsoft 365 Lighthouse
 
 This article describes error messages and problems that you might encounter while using Microsoft 365 Lighthouse and provides troubleshooting steps you can take to resolve them.
 

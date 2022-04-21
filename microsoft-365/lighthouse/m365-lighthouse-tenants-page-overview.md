@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Lighthouse Tenants page overview"
+title: "Overview of the Tenants page in Microsoft 365 Lighthouse"
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -18,7 +18,7 @@ search.appverid: MET150
 description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn about the Tenants page."
 ---
 
-# Microsoft 365 Lighthouse Tenants page overview
+# Overview of the Tenants page in Microsoft 365 Lighthouse
 
 Microsoft 365 Lighthouse lets you manage tenant accounts by selecting **Tenants** in the left navigation pane to open the Tenants page. The Tenants page contains a list of all your tenants. You can select a tenant to view detailed information including contact details and deployment status.
 
@@ -65,7 +65,7 @@ Once you inactivate a tenant, you can't take action on the tenant until the inac
 
 ## Tenant tags
 
-To help organize your tenants and easily filter the existing views, you can create and assign tags to your tenants. To learn more, see [Manage your tenant list](m365-lighthouse-manage-tenant-list.md).
+To help organize your tenants and easily filter the existing views, you can create and assign tags to your tenants. To learn more, see [Manage your tenant list in Microsoft 365 Lighthouse](m365-lighthouse-manage-tenant-list.md).
 
 > [!NOTE]
 > You can create up to 30 tags across all tenant.
@@ -130,6 +130,6 @@ The Deployment Plans tab also includes the following options:
 
 [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) (article)\
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)\
-[Manage your tenant list](m365-lighthouse-manage-tenant-list.md) (article)\
-[Overview of using baselines to deploy standard tenant configurations](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) (article)\
+[Manage your tenant list in Microsoft 365 Lighthouse](m365-lighthouse-manage-tenant-list.md) (article)\
+[Overview of using Microsoft 365 Lighthouse baselines to deploy standard tenant configurations](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) (article)\
 [Deploy Microsoft 365 Lighthouse baselines](m365-lighthouse-deploy-baselines.md) (article)
