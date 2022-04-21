@@ -78,13 +78,13 @@ The setup wizard is designed to help you set up and configure Defender for Busin
 
 Automatic onboarding is a simplified way to onboard Windows devices to Defender for Business. Automatic onboarding is only available for Windows devices that are already enrolled in Microsoft Intune. 
 
-While you're using the setup wizard, the system will detect whether Windows devices are already enrolled in Endpoint Manager. You'll be asked if you want to use automatic onboarding for all or some of those devices. You can onboard all Windows devices at once, or select specific devices to start with, and then add more devices later. 
+While you're using the setup wizard, the system will detect whether Windows devices are already enrolled in Intune. You'll be asked if you want to use automatic onboarding for all or some of those devices. You can onboard all Windows devices at once, or select specific devices to start with, and then add more devices later. 
 
 To onboard other devices, see [Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md).
 
 > [!TIP]
-> - We recommend selecting the "all devices enrolled" option. That way, when Windows devices are enrolled in Endpoint Manager later on, they'll be onboarded to Defender for Business automatically. 
-> - If you've been managing security policies and settings in Endpoint Manager, we recommend switching to the Microsoft 365 Defender portal to manage your devices, policies, and settings. To learn more, see [Choose where to manage security policies and devices](mdb-configure-security-settings.md#choose-where-to-manage-security-policies-and-devices).
+> - We recommend selecting the "all devices enrolled" option. That way, when Windows devices are enrolled in Intune later on, they'll be onboarded to Defender for Business automatically. 
+> - If you've been managing security policies and settings in the Endpoint Manager admin center, we recommend switching to the Microsoft 365 Defender portal to manage your devices, policies, and settings. To learn more, see [Choose where to manage security policies and devices](mdb-configure-security-settings.md#choose-where-to-manage-security-policies-and-devices).
 
 ## What happens if I don't use the wizard?
 
