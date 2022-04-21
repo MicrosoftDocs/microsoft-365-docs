@@ -62,7 +62,7 @@ Use this article as a guide to managing your security policies and settings.
 
 ## Choose where to manage security policies and devices
 
-Defender for Business features a [simplified configuration process](mdb-simplified-configuration.md) that helps streamline the setup and configuration process. If you select the simplified configuration process, you can view and manage your security policies in the Microsoft 365 Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)). However, you're not limited to this option. If you've been using Microsoft Intune (managed in the Microsoft Endpoint Manager admin center), you can keep using Intune.
+Defender for Business features a [simplified configuration process](mdb-simplified-configuration.md) that helps streamline the setup and configuration process. If you select the simplified configuration process, you can view and manage your security policies in the Microsoft 365 Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)). However, you're not limited to this option. If you've been using Microsoft Intune, you can keep using the Microsoft Endpoint Manager admin center.
 
 The following table can help you choose where to manage your security policies and devices. <br/><br/>
 

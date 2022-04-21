@@ -38,11 +38,11 @@ sections:
 
           Policy conflicts can arise when security policies are defined using multiple tools or methods. Here's an example:
 
-          Suppose that Lee has been using Microsoft Endpoint Manager to manage devices and security settings. Lee has recently started using Microsoft Defender for Business. Lee has chosen to use the simplified configuration process in Defender for Business. Now, Lee sees policy conflicts in Microsoft Endpoint Manager and in the Microsoft 365 Defender portal. 
+          Suppose that Lee has been using Microsoft Intune to manage devices and security settings. Lee has recently started using Microsoft Defender for Business. Lee has chosen to use the simplified configuration process in Defender for Business. Now, Lee sees policy conflicts in the Microsoft Endpoint Manager admin center and in the Microsoft 365 Defender portal. 
 
           Fortunately, policy conflicts can be resolved by taking one or more of the following actions:
 
-          - Delete your existing policies in Microsoft Endpoint Manager
+          - Delete your existing policies in the Endpoint Manager admin center
           - See [Troubleshoot policies in Microsoft Intune](/troubleshoot/mem/intune/troubleshoot-policies-in-microsoft-intune)
 
           See the following articles to learn more about your security policies in Defender for Business:
@@ -57,7 +57,7 @@ sections:
 
           *Something went wrong, and we couldn't complete your setup process. There's an integration issue between Defender for Business and Microsoft Endpoint Manager.*
 
-          The error message means that a configuration channel must be established between Defender for Business and Microsoft Endpoint Manager. Something has gone wrong with integration. To resolve the issue, use the following three procedures:
+          The error message means that a configuration channel must be established between Defender for Business and Microsoft Intune (managed in the Microsoft Endpoint Manager admin center). Something has gone wrong with integration. To resolve the issue, use the following three procedures:
 
           **Procedure 1: Turn on the Microsoft Intune connection in the Microsoft 365 Defender portal** 
 
@@ -77,7 +77,7 @@ sections:
 
           4. Select **Save**.
 
-          **Procedure 3: Turn on Endpoint Security Profile settings in Microsoft Endpoint Manager**
+          **Procedure 3: Turn on Endpoint Security Profile settings in the Microsoft Endpoint Manager admin center**
 
           1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
 
@@ -88,7 +88,7 @@ sections:
       - question: Something went wrong with onboarding devices in the Microsoft 365 Defender portal
         answer: |
 
-          While onboarding devices in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), something might have gone wrong, and an error message is displayed. In particular, this issue can occur if you are onboarding devices using a downloadable onboarding package for Microsoft Endpoint Manager, Group Policy, System Center Configuration Manager, or Mobile Device Management in Defender for Business. 
+          While onboarding devices in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), something might have gone wrong, and an error message is displayed. In particular, this issue can occur if you are onboarding devices using a downloadable onboarding package for Microsoft Intune, Group Policy, System Center Configuration Manager, or Mobile Device Management in Defender for Business. 
           
           Microsoft Defender for Business uses a capability called *Security Management for Microsoft Defender for Endpoint*. If onboarding in Defender for Business fails, the cause most likely has to do with Security Management for Defender for Endpoint. To resolve the issue, see the following articles:
           
