@@ -15,7 +15,7 @@ ms.technology: mdb
 search.appverid: 
 - MOE150
 - MET150
-description: "Make the most of your Defender for Business trial with this playbook. Get an overview of how to set things up quickly and get started using your security capabilities."
+description: "Make the most of your Defender for Business trial with this playbook. Get set up quickly and get started using your new security capabilities."
 ---
 
 # Trial playbook: Microsoft Defender for Business
