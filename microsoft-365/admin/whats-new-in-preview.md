@@ -48,6 +48,14 @@ And if you'd like to know what's new with other Microsoft cloud services:
 
 ## April 2022
 
+### Microsoft 365 admin center search
+
+You can now view all search results in a separate browser page by searching in global search and selecting **Enter**.
+
+With our new separate page of search results, you can explore a more comprehensive list of results and can easily return to the browser page for a more efficient search experience.
+
+
+
 ### Search in distribution lists to add Priority Accounts
 
 Previously, you could only tag priority accounts by searching for them using the person's name, e-mail address or job title. With this update, you can now search for people to add to priority accounts in a distribution list. This allows you to bulk add people in an efficient way and reduces the time needed to tag individual people in your organization.
