@@ -31,9 +31,7 @@ When it comes to onboarding devices and configuring security settings for your c
 ## What to do
 
 1. [Review your setup and configuration options](#review-your-setup-and-configuration-options)
-
 2. [Learn more about the simplified configuration process in Defender for Business](#why-we-recommend-using-the-simplified-configuration-process)
-
 3. [Proceed to your next steps](#next-steps)
 
 >

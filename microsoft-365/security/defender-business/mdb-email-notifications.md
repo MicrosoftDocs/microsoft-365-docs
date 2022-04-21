@@ -22,9 +22,7 @@ You can set up email notifications for your security team. Then, as alerts are g
 ## What to do
 
 1. [Learn about types of email notifications](#types-of-email-notifications).
-
 2. [View and edit email notification settings](#view-and-edit-email-notifications).
-
 3. [Proceed to your next steps](#next-steps).
 
 

@@ -114,6 +114,7 @@ When you receive your acceptance email, here's how to activate your trial subscr
 
 ## Next steps
 
-1. [Use the setup wizard in Microsoft Defender for Business](mdb-use-wizard.md) or [See the setup and configuration process for Defender for Business](mdb-setup-configuration.md).
-
-2. [See how to get help and support for Defender for Business](mdb-get-help.md) (just in case you need help)
+- [See the trial playbook: Microsoft Defender for Business](trial-playbook-defender-business.md)
+- [Use the setup wizard in Microsoft Defender for Business](mdb-use-wizard.md)
+- [See the setup and configuration process for Defender for Business](mdb-setup-configuration.md)
+- [See how to get help and support for Defender for Business](mdb-get-help.md) (just in case you need help)
