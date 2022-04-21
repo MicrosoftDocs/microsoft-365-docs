@@ -93,6 +93,10 @@ Wondering what you can experience in your free trial? The Purview solutions tria
 
   Microsoft Purview Compliance Manager can help you throughout your compliance journey, from taking inventory of your data protection risks to managing the complexities of implementing controls, staying current with regulations and certifications, and reporting to auditors. Learn more about [Compliance Manager](compliance-manager.md)
 
+- **Data Lifecycle Management**
+
+  Automate your retention coverage by using adaptive policy scopes. This feature allows you to dynamically target policies for retention to specific users, groups, or sites. These policies automatically update when changes occur in your organization. In addition, policies that use adaptive scopes are not subject to location limits. Learn more about [adaptive policy scopes](retention.md#adaptive-or-static-policy-scopes-for-retention).
+
 - **Data Loss Prevention**
 
   Microsoft Purview Data Loss Prevention (DLP) helps you control sharing and use of sensitive info on devices, apps, and services. With trials, you can extend coverage of DLP policies to Teams and devices, protect even more sensitive content using trainable classifiers and exact data match (EDM), and get started quickly with our recommended DLP policies.  [Learn more about Data Loss Prevention](dlp-learn-about-dlp.md)
@@ -102,17 +106,9 @@ Wondering what you can experience in your free trial? The Purview solutions tria
   - Your existing policies will stay turned on unless you turn them off.
   - If you edit DLP policies that include either the Teams or Devices locations after the trial ends, those locations will be removed from the policy.
 
-- **Data Lifecycle Management**
-
-  Automate your retention coverage by using adaptive policy scopes. This feature allows you to dynamically target policies for retention to specific users, groups, or sites. These policies automatically update when changes occur in your organization. In addition, policies that use adaptive scopes are not subject to location limits. Learn more about [adaptive policy scopes](retention.md#adaptive-or-static-policy-scopes-for-retention).
-
 - **eDiscovery**
 
   Take advantage of an end-to-end workflow for preserving, collecting, analyzing, and exporting content that's responsive to your organization's internal and external investigations. Legal teams can also manage the entire legal hold notification process by communicating with custodians involved in a case. Learn more about [eDiscovery](ediscovery.md)
-
-- **Information Governance**
-
-  Automate your retention policy coverage using Adaptive Policy Scopes. This feature allows you to dynamically target retention policies to specific users, groups, or sites. These policies automatically update when changes occur in your organization. In addition, retention policies using adaptive scopes are not subject to location limits! Learn more about [Adaptive Policy Scopes](retention.md).
 
 - **Information Protection**
 
