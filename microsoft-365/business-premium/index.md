@@ -49,9 +49,11 @@ In these first missions, sign in and set up your initial walls of defense, start
 
 The guidance in these missions helps your business achieve the goals described in the Harvard Kennedy School  [Cybersecurity Campaign Playbook](https://go.microsoft.com/fwlink/p/?linkid=2015598). A summary is available for you to download.
 
-Click the infographic to see a larger version. Otherwise, you can also [download a copy of the Cybersecurity playbook poster](..)!
+Click the infographic to see a larger version, or [Download a copy of the Cybersecurity playbook poster](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)!
 
 :::image type="content" source="../media/m365bp-cyber-security-playbook.png" alt-text="The Cybersecurity Playbook" lightbox="../media/m365bp-cyber-security-playbook.png":::
+
+[Get the PDF]((https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)!
 
 Now, let's get started [fortifying your environment](m365bp-setup-overview.md)!
 
@@ -72,13 +74,13 @@ We've included a set of missions here with some objectives that need to be compl
 
 ## Cybersecurity playbook
 
-The guidance in these missions helps your business achieve the goals described in the Harvard Kennedy School  [Cybersecurity Campaign Handbook](https://go.microsoft.com/fwlink/p/?linkid=2015598). A summary is available for you to download.
+The guidance in these missions helps your business achieve the goals described in the Harvard Kennedy School  [Cybersecurity Campaign Playbook](https://go.microsoft.com/fwlink/p/?linkid=2015598). A summary is available for you to download.
 
-Download link coming soon!
+Click the infographic to see a larger version, or [Download a copy of the Cybersecurity playbook poster](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)!
 
 :::image type="content" source="../media/m365bp-cyber-security-playbook.png" alt-text="The Cybersecurity Playbook" lightbox="../media/m365bp-cyber-security-playbook.png":::
 
-Now, let's get started [fortifying your environment](m365bp-setup-overview.md)!
+[Get the PDF]((https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)!
 
 > [!Note]
 > When a term or directive is unclear, you can find definitions in the [glossary of terms](m365bp-glossary.md).
@@ -93,11 +95,13 @@ A safe device is one that is monitored by the organization. In this last critica
 
 ## Cybersecurity playbook
 
-The guidance in these missions helps your business achieve the goals described in the Harvard Kennedy School  [Cybersecurity Campaign Handbook](https://go.microsoft.com/fwlink/p/?linkid=2015598). A summary is available for you to download.
+The guidance in these missions helps your business achieve the goals described in the Harvard Kennedy School  [Cybersecurity Campaign Playbook](https://go.microsoft.com/fwlink/p/?linkid=2015598). A summary is available for you to download.
 
-Download link coming soon!
+Click the infographic to see a larger version, or [Download a copy of the Cybersecurity playbook poster](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)!
 
 :::image type="content" source="../media/m365bp-cyber-security-playbook.png" alt-text="The Cybersecurity Playbook" lightbox="../media/m365bp-cyber-security-playbook.png":::
+
+[Get the PDF]((https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)!
 
 Now, let's get started [fortifying your environment](m365bp-setup-overview.md)!
 
