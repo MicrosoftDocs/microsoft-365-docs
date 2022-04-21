@@ -1,5 +1,5 @@
 ---
-title: "Set buffer time in Microsoft Bookings"
+title: "Set Bookings buffer time"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
