@@ -15,7 +15,6 @@ ms.collection:
 search.appverid: MET150
 ms.reviewer: inbadian, shlomiakirav
 description: See how to get help or contact support for issues with Defender for Business.
-ms.date: 02/24/2022
 ---
 
 # Get help and support for Microsoft Defender for Business

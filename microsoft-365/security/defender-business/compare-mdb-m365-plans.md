@@ -7,7 +7,6 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: reference
-ms.date: 04/20/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -22,8 +21,6 @@ ms.collection:
 # Compare Microsoft Defender for Business to Microsoft 365 Business Premium
 
 Microsoft offers a wide variety of cloud solutions and services, including several different plans for small and medium-sized businesses. For example, [Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md) includes security and device management capabilities, along with productivity features, like Office apps. This article is designed to help clarify what security features, such as device protection, are included in Microsoft 365 Business Premium, Microsoft Defender for Business, and Microsoft Defender for Endpoint.
-
-Microsoft Defender for Business is available as a standalone offering or as part of [Microsoft 365 Business Premium](../../business-premium/index.md) (beginning March 1, 2022).
 
 >
 > **Got a minute?**
