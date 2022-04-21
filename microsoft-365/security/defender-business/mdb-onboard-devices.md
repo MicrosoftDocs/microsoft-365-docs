@@ -160,7 +160,7 @@ To view the list of devices that are onboarded to Defender for Business, in the 
 Choose one of the following options to onboard macOS devices:
 
 - [Local script for macOS](#local-script-for-macos) (*recommended*)
-- [Endpoint Manager for macOS](#endpoint-manager-for-macos)
+- [Intune for macOS](#microsoft-intune-for-macos)
 
 ### Local script for macOS
 
@@ -188,9 +188,9 @@ When you run the local script on a macOS device, it creates a trust with Azure A
 
 11. After a device has been enrolled in Intune, you can add it to a device group. [Learn more about device groups in Microsoft Defender for Business](mdb-create-edit-device-groups.md).
 
-### Endpoint Manager for macOS
+### Microsoft Intune for macOS
 
-If your subscription includes [Microsoft Endpoint Manager](/mem/endpoint-manager-overview), you can onboard macOS devices in the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). For example, if you have [Microsoft 365 Business Premium](../../business/index.yml), you have Endpoint Manager as part of your subscription. Endpoint Manager includes [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) and [Mobile Device Management capabilities](/mem/intune/fundamentals/what-is-device-management). 
+If your subscription includes Microsoft Intune, you can onboard macOS devices in the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). For example, if you have [Microsoft 365 Business Premium](../../business/index.yml), you have Intune as part of your subscription.  
 
 There are several methods available for enrolling devices in Intune. We recommend starting with one of the following methods:
 
@@ -241,7 +241,7 @@ To view the list of devices that are onboarded to Defender for Business, in the 
 
 ## Mobile devices
 
-You'll need Microsoft Intune to onboard mobile devices, such as Android and iOS/iPadOS devices. If you have [Microsoft 365 Business Premium](../../business/index.yml), you have Endpoint Manager as part of your subscription. Endpoint Manager includes [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) and [Mobile Device Management capabilities](/mem/intune/fundamentals/what-is-device-management). 
+You'll need Microsoft Intune to onboard mobile devices, such as Android and iOS/iPadOS devices. If you have [Microsoft 365 Business Premium](../../business/index.yml), you have Intune. 
 
 See the following resources to get help enrolling these devices into Intune:
 
