@@ -13,7 +13,6 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer:
 manager: dansimp
-ms.date: 02/27/2022
 ms.collection: M365-security-compliance
 ---
 
