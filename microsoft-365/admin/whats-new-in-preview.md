@@ -54,9 +54,11 @@ NPS survey insights is an AI-driven dashboard available in the Microsoft 365 adm
 
 In the admin center, go to **Health** > **Product feedback** > **NPS survey insights**.
 
-This feature helps admins like you obtain actionable insights derived from Microsoft NPS surveys. Learn more at [Microsoft product NPS feedback and insights for your organization](manage/manage-feedback-product-insights.md).
+This feature helps admins like you obtain actionable insights derived from Microsoft NPS surveys your users have responded to. Learn more at [Microsoft product NPS feedback and insights for your organization](manage/manage-feedback-product-insights.md).
 
 Based on your feedback, we're introducing a new feature that identifies the sentiment for each NPS verbatim feedback, so that you can learn what your users are feeling regarding Microsoft 365 products. Sentiment labels such as **Positive**, **Negative** and **Other** are assigned to the NPS verbatim feedback.
+
+:::image type="content" source="../media/product-feedback-nps-verbatims.png" alt-text="Screenshot: Product feedback dashboard on the NPS surveys insights tab":::
 
 With the sentiment feature on the NPS survey insights dashboard you'll be able to:
 
@@ -66,9 +68,11 @@ With the sentiment feature on the NPS survey insights dashboard you'll be able t
 
 Three sentiments are available:
 
+:::image type="content" source="../media/sentiment-examples.png" alt-text="Screenshot: Sentiment examples and descriptions":::
+
 To provide you with a better experience using the NPS survey insight dashboard, we suggest checking the following items:
 
-- Encourage your end users to submit feedback.
+- Encourage your users to submit feedback.
 
 - Confirm [in-product survey policies](https://config.office.com) are enabled.
 
