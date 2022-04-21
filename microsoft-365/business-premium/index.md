@@ -57,7 +57,7 @@ Click the infographic to see a larger version, or [Download a copy of the Cybers
 
 ## How Microsoft 365 Business Premium helps you
 
-Click here to find out the [benefits of Microsoft 365 Business Premium](m365bp-secure0-users.md). 
+Click here to find out the [benefits of Microsoft 365 Business Premium](m365bp-secure-users.md). 
 
 ## Next steps
 
@@ -90,7 +90,7 @@ Click the infographic to see a larger version, or [Download a copy of the Cybers
 
 ## How Microsoft 365 Business Premium helps you
 
-Click here to find out the [benefits of Microsoft 365 Business Premium](m365bp-secure0-users.md). 
+Click here to find out the [benefits of Microsoft 365 Business Premium](m365bp-secure-users.md). 
 
 ## Next steps
 
@@ -119,7 +119,7 @@ Click the infographic to see a larger version, or [Download a copy of the Cybers
 
 ## How Microsoft 365 Business Premium helps you
 
-Click here to find out the [benefits of Microsoft 365 Business Premium](m365bp-secure0-users.md). 
+Click here to find out the [benefits of Microsoft 365 Business Premium](m365bp-secure-users.md). 
 
 ## Next steps
 

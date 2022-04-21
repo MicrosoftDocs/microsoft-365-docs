@@ -23,7 +23,7 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: "An overview for how to set up and secure managed devices"
+description: "An overview for how to set up and secure managed devices from security threats and cyberattacks. Implement cybersecurity defenses and endpoint protection through enrolling and onboarding all devices. Find out how to set up device policies and manage device groups."
 ---
 
 # Set up and secure managed devices
@@ -37,7 +37,7 @@ Your mission objectives:
 - [Review and edit device policies](m365bp-view-edit-create-mdb-policies.md)
 - [Manage device groups](m365bp-device-groups-mdb.md)
 
-Once these objectives have been achieved, your overall mission to protect the org is a success! Now, make sure to set up your response teams to deal with any situation that may arise while defending the integrity of the system. 
+Once these objectives have been achieved, your overall mission to protect the organization against cyberattacks and other cybersecurity threats is a success! Now, make sure to set up your response teams to deal with any situation that may arise while defending the integrity of the system. 
 
 :::image type="content" source="../media/m365bp-secure-managed-devices.jpg" alt-text="Secure managed devices.":::
 
