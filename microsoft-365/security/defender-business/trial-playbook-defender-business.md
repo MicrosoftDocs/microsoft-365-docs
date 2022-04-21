@@ -28,7 +28,7 @@ Defender for Business is a new endpoint security solution that was designed espe
 
 :::image type="content" source="media/mdb-offering-overview.png" alt-text="Microsoft Defender for Business features and capabilities.":::
 
-Let’s get started.
+**Let’s get started!**
 
 ## Set up your trial
 
