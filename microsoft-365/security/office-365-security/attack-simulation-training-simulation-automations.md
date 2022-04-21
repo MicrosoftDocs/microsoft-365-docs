@@ -400,7 +400,7 @@ The **Positive reinforcement notification** page is available only if you select
 
   - **Do not deliver**: If you select this option, you're taken to the [Simulation schedule](#simulation-schedule) page when you click **Next**.
 
-  - **Deliver after the user reports a phis and campaign ends** or **Deliver immediately after the user reports a phish**: These sections show the following notifications and their configured languages in the **Select a positive reinforcement notification** section that appears:
+  - **Deliver after the user reports a phish and campaign ends** or **Deliver immediately after the user reports a phish**: These sections show the following notifications and their configured languages in the **Select a positive reinforcement notification** section that appears:
 
   - **Microsoft default positive reinforcement notification**
   - Any custom positive reinforcement notifications that you previously created.
