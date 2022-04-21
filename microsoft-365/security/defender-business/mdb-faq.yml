@@ -91,11 +91,11 @@ sections:
 
       - question: How do I configure attack surface reduction rules and capabilities in Defender for Business?
         answer: |
-           Simplified configuration for attack surface reduction rules and capabilities via Defender for Business in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) isn't supported yet. If you have Microsoft Endpoint Manager, you can use Endpoint Manager to configure your attack surface reduction policies. 
+           Simplified configuration for attack surface reduction rules and capabilities via Defender for Business in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) isn't supported yet. If you have Microsoft Intune, you can use the Microsoft Endpoint Manager admin center to configure your attack surface reduction policies. 
 
-      - question: If I do not currently have Microsoft Endpoint Manager, do I need an additional license to use features that are included in both Defender for Business and Endpoint Manager? 
+      - question: If I do not currently have Microsoft Intune, do I need an additional license to use features that are included in both Defender for Business and Intune? 
         answer: |
-           If you have Defender for Business as a standalone subscription and you do not have Microsoft Intune (part of Endpoint Manager), you can manage Windows devices in Defender for Business by using the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). You can also manage your next-generation protection and firewall protection policies in the Microsoft 365 Defender portal with a [simplified configuration experience](mdb-simplified-configuration.md). To manage other settings, such as attack surface reduction policies, or to onboard some devices (such as Android devices), you'll need Endpoint Manager.  
+           If you have Defender for Business as a standalone subscription and you do not have Microsoft Intune, you can manage Windows devices in Defender for Business by using the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). You can also manage your next-generation protection and firewall protection policies in the Microsoft 365 Defender portal with a [simplified configuration experience](mdb-simplified-configuration.md). To manage other settings, such as attack surface reduction policies, or to onboard some devices (such as Android devices), you'll need Intune.  
 
 
 additionalContent: |

@@ -104,7 +104,7 @@ When you are creating or editing a policy, you might see the **Add all devices**
 
 :::image type="content" source="media/add-all-devices-option.png" alt-text="Screenshot of the Add All Devices option.":::
 
-If you select this option, all devices that are enrolled in Microsoft Endpoint Manager (which includes Microsoft Intune) will receive the policy that you are creating or editing by default. 
+If you select this option, all devices that are enrolled in Microsoft Intune will receive the policy that you are creating or editing by default. 
 
 ## Next steps
 
