@@ -24,7 +24,7 @@ ms.collection:
 # Manage Microsoft Defender Antivirus updates and apply baselines
 
 > [!IMPORTANT]
-> Customers might have encountered high resource utilization (CPU and/or memory) issues following the March 2022 Microsoft Defender engine update (**1.1.19100.5**). Microsoft has released an update (1.1.19200.5) to resolve these issues. We recommend updating to the latest engine version: **1.1.19200.5**. See [Monthly platform and engine versions](#monthly-platform-and-engine-versions) (in this article).
+> Customers who applied the March 2022 Microsoft Defender engine update (**1.1.19100.5**) might have encountered high resource utilization (CPU and/or memory). Microsoft has released an update (**1.1.19200.5**) that resolves the bugs introduced in the earlier version. Customers are recommended to update to this new engine build of Antivirus Engine (**1.1.19200.5**). To ensure any performance issues are fully fixed, it is recommended to reboot machines after applying update. See [Monthly platform and engine versions](#monthly-platform-and-engine-versions) (in this article).
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plans 1 and 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -86,9 +86,9 @@ All our updates contain
 - Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
-<summary>March-2022 UPDATE (Platform: 4.18.2203.5 | Engine:  1.1.19200.5)</summary>
+<summary>March-2022 **UPDATE** (Platform: 4.18.2203.5 | Engine:  1.1.19200.5)</summary>
 
-*Customers might have encountered high resource utilization (CPU and/or memory) issues following the March 2022 Microsoft Defender engine update (**1.1.19100.5**). Microsoft has released an update (1.1.19200.5) to resolve these issues. We recommend updating to the latest engine version: **1.1.19200.5**.*
+*Customers who applied the March 2022 Microsoft Defender engine update (**1.1.19100.5**) may have encountered high resource utilization (CPU and/or memory). Microsoft has released an update (**1.1.19200.5**) that resolves the bugs introduced in the earlier version. Customers are recommended to update to this new engine build of Antivirus Engine (**1.1.19200.5**). To ensure any performance issues are fully fixed, it is recommended to reboot machines after applying update.*
 
 &ensp;Security intelligence update version: **1.361.1449.0**<br/>
 &ensp;Released: **April 22, 2022**<br/>
