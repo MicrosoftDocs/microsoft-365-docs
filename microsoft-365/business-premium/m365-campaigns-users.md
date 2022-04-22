@@ -2,13 +2,13 @@
 title: "How these security recommendations affect your users"
 f1.keywords:
 - NOCSH
-ms.author: sharik
-author: SKjerland
+ms.author: v-kcirillo
+author: cirilk
 manager: scotv
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection: 
 - Adm_O365
 - M365-subscription-management 
@@ -42,7 +42,7 @@ All users should be aware of and use these email practices to help keep their em
 
 - Open only safe links and attachments, as verified by Safe Links and Safe Attachments.
 
-Learn more about [multi-factor authentication](m365bp-multifactor-authentication.md) and [phishing and other attacks](m365-campaigns-phishing-and-attacks.md).
+Learn more about [multi-factor authentication](m365bp-multifactor-authentication.md) and [phishing and other attacks](avoid-phishing-and-attacks.md).
 
 Download an [infographic](m365-campaigns-protect-campaign-infographic.md) with tips for you and the members of your team.
 
