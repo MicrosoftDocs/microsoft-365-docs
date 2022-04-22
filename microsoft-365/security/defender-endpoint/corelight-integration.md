@@ -62,52 +62,34 @@ To enable the Corelight integration, you'll need to take the following steps:
 ### Step 3: Configure your Corelight appliance to send data to Microsoft 365 Defender
 
 > [!NOTE]
->  The integration will be public in Corelight Sensor software v24 and later. 
-
-To preview in v23 or v22.1 you must execute `corelight-client configuration update --enable.adfiot 1` to enable the configuration section in the GUI.
-
-In addition to this, the GUI validation requires that a broker is configured in the configuration section on all v23 releases.  The broker you provide is required but won't actually be used. Enter `127.0.0.1:1234` in the _kafka broker_ field to ensure successful validation before following the steps below to enable sending data to Microsoft 365 Defender.
-
-> [!NOTE]
+> The integration is available in Corelight Sensor software v24 and later.
+> 
 > You will need internet connectivity for your sensor to reach both the Defender and Corelight cloud services for the solution to work.
 
-#### Enabling in the Corelight Sensor GUI
+#### Enabling in the Corelight web interface
 
 1. In the Corelight Sensor GUI configuration section, select **Sensor** \> **Export**.
-2. From the list, go to **EXPORT TO KAFKA** and select the switch to turn it on.
+2. Enable **Export To Microsoft Defender**.
+3. Enter your Microsoft Defender Tenant ID.
+4. Optionally, you can choose **Zeek Logs to Exclude** or to write a **Microsoft Defender Log Filter**. The minimal set of logs you must include is: dns, conn, files, http, ssl, ssh, x509, snmp, smtp, ftp, sip, dhcp, and notice.
 
-   :::image type="content" source="images/exporttokafka.png" alt-text="The kafka export" lightbox="images/exporttokafka.png":::
+   :::image type="content" source="images/exporttodefender.png" alt-text="The kafka export" lightbox="images/exporttodefender.png":::
 
-3. Next, turn on **EXPORT TO AZURE DEFENDER FOR IOT** and enter your tenant ID, noted in Step 1, in the TENANT ID field.
-
-   :::image type="content" source="images/exporttodiot.png" alt-text="The iot export" lightbox="images/exporttodiot.png":::
-
-4. Select **Apply Changes**.
-
-   :::image type="content" source="images/corelightapply.png" alt-text="The Apply changes icon" lightbox="images/corelightapply.png":::
-
-> [!NOTE]
-> Configuration options in Kafka (excluding Log Exclusion and Filters) should not be changed. Any changes made will be ignored.
+5. Select **Apply Changes**.
 
 #### Enabling in the corelight-client
 
-You can turn on **EXPORT TO KAFKA** and **EXPORT TO AZURE DEFENDER FOR IOT** using the following command in the corelight-client:
+1. Enable **Export To Microsoft Defender** using the following command in the corelight-client:
 
-`corelight-client configuration update --bro.export.kafka.defender.enable true --bro.export.kafka.defender.tenant\_id <your tenant>`.
+    corelight-client configuration update \
+    --bro.export.defender.enable True`
 
-> [!IMPORTANT]
-> If you're already using Kafka export, contact Corelight Support for an alternate configuration.
+2. Set you tenant ID
+3. Optionally, you use the following command to exclude certain logs or to create a Microsoft Defender log filter. The minimal set of logs you must include is: dns, conn, files, http, ssl, ssh, x509, snmp, smtp, ftp, sip, dhcp, and notice.
 
-To configure only sending the minimal set of logs:
-
-1. In the Corelight Sensor GUI, go to the Kafka section
-2. Go to **Zeek logs to exclude**
-3. Select **All**
-4. Then select **x** beside the following logs to ensure they continue to flow to Microsoft:  
-    `dns  conn  files  http  ssl  ssh  x509  snmp  smtp  ftp  sip  dhcp  notice`
-5. Select **Apply Changes**
-
-The list of logs that flow to Microsoft may expand over time.
+     `corelight-client configuration update \
+    --bro.export.defender.exclude=<logs_to_exclude> \
+    --bro.export.defender.filter=<logs_to_filter>`
 
 ## See also
 
