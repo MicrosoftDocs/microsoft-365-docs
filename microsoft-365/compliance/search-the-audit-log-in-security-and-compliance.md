@@ -2,8 +2,8 @@
 title: "Search the audit log in the Microsoft Purview compliance portal"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
