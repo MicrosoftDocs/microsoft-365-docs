@@ -50,7 +50,7 @@ To buy, and sign up for Microsoft 365 Business Basic subscription, complete the 
 > The person who signs up for Microsoft 365 for business (usually the business owner) automatically becomes the technical administrator of the organization. You can add other people as admins if you want help managing your Microsoft 365 services. Check out [Assign admin roles](../add-users/assign-admin-roles.md) for more info.
 
 1. On the [For business page](https://go.microsoft.com/fwlink/?linkid=2181424), see what's included in Microsoft 365. Under Microsoft 365 Business Basic, select **Buy now**.
-2. On the **You've selected Microsoft 365 Business Basic** page, enter an email address that you already use. This can be any address you want Microsoft to use to communicate with you during setup. It is also the address where we'll send you information about your bill and renewals. Select **Next**.
+2. On the **Thank you for choosing Microsoft 365 Business Basic** page, enter an email address that you already use. This can be any address you want Microsoft to use to communicate with you during setup. It is also the address where we'll send you information about your bill and renewals. Select **Next**.
 3. Select **Set up account** and enter your name, business phone number, business size, company name, and location. Select **Next**.
 
 > [!NOTE]

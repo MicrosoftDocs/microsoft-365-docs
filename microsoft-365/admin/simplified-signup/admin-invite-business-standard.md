@@ -1,5 +1,5 @@
 ---
-title: "Invite users to Microsoft 365 Business Standard subscription"
+title: "Invite users to a Microsoft 365 business subscription"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -16,10 +16,10 @@ ms.custom:
 description: "Invite users to join Microsoft 365 Business Standard organization"
 ---
 
-# Invite users to Microsoft 365 Business Standard (Admin)
+# Invite users to a Microsoft 365 business subscription (Admin)
 
 > [!IMPORTANT]
-> These steps apply to Microsoft 365 Business Standard and Microsoft 365 Apps for business.
+> These steps apply to Microsoft 365 Business Standard, Microsoft 365 Business Basic and Microsoft 365 Apps for business.
 
 As the admin of a Microsoft 365 Business Standard subscription, you can invite your colleagues and coworkers to share and use your Microsoft 365 for business subscription. When you invite your colleagues and coworkers to your subscription, you share all the following features and services:
 
