@@ -22,6 +22,8 @@ description: "Use the PowerShell script in this article to quickly clone an exis
 
 # Clone a Content Search
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Creating a Content Search in the compliance center in Office 365 or Microsoft 365 that searches many mailboxes or SharePoint and OneDrive for Business sites can take a while. Specifying the sites to search can also be prone to errors if you mistype a URL. To avoid these issues, you can use the Windows PowerShell script in this article to quickly clone an existing Content Search. When you clone a search, a new search (with a different name) is created that contains the same properties (such as the content locations and the search query) as the original search. Then you can edit the new search by changing the keyword query or the date range, and run it.
   
 Why clone Content Searches?
@@ -34,7 +36,7 @@ Why clone Content Searches?
   
 ## Script information
 
-- You have to be a member of the eDiscovery Manager role group in the Microsoft 365 compliance center to run the script described in this topic.
+- You have to be a member of the eDiscovery Manager role group in the Microsoft Purview compliance portal to run the script described in this topic.
     
 - The script includes minimal error handling. The primary purpose of the script is to quickly clone a content search.
     

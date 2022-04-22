@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 ms.reviewer: nickrob
 manager: laurawi
-ms.date: 
+ms.date: 04/08/2022
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,10 +15,12 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-description: "Learn how to access and use statistics and reports for draft collections and collections that have been committed to a review set in Advanced eDiscovery." 
+description: "Learn how to access and use statistics and reports for draft collections and collections that have been committed to a review set in Microsoft Purview eDiscovery (Premium)." 
 ---
 
-# Collection statistics and reports in Advanced eDiscovery
+# Collection statistics and reports in Microsoft Purview eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 After you create a draft collection, you can view statistics on the retrieved items, such as the content locations that contain the most items that matched the search criteria and the number of items returned by the search query. You can also preview a subset of the results.
 
@@ -89,7 +91,7 @@ This section of the **Summary** tab contains statistics and other information ab
  
    A parent item might contain multiple child items. For example, an email message is a parent item if it contains an attached file or has a cloud attachment. In this case, the attached file or the target file of the cloud attachment is considered a child item. When you commit a collection, parent items and any corresponding child items (like attached files and cloud attachments) are added to the review set as individual items or files.
 
-- **Child items**. The number of child items added to the review set. Only child items that are file attachments and cloud attachments are added to the review set as individual files. Other types of child items, such as email signatures and images, are extracted from a parent item and then processed by Optical Character Recognition (OCR) to extract any text from the child item. Text extracted from these types of child items is then added to its parent item so you can view it in the review set. By not adding child items to the review set as a separate file, Advanced eDiscovery helps streamline the review process by limiting the number of potentially immaterial items in the review set.
+- **Child items**. The number of child items added to the review set. Only child items that are file attachments and cloud attachments are added to the review set as individual files. Other types of child items, such as email signatures and images, are extracted from a parent item and then processed by Optical Character Recognition (OCR) to extract any text from the child item. Text extracted from these types of child items is then added to its parent item so you can view it in the review set. By not adding child items to the review set as a separate file, eDiscovery (Premium) helps streamline the review process by limiting the number of potentially immaterial items in the review set.
 
 - **Unique items**. The number of unique items added to the review set. Unique items are unique to the review set. All items are unique when the first collection is added to a new review set because there were no previous items in the review set.
 
@@ -125,7 +127,7 @@ When you run a draft collection, an estimate of the number of items (and their t
 
     For example, multiple versions of SharePoint documents aren't included in the estimate for the draft collection. But if you select the option to include all document versions when you commit a draft collection, the actual number (and total size) of items added to the review set will increase.
 
-    For more information about these options, see [Commit a draft collection to a review set](commit-draft-collection.md#commit-a-draft-collection-to-a-review-set-in-advanced-ediscovery). 
+    For more information about these options, see [Commit a draft collection to a review set](commit-draft-collection.md#commit-a-draft-collection-to-a-review-set-in-ediscovery-premium).
 
 Here are other reasons why the estimated results from a draft collection can be different that the actual committed results.
 

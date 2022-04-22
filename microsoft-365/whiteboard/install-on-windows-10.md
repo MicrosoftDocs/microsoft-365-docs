@@ -34,7 +34,7 @@ Whiteboard can be deployed to Windows 10 devices using Microsoft Intune or Micro
 
 2. Assign the app to a group using the steps in this article: 
 
-    [Assign apps to groups with Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/apps-deploy)
+    [Assign apps to groups with Microsoft Intune](/mem/intune/apps/apps-deploy)
 
 ## Install using Microsoft Configuration Manager
 

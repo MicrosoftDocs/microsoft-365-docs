@@ -1,5 +1,5 @@
 ---
-title: "SharePoint-Compatible PDF readers that support Microsoft Information Rights Management services"
+title: "SharePoint-compatible PDF readers that support IRM services"
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -20,6 +20,8 @@ ms.custom: seo-marvel-apr2020
 ---
 
 # SharePoint-Compatible PDF readers that support Microsoft Information Rights Management services
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft SharePoint 2013 supports Information Rights Management (IRM) protection of PDF documents. With that support, users can upload PDF documents to IRM-protected libraries, and upon download, the files will be protected using Microsoft Office IRM.
   
