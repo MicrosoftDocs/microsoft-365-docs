@@ -2,8 +2,8 @@
 title: "Archive Slack eDiscovery data to Microsoft 365 using a data connector provided by Microsoft"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 
 audience: Admin

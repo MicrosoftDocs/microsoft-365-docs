@@ -26,10 +26,10 @@ For more info on how partners create these apps, see [How to plan a SaaS offer f
 
 The Integrated apps portal is only accessible to global admins and available to world-wide customers only. This feature is not available in sovereign and government clouds.
 
-The Integrated apps portal displays a list of apps, which includes single apps and Microsoft 365 apps from partners which are deployed your organization. Only web apps, SPFx apps, Office Add-ins and Teams apps are listed. For web apps, you can see two kinds of apps.
+The Integrated apps portal displays a list of apps, which includes single apps and Microsoft 365 apps from partners which are deployed your organization. Only web apps, SPFx apps, Office Add-ins, and Teams apps are listed. For web apps, you can see two kinds of apps.
 
 - SaaS apps that are available in appsource.microsoft.com, and can be deployed by admins giving consent on behalf of the organization.
-- SAML gallery apps that are linked with office add-ins.
+- SAML gallery apps that are linked with Office add-ins.
 
 ## Manage apps in the Integrated apps portal
 
