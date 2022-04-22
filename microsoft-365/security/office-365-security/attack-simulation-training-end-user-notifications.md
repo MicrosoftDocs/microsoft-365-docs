@@ -58,13 +58,23 @@ When you select a notification from the list, a details flyout appears with the 
   - **Notification type**
   - **Modified by**
   - **Last modified**
+  - **Simulations**
+    - **Simulation names**
+    - **Simulation status**
+    - **End by**
+
+On the details flyout from the **Tenant notifications** tab only, click **Edit notification** to modify the notification.
 
 ## Create end-user notifications
 
 On the **Tenant notifications** tab, you can click ![Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new** to start the new end-user notification wizard.
 
 1. On the **Define details** page**, configure the following settings:
-   - **Select notification type**: **Positive reinforcement notification** or **Simulation notification** are available.
+   - **Select notification type**: Select one of the following values:
+     - **Positive reinforcement notification**
+     - **Simulation notification**
+     - **Training assignment notification**
+     - **Training reminder notification**
    - **Name**: Enter a unique name.
    - **Description**: Enter an optional description.
 
