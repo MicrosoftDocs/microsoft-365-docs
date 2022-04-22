@@ -35,9 +35,9 @@ Controlling access to Whiteboard can be done in the following ways:
 
 ## Enable or disable Whiteboard for your tenant 
 
-You will need the [SharePoint Online PowerShell module](https://docs.microsoft.com/microsoft-365/enterprise/manage-sharepoint-online-with-microsoft-365-powershell) to enable or disable all Fluid Experiences across your Microsoft 365 tenant.
+You will need the [SharePoint Online PowerShell module](/microsoft-365/enterprise/manage-sharepoint-online-with-microsoft-365-powershell) to enable or disable all Fluid Experiences across your Microsoft 365 tenant.
 
-1. Connect to [SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps).
+1. Connect to [SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps).
 
 2. Enable Fluid using the <code>Set-SPOTenant</code> cmdlet:
     **Set-SPOTenant -IsWBFluidEnabled $true**
@@ -49,4 +49,4 @@ The change should take approximately 60 minutes to apply across your tenancy. If
 
 ## Show or hide Whiteboard for meetings 
 
-For information about how to show or hide Whiteboard for meetings, see [Meeting policy settings](https://docs.microsoft.com/en-us/microsoftteams/meeting-policies-content-sharing).
+For information about how to show or hide Whiteboard for meetings, see [Meeting policy settings](/microsoftteams/meeting-policies-content-sharing).
