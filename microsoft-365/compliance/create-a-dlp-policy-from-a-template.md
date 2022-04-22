@@ -24,7 +24,9 @@ description: In this article, you'll learn about how to create DLP policies usin
 
 # Create a DLP policy from a template
 
-The easiest, most common way to get started with DLP policies is to use one of the templates included in the Microsoft 365 Compliance center. You can use one of these templates as is, or customize the rules to meet your organization's specific compliance requirements.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+The easiest, most common way to get started with DLP policies is to use one of the templates included in the Microsoft Purview compliance portal. You can use one of these templates as is, or customize the rules to meet your organization's specific compliance requirements.
 
 Microsoft 365 includes over 40 ready-to-use templates that can help you meet a wide range of common regulatory and business policy needs. See; [Policy templates](dlp-policy-reference.md#policy-templates) for a complete list. 
 
@@ -54,14 +56,14 @@ These permissions are required to create and apply a DLP policy not to enforce p
 
 There are roles and role groups in preview that you can test out to fine tune your access controls.
 
-Here's a list of Microsoft Information Protection (MIP) roles that are in preview. To learn more about them, see [Roles in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+Here's a list of applicable roles that are in preview. To learn more about them, see [Roles in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
 
 - Information Protection Admin
 - Information Protection Analyst
 - Information Protection Investigator
 - Information Protection Reader
 
-Here's a list of MIP role groups that are in preview. To learn more about the, see [Role groups in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+Here's a list of applicable role groups that are in preview. To learn more about the, see [Role groups in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
 
 - Information Protection
 - Information Protection Admins
@@ -71,9 +73,9 @@ Here's a list of MIP role groups that are in preview. To learn more about the, s
 
 ### Create the DLP policy from a template
 
-1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>.
+1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>.
 
-2. In the Compliance Center \> left navigation \> **Solutions** \> **Data loss prevention** \> **Policies** \> **+ Create policy**.
+2. In the Microsoft Purview compliance portal \> left navigation \> **Solutions** \> **Data loss prevention** \> **Policies** \> **+ Create policy**.
 
     ![Create a policy button.](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
           
