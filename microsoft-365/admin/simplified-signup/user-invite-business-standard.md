@@ -1,5 +1,5 @@
 ---
-title: "Accept an email invitation to Microsoft 365 Business Standard (User)"
+title: "Accept an email invitation to a Microsoft 365 for business subscription (User)"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -16,7 +16,7 @@ ms.custom:
 description: "Accept invite to join a Microsoft 365 Business Standard organization"
 ---
 
-# Accept an email invitation to a Microsoft 365 business subscription (User)
+# Accept an email invitation to a Microsoft 365 for business subscription (User)
 
 > [!IMPORTANT]
 > These steps apply to Microsoft 365 Business Standard, Microsoft 365 Business Basic and Microsoft 365 Apps for business.

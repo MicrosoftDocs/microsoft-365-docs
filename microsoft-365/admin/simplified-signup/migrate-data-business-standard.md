@@ -16,7 +16,7 @@ ms.custom:
 description: "Migrate your Outlook, OneDrive and Teams data to Microsoft 365 Business Standard"
 ---
 
-# Migrate data to my Microsoft 365 Business Standard subscription
+# Migrate data to my Microsoft 365 for business subscription
 
 Follow the steps in this article to move your OneDrive, Outlook and Teams data to your Microsoft 365 Business Standard subscription.
 

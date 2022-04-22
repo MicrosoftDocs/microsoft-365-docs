@@ -16,7 +16,7 @@ ms.custom:
 description: "Invite users to join Microsoft 365 Business Standard organization"
 ---
 
-# Invite users to a Microsoft 365 business subscription (Admin)
+# Invite users to a Microsoft 365 for business subscription (Admin)
 
 > [!IMPORTANT]
 > These steps apply to Microsoft 365 Business Standard, Microsoft 365 Business Basic and Microsoft 365 Apps for business.
