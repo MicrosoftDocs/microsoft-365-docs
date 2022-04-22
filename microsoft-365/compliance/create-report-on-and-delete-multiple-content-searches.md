@@ -1,9 +1,9 @@
 ---
-title: "Create, report on, and delete multiple Content Searches"
+title: "Create, report on, and delete Content Searches"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date:
 audience: Admin
@@ -23,11 +23,13 @@ ms.custom: seo-marvel-apr2020
 
 # Create, report on, and delete multiple Content Searches
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
  Quickly creating and reporting discovery searches is often an important step in eDiscovery and investigations when you're trying to learn about the underlying data, and the richness and quality of your searches. To help you do this, Security & Compliance Center PowerShell offers a set of cmdlets to automate time-consuming Content Search tasks. These scripts provide a quick and easy way to create a number of searches, and then run reports of the estimated search results that can help you determine the quantity of data in question. You can also use the scripts to create different versions of searches to compare the results each one produces. These scripts can help you to quickly and efficiently identify and cull your data.
 
 ## Before you create a Content Search
 
-- You have to be a member of the eDiscovery Manager role group in the Microsoft 365 compliance center to run the scripts that are described in this topic.
+- You have to be a member of the eDiscovery Manager role group in the Microsoft Purview compliance portal to run the scripts that are described in this topic.
 
 - To collect a list of the URLs for the OneDrive for Business sites in your organization that you can add to the CSV file in Step 1, see [Create a list of all OneDrive locations in your organization](/onedrive/list-onedrive-urls).
 
