@@ -41,7 +41,7 @@ description: "Glossary of terms for Microsoft 365 Business Premium"
 |cybercrime |Participating in the destruction or theft of data and information by means of computers or the internet.|
 |cyberspace |The concept of widespread interconnected digital technology, made up of computers and networks and the communication between them. |
 |data exfiltration |Data files that are stolen and sent outside the network through email or other means. |
-|Defender |Microsoft's antivirus software, Microsoft Defender Antivirus. Go here for more information about [Microsoft Defender](https://support.microsoft.com/topic/.getting-started-with-microsoft-defender-9df0cb0f-4866-4433-9cbc-f83e5cf77693)|
+|Defender |Microsoft's antivirus software, Microsoft Defender Antivirus. Go here for more information about [Microsoft Defender](https://support.microsoft.com/topic/.getting-started-with-microsoft-defender-9df0cb0f-4866-4433-9cbc-f83e5cf77693).|
 |Device Group |A device group is a collection of devices that are grouped together because of certain specified criteria, such as operating system version. Devices that meet the criteria are included in that device group, unless you exclude them. In Microsoft 365 Business Premium (and Defender for Business), Device groups are stored in Azure Active Directory. |
 |encryption |Encryption is the process by which information is encoded so that only an authorized recipient can decode and consume the information. |
 |exploit |A piece of code that uses software vulnerabilities to gain access to your device and perform other tasks, such as installing malware. |
