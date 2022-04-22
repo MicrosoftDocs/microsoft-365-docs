@@ -26,7 +26,7 @@ ms.assetid: b6c18a9b-2aed-4c84-9d75-af709160258c
 description: "Learn how to find a new Microsoft 365 partner, or get contact information for a partner you've worked with in the past."
 ---
 
-# Find your partner or reseller
+# Find your Microsoft 365 subscriptions partner or reseller
 
 As an admin, you can work with a partner to purchase, activate, and renew Microsoft 365 subscriptions through a Microsoft Open Volume Licensing program. 
   

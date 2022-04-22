@@ -32,7 +32,7 @@ ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: "Sign in with your Microsoft 365 admin account to reset passwords for users in Microsoft 365 for business subscription."
 ---
 
-# Reset passwords
+# Reset passwords in Microsoft 365 for business
 
 This article explains how to reset passwords for yourself and for your users when you have a Microsoft 365 for business subscription.
 

@@ -26,7 +26,7 @@ If you're using Basic Mobility and Security, there might be devices that you can
 
 Use these steps:
 
-1. Sign in to  Microsoft 365 with your global admin account.
+1. Sign in to Microsoft 365 with your global admin account.
 
 2. In your browser, type: [https://protection.office.com](https://protection.office.com/).
 

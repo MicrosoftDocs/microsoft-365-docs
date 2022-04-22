@@ -28,7 +28,7 @@ ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: "Admin roles such as the Service admin map to business functions and give permissions to do specific tasks in the admin center."
 ---
 
-# About admin roles
+# About admin roles in the Microsoft 365 admin center
 
 Microsoft 365 or Office 365 subscription comes with a set of admin roles that you can assign to users in your organization using the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. Each admin role maps to common business functions and gives people in your organization permissions to do specific tasks in the admin centers.
 

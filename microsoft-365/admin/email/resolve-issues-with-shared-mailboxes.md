@@ -30,7 +30,6 @@ description: "You might get errors when you set up shared mailboxes. Try these s
 If you see error messages when creating or using a shared mailbox, try these possible solutions. 
 
 ## Error when creating shared mailboxes
-<a name="bkmk_Fix"> </a>
 
 If you see the error message, **The proxy address "smtp:<shared mailbox name\>" is already being used by the proxy addresses or LegacyExchangeDN of "\<name>". Please choose another proxy address**, it means you're trying to give the shared mailbox a name that's already in use. For example, let's say you want shared mailboxes named info@domain1 and info@domain2. There are two ways to do this:
 
@@ -53,7 +52,3 @@ This message appears when Microsoft 365 is experiencing a replication latency is
 [Configure a shared mailbox](configure-a-shared-mailbox.md) (article)\
 [Convert a user mailbox to a shared mailbox](convert-user-mailbox-to-shared-mailbox.md) (article)\
 [Remove a license from a shared mailbox](remove-license-from-shared-mailbox.md) (article)
-
-
-    
-

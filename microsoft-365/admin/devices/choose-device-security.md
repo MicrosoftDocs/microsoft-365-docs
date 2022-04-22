@@ -20,7 +20,7 @@ search.appverid:
 description: "Choose between different MDM and MAM methods."
 ---
 
-# Options for protecting your devices and app data
+# Options for protecting your devices and app data with Microsoft 365
 
 You have several ways to secure your organizations devices and data on them with Microsoft 365 for business and enterprise. You can use the following stand-alone plans:
 

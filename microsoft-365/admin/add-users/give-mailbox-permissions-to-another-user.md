@@ -28,7 +28,7 @@ ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
 description: "Give a user the right to access another user's mailbox, which allows the user to read and send emails from the other user's mailbox."
 ---
 
-# Give mailbox permissions to another user - Admin Help
+# Give mailbox permissions to another user - Admin help
 
 As the admin, you may have company requirements to allow some users access to another user's mailbox. For example, you may want to enable an assistant to send or read email from their manager's mailbox, or one of your user's the ability to send email on behalf of another user. This topic shows you how to accomplish this.
   

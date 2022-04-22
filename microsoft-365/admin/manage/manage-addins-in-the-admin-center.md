@@ -25,7 +25,7 @@ ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: "Learn about using Centralized add-ins to deploy add-ins to users and groups in your organization."
 ---
 
-# Manage add-ins in the admin center
+# Manage add-ins in the Microsoft 365 admin center
 
 Office add-ins help you personalize your documents and streamline the way you access information on the web. See [Start using your Office add-in](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862). 
 

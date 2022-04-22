@@ -25,7 +25,7 @@ ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: "Get an overview of Microsoft 365 Message center and its role in tracking new and changed features and other important announcements."
 ---
 
-# Message center
+# Track new and changed features in the Microsoft 365 Message center
 
 To keep track of upcoming changes, including new and changed features, planned maintenance, or other important announcements, go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2070717" target="_blank">Message center</a>.
   

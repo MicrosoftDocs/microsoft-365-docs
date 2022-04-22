@@ -22,7 +22,7 @@ ms.assetid: 9b838071-94aa-4b8e-8d84-d17ece1ee951
 description: "Learn how to reset password and send a email to a new Microsoft 365 user."
 ---
 
-# Resend a user's password - Admin Help
+# Resend a user's password - Admin help
 
 This article explains how to resend the notification email to a new user in Office 365. This can happen when you create a new user and they don't get an email with their new password. You do this by resetting the user's password.
 
