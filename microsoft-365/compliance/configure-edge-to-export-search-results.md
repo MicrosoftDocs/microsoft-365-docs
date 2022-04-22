@@ -2,8 +2,8 @@
 title: "Use the eDiscovery Export Tool in Microsoft Edge"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: how-to
