@@ -66,32 +66,29 @@ To enable the Corelight integration, you'll need to take the following steps:
 > 
 > You will need internet connectivity for your sensor to reach both the Defender and Corelight cloud services for the solution to work.
 
-#### Enabling in the Corelight web interface
+#### Enable the integration in the Corelight web interface
 
 1. In the Corelight web interface, navigate to **Sensor** \> **Export**.
 
    :::image type="content" source="images/exporttodefender.png" alt-text="The kafka export" lightbox="images/exporttodefender.png":::
 
 2. Enable **Export To Microsoft Defender**.
-3. Enter your Microsoft Defender Tenant ID.
+3. Enter your Microsoft 356 Defender Tenant ID.
 4. Optionally, you can:
     - set the **Zeek Logs to Exclude**. The minimal set of logs you must include are: dns, conn, files, http, ssl, ssh, x509, snmp, smtp, ftp, sip, dhcp, and notice.
     - choose to create a **Microsoft Defender Log Filter**.
 5. Select **Apply Changes**.
 
-#### Enabling in the corelight-client
+#### Enable the integration in the corelight-client
 
 1. Enable **Export To Microsoft Defender** using the following command in the corelight-client:
 
-    corelight-client configuration update \
-    --bro.export.defender.enable True
+   :::image type="content" source="images/corelight-client-enable.png" alt-text="The kafka export" lightbox="images/corelight-client-enable.png":::
 
 2. Set you tenant ID
-3. Optionally, you use the following command to set the logs to exclude or to create a Microsoft Defender log filter. The minimal set of logs you must include is: dns, conn, files, http, ssl, ssh, x509, snmp, smtp, ftp, sip, dhcp, and notice.
+3. Optionally, you can use the following command to set the logs to exclude or to create a Microsoft Defender log filter. The minimal set of logs you must include is: dns, conn, files, http, ssl, ssh, x509, snmp, smtp, ftp, sip, dhcp, and notice.
 
-    corelight-client configuration update \
-    --bro.export.defender.exclude=<logs_to_exclude> \
-    --bro.export.defender.filter=<logs_to_filter>
+   :::image type="content" source="images/corelight-client-options.png" alt-text="The kafka export" lightbox="images/corelight-client-options.png":::
 
 ## See also
 
