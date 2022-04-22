@@ -93,9 +93,9 @@ To enable the Corelight integration, you'll need to take the following steps:
 3. Optionally, you use the following command to exclude certain logs or to create a Microsoft Defender log filter. The minimal set of logs you must include are: dns, conn, files, http, ssl, ssh, x509, snmp, smtp, ftp, sip, dhcp, and notice.
 
    ``` command
-     `corelight-client configuration update \
+     corelight-client configuration update \
     --bro.export.defender.exclude=<logs_to_exclude> \
-    --bro.export.defender.filter=<logs_to_filter>`
+    --bro.export.defender.filter=<logs_to_filter>
    ```
 
 ## See also
