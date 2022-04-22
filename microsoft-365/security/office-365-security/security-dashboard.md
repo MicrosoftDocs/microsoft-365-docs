@@ -1,6 +1,6 @@
 ---
 title: Security dashboard overview
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: dansimp
 author: dansimp
@@ -8,13 +8,13 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
-search.appverid: 
+search.appverid:
   - MET150
   - MOE150
 ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
-ms.collection: 
+ms.collection:
   - M365-security-compliance
-ms.custom: 
+ms.custom:
   - seo-marvel-apr2020
 description: Use the new Security Dashboard to review Office 365 Threat Protection Status, and view and act on security alerts.
 ms.technology: mdo
@@ -24,7 +24,6 @@ ms.prod: m365-security
 # Security dashboard in the Security & Compliance Center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
 
 ## Basic functions and how to open Security dashboard
 

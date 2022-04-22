@@ -1,5 +1,7 @@
 ---
 title: "Get started with privileged access management"
+description: Use this article to learn more about enabling and configuring privileged access management in Microsoft Purview.
+keywords: Microsoft 365, Microsoft Purview, compliance, privileged access management
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -21,12 +23,13 @@ ms.custom:
  - seo-marvel-apr2020
  - admindeeplinkMAC
 ms.assetid:
-description: Use this article to learn more about enabling and configuring privileged access management in Office 365.
 ---
 
 # Get started with privileged access management
 
-This topic guides you through enabling and configuring privileged access management in your organization. You can use either the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> or Exchange Management PowerShell to manage and use privileged access.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+This article guides you through enabling and configuring privileged access management in your organization. You can use either the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> or Exchange Management PowerShell to manage and use privileged access.
 
 ## Before you begin
 

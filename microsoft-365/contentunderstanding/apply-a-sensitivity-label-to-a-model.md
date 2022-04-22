@@ -24,7 +24,7 @@ Sensitivity labels let you apply encryption to the documents that your models id
 You can apply a pre-existing sensitivity label to your model through your model settings on your model's home page. The label must already be published to be available for selection from model settings. Labels apply to Office files for Word (.docx), PowerPoint (.pptx), and Excel (.xlsx). 
 
 > [!Important]
-> For sensitivity labels to be available to apply to your document understanding models, they need to be created and published in the [Microsoft 365 Compliance Center](../compliance/microsoft-365-compliance-center.md).
+> For sensitivity labels to be available to apply to your document understanding models, they need to be [created and published in the Microsoft Purview compliance portal](../admin/security-and-compliance/set-up-compliance.md).
 
 ## Add a sensitivity label to a document understanding model
 
@@ -71,7 +71,7 @@ For example, all financial documents that your model identifies also will have t
 ## Add a sensitivity label to a form processing model
 
 > [!Important]
-> For sensitivity labels to be available to apply to your form processing model, they need to be [created and published in the Microsoft 365 Compliance Center](../business-premium/m365bp-set-up-compliance.md).
+> For sensitivity labels to be available to apply to your form processing model, they need to be [created and published in the Microsoft Purview compliance portal](../admin/security-and-compliance/set-up-compliance.md).
 
 You can either apply a sensitivity label to a form processing model when you are creating a model, or apply it to an existing model.
 

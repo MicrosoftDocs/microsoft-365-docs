@@ -1,5 +1,5 @@
 ---
-title: "Add your organization brand to your encrypted messages"
+title: "Add your brand to encrypted messages"
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -27,6 +27,8 @@ description: Learn how Office 365 global administrators can apply your organizat
 
 # Add your organization's brand to your Microsoft 365 for business Message Encryption encrypted messages
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 You can apply your company branding to customize the look of your organization's email messages and the encryption portal. You'll need to apply global administrator permissions to your work or school account before you can get started. Once you have these permissions, use the Get-OMEConfiguration and Set-OMEConfiguration Windows PowerShell cmdlets to customize these parts of encrypted email messages:
 
 - Introductory text
@@ -38,7 +40,7 @@ You can apply your company branding to customize the look of your organization's
 
 You can also revert back to the default look and feel at any time.
 
-If you'd like more control, use Office 365 Advanced Message Encryption to create multiple templates for encrypted emails originating from your organization. Use these templates to control parts of the end-user experience. For example, specify whether recipients can use Google, Yahoo, and Microsoft Accounts to sign in to the encryption portal. Use templates to fulfill several use cases, such as:
+If you'd like more control, use Microsoft Purview Advanced Message Encryption to create multiple templates for encrypted emails originating from your organization. Use these templates to control parts of the end-user experience. For example, specify whether recipients can use Google, Yahoo, and Microsoft Accounts to sign in to the encryption portal. Use templates to fulfill several use cases, such as:
 
 - Individual departments, such as Finance, Sales, and so on.
 - Different products
@@ -46,7 +48,7 @@ If you'd like more control, use Office 365 Advanced Message Encryption to create
 - Whether you want to allow emails to be revoked
 - Whether you want emails sent to external recipients to expire after a specified number of days.
 
-Once you've created the templates, you can apply them to encrypted emails by using Exchange mail flow rules. If you have Office 365 Advanced Message Encryption, you can revoke any email that you've branded by using these templates.
+Once you've created the templates, you can apply them to encrypted emails by using Exchange mail flow rules. If you have Microsoft Purview Advanced Message Encryption, you can revoke any email that you've branded by using these templates.
 
 ## Work with OME branding templates
 
@@ -86,7 +88,7 @@ Use Windows PowerShell to modify one branding template at a time. If you have Ad
 
 ## Create an OME branding template (Advanced Message Encryption)
 
-If you have Office 365 Advanced Message Encryption, you can create custom branding templates for your organization by using the [New-OMEConfiguration](/powershell/module/exchange/new-omeconfiguration) cmdlet. Once you've created the template, you modify the template by using the Set-OMEConfiguration cmdlet as described in [Modify an OME branding template](#modify-an-ome-branding-template). You can create multiple templates.
+If you have Microsoft Purview Advanced Message Encryption, you can create custom branding templates for your organization by using the [New-OMEConfiguration](/powershell/module/exchange/new-omeconfiguration) cmdlet. Once you've created the template, you modify the template by using the Set-OMEConfiguration cmdlet as described in [Modify an OME branding template](#modify-an-ome-branding-template). You can create multiple templates.
 
 To create a new custom branding template:
 
@@ -157,7 +159,7 @@ To remove a custom branding template:
 After you've either modified the default template or created new branding templates, you can create Exchange mail flow rules to apply your custom branding based on certain conditions. Such a rule will apply custom branding in the following scenarios:
 
 - If the email was manually encrypted by the end user using Outlook or Outlook on the web, formerly Outlook Web App
-- If the email was automatically encrypted by an Exchange mail flow rule or Data Loss Prevention policy
+- If the email was automatically encrypted by an Exchange mail flow rule or Microsoft Purview Data Loss Prevention policy
 
 For information on how to create an Exchange mail flow rule that applies encryption, see [Define mail flow rules to encrypt email messages in Office 365](define-mail-flow-rules-to-encrypt-email.md).
 
@@ -181,7 +183,7 @@ For information on how to create an Exchange mail flow rule that applies encrypt
 
 8. (Optional) You can configure the mail flow rule to apply encryption and custom branding. From **Do the following**, select **Modify the message security**, and then choose **Apply Office 365 Message Encryption and rights protection**. Select an RMS template from the list, choose **Save**, and then choose **OK**.
 
-   The list of templates includes default templates and options and any custom templates you create. If the list is empty, ensure that you have set up Office 365 Message Encryption with the new capabilities. For instructions, see [Set up new Office 365 Message Encryption capabilities](set-up-new-message-encryption-capabilities.md). For information about the default templates, see [Configuring and managing templates for Azure Information Protection](/information-protection/deploy-use/configure-policy-templates). For information about the **Do Not Forward** option, see [Do Not Forward option for emails](/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails). For information about the **encrypt only** option, see [Encrypt Only option for emails](/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
+   The list of templates includes default templates and options and any custom templates you create. If the list is empty, ensure that you have set up Microsoft Purview Message Encryption. For instructions, see [Set up Microsoft Purview Message Encryption](set-up-new-message-encryption-capabilities.md). For information about the default templates, see [Configuring and managing templates for Azure Information Protection](/information-protection/deploy-use/configure-policy-templates). For information about the **Do Not Forward** option, see [Do Not Forward option for emails](/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails). For information about the **encrypt only** option, see [Encrypt Only option for emails](/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
 
    Choose **add action** if you want to specify another action.
 

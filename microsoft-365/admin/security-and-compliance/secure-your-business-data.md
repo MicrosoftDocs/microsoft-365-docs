@@ -55,7 +55,7 @@ Microsoft recommends that you complete the tasks listed in the following table t
 | 4 | [Protect against malware](#4-protect-against-malware) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(protection for email) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(increased protection for email and devices) |
 | 5 | [Protect against ransomware](#5-protect-against-ransomware) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(protection for email and cloud storage) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(increased protection for devices, email, and cloud storage) |
 | 6 | [Stop auto-forwarding for email](#6-stop-auto-forwarding-for-email) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
-| 7 | [Use encryption](#7-use-office-message-encryption) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
+| 7 | [Use message encryption](#7-use-microsoft-purview-message-encryption) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
 | 8 | [Protect your email from phishing attacks](#8-protect-your-email-from-phishing-attacks) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(antiphishing protection) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(advanced antiphishing protection) |
 | 9 | [Protect against malicious attachments, files, and URLs in email and Office files](#9-protect-against-malicious-attachments-files-and-urls) | | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(Safe Links and Safe Attachments) |
 | 10 | [Increase protection for your organization's devices](#10-increase-protection-for-your-organizations-devices) | | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(enterprise-grade device protection) |
@@ -237,11 +237,11 @@ To create a mail transport rule:
 |Do the following ...|Block the message . . . reject the message and include an explanation.|
 |Provide message text|Auto-forwarding email outside this organization is prevented for security reasons.|
 
-## 7: Use Office Message Encryption
+## 7: Use Microsoft Purview Message Encryption
 
-Office Message Encryption is included with Microsoft 365. It's already set up. With Office Message Encryption, your organization can send and receive encrypted email messages between people inside and outside your organization. Office 365 Message Encryption works with Outlook.com, Yahoo!, Gmail, and other email services. Email message encryption helps ensure that only intended recipients can view message content.
+Microsoft Purview Message Encryption is included with Microsoft 365. It's already set up. With Microsoft Purview Message Encryption, your organization can send and receive encrypted email messages between people inside and outside your organization. Microsoft Purview Message Encryption works with Outlook.com, Yahoo!, Gmail, and other email services. Email message encryption helps ensure that only intended recipients can view message content.
 
-Office Message Encryption provides two protection options when sending mail:
+Microsoft Purview Message Encryption provides two protection options when sending mail:
 
 - Do not forward
 
