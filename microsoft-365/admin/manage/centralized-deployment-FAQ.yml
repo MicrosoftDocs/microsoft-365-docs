@@ -24,7 +24,6 @@ metadata:
 title: Centralized Deployment FAQ
 summary: Centralized Deployment is the recommended way for an Office 365 admin to deploy Office Add-ins (Word, Excel, PowerPoint, and Outlook) to users and groups within an organization, provided the organization meets all requirements for using Centralized Deployment as outlined in this article. 
 
-
 sections:
   - name: Ignored
     questions:
@@ -102,7 +101,7 @@ sections:
       - question: |
           Which admin role do I need to manage add-ins for my organization? 
         answer: |
-          Global Admin is the recommended role with complete access to add-in management lifecycle. If you're the person who purchased your Microsoft 365 Business subscription, you are the Global admin.
+          Global Admin is the recommended role with complete access to the add-in management lifecycle. If you're the person who purchased your Microsoft 365 Business subscription, you are the Global admin.
 
           Your subscription comes with a set of admin roles that you can assign to other users in your organization. Each admin role maps to common business functions and gives people in your organization permissions to perform specific tasks in the Microsoft 365 admin center.  
            
