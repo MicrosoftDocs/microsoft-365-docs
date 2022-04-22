@@ -20,11 +20,11 @@ description: "Access logs are available for encrypted messages retrieved through
 
 # Encrypted message portal activity log
 
-Access logs are available for encrypted messages through the Encrypted Message portal that lets your organization determine when messages are read, and forwarded by your external recipients. To ensure logs are available for any external recipients, you should enable tracking and should apply a custom branding template to protected emails sent by your organization to external recipients. See [Add your organization's brand to your encrypted messages](add-your-organization-brand-to-encrypted-messages.md).
+Access logs are available for encrypted messages through the Encrypted Message portal that lets your organization determine when messages are read, and forwarded by your external recipients. To ensure logs are available for any external recipients, you should apply a custom branding template to protected emails sent by your organization to external recipients that enforces a portal experience. See [Add your organization's brand to your encrypted messages](add-your-organization-brand-to-encrypted-messages.md).
 
 ## Enabling message access audit logs in PowerShell
 
-Access log can be enabled using Exchange Online PowerShell. The *-EnablePortalTrackingLogs* parameter of Set-IrmConfiguration specifies whether to enable the audit logs of accessing the OME portal. Valid values are:
+Access log can be enabled using Exchange Online PowerShell. The *-EnablePortalTrackingLogs* parameter of Set-IrmConfiguration specifies whether to enable the audit logs of accessing the encrypted message portal. Valid values are:
 
 - $true: Turn on audit feature.
 - $false: Turn off audit feature
@@ -47,6 +47,6 @@ The access log contains entries for messages sent through the encrypted message 
 To view the events captured in the message access logs:
 
 1. In the Microsoft Purview compliance portal, under **Solutions**, select **Audit**.
-1. Under **Search**, click the drop down for **Activities** and type Encrypted message portal activities.
-1. Under OME portal activities, select the event types to use in the search. Set the date range for the search (default is the previous week), you can also optionally add in a file or folder name or a particular user for the search. When ready, select **Search**.
+1. Under **Search**, click the drop down for **Activities** and type encrypted message portal activities.
+1. Under encrypted message portal activities, select the event types to use in the search. Set the date range for the search (default is the previous week), you can also optionally add a particular user in your organization for the search. When ready, select **Search**.
 1. Select an event from the list to view the audit properties.
