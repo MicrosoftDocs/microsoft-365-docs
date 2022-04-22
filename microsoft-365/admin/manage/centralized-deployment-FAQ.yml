@@ -22,7 +22,7 @@ metadata:
   - MOE150
   description: "Review the answers to frequent questions about Centralized Deployment from the Microsoft 365 admin center."
 title: Centralized Deployment FAQ
-summary: Centralized Deployment is the recommended way for an Office 365 admin to deploy Office add-ins (Word, Excel, PowerPoint, and Outlook) to users and groups within an organization, provided the organization meets all requirements for using Centralized Deployment as outlined in this article. 
+summary: Centralized Deployment is the recommended way for an Office 365 admin to deploy Office Add-ins (Word, Excel, PowerPoint, and Outlook) to users and groups within an organization, provided the organization meets all requirements for using Centralized Deployment as outlined in this article. 
 
 
 sections:
