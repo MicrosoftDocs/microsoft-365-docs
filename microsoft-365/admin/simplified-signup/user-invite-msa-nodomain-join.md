@@ -18,6 +18,9 @@ description: "Accept an email invitation to join a Microsoft 365 Business Standa
 
 # Accept an email invitation to a Microsoft 365 business subscription organization using an Outlook, Yahoo, Gmail or other account (User)
 
+> [!IMPORTANT]
+> These steps apply to Microsoft 365 Business Standard, Microsoft 365 Business Basic and Microsoft 365 Apps for business.
+
 When someone adds you to a Microsoft 365 for business organization, you'll get an email invitation with steps on how to join. In this scenario, you're joining an organization that doesn't have a different professional email for users. You'll sign in with your regular email account.
 
 > [!IMPORTANT]
