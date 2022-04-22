@@ -132,7 +132,7 @@ The global administrator for your organization can change the settings for autom
 
 2. On the settings page, select **Compliance Manager**.
 
-3. Select **Automated testing** from the left navigation.
+3. Select **Testing source** from the left navigation.
 
 4. Select the applicable button to turn on automatic testing for all improvement actions, turn it off for all actions, or turn on by individual action.
 
