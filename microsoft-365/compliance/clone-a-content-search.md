@@ -2,8 +2,8 @@
 title: "Clone a Content Search"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 4/26/2017
 audience: Admin
