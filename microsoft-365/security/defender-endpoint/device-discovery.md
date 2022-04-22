@@ -147,7 +147,7 @@ Device discovery leverages Microsoft Defender for Endpoint onboarded devices as 
 - ConnectionAttempt - An attempt to establish a TCP connection (syn)
 - ConnectionAcknowledged - An acknowledgment that a TCP connection was accepted (syn\ack)
 
-This means that if a non-onboarded device attempts to communicate with an onboarded Microsoft Defender for Endpoint device, the attempt will generate a DeviceNetworkEvent on the onboarded device, and the activities on the non-onboarded device can be seen on the timeline and through the Advanced hunting DeviceNetworkEvents table.
+When a non-onboarded device attempts to communicate with an onboarded Microsoft Defender for Endpoint device, the attempt will generate a DeviceNetworkEvent on the onboarded device. The activities on the non-onboarded device can be seen on the timeline and through the Advanced hunting DeviceNetworkEvents table.
 
 You can try this example query:
 
