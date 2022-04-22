@@ -24,7 +24,7 @@ ms.collection:
 # Manage Microsoft Defender Antivirus updates and apply baselines
 
 > [!IMPORTANT]
-> Customers who applied the March 2022 Microsoft Defender engine update (1.1.19100.5) may have encountered high resource utilization (CPU and/or memory) issues. Microsoft has released an update (1.1.19200.5) to resolve the issues with the earlier version. We recommend updating to the latest engine version: 1.1.19200.5. See [Monthly platform and engine versions](#monthly-platform-and-engine-versions) (in this article).
+> Customers might have encountered high resource utilization (CPU and/or memory) issues following the March 2022 Microsoft Defender engine update (**1.1.19100.5**). Microsoft has released an update (1.1.19200.5) to resolve these issues. We recommend updating to the latest engine version: **1.1.19200.5**. See [Monthly platform and engine versions](#monthly-platform-and-engine-versions) (in this article).
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plans 1 and 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -88,7 +88,7 @@ All our updates contain
 <details>
 <summary>March-2022 UPDATE (Platform: 4.18.2203.5 | Engine:  1.1.19200.5)</summary>
 
-*Customers who applied the March 2022 Microsoft Defender engine update (1.1.19100.5) may have encountered high resource utilization (CPU and/or memory) issues. Microsoft has released an update (1.1.19200.5) to resolve the issues with the earlier version. We recommend updating to the latest engine version: 1.1.19200.5.*
+*Customers might have encountered high resource utilization (CPU and/or memory) issues following the March 2022 Microsoft Defender engine update (**1.1.19100.5**). Microsoft has released an update (1.1.19200.5) to resolve these issues. We recommend updating to the latest engine version: **1.1.19200.5**.*
 
 &ensp;Security intelligence update version: **1.361.1449.0**<br/>
 &ensp;Released: **April 22, 2022**<br/>
