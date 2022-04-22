@@ -85,7 +85,7 @@ To enable the Corelight integration, you'll need to take the following steps:
 
     ``` command
     corelight-client configuration update \
-    --bro.export.defender.enable True`
+    --bro.export.defender.enable True
     ```
 
 2. Set you tenant ID
