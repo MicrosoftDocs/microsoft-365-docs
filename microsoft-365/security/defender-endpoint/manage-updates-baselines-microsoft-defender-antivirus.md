@@ -15,7 +15,7 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 04/11/2022
+ms.date: 04/21/2022
 ms.collection: 
 - M365-security-compliance
 - m365initiative-defender-endpoint
@@ -83,6 +83,29 @@ All our updates contain
 - Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
+<summary>March-2022 UPDATE (Platform: 4.18.2203.5 | Engine:  1.1.19200.5)</summary>
+
+*Customers who applied the March 2022 Microsoft Defender engine update (1.1.19100.5) may have encountered high resource utilization (CPU and/or memory) issues. Microsoft has released an update (1.1.19200.5) to resolve the issues with the earlier version. We recommend updating to the latest engine version: 1.1.19200.5.*
+
+&ensp;Security intelligence update version: **1.361.1449.0**<br/>
+&ensp;Released: **April 22, 2022**<br/>
+&ensp;Platform: **4.18.2203.5**<br/>
+&ensp;Engine: **1.1.19200.5**<br/>
+&ensp;Support phase: **Security and Critical Updates**<br/>
+
+Engine version: 1.1.19200.5 <br/>
+Security intelligence update version: 1.361.1449.0<br/>
+
+### What's new
+
+- Resolves issues with high resource utilization (CPU and/or memory) related to the earlier March 2022 Microsoft Defender engine update (1.1.19100.5)
+
+### Known Issues
+
+No known issues
+
+<br/><br/>
+</details><details>
 <summary>March-2022 (Platform: 4.18.2203.5 | Engine:  1.1.19100.5)</summary>
 
 &ensp;Security intelligence update version: **1.361.1449.0**<br/>
