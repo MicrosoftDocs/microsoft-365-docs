@@ -1,4 +1,4 @@
-    ---
+---
 title: "Microsoft 365 Business Premium overview"
 f1.keywords:
 - NOCSH
