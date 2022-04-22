@@ -2,8 +2,8 @@
 title: "Deploy a connector to archive Facebook Business pages data"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 
 audience: Admin
