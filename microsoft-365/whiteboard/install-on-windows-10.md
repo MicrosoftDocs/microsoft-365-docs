@@ -30,11 +30,11 @@ Whiteboard can be deployed to Windows 10 devices using Microsoft Intune or Micro
 
 1. Add Whiteboard as an available app using the steps in this article: 
 
-    [Add Microsoft Store apps to Microsoft Intune](https://docs.microsoft.com/en-us/mem/intune/apps/store-apps-windows)
+    [Add Microsoft Store apps to Microsoft Intune](/mem/intune/apps/store-apps-windows)
 
 2. Assign the app to a group using the steps in this article: 
 
-    [Assign apps to groups with Microsoft Intune](https://docs.microsoft.com/en-us/mem/intune/apps/apps-deploy)
+    [Assign apps to groups with Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/apps-deploy)
 
 ## Install using Microsoft Configuration Manager
 
