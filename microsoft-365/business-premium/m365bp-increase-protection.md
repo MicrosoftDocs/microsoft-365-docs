@@ -167,7 +167,7 @@ The following image shows some of the default policies that are included with Mi
 
 3. Select an individual policy to view more details or to edit the policy. The following image shows a list of alert policies with one policy selected:
 
-   :::image type="content" source="media/selected-alert-policy.png" lightbox="media/mdb-deviceconfig-selectedpolicy.png" alt-text="Screenshot of a selected alert policy.":::
+   :::image type="content" source="media/selected-alert-policy.png" lightbox="media/selected-alert-policy.png" alt-text="Screenshot of a selected alert policy.":::
 
 > [!TIP]
 > For more information, see [alert policies](../compliance/alert-policies.md).
