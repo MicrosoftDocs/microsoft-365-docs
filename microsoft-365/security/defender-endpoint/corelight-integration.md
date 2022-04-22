@@ -68,28 +68,30 @@ To enable the Corelight integration, you'll need to take the following steps:
 
 #### Enabling in the Corelight web interface
 
-1. In the Corelight Sensor GUI configuration section, select **Sensor** \> **Export**.
-2. Enable **Export To Microsoft Defender**.
-3. Enter your Microsoft Defender Tenant ID.
-4. Optionally, you can choose **Zeek Logs to Exclude** or to write a **Microsoft Defender Log Filter**. The minimal set of logs you must include is: dns, conn, files, http, ssl, ssh, x509, snmp, smtp, ftp, sip, dhcp, and notice.
+1. In the Corelight web interface, navigate to **Sensor** \> **Export**.
 
    :::image type="content" source="images/exporttodefender.png" alt-text="The kafka export" lightbox="images/exporttodefender.png":::
 
+2. Enable **Export To Microsoft Defender**.
+3. Enter your Microsoft Defender Tenant ID.
+4. Optionally, you can:
+    - set the **Zeek Logs to Exclude**. The minimal set of logs you must include are: dns, conn, files, http, ssl, ssh, x509, snmp, smtp, ftp, sip, dhcp, and notice.
+    - choose to create a **Microsoft Defender Log Filter**.
 5. Select **Apply Changes**.
 
 #### Enabling in the corelight-client
 
 1. Enable **Export To Microsoft Defender** using the following command in the corelight-client:
 
-    `corelight-client configuration update \</br>
-    --bro.export.defender.enable True`
+    corelight-client configuration update \
+    --bro.export.defender.enable True
 
 2. Set you tenant ID
-3. Optionally, you use the following command to exclude certain logs or to create a Microsoft Defender log filter. The minimal set of logs you must include is: dns, conn, files, http, ssl, ssh, x509, snmp, smtp, ftp, sip, dhcp, and notice.
+3. Optionally, you use the following command to set the logs to exclude or to create a Microsoft Defender log filter. The minimal set of logs you must include is: dns, conn, files, http, ssl, ssh, x509, snmp, smtp, ftp, sip, dhcp, and notice.
 
-     `corelight-client configuration update \</br>
-    --bro.export.defender.exclude=<logs_to_exclude> \</br>
-    --bro.export.defender.filter=<logs_to_filter>`
+    corelight-client configuration update \
+    --bro.export.defender.exclude=<logs_to_exclude> \
+    --bro.export.defender.filter=<logs_to_filter>
 
 ## See also
 
