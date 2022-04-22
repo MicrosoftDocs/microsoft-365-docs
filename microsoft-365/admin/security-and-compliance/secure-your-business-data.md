@@ -95,7 +95,7 @@ Enable or disable security defaults from the **Properties** pane for Azure Activ
 After you set up multi-factor authentication for your organization, your users will be required to set up two-step verification on their devices. For more information, see [Set up 2-step verification for Microsoft 365](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14).
 
 > [!Tip]
-> If you need more granular control of multi-factor authentication, you can enable Conditional Access with Microsoft 365 Business Premium. If you do this, we recommend implementing the equivalent policies to Security Defaults. Go here for more information about [security defaults](/business-premium/m365bp-conditional-access.md).
+> If you need more granular control of multi-factor authentication, you can enable Conditional Access with Microsoft 365 Business Premium. If you do this, we recommend implementing the equivalent policies to Security Defaults. Go here for more information about [security defaults](/microsoft-365/business-premium/m365bp-conditional-access).
 
 For more details and recommendations, see [Set up multi-factor authentication for users](set-up-multi-factor-authentication.md).
 
