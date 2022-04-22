@@ -18,9 +18,9 @@ search.appverid:
 description: "Access logs are available for encrypted messages retrieved through the encrypted message portal."
 ---
 
-# Encrypted message portal activity log
+# Encrypted message portal activity log (preview)
 
-Access logs are available for encrypted messages through the Encrypted Message portal that lets your organization determine when messages are read, and forwarded by your external recipients. To ensure logs are available for any external recipients, you should apply a custom branding template to protected emails sent by your organization to external recipients that enforces a portal experience. See [Add your organization's brand to your encrypted messages](add-your-organization-brand-to-encrypted-messages.md).
+Access logs are available for encrypted messages through the encrypted message portal that lets your organization determine when messages are read, and forwarded by your external recipients. To ensure logs are available for any external recipients, you should apply a custom branding template to protected emails sent by your organization to external recipients that enforces a portal experience. See [Add your organization's brand to your encrypted messages](add-your-organization-brand-to-encrypted-messages.md).
 
 ## Enabling message access audit logs in PowerShell
 
