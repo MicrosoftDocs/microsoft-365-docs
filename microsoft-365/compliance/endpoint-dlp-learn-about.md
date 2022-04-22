@@ -90,7 +90,7 @@ If you only want monitoring data from policy matches, you can turn off the **Alw
 
 Endpoint DLP monitors activity-based on MIME type, so activities will be captured even if the file extension is changed.
 
-### File types (preview)
+### File types
 
 File Types are a grouping of file formats which are utilized to protect specific workflows or areas of business. You can use one or more File types as conditions in your DLP policies.
 
@@ -102,7 +102,7 @@ File Types are a grouping of file formats which are utilized to protect specific
 |archive  |file archive and compression tools | .zip, .zipx, .rar, .7z, .tar, .gz        |
 |email    |Outlook |.pst, .ost, .msg         |
 
-### File extensions (preview)
+### File extensions
 
 If the File types don't cover the file extensions you need to list as a condition in a policy, you can use file extensions separated by comma instead.
 
