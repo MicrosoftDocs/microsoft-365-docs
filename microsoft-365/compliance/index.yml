@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
 title: Microsoft Purview compliance documentation # < 60 chars
-summary: If your organization needs to comply with legal or regulatory standards, start here to learn about compliance in Microsoft Purview. For data governance, see [Microsoft Purview data governance documentation](/azure/purview/). # < 160 chars
+summary: If your organization needs to comply with legal or regulatory standards, start here to learn about compliance in Microsoft Purview. # < 160 chars
 
 metadata:
   title: Microsoft Purview compliance documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
