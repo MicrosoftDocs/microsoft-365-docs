@@ -17,4 +17,4 @@ description: Learn about subscription or licensing requirements for Microsoft Wh
 
 # Licensing in Microsoft Whiteboard
 
-A Whiteboard license is assigned to users in your organization (Whiteboard plan 1, 2, and so on). Licenses don't currently have any feature differences, but they will in the future.
+A Whiteboard license is assigned to users in your organization (Whiteboard plan 1, 2, and so on). Licenses don't currently have any feature differences, but they will in future patches.
