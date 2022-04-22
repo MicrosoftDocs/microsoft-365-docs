@@ -237,7 +237,7 @@ Welcome to Microsoft Ignite. We hope you were able to attend some of one of our 
 
 ### Message center
 
-We’ve revamped the Message center to help you discover relevant messages and added a more flexible reading experience. We've added a new **Service** column to help you scan which Service a message applies to and filter messages by Service and other metadata. You can favorite a message to mark it for follow up, choose which columns appear in the message list, and navigate between messages with the back and next buttons. We've also improved the process to make it easier to give feedback on Message center posts.
+We’ve revamped the Message center to help you discover relevant messages and added a more flexible reading experience. We've added a new **Service** column to help you scan which Service a message applies to and filter messages by Service and other metadata. You can favorite a message to mark it for follow-up, choose which columns appear in the message list, and navigate between messages with the back and next buttons. We've also improved the process to make it easier to give feedback on Message center posts.
 
 :::image type="content" source="../media/message-center.png" alt-text="Screenshot: Message center home page showing inbox and messages":::
 
