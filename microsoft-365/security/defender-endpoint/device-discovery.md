@@ -119,7 +119,7 @@ You can use advanced hunting queries to gain visibility on discovered devices. F
 
 Run this query, on the DeviceInfo table, to return all discovered devices along with the most up to details for each device:
 
-```text
+```query
 DeviceInfo
 | summarize arg_max(Timestamp, *) by DeviceId  // Get latest known good per device Id
 | where isempty(MergedToDeviceId) // Remove invalidated/merged devices
@@ -128,7 +128,7 @@ DeviceInfo
 
 By invoking the **SeenBy** function, in your advanced hunting query, you can get detail on which onboarded device a discovered device was seen by. This information can help determine the network location of each discovered device and subsequently, help to identify it in the network.  
 
-```text
+```query
 DeviceInfo
 | where OnboardingStatus != "Onboarded" 
 | summarize arg_max(Timestamp, *) by DeviceId  
@@ -147,7 +147,7 @@ Device discovery leverages Microsoft Defender for Endpoint onboarded devices as 
 - ConnectionAttempt - An attempt to establish a TCP connection (syn)
 - ConnectionAcknowledged - An acknowledgment that a TCP connection was accepted (syn\ack)
 
-This means that if a non-onboarded device attempts to communicate with a Microsoft Defender for Endpoint onboarded device, the attempt will generate a DeviceNetworkEvent on the onboarded device and the activities on the non-onboarded device can be seen on the timeline and through the Advanced hunting DeviceNetworkEvents table.
+This means that if a non-onboarded device attempts to communicate with an onboarded Microsoft Defender for Endpoint device, the attempt will generate a DeviceNetworkEvent on the onboarded device, and the activities on the non-onboarded device can be seen on the timeline and through the Advanced hunting DeviceNetworkEvents table.
 
 You can try this example query:
 
