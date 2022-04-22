@@ -24,7 +24,7 @@ ms.collection:
 # Manage Microsoft Defender Antivirus updates and apply baselines
 
 > [!IMPORTANT]
-> Customers who applied the March 2022 Microsoft Defender engine update (1.1.19100.5) may have encountered high resource utilization (CPU and/or memory) issues. Microsoft has released an update (1.1.19200.5) to resolve the issues with the earlier version. We recommend updating to the latest engine version: 1.1.19200.5. See the section, [Monthly platform and engine versions](#monthly-platform-and-engine-versions) (in this article).
+> Customers who applied the March 2022 Microsoft Defender engine update (1.1.19100.5) may have encountered high resource utilization (CPU and/or memory) issues. Microsoft has released an update (1.1.19200.5) to resolve the issues with the earlier version. We recommend updating to the latest engine version: 1.1.19200.5. See [Monthly platform and engine versions](#monthly-platform-and-engine-versions) (in this article).
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plans 1 and 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -35,8 +35,8 @@ ms.collection:
 
 Keeping Microsoft Defender Antivirus up to date is critical to assure your devices have the latest technology and features needed to protect against new malware and attack techniques. Make sure to update your antivirus protection, even if Microsoft Defender Antivirus is running in [passive mode](microsoft-defender-antivirus-compatibility.md). There are two types of updates related to keeping Microsoft Defender Antivirus up to date:
 
-- Security intelligence updates
-- Product updates
+- [Security intelligence updates](#security-intelligence-updates)
+- [Product updates](#product-updates)
 
 > [!TIP]
 > To see the most current engine, platform, and signature date, visit the [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/en-us/wdsi/defenderupdates)
