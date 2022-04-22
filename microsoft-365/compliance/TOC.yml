@@ -453,7 +453,7 @@
               href: ome-sensitive-info-types.md
             - name: Manage Office 365 Message Encryption
               href: manage-office-365-message-encryption.md
-            - name: Encrypted message access log by Advance Message Encryption
+            - name: Encrypted message portal activity log
               href: ome-message-access-logs.md
             - name: Office 365 Advanced Message Encryption
               href: ome-advanced-message-encryption.md
