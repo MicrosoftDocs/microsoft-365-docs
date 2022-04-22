@@ -6894,6 +6894,11 @@
       "source_path": "microsoft-365/security/defender/microsoft-secure-score-whats-coming.md",
       "redirect_url": "/microsoft-365/security/defender/whats-new",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-premium/m365bp-secure-windows-10-devices.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-manage-windows-devices",
+      "redirect_document_id": false
     }
   ]
 }
