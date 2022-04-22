@@ -2,8 +2,8 @@
 title: "Decryption in eDiscovery"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -19,6 +19,8 @@ description: "Learn about how Microsoft 365 eDiscovery tools handle encrypted do
 ---
 
 # Decryption in Microsoft 365 eDiscovery tools
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Encryption is an important part of your file protection and information protection strategy. Organizations of all types use encryption technology to protect sensitive content within their organization and ensure that only the right people have access to that content.
 

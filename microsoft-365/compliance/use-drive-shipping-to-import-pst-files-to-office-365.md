@@ -2,8 +2,8 @@
 title: "Use drive shipping to import PST files"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 
 audience: Admin
@@ -22,6 +22,8 @@ description: Admin can learn how to bulk-import PST files to Microsoft 365 mailb
 ---
 
 # Use drive shipping to import your organization's PST files
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **This article is for administrators. Are you trying to import PST files to your own mailbox? See [Import email, contacts, and calendar from an Outlook .pst file](https://go.microsoft.com/fwlink/p/?LinkID=785075)**
    

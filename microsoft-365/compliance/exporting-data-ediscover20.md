@@ -2,8 +2,8 @@
 title: "Export case data in eDiscovery (Premium)"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 
 audience: Admin
@@ -20,6 +20,8 @@ ms.custom: seo-marvel-mar2020
 ---
 
 # Export case data in eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 There are three ways to export data from a review set:
 

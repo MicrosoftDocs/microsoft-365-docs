@@ -2,8 +2,8 @@
 title: "Legacy eDiscovery tools retired"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -17,6 +17,8 @@ description: "In-Place eDiscovery and In-Place Hold (and the corresponding Power
 ---
 
 # Retirement of legacy eDiscovery tools
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!IMPORTANT]
 > The functionality of the legacy eDiscovery tools described in this article has either been removed from the Microsoft 365 service or is still available, but no longer supported. Any functionality that's still available may be removed without notice. If you're still using any of these legacy tools, consider migrating to the eDiscovery tools in the Microsoft Purview compliance portal or one of the alternatives described in this article.

@@ -2,8 +2,8 @@
 title: "Search for and delete chat messages in Teams"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -19,6 +19,8 @@ description: "Use eDiscovery (Premium) and the Microsoft Graph Explorer to searc
 ---
 
 # Search and purge chat messages in Teams
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 You can use eDiscovery (Premium) and the Microsoft Graph Explorer to search for and delete chat messages in Microsoft Teams. This can help you find and remove sensitive information or inappropriate content. This search and purge workflow will also help you respond to a data spillage incident, when content containing confidential or malicious information is released through Teams chat messages.​
 

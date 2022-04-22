@@ -2,8 +2,8 @@
 title: "Set up a connector to archive RingCentral data in Microsoft 365"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 
 audience: Admin
@@ -15,6 +15,8 @@ description: "Admins can set up a connector to import and archive RingCentral da
 ---
 
 # Set up a connector to archive RingCentral data
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Use a Veritas connector in the Microsoft Purview compliance portal to import and archive data from the RingCentral platform to user mailboxes in your Microsoft 365 organization. Veritas provides a [RingCentral](https://www.veritas.com/insights/merge1/ringcentral) connector that is configured to capture items from the third-party data source and import those items to Microsoft 365. The connector converts content such as chats, attachments, tasks, notes, and posts from RingCentral to an email message format and then imports those items to the user mailboxes in Microsoft 365.
 

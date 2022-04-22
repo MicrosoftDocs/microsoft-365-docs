@@ -2,8 +2,8 @@
 title: "Filter data when importing PST files"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 
 audience: Admin
@@ -24,6 +24,8 @@ description: "Learn how to filter data using the intelligent import feature in t
 ---
 
 # Filter data when importing PST files
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Use the new Intelligent Import feature in the Microsoft 365 Import service to filter the items in PST files that actually get imported to the target mailboxes. Here's how it works:
   

@@ -2,8 +2,8 @@
 title: "Tagging and Relevance training in eDiscovery (Premium)"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 
@@ -20,6 +20,8 @@ description: "Learn the steps to tag and then work with a training sample of 40 
 ---
 
 # Tagging and Relevance training in eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
   
 This article describes the procedure for working with the Relevance training module in Microsoft Purview eDiscovery (Premium).
   

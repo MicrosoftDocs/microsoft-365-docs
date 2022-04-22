@@ -2,8 +2,8 @@
 title: "Set up a connector to archive Bell SMS/MMS Network data"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 
 audience: Admin
@@ -15,6 +15,8 @@ description: "Admins can set up a TeleMessage connector to import and archive SM
 ---
 
 # Set up a connector to archive Bell Network data
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Use a TeleMessage connector in the Microsoft Purview compliance portal to import and archive Short Messaging Service (SMS) and Multimedia Messaging Service (MMS) messages from the Bell Network. After you set up and configure a connector, it connects to your organization's Bell Network once every day, and imports SMS and MMS messages to mailboxes in Microsoft 365.
 

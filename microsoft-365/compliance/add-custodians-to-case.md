@@ -2,8 +2,8 @@
 title: Add custodians to an eDiscovery (Premium) case
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 
 audience: Admin
@@ -20,6 +20,8 @@ ms.custom: seo-marvel-apr2020
 ---
 
 # Add custodians to an eDiscovery (Premium) case
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Use the built-in custodian management tool in Microsoft Purview eDiscovery (Premium) to coordinate your workflows around managing custodians and identifying relevant, custodial data sources associated with a case. When you add a custodian, the system can automatically identify and place a hold on their Exchange mailbox and OneDrive for Business account. During the discovery process of your investigation, you might also identify other data sources (such as mailboxes, sites, or Teams) that a custodian accessed or contributed to. In this situation, you can use the custodian management tool to associate those data sources will a specific custodian. After you add custodians to a case and associate other data source with them, you can quickly preserve data and search the custodial data.
 

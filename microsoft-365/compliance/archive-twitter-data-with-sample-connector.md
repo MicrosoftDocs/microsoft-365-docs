@@ -2,8 +2,8 @@
 title: "Set up a connector to archive Twitter data"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 04/08/2022
 audience: Admin
@@ -18,6 +18,8 @@ description: "Learn how administrators can set up and use a native connector to 
 ---
 
 # Set up a Microsoft connector to archive Twitter data (preview)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Use a connector in the Microsoft Purview compliance portal to import and archive data from Twitter to Microsoft 365. After you set up and configure the connector, it connects to your organization's Twitter account (on a scheduled basis), converts the content of an item to an email message format, and then imports those items to a mailbox in Microsoft 365.
 

@@ -2,8 +2,8 @@
 title: "Migrate legacy eDiscovery searches and holds to the Microsoft Purview compliance portal"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -18,6 +18,8 @@ description:
 ---
 
 # Migrate legacy eDiscovery searches and holds to the compliance portal
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 The Microsoft Purview compliance portal provides an improved experience for eDiscovery usage, including: higher reliability, better performance, and many features tailored to eDiscovery workflows including cases to organize your content by matter, review sets to review content and analytics to help cull data for review such as near-duplicate grouping, email threading, themes analysis, and predictive coding.
 

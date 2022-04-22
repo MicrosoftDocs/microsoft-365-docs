@@ -2,8 +2,8 @@
 title: "Add search results to a review set"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 
 audience: Admin
@@ -21,6 +21,8 @@ description: Learn how to add search results or samples of those search results 
 ---
 
 # Add search results to a review set
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 When you're satisfied with the results of a search and you're ready to review and analyze those search results, you can add them to a review set in the case. Copying the original data to the review set also facilitates the review and analysis process by providing you with advanced analytics tools such as themes detection, near-duplicate detection, and email thread identification. You can also add data from non-Microsoft 365 data sources to a review set so that you can review that data in addition to the data you collect from Microsoft 365.
 

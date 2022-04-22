@@ -2,8 +2,8 @@
 title: Build search queries in eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 
 audience: Admin
@@ -19,6 +19,8 @@ description: "Use keywords and conditions to narrow the scope of the search when
 ---
 
 # Build search queries for collections in eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 When configuring the search query when creating a [collection](collections-overview.md) in an eDiscovery (Premium) case, you can use keywords to find specific content and conditions to narrow the scope of the search to return items that are most relevant to your legal investigation.
 

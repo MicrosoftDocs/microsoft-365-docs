@@ -2,8 +2,8 @@
 title: "Work with communications in eDiscovery (Premium)"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 
 audience: Admin
@@ -20,6 +20,8 @@ description: "eDiscovery (Premium) makes it easy to manage the legal hold notifi
 ---
 
 # Work with communications in eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview eDiscovery (Premium) allows legal departments to simplify their processes around tracking and distributing legal hold notifications. The custodian communications tool enables legal departments to manage and automate the entire legal hold process, from initial notifications, to reminders, and to escalations, all in one location.
 

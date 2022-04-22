@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Lighthouse Windows 365 (Cloud PCs) page overview"
+title: "Overview of the Windows 365 (Cloud PCs) page in Microsoft 365 Lighthouse"
 f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
@@ -18,7 +18,7 @@ search.appverid: MET150
 description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn about the Windows 365 (Cloud PCs) page."
 ---
 
-# Windows 365 (Cloud PCs) page overview  
+# Overview of the Windows 365 (Cloud PCs) page in Microsoft 365 Lighthouse  
   
 Windows 365 is a cloud-based service that lets Microsoft Endpoint Manager (MEM) admins provision and manage Cloud PCs for their users who have a Windows 365 license. Windows 365 is fully integrated with MEM for device management, and with Microsoft 365 Lighthouse for partner management of Cloud PCs across all their customer tenants.
 

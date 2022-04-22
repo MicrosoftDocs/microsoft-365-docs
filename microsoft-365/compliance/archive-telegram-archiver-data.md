@@ -2,8 +2,8 @@
 title: "Set up a connector to archive Telegram communications data in Microsoft 365"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 
 audience: Admin
@@ -15,6 +15,8 @@ description: "Admins can set up a TeleMessage connector to import and archive Te
 ---
 
 # Set up a connector to archive Telegram communications data
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Use the TeleMessage connector in the Microsoft Purview compliance portal to import and archive Telegram chats, attachments, files, and deleted messages and calls. After you set up and configure a connector, it connects to your organization's TeleMessage account, and imports the mobile communication of employees using the Telegram Archiver to mailboxes in Microsoft 365.
 

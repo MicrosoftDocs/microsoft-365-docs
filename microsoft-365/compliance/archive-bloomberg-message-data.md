@@ -2,8 +2,8 @@
 title: "Set up a connector to archive Bloomberg Message data"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 
 audience: Admin
@@ -15,6 +15,8 @@ description: "Administrators can set up a data connector to import and archive d
 ---
 
 # Set up a connector to archive Bloomberg Message data
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Use a data connector in the Microsoft Purview compliance portal to import and archive financial services email data from the [Bloomberg Message](https://www.bloomberg.com/professional/product/collaboration/) collaboration tool. After you set up and configure a connector, it connects to your organization's Bloomberg secure FTP (SFTP) site once every day, and imports email items to mailboxes in Microsoft 365.
 

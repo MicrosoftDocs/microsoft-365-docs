@@ -2,8 +2,8 @@
 title: "Set up compliance boundaries for eDiscovery investigations"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -22,6 +22,8 @@ ms.custom: seo-marvel-apr2020
 ---
 
 # Set up compliance boundaries for eDiscovery investigations
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 The guidance in this article can be applied when using either Microsoft Purview eDiscovery (Standard) or Microsoft Purview eDiscovery (Premium) to manage investigations.
 
