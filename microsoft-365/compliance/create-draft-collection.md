@@ -2,8 +2,8 @@
 title: "Create a draft collection"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 ms.reviewer: nickrob  
 manager: laurawi
 ms.date: 
