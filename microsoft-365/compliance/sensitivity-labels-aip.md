@@ -124,7 +124,7 @@ Use the following information to help you identify if you're using a feature fro
 |**Category: General** ||
 |Central reporting and auditing|![Supported.](../media/yes-icon.png) <br>[Learn more](sensitivity-labels-office-apps.md#auditing-labeling-activities) |
 |Government Cloud|![Supported.](../media/yes-icon.png)|
-|Admin can disable labeling <br> - All apps|  ![Supported.](../media/yes-icon.png) <br>[Learn more](sensitivity-labels-office-apps.md#office-built-in-labeling-client-and-other-labeling-solutions)|
+|Admin can disable labeling <br> - All apps|  ![Supported.](../media/yes-icon.png) <br>[Learn more](sensitivity-labels-office-apps.md#if-you-need-to-turn-off-built-in-labeling-in-office-apps-on-windows)|
 |Admin can disable labeling <br> - Per app|  In planning or development|
 |**Category: User Experience** ||
 |Labeling button on the ribbon|![Supported.](../media/yes-icon.png)|
