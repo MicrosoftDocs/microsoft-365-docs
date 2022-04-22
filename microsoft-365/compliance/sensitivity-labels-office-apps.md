@@ -125,7 +125,7 @@ Because this setting is specific to Windows Office apps, it has no impact on oth
 
 ### Office built-in labeling client and the Azure Information Protection client
 
-If users have the [Azure Information Protection (AIP) client](/azure/information-protection/rms-client/aip-clientv2) installed on their Windows computers, by default, built-in labels are turned off in [Windows Office apps that support them](#labeling-client-for-desktop-apps). Because built-in labels don't use an Office add-in, as used by the AIP client, they have the benefit of more stability and better performance. They also support the latest features, such as advanced classifiers.
+If users have the [Azure Information Protection (AIP) client](/azure/information-protection/rms-client/aip-clientv2) installed on their Windows computers, by default, built-in labels are turned off in [Windows Office apps that support them](#labeling-client-for-desktop-apps). Because built-in labels don't use an Office Add-in, as used by the AIP client, they have the benefit of more stability and better performance. They also support the latest features, such as advanced classifiers.
 
 To learn more about labeling choices with the AIP client, see [Why choose built-in labeling over the AIP add-in for Office apps](sensitivity-labels-aip.md).
 

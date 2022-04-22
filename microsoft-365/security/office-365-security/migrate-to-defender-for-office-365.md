@@ -26,7 +26,7 @@ ms.prod: m365-security
 **Applies to**
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 
-If you already have an existing third-party protection service or device that sits in front of Microsoft 365, you can use this guide to migrate your protection to Microsoft Defender for Office 365 to get the benefits of a consolidated management experience, potentially reduced cost (using products that you already pay for), and a mature product with integrated security protection. For more information, see [Microsoft Defender for Office](https://www.microsoft.com/security/business/threat-protection/office-365-defender).
+If you already have an existing third-party protection service or device that sits in front of Microsoft 365, you can use this guide to migrate your protection to Microsoft Defender for Office 365 to get the benefits of a consolidated management experience, potentially reduced cost (using products that you already pay for), and a mature product with integrated security protection. For more information, see [Microsoft Defender for Office 365](https://www.microsoft.com/security/business/threat-protection/office-365-defender).
 
 This guide provides specific and actionable steps for your migration, and assumes the following facts:
 

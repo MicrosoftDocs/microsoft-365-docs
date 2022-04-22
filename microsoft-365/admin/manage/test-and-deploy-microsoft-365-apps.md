@@ -26,7 +26,7 @@ For more info on how partners create these apps, see [How to plan a SaaS offer f
 
 The Integrated apps portal is only accessible to global admins and available to world-wide customers only. This feature is not available in sovereign and government clouds.
 
-The Integrated apps portal displays a list of apps, which includes single apps and Microsoft 365 apps from partners which are deployed your organization. Only web apps, SPFx apps, Office add-ins and Teams apps are listed. For web apps, you can see two kinds of apps.
+The Integrated apps portal displays a list of apps, which includes single apps and Microsoft 365 apps from partners which are deployed your organization. Only web apps, SPFx apps, Office Add-ins and Teams apps are listed. For web apps, you can see two kinds of apps.
 
 - SaaS apps that are available in appsource.microsoft.com, and can be deployed by admins giving consent on behalf of the organization.
 - SAML gallery apps that are linked with office add-ins.
@@ -102,7 +102,7 @@ You won't be able to deploy a single store app or Microsoft 365 Apps by partner 
 
 ## Prepare to deploy add-ins in Integrated apps
 
-Office add-ins help you personalize your documents and streamline the way you access information on the web (see Start using your Office Add-in). 
+Office Add-ins help you personalize your documents and streamline the way you access information on the web (see Start using your Office Add-in). 
 
 Add-ins provides the following benefits: 
 
@@ -174,7 +174,7 @@ You can do the opposite query by resolving the group to see if it's a member of 
 
 Note that you can use the Azure Active Directory Graph API to run queries to find the list of groups within a group. For more information, see [Operations on groups | Graph API reference](/previous-versions/azure/ad/graph/api/groups-operations). 
 
-## Recommended approach for deploying Office add-ins 
+## Recommended approach for deploying Office Add-ins 
 To roll out add-ins by using a phased approach, we recommend the following: 
 1. Roll out the add-in to a small set of business stakeholders and members of the IT department. You can turn on the flag **Is this a test deployment**. If the deployment is successful, move to step 2. 
 
@@ -184,7 +184,7 @@ To roll out add-ins by using a phased approach, we recommend the following:
 
 Depending on the size of the target audience, you can add or remove roll-out steps.  
 
-## Deploy an Office add-in using the admin center 
+## Deploy an Office Add-in using the admin center 
 
 1. In the admin center, select **Settings**, then select **Integrated apps**. 
 
@@ -219,13 +219,13 @@ Global admins and Exchange admins can assign an add-in to everyone or to specifi
 
 The right option for your organization depends on your configuration. However, we recommend making assignments by using groups. As an admin, you might find it easier to manage add-ins by using groups and controlling the membership of those groups rather than assigning individual users each time. In some situations, you might want to restrict access to a small set of users by making assignments to specific users by assigning users manually. 
 
-### More about Office add-ins security 
-Office add-ins combine an XML manifest file that contains some metadata about the add-in, but most importantly points to a web application which contains all the code and logic. Add-ins can range in their capabilities. For example, add-ins can:
+### More about Office Add-ins security 
+Office Add-ins combine an XML manifest file that contains some metadata about the add-in, but most importantly points to a web application which contains all the code and logic. Add-ins can range in their capabilities. For example, add-ins can:
 - Display data. 
 - Read a user's document to provide contextual services. 
 - Read and write data to and from a user's document to provide value to that user.  
 
-For more information about the types and capabilities of Office add-ins, see [Office Add-ins platform overview](/office/dev/add-ins/overview/office-add-ins), especially the section "Anatomy of an Office Add-in." 
+For more information about the types and capabilities of Office Add-ins, see [Office Add-ins platform overview](/office/dev/add-ins/overview/office-add-ins), especially the section "Anatomy of an Office Add-in." 
 
 To interact with the user's document, the add-in needs to declare what permission it needs in the manifest. A five-level JavaScript API access-permissions model provides the basis for privacy and security for users of task pane add-ins. The majority of the add-ins in the Office Store are level ReadWriteDocument with almost all add-ins supporting at least the ReadDocument level. For more information about the permission levels, see [Requesting permissions for API use in content and task pane add-ins](/office/dev/add-ins/develop/requesting-permissions-for-api-use-in-content-and-task-pane-add-ins). 
 
@@ -250,7 +250,7 @@ An add-in can be in either the **On** or **Off** state.
  
 Consider deleting an add-in if no one is using it anymore. For example, turning off an add-in might make sense if an add-in is used only during specific times of the year. 
 
-## Manage an Office add-in using the admin center
+## Manage an Office Add-in using the admin center
 
 Post deployment, admins can also manage user access to add-ins. 
 

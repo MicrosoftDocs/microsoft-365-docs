@@ -87,7 +87,7 @@ The first step is to download the AzCopy tool, which is the tool that you run in
   
 1. Go to <https://compliance.microsoft.com> and sign in using the credentials for an administrator account in your organization.
 
-2. In the left pane of the compliance portal, click **Information governance** \> **Import**.
+2. In the left pane of the compliance portal, click **Data Lifecycle Management** \> **Import**.
 
     > [!NOTE]
     > You have to be assigned the appropriate permissions to access the **Import** page in the compliance portal. See the **Before you begin** section for more information. 
