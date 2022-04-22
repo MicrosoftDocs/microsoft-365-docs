@@ -41,8 +41,8 @@ Use this article as a guide to managing your security policies and settings.
 ## What to do
 
 1. [Choose where to manage your security policies and devices](#choose-where-to-manage-security-policies-and-devices).
-2. [View your next-generation protection policies](#view-or-edit-your-next-generation-protection-policies).
-3. [View your firewall policies and custom rules](#view-or-edit-your-firewall-policies-and-custom-rules).
+2. [Review your next-generation protection policies](#view-or-edit-your-next-generation-protection-policies).
+3. [Review your firewall policies and custom rules](#view-or-edit-your-firewall-policies-and-custom-rules).
 4. [Set up web content filtering](#set-up-web-content-filtering).
 5. [Review settings for advanced features](#review-settings-for-advanced-features).
 6. [View other settings in the Microsoft 365 Defender portal](#view-and-edit-other-settings-in-the-microsoft-365-defender-portal). 
