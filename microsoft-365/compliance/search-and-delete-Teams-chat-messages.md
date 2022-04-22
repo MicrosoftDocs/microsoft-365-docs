@@ -2,8 +2,8 @@
 title: "Search for and delete chat messages in Teams"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -15,19 +15,21 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
-description: "Use Advanced eDiscovery and the Microsoft Graph Explorer to search for and purge chat messages in Microsoft Teams, and respond to data spillage incidents in Teams."
+description: "Use eDiscovery (Premium) and the Microsoft Graph Explorer to search for and purge chat messages in Microsoft Teams, and respond to data spillage incidents in Teams."
 ---
 
 # Search and purge chat messages in Teams
 
-You can use Advanced eDiscovery and the Microsoft Graph Explorer to search for and delete chat messages in Microsoft Teams. This can help you find and remove sensitive information or inappropriate content. This search and purge workflow will also help you respond to a data spillage incident, when content containing confidential or malicious information is released through Teams chat messages.​
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+You can use eDiscovery (Premium) and the Microsoft Graph Explorer to search for and delete chat messages in Microsoft Teams. This can help you find and remove sensitive information or inappropriate content. This search and purge workflow will also help you respond to a data spillage incident, when content containing confidential or malicious information is released through Teams chat messages.​
 
 > [!NOTE]
 > This article applies to Microsoft 365 Enterprise organizations. Support for the US Government cloud (including GCC, GCC High, and DoD) is coming soon.
 
 ## Before you search and purge chat messages
 
-- To create an Advanced eDiscovery case and use collections to search for chat messages, you have to be a member of the **eDiscovery Manager** role group in the Microsoft Purview compliance portal. To delete chat messages, you have to be assigned the **Search And Purge** role. This role is assigned to the Data Investigator and Organization Management role groups by default. For more information, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
+- To create an eDiscovery (Premium) case and use collections to search for chat messages, you have to be a member of the **eDiscovery Manager** role group in the Microsoft Purview compliance portal. To delete chat messages, you have to be assigned the **Search And Purge** role. This role is assigned to the Data Investigator and Organization Management role groups by default. For more information, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
 - Search and purge is supported for conversations within your tenant. Support for Teams Connect Chat (External Access or Federation) conversations is enabled in the interface in some cases but is not working as intended.
 - A maximum of 10 items per mailbox can be removed at one time. Because the capability to search for and remove chat messages is intended to be an incident-response tool, this limit helps ensure that chat messages are quickly removed.
 
@@ -37,15 +39,15 @@ Here's the process to search for and purge Teams chat messages:
 
 ![Workflow to search for and purge Teams chat messages.](../media/TeamsSearchAndPurgeWorkflow.png)
 
-## Step 1: Create a case in Advanced eDiscovery
+## Step 1: Create a case in eDiscovery (Premium)
 
-The first step is to create a case in Advanced eDiscovery to manage the search and purge process. For information about creating a case, see [Use the new case format](advanced-ediscovery-new-case-format.md). 
+The first step is to create a case in eDiscovery (Premium) to manage the search and purge process. For information about creating a case, see [Use the new case format](advanced-ediscovery-new-case-format.md). 
 
 ## Step 2: Create a draft collection
 
 After you create a case, the next step is to create a draft collection to search for the Teams chat messages that you want to purge. The purge process you perform is Step 5 will purge all items that are found in the draft collection.
 
-In Advanced eDiscovery, a *collection* is an eDiscovery search of the Teams content locations that contain the chat messages that you want to purge. Create the draft collection in the case that you created in the previous step. For more information, see [Create a draft collection](create-draft-collection.md).
+In eDiscovery (Premium), a *collection* is an eDiscovery search of the Teams content locations that contain the chat messages that you want to purge. Create the draft collection in the case that you created in the previous step. For more information, see [Create a draft collection](create-draft-collection.md).
 
 ### Data sources for chat messages
 
@@ -89,7 +91,7 @@ For instructions about how to identify and remove holds and retention policies, 
 
 Now you're ready to actually purge chat messages from Teams. You'll use the Microsoft Graph Explorer to perform the following three tasks:
 
-1. Get the Id of the Advanced eDiscovery case that you created in Step 1. This is the case that contains the collection created in Step 2.
+1. Get the Id of the eDiscovery (Premium) case that you created in Step 1. This is the case that contains the collection created in Step 2.
 
 2. Get the Id of the collection that you created in Step 2 and verified the search results in Step 3. The search query in this collection returns the chat messages that will be purged.
 
@@ -104,13 +106,13 @@ For information about using Graph Explorer, see [Use Graph Explorer to try Micro
 
 1. Go to <https://developer.microsoft.com/graph/graph-explorer> and sign in to the Graph Explorer with an account that's assigned the **Search And Purge** role in the Microsoft Purview compliance portal.
 
-2. Run the following GET request to retrieve the Id for the Advanced eDiscovery case. Use the value `https://graph.microsoft.com/beta/compliance/ediscovery/cases` in the address bar of the request query. Be sure to select **v1.0** in the API version dropdown list.
+2. Run the following GET request to retrieve the Id for the eDiscovery (Premium) case. Use the value `https://graph.microsoft.com/beta/compliance/ediscovery/cases` in the address bar of the request query. Be sure to select **v1.0** in the API version dropdown list.
 
    ![GET request for case Id.](..\media\GraphGetRequestForCaseId.png)
 
    This request returns information about all cases in your organization on the **Response preview** tab.
 
-3. Scroll through the response to locate the Advanced eDiscovery case. Use the **displayName** property to identify the case.
+3. Scroll through the response to locate the eDiscovery (Premium) case. Use the **displayName** property to identify the case.
 
    ![Response with case Id.](..\media\GraphResponseForCaseId.png)
 

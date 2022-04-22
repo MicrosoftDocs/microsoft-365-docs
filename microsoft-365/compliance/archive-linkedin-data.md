@@ -2,8 +2,8 @@
 title: "Set up a connector to archive LinkedIn data"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 04/06/2022
 audience: Admin
@@ -18,6 +18,8 @@ description: "Learn how administrators can setup & use a native connector to imp
 ---
 
 # Set up a connector to archive LinkedIn data
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Use a connector in the Microsoft Purview compliance portal to import and archive data from LinkedIn Company pages. After you set up and configure a connector, it connects to the account for the specific LinkedIn Company page once every 24 hours. The connector converts the messages posted to the Company page to an email message, and then imports those items to a mailbox in Microsoft 365.
 

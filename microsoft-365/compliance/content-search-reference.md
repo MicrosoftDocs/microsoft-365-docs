@@ -2,8 +2,8 @@
 title: "Feature reference for Content search"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -24,6 +24,8 @@ description: "This article contains reference information about the Content sear
 ---
 
 # Feature reference for Content search
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 This article describes features and functionality of Content search.
 

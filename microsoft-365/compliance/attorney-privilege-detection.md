@@ -2,8 +2,8 @@
 title: "Set up attorney-client privilege detection in eDiscovery (Premium)"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 
 audience: Admin
@@ -19,6 +19,8 @@ description: "Use the attorney-client privilege detection model to use the machi
 ---
 
 # Set up attorney-client privilege detection in eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 A major and costly aspect of the review phase of any eDiscovery process is reviewing documents for privileged content. Microsoft Purview eDiscovery (Premium) provides machine learning-based detection of privileged content to make this process more efficient. This feature is called *attorney-client privilege detection*.
 

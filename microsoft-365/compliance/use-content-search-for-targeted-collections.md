@@ -2,8 +2,8 @@
 title: "Use Content search for targeted collections"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date:
 audience: Admin
@@ -22,6 +22,8 @@ description: "Use Content search in the Microsoft Purview compliance portal to p
 ---
 
 # Use Content search for targeted collections
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 The Content search tool in the Microsoft Purview compliance portal doesn't provide a direct way in the UI to search specific folders in Exchange mailboxes or SharePoint and OneDrive for Business sites. However, it's possible to search specific folders (called a *targeted collection*) by specifying the folder ID property for email or path (DocumentLink) property for sites in the actual search query syntax. Using Content Search to perform a targeted collection is useful when you're confident that items responsive to a case or privileged items are located in a specific mailbox or site folder. You can use the script in this article to obtain the folder ID for mailbox folders or the path (DocumentLink) for folders on a SharePoint and OneDrive for Business site. Then you can use the folder ID or path in a search query to return items located in the folder.
 

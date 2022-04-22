@@ -2,8 +2,8 @@
 title: "Use Audit (Premium) to investigate compromised accounts"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -19,6 +19,8 @@ description: "Use the MailItemsAccessed mailbox auditing action to perform foren
 ---
 
 # Use Microsoft Purview Audit (Premium) to investigate compromised accounts
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 A compromised user account (also called an *account takeover*) is a type of attack when an attacker gains access to a user account and operates as the user. These types of attacks sometimes cause more damage than the attacker may have intended. When investigating compromised email accounts, you have to assume that more mail data was compromised than may be indicated by tracing the attacker's actual presence. Depending on the type of data in email messages, you have to assume that sensitive information was compromised or face regulatory fines unless you can prove that sensitive information wasn't exposed. For example, HIPAA-regulated organizations face significant fines if there is evidence that patient health information (PHI) was exposed. In these cases, attackers are unlikely to be interested in PHI, but organizations still must report data breaches unless they can prove otherwise.
 

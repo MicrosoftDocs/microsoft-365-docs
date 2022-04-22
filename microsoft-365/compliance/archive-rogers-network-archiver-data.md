@@ -2,8 +2,8 @@
 title: "Set up a connector to archive Rogers Network data in Microsoft 365"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 
 audience: Admin
@@ -15,6 +15,8 @@ description: "Admins can set up a TeleMessage connector to import and archive Ro
 ---
 
 # Set up a connector to archive Rogers Network data
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Use the TeleMessage connector in the Microsoft Purview compliance portal to import and archive SMS and MMS data from the Rogers mobile network. After you set up and configure a [Rogers Network Archiver connector](https://www.telemessage.com/mobile-archiver/network-archiver/rogers/), it connects to your organization's Rogers mobile network, and imports SMS and MMS data to mailboxes in Microsoft 365.
 

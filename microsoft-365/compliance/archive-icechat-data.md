@@ -2,8 +2,8 @@
 title: "Set up a connector to archive ICE Chat data"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 
 audience: Admin
@@ -15,6 +15,8 @@ description: "Admins can set up a connector to import and archive data from the 
 ---
 
 # Set up a connector to archive ICE Chat data
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]v
 
 Use a native connector in the Microsoft Purview compliance portal to import and archive financial services chat data from the ICE Chat collaboration tool. After you set up and configure a connector, it connects to your organization's ICE Chat secure FTP (SFTP) site once every day, converts the content of chat messages to an email message format, and then import those items to mailboxes in Microsoft 365.
 

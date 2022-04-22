@@ -2,8 +2,8 @@
 title: "Detailed properties in the audit log"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -22,6 +22,8 @@ ms.custom: seo-marvel-apr2020
 ---
 
 # Detailed properties in the audit log
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 When you export the results of an audit log search from the Microsoft Purview compliance portal, you have the option to download all the results that meet your search criteria. You do this by selecting **Export results** \> **Download all results** on the **Audit log search** page. For more information, see [Search the audit log](search-the-audit-log-in-security-and-compliance.md).
   
