@@ -32,7 +32,7 @@ For attackers, ordinary phishing attacks that cast a random net for ordinary or 
 
 Microsoft 365 and Microsoft Defender for Office 365 contain several key features that provide additional layers of security for your priority accounts. This article describes these capabilities and how to use them.
 
-![Summary of the security recommendations in icon form.](../../media/security-recommendations-for-priority-users.png)
+:::image type="content" source="../../media/security-recommendations-for-priority-users.png" alt-text="The summary of the security recommendations in icon form" lightbox="../../media/security-recommendations-for-priority-users.png":::
 
 |Task|All Office 365 Enterprise plans|Microsoft 365 E3|Microsoft 365 E5|
 |---|:---:|:---:|:---:|

@@ -23,9 +23,7 @@ ms.technology: m365d
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-> Want to experience Microsoft 365 Defender? You can [evaluate it in a lab environment](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) or [run your pilot project in production](m365d-pilot.md?ocid=cx-evalpilot).
-
-The following features are in preview or generally available (GA) in the latest release of Microsoft 365 Defender.
+>The following features are in preview or generally available (GA) in the latest release of Microsoft 365 Defender.
 
 RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader:
 
@@ -41,6 +39,12 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft Defender for Cloud Apps](/cloud-app-security/release-notes)
 
 You can also get product updates and important notifications through the [message center](https://admin.microsoft.com/Adminportal/Home#/MessageCenter). 
+
+
+
+## March 2022
+
+- (Preview) The incident queue has been enhanced with several features designed to help your investigations. Enhancements include capabilities such as ability to search for incidents by ID or name, specify a custom time range, and others.
 
 ## December 2021
 
@@ -128,8 +132,3 @@ You can also get product updates and important notifications through the [messag
 
   Find information about events in various cloud apps and services covered by Microsoft Cloud App Security. This table also includes information previously available in the `AppFileEvents` table.
 
-## February 2021
-
-- (Preview) The enhanced [Microsoft 365 Defender portal (https://security.microsoft.com)](https://security.microsoft.com) is now available in public preview. This new experience brings Defender for Endpoint and Defender for Office 365 to the center. [Learn more about what's changed](microsoft-365-defender.md#the-microsoft-365-defender-portal).
-
-- **[(Preview) Microsoft 365 Defender APIs](api-overview.md)** - The top-level Microsoft 365 Defender APIs will enable you to automate workflows based on the shared incident and advanced hunting tables.

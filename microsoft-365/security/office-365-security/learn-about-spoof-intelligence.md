@@ -72,7 +72,9 @@ The rest of this article explains how to use the spoof intelligence insight in t
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - You need to be assigned permissions in **Exchange Online** before you can do the procedures in this article:
-  - To modify the spoof intelligence policy or enable or disable spoof intelligence, you need to be a member of the **Organization Management** or **Security Administrator** role groups.
+  - To modify the spoof intelligence policy or enable or disable spoof intelligence, you need to be a member of 
+    -   **Organization Management**
+    -   **Security Administrator** <u>and</u> **View-Only Configuration** or **View-Only Organization Management**.
   - For read-only access to the spoof intelligence policy, you need to be a member of the **Global Reader** or **Security Reader** role groups.
 
   For more information, see [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
@@ -92,7 +94,7 @@ The rest of this article explains how to use the spoof intelligence insight in t
 
 2. On the **Tenant Allow/Block Lists** page, the spoof intelligence insight looks like this:
 
-   ![Spoof intelligence insight on the Anti-phishing policy page.](../../media/m365-sc-spoof-intelligence-insight.png)
+   :::image type="content" source="../../media/m365-sc-spoof-intelligence-insight.png" alt-text="The Spoof intelligence insight on the Anti-phishing policy page" lightbox="../../media/m365-sc-spoof-intelligence-insight.png":::
 
    The insight has two modes:
 

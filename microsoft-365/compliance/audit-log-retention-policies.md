@@ -16,12 +16,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 
-description: "Audit log retention policies are part of the new Advanced Audit capabilities in Microsoft 365. An audit log retention policy lets you specify how long to retain audit logs in your organization."
+description: "Audit log retention policies are part of the new Microsoft Purview Audit (Premium) capabilities. An audit log retention policy lets you specify how long to retain audit logs in your organization."
 ---
 
 # Manage audit log retention policies
 
-You can create and manage audit log retention policies in the Microsoft 365 compliance center. Audit log retention policies are part of the new Advanced Audit capabilities in Microsoft 365. An audit log retention policy lets you specify how long to retain audit logs in your organization. You can retain audit logs for up to 10 years. You can create policies based on the following criteria:
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+You can create and manage audit log retention policies in the Microsoft Purview compliance portal. Audit log retention policies are part of the new Microsoft Purview Audit (Premium) capabilities. An audit log retention policy lets you specify how long to retain audit logs in your organization. You can retain audit logs for up to 10 years. You can create policies based on the following criteria:
 
 - All activities in one or more Microsoft 365 services
 - Specific activities (in a Microsoft 365 service) performed by all users or by specific users
@@ -29,14 +31,14 @@ You can create and manage audit log retention policies in the Microsoft 365 comp
 
 ## Default audit log retention policy
 
-Advanced Audit in Microsoft 365 provides a default audit log retention policy for all organizations. This policy retains all Exchange Online, SharePoint Online, OneDrive for Business, and Azure Active Directory audit records for one year. This default policy retains audit records that contain the value of **Exchange**, **SharePoint**, **OneDrive**, **AzureActiveDirectory** for the **Workload** property (which is the service in which the activity occurred). The default policy can't be modified. See the [More information](#more-information) section in this article for a list of record types for each workload that are included in the default policy.
+Audit (Premium) in Microsoft 365 provides a default audit log retention policy for all organizations. This policy retains all Exchange Online, SharePoint Online, OneDrive for Business, and Azure Active Directory audit records for one year. This default policy retains audit records that contain the value of **Exchange**, **SharePoint**, **OneDrive**, **AzureActiveDirectory** for the **Workload** property (which is the service in which the activity occurred). The default policy can't be modified. See the [More information](#more-information) section in this article for a list of record types for each workload that are included in the default policy.
 
 > [!NOTE]
 > The default audit log retention policy only applies to audit records for activity performed by users who are assigned an Office 365 or Microsoft 365 E5 license or have a Microsoft 365 E5 Compliance or E5 eDiscovery and Audit add-on license. If you have non-E5 users or guest users in your organization, their corresponding audit records are retained for 90 days.
 
 ## Before you create an audit log retention policy
 
-- You have to be assigned the Organization Configuration role in the Microsoft 365 compliance center to create or modify an audit retention policy.
+- You have to be assigned the Organization Configuration role in the compliance portal to create or modify an audit retention policy.
 
 - You can have a maximum of 50 audit log retention policies in your organization.
 
@@ -46,9 +48,9 @@ Advanced Audit in Microsoft 365 provides a default audit log retention policy fo
 
 ## Create an audit log retention policy
 
-1. Go to <https://compliance.microsoft.com> and sign in with a user account that's assigned the Organization Configuration role on the Permissions page in the Microsoft 365 compliance center.
+1. Go to <https://compliance.microsoft.com> and sign in with a user account that's assigned the Organization Configuration role on the Permissions page in the compliance portal.
 
-2. In the left pane of the Microsoft 365 compliance center, click **Audit**.
+2. In the left pane of the compliance portal, click **Audit**.
 
 3. Click the **Audit retention policies** tab.
 
@@ -74,7 +76,7 @@ Advanced Audit in Microsoft 365 provides a default audit log retention policy fo
 
 The new policy is displayed in the list on the **Audit retention policies** tab.
 
-## Manage audit log retention policies in the Microsoft 365 compliance center
+## Manage audit log retention policies in the compliance portal
 
 Audit log retention policies are listed on the **Audit retention policies** tab (also called the *dashboard*). You can use the dashboard to view, edit, and delete audit retention policies.
 

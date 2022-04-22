@@ -16,9 +16,11 @@ description: "Admins can set up a connector to import and archive YouTube data f
 
 # Set up a connector to archive YouTube data
 
-Use a Veritas connector in the Microsoft 365 compliance center to import and archive data from YouTube to user mailboxes in your Microsoft 365 organization. Veritas provides a connector that is configured to capture items from a third-party data source and import those items to Microsoft 365. The connector converts content such as chats, attachments, tasks, notes, and posts from YouTube to an email message format and then imports those items to the user mailboxes in Microsoft 365.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-After YouTube data is stored in user mailboxes, you can apply Microsoft 365 compliance features such as Litigation Hold, eDiscovery, retention policies and retention labels. Using a YouTube connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
+Use a Veritas connector in the Microsoft Purview compliance portal to import and archive data from YouTube to user mailboxes in your Microsoft 365 organization. Veritas provides a connector that is configured to capture items from a third-party data source and import those items to Microsoft 365. The connector converts content such as chats, attachments, tasks, notes, and posts from YouTube to an email message format and then imports those items to the user mailboxes in Microsoft 365.
+
+After YouTube data is stored in user mailboxes, you can apply Microsoft Purview features such as Litigation Hold, eDiscovery, retention policies and retention labels. Using a YouTube connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
 
 ## Overview of archiving YouTube data
 
@@ -30,7 +32,7 @@ The following overview explains the process of using a connector to archive the 
 
 2. Once every 24 hours, YouTube items are copied to the Veritas Merge1 site. The connector also converts YouTube items to an email message format.
 
-3. The YouTube connector that you create in the Microsoft 365 compliance center connects to the Veritas Merge1 site every day, and transfers the YouTube content to a secure Azure Storage location in the Microsoft cloud.
+3. The YouTube connector that you create in the compliance portal connects to the Veritas Merge1 site every day, and transfers the YouTube content to a secure Azure Storage location in the Microsoft cloud.
 
 4. The connector imports the converted items to the mailboxes of specific users using the value of the *Email* property of the automatic user mapping as described in [Step 3](#step-3-map-users-and-complete-the-connector-setup). A subfolder in the Inbox folder named **YouTube** is created in the user mailboxes, and items are imported to that folder. The connector determines which mailbox to import items to by using the value of the *Email* property. Every YouTube item contains this property, which is populated with the email address of every participant of the item.
 
@@ -40,11 +42,11 @@ The following overview explains the process of using a connector to archive the 
 
 - Create a YouTube application to fetch data from your YouTube account. For step-by step instructions about creating the application, see [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20YouTube%20User%20Guide.pdf).
 
-- The user who creates the YouTube connector in Step 1 (and completes it in Step 3) must be assigned the Data Connector Admin role. This role is required to add connectors on the **Data connectors** page in the Microsoft 365 compliance center. This role is added by default to multiple role groups. For a list of these role groups, see the "Roles in the security and compliance centers" section in [Permissions in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatively, an admin in your organization can create a custom role group, assign the Data Connector Admin role, and then add the appropriate users as members. For instructions, see the "Create a custom role group" section in [Permissions in the Microsoft 365 compliance center](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- The user who creates the YouTube connector in Step 1 (and completes it in Step 3) must be assigned the Data Connector Admin role. This role is required to add connectors on the **Data connectors** page in the compliance portal. This role is added by default to multiple role groups. For a list of these role groups, see the "Roles in the security and compliance centers" section in [Permissions in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatively, an admin in your organization can create a custom role group, assign the Data Connector Admin role, and then add the appropriate users as members. For instructions, see the "Create a custom role group" section in [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
 ## Step 1: Set up the YouTube connector
 
-The first step is to access to the **Data Connectors** page in the Microsoft 365 compliance center and create a connector for YouTube data.
+The first step is to access to the **Data Connectors** page in the compliance portal and create a connector for YouTube data.
 
 1. Go to <https://compliance.microsoft.com> and then click **Data connectors** > **YouTube**.
 
@@ -60,19 +62,19 @@ The first step is to access to the **Data Connectors** page in the Microsoft 365
 
 The second step is to configure the YouTube connector on the Veritas Merge1 site. For information about how to configure the YouTube connector, see [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20YouTube%20User%20Guide.pdf).
 
-After you click **Save & Finish,** the **User mapping** page in the connector wizard in the Microsoft 365 compliance center is displayed.
+After you click **Save & Finish,** the **User mapping** page in the connector wizard in the compliance portal is displayed.
 
 ## Step 3: Map users and complete the connector setup
 
-To map users and complete the connector setup in the Microsoft 365 compliance center, follow these steps:
+To map users and complete the connector setup in the compliance portal, follow these steps:
 
-1. On the **Map YouTube users to Microsoft 365 users** page, enable automatic user mapping. The YouTube items include a property called *Email*, which contains email addresses for users in your organization. If the connector can associate this address with a Microsoft 365 user, the items are imported to that user’s mailbox.
+1. On the **Map YouTube users to Microsoft 365 users** page, enable automatic user mapping. The YouTube items include a property called *Email*, which contains email addresses for users in your organization. If the connector can associate this address with a Microsoft 365 user, the items are imported to that user's mailbox.
 
 2. Click **Next**, review your settings, and then go to the **Data connectors** page to see the progress of the import process for the new connector.
 
 ## Step 4: Monitor the YouTube connector
 
-After you create the YouTube connector, you can view the connector status in the Microsoft 365 compliance center.
+After you create the YouTube connector, you can view the connector status in the compliance portal.
 
 1. Go to <https://compliance.microsoft.com/> and click **Data connectors** in the left nav.
 

@@ -27,7 +27,7 @@ This article is organized by priority of work, starting with protecting those ac
 
 Microsoft provides you with the Secure Score tool within your tenant to automatically analyze your security posture based on your regular activities, assign a score, and provide security improvement recommendations. Before taking the actions recommended in this article, take note of your current score and recommendations. The actions recommended in this article will increase your score. The goal is not to achieve the max score, but to be aware of opportunities to protect your environment in a way that does not negatively affect productivity for your users. See [Microsoft Secure Score](defender/microsoft-secure-score.md).
 
-:::image type="content" source="../media/security/security-for-bdms-overview.png" alt-text="An example of the Secure Score tool that provides business environment protection measures in the Microsoft 365 Defender portal" lightbox="../media/security/security-for-bdms-overview.png":::
+:::image type="content" source="../media/security/security-for-bdms-overview.png" alt-text="The steps to mitigate risks to your business" lightbox="../media/security/security-for-bdms-overview.png":::
 
 One more thing before we get started . . . be sure to [turn on the audit log](../compliance/search-the-audit-log-in-security-and-compliance.md). You'll need this data later, in the event you need to investigate an incident or a breach.
 
@@ -43,7 +43,7 @@ As a first step, we recommend ensuring critical accounts in the environment are 
 |Configure and use Privileged Access Workstations (PAW) to administer services. Do not use the same workstations for browsing the Internet and checking email not related to your administrative account.|  !![green check mark.](../media/green-check-mark.png)|![green check mark.](../media/green-check-mark.png)::: |
 
 The following diagram illustrates these capabilities.
-:::image type="content" source="../media/m365-security-bdm-illustrations-privileged-accounts.png" alt-text="An example of the capabilities offered by tools to protect privileged accounts" lightbox="../media/m365-security-bdm-illustrations-privileged-accounts.png":::
+:::image type="content" source="../media/m365-security-bdm-illustrations-privileged-accounts.png" alt-text="The recommended capabilities for protecting privileged accounts" lightbox="../media/m365-security-bdm-illustrations-privileged-accounts.png":::
 
 Additional recommendations:
 
@@ -76,7 +76,8 @@ Known threats include malware, compromised accounts, and phishing. Some protecti
 |**Block connections from countries that you don't do business with**. Create an Azure AD conditional access policy to block any connections coming from these countries, effectively creating a geo firewall around your tenant.| |![green check mark.](../media/green-check-mark.png)|
 
 The following diagram illustrates these capabilities.
-:::image type="content" source="../media/m365-security-bdm-illustrations-known-threats.png" alt-text="An example of the various capabilities offered by tools to protect against threats of different types" lightbox="../media/m365-security-bdm-illustrations-known-threats.png":::
+:::image type="content" source="../media/m365-security-bdm-illustrations-known-threats.png" alt-text="The recommended capabilities for protecting against known threats" lightbox="../media/m365-security-bdm-illustrations-known-threats.png":::
+
 
 ## Protect against unknown threats
 
@@ -90,6 +91,7 @@ After adding extra protections to your privileged accounts and protecting agains
 
 The following diagram illustrates these capabilities.
 :::image type="content" source="../media/m365-security-bdm-illustrations-unknown-threats.png" alt-text="An example of the capabilities offered by tools to protect against unknown threats" lightbox="../media/m365-security-bdm-illustrations-unknown-threats.png":::
+
 
 Additional recommendations:
 
@@ -110,15 +112,15 @@ While Microsoft takes every possible measure to prevent against threats and atta
 |**Review and optimize your conditional access and related policies to align with your objectives for a zero trust network**. Protecting against known threats includes implementing a set of [recommended policies](./office-365-security/microsoft-365-policies-configurations.md). Review your implementation of these policies to ensure you're protecting your apps and data against hackers who have gained access to your network. The recommended Intune app protection policy for Windows 10 enables Windows Information Protection (WIP). WIP protects against accidental leaks of your organization data through apps and services, like email, social media, and the public cloud. |         |![green check mark.](../media/green-check-mark.png)|
 |**Disable external email forwarding**. Hackers who gain access to a user's mailbox can steal your mail by setting the mailbox to automatically forward email. This can happen even without the user's awareness. You can prevent this from happening by configuring a mail flow rule.|![green check mark.](../media/green-check-mark.png) |![green check mark.](../media/green-check-mark.png)|
 |**Disable anonymous external calendar sharing**. By default external anonymous calendar sharing is allowed. [Disable calendar sharing](/exchange/sharing/sharing-policies/modify-a-sharing-policy) to reduce potential leaks of sensitive information.|![green check mark.](../media/green-check-mark.png) |![green check mark.](../media/green-check-mark.png)|
-|**Configure data loss prevention policies for sensitive data**. Create a Data Loss Prevention Policy in the Security &amp; Compliance center to discover and protect sensitive data such as credit card numbers, Social Security numbers and bank account numbers. Microsoft 365 includes many predefined sensitive information types you can use in data loss prevention policies. You can also create your own sensitive information types for sensitive data that is custom to your environment. |![green check mark.](../media/green-check-mark.png)|![green check mark.](../media/green-check-mark.png)|
+|**Configure data loss prevention policies for sensitive data**. Create a Microsoft Purview Data Loss Prevention Policy in the Security &amp; Compliance center to discover and protect sensitive data such as credit card numbers, Social Security numbers and bank account numbers. Microsoft 365 includes many predefined sensitive information types you can use in data loss prevention policies. You can also create your own sensitive information types for sensitive data that is custom to your environment. |![green check mark.](../media/green-check-mark.png)|![green check mark.](../media/green-check-mark.png)|
 |**Implement data classification and information protection policies**. Implement sensitivity labels and use these to classify and apply protection to sensitive data. You can also use these labels in data loss prevention policies. If you are using Azure Information Protection labels, we recommend that you avoid creating new labels in other admin centers.|         |![green check mark.](../media/green-check-mark.png)|
 |**Protect data in third-party apps and services by using Defender for Cloud Apps**. Configure Defender for Cloud Apps policies to protect sensitive information across third-party cloud apps, such as Salesforce, Box, or Dropbox. You can use sensitive information types and the sensitivity labels you created in Defender for Cloud Apps policies and apply these across your SaaS apps. <br><br>Microsoft Defender for Cloud Apps allows you to enforce a wide range of automated processes. Policies can be set to provide continuous compliance scans, legal eDiscovery tasks, DLP for sensitive content shared publicly, and more. Defender for Cloud Apps can monitor any file type based on more than 20 metadata filters (for example, access level, file type). |         |![green check mark.](../media/green-check-mark.png)|
 |**Use [Microsoft  Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/information-protection-in-windows-overview) to identify if users store sensitive information on their Windows devices**. |         |![green check mark.](../media/green-check-mark.png)|
 |**Use [AIP Scanner](/azure/information-protection/deploy-aip-scanner) to identify and classify information across servers and file shares**. Use the AIP reporting tool to view the results and take appropriate actions.|         |![green check mark.](../media/green-check-mark.png)|
 
 The following diagram illustrates these capabilities.
-![Recommended capabilities for protecting against breach.](../media/m365-security-bdm-illustrations-assume-breach.png)
-:::image type="content" source="../media/m365-security-bdm-illustrations-assume-breach.png" alt-text="An example of the capabilities that are offered by tool for protection against breach" lightbox="../media/m365-security-bdm-illustrations-assume-breach.png":::
+:::image type="content" source="../media/m365-security-bdm-illustrations-assume-breach.png" alt-text="The capabilities recommended for protecting against unknown threats" lightbox="../media/m365-security-bdm-illustrations-assume-breach.png":::
+
 
 ## Continuous monitoring and auditing
 
@@ -136,7 +138,9 @@ Last but not least, Continuous Monitoring and Auditing of the Microsoft 365 envi
 |Use **Microsoft Defender for Cloud** to monitor for threats across hybrid and cloud workloads. Microsoft Defender for Cloud includes a free tier of capabilities and a standard tier of capabilities that are paid for based on resource hours or transactions.|         |         |
 
 The following diagram illustrates these capabilities.
-:::image type="content" source="../media/m365-security-bdm-illustrations-monitoring-auditing.png" alt-text="An example of the capabilities offered by the tools to enable threat protection and detection" lightbox="../media/m365-security-bdm-illustrations-monitoring-auditing.png":::
+
+:::image type="content" source="../media/m365-security-bdm-illustrations-monitoring-auditing.png" alt-text="The recommended capabilities for continuous monitoring and auditing" lightbox="../media/m365-security-bdm-illustrations-monitoring-auditing.png":::
+
 
 Top recommended monitoring actions:
 
