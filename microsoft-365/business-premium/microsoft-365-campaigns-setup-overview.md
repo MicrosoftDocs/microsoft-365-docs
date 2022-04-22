@@ -42,33 +42,6 @@ Your objectives are to:
 
 Once you've achieved these objectives, you can move on to the [next mission](m365bp-security-overview.md).
 
-<!---
-(In my opinion, this is only rehashing the same stuff covered in the TOC topics and referenced as "mission objectives" above and in the subsections. So, it's not needed here. Don't know if the paragraph for campaigns special pricing still applies, but it does rub against any narrative.)
-
-## Admins: Set up Microsoft 365
-
-The following diagram describes how admins set up Microsoft 365.
-
-![Steps to set up Microsoft 365.](../media/M365-democracy-SetUpProcess.png)
-
-For campaigns that qualify for special pricing, get started by [requesting an invite from Microsoft](https://m365forcampaigns.microsoft.com/), then [signing up for Microsoft 365 for Campaigns](m365-campaigns-sign-up.md). To complete setup, [run the setup wizard](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) to configure the core settings.
-
-Next, bump up security protection by: [protecting admin accounts](m365bp-protect-admin-accounts.md), [protecting access to mail and data](m365bp-conditional-access.md), and [increasing threat protection](m365bp-increase-protection.md).
-
-## Set up devices
-
-Take a few minutes to set up devices to work with your environment. For your key users (those who are the highest value targets for hackers), you can set up and pre-configure new devices. This helps them get started when they sign in with their Microsoft 365 credentials.
-
-:::image type="content" source="../media/m365-democracy-user-device-setup.png" alt-text="User device setup process.":::
-  
-To set up user devices:
-
-1. Each user [sets up their mobile devices](../business/set-up-mobile-devices.md?toc=%2Fmicrosoft-365%2Fcampaigns%2Ftoc.json).
-2. For unmanaged devices, users set up their [PCs and Macs](m365bp-protect-pcs-macs.md).
-For key staff, we recommend that you use [managed devices](../business/set-up-windows-devices.md) for even better protection. For all devices, you'll want to set up [multifactor authentication](m365bp-multifactor-authentication.md).
-3. All users should learn how to protect themselves and your campaign by learning about [phishing and other attacks](avoid-phishing-and-attacks.md). This [infographic](m365-campaigns-protect-campaign-infographic.md) can also help your users understand how to help protect your campaign from online threats.
---->
-
 ## Contact support
 
  **If you need to contact support:**

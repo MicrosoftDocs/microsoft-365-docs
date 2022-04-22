@@ -1,4 +1,4 @@
----
+    ---
 title: "Microsoft 365 Business Premium overview"
 f1.keywords:
 - NOCSH
@@ -29,11 +29,11 @@ description: "Learn how to implement cybersecurity for small or medium sized bus
 
 # Microsoft 365 Business Premium &mdash; cybersecurity for small business
 
-Let us begin by saying that you made a wise choice in adopting Microsoft 365 Business Premium and its world class productivity tools. Microsoft 365 Business Premium is designed with cybersecurity in mind, and by adopting Microsoft 365, you are taking on the defense of your organization's systems, helping to safeguard all data, devices and information. You are the first and best defense against hackers and cyberattackers, including random individuals, organized crime, or highly-sophisticated nation states. 
+Let us begin by saying that you made a wise choice in adopting Microsoft 365 Business Premium and its world class productivity tools. Designed with cybersecurity in mind, Microsoft 365 Business Premium safeguard's your data, devices and information. You are your org's first and best defense against hackers and cyberattackers, including random individuals, organized crime, or highly-sophisticated nation states.
 
-The task before you is this &mdash; let Microsoft 365 Business Premium help secure your organization’s future! Approach this task by taking on the following missions which will help you fortify your environment, train your team, and safeguard managed devices. The missions are categorized in order of importance, and completing them is the most effective way to thwart hackers, protect against ransomware, and ensure your organization’s future is safeguarded with the best cybersecurity defenses. Let's get started. 
+The task before you is this &mdash; let Microsoft 365 Business Premium help secure your organization’s future! Approach this task by taking on the following missions which will help you fortify your environment, train your team, and safeguard managed devices. The missions are categorized in order of importance, and completing them is the most effective way to thwart hackers, protect against ransomware, and ensure your organization’s future is safeguarded with the best cybersecurity defenses. Let's get started.
 
-Click through the tabs below to learn about each mission and how to set up Microsoft 365 Business Premium security. 
+Click through the tabs below to learn about each mission and how to set up Microsoft 365 Business Premium security.
 
 ## [**Fortify Your Environment**](#tab/Fortify)
 
@@ -41,7 +41,7 @@ In these first missions, sign in and set up your initial walls of defense, start
 
 [**Set up your environment**](m365bp-setup-overview.md). This mission requires you to set up and implement security across all accounts in the system.
 
-[**Bump up cybersecurity protections**](m365bp-security-overview.md). Set up critical front-line security measures to prevent cyberattacks. 
+[**Bump up cybersecurity protections**](m365bp-security-overview.md). Set up critical front-line security measures to prevent cyberattacks.
 
 [:::image type="content" source="media/m365bp-fortify-environment.jpg" alt-text="Microsoft 365 Business Premium protects your apps, file storage, email, devices, and identities,.":::](m365bp-setup-overview.md)
 
@@ -57,7 +57,7 @@ Click the infographic to see a larger version, or [Download a copy of the Cybers
 
 ## How Microsoft 365 Business Premium helps you
 
-Click here to find out the [benefits of Microsoft 365 Business Premium](m365bp-secure-users.md). 
+Click here to find out the [benefits of Microsoft 365 Business Premium](m365bp-secure-users.md).
 
 ## Next steps
 
@@ -68,7 +68,7 @@ Now, let's [fortify your environment against cyberattackers](m365bp-setup-overvi
 
 ## [**Train Your Team**](#tab/Train)
 
-We've included a set of missions here with some objectives that need to be completed by your team. You have to make sure the team's devices are protected, as well as that the team is trained to use email and file sharing safely, and to recognize and report threats. 
+We've included a set of missions here with some objectives that need to be completed by your team. You have to make sure the team's devices are protected, as well as that the team is trained to use email and file sharing safely, and to recognize and report threats.
 
 [**Set up BYOD devices**](m365bp-protect-pcs-macs.md). In this mission, you set up all the unmanaged (BYOD) devices so they are safely part of the ecosystem.
 
@@ -90,7 +90,7 @@ Click the infographic to see a larger version, or [Download a copy of the Cybers
 
 ## How Microsoft 365 Business Premium helps you
 
-Click here to find out the [benefits of Microsoft 365 Business Premium](m365bp-secure-users.md). 
+Click here to find out the [benefits of Microsoft 365 Business Premium](m365bp-secure-users.md).
 
 ## Next steps
 
@@ -103,7 +103,7 @@ Now, let's [fortify your environment against cyberattackers](m365bp-setup-overvi
 
 A safe device is one that is monitored by the organization. In this last critical mission, you onboard and enroll devices in Microsoft Defender for Business, so they are secured and protected with the best tools available.
 
-[**Set up and secure managed devices**](m365bp-protect-devices.md). Take the steps to secure those devices so they are monitored and protected by the organization! 
+[**Set up and secure managed devices**](m365bp-protect-devices.md). Take the steps to secure those devices so they are monitored and protected by the organization!
 
 [:::image type="content" source="media/m365bp-safeguard-managed-devices.jpg" alt-text="Microsoft 365 Business Premium protects your apps, file storage, email, devices, and identities.":::](m365bp-protect-devices.md)
 
@@ -119,7 +119,7 @@ Click the infographic to see a larger version, or [Download a copy of the Cybers
 
 ## How Microsoft 365 Business Premium helps you
 
-Click here to find out the [benefits of Microsoft 365 Business Premium](m365bp-secure-users.md). 
+Click here to find out the [benefits of Microsoft 365 Business Premium](m365bp-secure-users.md).
 
 ## Next steps
 

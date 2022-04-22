@@ -51,7 +51,7 @@ Follow specific device enrollment guidance below.
 
 ### For iOS enrollment:
 
-1. Select **iOS** > **iOS enrollment**
+1. Select **iOS** > **iOS enrollment**.
 1. From the list of policies, select a policy to see its details.
 1. Select **Properties** to manage the policy.
 1. Select **Settings** > **System Security** and configure security details in Intune.

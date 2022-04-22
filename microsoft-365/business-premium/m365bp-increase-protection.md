@@ -34,7 +34,7 @@ In this objective, you increase your threat protection with Microsoft 365 Busine
 - [Preset security policies](#review-and-apply-preset-security-policies) that can save a lot of time in setup and configuration
 - [Custom security policies](#create-custom-security-policies) that you can define to suit your business needs
 - [How to adjust your sharing settings for SharePoint and OneDrive files and folders](#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders)
-- Alert policies that can bring 
+- [Alert policies](#review-your-alert-policies) that monitor specific files and how they are used. 
 
 ## Review and apply preset security policies
 
@@ -68,11 +68,11 @@ The following table summarizes the levels of protection and preset policy types.
 
 If users are assigned multiple policies, an order of priority is used to apply the policies. The order of priority works as follows:
 
-1. **Strict protection** receives the highest priority and overrides all other policies
+1. **Strict protection** receives the highest priority and overrides all other policies.
 
 2. **Standard protection** 
 
-3. Custom security policies
+3. **Custom security policies**
 
 4. **Built-in protection** receives the lowest priority and is overridden by strict protection, standard protection, and custom policies.
 
@@ -167,7 +167,7 @@ The following image shows some of the default policies that are included with Mi
 
 3. Select an individual policy to view more details or to edit the policy. The following image shows a list of alert policies with one policy selected:
 
-   :::image type="content" source="media/selected-alert-policy.png" alt-text="Screenshot of an selected alert policy.":::
+   :::image type="content" source="media/selected-alert-policy.png" lightbox="media/mdb-deviceconfig-selectedpolicy.png" alt-text="Screenshot of a selected alert policy.":::
 
 > [!TIP]
 > For more information, see [alert policies](../compliance/alert-policies.md).

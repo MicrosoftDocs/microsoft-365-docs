@@ -130,17 +130,17 @@ Your Microsoft 365 environment includes protection against malware. You can incr
 
 - Using [pre-set policies for Microsoft Office 365](../../../microsoft-365/security/office-365-security/preset-security-policies.md).
 - Blocking attachments with certain file types.
-- Using antivirus/anti-malware protection on your devices, especially Microsoft Defender for Business. It includes features such as [automated investigative reporting](../../security/office-365-security/air-view-investigation-results.md) (AIR) and the Threat and Vulnerability Management (TVM) Dashboard. When Microsoft Defender for Business is not your primary anti-virus software, you can still run it in passive mode and use [endpoint protection and response (EDR)](../../security/defender-endpoint/overview-endpoint-detection-response.md), especially in [block mode](../../security/defender-endpoint/edr-in-block-mode.md) where it works behind the scenes to remediate malicious artifacts that were detected by EDR's capabilities, and missed by the primary virus detector software. 
+- Using antivirus/anti-malware protection on your devices, especially Microsoft Defender for Business. It includes features such as [automated investigative reporting](../../security/office-365-security/air-view-investigation-results.md) (AIR) and the Threat and Vulnerability Management (TVM) Dashboard. When Microsoft Defender for Business is not your primary anti-virus software, you can still run it in passive mode and use [endpoint protection and response (EDR)](../../security/defender-endpoint/overview-endpoint-detection-response.md), especially in [block mode](../../security/defender-endpoint/edr-in-block-mode.md) where it works behind the scenes to remediate malicious artifacts that were detected by EDR's capabilities, and missed by the primary virus detector software.
 
 ### Block attachments with certain file types
 
 You can increase your malware protection by blocking attachments with file types that are commonly used for malware. To bump up malware protection in email, view a [short training video](increase-threat-protection.md#raise-the-level-of-protection-against-malware-in-mail), or complete the following steps:
 
 1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Anti-malware** in the **Policies** section.
-2. On the **Anti-malware** page, double-click on **Default**. A flyout appears. 
-3. Select **Edit protection settings** at the bottom of the flyout. 
-4. In the next page, under **Protection settings**, select the checkbox next to **Enable the common attachments filter**. The file types that are blocked are listed directly below this option. To add or delete file types, select **Customize file types** at the end of the list. 
-5. Select **Save**. 
+2. On the **Anti-malware** page, double-click on **Default**. A flyout appears.
+3. Select **Edit protection settings** at the bottom of the flyout.
+4. In the next page, under **Protection settings**, select the checkbox next to **Enable the common attachments filter**. The file types that are blocked are listed directly below this option. To add or delete file types, select **Customize file types** at the end of the list.
+5. Select **Save**.
 
 For more information, see [Antimalware protection in EOP](../../security/office-365-security/anti-malware-protection.md).
 
@@ -154,7 +154,7 @@ If your organization is using Microsoft 365 Business Premium, you get additional
 - Firewall protection
 - Web content filtering
 
-These capabilities are included in Microsoft Defender for Business, an offering that will begin rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. 
+These capabilities are included in Microsoft Defender for Business, an offering that will begin rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022.
 
 [Learn more about Microsoft Defender for Business](../../security/defender-business/mdb-overview.md).
 
@@ -167,7 +167,7 @@ You get ransomware protection for email hosted in Microsoft 365 and for files th
 You can protect against ransomware by creating one or more mail flow rules to block file extensions that are commonly used for ransomware, or to warn users who receive these attachments in email. A good starting point is to create two rules:
 
 - Use OneDrive for moving files, so that they are always access-controlled and protected.
- 
+
 - Warn users before opening Office file attachments that include macros. Ransomware can be hidden inside macros, so we'll warn users to not open these files from people they do not know.
 
 - Block file types that could contain ransomware or other malicious code. We'll start with a common list of executables (listed in the table below). If your organization uses any of these executable types and you expect them to be sent in email, add them to the previous rule (warn users).
@@ -185,7 +185,7 @@ To create a mail transport rule, view a [short training video](increase-threat-p
 5. Apply the settings in the following table for each rule. Leave the rest of the settings at the default, unless you want to change them.
 
 6. Select **Save**.
-    
+
 | Setting | Warn users before opening attachments of Office files | Block file types that could contain ransomware or other malicious code |
 |:-----|:-----|:-----|
 |Name  <br/> |Anti-ransomware rule: warn users  <br/> |Anti-ransomware rule: block file types  <br/> |
@@ -193,7 +193,7 @@ To create a mail transport rule, view a [short training video](increase-threat-p
 |Specify words or phrases  <br/> |Add these file types:  <br/> dotm, docm, xlsm, sltm, xla, xlam, xll, pptm, potm, ppam, ppsm, sldm  <br/> |Add these file types:  <br/> ade, adp, ani, bas, bat, chm, cmd, com, cpl, crt, hlp, ht, hta, inf, ins, isp, job, js, jse, lnk, mda, mdb, mde, mdz, msc, msi, msp, mst, pcd, reg, scr, sct, shs, url, vb, vbe, vbs, wsc, wsf, wsh, exe, pif  <br/> |
 |Do the following . . .  <br/> |Prepend a disclaimer  <br/> |Block the message . . . reject the message and include an explanation  <br/> |
 |Provide message text  <br/> |Do not open these types of files—unless you were expecting them—because the files may contain malicious code and knowing the sender isn't a guarantee of safety.  <br/> ||
-   
+
 > [!TIP]
 > You can also add the files you want to block to the anti-malware list in [Protect against malware](#protect-against-malware).
 
@@ -208,10 +208,10 @@ For more information, see:
 
 ## Protect sensitive emails
 
-Microsoft 365 includes Office Message Encryption which allows you to send and receive encrypted email messages between people inside and outside your organization, and only the intended recipients may view them. The encryption works with Outlook.com, Yahoo!, Gmail, and other email services. 
+Microsoft 365 includes Office Message Encryption which allows you to send and receive encrypted email messages between people inside and outside your organization, and only the intended recipients may view them. The encryption works with Outlook.com, Yahoo!, Gmail, and other email services.
 
 > [!Tip]
-> If a more stringent security level is needed, your organization should also configure and use sensitivity labeling for emails or files. [Sensitivity labels](../../compliance/sensitivity-labels.md) allow control over content, no matter where it goes. 
+> If a more stringent security level is needed, your organization should also configure and use sensitivity labeling for emails or files. [Sensitivity labels](../../compliance/sensitivity-labels.md) allow control over content, no matter where it goes.
 
 ### Send encrypted email
 
@@ -233,7 +233,7 @@ If the recipient is using another email client or email account, such as Gmail o
 
 ## Protect the organization
 
-If you've configured one or more custom domains for your Microsoft 365 environment, you can configure targeted anti-phishing protection. Anti-phishing protection is included in Microsoft Defender for Office 365, and can help protect your organization from malicious impersonation-based phishing and other attacks. 
+If you've configured one or more custom domains for your Microsoft 365 environment, you can configure targeted anti-phishing protection. Anti-phishing protection is included in Microsoft Defender for Office 365, and can help protect your organization from malicious impersonation-based phishing and other attacks.
 
 > [!Note]
 > If you haven't configured a custom domain, you don't need to do this.
@@ -270,7 +270,7 @@ People regularly send, receive, and share attachments, such as documents, presen
 
 ### Set up Safe Attachments
 
-You can use pre-set Safe Attachments policies, or create your own. To create a Safe Attachments policy, view a [short training video](increase-threat-protection.md), or complete the following st    eps:
+You can use pre-set Safe Attachments policies, or create your own. To create a Safe Attachments policy, view a [short training video](increase-threat-protection.md), or complete the following steps:
 
 1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, and sign in with your admin account.
 

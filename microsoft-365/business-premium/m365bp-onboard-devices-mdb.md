@@ -45,8 +45,9 @@ This article also includes:
 
 The automatic onboarding option applies to Windows devices only. Automatic onboarding is available if the following conditions are met:
 
-- Your organization was already using Microsoft Endpoint Manager, Microsoft Intune, or Mobile Device Management (MDM) in Microsoft Intune before you got Defender for Business (Microsoft 365 Business Premium customers already have Microsoft Intune)
-- You already have Windows devices enrolled in Endpoint Manager
+- Your organization was already using Microsoft Endpoint Manager, Microsoft Intune, or Mobile Device Management (MDM) in Microsoft Intune before you got Defender for Business (Microsoft 365 Business Premium customers already have Microsoft Intune).
+
+- You already have Windows devices enrolled in Endpoint Manager.
 
 If Windows devices are already enrolled in Endpoint Manager, Defender for Business detects those devices while you are in the process of setting up and configuring Defender for Business. You'll be asked if you want to use automatic onboarding for all or some of your Windows devices. You can onboard all Windows devices at once, or select specific devices to start with, and then add more devices later.
 
@@ -66,7 +67,7 @@ You can use a local script to onboard Windows and Mac devices. When you run the 
 
 4. Select **Download onboarding package**. We recommend saving the onboarding package to a removable drive. (If you selected **macOS**, also select **Download installation package** and save it to your removable device.)
 
-5. Follow the guidance in the following table:
+5. Use the following guidance:
 
    - Windows devices: [Onboard Windows devices using a local script](../security/defender-endpoint/configure-endpoints-script.md#onboard-windows-devices-using-a-local-script)
 
@@ -117,17 +118,17 @@ If you prefer to onboard devices in phases, which we call *gradual device onboar
 
 If you want to offboard a device, use one of the following procedures:
 
-2. In the navigation pane, choose **Settings**, and then choose **Endpoints**.
+1. In the navigation pane, choose **Settings**, and then choose **Endpoints**.
 
-3. Under **Device management**, choose **Offboarding**.
+1. Under **Device management**, choose **Offboarding**.
 
-4. Select an operating system, such as **Windows 10 and 11**, and then, under **Offboard a device**, in the **Deployment method** section, choose **Local script**. 
+1. Select an operating system, such as **Windows 10 and 11**, and then, under **Offboard a device**, in the **Deployment method** section, choose **Local script**. 
 
-5. In the confirmation screen, review the information, and then choose **Download** to proceed.
+1. In the confirmation screen, review the information, and then choose **Download** to proceed.
 
-6. Select **Download offboarding package**. We recommend saving the offboarding package to a removable drive.
+1. Select **Download offboarding package**. We recommend saving the offboarding package to a removable drive.
 
-7. Run the script on each device that you want to offboard. Need help with this task? See the following resources:   
+1. Run the script on each device that you want to offboard. Need help with this task? See the following resources:   
 
    - Windows devices: [Offboard Windows devices using a local script](../security/defender-endpoint/configure-endpoints-script.md#offboard-devices-using-a-local-script)
    
