@@ -83,12 +83,20 @@ To enable the Corelight integration, you'll need to take the following steps:
 
 1. Enable **Export To Microsoft Defender** using the following command in the corelight-client:
 
-   :::image type="content" source="images/corelight-client-enable.png" alt-text="The kafka export" lightbox="images/corelight-client-enable.png":::
+    ``` command
+    corelight-client configuration update \
+    --bro.export.defender.enable True`
+    ```
 
 2. Set you tenant ID
-3. Optionally, you can use the following command to set the logs to exclude or to create a Microsoft Defender log filter. The minimal set of logs you must include is: dns, conn, files, http, ssl, ssh, x509, snmp, smtp, ftp, sip, dhcp, and notice.
 
-   :::image type="content" source="images/corelight-client-options.png" alt-text="The kafka export" lightbox="images/corelight-client-options.png":::
+3. Optionally, you use the following command to exclude certain logs or to create a Microsoft Defender log filter. The minimal set of logs you must include is: dns, conn, files, http, ssl, ssh, x509, snmp, smtp, ftp, sip, dhcp, and notice.
+
+   ``` command
+     `corelight-client configuration update \</br>
+    --bro.export.defender.exclude=<logs_to_exclude> \</br>
+    --bro.export.defender.filter=<logs_to_filter>`
+   ```
 
 ## See also
 
