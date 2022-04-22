@@ -205,6 +205,98 @@ For policy deployment in Intune, the account must have permissions to create, ed
 
 ### Deploying policy via OMA-URI
 
+Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>) **> Devices > Create profile > Platform: Windows 10 and later, Profile type: Templates > Custom**
+
+1. Enable RSAC:
+
+    - OMA-URI:
+
+      `./Vendor/MSFT/Defender/Configuration/DeviceControlEnabled`
+
+    - Data Type: Int
+    
+    - Value: 1
+    
+    :::image type="content" source="images/enable-rsac.png" alt-text="Enable RSAC" lightbox="images/enable-rsac.png":::
+      
+2. Set Default Enforcement = Deny:
+
+    - OMA-URI:
+
+      `./Vendor/MSFT/Defender/Configuration/DefaultEnforcement`
+
+    - Data Type: Int
+    
+    - Value: 2
+    
+    :::image type="content" source="images/default-deny.png" alt-text="Set Default Enforcement = Deny" lightbox="images/default-deny.png":::    
+
+3. Audit Default Deny: 
+
+    - OMA-URI: 
+    
+      `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bf3520ea7-fd1b-4237-8ebc-96911db44f8e%7d/RuleData`
+
+    - Data Type: String (XML file)
+        
+    :::image type="content" source="images/audit-default-deny.png" alt-text="Audit Default Deny" lightbox="images/audit-default-deny.png":::
+        
+    XML file download location: [mdatp-devicecontrol/Audit Default Deny.xml at main · microsoft/mdatp-devicecontrol (github.com](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Audit%20Default%20Deny.xml)
+
+4. ReadOnly - Group: 
+
+   - OMA-URI: 
+   
+     `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b9b28fae8-72f7-4267-a1a5-685f747a7146%7d/GroupData`
+
+   - Data Type: String (XML file)
+      
+    :::image type="content" source="images/any-removable-storage-group.png" alt-text="Any Removable Storage Group" lightbox="images/any-removable-storage-group.png":::
+       
+   XML file download location: [mdatp-devicecontrol/Any Removable Storage and CD-DVD and WPD Group.xml at main · microsoft/mdatp-devicecontrol (github.com](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Any%20Removable%20Storage%20and%20CD-DVD%20and%20WPD%20Group.xml)
+ 
+5. ReadOnly - Policy
+
+    - OMA-URI: 
+     
+      `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bf7e75634-7eec-4e67-bec5-5e7750cb9e02%7d/RuleData`
+
+    - Data Type: String (XML file)
+        
+    :::image type="content" source="images/allow-read-activity.png" alt-text="Allow Read Activity" lightbox= "images/allow-read-activity.png":::
+  
+    XML file download location: [mdatp-devicecontrol/Allow Read.xml at main · microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Allow%20Read.xml)
+
+6. Create Group for Allowed Medias
+   
+   - OMA-URI:
+     
+     `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b65fa649a-a111-4912-9294-fb6337a25038%7d/GroupData`
+
+   - Data Type: String (XML file) 
+      
+   :::image type="content" source="images/create-group-allowed-medias.png" alt-text="Approved USBs group" lightbox="images/create-group-allowed-medias.png"::: 
+   
+   XML file download location: [mdatp-devicecontrol/Approved USBs Group.xml at main · microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Approved%20USBs%20Group.xml)
+
+7. Create Policy to allow the approved USB Group
+   
+   - OMA-URI:
+     
+     `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bb2061588-029e-427d-8404-6dfec096a571%7d/RuleData`
+
+   - Data Type: String (XML file) 
+      
+   :::image type="content" source="images/allow-access-audit-file-information.png" alt-text="Allow access and audit file information" lightbox= "images/allow-access-audit-file-information.png":::
+   
+   What ‘37’ means in the policy? <br> 
+   It is 9 + 2 + 36 = 47: <br>
+   Read access: 1+8 = 9 <br>
+   Write access: disk level = 2 <br>
+   Execute: 4 + 32 = 36
+
+   XML file download location: [mdatp-devicecontrol/Allow full access and audit file.xml at main · microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Allow%20full%20access%20and%20audit%20file.xml)
+
 Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>) \> **Devices** \> **Configuration profiles** \> **Create profile** \> **Platform: Windows 10 and later & Profile: Custom**
 
 1. For each Group, create an OMA-URI rule:
