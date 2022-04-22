@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection: 
 - M365-subscription-management
 - M365-identity-device-management
