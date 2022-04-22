@@ -6756,6 +6756,11 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "microsoft-365/security/office-365-security/attack-simulation-traning-end-user-notifications.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/attack-simulation-training-end-user-notifications",
+      "redirect_document_id": true
+    },
+    {
     "source_path": "microsoft-365/compliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md",
     "redirect_url": "/microsoft-365/compliance/compliance-manager",
     "redirect_document_id": false
