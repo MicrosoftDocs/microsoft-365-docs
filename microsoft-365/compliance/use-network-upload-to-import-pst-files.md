@@ -145,7 +145,7 @@ Now you're ready to use the AzCopy tool to upload PST files to Microsoft 365. Th
 
 For more information about the **azcopy.exe copy** command, see [azcopy copy](/azure/storage/common/storage-ref-azcopy-copy).
 
-Here's are examples of the syntax for the AzCopy tool using actual values for each parameter.
+Here are examples of the syntax for the AzCopy tool using actual values for each parameter.
 
 ### Example 1
 
