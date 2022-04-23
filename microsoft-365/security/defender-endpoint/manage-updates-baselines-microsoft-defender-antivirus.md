@@ -15,7 +15,7 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 04/21/2022
+ms.date: 04/22/2022
 ms.collection: 
 - M365-security-compliance
 - m365initiative-defender-endpoint
@@ -90,14 +90,14 @@ All our updates contain
 
 *Customers who applied the March 2022 Microsoft Defender engine update (**1.1.19100.5**) might have encountered high resource utilization (CPU and/or memory). Microsoft has released an update (**1.1.19200.5**) that resolves the bugs introduced in the earlier version. Customers are recommended to update to this new engine build of Antivirus Engine (**1.1.19200.5**). To ensure any performance issues are fully fixed, it is recommended to reboot machines after applying update.*
 
-&ensp;Security intelligence update version: **1.361.1449.0**<br/>
+&ensp;Security intelligence update version: **1.363.817.0**<br/>
 &ensp;Released: **April 22, 2022**<br/>
 &ensp;Platform: **4.18.2203.5**<br/>
 &ensp;Engine: **1.1.19200.5**<br/>
 &ensp;Support phase: **Security and Critical Updates**<br/>
 
 Engine version: 1.1.19200.5 <br/>
-Security intelligence update version: 1.361.1449.0<br/>
+Security intelligence update version: 1.363.817.0<br/>
 
 ### What's new
 
