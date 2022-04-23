@@ -187,7 +187,7 @@ You can use the **ItemClass** email property or the **Type** search condition to
 
 ## Searching inactive mailboxes
 
-You can search inactive mailboxes in a content search. To get a list of the inactive mailboxes in your organization, run the command  `Get-Mailbox -InactiveMailboxOnly` in Exchange Online PowerShell. Alternatively, you can go to **Information governance** \> **Retention** in the Security & Compliance Center, and then click **More**![Navigation Bar ellipses.](../media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> **Inactive mailboxes**.
+You can search inactive mailboxes in a content search. To get a list of the inactive mailboxes in your organization, run the command  `Get-Mailbox -InactiveMailboxOnly` in Exchange Online PowerShell. Alternatively, you can go to **Data lifecycle management** \> **Retention** in the Security & Compliance Center, and then click **More**![Navigation Bar ellipses.](../media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> **Inactive mailboxes**.
 
 Here are a few things to keep in mind when searching inactive mailboxes.
 
