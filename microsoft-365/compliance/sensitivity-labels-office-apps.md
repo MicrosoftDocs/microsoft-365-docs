@@ -26,13 +26,13 @@ ms.custom: seo-marvel-apr2020
 
 When you have [published](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) sensitivity labels from the Microsoft Purview compliance portal, they start to appear in Office apps for users to classify and protect data as it's created or edited.
 
-Use the information in this article to help you successfully manage sensitivity labels in Office apps. For example, identify the minimum versions of apps you need to support built-in labeling, and understand interactions with the Azure Information Protection unified labeling client and compatibility with other apps and services.
+Use the information in this article to help you successfully manage sensitivity labels in Office apps. For example, identify the minimum versions of apps you need to support features that are specific to built-in labeling, any additional configuration information for these features, and understand interactions with the Azure Information Protection unified labeling client and other apps and services.
 
 ## Labeling client for desktop apps
 
 To use sensitivity labels that are built into Office desktop apps for Windows and Mac, you must use a subscription edition of Office. This labeling client doesn't support standalone editions of Office, sometimes called "Office Perpetual".
 
-If you can't upgrade to Microsoft 365 Apps for enterprise for the subscription versions of Office, for Windows computers, you can use the [Azure Information Protection unified labeling client](/azure/information-protection/rms-client/aip-clientv2).
+If you can't upgrade to Microsoft 365 Apps for enterprise for the subscription versions of Office, for Windows computers only, you can use the [Azure Information Protection (AIP) unified labeling client](/azure/information-protection/rms-client/aip-clientv2). However, this client is now in [maintenance mode](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/announcing-aip-unified-labeling-client-maintenance-mode-and/ba-p/3043613) and we don't recommend you use the AIP add-in for Office apps unless you have to. For more information, see [Why choose built-in labeling over the AIP add-in for Office apps](sensitivity-labels-aip.md).
 
 ## Support for sensitivity label capabilities in apps
 
@@ -43,8 +43,6 @@ New versions of Office apps are made available at different times for different 
 New capabilities that are in private preview are not included in the table but you might be able to join these previews by nominating your organization for the [Microsoft Information Protection private preview program](https://aka.ms/mip-preview).
 
 Office for iOS and Office for Android: Sensitivity labels are built into the [Office app](https://www.microsoft.com/en-us/microsoft-365/blog/2020/02/19/new-office-app-android-ios-available/).
-
-Additional capabilities are available when you install the Azure Information Protection unified labeling client, which runs on Windows computers only. For these details, see [Compare the labeling clients for Windows computers](/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers).
 
 > [!TIP]
 > When you compare the minimum versions in the tables with the versions you have, remember the common practice of release versions to omit leading zeros.
@@ -62,7 +60,7 @@ The numbers listed are the minimum Office application versions required for each
 |-----------|-------:|----|----|--------|----|
 |[Manually apply, change, or remove label](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| Current Channel: 1910+ <br /><br> Monthly Enterprise Channel: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Apply a default label](sensitivity-labels.md#what-label-policies-can-do) to new documents                                         | Current Channel: 1910+ <br /><br> Monthly Enterprise Channel: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md)                                                        |
-|[Apply a default label](sensitivity-labels.md#what-label-policies-can-do) to existing documents | Preview: Rolling out to [Current Channel (Preview)](https://office.com/insider) | Preview: Rolling out to [Current Channel (Preview)](https://office.com/insider) | Under review | Under review | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Apply a default label](sensitivity-labels.md#what-label-policies-can-do) to existing documents | Preview: Rolling out to [Beta Channel](https://office.com/insider) | Preview: Rolling out to [Current Channel (Preview)](https://office.com/insider) | Under review | Under review | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Require a justification to change a label](sensitivity-labels.md#what-label-policies-can-do)                     | Current Channel: 1910+ <br /><br> Monthly Enterprise Channel: 1910+  <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Provide help link to a custom help page](sensitivity-labels.md#what-label-policies-can-do)                       | Current Channel: 1910+ <br /><br> Monthly Enterprise Channel: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Mark the content](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | Current Channel: 1910+ <br /><br> Monthly Enterprise Channel: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
@@ -106,10 +104,19 @@ The numbers listed are the minimum Office application versions required for each
 <sup>\*</sup>
 Requires the [new Outlook for Mac](https://support.microsoft.com/office/the-new-outlook-for-mac-6283be54-e74d-434e-babb-b70cefc77439)
 
+## Office built-in labeling client and the Azure Information Protection client
 
-## Office built-in labeling client and other labeling solutions
+If users have the [Azure Information Protection (AIP) client](/azure/information-protection/rms-client/aip-clientv2) installed on their Windows computers, by default, built-in labels are turned off in [Windows Office apps that support them](#labeling-client-for-desktop-apps). Because built-in labels don't use an Office add-in, as used by the AIP client, they have the benefit of more stability and better performance. They also support the latest features, such as advanced classifiers. 
 
-The Office built-in labeling client downloads sensitivity labels and sensitivity label policy settings from the Microsoft Purview compliance portal. 
+> [!NOTE]
+> If you're not seeing the labeling features you expect on Windows computers, despite confirming the minimum supported versions for your Office update channel, it might be because you need to [disable the AIP add-in](sensitivity-labels-aip.md#how-to-disable-the-aip-add-in-to-use-built-in-labeling-for-office-apps).
+
+To learn more about labeling support with the AIP client, see [Why choose built-in labeling over the AIP add-in for Office apps](sensitivity-labels-aip.md).
+
+
+## If you need to turn off built-in labeling in Office apps on Windows
+
+The Office built-in labeling client downloads sensitivity labels and sensitivity label policy settings from the Microsoft Purview compliance portal.
 
 To use the Office built-in labeling client, you must have one or more [label policies published](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) to users from the Microsoft Purview compliance portal, and a [supported version of Office](#support-for-sensitivity-label-capabilities-in-apps).
 
@@ -117,15 +124,17 @@ If both of these conditions are met but you need to turn off the built-in labels
 
 1. Navigate to **User Configuration/Administrative Templates/Microsoft Office 2016/Security Settings**.
 
-2. Set **Use the Sensitivity feature in Office to apply and view sensitivity labels** to **0**. 
+2. Set **Use the Sensitivity feature in Office to apply and view sensitivity labels** to **0**.
+
+If you later need to revert this configuration, change the value to **1**. You might also need to change this value to 1 if the **Sensitivity** button isn't displayed on the ribbon as expected. For example, a previous administrator turned this labeling setting off.
  
 Deploy this setting by using Group Policy, or by using the [Office cloud policy service](/DeployOffice/overview-office-cloud-policy-service). The setting takes effect when these Office apps restart. 
 
-Because this setting is specific to Windows Office apps, it has no impact on other apps on Windows that support sensitivity labels (such as Power BI) or other platforms (such as macOS, mobile devices, and Office for the web). If you don't want some or all users to see and use sensitivity labels across all apps, all platforms, don't assign a sensitivity label policy to those users. 
+Because this setting is specific to Windows Office apps, it has no impact on other apps on Windows that support sensitivity labels (such as Power BI) or other platforms (such as macOS, mobile devices, and Office for the web). If you don't want some or all users to see and use sensitivity labels across all apps and all platforms, don't assign a sensitivity label policy to those users.
 
 ### Office built-in labeling client and the Azure Information Protection client
 
-If users have the [Azure Information Protection (AIP) client](/azure/information-protection/rms-client/aip-clientv2) installed on their Windows computers, by default, built-in labels are turned off in [Windows Office apps that support them](#labeling-client-for-desktop-apps). Because built-in labels don't use an Office add-in, as used by the AIP client, they have the benefit of more stability and better performance. They also support the latest features, such as advanced classifiers.
+If users have the [Azure Information Protection (AIP) client](/azure/information-protection/rms-client/aip-clientv2) installed on their Windows computers, by default, built-in labels are turned off in [Windows Office apps that support them](#labeling-client-for-desktop-apps). Because built-in labels don't use an Office Add-in, as used by the AIP client, they have the benefit of more stability and better performance. They also support the latest features, such as advanced classifiers.
 
 To learn more about labeling choices with the AIP client, see [Why choose built-in labeling over the AIP add-in for Office apps](sensitivity-labels-aip.md).
 
