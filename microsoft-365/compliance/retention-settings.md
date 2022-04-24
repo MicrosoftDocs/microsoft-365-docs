@@ -432,7 +432,7 @@ In both cases, the replacement label must already be created but doesn't need to
 
 ![Change the label option after the retention period.](../media/change-label-option.png)
 
-Alternatively, disposition reviewers can manually select a replacement label as part of the [disposition review process](disposition.md#disposition-reviews) if the label setting **Start a disposition review** is selected on the **Choose what happens after the retention period** page.
+Alternatively, disposition reviewers can manually select a replacement label as part of the [disposition review process](disposition.md#disposition-reviews) if the label setting **Start a disposition review** is selected on this **Choose what happens after the retention period** page.
 
 ### Deleting content that's older than a specific age
 
