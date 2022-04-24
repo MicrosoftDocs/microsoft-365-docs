@@ -13,6 +13,9 @@ description: "If you need to ask customers questions when they book an appointme
 
 # Add custom and required questions to the booking page
 
+> [!NOTE]
+> This article helps you to interact with the latest version of Microsoft Bookings. Previous versions will be retired in coming months.
+
 Bookings lets you create questions to ask your customers when they are booking appointments. It also lets you choose which questions are required.
 
 You associate the questions with a service, so each service can have a different set of questions. For example, a hair stylist may ask customers who are booking a hair coloring appointment if they have any known allergies to bleaches or tints. This allows you and your customers to save time when they arrive for their appointment.
@@ -28,9 +31,11 @@ For more information about how to personalize and customize your booking page, s
 
 1. Sign in to Microsoft 365 and go to **Bookings**.
 
+1. Choose your calendar.
+
 1. Go to **Services** and either edit an existing service or **Add a service**.
 
-1. Scroll down to the **Custom fields** section, and then select **Modify**.
+1. Choose the **Custom fields** section.
 
    We already added some basic customer information questions: Customer email, phone number, customer address, and customer notes. The first time you do this, the customer information questions are highlighted in gray. That means that the user will see this question. If you select the question, the highlight box around it will disappear and your customer won't be asked that question.
 

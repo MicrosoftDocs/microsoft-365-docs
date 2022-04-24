@@ -26,6 +26,10 @@ ms.date: 02/04/2022
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- Microsoft Defender Antivirus
+
+**Platforms**
+- Windows
 
 This article provides information about attack reduction rules:
 
@@ -38,69 +42,38 @@ This article provides information about attack reduction rules:
   - Rule descriptions
   - Configuration management system rule names
 
-## Public preview: Supported operating systems
-
-> [!IMPORTANT]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
-The following table lists the supported operating systems for attack surface reduction rules that are currently prerelease product. The rules are listed alphabetical order. Unless otherwise indicated, the minimum Windows&nbsp;10 build is version 1709 (RS3, build 16299) or later; the minimum Windows&nbsp;Server build is version is 1809 or later.
-
-> [!NOTE]
-> Attack surface reduction rules in Windows&nbsp;Server&nbsp;2012&nbsp;R2 and Windows&nbsp;Server&nbsp;2016 are available for devices onboarded using the modern unified solution package. For more information, see [New functionality in the modern unified solution for Windows Server 2012 R2 and 2016 Preview](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview).
->
-
-| Rule name | Windows&nbsp;Server 2016 <sup>[[1](#fn1)]<sup></sup> | Windows&nbsp;Server 2012 R2 <sup>[[1](#fn1)]<sup></sup> |
-|---|:---:|:---:|
-|[Block abuse of exploited vulnerable signed drivers](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y | Y |
-|[Block Adobe Reader from creating child processes](#block-adobe-reader-from-creating-child-processes) | Y | Y |
-|[Block all Office applications from creating child processes](#block-all-office-applications-from-creating-child-processes) | Y | Y |
-|[Block credential stealing from the Windows local security authority subsystem (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | Y | Y |
-|[Block executable content from email client and webmail](#block-executable-content-from-email-client-and-webmail) | Y | Y |
-|[Block executable files from running unless they meet a prevalence, age, or trusted list criterion](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | Y | Y |
-|[Block execution of potentially obfuscated scripts](#block-execution-of-potentially-obfuscated-scripts) | Y | Y |
-|[Block JavaScript or VBScript from launching downloaded executable content](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | N | N |
-|[Block Office applications from creating executable content](#block-office-applications-from-creating-executable-content) | Y | Y |
-|[Block Office applications from injecting code into other processes](#block-office-applications-from-injecting-code-into-other-processes)  | Y | Y |
-|[Block Office communication application from creating child processes](#block-office-communication-application-from-creating-child-processes) | Y | Y |
-|[Block persistence through WMI event subscription](#block-persistence-through-wmi-event-subscription) \* _File and folder exclusions not supported._ | N | N |
-|[Block process creations originating from PSExec and WMI commands](#block-process-creations-originating-from-psexec-and-wmi-commands) | Y | Y |
-|[Block untrusted and unsigned processes that run from USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Y | Y |
-|[Block Win32 API calls from Office macros](#block-win32-api-calls-from-office-macros) | N | N |
-|[Use advanced protection against ransomware](#use-advanced-protection-against-ransomware) | Y | Y |
-|  |  |  |
-
-(<a id="fn1">1</a>) Refers to the modern, unified solution for Windows Server 2012 and 2016. For more information, see [Onboard Windows Servers to the Defender for Endpoint service](configure-server-endpoints.md).
-
-_End Public Preview: Supported operating systems_
-
 ## Supported operating systems
 
-The following table lists the supported operating systems for rules that are  currently released to general availability. The rules are listed alphabetical order.
+The following table lists the supported operating systems for rules that are currently released to general availability. The rules are listed alphabetical order in this table.
 
 > [!Note]
 >
 > Unless otherwise indicated, the minimum Windows&nbsp;10 build is version 1709 (RS3, build 16299) or later; the minimum Windows&nbsp;Server build is version is 1809 or later.
 >
+> Attack surface reduction rules in Windows&nbsp;Server&nbsp;2012&nbsp;R2 and Windows&nbsp;Server&nbsp;2016 are available for devices onboarded using the modern unified solution package. For more information, see [New functionality in the modern unified solution for Windows Server 2012 R2 and 2016 Preview](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview).
 
-|Rule name|Windows&nbsp;10|Windows&nbsp;Server 2019|Windows&nbsp;Server|
-|---|:---:|:---:|:---:|
-|[Block abuse of exploited vulnerable signed drivers](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y | Y | Y <br><br> version 1803 (Semi-Annual Channel) or later |
-|[Block Adobe Reader from creating child processes](#block-adobe-reader-from-creating-child-processes) | Y version 1809 or later | Y | Y  <br><br> |
-|[Block all Office applications from creating child processes](#block-all-office-applications-from-creating-child-processes) | Y | Y | Y <br><br> |
-|[Block credential stealing from the Windows local security authority subsystem (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | Y version 1803 or later | Y <br><br> | Y <br><br> |
-|[Block executable content from email client and webmail](#block-executable-content-from-email-client-and-webmail) | Y | Y <br><br> | Y <br><br> |
-|[Block executable files from running unless they meet a prevalence, age, or trusted list criterion](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | Y version 1803 or later | Y <br><br> | Y <br><br> |
-|[Block execution of potentially obfuscated scripts](#block-execution-of-potentially-obfuscated-scripts) | Y | Y <br><br> | Y <br><br> |
-|[Block JavaScript or VBScript from launching downloaded executable content](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | Y | Y <br><br> | Y <br><br> |
-|[Block Office applications from creating executable content](#block-office-applications-from-creating-executable-content) | Y | Y <br><br> | Y <br><br> |
-|[Block Office applications from injecting code into other processes](#block-office-applications-from-injecting-code-into-other-processes)  | Y | Y <br><br> | Y <br><br> |
-|[Block Office communication application from creating child processes](#block-office-communication-application-from-creating-child-processes) | Y | Y <br><br> | Y <br><br> |
-|[Block persistence through WMI event subscription](#block-persistence-through-wmi-event-subscription) <br><br> \* _File and folder exclusions not supported._ | Y version 1903 (build 18362) or later| Y | Y <br><br> version 1903 (build 18362) or later |
-|[Block process creations originating from PSExec and WMI commands](#block-process-creations-originating-from-psexec-and-wmi-commands) | Y version 1803 or later | Y <br><br> | Y <br><br>  |
-|[Block untrusted and unsigned processes that run from USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Y | Y <br><br> | Y <br><br> |
-|[Block Win32 API calls from Office macros](#block-win32-api-calls-from-office-macros) | Y | Y <br><br> | Y <br><br> |
-|[Use advanced protection against ransomware](#use-advanced-protection-against-ransomware) | Y version 1803 or later | Y <br><br> | Y <br><br> |
-|  |  |  |  |
+| Rule name|Windows 10 | Windows Server 2019 | Windows&nbsp;Server | Windows Server 2016 <sup>[[1, 2](#fn1)]<sup></sup> | Windows Server 2012&nbsp;R2 <sup>[[1, 2](#fn1)]<sup></sup> |
+|:---|:---:|:---:|:---:|:---:|:---:|
+| [Block abuse of exploited vulnerable signed drivers](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y | Y | Y <br> version 1803 (Semi-Annual Channel) or later | Y | Y |
+| [Block Adobe Reader from creating child processes](#block-adobe-reader-from-creating-child-processes) | Y version 1809 or later | Y | Y | Y | Y |
+| [Block all Office applications from creating child processes](#block-all-office-applications-from-creating-child-processes) | Y | Y | Y | Y | Y |
+| [Block credential stealing from the Windows local security authority subsystem (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | Y <br> version 1803 or later | Y | Y | Y | Y |
+| [Block executable content from email client and webmail](#block-executable-content-from-email-client-and-webmail) | Y | Y | Y | Y | Y |
+| [Block executable files from running unless they meet a prevalence, age, or trusted list criterion](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | Y <br> version 1803 or later | Y | Y | Y | Y |
+| [Block execution of potentially obfuscated scripts](#block-execution-of-potentially-obfuscated-scripts) | Y | Y | Y | Y | Y |
+| [Block JavaScript or VBScript from launching downloaded executable content](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | Y | Y | Y | N | N |
+| [Block Office applications from creating executable content](#block-office-applications-from-creating-executable-content) | Y | Y | Y | Y | Y |
+| [Block Office applications from injecting code into other processes](#block-office-applications-from-injecting-code-into-other-processes)  | Y | Y | Y | Y | Y |
+| [Block Office communication application from creating child processes](#block-office-communication-application-from-creating-child-processes) | Y | Y | Y | Y | Y |
+| [Block persistence through WMI event subscription](#block-persistence-through-wmi-event-subscription) <br> \* _File and folder exclusions not supported._ | Y <br> version 1903 (build 18362) or later | Y | Y <br> version 1903 (build 18362) or later | N | N |
+| [Block process creations originating from PSExec and WMI commands](#block-process-creations-originating-from-psexec-and-wmi-commands) | Y <br> version 1803 or later | Y | Y | Y | Y |
+| [Block untrusted and unsigned processes that run from USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Y | Y | Y | Y | Y |
+| [Block Win32 API calls from Office macros](#block-win32-api-calls-from-office-macros) | Y | Y | Y | N | N |
+| [Use advanced protection against ransomware](#use-advanced-protection-against-ransomware) | Y <br> version 1803 or later | Y | Y | Y | Y |
+
+(<a id="fn1">1</a>) Refers to the modern unified solution for Windows Server 2012 and 2016. For more information, see [Onboard Windows Servers to the Defender for Endpoint service](configure-server-endpoints.md).
+
+(<a id="fn1">2</a>) For Windows&nbsp;Server 2016 and Windows&nbsp;Server 2012&nbsp;R2, the minimum required version of Microsoft Endpoint Configuration Manager is version 2111.
 
 ## Supported configuration management systems
 
@@ -109,7 +82,7 @@ Links to information about configuration management system versions referenced i
 |Rule name | Intune | Microsoft Endpoint Manager |Microsoft Endpoint Configuration Manager |Group Policy<sup>[[1](#fn1)]<sup></sup> | PowerShell<sup>[[1](#fn1)]<sup></sup>  |
 |---|:---:|:---:|:---:|:---:|:---:|
 |[Block abuse of exploited vulnerable signed drivers](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y  | Y MEM OMA-URI |   | Y  |  Y  |
-|[Block Adobe Reader from creating child processes](#block-adobe-reader-from-creating-child-processes) | Y |   | Y | Y  | Y  |
+|[Block Adobe Reader from creating child processes](#block-adobe-reader-from-creating-child-processes) | Y |   |  | Y  | Y  |
 |[Block all Office applications from creating child processes](#block-all-office-applications-from-creating-child-processes) | Y |   |Y <br><br> CB 1710 | Y  | Y  |
 |[Block credential stealing from the Windows local security authority subsystem (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | Y  |   | Y <br><br>CB 1802 | Y  | Y  |
 |[Block executable content from email client and webmail](#block-executable-content-from-email-client-and-webmail) | Y |  |Y <br><br> CB 1710 | Y | Y  |
@@ -137,7 +110,7 @@ Links to information about configuration management system versions referenced i
 
 Toast notifications are generated for all rules in Block mode. Rules in any other mode will not generate toast notifications
 
-For rules with the “Rule State” specified:
+For rules with the "Rule State" specified:
 
 - ASR rules with \<ASR Rule, Rule State\> combinations are used to surface alerts (toast notifications) on Microsoft Defender for Endpoint only for devices at high-cloud block level. Devices not at high cloud block level will not generate alerts for any <ASR Rule, Rule State> combinations
 - EDR alerts are generated for ASR rules in the specified states, but only for devices at high cloud block level.
@@ -195,7 +168,7 @@ _Warn mode_ is a block-mode type that alerts users about potentially risky actio
 
 If the allow button is clicked, the block will be suppressed for 24 hours. After 24 hours, the end-user will need to allow the block again. The warn mode for ASR rules is only supported for RS5+ (1809+) devices. If bypass is assigned to ASR rules on devices with older versions, the rule will be in blocked mode.
 
-You can also set a rule in warn mode via PowerShell by simply specifying the AttackSurfaceReductionRules_Actions as “Warn”. For example:
+You can also set a rule in warn mode via PowerShell by simply specifying the AttackSurfaceReductionRules_Actions as "Warn". For example:
 
 ```powershell
 -command "& {&'Add-MpPreference' -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions Warn"} 
@@ -282,7 +255,7 @@ LSASS authenticates users who sign in on a Windows computer. Microsoft Defender 
 > In some apps, the code enumerates all running processes and attempts to open them with exhaustive permissions. This rule denies the app's process open action and logs the details to the security event log. This rule can generate a lot of noise. If you have an app that simply enumerates LSASS, but has no real impact in functionality, there is no need to add it to the exclusion list. By itself, this event log entry doesn't necessarily indicate a malicious threat.
   
 > [!IMPORTANT]
-> The default state for the Attack Surface Reduction (ASR) rule “Block credential stealing from the Windows local security authority subsystem (lsass.exe)” will change from **Not Configured** to **Configured** and the default mode set to **Block**. All other ASR rules will remain in their default state: **Not Configured**. Additional filtering logic has already been incorporated in the rule to reduce end user notifications. Customers can configure the rule to **Audit**, **Warn** or **Disabled** modes, which will override the default mode. The functionality of this rule is the same, whether the rule is configured in the on-by-default mode, or if you enable Block mode manually.  
+> The default state for the Attack Surface Reduction (ASR) rule "Block credential stealing from the Windows local security authority subsystem (lsass.exe)" will change from **Not Configured** to **Configured** and the default mode set to **Block**. All other ASR rules will remain in their default state: **Not Configured**. Additional filtering logic has already been incorporated in the rule to reduce end user notifications. Customers can configure the rule to **Audit**, **Warn** or **Disabled** modes, which will override the default mode. The functionality of this rule is the same, whether the rule is configured in the on-by-default mode, or if you enable Block mode manually.
 
 Intune name: `Flag credential stealing from the Windows local security authority subsystem`
 

@@ -10,8 +10,8 @@
          href: defender-for-office-365.md
        - name: Step-by-step threat protection in Defender for Office 365
          href: protection-stack-microsoft-defender-for-office365.md
-       - name: Evaluate Defender for Office 365
-         href: office-365-evaluation.md
+       - name: Try Defender for Office 365
+         href: try-microsoft-defender-for-office-365.md
        - name: What's new in Defender for Office 365
          href: whats-new-in-defender-for-office-365.md
        - name: Defender for Office 365 in the Microsoft 365 Defender portal
@@ -96,6 +96,8 @@
        href: configure-global-settings-for-safe-links.md
      - name: Configure outbound spam filtering
        href: configure-the-outbound-spam-policy.md
+     - name: Configure and review priority accounts
+       href: configure-review-priority-account.md
      - name: Create block sender lists
        href: Create-block-sender-lists-in-office-365.md
      - name: Create safe sender lists
@@ -161,7 +163,7 @@
        - name: Payload automations in Attack simulation training
          href: attack-simulation-training-payload-automations.md
        - name: End-user notifications for Attack simulation training
-         href: attack-simulation-traning-end-user-notifications.md
+         href: attack-simulation-training-end-user-notifications.md
        - name: Insights and reporting in Attack simulation training
          href: attack-simulation-training-insights.md
        - name: Attack simulation training deployment considerations and FAQ
@@ -215,7 +217,13 @@
      - name: Run an administrator role group report
        href: /exchange/security-and-compliance/exchange-auditing-reports/search-role-group-changes
    - name: Investigate
-     items: 
+     items:
+     - name: Defender for Office 365 Security Operations Guide
+       items:
+         - name: Defender for Office 365 Security Operations Guide
+           href: mdo-sec-ops-guide.md
+         - name: Manage incidents and alerts from Defender for Office 365 in Microsoft 365 Defender
+           href: mdo-sec-ops-manage-incidents-and-alerts.md
      - name: Threat Explorer views
        href: threat-explorer-views.md
      - name: Campaign Views

@@ -65,7 +65,7 @@ Note the following differences about Microsoft Office text-based files and OCR-s
 - Applying more than one custom form processing model to a library is not supported.
 
 
-## See Also
+## See also
 
 [Use a prebuilt model to extract info from invoices or receipts](prebuilt-overview.md)
  

@@ -1,6 +1,6 @@
 ---
 title: How automated investigation and response works in Microsoft Defender for Office 365
-f1.keywords: 
+f1.keywords:
 - NOCSH
 author: dansimp
 ms.author: dansimp
@@ -8,16 +8,16 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
-search.appverid: 
+search.appverid:
 - MET150
 - MOE150
-ms.collection: 
+ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 keywords: automated incident response, investigation, remediation, threat protection
 ms.date: 01/29/2021
 description: See how automated investigation and response capabilities work in Microsoft Defender for Office 365
-ms.custom: 
+ms.custom:
 - air
 - seo-marvel-mar2020
 ms.technology: mdo
@@ -72,12 +72,11 @@ Remediation is the final phase of the playbook. During this phase, remediation s
 
 ## Example: A security administrator triggers an investigation from Threat Explorer
 
-In addition to automated investigations that are triggered by an alert, your organization's security operations team can trigger an automated investigation from a view in [Threat Explorer](threat-explorer.md).  This investigation also creates an alert, so that Microsoft 365 Defender incidents and external SIEM tools can see that this investigation was triggered.
+In addition to automated investigations that are triggered by an alert, your organization's security operations team can trigger an automated investigation from a view in [Threat Explorer](threat-explorer.md). This investigation also creates an alert, so Microsoft 365 Defender incidents and external SIEM tools can see that this investigation was triggered.
 
 For example, suppose that you are using the **Malware** view in Explorer. Using the tabs below the chart, you select the **Email** tab. If you select one or more items in the list, the **+ Actions** button activates.
 
 :::image type="content" source="../../media/Explorer-Malware-Email-ActionsInvestigate.png" alt-text="The Explorer with selected messages" lightbox="../../media/Explorer-Malware-Email-ActionsInvestigate.png":::
-
 
 Using the **Actions** menu, you can select **Trigger investigation**.
 
