@@ -424,11 +424,11 @@ With these concatenated settings, users will be able to delete the item from the
 
 The option to relabel at the end of the retention period has two configuration paths when you create a retention label:
 
-- If you need to initially retain content with the primary label (most typical): On the **Define label settings** page, select **Retain items indefinitely or for a specific period** and specify the retention period. Then on the **Choose what happens after the retention period** page, select **Change the label**.
+- If you need to initially retain content with the primary label (most typical): On the **Define label settings** page, select **Retain items indefinitely or for a specific period** and specify the retention period. Then on the **Choose what happens after the retention period** page, select **Change the label** > **Choose a label**.
 
-- If you don't need to initially retain content with the primary label: On the **Define label settings** page, select **Enforce actions after a specific period**, specify the retention period, and then select **Change the label**.
+- If you don't need to initially retain content with the primary label: On the **Define label settings** page, select **Enforce actions after a specific period**, specify the retention period, and then select **Change the label** > **Choose a label**.
 
-In both cases, the label must already be created but doesn't need to be included in an existing label policy.
+In both cases, the replacement label must already be created but doesn't need to be included in an existing label policy.
 
 ![Change the label option after the retention period.](../media/change-label-option.png)
 
