@@ -402,13 +402,13 @@ If there's also a change in whether the label [marks the item as a record or a r
 
 An example configuration:
 
-You create and configure a retention label for an industry-compliance requirement to retain content for three years after it's created, and mark the item as a record. When this label is applied, users won't be able to delete the item from their app, because that's one of the restrictions of a record. 
-
-At the end of the three years, you want to automatically retain the content for two more years because of internal compliance policies, but there's no need to mark it as a record with the restrictions that this configuration applies.
-
-To complete the configuration, you select the label setting to change the label at the end of the retention period, and choose a label that retains content for five years after the content was created, and doesn't mark the item as a record. 
-
-With these concatenated settings, users will be able to delete the item from their app after three years but it remains accessible for eDiscovery searches for five years.
+- You create and configure a retention label for an industry-compliance requirement to retain content for three years after it's created, and mark the item as a record. When this label is applied, users won't be able to delete the item from their app, because that's one of the restrictions of a record. 
+    
+    At the end of the three years, you want to automatically retain the content for two more years because of internal compliance policies, but there's no need to mark it as a record with the restrictions that this configuration applies.
+    
+    To complete the configuration, you select the label setting to change the label at the end of the retention period, and choose a label that retains content for five years after the content was created, and doesn't mark the item as a record. 
+    
+    With these concatenated settings, users will be able to delete the item from their app after three years but it remains accessible for eDiscovery searches for five years.
 
 Considerations for the relabeling option:
 
