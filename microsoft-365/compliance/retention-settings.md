@@ -400,9 +400,9 @@ For the replacement label, you'll typically choose a label that has a longer ret
 
 If there's also a change in whether the label [marks the item as a record or a regularly record](declare-records.md), the replacement retention label can also change the [restrictions for what action are allowed or blocked](records-management.md#records) for that item.
 
-##### Relabeling example
+##### Relabeling example configuration
 
-You create and configure a retention label for an industry-compliance requirement to retain content for three years after it's created, and mark the item as a record. When this label is applied, users won't be able to delete the item from their app, because that's one of the restrictions of a record. 
+You create and configure a retention label for an industry-compliance requirement to retain content for three years after it's created, and mark the item as a record. When this label is applied, users won't be able to delete the item from their app, because that's one of the restrictions of a record.
 
 At the end of the three years, you want to automatically retain the content for two more years because of internal compliance policies, but there's no need to mark it as a record with the restrictions that this configuration applies.
 
@@ -418,7 +418,7 @@ With these concatenated settings, users will be able to delete the item from the
 
 - You can choose a replacement label that's configured for another replacement label. There's no limit to the number of replacement labels an item can have.
 
-- If the replacement label marks the item as a record or regulatory record but can't be applied because the file is checked out, the relabel process is tried when the file is checked back in again, or checkout is discarded.
+- If the replacement label marks the item as a record or regulatory record but can't be applied because the file is currently checked out, the relabel process is retried when the file is checked back in again, or checkout is discarded.
 
 ##### Configuration paths for relabeling
 
@@ -430,9 +430,9 @@ The option to relabel at the end of the retention period has two configuration p
 
 In both cases, the label must already be created but doesn't need to be included in an existing label policy.
 
-Alternatively, disposition reviewers can manually select a replacement label as part of the [disposition review process](disposition.md#disposition-reviews) if the label setting **Start a disposition review** is selected on the **Choose what happens after the retention period** page.
-
 ![Change the label option after the retention period.](../media/change-label-option.png)
+
+Alternatively, disposition reviewers can manually select a replacement label as part of the [disposition review process](disposition.md#disposition-reviews) if the label setting **Start a disposition review** is selected on the **Choose what happens after the retention period** page.
 
 ### Deleting content that's older than a specific age
 
