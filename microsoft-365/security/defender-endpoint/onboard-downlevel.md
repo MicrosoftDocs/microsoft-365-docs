@@ -68,20 +68,20 @@ The following steps are required to enable this integration:
 
 Review the following details to verify minimum system requirements:
 
-- Install the [February 2018 monthly update rollup](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
+- Install the [February 2018 monthly update rollup](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598) - Direct download link from the Windows Update catalog is available [here](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4074598)
+
+- Install the [March 12, 2019 (or later) Servicing stack update](https://support.microsoft.com/topic/servicing-stack-update-for-windows-7-sp1-and-windows-server-2008-r2-sp1-march-12-2019-b4dc0cff-d4f2-a408-0cb1-cb8e918feeba) - Direct download link from the Windows Update catalog is available [here](https://www.catalog.update.microsoft.com/search.aspx?q=4490628)
+
+- Install the [SHA-2 code signing support update](https://support.microsoft.com/topic/sha-2-code-signing-support-update-for-windows-server-2008-r2-windows-7-and-windows-server-2008-september-23-2019-84a8aad5-d8d9-2d5c-6d78-34f9aa5f8339) - Direct download link from the Windows Update catalog is available [here](https://www.catalog.update.microsoft.com/search.aspx?q=kb4474419)
 
   > [!NOTE]
   > Only applicable for Windows Server 2008 R2, Windows 7 SP1 Enterprise, and Windows 7 SP1 Pro.
 
 - Install the [Update for customer experience and diagnostic telemetry](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry)
 
-- Install either [.NET framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653) (or later) or [KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework)
+- Install [Microsoft .Net Framework 4.5.2 or later](https://www.microsoft.com/en-US/download/details.aspx?id=42642)
 
     > [!NOTE]
-    > Only applicable for Windows Server 2008 R2, Windows 7 SP1 Enterprise, and Windows 7 SP1 Pro.
-    >
-    > Don't install .NET Framework 4.0.x, since it will negate the above installation.
-    >
     > Installation of .NET 4.5 might require you to restart your computer after installation.
 
 - Meet the Azure Log Analytics agent minimum system requirements. For more information, see [Collect data from computers in you environment with Log Analytics](/azure/log-analytics/log-analytics-concept-hybrid#prerequisites)
