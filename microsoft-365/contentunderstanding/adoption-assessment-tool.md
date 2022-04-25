@@ -1,5 +1,5 @@
 ---
-title: Use the adoption assessment tool for Microsoft SharePoint Syntex
+title: Assess your environment for adoption of Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -19,4 +19,4 @@ ms.localizationpriority: medium
 description: Learn how to use the adoption assessment tool to see how your organization can benefit from SharePoint Syntex.
 ---
 
-# Use the adoption assessment tool for Microsoft SharePoint Syntex
+# Assess your environment for adoption of Microsoft SharePoint Syntex
