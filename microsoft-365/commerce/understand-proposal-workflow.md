@@ -22,7 +22,7 @@ ROBOTS: NOINDEX
 ms.date: 03/17/2021
 ---
 
-# Understand the proposal workflow
+# Understand the Microsoft proposal workflow
 
 A proposal is a formal offer from Microsoft for your organization to buy Microsoft products and services. You work directly with a Microsoft representative to determine the specific products, services, and terms for your proposal.
 

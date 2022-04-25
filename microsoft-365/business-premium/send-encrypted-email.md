@@ -28,7 +28,7 @@ ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: "Learn how to send encrypted email using Outlook."
 ---
 
-# Encrypt or label your sensitive email
+# Encrypt or label your sensitive email in Microsoft 365
 
 Your data and campaign information is important and often confidential. Help protect this sensitive information by using encryption and sensitivity labels so you and your email recipients treat the information with the sensitivity it requires.
 

@@ -25,7 +25,7 @@ description: "Use these steps to buy more licenses or reduce the number of licen
 ms.date: 09/16/2021
 ---
 
-# Buy or remove licenses
+# Buy or remove Microsoft 365 licenses for a subscription
 
 You can buy more licenses or reduce the number of licenses for your subscriptions by using the following steps.
 

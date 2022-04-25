@@ -23,7 +23,7 @@ description: "Learn how to change how frequently you're billed for your business
 ms.date: 04/02/2021
 ---
 
-# Change your billing frequency
+# Change your Microsoft 365 subscription billing frequency
 
 When you buy a subscription, you choose monthly or annual billing. To change how often you are billed for a subscription, use the following steps.
 

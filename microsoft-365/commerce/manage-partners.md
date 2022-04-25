@@ -22,7 +22,7 @@ description: "Learn how to work with Microsoft-certified solution providers (par
 ms.date: 02/04/2022
 ---
 
-# Manage partner relationships
+# Manage Microsoft-certified solution provider partner relationships
 
 You can work with Microsoft-certified solution providers (partners) to purchase and manage products and services for your organization or school. There are a few steps involved in getting things set up.
 

@@ -22,7 +22,7 @@ description: "Learn how to review and approve or deny license requests from user
 ms.date: 06/07/2021
 ---
 
-# Manage license requests
+# Manage self-service license requests
 
 > [!NOTE]
 > The information in this article only applies to self-service purchased products. To learn more, see [Self-service purchase FAQ](../subscriptions/self-service-purchase-faq.yml).

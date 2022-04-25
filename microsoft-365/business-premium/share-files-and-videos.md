@@ -27,7 +27,7 @@ search.appverid:
 description: "Share files and videos inside your campaign with Microsoft Teams and SharePoint."
 ---
 
-# Share files and videos
+# Share files and videos with Microsoft Teams and SharePoint
 
 When you need to control who can view and who can edit your files, you need to store the files in a secure location, where you can make sure permissions are applied appropriately. You can use Microsoft Teams to store your files, and then share the files either inside or outside of your firm, practice, or campaign by using Microsoft Teams or by sending SharePoint links. Sending a link rather than an email attachment means that you know who is viewing and modifying the files, and they can't be viewed or modified without your permission.
 

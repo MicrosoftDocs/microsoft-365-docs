@@ -27,7 +27,7 @@ description: "Find your invoice or billing statement in the Microsoft 365 admin 
 ms.date: 01/25/2022
 ---
 
-# View your bill or invoice
+# View your Microsoft 365 for business subscription bill or invoice
 
 This article is for people who have a Microsoft 365 for business subscription.
   

@@ -21,7 +21,7 @@ description: "Learn about the new allotments feature."
 ms.date: 03/17/2021
 ---
 
-# Allotment basics
+# Microsoft 365 license allotment basics
 
 License allotments let you set license limits and delegate management of license assignment to only the products and license limits that you select.
 
