@@ -43,7 +43,7 @@ To take action on devices through advanced hunting, you need a role in Microsoft
 
 *Active remediation actions > Threat and vulnerability management - Remediation handling*
 
-To take action on emails through advanced hunting, you need a role in Microsoft Defender for Office 365 to search and purge emails.
+To take action on emails through advanced hunting, you need a role in Microsoft Defender for Office 365 to [search and purge emails](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).
 
 ## Take various actions on devices
 You can take the following actions on devices identified by the `DeviceId` column in your query results:

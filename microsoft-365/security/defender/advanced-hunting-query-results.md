@@ -51,8 +51,8 @@ By default, advanced hunting displays query results as tabular data. You can als
 | **Line chart** | Plots numeric values for a series of unique items and connects the plotted values |
 | **Scatter chart** | Plots numeric values for a series of unique items |
 | **Area chart** | Plots numeric values for a series of unique items and fills the sections below the plotted values |
-| **Stacked area chart** | [fill up] |
-| **Time chart** | [fill up] |
+| **Stacked area chart** | Plots numeric values for a series of unique items and stacks the filled sections below the plotted values  |
+| **Time chart** | Plots values by count on a linear time scale |
 
 ### Construct queries for effective charts
 
