@@ -21,7 +21,7 @@ search.appverid:
 - MOE150
 description: "Learn how to move your files to OneDrive."
 ---
-# Move files to OneDrive
+# Move files to OneDrive for Business
 
 ## Watch: Move your files to OneDrive for Business
 

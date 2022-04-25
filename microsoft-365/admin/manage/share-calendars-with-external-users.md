@@ -25,7 +25,7 @@ ms.assetid: fb00dd4e-2d5f-4e8d-8ff4-94b2cf002bdd
 description: "Enable calendar sharing in the Microsoft 365 admin center so users can share their calendars with anyone inside or outside the organization."
 ---
 
-# Share calendars with external users
+# Share Microsoft 365 calendars with external users
 
 It's sometimes necessary for your users to schedule meetings with people outside your organization. To simplify the process of finding common meeting times, Microsoft 365 enables you to make calendars available to these people. These are people who need to see free and busy times for users in your organization, but don't have user accounts for your Microsoft 365 organization.
 

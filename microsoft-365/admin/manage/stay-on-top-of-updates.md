@@ -22,7 +22,7 @@ ms.assetid: 719f4904-cbdd-4889-a0cf-fbd7837dfecd
 description: "Learn how to stay on top of the Microsoft 365 updates using Message center, Targeted Release, Roadmap, and Blogs and Community."
 ---
 
-# Stay on top of changes
+# Stay on top of Microsoft 365 product and feature changes
 
 With Microsoft 365, you receive new product updates and features as they become available instead of scheduled updates that are months or years apart. As a result, you and your users will routinely experience new and improved ways to do your job rather than a costly and time-consuming company-wide upgrade. The challenge with such a model is keeping up with the changes and updates. Here are a few ways that you can stay on top of the Microsoft 365 updates in your organization.
 

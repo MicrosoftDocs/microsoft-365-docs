@@ -11,7 +11,7 @@ ms.assetid: 828a17db-956a-401e-bb62-d153b6dffd53
 description: "Follow these instructions to create your About Us page, including business name, address, phone number, website URL, logo, and business hours in Microsoft Bookings."
 ---
 
-# Enter your business information
+# Enter your business information in Microsoft Bookings
 
 > [!NOTE]
 > This article helps you to interact with the latest version of Microsoft Bookings. Previous versions will be retired in coming months.

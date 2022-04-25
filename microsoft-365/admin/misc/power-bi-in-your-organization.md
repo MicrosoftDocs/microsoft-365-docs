@@ -21,7 +21,7 @@ ROBOTS: NOINDEX
 description: "Learn about Power BI and how users in your organization can use this business analytics service."
 ---
 
-# Power BI in your organization
+# Using Power BI data in your organization
 
 This page describes how users in your organization can use Power BI and how you can control how your organization acquires this service.
 

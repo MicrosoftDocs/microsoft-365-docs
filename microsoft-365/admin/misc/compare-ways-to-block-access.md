@@ -22,7 +22,7 @@ ROBOTS: NOINDEX
 description: "Learn how to block access to Microsoft 365 when an employee leaves your organization."
 ---
 
-# Compare ways to block access
+# Compare ways to block access to Microsoft 365
 
 When an employee leaves your organization, on good terms or bad, you need to block their access to Microsoft 365. Here are a few ways you can do that.
   

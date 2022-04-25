@@ -11,7 +11,7 @@ ms.assetid: e3c0a4ee-e3d8-4fbe-bd8f-16d1c712d1f4
 description: "Schedule office closures and employee time off from the Bookings calendar so that employees are marked as unavailable for bookings during the specified times."
 ---
 
-# Schedule business closures, time off, and vacation time
+# Schedule Bookings business closures, time off, and vacation time
 
 > [!NOTE]
 > This article helps you to interact with the latest version of Microsoft Bookings. Previous versions will be retired in coming months.

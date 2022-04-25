@@ -30,7 +30,7 @@ description: "Learn how to set up multi-factor authentication for your organizat
 monikerRange: 'o365-worldwide'
 ---
 
-# Set up multifactor authentication
+# Set up multifactor authentication for Microsoft 365
 
 Multifactor authentication means you and your employees must provide more than one way to sign in to Microsoft 365 is one of the easiest ways to secure your business. Based on your understanding of [multifactor authentication (MFA) and its support in Microsoft 365](multi-factor-authentication-microsoft-365.md), it's time to set it up and roll it out to your organization. 
 

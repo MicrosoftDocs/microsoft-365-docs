@@ -17,7 +17,7 @@ search.appverid: MET150
 description: "Learn how to review and manage threats detected by Microsoft Defender Antivirus on your Windows 10 devices." 
 ---
 
-# Review detected threats and take action
+# Review threats detected by Microsoft Defender Antivirus and take action
 
 As soon as a malicious file or software is detected, Microsoft Defender Antivirus blocks it and prevents it from running. And with cloud-delivered protection turned on, newly detected threats are added to the antivirus and antimalware engine so that your other devices and users are protected, as well.
 

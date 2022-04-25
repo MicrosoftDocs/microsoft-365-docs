@@ -24,7 +24,7 @@ search.appverid:
 description: "Learn how to get online or phone support for your Microsoft 365 for business subscription. You must be an admin for a business subscription to get support."
 ---
 
-# Get support
+# Get support for Microsoft 365 for business
 
 ::: moniker range="o365-worldwide"
 

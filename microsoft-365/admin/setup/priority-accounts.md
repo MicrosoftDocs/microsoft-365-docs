@@ -18,7 +18,7 @@ ms.custom:
 description: "Monitor failed and delayed emailed messages sent to or from accounts who have high business impact."
 ---
 
-# Manage and monitor priority accounts
+# Manage and monitor priority accounts in Microsoft 365
 
 In every Microsoft 365 organization, there are people that are essential, like executives, leaders, managers, or other users who have access to sensitive, proprietary, or high priority information.
 

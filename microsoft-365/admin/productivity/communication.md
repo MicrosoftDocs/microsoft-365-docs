@@ -21,9 +21,9 @@ search.appverid:
 description: "Details of the Communication - People experience Productivity Score."
 ---
 
-# Communication – People experiences
+# Communication insights score– People experiences
 
-Productivity   Score supports the journey to digital transformation with insights about how your organization uses Microsoft 365 and the technology experiences that support it. Your organization’s score reflects people and technology experience measurements and can be compared to benchmarks from organizations similar in size to yours. The communication category is part of the people experiences measures. To learn more, check out the [Productivity Score overview](productivity-score.md) and read [Microsoft's Privacy Statement](https://privacy.microsoft.com/privacystatement).
+Productivity Score supports the journey to digital transformation with insights about how your organization uses Microsoft 365 and the technology experiences that support it. Your organization’s score reflects people and technology experience measurements and can be compared to benchmarks from organizations similar in size to yours. The communication category is part of the people experiences measures. To learn more, check out the [Productivity Score overview](productivity-score.md) and read [Microsoft's Privacy Statement](https://privacy.microsoft.com/privacystatement).
 
 ## Prerequisites
 
