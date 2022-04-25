@@ -56,7 +56,7 @@ One of the following permissions is required to call the advanced hunting API. T
 
 Permission type | Permission | Permission display name
 -|-|-
-Application | AdvancedHunting.Read.All | Run advanced queries
+Application | AdvancedHunting.Read.All| Run advanced queries
 Delegated (work or school account) | AdvancedHunting.Read | Run advanced queries
 
 >[!Note]

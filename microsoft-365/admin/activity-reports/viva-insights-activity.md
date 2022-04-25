@@ -33,7 +33,7 @@ For example, you can understand the adoption of Viva Insights by looking at the 
 
 ## Interpret the Microsoft 365 Apps usage report 
 
-You can get a view into your user's Viva Insights activity by looking at the **Active users chart**. The Viva Insights active user chart can be viewed for trends over the last 7 days, 30 days, 90 days, or 180 days.  
+You can get a view into your user's Viva Insights activity by looking at the **Active users chart**. The Viva Insights active user chart can be viewed for trends over the last 7 days, 30 days, 90 days, or 180 days.  
 
 > [!div class="mx-imgBorder"]
 > ![Microsoft 365 Apps usage report with Viva Insights.](../../media/viva-insights-chart.png)
