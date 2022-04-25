@@ -1,9 +1,9 @@
 ---
-title: Search the mailbox & OneDrive for Business site for a list of users with Content Search
+title: Use Content Search for a list of users on the mailbox & OneDrive for Business site
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 1/3/2017
 audience: Admin
@@ -23,11 +23,13 @@ ms.custom: seo-marvel-apr2020
 
 # Use Content Search to search the mailbox and OneDrive for Business site for a list of users
 
-Security & Compliance Center PowerShell provides a number of cmdlets that let you automate time-consuming eDiscovery-related tasks. Currently, creating a Content search in the Microsoft 365 compliance center to search a large number of custodian content locations takes time and preparation. Before you create a search, you have to collect the URL for each OneDrive for Business site and then add each mailbox and OneDrive for Business site to the search. In future releases, this will be easier to do in the Microsoft 365 compliance center. Until then, you can use the script in this article to automate this process. This script prompts you for the name of your organization's MySite domain (for example, **contoso** in the URL `https://contoso-my.sharepoint.com`), a list of user email addresses, the name of the new Content Search, and the search query to use. The script gets the OneDrive for Business URL for each user in the list, and then it creates and starts a Content Search that searches the mailbox and OneDrive for Business site for each user in the list, using the search query that you provide.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Security & Compliance Center PowerShell provides a number of cmdlets that let you automate time-consuming eDiscovery-related tasks. Currently, creating a Content search in the Microsoft Purview compliance portal to search a large number of custodian content locations takes time and preparation. Before you create a search, you have to collect the URL for each OneDrive for Business site and then add each mailbox and OneDrive for Business site to the search. In future releases, this will be easier to do in the compliance portal. Until then, you can use the script in this article to automate this process. This script prompts you for the name of your organization's MySite domain (for example, **contoso** in the URL `https://contoso-my.sharepoint.com`), a list of user email addresses, the name of the new Content Search, and the search query to use. The script gets the OneDrive for Business URL for each user in the list, and then it creates and starts a Content Search that searches the mailbox and OneDrive for Business site for each user in the list, using the search query that you provide.
   
 ## Permissions and script information
 
-- You have to be a member of the eDiscovery Manager role group in the Microsoft 365 compliance center and a SharePoint Online global administrator to run the script in Step 3.
+- You have to be a member of the eDiscovery Manager role group in the compliance portal and a SharePoint Online global administrator to run the script in Step 3.
 
 - Be sure to save the list of users that you create in Step 2 and the script in Step 3 to the same folder. That will make it easier to run the script.
 
@@ -178,4 +180,4 @@ When you run the script in this step, it will prompt you for the following infor
     
     - The search query (leave this blank to return all items in the content locations).
     
-    The script gets the URLs for each OneDrive for Business site and then creates and starts the search. You can either run the **Get-ComplianceSearch** cmdlet in Security & Compliance Center PowerShell to display the search statistics and results, or you can go to the **Content search** page in the Microsoft 365 compliance center to view information about the search.
+    The script gets the URLs for each OneDrive for Business site and then creates and starts the search. You can either run the **Get-ComplianceSearch** cmdlet in Security & Compliance Center PowerShell to display the search statistics and results, or you can go to the **Content search** page in the compliance portal to view information about the search.

@@ -7,30 +7,29 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: how-to
-ms.date: 03/08/2022
+ms.date: 03/16/2022
 ms.prod: m365-security
 ms.technology: mdb
-ms.localizationpriority: medium
-ms.reviewer: inbadian, shlomiakirav
+ms.localizationpriority: high
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
 - M365-security-compliance
-- m365-initiative-defender-business
 ---
 
 # Device groups in Microsoft 365 Business Premium
 
 Microsoft 365 Business Premium includes endpoint protection through Microsoft Defender for Business. Device protection policies are applied to devices through certain collections that are called device groups. 
 
-**This article describes**:  
+**This guidance describes**:  
 
 - [What device groups are](#whats-a-device-group)
 - [How to create a new device group](#how-do-i-create-a-new-device-group)
 
 ## What's a device group?
 
-A device group is a collection of devices that are grouped together because of certain specified criteria, such as operating system version. Devices that meet the criteria are included in that device group, unless you exclude them. 
+A device group is a collection of devices that are grouped together because of certain specified criteria, such as the operating system version. Devices that meet the criteria are included in that device group, unless you exclude them. 
 
 With your subscription, you have default device groups that you can use. The default device groups include all the devices that are onboarded to Defender for Business. However, you can also create new device groups to assign device protection policies with specific settings to certain devices. 
 
@@ -47,6 +46,7 @@ You can create a new device group while you are in the process of creating or ed
 3. Take one of the following actions:
 
     1. Select an existing policy, and then choose **Edit**.
+    
     2. Choose **+ Add** to create a new policy.
 
     > [!TIP]
@@ -66,4 +66,5 @@ You can create a new device group while you are in the process of creating or ed
 
 10. On the **Review your policy** step, review all the settings, make any needed edits, and then choose **Create policy** or **Update policy**.
 
+Now that you've completed your primary missions, set up your [response teams](m365bp-security-incident-management.md) and [maintain your environment](m365bp-maintain-environment.md).
 

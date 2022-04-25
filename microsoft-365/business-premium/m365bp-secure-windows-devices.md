@@ -2,15 +2,15 @@
 title: "Secure Windows devices"
 f1.keywords:
 - CSH
-ms.author: sharik
-author: skjerland
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 audience: Admin
 ms.topic: conceptual
 f1_keywords:
 - 'O365E_BCSSetup4WindowsConfig'
 ms.service: o365-administration
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection: 
 - M365-subscription-management
 - M365-identity-device-management 

@@ -1,6 +1,7 @@
 ---
-title: "Manage information barriers policies"
-description: "Learn how to edit or remove policies and segments for information barriers."
+title: "Manage information barrier policies"
+description: "Learn how to edit or remove policies for information barriers."
+keywords: Microsoft 365, Microsoft Purview, compliance, information barriers
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -16,7 +17,9 @@ f1.keywords:
 
 # Manage information barriers policies
 
-After you have [defined information barriers policies](information-barriers-policies.md), you might need to make changes to policies or user segments as part of [troubleshooting](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting) or for regular maintenance.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+After you have [defined information barrier policies](information-barriers-policies.md), you may need to make changes to those policies or to your user segments, as part of [troubleshooting](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting) or as regular maintenance.
 
 ## What do you want to do?
 
@@ -158,7 +161,7 @@ Use this procedure edit the definition of a user segment. For example, you might
     >[!TIP]
     >Print or save your list of segments for reference later. For example, if you want to edit a segment, you will need to know its name or identify value (this is used with the Identity parameter).
 
-2. Identify the segment to be removed and make sure the IB policy associated with the segment has been removed. See the Remove a policy procedure for details.
+2. Identify the segment to be removed and make sure the IB policy associated with the segment has been removed. See the [Remove a policy](#remove-a-policy) procedure for details.
 
 3. Edit the segment that will be removed to remove the relationship of users to that segment. This action updates the segment definition and removes all users from the segment. You'll use the UserGroupFilter parameter to disassociate users from the segment prior to removal.
 
@@ -166,7 +169,7 @@ Use this procedure edit the definition of a user segment. For example, you might
 
     |**Syntax**|**Example**|
     |:---------|:----------|
-    | `Set-OrganizationSegment -Identity GUID -UserGroupFilter "attribute -eq 'attributevalue'"` | `Set-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd -UserGroupFilter "Department -eq 'FakeDept'"` <br> In this example, for the segment that has the GUID c96e0837-c232-4a8a-841e-ef45787d8fcd, we updated the department name to FakeDept to remove users from the segment. This example uses the *Department* attribute, but you can use other attributes as appropriate. The example uses *FakeDept* because this doesn't exist and is certain to not contain any users. |
+    | `Set-OrganizationSegment -Identity GUID -UserGroupFilter "attribute -eq 'attributevalue'"` | `Set-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd -UserGroupFilter "Department -eq 'FakeDept'"` <br> In this example, for the segment that has the GUID c96e0837-c232-4a8a-841e-ef45787d8fcd, we defined the department name as *FakeDept* to remove users from the segment. This example uses the *Department* attribute, but you can use other attributes as appropriate. The example uses *FakeDept* because this doesn't exist and is certain to not contain any users. |
 
 4. To apply your changes, use the **Start-InformationBarrierPoliciesApplication** cmdlet.
 
@@ -260,5 +263,5 @@ After you have started applying information barriers policies, if you want to st
 - [Learn more about information barriers in Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams)
 - [Learn more about information barriers in SharePoint Online](/sharepoint/information-barriers)
 - [Learn more about information barriers in OneDrive](/onedrive/information-barriers)
-- [Attributes for information barriers policies](information-barriers-attributes.md)
+- [Attributes for information barrier policies](information-barriers-attributes.md)
 - [Troubleshooting information barriers](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting)
