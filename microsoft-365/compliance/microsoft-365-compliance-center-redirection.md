@@ -9,12 +9,12 @@ ms.service: O365-seccomp
 audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
-description: Learn about automatic redirection of users from the Office 365 Security and Compliance center users to the Microsoft Purview compliance portal.
+description: Learn about automatic redirection of users from the Office 365 Security and Compliance Center users to the Microsoft Purview compliance portal.
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 ---
 
-# Redirection of users from the Office 365 Security and Compliance center to the Microsoft Purview compliance portal
+# Redirection of users from the Office 365 Security and Compliance Center to the Microsoft Purview compliance portal
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
