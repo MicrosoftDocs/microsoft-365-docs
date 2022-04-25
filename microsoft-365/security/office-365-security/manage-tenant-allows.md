@@ -112,7 +112,7 @@ Allow Files  on the **Submissions** page in Microsoft 365 Defender.
    - **Spoof type**: Select one of the following values:
      - **Internal**: The spoofed sender is in a domain that belongs to your organization (an [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)).
      - **External**: The spoofed sender is in an external domain.
-   - **Action**: Select **Allow** or **Block**.
+   - **Action**: Select **Allow**.
 
 4. When you're finished, click **Add**.
 
