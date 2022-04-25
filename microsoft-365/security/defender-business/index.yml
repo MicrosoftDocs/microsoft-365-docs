@@ -59,6 +59,23 @@ landingContent:
           - text: Try tutorials and simulations
             url: mdb-tutorials.md
 
+  # Card
+  - title: Help and more resources
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: How to get help or contact support
+            url: mdb-get-help.md
+          - text: Frequently asked questions
+            url: mdb-faq.yml
+          - text: Troubleshooting
+            url: mdb-troubleshooting.yml
+      - linkListType: reference
+        links:
+          - text: Microsoft 365 Business Premium
+            url: /microsoft-365/business-premium/
+          - text: Microsoft 365 Lighthouse
+            url: /microsoft-365/lighthouse/m365-lighthouse-overview
 
   # Card
   - title: Set up and configure
@@ -127,20 +144,3 @@ landingContent:
           - text: Remove devices
             url: mdb-offboard-devices.md
 
-  # Card
-  - title: Help and more resources
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: How to get help or contact support
-            url: mdb-get-help.md
-          - text: Frequently asked questions
-            url: mdb-faq.yml
-          - text: Troubleshooting
-            url: mdb-troubleshooting.yml
-      - linkListType: reference
-        links:
-          - text: Microsoft 365 Business Premium
-            url: /microsoft-365/business-premium/
-          - text: Microsoft 365 Lighthouse
-            url: /microsoft-365/lighthouse/m365-lighthouse-overview
