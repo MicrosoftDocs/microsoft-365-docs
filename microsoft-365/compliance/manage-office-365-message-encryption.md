@@ -87,22 +87,30 @@ As an administrator, you can manage whether to display this button to end users.
   
 1. Use a work or school account that has global administrator permissions in your organization and start a Windows PowerShell session and connect to Exchange Online. For instructions, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-2. Run the Set-IRMConfiguration cmdlet with the -SimplifiedClientAccessEnabled parameter:
+2. Run the Set-IRMConfiguration cmdlet with the -SimplifiedClientAccessEnabled, -SimplifiedClientAccessEncryptionDisabled and -SimplifiedClientAccessDoNotForwardDisabled parameter:
 
    ```powershell
+   Set-IRMConfiguration -SimplifiedClientAccessEncryptionDisabled <$true|$false>
+   Set-IRMConfiguration -SimplifiedClientAccessDoNotForwardDisabled <$true|$false>
    Set-IRMConfiguration -SimplifiedClientAccessEnabled <$true|$false>
    ```
 
    For example, to disable the **Encrypt** button:
 
    ```powershell
+   Set-IRMConfiguration -SimplifiedClientAccessEncryptionDisabled $true
+   Set-IRMConfiguration -SimplifiedClientAccessDoNotForwardDisabled $true
    Set-IRMConfiguration -SimplifiedClientAccessEnabled $false
+   
    ```
 
    To enable the **Encrypt** button:
 
    ```powershell
+   Set-IRMConfiguration -SimplifiedClientAccessEncryptionDisabled $false
+   Set-IRMConfiguration -SimplifiedClientAccessDoNotForwardDisabled $false
    Set-IRMConfiguration -SimplifiedClientAccessEnabled $true
+
    ```
 
 ## Enable service-side decryption of email messages for iOS mail app users
