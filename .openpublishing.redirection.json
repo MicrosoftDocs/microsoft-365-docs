@@ -6647,7 +6647,7 @@
     },
     {
       "source_path": "microsoft-365/campaigns/m365-campaigns-phishing-and-attacks.md",
-      "redirect_url": "/microsoft-365/business-premium/m365-campaigns-phishing-and-attacks",
+      "redirect_url": "/microsoft-365/business-premium/avoid-phishing-and-attacks",
       "redirect_document_id": true
     },
     {
@@ -6765,7 +6765,7 @@
     "redirect_url": "/microsoft-365/compliance/compliance-manager",
     "redirect_document_id": false
     },    
-        {
+    {
     "source_path": "microsoft-365/business-premium/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md",
     "redirect_url": "/microsoft-365/solutions/productivity-illustrations#security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations",
     "redirect_document_id": false
@@ -6861,6 +6861,11 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "microsoft-365/business-premium/m365-campaigns-phishing-and-attacks.md",
+      "redirect_url": "/microsoft-365/business-premium/avoid-phishing-and-attacks",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/admin/devices/create-and-edit-autopilot-profiles.md",
       "redirect_url": "/microsoft-365/business-premium/create-and-edit-autopilot-profiles",
       "redirect_document_id": false
@@ -6888,6 +6893,11 @@
     {
       "source_path": "microsoft-365/security/defender/microsoft-secure-score-whats-coming.md",
       "redirect_url": "/microsoft-365/security/defender/whats-new",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-premium/m365bp-secure-windows-10-devices.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-manage-windows-devices",
       "redirect_document_id": false
     }
   ]

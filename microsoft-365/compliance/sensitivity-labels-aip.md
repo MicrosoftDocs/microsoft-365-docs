@@ -29,7 +29,7 @@ When you use [sensitivity labels](sensitivity-labels.md) in Microsoft 365 Apps o
 
 Built-in labeling forms the cornerstone of a [Microsoft Purview information protection deployment](information-protection-solution.md) because this labeling technology extends across platforms (Windows, macOS, iOS, Android, and web), as well as across Microsoft apps and services, and beyond. Built-in labeling is also designed to work with other Microsoft Purview capabilities, such as data classification and Microsoft Purview data loss prevention (DLP).
 
-Because built-in labels don't use an Office add-in, they benefit from more stability and better performance. They also support the latest Microsoft Purview features, such as advanced classifiers.
+Because built-in labels don't use an Office Add-in, they benefit from more stability and better performance. They also support the latest Microsoft Purview features, such as advanced classifiers.
 
 By default, built-in labeling is turned off in Office for Windows apps when the AIP client is installed. You can change this default behavior by using the instructions in the following section, [How to disable the AIP add-in to use built-in labeling for Office apps](#how-to-disable-the-aip-add-in-to-use-built-in-labeling-for-office-apps).
 
@@ -102,7 +102,7 @@ Deploy this setting by using Group Policy, or by using the [Office cloud policy 
 > [!IMPORTANT]
 > If you use the Group Policy setting **Use the Sensitivity feature in Office to apply and view sensitivity labels** and set this to **1**, there are some situations where the AIP add-in might still load in Office apps. Blocking the add-in from loading in each app prevents this happening.
 
-Alternatively, you can interactively disable or remove the **Microsoft Azure Information Protection** Office add-in from Word, Excel, PowerPoint, and Outlook. This method is suitable for a single computer, and ad-hoc testing. For instructions, see [View, manage, and install add-ins in Office programs](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d).
+Alternatively, you can interactively disable or remove the **Microsoft Azure Information Protection** Office Add-in from Word, Excel, PowerPoint, and Outlook. This method is suitable for a single computer, and ad-hoc testing. For instructions, see [View, manage, and install add-ins in Office programs](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d).
 
 Whichever method you choose, the changes take effect when Office apps restart.
 
@@ -124,7 +124,7 @@ Use the following information to help you identify if you're using a feature fro
 |**Category: General** ||
 |Central reporting and auditing|![Supported.](../media/yes-icon.png) <br>[Learn more](sensitivity-labels-office-apps.md#auditing-labeling-activities) |
 |Government Cloud|![Supported.](../media/yes-icon.png)|
-|Admin can disable labeling <br> - All apps|  ![Supported.](../media/yes-icon.png) <br>[Learn more](sensitivity-labels-office-apps.md#office-built-in-labeling-client-and-other-labeling-solutions)|
+|Admin can disable labeling <br> - All apps|  ![Supported.](../media/yes-icon.png) <br>[Learn more](sensitivity-labels-office-apps.md#if-you-need-to-turn-off-built-in-labeling-in-office-apps-on-windows)|
 |Admin can disable labeling <br> - Per app|  In planning or development|
 |**Category: User Experience** ||
 |Labeling button on the ribbon|![Supported.](../media/yes-icon.png)|
@@ -166,7 +166,7 @@ The following configurations from the AIP add-in aren't yet supported by built-i
 
 ## Features not planned to be supported by built-in labeling for Office apps
 
-Although new capabilities for built-in labeling are being added all the time, the AIP Office add-in supports the following capabilities that aren't planned to be available in future releases for built-in labeling:
+Although new capabilities for built-in labeling are being added all the time, the AIP Office Add-in supports the following capabilities that aren't planned to be available in future releases for built-in labeling:
 
 - Application of labels to Microsoft Office 97-2003 formats, such as .doc files
 - Permanently disconnected computers

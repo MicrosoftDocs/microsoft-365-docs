@@ -10,7 +10,7 @@ f1.keywords:
 - 'O365E_ZTDProfileSettings'
 - 'BCS365_ZTDProfileSettings'
 ms.service: o365-administration
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection: 
 - Adm_O365
 - M365-subscription-management 

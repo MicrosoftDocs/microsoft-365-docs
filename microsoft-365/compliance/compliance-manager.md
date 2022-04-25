@@ -36,7 +36,7 @@ description: "Microsoft Purview Compliance Manager helps organizations simplify 
 Watch the video below to learn how Compliance Manager can help simplify how your organization manages compliance:
 <br>
 <br>
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4FGYZ]
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4VdoO]
 
 Compliance Manager helps simplify compliance and reduce risk by providing:
 
