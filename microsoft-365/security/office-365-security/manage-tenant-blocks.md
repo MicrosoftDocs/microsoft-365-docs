@@ -111,7 +111,7 @@ ms.prod: m365-security
    - **Spoof type**: Select one of the following values:
      - **Internal**: The spoofed sender is in a domain that belongs to your organization (an [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)).
      - **External**: The spoofed sender is in an external domain.
-   - **Action**: Select **Allow** or **Block**.
+   - **Action**: Select **Block**.
 
 4. When you're finished, click **Add**.
 > [!NOTE]
