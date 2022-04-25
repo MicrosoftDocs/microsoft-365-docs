@@ -255,7 +255,7 @@ The next step is to create the PST Import job in the Import service in Microsoft
   
 1. Go to <https://compliance.microsoft.com> and sign in using the credentials for an administrator account in your organization.
 
-2. In the left pane of the compliance portal, click **Information governance > Import**.
+2. In the left pane of the compliance portal, click **Data lifecycle management > Import**.
 
 3. On the **Import** tab, click ![Add Icon.](../media/ITPro-EAC-AddIcon.gif) **New import job**.
 
