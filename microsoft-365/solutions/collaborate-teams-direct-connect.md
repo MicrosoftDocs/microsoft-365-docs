@@ -41,8 +41,8 @@ To configure shared channels
 1. Select the policy for which you want to enable shared channels, and then select **Edit**.
 1. Select the options you want to enable:
     - To allow team owners to create shared channels, turn **Create shared channels** on.
-    - To allow team owners to share shared channels with people outside the organization, turn **Share shared channels externally** on.
-    - To allow users to be invited to shared channels in other organizations, turn **Can be invited to external shared channels** on.
+    - To allow team owners to share shared channels with people outside the organization, turn **Invite external users to shared channels** on.
+    - To allow users to be invited to shared channels in other organizations, turn **Join external shared channels** on.
 1. Select **Apply**.
 
 In order for external channel participants to participate in meetings, external access must be enabled. This is also required to be able to see external participants' presence in the channel.
