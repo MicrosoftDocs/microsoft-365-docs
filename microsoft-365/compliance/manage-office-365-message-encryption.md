@@ -87,7 +87,7 @@ As an administrator, you can manage whether to display this button to end users.
   
 1. Use a work or school account that has global administrator permissions in your organization and start a Windows PowerShell session and connect to Exchange Online. For instructions, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-2. Run the Set-IRMConfiguration cmdlet with the -SimplifiedClientAccessEnabled, -SimplifiedClientAccessEncryptionDisabled and -SimplifiedClientAccessDoNotForwardDisabled parameter:
+2. Run the Set-IRMConfiguration cmdlet with the -SimplifiedClientAccessEnabled, -SimplifiedClientAccessEncryptionDisabled, and -SimplifiedClientAccessDoNotForwardDisabled parameter:
 
    ```powershell
    Set-IRMConfiguration -SimplifiedClientAccessEncryptionDisabled <$true|$false>
