@@ -78,11 +78,11 @@ To take any of the described actions, select one or more records in your query r
 Apart from device-focused remediation steps, you can also take some actions on emails from your query results. Select the records you want to take action on, select **Take actions**, then under **Choose actions**, select your choice from the following:
 - `Move to mailbox folder` - select this to move the email messages to Junk, Inbox, or Deleted items folder
 
-:::image type="content" source="../../media/advanced-hunting-take-actions-email.png" alt-text="The Take actions option in the Microsoft 365 Defender portal" lightbox="../../media/advanced-hunting-take-actions-email.png":::
+   :::image type="content" source="../../media/advanced-hunting-take-actions-email.png" alt-text="The Take actions option in the Microsoft 365 Defender portal" lightbox="../../media/advanced-hunting-take-actions-email.png":::
 
 - `Delete email` - select this to move email messages to the Deleted items folder (**Soft delete**) or delete them permanently (**Hard delete**)
 
-:::image type="content" source="../../media/advanced-hunting-take-actions-email-del.png" alt-text="The Take actions option in the Microsoft 365 Defender portal" lightbox="../../media/advanced-hunting-take-actions-email-del.png":::
+   :::image type="content" source="../../media/advanced-hunting-take-actions-email-del.png" alt-text="The Take actions option in the Microsoft 365 Defender portal" lightbox="../../media/advanced-hunting-take-actions-email-del.png":::
 
 You can also provide a remediation name and a short description of the action taken to easily track it in the action center history. You can also use the Approval ID to filter for these actions in the action center. This ID is provided at the end of the wizard:
 
