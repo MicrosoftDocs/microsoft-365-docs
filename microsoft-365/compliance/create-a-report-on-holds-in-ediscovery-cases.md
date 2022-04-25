@@ -2,8 +2,8 @@
 title: "Use a script to create an eDiscovery holds report"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 9/11/2017
 audience: Admin

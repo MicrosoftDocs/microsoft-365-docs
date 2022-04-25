@@ -1,5 +1,5 @@
 ---
-title: "Search for users"
+title: "Search for users in Microsoft 365 Lighthouse"
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -18,7 +18,7 @@ search.appverid: MET150
 description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn how to search for users."
 ---
 
-# Search for users
+# Search for users in Microsoft 365 Lighthouse
 
 Microsoft 365 Lighthouse lets you search for a specific user across all active tenants. This allows you to find a user quickly without needing to navigate different tenants.
 
@@ -32,10 +32,10 @@ Microsoft 365 Lighthouse lets you search for a specific user across all active t
 
 ## Next steps
 
-Once the user is found, you can reset their password or block their account. For more information, see [Reset user password](m365-lighthouse-reset-user-password.md) or [Block user sign-in](m365-lighthouse-block-user-signin.md).
+Once the user is found, you can reset their password or block their account. For more information, see [Reset user password](m365-lighthouse-reset-user-password.md) or [Block user sign-in in Microsoft 365 Lighthouse](m365-lighthouse-block-user-signin.md).
 
 ## Related content
 
 [Manage Microsoft 365 user accounts](../enterprise/manage-microsoft-365-accounts.md) (article)\
 [Reset user password](m365-lighthouse-reset-user-password.md) (article)\
-[Block user sign-in](m365-lighthouse-block-user-signin.md) (article)
+[Block user sign-in in Microsoft 365 Lighthouse](m365-lighthouse-block-user-signin.md) (article)
