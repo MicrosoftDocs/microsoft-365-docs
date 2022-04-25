@@ -26,7 +26,7 @@ ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: "Microsoft 365 Group members get a group email and shared workspace for conversations, files, and calendar events, Stream, and a Planner."
 ---
 
-# Compare groups in the Microsoft 365 admin center
+# Compare groups
 
 In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Groups**</a> section of the Microsoft 365 admin center, you can create and manage these types of groups: 
 
