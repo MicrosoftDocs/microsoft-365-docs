@@ -15,7 +15,6 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 04/22/2022
 ms.collection: 
 - M365-security-compliance
 - m365initiative-defender-endpoint
@@ -43,7 +42,7 @@ Keeping Microsoft Defender Antivirus up to date is critical to assure your devic
 
 ## Security intelligence updates
 
-Microsoft Defender Antivirus uses [cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md) (also called the Microsoft Advanced Protection Service or MAPS) and periodically downloads dynamic security intelligence updates to provide additional protection. These dynamic updates do not take the place of regular security intelligence updates via security intelligence update KB2267602.
+Microsoft Defender Antivirus uses [cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md) (also called the Microsoft Advanced Protection Service or MAPS) and periodically downloads dynamic security intelligence updates to provide additional protection. These dynamic updates don't take the place of regular security intelligence updates via security intelligence update KB2267602.
 
 > [!NOTE]
 > Updates are released under the following KBs:
@@ -181,7 +180,7 @@ Security intelligence update version: 1.357.8.0 <br/>
 - Tamper protection improvements
 - Replaced `ScanScheduleTime` with new `ScanScheduleOffest` cmdlet in [Set-MpPreference](/powershell/module/defender/set-mppreference). This policy configures the number of minutes after midnight to perform a scheduled scan.
 - Added the `-ServiceHealthReportInterval` setting to [Set-MpPreference](/powershell/module/defender/set-mppreference). This policy configures the time interval (in minutes) to perform a scheduled scan.
-- Added the `AllowSwitchToAsyncInspection` setting to [Set-MpPreference](/powershell/module/defender/set-mppreference). This policy enables a performance optimization, that allows synchronously inspected network flows, to switch to async inspection once they have been checked and validated.
+- Added the `AllowSwitchToAsyncInspection` setting to [Set-MpPreference](/powershell/module/defender/set-mppreference). This policy enables a performance optimization, that allows synchronously inspected network flows, to switch to async inspection once they've been checked and validated.
 - Performance Analyzer v2 updates: Remote PowerShell and PowerShell 7.x support added. See [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md).
 - Fixed potential duplicate packet bug in Microsoft Defender Antivirus network inspection system driver.
 
@@ -213,7 +212,7 @@ Security intelligence update version: 1.355.2.0
 
 - Improved CPU usage efficiency of certain intensive scenarios on Exchange servers
 - Added new device control status fields under Get-MpComputerStatus in Defender PowerShell module. For more information, see [Microsoft Defender for Endpoint Device Control Removable Storage Access Control](device-control-removable-storage-access-control.md).
-- Fixed bug in which `SharedSignatureRoot` value could not be removed when set with PowerShell
+- Fixed bug in which `SharedSignatureRoot` value couldn't be removed when set with PowerShell
 - Fixed bug in which [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) failed to be enabled, even though Microsoft Defender for Endpoint indicated that tamper protection was turned on
 - Added supportability and bug fixes to performance analyzer for Microsoft Defender Antivirus tool. For more information, see [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md).   
    - PowerShell ISE support added for `New-MpPerformanceRecording`
@@ -685,7 +684,7 @@ When this update is installed, the device needs the jump package 4.18.2001.10 to
 
 Platform and engine updates are provided on a monthly cadence. To be fully supported, keep current with the latest platform updates. Our support structure is dynamic, evolving into two phases depending on the availability of the latest platform version:
 
-- **Security and Critical Updates servicing phase** - When running the latest platform version, you will be eligible to receive both Security and Critical updates to the anti-malware platform.
+- **Security and Critical Updates servicing phase** - When running the latest platform version, you'll be eligible to receive both Security and Critical updates to the anti-malware platform.
 
 - **Technical Support (Only) phase** - After a new platform version is released, support for older versions (N-2) will reduce to technical support only. Platform versions older than N-2 will no longer be supported.*
 
