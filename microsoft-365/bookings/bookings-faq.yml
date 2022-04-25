@@ -38,7 +38,7 @@ sections:
       - question: |
           Will my customers see my personal or business calendar?
         answer: |
-          Your customers will only see the Bookings calendar that you publish online for the services, times, and staff that you choose to register.
+          Your customers will only see the Bookings calendar that you publish online for the services, times, and staff that you choose.
 
       - question: |
           How do I change a bookable attribute under Manage staff?
