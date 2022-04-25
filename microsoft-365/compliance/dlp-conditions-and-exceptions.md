@@ -19,6 +19,8 @@ description: "learn about dlp policy conditions and exceptions"
 
 # DLP policy conditions, exceptions, and actions
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Conditions and exceptions in DLP policies identify sensitive items that the policy is applied to. Actions define what happens as a consequence of a condition of exception being met.
 
 - Conditions define what to include
@@ -89,11 +91,12 @@ To configure the sender address location at a DLP rule level, the parameter is *
 
 |condition or exception in DLP|condition/exception parameters in Microsoft 365 PowerShell|property type|description|
 |---|---|---|---|
-|Subject contains words or phrases|condition: *SubjectContainsWords* <br/><br/> exception: *ExceptIf SubjectContainsWords*|Words|Messages that have the specified words in the Subject field.|
-|Subject matches patterns|condition: *SubjectMatchesPatterns* <br/><br/> exception: *ExceptIf SubjectMatchesPatterns*|Patterns|Messages where the Subject field contain text patterns that match the specified regular expressions.|
-|Content contains|condition: *ContentContainsSensitiveInformation* <br/><br/> exception *ExceptIfContentContainsSensitiveInformation*|SensitiveInformationTypes|Messages or documents that contain sensitive information as defined by data loss prevention (DLP) policies.|
-|Subject or Body matches pattern|condition: *SubjectOrBodyMatchesPatterns* <br/><br/> exception: *ExceptIfSubjectOrBodyMatchesPatterns*|Patterns|Messages where the subject field or message body contains text patterns that match the specified regular expressions.|
-|Subject or Body contains words|condition: *SubjectOrBodyContainsWords* <br/><br/> exception: *ExceptIfSubjectOrBodyContainsWords*|Words|Messages that have the specified words in the subject field or message body|
+|Subject contains words or phrases|condition: *SubjectContainsWords* <br/> exception: *ExceptIf SubjectContainsWords*|Words|Messages that have the specified words in the Subject field.|
+|Subject matches patterns|condition: *SubjectMatchesPatterns* <br/> exception: *ExceptIf SubjectMatchesPatterns*|Patterns|Messages where the Subject field contain text patterns that match the specified regular expressions.|
+|Content contains|condition: *ContentContainsSensitiveInformation* <br/> exception *ExceptIfContentContainsSensitiveInformation*|SensitiveInformationTypes|Messages or documents that contain sensitive information as defined by Microsoft Purview Data Loss Prevention (DLP) policies.|
+|Subject or Body matches pattern|condition: *SubjectOrBodyMatchesPatterns* <br/> exception: *ExceptIfSubjectOrBodyMatchesPatterns*|Patterns|Messages where the subject field or message body contains text patterns that match the specified regular expressions.|
+|Subject or Body contains words|condition: *SubjectOrBodyContainsWords* <br/> exception: *ExceptIfSubjectOrBodyContainsWords*|Words|Messages that have the specified words in the subject field or message body|
+|
 
 ### Attachments
 
@@ -142,7 +145,7 @@ This table describes the actions that are available in DLP.
 |Add the sender's manager as recipient|AddRecipients|First property: *AddedManagerAction*<br/><br/>Second property: *Field*|Adds the sender's manager to the message as the specified recipient type (To, Cc, Bcc), or redirects the message to the sender's manager without notifying the sender or the recipient. This action only works if the sender's Manager attribute is defined in Active Directory. This parameter uses the syntax: @{AddManagerAsRecipientType = "\<To \| Cc \| Bcc\>"}|
 Prepend subject|PrependSubject|String|Adds the specified text to the beginning of the Subject field of the message. Consider using a space or a colon (:) as the last character of the specified text to differentiate it from the original subject text.<br/><br/>To prevent the same string from being added to messages that already contain the text in the subject (for example, replies), add the "The subject contains words" (ExceptIfSubjectContainsWords) exception to the rule.|
 |Apply HTML disclaimer|ApplyHtmlDisclaimer|First property: *Text*<br/><br/>Second property: *Location*<br/><br/>Third property: *Fallback action*|Applies the specified HTML disclaimer to the required location of the message.<br/><br/>This parameter uses the syntax: @{ Text = " " ; Location = \<Append \| Prepend\>; FallbackAction = \<Wrap \| Ignore \| Reject\> }|
-|Remove Office 365 Message Encryption and rights protection|RemoveRMSTemplate|n/a|Removes Office 365 encryption applied on an email|
+|Remove message encryption and rights protection|RemoveRMSTemplate|n/a|Removes message encryption applied on an email|
 |Deliver the message to the hosted quarantine |*Quarantine*|n/a| This action is currently in **public preview**. During this phase, emails quarantined by DLP policies will show policy type as ExchangeTransportRule.<br/><br/> Delivers the message to the quarantine in EOP. For more information, see [Quarantined email messages in EOP](/microsoft-365/security/office-365-security/quarantine-email-messages).|
 
 <!--|Modify Subject|ModifySubject|PswsHashTable | Remove text from the subject line that matches a specific pattern and replace it with different text. See the example below. You can: <br/><br/>- **Replace** all matches in the subject with the replacement text <br/><br/>- **Append** to remove all matches in the subject and inserts the replacement text at the end of the subject. <br/><br/>- **Prepend** to remove all matches and inserts the replacement text at the beginning of the subject. See ModifySubject parameter in, /powershell/module/exchange/new-dlpcompliancerule|-->
