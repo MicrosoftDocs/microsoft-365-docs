@@ -114,6 +114,8 @@ ms.prod: m365-security
    - **Action**: Select **Block**.
 
 4. When you're finished, click **Add**.
+> [!NOTE]
+> The emails from these senders will be blocked as *phish*. 
 
 ## Use PowerShell
 
