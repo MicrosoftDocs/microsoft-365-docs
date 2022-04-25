@@ -31,7 +31,7 @@ Automatic redirection is enabled by default for all users accessing compliance-r
 - [Data classification](data-classification-overview.md)
 - [Microsoft Purview Data Loss Prevention (DLP)](dlp-learn-about-dlp.md)
 - [Data subject requests](/compliance/regulatory/gdpr-manage-gdpr-data-subject-requests-with-the-dsr-case-tool)
-- [Information governance](manage-data-governance.md)
+- [Data lifecycle management](manage-data-governance.md) (formerly **Information governance**)
 - [Records management](records-management.md)
 
 Users are automatically routed to the same compliance solutions in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">compliance portal</a>.
