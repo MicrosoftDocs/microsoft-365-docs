@@ -41,7 +41,7 @@ Choose one of the following options to onboard Windows client devices to Defende
 
 - [Local script](#local-script-for-windows-clients) (for onboarding devices manually in the Microsoft 365 Defender portal)
 - [Group Policy](#group-policy-for-windows-clients) (if you're already using Group Policy in your organization)
-- [Microsoft Intune](#endpoint-manager-for-windows-clients) (included in [Microsoft 365 Business Premium](../../business-premium/index.md))
+- [Microsoft Intune](#microsoft-intune-for-windows-clients) (included in [Microsoft 365 Business Premium](../../business-premium/index.md))
 
 
 ### Local script for Windows clients
