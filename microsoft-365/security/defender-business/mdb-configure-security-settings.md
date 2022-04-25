@@ -177,3 +177,5 @@ Proceed to one or more of the following tasks:
 - [Manage devices in Microsoft Defender for Business](mdb-manage-devices.md)
 - [View and manage incidents in Microsoft Defender for Business](mdb-view-manage-incidents.md)
 - [View or edit policies in Microsoft Defender for Business](mdb-view-edit-policies.md)
+
+- [View or edit policies in Microsoft Defender for Business](mdb-view-edit-policies.md)

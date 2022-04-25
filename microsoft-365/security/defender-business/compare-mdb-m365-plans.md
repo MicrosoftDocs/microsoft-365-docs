@@ -18,7 +18,7 @@ ms.collection:
 - m365-security-compliance
 ---
 
-# Compare Microsoft Defender for Business to Microsoft 365 Business Premium
+# Compare security features in Microsoft 365 plans for small and medium-sized businesses
 
 Microsoft offers a wide variety of cloud solutions and services, including several different plans for small and medium-sized businesses. For example, [Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md) includes security and device management capabilities, along with productivity features, like Office apps. This article is designed to help clarify what security features, such as device protection, are included in Microsoft 365 Business Premium, Microsoft Defender for Business, and Microsoft Defender for Endpoint.
 

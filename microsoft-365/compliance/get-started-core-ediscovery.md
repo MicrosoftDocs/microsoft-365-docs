@@ -2,8 +2,8 @@
 title: "Get started with eDiscovery (Standard) cases in Microsoft Purview"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
