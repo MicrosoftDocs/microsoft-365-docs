@@ -103,7 +103,7 @@ Check below links to learn more details about the SDK & API.
 
 - [Test Base Python SDK Documentation](/python/api/overview/azure/mgmt-testbase-readme)
 - [Test Base Python SDK Sample](https://aka.ms/testbase-sample-py)
-- [Azure General Usage Pattern of Python SDK](/azure/developer/python/azure-sdk-overview#provision-and-manage-azure-resources-with-management-libraries)
+- [Azure General Usage Pattern of Python SDK](/azure/developer/python/sdk/azure-sdk-library-usage-patterns)
 
 **REST API**:
 
