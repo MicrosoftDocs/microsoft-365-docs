@@ -49,8 +49,8 @@ To ensure data quality, we perform daily data validation checks for the past thr
 |User name  <br/> |The email address of the user. You can display the actual email address or make this field anonymous.   <br/> |
 |Tenant name  <br/> |The name of an internal or external tenant where a user belongs.   <br/> <br/> If a user belongs to an external tenant, corresponding data metrics (for example, post messages, reply messages,  etc.) are calculated based on their interactions in shared channels of the admin’s tenant. Interactions done by the user in their own tenant (outside of shared channels of the given tenant) are not considered for the admin usage report of given tenant.  |
 |Shared channel tenant names   <br/> |The names of internal or external tenants of shared channels where the user participated.   <br/> |
-|Channel messages   <br/> |The number of unique messages that the user posted in a team chat during the specified time period.   <br/> |
-|Posts   <br/> |The number of post messages in all channels during the specified time period <br/> |
+|Channel messages   <br/> |The number of unique messages that the user posted in a team chat during the specified time period. This includes original posts and replies.   <br/> |
+|Posts   <br/> |The number of post messages in all channels during the specified time period. A post is the original message in a teams chat.<br/> |
 |Replies   <br/> |The number of replied messages in all channels during the specified time period. <br/> |
 |Urgent messages    <br/> |The number of urgent messages during the specified time period. <br/> |
 |Chat messages   <br/> |The number of unique messages that the user posted in a private chat during the specified time period.  <br/> |
