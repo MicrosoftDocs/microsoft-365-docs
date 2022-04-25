@@ -19,7 +19,7 @@ ms.collection:
 - m365-security-compliance
 ---
 
-# Compare Microsoft Defender for Business to Microsoft 365 Business Premium
+# Compare security features in Microsoft 365 plans for small and medium-sized businesses
 
 > [!IMPORTANT]
 > Microsoft Defender for Business is rolling out to [Microsoft 365 Business Premium](../../business-premium/index.md) customers, beginning March 1, 2022. Defender for Business as a standalone subscription is in preview, and will roll out gradually to customers and IT Partners who [sign-up here](https://aka.ms/mdb-preview) to request it. Preview includes an [initial set of scenarios](mdb-tutorials.md#try-these-preview-scenarios), and we will be adding capabilities regularly.
