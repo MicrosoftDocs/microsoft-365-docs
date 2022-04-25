@@ -4,11 +4,11 @@ f1.keywords:
 - NOCSH
 ms.author: twerner
 author: twerner
-manager: scotv
+manager: dansimp
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection: 
 - Adm_O365
 - M365-subscription-management 
@@ -29,7 +29,9 @@ description: "Set up online meetings with Microsoft Teams."
 
 # Set up meetings with Microsoft Teams
 
-Meetings in Microsoft Teams include audio, video, and sharing. And because they're online, you'll always have a meeting space (without needing a room or projector!), even if your staff is geographically distributed or working remotely. Microsoft Teams meetings are a great way to come together with your staff both inside and outside of your organization. You don’t need to be a member of your organization or even have an account to join a meeting. You can schedule and run online meetings using Microsoft Teams. During a meeting, you can share your screen, share files, assign tasks, and more. Political campaigns can include staff, volunteers, and guests outside your organization in the meeting. Small firms or practices can meet with their staff, or meet with clients or partners over Microsoft Teams.
+Make sure members of the organization use Microsoft Teams for all meetings. Teams meetings files include audio, video, and sharing, and because they're online, there is always a meeting space and there's no need for a room with a projector! Microsoft Teams meetings are a great way to come together with your staff both inside and outside of your organization. 
+
+Using Teams, you don’t need to be a member of the organization or even have an account to join a meeting. You can schedule and run online meetings where you can share your screen, share files, assign tasks, and more. Political campaigns can include staff, volunteers, or guests that are outside your organization. You can easily meet with clients, staff or partners over Microsoft Teams, and in a secure and worry-free environment.
 
 [![An illustration of two users in a meeting.](../media/HostOnlineMeeting-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2078712)
 
@@ -53,3 +55,9 @@ Follow these best practices for your online meetings:
 Learn more about meeting in Microsoft Teams:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWeokQ]
+
+## Next objective
+
+After this mission objective is accomplished, learn to securely [share files and videos](share-files-and-videos.md)
+
+
