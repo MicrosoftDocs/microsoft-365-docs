@@ -17,7 +17,7 @@ search.appverid:
 - MET150
 - MOE150
 - GEA150
-description: "Learn how to get a Microsoft 365 Viva Learning activity report using the Microsoft 365 Reports dashboard in the Microsoft 365 admin center."
+description: "Get a Microsoft 365 Viva Learning activity report to understand Viva Learning licensed user activity such as user interactions and features being used."
 ---
 
 # Microsoft 365 Reports in the admin center - Viva Learning activity

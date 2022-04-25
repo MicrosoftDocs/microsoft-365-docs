@@ -19,7 +19,7 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: "Get the Yammer groups activity report to know about the number of Yammer groups being created and used in your organization, and their activity."
+description: "Get the Yammer groups activity report to learn more about the number of Yammer groups being created and used in your organization and their activity."
 ---
 
 # Microsoft 365 Reports in the admin center - Yammer groups activity report

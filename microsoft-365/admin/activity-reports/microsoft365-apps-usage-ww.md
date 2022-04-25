@@ -17,7 +17,7 @@ search.appverid:
 - MET150
 - MOE150
 - GEA150
-description: "Learn how to get a Microsoft 365 Apps for usage report using the Microsoft 365 Reports dashboard in the Microsoft 365 admin center."
+description: "Learn how to get a Microsoft 365 Apps usage report to see licensed user activity across the apps and how the apps are utilized across platforms."
 ---
 
 # Microsoft 365 Reports in the admin center - Microsoft 365 Apps usage

@@ -21,7 +21,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn how the Guest users list is populated in the Microsoft 365 admin center."
+description: "Learn how to populate the Guest users list in the Microsoft 365 admin center so guests can attend meetings, view documents and chat in Teams they're invited to."
 ---
 
 # Guest users in Microsoft 365 admin center
@@ -31,7 +31,7 @@ Once a user shows up in the **Guest users** list, you can remove their access th
 
 To view guest users, in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2074830" target="_blank">Microsoft 365 admin center</a>, in the left nav, expand **Users**, and then choose **Guest users**.
 
-## Before you begin 
+## Before you begin
 
 You must be a global administrator to perform this task.
 

@@ -19,7 +19,7 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: "Get the OneDrive usage report for your organization and know the activity of every OneDrive user, the number of files shared, and the storage utilization."
+description: "Get the OneDrive usage report for your organization and find out the activity of every OneDrive user, the number of files shared, and the storage utilization."
 ---
 
 # Microsoft 365 Reports in the admin center - OneDrive for Business activity

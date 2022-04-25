@@ -21,7 +21,7 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d
-description: "Learn how to get an Active Users report using the Microsoft 365 Reports dashboard in the Microsoft 365 admin center and find out how many product licenses are being used."
+description: "Learn how to get an Active Users report using the Microsoft 365 Reports dashboard in the admin center and find out how many product licenses are being used."
 ---
 
 # Assess the Microsoft 365 Active Users report

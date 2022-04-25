@@ -21,7 +21,7 @@ ms.custom:
 - business_assist
 search.appverid:
 - MET150
-description: "Each team member needs a user account before they can sign in and access Microsoft 365 for business. Learn how to add users and assign licenses."
+description: "Learn how to give each team member a user account so they can have Microsoft 365 licenses, sign-in credentials, and Microsoft 365 mailboxes."
 ms.date: 07/01/2020
 ---
 

@@ -18,7 +18,7 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44
-description: "Learn how to get an email activity report using the Microsoft 365 Reports dashboard in the Microsoft 365 admin center."
+description: "Learn how to get an email activity report and understand user email trends by using the Microsoft 365 Reports dashboard in the Microsoft 365 admin center."
 ---
 
 # Microsoft 365 Reports in the admin center - Email activity
