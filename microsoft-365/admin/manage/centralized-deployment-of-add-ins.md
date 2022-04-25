@@ -47,7 +47,7 @@ Centralized Deployment doesn't support the following:
 
 - Add-ins that target Office MSI version (except Outlook 2016)
 - An on-premises directory service
-- Add-in Deployment to an Exchange On-Prem Mailbox
+- Add-in deployment to an Exchange On-Prem Mailbox
 - Add-in deployment to SharePoint
 - Teams apps
 - Deployment of Component Object Model (COM) or Visual Studio Tools for Office (VSTO) add-ins.

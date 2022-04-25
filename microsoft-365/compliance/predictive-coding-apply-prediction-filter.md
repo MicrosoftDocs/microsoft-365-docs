@@ -2,8 +2,8 @@
 title: "Apply the prediction score filter to a review set"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 ms.reviewer: jefwan
 manager: laurawi
 audience: Admin

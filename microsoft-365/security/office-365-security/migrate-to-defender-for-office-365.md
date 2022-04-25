@@ -53,7 +53,7 @@ The very high-level migration steps are illustrated in the following diagram. Th
 In the IT industry, surprises are generally bad. Simply flipping your MX records to point to Microsoft 365 without prior and thoughtful testing will result in many surprises. For example:
 
 - You or your predecessors have likely spent a lot of time and effort customizing your existing protection service for optimal mail delivery (in other words, blocking what needs to be blocked, and allowing what needs to be allowed). It's almost a guaranteed certainty that not every customization in your current protection service is required in Defender for Office 365. It's also very possible that Defender for Office 365 will introduce new issues (allows or blocks) that didn't happen or weren't required in your current protection service.
-- Your help desk and security personnel need to know what to do in Defender for Office 365. For example, if a user complains about a missing message, does your help desk know where or how to look for it? They're likely verify familiar with the tools in your existing protection service, but what about the tools in Defender for Office 365?
+- Your help desk and security personnel need to know what to do in Defender for Office 365. For example, if a user complains about a missing message, does your help desk know where or how to look for it? They're likely familiar with the tools in your existing protection service, but what about the tools in Defender for Office 365?
 
 In contrast, if you follow the steps in this migration guide, you'll get the following tangible benefits for your migration:
 
