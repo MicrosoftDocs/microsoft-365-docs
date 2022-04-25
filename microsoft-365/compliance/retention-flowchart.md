@@ -1,5 +1,5 @@
 ---
-title: "Flowchart to determine when an item will be retained or permanently deleted"
+title: "Flowchart to determine when an item is retained or deleted"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -20,6 +20,8 @@ description: "Use a flowchart to determine the outcome when an item has multiple
 ---
 
 # Flowchart to determine when an item will be retained or permanently deleted
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 

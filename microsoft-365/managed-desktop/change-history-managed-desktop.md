@@ -23,6 +23,7 @@ This article lists new and updated articles in the [Microsoft Managed Desktop do
 
 New or changed article | Description
 --- | ---
+| [Shared devices](service-description/shared-devices.md) | Added Register new devices using Windows Autopilot self-deploying mode profile |
 | [Teams](get-started/teams.md) | Updated Microsoft Intune changes section |
 
 ## March 2022

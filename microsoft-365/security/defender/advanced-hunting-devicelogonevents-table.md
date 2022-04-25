@@ -85,6 +85,9 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `AppGuardContainerId` | `string` | Identifier for the virtualized container used by Application Guard to isolate browser activity |
 | `AdditionalFields` | `string` | Additional information about the event in JSON array format |
 
+>[!NOTE]
+>The collection of DeviceLogonEvents is not supported on Windows 7 or Windows Server 2008R2 devices onboarded to Defender for Endpoint. We recommend upgrading to a more recent operating system for optimal visibility into user logon activity.
+
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)
 - [Learn the query language](advanced-hunting-query-language.md)
