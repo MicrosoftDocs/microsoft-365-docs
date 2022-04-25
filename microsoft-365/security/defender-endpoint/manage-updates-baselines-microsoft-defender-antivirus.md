@@ -22,6 +22,9 @@ ms.collection:
 
 # Manage Microsoft Defender Antivirus updates and apply baselines
 
+> [!IMPORTANT]
+> Customers who applied the March 2022 Microsoft Defender engine update (**1.1.19100.5**) might have encountered high resource utilization (CPU and/or memory). Microsoft has released an update (**1.1.19200.5**) that resolves the bugs introduced in the earlier version. Customers are recommended to update to this new engine build of Antivirus Engine (**1.1.19200.5**). To ensure any performance issues are fully fixed, it is recommended to reboot machines after applying update. See [Monthly platform and engine versions](#monthly-platform-and-engine-versions) (in this article).
+
 **Applies to:**
 - [Microsoft Defender for Endpoint Plans 1 and 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Microsoft Defender Antivirus
@@ -31,8 +34,8 @@ ms.collection:
 
 Keeping Microsoft Defender Antivirus up to date is critical to assure your devices have the latest technology and features needed to protect against new malware and attack techniques. Make sure to update your antivirus protection, even if Microsoft Defender Antivirus is running in [passive mode](microsoft-defender-antivirus-compatibility.md). There are two types of updates related to keeping Microsoft Defender Antivirus up to date:
 
-- Security intelligence updates
-- Product updates
+- [Security intelligence updates](#security-intelligence-updates)
+- [Product updates](#product-updates)
 
 > [!TIP]
 > To see the most current engine, platform, and signature date, visit the [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/en-us/wdsi/defenderupdates)
@@ -82,6 +85,29 @@ All our updates contain
 - Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
+<summary>March-2022 *UPDATE* (Platform: 4.18.2203.5 | Engine:  1.1.19200.5)</summary>
+
+*Customers who applied the March 2022 Microsoft Defender engine update (**1.1.19100.5**) might have encountered high resource utilization (CPU and/or memory). Microsoft has released an update (**1.1.19200.5**) that resolves the bugs introduced in the earlier version. Customers are recommended to update to this new engine build of Antivirus Engine (**1.1.19200.5**). To ensure any performance issues are fully fixed, it is recommended to reboot machines after applying update.*
+
+&ensp;Security intelligence update version: **1.363.817.0**<br/>
+&ensp;Released: **April 22, 2022**<br/>
+&ensp;Platform: **4.18.2203.5**<br/>
+&ensp;Engine: **1.1.19200.5**<br/>
+&ensp;Support phase: **Security and Critical Updates**<br/>
+
+Engine version: 1.1.19200.5 <br/>
+Security intelligence update version: 1.363.817.0<br/>
+
+### What's new
+
+- Resolves issues with high resource utilization (CPU and/or memory) related to the earlier March 2022 Microsoft Defender engine update (1.1.19100.5)
+
+### Known Issues
+
+No known issues
+
+<br/><br/>
+</details><details>
 <summary>March-2022 (Platform: 4.18.2203.5 | Engine:  1.1.19100.5)</summary>
 
 &ensp;Security intelligence update version: **1.361.1449.0**<br/>

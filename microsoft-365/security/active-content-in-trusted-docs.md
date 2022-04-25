@@ -22,7 +22,7 @@ description: "Admins can learn how to create policies to block active content in
 > [!NOTE]
 > The features that are described in this article are in Preview, aren't available to everyone, and are subject to change.
 
-Office documents can be automatically refreshed, updated, or executed when they contain _active content_. Examples of active content are macros, ActiveX controls, and Office add-ins. Active content can provide powerful and useful functionality to users, but attackers can also use active content to deliver malware.
+Office documents can be automatically refreshed, updated, or executed when they contain _active content_. Examples of active content are macros, ActiveX controls, and Office Add-ins. Active content can provide powerful and useful functionality to users, but attackers can also use active content to deliver malware.
 
 Admins can create organization policies (group policies or cloud policies) that limit the use of active content to specific sets of users, or to disable active content entirely. Users can configure their own security and privacy settings in the Office Trust Center in their Office apps at **File** \> **Options** \> **Trust Center**.
 
