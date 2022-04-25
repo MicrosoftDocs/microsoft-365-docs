@@ -420,6 +420,8 @@ With these concatenated settings, users will be able to delete the item from the
 
 - If the replacement label marks the item as a record or regulatory record but can't be applied because the file is currently checked out, the relabel process is retried when the file is checked back in again, or checkout is discarded.
 
+- For email messages when the replacement label is applied, the label is visible to users in Outlook only when that label is included in a published label policy for the same location. However, users still [see an applicable expiry date](retention-policies-exchange.md#user-notification-of-expiry-date) at the top of the email message.
+
 ##### Configuration paths for relabeling
 
 The option to relabel at the end of the retention period has two configuration paths when you create a retention label:
