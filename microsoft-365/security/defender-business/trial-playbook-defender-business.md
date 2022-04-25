@@ -66,7 +66,7 @@ Defender for Business was designed to save small and medium-sized businesses tim
 
 2. **[Set up email notifications](mdb-email-notifications.md#view-and-edit-email-notifications)** for your security team.
 
-3. **[Onboard and configure Windows devices](mdb-onboard-devices.md#windows-clients)**. Onboarding devices right away helps protect those devices from day one.
+3. **[Onboard and configure Windows devices](mdb-onboard-devices.md)**. Onboarding devices right away helps protect those devices from day one.
 
    > [!NOTE]
    > What is automatic onboarding? [Automatic onboarding](mdb-use-wizard.md#what-is-automatic-onboarding) is a simplified way to onboard Windows devices to Defender for Business. Automatic onboarding is only available for Windows devices that are already enrolled in Microsoft Intune. 
