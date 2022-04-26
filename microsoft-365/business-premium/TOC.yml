@@ -130,7 +130,6 @@
           href: m365bp-autopilot-profile-settings.md
         - name: Create and edit AutoPilot profiles
           href: m365bp-create-and-edit-autopilot-devices.md
-      href:
     - name: Microsoft Defender for Business
       href: ../security/defender-business/index.yml
     - name: Microsoft Defender for Office 365
