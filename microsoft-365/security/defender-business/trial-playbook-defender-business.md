@@ -175,7 +175,7 @@ In Defender for Business, security settings are configured through policies that
 | Default policies  | - [Learn about the default policies included](mdb-view-edit-create-policies.md#default-policies-in-defender-for-business)<br/>- [View your existing policies](mdb-view-edit-create-policies.md#view-your-existing-policies). <br/>- [Understand policy order](mdb-policy-order.md) |
 | Next-generation protection policies     | [Understand next-generation configuration settings](mdb-next-gen-configuration-settings.md) |
 | Firewall protection | - [Review your default firewall settings](mdb-firewall.md#default-firewall-settings-in-defender-for-business) <br/>- [Understand firewall settings you can configure](mdb-firewall.md#firewall-settings-you-can-configure-in-defender-for-business) |
-| Web content filtering | Web content filtering enables your security team to track and regulate access to websites based on their content categories. It is not turned on by default, so you will need to set it up if you want this capability for your organization. <br/>[Set up web content filtering](mdb-configure-security-settings.md#set-up-web-content-filtering) |
+| Web content filtering | Web content filtering enables your security team to track and regulate access to websites based on their content categories. It is not turned on by default, so you will need to set it up if you want this capability for your organization. See [Set up web content filtering](mdb-configure-security-settings.md#set-up-web-content-filtering). |
 
 For more information, see [Review security policies](mdb-view-edit-create-policies.md).
   
