@@ -58,6 +58,8 @@ To estimate the bandwidth, use the following steps:
 - [Microsoft Remote Connectivity Analyzer](https://go.microsoft.com/fwlink/p/?LinkId=517243): Tests connectivity in your Exchange Online environment.
     
 - Use the [Microsoft Support and Recovery Assistant for Office 365](https://diagnostics.office.com/#/Download?env=SOC) to fix Outlook and Office 365 problems. 
+
+- [Microsoft 365 network connectivity test tool](/microsoft-365/enterprise/office-365-network-mac-perf-onboarding-tool): Tests Microsoft 365 network connectivity.
     
 ## Best practices for network planning and improving migration performance for Office 365
 <a name="BestPractices"> </a>
