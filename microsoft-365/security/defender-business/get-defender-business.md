@@ -21,7 +21,7 @@ ms.collection:
 
 If you don't already have Microsoft Defender for Business, you can choose from several options:
 
-- [Try or buy the standalone version of Defender for Business](#try-or-buy)
+- [Try or buy the standalone version of Defender for Business](#try-or-buy-microsoft-defender-for-business)
 - [Get Microsoft 365 Business Premium](#get-microsoft-365-business-premium), which now includes Defender for Business
 - [Work with a Microsoft solution provider](#work-with-a-microsoft-solution-provider) who can help you get everything set up and configured
 
