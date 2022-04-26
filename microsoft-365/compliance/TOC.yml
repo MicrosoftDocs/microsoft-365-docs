@@ -1,4 +1,4 @@
-- name: Microsoft Purview
+- name: Microsoft Purview compliance
   href: index.yml
 - name: What's new in Microsoft Purview
   href: whats-new.md
@@ -42,17 +42,17 @@
           href: device-onboarding-script.md
         - name: Onboard non-persistent virtual desktop infrastructure (VDI) devices
           href: device-onboarding-vdi.md
-    - name: Onboard macOS devices (preview)
+    - name: Onboard macOS devices
       items:
-        - name: Onboard macOS devices into Microsoft 365 overview (preview) 
+        - name: Onboard macOS devices into Microsoft 365 overview 
           href: device-onboarding-macos-overview.md
-        - name: Onboard and offboard macOS devices into Compliance solutions using Microsoft Intune (preview)
+        - name: Onboard and offboard macOS devices into Compliance solutions using Microsoft Intune
           href: device-onboarding-offboarding-macos-intune.md
-        - name: Onboard and offboard macOS devices into Compliance solutions using Intune for Microsoft Defender for Endpoint customers (preview)
+        - name: Onboard and offboard macOS devices into Compliance solutions using Intune for Microsoft Defender for Endpoint customers
           href: device-onboarding-offboarding-macos-intune-mde.md
-        - name: Onboard and offboard macOS devices into Compliance solutions using JAMF Pro (preview)
+        - name: Onboard and offboard macOS devices into Compliance solutions using JAMF Pro
           href: device-onboarding-offboarding-macos-jamfpro.md
-        - name: Onboard and offboard macOS devices into Compliance solutions using JAMF Pro for Microsoft Defender for Endpoint customers (preview)
+        - name: Onboard and offboard macOS devices into Compliance solutions using JAMF Pro for Microsoft Defender for Endpoint customers
           href: device-onboarding-offboarding-macos-jamfpro-mde.md
 - name: Manage connectors for third-party data
   items: 
@@ -318,7 +318,7 @@
             href: sit-learn-about-exact-data-match-based-sits.md
           - name: Document Fingerprinting
             href: document-fingerprinting.md
-          - name: Learn about named entities (preview)
+          - name: Learn about named entities
             href: named-entities-learn.md
         - name: Get started with sensitive information type
           items:
@@ -362,7 +362,7 @@
             href: sit-use-exact-data-manage-schema.md
           - name: Refresh your sensitive information source table file
             href: sit-use-exact-data-refresh-data.md
-          - name: Use named entities in your data loss prevention policies (preview)
+          - name: Use named entities in your data loss prevention policies
             href: named-entities-use.md
           - name: Common usage scenarios for sensitive information types
             href: sit-common-scenarios.md
@@ -503,7 +503,7 @@
             href: dlp-teams-default-policy.md
           - name: Learn about data loss prevention on-premises scanner
             href: dlp-on-premises-scanner-learn.md
-          - name: Learn about the Microsoft Compliance Extension
+          - name: Learn about the Microsoft Purview Extension
             href: dlp-chrome-learn-about.md
           - name: Learn about the data loss prevention Alerts dashboard
             href: dlp-alerts-dashboard-learn.md
@@ -531,7 +531,7 @@
             href: endpoint-dlp-getting-started.md
           - name: Configure device proxy and internet connection settings for Information Protection
             href: device-onboarding-configure-proxy.md
-          - name: Get started with the Microsoft Compliance Extension
+          - name: Get started with the Microsoft Purview Extension
             href: dlp-chrome-get-started.md
           - name: Get started with the data loss prevention alert dashboard
             href: dlp-alerts-dashboard-get-started.md
@@ -985,11 +985,11 @@
       href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
 - name: Manage auditing and alert policies
   items: 
-    - name: Microsoft 365 auditing solutions
+    - name: Microsoft Purview auditing solutions
       href: auditing-solutions-overview.md
-    - name: Basic Audit
+    - name: Audit (Standard)
       items:
-        - name: Set up Basic Audit
+        - name: Set up Audit (Standard)
           href: set-up-basic-audit.md
         - name: Search the audit log
           href: search-the-audit-log-in-security-and-compliance.md
@@ -1013,15 +1013,15 @@
               href: /office/office-365-management-api/office-365-management-activity-api-schema
             - name: Office 365 Management Activity API FAQs and troubleshooting
               href: /office/office-365-management-api/troubleshooting-the-office-365-management-activity-api
-    - name: Advanced Audit
+    - name: Audit (Premium)
       items:
-        - name: Overview of Advanced Audit
+        - name: Overview of Audit (Premium)
           href: advanced-audit.md
-        - name: Set up Advanced Audit
+        - name: Set up Audit (Premium)
           href: set-up-advanced-audit.md
         - name: Manage audit log retention policies
           href: audit-log-retention-policies.md
-        - name: Use Advanced Audit to investigate compromised accounts
+        - name: Use Audit (Premium) to investigate compromised accounts
           href: mailitemsaccessed-forensics-investigations.md
     - name: Mailbox auditing
       href: enable-mailbox-auditing.md

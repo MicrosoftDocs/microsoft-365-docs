@@ -2,8 +2,8 @@
 title: "Tag documents in a review set"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 
 audience: Admin
@@ -20,6 +20,8 @@ ms.custom: seo-marvel-mar2020
 ---
 
 # Tag documents in a review set in eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Organizing content in a review set is important to complete various workflows in the eDiscovery process. This includes:
 

@@ -2,8 +2,8 @@
 title: "Manage Relevance setup in eDiscovery (Premium)"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 titleSuffix: Office 365
 audience: Admin
@@ -19,6 +19,8 @@ description: "Read the recommendations for setting up Relevance training in eDis
 ---
 
 # Manage Relevance setup in eDiscovery (Premium) (classic)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!NOTE]
 > Microsoft Purview eDiscovery (Premium) requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try eDiscovery (Premium), you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 

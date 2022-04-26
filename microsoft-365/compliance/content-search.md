@@ -2,8 +2,8 @@
 title: "Create and run a Content search in the Microsoft Purview compliance portal"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: how-to
@@ -24,6 +24,8 @@ description: "Use the Content search eDiscovery tool in the compliance center to
 ---
 
 # Create a content search
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 You can use the Content search eDiscovery tool in the Microsoft Purview compliance portal to search for in-place content such as email, documents, and instant messaging conversations in your organization. Use this tool to search for content in these cloud-based Microsoft 365 data sources:
   

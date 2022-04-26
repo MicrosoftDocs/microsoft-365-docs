@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 security roadmap - Top priorities
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: bcarter
 author: BrendaCarter
@@ -9,11 +9,11 @@ ms.date: 08/20/2021
 audience: Admin
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
   - Ent_O365
   - Strat_O365_IP
   - M365-security-compliance
-search.appverid: 
+search.appverid:
   - MET150
 ms.assetid: 28c86a1c-e4dd-4aad-a2a6-c768a21cb352
 description: Top recommendations from Microsoft's cybersecurity team for implementing security capabilities to protect your Microsoft 365 environment.
@@ -24,7 +24,6 @@ ms.prod: m365-security
 # Security roadmap - Top priorities for the first 30 days, 90 days, and beyond
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
 
 This article includes top recommendations from Microsoft's cybersecurity team for implementing security capabilities to protect your Microsoft 365 environment. This article is adapted from a Microsoft Ignite session — [Secure Microsoft 365 like a cybersecurity pro: Top priorities for the first 30 days, 90 days, and beyond](https://www.youtube.com/watch?v=luignzNyR-o). This session was developed and presented by Mark Simos and Matt Kemelhar, Enterprise Cybersecurity Architects.
 

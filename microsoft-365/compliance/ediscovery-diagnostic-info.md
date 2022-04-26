@@ -2,8 +2,8 @@
 title: "Collect eDiscovery diagnostic information"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -20,6 +20,8 @@ description: "Learn about how to collect eDiscovery diagnostic information for a
 ---
 
 # Collect eDiscovery diagnostic information
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Occasionally Microsoft Support engineers require specific information about your issue when you open a support case related to Microsoft Purview eDiscovery (Standard) or Microsoft Purview eDiscovery (Premium). This article provides guidance on how to collect diagnostic information to help support engineers investigate and resolve issues. Typically, you don't need to collect this information until asked to do so by a Microsoft Support engineer.
 
