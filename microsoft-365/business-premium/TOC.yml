@@ -84,8 +84,8 @@
             href: m365bp-secure-windows-devices.md
           - name: Manage Windows devices
             href: m365bp-manage-windows-devices.md
-            name: Prepare for Office client deployment
-          - href: m365bp-prepare-for office-client-deployment.md
+          - name: Prepare for Office client deployment
+            href: m365bp-prepare-for office-client-deployment.md
       - name: Review and edit device policies
         href: m365bp-view-edit-create-mdb-policies.md
       - name: Manage device groups
