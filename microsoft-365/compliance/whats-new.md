@@ -77,6 +77,12 @@ To meet the challenges of today's decentralized, data-rich workplace, we're intr
 
 - [Get Started with Content Explorer](data-classification-content-explorer.md) - Teams guidance added, licensing section pointed to service descriptions.
 
+### Data lifecycle management and records management
+
+- [Retention policies for Yammer](create-retention-policies.md#retention-policy-for-yammer-locations) are now generally available (GA).
+- Support for shared channels, currently in preview. When you configure a retention policy for the Teams channel message location, any shared channels inherit retention settings from their parent team.
+- [Per-tenant limits for content disposition](retention-limits.md#maximum-number-of-items-for-disposition).
+
 ### Data Loss Prevention
 
 - [Data loss prevention and Microsoft Teams](dlp-microsoft-teams.md) - Public preview of Share Teams Channels content.
@@ -84,12 +90,6 @@ To meet the challenges of today's decentralized, data-rich workplace, we're intr
 - [Configure endpoint data loss prevention settings](dlp-configure-endpoint-settings.md) - new for public preview of restricted app groups.
 - [Data loss prevention policy reference](dlp-policy-reference.md) - updated for public preview of restricted app groups.
 - [Get started with data loss prevention for Power BI](dlp-powerbi-get-started.md) - new for public preview.
-
-### Information governance and records management
-
-- [Retention policies for Yammer](create-retention-policies.md#retention-policy-for-yammer-locations) are now generally available (GA).
-- Support for shared channels, currently in preview. When you configure a retention policy for the Teams channel message location, any shared channels inherit retention settings from their parent team.
-- [Per-tenant limits for content disposition](retention-limits.md#maximum-number-of-items-for-disposition).
 
 ### Insider risk management
 
