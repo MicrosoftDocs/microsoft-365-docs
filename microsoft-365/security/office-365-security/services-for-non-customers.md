@@ -1,19 +1,19 @@
 ---
 title: Services for non-customers sending mail to Microsoft 365
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 
+ms.date:
 audience: ITPro
 ms.topic: overview
 
 ms.localizationpriority: medium
-search.appverid: 
+search.appverid:
   - MET150
 ms.assetid: 19fd3e0f-8dbf-4049-a810-2c8ee6cefd48
-ms.collection: 
+ms.collection:
   - M365-security-compliance
 description: To help maintain user trust in the use of email, Microsoft has put in place various policies and technologies to help protect our users.
 ms.technology: mdo
@@ -24,14 +24,11 @@ ms.prod: m365-security
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-
 Email abuse, junk email, and fraudulent emails (phishing) continue to burden the entire email ecosystem. To help maintain user trust in the use of email, Microsoft has put various policies and technologies in place to help protect our users. However, Microsoft understands that legitimate email should not be negatively affected. Therefore, we have established a suite of services to help senders improve their ability to deliver email to Microsoft 365 users by proactively managing their sending reputation.
 
 This overview provides information about benefits we provide to your organization even if you aren't a customer.
 
 ## Sender solutions
-
-****
 
 |Service|Benefits|
 |---|---|
@@ -39,7 +36,6 @@ This overview provides information about benefits we provide to your organizatio
 |[Microsoft support](#microsoft-support)|Provides self-help and escalation support for delivery issues.|
 |[Anti-Spam IP Delist Portal](#anti-spam-ip-delist-portal)|A tool to submit IP delist request. Before submitting this request it is the sender's responsibility to ensure that any further mail originating from the IP in question is not abusive or malicious.|
 |[Abuse and spam reporting for junk email originating from Exchange Online](#abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online)|Keeps spam and other unwanted mail from being sent from Exchange Online and cluttering up the internet and your mail system.|
-|
 
 ## Microsoft support
 

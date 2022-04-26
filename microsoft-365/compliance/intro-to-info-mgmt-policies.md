@@ -25,6 +25,8 @@ description: Learn how to use information management policies to control and tra
 
 # Introduction to information management policies
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 An information management policy is a set of rules for a type of content. Information management policies enable organizations to control and track things like how long content is retained or what actions users can take with that content. Information management policies can help organizations comply with legal or governmental regulations, or they can simply enforce internal business processes. 
   
 For example, an organization that must follow government regulations requiring that they demonstrate "adequate controls" of their financial statements might create one or more information management policies that audit specific actions in the authoring and approval process for all documents related to financial filings.

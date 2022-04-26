@@ -12,8 +12,8 @@
   items: 
     - name: Configure portal security
       href: m365-lighthouse-configure-portal-security.md
-    - name: Set up roles
-      href: m365-lighthouse-set-up-roles.md
+    - name: Overview of permissions
+      href: m365-lighthouse-overview-of-permissions.md
     - name: Review audit logs
       href: m365-lighthouse-review-audit-logs.md
 - name: Protect customers with baselines
@@ -24,7 +24,7 @@
       href: m365-lighthouse-deploy-baselines.md
 - name: Manage tenants
   items: 
-    - name: Tenants page overview
+    - name: Overview of the Tenants page
       href: m365-lighthouse-tenants-page-overview.md
     - name: Manage your tenant list
       href: m365-lighthouse-manage-tenant-list.md
@@ -32,7 +32,7 @@
       href: m365-lighthouse-view-service-health.md
 - name: Manage users within tenants
   items: 
-    - name: Users page overview
+    - name: Overview of the Users page
       href: m365-lighthouse-users-page-overview.md
     - name: Block user sign-in
       href: m365-lighthouse-block-user-signin.md
@@ -48,15 +48,15 @@
       href: m365-lighthouse-view-manage-risky-users.md
 - name: Manage devices
   items: 
-    - name: Device compliance page overview
+    - name: Overview of the Device compliance page
       href: m365-lighthouse-device-compliance-page-overview.md
     - name: Compare device compliance policy settings
       href: m365-lighthouse-compare-compliance-policies.md
-    - name: Windows 365 (Cloud PCs) page overview
+    - name: Overview of the Windows 365 (Cloud PCs) page
       href: m365-lighthouse-win365-page-overview.md
 - name: Manage threats
   items:
-    - name: Threat management page overview
+    - name: Overview of the Threat management page
       href: m365-lighthouse-threat-management-page-overview.md
     - name: Mitigate threats with Microsoft Defender Antivirus
       href: m365-lighthouse-mitigate-threats.md
@@ -66,7 +66,7 @@
       href: m365-lighthouse-get-help-and-support.md
     - name: Known issues
       href: m365-lighthouse-known-issues.md
-    - name: Troubleshoot and resolve problems and error messages
+    - name: Troubleshoot error messages and problems
       href: m365-lighthouse-troubleshoot.md
     - name: Frequently asked questions (FAQs)
       href: m365-lighthouse-faq.yml
