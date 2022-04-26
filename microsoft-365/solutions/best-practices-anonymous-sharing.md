@@ -43,6 +43,8 @@ To set an expiration date for Anyone links across the organization
    ![Screenshot of SharePoint organization-level Anyone link expiration settings.](../media/sharepoint-organization-anyone-link-expiration.png)
 1. Type a number of days in the box, and then click **Save**.
 
+If you change the expiration time, existing links will keep their current expiration time if the new setting is longer, or be updated to the new setting if the new setting is shorter.
+
 To set an expiration date for Anyone links on a specific site
 
 1. Open the SharePoint admin center, expand **Sites**, and then select <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites**</a>.
@@ -96,7 +98,7 @@ To set the default file and folder sharing link for a specific site
 
 ## Prevent unauthenticated sharing of sensitive content
 
-You can use [Microsoft Purview data loss prevention (DLP)](../compliance/dlp-learn-about-dlp.md) to prevent unauthenticated sharing of sensitive content. Data loss prevention can take action based on a file's sensitivity label, retention label, or sensitive information in the file itself.
+You can use [Microsoft Purview Data Loss Prevention (DLP)](../compliance/dlp-learn-about-dlp.md) to prevent unauthenticated sharing of sensitive content. Data loss prevention can take action based on a file's sensitivity label, retention label, or sensitive information in the file itself.
 
 To create a DLP rule
 1. In the Microsoft Purview admin center, go to the [Data loss prevention page](https://compliance.microsoft.com/datalossprevention).

@@ -1,4 +1,4 @@
-- name: Microsoft Purview
+- name: Microsoft Purview compliance
   href: index.yml
 - name: What's new in Microsoft Purview
   href: whats-new.md
@@ -42,7 +42,7 @@
           href: device-onboarding-script.md
         - name: Onboard non-persistent virtual desktop infrastructure (VDI) devices
           href: device-onboarding-vdi.md
-    - name: Onboard macOS devices (preview)
+    - name: Onboard macOS devices
       items:
         - name: Onboard macOS devices into Microsoft 365 overview 
           href: device-onboarding-macos-overview.md
