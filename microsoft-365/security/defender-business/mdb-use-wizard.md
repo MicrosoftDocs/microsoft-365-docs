@@ -60,7 +60,7 @@ The setup wizard is designed to help you set up and configure Defender for Busin
 
    [Learn more about roles and permissions](mdb-roles-permissions.md). 
 
-2. **Set up email notifications**. In this step, you can set up email notifications for your security team. Then, when an alert is generated or a new vulnerability is discovered, your security team won't about it even if they're away from their desk. [Learn more about email notifications](mdb-email-notifications.md). 
+2. **Set up email notifications**. In this step, you can set up email notifications for your security team. Then, when an alert is generated or a new vulnerability is discovered, your security team won't miss it even if they're away from their desk. [Learn more about email notifications](mdb-email-notifications.md). 
 
 3. **Onboard and configure Windows devices**. In this step, you can onboard your company's Windows devices to Defender for Business quickly. Onboarding devices right away helps to protect those devices from day one. 
 
