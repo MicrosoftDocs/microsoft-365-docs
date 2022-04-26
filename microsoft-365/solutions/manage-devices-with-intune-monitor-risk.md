@@ -34,7 +34,7 @@ Deploying Microsoft Defender for Endpoint includes onboarding endpoints. If you 
 In this illustration:
 - Microsoft Defender for Endpoint greatly increases the sophistication of threat protection for devices. 
 - While Microsoft Intune allows you to set App Protection Policies and manage devices (including configuration changes), Defender for Endpoint continuously monitors your devices for threats and can take automated action to remediate attacks. 
-- You can connect Microsoft Intune to Defender for Endpoint to monitor device risk and compliance to security baselines.
+- You can use Intune to onboard devices to Defender for Endpoint. When you do this, you are also enabling these devices to work with Microsoft Purview Endpoint data loss prevention (Endpoint DLP).
 
 This article includes these steps:
 - Monitor device risk
@@ -46,9 +46,9 @@ If Defender for Endpoint hasn’t already been set up, work with your threat pro
 
 With Microsoft Defender for Endpoint deployed, you can take advantage of threat risk signals. This allows you to block access to devices based on their risk score. Microsoft recommends allowing access to devices with a risk score of medium or below.
 
-For Android and iOS/iPadOS, threat signals can be used within your App Protection Policies (APP). For information on configuring this, see [Create and assign app protection policy to set device risk level](/mem/intune/protect/advanced-threat-protection-configure).
+For Android and iOS/iPadOS, threat signals can be used within your App Protection Policies (APP). For information on configuring this, see [Create and assign app protection policy to set device risk level](/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level).
 
-For all platforms, you can set the risk level in the existing device compliance policies. See [Create and assign compliance policy to set device risk level](/mem/intune/protect/advanced-threat-protection-configure).
+For all platforms, you can set the risk level in the existing device compliance policies. See [Create a conditional access policy](/mem/intune/protect/advanced-threat-protection-configure#create-a-conditional-access-policy).
 
 ## Deploy security baselines and monitor compliance to these settings
 

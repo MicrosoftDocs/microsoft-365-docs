@@ -1,6 +1,7 @@
 ---
-title: "Manage information barriers policies"
-description: "Learn how to edit or remove policies and segments for information barriers."
+title: "Manage information barrier policies"
+description: "Learn how to edit or remove policies for information barriers."
+keywords: Microsoft 365, Microsoft Purview, compliance, information barriers
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -16,7 +17,9 @@ f1.keywords:
 
 # Manage information barriers policies
 
-After you have [defined information barriers policies](information-barriers-policies.md), you might need to make changes to policies or user segments as part of [troubleshooting](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting) or for regular maintenance.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+After you have [defined information barrier policies](information-barriers-policies.md), you may need to make changes to those policies or to your user segments, as part of [troubleshooting](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting) or as regular maintenance.
 
 ## What do you want to do?
 
@@ -260,5 +263,5 @@ After you have started applying information barriers policies, if you want to st
 - [Learn more about information barriers in Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams)
 - [Learn more about information barriers in SharePoint Online](/sharepoint/information-barriers)
 - [Learn more about information barriers in OneDrive](/onedrive/information-barriers)
-- [Attributes for information barriers policies](information-barriers-attributes.md)
+- [Attributes for information barrier policies](information-barriers-attributes.md)
 - [Troubleshooting information barriers](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting)

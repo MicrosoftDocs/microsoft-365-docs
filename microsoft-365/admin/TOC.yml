@@ -171,6 +171,8 @@
              href: create-groups/restore-deleted-group.md
            - name: Manage guest access to groups
              href: create-groups/manage-guest-access-in-groups.md
+           - name: Manage ownerless groups and teams
+             href: create-groups/ownerless-groups-teams.md
         - name: Passwords 
           items:
            - name: Reset passwords
@@ -336,7 +338,7 @@
       href: ../commerce/index.yml
     - name: Secure your organization
       items: 
-        - name: Top 10 ways to secure your data
+        - name: Best practices for securing your data
           href: security-and-compliance/secure-your-business-data.md
         - name: Multi-factor authentication for Microsoft 365
           href: security-and-compliance/multi-factor-authentication-microsoft-365.md
