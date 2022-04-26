@@ -145,4 +145,4 @@ At this point you should be able to see the policy **Enable automatic MDM enroll
 
 - [Tutorial: Configure hybrid Azure Active Directory join for managed domains](/azure/active-directory/devices/hybrid-azuread-join-managed-domains) (article)
 
-- [Top 10 ways to secure Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)
+- [Best practices for securing Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)

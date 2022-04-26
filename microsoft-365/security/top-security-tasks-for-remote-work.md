@@ -28,7 +28,7 @@ If you are like [Microsoft](https://www.microsoft.com/microsoft-365/blog/2020/03
 
 If you are a small or medium-size organization using one of Microsoft's business plans, see these resources instead:
 
-- [Top 10 ways to secure Office 365 and Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)
+- [Best practices for securing Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)
 - [Microsoft 365 for Campaigns](../business-premium/index.md) (includes a recommended security configuration for Microsoft 365 Business)
 
 For customers using our enterprise plans, Microsoft recommends you complete the tasks listed in the following table that apply to your service plan. If, instead of purchasing a Microsoft 365 enterprise plan, you are combining subscriptions, note the following:
