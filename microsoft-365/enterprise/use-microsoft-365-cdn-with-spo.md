@@ -2,7 +2,7 @@
 title: Use Office 365 Content Delivery Network (CDN) with SharePoint Online
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 07/13/2021
 audience: ITPro
 ms.topic: article
