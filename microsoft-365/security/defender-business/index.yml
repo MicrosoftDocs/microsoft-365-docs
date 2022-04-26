@@ -36,7 +36,7 @@ landingContent:
             url: mdb-lighthouse-integration.md
       - linkListType: how-to-guide
         links:
-          - text: Trial playbook - Microsoft Defender for Business
+          - text: Get the most out of your Defender for Business trial subscription
             url: trial-playbook-defender-business.md
 
   # Card
