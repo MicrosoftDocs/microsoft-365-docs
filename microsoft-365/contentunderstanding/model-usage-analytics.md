@@ -1,5 +1,5 @@
 ---
-title: Document understanding model usage analytics in Microsoft SharePoint Syntex
+title: Analyze how your models are used in Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,10 +12,10 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to find and use usage analytics for a document understanding model.
+description: Learn how to find more information about how your document understanding and form processing models are performing.
 ---
 
-# Document understanding model usage analytics in Microsoft SharePoint Syntex
+# Analyze how your models are used in Microsoft SharePoint Syntex
 
 </br>
 
@@ -72,7 +72,7 @@ Each model in the model usage list will show the usage data:
 
 
 
-## See Also
+## See also
 [Create a classifier](create-a-classifier.md)
 
 [Create an extractor](create-an-extractor.md)

@@ -112,16 +112,23 @@
           href: get-started/localization.md
         - name: Validate new devices
           href: get-started/validate-device.md
-        - name: Set up devices
-          href: get-started/set-up-devices.md
+        - name: Prepare devices
+          href: 
           items: 
-            - name: Register new devices yourself
-              href: get-started/register-devices-self.md
-              items: 
-                - name: Steps for Partners to register devices
-                  href: get-started/register-devices-partner.md
-            - name: Register existing devices yourself
-              href: get-started/register-reused-devices-self.md
+            - name: Get started
+              href: get-started/prepare-devices.md
+            - name: Device registration
+              href:
+              items:
+              - name: Device registration methods
+                href: get-started/device-registration-methods.md
+                items: 
+                  - name: Manual registration
+                    href: get-started/manual-registration.md
+                  - name: Partner registration
+                    href: get-started/partner-registration.md
+                  - name: Manual registration for existing devices
+                    href: get-started/manual-registration-existing-devices.md
         - name: Enable user support features
           href: get-started/enable-support.md
         - name: Get your users ready to use devices
@@ -137,7 +144,7 @@
           items: 
             - name: Microsoft Project and Microsoft Visio
               href: get-started/project-visio.md
-            - name: New Microsoft Edge
+            - name: Microsoft Edge
               href: get-started/edge-browser-app.md
             - name: Microsoft 365 Apps for Enterprise
               href: get-started/m365-apps.md
@@ -159,6 +166,8 @@
               href: working-with-managed-desktop/security-updates-report.md
             - name: App usage report
               href: working-with-managed-desktop/app-usage-report.md
+            - name: Service metrics report
+              href: working-with-managed-desktop/service-metrics-report.md
         - name: Admin support
           href: working-with-managed-desktop/admin-support.md
         - name: User support
@@ -182,5 +191,5 @@
               href: working-with-managed-desktop/config-setting-deploy.md
         - name: Preview and test Windows 11 with Microsoft Managed Desktop
           href: working-with-managed-desktop/test-win11-mmd.md
-    - name: Change history for Microsoft Managed Desktop documentation
+    - name: Change history
       href: change-history-managed-desktop.md

@@ -1,9 +1,9 @@
 ---
-title: "Partially indexed items in Content Search and other eDiscovery tools"
+title: "Partially indexed items in Content Search"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 
 audience: Admin
@@ -20,12 +20,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
-description: "Learn about unindexed items in Exchange and SharePoint that you can include in an eDiscovery search that you run in the Microsoft 365 compliance center."
+description: "Learn about unindexed items in Exchange and SharePoint that you can include in an eDiscovery search that you run in the Microsoft Purview compliance portal."
 ---
 
 # Partially indexed items in eDiscovery
 
-An eDiscovery search that you run from the Microsoft 365 compliance center automatically includes partially indexed items in the estimated search results when you run a search. Partially indexed items are Exchange mailbox items and documents on SharePoint and OneDrive for Business sites that for some reason weren't completely indexed for search. In Exchange, a partially indexed item typically contains a file (of a file type that can't be indexed) that is attached to an email message. Here are some other reasons why items can't be indexed for search and are returned as partially indexed items when you run an eDiscovery search:
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+An Microsoft Purview eDiscovery search that you run from the Microsoft Purview compliance portal automatically includes partially indexed items in the estimated search results when you run a search. Partially indexed items are Exchange mailbox items and documents on SharePoint and OneDrive for Business sites that for some reason weren't completely indexed for search. In Exchange, a partially indexed item typically contains a file (of a file type that can't be indexed) that is attached to an email message. Here are some other reasons why items can't be indexed for search and are returned as partially indexed items when you run an eDiscovery search:
   
 - The file type is unrecognized or unsupported for indexing.
 
@@ -44,11 +46,11 @@ An eDiscovery search that you run from the Microsoft 365 compliance center autom
 > [!NOTE]
 > Most organizations have less than 1% of content by volume and less than 12% by size that is partially indexed. The reason for the difference between volume and size is that larger files have a higher probability of containing content that can't be completely indexed.
   
-For legal investigations, your organization may be required to review partially indexed items. You can also specify whether to include partially indexed items when you export search results to a local computer or when you prepare the results for analysis with Advanced eDiscovery. For more information, see [Investigating partially indexed items in eDiscovery](investigating-partially-indexed-items-in-ediscovery.md).
+For legal investigations, your organization may be required to review partially indexed items. You can also specify whether to include partially indexed items when you export search results to a local computer or when you prepare the results for analysis with eDiscovery (Premium). For more information, see [Investigating partially indexed items in eDiscovery](investigating-partially-indexed-items-in-ediscovery.md).
   
 ## File types not indexed for search
 
-Certain types of files, such as Bitmap or MP3 files, don't contain content that can be indexed. As a result, the search indexing servers in Exchange and SharePoint don't perform full-text indexing on these types of files. These types of files are considered to be unsupported file types. There are also file types for which full-text indexing has been disabled, either by default or by an administrator. Unsupported and disabled file types are labeled as unindexed items in Content Searches. As previously stated, partially indexed items can be included in the set of search results when you run a search, export the search results to a local computer, or prepare search results for Advanced eDiscovery.
+Certain types of files, such as Bitmap or MP3 files, don't contain content that can be indexed. As a result, the search indexing servers in Exchange and SharePoint don't perform full-text indexing on these types of files. These types of files are considered to be unsupported file types. There are also file types for which full-text indexing has been disabled, either by default or by an administrator. Unsupported and disabled file types are labeled as unindexed items in Content Searches. As previously stated, partially indexed items can be included in the set of search results when you run a search, export the search results to a local computer, or prepare search results for eDiscovery (Premium).
   
 For a list of supported and disabled file formats, see the following topics:
   
@@ -64,14 +66,14 @@ Not every email message with a partially indexed file attachment or every partia
   
 Similarly, messages with partially indexed file attachments and documents of a partially indexed file type are included in search results when other message or document properties, which are indexed and searchable, match the search criteria. Message properties that are indexed for search include sent and received dates, sender and recipient, the file name of an attachment, and text in the message body. Document properties indexed for search include created and modified dates. So even though a message attachment may be a partially indexed item, the message will be included in the regular search results if the value of other message or document properties matches the search criteria.
   
-For a list of email and document properties that you can search for by using eDiscovery tools in the Microsoft 365 compliance center, see [Keyword queries and search conditions for eDiscovery](keyword-queries-and-search-conditions.md).
+For a list of email and document properties that you can search for by using eDiscovery tools in the compliance portal, see [Keyword queries and search conditions for eDiscovery](keyword-queries-and-search-conditions.md).
   
 > [!NOTE]
 > If a mailbox item is moved from a folder that is indexed to a folder that is not indexed, a flag is set to unindex the item and the item is removed from the index and will not be searchable. Later, if that same item is moved back to a folder that is indexed, the flag is not reset. That means the item will remain unindexed, and not searchable.
 
 ## Partially indexed items included in the search results
 
-Your organization might be required to identify and perform additional analysis on partially indexed items to determine what they are, what they contain, and whether they're relevant to a specific investigation. As previously explained, the partially indexed items in the content locations that are searched are automatically included with the estimated search results. You have the option to include these partially indexed items when you export search results or prepare the search results for Advanced eDiscovery.
+Your organization might be required to identify and perform additional analysis on partially indexed items to determine what they are, what they contain, and whether they're relevant to a specific investigation. As previously explained, the partially indexed items in the content locations that are searched are automatically included with the estimated search results. You have the option to include these partially indexed items when you export search results or prepare the search results for eDiscovery (Premium).
   
 Keep the following in mind about partially indexed items:
   
@@ -98,7 +100,7 @@ Keep the following in mind about partially indexed items:
   
 ## Workaround for using a date range to exclude partially indexed items
 
-In Content search and Core eDiscovery, you can't use a date range to exclude partially indexed items from being returned by a search query. In other words, partially indexed items that fall outside of a date range are still included as partially indexed items in the search statistics and when you export partially indexed items. In Advanced eDiscovery, you can exclude partially indexed items by using a date range in a search query.
+In Content search and Microsoft Purview eDiscovery (Standard), you can't use a date range to exclude partially indexed items from being returned by a search query. In other words, partially indexed items that fall outside of a date range are still included as partially indexed items in the search statistics and when you export partially indexed items. In eDiscovery (Premium), you can exclude partially indexed items by using a date range in a search query.
 
 As a workaround for this limitation, we recommend the following procedure.
 
@@ -113,6 +115,7 @@ As a workaround for this limitation, we recommend the following procedure.
    ```text
    <original query> AND ((IndexingErrorCode>0 OR IndexingErrorCode<0) AND sent:date1..date2)
    ```
+
    Adding this clause will return partially indexed items that match your original search query and that fall within a specific date range.<sup>2</sup>
 
 4. Export the results of the search from step 3, and this time include partially indexed items in the export. To do this, you would select the **All items, including ones that have unrecognized format, are encrypted, or weren't indexed for other reasons** export option.

@@ -1,5 +1,5 @@
 ---
-title: "Create a DLP policy to protect documents with FCI or other properties"
+title: "Create a DLP policy to protect documents"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -19,12 +19,15 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
+- admindeeplinkSPO
 description: Learn how to use a data loss prevention (DLP) policy to protect documents that have properties from a third-party system.
 ---
 
 # Create a DLP policy to protect documents with FCI or other properties
 
-Microsoft 365 data loss prevention (DLP) policies can use classification properties or item properties to identify sensitive items. For example you can use:
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Microsoft Purview Data Loss Prevention (DLP) policies can use classification properties or item properties to identify sensitive items. For example you can use:
 
 - Windows Server File Classification infrastructure (FCI) properties
 - SharePoint document properties
@@ -42,7 +45,7 @@ If you want to apply your DLP policy to content with specific Microsoft 365 labe
 
 ## Before you create the DLP policy
 
-Before you can use a Windows Server FCI property or other property in a DLP policy, you need to create a managed property in the SharePoint admin center. Here's why.
+Before you can use a Windows Server FCI property or other property in a DLP policy, you need to create a managed property in the <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint admin center</a>. Here's why.
 
 In SharePoint Online and OneDrive for Business, the search index is built up by crawling the content on your sites. The crawler picks up content and metadata from the documents in the form of crawled properties. The search schema helps the crawler decide what content and metadata to pick up. Examples of metadata are the author and the title of a document. However, to get the content and metadata from the documents into the search index, the crawled properties must be mapped to managed properties. Only managed properties are kept in the index. For example, a crawled property related to author is mapped to a managed property related to author.
 
@@ -61,7 +64,7 @@ You first need to upload a document with the property that you want to reference
 
 1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
-2. In the left navigation, choose **Admin centers** \> **SharePoint**. You're now in the SharePoint admin center.
+2. In the left navigation, choose **Admin centers** \> **SharePoint**. You're now in the <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint admin center</a>.
 
 3. In the left navigation, choose **search** \> on the **search administration** page \> **Manage Search Schema**.
 

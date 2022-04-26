@@ -1,6 +1,6 @@
 ---
 title: Device inventory report
-description:
+description: This article describes the Device inventory report
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: tiaraquan

@@ -21,6 +21,8 @@ description: "Understand the settings you can configure in a retention policy or
 
 # Common settings for retention policies and retention label policies
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
 Many settings for retention are common to both retention policies and retention label policies. Use the following information to help you configure these settings to proactively retain content, delete content, or both—retain and then delete the content.
@@ -28,7 +30,7 @@ Many settings for retention are common to both retention policies and retention 
 For the scenarios that support these policies for retention, see:
 
 - [Create and configure retention policies](create-retention-policies.md).
-- [Create retention labels and apply them in apps](create-apply-retention-labels.md)
+- [Publish retention labels and apply them in apps](create-apply-retention-labels.md)
 - [Apply a retention label to content automatically](apply-retention-labels-automatically.md)
 
 Settings that are specific to each scenario are explained in their respective documentation.
@@ -54,9 +56,11 @@ When you choose to use adaptive scopes, you are prompted to select what type of 
 |:-----|:-----|
 |**Users** - applies to:  <br/> - Exchange email <br/> - OneDrive accounts <br/> - Teams chats <br/> - Teams private channel messages <br/> - Yammer user messages| First Name <br/> Last name <br/>Display name <br/> Job title <br/> Department <br/> Office <br/>Street address <br/> City <br/>State or province <br/>Postal code <br/> Country or region <br/> Email addresses <br/> Alias <br/> Exchange custom attributes: CustomAttribute1 - CustomAttribute15|
 |**SharePoint sites** - applies to:  <br/> - SharePoint sites <br/> - OneDrive accounts |Site URL <br/>Site name <br/> SharePoint custom properties: RefinableString00 - RefinableString99 |
-|**Microsoft 365 Groups** - applies to:  <br/> - Microsoft 365 Groups <br/> - Teams channel messages <br/> - Yammer community messages |Name <br/> Display name <br/> Description <br/> Email addresses <br/> Alias <br/> Exchange custom attributes: CustomAttribute1 - CustomAttribute15 |
+|**Microsoft 365 Groups** - applies to:  <br/> - Microsoft 365 Groups <br/> - Teams channel messages (standard and shared) <br/> - Yammer community messages |Name <br/> Display name <br/> Description <br/> Email addresses <br/> Alias <br/> Exchange custom attributes: CustomAttribute1 - CustomAttribute15 |
 
-The property names for sites are based on SharePoint site managed properties, and the attribute names for users and groups are based on [filterable recipient properties](/powershell/exchange/recipientfilter-properties#filterable-recipient-properties) that map to Azure AD attributes. For example:
+The property names for sites are based on SharePoint site managed properties. For information about the custom attributes, see [Using Custom SharePoint Site Properties to Apply Microsoft 365 Retention with Adaptive Policy Scopes](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/using-custom-sharepoint-site-properties-to-apply-microsoft-365/ba-p/3133970).
+
+The attribute names for users and groups are based on [filterable recipient properties](/powershell/exchange/recipientfilter-properties#filterable-recipient-properties) that map to Azure AD attributes. For example:
 
 - **Alias** maps to the LDAP name **mailNickname**, that displays as **Email** in the Azure AD admin center.
 - **Email addresses** maps to the LDAP name **proxyAddresses**, that displays as **Proxy address** in the Azure AD admin center.
@@ -72,15 +76,17 @@ A single policy for retention can have one or many adaptive scopes.
 
 #### To configure an adaptive scope
 
-Before you configure your adaptive scope, use the previous section to identify what type of scope to create and what attributes and values you will use. You might need to work with other administrators to confirm this information, and for SharePoint sites, confirm that the properties are indexed.
+Before you configure your adaptive scope, use the previous section to identify what type of scope to create and what attributes and values you'll use. You might need to work with other administrators to confirm this information. 
 
-1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com/), navigate to one of the following locations:
+Specifically for SharePoint sites, there might be additional SharePoint configuration needed if you plan to use [custom site properties](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/using-custom-sharepoint-site-properties-to-apply-microsoft-365/ba-p/3133970).
+
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), navigate to one of the following locations:
     
     - If you are using the records management solution:
         - **Solutions** > **Records management** > **Adaptive scopes** tab > + **Create scope**
         
-    - If you are using the information governance solution:
-       - **Solutions** > **Information governance** > **Adaptive scopes** tab > + **Create scope**
+    - If you are using the data lifecycle management solution:
+       - **Solutions** > **Data lifecycle management** > **Adaptive scopes** tab > + **Create scope**
     
     Don't immediately see your solution in the navigation pane? First select **Show all**. 
 
@@ -104,19 +110,31 @@ Before you configure your adaptive scope, use the previous section to identify w
     - For **User** and **Microsoft 365 Group** scopes, use [OPATH filtering syntax](/powershell/exchange/recipient-filters). For example, to create a user scope that defines its membership by department, country, and state:
     
         ![Example adaptive scope with advanced query.](../media/example-adaptive-scope-advanced-query.png)
+        
+        One of the advantages of using the advanced query builder for these scopes is a wider choice of query operators:
+        - **and**
+        - **or**
+        - **not**
+        - **eq** (equals)
+        - **ne** (not equals)
+        - **lt** (less than)
+        - **gt** (greater than)
+        - **like** (string comparison)
+        - **notlike** (string comparison)
     
     - For **SharePoint sites** scopes, use Keyword Query Language (KQL). You might already be familiar with using KQL to search SharePoint by using indexed site properties. To help you specify these KQL queries, see [Keyword Query Language (KQL) syntax reference](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
-    
-    One of the advantages of using the advanced query builder is a wider choice of query operators:
-    - **and**
-    - **or**
-    - **not**
-    - **eq** (equals)
-    - **ne** (not equals)
-    - **lt** (less than)
-    - **gt** (greater than)
-    - **like** (string comparison
-    - **notlike** (string comparison
+        
+        For example, because SharePoint sites scopes automatically include all SharePoint site types, which include Microsoft 365 group-connected and OneDrive sites, you can use the indexed site property **SiteTemplate** to include or exclude specific site types. The templates you can specify:
+        - SITEPAGEPUBLISHING for modern communication sites
+        - GROUP for Microsoft 365 group-connected sites
+        - TEAMCHANNEL for Microsoft Teams private channel sites
+        - STS for a classic SharePoint team site
+        - SPSPERS for OneDrive sites
+        
+        So to create an adaptive scope that includes only modern communication sites and excludes Microsoft 365 goup-connected and OneDrive sites, specify the following KQL query:
+        ````console
+        SiteTemplate=SITEPAGEPUBLISHING
+        ````
     
     You can [validate these advanced queries](#validating-advanced-queries) independently from the scope configuration.
     
@@ -320,16 +338,30 @@ Be aware that **Conversation History**, a folder in Outlook, is a feature that h
 By choosing the settings for retaining and deleting content, your policy for retention will have one of the following configurations for a specified period of time:
 
 - Retain-only
-
-    For this configuration, choose **Retain items for a specific period** and **At end of the retention period: Do nothing**. Or, select **Retain items forever**.
+    
+    For this configuration, choose the following options:
+    
+    - For retention policies: On the **Decide if you want to retain content, delete it, or both** page, select **Retain items for a specific period**, specify the retention period and then for **At end of the retention period** select **Do nothing** for the retention settings to be removed.  Or to retain without an end date, select **Retain items forever** on this page.
+    
+    - For retention labels: On the **Define label settings page**, select **Retain items indefinitely or for a specific period**, and then:
+        - For the retention settings to no longer be in effect on the labeled content after a specific time: On the **Define the retention period** page, for **Retain items for**, specify the time period. Then on the **Choose what happens after the retention period** page, select **Deactivate retention settings**. The label remains on the content but with no restrictions, as if it's a [label that just classifies](retention.md#classifying-content-without-applying-any-actions).
+        - To retain without an end date: On the **Define the retention period** page, for **Retain items for**, select **An indefinite period**. The label remains on the content with any [existing restrictions](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked ).
 
 - Retain and then delete
 
-    For this configuration, choose **Retain items for a specific period** and **At end of the retention period: Delete items automatically**.
+    For this configuration, choose the following options:
+    
+    - For retention policies: On the **Decide if you want to retain content, delete it, or both** page, select **Retain items for a specific period**, specify the retention period and then for **At end of the retention period** select **Delete items automatically**.
+    
+    - For retention labels: On the **Define label settings** page, select **Retain items indefinitely or for a specific period**, specify the retention period and then for **Choose what happens after the retention period**, select either **Delete items automatically** or **Start a disposition review**. For information about disposition reviews, see [Disposition review](disposition.md#disposition-reviews).
 
 - Delete-only
 
-    For this configuration, choose **Only delete items when they reach a certain age**.
+    For this configuration, choose the following options:
+    
+    - For retention policies: On the **Decide if you want to retain content, delete it, or both** page, select **Only delete items when they reach a certain age**, and specify the time period.
+    
+    - For retention labels: On the **Define label settings** page, select **Enforce actions after a specific period** and specify the time period, still referred to as the retention period. The option **Choose what happens after the period** is automatically set to **Delete items automatically**.
 
 ### Retaining content for a specific period of time
 
@@ -343,17 +375,25 @@ Examples:
 
 - Exchange: If you want to retain items in a mailbox for seven years, and a message was sent six years ago, the message will be retained for only one year. For Exchange items, the age is based on the date received for incoming email, or the date sent for outgoing email. Retaining items based on when it was last modified applies only to site content in OneDrive and SharePoint.
 
-At the end of the retention period, you choose whether you want the content to be permanently deleted:
+At the end of the retention period, you choose whether you want the content to be permanently deleted. For example, for retention polices:
 
 ![Retention settings page.](../media/b05f84e5-fc71-4717-8f7b-d06a29dc4f29.png)
 
+Before you configure retention, first familiarize yourself with capacity and storage limits for the respective workloads:
+
+- For SharePoint and OneDrive, retained items are stored in the site's Preservation Hold library, which is included in the site's storage quota. For more information, see [Manage site storage limits](/sharepoint/manage-site-collection-storage-limits) from the SharePoint documentation.
+
+- For Exchange, Teams, and Yammer, where retained messages are stored in mailboxes, see [Exchange Online limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits) and enable [auto-expanding archiving](autoexpanding-archiving.md).
+    
+    In extreme cases where a high volume of email is deleted in a short time period, either by users or automatically from policy settings, you might also need to configure Exchange to more frequently move items from the Recoverable Items folder in the user's primary mailbox to the Recoverable Items folder in their archive mailbox. For step-by-step instructions, see [Increase the Recoverable Items quota for mailboxes on hold](increase-the-recoverable-quota-for-mailboxes-on-hold.md).
+
 ### Deleting content that's older than a specific age
 
-A policy for retention can retain and then delete items, or delete old items without retaining them.
+Retention settings can retain and then delete items, or delete old items without retaining them.
 
-In both cases, if your policy deletes items, it's important to understand that the time period you specify is not calculated from the time the policy was assigned, but according to the start of the retention period specified. For example, from the time when the item was created or modified, or labeled.
+In both cases, if your retention settings delete items, it's important to understand that the time period you specify is not calculated from the time the policy was assigned, but according to the start of the retention period specified. For example, from the time when the item was created or modified, or labeled.
 
-For this reason, first consider the age of the existing content and how the policy may impact that content. You might also want to communicate the new policy to your users before assigning it, to give them time to assess the possible impact.
+For this reason, first consider the age of the existing content and how the settings might impact that content. Consider communicating your chosen settings to your users and help desk before the settings are applied to content, which gives them time to assess the possible impact.
 
 ### A policy that applies to entire locations
 
@@ -383,7 +423,7 @@ Some settings can't be changed after a policy for retention is created and saved
 
 If you edit a retention policy and items are already subject to the original settings in your retention policy, your updated settings will be automatically applied to these items in addition to items that are newly identified.
 
-Usually this update is fairly quick but can take several days. When the policy replication across your Microsoft 365 locations is complete, you'll see the status of the retention policy in the Microsoft 365 compliance center change from **On (Pending)** to **On (Success)**.
+Usually this update is fairly quick but can take several days. When the policy replication across your Microsoft 365 locations is complete, you'll see the status of the retention policy in the Microsoft Purview compliance portal change from **On (Pending)** to **On (Success)**.
 
 ## Locking the policy to prevent changes
 

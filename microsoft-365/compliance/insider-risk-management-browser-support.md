@@ -1,7 +1,7 @@
 ---
 title: Learn about and configure insider risk management browser signal detection
-description: Learn about insider risk management browser signal detection in Microsoft 365
-keywords: Microsoft 365, insider risk management, risk management, compliance
+description: Learn about insider risk management browser signal detection in Microsoft Purview
+keywords: Microsoft 365, Microsoft Purview, insider risk, risk management, compliance
 ms.localizationpriority: medium
 ms.service: O365-seccomp
 ms.topic: article
@@ -19,6 +19,8 @@ ms.collection:
 
 # Learn about and configure insider risk management browser signal detection
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Web browsers are often used by users to access both sensitive and non-sensitive files within an organization. Insider risk management allows your organization to detect and act on browser exfiltration signals for all non-executable files viewed in [Microsoft Edge](https://www.microsoft.com/edge) and [Google Chrome](https://www.google.com/chrome) browsers. With these signals, analysts and investigators can quickly act when any of the following activities are performed by in-scope policy users when using these browsers:
 
 - Files copied to personal cloud storage
@@ -26,7 +28,7 @@ Web browsers are often used by users to access both sensitive and non-sensitive 
 - Files transferred or copied to a network share
 - Files copied to USB devices
 
-Signals for these events are detected in Microsoft Edge using built-in browser capabilities and using the *Microsoft Insider Risk Extension* add-on. In Google Chrome, customers use the *Microsoft Compliance Extension* for signal detection.
+Signals for these events are detected in Microsoft Edge using built-in browser capabilities and using the *Microsoft Compliance Extension* add-on. In Google Chrome, customers use the *Microsoft Compliance Extension* for signal detection.
 
 The following table summarizes detected activities and extension support for each browser:
 
@@ -39,11 +41,11 @@ The following table summarizes detected activities and extension support for eac
 
 ## Common requirements
 
-Before installing either the *Microsoft Insider Risk Extension* or the *Microsoft Compliance Extension,* customers need to ensure that devices for in-scope policy users meet the following requirements
+Before installing the Microsoft Edge add-on or Google Chrome extension, customers need to ensure that devices for in-scope policy users meet the following requirements:
 
 - Latest Windows 10 x64 build is recommended, minimum Windows 10 x64 build 1809 for signal detection support. Browser signal detection isn't currently supported on non-Windows devices.
 - Current [Microsoft 365 subscription](/microsoft-365/compliance/insider-risk-management-configure#subscriptions-and-licensing) with insider risk management support.
-- Devices must be [onboarded](/microsoft-365/compliance/insider-risk-management-settings#enable-device-indicators-and-onboard-devices) to the Microsoft 365 Compliance portal.
+- Devices must be [onboarded](/microsoft-365/compliance/insider-risk-management-settings#enable-device-indicators-and-onboard-devices) to the Microsoft Purview compliance portal.
 
 For specific browser configuration requirements, see the Microsoft Edge and Google Chrome sections later in this article.
 
@@ -53,7 +55,7 @@ For specific browser configuration requirements, see the Microsoft Edge and Goog
 
 - Meet the common requirements
 - Microsoft Edge x64, 91.0.864.41 version or higher
-- *Microsoft Insider Risk Extension* add-on version 1.0.0.44 or higher
+- *Microsoft Compliance Extension* add-on version 1.0.0.44 or higher
 - Edge.exe is not configured as an unallowed browser
 
 ### Option 1: Basic setup (recommended for testing with Edge)
@@ -62,7 +64,7 @@ Use this option to configure single machine selfhost for each device in your org
 
 For the basic setup option, complete the following steps:
 
-1. Navigate to [Microsoft Insider Risk Extension](https://microsoftedge.microsoft.com/addons/detail/microsoft-insider-risk-ex/lcmcgbabdcbngcbcfabdncmoppkajglo).
+1. Navigate to [Microsoft Compliance Extension](https://microsoftedge.microsoft.com/addons/detail/microsoft-compliance-exte/lcmcgbabdcbngcbcfabdncmoppkajglo).
 2. Install the extension.
 
 ### Option 2: Intune setup for Edge
@@ -94,7 +96,7 @@ For the Group Policy setup option, complete the following steps:
 
 Devices must be manageable using Group Policies and all [Microsoft Edge Administrative Templates](https://www.microsoft.com/edge/business/download) need to be imported into the Group Policy Central Store. For more information, see [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](/troubleshoot/windows-client/group-policy/create-and-manage-central-store).
 
-**Step 2: Add the *Microsoft Insider Risk Management Extension* add-on to the *Force Install* list.**
+**Step 2: Add the *Microsoft Compliance Extension* add-on to the *Force Install* list.**
 
 Complete the following steps to add the extension:
 
@@ -178,7 +180,7 @@ Before adding the Microsoft DLP Chrome extension to the list of force installed 
 
     - OMA-URI: *./Device/Vendor/MSFT/Policy/Config/Chrome~Policy~googlechrome~Extensions/ExtensionInstallForcelist*
     - Data type: *String*
-    - Value: *\<enabled/\>\<data id=”ExtensionInstallForcelistDesc” value=”1&\#xF000; echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx″/\>*
+    - Value: *\<enabled/\>\<data id="ExtensionInstallForcelistDesc" value="1&\#xF000; echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx"/\>*
 
 9. Select **Create**.
 

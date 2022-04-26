@@ -2,8 +2,8 @@
 title: "Assign licenses to users"
 f1.keywords:
 - CSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: sinakassaw, nicholak
 audience: Admin
@@ -15,16 +15,17 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- commerce_licensing
 - AdminSurgePortfolio
 - TopSMBIssues
 - SaRA
+- business_assist
 - okr_SMB
 - manage_licenses
-- commerce_licensing
 - AdminTemplateSet
 search.appverid: MET150
 description: "Assign licenses depending on whether you want to assign product licenses to specific users or assign users licenses to a specific product."
-ms.date: 09/16/2021
+ms.date: 04/22/2022
 ---
 
 # Assign licenses to users
@@ -37,6 +38,9 @@ You can assign licenses to users on either the **Active users** page, or on the 
 > - For some subscriptions, you can only cancel during a limited window of time after you buy or renew your subscription. If the cancellation window has passed, turn off recurring billing to cancel the subscription at the end of its term.
 
 [Learn how to add a user and assign a license at the same time](../add-users/add-users.md).
+
+> [!TIP]
+> If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
 
 ## Before you begin
 

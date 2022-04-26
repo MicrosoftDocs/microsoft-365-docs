@@ -76,8 +76,12 @@ This article describes how to configure entries in the Tenant Allow/Block List i
 
 - You need to be assigned permissions in the Microsoft 365 Defender portal before you can do the procedures in this article:
   - **Senders, URLs and files**:
-    - To add and remove values from the Tenant Allow/Block List, you need to be a member of the **Organization Management**, **Security Administrator**, or **Security Operator** role groups or you are assigned the **Tenant AllowBlockList Manager** role.
-    - For read-only access to the Tenant Allow/Block List, you need to be a member of the **Global Reader** or **Security Reader** role groups.
+    - To add and remove values from the Tenant Allow/Block List, you need to be a member of 
+      -   **Organization Management** or **Security Administrator** role group (**Security admin role**)
+      -    **Security Operator** role group (**Tenant AllowBlockList Manager**).
+    - For read-only access to the Tenant Allow/Block List, you need to be a member of 
+      - **Global Reader**  role group
+      - **Security Reader** role group
   - **Spoofing**: One of the following combinations:
     - **Organization Management**
     - **Security Administrator** <u>and</u> **View-Only Configuration** or **View-Only Organization Management**.
@@ -115,18 +119,21 @@ To manage all allows and blocks, see [Add blocks in the Tenant Allow/Block List]
    - **Senders**:
      - **Value**: The sender domain or email address.
      - **Action**: The value **Allow** or **Block**.
+     - **Modified by**
      - **Last updated**
      - **Remove on**
      - **Notes**
    - **URLs**:
      - **Value**: The URL.
      - **Action**: The value **Allow** or **Block**.
+     - **Modified by**
      - **Last updated**
      - **Remove on**
      - **Notes**
    - **Files**
      - **Value**: The file hash.
      - **Action**: The value **Allow** or **Block**.
+     - **Modified by**
      - **Last updated**
      - **Remove on**
      - **Notes**
@@ -224,7 +231,7 @@ For detailed syntax and parameter information, see [Get-TenantAllowBlockListSpoo
 
 ## URL syntax for the Tenant Allow/Block List
 
-- IP4v and IPv6 addresses are allowed, but TCP/UDP ports are not.
+- IPv4 and IPv6 addresses are allowed, but TCP/UDP ports are not.
 
 - Filename extensions are not allowed (for example, test.pdf).
 
@@ -263,7 +270,7 @@ For detailed syntax and parameter information, see [Get-TenantAllowBlockListSpoo
 
 - URL entries that contain protocols (for example, `http://`, `https://`, or `ftp://`) will fail, because URL entries apply to all protocols.
 
-- A username or password aren't supported or required.
+- A username or password isn't supported or required.
 
 - Quotes (' or ") are invalid characters.
 

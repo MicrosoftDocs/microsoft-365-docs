@@ -17,15 +17,15 @@ You can submit support tickets or feedback requests to Microsoft using the Micro
 
 ## Open a new support request
 
-Support requests are triaged and managed according to severity outlined in the [severity definition table](#sev). Feedback is reviewed and a response provided where requested.
+Support requests are triaged and managed according to severity outlined in the [severity definition table](#support-request-severity-definitions). Feedback is reviewed and a response provided where requested.
 
 **To open a new support request:**
 
 1. Sign in to [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) and navigate to the **Tenant administration** menu.
-2. In the Microsoft Managed Desktop section, select **Service requests**.
+2. In the **Microsoft Managed Desktop** section, select **Service requests**.
 3. In the **Service requests** section, select **+ New support request**.
 4. Select the **Request type** that matches the help you need. The table below outlines the options.
-5. Select the **Severity** level. For more information, see [Support request severity definitions](#sev).
+5. Select the **Severity** level. For more information, see [severity definition table](#support-request-severity-definitions).
 6. Provide as much information about the request as possible to help the team respond quickly. Depending on the type of request, you may be required to provide different details.
 7. Review all the information you provided for accuracy.
 8. When you're ready, select **Create**.
@@ -36,7 +36,7 @@ Support requests are triaged and managed according to severity outlined in the [
 | ----- | ----- |
 Incident | You require the Microsoft Managed Desktop Operations team to investigate a user issue. For example, a widespread impact of a change or service outage.
 Request for information | You're planning a change in networking, proxy configuration, VPN systems, certificate expiration, or just need some information about the service. A response from the Microsoft Managed Desktop Operations team is advised when communicating a change within your organization.
-Change request | You require the Microsoft Managed Desktop Operations team to make a change, such as moving devices between update groups.
+Change request | You require the Microsoft Managed Desktop Operations team to make a change, such as moving devices between update groups. All change requests are treated as severity C.
 
 > [!IMPORTANT]
 > When you create a support request you will need to provide a primary contact. This person is responsible for working with our Service Engineers to resolve the issue or answer any questions about a requested change. We also require that you have previously [set up an Admin contact](../get-started/add-admin-contacts.md) who will be copied on all case notifications for their relevant area of focus. This person will be asked to take over a case if the primary contact for a case is unreachable.
@@ -70,13 +70,14 @@ You can edit case details, for example, updating the primary case contact or cha
 
 Once a case is resolved, it can no longer be edited. If a request has been resolved for less than 24 hours, you'll see the option to **reactivate** instead of **Edit**. Once reactivated, you can again edit the request.  
 
+> [!NOTE]
+> The severity level can only be set for certain support request types. If selecting a severity level wasn't an option when you created the support request, you won't be able to edit your support request.
+
 ### Provide feedback
 
 We appreciate your feedback and use it to improve the admin support experience.
 
 When you're the primary contact on for a support request, you'll receive an email from Microsoft Managed Desktop Operations. The email will ask about your experience after your issue has been resolved. Feedback is actively monitored and shared with engineering to improve the service and prioritize future features. Be sure to focus on your experience and not include personal information in the feedback form. For more information about privacy, see the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement).
-
-<span id="sev" />
 
 ## Support request severity definitions
 
@@ -88,7 +89,7 @@ The initial response time is the period from when you submit your support reques
 | Severity level | Situation | Initial response time | Expected response from you |
 | ----- | ----- |----- | ----- |
 | **Severity A: <br> Critical Impact** | **Critical business impact** <br>Your business has significant loss or degradation of services and requires immediate attention.<p>**Major application compatibility impact**<br>Your entire business is experiencing financial impact due to devices not responding or loss of critical functionality. | **Initial:** < 1 hour <p> **Update**: 60 minutes <br> 24-hour support every day is available.</p> | When you select Severity A, you confirm that the issue has critical business impact, with severe loss and degradation of services. <br><br> The issue demands an immediate response, and you commit to continuous engagement every day with the Microsoft team until resolution. Otherwise, Microsoft can, at its discretion, decrease the Severity to level B.<br><br> You also ensure that Microsoft has your accurate contact information.
-**Severity B: <br> Moderate Impact** | **Moderate business impact**<br>Your business has moderate loss or degradation of services, but work can reasonably continue in an impaired manner.<p>**Moderate application compatibility impact**<br>A specific business group is no longer productive, due to devices not responding or loss of critical functionality.| **Initial**: < 4 hours. <p> **Update**: 12 hours; 24 hours a day during admin support hours (Monday through Friday).| When you select Severity B, you confirm that the issue has moderate impact to your business with loss and degradation of services. However, workarounds enable reasonable, albeit temporary, business continuity. <br><br> The issue demands an urgent response. If you select all day every day support when you submit the support request, you commit to continuous engagement every day with the Microsoft team until resolution. Otherwise, Microsoft might, at its discretion, decrease the severity to level C. If you select admin support-hours support when you submit a Severity B incident, Microsoft will contact you during admin support hours only.<br><br>You also ensure that Microsoft has your accurate contact information.
+**Severity B: <br> Moderate Impact** | **Moderate business impact**<br>Your business has moderate loss or degradation of services, but work can reasonably continue in an impaired manner.<p>**Moderate application compatibility impact**<br>A specific business group is no longer productive, due to devices not responding or loss of critical functionality.| **Initial**: < 4 hours. <p> **Update**: 12 hours; 24 hours a day during admin support hours (Monday through Friday).| When you select Severity B, you confirm that the issue has moderate impact to your business with loss and degradation of services. However, workarounds enable reasonable, albeit temporary, business continuity. <br><br> The issue demands an urgent response. If you select *all day every day support* when you submit the support request, you commit to continuous engagement every day with the Microsoft team until resolution. Otherwise, Microsoft might, at its discretion, decrease the severity to level C. If you select *admin support-hours support* when you submit a Severity B incident, Microsoft will contact you during admin support hours only.<br><br>You also ensure that Microsoft has your accurate contact information.
 **Severity C: <br> Minimal Impact** | **Minimum business impact**<br> Your business is functioning with minor impediments of services.<p>**Minor application compatibility impact**<br>Potentially unrelated users experience minor compatibility issues that don't prevent productivity. | **Initial**: < 8 hours.<p> **Update**: 24 hours; Support 24 hours a day during admin support hours (Monday through Friday). | When you select Severity C, you confirm that the issue has minimum impact to your business with minor impediment of service.<br><br> For a Severity C incident, Microsoft will contact you during admin support hours only.<br><br> You also ensure that Microsoft has your accurate contact information.
 
 ### More support request information

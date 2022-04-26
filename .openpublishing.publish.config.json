@@ -7,7 +7,8 @@
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [
-        "o365-21vianet", "o365-worldwide"
+        "o365-21vianet",
+        "o365-worldwide"
       ],
       "open_to_public_contributors": true,
       "type_mapping": {
@@ -32,13 +33,13 @@
     {
       "path_to_root": "_themes",
       "url": "https://github.com/Microsoft/templates.docs.msft",
-      "branch": "master",
+      "branch": "main",
       "branch_mapping": {}
     },
     {
       "path_to_root": "_themes.pdf",
       "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
-      "branch": "master",
+      "branch": "main",
       "branch_mapping": {}
     }
   ],
@@ -47,7 +48,7 @@
       "Publish",
       "Pdf"
     ],
-    "master": [
+    "main": [
       "Publish",
       "Pdf"
     ],

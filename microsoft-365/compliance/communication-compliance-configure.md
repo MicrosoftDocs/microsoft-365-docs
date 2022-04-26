@@ -1,6 +1,7 @@
 ---
 title: "Get started with communication compliance"
 description: "Set up communication compliance policies to configure user communications for review."
+keywords: Microsoft 365, Microsoft Purview, compliance, communication compliance
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -25,20 +26,22 @@ search.appverid:
 
 # Get started with communication compliance
 
-Use communication compliance policies to identify user communications for examination by internal or external reviewers. For more information about how communication compliance policies can help you monitor communications in your organization, see [communication compliance policies in Microsoft 365](communication-compliance.md). If you'd like to review how Contoso quickly configured a communication compliance policy to monitor for inappropriate content in Microsoft Teams, Exchange Online, and Yammer communications, check out this [case study](communication-compliance-case-study.md).
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Use communication compliance policies to identify user communications for examination by internal or external reviewers. For more information about how communication compliance policies can help you monitor communications in your organization, see [communication compliance policies](communication-compliance.md). If you'd like to review how Contoso quickly configured a communication compliance policy to monitor for inappropriate content in Microsoft Teams, Exchange Online, and Yammer communications, check out this [case study](communication-compliance-case-study.md).
 
 ## Subscriptions and licensing
 
 Before you get started with communication compliance, you should confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) and any add-ons. To access and use communication compliance, your organization must have one of the following subscriptions or add-ons:
 
-- Microsoft 365 E5/A5/G5 subscription (paid or trial version)
-- Microsoft 365 E3/A3/G5 subscription + the Microsoft 365 E5/A5/G5 Compliance add-on
-- Microsoft 365 E3/A3/G5 subscription + the Microsoft 365 E5/A5/G5 Insider Risk Management add-on
+- Microsoft 365 E5/A5/F5/G5 subscription (paid or trial version)
+- Microsoft 365 E3/A3/F3/G5 subscription + the Microsoft 365 E5/A5/F5/G5 Compliance add-on
+- Microsoft 365 E3/A3/F3/G5 subscription + the Microsoft 365 E5/A5/F5/G5 Insider Risk Management add-on
 - Office 365 Enterprise E5 subscription (paid or trial version)
 - Office 365 A5 subscription (paid or trial version)
 - Office 365 Enterprise E3 subscription + the Office 365 Advanced Compliance add-on (no longer available for new subscriptions, see note)
 
-Users included in communication compliance policies must be assigned one of the licenses above.
+Users included in communication compliance policies must be assigned one of the licenses above. For more information about subscriptions and licensing, see [Microsoft 365 guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#communication-compliance).
 
 > [!IMPORTANT]
 > Communication compliance is currently available in tenants hosted in geographical regions and countries supported by Azure service dependencies. To verify that communication compliance is supported for your organization, see [Azure dependency availability by country/region](/troubleshoot/azure/general/dependency-availability-by-country).
@@ -63,12 +66,12 @@ Activity involving [sensitive information types](/microsoft-365/compliance/commu
 > [!IMPORTANT]
 > After configuring your role groups, it may take up to 30 minutes for the role group permissions to apply to assigned users across your organization.
 
-There are six role groups used to configure initial permissions to manage communication compliance features. To make **Communication compliance** available as a menu option in Microsoft 365 compliance center and to continue with these configuration steps, you must be assigned to one of the following roles or role groups:
+There are six role groups used to configure initial permissions to manage communication compliance features. To make **Communication compliance** available as a menu option in Microsoft Purview compliance portal and to continue with these configuration steps, you must be assigned to one of the following roles or role groups:
 
 - Azure Active Directory [*Global Administrator*](/azure/active-directory/roles/permissions-reference#global-administrator) role
 - Azure Active Directory [*Compliance Administrator*](/azure/active-directory/roles/permissions-reference#compliance-administrator) role
-- Microsoft 365 compliance center [*Organization Management*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) role group
-- Microsoft 365 compliance center [*Compliance Administrator*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) role group
+- Microsoft Purview compliance portal [*Organization Management*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) role group
+- Microsoft Purview compliance portal [*Compliance Administrator*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) role group
 - *Communication Compliance* role group
 - *Communication Compliance Admin* role group
 
@@ -76,8 +79,8 @@ Members of the following roles have the same solution permissions included with 
 
 - Azure Active Directory *Global Administrator*
 - Azure Active Directory *Compliance Administrator*
-- Microsoft 365 compliance center *Organization Management*
-- Microsoft 365 compliance center *Compliance Administrator*
+- Microsoft Purview compliance portal *Organization Management*
+- Microsoft Purview compliance portal *Compliance Administrator*
 
 > [!IMPORTANT]
 > Make sure you always have at least one user in the *Communication Compliance* or *Communication Compliance Admin* role groups (depending on the option you choose) so that your communication compliance configuration doesn't get in to a 'zero administrator' scenario if specific users leave your organization.
@@ -91,7 +94,7 @@ Choose from these solution role group options when configuring and managing comm
 | **Communication Compliance** | Use this role group to manage communication compliance for your organization in a single group. By adding all user accounts for designated administrators, analysts, investigators, and viewers, you can configure communication compliance permissions in a single group. This role group contains all the communication compliance permission roles. This configuration is the easiest way to quickly get started with communication compliance and is a good fit for organizations that don't need separate permissions defined for separate groups of users. Users that create policies as a communication compliance administrator must have their mailbox hosted on Exchange Online.|
 | **Communication Compliance Admin** | Use this role group to initially configure communication compliance and later to segregate communication compliance administrators into a defined group. Users assigned to this role group can create, read, update, and delete communication compliance policies, global settings, and role group assignments. Users assigned to this role group can't view message alerts. Users that create policies as a communication compliance administrator must have their mailbox hosted on Exchange Online.|
 | **Communication Compliance Analyst** | Use this group to assign permissions to users that will act as communication compliance analysts. Users assigned to this role group can view policies where they're assigned as Reviewers, view message metadata (not message content), escalate to additional reviewers, or send notifications to users. Analysts can't resolve pending alerts. |
-| **Communication Compliance Investigator** | Use this group to assign permissions to users that will act as communication compliance investigators. Users assigned to this role group can view message metadata and content, escalate to additional reviewers, escalate to an Advanced eDiscovery case, send notifications to users, and resolve the alert. |
+| **Communication Compliance Investigator** | Use this group to assign permissions to users that will act as communication compliance investigators. Users assigned to this role group can view message metadata and content, escalate to additional reviewers, escalate to an eDiscovery (Premium) case, send notifications to users, and resolve the alert. |
 | **Communication Compliance Viewer** | Use this group to assign permissions to users that will manage communication reports. Users assigned to this role group can access all reporting widgets on the communication compliance home page and can view all communication compliance reports. |
 
 ### Option 1: Assign all compliance users to the Communication Compliance role group
@@ -114,7 +117,7 @@ Choose from these solution role group options when configuring and managing comm
 
 Use this option to assign users to specific role groups to segment communication compliance access and responsibilities among different users in your organization.
 
-1. Sign into the [Microsoft 365 compliance center](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization, and then go to the **Permissions**</a>.
+1. Sign into the [Microsoft Purview compliance portal](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization, and then go to the **Permissions**</a>.
 
 2. Select the link to view and manage roles in Office 365.
 
@@ -203,14 +206,14 @@ For more information about configuring Yammer in Native Mode, see:
 ## Step 5 (required): Create a communication compliance policy
 
 >[!IMPORTANT]
->Using PowerShell to create and manage communication compliance policies isn't supported. To create and manage these policies, you must use the policy management controls in the [Microsoft 365 communication compliance solution](https://compliance.microsoft.com/supervisoryreview).
+>Using PowerShell to create and manage communication compliance policies isn't supported. To create and manage these policies, you must use the policy management controls in the [communication compliance solution](https://compliance.microsoft.com/supervisoryreview).
 
 >[!TIP]  
 >Want to see an in-depth walkthrough of setting up a new communication compliance policy and remediating an alert? Check out [this 15-minute video](communication-compliance-plan.md#creating-a-communication-compliance-policy-walkthrough) to see a demonstration of how communication compliance policies can help you detect inappropriate messages, investigate potential violations, and remediate compliance issues.
 
-1. Sign into the [Microsoft 365 compliance center](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization.
+1. Sign into the [Microsoft Purview compliance portal](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization.
 
-2. In the Microsoft 365 compliance center, select **Communication compliance**.
+2. In the Microsoft Purview compliance portal, select **Communication compliance**.
 
 3. Select the **Policies** tab.
 
@@ -280,9 +283,9 @@ If you want to have the option of responding to a policy alert by sending a remi
 
 You can also choose to enable anonymization for displayed usernames when investigating policy matches and taking action on messages.
 
-1. Sign into the [Microsoft 365 compliance center](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization.
+1. Sign into the [Microsoft Purview compliance portal](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization.
 
-2. In the Microsoft 365 compliance center, go to **Communication compliance**.
+2. In the Microsoft Purview compliance portal, go to **Communication compliance**.
 
 3. To configure anonymization for usernames, select the **Privacy** tab.
 
@@ -304,7 +307,7 @@ You can also choose to enable anonymization for displayed usernames when investi
 
 ## Step 8 (optional): Test your communication compliance policy
 
-After you create a communication compliance policy, it's a good idea to test it to make sure that the conditions you defined are being properly enforced by the policy. You may also want to [test your data loss prevention (DLP) policies](create-test-tune-dlp-policy.md) if your communication compliance policies include sensitive information types. Make sure you give your policies time to activate so that the communications you want to test are captured.
+After you create a communication compliance policy, it's a good idea to test it to make sure that the conditions you defined are being properly enforced by the policy. You may also want to [test your Microsoft Purview Data Loss Prevention (DLP) policies](create-test-tune-dlp-policy.md) if your communication compliance policies include sensitive information types. Make sure you give your policies time to activate so that the communications you want to test are captured.
 
 Follow these steps to test your communication compliance policy:
 

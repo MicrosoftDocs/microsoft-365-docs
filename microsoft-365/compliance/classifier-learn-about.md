@@ -23,6 +23,8 @@ description: "Trainable classifiers can recognize various types of content for l
 
 # Learn about trainable classifiers
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Classifying and labeling content so it can be protected and handled properly is the starting place for the information protection discipline. Microsoft 365 has three ways to classify content.
 
 ## Manually
@@ -38,7 +40,7 @@ This category of classification mechanisms includes finding content by:
 - Recognizing an item because it's a variation on a template [(document finger printing)](document-fingerprinting.md).
 - Using the presence of exact strings [exact data match](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types).
 
-Sensitivity and retention labels can then be automatically applied to make the content available for use in [Learn about data loss prevention](dlp-learn-about-dlp.md) and [auto-apply polices for retention labels](apply-retention-labels-automatically.md).
+Sensitivity and retention labels can then be automatically applied to make the content available for use in [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md) and [auto-apply polices for retention labels](apply-retention-labels-automatically.md).
 
 ## Classifiers
 
@@ -70,7 +72,7 @@ Microsoft 365 comes with multiple pre-trained classifiers:
 > We are deprecating the **Offensive Language** pre-trained classifier because it has been producing a high number of false positives. Don't use it and if you are currently using it, you should move your business processes off of it. We recommend using the **Threat**, **Profanity**, and **Harassment** pre-trained classifiers instead.
 
 - **Resumes**: detects docx, .pdf, .rtf, .txt items that are textual accounts of an applicant's personal, educational, professional qualifications, work experience, and other personally identifying information
-- **Source Code**: detects items that contain a set of instructions and statements written in the top 25 used computer programming languages on GitHub: ActionScript, C, C#, C++, Clojure, CoffeeScript, Go, Haskell, Java, JavaScript, Lua, MATLAB, Objective-C, Perl, PHP, Python, R, Ruby, Scala, Shell, Swift, TeX, Vim Script.
+- **Source Code**: detects items that contain a set of instructions and statements written in the top 25 used computer programming languages on GitHub: ActionScript, C, C#, C++, Clojure, CoffeeScript, Go, Haskell, Java, JavaScript, Lua, MATLAB, Objective-C, Perl, PHP, Python, R, Ruby, Scala, Shell, Swift, TeX, Vim Script. Detects content in .msg, .as, .h, .c, .cs, .cc, .cpp, .hpp, .cxx, .hh, .c++, .clj, .edn, .cljc, .cljs, .coffee, .litcoffee, .go, .hs, .lhs, .java, .jar, .js, .mjs, .lua, .m, .mm, .pl, .pm, .t, .xs, .pod, .php, .phar, .php4, .pyc, .R, .r, .rda, .RData, .rds, .rb, .scala, .sc, .sh, .swift files.
 
 > [!NOTE]
 > Source Code is trained to detect when the bulk of the text is source code. It does not detect source code text that is interspersed with plain text.
@@ -89,7 +91,7 @@ Microsoft 365 comes with multiple pre-trained classifiers:
 - **Tax**: Detects Tax relation content such as tax planning, tax forms, tax filing, tax regulations. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, xla files.
 - **Threat**: Detects a specific category of offensive language text items related to threats to commit violence or do physical harm or damage to a person or property. Detects content in .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp, .svg files.
 
-These appear in the **Microsoft 365 compliance center** > **Data classification** > **Trainable classifiers** view with the status of `Ready to use`.
+These appear in the **Microsoft Purview compliance portal** > **Data classification** > **Trainable classifiers** view with the status of `Ready to use`.
 
 ![classifiers-pre-trained-classifiers.](../media/classifiers-ready-to-use-classifiers.png)
 
@@ -98,14 +100,14 @@ These appear in the **Microsoft 365 compliance center** > **Data classification*
 
 Pre-trained classifiers can scan content in these languages:
 
-•	Chinese (Simplified)
-•	English
-•	French
-•	German
-•	Italian
-•	Japanese
-•	Portuguese
-•	Spanish
+- Chinese (Simplified)
+- English
+- French
+- German
+- Italian
+- Japanese
+- Portuguese
+- Spanish
 
 ### Custom classifiers
 
