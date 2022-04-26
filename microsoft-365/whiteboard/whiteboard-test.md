@@ -1,5 +1,5 @@
 ---
-title: Microsoft Whiteboard Test
+title: Microsoft Whiteboard test
 ms.author: chucked
 author: chuckedmonson
 manager: alexfaulkner
