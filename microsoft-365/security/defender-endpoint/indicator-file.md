@@ -48,11 +48,9 @@ It's important to understand the following prerequisites prior to creating indic
 
 - Supported on devices with Windows 10, version 1703 or later, Windows Server 2019, Windows Server 2016, Windows Server 2012 R2, and Windows Server 2022.
     
-   >[!NOTE]
-    >Windows Server 2016 and Windows Server 2012 R2 will need to be onboarded using the instructions in [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) for this feature to work. 
-    
-   >[!NOTE]
-    >Custom file indicators with the Allow, Block and Remediate actions are now also available in the [public preview for the enhanced antimalware engine capabilities for macOS and Linux](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/enhanced-antimalware-engine-capabilities-for-linux-and-macos/ba-p/3292003).
+   > [!NOTE]
+   > Windows Server 2016 and Windows Server 2012 R2 will need to be onboarded using the instructions in [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) for this feature to work. 
+   > Custom file indicators with the Allow, Block and Remediate actions are now also available in the [public preview for the enhanced antimalware engine capabilities for macOS and Linux](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/enhanced-antimalware-engine-capabilities-for-linux-and-macos/ba-p/3292003).
 
 - To start blocking files, you first need to [turn on the "block or allow" feature](advanced-features.md) in Settings.
 
