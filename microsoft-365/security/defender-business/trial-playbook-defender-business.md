@@ -147,7 +147,7 @@ In the next 30 days, we recommend you try out your new security capabilities, as
 
 ### Use your Threat & Vulnerability Management dashboard
 
-Defender for Business includes a Threat & Vulnerability Management dashboard that is designed to save your security team time and effort. [Use your Threat & Vulnerability Management dashboard](mdb-view-tvm-dashboard.md):
+Defender for Business includes a Threat & Vulnerability Management dashboard that is designed to save your security team time and effort. [Use your Threat & Vulnerability Management dashboard](mdb-view-tvm-dashboard.md).
 
 - View your exposure score, which is associated with devices in your organization.   
 - View your top security recommendations, such as addressing impaired communications with devices, turning on firewall protection, or updating Microsoft Defender Antivirus definitions.   
@@ -155,7 +155,7 @@ Defender for Business includes a Threat & Vulnerability Management dashboard tha
 
 ### View and respond to detected threats
 
-As threats are detected and alerts are triggered, incidents are created. Your organization's security team can view and manage incidents in the Microsoft 365 Defender portal. [View and respond to detected threats](mdb-view-manage-incidents.md):   
+As threats are detected and alerts are triggered, incidents are created. Your organization's security team can view and manage incidents in the Microsoft 365 Defender portal. [View and respond to detected threats](mdb-view-manage-incidents.md). 
 
 - [View and manage incidents](mdb-view-manage-incidents.md).
 - [Respond to and mitigate threats](mdb-respond-mitigate-threats.md).
