@@ -32,7 +32,7 @@ Reports are available for the last 7 days, 30 days, 90 days, and 180 days. Data 
   
 ## Watch: Act on a usage report in Office 365
   
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/fb726f8e-aead-43b2-ba0f-53ba5b886bf7?autoplay=false]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4VjrX?autoplay=false]
   
 ## How to get to the Reports dashboard
 
