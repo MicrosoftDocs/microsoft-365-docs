@@ -168,7 +168,8 @@ See [View and respond to detected threats](mdb-view-manage-incidents.md).
 
 ### Review security policies
 
-In Defender for Business, security settings are configured through policies that are applied to devices. Defender for Business includes preconfigured policies to help protect your company's devices as soon as they are onboarded, safeguarding your organization against identity, device, application, and document security threats. 
+In Defender for Business, security settings are configured through policies that are applied to devices. Defender for Business includes preconfigured policies to help protect your company's devices as soon as they are onboarded, safeguarding your organization against identity, device, application, and document security threats. [Review security policies](mdb-view-edit-create-policies.md).
+
 
 | Policy type  | What to do  |
 |---------|---------|
@@ -177,7 +178,6 @@ In Defender for Business, security settings are configured through policies that
 | Firewall protection | - [Review your default firewall settings](mdb-firewall.md#default-firewall-settings-in-defender-for-business) <br/>- [Understand firewall settings you can configure](mdb-firewall.md#firewall-settings-you-can-configure-in-defender-for-business) |
 | Web content filtering | Web content filtering enables your security team to track and regulate access to websites based on their content categories. It is not turned on by default, so you will need to set it up if you want this capability for your organization. See [Set up web content filtering](mdb-configure-security-settings.md#set-up-web-content-filtering). |
 
-For more information, see [Review security policies](mdb-view-edit-create-policies.md).
   
 ### Prepare for ongoing security management
 
