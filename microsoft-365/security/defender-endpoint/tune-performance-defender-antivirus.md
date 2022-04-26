@@ -26,7 +26,7 @@ ms.technology: mde
 **Platforms**
 - Windows
 
-**What is Microsoft Defender Antivirus performance analyzer?**
+## What is Microsoft Defender Antivirus performance analyzer?
 
 In some cases, you might need to tune the performance of Microsoft Defender Antivirus as it scans specific files and folders. Performance analyzer is a PowerShell command-line tool that helps determine which files, file extensions, and processes might be causing performance issues on individual endpoints. This information can be used to better assess performance issues and apply remediation actions.
 
@@ -71,18 +71,18 @@ For more information on command-line parameters and options, see the [New-MpPerf
 > to stop the existing trace with the new command:
 > **wpr -cancel -instancename MSFT_MpPerformanceRecording**
 
-### Performance tuning data and information
+## Performance tuning data and information
 
 Based on the query, the user will be able to view data for scan counts, duration (total/min/average/max/median), path, process, and reason for scan. The image below shows sample output for a simple query of the top 10 files for scan impact.
 
 :::image type="content" source="images/example-output.png" alt-text="Example output for a basic TopFiles query" lightbox="images/example-output.png":::
 
-### Additional functionality: exporting and converting to CSV and JSON
+## Additional functionality: exporting and converting to CSV and JSON
 
 The results of the performance analyzer can also be exported and converted to a CSV or JSON file.
 For examples that describe the process of "export" and "convert" through sample codes, see below.
 
-#### For CSV
+### For CSV
 
 - **To export**:
 `(Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:1000). TopScans | Export-CSV -Path:.\Repro-Install-Scans.csv -Encoding:UTF8 -NoTypeInformation`
@@ -90,15 +90,14 @@ For examples that describe the process of "export" and "convert" through sample 
 - **To convert**:
 `(Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:100). TopScans | ConvertTo-Csv -NoTypeInformation`
 
-#### For JSON
+### For JSON
 
 - **To convert**:
 `(Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:1000). TopScans | ConvertTo-Json -Depth:1`
 
 To ensure machine-readable output for exporting with other data processing systems, it is recommended to use -Raw parameter for Get-MpPerformanceReport. See below for details
 
-
-### Requirements
+## Requirements
 
 Microsoft Defender Antivirus performance analyzer has the following prerequisites:
 
@@ -166,7 +165,6 @@ New-MpPerformanceRecording -RecordTo:.\Defender-scans.etl -Seconds 60
 ```
 The above command collects a performance recording for the duration in seconds specified by parameter -Seconds. This is recommended for users conducting batch collections that require no interaction or prompt.
 
-
 #### Parameters: New-MpPerformanceRecording
 
 ##### -RecordTo
@@ -192,6 +190,7 @@ Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
+
 ##### -Seconds
 Specifies the duration of the performance recording in seconds. This is recommended for users conducting batch collections that require no interaction or prompt.
 
@@ -288,7 +287,6 @@ Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopFiles:10 -TopExtensions:1
 ```
 Using -Raw in the above command specifies that the output should be machine readable and readily convertible to serialization formats like JSON
 
-
 #### Parameters: Get-MpPerformanceReport
 
 ##### -MinDuration
@@ -326,7 +324,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -TopExtensions
+##### -TopExtensions
 
 Specifies how many top extensions to output, sorted by "Duration".
 
@@ -338,7 +336,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -TopExtensionsPerProcess
+##### -TopExtensionsPerProcess
 
 Specifies how many top extensions to output for each top process, sorted by "Duration".
 
@@ -350,7 +348,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -TopFiles
+##### -TopFiles
 
 Requests a top-files report and specifies how many top files to output, sorted by "Duration".
 
@@ -362,7 +360,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -TopFilesPerExtension
+##### -TopFilesPerExtension
 
 Specifies how many top files to output for each top extension, sorted by "Duration".
 
@@ -374,7 +372,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -TopFilesPerProcess
+##### -TopFilesPerProcess
 
 Specifies how many top files to output for each top process, sorted by "Duration".
 
@@ -386,7 +384,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -TopProcesses
+##### -TopProcesses
 
 Requests a top-processes report and specifies how many of the top processes to output, sorted by "Duration".
 
@@ -398,7 +396,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -TopProcessesPerExtension
+##### -TopProcessesPerExtension
 
 Specifies how many top processes to output for each top extension, sorted by "Duration".
 
@@ -410,7 +408,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -TopProcessesPerFile
+##### -TopProcessesPerFile
 
 Specifies how many top processes to output for each top file, sorted by "Duration ".
 
@@ -422,7 +420,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -TopScans
+##### -TopScans
 
 Requests a top-scans report and specifies how many top scans to output, sorted by "Duration".
 
@@ -434,7 +432,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -TopScansPerExtension
+##### -TopScansPerExtension
 
 Specifies how many top scans to output for each top extension, sorted by "Duration".
 
@@ -446,7 +444,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -TopScansPerExtensionPerProcess
+##### -TopScansPerExtensionPerProcess
 
 Specifies how many top scans to output for each top extension for each top process, sorted by "Duration".
 
@@ -458,7 +456,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -TopScansPerFile
+##### -TopScansPerFile
 
 Specifies how many top scans to output for each top file, sorted by "Duration".
 
@@ -470,7 +468,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -TopScansPerFilePerExtension
+##### -TopScansPerFilePerExtension
 
 Specifies how many top scans to output for each top file for each top extension, sorted by "Duration".
 
@@ -482,7 +480,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -TopScansPerFilePerProcess
+##### -TopScansPerFilePerProcess
 
 Specifies how many top scans for output for each top file for each top process, sorted by "Duration".
 
@@ -494,7 +492,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -TopScansPerProcess
+##### -TopScansPerProcess
 
 Specifies how many top scans to output for each top process in the Top Processes report, sorted by "Duration".
 
@@ -506,7 +504,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -TopScansPerProcessPerExtension
+##### -TopScansPerProcessPerExtension
 
 Specifies how many top scans for output for each top process for each top extension, sorted by "Duration".
 
@@ -518,7 +516,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -TopScansPerProcessPerFile
+##### -TopScansPerProcessPerFile
 
 Specifies how many top scans for output for each top process for each top file, sorted by "Duration".
 
@@ -529,12 +527,14 @@ Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
-> [!TIP]
-> If you’re looking for Antivirus related information for other platforms, see:
-> - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
-> - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
-> - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
-> - [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md)
-> - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
-> - [Configure Defender for Endpoint on Android features](android-configure.md)
-> - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
+
+## Additional resources
+
+If you’re looking for Antivirus related information for other platforms, see:
+
+- [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
+- [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
+- [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+- [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md)
+- [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
+- [Configure Defender for Endpoint on Android features](android-configure.md)- [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
