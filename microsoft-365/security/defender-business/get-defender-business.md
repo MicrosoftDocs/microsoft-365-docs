@@ -25,7 +25,7 @@ If you don't already have Microsoft Defender for Business, you can choose from s
 - [Get Microsoft 365 Business Premium](#get-microsoft-365-business-premium), which now includes Defender for Business
 - [Work with a Microsoft solution provider](#work-with-a-microsoft-solution-provider) who can help you get everything set up and configured
 
-If you have signed up for a trial, after you receive your acceptance email, you can [activate your trial and assign user licenses](#activate-your-trial), and then proceed to your [next steps](#next-steps).
+If you have signed up for a trial, after you receive your acceptance email, you can [activate your trial and assign user licenses](#how-to-activate-your-trial), and then proceed to your [next steps](#next-steps).
 
 >
 > **Got a minute?**
