@@ -95,7 +95,7 @@ For examples that describe the process of "export" and "convert" through sample 
 - **To convert**:
 `(Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:1000). TopScans | ConvertTo-Json -Depth:1`
 
-To ensure machine-readable output for exporting batch processing with other data processing systems, it is recommended to use -Raw parameter for Get-MpPerformanceReport. See below for details
+To ensure machine-readable output for exporting with other data processing systems, it is recommended to use -Raw parameter for Get-MpPerformanceReport. See below for details
 
 
 ### Requirements
@@ -160,7 +160,7 @@ New-MpPerformanceRecording -RecordTo C:\LocalPathOnServer02\trace.etl -Session $
 
 The above command collects a performance recording on Server02 (as specified by argument $s of parameter Session) and saves it to the specified path: **C:\LocalPathOnServer02\trace.etl** on Server02.
 
-##### Example 3: Collect a performance recording in non-interactive mode!
+##### Example 3: Collect a performance recording in non-interactive mode
 ```powershell
 New-MpPerformanceRecording -RecordTo:.\Defender-scans.etl -Seconds 60 
 ```
@@ -316,7 +316,7 @@ Accept wildcard characters: False
 ```
 ##### -Raw
 
-Specifies that output of performance recording should be machine readable and readily convertible to serialization formats like JSON (for example, via Convert-to-JSON command). This is recommended for users interested in batch processing with other data processing systems. Collections and elements are not to be formatted. TimeSpan values are represented as number of 100-nanosecond intervals. DateTime values are represented as number of 100-nanosecond intervals since January 1, 1601 (UTC). 
+Specifies that output of performance recording should be machine readable and readily convertible to serialization formats like JSON (for example, via Convert-to-JSON command). This is recommended for users interested in batch processing with other data processing systems. 
 
 ```yaml
 Type: <SwitchParameter>
