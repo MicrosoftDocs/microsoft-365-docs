@@ -21,9 +21,11 @@ description: "Monitor and manage the disposal of content for when you use a disp
 
 # Disposition of content
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Use the **Disposition** page from **Records Management** in the Microsoft 365 compliance center to manage disposition reviews and view the metadata of [records](records-management.md#records) that have been automatically deleted at the end of their retention period.
+Use the **Disposition** page from **Records Management** in the Microsoft Purview compliance portal to manage disposition reviews and view the metadata of [records](records-management.md#records) that have been automatically deleted at the end of their retention period.
 
 ## Prerequisites for viewing content dispositions
 
@@ -31,31 +33,31 @@ To manage disposition reviews and confirm that records have been deleted, you mu
 
 ### Permissions for disposition
 
-To successfully access the **Disposition** tab in the Microsoft 365 compliance center, users must have the **Disposition Management** role. From December 2020, this role is now included in the **Records Management** default role group.
+To successfully access the **Disposition** tab in the Microsoft Purview compliance portal, users must have the **Disposition Management** role. From December 2020, this role is now included in the **Records Management** default role group.
 
 > [!NOTE]
 > By default, a global admin isn't granted the **Disposition Management** role. 
 
 To grant users just the permissions they need for disposition reviews without granting them permissions to view and configure other features for retention and records management, create a custom role group (for example, named "Disposition Reviewers") and grant this group the **Disposition Management** role.
 
-For instructions to add users to the default roles or create your own role groups, see [Permissions in the Microsoft 365 compliance center](microsoft-365-compliance-center-permissions.md).
+For instructions to add users to the default roles or create your own role groups, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
 
 Additionally:
 
-- To view the contents of items during the disposition process, add users to the **Content Explorer Content Viewer** role group. If users don't have the permissions from this role group, they can still select a disposition review action to complete the disposition review, but must do so without being able to view the item's contents from the mini-preview pane in the compliance center.
+- To view the contents of items during the disposition process, add users to the **Content Explorer Content Viewer** role group. If users don't have the permissions from this role group, they can still select a disposition review action to complete the disposition review, but must do so without being able to view the item's contents from the mini-preview pane in the Microsoft Purview compliance portal.
 
 - By default, each person that accesses the **Disposition** page sees only items that they are assigned to review. For a records management administrator to see all items assigned to all users, and all retention labels that are configured for disposition review: Navigate to **Records management settings** > **Disposition** to select and then enable a mail-enabled security group that contains the administrator accounts.
     
     Microsoft 365 groups and security groups that aren't mail-enabled don't support this feature and don't display in the list to select. If you need to create a new mail-enabled security group, use the link to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> to create the new group. 
     
     > [!IMPORTANT]
-    > After you have enabled the group, you can't change it in the compliance center. See the next section for how to enable a different group by using PowerShell.
+    > After you have enabled the group, you can't change it in the Microsoft Purview compliance portal. See the next section for how to enable a different group by using PowerShell.
 
 - The **Records management settings** option is visible only to record management administrators. 
 
 #### Enabling another security group for disposition
 
-After you have enabled a security group for disposition from the **Records management settings** in the Microsoft 365 compliance center, you can't disable this permission for the group or replace the selected group in the compliance center. However, you can enable another mail-enabled security group by using the [Enable-ComplianceTagStorage](/powershell/module/exchange/enable-compliancetagstorage) cmdlet.
+After you have enabled a security group for disposition from the **Records management settings** in the Microsoft Purview compliance portal, you can't disable this permission for the group or replace the selected group in the Microsoft Purview compliance portal. However, you can enable another mail-enabled security group by using the [Enable-ComplianceTagStorage](/powershell/module/exchange/enable-compliancetagstorage) cmdlet.
 
 For example: 
 
@@ -65,7 +67,7 @@ Enable-ComplianceTagStorage -RecordsManagementSecurityGroupEmail dispositionrevi
 
 ### Enable auditing
 
-Make sure that auditing is enabled at least one day before the first disposition action. For more information, see [Search the audit log in the compliance center](search-the-audit-log-in-security-and-compliance.md). 
+Make sure that auditing is enabled at least one day before the first disposition action. For more information, see [Search the audit log in the Microsoft Purview compliance portal](search-the-audit-log-in-security-and-compliance.md). 
 
 ## Disposition reviews
 
@@ -81,7 +83,7 @@ When a disposition review is triggered at the end of the retention period, the r
 
 You can customize the notification email that reviewers receive, including instructions in different languages. For multi-language support, you must specify the translations yourself and this custom text is displayed to all reviewers irrespective of their locale.
 
-Users receive an initial email notification per label at the end of the item's retention period, with a reminder per label once a week of all disposition reviews that they are assigned. They can click the link in the notification and reminder emails to go directly to the **Records management** > **Disposition** page in the Microsoft 365 compliance center to review the content and take an action. Alternately, the reviewers can navigate to this **Disposition** page in the compliance center. Then:
+Users receive an initial email notification per label at the end of the item's retention period, with a reminder per label once a week of all disposition reviews that they are assigned. They can click the link in the notification and reminder emails to go directly to the **Records management** > **Disposition** page in the Microsoft Purview compliance portal to review the content and take an action. Alternately, the reviewers can navigate to this **Disposition** page in the Microsoft Purview compliance portal. Then:
 
 - Reviewers see only the disposition reviews that are assigned to them, whereas administrators who are added to the selected security group for records manager see all disposition reviews.
 
@@ -102,7 +104,7 @@ Administrators can see an overview of all pending dispositions in the **Overview
 
 When you select the **View all pending dispositions**, you're taken to the **Disposition** page. For example:
 
-![Dispositions page in Microsoft 365 compliance center.](../media/disposition-tab.png)
+![Dispositions page in the Microsoft Purview compliance portal.](../media/disposition-tab.png)
 
 
 ### Workflow for a disposition review
@@ -150,7 +152,7 @@ Example default email notification sent to a reviewer:
 
 You can customize the email messages that are sent to disposition reviewers for the initial notification and then reminders.
 
-From any of the Records management pages in the compliance center, select **Records management settings**:  
+From any of the Records management pages in the Microsoft Purview compliance portal, select **Records management settings**:  
 
 ![Records management settings.](../media/record-management-settings.png)
 
@@ -168,7 +170,7 @@ Select **Save** to save any changes.
 
 ### Viewing and disposing of content
 
-When a reviewer is notified by email that content is ready to review, they can click a link in the email that takes them directly to the **Disposition** page from **Records management** in the Microsoft 365 compliance center. There, the reviewers can see how many items for each retention label are waiting disposition with the **Type** displaying **Pending disposition**. They then select a retention label, and **Open in new window** to see all content with that label:
+When a reviewer is notified by email that content is ready to review, they can click a link in the email that takes them directly to the **Disposition** page from **Records management** in the Microsoft Purview compliance portal. There, the reviewers can see how many items for each retention label are waiting disposition with the **Type** displaying **Pending disposition**. They then select a retention label, and **Open in new window** to see all content with that label:
 
 ![Open in new window for disposition review.](../media/open-in-new-window.png)
 
@@ -182,14 +184,16 @@ As you can see from the example shown, the actions supported are:
   
 - **Approve disposal**:
     - When this action is selected for an interim stage of disposition review (you have configured multiple stages): The item moves to the next disposition stage.
-    - When this action is selected for the final stage of disposition review, or there is only one stage of disposition: The item is marked as eligible for permanent deletion, which then happens within 7 days.
+    - When this action is selected for the final stage of disposition review, or there is only one stage of disposition: The item is marked as eligible for permanent deletion, which a timer job then actions within 7 days. The exact timing for the item to then be permanently deleted depends on the workload. For more information, see [How retention works for SharePoint and OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive) and [How retention works for Exchange](retention-policies-exchange.md#how-retention-works-for-exchange).
+
 - **Relabel**:
     - When this action is selected, the item exits the disposition review process for the original label. The item is then subject to the retention settings of the newly selected retention label.
+
 - **Extend**:
     - When this action is selected, disposition review is effectively suspended until the end of the extended period and then disposition review is triggered again from the first stage.
+
 - **Add reviewers**:
     - When this action is selected, the user is prompted to specify and add other users for review.
-    
     > [!NOTE]
     > This action doesn't automatically grant the [required permissions](#permissions-for-disposition) to the users who are added. If they don't have these permissions, they can't participate in the disposition review.
 

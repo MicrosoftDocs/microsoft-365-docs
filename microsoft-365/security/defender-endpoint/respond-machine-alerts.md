@@ -22,6 +22,7 @@ ms.technology: mde
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Business](/microsoft-365/security/defender-business/mdb-overview)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-respondmachine-abovefoldlink)
 
@@ -41,6 +42,14 @@ Response actions run along the top of a specific device page and include:
 
 [![Image of response actions.](images/response-actions.png)](images/response-actions.png#lightbox)
 
+> [!IMPORTANT]
+> [Microsoft Defender for Business](../defender-business/mdb-overview.md) includes the following manual response actions:
+> - Run antivirus scan
+> - Isolate device
+> - Stop and quarantine a file
+> - Add an indicator to block or allow a file
+
+> Your subscription must include Defender for Endpoint Plan 2 to have all of the response actions described in this article.
 
  You can find device pages from any of the following views:
 

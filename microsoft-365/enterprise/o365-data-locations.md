@@ -54,7 +54,7 @@ The performance of Microsoft 365 is not simply proportional to a user's distance
 
 ### How does Microsoft help me comply with my national, regional, and industry-specific regulations?
 
-To help you comply with national, regional, and industry-specific requirements governing the collection and use of individuals' data, Microsoft 365 offers the most comprehensive set of compliance offerings of any global cloud productivity provider. Please review [our compliance offerings](/compliance/regulatory/offering-home) and more details in the [Microsoft 365 Compliance](https://go.microsoft.com/fwlink/p/?linkid=862317) section on the Microsoft Trust Center. Also, certain Microsoft 365 plans offer further compliance solutions to help you manage your data, comply with legal and regulatory requirements, and monitor actions taken on your data.
+To help you comply with national, regional, and industry-specific requirements governing the collection and use of individuals' data, Microsoft 365 offers the most comprehensive set of compliance offerings of any global cloud productivity provider. Please review [our compliance offerings](/compliance/regulatory/offering-home) and more details in the [Microsoft Purview](https://go.microsoft.com/fwlink/p/?linkid=862317) section on the Microsoft Trust Center. Also, certain Microsoft 365 plans offer further compliance solutions to help you manage your data, comply with legal and regulatory requirements, and monitor actions taken on your data.
 
 ### Who can access your data and according to what rules?
 
@@ -127,7 +127,7 @@ The following global geographies can store data at rest. The locations where cus
 
 | Global Geographies | Locations where customer data may be stored |
 | --- | --- |
-| Global Geography 1 – EMEA (Europe, Middle East and Africa) | Austria, Finland, France, Ireland, Netherlands |
+| Global Geography 1 – EMEA (Europe, Middle East and Africa) | Austria, Finland, France, Ireland, Netherlands, Sweden |
 | Global Geography 2 – Asia Pacific | Hong Kong, Japan, Malaysia, Singapore, South Korea |
 | Global Geography 3 - Americas | Brazil, Chile, United States |
 
@@ -140,7 +140,7 @@ For country/region specific data centers, the following defines the cities where
 | Australia | Sydney, Melbourne |
 | Brazil | Rio, Campinas |
 | Canada | Quebec City, Toronto |
-| European Union | Austria (Vienna), Finland (Helsinki), France (Paris, Marseille), Ireland (Dublin), Netherlands (Amsterdam) |
+| European Union | Austria (Vienna), Finland (Helsinki), France (Paris, Marseille), Ireland (Dublin), Netherlands (Amsterdam), Sweden (Gävle, Sandviken, Staffanstorp) |
 | France | Paris, Marseille |
 | Germany | Frankfurt, Berlin |
 | India | Chennai, Mumbai, Pune |

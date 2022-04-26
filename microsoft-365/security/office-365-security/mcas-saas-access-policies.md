@@ -21,13 +21,13 @@ ms.prod: m365-security
 
 Microsoft Defender for Cloud Apps builds on Azure AD conditional access policies to enable real-time monitoring and control of granular actions with SaaS apps, such as blocking downloads, uploads, copy and paste, and printing. This feature adds security to sessions that carry inherent risk, such as when corporate resources are accessed from unmanaged devices or by guest users.
 
-Defender for Cloud Apps also integrates natively with Microsoft Information Protection, providing real-time content inspection to find sensitive data based on sensitive information types and sensitivity labels and to take appropriate action.
+Defender for Cloud Apps also integrates natively with Microsoft Purview Information Protection, providing real-time content inspection to find sensitive data based on sensitive information types and sensitivity labels and to take appropriate action.
 
 This guidance includes recommendations for these scenarios:
 
 - Bring SaaS apps into IT management
 - Tune protection for specific SaaS apps
-- Configure data loss prevention (DLP) to help comply with data protection regulations
+- Configure Microsoft Purview data loss prevention (DLP) to help comply with data protection regulations
 
 ## Bring SaaS apps into IT management
 

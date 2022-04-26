@@ -29,7 +29,7 @@ description: "Learn how to validate the Microsoft 365 Business Premium app prote
 # Validate app protection settings on Android or iOS devices
 
 > [!NOTE]
-> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../../security/defender-business/mdb-overview.md).
+> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../../security/defender-business/mdb-overview.md)
 
 Follow the instructions in the following sections to validate app protection settings on Android or iOS devices.
   
@@ -37,7 +37,7 @@ Follow the instructions in the following sections to validate app protection set
   
 ### Check that the app protection settings are working on user devices
 
-After you [set app configurations for Android devices](app-protection-settings-for-android-and-ios.md) to protect the apps, you can follow these steps to validate that the settings you chose work. 
+After you [set app protection settings for Android or iOS devices](../../business-premium/m365bp-app-protection-settings-for-android-and-ios.md) to protect the apps, you can follow these steps to validate that the settings you chose work. 
   
 First, make sure that the policy applies to the app in which you're going to validate it.
   
@@ -126,7 +126,7 @@ In the **Edit policy** pane, choose **Edit** next to **Protection against lost o
   
 ### Check that the App protection settings are working on user devices
 
-After you [set app configurations for iOS devices](app-protection-settings-for-android-and-ios.md) to protect apps, you can follow these steps to validate that the settings you chose work. 
+After you [set app configurations for iOS devices](../../business-premium/m365bp-protection-settings-for-windows-10-devices.md) to protect apps, you can follow these steps to validate that the settings you chose work. 
   
 First, make sure that the policy applies to the app in which you're going to validate it.
   
