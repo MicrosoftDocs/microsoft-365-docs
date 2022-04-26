@@ -530,7 +530,7 @@ Accept wildcard characters: False
 
 ## Additional resources
 
-If you’re looking for Antivirus related information for other platforms, see:
+If you’re looking for Antivirus-related information for other platforms, see:
 
 - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
 - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
