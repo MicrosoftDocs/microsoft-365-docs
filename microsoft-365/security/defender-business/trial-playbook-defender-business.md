@@ -166,7 +166,7 @@ As threats are detected and alerts are triggered, incidents are created. Your or
 
 In Defender for Business, security settings are configured through policies that are applied to devices. Defender for Business includes preconfigured policies to help protect your company's devices as soon as they are onboarded, safeguarding your organization against identity, device, application, and document security threats. [Review security policies](mdb-view-edit-create-policies.md).
 
-- [Learn about the default policies included](mdb-view-edit-create-policies.md#default-policies-in-defender-for-business).
+- [Learn about your default policies](mdb-view-edit-create-policies.md#default-policies-in-defender-for-business).
 - [View your existing policies](mdb-view-edit-create-policies.md#view-your-existing-policies).
 - [Understand policy order](mdb-policy-order.md). 
 - [Understand next-generation configuration settings](mdb-next-gen-configuration-settings.md).
