@@ -73,8 +73,8 @@ To add an organization
 1. Select **External Identities**, and then select **Cross-tenant access settings (preview)**.
 1. Select **Organizational settings**.
 1. Select **Add organization**.
-1. On the **Add organization** pane, type the full domain name (or tenant ID) for the organization.
-1. Select the organization in the search results, and then select **Add**.
+1. On the **Add organization** pane, type the full domain name (or tenant ID) for the organization and press Enter.
+1. Select **Add**.
 1. The organization appears in the organizations list. At this point, all access settings for this organization are inherited from your default settings.
 
 ### Configure inbound settings
