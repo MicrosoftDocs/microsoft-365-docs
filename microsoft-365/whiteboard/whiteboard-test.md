@@ -1,5 +1,5 @@
 ---
-title: Microsoft Whiteboard test
+title: Microsoft Whiteboard Test
 ms.author: chucked
 author: chuckedmonson
 manager: alexfaulkner
@@ -15,7 +15,7 @@ description: This is a test Microsoft Whiteboard.
 
 ---
 
-# Microsoft Whiteboard Test
+# Microsoft Whiteboard test
 
 This is a test.
 Page updated as of 4/22.
