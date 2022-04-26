@@ -140,24 +140,20 @@ If you used the setup wizard, but you need to onboard more devices, such as non-
 
 In the next 30 days, we recommend you try out the following features: 
 
-1.	**[Use your Threat & Vulnerability Management dashboard](mdb-view-tvm-dashboard.md)**. Defender for Business includes a Threat & Vulnerability Management dashboard that is designed to save your security team time and effort. You can use your Threat & Vulnerability Management dashboard to:
+1.	**[Use your Threat & Vulnerability Management dashboard](mdb-view-tvm-dashboard.md)**. Defender for Business includes a Threat & Vulnerability Management dashboard that is designed to save your security team time and effort.
 
-   - View your exposure score, which is associated with devices in your organization.
-   - View your top security recommendations, such as addressing impaired communications with devices, turning on firewall protection, or updating Microsoft Defender Antivirus definitions.
+   - View your exposure score, which is associated with devices in your organization.   
+   - View your top security recommendations, such as addressing impaired communications with devices, turning on firewall protection, or updating Microsoft Defender Antivirus definitions.   
    - View remediation activities, such as any files that were sent to quarantine, or vulnerabilities found on devices.
 
-   [Use your Threat & Vulnerability Management dashboard](mdb-view-tvm-dashboard.md).
+2.	**[View and respond to detected threats](mdb-view-manage-incidents.md)**. As threats are detected and alerts are triggered, incidents are created. Your organization's security team can view and manage incidents in the Microsoft 365 Defender portal. Try these features:   
 
-2.	**[View and respond to detected threats](mdb-view-manage-incidents.md)**. As threats are detected and alerts are triggered, incidents are created. Your organization's security team can view and manage incidents in the Microsoft 365 Defender portal. Try these features:
-   
    - [View and manage incidents](mdb-view-manage-incidents.md).
    - [Respond to and mitigate threats](mdb-respond-mitigate-threats.md).
    - [Review mediation actions in the Action Center](mdb-review-remediation-actions.md).
    - [View and use reports](mdb-reports.md).
 
 3.	**[Review security policies](mdb-view-edit-create-policies.md)**. In Defender for Business, security settings are configured through policies that are applied to devices. Defender for Business includes preconfigured policies to help protect your company's devices as soon as they are onboarded, safeguarding your organization against identity, device, application, and document security threats. 
-
-   Try these features:
 
    - Review policies:   
       - [Learn about the default policies included in Defender for Business](mdb-view-edit-create-policies.md#default-policies-in-defender-for-business).
