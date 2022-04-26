@@ -79,8 +79,6 @@
           items:
             - name: Synchronize domain users to Microsoft 365
               href: setup/manage-domain-users.md
-            - name: Enable domain-joined Windows 10 devices to be managed
-              href: setup/manage-windows-devices.md
             - name: Access resources from an Azure AD-joined device
               href: setup/access-resources.md
     - name: Overview of the Microsoft 365 admin center
@@ -173,6 +171,8 @@
              href: create-groups/restore-deleted-group.md
            - name: Manage guest access to groups
              href: create-groups/manage-guest-access-in-groups.md
+           - name: Manage ownerless groups and teams
+             href: create-groups/ownerless-groups-teams.md
         - name: Passwords 
           items:
            - name: Reset passwords
@@ -235,6 +235,8 @@
           href: get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host.md
         - name: Pilot Microsoft 365 from my custom domain
           href: misc/pilot-microsoft-365-from-my-custom-domain.md
+        - name: Add or replace your onmicrosoft.com domain
+          href: setup/add-or-replace-your-onmicrosoftcom-domain.md
         - name: Domains FAQ
           href: setup/domains-faq.yml
         - name: DNS instructions
@@ -336,7 +338,7 @@
       href: ../commerce/index.yml
     - name: Secure your organization
       items: 
-        - name: Top 10 ways to secure your data
+        - name: Best practices for securing your data
           href: security-and-compliance/secure-your-business-data.md
         - name: Multi-factor authentication for Microsoft 365
           href: security-and-compliance/multi-factor-authentication-microsoft-365.md
@@ -344,12 +346,12 @@
           href: security-and-compliance/set-up-multi-factor-authentication.md
         - name: Manage and monitor priority accounts
           href: setup/priority-accounts.md
+        - name: Turn on Idle session timeout
+          href: manage/idle-session-timeout-web-apps.md
         - name: Enable Modern Authentication for Office 2013
           href: security-and-compliance/enable-modern-authentication.md
         - name: Pre-requisites for data protection
-          href: security-and-compliance/pre-requisites-for-data-protection.md
-        - name: Security features
-          href: security-and-compliance/secure-your-business-data.md
+          href: /microsoft-365/business-premium/m365bp-pre-requisites-for-data-protection.md
         - name: Increase threat protection
           href: security-and-compliance/increase-threat-protection.md
         - name: Threats detected by Microsoft Defender Antivirus
@@ -357,7 +359,7 @@
         - name: Review detected threats and take action
           href: security-and-compliance/review-threats-take-action.md    
         - name: Set up compliance features
-          href: security-and-compliance/set-up-compliance.md
+          href: /microsoft-365/business-premium/m365bp-set-up-compliance.md
         - name: Secure score
           href: /microsoft-365/security/defender/microsoft-secure-score
         - name: A guide to GDPR compliance
@@ -369,37 +371,27 @@
         - name: Microsoft Intune documentation
           href: /mem/intune/
         - name: View and edit policies and devices
-          href: devices/view-policies-and-devices.md
+          href: /microsoft-365/business-premium/view-policies-and-devices.md
         - name: Remove company data
-          href: devices/remove-company-data.md
+          href: /microsoft-365/business-premium/m365bp-remove-company-data.md
         - name: Reset devices to factory settings
           href: devices/reset-devices-to-factory-settings.md
         - name: Map protection features to Intune settings
-          href: devices/map-protection-features-to-intune-settings.md
+          href: /microsoft-365/business-premium/m365bp-map-protection-features-to-intune-settings.md
         - name: Device states
           href: devices/device-states.md
         - name: App protection settings for Windows 10 PCs
           href: devices/protection-settings-for-windows-10-devices.md
-        - name: Set app protection settings for Android and iOS
-          href: devices/app-protection-settings-for-android-and-ios.md
-          items: 
-            - name: Validate settings on Android or iOS
-              href: devices/validate-settings-on-android-or-ios.md
-        - name: Edit or create device protection settings  for Windows 10 PCs
-          href: devices/protection-settings-for-windows-10-pcs.md
-          items: 
-            - name: Validate settings on Windows 10 PCs
-              href: devices/validate-settings-on-windows-10-pcs.md
+        - name: Validate settings on Android or iOS
+          href: devices/validate-settings-on-android-or-ios.md
+        - name: Validate settings on Windows 10 PCs
+          href: devices/validate-settings-on-windows-10-pcs.md
         - name: Autopilot
           items: 
-            - name: Add Autopilot devices and profile
-              href: devices/add-autopilot-devices-and-profile.md
             - name: Create and edit AutoPilot profiles
-              href: devices/create-and-edit-autopilot-profiles.md
+              href: /microsoft-365/business-premium/m365bp-create-and-edit-autopilot-profiles.md
             - name: Create and edit AutoPilot devices
               href: devices/create-and-edit-autopilot-devices.md
-            - name: AutoPilot Profile settings
-              href: devices/autopilot-profile-settings.md
         - name: Microsoft 365 for enterprise documentation
           href: ../enterprise/index.yml
         - name: Basic Mobility and Security
@@ -474,3 +466,4 @@
       href: get-help-support.md
     - name: Navigation guide
       href: ../microsoft-365-docs-navigation-guide.md?bc=%2foffice365%2fadmin%2fbreadcrumb%2ftoc.json&toc=%2foffice365%2fadmin%2ftoc.json
+      

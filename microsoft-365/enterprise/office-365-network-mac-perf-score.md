@@ -36,9 +36,6 @@ A very low network assessment value suggests that Microsoft 365 clients will hav
 | 20                 | Users may complain       |
 | 0                  | Network problems a common topic of discussion |
 
->[!IMPORTANT]
->Network insights, performance recommendations and assessments in the Microsoft 365 Admin Center is currently in preview status, and is only available for Microsoft 365 tenants that have been enrolled in the feature preview program.
-
 ## Network assessment panel
 
 Each network assessment, whether scoped to the tenant or to a specific office location, shows a panel with details about the assessment. This panel shows a bar chart of the assessment both as a percentage and as the total points for each component workload including only workloads where measurement data was received. For an office location network assessment, we also show a comparison to the percent of Microsoft 365 customers in each of five quintiles that reported data in the same city as your office location.

@@ -2,8 +2,8 @@
 title: "Predictive coding reference"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 ms.reviewer: jefwan
 manager: laurawi
 audience: Admin
@@ -18,7 +18,9 @@ description: ""
 
 # Predictive coding reference (preview)
 
-This article describes the key concepts and metrics of the predictive coding tool in Advanced eDiscovery. The sections in the article are listed in alphabetical order.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+This article describes the key concepts and metrics of the predictive coding tool in Microsoft Purview eDiscovery (Premium). The sections in the article are listed in alphabetical order.
 
 ## Confidence level
 
