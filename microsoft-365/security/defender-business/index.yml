@@ -82,7 +82,7 @@ landingContent:
     linkLists:
       - linkListType: deploy
         links:
-          - text: The setup process
+          - text: See the setup process
             url: mdb-setup-configuration.md
           - text: Step 1 - Review the requirements
             url: mdb-requirements.md
@@ -92,7 +92,7 @@ landingContent:
             url: mdb-email-notifications.md
           - text: Step 4 - Onboard devices
             url: mdb-onboard-devices.md
-          - text: Step 5 - Configure security policies
+          - text: Step 5 - Review your security policies
             url: mdb-view-edit-policies.md
 
 
@@ -131,11 +131,11 @@ landingContent:
             url: mdb-firewall.md
 
   # Card
-  - title: Manage devices
+  - title: Monitor devices
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: View and manage devices
+          - text: View and monitor devices
             url: mdb-manage-devices.md
           - text: Create device groups
             url: mdb-create-edit-device-groups.md
