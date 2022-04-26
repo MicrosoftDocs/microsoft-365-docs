@@ -39,7 +39,7 @@ Defender for Business is a new endpoint security solution that was designed espe
 As soon as you have signed up for Defender for Business, your first step is to **[add users and assign licenses](mdb-add-users.md)**.
 
 > [!NOTE]
-> You must be a global administrator to perform this task. The person who signed your company up for Microsoft 365 or Defender for Business is the global administrator by default. [Learn more about roles and permissions](mdb-roles-permissions.md) 
+> You must be a global administrator to perform this task. The person who signed your company up for Microsoft 365 or Defender for Business is the global administrator by default. [Learn more about roles and permissions](mdb-roles-permissions.md).
 
 ### Step 2: Visit the Microsoft 365 Defender portal
  
@@ -124,7 +124,7 @@ If you used the setup wizard, but you need to onboard more devices, such as non-
 
    - [Choose where to manage your security policies and devices](mdb-configure-security-settings.md#choose-where-to-manage-security-policies-and-devices). If you select the [simplified configuration process](mdb-simplified-configuration.md), you can view and manage your security policies in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). However, you're not limited to this option. If you've been using Intune, you can keep using the Microsoft Endpoint Manager admin center.
 
-   - [View or edit your next-generation protection policies](mdb-configure-security-settings.md#view-or-edit-your-next-generation-protection-policies) 
+   - [View or edit your next-generation protection policies](mdb-configure-security-settings.md#view-or-edit-your-next-generation-protection-policies).
 
    - [View or edit your firewall policies](mdb-configure-security-settings.md#view-or-edit-your-firewall-policies-and-custom-rules) and if need by, define your [custom rules](mdb-custom-rules-firewall.md). 
 
@@ -142,45 +142,45 @@ In the next 30 days, we recommend you try out the following features:
 
 1.	**[Use your Threat & Vulnerability Management dashboard](mdb-view-tvm-dashboard.md)**. Defender for Business includes a Threat & Vulnerability Management dashboard that is designed to save your security team time and effort. You can use your Threat & Vulnerability Management dashboard to:
 
-   - View your exposure score, which is associated with devices in your organization
-   - View your top security recommendations, such as addressing impaired communications with devices, turning on firewall protection, or updating Microsoft Defender Antivirus definitions
-   - View remediation activities, such as any files that were sent to quarantine, or vulnerabilities found on devices
+   - View your exposure score, which is associated with devices in your organization.
+   - View your top security recommendations, such as addressing impaired communications with devices, turning on firewall protection, or updating Microsoft Defender Antivirus definitions.
+   - View remediation activities, such as any files that were sent to quarantine, or vulnerabilities found on devices.
 
    [Use your Threat & Vulnerability Management dashboard](mdb-view-tvm-dashboard.md).
 
 2.	**[View and respond to detected threats](mdb-view-manage-incidents.md)**. As threats are detected and alerts are triggered, incidents are created. Your organization's security team can view and manage incidents in the Microsoft 365 Defender portal. Try these features:
    
-   - [View and manage incidents](mdb-view-manage-incidents.md) 
-   - [Respond to and mitigate threats](mdb-respond-mitigate-threats.md) 
-   - [Review mediation actions in the Action Center](mdb-review-remediation-actions.md) 
-   - [View and use reports](mdb-reports.md) 
+   - [View and manage incidents](mdb-view-manage-incidents.md).
+   - [Respond to and mitigate threats](mdb-respond-mitigate-threats.md).
+   - [Review mediation actions in the Action Center](mdb-review-remediation-actions.md).
+   - [View and use reports](mdb-reports.md).
 
 3.	**[Review security policies](mdb-view-edit-create-policies.md)**. In Defender for Business, security settings are configured through policies that are applied to devices. Defender for Business includes preconfigured policies to help protect your company's devices as soon as they are onboarded, safeguarding your organization against identity, device, application, and document security threats. 
 
    Try these features:
 
    - Review policies
-      - [Learn about the default policies included in Defender for Business](mdb-view-edit-create-policies.md#default-policies-in-defender-for-business)
-      - [View your existing policies](mdb-view-edit-create-policies.md#view-your-existing-policies)
+      - [Learn about the default policies included in Defender for Business](mdb-view-edit-create-policies.md#default-policies-in-defender-for-business).
+      - [View your existing policies](mdb-view-edit-create-policies.md#view-your-existing-policies).
    
-   - [Understand policy order](mdb-policy-order.md)
+   - [Understand policy order](mdb-policy-order.md).
    
-   - [Understand next-generation configuration settings](mdb-next-gen-configuration-settings.md)
+   - [Understand next-generation configuration settings](mdb-next-gen-configuration-settings.md).
    
    - Review firewall settings
-      - [Default firewall settings in Defender for Business](mdb-firewall.md#default-firewall-settings-in-defender-for-business)
-      - [Firewall settings you can configure in Defender for Business](mdb-firewall.md#firewall-settings-you-can-configure-in-defender-for-business)
+      - [Default firewall settings in Defender for Business](mdb-firewall.md#default-firewall-settings-in-defender-for-business).
+      - [Firewall settings you can configure in Defender for Business](mdb-firewall.md#firewall-settings-you-can-configure-in-defender-for-business).
    
    - Understand web content filtering
       - Web content filtering enables your security team to track and regulate access to websites based on their content categories. It is not turned on by default, so you will need to set it up if you want this capability for your organization. 
-      - [Set up web content filtering](mdb-configure-security-settings.md#set-up-web-content-filtering) 
+      - [Set up web content filtering](mdb-configure-security-settings.md#set-up-web-content-filtering).
   
 4.	**Prepare for ongoing security management**. New security events, such as threat detections on a device, adding new devices, and employees joining or leaving the organization will require you manage your security. In Microsoft Defender for Business, there are many ways for you to manage device security. 
 
-   - [View a list of onboarded devices](mdb-manage-devices.md#view-the-list-of-onboarded-devices) to see their risk level, exposure level, and health state
-   - [Take action on a device](mdb-manage-devices.md#take-action-on-a-device-that-has-threat-detections) that has threat detections
-   - [Onboard a device to Defender for Business](mdb-manage-devices.md#onboard-a-device)
-   - [Offboard a device from Defender for Business](mdb-manage-devices.md#offboard-a-device)
+   - [View a list of onboarded devices](mdb-manage-devices.md#view-the-list-of-onboarded-devices) to see their risk level, exposure level, and health state.
+   - [Take action on a device](mdb-manage-devices.md#take-action-on-a-device-that-has-threat-detections) that has threat detections.
+   - [Onboard a device to Defender for Business](mdb-manage-devices.md#onboard-a-device).
+   - [Offboard a device from Defender for Business](mdb-manage-devices.md#offboard-a-device).
 
 ## Additional resources
 
