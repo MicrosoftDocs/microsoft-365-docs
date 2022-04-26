@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 02e74022-44af-414b-9d74-0ebf5c2197f0
-description: "Learn how to create or edit  app management policies and protect work files on your users' personal Windows 10 devices."
+description: "Learn how to create or edit app management policies and protect work files on your users' personal Windows 10 devices."
 ---
 
 # Set or edit application protection settings for Windows 10 devices
 
-This article applies to Microsoft 365 Business Premium.
+Next, it's important to make policy settings for your Windows apps.
 
 > [!NOTE]
 > Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../security/defender-business/mdb-overview.md).
@@ -82,3 +82,7 @@ If your users have personal Windows 10 devices on which they perform work tasks,
 ## See also
 
 [Best practices for securing Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)
+
+## Next objective
+
+[Secure Windows devices](m365bp-secure-windows-devices.md)
