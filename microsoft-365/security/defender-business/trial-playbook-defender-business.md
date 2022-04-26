@@ -147,37 +147,32 @@ In the next 30 days, we recommend you try out your new security capabilities, as
 
 ### Use your Threat & Vulnerability Management dashboard
 
-Defender for Business includes a Threat & Vulnerability Management dashboard that is designed to save your security team time and effort.
+Defender for Business includes a Threat & Vulnerability Management dashboard that is designed to save your security team time and effort. [Use your Threat & Vulnerability Management dashboard](mdb-view-tvm-dashboard.md):
 
 - View your exposure score, which is associated with devices in your organization.   
 - View your top security recommendations, such as addressing impaired communications with devices, turning on firewall protection, or updating Microsoft Defender Antivirus definitions.   
 - View remediation activities, such as any files that were sent to quarantine, or vulnerabilities found on devices.
 
-See [Use your Threat & Vulnerability Management dashboard](mdb-view-tvm-dashboard.md).
-
 ### View and respond to detected threats
 
-As threats are detected and alerts are triggered, incidents are created. Your organization's security team can view and manage incidents in the Microsoft 365 Defender portal. Try the following features:   
+As threats are detected and alerts are triggered, incidents are created. Your organization's security team can view and manage incidents in the Microsoft 365 Defender portal. [View and respond to detected threats](mdb-view-manage-incidents.md):   
 
 - [View and manage incidents](mdb-view-manage-incidents.md).
 - [Respond to and mitigate threats](mdb-respond-mitigate-threats.md).
 - [Review mediation actions in the Action Center](mdb-review-remediation-actions.md).
 - [View and use reports](mdb-reports.md).
 
-See [View and respond to detected threats](mdb-view-manage-incidents.md).
-
 ### Review security policies
 
 In Defender for Business, security settings are configured through policies that are applied to devices. Defender for Business includes preconfigured policies to help protect your company's devices as soon as they are onboarded, safeguarding your organization against identity, device, application, and document security threats. [Review security policies](mdb-view-edit-create-policies.md).
 
-
-| Policy type  | What to do  |
-|---------|---------|
-| Default policies  | - [Learn about the default policies included](mdb-view-edit-create-policies.md#default-policies-in-defender-for-business)<br/>- [View your existing policies](mdb-view-edit-create-policies.md#view-your-existing-policies). <br/>- [Understand policy order](mdb-policy-order.md) |
-| Next-generation protection policies     | [Understand next-generation configuration settings](mdb-next-gen-configuration-settings.md) |
-| Firewall protection | - [Review your default firewall settings](mdb-firewall.md#default-firewall-settings-in-defender-for-business) <br/>- [Understand firewall settings you can configure](mdb-firewall.md#firewall-settings-you-can-configure-in-defender-for-business) |
-| Web content filtering | Web content filtering enables your security team to track and regulate access to websites based on their content categories. It is not turned on by default, so you will need to set it up if you want this capability for your organization. See [Set up web content filtering](mdb-configure-security-settings.md#set-up-web-content-filtering). |
-
+- [Learn about the default policies included](mdb-view-edit-create-policies.md#default-policies-in-defender-for-business).
+- [View your existing policies](mdb-view-edit-create-policies.md#view-your-existing-policies).
+- [Understand policy order](mdb-policy-order.md). 
+- [Understand next-generation configuration settings](mdb-next-gen-configuration-settings.md).
+- [Review your default firewall settings](mdb-firewall.md#default-firewall-settings-in-defender-for-business).
+- [Understand firewall settings you can configure](mdb-firewall.md#firewall-settings-you-can-configure-in-defender-for-business).
+- [Set up web content filtering](mdb-configure-security-settings.md#set-up-web-content-filtering). Web content filtering enables your security team to track and regulate access to websites based on their content categories. It is not turned on by default, so you will need to set it up if you want this capability for your organization.
   
 ### Prepare for ongoing security management
 
