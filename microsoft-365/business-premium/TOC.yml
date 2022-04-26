@@ -76,6 +76,16 @@
         href: m365bp-managed-devices-setup.md
       - name: Onboard enrolled devices and apply policies
         href: m365bp-onboard-devices-mdb.md
+      - name: Protect Windows devices
+        items: 
+          - name: Protection settings for Windows 10 devices
+            href: m365bp-protection-settings-for-windows-10-devices.md
+          - name: Secure Windows devices
+            href: m365bp-secure-windows-devices.md
+          - name: Manage Windows devices
+            href: m365bp-manage-windows-devices.md
+            name: Prepare for Office client deployment
+          - name: m365bp-prepare-for office-client-deployment.md
       - name: Review and edit device policies
         href: m365bp-view-edit-create-mdb-policies.md
       - name: Manage device groups
@@ -106,6 +116,21 @@
       href: m365bp-glossary.md
     - name: Microsoft 365 admin content
       href: /microsoft-365/admin/
+    - name: Set up Compliance Manager
+      href: m365bp-set-up-compliance.md
+    - name: App protection settings for Android and iOS
+      href: m365bp-app-protection-settings-for-android-and-ios.md
+    - name: Map protection features to InTune settings
+      href: m365bp-map-protection-features-to-intune-settings.md
+    - name: Set up AutoPilot
+      items:
+        - name: Add AutoPilot devices and profile
+          href: m365bp-add-autopilot-devices-and-profile.md
+        - name: AutoPilot profile settings
+          href: m365bp-autopilot-profile-settings.md
+        - name: Create and edit AutoPilot profiles
+          href: m365bp-create-and-edit-autopilot-devices.md
+      href:
     - name: Microsoft Defender for Business
       href: ../security/defender-business/index.yml
     - name: Microsoft Defender for Office 365
