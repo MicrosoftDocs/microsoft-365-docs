@@ -34,6 +34,13 @@ Defender for Business is a new endpoint security solution that was designed espe
 
 ## Set up your trial
 
+Here's how to set up your trial subscription:
+
+1. [Add users and assign licenses](#step-1-add-users-and-assign-licenses).
+2. [Visit the Microsoft 365 Defender portal](#step-2-visit-the-microsoft-365-defender-portal).
+3. [Use the setup wizard](#step-3-use-the-setup-wizard-in-defender-for-business-recommended).
+4. [Set up and configure Defender for Business](#step-4-set-up-and-configure-defender-for-business).
+
 ### Step 1: Add users and assign licenses
 
 As soon as you have signed up for Defender for Business, your first step is to **[add users and assign licenses](mdb-add-users.md)**.
