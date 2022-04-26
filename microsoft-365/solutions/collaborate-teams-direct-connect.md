@@ -73,9 +73,9 @@ To add an organization
 1. Select **External Identities**, and then select **Cross-tenant access settings (preview)**.
 1. Select **Organizational settings**.
 1. Select **Add organization**.
-1. On the **Add organization** pane, type the full domain name (or tenant ID) for the organization.
-1. Select the organization in the search results, and then select **Add**.
-1. The organization appears in the **Organizational settings** list. At this point, all access settings for this organization are inherited from your default settings.
+1. On the **Add organization** pane, type the full domain name (or tenant ID) for the organization and press Enter.
+1. Select **Add**.
+1. The organization appears in the organizations list. At this point, all access settings for this organization are inherited from your default settings.
 
 ### Configure inbound settings
 
@@ -85,7 +85,7 @@ To configure inbound settings for an organization
 1. In [Azure Active Directory](https://aad.portal.azure.com), select **External Identities**, and then select **Cross-tenant access settings (preview)**.
 1. Select the inbound access link for the organization that you want to modify.
 1. On the **B2B direct connect** tab, choose **Customize settings**.
-1. On the **External users and groups** tab, choose **Allow access** and **All users and groups**. (You can choose **Select external users and groups** if you want to limit access to specific users and groups, such as those who have signed a non-disclosure agreement.)
+1. On the **External users and groups** tab, choose **Allow access** and **All external users and groups**. (You can choose **Select external users and groups** if you want to limit access to specific users and groups, such as those who have signed a non-disclosure agreement.)
 1. On the **Applications** tab, choose **Allow access** and **Select applications**.
 1. Select **Add Microsoft applications**.
 1. Select the **Office 365** application, and then choose **Select**.
@@ -99,7 +99,7 @@ To configure outbound settings for an organization
 1. In [Azure Active Directory](https://aad.portal.azure.com), select **External Identities**, and then select **Cross-tenant access settings (preview)**.
 1. Select the outbound access link for the organization that you want to modify.
 1. On the **B2B direct connect** tab, choose **Customize settings**.
-1. On the **External users and groups** tab, choose **Allow access** and set a **Target** of all users.
+1. On the **External users and groups** tab, choose **Allow access** and set an **Applies to** of all users.
 1. On the **External applications** tab, choose **Allow access** and **Select external applications**.
 1. Select **Add Microsoft applications**.
 1. Select the **Office 365** application, and then choose **Select**.
