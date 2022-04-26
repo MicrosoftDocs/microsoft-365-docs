@@ -135,7 +135,7 @@ After the command has run, the Command Prompt window will close automatically. I
 
 ## View a list of onboarded devices
 
-To view the list of devices that are onboarded to Defender for Business, in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, under **Endpoints**, choose **Device invetory**.
+To view the list of devices that are onboarded to Defender for Business, in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, under **Endpoints**, choose **Device inventory**.
 
 ## Next steps
 
