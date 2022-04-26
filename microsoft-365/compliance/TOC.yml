@@ -1,4 +1,4 @@
-- name: Microsoft Purview
+- name: Microsoft Purview compliance
   href: index.yml
 - name: What's new in Microsoft Purview
   href: whats-new.md
