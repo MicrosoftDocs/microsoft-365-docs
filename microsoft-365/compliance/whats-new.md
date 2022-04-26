@@ -104,7 +104,7 @@ To meet the challenges of today's decentralized, data-rich workplace, we're intr
 
 - Support for new [role groups and roles](get-started-with-sensitivity-labels.md#permissions-required-to-create-and-manage-sensitivity-labels), now in preview.
 - New [monitoring capabilities](apply-sensitivity-label-automatically.md#monitoring-your-auto-labeling-policy) for auto-labeling policies.
-- Now rolling out: default label for existing documents in Current Channel (Preview), and justification text for Office on the web.
+- Now rolling out: default label for existing documents, and justification text for Office on the web.
 - Announced for the July Semi-Annual Enterprise Channel with version 2202+: Co-authoring and auditing for Outlook.
 
 ## December 2021
