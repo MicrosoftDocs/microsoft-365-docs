@@ -12,65 +12,45 @@ description: "Follow these instructions to create your About Us page, including 
 
 # Manage group attendees in Bookings
 
-Microsoft Bookings now allows staff members and owners of Bookings calendar to manage/update attendees for group services. For detailed information on service offerings in Bookings please refer here 
+Owners and staff members of a Bookings calendar can now manage and update attendees for group services. For more information on service offerings in Bookings, see [Define your service offerings in Bookings](define-service-offerings.md).
 
- 
+In this scenario, we'll 
+Sometimes you might have to manage Booking attendees for multi service Bookings on behalf of customers, let us consider a scenario where we need to remove some attendees from group service booked using Microsoft Bookings:
 
-Sometimes you might have to manage Booking attendees for multi service Bookings on behalf of customers, let us consider a scenario where we need to remove some attendees from group service booked using Microsoft Bookings: 
- 
+Example
 
-Example 
+Consider one booking with a maximum of 10 participants
 
-Consider one booking with a maximum of 10 participants 
+5 people have registered/booked for the service
 
-5 people have registered/booked for the service 
+I want to remove 2 of the registered people
 
-I want to remove 2 of the registered people 
-
- 
-
-Users who have owner/edit permission to Booking’s calendar can follow the steps below to remove the attendees and update the bookings. 
+Users who have owner/edit permission to Booking’s calendar can follow the steps below to remove the attendees and update the bookings.
 
 Created Group Booking with maximum attendees set to more than 1 as below:
 
+:::image type="content" source="../media/group-booking-ten-attendees.png" alt-text="Screenshot: Group booking with 10 attendees selected":::
 
+The owner will have the calendar showing the Group Booking as below:
 
-The owner will have the calendar showing the Group Booking as below: 
+:::image type="content" source="../media/group-booking-calendar.png" alt-text="Screenshot: Owner view of group booking calendar":::
 
-Managing Group Bookings just got easy as click on Add Customer let you add attendee 
+Managing Group Bookings just got easy as click on Add Customer let you add attendee
+
+:::image type="content" source="../media/group-booking-add-customer.png" alt-text="Screenshot: Group booking service details page - add a customer":::
 
 Click on attendee you want to edit details or remove
 
-Removing the attendee will trigger the cancellation email for both attendee : 
+Removing the attendee will trigger the cancellation email for both attendee :
 
- 
+Attendee view:
 
-Attendee view: 
+:::image type="content" source="../media/group-booking-cancel.png" alt-text="Screenshot: Group booking cancellation":::
 
- 
+## Troubleshooting
 
- 
+If you run into the following issues while using group bookings, follow the steps below.
 
- 
+- Editing of a group booking service from the Teams app or from the mobile app resets attendees **to**, use the Bookings web app to edit the group booking service.
 
-Some known behaviors/limitations with group service in Microsoft Bookings: - 
-
- 
-
-Editing of Group service from Teams app or mobile app for Microsoft Bookings will reset attendees to 
-
- 
-
-To avoid this issue/situation use Bookings web page to edit/update the group service 
-
-  
-
-Text message feature not working for group service using Microsoft Bookings. We are actively working on this feature. 
-
- 
-
-Also have come across another known behavior for Resource Booking with some cases reported around same. 
-
-Microsoft Bookings do not support resource booking as of now. 
-
-Workaround suggested - Create dummy staff as resource names and you can assign it to services.  
+- Bookings doesn't support resource bookings at this time. To workaround this, create a resource as a staff member and assign it to a servce.
