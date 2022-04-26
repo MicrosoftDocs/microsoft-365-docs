@@ -159,7 +159,7 @@ In the next 30 days, we recommend you try out the following features:
 
    Try these features:
 
-   - Review policies
+   - Review policies:   
       - [Learn about the default policies included in Defender for Business](mdb-view-edit-create-policies.md#default-policies-in-defender-for-business).
       - [View your existing policies](mdb-view-edit-create-policies.md#view-your-existing-policies).
    
@@ -167,11 +167,11 @@ In the next 30 days, we recommend you try out the following features:
    
    - [Understand next-generation configuration settings](mdb-next-gen-configuration-settings.md).
    
-   - Review firewall settings
+   - Review firewall settings:   
       - [Default firewall settings in Defender for Business](mdb-firewall.md#default-firewall-settings-in-defender-for-business).
       - [Firewall settings you can configure in Defender for Business](mdb-firewall.md#firewall-settings-you-can-configure-in-defender-for-business).
    
-   - Understand web content filtering
+   - Understand web content filtering:   
       - Web content filtering enables your security team to track and regulate access to websites based on their content categories. It is not turned on by default, so you will need to set it up if you want this capability for your organization. 
       - [Set up web content filtering](mdb-configure-security-settings.md#set-up-web-content-filtering).
   
