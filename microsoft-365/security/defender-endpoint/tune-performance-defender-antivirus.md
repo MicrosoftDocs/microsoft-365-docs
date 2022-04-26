@@ -95,6 +95,9 @@ For examples that describe the process of "export" and "convert" through sample 
 - **To convert**:
 `(Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:1000). TopScans | ConvertTo-Json -Depth:1`
 
+To ensure machine-readable output for exporting batch processing with other data processing systems, it is recommended to use -Raw parameter for Get-MpPerformanceReport. See below for details
+
+
 ### Requirements
 
 Microsoft Defender Antivirus performance analyzer has the following prerequisites:
@@ -157,6 +160,13 @@ New-MpPerformanceRecording -RecordTo C:\LocalPathOnServer02\trace.etl -Session $
 
 The above command collects a performance recording on Server02 (as specified by argument $s of parameter Session) and saves it to the specified path: **C:\LocalPathOnServer02\trace.etl** on Server02.
 
+##### Example 3: Collect a performance recording in non-interactive mode!
+```powershell
+New-MpPerformanceRecording -RecordTo:.\Defender-scans.etl -Seconds 60 
+```
+The above command collects a performance recording for the duration in seconds specified by parameter -Seconds. This is recommended for users conducting batch collections that require no interaction or prompt.
+
+
 #### Parameters: New-MpPerformanceRecording
 
 ##### -RecordTo
@@ -179,6 +189,16 @@ Specifies the PSSession object in which to create and save the Microsoft Defende
 Type: PSSession[]
 Position: 0
 Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+##### -Seconds
+Specifies the duration of the performance recording in seconds. This is recommended for users conducting batch collections that require no interaction or prompt.
+
+```yaml
+Type: Int32
+Position: Named
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -218,6 +238,7 @@ Get-MpPerformanceReport    [-Path] <String>
     [-TopScansPerFilePerProcess <Int32>]
 ]
 [-MinDuration <String>]
+[-Raw]
 ```
 
 #### Description: Get-MpPerformanceReport
@@ -260,6 +281,13 @@ Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopProcesses:10 -TopExtensio
 ```powershell
 Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopScans:100 -MinDuration:100ms
 ```
+##### Example 5: Using -Raw parameter
+
+```powershell
+Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopFiles:10 -TopExtensions:10 -TopProcesses:10 -TopScans:10 -Raw | ConvertTo-Json
+```
+Using -Raw in the above command specifies that the output should be machine readable and readily convertible to serialization formats like JSON
+
 
 #### Parameters: Get-MpPerformanceReport
 
@@ -284,6 +312,17 @@ Type: String
 Position: 0
 Default value: None
 Accept pipeline input: True
+Accept wildcard characters: False
+```
+##### -Raw
+
+Specifies that output of performance recording should be machine readable and readily convertible to serialization formats like JSON (for example, via Convert-to-JSON command). This is recommended for users interested in batch processing with other data processing systems. Collections and elements are not to be formatted. TimeSpan values are represented as number of 100-nanosecond intervals. DateTime values are represented as number of 100-nanosecond intervals since January 1, 1601 (UTC). 
+
+```yaml
+Type: <SwitchParameter>
+Position: Named
+Default value: False
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
