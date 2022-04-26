@@ -2,7 +2,7 @@
 title: "During and after your data move"
 ms.author: andyber
 author: andybergen
-manager: laurawi
+manager: scotv
 ms.date: 09/22/2021
 audience: ITPro
 ms.topic: article
