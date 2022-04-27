@@ -20,7 +20,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn how to set strong password requirements for your users, using Windows PowerShell."
+description: "If you're an admin who manages password policy for a business, school, or nonprofit, you can set strong password requirements by using Windows PowerShell."
 ---
 # Turn off strong password requirements for users
 

@@ -18,7 +18,7 @@ ms.custom:
 - AdminTemplateSet
 search.appverid:
 - MET150
-description: "Use Basic Mobility and Security to set device security policies and access rules."
+description: "Manage and secure mobile devices connected to your Microsoft 365 organization by setting up and using Basic Mobility and Security."
 ---
 
 # Overview of Basic Mobility and Security for Microsoft 365

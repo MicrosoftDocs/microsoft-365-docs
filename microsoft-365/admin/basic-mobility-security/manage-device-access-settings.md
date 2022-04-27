@@ -17,7 +17,7 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: "Basic Mobility and Security can help you secure and manage mobile devices."
+description: "For devices that you can't manage with Basic Mobility and Security, you should block Exchange ActiveSync app access to Microsoft 365 email."
 ---
 
 # Manage device access settings in Basic Mobility and Security

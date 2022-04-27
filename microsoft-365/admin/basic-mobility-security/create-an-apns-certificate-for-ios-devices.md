@@ -13,7 +13,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
-description: "Manage iOS devices in Basic Mobility and Security."
+description: "To manage iOS devices such as iPads and iPhones in Basic Mobility and Security, begin by creating an APNs certificate."
 ---
 
 # Create an APNs certificate for iOS devices

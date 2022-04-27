@@ -19,7 +19,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9b838071-94aa-4b8e-8d84-d17ece1ee951
-description: "Learn how to reset password and send a email to a new Microsoft 365 user."
+description: "Resend the notification email to a new user in Microsoft 365 by resetting the user's password if they didn't get the original email with their new password. "
 ---
 
 # Resend a user's password - Admin Help

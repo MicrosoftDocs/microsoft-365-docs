@@ -27,7 +27,7 @@ ms.custom:
 search.appverid:
 - MET150
 ROBOTS: NOINDEX
-description: "Understand what you need to know before you go through the sign-up process for Office 365."
+description: "Understand what you need to know about the latest versions of the Office programs before you go through the sign-up process for Office 365."
 ms.date: 03/17/2021
 ---
 

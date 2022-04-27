@@ -18,7 +18,7 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid:
 - MET150
-description: "Basic Mobility and Security can help you secure and manage your organizations mobile devices."
+description: "Sign in to Microsoft 365 and set up Basic Mobility and Security to use the built-in mobile device management to secure and manage your users' mobile devices."
 ---
 
 # Manage devices enrolled in Mobile Device Management in Microsoft 365
