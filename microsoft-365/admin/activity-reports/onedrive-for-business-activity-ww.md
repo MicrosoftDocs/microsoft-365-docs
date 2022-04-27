@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Reports in the admin center - OneDrive for Business activity"
+title: "Microsoft 365 OneDrive for Business activity reports"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -31,7 +31,7 @@ For example, you can understand the activity of every user licensed to use OneDr
 ## How do I get to the OneDrive Activity report?
 
 1. In the admin center, go to the **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> page. 
-2. From the dashboard homepage, click on the **View more** button on the OneDrive card.
+2. From the dashboard homepage, click on the **View more** button on the OneDrive card.
   
 ## Interpret the OneDrive for Business activity report
 

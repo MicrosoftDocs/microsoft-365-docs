@@ -15,13 +15,13 @@ ms.collection:
 search.appverid: MET150
 ms.reviewer: inbadian, shlomiakirav
 description: Find out how to get help or contact support in Microsoft Defender for Business
-ms.date: 12/08/2021
+ms.date: 02/24/2022
 ---
 
 # Get help and support for Microsoft Defender for Business
 
-> [!IMPORTANT]
-> Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. This article includes links to online content that might describe some features that are not included in Microsoft Defender for Business (preview).
+> [!NOTE]
+> Microsoft Defender for Business is now included in [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
 ## Get help and support
 
@@ -29,8 +29,12 @@ If you need help with Microsoft Defender for Business, select the Help icon (?) 
 
 If you don't see the answer to your question, you can open a support ticket.
 
+>
+> **Got a minute?**
+> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about security</a>. We'd love to hear from you!
+>
+
 ## See also
 
 - [Microsoft Defender for Business - Frequently asked questions and answers](mdb-faq.yml)
-
 - [Microsoft Defender for Business troubleshooting](mdb-troubleshooting.yml) 

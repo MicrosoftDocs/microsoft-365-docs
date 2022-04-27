@@ -7,8 +7,8 @@ ms.technology: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: JoeDavies-MSFT
-ms.author: josephd
+author: dansimp
+ms.author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -37,14 +37,14 @@ To configure automated investigation and remediation:
 
 ## Turn on automated investigation and remediation
 
-1. As a global administrator or security administrator, go to the Microsoft Defender Security Center (<https://securitycenter.windows.com>) and sign in.
+1. As a global administrator or security administrator, go to the Microsoft 365 Defender portal (<https://security.microsoft.com>) and sign in.
 2. In the navigation pane, choose **Settings**.
 3. In the **General** section, select **Advanced features**.
 4. Turn on both **Automated Investigation** and **Automatically resolve alerts**.
 
 ## Set up device groups
 
-1. In the Microsoft Defender Security Center (<https://securitycenter.windows.com>), on the **Settings** page, under **Permissions**, select **Device groups**.
+1. In the Microsoft 365 Defender portal (<https://security.microsoft.com>), on the **Settings** page, under **Permissions**, select **Device groups**.
 2. Select **+ Add device group**.
 3. Create at least one device group, as follows:
    - Specify a name and description for the device group.

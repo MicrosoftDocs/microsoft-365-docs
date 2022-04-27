@@ -1,9 +1,9 @@
 ---
-title: "Microsoft Compliance Manager quickstart guide"
+title: "Microsoft Purview Compliance Manager quickstart guide"
 f1.keywords:
 - NOCSH
-ms.author: v-jgriffee
-author: jmgriffee
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -22,7 +22,9 @@ description: "Use the Compliance Manager quickstart guide to help you along your
 
 # Compliance Manager quickstart
 
-**In this article:** Use this quickstart guide to help you along your journey of using Microsoft Compliance Manager to manage your organization’s compliance with regulations, policies, and standards.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+**In this article:** Use this quickstart guide to help you along your journey of using Microsoft Purview Compliance Manager to manage your organization’s compliance with regulations, policies, and standards.
 
 Compliance Manager provides intelligent and actionable data upon your first visit. Compliance Manager also has advanced capabilities for scaling your compliance when you’re ready. Available assessments depend on your licensing agreement; [learn more](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
@@ -30,7 +32,7 @@ Whether you’re coming to Compliance Manager for the first time, or are ready t
 
 ## First visit: get to know Compliance Manager
 
-Compliance Manager is located in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>. Your organization's global administrator will need to [set up user permissions and assign roles](compliance-manager-setup.md#set-user-permissions-and-assign-roles) before you start using Compliance Manager.
+Compliance Manager is located in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>. Your organization's global administrator will need to [set up user permissions and assign roles](compliance-manager-setup.md#set-user-permissions-and-assign-roles) before you start using Compliance Manager.
 
 The first time you visit Compliance Manager, you'll see a compliance score for your organization. Compliance Manager is already assessing your current Microsoft 365 environment against the data protection baseline. The best way to start getting familiar with Compliance Manager is to understand what it's showing you, its key elements, and how to customize your dashboard.
 

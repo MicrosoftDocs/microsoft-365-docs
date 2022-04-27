@@ -64,7 +64,7 @@ Follow the instructions for a single entry for each device.
 
 This scenario uses a centrally located script and runs it using a domain-based group policy. You can also place the script in the golden image and run it in the same way.
 
-##### Download the WindowsDefenderATPOnboardingPackage.zip file from the Windows Defender Security Center
+##### Download the WindowsDefenderATPOnboardingPackage.zip file from the Windows 365 Defender portal
 
 1. Open the VDI configuration package .zip file (WindowsDefenderATPOnboardingPackage.zip)
 
@@ -104,7 +104,7 @@ If you plan to manage your machines using a management tool, you can onboard dev
 For more information, see [Onboard Windows devices using Configuration Manager](configure-endpoints-sccm.md).
 
 > [!WARNING]
-> If you plan to use [Attack Surface reduction Rules](attack-surface-reduction-rules.md), note that the rule "[Block process creations originating from PSExec and WMI commands](attack-surface-reduction-rules.md#block-process-creations-originating-from-psexec-and-wmi-commands)" should not be used, because that rule is incompatible with management through Microsoft Endpoint Configuration Manager. The rule blocks WMI commands that the Configuration Manager client uses to function correctly.
+> If you plan to use [Attack surface reduction rules reference](attack-surface-reduction-rules-reference.md), note that the rule "[Block process creations originating from PSExec and WMI commands](attack-surface-reduction-rules-reference.md#block-process-creations-originating-from-psexec-and-wmi-commands)" should not be used, because that rule is incompatible with management through Microsoft Endpoint Configuration Manager. The rule blocks WMI commands that the Configuration Manager client uses to function correctly.
 
 > [!TIP]
 > After onboarding the device, you can choose to run a detection test to verify that the device is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender for Endpoint device](run-detection-test.md).
@@ -152,6 +152,10 @@ Also, if you're using FSlogix user profiles, we recommend you exclude the follow
 
 Note on licensing: When using Windows Enterprise multi-session, depending on your requirements, you can choose to either have all users licensed through Microsoft Defender for Endpoint (per user), Windows Enterprise E5, Microsoft 365 Security, or Microsoft 365 E5, or have the VM licensed through Microsoft Defender for Cloud.
 Licensing requirements for Microsoft Defender for Endpoint can be found at: [Licensing requirements](minimum-requirements.md#licensing-requirements).
+
+### Known issues and limitations
+
+Only Microsoft Edge is supported for web filtering in Windows 10 multi-session.
 
 #### Related Links
 

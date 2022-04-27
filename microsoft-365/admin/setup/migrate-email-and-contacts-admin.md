@@ -21,6 +21,7 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - adminvideo
+- business_assist
 search.appverid:
 - MET150
 - MOE150
@@ -37,6 +38,9 @@ description: "Learn to import contacts, calendars, and emails from Gmail or anot
 Import or migrate email from Gmail or another email provider to Microsoft 365.
   
  **Want help with this?**  [Contact Microsoft 365 for business support](../../business-video/get-help-support.md). 
+
+> [!TIP]
+> If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
   
 You need to use a version of Outlook that is installed on your desktop for this task. Outlook is included in most Microsoft 365 [plans](https://go.microsoft.com/fwlink/p/?LinkId=723731).
   
@@ -100,4 +104,4 @@ Depending on your source email system, you can choose from several bulk migratio
 
 [Plan your setup of Microsoft 365 for business](plan-your-setup.md) (article)\
 [Install Office applications](install-applications.md) (link page)\
-[Overview of the Microsoft 365 admin center]([Overview of the Microsoft 365 admin center](../admin-overview/admin-center-overview.md) (video)
+[Overview of the Microsoft 365 admin center](Overview of the Microsoft 365 admin center](../admin-overview/admin-center-overview.md) (video)

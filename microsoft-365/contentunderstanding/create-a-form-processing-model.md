@@ -11,6 +11,7 @@ search.appverid:
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
+ms.custom: admindeeplinkSPO
 ms.localizationpriority:  medium
 description: Learn how to create a form processing model in SharePoint Syntex.
 ---
@@ -69,13 +70,13 @@ The first step in creating a form processing model is to name the model, define 
 
         - If you select **An existing list**, in the **Selected list** box, choose the list you want to use.
 
-4. When you create a form processing model, you create a new SharePoint content type. A SharePoint content type represents a category of documents that have common characteristics and share a collection of columns or metadata properties for that particular content. SharePoint content types are managed through the SharePoint admin center.
+4. When you create a form processing model, you create a new SharePoint content type. A SharePoint content type represents a category of documents that have common characteristics and share a collection of columns or metadata properties for that particular content. SharePoint content types are managed through the <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint admin center</a>.
 
    To map this model to an existing content type in the SharePoint content types gallery, select **Advanced settings**.
 
     ![Screenshot showing the Advanced settings in the Create a model to process forms panel.](../media/content-understanding/new-form-model-advanced-settings.png) 
 
-   1. In the **Content type** section, choose whether to create a new content type or to use an existing one. 
+   1. In the <a href="https://go.microsoft.com/fwlink/?linkid=2185074" target="_blank">Content type gallery</a>, choose whether to create a new content type or to use an existing one. 
 
    2. To use an existing content type, select **Select one**, and choose a content type from the list.
 
@@ -130,7 +131,41 @@ You need to tag the documents to teach the model to understand the fields and ta
 
     ![Done.](../media/content-understanding/doc-lib-done.png) 
 
-## See Also
+> [!NOTE]
+> If a custom form processing model and document understanding model are applied to the same library, the file is classified using the document understanding model and any trained extractors for that model. If there are any empty columns that match the form processing model, the columns will be populated using those extracted values.
+
+### Use flows to extract information
+
+Two flows are available to process a selected file or batch of files in a library where a form processing model has been applied.
+
+- **Extract info from an image or PDF file with a form processing model** — Use to extract text from a selected image or PDF file by running a form processing model. Supports a single selected file at a time, and supports only PDF files and image files (PNG, JPG, and JPEG). To run the flow, select a file, and then select **Automate** > **Extract info**.
+
+    ![Screenshot showing the Automate menu with Extract info highlighted.](../media/content-understanding/automate-extract-info.png)  
+
+- **Extract info from files with a form processing model** — Use with form processing models to read and extract information from a batch of files. Processes up to 5,000 SharePoint files at a time. When you run this flow, there are certain parameters you can set. You can:
+
+    - Choose whether to include previously processed files (the default is not to include previously processed files).
+    - Select the number of files to process (the default is 100 files).
+    - Specify the order in which to process the files (choices are by file ID, file name, file created time, or last modified time).
+    - Specify how you want the order sorted (ascending or descending order).
+
+    ![Screenshot showing the Run flow panel with parameter options highlighted.](../media/content-understanding/run-flow-panel.png)  
+
+### Classification Date field
+
+When a SharePoint Syntex form processing model (or a document understanding model) is applied to a document library, the **Classification Date** field is included in the library schema. By default, this field is empty. However, when documents are processed and classified by a model, this field is updated with a date-time stamp of completion. 
+
+When a model is stamped with the **Classification Date**, you can use the **Send an email after SharePoint Syntex processes a file** flow to notify users that a new file has been processed and classified by a model in the SharePoint document library.
+
+To run the flow:
+
+1. Select a file, and then select **Integrate** > **Power Automate** > **Create a flow**.
+
+2. On the **Create a flow** panel, select **Send an email after SharePoint Syntex processes a file**.
+
+    ![Screenshot showing the Create a flow panel and flow option highlighted.](../media/content-understanding/integrate-create-flow.png) 
+
+## See also
   
 [Power Automate documentation](/power-automate/)
 

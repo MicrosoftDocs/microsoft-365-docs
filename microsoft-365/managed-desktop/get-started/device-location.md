@@ -1,30 +1,35 @@
 ---
 title: Windows 10 location service
-description:  How to have Windows location services turned on for your devices
+description:  Describes how to have Windows location services turned on for your devices
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 f1.keywords:
 - NOCSH
-ms.author: jaimeo
+ms.author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-manager: laurawi
+manager: dougeby
 ms.topic: article
 audience: Admin
 ---
 
 # Windows 10 location service
 
-Devices in Microsoft Managed Desktop are registered by using Windows Autopilot. This process lets us manage them with Azure Active Directory and Microsoft Intune. By default, the Windows 10 location service is disabled when a device is turned on for the first time unless this feature is enabled in the Privacy settings during the "out of box experience." These settings are hidden during Autopilot enrollment in Microsoft Managed Desktop. For more information about how Autopilot is set up, see [First-run experience with Autopilot and the Enrollment Status Page](esp-first-run.md).
+Devices in Microsoft Managed Desktop are registered by using Windows Autopilot. This process lets us manage them with Azure Active Directory and Microsoft Intune.
 
-For this reason, Microsoft Managed Desktop devices can't obtain their device location, which limits the functionality of several Windows features, such as time zones. For more information about the Windows 10 location service, see [Windows 10 location service and privacy](https://support.microsoft.com/windows/windows-10-location-service-and-privacy-3a8eee0a-5b0b-dc07-eede-2a5ca1c49088).
+By default, the Windows 10 location service is disabled when a device is turned on for the first time, unless, this feature is enabled in the Privacy settings during the "out of box experience." These settings are hidden during Autopilot enrollment in Microsoft Managed Desktop. For more information about how Autopilot is set up, see [First-run experience with Autopilot and the Enrollment Status Page](esp-first-run.md).
 
-You don't have to use the location service in order to participate in Microsoft Managed Desktop, but the user experience will be restricted. For example, devices won't be able to automatically determine the time zone they're in when your users work in a different time zone.
+For this reason, Microsoft Managed Desktop devices can't obtain their device location, and limits the functionality of several Windows features, such as time zones. For more information about the Windows 10 location service, see [Windows 10 location service and privacy](https://support.microsoft.com/windows/windows-10-location-service-and-privacy-3a8eee0a-5b0b-dc07-eede-2a5ca1c49088).
+
+You don't have to use the location service in order to participate in Microsoft Managed Desktop. The user experience will be restricted. For example, devices won't be able to automatically determine the time zone they're in when your users work in a different time zone.
 
 ## Enable the location service
 
-You can either opt in to using the location service when you enroll devices into the Microsoft Managed Desktop service or you can turn the service on or off after enrollment.
+You can either:
+
+- Opt in to use the location service when you enroll devices into the Microsoft Managed Desktop service, or
+- You can turn the service on or off after enrollment.
 
 ### Opt in during enrollment
 
@@ -32,7 +37,7 @@ You can have the Microsoft Managed Desktop service enable the location service. 
 
 ### Control the location service after enrollment
 
-You can have the location service turned on (or off) at any time by submitting a [support request](../working-with-managed-desktop/admin-support.md) through the [Admin portal](access-admin-portal.md).
+You can have the location service turned on (or off), at any time, by submitting a [support request](../working-with-managed-desktop/admin-support.md) through the [Admin portal](access-admin-portal.md).
 
 ## How Microsoft Managed Desktop configures the Windows 10 location service
 

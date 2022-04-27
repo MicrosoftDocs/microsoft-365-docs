@@ -10,20 +10,20 @@ ms.pagetype: security
 f1.keywords: 
   - NOCSH
 ms.localizationpriority: medium
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.date: 07/09/2021
 manager: dansimp
 audience: ITPro
 ms.collection: 
   - M365-security-compliance
-  - m365solution-overview
+  - m365solution-scenario
   - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
 ---
 
-# Investigate and respond using Microsoft 365 Defender in a pilot environment
+# Step 6. Investigate and respond using Microsoft 365 Defender in a pilot environment
 
 **Applies to:**
 - Microsoft 365 Defender
@@ -32,15 +32,15 @@ This article outlines the process to create incidents with attack simulations an
 
 Use the following steps.
 
-![Steps for performing simulated incident response in the Microsoft 365 Defender evaluation environment.](../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-steps.png)
+:::image type="content" source="../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-steps.png" alt-text="The steps for performing simulated incident response in the Microsoft 365 Defender evaluation environment" lightbox="../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-steps.png":::
 
 The following table describes the steps in the illustration.
 
-| |Step  |Description  |
-|---------|---------|---------|
-|1|[Simulate attacks](eval-defender-investigate-respond-simulate-attack.md)     |   Simulate attacks on your evaluation environment and use the Microsoft 365 Defender portal to perform incident response.      |
-|2|[Try incident response capabilities ](eval-defender-investigate-respond-additional.md)    |    Try features and capabilities in Microsoft 365 Defender.     |
-||||
+|Step  |Description  |
+|---------|---------|
+| 1. [Simulate attacks](eval-defender-investigate-respond-simulate-attack.md)     |   Simulate attacks on your evaluation environment and use the Microsoft 365 Defender portal to perform incident response.      |
+| 2. [Try incident response capabilities ](eval-defender-investigate-respond-additional.md)    |    Try additional incident response features and capabilities in Microsoft 365 Defender.     |
+|||
 
 ### Navigation you may need
 

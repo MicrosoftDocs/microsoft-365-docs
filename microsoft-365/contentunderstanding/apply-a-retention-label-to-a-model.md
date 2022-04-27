@@ -31,7 +31,7 @@ Retention labels let you apply retention settings to the documents that your mod
 You can apply a pre-existing retention label to your model through your model settings on your model's home page. 
 
 > [!Important]
-> For retention labels to be available to apply to your document understanding models, they need to be [created and published in the Microsoft 365 Compliance Center](../compliance/create-apply-retention-labels.md#how-to-create-and-publish-retention-labels).
+> For retention labels to be available to apply to your document understanding models, they need to be [created](../compliance/file-plan-manager.md#create-retention-labels) and [published](../compliance/create-apply-retention-labels.md#how-to-publish-retention-labels) in the Microsoft Purview compliance portal.
 
 ## To add a retention label to a document understanding model
 
@@ -69,7 +69,7 @@ For example, all *Insurance notice* documents that your model identifies will al
 ## To add a retention label to a form processing model
 
 > [!Important]
-> For retention labels to be available to apply to your form processing model, they need to be [created and published in the Microsoft 365 Compliance Center](../compliance/create-apply-retention-labels.md#how-to-create-and-publish-retention-labels).
+> For retention labels to be available to apply to your form processing model, they need to be [created](../compliance/file-plan-manager.md#create-retention-labels) and [published](../compliance/create-apply-retention-labels.md#how-to-publish-retention-labels) in the Microsoft Purview compliance portal.
 
 You can either apply a retention label to a form processing model when you are creating a model, or apply it to an existing model.
 
@@ -122,7 +122,8 @@ You can add a retention label to an existing form processing model that you own 
 > You must be the model owner for the model settings pane to be editable. 
 
 
-## See Also
+## See also
+
 [Create a classifier](create-a-classifier.md)
 
 [Create an extractor](create-an-extractor.md)

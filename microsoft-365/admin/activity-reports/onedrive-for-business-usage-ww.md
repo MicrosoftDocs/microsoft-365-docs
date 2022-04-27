@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Reports in the admin center - OneDrive for Business usage"
+title: "Microsoft 365 OneDrive for Business usage reports"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -33,7 +33,7 @@ For example, the OneDrive card on the dashboard gives you a high-level view of t
 ## How do I get to the OneDrive usage report?
 
 1. In the admin center, go to the **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> page. 
-2. From the dashboard homepage, click on the **View more** button on the OneDrive card.
+2. From the dashboard homepage, click on the **View more** button on the OneDrive card.
   
 ## Interpret the OneDrive usage report
 
@@ -57,3 +57,6 @@ The **OneDrive for Business usage** report can be viewed for trends over the las
 |Active files  <br/> | The number of active files within the time period.<br/> NOTE: If files were removed during the specified time period for the report, the number of active files shown in the report may be larger than the current number of files in the OneDrive. >  Deleted users will continue to appear in reports for 180 days.  <br/> |
 |Storage used (MB)  <br/> |The amount of storage the OneDrive uses in MB. |
 |||
+   
+> [!NOTE]
+> The report only includes users who have a valid OneDrive for Business license.

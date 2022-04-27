@@ -21,7 +21,8 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -36,7 +37,7 @@ To address this demand, managed security service providers (MSSP) offer to deliv
 
 Defender for Endpoint adds partnership opportunities for this scenario and allows MSSPs to take the following actions:
 
-- Get access to MSSP customer's Microsoft Defender Security Center portal
+- Get access to MSSP customer's Microsoft 365 Defender portal
 - Get email notifications, and 
 - Fetch alerts through security information and event management (SIEM) tools
 

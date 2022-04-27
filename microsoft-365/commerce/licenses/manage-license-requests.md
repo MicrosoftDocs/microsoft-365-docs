@@ -2,11 +2,11 @@
 title: "Manage license requests"
 f1.keywords:
 - CSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
-ms.reviewer: micurn, nicholak
-ms.audience: Admin
+ms.reviewer: sinakassaw, nicholak
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom: 
+- commerce_licensing
 - MACBillingLicensesRequests
 - AdminSurgePortfolio
-- commerce_licensing
 search.appverid: MET150
 description: "Learn how to review and approve or deny license requests from users for your Microsoft 365 for business subscription."
-ms.date: 06/07/2021
+ms.date: 04/22/2022
 ---
 
 # Manage license requests

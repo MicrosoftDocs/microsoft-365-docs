@@ -2,25 +2,27 @@
 title: "View statistics for eDiscovery search results"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 ms.search: M365-security-compliance
 ms.localizationpriority: medium
 search.appverid: 
 - MOE150
 - MET150
-description: "Learn how to use the search statistics feature to display statistics for Content searches and searches associated with a Core eDiscovery case in the Microsoft 365 compliance center."
+description: "Learn how to use the search statistics feature to display statistics for Content searches and searches associated with a eDiscovery (Standard) case in the Microsoft Purview compliance portal."
 ms.custom: seo-marvel-apr2020
 ---
 
 # View statistics for eDiscovery search results
 
-After you create and run a Content search or a search associated with a Core eDiscovery case, you can view statistics about the estimated search results. This includes a summary of the search results (similar to the summary of the estimated search results displayed on the search flyout page), the query statistics such as the number of content locations with items that match the search query, and the identity of content locations that have the most matching items.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+After you create and run a Content search or a search associated with a Microsoft Purview eDiscovery (Standard) case, you can view statistics about the estimated search results. This includes a summary of the search results (similar to the summary of the estimated search results displayed on the search flyout page), the query statistics such as the number of content locations with items that match the search query, and the identity of content locations that have the most matching items.
   
 Additionally, you can use the keywords list to configure a search to return statistics for each keyword in a search query. This lets you compare the number of results returned by each keyword in a query.
   
@@ -28,9 +30,9 @@ You can also download search statistics to a CSV file. This lets you use the fil
   
 ## Get statistics for searches
 
-To display statistics for a Content search or a search associated with a Core eDiscovery case.:
+To display statistics for a Content search or a search associated with a eDiscovery (Standard) case.:
   
-1. In the Microsoft 365 compliance center, click **Show all**, and then do one of the following:
+1. In the Microsoft Purview compliance portal, click **Show all**, and then do one of the following:
 
    - Click **Content search** and then select a search to display the flyout page.
 
@@ -92,7 +94,7 @@ As previous explained, the **Condition report** section shows the search query a
 
 To create a keyword list and view keyword statistics for a search:
   
-1. In the Microsoft 365 compliance center, create a new Content search or a search associated with a Core eDiscovery case.
+1. In the compliance portal, create a new Content search or a search associated with a eDiscovery (Standard) case.
 
 2. On the **Conditions** page of the search wizard. select the **Show keyword list** checkbox.
 

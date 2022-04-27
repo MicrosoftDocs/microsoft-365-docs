@@ -30,7 +30,7 @@ ms.technology: mde
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
-A zero-day vulnerability is a publicly disclosed vulnerability for which no official patches or security updates have been released. Zero-day vulnerabilities often have high severity levels and are actively exploited.
+A zero-day vulnerability is a flaw in software for which no official patch or security update has been released. A software vendor may or may not be aware of the vulnerability, and no public information about this risk is available. Zero-day vulnerabilities often have high severity levels and are actively exploited.
 
 Threat and vulnerability management will only display zero-day vulnerabilities it has information about.
 
@@ -45,11 +45,11 @@ Once a zero-day vulnerability has been found, information about it will be conve
 
 Look for recommendations with a zero-day tag in the "Top security recommendations" card.
 
-![Top recommendations with a zero-day tag.](images/tvm-zero-day-top-security-recommendations.png)
+:::image type="content" source="images/tvm-zero-day-top-security-recommendations.png" alt-text="The top recommendations with a zero-day tag" lightbox="images/tvm-zero-day-top-security-recommendations.png":::
 
 Find top software with the zero-day tag in the "Top vulnerable software" card.
 
-![Top vulnerable software with a zero-day tag.](images/tvm-zero-day-top-software.png)
+:::image type="content" source="images/tvm-zero-day-top-software.png" alt-text="The top vulnerable software with a zero-day tag" lightbox="images/tvm-zero-day-top-software.png":::
 
 ### Weaknesses page
 
@@ -59,19 +59,19 @@ Look for the named zero-day vulnerability along with a description and details.
 
 - If this vulnerability has no CVE-ID assigned, you'll find it under an internal, temporary name that looks like "TVM-XXXX-XXXX". The name will be updated once an official CVE-ID has been assigned, but the previous internal name will still be searchable and found in the side-panel.
 
-:::image type="content" alt-text="Zero day example for CVE-2020-17087 in weaknesses page." source="images/tvm-zero-day-weakness-name.png" lightbox="images/tvm-zero-day-weakness-name.png":::
+:::image type="content" source="images/tvm-zero-day-weakness-name.png" alt-text="The zero-day example for CVE-2020-17087 in the Weaknesses page" lightbox="images/tvm-zero-day-weakness-name.png":::
 
 ### Software inventory page
 
 Look for software with the zero-day tag. Filter by the "zero day" tag to only see software with zero-day vulnerabilities.
 
-:::image type="content" alt-text="Zero day example of Windows Server 2016 in the software inventory page." source="images/tvm-zero-day-software-inventory.png" lightbox="images/tvm-zero-day-software-inventory.png":::
+:::image type="content" source="images/tvm-zero-day-software-inventory.png" alt-text="The zero-day example of Windows Server 2016 in the software inventory page" lightbox="images/tvm-zero-day-software-inventory.png":::
 
 ### Software page
 
 Look for a zero-day tag for each software that has been affected by the zero-day vulnerability.
 
-:::image type="content" alt-text="Zero day example for Windows Server 2016 software page." source="images/tvm-zero-day-software-page.png" lightbox="images/tvm-zero-day-software-page.png":::
+:::image type="content" source="images/tvm-zero-day-software-page.png" alt-text="The zero-day example in the Windows Server 2016 software page" lightbox="images/tvm-zero-day-software-page.png":::
 
 ### Security recommendations page
 
@@ -79,7 +79,7 @@ View clear suggestions about remediation and mitigation options, including worka
 
 If there's software with a zero-day vulnerability and additional vulnerabilities to address, you'll get one recommendation about all vulnerabilities.
 
-:::image type="content" alt-text="Zero day example of Windows Server 2016 in the security recommendations page." source="images/tvm-zero-day-security-recommendation.png" lightbox="images/tvm-zero-day-security-recommendation.png":::
+:::image type="content" source="images/tvm-zero-day-security-recommendation.png" alt-text="The zero-day example of Windows Server 2016 in the security recommendations page." lightbox="images/tvm-zero-day-security-recommendation.png":::
 
 ## Addressing zero-day vulnerabilities
 
@@ -89,7 +89,7 @@ There will be a link to mitigation options and workarounds if they are available
 
 Open remediation options and choose the attention type. An "attention required" remediation option is recommended for the zero-day vulnerabilities, since an update hasn't been released yet. You won't be able to select a due date, since there's no specific action to perform. If there are older vulnerabilities for this software you wish to remediation, you can override the "attention required" remediation option and choose "update."
 
-![Zero day flyout example of Windows Server 2016 in the security recommendations page.](images/tvm-zero-day-recommendation-flyout400.png)
+:::image type="content" source="images/tvm-zero-day-recommendation-flyout400.png" alt-text="The example of a zero-day flyout of Windows Server 2016 in the security recommendations page" lightbox="images/tvm-zero-day-recommendation-flyout400.png":::
 
 ## Track zero-day remediation activities
 

@@ -31,11 +31,17 @@ ms.technology: m365d
 - Microsoft 365 Defender
 - Microsoft Defender for Endpoint
 
-Advanced hunting is based on the [Kusto query language](/azure/kusto/query/). You can use Kusto operators and statements to construct queries that locate information in a specialized [schema](advanced-hunting-schema-tables.md). To understand these concepts better, run your first query.
+Advanced hunting is based on the [Kusto query language](/azure/kusto/query/). You can use Kusto operators and statements to construct queries that locate information in a specialized [schema](advanced-hunting-schema-tables.md). 
+
+Watch this short video to learn some handy Kusto query language basics.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWRwfJ]
+ 
+To understand these concepts better, run your first query.
 
 ## Try your first query
 
-In the Microsoft 365 Defender portal, go to **Hunting** to run your first query. Use the following example:
+In the Microsoft 365 Defender portal, go to **Hunting** to run your first query. Use the following example: 
 
 ```kusto
 // Finds PowerShell execution events that could involve a download
@@ -160,7 +166,18 @@ You can use the query editor to experiment with multiple queries. To use multipl
 - Separate each query with an empty line.
 - Place the cursor on any part of a query to select that query before running it. This will run only the selected query. To run another query, move the cursor accordingly and select **Run query**.
 
-:::image type="content" source="../../media/learn-work-with-multiple.png" alt-text="An example of multiple queries execution in the **New query** page in the Microsoft 365 Defender portal" lightbox="../../media/learn-work-with-multiple.png":::
+:::image type="content" source="../../media/multiple-queries.png" alt-text="An example of multiple queries execution in the **New query** page in the Microsoft 365 Defender portal" lightbox="../../media/multiple-queries.png":::
+
+For a more efficient workspace, you can also use multiple tabs in the same hunting page. Select **New query** to open a tab for your new query.
+
+:::image type="content" source="../../media/multitab.png" alt-text="An example of multiple queries execution in the **New query** page in the Microsoft 365 Defender portal" lightbox="../../media/multitab.png":::
+
+You can then run different queries without ever opening a new browser tab. 
+
+:::image type="content" source="../../media/multitab-examples.png" alt-text="An example of multiple queries execution in the **New query** page in the Microsoft 365 Defender portal" lightbox="../../media/multitab-examples.png":::
+
+>[!NOTE] 
+> You risk losing unsaved queries if you open a new browser tab for a new query.
 
 ## Use sample queries
 

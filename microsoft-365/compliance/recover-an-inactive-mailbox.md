@@ -2,8 +2,8 @@
 title: "Recover an inactive mailbox"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: 
 audience: Admin
@@ -20,6 +20,8 @@ description: Learn how to recover the contents of an inactive mailbox in Office 
 ---
 
 # Recover an inactive mailbox
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 An inactive mailbox (which is a type of soft-deleted mailbox) is used to preserve a former employee's email after he or she leaves your organization. If that employee returns to your organization or if another employee takes on the job responsibilities of the former employee, there are two ways that you can make the contents of the inactive mailbox available to a user:
 

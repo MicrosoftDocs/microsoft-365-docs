@@ -1,7 +1,7 @@
 ---
 title: "Assess the Microsoft 365 Active Users report"
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: overview
@@ -33,7 +33,7 @@ For example, you can use the **Active Users** report to find out how many produc
 ## How to get to the Active Users report
 
 1. In the admin center, go to the **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> page. 
-2. From the dashboard homepage, click on the **View more** button on the Active users - Microsoft 365 Services card.
+2. From the dashboard homepage, click on the **View more** button on the Active users - Microsoft 365 Services card.
 
 ## Interpret the Active Users report
 
@@ -48,7 +48,7 @@ The Activity chart shows you daily activity count in the reporting period separa
 The Services chart shows you count of users by activity type and Service.
 
 - On the Users chart, the x axis shows the selected reporting time period and the y axis displays the daily active users separated and color coded by license type.
-On the Activity chart, the x axis shows the selected reporting time period and the y axis displays the daily activity count separated and color coded by license type.
+On the Activity chart, the x axis shows the selected reporting time period and the y axis displays the daily activity count separated and color coded by license type.
 On the Services activity chart, the X axis displays the individual services your users are enabled for in the given time period and the Y axis is the Count of users by activity status, color coded by activity status.
 
 - You can filter the series you see on the chart by selecting an item in the legend. Changing this selection doesn't change the info in the grid table.
@@ -57,7 +57,5 @@ On the Services activity chart, the X axis displays the individual services your
 
 - You can change what information is displayed in the grid table with column controls.
 If your subscription is operated by 21Vianet, then you will not see Yammer.
-
-
 
 If your organization's policies prevents you from viewing reports where user information is identifiable, you can change the privacy setting for all these reports. Check out the **How do I hide user level details?** section in [Activity Reports in the Microsoft 365 admin center](activity-reports.md).  

@@ -1,9 +1,9 @@
 ---
-title: "About the Microsoft Compliance Manager premium assessment trial"
+title: "About the Microsoft Purview Compliance Manager premium assessment trial"
 f1.keywords:
 - NOCSH
-ms.author: v-jgriffee
-author: jmgriffee
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -13,41 +13,43 @@ ms.localizationpriority: high
 search.appverid: 
 - MOE150
 - MET150
-description: "About the Microsoft Compliance Manager premium assessment trials."
+description: "About the Microsoft Purview Compliance Manager premium assessment trials."
 ---
 
-# About the free trial for Microsoft Compliance Manager premium assessments
+# About the free trial for Microsoft Purview Compliance Manager premium assessments
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Compliance Manager helps you manage your organization’s compliance requirements and assess and improve your compliance score. The assessments you build are based on templates that correspond to governmental regulations and industry standards around the world.  
 
-Your licensing agreement to use Compliance Manager may include one or more built-in templates. An extensive library of premium assessment templates is also available for you to choose from so you can build assessments specific to your organization’s needs. To try out these templates before purchasing licenses, sign up for the free premium assessments trial.
+Your licensing agreement to use Compliance Manager may include one or more built-in templates for building assessments. An extensive library of premium assessment templates is also available for building assessments specific to your organization’s needs. To try out these templates before purchasing licenses, sign up for the free Compliance Manager premium assessments trial.
 
 ## Terms and conditions
 
-See the [terms and conditions](terms-conditions.md) for Microsoft 365 compliance trials.
+See the [terms and conditions](terms-conditions.md) for Microsoft Purview trials.
 
 ## Set up a premium assessment trial
 
-You can sign up for a trial in the Microsoft 365 compliance center using the **Trials** link in the left navigation pane. Select the **Compliance Manager premium assessment trial** to start a trial for premium assessment templates.
+You can sign up for a trial in the Microsoft Purview compliance portal using the **Trials** link in the left navigation pane. Select the **Compliance Manager premium assessment trial** to start a trial for premium assessment templates.
 
 This premium assessment trial is available to organizations using Compliance Manager under a commercial license. For GCC and DOD information and trial options, see [Working with Compliance Manager templates](compliance-manager-templates.md).
 
-Full access to Compliance Manager features may depend on your licensing agreement for Compliance Manager. To learn more about the free compliance trial that includes Compliance Manager, see [About the free trial for Microsoft 365 compliance](compliance-easy-trials.md).
+Full access to Compliance Manager features may depend on your licensing agreement for Compliance Manager. To learn more about the free compliance trial that includes Compliance Manager, see [About the free trial for Microsoft Purview](compliance-easy-trials.md).
 
 > [!NOTE]
 > Check your Microsoft 365 admin center settings to facilitate enrollment in the trial. In the Microsoft 365 admin center, go to the **Settings > Org settings > Services** page, and select **User owned apps and services**. Then check the box to let users start trials on behalf of your organization. When setup finishes in about two minutes, you can go back and uncheck the box to disable this setting. You can also start the trial without adjusting your org settings by going to the **Billing > Purchase services** page and searching for the Compliance Manager premium assessment trial.
 
 ## Template licensing
 
-Starting your one-time trial for premium assessments gives you the right to use 25 premium templates of your choice for free for 90 days. You can create as many assessments as you wish using these 25 templates.
+Starting your one-time trial for premium assessments gives you the right to use 25 premium templates of your choice for free for 90 days. You can create as many assessments from the 25 templates as you wish.
 
 After you start your trial, go to your **Assessments** tab in Compliance Manager and view the **Activated/Licensed templates** counter to see how many templates are available and are in use. This counter will show your 25 licensed templates. As you create assessments using these templates, your activated number will update. Template use is counted based on the underlying certification, meaning that multiple assessments based on the same template, or different versions of the same template that support different products, will count as one template use.
 
-For more details about how to use and manage Compliance Manager templates, see [Working with assessment templates](compliance-manager-templates.md).
+For more information about how to use and manage Compliance Manager templates, see [Working with assessment templates](compliance-manager-templates.md).
 
 ## Permissions
 
-Anyone in your organization with access to Compliance Manager can sign up for the assessment template trial.
+Any user in your organization with permissions to access Compliance Manager can sign up for the premium assessments trial. Learn more about the [permissions and roles required for Compliance Manager](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
 
 ## During your trial
 
@@ -55,10 +57,10 @@ Throughout your trial, you can review the **Trial summary** section of the **Ove
 
 ## After the trial
 
-After your trial ends, the assessment templates you selected will stop receiving automatic updates and may fall out of date with any regulatory changes. We recommend that you delete assessments built on templates that you don’t intend to purchase.
+After your trial ends, the templates you used won't receive automatic updates and may fall out of date with any regulatory changes. We recommend that you delete assessments built from templates that you don’t intend to purchase.
 
 ## Learn more about compliance
 
-To learn more about the features of Compliance Manager and how it can help your organization meet compliance and regulatory requirements, see [Microsoft Compliance Manager](compliance-manager.md).  
+To learn more about the features of Compliance Manager and how it can help your organization meet compliance and regulatory requirements, see [Microsoft Purview Compliance Manager](compliance-manager.md).  
 
-You can also learn about other Microsoft compliance solutions and how to start trials at [About the free trial for Microsoft 365 compliance](compliance-easy-trials.md).
+You can also learn about other Microsoft compliance solutions and how to start trials at [About the free trial for Microsoft Purview](compliance-easy-trials.md).

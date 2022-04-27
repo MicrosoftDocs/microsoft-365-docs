@@ -13,7 +13,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
   - m365-security-compliance
-  - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
 ---
@@ -27,6 +26,55 @@ ms.technology: mde
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+## 101.64.15 (20.122032.16415.0)
+
+- Fixed a regression introduced in version 101.61.69 where the status menu icon was sometimes showing an error icon, even though no action was required from the end user
+- Improved the `conflicting_applications` field in `mdatp health` to show only the most recent 10 processes and also to include the process names. This makes it easier to identify which processes are potentially conflicting with Microsoft Defender for Endpoint for Mac.
+- Fixed a bug in `mdatp device-control removable-media policy list` where vendor ID and product ID were displayed as decimal instead of hexadecimal
+- Performance improvements & other bug fixes
+
+## 101.61.69 (20.122022.16169.0)
+
+- Bug fixes
+
+## 101.60.91 (20.122021.16091.0)
+
+- This version contains a security update for [CVE-2022-23278](https://msrc-blog.microsoft.com/2022/03/08/guidance-for-cve-2022-23278-spoofing-in-microsoft-defender-for-endpoint/)
+
+## 101.59.50 (20.122021.15950.0)
+
+- This version adds support for macOS 12.3. Starting with macOS 12.3, [Apple is removing Python 2.7](https://developer.apple.com/documentation/macos-release-notes/macos-12_3-release-notes). There will be no Python version preinstalled on macOS by default. **ACTION NEEDED**: 
+  - Users must update Microsoft Defender for Endpoint for Mac to version 101.59.50 (or newer) prior to updating their devices to macOS Monterey 12.3 (or newer). This minimal version 101.59.50 is a prerequisite to eliminating Python-related issues with Microsoft Defender for Endpoint for Mac on macOS Monterey.
+  - For remote deployments, existing MDM setups must be updated to Microsoft Defender for Endpoint for Mac version 101.59.50 (or newer). Pushing via MDM an older Microsoft Defender for Endpoint for Mac version to macOS Monterey 12.3 (or newer) will result in an installation failure.
+
+## 101.59.10 (20.122012.15910.0)
+
+- The command-line tool now supports restoring quarantined files to a location other than the one where the file was originally detected. This can be done through `mdatp threat quarantine restore --id [threat-id] --path [destination-folder]`.
+- Extended device control to handle devices connected over Thunderbolt 3
+- Improved the handling of device control policies containing invalid vendor IDs and product IDs. Prior to this version, if the policy contained one or more invalid IDs, the entire policy was ignored. Starting from this version, only the invalid portions of the policy are ignored. Issues with the policy are surfaced through `mdatp device-control removable-media policy list`.
+- Bug fixes
+
+## 101.56.62 (20.121122.15662.0)
+
+- Bug fixes
+
+## 101.56.35 (20.121121.15635.0)
+
+- The application has been renamed from "Microsoft Defender ATP" to "Microsoft Defender". End users will observe the following changes:
+  - The application installation path has been changed from `/Application/Microsoft Defender ATP.app` to `/Applications/Microsoft Defender.app`.
+  - Within the user experience, occurrences of "Microsoft Defender ATP" have been replaced with "Microsoft Defender"
+- Resolved an issue where some VPN applications could not connect due to the network content filter that is distributed with Microsoft Defender for Endpoint for Mac
+- Addressed an issue discovered in macOS 12.2 beta 2 where the installation package could not be opened due to a change in the operating system (OS) that prevents installation of packages with certain characteristics. While it appears that this OS change is not included in the final release of macOS 12.2, it is likely that it will be reintroduced in a future macOS version. As such, we encourage all enterprise administrators to refresh the Microsoft Defender for Endpoint package in their management console to this product version (or a newer version).
+- Addressed an issue seen on some M1 devices where the product was stuck with invalid antimalware definitions and could not successfully update to a working set of definitions.
+- `mdatp health` output has been extended with an additional attribute called `full_disk_access_enabled` that can be used to determine whether Full Disk Access has been granted to all components of Microsoft Defender for Endpoint for Mac.
+- Performance improvements & bug fixes
+
+## 101.54.16 (20.121111.15416.0)
+
+- macOS 10.14 (Mojave) is no longer supported
+- After a product setting stops being managed by the administrator through MDM, it now reverts to the value it had before it was managed (the value configured locally by the end user or, if no such local value was explicitly provided, the default value used by the product). Prior to this change, after a setting stopped being managed, its managed value persisted and was still used by the product.
+- Performance improvements & bug fixes
 
 ## 101.49.25 (20.121092.14925.0)
 
@@ -267,7 +315,7 @@ ms.technology: mde
 
 ## 100.68.99
 
-- Added the ability to configure the antivirus functionality to run in [passive mode](mac-preferences.md#enable--disable-passive-mode)
+- Added the ability to configure the antivirus functionality to run in [passive mode](mac-preferences.md#enforcement-level-for-antivirus-engine)
 - Performance improvements & bug fixes
 
 ## 100.65.28

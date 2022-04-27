@@ -21,6 +21,8 @@ description: "Learn how retention works for Exchange."
 
 # Learn about retention for Exchange
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 The information in this article supplements [Learn about retention](retention.md) because it has information that's specific to Exchange.  For other workloads, see:
 
 - [Learn about retention for SharePoint and OneDrive](retention-policies-sharepoint.md)
@@ -92,9 +94,9 @@ When the retention settings no longer apply because the data is permanently dele
 
 ## Configuration guidance
 
-If you're new to configuring retention in Microsoft 365, see [Get started with retention policies and retention labels](get-started-with-retention.md).
+If you're new to configuring retention in Microsoft 365, see [Get started with data lifecycle management](get-started-with-data-lifecycle-management.md).
 
 If you're ready to configure a retention policy or retention label for Exchange, see the following instructions:
 - [Create and configure retention policies](create-retention-policies.md)
-- [Create retention labels and apply them in apps](create-apply-retention-labels.md)
+- [Publish retention labels and apply them in apps](create-apply-retention-labels.md)
 - [Apply a retention label to content automatically](apply-retention-labels-automatically.md)

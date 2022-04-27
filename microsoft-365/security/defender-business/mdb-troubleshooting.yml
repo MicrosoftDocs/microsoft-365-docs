@@ -6,12 +6,12 @@ metadata:
   author: denisebmsft
   ms.author: deniseb
   manager: dansimp 
-  audience: Admin
-  ms.topic: overview
-  ms.date: 12/08/2021
+  audience: Admin3
+  ms.topic: faq
+  ms.date: 04/27/2022
   ms.prod: m365-security
   ms.technology: mdb
-  localization_priority: Normal
+  ms.localizationpriority: medium
   ms.reviewer: inbadian, shlomiakirav
   f1.keywords: NOCSH 
   ms.collection: 
@@ -20,7 +20,11 @@ metadata:
 
 title: Microsoft Defender for Business troubleshooting
 summary: |
-  Use this article as a guide to resolve issues you might encounter in Microsoft Defender for Business.
+  Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. Defender for Business as a standalone subscription is in preview, and will roll out gradually to customers and IT Partners who [sign-up here](https://aka.ms/mdb-preview) to request it. Preview includes an [initial set of scenarios](mdb-tutorials.md#try-these-preview-scenarios), and we will be adding capabilities regularly.
+
+  Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. 
+
+  Use this article as a guide to resolve issues you might encounter in Microsoft Defender for Business. 
 
 sections:
   - name: General
@@ -36,7 +40,7 @@ sections:
       - question: I need to resolve a policy conflict
         answer: |
 
-          Policy conflicts can arise when security policies and settings are defined using multiple tools or methods. Here's an example:
+          Policy conflicts can arise when security policies are defined using multiple tools or methods. Here's an example:
 
           Suppose that Lee has been using Microsoft Endpoint Manager to manage devices and security settings. Lee has recently started using Microsoft Defender for Business. Lee has chosen to use the simplified configuration process in Defender for Business. Now, Lee sees policy conflicts in Microsoft Endpoint Manager and in the Microsoft 365 Defender portal. 
 
@@ -45,7 +49,7 @@ sections:
           - Delete your existing policies in Microsoft Endpoint Manager
           - See [Troubleshoot policies in Microsoft Intune](/troubleshoot/mem/intune/troubleshoot-policies-in-microsoft-intune)
 
-          See the following articles to learn more about your security policies and settings in Defender for Business:
+          See the following articles to learn more about your security policies in Defender for Business:
 
           - [Understand next-generation configuration settings in Microsoft Defender for Business](mdb-next-gen-configuration-settings.md)
           - [Firewall settings in Microsoft Defender for Business](mdb-firewall.md)
@@ -83,7 +87,7 @@ sections:
 
           2. Select **Endpoint security**, and then, under **Setup**, select **Microsoft Defender for Endpoint**.
 
-          3. Under **Endpoint Security Profile Settings (Preview)**, set **Allow Microsoft Defender for Endpoint to enforce Endpoint Security Configurations (Preview)** to **On**.
+          3. Under **Endpoint Security Profile Settings**, set **Allow Microsoft Defender for Endpoint to enforce Endpoint Security Configurations** to **On**.
 
       - question: Something went wrong with onboarding devices in the Microsoft 365 Defender portal
         answer: |

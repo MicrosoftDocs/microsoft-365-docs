@@ -1,9 +1,9 @@
 ---
-title: "Add licenses to or extend a subscription paid for using a product key"
+title: "Add licenses using a product key"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: argani, nicholak
 audience: Admin
@@ -14,9 +14,9 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 ms.custom:
+- commerce_licensing
 - TopSMBIssues
 - AdminSurgePortfolio
-- commerce_licensing
 search.appverid: MET150
 description: "Learn how to add licenses to or extend your subscription with a product key."
 ROBOTS: NOINDEX

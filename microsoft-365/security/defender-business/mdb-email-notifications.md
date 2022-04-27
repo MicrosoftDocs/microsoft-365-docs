@@ -7,18 +7,19 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 12/08/2021
+ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH 
+ms.collection: M365-security-compliance
 ---
 
 # Set up email notifications
 
-> [!IMPORTANT]
-> Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. This article includes links to online content that might describe some features that are not included in Microsoft Defender for Business (preview).
+> [!NOTE]
+> Microsoft Defender for Business is now included in [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
 You can set up email notifications for your security team. Then, as alerts are generated, or new vulnerabilities are discovered, people on your security team will be notified automatically. 
 
@@ -31,9 +32,14 @@ You can set up email notifications for your security team. Then, as alerts are g
 3. [Proceed to your next steps](#next-steps).
 
 
+>
+> **Got a minute?**
+> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about security</a>. We'd love to hear from you!
+>
+
 ## Types of email notifications
 
-When you set up email notifications, you can choose from two types, as described in the following table: <br/><br/>
+When you set up email notifications, you can choose from two types, as described in the following table:
 
 | Notification type  | Description  |
 |---------|---------|
@@ -68,4 +74,3 @@ To view or edit email notification settings for your company, follow these steps
 Proceed to:
 
 - [Step 4: Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md)
-

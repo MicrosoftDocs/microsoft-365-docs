@@ -21,8 +21,8 @@ ms.collection: M365-security-compliance
 # Microsoft Defender Antivirus in the Windows Security app
 
 **Applies to:**
-
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 In Windows 10, version 1703 and later, the Windows Defender app is part of the Windows Security.
 
@@ -37,13 +37,13 @@ Settings that were previously part of the Windows Defender client and main Windo
 
 See the [Windows Security article](/windows/threat-protection/windows-defender-security-center/windows-defender-security-center) for more information on other Windows security features that can be monitored in the app.
 
-The Windows Security app is a client interface on Windows 10, version 1703 and later. It is not the Microsoft Defender Security Center web portal that is used to review and manage [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint).
+The Windows Security app is a client interface on Windows 10, version 1703 and later. It is not the Microsoft 365 Defender web portal that is used to review and manage [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint).
 
 ## Review virus and threat protection settings in the Windows Security app
 
-:::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="Virus and threat protection settings in Windows Security app.":::
+:::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="Virus and threat protection settings in Windows Security app" lightbox="../../media/wdav-protection-settings-wdsc.png":::
 
-1. Open the Windows Security app by clicking the shield icon in the task bar or searching the start menu for **Defender for Cloud**.
+1. Open the Windows Security app by clicking the shield icon in the task bar or searching the start menu for **Windows Security**.
 
 2. Select the **Virus & threat protection** tile (or the shield icon on the left menu bar).
 
@@ -62,7 +62,7 @@ The following sections describe how to perform some of the most common tasks whe
 
 ## Review the security intelligence update version and download the latest updates in the Windows Security app
 
-:::image type="content" source="../../media/wdav-wdsc-defs.png" alt-text="Security intelligence version number.":::
+:::image type="content" source="../../media/wdav-wdsc-defs.png" alt-text="Security intelligence version number" lightbox="../../media/wdav-wdsc-defs.png":::
 
 1. Open the Windows Security app by searching the start menu for *Security*, and then selecting **Windows Security**.
 
@@ -92,9 +92,9 @@ The following sections describe how to perform some of the most common tasks whe
 
 2. Select the **Virus & threat protection** tile (or the shield icon on the left menu bar).
 
-3. Under the **Manage settings**, select **Virus & threat protection settings**.
+3. Under **Virus & threat protection settings**, select **Manage settings**.
 
-4. Under the **Exclusions** setting, select **Add or remove exclusions**.
+4. Under **Exclusions**, select **Add or remove exclusions**.
 
 5. Select the plus icon (**+**) to choose the type and set the options for each exclusion.
 

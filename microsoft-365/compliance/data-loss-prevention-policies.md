@@ -22,6 +22,7 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkEXCHANGE
 ROBOTS: NOINDEX, NOFOLLOW
 feedback_system: None
 description: data loss prevention reference material
@@ -29,8 +30,10 @@ description: data loss prevention reference material
 
 # Data loss prevention reference
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 > [!IMPORTANT]
-> This is reference topic is no longer the main resource for Microsoft 365 data loss prevention (DLP) information. The DLP content set is being updated and restructured. The topics covered in this article will be moving to new, updated articles. For more information about DLP, see [Learn about data loss prevention](dlp-learn-about-dlp.md).
+> This is reference topic is no longer the main resource for Microsoft Purview Data Loss Prevention (DLP) information. The DLP content set is being updated and restructured. The topics covered in this article will be moving to new, updated articles. For more information about DLP, see [Learn about data loss prevention](dlp-learn-about-dlp.md).
 
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
 <!-- move this note to a more appropriate place, no topic should start with a note -->
@@ -66,9 +69,9 @@ With a DLP policy, you can:
 -->
 ## Create and manage DLP policies
 
-You create and manage DLP policies on the Data loss prevention page in the Microsoft 365 Compliance center.
+You create and manage DLP policies on the data loss prevention page in the Microsoft Purview compliance portal.
 
-![Data loss prevention page in the Office 365 Security &amp; Compliance Center.](../media/943fd01c-d7aa-43a9-846d-0561321a405e.png)
+![Data loss prevention page in the Microsoft Purview compliance portal](../media/943fd01c-d7aa-43a9-846d-0561321a405e.png)
 
 <!-- MOVED TO LEARN ABOUT ## What a DLP policy contains
 
@@ -526,7 +529,7 @@ DLP evaluates any content that can be indexed. For more information on what file
 
 When you create a DLP policy that includes Exchange Online as a location, the policy's synced from the Office 365 Security &amp; Compliance Center to Exchange Online, and then from Exchange Online to Outlook on the web and Outlook.
 
-When a message is being composed in Outlook, the user can see policy tips as the content being created is evaluated against DLP policies. And after a message is sent, it's evaluated against DLP policies as a normal part of mail flow, along with Exchange mail flow rules (also known as transport rules) and DLP policies created in the Exchange admin center. DLP policies scan both the message and any attachments.
+When a message is being composed in Outlook, the user can see policy tips as the content being created is evaluated against DLP policies. And after a message is sent, it's evaluated against DLP policies as a normal part of mail flow, along with Exchange mail flow rules (also known as transport rules) and DLP policies created in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>. DLP policies scan both the message and any attachments.
 
 ### Policy evaluation in the Office desktop programs
 
@@ -588,6 +591,6 @@ However, DLP reports need pull data from across Microsoft 365, including Exchang
 
 - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
 
-- [What the DLP functions look for](what-the-dlp-functions-look-for.md)
+- [Sensitive information type functions](sit-functions.md)
 
 - [Create a custom sensitive information type](create-a-custom-sensitive-information-type.md)

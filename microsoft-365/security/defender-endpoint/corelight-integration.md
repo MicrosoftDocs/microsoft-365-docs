@@ -31,13 +31,13 @@ ms.technology: mde
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
-Microsoft has partnered with [Corelight](https://corelight.com/integrations/iot-security), provider of the industry’s leading open network detection and response (NDR) platform, to help you discover IoT/OT devices across your organization. Using data, sent from Corelight network appliances, Microsoft 365 Defender gains increased visibility into the network activities of unmanaged devices, including communication with other unmanaged devices or external networks.
+Microsoft has partnered with [Corelight](https://corelight.com/integrations/iot-security), provider of the industry's leading open network detection and response (NDR) platform, to help you discover IoT/OT devices across your organization. Using data, sent from Corelight network appliances, Microsoft 365 Defender gains increased visibility into the network activities of unmanaged devices, including communication with other unmanaged devices or external networks.
 
 With this data source enabled, all events from Corelight network appliances are sent to Microsoft 365 Defender. You can view these activities in the unmanaged devices timeline, available in the Microsoft Defender for Endpoint device inventory. For more information, see [Device discovery](device-discovery.md).
 
 ## Enabling the Corelight integration
 
-To enable the Corelight integration, you’ll need to take the following steps:
+To enable the Corelight integration, you'll need to take the following steps:
 
 [Step 1: Turn on Corelight as a data source](#step-1-turn-on-corelight-as-a-data-source)<br>
 [Step 2: Provide permission for Corelight to send events to Microsoft 365 Defender](#step-2-provide-permission-for-corelight-to-send-events-to-microsoft-365-defender)<br>
@@ -47,7 +47,7 @@ To enable the Corelight integration, you’ll need to take the following steps:
 
 1. In the navigation pane of the [https://security.microsoft.com](https://security.microsoft.com/) portal, select **Settings** \> **Device discovery** \> **Data sources**.
 
-    ![Image of data sources](images/enable-corelight.png)
+   :::image type="content" source="images/enable-corelight.png" alt-text="The data sources page in the Microsoft 365 Defender portal" lightbox="images/enable-corelight.png":::
 
 2. Select **Send Corelight data to M365D** and select **Save**.
 
@@ -61,10 +61,12 @@ To enable the Corelight integration, you’ll need to take the following steps:
 
 ### Step 3: Configure your Corelight appliance to send data to Microsoft 365 Defender
 
-**Applies to**: Corelight Sensor software v23.2 and later
-
 > [!NOTE]
-> To enable on a previous release that supports sending data, you must first execute: `corelight-client configuration update --enable.adfiot 1`.
+>  The integration will be public in Corelight Sensor software v24 and later. 
+
+To preview in v23 or v22.1 you must execute `corelight-client configuration update --enable.adfiot 1` to enable the configuration section in the GUI.
+
+In addition to this, the GUI validation requires that a broker is configured in the configuration section on all v23 releases.  The broker you provide is required but won't actually be used. Enter `127.0.0.1:1234` in the _kafka broker_ field to ensure successful validation before following the steps below to enable sending data to Microsoft 365 Defender.
 
 > [!NOTE]
 > You will need internet connectivity for your sensor to reach both the Defender and Corelight cloud services for the solution to work.
@@ -74,15 +76,15 @@ To enable the Corelight integration, you’ll need to take the following steps:
 1. In the Corelight Sensor GUI configuration section, select **Sensor** \> **Export**.
 2. From the list, go to **EXPORT TO KAFKA** and select the switch to turn it on.
 
-   ![Image of kafka export](images/exporttokafka.png)
+   :::image type="content" source="images/exporttokafka.png" alt-text="The kafka export" lightbox="images/exporttokafka.png":::
 
 3. Next, turn on **EXPORT TO AZURE DEFENDER FOR IOT** and enter your tenant ID, noted in Step 1, in the TENANT ID field.
 
-   ![Image of iot export](images/exporttodiot.png)
+   :::image type="content" source="images/exporttodiot.png" alt-text="The iot export" lightbox="images/exporttodiot.png":::
 
 4. Select **Apply Changes**.
 
-   ![Apply image ](images/corelightapply.png)
+   :::image type="content" source="images/corelightapply.png" alt-text="The Apply changes icon" lightbox="images/corelightapply.png":::
 
 > [!NOTE]
 > Configuration options in Kafka (excluding Log Exclusion and Filters) should not be changed. Any changes made will be ignored.

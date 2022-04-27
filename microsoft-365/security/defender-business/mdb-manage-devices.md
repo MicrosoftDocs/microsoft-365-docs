@@ -7,21 +7,22 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: how-to
-ms.date: 12/08/2021
+ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
 - M365-security-compliance
+- m365-initiative-defender-business
 ---
 
 # Manage devices in Microsoft Defender for Business
 
-> [!IMPORTANT]
-> Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. This article includes links to online content that might describe some features that are not included in Microsoft Defender for Business (preview).
+> [!NOTE]
+> Microsoft Defender for Business is now included in [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
 In Microsoft Defender for Business, you can manage devices as follows:
 
@@ -29,6 +30,11 @@ In Microsoft Defender for Business, you can manage devices as follows:
 - [Take action on a device](#take-action-on-a-device-that-has-threat-detections) that has threat detections
 - [Onboard a device to Defender for Business](#onboard-a-device)  
 - [Offboard a device from Defender for Business](#offboard-a-device)
+
+>
+> **Got a minute?**
+> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about security</a>. We'd love to hear from you!
+>
 
 ## View the list of onboarded devices
 
@@ -60,14 +66,11 @@ See [Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md)
 
 ## Offboard a device
 
-See [Offboard a device](mdb-onboard-devices.md#what-if-i-want-to-offboard-a-device).
+See [Offboarding a device](mdb-offboard-devices.md).
 
 ## Next steps
 
 - [View and manage incidents in Microsoft Defender for Business](mdb-view-manage-incidents.md)
-
 - [Respond to and mitigate threats in Microsoft Defender for Business](mdb-respond-mitigate-threats.md)
-
 - [Review remediation actions in the Action center](mdb-review-remediation-actions.md)
-
 - [Create or edit device groups](mdb-create-edit-device-groups.md)

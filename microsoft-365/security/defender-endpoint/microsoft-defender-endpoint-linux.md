@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection:
   - m365-security-compliance
-  - m365initiative-defender-endpoint
+  - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
 ---
@@ -24,7 +24,7 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -32,14 +32,21 @@ ms.technology: mde
 This topic describes how to install, configure, update, and use Microsoft Defender for Endpoint on Linux.
 
 > [!CAUTION]
-> Running other third-party endpoint protection products alongside Microsoft Defender for Endpoint on Linux is likely to lead to performance problems and unpredictable side effects. If non-Microsoft endpoint protection is an absolute requirement in your environment, you can still safely take advantage of Defender for Endpoint on Linux EDR functionality after configuring the antivirus functionality to run in [Passive mode](linux-preferences.md#enable--disable-passive-mode).
+> Running other third-party endpoint protection products alongside Microsoft Defender for Endpoint on Linux is likely to lead to performance problems and unpredictable side effects. If non-Microsoft endpoint protection is an absolute requirement in your environment, you can still safely take advantage of Defender for Endpoint on Linux EDR functionality after configuring the antivirus functionality to run in [Passive mode](linux-preferences.md#enforcement-level-for-antivirus-engine).
 
 ## How to install Microsoft Defender for Endpoint on Linux
+
+Microsoft Defender for Endpoint for Linux includes antimalware and endpoint detection and response (EDR) capabilities. 
+
 
 ### Prerequisites
 
 - Access to the Microsoft 365 Defender portal
 - Linux distribution using the [systemd](https://systemd.io/) system manager
+
+  >[!NOTE]
+  >Linux distribution using system manager, except for RHEL/CentOS 6.x support both SystemV and Upstart.
+
 - Beginner-level experience in Linux and BASH scripting
 - Administrative privileges on the device (in case of manual deployment)
 
@@ -53,7 +60,7 @@ There are several methods and deployment tools that you can use to install and c
 
 In general you need to take the following steps:
 
-- Ensure that you have a Microsoft Defender for Endpoint subscription, and that you have access to the [Microsoft Defender for Endpoint portal](microsoft-defender-security-center.md).
+- Ensure that you have a Microsoft Defender for Endpoint subscription.
 - Deploy Microsoft Defender for Endpoint on Linux using one of the following deployment methods:
   - The command-line tool:
     - [Manual deployment](linux-install-manually.md)
@@ -69,61 +76,63 @@ If you experience any installation failures, refer to [Troubleshooting installat
 
 ### System requirements
 
-- Supported Linux server distributions and x64 (AMD64/EM64T) versions:
+- Supported Linux server distributions and x64 (AMD64/EM64T) and x86_64 versions:
 
   - Red Hat Enterprise Linux 6.7 or higher
-  - Red Hat Enterprise Linux 7.2 or higher 
+  - Red Hat Enterprise Linux 7.2 or higher
+  - Red Hat Enterprise Linux 8.x
   - CentOS 6.7 or higher 
   - CentOS 7.2 or higher
   - Ubuntu 16.04 LTS or higher LTS
   - Debian 9 or higher
   - SUSE Linux Enterprise Server 12 or higher
   - Oracle Linux 7.2 or higher
+  - Oracle Linux 8.x
   - Amazon Linux 2
   - Fedora 33 or higher
 
     > [!NOTE]
     > Distributions and version that are not explicitly listed are unsupported (even if they are derived from the officially supported distributions).
 
+- List of supported kernel versions
+  - Minimum kernel version 3.10.0-327 (For all the supported Linux distributions mentioned above except Red Hat Enterprise Linux 6 and CentOS 6)
+  - The `fanotify` kernel option must be enabled
+  - Red Hat Enterprise Linux 6 and CentOS 6:
+    - For 6.7: 2.6.32-573.*
+    - For 6.8: 2.6.32-642.*
+    - For 6.9: 2.6.32-696.* (except 2.6.32-696.el6.x86_64)
+    - For 6.10: 2.6.32.754.2.1.el6.x86_64 to 2.6.32-754.43.1:
+    
+       - 2.6.32-754.10.1.el6.x86_64
+       - 2.6.32-754.11.1.el6.x86_64
+       - 2.6.32-754.12.1.el6.x86_64
+       - 2.6.32-754.14.2.el6.x86_64
+       - 2.6.32-754.15.3.el6.x86_64
+       - 2.6.32-754.17.1.el6.x86_64
+       - 2.6.32-754.18.2.el6.x86_64
+       - 2.6.32-754.2.1.el6.x86_64
+       - 2.6.32-754.22.1.el6.x86_64
+       - 2.6.32-754.23.1.el6.x86_64
+       - 2.6.32-754.24.2.el6.x86_64
+       - 2.6.32-754.24.3.el6.x86_64
+       - 2.6.32-754.25.1.el6.x86_64
+       - 2.6.32-754.27.1.el6.x86_64
+       - 2.6.32-754.28.1.el6.x86_64
+       - 2.6.32-754.29.1.el6.x86_64
+       - 2.6.32-754.29.2.el6.x86_64
+       - 2.6.32-754.3.5.el6.x86_64
+       - 2.6.32-754.30.2.el6.x86_64
+       - 2.6.32-754.33.1.el6.x86_64
+       - 2.6.32-754.35.1.el6.x86_64
+       - 2.6.32-754.39.1.el6.x86_64
+       - 2.6.32-754.41.2.el6.x86_64
+       - 2.6.32-754.43.1.el6.x86_64
+       - 2.6.32-754.6.3.el6.x86_64
+       - 2.6.32-754.9.1.el6.x86_64
 
-    For Red Hat Enterprise Linux 6 and CentOS 6, the list of supported kernel versions are:
-       - For 6.7: 2.6.32-573.* 
-       - For 6.8: 2.6.32-642.* 
-       - For 6.9: 2.6.32-696.* 
-       - For 6.10: 2.6.32.754.2.1.el6.x86_64 to 2.6.32-754.41.2:
+ > [!NOTE]
+ > After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that that are listed in this section are provided for technical upgrade support only.
 
-    List of versions:
-
-    - 2.6.32-754.2.1.el6.x86_64 
-    - 2.6.32-754.17.1.el6.x86_64
-    - 2.6.32-754.29.1.el6.x86_64
-    - 2.6.32-754.3.5.el6.x86_64 
-    - 2.6.32-754.18.2.el6.x86_64
-    - 2.6.32-754.29.2.el6.x86_64
-    - 2.6.32-754.6.3.el6.x86_64 
-    - 2.6.32-754.22.1.el6.x86_64
-    - 2.6.32-754.30.2.el6.x86_64
-    - 2.6.32-754.9.1.el6.x86_64 
-    - 2.6.32-754.23.1.el6.x86_64
-    - 2.6.32-754.33.1.el6.x86_64
-    - 2.6.32-754.10.1.el6.x86_64
-    - 2.6.32-754.24.2.el6.x86_64
-    - 2.6.32-754.35.1.el6.x86_64
-    - 2.6.32-754.11.1.el6.x86_64
-    - 2.6.32-754.24.3.el6.x86_64
-    - 2.6.32-754.39.1.el6.x86_64
-    - 2.6.32-754.12.1.el6.x86_64
-    - 2.6.32-754.25.1.el6.x86_64
-    - 2.6.32-754.41.2.el6.x86_64
-    - 2.6.32-754.14.2.el6.x86_64
-    - 2.6.32-754.27.1.el6.x86_64
-    - 2.6.32-754.15.3.el6.x86_64
-    - 2.6.32-754.28.1.el6.x86_64       
-
-
-- Minimum kernel version 3.10.0-327
-
-- The `fanotify` kernel option must be enabled
 
   > [!CAUTION]
   > Running Defender for Endpoint on Linux side by side with other `fanotify`-based security solutions is not supported. It can lead to unpredictable results, including hanging the operating system.
@@ -177,10 +186,10 @@ The following downloadable spreadsheet lists the services and their associated U
 
 ****
 
-|Spreadsheet of domains list|Description|
+|Spreadsheet of domains list| Description|
 |---|---|
-|![Thumb image for Microsoft Defender for Endpoint URLs spreadsheet.](images/mdatp-urls.png)|Spreadsheet of specific DNS records for service locations, geographic locations, and OS. <p> Download the spreadsheet [here](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx).|
-|||
+|Microsoft Defender for Endpoint URL list for commercial customers| Spreadsheet of specific DNS records for service locations, geographic locations, and OS for commercial customers. <p> [Download the spreadsheet here.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
+| Microsoft Defender for Endpoint URL list for Gov/GCC/DoD | Spreadsheet of specific DNS records for service locations, geographic locations, and OS for Gov/GCC/DoD customers. <p> [Download the spreadsheet here.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
 
 > [!NOTE]
 > For a more specific URL list, see [Configure proxy and internet connectivity settings](/microsoft-365/security/defender-endpoint/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server).

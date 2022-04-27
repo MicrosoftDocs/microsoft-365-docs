@@ -38,8 +38,8 @@ This function returns a table with the following columns:
 
 | Column | Data type | Description |
 |------------|-------------|-------------|
-| `IP` | string | IP address  |
-| `DeviceId` | string | Unique identifier for the device in the service |
+| `IP` | `string` | IP address  |
+| `DeviceId` | `string` | Unique identifier for the device in the service |
 
 
 ## Syntax

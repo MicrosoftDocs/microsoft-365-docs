@@ -23,7 +23,9 @@ description: In this article, you'll learn how to create, test, and tune a DLP p
 
 # Create, test, and tune a DLP policy
 
-Data loss prevention (DLP) helps you prevent the unintentional or accidental sharing of sensitive information.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Microsoft Purview Data Loss Prevention (DLP) helps you prevent the unintentional or accidental sharing of sensitive information.
 
 DLP examines email messages and files for sensitive information, like a credit card number. Using DLP you can detect sensitive information, and take action such as:
 
@@ -49,6 +51,25 @@ For more information, see [Give users access to the Office 365 Compliance Center
   
 These permissions are required to create and apply a DLP policy not to enforce policies.
 
+### Roles and Role Groups in preview
+
+There are roles and role groups in preview that you can test out to fine tune your access controls.
+
+Here's a list of applicable roles that are in preview. To learn more about them, see [Roles in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+
+- Information Protection Admin
+- Information Protection Analyst
+- Information Protection Investigator
+- Information Protection Reader
+
+Here's a list of applicable role groups that are in preview. To learn more, see [Role groups in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+
+- Information Protection
+- Information Protection Admins
+- Information Protection Analysts
+- Information Protection Investigators
+- Information Protection Readers
+
 ## How sensitive information is detected by DLP
 
 DLP finds sensitive information by regular expression (RegEx) pattern matching, in combination with other indicators such as the proximity of certain keywords to the matching patterns. For example, a VISA credit card number has 16 digits. But, those digits can be written in different ways, such as 1111-1111-1111-1111, 1111 1111 1111 1111, or 1111111111111111.
@@ -68,7 +89,7 @@ See [Sensitive information type entity definitions](sensitive-information-type-e
 
 When the risks of data leakage aren't entirely obvious, it's difficult to work out where exactly you should start with implementing DLP. Fortunately, DLP policies can be run in "test mode", allowing you to gauge their effectiveness and accuracy before you turn them on.
 
-DLP policies for Exchange Online can be managed through the Exchange admin center. But you can configure DLP policies for all workloads through the Security & Compliance Center, so that's what I'll use for demonstrations in this article. In the Security & Compliance Center, you'll find the DLP policies under **Data loss prevention** > **Policy**. Choose **Create a policy** to start.
+DLP policies for Exchange Online can be managed through the Exchange admin center. But you can configure DLP policies for all workloads through the Microsoft Purview compliance portal, so that's what I'll use for demonstrations in this article. In the Microsoft Purview compliance portal, you'll find the DLP policies under **Data loss prevention** > **Policy**. Choose **Create a policy** to start.
 
 Microsoft 365 provides a range of [DLP policy templates](what-the-dlp-policy-templates-include.md) you can use to create policies. Let's say that you're an Australian business. You can filter the templates on Australia, and choose Financial, Medical and Health, and Privacy.
 
@@ -90,7 +111,7 @@ At the first **Policy Settings** step, just accept the defaults for now. You can
 
 ![Options to customize the type of content to protect.](../media/DLP-create-test-tune-default-customization-settings.png)
 
-After clicking Next,** you'll be presented with an more **Policy Settings** page with more customization options. For a policy that you are just testing, here's where you can start to make some adjustments.
+After clicking Next,** you'll be presented with a more **Policy Settings** page with more customization options. For a policy that you are just testing, here's where you can start to make some adjustments.
 
 - I've turned off policy tips for now, which is a reasonable step to take if you're just testing things out and don't want to display anything to users yet. Policy tips display warnings to users that they're about to violate a DLP policy. For example, an Outlook user will see a warning that the file they've attached contains credit card numbers and will cause their email to be rejected. The goal of policy tips is to stop the non-compliant behavior before it happens.
 - I've also decreased the number of instances from 10 to 1, so that this policy will detect any sharing of Australian PII data, not just bulk sharing of the data.
@@ -211,8 +232,9 @@ When you're happy that your DLP policy is accurately and effectively detecting s
  
 If you're waiting to see when the policy will take effect, [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell) and run the [Get-DlpCompliancePolicy cmdlet](/powershell/module/exchange/get-dlpcompliancepolicy) to see the DistributionStatus.
 
-![Running cmdlet in PowerShell.](../media/DLP-create-test-tune-PowerShell.png)
-
+ ```powershell
+ Get-DlpCompliancePolicy "Testing -Australia PII" -DistributionDetail | Select distributionstatus
+ ```
 After turning on the DLP policy, you should run some final tests of your own to make sure that the expected policy actions are occurring. If you're trying to test things like credit card data, there are websites online with information on how to generate sample credit card or other personal information that will pass checksums and trigger your policies.
 
 Policies that allow user overrides will present that option to the user as part of the policy tip.

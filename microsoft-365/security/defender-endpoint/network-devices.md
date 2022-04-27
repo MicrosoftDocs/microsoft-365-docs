@@ -23,8 +23,7 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Threat and vulnerability management](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -103,7 +102,7 @@ To configure assessment jobs, the following user permission option is required: 
 2. Download the network scanner and install it on the designated Defender for Endpoint assessment device.
 
     > [!div class="mx-imgBorder"]
-    > ![Download scanner button.](images/assessment-jobs-download-scanner.png)
+    > :::image type="content" source="images/assessment-jobs-download-scanner.png" alt-text="The Download scanner button" lightbox="images/assessment-jobs-download-scanner.png":::
 
 ## Network scanner installation & registration
 
@@ -127,7 +126,7 @@ In the Assessment jobs page in **Settings**, select **Add network assessment job
 To prevent device duplication in the network device inventory, make sure each IP address is configured only once across multiple assessment devices.
 
 > [!div class="mx-imgBorder"]
-> ![Add network assessment job button.](images/assessment-jobs-add.png)
+> :::image type="content" source="images/assessment-jobs-add.png" alt-text="The Add network assessment job button" lightbox="images/assessment-jobs-add.png":::
 
 Adding a network assessment job steps:
 
@@ -157,7 +156,7 @@ Once the results show up, you can choose which devices will be included in the p
 Newly discovered devices will be shown under the new **Network devices** tab in the **Device inventory** page. It may take up to two hours after adding an assessment job until the devices are updated.
 
 > [!div class="mx-imgBorder"]
-> ![Network devices section in the Device inventory.](images/assessment-jobs-device-inventory.png)
+> :::image type="content" source="images/assessment-jobs-device-inventory.png" alt-text="The Network devices section in the Device inventory" lightbox="images/assessment-jobs-device-inventory.png":::
 
 ## Troubleshooting
 

@@ -19,7 +19,8 @@ ms.technology: mde
 # Supported managed security service providers
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -33,6 +34,7 @@ Logo |Partner name   | Description
 ![Image of Aujas logo.](images/aujas-logo.png) | [Aujas managed MDE Service](https://go.microsoft.com/fwlink/?linkid=2162429) | Aujas cybersecurity provides 24*7 managed security services across the entire enterprise spectrum, using Microsoft Defender for Endpoint through its Cyber Defense Centers.
 ![Image of BDO Digital logo.](images/bdo-logo.png)| [BDO Digital](https://go.microsoft.com/fwlink/?linkid=2090394) | BDO Digital's Managed Defense uses best practice tools, AI, and in-house security experts for 24/7/365 identity protection
 ![Image of BlueVoyant logo.](images/bluevoyant-logo.png)| [BlueVoyant](https://go.microsoft.com/fwlink/?linkid=2121401) | MDR for Microsoft Defender for Endpoint provides support in monitoring, investigating, and mitigating advanced attacks on endpoints
+:::image type="content" source="images/bt-logo.png" alt-text="!Image of BT logo.":::|[Managed Endpoint Microsoft from BT](https://www.globalservices.bt.com/en/solutions/solution/endpoint-security-and-protection-solutions)| We have been defending ourselves for many years, this expertise has allowed us to develop unique tradecraft which we use to protect Microsoft customers. We'll provide 24x7x365 monitoring of your Microsoft Defender for Endpoint estate in our global security operation centers.
 ![Image of Cloud Defender for Cloud logo.](images/cloudsecuritycenter-logo.png)| [Cloud Defender for Cloud](https://go.microsoft.com/fwlink/?linkid=2099315) | InSpark's Cloud Defender for Cloud is a 24x7 managed service that delivers protect, detect & respond capabilities
 ![Image of Cloud SOC logo.](images/cloudsoc-logo.png)| [Cloud SOC](https://go.microsoft.com/fwlink/?linkid=2104265) | Cloud SOC provides 24/7 security monitoring services based on Microsoft cloud and helps you to continuously improve your security posture
 ![Image of CSIS Managed Detection & Response logo.](images/csis-logo.png)| [CSIS Managed Detection & Response](https://go.microsoft.com/fwlink/?linkid=2091005) | 24/7 monitoring and analysis of security alerts giving companies actionable insights into what, when and how security incidents have taken place

@@ -55,8 +55,6 @@
           href: /microsoftteams/guest-experience
         - name: Chat with employees and customers
           href: https://support.microsoft.com/office/65748808-a403-462c-a6e1-b169e5bc6c92
-        - name: Online meetings overview
-          href: overview-online-meetings.md 
         - name: Schedule a meeting with guests
           href: https://support.microsoft.com/office/943507a9-8583-4c58-b5d2-8ec8265e04e5
         - name: Join a meeting with guests
@@ -81,10 +79,6 @@
       items:
         - name: Overview of Bookings
           href: https://support.microsoft.com/office/42d4e852-8e99-4d8f-9b70-d7fc93973cb5
-        - name: Track business info with Microsoft Lists
-          href: track-info-lists.md
-        - name: Plan an event
-          href: plan-event.md   
     - name: Manage services
       items: 
         - name: What is an admin
@@ -126,20 +120,12 @@
         - name: Overview of Microsoft 365 Business Premium security
           href: overview-m365-security.md
         - name: Secure employee accounts with MFA
-          href: turn-on-mfa.md
+          href: ../admin/security-and-compliance/set-up-multi-factor-authentication.md
         - name: Set up two-factor sign-in on your phone
           href: https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14
-        - name: Manage safe attachments
-          href: safe-attachments.md 
-        - name: Prevent data loss
-          href: set-up-dlp.md 
-        - name: Create sensitivity labels
-          href: create-sensitivity-labels.md 
     - name: Support
       items:
         - name: Find docs and training
-          href: find-help-answers.md
-        - name: Employee quick setup  
-          href: employee-quick-setup.md  
+          href: ../admin/index.yml
     - name: Switch from Google Workspace
       href: moveto-microsoft-365/move-from-google-workspace-overview.md  

@@ -39,7 +39,7 @@ After the cookbook is created, create a files folder inside the cookbook folder 
 mkdir mdatp/files
 ```
 
-Transfer the Linux Server Onboarding zip file that can be downloaded from the Microsoft Defender Security Center portal to this new files folder.
+Transfer the Linux Server Onboarding zip file that can be downloaded from the Microsoft 365 Defender portal to this new files folder.
 
 On the Chef Workstation, navigate to the mdatp/recipes folder. This folder is created when the cookbook was generated. Use your preferred text editor (like vi or nano) to add the following instructions to the end of the default.rb file:
 

@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.date:
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -21,10 +21,12 @@ ms.custom: seo-marvel-apr2020
 
 # Learn about exact data match based sensitive information types
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 [Sensitive information types](sensitive-information-type-learn-about.md) are used to help identify sensitive items so that you can prevent them from being inadvertently or inappropriately shared, to help in locating relevant data in eDiscovery, and to apply governance actions to certain types of information. You define a custom sensitive information type (SIT) based on:
 
 - patterns
-- keyword evidence such as *employee*, *social security number*, or *ID*
+- keyword evidence such as *employee*, *social security number*, or *ID*
 - character proximity to evidence in a particular pattern
 - confidence levels
 
@@ -39,10 +41,10 @@ But what if you wanted a custom sensitive information type (SIT) that uses exact
 
 ![EDM-based classification.](../media/EDMClassification.png)
 
-EDM-based classification enables you to create custom sensitive information types that refer to exact values in a database of sensitive information. The database can be refreshed daily, and contain up to 100 million rows of data. So as employees, patients, or clients come and go, and records change, your custom sensitive information types remain current and applicable. And, you can use EDM-based classification with policies, such as [data loss prevention policies](dlp-learn-about-dlp.md) or [Microsoft Cloud App Security file policies](/cloud-app-security/data-protection-policies).
+EDM-based classification enables you to create custom sensitive information types that refer to exact values in a database of sensitive information. The database can be refreshed daily, and contain up to 100 million rows of data. So as employees, patients, or clients come and go, and records change, your custom sensitive information types remain current and applicable. And, you can use EDM-based classification with policies, such as [Microsoft Purview data loss prevention policies](dlp-learn-about-dlp.md) or [Microsoft Cloud App Security file policies](/cloud-app-security/data-protection-policies).
 
 > [!NOTE]
-> Microsoft 365 Information Protection supports double byte character set languages for:
+> Microsoft Purview Information Protection supports double byte character set languages for:
 >
 > - Chinese (simplified)
 > - Chinese (traditional)
@@ -66,16 +68,15 @@ The schema is an xml file that defines:
 
 ### Sensitive information source table
 
-The sensitive source table that contains the sensitive information values that the EDM SIT will look for. It is made up of columns and roes. The column headers are the field names, the rows are an instance of data and each cell contains the values for that instance for that field.
+The sensitive source table contains the sensitive information values that the EDM SIT will look for. It is made up of columns and rows. The column headers are the field names, the rows are an instance of data and each cell contains the values for that instance for that field.
 
 Here's a simple example of a sensitive information source table.
 
-|First Name  |Last Name  |Date of Birth  |
-|---------|---------|---------|
-|Isaiah   |Langer  | 05-05-1960 |
-|Ana   |Bowman         |11-24-1971 |
-|Oscar   |Ward         |02-12-1998 |
-
+|First Name|Last Name|Date of Birth|
+|---|---|---|
+|Isaiah|Langer| 05-05-1960|
+|Ana|Bowman|11-24-1971|
+|Oscar|Ward|02-12-1998|
 
 ### Rule package
 
@@ -83,13 +84,13 @@ Every SIT has a rule package. You use the rule package in an EDM SIT to define:
 
 - Matches, which specify the field that will be the primary element to be used in exact lookup. It can be a regular expression with or without a checksum validation, a keyword list, a keyword dictionary, or a function.
 - Classification, which specifies the sensitive type match that triggers EDM lookup.
-- Supporting element which are elements that, when found provide supporting evidence that help increase the confidence of the match. For example, keyword “SSN” in proximity of an SSN number. It can be a regular expression with or without a checksum validation, keyword list, keyword dictionary.
+- Supporting element which are elements that, when found provide supporting evidence that help increase the confidence of the match. For example, keyword "SSN" in proximity of an SSN number. It can be a regular expression with or without a checksum validation, keyword list, keyword dictionary.
 - Confidence levels (high, medium, low) reflect how much supporting evidence was detected along with the primary element. The more supporting evidence an item contains, the higher the confidence that a matched item contains the sensitive info you're looking for. See, [Fundamental parts of a sensitive information type](sensitive-information-type-learn-about.md#fundamental-parts-of-a-sensitive-information-type) for more on confidence levels.
-Proximity – Number of characters between primary and supporting element
+Proximity - Number of characters between primary and supporting element
 
 ### You supply your own schema and data
 
-[Microsoft 365 comes with more than 200 SITS](sensitive-information-type-entity-definitions.md) with predefined schemas, regex patterns, keywords and confidence levels. With EDM SITs, you are responsible for defining the schema as well as primary and secondary fields that identify sensitive items. Because the schema and primary and secondary data values are highly sensitive, you'll be encrypting them via a [hash](/dotnet/standard/security/ensuring-data-integrity-with-hash-codes) function that includes a randomly generated or self-supplied [salt](https://en.wikipedia.org/wiki/Salt_(cryptography)#:~:text=The%20salt%20value%20is%20generated%20at%20random%20and,the%20salt%20value%20and%20hashed%20value%20are%20stored.) value. Those hashed values are then uploaded to the service, so your sensitive data is never in the open.
+[Microsoft Purview comes with more than 200 SITS](sensitive-information-type-entity-definitions.md) with predefined schemas, regex patterns, keywords and confidence levels. With EDM SITs, you are responsible for defining the schema as well as primary and secondary fields that identify sensitive items. Because the schema and primary and secondary data values are highly sensitive, you'll be encrypting them via a [hash](/dotnet/standard/security/ensuring-data-integrity-with-hash-codes) function that includes a randomly generated or self-supplied [salt](https://en.wikipedia.org/wiki/Salt_(cryptography)#:~:text=The%20salt%20value%20is%20generated%20at%20random%20and,the%20salt%20value%20and%20hashed%20value%20are%20stored.) value. Those hashed values are then uploaded to the service, so your sensitive data is never in the open.
 
 ### Primary and secondary support elements
 

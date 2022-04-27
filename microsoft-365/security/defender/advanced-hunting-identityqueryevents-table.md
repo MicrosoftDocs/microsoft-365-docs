@@ -37,31 +37,31 @@ For information on other tables in the advanced hunting schema, [see the advance
 
 | Column name | Data type | Description |
 |-------------|-----------|-------------|
-| `Timestamp` | datetime | Date and time when the event was recorded |
-| `ActionType` | string | Type of activity that triggered the event. See the [in-portal schema reference](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) for details |
-| `Application` | string | Application that performed the recorded action |
-| `QueryType` | string | Type of query, such as QueryGroup, QueryUser, or EnumerateUsers |
-| `QueryTarget` | string | Name of user, group, device, domain, or any other entity type being queried |
-| `Query` | string | String used to run the query |
-| `Protocol` | string | Protocol used during the communication |
-| `AccountName` | string | User name of the account |
-| `AccountDomain` | string | Domain of the account |
-| `AccountUpn` | string | User principal name (UPN) of the account |
-| `AccountSid` | string | Security Identifier (SID) of the account |
-| `AccountObjectId` | string | Unique identifier for the account in Azure AD |
-| `AccountDisplayName` | string | Name of the account user displayed in the address book. Typically a combination of a given or first name, a middle initiation, and a last name or surname. |
-| `DeviceName` | string | Fully qualified domain name (FQDN) of the endpoint |
-| `IPAddress` | string | IP address assigned to the endpoint and used during related network communications |
-| `Port` | string | TCP port used during communication |
-| `DestinationDeviceName` | string | Name of the device running the server application that processed the recorded action |
-| `DestinationIPAddress` | string | IP address of the device running the server application that processed the recorded action |
-| `DestinationPort` | string | Destination port of related network communications |
-| `TargetDeviceName` | string | Fully qualified domain name (FQDN) of the device that the recorded action was applied to |
-| `TargetAccountUpn` | string | User principal name (UPN) of the account that the recorded action was applied to |
-| `TargetAccountDisplayName` | string | Display name of the account that the recorded action was applied to |
-| `Location` | string | City, country, or other geographic location associated with the event |
-| `ReportId` | long | Unique identifier for the event |
-| `AdditionalFields` | string | Additional information about the entity or event |
+| `Timestamp` | `datetime` | Date and time when the event was recorded |
+| `ActionType` | `string` | Type of activity that triggered the event. See the [in-portal schema reference](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) for details |
+| `Application` | `string` | Application that performed the recorded action |
+| `QueryType` | `string` | Type of query, such as QueryGroup, QueryUser, or EnumerateUsers |
+| `QueryTarget` | `string` | Name of user, group, device, domain, or any other entity type being queried |
+| `Query` | `string` | String used to run the query |
+| `Protocol` | `string` | Protocol used during the communication |
+| `AccountName` | `string` | User name of the account |
+| `AccountDomain` | `string` | Domain of the account |
+| `AccountUpn` | `string` | User principal name (UPN) of the account |
+| `AccountSid` | `string` | Security Identifier (SID) of the account |
+| `AccountObjectId` | `string` | Unique identifier for the account in Azure AD |
+| `AccountDisplayName` | `string` | Name of the account user displayed in the address book. Typically a combination of a given or first name, a middle initiation, and a last name or surname. |
+| `DeviceName` | `string` | Fully qualified domain name (FQDN) of the endpoint |
+| `IPAddress` | `string` | IP address assigned to the endpoint and used during related network communications |
+| `Port` | `string` | TCP port used during communication |
+| `DestinationDeviceName` | `string` | Name of the device running the server application that processed the recorded action |
+| `DestinationIPAddress` | `string` | IP address of the device running the server application that processed the recorded action |
+| `DestinationPort` | `string` | Destination port of related network communications |
+| `TargetDeviceName` | `string` | Fully qualified domain name (FQDN) of the device that the recorded action was applied to |
+| `TargetAccountUpn` | `string` | User principal name (UPN) of the account that the recorded action was applied to |
+| `TargetAccountDisplayName` | `string` | Display name of the account that the recorded action was applied to |
+| `Location` | `string` | City, country, or other geographic location associated with the event |
+| `ReportId` | `long` | Unique identifier for the event |
+| `AdditionalFields` | `string` | Additional information about the entity or event |
 
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)

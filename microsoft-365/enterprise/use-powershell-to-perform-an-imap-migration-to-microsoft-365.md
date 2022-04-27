@@ -2,7 +2,7 @@
 title: "Use PowerShell to perform an IMAP migration to Microsoft 365"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 07/17/2020
 audience: Admin
 ms.topic: article
@@ -13,7 +13,9 @@ search.appverid:
 ms.collection: Ent_O365
 f1.keywords:
 - NOCSH
-ms.custom: seo-marvel-apr2020
+ms.custom: 
+- seo-marvel-apr2020
+- admindeeplinkEXCHANGE
 ms.assetid: c28de4a5-1e8e-4491-9421-af066cde7cdd
 description: Learn how to use PowerShell to perform an Internet Mail Access Protocol (IMAP) migration to Microsoft 365.
 ---
@@ -25,7 +27,7 @@ description: Learn how to use PowerShell to perform an Internet Mail Access Prot
 As part of the process of deploying Microsoft 365, you can choose to migrate the contents of user mailboxes from an Internet Mail Access Protocol (IMAP) email service to Microsoft 365. This article walks you through the tasks for an email IMAP migration by using Exchange Online PowerShell.
 
 > [!NOTE]
-> You can also use the Exchange admin center to perform an IMAP migration. See [Migrate your IMAP mailboxes](/Exchange/mailbox-migration/migrating-imap-mailboxes/migrating-imap-mailboxes).
+> You can also use the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a> to perform an IMAP migration. See [Migrate your IMAP mailboxes](/Exchange/mailbox-migration/migrating-imap-mailboxes/migrating-imap-mailboxes).
 
 ## What do you need to know before you begin?
 
@@ -73,7 +75,6 @@ The following restrictions apply to IMAP migrations:
     For the value of the **Port** parameter, it's typical to use 143 for unencrypted or Transport Layer Security (TLS) connections and to use 993 for SSL connections.
 
 ### Step 2: Create a CSV file for an IMAP migration batch
-<a name="BK_Step2"> </a>
 
 Identify the group of users whose mailboxes you want to migrate in an IMAP migration batch. Each row in the CSV file contains information necessary to connect to a mailbox in the IMAP messaging system.
 
@@ -145,7 +146,6 @@ paulc@contoso.edu,mailadmin,P@ssw0rd,/users/paul.cannon
 ```
 
 ### Step 3: Create an IMAP migration endpoint
-<a name="BK_Step3"> </a>
 
 To migrate email successfully, Microsoft 365 needs to connect to and communicate with the source email system. To do this, Microsoft 365 uses a migration endpoint. The migration endpoint also defines the number of mailboxes to migrate simultaneously and the number of mailboxes to synchronize simultaneously during incremental synchronization, which occurs once every 24 hours. To create a migration end point for IMAP migration, first [connect to Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -176,7 +176,6 @@ Get-MigrationEndpoint IMAPEndpoint | Format-List EndpointType,RemoteServer,Port,
 ```
 
 ### Step 4: Create and start an IMAP migration batch
-<a name="BK_Step4"> </a>
 
 You can use the [New-MigrationBatch](/powershell/module/exchange/new-migrationbatch) cmdlet to create a migration batch for an IMAP migration. You can create a migration batch and start it automatically by including the _AutoStart_ parameter. Alternatively, you can create the migration batch and then start it afterwards by using the[Start-MigrationBatch](/powershell/module/exchange/start-migrationbatch) cmdlet.
 
@@ -201,7 +200,6 @@ Get-MigrationBatch -Identity IMAPBatch1 | Format-List Status
 ```
 
 ### Step 5: Route your email to Microsoft 365
-<a name="BK_Step5"> </a>
 
 Email systems use a DNS record called an MX record to figure out where to deliver emails. During the email migration process, your MX record was pointing to your source email system. Now that the email migration to Microsoft 365 is complete, it's time to point your MX record at Microsoft 365. This helps make sure that email is delivered to your Microsoft 365 mailboxes. By moving the MX record, you can also turn off your old email system when you're ready.
 
@@ -210,7 +208,6 @@ For many DNS providers, there are specific instructions to change your MX record
 It can take up to 72 hours for the email systems of your customers and partners to recognize the changed MX record. Wait at least 72 hours before you proceed to the next task: Step 6: Delete IMAP migration batch.
 
 ### Step 6: Delete IMAP migration batch
-<a name="BK_Step6"> </a>
 
 After you change the MX record and verify that all email is being routed to Microsoft 365 mailboxes, notify the users that their mail is going to Microsoft 365. After this, you can delete the IMAP migration batch. Verify the following before you delete the migration batch.
 

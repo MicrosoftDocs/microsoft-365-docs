@@ -80,10 +80,10 @@ application|String|The application associated with the indicator. This field onl
 title|String|Indicator alert title. **Required**
 description|String|Description of the indicator. **Required**
 expirationTime|DateTimeOffset|The expiration time of the indicator. **Optional**
-severity|Enum|The severity of the indicator. possible values are: "Informational", "Low", "Medium" and "High". **Optional**
+severity|Enum|The severity of the indicator. Possible values are: "Informational", "Low", "Medium", and "High". **Optional**
 recommendedActions|String|TI indicator alert recommended actions. **Optional**
 rbacGroupNames|String|Comma-separated list of RBAC group names the indicator would be applied to. **Optional**
-
+generateAlert|Enum|**True** if alert generation is required, **False** if this indicator should not generate an alert.
 ## Response
 
 - If successful, this method returns 200 - OK response code and the created / updated [Indicator](ti-indicator.md) entity in the response body.

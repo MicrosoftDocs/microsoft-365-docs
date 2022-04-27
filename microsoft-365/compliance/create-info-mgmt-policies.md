@@ -26,6 +26,8 @@ description: Learn how to set up an information management policy to control how
 
 # Create and apply information management policies
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Information management policies enable your organization to control how long to retain content, to audit what people do with content, and to add barcodes or labels to documents. A policy can help enforce compliance with legal and governmental regulations or internal business processes. As an administrator, you can set up a policy to control how to track documents and how long to retain documents.
 
 You can create an information management policy can at three different locations in the site hierarchy, from the broadest to the narrowest:
@@ -97,12 +99,12 @@ Adding an information management policy to a content type makes it easy to assoc
 
    3. The **Start a workflow** option is available only if you are defining a policy for a list, library, or content type that already has a workflow associated with it. You will then be given a choice of workflows to choose from.
 
-   4. In the **Recurrence** section, select **Repeat this stage's action…**and enter how often you want the action to reoccur.
+   4. In the **Recurrence** section, select **Repeat this stage's action...**, and then enter how often you want the action to reoccur.
 
       > [!NOTE]
       >  This option is only available if the action you selected can be repeated. For example, you cannot set recurrence for the action **Permanently Delete**.
 
-   5. Chose **OK**.
+   5. Choose **OK**.
 
 8. To enable auditing for the documents and items that are subject to this policy, choose **Enable Auditing**, and then specify the events you want to audit.
 
@@ -194,7 +196,7 @@ You need at least the Manage Lists permission to change the information manageme
 
 5. On the Edit Policy page, under **Library Based Retention Schedule**, enter a brief description for the policy you are creating.
 
-6. Choose **Add a retention stage…**
+6. Choose **Add a retention stage...**
 
    Note that under Records, you can choose to define different retention policies for records by selecting the Define different retention stages for records option.
 
@@ -211,7 +213,7 @@ You need at least the Manage Lists permission to change the information manageme
 
 8. The **Start a workflow** option is available only if you are defining a policy for a list, library, or content type that already has a workflow associated with it. You will then be given a choice of workflows to choose from.
 
-9. Under **Recurrence**, choose **Repeat this stage's action…**and enter how often you want the action to reoccur.
+9. Under **Recurrence**, choose **Repeat this stage's action...** and enter how often you want the action to reoccur.
 
    > [!NOTE]
    >  This option is only available if the action you selected can be repeated. For example, you cannot set recurrence for the action **Permanently Delete**.
@@ -223,7 +225,7 @@ You need at least the Manage Lists permission to change the information manageme
 
 If information management policies have already been created for your site as site collection policies, you can apply one of the policies to a content type. By doing this, you can apply the same policy to multiple content types in a site collection that do not share the same parent content type.
 
- If you want to apply policies to multiple content types in a site collection, and you have a Managed Metadata Service configured, you can use Content Type Publishing to publish out information management polices to multiple site collections. See the section [Apply a policy across site collections](#apply-a-policy-across-site-collections) for more information.
+ If you want to apply policies to multiple content types in a site collection, and you have a Managed Metadata Service configured, you can use Content Type Publishing to publish out information management policies to multiple site collections. See the section [Apply a policy across site collections](#apply-a-policy-across-site-collections) for more information.
 
 1. Navigate to the list or library that contains the content type to which you want to apply a policy.
 

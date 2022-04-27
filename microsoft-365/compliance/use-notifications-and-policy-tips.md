@@ -18,13 +18,17 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-ms.custom: seo-marvel-apr2020
+ms.custom: 
+- seo-marvel-apr2020
+- admindeeplinkEXCHANGE
 description: Learn how to add a policy tip to a data loss prevention (DLP) policy to notify a user that they are working with content that conflicts with a DLP policy.
 ---
 
 # Send email notifications and show policy tips for DLP policies
 
-You can use a data loss prevention (DLP) policy to identify, monitor, and protect sensitive information across Office 365. You want people in your organization who work with this sensitive information to stay compliant with your DLP policies, but you don't want to block them unnecessarily from getting their work done. This is where email notifications and policy tips can help.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+You can use a Microsoft Purview data loss prevention (DLP) policy to identify, monitor, and protect sensitive information across Office 365. You want people in your organization who work with this sensitive information to stay compliant with your DLP policies, but you don't want to block them unnecessarily from getting their work done. This is where email notifications and policy tips can help.
 
 ![Message bar shows policy tip in Excel 2016](../media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
 
@@ -48,7 +52,7 @@ When you create a DLP policy, you can enable **User notifications**. When user n
 
 2. Sign in using your work or school account. You're now in the Security &amp; Compliance Center.
 
-3. In the Security &amp; Compliance Center \> left navigation \> **Data loss prevention** \> **Policy** \> **+ Create a policy**.
+3. In the Microsoft Purview compliance portal \> left navigation \> **Data loss prevention** \> **Policy** \> **+ Create a policy**.
 
     ![Create a policy button.](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
 
@@ -88,7 +92,7 @@ For each rule in a DLP policy, you can:
 - Customize the text that's included in the notification by using HTML or tokens. See the section below for more information.
 
 > [!NOTE]
->  Email notifications can be sent only to individual recipients—not groups or distribution lists. Only new content will trigger an email notification. Editing existing content will trigger policy tips, but not an email notification.
+> Email notifications can be sent only to individual recipients—not groups or distribution lists. Only new content will trigger an email notification. Editing existing content will trigger policy tips, but not an email notification.
 
 ![Email notification options.](../media/4e7b9500-2a78-44e6-9067-09f4bfd50301.png)
 
@@ -100,11 +104,11 @@ Notifications have a Subject line that begins with the action taken, such as "No
 
 By default, notifications display text similar to the following for an item on a site. The notification text is configured separately for each rule, so the text that's displayed differs depending on which rule is matched.
 
-|**If the DLP policy rule does this…**|**Then the default notification for SharePoint or OneDrive for Business documents says this…**|**Then the default notification for Outlook messages says this…**|
-|:-----|:-----|:-----|
-|Sends a notification but doesn't allow override  <br/> |This item conflicts with a policy in your organization.  <br/> |Your email message conflicts with a policy in your organization.  <br/> |
-|Blocks access, sends a notification, and allows override  <br/> |This item conflicts with a policy in your organization. If you don't resolve this conflict, access to this file might be blocked.  <br/> |Your email message conflicts with a policy in your organization. The message wasn't delivered to all recipients.  <br/> |
-|Blocks access and sends a notification  <br/> |This item conflicts with a policy in your organization. Access to this item is blocked for everyone except its owner, last modifier, and the primary site collection administrator.  <br/> |Your email message conflicts with a policy in your organization. The message wasn't delivered to all recipients.  <br/> |
+|If the DLP policy rule does this...|Then the default notification for SharePoint or OneDrive for Business documents says this...|Then the default notification for Outlook messages says this...|
+|---|---|---|
+|Sends a notification but doesn't allow override|This item conflicts with a policy in your organization.|Your email message conflicts with a policy in your organization.|
+|Blocks access, sends a notification, and allows override|This item conflicts with a policy in your organization. If you don't resolve this conflict, access to this file might be blocked.|Your email message conflicts with a policy in your organization. The message wasn't delivered to all recipients.|
+|Blocks access and sends a notification|This item conflicts with a policy in your organization. Access to this item is blocked for everyone except its owner, last modifier, and the primary site collection administrator.|Your email message conflicts with a policy in your organization. The message wasn't delivered to all recipients.|
 
 ### Custom email notification
 
@@ -112,11 +116,11 @@ You can create a custom email notification instead of sending the default email 
 
 You can also use the following tokens to help customize the email notification. These tokens are variables that are replaced by specific information in the notification that's sent.
 
-|**Token**|**Description**|
-|:-----|:-----|
-|%%AppliedActions%%  <br/> |The actions applied to the content.  <br/> |
-|%%ContentURL%%  <br/> |The URL of the document on the SharePoint Online site or OneDrive for Business site.  <br/> |
-|%%MatchedConditions%%  <br/> |The conditions that were matched by the content. Use this token to inform people of possible issues with the content.  <br/> |
+|Token|Description|
+|---|---|
+|%%AppliedActions%%|The actions applied to the content.|
+|%%ContentURL%%|The URL of the document on the SharePoint Online site or OneDrive for Business site.|
+|%%MatchedConditions%%|The conditions that were matched by the content. Use this token to inform people of possible issues with the content.|
 
 ![Notification message showing where tokens appear.](../media/cd3f36b3-40db-4f30-99e4-190750bd1955.png)
 
@@ -142,6 +146,8 @@ For example, you may have a DLP policy applied to OneDrive for Business sites th
 
 3. Third rule: If greater than five instances of this sensitive information are detected in a document, and the document is shared with people outside the organization, the **Block access to content** action restricts the permissions for the file, and the **Send a notification** action does not allow people to override the actions in this rule because the information is shared externally. Under no circumstances should people in your organization be allowed to share PII data outside the organization.
 
+### User Override support
+
 Here are some fine points to understand about using a policy tip to override a rule:
 
 - The option to override is per rule, and it overrides all of the actions in the rule (except sending a notification, which can't be overridden).
@@ -149,6 +155,25 @@ Here are some fine points to understand about using a policy tip to override a r
 - It's possible for content to match several rules in a DLP policy, but only the policy tip from the most restrictive, highest-priority rule will be shown. For example, a policy tip from a rule that blocks access to content will be shown over a policy tip from a rule that simply sends a notification. This prevents people from seeing a cascade of policy tips.
 
 - If the policy tips in the most restrictive rule allow people to override the rule, then overriding this rule also overrides any other rules that the content matched.
+
+- If NotifyAllowOverride action is set with WithoutJustification or WithJustification or FlasePositives, make sure BlockAccess is set to true and BlockAccessScope has appropriate value. Otherwise policy tip will come up but the user will not find an option to override the email with justification.
+
+#### Availability of Override
+
+|Notification Rule |Notify/Block action  |Override available  |Require Justification  |
+|---------|---------|---------|---------|
+|Notify only     |Notify         |No         |No         |
+|Notify + AllowOverride     |Notify         |No         |No         |
+|Notify + AllowOverride + False positive     |Notify         |No         |No         |
+|Notify + AllowOverride + With justification     |Notify         |No         |No         |
+|Notify + AllowOverride + False positive + Without justification    |Notify         |No         |No         |
+|Notify + AllowOverride + False positive + With justification     |Notify         |No         |No         |
+|Notify + Block     |Block         |No         |No         |
+|Notify + Block + AllowOverride     |Block         |Yes         |No         |
+|Notify + Block + AllowOverride + False positive     |Block         |Yes         |No         |
+|Notify + Block + AllowOverride + With justification     |Block         |Yes         |Yes         |
+|Notify + Block + AllowOverride + False positive + Without justification     |Block         |Yes         |No         |
+|Notify + Block + AllowOverride + False positive + With justification     |Block         |Yes         |Yes         |
 
 
 ## Policy tips on OneDrive for Business sites and SharePoint Online sites
@@ -175,11 +200,11 @@ DLP policies are synced to sites and contented is evaluated against them periodi
 
 By default, policy tips display text similar to the following for an item on a site. The notification text is configured separately for each rule, so the text that's displayed differs depending on which rule is matched.
 
-|**If the DLP policy rule does this…**|**Then the default policy tip says this…**|
-|:-----|:-----|
-|Sends a notification but doesn't allow override  <br/> |This item conflicts with a policy in your organization.  <br/> |
-|Blocks access, sends a notification, and allows override  <br/> |This item conflicts with a policy in your organization. If you don't resolve this conflict, access to this file might be blocked.  <br/> |
-|Blocks access and sends a notification  <br/> |This item conflicts with a policy in your organization. Access to this item is blocked for everyone except its owner, last modifier, and the primary site collection administrator.  <br/> |
+|If the DLP policy rule does this...|Then the default policy tip says this...|
+|---|---|
+|Sends a notification but doesn't allow override|This item conflicts with a policy in your organization.|
+|Blocks access, sends a notification, and allows override|This item conflicts with a policy in your organization. If you don't resolve this conflict, access to this file might be blocked.|
+|Blocks access and sends a notification|This item conflicts with a policy in your organization. Access to this item is blocked for everyone except its owner, last modifier, and the primary site collection administrator.|
 
 ### Custom text for policy tips on sites
 
@@ -201,7 +226,7 @@ If the policy tips are configured to allow override, you can choose **Show Detai
 
 ![Policy tip dialog where you can override the policy tip.](../media/f97e836c-04bd-44b4-aec6-ed9526ea31f8.png)
 
-Note that when you add sensitive information to an email, there may be latency between when the sensitive information is added and when the policy tip appears.
+Note that when you add sensitive information to an email, there may be latency between when the sensitive information is added and when the policy tip appears. When emails are encrypted with Microsoft Purview Message Encryption and the policy used to detect them uses the detect encryption condition policy tips will not appear.
 
 ### Outlook 2013 and later supports showing policy tips for only some conditions
 
@@ -214,7 +239,7 @@ Note that Exceptions are considered conditions and all of these conditions work 
 
 ### Policy tips in the Exchange admin center vs. the Security &amp; Compliance Center
 
-Policy tips can work either with DLP policies and mail flow rules created in the Exchange admin center, or with DLP policies created in the Security &amp; Compliance Center, but not both. This is because these policies are stored in different locations, but policy tips can draw only from a single location.
+Policy tips can work either with DLP policies and mail flow rules created in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>, or with DLP policies created in the Security &amp; Compliance Center, but not both. This is because these policies are stored in different locations, but policy tips can draw only from a single location.
 
 If you've configured policy tips in the Exchange admin center, any policy tips that you configure in the Security &amp; Compliance Center won't appear to users in Outlook on the web and Outlook 2013 and later until you turn off the tips in the Exchange admin center. This ensures that your current Exchange mail flow rules (also known as transport rules) will continue to work until you choose to switch over to the Security &amp; Compliance Center.
 
@@ -224,11 +249,11 @@ Note that while policy tips can draw only from a single location, email notifica
 
 By default, policy tips display text similar to the following for email.
 
-|**If the DLP policy rule does this…**|**Then the default policy tip says this…**|
-|:-----|:-----|
-|Sends a notification but doesn't allow override  <br/> |Your email conflicts with a policy in your organization.  <br/> |
-|Blocks access, sends a notification, and allows override  <br/> |Your email conflicts with a policy in your organization.  <br/> |
-|Blocks access and sends a notification  <br/> |Your email conflicts with a policy in your organization.  <br/> |
+|If the DLP policy rule does this...|Then the default policy tip says this...|
+|---|---|
+|Sends a notification but doesn't allow override|Your email conflicts with a policy in your organization.|
+|Blocks access, sends a notification, and allows override|Your email conflicts with a policy in your organization.|
+|Blocks access and sends a notification|Your email conflicts with a policy in your organization.|
 
 ## Policy tips in Excel, PowerPoint, and Word
 
@@ -263,11 +288,11 @@ In each of these Office desktop programs, people can choose to turn off policy t
 
 By default, policy tips display text similar to the following on the Message Bar and Backstage view of an open document. The notification text is configured separately for each rule, so the text that's displayed differs depending on which rule is matched.
 
-|**If the DLP policy rule does this…**|**Then the default policy tip says this…**|
-|:-----|:-----|
-|Sends a notification but doesn't allow override  <br/> |This file conflicts with a policy in your organization. Go to the **File** menu for more information.  <br/> |
-|Blocks access, sends a notification, and allows override  <br/> |This file conflicts with a policy in your organization. If you don't resolve this conflict, access to this file might be blocked. Go to the **File** menu for more information.  <br/> |
-|Blocks access and sends a notification  <br/> |This file conflicts with a policy in your organization. If you don't resolve this conflict, access to this file might be blocked. Go to the **File** menu for more information.  <br/> |
+|If the DLP policy rule does this...|Then the default policy tip says this...|
+|---|---|
+|Sends a notification but doesn't allow override|This file conflicts with a policy in your organization. Go to the **File** menu for more information.|
+|Blocks access, sends a notification, and allows override|This file conflicts with a policy in your organization. If you don't resolve this conflict, access to this file might be blocked. Go to the **File** menu for more information.|
+|Blocks access and sends a notification|This file conflicts with a policy in your organization. If you don't resolve this conflict, access to this file might be blocked. Go to the **File** menu for more information.|
 
 ### Custom text for policy tips in Excel, PowerPoint, and Word
 

@@ -2,8 +2,8 @@
 title: "Add a new employee to Microsoft 365"
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -68,7 +68,7 @@ Just like Facebook, Amazon, or Gmail, your employee signs in to use Microsoft 36
 ## Step 4: Help your employee get started
 
 
-Share with them the [Employee quick setup for Microsoft 365](../../business-video/employee-quick-setup.md) to sign in, install software, set up email, and more. 
+Share with them the [Employee quick setup for Microsoft 365](../setup/employee-quick-setup.md) to sign in, install software, set up email, and more. 
   
 And here's a quick reference to help get them started:
   
