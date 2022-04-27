@@ -453,6 +453,9 @@
               href: ome-sensitive-info-types.md
             - name: Manage message encryption
               href: manage-office-365-message-encryption.md
+
+            - name: Encrypted message portal activity log
+              href: ome-message-access-logs.md
             - name: Advanced message encryption
               href: ome-advanced-message-encryption.md
             - name: Set an expiration date for email encrypted by Microsoft Purview Advanced Message Encryption
@@ -467,6 +470,8 @@
               href: exchange-online-secures-email-secrets.md
             - name: How Exchange Online uses TLS to secure email connections in Office 365
               href: exchange-online-uses-tls-to-secure-email-connections.md
+            - name: Enhancing mail flow with MTA-STS
+              href: enhancing-mail-flow-with-mta-sts.md
             - name: How SMTP DANE works
               href: how-smtp-dane-works.md  
             - name: BitLocker and Distributed Key Manager (DKM) for Encryption
