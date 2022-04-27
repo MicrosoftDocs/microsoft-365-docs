@@ -72,6 +72,8 @@ landingContent:
             url: mdb-troubleshooting.yml
       - linkListType: reference
         links:
+          - text: Glossary of security terms
+            url: /microsoft-365/business-premium/m365bp-glossary
           - text: Microsoft 365 Business Premium
             url: /microsoft-365/business-premium/
           - text: Microsoft 365 Lighthouse
