@@ -1,6 +1,6 @@
 ---
-title: Learn how to mitigate the Log4j vulnerability in Microsoft Defender for Endpoint - threat and vulnerability management
-description: Learn how to mitigate the Log4j vulnerability in Microsoft Defender for Endpoint 
+title: Learn how to mitigate the Log4Shell vulnerability in Microsoft Defender for Endpoint - threat and vulnerability management
+description: Learn how to mitigate the Log4Shell vulnerability in Microsoft Defender for Endpoint 
 keywords: tvm, lo4j
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,7 +22,7 @@ ms.topic: conceptual
 ms.technology: m365d
 ---
 
-# Learn how to manage the Log4j vulnerability in Microsoft Defender for Endpoint
+# Learn how to manage the Log4Shell vulnerability in Microsoft Defender for Endpoint
 
 **Applies to:**
 
@@ -30,14 +30,14 @@ ms.technology: m365d
 - [Threat and vulnerability management](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-The Log4j vulnerability is a remote code execution (RCE) vulnerability found in the Apache Log4j 2 logging library. As Apache Log4j 2 is commonly used by many software applications and online services, it represents a complex and high-risk situation for companies across the globe. Referred to as “Log4Shell” ([CVE-2021-44228](https://cve.mitre.org/cgi-bin/cvename.cgi?name=2021-44228), [CVE-2021-45046](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-45046) ) it introduces a new attack vector that attackers can exploit to extract data and deploy ransomware in an organization.
+The Log4Shell vulnerability is a remote code execution (RCE) vulnerability found in the Apache Log4j 2 logging library. As Apache Log4j 2 is commonly used by many software applications and online services, it represents a complex and high-risk situation for companies across the globe. Referred to as “Log4Shell” ([CVE-2021-44228](https://cve.mitre.org/cgi-bin/cvename.cgi?name=2021-44228), [CVE-2021-45046](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-45046) ) it introduces a new attack vector that attackers can exploit to extract data and deploy ransomware in an organization.
 
 > [!NOTE]
 > Refer to the blogs [Guidance for preventing, detecting, and hunting for exploitation of the Log4j 2 vulnerability and](https://www.microsoft.com/security/blog/2021/12/11/guidance-for-preventing-detecting-and-hunting-for-cve-2021-44228-log4j-2-exploitation/) [Microsoft Security Response Center](https://msrc-blog.microsoft.com/2021/12/11/microsofts-response-to-cve-2021-44228-apache-log4j2/) for guidance and technical information about the vulnerability and product specific mitigation recommendations to protect your organization.
 
 ## Overview of discovery, monitoring and mitigation capabilities
 
-Threat and vulnerability management provides you with the following capabilities to help you identify, monitor, and mitigate your organizational exposure to the Log4j vulnerability:
+Threat and vulnerability management provides you with the following capabilities to help you identify, monitor, and mitigate your organizational exposure to the Log4Shell vulnerability:
 
 - **Discovery**: Detection of exposed devices, both Microsoft Defender for Endpoint onboarded devices as well as devices that have been discovered but are not yet onboarded, is based on vulnerable software and vulnerable files detected on disk.
 - **Threat awareness:** A consolidated view to assess your organizational exposure. This view shows your exposure at the device level and software level, and provides access to details on vulnerable files like, the last time it was seen, the last time it was executed and the last time it was executed with open ports. You can use this information to prioritize your remediation actions. It can take up to 24 hours for data related to exposed devices to appear on the dashboard.
@@ -64,17 +64,17 @@ For detection on discovered but not yet onboarded devices, Log4j detection must 
 To enable Log4 detection:
 
 1. Go to **Settings** > **Device discovery** > **Discovery setup**
-2. Select **Enable Log4j detection (CVE-2021-44228)**
+2. Select **Enable Log4j2 detection (CVE-2021-44228)**
 3. Select **Save**
 
-:::image type="content" source="images/enable_log4j.png" alt-text="Setting to enable log4j detection" lightbox="images/enable_log4j.png":::
+:::image type="content" source="images/enable_log4j.png" alt-text="Setting to enable log4j2 detection" lightbox="images/enable_log4j.png":::
 
 Running these probes will trigger the standard Log4j flow without causing any harmful impact on either the device being probed or the probing device. The probing itself is done by sending multiple HTTP requests to discovered devices, targeting common web application ports (for example - 80,8000,8080,443,8443) and URLs. The request contains HTTP headers with a JNDI payload that triggers a DNS request from the probed machine.
 
 For example, User-Agent: ${jndi:dns://192.168.1.3:5353/MDEDiscoveryUser-Agent} where 192.168.1.3 is the IP of the probing machine.
 
 > [!NOTE]
-> Enabling Log4j detection also means onboarded devices will use self-probing to detect local vulnerabilities.
+> Enabling Log4j2 detection also means onboarded devices will use self-probing to detect local vulnerabilities.
 
 ## Vulnerable software and files detection
 
@@ -102,7 +102,7 @@ This table describes the search capabilities supported platforms and versions:
 
 (1) Capabilities are available when [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac) is installed on Windows Server 2012 R2 and 2016.
 
-## Learn about your Log4j exposure and mitigation options
+## Learn about your Log4Shell exposure and mitigation options
 
 ### Threat and vulnerability management dashboard
 
@@ -120,7 +120,7 @@ Use the threat and vulnerability management dashboard to see your current exposu
 
 ### Log4j vulnerability mitigation
 
-The log4J vulnerability can be mitigated by preventing JNDI lookups on Log4j versions 2.10 - 2.14.1 with default configurations. To create this mitigation action, from the **Threat awareness dashboard**:
+The log4Shell vulnerability can be mitigated by preventing JNDI lookups on Log4j versions 2.10 - 2.14.1 with default configurations. To create this mitigation action, from the **Threat awareness dashboard**:
 
 1. Select **View vulnerability details**
 2. Select **Mitigation options**
@@ -149,7 +149,7 @@ The table below lists the potential mitigation statuses:
 > [!NOTE]
 > It may take a few hours for the updated mitigation status of a device to be reflected.
 
-### Revert mitigations applied for the Log4j vulnerability
+### Revert mitigations applied for the Log4Shell vulnerability
 
 In cases where the mitigation needs to be reverted, follow these steps:
 
@@ -196,7 +196,7 @@ Once exposed devices, files and software are found, relevant information will al
 
 ### Security recommendations
 
-Search for **CVE-2021-44228** to see security recommendations addressing the Log4j vulnerability:
+Search for **CVE-2021-44228** to see security recommendations addressing the Log4Shell vulnerability:
 
 :::image type="content" source="images/security_recommendations_log4j.png" alt-text="The log4j vulnerability on the security recommendations page" lightbox="images/security_recommendations_log4j.png":::
 
@@ -208,7 +208,7 @@ Search for **CVE-2021-44228** to see security recommendations addressing the Log
 
 ### Weaknesses
 
-On the weaknesses page, search for **CVE-2021-44228** to see information about the Log4j vulnerability:
+On the weaknesses page, search for **CVE-2021-44228** to see information about the Log4Shell vulnerability:
 
 :::image type="content" source="images/weaknesses_log4j.png" alt-text="The log4j vulnerability on the weaknesses page" lightbox="images/weaknesses_log4j.png":::
 

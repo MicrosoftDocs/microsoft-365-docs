@@ -252,7 +252,7 @@
 ##### [Vulnerable devices report](tvm-vulnerable-devices-report.md)
 ##### [Hunt for exposed devices](tvm-hunt-exposed-devices.md)
 #### [Guidance for active threats and campaigns]()
-##### [Manage the Log4j vulnerability](tvm-manage-log4j-guidance.md)
+##### [Manage the Log4Shell vulnerability](tvm-manage-log4shell-guidance.md)
 ### [Device discovery]()
 #### [Device discovery overview](device-discovery.md)
 #### [Configure device discovery](configure-device-discovery.md)
