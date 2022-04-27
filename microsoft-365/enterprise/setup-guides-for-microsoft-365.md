@@ -2,7 +2,7 @@
 title: "Setup guides for Microsoft 365 and Office 365 services"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
