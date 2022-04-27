@@ -63,7 +63,7 @@ Defender for Business was designed to save small and medium-sized businesses tim
 
 #### Setup wizard flow: what to expect
 
-> [!NOTE]
+> [!TIP]
 > **Using the setup wizard is optional** (see [What happens if I don't use the wizard?](mdb-use-wizard.md#what-happens-if-i-dont-use-the-wizard)). If you choose not to use the wizard, or if the wizard is closed before your set-up process is complete, you can complete the setup and configuration process on your own. See [Step 4](#step-4-set-up-and-configure-defender-for-business). 
 
 1. **[Assign user permissions](mdb-roles-permissions.md#view-or-edit-role-assignments)**. Grant your security team access to the Microsoft 365 Defender portal.
