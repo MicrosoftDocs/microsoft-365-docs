@@ -62,13 +62,11 @@ If you have [Microsoft Defender for Office 365 plan 2](defender-for-office-365.m
 
 1. Select **Connector**, insert **Connector Name**, select date range, and then click **Refresh**. 
 
-    > [!div class="mx-imgBorder"]
-    > ![Inbound connector Explorer view.](../../media/connector-compromise-explorer.png)
+    :::image type="content" source="../../media/connector-compromise-explorer.png" alt-text="Inbound connector explorer view" lightbox="../../media/connector-compromise-explorer.png":::
 
-2. Identify if there's any abnormal spike or dip in email traffic. 
+2. Identify if there's any abnormal spike or dip in email traffic.
 
-    > [!div class="mx-imgBorder"]
-    > ![Number of emails delivered to junk folder.](../../media/connector-compromise-abnormal-spike.png)
+    :::image type="content" source="../../media/connector-compromise-abnormal-spike.png" alt-text="Number of emails delivered to junk folder" lightbox="../../media/connector-compromise-abnormal-spike.png":::
 
 3. Identify: 
 
@@ -78,8 +76,7 @@ If you have [Microsoft Defender for Office 365 plan 2](defender-for-office-365.m
 
     - If the recipients are the ones that your organization usually stays in contact with. 
 
-    > [!div class="mx-imgBorder"]
-    > ![Sender IP and your organization's on-prem IP address.](../../media/connector-compromise-sender-ip.png)
+    :::image type="content" source="../../media/connector-compromise-sender-ip.png" alt-text="Sender IP and your organization's on-prem IP address" lightbox="../../media/connector-compromise-sender-ip.png":::
 
 If you have [Microsoft Defender for Office 365 Plan 1](defender-for-office-365.md) or [Exchange Online Protection](exchange-online-protection-overview.md), go to https://admin-sdf.exchange.microsoft.com/#/messagetrace. 
 
@@ -87,24 +84,19 @@ If you have [Microsoft Defender for Office 365 Plan 1](defender-for-office-365.m
 
 2. Select an activity under **Activity list**, and copy suspicious **connector domain** and **IP address** detected in the alert.
 
-:::image type="content" source="../../media/connector-compromise-outbound-email-details.png" alt-text="Connector compromise outbound email details" lightbox="../../media/connector-compromise-outbound-email-details.png":::
-
-    > [!div class="mx-imgBorder"]
-    > ![Alert details flyout.](../../media/connector-compromise-outbound-email-details.png)
+    :::image type="content" source="../../media/connector-compromise-outbound-email-details.png" alt-text="Connector compromise outbound email details" lightbox="../../media/connector-compromise-outbound-email-details.png":::
     
 3. Search by using **connector domain** and **IP address** in [**Message trace**](https://admin-sdf.exchange.microsoft.com/#/messagetrace). 
 
-    > [!div class="mx-imgBorder"]
-    > ![New message trace flyout.](../../media/connector-compromise-new-message-trace.png)
-
+    :::image type="content" source="../../media/connector-compromise-new-message-trace.png" alt-text="New message trace flyout" lightbox="../../media/connector-compromise-new-message-trace.png":::
+    
 4. In the **Message trace** search results, identify: 
 
     - If a significant number of emails were recently marked as **FilteredAsSpam**.  This is a good indicator of a compromised connector being used to send spam. 
 
     - If the recipients are the ones that your organization usually stays in contact with. 
 
-    > [!div class="mx-imgBorder"]
-    > ![New message trace search results.](../../media/connector-compromise-message-trace-results.png)
+    :::image type="content" source="../../media/connector-compromise-message-trace-results.png" alt-text="New message trace search results" lightbox="../../media/connector-compromise-message-trace-results.png":::
 
 #### Investigate and validate connector-related activity 
 
@@ -116,7 +108,7 @@ Search-UnifiedAuditLog -StartDate "<ExDateTime>" -EndDate "<ExDateTime>" -Operat
 
 ### Step 2: Review and revert unauthorized change(s) in a connector 
 
-1. Sign into https://admin.exchange.microsoft.com/#/connectors. 
+1. Sign into https://admin.exchange.microsoft.com/. 
 
 2. Review and revert unauthorized connector change(s). 
 
