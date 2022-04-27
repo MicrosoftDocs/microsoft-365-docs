@@ -14,7 +14,6 @@ description: "Follow these instructions to create your About Us page, including 
 
 Owners and staff members of a Bookings calendar can now manage and update attendees for group services. For more information on service offerings in Bookings, see [Define your service offerings in Bookings](define-service-offerings.md).
 
-In this scenario, we'll 
 Sometimes you might have to manage Booking attendees for multi service Bookings on behalf of customers, let us consider a scenario where we need to remove some attendees from group service booked using Microsoft Bookings:
 
 Example
