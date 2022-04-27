@@ -30,9 +30,10 @@ ms.technology: m365d
 - Microsoft Defender for Endpoint
 
 
-The `UrlClickEvents` table in the advanced hunting schema contains information about [Safe Links](microsoft-365/security/office-365-security/safe-links.md) clicks from email messages, Microsoft Teams, and Office 365 apps in supported desktop, mobile, and web apps. It also includes risk information, related industry benchmarks, and applicable MITRE ATT&CK techniques and tactics.
+The `UrlClickEvents` table in the advanced hunting schema contains information about [Safe Links](microsoft-365/security/office-365-security/safe-links.md) clicks from email messages, Microsoft Teams, and Office 365 apps in supported desktop, mobile, and web apps. 
 
-This table doesn't return events or records. We recommend joining this table to the [DeviceTvmSecureConfigurationAssessment](advanced-hunting-devicetvmsecureconfigurationassessment-table.md) table using `ConfigurationId` to view text information about the security configurations in the returned assessments.
+> [!IMPORTANT]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 For information on other tables in the advanced hunting schema, see [the advanced hunting reference](advanced-hunting-schema-tables.md).
 
