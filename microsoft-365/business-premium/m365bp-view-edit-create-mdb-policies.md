@@ -61,6 +61,8 @@ To view your existing device protection policies in the security center:
 
 ### Edit an existing device protection policy
 
+To edit a device policy:
+
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in. 
 
 2. In the navigation pane, choose **Device configuration**. Policies are organized by operating system (such as **Windows client**) and policy type (such as **Next-generation protection** and **Firewall**). 
@@ -94,6 +96,8 @@ To view your existing device protection policies in the security center:
 
 ### Create a new device protection policy
 
+To create a new device protection policy:
+
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in. 
 
 2. In the navigation pane, choose **Device configuration**. Policies are organized by operating system (such as **Windows client**) and policy type (such as **Next-generation protection** and **Firewall**). 
@@ -124,11 +128,13 @@ To view your existing device protection policies in the security center:
    - Make any needed changes by selecting **Edit**.
    - When you’re ready to proceed, choose **Create policy**.
 
-## Working with device policies in the Admin center
+## Using device policies in the Admin center
 
 The following information describes viewing and managing policies in the Microsoft Business Premium Admin center. 
 
-### View and edit device policies
+### Working with device policies
+
+To work with policies in the Admin center:
 
 1.  Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
 2. On the left nav, choose **Devices** \> **Policies**.
@@ -138,6 +144,8 @@ The following information describes viewing and managing policies in the Microso
     ![Screenshot of the Policies page.](../media/devicepolicies.png)
   
 ### View and manage devices
+
+To view and manage policies:
 
 1. On the left nav, choose **Devices** \> **Manage**. 
     
