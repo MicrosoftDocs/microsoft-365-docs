@@ -23,15 +23,15 @@ Make sure that you set the **Maximum number of attendees** to more than 1 on the
 
 1. In Microsoft 365, select the app launcher, and then select **Bookings**.
 
-1. Choose your calendar, select the group meeting and choose **Edit**.
+2. Choose your calendar, select the group meeting and choose **Edit**.
 
 :::image type="content" source="../media/group-booking-calendar.png" alt-text="Screenshot: Owner view of group booking calendar":::
 
-1. To add attendees to the group booking, select **Add customer**.
+3. To add attendees to the group booking, select **Add customer**.
 
 :::image type="content" source="../media/group-booking-add-customer.png" alt-text="Screenshot: Group booking service details page - add a customer":::
 
-1. To remove attendees, select the user you want to remove from the group booking and select **Remove customer**. Once you remove the attendee, they'll get an email letting them know that they've been removed from this booking.
+4. To remove attendees, select the user you want to remove from the group booking and select **Remove customer**. Once you remove the attendee, they'll get an email letting them know that they've been removed from this booking.
 
 :::image type="content" source="../media/group-booking-cancel.png" alt-text="Screenshot: Group booking cancellation":::
 
