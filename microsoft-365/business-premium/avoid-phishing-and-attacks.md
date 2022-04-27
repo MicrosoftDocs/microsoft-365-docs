@@ -4,11 +4,11 @@ f1.keywords:
 - NOCSH
 ms.author: samanro
 author: samanro
-manager: scotv
+manager: dansimp
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection: 
 - Adm_O365
 - M365-subscription-management 
@@ -28,17 +28,22 @@ description: "Protect against phishing and other attacks with Microsoft 365."
 
 # Protect yourself against phishing and other attacks
 
-Microsoft 365 Business Premium includes many protections to guard against attacks, but there are things you can do yourself to limit and minimize the risk of online attacks.
+In addition to the protection Microsoft 365 Business Premium offers against attacks, there are other measures all members must take to defend the organization. Make sure everyone understands the following concepts:
 
-- **Spam or junk mail** There are many reasons you might receive junk e-mail and not all junk mail is the same. However, you can reduce what gets through to you, and thus reduce the risks of attacks, by filtering out junk mail.
+- **Spam or junk mail**. There are many reasons you might receive junk e-mail and not all junk mail is the same. However, you can reduce what gets through to you, and thus reduce the risks of attacks, by filtering out junk mail.
 
-- **Phishing** A phishing scam is an email that seems legitimate but is an attempt to get your personal information or steal your money.
+- **Phishing**. A phishing scam is an email that seems legitimate but is an attempt to get your personal information or steal your money.
 
-- **Spoofing** Scammers can also use a technique called spoofing to make it appear as if you've received an email from yourself. 
+- **Spoofing**. Scammers can also use a technique called spoofing to make it appear as if you've received an email from yourself. 
 
 - **Malware** is malicious software that can be installed on your computer, usually installed after you've clicked a link or opened a document from an email. There are various types of malware (for example, ransomware, when your computer is taken over), but you don't want to have any of them. 
 
+> [!TIP]
+> To learn more security concepts, see our [Glossary of terms](m365bp-glossary.md).
+
 ## Best practices
+
+The following are best practices that your front-line users should employ to repel the enemy.
 
 ### Reduce spam mail
 
@@ -46,9 +51,9 @@ Follow these [10 tips on how to help reduce spam](https://support.microsoft.com/
 
 ### Report it!
 
-Report any phishing or other scam emails you receive. 
-Select the message, and choose **Report message** on the ribbon.
-Here's more information about [reporting junk and phishing emails](https://support.office.com/article/Use-the-Report-Message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
+Report any phishing or other scam emails you receive. Select the message, and choose **Report message** on the ribbon.
+
+For more information, see [reporting junk and phishing emails](https://support.office.com/article/Use-the-Report-Message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
 
 ### Avoid phishing
 
@@ -64,15 +69,13 @@ Read about five common types of scams in [Deal with abuse, phishing, or spoofing
 
 Help your customers trust your communications by adding a digital signature to prove that it's coming from you. See [Secure messages by using a digital signature](https://support.office.com/article/secure-messages-by-using-a-digital-signature-549ca2f1-a68f-4366-85fa-b3f4b5856fc6).
 
-## Help protect your campaign from online threats
+## Share this infographic with your users
 
-Download this infographic with tips for you and the members of your campaign team:
+Download this infographic with tips for you and the members of your campaign team or business:
 
-[![The help protect your campaign info graphic.](../media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](https://download.microsoft.com/download/f/c/5/fc58bc0c-773a-4ac8-a232-6f986f61ef58/M365CampaignsWhatCanUsersDoToSecure.pdf)
+[:::image type="content" source="media/m365bp-whatuserscandotosecure.png" alt-text="Thumbnail of downloadable guide.":::](https://download.microsoft.com/download/9/1/f/91fa8f24-9953-4f33-9d87-a95624db5e0b/M365BPWhatCanUsersDoToSecure.pdf)
 
-[PDF](https://download.microsoft.com/download/f/c/5/fc58bc0c-773a-4ac8-a232-6f986f61ef58/M365CampaignsWhatCanUsersDoToSecure.pdf) | [PowerPoint](https://download.microsoft.com/download/f/c/5/fc58bc0c-773a-4ac8-a232-6f986f61ef58/M365CampaignsWhatCanUsersDoToSecure.pptx)
-
-## Set it up
+[PDF](https://download.microsoft.com/download/9/1/f/91fa8f24-9953-4f33-9d87-a95624db5e0b/M365BPWhatCanUsersDoToSecure.pdf) | [PowerPoint](https://download.microsoft.com/download/9/1/f/91fa8f24-9953-4f33-9d87-a95624db5e0b/M365BPWhatCanUsersDoToSecure.pptx)
 
 Learn more about how to:
 
@@ -80,3 +83,6 @@ Learn more about how to:
 
 - [Stay secure and private at work](https://support.office.com/article/stay-secure-and-private-at-work-104c7d91-b25a-453d-beee-ba64b6c6fc2d).
   
+### Next objective
+
+Once you've completed this mission objective, learn about how to [send encrypted email](send-encrypted-email.md). 

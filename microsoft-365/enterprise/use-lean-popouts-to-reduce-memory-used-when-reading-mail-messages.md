@@ -2,7 +2,7 @@
 title: "Use lean popouts to reduce memory used when reading mail messages"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 12/3/2019
 audience: ITPro
 ms.topic: article
