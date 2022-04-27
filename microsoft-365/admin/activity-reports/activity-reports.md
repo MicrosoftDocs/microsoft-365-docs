@@ -32,7 +32,7 @@ Reports are available for the last 7 days, 30 days, 90 days, and 180 days. Data 
   
 ## Watch: Act on a usage report in Office 365
   
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/fb726f8e-aead-43b2-ba0f-53ba5b886bf7?autoplay=false]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4VjrX?autoplay=false]
   
 ## How to get to the Reports dashboard
 
@@ -147,7 +147,7 @@ Global administrators can revert this change for their tenant and show identifia
   
 3. Uncheck the statement **Display concealed user, group, and site names in all reports**, and then save your changes.  
   
-It'll take a few minutes for these changes to take effect on the reports in the reports dashboard. This setting also applies to the Microsoft 365 usage reports in [Microsoft Graph](/graph/api/resources/report) and [Power BI](/microsoft-365/admin/usage-analytics/usage-analytics) and [the usage reports in Microsoft Teams Admin center](/microsoftteams/teams-analytics-and-reports/teams-reporting-reference). Showing identifiable user information is a logged event in the Microsoft 365 compliance center audit log.   
+It'll take a few minutes for these changes to take effect on the reports in the reports dashboard. This setting also applies to the Microsoft 365 usage reports in [Microsoft Graph](/graph/api/resources/report) and [Power BI](/microsoft-365/admin/usage-analytics/usage-analytics) and [the usage reports in Microsoft Teams Admin center](/microsoftteams/teams-analytics-and-reports/teams-reporting-reference). Showing identifiable user information is a logged event in the Microsoft Purview compliance portal audit log.   
 
   
 ## What happens to usage data when a user account is closed?

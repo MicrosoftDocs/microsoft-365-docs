@@ -2,7 +2,7 @@
 title: "Azure ExpressRoute for Office 365"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 6/5/2019
 audience: ITPro
 ms.topic: conceptual

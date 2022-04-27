@@ -43,6 +43,8 @@ To set an expiration date for Anyone links across the organization
    ![Screenshot of SharePoint organization-level Anyone link expiration settings.](../media/sharepoint-organization-anyone-link-expiration.png)
 1. Type a number of days in the box, and then click **Save**.
 
+If you change the expiration time, existing links will keep their current expiration time if the new setting is longer, or be updated to the new setting if the new setting is shorter.
+
 To set an expiration date for Anyone links on a specific site
 
 1. Open the SharePoint admin center, expand **Sites**, and then select <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites**</a>.
@@ -96,10 +98,10 @@ To set the default file and folder sharing link for a specific site
 
 ## Prevent unauthenticated sharing of sensitive content
 
-You can use [data loss prevention (DLP)](../compliance/dlp-learn-about-dlp.md) to prevent unauthenticated sharing of sensitive content. Data loss prevention can take action based on a file's sensitivity label, retention label, or sensitive information in the file itself.
+You can use [Microsoft Purview Data Loss Prevention (DLP)](../compliance/dlp-learn-about-dlp.md) to prevent unauthenticated sharing of sensitive content. Data loss prevention can take action based on a file's sensitivity label, retention label, or sensitive information in the file itself.
 
 To create a DLP rule
-1. In the Microsoft 365 compliance admin center, go to the [Data loss prevention page](https://compliance.microsoft.com/datalossprevention).
+1. In the Microsoft Purview admin center, go to the [Data loss prevention page](https://compliance.microsoft.com/datalossprevention).
 2. Click **Create policy**.
 3. Choose **Custom** and click **Next**.
 4. Type a name for the policy and click **Next**.
@@ -137,11 +139,11 @@ See [ATP for SharePoint, OneDrive, and Microsoft Teams](../security/office-365-s
 
 ## Add copyright information to your files
 
-If you use sensitivity labels in the Microsoft 365 Compliance admin center, you can configure your labels to add a watermark or a header or footer automatically to your organization's Office documents. In this way, you can make sure that shared files contain copyright or other ownership information.
+If you use sensitivity labels in the Microsoft Purview admin center, you can configure your labels to add a watermark or a header or footer automatically to your organization's Office documents. In this way, you can make sure that shared files contain copyright or other ownership information.
 
 To add a footer to a labeled file
 
-1. Open the [Microsoft 365 compliance admin center](https://compliance.microsoft.com).
+1. Open the [Microsoft Purview admin center](https://compliance.microsoft.com).
 2. In the left navigation, under **Solutions**, click **Information protection**.
 3. Click the label that you want to have add a footer, and then click **Edit label**.
 4. Click **Next** to reach the **Content marking** tab, and then turn **On** content marking.

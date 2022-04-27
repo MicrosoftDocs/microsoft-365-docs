@@ -1,7 +1,7 @@
 ---
 title: Insider risk management settings
-description: Learn about insider risk management settings in Microsoft 365
-keywords: Microsoft 365, insider risk management, risk management, compliance
+description: Learn about insider risk management settings in Microsoft Purview
+keywords: Microsoft 365, Microsoft Purview, insider risk, risk management, compliance
 ms.localizationpriority: medium
 ms.service: O365-seccomp
 ms.topic: article
@@ -19,6 +19,8 @@ ms.custom: admindeeplinkCOMPLIANCE
 ---
 
 # Get started with insider risk management settings
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Insider risk management settings apply to all insider risk management policies, regardless of the template you choose when creating a policy. Settings are configured using the **Insider risk settings** control located at the top of all insider risk management pages. These settings control policy components for the following areas:
 
@@ -93,7 +95,7 @@ Make sure that the Windows 10 devices that you plan on reporting in insider risk
 #### Step 2: Onboarding devices
 <a name="OnboardStep2"> </a>
 
-You must enable device monitoring and onboard your endpoints before you can monitor for insider risk management activities on a device. Both actions are taken in the Microsoft 365 Compliance portal.
+You must enable device monitoring and onboard your endpoints before you can monitor for insider risk management activities on a device. Both actions are taken in the Microsoft Purview compliance portal.
 
 When you want to onboard devices that haven't been onboarded yet, you'll download the appropriate script and deploy as outlined in the following steps.
 
@@ -101,7 +103,7 @@ If you already have devices onboarded into [Microsoft Defender for Endpoint](/wi
 
 In this deployment scenario, you'll onboard devices that haven't been onboarded yet, and you just want to monitor insider risk activities on Windows 10 devices.
 
-1. Open the [Microsoft 365 compliance center](https://compliance.microsoft.com).
+1. Open the [Microsoft Purview compliance portal](https://compliance.microsoft.com).
 2. Open the Compliance Center settings page and choose **Onboard devices**.
 
    > [!NOTE]
@@ -127,7 +129,7 @@ Once done and endpoint is onboarded, it should be visible in the devices list an
 
 If Microsoft Defender for Endpoint is already deployed and there are endpoints reporting in, all these endpoints will appear in the managed devices list. You can continue to onboard new devices into insider risk management to expand coverage by using the [Step 2: Onboarding devices](insider-risk-management-settings.md#OnboardStep2) section.
 
-1. Open the [Microsoft 365 compliance center](https://compliance.microsoft.com).
+1. Open the [Microsoft Purview compliance portal](https://compliance.microsoft.com).
 2. Open the Compliance Center settings page and choose **Enable device monitoring**.
 3. Choose **Device management** to open the **Devices** list. You should see the list of devices that are already reporting into Microsoft Defender for Endpoint.
 4. Choose **Onboarding** if you need to onboard more devices.
@@ -233,7 +235,7 @@ For each of the following domain settings, you can enter up to 500 domains:
 
 Insider risk management alert information is exportable to security information and event management (SIEM) and security orchestration automated response (SOAR) solutions by using the [Office 365 Management Activity API schema](/office/office-365-management-api/office-365-management-activity-api-schema#security-and-compliance-alerts-schema). You can use the Office 365 Management Activity APIs to export alert information to other applications your organization may use to manage or aggregate insider risk information. Alert information is exported and available every 60 minutes via the Office 365 Management Activity APIs.
 
-If your organization uses Microsoft Sentinel, you can also use the out-of-the-box insider risk management data connector to import insider risk alert information to Sentinel. For more information, see [Microsoft 365 Insider Risk Management (IRM) (Preview)](/azure/sentinel/data-connectors-reference#microsoft-365-insider-risk-management-irm-preview) in the Microsoft Sentinel article.
+If your organization uses Microsoft Sentinel, you can also use the out-of-the-box insider risk management data connector to import insider risk alert information to Sentinel. For more information, see [Insider Risk Management (IRM) (Preview)](/azure/sentinel/data-connectors-reference#microsoft-365-insider-risk-management-irm-preview) in the Microsoft Sentinel article.
 
 >[!IMPORTANT]
 >To maintain referential integrity for users who have insider risk alerts or cases in Microsoft 365 or other systems, anonymization of usernames isn't preserved for exported alerts. Exported alerts will display usernames for each alert.
@@ -287,11 +289,11 @@ For example, you need to protect against data leaks for a highly confidential pr
 
 ### Create a priority user group
 
-To create a new priority user group, you'll use setting controls in the **Insider risk management** solution in the Microsoft 365 compliance center. To create a priority user group, you must be a member of the *Insider Risk Management* or *Insider Risk Management Admin* role group.
+To create a new priority user group, you'll use setting controls in the **Insider risk management** solution in the Microsoft Purview compliance portal. To create a priority user group, you must be a member of the *Insider Risk Management* or *Insider Risk Management Admin* role group.
 
 Complete the following steps to create a priority user group:
 
-1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings**.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings**.
 2. Select the **Priority user groups (preview)** page.
 3. On the **Priority user groups (preview)** page, select **Create priority user group** to start the group creation wizard.
 4. On the **Name and describe** page, complete the following fields:
@@ -307,11 +309,11 @@ Complete the following steps to create a priority user group:
 
 ### Update a priority user group
 
-To update an existing priority user group, you'll use setting controls in the **Insider risk management** solution in the Microsoft 365 compliance center. To update a priority user group, you must be a member of the *Insider Risk Management* or *Insider Risk Management Admin* role group.
+To update an existing priority user group, you'll use setting controls in the **Insider risk management** solution in the Microsoft Purview compliance portal. To update a priority user group, you must be a member of the *Insider Risk Management* or *Insider Risk Management Admin* role group.
 
 Complete the following steps to edit a priority user group:
 
-1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings**.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings**.
 2. Select the **Priority user groups (preview)** page.
 3. Select the priority user group you want to edit and select **Edit group**.
 4. On the **Name and describe** page, update the Description field if needed. You can't update the name of the priority user group. Select **Next** to continue.
@@ -323,14 +325,14 @@ Complete the following steps to edit a priority user group:
 
 ### Delete a priority user group
 
-To delete an existing priority user group, you'll use setting controls in the **Insider risk management** solution in the Microsoft 365 compliance center. To delete a priority user group, you must be a member of the *Insider Risk Management* or *Insider Risk Management Admin* role group.
+To delete an existing priority user group, you'll use setting controls in the **Insider risk management** solution in the Microsoft Purview compliance portal. To delete a priority user group, you must be a member of the *Insider Risk Management* or *Insider Risk Management Admin* role group.
 
 > [!IMPORTANT]
 > Deleting a priority user group will remove it from any active policy to which it is assigned. If you delete a priority user group that is assigned to an active policy, the policy will not contain any in-scope users and will effectively be idle and will not create alerts.
 
 Complete the following steps to delete a priority user group:
 
-1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings**.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings**.
 2. Select the **Priority user groups (preview)** page.
 3. Select the priority user group you want to edit and select **Delete** from the dashboard menu.
 4. On the **Delete** dialog, select **Yes** to delete the priority user group or select **Cancel** to return to the dashboard.
@@ -349,7 +351,7 @@ You choose to enable the Physical badging data connector in Microsoft 365 to imp
 
 ### Configure priority physical assets
 
-To configure priority physical assets, you'll configure the Physical badging connector and use setting controls in the **Insider risk management** solution in the Microsoft 365 compliance center. To configure priority physical assets, you must be a member of the *Insider Risk Management* or *Insider Risk Management Admin role group*.
+To configure priority physical assets, you'll configure the Physical badging connector and use setting controls in the **Insider risk management** solution in the Microsoft Purview compliance portal. To configure priority physical assets, you must be a member of the *Insider Risk Management* or *Insider Risk Management Admin role group*.
 
 Complete the following steps to configure priority physical assets:
 
@@ -358,7 +360,7 @@ Complete the following steps to configure priority physical assets:
     > [!IMPORTANT]
     > For insider risk management policies to use and correlate signal data related to departing and terminated users with event data from your physical control and access platforms, you must also configure the Microsoft 365 HR connector. If you enable the Physical badging connector without enabling the Microsoft 365 HR connector, insider risk management policies will only process events for physical access activities for users in your organization.
 
-2. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings** > **Priority physical assets**.
+2. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings** > **Priority physical assets**.
 3. On the **Priority physical assets** page, you can either manually add the physical asset IDs you want to monitor for the asset events imported by the Physical badging connector or import a .csv file of all physical assets IDs imported by the Physical badging connector:
     a) To manually add physical assets IDs, choose **Add priority physical assets**, enter a physical asset ID, then select **Add**. Enter other physical asset IDs and then select **Add priority physical assets** to save all the assets entered.
     b) To add a list of physical asset IDs from a .csv file, choose **Import priority physical assets**. From the file explorer dialog, select the .csv file you wish to import, then select **Open**. The physical asset IDs from the .csv files are added to the list.
@@ -368,14 +370,14 @@ Complete the following steps to configure priority physical assets:
 
 ### Delete a priority physical asset
 
-To delete an existing priority physical asset, you'll use setting controls in the Insider risk management solution in the Microsoft 365 compliance center. To delete a priority physical asset, you must be a member of the Insider Risk Management or Insider Risk Management Admin role group.
+To delete an existing priority physical asset, you'll use setting controls in the Insider risk management solution in the Microsoft Purview compliance portal. To delete a priority physical asset, you must be a member of the Insider Risk Management or Insider Risk Management Admin role group.
 
 > [!IMPORTANT]
 > Deleting a priority physical asset removes it from examination by any active policy to which it was previously included. Alerts generated by activities associated with the priority physical asset aren't deleted.
 
 Complete the following steps to delete a priority physical asset:
 
-1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings** > **Priority physical assets**.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings** > **Priority physical assets**.
 2. On the **Priority physical assets** page, select the asset you want to delete.
 3. Select **Delete** on the action menu to delete the asset.
 
@@ -383,7 +385,7 @@ Complete the following steps to delete a priority physical asset:
 
 [Microsoft Power Automate](/power-automate/getting-started) is a workflow service that automates actions across applications and services. By using flows from templates or created manually, you can automate common tasks associated with these applications and services. When you enable Power Automate flows for insider risk management, you can automate important tasks for cases and users. You can configure Power Automate flows to retrieve user, alert, and case information and share this information with stakeholders and other applications, as well as automate actions in insider risk management, such as posting to case notes. Power Automate flows are applicable for cases and any user in scope for a policy.
 
-Customers with Microsoft 365 subscriptions that include insider risk management don't need additional Power Automate licenses to use the recommended insider risk management Power Automate templates. These templates can be customized to support your organization and cover core insider risk management scenarios. If you choose to use premium Power Automate features in these templates, create a custom template using the Microsoft 365 compliance connector, or use Power Automate templates for other compliance areas in Microsoft 365, you may need more Power Automate licenses.
+Customers with Microsoft 365 subscriptions that include insider risk management don't need additional Power Automate licenses to use the recommended insider risk management Power Automate templates. These templates can be customized to support your organization and cover core insider risk management scenarios. If you choose to use premium Power Automate features in these templates, create a custom template using the Microsoft Purview connector, or use Power Automate templates for other compliance areas in Microsoft 365, you may need more Power Automate licenses.
 
 The following Power Automate templates are provided to customers to support process automation for insider risk management users and cases:
 
@@ -399,13 +401,13 @@ The following Power Automate templates are provided to customers to support proc
 
 ### Create a Power Automate flow from insider risk management template
 
-To create a Power Automate flow from a recommended  insider risk management template, you'll use the settings controls in the **Insider risk management** solution in the Microsoft 365 compliance center or the **Manage Power Automate flows** option from the **Automate** control when working directly in the **Cases** or **Users dashboards**.
+To create a Power Automate flow from a recommended  insider risk management template, you'll use the settings controls in the **Insider risk management** solution in the Microsoft Purview compliance portal or the **Manage Power Automate flows** option from the **Automate** control when working directly in the **Cases** or **Users dashboards**.
 
 To create a Power Automate flow in the settings area, you must be a member of the *Insider Risk Management* or *Insider Risk Management Admin* role group. To create a Power Automate flow with the **Manage Power Automate flows** option, you must be a member of at least one insider risk management role group.
 
 Complete the following steps to create a Power Automate flow from a recommended insider risk management template:
 
-1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings** > **Power Automate flows**. You can also access from the **Cases** or **Users dashboards** pages by choosing **Automate** > **Manage Power Automate flows**.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings** > **Power Automate flows**. You can also access from the **Cases** or **Users dashboards** pages by choosing **Automate** > **Manage Power Automate flows**.
 2. On the **Power Automate flows** page, select a recommended template from the **Insider risk management templates you may like** section on the page.
 3. The flow lists the embedded connections needed for the flow and will note if the connection statuses are available. If needed, update any connections that aren't displayed as available. Select **Continue**.
 4. By default, the recommended flows are pre-configured with the recommended insider risk management and Microsoft 365 service data fields required to complete the assigned task for the flow. If needed, customize the flow components by using the **Show advanced options** control and configuring the available properties for the flow component.
@@ -424,7 +426,7 @@ Complete the following steps to create a custom Power Automate template for insi
 
 1. **Check your Power Automate flow license**: To create customized Power Automate flows that use insider risk management triggers, you'll need a Power Automate license. The recommended insider risk management flow templates don't require extra licensing and are included as part of your insider risk management license.
 2. **Create an automated flow**: Create a flow that performs one or more tasks after it's triggered by an insider risk management event. For details on how to create an automated flow, see [Create a flow in Power Automate](/power-automate/get-started-logic-flow).
-3. **Select the Microsoft 365 compliance connector**: Search for and select the Microsoft 365 compliance connector. This connector enables insider risk management triggers and actions. For more information on connectors, see the [Connector reference overview](/connectors/connector-reference/) article.
+3. **Select the Microsoft Purview connector**: Search for and select the Microsoft Purview connector. This connector enables insider risk management triggers and actions. For more information on connectors, see the [Connector reference overview](/connectors/connector-reference/) article.
 4. **Choose insider risk management triggers for your flow**: Insider risk management has two triggers available for custom Power Automate flows:
     - **For a selected insider risk management case**: Flows with this trigger can be selected from the insider risk management Cases dashboard page.
     - **For a selected insider risk management user**: Flows with this trigger can be selected from the insider risk management Users dashboard page.
@@ -437,13 +439,13 @@ Complete the following steps to create a custom Power Automate template for insi
 
 ### Share a Power Automate flow
 
-By default, Power Automate flows created by a user are only available to that user. For other insider risk management users to have access and use a flow, the flow must be shared by the flow creator. To share a flow, you'll use the settings controls in the **Insider risk management solution** in the Microsoft 365 compliance center or the **Manage Power Automate flows** option from the Automate control when working directly in the **Cases** or **Users dashboard** pages. Once you've shared a flow, everyone who it has been shared with can access the flow in the **Automate** control dropdown in the **Case** and **User dashboards**.
+By default, Power Automate flows created by a user are only available to that user. For other insider risk management users to have access and use a flow, the flow must be shared by the flow creator. To share a flow, you'll use the settings controls in the **Insider risk management solution** in the Microsoft Purview compliance portal or the **Manage Power Automate flows** option from the Automate control when working directly in the **Cases** or **Users dashboard** pages. Once you've shared a flow, everyone who it has been shared with can access the flow in the **Automate** control dropdown in the **Case** and **User dashboards**.
 
 To share a Power Automate flow in the settings area, you must be a member of the *Insider Risk Management* or *Insider Risk Management Admin* role group. To share a Power Automate flow with the **Manage Power Automate flows** option, you must be a member of at least one insider risk management role group.
 
 Complete the following steps to share a Power Automate flow:
 
-1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings** > **Power Automate flows**. You can also access from the **Cases** or **Users dashboards** pages by choosing **Automate** > **Manage Power Automate flows**.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings** > **Power Automate flows**. You can also access from the **Cases** or **Users dashboards** pages by choosing **Automate** > **Manage Power Automate flows**.
 2. On the **Power Automate flows** page, select the **My flows** or **Team flows** tab.
 3. Select the flow to share, then select **Share** from the flow options menu.
 4. On the flow sharing page, enter the name of the user or group you want to add as an owner for the flow.
@@ -451,26 +453,26 @@ Complete the following steps to share a Power Automate flow:
 
 ### Edit a Power Automate flow
 
-To edit a flow, you'll use the settings controls in the **Insider risk management** solution in the Microsoft 365 compliance center or the **Manage Power Automate flows** option from the **Automate** control when working directly in the **Cases** or **Users dashboards**.
+To edit a flow, you'll use the settings controls in the **Insider risk management** solution in the Microsoft Purview compliance portal or the **Manage Power Automate flows** option from the **Automate** control when working directly in the **Cases** or **Users dashboards**.
 
 To edit a Power Automate flow in the settings area, you must be a member of the *Insider Risk Management* or *Insider Risk Management Admin* role group. To edit a Power Automate flow with the **Manage Power Automate flows** option, you must be a member of at least one insider risk management role group.
 
 Complete the following steps to edit a Power Automate flow:
 
-1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings** > **Power Automate flows**. You can also access from the **Cases** or **Users dashboards** pages by choosing **Automate** > **Manage Power Automate flows**.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings** > **Power Automate flows**. You can also access from the **Cases** or **Users dashboards** pages by choosing **Automate** > **Manage Power Automate flows**.
 2. On the **Power Automate flows** page, select a flow to edit and select **Edit** from the flow control menu.
 3. Select the **ellipsis** > **Settings** to change a flow component setting or **ellipsis** > **Delete** to delete a flow component.
 4. Select **Save** and then **Close** to complete editing the flow.
 
 ### Delete a Power Automate flow
 
-To delete a flow, you'll use the settings controls in the **Insider risk management** solution in the Microsoft 365 compliance center or the **Manage Power Automate flows** option from the **Automate** control when working directly in the **Cases** or **Users dashboards**. When a flow is deleted, it's removed as an option for all users.
+To delete a flow, you'll use the settings controls in the **Insider risk management** solution in the Microsoft Purview compliance portal or the **Manage Power Automate flows** option from the **Automate** control when working directly in the **Cases** or **Users dashboards**. When a flow is deleted, it's removed as an option for all users.
 
 To delete a Power Automate flow in the settings area, you must be a member of the *Insider Risk Management* or *Insider Risk Management Admin* role group. To delete a Power Automate flow with the **Manage Power Automate flows** option, you must be a member of at least one insider risk management role group.
 
 Complete the following steps to delete a Power Automate flow:
 
-1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings** > **Power Automate flows**. You can also access from the **Cases** or **Users dashboards** pages by choosing **Automate** > **Manage Power Automate flows**.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings** > **Power Automate flows**. You can also access from the **Cases** or **Users dashboards** pages by choosing **Automate** > **Manage Power Automate flows**.
 2. On the **Power Automate flows** page, select a flow to delete and select **Delete** from the flow control menu.
 3. On the deletion confirmation dialog, select **Delete** to remove the flow or select **Cancel** to exit the deletion action.
 
@@ -488,7 +490,7 @@ For more information on how to use teams and channels in Microsoft Teams, see [O
 
 Enabling Microsoft Teams support for cases is quick and easy to configure. To enable Microsoft Teams for insider risk management, complete the following steps:
 
-1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** > **Insider risk settings**.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** > **Insider risk settings**.
 2. Select the **Microsoft Teams** page.
 3. Enable Microsoft Teams integration for insider risk management.
 4. Select **Save** to configure and exit.
@@ -503,7 +505,7 @@ Users need permission to create Microsoft 365 groups in your organization to cre
 
 To create a team for a case, you'll use the Create Microsoft Team control when working directly in an existing case. Complete the following steps to create a new team:
 
-1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** > **Cases** and select an existing case.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** > **Cases** and select an existing case.
 2. On the case action menu, select **Create Microsoft Team**.
 3. In the **Team name** field, enter a name for the new Microsoft Teams team.
 4. Select **Create Microsoft team** and then select **Close**.
@@ -534,7 +536,7 @@ Analytics insights from scans are based on the same risk activity signals used b
 To enable insider risk analytics, you must be a member of the *Insider Risk Management*, *Insider Risk Management Admin*, or *Microsoft 365 Global admin* role group.
 Complete the following steps to enable insider risk analytics:
 
-1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management**.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management**.
 2. Select **Run scan** on the **Scan for insider risks in your organization** card on the insider risk management **Overview** tab. This turns on analytics scanning for your organization. You can also turn on scanning in your organization by navigating to **Insider risk settings** > **Analytics** and enabling **Scan your tenant's user activity to identify potential insider risks**.
 3. On the **Analytics details** pane, select **Run scan** to start the scan for your organization. Analytics scan results may take up to 48 hours before insights are available as reports for review.
 
@@ -566,7 +568,7 @@ To turn off insider risk analytics, you must be a member of the *Insider Risk Ma
 
 Complete the following steps to turn off insider risk analytics:
 
-1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management**.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management**.
 2. Select **Insider risk settings** > **Analytics** page.
 3. On the **Analytics** page, turn off **Scan your tenant's user activity to identify potential insider risks**.
 
@@ -582,7 +584,7 @@ If you've enabled insider risk management analytics for your organization, membe
 
 If you prefer to disable admin and analytics notifications, complete the following steps:
 
-1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** > **Insider risk settings**.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** > **Insider risk settings**.
 2. Select the **Admin notifications** page.
 3. Clear the check box for the following options as applicable:
     - **Send a notification email when the first alert is generated for a new policy**
