@@ -44,10 +44,10 @@ landingContent:
     linkLists:
       - linkListType: get-started
         links:
-          - text: Use the trial playbook
-            url: trial-playbook-defender-business.md
           - text: Get Defender for Business
             url: get-defender-business.md
+          - text: Use the trial playbook
+            url: trial-playbook-defender-business.md
           - text: Add users and assign licenses
             url: mdb-add-users.md
           - text: Visit the Microsoft 365 Defender portal
