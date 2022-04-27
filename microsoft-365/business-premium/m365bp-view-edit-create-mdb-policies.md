@@ -29,7 +29,7 @@ In Microsoft 365 Business Premium, security settings for managed devices are con
 - Edit an existing policy
 - Create a new policy
 
-## About the Default device protection policies
+## About the default device protection policies
 
 Microsoft 365 Business Premium includes two main types of policies to protect your organization's devices:
 
@@ -92,7 +92,7 @@ To view your existing device protection policies in the security center:
    - Make any needed changes by selecting **Edit**.
    - When you’re ready to proceed, choose **Update policy**.
 
-## Create a new device protection policy
+### Create a new device protection policy
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in. 
 
