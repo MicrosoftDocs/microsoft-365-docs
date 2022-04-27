@@ -467,6 +467,8 @@
               href: exchange-online-secures-email-secrets.md
             - name: How Exchange Online uses TLS to secure email connections in Office 365
               href: exchange-online-uses-tls-to-secure-email-connections.md
+            - name: Enhancing mail flow with MTA-STS
+              href: enhancing-mail-flow-with-mta-sts.md
             - name: How SMTP DANE works
               href: how-smtp-dane-works.md  
             - name: BitLocker and Distributed Key Manager (DKM) for Encryption
