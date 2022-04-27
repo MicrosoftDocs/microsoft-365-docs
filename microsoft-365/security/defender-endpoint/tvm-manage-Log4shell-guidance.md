@@ -55,7 +55,7 @@ Threat and vulnerability management provides you with the following capabilities
 
 ## Exposed devices discovery
 
-Embedded threat and vulnerability management capabilities, along with enabling Log4j detection, in the Microsoft 365 Defender portal, will help you discover devices exposed to the Log4j vulnerability.
+Embedded threat and vulnerability management capabilities, along with enabling Log4j detection, in the Microsoft 365 Defender portal, will help you discover devices exposed to the Log4Shell vulnerability.
 
 Onboarded devices, are assessed using existing embedded threat and vulnerability management capabilities that can discover vulnerable software and files.
 
@@ -118,7 +118,7 @@ Use the threat and vulnerability management dashboard to see your current exposu
     - Vulnerable files
     - Vulnerable software
 
-### Log4j vulnerability mitigation
+### Log4Shell vulnerability mitigation
 
 The log4Shell vulnerability can be mitigated by preventing JNDI lookups on Log4j versions 2.10 - 2.14.1 with default configurations. To create this mitigation action, from the **Threat awareness dashboard**:
 
