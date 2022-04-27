@@ -64,3 +64,5 @@ UrlClickEvents
 ## Related topics
 
 - [Proactively hunt for threats](advanced-hunting-overview.md)
+- [Safe Links in Microsoft Defender for Office 365](microsoft-365/security/office-365-security/safe-links.md)
+- [Take action on advanced hunting query results](take-action.md)
