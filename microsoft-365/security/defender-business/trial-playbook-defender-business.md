@@ -9,7 +9,6 @@ audience: Admin
 ms.topic: article
 ms.collection: m365-security-compliance
 ms.localizationpriority: high
-ROBOTS: NOINDEX, NOFOLLOW
 ms.prod: m365-security
 ms.technology: mdb
 search.appverid: 
@@ -53,13 +52,11 @@ As soon as you have signed up for Defender for Business, your first step is to *
 The Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) is your one-stop shop for using and managing Defender for Business. It includes a welcome banner and callouts to help you get started, cards that surface relevant information, and a navigation bar to give you easy access to the various features and capabilities. 
 
 - **[Get started using the Microsoft 365 Defender portal](mdb-get-started.md)**.
-- **[Explore the navigation bar](mdb-get-started.md#the-navigation-bar)**. Use the navigation bar on the left side of the screen to access your incidents, view reports, and manage your security policies. 
+- **[Explore the navigation bar](mdb-get-started.md#the-navigation-bar)** on the left side of the screen to access your incidents, view reports, and manage your security policies. 
 
 ### Step 3: Use the setup wizard in Defender for Business (recommended)
 
-Defender for Business was designed to save small and medium-sized businesses time and effort. You can do initial setup and configuration with a setup wizard. The setup wizard guides you through granting access to your security team, setting up email notifications for your security team, and onboarding your company's Windows devices. 
-
-**[Use the setup wizard](mdb-use-wizard.md)**.
+Defender for Business was designed to save small and medium-sized businesses time and effort. You can do initial setup and configuration with a setup wizard. The setup wizard guides you through granting access to your security team, setting up email notifications for your security team, and onboarding your company's Windows devices. **[Use the setup wizard](mdb-use-wizard.md)**.
 
 > [!NOTE]
 > You can only use the set-up wizard once. 
@@ -75,10 +72,7 @@ Defender for Business was designed to save small and medium-sized businesses tim
 
 3. **[Onboard and configure Windows devices](mdb-onboard-devices.md)**. Onboarding devices right away helps protect those devices from day one.
 
-   > [!NOTE]
-   > What is automatic onboarding? [Automatic onboarding](mdb-use-wizard.md#what-is-automatic-onboarding) is a simplified way to onboard Windows devices to Defender for Business. Automatic onboarding is only available for Windows devices that are already enrolled in Microsoft Intune. 
-   >    
-   > While you are using the setup wizard, the system will detect whether Windows devices are already enrolled in Intune. You'll be asked if you want to use automatic onboarding for all or some of those devices. You can onboard all Windows devices at once, or select specific devices to start with, and then add more devices later. [Learn more about automatic onboarding](mdb-use-wizard.md#what-is-automatic-onboarding).
+   While you are using the setup wizard, the system will detect whether you have Windows devices that are already enrolled in Intune. You'll be asked if you want to use automatic onboarding for all or some of those devices. You can onboard all Windows devices at once, or select specific devices to start with, and then add more devices later. [Learn more about automatic onboarding](mdb-use-wizard.md#what-is-automatic-onboarding).
    
    To onboard other devices, see [step 4](#step-4-set-up-and-configure-defender-for-business).
 
@@ -112,16 +106,18 @@ If you used the setup wizard, but you need to onboard more devices, such as non-
    - [Windows clients](mdb-onboard-devices.md): Choose one of the following options to onboard Windows client devices to Defender for Business:
       - Local script (for onboarding devices manually in the Microsoft 365 Defender portal)
       - Group Policy (if you're already using Group Policy and prefer this method)
-      - Microsoft Intune (included in [Microsoft 365 Business Premium](../../business-premium/index.md))
+      - Microsoft Intune (*recommended*; included in [Microsoft 365 Business Premium](../../business-premium/index.md))
 
    - [macOS computers](mdb-onboard-devices.md): Choose one of the following options to onboard macOS devices:
-      - Local script for macOS (recommended)
-      - Microsoft Intune for macOS
+      - Local script for macOS (*recommended*)
+      - Microsoft Intune for macOS (Intune is included in [Microsoft 365 Business Premium](../../business-premium/index.md))
 
       > [!NOTE]
       > We recommend using a local script to onboard macOS devices. Although you can set up enrollment for macOS devices in Intune, the local script is the simplest method for onboarding macOS devices to Defender for Business.
 
-   - [Mobile devices](mdb-onboard-devices.md): You'll need Microsoft Intune to onboard mobile devices, such as Android and iOS/iPadOS devices. If you have Microsoft 365 Business Premium, you have Intune as part of your subscription. 
+   - Windows Server and Linux servers: Currently unsupported. Server onboarding and security capabilities are coming soon to Defender for Business. 
+
+   - [Mobile devices](mdb-onboard-devices.md): You'll need Microsoft Intune to onboard mobile devices, such as Android and iOS/iPadOS devices. If you have [Microsoft 365 Business Premium](../../business-premium/index.md), you have Intune as part of your subscription. Intune can also be purchased separately.
    
    See the following resources to get help enrolling these devices into Intune:
       - [Enroll Android devices](/mem/intune/enrollment/android-enroll)
