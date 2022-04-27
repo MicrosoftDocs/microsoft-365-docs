@@ -112,19 +112,14 @@ If you used the setup wizard, but you need to onboard more devices, such as non-
 
 5. **[View, and if necessary, configure your security policies](mdb-configure-security-settings.md)**. After you've onboarded your company's devices to Microsoft Defender for Business, your next step is to view and if necessary, edit your security policies and settings. Defender for Business includes preconfigured security policies that use recommended settings. However, you can edit your settings to suit your business needs.
 
-   - [Choose where to manage your security policies and devices](mdb-configure-security-settings.md#choose-where-to-manage-security-policies-and-devices). If you select the [simplified configuration process](mdb-simplified-configuration.md), you can view and manage your security policies in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). However, you're not limited to this option. If you've been using Intune, you can keep using the Microsoft Endpoint Manager admin center.
-
-   - [View or edit your next-generation protection policies](mdb-configure-security-settings.md#view-or-edit-your-next-generation-protection-policies).
-
-   - [View or edit your firewall policies](mdb-configure-security-settings.md#view-or-edit-your-firewall-policies-and-custom-rules) and if necessary, define your [custom rules](mdb-custom-rules-firewall.md). 
-
-   - [Set up web content filtering](mdb-configure-security-settings.md#set-up-web-content-filtering). Web content filtering enables your security team to track and regulate access to websites based on their content categories, such as adult content, high bandwidth, legal liability, leisure, or uncategorized. 
-
-   - [Review settings for advanced features](mdb-configure-security-settings.md#review-settings-for-advanced-features). In Defender for Business, your security features are preconfigured using recommended settings; however, you can review them, and if necessary, edit settings to suit your business needs.
-
-      To access settings for advanced features, in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), go to **Settings** > **Endpoints** > **General** > **Advanced features**.
-
-   - [View and edit other settings](mdb-configure-security-settings.md#access-your-settings-in-the-microsoft-365-defender-portal) in the Microsoft 365 Defender portal. In addition to security policies that are applied to devices, there are other settings you can view and edit in Defender for Business. For example, you specify the time zone to use, and you can onboard (or offboard) devices.
+   | Action | Description |
+   |:---|:---|
+   | [Choose where to manage your security policies and devices](mdb-configure-security-settings.md#choose-where-to-manage-security-policies-and-devices). | If you select the [simplified configuration process](mdb-simplified-configuration.md), you can view and manage your security policies in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). However, you're not limited to this option. If you've been using Intune, you can keep using the Microsoft Endpoint Manager admin center. |
+   | [View or edit your next-generation protection policies](mdb-configure-security-settings.md#view-or-edit-your-next-generation-protection-policies). | Next-generation protection settings include real-time protection, block at first sight, network protection, actions to take on potentially unwanted apps, and antivirus scheduled scans.  |
+   | [View or edit your firewall policies](mdb-configure-security-settings.md#view-or-edit-your-firewall-policies-and-custom-rules). | If necessary, define your [custom rules](mdb-custom-rules-firewall.md). |
+   | [Set up web content filtering](mdb-configure-security-settings.md#set-up-web-content-filtering). | Web content filtering enables your security team to track and regulate access to websites based on their content categories, such as adult content, high bandwidth, legal liability, leisure, or uncategorized. |
+   | [Review settings for advanced features](mdb-configure-security-settings.md#review-settings-for-advanced-features). | In Defender for Business, your security features are preconfigured using recommended settings; however, you can review them, and if necessary, edit settings to suit your business needs. <br/><br/>To access settings for advanced features, in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), go to **Settings** > **Endpoints** > **General** > **Advanced features**. |
+   | [View and edit other settings](mdb-configure-security-settings.md#access-your-settings-in-the-microsoft-365-defender-portal) in the Microsoft 365 Defender portal. | In addition to security policies that are applied to devices, there are other settings you can view and edit in Defender for Business. For example, you specify the time zone to use, and you can onboard (or offboard) devices. |
 
 ## Start using Defender for Business
 
