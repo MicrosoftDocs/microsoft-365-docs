@@ -25,9 +25,7 @@ In Microsoft 365 Business Premium, security settings for managed devices are con
 **This guidance describes how to**:
 
 - Get an overview of your default policies
-- View your existing policies
-- Edit an existing policy
-- Create a new policy
+- Work with device policies in Defender security center, Admin center, and InTune.
 
 ## About the default device protection policies
 
@@ -156,11 +154,68 @@ To view and manage policies:
 
 ## Working with device policies in InTune
 
-dsfadsfadsf
+Use the following information to create and manage device policies in InTune, done through Endpoint security in the Microsoft Endpoint Manager admin center.
 
-### View and edit, etc.
+### Create, duplicate and edit policies
 
-dsfasdfadsfadsfa
+To create a policy in InTune
+
+1. Sign in to the Microsoft Endpoint Manager admin center.
+
+1. Select **Endpoint security** and then select the type of policy you want to configure, and then select Create Policy.
+
+1. Choose from the following policy types:
+
+    - Antivirus
+    - Disk encryption
+    - Firewall
+    - Endpoint detection and response
+    - Attack surface reduction
+    - Account protection
+    - Enter the following properties:
+
+1. Platform: Choose the platform that you're creating policy for. The available options depend on the policy type you select.
+
+1. Profile: Choose from the available profiles for the platform you selected. For information about the profiles, see the dedicated section in this article for your chosen policy type.
+Select Create.
+
+1. On the Basics page, enter a name and description for the profile, then choose **Next**.
+
+1. On the Configuration settings page, expand each group of settings, and configure the settings you want to manage with this profile.
+
+1. When you're done configuring settings, select **Next**.
+
+1. On the Scope tags page, choose Select scope tags to open the Select tags pane to assign scope tags to the profile.
+
+1. Select **Next** to continue.
+
+1. On the Assignments page, select the groups that will receive this profile. For more information on assigning profiles, see Assign user and device profiles.
+
+1. Select **Next**.
+
+1. On the Review + create page, when you're done, choose **Create**. The new profile is displayed in the list when you select the policy type for the profile you created.
+
+To duplicate a policy in InTune:
+
+1. Sign in to the Microsoft Endpoint Manager admin center.
+
+1. Select the policy that you want to copy. Next, select **Duplicate** or select the ellipsis **(…)** to the right of the policy and select **Duplicate**.
+1. Provide a New name for the policy, and then select **Save**.
+
+To edit a policy:
+
+1. Select the new policy, and then select **Properties**.
+
+1. Select **Settings** to expand a list of the configuration settings in the policy. You can’t modify the settings from this view, but you can review how they're configured.
+
+1. To modify the policy, select **Edit** for each category where you want to make a change:
+
+    - Basics
+    - Assignments
+    - Scope tags
+    - Configuration settings
+
+1. After you’ve made changes, select **Save** to save your edits. Edits to one category must be saved before you can introduce edits to any additional categories.
 
 ## See also
 
@@ -169,4 +224,3 @@ dsfasdfadsfadsfa
 ## Next objective
 
 Set up and manage [device groups](m365bp-device-groups-mdb.md).
-
