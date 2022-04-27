@@ -63,7 +63,7 @@ There are a couple of scenarios that include either migrating data or users from
   
 - To set up directory synchronization with your on-premises Active Directory, see [Set up directory synchronization for Microsoft 365](../../enterprise/set-up-directory-synchronization.md), and to understand the different identity models in Microsoft 365, read [Deploy your identity infrastructure for Microsoft 365](../../enterprise/deploy-identity-solution-overview.md).
 
-- To set-up an Exchange hybrid, the full set of instructions that guide you through all the different ways of setting up a hybrid exchange (including setting up DNS records) can be found here: [Exchange Server Deployment Assistant](/exchange/exchange-deployment-assistant)
+- To set up an Exchange hybrid, the full set of instructions that guide you through all the different ways of setting up a hybrid exchange (including setting up DNS records) can be found here: [Exchange Server Deployment Assistant](/exchange/exchange-deployment-assistant)
 
 - To set up a SharePoint hybrid, particularly hybrid search and site features, see [Hybrid Search in SharePoint](/SharePoint/hybrid/hybrid-search-in-sharepoint).
 
