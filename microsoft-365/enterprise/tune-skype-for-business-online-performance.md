@@ -2,7 +2,7 @@
 title: "Tune Skype for Business Online performance"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 9/29/2016
 audience: Admin
 ms.topic: troubleshooting

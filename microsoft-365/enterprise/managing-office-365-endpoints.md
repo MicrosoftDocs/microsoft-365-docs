@@ -2,7 +2,7 @@
 title: "Managing Office 365 endpoints"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
