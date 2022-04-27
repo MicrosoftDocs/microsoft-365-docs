@@ -82,7 +82,7 @@ sections:
 
           2. Select **Endpoint security**, and then, under **Setup**, select **Microsoft Defender for Endpoint**.
 
-          3. Under **Endpoint Security Profile Settings (Preview)**, set **Allow Microsoft Defender for Endpoint to enforce Endpoint Security Configurations (Preview)** to **On**.
+          3. Under **Endpoint Security Profile Settings**, set **Allow Microsoft Defender for Endpoint to enforce Endpoint Security Configurations** to **On**.
 
       - question: Something went wrong with onboarding devices in the Microsoft 365 Defender portal
         answer: |
