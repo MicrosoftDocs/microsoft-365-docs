@@ -32,7 +32,7 @@ ms.date:
 
 **Microsoft 365 for business plans**
 
-Microsoft 365 for business provides the following plans to select from to help you find the subscription that best suits you business needs.
+Microsoft 365 for business provides the following plans to select from to help you find the subscription that best suits your business needs.
 
 |Plan|Description|
 | --- | --- |
