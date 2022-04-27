@@ -32,7 +32,7 @@ ms.date:
 
 **Microsoft 365 for business plans**
 
-Microsoft 365 for business provides the following subscription plans to select from that best suites you business needs:
+Microsoft 365 for business provides the following plans to select from to help you find the subscription that best suits you business needs.
 
 |Plan|Description|
 | --- | --- |
@@ -46,6 +46,8 @@ For more details, you can [compare plans](https://www.microsoft.com/microsoft-36
 
 
 ## Related content
+
+[How to sign up - Admin help](../admin-overview/sign-up-for-office-365.md) (Article)
 
 [Sign up for a Microsoft 365 Business Standard subscription](../simplified-signup/signup-business-standard.md) (Article)
 
