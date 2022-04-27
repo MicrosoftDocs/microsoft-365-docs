@@ -13,7 +13,7 @@
 | 12/23/2019 | [Let users reset their own passwords in Microsoft 365](/Office365/Admin/add-users/let-users-reset-passwords) | modified |
 | 12/23/2019 | [Remove a former employee from Microsoft 365](/Office365/Admin/add-users/remove-former-employee) | modified |
 | 12/23/2019 | [Reset Microsoft 365 Apps for business passwords](/Office365/Admin/add-users/reset-passwords) | modified |
-| 12/23/2019 | [About the Microsoft 365 admin center](/Office365/Admin/admin-overview/about-the-admin-center) | modified |
+| 12/23/2019 | [About the Microsoft 365 admin center](/Office365/Admin/admin-overview/admin-center-overview) | modified |
 | 12/23/2019 | [Create organization-wide signatures and disclaimers](/Office365/Admin/setup/create-signatures-and-disclaimers) | modified |
 | 12/23/2019 | [Set up Microsoft 365 file storage and sharing](/Office365/Admin/setup/set-up-file-storage-and-sharing) | modified |
 | 12/23/2019 | [Remove licenses from your Microsoft 365 for business subscription](/Office365/Admin/subscriptions-and-billing/remove-licenses-from-subscription) | modified |
@@ -51,7 +51,7 @@
 | 1/10/2020 | [Remove a former employee from Microsoft 365](/Office365/Admin/add-users/remove-former-employee) | modified |
 | 1/10/2020 | [Reset Microsoft 365 Apps for business passwords](/Office365/Admin/add-users/reset-passwords) | modified |
 | 1/10/2020 | [Restore a user in Microsoft 365](/Office365/Admin/add-users/restore-user) | modified |
-| 1/10/2020 | [About the Microsoft 365 admin center](/Office365/Admin/admin-overview/about-the-admin-center) | modified |
+| 1/10/2020 | [About the Microsoft 365 admin center](/Office365/Admin/admin-overview/admin-center-overview) | modified |
 | 1/10/2020 | [Get started with Microsoft 365 for business](/Office365/Admin/admin-overview/get-started-with-office-365) | modified |
 | 1/10/2020 | [What Microsoft 365 for business subscription do I have?](/Office365/Admin/admin-overview/what-subscription-do-i-have) | modified |
 | 1/10/2020 | [Contact support for business products - Admin Help](../get-help-support.md) | modified |

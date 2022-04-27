@@ -6446,6 +6446,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/admin/admin-overview/about-the-admin-center.md",
+      "redirect_url": "/microsoft-365/admin/admin-overview/admin-center-overview",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/business-video/set-up-dlp.md",
       "redirect_url": "/microsoft-365/business-premium/m365bp-set-up-compliance",
       "redirect_document_id": false
