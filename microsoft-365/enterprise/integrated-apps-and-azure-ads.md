@@ -2,7 +2,7 @@
 title: "Integrated apps and Azure AD for Microsoft 365 administrators"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: Admin
 ms.topic: landing-page
 ms.service: o365-administration

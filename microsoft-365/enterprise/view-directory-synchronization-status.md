@@ -2,7 +2,7 @@
 title: "View directory synchronization status in Microsoft 365"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
