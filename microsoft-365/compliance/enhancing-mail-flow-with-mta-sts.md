@@ -52,6 +52,6 @@ max_age: 604800
 
 Any customer whose MX records point directly to Exchange Online can specify in their own policy, with the same values that are shown above in the microsoft.com policy. The unique required information in the policy is the MX record that points to Exchange Online (`*`.mail.protection.outlook.com), and the same certificate is shared by all Exchange Online customers. It's possible to publish your policy in *test* mode to ensure it's valid before changing it to *enforce* mode. There are third-party validation tools out there that can check your configuration.
 
-These policies aren't something that Exchange Online can host on behalf of customers and customers should make use of the web hosting service they use. The policy needs to be protected by HTTPS with a certificate for the subdomain `mta-sts.<domain name>`.
+These policies aren't something that Exchange Online can host on behalf of customers and customers should make use of the web hosting service they use. The policy needs to be protected by HTTPS with a certificate for the subdomain `mta-sts.<domain name>`. There are alternatives to hosting a policy including [this solution](https://github.com/jpawlowski/mta-sts.template) that uses GitHub Pages to host it.
 
 Once the DNS TXT domain record is created and the policy file is available at the required HTTPS URL, the domain will be protected by MTA-STS. Details about MTA-STS are available in [RFC 8461](https://datatracker.ietf.org/doc/html/rfc8461).
