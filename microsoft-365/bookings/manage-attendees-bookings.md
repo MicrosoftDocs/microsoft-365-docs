@@ -14,35 +14,24 @@ description: "Follow these instructions to create your About Us page, including 
 
 Owners and staff members of a Bookings calendar can now manage and update attendees for group services. For more information on service offerings in Bookings, see [Define your service offerings in Bookings](define-service-offerings.md).
 
-Sometimes you might have to manage Booking attendees for multi service Bookings on behalf of customers, let us consider a scenario where we need to remove some attendees from group service booked using Microsoft Bookings:
+Make sure that you set the **Maximum number of attendees** to more than 1 on the Bookings service.
 
-Example
+## Update attendee list
 
-Consider one booking with a maximum of 10 participants
+> [!NOTE]
+> You must have Administrator or Team member permission before you can update these settings.
 
-5 people have registered/booked for the service
+1. In Microsoft 365, select the app launcher, and then select **Bookings**.
 
-I want to remove 2 of the registered people
-
-Users who have owner/edit permission to Booking’s calendar can follow the steps below to remove the attendees and update the bookings.
-
-Created Group Booking with maximum attendees set to more than 1 as below:
-
-:::image type="content" source="../media/group-booking-ten-attendees.png" alt-text="Screenshot: Group booking with 10 attendees selected":::
-
-The owner will have the calendar showing the Group Booking as below:
+1. Choose your calendar, select the group meeting and choose **Edit**.
 
 :::image type="content" source="../media/group-booking-calendar.png" alt-text="Screenshot: Owner view of group booking calendar":::
 
-Managing Group Bookings just got easy as click on Add Customer let you add attendee
+1. To add attendees to the group booking, select **Add customer**.
 
 :::image type="content" source="../media/group-booking-add-customer.png" alt-text="Screenshot: Group booking service details page - add a customer":::
 
-Click on attendee you want to edit details or remove
-
-Removing the attendee will trigger the cancellation email for both attendee :
-
-Attendee view:
+1. To remove attendees, select the user you want to remove from the group booking and select **Remove customer**. Once you remove the attendee, they'll get an email letting them know that they've been removed from this booking.
 
 :::image type="content" source="../media/group-booking-cancel.png" alt-text="Screenshot: Group booking cancellation":::
 
