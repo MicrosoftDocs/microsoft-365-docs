@@ -13,7 +13,7 @@ ms.collection:
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolib
-- M365-Lighthouse                         
+- M365-Lighthous
 search.appverid: MET150
 description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, see a list of known issues for Lighthouse by feature area."
 ---
@@ -60,13 +60,13 @@ This article lists the known issues for Microsoft 365 Lighthouse by feature area
 | **Deactivate and Reactivate actions are not listed in audit logs** | The following activities are currently not reported on the Audit logs page in  Lighthouse: <ul><li>Name: offboardTenant \| Action: Inactivate a customer</li> <li>Name: resetTenantOnboardingStatus \| Action: Reactive customer</li></ul> | There's no workaround, but we're working on a fix. These activities will appear in audit logs once the fix is deployed in the service. |
 | **Filter is not showing all users** | When MSP technicians try to filter by using **Initiated By**, the list of all User Principal Names (UPNs) – corresponding to email IDs of the technicians who initiated actions generating audit logs – isn't fully displayed under the filter.<br><br>Note that the audit logs themselves will be fully displayed; only the ability to filter them by using **Initiated By** is impacted. | There's no workaround, but we're working on a fix. The filter will revert to its expected behavior – displaying the full list of UPNs to filter by – once the fix is deployed in the service. |
 
-## Delegated Admin Privileges (DAP)
+## Delegated Admin Privileges (DAP)
 
 | Issue | Description | Solution |
 | ---------------- | ---------------- | ---------------- |
 | **Permissions delay when changing DAP roles** | If an MSP technician is added to or removed from the Admin Agent or Helpdesk Agent group, there may be a delay in reflecting the appropriate permissions within Lighthouse. | The issue will resolve within 30 minutes. No additional steps are required. |
 
-## Granular Delegated Admin Privileges (GDAP)
+## Granular Delegated Admin Privileges (GDAP)
 
 > [!NOTE]
 > GDAP is currently in [technical preview](/partner-center/announcements/2022-february#6) (public preview) to allow partners to assign granular permissions before GDAP is generally available.
@@ -86,5 +86,5 @@ Currently, DAP is required to onboard customers to Lighthouse. We recommend also
 ## Related content
 
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)\
-[Troubleshoot and resolve problems and error messages in Microsoft 365 Lighthouse](m365-lighthouse-troubleshoot.md) (article)\
-[Get help and support for Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md) (article)
+[Troubleshoot error messages and problems in Microsoft 365 Lighthouse](m365-lighthouse-troubleshoot.md) (article)\
+[Get help and support for Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md) (article)

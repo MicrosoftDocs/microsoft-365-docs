@@ -21,10 +21,12 @@ description: Use Group Policy to deploy the configuration package on Windows 10 
 
 # Onboard Windows 10 devices and Windows 11 using Group Policy 
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 **Applies to:**
 
-- [Microsoft 365 Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
-- [Insider risk management](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+- [Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
+- [Insider risk management](insider-risk-management.md)
 - Group Policy
 
 > [!NOTE]
@@ -64,7 +66,7 @@ For security reasons, the package used to offboard devices will expire 30 days a
 > [!NOTE]
 > Onboarding and offboarding policies must not be deployed on the same device at the same time, otherwise this will cause unpredictable collisions.
 
-1. Get the offboarding package from [Microsoft Compliance center](https://compliance.microsoft.com/compliancesettings/deviceonboarding).
+1. Get the offboarding package from [Microsoft Purview compliance portal](https://compliance.microsoft.com/compliancesettings/deviceonboarding).
 
 2. In the navigation pane, select **Settings** > **//Device onboarding** > **Offboarding**.
 
@@ -96,7 +98,7 @@ For security reasons, the package used to offboard devices will expire 30 days a
 With Group Policy there isn’t an option to monitor deployment of policies on the devices. Monitoring can be done directly on the portal, or by using the different deployment tools.
 
 ## Monitor devices using the portal
-1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>.
 2. Click **Devices** list.
 3. Verify that devices are appearing.
 

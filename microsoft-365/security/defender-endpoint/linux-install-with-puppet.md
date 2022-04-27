@@ -57,14 +57,18 @@ Download the onboarding package from Microsoft 365 Defender portal:
     ```bash
     ls -l
     ```
+
     ```Output
     total 8
     -rw-r--r-- 1 test  staff  4984 Feb 18 11:22 WindowsDefenderATPOnboardingPackage.zip
     ```
+
 5. Extract the contents of the archive.
+
     ```bash
     unzip WindowsDefenderATPOnboardingPackage.zip
     ```
+
     ```Output
     Archive:  WindowsDefenderATPOnboardingPackage.zip
     inflating: mdatp_onboard.json
@@ -79,6 +83,7 @@ Create the folders *install_mdatp/files* and *install_mdatp/manifests* under the
 ```bash
 pwd
 ```
+
 ```Output
 /etc/puppetlabs/code/environments/production/modules
 ```
@@ -86,6 +91,7 @@ pwd
 ```bash
 tree install_mdatp
 ```
+
 ```Output
 install_mdatp
 ├── files
@@ -185,6 +191,7 @@ Include the above manifest in your site.pp file:
 ```bash
 cat /etc/puppetlabs/code/environments/production/manifests/site.pp
 ```
+
 ```Output
 node "default" {
     include install_mdatp
@@ -200,6 +207,7 @@ On the agent device, you can also check the onboarding status by running:
 ```bash
 mdatp health
 ```
+
 ```Output
 ...
 licensed                                : true
