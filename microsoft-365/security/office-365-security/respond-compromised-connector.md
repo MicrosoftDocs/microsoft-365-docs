@@ -87,6 +87,8 @@ If you have [Microsoft Defender for Office 365 Plan 1](defender-for-office-365.m
 
 2. Select an activity under **Activity list**, and copy suspicious **connector domain** and **IP address** detected in the alert.
 
+:::image type="content" source="../../media/connector-compromise-outbound-email-details.png" alt-text="Connector compromise outbound email details" lightbox="../../media/connector-compromise-outbound-email-details.png":::
+
     > [!div class="mx-imgBorder"]
     > ![Alert details flyout.](../../media/connector-compromise-outbound-email-details.png)
     
