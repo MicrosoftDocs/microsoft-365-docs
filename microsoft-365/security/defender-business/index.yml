@@ -115,7 +115,7 @@ landingContent:
             url: mdb-reports.md
 
   # Card
-  - title: Manage security policies
+  - title: View or edit security policies
     linkLists:
       - linkListType: how-to-guide
         links:
