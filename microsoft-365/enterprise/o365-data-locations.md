@@ -2,7 +2,7 @@
 title: "Microsoft 365 data locations"
 ms.author: deanw
 author: dmwmsft
-manager: laurawi
+manager: scotv
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
