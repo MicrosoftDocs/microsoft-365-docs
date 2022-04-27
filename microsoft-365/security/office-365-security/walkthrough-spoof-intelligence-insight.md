@@ -48,7 +48,9 @@ You can manage spoof intelligence in the Microsoft 365 Defender portal, or in Po
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - You need to be assigned permissions in **Exchange Online** before you can do the procedures in this article:
-  - To modify the spoof intelligence policy or enable or disable spoof intelligence, you need to be a member of the **Organization Management** or **Security Administrator** role groups.
+  - To modify the spoof intelligence policy or enable or disable spoof intelligence, you need to be a member of 
+    -   **Organization Management**
+    -   **Security Administrator** <u>and</u> **View-Only Configuration** or **View-Only Organization Management**.
   - For read-only access to the spoof intelligence policy, you need to be a member of the **Global Reader** or **Security Reader** role groups.
 
   For more information, see [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
@@ -83,7 +85,7 @@ There are two ways to allow and block spoofed senders:
 
 2. On the **Anti-spam policies** page, select **Spoof intelligence policy** by clicking on the name.
 
-   ![Select the spoof intelligence policy.](../../media/anti-spam-settings-spoof-intelligence-policy.png)
+   :::image type="content" source="../../media/anti-spam-settings-spoof-intelligence-policy.png" alt-text="The option to select the spoof intelligence policy" lightbox="../../media/anti-spam-settings-spoof-intelligence-policy.png":::
 
 3. On the **Spoof intelligence policy** flyout that appears, make one of the following selections:
    - **Show me senders I already reviewed**
@@ -97,7 +99,7 @@ There are two ways to allow and block spoofed senders:
    - **Yes**: Allow the spoofed sender.
    - **No**: Mark the message as spoofed. The action is controlled by the default anti-phishing policy or custom anti-phishing policies. For more information, see [Spoof settings in anti-phishing policies](set-up-anti-phishing-policies.md#spoof-settings).
 
-   ![Screenshot showing the spoofed senders flyout, and whether the sender is allowed to spoof.](../../media/spoof-allow-block-flyout.png)
+   :::image type="content" source="../../media/spoof-allow-block-flyout.png" alt-text="The spoofed senders flyout, and whether the sender is allowed to spoof" lightbox="../../media/spoof-allow-block-flyout.png":::
 
    The columns and values that you see are explained in the following list:
 
@@ -192,7 +194,7 @@ For detailed syntax and parameter information, see [Set-PhishFilterPolicy](/powe
 
 3. The insight on the dashboard shows you information like this:
 
-   ![Screenshot of spoof intelligence insight.](../../media/28aeabac-c1a1-4d16-9fbe-14996f742a9a.png)
+   :::image type="content" source="../../media/28aeabac-c1a1-4d16-9fbe-14996f742a9a.png" alt-text="The spoof intelligence insight" lightbox="../../media/28aeabac-c1a1-4d16-9fbe-14996f742a9a.png":::
 
    This insight has two modes:
 
@@ -228,7 +230,7 @@ For detailed syntax and parameter information, see [Set-PhishFilterPolicy](/powe
 
    From here, you can also choose to add or remove the domain/sending infrastructure pair from the **Allowed to spoof** sender allow list. Simply set the toggle accordingly.
 
-   ![Screenshot of a domain in the Spoof intelligence insight details pane.](../../media/03ad3e6e-2010-4e8e-b92e-accc8bbebb79.png)
+   :::image type="content" source="../../media/03ad3e6e-2010-4e8e-b92e-accc8bbebb79.png" alt-text="A domain in the Spoof intelligence insight details pane" lightbox="../../media/03ad3e6e-2010-4e8e-b92e-accc8bbebb79.png":::
 
 ## How do you know these procedures worked?
 

@@ -44,7 +44,7 @@ For more information about billing accounts, see [Manage billing accounts](manag
 
 ### Microsoft Customer Agreement
 
-The Microsoft Customer Agreement (MCA) lets an organization buy Microsoft products and services. For more information, see [Microsoft Customer Agreement](https://www.microsoft.com/en-us/Licensing/how-to-buy/microsoft-customer-agreement).
+The Microsoft Customer Agreement (MCA) lets an organization buy Microsoft products and services. For more information, see [Microsoft Customer Agreement](https://www.microsoft.com/Licensing/how-to-buy/microsoft-customer-agreement).
 
 ## Permissions needed to sign an agreement or pay for items
 
@@ -61,7 +61,7 @@ If this is a new billing account, and no one has accepted an agreement, you auto
 
 The overall proposal workflow looks like this:
 
-- Your Microsoft representative creates a proposal and sends a link to you in an email.
+- Your Microsoft representative creates a proposal and sends a link to you in an email.
 - You use the link to go to the proposal sign-in page.
 - You review your organization's information.
 - You review the proposal, accept the MCA if needed, and finish the checkout process.
@@ -73,8 +73,8 @@ The overall proposal workflow looks like this:
 
 The following table contains terms and definitions that appear in your proposal and on the proposal site.
 
-| **Term** | **Definition** |
-|------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Term | Definition |
+|---|---|
 | Billing account | An account used to manage your account settings, invoices, payment methods, and products. |
 | Billing profile | Information about your organization that lets you customize what items are included on your invoice, and how you pay for your invoices. The billing profile includes the billing account name, the payment methods used for the specific billing profile, contact information, invoice settings, and permissions that let you change the billing profile, pay bills, and buy products and services. |
 | Existing agreements | Any agreement that your organization already has in place with Microsoft. This can include, but is not limited to, an Enterprise Agreement, Microsoft Product & Services Agreement, or Microsoft Customer Agreement. |
@@ -112,7 +112,7 @@ If you want to make any changes to the proposal after review, contact your Micro
 The proposal contains the following information:
 
 | Section | Description |
-|---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|---|---|
 | Organization name | The name of the organization for whom the proposal was prepared. |
 | Valid until date | The date at which the proposal offer expires. If you miss this expiration date, contact your Microsoft representative to let them know that you're still interested in the proposal. |
 | Currency | The currency used to calculate the cost of items in the proposal. |

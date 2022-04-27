@@ -145,6 +145,7 @@ These requirements must be met for proxy server and proxy site exceptions:
 
 - Must be a valid server address and port number.
 - URLs must be a valid http site.
+- Proxy exceptions should be limited to a maximum of 2064 characters. This includes added Microsoft Managed Desktop addresses.
 
 ### Customize and deploy proxies
 

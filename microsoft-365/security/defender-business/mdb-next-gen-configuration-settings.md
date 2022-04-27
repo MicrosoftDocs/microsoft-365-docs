@@ -7,10 +7,10 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 02/24/2022
+ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
@@ -20,24 +20,20 @@ ms.collection:
 
 # Understand next-generation configuration settings in Microsoft Defender for Business
 
-> [!IMPORTANT]
-> Microsoft Defender for Business is rolling out to [Microsoft 365 Business Premium](../../business-premium/index.md) customers, beginning March 1, 2022. Defender for Business as a standalone subscription is in in preview, and will roll out gradually to customers and IT Partners who [sign-up here](https://aka.ms/mdb-preview) to request it. Preview includes an [initial set of scenarios](mdb-tutorials.md#try-these-preview-scenarios), and we will be adding capabilities regularly.
-> 
-> Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. 
+> [!NOTE]
+> Microsoft Defender for Business is now included in [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
 Next-generation protection in Defender for Business includes robust antivirus and antimalware protection. Your default policies are designed to protect your devices and users without hindering productivity; however, you can also customize your policies to suit your business needs. And, if you're using Microsoft Endpoint Manager, you can use that to manage your security policies.
 
 **This article describes**:
 
 - [Next-generation protection settings and options](#next-generation-protection-settings-and-options)
-
 - [Other preconfigured settings in Defender for Business](#other-preconfigured-settings-in-defender-for-business) 
-
 - [Defender for Business default settings and Microsoft Endpoint Manager](#defender-for-business-default-settings-and-microsoft-endpoint-manager)
 
 ## Next-generation protection settings and options
 
-The following table lists your settings and options:<br/><br/>
+The following table lists your settings and options:
 
 | Setting | Description |
 |:---|:---|
@@ -53,7 +49,7 @@ The following table lists your settings and options:<br/><br/>
 | **Time of day to run a scheduled scan** | Select a time to run your regularly scheduled antivirus scans to run. |
 | **Use low performance** | This setting is turned off by default. *We recommend keeping this setting turned off.* However, you can turn this setting on to limit the device memory and resources that are used during scheduled scans. <br/><br/>**IMPORTANT** If you turn **Use low performance** on, it configures the following settings for Microsoft Defender Antivirus: <br/>- Archive files aren't scanned ([AllowArchiveScanning](/windows/client-management/mdm/policy-csp-defender#defender-allowarchivescanning))<br/>- Scans are assigned a low CPU priority ([EnableLowCPUPriority](/windows/client-management/mdm/policy-csp-defender#defender-enablelowcpupriority)) <br/>- If a full antivirus scan is missed, no catch-up scan will run ([DisableCatchupFullScan](/windows/client-management/mdm/policy-csp-defender#defender-disablecatchupfullscan)) <br/>- If a quick antivirus scan is missed, no catch-up scan will run ([DisableCatchupQuickScan](/windows/client-management/mdm/policy-csp-defender#defender-disablecatchupquickscan)) <br/>- Reduces the average CPU load factor during an antivirus scan from 50% to 20% ([AvgCPULoadFactor](/windows/client-management/mdm/policy-csp-defender#defender-avgcpuloadfactor)) |
 | **User experience**   |  |
-| **Allow users to access the Windows Security app** | Turn this setting on to enable users to open the Windows Security app on their devices. Users won’t be able to override settings that you configure in Microsoft Defender for Business, but they'll be able to run a quick scan if need be, or view any detected threats. |
+| **Allow users to access the Windows Security app** | Turn this setting on to enable users to open the Windows Security app on their devices. Users won't be able to override settings that you configure in Microsoft Defender for Business, but they'll be able to run a quick scan if need be, or view any detected threats. |
 | **Antivirus exclusions** | Exclusions are processes, files, or folders that are skipped by Microsoft Defender Antivirus scans. *In general, you shouldn't need to define exclusions.* Microsoft Defender Antivirus includes many automatic exclusions that are based on known operating system behaviors and typical management files.<br/><br/>[Learn more about exclusions](../defender-endpoint/configure-exclusions-microsoft-defender-antivirus.md) |
 | **Process exclusions** | Process exclusions prevent files that are opened by specific processes from being scanned by Microsoft Defender Antivirus. <br/><br/>[Learn more about process exclusions](../defender-endpoint/configure-process-opened-file-exclusions-microsoft-defender-antivirus.md) |
 | **File extension exclusions** | File extension exclusions prevent files with specific extensions from being scanned by Microsoft Defender Antivirus.<br/><br/>[Learn more about file extension exclusions](../defender-endpoint/configure-extension-file-exclusions-microsoft-defender-antivirus.md) |
@@ -64,17 +60,13 @@ The following table lists your settings and options:<br/><br/>
 The following security settings are preconfigured in Defender for Business:
 
 - Scanning of removable drives is turned on ([AllowFullScanRemovableDriveScanning](/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning))
-
 - Daily quick scans don't have a preset time ([ScheduleQuickScanTime](/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime))
-
 - Security intelligence updates are checked before an antivirus scan runs ([CheckForSignaturesBeforeRunningScan](/windows/client-management/mdm/policy-csp-defender#defender-checkforsignaturesbeforerunningscan))
-
 - Security intelligence checks occur every four hours ([SignatureUpdateInterval](/windows/client-management/mdm/policy-csp-defender#defender-signatureupdateinterval))
 
 ## Defender for Business default settings and Microsoft Endpoint Manager
 
 The following table describes settings that are preconfigured for Defender for Business and how those settings correspond to what you might see in Microsoft Endpoint Manager (or Microsoft Intune). If you're using the [simplified configuration process in Defender for Business](mdb-simplified-configuration.md) (preview), you don't need to edit these settings.
-<br/><br/>
 
 | Setting  | Description  |
 |---------|---------|
@@ -83,7 +75,7 @@ The following table describes settings that are preconfigured for Defender for B
 | [Scan network files](/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles) | By default, [AllowScanningNetworkFiles](/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles) isn't enabled, and network files aren't scanned. |
 | [Scan email messages](/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning) | By default, [AllowEmailScanning](/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning) isn't enabled, and email messages aren't scanned. |
 | [Number of days (0-90) to keep quarantined malware](/windows/client-management/mdm/policy-csp-defender#defender-daystoretaincleanedmalware) | By default, [DaysToRetainCleanedMalware](/windows/client-management/mdm/policy-csp-defender#defender-daystoretaincleanedmalware) this setting is set to zero (0) days. Artifacts that in quarantine aren't removed automatically.  |
-| [Submit samples consent](/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) | By default, [SubmitSamplesConsent](/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) is et to send safe samples automatically. Examples of safe samples include `.bat`, `.scr`, `.dll`, and `.exe` files that don't contain personally identifiable information (PII). If a file does contain PII, the user receives a request to allow the sample submission to proceed.<br/><br/>[Learn more about cloud protection and sample submission](../defender-endpoint/cloud-protection-microsoft-antivirus-sample-submission.md) |
+| [Submit samples consent](/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) | By default, [SubmitSamplesConsent](/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) is set to send safe samples automatically. Examples of safe samples include `.bat`, `.scr`, `.dll`, and `.exe` files that don't contain personally identifiable information (PII). If a file does contain PII, the user receives a request to allow the sample submission to proceed.<br/><br/>[Learn more about cloud protection and sample submission](../defender-endpoint/cloud-protection-microsoft-antivirus-sample-submission.md) |
 | [Scan removable drives](/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning) | By default, [AllowFullScanRemovableDriveScanning](/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning) is configured to scanning removable drives, such as USB thumb drives on devices.<br/><br/>[Learn more about antimalware policy settings](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#list-of-antimalware-policy-settings)   |
 | [Run daily quick scan time](/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime) | By default, [ScheduleQuickScanTime](/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime) is set to 2:00 AM.<br/><br/>[Learn more about scan settings](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings).   |
 | [Check for signature updates before running scan](/windows/client-management/mdm/policy-csp-defender#defender-checkforsignaturesbeforerunningscan) | By default, [CheckForSignaturesBeforeRunningScan](/windows/client-management/mdm/policy-csp-defender#defender-checkforsignaturesbeforerunningscan) is configured to check for security intelligence updates prior to running antivirus/antimalware scans.<br/><br/>[Learn more about scan settings](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings) and [Security intelligence updates](../defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus.md#security-intelligence-updates).   |
@@ -93,16 +85,12 @@ The following table describes settings that are preconfigured for Defender for B
 ## Next steps
 
 - [View and manage incidents in Microsoft Defender for Business](mdb-view-manage-incidents.md)
-
 - [Respond to and mitigate threats in Microsoft Defender for Business](mdb-respond-mitigate-threats.md)
-
 - [Review remediation actions in the Action center](mdb-review-remediation-actions.md)
 
 
 ## See also
 
 - [Visit the Microsoft 365 Defender portal](mdb-get-started.md)
-
 - [Manage firewall settings in Microsoft Defender for Business](mdb-custom-rules-firewall.md)
-
 - [Policy CSP - Defender](/windows/client-management/mdm/policy-csp-defender)

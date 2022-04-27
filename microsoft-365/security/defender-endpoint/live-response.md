@@ -24,7 +24,6 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 Live response gives security operations teams instantaneous access to a device (also referred to as a machine) using a remote shell connection. This gives you the power to do in-depth investigative work and take immediate response actions to promptly contain identified threats in real time.
@@ -56,25 +55,22 @@ Before you can initiate a session on a device, make sure you fulfill the followi
     - [Version 1803 (RS 4)](/windows/whats-new/whats-new-windows-10-version-1803) with [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
     - [Version 1709 (RS 3)](/windows/whats-new/whats-new-windows-10-version-1709) with [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
 
-  - **macOS** - Only applicable for Public Preview, minimum required version: 101.43.84 
-  
+  - **macOS** - Only applicable for Public Preview, minimum required version: 101.43.84
+
    > [!NOTE]
    > Currently only Intel-based macOS systems are supported.
-    
 
-  - **Linux** - Only applicable for Public Preview, minimum required version: 101.45.13 
-    
+  - **Linux** - Only applicable for Public Preview, minimum required version: 101.45.13
+
   - **Windows Server 2012 R2** - with [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)
-  
+
   - **Windows Server 2016** - with [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)
 
   - **Windows Server 2019**
     - Version 1903 or (with [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)) later
     - Version 1809 (with [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818))
-    
-  - **Windows Server 2022**
 
-       
+  - **Windows Server 2022**
 
 - **Enable live response from the advanced settings page**.
 
@@ -82,7 +78,7 @@ Before you can initiate a session on a device, make sure you fulfill the followi
 
   > [!NOTE]
   > Only users with manage security or global admin roles can edit these settings.
-  > 
+  >
   > Automated Investigation must be enabled in the [Advanced features settings](advanced-features.md) prior to enabling live response.
 
 - **Enable live response for servers from the advanced settings page** (recommended).
@@ -96,12 +92,12 @@ Before you can initiate a session on a device, make sure you fulfill the followi
 
   You'll receive the following error:
 
-  ![Image of error message.](images/live-response-error.png)
+  :::image type="content" source="images/live-response-error.png" alt-text="The error message" lightbox="images/live-response-error.png":::
 
 - **Enable live response unsigned script execution** (optional).
 
   >[!IMPORTANT]
-  >Signature verification only applies for PowerShell scripts. 
+  >Signature verification only applies for PowerShell scripts.
 
   > [!WARNING]
   > Allowing the use of unsigned scripts may increase your exposure to threats.
@@ -156,9 +152,6 @@ Depending on the role that's been granted to you, you can run basic or advanced 
 
 The following commands are available for user roles that are granted the ability to run **basic** live response commands. For more information on role assignments, see [Create and manage roles](user-roles.md).
 
-<br>
-
-****
 | Command  | Description  | Windows and Windows Server  | macOS  | Linux  |
 |---|---|---|---|---|
 | cd  | Changes the current directory.  | Y  | Y  | Y  |
@@ -186,10 +179,6 @@ The following commands are available for user roles that are granted the ability
 
 The following commands are available for user roles that are granted the ability to run **advanced** live response commands. For more information on role assignments, see [Create and manage roles](user-roles.md).
 
-<br>
-
-****
-
 | Command  | Description  | Windows and Windows Server  | macOS  | Linux  |
 |---|---|---|---|---|
 | analyze  | Analyses the entity with various incrimination engines to reach a verdict.  | Y  | N  | N  |
@@ -199,10 +188,9 @@ The following commands are available for user roles that are granted the ability
 | run  | Runs a PowerShell script from the library on the device.  | Y  | Y  | Y  |
 | library  | Lists files that were uploaded to the live response library.  | Y  | Y  | Y  |
 | putfile  | Puts a file from the library to the device. Files are saved in a working folder and are deleted when the device restarts by default.  | Y  | Y  | Y  |
-| remediate  | Remediates an entity on the device. The remediation action will vary depending on the entity type:  File: delete  Process: stop, delete image file  Service: stop, delete image file  Registry entry: delete  Scheduled task: remove  Startup folder item: delete file  NOTE: This command has a prerequisite command. You can use the -auto command in conjunction with remediate to automatically run the prerequisite command.  | Y  | Y  | Y  |
+| remediate  | Remediates an entity on the device. The remediation action will vary depending on the entity type:  File: delete  Process: stop, delete image file  Service: stop, delete image file  Registry entry: delete  Scheduled task: remove  Startup folder item: delete file  NOTE: This command has a prerequisite command. You can use the -auto command in conjunction with remediate to automatically run the prerequisite command.  | Y  | Y  | Y  |
 | scan | Runs an antivirus scan to help identify and remediate malware. | N | Y | Y |
 | undo  | Restores an entity that was remediated.  | Y  | Y  | Y  |
-
 
 ## Use live response commands
 

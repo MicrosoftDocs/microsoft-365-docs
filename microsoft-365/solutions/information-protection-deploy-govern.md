@@ -63,7 +63,7 @@ Regardless of the legal and business reasons for keeping personal information ar
 
 ## Managing information governance in Microsoft 365
 
-To begin, see [Manage information governance](../compliance/manage-information-governance.md) and [Data Retention, Deletion and Destruction in Microsoft 365](/office365/Enterprise/office-365-data-retention-deletion-and-destruction-overview).
+To begin, see [Govern your data with Microsoft Purview](../compliance/manage-data-governance.md) and [Data Retention, Deletion and Destruction in Microsoft 365](/office365/Enterprise/office-365-data-retention-deletion-and-destruction-overview).
 
 ### Develop data retention schedules for containers, email, and content
 

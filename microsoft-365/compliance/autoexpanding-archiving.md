@@ -21,6 +21,8 @@ description: "Learn about auto-expanding archiving, which provides additional ar
 
 # Learn about auto-expanding archiving
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 In Office 365, archive mailboxes provide users with additional mailbox storage space. After a user's archive mailbox is enabled, up to 100 GB of additional storage is available. In the past, when the 100-GB storage quota was reached, organizations had to contact Microsoft to request additional storage space for an archive mailbox. That's no longer the case.
 
 The archiving feature in Microsoft 365 (called *auto-expanding archiving*) provides up to 1.5 TB of additional storage in archive mailboxes. When the storage quota in the archive mailbox is reached, Microsoft 365 automatically (and incrementally) increases the size of the archive until the archive mailbox reaches 1.5 TB.
@@ -75,6 +77,10 @@ The following screenshots show a folder list before and after messages are moved
 
 To access messages that are stored in an auto-expanded archive, users have to use one of the following Outlook clients:
 
+- Outlook as a part of Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus)
+
+- Outlook as a part of Microsoft 365 Apps for business (previously named Office 365 Business)
+
 - Outlook 2016 or Outlook 2019 for Windows
 
 - Outlook on the web
@@ -101,7 +107,7 @@ This section explains the functionality between auto-expanding archiving and oth
 
 - **eDiscovery:** When you use an eDiscovery tool, such as Content Search or In-Place eDiscovery, the additional storage areas in an auto-expanded archive are also searched.
 
-- **Retention:** When you put a mailbox on hold by using tools such as Litigation Hold in Exchange Online or eDiscovery case holds and retention policies in the security and compliance center, content located in an auto-expanded archive is also placed on hold.
+- **Retention:** When you put a mailbox on hold by using tools such as Litigation Hold in Exchange Online or eDiscovery case holds and retention policies in the Microsoft Purview compliance portal, content located in an auto-expanded archive is also placed on hold.
 
 - **Messaging records management (MRM):** If you use MRM deletion policies in Exchange Online to permanently delete expired mailbox items, expired items located in the auto-expanded archive will also be deleted.
 
