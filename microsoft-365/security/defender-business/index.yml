@@ -133,7 +133,7 @@ landingContent:
             url: mdb-firewall.md
 
   # Card
-  - title: Monitor devices
+  - title: Monitor or manage devices
     linkLists:
       - linkListType: how-to-guide
         links:
