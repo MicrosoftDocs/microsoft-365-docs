@@ -41,4 +41,4 @@ If you run into the following issues while using group bookings, follow the step
 
 - Editing of a group booking service from the Teams app or from the mobile app resets attendees **to**, use the Bookings web app to edit the group booking service.
 
-- Bookings doesn't support resource bookings at this time. To workaround this, create a resource as a staff member and assign it to a servce.
+- Bookings doesn't support resource bookings at this time. To workaround this, create a resource as a staff member and assign it to a service.
