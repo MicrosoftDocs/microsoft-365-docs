@@ -51,7 +51,7 @@
         href: mdb-review-remediation-actions.md
       - name: View and use reports
         href: mdb-reports.md
-    - name: Manage security policies
+    - name: View or edit security policies
       items:
       - name: View, edit, and create policies
         href: mdb-view-edit-create-policies.md
@@ -63,7 +63,7 @@
         href: mdb-firewall.md
       - name: Manage rules for firewall policies
         href: mdb-custom-rules-firewall.md
-    - name: Manage devices
+    - name: Monitor or manage devices
       items: 
       - name: View and manage devices
         href: mdb-manage-devices.md
