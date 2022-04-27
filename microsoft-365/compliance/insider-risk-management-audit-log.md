@@ -1,7 +1,7 @@
 ---
 title: Insider risk management audit log
-description: Learn about the insider risk management audit log in Microsoft 365
-keywords: Microsoft 365, insider risk management, risk management, compliance
+description: Learn about the insider risk management audit log in Microsoft Purview
+keywords: Microsoft 365, Microsoft Purview, insider risk, risk management, compliance
 ms.localizationpriority: medium
 ms.service: O365-seccomp
 ms.topic: article
@@ -15,6 +15,8 @@ ms.collection: m365-security-compliance
 ---
 
 # Insider risk management audit log
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 The insider risk management audit log enables you to stay informed on the actions that were taken on insider risk management features. This log allows independent review of the actions taken by users assigned to one or more insider risk management role groups. The insider risk management audit log is automatically enabled in your organization and cannot be disabled.
 
@@ -68,7 +70,7 @@ The file contains activity information for the following fields:
 - **Category:** The category of the item modified. Values are *Policies, Cases, Users, Alerts, Settings,* and *Notice templates.*
 - **Date:** Date and time, listed in your organization's local date and time.
 - **Description**: The description input by the user for the object being acted on (such as a policy or a priority user group).
-- **DLP policy**: The data loss prevention (DLP) policy selected to trigger inclusion in an insider risk management policy.
+- **DLP policy**: The Microsoft Purview Data Loss Prevention (DLP) policy selected to trigger inclusion in an insider risk management policy.
 - **Indicator**: The indicator in the within insider risk settings that the activity was performed on (such as adding or removing an indicator).
 - **Notice template**: The notice template the activity was performed on.
 - **Number of days**: The policy activation window defined in insider risk settings.

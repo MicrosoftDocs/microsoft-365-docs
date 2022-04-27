@@ -163,7 +163,7 @@
        - name: Payload automations in Attack simulation training
          href: attack-simulation-training-payload-automations.md
        - name: End-user notifications for Attack simulation training
-         href: attack-simulation-traning-end-user-notifications.md
+         href: attack-simulation-training-end-user-notifications.md
        - name: Insights and reporting in Attack simulation training
          href: attack-simulation-training-insights.md
        - name: Attack simulation training deployment considerations and FAQ

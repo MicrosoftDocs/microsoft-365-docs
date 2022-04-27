@@ -2,7 +2,7 @@
 title: "Disable access to Microsoft 365 services with PowerShell"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 07/27/2020
 audience: Admin
 ms.topic: article
@@ -113,7 +113,7 @@ User      Success            efb87545-963c-4e0d-99df-69c6916d9eb0 EXCHANGE_S_ENT
 
 For a complete list of license plans (also known as product names), their included service plans, and their corresponding friendly names, see [Product names and service plan identifiers for licensing](/azure/active-directory/users-groups-roles/licensing-service-plan-reference). (Search using the ServicePlanId to lookup service plan's corresponding friendly name).
 
-The following example assigns **SPE_E5** (Microsoft 365 E5) with the **MICROSOFTBOOKINGS** (Microsoft Bookings) and **LOCKBOX_ENTERPRISE** (Customer LockBox) services turned off:
+The following example assigns **SPE_E5** (Microsoft 365 E5) with the **MICROSOFTBOOKINGS** (Microsoft Bookings) and **LOCKBOX_ENTERPRISE** (Customer Lockbox) services turned off:
   
 ```powershell
 $e5Sku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'SPE_E5'
