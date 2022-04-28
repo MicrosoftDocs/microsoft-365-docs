@@ -74,7 +74,7 @@
     - name: Reference information
       items: 
       - name: API reference information
-        href: /microsoft-365/security/defender-endpoint/exposed-apis-create-app-partners.md?toc=/microsoft-365/security/defender-business/toc.json&bc=/microsoft-365/security/defender-business/toc.json
+        href: /microsoft-365/security/defender-endpoint/exposed-apis-create-app-partners
       - name: How to get help or contact support
         href: mdb-get-help.md
       - name: Frequently asked questions
