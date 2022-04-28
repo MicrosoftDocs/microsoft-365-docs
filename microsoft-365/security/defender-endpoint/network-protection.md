@@ -151,7 +151,9 @@ Microsoft Defender’s command and control detection is not limited to CobaltStr
 
 Blocking command-and-control communication can severely impede a targeted attack, giving defenders time to find the initial entry vectors and close them down before another attempted attack.
 
-For additional details about Microsoft Defender's command and control detection, see: **ADD LINK TO BLOG**
+<!-- Hide {this intro with no subsequent list items}
+[For additional details about Microsoft Defender's command and control detection, see: **ADD LINK TO BLOG**]
+-->
 
 ## Smart Screen Unblock
 
