@@ -28,7 +28,7 @@ A proposal is a formal offer from Microsoft for your organization to buy Microso
 
 A Microsoft representative drafts a proposal that contains the items that you and your representative discussed. The representative sends you an email that has a link to the Azure marketplace portal. The site contains the proposal prepared specifically for you and your organization.
 
-After you receive the notification email, follow the link to the proposal site. After you sign into the site, you can start the proposal review process.
+After you receive the notification email, follow the link to the proposal site. After you sign in to the site, you can start the proposal review process.
 
 ## Prerequisites for buying items with a proposal
 
@@ -70,7 +70,8 @@ For more information about billing account roles, see [Understand access to bill
 
 If this is a new billing account, and no one has accepted an agreement, you automatically become the billing account owner, provided you:
 
-- Are the person named in the proposal, **or**
+- Are the person named in the proposal
+  **or**
 - Are already an [Azure Active Directory global admin](/azure/active-directory/roles/permissions-reference#global-administrator) for your organization
 
 ## What is the overall workflow?
