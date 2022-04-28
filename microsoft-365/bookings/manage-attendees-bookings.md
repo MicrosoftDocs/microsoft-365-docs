@@ -33,8 +33,6 @@ Make sure that you set the **Maximum number of attendees** to more than 1 on the
 
 4. To remove attendees, select the user you want to remove from the group booking and select **Remove customer**. Once you remove the attendee, they'll get an email letting them know that they've been removed from this booking.
 
-:::image type="content" source="../media/group-booking-cancel.png" alt-text="Screenshot: Group booking cancellation":::
-
 ## Troubleshooting
 
 If you run into the following issues while using group bookings, follow the steps below.
