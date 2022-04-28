@@ -59,7 +59,7 @@ Network protection requires Windows 10 Pro or Enterprise, and Microsoft Defender
 >
 > Information about the features that are commercially available follows the Public Preview information.
 
-Network protection is a part of the attack surface reduction group of solutions in Microsoft Defender for Endpoint. Network protection enables layer 3 (network layer) blocking of URLs and IPs. This means network protection can block URLs being access from 3rd-party browsers, as well as standard network connections.
+Network protection is a part of the attack surface reduction group of solutions in Microsoft Defender for Endpoint. Network protection enables layer 3 (network layer) blocking of URLs and IPs. This means network protection can block URLs being accessed from 3rd-party browsers, as well as standard network connections.
 
 By default, network protection guards your computers from known malicious URLs using the Smart Screen feed, which blocks malicious URLs in a manner similar to SmartScreen in Edge browser. The network protection functionality can be extended to:
 
@@ -84,21 +84,22 @@ C2 servers can be used to initiate commands that can:
 
 The Network Protection component of Microsoft Defender for Endpoint identifies and blocks connections to C2 infrastructures used in human-operated ransomware attacks, using techniques like machine learning and intelligent indicator-of-compromise (IoC) identification.
 
-#### Block C2 attack types
+#### Network protection: New toast notifications
 
 | New mapping  | Response category  | Sources   | Overridable?   |
-| :--- | :--- | :--- | :--- |
-| phishing | Phishing | SmartScreen |   |
-| malicious | Malicious | SmartScreen |   |
-| command and control | C2 | SmartScreen |   |
-| command and control | COCO | SmartScreen |   |
-| malicious | Untrusted | SmartScreen |   |
-| by your IT admin | CustomBlockList |   |   |
-| by your IT admin | CustomPolicy |   |   |
-| by your IT admin | CustomPolicy |   |   |
-|   | customAllowList |   |   |
+| :--- | :--- | :--- |
+| phishing | Phishing | SmartScreen |
+| malicious | Malicious | SmartScreen |
+| command and control | C2 | SmartScreen |
+| command and control | COCO | SmartScreen |
+| malicious | Untrusted | SmartScreen |
+| by your IT admin | CustomBlockList |   |
+| by your IT admin | CustomPolicy |   |
 
-### C2 phishing and endpoint user toast notifications
+> [!NOTE]
+> **customeAllowList** does not generate notifications on endpoints"
+
+### New notifications for network protection determination
 
 A new, publicly-available capability in network protection utilizes functions in SmartScreen to block phishing activities from malicious command and control sites.
 
@@ -106,7 +107,7 @@ When an end user attempts to visit a website in an environment in which network 
 
 - The URL has a known good reputation. In this case the user is permitted access without obstruction, and there is no toast notification presented on the endpoint. {The domain or URL is set to _Allowed_}
 - The URL has an unknown or uncertain reputation. The user's access is blocked, but with the ability to circumvent (unblock) the block. {The domain or url is set to _Audit_}
-- The URL has a know bad (malicious) reputation. The user is prevented access. {the domain or url is set to _Block_}
+- The URL has a known bad (malicious) reputation. The user is prevented from access. {the domain or url is set to _Block_}
 
 #### Warn experience
 
@@ -134,13 +135,13 @@ A user visits a website:
   > [!div class="mx-imgBorder"]
   > ![ Shows a network protection phishing blocked notification](images/network-protection-phishing-blocked.png)
 
-### C2 ransomware (public preview)
+### Network protection: C2 detection and remediation (private preview)
 
 In its initial form, ransomware is a commodity threat, pre-programmed and focused on limited, specific outcomes (for example, encrypting a computer). However, ransomware has evolved into a sophisticated threat that is human driven, adaptive, and focused on larger scale and more widespread outcomes; like holding an entire organization’s assets or data for ransom.
 
 Support for Command and Control (C2) is a key part of this ransomware evolution and is what enables these attacks to adapt to the environment they target. Breaking the link to the command-and-control infrastructure means stopping the progression of an attack to its next stage.
 
-#### Detecting CobaltStrike (public preview)
+#### Detecting and remediating CobaltStrike (public preview)
 
 One of the most common post-exploitation frameworks used in human-operated ransomware attacks is CobaltStrike. Threat Intelligence teams across Microsoft track Tactics, Techniques, and Procedures (TTPs) on multiple activity groups that deploy ransomware to identify patterns of behavior which can be used to defend against specific strategies and threat vectors used by malicious actors.  These ransomware activity groups all, at some point in the attack life cycle, involve deploying a CobaltStrike Beacon to a victim’s computer to enable hands-on keyboard activity.
 
