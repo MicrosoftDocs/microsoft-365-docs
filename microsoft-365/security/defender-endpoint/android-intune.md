@@ -269,7 +269,7 @@ With Microsoft defender support in Android personal profiles, user devices can b
 
 **Set up Microsoft Defender in Personal Profile**
 
-Admins can go to the [Microsoft Endpoint Management admin center](endpoint.microsoft.com) to set up and configure Microsoft Defender support in personal profiles by following these steps:
+Admins can go to the [Microsoft Endpoint Management admin center](https://endpoint.microsoft.com) to set up and configure Microsoft Defender support in personal profiles by following these steps:
 1. Go to **Apps> App configuration policies** and click on **Add**. Select **Managed Devices**.
 
     > [!div class="mx-imgBorder"]
@@ -295,7 +295,7 @@ Admins can go to the [Microsoft Endpoint Management admin center](endpoint.micro
     > [!div class="mx-imgBorder"]
     > ![Image of reviewing and creating policy.](images/savepolicy.png)
 
-Admind can also setup **privacy controls** from the Microsoft Endpoint Manager admin center to control what data can be sent by the Defender mobile client to the security portal. For more information, see [configuring privacy controls](https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/android-configure?view=o365-worldwide#privacy-controls).
+Admind can also setup **privacy controls** from the Microsoft Endpoint Manager admin center to control what data can be sent by the Defender mobile client to the security portal. For more information, see [configuring privacy controls](android-configure.md).
 
 Organizations can communicate to their users to protect Personal profile with Microsoft Defender on their enrolled BYOD devices.
 - Pre-requisite: Microsoft Defender must be already installed and active in work profile to enabled Microsoft Defender in personal profiles.
