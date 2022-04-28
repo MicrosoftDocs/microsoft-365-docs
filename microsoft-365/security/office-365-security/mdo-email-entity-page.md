@@ -120,7 +120,7 @@ Users will see enriched detonation details for known malicious attachments or UR
 
 - *Forwarding*: For scenarios with autoforwaridng, it indicates the forwarding user as well as the forwarding type like ETR or SMTP forwarding. 
 
-- *Distribution list*: Shows the distribution list, if the recipient receieved the email as a member of the list. It shows the top level distribution list if there are nested distribution lists involved.  
+- *Distribution list*: Shows the distribution list, if the recipient received the email as a member of the list. It shows the top level distribution list if there are nested distribution lists involved.  
 
 - *To, Cc*: Indicates the addresses which are listed in To, Cc fields of an email. The information in these fields is restricted to 5000 characters. 
 
