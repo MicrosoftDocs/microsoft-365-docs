@@ -86,7 +86,7 @@ The Network Protection component of Microsoft Defender for Endpoint identifies a
 
 #### Network protection: New toast notifications
 
-| New mapping  | Response category  | Sources   | Overridable?   |
+| New mapping  | Response category  | Sources |
 | :--- | :--- | :--- |
 | phishing | Phishing | SmartScreen |
 | malicious | Malicious | SmartScreen |
