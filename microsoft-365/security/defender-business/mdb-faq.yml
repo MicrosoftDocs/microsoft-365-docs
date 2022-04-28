@@ -54,7 +54,7 @@ sections:
 
       - question: Does Defender for Business support servers? 
         answer: |
-          Server support is coming soon. It will require an add-on server SKU and a prerequisite of either Microsoft 365 Business Premium or Microsoft Defender for Business (standalone).  
+          Server support is coming soon. It will require an add-on server license and a prerequisite of either Microsoft 365 Business Premium or Microsoft Defender for Business (standalone).  
 
       - question: Does Defender for Business protect macOS, Android, and iOS/iPadOS client devices?
         answer: |
