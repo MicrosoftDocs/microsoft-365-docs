@@ -1,5 +1,5 @@
 ---
-title: "Enable co-authoring for documents encrypted by sensitivity labels in Microsoft 365"
+title: "Enable co-authoring for encrypted documents"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -16,6 +16,8 @@ description: "Turn on a setting that enables co-authoring and AutoSave in deskto
 ---
 
 # Enable co-authoring for files encrypted with sensitivity labels
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
@@ -69,7 +71,7 @@ Make sure you understand the following prerequisites before you turn on this fea
 - Sensitivity labels must be [enabled for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) for the tenant. If this feature isn't already enabled, it will be automatically enabled when you select the setting to turn on co-authoring for files with sensitivity labels.
 
 - Microsoft 365 Apps for enterprise:
-    - **Windows**: Minimum version 2107 from Current Channel or Monthly Enterprise Channel, or minimum version 2202 from Semi-Annual Enterprise Channel
+    - **Windows**: Minimum version 2107 from Current Channel or Monthly Enterprise Channel, or minimum version 2202 from Semi-Annual Enterprise Channel (Preview)
     - **macOS**: Minimum version 16.51
     - **iOS**: Now in preview when you [opt in](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) with minimum version 2.58
     - **Android**: Now in preview when you [opt in](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) with minimum version 16.0.14931
@@ -131,7 +133,7 @@ Before you enable the tenant setting for co-authoring for files encrypted with s
 
 If you've already turned on this setting during the preview period, no further action is needed and you can skip this procedure.
 
-1. Sign in to the [Microsoft 365 compliance center](https://compliance.microsoft.com) as a global admin for your tenant.
+1. Sign in to the [Microsoft Purview compliance portal](https://compliance.microsoft.com) as a global admin for your tenant.
 
 2. From the navigation pane, select **Settings** > **Co-authoring for files with sensitivity files**.
 

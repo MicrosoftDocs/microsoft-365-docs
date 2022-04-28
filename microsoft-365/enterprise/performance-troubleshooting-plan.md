@@ -2,7 +2,7 @@
 title: "Performance troubleshooting plan for Office 365"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 5/10/2019
 audience: Admin
 ms.topic: conceptual

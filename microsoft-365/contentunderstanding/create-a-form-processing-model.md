@@ -165,7 +165,7 @@ To run the flow:
 
     ![Screenshot showing the Create a flow panel and flow option highlighted.](../media/content-understanding/integrate-create-flow.png) 
 
-## See Also
+## See also
   
 [Power Automate documentation](/power-automate/)
 

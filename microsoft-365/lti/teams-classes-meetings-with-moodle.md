@@ -16,6 +16,11 @@ description: Create and manage Teams classes and meetings with Microsoft OneDriv
 
 # Integrate Microsoft Teams classes and meetings within Moodle
 
+> [!NOTE]
+> Currently, Moodle and Microsoft Teams LTI integrations are only available in private preview.
+>
+>If you'd like to participate in the private preview program, [sign up here](https://m365crmedu.powerappsportals.com/LMSSignup/).
+
 This guide provides the IT admin steps for registering both Teams Classes and Teams Meetings LTI apps on Moodle.
 
 For details on managing all OneLTI tools for any LMS, see [Manage Microsoft OneLTI for any LMS](manage-microsoft-one-lti.md).
@@ -26,7 +31,7 @@ For the integration between Moodle and Teams to function correctly, Moodle and T
 
 Follow the [instructions for installing and configuring the Moodle plugin](moodle-plugin-configuration.md).
 
-## Register Microsoft OneLTI tools for use in Moodle
+## Register Microsoft Teams LTI for use in Moodle
 
 > [!IMPORTANT]
 > The person who performs this integration should be a Moodle administrator and a Microsoft 365 tenant administrator.
