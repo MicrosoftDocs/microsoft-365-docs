@@ -52,22 +52,25 @@ On the All Cloud PCs tab, the colored count-annotation bar displays the total nu
 You can view all Cloud PCs and their provisioning status in the list below the annotation bar. The following information is provided:
 
 - **Cloud PC name:** Name assigned to the Cloud PC.
-- **Tenant:** Customer tenant in which a Cloud PC was provisioned.
-- **Device name:** Intune device name—a unique identifier for a Cloud PC.
-- **PC type:** Type of Cloud PC according to standard SKUs.
-- **Status:** Provisioning status of the Cloud PC.
 - **User:** User for whom a Cloud PC has been provisioned or attempted to be provisioned.
+- **Device name:** Intune device name—a unique identifier for a Cloud PC.
+- **Tenant:** Customer tenant in which a Cloud PC was provisioned.
+- **Status:** Provisioning status of the Cloud PC.
+- **License type:** Enterprise or Business.
+- **Specifications:** Cloud PC hardware configuration.
 
 To see which tenants have Cloud PCs with a specific provisioning status, select that status from the count-annotation bar to filter the list. To see Cloud PC provisioning statuses for one or more specific customer tenants, use the **Tenants** dropdown menu to filter the list.
 
-Select any Cloud PC in the list to view more details. If you need to take action on the Cloud PC, there are options to view tenant provisioning policies and device details in Microsoft Endpoint Manager.
+Select any Cloud PC in the list to view more details and execute management actions such as:
+- **Restart:** Select to reboot the device. 
+- **Reprovision:** Select to reset the device. You can also view the provisioning policy in the Microsoft Endpoint Manager link.
+- **Rename:** Select to rename the device assigned to a user.
 
 The All Cloud PCs tab also includes the following options:
 
-- **Refresh:** Select to retrieve the most current Cloud PC data.
 - **Export:** Select to export Cloud PC data to an Excel comma-separated values (.csv) file.
+- **Refresh:** Select to retrieve the most current Cloud PC data.
 - **Search:** Enter keywords to quickly locate a specific Cloud PC in the list.
-- **Retry provisioning:** Select 1 to 20 Cloud PCs from the list that have a status of **Provisioning failed**, and then select this option to retry provisioning for those Cloud PCs.
 
 To see a complete list of Cloud PC provisioning statuses and what they mean, see [Device management overview for Cloud PCs](/windows-365/enterprise/device-management-overview#column-details) in the Windows 365 documentation library.
 
@@ -75,7 +78,7 @@ To see a complete list of Cloud PC provisioning statuses and what they mean, see
 
 ## Azure network connections tab
 
-On the Azure network connections tab, the colored count-annotation bar displays the total number of Azure network connections across all your customer tenants that have the following statuses: Successful connections and Failed connections.
+On the Azure network connections tab, the colored count-annotation bar displays the total number of Azure network connections across all your customer tenants that have Windows 365 Enterprise Cloud PCs and may have the following statuses: Successful connections and Failed connections.
 
 In the list below the count-annotation bar, you can view all Azure network connections and their connection status.
 
@@ -85,8 +88,8 @@ If you need to take action or troubleshoot a connection in the list, select **Vi
 
 The Azure network connections tab also includes the following options:
 
-- **Refresh:** Select to retrieve the most current connection data.
 - **Export:** Select to export connection data to an Excel comma-separated values (.csv) file.
+- **Refresh:** Select to retrieve the most current connection data.
 - **Search:** Enter keywords to quickly locate a specific connection.
 
 :::image type="content" source="../media/m365-lighthouse-win365-page-overview/azure-network-connections-tab.png" alt-text="Screenshot of the Azure network connections tab." lightbox="../media/m365-lighthouse-win365-page-overview/azure-network-connections-tab.png":::

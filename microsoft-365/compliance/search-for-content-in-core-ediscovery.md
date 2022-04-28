@@ -2,8 +2,8 @@
 title: "Search for content in a eDiscovery (Standard) case"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article

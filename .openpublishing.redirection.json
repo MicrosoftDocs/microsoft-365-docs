@@ -362,7 +362,7 @@
     },
     {
       "source_path": "microsoft-365/business/increase-threat-protection.md",
-      "redirect_url": "/microsoft-365/admin/security-and-compliance/increase-threat-protection",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-security-overview",
       "redirect_document_id": true
     },
     {
@@ -6292,22 +6292,22 @@
     },
     {
       "source_path": "microsoft-365/business-video/anti-malware.md",
-      "redirect_url": "/microsoft-365/admin/security-and-compliance/increase-threat-protection#raise-the-level-of-protection-against-malware-in-mail",
+      "redirect_url": "/microsoft-365/microsoft-365/business-premium/m365bp-security-overview",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/business-video/prevent-ransom-in-email.md",
-      "redirect_url": "/microsoft-365/admin/security-and-compliance/increase-threat-protection#protect-against-ransomware",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-security-overview",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/business-video/safe-links.md",
-      "redirect_url": "/microsoft-365/admin/security-and-compliance/increase-threat-protection#protect-against-phishing-attacks-with-safe-links",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-security-overview",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/business-video/setup-anti-phishing.md",
-      "redirect_url": "/microsoft-365/admin/security-and-compliance/increase-threat-protection#protect-your-email-from-phishing-attacks",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-security-overview",
       "redirect_document_id": false
     },
     {
@@ -6443,6 +6443,11 @@
     {
       "source_path": "microsoft-365/business-video/what-is-admin.md",
       "redirect_url": "/microsoft-365/admin/add-users/about-admin-roles",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/admin-overview/about-the-admin-center.md",
+      "redirect_url": "/microsoft-365/admin/admin-overview/admin-center-overview",
       "redirect_document_id": false
     },
     {
@@ -6647,7 +6652,7 @@
     },
     {
       "source_path": "microsoft-365/campaigns/m365-campaigns-phishing-and-attacks.md",
-      "redirect_url": "/microsoft-365/business-premium/m365-campaigns-phishing-and-attacks",
+      "redirect_url": "/microsoft-365/business-premium/avoid-phishing-and-attacks",
       "redirect_document_id": true
     },
     {
@@ -6756,11 +6761,16 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "microsoft-365/security/office-365-security/attack-simulation-traning-end-user-notifications.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/attack-simulation-training-end-user-notifications",
+      "redirect_document_id": true
+    },
+    {
     "source_path": "microsoft-365/compliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md",
     "redirect_url": "/microsoft-365/compliance/compliance-manager",
     "redirect_document_id": false
     },    
-        {
+    {
     "source_path": "microsoft-365/business-premium/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md",
     "redirect_url": "/microsoft-365/solutions/productivity-illustrations#security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations",
     "redirect_document_id": false
@@ -6856,6 +6866,11 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "microsoft-365/business-premium/m365-campaigns-phishing-and-attacks.md",
+      "redirect_url": "/microsoft-365/business-premium/avoid-phishing-and-attacks",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/admin/devices/create-and-edit-autopilot-profiles.md",
       "redirect_url": "/microsoft-365/business-premium/create-and-edit-autopilot-profiles",
       "redirect_document_id": false
@@ -6883,6 +6898,16 @@
     {
       "source_path": "microsoft-365/security/defender/microsoft-secure-score-whats-coming.md",
       "redirect_url": "/microsoft-365/security/defender/whats-new",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-premium/m365bp-secure-windows-10-devices.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-manage-windows-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/security-and-compliance/increase-threat-protection.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-security-overview",
       "redirect_document_id": false
     }
   ]
