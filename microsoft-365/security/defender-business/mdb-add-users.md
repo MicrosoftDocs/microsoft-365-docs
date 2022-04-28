@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance.
+ms.collection: M365-security-compliance
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ---

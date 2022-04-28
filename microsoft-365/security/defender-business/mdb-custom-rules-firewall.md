@@ -19,7 +19,6 @@ ms.collection:
 
 # Manage your custom rules for firewall policies in Microsoft Defender for Business
 
-
 Microsoft Defender for Business includes firewall policies that help protect your devices from unwanted network traffic. You can use custom rules to define exceptions for your firewall policies. That is, you can use custom rules to block or allow specific connections.
 
 To learn more about firewall policies and settings, see [Firewall in Microsoft Defender for Business](mdb-firewall.md).
