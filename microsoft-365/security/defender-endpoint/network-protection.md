@@ -97,7 +97,7 @@ The Network Protection component of Microsoft Defender for Endpoint identifies a
 | by your IT admin | CustomPolicy |   |
 
 > [!NOTE]
-> **customeAllowList** does not generate notifications on endpoints"
+> **customeAllowList** does not generate notifications on endpoints.
 
 ### New notifications for network protection determination
 
@@ -119,10 +119,10 @@ A user visits a website:
   - **Feedback** The toast notification presents the user with a link to submit a ticket, which the user can use to submit feedback to the administrator in an attempt to justify access to the site.
 
   > [!div class="mx-imgBorder"]
-  > ![Shows a network protection phishing warn notification](images/network-protection-phishing-warn.png)
+  > ![Shows a network protection malicious content warn notification](images/network-protection-phishing-warn.png)
 
   > [!div class="mx-imgBorder"]
-  > ![Shows a network protection phishing warn notification](images/network-protection-phishing-warn-2.png)
+  > ![Shows a network protection phishing content warn notification](images/network-protection-phishing-warn-2.png)
 
 #### Block experience
 
@@ -133,7 +133,7 @@ A user visits a website:
   - **Feedback** The toast notification presents the user with a link to submit a ticket, which the user can use to submit feedback to the administrator in an attempt to justify access to the site.
   
   > [!div class="mx-imgBorder"]
-  > ![ Shows a network protection phishing blocked notification](images/network-protection-phishing-blocked.png)
+  > ![ Shows a network protection known phishing content blocked notification](images/network-protection-phishing-blocked.png)
 
 ### Network protection: C2 detection and remediation (private preview)
 
