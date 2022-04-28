@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection:
   - m365-security-compliance
-  - m365initiative-defender-endpoint
+  - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
 ---
@@ -52,7 +52,7 @@ This topic describes how to install, configure, update, and use Defender for End
        - Configure Microsoft Defender for Endpoint risk signals in app protection policy.
   
     > [!NOTE]
-    > - Microsoft Defender for Endpoint now extends protection to an organization’s data within a managed application (MAM) for devices that are not enrolled using mobile device management (MDM), but are using Intune to manage mobile applications. It also extends this support to customers who use other enterprise mobility management solutions, while still using Intune for [mobile application management (MAM)](/mem/intune/apps/mam-faq).
+    > - Microsoft Defender for Endpoint now extends protection to an organization's data within a managed application (MAM) for devices that are not enrolled using mobile device management (MDM), but are using Intune to manage mobile applications. It also extends this support to customers who use other enterprise mobility management solutions, while still using Intune for [mobile application management (MAM)](/mem/intune/apps/mam-faq).
     > - In addition, Microsoft Defender for Endpoint already supports devices that are enrolled using Intune mobile device management (MDM).
 
 

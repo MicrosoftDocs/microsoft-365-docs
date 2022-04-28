@@ -2,7 +2,7 @@
 title: "Prepare a non-routable domain for directory synchronization"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -38,13 +38,13 @@ Azure AD Connect synchronizes your users' UPN and password so that users can sig
   
 ### Change your primary domain
 
-Change your primary domain to a domain you have verified in Microsoft 365, for example, contoso.com. Every user that has the domain contoso.local is then updated to contoso.com. This is a very involved process, however, and an easier solution is described in the following section.
+Change your primary domain to a domain you've verified in Microsoft 365, for example, contoso.com. Every user that has the domain contoso.local is then updated to contoso.com. This is an involved process, however, and an easier solution is described in the following section.
   
 ### Add UPN suffixes and update your users to them
 
 You can solve the ".local" problem by registering new UPN suffix or suffixes in AD DS to match the domain (or domains) you verified in Microsoft 365. After you register the new suffix, you update the user UPNs to replace the ".local" with the new domain name, for example, so that a user account looks like billa@contoso.com.
   
-After you have updated the UPNs to use the verified domain, you are ready to synchronize your on-premises AD DS with Microsoft 365.
+After you've updated the UPNs to use the verified domain, you're ready to synchronize your on-premises AD DS with Microsoft 365.
   
 #### Step 1: Add the new UPN suffix**
   
@@ -85,7 +85,7 @@ After you have updated the UPNs to use the verified domain, you are ready to syn
    
 ### Use PowerShell to change the UPN suffix for all of your users
 
-If you have a lot of user accounts to update, it's easier to use PowerShell. The following example uses the cmdlets [Get-ADUser](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee617241(v=technet.10)) and [Set-ADUser](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee617215(v=technet.10)) to change all contoso.local suffixes to contoso.com in AD DS. 
+If you have numerous user accounts to update, it's easier to use PowerShell. The following example uses the cmdlets [Get-ADUser](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee617241(v=technet.10)) and [Set-ADUser](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee617215(v=technet.10)) to change all contoso.local suffixes to contoso.com in AD DS. 
 
 For example, you could run the following PowerShell commands to update all contoso.local suffixes to contoso.com:
     

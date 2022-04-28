@@ -1,5 +1,5 @@
 ---
-title: "Resources to help you meet regulatory requirements for information governance and records management"
+title: "Resources to help you meet regulatory requirements for data lifecycle management and records management"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -14,16 +14,18 @@ ms.localizationpriority: high
 search.appverid: 
 - MOE150
 - MET150
-description: "Resources to help you meet regulatory requirements for information governance and records management."
+description: "Resources to help you meet regulatory requirements for data lifecycle management and records management."
 ---
 
-# Regulatory requirements for information governance and records management
+# Regulatory requirements for data lifecycle management and records management
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Use the resources on this page to help you meet specific regulatory requirements for information governance and records management in Microsoft 365. Each section of this document focuses on one or more related regulations and includes any existing guidance or third-party assessment of how to configure Microsoft 365 to help with the requirements outlined.
+Use the resources on this page to help you meet specific regulatory requirements for data lifecycle management and records management in Microsoft 365. Each section of this document focuses on one or more related regulations and includes any existing guidance or third-party assessment of how to configure Microsoft 365 to help with the requirements outlined.
 
-These resources are available to download from the [Data Protection Resources, FAQ and White Papers](https://servicetrust.microsoft.com/ViewPage/TrustDocuments) page of the Service Trust Portal.
+These resources are available to download from the [Data Protection Resources, FAQ, and White Papers](https://servicetrust.microsoft.com/ViewPage/TrustDocuments) page of the Service Trust Portal.
 
 ## New Zealand Public Records Act
 
@@ -45,10 +47,10 @@ Applicable workloads: SharePoint, OneDrive, Teams, Exchange, and Skype for Busin
 
 Released November 2020, this report has been produced in partnership with Cohasset Associates, Inc. (Cohasset) to assess the capabilities of Microsoft 365 services for recording, storing, and managing requirements for electronic records, as specified by:  
 
-- Securities and Exchange Commission (SEC) in 17 CFR § 240.17a-4(f), which regulates exchange members, brokers or dealers.  
+- Securities and Exchange Commission (SEC) in 17 CFR § 240.17a-4(f), which regulates exchange members, brokers or dealers.  
 
 - Financial Industry Regulatory Authority (FINRA) Rule 4511(c), which defers to the format and media requirements of SEC Rule 17a-4(f).  
 
-- The principles-based electronic records requirements of the Commodity Futures Trading Commission (CFTC) in 17 CFR § 1.31(c)-(d).
+- The principles-based electronic records requirements of the Commodity Futures Trading Commission (CFTC) in 17 CFR § 1.31(c)-(d).
 
 The opinion from Cohasset is that when compliance features are properly configured and carefully applied and managed as described in their report, the assessed Microsoft 365 services meet the five requirements related to the recording and non-rewriteable, non-erasable storage of electronic records.

@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.date:
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -21,7 +21,9 @@ ms.custom: seo-marvel-apr2020
 
 # Create exact data match sensitive information type/rule package
 
-You can create the exact data match (EDM) sensitive information type (SIT) by using the [the EDM schema and SIT wizard](#use-the-edm-schema-and-sit-wizard) in the Compliance center or create the rule package XML file [manually](#create-a-rule-package-manually). You can also combine both by using one method to create the schema and later edit it using the other method.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+You can create an exact data match (EDM) sensitive information type (SIT) by using the [the EDM schema and SIT wizard](#use-the-edm-schema-and-sit-wizard) in the Compliance center or create the rule package XML file [manually](#create-a-rule-package-manually). You can also combine both by using one method to create the schema and later edit it using the other method.
 
 If you are not familiar with EDM based SITS or their implementation, you should familiarize yourself with:
 
@@ -49,11 +51,11 @@ Perform the steps in these articles:
   - If you selected the Ignored Delimiters option for the primary element column in your schema, make sure the custom SIT you create will match data with and without the selected delimiters.
   - If you use a built in SIT, make sure it will detect exactly the strings you want to select, and not include any surrounding characters or exclude any valid part of the string as stored in your sensitive information table.
 
-See [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md#sensitive-information-type-entity-definitions) and [Get started with custom sensitive information types](create-a-custom-sensitive-information-type.md#get-started-with-custom-sensitive-information-types).
+See [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md#sensitive-information-type-entity-definitions) and [Create custom sensitive information types in Compliance center](create-a-custom-sensitive-information-type.md).
 
 ### Use the exact data match schema and sensitive information type pattern wizard
 
-1. In the Microsoft 365 Compliance center for your tenant go to **Data classification** > **Exact data matches**.
+1. In the Microsoft Purview compliance portal for your tenant go to **Data classification** > **Exact data matches**.
 
 2. Choose **EDM sensitive info types** and **Create EDM sensitive info type** to open the sensitive info type configuration wizard.
 
@@ -92,7 +94,7 @@ See [Sensitive information type entity definitions](sensitive-information-type-e
 
 ## Create a rule package manually
 
-This procedure shows you how to create a file in XML format called a rule package (with Unicode encoding), and then upload it into Microsoft 365 using Compliance center PowerShell cmdlets.
+This procedure shows you how to create a file in XML format called a rule package (with Unicode encoding), and then upload it into Microsoft Purview using Compliance center PowerShell cmdlets.
 
 > [!NOTE]
 > If the SIT that you map to can detect multi-word corroborative evidence, the secondary elements you define in a manually created rule package can be mapped to the SIT. For example, the name `John Smith` would not match as a secondary element because we'd compare `John` and `Smith` found in the content separately to the term `John Smith` uploaded in one of the fields, if that corroborative evidence field wasn't mapped to a SIT that can detect that pattern.

@@ -28,13 +28,16 @@ description: "Learn how to validate the Microsoft 365 Business Premium app prote
 
 # Validate app protection settings on Android or iOS devices
 
+> [!NOTE]
+> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../../security/defender-business/mdb-overview.md)
+
 Follow the instructions in the following sections to validate app protection settings on Android or iOS devices.
   
 ## Android
   
 ### Check that the app protection settings are working on user devices
 
-After you [set app configurations for Android devices](app-protection-settings-for-android-and-ios.md) to protect the apps, you can follow these steps to validate that the settings you chose work. 
+After you [set app protection settings for Android or iOS devices](../../business-premium/m365bp-app-protection-settings-for-android-and-ios.md) to protect the apps, you can follow these steps to validate that the settings you chose work. 
   
 First, make sure that the policy applies to the app in which you're going to validate it.
   
@@ -42,7 +45,7 @@ First, make sure that the policy applies to the app in which you're going to val
     
 2. Choose **Application policy for Android** for the settings you created at setup, or another policy you created, and verify that it's enforced for Outlook, for example. 
     
-    ![Shows all the apps for which this policy protects files.](../../media/b3be3ddd-f683-4073-8d7a-9c639a636a2c.png)
+    ![Screenshot showing all the apps for which this policy protects files.](../../media/b3be3ddd-f683-4073-8d7a-9c639a636a2c.png)
   
 ### Validate Require a PIN or a fingerprint to access Office apps
 
@@ -64,7 +67,7 @@ In the **Edit policy** pane, choose **Edit** next to **Office documents access c
     
 2. Enter an incorrect PIN as many times as specified by the policy. You'll see a prompt that states **PIN Attempt Limit Reached** to reset the PIN. 
     
-    ![After too many incorrect PIN attempts, you need to reset your PIN.](../../media/fca6fcb4-bb5c-477f-af5e-5dc937e8b835.png)
+    ![Screenshot indicating after too many incorrect PIN attempts, you need to reset your PIN.](../../media/fca6fcb4-bb5c-477f-af5e-5dc937e8b835.png)
   
 3. Press **Reset PIN**. You'll be prompted to sign in with the user's Microsoft 365 Business Premium credentials, and then required to set a new PIN.
     
@@ -123,7 +126,7 @@ In the **Edit policy** pane, choose **Edit** next to **Protection against lost o
   
 ### Check that the App protection settings are working on user devices
 
-After you [set app configurations for iOS devices](app-protection-settings-for-android-and-ios.md) to protect apps, you can follow these steps to validate that the settings you chose work. 
+After you [set app configurations for iOS devices](../../business-premium/m365bp-protection-settings-for-windows-10-devices.md) to protect apps, you can follow these steps to validate that the settings you chose work. 
   
 First, make sure that the policy applies to the app in which you're going to validate it.
   
@@ -131,7 +134,7 @@ First, make sure that the policy applies to the app in which you're going to val
     
 2. Choose **Application policy for iOS** for the settings you created at setup, or another policy you created, and verify that it's enforced for Outlook for example. 
     
-    ![Shows all the apps for which this policy protects files.](../../media/842441b8-e7b1-4b86-9edd-d94d1f77b6f4.png)
+    ![Screenshot that shows all the apps for which this policy protects files.](../../media/842441b8-e7b1-4b86-9edd-d94d1f77b6f4.png)
   
 ### Validate Require a PIN to access Office apps
 
@@ -153,7 +156,7 @@ In the **Edit policy** pane, choose **Edit** next to **Office documents access c
     
 2. Enter an incorrect PIN as many times as specified by the policy. You'll see a prompt that states **PIN Attempt Limit Reached** to reset the PIN. 
     
-    ![After too many incorrect PIN attempts, you need to reset your PIN.](../../media/fab5c089-a4a5-4e8d-8c95-b8eed1dfa262.png)
+    ![Screenshot warning PIN reset after too many incorrect attempts.](../../media/fab5c089-a4a5-4e8d-8c95-b8eed1dfa262.png)
   
 3. Press **OK**. You'll be prompted to sign in with the user's Microsoft 365 Business Premium credentials, and then required to set a new PIN.
     
@@ -197,5 +200,7 @@ In the **Edit policy** pane, choose **Edit** next to **Protection against lost o
     
 4. Open **Photos** app from the home screen. You should see an encrypted photo (or more, if you saved multiple image file attachments) saved, but encrypted. 
     
----
 
+## See also
+
+[Top 10 ways to secure Microsoft 365 for business plans](../security-and-compliance/secure-your-business-data.md)

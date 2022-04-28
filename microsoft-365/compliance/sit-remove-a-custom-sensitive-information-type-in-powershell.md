@@ -19,6 +19,8 @@ description: "Learn how to remove a custom sensitive information type using Powe
 
 # Remove a custom sensitive information type using PowerShell
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 In Compliance center PowerShell, there are two methods to remove custom sensitive information types:
 
 - **Remove individual custom sensitive information types**: Use the method documented in [Modify a custom sensitive information type using PowerShell](sit-modify-a-custom-sensitive-information-type-in-powershell.md#modify-a-custom-sensitive-information-type-using-powershell). You export the custom rule package that contains the custom sensitive information type, remove the sensitive information type from the XML file, and import the updated XML file back into the existing custom rule package.
@@ -70,8 +72,8 @@ In Compliance center PowerShell, there are two methods to remove custom sensitiv
 
 ## More information
 
-- [Learn about data loss prevention](dlp-learn-about-dlp.md)
+- [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md)
 
 - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
 
-- [What the DLP functions look for](what-the-dlp-functions-look-for.md)
+- [Sensitive information type functions](sit-functions.md)

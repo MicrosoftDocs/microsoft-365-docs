@@ -1,6 +1,6 @@
 ---
 title: Work with app control
-description:  
+description: Learn how to manage app control.
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: tiaraquan
@@ -38,19 +38,19 @@ When you open a signer request, you'll need to provide some important publisher 
     - Application version
     - Description
     - Change type ("add" or "remove")  
-    - Publisher details (for example: “O=<publisher name>,L=<location>,S=State,C=Country”)
+    - Publisher details (for example: `O=<publisher name>,L=<location>,S=State,C=Country`)
 
 > [!NOTE]
 > To remove trust for an app, follow the same steps, but set the **Change type** to *remove*.
 
 Operations will progressively deploy policies to deployment groups following this schedule:
 
-|Deployment group  |Policy type  |Timing  |
-|---------|---------|---------|
-|Test     |  Audit       |  Day 0       |
-|First     | Enforced        | Day 1        |
-|Fast     | Enforced        |  Day 2       |
-|Broad     | Enforced        |  Day 3       |
+|Deployment group|Policy type|Timing|
+|---|---|---|
+|Test|Audit|Day 0|
+|First|Enforced|Day 1|
+|Fast|Enforced|Day 2|
+|Broad|Enforced|Day 3|
 
 You can pause or roll back the deployment at any time during the rollout. To pause or roll back, open another support request with Microsoft Managed Desktop Operations.
 
@@ -69,4 +69,4 @@ You can pause or roll back the deployment at any time during the rollout. To pau
     - Application name
     - Application version
     - Description
-    - Publisher details (for example: “O=<publisher name>, L=<location>, S=State, C=Country”)
+    - Publisher details (for example: `O=<publisher name>, L=<location>, S=State, C=Country`)

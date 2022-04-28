@@ -2,8 +2,8 @@
 title: "Your domain may be in use if someone else in your organization signed up with it"
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article

@@ -39,7 +39,12 @@ Users can select the language of their choice for Windows 10, and Microsoft 365 
 | Windows 10 language features | <ul><li>Display language</li><li>Keyboard language</li><ul> |
 | Microsoft 365 Apps for Enterprise language features | <ul><li>Display language</li><li>Proofing and authoring tools</li></ul> |
 
-To make the [Supported languages](#supported-languages) for Microsoft 365 Apps for Enterprise available for your users to install, add the users to the **Modern Workplace-Office-Language_Packs** group. The languages will be available in the Intune Company Portal.
+## Install more languages
+
+> [!NOTE]
+> As of March 16, 2022, we're phasing out the Modern Workplace-Office-Language_Packs group that allows yours to add languages to Microsoft Office. The transition to the new method (see below) will be completed in April 2022. If you have any issues during this transition period, please reach out to [support](../working-with-managed-desktop/admin-support.md).
+
+By default, Microsoft Office requires users to be admin. Microsoft Managed Desktop deploys an Office policy to enable standard users to install language accessory packs directly from their Office apps. For more information, see [Allow users who aren't admins to install additional languages](/deployoffice/overview-deploying-languages-microsoft-365-apps#allow-users-who-arent-admins-to-install-additional-languages).
 
 ## Supported languages
 
@@ -93,12 +98,6 @@ The [universal image](../service-description/device-images.md#universal-image) p
 If your users need a language other than the ones listed here, file a [support request](../working-with-managed-desktop/admin-support.md) by using the [Admin portal](access-admin-portal.md).
 
 ## Languages for support and operations
-
-### User support
-
-Microsoft Managed Desktop provides support only in English. If users choose another language in the Get Help app, they'll get support from the general Microsoft support channels, rather than support directly from Microsoft Managed Desktop. For more information, see [Getting help for users](../working-with-managed-desktop/end-user-support.md).
-
-If your users need support in other languages, you'll have to provide that through non-Microsoft support sources or from your own organization.
 
 ### Admin support and operations
 

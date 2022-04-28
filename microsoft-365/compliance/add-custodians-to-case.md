@@ -1,9 +1,9 @@
 ---
-title: Add custodians to an Advanced eDiscovery case
+title: Add custodians to an eDiscovery (Premium) case
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 
 audience: Admin
@@ -15,15 +15,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 
-description: "Learn how to use the built-in custodian management tool in Advanced eDiscovery to coordinate your workflows and identify relevant data sources in a case."
+description: "Learn how to use the built-in custodian management tool in Microsoft Purview eDiscovery (Premium) to coordinate your workflows and identify relevant data sources in a case."
 ms.custom: seo-marvel-apr2020
 ---
 
-# Add custodians to an Advanced eDiscovery case
+# Add custodians to an eDiscovery (Premium) case
 
-Use the built-in custodian management tool in Advanced eDiscovery to coordinate your workflows around managing custodians and identifying relevant, custodial data sources associated with a case. When you add a custodian, the system can automatically identify and place a hold on their Exchange mailbox and OneDrive for Business account. During the discovery process of your investigation, you might also identify other data sources (such as mailboxes, sites, or Teams) that a custodian accessed or contributed to. In this situation, you can use the custodian management tool to associate those data sources will a specific custodian. After you add custodians to a case and associate other data source with them, you can quickly preserve data and search the custodial data.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-You can add and manage custodians in Advanced eDiscovery cases in four steps:
+Use the built-in custodian management tool in Microsoft Purview eDiscovery (Premium) to coordinate your workflows around managing custodians and identifying relevant, custodial data sources associated with a case. When you add a custodian, the system can automatically identify and place a hold on their Exchange mailbox and OneDrive for Business account. During the discovery process of your investigation, you might also identify other data sources (such as mailboxes, sites, or Teams) that a custodian accessed or contributed to. In this situation, you can use the custodian management tool to associate those data sources will a specific custodian. After you add custodians to a case and associate other data source with them, you can quickly preserve data and search the custodial data.
+
+You can add and manage custodians in eDiscovery (Premium) cases in four steps:
 
 1. Identify the custodians.
 
@@ -41,7 +43,7 @@ To add custodians to a case, you must be a member of the eDiscovery Manager role
 
 1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and sign in with a user account that has been assigned the appropriate eDiscovery permissions.
 
-2. In the left navigation pane of the Microsoft 365 compliance center, select **eDiscovery** > **Advanced eDiscovery**, and select the [**Cases**](https://go.microsoft.com/fwlink/p/?linkid=2173764) tab.
+2. In the left navigation pane of the Microsoft Purview compliance portal, select **eDiscovery** > **eDiscovery (Premium)**, and select the [**Cases**](https://go.microsoft.com/fwlink/p/?linkid=2173764) tab.
 
 3. Select the case that you want to add custodians to.
 
@@ -78,7 +80,7 @@ To associate other mailboxes, sites, Teams, or Yammer groups to a specific custo
    > [!NOTE]
    > You can use the **Exchange** and **SharePoint** location pickers to associate any mailbox or site in your organization to a custodian. , This includes associating the mailbox and site for a Microsoft Team or Yammer group that a custodian is not a member of. To do this, you have to add both the mailbox and site associated with each team or Yammer group.
 
-2. You can view the total number of mailboxes, sites, Teams, and Yammer groups assigned to each custodian by expanding each custodian in the table. When you've finalized the assigned data locations for each custodian, these associations will be maintained and used during the collection, processing, and review stages in the Advanced eDiscovery workflow.
+2. You can view the total number of mailboxes, sites, Teams, and Yammer groups assigned to each custodian by expanding each custodian in the table. When you've finalized the assigned data locations for each custodian, these associations will be maintained and used during the collection, processing, and review stages in the eDiscovery (Premium) workflow.
 
 3. After adding custodians and configuring their data locations, click **Next** to go to the **Hold settings** page.  
 

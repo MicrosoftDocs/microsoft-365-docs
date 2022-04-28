@@ -18,6 +18,7 @@ ms.custom:
 - okr_smb
 - AdminTemplateSet
 - admindeeplinkMAC
+- business_assist
 search.appverid:
 - BCS160
 - MET150
@@ -41,13 +42,16 @@ You must be a [global admin](../add-users/about-admin-roles.md) to perform these
 
 If you're a user, you don't have the permissions to set your password to never expire. Ask your work or school technical support to do the steps in this article for you.
 
+> [!TIP]
+> If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
+
 ## Set password expiration policy
 
 Follow the steps below if you want to set user passwords to expire after a specific amount of time.
 
-1. In the Microsoft 365 admin center, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**Security & privacy** tab</a>.
+1. In the Microsoft 365 admin center, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**Security & privacy** tab</a> under **Org Settings**.
 
-    If you aren't a global admin, you won't see the Security and privacy option.
+    If you aren't a global admin or security admin, you won't see the Security and privacy option.
   
 1. Select **Password expiration policy**.
   
@@ -58,7 +62,7 @@ Follow the steps below if you want to set user passwords to expire after a speci
 1. In the second box type when users are notified that their password will expire, and then select **Save**. Choose a number of days from 1 to 30.
 
 > [!IMPORTANT]
-> Password expiration notifications are no longer supported in the Microsoft 365 admin center or any Office apps.
+> Password expiration notifications are no longer supported in Office web apps or the [admin center](https://portal.office.com).
   
 ## Important things you need to know about the password expiration feature
   

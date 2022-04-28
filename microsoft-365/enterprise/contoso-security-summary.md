@@ -4,7 +4,7 @@ author: kelleyvice-msft
 f1.keywords:
 - NOCSH
 ms.author: kvice
-manager: laurawi
+manager: scotv
 ms.date: 10/02/2019
 audience: ITPro
 ms.topic: article
@@ -107,7 +107,7 @@ To follow security best practices and Microsoft 365 for enterprise deployment re
 
 - Prevent intranet data leaks with Data Loss Prevention
 
-  Contoso configured [Data Loss Prevention](../compliance/dlp-learn-about-dlp.md) policies for Exchange Online, SharePoint, and OneDrive for Business to prevent users from accidentally or intentionally sharing sensitive data.
+  Contoso configured [Microsoft Purview Data Loss Prevention](../compliance/dlp-learn-about-dlp.md) policies for Exchange Online, SharePoint, and OneDrive for Business to prevent users from accidentally or intentionally sharing sensitive data.
 
 - Prevent device data leaks Windows Information Protection
 
