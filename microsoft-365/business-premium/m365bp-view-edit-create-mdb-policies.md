@@ -20,7 +20,7 @@ ms.collection:
 
 # View and edit device protection policies
 
-In Microsoft 365 Business Premium, security settings for managed devices are configured through device protection policies in Microsoft Defender's Security center or the Admin center. To help simplify setup and configuration, you have pre-configured policies that help protect your organization's devices as soon as they are onboarded. You can use the default policies, edit existing policies, or create your own policies.
+In Microsoft 365 Business Premium, security settings for managed devices are configured through device protection policies in Microsoft Defender's security center or the Admin center. To help simplify setup and configuration, there are pre-configured policies that help protect your organization's devices as soon as they are onboarded. You can use the default policies, edit existing policies, or create your own policies.
 
 **This guidance describes how to**:
 
@@ -31,11 +31,11 @@ In Microsoft 365 Business Premium, security settings for managed devices are con
 
 Microsoft 365 Business Premium includes two main types of policies to protect your organization's devices:
 
-- **Next-generation protection policies**, which determine how Microsoft Defender Antivirus and other threat protection features are configured
+- **Next-generation protection policies**, which determine how Microsoft Defender Antivirus and other threat protection features are configured.
 
-- **Firewall policies**, which determine what network traffic is permitted to flow to and from your organization's devices
+- **Firewall policies**, which determine what network traffic is permitted to flow to and from your organization's devices.
 
-These policies are part of Microsoft Defender for Business, which is included in your Microsoft 365 Business Premium subscription. We've included information for working with policies in the Microsoft Defender security center as well as how to work with policies in the Admin center and InTune.
+These policies are part of Microsoft Defender for Business, included in your Microsoft 365 Business Premium subscription. Information is provided for working with policies in the Microsoft Defender security center as well as how to work with policies in the Admin center and InTune.
 
 ## Working with device polices in the Microsoft Defender security center
 
@@ -45,7 +45,7 @@ The following details apply to working with your policies in the security center
 
 To view your existing device protection policies in the security center:
 
-1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in. 
+1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.
 
 1. In the navigation pane, choose **Device configuration**. Policies are organized by operating system (such as **Windows client**) and policy type (such as **Next-generation protection** and **Firewall**).
 
@@ -162,7 +162,7 @@ To create a policy in InTune
 
 1. Sign in to the Microsoft Endpoint Manager admin center.
 
-1. Select **Endpoint security** and then select the type of policy you want to configure, and then select Create Policy.
+1. Select **Endpoint security** and the type of policy you want to configure, and then select **Create Policy**.
 
 1. Choose from the following policy types:
 
@@ -174,10 +174,11 @@ To create a policy in InTune
     - Account protection
     - Enter the following properties:
 
-1. Platform: Choose the platform that you're creating policy for. The available options depend on the policy type you select.
+1. Platform: Choose the platform for which you're creating the policy. The available options depend on the policy type you select.
 
 1. Profile: Choose from the available profiles for the platform you selected. For information about the profiles, see the dedicated section in this article for your chosen policy type.
-Select Create.
+
+1. Select **Create**.
 
 1. On the Basics page, enter a name and description for the profile, then choose **Next**.
 
@@ -185,11 +186,11 @@ Select Create.
 
 1. When you're done configuring settings, select **Next**.
 
-1. On the Scope tags page, choose Select scope tags to open the Select tags pane to assign scope tags to the profile.
+1. On the Scope tags page, choose **Select scope tags** to open the **Select tags** pane to assign scope tags to the profile.
 
 1. Select **Next** to continue.
 
-1. On the Assignments page, select the groups that will receive this profile. For more information on assigning profiles, see Assign user and device profiles.
+1. On the **Assignments** page, select the groups that will receive this profile. For more information on assigning profiles, see Assign user and device profiles.
 
 1. Select **Next**.
 
@@ -216,6 +217,16 @@ To edit a policy:
     - Configuration settings
 
 1. After you’ve made changes, select **Save** to save your edits. Edits to one category must be saved before you can introduce edits to any additional categories.
+
+## Manage conflicts
+
+Many of the device settings that you can manage with Endpoint security policies (security policies) are also available through other policy types in Intune. These other policy types include device configuration policy and security baselines. Because settings can be managed through several different policy types or by multiple instances of the same policy type, be prepared to identify and resolve policy conflicts for devices that don't adhere to the configurations you expect.
+
+Security baselines can set a non-default value for a setting to comply with the recommended configuration that baseline addresses.
+
+Other policy types, including the endpoint security policies, set a value of Not configured by default. These other policy types require you to explicitly configure settings in the policy.
+
+Regardless of the policy method, managing the same setting on the same device through multiple policy types, or through multiple instances of the same policy type can result in conflicts that should be avoided.
 
 ## See also
 
