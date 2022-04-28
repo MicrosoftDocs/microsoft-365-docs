@@ -62,7 +62,7 @@ The following security settings are preconfigured in Defender for Business:
 
 ## Defender for Business default settings and Microsoft Intune
 
-The following table describes settings that are preconfigured for Defender for Business and how those settings correspond to what you might see in Intune (managed in the Microsoft Endpoint Manager admin center). If you're using the [simplified configuration process in Defender for Business](mdb-simplified-configuration.md) (preview), you don't need to edit these settings.
+The following table describes settings that are preconfigured for Defender for Business and how those settings correspond to what you might see in Intune (managed in the Microsoft Endpoint Manager admin center). If you're using the [simplified configuration process in Defender for Business](mdb-simplified-configuration.md), you don't need to edit these settings.
 
 | Setting  | Description  |
 |---------|---------|

@@ -38,31 +38,22 @@ sections:
           
           Both Defender for Business and Defender for Endpoint provide strong threat protection capabilities for your company's endpoints. To learn more about the differences, see [Compare Microsoft Defender for Business to Microsoft 365 Business Premium](compare-mdb-m365-plans.md).
 
-      - question: How do I sign up for the preview of Defender for Business?
+      - question: How do I try or buy Defender for Business?
         answer: |
-          Defender for Business is rolling out as part of Microsoft 365 Business Premium, beginning March 1, 2022. If you have Microsoft 365 Business Premium, you'll soon have Defender for Business capabilities automatically.
+          See Go to the [Microsoft Defender for Business](https://www.microsoft.com/security/business/threat-protection/microsoft-defender-business) web page, and select the option to try or buy Defender for Business.
 
-          The standalone version of Defender for Business is still in preview. Visit [https://aka.ms/MDB-Preview](https://aka.ms/MDB-Preview) to apply for the preview program. To learn more, see [How to get Microsoft Defender for Business](get-defender-business.md).
+          For more information, see [Get Microsoft Defender for Business](get-defender-business.md).
 
-      - question: Are there any prerequisites for Defender for Business preview?
+
+      - question: If the preview program for Defender for Business has ended, can I extend it?
         answer: |
-          Your company should be one of the following:
+          When your preview of Defender for Business has ended, you can purchase Defender for Business. 
 
-          - A partner who offers IT services to small and medium-sized businesses
-          
-          - A small or medium-sized business with up to 300 employees
-
-          You don't already have to have another Microsoft 365 subscription. To learn more, see [Microsoft Defender for Business requirements](mdb-requirements.md).
-
-      - question: What will the licensing model be at GA?
-        answer: |
-          Beginning March 1, 2022, Defender for Business is rolling out as part of Microsoft 365 Business Premium. Defender for Business is reaching general availability (GA) now for Microsoft 365 Business Premium customers.
-
-          For customers who don't have Microsoft 365 Business Premium, Defender for Business is an option as a standalone plan. The standalone version of Defender for Business is still in preview, and will reach GA later this calendar year.
+          For more information, see [Get Microsoft Defender for Business](get-defender-business.md).
 
       - question: If I'm already using Microsoft 365 Business Premium, why do I need Defender for Business?
         answer: |
-           Microsoft 365 Business Premium currently includes device management capabilities, Defender for Office 365 Plan 1, and Microsoft Defender Antivirus, next-generation protection for Windows devices. Defender for Business extends these capabilities by adding increased security for your company's devices. To learn more, see the following articles:
+           If you have Microsoft 365 Business Premium, then Defender for Business is included in your subscription. To learn more, see the following articles:
            
            - [Overview of Defender for Business](mdb-overview.md)
            
@@ -94,7 +85,9 @@ sections:
 
       - question: If I do not currently have Microsoft Intune, do I need an additional license to use features that are included in both Defender for Business and Intune? 
         answer: |
-           If you have Defender for Business as a standalone subscription and you do not have Microsoft Intune, you can manage Windows devices in Defender for Business by using the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). You can also manage your next-generation protection and firewall protection policies in the Microsoft 365 Defender portal with a [simplified configuration experience](mdb-simplified-configuration.md). To manage other settings, such as attack surface reduction policies, or to onboard some devices (such as Android devices), you'll need Intune.  
+           If you have Defender for Business as a standalone subscription and you do not have Microsoft Intune, you can manage Windows devices in Defender for Business by using the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). You can also manage your next-generation protection and firewall protection policies in the Microsoft 365 Defender portal with a [simplified configuration experience](mdb-simplified-configuration.md). To manage other settings, such as attack surface reduction policies, or to onboard some devices (such as Android devices), you'll need Intune. 
+
+           Intune is included in Microsoft 365 Business Premium and can be purchased for Defender for Business (standalone) subscriptions. 
 
 
 additionalContent: |

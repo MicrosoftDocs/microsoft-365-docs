@@ -39,11 +39,11 @@ Microsoft offers a wide variety of cloud solutions and services, including sever
 > [!NOTE]
 > This article is intended to provide a high-level overview of threat protection features included in Microsoft Defender for Business (as a standalone plan) and Microsoft 365 Business Premium (which includes Defender for Business). This article is not intended to serve as a service description or licensing contract document. For more information, see [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
 
-**Beginning March 1, 2022, Defender for Business will start rolling out as part of Microsoft 365 Business Premium. Defender for Business as a standalone offering is still in preview.**
+**As of March 1, 2022, Defender for Business is included in Microsoft 365 Business Premium. Defender for Business is also available as a standalone subscription.**
 
 The following table compares security features and capabilities in Defender for Business (standalone) to Microsoft 365 Business Premium.
 
-|Feature/Capability|[Microsoft Defender for Business](mdb-overview.md)<br/>(standalone; currently in preview)|[Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md)<br/>(includes Defender for Business)|
+|Feature/Capability|[Microsoft Defender for Business](mdb-overview.md)<br/>(standalone)|[Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md)<br/>(includes Defender for Business)|
 |---|---|---|
 |Email protection|Yes <br/>- [Email scanning with Microsoft Defender Antivirus](../defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus.md)|Yes <br/>- [Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md) <br/>- [Email scanning with Microsoft Defender Antivirus](../defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus.md)|
 |Antispam protection|Yes <br/>- For devices|Yes <br/>- For devices<br/>- For Microsoft 365 email content, such as messages and attachments|
@@ -62,7 +62,7 @@ Defender for Business brings enterprise-grade capabilities of Defender for Endpo
 
 The following table compares security features and capabilities in Defender for Business to the enterprise offerings, Microsoft Defender for Endpoint Plans 1 and 2.
 
-|Feature/Capability|[Defender for Business](mdb-overview.md)<br/>(standalone; currently in preview)|[Defender for Endpoint Plan 1](../defender-endpoint/defender-endpoint-plan-1.md)<br/>(for enterprise customers) |[Defender for Endpoint Plan 2](../defender-endpoint/microsoft-defender-endpoint.md)<br/>(for enterprise customers) |
+|Feature/Capability|[Defender for Business](mdb-overview.md)<br/>(standalone)|[Defender for Endpoint Plan 1](../defender-endpoint/defender-endpoint-plan-1.md)<br/>(for enterprise customers) |[Defender for Endpoint Plan 2](../defender-endpoint/microsoft-defender-endpoint.md)<br/>(for enterprise customers) |
 |---|---|---|---|
 |[Centralized management](../defender-endpoint/manage-atp-post-migration.md) |Yes <sup>[[1](#fn1)]</sup>|Yes|Yes|
 |[Simplified client configuration](mdb-simplified-configuration.md)|Yes|No|No|
@@ -92,7 +92,7 @@ The following table compares security features and capabilities in Defender for 
 
 (<a id="fn5">5</a>) In Defender for Business, threat analytics are optimized for small and medium-sized businesses.
 
-(<a id="fn6">6</a>) During the preview program, Windows client devices are supported for onboarding in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). You can use the local script method. See [Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md).
+(<a id="fn6">6</a>) See [Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md).
 
 ## Next steps
 

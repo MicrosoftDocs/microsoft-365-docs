@@ -19,14 +19,14 @@ ms.collection:
 
 # Tutorials and simulations in Microsoft Defender for Business
 
-If you've just finished setting up Microsoft Defender for Business, you might be wondering where to start to learn about how Defender for Business works. This article describes preview scenarios to try, and several tutorials and simulations that are available for Defender for Business. These resources are designed to help you see how Defender for Business can work for your company.
+If you've just finished setting up Microsoft Defender for Business, you might be wondering where to start to learn about how Defender for Business works. This article describes some scenarios to try, and several tutorials and simulations that are available for Defender for Business. These resources are designed to help you see how Defender for Business can work for your company.
 
 >
 > **Got a minute?**
 > Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about security</a>. We'd love to hear from you!
 >
 
-## Try these preview scenarios
+## Try these scenarios
 
 The following table summarizes several scenarios to try with Defender for Business:
 
