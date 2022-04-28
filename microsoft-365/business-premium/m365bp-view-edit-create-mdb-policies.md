@@ -20,7 +20,7 @@ ms.collection:
 
 # View and edit device protection policies
 
-In Microsoft 365 Business Premium, security settings for managed devices are configured through device protection policies in Microsoft Defender's Security center or the Admin center. To help simplify setup and configuration, you have pre-configured policies that help protect your organization's devices as soon as they are onboarded. You can use the default policies, edit existing policies, or create your own policies. 
+In Microsoft 365 Business Premium, security settings for managed devices are configured through device protection policies in Microsoft Defender's Security center or the Admin center. To help simplify setup and configuration, you have pre-configured policies that help protect your organization's devices as soon as they are onboarded. You can use the default policies, edit existing policies, or create your own policies.
 
 **This guidance describes how to**:
 
@@ -87,7 +87,7 @@ To edit a device policy:
 
    After you have specified your next-generation protection settings, choose **Next**.
 
-1. On the **Review your policy** tab, review the general information, targeted devices, and configuration settings. 
+1. On the **Review your policy** tab, review the general information, targeted devices, and configuration settings.
 
    - Make any needed changes by selecting **Edit**.
    - When you’re ready to proceed, choose **Update policy**.
@@ -96,11 +96,11 @@ To edit a device policy:
 
 To create a new device protection policy:
 
-1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in. 
+1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.
 
-1. In the navigation pane, choose **Device configuration**. Policies are organized by operating system (such as **Windows client**) and policy type (such as **Next-generation protection** and **Firewall**). 
+1. In the navigation pane, choose **Device configuration**. Policies are organized by operating system (such as **Windows client**) and policy type (such as **Next-generation protection** and **Firewall**).
 
-1. Select an operating system tab (for example, **Windows clients**), and then review the list of **Next-generation protection** policies. 
+1. Select an operating system tab (for example, **Windows clients**), and then review the list of **Next-generation protection** policies.
 
 1. Under **Next-generation protection** or **Firewall**, select **+ Add**.
 
@@ -113,8 +113,8 @@ To create a new device protection policy:
 1. On the **Device groups** tab, either create a new device group, or use an existing group. Policies are assigned to devices through device groups. Here are some things to keep in mind:
 
    - Initially, you might only have your default device group, which includes the devices people in your organization are using to access organization data and email. You can keep and use your default device group.
-   - Create a new device group to apply a policy with specific settings that are different from the default policy. 
-   - When you set up your device group, you specify certain criteria, such as the operating system version. Devices that meet the criteria are included in that device group, unless you exclude them. 
+   - Create a new device group to apply a policy with specific settings that are different from the default policy.
+   - When you set up your device group, you specify certain criteria, such as the operating system version. Devices that meet the criteria are included in that device group, unless you exclude them.
    - All device groups, including the default and custom device groups that you define, are stored in Azure Active Directory (Azure AD).
 
    To learn more about device groups, see [Device groups in Microsoft Defender for Business](../security/defender-business/mdb-create-edit-device-groups.md).
@@ -147,7 +147,7 @@ To work with policies in the Admin center:
 To view and manage policies:
 
 1. On the left nav, choose **Devices** \> **Manage**.
- 
+
     On this page, you can select one or more devices and remove company data. For Windows 10 devices for which you have set device protections settings, you can also choose to reset the device to factory settings.
   
    ![Manage devices page.](../media/devicesmanage.png)
@@ -223,4 +223,4 @@ To edit a policy:
 
 ## Next objective
 
-Set up and manage [device groups](m365bp-device-groups-mdb.md).
+[Set up and manage device groups](m365bp-device-groups-mdb.md).
