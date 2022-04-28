@@ -295,7 +295,7 @@ Admins can go to the [Microsoft Endpoint Management admin center](https://endpoi
     > [!div class="mx-imgBorder"]
     > ![Image of reviewing and creating policy.](images/savepolicy.png)
 
-Admind can also setup **privacy controls** from the Microsoft Endpoint Manager admin center to control what data can be sent by the Defender mobile client to the security portal. For more information, see [configuring privacy controls](android-configure.md).
+Admins can also setup **privacy controls** from the Microsoft Endpoint Manager admin center to control what data can be sent by the Defender mobile client to the security portal. For more information, see [configuring privacy controls](android-configure.md).
 
 Organizations can communicate to their users to protect Personal profile with Microsoft Defender on their enrolled BYOD devices.
 - Pre-requisite: Microsoft Defender must be already installed and active in work profile to enabled Microsoft Defender in personal profiles.
