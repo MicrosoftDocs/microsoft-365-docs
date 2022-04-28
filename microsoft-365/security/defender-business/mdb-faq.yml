@@ -40,9 +40,18 @@ sections:
 
       - question: How do I try or buy Defender for Business?
         answer: |
-          See Go to the [Microsoft Defender for Business](https://www.microsoft.com/security/business/threat-protection/microsoft-defender-business) web page, and select the option to try or buy Defender for Business.
+          Go to the [Microsoft Defender for Business](https://www.microsoft.com/security/business/threat-protection/microsoft-defender-business) web page, and select the option to try or buy Defender for Business.
 
           For more information, see [Get Microsoft Defender for Business](get-defender-business.md).
+
+      - question: How many users may I deploy with the Defender for Business licenses?
+        answer: |
+          Defender for Business is designed for small and medium-sized businesses with up to 300 users. 
+
+      - question: How many devices can I onboard and secure with Defender for Business? 
+        answer: |
+          You can onboard and secure up to 5 devices per user license.
+
 
 
       - question: If the preview program for Defender for Business has ended, can I extend it?
