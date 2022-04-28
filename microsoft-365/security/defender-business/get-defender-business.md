@@ -88,15 +88,15 @@ When you're ready to get started, you'll work with two main portals: the Microso
 
 |Portal  |Description  |
 |---------|---------|
-| The Microsoft 365 admin center ([https://admin.microsoft.com/](https://admin.microsoft.com/))      | Use the Microsoft 365 admin center to activate your trial and sign in for the first time.<br/><br/> You'll also use the Microsoft 365 admin center to: <br/>- Add or remove users<br/>- Assign user licenses<br/>- View your products and services<br/>- Complete setup tasks for your Microsoft 365 subscription <br/><br/> To learn more, see [Overview of the Microsoft 365 admin center](../../admin/admin-overview/admin-center-overview.md).      |
-| The Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com))     | Use the Microsoft 365 Defender portal to set up and configure Defender for Business. <br/><br/>You'll use the Microsoft 365 Defender portal to: <br/>- View your devices and device protection policies<br/>- View detected threats and take action<br/>- View security recommendations and manage your security settings <br/><br/>To learn more, see [Get started using the Microsoft 365 Defender portal](mdb-get-started.md).        |
+| The Microsoft 365 admin center ([https://admin.microsoft.com/](https://admin.microsoft.com/))      | Use the Microsoft 365 admin center to activate your trial and sign in for the first time.<br/><br/> You'll also use the Microsoft 365 admin center to: <br/>- Add or remove users.<br/>- Assign user licenses.<br/>- View your products and services.<br/>- Complete setup tasks for your Microsoft 365 subscription. <br/><br/> To learn more, see [Overview of the Microsoft 365 admin center](../../admin/admin-overview/admin-center-overview.md).      |
+| The Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com))     | Use the Microsoft 365 Defender portal to set up and configure Defender for Business. <br/><br/>You'll use the Microsoft 365 Defender portal to: <br/>- View your devices and device protection policies.<br/>- View detected threats and take action.<br/>- View security recommendations and manage your security settings.<br/><br/>To learn more, see [Get started using the Microsoft 365 Defender portal](mdb-get-started.md).        |
 
 If you have Microsoft 365 Business Premium, then you also have Microsoft Intune. You can use the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com/](https://endpoint.microsoft.com/)) to manage devices and configure security settings. To learn more about Intune, see [Microsoft Intune is an MDM and MAM provider for your devices](/mem/intune/fundamentals/what-is-intune).
 
 
 ## Next steps
 
-- [See the trial playbook: Microsoft Defender for Business](trial-playbook-defender-business.md)
-- [Use the setup wizard in Microsoft Defender for Business](mdb-use-wizard.md)
-- [See the setup and configuration process for Defender for Business](mdb-setup-configuration.md)
-- [See how to get help and support for Defender for Business](mdb-get-help.md) (just in case you need help)
+- [See the trial playbook: Microsoft Defender for Business](trial-playbook-defender-business.md).
+- [Use the setup wizard in Microsoft Defender for Business](mdb-use-wizard.md).
+- [See the setup and configuration process for Defender for Business](mdb-setup-configuration.md).
+- [See how to get help and support for Defender for Business](mdb-get-help.md) (just in case you need help).
