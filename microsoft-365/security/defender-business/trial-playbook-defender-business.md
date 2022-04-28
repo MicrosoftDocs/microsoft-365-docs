@@ -51,8 +51,8 @@ As soon as you've signed up for Defender for Business, your first step is to **[
  
 The Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) is your one-stop shop for using and managing Defender for Business. It includes a welcome banner and callouts to help you get started, cards that surface relevant information, and a navigation bar to give you easy access to the various features and capabilities. 
 
-- **[Get started using the Microsoft 365 Defender portal](mdb-get-started.md)**.
-- **[Explore the navigation bar](mdb-get-started.md#the-navigation-bar)** on the left side of the screen to access your incidents, view reports, and manage your security policies. 
+- **[Visit the Microsoft 365 Defender portal](mdb-get-started.md)**.
+- **[Explore the navigation bar](mdb-get-started.md#the-navigation-bar)** on the left side of the screen to access your incidents, view reports, and manage your security policies and settings. 
 
 ### Step 3: Use the setup wizard in Defender for Business (recommended)
 
@@ -83,10 +83,7 @@ Defender for Business was designed to save small and medium-sized businesses tim
 
 If you choose not to use the setup wizard, the following diagram depicts the [overall setup and configuration process](mdb-setup-configuration.md#the-setup-and-configuration-process) for Defender for Business. 
 
-:::image type="content" source="media/mdb-setup-process-2.png" alt-text="Setup and configuration process for Microsoft Defender for Business.":::
-
-> [!TIP]
-> To learn more, see [Set up and configure Defender for Business](mdb-setup-configuration.md).
+[:::image type="content" source="media/mdb-setup-process-2.png" alt-text="Setup and configuration process for Microsoft Defender for Business.":::](mdb-setup-configuration.md)
 
 If you used the setup wizard, but you need to onboard more devices, such as non-Windows devices, go directly to step 4 in the following procedure: 
 
@@ -115,7 +112,7 @@ If you used the setup wizard, but you need to onboard more devices, such as non-
 
    | Action | Description |
    |:---|:---|
-   | [Choose where to manage your security policies and devices](mdb-configure-security-settings.md#choose-where-to-manage-security-policies-and-devices). | If you select the [simplified configuration process](mdb-simplified-configuration.md), you can view and manage your security policies in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). However, you're not limited to this option. If you've been using Intune, you can keep using the Microsoft Endpoint Manager admin center. |
+   | [Choose where to manage your security policies and devices](mdb-configure-security-settings.md#choose-where-to-manage-security-policies-and-devices). | If you select the [simplified configuration process](mdb-simplified-configuration.md), you can view and manage your security policies in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). However, you're not limited to this option. If you've been using [Intune](/mem/intune/protect/), you can keep using the Microsoft Endpoint Manager admin center to manage your security policies and devices. |
    | [View or edit your next-generation protection policies](mdb-configure-security-settings.md#view-or-edit-your-next-generation-protection-policies). | Next-generation protection settings include real-time protection, block at first sight, network protection, actions to take on potentially unwanted apps, and antivirus scheduled scans.  |
    | [View or edit your firewall policies](mdb-configure-security-settings.md#view-or-edit-your-firewall-policies-and-custom-rules). | Firewall protection determines what network traffic is allowed to flow to or from your company's devices. [Custom rules](mdb-custom-rules-firewall.md) can be used to define exceptions to your firewall policies. |
    | [Set up web content filtering](mdb-configure-security-settings.md#set-up-web-content-filtering). | Web content filtering enables your security team to track and regulate access to websites based on their content categories, such as adult content, high bandwidth, legal liability, leisure, or uncategorized. |
