@@ -68,9 +68,7 @@ sections:
 
       - question: If the preview program for Defender for Business has ended, can I extend it?
         answer: |
-          When your preview of Defender for Business has ended, you can purchase Defender for Business. 
-
-          For more information, see [Get Microsoft Defender for Business](get-defender-business.md).
+          When your preview of Defender for Business has ended, you can purchase Defender for Business. See [Get Microsoft Defender for Business](get-defender-business.md).
 
       - question: If I'm already using Microsoft 365 Business Premium, why do I need Defender for Business?
         answer: |
@@ -81,10 +79,6 @@ sections:
            - [Compare Microsoft Defender for Business to Microsoft 365 Business Premium](compare-mdb-m365-plans.md
           
            Defender for Business extends security capabilities in Microsoft 365 Business Premium with endpoint protection for your company's devices.
-
-      - question: What happens to the preview of Defender for Business if the preview trial offer expires before Defender for Business reaches general availability (GA)?
-        answer: |
-           Microsoft partners can extend preview trial licenses up to the point of GA. Once GA is complete, the preview trial won't be extended.
            
       - question: What happens if a customer has 20 users with a mix of subscriptions? For example, suppose they have 10 users assigned a Defender for Business license and 10 users assigned a Defender for Endpoint Plan 2 license?
         answer: |
