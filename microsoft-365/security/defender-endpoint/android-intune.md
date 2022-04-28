@@ -259,32 +259,32 @@ The device configuration profile is now assigned to the selected user group.
 
     :::image type="content" alt-text="Image of Microsoft Defender for Endpoint portal." source="images/9fe378a1dce0f143005c3aa53d8c4f51.png" lightbox="images/9fe378a1dce0f143005c3aa53d8c4f51.png":::
 
-## Set up Microsoft Defender in Personal Profile on AE BYOD mode
+## Set up Microsoft Defender in Personal Profile on Android Enterprise in BYOD mode
 
 >[!NOTE]
->MIcrosoft Defender support in Personal profile in AE BYOD mode is in Public preview. The following information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+>Microsoft Defender support in Personal profile in Android Enterprise (AE) in Bring-Your-Own-Device (BYOD) mode is now in public preview. The following information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-With Microsoft defender support in personal profile, user devices can be protected against phishing and malware attacks on Personal profile that could potentially compromise corporate resources on work profile. 
+With Microsoft defender support in Android personal profiles, user devices can be protected against phishing and malware attacks on a personal profile that could potentially compromise corporate resources on work profile. 
 
 **Set up Microsoft Defender in Personal Profile**
 
- Admin can go to the [Intune management portal](endpoint.microsoft.com) to set up and configure Microsoft Defender support in Personal profile by following these steps-
+Admins can go to the [Microsoft Endpoint Management admin center](endpoint.microsoft.com) to set up and configure Microsoft Defender support in personal profiles by following these steps:
 1. Go to **Apps> App configuration policies** and click on **Add**. Select **Managed Devices**.
 
     > [!div class="mx-imgBorder"]
     > ![Image of adding app configuration policy.](images/addpolicy.png)
 
-1.  Fill **Name** and **Description** to uniquely identify the configuration policy. Select platform as **‘Android Enterprise’**, Profile type as **‘Personally-owned work profile only’** and Targeted app as **‘Microsoft Defender’**.
+1.  Enter **Name** and **Description** to uniquely identify the configuration policy. Select platform as **‘Android Enterprise’**, Profile type as **‘Personally-owned work profile only’** and Targeted app as **‘Microsoft Defender’**.
  
     > [!div class="mx-imgBorder"]
     > ![Image of naming configuration policy.](images/selectapp.png)
 
-1. On the settings page, in **‘Configuration settings format’**, select **‘Use configuration designer’** and click on Add. From the list of configurations that come up, select **‘Microsoft Defender in Personal profile’**.
+1. On the settings page, in **‘Configuration settings format’**, select **‘Use configuration designer’** and click on **Add**. From the list of configurations that are displayed, select **‘Microsoft Defender in Personal profile’**.
 
     > [!div class="mx-imgBorder"]
     > ![Image of configuring personal profile.](images/addconfiguration.png)
 
-1. The selected configuration will get listed. Change the **configuration value to 1** to enable Microsoft Defender support on personal profile. A notification will come up informing the admin about the same. Click on Next.
+1. The selected configuration will be listed. Change the **configuration value to 1** to enable Microsoft Defender support personal profiles. A notification will appear informing the admin about the same. Click on **Next**.
 
     > [!div class="mx-imgBorder"]
     > ![Image of changing config value.](images/changeconfigvalue.png)
@@ -294,27 +294,26 @@ With Microsoft defender support in personal profile, user devices can be protect
     > [!div class="mx-imgBorder"]
     > ![Image of reviewing and creating policy.](images/savepolicy.png)
 
-Admin can also setup **privacy controls** from the Intune portal to control what data can be sent by the Defender mobile client to the security portal. For more information on this, please read [configuring privacy controls](https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/android-configure?view=o365-worldwide#privacy-controls).
+Admind can also setup **privacy controls** from the Microsoft Endpoint Manager admin center to control what data can be sent by the Defender mobile client to the security portal. For more information, see [configuring privacy controls](https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/android-configure?view=o365-worldwide#privacy-controls).
 
-Organization can communicate to their users to protect Personal profile with Microsoft Defender on their enrolled BYOD devices.
-- Pre-requisite: Microsoft Defender needs to be already installed and active in work profile to enabled MDE in Personal profile
+Organizations can communicate to their users to protect Personal profile with Microsoft Defender on their enrolled BYOD devices.
+- Pre-requisite: Microsoft Defender must be already installed and active in work profile to enabled Microsoft Defender in personal profiles.
 
-**Complete onboarding on device**
-1.	Install Microsoft Defender application in personal profile with personal play store account.
-2.	Install Company portal application on Personal profile. No sign in is required.
-3.	On launching the application, the user will see the sign in screen. **Login using corporate account only**.
-4.	On successful login user will see the following consent screens:
+**To complete onboarding a device**
+1.	Install the Microsoft Defender application in a personal profile with a personal Google Play store account.
+2.	Install the Company portal application on personal profile. No sign-in is required.
+3.	When a user launches the application, they'll see the sign-in screen. **Login using corporate account only**.
+4.	On a successful login, users will see the following screens:
 
-    a.	**EULA screen**: It is presented only if the user has not consented already in the Work profile.
+    a.	**EULA screen**: Presented only if the user has not consented already in the Work profile.
 
-    b.	**Notice screen**: User needs to provide consent on this screen to move forward with onboarding the application. (This is required only during First run)
+    b.	**Notice screen**: Users need to provide consent on this screen to move forward with onboarding the application. This is required only during the first run of the app.
 5.	Provide the required permissions to complete onboarding.
 
 >[!NOTE]
 >**Pre-requisite:**
- >1. Company portal needs to be enabled on personal profile.
+ >1. The Company portal needs to be enabled on personal profile.
  >2. Microsoft Defender needs to be already installed and active in work profile.
-
 
 
 ## Related topics
