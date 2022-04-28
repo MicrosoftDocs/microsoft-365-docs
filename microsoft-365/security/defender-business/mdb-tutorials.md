@@ -1,6 +1,6 @@
 ---
 title: Tutorials and simulations in Microsoft Defender for Business
-description: Learn about several tutorials to help you get started using Defender for Business
+description: Learn about several tutorials to help you get started using Defender for Business.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb

@@ -13,8 +13,8 @@ ms.collection:
 - SMB
 - M365-security-compliance                 
 search.appverid: MET150
-ms.reviewer: inbadian, shlomiakirav
-description: See how to get help or contact support for issues with Defender for Business.
+ms.reviewer: shlomiakirav
+description: Get help or contact support if you have any issues with Defender for Business.
 ---
 
 # Get help and support for Microsoft Defender for Business

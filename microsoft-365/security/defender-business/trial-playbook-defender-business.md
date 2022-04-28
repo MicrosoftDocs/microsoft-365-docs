@@ -175,5 +175,3 @@ New security events, such as threat detections on a device, adding new devices, 
 - [Tutorials and simulations in Microsoft Defender for Business](mdb-tutorials.md)
 - [Video: Enterprise-Grade Protection for Small & Medium Sized Businesses](https://youtu.be/umhUNzMqZto)
 - [Get Microsoft Defender for Business](get-defender-business.md)
-
-

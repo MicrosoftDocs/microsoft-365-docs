@@ -1,6 +1,6 @@
 ---
 title: View and edit your security settings in Microsoft Defender for Business
-description: View and edit security policies to protect devices with Defender for Business
+description: View and edit security policies and settings in Defender for Business
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
