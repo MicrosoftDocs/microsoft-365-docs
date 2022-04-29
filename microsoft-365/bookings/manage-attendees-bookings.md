@@ -35,6 +35,6 @@ Make sure that you set the **Maximum number of attendees** to more than 1 on the
 
 ## Common issues
 
-- Editing of a group booking service from the Teams app or from the mobile app resets attendees to 1.Use the Bookings web app to edit the group booking service.
+- Editing of a group booking service from the Teams app or from the mobile app resets attendees to 1. Use the Bookings web app to edit the group booking service.
 
 - Group bookings doesn't support resource bookings at this time.
