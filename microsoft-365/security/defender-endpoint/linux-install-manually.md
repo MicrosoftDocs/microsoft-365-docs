@@ -299,7 +299,7 @@ Download the onboarding package from Microsoft 365 Defender portal.
 2. In the first drop-down menu, select **Linux Server** as the operating system. In the second drop-down menu, select **Local Script** as the deployment method.
 3. Select **Download onboarding package**. Save the file as WindowsDefenderATPOnboardingPackage.zip.
 
-    ![Microsoft 365 Defender portal screenshot.](images/portal-onboarding-linux.png)
+   :::image type="content" source="images/portal-onboarding-linux.png" alt-text="Downloading an onboarding package in the Microsoft 365 Defender portal" lightbox="images/portal-onboarding-linux.png":::
 
 4. From a command prompt, verify that you have the file, and extract the contents of the archive:
 
@@ -318,12 +318,12 @@ Download the onboarding package from Microsoft 365 Defender portal.
 
     ```Output
     Archive:  WindowsDefenderATPOnboardingPackage.zip
-    inflating: MicrosoftDefenderATPOnboardingLinuxServer.py
+    inflating: MicrosoftDefenderATPOnboardingLinuxServer.sh
     ```
 
 ## Client configuration
 
-1. Copy MicrosoftDefenderATPOnboardingLinuxServer.py to the target device.
+1. Copy MicrosoftDefenderATPOnboardingLinuxServer.sh to the target device.
 
     > [!NOTE]
     > Initially the client device is not associated with an organization and the *orgId* attribute is blank.
@@ -332,21 +332,10 @@ Download the onboarding package from Microsoft 365 Defender portal.
     mdatp health --field org_id
     ```
 
-2. Run MicrosoftDefenderATPOnboardingLinuxServer.py.
-
-    > [!NOTE]
-    > To run this command, you must have `python`  or `python3` installed on the device depending on the disto and version. If needed, see [Step-by-step Instruction for Installing Python on Linux](https://opensource.com/article/20/4/install-python-linux).
-    
-    If you're running RHEL 8.x or Ubuntu 20.04 or higher, you will need to use `python3`.
+2. Run MicrosoftDefenderATPOnboardingLinuxServer.sh.
 
     ```bash
-    sudo python3 MicrosoftDefenderATPOnboardingLinuxServer.py
-    ```
-
-    For the rest of distros and versions, you will need to use `python`.
-    
-    ```bash
-    sudo python MicrosoftDefenderATPOnboardingLinuxServer.py
+    sudo bash MicrosoftDefenderATPOnboardingLinuxServer.sh
     ```
     
 3. Verify that the device is now associated with your organization and reports a valid organization identifier:
@@ -412,7 +401,7 @@ Alternatively, you can use an automated [installer bash script](https://github.c
 The script identifies the distribution and version, simplifies the selection of the right repository, sets up the device to pull the latest package, and combines the product installation and onboarding steps.
 
 ```bash
-❯ ./mde_installer.sh --help
+> ./mde_installer.sh --help
 usage: basename ./mde_installer.sh [OPTIONS]
 Options:
 -c|--channel      specify the channel from which you want to install. Default: insiders-fast

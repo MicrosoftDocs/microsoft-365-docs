@@ -6,11 +6,11 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: Admin
-ms.topic: hub-page
-ms.service: O365-seccomp
+ms.topic: conceptual
 ms.collection: m365-security-compliance
 ms.localizationpriority: high
 ROBOTS: NOINDEX, NOFOLLOW
+ms.prod: m365-security
 search.appverid: 
 - MOE150
 - MET150
@@ -21,7 +21,7 @@ description: "Microsoft Defender for Office 365 solutions trial playbook."
 
 Welcome to the Microsoft Defender for Office 365 trial playbook. This playbook will help you make the most of your 90-day free trial by teaching you how to safeguard your organization with Defender for Office 365. Using Microsoft recommendations, you'll learn how Defender for Office 365 can help you define protection policies, analyze threats to your organization, and respond to attacks.
 
-![A graphical representation of all components of Microsoft Defender for Office 365.](../../media/mdo-trial-playbook-what-is-mdo.png)
+:::image type="content" source="../../media/mdo-trial-playbook-what-is-mdo.png" alt-text="A graphical representation of all components of Microsoft Defender for Office 365." lightbox="../../media/mdo-trial-playbook-what-is-mdo.png":::
 
 These actions are recommendations from the Microsoft Defender team on key features to try in your 90-day trial.
 
@@ -33,8 +33,9 @@ After you have initiated the trial and completed the setup process, it may take 
 
 We have automatically configured [Preset security policies](preset-security-policies.md) in your environment. These policies represent a baseline protection profile that's suitable for most users. Standard protection includes:
 
-- Safe Links, Safe Attachments and Anti-Phishing policies that are scoped to the entire tenant or subset of users you may have chosen during the trial setup process.
-- Protection to SharePoint, OneDrive, Office apps, and Microsoft Teams.
+- Safe Links, Safe Attachments and anti-phishing policies that are scoped to the entire tenant or subset of users you may have chosen during the trial setup process.
+- Safe Attachments protection for SharePoint, OneDrive, and Microsoft Teams.
+- Safe Links protection for supported Office 365 apps.
 
 Watch this video to learn more: [Protect against malicious links with Safe Links in Microsoft Defender for Office 365 - YouTube](https://www.youtube.com/watch?v=vhIJ1Veq36Y&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=9).
 
@@ -56,7 +57,7 @@ Use the reporting capabilities in Defender for Office 365 to get more details ab
 - See where threats are blocked with the [Mailflow status report](view-email-security-reports.md#mailflow-status-report).
 - [Review links](view-reports-for-mdo.md#url-protection-report) that were viewed by users or blocked by the system.
 
-![Email & collaboration reports in the Microsoft 365 Defender portal.](../../media/mdo-trial-playbook-reporting.png)
+:::image type="content" source="../../media/mdo-trial-playbook-reporting.png" alt-text="The Email & collaboration reports in the Microsoft 365 Defender portal." lightbox="../../media/mdo-trial-playbook-reporting.png":::
 
 ## Step 2: Intermediate steps
 
@@ -70,7 +71,7 @@ Protect your most targeted and most visible users with Priority Account Protecti
 
 Watch this video to learn more: [Protecting priority accounts in Microsoft Defender for Office 365 - YouTube](https://www.youtube.com/watch?v=tqnj0TlzQcI&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=11).
 
-![Alerts in the Microsoft 365 Defender portal.](../../media/mdo-trial-playbook-alerts.png)
+:::image type="content" source="../../media/mdo-trial-playbook-alerts.png" alt-text="The Alerts in the Microsoft 365 Defender portal." lightbox="../../media/mdo-trial-playbook-alerts.png":::
 
 ### Avoid costly breaches by preventing user compromise
 
@@ -79,13 +80,13 @@ Get alerted to potential compromise and automatically limit the impact of these 
 - Review [compromised user alerts](address-compromised-users-quickly.md#compromised-user-alerts).
 - [Investigate and respond](address-compromised-users-quickly.md) to compromised users.
 
-![Investigate compromised users.](../../media/mdo-trial-playbook-investigation.png)
+:::image type="content" source="../../media/mdo-trial-playbook-investigation.png" alt-text="The Investigate compromised users." lightbox="../../media/mdo-trial-playbook-investigation.png":::
 
 Watch this video to learn more: [Detect and respond to compromise in Microsoft Defender for Office 365 - YouTube](https://www.youtube.com/watch?v=Pc7y3a-wdR0&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=5).
 
 ### Use Threat Explorer to investigate malicious email
 
-Defender for Office 365 enables you to investigate activities that put people in your organization at risk and to take action to protect your organization. You can do this using [Threat Explorer or (real-time detections)](threat-explorer.md).
+Defender for Office 365 enables you to investigate activities that put people in your organization at risk and to take action to protect your organization. You can do this using [Threat Explorer](threat-explorer.md).
 
 - [Find suspicious email that was delivered](investigate-malicious-email-that-was-delivered.md#find-suspicious-email-that-was-delivered): Find and delete messages, identify the IP address of a malicious email sender, or start an incident for further investigation.
 - [Check the delivery action and location](investigate-malicious-email-that-was-delivered.md#check-the-delivery-action-and-location): This check lets you know the location of problem email messages.
@@ -99,7 +100,7 @@ See the bigger picture with Campaign Views in Defender for Office 365, which giv
 - [Visualize the scope](campaigns.md#campaign-views-in-the-microsoft-365-defender-portal) of the attack.
 - [Track user interaction](campaigns.md#campaign-details) with these messages.
 
-![Campaign details in the Microsoft 365 Defender portal.](../../media/mdo-trial-playbook-campaign-details.png)
+  :::image type="content" source="../../media/mdo-trial-playbook-campaign-details.png" alt-text="The Campaign details in the Microsoft 365 Defender portal." lightbox="../../media/mdo-trial-playbook-campaign-details.png":::
 
 Watch this video to learn more: [Campaign Views in Microsoft Defender for Office 365 - YouTube](https://www.youtube.com/watch?v=DvqzzYKu7cQ&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=14).
 
@@ -111,7 +112,7 @@ Respond efficiently using Automated investigation and response (AIR) to review, 
 - [View details and results](email-analysis-investigations.md) of an investigation.
 - Eliminate threats by [approving remediation actions](air-remediation-actions.md).
 
-![Investigation results.](../../media/mdo-trial-playbook-investigation-results.png)
+:::image type="content" source="../../media/mdo-trial-playbook-investigation-results.png" alt-text="The investigation results." lightbox="../../media/mdo-trial-playbook-investigation-results.png":::
 
 ## Step 3: Advanced content
 
@@ -132,7 +133,7 @@ Equip your users with the right knowledge to identify threats and report suspici
 - [Assign training](attack-simulation-training.md#assign-training) to users based on simulation results.
 - [Track progress](attack-simulation-training-insights.md) of your organization in simulations and training completion.
 
-![Attack simulation training insights in the Microsoft 365 Defender portal.](../../media/mdo-trial-playbook-attack-simulation-training-results.png)
+  :::image type="content" source="../../media/mdo-trial-playbook-attack-simulation-training-results.png" alt-text="The attack simulation training insights in the Microsoft 365 Defender portal." lightbox="../../media/mdo-trial-playbook-attack-simulation-training-results.png":::
 
 ## Additional resources
 

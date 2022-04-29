@@ -2,7 +2,7 @@
 title: "Introduction to performance tuning for SharePoint Online"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 6/22/2018
 audience: Admin
 ms.topic: overview

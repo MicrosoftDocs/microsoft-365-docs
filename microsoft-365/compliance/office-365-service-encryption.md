@@ -1,5 +1,5 @@
 ---
-title: "Service Encryption"
+title: "Service encryption"
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -17,6 +17,8 @@ description: "Summary: Understand data resiliency in Microsoft Office 365."
 ---
 
 # Service Encryption
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 In addition to using volume-level encryption, Exchange Online, Microsoft Teams, SharePoint Online, and OneDrive for Business also use Service Encryption to encrypt customer data. Service Encryption allows for two key management options:
 
@@ -44,7 +46,7 @@ To learn how to set up Customer Key for Microsoft 365 for Exchange Online, Micro
 
 - [Service encryption with Customer Key](customer-key-overview.md)
 
-- [Set up Customer Key](customer-key-set-up.md)
+- [Set up Customer Key](customer-key-set-up.md)
 
 - [Manage Customer Key](customer-key-manage.md)
 
