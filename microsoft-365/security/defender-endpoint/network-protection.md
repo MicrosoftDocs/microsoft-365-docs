@@ -1,7 +1,7 @@
 ---
 title: Use network protection to help prevent connections to bad sites
 description: Protect your network by preventing users from accessing known malicious and suspicious network addresses
-keywords: Network protection, exploits, malicious website, ip, domain, domains
+keywords: Network protection, exploits, malicious website, ip, domain, domains, command and control, SmartScreen, toast notification
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
