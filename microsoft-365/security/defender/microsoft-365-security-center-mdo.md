@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender for Office 365 in Microsoft 365 Defender
-description: Learn about changes from the Security & Compliance Center to Microsoft 365 Defender.
+description: Learn about changes from the Security & compliance portal to Microsoft 365 Defender.
 keywords: Microsoft 365 security, Getting started with Microsoft 365 Defender, Microsoft Defender for Office 365, Microsoft Defender for Endpoint, MDO, MDE, single pane of glass, new security portal, new defender security portal
 ms.date: 02/21/2021
 ms.author: tracyp
@@ -54,11 +54,11 @@ The table below lists the changes in navigation between the Security & Complianc
 
 [Microsoft 365 Defender](./microsoft-365-defender.md) at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"><https://security.microsoft.com></a> combines security capabilities from existing Microsoft security portals, including the Security & Compliance Center. This improved center helps security teams protect their organization from threats more effectively and efficiently.
 
-If you are familiar with the Security & Compliance Center (protection.office.com), this article describes some of the changes and improvements in Microsoft 365 Defender.
+If you're familiar with the Security & Compliance Center (protection.office.com), this article describes some of the changes and improvements in Microsoft 365 Defender.
 
 Learn more about the benefits: [Overview of Microsoft 365 Defender](microsoft-365-defender.md)
 
-If you are looking for compliance-related items, visit the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>.
+If you're looking for compliance-related items, visit the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>.
 
 ## New and improved capabilities
 
@@ -87,7 +87,7 @@ Proactively search for threats, malware, and malicious activity across your endp
 
 [Custom detection rules](/windows/security/threat-protection/microsoft-defender-atp/custom-detection-rules) can be built from advanced hunting queries to help you proactively watch for events that might be indicative of breach activity and misconfigured devices.
 
-Here is an [example on advanced hunting](advanced-hunting-example.md) in Microsoft Defender for Office 365.
+Here's an [example on advanced hunting](advanced-hunting-example.md) in Microsoft Defender for Office 365.
 
 ### Action center
 
