@@ -50,7 +50,7 @@ Network protection requires Windows 10 Pro or Enterprise, and Microsoft Defender
 
 | Windows version | Microsoft Defender Antivirus |
 |:---|:---|
-| Windows 10 version 1709 or later <br> Windows 11 <br> Windows Server 1803 or later | [Microsoft Defender Antivirus real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md) <br> and [cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md) must be enabled (active)| |
+| Windows 10 version 1709 or later <br> Windows 11 <br> Windows Server 1803 or later | [Microsoft Defender Antivirus real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md) <br> and [cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md) must be enabled (active)|
 
 ## Why network protection is important
 
@@ -167,7 +167,7 @@ Microsoft Defender for Endpoint Administrators can configure Smart Screen Unbloc
  > [!div class="mx-imgBorder"]
  > ![Network protection smart screen block configuration ULR and IP form](images/network-protection-smart-screen-block-configuration.png)
 
-#### Using network protection
+## Using network protection
 
 Network protection is enabled per device, this is typically done using your management infrastructure. For supported methods please see: [Turn on network protection](enable-network-protection.md).
 
@@ -176,7 +176,7 @@ Network protection is enabled per device, this is typically done using your mana
 
 You can enable Network Protection in **Audit** mode or **Block** mode.  If you want to evaluate the impact of enabling Network Protection before blocking IP’s or URLs, you can enable it in Audit mode - for a period of time - to gather data on what would be blocked. Audit mode logs when end users have connected to an address or site that would otherwise have been blocked by network protection.
 
-#### Advanced Hunting
+## Advanced Hunting
 
 If you are using Advanced Hunting to identify audit events you will have up to 30 days history available from the console. See [Advanced Hunting](advanced-hunting-overview.md)
 
