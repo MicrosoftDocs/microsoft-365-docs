@@ -1,6 +1,6 @@
 ---
 title: Ensuring you always have the optimal security controls with preset security policies
-description: 
+description: The steps to ensure you always have the optimal security controls with preset security policies.
 search.product: 
 search.appverid: 
 ms.prod: m365-security
