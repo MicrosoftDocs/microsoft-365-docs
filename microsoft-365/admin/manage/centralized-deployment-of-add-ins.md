@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
-description: "Determine if your tenant and users meet the requirements, so that you can use Centralized Deployment to deploy Office add-ins."
+description: "Determine if your tenant and users meet the requirements, so that you can use Centralized Deployment to deploy Office Add-ins."
 ---
 
 # Determine if Centralized Deployment of add-ins works for your organization
 
-Centralized Deployment is the recommended and most feature-rich way for most customers to deploy Office add-ins to users and groups within your organization. If you're an admin, use this guidance to determine if your organization and users meet the requirements so that you can use Centralized Deployment.
+Centralized Deployment is the recommended and most feature-rich way for most customers to deploy Office Add-ins to users and groups within your organization. If you're an admin, use this guidance to determine if your organization and users meet the requirements so that you can use Centralized Deployment.
 
 Centralized Deployment provides the following benefits:
 
@@ -47,7 +47,7 @@ Centralized Deployment doesn't support the following:
 
 - Add-ins that target Office MSI version (except Outlook 2016)
 - An on-premises directory service
-- Add-in Deployment to an Exchange On-Prem Mailbox
+- Add-in deployment to an Exchange On-Prem Mailbox
 - Add-in deployment to SharePoint
 - Teams apps
 - Deployment of Component Object Model (COM) or Visual Studio Tools for Office (VSTO) add-ins.

@@ -21,6 +21,8 @@ ms.custom: seo-marvel-apr2020
 
 # Hash and upload the sensitive information source table for exact data match sensitive information types
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 This article shows you how to hash and upload your sensitive information source table.
 
 ## Hash and upload the sensitive information source table

@@ -1,5 +1,5 @@
 ---
-title: "Use record versioning to update records stored in SharePoint or OneDrive"
+title: "Use record versioning in SharePoint or OneDrive"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -21,12 +21,14 @@ description: "Learn about records to help you implement a records management sol
 
 # Use record versioning to update records stored in SharePoint or OneDrive
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
 > Because regulatory records block editing, record versioning is not available for regulatory records.
 >
-> You can also prevent record versioning for your tenant, even if you're not using regulatory records: Go to the **Records management** node in the Microsoft 365 compliance center > **Records management settings** > **Retention labels** > **Configure record versioning** and then turn off the setting for **Enable record versioning**.
+> You can also prevent record versioning for your tenant, even if you're not using regulatory records: Go to **Records management** in the Microsoft Purview compliance portal > **Records management settings** > **Retention labels** > **Configure record versioning** and then turn off the setting for **Enable record versioning**.
 
 The ability to mark a document as a [record](records-management.md#records) and restrict actions that can be performed on the record is an essential goal for any records management solution. However, collaboration might also be needed for people to create subsequent versions.
 

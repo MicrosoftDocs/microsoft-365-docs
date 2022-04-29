@@ -42,6 +42,14 @@ Response actions run along the top of a specific device page and include:
 
 [![Image of response actions.](images/response-actions.png)](images/response-actions.png#lightbox)
 
+> [!IMPORTANT]
+> [Microsoft Defender for Business](../defender-business/mdb-overview.md) includes the following manual response actions:
+> - Run antivirus scan
+> - Isolate device
+> - Stop and quarantine a file
+> - Add an indicator to block or allow a file
+
+> Your subscription must include Defender for Endpoint Plan 2 to have all of the response actions described in this article.
 
  You can find device pages from any of the following views:
 

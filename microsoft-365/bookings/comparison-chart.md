@@ -1,5 +1,5 @@
 ---
-title: "Comparison chart: Bookings web app vs. Bookings Teams app"
+title: "Comparison: Bookings web app vs. Bookings Teams app"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
