@@ -56,7 +56,7 @@ Allow senders (or domains) on the **Submissions** page in Microsoft 365 Defender
 > [!NOTE]
 >
 > - Based on what filters determined the mail to be malicious, during mailflow, the allows are added. For example, if filters found both sender and URL to be bad, an allow will be added for each. 
-> - When that entity (sender, domain, URL, file) encountered again, all filters associated with that entity are skipped.
+> - When that entity (sender, domain, URL, file) is encountered again, all filters associated with that entity are skipped.
 > - So for an email (containing this entity), during mailflow, if the rest of the filters find the email to be clean then the email will be delivered. So for example, sender allow (when authentication passes) will bypass all verdict except for malware and HCP associated with an attachment or URL.
 
 ## Add URL allows using the Submissions portal
