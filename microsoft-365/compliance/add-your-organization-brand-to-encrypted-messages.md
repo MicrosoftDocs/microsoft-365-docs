@@ -151,12 +151,12 @@ To remove a custom branding template:
 
    For more information, see [Remove-OMEConfiguration](/powershell/module/exchange/remove-omeconfiguration).
 
-## Create an Exchange mail flow rule that applies your custom branding to encrypted emails
+## Create an Exchange mail flow rule that applies your custom branding to encrypted emails sent to external recipients
 
 > [!IMPORTANT]
 > Third-party applications that scan and modify mail can prevent OME branding from being applied correctly.
 
-After you've either modified the default template or created new branding templates, you can create Exchange mail flow rules to apply your custom branding based on certain conditions. Such a rule will apply custom branding in the following scenarios:
+After you've either modified the default template or created new branding templates, you can create Exchange mail flow rules to apply your custom branding to mail sent to external reicpients with the encrypted message portal experience based on certain conditions. Such a rule will apply custom branding in the following scenarios:
 
 - If the email was manually encrypted by the end user using Outlook or Outlook on the web, formerly Outlook Web App
 - If the email was automatically encrypted by an Exchange mail flow rule or Microsoft Purview Data Loss Prevention policy
