@@ -96,7 +96,7 @@ Depending on your subscription, here are the available reports in all environmen
 |[SharePoint activity](sharepoint-activity-ww.md)|Yes|Yes|Yes|Yes|Yes|
 |[Microsoft Teams user activity](microsoft-teams-user-activity-preview.md)|Yes|Yes|Yes|Yes|N/A[^2]|
 |[Microsoft Teams device usage](microsoft-teams-device-usage-preview.md)|Yes|Yes|Yes|Yes|N/A[^2]|
-|[Microsoft Teams usage activity](microsoft-teams-usage-activity.md)|Yes|Yes|N/A|N/A|N/A|
+|[Microsoft Teams usage activity](microsoft-teams-usage-activity.md)|Yes|Yes|Yes|Yes|N/A[^2]|
 |[Yammer activity](yammer-activity-report-ww.md)|Yes|Yes|N/A[^2]|N/A[^2]|N/A[^2]|
 |[Yammer device usage](yammer-device-usage-report-ww.md)|Yes|Yes|N/A[^2]|N/A[^2]|N/A[^2]|
 |[Yammer groups activity report](yammer-groups-activity-report-ww.md)|Yes|Yes|N/A[^2]|N/A[^2]|N/A[^2]|
