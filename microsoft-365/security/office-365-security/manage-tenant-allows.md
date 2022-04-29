@@ -121,7 +121,7 @@ Allow Files  on the **Submissions** page in Microsoft 365 Defender.
 > - Only the _combination_ of the spoofed user _and_ the sending infrastructure as defined in the domain pair is specifically allowed or blocked from spoofing.
 > - When you configure an allow or block entry for a domain pair, messages from that domain pair no longer appear in the spoof intelligence insight.
 > - Entries for spoofed senders never expire.
-> - Spoof supports both allow and block through . URL supports only block.
+> - Spoof supports both allow and block through. URL supports only block.
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Tenant Allow/Block Lists** in the **Rules** section. Or, to go directly to the **Tenant Allow/Block Lists** page, use <https://security.microsoft.com/tenantAllowBlockList>.
 
