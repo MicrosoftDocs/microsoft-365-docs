@@ -7,10 +7,10 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: how-to
-ms.date: 02/24/2022
+ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
@@ -21,24 +21,19 @@ ms.collection:
 
 # Manage devices in Microsoft Defender for Business
 
-> [!IMPORTANT]
-> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. Defender for Business as a standalone subscription is in in preview, and will roll out gradually to customers and IT Partners who [sign-up here](https://aka.ms/mdb-preview) to request it. Preview includes an [initial set of scenarios](mdb-tutorials.md#try-these-preview-scenarios), and we will be adding capabilities regularly.
-> 
-> Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. 
+> [!NOTE]
+> Microsoft Defender for Business is now included in [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
 In Microsoft Defender for Business, you can manage devices as follows:
 
 - [View a list of onboarded devices](#view-the-list-of-onboarded-devices) to see their risk level, exposure level, and health state
-
 - [Take action on a device](#take-action-on-a-device-that-has-threat-detections) that has threat detections
-
 - [Onboard a device to Defender for Business](#onboard-a-device)  
-
 - [Offboard a device from Defender for Business](#offboard-a-device)
 
 >
 > **Got a minute?**
-> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about Microsoft Defender for Business</a>. We'd love to hear from you!
+> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about security</a>. We'd love to hear from you!
 >
 
 ## View the list of onboarded devices
@@ -71,14 +66,11 @@ See [Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md)
 
 ## Offboard a device
 
-See [Offboarding a device](mdb-onboard-devices.md#offboarding-a-device).
+See [Offboarding a device](mdb-offboard-devices.md).
 
 ## Next steps
 
 - [View and manage incidents in Microsoft Defender for Business](mdb-view-manage-incidents.md)
-
 - [Respond to and mitigate threats in Microsoft Defender for Business](mdb-respond-mitigate-threats.md)
-
 - [Review remediation actions in the Action center](mdb-review-remediation-actions.md)
-
 - [Create or edit device groups](mdb-create-edit-device-groups.md)

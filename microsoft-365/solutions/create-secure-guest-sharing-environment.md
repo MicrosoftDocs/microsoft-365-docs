@@ -63,7 +63,7 @@ Now, guest will be required to enroll in multi-factor authentication before they
 
 ### More information
 
-[Planning an Azure AD Multi-Factor Authentication deployment](/azure/active-directory/authentication/howto-mfa-getstarted)
+[Planning an Azure AD multi-factor authentication deployment](/azure/active-directory/authentication/howto-mfa-getstarted)
 
 ## Set up a terms of use for guests
 
@@ -138,7 +138,7 @@ To set up a guest access review
 13. Type a **Review name** and review the settings.
 14. Click **Create**.
 
-It's important to note that for SharePoint and OneDrive locations, documents will be proactively blocked right after detection of sensitive information, irrespective of whether the document is shared or not, for all external users, while internal users will continue to have access to the document.
+It's important to note that for SharePoint and OneDrive locations, documents will be proactively blocked right after detection of sensitive information, irrespective of whether the document is shared or not, for all guests, while internal users will continue to have access to the document.
 
 ### More information
 
@@ -203,13 +203,13 @@ To configure a guest session timeout policy
 
 ## Create a sensitive information type for a highly sensitive project
 
-Sensitive information types are predefined strings that can be used in policy workflows to enforce compliance requirements. The Microsoft 365 Compliance Center comes with over one hundred sensitive information types, including driver's license numbers, credit card numbers, bank account numbers, etc.
+Sensitive information types are predefined strings that can be used in policy workflows to enforce compliance requirements. The Microsoft Purview compliance portal comes with over one hundred sensitive information types, including driver's license numbers, credit card numbers, bank account numbers, etc.
 
 You can create custom sensitive information types to help manage content specific to your organization. In this example, we'll create a custom sensitive information type for a highly sensitive project. We can then use this sensitive information type to automatically apply a sensitivity label.
 
 To create a sensitive information type
 
-1. In the [Microsoft 365 Compliance Center](https://compliance.microsoft.com), in the left navigation, expand **Classification**, and then click **Sensitive info types**.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), in the left navigation, expand **Classification**, and then click **Sensitive info types**.
 2. Click **Create**.
 3. For **Name** and **Description**, type **Project Saturn**, and then click **Next**.
 4. Click **Add an element**.
@@ -227,7 +227,7 @@ If you are using sensitivity labels in your organization, you can automatically 
 
 To create an auto-labeling policy
 
-1. Open the [Microsoft 365 compliance admin center](https://compliance.microsoft.com).
+1. Open the [Microsoft Purview admin center](https://compliance.microsoft.com).
 2. In the left navigation, click **Information protection**.
 3. On the **Auto-labeling** tab, click **Create auto-labeling policy**.
 4. On the **Choose info you want this label applied to** page, choose **Custom** and click **Next**.
@@ -253,11 +253,11 @@ With the policy in place, when a user types "Project Saturn" into a document, th
 
 ## Create a DLP policy to remove guest access to highly sensitive files
 
-You can use [data loss prevention (DLP)](../compliance/dlp-learn-about-dlp.md) to prevent unwanted guest sharing of sensitive content. Data loss prevention can take action based on a file's sensitivity label and remove guest access.
+You can use [Microsoft Purview data loss prevention (DLP)](../compliance/dlp-learn-about-dlp.md) to prevent unwanted guest sharing of sensitive content. Data loss prevention can take action based on a file's sensitivity label and remove guest access.
 
 To create a DLP rule
 
-1. In the Microsoft 365 compliance admin center, go to the [Data loss prevention page](https://compliance.microsoft.com/datalossprevention).
+1. In the Microsoft Purview admin center, go to the [Data loss prevention page](https://compliance.microsoft.com/datalossprevention).
 2. Click **Create policy**.
 3. Choose **Custom** and click **Next**.
 4. Type a name for the policy and click **Next**.
@@ -278,7 +278,10 @@ To create a DLP rule
 13. Choose your test options and click **Next**.
 14. Click **Submit**, and then click **Done**.
 
-It's important to note that this policy doesn't remove access if the guest is a member of the site or team as a whole. If you plan to have highly sensitive documents in a site or team with guest members, consider using [private channels in Teams](https://support.microsoft.com/office/de3e20b0-7494-439c-b7e5-75899ebe6a0e) and only allowing members of your organization in the private channels.
+It's important to note that this policy doesn't remove access if the guest is a member of the site or team as a whole. If you plan to have highly sensitive documents in a site or team with guest members, consider these options:
+
+- Use [private channels](/MicrosoftTeams/private-channels) and only allowing members of your organization in the private channels.
+- Use [shared channels](/MicrosoftTeams/shared-channels) to collaborate with people outside your organization while only having people from your organization in the team itself.
 
 ## Additional options
 

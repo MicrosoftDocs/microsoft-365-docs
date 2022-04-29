@@ -1,12 +1,12 @@
 ### YamlMime:FAQ
 metadata:
-  title: "Microsoft Home Use Program frequently-asked questions (FAQ)"
+  title: "Microsoft Home Use Program FAQ"
   author: cmcatee-MSFT
   ms.author: cmcatee
   manager: scotv
   ms.reviewer: tugu, jmueller
   audience: Admin
-  ms.topic: reference
+  ms.topic: faq
   ms.service: o365-administration
   ms.localizationpriority: medium
   ms.collection: 
@@ -19,7 +19,6 @@ metadata:
   search.appverid: MET150 
   description: "Frequently-asked questions (FAQ) about the Microsoft Home Use Program."
   ms.date: 05/01/2021
-    
 title: Microsoft Home Use Program frequently-asked questions (FAQ)
 summary: |
   Volume Licensing customers use the Microsoft Home Use Program (HUP) on the [Microsoft Store for Business website](https://go.microsoft.com/fwlink/?linkid=2139192).
@@ -54,7 +53,7 @@ sections:
           
           - Customers who have active Software Assurance for qualifying Office applications
           - Customers who have Microsoft 365/Microsoft 365 E3/E5 From Software Assurance
-          - Commercial and government customers who have purchased ≥ 2,000 licenses of one or a mix of Microsoft 365 E3/E5
+          - Commercial and government customers who have purchased ≥ 2,000 licenses of one or a mix of Microsoft 365 E3/E5
           - Education and non-profit customers
           - Commercial and government customers who have spent $250,000 USD or more in the previous 12 months on eligible Power BI, Office, Surface devices & accessories, Windows and Enterprise Mobility 
           
@@ -66,7 +65,7 @@ sections:
       - question: |
           How do I become the assigned IT Admin of a managed tenant?
         answer: |
-          You must create a special record in DNS to prove you own your company domain, ex:contoso.com.
+          You must create a special record in DNS to prove you own your company domain, for example, contoso.com.
           
           For a step-by-step process for becoming a managed tenant, see [Take over an unmanaged directory as administrator in Azure Active](/azure/active-directory/users-groups-roles/domains-admin-takeover).
           
@@ -80,16 +79,16 @@ sections:
         answer: |
           1. **Sign Up** Go to the [Microsoft Home Use Program page](https://www.microsoft.com/home-use-program), and select the Get Started button. Employees enter their corporate email address.
           2. **Confirm**  An email is sent to their corporate email address inbox with a link that authenticates their eligibility for the program.
-          3. **Sign In** After they have been authenticated, they begin the purchase process by providing the Microsoft account that’s associated with their personal email address, which allows them to view the discounts on products available to them based on the organization’s Home Use Program benefit. For more info, see [How to sign in to your Microsoft account](https://support.microsoft.com/help/4028195/microsoft-account-sign-in).
+          3. **Sign In** After they have been authenticated, they begin the purchase process by providing the Microsoft account that's associated with their personal email address, which allows them to view the discounts on products available to them based on the organization's Home Use Program benefit. For more info, see [How to sign in to your Microsoft account](https://support.microsoft.com/help/4028195/microsoft-account-sign-in).
           4. **Shop** The purchase is processed and completed in the Microsoft Store.
           
       - question: |
-          If an employee subscribes to Microsoft 365 through the Microsoft Home Use Program, how does this impact our organization’s Microsoft 365 business subscription and device limit?
+          If an employee subscribes to Microsoft 365 through the Microsoft Home Use Program, how does this impact our organization's Microsoft 365 business subscription and device limit?
         answer: |
-          Installs through the Home Use Program have no impact on your organization’s Microsoft 365 business subscription. When employees activate Microsoft 365 on their personal devices, they use their personal Microsoft account, not their work account. Your organization’s IT administrators don’t manage or support any purchases made through the Home Use Program.
+          Installs through the Home Use Program have no impact on your organization's Microsoft 365 business subscription. When employees activate Microsoft 365 on their personal devices, they use their personal Microsoft account, not their work account. Your organization's IT administrators don't manage or support any purchases made through the Home Use Program.
 
       - question: |
-          I’m having trouble managing my organization’s Microsoft Home Use Program benefit. Where can I get support?
+          I'm having trouble managing my organization's Microsoft Home Use Program benefit. Where can I get support?
         answer: |
           For support for issues migrating from the Volume Licensing Service Center or to access Microsoft Store for Business, see [VLSC Support](https://www.microsoft.com/Licensing/servicecenter/default.aspx?wa=wsignin1.0).
           
@@ -98,7 +97,7 @@ sections:
       - question: |
           Why am I not seeing an option to purchase Visio Professional 2021 and/or Project Professional 2021?
         answer: |
-          If one of your employees took advantage of the previous program and is looking for discounts on Visio Professional 2021 and/or Project Professional 2021, please go through the eligibility validation process and, once signed in with your personal Microsoft account, go to **Other Office products** to purchase these products. If you don't see expected discounts applied, contact your employer’s Home Use Program administrator to ask about these additional benefits.
+          If one of your employees took advantage of the previous program and is looking for discounts on Visio Professional 2021 and/or Project Professional 2021, please go through the eligibility validation process and, once signed in with your personal Microsoft account, go to **Other Office products** to purchase these products. If you don't see expected discounts applied, contact your employer's Home Use Program administrator to ask about these additional benefits.
 
       - question: |
           What if my employees have questions about this program or need support with purchasing and installation?
@@ -129,12 +128,12 @@ sections:
       - question: |
           How does the Microsoft Home Use Program benefit employees?
         answer: |
-          When employees purchase Microsoft 365 products at a significant discount, they’re able to use the same software at home that they use at the office. This helps boost their productivity, improve their skills, and enhance job satisfaction.
+          When employees purchase Microsoft 365 products at a significant discount, they're able to use the same software at home that they use at the office. This helps boost their productivity, improve their skills, and enhance job satisfaction.
       
       - question: |
           What happens when an employee leaves the company?
         answer: |
-          For employees who qualify for the Microsoft 365 subscription offer and have purchased through the program, the discounted price applies for as long as the employee’s subscription remains active, regardless of their employment status with your organization. However, their commercial use rights end once their employment ends. For employees who qualified for Office 2019 software offers, they must uninstall Office software purchased through Home Use Program once the employee leaves the company. 
+          For employees who qualify for the Microsoft 365 subscription offer and have purchased through the program, the discounted price applies for as long as the employee's subscription remains active, regardless of their employment status with your organization. However, their commercial use rights end once their employment ends. For employees who qualified for Office 2019 software offers, they must uninstall Office software purchased through Home Use Program once the employee leaves the company. 
 
 additionalContent: |
 

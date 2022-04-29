@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Reports in the admin center - Email activity"
+title: "Microsoft 365 admin center email activity reports"
 ms.author: kwekua
 author: kwekua
 manager: scotv
