@@ -368,8 +368,14 @@
             href: sit-common-scenarios.md
         - name: Sensitive information type reference
           items:
-          - name: Sensitive information type entity definitions 
-            href: sensitive-information-type-entity-definitions.md
+          - name: All Sensitive information type entity definitions
+            items: 
+              - name: Sensitive information type entity definitions
+                href: sensitive-information-type-entity-definitions.md
+              - name: ABA routing number
+                href: sit-defn-aba-routing.md
+              - name: All full names
+                href: sit-defn-all-full-names.md
           - name: Sensitive information type functions
             href: sit-functions.md
           - name: Custom sensitive information type filters reference

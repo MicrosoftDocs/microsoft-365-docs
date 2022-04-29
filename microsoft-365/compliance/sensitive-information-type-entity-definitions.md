@@ -18,14 +18,14 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 recommendations: false
-description: "There are many sensitive information types that are ready for you to use in your DLP policies. This article lists all of these sensitive information types and shows what a DLP policy looks for when it detects each type."
+description: "There are many sensitive information types that are ready for you to use in your DLP policies. This article is a list of all these sensitive information type entity definitions."
 ---
 
 # Sensitive information type entity definitions
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-This article lists all sensitive information type entity definitions. Each definition shows what a DLP policy looks for to detect each type. To learn more about sensitive information types, see [Sensitive information types](sensitive-information-type-learn-about.md)
+This article is a list of all sensitive information type (SIT) entity definitions. Each link takes you to the definition of that specific SIT  and shows what a DLP policy looks for to detect each type. To learn more about sensitive information types, see [Sensitive information types](sensitive-information-type-learn-about.md)
 
 > [!NOTE]
 > Mapping of confidence level (high/medium/low) with accuracy number (numeric value of 1 to 100)
@@ -34,127 +34,10 @@ This article lists all sensitive information type entity definitions. Each defin
 > - Medium confidence: 75
 > - High confidence: 85
 
-## ABA routing number
+- [ABA routing number](sit-defn-aba-routing.md)
+- [All full names]
 
-### Format
 
-nine digits that may be in a formatted or unformatted pattern
-
-### Pattern
-
-- two digits in the ranges 00-12, 21-32, 61-72, or 80
-- two digits
-- an optional hyphen
-- four digits
-- an optional hyphen
-- a digit
-
-### Checksum
-
-Yes
-
-### Definition
-
-A policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-
-- The function Func_aba_routing finds content that matches the pattern.
-- A keyword from Keyword_ABA_Routing is found.
-
-A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-
-- The function Func_aba_routing finds content that matches the pattern.
-
-```xml
-    <!-- ABA Routing Number -->
-    <Entity id="cb353f78-2b72-4c3c-8827-92ebe4f69fdf" patternsProximity="300" recommendedConfidence="75">
-      <Pattern confidenceLevel="75">
-        <IdMatch idRef="Func_aba_routing" />
-        <Match idRef="Keyword_ABA_Routing" />
-      </Pattern>
-      <Pattern confidenceLevel="65">
-        <IdMatch idRef="Func_aba_routing" />
-      </Pattern>
-    </Entity>
-```
-
-### Keywords
-
-#### Keyword_aba_routing
-
-- aba number
-- aba#
-- aba
-- abarouting#
-- abaroutingnumber
-- americanbankassociationrouting#
-- americanbankassociationroutingnumber
-- bankrouting#
-- bankroutingnumber
-- routing #
-- routing no
-- routing number
-- routing transit number
-- routing#
-- RTN
-
-## All full names
-
-All full names is a bundled named entity. It detects full names for people from all supported countries/regions, which include Australia, China, Japan, U.S., and countries in the EU. Use this SIT to detect all possible matches of full names.
-
-### Format
-
-Various.
-
-### Pattern
-
-Various.
-
-### Checksum
-
-No.
-
-### Description
-
-This named entity SIT matches personal names that a human would identify as a name with high confidence. For example, if a string is found consisting of a given name and is followed by a family name then a match is made with high confidence. It uses three primary resources:
-
-- A dictionary of given names.
-- A dictionary of family names.
-- Patterns of how names are formed.
-
-The three resources are different for each country.  The strings *Olivia Wilson* would trigger a match. Common given/family names are given a higher confidence than rarer names. However, the pattern also allows partial matches. If a given name from the dictionary is found and it's followed by a family name that isn't in the dictionary, then a partial match is triggered. For example, *Tomas Richard* would trigger a partial match. Partial matches are given lower confidence.
-
-In addition, patterns that a human would see as indicative of names are also matched with appropriate confidence. Like *O. Wilson*, *O.P. Wilson*, *Dr. O. P. Wilson*, *Wilson, O.P.* or *T. Richard, Jr.* would be matches.
-
-### Supported languages
-
-- English
-- Bulgarian
-- Chinese
-- Croatian
-- Czech
-- Danish
-- Estonian
-- Finnish
-- French
-- German
-- Hungarian
-- Icelandic
-- Irish
-- Italian
-- Japanese
-- Latvian
-- Lithuanian
-- Maltese
-- Dutch
-- Norwegian
-- Polish
-- Portuguese
-- Romanian
-- Slovak
-- Slovenian
-- Spanish
-- Swedish
-- Turkish
 
 ## All medical terms and conditions
 
