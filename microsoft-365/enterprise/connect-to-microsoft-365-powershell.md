@@ -203,7 +203,7 @@ For more information, see [Azure Cloud Shell](/azure/cloud-shell/overview).
 
 ## Get started with the Microsoft Graph PowerShell SDK
 
-You can use Microsoft Graph PowerShell SDK to Access to all Microsoft Graph APIs.
+You can use the Microsoft Graph PowerShell SDK to Access all Microsoft Graph APIs.
 
 For more information, see [Get started with the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/get-started?view=graph-powershell-beta)
 
