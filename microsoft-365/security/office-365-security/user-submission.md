@@ -90,7 +90,7 @@ After you've verified that your mailbox meets all applicable prerequisites, you 
           > [!IMPORTANT]
           > U.S. Government organizations (GCC, GCC High, and DoD) can only configure **My organization's mailbox**. The other two options are disabled.
           >
-          > If organizations are configured to send to custom mailbox only,  reported messages will appear in **User reported messages** but their results will always be empty (as they would not have been rescanned).
+          > If organizations are configured to send to custom mailbox only, reported messages will appear in **User reported messages** but their results will always be empty (as they would not have been rescanned).
 
        Regardless of the value you selected for **Send the reported messages to**, the following settings are available:
 
