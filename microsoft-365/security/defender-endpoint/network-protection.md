@@ -119,10 +119,10 @@ A user visits a website:
   - **Feedback** The toast notification presents the user with a link to submit a ticket, which the user can use to submit feedback to the administrator in an attempt to justify access to the site.
 
   > [!div class="mx-imgBorder"]
-  > ![Shows a network protection malicious content warn notification](images/network-protection-phishing-warn.png)
-
-  > [!div class="mx-imgBorder"]
   > ![Shows a network protection phishing content warn notification](images/network-protection-phishing-warn-2.png)
+
+  > [NOTE!]
+  > The images shown here for warn experience and block experience (below) both list **"blocked url"** as example placeholder text; in a functioning environment the actual url or domain will be listed.  
 
 #### Block experience
 
