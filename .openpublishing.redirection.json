@@ -362,7 +362,7 @@
     },
     {
       "source_path": "microsoft-365/business/increase-threat-protection.md",
-      "redirect_url": "/microsoft-365/admin/security-and-compliance/increase-threat-protection",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-security-overview",
       "redirect_document_id": true
     },
     {
@@ -6292,22 +6292,22 @@
     },
     {
       "source_path": "microsoft-365/business-video/anti-malware.md",
-      "redirect_url": "/microsoft-365/admin/security-and-compliance/increase-threat-protection#raise-the-level-of-protection-against-malware-in-mail",
+      "redirect_url": "/microsoft-365/microsoft-365/business-premium/m365bp-security-overview",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/business-video/prevent-ransom-in-email.md",
-      "redirect_url": "/microsoft-365/admin/security-and-compliance/increase-threat-protection#protect-against-ransomware",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-security-overview",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/business-video/safe-links.md",
-      "redirect_url": "/microsoft-365/admin/security-and-compliance/increase-threat-protection#protect-against-phishing-attacks-with-safe-links",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-security-overview",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/business-video/setup-anti-phishing.md",
-      "redirect_url": "/microsoft-365/admin/security-and-compliance/increase-threat-protection#protect-your-email-from-phishing-attacks",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-security-overview",
       "redirect_document_id": false
     },
     {
@@ -6443,6 +6443,11 @@
     {
       "source_path": "microsoft-365/business-video/what-is-admin.md",
       "redirect_url": "/microsoft-365/admin/add-users/about-admin-roles",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/admin-overview/about-the-admin-center.md",
+      "redirect_url": "/microsoft-365/admin/admin-overview/admin-center-overview",
       "redirect_document_id": false
     },
     {
@@ -6898,6 +6903,11 @@
     {
       "source_path": "microsoft-365/business-premium/m365bp-secure-windows-10-devices.md",
       "redirect_url": "/microsoft-365/business-premium/m365bp-manage-windows-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/security-and-compliance/increase-threat-protection.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-security-overview",
       "redirect_document_id": false
     }
   ]
