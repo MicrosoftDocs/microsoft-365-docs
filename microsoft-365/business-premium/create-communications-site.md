@@ -4,11 +4,11 @@ f1.keywords:
 - NOCSH
 ms.author: samanro
 author: samanro
-manager: scotv
+manager: dansimp
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection: 
 - Adm_O365
 - M365-subscription-management 
@@ -23,16 +23,16 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn why and how to create a SharePoint communications site for your campaign or business with Microsoft 365."
+description: "Learn why and how to create a SharePoint communications site for your campaign or business with Microsoft 365, and protect the team from cyberattacks and incursions from malware and other threats due to improper file sharing."
 ---
 
 # Create a communications site in SharePoint
 
-A great way to communicate priorities, share strategy documents, and highlight upcoming events is to use a communications site in SharePoint. Communications sites are for sharing things broadly across your whole business or campaign; it's your internal strategy site.
+A great way to communicate priorities, share strategy documents, and highlight upcoming events is to use a communications site in SharePoint, and that's what this mission is all about. Communications sites are for sharing things broadly across your whole business or campaign &mdash; it's your internal strategy site and tactical room. 
 
 ## Best practices
 
-Include the following elements in your Communications site:
+Include the following elements in a Communications site:
 
 1. Add your logo and colors as a header image and theme.
 
@@ -67,3 +67,5 @@ Learn all [about Communications sites](https://support.office.com/article/What-i
 ## Admin settings
 
 If you don't see the **+ Create** site link, self-service site creation might not be available in Microsoft 365. To create a team site, contact the person administering Microsoft 365 in your organization. If you're a Microsoft 365 admin, see [Manage site creation in SharePoint Online](/sharepoint/manage-site-creation) to enable self-service site creation for your organization or [Manage sites in the new SharePoint admin center](/sharepoint/manage-sites-in-new-admin-center) to create a site from the <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint admin center</a>.
+
+Congratulations &mdash; you've completed the mission! Now, immediately turn your focus toward [protecting the managed devices](m365bp-protect-devices.md) for the entire org!

@@ -2,8 +2,8 @@
 title: "Set up a connector to archive Twitter data in Microsoft 365"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 
 audience: Admin
@@ -16,9 +16,11 @@ description: "Admins can set up a connector to import and archive Twitter data f
 
 # Set up a connector to archive Twitter data (preview)
 
-Use a Veritas connector in the Microsoft 365 compliance center to import and archive data from the Twitter platform to user mailboxes in your Microsoft 365 organization. Veritas provides a [Twitter](https://www.veritas.com/insights/merge1/twitter) connector that is configured to capture items from a third-party data source and import those items to Microsoft 365. The connector converts content such as tweets, retweets, and comments from Twitter to an email message format and then imports those items to the user mailboxes in Microsoft 365.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-After Twitter data is stored in user mailboxes, you can apply Microsoft 365 compliance features such as Litigation Hold, eDiscovery, retention policies and retention labels. Using a Twitter connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
+Use a Veritas connector in the Microsoft Purview compliance portal to import and archive data from the Twitter platform to user mailboxes in your Microsoft 365 organization. Veritas provides a [Twitter](https://www.veritas.com/insights/merge1/twitter) connector that is configured to capture items from a third-party data source and import those items to Microsoft 365. The connector converts content such as tweets, retweets, and comments from Twitter to an email message format and then imports those items to the user mailboxes in Microsoft 365.
+
+After Twitter data is stored in user mailboxes, you can apply Microsoft Purview features such as Litigation Hold, eDiscovery, retention policies and retention labels. Using a Twitter connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
 
 ## Overview of archiving Twitter data
 
@@ -30,7 +32,7 @@ The following overview explains the process of using a connector to archive Twit
 
 2. Once every 24 hours, Twitter items are copied to the Veritas Merge1 site. The connector also converts Twitter items to an email message format.
 
-3. The Twitter connector that you create in the Microsoft 365 compliance center connects to the Veritas Merge1 site every day, and transfers the Twitter content to a secure Azure Storage location in the Microsoft cloud.
+3. The Twitter connector that you create in the compliance portal connects to the Veritas Merge1 site every day, and transfers the Twitter content to a secure Azure Storage location in the Microsoft cloud.
 
 4. The connector imports the converted items to the mailboxes of specific users using the value of the *Email* property of the automatic user mapping as described in [Step 3](#step-3-map-users-and-complete-the-connector-setup). A subfolder in the Inbox folder named **Twitter** is created in the user mailboxes, and items are imported to that folder. The connector determines which mailbox to import items to by using the value of the *Email* property. Every Twitter item contains this property, which is populated with the email address of every participant of the item.
 
@@ -40,13 +42,13 @@ The following overview explains the process of using a connector to archive Twit
 
 - Create a Twitter application at <https://developer.twitter.com> to fetch data from your Twitter account. For step-by step instructions about creating the application, see [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Twitter%20User%20Guide.pdf).
 
-- The user who creates the YouTube connector in Step 1 (and completes it in Step 3) must be assigned the Data Connector Admin role. This role is required to add connectors on the **Data connectors** page in the Microsoft 365 compliance center. This role is added by default to multiple role groups. For a list of these role groups, see the "Roles in the security and compliance centers" section in [Permissions in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatively, an admin in your organization can create a custom role group, assign the Data Connector Admin role, and then add the appropriate users as members. For instructions, see the "Create a custom role group" section in [Permissions in the Microsoft 365 compliance center](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- The user who creates the YouTube connector in Step 1 (and completes it in Step 3) must be assigned the Data Connector Admin role. This role is required to add connectors on the **Data connectors** page in the compliance portal. This role is added by default to multiple role groups. For a list of these role groups, see the "Roles in the security and compliance centers" section in [Permissions in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatively, an admin in your organization can create a custom role group, assign the Data Connector Admin role, and then add the appropriate users as members. For instructions, see the "Create a custom role group" section in [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
-- This Veritas data connector is in public preview in GCC environments in the Microsoft 365 US Government cloud. Third-party applications and services might involve storing, transmitting, and processing your organization's customer data on third-party systems that are outside of the Microsoft 365 infrastructure and therefore are not covered by the Microsoft 365 compliance and data protection commitments. Microsoft makes no representation that use of this product to connect to third-party applications implies that those third-party applications are FEDRAMP compliant.
+- This Veritas data connector is in public preview in GCC environments in the Microsoft 365 US Government cloud. Third-party applications and services might involve storing, transmitting, and processing your organization's customer data on third-party systems that are outside of the Microsoft 365 infrastructure and therefore are not covered by the Microsoft Purview and data protection commitments. Microsoft makes no representation that use of this product to connect to third-party applications implies that those third-party applications are FEDRAMP compliant.
 
 ## Step 1: Set up the Twitter connector
 
-The first step is to access to the **Data Connectors** page in the Microsoft 365 compliance center and create a connector for Twitter data.
+The first step is to access to the **Data Connectors** page in the compliance portal and create a connector for Twitter data.
 
 1. Go to <https://compliance.microsoft.com> and then click **Data connectors** > **Twitter**.
 
@@ -62,11 +64,11 @@ The first step is to access to the **Data Connectors** page in the Microsoft 365
 
 The second step is to configure the Twitter connector on the Veritas Merge1 site. For information about how to configure the Twitter connector, see [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Twitter%20User%20Guide.pdf).
 
-After you click **Save & Finish,** the **User mapping** page in the connector wizard in the Microsoft 365 compliance center is displayed.
+After you click **Save & Finish,** the **User mapping** page in the connector wizard in the compliance portal is displayed.
 
 ## Step 3: Map users and complete the connector setup
 
-To map users and complete the connector setup in the Microsoft 365 compliance center, follow these steps:
+To map users and complete the connector setup in the compliance portal, follow these steps:
 
 1. On the **Map Twitter users to Microsoft 365 users** page, enable automatic user mapping. The Twitter items include a property called *Email*, which contains email addresses for users in your organization. If the connector can associate this address with a Microsoft 365 user, the items are imported to that user's mailbox.
 
@@ -74,7 +76,7 @@ To map users and complete the connector setup in the Microsoft 365 compliance ce
 
 ## Step 4: Monitor the Twitter connector
 
-After you create the Twitter connector, you can view the connector status in the Microsoft 365 compliance center.
+After you create the Twitter connector, you can view the connector status in the compliance portal.
 
 1. Go to <https://compliance.microsoft.com/> and click **Data connectors** in the left nav.
 
