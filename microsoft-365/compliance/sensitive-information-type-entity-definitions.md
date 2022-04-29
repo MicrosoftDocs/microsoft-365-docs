@@ -36,47 +36,10 @@ This article is a list of all sensitive information type (SIT) entity definition
 
 - [ABA routing number](sit-defn-aba-routing.md)
 - [All full names](sit-defn-all-full-names.md)
+- [All medical terms and conditions](sit-defn-all-medical-terms-conditions.md)
 
 
 
-## All medical terms and conditions
-
-All medical terms and conditions is a bundled named entity that detects medical terms and medical conditions. It detects English terms only. Use this SIT to detect all possible matches of medical terms and conditions.
-
-### Format
-
-Dictionary
-
-### Pattern
-
-Dictionary
-
-### Checksum
-
-No
-
-### Description
-
-This bundled named entity matches text that mentions medical conditions that are present in curated dictionaries. There's one curated dictionary per supported language. The dictionaries are from many international medical resources. The dictionaries include as many medical conditions as possible without risking a large number of false positives. Each entry contains the different forms that a single condition is commonly written in to ensure coverage, for example:
-
-- *TB*
-- *tuberculosis*
-- *phthisis pulmonalis*
-
-### Contains
-
-This bundled named entity SIT contains these individual SITs.
-
-- Blood test terms
-- Types of medication
-- Diseases
-- Generic medication names
-- Impairments listed in the U.S. Disability Evaluation Under Social Security
-- Lab test terms
-- Lifestyles that relate to medical conditions
-- Medical specialties
-- Surgical procedures
-- Brand medication names
 
 ## All Physical Addresses
 
