@@ -19,7 +19,7 @@ description: "Learn how to use customer-managed keys to encrypt your organizatio
 
 # Use Customer Key to encrypt audit records
 
-You can now enable Customer Key encryption for audit records. Auditing builds on the [Service encryption with Customer Key](customer-key-overview.md) to encrypt your organization's auditing data. Implementing Customer Key provides extra protection by preventing unauthorized systems or Microsoft data center personnel from viewing your auditing data in the auditing pipeline and at rest. Using Customer Key to encrypt your auditing data also helps you meet regulatory or compliance obligations because your organization provides and controls the encryption keys.
+You can now enable Microsoft Purview Customer Key encryption for audit records. Auditing builds on the [Service encryption with Microsoft Purview Customer Key](customer-key-overview.md) to encrypt your organization's auditing data. Implementing Customer Key provides extra protection by preventing unauthorized systems or Microsoft data center personnel from viewing your auditing data in the auditing pipeline and at rest. Using Customer Key to encrypt your auditing data also helps you meet regulatory or compliance obligations because your organization provides and controls the encryption keys.
 
 Customer Key requires a Microsoft 365 E5 subscription. For more information, see [Microsoft 365 guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-customer-key-for-microsoft-365).
 
@@ -35,14 +35,12 @@ After you complete the setup, Microsoft 365 encrypts all data in your organizati
 
 ## Offboarding from Customer Key
 
-(notes from Kedar Sane, auditing dev): 
-
-(include link to: [Roll back from Customer Key to Microsoft managed Keys](customer-key-manage.md#roll-back-from-customer-key-to-microsoft-managed-keys) )
-
-The key point is this: "If you decide not to use Customer Key for assigning multi-workload DEPs anymore then you'll need to reach out to Microsoft support with a request to “offboard” from Customer Key. Ask the support team to file a service request against Microsoft 365 Customer Key team. Reach out to m365-ck@service.microsoft.com if you have any questions."
+If you decide not to use Customer Key for assigning multi-workload DEPs anymore, you'll need to reach out to Microsoft support with a request to “offboard” from Customer Key. Ask the support team to file a service request against Microsoft Purview Customer Key team. Reach out to m365-ck@service.microsoft.com if you have any questions. See [Roll back from Customer Key to Microsoft managed Keys](customer-key-manage.md#roll-back-from-customer-key-to-microsoft-managed-keys) for more information.
 
 Customers may no longer want to manage their own keys and may opt to offboard from CMK.
 For Auditing - we have NOT ONBOARDED to MMK. So once the tenant offboards from CMK there will be NO fallback to second level of encryption. The data will be encrypted at rest by the default Azure storage encryption.
+
+<!--
 Steps: 
 
 - Customer reaches out to MDEPS team to offboard from CMK.
@@ -54,30 +52,23 @@ Steps:
 - Existing / Older encrypted data will be decrypted using the keys associated with the DEP
 
 NOTE: Even after offboarding, tenant is expected to keep their pre-used encryption keys and keep the MDEPS AAD app access to the AKVs till the lifetime of their encrypted data.
- 
+-->
+
 ## Offboarding from Microsoft 365
 
-(notes from Kedar Sane, auditing dev): 
+Purging a multi-workload DEP is not supported for Microsoft Purview Customer Key. The multi-workload DEP is used to encrypt data across multiple workloads across all tenant users. Purging a multi-workload DEP would result in data from across multiple workloads becoming inaccessible. If you decide to exit Microsoft Purview services altogether, then you could pursue the path of tenant deletion per the [documented process](/azure/active-directory/enterprise-users/directory-delete-howto). See how to delete a tenant in Azure Active Directory."
 
-(include link to: [Revoke your keys and start the data purge path process](customer-key-manage.md#revoke-your-keys-and-start-the-data-purge-path-process) or just leverage the para below and link [to article on deleted a tenant in AAD](/azure/active-directory/enterprise-users/directory-delete-howto)
-
-Key point is this: "Purging of multi-workload DEP is not supported for Microsoft 365 Customer Key. The multi-workload DEP is used to encrypt data across multiple workloads across all tenant users. Purging such DEP would result into data from across multiple workloads become inaccessible. If you decide to exit Microsoft 365 services altogether then you could pursue the path of tenant deletion per the documented process. See how to delete a tenant in Azure Active Directory."
-
+<!--
 - Customer in this case wants to leave the M365 eco-system and ensure all their data is purged / deleted.
-
 - In case of "multi-workload" DEP - purging or deleting the DEP is NOT allowed by policy.
-
-- In this case the customer would revoke access to the AKV containing the CMK keys. 
-The customer would proceed with the Tenant Deprovisioning process in order to fully leave the service.  They may revoke keys, but not required by the process
-
+- In this case the customer would revoke access to the AKV containing the CMK keys.
+The customer would proceed with the Tenant Deprovisioning process in order to fully leave the service. They may revoke keys, but not required by the process.
 - This change would be reflected in ~24 hours across ALE and MDEPS after caches have expired.
-
 - Ideally since customer is exiting the eco-system, no more audit events would be generated for the customer. However in case there are new audit events for the customer, then they will NOT be encrypted using CMK as customer has offboarded / revoked key access.
+-->
 
 ## More information
 
 - It takes up to 24 hours after you complete the implementation steps to encrypt your organization's auditing records.
-
-- If your organization already has MDEPS support for other workloads (e.g. Exchange or SharePoint), you only have to enable it for multiple workloads. 
-
+- If your organization already has MDEPS support for other workloads (e.g. Exchange or SharePoint), you only have to enable it for multiple workloads.
 - Only audit records that are generated after Customer Key for auditing is implemented (or if your organization implemented Customer Key for multiple workloads) will be encrypted. Existing audit records aren't encrypted.
