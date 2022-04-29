@@ -34,7 +34,7 @@ ms.date:
 
 Network protection helps protect devices from Internet-based events. Network protection is an attack surface reduction capability. It helps prevent employees from accessing dangerous domains through applications. Domains that host phishing scams, exploits, and other malicious content on the Internet are considered dangerous. Network protection expands the scope of [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) to block all outbound HTTP(s) traffic that attempts to connect to low-reputation sources (based on the domain or hostname).
 
-Network protection extends the protection in [Web protection](web-protection-overview.md) to the operating system level. It provides the web protection functionality found in Edge to other supported browsers and non-browser applications. In addition, network protection provides visibility and blocking of indicators of compromise (IOCs) when used with [Endpoint detection and response](overview-endpoint-detection-response.md). For example, network protection works with your [custom indicators](manage-indicators.md) that you can use to block specific domains or hostnames.
+Network protection extends the protection in [Web protection](web-protection-overview.md) to the operating system level. It provides the web protection functionality found in Microsoft Edge to other supported browsers and non-browser applications. Network protection also provides visibility and blocking of indicators of compromise (IOCs) when used with [Endpoint detection and response](overview-endpoint-detection-response.md). For example, network protection works with your [custom indicators](manage-indicators.md) that you can use to block specific domains or hostnames.
 
 > [!TIP]
 > See the Microsoft Defender for Endpoint testground site at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to see how network protection works.
@@ -59,9 +59,9 @@ Network protection requires Windows 10 Pro or Enterprise, and Microsoft Defender
 >
 > Information about the features that are commercially available follows the Public Preview information.
 
-Network protection is a part of the attack surface reduction group of solutions in Microsoft Defender for Endpoint. Network protection enables layer 3 (network layer) blocking of URLs and IPs. This means network protection can block URLs being accessed from 3rd-party browsers, as well as standard network connections.
+Network protection is a part of the attack surface reduction group of solutions in Microsoft Defender for Endpoint. Network protection enables layer 3 (network layer) blocking of URLs and IPs. Network protection can block URLs being accessed from 3rd-party browsers and standard network connections.
 
-By default, network protection guards your computers from known malicious URLs using the Smart Screen feed, which blocks malicious URLs in a manner similar to SmartScreen in Edge browser. The network protection functionality can be extended to:
+By default, network protection guards your computers from known malicious URLs using the Smart Screen feed, which blocks malicious URLs in a manner similar to SmartScreen in Microsoft Edge browser. The network protection functionality can be extended to:
 
 - Block IP / URL from your own Threat Intel (Indicators)
 - Block unsanctioned services from Microsoft Cloud App Security (MCAS)
@@ -73,7 +73,7 @@ For details about Network Protection for Windows Server, Linux, MacOS and MTD, s
 
 ### Block Command and Control (C2) attacks
 
-C2 server computers are used by malicious users to send commands to systems compromised by malware, and subsequently exert some type of control over compromised systems. C2 attacks typically hide in cloud-based services such as file-sharing and webmail services, enabling the C2 servers to avoid detection by blending in with typical traffic.
+C2 server computers are used by malicious users to send commands to systems compromised by malware, and then exert some type of control over compromised systems. C2 attacks typically hide in cloud-based services such as file-sharing and webmail services, enabling the C2 servers to avoid detection by blending in with typical traffic.
 
 C2 servers can be used to initiate commands that can:
 
@@ -101,21 +101,21 @@ The Network Protection component of Microsoft Defender for Endpoint identifies a
 
 ### New notifications for network protection determination
 
-A new, publicly-available capability in network protection utilizes functions in SmartScreen to block phishing activities from malicious command and control sites.
+A new, publicly available capability in network protection utilizes functions in SmartScreen to block phishing activities from malicious command and control sites.
 
 When an end user attempts to visit a website in an environment in which network protection is enabled, three scenarios are possible:
 
-- The URL has a known good reputation. In this case the user is permitted access without obstruction, and there is no toast notification presented on the endpoint. {The domain or URL is set to _Allowed_}
-- The URL has an unknown or uncertain reputation. The user's access is blocked, but with the ability to circumvent (unblock) the block. {The domain or url is set to _Audit_}
-- The URL has a known bad (malicious) reputation. The user is prevented from access. {the domain or url is set to _Block_}
+- The URL has a **known good reputation** - In this case the user is permitted access without obstruction, and there's no toast notification presented on the endpoint. {The domain or URL is set to _Allowed_}
+- The URL has an **unknown or uncertain reputation** - The user's access is blocked, but with the ability to circumvent (unblock) the block. {The domain or url is set to _Audit_}
+- The URL has a **known bad (malicious) reputation** - The user is prevented from access. {the domain or url is set to _Block_}
 
 #### Warn experience
 
 A user visits a website:
 
-- If the url has a unknown or uncertain reputation, a toast notification will present the user with the following options:
+- If the url has an unknown or uncertain reputation, a toast notification will present the user with the following options:
   - **Ok** The toast notification is released (removed), and the attempt to access the site is ended.
-  - **Unblock** The user will not need to access the Windows Defender Security Intelligence (WDSI) portal to gain site access. The user will have access to the site for 24 hours; at which point the block is reenabled for an additional 24 hours. The user can continue to use **Unblock** to access the site until such time that the administrator prohibits (blocks) the site, thus removing the option to **Unblock**.
+  - **Unblock** The user won't need to access the Windows Defender Security Intelligence (WDSI) portal to gain site access. The user will have access to the site for 24 hours; at which point the block is reenabled for another 24 hours. The user can continue to use **Unblock** to access the site until such time that the administrator prohibits (blocks) the site, thus removing the option to **Unblock**.
   - **Feedback** The toast notification presents the user with a link to submit a ticket, which the user can use to submit feedback to the administrator in an attempt to justify access to the site.
 
   > [!div class="mx-imgBorder"]
@@ -135,7 +135,7 @@ A user visits a website:
   > [!div class="mx-imgBorder"]
   > ![ Shows a network protection known phishing content blocked notification](images/network-protection-phishing-blocked.png)
 
-### Network protection: C2 detection and remediation (private preview)
+### Network protection: C2 detection and remediation
 
 In its initial form, ransomware is a commodity threat, pre-programmed and focused on limited, specific outcomes (for example, encrypting a computer). However, ransomware has evolved into a sophisticated threat that is human driven, adaptive, and focused on larger scale and more widespread outcomes; like holding an entire organization’s assets or data for ransom.
 
@@ -143,11 +143,11 @@ Support for Command and Control (C2) is a key part of this ransomware evolution 
 
 #### Detecting and remediating CobaltStrike (public preview)
 
-One of the most common post-exploitation frameworks used in human-operated ransomware attacks is CobaltStrike. Threat Intelligence teams across Microsoft track Tactics, Techniques, and Procedures (TTPs) on multiple activity groups that deploy ransomware to identify patterns of behavior which can be used to defend against specific strategies and threat vectors used by malicious actors.  These ransomware activity groups all, at some point in the attack life cycle, involve deploying a CobaltStrike Beacon to a victim’s computer to enable hands-on keyboard activity.
+One of the most common post-exploitation frameworks used in human-operated ransomware attacks is CobaltStrike. Threat Intelligence teams across Microsoft track Tactics, Techniques, and Procedures (TTPs) on multiple activity groups that deploy ransomware to identify patterns of behavior that can be used to defend against specific strategies and threat vectors used by malicious actors.  These ransomware activity groups all, at some point in the attack life cycle, involve deploying a CobaltStrike Beacon to a victim’s computer to enable hands-on keyboard activity.
 
 CobaltStrike enables customization of multiple aspects of the attack, from the ability to host multiple listeners responding to different protocols, to how the main client-side component (Beacon) should perform code injection and run post-exploitation jobs. When Microsoft Defender detects CobaltStrike, it can intelligently find and collect key indicators-of-compromise. Once captured, these indicators are -shared throughout Microsoft’s product stack for detection and protection purposes.
 
-Microsoft Defender’s command and control detection is not limited to CobaltStrike. Microsoft Defender can capture key IoCs of multiple malware families. The indicators are shared across the Microsoft protection stack to protect customers and alert them in the event of a compromise.
+Microsoft Defender’s command and control detection isn't limited to CobaltStrike. Microsoft Defender can capture key IoCs of multiple malware families. The indicators are shared across the Microsoft protection stack to protect customers and alert them if there's a compromise.
 
 Blocking command-and-control communication can severely impede a targeted attack, giving defenders time to find the initial entry vectors and close them down before another attempted attack.
 
@@ -169,7 +169,7 @@ Microsoft Defender for Endpoint Administrators can configure Smart Screen Unbloc
 
 ## Using network protection
 
-Network protection is enabled per device, this is typically done using your management infrastructure. For supported methods please see: [Turn on network protection](enable-network-protection.md).
+Network protection is enabled per device, which is typically done using your management infrastructure. For supported methods, see: [Turn on network protection](enable-network-protection.md).
 
 > [!NOTE]
 > Microsoft Defender Antivirus must be active to enable Network protection.
@@ -178,7 +178,7 @@ You can enable Network Protection in **Audit** mode or **Block** mode.  If you w
 
 ## Advanced Hunting
 
-If you are using Advanced Hunting to identify audit events you will have up to 30 days history available from the console. See [Advanced Hunting](advanced-hunting-overview.md)
+If you're using Advanced Hunting to identify audit events you'll have up to 30 days history available from the console. See [Advanced Hunting](advanced-hunting-overview.md)
 
 You can find the audit data in **Advanced hunting** in the Microsoft Defender for Endpoint portal.  
 
@@ -212,11 +212,11 @@ Response category tells you what caused the event, for example:
 | Malicious   |   Web threats  |
 | Phishing  |   Web threats  |
 
-For additional information, see [Troubleshoot endpoint blocks](web-protection-overview.md#troubleshoot-endpoint-blocks)
+For more information, see [Troubleshoot endpoint blocks](web-protection-overview.md#troubleshoot-endpoint-blocks)
 
 You can use the resulting list of URLs and IPs to determine what would have been blocked if the device was in block mode, as well as which feature blocked them. Review each item on the list to identify URLS or IPs whether any are necessary to your environment. If you find any entries that have been audited which are critical to your environment, create an Indicator to allow them in your network. Allow URL / IP indicators take precedence over any block.
 
-Once you have created an Indicator you can look at resolving the underlying issue:
+Once you've created an Indicator you can look at resolving the underlying issue:
 
 - Smart screen – request review
 - Indicator – modify existing indicator
@@ -230,15 +230,13 @@ Using this data you can make an informed decision on enabling Network protection
 
 For information about how to report false positives see: [Report false positives](web-protection-overview.md#report-false-positives)
 
-For details on how to create your own PowerBi reports, see: [Create custom reports using Power BI](api-power-bi.md)
-
-For additional details, see **ADD LINK TO BLOG
+For details on how to create your own Power BI reports, see: [Create custom reports using Power BI](api-power-bi.md)
 
 ## Configuring network protection
 
 For more information about how to enable network protection, see **[Enable network protection](enable-network-protection.md)**. Use Group Policy, PowerShell, or MDM CSPs to enable and manage network protection in your network.
 
-After you have enabled the services, you might need to configure your network or firewall to allow the connections between the services and your devices (also referred to as endpoints).
+After you've enabled the services, you might need to configure your network or firewall to allow the connections between the services and your devices (also referred to as endpoints).
 
 - `.smartscreen.microsoft.com`
 - `.smartscreen-prod.microsoft.com`
@@ -255,7 +253,7 @@ You can also use [audit mode](audit-windows-defender.md) to evaluate how network
 
 Microsoft Defender for Endpoint provides detailed reporting into events and blocks as part of its [alert investigation scenarios](investigate-alerts.md). You can view these details in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) in the [alerts queue](review-alerts.md) or by using [advanced hunting](advanced-hunting-overview.md). If you're using [audit mode](audit-windows-defender.md), you can use advanced hunting to see how network protection settings would affect your environment if they were enabled.
 
-Here is an example query for advanced hunting:
+Here's an example query for advanced hunting:
 
 ```kusto
 DeviceNetworkEvents
@@ -297,7 +295,7 @@ Here's an example of how that works:
 
 Due to the multi-user nature of Windows 10 Enterprise, keep the following points in mind:
 
-1. Network protection is a device-wide feature and cannot be targeted to specific user sessions.
+1. Network protection is a device-wide feature and can't be targeted to specific user sessions.
 
 2. Web content filtering policies are also device wide.
 
