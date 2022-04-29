@@ -33,10 +33,8 @@ Make sure that you set the **Maximum number of attendees** to more than 1 on the
 
 4. To remove attendees, select the user you want to remove from the group booking and select **Remove customer**. Once you remove the attendee, they'll get an email letting them know that they've been removed from this booking.
 
-## Troubleshooting
+## Common issues
 
-If you run into the following issues while using group bookings, follow the steps below.
+- Editing of a group booking service from the Teams app or from the mobile app resets attendees to 1.Use the Bookings web app to edit the group booking service.
 
-- Editing of a group booking service from the Teams app or from the mobile app resets attendees **to**, use the Bookings web app to edit the group booking service.
-
-- Bookings doesn't support resource bookings at this time. To workaround this, create a resource as a staff member and assign it to a service.
+- Group bookings doesn't support resource bookings at this time.
