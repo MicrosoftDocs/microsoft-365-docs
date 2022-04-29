@@ -220,7 +220,7 @@ To edit a policy:
 
 ## Manage conflicts
 
-Many of the device settings that you can manage with Endpoint security policies (security policies) are also available through other policy types in Intune. These other policy types include device configuration policy and security baselines. Because settings can be managed through several different policy types or by multiple instances of the same policy type, be prepared to identify and resolve policy conflicts for devices that don't adhere to the configurations you expect.
+Many of the device settings that you can manage with Endpoint security policies are also available through other policy types in Intune. These other policy types include device configuration policies and security baselines. Because settings can be managed through several different policy types or by multiple instances of the same policy type, be prepared to identify and resolve policy conflicts for devices that don't adhere to the configurations you expect.
 
 Security baselines can set a non-default value for a setting to comply with the recommended configuration that baseline addresses.
 
