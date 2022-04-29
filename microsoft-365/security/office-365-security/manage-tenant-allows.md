@@ -52,7 +52,6 @@ Allow senders (or domains) on the **Submissions** page in Microsoft 365 Defender
 
 > ![Submit malware to Microsoft for analysis example.](../../media/admin-submission-allow-messages.png)
 
-
 > [!NOTE]
 >
 > - Based on what filters determined the mail to be malicious, during mail flow, the allows are added. For example, if filters found both sender and URL to be bad, an allow will be added for each. 
@@ -80,12 +79,10 @@ Allow URLs on the **Submissions** page in Microsoft 365 Defender.
 > [!div class="mx-imgBorder"]
 > ![Submit URL for analysis.](../../media/submit-url-for-analysis.png)
 
-
 > [!NOTE]
 >
-> -  When the URL is encountered again, the URL is not sent for detonation or reputation checks and all other URL-based filters are skipped.
-> -  So for an email (containing this URL), during mail flow, if the rest of the filters find the email to be clean then the email will be delivered.
-
+> - When the URL is encountered again, the URL is not sent for detonation or reputation checks and all other URL-based filters are skipped.
+> - So for an email (containing this URL), during mail flow, if the rest of the filters find the email to be clean then the email will be delivered.
 
 ## Add File allows using the Submissions portal
 
@@ -107,7 +104,6 @@ Allow Files  on the **Submissions** page in Microsoft 365 Defender.
 
 > [!div class="mx-imgBorder"]
 > ![Submit email for analysis.](../../media/submit-email-for-analysis.png)
-
 
 > [!NOTE]
 >
