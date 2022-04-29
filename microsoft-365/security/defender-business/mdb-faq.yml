@@ -34,9 +34,9 @@ sections:
 
       - question: What are the differences between Defender for Business and Defender for Endpoint Plans 1 and 2?
         answer: |
-          Defender for Business was designed for small and medium-sized businesses (up to 300 employees). With a [simplified configuration process](mdb-simplified-configuration.md) and [device onboarding options](mdb-onboard-devices.md), Defender for Business enables customers who do not necessarily have a security background to set up, configure, and use Defender for Business.  
+          Both Defender for Business and Defender for Endpoint provide strong threat protection capabilities for your company's endpoints. Defender for Business was designed for small and medium-sized businesses (up to 300 employees). With a [simplified configuration process](mdb-simplified-configuration.md) and [device onboarding options](mdb-onboard-devices.md), Defender for Business enables customers who do not necessarily have a security background to set up, configure, and use Defender for Business to protect company devices.  
           
-          Both Defender for Business and Defender for Endpoint provide strong threat protection capabilities for your company's endpoints. To learn more about the differences, see [Compare Microsoft Defender for Business to Microsoft 365 Business Premium](compare-mdb-m365-plans.md).
+          To learn more about the differences, see [Compare Microsoft Defender for Business to Microsoft 365 Business Premium](compare-mdb-m365-plans.md).
 
       - question: How do I try or buy Defender for Business?
         answer: |
@@ -46,7 +46,7 @@ sections:
 
       - question: How many users may I deploy with the Defender for Business licenses?
         answer: |
-          Defender for Business is designed for small and medium-sized businesses with up to 300 users. 
+          Defender for Business is designed for small and medium-sized businesses who have up to 300 users. If you have more than 300 users, consider [Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint).
 
       - question: How many devices can I onboard and secure with Defender for Business? 
         answer: |
@@ -60,7 +60,7 @@ sections:
         answer: |
           Yes. Defender for Business supports protection for macOS, Android, and iOS/iPadOS devices today. 
           
-          You can onboard macOS devices using a local script in the Microsoft 365 Defender portal. Onboarding Android and iOS/iPadOS devices requires a license for Microsoft Intune. See [Onboard devices](mdb-onboard-devices.md).
+          You can onboard macOS devices using a local script in the Microsoft 365 Defender portal. Onboarding Android and iOS/iPadOS devices requires a license for [Microsoft Intune](/mem/intune/). See [Onboard devices](mdb-onboard-devices.md).
           
           Intune is included in Microsoft 365 Business Premium, and can be purchased for Defender for Business (standalone).
 
@@ -90,7 +90,7 @@ sections:
 
       - question: How can I run custom reports with Defender for Business?
         answer: |
-           Defender for Business currently includes a set of APIs to support robust custom reporting, and a Power BI connector. You could schedule a PowerShell script to generate executive summaries formatted in HTML, and send those summaries via email.
+           Defender for Business currently includes a set of APIs to support robust custom reporting, and a Power BI connector. You could schedule a PowerShell script to generate executive summaries formatted in HTML, and send those summaries via email. See [API reference information](/microsoft-365/security/defender-endpoint/exposed-apis-create-app-partners).
 
       - question: I'm a Microsoft partner. Will I be able to manage multiple tenants from one control panel, or will I have to sign in to each tenant individually? 
         answer: |
@@ -98,7 +98,7 @@ sections:
 
       - question: How do I configure attack surface reduction rules and capabilities in Defender for Business?
         answer: |
-           Simplified configuration for attack surface reduction rules and capabilities via Defender for Business in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) isn't supported yet. If you have Microsoft Intune, you can use the Microsoft Endpoint Manager admin center to configure your attack surface reduction policies. 
+           Simplified configuration for attack surface reduction rules and capabilities via Defender for Business in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) isn't supported yet. If you have Microsoft Intune, you can use the Microsoft Endpoint Manager admin center to configure your attack surface reduction policies. See [Attack surface reduction policy for endpoint security in Intune](/mem/intune/protect/endpoint-security-asr-policy).
 
       - question: If I do not currently have Microsoft Intune, do I need an additional license to use features that are included in both Defender for Business and Intune? 
         answer: |
