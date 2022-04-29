@@ -51,7 +51,6 @@ The table below lists the changes in navigation between the Security & Complianc
 |Service assurance||See [Microsoft Purview compliance portal](https://compliance.microsoft.com/homepage)||
 |Supervision||See [Microsoft Purview compliance portal](https://compliance.microsoft.com/homepage)||
 |eDiscovery||See [Microsoft Purview compliance portal](https://compliance.microsoft.com/homepage)||
-|||||
 
 [Microsoft 365 Defender](./microsoft-365-defender.md) at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"><https://security.microsoft.com></a> combines security capabilities from existing Microsoft security portals, including the Security & Compliance Center. This improved center helps security teams protect their organization from threats more effectively and efficiently.
 
@@ -67,11 +66,11 @@ The left navigation, or quick launch bar, will look familiar. However, there are
 
 With the unified Microsoft 365 Defender solution, you can stitch together the threat signals and determine the full scope and impact of the threat, and how it's currently impacting the organization.
 
-:::image type="content" source="../../media/M365-defender-converge-experience.png" alt-text="The Microsoft 365 Defender converged experience" lightbox="../../media/M365-defender-converge-experience.png":::
+![Incident1](../../media/mdo-in-m36d-nav-collapsed.png)
 
 Defender for Office 365 safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools.
 
-:::image type="content" source="../../media/Defender-for-O365.png" alt-text="The Defender for Office 365 portal" lightbox="../../media/Defender-for-O365.png":::
+![Email-nav-2](../../media/mdo-in-m365d-nav.png)
 
 ### Incidents and alerts
 
@@ -80,7 +79,7 @@ Brings together incident and alert management across your email, devices, and id
 - [Learn more about Investigations](incidents-overview.md)
 - [Learn more about managing alerts](/windows/security/threat-protection/microsoft-defender-atp/review-alerts)
 
-:::image type="content" source="../../media/converge-1-alerts-and-actions.png" alt-text="Alerts and Actions quick launch bar in the Microsoft 365 Defender portal" lightbox="../../media/converge-1-alerts-and-actions.png":::
+![Incidents-nav-2](../../media/m365d-incident-nav.png)
 
 ### Hunting
 
@@ -112,7 +111,7 @@ Learn more about how to [track and respond to emerging threats with threat analy
 
 Track and investigate threats to your users' email, track campaigns, and more. If you've used the Security & Compliance Center, this will be familiar.
 
-:::image type="content" source="../../media/converge-3-email-and-collab-new.png" alt-text="The quick launch menu for Email & Collab (or MSDO), on the left navigation pane in the Microsoft 365 Defender portal" lightbox="../../media/converge-3-email-and-collab-new.png":::
+![Email-nav-2](../../media/mdo-in-m365d-nav.png)
 
 #### Email entity page
 
@@ -122,7 +121,7 @@ The [Email entity page](../office-365-security/mdo-email-entity-page.md) *unifie
 
 View reports, change your settings, and modify user roles.
 
-:::image type="content" source="../../media/converge-4-access-and-reporting-new.png" alt-text="The quick launch menu for Microsoft 365 Defender permissions and reporting, on the left navigation pane in the Microsoft 365 Defender portal" lightbox="../../media/converge-4-access-and-reporting-new.png":::
+![Reports](../../media/m365d-settings-nav.png)
 
 > [!NOTE]
 > DomainKeys Identified Mail (DKIM) ensures that destination email systems trust messages sent outbound from your custom domain.
@@ -143,7 +142,6 @@ This table is a quick reference of Threat management where change has occurred b
 |[Investigation](../office-365-security/office-365-air.md#changes-are-coming-soon-in-your-microsoft-365-defender-portal)|Brings together AIR capabilities in [Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) and [Defender for Endpoint](../defender-endpoint/automated-investigations.md). With these updates and improvements, your security operations team will be able to view details about automated investigations and remediation actions across your email, collaboration content, user accounts, and devices, all in one place.|
 |[Alert queue](../../compliance/alert-policies.md)|The **View alerts** flyout pane in the Security & Compliance Center now includes links to Microsoft 365 Defender. Click on the **Open Alert Page** link and Microsoft 365 Defender opens. You can access the **View alerts** page by clicking on any Office 365 alert in the Alerts queue.|
 |[Attack Simulation training](../office-365-security/attack-simulation-training-insights.md)|Use Attack Simulation training to run realistic attack scenarios in your organization. These simulated attacks can help train your workforce before a real attack impacts your organization. Attack simulation training includes, more options, enhanced reports, and improved training flows help make your attack simulation and training scenarios easier to deliver and manage.|
-|
 
 No changes to these areas:
 
