@@ -112,7 +112,7 @@ To complete this process, you must have admin privileges on the device.
 
 ## Client configuration
 
-1. Copy wdav.pkg and MicrosoftDefenderATPOnboardingMacOs.py to the device where you deploy Microsoft Defender for Endpoint on macOS.
+1. Copy wdav.pkg and MicrosoftDefenderATPOnboardingMacOs.sh to the device where you deploy Microsoft Defender for Endpoint on macOS.
 
     The client device isn't associated with org_id. Note that the *org_id* attribute is blank.
 
@@ -120,10 +120,10 @@ To complete this process, you must have admin privileges on the device.
     mdatp health --field org_id
     ```
 
-2. Run the Python script to install the configuration file:
+2. Run the Bash script to install the configuration file:
 
     ```bash
-    /usr/bin/python MicrosoftDefenderATPOnboardingMacOs.py
+    bash MicrosoftDefenderATPOnboardingMacOs.sh
     ```
 
 3. Verify that the device is now associated with your organization and reports a valid org ID:

@@ -52,6 +52,12 @@ Allow senders (or domains) on the **Submissions** page in Microsoft 365 Defender
 
 > ![Submit malware to Microsoft for analysis example.](../../media/admin-submission-allow-messages.png)
 
+> [!NOTE]
+>
+> - Based on what filters determined the mail to be malicious, during mail flow, the allows are added. For example, if filters found both sender and URL to be bad, an allow will be added for each.
+> - When that entity (sender, domain, URL, file) encountered again, all filters associated with that entity are skipped.
+> - So for an email (containing this entity), during mail flow, if the rest of the filters find the email to be clean then the email will be delivered.
+
 ## Add URL allows using the Submissions portal
 
 Allow URLs on the **Submissions** page in Microsoft 365 Defender.
@@ -72,6 +78,11 @@ Allow URLs on the **Submissions** page in Microsoft 365 Defender.
 
 > [!div class="mx-imgBorder"]
 > ![Submit URL for analysis.](../../media/submit-url-for-analysis.png)
+
+> [!NOTE]
+>
+> - When the URL is encountered again, the URL is not sent for detonation or reputation checks and all other URL-based filters are skipped.
+> - So for an email (containing this URL), during mailflow, if the rest of the filters find the email to be clean then the email will be delivered.
 
 ## Add File allows using the Submissions portal
 
@@ -94,6 +105,11 @@ Allow Files  on the **Submissions** page in Microsoft 365 Defender.
 > [!div class="mx-imgBorder"]
 > ![Submit email for analysis.](../../media/submit-email-for-analysis.png)
 
+> [!NOTE]
+>
+> - When the file is encountered again, it is not sent for detonation or reputation checks and all other file-based filters are skipped.
+> - So for an email (containing this file), during mailflow, if the rest of the filters find the email to be clean then the email will be delivered.
+
 ## Create spoofed sender allow entries using Microsoft 365 Defender
 
 > [!NOTE]
@@ -112,7 +128,7 @@ Allow Files  on the **Submissions** page in Microsoft 365 Defender.
    - **Spoof type**: Select one of the following values:
      - **Internal**: The spoofed sender is in a domain that belongs to your organization (an [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)).
      - **External**: The spoofed sender is in an external domain.
-   - **Action**: Select **Allow** or **Block**.
+   - **Action**: Select **Allow**.
 
 4. When you're finished, click **Add**.
 
