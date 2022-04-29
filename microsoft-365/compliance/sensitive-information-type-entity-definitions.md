@@ -35,7 +35,7 @@ This article is a list of all sensitive information type (SIT) entity definition
 > - High confidence: 85
 
 - [ABA routing number](sit-defn-aba-routing.md)
-- [All full names]
+- [All full names](sit-defn-all-full-names.md)
 
 
 
