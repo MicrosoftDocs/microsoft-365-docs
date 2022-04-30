@@ -26,7 +26,6 @@ When it comes to onboarding devices and configuring security settings for your c
 
 - The simplified configuration process in Microsoft Defender for Business (*recommended*) 
 - Microsoft Intune (included in [Microsoft 365 Business Premium](../../business-premium/index.md))
-- Your non-Microsoft solution for managing devices 
 
 ## What to do
 
@@ -47,14 +46,17 @@ The following table describes each experience:
 |---------|---------|
 | The simplified configuration experience in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) <br/>(*This is the recommended option for most customers*)  | The simplified configuration experience includes a wizard-like experience to help you set up and configure Defender for Business. To learn more, see [Use the wizard to set up Microsoft Defender for Business](mdb-use-wizard.md).<br/><br/>Simplified configuration also includes default security settings and policies to help you protect your company's devices as soon as they are onboarded to Defender for Business. You can view your default policies, and if necessary, edit your policies to suit your business needs. To learn more, see [View or edit device policies in Microsoft Defender for Business](mdb-view-edit-policies.md).<br/><br/>With the simplified experience, your security team uses the Microsoft 365 Defender portal as a one-stop shop to: <br/>- Set up and configure Defender for Business <br/>- View and manage incidents<br/>- Respond to and mitigate threats<br/>- View reports<br/>- Review pending or completed actions  |
 | The Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com))  | Microsoft Intune is a cloud-based mobile device management (MDM) and mobile application management (MAM) provider for apps and devices. Intune is not included in the standalone version of Defender for Business; however, [Microsoft 365 Business Premium](../../business-premium/index.md) includes Intune.<br/><br/>If you're already using Intune, you can use the Endpoint Manager admin center to manage devices, such as mobile phones, tablets, and laptops. See [Microsoft Intune: Device management](/mem/intune/fundamentals/what-is-device-management). |
-| Your non-Microsoft device management solution  | If you're using a non-Microsoft productivity and device management solution, you can continue to use that solution with Defender for Business. <br/><br/>When devices are onboarded to Defender for Business, you'll see their status and alerts in the Microsoft 365 Defender portal. To learn more, see [Onboarding and configuration tool options for Defender for Endpoint](../defender-endpoint/onboard-configure.md). |
-
 
 ## Why we recommend using the simplified configuration process
 
-**We recommend using the simplified configuration process in Microsoft Defender for Business** for most customers. The simplified configuration process is streamlined especially for small and medium-sized businesses. Defender for Business is designed to help you protect your company's devices on day one, without requiring deep technical expertise or special knowledge. With default security settings and policies, your devices are protected as soon as they're onboarded.
-
-Defender for Business is designed to provide strong protection while saving you time and effort in configuring your security settings. The streamlined experience in the Microsoft 365 Defender portal makes it simple to onboard devices and manage them. In addition, default policies are included so that your company's devices are protected as soon as they're onboarded. You can keep your default settings as they are, or make changes to suit your business needs. You can also add new policies to manage devices as needed.
+**We recommend using the simplified configuration process in Microsoft Defender for Business** for most customers. 
+- The simplified configuration process is streamlined especially for small and medium-sized businesses. 
+- Defender for Business doesn't require deep technical expertise or special knowledge. 
+- With default security settings and policies, your devices are protected as soon as they're onboarded.
+- The streamlined experience in the Microsoft 365 Defender portal makes it simple to onboard devices and manage them. 
+- Default policies are included so that your company's devices are protected as soon as they're onboarded.
+- You can keep your default settings as they are, or make changes to suit your business needs. 
+- You can add new, custom policies to suit your business needs.
 
 ## Next steps
 
