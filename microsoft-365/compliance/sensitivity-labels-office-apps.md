@@ -111,7 +111,7 @@ If users have the [Azure Information Protection (AIP) client](/azure/information
 > [!NOTE]
 > If you're not seeing the labeling features you expect on Windows computers, despite confirming the minimum supported versions for your Office update channel, it might be because you need to [disable the AIP add-in](sensitivity-labels-aip.md#how-to-disable-the-aip-add-in-to-use-built-in-labeling-for-office-apps).
 
-To learn more about labeling support with the AIP client, see [Why choose built-in labeling over the AIP add-in for Office apps](sensitivity-labels-aip.md).
+To learn more about labeling support with the AIP client, and how to disable this client just in Office apps, see [Why choose built-in labeling over the AIP add-in for Office apps](sensitivity-labels-aip.md).
 
 ## If you need to turn off built-in labeling in Office apps on Windows
 
