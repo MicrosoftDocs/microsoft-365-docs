@@ -50,6 +50,7 @@ The following table describes each experience:
 ## Why we recommend using the simplified configuration process
 
 **We recommend using the simplified configuration process in Microsoft Defender for Business** for most customers. 
+
 - The simplified configuration process is streamlined especially for small and medium-sized businesses. 
 - Defender for Business doesn't require deep technical expertise or special knowledge. 
 - With default security settings and policies, your devices are protected as soon as they're onboarded.
