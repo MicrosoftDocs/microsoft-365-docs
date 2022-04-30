@@ -1006,6 +1006,8 @@
           href: detailed-properties-in-the-office-365-audit-log.md
         - name: Turn auditing on or off
           href: turn-audit-log-search-on-or-off.md
+        - name: Use Customer Key to encrypt audit records
+          href: auditing-cmk-encryption.md
         - name: Use the audit log to investigate common issues
           href: auditing-troubleshooting-scenarios.md
         - name: Use sharing auditing in the audit log
