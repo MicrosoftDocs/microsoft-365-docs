@@ -106,9 +106,7 @@ sections:
            
            You can also manage your next-generation protection and firewall protection policies in the Microsoft 365 Defender portal with a [simplified configuration experience](mdb-simplified-configuration.md). 
            
-           To manage other settings, such as attack surface reduction policies, or to onboard other devices, such as Android or iOS/iPadOS devices, you'll need Intune. 
-
-           Intune is included in Microsoft 365 Business Premium, and can be purchased for Defender for Business (standalone) subscriptions. 
+           To manage other settings, such as attack surface reduction policies, or to onboard other devices, such as Android or iOS/iPadOS devices, you'll need Intune. Intune is included in Microsoft 365 Business Premium, and can be purchased for Defender for Business (standalone) subscriptions. 
 
 
 additionalContent: |
