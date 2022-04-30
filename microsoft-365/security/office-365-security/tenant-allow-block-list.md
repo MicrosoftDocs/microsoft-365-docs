@@ -68,7 +68,7 @@ This article describes how to configure entries in the Tenant Allow/Block List i
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- You need to be assigned permissions in the Exchange Online Portal portal before you can do the procedures in this article:
+- You need to be assigned permissions in Exchange Online before you can do the procedures in this article:
   - **Senders, URLs and files**:
     - To add and remove values from the Tenant Allow/Block List, you need to be a member of
       - **Organization Management** or **Security Administrator** role group (**Security admin role**)
