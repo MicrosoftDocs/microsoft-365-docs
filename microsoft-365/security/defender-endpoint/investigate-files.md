@@ -59,7 +59,7 @@ Along the top of the profile page, above the file information cards. Actions you
 
 For more information on these actions, see [Take response action on a file](respond-file-alerts.md).
 
-## File details,, Malware detection, and File prevalence
+## File details, Malware detection, and File prevalence
 
 The file details, incident, malware detection, and file prevalence cards display various attributes about the file.
 
