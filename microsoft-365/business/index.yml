@@ -16,7 +16,7 @@ metadata:
   - intro-hub-or-landing
   author: denisebmsft #Required; your GitHub user alias, with correct capitalization.
   ms.author: deniseb #Required; microsoft alias of author; optional team alias.
-  ms.date: 04/30/2022
+  ms.date: 05/02/2022
 
 # productDirectory section (optional)
 productDirectory:
@@ -130,6 +130,9 @@ conceptualContent:
   # Card
     - title: Protect devices
       links:
+        - url: ../security/defender-business/mdb-overview.md
+          itemType: overview
+          text: What is Microsoft Defender for Business?
         - url: ../business-premium/m365bp-devices-overview.md
           itemType: overview
           text: Set up unmanaged (BYOD) devices
@@ -149,6 +152,9 @@ conceptualContent:
   # Card
     - title: Protect email content and Office files
       links:
+        - url: ../security/office-365-security/defender-for-office-365.md
+          itemType: overview
+          text: What is Microsoft Defender for Office 365?
         - url: ../business-premium/m365bp-increase-protection.md
           itemType: how-to-guide
           text: Protect against phishing, malware, and other threats
