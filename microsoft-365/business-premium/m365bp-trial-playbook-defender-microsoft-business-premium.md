@@ -65,7 +65,7 @@ Use the reporting capabilities in Defender for Business to get more details abou
 
 - [Review links](../security/office-365-security/view-reports-for-mdo.md#url-protection-report) that were viewed by users or blocked by the system.
 
-:::image type="content" source="/media/mdo-trial-playbook-reporting.png" alt-text="The Email & collaboration reports in the Microsoft 365 Defender portal" lightbox="media/mdo-trial-playbook-reporting.png":::
+:::image type="content" source="media/mdo-trial-playbook-reporting.png" alt-text="The Email & collaboration reports in the Microsoft 365 Defender portal" lightbox="media/mdo-trial-playbook-reporting.png":::
 
 ## Step 2: Intermediate steps
 
