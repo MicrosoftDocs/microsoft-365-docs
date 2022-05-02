@@ -98,7 +98,7 @@ sections:
            
            Currently, a multi-tenant incident queue provides you with a cross-tenant view of incidents that require attention; however, configuration and onboarding are done in the customer's tenant using your partner credentials. More integration scenarios are planned.
 
-           To learn more, see [Overview of Microsoft 365 Lighthouse](microsoft-365/lighthouse/m365-lighthouse-overview).
+           To learn more, see [Overview of Microsoft 365 Lighthouse](/microsoft-365/lighthouse/m365-lighthouse-overview).
 
       - question: How do I configure attack surface reduction rules and capabilities in Defender for Business?
         answer: |
