@@ -58,7 +58,7 @@ The following scenarios are supported during Ring0 Preview.
 
 Here is a couple of examples of the firewall report pages. Here you will find a summary of inbound, outbound, and application activity. You can access this page directly by going to <https://security.microsoft.com/firewall>.
 
-:::image type="content" source="\images\host-firewall-reporting-page.png" alt-text="The Host firewall reporting page" lightbox="\images\host-firewall-reporting-page.png":::
+:::image type="content" source="images/host-firewall-reporting-page.png" alt-text="The Host firewall reporting page" lightbox="\images\host-firewall-reporting-page.png":::
 
 These reports can also be accessed by going to **Reports** > **Security Report** > **Devices** (section) located at the bottom of the **Firewall Blocked Inbound Connections** card.
 
