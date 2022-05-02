@@ -65,7 +65,7 @@ The file details, incident, malware detection, and file prevalence cards display
 
 You'll see details such as the file's MD5, the Virus Total detection ratio, and Microsoft Defender AV detection if available, and the file's prevalence.
 
-The file prevalence card shows where the file was seen in devices in the organization and worldwide. You can easily pivot to the first and last devices where the file was seen on, and continue investigation in the device timeline. 
+The file prevalence card shows where the file was seen in devices in the organization and worldwide. You can easily pivot to the first and last devices where the file was seen on, and continue the investigation in the device timeline. 
 
 > [!NOTE]
 > Different users may see dissimilar values in the *devices in organization* section of the file prevalence card. This is because the card displays information based on the RBAC scope that a user has. Meaning, if a user has been granted visibility on a specific set of devices, they will only see the file organizational prevalence on those devices.
