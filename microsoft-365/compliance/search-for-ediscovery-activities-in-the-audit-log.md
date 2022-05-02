@@ -2,8 +2,8 @@
 title: "Search for eDiscovery activities in the audit log"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 
 audience: Admin

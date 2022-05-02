@@ -1,14 +1,14 @@
 ---
-title: "Create a team in Microsoft Teams so your small business or campaign can collaborate"
+title: "Use Microsoft Teams for collaboration"
 f1.keywords:
 - NOCSH
 ms.author: samanro
 author: samanro
-manager: scotv
+manager: dansimp
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection: 
 - Adm_O365
 - M365-subscription-management 
@@ -25,7 +25,7 @@ search.appverid:
 description: "Learn why and how to create a team in Microsoft Teams so your small business or campaign can collaborate."
 ---
 
-# Create a team in Microsoft Teams so your small business or campaign can collaborate
+# Use Microsoft Teams for collaboration
 
 Microsoft Teams is a collaboration app that helps your staff stay organized and have conversations, from any device. You can use Microsoft Teams to have instant conversations with members of your staff or guests outside your organization. You can also make phone calls, host meetings, and share files.
 
@@ -39,7 +39,7 @@ Microsoft Teams is a collaboration app that helps your staff stay organized and 
 
 4. Create specific teams for communication with external partners to keep them separate from anything sensitive for your business.
 
-For example, a business, legal firm, or healthcare practice could create the following teams:
+For example, a business, legal firm, or healthcare practice might create the following teams:
 
 1. **A business-, firm-, or practice-wide team:** This is for everyone to use for day to day communications and work across your business. You can use this team to post announcements or share information of interest for your whole firm or practice.
 
@@ -101,4 +101,10 @@ Learn more about Microsoft Teams at [Microsoft Teams technical documentation](/m
 
 ## Admin settings
 
-You must be an admin to create an organization-wide team. For more information, see [What is an Admin in Microsoft 365?](https://support.office.com/article/what-is-an-admin-e123627e-4892-4461-b9aa-1b6d57a5cfa4?ui=en-US&rs=en-US&ad=US).
+> [!Note]
+> You must be an admin to create an organization-wide team. For more information, see [What is an Admin in Microsoft 365?](https://support.office.com/article/what-is-an-admin-e123627e-4892-4461-b9aa-1b6d57a5cfa4?ui=en-US&rs=en-US&ad=US).
+
+## Next objective
+
+Once you complete this objective, you need to securely [set up meetings](set-up-meetings.md).
+

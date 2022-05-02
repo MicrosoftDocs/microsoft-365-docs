@@ -2,7 +2,7 @@
 title: "Content delivery networks"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 07/15/2020
 audience: ITPro
 ms.topic: conceptual

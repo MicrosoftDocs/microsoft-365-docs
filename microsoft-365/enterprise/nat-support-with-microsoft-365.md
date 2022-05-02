@@ -2,7 +2,7 @@
 title: "NAT support with Office 365"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 1/24/2017
 audience: Admin
 ms.topic: overview
