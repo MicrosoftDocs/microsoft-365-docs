@@ -519,7 +519,6 @@
 ####### [Get alert related device information](get-alert-related-machine-info.md)
 ####### [Get alert related user information](get-alert-related-user-info.md)
 
-
 ###### [Assessments of vulnerabilities and secure configurations]()
 ####### [Export assessment methods and properties](get-assessment-methods-properties.md)
 ####### [Export secure configuration assessment](get-assessment-secure-config.md)
@@ -531,6 +530,9 @@
 ####### [List Investigation](get-investigation-collection.md)
 ####### [Get Investigation](get-investigation-object.md)
 ####### [Start Investigation](initiate-autoir-investigation.md)
+
+###### [Certificate inventory]()
+####### [Export certificate methods and properties](/microsoft-365/security/defender-vulnerability-management/export-certificate-inventory-assessment.md)
 
 ###### [Domain]()
 ####### [Get domain related alerts](get-domain-related-alerts.md)
@@ -561,7 +563,6 @@
 ####### [Upload to live response library](upload-library.md)
 ####### [Delete from library](delete-library.md)
 
-
 ###### [Machine]()
 ####### [Machine methods and properties](machine.md)
 ####### [List machines](get-machines.md)
@@ -577,8 +578,6 @@
 ####### [Get missing KBs](get-missing-kbs-machine.md)
 ####### [Set device value](set-device-value.md)
 ####### [Update machine](update-machine-method.md)
-
-
 
 ###### [Machine Action]()
 ####### [Machine Action methods and properties](machineaction.md)
@@ -616,6 +615,11 @@
 ####### [List exposure score by machine group](get-machine-group-exposure-score.md)
 ####### [Get exposure score](get-exposure-score.md)
 ####### [Get device secure score](get-device-secure-score.md)
+
+###### [Security baselines]()
+####### [Export security baselines methods and properties](/microsoft-365/security/defender-vulnerability-management/export-security-baseline-assessment.md)
+####### [List security baselines assessment profiles](/microsoft-365/security/defender-vulnerability-management/get-security-baselines-assessment-profiles.md)
+####### [List security baselines assessment configurations](/microsoft-365/security/defender-vulnerability-management/get-security-baselines-assessment-configurations.md)
 
 ###### [Software]()
 ####### [Software methods and properties](software.md)
