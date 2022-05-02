@@ -152,6 +152,9 @@ conceptualContent:
   # Card
     - title: Protect email content and Office files
       links:
+        - url: ../security/office-365-security/defender-for-office-365.md
+          itemType: overview
+          text: What is Microsoft Defender for Office 365?
         - url: ../business-premium/m365bp-increase-protection.md
           itemType: how-to-guide
           text: Protect against phishing, malware, and other threats
