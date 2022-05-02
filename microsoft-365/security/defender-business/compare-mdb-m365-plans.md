@@ -1,13 +1,12 @@
 ---
 title: Compare security features in Microsoft 365 plans for small and medium-sized businesses
-description: Understand the differences between Defender for Business and Defender for Endpoint. Knowing what's included in each plan can help you make an informed decision for your company.
+description: How does Defender for Business compare to Defender for Endpoint and Microsoft 365 Business Premium? See what's included in each plan so you can make a more informed decision for your company.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: reference
-ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -19,16 +18,9 @@ ms.collection:
 - m365-security-compliance
 ---
 
-# Compare Microsoft Defender for Business to Microsoft 365 Business Premium
-
-> [!IMPORTANT]
-> Microsoft Defender for Business is rolling out to [Microsoft 365 Business Premium](../../business-premium/index.md) customers, beginning March 1, 2022. Defender for Business as a standalone subscription is in preview, and will roll out gradually to customers and IT Partners who [sign-up here](https://aka.ms/mdb-preview) to request it. Preview includes an [initial set of scenarios](mdb-tutorials.md#try-these-preview-scenarios), and we will be adding capabilities regularly.
->
-> Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here.
+# Compare security features in Microsoft 365 plans for small and medium-sized businesses
 
 Microsoft offers a wide variety of cloud solutions and services, including several different plans for small and medium-sized businesses. For example, [Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md) includes security and device management capabilities, along with productivity features, like Office apps. This article is designed to help clarify what security features, such as device protection, are included in Microsoft 365 Business Premium, Microsoft Defender for Business, and Microsoft Defender for Endpoint.
-
-Microsoft Defender for Business is available as a standalone offering or as part of Microsoft 365 Business Premium (beginning March 1, 2022).
 
 >
 > **Got a minute?**
@@ -45,13 +37,11 @@ Microsoft Defender for Business is available as a standalone offering or as part
 ## Compare security features in Microsoft Defender for Business to Microsoft 365 Business Premium
 
 > [!NOTE]
-> This article is intended to provide a high-level overview of threat protection features included in Microsoft Defender for Business (as a standalone plan) and Microsoft 365 Business Premium (which includes Defender for Business). This article is not intended to serve as a service description or licensing contract document. For more information, see [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
+> This article is intended to provide a high-level overview of threat protection features included in Microsoft Defender for Business (as a standalone plan) and Microsoft 365 Business Premium (which includes Defender for Business). This article is not intended to serve as a service description or licensing contract document. For more information, see the [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
-**Beginning March 1, 2022, Defender for Business will start rolling out as part of Microsoft 365 Business Premium. Defender for Business as a standalone offering is still in preview.**
+**As of March 1, 2022, Defender for Business is included in Microsoft 365 Business Premium. Defender for Business is also available as a standalone subscription.** The following table compares security features and capabilities in Defender for Business (standalone) to Microsoft 365 Business Premium.
 
-The following table compares security features and capabilities in Defender for Business (standalone) to Microsoft 365 Business Premium.
-
-|Feature/Capability|[Microsoft Defender for Business](mdb-overview.md)<br/>(standalone; currently in preview)|[Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md)<br/>(includes Defender for Business)|
+|Feature/Capability|[Microsoft Defender for Business](mdb-overview.md)<br/>(standalone)|[Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md)<br/>(includes Defender for Business)|
 |---|---|---|
 |Email protection|Yes <br/>- [Email scanning with Microsoft Defender Antivirus](../defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus.md)|Yes <br/>- [Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md) <br/>- [Email scanning with Microsoft Defender Antivirus](../defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus.md)|
 |Antispam protection|Yes <br/>- For devices|Yes <br/>- For devices<br/>- For Microsoft 365 email content, such as messages and attachments|
@@ -66,11 +56,9 @@ The following table compares security features and capabilities in Defender for 
 
 ## Compare Microsoft Defender for Business to Microsoft Defender for Endpoint Plans 1 and 2
 
-Defender for Business brings enterprise-grade capabilities of Defender for Endpoint to small and medium-sized businesses.
+Defender for Business brings enterprise-grade capabilities of Defender for Endpoint to small and medium-sized businesses. The following table compares security features and capabilities in Defender for Business to the enterprise offerings, Microsoft Defender for Endpoint Plans 1 and 2.
 
-The following table compares security features and capabilities in Defender for Business to Microsoft Defender for Endpoint Plans 1 and 2.
-
-|Feature/Capability|[Defender for Business](mdb-overview.md)<br/>(standalone; currently in preview)|[Defender for Endpoint Plan 1](../defender-endpoint/defender-endpoint-plan-1.md)|[Defender for Endpoint Plan 2](../defender-endpoint/microsoft-defender-endpoint.md)|
+|Feature/Capability|[Defender for Business](mdb-overview.md)<br/>(standalone)|[Defender for Endpoint Plan 1](../defender-endpoint/defender-endpoint-plan-1.md)<br/>(for enterprise customers) |[Defender for Endpoint Plan 2](../defender-endpoint/microsoft-defender-endpoint.md)<br/>(for enterprise customers) |
 |---|---|---|---|
 |[Centralized management](../defender-endpoint/manage-atp-post-migration.md) |Yes <sup>[[1](#fn1)]</sup>|Yes|Yes|
 |[Simplified client configuration](mdb-simplified-configuration.md)|Yes|No|No|
@@ -86,7 +74,7 @@ The following table compares security features and capabilities in Defender for 
 |Partner APIs|Yes|Yes|Yes|
 |[Microsoft 365 Lighthouse integration](../../lighthouse/m365-lighthouse-overview.md) <br/>(For viewing security incidents across customer tenants)|Yes|No|No|
 
-(<a id="fn1">1</a>) Onboard and manage devices in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) or with Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)).
+(<a id="fn1">1</a>) Onboard and manage devices in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) or with Microsoft Intune, managed in the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)).
 
 (<a id="fn2">2</a>) Endpoint detection and response (EDR) capabilities in Defender for Business include behavior-based detection and the following four types of manual response actions: 
 - Run antivirus scan
@@ -100,7 +88,7 @@ The following table compares security features and capabilities in Defender for 
 
 (<a id="fn5">5</a>) In Defender for Business, threat analytics are optimized for small and medium-sized businesses.
 
-(<a id="fn6">6</a>) During the preview program, Windows client devices are supported for onboarding in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). You can use the local script method. See [Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md).
+(<a id="fn6">6</a>) See [Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md).
 
 ## Next steps
 

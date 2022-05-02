@@ -99,7 +99,7 @@ As another example, you may manage lists of individual customers to
 send them notices about special offers, if they have consented to this.
 
 #### Microsoft 365 features that can help
-[Microsoft Information Protection in Microsoft 365](/microsoft-365/compliance/information-protection) can help you discover, classify, and protect sensitive information in your company. You can use trainable classifiers to help you identify and label document types that contain personal data. 
+[Microsoft Purview Information Protection](/microsoft-365/compliance/information-protection) can help you discover, classify, and protect sensitive information in your company. You can use trainable classifiers to help you identify and label document types that contain personal data. 
 
 ### Step 2: Inform your customers, employees, and other individuals when you need to collect their personal data
 

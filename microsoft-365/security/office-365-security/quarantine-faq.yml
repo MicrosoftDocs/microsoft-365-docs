@@ -39,7 +39,6 @@ summary: |
 
   For questions and answers about anti-spoofing protection, see [Anti-spoofing protection FAQ](anti-spoofing-protection-faq.yml).
 
-
 sections:
   - name: Ignored
     questions:
@@ -134,4 +133,4 @@ sections:
           ```
 
           After you release a message, you can't release it again.
-          
+
