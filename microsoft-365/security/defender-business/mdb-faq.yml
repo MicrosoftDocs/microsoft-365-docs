@@ -44,7 +44,7 @@ sections:
 
           For more information, see [Get Microsoft Defender for Business](get-defender-business.md).
 
-      - question: How many users may I deploy with the Defender for Business licenses?
+      - question: Is there a limit to how many users can be licensed for Defender for Business?
         answer: |
           Defender for Business is designed for small and medium-sized businesses who have up to 300 users. If you have more than 300 users, consider [Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint).
 
@@ -54,7 +54,7 @@ sections:
 
       - question: Does Defender for Business support servers? 
         answer: |
-          Server support is coming soon. It will require an add-on server license and a prerequisite of either Microsoft 365 Business Premium or Microsoft Defender for Business (standalone).  
+          Server support is coming soon. This new server offering will have a licensing prerequisite of Microsoft 365 Business Premium or Microsoft Defender for Business (standalone).  
 
       - question: Does Defender for Business protect macOS, Android, and iOS/iPadOS client devices?
         answer: |
@@ -94,7 +94,11 @@ sections:
 
       - question: I'm a Microsoft partner. Will I be able to manage multiple tenants from one control panel, or will I have to sign in to each tenant individually? 
         answer: |
-           Defender for Business is enabled in Microsoft 365 Lighthouse for multi-tenant support in a single console. Currently, a multi-tenant incident queue provides you with a cross-tenant view of incidents that require attention; however, configuration and onboarding are done in the customer's tenant using your partner credentials. More integration scenarios are planned.
+           Defender for Business is enabled in Microsoft 365 Lighthouse for multi-tenant support in a single console ([https://lighthouse.microsoft.com](https://lighthouse.microsoft.com)). 
+           
+           Currently, a multi-tenant incident queue provides you with a cross-tenant view of incidents that require attention; however, configuration and onboarding are done in the customer's tenant using your partner credentials. More integration scenarios are planned.
+
+           To learn more, see [Overview of Microsoft 365 Lighthouse](/microsoft-365/lighthouse/m365-lighthouse-overview).
 
       - question: How do I configure attack surface reduction rules and capabilities in Defender for Business?
         answer: |
