@@ -210,8 +210,6 @@
        href: threat-trackers.md
      - name: Alert policies
        href: ../../compliance/alert-policies.md
-     - name: Smart reports and insights in the Security & Compliance Center
-       href: reports-and-insights-in-security-and-compliance.md
      - name: Mail flow rules (transport rules)
        href: /exchange/security-and-compliance/mail-flow-rules/mail-flow-rules
      - name: Run an administrator role group report
