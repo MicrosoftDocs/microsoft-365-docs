@@ -90,7 +90,7 @@ As an administrator, you can manage whether to display this button to end users.
 2. Run the Set-IRMConfiguration cmdlet with the -SimplifiedClientAccessEnabled, -SimplifiedClientAccessEncryptionDisabled, and -SimplifiedClientAccessDoNotForwardDisabled parameter:
 
    ```powershell
-   Set-IRMConfiguration -SimplifiedClientAccessEncryptionDisabled <$true|$false>
+   Set-IRMConfiguration -SimplifiedClientAccessEncryptOnlyDisabled <$true|$false>
    Set-IRMConfiguration -SimplifiedClientAccessDoNotForwardDisabled <$true|$false>
    Set-IRMConfiguration -SimplifiedClientAccessEnabled <$true|$false>
    ```
@@ -98,7 +98,7 @@ As an administrator, you can manage whether to display this button to end users.
    For example, to disable the **Encrypt** button:
 
    ```powershell
-   Set-IRMConfiguration -SimplifiedClientAccessEncryptionDisabled $true
+   Set-IRMConfiguration -SimplifiedClientAccessEncryptOnlyDisabled $true
    Set-IRMConfiguration -SimplifiedClientAccessDoNotForwardDisabled $true
    Set-IRMConfiguration -SimplifiedClientAccessEnabled $false
    
@@ -107,7 +107,7 @@ As an administrator, you can manage whether to display this button to end users.
    To enable the **Encrypt** button:
 
    ```powershell
-   Set-IRMConfiguration -SimplifiedClientAccessEncryptionDisabled $false
+   Set-IRMConfiguration -SimplifiedClientAccessEncryptOnlyDisabled $false
    Set-IRMConfiguration -SimplifiedClientAccessDoNotForwardDisabled $false
    Set-IRMConfiguration -SimplifiedClientAccessEnabled $true
 
