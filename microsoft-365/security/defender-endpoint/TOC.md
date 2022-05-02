@@ -532,7 +532,7 @@
 ####### [Start Investigation](initiate-autoir-investigation.md)
 
 ###### [Certificate inventory]()
-####### [Export certificate methods and properties](/microsoft-365/security/defender-vulnerability-management/export-certificate-inventory-assessment)
+####### [Export certificate methods and properties](../defender-vulnerability-management/export-certificate-inventory-assessment.md)
 
 ###### [Domain]()
 ####### [Get domain related alerts](get-domain-related-alerts.md)
@@ -617,9 +617,9 @@
 ####### [Get device secure score](get-device-secure-score.md)
 
 ###### [Security baselines]()
-####### [Export security baselines methods and properties](/microsoft-365/security/defender-vulnerability-management/export-security-baseline-assessment)
-####### [List security baselines assessment profiles](/microsoft-365/security/defender-vulnerability-management/get-security-baselines-assessment-profiles)
-####### [List security baselines assessment configurations](/microsoft-365/security/defender-vulnerability-management/get-security-baselines-assessment-configurations)
+####### [Export security baselines methods and properties](../defender-vulnerability-management/export-security-baseline-assessment.md)
+####### [List security baselines assessment profiles](../defender-vulnerability-management/get-security-baselines-assessment-profiles)
+####### [List security baselines assessment configurations](../defender-vulnerability-management/get-security-baselines-assessment-configurations)
 
 ###### [Software]()
 ####### [Software methods and properties](software.md)
