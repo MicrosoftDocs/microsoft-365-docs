@@ -1,5 +1,5 @@
 ---
-title: "Manage multifactor authentication"
+title: "Manage multifactor authentication in Microsoft 365 Lighthouse"
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -18,7 +18,7 @@ search.appverid: MET150
 description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn how to manage multifactor authentication."
 ---
 
-# Manage multifactor authentication
+# Manage multifactor authentication in Microsoft 365 Lighthouse
 
 Azure Active Directory (Azure AD) Multi-Factor Authentication (MFA) helps safeguard access to data and applications, providing another layer of security by using a second form of authentication. The Multifactor Authentication tab provides detailed information on the status of MFA enablement across your tenants. Select any tenant in the list to see more details for that tenant, including which Conditional Access policies requiring MFA are already configured and which users have not yet registered for MFA.
 
@@ -48,7 +48,7 @@ To enable MFA through Conditional Access, see [Tutorial: Secure user sign-in eve
 
 ## Notify users who aren't registered for MFA
 
-1. In the left pane in Lighthouse, select **Users**.
+1. In the left navigation pane in Lighthouse, select **Users**.
 
 2. Select the **Multifactor Authentication** tab.
 
@@ -64,7 +64,7 @@ If you want to use a different email account, you can export the list of users t
 
 ## Next steps
 
-Once MFA is enabled, you can enable Azure Active Directory (Azure AD) self-service password reset. This feature gives users the ability to change or reset their password with no administrator or help desk involvement. For more information, see [Manage self-service password reset](m365-lighthouse-manage-sspr.md).
+Once MFA is enabled, you can enable Azure Active Directory (Azure AD) self-service password reset. This feature gives users the ability to change or reset their password with no administrator or help desk involvement. For more information, see [Manage self-service password reset in Microsoft 365 Lighthouse](m365-lighthouse-manage-sspr.md).
 
 ## Related content
 

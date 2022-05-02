@@ -1,6 +1,7 @@
 ---
 title: "Communication compliance policies"
 description: "Learn more about communication compliance policies."
+keywords: Microsoft 365, Microsoft Purview, compliance, communication compliance
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -22,12 +23,14 @@ search.appverid:
 
 # Communication compliance policies
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 ## Policies
 
 > [!IMPORTANT]
-> Using PowerShell to create and manage communication compliance policies is not supported. To create and manage these policies, you must use the policy management controls in the [Microsoft 365 communication compliance solution](https://compliance.microsoft.com/supervisoryreview).
+> Using PowerShell to create and manage communication compliance policies is not supported. To create and manage these policies, you must use the policy management controls in the [communication compliance solution](https://compliance.microsoft.com/supervisoryreview).
 
-You create communication compliance policies for Microsoft 365 organizations in the Microsoft 365 compliance center. Communication compliance policies define which communications and users are subject to review in your organization, define which custom conditions the communications must meet, and specify who should do reviews. Users assigned the *Communication Compliance Admin* role can set up policies, and anyone who has this role assigned can access the **Communication compliance** page and global settings in the Microsoft 365 compliance center. If needed, you can export the history of modifications to a policy to a .csv (comma-separated values) file that also includes the status of alerts pending review, escalated items, and resolved items. Policies can't be renamed and can be deleted when no longer needed.
+You create communication compliance policies for Microsoft 365 organizations in the Microsoft Purview compliance portal. Communication compliance policies define which communications and users are subject to review in your organization, define which custom conditions the communications must meet, and specify who should do reviews. Users assigned the *Communication Compliance Admin* role can set up policies, and anyone who has this role assigned can access the **Communication compliance** page and global settings in the Microsoft Purview compliance portal. If needed, you can export the history of modifications to a policy to a .csv (comma-separated values) file that also includes the status of alerts pending review, escalated items, and resolved items. Policies can't be renamed and can be deleted when no longer needed.
 
 ## Policy templates
 
@@ -35,7 +38,7 @@ Policy templates are pre-defined policy settings that you can use to quickly cre
 
 |**Area**|**Policy Template**|**Details**|
 |:-----|:-----|:-----|
-| **Inappropriate text** | Detect inappropriate text | - Locations: Exchange Online, Microsoft Teams, Yammer, Skype for Business <br> - Direction: Inbound, Outbound, Internal <br> - Review Percentage: 100% <br> - Conditions: Threat, Discrimination (preview), and Targeted harassment classifiers |
+| **Inappropriate text** | Detect inappropriate text | - Locations: Exchange Online, Microsoft Teams, Yammer, Skype for Business <br> - Direction: Inbound, Outbound, Internal <br> - Review Percentage: 100% <br> - Conditions: Threat, Discrimination, and Targeted harassment classifiers |
 | **Inappropriate images** | Detect inappropriate images | - Locations: Exchange Online, Microsoft Teams, Yammer, Skype for Business <br> - Direction: Inbound, Outbound, Internal <br> - Review Percentage: 100% <br> - Conditions: Adult and Racy image classifiers |
 | **Sensitive information** | Monitor for sensitive info | - Locations: Exchange Online, Microsoft Teams, Yammer, Skype for Business <br> - Direction: Inbound, Outbound, Internal <br> - Review Percentage: 10% <br> - Conditions: Sensitive information, out-of-the-box content patterns, and types, custom dictionary option, attachments larger than 1 MB |
 | **Regulatory compliance** | Monitor for regulatory compliance | - Locations: Exchange Online, Microsoft Teams, Yammer, Skype for Business <br> - Direction: Inbound, Outbound <br> - Review Percentage: 10% <br> - Conditions: custom dictionary option, attachments larger than 1 MB |
@@ -74,12 +77,44 @@ To copy a policy and create a new policy, complete the following steps:
 
 1. Select the policy you want to copy.
 2. Select **Copy policy** command bar button on the command bar, or select **Copy policy** from the action menu for the policy.
-3. In the **Copy policy** pane, you can accept the default name for the policy in the **Policy name** field or rename the policy. The policy name for the new policy cannot be the same as an existing active or deactivated policy. Complete the **Description** field as needed.
+3. In the **Copy policy** pane, you can accept the default name for the policy in the **Policy name** field or rename the policy. The policy name for the new policy can’t be the same as an existing active or deactivated policy. Complete the **Description** field as needed.
 4. If you don't need further customization of the policy, select **Copy policy** to complete the process. If you need to update the configuration of the new policy, select **Customize policy**. This starts the policy wizard to help you update and customize the new policy.
+
+## User-reported messages policy
+
+>[!NOTE]
+>User-reported messages will begin to be available for organizations licensed for [communication compliance](/microsoft-365/compliance/communication-compliance-configure#subscriptions-and-licensing) and Microsoft Teams starting in May 2022. This feature should be available for all licensed organizations by August 31, 2022.
+
+As part of a layered defense to detect and remediate inappropriate messages in your organization, you can supplement communication compliance policies with user-reported messages in Microsoft Teams. This feature empowers users in your organization to self-report inappropriate messages, such as harassing or threatening language, sharing of adult content, and sharing of sensitive or confidential information, to help foster a safe and compliant work environment.
+
+Enabled by default in the [Teams admin center](/microsoftteams/manage-teams-in-modern-portal), the *Report a concern* option in Teams messages allows users in your organization to submit inappropriate messages for review by communication compliance reviewers for the policy. These messages are supported by a default system policy that supports reporting messages in Teams channels, group, and private chats.
+
+![Communication compliance Report a concern.](../media/communication-compliance-report-a-concern-full-menu.png)
+
+When a user submits a Teams chat message for review, the message is copied to the User-reported message policy. Reported messages initially remain visible to all chat members and there isn't any notification to chat members or the submitter that a message has been reported in channel, private, or group chats. A user can't report the same message more than once and the message remains visible to all users included in the chat session during the policy review process. 
+
+During the review process, communication compliance reviewers can perform all the standard [remediation actions](/microsoft-365/compliance/communication-compliance-investigate-remediate#step-3-decide-on-a-remediation-action) on the message, including removing the message from the Teams chat. Depending on how the messages are remediated, the message sender and recipients will see different [notification messages](/microsoftteams/communication-compliance#act-on-inappropriate-messages-in-microsoft-teams) in Teams chats after the review.
+
+![Communication compliance user-reported messages policy.](../media/communication-compliance-user-reported-messages-policy.png)
+
+User reported messages from Teams chats are the only messages processed by the User-reported message policy and only the assigned reviewers for the policy can be modified. All other policy properties aren't editable. When the policy is created, the initial reviewers assigned to the policy are all members of the *Communication Compliance Admins* role group (if populated with at least one user) or all members of your organization's *Global Admin* role group . The policy creator is a randomly selected user from the *Communication Compliance Admins* role group (if populated with at least one user) or a randomly selected user from your organization's *Global Admin* role group.  
+
+Admins should immediately assign custom reviewers to this policy as appropriate for your organization. This may include reviewers such as your Compliance Officer, Risk Officer, or members of your Human Resources department. To customize the reviewers for chat messages submitted as user-reported messages, complete the following steps:
+
+1. Sign into [Microsoft Purview compliance portal](https://compliance.microsoft.com/) using credentials for an admin account in your Microsoft 365 organization.
+2. In the compliance portal, go to **Communication compliance**.
+3. On the **Policy** tab, select the *User-reported messages* policy and select **Edit**.
+4. On the **Monitor for user-reported messages** pane, assign reviewers for the policy. Reviewers must have mailboxes hosted on Exchange Online. When reviewers are added to a policy, they automatically receive an email message that notifies them of the assignment to the policy and provides links to information about the review process.
+5. Select **Save**.
+
+To disable users from reporting Teams messages with the *Report a concern option*, disable the **End user reporting** option in the [Teams Admin Center](/microsoftteams/manage-teams-in-modern-portal). 
+
+>[!IMPORTANT]
+>If you're using PowerShell to disable the **End user reporting** option in the Teams Admin Center, you must use [Microsoft Teams cmdlets module version 4.2.0](/MicrosoftTeams/teams-powershell-release-notes) or later.
 
 ## Storage limit notification (preview)
 
-Each communication compliance policy has a storage limit size of 100-GB or 1 million messages, whichever is reached first. As the policy approaches these limits, notification emails are automatically sent to users assigned to the *Communication Compliance* or *Communication Compliance Admin* role groups. Notifications messages are sent when the storage size or message count reach 80, 90, and 95 percent of the limit. When the policy limit is reached, the policy is automatically deactivated, and the policy stops processing messages for alerts.
+Each communication compliance policy has a storage limit size of 100 GB or 1 million messages, whichever is reached first. As the policy approaches these limits, notification emails are automatically sent to users assigned to the *Communication Compliance* or *Communication Compliance Admin* role groups. Notifications messages are sent when the storage size or message count reach 80, 90, and 95 percent of the limit. When the policy limit is reached, the policy is automatically deactivated, and the policy stops processing messages for alerts.
 
 >[!IMPORTANT]
 >If a policy is deactivated due to reaching the storage and message limits, be sure to evaluate how to manage the deactivated policy. If you delete the policy, all messages, associated attachments, and message alerts will be permanently deleted. If you need to maintain these items for future use, do not delete the deactivated policy.
@@ -106,7 +141,7 @@ By default, the **Direction is** condition is displayed and can't be removed. Co
 
 ### Sensitive information types
 
-You have the option of including sensitive information types as part of your communication compliance policy. Sensitive information types are either pre-defined or custom data types that can help identify and protect credit card numbers, bank account numbers, passport numbers, and more. As part of [Learn about data loss prevention](dlp-learn-about-dlp.md), the sensitive information configuration can use patterns, character proximity, confidence levels, and even custom data types to help identify and flag content that may be sensitive. The default sensitive information types are:
+You have the option of including sensitive information types as part of your communication compliance policy. Sensitive information types are either pre-defined or custom data types that can help identify and protect credit card numbers, bank account numbers, passport numbers, and more. As part of [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md), the sensitive information configuration can use patterns, character proximity, confidence levels, and even custom data types to help identify and flag content that may be sensitive. The default sensitive information types are:
 
 - Financial
 - Medical and health
@@ -138,7 +173,7 @@ Built-in trainable and global classifiers scan sent or received messages across 
 Communication compliance built-in trainable and global classifiers scan communications for terms, images, and sentiment for the following types of language and content:
 
 - **Adult images**: Scans for images that are sexually explicit in nature.
-- **Discrimination (preview)**: Scans for explicit discriminatory language and is particularly sensitive to discriminatory language against the African American/Black communities when compared to other communities.
+- **Discrimination**: Scans for explicit discriminatory language and is particularly sensitive to discriminatory language against the African American/Black communities when compared to other communities.
 - **Gory images**: Scans for images that depict violence and gore.
 - **Profanity**: Scans for profane expressions that embarrass most people.
 - **Racy images**: Scans for images that are sexually suggestive in nature, but contain less explicit content than images deemed Adult.
@@ -152,7 +187,7 @@ The built-in trainable and global classifiers don't provide an exhaustive list o
 > [!NOTE]
 > Policies using classifiers will inspect and evaluate messages with a word count of six or greater. Messages containing less than six words aren't evaluated in policies using classifiers. To identify and take action on shorter messages containing inappropriate content, we recommend including a custom keyword dictionary to communication compliance policies monitoring for this type of content.
 
-For information about trainable classifiers in Microsoft 365, see [Getting started with trainable classifiers](classifier-get-started-with.md).
+For information about trainable classifiers, see [Getting started with trainable classifiers](classifier-get-started-with.md).
 
 ### Optical character recognition (OCR)
 
@@ -189,7 +224,7 @@ The following table explains more about each condition.
 | **Message is classified with any of these labels**  <br><br> **Message is not classified with any of these labels** | To apply the policy when certain retention labels are included or excluded in a message. Retention labels must be configured separately and configured labels are chosen as part of this condition. Each label you choose is applied separately (only one of these labels must apply for the policy to apply to the message). For more information about retention labels, see [Learn about retention policies and retention labels](retention.md).|
 | **Message contains any of these words**  <br><br> **Message contains none of these words** | To apply the policy when certain words or phrases are included or excluded in a message, enter each word separated with a comma. For phrases of two words or more, use quotation marks around the phrase. Each word or phrase you enter is applied separately (only one word must apply for the policy to apply to the message). For more information about entering words or phrases, see the next section [Matching words and phrases to emails or attachments](communication-compliance-policies.md#Matchwords).|
 | **Attachment contains any of these words**  <br><br> **Attachment contains none of these words** | To apply the policy when certain words or phrases are included or excluded in a message attachment (such as a Word document), enter each word separated with a comma. For phrases of two words or more, use quotation marks around the phrase. Each word or phrase you enter is applied separately (only one word must apply for the policy to apply to the attachment). For more information about entering words or phrases, see the next section [Matching words and phrases to emails or attachments](communication-compliance-policies.md#Matchwords).|
-| **Attachment is any of these file types**  <br><br> **Attachment is none of these file types** | To supervise communications that include or exclude specific types of attachments, enter the file extensions (such as .exe or .pdf). If you want to include or exclude multiple file extensions, enter these on separate lines. Only one attachment extension must match for the policy to apply.|
+| **Attachment is any of these file types**  <br><br> **Attachment is none of these file types** | To supervise communications that include or exclude specific types of attachments, enter the file extensions (such as .exe or .pdf). If you want to include or exclude multiple file extensions, enter file types separated by a comma (example *.exe,.pdf,.zip*). Only one attachment extension must match for the policy to apply.|
 | **Message size is larger than**  <br><br> **Message size is not larger than** | To review messages based on a certain size, use these conditions to specify the maximum or minimum size a message can be before it's subject to review. For example, if you specify **Message size is larger than** \> **1.0 MB**, all messages that are 1.01 MB and larger are subject to review. You can choose bytes, kilobytes, megabytes, or gigabytes for this condition.|
 | **Attachment is larger than**  <br><br> **Attachment is not larger than** | To review messages based on the size of their attachments, specify the maximum or minimum size an attachment can be before the message and its attachments are subject to review. For example, if you specify **Attachment is larger than** \> **2.0 MB**, all messages with attachments 2.01 MB and over are subject to review. You can choose bytes, kilobytes, megabytes, or gigabytes for this condition.|
 
@@ -222,7 +257,7 @@ If you want to reduce the amount of content to review, you can specify a percent
 
 ## Alert policies
 
-After you configure a policy, a corresponding alert policy is automatically created and alerts are generated for messages that match conditions defined in the policy. It may take up to 24 hours after creating a policy start to receive alerts from activity indicators. By default, all policy matches alert triggers are assigned a severity level of medium in the associated alert policy. Alerts are generated for a communication compliance policy once the aggregation trigger threshold level is met in the associated alert policy. A single email notification is sent once every 24 hours for any alerts, regardless of the number of individual messages that match policy conditions. For example, Contoso has an inappropriate content policy enabled and for January 1st, there were 100 policy matches that generated 6 alerts. A single email notification for the 6 alerts is sent at end of January 1st.
+After you configure a policy, a corresponding alert policy is automatically created and alerts are generated for messages that match conditions defined in the policy. It may take up to 24 hours after creating a policy start to receive alerts from activity indicators. By default, all policy matches alert triggers are assigned a severity level of medium in the associated alert policy. Alerts are generated for a communication compliance policy once the aggregation trigger threshold level is met in the associated alert policy. A single email notification is sent once every 24 hours for any alerts, regardless of the number of individual messages that match policy conditions. For example, Contoso has an inappropriate content policy enabled and for January 1st, there were 100 policy matches that generated six alerts. A single email notification for the six alerts is sent at end of January 1st.
 
 For communication compliance policies, the following alert policy values are configured by default:
 
@@ -235,15 +270,15 @@ For communication compliance policies, the following alert policy values are con
 > [!NOTE]
 > The alert policy threshold trigger settings for activities supports a minimum value of 3 or higher for communication compliance policies.
 
-You can change the default settings for triggers on number of activities, period for the activities, and for specific users in alert policies on the **Alert policies** page in the Microsoft 365 compliance center.
+You can change the default settings for triggers on number of activities, period for the activities, and for specific users in alert policies on the **Alert policies** page in the Microsoft Purview compliance portal.
 
 ### Change the severity level for an alert policy
 
 If you'd like to change the severity level assigned in an alert policy for a specific communication compliance policy, complete the following steps:
 
-1. Sign into [Microsoft 365 compliance center](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization.
+1. Sign into [Microsoft Purview compliance portal](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization.
 
-2. In the Microsoft 365 compliance center, go to **Policies**.
+2. In the Microsoft Purview compliance portal, go to **Policies**.
 
 3. Select **Office 365 alert** on the **Policies** page to open the **Alerts policies** page.
 

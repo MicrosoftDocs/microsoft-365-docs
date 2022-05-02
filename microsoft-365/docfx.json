@@ -94,12 +94,12 @@
         "lighthouse/**/*.md": false
         },
       "titleSuffix": {
-        "compliance/**/*.md": "Microsoft 365 Compliance",
+        "compliance/**/*.md": "Microsoft Purview",
         "security/mtp/**/*.md": "Microsoft 365 security",
         "security/office-365-security/**/*.md": "Office 365",
         "managed-desktop/**/*.md": "Microsoft Managed Desktop",
         "enterprise/**/*.md": "Microsoft 365 Enterprise",
-        "campaigns/**/*.md": "Microsoft 365 for Campaigns",
+        "business-premium/**/*.md": "Microsoft 365 Business Premium",
         "business/**/*.md": "Microsoft 365 Business",
         "admin/**/*.md": "Microsoft 365 admin",
         "lighthouse/**/*.md": "Microsoft 365 Lighthouse"
@@ -111,7 +111,7 @@
         "bookings/":"https://feedbackportal.microsoft.com/feedback/forum/e9c7c7d1-011c-ec11-b6e7-0022481f8472",
         "business/**/*.md":"https://admin.microsoft.com/adminportal/home?showfeedback=DocsMacCampaign",
         "business-video/**/*.md":"https://admin.microsoft.com/adminportal/home?showfeedback=DocsMacCampaign",
-        "campaigns/**/*.md":"https://admin.microsoft.com/adminportal/home?showfeedback=DocsMacCampaign",
+        "business-premium/**/*.md":"https://admin.microsoft.com/adminportal/home?showfeedback=DocsMacCampaign",
         "commerce/**/*.md":"https://admin.microsoft.com/adminportal/home?showfeedback=DocsMacCampaign",
         "enterprise/**/*.md":"https://admin.microsoft.com/adminportal/home?showfeedback=DocsMacCampaign",
         "lighthouse/":"https://feedbackportal.microsoft.com/feedback/forum/d6a21c42-fe1b-ec11-b6e7-0022481f8472"

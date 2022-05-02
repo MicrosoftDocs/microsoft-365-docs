@@ -1,14 +1,14 @@
 ---
-title: "How security recommendations can affect your users"
+title: "How Microsoft 365 Business Premium helps your business"
 f1.keywords:
 - NOCSH
-ms.author: sharik
-author: SKjerland
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection: 
 - Adm_O365
 - M365-subscription-management 
@@ -23,58 +23,65 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn how security recommendations for Microsoft 365 Business Premium affect your users and protect your data."
+description: "Learn how Microsoft 365 Business Premium helps your business with productivity and security."
 ---
 
-# How security recommendations affect your users
+# How Microsoft 365 Business Premium helps your business
 
-The security recommendations for Microsoft 365 in this solution make it much harder for hackers to gain access to your environment. The tradeoff is that your users will need to be aware of how to work within this more secure environment. We understand a little extra patience is required, but it's worth it to keep your organization protected.
+Microsoft 365 Business Premium is a cost-effective solution that empowers small and medium-sized businesses to work more efficiently and more securely than before. This article describes how Microsoft 365 Business Premium can help your business, and includes these sections:
 
-![Illustration that sums up key points from below for iPhones, Android devices, Macs, Windows 10, sharing, and key staff.](../media/M365-democracy-Users_900px.png)
+- [Video: Top 5 benefits of Microsoft 365 Business Premium](#video-top-5-benefits-of-microsoft-365-business-premium)
+- [Productivity and advanced security capabilities](#productivity-and-security) that enable you to run your business more securely, across devices, and from just about anywhere
+- [Resources to train your team and all staff](#resources-to-train-your-users) on how to work productively while maintaining a more secure environment
+- A [downloadable digital threats guide](#download-the-digital-threats-guide) that describes different kinds of threats and how to protect against them in your day-to-day work
+- [Next steps](#next-steps)
 
-## Use secure email practices
+## Video: Top 5 benefits of Microsoft 365 Business Premium
 
-All users should be aware of and use these email practices to help keep their email secure:
+Watch the following video to learn see how Microsoft 365 Business Premium helps your business be more productive and secure: <p>
 
-- Set up email to use multi-factor authentication with the authenticator app.
-- Verify legitimate emails and look for safety tips from Advanced Phishing in Defender for Office 365 Protection.
-- Open only safe links and attachments, as verified by Safe Links and Safe Attachments.
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Pq0G]
 
-Learn more about [multi-factor authentication](m365-campaigns-multifactor-authentication.md) and [phishing and other attacks](m365-campaigns-phishing-and-attacks.md).
+> [!TIP]
+> For more information, see [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium?activetab=pivot:overviewtab).
 
-Download an [infographic](m365-campaigns-protect-campaign-infographic.md) with tips for you and the members of your team.
+## Productivity and security
 
-## Set up iPhones and Android devices
+Microsoft 365 Business Premium includes your favorite Office productivity apps, collaboration tools like Microsoft Teams, and enterprise-grade security, identity, and device management solutions. With Microsoft 365 Business Premium, you can run your business more securely, across devices, and from just about anywhere. Microsoft 365 Business Premium includes:
 
-All users you add to your environment will need to take a few minutes to [setup iPhones and Android devices](../business/set-up-mobile-devices.md?toc=%2Fmicrosoft-365%2Fcampaigns%2Ftoc.json) to work securely:
+- **Windows 10 and 11 Pro** upgrades for your company's Windows devices
+- **Office apps**, such as Word, Excel, and PowerPoint, that you can install on your computers (Windows and Mac), and on your mobile devices (Windows, iOS, and Android). You also get Publisher and Access for your Windows devices.
+- **Microsoft Teams, Outlook, and Exchange** for email, calendars, meetings, and collaboration
+- **SharePoint and OneDrive** to store and manage your business files
+- **Sophisticated protection from threats** like phishing, malware, and ransomware protection
+- **Compliance and privacy features** to protect and control access to your and your customers' sensitive information
+- **Device management capabilities** that enable your security team to help keep computers, tablets, and phones up to date and secure
 
-- Set up devices to use multi-factor authentication with the authenticator app.
-- Use Microsoft mobile apps, including Outlook Mobile, Word, OneDrive, and other Microsoft apps from the app store. The native mail apps that are included on iPhones and Android devices aren't supported. 
-- Require a PIN for users to unlock their device.
+> [!TIP]
+> For more detailed information about what's included in Microsoft 365 Business Premium, see the [Microsoft 365 User Subscription Suites for Small and Medium-sized Businesses](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWR6bM).
 
-After setting these up, your users will be prompted to use the authenticator app when accessing your organization data on these devices, including mail.
+## Resources to train your users
 
-## Keep BYOD Macs and Windows 10 PCs fresh
+The security recommendations provided in this library make it much harder for cyberattackers to gain access to your environment. However, an important part of your security strategy includes training users&mdash; the people in your company who use your systems regularly. Users can help be your front line of defense. Everyone needs to know how to work productively while maintaining a more secure environment. 
 
-It's also important that users keep their primary work device up to date:
+Resources are available to help everyone in your organization to:
 
-- Install the latest versions of Office desktop apps and keep these fresh with updates, when prompted.
-- Stay on top of operating system updates, such as Windows updates.
+- [Protect devices](m365bp-devices-overview.md)
+- [Use email more securely](m365bp-protect-email-overview.md)
+- [Collaborate and share information more securely](m365bp-collaborate-share-securely.md)
 
-For [unmanaged Windows 10 and Mac devices](m365bp-protect-pcs-macs.md), users have the responsibility to ensure that basic security features are enabled.
+Use the recommendations in this library to help your users be productive and more secure in their work.
 
-**Enable basic security capabilities on BYOD Windows 10 and Mac devices**
+## Download the digital threats guide
 
-|**Windows 10**|**Mac**|
-|:-----|:------|
-|Turn on BitLocker device protection<p><p> Ensure Windows Defender remains on <p>Turn on Windows Firewall| Use FileVault to encrypt the Mac disk <p><p>Use a reliable antivirus software <p>Turn on firewall protection|
+Our digital threats guide describes different kinds of threats and what you and your staff can do to protect against these threats. Download this visual guide for you and your team:
 
-To learn more about these recommendations, see [Protect your account and devices from hackers and malware](https://support.office.com/article/Protect-your-account-and-devices-from-hackers-and-malware-066d6216-a56b-4f90-9af3-b3a1e9a327d6#ID0EAABAAA=Windows_10).
+[:::image type="content" source="media/m365bp-whatuserscandotosecure.png" alt-text="Thumbnail of downloadable guide.":::](https://download.microsoft.com/download/9/1/f/91fa8f24-9953-4f33-9d87-a95624db5e0b/M365BPWhatCanUsersDoToSecure.pdf)
 
-## Collaborate using Microsoft Teams, OneDrive, SharePoint Online, and other tools
+[PDF](https://download.microsoft.com/download/9/1/f/91fa8f24-9953-4f33-9d87-a95624db5e0b/M365BPWhatCanUsersDoToSecure.pdf) | [PowerPoint](https://download.microsoft.com/download/9/1/f/91fa8f24-9953-4f33-9d87-a95624db5e0b/M365BPWhatCanUsersDoToSecure.pptx)
 
-Your users might be tempted to share and store your organization files in places other than Microsoft 365. Microsoft 365 makes it as easy as possible to collaborate and share securely. You can [share files and videos](share-files-and-videos.md) directly from Microsoft Teams, OneDrive, Stream, and even from within a file. Sharing from within these tools helps keep your data from leaking. You can add additional protection to sensitive data to prevent sharing outside your organization.
+## Next steps
 
-## Set up managed Windows 10 devices
+1. Get [Microsoft 365 Business Premium](get-microsoft-365-business-premium.md) or [Microsoft 365 for Campaigns](get-microsoft-365-campaigns.md).
 
-We recommend that your most important staff members use freshly acquired Windows 10 devices that you manage. We'll show you how to [manage and secure these devices](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json). This ensures that staff members who are the highest value target to hackers receive the most protection.
+2. [Start the setup process](m365bp-setup-overview.md).

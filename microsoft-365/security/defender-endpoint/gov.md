@@ -72,8 +72,8 @@ The following are the Microsoft Defender for Endpoint portal URLs for US Governm
 |Customer type|Portal URL|
 |---|---|
 |GCC|<https://security.microsoft.com>|
-|GCC High|<https://securitycenter.microsoft.us>|
-|DoD|<https://securitycenter.microsoft.us>|
+|GCC High|<https://security.microsoft.us>|
+|DoD|<https://security.apps.mil>|
 |
 > [!NOTE]
 > If you are a GCC customer and in the process of moving from Microsoft Defender for Endpoint commercial to GCC, use https://transition.security.microsoft.com to access your Microsoft Defender for Endpoint commercial data.
@@ -113,14 +113,14 @@ Windows 7 SP1 Enterprise (Legacy) <sup>3</sup>|![Yes.](images/svg/check-yes.svg)
 Windows 7 SP1 Pro (Legacy) <sup>3</sup>|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
 Linux|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
 macOS|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
-Android|![No.](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development
-iOS|![No.](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development
+Android|![Yes.](images/svg/check-yes.svg) <br /> Public preview|![Yes](images/svg/check-yes.svg) <br /> Public preview|![Yes](images/svg/check-yes.svg) <br /> Public preview
+iOS|![Yes.](images/svg/check-yes.svg) <br /> Public preview|![Yes](images/svg/check-yes.svg) <br /> Public preview|![Yes](images/svg/check-yes.svg) <br /> Public preview
 |
 
 > [!NOTE]
 > <sup>1</sup> The patch must be deployed prior to device onboarding in order to configure Defender for Endpoint to the correct environment.
 >
-> <sup>2</sup> Learn about the [unified modern solution for Windows 2016 and 2012 R2](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution-preview). If you have previously onboarded your servers using MMA, follow the guidance provided in [Server migration](server-migration.md) to migrate to the new solution.
+> <sup>2</sup> Learn about the [unified modern solution for Windows 2016 and 2012 R2](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution). If you have previously onboarded your servers using MMA, follow the guidance provided in [Server migration](server-migration.md) to migrate to the new solution.
 >
 > <sup>3</sup> When using [Microsoft Monitoring Agent](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) you'll need to choose "Azure US Government" under "Azure Cloud" if using the [setup wizard](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard), or if using a [command line](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) or a [script](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) - set the "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" parameter to 1. <br /> The minimum MMA supported version is 10.20.18029 (March 2020).
 
@@ -149,7 +149,8 @@ The following downloadable spreadsheet lists the services and their associated U
 
 |Spreadsheet of domains list| Description|
 |---|---|
-| Microsoft Defender for Endpoint URL list for Gov/GCC/DoD customers | Spreadsheet of specific DNS records for service locations, geographic locations, and OS for Gov/GCC/DoD customers. <p> [Download the spreadsheet here.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
+|Microsoft Defender for Endpoint URL list for commercial customers| Spreadsheet of specific DNS records for service locations, geographic locations, and OS for commercial customers. <p> [Download the spreadsheet here.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
+| Microsoft Defender for Endpoint URL list for Gov/GCC/DoD | Spreadsheet of specific DNS records for service locations, geographic locations, and OS for Gov/GCC/DoD customers. <p> [Download the spreadsheet here.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
 
 For more information, see [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md).
 
@@ -186,6 +187,25 @@ These are the known gaps:
 |Feature name|GCC|GCC High|DoD|
 |---|:---:|:---:|:---:|
 |Network assessments|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development|
-|Network discovery|![Yes](images/svg/check-yes.svg)|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development|
-|Reports: Attack surface reduction, Device Control, Device health, Firewall|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development|
+|Network discovery|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
+|Reports: Device Control, Device health, Firewall|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development|
 |Web content filtering|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development|
+  
+
+These are the features and known gaps for [Mobile Threat Defense (Microsoft Defender for Endpoint on Android & iOS)](mtd.md):
+
+<br />
+
+****
+
+|Feature name|GCC|GCC High|DoD|
+|---|:---:|:---:|:---:|
+|Web Protection (Anti-Phishing and custom indicators)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
+|Malware Protection (Android-Only)|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development|
+|Jailbreak Detection (iOS-Only)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
+|Conditional Access/Conditional Launch|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
+|Support for MAM|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
+|Privacy Controls|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
+|Threat and Vulnerability Management (TVM)|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development|
+  
+

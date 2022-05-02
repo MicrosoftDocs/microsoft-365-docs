@@ -2,7 +2,7 @@
 title: "Microsoft 365 cloud-only identity"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 09/30/2020
 audience: Admin
 ms.topic: article

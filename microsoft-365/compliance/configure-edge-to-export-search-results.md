@@ -2,8 +2,8 @@
 title: "Use the eDiscovery Export Tool in Microsoft Edge"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: how-to
@@ -16,6 +16,8 @@ description: "You have to enable ClickOnce support to use the newest version of 
 ---
 
 # Use the eDiscovery Export Tool in Microsoft Edge
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 As a result of recent changes to the newest version of Microsoft Edge, ClickOnce support is no longer enabled by default. To continue using the eDiscovery Export Tool to download Content Search or eDiscovery search results, you either need to use [Microsoft Internet Explorer](https://support.microsoft.com/help/17621/internet-explorer-downloads) or enable ClickOnce support in the newest version of Microsoft Edge.
 

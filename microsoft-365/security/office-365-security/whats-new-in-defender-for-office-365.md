@@ -46,11 +46,13 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
 - [What's new in Microsoft Cloud App Security](/cloud-app-security/release-notes)
 
+## March 2022
 
-## December/January 2021
+- [Streamlined the submission experience in Microsoft Defender for Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/streamlining-the-submissions-experience-in-microsoft-defender/ba-p/3152080): Introducing the new unified and streamlined submission process to make your experience simpler.
+
+## January 2022
 
 - [Updated Hunting and Investigation Experiences for Microsoft Defender for Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/updated-hunting-and-investigation-experiences-for-microsoft/ba-p/3002015): Introducing the email summary panel for experiences in Defender for Office 365, along with experience updates for Threat Explorer and Real-time detections.
-
 
 ## October 2021
 
@@ -105,7 +107,6 @@ For more information on what's new with other Microsoft Defender security produc
 - Increasing the limits for Export of records from 9990 to 200,000 in [hunting experiences](threat-explorer.md)
 - Extending the Explorer (and Real-time detections) data retention and search limit for trial tenants from 7 (previous limit) to 30 days in [hunting experiences](threat-explorer.md)
 - New hunting pivots called **Impersonated domain** and **Impersonated user** within the Explorer (and Real-time detections) to search for impersonation attacks against protected users or domains. For more information, see [details](threat-explorer.md#view-phishing-emails-sent-to-impersonated-users-and-domains). (Microsoft Defender for Office 365 Plan 1 or Plan 2)
-
 
 ## Microsoft Defender for Office 365 Plan 1 and Plan 2
 

@@ -16,7 +16,7 @@ metadata:
   - intro-hub-or-landing
   author: efrene #Required; your GitHub user alias, with correct capitalization.
   ms.author: efrene #Required; microsoft alias of author; optional team alias.
-  ms.date: 02/27/2022
+  ms.date: 04/08/2022
 
 # productDirectory section (optional)
 productDirectory:
@@ -32,7 +32,7 @@ productDirectory:
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
       summary: Learn about new Defender for Business capabilities in Business Premium and Microsoft 365 Lighthouse.
-      url: https://aka.ms/MDB-previewblog
+      url: https://aka.ms/SMBsecurityFebBlog
     # Card
     - title: Get the free partner kit
       imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
@@ -53,31 +53,46 @@ conceptualContent:
       links:
         - url: ../business-premium/index.md
           itemType: overview
-          text: Overview of Microsoft 365 Business Premium
-        - url: ../business-video/index.yml
-          itemType: video
-          text: Microsoft 365 for business training
+          text: Microsoft 365 Business Premium overview
+        - url: ../business-premium/m365bp-secure-users.md
+          itemType: overview
+          text: How Microsoft 365 Business Premium helps your business with productivity and security
+        - url: /office365/servicedescriptions/office-365-service-descriptions-technet-library
+          text: Microsoft 365 service descriptions
+          itemType: reference
         - url: https://go.microsoft.com/fwlink/?linkid=2164213
           itemType: overview
           text: Compare Microsoft 365 for business plans
         - url: ../admin/misc/microsoft-365-business-faqs.yml
           itemType: reference
           text: Microsoft 365 for business FAQ
+        - url: ../business-video/index.yml
+          itemType: video
+          text: Microsoft 365 for business training videos
   # Card
     - title: Set up Microsoft 365 Business Premium
       links:
         - url: ../business-premium/get-microsoft-365-business-premium.md
           itemType: how-to-guide
-          text: 1. Get Microsoft 365 Business Premium
-        - url: ../admin/setup/plan-your-setup.md
+          text: Get Microsoft 365 Business Premium
+        - url: ../business-premium/m365bp-setup-overview.md
           itemType: how-to-guide
-          text: 2. Plan your setup process
-        - url: ../business-premium/m365bp-setup.md
-          itemType: how-to-guide
-          text: 3. Set up Microsoft 365 Business Premium
-        - url: ../admin/security-and-compliance/secure-your-business-data.md
-          itemType: how-to-guide
-          text: 4. Top 10 ways to secure Microsoft 365 for business
+          text: 1. Complete the basic setup process
+        - url: ../business-premium/m365bp-security-overview.md
+          itemType: overview
+          text: 2. Protect your environment
+        - url: ../business-premium/m365bp-devices-overview.md
+          itemType: overview
+          text: 3. Set up personal (unmanaged) devices
+        - url: ../business-premium/m365bp-protect-email-overview.md
+          itemType: overview
+          text: 4. Use email more securely
+        - url: ../business-premium/m365bp-collaborate-share-securely.md
+          itemType: overview
+          text: 5. Collaborate and share more securely
+        - url: ../business-premium/m365bp-maintain-environment.md
+          itemType: overview
+          text: Maintain your environment
   # Card
     - title: What is Microsoft 365 Lighthouse?
       links:
@@ -113,32 +128,43 @@ conceptualContent:
           text: Get started with Partner Center
 
   # Card
-    - title: Protect your company's devices
+    - title: Protect devices
       links:
-        - url: ../security/defender-business/mdb-overview.md
+        - url: ../business-premium/m365bp-devices-overview.md
           itemType: overview
-          text: Overview of Microsoft Defender for Business
-        - url: ../security/defender-business/mdb-setup-configuration.md
-          itemType: overview
-          text: Set up and configure Defender for Business
-        - url: ../security/defender-business/compare-mdb-m365-plans.md
-          itemType: overview
-          text: Compare security features in Microsoft 365 plans
-        - url: ../security/defender-business/mdb-faq.yml
-          itemType: reference
-          text: Defender for Business FAQ
-  # Card
-    - title: Protect your email content and Office files
-      links:
-        - url: ../security/office-365-security/defender-for-office-365.md
-          itemType: overview
-          text: Overview of Microsoft Defender for Office 365
-        - url: ../security/office-365-security/protect-against-threats.md
+          text: Protect personal (unmanaged) devices
+        - url: ../business-premium/m365bp-multifactor-authentication.md
           itemType: how-to-guide
-          text: Set up and configure Defender for Office 365
-        - url: ../security/office-365-security/anti-malware-protection-faq-eop.yml
-          itemType: reference
-          text: Defender for Office 365 FAQ
+          text: Set up multi-factor authentication on devices
+        - url: ../business-premium/m365bp-install-office-apps.md
+          itemType: how-to-guide
+          text: Install Office apps on all devices
+        - url: ../business-premium/m365bp-protect-pcs-macs.md
+          itemType: how-to-guide
+          text: Protect unmanaged Windows PCs and Macs
+        - url: ../business-premium/m365bp-protect-devices.md
+          itemType: overview
+          text: Set up and secure managed devices
+
+  # Card
+    - title: Protect email content and Office files
+      links:
+        - url: ../business-premium/m365bp-increase-protection.md
+          itemType: how-to-guide
+          text: Set up your security policies
+        - url: ../business-premium/avoid-phishing-and-attacks.md
+          itemType: how-to-guide
+          text: Know what to watch for in email content
+        - url: ../business-premium/send-encrypted-email.md
+          itemType: how-to-guide
+          text: Encrypt or label sensitive email
+        - url: ../business-premium/create-teams-for-collaboration.md
+          itemType: how-to-guide
+          text: Use Microsoft Teams for collaboration
+        - url: ../business-premium/share-files-and-videos.md
+          itemType: overview
+          text: Share files and videos in Microsoft Teams or SharePoint
+
   # Card
     - title: Support and community
       links:

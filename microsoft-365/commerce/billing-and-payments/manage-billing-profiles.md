@@ -1,14 +1,12 @@
 ---
 title: Understand billing profiles
-f1.keywords:
-- NOCSH
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - 'MACBillingBillsPaymentsBillingProfiles'
 ms.service: o365-administration
 ms.localizationpriority: medium

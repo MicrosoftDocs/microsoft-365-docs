@@ -2,7 +2,7 @@
 title: "Plan for network devices that connect to Office 365 services"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 12/29/2016
 audience: ITPro
 ms.topic: conceptual

@@ -15,12 +15,12 @@
       items:
       - name: Get Defender for Business
         href: get-defender-business.md
+      - name: Add users and assign licenses
+        href: mdb-add-users.md
+      - name: Visit the Microsoft 365 Defender portal
+        href: mdb-get-started.md
       - name: Use the setup wizard
         href: mdb-use-wizard.md
-      - name: Get started using the portal
-        href: mdb-get-started.md
-      - name: View your vulnerability management dashboard
-        href: mdb-view-tvm-dashboard.md
       - name: Try tutorials and simulations
         href: mdb-tutorials.md
     - name: Set up and configure Defender for Business
@@ -39,6 +39,8 @@
         href: mdb-configure-security-settings.md
     - name: View and respond to detected threats
       items: 
+      - name: View your vulnerability management dashboard
+        href: mdb-view-tvm-dashboard.md
       - name: View and manage incidents
         href: mdb-view-manage-incidents.md
       - name: Respond to and mitigate threats
@@ -65,6 +67,8 @@
         href: mdb-manage-devices.md
       - name: Create device groups
         href: mdb-create-edit-device-groups.md
+      - name: Offboard devices
+        href: mdb-offboard-devices.md
     - name: Reference information
       items: 
       - name: How to get help or contact support
@@ -74,6 +78,6 @@
       - name: Troubleshooting
         href: mdb-troubleshooting.yml
       - name: Microsoft 365 Business Premium
-        href: /microsoft-365/business-premium/index.md
+        href: /microsoft-365/business-premium/
       - name: Microsoft 365 Lighthouse
         href: /microsoft-365/lighthouse/m365-lighthouse-overview

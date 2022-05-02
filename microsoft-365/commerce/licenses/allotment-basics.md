@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: micurn, nicholak
+ms.reviewer: shegu, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,6 +16,7 @@ ms.collection:
 - Adm_O365
 ms.custom: 
 - commerce_licensing
+search.appverid: MET150
 description: "Learn about the new allotments feature."
 ms.date: 03/17/2021
 ---

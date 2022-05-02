@@ -2,8 +2,8 @@
 title: "Increase the Recoverable Items quota for mailboxes on hold"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date:
 audience: Admin
@@ -19,6 +19,8 @@ description: "Enable the archive mailbox and turn on auto-expanding archiving to
 ---
 
 # Increase the Recoverable Items quota for mailboxes on hold
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 The default Exchange retention policy—named *Default MRM Policy*—that is automatically applied to new mailboxes in Exchange Online contains a retention tag named Recoverable Items 14 days move to archive. This retention tag moves items from the Recoverable Items folder in the user's primary mailbox to the Recoverable Items folder in the user's archive mailbox after the 14-day retention period expires for an item. For this to happen, the user's archive mailbox must be enabled. If the archive mailbox isn't enabled, no action is taken, which means that items in the Recoverable Items folder for a mailbox on hold aren't moved to the archive mailbox after the 14-day retention period expires. Because nothing is deleted from a mailbox on hold, it's possible that the storage quota for the Recoverable Items folder might be exceeded, especially if the user's archive mailbox isn't enabled.
 
