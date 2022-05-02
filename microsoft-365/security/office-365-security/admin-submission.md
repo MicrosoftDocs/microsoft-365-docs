@@ -273,7 +273,7 @@ If you've deployed the [Report Message add-in](enable-the-report-message-add-in.
    - To export the entries, click **Export**. In the dialog that appears, save the .csv file.
 
 > [!NOTE]
-> If organizations are configured to send user reported messages to the custom mailbox only, reported messages will not be sent for rescan and the results in **User reported messages** will always be empty.
+> If organizations are configured to send user reported messages to the custom mailbox only, reported messages will appear in **User reported messages** but their results will always be empty (as they would not have been rescanned).
 
 ### Undo user submissions
 
