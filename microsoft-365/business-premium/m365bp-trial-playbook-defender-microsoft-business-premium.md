@@ -31,7 +31,7 @@ These actions are recommendations from the Microsoft Defender team on key featur
 
 After you have initiated the trial and completed the setup process, it may take up to 2 hours for changes to take effect.
 
-We have automatically configured [Preset security policies](preset-security-policies.md) in your environment. These policies represent a baseline protection profile that's suitable for most users. Standard protection includes:
+We have automatically configured [Preset security policies](/security/office-365-security/preset-security-policies.md) in your environment. These policies represent a baseline protection profile that's suitable for most users. Standard protection includes:
 
 - Safe Links, Safe Attachments and Anti-Phishing policies that are scoped to the entire tenant or subset of users you may have chosen during the trial setup process.
 
@@ -47,11 +47,11 @@ Watch this video to learn more: [Protect against malicious links with Safe Links
 
 Microsoft Defender for enables users to report messages to their security teams and allows admins to submit messages to Microsoft for analysis.
 
-- Deploy the [Report Message add-in or the Report Phishing add-in](enable-the-report-message-add-in.md).
+- Deploy the [Report Message add-in or the Report Phishing add-in](/security/office-365-security/enable-the-report-message-add-in.md).
 
-- Establish a workflow to [Report false positives and false negatives](report-false-positives-and-false-negatives.md).
+- Establish a workflow to [Report false positives and false negatives](/security/office-365-security/report-false-positives-and-false-negatives.md).
 
-- Use the [Submissions portal](admin-submission.md).
+- Use the [Submissions portal](/security/office-365-security/admin-submission.md).
 
 Watch this video to learn more: [Learn how to use the Submissions portal to submit messages for analysis - YouTube](https://www.youtube.com/watch?v=ta5S09Yz6Ks&ab_channel=MicrosoftSecurit).
 
@@ -87,7 +87,7 @@ Get alerted to potential compromise and automatically limit the impact of these 
 
 - Review [compromised user alerts](address-compromised-users-quickly.md#compromised-user-alerts).
 
-- [Investigate and respond](address-compromised-users-quickly.md) to compromised users.
+- [Investigate and respond](/security/office-365-security/address-compromised-users-quickly.md) to compromised users.
 
 :::image type="content" source="../../media/mdo-trial-playbook-investigation.png" alt-text="The Investigate compromised users" lightbox="../../media/mdo-trial-playbook-investigation.png":::
 
@@ -95,7 +95,7 @@ Watch this video to learn more: [Detect and respond to compromise in Microsoft D
 
 ### Use Threat Explorer to investigate malicious email
 
-Defender for Business enables you to investigate activities that put people in your organization at risk and to take action to protect your organization. You can do this using [Threat Explorer or (real-time detections)](threat-explorer.md).
+Defender for Business enables you to investigate activities that put people in your organization at risk and to take action to protect your organization. You can do this using [Threat Explorer or (real-time detections)](/security/office-365-security/threat-explorer.md).
 
 - [Find suspicious email that was delivered](investigate-malicious-email-that-was-delivered.md#find-suspicious-email-that-was-delivered): Find and delete messages, identify the IP address of a malicious email sender, or start an incident for further investigation.
 
@@ -121,9 +121,9 @@ Watch this video to learn more: [Campaign Views in Microsoft Defender for Busine
 
 Respond efficiently using Automated investigation and response (AIR) to review, prioritize, and respond to threats.
 
-- [Learn more](automated-investigation-response-office.md) about investigation playbooks.
+- [Learn more](/security/office-365-security/automated-investigation-response-office.md) about investigation playbooks.
 
-- [View details and results](email-analysis-investigations.md) of an investigation.
+- [View details and results](/security/office-365-security/email-analysis-investigations.md) of an investigation.
 
 - Eliminate threats by [approving remediation actions](air-remediation-actions.md).
 
@@ -137,7 +137,7 @@ Use Advanced hunting to write custom detection rules, proactively inspect events
 
 - [Build custom detection rules](../defender/advanced-hunting-overview.md#get-started-with-advanced-hunting).
 
-- [Access shared queries](../defender/advanced-hunting-shared-queries.md) created by others.
+- [Access shared queries](/security/defender/advanced-hunting-shared-queries.md) created by others.
 
 Watch this video to learn more: [Threat hunting with Microsoft 365 Defender - YouTube](https://www.youtube.com/watch?v=l3OmH4U6XAs&list=PL3ZTgFEc7Lyt1O81TZol31YXve4e6lyQu&index=4).
 
@@ -145,11 +145,11 @@ Watch this video to learn more: [Threat hunting with Microsoft 365 Defender - Yo
 
 Equip your users with the right knowledge to identify threats and report suspicious messages with Attack simulation training in Defender for Office 365.
 
-- [Simulate realistic threats](attack-simulation-training.md) to identify vulnerable users.
+- [Simulate realistic threats](/security/office-365-security/attack-simulation-training.md) to identify vulnerable users.
 
-- [Assign training](attack-simulation-training.md#assign-training) to users based on simulation results.
+- [Assign training](/security/office-365-security/attack-simulation-training.md#assign-training) to users based on simulation results.
 
-- [Track progress](attack-simulation-training-insights.md) of your organization in simulations and training completion.
+- [Track progress](/security/office-365-security/attack-simulation-training-insights.md) of your organization in simulations and training completion.
 
   :::image type="content" source="../../media/mdo-trial-playbook-attack-simulation-training-results.png" alt-text="The attack simulation training insights in the Microsoft 365 Defender portal" lightbox="../../media/mdo-trial-playbook-attack-simulation-training-results.png":::
 
