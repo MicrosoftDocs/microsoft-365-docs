@@ -2,7 +2,7 @@
 title: "Microsoft 365 Network Connectivity Overview"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 08/27/2021
 audience: Admin
 ms.topic: conceptual

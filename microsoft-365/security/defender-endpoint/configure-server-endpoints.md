@@ -174,6 +174,11 @@ If you intend to use a third-party antimalware solution, you'll need to run Micr
 
 To receive regular product improvements and fixes for the EDR Sensor component, ensure Windows Update [KB5005292](https://go.microsoft.com/fwlink/?linkid=2168277) gets applied or approved. In addition, to keep protection components updated, see [Manage Microsoft Defender Antivirus updates and apply baselines](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions).
 
+
+If you’re using Windows Server Update Services (WSUS) and/or Microsoft Endpoint Configuration Manager, this new "Microsoft Defender for Endpoint update for EDR Sensor" is available under the category "Microsoft Defender for Endpoint".
+
+
+
 ### Onboarding steps summary
 
 - STEP 1: [Download the installation and onboarding packages](#step-1-download-installation-and-onboarding-packages)
