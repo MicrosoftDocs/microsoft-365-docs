@@ -119,7 +119,7 @@ When the tool finishes running, it produces an output file in comma-separated (.
 - Office Activated - If they have activated Office
 - Supported Mailbox - If they are on an OAuth-enabled mailbox
 
-In case your Microsoft 365 reports show anonymous user names instead of actual user names, fox this issue by changing the reports setting in Microsoft 365 admin center. For detailed steps, See [Microsoft 365 reports show anonymous user names instead of actual user names](/office365/troubleshoot/miscellaneous/reports-show-anonymous-user-name)
+Should your Microsoft 365 reports show anonymous user names instead of actual user names, fix this issue by changing the reports setting in Microsoft 365 admin center. For detailed steps, see [Microsoft 365 reports show anonymous user names instead of actual user names](/office365/troubleshoot/miscellaneous/reports-show-anonymous-user-name).
 
 > [!NOTE]
 > Multifactor authentication is not supported when using the Central Deployment PowerShell module. The module only works with Basic authentication.
