@@ -130,9 +130,9 @@ conceptualContent:
   # Card
     - title: Protect devices
       links:
-        - url: ../security/defender-business/mdb-overview.md
+        - url: ../security/defender-business/index.yml
           itemType: overview
-          text: What is Microsoft Defender for Business?
+          text: Get started with Microsoft Defender for Business
         - url: ../business-premium/m365bp-devices-overview.md
           itemType: overview
           text: Set up unmanaged (BYOD) devices
@@ -152,9 +152,9 @@ conceptualContent:
   # Card
     - title: Protect email content and Office files
       links:
-        - url: ../security/office-365-security/defender-for-office-365.md
+        - url: ..//security/office-365-security/index.yml
           itemType: overview
-          text: What is Microsoft Defender for Office 365?
+          text: Get started with Microsoft Defender for Office 365?
         - url: ../business-premium/m365bp-increase-protection.md
           itemType: how-to-guide
           text: Protect against phishing, malware, and other threats
