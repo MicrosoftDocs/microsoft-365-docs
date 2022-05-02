@@ -13,7 +13,7 @@ description: "Use Bookings in Outlook to let others schedule meetings with you i
 
 # Bookings in Outlook
 
-Bookings in Outlook lets people schedule a meeting or appointment with you. Bookings in Outlook is a web-based personal scheduling page and integrates with the free/busy information from your Outlook calendar. You can create custom meeting types to share with others so they can easily schedule time with you based on your availability and preferences. You both get an email confirmation and attendees can update or cancel scheduled meetings with you from your Bookings in Outlook page.
+Bookings in Outlook is a web-based personal scheduling page that integrates with the free/busy information from your Outlook calendar. Bookings in Outlook lets people schedule a meeting or appointment with you. You can create custom meeting types to share with others so they can easily schedule time with you based on your availability and preferences. You both get an email confirmation and attendees can update or cancel scheduled meetings with you from your Bookings in Outlook page.
 
 Bookings in Outlook has two different views:
 
@@ -32,7 +32,7 @@ Bookings in Outlook is available in the following subscriptions:
 
 Bookings in Outlook is on by default for users with these subscriptions.
 
-For more information, see [Outlook in Bookings Roadmap item](https://go.microsoft.com/fwlink/?linkid=328648).
+For more information, see [Outlook in Bookings Microsoft 365 Roadmap item](https://go.microsoft.com/fwlink/?linkid=328648).
 
 ## Turn Bookings in Outlook on or off  
 
@@ -40,7 +40,9 @@ Bookings in Outlook can be turned on or off for your entire organization or spec
 
 ### Turn Bookings in Outlook on or off for your organization using PowerShell
 
-You'll need to run the following commands using Exchange Online PowerShell. For more information on running Exchange Online cmdlets, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To turn Bookings in Outlook on or off for your organization using the PowerShell cmdlet [Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig), [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) and run the following commands
+You'll need to run the following commands using Exchange Online PowerShell. For more information on running Exchange Online cmdlets, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To turn Bookings in Outlook on or off for your organization using the PowerShell cmdlet [Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig), [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) and run the following commands.
+
+Use the **Get-OrganizationConfig** and **Set-Organization** commands to find out the status and turn Bookings in Outlook on or off for your organization.
 
 > [!NOTE]
 > It usually takes about 30 to 60 minutes for Set-OrganizationConfig commands to take effect for your users.
@@ -53,7 +55,7 @@ You'll need to run the following commands using Exchange Online PowerShell. For 
 
 If the command returns “EwsEnabled: **$true** then proceed to Step 2.
 
-If the command returns “EwsEnabled: **empty** then enable and proceed to Step 2.
+If the command returns “EwsEnabled: **empty** (empty is default), then enable and proceed to Step 2.
 
    ```PowerShell
    Set-OrganizationConfig -EwsEnabled: $true
