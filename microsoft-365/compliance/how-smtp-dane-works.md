@@ -1,5 +1,5 @@
 ---
-title: "How SMTP DNS-based Authentication of Named Entities (DANE) works to secure email communications"
+title: "How SMTP DNS-based Authentication of Named Entities (DANE) secures email communications"
 f1.keywords:
 - NOCSH
 ms.author: v-mathavale
@@ -18,7 +18,11 @@ description: "Learn how SMTP DNS-based Authentication of Named Entities (DANE) w
 
 # How SMTP DNS-based Authentication of Named Entities (DANE) works
 
-The SMTP protocol is the main protocol used to transfer messages between mail servers and is, by default, not secure. The Transport Layer Security (TLS) protocol was introduced years ago to support encrypted transmission of messages over SMTP. It's commonly used opportunistically rather than as a requirement, leaving much email traffic in clear text, vulnerable to interception by nefarious actors. Furthermore, SMTP determines the IP addresses of destination servers through the public DNS infrastructure, which is susceptible to spoofing and Man-in-the-Middle (MITM) attacks. This has led to many new standards being created to increase security for sending and receiving email, one of those is DNS-based Authentication of Named Entities (DANE).
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+The SMTP protocol is the main protocol used to transfer messages between mail servers and is, by default, not secure. The Transport Layer Security (TLS) protocol was introduced years ago to support encrypted transmission of messages over SMTP. It’s commonly used opportunistically rather than as a requirement, leaving much email traffic in clear text, vulnerable to interception by nefarious actors. Furthermore, SMTP determines the IP addresses of destination servers through the public DNS infrastructure, which is susceptible to spoofing and Man-in-the-Middle (MITM) attacks. This has led to many new standards being created to increase security for sending and receiving email, one of those is DNS-based Authentication of Named Entities (DANE).
+  
+DANE for SMTP [RFC 7672](https://tools.ietf.org/html/rfc7672) uses the presence of a Transport Layer Security Authentication (TLSA) record in a domain's DNS record set to signal a domain and its mail server(s) support DANE. If there is no TLSA record present, DNS resolution for mail flow will work as usual without any DANE checks being attempted. The TLSA record securely signals TLS support and publishes the DANE policy for the domain. So, sending mail servers can successfully authenticate legitimate receiving mail servers using SMTP DANE. This makes it resistant to downgrade and MITM attacks. DANE has direct dependencies on DNSSEC, which works by digitally signing records for DNS lookups using public key cryptography. DNSSEC checks occur on recursive DNS resolvers, the DNS servers that make DNS queries for clients. DNSSEC ensures that DNS records aren’t tampered with and are authentic.  
 
 DANE for SMTP [RFC 7672](https://tools.ietf.org/html/rfc7672) uses the presence of a Transport Layer Security Authentication (TLSA) record in a domain's DNS record set to signal a domain and its mail server(s) support DANE. If there is no TLSA record present, DNS resolution for mail flow will work as usual without any DANE checks being attempted. The TLSA record securely signals TLS support and publishes the DANE policy for the domain. So, sending mail servers can successfully authenticate legitimate receiving mail servers using SMTP DANE. This makes it resistant to downgrade and MITM attacks. DANE has direct dependencies on DNSSEC, which works by digitally signing records for DNS lookups using public key cryptography. DNSSEC checks occur on recursive DNS resolvers, the DNS servers that make DNS queries for clients. DNSSEC ensures that DNS records aren't tampered with and are authentic.
 
@@ -122,6 +126,16 @@ Currently, there are four error codes for DANE when sending emails with Exchange
 |5.7.323|tlsa-invalid: The domain failed DANE validation.|
 |5.7.324|dnssec-invalid: Destination domain returned invalid DNSSEC records.|
 
+> [!NOTE]
+> Currently, when a domain signals that it supports DNSSEC but fails DNSSEC checks, Exchange Online does not generate the 4/5.7.324 dnssec-invalid error. It generates a generic DNS error:
+> 
+> `4/5.4.312 DNS query failed`
+> 
+> We are actively working to remedy this known limitation. If you recieve this error statement,
+navigate to the Microsoft Remote Connectivity Analyzer and perform the DANE validation test against
+the domain that generated the 4/5.4.312 error. The results will show if it is a DNSSEC issue
+or a different DNS issue.
+
 ### Troubleshooting 5.7.321 starttls-not-supported
 
 This usually indicates an issue with the destination mail server. After receiving the message:
@@ -183,6 +197,16 @@ When troubleshooting, the below error codes may be generated:
 |4/5.7.322|certificate-expired: Destination mail server's certificate has expired.|
 |4/5.7.323|tlsa-invalid: The domain failed DANE validation.|
 |4/5.7.324|dnssec-invalid: Destination domain returned invalid DNSSEC records.|
+
+> [!NOTE]
+> Currently, when a domain signals that it supports DNSSEC but fails DNSSEC checks, Exchange Online does not generate the 4/5.7.324 dnssec-invalid error. It generates a generic DNS error:
+> 
+> `4/5.4.312 DNS query failed`
+> 
+> We are actively working to remedy this known limitation. If you recieve this error statement,
+navigate to the Microsoft Remote Connectivity Analyzer and perform the DANE validation test against
+the domain that generated the 4/5.4.312 error. The results will show if it is a DNSSEC issue
+or a different DNS issue.
 
 ### Troubleshooting 5.7.321 starttls-not-supported
 

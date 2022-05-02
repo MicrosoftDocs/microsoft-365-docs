@@ -28,6 +28,7 @@ The Microsoft 365 Reports dashboard shows you the activity overview across the p
 ## How to get to the Microsoft Teams user activity report
 
 1. In the admin center, go to the **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> page.
+
 2. From the dashboard homepage, click on the **View more** button on the Microsoft Teams activity card.
 
 ## Interpret the Microsoft Teams user activity report
@@ -48,8 +49,8 @@ To ensure data quality, we perform daily data validation checks for the past thr
 |User name  <br/> |The email address of the user. You can display the actual email address or make this field anonymous.   <br/> |
 |Tenant name  <br/> |The name of an internal or external tenant where a user belongs.   <br/> <br/> If a user belongs to an external tenant, corresponding data metrics (for example, post messages, reply messages,  etc.) are calculated based on their interactions in shared channels of the admin’s tenant. Interactions done by the user in their own tenant (outside of shared channels of the given tenant) are not considered for the admin usage report of given tenant.  |
 |Shared channel tenant names   <br/> |The names of internal or external tenants of shared channels where the user participated.   <br/> |
-|Channel messages   <br/> |The number of unique messages that the user posted in a team chat during the specified time period.  <br/> |
-|Posts   <br/> |The number of post messages in all channels during the specified time period <br/> |
+|Channel messages   <br/> |The number of unique messages that the user posted in a team chat during the specified time period. This includes original posts and replies.   <br/> |
+|Posts   <br/> |The number of post messages in all channels during the specified time period. A post is the original message in a teams chat.<br/> |
 |Replies   <br/> |The number of replied messages in all channels during the specified time period. <br/> |
 |Urgent messages    <br/> |The number of urgent messages during the specified time period. <br/> |
 |Chat messages   <br/> |The number of unique messages that the user posted in a private chat during the specified time period.  <br/> |
@@ -66,7 +67,7 @@ To ensure data quality, we perform daily data validation checks for the past thr
 |Meetings participated scheduled recurring  <br/> |The number of the recurring meetings a user participated in during the specified time period.  <br/> |
 |Is licensed  <br/> |Selected if the user is licensed to use Teams. <br/>|
 |Other activity  <br/>|The User is active but has performed other activities than exposed action types offered in the report (sending or replying to channel messages and chat messages, scheduling or participating in 1:1 calls and meetings). Examples actions are when a user changes the Teams status or the Teams status message or opens a Channel Message post but does not reply.  <br/>|
-|Unclassified meetings <br/>|The one which cannot be classified as schedule or recurring or ad hoc. These are  short in number and mostly can't be identified because of tampered telemetry information. |
+
 
 ## Make the user-specific data anonymous
 
