@@ -1,0 +1,102 @@
+### YamlMime:Hub
+
+title: Microsoft Purview compliance solutions # < 60 chars
+summary: Microsoft Purview compliance solutions are a comprehensive portfolio of products spanning information protection, risk management, and regulatory compliance solutions. # < 160 chars
+# brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-bi | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
+brand: m365
+
+metadata:
+  title: Microsoft Purview compliance solutions # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Microsoft documentation and resources you need to get started with Microsoft Purview compliance solutions # Required; article description that is displayed in search results. < 160 chars.
+  services: service
+  ms.service: service #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.subservice: subservice # Optional; Remove if no subservice is used.
+  ms.topic: hub-page # Required
+  ms.collection: M365-security-compliance
+  author: robmazz #Required; your GitHub user alias, with correct capitalization.
+  ms.author: robmazz #Required; microsoft alias of author; optional team alias.
+  ms.date: 04/30/2022 #Required; mm/dd/yyyy format.
+
+additionalContent:
+#  Maximum of 3 sections
+  sections:
+#  Section 1
+    - title: Protect sensitive data across clouds, apps, and devices
+      summary: Guidance to help you get started with protecting data in your organization.
+      items:
+        # Card
+        - title: Microsoft Purview Information Protection
+          summary: Discover, classify, and protect sensitive information wherever it lives or travels.
+          url: /microsoft-365/compliance/sensitivity-labels
+        # Card
+        - title: Microsoft Purview Data Loss Prevention
+          summary: Use data loss prevention to help prevent accidental sharing of sensitive information.
+          url: /microsoft-365/compliance/dlp-learn-about-dlp
+        # Card
+        - title: Microsoft Purview Message Encryption
+          summary: Send and receive encrypted email messages to people inside and outside your organization.
+          url: /microsoft-365/compliance/ome
+        # Card
+        - title: Microsoft Purview Customer Key
+          summary: Help meet compliance requirements by exercising control over your organization's encryption keys. 
+          url: /microsoft-365/compliance/customer-key-overview
+        # Card
+        - title: Microsoft Purview Double Key Encryption
+          summary: Uses two keys together to access protected content. Microsoft stores one key in Microsoft Azure, and you hold the other key.
+          url: /microsoft-365/compliance/double-key-encryption
+        # Card
+        - title: Microsoft Purview Data Connectors
+          summary: Import and archive non-Microsoft data so you can apply Microsoft 365 protection and governance capabilities to third-party data.
+          url: /microsoft-365/compliance/archiving-third-party-data
+        # Card
+        - title: Microsoft Purview Data Lifecycle Management
+          summary: Retain the Microsoft 365 data that you need to keep, and delete the content that no longer has business value.
+          url: /microsoft-365/compliance/data-lifecycle-management
+        # Card
+        - title: Microsoft Purview Information Protection SDK
+          summary: Extend sensitivity labels to third-party apps and services.
+          url: /information-protection/develop/overview#microsoft-information-protection-sdk
+        # Card
+        - title: Microsoft Purview Customer Lockbox
+          summary: Maintain control over your content with explicit access authorization for service operations.
+          url: /microsoft-365/compliance/customer-lockbox-requests
+#  Section 2
+    - title: Identify data risks and manage regulatory compliance requirements
+      summary: Guidance to help you get started with identifying and minimizing risk in your organization.
+      items:
+        # Card
+        - title: Microsoft Purview Insider Risk Management
+          summary: Detect, investigate, and act on malicious and inadvertent risk activities in your organization.
+          url: /microsoft-365/compliance/insider-risk-management
+        # Card
+        - title: Microsoft Purview Communication Compliance
+          summary: Detect, investigate, and act on inappropriate and sensitive messages in your organization.
+          url: /microsoft-365/compliance/communication-compliance
+        # Card
+        - title: Microsoft Purview Information Barriers
+          summary: Restrict communication and collaboration among specific groups of users in highly-regulated organizations.
+          url: /microsoft-365/compliance/information-barriers
+        # Card
+        - title: Microsoft Purview Privileged Access Management
+          summary: Help protect your organization from breaches that use accounts with standing access to sensitive data and critical configuration settings.
+          url: /microsoft-365/compliance/privileged-access-management-overview
+        # Card
+        - title: Microsoft Purview Compliance Manager
+          summary: Compliance Manager helps with taking inventory of data protection risks, managing the implementation of controls, staying current with regulations & certifications, and reporting to auditors.
+          url: /microsoft-365/compliance/compliance-manager
+        # Card
+        - title: Microsoft Purview Records Management
+          summary: Manage high-value items for business, legal, or regulatory record-keeping requirements.
+          url: /microsoft-365/compliance/records-management
+        # Card
+        - title: Microsoft Purview Audit
+          summary: Learn about premium and standard audit solutions and tools to help you log and search for audited activities in SharePoint and OneDrive.
+          url: /microsoft-365/compliance/auditing-solutions-overview
+        # Card
+        - title: Microsoft Purview eDiscovery
+          summary: Learn about eDiscovery tools that allow you to search for content in Exchange Online, OneDrive for Business, SharePoint Online, Microsoft Teams, Microsoft 365 Groups, and Yammer teams.
+          url: /microsoft-365/compliance/ediscovery
+        # Card
+        - title: Microsoft Graph APIs for eDiscovery
+          summary: Create apps and workflows that automate common and repetitive eDiscovery processes, such as creating cases and managing custodians and legal holds.
+          url: /microsoft-365/compliance/compliance-extensibility#microsoft-graph-api-for-ediscovery-preview.
