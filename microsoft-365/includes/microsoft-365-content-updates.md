@@ -42,6 +42,42 @@
 | 4/29/2022 | [Manage your allows and blocks in the Tenant Allow/Block List](/microsoft-365/security/office-365-security/tenant-allow-block-list?view=o365-21vianet) | modified |
 | 4/29/2022 | [Manage spoofed senders using the spoof intelligence policy and spoof intelligence insight](/microsoft-365/security/office-365-security/walkthrough-spoof-intelligence-insight?view=o365-21vianet) | modified |
 | 4/29/2022 | [Microsoft Purview auditing solutions](/microsoft-365/compliance/auditing-solutions-overview?view=o365-21vianet) | modified |
+| 4/25/2022 | [Microsoft 365 encryption chains](/microsoft-365/compliance/encryption-office-365-certificate-chains?view=o365-21vianet) | modified |
+| 4/25/2022 | [Learn the advanced hunting query language in Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-query-language?view=o365-21vianet) | modified |
+| 4/25/2022 | [Take action on advanced hunting query results in Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-take-action?view=o365-21vianet) | modified |
+| 4/25/2022 | [Collaborate with external participants in a shared channel](/microsoft-365/solutions/collaborate-teams-direct-connect?view=o365-21vianet) | modified |
+| 4/25/2022 | [Microsoft 365 alert policies](/microsoft-365/compliance/alert-policies?view=o365-21vianet) | modified |
+| 4/25/2022 | [Microsoft Bookings Frequently Asked Questions](/microsoft-365/bookings/bookings-faq?view=o365-21vianet) | modified |
+| 4/26/2022 | [Microsoft Purview solutions trial playbook](/microsoft-365/compliance/compliance-easy-trials-compliance-playbook?view=o365-21vianet) | modified |
+| 4/26/2022 | [What's new in Microsoft Purview](/microsoft-365/compliance/whats-new?view=o365-21vianet) | modified |
+| 4/26/2022 | [Performance analyzer for Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/tune-performance-defender-antivirus?view=o365-21vianet) | modified |
+| 4/27/2022 | [Enhancing mail flow with MTA-STS ](/microsoft-365/compliance/enhancing-mail-flow-with-mta-sts?view=o365-21vianet) | added |
+| 4/27/2022 | [UrlClickEvents table in the advanced hunting schema](/microsoft-365/security/defender/advanced-hunting-urlclickevents-table?view=o365-21vianet) | added |
+| 4/27/2022 | [Microsoft recommendations for EOP and Defender for Office 365 security settings](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365?view=o365-21vianet) | modified |
+| 4/27/2022 | [Microsoft Defender for Office 365 trial playbook](/microsoft-365/security/office-365-security/trial-playbook-defender-for-office-365?view=o365-21vianet) | modified |
+| 4/27/2022 | [Encrypted message portal activity log](/microsoft-365/compliance/ome-message-access-logs?view=o365-21vianet) | added |
+| 4/27/2022 | [Remove blocked connectors from the Restricted entities portal in Microsoft 365](/microsoft-365/security/office-365-security/remove-blocked-connectors?view=o365-21vianet) | added |
+| 4/27/2022 | [Respond to a compromised connector in Microsoft 365](/microsoft-365/security/office-365-security/respond-compromised-connector?view=o365-21vianet) | added |
+| 4/27/2022 | Increase threat protection for Microsoft 365 for Business | removed |
+| 4/27/2022 | [Create eDiscovery holds in a eDiscovery (Standard) case](/microsoft-365/compliance/create-ediscovery-holds?view=o365-21vianet) | modified |
+| 4/27/2022 | [Manage holds in eDiscovery (Premium)](/microsoft-365/compliance/managing-holds?view=o365-21vianet) | modified |
+| 4/27/2022 | [Search the audit log in the Microsoft Purview compliance portal](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-21vianet) | modified |
+| 4/27/2022 | [Manage your allows in the Tenant Allow/Block List](/microsoft-365/security/office-365-security/manage-tenant-allows?view=o365-21vianet) | modified |
+| 4/27/2022 | [Remove blocked users from the Restricted users portal](/microsoft-365/security/office-365-security/removing-user-from-restricted-users-portal-after-spam?view=o365-21vianet) | modified |
+| 4/28/2022 | [What is Microsoft 365 for business](/microsoft-365/admin/admin-overview/what-is-microsoft-365-for-business?view=o365-21vianet) | added |
+| 4/28/2022 | [Learn how to mitigate the Log4Shell vulnerability in Microsoft Defender for Endpoint - threat and vulnerability management](/microsoft-365/security/defender-endpoint/tvm-manage-log4shell-guidance?view=o365-21vianet) | added |
+| 4/28/2022 | [Deploy Microsoft Defender for Endpoint on Android with Microsoft Intune](/microsoft-365/security/defender-endpoint/android-intune?view=o365-21vianet) | modified |
+| 4/28/2022 | [Deploy Microsoft Defender for Endpoint on Linux manually](/microsoft-365/security/defender-endpoint/linux-install-manually?view=o365-21vianet) | modified |
+| 4/28/2022 | [Azure Active Directory setup guides](/microsoft-365/admin/misc/azure-ad-setup-guides?view=o365-21vianet) | modified |
+| 4/28/2022 | [How SMTP DNS-based Authentication of Named Entities (DANE) secures email communications](/microsoft-365/compliance/how-smtp-dane-works?view=o365-21vianet) | modified |
+| 4/28/2022 | [Safe Attachments](/microsoft-365/security/office-365-security/safe-attachments?view=o365-21vianet) | modified |
+| 4/29/2022 | [Manage your allows in the Tenant Allow/Block List](/microsoft-365/security/office-365-security/manage-tenant-allows?view=o365-21vianet) | modified |
+| 4/29/2022 | [Understand the proposal workflow](/microsoft-365/commerce/understand-proposal-workflow?view=o365-21vianet) | modified |
+| 4/29/2022 | [Enable the Report Message or the Report Phishing add-ins](/microsoft-365/security/office-365-security/enable-the-report-message-add-in?view=o365-21vianet) | modified |
+| 4/29/2022 | [Manage your allows and blocks in the Tenant Allow/Block List](/microsoft-365/security/office-365-security/tenant-allow-block-list?view=o365-21vianet) | modified |
+| 4/29/2022 | [Manage spoofed senders using the spoof intelligence policy and spoof intelligence insight](/microsoft-365/security/office-365-security/walkthrough-spoof-intelligence-insight?view=o365-21vianet) | modified |
+| 4/29/2022 | [Use customer-managed keys to encrypt your organization's auditing data](/microsoft-365/compliance/auditing-cmk-encryption?view=o365-21vianet) | added |
+| 4/29/2022 | [Microsoft Purview auditing solutions](/microsoft-365/compliance/auditing-solutions-overview?view=o365-21vianet) | modified |
 
 
 ## Week of April 18, 2022
