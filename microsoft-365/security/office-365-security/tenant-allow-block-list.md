@@ -1,17 +1,17 @@
 ---
 title: Manage your allows and blocks in the Tenant Allow/Block List
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 
+ms.date:
 audience: ITPro
 ms.topic: how-to
 ms.localizationpriority: medium
-search.appverid: 
+search.appverid:
   - MET150
-ms.collection: 
+ms.collection:
   - M365-security-compliance
 ms.custom:
 description: Admins can learn how to manage allows and blocks in the Tenant Allow/Block List in the Security portal.
@@ -27,12 +27,6 @@ ms.prod: m365-security
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
-
-> [!NOTE]
->
-> Some of the features described in this article are in Preview, are subject to change, and are not available in all organizations.
->
-> If your organization does not have the spoof features as described in this article, see the older spoof management experience at [Manage spoofed senders using the spoof intelligence policy and spoof intelligence insight in EOP](walkthrough-spoof-intelligence-insight.md).
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, you might disagree with the EOP filtering verdict. For example, a good message might be marked as bad (a false positive), or a bad message might be allowed through (a false negative).
 
@@ -74,10 +68,14 @@ This article describes how to configure entries in the Tenant Allow/Block List i
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- You need to be assigned permissions in the Microsoft 365 Defender portal before you can do the procedures in this article:
+- You need to be assigned permissions in Exchange Online before you can do the procedures in this article:
   - **Senders, URLs and files**:
-    - To add and remove values from the Tenant Allow/Block List, you need to be a member of the **Organization Management**, **Security Administrator**, or **Security Operator** role groups or you are assigned the **Tenant AllowBlockList Manager** role.
-    - For read-only access to the Tenant Allow/Block List, you need to be a member of the **Global Reader** or **Security Reader** role groups.
+    - To add and remove values from the Tenant Allow/Block List, you need to be a member of
+      - **Organization Management** or **Security Administrator** role group (**Security admin role**)
+      - **Security Operator** role group (**Tenant AllowBlockList Manager**).
+    - For read-only access to the Tenant Allow/Block List, you need to be a member of
+      - **Global Reader**  role group
+      - **Security Reader** role group
   - **Spoofing**: One of the following combinations:
     - **Organization Management**
     - **Security Administrator** <u>and</u> **View-Only Configuration** or **View-Only Organization Management**.
@@ -86,7 +84,7 @@ This article describes how to configure entries in the Tenant Allow/Block List i
 
   > [!NOTE]
   >
-  > - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
+  > - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions *and* permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
   >
   > - The **View-Only Organization Management** role group in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) also gives read-only access to the feature.
 
@@ -173,7 +171,7 @@ To manage all allows and blocks, see [Add blocks in the Tenant Allow/Block List]
 
    When you're finished, click **Apply**. To clear existing filters, click **Filter**, and in the **Filter** flyout that appears, click **Clear filters**.
 
-4. When you're finished, click **Add**.
+3. When you're finished, click **Add**.
 
 ## View sender, file or URL entries in the Tenant Allow/Block List
 
@@ -481,7 +479,7 @@ Here are some examples of valid domain pairs to identify spoofed senders:
 
 The maximum number of spoofed sender entries is 1000.
 
-Adding a domain pair only allows or blocks the *combination* of the spoofed user *and* the sending infrastructure. It does not allow email from the spoofed user from any source, nor does it allow email from the sending infrastructure source for any spoofed user. 
+Adding a domain pair only allows or blocks the *combination* of the spoofed user *and* the sending infrastructure. It does not allow email from the spoofed user from any source, nor does it allow email from the sending infrastructure source for any spoofed user.
 
 For example, you add an allow entry for the following domain pair:
 
