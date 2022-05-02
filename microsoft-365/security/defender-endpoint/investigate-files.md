@@ -87,7 +87,7 @@ The **Observed in organization** tab allows you to specify a date range to see w
 
 :::image type="content" source="images/atp-observed-machines.png" alt-text="The most recent observed devices with the file" lightbox="images/atp-observed-machines.png":::
 
-Use the slider or the range selector to quickly specify a time period that you want to check for events involving the file. You can get assited by the alerts indication over the range. You can specify a time window as small as a single day. This will allow you to see only files that communicated with that IP Address at that time, drastically reducing unnecessary scrolling and searching.
+Use the slider or the range selector to quickly specify a time period that you want to check for events involving the file. You can get assisted by the alerts indication over the range. You can specify a time window as small as a single day. This will allow you to see only files that communicated with that IP Address at that time, drastically reducing unnecessary scrolling and searching.
 
 ## Deep analysis
 
