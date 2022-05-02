@@ -38,7 +38,7 @@ Once on the detailed profile page, you can switch between the new and old page l
 You can get information from the following sections in the file view:
 
 - File details, Malware detection, File prevalence
-- File PE metadata (if exists)
+- File PE metadata (if it exists)
 - Deep analysis
 - Alerts
 - Observed in organization
