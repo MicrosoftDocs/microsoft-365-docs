@@ -44,7 +44,7 @@ sections:
 
           For more information, see [Get Microsoft Defender for Business](get-defender-business.md).
 
-      - question: How many users may I deploy with the Defender for Business licenses?
+      - question: Is there a limit to how many users can be licensed for Defender for Business?
         answer: |
           Defender for Business is designed for small and medium-sized businesses who have up to 300 users. If you have more than 300 users, consider [Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint).
 
