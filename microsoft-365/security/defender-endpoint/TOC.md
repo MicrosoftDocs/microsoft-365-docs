@@ -532,7 +532,7 @@
 ####### [Start Investigation](initiate-autoir-investigation.md)
 
 ###### [Certificate inventory]()
-####### [Export certificate methods and properties](../defender-vulnerability-management/export-certificate-inventory-assessment.md)
+####### [Export certificate methods and properties](../defender-vulnerability-management/export-certificate-inventory-assessment)
 
 ###### [Domain]()
 ####### [Get domain related alerts](get-domain-related-alerts.md)
