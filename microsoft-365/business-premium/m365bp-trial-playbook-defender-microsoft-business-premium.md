@@ -127,7 +127,7 @@ Respond efficiently using Automated investigation and response (AIR) to review, 
 
 - Eliminate threats by [approving remediation actions](../security/office-365-security/air-remediation-actions.md).
 
-:::image type="content" source="/media/mdo-trial-playbook-investigation-results.png" alt-text="The investigation results" lightbox="../../media/mdo-trial-playbook-investigation-results.png":::
+:::image type="content" source="/media/mdo-trial-playbook-investigation-results.png" alt-text="The investigation results" lightbox="/media/mdo-trial-playbook-investigation-results.png":::
 
 ## Step 3: Advanced content
 
