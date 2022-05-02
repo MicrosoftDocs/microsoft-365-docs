@@ -63,6 +63,58 @@ To meet the challenges of today's decentralized, data-rich workplace, we're intr
 | Microsoft 365 Advanced eDiscovery <br><br> Microsoft 365 Core eDiscovery | Microsoft Purview eDiscovery (Premium) <br><br> Microsoft Purview eDiscovery (Standard) | Electronic discovery, or eDiscovery, is the process of identifying and delivering electronic information that can be used as evidence in legal cases. To learn more, see [Microsoft Purview eDiscovery (Premium)](overview-ediscovery-20.md) and [Microsoft Purview eDiscovery (Standard)](get-started-core-ediscovery.md). |
 | Microsoft 365 compliance center | Microsoft Purview compliance portal | Admin portal to access solutions and solution catalog within the Microsoft 365 E5 Compliance suite. To learn more, see [Microsoft Purview compliance portal](microsoft-365-compliance-center.md). |
 
+## March 2022
+
+### Communication compliance
+
+- [Investigate and remediate communication compliance alerts](communication-compliance-investigate-remediate.md) - removed guidance for deprecated Annotation view.
+
+### Compliance Manager
+
+- [Working with improvement actions](compliance-manager-improvement-actions.md), [Get started with Compliance Manager](compliance-manager-setup.md) - added information about more improvement actions that can be automatically monitored and tested ("continuous compliance assessment"); this includes new abilities to parent the testing status of an action to that of another action.
+
+### Data Classification
+
+- [Get Started with Content Explorer](data-classification-content-explorer.md) - Teams guidance added, licensing section pointed to service descriptions.
+
+### Data lifecycle management and records management
+
+- [Retention policies for Yammer](create-retention-policies.md#retention-policy-for-yammer-locations) are now generally available (GA).
+- Support for shared channels, currently in preview. When you configure a retention policy for the Teams channel message location, any shared channels inherit retention settings from their parent team.
+- [Per-tenant limits for content disposition](retention-limits.md#maximum-number-of-items-for-disposition).
+
+### Data Loss Prevention
+
+- [Data loss prevention and Microsoft Teams](dlp-microsoft-teams.md) - Public preview of Share Teams Channels content.
+- [Get started with the Microsoft Compliance Extension](dlp-chrome-get-started.md) - public preview of restricted app groups, remove registry key instructions, configuration now enabled by default.
+- [Configure endpoint data loss prevention settings](dlp-configure-endpoint-settings.md) - new for public preview of restricted app groups.
+- [Data loss prevention policy reference](dlp-policy-reference.md) - updated for public preview of restricted app groups.
+- [Get started with data loss prevention for Power BI](dlp-powerbi-get-started.md) - new for public preview.
+
+### Insider risk management
+
+- [Get started with insider risk management](insider-risk-management-configure.md) - added new tasks for the Recommended actions guidance.
+- [Get started with insider risk management settings](insider-risk-management-settings.md) - new updates for the notification and email alerts features, new updates for analytics notifications.
+
+### Microsoft Information Protection
+
+- [Support for double byte character set release notes](mip-dbcs-relnotes.md) - added guidance for macOS.
+
+### Microsoft Priva
+
+- [Configure Priva settings](/privacy/priva/priva-settings) - updated clarifying information about data retention periods for subject rights requests; added details about managing and applying data review tags for subject rights requests.
+- [Create a subject rights request](/privacy/priva/subject-rights-requests-create) - added details about refining searches and choosing conditions and attributes; added info about new functionality that lets users select all versions of SharePoint items in their search (vs. the default setting, which only returns current version of SharePoint items).
+- [Review data for a subject rights request](/privacy/priva/subject-rights-requests-data-review) - added details in step 3 for reviewing items during the data review stage, including marking files as include/exclude, annotating files to apply redactions, applying tags, and entering notes.
+- [Generate reports and fulfill a subject rights request](/privacy/priva/subject-rights-requests-reports) - added details about how to understand reports; clarified when an export package is generated and how to work with its contents; added information about audit logs, tagged files reports, and retention periods for SRR data and reports.
+
+### Sensitivity labels
+
+- [Sensitivity labels for Teams](sensitivity-labels-teams-groups-sites.md):
+  - Support for shared channels, currently in preview. If a team has any shared channels, they automatically inherit sensitivity label settings from their parent team, and that label can't be removed or replaced with a different label.
+  - Support for templates, previously listed as [not supported with Teams Graph APIs and PowerShell cmdlets]( /microsoftteams/sensitivity-labels#limitations).  
+- For auditing Word, Excel, and PowerPoint on the web, justification text is now fully rolled out.
+- Applying a default label to existing documents for Word, Excel, and PowerPoint on the web is now fully rolled out.
+
 ## February 2022
 
 ### eDiscovery
