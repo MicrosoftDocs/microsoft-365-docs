@@ -101,6 +101,8 @@ If the command returns “EwsEnabled: **empty** (empty is default), then enable 
 
 ### Turn Bookings in Outlook off or on for individual users
 
+Use the **Get-CASMailbox** and **Set-CASMailbox** commands to check user status and turn Bookings in Outlook on or off for individual users in your organization.
+
 1. Check individual’s EwsApplicationAccessPolicy by running the following command:
 
    ```PowerShell
