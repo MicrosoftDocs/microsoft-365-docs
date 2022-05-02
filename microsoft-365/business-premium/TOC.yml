@@ -114,6 +114,8 @@
   items:
     - name: Glossary of terms
       href: m365bp-glossary.md
+    - name: Microsoft 365 Business Premium FAQ
+      href: microsoft-365-business-faqs.yml
     - name: Microsoft 365 admin content
       href: /microsoft-365/admin/
     - name: Set up Compliance Manager
