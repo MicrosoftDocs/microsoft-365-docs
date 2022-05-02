@@ -103,7 +103,7 @@ The **File names** tab lists all names the file has been observed to use, within
 
 ## Action center
 
-The **Action center** Displays the action center filtered on a specific file, so you can see pending actions and history of actions taken on the file.
+The **Action center** displays the action center filtered on a specific file, so you can see pending actions and the history of actions taken on the file.
 
 ## Related topics
 
