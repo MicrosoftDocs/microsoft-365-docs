@@ -230,7 +230,7 @@ Regardless of the policy method, managing the same setting on the same device th
 
 ## See also
 
-[Manage endpoint security in Microsoft InTune](https://docs.microsoft.com/en-us/mem/intune/protect/endpoint-security.md)
+[Manage endpoint security in Microsoft InTune](https://docs.microsoft.com/mem/intune/protect/endpoint-security)
 
 [Best practices for securing Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)
 
