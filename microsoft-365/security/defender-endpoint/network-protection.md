@@ -150,9 +150,9 @@ Support for Command and Control (C2) is a key part of this ransomware evolution 
 
 #### Detecting and remediating CobaltStrike (public preview)
 
-One of the most common post-exploitation frameworks used in human-operated ransomware attacks is CobaltStrike. Threat Intelligence teams across Microsoft track Tactics, Techniques, and Procedures (TTPs) on multiple activity groups that deploy ransomware to identify patterns of behavior that can be used to defend against specific strategies and threat vectors used by malicious actors. These ransomware activity groups all, at some point in the attack life cycle, involve deploying a CobaltStrike Beacon to a victim’s computer to enable hands-on keyboard activity.
+One of the most common post-exploitation frameworks used in human-operated ransomware attacks is CobaltStrike. Threat Intelligence teams across Microsoft track _Tactics, Techniques, and Procedures_ (TTPs) on multiple activity groups that deploy ransomware to identify patterns of behavior that can be used to defend against specific strategies and threat vectors used by malicious actors. These ransomware activity groups all, at some point in the attack life cycle, involve deploying a CobaltStrike Beacon to a victim’s computer to enable hands-on keyboard activity.
 
-CobaltStrike enables customization of multiple aspects of the attack, from the ability to host multiple listeners responding to different protocols, to how the main client-side component (Beacon) should perform code injection and run post-exploitation jobs. When Microsoft Defender detects CobaltStrike, it can intelligently find and collect key indicators-of-compromise. Once captured, these indicators are shared throughout Microsoft’s product stack for detection and protection purposes.
+CobaltStrike enables customization of multiple aspects of the attack, from the ability to host multiple listeners responding to different protocols, to how the main client-side component (Beacon) should perform code injection and run post exploitation jobs. When Microsoft Defender detects CobaltStrike, it can intelligently find and collect key indicators of compromise (IoC). Once captured, these indicators are shared throughout Microsoft’s product stack for detection and protection purposes.
 
 Microsoft Defender’s command and control detection isn't limited to CobaltStrike. Microsoft Defender can capture key IoCs of multiple malware families. The indicators are shared across the Microsoft protection stack to protect customers and alert them if there's a compromise.
 
@@ -193,7 +193,7 @@ If you're using Advanced Hunting to identify audit events you'll have up to 30 d
 
 You can find the audit data in **Advanced hunting** in the Microsoft Defender for Endpoint portal.  
 
-The events are in: DeviceEvents with an ActionType of ExploitGuardNetworkProtectionAudited. Blocks are shown by ExploitGuardNetworkProtectionBlocked.  
+The events are in DeviceEvents with an ActionType of ExploitGuardNetworkProtectionAudited. Blocks are shown by ExploitGuardNetworkProtectionBlocked.  
 
 The following example includes the blocked actions:
 
