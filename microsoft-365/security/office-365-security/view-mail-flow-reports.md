@@ -111,8 +111,6 @@ For more information, see [Permissions in the Security & Compliance Center](perm
 
 ## Related topics
 
-[Smart reports and insights in the Security & Compliance Center](reports-and-insights-in-security-and-compliance.md)
-
 [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md)
 
 [View email security reports in the Security & Compliance Center](view-email-security-reports.md)
