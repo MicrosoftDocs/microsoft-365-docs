@@ -46,13 +46,13 @@ To start routing accounts to Microsoft 365 Defender:
 
 1. Make sure you're a global administrator or have security administrator permissions in Azure Active Directory.
 
-2. Sign in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>.
+1. Sign in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>.
 
-3. Navigate to **Settings** > **Identities** > **General** > **Portal redirection** or [click here](https://security.microsoft.com/preferences2/portal_redirection).  
+1. Navigate to **Settings** > **Identities** > **General** > **Portal redirection** or [click here](https://security.microsoft.com/preferences2/portal_redirection).
 
-4. Toggle the Automatic redirection setting to **On**.
+    :::image type="content" source="../../media/portal-redirection.png" alt-text="Portal redirection.":::
 
-5. Click **Enable** to apply automatic redirection to Microsoft 365 Defender.
+1. Toggle the Automatic redirection setting to **On**.
 
 >[!IMPORTANT]
 >Enabling this setting will not terminate active user sessions. Accounts who are in an active session while this setting is applied will only be directed to Microsoft 365 Defender after ending their current session and signing in again.
@@ -72,11 +72,9 @@ To revert to the former Microsoft Defender for Identity portal:
 
 3. Toggle the Automatic redirection setting to **Off**.
 
-4. Select **Disable** & share feedback when prompted.
-
 This setting can be enabled again at any time.
 
-Once disabled, accounts will no longer be routed to security.microsoft.com, and you'll once again have access to the former portal - portal.atp.azure.com.
+Once disabled, accounts will no longer be routed to security.microsoft.com.
 
 ## Related information
 
