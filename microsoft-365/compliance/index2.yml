@@ -17,6 +17,24 @@ metadata:
   ms.author: robmazz #Required; microsoft alias of author; optional team alias.
   ms.date: 04/30/2022 #Required; mm/dd/yyyy format.
 
+# highlightedContent section (optional)
+# Maximum of 8 items
+highlightedContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+  items:
+    # Card 1
+    - title: Get started with Microsoft Purview governance
+      itemType: get-started
+      url: /azure/purview/
+    # Card 2
+    - title: Learn about Microsoft Purview Compliance Manager
+      itemType: learn
+      url: /learn/paths/compmgmt/
+    # Card 3
+    - title: Get started with Microsoft Purview solution guides
+      itemType: get-started
+      url: /microsoft-365/solutions/
+
 additionalContent:
 #  Maximum of 3 sections
   sections:
