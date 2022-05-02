@@ -59,11 +59,11 @@ Watch this video to learn more: [Learn how to use the Submissions portal to subm
 
 Use the reporting capabilities in Defender for Business to get more details about your environment.
 
-- Understand threats received in email and collaboration tools with the [Threat protection status report](view-email-security-reports.md#threat-protection-status-report).
+- Understand threats received in email and collaboration tools with the [Threat protection status report](../security/office-365-security/view-email-security-reports.md#threat-protection-status-report).
 
-- See where threats are blocked with the [Mailflow status report](view-email-security-reports.md#mailflow-status-report).
+- See where threats are blocked with the [Mailflow status report](../security/office-365-security/view-email-security-reports.md#mailflow-status-report).
 
-- [Review links](view-reports-for-mdo.md#url-protection-report) that were viewed by users or blocked by the system.
+- [Review links](../security/office-365-security/view-reports-for-mdo.md#url-protection-report) that were viewed by users or blocked by the system.
 
 :::image type="content" source="../../media/mdo-trial-playbook-reporting.png" alt-text="The Email & collaboration reports in the Microsoft 365 Defender portal" lightbox="../../media/mdo-trial-playbook-reporting.png":::
 
@@ -74,7 +74,7 @@ Use the reporting capabilities in Defender for Business to get more details abou
 Protect your most targeted and most visible users with Priority Account Protection in Defender for Office 365, which helps you prioritize your workflow to ensure these users are safe.
 
 - Identify your most targeted or most visible users.
-- [Tag these users](../../admin/setup/priority-accounts.md#add-priority-accounts-from-the-setup-page) as priority accounts.
+- [Tag these users](../admin/setup/priority-accounts.md#add-priority-accounts-from-the-setup-page) as priority accounts.
 - Track threats to priority account throughout the portal.
 
 Watch this video to learn more: [Protecting priority accounts in Microsoft Defender for Business - YouTube](https://www.youtube.com/watch?v=tqnj0TlzQcI&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=11).
@@ -85,7 +85,7 @@ Watch this video to learn more: [Protecting priority accounts in Microsoft Defen
 
 Get alerted to potential compromise and automatically limit the impact of these threats to prevent attackers from gaining deeper access to your environment.
 
-- Review [compromised user alerts](address-compromised-users-quickly.md#compromised-user-alerts).
+- Review [compromised user alerts](../security/office-365-security/address-compromised-users-quickly.md#compromised-user-alerts).
 
 - [Investigate and respond](/security/office-365-security/address-compromised-users-quickly.md) to compromised users.
 
@@ -97,21 +97,21 @@ Watch this video to learn more: [Detect and respond to compromise in Microsoft D
 
 Defender for Business enables you to investigate activities that put people in your organization at risk and to take action to protect your organization. You can do this using [Threat Explorer or (real-time detections)](/security/office-365-security/threat-explorer.md).
 
-- [Find suspicious email that was delivered](investigate-malicious-email-that-was-delivered.md#find-suspicious-email-that-was-delivered): Find and delete messages, identify the IP address of a malicious email sender, or start an incident for further investigation.
+- [Find suspicious email that was delivered](../security/office-365-security/investigate-malicious-email-that-was-delivered.md#find-suspicious-email-that-was-delivered): Find and delete messages, identify the IP address of a malicious email sender, or start an incident for further investigation.
 
-- [Check the delivery action and location](investigate-malicious-email-that-was-delivered.md#check-the-delivery-action-and-location): This check lets you know the location of problem email messages.
+- [Check the delivery action and location](../security/office-365-security/investigate-malicious-email-that-was-delivered.md#check-the-delivery-action-and-location): This check lets you know the location of problem email messages.
 
-- [View the timeline of your email](investigate-malicious-email-that-was-delivered.md#view-the-timeline-of-your-email): Simply hunting for your security operations team.
+- [View the timeline of your email](../security/office-365-security/investigate-malicious-email-that-was-delivered.md#view-the-timeline-of-your-email): Simply hunting for your security operations team.
 
 ### See attack campaigns targeting your organization
 
 See the bigger picture with Campaign Views in Defender for Microsoft 365 Business Premium, which gives you a view of the attack campaigns that are targeting your organization and the impact they have on your users.
 
-- [Identify attack campaigns](campaigns.md#what-is-a-campaign) targeting your users.
+- [Identify attack campaigns](../security/office-365-security/campaigns.md#what-is-a-campaign) targeting your users.
 
-- [Visualize the scope](campaigns.md#campaign-views-in-the-microsoft-365-defender-portal) of the attack.
+- [Visualize the scope](../security/office-365-security/campaigns.md#campaign-views-in-the-microsoft-365-defender-portal) of the attack.
 
-- [Track user interaction](campaigns.md#campaign-details) with these messages.
+- [Track user interaction](../security/office-365-security/campaigns.md#campaign-details) with these messages.
 
   :::image type="content" source="../../media/mdo-trial-playbook-campaign-details.png" alt-text="The Campaign details in the Microsoft 365 Defender portal" lightbox="../../media/mdo-trial-playbook-campaign-details.png":::
 
@@ -125,7 +125,7 @@ Respond efficiently using Automated investigation and response (AIR) to review, 
 
 - [View details and results](/security/office-365-security/email-analysis-investigations.md) of an investigation.
 
-- Eliminate threats by [approving remediation actions](air-remediation-actions.md).
+- Eliminate threats by [approving remediation actions](../security/office-365-security/air-remediation-actions.md).
 
 :::image type="content" source="../../media/mdo-trial-playbook-investigation-results.png" alt-text="The investigation results" lightbox="../../media/mdo-trial-playbook-investigation-results.png":::
 
@@ -135,7 +135,7 @@ Respond efficiently using Automated investigation and response (AIR) to review, 
 
 Use Advanced hunting to write custom detection rules, proactively inspect events in your environment, and locate threat indicators. Explore raw data in your environment.
 
-- [Build custom detection rules](../defender/advanced-hunting-overview.md#get-started-with-advanced-hunting).
+- [Build custom detection rules](/security/defender/advanced-hunting-overview.md#get-started-with-advanced-hunting).
 
 - [Access shared queries](/security/defender/advanced-hunting-shared-queries.md) created by others.
 
@@ -156,6 +156,9 @@ Equip your users with the right knowledge to identify threats and report suspici
 ## Additional resources
 
 - **Interactive guide**: Unfamiliar with Defender for Business? Review the [interactive guide](https://mslearn.cloudguides.com/guides/Safeguard%20your%20organization%20with%20Microsoft%20Defender%20for%20Office%20365) to understand how to get started.
-- **Microsoft docs**: Get detailed information on how Defender for Business works and how to best implement it for your organization. Visit [Docs](overview.md).
-- **What's included**: For a full list of Defender for Business email security features listed by product tier, view the [Feature Matrix](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability).
-- **Why Defender for Business**: The [Defender for Business Datasheet](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4FCiy) shows the top 10 reasons customers choose Microsoft.
+- **Microsoft docs**: Get detailed information on how Defender for Business works and how to best implement it for your organization. Visit [Docs](../security/office-365-security/overview.md).
+<!---
+KC Note: I cannot find the equivalent of this to fix the link!
+- **What's included**: For a full list of Defender for Business email security features listed by product tier, view the [Feature Matrix](office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability).
+--->
+- **Why Defender for Business**: The [Defender for Business datasheet](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4FCiy) shows the top 10 reasons customers choose Microsoft.
