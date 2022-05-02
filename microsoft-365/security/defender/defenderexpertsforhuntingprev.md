@@ -93,7 +93,7 @@ The option to **Consult a threat expert** is available in several places through
 
 ### Device page actions menu
 
-![device page actions menu](../../media/mte/mdeh-devicepage-actions-menu.png)
+![device page actions menu](../../media/Device-page-actions-menu.png)
 
 ### Device inventory page flyout menu
 
