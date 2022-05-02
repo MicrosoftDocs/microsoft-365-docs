@@ -617,9 +617,9 @@
 ####### [Get device secure score](get-device-secure-score.md)
 
 ###### [Security baselines]()
-####### [Export security baselines assessment](../defender-vulnerability-management/export-security-baseline-assessment.md)
-####### [List security baselines assessment profiles](../defender-vulnerability-management/get-security-baselines-assessment-profiles.md)
-####### [List security baselines assessment configurations](../defender-vulnerability-management/get-security-baselines-assessment-configurations.md)
+####### [Export security baselines assessment](export-security-baseline-assessment.md)
+####### [List security baselines assessment profiles](get-security-baselines-assessment-profiles.md)
+####### [List security baselines assessment configurations](get-security-baselines-assessment-configurations.md)
 
 ###### [Software]()
 ####### [Software methods and properties](software.md)
