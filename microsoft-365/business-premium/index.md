@@ -47,7 +47,7 @@ In these first missions, sign in and set up your initial walls of defense, start
 
 ## Cybersecurity playbook
 
-The guidance in these missions helps your business achieve the goals described in the Harvard Kennedy School  [Cybersecurity Campaign Playbook](https://go.microsoft.com/fwlink/p/?linkid=2015598). A summary is available for you to download.
+The guidance in these missions is based upon the zero trust methodology and helps your business achieve the goals described in the Harvard Kennedy School  [Cybersecurity Campaign Playbook](https://go.microsoft.com/fwlink/p/?linkid=2015598). A summary is available for you to download.
 
 Click the infographic to see a larger version, or [Download a copy of the Cybersecurity playbook poster](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)!
 
@@ -80,7 +80,7 @@ We've included a set of missions here with some objectives that need to be compl
 
 ## Cybersecurity playbook
 
-The guidance in these missions helps your business achieve the goals described in the Harvard Kennedy School  [Cybersecurity Campaign Playbook](https://go.microsoft.com/fwlink/p/?linkid=2015598). A summary is available for you to download.
+The guidance in these missions is based upon the zero trust methodology and helps your business achieve the goals described in the Harvard Kennedy School  [Cybersecurity Campaign Playbook](https://go.microsoft.com/fwlink/p/?linkid=2015598). A summary is available for you to download.
 
 Click the infographic to see a larger version, or [Download a copy of the Cybersecurity playbook poster](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)!
 
