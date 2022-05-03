@@ -24,19 +24,9 @@ summary: |
 sections:
   - name: General
     questions:
-      - question: I have another Microsoft Cloud subscription. Why am I not seeing Microsoft Defender for Business in my portal?
+      - question: Now that the preview program for Defender for Business has ended, can I extend it?
         answer: |
-          Currently, whenever a customer has multiple subscriptions, the highest subscription takes precedence. Here are some examples:
-          
-          - Example 1: If you have [Microsoft Defender for Endpoint Plan 2](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1-2) (purchased or trial subscription), and you get Microsoft Defender for Business, Defender for Endpoint Plan 2 takes precedence. In this case, you won't see the Defender for Business experience.
-
-          - Example 2: If you have [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) (purchased or trial subscription), and you get Defender for Business, Defender for Cloud takes precedence. In this case, you won't see the Defender for Business experience.
-
-      - question: What are the differences between Defender for Business and Defender for Endpoint Plans 1 and 2?
-        answer: |
-          Both Defender for Business and Defender for Endpoint provide strong threat protection capabilities for your company's endpoints. Defender for Business was designed for small and medium-sized businesses (up to 300 employees). With a [simplified configuration process](mdb-simplified-configuration.md) and [device onboarding options](mdb-onboard-devices.md), Defender for Business enables customers who do not necessarily have a security background to set up, configure, and use Defender for Business to protect company devices.  
-          
-          To learn more about the differences, see [Compare Microsoft Defender for Business to Microsoft 365 Business Premium](compare-mdb-m365-plans.md).
+          Defender for Business is now generally available, and the preview program has ended. You can purchase Defender for Business. See [Get Microsoft Defender for Business](get-defender-business.md).
 
       - question: How do I try or buy Defender for Business?
         answer: |
@@ -66,51 +56,65 @@ sections:
 
           Additional simplification for macOS, iOS/iPadOS, and Android devices is on the roadmap. 
 
-      - question: If the preview program for Defender for Business has ended, can I extend it?
-        answer: |
-          When your preview of Defender for Business has ended, you can purchase Defender for Business. See [Get Microsoft Defender for Business](get-defender-business.md).
-
-      - question: If I'm already using Microsoft 365 Business Premium, why do I need Defender for Business?
-        answer: |
-           If you have Microsoft 365 Business Premium, then Defender for Business is included in your subscription. To learn more, see the following articles:
-           
-           - [Overview of Defender for Business](mdb-overview.md)
-           
-           - [Compare Microsoft Defender for Business to Microsoft 365 Business Premium](compare-mdb-m365-plans.md)
-          
-           Defender for Business extends security capabilities in Microsoft 365 Business Premium with endpoint protection for your company's devices.
-           
-      - question: What happens if a customer has 20 users with a mix of subscriptions? For example, suppose they have 10 users assigned a Defender for Business license and 10 users assigned a Defender for Endpoint Plan 2 license?
-        answer: |
-           Mixed licenses are not supported. The highest functional license sets the experience for the tenant. Using our example, the tenant experience will be [Defender for Endpoint Plan 2](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint), and will require 20 Defender for Endpoint Plan 2 licenses. Note that [Defender for Business](mdb-overview.md) and [Microsoft 365 Business Premium](/microsoft-365/business-premium/) are for customers who have up to 300 users. For customers who need more than 300 seats, we recommend getting Microsoft 365 E3 or E5, or Microsoft Defender for Endpoint Plan 1 or Plan 2.
-           
       - question: Can I configure more than one web content filtering policy in Defender for Business?
         answer: |
-           Currently, Defender for Business supports only one uniform web filtering policy per Defender for Business tenant. 
+          Currently, Defender for Business supports only one uniform web filtering policy per Defender for Business tenant. 
 
       - question: How can I run custom reports with Defender for Business?
         answer: |
-           Defender for Business currently includes a set of APIs to support robust custom reporting, and a Power BI connector. You could schedule a PowerShell script to generate executive summaries formatted in HTML, and send those summaries via email. See [API reference information](/microsoft-365/security/defender-endpoint/exposed-apis-create-app-partners).
+          Defender for Business currently includes a set of APIs to support robust custom reporting, and a Power BI connector. You could schedule a PowerShell script to generate executive summaries formatted in HTML, and send those summaries via email. See [API reference information](/microsoft-365/security/defender-endpoint/exposed-apis-create-app-partners).
 
       - question: I'm a Microsoft partner. Will I be able to manage multiple tenants from one control panel, or will I have to sign in to each tenant individually? 
         answer: |
-           Defender for Business is enabled in Microsoft 365 Lighthouse for multi-tenant support in a single console ([https://lighthouse.microsoft.com](https://lighthouse.microsoft.com)). 
+          Defender for Business is enabled in Microsoft 365 Lighthouse for multi-tenant support in a single console ([https://lighthouse.microsoft.com](https://lighthouse.microsoft.com)). 
            
-           Currently, a multi-tenant incident queue provides you with a cross-tenant view of incidents that require attention; however, configuration and onboarding are done in the customer's tenant using your partner credentials. More integration scenarios are planned.
+          Currently, a multi-tenant incident queue provides you with a cross-tenant view of incidents that require attention; however, configuration and onboarding are done in the customer's tenant using your partner credentials. More integration scenarios are planned.
 
-           To learn more, see [Overview of Microsoft 365 Lighthouse](/microsoft-365/lighthouse/m365-lighthouse-overview).
+          To learn more, see [Overview of Microsoft 365 Lighthouse](/microsoft-365/lighthouse/m365-lighthouse-overview).
 
       - question: How do I configure attack surface reduction rules and capabilities in Defender for Business?
         answer: |
-           Simplified configuration for attack surface reduction rules and capabilities via Defender for Business in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) isn't supported yet. If you have Microsoft Intune, you can use the Microsoft Endpoint Manager admin center to configure your attack surface reduction policies. See [Attack surface reduction policy for endpoint security in Intune](/mem/intune/protect/endpoint-security-asr-policy).
+          Simplified configuration for attack surface reduction rules and capabilities via Defender for Business in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) isn't supported yet. If you have Microsoft Intune, you can use the Microsoft Endpoint Manager admin center to configure your attack surface reduction policies. See [Attack surface reduction policy for endpoint security in Intune](/mem/intune/protect/endpoint-security-asr-policy).
 
       - question: If I do not currently have Microsoft Intune, do I need an additional license to use features that are included in both Defender for Business and Intune? 
         answer: |
-           If you have Defender for Business as a standalone subscription and you do not have Intune, you can onboard and secure Windows and macOS devices in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). 
+          If you have Defender for Business as a standalone subscription and you do not have Intune, you can onboard and secure Windows and macOS devices in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). 
            
-           You can also manage your next-generation protection and firewall protection policies in the Microsoft 365 Defender portal with a [simplified configuration experience](mdb-simplified-configuration.md). 
+          You can also manage your next-generation protection and firewall protection policies in the Microsoft 365 Defender portal with a [simplified configuration experience](mdb-simplified-configuration.md). 
            
-           To manage other settings, such as attack surface reduction policies, or to onboard other devices, such as Android or iOS/iPadOS devices, you'll need Intune. Intune is included in Microsoft 365 Business Premium, and can be purchased for Defender for Business (standalone) subscriptions. 
+          To manage other settings, such as attack surface reduction policies, or to onboard other devices, such as Android or iOS/iPadOS devices, you'll need Intune. Intune is included in Microsoft 365 Business Premium, and can be purchased for Defender for Business (standalone) subscriptions. 
+
+      - question: If I'm already using Microsoft 365 Business Premium, why do I need Defender for Business?
+        answer: |
+          If you have Microsoft 365 Business Premium, then Defender for Business is included in your subscription. To learn more, see the following articles:
+           
+          - [Overview of Defender for Business](mdb-overview.md)
+          - [Compare Microsoft Defender for Business to Microsoft 365 Business Premium](compare-mdb-m365-plans.md)
+          
+          Defender for Business extends security capabilities in Microsoft 365 Business Premium with endpoint protection for your company's devices.
+
+      - question: What are the differences between Defender for Business and Defender for Endpoint Plans 1 and 2?
+        answer: |
+          Both Defender for Business and Defender for Endpoint provide strong threat protection capabilities for your company's endpoints. Defender for Business was designed for small and medium-sized businesses (up to 300 employees). With a [simplified configuration process](mdb-simplified-configuration.md) and [device onboarding options](mdb-onboard-devices.md), Defender for Business enables customers who do not necessarily have a security background to set up, configure, and use Defender for Business to protect company devices.  
+          
+          To learn more about the differences, see [Compare Microsoft Defender for Business to Microsoft 365 Business Premium](compare-mdb-m365-plans.md).
+
+      - question: What happens if a customer has 20 users with a mix of subscriptions? For example, suppose they have 10 users assigned a Defender for Business license and 10 users assigned a Defender for Endpoint Plan 2 license?
+        answer: |
+          Mixed licenses are not supported. The highest functional license sets the experience for the tenant. Using our example, the tenant experience will be [Defender for Endpoint Plan 2](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint), and will require 20 Defender for Endpoint Plan 2 licenses. Note that [Defender for Business](mdb-overview.md) and [Microsoft 365 Business Premium](/microsoft-365/business-premium/) are for customers who have up to 300 users. For customers who need more than 300 seats, we recommend getting Microsoft 365 E3 or E5, or Microsoft Defender for Endpoint Plan 1 or Plan 2.
+
+      - question: I have another Microsoft Cloud subscription. Why am I not seeing Microsoft Defender for Business in my portal?
+        answer: |
+          Currently, whenever a customer has multiple subscriptions, the highest subscription takes precedence. Here are some examples:
+          
+          - Example 1: If you have [Microsoft Defender for Endpoint Plan 2](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1-2) (purchased or trial subscription), and you get Microsoft Defender for Business, Defender for Endpoint Plan 2 takes precedence. In this case, you won't see the Defender for Business experience.
+
+          - Example 2: If you have [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) (purchased or trial subscription), and you get Defender for Business, Defender for Cloud takes precedence. In this case, you won't see the Defender for Business experience.
+
+
+
+           
+           
 
 
 additionalContent: |
