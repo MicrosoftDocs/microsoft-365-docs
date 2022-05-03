@@ -1,8 +1,9 @@
 ### YamlMime:Landing
 
-title: Microsoft Vulnerability Management
-summary: Microsoft Defender Vulnerability Management provides modern risk-based vulnerability management so your teams can intelligently discover, assess, prioritize, and seamlessly remediate the biggest risks to your organization. <br><br> Defender Vulnerability Management is available as standalone product or as Add-on for Microsoft Defender for Endpoint P2 customers. 
+title: Microsoft Defender Vulnerability Management
+summary: Microsoft Defender Vulnerability Management provides modern risk-based vulnerability management so your teams can intelligently discover, assess, prioritize, and seamlessly remediate the biggest risks to your organization.
 
+text: Defender Vulnerability Management is available as standalone product or as add-on for Microsoft Defender for Endpoint P2 customers.
 metadata:
   title: Microsoft Defender Vulnerability Management documentation
   description: Learn about how to get Microsoft Defender Vulnerability Management
