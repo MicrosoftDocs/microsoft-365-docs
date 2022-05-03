@@ -24,7 +24,7 @@ summary: |
 sections:
   - name: General
     questions:
-      - question: Can I extend my preview of Defender for Business?
+      - question: Can I extend my preview trial of Defender for Business?
         answer: |
           Defender for Business is now generally available, and the preview program has ended. See [Get Microsoft Defender for Business](get-defender-business.md).
 
