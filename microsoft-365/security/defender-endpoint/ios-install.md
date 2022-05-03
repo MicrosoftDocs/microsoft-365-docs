@@ -154,10 +154,9 @@ This step simplifies the onboarding process by setting up the VPN profile. For a
 1. Click Next and assign the profile to targeted users.
 1. In the *Review + Create* section, verify that all the information entered is correct and then select **Create**.
 
-## Zero-touch onboarding of Microsoft Defender for Endpoint (Preview)
+## Zero-touch onboarding of Microsoft Defender for Endpoint
 
-> [!IMPORTANT]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
 
 > [!NOTE]
 > Zero-touch cannot be configured on iOS devices that are enrolled without user affinity (user-less devices or shared devices).
