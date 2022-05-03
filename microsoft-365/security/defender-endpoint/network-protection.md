@@ -75,7 +75,7 @@ By default, network protection guards your computers from known malicious URLs u
 
 Network Protections is a critical part of the Microsoft protection and response stack.
 
-For details about Network Protection for Windows Server, Linux, MacOS and MTD, see: [Proactively hunt for threats with advanced hunting](advanced-hunting-overview.md)
+For details about Network Protection for Windows Server, Linux, MacOS and MTD, see [Proactively hunt for threats with advanced hunting](advanced-hunting-overview.md).
 
 ### Block Command and Control (C2) attacks
 
@@ -103,7 +103,7 @@ The Network Protection component of Microsoft Defender for Endpoint identifies a
 | by your IT admin | CustomPolicy |   |
 
 > [!NOTE]
-> **customeAllowList** does not generate notifications on endpoints.
+> **customAllowList** does not generate notifications on endpoints.
 
 ### New notifications for network protection determination
 
@@ -111,18 +111,19 @@ A new, publicly available capability in network protection utilizes functions in
 
 When an end user attempts to visit a website in an environment in which network protection is enabled, three scenarios are possible:
 
-- The URL has a **known good reputation** - In this case the user is permitted access without obstruction, and there's no toast notification presented on the endpoint. {The domain or URL is set to _Allowed_}
-- The URL has an **unknown or uncertain reputation** - The user's access is blocked, but with the ability to circumvent (unblock) the block. {The domain or url is set to _Audit_}
-- The URL has a **known bad (malicious) reputation** - The user is prevented from access. {the domain or url is set to _Block_}
+- The URL has a **known good reputation** - In this case the user is permitted access without obstruction, and there's no toast notification presented on the endpoint. In effect, the domain or URL is set to _Allowed_.
+- The URL has an **unknown or uncertain reputation** - The user's access is blocked, but with the ability to circumvent (unblock) the block. In effect, the domain or url is set to _Audit_.
+- The URL has a **known bad (malicious) reputation** - The user is prevented from access. In effect, the domain or url is set to _Block_.
 
 #### Warn experience
 
 A user visits a website:
 
 - If the url has an unknown or uncertain reputation, a toast notification will present the user with the following options:
-  - **Ok** The toast notification is released (removed), and the attempt to access the site is ended.
-  - **Unblock** The user won't need to access the Windows Defender Security Intelligence (WDSI) portal to gain site access. The user will have access to the site for 24 hours; at which point the block is reenabled for another 24 hours. The user can continue to use **Unblock** to access the site until such time that the administrator prohibits (blocks) the site, thus removing the option to **Unblock**.
-  - **Feedback** The toast notification presents the user with a link to submit a ticket, which the user can use to submit feedback to the administrator in an attempt to justify access to the site.
+
+  - **Ok** - The toast notification is released (removed), and the attempt to access the site is ended.
+  - **Unblock** - The user won't need to access the Windows Defender Security Intelligence (WDSI) portal to gain site access. The user will have access to the site for 24 hours; at which point the block is reenabled for another 24 hours. The user can continue to use **Unblock** to access the site until such time that the administrator prohibits (blocks) the site, thus removing the option to **Unblock**.
+  - **Feedback** - The toast notification presents the user with a link to submit a ticket, which the user can use to submit feedback to the administrator in an attempt to justify access to the site.
 
   > [!div class="mx-imgBorder"]
   > ![Shows a network protection phishing content warn notification](images/network-protection-phishing-warn-2.png)
@@ -149,16 +150,16 @@ Support for Command and Control (C2) is a key part of this ransomware evolution 
 
 #### Detecting and remediating CobaltStrike (public preview)
 
-One of the most common post-exploitation frameworks used in human-operated ransomware attacks is CobaltStrike. Threat Intelligence teams across Microsoft track Tactics, Techniques, and Procedures (TTPs) on multiple activity groups that deploy ransomware to identify patterns of behavior that can be used to defend against specific strategies and threat vectors used by malicious actors.  These ransomware activity groups all, at some point in the attack life cycle, involve deploying a CobaltStrike Beacon to a victim’s computer to enable hands-on keyboard activity.
+One of the most common post-exploitation frameworks used in human-operated ransomware attacks is CobaltStrike. Threat Intelligence teams across Microsoft track _Tactics, Techniques, and Procedures_ (TTPs) on multiple activity groups that deploy ransomware to identify patterns of behavior that can be used to defend against specific strategies and threat vectors used by malicious actors. These ransomware activity groups all, at some point in the attack life cycle, involve deploying a CobaltStrike Beacon to a victim’s computer to enable hands-on keyboard activity.
 
-CobaltStrike enables customization of multiple aspects of the attack, from the ability to host multiple listeners responding to different protocols, to how the main client-side component (Beacon) should perform code injection and run post-exploitation jobs. When Microsoft Defender detects CobaltStrike, it can intelligently find and collect key indicators-of-compromise. Once captured, these indicators are -shared throughout Microsoft’s product stack for detection and protection purposes.
+CobaltStrike enables customization of multiple aspects of the attack, from the ability to host multiple listeners responding to different protocols, to how the main client-side component (Beacon) should perform code injection and run post exploitation jobs. When Microsoft Defender detects CobaltStrike, it can intelligently find and collect key indicators of compromise (IoC). Once captured, these indicators are shared throughout Microsoft’s product stack for detection and protection purposes.
 
 Microsoft Defender’s command and control detection isn't limited to CobaltStrike. Microsoft Defender can capture key IoCs of multiple malware families. The indicators are shared across the Microsoft protection stack to protect customers and alert them if there's a compromise.
 
 Blocking command-and-control communication can severely impede a targeted attack, giving defenders time to find the initial entry vectors and close them down before another attempted attack.
 
 <!-- Hide {this intro with no subsequent list items}
-[For additional details about Microsoft Defender's command and control detection, see: **ADD LINK TO BLOG**]
+[For additional details about Microsoft Defender's command and control detection, see **ADD LINK TO BLOG**.]
 -->
 
 ## Smart Screen Unblock
@@ -168,32 +169,37 @@ A new feature in Microsoft Defender for Endpoint Indicators enables administrato
  > [!div class="mx-imgBorder"]
  > ![ Windows Security notification for network protection](images/network-protection-smart-screen-block-notification.png)
 
-Microsoft Defender for Endpoint Administrators can configure Smart Screen Unblock functionality at [Microsoft 365 Defender](https://security.microsoft.com/), using the following configuration tool. From the Microsoft 365 Defender portal, navigate to: > path to > ConfigToolName.
+Microsoft Defender for Endpoint Administrators can configure Smart Screen Unblock functionality at [Microsoft 365 Defender](https://security.microsoft.com/), using the following configuration tool. From the Microsoft 365 Defender portal, navigate to the path to the ConfigToolName.
+
+<!-- Hide {this intro with no subsequent list items}
+[Line 171: Delete the colon and the right angle-brackets. The resulting sentence will be "From the [MS365 Defender] portal, navigate to path to ConfigToolName." Delete "to" and add "the" before path unless a specific description is available. Would a screenshot help? Normally angle brackets or arrows are used in place of certain text rather than in addition.]
+-->
 
  > [!div class="mx-imgBorder"]
  > ![Network protection smart screen block configuration ULR and IP form](images/network-protection-smart-screen-block-configuration.png)
 
 ## Using network protection
 
-Network protection is enabled per device, which is typically done using your management infrastructure. For supported methods, see: [Turn on network protection](enable-network-protection.md).
+Network protection is enabled per device, which is typically done using your management infrastructure. For supported methods, see [Turn on network protection](enable-network-protection.md).
 
 > [!NOTE]
 > Microsoft Defender Antivirus must be active to enable Network protection.
 
-You can enable Network Protection in **Audit** mode or **Block** mode.  If you want to evaluate the impact of enabling Network Protection before blocking IP’s or URLs, you can enable it in Audit mode - for a period of time - to gather data on what would be blocked. Audit mode logs when end users have connected to an address or site that would otherwise have been blocked by network protection.
+You can enable Network Protection in **Audit** mode or **Block** mode. If you want to evaluate the impact of enabling Network Protection before blocking IP’s or URLs, you can enable it in Audit mode for a period of time to gather data on what would be blocked. Audit mode logs when end users have connected to an address or site that would otherwise have been blocked by network protection.
 
 ## Advanced Hunting
 
-If you're using Advanced Hunting to identify audit events you'll have up to 30 days history available from the console. See [Advanced Hunting](advanced-hunting-overview.md)
+If you're using Advanced Hunting to identify audit events you'll have up to 30 days history available from the console. See [Advanced Hunting](advanced-hunting-overview.md).
 
 You can find the audit data in **Advanced hunting** in the Microsoft Defender for Endpoint portal.  
 
-The events are in: DeviceEvents with an ActionType of ExploitGuardNetworkProtectionAudited (Blocks are shown by ExploitGuardNetworkProtectionBlocked).  
+The events are in DeviceEvents with an ActionType of ExploitGuardNetworkProtectionAudited. Blocks are shown by ExploitGuardNetworkProtectionBlocked.  
 
-The following example  includes the blocked actions.
+The following example includes the blocked actions:
 
 DeviceEvents
-| where ActionType in ('ExploitGuardNetworkProtectionAudited','ExploitGuardNetworkProtectionBlocked')
+
+- Where ActionType in ('ExploitGuardNetworkProtectionAudited','ExploitGuardNetworkProtectionBlocked')
 
  > [!div class="mx-imgBorder"]
  > ![Advanced Hunting for auditing and identifying events](images/network-protection-advanced-hunting.png)
@@ -203,10 +209,10 @@ DeviceEvents
 
 DeviceEvents:
 
-| where ActionType contains "ExploitGuardNetworkProtection"
-| extend ParsedFields=parse_json(AdditionalFields)
-| project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, IsAudit=tostring(ParsedFields.IsAudit), ResponseCategory=tostring(ParsedFields.ResponseCategory), DisplayName=tostring(ParsedFields.DisplayName)
-| sort by Timestamp desc
+- where ActionType contains "ExploitGuardNetworkProtection"
+- extend ParsedFields=parse_json(AdditionalFields)
+- project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, IsAudit=tostring(ParsedFields.IsAudit), ResponseCategory=tostring(ParsedFields.ResponseCategory), DisplayName=tostring(ParsedFields.DisplayName)
+- sort by Timestamp desc
 
 Response category tells you what caused the event, for example:
 
@@ -218,7 +224,7 @@ Response category tells you what caused the event, for example:
 | Malicious   |   Web threats  |
 | Phishing  |   Web threats  |
 
-For more information, see [Troubleshoot endpoint blocks](web-protection-overview.md#troubleshoot-endpoint-blocks)
+For more information, see [Troubleshoot endpoint blocks](web-protection-overview.md#troubleshoot-endpoint-blocks).
 
 You can use the resulting list of URLs and IPs to determine what would have been blocked if the device was in block mode, as well as which feature blocked them. Review each item on the list to identify URLS or IPs whether any are necessary to your environment. If you find any entries that have been audited which are critical to your environment, create an Indicator to allow them in your network. Allow URL / IP indicators take precedence over any block.
 
@@ -229,14 +235,14 @@ Once you've created an Indicator you can look at resolving the underlying issue:
 - MCA – review unsanctioned APP
 - WCF – request recategorization
 
-Using this data you can make an informed decision on enabling Network protection in Block mode. See: [Order of precedence for Network protection blocks](web-protection-overview.md#order-of-precedence).
+Using this data you can make an informed decision on enabling Network protection in Block mode. See [Order of precedence for Network protection blocks](web-protection-overview.md#order-of-precedence).
 
 > [!NOTE]
 > As this is a per device setting if there are devices that cannot move to Block mode you can simply leave them on audit until you can rectify the challenge and you will still receive the auditing events.
 
-For information about how to report false positives see: [Report false positives](web-protection-overview.md#report-false-positives)
+For information about how to report false positives see [Report false positives](web-protection-overview.md#report-false-positives).
 
-For details on how to create your own Power BI reports, see: [Create custom reports using Power BI](api-power-bi.md)
+For details on how to create your own Power BI reports, see [Create custom reports using Power BI](api-power-bi.md).
 
 ## Configuring network protection
 
