@@ -153,7 +153,7 @@ Microsoft Defender for Endpoint supports several options to onboard devices. For
 In some environments it may be desired to use Security Management for Microsoft Defender in conjunction with Configuration Manager. 
 This is possible by disabling the **Manage Security settings using Configuration Manager** toggle in the **Settings page** (Settings > Endpoints > Configuration Management > Enforcement Scope):
 
-    :::image type="content" source="../media/manage-security-settings-cfg-mgr.png" alt-text="Manage security settings using Configuration Manager setting.":::
+:::image type="content" source="../media/manage-security-settings-cfg-mgr.png" alt-text="Manage security settings using Configuration Manager setting.":::
 
 >[!NOTE]
 >When using Security Management for Microsoft Defender for Endpoint with Configuration Manager, endpoint security policy should be isolated to a single control plane. Controlling policy through both channels may cause conflicts and undesired results.
