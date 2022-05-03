@@ -215,11 +215,6 @@
 
 #### [Configure Microsoft Defender Security Center time zone settings](time-settings.md)
 
-## [Vulnerability management](tvm-index.yml)
-
-## [Guidance for active threats and campaigns]()
-### [Manage the Log4Shell vulnerability](tvm-manage-log4shell-guidance.md)
-
 ## [Protect devices]()
 ### [Device discovery]()
 #### [Device discovery overview](device-discovery.md)
@@ -362,14 +357,17 @@
 ##### [Client behavioral blocking](client-behavioral-blocking.md)
 ##### [Feedback-loop blocking](feedback-loop-blocking.md)
 
-
 ### [Address false positives/negatives in Microsoft Defender for Endpoint](defender-endpoint-false-positives-negatives.md)
-
 
 ### [Manage device configuration]()
 
 #### [Increase compliance to the security baseline](configure-machines-security-baseline.md)
 #### [Optimize attack surface reduction rule deployment and detections](configure-machines-asr.md)
+
+## [Vulnerability management](tvm-index.yml)
+
+## [Guidance for active threats and campaigns]()
+### [Manage the Log4Shell vulnerability](tvm-manage-log4shell-guidance.md)
 
 ## [Investigate and respond to threats]()
 ### [Endpoint detection and response]()
