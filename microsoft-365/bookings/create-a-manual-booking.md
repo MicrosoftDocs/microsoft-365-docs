@@ -20,8 +20,6 @@ Bookings can be scheduled and staffed in two different ways. The first way is by
 
 1. In Microsoft 365, select the App launcher, and then select **Bookings**.
 
-    :::image type="content" source="../media/bookings-applauncher.png" alt-text="Bookings in App launcher.":::
-
 1. In the navigation pane, select **Calendar** \> **New booking**.
 
    ![Image of New booking UI.](../media/bookings-newbooking.png)
