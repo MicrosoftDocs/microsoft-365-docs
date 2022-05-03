@@ -102,7 +102,7 @@ sections:
           
           To learn more about the differences, see [Compare Microsoft Defender for Business to Microsoft 365 Business Premium](compare-mdb-m365-plans.md).
 
-      - question: What happens if a customer has 20 users with a mix of subscriptions? For example, suppose they have 10 users assigned a Defender for Business license and 10 users assigned a Defender for Endpoint Plan 2 license?
+      - question: What happens if I have 20 users with a mix of subscriptions? For example, suppose I have 10 users assigned a Defender for Business license, and 10 other users assigned a Defender for Endpoint Plan 2 license?
         answer: |
           Mixed licenses are not supported. The highest functional license sets the experience for the tenant. Using our example, the tenant experience will be [Defender for Endpoint Plan 2](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint), and will require 20 Defender for Endpoint Plan 2 licenses. Note that [Defender for Business](mdb-overview.md) and [Microsoft 365 Business Premium](/microsoft-365/business-premium/) are for customers who have up to 300 users. For customers who need more than 300 seats, we recommend getting Microsoft 365 E3 or E5, or Microsoft Defender for Endpoint Plan 1 or Plan 2.
 
