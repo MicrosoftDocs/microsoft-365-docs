@@ -7354,6 +7354,11 @@
       "source_path": "microsoft-365/admin/misc/microsoft-365-business-faqs.yml",
       "redirect_url": "/microsoft-365/business-premium/microsoft-365-business-faqs",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/terms-conditions.md",
+      "redirect_url": "/legal/microsoft-365/microsoft-365-trial",
+      "redirect_document_id": false
     }
   ]
 }
