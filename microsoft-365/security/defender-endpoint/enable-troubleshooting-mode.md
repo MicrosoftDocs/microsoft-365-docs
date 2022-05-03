@@ -37,7 +37,7 @@ Microsoft Defender for Endpoint troubleshooting mode allows you to troubleshoot 
 
     - A device running Windows 10 (version 19044.1618 and above), Windows 11, Windows Server 2019, or Windows Server 2022. 
 
-    - For troubleshooting mode to be applied, Microsoft Defender Endpoint must be tenant-enrolled and active on the device.
+    - For troubleshooting mode to be applied, Microsoft Defender for Endpoint must be tenant-enrolled and active on the device.
 
     - The device must be actively running Microsoft Defender Antivirus, version 4.18.2203 and above.
 
@@ -49,7 +49,7 @@ Microsoft Defender for Endpoint troubleshooting mode allows you to troubleshoot 
 
 - If a tampering event occurs (for example, the Preference snapshot is altered or deleted), troubleshooting mode will end and tamper protection will be enabled on the device.
 
-- Local admins, with appropriate permissions, can change configurations on individual endpoints that are normally locked by policy. Having a device in troubleshooting mode can be helpful when diagnosing Microsoft Defender Antivirus performance and compatibility scenarios.
+- Local admins, with appropriate permissions, can change configurations on individual endpoints that are usually locked by policy. Having a device in troubleshooting mode can be helpful when diagnosing Microsoft Defender Antivirus performance and compatibility scenarios.
 
     - Local admins won't be able to turn off Microsoft Defender Antivirus, or uninstall it.
 
@@ -79,14 +79,14 @@ Microsoft Defender for Endpoint troubleshooting mode allows you to troubleshoot 
 
 - The beginning and ending of troubleshooting mode will be identified in the **Device Timeline** on the device page.
 
-- You can query all troubleshooting mode events in Advanced Hunting.
+- You can query all troubleshooting mode events in advanced hunting.
 
 > [!NOTE]
 > Policy management changes will be applied to the machine when it is actively in Troubleshooting mode. However, the changes will not take effect until the Troubleshooting mode expires. Additionally, Microsoft Defender Antivirus Platform updates will not be applied during Troubleshooting mode. Platform updates will be applied once Troubleshooting mode ends with a Windows update.
 
 ## Enable the troubleshooting mode
 
-1. Go to the Microsoft 365 Defender portal (https://security.microsoft.com) and sign in. 
+1. Go to the Microsoft 365 Defender portal (https://security.microsoft.com), and sign in. 
 
 1. Navigate to the device page/machine page for the device you would like to turn on troubleshooting mode. Select **Turn on troubleshooting mode**. Note that this requires **Manage security settings in Security Center** permissions for Microsoft Defender for Endpoint.
 
