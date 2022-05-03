@@ -7358,7 +7358,7 @@
     {
       "source_path": "microsoft-365/compliance/terms-conditions.md",
       "redirect_url": "/legal/microsoft-365/microsoft-365-trial",
-      "redirect_document_id": true
+      "redirect_document_id": false
     }
   ]
 }
