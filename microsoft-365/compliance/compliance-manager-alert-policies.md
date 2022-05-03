@@ -73,7 +73,7 @@ Learn more about [Azure roles in the Microsoft Purview compliance portal](micros
 | **Compliance Manager Administration**| Yes  | Yes | 
 | **Compliance Manager Assessor**| Yes | Yes | 
 | **Compliance Manager Contribution**| Yes | Yes | 
-| **Global Administrator**| No | No  | 
+| **Global Administrator**| Yes | Yes  | 
 | **Compliance Manager Reader**| No | No | 
 
 Learn how to [set user permissions and assign roles for Compliance Manager](compliance-manager-setup.md#set-user-permissions-and-assign-roles).

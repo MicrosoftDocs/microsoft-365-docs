@@ -2,7 +2,7 @@
 title: "Manage Microsoft 365 user account passwords"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: Admin
 ms.topic: overview
 ms.prod: office-online-server
