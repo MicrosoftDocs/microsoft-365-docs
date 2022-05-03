@@ -47,7 +47,7 @@ Microsoft Defender for Endpoint troubleshooting mode allows you to troubleshoot 
 
     - Microsoft Defender Antivirus performance troubleshooting by using the troubleshooting mode and manipulating tamper protection and other antivirus settings.
 
-- If a tampering event occurs (for example, the Preference snapshot is altered or deleted), troubleshooting mode will end and tamper protection will be enabled on the device.
+- If a tampering event occurs (for example, the `MpPreference` snapshot is altered or deleted), troubleshooting mode will end and tamper protection will be enabled on the device.
 
 - Local admins, with appropriate permissions, can change configurations on individual endpoints that are usually locked by policy. Having a device in troubleshooting mode can be helpful when diagnosing Microsoft Defender Antivirus performance and compatibility scenarios.
 
@@ -88,7 +88,7 @@ Microsoft Defender for Endpoint troubleshooting mode allows you to troubleshoot 
 
 1. Go to the Microsoft 365 Defender portal (https://security.microsoft.com), and sign in. 
 
-1. Navigate to the device page/machine page for the device you would like to turn on troubleshooting mode. Select **Turn on troubleshooting mode**. Note that this requires **Manage security settings in Security Center** permissions for Microsoft Defender for Endpoint.
+1. Navigate to the device page/machine page for the device you would like to turn on troubleshooting mode. Select **Turn on troubleshooting mode**. Note that this requires "Manage security settings in Security Center" permissions for Microsoft Defender for Endpoint.
 
 [Need updated screenshot]
 
