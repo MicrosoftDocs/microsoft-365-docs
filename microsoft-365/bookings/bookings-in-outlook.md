@@ -15,6 +15,9 @@ description: "Use Bookings in Outlook to let others schedule meetings with you i
 
 Bookings in Outlook is a web-based personal scheduling page that integrates with the free/busy information from your Outlook calendar. Bookings in Outlook lets people schedule a meeting or appointment with you. You can create custom meeting types to share with others so they can easily schedule time with you based on your availability and preferences. You both get an email confirmation and attendees can update or cancel scheduled meetings with you from your Bookings in Outlook page.
 
+> [!NOTE]
+> Bookings in Outlook is only available in preview.
+
 Bookings in Outlook has two different views:
 
 - **Organizer view** A personal booking page where you can create meeting types that others can book with you. Custom meeting types give you the ability to customize when you want to meet and how that meeting type is shared with others. You control whether each meeting type is public to your scheduling page or is private and can only be accessed by a select group of people. You can also choose to add a Teams meeting to all meetings booked through your Bookings in Outlook page. You can access your Bookings in Outlook page through Outlook on the web or by going to [https://outlook.office.com/bookwithme/](https://outlook.office.com/bookwithme/). After you set up your page and publish it, you can share it with others. For example, you can add it to your Outlook signature.
@@ -53,9 +56,9 @@ Use the **Get-OrganizationConfig** and **Set-Organization** commands to find out
    Get-Organizationconfig | Format-List EwsEnabled
    ```
 
-If the command returns “EwsEnabled: **$true** then proceed to Step 2.
+If the command returns “EwsEnabled: **$true**" then proceed to Step 2.
 
-If the command returns “EwsEnabled: **empty** (empty is default), then enable and proceed to Step 2.
+If the command returns “EwsEnabled: **empty**" (empty is default), then enable and proceed to Step 2.
 
    ```PowerShell
    Set-OrganizationConfig -EwsEnabled: $true
@@ -67,9 +70,9 @@ If the command returns “EwsEnabled: **empty** (empty is default), then enable 
    Get-OrganizationConfig | Format-List EwsApplicationAccessPolicy,Ews*List
    ```
 
-    A. If the value of **EwsApplicationAccessPolicy** is **EnforceAllowList**, only the applications specified in EwsAllowList are allowed to access EWS and REST.
+    A. If the value of **EwsApplicationAccessPolicy** is **EnforceAllowList**, only the applications specified in **EwsAllowList** are allowed to access EWS and REST.
 
-    - To turn off Bookings in Outlook for your organization, remove **MicrosoftOWSPersonalBookings**, if present from **EwsAllowList** by running the following command:  
+    - To turn off Bookings in Outlook for your organization, remove **MicrosoftOWSPersonalBookings**, if present, from **EwsAllowList** by running the following command:  
 
    ```PowerShell
    Set-OrganizationConfig - EwsAllowList @{Remove="MicrosoftOWSPersonalBookings"}
@@ -81,7 +84,7 @@ If the command returns “EwsEnabled: **empty** (empty is default), then enable 
    Set-OrganizationConfig - EwsAllowList @{Add="MicrosoftOWSPersonalBookings"}
    ```
 
-    B. If the value of **EwsApplicationAccessPolicy** is **EnforceBlockList** or empty, all applications are allowed to access EWS and REST, except those specified in **EwsBlockList**.  
+    B. If the value of **EwsApplicationAccessPolicy** is **EnforceBlockList** (or empty), all applications are allowed to access EWS and REST, except those specified in **EwsBlockList**.  
 
    ```PowerShell
    Get-OrganizationConfig | Format-List EwsApplicationAccessPolicy,Ews*List -EwsApplicationAccessPolicy  EnforceBlockList
