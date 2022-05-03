@@ -26,7 +26,7 @@ The Microsoft Purview solutions trial is the easiest way to try all the capabili
 
 ## Terms and conditions
 
-See the [terms and conditions](terms-conditions.md) for Microsoft Purview trials.
+See the [terms and conditions](../legal/microsoft-365/microsoft-365-trial.md) for Microsoft 365 trials.
 
 ## Eligibility
 
