@@ -178,7 +178,7 @@ The solutions in this guide will help you gain visibility into user activities, 
 
 ### Information protection setup guide
 
-Get an overview of the capabilities you can apply to your information protection strategy so you can be confident your sensitive information is protected. Use a four-stage lifecycle approach in which you discover, classify, protect, and monitor sensitive information. The [Microsoft information protection setup guide](https://aka.ms/mipsetupguide) provides guidance for completing each of these stages.
+Get an overview of the capabilities you can apply to your information protection strategy so you can be confident your sensitive information is protected. Use a four-stage lifecycle approach in which you discover, classify, protect, and monitor sensitive information. The [Microsoft information protection setup guide](https://aka.ms/microsoftpurviewdatalifecyclemanagementsetupguide) provides guidance for completing each of these stages.
 
 ### Data lifecycle management setup guide
 
