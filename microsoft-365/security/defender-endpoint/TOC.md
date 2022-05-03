@@ -215,10 +215,12 @@
 
 #### [Configure Microsoft Defender Security Center time zone settings](time-settings.md)
 
-### [Vulnerability management](tvm-index.yml)
+## [Vulnerability management](tvm-index.yml)
 
-### [Guidance for active threats and campaigns]()
+## [Guidance for active threats and campaigns]()
 #### [Manage the Log4Shell vulnerability](tvm-manage-log4shell-guidance.md)
+
+## [Protect devices]()
 ### [Device discovery]()
 #### [Device discovery overview](device-discovery.md)
 #### [Configure device discovery](configure-device-discovery.md)
