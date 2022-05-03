@@ -97,19 +97,19 @@ The option to **Consult a threat expert** is available in several places through
 
 ### Device inventory page flyout menu
 
-![device page inventory flyout menu](../../media/mte/mdeh-deviceinventory-flyout-menu.png)
+![device page inventory flyout menu](../../media/Device-inventory-page-flyout-menu.png)
 
 ### Alerts page flyout menu
 
-![alerts page flyout menu](../../media/mte/mdeh-Alerts-page-flyout-menu.png)
+![alerts page flyout menu](../../media/Alerts-page-flyout-menu.png)
 
 ### Incidents page actions menu
 
-![incidents page menu](../../media/mte/mdeh-incidentspage-actions-menu.png)
+![incidents page menu](../../media/incidents-page-actions-menu.png)
 
 ### Incidents inventory page
 
-![incidents inventory menu](../../media/mte/mdeh-incidents-inventory-menu.png)
+![incidents inventory menu](../../media/Incidents-inventory-page.png)
 
 >[!NOTE]
 > If you would like to track the status of your Experts on Demand cases through Microsoft Services Hub, reach out to your Customer Success Account Manager. Watch this **[video](https://www.microsoft.com/videoplayer/embed/RE4pk9f)** for a quick overview of the Microsoft Services Hub.
