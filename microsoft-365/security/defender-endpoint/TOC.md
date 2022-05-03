@@ -218,7 +218,7 @@
 ## [Vulnerability management](tvm-index.yml)
 
 ## [Guidance for active threats and campaigns]()
-#### [Manage the Log4Shell vulnerability](tvm-manage-log4shell-guidance.md)
+### [Manage the Log4Shell vulnerability](tvm-manage-log4shell-guidance.md)
 
 ## [Protect devices]()
 ### [Device discovery]()
