@@ -107,8 +107,8 @@ Here are some pre-built advanced hunting queries to give you visibility into the
 ### Get troubleshooting events for a particular device
 
 ```kusto
-let deviceName = "<device name>";   (update with device name) 
-let deviceId = "<device id>";   (update with device id) 
+let deviceName = "<device name>";   // update with device name 
+let deviceId = "<device id>";   // update with device id 
 search in (DeviceEvents)  
 (DeviceName == deviceName  
 ) and ActionType == "AntivirusTroubleshootModeEvent"  
