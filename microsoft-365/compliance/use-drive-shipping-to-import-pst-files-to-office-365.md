@@ -110,7 +110,7 @@ The first step is to download the tool and that you use in Step 2 to copy PST fi
   
 1. Go to <https://compliance.microsoft.com> and sign in using the credentials for an administrator account in your organization.
 
-2. In the left navigation pane of the compliance portal, click **Information governance** \> **Import**.
+2. In the left navigation pane of the compliance portal, click **Data lifecycle management** \> **Import**.
     
     > [!NOTE]
     > As previously stated, you have to be assigned the appropriate permissions to access the **Import** page in the compliance portal.
@@ -237,7 +237,7 @@ The next step is to create the PST Import job in the Import service in Office 36
   
 1. Go to <https://compliance.microsoft.com> and sign in using the credentials for an administrator account in your organization.
 
-2. In the left navigation pane of the compliance portal, click **Information governance** \> **Import**.
+2. In the left navigation pane of the compliance portal, click **Data lifecycle management** \> **Import**.
 
 3. On the **Import** tab, click ![Add Icon.](../media/ITPro-EAC-AddIcon.gif) **New import job**.
 
@@ -321,7 +321,7 @@ After you've shipped the hard drive to Microsoft, complete the following procedu
   
 1. Go to <https://compliance.microsoft.com> and sign in using the credentials for an administrator account in your organization.
 
-2. In the left navigation pane of the compliance portal, click **Information governance > Import**.
+2. In the left navigation pane of the compliance portal, click **Data lifecycle management** > **Import**.
 
 3. On the **Import** tab, click the job for the drive shipment that you want to enter the tracking number for.
 
@@ -347,7 +347,7 @@ After PST files are uploaded to Azure, the status is changed to **Analysis in pr
   
 1. Go to <https://compliance.microsoft.com> and sign in using the credentials for an administrator account in your organization.
 
-2. In the left navigation pane of the compliance portal, click **Information governance** \> **Import****.
+2. In the left navigation pane of the compliance portal, click **Data lifecycle management** \> **Import****.
 
 3. On the **Import** tab, select the import job that you created in Step 4 and click **Import to Office 365**.
   
@@ -386,7 +386,7 @@ To install the Azure Storage Explorer and connect to your Azure Storage area:
 
 1. Go to <https://compliance.microsoft.com> and sign in using the credentials for an administrator account in your organization.
 
-2. In the left pane of the compliance portal, click **Information governance > Import**.
+2. In the left pane of the compliance portal, click **Data lifecycle management** > **Import**.
 
 3. On the **Import** tab, click ![Add Icon.](../media/ITPro-EAC-AddIcon.gif) **New import job**.
 
