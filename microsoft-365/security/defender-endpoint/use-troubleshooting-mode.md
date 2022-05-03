@@ -39,7 +39,7 @@ If you want to install an application but receive an error message that Microsof
 
 2. Connect to the device (using Terminal Services for example) with local admin permissions.  
 
-3. Start Process Monitor (ProcMon). See the steps [here](troubleshoot-performance-issues.md).  
+3. Start Process Monitor (ProcMon). See the steps described in [Troubleshoot performance issues related to real-time protection](troubleshoot-performance-issues.md).  
 
 4. Go to **Windows security** > **Threat & virus protection** > **Manage settings** > **Tamper protection** > **Off**.  
 
@@ -72,7 +72,7 @@ Sometimes during a scheduled scan, MsMpEng.exe can consume high CPU.
 
 6. After adding the exclusion, check to see if the CPU usage has dropped. 
 
-For more information on Set-MpPreference cmdlet configuration preferences for Windows Defender scans and updates, see [here](https://docs.microsoft.com/powershell/module/defender/set-mppreference). 
+For more information on Set-MpPreference cmdlet configuration preferences for Windows Defender scans and updates, see [Set-MpPreference](https://docs.microsoft.com/powershell/module/defender/set-mppreference). 
 
 ## Scenario 3: Application taking longer to perform an action
 
@@ -120,6 +120,7 @@ For more information, see [Use network protection to help prevent connections to
 
 ## Related topics
 
+- [Enable troubleshooting mode](enable-troubleshooting-mode.md)
 - [Protect security settings with tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md)
 - [Set-MpPreference](https://docs.microsoft.com/powershell/module/defender/set-mppreference)
 - [Protect your network](network-protection.md)

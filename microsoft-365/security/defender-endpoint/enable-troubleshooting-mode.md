@@ -1,5 +1,5 @@
 ---
-title: Turn on troubleshooting mode for Microsoft Defender for Endpoint
+title: Troubleshooting mode in Microsoft Defender for Endpoint
 description: Turn on the Microsoft Defender for Endpoint troubleshooting mode to address various antivirus issues.
 keywords: antivirus, troubleshoot, troubleshooting mode, tamper protection, compatibility
 search.product: eADQiWindows 10XVcnh
@@ -19,7 +19,7 @@ ms.topic: article
 ms.technology: mde
 ---
 
-# Turn on troubleshooting mode
+# Troubleshooting mode in Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -33,11 +33,13 @@ Microsoft Defender for Endpoint troubleshooting mode allows you to troubleshoot 
 
 ## What do you need to know before you begin?
 
-- Requirements:
+- Prerequisites: 
+
+    - A device running Windows 10 (version 19044.1618 and above), Windows 11, Windows Server 2019, or Windows Server 2022. 
 
     - For troubleshooting mode to be applied, Microsoft Defender Endpoint must be tenant-enrolled and active on the device.
 
-    - The device must be actively running Microsoft Defender Antivirus.
+    - The device must be actively running Microsoft Defender Antivirus, version 4.18.2203 and above.
 
 - Use troubleshooting mode to disable/change the tamper protection setting to perform:
 
@@ -45,7 +47,7 @@ Microsoft Defender for Endpoint troubleshooting mode allows you to troubleshoot 
 
     - Microsoft Defender Antivirus performance troubleshooting by using the troubleshooting mode and manipulating tamper protection and other antivirus settings.
 
-- If a tampering event (for example, the Preference snapshot) is altered or deleted, troubleshooting mode will end and tamper protection will be enabled on the device.
+- If a tampering event occurs (for example, the Preference snapshot is altered or deleted), troubleshooting mode will end and tamper protection will be enabled on the device.
 
 - Local admins, with appropriate permissions, can change configurations on individual endpoints that are normally locked by policy. Having a device in troubleshooting mode can be helpful when diagnosing Microsoft Defender Antivirus performance and compatibility scenarios.
 
@@ -84,7 +86,9 @@ Microsoft Defender for Endpoint troubleshooting mode allows you to troubleshoot 
 
 ## Enable the troubleshooting mode
 
-1. In Microsoft 365 Defender, go to the device you would like to turn on troubleshooting mode. Select **Turn on troubleshooting mode**.
+1. Go to the Microsoft 365 Defender portal (https://security.microsoft.com) and sign in. 
+
+1. Navigate to the device page/machine page for the device you would like to turn on troubleshooting mode. Select **Turn on troubleshooting mode**. Note that this requires **Manage security settings in Security Center** permissions for Microsoft Defender for Endpoint.
 
 [Need updated screenshot]
 
@@ -96,6 +100,62 @@ Microsoft Defender for Endpoint troubleshooting mode allows you to troubleshoot 
 
 [Need updated screenshot]
 
+## Advanced hunting queries
+
+Here are some pre-built advanced hunting queries to give you visibility into the troubleshooting events that are occurring in your environment. You can also use these queries to [create detection rules](/defender/custom-detection-rules.md#create-a-custom-detection-rule) to alert you when devices are in troubleshooting mode.
+
+### Get troubleshooting events for a particular device
+
+```kusto
+let deviceName = "<device name>";   (update with device name) 
+let deviceId = "<device id>";   (update with device id) 
+search in (DeviceEvents)  
+(DeviceName == deviceName  
+) and ActionType == "AntivirusTroubleshootModeEvent"  
+| extend _tsmodeproperties = parse_json(AdditionalFields)   
+| project $table, Timestamp,DeviceId, DeviceName, _tsmodeproperties,  
+ _tsmodeproperties.TroubleshootingState, _tsmodeproperties.TroubleshootingPreviousState, _tsmodeproperties.TroubleshootingStartTime,  
+ _tsmodeproperties.TroubleshootingStateExpiry, _tsmodeproperties.TroubleshootingStateRemainingMinutes,  
+ _tsmodeproperties.TroubleshootingStateChangeReason, _tsmodeproperties.TroubleshootingStateChangeSource 
+```
+
+### Devices currently in troubleshooting mode 
+
+```kusto
+search in (DeviceEvents)  
+ActionType == "AntivirusTroubleshootModeEvent"  
+| extend _tsmodeproperties = parse_json(AdditionalFields)   
+| where Timestamp > ago(3h)    
+| where _tsmodeproperties.TroubleshootingStateChangeReason == "Troubleshooting mode started"  
+|summarize (Timestamp, ReportId)=arg_max(Timestamp, ReportId), count() by DeviceId
+```
+
+### Count of troubleshooting mode instances by device
+
+```kusto
+search in (DeviceEvents)  
+ActionType == "AntivirusTroubleshootModeEvent"  
+| extend _tsmodeproperties = parse_json(AdditionalFields)   
+| where Timestamp > ago(30d)  // choose the date range you want  
+| where _tsmodeproperties.TroubleshootingStateChangeReason == "Troubleshooting mode started"  
+| summarize (Timestamp, ReportId)=arg_max(Timestamp, ReportId), count() by DeviceId  
+| sort by count_  
+```
+
+### Total count
+
+```kusto
+search in (DeviceEvents)  
+ActionType == "AntivirusTroubleshootModeEvent"  
+| extend _tsmodeproperties = parse_json(AdditionalFields)   
+| where Timestamp > ago(2d) //beginning of time range  
+| where Timestamp < ago(1d) //end of time range  
+| where _tsmodeproperties.TroubleshootingStateChangeReason == "Troubleshooting mode started"  
+| summarize (Timestamp, ReportId)=arg_max(Timestamp, ReportId), count()   
+| where count_ > 5          // choose your max # of TS mode instances for your time range
+```
+
 ## Related topic
 
 - [Use troubleshooting mode](use-troubleshooting-mode.md)
+- [Protect security settings with tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md)

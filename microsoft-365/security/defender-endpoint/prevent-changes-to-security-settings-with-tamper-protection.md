@@ -328,3 +328,5 @@ Your security operations team can also use hunting queries, such as the followin
 - [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](/intune/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
 - [Get an overview of Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint)
 - [Better together: Microsoft Defender Antivirus and Microsoft Defender for Endpoint](why-use-microsoft-defender-antivirus.md)
+- [Enable troubleshooting mode](enable-troubleshooting-mode.md)
+- [Use troubleshooting mode](use-troubleshooting-mode.md)
