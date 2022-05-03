@@ -72,7 +72,7 @@ Sometimes during a scheduled scan, MsMpEng.exe can consume high CPU.
 
 6. After adding the exclusion, check to see if the CPU usage has dropped. 
 
-For more information on Set-MpPreference cmdlet configuration preferences for Windows Defender scans and updates, see [Set-MpPreference](https://docs.microsoft.com/powershell/module/defender/set-mppreference). 
+For more information on Set-MpPreference cmdlet configuration preferences for Windows Defender scans and updates, see [Set-MpPreference](/powershell/module/defender/set-mppreference). 
 
 ## Scenario 3: Application taking longer to perform an action
 
@@ -122,9 +122,9 @@ For more information, see [Use network protection to help prevent connections to
 
 - [Enable troubleshooting mode](enable-troubleshooting-mode.md)
 - [Protect security settings with tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md)
-- [Set-MpPreference](https://docs.microsoft.com/powershell/module/defender/set-mppreference)
+- [Set-MpPreference](/powershell/module/defender/set-mppreference)
 - [Protect your network](network-protection.md)
 - [Overview of attack surface reduction](overview-attack-surface-reduction.md)
 - [Detect and block potentially unwanted applications](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md)
-- [Get an overview of Microsoft Defender for Endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/)
+- [Get an overview of Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 - [Better together: Microsoft Defender Antivirus and Microsoft Defender for Endpoint](why-use-microsoft-defender-antivirus.md)
