@@ -28,6 +28,10 @@ ms.technology: mde
 
 Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
+
+## Integration with Tunnel
+Microsoft Defender for Endpoint on iOS can now integrate with Microsoft Tunnel, a VPN gateway solution to enable security and connectivity in a single app.  Integration with Tunnel provides a simpler, secure VPN experience on iOS with just one app. This feature was earlier available only on Android. For more details, [see the techcommunity post here](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/what-s-new-in-microsoft-endpoint-manager-2204-april-edition/ba-p/3297995)
+
 ## Improved experience on supervised iOS devices
 
 Microsoft Defender for Endpoint on iOS now has specialized ability on supervised iOS/iPadOS devices, given the increased management capabilities provided by the platform on these types of devices. It can also provide Web Protection **without setting up a local VPN on the device**. This gives end-users a seamless experience while still being protected from phishing and other web-based attacks. For details, visit [this documentation](ios-install.md#complete-deployment-for-supervised-devices)
@@ -39,6 +43,13 @@ Microsoft Defender for Endpoint is now available as **Microsoft Defender** in th
 ## Threat and Vulnerability Management
 
 On January 25, 2022, we announced the general availability of Threat and Vulnerability management on Android and iOS. For more details, see [the techcommunity post here](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-general-availability-of-vulnerability-management/ba-p/3071663).
+
+
+## 1.1.28250101
+- **Integration with Tunnel** - Microsoft Defender for Endpoint on iOS can now integrate with Microsoft Tunnel, a VPN gateway solution to enable security and connectivity in a single app. For more information, see [Microsft Tunnel Overview](https://docs.microsoft.com/en-gb/mem/intune/protect/microsoft-tunnel-overview).
+- **Zero-touch onboard for enrolled iOS devices** enrolled through Microsoft Endpoint Manager (Intune) is generally available. For more information, see [Zero touch onboarding of Microsoft Defender for Endpoint](https://docs.microsoft.com/en-gb/microsoft-365/security/defender-endpoint/ios-install?view=o365-worldwide#zero-touch-onboarding-of-microsoft-defender-for-endpoint-preview).
+- Bug fixes.
+
 
 ## 1.1.24210103
 
