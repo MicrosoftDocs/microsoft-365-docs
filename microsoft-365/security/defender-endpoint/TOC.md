@@ -215,7 +215,7 @@
 
 #### [Configure Microsoft Defender Security Center time zone settings](time-settings.md)
 
-## [Discover and protect your organization]()
+## [Discover devices and protect your organization]()
 ### [Device discovery]()
 #### [Device discovery overview](device-discovery.md)
 #### [Configure device discovery](configure-device-discovery.md)
