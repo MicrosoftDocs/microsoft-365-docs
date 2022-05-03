@@ -116,7 +116,10 @@ To support Microsoft Defender for Endpoint security configuration management thr
 
 1. Sign in to [Microsoft 365 Defender portal](https://security.microsoft.com/) and go to **Settings** > **Endpoints** > **Configuration Management** > **Enforcement Scope** and enable the platforms for security settings management:
 
-   :::image type="content" source="../media/enable-mde-settings-management-defender.png" alt-text="Enable Microsoft Defender for Endpoint settings management in the Defender console.":::
+   :::image type="content" source="../media/security-settings-mgt.png" alt-text="Enable Microsoft Defender for Endpoint settings management in the Defender console.":::
+
+    >[!NOTE]
+    >To granularly control the scope of endpoints managed via MDE settings management, consider using **Pilot Mode**.
 
 2. Make sure the relevant users have permissions to manage endpoint security settings in Microsoft Endpoint Manager or grant those permissions by configuring a role in the Defender portal. Go to **Settings** > **Roles** > **Add item**:
 
@@ -147,7 +150,13 @@ Microsoft Defender for Endpoint supports several options to onboard devices. For
 
 
 ## Co-existence with Microsoft Endpoint Configuration Manager
-When using Configuration Manager, the best path for management of security policy is using the [Configuration Manager tenant attach](/mem/configmgr/tenant-attach/endpoint-security-get-started). In some environments it may be desired to use Security Management for Microsoft Defender. When using Security Management for Microsoft Defender with Configuration Manager, endpoint security policy should be isolated to a single control plane. Controlling policy through both channels will create the opportunity for conflicts and undesired results.
+In some environments it may be desired to use Security Management for Microsoft Defender in conjunction with Configuration Manager. 
+This is possible by disabling the **Manage Security settings using Configuration Manager** toggle in the **Settings page** (Settings > Endpoints > Configuration Management > Enforcement Scope):
+
+    :::image type="content" source="../media/manage-security-settings-cfg-mgr.png" alt-text="Manage security settings using Configuration Manager setting.":::
+
+>[!NOTE]
+>When using Security Management for Microsoft Defender for Endpoint with Configuration Manager, endpoint security policy should be isolated to a single control plane. Controlling policy through both channels may cause conflicts and undesired results.
 
 
 ## Create Azure AD Groups
