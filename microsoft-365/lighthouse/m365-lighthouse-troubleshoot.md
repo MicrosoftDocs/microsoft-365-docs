@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 audience: Admin
-ms.topic: article
+ms.topic: troubleshooting
 ms.prod: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
