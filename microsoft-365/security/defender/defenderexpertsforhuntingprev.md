@@ -101,7 +101,7 @@ The option to **Consult a threat expert** is available in several places through
 
 ### Alerts page flyout menu
 
-![alerts page flyout menu](../../media/mte/mdeh-alertspage-flyout-menu.png)
+![alerts page flyout menu](../../media/mte/mdeh-Alerts-page-flyout-menu.png)
 
 ### Incidents page actions menu
 
