@@ -54,7 +54,6 @@
 
 ##### [Onboard previous versions of Windows](onboard-downlevel.md)
 
-
 ##### [Onboard Windows devices and Windows Servers]()
 ###### [Onboard Windows Server 2012 R2, 2016, Semi-Annual Channel, 2019, and 2022](configure-server-endpoints.md)
 ###### [Onboard Windows devices using a local script](configure-endpoints-script.md)
@@ -64,9 +63,6 @@
 ###### [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
 ###### [Onboard Windows 10 multi-session devices in Windows Virtual Desktop](onboard-windows-multi-session-device.md)
 
-
-
-
 #### [Integration with Microsoft Defender for Cloud](azure-server-integration.md)
 
 #### [Onboard devices without Internet access](onboard-offline-machines.md)
@@ -74,8 +70,6 @@
 #### [Run simulated attacks on devices](attack-simulations.md)
 #### [Configure proxy and Internet connectivity settings](configure-proxy-internet.md)
 #### [Create an onboarding or offboarding notification rule](onboarding-notification.md)
-
-
 
 ### [Microsoft Defender for Endpoint on other Operating Systems]()
 #### [Onboard non-Windows devices](configure-endpoints-non-windows.md)
@@ -117,7 +111,6 @@
 ##### [Privacy](mac-privacy.md)
 ##### [Resources](mac-resources.md)
 
-
 #### [Microsoft Defender for Endpoint on Linux]()
 ##### [Overview of Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
 ##### [What's New](linux-whatsnew.md)
@@ -136,7 +129,6 @@
 ###### [Detect and block Potentially Unwanted Applications](linux-pua.md)
 ###### [Schedule scans with Microsoft Defender for Endpoint on Linux](linux-schedule-scan-mde.md)
 ###### [Schedule an update of the Microsoft Defender for Endpoint (Linux)](linux-update-MDE-Linux.md)
-
 
 ##### [Troubleshoot]()
 ###### [Troubleshoot installation issues](linux-support-install.md)
@@ -183,17 +175,12 @@
 
 ###### [Privacy](ios-privacy.md)
 
-
 ### [Manage Microsoft Defender for Endpoint configuration settings on devices with Microsoft Endpoint Manager](security-config-management.md)
 
 ### [Troubleshoot onboarding issues]()
 #### [Troubleshoot issues during onboarding](troubleshoot-onboarding.md)
 #### [Troubleshoot subscription and portal access issues](troubleshoot-onboarding-error-messages.md)
 #### [Troubleshoot security configuration management onboarding issues](troubleshoot-security-config-mgt.md)
-
-
-
-
 
 ### [Configure portal settings]()
 #### [Configure general Defender for Endpoint settings](preferences-setup.md)
@@ -228,11 +215,10 @@
 
 #### [Configure Microsoft Defender Security Center time zone settings](time-settings.md)
 
-## [Detect threats and protect endpoints]()
 ### [Vulnerability management](tvm-index.yml)
-#### [Overview](next-gen-threat-and-vuln-mgt.md)
-#### [Guidance for active threats and campaigns]()
-##### [Manage the Log4Shell vulnerability](tvm-manage-log4shell-guidance.md)
+
+### [Guidance for active threats and campaigns]()
+#### [Manage the Log4Shell vulnerability](tvm-manage-log4shell-guidance.md)
 ### [Device discovery]()
 #### [Device discovery overview](device-discovery.md)
 #### [Configure device discovery](configure-device-discovery.md)
