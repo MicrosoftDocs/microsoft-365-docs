@@ -111,7 +111,6 @@ sections:
           Currently, whenever a customer has multiple subscriptions, the highest subscription takes precedence. Here are some examples:
           
           - Example 1: If you have [Microsoft Defender for Endpoint Plan 2](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1-2) (purchased or trial subscription), and you get Microsoft Defender for Business, Defender for Endpoint Plan 2 takes precedence. In this case, you won't see the Defender for Business experience.
-
           - Example 2: If you have [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) (purchased or trial subscription), and you get Defender for Business, Defender for Cloud takes precedence. In this case, you won't see the Defender for Business experience.
 
 
