@@ -140,11 +140,15 @@ At this point you should be able to see the policy **Enable automatic MDM enroll
 
 ## Related content
 
-- [Synchronize domain users to Microsoft 365](../admin/setup/manage-domain-users.md)(article)\
+- [Synchronize domain users to Microsoft 365](../admin/setup/manage-domain-users.md)
 
-- [Create a group in the admin center](../admin/create-groups/create-groups.md) (article)\
+- [Create a group in the admin center](../admin/create-groups/create-groups.md)
 
-- [Tutorial: Configure hybrid Azure Active Directory join for managed domains](/azure/active-directory/devices/hybrid-azuread-join-managed-domains) (article)
+- [Tutorial: Configure hybrid Azure Active Directory join for managed domains](/azure/active-directory/devices/hybrid-azuread-join-managed-domains)
+
+- [Set up self-service passwords](../admin/add-users/let-users-reset-passwords.md)
+
+- [Set up self-service group management](/azure/active-directory/enterprise-users/groups-self-service-management)
 
 - [Best practices for securing Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)
 
