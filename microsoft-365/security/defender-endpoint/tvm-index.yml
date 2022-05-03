@@ -27,7 +27,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: Microsoft Defender Vulnerability Management
-            url: /microsoft-365/security/defender-vulnerability-management/next-gen-threat-and-vuln-mgt.md
+            url: /microsoft-365/security/defender-vulnerability-management/next-gen-threat-and-vuln-mgt
 
 
   # Card
@@ -36,7 +36,7 @@ landingContent:
       - linkListType: get-started
         links:
           - text: Get Defender for Business
-            url: /microsoft-365/security/defender-vulnerability-management/get-defender-vulnerability-management.md
+            url: /microsoft-365/security/defender-vulnerability-management/get-defender-vulnerability-management
 
 
   # Card
@@ -45,7 +45,7 @@ landingContent:
       - linkListType:  how-to-guide
         links:
           - text: Device inventory
-            url: /microsoft-365/security/defender-vulnerability-management/mdvm-device-inventory.md
+            url: /microsoft-365/security/defender-vulnerability-management/mdvm-device-inventory
 
 
   # Card
@@ -54,7 +54,7 @@ landingContent:
       - linkListType:  how-to-guide
         links:
           - text: Security baselines
-            url: /microsoft-365/security/defender-vulnerability-management/tvm-security-baselines.md
+            url: /microsoft-365/security/defender-vulnerability-management/tvm-security-baselines
 
   # Card
   - title: Help and support
