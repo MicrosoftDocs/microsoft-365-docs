@@ -1,5 +1,5 @@
 ---
-title: Expanded Microsoft Defender Experts for Hunting preview
+title: Microsoft Defender Experts for Hunting preview
 ms.reviewer:
 description: Microsoft Defender Experts for Hunting provides an additional layer of expertise to Microsoft Defender for Endpoint.
 keywords: managed threat hunting service, managed threat hunting, managed detection and response (MDR) service, MTE, Microsoft Threat Experts, MTE-TAN, targeted attack notification, Targeted Attack Notification, Microsoft Defender Experts for hunting
@@ -20,7 +20,7 @@ ms.topic: conceptual
 ms.technology: mde
 ---
 
-# Expanded Microsoft Defender Experts for Hunting preview
+# Microsoft Defender Experts for Hunting preview
 
 > [!IMPORTANT]
 > Some information relates to pre-released products which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
