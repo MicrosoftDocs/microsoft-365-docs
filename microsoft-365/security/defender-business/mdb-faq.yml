@@ -57,7 +57,7 @@ sections:
 
       - question: Can I configure more than one web content filtering policy in Defender for Business?
         answer: |
-          Currently, Defender for Business supports only one uniform web filtering policy per Defender for Business tenant. 
+          Currently, Defender for Business supports only one uniform web filtering policy per Defender for Business tenant. See [Set up web content filtering](mdb-configure-security-settings.md#set-up-web-content-filtering).
 
       - question: How can I run custom reports with Defender for Business?
         answer: |
