@@ -274,7 +274,7 @@ When you choose the option for a trainable classifier, you can select one or mor
 > [!CAUTION]
 > We are deprecating the **Offensive Language** pre-trained classifier because it has been producing a high number of false positives. Don't use this classifier and if you are currently using it, we recommend you move your business processes off it and instead use the **Targeted Harassment**, **Profanity**, and **Threat** pre-trained classifiers.
 
-To automatically apply a label by using this option, SharePoint sites and mailboxes must have at least 10 MB of data.
+To automatically apply a label by using this option, SharePoint sites, as well as mailboxes, must have at least 10 MB of data.
 
 For more information about trainable classifiers, see [Learn about trainable classifiers](classifier-learn-about.md).
 

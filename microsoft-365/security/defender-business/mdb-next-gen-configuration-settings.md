@@ -1,17 +1,16 @@
 ---
 title: Understand next-generation protection configuration settings in Microsoft Defender for Business
-description: Understand configuration settings for next-generation protection in Microsoft Defender for Business
+description: Understand antivirus and next-generation protection settings in Defender for Business, endpoint security for small and medium sized businesses.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.reviewer: inbadian, shlomiakirav
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
@@ -20,16 +19,13 @@ ms.collection:
 
 # Understand next-generation configuration settings in Microsoft Defender for Business
 
-> [!NOTE]
-> Microsoft Defender for Business is now included in [Microsoft 365 Business Premium](../../business-premium/index.md). 
-
-Next-generation protection in Defender for Business includes robust antivirus and antimalware protection. Your default policies are designed to protect your devices and users without hindering productivity; however, you can also customize your policies to suit your business needs. And, if you're using Microsoft Endpoint Manager, you can use that to manage your security policies.
+Next-generation protection in Defender for Business includes robust antivirus and antimalware protection. Your default policies are designed to protect your devices and users without hindering productivity; however, you can also customize your policies to suit your business needs. And, if you're using Microsoft Intune, you can use the Microsoft Endpoint Manager admin center to manage your security policies.
 
 **This article describes**:
 
 - [Next-generation protection settings and options](#next-generation-protection-settings-and-options)
 - [Other preconfigured settings in Defender for Business](#other-preconfigured-settings-in-defender-for-business) 
-- [Defender for Business default settings and Microsoft Endpoint Manager](#defender-for-business-default-settings-and-microsoft-endpoint-manager)
+- [Defender for Business default settings and Microsoft Intune](#defender-for-business-default-settings-and-microsoft-intune)
 
 ## Next-generation protection settings and options
 
@@ -64,9 +60,9 @@ The following security settings are preconfigured in Defender for Business:
 - Security intelligence updates are checked before an antivirus scan runs ([CheckForSignaturesBeforeRunningScan](/windows/client-management/mdm/policy-csp-defender#defender-checkforsignaturesbeforerunningscan))
 - Security intelligence checks occur every four hours ([SignatureUpdateInterval](/windows/client-management/mdm/policy-csp-defender#defender-signatureupdateinterval))
 
-## Defender for Business default settings and Microsoft Endpoint Manager
+## Defender for Business default settings and Microsoft Intune
 
-The following table describes settings that are preconfigured for Defender for Business and how those settings correspond to what you might see in Microsoft Endpoint Manager (or Microsoft Intune). If you're using the [simplified configuration process in Defender for Business](mdb-simplified-configuration.md) (preview), you don't need to edit these settings.
+The following table describes settings that are preconfigured for Defender for Business and how those settings correspond to what you might see in Intune (managed in the Microsoft Endpoint Manager admin center). If you're using the [simplified configuration process in Defender for Business](mdb-simplified-configuration.md), you don't need to edit these settings.
 
 | Setting  | Description  |
 |---------|---------|
