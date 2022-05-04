@@ -177,7 +177,7 @@ You can then run different queries without ever opening a new browser tab.
 :::image type="content" source="../../media/multitab-examples.png" alt-text="An example of multiple queries execution in the **New query** page in the Microsoft 365 Defender portal" lightbox="../../media/multitab-examples.png":::
 
 >[!NOTE] 
-> You risk losing unsaved queries if you open a new browser tab for a new query.
+> Using multiple browser tabs with advanced hunting might cause you to lose your unsaved queries. To prevent this from happening, use the tab feature within advanced hunting instead of separate browser tabs.
 
 ## Use sample queries
 
