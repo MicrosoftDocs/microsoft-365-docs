@@ -200,8 +200,7 @@ To run a query using PowerShell:
     > When you use these commands to validate a user scope, if the number of recipients returned is higher than expected, it might be because it includes users who don't have a valid license for adaptive scopes. These users won't have the retention settings applied to them.
     > 
     > For example, in a hybrid environment, you might have user accounts that are on-premises only without an Exchange mailbox on-premises or in Exchange Online. You can identify these users by running the following command: `Get-User -RecipientTypeDetails User`
-    ````
-    
+
 3. Verify that the output matches the expected users or groups for your adaptive scope. If it doesn't, check your query and the values with the relevant administrator for Azure AD or Exchange.
  
 To run a query using SharePoint search:
