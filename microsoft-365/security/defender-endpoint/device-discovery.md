@@ -78,7 +78,7 @@ To assess these devices, you can use a filter in the device inventory list calle
 - Unsupported: The endpoint was discovered in the network but is not supported by Microsoft Defender for Endpoint.
 - Insufficient info: The system could not determine the supportability of the device. Enabling standard discovery on more devices in the network can enrich the discovered attributes.
 
-![Image of device inventory dashboard.](images/device-discovery-inventory.png)
+:::image type="content" source="images/2b62255cd3a9dd42f3219e437b956fb9.png" alt-text="The device inventory dashboard" lightbox="images/2b62255cd3a9dd42f3219e437b956fb9.png":::
 
 > [!TIP]
 > You can always apply filters to exclude unmanaged devices from the device inventory list. You can also use the onboarding status column on API queries to filter out unmanaged devices.
@@ -89,7 +89,7 @@ For more information, see [Device inventory](machines-view-overview.md).
 
 The large number of unmanaged network devices deployed in an organization creates a large surface area of attack, and represents a significant risk to the entire enterprise. Microsoft Defender for Endpoint network discovery capabilities helps you ensure network devices are discovered, accurately classified, and added to the asset inventory.
 
-Network devices are not managed as standard endpoints, as Defender for Endpoint doesn't have a sensor built into the network devices themselves. These types of devices require an agentless approach where a remote scan will obtain the necessary information from the devices. To do this, a designated Microsoft Defender for Endpoint device will be used on each network segment to perform periodic authenticated scans of preconfigured network devices. Once discovered, Defender for Endpoint’s threat and vulnerability management capabilities provide integrated workflows to secure discovered switches, routers, WLAN controllers, firewalls, and VPN gateways.
+Network devices are not managed as standard endpoints, as Defender for Endpoint doesn't have a sensor built into the network devices themselves. These types of devices require an agentless approach where a remote scan will obtain the necessary information from the devices. To do this, a designated Microsoft Defender for Endpoint device will be used on each network segment to perform periodic authenticated scans of preconfigured network devices. Once discovered, Defender for Endpoint's threat and vulnerability management capabilities provide integrated workflows to secure discovered switches, routers, WLAN controllers, firewalls, and VPN gateways.
 
 For more information, see [Network devices](network-devices.md).
 
@@ -99,30 +99,55 @@ To address the challenge of gaining enough visibility to locate, identify, and s
 
 - **Corelight**: Microsoft has partnered with Corelight to receive data from Corelight network appliances. This provides Microsoft 365 Defender with increased visibility into the network activities of unmanaged devices, including communication with other unmanaged devices or external networks. for more information, see [Enable Corelight data integration](corelight-integration.md).
 
-- **Microsoft Defender for IoT**: This integration combines Microsoft Defender for Endpoint’s device discovery capabilities, with the agentless monitoring capabilities of Microsoft Defender for IoT, to secure enterprise IoT devices connected to an IT network (for example, Voice over Internet Protocol (VoIP), printers, and smart TVs). For more information, see [Enable Microsoft Defender for IoT integration](enable-microsoft-defender-for-iot-integration.md).
+- **Microsoft Defender for IoT**: This integration combines Microsoft Defender for Endpoint's device discovery capabilities, with the agentless monitoring capabilities of Microsoft Defender for IoT, to secure enterprise IoT devices connected to an IT network (for example, Voice over Internet Protocol (VoIP), printers, and smart TVs). For more information, see [Enable Microsoft Defender for IoT integration](enable-microsoft-defender-for-iot-integration.md).
 
 ## Vulnerability assessment on discovered devices
 
 Vulnerabilities and risks on your devices as well as other discovered unmanaged devices in the network are part of the current TVM flows under "Security Recommendations" and represented in entity pages across the portal.
 Search for "SSH" related security recommendations to find SSH vulnerabilities that are related for unmanaged and managed devices.
 
-![Image of security recommendations dashboard.](images/1156c82ffadd356ce329d1cf551e806c.png)
+:::image type="content" source="images/1156c82ffadd356ce329d1cf551e806c.png" alt-text="The security recommendations dashboard" lightbox="images/1156c82ffadd356ce329d1cf551e806c.png":::
 
-## Use Advanced Hunting on discovered devices
 
-You can use Advanced Hunting queries to gain visibility on discovered devices.
-Find details about discovered Endpoints in the DeviceInfo table, or network-related information about those devices in the DeviceNetworkInfo table.
+## Use advanced hunting on discovered devices
 
-![Image of advanced hunting use.](images/f48ba1779eddee9872f167453c24e5c9.png)
+You can use advanced hunting queries to gain visibility on discovered devices. Find details about discovered devices in the DeviceInfo table, or network-related information about those devices in the DeviceNetworkInfo table.
 
-Device discovery leverages Microsoft Defender for Endpoint onboarded devices as a network data source to attribute activities to non-onboarded devices. This means that if a Microsoft Defender for Endpoint onboarded device communicated with a non-onboarded device, activities on the non-onboarded device can be seen on the timeline and through the Advanced hunting DeviceNetworkEvents table.
+:::image type="content" source="images/f48ba1779eddee9872f167453c24e5c9.png" alt-text="The Advanced hunting page on which queries can be used" lightbox="images/f48ba1779eddee9872f167453c24e5c9.png":::
 
-New events are Transmission Control Protocol (TCP) connections-based and will fit to the current DeviceNetworkEvents scheme. TCP ingress to the Microsoft Defender for Endpoint enabled device from a non-Microsoft Defender for Endpoint enabled.
+### Query discovered devices details
 
-The following action types have also been added:
+Run this query, on the DeviceInfo table, to return all discovered devices along with the most up to details for each device:
+
+```query
+DeviceInfo
+| summarize arg_max(Timestamp, *) by DeviceId  // Get latest known good per device Id
+| where isempty(MergedToDeviceId) // Remove invalidated/merged devices
+| where OnboardingStatus != "Onboarded" 
+```
+
+By invoking the **SeenBy** function, in your advanced hunting query, you can get detail on which onboarded device a discovered device was seen by. This information can help determine the network location of each discovered device and subsequently, help to identify it in the network.  
+
+```query
+DeviceInfo
+| where OnboardingStatus != "Onboarded" 
+| summarize arg_max(Timestamp, *) by DeviceId  
+| where isempty(MergedToDeviceId)  
+| limit 100 
+| invoke SeenBy() 
+| project DeviceId, DeviceName, DeviceType, SeenBy  
+```
+
+For more information, see the [SeenBy()](/microsoft-365/security/defender/advanced-hunting-seenby-function) function.
+
+### Query network related information
+
+Device discovery leverages Microsoft Defender for Endpoint onboarded devices as a network data source to attribute activities to non-onboarded devices. The network sensor on the Microsoft Defender for Endpoint onboarded device identifies two new connection types:
 
 - ConnectionAttempt - An attempt to establish a TCP connection (syn)
 - ConnectionAcknowledged - An acknowledgment that a TCP connection was accepted (syn\ack)
+
+This means that when a non-onboarded device attempts to communicate with an onboarded Microsoft Defender for Endpoint device, the attempt will generate a DeviceNetworkEvent and the  non-onboarded device activities can be seen on the onboarded device timeline, and through the Advanced hunting DeviceNetworkEvents table.
 
 You can try this example query:
 

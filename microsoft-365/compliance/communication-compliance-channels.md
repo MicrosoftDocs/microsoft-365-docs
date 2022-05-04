@@ -1,6 +1,7 @@
 ---
 title: "Detect channel signals with communication compliance"
 description: "Learn more about detecting channel signals with communication compliance."
+keywords: Microsoft 365, Microsoft Purview, compliance, communication compliance
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -22,13 +23,22 @@ search.appverid:
 
 # Detect channel signals with communication compliance
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 With communication compliance policies, you can choose to scan messages in one or more of the following communication platforms as a group or as standalone sources. Original messages captured across these platforms are retained in the original platform location in accordance with your organization's [retention and hold policies](/microsoft-365/compliance/information-governance). Copies of messages used by communication compliance policies for analysis and investigation are retained for as long as policy is in place, even if users leave your organization and their mailboxes are deleted. When a communication policy is deleted, copies of messages associated with the policy are also deleted.
 
 ## Microsoft Teams
 
 Chat communications in both public and private Microsoft Teams channels and individual chats can be scanned. When users are assigned to a communication compliance policy with Microsoft Teams coverage selected, chat communications for the users are automatically monitored across all Microsoft Teams where the users are a member. Microsoft Teams coverage is automatically included for pre-defined policy templates and is selected by default in the custom policy template. Teams chats matching communication compliance policy conditions may take up to 48 hours to process.
 
-For private chat and private channels, communication compliance policies support Modern attachment scanning. Modern attachments are files sourced from [OneDrive](/onedrive/plan-onedrive-enterprise#modern-attachments) or [SharePoint](/sharepoint/dev/solution-guidance/modern-experience-customizations) sites that are included in Teams messages. Text is automatically extracted from these attachments for automated processing and potential matches with active communication compliance policy conditions and classifiers. There isn't any additional configuration necessary for Modern attachment detection and processing. Text is only extracted for attachments matching policy conditions. Text isn't extracted for attachments for messages with policy matches, even if the attachment also has a policy match.
+For private chat and private channels, communication compliance policies support [Shared Channels](/MicrosoftTeams/shared-channels) and Modern attachment scanning. Shared Channels support in Teams is handled automatically and don't require additional communication compliance configuration changes. The following table summarizes communication compliance behavior when sharing Teams channels with groups and users:
+
+|**Scenario**|**Communication compliance behavior**|
+|:-----------|:------------------------------------|
+| **Share a channel with an internal team** | Communication compliance policies apply to in-scope users and all messages in the shared channel |
+| **Share a channel with an external team** | Communication compliance policies apply to internal in-scope users and messages in the shared channel for the internal organization |
+
+Modern attachments are files sourced from [OneDrive](/onedrive/plan-onedrive-enterprise#modern-attachments) or [SharePoint](/sharepoint/dev/solution-guidance/modern-experience-customizations) sites that are included in Teams messages. Text is automatically extracted from these attachments for automated processing and potential matches with active communication compliance policy conditions and classifiers. There isn't any additional configuration necessary for Modern attachment detection and processing. Text is only extracted for attachments matching policy conditions. Text isn't extracted for attachments for messages with policy matches, even if the attachment also has a policy match.
 
 Modern attachment scanning is supported for the following file types:
 
