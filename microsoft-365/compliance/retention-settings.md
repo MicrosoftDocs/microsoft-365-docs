@@ -170,7 +170,7 @@ To run a query using PowerShell:
 
 1. [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) using an account with [appropriate Exchange Online Administrator permissions](/powershell/exchange/find-exchange-cmdlet-permissions#use-powershell-to-find-the-permissions-required-to-run-a-cmdlet).
 
-2. Use either [Get-Recipient](/powershell/module/exchange/get-recipient) or [Get-Mailbox](/powershell/module/exchange/get-mailbox) with the *-Filter* parameter and your [OPATH query](/powershell/exchange/filter-properties) for the adaptive scope enclosed in curly brackets (`{`,`}`). If your attribute values are strings, enclose these values in double or single quotes.  
+2. Use either [Get-Recipient](/powershell/module/exchange/get-recipient) or [Get-Mailbox](/powershell/module/exchange/get-mailbox) with the *-Filter* parameter and your [OPATH query](/powershell/exchange/filter-properties) for the adaptive scope enclosed in curly brackets (`{`,`}`). If your attribute values are strings, enclose these values in double or single quotes.
 
     You can determine whether to use `Get-Mailbox` or `Get-Recipient` for validation by identifying which cmdlet is supported by the [OPATH property](/powershell/exchange/filter-properties) that you choose for your query.
 
@@ -178,8 +178,8 @@ To run a query using PowerShell:
     > `Get-Mailbox` does not support the *MailUser* recipient type, so `Get-Recipient` must be used to validate queries that include on-premises mailboxes in a hybrid environment.
 
     To validate a **User** scope, use either:
-    - `Get-Mailbox` with `-RecipientTypeDetails UserMailbox` or
-    - `Get-Recipient` with `-RecipientTypeDetails UserMailbox,MailUser`
+    - `Get-Mailbox` with `-UserMailbox,SharedMailbox,RoomMailbox,EquipmentMailbox` or
+    - `Get-Recipient` with `-RecipientTypeDetails serMailbox,MailUser,SharedMailbox,RoomMailbox,EquipmentMailbox`
     
     To validate a **Microsoft 365 Group** scope, use:
     - `Get-Mailbox` or `Get-Recipient` with `-RecipientTypeDetails GroupMailbox`
@@ -195,7 +195,12 @@ To run a query using PowerShell:
     ```PowerShell
     Get-Mailbox -RecipientTypeDetails GroupMailbox -Filter {CustomAttribute15 -eq "Marketing"} -ResultSize Unlimited
     ```
-
+    
+    > [!NOTE]
+    > When you use these commands to validate a user scope, if the number of recipients returned is higher than expected, it might be because it includes unlicensed mailboxes that won't have retention settings applied. For example, in a hybrid environment, on-premises user accounts without a mailbox on-premises or in Exchange Oneline.
+    > 
+    > To identify these unlicensed user acccounts, run the following command: `Get-User -RecipientTypeDetails User`
+    
 3. Verify that the output matches the expected users or groups for your adaptive scope. If it doesn't, check your query and the values with the relevant administrator for Azure AD or Exchange.
  
 To run a query using SharePoint search:
@@ -237,9 +242,9 @@ Locations in policies for retention identify specific Microsoft 365 services tha
 
 Both the **Exchange email** location and the **Exchange public folders** location require mailboxes to have at least 10 MB of data before retention settings will apply to them.
 
-The **Exchange email** location supports retention for users' email, calendar, and other mailbox items, by applying retention settings at the level of a mailbox. Shared mailboxes are also supported.
+The **Exchange email** location supports retention for users' email, calendar, and other mailbox items, by applying retention settings at the level of a mailbox. Shared mailboxes and resource mailboxes for equipment and rooms are also supported.
 
-Resource mailboxes, contacts, and Microsoft 365 group mailboxes aren't supported for Exchange email. For Microsoft 365 group mailboxes, select the **Microsoft 365 Groups** location instead. Although the Exchange location initially allows a group mailbox to be selected for a static scope, when you try to save the retention policy, you receive an error that "RemoteGroupMailbox" is not a valid selection for this location.
+Email contacts and Microsoft 365 group mailboxes aren't supported for Exchange email. For Microsoft 365 group mailboxes, select the **Microsoft 365 Groups** location instead. Although the Exchange location initially allows a group mailbox to be selected for a static scope, when you try to save the retention policy, you receive an error that "RemoteGroupMailbox" is not a valid selection for this location.
 
 Depending on your policy configuration, [inactive mailboxes](inactive-mailboxes-in-office-365.md) might be included or not:
 
