@@ -38,6 +38,14 @@ Chart information gives you insight into the apps and services that you want to 
 |3 |Total number of help article page views in app or on [support.microsoft.com](https://support.microsoft.com). |
 |4 |List of the top help articles related to the app or service that your end-users are reading. |
 
-## Example of support.office.com help article
+## Examples of help articles
+
+Help articles can be found in-app in the help pane or at [Microsoft support page](https://support.microsoft.com/).
+
+### Help article on Microsoft support page
 
 :::image type="content" source="../../media/help-article-example.png" alt-text="Screenshot: Example support.microsoft.com article":::
+
+### In-ap help article in Microsoft Word
+
+:::image type="content" source="../../media/help-article-example-in-app-word.png" alt-text="Screenshot: Example support.microsoft.com article":::
