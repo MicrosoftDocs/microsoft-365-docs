@@ -36,7 +36,7 @@ Microsoft Defender Experts for Hunting (Hunting Experts) is a managed threat hun
 
 After your application is accepted, you'll receive targeted attack notifications from Hunting Experts. These notifications will help you protect your organization's endpoints, email, and identities. You will also receive access to Experts on Demand, that lets you get expert advice about threats your organization is facing. You can consult experts and seek help with the threats your organization faces. In this preview, you can try the service for free and enjoy the following capabilities:
 
-- **Targeted attack notification** - Provides proactive hunting for the most important threats to your network, including human adversary intrusions, hands-on keyboard attacks, or advanced attacks like cyber-espionage. These notifications show up as new alerts in  Microsoft 365 Defender and Azure Sentinel portals.
+- **Targeted attack notification** - Provides proactive hunting for the most important threats to your network, including human adversary intrusions, hands-on-keyboard attacks, or advanced attacks like cyber-espionage. These notifications show up as new alerts in  Microsoft 365 Defender and Azure Sentinel portals.
 - **Experts on Demand** - Click a button to consult with an assigned expert threat analyst.
 - **Reports** - What we hunted, what we found, what we recommended.
 
@@ -49,7 +49,7 @@ If you haven’t done so yet, you can apply for Hunting Experts
 
 1. Click **Apply**. Only the global administrators can register and complete the application process. If you’re not a global administrator, contact your global administrator to fill out the application form.
 2. Enter your **company email ID** and **Tenant ID**.
-    1. To find your tenant ID, click the Where do I find my Tenant ID to go to the Microsoft 365 Defender portal.  
+    1. To find your tenant ID, click the **Where do I find my Tenant ID** to go to the Microsoft 365 Defender portal.
     2. From the navigation pane, go to **Settings > Defender 365** to view the tenant ID.
     3. Copy the tenant ID and paste it in the form.
 3. Select **Submit**. You will get a confirmation message that your application has been received.  
@@ -60,13 +60,13 @@ If you haven’t done so yet, you can apply for Hunting Experts
 You need to follow these steps to join the preview:
 
 1. In the application acceptance email that you’ve received, select **Register**. This opens the **sign-in** dialog box to your Microsoft 365 account.
-2. Ask your global administrator to register *insert LINK* your company. Sign in. The **Settings** page opens.
+2. Ask your global administrator to register your company (the link will be provided in the email you’ll get). Sign in. The **Settings** page opens.
 3. Go to **Settings > Microsoft Defender Experts**.
 4. Read the **Microsoft Defender Experts for Hunting preview terms and conditions**. If you have any questions or concerns, contact the Microsoft Defender Experts Team at defenderexpertsphelp@microsoft.com.
 5. Click **Accept**, to accept the terms and conditions.
-6. Get your free license in Microsoft 365 admin center *insert LINK*. In the **Checkout** page, select **Place order**.  
+6. Get your free license in [Microsoft 365 admin center](https://www.microsoft.com/en-us/microsoft-365/business/office-365-administration). In the **Checkout** page, select **Place order**.  
 
-## Start using your expanded Microsoft Defender Experts preview service
+## Start using your expanded Microsoft Defender Experts service preview
 
 After you place your order and get confirmation, you will receive a welcome email after six hours, that says your expanded Microsoft Threat Experts preview is set up and ready to use.
 
@@ -74,7 +74,7 @@ Our experts will immediately start hunting for advanced threats inside your envi
 
 ## Receive targeted attack notification
 
-The Targeted Attack Notification capability includes:
+The Hunting Experts—Targeted Attack Notification capability includes:
 
 - Threat monitoring and analysis, reducing dwell time and the risk to your business.
 - Hunter-trained artificial intelligence to discover and target both known attacks and emerging threats.
