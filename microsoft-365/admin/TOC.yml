@@ -353,7 +353,7 @@
         - name: Enable Modern Authentication for Office 2013
           href: security-and-compliance/enable-modern-authentication.md
         - name: Pre-requisites for data protection
-          href: /microsoft-365/business-premium/m365bp-pre-requisites-for-data-protection.md
+          href: /microsoft-365/business-premium/m365bp-pre-requisites-for-data-protection
         - name: Increase threat protection
           href: security-and-compliance/increase-threat-protection.md
         - name: Threats detected by Microsoft Defender Antivirus
@@ -373,13 +373,13 @@
         - name: Microsoft Intune documentation
           href: /mem/intune/
         - name: View and edit policies and devices
-          href: /microsoft-365/business-premium/view-policies-and-devices.md
+          href: /microsoft-365/business-premium/m365bp-view-policies-and-devices
         - name: Remove company data
-          href: /microsoft-365/business-premium/m365bp-remove-company-data.md
+          href: /microsoft-365/business-premium/m365bp-remove-company-data
         - name: Reset devices to factory settings
           href: devices/reset-devices-to-factory-settings.md
         - name: Map protection features to Intune settings
-          href: /microsoft-365/business-premium/m365bp-map-protection-features-to-intune-settings.md
+          href: /microsoft-365/business-premium/m365bp-map-protection-features-to-intune-settings
         - name: Device states
           href: devices/device-states.md
         - name: App protection settings for Windows 10 PCs
@@ -391,7 +391,7 @@
         - name: Autopilot
           items: 
             - name: Create and edit AutoPilot profiles
-              href: /microsoft-365/business-premium/m365bp-create-and-edit-autopilot-profiles.md
+              href: /microsoft-365/business-premium/m365bp-create-and-edit-autopilot-profiles
             - name: Create and edit AutoPilot devices
               href: devices/create-and-edit-autopilot-devices.md
         - name: Microsoft 365 for enterprise documentation
