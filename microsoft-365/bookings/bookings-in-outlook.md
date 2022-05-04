@@ -35,7 +35,7 @@ Bookings in Outlook is available in the following subscriptions:
 
 Bookings in Outlook is on by default for users with these subscriptions.
 
-For more information, see [Outlook in Bookings Microsoft 365 Roadmap item](https://go.microsoft.com/fwlink/?linkid=328648).
+For more information, see the [Bookings in Outlook Microsoft 365 Roadmap item](https://go.microsoft.com/fwlink/?linkid=328648).
 
 ## Turn Bookings in Outlook on or off  
 
@@ -45,7 +45,7 @@ Bookings in Outlook can be turned on or off for your entire organization or spec
 
 You'll need to run the following commands using Exchange Online PowerShell. For more information on running Exchange Online cmdlets, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To turn Bookings in Outlook on or off for your organization using the PowerShell cmdlet [Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig), [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) and run the following commands.
 
-Use the **Get-OrganizationConfig** and **Set-Organization** commands to find out the status and turn Bookings in Outlook on or off for your organization.
+Use the **Get-OrganizationConfig** and **Set-OrganizationConfig** commands to find out the status and turn Bookings in Outlook on or off for your organization.
 
 > [!NOTE]
 > It usually takes about 30 to 60 minutes for Set-OrganizationConfig commands to take effect for your users.
@@ -56,9 +56,9 @@ Use the **Get-OrganizationConfig** and **Set-Organization** commands to find out
    Get-Organizationconfig | Format-List EwsEnabled
    ```
 
-If the command returns “EwsEnabled: **$true**" then proceed to Step 2.
+    If the command returns “EwsEnabled: **$true**" then proceed to Step 2.
 
-If the command returns “EwsEnabled:" (empty is default), then enable and proceed to Step 2.
+    If the command returns “EwsEnabled:" (empty is default), then enable and proceed to Step 2.
 
    ```PowerShell
    Set-OrganizationConfig -EwsEnabled: $true
@@ -84,11 +84,7 @@ If the command returns “EwsEnabled:" (empty is default), then enable and proce
    Set-OrganizationConfig - EwsAllowList @{Add="MicrosoftOWSPersonalBookings"}
    ```
 
-    **B**. If the value of **EwsApplicationAccessPolicy** is **EnforceBlockList**, all applications are allowed to access EWS and REST, except those specified in **EwsBlockList**.  
-
-   ```PowerShell
-   Get-OrganizationConfig | Format-List EwsApplicationAccessPolicy,Ews*List -EwsApplicationAccessPolicy  EnforceBlockList
-   ```
+    **B**. If the value of **EwsApplicationAccessPolicy** is **EnforceBlockList**, all applications are allowed to access EWS and REST, except those specified in **EwsBlockList**.
 
     - To turn off Bookings in Outlook for your organization, add **MicrosoftOWSPersonalBookings** by running the following command:
 
