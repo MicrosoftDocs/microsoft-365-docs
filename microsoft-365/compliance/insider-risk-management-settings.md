@@ -24,17 +24,17 @@ ms.custom: admindeeplinkCOMPLIANCE
 
 Insider risk management settings apply to all insider risk management policies, regardless of the template you choose when creating a policy. Settings are configured using the **Insider risk settings** control located at the top of all insider risk management pages. These settings control policy components for the following areas:
 
-- Privacy
-- Indicators
-- Policy timelines
-- Intelligent detections
-- Export alerts
-- Priority user groups (preview)
-- Priority physical assets (preview)
-- Power Automate flows (preview)
-- Microsoft Teams (preview)
-- Analytics
-- Admin notifications
+- [Privacy](#privacy)
+- [Indicators](#indicators)
+- [Policy timelines](#policy-timelines)
+- [Intelligent detections](#intelligent-detections)
+- [Export alerts](#export-alerts)
+- [Priority user groups (preview)](#priority-user-groups-preview)
+- [Priority physical assets (preview)](#priority-physical-assets-preview)
+- [Power Automate flows (preview)](power-automate-flows-preview)
+- [Microsoft Teams (preview)](#microsoft-teams-preview)
+- [Analytics](#analytics)
+- [Admin notifications](admin-notifications)
 
 Before you get started and create insider risk management policies, it's important to understand these settings and choose setting levels best for the compliance needs for your organization.
 
@@ -154,7 +154,7 @@ macOS devices (Catalina 10.15 or later) can be onboarded into Microsoft 365 to s
 
 When creating a policy in the policy wizard, you can configure how the daily number of risk events should influence the risk score for insider risk alerts. These indicator settings help you control how the number of occurrences of risk events in your organization should affect the risk score, and so the associated alert severity, for these events. If you prefer, you can also choose to keep the default event threshold levels recommended by Microsoft for all enabled indicators.
 
-For example, you decide to enable SharePoint indicators in the insider risk policy settings and to set custom thresholds for SharePoint events when configuring indicators for a new insider risk *Data leaks* policy. While in the insider risk policy wizard, you configure three different daily event levels for each SharePoint indicator to influence the risk score for alerts associated with these events.
+For example, you decide to enable SharePoint indicators in the insider risk policy settings and to **set custom thresholds** for SharePoint events when configuring indicators for a new insider risk *Data leaks* policy. While in the insider risk policy wizard, you configure three different daily event levels for each SharePoint indicator to influence the risk score for alerts associated with these events.
 
 ![Insider risk management custom indicator settings.](../media/insider-risk-custom-indicators.png)
 
@@ -164,6 +164,8 @@ For the first daily event level, you set the threshold at *10 or more events per
 - If there are 10-19  SharePoint events that take place after a triggering event, the risk score is inherently lower and alert severity levels would tend to be at a low level.
 - If there are 20-29 SharePoint events that take place after a triggering, the risk score is inherently higher and alert severity levels would tend to be at a medium level.
 - If there are 30 or more SharePoint events that take place after a triggering, the risk score is inherently higher and alert severity levels would tend to be at a high level.
+
+Another option for policy thresholds is to assign the policy triggering event to activity that is above the usual amount of daily activity for users. Instead of being defined by specific threshold settings, each threshold is dynamically customized for anomalous activities detected for in-scope policy users. If threshold activity for anomalous activities is supported for an individual indicator, you can select **Activity is above user's usual activity for the day** in the policy wizard for that indicator. If this option isn't listed, anomalous activity triggering isn't available for the indicator. If the **Activity is above user's usual activity for the day** option is listed for an indicator, but not selectable, you need to enable this option in **Insider risk settings** > **Policy indicators**.
 
 ## Policy timeframes
 
