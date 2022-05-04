@@ -29,6 +29,8 @@
              href: ../admin/setup/setup-business-standard.md
            - name: Invite users to Microsoft 365 Business Standard
              href: ../admin/simplified-signup/admin-invite-business-standard.md
+           - name: What is Microsoft 365 for business
+             href: ../admin/admin-overview/what-is-microsoft-365-for-business.md
            - name: Accept email invitation to Microsoft 365 Business Standard
              href: ../admin/simplified-signup/user-invite-business-standard.md
            - name: Accept an email invitation to a Microsoft 365 Business Standard subscription organization using an Outlook, Yahoo, Gmail or other account
@@ -340,7 +342,7 @@
       href: ../commerce/index.yml
     - name: Secure your organization
       items: 
-        - name: Top 10 ways to secure your data
+        - name: Best practices for securing your data
           href: security-and-compliance/secure-your-business-data.md
         - name: Multi-factor authentication for Microsoft 365
           href: security-and-compliance/multi-factor-authentication-microsoft-365.md

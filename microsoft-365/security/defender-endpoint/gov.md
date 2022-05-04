@@ -73,7 +73,7 @@ The following are the Microsoft Defender for Endpoint portal URLs for US Governm
 |---|---|
 |GCC|<https://security.microsoft.com>|
 |GCC High|<https://security.microsoft.us>|
-|DoD|<https://security.microsoft.us>|
+|DoD|<https://security.apps.mil>|
 |
 > [!NOTE]
 > If you are a GCC customer and in the process of moving from Microsoft Defender for Endpoint commercial to GCC, use https://transition.security.microsoft.com to access your Microsoft Defender for Endpoint commercial data.
@@ -206,6 +206,6 @@ These are the features and known gaps for [Mobile Threat Defense (Microsoft Defe
 |Conditional Access/Conditional Launch|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
 |Support for MAM|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
 |Privacy Controls|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
-|Threat and Vulnerability Management (TVM)|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development|
+|Threat and Vulnerability Management (TVM)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
   
 
