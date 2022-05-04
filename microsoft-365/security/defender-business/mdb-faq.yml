@@ -112,6 +112,8 @@ sections:
           
           Note that [Defender for Business](mdb-overview.md) and [Microsoft 365 Business Premium](/microsoft-365/business-premium/) are for customers who have up to 300 users. For customers who need more than 300 user licenses, we recommend getting an enterprise subscription that includes Microsoft Defender for Endpoint Plan 1 or Plan 2.
 
+          For details about licenses, see [Licensing and product terms for Microsoft 365 subscriptions](https://www.microsoft.com/licensing/terms/productoffering/Microsoft365/MCA).
+
       - question: I have another Microsoft Cloud subscription. Why am I not seeing Microsoft Defender for Business in my portal?
         answer: |
           Currently, whenever a customer has multiple subscriptions, the highest subscription takes precedence. Here are some examples:
