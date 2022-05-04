@@ -83,7 +83,7 @@ landingContent:
             url: /compliance/regulatory/nist-action-plan
 
     # Card
-  - title: Deploy compliance solutions
+  - title: Deploy Purview compliance solutions
     linkLists:
       - linkListType: how-to-guide
         links:
