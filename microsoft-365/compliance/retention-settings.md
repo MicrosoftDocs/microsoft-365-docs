@@ -172,7 +172,7 @@ To run a query using PowerShell:
 
 2. Use either [Get-Recipient](/powershell/module/exchange/get-recipient), [Get-Mailbox](/powershell/module/exchange/get-mailbox), or [Get-User](/powershell/module/exchange/get-user) with the *-Filter* parameter and your [OPATH query](/powershell/exchange/filter-properties) for the adaptive scope enclosed in curly brackets (`{`,`}`). If your attribute values are strings, enclose these values in double or single quotes.
 
-    You can determine whether to use Get-Mailbox or Get-Recipient for validation by identifying which cmdlet is supported by the [OPATH property](/powershell/exchange/filter-properties) that you choose for your query.
+    You can determine whether to use Get-Mailbox, Get-Recipient, or Get-User for validation by identifying which cmdlet is supported by the [OPATH property](/powershell/exchange/filter-properties) that you choose for your query.
 
     > [!IMPORTANT]
     > Get-Mailbox does not support the *MailUser* recipient type, so Get-Recipient must be used to validate queries that include on-premises mailboxes in a hybrid environment.
