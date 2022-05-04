@@ -1,5 +1,5 @@
 ---
-title: Use troubleshooting mode in Microsoft Defender for Endpoint
+title: Troubleshooting mode scenarios in Microsoft Defender for Endpoint
 description: Use the Microsoft Defender for Endpoint troubleshooting mode to address various antivirus issues.
 keywords: antivirus, troubleshoot, troubleshooting mode, tamper protection, compatibility
 search.product: eADQiWindows 10XVcnh
@@ -19,7 +19,7 @@ ms.topic: article
 ms.technology: mde
 ---
 
-# Use troubleshooting mode
+# Troubleshooting mode scenarios in Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -48,7 +48,7 @@ If you want to install an application but receive an error message that Microsof
     - Run `get-mppreference` to check RTP status.
     - Run `set–mppreference` to turn off RTP Run. 
 
-7. Try installing the application.
+6. Try installing the application.
 
 ## Scenario 2: High CPU usage due to Windows Defender (MsMpEng.exe)
 

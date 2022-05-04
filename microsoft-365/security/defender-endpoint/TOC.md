@@ -364,6 +364,10 @@
 ##### [Exclusions for Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)
 ##### [Common mistakes to avoid](common-exclusion-mistakes-microsoft-defender-antivirus.md)
 
+#### Troubleshooting mode for Defender for Endpoint
+##### [Get started with troubleshooting mode](enable-troubleshooting-mode.md)
+#### [Troubleshooting mode scenarios](troubleshooting-mode-scenarios.md)
+
 #### Diagnostics and performance for Microsoft Defender Antivirus
 ##### [Device health and compliance reports](machine-reports.md)
 ##### [Troubleshoot performance issues related to real-time protection](troubleshoot-performance-issues.md) 
