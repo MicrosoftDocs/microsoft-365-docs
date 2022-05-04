@@ -45,7 +45,7 @@ After you run a search, the number of content locations and an estimated number 
 
 - To access to the Content search tool in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">compliance portal</a> (to run searches and preview results and export results), an administrator, compliance officer, or eDiscovery manager must be a member of the eDiscovery Manager role group in the compliance portal. For more information, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
 
-- In an Exchange hybrid deployment, you can't use the Content search tool to search Emails in on-premises mailboxes. You can only use the tool to search cloud-based mailboxes.
+- In an Exchange hybrid deployment, you can't use the Content search tool to search emails in on-premises mailboxes. You can only use the tool to search cloud-based mailboxes.
 
 - In an Exchange hybrid deployment, you can search for Teams chat data in on-premises mailboxes. For more information, see [Teams chat data for on-premises users](/microsoft-365/compliance/search-cloud-based-mailboxes-for-on-premises-users?view=o365-worldwide).
 
