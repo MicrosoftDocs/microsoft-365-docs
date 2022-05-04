@@ -68,7 +68,7 @@ The attribute names for users and groups are based on [filterable recipient prop
 The attributes and properties listed in the table can be easily specified when you configure an adaptive scope by using the simple query builder. Additional attributes and properties are supported with the advanced query builder, as described in the following section.
 
 > [!TIP]
-> For additional information about using the advanced query builder, see the following webinars: 
+> For more information about using the advanced query builder, see the following webinars: 
 > - [Building Advanced Queries for Users and Groups with Adaptive Policy Scopes](https://mipc.eventbuilder.com/event/52683/occurrence/49452/recording?rauth=853.3181650.1f2b6e8b4a05b4441f19b890dfeadcec24c4325e90ac492b7a58eb3045c546ea)
 > - [Building Advanced Queries for SharePoint Sites with Adaptive Policy Scopes](https://aka.ms/AdaptivePolicyScopes-AdvancedSharePoint)
 
@@ -125,11 +125,11 @@ Specifically for SharePoint sites, there might be additional SharePoint configur
     - For **SharePoint sites** scopes, use Keyword Query Language (KQL). You might already be familiar with using KQL to search SharePoint by using indexed site properties. To help you specify these KQL queries, see [Keyword Query Language (KQL) syntax reference](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
         
         For example, because SharePoint sites scopes automatically include all SharePoint site types, which include Microsoft 365 group-connected and OneDrive sites, you can use the indexed site property **SiteTemplate** to include or exclude specific site types. The templates you can specify:
-        - SITEPAGEPUBLISHING for modern communication sites
-        - GROUP for Microsoft 365 group-connected sites
-        - TEAMCHANNEL for Microsoft Teams private channel sites
-        - STS for a classic SharePoint team site
-        - SPSPERS for OneDrive sites
+        - `SITEPAGEPUBLISHING` for modern communication sites
+        - `GROUP` for Microsoft 365 group-connected sites
+        - `TEAMCHANNEL` for Microsoft Teams private channel sites
+        - `STS` for a classic SharePoint team site
+        - `SPSPERS` for OneDrive sites
         
         So to create an adaptive scope that includes only modern communication sites and excludes Microsoft 365 goup-connected and OneDrive sites, specify the following KQL query:
         ````console
@@ -217,7 +217,7 @@ When you choose to use static scopes, you must then decide whether to apply the 
 
 #### A policy that applies to entire locations
 
-With the exception of Skype for Business, the default is that all instances for the selected locations are automatically included in the policy without you having to specify them as included.
+Except Skype for Business, the default is that all instances for the selected locations are automatically included in the policy without you having to specify them as included.
 
 For example, **All recipients** for the **Exchange email** location. With this default setting, all existing user mailboxes will be included in the policy, and any new mailboxes created after the policy is applied will automatically inherit the policy.
 
@@ -306,7 +306,7 @@ If you use static scopes: Although the **Exchange email** location for a static 
 
 By default, a retention policy applied to a Microsoft 365 group includes the group mailbox and SharePoint teams site. Files stored in the SharePoint teams site are covered with this location, but not Teams chats or Teams channel messages that have their own retention policy locations.
 
-To change the default because you want the retention policy to apply to either just the Microsoft 365 mailboxes, or just the connected SharePoint teams sites, use the [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell cmdlet with the *Applications* parameter with one of the following values:
+To change the default because you want the retention policy to apply to either just the Microsoft 365 mailboxes, or just the connected SharePoint teams sites, use the [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell cmdlet and the *Applications* parameter with one of the following values:
 
 - `Group:Exchange` for just Microsoft 365 mailboxes that are connected to the group.
 - `Group:SharePoint` for just SharePoint sites that are connected to the group.
@@ -325,7 +325,7 @@ When a policy for retention (static policy scope or adaptive) is applied to a Mi
 
 - The group-connected SharePoint site is preserved and continues to be managed by the retention policy with the **Microsoft 365 Groups** location. The site is still accessible to the people who had access to it before the group was deleted, and any new permissions must now be managed via SharePoint.
     
-    At this point, you can't exclude the site from the Microsoft 365 Groups location, because you can't specify the deleted group. If you need to release the retention policy from this site, contact Microsoft Support. For example, open a [service request in the Microsoft 365 Admin Center](https://admin.microsoft.com/Adminportal/Home#/support).
+    At this point, you can't exclude the site from the Microsoft 365 Groups location, because you can't specify the deleted group. If you need to release the retention policy from this site, contact Microsoft Support. For example, [open a support request in the Microsoft 365 Admin Center](/microsoft-365/admin/get-help-support?view=o365-worldwide#online-support).
 
 - The mailbox for the deleted group becomes inactive and like the SharePoint site, remains subject to retention settings. For more information, see [Inactive mailboxes in Exchange Online](inactive-mailboxes-in-office-365.md).
 
