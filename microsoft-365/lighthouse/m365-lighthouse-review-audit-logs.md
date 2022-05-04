@@ -95,4 +95,5 @@ Use Microsoft Graph API to access more audit events, if needed. For more informa
 
 ## Related content
 
-[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)
+[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)\
+[View your Azure Active Directory roles in Microsoft 365 Lighthouse](m365-lighthouse-view-your-roles.md) (article)
