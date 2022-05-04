@@ -32,7 +32,7 @@ ms.technology: mde
 Microsoft Defender for Endpoint is an enterprise endpoint security platform designed to help enterprise networks prevent, detect, investigate, and respond to advanced threats.
 
 > [!TIP]
-> Microsoft Defender for Endpoint has a new Add-on available for Plan 2. This article describes the features and capabilities that are included in Microsoft Defender for Endpoint Plans 1 and 2, and in the new Plan 2 Add-on. [Learn more about Microsoft Defender for Endpoint Plans](defender-endpoint-plan-1-2.md).
+> Microsoft Defender for Endpoint has a new Add-on available for Plan 2. This article describes the features and capabilities that are included in Microsoft Defender for Endpoint Plans 1 and 2, and in the new Plan 2 add-on. [Learn more about Microsoft Defender for Endpoint Plans](defender-endpoint-plan-1-2.md).
 >
 
 <p><p>
@@ -81,9 +81,9 @@ Defender for Endpoint uses the following combination of technology built into Wi
 
 <a name="tvm"></a>
 
-**[|Core vulnerability management](next-gen-threat-and-vuln-mgt.md)**
+**[Core vulnerability management](next-gen-threat-and-vuln-mgt.md)**
 
-The built-in core vulnerability management capabilities uses a game-changing risk-based approach to the discovery, prioritization, and remediation of endpoint vulnerabilities and misconfigurations. A new Microsoft Defender for Endpoint Plan 2 Add-on provides premium vulnerability management capabilities.  [Learn more about Microsoft Defender for Endpoint Plan 2 Add-on](defender-endpoint-plan-1-2.md).
+The built-in core vulnerability management capabilities use a game-changing risk-based approach to the discovery, prioritization, and remediation of endpoint vulnerabilities and misconfigurations. A new Microsoft Defender for Endpoint Plan 2 add-on provides premium vulnerability management capabilities.  [Learn more about Microsoft Defender for Endpoint Plan 2 Add-on](defender-endpoint-plan-1-2.md).
 
 <a name="asr"></a>
 
