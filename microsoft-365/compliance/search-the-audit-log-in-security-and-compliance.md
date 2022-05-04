@@ -419,6 +419,18 @@ Click one of the following links to go to a specific table.
     :::column-end:::
 :::row-end:::
 
+:::row:::
+    :::column:::
+        [Encrypted message portal activities](#encrypted-message-portal-activities)
+    :::column-end:::
+    :::column:::
+        
+    :::column-end:::
+    :::column:::
+        
+    :::column-end:::
+:::row-end:::
+
 ### File and page activities
 
 The following table describes the file and page activities in SharePoint Online and OneDrive for Business.
