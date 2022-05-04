@@ -46,6 +46,6 @@ Help articles can be found in-app in the help pane or at [Microsoft support page
 
 :::image type="content" source="../../media/help-article-example.png" alt-text="Screenshot: Example support.microsoft.com article":::
 
-### In-ap help article in Microsoft Word
+### In-app help article in Microsoft Word
 
 :::image type="content" source="../../media/help-article-example-in-app-word.png" alt-text="Screenshot: Example support.microsoft.com article":::
