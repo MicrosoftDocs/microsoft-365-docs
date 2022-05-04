@@ -265,9 +265,9 @@ Security team members can do submissions from multiple location in the Microsoft
 
   You can select up to 10 messages to perform a bulk submission. Admin submissions created this way also visible in the Submission portal.
 
-For the short-term mitigation of false positives, security teams can directly manage [block entries](manage-tenant-blocks.md) for files, URLs, and senders in the [Tenant Allow/Block List](tenant-allow-block-list.md).
+For the short-term mitigation of false negatives, security teams can directly manage [block entries](manage-tenant-blocks.md) for files, URLs, and senders in the [Tenant Allow/Block List](tenant-allow-block-list.md).
 
-For the short-term mitigation of false negatives, security teams can't directly manage [allow entries](manage-tenant-allows.md) in the Tenant Allow/Block List. Instead, they need to use [admin submissions](admin-submission.md) and the the **Allow messages like this** option.
+For the short-term mitigation of false positives, security teams can't directly manage [allow entries](manage-tenant-allows.md) in the Tenant Allow/Block List. Instead, they need to use [admin submissions](admin-submission.md) and the the **Allow messages like this** option.
 
 [Quarantine](manage-quarantined-messages-and-files.md) in Defender for Office 365 holds potentially dangerous or unwanted messages and files. Security teams can view, release, and delete all types of quarantined messages for all users. This capability enables security teams to respond effectively when a false positive message or file is quarantined.
 
