@@ -41,7 +41,7 @@ This feature is available only for creating [document understanding models](appl
     ![Screenshot of the Activate document classification and extraction infomation page.](../media/content-understanding/local-model-first-run-activate-message.png) 
 
     > [!NOTE]
-    > You must have the Manage Web Site permission to perform administration tasks and manage content for the site.
+    > You must have the Manage Web Site permission to perform administration tasks and manage content for the site. This would be a site owner. Once the feature is activated, anyone with the Manage Lists permission will be able to create and manage models.
 
 3. Select **Activate** to continue. You'll see the following message.
 
