@@ -17,7 +17,14 @@ description: Learn how to apply a retention label to a model in SharePoint Synte
 
 # Apply a retention label to a model in SharePoint Syntex
 
-*Applies to: document understanding, form processing, prebuilt*
+**Applies to:** Document understanding, Form processing, Prebuilt
+
+
+|  | |
+|---------|---------|
+|**Applies to: | Document understanding, Form processing, Prebuilt        |
+
+
 
 </br>
 
