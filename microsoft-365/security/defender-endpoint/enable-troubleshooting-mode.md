@@ -31,15 +31,15 @@ ms.technology: mde
 
 Microsoft Defender for Endpoint troubleshooting mode allows you to troubleshoot various Microsoft Defender antivirus features by enabling them from the device and testing different scenarios, even if they're controlled by the organization policy. The troubleshooting mode is disabled by default and requires you to turn it on for a device (and/or group of devices) for a limited time. Note that this is exclusively an Enterprise-only feature, and requires Microsoft 365 Defender access.
 
+## Prerequisites
+
+- A device running Windows 10 (version 19044.1618 and above), Windows 11, Windows Server 2019, or Windows Server 2022. 
+
+- For troubleshooting mode to be applied, Microsoft Defender for Endpoint must be tenant-enrolled and active on the device.
+
+- The device must be actively running Microsoft Defender Antivirus, version 4.18.2203 and above.
+
 ## What do you need to know before you begin?
-
-- Prerequisites: 
-
-    - A device running Windows 10 (version 19044.1618 and above), Windows 11, Windows Server 2019, or Windows Server 2022. 
-
-    - For troubleshooting mode to be applied, Microsoft Defender for Endpoint must be tenant-enrolled and active on the device.
-
-    - The device must be actively running Microsoft Defender Antivirus, version 4.18.2203 and above.
 
 - Use troubleshooting mode to disable/change the tamper protection setting to perform:
 
