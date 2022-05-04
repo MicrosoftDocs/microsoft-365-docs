@@ -366,7 +366,7 @@
 
 #### Troubleshooting mode for Defender for Endpoint
 ##### [Get started with troubleshooting mode](enable-troubleshooting-mode.md)
-#### [Troubleshooting mode scenarios](troubleshooting-mode-scenarios.md)
+##### [Troubleshooting mode scenarios](troubleshooting-mode-scenarios.md)
 
 #### Diagnostics and performance for Microsoft Defender Antivirus
 ##### [Device health and compliance reports](machine-reports.md)
