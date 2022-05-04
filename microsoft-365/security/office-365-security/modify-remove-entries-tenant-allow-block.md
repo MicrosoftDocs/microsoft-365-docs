@@ -34,7 +34,7 @@ You can use the Microsoft 365 Defender portal or PowerShell to modify and remove
 
 ### Modify entries in the Tenant Allow/Block List
 
-1. In the Microsoft 365 Defender portal, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**. Or, to go directly to the **Tenant Allow/Block List** page, use <https://security.microsoft.com/tenantAllowBlockList>.
 
 2. Select the tab that contains the type of entry that you want to modify:
    - **Senders**
@@ -62,7 +62,7 @@ You can use the Microsoft 365 Defender portal or PowerShell to modify and remove
 
 ### Remove entries from the Tenant Allow/Block List
 
-1. In the Microsoft 365 Defender portal, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**. Or, to go directly to the **Tenant Allow/Block List** page, use <https://security.microsoft.com/tenantAllowBlockList>.
 
 2. Select the tab that contains the type of entry that you want to remove:
    - **Senders**
