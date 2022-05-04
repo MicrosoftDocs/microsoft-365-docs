@@ -178,7 +178,7 @@ To run a query using PowerShell:
     > Get-Mailbox does not support the *MailUser* recipient type, so Get-Recipient or Get-User must be used to validate queries that include on-premises mailboxes in a hybrid environment.
 
     To validate a **User** scope, use the appropriate command:
-    - `Get-Mailbox` with *-UserMailbox,SharedMailbox,RoomMailbox,EquipmentMailbox*
+    - `Get-Mailbox` with *-RecipientTypeDetails UserMailbox,SharedMailbox,RoomMailbox,EquipmentMailbox*
     - `Get-Recipient` with *-RecipientTypeDetails serMailbox,MailUser,SharedMailbox,RoomMailbox,EquipmentMailbox*
     
     To validate a **Microsoft 365 Group** scope, use:
