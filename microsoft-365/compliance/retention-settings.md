@@ -175,7 +175,7 @@ To run a query using PowerShell:
     You can determine whether to use Get-Mailbox, Get-Recipient, or Get-User for validation by identifying which cmdlet is supported by the [OPATH property](/powershell/exchange/filter-properties) that you choose for your query.
 
     > [!IMPORTANT]
-    > Get-Mailbox does not support the *MailUser* recipient type, so Get-Recipient must be used to validate queries that include on-premises mailboxes in a hybrid environment.
+    > Get-Mailbox does not support the *MailUser* recipient type, so Get-Recipient or Get-User must be used to validate queries that include on-premises mailboxes in a hybrid environment.
 
     To validate a **User** scope, use the appropriate command:
     - `Get-Mailbox` with *-UserMailbox,SharedMailbox,RoomMailbox,EquipmentMailbox*
