@@ -143,6 +143,19 @@ With the ability to easily deploy updates to VMs running in VDIs, we've shortene
 
 For more information, follow the guidance in [Deployment guide for Microsoft Defender Antivirus in a Virtual Desktop Infrastructure (VDI) environment](/microsoft-365/security/defender-endpoint/deployment-vdi-microsoft-defender-antivirus).
 
+   > [!NOTE]
+   > If the master image of your Non-Persistent VDI environment has been onboarded to MDE (SENSE service is running), then you must offboard and delete the senseGuid before putting the image back into production:
+   > 1. Ensure the sensor is stopped by running the command below in a CMD window:
+   >  ```console
+   >  sc query sense
+   >  ```
+   > 2. Run the below commands using PsExec.exe (which can be downloaded from https://download.sysinternals.com/files/PSTools.zip)
+   >
+   >  ```console
+   >  PsExec.exe -s cmd.exe
+   >  REG DELETE "HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection" /v senseGuid /f
+   >  exit
+   >  ```
 
 ## Related topics
 - [Onboard Windows devices using Group Policy](configure-endpoints-gp.md)
