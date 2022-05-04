@@ -38,7 +38,7 @@ sections:
 
       - question: Is there a limit to how many users can be licensed for Defender for Business?
         answer: |
-          Defender for Business is designed for small and medium-sized businesses who have up to 300 users. If you have more than 300 users, consider an enterprise solution, such article [Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint) or [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender).
+          Defender for Business is designed for small and medium-sized businesses who have up to 300 users. If you have more than 300 users, consider an enterprise solution, such as [Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint) or [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender).
 
       - question: How many devices can I onboard and secure with Defender for Business? 
         answer: |
@@ -106,7 +106,13 @@ sections:
 
       - question: What happens if I have a mix of subscriptions? For example, suppose I have 10 users assigned a Defender for Business license, and 10 other users assigned a Defender for Endpoint Plan 2 license in the same tenant?
         answer: |
-          Mixed licenses are not supported. The highest functional license sets the experience for the tenant. Using our example, the tenant experience will be [Defender for Endpoint Plan 2](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint), and will require 20 Defender for Endpoint Plan 2 licenses. Note that [Defender for Business](mdb-overview.md) and [Microsoft 365 Business Premium](/microsoft-365/business-premium/) are for customers who have up to 300 users. For customers who need more than 300 seats, we recommend getting Microsoft 365 E3 or E5, or Microsoft Defender for Endpoint Plan 1 or Plan 2.
+          Mixed licenses are not supported. The highest functional Defender license sets the experience for the tenant. 
+          
+          Using our example, the tenant experience will be [Defender for Endpoint Plan 2](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint) for all 20 users. 
+          
+          Note that [Defender for Business](mdb-overview.md) and [Microsoft 365 Business Premium](/microsoft-365/business-premium/) are for customers who have up to 300 users. For customers who need more than 300 user licenses, we recommend getting an enterprise subscription that includes Microsoft Defender for Endpoint Plan 1 or Plan 2.
+
+          For details about licenses, see [Licensing and product terms for Microsoft 365 subscriptions](https://www.microsoft.com/licensing/terms/productoffering/Microsoft365/MCA).
 
       - question: I have another Microsoft Cloud subscription. Why am I not seeing Microsoft Defender for Business in my portal?
         answer: |
