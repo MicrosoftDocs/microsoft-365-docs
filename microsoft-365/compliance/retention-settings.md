@@ -182,7 +182,7 @@ To run a query using PowerShell:
     - `Get-Recipient` with *-RecipientTypeDetails UserMailbox,MailUser,SharedMailbox,RoomMailbox,EquipmentMailbox*
     
     To validate a **Microsoft 365 Group** scope, use:
-    - `Get-Mailbox` or `Get-Recipient` with *-RecipientTypeDetails GroupMailbox*
+    - `Get-Mailbox` with *-GroupMailbox* or `Get-Recipient` with *-RecipientTypeDetails GroupMailbox*
 
     For example, to validate a **User** scope, you could use:
     
