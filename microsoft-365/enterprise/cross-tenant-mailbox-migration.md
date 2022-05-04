@@ -3,7 +3,7 @@ title: Cross-tenant mailbox migration
 description: How to move mailboxes between Microsoft 365 or Office 365 tenants.
 ms.author: kvice
 author: kelleyvice-msft
-manager: Laurawi
+manager: scotv
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
@@ -140,11 +140,11 @@ To obtain the tenant ID of a subscription, sign in to the [Microsoft 365 admin c
    > You will need the application ID of the mailbox migration app you just created and the password (the secret) you configured during this process. Also depending on the Microsoft 365 Cloud Instance you use your endpoint may be different. Please refer to the [Microsoft 365 endpoints](/microsoft-365/enterprise/microsoft-365-endpoints) page and select the correct instance for your tenant and review the Exchange Online Optimize Required address and replace as appropriate.
 
    ```powershell
-   
+
    # Enable customization if tenant is dehydrated
      $dehydrated=Get-OrganizationConfig | fl isdehydrated
      if ($dehydrated -eq $true) {Enable-OrganizationCustomization}
-     
+
    $AppId = "[guid copied from the migrations app]"
 
    $Credential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $AppId, (ConvertTo-SecureString -String "[this is your secret password you saved in the previous steps]" -AsPlainText -Force)
@@ -200,10 +200,10 @@ To obtain the tenant ID of a subscription, sign in to the [Microsoft 365 admin c
        New-OrganizationRelationship "[name of your organization relationship]" -Enabled:$true -MailboxMoveEnabled:$true -MailboxMoveCapability RemoteOutbound -DomainNames $targetTenantId -OAuthApplicationId $appId -MailboxMovePublishedScopes $scope
    }
    ```
-   
+
 > [!NOTE]
 > The tenant ID that you enter as the $sourceTenantId and $targetTenantId is the GUID and not the tenant domain name. For an example of a tenant ID and information about finding your tenant ID, see [Find your Microsoft 365 tenant ID](/onedrive/find-your-office-365-tenant-id).
-   
+
 ### How do I know this worked?
 
 You can verify cross-tenant mailbox migration configuration by running [Test-MigrationServerAvailability](/powershell/module/exchange/Test-MigrationServerAvailability) cmdlet against the cross-tenant migration endpoint that you created on your target tenant.
@@ -211,14 +211,14 @@ You can verify cross-tenant mailbox migration configuration by running [Test-Mig
    > [!NOTE]
    >
    > - Target tenant:
-   > 
+   >
    > Test-MigrationServerAvailability -Endpoint "[the name of your cross-tenant migration endpoint]"
    >
    > Get-OrganizationRelationship | fl name, DomainNames, MailboxMoveEnabled, MailboxMoveCapability
    >
    > - Source tenant:
-   > 
-   > Get-OrganizationRelationship | fl name, DomainNames, MailboxMoveEnabled, MailboxMoveCapability 
+   >
+   > Get-OrganizationRelationship | fl name, DomainNames, MailboxMoveEnabled, MailboxMoveCapability
 
 ### Move mailboxes back to the original source
 
@@ -260,7 +260,6 @@ Ensure the following objects and attributes are set in the target organization.
      |                      | 7273f1f9-Lara                                                                                                           |
      |                      | smtp:LaraN@northwindtraders.onmicrosoft.com                                                                             |
      |                      | SMTP:Lara.Newton@northwind.com                                                                                          |
-     |                      |                                                                                                                         |
 
      Example **source** Mailbox object:
 
@@ -276,7 +275,6 @@ Ensure the following objects and attributes are set in the target organization.
      |                      | (FYDIBOHF23SPDLT)/cn=Recipients/cn=d11ec1a2cacd4f81858c81907273f1f9Lara |
      | EmailAddresses       | smtp:LaraN@contoso.onmicrosoft.com                                      |
      |                      | SMTP:Lara.Newton@contoso.com                                            |
-     |                      |                                                                         |
 
    - Additional attributes may be included in Exchange hybrid write-back already. If not, they should be included.
    - msExchBlockedSendersHash – Writes back online safe and blocked sender data from clients to on-premises Active Directory.
@@ -295,7 +293,13 @@ Ensure the following objects and attributes are set in the target organization.
     if ($source.LitigationHoldEnabled) {$ELCValue = $ELCValue + 8} if ($source.SingleItemRecoveryEnabled) {$ELCValue = $ELCValue + 16} if ($ELCValue -gt 0) {Set-ADUser -Server $domainController -Identity $destination.SamAccountName -Replace @{msExchELCMailboxFlags=$ELCValue}}
     ```
 
-3. Non-hybrid target tenants can modify the quota on the Recoverable Items folder for the MailUsers prior to migration by running the following command to enable Litigation Hold on the MailUser object and increasing the quota to 100 GB: `Set-MailUser -EnableLitigationHoldForMigration`. Note this will not work for tenants in hybrid.
+3. Non-hybrid target tenants can modify the quota on the Recoverable Items folder for the MailUsers prior to migration by running the following command to enable Litigation Hold on the MailUser object and increasing the quota to 100 GB:
+
+   ```powershell
+   Set-MailUser -Identity <MailUserIdentity> -EnableLitigationHoldForMigration
+   ```
+
+   Note this will not work for tenants in hybrid.
 
 4. Users in the target organization must be licensed with appropriate Exchange Online subscriptions applicable for the organization. You may apply a license in advance of a mailbox move but ONLY once the target MailUser is properly set up with ExchangeGUID and proxy addresses. Applying a license before the ExchangeGUID is applied will result in a new mailbox provisioned in target organization.
 
@@ -333,7 +337,7 @@ Ensure the following objects and attributes are set in the target organization.
 
     ```powershell
     Set-User John@northwindtraders.com -PermanentlyClearPreviousMailboxInfo -Confirm
-    
+
     Are you sure you want to perform this action?
     Delete all existing information about user "John@northwindtraders.com"?. This operation will clear existing values from Previous home MDB and Previous Mailbox GUID of the user. After deletion, reconnecting to the previous mailbox that existed in the cloud will not be possible and any content it had will be unrecoverable PERMANENTLY.
     Do you want to continue?
@@ -396,8 +400,6 @@ Get-MoveRequest -Flags "CrossTenant"
 > [!NOTE]
 > SAMPLE – AS IS, NO WARRANTY
 > This script assumes a connection to both source mailbox (to get source values) and the target on-premises Active Directory Domain Services (to stamp the ADUser object). If source has litigation or single item recovery enabled, set this on the destination account.  This will increase the dumpster size of destination account to 100 GB.
-
-
 
    ```powershell
    # This will export users from the source tenant with the CustomAttribute1 = "Cross-Tenant-Project"
@@ -563,7 +565,7 @@ No, after a cross tenant mailbox migration, eDiscovery against the migrated user
     ```
 
    > [!NOTE]
-   > The *contoso.onmicrosoft.com* address is *not* present in the EmailAddresses / proxyAddresses array.
+   > The _contoso.onmicrosoft.com_ address is _not_ present in the EmailAddresses / proxyAddresses array.
 
 - **Issue: MailUser objects with "external" primary SMTP addresses are modified / reset to "internal" company claimed domains**
 
@@ -638,7 +640,7 @@ No, after a cross tenant mailbox migration, eDiscovery against the migrated user
 
       | Name                                             |
       | ------------------------------------------------ |
-      | Advanced eDiscovery Storage (500 GB)              |
+      | eDiscovery (Premium) Storage (500 GB)             |
       | Customer Lockbox                                 |
       | Data Loss Prevention                             |
       | Exchange Enterprise CAL Services (EOP, DLP)      |
@@ -663,9 +665,8 @@ No, after a cross tenant mailbox migration, eDiscovery against the migrated user
       | Microsoft Bookings                               |
       | Microsoft Business Center                        |
       | Microsoft MyAnalytics (Full)                     |
-      | Office 365 Advanced eDiscovery                   |
+      | Office 365 eDiscovery (Premium)                   |
       | Microsoft Defender for Office 365 (Plan 1)       |
       | Microsoft Defender for Office 365 (Plan 2)       |
       | Office 365 Privileged Access Management          |
       | Premium Encryption in Office 365                 |
-      |                                                  |

@@ -108,8 +108,6 @@
             href: microsoft-secure-score-improvement-actions.md
           - name: Track your score history and meet goals
             href: microsoft-secure-score-history-metrics-trends.md
-          - name: What's coming
-            href: microsoft-secure-score-whats-coming.md
           - name: What's new
             href: microsoft-secure-score-whats-new.md
       - name: Protect your endpoints 
@@ -300,6 +298,8 @@
                   href: advanced-hunting-identitylogonevents-table.md
                 - name: IdentityQueryEvents
                   href: advanced-hunting-identityqueryevents-table.md
+                - name: UrlClickEvents
+                  href: advanced-hunting-urlclickevents-table.md
              - name: Functions
                items: 
                 - name: AssignedIPAddresses()
@@ -308,6 +308,8 @@
                   href: advanced-hunting-devicefromip-function.md
                 - name: FileProfile()
                   href: advanced-hunting-fileprofile-function.md
+                - name: SeenBy()
+                  href: advanced-hunting-seenby-function.md
              - name: Custom detections
                items: 
                 - name: Custom detections overview

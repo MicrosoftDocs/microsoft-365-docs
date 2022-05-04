@@ -32,7 +32,7 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
-Microsoft 365 Defender applies correlation analytics and aggregates related alerts and automated investigations from different products into an incident. Microsoft 365 Defender also triggers unique alerts on activities that can only be identified as malicious given the end-to-end visibility that Microsoft 365 Defender has across the entire suite of products. This view gives your security analysts the broader attack story, which helps them better understand and deal with complex threats across your organization.
+Microsoft 365 Defender applies correlation analytics and aggregates related alerts and automated investigations from different products into an incident. Microsoft 365 Defender also triggers unique alerts on activities that can only be identified as malicious given the end-to-end visibility in Microsoft 365 Defender has across the entire suite of products. This view gives your security analysts the broader attack story, which helps them better understand and deal with complex threats across your organization.
 
 The **Incident queue** shows a collection of incidents that were created across devices, users, and mailboxes. It helps you sort through incidents to prioritize and create an informed cybersecurity response decision, a process known as incident triage.
 
@@ -78,7 +78,7 @@ This table lists the filter names that are available.
 | Multiple categories  | Specify whether the filter is for more than one category. |
 | Categories | Choose categories to focus on specific tactics, techniques, or attack components seen. |
 | Entities | Specify the name of an asset such as a user, device, mailbox, or application name. |
-| Data sensitivity | Some attacks focus on targeting to exfiltrate sensitive or valuable data. By applying a filter for specific sensitivity labels, you can quickly determine if sensitive information has potentially been compromised and prioritize addressing those incidents. <br><br> This filter is only available if Microsoft Information Protection is turned on. |
+| Data sensitivity | Some attacks focus on targeting to exfiltrate sensitive or valuable data. By applying a filter for specific sensitivity labels, you can quickly determine if sensitive information has potentially been compromised and prioritize addressing those incidents. <br><br> This filter displays information only when you've applied [sensitivity labels from Microsoft Purview Information Protection](../../compliance/sensitivity-labels.md). |
 | Device groups | Specify a [device group](/windows/security/threat-protection/microsoft-defender-atp/machine-groups) name. |
 | OS platform | Specify device operating systems. |
 | Classification | Specify the set of classifications of the related alerts. |

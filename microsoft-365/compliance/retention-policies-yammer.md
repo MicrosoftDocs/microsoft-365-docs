@@ -21,10 +21,9 @@ description: "Learn about retention policies that apply to Yammer."
 
 # Learn about retention for Yammer
 
->*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-> [!NOTE]
-> This feature is in preview and subject to change.
+>*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 The information in this article supplements [Learn about retention](retention.md) because it has information that's specific to Yammer.
 
@@ -56,11 +55,6 @@ You can use a retention policy to retain data from community messages and user m
 Copies of community messages can also be stored in the hidden folder of user mailboxes when they @ mention users or notify the user of a reply. Although these messages originate as a community message, a retention policy for Yammer user messages will often include copies of community messages. As a result, user messages are not restricted to private messages.
 
 These hidden folders are not designed to be directly accessible to users or administrators, but instead, store data that compliance administrators can search with eDiscovery tools.
-
-> [!IMPORTANT]
-> Because copies of community messages can also be stored in user mailboxes, a retention policy with a delete action for Yammer user messages can result in the original community message no longer visible to users in the Yammer app.
-> 
-> However, a copy of the original message is still available in the hidden folder of the community group mailbox, and accessible with eDiscovery searches for compliance purposes.
 
 Even though they are stored in Exchange, Yammer messages are only included in a retention policy that's configured for the **Yammer community messages** or **Yammer user messages** locations.
 
@@ -180,12 +174,12 @@ If the user stored any files in Yammer, see the [equivalent section](retention-p
 
 ## Limitations
 
-Yammer retention policies are currently in preview and we're continuously working on optimizing retention functionality. In the meantime, be aware of the following limitation when you use retention for Yammer community messages and user messages:
+Be aware of the following limitation when you use retention for Yammer community messages and user messages:
 
 - When you select **Edit** for the **Yammer user messages** location, you might see guests and non-mailbox users. Retention policies aren't designed for these users, so don't select them.
 
 ## Configuration guidance
 
-If you're new to configuring retention in Microsoft 365, see [Get started with information governance](get-started-with-information-governance.md).
+If you're new to configuring retention in Microsoft 365, see [Get started with data lifecycle management](get-started-with-data-lifecycle-management.md).
 
 If you're ready to configure a retention policy for Yammer, see [Create and configure retention policies](create-retention-policies.md).

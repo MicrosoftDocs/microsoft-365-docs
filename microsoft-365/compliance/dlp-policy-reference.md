@@ -22,7 +22,9 @@ ms.custom: seo-marvel-apr2021
 ---
 # Data Loss Prevention policy reference
 
-Data loss prevention (DLP) policies have many components to configure. To create an effective policy, you need to understand what the purpose of each component is and how its configuration alters the behavior of the policy. This article provides a detailed anatomy of a DLP policy.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Microsoft Purview Data Loss Prevention (DLP) policies have many components to configure. To create an effective policy, you need to understand what the purpose of each component is and how its configuration alters the behavior of the policy. This article provides a detailed anatomy of a DLP policy.
 
 ## Policy templates 
 
@@ -102,8 +104,8 @@ A DLP policy can find and protect items that contain sensitive information acros
 |OneDrive for Business accounts| account or distribution group |data-at-rest </br> data-in-use|No|
 |Teams chat and channel messages     | account or distribution group |data-in-motion </br> data-in-use |  No       |
 |Microsoft Defender for Cloud Apps   | cloud app instance       |data-at-rest         | - [Use data loss prevention policies for non-Microsoft cloud apps](dlp-use-policies-non-microsoft-cloud-apps.md#use-data-loss-prevention-policies-for-non-microsoft-cloud-apps)        |
-|Devices  |user or group         |data-at-rest </br>  data-in-use </br>  data-in-motion         |- [Learn about Microsoft 365 Endpoint data loss prevention](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention) </br>- [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention) </br>- [Configure device proxy and internet connection settings for Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection) |
-|On-premises repositories (file shares and SharePoint)    |repository         | data-at-rest         | - [Learn about the Microsoft 365 data loss prevention on-premises scanner](dlp-on-premises-scanner-learn.md#learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner) </br> - [Get started with the data loss prevention on-premises scanner](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-scanner)         |
+|Devices  |user or group         |data-at-rest </br>  data-in-use </br>  data-in-motion         |- [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md) </br>- [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md) </br>- [Configure device proxy and internet connection settings for Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection) |
+|On-premises repositories (file shares and SharePoint)    |repository         | data-at-rest         | - [Learn about the data loss prevention on-premises scanner](dlp-on-premises-scanner-learn.md) </br> - [Get started with the data loss prevention on-premises scanner](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-scanner)         |
 |PowerBI| workspaces | data-in-use | No|
 
 If you choose to include specific distribution groups in Exchange, the DLP policy will be scoped only to the members of that group. Similarly excluding a distribution group will exclude all the members of that distribution group from policy evaluation. You can choose to scope a policy to the members of distribution lists, dynamic distribution groups, and security groups. A DLP policy can contain no more than 50 such inclusions and exclusions.
@@ -182,16 +184,20 @@ For example, you might have a DLP policy that helps you detect the presence of i
 
 Priority for rules on endpoints is also assigned according to the order in which it's created. That means, the rule created first has first priority, the rule created second has second priority, and so on. 
 
-When a file on an endpoint matches multiple DLP policies, the first rule that's enabled with restrictions is the one that gets enforced on the content. For example, if content matches all of the following rules, *Rule 2 is enforced because it's the highest priority rule that's configured with a restriction*.
-  
-- Rule 1: only notifies users
-- *Rule 2: notifies users, restricts access, and allows user overrides*
-- Rule 3: notifies users, restricts access, and does not allow user overrides
-- Rule 4: restricts access
+When a file on an endpoint matches multiple DLP policies, the first rule that's enabled with most restrictive enforcement on the [endpoint activities](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on) is the one that gets enforced on the content. For example, if content matches all of the following rules, then rule 2 takes precedence over the other rules since its the most restrictive.
 
-Rules 1, 3, and 4 would be evaluated, but not applied. In this example, matches for all of the rules are recorded in the audit logs and shown in the DLP reports, even though only the first rule with a restriction is applied.
+- Rule 1: only audits all activity 
+- *Rule 2: blocks all activity*
+- Rule 3: blocks all activity with option for end user to override
 
-For rules that are applied to endpoints, you can take advantage of the ability to re-order the rule priority to make sure the restrictions you want applied are applied.
+In the below example, Rule 1 takes precedence over the other matching rules since its the most restrictive.
+
+- *Rule 1: blocks activity and does not allow user override*
+- Rule 2: blocks activity and allows user overrides
+- Rule 3: only audits all activity
+- Rule 4: no enforcement
+
+All the other rules are evaluated but their actions are not enforced. Audit logs will show the most restrictive rule applied on the file. If there is more than one rule that matches and they are equally restrictive, then policy and rule priority governs which rule would be applied on the file.
 
 ### Conditions
 
@@ -267,24 +273,34 @@ The available context options change depending on which location you choose. If 
  
 - Content contains
 - Content is shared from Microsoft 365
-- File extension is
+- Document created by
+- Document created by member of
+- Document name contains words or phrases
+- Document name matches patterns
+- Document size over
 - Document property is
+- File extension is
 
 ##### Conditions OneDrive accounts supports
 
 - Content contains
 - Content is shared from Microsoft 365
-- File extension is
+- Document created by
+- Document created by member of
+- Document name contains words or phrases
+- Document name matches patterns
+- Document size over
 - Document property is
+- File extension is
 
 ##### Conditions Teams chat and channel messages supports
 
 - Content contains
 - Content is shared from Microsoft 365
-- Sender is (Preview)
-- Sender domain is (Preview)
-- Recipient domain is (Preview)
-- Recipient is (Preview)
+- Sender is 
+- Sender domain is 
+- Recipient domain is 
+- Recipient is 
 
 ##### Conditions Devices supports
 
@@ -399,7 +415,7 @@ When you select **Audit or restrict activities on Windows devices**, you can res
 
 - All apps
 - By a list of restricted apps that you define
-- Ay a restricted app group (preview) that you define.
+- A restricted app group (preview) that you define.
 
 ##### Service domain and browser activities
 
@@ -627,7 +643,7 @@ https://docs.microsoft.com/en-us/microsoft-365/compliance/dlp-configure-view-ale
 
 When a rule is matched, you can send an incident report to your compliance officer (or any people you choose) with details of the event. The report includes information about the item that was matched, the actual content that matched the rule, and the name of the person who last modified the content. For email messages, the report also includes as an attachment the original message that matches a DLP policy.
 
-DLP feeds incident information to other Microsoft 365 information protection services, like [Insider Risk management in Microsoft 365](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365). In order to get incident information to insider risk management, you must set the **Incident reports** severity level to **High**.
+DLP feeds incident information to other Microsoft Purview information protection services, like [insider risk management](insider-risk-management.md). In order to get incident information to insider risk management, you must set the **Incident reports** severity level to **High**.
 
 <!--![Page for configuring incident reports](../media/31c6da0e-981c-415e-91bf-d94ca391a893.png)-->
 

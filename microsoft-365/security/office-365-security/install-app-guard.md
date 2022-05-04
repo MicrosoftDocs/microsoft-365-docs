@@ -1,7 +1,7 @@
 ---
 title: Application Guard for Office for admins
 keywords: application guard, protection, isolation, isolated container, hardware isolation
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: maccruz
 author: schmurky
@@ -9,7 +9,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
-search.appverid: 
+search.appverid:
   - MET150
   - MOE150
 ms.collection: M365-security-compliance
@@ -34,7 +34,7 @@ Microsoft Defender Application Guard for Office (Application Guard for Office) h
 
 ### Minimum software requirements
 
-* **Windows**: Windows 10 Enterprise edition, Client Build version 2004 (20H1) build 19041 or later. All versions of Windows 11 are supported. 
+* **Windows**: Windows 10 Enterprise edition, Client Build version 2004 (20H1) build 19041 or later. All versions of Windows 11 are supported.
 * **Office**: Office Current Channel and Monthly Enterprise Channel, Build version 2011 16.0.13530.10000 or later. Office Semi-Annual Enterprise Channel, Build version 2108 or later. Both 32-bit and 64-bit versions of Office are supported.
 * **Update package**: Windows 10 cumulative monthly security update [KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756)
 
@@ -46,7 +46,7 @@ To learn more about Office update channels, see [Overview of update channels for
 * Microsoft 365 E5 or Microsoft 365 E5 Security
 
 > [!NOTE]
-> Microsoft 365 Apps for enterprise with the device-based license do not have access to Application Guard for Office.
+> Microsoft 365 Apps for enterprise with shared computer activation or device-based licensing do not have access to Application Guard for Office.
 
 ## Deploy Application Guard for Office
 
@@ -118,7 +118,6 @@ Upon being opened, the file should display a few visual indicators that the file
 ## Configure Application Guard for Office
 
 Office supports the following policies to enable you to configure the capabilities of Application Guard for Office. These policies can be configured through Group policies or through the [Office cloud policy service](/DeployOffice/overview-office-cloud-policy-service).
-
 
 > [!NOTE]
 > Configuring these policies can disable some functionalities for files opened in Application Guard for Office.
@@ -193,7 +192,7 @@ You can also configure Microsoft Defender for Office 365 to work with Defender f
 
 ## Limitations and considerations
 
-* Application Guard for Office is a protected mode that isolates untrusted documents so that they cannot access trusted corporate resources, an intranet, the user's identity, and arbitrary files on the computer. As a result, if a user tries to access a feature that has a dependency on such access, such as inserting a picture from a local file on disk, the access fails and produces a prompt that resembles the following example. To enable an untrusted document to access trusted resources, users must remove Application Guard protection from the document. 
+* Application Guard for Office is a protected mode that isolates untrusted documents so that they cannot access trusted corporate resources, an intranet, the user's identity, and arbitrary files on the computer. As a result, if a user tries to access a feature that has a dependency on such access, such as inserting a picture from a local file on disk, the access fails and produces a prompt that resembles the following example. To enable an untrusted document to access trusted resources, users must remove Application Guard protection from the document.
 
   :::image type="content" source="../../media/ag09-confirm.png" alt-text="The Dialog box stating safety message and the feature status" lightbox="../../media/ag09-confirm.png":::
 
@@ -201,7 +200,7 @@ You can also configure Microsoft Defender for Office 365 to work with Defender f
   > Advise users to only remove protection if they trust the file and its source or where it came from.
 
 * When an untrusted document is stored in a trusted location, the trust from the location is inherited by the document. Typically, an organization's cloud storage is identified as a trusted location.
-  
+
 * Active content in documents like macros and ActiveX controls are disabled in Application Guard for Office. Users need to remove Application Guard protection to enable active content.
 
 * Untrusted files from network shares or files shared from OneDrive, OneDrive for Business, or SharePoint Online from a different organization open as read-only in Application Guard. Users can save a local copy of such files to continue working in the container or remove protection to directly work with the original file.
@@ -233,8 +232,8 @@ When this heuristic is met, Office will pre-create an Application Guard containe
 
 * Selecting web links (`http` or `https`) doesn't open the browser.
 * The default setting for copy-paste protection policy is to enable clipboard access to text only.
-* The default setting for unsupported file types protection policy is to block opening untrusted unsupported file types that are encrypted or have Information Rights Management (IRM) set. This includes files that have Microsoft Information Protection sensitivity labels using encryption (confidential or highly confidential).
+* The default setting for unsupported file types protection policy is to block opening untrusted unsupported file types that are encrypted or have Information Rights Management (IRM) set. This includes files that are encrypted by using sensitivity labels from Microsoft Purview Information Protection.
 * CSV and HTML files are not supported at this time.
 * Application Guard for Office currently does not work with NTFS compressed volumes. If you are seeing an error "ERROR_VIRTUAL_DISK_LIMITATION" please try uncompressing the volume.
 * Updates to .NET might cause files to fail to open in Application Guard. As a workaround, users can restart their device when they come across this failure. Learn more about the issue at [Receiving an error message when attempting to open Windows Defender Application Guard or Windows Sandbox](https://support.microsoft.com/help/4575917/receiving-an-error-message-when-attempting-to-open-windows-defender-ap).
-* Please see [Frequently asked questions - Microsoft Defender Application Guard for additional information.](/windows/security/threat-protection/microsoft-defender-application-guard/faq-md-app-guard) 
+* Please see [Frequently asked questions - Microsoft Defender Application Guard for additional information.](/windows/security/threat-protection/microsoft-defender-application-guard/faq-md-app-guard)

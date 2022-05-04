@@ -140,7 +140,7 @@ Follow the steps below to add Microsoft Defender for Endpoint app into your mana
 
     :::image type="content" source="images/fa4ac18a6333335db3775630b8e6b353.png" alt-text="The page displaying the synced application" lightbox="images/fa4ac18a6333335db3775630b8e6b353.png":::
 
-9. Defender for Endpoint supports App configuration policies for managed devices via Intune. This capability can be leveraged to autogrant applicable Android permission(s), so the end user does not need to accept these permission(s).
+9. Defender for Endpoint supports App configuration policies for managed devices via Intune. This capability can be leveraged to select different configurations for Defender.
 
     1. In the **Apps** page, go to **Policy > App configuration policies > Add > Managed devices**.
 
@@ -155,18 +155,19 @@ Follow the steps below to add Microsoft Defender for Endpoint app into your mana
 
         :::image type="content" source="images/android-create-app.png" alt-text=" The Associated app details pane" lightbox="images/android-create-app.png":::
 
-    1. In the **Settings** page, go to the Permissions section click on Add to view the list of supported permissions. In the Add Permissions section, select the following permissions:
+    1. In the **Settings** page, go to the **Configuration settings** section and choose **‘Use configuration designer’** in Configuration settings format. 
 
-       - External storage (read)
-       - External storage (write)
+       :::image type="content" alt-text="Image of android create app configuration policy." source="images/configurationformat.png" lightbox="images/configurationformat.png":::
 
-       Then select **OK**.
+    1. Click on **Add** to view a list of supported configurations. Select the required configuration and click on **Ok**.
 
-       :::image type="content" source="images/android-create-app-config.png" alt-text="The Add permissions pane" lightbox="images/android-create-app-config.png":::
+       :::image type="content" alt-text="Image of selecting configuration policies for android." source="images/selectconfigurations.png" lightbox="images/selectconfigurations.png":::
 
-    1. You should now see both the permissions listed and now you can autogrant both by choosing autogrant in the **Permission state** drop-down and then select **Next**.
 
-       :::image type="content" source="images/android-auto-grant.png" alt-text="The Permission state pane" lightbox="images/android-auto-grant.png":::
+    1. You should see all the selected configurations listed. You can change the configuration value as required and then select **Next**.
+        
+        :::image type="content" alt-text="Image of selected configuration policies." source="images/listedconfigurations.png" lightbox="images/listedconfigurations.png":::
+       
 
     1. In the **Assignments** page, select the user group to which this app config policy would be assigned to. Click **Select groups to include** and selecting the applicable group and then selecting **Next**. The group selected here is usually the same group to which you would assign Microsoft Defender for Endpoint Android app.
 
@@ -258,6 +259,63 @@ The device configuration profile is now assigned to the selected user group.
 4. At this stage the device is successfully onboarded onto Defender for Endpoint on Android. You can verify this on the [Microsoft 365 Defender portal](https://security.microsoft.com) by navigating to the **Device Inventory** page.
 
     :::image type="content" source="images/9fe378a1dce0f143005c3aa53d8c4f51.png" alt-text="The Microsoft Defender for Endpoint portal" lightbox="images/9fe378a1dce0f143005c3aa53d8c4f51.png":::
+
+## Set up Microsoft Defender in Personal Profile on Android Enterprise in BYOD mode
+
+>[!NOTE]
+>Microsoft Defender support in Personal profile in Android Enterprise (AE) in Bring-Your-Own-Device (BYOD) mode is now in public preview. The following information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
+With Microsoft defender support in Android personal profiles, user devices can be protected against phishing and malware attacks on a personal profile that could potentially compromise corporate resources on work profile. 
+
+**Set up Microsoft Defender in Personal Profile**
+
+Admins can go to the [Microsoft Endpoint Management admin center](https://endpoint.microsoft.com) to set up and configure Microsoft Defender support in personal profiles by following these steps:
+1. Go to **Apps> App configuration policies** and click on **Add**. Select **Managed Devices**.
+
+    > [!div class="mx-imgBorder"]
+    > ![Image of adding app configuration policy.](images/addpolicy.png)
+
+1.  Enter **Name** and **Description** to uniquely identify the configuration policy. Select platform as **‘Android Enterprise’**, Profile type as **‘Personally-owned work profile only’** and Targeted app as **‘Microsoft Defender’**.
+ 
+    > [!div class="mx-imgBorder"]
+    > ![Image of naming configuration policy.](images/selectapp.png)
+
+1. On the settings page, in **‘Configuration settings format’**, select **‘Use configuration designer’** and click on **Add**. From the list of configurations that are displayed, select **‘Microsoft Defender in Personal profile’**.
+
+    > [!div class="mx-imgBorder"]
+    > ![Image of configuring personal profile.](images/addconfiguration.png)
+
+1. The selected configuration will be listed. Change the **configuration value to 1** to enable Microsoft Defender support personal profiles. A notification will appear informing the admin about the same. Click on **Next**.
+
+    > [!div class="mx-imgBorder"]
+    > ![Image of changing config value.](images/changeconfigvalue.png)
+
+1. **Assign** the configuration policy to a group of users. **Review and create** the policy.
+
+    > [!div class="mx-imgBorder"]
+    > ![Image of reviewing and creating policy.](images/savepolicy.png)
+
+Admins can also setup **privacy controls** from the Microsoft Endpoint Manager admin center to control what data can be sent by the Defender mobile client to the security portal. For more information, see [configuring privacy controls](android-configure.md).
+
+Organizations can communicate to their users to protect Personal profile with Microsoft Defender on their enrolled BYOD devices.
+- Pre-requisite: Microsoft Defender must be already installed and active in work profile to enabled Microsoft Defender in personal profiles.
+
+**To complete onboarding a device**
+1.	Install the Microsoft Defender application in a personal profile with a personal Google Play store account.
+2.	Install the Company portal application on personal profile. No sign-in is required.
+3.	When a user launches the application, they'll see the sign-in screen. **Login using corporate account only**.
+4.	On a successful login, users will see the following screens:
+
+    a.	**EULA screen**: Presented only if the user has not consented already in the Work profile.
+
+    b.	**Notice screen**: Users need to provide consent on this screen to move forward with onboarding the application. This is required only during the first run of the app.
+5.	Provide the required permissions to complete onboarding.
+
+>[!NOTE]
+>**Pre-requisite:**
+ >1. The Company portal needs to be enabled on personal profile.
+ >2. Microsoft Defender needs to be already installed and active in work profile.
+
 
 ## Related topics
 

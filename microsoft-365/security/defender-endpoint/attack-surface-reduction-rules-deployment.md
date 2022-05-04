@@ -1,5 +1,5 @@
 ---
-title: ASR rules deployment prerequisites
+title: Attack surface reduction (ASR) rules deployment overview
 description: Provides overview and prerequisite guidance about deploying attack surface reduction (ASR) rules.
 keywords: Attack surface reduction rules deployment, ASR deployment, enable asr rules, configure ASR, host intrusion prevention system, protection rules, anti-exploit rules, anti-exploit, exploit rules, infection prevention rules, Microsoft Defender for Endpoint, configure ASR rules
 search.product: eADQiWindows 10XVcnh
@@ -22,9 +22,7 @@ ms.collection:
 ms.date: 1/18/2022
 ---
 
-# ASR rules deployment prerequisites
-
-## Before you begin
+# Attack surface reduction (ASR) rules deployment overview
 
 Attack surfaces are all the places where your organization is vulnerable to cyberthreats and attacks. Your organization's attack surfaces includes all the places where an attacker could compromise your organization's devices or networks. Reducing your attack surface means protecting your organization's devices and network, which leaves attackers with fewer ways to attack. Configuring attack surface reduction (ASR) rules — one of many security features found in Microsoft Defender for Endpoint — can help.
 
@@ -36,12 +34,14 @@ ASR rules target certain software behaviors, such as:
 
 By reducing the different attack surfaces, you can help prevent attacks from happening in the first place.
 
+## Before you begin
+
 During your initial preparation, it's vital that you understand the capabilities of the systems that you'll put in place. Understanding the capabilities will help you determine which ASR rules are most important for protecting your organization. Additionally, there are several prerequisites which you must attend to in preparation of your ASR deployment.
 
 >[!IMPORTANT]
 >This guide provides images and examples to help you decide how to configure ASR rules; these images and examples might not reflect the best configuration options for your environment.
 
-Before you start, review [Overview of attack surface reduction](overview-attack-surface-reduction.md), and [Demystifying attack surface reduction rules - Part 1](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-1/ba-p/1306420) for foundational information. To understand the areas of coverage and potential impact, familiarize yourself with the current set of ASR rules; see [Attack surface reduction rules reference](attack-surface-reduction-rules-reference.md).
+Before you start, review [Overview of attack surface reduction](overview-attack-surface-reduction.md), and [Demystifying attack surface reduction rules - Part 1](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-1/ba-p/1306420) for foundational information. To understand the areas of coverage and potential impact, familiarize yourself with the current set of ASR rules; see [Attack surface reduction rules reference](attack-surface-reduction-rules-reference.md).  While you are familiarizing yourself with the ASR rules set, take note of the per-rule GUID mappings; see: [ASR rules and GUIDs matrix](attack-surface-reduction-rules-reference.md#asr-rules-and-guids-matrix).
 
 ASR rules are only one capability of the attack surface reduction capabilities within Microsoft Defender for Endpoint. This document will go into more detail on deploying ASR rules effectively to stop advanced threats like human-operated ransomware and other threats.  
 
@@ -110,7 +110,7 @@ Keeping Microsoft Defender Antivirus versions current helps reduce ASR rules fal
 
 ### Caveat
 
-Some rules don’t work well if un-signed, internally developed application and scripts are in high usage. It is more difficult to deploy ASR rules if code signing is not enforced.
+Some rules don't work well if un-signed, internally developed application and scripts are in high usage. It is more difficult to deploy ASR rules if code signing is not enforced.
 
 ## ASR rules deployment steps
 
@@ -125,13 +125,13 @@ As with any new, wide-scale implementation which could potentially impact your l
 
 ## Additional topics in this deployment collection
 
-[Phase 1: Plan](attack-surface-reduction-rules-deployment-plan.md)
+[Test attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-test.md)
 
-[Phase 2: Test](attack-surface-reduction-rules-deployment-test.md)
+[Enable attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-implement.md)
 
-[Phase 3: Implement](attack-surface-reduction-rules-deployment-implement.md)
+[Operationalize attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-operationalize.md)
 
-[Phase 4: Operationalize](attack-surface-reduction-rules-deployment-operationalize.md)
+[Attack surface reduction (ASR) rules reference](attack-surface-reduction-rules-reference.md)
 
 ## Reference
 
@@ -151,7 +151,7 @@ As with any new, wide-scale implementation which could potentially impact your l
 
 [Use attack surface reduction rules to prevent malware infection](attack-surface-reduction.md)
 
-[Enable attack surface reduction rules](enable-attack-surface-reduction.md)
+[Enable attack surface reduction rules - alternate configurations](enable-attack-surface-reduction.md)
 
 [Attack surface reduction rules reference](attack-surface-reduction-rules-reference.md)
 
