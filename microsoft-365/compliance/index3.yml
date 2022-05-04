@@ -1,0 +1,97 @@
+### YamlMime:Landing
+
+title: Microsoft Purview compliance documentation # < 60 chars
+summary: If your organization needs to comply with legal or regulatory standards, start here to learn about compliance in Microsoft Purview. # < 160 chars
+
+metadata:
+  title: Microsoft Purview compliance documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: This page contains links to some important topics related to Microsoft Purview compliance features. Start here to learn about compliance for Microsoft Purview. # Required; article description that is displayed in search results. < 160 chars.
+  services: office-365-security-compliance
+  ms.service: O365-seccomp #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.subservice: subservice
+  ms.topic: landing-page # Required
+  ms.collection: m365-security-compliance
+  ms.custom: intro-hub-or-landing
+  author: robmazz #Required; your GitHub user alias, with correct capitalization.
+  ms.author: robmazz #Required; microsoft alias of author; optional team alias.
+  ms.date: 04/22/2022 #Required; mm/dd/yyyy format
+  ms.localizationpriority: high
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card 1
+  - title: Protect sensitive data across clouds, apps, and devices
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Microsoft Purview Information Protection
+            url: /microsoft-365/compliance/sensitivity-labels
+          - text: Microsoft Purview Data Loss Prevention
+            url: /microsoft-365/compliance/dlp-learn-about-dlp
+          - text: Microsoft Purview Data Lifecycle Management
+            url: /microsoft-365/compliance/data-lifecycle-management
+          - text: Microsoft Purview Message Encryption
+            url: /microsoft-365/compliance/ome
+          - text: Microsoft Purview Double Key Encryption
+            url: /microsoft-365/compliance/double-key-encryption
+          - text: Microsoft Purview Customer Key
+            url: /microsoft-365/compliance/customer-key-overview
+          - text: Microsoft Purview Customer Lockbox
+            url: /microsoft-365/compliance/customer-lockbox-requests
+          - text: Microsoft Purview Data Connectors
+            url: /microsoft-365/compliance/archiving-third-party-data
+          - text: Microsoft Information Protection SDK
+            url: /information-protection/develop/overview
+
+# Card 2
+  - title: Identify data risks and manage regulatory compliance requirements
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Microsoft Purview Insider Risk Management
+            url: /microsoft-365/compliance/insider-risk-management
+          - text: Microsoft Purview Communication Compliance
+            url: /microsoft-365/compliance/communication-compliance
+          - text: Microsoft Purview Information Barriers
+            url: /microsoft-365/compliance/information-barriers
+          - text: Microsoft Purview Privileged Access Management
+            url: /microsoft-365/compliance/privileged-access-management-overview
+          - text: Microsoft Purview Records Management
+            url: /microsoft-365/compliance/records-management
+          - text: Microsoft Purview Audit
+            url: /microsoft-365/compliance/auditing-solutions-overview
+          - text: Microsoft Purview eDiscovery
+            url: /microsoft-365/compliance/ediscovery
+          - text: Microsoft Graph APIs for compliance capabilities
+            url: /microsoft-365/compliance/compliance-extensibility 
+
+    # Card 3
+  - title: Get started with regulatory compliance
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Microsoft Purview Compliance Manager
+            url: /microsoft-365/compliance/compliance-manager
+          - text: GDPR compliance action plan
+            url: /compliance/regulatory/gdpr-action-plan
+          - text: ISO compliance action plan
+            url: /compliance/regulatory/iso-action-plan
+          - text: NIST compliance action plan
+            url: /compliance/regulatory/nist-action-plan
+
+    # Card
+  - title: Deploy compliance solutions
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Secure data with Zero Trust
+            url: /security/zero-trust/data
+          - text: Deploy a Microsoft Purview Information Protection solution
+            url: /microsoft-365/compliance/information-protection-solution
+          - text: Deploy information protection for data privacy regulations
+            url: /microsoft-365/solutions/information-protection-deploy
+          - text: Information protection and compliance illustrations
+            url: /microsoft-365/solutions/productivity-illustrations
