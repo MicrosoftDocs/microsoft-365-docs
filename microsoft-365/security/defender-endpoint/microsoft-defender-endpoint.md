@@ -32,7 +32,7 @@ ms.technology: mde
 Microsoft Defender for Endpoint is an enterprise endpoint security platform designed to help enterprise networks prevent, detect, investigate, and respond to advanced threats.
 
 > [!TIP]
-> Soon, Microsoft Defender for Endpoint will be available in two plans. This article describes the features and capabilities that are included in Microsoft Defender for Endpoint Plan 2. [Learn more about Microsoft Defender for Endpoint Plan 1 and Plan 2](defender-endpoint-plan-1-2.md).
+> Microsoft Defender for Endpoint has a new Add-on available for Plan 2. This article describes the features and capabilities that are included in Microsoft Defender for Endpoint Plan 1, Plan and the new Plan 2 Add-on. [Learn more about Microsoft Defender for Endpoint Plan 1 and Plan 2](defender-endpoint-plan-1-2.md).
 > 
 
 <p><p>
@@ -50,7 +50,7 @@ Defender for Endpoint uses the following combination of technology built into Wi
 <center><h2>Microsoft Defender for Endpoint</center></h2>
 <table>
 <tr>
-<td><a href="#tvm"><center><img src="images/TVM_icon.png" alt="Threat & Vulnerability Management"> <br><b>Vulnerability Management</b></center></a></td>
+<td><a href="#tvm"><center><img src="images/TVM_icon.png" alt="Vulnerability Management"> <br><b> Vulnerability Management</b></center></a></td>
 <td><a href="#asr"><center><img src="images/asr-icon.png" alt="Attack surface reduction"><br><b>Attack surface reduction</b></center></a></td>
 <td><center><a href="#ngp"><img src="images/ngp-icon.png" alt="Next-generation protection"><br> <b>Next-generation protection</b></a></center></td>
 <td><center><a href="#edr"><img src="images/edr-icon.png" alt="Endpoint detection and response"><br> <b>Endpoint detection and response</b></a></center></td>
@@ -81,9 +81,9 @@ Defender for Endpoint uses the following combination of technology built into Wi
 
 <a name="tvm"></a>
 
-**[Vulnerability Management](next-gen-threat-and-vuln-mgt.md)**
+**[|Core vulnerability management](next-gen-threat-and-vuln-mgt.md)**
 
-This built-in capability uses a game-changing risk-based approach to the discovery, prioritization, and remediation of endpoint vulnerabilities and misconfigurations.
+The built-in core vulnerability management capabilities uses a game-changing risk-based approach to the discovery, prioritization, and remediation of endpoint vulnerabilities and misconfigurations. A new Microsoft Defender for Endpoint Plan 2 Add-on provides premium vulnerability management capabilities.  [Learn more about Microsoft Defender for Endpoint Plan 2 Add-on](defender-endpoint-plan-1-2.md).
 
 <a name="asr"></a>
 
