@@ -1,5 +1,5 @@
 ---
-title: Onboard macOS devices into Microsoft 365 overview (preview)
+title: Onboard macOS devices into Microsoft 365 overview
 f1.keywords:
     NOCSH
 ms.author: chrfox
@@ -17,7 +17,7 @@ search.appverid:
 description: Learn about onboarding macOS devices into Compliance solutions
 ---
 
-# Onboard macOS devices into Microsoft 365 overview (preview)
+# Onboard macOS devices into Microsoft 365 overview
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
@@ -50,7 +50,16 @@ Your macOS devices must already be managed through Intune or JAMF Pro.
  
 - To onboard into Intune, see [Deployment guide: Manage macOS devices in Microsoft Intune](/mem/intune/fundamentals/deployment-guide-platform-macos) and [Enroll your Mac with Intune Company Portal](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp). 
 - To onboard into JAMF Pro see, [JAMF Pro administrators guide](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/) and [JAMF Pro Installation and Configuration Guide for Mac](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/)
-- Install the v95+ Edge browser on your macOS devices 
+<!--- Install the v95+ Edge browser on your macOS devices--> 
+
+### Supported browsers
+
+Endpoint DLP supports these browsers on macOS Catalina 10.15 or higher:
+
+- Microsoft Edge (latest version)
+- Safari (latest version, macOS only)
+- Chrome (latest version)
+- Firefox (latest version)
 
 ## Licensing guidance
 
@@ -93,10 +102,10 @@ Getting devices onboarding into Microsoft Purview solutions is required in order
 
 Topic | Description
 :---|:---
-|[Onboard and offboard macOS devices into Microsoft Purview solutions using Intune (preview)](device-onboarding-offboarding-macos-intune.md#onboard-and-offboard-macos-devices-into-microsoft-purview-solutions-using-intune-preview)|For macOS devices that are managed through Intune
-|[Onboard and offboard macOS devices into Compliance solutions using Intune for Microsoft Defender for Endpoint customers (preview)](device-onboarding-offboarding-macos-intune-mde.md#onboard-and-offboard-macos-devices-into-compliance-solutions-using-intune-for-microsoft-defender-for-endpoint-customers-preview) |For macOS devices that are managed through Intune and that have Microsoft Defender for Endpoint (MDE) deployed to them
-|[Onboard and offboard macOS devices into Microsoft Purview solutions using JAMF Pro (preview)](device-onboarding-offboarding-macos-jamfpro.md#onboard-and-offboard-macos-devices-into-microsoft-purview-solutions-using-jamf-pro-preview) | For macOS devices that are managed through JAMF Pro
-|[Onboard and offboard macOS devices into Compliance solutions using JAMF Pro for Microsoft Defender for Endpoint customers (preview)](device-onboarding-offboarding-macos-jamfpro-mde.md#onboard-and-offboard-macos-devices-into-compliance-solutions-using-jamf-pro-for-microsoft-defender-for-endpoint-customers-preview)|For macOS devices that are managed through JAMF Pro and that have Microsoft Defender for Endpoint (MDE) deployed to them
+|[Onboard and offboard macOS devices into Microsoft Purview solutions using Intune](device-onboarding-offboarding-macos-intune.md)|For macOS devices that are managed through Intune
+|[Onboard and offboard macOS devices into Compliance solutions using Intune for Microsoft Defender for Endpoint customers](device-onboarding-offboarding-macos-intune-mde.md) |For macOS devices that are managed through Intune and that have Microsoft Defender for Endpoint (MDE) deployed to them
+|[Onboard and offboard macOS devices into Microsoft Purview solutions using JAMF Pro](device-onboarding-offboarding-macos-jamfpro.md) | For macOS devices that are managed through JAMF Pro
+|[Onboard and offboard macOS devices into Compliance solutions using JAMF Pro for Microsoft Defender for Endpoint customers](device-onboarding-offboarding-macos-jamfpro-mde.md)|For macOS devices that are managed through JAMF Pro and that have Microsoft Defender for Endpoint (MDE) deployed to them
 
 
 ## Related topics

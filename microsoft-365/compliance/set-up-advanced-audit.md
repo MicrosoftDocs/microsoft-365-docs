@@ -2,8 +2,8 @@
 title: "Set up Audit (Premium) in Microsoft 365"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 
 audience: Admin
@@ -23,6 +23,8 @@ description: "This article describes how to set up Audit (Premium) so you can pe
 ---
 
 # Set up Microsoft Purview Audit (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 If your organization has a subscription and end-user licensing that supports Audit (Premium), perform the following steps to set up and use the additional capabilities in Audit (Premium).
 

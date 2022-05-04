@@ -21,7 +21,7 @@ description: "For Managed Service Providers (MSPs), learn how to sign up for Mic
 
 # Sign up for Microsoft 365 Lighthouse
 
-This article provides instructions for how to sign up for Microsoft 365 Lighthouse. Microsoft 365 Lighthouse is an admin portal that helps Managed Service Providers (MSPs) secure and manage devices, data, and users at scale for small- and medium-sized business (SMB) customers who are using Microsoft 365 Business Premium, Microsoft 365 E3, or Windows 365 Business. 
+This article provides instructions for how to sign up for Microsoft 365 Lighthouse. Microsoft 365 Lighthouse is an admin portal that helps Managed Service Providers (MSPs) secure and manage devices, data, and users at scale for small- and medium-sized business (SMB) customers. 
 
 ## Before you begin
 

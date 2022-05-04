@@ -2,8 +2,8 @@
 title: "Create activity alerts"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 11/7/2017
 audience: Admin
@@ -22,6 +22,8 @@ description: Add and manage activity alerts in the Microsoft Purview compliance 
 ---
 
 # Create activity alerts
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 You can create an activity alert that will send you an email notification when users perform specific activities in Office 365. Activity alerts are similar to searching for events in the audit log, except that you'll be sent an email message when an event for an activity that you've created an alert for happens.
 

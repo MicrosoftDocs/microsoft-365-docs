@@ -2,8 +2,8 @@
 title: "Use a script to add users to a hold in a eDiscovery (Standard) case"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 
 audience: Admin
@@ -25,6 +25,8 @@ description: "Learn how to run a script to add mailboxes & OneDrive for Business
 ---
 
 # Use a script to add users to a hold in a eDiscovery (Standard) case
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Security & Compliance Center PowerShell provides cmdlets that let you automate time-consuming tasks related to creating and managing eDiscovery cases. Currently, using the Microsoft Purview eDiscovery (Standard) case in the Microsoft Purview compliance portal to place a large number of custodian content locations on hold takes time and preparation. For example, before you create a hold, you have to collect the URL for each OneDrive for Business site that you want to place on hold. Then for each user you want to place on hold, you have to add their mailbox and their OneDrive for Business site to the hold. You can use the script in this article to automate this process.
   

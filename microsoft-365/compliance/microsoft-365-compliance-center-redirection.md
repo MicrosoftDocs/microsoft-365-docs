@@ -24,10 +24,10 @@ This article explains how automatic redirection works for users accessing compli
 
 Automatic redirection is enabled by default for all users accessing compliance-related solutions in Office 365 Security and Compliance (protection.office.com):
 
-- [Advanced eDiscovery](overview-ediscovery-20.md)
+- [eDiscovery (Premium)](overview-ediscovery-20.md)
 - [Communication compliance](communication-compliance.md)
 - [Content search](search-for-content.md)
-- [Core eDiscovery](get-started-core-ediscovery.md)
+- [eDiscovery (Standard)](get-started-core-ediscovery.md)
 - [Data classification](data-classification-overview.md)
 - [Microsoft Purview Data Loss Prevention (DLP)](dlp-learn-about-dlp.md)
 - [Data subject requests](/compliance/regulatory/gdpr-manage-gdpr-data-subject-requests-with-the-dsr-case-tool)

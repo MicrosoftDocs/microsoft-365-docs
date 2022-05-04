@@ -2,8 +2,8 @@
 title: "Check your search query for errors"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 
 audience: Admin
@@ -19,6 +19,8 @@ description: "Learn how to detect errors and typos in your keyword query for eDi
 ---
 
 # Check your search query for errors
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
   
 Here's a list of the unsupported characters that we check for in search queries for Content search and Microsoft Purview eDiscovery (Standard). Unsupported characters are often hidden, and they typically cause a search error or return unintended results.
   

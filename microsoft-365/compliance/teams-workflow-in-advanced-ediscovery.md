@@ -2,8 +2,8 @@
 title: "Teams workflow in eDiscovery (Premium)"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 ms.reviewer: jefwan
 manager: laurawi
 audience: Admin
@@ -17,6 +17,8 @@ description: "Learn how to preserve, collect, review, and export content from Mi
 ---
 
 # eDiscovery (Premium) workflow for content in Microsoft Teams
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 This article provides a comprehensive set of procedures, guidelines, and best practices for using Microsoft Purview eDiscovery (Premium) to preserve, collect, review, and export content from Microsoft Teams. The goal of this article is to help you optimize your eDiscovery workflow for Teams content.
 
@@ -296,7 +298,7 @@ Here are some tips and best practices for viewing Teams content in a review set.
 
 ## Deleting Teams chat messages
 
-You can use Advanced eDiscovery and the Microsoft Graph Explorer to respond to data spillage incidents, when content containing confidential or malicious information is released through Teams chat messages.​ Admins in your organization can search for and delete chat messages in Microsoft Teams. This can help you remove sensitive information or inappropriate content in Teams chat messages. For more information, see [Search and purge chat messages in Teams](search-and-delete-Teams-chat-messages.md).
+You can use eDiscovery (Premium) and the Microsoft Graph Explorer to respond to data spillage incidents, when content containing confidential or malicious information is released through Teams chat messages.​ Admins in your organization can search for and delete chat messages in Microsoft Teams. This can help you remove sensitive information or inappropriate content in Teams chat messages. For more information, see [Search and purge chat messages in Teams](search-and-delete-Teams-chat-messages.md).
 
 ## Reference guide
 
