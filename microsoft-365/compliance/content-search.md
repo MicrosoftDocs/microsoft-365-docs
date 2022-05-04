@@ -47,7 +47,7 @@ After you run a search, the number of content locations and an estimated number 
 
 - In an Exchange hybrid deployment, you can't use the Content search tool to search Emails in on-premises mailboxes. You can only use the tool to search cloud-based mailboxes.
 
-- In an Exchange hybrid deployment, you can search for Teams chat data for on-premises mailboxes. For more information, see [Teams chat data for on-premises users](/microsoft-365/compliance/search-cloud-based-mailboxes-for-on-premises-users?view=o365-worldwide)
+- In an Exchange hybrid deployment, you can search for Teams chat data in on-premises mailboxes. For more information, see [Teams chat data for on-premises users](/microsoft-365/compliance/search-cloud-based-mailboxes-for-on-premises-users?view=o365-worldwide).
 
 ## Create and run a search
   
