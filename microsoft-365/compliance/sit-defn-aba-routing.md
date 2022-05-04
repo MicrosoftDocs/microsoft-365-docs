@@ -23,11 +23,11 @@ description: "ABA routing number sensitive information type entity definition."
 
 # ABA routing number
 
-### Format
+## Format
 
 nine digits that may be in a formatted or unformatted pattern
 
-### Pattern
+## Pattern
 
 - two digits in the ranges 00-12, 21-32, 61-72, or 80
 - two digits
@@ -36,11 +36,11 @@ nine digits that may be in a formatted or unformatted pattern
 - an optional hyphen
 - a digit
 
-### Checksum
+## Checksum
 
 Yes
 
-### Definition
+## Definition
 
 A policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
@@ -64,9 +64,9 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
     </Entity>
 ```
 
-### Keywords
+## Keywords
 
-#### Keyword_aba_routing
+### Keyword_aba_routing
 
 - aba number
 - aba#
