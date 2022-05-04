@@ -2,8 +2,8 @@
 title: "Document metadata fields in eDiscovery (Premium)"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date:
 audience: Admin
@@ -20,6 +20,8 @@ description: "This article defines the metadata fields for documents in a review
 ---
 
 # Document metadata fields in eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 The following table lists the metadata fields for documents in a review set in a case in Microsoft Purview eDiscovery (Premium). The table provides the following information:
 

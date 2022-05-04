@@ -2,8 +2,8 @@
 title: "Deploy a connector to archive Facebook Business pages data"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 
 audience: Admin
@@ -19,6 +19,8 @@ description: "Administrators can set up a native connector to import and archive
 ---
 
 # Deploy a connector to archive Facebook Business pages data
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 This article contains the step-by-step process to deploy a connector that uses the Office 365 Import service to import data from Facebook Business pages to Microsoft 365. For a high-level overview of this process and a list of prerequisites required to deploy a Facebook connector, see [Set up a connector to archive Facebook data](archive-facebook-data-with-sample-connector.md).
 

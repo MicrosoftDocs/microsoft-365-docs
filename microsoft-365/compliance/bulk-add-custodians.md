@@ -2,8 +2,8 @@
 title: "Import custodians to an eDiscovery (Premium) case"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 
 audience: Admin
@@ -18,6 +18,8 @@ description: "Use the bulk-import tool to quickly add multiple custodians and th
 ---
 
 # Import custodians to an eDiscovery (Premium) case
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 For Microsoft Purview eDiscovery (Premium) cases that involve many custodians, you can import multiple custodians at once by using a CSV file that contains the information necessary to add them to a case. The import custodians tool will also validate the CSV file before the import job is created. This means you can fix any errors in the CSV file instead of having to wait until the import job is complete before learning there are errors that prevent a custodian from being added to the case.
 

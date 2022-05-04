@@ -2,8 +2,8 @@
 title: "Set up a connector to Webex Teams data in Microsoft 365"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 
 audience: Admin
@@ -15,6 +15,8 @@ description: "Admins can set up a connector to import and archive data from Veri
 ---
 
 # Set up a connector to archive Webex Teams data
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Use a Veritas connector in the Microsoft Purview compliance portal to import and archive data from Webex Teams to user mailboxes in your Microsoft 365 organization. Veritas provides a [Webex Teams](https://globanet.com/webex-teams/) connector that is configured to capture Webex Teams communication items and import them to Microsoft 365. The connector converts content from Webex Teams, such as 1:1 chats, group conversations, channel conversations, and attachments from your organization's Webex Teams account, to an email message format and then imports those items to the user's mailbox in Microsoft 365.
 

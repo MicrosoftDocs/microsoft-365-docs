@@ -2,8 +2,8 @@
 title: "Set up a connector to archive Instant Bloomberg data"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 04/06/2022
 audience: Admin
@@ -18,6 +18,8 @@ description: "Learn how administrators can set up and use a data connector to im
 ---
 
 # Set up a connector to archive Instant Bloomberg data
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Use a native connector in the Microsoft Purview compliance portal to import and archive financial services chat data from the [Instant Bloomberg](https://www.bloomberg.com/professional/product/collaboration/) collaboration tool. After you set up and configure a connector, it connects to your organization's Bloomberg secure FTP site (SFTP) once every day, converts the content of chat messages to an email message format, and then imports those items to mailboxes in Microsoft 365.
 

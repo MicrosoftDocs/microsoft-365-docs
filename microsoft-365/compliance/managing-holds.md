@@ -2,10 +2,10 @@
 title: "Manage holds in eDiscovery (Premium)"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
-ms.date: 
+ms.date: 04/27/2022
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
@@ -25,6 +25,8 @@ ms.custom:
 
 # Manage holds in eDiscovery (Premium)
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 You can use an Microsoft Purview eDiscovery (Premium) case to create holds to preserve content that might be relevant to your case. Using the eDiscovery (Premium) hold capabilities, you can place holds on custodians and their data sources. Additionally, you can place a non-custodial hold on mailboxes and OneDrive for Business sites. You can also place a hold on the group mailbox, SharePoint site, and OneDrive for Business site for a Microsoft 365 Group. Similarly, you can place a hold on the mailbox and site that are associated with Microsoft Teams. When you place content locations on hold, content is held until you release the custodian, remove a specific data location, or delete the hold policy entirely.
 
 ## Manage custodian-based holds
@@ -39,7 +41,7 @@ To view the custodian hold policy:
 
 3. Go to the **Holds** tab and click **CustodianHold\<HoldId>**.
 
-4. On the flyout page, you can see hold statistics for the policy. You can also perform actions like apply a query to your custodian-based hold. For more information about creating a hold query and using conditions, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
+4. On the flyout page, you can perform actions like apply a query to your custodian-based hold. For more information about creating a hold query and using conditions, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
 
 ## Manage non-custodial holds
 
@@ -98,24 +100,6 @@ To create a non-custodial hold for an eDiscovery (Premium) case:
 
 > [!NOTE]
 > If the SMTP address of the user changes after you place the user's mailbox on hold, the mailbox will remain on hold. To use the new SMTP address to place hold, create a new hold.
-
-## View hold statistics
-
-After some time, information about the new hold is displayed in the details pane on the **Holds** tab for the selected hold. This information includes the number of mailboxes and sites on hold and statistics about the content that was placed on hold, such as the total number and size of items placed on hold and the last time the hold statistics were calculated. These hold statistics help you identify how much content that's related to the eDiscovery case is being held.
-
-Keep the following things in mind about hold statistics:
-
-- The total number of items on hold indicates the number of items from all content sources that are placed on hold. If you've created a query-based hold, this statistic indicates the number of items that match the query.
-  
-- The number of items on hold also includes unindexed items found in the content locations. If you create a query-based hold, all unindexed items in the content locations are placed on hold. This includes unindexed items that don't match the search criteria of a query-based hold and unindexed items that might fall outside of a date range condition. This is different than what happens when you run a Content Search, in which unindexed items that don't match the search query or are excluded by a date range condition aren't included in the search results. For more information about unindexed items, see [Partially indexed items in Content Search in Office 365](partially-indexed-items-in-content-search.md).
-
-- You can get the latest hold statistics by clicking Update statistics to rerun a search estimate that calculates the current number of items on hold.
-
-- If necessary, click Refresh in the toolbar to update the hold statistics in the details pane.
-
-- It's normal for the number of items on hold to increase over time because users whose mailbox or site is on hold are typically sending or receiving new email message and creating new SharePoint and OneDrive for Business documents.
-
-- If a SharePoint site or OneDrive account is moved to a different region in a multi-geo environment, the statistics for that site won't be included in the hold statistics. However, the content in the site will still be on hold. Also, if a site is moved to a different region the URL that's displayed in the hold will not be updated. You'll have to edit the hold and update the URL.
 
 ## Place a hold on Microsoft Teams and Office 365 Groups
 

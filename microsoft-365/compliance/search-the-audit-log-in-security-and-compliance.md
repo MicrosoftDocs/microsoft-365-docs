@@ -2,8 +2,8 @@
 title: "Search the audit log in the Microsoft Purview compliance portal"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -24,6 +24,8 @@ ms.custom:
 ---
 
 # Search the audit log in the compliance center
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Need to find if a user viewed a specific document or purged an item from their mailbox? If so, you can use the audit log search tool in Microsoft Purview compliance portal to search the unified audit log to view user and administrator activity in your organization. Thousands of user and admin operations performed in dozens of Microsoft 365 services and solutions are captured, recorded, and retained in your organization's unified audit log. Users in your organization can use the audit log search tool to search for, view, and export (to a CSV file) the audit records for these operations.
 
@@ -1100,6 +1102,21 @@ Here are some tips for searching for Exchange admin activities when searching th
   - [Search-AdminAuditLog](/powershell/module/exchange/search-adminauditlog)
 
    Keep in mind that the same Exchange admin activities are logged in both the Exchange admin audit log and audit log.
+
+### Encrypted message portal activities
+
+Access logs are available for encrypted messages through the encrypted message portal that lets your organization determine when messages are read, and forwarded by your external recipients. For more information on enabling and using encrypted message portal activity logs, see [Encrypted message portal activity log](ome-message-access-logs.md).
+
+Each audit entry for a tracked message will contain the following fields:
+
+- MessageID - Contains the ID of the message being tracked. This is the key identifier used to follow a message through the system.
+- Recipient - List of all recipient email addresses.
+- Sender - The originating email address.
+- AuthenticationMethod - Describes the authenticating method for accessing the message, for example OTP, Yahoo, Gmail, or Microsoft.
+- AuthenticationStatus - Contains a value indicating that the authentication succeeded or failed.
+- OperationStatus - Indicates whether the indicated operation succeeded or failed.
+- AttachmentName - Name of the attachment.
+- OperationProperties - A list of optional properties, for example the number of OTP passcodes sent, or the email subject.
 
 ## Frequently asked questions
 

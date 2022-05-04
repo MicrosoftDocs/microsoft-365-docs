@@ -2,8 +2,8 @@
 title: "Use sharing auditing in the audit log"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 
 audience: Admin
@@ -24,6 +24,8 @@ ms.custom: seo-marvel-apr2020
 ---
 
 # Use sharing auditing in the audit log
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Sharing is a key activity in SharePoint Online and OneDrive for Business, and it's widely used in organizations. Administrators can use sharing auditing in the audit log to determine how sharing is used in their organization. 
   

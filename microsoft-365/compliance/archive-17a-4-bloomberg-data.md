@@ -2,8 +2,8 @@
 title: "Set up a connector to archive Bloomberg data in Microsoft 365"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 
 audience: Admin
@@ -15,6 +15,8 @@ description: "Learn how to set up and use a 17a-4 Bloomberg DataParser connector
 ---
 
 # Set up a connector to archive Bloomberg data
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Use the [Bloomberg DataParser](https://www.17a-4.com/Bloomberg-dataparser/) from 17a-4 LLC to import and archive data from Bloomberg to user mailboxes in your Microsoft 365 organization. The DataParser includes a Bloomberg connector that's configured to capture items from a third-party data source and import those items to Microsoft 365. The Bloomberg DataParser connector converts Bloomberg data to an email message format and then imports those items to user mailboxes in Microsoft 365.
 

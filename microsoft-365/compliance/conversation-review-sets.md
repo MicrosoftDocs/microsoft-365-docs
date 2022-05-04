@@ -2,8 +2,8 @@
 title: "Review conversations in eDiscovery (Premium)"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date:
 audience: Admin
@@ -20,6 +20,8 @@ ms.custom: seo-marvel-mar2020
 ---
 
 # Conversation threading in eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Instant messaging is a convenient way to ask questions, share ideas, or quickly communicate across large audiences. As instant messaging platforms, like Microsoft Teams and Yammer groups, become core to enterprise collaboration, organizations must evaluate how their eDiscovery workflow addresses these new forms of communication and collaboration.
 

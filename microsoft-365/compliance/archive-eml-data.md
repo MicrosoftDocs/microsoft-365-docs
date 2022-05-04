@@ -2,8 +2,8 @@
 title: "Set up a connector to archive EML data in Microsoft 365"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 
 audience: Admin
@@ -15,6 +15,8 @@ description: "Admins can set up a connector to import and archive EML data from 
 ---
 
 # Set up a connector to archive EML data
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Use a Veritas connector in the Microsoft Purview compliance portal to import and archive EML data to user mailboxes in your Microsoft 365 organization. EML is the file extension for an email message saved to a file. The connector converts the content of an item from the source format to an email message format and then imports the item to a user mailbox.
 

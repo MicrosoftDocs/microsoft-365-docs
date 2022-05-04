@@ -2,8 +2,8 @@
 title: "eDiscovery (Premium) dashboard for review sets"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 04/05/2022
 audience: Admin
@@ -19,6 +19,8 @@ description: "Use the Microsoft Purview eDiscovery (Premium) dashboard for revie
 ---
 
 # eDiscovery (Premium) dashboard for review sets
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 For some cases in Microsoft Purview eDiscovery (Premium), you may have a large volume of documents and email messages that need to be reviewed. Before you start the review process, you may want to quickly analyze your corpus to identify trends or key statistics that will help you develop your review strategy. To do this, you can use the eDiscovery (Premium) dashboard for review sets to quickly analyze your corpus.
 

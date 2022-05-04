@@ -18,9 +18,11 @@ f1.keywords: NOCSH
 
 # Upload your Test Base package (Zip) 
 
-On the Test Base portal page, navigate to the **Upload new package** option on the left navigation bar as shown below:
+On the Test Base portal page, navigate to the **New package** option on the left navigation bar an then click **Legacy upload experience** to enable the Zip upload experience as shown below:
 
-:::image type="content" alt-text="Upload a new package." source="Media/Upload-New-Package.png" lightbox="Media/Upload-New-Package.png":::
+:::image type="content" alt-text="Upload a new package." source="Media/testapplication01.png" lightbox="Media/testapplication01.png":::
+
+:::image type="content" alt-text="Apply the operation." source="Media/testapplication21.png" lightbox="Media/testapplication21.png":::
 
 Once there, follow the steps below to upload a new package.
 
@@ -105,13 +107,107 @@ The steps below provides a guide on how to fill out your package details:
 
     :::image type="content" alt-text="Viewing test details." source="Media/TestDetails.png":::
 
+
+
+## Upload your binaries, dependencies, and scripts
+
+On this tab, you will upload a single zip package containing your binaries, dependencies and scripts used to run your test suite.
+
+> [!NOTE]
+> The size of the zip package should be between a minimum of 10 MB and a maximum of 2 GB.
+
+**Upload package zip file**
+
+:::image type="content" alt-text="Upload your binaries." source="Media/AddBinaries.png":::
+
+  - Uploaded dependencies can include test frameworks, scripting engines or data that will be accessed to run your application or test cases. For example, you can upload Selenium and a web driver installer to help run browser-based tests.
+  - It is best practice to ensure your script activities are kept modular i.e. 
+    - The `Install` script only performs install operations.
+    - The `Launch` script only launches the application.
+    - The `Close` script only closes the application.
+    - The optional `Uninstall` script only uninstalls the application.
+
+**Currently, the portal only supports PowerShell scripts.**
+
+
+
+## The tasks tab
+
+On  the tasks tab, you are expected to provide the paths to your test scripts which are in the zip folder you uploaded under the binaries tab.
+
+  - **Out of Box Test Scripts:** Type in the relative paths to your install, launch, close and uninstall scripts. You also have the option to select additional settings for the install script.
+  - **Functional Test Scripts:** Type in the relative path to each functional test script uploaded. Additional functional test scripts can be added using the ```Add Script``` button. You need a minimum of one (1) script and can add up to eight (8) functional test scripts. 
+  
+    The scripts run in the sequence they are listed. A failure in a particular script stops subsequent scripts from executing.
+    You also have the option of selecting additional settings for each script provided.
+
+**Set script path**
+
+:::image type="content" alt-text="Image of test task." source="Media/testtask.png":::
+
+Sample of how to provide the relative path on a folder structure is below:
+
+_**Zip_file_uploaded**_
+~~~
+├── file1.exe
+
+├── ScriptX.ps1
+
+├── folder1
+
+│   ├── file3.exe
+
+│   ├── script.ps1
+~~~
+  - **ScriptX.ps1** would have. _ScriptX.ps1_ as the relative path.
+  - **Script.ps1** would have _folder1/script.ps1_ as the relative path.
+
+
+
+## Choose your test options. 
+
+The ```Test Options``` tab is for users who wish to perform functional tests to indicate when the Windows Update patch should be applied in the sequence of executing their functional test scripts.
+
+:::image type="content" alt-text="Image of test options. Either out-of-box or functional tests." source="Media/testoptions.png":::
+
+Select _**Review**_ to navigate to the next tab and review your selected test options.
+
+
+
+## Review your selections to create your package.
+
+1. On this tab, the service displays your test details and runs a quick completeness check.
+
+    A **Validation passed** or **Validation failed** message shows whether you can proceed to next steps or not.
+
+2. Review your test details and if satisfied, click on the **Create** button.
+
+    :::image type="content" alt-text="View validation." source="Media/validation.png" lightbox="Media/validation.png":::
+
+3. This will onboard your package to the Test Base environment. If your package is successfully created, an automated test which verifies whether your package can be successfully executed on Azure will be triggered.
+
+    :::image type="content" alt-text="Successful result." source="Media/successful.png":::
+
+    > [!NOTE]
+    > You will get a notification from the Azure portal to notify you on the success or failure of the package verification.
+    >
+    > Please note that the process can take up to 24 hours, so it is likely your webpage will timeout if you are not active on it and hence, the notification will not inform you of the completion of this on-demand run.
+
+    - Peradventure this happens, you can view the status of your package on the **Manage packages** tab.
+
+      :::image type="content" alt-text="Image for managing packages." source="Media/managepackages.png" lightbox="Media/managepackages.png":::
+
+    - For successful tests, their results can be seen via the **Test Summary**, **Security Updates Results** and **Feature Updates Results** pages at scheduled intervals, often starting a few days after your upload.
+  
+    - While failed tests, require you to upload a new package. 
+
+      You can download the **test logs** for further analysis from the **Security update results** and **Feature updates results** pages.
+
+    - If you experience repeated test failures, please reach out to testbasepreview@microsoft.com with details of your error.
+
 ## Next steps
 
-Our next article covers Uploading your Binaries to our service.
+Discover our Content Guidelines via the link below.
 
 > [!div class="nextstepaction"]
-> [Next step](binaries.md)
-
-<!---
-Add button for next page
--->
+> [Next step](contentguideline.md)

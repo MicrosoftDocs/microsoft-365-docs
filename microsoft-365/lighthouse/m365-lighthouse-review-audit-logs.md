@@ -1,5 +1,5 @@
 ---
-title: "Review audit logs"
+title: "Review audit logs in Microsoft 365 Lighthouse"
 f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
@@ -18,7 +18,7 @@ search.appverid: MET150
 description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn how to review audit logs."
 ---
 
-# Review audit logs
+# Review audit logs in Microsoft 365 Lighthouse
 
 Microsoft 365 Lighthouse audit logs record actions that generate a change in Lighthouse or other Microsoft 365 services. Create, edit, delete, assign, and remote actions all create audit events that you can review. By default, auditing is enabled for all customers. It can't be disabled.
 
@@ -91,8 +91,9 @@ The following table lists activities captured within Lighthouse audit logs. The 
 
 ## Next steps
 
-If you need more information, use Microsoft Graph API to access more audit events. For more information, see [Overview for multi-tenant management using the Microsoft 365 Lighthouse API](/graph/managedtenants-concept-overview).
+Use Microsoft Graph API to access more audit events, if needed. For more information, see [Overview for multi-tenant management using the Microsoft 365 Lighthouse API](/graph/managedtenants-concept-overview).
 
 ## Related content
 
-[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)
+[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)\
+[View your Azure Active Directory roles in Microsoft 365 Lighthouse](m365-lighthouse-view-your-roles.md) (article)

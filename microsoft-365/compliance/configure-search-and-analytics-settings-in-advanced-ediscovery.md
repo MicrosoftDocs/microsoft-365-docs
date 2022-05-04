@@ -2,8 +2,8 @@
 title: Configure search and analytics settings - eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 
 audience: Admin
@@ -20,6 +20,8 @@ description: "Configure Microsoft Purview eDiscovery (Premium) settings that app
 ---
 
 # Configure search and analytics settings in eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 You can configure settings for each Microsoft Purview eDiscovery (Premium) case to control the following functionality.
 

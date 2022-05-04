@@ -2,8 +2,8 @@
 title: "Error remediation when processing data"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date:
 audience: Admin
@@ -21,6 +21,8 @@ ms.custom: seo-marvel-mar2020
 ---
 
 # Error remediation when processing data
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Error remediation allows eDiscovery administrators the ability to rectify data issues that prevent Microsoft Purview eDiscovery (Premium) from properly processing the content. For example, files that are password protected can't be processed since the files are locked or encrypted. Using error remediation, eDiscovery administrators can download files with such errors, remove the password protection, and then upload the remediated files.
 
