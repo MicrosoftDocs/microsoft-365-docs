@@ -39,6 +39,8 @@ Contacts, and any tasks and calendar items that don't have an end date are not s
 
 Other items stored in a mailbox, such as Skype and Teams messages, aren't included in retention policies or labels for Exchange. These items have their own retention policies.
 
+Mailboxes must have at least 10 MB of data before retention settings will apply to them, and retention labels can be published to them.
+
 ## How retention works for Exchange
 
 Both a mailbox and a public folder use the [Recoverable Items folder](/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder) to retain items. Only people who have been assigned eDiscovery permissions can view items in another user's Recoverable Items folder.
