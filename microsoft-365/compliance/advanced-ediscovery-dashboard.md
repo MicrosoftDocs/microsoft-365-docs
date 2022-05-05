@@ -2,8 +2,8 @@
 title: "eDiscovery (Premium) dashboard for review sets"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 04/05/2022
 audience: Admin

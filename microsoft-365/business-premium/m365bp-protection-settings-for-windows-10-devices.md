@@ -10,7 +10,7 @@ f1.keywords:
 - 'O365E_Win10AppPolicy'
 - 'BCS365_Win10AppPolicy'
 ms.service: o365-administration
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection: 
 - M365-subscription-management
 - M365-identity-device-management

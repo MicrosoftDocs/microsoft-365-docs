@@ -1,17 +1,16 @@
 ---
 title: Manage devices in Microsoft Defender for Business
-description: Learn how to manage devices in Microsoft Defender for Business
+description: Learn how to add, remove, and manage devices in Defender for Business, endpoint protection for small and medium sized businesses.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: how-to
-ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.reviewer: inbadian, shlomiakirav
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
@@ -20,9 +19,6 @@ ms.collection:
 ---
 
 # Manage devices in Microsoft Defender for Business
-
-> [!NOTE]
-> Microsoft Defender for Business is now included in [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
 In Microsoft Defender for Business, you can manage devices as follows:
 
