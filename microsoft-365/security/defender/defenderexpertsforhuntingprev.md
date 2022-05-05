@@ -46,7 +46,7 @@ advanced threats and identify the scope and impact of malicious activity associa
 - **Hunter-trained AI** – Our Hunting Experts share their learning back into the automated tools they use to improve threat discovery and prioritization. 
 - **Reports** – An interactive report summarizing what we hunted, what we found, and what we recommended
 
-## Apply for Microsoft Defender Experts for Hunting preview
+## Apply for Microsoft Defender Experts for Hunting service preview
 
 >[!IMPORTANT]
 >Before you apply, make sure to discuss the eligibility requirements for Hunting Experts with your Microsoft Technical Service provider and account team.
