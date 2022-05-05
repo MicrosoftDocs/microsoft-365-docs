@@ -73,7 +73,7 @@ You can only place the order after you've accepted the terms and conditions. Sel
 
 ## Start using your Microsoft Defender Experts for Hunting service preview
 
-Around six hours after you place your order and get confirmation, you will receive a welcome email after six hours, that says your Microsoft Defender Experts preview is set up and ready to use. Our experts will immediately start hunting for advanced threats inside your environment.
+Around six hours after you place your order and get confirmation, you will receive a welcome email that says your Microsoft Defender Experts preview is set up and ready to use. Our experts will immediately start hunting for advanced threats inside your environment.
 
 However, the preview is filling up fast and availability is very limited. If we can't get you in, we'll reach out to you soon as Microsoft Defender Experts for Hunting service is ready for generally availability. 
 
@@ -102,23 +102,23 @@ The option to **Consult a threat expert** is available in several places through
 
 ### Device page actions menu
 
-![device page actions menu](../../media/Device-page-actions-menu.png)
+![The Microsoft Defender Experts for Hunting - Experts on Demand menu option in the Device page action menu in the Microsoft 365 Defender portal](../../media/mte/device-actions-mte-highlighted.png)
 
 ### Device inventory page flyout menu
 
-![device page inventory flyout menu](../../media/Device-inventory-page-flyout-menu.png)
+![The Microsoft Defender Experts for Hunting - Experts on Demand menu option in the Device inventory page menu in the Microsoft 365 Defender portaldevice page inventory flyout menu](../../media/mte/device-inventory-mte-highlighted.png)
 
 ### Alerts page flyout menu
 
-![alerts page flyout menu](../../media/Alerts-page-flyout-menu.png)
+![The Microsoft Defender Experts for Hunting - Experts on Demand menu option in the Alerts page in the Microsoft 365 Defender portal](../../media/mte/alerts-actions-mte-highlighted.png)
 
 ### Incidents page actions menu
-
-![incidents page menu](../../media/incidents-page-actions-menu.png)
+The Microsoft Defender Experts for Hunting - Experts on Demand menu option in the Device page action menu in the Microsoft 365 Defender portal
+![The Microsoft Defender Experts for Hunting - Experts on Demand menu option in the Incidents page in the Microsoft 365 Defender portal](../../media/mte/incidents-action-mte-highlighted.png)
 
 ### Incidents inventory page
 
-![incidents inventory menu](../../media/Incidents-inventory-page.png)
+![The Microsoft Defender Experts for Hunting - Experts on Demand menu option in the incidents inventory page in the Microsoft 365 Defender portal](../../media/mte/alerts-actions-mte-highlighted.png)
 
 >[!NOTE]
 > If you would like to track the status of your Experts on Demand cases through Microsoft Services Hub, reach out to your Customer Success Account Manager. Watch this **[video](https://www.microsoft.com/videoplayer/embed/RE4pk9f)** for a quick overview of the Microsoft Services Hub.
