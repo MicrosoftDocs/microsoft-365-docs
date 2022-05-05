@@ -36,7 +36,7 @@ landingContent:
           - text: Manage your data lifecycle
             url: /microsoft-365/compliance/data-lifecycle-management
           - text: Encrypt your data
-            url: /microsoft-365/compliance/ome
+            url: /microsoft-365/compliance/encryption
           - text: Control your encryption keys
             url: /microsoft-365/compliance/customer-key-overview
           - text: Import and archive non-Microsoft data
