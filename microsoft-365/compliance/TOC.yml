@@ -378,6 +378,30 @@
                 href: sit-defn-all-full-names.md
               - name: All medical terms and conditions
                 href: sit-defn-all-medical-terms-conditions.md
+              - name: All Physical Addresses
+                href: sit-defn-all-physical-addresses.md
+              - name: Argentina national identity (DNI) number
+                href: sit-defn-argentina-national-identity-numbers.md
+              - name: Argentina Unique Tax Identification Key
+                href: sit-defn-argentina-unique-tax-identification-key.md
+              - name: Australia bank account number
+                href: sit-defn-australia-bank-account-number.md
+              - name: Australia business number
+                href: sit-defn-australia-business-number.md
+              - name: Australia company number
+                href: sit-defn-australia-company-number.md
+              - name: Australia driver's license number
+                href: sit-defn-australia-driver's-license-number.md
+              - name: Australia medical account number
+                href: sit-defn-australia-medical-account-number.md
+              - name: Australia passport number
+                href: sit-defn-australia-passport-number.md
+              - name: Australia physical addresses
+                href: sit-defn-australia-physical-addresses.md
+              - name: Australia tax file number
+                href: sit-defn-australia-tax-file-number.md
+              - name: Austria driver's license number
+                href: sit-defn-austria-driver's-license-number.md
           - name: Sensitive information type functions
             href: sit-functions.md
           - name: Custom sensitive information type filters reference

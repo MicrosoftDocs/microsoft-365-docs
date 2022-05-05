@@ -25,19 +25,19 @@ description: "All full names sensitive information type entity definition."
 
 All full names is a bundled named entity. It detects full names for people from all supported countries/regions, which include Australia, China, Japan, U.S., and countries in the EU. Use this SIT to detect all possible matches of full names.
 
-### Format
+## Format
 
 Various.
 
-### Pattern
+## Pattern
 
 Various.
 
-### Checksum
+## Checksum
 
 No.
 
-### Description
+## Description
 
 This named entity SIT matches personal names that a human would identify as a name with high confidence. For example, if a string is found consisting of a given name and is followed by a family name then a match is made with high confidence. It uses three primary resources:
 
@@ -49,7 +49,7 @@ The three resources are different for each country.  The strings *Olivia Wilson*
 
 In addition, patterns that a human would see as indicative of names are also matched with appropriate confidence. Like *O. Wilson*, *O.P. Wilson*, *Dr. O. P. Wilson*, *Wilson, O.P.* or *T. Richard, Jr.* would be matches.
 
-### Supported languages
+## Supported languages
 
 - English
 - Bulgarian
