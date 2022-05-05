@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.date: 04/21/2022
+ms.date: 05/04/2022
 ms.collection: 
 - Strat_O365_IP
 - M365-security-compliance
@@ -41,6 +41,8 @@ The access log contains entries for messages sent through the encrypted message 
 - External user read messages or attachments
 - Attachment download
 - mail replies and forward
+
+For more information on the message access log schema, see [Search the audit log in the compliance portal](search-the-audit-log-in-security-and-compliance.md#encrypted-message-portal-activities).
 
 ## Search for events in the message access logs
 
