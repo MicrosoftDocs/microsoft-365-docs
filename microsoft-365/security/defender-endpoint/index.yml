@@ -31,7 +31,7 @@ landingContent:
           url:  microsoft-defender-endpoint.md
         - text: What is Defender for Endpoint Plan 1?
           url: defender-endpoint-plan-1.md
-        - text: Compare Defender for Endpoint Plan 1 to Plan 2
+        - text: Compare Defender for Endpoint Plans
           url: defender-endpoint-plan-1-2.md
       - linkListType: whats-new
         links:
@@ -119,8 +119,8 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-        - text: Threat & vulnerability management
-          url: next-gen-threat-and-vuln-mgt.md
+        - text: Defender vulnerability management
+          url: ../defender-vulnerability-management/What-is-defender-vulnerability-management.md
         - text: Attack surface reduction
           url: overview-attack-surface-reduction.md
         - text: Next-generation protection
