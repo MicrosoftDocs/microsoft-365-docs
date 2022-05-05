@@ -29,9 +29,7 @@ Microsoft Defender for Endpoint is an enterprise endpoint security platform desi
 
 You can use this article to help clarify what protection is provided by the different features available in Defender for Endpoint Plan 1, Defender for Endpoint Plan 2 and the Microsoft Defender Vulnerability Management Add-on.
 
-## Compare Defender for Endpoint plans
-
-The following table describes what's included in each plan at a high level. <br/><br/>
+## Compare features in Defender for Endpoint Plan 1, Defender for Endpoint Plan 2 and the Microsoft Defender Vulnerability Management Add-on.
 
 | [Defender for Endpoint Plan 1](defender-endpoint-plan-1.md) | [Defender for Endpoint Plan 2](microsoft-defender-endpoint.md) | [Microsoft Defender Vulnerability Management Add-on](../defender-vulnerability-management/defender-vulnerability-management-capabilities.md)|
 |:---|:---|:---|

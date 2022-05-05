@@ -89,7 +89,7 @@ Defender for Endpoint uses the following combination of technology built into Wi
 
 Built-in core vulnerability management capabilities use a modern risk-based approach to the discovery, assessment, prioritization, and remediation of endpoint vulnerabilities and misconfigurations. To further enhance your ability to assess your security posture and reduce risk, a new Defender Vulnerability Management Add-on for Plan 2 is available that provides additional premium vulnerability management capabilities.
 
-For more information on the different vulnerability management capabilities available to you, see [compare vulnerability management capabilities](compare-vulnerability-capabilities.md).
+For more information on the different vulnerability management capabilities available to you, see [compare vulnerability management capabilities](../defender-vulnerability-management/defender-vulnerability-management-capabilities.md).
 
 <a name="asr"></a>
 
