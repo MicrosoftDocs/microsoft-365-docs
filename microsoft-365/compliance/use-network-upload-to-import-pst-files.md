@@ -260,7 +260,7 @@ The next step is to create the PST Import job in the Import service in Microsoft
 3. On the **Import** tab, click ![Add Icon.](../media/ITPro-EAC-AddIcon.gif) **New import job**.
 
    > [!NOTE]
-   > You have to be assigned the appropriate permissions to access the **Import** page in the compliance portal to create an import job. See the **Before you begin** section for more information. 
+   > You have to be assigned the appropriate permissions to access the **Import** page in the compliance portal to create an import job. See the **Before you import PST files** section for more information. 
 
 4. Type a name for the PST import job, and then click **Next**. Use lowercase letters, numbers, hyphens, and underscores. You can't use uppercase letters or include spaces in the name.
 
