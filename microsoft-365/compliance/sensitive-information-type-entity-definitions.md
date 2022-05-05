@@ -5216,7 +5216,7 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 
 These entities are in the EU Driver's License Number and are sensitive information types.
 
-- [Austria](sit-defn-austria-driver's-license-number.md)
+- [Austria](sit-defn-austria-drivers-license-number.md)
 - [Belgium](#belgium-drivers-license-number)
 - [Bulgaria](#bulgaria-drivers-license-number)
 - [Croatia](#croatia-drivers-license-number)
