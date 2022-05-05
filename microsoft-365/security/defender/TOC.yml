@@ -331,7 +331,7 @@
        - name: Collaborate with Microsoft Defender Experts for Hunting
          items:
               - name: Overview
-                href: defender-experts-for-hunting.md
+                href: defender-experts-for-hunting-prev.md
     - name: Security operations guide
       items: 
        - name: Overview
