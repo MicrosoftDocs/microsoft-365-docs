@@ -390,8 +390,8 @@
                 href: sit-defn-australia-business-number.md
               - name: Australia company number
                 href: sit-defn-australia-company-number.md
-              - name: Australia driver's license number
-                href: sit-defn-australia-driver's-license-number.md
+              - name: Australia drivers license number
+                href: sit-defn-australia-drivers-license-number.md
               - name: Australia medical account number
                 href: sit-defn-australia-medical-account-number.md
               - name: Australia passport number
@@ -400,8 +400,8 @@
                 href: sit-defn-australia-physical-addresses.md
               - name: Australia tax file number
                 href: sit-defn-australia-tax-file-number.md
-              - name: Austria driver's license number
-                href: sit-defn-austria-driver's-license-number.md
+              - name: Austria drivers license number
+                href: sit-defn-austria-drivers-license-number.md
           - name: Sensitive information type functions
             href: sit-functions.md
           - name: Custom sensitive information type filters reference

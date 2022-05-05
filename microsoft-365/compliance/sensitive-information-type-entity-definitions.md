@@ -43,12 +43,12 @@ This article is a list of all sensitive information type (SIT) entity definition
 - [Australia bank account number](sit-defn-australia-bank-account-number.md)
 - [Australia business number](sit-defn-australia-business-number.md)
 - [Australia company number](sit-defn-australia-business-number.md)
-- [Australia driver's license number](sit-defn-australia-driver's-license-number.md)
+- [Australia drivers license number](sit-defn-australia-driver's-license-number.md)
 - [Australia medical account number](sit-defn-australia-medical-account-number.md)
 - [Australia passport number](sit-defn-australia-passport-number.md)
 - [Australia physical addresses](sit-defn-australia-physical-addresses.md)
 - [Australia tax file number](sit-defn-australia-tax-file-number.md)
-- [Austria driver's license number](sit-defn-austria-driver's-license-number.md)
+- [Austria drivers license number](sit-defn-austria-driver's-license-number.md)
 
 
 
