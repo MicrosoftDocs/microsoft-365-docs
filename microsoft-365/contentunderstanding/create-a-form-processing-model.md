@@ -36,7 +36,7 @@ Creating a form processing model involves the following steps:
 
 ## Requirements
 
-For users to create a form processing model, admins will need to:
+For users to create a form processing model from a SharePoint document library, admins will need to:
 
 - **Assign a SharePoint Syntex license** to users who will be creating forms processing models or uploading documents into that library. If users will be only viewing or interacting with documents already there, they do not require a license.
 
