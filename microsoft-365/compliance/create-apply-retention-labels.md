@@ -83,7 +83,7 @@ To edit an existing retention label policy (the policy type is **Publish**), sel
 
 If you publish retention labels to SharePoint or OneDrive, those labels typically appear for users to select within one day. However, allow up to seven days. 
 
-If you publish retention labels to Exchange, it can take up to seven days for those retention labels to appear for users, and the mailbox must contain at least 10 MB of data.
+If you publish retention labels to Exchange, it can take up to seven days for those retention labels to appear for users. As with all retention settings for Exchange, the mailbox must contain at least 10 MB of data.
 
 ![Diagram of when published labels take effect.](../media/retention-labels-published-timings.png)
 
