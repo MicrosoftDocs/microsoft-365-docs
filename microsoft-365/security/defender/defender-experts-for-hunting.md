@@ -52,9 +52,9 @@ If you haven’t done so yet, you can apply for Hunting Experts:
 
 1. Click [**Apply**](https://aka.ms/expandedMTEprev). Only the global administrators can register and complete the application process. If you’re not a global administrator, contact your global administrator to fill out the application form.
 2. Enter your **company email ID** and **Tenant ID**.
-    a. To find your tenant ID, click the **Where do I find my Tenant ID** to go to the Microsoft 365 Defender portal.
-    b. From the navigation pane, go to **Settings > Defender 365** to view the tenant ID.
-    c. Copy the tenant ID and paste it in the form.
+    - To find your tenant ID, click the **Where do I find my Tenant ID** to go to the Microsoft 365 Defender portal.
+    - From the navigation pane, go to **Settings > Defender 365** to view the tenant ID.
+    - Copy the tenant ID and paste it in the form.
 3. Select **Submit**. You will get a confirmation message that your application has been received.  
 4. Upon approval, you will receive an email to register.
 
