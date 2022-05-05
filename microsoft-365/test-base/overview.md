@@ -20,7 +20,7 @@ f1.keywords: NOCSH
 
 Test Base is an Azure service that enables data-driven application testing while providing user access to intelligent testing from anywhere in the world.
 
-The following entities are encouraged to onboard their applications, binaries, and test scripts onto the Test Base for Microsoft 365 service: Independent Software Vendors (ISVs), System Integrators (Sis) to validate their applications and IT Professionals who want to validate their line-of-business (LOB) applications through integration with Microsoft Intune.
+The following entities are encouraged to onboard their applications, binaries, and test scripts onto the Test Base for Microsoft 365 service: Independent Software Vendors (ISVs), System Integrators (SIs) to validate their applications and IT Professionals who want to validate their line-of-business (LOB) applications through integration with Microsoft Intune.
 
 ## Why test your application with Test Base?
 
@@ -44,7 +44,8 @@ However, if the package failed any test, then the customer can also leverage Ins
 
 With Test Base, the customer can use a single location to manage all packages being tested, which can also facilitate uploading and updating packages to generate new application versions as needed.
 
-**Note So that customers can take advantage of pre-release update content, they must specifically request access to it. Once your request for access to pre-release updates is approved, your uploaded packages will automatically get scheduled to be tested against the pre-release Windows updates for the OS versions selected during onboarding**.
+> [!NOTE]
+> **So that customers can take advantage of pre-release update content, they must specifically request access to it. Once your request for access to pre-release updates is approved, your uploaded packages will automatically get scheduled to be tested against the pre-release Windows updates for the OS versions selected during onboarding**.
 
 Then, as new Windows pre-release updates become available, application packages are automatically tested with new pre-release content. Thereafter, an additional round of insights may be required. If customers do not specifically request access, then application packages will be tested against only the current released version of Windows.
 
