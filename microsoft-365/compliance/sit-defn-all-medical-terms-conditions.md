@@ -29,15 +29,15 @@ All medical terms and conditions is a bundled named entity that detects medical 
 
 Dictionary
 
-### Pattern
+## Pattern
 
 Dictionary
 
-### Checksum
+## Checksum
 
 No
 
-### Description
+## Description
 
 This bundled named entity matches text that mentions medical conditions that are present in curated dictionaries. There's one curated dictionary per supported language. The dictionaries are from many international medical resources. The dictionaries include as many medical conditions as possible without risking a large number of false positives. Each entry contains the different forms that a single condition is commonly written in to ensure coverage, for example:
 
@@ -45,7 +45,7 @@ This bundled named entity matches text that mentions medical conditions that are
 - *tuberculosis*
 - *phthisis pulmonalis*
 
-### Contains
+## Contains
 
 This bundled named entity SIT contains these individual SITs.
 
