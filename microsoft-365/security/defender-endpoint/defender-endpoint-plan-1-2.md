@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Endpoint plans
+title: Compare Microsoft Defender for Endpoint plans
 description: Compare Defender for Endpoint Plan 1 to Plan 2. Learn about the differences between the plans and select the plan that suits your organization's needs.
 keywords: Defender for Endpoint, advanced threat protection, endpoint protection
 search.appverid: MET150  
@@ -19,7 +19,7 @@ ms.collection:
 - m365initiative-defender-endpoint
 ---
 
-# Microsoft Defender for Endpoint plans
+# Compare Microsoft Defender for Endpoint plans
 
 Microsoft Defender for Endpoint is an enterprise endpoint security platform designed to help enterprise networks prevent, detect, investigate, and respond to advanced threats. Defender for Endpoint provides advanced threat protection that includes antivirus, antimalware, ransomware mitigation, and more, together with centralized management and reporting. You can choose from the following options for Microsoft Defender for Endpoint:
 
@@ -28,8 +28,6 @@ Microsoft Defender for Endpoint is an enterprise endpoint security platform desi
 - [Microsoft Defender Vulnerability Management Add-on](../defender-vulnerability-management/defender-vulnerability-management-capabilities.md)
 
 You can use this article to help clarify what protection is provided by the different features available in Defender for Endpoint Plan 1, Defender for Endpoint Plan 2 and the Microsoft Defender Vulnerability Management Add-on.
-
-## Compare features in Defender for Endpoint Plan 1, Defender for Endpoint Plan 2 and the Microsoft Defender Vulnerability Management Add-on.
 
 | [Defender for Endpoint Plan 1](defender-endpoint-plan-1.md) | [Defender for Endpoint Plan 2](microsoft-defender-endpoint.md) | [Microsoft Defender Vulnerability Management Add-on](../defender-vulnerability-management/defender-vulnerability-management-capabilities.md)|
 |:---|:---|:---|
