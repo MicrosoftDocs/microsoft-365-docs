@@ -43,7 +43,7 @@ You can also get product updates and important notifications through the [messag
 ## May 2022
 - (Preview) You can now [apply](https://aka.ms/expandedMTEprev) for Hunting Experts.
 - (Preview) You can now receive targeted attack notifications for threat monitoring and analysis.
-- You can now collaborate with Experts on Demand.
+- (Preview) You can now collaborate with Experts on Demand.
 
 ## April 2022
 - (Preview) [Actions](advanced-hunting-take-action.md) can now be taken on email messages straight from hunting query results. Emails can be moved to other folders or deleted permanently. 
