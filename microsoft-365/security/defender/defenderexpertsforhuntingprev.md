@@ -36,9 +36,18 @@ Microsoft Defender Experts for Hunting (Hunting Experts) is a managed threat hun
 
 After your application is accepted, you'll receive targeted attack notifications from Hunting Experts. These notifications will help you protect your organization's endpoints, email, and identities. You will also receive access to Experts on Demand, that lets you get expert advice about threats your organization is facing. You can consult experts and seek help with the threats your organization faces. In this preview, you can try the service for free and enjoy the following capabilities:
 
-- **Targeted attack notification** - Provides proactive hunting for the most important threats to your network, including human adversary intrusions, hands-on-keyboard attacks, or advanced attacks like cyber-espionage. These notifications show up as new alerts in  Microsoft 365 Defender and Azure Sentinel portals.
-- **Experts on Demand** - Click a button to consult with an assigned expert threat analyst.
-- **Reports** - What we hunted, what we found, what we recommended.
+- **Threat hunting and analysis** - Microsoft Threat Experts look deeper to expose 
+advanced threats and identify the scope and impact of malicious activity associated with 
+human adversaries or hands-on-keyboard attacks. 
+- **Targeted attack notification** - Notifications show up as incidents in Microsoft 365 
+Defender, helping to improve your security operations' incident response with specific 
+information about the scope, method of entry, and remediation instructions. 
+- **Experts on Demand** - Consult a Microsoft Threat Expert about a specific incident, 
+nation-state actor, or attack vector. 
+- **Hunter-trained AI** – Our Microsoft Threat Experts share their learning back into the 
+automated tools they use to improve threat discovery and prioritization. 
+- **Reports** - An interactive report summarizing what we hunted, what we found, and what 
+we recommended
 
 ## Apply for Hunting Experts preview
 
