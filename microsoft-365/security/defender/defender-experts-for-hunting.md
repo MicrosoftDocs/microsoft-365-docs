@@ -88,7 +88,7 @@ The targeted attack notification capability includes:
 
 See the screenshot of a sample below:
 
-[Annotated screenshot of a sample Hunting Experts targetted attack notification]()
+![Annotated screenshot of a sample Hunting Experts targetted attack notification](../../media/sample-hunting-experts-tan.png)
 
 ## Collaborate with experts on demand
 

@@ -328,7 +328,7 @@
                 href: microsoft-threat-experts.md
               - name: Configure and manage Microsoft Threat Experts capabilities
                 href: configure-microsoft-threat-experts.md
-       - name: Collaborate with Microsoft Defender Experts
+       - name: Collaborate with Microsoft Defender Experts for Hunting
          items:
               - name: Overview
                 href: defender-experts-for-hunting.md
