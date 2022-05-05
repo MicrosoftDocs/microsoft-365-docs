@@ -64,7 +64,9 @@ You need to follow these steps to join the preview:
 3. Go to **Settings > Microsoft Defender Experts**.
 4. Read the **Microsoft Defender Experts for Hunting preview terms and conditions**. If you have any questions or concerns, contact the Microsoft Defender Experts Team at defenderexpertsphelp@microsoft.com.
 5. Click **Accept**, to accept the terms and conditions.
-6. Get your free license in [Microsoft 365 admin center](https://www.microsoft.com/en-us/microsoft-365/business/office-365-administration). In the **Checkout** page, select **Place order**.  
+6. Get your free license in [Microsoft 365 admin center](https://www.microsoft.com/en-us/microsoft-365/business/office-365-administration). 
+You can only place the order after you've accepted the terms and conditions. Select **Get license** to initiate provisioning in the admin center. This will take you to the checkout page to verify the order details. The service might become commercially available less than 6 months after you begin your free preview.  Microsoft reserves the right to end your preview at that time.
+7. In the **Checkout** page, select **Place order**.  
 
 ## Start using your expanded Microsoft Defender Experts service preview
 
