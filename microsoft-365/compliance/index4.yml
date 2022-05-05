@@ -35,10 +35,8 @@ landingContent:
             url: /microsoft-365/compliance/dlp-learn-about-dlp
           - text: Manage your data lifecycle
             url: /microsoft-365/compliance/data-lifecycle-management
-          - text: Encrypt your data
+          - text: Encrypt your data and control your encryption keys
             url: /microsoft-365/compliance/encryption
-          - text: Control your encryption keys
-            url: /microsoft-365/compliance/customer-key-overview
           - text: Import and archive non-Microsoft data
             url: /microsoft-365/compliance/archiving-third-party-data
           - text: Extend sensitivity labels to third-party apps and services
