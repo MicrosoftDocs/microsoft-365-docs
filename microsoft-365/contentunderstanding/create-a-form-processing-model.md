@@ -42,11 +42,9 @@ For users to create a form processing model from a SharePoint document library, 
 
 - **Assign the environment maker role** (or special role created for SharePoint Syntex by your Power Platform admin) to users who will be creating models in the document libraries. If users will be only using or referencing the model in their own custom Power Platform role outside of what SharePoint Syntex has created, they will need to be assigned the basic user role. 
 
-- **Enable form processing on the document library**. Users can only create a form processing model in the SharePoint document libraries for which it's been enabled. If form processing is enabled, you'll be able to see the **Automate** > **AI Builder** > **Create a model to process forms** menu in your document library.
+- **Enable form processing on the document library**. Users can only create a form processing model in the SharePoint document libraries for which it's been enabled. If form processing is enabled, users will be able to see the **Automate** > **AI Builder** > **Create a model to process forms** menu in their document libraries.
 
    ![Screenshot showing the AI Builder model.](../media/content-understanding/create-ai-builder-model2.png)
-
-   If you need processing enabled on your document library, contact your SharePoint administrator.
 
 ## Step 1: Create a form processing model
 
