@@ -216,6 +216,7 @@
 #### [Configure Microsoft Defender Security Center time zone settings](time-settings.md)
 
 ## [Detect threats and protect endpoints]()
+### [Microsoft Defender Vulnerability Management](../defender-vulnerability-management/index.yml)
 ### [Device discovery]()
 #### [Device discovery overview](device-discovery.md)
 #### [Configure device discovery](configure-device-discovery.md)
@@ -363,8 +364,6 @@
 
 #### [Increase compliance to the security baseline](configure-machines-security-baseline.md)
 #### [Optimize attack surface reduction rule deployment and detections](configure-machines-asr.md)
-
-## [Defender for Endpoint vulnerability management](compare-vulnerability-capabilities.md)
 
 ## [Guidance for active threats and campaigns]()
 ### [Manage the Log4Shell vulnerability](tvm-manage-log4shell-guidance.md)

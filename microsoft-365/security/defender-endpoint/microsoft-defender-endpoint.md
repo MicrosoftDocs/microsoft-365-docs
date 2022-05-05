@@ -32,10 +32,8 @@ ms.technology: mde
 Microsoft Defender for Endpoint is an enterprise endpoint security platform designed to help enterprise networks prevent, detect, investigate, and respond to advanced threats.
 
 > [!TIP]
-> Microsoft Defender for Endpoint has a new add-on available for Plan 2. This article describes the features and capabilities that are included in Microsoft Defender for Endpoint Plans 1 and 2, and in the new Defender for Endpoint Plan 2 add-on. [Learn more about Microsoft Defender for Endpoint Plans](defender-endpoint-plan-1-2.md).
->
-> Microsoft Defender for Endpoint is available in two plans: Defender for Endpoint Plan 1 and Plan 2. This article describes the features and capabilities that are included in each plan. [Learn more about Microsoft Defender for Endpoint Plan 1 and Plan 2](defender-endpoint-plan-1-2.md).
-> 
+> Microsoft Defender for Endpoint is available in two plans: Defender for Endpoint Plan 1 and Plan 2. A new Microsoft Defender Vulnerability Management Add-on is now available for Plan 2.
+This article describes the features and capabilities that are included in each plan and the new Defender Vulnerability Management Add-on. [Learn more about Microsoft Defender for Endpoint Plans](defender-endpoint-plan-1-2.md).
 
 <p><p>
 
@@ -52,7 +50,7 @@ Defender for Endpoint uses the following combination of technology built into Wi
 <center><h2>Microsoft Defender for Endpoint</center></h2>
 <table>
 <tr>
-<td><a href="#tvm"><center><img src="images/TVM_icon.png" alt="Vulnerability Management"> <br><b> Vulnerability Management</b></center></a></td>
+<td><a href="#tvm"><center><img src="images/TVM_icon.png" alt="Vulnerability Management"> <br><b> Core vulnerability management</b></center></a></td>
 <td><a href="#asr"><center><img src="images/asr-icon.png" alt="Attack surface reduction"><br><b>Attack surface reduction</b></center></a></td>
 <td><center><a href="#ngp"><img src="images/ngp-icon.png" alt="Next-generation protection"><br> <b>Next-generation protection</b></a></center></td>
 <td><center><a href="#edr"><img src="images/edr-icon.png" alt="Endpoint detection and response"><br> <b>Endpoint detection and response</b></a></center></td>
@@ -83,9 +81,9 @@ Defender for Endpoint uses the following combination of technology built into Wi
 
 <a name="tvm"></a>
 
-**[Vulnerability management](next-gen-threat-and-vuln-mgt.md)**
+**[Core vulnerability management](../defender-vulnerability-management/What-is-defender-vulnerability-management.md)**
 
-Built-in core vulnerability management capabilities use a game-changing risk-based approach to the discovery, prioritization, and remediation of endpoint vulnerabilities and misconfigurations. To further enhance your ability to assess your security posture and reduce risk, a new add-on for Microsoft Defender for Endpoint Plan 2 is available that provides additional premium vulnerability management capabilities.
+Built-in core vulnerability management capabilities use a modern risk-based approach to the discovery, assessment, prioritization, and remediation of endpoint vulnerabilities and misconfigurations. To further enhance your ability to assess your security posture and reduce risk, a new Defender Vulnerability Management Add-on for Plan 2 is available that provides additional premium vulnerability management capabilities.
 
 For more information on the different vulnerability management capabilities options available to you, see [compare vulnerability management capabilities](compare-vulnerability-capabilities.md).
 
