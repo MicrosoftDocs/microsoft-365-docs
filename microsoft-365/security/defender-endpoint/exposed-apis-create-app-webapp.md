@@ -138,6 +138,7 @@ $authBody = [Ordered] @{
 }
 $authResponse = Invoke-RestMethod -Method Post -Uri $oAuthUri -Body $authBody -ErrorAction Stop
 $token = $authResponse.access_token
+$token
 ```
 
 ### Use C#:
@@ -166,6 +167,7 @@ The following code was tested with NuGet Microsoft.IdentityModel.Clients.ActiveD
     ClientCredential clientCredential = new ClientCredential(appId, appSecret);
     AuthenticationResult authenticationResult = auth.AcquireTokenAsync(wdatpResourceId, clientCredential).GetAwaiter().GetResult();
     string token = authenticationResult.AccessToken;
+    console.write(token)
     ```
 
 
