@@ -1,0 +1,30 @@
+---
+title: How to enable, disable, and manage Whiteboard data
+ms.author: chucked
+author: chuckedmonson
+manager: alexfaulkner
+ms.reviewer: 
+audience: admin
+ms.topic: article
+ms.custom: 
+ms.prod: microsoft-365-enterprise
+search.appverid: MET150
+ms.collection: 
+ms.localizationpriority: medium
+description: Learn how to enable, disable, and manage Whiteboard data
+
+---
+
+# How to enable, disable, and manage Whiteboard data
+
+## Manage Whiteboard Access
+
+Whiteboard on OneDrive for Business is enabled by default for applicable Microsoft 365 tenants. It can be enabled or disabled at a tenant-wide level. You should also ensure that “Microsoft Whiteboard Services” is set to enabled in the Azure Active Directory Admin Center > Enterprise Applications.
+
+Controlling access to Whiteboard can be done in the following ways:
+1. Enable or disable Whiteboard for your entire tenant using the SharePoint Admin PSH module
+1. Show or hide a whiteboard for specific users in meetings using a Teams meeting policy. The whiteboard will still be visible via web, native clients, and the Teams tab Applications.
+
+> [!NOTE]
+> Whiteboard on ODB does not appear in the Microsoft 365 Admin Center. Teams policy (#2 listed above) only hides Whiteboard entry points, it does not prevent the users from using Whiteboard. Conditional Access (#3 listed above) prevents access to Whiteboard, but does not hide the entry points.
+
