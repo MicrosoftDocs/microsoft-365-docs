@@ -2,7 +2,7 @@
 title: "Upgrading from SharePoint 2010"
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: scotv
 ms.date: 04/13/2020
 audience: ITPro
 ms.topic: conceptual

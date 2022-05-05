@@ -132,7 +132,7 @@
             - name: Office 2013, Office 2016, and Office 2019 client apps
               href: modern-auth-for-office-2013-and-2016.md
         - name: Tenant isolation in Microsoft 365
-          href: /compliance/assurance/microsoft-365-isolation-controls
+          href: /compliance/assurance/assurance-microsoft-365-isolation-controls
           items: 
             - name: Isolation and Access Control in Azure Active Directory
               href: microsoft-365-isolation-in-azure-active-directory.md
