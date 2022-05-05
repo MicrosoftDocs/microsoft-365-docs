@@ -31,8 +31,6 @@ ms.technology: m365d
 
 The table below lists the changes in navigation between the Security & Compliance Center and Microsoft 365 Defender.
 
-<br>
-
 ****
 
 |[Security & Compliance Center](https://protection.office.com)|[Microsoft 365 Defender](https://security.microsoft.com)|[Microsoft Purview compliance portal](https://compliance.microsoft.com/homepage)|[Exchange admin center](https://admin.exchange.microsoft.com)|
@@ -66,11 +64,11 @@ The left navigation, or quick launch bar, will look familiar. However, there are
 
 With the unified Microsoft 365 Defender solution, you can stitch together the threat signals and determine the full scope and impact of the threat, and how it's currently impacting the organization.
 
-![Incident1](../../media/mdo-in-m36d-nav-collapsed.png)
+:::image type="content" source="<../../media/mdo-m36d-nav-collapsed.png>" alt-text="<incident1>" border="false":::
 
 Defender for Office 365 safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools.
 
-![Email-nav-2](../../media/mdo-in-m365d-nav.png)
+:::image type="content" source="<../../media/mdo-m365d-nav.png>" alt-text="<email-nav2>" border="false":::
 
 ### Incidents and alerts
 
@@ -79,7 +77,7 @@ Brings together incident and alert management across your email, devices, and id
 - [Learn more about Investigations](incidents-overview.md)
 - [Learn more about managing alerts](/windows/security/threat-protection/microsoft-defender-atp/review-alerts)
 
-![Incidents-nav-2](../../media/m365d-incident-nav.png)
+:::image type="content" source="<../../media/m365d-incident-nav.png>" alt-text="<incident-nav2>" border="false":::
 
 ### Hunting
 
@@ -111,8 +109,8 @@ Learn more about how to [track and respond to emerging threats with threat analy
 
 Track and investigate threats to your users' email, track campaigns, and more. If you've used the Security & Compliance Center, this will be familiar.
 
-![Email-nav-2](../../media/mdo-in-m365d-nav.png)
-
+:::image type="content" source="<../../media/mdo-m365d-nav.png>" alt-text="<email-nav-2>" border="false":::
+  
 #### Email entity page
 
 The [Email entity page](../office-365-security/mdo-email-entity-page.md) *unifies* email information that had been scattered across different pages or views in the past. Investigating email for threats and trends is *centralized*. Header information and email preview are accessible through the same email page, along with other useful email-related information. Likewise, the detonation status for malicious file attachments or URLs can be found on a tab of the same page. The Email entity page empowers admins and security operations teams to understand an email threat and its status, fast, and then act quickly determine handling.
@@ -121,8 +119,8 @@ The [Email entity page](../office-365-security/mdo-email-entity-page.md) *unifie
 
 View reports, change your settings, and modify user roles.
 
-![Reports](../../media/m365d-settings-nav.png)
-
+:::image type="content" source="<../../media/m365d-settings-nav.png>" alt-text="<reports>" border="false":::
+  
 > [!NOTE]
 > DomainKeys Identified Mail (DKIM) ensures that destination email systems trust messages sent outbound from your custom domain.
 > For Defender for Office 365 users, you can now *manage and rotate* DKIM keys through Microsoft 365 Defender: <https://security.microsoft.com/threatpolicy>, or navigate to **Policy & rules** \> **Threat policies** \> \> **Rules** section \> **DKIM**.
@@ -132,8 +130,6 @@ View reports, change your settings, and modify user roles.
 ## What's changed
 
 This table is a quick reference of Threat management where change has occurred between the Security & Compliance center and the Microsoft 365 Defender portal. Click the links to read more about these areas.
-
-<br>
 
 ****
 
