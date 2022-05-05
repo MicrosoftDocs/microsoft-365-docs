@@ -77,7 +77,7 @@ Learn how to configure your Event Hub so that it can ingest events from Microsof
     :::image type="content" source="../../media/759498162a4e93cbf17c4130d704d164.png" alt-text="The event hubs properties section in the Microsoft Azure portal" lightbox="../../media/759498162a4e93cbf17c4130d704d164.png":::
 
 
-1. Once the Event Hub Namespace is created, you will need to add the App Registration Service Principal as Reader, Azure Event Hub Data Receiver, and the user who will be logging into Microsoft 365 Defender as Contributor (you can also do this at Resource Group or Subscription level).
+1. Once the Event Hub Namespace is created, you will need to add the App Registration Service Principal as Reader, Azure Event Hubs Data Receiver, and the user who will be logging into Microsoft 365 Defender as Contributor (you can also do this at Resource Group or Subscription level).
 
     You do this step at **Event Hub Namespace** \> **Access Control (IAM)** \> **Add** and verify under **Role assignments**:
 
