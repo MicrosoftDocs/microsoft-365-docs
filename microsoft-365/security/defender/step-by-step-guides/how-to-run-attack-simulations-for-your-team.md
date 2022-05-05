@@ -1,6 +1,6 @@
 ---
-title: How to run attack simulations for your team.
-description: The steps to send an Attack Simulation payload to your target users for your team or organization.
+title: How to run attack simulations for your team
+description: The steps to send an Attack Simulation payload to your target users for your team or organization for training.
 search.product: 
 search.appverid: 
 ms.prod: m365-security
