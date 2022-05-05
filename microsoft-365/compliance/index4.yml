@@ -29,9 +29,11 @@ landingContent:
         links:
           - text: Know your data
             url: /microsoft-365/compliance/sensitivity-labels
+          - text: Protect your data
+            url: /microsoft-365/compliance/information-protection-solution
           - text: Prevent data loss
             url: /microsoft-365/compliance/dlp-learn-about-dlp
-          - text: Govern your data lifecycle
+          - text: Manage your data lifecycle
             url: /microsoft-365/compliance/data-lifecycle-management
           - text: Encrypt your data
             url: /microsoft-365/compliance/ome
