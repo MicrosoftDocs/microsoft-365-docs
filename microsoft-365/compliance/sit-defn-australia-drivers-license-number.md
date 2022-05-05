@@ -1,5 +1,5 @@
 ---
-title: "Australia driver's license number entity definition"
+title: "Australia drivers license number entity definition"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -21,7 +21,7 @@ recommendations: false
 description: "Australia driver's license number sensitive information type entity definition."
 ---
 
-# Australia driver's license number
+# Australia drivers license number
 
 ## Format
 
