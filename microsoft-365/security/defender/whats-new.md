@@ -41,9 +41,7 @@ For more information on what's new with other Microsoft Defender security produc
 You can also get product updates and important notifications through the [message center](https://admin.microsoft.com/Adminportal/Home#/MessageCenter). 
 
 ## May 2022
-- (Preview) You can now [apply](https://aka.ms/expandedMTEprev) for Hunting Experts.
-- (Preview) You can now receive targeted attack notifications for threat monitoring and analysis.
-- (Preview) You can now collaborate with Experts on Demand.
+- (Preview) In line with the recently announced expansion into a new service category called [Microsoft Security Experts](http://aka.ms/MicrosoftSecurityExperts), we're introducing the availability of [Microsoft Defender Experts for Hunting](defenderexpertsforhuntingprev.md) (Hunting Experts) for public preview. Hunting Experts is for customers who have a robust security operations center but want Microsoft to help them proactively hunt for threats across Microsoft Defender data, including endpoints, Office 365, cloud applications, and identity. 
 
 ## April 2022
 - (Preview) [Actions](advanced-hunting-take-action.md) can now be taken on email messages straight from hunting query results. Emails can be moved to other folders or deleted permanently. 
