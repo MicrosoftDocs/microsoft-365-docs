@@ -1,5 +1,5 @@
 ---
-title: "Austria driver's license number entity definition"
+title: "Austria drivers license number entity definition"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,10 +18,10 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 recommendations: false
-description: "Austria driver's license number sensitive information type entity definition."
+description: "Austria drivers license number sensitive information type entity definition."
 ---
 
-# Austria driver's license number
+# Austria drivers license number
 
 ## Format
 
