@@ -26,6 +26,7 @@ ms.technology: mde
 **Applies to:**
 
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender Vulnerability Management](what-is-defender-vulnerability-management.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -35,7 +36,7 @@ Microsoft Defender for Endpoint is an enterprise endpoint security platform desi
 > [!TIP]
 > Microsoft Defender for Endpoint is available in two plans, Defender for Endpoint Plan 1 and Plan 2. A new Microsoft Defender Vulnerability Management Add-on is now available for Plan 2.
 >
-> For more information on the features and capabilities included in each plan, including the new Defender Vulnerability Management Add-on, see [Microsoft Defender for Endpoint plans](defender-endpoint-plan-1-2.md).
+> For more information on the features and capabilities included in each plan, including the new Defender Vulnerability Management Add-on, see [Compare Microsoft Defender for Endpoint plans](defender-endpoint-plan-1-2.md).
 
 <p><p>
 
