@@ -3386,8 +3386,8 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 These entities are in the EU Driver's License Number and are sensitive information types.
 
 - [Austria](sit-defn-austria-drivers-license-number.md)
-- [Belgium](#belgium-drivers-license-number)
-- [Bulgaria](#bulgaria-drivers-license-number)
+- [Belgium](sit-defn-belgium-drivers-license-number.md)
+- [Bulgaria](sit-defn-bulgaria-drivers-license-number.md)
 - [Croatia](#croatia-drivers-license-number)
 - [Cyprus](#cyprus-drivers-license-number)
 - [Czech](#czech-drivers-license-number)
@@ -3419,8 +3419,8 @@ These entities are in the EU Driver's License Number and are sensitive informati
 These entities are in the EU National Identification Number and are sensitive information types.
 
 - [Austria](sit-defn-austria-identity-card.md)
-- [Belgium](#belgium-national-number)
-- [Bulgaria](#bulgaria-uniform-civil-number)
+- [Belgium](sit-defn-belgium-national-number.md)
+- [Bulgaria](sit-defn-bulgaria-uniform-civil-number.md)
 - [Croatia](#croatia-identity-card-number)
 - [Cyprus](#cyprus-identity-card)
 - [Czech](#czech-personal-identity-number)
@@ -3451,8 +3451,8 @@ These entities are in the EU National Identification Number and are sensitive in
 These entities are in the EU passport number and are sensitive information types. These entities are in the EU passport number bundle.
 
 - [Austria](sit-defn-austria-passport-number.md)
-- [Belgium](#belgium-passport-number)
-- [Bulgaria](#bulgaria-passport-number)
+- [Belgium](sit-defn-belgium-passport-number.md)
+- [Bulgaria](sit-defn-bulgaria-passport-number.md)
 - [Croatia](#croatia-passport-number)
 - [Cyprus](#cyprus-passport-number)
 - [Czech](#czech-passport-number)
@@ -3484,7 +3484,7 @@ These entities are in the EU passport number and are sensitive information types
 These entities are in the EU Social Security Number or equivalent identification and are sensitive information types.
 
 - [Austria](sit-defn-austria-social-security-number.md)
-- [Belgium](#belgium-national-number)
+- [Belgium](sit-defn-belgium-national-number.md)
 - [Croatia](#croatia-personal-identification-oib-number)
 - [Czech](#czech-personal-identity-number)
 - [Denmark](#denmark-personal-identification-number)
@@ -3502,8 +3502,8 @@ These entities are in the EU Social Security Number or equivalent identification
 These entities are in the EU Tax identification number sensitive information type.
 
 - [Austria](sit-defn-austria-tax-identification-number.md)
-- [Belgium](#belgium-national-number)
-- [Bulgaria](#bulgaria-uniform-civil-number)
+- [Belgium](sit-defn-belgium-national-number.md)
+- [Bulgaria](sit-defn-bulgaria-uniform-civil-number.md)
 - [Croatia](#croatia-identity-card-number)
 - [Cyprus](#cyprus-tax-identification-number)
 - [Czech](#czech-personal-identity-number)

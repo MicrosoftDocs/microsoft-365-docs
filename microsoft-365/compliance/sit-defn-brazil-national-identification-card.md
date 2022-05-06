@@ -21,9 +21,9 @@ recommendations: false
 description: "Brazil national identification card (RG) sensitive information type entity definition."
 ---
 
-## Brazil national identification card (RG)
+# Brazil national identification card (RG)
 
-### Format
+## Format
 
 Registro Geral (old format): Nine digits
 
@@ -47,11 +47,11 @@ Registro de Identidade (RIC) (new format):
 - a hyphen
 - one digit that is a check digit
 
-### Checksum
+## Checksum
 
 Yes
 
-### Definition
+## Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
@@ -69,9 +69,9 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
       </Entity>
 ```
 
-### Keywords
+## Keywords
 
-#### Keyword_brazil_rg
+### Keyword_brazil_rg
 
 - Cédula de identidade
 - identity card
