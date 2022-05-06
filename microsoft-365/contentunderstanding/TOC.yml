@@ -117,6 +117,8 @@
           href: adoption-getstarted.md
         - name: Scenarios and use cases
           href: adoption-scenarios.md 
+        - name: Assess your environment
+          href: adoption-assessment-tool.md 
         - name: Run a trial
           href: trial-syntex.md 
         - name: Manage contracts in Microsoft 365
