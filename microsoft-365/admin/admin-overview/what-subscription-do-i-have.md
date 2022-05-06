@@ -25,7 +25,7 @@ description: "Learn to verify which subscriptions your organization has by going
 ms.date: 01/21/2021
 ---
 
-# What Microsoft 365 subscription do I have?
+# Which Microsoft 365 subscription do I have?
 
 If you're an admin, you can verify which subscriptions your organization has by going to the admin center.
   
