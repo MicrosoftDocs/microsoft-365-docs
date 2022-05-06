@@ -45,7 +45,7 @@ You can run a SharePoint Syntex assessment using the Microsoft 365 Assessment to
 
 - **Prebuilt model candidates** – Identify libraries where names or content types suggest a prebuilt model could be applied. 
 
-- **Syntex model usage** – Review the current use of Syntex models in your sites. 
+- **Syntex model usage** – Review the current use of SharePoint Syntex models in your sites. 
 
 - **Assessment overview** – Review the assessment results to identify any failures. 
 
