@@ -402,6 +402,36 @@
                 href: sit-defn-australia-tax-file-number.md
               - name: Austria drivers license number
                 href: sit-defn-austria-drivers-license-number.md
+              - name: Austria identity card
+                href: sit-defn-austria-identity-card.md
+              - name: Austria passport number
+                href: sit-defn-austria-passport-number.md
+              - name: Austria physical addresses
+                href: sit-defn-austria-physical-addresses.md
+              - name: Austria social security number
+                href: sit-defn-austria-social-security-number.md
+              - name: Austria tax identification number
+                href: sit-defn-austria-tax-identification-number.md
+              - name: Austria value added tax
+                href: sit-defn-austria-value-added-tax.md
+              - name: Azure DocumentDB auth key
+                href: sit-defn-azure-document-db-auth-key.md
+              - name: Azure IAAS database connection string and Azure SQL connection string
+                href: sit-defn-azure-iaas-database-connection-string-azure-sql-connection-string.md
+              - name: Azure IoT connection string
+                href: sit-defn-azure-iot-connection-string.md
+              - name: Azure publish setting password
+                href: sit-defn-azure-publish-setting-password.md
+              - name: Azure Redis cache connection string
+                href: sit-defn-azure-redis-cache-connection-string.md
+              - name: Azure SAS
+                href: sit-defn-azure-sas.md
+              - name: Azure service bus connection string
+                href: sit-defn-azure-service-bus-connection-string.md
+              - name: Azure storage account key
+                href: sit-defn-azure-storage-account-key.md
+              - name: Azure Storage account key (generic)
+                href: sit-defn-azure-storage-account-key-generic.md
           - name: Sensitive information type functions
             href: sit-functions.md
           - name: Custom sensitive information type filters reference
