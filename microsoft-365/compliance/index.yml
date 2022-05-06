@@ -28,13 +28,13 @@ landingContent:
       - linkListType: overview
         links:
           - text: Know your data
-            url: /microsoft-365/information-protection#know-your-data
+            url: /microsoft-365/compliance/information-protection#know-your-data
           - text: Protect your data
-            url: /microsoft-365/information-protection#protect-your-data
+            url: /microsoft-365/compliance/information-protection#protect-your-data
           - text: Prevent data loss
-            url: /microsoft-365/information-protection#prevent-data-loss
+            url: /microsoft-365/compliance/information-protection#prevent-data-loss
           - text: Manage your data lifecycle
-            url: /microsoft-365/manage-data-governance#microsoft-purview-data-lifecycle-management
+            url: /microsoft-365/compliance/manage-data-governance#microsoft-purview-data-lifecycle-management
           - text: Encrypt your data and control your encryption keys
             url: /microsoft-365/compliance/encryption
           - text: Import and archive non-Microsoft data
