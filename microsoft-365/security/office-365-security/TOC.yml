@@ -302,12 +302,20 @@
        href: air-report-false-positives-negatives.md
      - name: Admin review for reported messages
        href: admin-review-reported-message.md
-     - name: Recover from a ransonmware attack
+     - name: Recover from a ransomware attack
        href: recover-from-ransomware.md
      - name: Remediate malicious email
        href: remediate-malicious-email-delivered-office-365.md
      - name: Responding to a Compromised Email Account in Office 365
        href: responding-to-a-compromised-email-account.md
+     - name: Respond to a compromised connector
+       href: respond-compromised-connector.md
+     - name: Remove blocked entities
+       items:
+        - name: Remove blocked users
+          href: removing-user-from-restricted-users-portal-after-spam.md
+        - name: Remove blocked connectors
+          href: remove-blocked-connectors.md
      - name: Review and approve (or reject) pending actions
        href: air-review-approve-pending-completed-actions.md
      - name: Tune anti-phishing protection
@@ -320,8 +328,6 @@
        href: quarantine-policies.md
      - name: Release quarantined messages from shared mailboxes
        href: view-and-release-quarantined-messages-from-shared-mailboxes.md
-     - name: Remove blocked users from the Restricted Users portal
-       href: removing-user-from-restricted-users-portal-after-spam.md
      - name: Use the delist portal to remove yourself from the blocked senders list
        href: use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md
    - name: FAQ
@@ -368,7 +374,7 @@
        href: high-risk-delivery-pool-for-outbound-messages.md
      - name: Mail flow intelligence in EOP
        href: mail-flow-intelligence-in-office-365.md
-     - name: "Reference:Policies, practices, and guidelines"
+     - name: "Reference: Policies, practices, and guidelines"
        href: reference-policies-practices-and-guidelines.md
      - name: Sending mail to Office 365
        href: sending-mail-to-office-365.md
