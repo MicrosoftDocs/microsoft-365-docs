@@ -23,7 +23,7 @@ description: "Learn how to buy and manage add-ons for your Microsoft 365 for bus
 ms.date: 04/02/2021
 ---
 
-# Buy or manage Microsoft 365 for business plans add-ons
+# Buy or manage add-ons for Microsoft 365 business plans
 
 Many Microsoft 365 for business plans have add-ons that you can buy for your subscriptions. Add-ons provide more features to enhance your subscription experience.
 

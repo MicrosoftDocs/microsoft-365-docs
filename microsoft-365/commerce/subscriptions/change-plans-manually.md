@@ -21,7 +21,7 @@ description: "Change subscriptions manually by buying a new subscription and ens
 ROBOTS: NOINDEX
 ms.date: 03/17/2021
 ---
-# Change Microsoft plans manually
+# Manually change Microsoft plans
 
 ## Step 1: Decide how to change plans
 
