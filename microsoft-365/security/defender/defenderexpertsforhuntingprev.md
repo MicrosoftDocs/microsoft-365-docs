@@ -9,7 +9,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dolmont
-author: dolmont
+author: DulceMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -127,10 +127,9 @@ The Microsoft Defender Experts for Hunting - Experts on Demand menu option in th
 
 ## Opt out of preview
 
-In case you change your mind and don’t want to continue with the Defender Experts for Hunting preview, you can follow the steps to [cancel a self-service subscription](https://docs.microsoft.com/en-us/microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins?view=o365-worldwide#cancel-a-self-service-purchase-subscription).  
+In case you change your mind and don’t want to continue with the Defender Experts for Hunting preview, you can follow the steps to [cancel a self-service subscription](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins#cancel-a-self-service-purchase-subscription).
 
 ### Related topics
 
 - [Microsoft Threat Experts overview](microsoft-threat-experts.md)
-- [Microsoft Threat Experts in Microsoft 365 Overview](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-experts)
 - [Configure and manage Microsoft Threat Experts capabilities](configure-microsoft-threat-experts.md)
