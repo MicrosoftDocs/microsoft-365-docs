@@ -4425,7 +4425,7 @@ These entities are in the EU Driver's License Number and are sensitive informati
 
 These entities are in the EU National Identification Number and are sensitive information types.
 
-- [Austria](#austria-identity-card)
+- [Austria](sit-defn-austria-identity-card.md)
 - [Belgium](#belgium-national-number)
 - [Bulgaria](#bulgaria-uniform-civil-number)
 - [Croatia](#croatia-identity-card-number)
@@ -4457,7 +4457,7 @@ These entities are in the EU National Identification Number and are sensitive in
 
 These entities are in the EU passport number and are sensitive information types. These entities are in the EU passport number bundle.
 
-- [Austria](#austria-passport-number)
+- [Austria](sit-defn-austria-passport-number.md)
 - [Belgium](#belgium-passport-number)
 - [Bulgaria](#bulgaria-passport-number)
 - [Croatia](#croatia-passport-number)
@@ -4490,7 +4490,7 @@ These entities are in the EU passport number and are sensitive information types
 
 These entities are in the EU Social Security Number or equivalent identification and are sensitive information types.
 
-- [Austria](#austria-social-security-number)
+- [Austria](sit-defn-austria-social-security-number.md)
 - [Belgium](#belgium-national-number)
 - [Croatia](#croatia-personal-identification-oib-number)
 - [Czech](#czech-personal-identity-number)
@@ -4508,7 +4508,7 @@ These entities are in the EU Social Security Number or equivalent identification
 
 These entities are in the EU Tax identification number sensitive information type.
 
-- [Austria](#austria-tax-identification-number)
+- [Austria](sit-defn-austria-tax-identification-number.md)
 - [Belgium](#belgium-national-number)
 - [Bulgaria](#bulgaria-uniform-civil-number)
 - [Croatia](#croatia-identity-card-number)

@@ -21,7 +21,7 @@ recommendations: false
 description: "Azure Redis cache connection string sensitive information type entity definition."
 ---
 
-## Azure Redis cache connection string
+# Azure Redis cache connection string
 
 ## Format
 

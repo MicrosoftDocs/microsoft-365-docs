@@ -21,7 +21,7 @@ recommendations: false
 description: "Azure publish setting password sensitive information type entity definition."
 ---
 
-## Azure publish setting password
+# Azure publish setting password
 
 ### Format
 
