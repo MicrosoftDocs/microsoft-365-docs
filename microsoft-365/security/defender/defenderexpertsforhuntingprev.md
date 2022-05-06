@@ -37,7 +37,7 @@ Microsoft Defender Experts for Hunting (Defender Experts for Hunting) is a manag
 Watch this short video to learn more about how Microsoft Defender Experts for Hunting can help you track the latest advanced threats in your environment.
 >[!VIDEO https://youtu.be/4t1JgE0X0jc]
 
-After your application is accepted, you'll receive targeted attack notifications from Defender Experts for Hunting. These notifications will help you protect your organization's endpoints, email, and identities. You will also receive access to Experts on Demand, that lets you get expert advice about threats your organization is facing. You can consult experts and seek help with the threats your organization faces. In this preview, you can try the service for free and enjoy the following capabilities:
+Defender Experts for Hunting provides targeted attack notifications directly through the Microsoft 365 Defender portal. These notifications will help you protect your organization's endpoints, email, cloud apps and identities. You will also receive access to Experts on Demand, that lets you click a button in the Microsoft 365 Defender portal to get expert advice about threats your organization is facing. You can consult experts and seek help with the threats your organization faces. In this preview, you can try the service for free and enjoy the following capabilities:
 
 - **Threat hunting and analysis** – Defender Experts for Hunting look deeper to expose advanced threats and identify the scope and impact of malicious activity associated with human adversaries or hands-on-keyboard attacks. 
 - **Targeted attack notification** – Notifications show up as incidents in Microsoft 365 Defender, helping to improve your security operations' incident response with specific information about the scope, method of entry, and remediation instructions. 
@@ -48,7 +48,7 @@ After your application is accepted, you'll receive targeted attack notifications
 ## Apply for Microsoft Defender Experts for Hunting service preview
 
 >[!IMPORTANT]
->Before you apply, make sure to discuss the eligibility requirements for Defender Experts for Hunting with your Microsoft Technical Service provider and account team.
+>Before you apply, make sure to discuss the eligibility requirements for Defender Experts for Hunting with your Microsoft Technical Service provider and account team. The preview is filling up fast and availability is very limited. If we can't get you in, we'll reach out to you soon as Microsoft Defender Experts for Hunting service is ready for generally availability. 
 
 If you haven’t done so yet, you can apply for Defender Experts for Hunting:
 
@@ -76,8 +76,6 @@ You can only place the order after you've accepted the terms and conditions. Sel
 ## Start using your Microsoft Defender Experts for Hunting service preview
 
 Around six hours after you place your order and get confirmation, you will receive a welcome email that says your Microsoft Defender Experts preview is set up and ready to use. Our experts will immediately start hunting for advanced threats inside your environment.
-
-However, the preview is filling up fast and availability is very limited. If we can't get you in, we'll reach out to you soon as Microsoft Defender Experts for Hunting service is ready for generally availability. 
 
 ## Receive targeted attack notification
 
