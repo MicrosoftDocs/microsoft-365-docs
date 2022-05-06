@@ -432,6 +432,36 @@
                 href: sit-defn-azure-storage-account-key.md
               - name: Azure Storage account key (generic)
                 href: sit-defn-azure-storage-account-key-generic.md
+              - name: Belgium drivers license number
+                href: sit-defn-belgium-drivers-license-number.md
+              - name: Belgium national number
+                href: sit-defn-belgium-national-number.md
+              - name: Belgium passport number
+                href: sit-defn-belgium-passport-number.md
+              - name: Belgium physical addresses
+                href: sit-defn-belgium-physical-addresses.md
+              - name: Belgium value added tax number
+                href: sit-defn-belgium-value-added-tax-number.md
+              - name: Blood test terms
+                href: sit-defn-blood-test-terms.md
+              - name: Brand medication names
+                href: sit-defn-brand-medication-names.md
+              - name: Brazil CPF number
+                href: sit-defn-brazil-cpf-number.md
+              - name: Brazil legal entity number (CNPJ)
+                href: sit-defn-brazil-legal-entity-number.md
+              - name: Brazil national identification card (RG)
+                href: sit-defn-brazil-national-identification-card.md
+              - name: Brazil physical addresses
+                href: sit-defn-brazil-physical-addresses.md
+              - name: Bulgaria drivers license number
+                href: sit-defn-bulgaria-drivers-license-number.md
+              - name: Bulgaria passport number
+                href: sit-defn-bulgaria-passport-number.md
+              - name: Bulgaria physical addresses
+                href: sit-defn-bulgaria-physical-addresses.md
+              - name: Bulgaria uniform civil number
+                href: sit-defn-bulgaria-uniform-civil-number.md
           - name: Sensitive information type functions
             href: sit-functions.md
           - name: Custom sensitive information type filters reference
