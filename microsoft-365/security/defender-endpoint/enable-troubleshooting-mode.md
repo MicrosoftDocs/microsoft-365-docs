@@ -88,17 +88,17 @@ Microsoft Defender for Endpoint troubleshooting mode allows you to troubleshoot 
 
 1. Go to the Microsoft 365 Defender portal (https://security.microsoft.com), and sign in. 
 
-1. Navigate to the device page/machine page for the device you would like to turn on troubleshooting mode. Select **Turn on troubleshooting mode**. Note that this requires "Manage security settings in Security Center" permissions for Microsoft Defender for Endpoint.
+2. Navigate to the device page/machine page for the device you would like to turn on troubleshooting mode. Select **Turn on troubleshooting mode**. Note that this requires "Manage security settings in Security Center" permissions for Microsoft Defender for Endpoint.
 
-[Need updated screenshot]
+   :::image type="content" source="../../media/ts-mode-menu.png" alt-text="Turn on troubleshooting mode" lightbox="../../media/ts-mode-menu.png":::
 
-2. Confirm you want to turn on troubleshooting mode for the device. 
+3. Confirm you want to turn on troubleshooting mode for the device. 
 
-[Need updated screenshot]
+   :::image type="content" source="../../media/ts-mode-conf-flyout.png" alt-text="The configuration flyout" lightbox="../../media/ts-mode-conf-flyout.png":::
  
-3. The device page shows the device is now in troubleshooting mode.  
+4. The device page shows the device is now in troubleshooting mode.  
 
-[Need updated screenshot]
+   :::image type="content" source="../../media/ts-mode-option-greyed-out.png" alt-text="The device is now in troubleshooting mode" lightbox="../../media/ts-mode-option-greyed-out.png":::
 
 ## Advanced hunting queries
 
