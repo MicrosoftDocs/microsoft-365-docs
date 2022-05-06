@@ -26,7 +26,7 @@ You can require any of the following conditional access options for people outsi
 - Compliant devices
 - Hybrid Azure AD joined devices
 
-When using Azure AD B2B direct connect - such as with shared channels in Teams - you can choose to trust the conditional access settings from other organizations for these options.
+When using Azure AD B2B direct connect - such as with shared channels in Teams - you can choose to trust the conditional access settings from other organizations for these options. Note that the conditional access policies are only used for access to the Files tab in the shared channel and the associated SharePoint site.
 
 ## Planning considerations for conditional access
 
