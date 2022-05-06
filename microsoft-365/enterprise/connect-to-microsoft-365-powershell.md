@@ -38,11 +38,8 @@ Currently, the Azure Active Directory PowerShell for Graph module doesn't comple
 
 ## What do you need to know before you begin?
 
->[!Note]
-> The AzureAD module is being replaced by Powershell graph SDK.
-> Get started with the Microsoft Graph PowerShell SDK
-> You can use the Microsoft Graph PowerShell SDK to access all Microsoft Graph APIs.For more information, see [Get started with the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/get-started?view=graph-powershell-beta)
-
+>[!NOTE]
+> The Azure Active Directory Module is being replaced by the Microsoft Graph PowerShell SDK. You can use the Microsoft Graph PowerShell SDK to access all Microsoft Graph APIs. For more information, see [Get started with the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/get-started).
 
 **Operating system**
 
