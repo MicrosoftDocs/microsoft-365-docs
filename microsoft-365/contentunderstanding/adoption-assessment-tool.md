@@ -41,7 +41,7 @@ You can run a SharePoint Syntex assessment using the Microsoft 365 Assessment to
 
 - **Library size** – Identify large libraries where classification and metadata can improve the content discovery experience. 
 
-- **Library modernization status** – Identify libraries which may need to be modernized to fully make use of SharePoint Syntex. 
+- **Library modernization status** – Identify libraries that might need to be modernized to fully make use of SharePoint Syntex. 
 
 - **Prebuilt model candidates** – Identify libraries where names or content types suggest a prebuilt model could be applied. 
 
@@ -53,13 +53,13 @@ You can run a SharePoint Syntex assessment using the Microsoft 365 Assessment to
 
 The SharePoint Syntex assessment is a module in the Microsoft 365 Assessment tool. To run the assessment: 
 
-- Visit the [Microsoft 365 Assessment tool documentation](https://pnp.github.io/pnpassessment/index.html) to learn more 
+1. Visit the [Microsoft 365 Assessment tool documentation](https://pnp.github.io/pnpassessment/index.html) to learn more.
 
-- [Download the tool](https://pnp.github.io/pnpassessment/using-the-assessment-tool/download.html) 
+2. [Download the tool](https://pnp.github.io/pnpassessment/using-the-assessment-tool/download.html). 
 
-- [Decide on an authentication method](https://pnp.github.io/pnpassessment/using-the-assessment-tool/setupauth.html)
+3. [Decide on an authentication method](https://pnp.github.io/pnpassessment/using-the-assessment-tool/setupauth.html).
 
-- [Configure permissions](https://pnp.github.io/pnpassessment/sharepoint-syntex/requirements.html) 
+4. [Configure permissions](https://pnp.github.io/pnpassessment/sharepoint-syntex/requirements.html). 
 
-- [Run a SharePoint Syntex assessment](https://pnp.github.io/pnpassessment/sharepoint-syntex/assess.html) 
+5. [Run a SharePoint Syntex assessment](https://pnp.github.io/pnpassessment/sharepoint-syntex/assess.html). 
 
