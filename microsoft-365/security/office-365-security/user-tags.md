@@ -39,6 +39,7 @@ After you apply system tags or custom tags to users, you can use those tags as f
 - [Compromised user report](view-email-security-reports.md#compromised-users-report)
 - [Email entity page](mdo-email-entity-page.md#other-innovations)
 - [Threat protection status report](view-email-security-reports.md#threat-protection-status-report)
+- Top senders and recipients report 
 - [Attack simulation](attack-simulation-training.md#target-users)
 - [Campaign Views](campaigns.md)
 - [Admin and user submissions](admin-submission.md)
