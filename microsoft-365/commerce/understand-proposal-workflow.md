@@ -19,16 +19,16 @@ ms.custom:
 search.appverid: MET150 
 description: "Learn about proposals to help you buy Microsoft products and services."
 ROBOTS: NOINDEX
-ms.date: 03/17/2021
+ms.date: 04/28/2022
 ---
 
 # Understand the Microsoft proposal workflow
 
 A proposal is a formal offer from Microsoft for your organization to buy Microsoft products and services. You work directly with a Microsoft representative to determine the specific products, services, and terms for your proposal.
 
-A Microsoft representative drafts a proposal that contains the items that you and your representative discussed. The representative sends you an email that has a link to the proposal site. The site contains the proposal prepared specifically for you and your organization.
+A Microsoft representative drafts a proposal that contains the items that you and your representative discussed. The representative sends you an email that has a link to the Azure marketplace portal. The site contains the proposal prepared specifically for you and your organization.
 
-After you receive the notification email, follow the link to the proposal site. After you sign into the site, you can start the proposal review process.
+After you receive the notification email, follow the link to the proposal site. After you sign in to the site, you can start the proposal review process.
 
 ## Prerequisites for buying items with a proposal
 
@@ -48,13 +48,30 @@ The Microsoft Customer Agreement (MCA) lets an organization buy Microsoft produc
 
 ## Permissions needed to sign an agreement or pay for items
 
-If you don't have an assigned role in the billing account, when you view the proposal, you're assigned the basic reader role. This role lets you view, but not take any action on, the proposal. You must be assigned the billing account owner or billing account contributor role before you can sign an agreement or buy products and services. Your billing account owner can assign this role to you.
+You must be a billing account owner or billing account contributor to successfully sign an agreement or buy products and services. If you’re a Global admin but don’t have one of those roles, you can assign the roles to yourself. If you’re not a Global admin, ask your Global admin or billing account owner to assign one of the roles to you.
+
+The billing account owner and billing account contributor roles are assigned by using either of the following methods.
+
+### Assign roles in the Microsoft 365 admin center
+
+1. In the Microsoft 365 admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Billing accounts</a> page.
+2. On the **Billing accounts** page, in the **Billing account roles** section, select **Assign roles**.
+3. In the **Assign roles** pane, search for the name of the person to whom you want to assign a role.
+4. Select the box for the role name you want the person to have, then select **Assign**.
+
+### Assign roles in the Azure portal
+
+1. In the Azure portal, go to the <a href="https://portal.azure.com/#blade/Microsoft_Azure_GTM/ModernBillingMenuBlade/Overview" target="_blank">Access control (IAM)</a> page.
+2. On the **Access control (IAM)** page, select **Add**.
+3. In the **Add permission** pane, select the **Role** to assign to the user.
+4. Select the user, then select **Save**.
 
 For more information about billing account roles, see [Understand access to billing accounts](manage-billing-accounts.md#understand-access-to-billing-accounts).
 
 If this is a new billing account, and no one has accepted an agreement, you automatically become the billing account owner, provided you:
 
-- Are the person named in the proposal, **or**
+- Are the person named in the proposal
+  **or**
 - Are already an [Azure Active Directory global admin](/azure/active-directory/roles/permissions-reference#global-administrator) for your organization
 
 ## What is the overall workflow?
@@ -151,6 +168,9 @@ This section shows a list of all items included in the proposal. The list can in
 - **Purchase now** A list of items that you pay for during checkout at the end of the proposal acceptance workflow.
 - **Discounts (applied to future charges)** A list of discounts that you receive as part of the proposal.
 - **Included** A list of items included as part of the proposal package at no additional charge. Some of these items might have a cost associated with them in the future.
+
+> [!NOTE]
+> Your proposal might include subscriptions with a future start date. For more information, see [Understand invoicing for future start dates](billing-and-payments/future-start-date.md).
 
 ### Summary
 

@@ -89,7 +89,7 @@ To configure inbound settings for an organization
 1. On the **Applications** tab, choose **Allow access** and **Select applications**.
 1. Select **Add Microsoft applications**.
 1. Select the **Office 365** application, and then choose **Select**.
-1. Select **Save** and close the **Outbound access settings** blade.
+1. Select **Save** and close the **Inbound access settings** blade.
 
 ### Configure outbound settings
 
@@ -103,7 +103,7 @@ To configure outbound settings for an organization
 1. On the **External applications** tab, choose **Allow access** and **Select external applications**.
 1. Select **Add Microsoft applications**.
 1. Select the **Office 365** application, and then choose **Select**.
-1. Select **Save** and close the **Outbound access settings** blade.
+1. Select **Save**, choose **Yes** to confirm, and close the **Outbound access settings** blade.
 
 ## See also
 

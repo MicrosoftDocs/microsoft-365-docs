@@ -453,6 +453,9 @@
               href: ome-sensitive-info-types.md
             - name: Manage message encryption
               href: manage-office-365-message-encryption.md
+
+            - name: Encrypted message portal activity log
+              href: ome-message-access-logs.md
             - name: Advanced message encryption
               href: ome-advanced-message-encryption.md
             - name: Set an expiration date for email encrypted by Microsoft Purview Advanced Message Encryption
@@ -1003,6 +1006,8 @@
           href: detailed-properties-in-the-office-365-audit-log.md
         - name: Turn auditing on or off
           href: turn-audit-log-search-on-or-off.md
+        - name: Use Customer Key to encrypt audit records
+          href: auditing-cmk-encryption.md
         - name: Use the audit log to investigate common issues
           href: auditing-troubleshooting-scenarios.md
         - name: Use sharing auditing in the audit log
