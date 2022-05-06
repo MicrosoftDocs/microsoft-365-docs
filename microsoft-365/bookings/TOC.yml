@@ -27,6 +27,8 @@
       href: add-questions.md
     - name: Set buffer time
       href: set-buffer-time.md
+    - name: Manage group attendees in Bookings
+      href: manage-attendees-bookings.md
     - name: Metrics and activity tracking
       href: metrics-and-activity-tracking.md
     - name: Set language and time zone
