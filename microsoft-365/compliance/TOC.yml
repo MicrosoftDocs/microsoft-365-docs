@@ -402,6 +402,66 @@
                 href: sit-defn-australia-tax-file-number.md
               - name: Austria drivers license number
                 href: sit-defn-austria-drivers-license-number.md
+              - name: Austria identity card
+                href: sit-defn-austria-identity-card.md
+              - name: Austria passport number
+                href: sit-defn-austria-passport-number.md
+              - name: Austria physical addresses
+                href: sit-defn-austria-physical-addresses.md
+              - name: Austria social security number
+                href: sit-defn-austria-social-security-number.md
+              - name: Austria tax identification number
+                href: sit-defn-austria-tax-identification-number.md
+              - name: Austria value added tax
+                href: sit-defn-austria-value-added-tax.md
+              - name: Azure DocumentDB auth key
+                href: sit-defn-azure-document-db-auth-key.md
+              - name: Azure IAAS database connection string and Azure SQL connection string
+                href: sit-defn-azure-iaas-database-connection-string-azure-sql-connection-string.md
+              - name: Azure IoT connection string
+                href: sit-defn-azure-iot-connection-string.md
+              - name: Azure publish setting password
+                href: sit-defn-azure-publish-setting-password.md
+              - name: Azure Redis cache connection string
+                href: sit-defn-azure-redis-cache-connection-string.md
+              - name: Azure SAS
+                href: sit-defn-azure-sas.md
+              - name: Azure service bus connection string
+                href: sit-defn-azure-service-bus-connection-string.md
+              - name: Azure storage account key
+                href: sit-defn-azure-storage-account-key.md
+              - name: Azure Storage account key (generic)
+                href: sit-defn-azure-storage-account-key-generic.md
+              - name: Belgium drivers license number
+                href: sit-defn-belgium-drivers-license-number.md
+              - name: Belgium national number
+                href: sit-defn-belgium-national-number.md
+              - name: Belgium passport number
+                href: sit-defn-belgium-passport-number.md
+              - name: Belgium physical addresses
+                href: sit-defn-belgium-physical-addresses.md
+              - name: Belgium value added tax number
+                href: sit-defn-belgium-value-added-tax-number.md
+              - name: Blood test terms
+                href: sit-defn-blood-test-terms.md
+              - name: Brand medication names
+                href: sit-defn-brand-medication-names.md
+              - name: Brazil CPF number
+                href: sit-defn-brazil-cpf-number.md
+              - name: Brazil legal entity number (CNPJ)
+                href: sit-defn-brazil-legal-entity-number.md
+              - name: Brazil national identification card (RG)
+                href: sit-defn-brazil-national-identification-card.md
+              - name: Brazil physical addresses
+                href: sit-defn-brazil-physical-addresses.md
+              - name: Bulgaria drivers license number
+                href: sit-defn-bulgaria-drivers-license-number.md
+              - name: Bulgaria passport number
+                href: sit-defn-bulgaria-passport-number.md
+              - name: Bulgaria physical addresses
+                href: sit-defn-bulgaria-physical-addresses.md
+              - name: Bulgaria uniform civil number
+                href: sit-defn-bulgaria-uniform-civil-number.md
           - name: Sensitive information type functions
             href: sit-functions.md
           - name: Custom sensitive information type filters reference
