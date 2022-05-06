@@ -49,7 +49,7 @@ You can run a SharePoint Syntex assessment using the Microsoft 365 Assessment to
 
 - **Assessment overview** – Review the assessment results to identify any failures. 
 
-## Run an assessment
+## Run the assessment
 
 The SharePoint Syntex assessment is a module in the Microsoft 365 Assessment tool. To run the assessment: 
 
