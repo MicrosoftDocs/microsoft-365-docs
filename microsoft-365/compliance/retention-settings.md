@@ -275,7 +275,7 @@ When you configure an auto-apply policy that uses sensitive information types an
 When you choose the **SharePoint sites** location, the policy for retention can retain and delete documents in SharePoint communication sites, team sites that aren't connected by Microsoft 365 groups, and classic sites. Unless you're using [adaptive policy scopes](#exceptions-for-adaptive-policy-scopes), team sites connected by Microsoft 365 groups aren't supported with this option and instead, use the **Microsoft 365 Groups** location that applies to content in the group's mailbox, site, and files.
 
 > [!TIP]
-> To check whether a site is group-connected, which is supported with the **Microsoft 365 Groups** location for static scopes, you can use the **Active sites** page in the SharePoint admin center and the [filter for Microsoft 365 Group](/sharepoint/customize-admin-center-site-list), which you can also add as a column in the list display.
+> To check whether a site is group-connected, which is supported with the **Microsoft 365 Groups** location for static scopes: Use the **Active sites** page in the SharePoint admin center and the [filter for Microsoft 365 Group](/sharepoint/customize-admin-center-site-list), which you can also add as a column in the list display.
 > 
 > Or, use the following PowerShell command from the [SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online): `Get-SPOSite -Limit ALL -GroupIdDefined $true`
 
