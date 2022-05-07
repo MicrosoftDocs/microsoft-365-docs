@@ -19,9 +19,9 @@ description: "Implement capabilities from Microsoft Purview Data Lifecycle Manag
 
 # Govern your data with Microsoft Purview
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Use the capabilities from **Microsoft Purview Data Lifecycle Management** (formerly Microsoft Information Governance) and **Microsoft Purview Records Management** to govern your data for compliance or regulatory requirements.
 
