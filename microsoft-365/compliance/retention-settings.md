@@ -430,7 +430,7 @@ With these concatenated settings, users will be able to delete the item from the
 
 - You won't be able to delete a retention label that's selected as a replacement label.
 
-- You can choose a replacement label that's configured for another replacement label. There's no limit to the number of replacement labels an item can have.
+- You can choose a replacement label that's configured to apply another replacement label. There's no limit to the number of replacement labels an item can have.
 
 - If the replacement label marks the item as a record or regulatory record but can't be applied because the file is currently checked out, the relabel process is retried when the file is checked back in again, or checkout is discarded.
 
