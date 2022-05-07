@@ -26,7 +26,7 @@ You can view the default baseline and its deployment steps from within Lighthous
 
 ## Lighthouse baseline
 
-Lighthouse baseline configurations are designed to make sure all managed tenants are secure and compliant. Select **Baselines** from the left navigation pane to view the default baseline that applies to all tenants.  To view the deployment steps included in the default baseline, select **View baseline** to open the default baseline page. Select any of the deployment steps to view deployment details and user impact.
+Lighthouse baseline configurations are designed to make sure all managed tenants are secure and compliant. Select **Baselines** from the left navigation pane to view the default baseline that applies to all tenants.  To view the deployment steps included in the default baseline, select **View baseline** to open the **Default baseline** page. Select any of the deployment steps to view deployment details and user impact.
 
 :::image type="content" source="../media/m365-lighthouse-deploy-baselines/default-baseline-page.png" alt-text="Screenshot of the Default baseline page.":::
 
