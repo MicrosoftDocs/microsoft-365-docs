@@ -404,7 +404,7 @@ Before you configure retention, first familiarize yourself with capacity and sto
 #### Relabeling at the end of the retention period
 
 > [!NOTE]
-> This option is currently rolling out in preview and is subject to change
+> This option is currently rolling out in preview and is subject to change.
 
 When you configure a retention label to automatically apply a different retention label at the end of the retention period, the item is then subject to the retention settings of the newly selected retention label. This option lets you automatically change the retention settings for the item.
 
@@ -434,7 +434,7 @@ With these concatenated settings, users will be able to delete the item from the
 
 - If the replacement label marks the item as a record or regulatory record but can't be applied because the file is currently checked out, the relabel process is retried when the file is checked back in again, or checkout is discarded.
 
-- For email messages when the replacement label is applied, the label is visible to users in Outlook only when that label is included in a published label policy for the same location. However, users still [see an applicable expiry date](retention-policies-exchange.md#user-notification-of-expiry-date) at the top of the email message.
+- As a known issue for this preview, a replacement label is visible to users in Outlook only when that label is included in a published label policy for the same location, or it's configured for delete-only.
 
 ##### Configuration paths for relabeling
 
