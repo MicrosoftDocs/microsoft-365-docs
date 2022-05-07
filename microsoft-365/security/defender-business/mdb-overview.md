@@ -1,17 +1,16 @@
 ---
-title: Overview of Microsoft Defender for Business
-description: Learn about Microsoft Defender for Business, including setup, getting started, and how to use the services
+title: What is Microsoft Defender for Business?
+description: Microsoft Defender for Business is a cybersecurity solution for small and medium sized businesses. Defender for Business protects against threats across your devices.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 04/14/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.reviewer: inbadian, shlomiakirav
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
@@ -20,10 +19,7 @@ ms.collection:
 ms.custom: intro-overview
 ---
 
-# Overview of Microsoft Defender for Business
-
-> [!NOTE]
-> Microsoft Defender for Business is now included in [Microsoft 365 Business Premium](../../business-premium/index.md). 
+# What is Microsoft Defender for Business?
 
 Microsoft Defender for Business is a new endpoint security solution that was designed especially for the small and medium-sized business (up to 300 employees). With this endpoint security solution, your company's devices are better protected from ransomware, malware, phishing, and other threats. 
 
@@ -60,16 +56,17 @@ With Defender for Business, you can help protect the devices and data your busin
    - [Find out how to get Microsoft Defender for Business](get-defender-business.md)
 
 - **Walk through setting up and configuring your threat protection capabilities** 
+   - [Use the trial playbook: Microsoft Defender for Business](trial-playbook-defender-business.md)
+   - [Learn about the simplified configuration process](mdb-simplified-configuration.md)
    - [See how to set up and configure Defender for Business](mdb-setup-configuration.md)
 
 - **Help you get started using Defender for Business**, starting with the Microsoft 365 Defender portal 
    - [Navigate the Microsoft 365 Defender portal](mdb-get-started.md)
-   - [Try preview scenarios, tutorials, and simulations](mdb-tutorials.md)
+   - [Try scenarios, tutorials, and simulations](mdb-tutorials.md)
 
 - **Provide guidance on managing devices and security policies**
-   - [Manage devices](mdb-manage-devices.md)
+   - [Monitor or manage devices](mdb-manage-devices.md)
    - [View or edit security policies](mdb-view-edit-policies.md)
-   - [Manage custom rules for firewall policies](mdb-custom-rules-firewall.md)  
 
 ## Next steps
 

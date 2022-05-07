@@ -102,8 +102,8 @@ Windows 10, version 1709|![No.](images/svg/check-no.svg) <br /> Note: Won't be s
 Windows 10, version 1703 and earlier|![No.](images/svg/check-no.svg) <br /> Note: Won't be supported|![No](images/svg/check-no.svg) <br /> Note: Won't be supported|![No](images/svg/check-no.svg) <br /> Note: Won't be supported
 Windows Server 2022|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
 Windows Server 2019 (with [KB4586839](https://support.microsoft.com/help/4586839) <sup>1</sup>)|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
-Windows Server 2016 (Modern) <sup>2</sup>|![Yes.](images/svg/check-yes.svg) <br /> Public preview|![Yes](images/svg/check-yes.svg) <br /> Public preview|![Yes](images/svg/check-yes.svg) <br /> Public preview
-Windows Server 2012 R2 (Modern) <sup>2</sup>|![Yes.](images/svg/check-yes.svg) <br /> Public preview|![Yes](images/svg/check-yes.svg) <br /> Public preview|![Yes](images/svg/check-yes.svg) <br /> Public preview
+Windows Server 2016 (Modern) <sup>2</sup>|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
+Windows Server 2012 R2 (Modern) <sup>2</sup>|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
 Windows Server 2016 (Legacy) <sup>3</sup>|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
 Windows Server 2012 R2 (Legacy) <sup>3</sup>|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
 Windows Server 2008 R2 SP1 (Legacy) <sup>3</sup>|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
@@ -206,6 +206,6 @@ These are the features and known gaps for [Mobile Threat Defense (Microsoft Defe
 |Conditional Access/Conditional Launch|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
 |Support for MAM|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
 |Privacy Controls|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
-|Threat and Vulnerability Management (TVM)|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development|
+|Threat and Vulnerability Management (TVM)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
   
 
