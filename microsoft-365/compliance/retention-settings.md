@@ -402,7 +402,7 @@ Before you configure retention, first familiarize yourself with capacity and sto
 #### Relabeling at the end of the retention period
 
 > [!NOTE]
-> This option is currently in preview and subject to change
+> This option is currently rolling out in preview and is subject to change
 
 When you configure a retention label to automatically apply a different retention label at the end of the retention period, the item is then subject to the retention settings of the newly selected retention label. This option lets you automatically change the retention settings for the item.
 
