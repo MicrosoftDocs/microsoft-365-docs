@@ -25,11 +25,11 @@ description: "Prescriptive guidance to deploy Microsoft Purview for your organiz
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Use **Microsoft Purview Data Lifecycle Management** (formerly Microsoft Information Governance) and **Microsoft Purview Records Management** to govern your data for compliance or regulatory requirements.
+Use **Microsoft Purview Data Lifecycle Management** (formerly Microsoft Information Governance) and **Microsoft Purview Records Management** to govern your Microsoft 365 data for compliance or regulatory requirements.
 
-Graphic that shows the solution overview with steps
+![Overview of steps to deploy a data governance solution with Microsoft Purview](../media/data-governance-solution-overview.png)
 
-For a data protection solution, see [Protect your data with Microsoft Purview](manage-Information-governance.md).
+For a data protection solution, see [Protect your data with Microsoft Purview](manage-information-governance.md).
 
 ## Licensing
 
@@ -41,7 +41,7 @@ Any additional licensing requirements will be included in the documentation inst
 
 ## Keep what you need and delete what you don't
 
-Graphic that shows the 4 steps for data lifecycle
+![Steps for data lifecycle management solution](../media/data-lifecycle-management-solution.png)
 
 Use Microsoft Purview Data Lifecycle Management (formerly Microsoft Information Governance) to keep what you need and delete what you don't.
 
@@ -56,7 +56,7 @@ To learn more about the capabilities from this solution, see [Learn about data l
 
 ## Manage high-value items
 
-Graphic that shows the 4 steps for record management
+![Steps for records management solution](../media/records-management-solution.png)
 
 Use Microsoft Purview Records Management to manage your organization's high-value items for business, legal, or regulatory record-keeping requirements.
 
