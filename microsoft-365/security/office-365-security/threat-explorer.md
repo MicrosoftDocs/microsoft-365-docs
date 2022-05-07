@@ -17,7 +17,7 @@ ms.collection:
   - M365-security-compliance
   - m365initiative-defender-office365
 description: Use Explorer and Real-time detections in the Microsoft 365 Defender portal to investigate and respond to threats efficiently.
-ms.custom: 
+ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
@@ -47,7 +47,6 @@ With this report, you can:
 - [Investigate malicious email, and more](#more-ways-to-use-explorer-and-real-time-detections)
 
 ## Improvements to Threat Hunting Experience
-
 
 ### Introduction of Alert ID for Defender for Office 365 alerts within Explorer/Real-time detections
 

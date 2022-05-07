@@ -2,8 +2,8 @@
 title: "Acknowledge a hold notification"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 04/05/2022
 audience: Admin
@@ -21,6 +21,8 @@ description: Learn how to use eDiscovery (Premium) to send and follow up on lega
 ---
 
 # Acknowledge a hold notification
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 When responding to a regulatory request or investigation, you may be required to inform custodians of their obligation to preserve electronically stored information (ESI) and any material that may be relevant to an active or imminent legal matter. Once sent, legal teams must know that each custodian has received, read, understood, and agreed to follow the given instructions.
 

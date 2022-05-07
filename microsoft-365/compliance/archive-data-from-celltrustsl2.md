@@ -2,8 +2,8 @@
 title: "Archive data from the CellTrust SL2 platform to Microsoft 365"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 
 audience: Admin
@@ -15,6 +15,8 @@ description: "Learn how to set up and use a CellTrust SL2 data connector to impo
 ---
 
 # Archive data from CellTrust SL2 to Microsoft 365
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 CellTrust SL2 captures mobile communications data and integrates with the leading archiving technologies to meet the electronic discovery requirements for regulations such as FINRA, HIPAA, FOIA, and TCPA. The SL2 Data Connector imports mobile communication items to Microsoft 365. This article describes the process for integrating SL2 with Microsoft 365 by using the CellTrust SL2 Data Connector for archiving. Completing this process assumes that you have subscribed to CellTrust SL2 service and are familiar with the SL2 architecture. For information about CellTrust SL2, see <https://www.celltrust.com>.
 

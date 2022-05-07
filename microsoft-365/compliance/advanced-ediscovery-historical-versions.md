@@ -2,8 +2,8 @@
 title: "Set up historical versions in eDiscovery (Premium)"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 
 audience: Admin
@@ -19,6 +19,8 @@ description: "Use historical versions in eDiscovery (Premium) to collect content
 ---
 
 # Set up historical versions in eDiscovery (Premium) (preview)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 The historical versions feature in eDiscovery (Premium) lets eDiscovery managers in your organization search for and collect content from all versions of documents stored in SharePoint Online and OneDrive for Business. Then you can add that content to a review set for analysis and review. This helps you find and review content from a specific version of a document that may be relevant to a case or investigation, even if the latest version of the same document doesn't contain the relevant information.
 

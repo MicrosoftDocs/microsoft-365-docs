@@ -2,8 +2,8 @@
 title: "Set up a connector to import HR data"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 
 audience: Admin
@@ -18,6 +18,8 @@ description: "Administrators can set up a data connector to import employee data
 ---
 
 # Set up a connector to import HR data
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 You can set up a data connector in the Microsoft Purview compliance portal to import human resources (HR) data related to events such as a user's resignation or a change in a user's job level. The HR data can then be used by the [insider risk management solution](insider-risk-management.md) to generate risk indicators that can help you identity possible malicious activity or data theft by users inside your organization.
 

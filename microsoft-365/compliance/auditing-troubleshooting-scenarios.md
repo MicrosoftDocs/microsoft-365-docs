@@ -2,8 +2,8 @@
 title: "Search the audit log to troubleshoot common scenarios"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -22,6 +22,8 @@ description: "Learn how to use the Microsoft 365 audit log search tool to help t
 ---
 
 # Search the audit log to investigate common support issues
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 This article describes how to use the audit log search tool to help you investigate common support issues. This includes using the audit log to:
 

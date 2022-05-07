@@ -107,7 +107,10 @@ Admins should immediately assign custom reviewers to this policy as appropriate 
 4. On the **Monitor for user-reported messages** pane, assign reviewers for the policy. Reviewers must have mailboxes hosted on Exchange Online. When reviewers are added to a policy, they automatically receive an email message that notifies them of the assignment to the policy and provides links to information about the review process.
 5. Select **Save**.
 
-To disable users from reporting Teams messages with the *Report a concern option*, disable the **End user reporting** option in the [Teams Admin Center](/microsoftteams/manage-teams-in-modern-portal).
+The *Report a concern* option is enabled by default and can be controlled via Teams messaging policies in the [Teams Admin Center](/microsoftteams/manage-teams-in-modern-portal). Users in your organization will automatically get the global policy, unless you create and assign a custom policy. Edit the settings in the global policy or create and assign one or more custom policies to turn on or turn off the *Report a concern* option. To learn more, see [Manage messaging policies in Teams](/microsoftteams/messaging-policies-in-teams).  
+
+>[!IMPORTANT]
+>If you're using PowerShell to turn on or turn off the **End user reporting** option in the Teams Admin Center, you must use [Microsoft Teams cmdlets module version 4.2.0](/MicrosoftTeams/teams-powershell-release-notes) or later.
 
 ## Storage limit notification (preview)
 
@@ -158,11 +161,15 @@ Configure custom keyword dictionaries (or lexicons) to provide simple management
 
 Built-in trainable and global classifiers scan sent or received messages across all communication channels in your organization for different types of compliance issues. Classifiers use a combination of artificial intelligence and keywords to identify language in messages likely to violate anti-harassment policies. Built-in classifiers currently support message keyword identification in several languages:
 
+- Arabic
 - Chinese (Simplified)
+- Chinese (Traditional)
+- Dutch
 - English
 - French
 - German
 - Italian
+- Korean
 - Japanese
 - Portuguese
 - Spanish

@@ -2,8 +2,8 @@
 title: "Teams workflow in eDiscovery (Premium)"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 ms.reviewer: jefwan
 manager: laurawi
 audience: Admin
@@ -17,6 +17,8 @@ description: "Learn how to preserve, collect, review, and export content from Mi
 ---
 
 # eDiscovery (Premium) workflow for content in Microsoft Teams
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 This article provides a comprehensive set of procedures, guidelines, and best practices for using Microsoft Purview eDiscovery (Premium) to preserve, collect, review, and export content from Microsoft Teams. The goal of this article is to help you optimize your eDiscovery workflow for Teams content.
 

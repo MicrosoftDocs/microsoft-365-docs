@@ -31,8 +31,7 @@ Compliance Manger can alert you to changes as soon as they happen so that you ca
 
 To create alerts, you first set up an alert policy to outline the conditions that trigger an alert and the frequency of notifications. When we detect a match to your policy conditions, you'll receive an email notification with details so you can determine whether to investigate or take further action.
 
-
-All alerts are listed on the **Alerts** tab in Compliance Manger, and all alert policies are listed on the **Alert Policies tab**.
+All alerts are listed on the **Alerts** tab in Compliance Manger, and all alert policies are listed on the **Alert Policies tab**.  All organizations have a [default score change policy](#default-score-change-policy) already set up for them.
 
 ## Understanding the Alerts and Alert policies pages
 
@@ -74,7 +73,7 @@ Learn more about [Azure roles in the Microsoft Purview compliance portal](micros
 | **Compliance Manager Administration**| Yes  | Yes | 
 | **Compliance Manager Assessor**| Yes | Yes | 
 | **Compliance Manager Contribution**| Yes | Yes | 
-| **Global Administrator**| No | No  | 
+| **Global Administrator**| Yes | Yes  | 
 | **Compliance Manager Reader**| No | No | 
 
 Learn how to [set user permissions and assign roles for Compliance Manager](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
@@ -90,6 +89,28 @@ You can create policies to alert you when certain changes or events related to i
 - **Implementation status change**: a user has changed an improvement action's implementation status.
 - **Test status change**: a user has changed the testing status of an improvement action.
 - **Evidence change**: a user has uploaded or deleted an evidence document in the **Documents** tab of the improvement action.
+
+#### Default score change policy
+
+Compliance Manager sets up a default alert policy to monitor for score changes in improvement actions. The default policy will generate an alert when an improvement action's score changes. Most settings for the default policy can't be edited, but you can add additional recipients for notifications.
+
+Here are the settings for the default policy:
+
+- All matches that are detected within a span of 60 minutes will be grouped into one single alert to reduce excessive notifications. For example, if five improvement actions experience a score change within one hour, one alert will be generated.
+
+- The severity level for these alerts is **medium**.
+
+- The Global Admin for your organization is the default recipient of alert notifications.
+
+- You can add more alert recipients by following these steps:
+    - On the **Alert policies** page, find the **Compliance Manager default alert policy**.
+    - Check the box to thee left of its name and select the **Edit** button near the top, above the filters.
+    - Select the **Next** button until you come to the **Alert recipients** page.
+    - Select **+Select recipients** and check the boxes next to each user name on the flyout pane whom you want to receive the email notification. When done, select **Add recipient**, then select **Next**.
+    - On the **Review and finish** page, select **Update** to save your changes.
+
+- The default policy can't be deleted, but you can disable it by [following the steps outlined below](#activate-or-inactivate-a-policy).
+
 
 ### Policy creation steps
 

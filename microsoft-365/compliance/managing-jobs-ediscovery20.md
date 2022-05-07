@@ -2,8 +2,8 @@
 title: "Manage jobs in eDiscovery (Premium)"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 
 audience: Admin
@@ -18,6 +18,8 @@ description: "eDiscovery (Premium) jobs help you track the status of long-runnin
 ---
 
 # Manage jobs in eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Here's a list of the jobs (which are typically long-running processes) that are tracked on the **Jobs** tab of a case in Microsoft Purview eDiscovery (Premium). These jobs are triggered by user actions when using and managing cases.
 

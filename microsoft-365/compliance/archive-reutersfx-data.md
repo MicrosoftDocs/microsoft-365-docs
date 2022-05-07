@@ -2,8 +2,8 @@
 title: "Set up a connector to archive Reuters FX data in Microsoft 365"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 
 audience: Admin
@@ -15,6 +15,8 @@ description: "Admins can set up a connector to import and archive Reuters FX dat
 ---
 
 # Set up a connector to archive Reuters FX data
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Use a Veritas connector in the Microsoft Purview compliance portal to import and archive data from the Reuters FX platform to user mailboxes in your Microsoft 365 organization. Veritas provides you with a [Reuters FX](https://globanet.com/reuters-fx/) connector that is configured to capture items from the third-party data source (on a regular basis) and then import those items to Microsoft 365. The connector converts the currencies and FX rates from the Reuters FX account to an email message format and then imports those items to the user's mailbox in Microsoft 365.
 

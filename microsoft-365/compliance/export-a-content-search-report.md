@@ -2,8 +2,8 @@
 title: "Export a Content search report"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: how-to
@@ -25,6 +25,8 @@ ms.custom: seo-marvel-apr2020
 ---
 
 # Export a Content search report
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Instead of exporting the full set of search results from a Content search in the Microsoft Purview compliance portal (or from a search that's associated with a Microsoft Purview eDiscovery (Standard) case), you can export the same reports that are generated when you export the actual search results.
   

@@ -29,6 +29,8 @@
              href: ../admin/setup/setup-business-standard.md
            - name: Invite users to Microsoft 365 Business Standard
              href: ../admin/simplified-signup/admin-invite-business-standard.md
+           - name: What is Microsoft 365 for business
+             href: ../admin/admin-overview/what-is-microsoft-365-for-business.md
            - name: Accept email invitation to Microsoft 365 Business Standard
              href: ../admin/simplified-signup/user-invite-business-standard.md
            - name: Accept an email invitation to a Microsoft 365 Business Standard subscription organization using an Outlook, Yahoo, Gmail or other account
@@ -338,7 +340,7 @@
       href: ../commerce/index.yml
     - name: Secure your organization
       items: 
-        - name: Top 10 ways to secure your data
+        - name: Best practices for securing your data
           href: security-and-compliance/secure-your-business-data.md
         - name: Multi-factor authentication for Microsoft 365
           href: security-and-compliance/multi-factor-authentication-microsoft-365.md
@@ -351,7 +353,7 @@
         - name: Enable Modern Authentication for Office 2013
           href: security-and-compliance/enable-modern-authentication.md
         - name: Pre-requisites for data protection
-          href: /microsoft-365/business-premium/m365bp-pre-requisites-for-data-protection.md
+          href: /microsoft-365/business-premium/m365bp-pre-requisites-for-data-protection
         - name: Increase threat protection
           href: security-and-compliance/increase-threat-protection.md
         - name: Threats detected by Microsoft Defender Antivirus
@@ -371,13 +373,13 @@
         - name: Microsoft Intune documentation
           href: /mem/intune/
         - name: View and edit policies and devices
-          href: /microsoft-365/business-premium/view-policies-and-devices.md
+          href: /microsoft-365/business-premium/m365bp-view-policies-and-devices
         - name: Remove company data
-          href: /microsoft-365/business-premium/m365bp-remove-company-data.md
+          href: /microsoft-365/business-premium/m365bp-remove-company-data
         - name: Reset devices to factory settings
           href: devices/reset-devices-to-factory-settings.md
         - name: Map protection features to Intune settings
-          href: /microsoft-365/business-premium/m365bp-map-protection-features-to-intune-settings.md
+          href: /microsoft-365/business-premium/m365bp-map-protection-features-to-intune-settings
         - name: Device states
           href: devices/device-states.md
         - name: App protection settings for Windows 10 PCs
@@ -389,7 +391,7 @@
         - name: Autopilot
           items: 
             - name: Create and edit AutoPilot profiles
-              href: /microsoft-365/business-premium/m365bp-create-and-edit-autopilot-profiles.md
+              href: /microsoft-365/business-premium/m365bp-create-and-edit-autopilot-profiles
             - name: Create and edit AutoPilot devices
               href: devices/create-and-edit-autopilot-devices.md
         - name: Microsoft 365 for enterprise documentation

@@ -2,8 +2,8 @@
 title: "Set up a connector to archive data from the TeleMessage Enterprise Number Archiver"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 
 audience: Admin
@@ -15,6 +15,8 @@ description: "Admins can set up a connector to import and archive SMS and MMS da
 ---
 
 # Set up a connector to archive Enterprise Number data
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Use a TeleMessage connector in the Microsoft Purview compliance portal to import and archive Short Messaging Service (SMS) and Multimedia Messaging Service (MMS) messages, chat messages, voice call recordings, and voice call logs from the Enterprise Number Archiver. After you set up and configure a connector, it connects to your organization's TeleMessage account once every day and imports the mobile communication data of employees using the TeleMessage Enterprise Number Archiver to mailboxes in Microsoft 365.
 

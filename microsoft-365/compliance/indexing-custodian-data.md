@@ -2,8 +2,8 @@
 title: "Advanced indexing of custodian data"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 
 audience: Admin
@@ -19,6 +19,8 @@ description: "When a custodian is added to an eDiscovery (Premium) case, any con
 ---
 
 # Advanced indexing of custodian data
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 When a custodian is added to an eDiscovery (Premium) case, any content that was deemed as partially indexed or had indexing errors is reindexed. This reindexing process is called *Advanced indexing*. There are many reasons that content is partially indexed or has indexing errors. This includes image files or the presence of images in a file, unsupported file types, or file sized indexing limits. For SharePoint files, Advanced indexing only runs on items are marked as partially indexed or that have indexing errors. In Exchange, email messages that have image attachments are not marked as partially indexed or with indexing errors. This means that those files will not be reindexed by the Advanced indexing process.
 

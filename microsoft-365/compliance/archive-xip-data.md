@@ -2,8 +2,8 @@
 title: "Set up a connector to archive XIP source data in Microsoft 365"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 
 audience: Admin
@@ -15,6 +15,8 @@ description: "Admins can set up a connector to import and archive XIP source dat
 ---
 
 # Set up a connector to archive XIP source data
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Use a Veritas connector in the Microsoft Purview compliance portal to import and archive data from the XIP source platform to user mailboxes in your Microsoft 365 organization. Veritas provides a [XIP](https://globanet.com/xip/) connector that allows using an XIP file to import items to Microsoft 365. An XIP file is similar to a ZIP file, but allows for a digital signature to be used. The digital signature is verified by Veritas Merge 1 before the XIP source file is extracted. The connector converts the content from the XIP source file to an email message format and then imports those items to the user mailboxes in Microsoft 365.
 

@@ -2,8 +2,8 @@
 title: "Set up a connector to archive Facebook data"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 
 audience: Admin
@@ -18,6 +18,8 @@ description: "Learn how to set up & use a connector in the Microsoft Purview com
 ---
 
 # Set up a connector to archive Facebook data (preview)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Use a connector in the Microsoft Purview compliance portal to import and archive data from Facebook Business pages to Microsoft 365. After you set up and configure the connector, it connects to the Facebook Business page (on a scheduled basis), converts the content of Facebook items to an email message format, and then imports those items to a mailbox in Microsoft 365.
 

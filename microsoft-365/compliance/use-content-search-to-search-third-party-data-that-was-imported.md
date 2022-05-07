@@ -2,8 +2,8 @@
 title: "Use Content Search to search third-party imported data"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 
 audience: Admin
@@ -20,6 +20,8 @@ ms.custom: seo-marvel-apr2020
 ---
 
 # Use Content Search to search third-party data imported by a custom partner connector
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 You can use the [Content search eDiscovery tool](content-search.md) in the Microsoft Purview compliance portal to search for items imported to mailboxes in Microsoft 365 from a third-party data source. You can create a query to search all imported third-party data items or you can create a query to search specific third-party data items. Also, you can also create a query-based retention policy or a query-based eDiscovery hold to preserve third-party data.
   

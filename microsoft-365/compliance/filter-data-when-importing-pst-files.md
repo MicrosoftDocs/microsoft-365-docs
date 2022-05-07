@@ -2,8 +2,8 @@
 title: "Filter data when importing PST files"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 
 audience: Admin
@@ -24,6 +24,8 @@ description: "Learn how to filter data using the intelligent import feature in t
 ---
 
 # Filter data when importing PST files
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Use the new Intelligent Import feature in the Microsoft 365 Import service to filter the items in PST files that actually get imported to the target mailboxes. Here's how it works:
   
@@ -63,7 +65,7 @@ After you've created a PST import job, follow these steps to filter the data bef
   
 1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> and sign in using the credentials for an administrator account in your organization.
     
-2. In the left pane of the compliance portal, click **Information governance** \> **Import**.
+2. In the left pane of the compliance portal, click **Data lifecycle management** \> **Import**.
     
     The import jobs for your organization are listed on the **Import** tab. The **Analysis completed** value in the **Status** column indicates the import jobs that have been analyzed by Microsoft 365 and are ready for you to import.
     
