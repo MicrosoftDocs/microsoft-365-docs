@@ -21,13 +21,16 @@ description: "Prescriptive guidance to deploy Microsoft Purview for your organiz
 
 # Deploy a data governance solution with Microsoft Purview
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Use **Microsoft Purview Data Lifecycle Management** (formerly Microsoft Information Governance) and **Microsoft Purview Records Management** to govern your Microsoft 365 data for compliance or regulatory requirements.
 
 ![Overview of steps to deploy a data governance solution with Microsoft Purview](../media/data-governance-solution-overview.png)
+
+> [!TIP]
+> Looking to map and manage your data across your entire data estate, including multi-cloud, and software-as-a-service (SaaS)? Use [Microsoft Purview Data Map, Microsoft Purview Data Catalog, and Microsoft Purview Data Estate Insights](/azure/purview/overview).
 
 For a data protection solution, see [Protect your data with Microsoft Purview](manage-information-governance.md).
 
