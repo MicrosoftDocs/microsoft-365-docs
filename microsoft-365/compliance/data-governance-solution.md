@@ -45,7 +45,7 @@ Any additional licensing requirements will be included in the documentation inst
 
 ![Steps for data lifecycle management solution](../media/data-lifecycle-management-solution.png)
 
-Use Microsoft Purview Data Lifecycle Management (formerly Microsoft Information Governance) to keep what you need and delete what you don't.
+Use **Microsoft Purview Data Lifecycle Management** (formerly Microsoft Information Governance) to keep what you need and delete what you don't.
 
 |Step|Description|More information|
 |:---|:----------|:---------------|
@@ -60,7 +60,7 @@ To learn more about the capabilities from this solution, see [Learn about data l
 
 ![Steps for records management solution](../media/records-management-solution.png)
 
-Use Microsoft Purview Records Management to manage your organization's high-value items for business, legal, or regulatory record-keeping requirements.
+Use **Microsoft Purview Records Management** to manage your organization's high-value items for business, legal, or regulatory record-keeping requirements.
 
 |Step|Description|More information|
 |:---|:----------|:---------------|
