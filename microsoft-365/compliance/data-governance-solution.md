@@ -31,7 +31,7 @@ Use **Microsoft Purview Data Lifecycle Management** (formerly Microsoft Informat
 
 To map and manage your data across your data estate, including multi-cloud, and software-as-a-service (SaaS)? Use [Microsoft Purview Data Map, Microsoft Purview Data Catalog, and Microsoft Purview Data Estate Insights](/azure/purview/overview).
 
-For a data protection solution, see [Protect your data with Microsoft Purview](manage-information-governance.md).
+For a data protection solution, see [Deploy an information protection solution with Microsoft Purview](information-protection-solution.md).
 
 ## Licensing
 
