@@ -1,5 +1,5 @@
 ---
-title: "Deploy a data governance solution with Microsoft Purview"
+title: "Deploy a data governance solution"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
