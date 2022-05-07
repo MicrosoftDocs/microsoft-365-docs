@@ -387,9 +387,11 @@ Examples:
 
 - Exchange: If you want to retain items in a mailbox for seven years, and a message was sent six years ago, the message will be retained for only one year. For Exchange items, the age is based on the date received for incoming email, or the date sent for outgoing email. Retaining items based on when it was last modified applies only to site content in OneDrive and SharePoint.
 
-At the end of the retention period, you choose whether you want the content to be permanently deleted, or for retention labels only, apply a different retention label:
+At the end of the retention period, you choose whether you want the content to be permanently deleted. For example, for retention policies:
 
 ![Retention settings page.](../media/b05f84e5-fc71-4717-8f7b-d06a29dc4f29.png)
+
+As explained in the next section, retention labels have another option; to apply another retention label with its own retention period.
 
 Before you configure retention, first familiarize yourself with capacity and storage limits for the respective workloads:
 
