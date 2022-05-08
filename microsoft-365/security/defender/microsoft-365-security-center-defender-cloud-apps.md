@@ -77,6 +77,10 @@ Global search in Microsoft 365 Defender (using the search bar at the top of the 
 
 :::image type="content" source="../../media/global-search-apps.png" alt-text="Search for connected apps.":::
 
+### Assets and identities
+
+As part of the creation of a dedicated **Assets** section that spans the entire Microsoft 365 Defender experience, the **Users and Accounts** section of Defender for Cloud Apps is rebranded as the **Identities** section. No changes to functionality are expected.
+
 ## Related information
 
 - [Microsoft 365 Defender](microsoft-365-defender.md)
