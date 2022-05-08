@@ -35,9 +35,9 @@ These information protection capabilities give you the tools to [know your data]
 
 ![Image of how Microsoft Purview Information Protection helps you discover, classify, and protect sensitive data.](../media/powered-by-intelligent-platform.png)
 
-For prescriptive guidance to deploy a Microsoft Purview Information Protection solution for your organization, see [Deploy an information protection solution with Microsoft Purview](information-protection-solution.md).
+Use the following sections to learn more about the available capabilities and how to get started. However, if you're looking for a guided deployment, see [Deploy an information protection solution with Microsoft Purview](information-protection-solution.md).
 
-For information about governing your data, see [Govern your data with Microsoft Purview](manage-Information-governance.md).
+For information about governing your Microsoft 365 data, see [Govern your data with Microsoft Purview](manage-Information-governance.md).
 
 ## Know your data
 
