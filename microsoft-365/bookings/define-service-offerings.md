@@ -1,5 +1,5 @@
 ---
-title: "Define your service offerings in Bookings"
+title: "Define your Bookings service offerings"
 ms.author: kwekua
 author: kwekuako
 manager: scotv

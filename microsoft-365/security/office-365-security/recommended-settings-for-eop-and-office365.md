@@ -38,10 +38,16 @@ To automatically apply the Standard or Strict settings to users, see [Preset sec
 
 This article describes the default settings, and also the recommended Standard and Strict settings to help protect your users. The tables contain the settings in the Microsoft 365 Defender portal and PowerShell (Exchange Online PowerShell or standalone Exchange Online Protection PowerShell for organizations without Exchange Online mailboxes).
 
-> [!TIP]
-> You can't change the recommended Standard and Strict settings in the Microsoft 365 Defender portal. To change recommended values like **Enable users to protect**, you need to use [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
->
+> [!NOTE]
 > The Office 365 Advanced Threat Protection Recommended Configuration Analyzer (ORCA) module for PowerShell can help you (admins) find the current values of these settings. Specifically, the **Get-ORCAReport** cmdlet generates an assessment of anti-spam, anti-phishing, and other message hygiene settings. You can download the ORCA module at <https://www.powershellgallery.com/packages/ORCA/>.
+>
+> In Microsoft 365 organizations, we recommend that you leave the Junk Email Filter in Outlook set to **No automatic filtering** to prevent unnecessary conflicts (both positive and negative) with the spam filtering verdicts from EOP. For more information, see the following articles:
+>
+> - [Configure junk email settings on Exchange Online mailboxes](configure-junk-email-settings-on-exo-mailboxes.md)
+> - [About junk email settings in Outlook](configure-junk-email-settings-on-exo-mailboxes.md#about-junk-email-settings-in-outlook)
+> - [Change the level of protection in the Junk Email Filter](https://support.microsoft.com/en-us/office/e89c12d8-9d61-4320-8c57-d982c8d52f6b)
+> - [Create safe sender lists in EOP](create-safe-sender-lists-in-office-365.md)
+> - [Create blocked sender lists in EOP](create-block-sender-lists-in-office-365.md)
 
 ## Anti-spam, anti-malware, and anti-phishing protection in EOP
 
@@ -107,9 +113,9 @@ To create and configure outbound spam policies, see [Configure outbound spam fil
 For more information about the default sending limits in the service, see [Sending limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-1).
 
 > [!NOTE]
-> Outbound spam policies are not part of Standard or Strict preset security policies. The **Standard** and **Strict** values indicate our **recommended** values in the default outbound spam policy or custom policies that you create.
+> Outbound spam policies are not part of Standard or Strict preset security policies. The **Standard** and **Strict** values indicate our **recommended** values in the default outbound spam policy or custom outbound spam policies that you create.
 
-|Security feature name|Default|Standard|Strict|Comment|
+|Security feature name|Default|Recommended<br/>Standard|Recommended<br/>Strict|Comment|
 |---|:---:|:---:|:---:|---|
 |**Set an external message limit** <br/><br/> _RecipientLimitExternalPerHour_|0|500|400|The default value 0 means use the service defaults.|
 |**Set an internal message limit** <br/><br/> _RecipientLimitInternalPerHour_|0|1000|800|The default value 0 means use the service defaults.|

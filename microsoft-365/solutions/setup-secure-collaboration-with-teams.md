@@ -66,7 +66,7 @@ To configure secure collaboration, you use these Microsoft 365 capabilities and 
 |Microsoft Defender for Office 365|Safe Attachments for SPO, OneDrive and Teams; Safe Documents; Safe Links for Teams|Microsoft 365 E1, E3 and E5|
 |SharePoint|Site and file sharing policies, Site sharing permissions, Sharing links, Access requests, Site guest sharing settings|Microsoft 365 E1, E3 and E5|
 |Microsoft Teams|Guest access, private teams, private channels, shared channels|Microsoft 365 E1, E3 and E5|
-|Microsoft 365 Compliance|Sensitivity labels|Microsoft 365 E3 and E5|
+|Microsoft Purview|Sensitivity labels|Microsoft 365 E3 and E5|
 
 ## Collaboration governance framework for Teams and Microsoft 365
 
@@ -184,7 +184,7 @@ What IT architects need to know about groups in Microsoft 365
 
 |**Item**|**Description**|
 |---|---|
-|[![Thumb image for groups infographic.](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \|[Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx) <br> Updated June 2019|These illustrations detail the different types of groups, how these are created and managed, and a few governance recommendations.|
+|[![Thumb image for groups infographic.](../downloads/msft-m365-groups-architecture-thumb.png)](https://download.microsoft.com/download/6/3/0/6309218f-a169-4f2d-af4c-2fe49e30ba17/msft-m365-groups.pdf) <br/> [PDF](https://download.microsoft.com/download/6/3/0/6309218f-a169-4f2d-af4c-2fe49e30ba17/msft-m365-groups.pdf) \|[Visio](https://download.microsoft.com/download/6/3/0/6309218f-a169-4f2d-af4c-2fe49e30ba17/msft-m365-groups.vsdx) <br> Updated May 2022|These illustrations detail the different types of groups, how these are created and managed, and a few governance recommendations.|
 
 ### Microsoft Teams and related productivity services in Microsoft 365 for IT architects
 
@@ -205,6 +205,6 @@ When you're ready to deploy this solution, continue with these steps:
 
 [Microsoft 365 security documentation](../security/index.yml)
 
-[Microsoft 365 compliance documentation](../compliance/index.yml)
+[Microsoft Purview documentation](../compliance/index.yml)
 
 [Welcome to Microsoft Teams](/MicrosoftTeams/Teams-overview)

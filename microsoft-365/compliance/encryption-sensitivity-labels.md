@@ -1,5 +1,5 @@
 ---
-title: Restrict access to content using sensitivity labels to apply encryption
+title: Apply encryption using sensitivity labels
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -22,6 +22,8 @@ ms.custom: seo-marvel-apr2020
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 When you create a sensitivity label, you can restrict access to content that the label will be applied to. For example, with the encryption settings for a sensitivity label, you can protect content so that:
 
 - Only users within your organization can open a confidential document or email.
@@ -40,7 +42,7 @@ Finally, as an admin, when you configure a sensitivity label to apply encryption
 - **Assign permissions now**, so that you determine exactly which users get which permissions to content with that label.
 - **Let users assign permissions** when they apply the label to content. This way, you can allow people in your organization some flexibility that they might need to collaborate and get their work done.
 
-The encryption settings are available when you [create a sensitivity label](create-sensitivity-labels.md) in the Microsoft 365 compliance center. You can also use the older portal, the Security & Compliance Center.
+The encryption settings are available when you [create a sensitivity label](create-sensitivity-labels.md) in the Microsoft Purview compliance portal.
 
 ## Understand how the encryption works
 

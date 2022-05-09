@@ -7,9 +7,9 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 03/01/2022
+ms.date: 04/08/2022
 ms.service: o365-administration
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
@@ -19,40 +19,48 @@ ms.collection:
 
 # Set up Microsoft 365 Business Premium
 
-You have several options for setting up and configuring Microsoft 365 Business Premium. You can:
+After you have [started a trial or purchased Microsoft 365 Business Premium](get-microsoft-365-business-premium.md), your next step is to get everything set up. You have several options available. You can:
 
-- [Use a guided setup experience for basic setup and configuration](#guided-process-for-basic-setup)
-- [Work with a partner, such as a Microsoft Cloud Solution Provider (CSP)](#work-with-a-microsoft-partner)
+- [Start with the guided setup experience](#use-the-guided-process-for-basic-setup) for basic setup and configuration; or
+- [Work with a partner, such as a Microsoft Cloud Solution Provider (CSP)](#work-with-a-microsoft-partner).
 
 Use this article as a guide.
 
+## Before you begin
+
+Make sure that you meet the following requirements before you begin your setup process:
+
+| Requirement | Description |
+|:---|:---|
+| Subscription | Microsoft 365 Business Premium or Microsoft 365 for Campaigns <br/><br/> To start a trial or purchase your subscription, see the following articles: <br/>- [Get Microsoft 365 Business Premium](get-microsoft-365-business-premium.md)<br/>- [Get Microsoft 365 for Campaigns](get-microsoft-365-campaigns.md) |
+| Permissions  | To complete the initial setup process, you must be a Global Admin. [Learn more about admin roles](../admin/add-users/about-admin-roles.md). |
+| Browser requirements | Microsoft Edge, Safari, Chrome or Firefox. [Learn more about browser requirements](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources#coreui-heading-uyetipy).  |
+| Operating system | **Windows**:  Windows 11, Windows 10, Windows 8.1, Windows Server 2019 or later, or Windows Server 2016<br/><br/>**macOS**: One of the three most recent versions of macOS |
+
 > [!TIP]
-> Need some help? Consider getting [Business Assist for Microsoft 365](https://support.microsoft.com/en-us/office/business-assist-for-microsoft-365-37deb8fe-61cc-4cf9-9ad1-1c8d93475070)
+> For more detailed information about Microsoft 365, Office, and system requirements, see [Microsoft 365 and Office Resources](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
 
-## Guided process for basic setup
+## Use the guided process for basic setup
 
-Microsoft 365 Business Premium includes a guided process for basic setup. Tasks include connecting to a custom domain, adding users, assigning licenses, and activating your DNS records.  
+Microsoft 365 Business Premium includes a guided process for basic setup. The guided process includes these tasks:
 
-To see how the guided setup works, watch the following video: <br/><br/>
+- [Adding your existing domain to personalize sign-in](../admin/setup/setup-business-basic.md#add-your-domain-to-personalize-sign-in)
+- [Adding users and assigning licenses](../admin/add-users/add-users.md)
+- [Updating your DNS records](../admin/setup/setup-business-basic.md#connect-your-domain)
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ?autoplay=false]
+The following video shows the guided setup process for Microsoft 365 Business Basic, which works the same way in Microsoft 365 Business Premium.<br/><br/>
 
-After you have finished the guided setup, there are additional steps to complete to help ensure that your security and compliance capabilities are properly set up and applied. These steps include:
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vk3W]
 
-- [Turning on security defaults](m365bp-conditional-access.md)
-- [Protecting against phishing and other attacks](m365-campaigns-phishing-and-attacks.md)
-- [Securing devices](m365bp-secure-windows-devices.md)
-
-[Learn more about the differences between the guided setup process and the Setup page](../admin/setup/o365-setup-wizard-and-setup-page.md).
+> [!TIP]
+> After you have added users, give them a link to the [Employee quick setup guide](../admin/setup/employee-quick-setup.md). The guide walks them through signing in, getting Office apps, and saving, copying, and sharing files.
 
 ## Work with a Microsoft partner
 
-Microsoft has a list of solution providers who are authorized to sell offerings, including Microsoft 365 Business Premium. 
-
-To find a solution provider in your area, take the following steps:
+If you'd prefer to have a Microsoft partner help you get and set up Microsoft 365, follow these steps:
 
 1. Go to the **Microsoft Solution Providers** page ([https://www.microsoft.com/solution-providers](https://www.microsoft.com/solution-providers)).
- 
+
 2. In the search box, fill in your location and company size. 
 
 3. In the **Search for products, services, skills, industries** box, put `Microsoft 365`, and then select **Go**.
@@ -61,12 +69,17 @@ To find a solution provider in your area, take the following steps:
 
 Also see [Find your partner or reseller](../admin/manage/find-your-partner-or-reseller.md).
 
-## See also
+## Next objectives
 
-- [Overview of Microsoft Defender for Business](../security/defender-business/mdb-overview.md) (now included with Microsoft 365 Business Premium!)
+After you have finished your initial setup process, your next objectives are to set up your security and compliance capabilities:
 
-- [Business subscriptions and billing documentation](../commerce/index.yml)
+1. [Set up your security protection](m365bp-security-overview.md).
 
-- [Overview of Microsoft 365 Lighthouse](../lighthouse/m365-lighthouse-overview.md) (for Microsoft CSPs)
+2. Train your team:
 
-- [Top 10 ways to secure Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)
+   - [Set up personal devices used to access business data](m365bp-devices-overview.md)
+   - [Use email more securely](m365bp-protect-email-overview.md)
+   - [Collaborate and share more securely](m365bp-collaborate-share-securely.md)
+
+3. [Protect managed devices](m365bp-protect-devices.md).
+

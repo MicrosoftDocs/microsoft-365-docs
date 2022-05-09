@@ -106,7 +106,6 @@ On the **Exchange transport rule report** page, the available charts and data ar
 > [!NOTE]
 > The **Exchange transport rule report** is now available in the EAC. For more information, see [Exchange transport rule report in the new EAC](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report).
 
-
 ### Chart breakdown by Direction
 
 :::image type="content" source="../../media/transport-rule-report-etr-direction-view.png" alt-text="The Direction view for Exchange Transport rules in the Exchange transport rule report" lightbox="../../media/transport-rule-report-etr-direction-view.png":::
@@ -983,7 +982,7 @@ When you hover over a wedge in the pie chart, you can see the message count for 
 
 The details table below the graph shows the senders or recipients and message counts based on the view you selected.
 
-You can filter both the chart and the details table by clicking **Filter** and selecting **Start date** and **End date**.
+You can filter both the chart and the details table by clicking **Filter** and selecting **Start date** and **End date**. Users can also filter by user tags. 
 
 When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
 
