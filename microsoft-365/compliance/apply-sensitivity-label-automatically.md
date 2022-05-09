@@ -21,12 +21,12 @@ description: "When you create a sensitivity label, you can automatically assign 
 
 # Apply a sensitivity label to content automatically
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-> [!NOTE]
-> For information about automatically applying a sensitivity label in Microsoft Purview Data Map, see [Labeling in Microsoft Purview Data Map](/azure/purview/create-sensitivity-label).
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+> [!TIP]
+> For information about automatically applying a sensitivity label in the data map, see [Labeling in Microsoft Purview Data Map](/azure/purview/create-sensitivity-label).
 
 When you create a sensitivity label, you can automatically assign that label to files and emails when it matches conditions that you specify.
 
