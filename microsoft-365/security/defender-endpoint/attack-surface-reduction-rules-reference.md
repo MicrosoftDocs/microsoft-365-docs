@@ -98,7 +98,6 @@ Links to information about configuration management system versions referenced i
 |[Block untrusted and unsigned processes that run from USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Y |   |Y <br><br> CB 1802  | Y  | Y  |
 |[Block Win32 API calls from Office macros](#block-win32-api-calls-from-office-macros) | Y |   | Y <br><br> CB 1710  | Y  |  Y |
 |[Use advanced protection against ransomware](#use-advanced-protection-against-ransomware) | Y |   | Y <br><br> CB 1802 | Y  | Y  |
-|  |  |  |  |  |  |
 
   (<a id="fn1">1</a>) You can configure attack surface reduction rules on a per-rule basis by using any rule's GUID.
 
@@ -135,7 +134,6 @@ For rules with the "Rule State" specified:
 |[Block untrusted and unsigned processes that run from USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Audit&nbsp;\|&nbsp;Block | Y \| Y <br> Requires device at high-cloud block level  | N \| Y <br> Requires device at high-cloud block level |
 |[Block Win32 API calls from Office macros](#block-win32-api-calls-from-office-macros) |   | N | Y |
 |[Use advanced protection against ransomware](#use-advanced-protection-against-ransomware) | Audit&nbsp;\|&nbsp;Block | Y \| Y <br> Requires device at high-cloud block level  | N \| Y <br> Requires device at high-cloud block level |
-|   |   |   |   |
   
 ## ASR rules and GUIDs matrix
 
