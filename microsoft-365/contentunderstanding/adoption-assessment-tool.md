@@ -31,6 +31,8 @@ You can run a SharePoint Syntex assessment using the Microsoft 365 Assessment to
 
 ![Screenshot of the Power BI summary showing the Custom Content Types report.](../media/content-understanding/assessment-tool-custom-content-types.png)
 
+![Image of three sample report pages in the Power BI summary.](../media/content-understanding/assessment-tool-reports.png)
+
 The assessment output includes a Power BI report comprising of the following: 
 
 - **Libraries with custom columns** – Identify libraries where SharePoint Syntex can automatically populate columns, improving consistency. 
