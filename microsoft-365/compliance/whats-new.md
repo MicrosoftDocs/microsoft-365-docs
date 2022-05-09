@@ -92,27 +92,27 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
   - [Data overexposure policies](/privacy/priva/risk-management-policy-data-overexposure) (new; articulates the need and uses for the policy; explains default settings for out-of-box creation and detailed instructions for customizing settings)
   - [Data transfer policies](/privacy/priva/risk-management-policy-data-transfer) (new; highlights new condition for the policy to detect transfers outside of the org; articulates the need and uses for the policy; explains default settings for out-of-box creation and detailed instructions for customizing settings)
   - [Data minimization policies](/privacy/priva/risk-management-policy-data-minimization) (new; articulates the need and uses for the policy; explains default settings for out-of-box creation and detailed instructions for customizing settings)
-  - Investigate and remediate alerts (updated; added clarifying details and formatting changes to improve readability)
-  - User notifications (updated; added info on the functionality for previewing and customizing email notification content)
-- Create a subject rights request (updated; added section on getting started with your first request with default settings to explore functionality)
-- Review data for a subject rights request (updated; added details explaining priority items to review and how to find them, and the need to set up data matching in order to get this insight)
-- Find and visualize personal data (updated; clarified that users need to set up data matching in order to receive insights for "Items with the most data subject content" under "Key insights"
-- Data matching for subject rights requests (updated; clarified the step progression in this process and added the second step of creating sensitive info types)
+  - [Investigate and remediate alerts](/privacy/priva/risk-management-alerts) (updated; added clarifying details and formatting changes to improve readability)
+  - [User notifications](/privacy/priva/risk-management-notifications) (updated; added info on the functionality for previewing and customizing email notification content)
+- [Create a subject rights request](/privacy/priva/subject-rights-requests-create) (updated; added section on getting started with your first request with default settings to explore functionality)
+- [Review data for a subject rights request](/privacy/priva/subject-rights-requests-data-review) (updated; added details explaining priority items to review and how to find them, and the need to set up data matching in order to get this insight)
+- [Find and visualize personal data](/privacy/priva/priva-data-profile) (updated; clarified that users need to set up data matching in order to receive insights for "Items with the most data subject content" under "Key insights"
+- [Data matching for subject rights requests](/privacy/priva/subject-rights-requests-data-match) (updated; clarified the step progression in this process and added the second step of creating sensitive info types)
 
 ### Sensitive Information Types
 
-- Use named entities in DLP policies (updated;  commented out guidance on unsupported platforms for future use; updated; named entities GA; updated; commented out support statement for Microsoft Defender for Cloud Apps until it is confirmed that it works)
-- Learn about named entities (updated; named entities GA)
-- Sensitive information types entity definitions (updated; named entities GA; updated; pattern updates)
-- Learn about sensitive information types (updated; named entities GA)
+- [Use named entities in DLP policies](named-entities-use.md) (updated;  commented out guidance on unsupported platforms for future use; updated; named entities GA; updated; commented out support statement for Microsoft Defender for Cloud Apps until it is confirmed that it works)
+- [Learn about named entities](named-entities-learn.md) (updated; named entities GA)
+- [Sensitive information types entity definitions](sensitive-information-type-entity-definitions.md) (updated; named entities GA; updated; pattern updates)
+- [Learn about sensitive information types](sensitive-information-type-learn-about.md) (updated; named entities GA)
 
 ### Sensitivity labels
 
-- Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 groups, and SharePoint sites (updated; new configuration now in preview for site sharing permissions by using PowerShell advanced settings) 
-- Restrict access to content by using sensitivity labels to apply encryption (updated; added the known issue for specifying a group that contains mail contacts, with a link to the published KB for details and workarounds)
-- Apply a sensitivity label to content automatically (updated; removed the known issue with deleted OneDrive sites incorrectly displayed in the simulation results for auto-labeling policies)
-- Enable co-authoring for files encrypted with sensitivity labels (updated; as a result of customer feedback, removed the callout in the Prerequisites section that this feature isn't yet supported by the Semi-Annual Enterprise Channel, and instead added Semi-Annual Enterprise Channel (Preview) with the minimum version 2202)
-- Manage sensitivity labels in Office apps (updated; support details for applying a default label to existing documents are updated to correct that on Windows, this release is still rolling out in the Beta channel, and is now fully rolled out for the web)
+- [Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 groups, and SharePoint sites](sensitivity-labels-teams-groups-sites.md#configure-site-sharing-permissions-by-using-powershell-advanced-settings) (updated; new configuration now in preview for site sharing permissions by using PowerShell advanced settings)
+- [Restrict access to content by using sensitivity labels to apply encryption](encryption-sensitivity-labels.md) (updated; added the known issue for specifying a group that contains mail contacts, with a link to the published KB for details and workarounds)
+- [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md) (updated; removed the known issue with deleted OneDrive sites incorrectly displayed in the simulation results for auto-labeling policies)
+- [Enable co-authoring for files encrypted with sensitivity labels](sensitivity-labels-coauthoring.md) (updated; as a result of customer feedback, removed the callout in the Prerequisites section that this feature isn't yet supported by the Semi-Annual Enterprise Channel, and instead added Semi-Annual Enterprise Channel (Preview) with the minimum version 2202)
+- [Manage sensitivity labels in Office apps](sensitivity-labels-office-apps.md) (updated; support details for applying a default label to existing documents are updated to correct that on Windows, this release is still rolling out in the Beta channel, and is now fully rolled out for the web)
 
 ### Changes to product names
 
