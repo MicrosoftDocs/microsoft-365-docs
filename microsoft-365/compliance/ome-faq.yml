@@ -216,7 +216,7 @@ sections:
       - question: |
           Can I open encrypted messages sent to a shared mailbox?
         answer: |
-          Yes! You can open encrypted messages for a shared mailbox when you're logged into a supported Outlook client.
+          Yes! You can open encrypted messages for a shared mailbox which sent internally within the same tenant, when you're logged into a supported Outlook client. Delegates to a shared mailbox getting  encrypted messages sent from an external organization will need to use Outlook on the web to sign in as the shared mailbox to read these messages.
           
           - Users can open protected mails in a shared mailbox where the shared mailbox received a protected mail as part of a distribution group.
           
