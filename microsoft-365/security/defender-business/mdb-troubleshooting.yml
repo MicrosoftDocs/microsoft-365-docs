@@ -39,7 +39,7 @@ sections:
 
           To confirm that real-time protection is turned on, you can view, and if necessary, edit your next-generation protection policies. See [View or edit your next-generation protection policies](/microsoft-365/security/defender-business/mdb-configure-security-settings?view=o365-worldwide#view-or-edit-your-next-generation-protection-policies).
           
-          We recommend using Microsoft Defender Antivirus together with Defender for Business to get better protection that's coordinated across products and services. To learn more, see [Better together: [Microsoft Defender Antivirus and Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/why-use-microsoft-defender-antivirus). 
+          We recommend using Microsoft Defender Antivirus together with Defender for Business to get better protection that's coordinated across products and services. To learn more, see [Better together - Microsoft Defender Antivirus and Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/why-use-microsoft-defender-antivirus). 
 
       - question: I need to resolve a policy conflict
         answer: |
