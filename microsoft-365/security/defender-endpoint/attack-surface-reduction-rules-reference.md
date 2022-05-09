@@ -28,7 +28,8 @@ ms.date: 02/04/2022
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Microsoft Defender Antivirus
 
-**Platforms**
+**Platforms:**
+
 - Windows
 
 This article provides information about attack reduction rules:
@@ -52,7 +53,7 @@ The following table lists the supported operating systems for rules that are cur
 >
 > Attack surface reduction rules in Windows&nbsp;Server&nbsp;2012&nbsp;R2 and Windows&nbsp;Server&nbsp;2016 are available for devices onboarded using the modern unified solution package. For more information, see [New functionality in the modern unified solution for Windows Server 2012 R2 and 2016 Preview](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview).
 
-| Rule name|Windows 10 | Windows Server 2019 | Windows&nbsp;Server | Windows Server 2016 <sup>[[1, 2](#fn1)]<sup></sup> | Windows Server 2012&nbsp;R2 <sup>[[1, 2](#fn1)]<sup></sup> |
+| Rule name| Windows&nbsp;11 <br>and<br> Windows&nbsp;10 | Windows&nbsp;Server <br> 2022 <br>and<br>  Windows&nbsp;Server <br> 2019 | Windows Server | Windows&nbsp;Server <br> 2016 <br> <sup>[[1, 2](#fn1)]<sup></sup> | Windows&nbsp;Server <br> 2012&nbsp;R2 <br> <sup>[[1, 2](#fn1)]<sup></sup> |
 |:---|:---:|:---:|:---:|:---:|:---:|
 | [Block abuse of exploited vulnerable signed drivers](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y | Y | Y <br> version 1803 (Semi-Annual Channel) or later | Y | Y |
 | [Block Adobe Reader from creating child processes](#block-adobe-reader-from-creating-child-processes) | Y version 1809 or later | Y | Y | Y | Y |
