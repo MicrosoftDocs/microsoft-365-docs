@@ -30,7 +30,7 @@ ms.prod: m365-security
 
 Connectors are used for enabling mail flow between Microsoft 365 or Office 365 and email servers that you have in your on-premises environment. For more information, see [Configure mail flow using connectors in Exchange Online](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
 
-A compromised inbound connector is defined as when an unauthorized individual either applies change(s) to an existing inbound connector or creates a new inbound connector in a Microsoft 365 tenant, with the intention of sending spam or phish emails.  
+A compromised inbound connector is defined as when an unauthorized individual either applies change(s) to an existing inbound connector or creates a new inbound connector in a Microsoft 365 tenant, with the intention of sending spam or phish emails. Note that this is applicable only to inbound connectors of type OnPremises. 
 
 ## Detect a compromised connector
 
