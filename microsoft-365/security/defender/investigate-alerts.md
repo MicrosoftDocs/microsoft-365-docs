@@ -185,7 +185,7 @@ You can also add the selected IOCs, for example files to the “allow list” an
 > Adding at least one IOC to the rule condition is required to suppress any alert type.
 
 > [!NOTE]
-> Suppression of alerts is not recommended. However, for example, in certain situations, there's an expected activity triggered by security tests or by a known internal business application and you don't want to see these alerts. So, you can create a suppression rule for the alert. 
+> Suppression of alerts is not recommended. However in certain situations, there's an expected activity triggered by security tests or by a known internal business application and you don't want to see these alerts. So, you can create a suppression rule for the alert. 
 
 To create a suppression rule for the alerts:
 
@@ -232,7 +232,7 @@ IOCs that were selected in the suppression conditions will be selected by defaul
 
 :::image type="content" source="../../media/investigate-alerts/suppression-step2-choose-IOCs.png" lightbox="../../media/investigate-alerts/suppression-step2-choose-IOCs.png" alt-text="Successful suppression rule creation ":::
 
-9.	You can turn off the new suppression alert functionality in **Microsoft 365 Defender portal** by navigating to **Settings > Endpoints > Alert suppression**, then switch off the toggle. You would still have the old suppress an alert functionality with fewer features.
+9.	You can turn off the new suppression alert functionality in **Microsoft 365 Defender portal** by navigating to **Settings > Endpoints > Alert suppression**, then switch off the toggle. You would still have the previous suppress an alert functionality with fewer features.
  
 :::image type="content" source="../../media/investigate-alerts/suppression-toggle.png" lightbox="../../media/investigate-alerts/suppression-toggle.png" alt-text="Toggle for turning on/off the new suppression rule creation ":::
 
