@@ -25,6 +25,7 @@ ms.technology: mde
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender Vulnerability Management](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-machinesview-abovefoldlink)
@@ -32,6 +33,9 @@ ms.technology: mde
 The **Devices list** shows a list of the devices in your network where alerts were generated. By default, the queue displays devices seen in the last 30 days.
 
 At a glance you'll see information such as domain, risk level, OS platform, and other details for easy identification of devices most at risk.
+
+> [!NOTE]
+> The information available to you on the device inventory page is dependant on the Microsoft Defender 365 services you are using. For more information, see [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 There are several options you can choose from to customize the devices list view. On the top navigation you can:
 

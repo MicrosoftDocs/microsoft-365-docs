@@ -119,7 +119,7 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-        - text: Defender vulnerability management
+        - text: Microsoft Defender Vulnerability Management
           url: ../defender-vulnerability-management/What-is-defender-vulnerability-management.md
         - text: Attack surface reduction
           url: overview-attack-surface-reduction.md
