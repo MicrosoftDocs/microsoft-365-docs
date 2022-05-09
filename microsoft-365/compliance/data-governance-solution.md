@@ -6,7 +6,7 @@ ms.author: cabailey
 author: cabailey
 manager: laurawi
 audience: Admin
-ms.topic: overview
+ms.topic: article
 ms.service: O365-seccomp
 ms.collection: 
 - m365solution-overview
