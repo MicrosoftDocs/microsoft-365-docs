@@ -118,12 +118,6 @@
       href: microsoft-365-business-faqs.yml
     - name: Microsoft 365 admin content
       href: /microsoft-365/admin/
-    - name: Set up Compliance Manager
-      href: m365bp-set-up-compliance.md
-    - name: App protection settings for Android and iOS
-      href: m365bp-app-protection-settings-for-android-and-ios.md
-    - name: Map protection features to InTune settings
-      href: m365bp-map-protection-features-to-intune-settings.md
     - name: Set up AutoPilot
       items:
         - name: Add AutoPilot devices and profile
@@ -132,6 +126,12 @@
           href: m365bp-autopilot-profile-settings.md
         - name: Create and edit AutoPilot profiles
           href: m365bp-create-and-edit-autopilot-devices.md
+    - name: App protection settings for Android and iOS
+      href: m365bp-app-protection-settings-for-android-and-ios.md
+    - name: Map protection features to InTune settings
+      href: m365bp-map-protection-features-to-intune-settings.md
+    - name: Set up Compliance Manager
+      href: m365bp-set-up-compliance.md
     - name: Microsoft Defender for Business
       href: ../security/defender-business/index.yml
     - name: Microsoft Defender for Office 365
