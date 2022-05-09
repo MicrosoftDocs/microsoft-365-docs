@@ -2,8 +2,8 @@
 title: "Use the admin log for data connectors to view status about importing data"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date:
 audience: Admin
@@ -22,11 +22,11 @@ description: "Learn how to access and view admin logs for data connectors to get
 
 # View admin logs for data connectors
 
-After you create a data connector to import non-Microsoft data to Microsoft 365, you can monitor the daily import status of the connector by downloading the admin logs for the data connector.
+After you create a data connector to import non-Microsoft data to Microsoft Purview, you can monitor the daily import status of the connector by downloading the admin logs for the data connector.
 
 ## Before you view admin logs
 
-- Auditing must be enabled for your organization to generate and view admin log for your organization. Auditing is enabled by default in Microsoft 365. However, we recommend that you verify auditing status of your organization. For instructions, see [Verify the auditing status for your organization](turn-audit-log-search-on-or-off.md#verify-the-auditing-status-for-your-organization). If you need to enable auditing for your organization, see [Turn on auditing](turn-audit-log-search-on-or-off.md#turn-on-auditing).
+- Auditing must be enabled for your organization to generate and view admin log for your organization. Auditing is enabled by default in Microsoft Purview. However, we recommend that you verify auditing status of your organization. For instructions, see [Verify the auditing status for your organization](turn-audit-log-search-on-or-off.md#verify-the-auditing-status-for-your-organization). If you need to enable auditing for your organization, see [Turn on auditing](turn-audit-log-search-on-or-off.md#turn-on-auditing).
 
 - After auditing is turned on, it could take up to 48 hours to generate admin logs for data connectors. We recommend that you enable auditing before you create data connectors.
 
