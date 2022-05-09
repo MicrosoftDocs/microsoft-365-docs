@@ -1,5 +1,5 @@
 ---
-title: How to setup Attack Simulation Training for automated attacks and training 
+title: How to setup automated attacks and training within Attack simulation training 
 description: The steps to automate Attack Simulation training and send a payload to target users.
 search.product: 
 search.appverid: 
@@ -19,7 +19,7 @@ ms.topic: article
 ms.technology: m365d
 ---
 
-# How to automate Attack Simulation for user training
+# How to setup automated attacks and training within Attack simulation training 
 
 Attack simulation training lets you run benign attack simulations on your organization to assess your phishing risk and teach your users how to better avoid phish attacks. By following this guide, you will configure automated flows with specific techniques and payloads that run when the specified conditions are met, launching simulations against your organization.
 
@@ -31,7 +31,7 @@ Attack simulation training lets you run benign attack simulations on your organi
 
 ## Send a payload to target users 
 
-1. Navigate to [Attack Simulator](https://security.microsoft.com/attacksimulator).
+1. Navigate to [Attack simulation training](https://security.microsoft.com/attacksimulator).
 1. Choose **Simulation automations** from the top navigation bar.
 1. Press **Create automation**.
 1. Name the Simulation automation with something relevant and memorable. *Next*.
