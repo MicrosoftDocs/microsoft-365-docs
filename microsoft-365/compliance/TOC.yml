@@ -491,7 +491,37 @@
               - name: Croatia personal identification (OIB) number
                 href: sit-defn-croatia-personal-identification-number.md 
               - name: Croatia physical addresses
-                href: sit-defn-croatia-physical-addresses.md           
+                href: sit-defn-croatia-physical-addresses.md 
+              - name: Cyprus drivers license number
+                href: sit-defn-cyprus-drivers-license-number.md 
+              - name: Cyprus identity card
+                href: sit-defn-cyprus-identity-card.md 
+              - name: Cyprus passport number
+                href: sit-defn-cyprus-passport-number.md 
+              - name: Cyprus physical addresses
+                href: sit-defn-cyprus-physical-addresses.md 
+              - name: Cyprus tax identification number
+                href: sit-defn-cyprus-tax-identification-number.md 
+              - name: Czech drivers license number
+                href: sit-defn-czech-drivers-license-number.md
+              - name: Czech passport number
+                href: sit-defn-czech-passport-number.md
+              - name: Czech personal identity number
+                href: sit-defn-czech-personal-identity-number.md 
+              - name: Czech Republic physical addresses
+                href: sit-defn-czech-republic-physical-addresses.md 
+              - name: Denmark drivers license number
+                href: sit-defn-denmark-drivers-license-number.md 
+              - name: Denmark passport number
+                href: sit-defn-denmark-passport-number.md
+              - name: Denmark personal identification number
+                href: sit-defn-denmark-personal-identification-number.md 
+              - name: Denmark physical addresses
+                href: sit-defn-denmark-physical-addresses.md 
+              - name: Diseases
+                href: sit-defn-diseases.md
+              - name: Drug Enforcement Agency (DEA) number
+                href: sit-defn-drug-enforcement-agency-number.md    
           - name: Sensitive information type functions
             href: sit-functions.md
           - name: Custom sensitive information type filters reference
