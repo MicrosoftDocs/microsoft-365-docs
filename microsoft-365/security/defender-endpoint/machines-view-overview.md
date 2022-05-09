@@ -35,7 +35,7 @@ The **Device inventory** shows a list of the devices in your network where alert
 At a glance you'll see information such as domain, risk level, OS platform, and other details for easy identification of devices most at risk.
 
 > [!NOTE]
-> The information available to you on the **Device inventory** page depends on the Microsoft Defender 365 services you are using. For more information, see [Microsoft 365 Defender](../defender/microsoft-365-defender.md).
+> The device inventory is available in different Microsoft 365 Defender services. The information available to you will differ depending on your license, to get the most complete set of capabilities use [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037).
 
 There are several options you can choose from to customize the devices list view. On the top navigation you can:
 
