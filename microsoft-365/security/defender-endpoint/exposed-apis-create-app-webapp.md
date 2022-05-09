@@ -138,11 +138,15 @@ $authBody = [Ordered] @{
 }
 $authResponse = Invoke-RestMethod -Method Post -Uri $oAuthUri -Body $authBody -ErrorAction Stop
 $token = $authResponse.access_token
+$token
 ```
 
 ### Use C#:
 
 The following code was tested with NuGet Microsoft.IdentityModel.Clients.ActiveDirectory 3.19.8.
+
+> [!IMPORTANT]
+> The [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory) NuGet package and Azure AD Authentication Library (ADAL) have been deprecated. No new features have been added since June 30, 2020.   We strongly encourage you to upgrade, see the [migration guide](/azure/active-directory/develop/msal-migration) for more details.
 
 1. Create a new console application.
 1. Install NuGet [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/).
@@ -166,6 +170,7 @@ The following code was tested with NuGet Microsoft.IdentityModel.Clients.ActiveD
     ClientCredential clientCredential = new ClientCredential(appId, appSecret);
     AuthenticationResult authenticationResult = auth.AcquireTokenAsync(wdatpResourceId, clientCredential).GetAwaiter().GetResult();
     string token = authenticationResult.AccessToken;
+    console.write(token)
     ```
 
 
