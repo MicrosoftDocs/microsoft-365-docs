@@ -52,7 +52,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ### Compliance offerings & service assurance
 
-- [Compliance offerings](regulatory/offering-home.md) - updates for service coverage and audit reporting for VPATS, SOC, ISO, and FedRAMP offerings.
+- [Compliance offerings](/compliance/regulatory/offering-home) - updates for service coverage and audit reporting for VPATS, SOC, ISO, and FedRAMP offerings.
 
 ### Data lifecycle management and records management
 
