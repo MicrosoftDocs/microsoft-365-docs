@@ -27,11 +27,11 @@ description: Learn how to use the adoption assessment tool to see how your organ
 > [!NOTE]
 > The Microsoft 365 Assessment tool can only be run against SharePoint Online. 
 
-You can run a SharePoint Syntex assessment using the Microsoft 365 Assessment tool. You'll generate a report that summarizes aspects of your SharePoint information architecture that are indicators for where SharePoint Syntex might be of value for your organization.
+You can run a SharePoint Syntex assessment using the Microsoft 365 Assessment tool. You'll generate a Power BI report that summarizes aspects of your SharePoint information architecture that are indicators for where SharePoint Syntex might be of value for your organization.
 
 ![Image of three sample report pages in the Power BI summary.](../media/content-understanding/assessment-tool-reports.png)
 
-The assessment output provides a Power BI report that includes the following information: 
+The assessment output includes the following information: 
 
 - **Libraries with custom columns** – Identify libraries where SharePoint Syntex can automatically populate columns, improving consistency. 
 
