@@ -29,7 +29,7 @@ description: Learn how to use the adoption assessment tool to see how your organ
 
 You can run a SharePoint Syntex assessment using the Microsoft 365 Assessment tool. You will generate a report that summarizes aspects of your SharePoint information architecture that are indicators for where SharePoint Syntex might be of value for your organization.
 
-    ![Screenshot of the Power BI summary showing the Custom Content Types report.](../media/content-understanding/assessment-tool-custom-content-types.png)
+![Screenshot of the Power BI summary showing the Custom Content Types report.](../media/content-understanding/assessment-tool-custom-content-types.png)
 
 The assessment output includes a Power BI report comprising of the following: 
 
