@@ -1,5 +1,5 @@
 ---
-title: Assess your environment to discover opportunities for Microsoft SharePoint Syntex
+title: Assess your environment for opportunities with Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 description: Learn how to use the adoption assessment tool to see how your organization can benefit from SharePoint Syntex.
 ---
 
-# Assess your environment to discover opportunities for Microsoft SharePoint Syntex
+# Assess your environment for opportunities with Microsoft SharePoint Syntex
 
 > [!IMPORTANT]
 > The Microsoft 365 Assessment tool and all other PnP components are open-source tools backed by an active community providing support for them. There is no SLA for open-source tool support from official Microsoft support channels. 
@@ -28,8 +28,6 @@ description: Learn how to use the adoption assessment tool to see how your organ
 > The Microsoft 365 Assessment tool can only be run against SharePoint Online. 
 
 You can run a SharePoint Syntex assessment using the Microsoft 365 Assessment tool. You will generate a report that summarizes aspects of your SharePoint information architecture that are indicators for where SharePoint Syntex might be of value for your organization.
-
-![Screenshot of the Power BI summary showing the Custom Content Types report.](../media/content-understanding/assessment-tool-custom-content-types.png)
 
 ![Image of three sample report pages in the Power BI summary.](../media/content-understanding/assessment-tool-reports.png)
 
