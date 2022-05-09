@@ -234,7 +234,7 @@ IOCs that were selected in the suppression conditions will be selected by defaul
 
 :::image type="content" source="../../media/investigate-alerts/suppression-step2-choose-IOCs.png" lightbox="../../media/investigate-alerts/suppression-step2-choose-IOCs.png" alt-text="Successful suppression rule creation ":::
 
-9.	The new suppression alert functionality is available by default. <br> However, you can switch back to the previous suppression alert functionality in Microsoft 365 Defender portal by navigating to **Settings > Endpoints > Alert suppression**, then switch off the **New suppression rules creation enabled** toggle. 
+9.	The new suppression alert functionality is available by default. <br> However, you can switch back to the previous experience in Microsoft 365 Defender portal by navigating to **Settings > Endpoints > Alert suppression**, then switch off the **New suppression rules creation enabled** toggle. 
  
 :::image type="content" source="../../media/investigate-alerts/suppression-toggle.png" lightbox="../../media/investigate-alerts/suppression-toggle.png" alt-text="Toggle for turning on/off the new suppression rule creation ":::
 
