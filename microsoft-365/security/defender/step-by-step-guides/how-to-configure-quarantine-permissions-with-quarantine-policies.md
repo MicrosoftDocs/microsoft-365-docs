@@ -26,6 +26,10 @@ Providing security admins and users with a very simple way to manage false posit
 > [!TIP]
 > For a short video aimed at admins trying to set quarantine permissions and policies, [see this link](https://www.youtube.com/watch?v=vnar4HowfpY). If you are an end user opt for this [1 minute overview](https://www.youtube.com/watch?v=s-vozLO43rI) of the process.
 
+## What you will need
+- Sufficient permissions (Security Administrator role)
+- 5 minutes to perform the steps below.
+
 ## Creating Custom quarantine policies with Request release flow
 
 Our custom polices give admins the ability to decide what items their users can triage in the ***False positive*** folder with an extended ability of allowing the user to request the *release* of those items from the folder.
