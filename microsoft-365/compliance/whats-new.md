@@ -47,72 +47,73 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ### Compliance Manager
 
-- [Compliance Manager templates list](compliance-manager-templates-list.md) (updated; added 6 new templates and navigation links on the page to more easily jump to template categories)
-- [Compliance Manager overview](compliance-manager.md) (updated; updated product overview video)
-- [Get started with Compliance Manager](compliance-manager-setup.md) (updated; clarified that managing automated testing happens on the "Testing source" nav item within CM settings)
+- [Compliance Manager templates list](compliance-manager-templates-list.md) - added 6 new templates and navigation links on the page to more easily jump to template categories.
+- [Compliance Manager overview](compliance-manager.md) - updated product overview video.
 
 ### Compliance offerings & service assurance
 
-- [Compliance offerings](regulatory/offering-home.md) (updated; updates for service coverage and audit reporting for VPATS, SOC, ISO, and FedRAMP offerings)
+- [Compliance offerings](regulatory/offering-home.md) - updates for service coverage and audit reporting for VPATS, SOC, ISO, and FedRAMP offerings.
 
 ### Data lifecycle management and records management
 
-- [Govern your data with Microsoft Purview](manage-data-governance.md) (updated; to reflect the recent product repositioning, data connectors are removed from this page and the records management solution is presented as a peer product rather than a component element of what used to be information governance)
-- [Common settings for retention policies and retention labels](retention-settings.md) (updated; reflects new navigational and UI references for the newly designed retention label wizard)
-- [Declare records by using retention labels](declare-records.md) and [Use record versioning to update records stored in SharePoint or OneDrive](record-versioning.md) (updated); information about the new "Unlock this record by default" label setting that's currently rolling out in preview)
-- [Use file plan to create and manage retention labels](file-plan-manager.md#information-about-the-label-properties-for-import)  (updated; the import section now discloses the label settings that aren't currently supported for import (multi-stage disposition review and unlock this record by default)
+- [Govern your data with Microsoft Purview](manage-data-governance.md) - data connectors are removed from this page and the records management solution is presented as a peer product.
+- [Common settings for retention policies and retention labels](retention-settings.md) - reflects new navigational and UI references for the newly designed retention label wizard.
+- [Declare records by using retention labels](declare-records.md) and [Use record versioning to update records stored in SharePoint or OneDrive](record-versioning.md) - new information about the new "Unlock this record by default" label setting that's currently rolling out in preview.
+- [Use file plan to create and manage retention labels](file-plan-manager.md#information-about-the-label-properties-for-import)  - the import section now discloses the label settings that aren't currently supported for import (multi-stage disposition review and unlock this record by default).
 
 ### Data Loss Prevention
 
-- [Learn about endpoint DLP](endpoint-dlp-learn-about.md) (updated; added best practice guidance for endpoint DLP policies; updated; macOS device onboarding GA))
-- [Configure endpoint data loss prevention settings](dlp-configure-endpoint-settings.md) (updated; macOS device onboarding GA)
-- [Plan for data loss prevention (DLP)](dlp-overview-plan-for-dlp.md) (updated; macOS device onboarding GA)
-- [Data Loss Prevention policy reference](dlp-policy-reference.md) (updated; macOS device onboarding GA; updated; )
-- [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md) (updated; macOS device onboarding GA)
-- [DLP policy conditions, exceptions, and actions](dlp-conditions-and-exceptions.md) (updated; added guidance for Modify Subject action)
-- [Data Loss Prevention policy reference](dlp-policy-reference.md) (updated; GA SPO/ODB predicates; updated; new guidance on rule processing on endpoints) 
+- Articles updated for macOS device onboarding GA:
+  - [Learn about endpoint DLP](endpoint-dlp-learn-about.md)
+  - [Configure endpoint data loss prevention settings](dlp-configure-endpoint-settings.md)
+  - [Plan for data loss prevention (DLP)](dlp-overview-plan-for-dlp.md)
+  - [Data Loss Prevention policy reference](dlp-policy-reference.md)
+  - [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md)
+- [DLP policy conditions, exceptions, and actions](dlp-conditions-and-exceptions.md) - added guidance for Modify Subject action.
+- [Data Loss Prevention policy reference](dlp-policy-reference.md) - GA SPO/ODB predicates; updated with new guidance on rule processing on endpoints.
 
 ### Device Onboarding
 
-- [Onboard macOS devices in to Microsoft 365 overview](device-onboarding-macos-overview.md) (updated; macOS device onboarding GA; updated; added more detailed guidance for supported browsers)
-- [Onboard and offboard macOS devices into Compliance solutions using Intune for Microsoft Defender for Endpoint customers](device-onboarding-offboarding-macos-intune-mde.md)  (updated; macOS device onboarding GA)
-- [Onboard and offboard macOS devices into Microsoft Purview solutions using Intune](device-onboarding-offboarding-macos-intune.md)  (updated; macOS device onboarding GA)
-- [Onboard and offboard macOS devices into Compliance solutions using JAMF Pro for Microsoft Defender for Endpoint customers](device-onboarding-offboarding-macos-jamfpro-mde.md) (updated; macOS device onboarding GA)
-- [Onboard and offboard macOS devices into Microsoft Purview solutions using JAMF Pro](device-onboarding-offboarding-macos-jamfpro.md) (updated; macOS device onboarding GA)
+- Articles updated for macOS device onboarding GA:
+  - [Onboard macOS devices in to Microsoft 365 overview](device-onboarding-macos-overview.md)
+  - [Onboard and offboard macOS devices into Compliance solutions using Intune for Microsoft Defender for Endpoint customers](device-onboarding-offboarding-macos-intune-mde.md)
+  - [Onboard and offboard macOS devices into Microsoft Purview solutions using Intune](device-onboarding-offboarding-macos-intune.md)
+  - [Onboard and offboard macOS devices into Compliance solutions using JAMF Pro for Microsoft Defender for Endpoint customers](device-onboarding-offboarding-macos-jamfpro-mde.md)
+  - [Onboard and offboard macOS devices into Microsoft Purview solutions using JAMF Pro](device-onboarding-offboarding-macos-jamfpro.md)
 
 ### Information barriers
 
-- [Use information barriers with SharePoint](/sharepoint/information-barriers) (updated; guidance added for new private channel support in SharePoint)
-- [Manage information barriers policies](information-barriers-edit-segments-policies.md) (updated; guidance added for removing segments and policy/segments together)
+- [Use information barriers with SharePoint](/sharepoint/information-barriers) - guidance added for new private channel support in SharePoint.
+- [Manage information barriers policies](information-barriers-edit-segments-policies.md) - guidance added for removing segments and policy/segments together.
 
 ### Microsoft Priva
 
-- [Privacy Risk Management policies](/privacy/priva/risk-management) (new pages, significant updates, and restructuring of policies content; details below)
-  - [Privacy Risk Management policies](/privacy/priva/risk-management-policies) (update; added significant details about policy setup and management that apply to all policies; added links to new pages for each of the three policy types)
-  - [Data overexposure policies](/privacy/priva/risk-management-policy-data-overexposure) (new; articulates the need and uses for the policy; explains default settings for out-of-box creation and detailed instructions for customizing settings)
-  - [Data transfer policies](/privacy/priva/risk-management-policy-data-transfer) (new; highlights new condition for the policy to detect transfers outside of the org; articulates the need and uses for the policy; explains default settings for out-of-box creation and detailed instructions for customizing settings)
-  - [Data minimization policies](/privacy/priva/risk-management-policy-data-minimization) (new; articulates the need and uses for the policy; explains default settings for out-of-box creation and detailed instructions for customizing settings)
-  - [Investigate and remediate alerts](/privacy/priva/risk-management-alerts) (updated; added clarifying details and formatting changes to improve readability)
-  - [User notifications](/privacy/priva/risk-management-notifications) (updated; added info on the functionality for previewing and customizing email notification content)
-- [Create a subject rights request](/privacy/priva/subject-rights-requests-create) (updated; added section on getting started with your first request with default settings to explore functionality)
-- [Review data for a subject rights request](/privacy/priva/subject-rights-requests-data-review) (updated; added details explaining priority items to review and how to find them, and the need to set up data matching in order to get this insight)
-- [Find and visualize personal data](/privacy/priva/priva-data-profile) (updated; clarified that users need to set up data matching in order to receive insights for "Items with the most data subject content" under "Key insights"
-- [Data matching for subject rights requests](/privacy/priva/subject-rights-requests-data-match) (updated; clarified the step progression in this process and added the second step of creating sensitive info types)
+- [Privacy Risk Management policies](/privacy/priva/risk-management) - new pages, significant updates, and restructuring of policies content; details below:
+  - [Privacy Risk Management policies](/privacy/priva/risk-management-policies) - added significant details about policy setup and management that apply to all policies; added links to new pages for each of the three policy types.
+  - [Data overexposure policies](/privacy/priva/risk-management-policy-data-overexposure) - articulates the need and uses for the policy; explains default settings for out-of-box creation and detailed instructions for customizing settings.
+  - [Data transfer policies](/privacy/priva/risk-management-policy-data-transfer) - highlights new condition for the policy to detect transfers outside of the org; articulates the need and uses for the policy; explains default settings for out-of-box creation and detailed instructions for customizing settings.
+  - [Data minimization policies](/privacy/priva/risk-management-policy-data-minimization) - articulates the need and uses for the policy; explains default settings for out-of-box creation and detailed instructions for customizing settings.
+  - [Investigate and remediate alerts](/privacy/priva/risk-management-alerts) - added clarifying details and formatting changes to improve readability.
+  - [User notifications](/privacy/priva/risk-management-notifications) - added info on the functionality for previewing and customizing email notification content.
+- [Create a subject rights request](/privacy/priva/subject-rights-requests-create) - added section on getting started with your first request with default settings to explore functionality.
+- [Review data for a subject rights request](/privacy/priva/subject-rights-requests-data-review) - added details explaining priority items to review and how to find them, and the need to set up data matching in order to get this insight.
+- [Find and visualize personal data](/privacy/priva/priva-data-profile) - clarified that users need to set up data matching in order to receive insights for "Items with the most data subject content" under "Key insights".
+- [Data matching for subject rights requests](/privacy/priva/subject-rights-requests-data-match) - clarified the step progression in this process and added the second step of creating sensitive info types.
 
 ### Sensitive Information Types
 
-- [Use named entities in DLP policies](named-entities-use.md) (updated;  commented out guidance on unsupported platforms for future use; updated; named entities GA; updated; commented out support statement for Microsoft Defender for Cloud Apps until it is confirmed that it works)
-- [Learn about named entities](named-entities-learn.md) (updated; named entities GA)
-- [Sensitive information types entity definitions](sensitive-information-type-entity-definitions.md) (updated; named entities GA; updated; pattern updates)
-- [Learn about sensitive information types](sensitive-information-type-learn-about.md) (updated; named entities GA)
+- [Use named entities in DLP policies](named-entities-use.md) - named entities GA.
+- [Learn about named entities](named-entities-learn.md) - named entities GA.
+- [Sensitive information types entity definitions](sensitive-information-type-entity-definitions.md) - named entities GA, and pattern updates.
+- [Learn about sensitive information types](sensitive-information-type-learn-about.md) - named entities GA.
 
 ### Sensitivity labels
 
-- [Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 groups, and SharePoint sites](sensitivity-labels-teams-groups-sites.md#configure-site-sharing-permissions-by-using-powershell-advanced-settings) (updated; new configuration now in preview for site sharing permissions by using PowerShell advanced settings)
-- [Restrict access to content by using sensitivity labels to apply encryption](encryption-sensitivity-labels.md) (updated; added the known issue for specifying a group that contains mail contacts, with a link to the published KB for details and workarounds)
-- [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md) (updated; removed the known issue with deleted OneDrive sites incorrectly displayed in the simulation results for auto-labeling policies)
-- [Enable co-authoring for files encrypted with sensitivity labels](sensitivity-labels-coauthoring.md) (updated; as a result of customer feedback, removed the callout in the Prerequisites section that this feature isn't yet supported by the Semi-Annual Enterprise Channel, and instead added Semi-Annual Enterprise Channel (Preview) with the minimum version 2202)
-- [Manage sensitivity labels in Office apps](sensitivity-labels-office-apps.md) (updated; support details for applying a default label to existing documents are updated to correct that on Windows, this release is still rolling out in the Beta channel, and is now fully rolled out for the web)
+- [Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 groups, and SharePoint sites](sensitivity-labels-teams-groups-sites.md#configure-site-sharing-permissions-by-using-powershell-advanced-settings) - new configuration now in preview for site sharing permissions by using PowerShell advanced settings.
+- [Restrict access to content by using sensitivity labels to apply encryption](encryption-sensitivity-labels.md) - added the known issue for specifying a group that contains mail contacts, with a link to the published KB for details and workarounds.
+- [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md) - removed the known issue with deleted OneDrive sites incorrectly displayed in the simulation results for auto-labeling policies)
+- [Enable co-authoring for files encrypted with sensitivity labels](sensitivity-labels-coauthoring.md) - as a result of customer feedback, removed the callout in the Prerequisites section that this feature isn't yet supported by the Semi-Annual Enterprise Channel, and instead added Semi-Annual Enterprise Channel (Preview) with the minimum version 2202.
+- [Manage sensitivity labels in Office apps](sensitivity-labels-office-apps.md) - support details for applying a default label to existing documents are updated to correct that on Windows, this release is still rolling out in the Beta channel, and is now fully rolled out for the web.
 
 ### Changes to product names
 
