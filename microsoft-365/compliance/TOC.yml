@@ -462,6 +462,36 @@
                 href: sit-defn-bulgaria-physical-addresses.md
               - name: Bulgaria uniform civil number
                 href: sit-defn-bulgaria-uniform-civil-number.md
+              - name: Canada bank account number
+                href: sit-defn-canada-bank-account-number.md
+              - name: Canada drivers license number
+                href: sit-defn-canada-drivers-license-number.md
+              - name: Canada health service number
+                href: sit-defn-canada-health-service-number.md
+              - name: Canada passport number
+                href: sit-defn-canada-passport-number.md
+              - name: Canada personal health identification number (PHIN)
+                href: sit-defn-canada-personal-health-identification-number.md
+              - name: Canada physical addresses
+                href: sit-defn-canada-physical-addresses.md
+              - name: Canada social insurance number
+                href: sit-defn-canada-social-insurance-number.md
+              - name: Chile identity card number
+                href: sit-defn-chile-identity-card-number.md
+              - name: China resident identity card (PRC) number
+                href: sit-defn-china-resident-identity-card-number.md
+              - name: Credit card number
+                href: sit-defn-credit-card-number.md
+              - name: Croatia drivers license number
+                href: sit-defn-croatia-drivers-license-number.md
+              - name: Croatia identity card number
+                href: sit-defn-croatia-identity-card-number.md              
+              - name: Croatia passport number
+                href: sit-defn-croatia-passport-number.md 
+              - name: Croatia personal identification (OIB) number
+                href: sit-defn-croatia-personal-identification-number.md 
+              - name: Croatia physical addresses
+                href: sit-defn-croatia-physical-addresses.md           
           - name: Sensitive information type functions
             href: sit-functions.md
           - name: Custom sensitive information type filters reference
