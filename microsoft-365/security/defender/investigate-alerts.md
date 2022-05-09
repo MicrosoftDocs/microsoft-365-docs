@@ -175,6 +175,8 @@ The **Recommendations** tab provides next-step actions and advice for investigat
  
 ## Suppress an alert
 
+Alert suppression provides the ability to tune and manage alerts in advance, before they trigger, to keep the queue focused and save triage time by hiding or resolving alerts automatically, each time a certain expected organizational behavior occurs, and rule conditions are met. 
+
 You can now suppress alerts based on IOCs (indicators) like files using AND/OR operators and groupings.
 
 IOCs are the indicators such as files, processes, and evidence that trigger the alert.
@@ -216,7 +218,7 @@ Use the **OR** operator to add another file name and its attributes. So, for eit
 
 :::image type="content" source="../../media/investigate-alerts/suppression-choose-scope.png" lightbox="../../media/investigate-alerts/suppression-choose-scope.png" alt-text="Create suppression rule pane: Conditions, Scope, Action":::
  
-6.	You can define conditions to suppress alert in the **Scope** section by selecting **Device**, **Device group**, or by **User**.<br> For example, for a particular user or device group you can suppress the alert.
+6.	You can define the **Scope** based on **Device**, **Device group**, or by **User**.
 
 > [!NOTE]
 > You must have Admin permission when the **Scope** is set only for **User**. Admin permission is not required when the Scope is set for **User** along with **Device**.
@@ -232,12 +234,12 @@ IOCs that were selected in the suppression conditions will be selected by defaul
 
 :::image type="content" source="../../media/investigate-alerts/suppression-step2-choose-IOCs.png" lightbox="../../media/investigate-alerts/suppression-step2-choose-IOCs.png" alt-text="Successful suppression rule creation ":::
 
-9.	You can turn off the new suppression alert functionality in **Microsoft 365 Defender portal** by navigating to **Settings > Endpoints > Alert suppression**, then switch off the toggle. You would still have the previous suppress an alert functionality with fewer features.
+9.	The new suppression alert functionality is available by default. However, you can switch back to the previous suppression alert functionality in Microsoft 365 Defender portal by navigating to **Settings > Endpoints > Alert suppression**, then switch off the toggle. 
  
 :::image type="content" source="../../media/investigate-alerts/suppression-toggle.png" lightbox="../../media/investigate-alerts/suppression-toggle.png" alt-text="Toggle for turning on/off the new suppression rule creation ":::
 
-10.	When alert suppression is enabled, you can edit the existing ‘simple’ rules in Microsoft 365 Defender portal as follows: 
-    - Select the rule. Click **Edit rule** in the side panel and then add more conditions and scope with the new advanced capabilities. 
+10.	You can always add or change rule conditions, scope or alert type of new or existing rules in Microsoft Defender portal, by selecting the relevant rule and clicking **Edit rule**.    
+    To edit existing rules, ensure that the **New suppression rule creation** toggle is enabled.         
 
 :::image type="content" source="../../media/investigate-alerts/suppression-toggle-on-edit.png" lightbox="../../media/investigate-alerts/suppression-toggle-on-edit.png" alt-text="Edit suppression rule":::
   
