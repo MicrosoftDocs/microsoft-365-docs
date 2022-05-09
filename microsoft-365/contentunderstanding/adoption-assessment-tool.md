@@ -27,19 +27,19 @@ description: Learn how to use the adoption assessment tool to see how your organ
 > [!NOTE]
 > The Microsoft 365 Assessment tool can only be run against SharePoint Online. 
 
-You can run a SharePoint Syntex assessment using the Microsoft 365 Assessment tool. You will generate a report that summarizes aspects of your SharePoint information architecture that are indicators for where SharePoint Syntex might be of value for your organization.
+You can run a SharePoint Syntex assessment using the Microsoft 365 Assessment tool. You'll generate a report that summarizes aspects of your SharePoint information architecture that are indicators for where SharePoint Syntex might be of value for your organization.
 
 ![Image of three sample report pages in the Power BI summary.](../media/content-understanding/assessment-tool-reports.png)
 
-The assessment output includes a Power BI report comprising of the following: 
+The assessment output includes a Power BI report that includes the following information: 
 
 - **Libraries with custom columns** – Identify libraries where SharePoint Syntex can automatically populate columns, improving consistency. 
 
-- **Column usage** – Identify patterns of column usage, to target SharePoint Syntex models where they will have the maximum benefit. 
+- **Column usage** – Identify patterns of column usage, to target SharePoint Syntex models where they'll have the maximum benefit. 
 
 - **Libraries with custom content types** – Identify libraries using custom content types, where SharePoint Syntex models can be used to automatically categorize files. 
 
-- **Content type usage** – Identify patterns of content type usage, to target Sharepoint Syntex models where they will have the maximum benefit. 
+- **Content type usage** – Identify patterns of content type usage, to target Sharepoint Syntex models where they'll have the maximum benefit. 
 
 - **Libraries with retention labels** – Identify libraries where retention labels are used, where SharePoint Syntex can be used to automate and improve consistency. 
 
