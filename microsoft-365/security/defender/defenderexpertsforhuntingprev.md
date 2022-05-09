@@ -34,8 +34,7 @@ ms.technology: mde
 
 Microsoft Defender Experts for Hunting (Defender Experts for Hunting) is a managed threat hunting service that can help your Security Operation Centers (SOCs) with expert level monitoring, analysis, and support to identify and respond to critical threats in your unique environment.
 
-Watch this short video to learn more about how Microsoft Defender Experts for Hunting can help you track the latest advanced threats in your environment.
->[!VIDEO https://youtu.be/4t1JgE0X0jc]
+[Watch this short video](https://youtu.be/4t1JgE0X0jc) to learn more about how Microsoft Defender Experts for Hunting can help you track the latest advanced threats in your environment.
 
 Defender Experts for Hunting provides targeted attack notifications directly through the Microsoft 365 Defender portal. These notifications will help you protect your organization's endpoints, email, cloud apps and identities. You will also receive access to Experts on Demand, that lets you click a button in the Microsoft 365 Defender portal to get expert advice about threats your organization is facing. You can consult experts and seek help with the threats your organization faces. In this preview, you can try the service for free and enjoy the following capabilities:
 
