@@ -1,6 +1,7 @@
 ---
 title: "Use communication compliance reports and audits"
 description: "Learn more about using communication compliance reports and audits."
+keywords: Microsoft 365, Microsoft Purview, compliance, communication compliance
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -22,6 +23,8 @@ search.appverid:
 
 # Use communication compliance reports and audits
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 ## Reports
 
 The new **Reports** dashboard is the central location for viewing all communication compliance reports. Report widgets provide a quick view of insights most commonly needed for an overall assessment of the status of communication compliance activities. Information contained in the report widgets isn't exportable. Detailed reports provide in-depth information related to specific communication compliance areas and offer the ability to filter, group, sort, and export information while reviewing. 
@@ -42,7 +45,7 @@ The **Reports dashboard** contains the following report widgets and detailed rep
 
 ### Detailed reports
 
-Use the *Export* option to create a .csv file containing the report details for any detailed report.
+Use the *Export* option to create a .csv file containing the report details for any detailed report. The *Export* report option supports file size downloads up to 3MB.
 
 - **Policy settings and status**: provides a detailed look at policy configuration and settings, as well as the general status for each of the policy (matches and actions) on messages. Includes policy information and how policies are associated with users and groups, locations, review percentages, reviewers, status, and when the policy was last modified. Use the *Export* option to create a .csv file containing the report details.
 - **Items and actions per policy**: Review and export matching items and remediation actions per policy. Includes policy information and how policies are associated with:
@@ -98,7 +101,7 @@ Create custom reports and review details for messages contained in specific poli
 
 To create a new message details report, complete the following steps:
 
-1. Sign into the Microsoft 365 compliance center with an account that is a member of the *Communication Compliance Investigators* role group.
+1. Sign into the Microsoft Purview compliance portal with an account that is a member of the *Communication Compliance Investigators* role group.
 2. Navigate to the **Policies** tab, select a policy, and then select **Create message details report**.
 3. On the **Create message details report** pane, enter a name for the report in the **Report name** field.
 4. In **Choose a date range**, select a *Start date* and *End date* for the report.

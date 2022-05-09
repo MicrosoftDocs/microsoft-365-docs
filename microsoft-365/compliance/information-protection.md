@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Information Protection in Microsoft 365"
+title: "Microsoft Purview Information Protection"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,22 +17,27 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 recommendations: false
-description: "Implement Microsoft Information Protection (MIP) capabilities to help you protect sensitive information wherever it lives or travels."
+description: "Implement Microsoft Purview Information Protection capabilities to help you protect sensitive information wherever it lives or travels."
 ---
 
-# Microsoft Information Protection in Microsoft 365
+# Protect your sensitive data with Microsoft Purview
 
 >*[Licensing for Microsoft 365 Security & Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
-Implement capabilities from Microsoft Information Protection (MIP) to help you discover, classify, and protect sensitive information wherever it lives or travels.
+> [!TIP]
+> *Did you know you can try the premium versions of all nine Microsoft Purview solutions for free?* Use the 90-day Purview solutions trial to explore how robust Purview capabilities can help your organization meet its compliance needs. Microsoft 365 E3 and Office 365 E3 customers can start now at the [Microsoft Purview compliance portal trials hub](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). Learn details about [who can sign up and trial terms](compliance-easy-trials.md).
 
-MIP capabilities are included with Microsoft 365 Compliance and give you the tools to [know your data](#know-your-data), [protect your data](#protect-your-data), and [prevent data loss](#prevent-data-loss).
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-![Image of how MIP helps you discover, classify, and protect sensitive data.](../media/powered-by-intelligent-platform.png)
+Implement capabilities from **Microsoft Purview Information Protection** (formerly Microsoft Information Protection) to help you discover, classify, and protect sensitive information wherever it lives or travels.
 
-For prescriptive guidance to deploy a MIP solution for your organization, see [Deploy a Microsoft Information Protection solution](information-protection-solution.md).
+These information protection capabilities give you the tools to [know your data](#know-your-data), [protect your data](#protect-your-data), and [prevent data loss](#prevent-data-loss).
 
-For information about governing your data, see [Microsoft Information Governance in Microsoft 365](manage-Information-governance.md).
+![Image of how Microsoft Purview Information Protection helps you discover, classify, and protect sensitive data.](../media/powered-by-intelligent-platform.png)
+
+For prescriptive guidance to deploy a Microsoft Purview Information Protection solution for your organization, see [Deploy an information protection solution with Microsoft Purview](information-protection-solution.md).
+
+For information about governing your data, see [Govern your data with Microsoft Purview](manage-Information-governance.md).
 
 ## Know your data
 
@@ -59,7 +64,7 @@ To apply flexible protection actions that include encryption, access restriction
 [Rights Management connector](/azure/information-protection/deploy-rms-connector) |Protection-only for existing on-premises deployments that use Exchange or SharePoint Server, or file servers that run Windows Server and File Classification Infrastructure (FCI). | [Steps to deploy the RMS connector](/azure/information-protection/deploy-rms-connector#steps-to-deploy-the-rms-connector)
 |[Azure Information Protection unified labeling scanner](/azure/information-protection/deploy-aip-scanner)| Discovers, labels, and protects sensitive information that resides in data stores that are on premises. | [Configuring and installing the Azure Information Protection unified labeling scanner](/azure/information-protection/deploy-aip-scanner-configure-install)|
 |[Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security)| Discovers, labels, and protects sensitive information that resides in data stores that are in the cloud. | [Discover, classify, label, and protect regulated and sensitive data stored in the cloud](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
-|[Azure Purview](/azure/purview/overview) |Identifies sensitive data and applies automatic labeling to content in Azure Purview assets. These include files in storage such as Azure Data Lake and Azure Files, and schematized data such as columns in Azure SQL DB, and Cosmos DB. |[Labeling in Azure Purview](/azure/purview/create-sensitivity-label) |
+|[Microsoft Purview Data Map](/azure/purview/overview) |Identifies sensitive data and applies automatic labeling to content in Microsoft Purview Data Map assets. These include files in storage such as Azure Data Lake and Azure Files, and schematized data such as columns in Azure SQL DB, and Cosmos DB. |[Labeling in Microsoft Purview Data Map](/azure/purview/create-sensitivity-label) |
 |[Microsoft Information Protection SDK](/information-protection/develop/overview#microsoft-information-protection-sdk)|Extends sensitivity labels to third-party apps and services. <br /><br />  Example scenario: [Set and get a sensitivity label (C++)](/information-protection/develop/quick-file-set-get-label-cpp) |[Microsoft Information Protection (MIP) SDK setup and configuration](/information-protection/develop/setup-configure-mip)|
 
 
@@ -70,12 +75,12 @@ To help prevent accidental oversharing of sensitive information, use the followi
 
 |Capability|What problems does it solve?|Get started|
 |:------|:------------|:---------------------|
-|[Data loss prevention](dlp-learn-about-dlp.md)| Helps prevent unintentional sharing of sensitive items. | [Get started with the default DLP policy](get-started-with-the-default-dlp-policy.md)|
+|[Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md)| Helps prevent unintentional sharing of sensitive items. | [Get started with the default DLP policy](get-started-with-the-default-dlp-policy.md)|
 |[Endpoint data loss prevention](endpoint-dlp-learn-about.md)| Extends DLP capabilities to items that are used and shared on Windows 10 computers. | [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md)|
 |[Microsoft Compliance Extension](dlp-chrome-learn-about.md) | Extends DLP capabilities to the Chrome browser | [Get started with the Microsoft Compliance Extension](dlp-chrome-get-started.md)|
-|[Microsoft 365 data loss prevention on-premises scanner (preview)](dlp-on-premises-scanner-learn.md)|Extends DLP monitoring of file activities and protective actions for those files to on-premises file shares and SharePoint folders and document libraries.|[Get started with Microsoft 365 data loss prevention on-premises scanner (preview)](dlp-on-premises-scanner-get-started.md)|
+|[Microsoft Purview data loss prevention on-premises scanner (preview)](dlp-on-premises-scanner-learn.md)|Extends DLP monitoring of file activities and protective actions for those files to on-premises file shares and SharePoint folders and document libraries.|[Get started with Microsoft Purview data loss prevention on-premises scanner (preview)](dlp-on-premises-scanner-get-started.md)|
 |[Protect sensitive information in Microsoft Teams chat and channel messages](dlp-microsoft-teams.md) | Extends some DLP functionality to Teams chat and channel messages | [Learn about the default data loss prevention policy in Microsoft Teams (preview)](dlp-teams-default-policy.md)|
 
 ## Licensing requirements
 
-License requirements for MIP depend on the scenarios and features you use, rather than set licensing requirements for each capability listed on this page. To understand your licensing requirements and options for MIP, see the **Information Protection** sections from [Microsoft 365 guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance) and the related [PDF download](https://go.microsoft.com/fwlink/?linkid=2139145) for feature-level licensing requirements.
+License requirements for Microsoft Purview Information Protection depend on the scenarios and features you use, rather than set licensing requirements for each capability listed on this page. To understand your licensing requirements and options for Microsoft Purview Information Protection, see the **Information Protection** sections from [Microsoft 365 guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance) and the related [PDF download](https://go.microsoft.com/fwlink/?linkid=2139145) for feature-level licensing requirements.

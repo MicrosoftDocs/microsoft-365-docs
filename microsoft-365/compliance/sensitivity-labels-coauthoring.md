@@ -1,5 +1,5 @@
 ---
-title: "Enable co-authoring for documents encrypted by sensitivity labels in Microsoft 365"
+title: "Enable co-authoring for encrypted documents"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -18,6 +18,8 @@ description: "Turn on a setting that enables co-authoring and AutoSave in deskto
 # Enable co-authoring for files encrypted with sensitivity labels
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Enable the setting to support [co-authoring](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) for Office desktop apps so that when documents are labeled and encrypted by [sensitivity labels](sensitivity-labels.md), multiple users can edit these documents at the same time.
 
@@ -62,11 +64,6 @@ Check the following section for a list of apps and services that support this se
 
 ## Prerequisites
 
-> [!IMPORTANT]
-> This feature requires that all users have Microsoft 365 Apps for enterprise. Support for this co-authoring feature isn't yet available with the Semi-Annual Enterprise Channel for Office updates. If you are using this update channel for your Office apps, change it to Current Channel or Monthly Enterprise Channel.
-> 
-> For more information, see [How to configure and manage update channels](/deployoffice/overview-update-channels#how-to-configure-and-manage-update-channels).
-
 Make sure you understand the following prerequisites before you turn on this feature.
 
 - You must be a global admin to turn on this feature.
@@ -74,7 +71,7 @@ Make sure you understand the following prerequisites before you turn on this fea
 - Sensitivity labels must be [enabled for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) for the tenant. If this feature isn't already enabled, it will be automatically enabled when you select the setting to turn on co-authoring for files with sensitivity labels.
 
 - Microsoft 365 Apps for enterprise:
-    - **Windows**: Minimum version 2107 from Current Channel or Monthly Enterprise Channel
+    - **Windows**: Minimum version 2107 from Current Channel or Monthly Enterprise Channel, or minimum version 2202 from Semi-Annual Enterprise Channel (Preview)
     - **macOS**: Minimum version 16.51
     - **iOS**: Now in preview when you [opt in](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) with minimum version 2.58
     - **Android**: Now in preview when you [opt in](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) with minimum version 16.0.14931
@@ -136,7 +133,7 @@ Before you enable the tenant setting for co-authoring for files encrypted with s
 
 If you've already turned on this setting during the preview period, no further action is needed and you can skip this procedure.
 
-1. Sign in to the [Microsoft 365 compliance center](https://compliance.microsoft.com) as a global admin for your tenant.
+1. Sign in to the [Microsoft Purview compliance portal](https://compliance.microsoft.com) as a global admin for your tenant.
 
 2. From the navigation pane, select **Settings** > **Co-authoring for files with sensitivity files**.
 

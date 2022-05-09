@@ -51,6 +51,13 @@ Watch this short video to learn more about how threat analytics can help you tra
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4bw1f]
 
+## Required roles and permissions
+The following table outlines the roles and permissions required to access Threat Analytics. Roles defined in the table below refer to custom roles in individual portals and are not connected to global roles in Azure AD, even if similarly named.
+
+| **One of the following roles are required for Microsoft 365 Defender**  | **One of the following roles are required for Defender for Endpoint**  | **One of the following roles are required for Defender for Office 365** | **One of the following roles are required for Defender for Cloud Apps** | 
+|---------|---------|---------|---------|
+| Threat Analytics | Alerts and incidents data: <ul><li>View data- security operations</li></ul>TVM mitigations:<ul><li>View data - Threat and vulnerability management</li></ul> | Alerts and incidents data:<ul> <li>View-only manage alerts</li> <li>Manage alerts</li> <li>Organization configuration</li><li>Audit logs</li> <li>View-only audit logs</li><li>Security reader</li> <li>Security admin</li><li>View-only recipients</li> </ul> Prevented email attempts: <ul><li>Security reader</li> <li>Security admin</li><li>View-only recipients</li> | Not available for Defender for Cloud Apps or MDI users |
+
 ## View the threat analytics dashboard
 
 The threat analytics dashboard is a great jump off point for getting to the reports that are most relevant to your organization. It summarizes the threats in the following sections:
@@ -61,7 +68,7 @@ The threat analytics dashboard is a great jump off point for getting to the repo
 
 Select a threat from the dashboard to view the report for that threat.
 
-![Image of a threat analytics dashboard.](images/ta_dashboard.png)
+:::image type="content" source="images/ta_dashboard.png" alt-text="The threat analytics dashboard" lightbox="images/ta_dashboard.png":::
 
 ## View a threat analytics report
 
@@ -71,7 +78,7 @@ Each threat analytics report provides information in three sections: **Overview*
 
 The **Overview** section provides a preview of the detailed analyst report. It also provides charts that highlight the impact of the threat to your organization and your exposure through misconfigured and unpatched devices.
 
-![Image of the overview section of a threat analytics report.](images/ta-overview.png)
+:::image type="content" source="images/ta-overview.png" alt-text="The Overview section of a threat analytics report" lightbox="images/ta-overview.png":::
 _Overview section of a threat analytics report_
 
 #### Assess the impact to your organization
@@ -107,7 +114,8 @@ In the **Mitigations** section, review the list of specific actionable recommend
 
 Mitigation information in this section incorporates data from [threat and vulnerability management](next-gen-threat-and-vuln-mgt.md), which also provides detailed drill-down information from various links in the report.
 
-![Image of the mitigations section of a threat analytics report.](images/ta-mitigations.png)
+:::image type="content" source="images/ta-mitigations.png" alt-text="The Mitigations section of a threat analytics report" lightbox="images/ta-mitigations.png":::
+
 
 _Mitigations section of a threat analytics report_
 
