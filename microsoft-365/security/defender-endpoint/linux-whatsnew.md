@@ -24,6 +24,31 @@ ms.technology: mde
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
+## 101.65.77 (30.122032.16577.0)
+
+- Improved the `conflicting_applications` field in `mdatp health` to show only the most recent 10 processes and also to include the process names. This makes it easier to identify which processes are potentially conflicting with Microsoft Defender for Endpoint for Linux.
+- Bug fixes
+
+## 101.62.74 (30.122022.16274.0)
+
+- Addressed an issue where the product would incorrectly block access to files greater than 2GB in size when running on older kernel versions
+- Bug fixes
+
+## 101.60.93 (30.122012.16093.0)
+
+- This version contains a security update for [CVE-2022-23278](https://msrc-blog.microsoft.com/2022/03/08/guidance-for-cve-2022-23278-spoofing-in-microsoft-defender-for-endpoint/)
+
+## 101.60.05 (30.122012.16005.0)
+
+- Added support for kernel version 2.6.32-754.43.1.el6.x86_64 for RHEL 6.10
+- Bug fixes
+
+## 101.58.80 (30.122012.15880.0)
+
+- The command-line tool now supports restoring quarantined files to a location other than the one where the file was originally detected. This can be done through `mdatp threat quarantine restore --id [threat-id] --path [destination-folder]`.
+- Starting with this version, network protection for Linux can be evaluated on demand
+- Bug fixes
+
 ## 101.56.62 (30.121122.15662.0)
 
 - Fixed a product crash introduced in 101.53.02 and that has impacted multiple customers

@@ -2,8 +2,8 @@
 title: "Reactivate your subscription"
 f1.keywords:
 - CSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -14,10 +14,10 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- commerce_subscriptions
 - TopSMBIssues
 - fwlink 874703
 - AdminSurgePortfolio
-- commerce_subscriptions
 - AdminTemplateSet
 search.appverid: MET150 
 description: "Admins can reactivate a subscription when it expires, is disabled, or canceled, or if you canceled in the middle of a subscription term."

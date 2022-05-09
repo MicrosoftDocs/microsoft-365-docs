@@ -45,7 +45,8 @@ Devices must have access to the following endpoints:
 
 Policies for Microsoft Defender for Endpoint security management are supported for the following device platforms:
 
-- Windows 10 Professional/Enterprise (with [KB5006738](https://support.microsoft.com/topic/october-26-2021-kb5006738-os-builds-19041-1320-19042-1320-and-19043-1320-preview-ccbce6bf-ae00-4e66-9789-ce8e7ea35541))
+- Windows 10 Pro/Enterprise (with [KB5006738](https://support.microsoft.com/topic/october-26-2021-kb5006738-os-builds-19041-1320-19042-1320-and-19043-1320-preview-ccbce6bf-ae00-4e66-9789-ce8e7ea35541))
+- Windows 11 Pro/Enterprise
 - Windows Server 2012 R2 with [Microsoft Defender for Down-Level Devices](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview)
 - Windows Server 2016 with [Microsoft Defender for Down-Level Devices](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview)
 - Windows Server 2019 (with [KB5006744](https://support.microsoft.com/topic/october-19-2021-kb5006744-os-build-17763-2268-preview-e043a8a3-901b-4190-bb6b-f5a4137411c0))
@@ -115,7 +116,10 @@ To support Microsoft Defender for Endpoint security configuration management thr
 
 1. Sign in to [Microsoft 365 Defender portal](https://security.microsoft.com/) and go to **Settings** > **Endpoints** > **Configuration Management** > **Enforcement Scope** and enable the platforms for security settings management:
 
-   :::image type="content" source="../media/enable-mde-settings-management-defender.png" alt-text="Enable Microsoft Defender for Endpoint settings management in the Defender console.":::
+   :::image type="content" source="../media/security-settings-mgt.png" alt-text="Enable Microsoft Defender for Endpoint settings management in the Defender console.":::
+
+    >[!NOTE]
+    >To granularly control the scope of endpoints managed via MDE settings management, consider using **Pilot Mode**.
 
 2. Make sure the relevant users have permissions to manage endpoint security settings in Microsoft Endpoint Manager or grant those permissions by configuring a role in the Defender portal. Go to **Settings** > **Roles** > **Add item**:
 
@@ -146,7 +150,13 @@ Microsoft Defender for Endpoint supports several options to onboard devices. For
 
 
 ## Co-existence with Microsoft Endpoint Configuration Manager
-When using Configuration Manager, the best path for management of security policy is using the [Configuration Manager tenant attach](/mem/configmgr/tenant-attach/endpoint-security-get-started). In some environments it may be desired to use Security Management for Microsoft Defender. When using Security Management for Microsoft Defender with Configuration Manager, endpoint security policy should be isolated to a single control plane. Controlling policy through both channels will create the opportunity for conflicts and undesired results.
+In some environments it may be desired to use Security Management for Microsoft Defender in conjunction with Configuration Manager. 
+This is possible by disabling the **Manage Security settings using Configuration Manager** toggle in the **Settings page** (Settings > Endpoints > Configuration Management > Enforcement Scope):
+
+:::image type="content" source="../media/manage-security-settings-cfg-mgr.png" alt-text="Manage security settings using Configuration Manager setting.":::
+
+>[!NOTE]
+>When using Security Management for Microsoft Defender for Endpoint with Configuration Manager, endpoint security policy should be isolated to a single control plane. Controlling policy through both channels may cause conflicts and undesired results.
 
 
 ## Create Azure AD Groups

@@ -52,7 +52,7 @@ The **View details** button shows more media usage data in the **device control 
 The page provides a dashboard with aggregated number of events per type and a list of events. Administrators can filter on time range, media class name, and device ID.
 
 > [!div class="mx-imgBorder"]
-> ![DeviceControlReportDetails](images/Detaileddevicecontrolreport.png)
+> :::image type="content" source="images/Detaileddevicecontrolreport.png" alt-text="The Device Control Report Details page in the Microsoft 365 Defender portal" lightbox="images/Detaileddevicecontrolreport.png":::
 
 When you select an event, a flyout appears that shows you more information:
 
@@ -61,17 +61,17 @@ When you select an event, a flyout appears that shows you more information:
 - **Location details:** Device name, User, and MDATP device ID.
 
 > [!div class="mx-imgBorder"]
-> ![FilterOnDeviceControlReport](images/devicecontrolreportfilter.png)
+> :::image type="content" source="images/devicecontrolreportfilter.png" alt-text="The Filter On Device Control Report page" lightbox="images/devicecontrolreportfilter.png":::
 
 To see real-time activity for this media across the organization, select the **Open Advanced hunting** button. This includes an embedded, pre-defined query.
 
 > [!div class="mx-imgBorder"]
-> ![QueryOnDeviceControlReport](images/Devicecontrolreportquery.png)
+> :::image type="content" source="images/Devicecontrolreportquery.png" alt-text="The Query On Device Control Report page" lightbox="images/Devicecontrolreportquery.png":::
 
 To see the security of the device, select the **Open device page** button on the flyout. This button opens the device entity page.
 
 > [!div class="mx-imgBorder"]
-> ![DeviceEntityPage](images/Devicesecuritypage.png)
+> :::image type="content" source="images/Devicesecuritypage.png" alt-text="The Device Entity Page" lightbox="images/Devicesecuritypage.png":::
 
 ## Reporting delays
 

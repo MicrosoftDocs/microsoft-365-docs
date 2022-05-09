@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Reports in the admin center - Yammer activity report"
+title: "Microsoft 365 admin center Yammer activity reports"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -29,7 +29,7 @@ As Microsoft 365 admin, the Reports dashboard shows you data on the usage of the
 ## How do I get to the Yammer activity report?
 
 1. In the admin center, go to the **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> page. 
-2. From the dashboard homepage, click on the **View more** button on the Yammer card.
+2. From the dashboard homepage, click on the **View more** button on the Yammer card.
 
   
 ## Interpret the Yammer activity report

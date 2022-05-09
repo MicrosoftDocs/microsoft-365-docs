@@ -39,7 +39,7 @@ You must use the preview version of [Azure Active Directory PowerShell for Graph
 > [!NOTE]
 > You must have global admin rights to run these commands. 
 
-Run the following script, changing */<GroupName/>* to the name of the group where you want to block guest access.
+Run the following script, changing *\<GroupName\>* to the name of the group where you want to block guest access.
 
 ```PowerShell
 $GroupName = "<GroupName>"
@@ -91,7 +91,7 @@ By default, guests aren't visible in the Exchange Global Address List. Use the s
 Find the guest's ObjectID by running:
 
 ```PowerShell
-Get-AzureADUser -Filter "userType eq 'Guest'"
+get-AzureADUser -all $true | ?{$_.CreationType -eq "Invitation"}
 ```
 
 Then run the following using the appropriate values for ObjectID, GivenName, Surname, DisplayName, and TelephoneNumber.

@@ -2,8 +2,8 @@
 title: "Paying for your subscription"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -16,10 +16,10 @@ ms.collection:
 search.appverid: MET150 
 description: "Use a credit or debit card or bank account to pay for your Microsoft 365 for business subscription, or in some cases, you can pay by invoice."
 ms.custom: 
+- commerce_billing
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
 - AdminSurgePortfolio
-- commerce_billing
 - business_assist
 - AdminTemplateSet
 ms.date: 10/28/2021

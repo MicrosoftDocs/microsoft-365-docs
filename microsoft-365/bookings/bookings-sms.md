@@ -16,14 +16,14 @@ With Microsoft Bookings, you can set up SMS text notifications to be sent to the
 
 The SMS notifications will include the Teams meeting link for virtual booking appointments.
 
+> [!Note]
+> We'll be providing unlimited SMS notifications through September 30 2022, for customers with Bookings licenses. As we get closer to the end of the promotion period, we'll provide additional details on licensing requirements. Contact your account team or support to receive pricing details after the promotion period.
+
 ## Before you begin
 
 Attendees, customers or partners need a valid United States or Canada phone number before they can receive SMS notifications.
 
 ## Configure SMS notification in Microsoft Bookings
-
-> [!IMPORTANT]
-> Microsoft Bookings will have unlimited SMS notifications for customers with Bookings licenses until Feb 28, 2022. As we get closer to the end of the promotion period, we will provide additional details on licensing requirements. For more info on Bookings licensing, see [Bookings licensing](/microsoft-365/bookings/bookings-faq?view=o365-worldwide#who-has-access-to-microsoft-bookings-).
 
 You can configure SMS notification in Bookings in a couple of ways:
 
@@ -36,7 +36,7 @@ You can configure SMS notification in Bookings in a couple of ways:
 > [!NOTE]
 > You need to be a Teams admin to see Teams and Bookings data on the Teams admin center.
 
-You can track key data on SMS notifications usage in your organization in the Teams admin center. Usage reports includes data such as time and date sent, origin number, message type, event type and delivery status. You can use SMS notification telemetry during the promotional period to help forecast and budget for SMS notifications after March 1, 2022.
+You can track key data on SMS notifications usage in your organization in the Teams admin center. Usage reports include data such as time and date sent, origin number, message type, event type and delivery status. You can use SMS notification telemetry during the promotional period to help forecast and budget for SMS notifications after September 30, 2022.
 
 1. On the Teams admin center, **Virtual Visits SMS notifications**.
 

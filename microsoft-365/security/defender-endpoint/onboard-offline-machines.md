@@ -32,8 +32,7 @@ ms.technology: mde
 To onboard devices without Internet access, you'll need to take the following general steps:
 
 > [!IMPORTANT] 
-> The steps below are applicable only to devices running previous versions of Windows such as:
-Windows Server 2016 and earlier or Windows 8.1 and earlier.
+> The following steps are only applicable to devices running previous versions of Windows using the MMA-based solution. For more information, see [Onboard Windows servers to the Microsoft Defender for Endpoint service](/microsoft-365/security/defender-endpoint/configure-server-endpoints).
 
 > [!NOTE]
 > - An OMS gateway server cannot be used as proxy for disconnected Windows or Windows Server devices when configured via 'TelemetryProxyServer' registry or GPO.
@@ -46,7 +45,7 @@ For more information about onboarding methods, see the following articles:
 - [Onboard servers to the Microsoft Defender for Endpoint service](/microsoft-365/security/defender-endpoint/configure-server-endpoints#windows-server-2008-r2-sp1--windows-server-2012-r2-and-windows-server-2016)
 - [Configure device proxy and Internet connectivity settings](/microsoft-365/security/defender-endpoint/configure-proxy-internet#configure-the-proxy-server-manually-using-a-registry-based-static-proxy)
 
-## On-premises devices
+## Devices running the previous MMA-based solution
 
 - Setup Azure Log Analytics (formerly known as OMS Gateway) to act as proxy or hub:
   - [Azure Log Analytics Agent](/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
@@ -59,9 +58,9 @@ For more information about onboarding methods, see the following articles:
     - Azure Log Analytics IP as a proxy
     - Defender for Endpoint workspace key & ID
 
-## Azure virtual machines
+### Azure virtual machines
 
-- Setup Azure Log Analytics Gateway (formerly known as OMS Gateway) to act as proxy or hub:
+- For devices running the previous, MMA-based solution, setup Azure Log Analytics Gateway (formerly known as OMS Gateway) to act as proxy or hub:
     - [Azure Log Analytics Gateway](/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
     - [Install and configure Microsoft Monitoring Agent (MMA)](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) point to Defender for Endpoint Workspace key & ID
 - Offline Azure VMs in the same network of OMS Gateway

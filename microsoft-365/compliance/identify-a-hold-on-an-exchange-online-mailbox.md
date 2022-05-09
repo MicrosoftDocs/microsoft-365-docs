@@ -1,9 +1,9 @@
 ---
-title: "How to identify the type of hold placed on an Exchange Online mailbox"
+title: "How to identify the hold on an Exchange Online mailbox"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 
 audience: ITPro
@@ -23,13 +23,15 @@ description: "Learn how to identify the different types of hold that can be plac
 
 # How to identify the type of hold placed on an Exchange Online mailbox
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 This article explains how to identify holds placed on Exchange Online mailboxes in Microsoft 365.
 
 Microsoft 365 offers several ways that your organization can prevent mailbox content from being permanently deleted. This allows your organization to retain content to meet compliance regulations or during legal and other types of investigations. Here's a list of the retention features (also called *holds*) in Office 365:
 
 - **[Litigation Hold](create-a-litigation-hold.md):** Holds that are applied to user mailboxes in Exchange Online.
 
-- **[eDiscovery hold](create-ediscovery-holds.md):** Holds that are associated with a Core eDiscovery case in the security and compliance center. eDiscovery holds can be applied to user mailboxes and to the corresponding mailbox for Microsoft 365 Groups and Microsoft Teams.
+- **[eDiscovery hold](create-ediscovery-holds.md):** Holds that are associated with a Microsoft Purview eDiscovery (Standard) case in the security and compliance center. eDiscovery holds can be applied to user mailboxes and to the corresponding mailbox for Microsoft 365 Groups and Microsoft Teams.
 
 - **[In-Place Hold](/Exchange/security-and-compliance/create-or-remove-in-place-holds):** Holds that are applied to user mailboxes by using the In-Place eDiscovery & Hold tool in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a> in Exchange Online. 
 

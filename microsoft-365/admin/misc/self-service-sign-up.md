@@ -2,8 +2,8 @@
 title: "Using self-service sign-up in your organization"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: seemg, pablom
 audience: Admin
@@ -14,9 +14,9 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- commerce_signup
 - AdminSurgePortfolio
 - okr_SMB
-- commerce_signup
 search.appverid: MET150
 description: "Learn about the Microsoft 365 self-service sign-up and available self-service programs such as Microsoft Power Apps, Microsoft Power Automate, and Dynamics 365 for Finance."
 ms.date: 03/17/2021
