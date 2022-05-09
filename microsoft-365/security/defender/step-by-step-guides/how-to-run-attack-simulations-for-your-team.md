@@ -21,7 +21,7 @@ ms.technology: m365d
 
 # How to run attack simulations for your team
 
-Attack simulation training allows you to run realistic but benign cyber attack scenarios in your organization. Simulated attacks can help you identify and find vulnerable users, policies and practices before a real attack impacts your organization.
+Attack simulation training allows you to run realistic but benign cyber attack scenarios in your organization. Simulated attacks can help you identify and find vulnerable users, policies and practices before a real attack impacts your organization, leveraging inbuilt or custom training to reduce risk and better educate end users about threats.
 
 ## What you'll need
 
