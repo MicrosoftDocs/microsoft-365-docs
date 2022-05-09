@@ -161,11 +161,15 @@ Configure custom keyword dictionaries (or lexicons) to provide simple management
 
 Built-in trainable and global classifiers scan sent or received messages across all communication channels in your organization for different types of compliance issues. Classifiers use a combination of artificial intelligence and keywords to identify language in messages likely to violate anti-harassment policies. Built-in classifiers currently support message keyword identification in several languages:
 
+- Arabic
 - Chinese (Simplified)
+- Chinese (Traditional)
+- Dutch
 - English
 - French
 - German
 - Italian
+- Korean
 - Japanese
 - Portuguese
 - Spanish
