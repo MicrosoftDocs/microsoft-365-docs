@@ -25,13 +25,15 @@ Email remediation is an already existing feature that helps admins act on emails
 
 ## What you’ll need
 - Microsoft Defender for Office 365 Plan 2
-- Microsoft 365 Defender
-- Sufficient permissions (*Search and Purge* role for direct approval / *Security Reader* for two step approval)
+- Sufficient permissions (]Search and Purge](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/permissions-microsoft-365-security-center?view=o365-worldwide) role)
 
 ## Remediation process
 
-1. **Remediation creation** - Following an entity selection, an admin goes through the process of choosing an action like soft delete/hard delete, et cetera, and executing the remediation.
-1. The side pane will open and ask after details (such as the remediation name, severity, description). As soon as the admin approves this action, the admin will see the Approval ID and link to the Microsoft 365 Defender Action Center [here](https://security.microsoft.com/action-center/history), where actions can be tracked.
+1. **Selection of threat to remediate** - Following selecting the threat you'd like to remove by searching within [Threat Explorer](https://security.microsoft.com/threatexplorer) click on the **Message Actions** button, which will offer you options such as Soft Delete.
+1. The side pane will open and ask for you to provide a name for the remediation, severity & description. once you are happy, review and then press **Submit** 
+
+## Tracking remediations
+When submitting a remedition you will see the Approval ID and link to the Microsoft 365 Defender Action Center [here](https://security.microsoft.com/action-center/history), where actions can be tracked.
     1. **Admin action alert** - A system alert shows up in the alert queue with the name ‘Administrative action submitted by an Administrator’. This indicates that an admin took the action of remediating an entity. It presents details such as the name of the admin who performed the action, and the investigation link and time. This provides awareness for every time an important action like remediation is done on entities.
     1. **Admin action investigation** - Since the analysis on entities was already done by the admin and that’s why the action was performed, no additional analysis is done by the system. It shows details such as related alert, entity selected for remediation, action taken, remediation status, entity count, and approver of the action. This allows admins to keep track of the investigation and actions carried out manually. This is called admin action investigation.
 1. **Action logs in unified action center** - History and action logs for email actions like soft delete and move to deleted items folder, are all available in a centralized view under the unified Action Center > History tab. 
