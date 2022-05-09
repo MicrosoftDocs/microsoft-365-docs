@@ -42,60 +42,58 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ### Communication compliance
 
-- Create and manage communication compliance policies (updated; guidance added for new user-reported message policy feature for Microsoft Teams integration)
-- Get started with communication compliance (updated; clarification added for F5 subscription and licensing)
+- [Create and manage communication compliance policies](communication-compliance-policies.md) - updated with guidance added for new user-reported message policy feature for Microsoft Teams integration.
+- [Get started with communication compliance](communication-compliance-configure.md) - updated to add clarification for F5 subscription and licensing.
 
 ### Compliance Manager
 
-- Compliance Manager templates list (updated; added 6 new templates and navigation links on the page to more easily jump to template categories)
-- Compliance Manager overview (updated; updated product overview video)
-- Get started with Compliance Manager (updated; clarified that managing automated testing happens on the "Testing source" nav item within CM settings)
+- [Compliance Manager templates list](compliance-manager-templates-list.md) (updated; added 6 new templates and navigation links on the page to more easily jump to template categories)
+- [Compliance Manager overview](compliance-manager.md) (updated; updated product overview video)
+- [Get started with Compliance Manager](compliance-manager-setup.md) (updated; clarified that managing automated testing happens on the "Testing source" nav item within CM settings)
 
 ### Compliance offerings & service assurance
 
-- Compliance offerings (updated; updates for service coverage and audit reporting for VPATS, SOC, ISO, and FedRAMP offerings)
+- [Compliance offerings](regulatory/offering-home.md) (updated; updates for service coverage and audit reporting for VPATS, SOC, ISO, and FedRAMP offerings)
 
 ### Data lifecycle management and records management
 
-- Govern your data with Microsoft Purview (updated; to reflect the recent product repositioning, data connectors are removed from this page and the records management solution is presented as a peer product rather than a component element of what used to be information governance)
-- Learn about data lifecycle management and related articles (updated; reflects the recent name change from Information governance in the compliance portal)
-- Common settings for retention policies and retention labels (updated; reflects new navigational and UI references for the newly designed retention label wizard)
-- Declare records by using retention labels and Use record versioning to update records stored in SharePoint or OneDrive (updated); information about the new "Unlock this record by default" label setting that's currently rolling out in preview)
-- Use file plan to create and manage retention labels  (updated; the import section now discloses the label settings that aren't currently supported for import (multi-stage disposition review and unlock this record by default)
+- [Govern your data with Microsoft Purview](manage-data-governance.md) (updated; to reflect the recent product repositioning, data connectors are removed from this page and the records management solution is presented as a peer product rather than a component element of what used to be information governance)
+- [Common settings for retention policies and retention labels](retention-settings.md) (updated; reflects new navigational and UI references for the newly designed retention label wizard)
+- [Declare records by using retention labels](declare-records.md) and [Use record versioning to update records stored in SharePoint or OneDrive](record-versioning.md) (updated); information about the new "Unlock this record by default" label setting that's currently rolling out in preview)
+- [Use file plan to create and manage retention labels](file-plan-manager.md#information-about-the-label-properties-for-import)  (updated; the import section now discloses the label settings that aren't currently supported for import (multi-stage disposition review and unlock this record by default)
 
 ### Data Loss Prevention
 
-- Learn about endpoint DLP (updated; added best practice guidance for endpoint DLP policies; updated; macOS device onboarding GA))
-- Configure endpoint data loss prevention settings (updated; macOS device onboarding GA)
-- Plan for data loss prevention (DLP) (updated; macOS device onboarding GA)
-- Data Loss Prevention policy reference (updated; macOS device onboarding GA; updated; )
-- Get started with Endpoint data loss prevention (updated; macOS device onboarding GA)
-- DLP policy conditions, exceptions, and actions (updated; added guidance for Modify Subject action)
-- Data Loss Prevention policy reference (updated; GA SPO/ODB predicates; updated; new guidance on rule processing on endpoints) 
+- [Learn about endpoint DLP](endpoint-dlp-learn-about.md) (updated; added best practice guidance for endpoint DLP policies; updated; macOS device onboarding GA))
+- [Configure endpoint data loss prevention settings](dlp-configure-endpoint-settings.md) (updated; macOS device onboarding GA)
+- [Plan for data loss prevention (DLP)](dlp-overview-plan-for-dlp.md) (updated; macOS device onboarding GA)
+- [Data Loss Prevention policy reference](dlp-policy-reference.md) (updated; macOS device onboarding GA; updated; )
+- [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md) (updated; macOS device onboarding GA)
+- [DLP policy conditions, exceptions, and actions](dlp-conditions-and-exceptions.md) (updated; added guidance for Modify Subject action)
+- [Data Loss Prevention policy reference](dlp-policy-reference.md) (updated; GA SPO/ODB predicates; updated; new guidance on rule processing on endpoints) 
 
 ### Device Onboarding
 
-- Onboard macOS devices in to Microsoft 365 overview (updated; macOS device onboarding GA; updated; added more detailed guidance for supported browsers)
-- Onboard and offboard macOS devices into Compliance solutions using Intune for Microsoft Defender for Endpoint customers  (updated; macOS device onboarding GA)
-- Onboard and offboard macOS devices into Microsoft Purview solutions using Intune  (updated; macOS device onboarding GA)
-- Onboard and offboard macOS devices into Compliance solutions using JAMF Pro for Microsoft Defender for Endpoint customers (updated; macOS device onboarding GA)
-- Onboard and offboard macOS devices into Microsoft Purview solutions using JAMF Pro (updated; macOS device onboarding GA)
-- Onboard Windows 10 and Windows 11 devices using Mobile Device Management tools (updated; updated links to point to better Intune article)
+- [Onboard macOS devices in to Microsoft 365 overview](device-onboarding-macos-overview.md) (updated; macOS device onboarding GA; updated; added more detailed guidance for supported browsers)
+- [Onboard and offboard macOS devices into Compliance solutions using Intune for Microsoft Defender for Endpoint customers](device-onboarding-offboarding-macos-intune-mde.md)  (updated; macOS device onboarding GA)
+- [Onboard and offboard macOS devices into Microsoft Purview solutions using Intune](device-onboarding-offboarding-macos-intune.md)  (updated; macOS device onboarding GA)
+- [Onboard and offboard macOS devices into Compliance solutions using JAMF Pro for Microsoft Defender for Endpoint customers](device-onboarding-offboarding-macos-jamfpro-mde.md) (updated; macOS device onboarding GA)
+- [Onboard and offboard macOS devices into Microsoft Purview solutions using JAMF Pro](device-onboarding-offboarding-macos-jamfpro.md) (updated; macOS device onboarding GA)
 
 ### Information barriers
 
-- Use information barriers with SharePoint (updated; guidance added for new private channel support in SharePoint)
-- Manage information barriers policies (updated; guidance added for removing segments and policy/segments together)
+- [Use information barriers with SharePoint](/sharepoint/information-barriers) (updated; guidance added for new private channel support in SharePoint)
+- [Manage information barriers policies](information-barriers-edit-segments-policies.md) (updated; guidance added for removing segments and policy/segments together)
 
 ### Microsoft Priva
 
-- Privacy Risk Management policies (new pages, significant updates, and restructuring of policies content; details below)
-- Privacy Risk Management policies (update; added significant details about policy setup and management that apply to all policies; added links to new pages for each of the three policy types)
-- Data overexposure policies (new; articulates the need and uses for the policy; explains default settings for out-of-box creation and detailed instructions for customizing settings)
-- Data transfer policies (new; highlights new condition for the policy to detect transfers outside of the org; articulates the need and uses for the policy; explains default settings for out-of-box creation and detailed instructions for customizing settings)
-- Data minimization policies (new; articulates the need and uses for the policy; explains default settings for out-of-box creation and detailed instructions for customizing settings)
-- Investigate and remediate alerts (updated; added clarifying details and formatting changes to improve readability)
-- User notifications (updated; added info on the functionality for previewing and customizing email notification content)
+- [Privacy Risk Management policies](/privacy/priva/risk-management) (new pages, significant updates, and restructuring of policies content; details below)
+  - [Privacy Risk Management policies](/privacy/priva/risk-management-policies) (update; added significant details about policy setup and management that apply to all policies; added links to new pages for each of the three policy types)
+  - [Data overexposure policies](/privacy/priva/risk-management-policy-data-overexposure) (new; articulates the need and uses for the policy; explains default settings for out-of-box creation and detailed instructions for customizing settings)
+  - [Data transfer policies](/privacy/priva/risk-management-policy-data-transfer) (new; highlights new condition for the policy to detect transfers outside of the org; articulates the need and uses for the policy; explains default settings for out-of-box creation and detailed instructions for customizing settings)
+  - [Data minimization policies](/privacy/priva/risk-management-policy-data-minimization) (new; articulates the need and uses for the policy; explains default settings for out-of-box creation and detailed instructions for customizing settings)
+  - Investigate and remediate alerts (updated; added clarifying details and formatting changes to improve readability)
+  - User notifications (updated; added info on the functionality for previewing and customizing email notification content)
 - Create a subject rights request (updated; added section on getting started with your first request with default settings to explore functionality)
 - Review data for a subject rights request (updated; added details explaining priority items to review and how to find them, and the need to set up data matching in order to get this insight)
 - Find and visualize personal data (updated; clarified that users need to set up data matching in order to receive insights for "Items with the most data subject content" under "Key insights"
