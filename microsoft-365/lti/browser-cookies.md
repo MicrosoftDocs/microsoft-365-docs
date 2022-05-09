@@ -44,6 +44,8 @@ If you must keep third-party cookies blocked:
 3. Add the domain URL of the LMS platform.
    1. For instance, if the LMS platform is hosted at `https://contoso.com`, then that URL must be used.
 
+![Screenshot of Google Chrome cookie settings page](/media/chrome-cookies.png)
+
 # [Mozilla Firefox](#tab/firefox)
 
 ## Allow cookies for LMS URLS in Mozilla Firefox
