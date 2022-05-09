@@ -62,7 +62,7 @@ Once you’ve chosen between the Standard and Strict security preset policies fo
 1. Click on the Confirm button.
 
 > [!TIP]
-> To learn what presets are, click [here](../../office-365-security/preset-security-policies.md)
+> To learn more about preset polcies click [here](../../office-365-security/preset-security-policies.md)
 
 ## Next Steps
 
