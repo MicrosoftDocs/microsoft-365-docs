@@ -234,12 +234,12 @@ IOCs that were selected in the suppression conditions will be selected by defaul
 
 :::image type="content" source="../../media/investigate-alerts/suppression-step2-choose-IOCs.png" lightbox="../../media/investigate-alerts/suppression-step2-choose-IOCs.png" alt-text="Successful suppression rule creation ":::
 
-9.	The new suppression alert functionality is available by default. However, you can switch back to the previous suppression alert functionality in Microsoft 365 Defender portal by navigating to **Settings > Endpoints > Alert suppression**, then switch off the toggle. 
+9.	The new suppression alert functionality is available by default. <br> However, you can switch back to the previous suppression alert functionality in Microsoft 365 Defender portal by navigating to **Settings > Endpoints > Alert suppression**, then switch off the **New suppression rules creation enabled** toggle. 
  
 :::image type="content" source="../../media/investigate-alerts/suppression-toggle.png" lightbox="../../media/investigate-alerts/suppression-toggle.png" alt-text="Toggle for turning on/off the new suppression rule creation ":::
 
 10.	You can always add or change rule conditions, scope or alert type of new or existing rules in Microsoft Defender portal, by selecting the relevant rule and clicking **Edit rule**.    
-    To edit existing rules, ensure that the **New suppression rule creation** toggle is enabled.         
+    To edit existing rules, ensure that the **New suppression rules creation enabled** toggle is enabled.         
 
 :::image type="content" source="../../media/investigate-alerts/suppression-toggle-on-edit.png" lightbox="../../media/investigate-alerts/suppression-toggle-on-edit.png" alt-text="Edit suppression rule":::
   
