@@ -23,7 +23,7 @@ ms.custom:
 - admindeeplinkMAC
 ---
 
-# Search the audit log in the compliance center
+# Search the audit log in the compliance portal
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
@@ -88,7 +88,6 @@ Be sure to read the following items before you start searching the audit log.
 
 - You have to be assigned the View-Only Audit Logs or Audit Logs role in Exchange Online to search the audit log. By default, these roles are assigned to the Compliance Management and Organization Management role groups on the **Permissions** page in the Exchange admin center. Global administrators in Office 365 and Microsoft 365 are automatically added as members of the Organization Management role group in Exchange Online. To give a user the ability to search the audit log with the minimum level of privileges, you can create a custom role group in Exchange Online, add the View-Only Audit Logs or Audit Logs role, and then add the user as a member of the new role group. For more information, see [Manage role groups in Exchange Online](/Exchange/permissions-exo/role-groups).
 
-  > [!IMPORTANT]
   > If you assign a user the View-Only Audit Logs or Audit Logs role on the **Permissions** page in the compliance portal, they won't be able to search the audit log. You have to assign the permissions in Exchange Online. This is because the underlying cmdlet used to search the audit log is an Exchange Online cmdlet.
 
 - When an audited activity is performed by a user or admin, an audit record is generated and stored in the audit log for your organization. The length of time that an audit record is retained (and searchable in the audit log) depends on your Office 365 or Microsoft 365 Enterprise subscription, and specifically the type of the license that is assigned to specific users.
@@ -98,7 +97,7 @@ Be sure to read the following items before you start searching the audit log.
     > [!NOTE]
     > If your organization participated in the private preview program for the one-year retention of audit records, the retention duration for audit records that were generated before the general availability rollout date will not be reset.
 
-  - For users assigned any other (non-E5) Office 365 or Microsoft 365 license, audit records are retained for 90 days. For a list of Office 365 and Microsoft 365 subscriptions that support unified audit logging, see [the security and compliance center service description](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
+  - For users assigned any other (non-E5) Office 365 or Microsoft 365 license, audit records are retained for 90 days. For a list of Office 365 and Microsoft 365 subscriptions that support unified audit logging, see [the security and compliance portal service description](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
 
     > [!NOTE]
     > Even when mailbox auditing on by default is turned on, you might notice that mailbox audit events for some users aren't found in audit log searches in the compliance portal or via the Office 365 Management Activity API. For more information, see [More information about mailbox audit logging](enable-mailbox-auditing.md#more-information).
@@ -239,7 +238,7 @@ You can export the results of an audit log search to a comma-separated value (CS
 
 #### More information about exporting and viewing audit log search results
 
-- When you download all search results, the CSV file contains the columns **CreationDate**, **UserIds**, **Operations**, and **AuditData**. The **AuditData** column contains additional information about each event (similar to the detailed information displayed on the flyout page when you view the search results in the compliance center). The data in this column consists of a JSON object that contains multiple properties from the audit log record. Each *property:value* pair in the JSON object is separated by a comma. You can use the JSON transform tool in the Power Query Editor in Excel to split **AuditData** column into multiple columns so that each property in the JSON object has its own column. This lets you sort and filter on one or more of these properties. For step-by-step instructions using the Power Query Editor to transform the JSON object, see [Export, configure, and view audit log records](export-view-audit-log-records.md).
+- When you download all search results, the CSV file contains the columns **CreationDate**, **UserIds**, **Operations**, and **AuditData**. The **AuditData** column contains additional information about each event (similar to the detailed information displayed on the flyout page when you view the search results in the compliance portal). The data in this column consists of a JSON object that contains multiple properties from the audit log record. Each *property:value* pair in the JSON object is separated by a comma. You can use the JSON transform tool in the Power Query Editor in Excel to split **AuditData** column into multiple columns so that each property in the JSON object has its own column. This lets you sort and filter on one or more of these properties. For step-by-step instructions using the Power Query Editor to transform the JSON object, see [Export, configure, and view audit log records](export-view-audit-log-records.md).
 
   After you split the **AuditData** column, you can filter on the **Operations** column to display the detailed properties for a specific type of activity.
 
@@ -249,7 +248,7 @@ You can export the results of an audit log search to a comma-separated value (CS
 
 ## Audited activities
 
-The tables in this section describe the activities that are audited in Microsoft 365. You can search for these events by searching the audit log in the security and compliance center.
+The tables in this section describe the activities that are audited in Microsoft 365. You can search for these events by searching the audit log in the security and compliance portal.
 
 These tables group related activities or the activities from a specific service. The tables include the friendly name that's displayed in the **Activities** drop-down list and the name of the corresponding operation that appears in the detailed information of an audit record and in the CSV file when you export the search results. For descriptions of the detailed information, see [Detailed properties in the audit log](detailed-properties-in-the-office-365-audit-log.md).
 
@@ -396,6 +395,18 @@ Click one of the following links to go to a specific table.
     :::column-end:::
     :::column:::
         [Exchange admin activities](#exchange-admin-audit-log)
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        [Encrypted message portal activities](#encrypted-message-portal-activities)
+    :::column-end:::
+    :::column:::
+        
+    :::column-end:::
+    :::column:::
+        
     :::column-end:::
 :::row-end:::
 
@@ -764,7 +775,7 @@ The following table lists Azure AD directory and domain-related activities that 
 
 ### eDiscovery activities
 
-Content Search and eDiscovery-related activities that are performed in the security and compliance center or by running the corresponding PowerShell cmdlets are logged in the audit log. This includes the following activities:
+Content Search and eDiscovery-related activities that are performed in the security and compliance portal or by running the corresponding PowerShell cmdlets are logged in the audit log. This includes the following activities:
 
 - Creating and managing eDiscovery cases
 
@@ -1103,6 +1114,21 @@ Here are some tips for searching for Exchange admin activities when searching th
 
    Keep in mind that the same Exchange admin activities are logged in both the Exchange admin audit log and audit log.
 
+### Encrypted message portal activities
+
+Access logs are available for encrypted messages through the encrypted message portal that lets your organization determine when messages are read, and forwarded by your external recipients. For more information on enabling and using encrypted message portal activity logs, see [Encrypted message portal activity log](ome-message-access-logs.md).
+
+Each audit entry for a tracked message will contain the following fields:
+
+- MessageID - Contains the ID of the message being tracked. This is the key identifier used to follow a message through the system.
+- Recipient - List of all recipient email addresses.
+- Sender - The originating email address.
+- AuthenticationMethod - Describes the authenticating method for accessing the message, for example OTP, Yahoo, Gmail, or Microsoft.
+- AuthenticationStatus - Contains a value indicating that the authentication succeeded or failed.
+- OperationStatus - Indicates whether the indicated operation succeeded or failed.
+- AttachmentName - Name of the attachment.
+- OperationProperties - A list of optional properties, for example the number of OTP passcodes sent, or the email subject.
+
 ## Frequently asked questions
 
 **What are different Microsoft 365 services that are currently audited?**
@@ -1125,7 +1151,7 @@ As previously explained, audit records for activities performed by users assigne
 
 Yes. The Office 365 Management Activity API is used to fetch the audit logs programmatically.  To get started, see [Get started with Office 365 Management APIs](/office/office-365-management-api/get-started-with-office-365-management-apis).
 
-**Are there other ways to get auditing logs other than using the security and compliance center or the Office 365 Management Activity API?**
+**Are there other ways to get auditing logs other than using the security and compliance portal or the Office 365 Management Activity API?**
 
 No. These are the only two ways to get data from the auditing service.
 
