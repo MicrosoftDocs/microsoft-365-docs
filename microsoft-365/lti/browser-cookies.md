@@ -33,6 +33,8 @@ If you must keep third-party cookies blocked:
 2. Under **Allow**, select **Add** to add the domain URL of the LMS platform.
    1. For example, if the LMS platform is hosted at `https://contoso.com`, then that URL must be added under **Allow**.
 
+![Screenshot of Microsoft Edge cookie settings page](media/edge-cookies.png)
+
 # [Google Chrome](#tab/chrome)
 
 ## Allow cookies for LMS URLS in Google Chrome
@@ -44,7 +46,7 @@ If you must keep third-party cookies blocked:
 3. Add the domain URL of the LMS platform.
    1. For instance, if the LMS platform is hosted at `https://contoso.com`, then that URL must be used.
 
-![Screenshot of Google Chrome cookie settings page](/media/chrome-cookies.png)
+![Screenshot of Google Chrome cookie settings page](media/chrome-cookies.png)
 
 # [Mozilla Firefox](#tab/firefox)
 
@@ -60,6 +62,8 @@ If you must keep third-party cookies blocked:
 4. Select **Allow** to allow cookies for the entered website.
 
 5. Select **Save Changes**.
+
+![Screenshot of Mozilla Firefox cookie settings page](media/firefox-cookies.png)
 
 # [Safari](#tab/safari)
 
