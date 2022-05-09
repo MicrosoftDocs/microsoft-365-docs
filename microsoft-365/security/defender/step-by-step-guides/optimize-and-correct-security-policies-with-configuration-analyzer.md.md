@@ -41,4 +41,4 @@ While in **Configuration analyzer** you can select **Configuration drift analysi
 
 The page which loads will show you the modifications to your security policies in the timeframe selected by the filters, along with data about the change and if it increased or decreased your overall posture.
 
-To learn what Configuration Analyzer is and does, see [Configuration analyzer for security policies - Office 365 | Microsoft Docs](../../office-365-security/configuration-analyzer-for-security-policies.md).
+To learn more details about Configuration Analyzer, see [Configuration analyzer for security policies - Office 365 | Microsoft Docs](../../office-365-security/configuration-analyzer-for-security-policies.md).
