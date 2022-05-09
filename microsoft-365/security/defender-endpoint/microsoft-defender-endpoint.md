@@ -55,7 +55,7 @@ Defender for Endpoint uses the following combination of technology built into Wi
 <center><h2>Microsoft Defender for Endpoint</center></h2>
 <table>
 <tr>
-<td><a href="#tvm"><center><img src="images/TVM_icon.png" alt="Vulnerability Management"> <br><b> Core vulnerability management</b></center></a></td>
+<td><a href="#tvm"><center><img src="images/TVM_icon.png" alt="Vulnerability Management"> <br><b> Core Defender Vulnerability Management</b></center></a></td>
 <td><a href="#asr"><center><img src="images/asr-icon.png" alt="Attack surface reduction"><br><b>Attack surface reduction</b></center></a></td>
 <td><center><a href="#ngp"><img src="images/ngp-icon.png" alt="Next-generation protection"><br> <b>Next-generation protection</b></a></center></td>
 <td><center><a href="#edr"><img src="images/edr-icon.png" alt="Endpoint detection and response"><br> <b>Endpoint detection and response</b></a></center></td>
@@ -86,7 +86,7 @@ Defender for Endpoint uses the following combination of technology built into Wi
 
 <a name="tvm"></a>
 
-**[Core vulnerability management](../defender-vulnerability-management/What-is-defender-vulnerability-management.md)**
+**[Core Defender Vulnerability Management](../defender-vulnerability-management/defender-vulnerability-management.md)**
 
 Built-in core vulnerability management capabilities use a modern risk-based approach to the discovery, assessment, prioritization, and remediation of endpoint vulnerabilities and misconfigurations. To further enhance your ability to assess your security posture and reduce risk, a new Defender Vulnerability Management Add-on for Plan 2 is available.
 
