@@ -2,7 +2,7 @@
 title: "Optimize page weight in SharePoint Online modern site pages"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 03/11/2020
 audience: ITPro
 ms.topic: conceptual
