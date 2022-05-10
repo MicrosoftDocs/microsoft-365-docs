@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
-ms.date: 
+ms.date: 05/10/2022
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -25,7 +25,7 @@ ms.custom: seo-marvel-apr2020
 
 Content Search and eDiscovery-related activities (for Microsoft Purview eDiscovery (Standard) and Microsoft Purview eDiscovery (Premium)) that are performed in Microsoft Purview compliance portal or by running the corresponding PowerShell cmdlets are logged in the audit log. Events are logged when administrators or eDiscovery managers (or any user assigned eDiscovery permissions) perform the following Content Search and eDiscovery (Standard) tasks in the compliance portal:
   
-- Creating and managing Core and eDiscovery (Premium) cases
+- Creating and managing eDiscovery (Standard) and eDiscovery (Premium) cases
 
 - Creating, starting, and editing Content searches
 
