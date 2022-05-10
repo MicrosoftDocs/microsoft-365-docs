@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: File plan provides advanced management capabilities for retention labels.
-ms.custom: seo-marvel-may2020
 ---
 
 # Use file plan to create and manage retention labels
@@ -47,7 +47,7 @@ To access file plan, you must have one of the following admin roles:
 
 - View-only Retention Manager
 
-In the Microsoft Purview compliance portal, go to **Solutions** > **Records management** > **File plan**.
+In the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), go to **Solutions** > **Records management** > **File plan**.
 
 If **Records management** doesn't display in the navigation pane, first scroll down, and select **Show all**.
 
