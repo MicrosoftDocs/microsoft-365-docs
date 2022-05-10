@@ -208,7 +208,7 @@ The [Microsoft Teams setup guide](https://aka.ms/teamsguidance) provides your or
 
 ### Teams Phone setup guide
 
-The [Teams Phone setup guide](https://aka.ms/teamsphonesetupguide) helps you stay connected with the use of modern calling solutions. Apply key capabilities with a cloud-based, call-control system that supports the telephony workload for Teams. You can choose and deploy features from the available public switched telephone network (PSTN) connectivity options. You can also find assistance for other features, such as auto attendant, call queues, Audio Conferencing, caller ID and Live events.
+The [Teams Phone setup guide](https://aka.ms/teamsphonesetupguide) helps you stay connected with the use of modern calling solutions. Apply key capabilities with a cloud-based, call-control system that supports the telephony workload for Teams. You can choose and deploy features from the available public switched telephone network (PSTN) connectivity options. You can also find assistance for other features, such as auto attendant, call queues, Audio Conferencing, caller ID, and live events.
 
 ### SharePoint setup guide
 
