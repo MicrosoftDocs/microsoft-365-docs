@@ -1,5 +1,5 @@
 ---
-title: "Edit or set application protection settings for Windows 10 devices"
+title: "Edit or set application protection settings for Windows devices"
 ms.author: deniseb
 author: denisebmsft
 manager: scotv
@@ -27,17 +27,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 02e74022-44af-414b-9d74-0ebf5c2197f0
-description: "Learn how to create or edit app management policies and protect work files on your users' personal Windows 10 devices."
+description: "Learn how to create or edit app management policies and protect work files on your users' personal Windows devices."
 ---
 
-# Set or edit application protection settings for Windows 10 devices
+# Set or edit application protection settings for Windows devices
 
-Next, it's important to make policy settings for your Windows apps.
+This article describes how to set up application protection policies for your company's Windows devices.
 
-> [!NOTE]
-> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../security/defender-business/mdb-overview.md).
-
-## Edit an app management policy for Windows 10
+## Edit an app management policy for Windows devices
 
 1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.     
 
@@ -47,9 +44,9 @@ Next, it's important to make policy settings for your Windows apps.
 
 4. Choose **Edit** next to a setting you want to change and then **Save**.
 
-## Create an app management policy for Windows 10
+## Create an app management policy for Windows devices
 
-If your users have personal Windows 10 devices on which they perform work tasks, you can protect your data on those devices as well.
+If your users have personal Windows devices on which they perform work tasks, you can protect your data on those devices.
   
 1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>. 
 
