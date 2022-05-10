@@ -252,6 +252,22 @@ For example:
 
 Wildcards aren't supported.
 
+#### Sensitive service domains (preview)
+
+you can monitor or restrict common activities that users take on sites, like printing, copying data, or saving a site as local files
+
+this only works when the user accesses the site using Microsoft Edge
+
+You have to first add the site, or groups of sites, to sensitive service domains
+
+Then you have to do some configuration in the policy
+
+When a site or group of sites are listed in sensitive service domains, you can monitor or restrict common activities that users take on those sites that are accessed through Microsoft Edge.
+
+websites that they access through Microsoft Edge. When users access a site through Microsoft Edge, you can monitor or restrict common activities, like printing, copying data, or saving a site as local files by adding websites to groups in Sensitive service domains. 
+
+
+
 ### Additional settings for endpoint DLP
 
 #### Business justification in policy tips
