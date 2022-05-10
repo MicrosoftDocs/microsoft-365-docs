@@ -101,7 +101,7 @@
 ###### [Configure and validate exclusions](mac-exclusions.md)
 ###### [Set preferences](mac-preferences.md)
 ###### [Detect and block Potentially Unwanted Applications](mac-pua.md)
-###### [Protect macOS security settings using tamper protection](tp-macOS.md)
+###### [Protect macOS security settings using tamper protection](tamperprotection-macos.md)
 ###### [Device control]()
 ####### [Device control overview](mac-device-control-overview.md)
 ####### [JAMF examples](mac-device-control-jamf.md)

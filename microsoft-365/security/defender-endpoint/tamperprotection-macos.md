@@ -226,7 +226,7 @@ The result will show "block" if tamper protection is on: 
 
 You can also run full `mdatp health` and look for the "tamper_protection" in the output: 
 
-![Image of tamper protection in block mode](images/health-tp-audit.png)
+![Image of tamper protection when in block mode](images/health-tp-audit.png)
 
 
 
