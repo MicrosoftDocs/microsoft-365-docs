@@ -1,13 +1,12 @@
 ---
 title: View and manage incidents in Microsoft Defender for Business
-description: Learn how to view & manage alerts, respond to threats, manage devices, and review remediation actions
+description: View and manage alerts, respond to threats, manage devices, and review remediation actions on detected threats in Defender for Business.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: how-to
-ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -20,9 +19,6 @@ ms.collection:
 ---
 
 # View and manage incidents in Microsoft Defender for Business
-
-> [!NOTE]
-> Microsoft Defender for Business is now included in [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
 As threats are detected and alerts are triggered, incidents are created. Your company's security team can view and manage incidents in the Microsoft 365 Defender portal.
 

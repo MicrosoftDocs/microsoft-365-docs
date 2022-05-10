@@ -47,9 +47,11 @@ The tenant list lets you:
 
 To inactivate the tenant or view and manage tags, select the three dots (more actions) next to the tenant name. You can view individual tenants by either selecting the tenant name or by selecting one of the tags assigned to the tenant.
 
+For information on how to add tenants, see [Add and manage multiple tenants in your Partner Center account](/partner-center/multi-tenant-account).
+
 ## Tenant status
 
-The following table shows the different statuses and their meaning.<br><br>
+The following table shows the different statuses and their meaning. For information on how to troubleshoot customer tenant statuses, see [Troubleshoot error messages and problems in Microsoft 365 Lighthouse: Customer tenant onboarding](m365-lighthouse-troubleshoot.md#customer-tenant-onboarding).<br><br>
 
 | Status                                   | Description                                                                                             |
 |------------------------------------------|---------------------------------------------------------------------------------------------------------|

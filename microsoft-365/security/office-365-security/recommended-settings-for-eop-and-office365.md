@@ -38,10 +38,16 @@ To automatically apply the Standard or Strict settings to users, see [Preset sec
 
 This article describes the default settings, and also the recommended Standard and Strict settings to help protect your users. The tables contain the settings in the Microsoft 365 Defender portal and PowerShell (Exchange Online PowerShell or standalone Exchange Online Protection PowerShell for organizations without Exchange Online mailboxes).
 
-> [!TIP]
-> You can't change the recommended Standard and Strict settings in the Microsoft 365 Defender portal. To change recommended values like **Enable users to protect**, you need to use [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
->
+> [!NOTE]
 > The Office 365 Advanced Threat Protection Recommended Configuration Analyzer (ORCA) module for PowerShell can help you (admins) find the current values of these settings. Specifically, the **Get-ORCAReport** cmdlet generates an assessment of anti-spam, anti-phishing, and other message hygiene settings. You can download the ORCA module at <https://www.powershellgallery.com/packages/ORCA/>.
+>
+> In Microsoft 365 organizations, we recommend that you leave the Junk Email Filter in Outlook set to **No automatic filtering** to prevent unnecessary conflicts (both positive and negative) with the spam filtering verdicts from EOP. For more information, see the following articles:
+>
+> - [Configure junk email settings on Exchange Online mailboxes](configure-junk-email-settings-on-exo-mailboxes.md)
+> - [About junk email settings in Outlook](configure-junk-email-settings-on-exo-mailboxes.md#about-junk-email-settings-in-outlook)
+> - [Change the level of protection in the Junk Email Filter](https://support.microsoft.com/en-us/office/e89c12d8-9d61-4320-8c57-d982c8d52f6b)
+> - [Create safe sender lists in EOP](create-safe-sender-lists-in-office-365.md)
+> - [Create blocked sender lists in EOP](create-block-sender-lists-in-office-365.md)
 
 ## Anti-spam, anti-malware, and anti-phishing protection in EOP
 
@@ -63,11 +69,11 @@ To create and configure anti-spam policies, see [Configure anti-spam policies in
 |**Test mode** (_TestModeAction_)|**None**|**None**|**None**|This setting is part of ASF. For more information, see the [ASF settings in anti-spam policies](#asf-settings-in-anti-spam-policies) section in this article.|
 |**Actions**||||Wherever you select **Quarantine message**, a **Select quarantine policy** box is available. Quarantine policies define what users are allowed to do to quarantined messages. <br/><br/> When you create a new anti-spam policy, a blank value means the default quarantine policy is used to define the historical capabilities for messages that were quarantined by that particular verdict (AdminOnlyAccessPolicy for **High confidence phishing**; DefaultFullAccessPolicy for everything else). <br/><br/> Admins can create and select custom quarantine policies that define more restrictive or less restrictive capabilities for users. For more information, see [Quarantine policies](quarantine-policies.md).|
 |**Spam** detection action <br/><br/> _SpamAction_|**Move message to Junk Email folder** <br/><br/> `MoveToJmf`|**Move message to Junk Email folder** <br/><br/> `MoveToJmf`|**Quarantine message** <br/><br/> `Quarantine`||
-|**High confidence spam** detection action <br/><br/> _HighConfidenceSpamAction_|**Quarantine message** <br/><br/> `MoveToJmf`|**Quarantine message** <br/><br/> `Quarantine`|**Quarantine message** <br/><br/> `Quarantine`||
-|**Phishing** detection action <br/><br/> _PhishSpamAction_|**Quarantine message** <br/><br/> `MoveToJmf`|**Quarantine message** <br/><br/> `Quarantine`|**Quarantine message** <br/><br/> `Quarantine`||
+|**High confidence spam** detection action <br/><br/> _HighConfidenceSpamAction_|**Move message to Junk Email folder** <br/><br/> `MoveToJmf`|**Quarantine message** <br/><br/> `Quarantine`|**Quarantine message** <br/><br/> `Quarantine`||
+|**Phishing** detection action <br/><br/> _PhishSpamAction_|**Move message to Junk Email folder**<sup>\*</sup> <br/><br/> `MoveToJmf`|**Quarantine message** <br/><br/> `Quarantine`|**Quarantine message** <br/><br/> `Quarantine`|<sup>\*</sup> The default value is **Move message to Junk Email folder** in the default anti-spam policy and in new anti-spam policies that you create in PowerShell. The default value is **Quarantine message** in new anti-spam policies that you create in the Microsoft 365 Defender portal.|
 |**High confidence phishing** detection action <br/><br/> _HighConfidencePhishAction_|**Quarantine message** <br/><br/> `Quarantine`|**Quarantine message** <br/><br/> `Quarantine`|**Quarantine message** <br/><br/> `Quarantine`||
 |**Bulk** detection action <br/><br/> _BulkSpamAction_|**Move message to Junk Email folder** <br/><br/> `MoveToJmf`|**Move message to Junk Email folder** <br/><br/> `MoveToJmf`|**Quarantine message** <br/><br/> `Quarantine`||
-|**Retain spam in quarantine for this many days** <br/><br/> _QuarantineRetentionPeriod_|15 days<sup>\*</sup>|30 days|30 days|<sup>\*</sup> The default value is 15 days in the default anti-spam policy, and in new anti-spam policies that you create in PowerShell. The default value is 30 days in new anti-spam policies that you create in the Microsoft 365 Defender portal. <br/><br/> This value also affects messages that are quarantined by anti-phishing policies. For more information, see [Quarantined email messages in EOP](quarantine-email-messages.md).|
+|**Retain spam in quarantine for this many days** <br/><br/> _QuarantineRetentionPeriod_|15 days<sup>\*</sup>|30 days|30 days|<sup>\*</sup> The default value is 15 days in the default anti-spam policy and in new anti-spam policies that you create in PowerShell. The default value is 30 days in new anti-spam policies that you create in the Microsoft 365 Defender portal. <br/><br/> This value also affects messages that are quarantined by anti-phishing policies. For more information, see [Quarantined email messages in EOP](quarantine-email-messages.md).|
 |**Enable spam safety tips** <br/><br/> _InlineSafetyTipsEnabled_|Selected <br/><br/> `$true`|Selected <br/><br/> `$true`|Selected <br/><br/> `$true`||
 |Enable zero-hour auto purge (ZAP) for phishing messages <br/><br/> _PhishZapEnabled_|Selected <br/><br/> `$true`|Selected <br/><br/> `$true`|Selected <br/><br/> `$true`||
 |Enable ZAP for spam messages <br/><br/> _SpamZapEnabled_|Selected <br/><br/> `$true`|Selected <br/><br/> `$true`|Selected <br/><br/> `$true`||
@@ -152,6 +158,8 @@ To create and configure anti-malware policies, see [Configure anti-malware polic
 
 For more information about these settings, see [Spoof settings](set-up-anti-phishing-policies.md#spoof-settings). To configure these settings, see [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md).
 
+The spoof settings are inter-related, but the **Show first contact safety tip** setting has no dependency on spoof settings.
+
 |Security feature name|Default|Standard|Strict|Comment|
 |---|:---:|:---:|:---:|---|
 |**Phishing threshold & protection**|||||
@@ -213,18 +221,6 @@ For more information about these settings, see [Impersonation settings in anti-p
 #### EOP anti-phishing policy settings in Microsoft Defender for Office 365
 
 These are the same settings that are available in [anti-spam policy settings in EOP](#eop-anti-spam-policy-settings).
-
-The spoof settings are inter-related, but the **Show first contact safety tip** setting has no dependency on spoof settings.
-
-|Security feature name|Default|Standard|Strict|Comment|
-|---|:---:|:---:|:---:|---|
-|**Phishing threshold & protection**|||||
-|**Enable spoof intelligence** <br/><br/> _EnableSpoofIntelligence_|Selected <br/><br/> `$true`|Selected <br/><br/> `$true`|Selected <br/><br/> `$true`||
-|**Actions**|||||
-|**If message is detected as spoof** <br/><br/> _AuthenticationFailAction_|**Move message to the recipients' Junk Email folders** <br/><br/> `MoveToJmf`|**Move message to the recipients' Junk Email folders** <br/><br/> `MoveToJmf`|**Quarantine the message** <br/><br/> `Quarantine`|This setting applies to spoofed senders that were automatically blocked as shown in the [spoof intelligence insight](learn-about-spoof-intelligence.md) or manually blocked in the [Tenant Allow/Block List](tenant-allow-block-list.md). <br/><br/> If you select **Quarantine the message**, an **Apply quarantine policy** box is available to select the quarantine policy that defines what users are allowed to do to quarantined messages. When you create a new anti-phishing policy, a blank value means the default quarantine policy is used to define the historical capabilities for spoof quarantined messages (DefaultFullAccessPolicy). <br/><br/> Admins can create and select a custom quarantine policy that defines what recipients are allowed to do to these messages in quarantine. For more information, see [Quarantine policies](quarantine-policies.md).|
-|**Show first contact safety tip** <br/><br/> _EnableFirstContactSafetyTips_|Not selected <br/><br/> `$false`|Selected <br/><br/> `$true`|Selected <br/><br/> `$true`|For more information, see [First contact safety tip](set-up-anti-phishing-policies.md#first-contact-safety-tip).|
-|**Show (?) for unauthenticated senders for spoof** <br/><br/> _EnableUnauthenticatedSender_|Selected <br/><br/> `$true`|Selected <br/><br/> `$true`|Selected <br/><br/> `$true`|Adds a question mark (?) to the sender's photo in Outlook for unidentified spoofed senders. For more information, see [Unauthenticated sender](set-up-anti-phishing-policies.md#unauthenticated-sender).|
-|**Show "via" tag** <br/><br/> _EnableViaTag_|Selected <br/><br/> `$true`|Selected <br/><br/> `$true`|Selected <br/><br/> `$true`|Adds a via tag (chris@contoso.com via fabrikam.com) to the From address if it's different from the domain in the DKIM signature or the **MAIL FROM** address. <br/><br/> For more information, see [Unauthenticated sender](set-up-anti-phishing-policies.md#unauthenticated-sender).|
 
 ### Safe Attachments settings
 
