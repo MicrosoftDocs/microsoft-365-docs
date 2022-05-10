@@ -125,21 +125,6 @@ This article is a list of all sensitive information type (SIT) entity definition
 - [Finland passport number](sit-defn-finland-passport-number.md)
 - [Finland physical addresses](sit-defn-finland-physical-addresses.md)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## France driver's license number
 
 This entity is available in the EU Driver's License Number sensitive information type and is available as a stand-alone sensitive information type entity.

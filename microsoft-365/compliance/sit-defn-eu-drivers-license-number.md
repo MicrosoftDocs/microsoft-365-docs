@@ -33,7 +33,7 @@ These entities are in the EU Driver's License Number and are sensitive informati
 - [Czech](sit-defn-czech-drivers-license-number.md)
 - [Denmark](sit-defn-denmark-drivers-license-number.md)
 - [Estonia](sit-defn-estonia-drivers-license-number.md)
-- [Finland](#finland-drivers-license-number)
+- [Finland](sit-defn-finland-drivers-license-number.md)
 - [France](#france-drivers-license-number)
 - [Germany](#germany-drivers-license-number)
 - [Greece](#greece-drivers-license-number)
