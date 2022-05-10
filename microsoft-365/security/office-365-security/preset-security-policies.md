@@ -93,6 +93,13 @@ You can apply EOP protections to different users than Defender for Office 365 pr
 
 You can't modify the policy settings in the protection profiles. The **Standard**, **Strict**, and **Built-in protection** policy setting values are described in [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md).
 
+> [!NOTE]
+> In Defender for Office 365 protections, you need to identify the senders for [user impersonation protection](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) and the internal or external domains for [domain impersonation protection](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
+>
+> All domains that you own ([accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) automatically receive domain impersonation protection in preset security policies.
+>
+> All recipients automatically receive impersonation protection from [mailbox intelligence](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) in preset security policies.
+
 ### Order of precedence for preset security policies and other policies
 
 When multiple policies are applied to a user, the following order is applied from highest priority to lowest priority:
