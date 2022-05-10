@@ -175,13 +175,17 @@ The **Recommendations** tab provides next-step actions and advice for investigat
  
 ## Suppress an alert
 
-Alert suppression provides the ability to tune and manage alerts in advance, before they trigger, to keep the queue focused and save triage time by hiding or resolving alerts automatically, each time a certain expected organizational behavior occurs, and rule conditions are met. 
+Alert suppression provides the ability to tune and manage alerts in advance, before they trigger. This keeps the queue focused and saves triage time by hiding or resolving alerts automatically, each time a certain expected organizational behavior occurs and rule conditions are met. 
 
-You can now suppress alerts based on IOCs (indicators) like files using AND/OR operators and groupings.
+To supress alerts, you need to: 
 
-IOCs are the indicators such as files, processes, and evidence that trigger the alert.
+- Set rule conditions based on evidence types such as AMSI script, WMI event, and scheduled tasks. 
 
-You can also add the selected IOCs, for example files to the “allow list” and prevent them from being blocked in the future. You want to suppress an alert and you also don’t want the file that triggered the alert to be blocked.
+- Set rule conditions when part of the detected evidence, parent process, and part of the triggering evidence subgroup properties are present. 
+
+- Set advanced conditions on multiple IOCs (indicators) with the new and granular conditions builder, using AND, OR, and grouping   options. IOCs are the indicators such as files, processes, and evidence that trigger the alert. 
+
+- Then apply the rule on the selected alert or any alert type that meets rule conditions.
 
 > [!NOTE]
 > Adding at least one IOC to the rule condition is required to suppress any alert type.
@@ -207,7 +211,7 @@ To create a suppression rule for the alerts:
 
 :::image type="content" source="../../media/investigate-alerts/suppression-complex-IOCs.png" lightbox="../../media/investigate-alerts/suppression-complex-IOCs.png" alt-text="Create separation rule pane":::
    
-4. Select the **Auto fill all alert related IOCs** option to generate the full rule quickly. Then, you can change and edit the fields as needed. 
+4. You can select the **Auto fill all alert related IOCs** option to set rule conditions quickly, adding all alert related IOCs and their properties. Then, you can change and edit the fields as needed. 
 
 :::image type="content" source="../../media/investigate-alerts/autofill-IOCs.png" lightbox="../../media/investigate-alerts/autofill-IOCs.png" alt-text="Auto fill all alert related IOCs":::
  
@@ -218,10 +222,10 @@ Use the **OR** operator to add another file name and its attributes. So, for eit
 
 :::image type="content" source="../../media/investigate-alerts/suppression-choose-scope.png" lightbox="../../media/investigate-alerts/suppression-choose-scope.png" alt-text="Create suppression rule pane: Conditions, Scope, Action":::
  
-6.	You can define the **Scope** based on **Device**, **Device group**, or by **User**.
+6.	Define the **Scope** based on specific device, multiple selected devices, device groups, the entire organization or by user.
 
 > [!NOTE]
-> You must have Admin permission when the **Scope** is set only for **User**. Admin permission is not required when the Scope is set for **User** along with **Device**.
+> You must have Admin permission when the **Scope** is set only for **User**. Admin permission is not required when the Scope is set for **User** together with **Device**, **Device groups**.
 
 7.	In the **Action** section, take the appropriate action of either **Hide alert** or **Resolve alert** and click **Save**.
 
