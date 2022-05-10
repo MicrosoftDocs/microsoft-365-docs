@@ -80,11 +80,9 @@ The following sections contain the exclusions that are delivered with automatic 
 
 This section lists the default exclusions for all roles in Windows Server 2016, Windows Server 2019, and Windows Server 2022.
 
-> [!NOTE]
-> The default locations could be different than what's listed in this article.
-
-> [!NOTE]
-> The customer needs to refer to the product documentation for the software that didn't ship as a Windows feature or server role.
+> [!IMPORTANT]
+> - Default locations could be different than the locations that are described in this article.
+> - See the manufacturer's documentation for information about exclusions for software that isn't included as a Windows feature or server role.
 
 ##### Windows "temp.edb" files
 
