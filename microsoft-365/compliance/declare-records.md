@@ -21,9 +21,9 @@ description: "Declare records by using retention labels."
 
 # Declare records by using retention labels
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 To declare documents and emails as [records](records-management.md#records), you use [retention labels](retention.md#retention-labels) that mark the content as a **record** or a **regulatory record**.
 
