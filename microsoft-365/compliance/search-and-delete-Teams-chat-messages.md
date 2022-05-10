@@ -100,6 +100,9 @@ Now you're ready to actually purge chat messages from Teams. You'll use the Micr
 For information about using Graph Explorer, see [Use Graph Explorer to try Microsoft Graph APIs](/graph/graph-explorer/graph-explorer-overview).
 
 > [!IMPORTANT]
+> APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported. To determine whether an API is available in v1.0, use the Version selector.
+
+> [!IMPORTANT]
 > To perform these three tasks in Graph Explorer, you may have to consent to the eDiscovery.Read.All and eDiscovery.ReadWrite.All permissions. For more information, see the "Consent to permissions" section in [Working with Graph Explorer](/graph/graph-explorer/graph-explorer-features#consent-to-permissions).
 
 ### Get the case Id
