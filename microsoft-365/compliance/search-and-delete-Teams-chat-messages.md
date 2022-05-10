@@ -18,7 +18,7 @@ ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: "Use eDiscovery (Premium) and the Microsoft Graph Explorer to search for and purge chat messages in Microsoft Teams, and respond to data spillage incidents in Teams."
 ---
 
-# Search and purge chat messages in Teams (preview)
+# Search and purge chat messages in Teams (Preview)
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
