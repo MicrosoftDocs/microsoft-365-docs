@@ -30,11 +30,12 @@ description: "Learn how to enable Microsoft 365 to protect local Active-Director
 
 # Enable domain-joined Windows 10 devices to be managed by Microsoft 365 Business Premium
 
+If your organization uses Windows Server Active Directory on-premises, you can set up Microsoft 365 Business Premium to protect your Windows 10 devices, while still maintaining access to on-premises resources that require local authentication.
+
+To set up this protection, you can implement **Hybrid Azure AD joined devices**. These devices are joined to both your on-premises Active Directory and your Azure Active Directory.
+
 > [!NOTE]
 > Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../security/defender-business/mdb-overview.md).
-
-If your organization uses Windows Server Active Directory on-premises, you can set up Microsoft 365 Business Premium to protect your Windows 10 devices, while still maintaining access to on-premises resources that require local authentication.
-To set up this protection, you can implement **Hybrid Azure AD joined devices**. These devices are joined to both your on-premises Active Directory and your Azure Active Directory.
 
 ## Watch: Configure Hybrid Azure Active Directory join
 
@@ -139,10 +140,18 @@ At this point you should be able to see the policy **Enable automatic MDM enroll
 
 ## Related content
 
-- [Synchronize domain users to Microsoft 365](../admin/setup/manage-domain-users.md)(article)\
+- [Synchronize domain users to Microsoft 365](../admin/setup/manage-domain-users.md)
 
-- [Create a group in the admin center](../admin/create-groups/create-groups.md) (article)\
+- [Create a group in the admin center](../admin/create-groups/create-groups.md)
 
-- [Tutorial: Configure hybrid Azure Active Directory join for managed domains](/azure/active-directory/devices/hybrid-azuread-join-managed-domains) (article)
+- [Tutorial: Configure hybrid Azure Active Directory join for managed domains](/azure/active-directory/devices/hybrid-azuread-join-managed-domains)
 
-- [Top 10 ways to secure Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)
+- [Set up self-service passwords](../admin/add-users/let-users-reset-passwords.md)
+
+- [Set up self-service group management](/azure/active-directory/enterprise-users/groups-self-service-management)
+
+- [Best practices for securing Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)
+
+## Next objective:
+
+[Prepare for Office client deployment](m365bp-prepare-for-office-client-deployment.md)
