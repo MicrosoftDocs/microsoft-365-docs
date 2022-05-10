@@ -23,7 +23,7 @@ ms.custom: seo-marvel-apr2020
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Microsoft cloud services include powerful communication and collaboration capabilities. But suppose that you want to restrict communication and collaboration between two groups to avoid a conflict of interest from occurring in your organization. Or, perhaps you want to restrict communication and collaboration between certain people inside your organization in order to safeguard internal information. Microsoft 365 enables communication and collaboration across groups and organizations, so is there a way to restrict communication and collaboration  among specific groups of users when necessary? With Microsoft Purview Information Barriers, you can!
+Microsoft cloud services include powerful communication and collaboration capabilities. But suppose that you want to restrict communication and collaboration between two groups to avoid a conflict of interest from occurring in your organization. Or, perhaps you want to restrict communication and collaboration between certain people inside your organization in order to safeguard internal information. Microsoft 365 enables communication and collaboration across groups and organizations, so is there a way to restrict communication and collaboration  among specific groups of users when necessary? With Microsoft Purview Information Barriers (IB), you can!
 
 Microsoft Teams, SharePoint Online, and OneDrive for Business support information barriers. Assuming your [subscription](#required-licenses-and-permissions) includes information barriers, a compliance administrator, or information barriers administrator can define policies to allow or prevent communications between groups of users in Microsoft Teams. Information barrier policies can be used for situations like these:
 
@@ -79,7 +79,7 @@ To learn more about the user experience with information barriers, see [informat
 
 ## Required licenses and permissions
 
-Before you get started with insider risk management, you should confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) and any add-ons. To access and use information barriers, your organization must have one of the following subscriptions or add-ons:
+Before you get started with IB, you should confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) and any add-ons. To access and use IB, your organization must have one of the following subscriptions or add-ons:
 
 - Microsoft 365 E5/A5 subscription (paid or trial version)
 - Office 365 E5/A5/A3/A1 subscription (paid or trial version)
