@@ -22,9 +22,9 @@ description: "Prescriptive guidance to deploy Microsoft Purview Information Prot
 
 # Deploy an information protection solution with Microsoft Purview
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 >*[Licensing for Microsoft 365 Security & Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Your information protection strategy is driven by your business needs. Many organizations must comply with regulations, laws, and business practices. Additionally, organizations need to protect proprietary information, such as data for specific projects.
 
@@ -38,7 +38,7 @@ Use Microsoft Purview Information Protection to help you discover, classify, pro
 
 Watch the following Ignite session to see how these capabilities support and build on each other: [Know your data, protect your data, and prevent data loss with Microsoft Information Protection](https://myignite.microsoft.com/archives/IG20-OD273).
 
-For information about governing your data, see [Govern your data with Microsoft Purview](manage-Information-governance.md).
+For data governance, see [Deploy a data governance solution with Microsoft Purview](data-governance-solution.md).
 
 ## Licensing
 

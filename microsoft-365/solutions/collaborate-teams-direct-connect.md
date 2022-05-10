@@ -32,6 +32,13 @@ When you enable shared channels in Teams with another organization:
 > [!NOTE]
 > Shared channels is in preview and requires that you have configured [Microsoft Teams Public Preview](/MicrosoftTeams/public-preview-doc-updates). If you plan to share channels with other organizations, they must also have configured Teams public preview.
 
+## Video demonstration
+
+This video shows the configuration steps described in this document.
+<br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4WRMx?autoplay=false]
+
 ## Enable shared channels in Teams
 
 Shared channels is enabled by default in Teams. Follow this procedure to confirm the settings.
@@ -89,7 +96,7 @@ To configure inbound settings for an organization
 1. On the **Applications** tab, choose **Allow access** and **Select applications**.
 1. Select **Add Microsoft applications**.
 1. Select the **Office 365** application, and then choose **Select**.
-1. Select **Save** and close the **Outbound access settings** blade.
+1. Select **Save** and close the **Inbound access settings** blade.
 
 ### Configure outbound settings
 
@@ -103,7 +110,7 @@ To configure outbound settings for an organization
 1. On the **External applications** tab, choose **Allow access** and **Select external applications**.
 1. Select **Add Microsoft applications**.
 1. Select the **Office 365** application, and then choose **Select**.
-1. Select **Save** and close the **Outbound access settings** blade.
+1. Select **Save**, choose **Yes** to confirm, and close the **Outbound access settings** blade.
 
 ## See also
 

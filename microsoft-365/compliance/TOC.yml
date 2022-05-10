@@ -214,6 +214,8 @@
      href: work-with-partner-to-archive-third-party-data.md
    - name: Search for third-party data
      href: use-content-search-to-search-third-party-data-that-was-imported.md
+   - name: View admin logs for data connectors
+     href: data-connector-admin-logs.md
 - name: Manage insider risks
   items:
     - name: Microsoft Purview insider risk solutions
@@ -578,6 +580,8 @@
   items: 
     - name: Govern your data
       href: manage-data-governance.md
+    - name: Deploy a data governance solution
+      href: data-governance-solution.md
     - name: Understand retaining and deleting data
       items: 
         - name: Learn about retention policies & retention labels
@@ -1006,6 +1010,8 @@
           href: detailed-properties-in-the-office-365-audit-log.md
         - name: Turn auditing on or off
           href: turn-audit-log-search-on-or-off.md
+        - name: Use Customer Key to encrypt audit records
+          href: auditing-cmk-encryption.md
         - name: Use the audit log to investigate common issues
           href: auditing-troubleshooting-scenarios.md
         - name: Use sharing auditing in the audit log
