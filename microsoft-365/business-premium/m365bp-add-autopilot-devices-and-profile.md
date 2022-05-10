@@ -1,5 +1,5 @@
 ---
-title: "Use this step-by-step guide to add Autopilot devices and profile"
+title: "Use this step-by-step guide to add AutoPilot devices and profile"
 f1.keywords:
 - NOCSH
 ms.author: efrene

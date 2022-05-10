@@ -66,5 +66,6 @@ For more information, see [Define mail flow rules to encrypt email messages](../
 
 You can also apply branding to customize the look and the text in the email messages. For more information, see [Add your organization's brand to your encrypted messages](../compliance/email-encryption.md).
 
-If you've gotten this far, you've successfully completed another mission, so congratulations! There's no time to rest on our successes, so let's get right to setting up a safe and secure environment in which the team can [collaborate safely](m365bp-collaborate-share-securely.md). 
+## Next mission
 
+If you've gotten this far, you've successfully completed another mission, so congratulations! There's no time to rest on our successes, so let's get right to setting up a safe and secure environment in which the team can [collaborate safely](m365bp-collaborate-share-securely.md).

@@ -47,4 +47,4 @@ A factory reset reverts a device to the original settings it had when the device
   
 ## See also
 
-[Top 10 ways to secure Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)
+[Best practices for securing Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)
