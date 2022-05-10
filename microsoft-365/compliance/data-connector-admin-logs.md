@@ -55,7 +55,7 @@ After you create a data connector to import non-Microsoft data to Microsoft Purv
     - **Items imported successfully**: count of items that were imported successfully by Connector into user mailboxes after fanout.
     - **Items partially imported**: count of items that were imported successfully by Connector into user mailboxes after fanout but had attachments dropped.
     - **Items skipped**: count of items that were skipped from being imported into user mailboxes after fanout due to it being duplicate items.
-    - **Items failed**: count of items that failed to be imported into user mailboxes after fanout due to it errors (like user mapping, item size exceeded    etc.). Event is logged once per user for user mapping failures.
+    - **Items failed**: count of items that failed to be imported into user mailboxes after fanout due to it errors (like user mapping, item size exceeded etc.). Event is logged once per user for user mapping failures.
 
     > [!NOTE]
     > Items available for import should be a sum of items imported successfully, partially imported, skipped and failed.
