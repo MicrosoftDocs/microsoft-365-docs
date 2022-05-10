@@ -202,7 +202,7 @@ In comparison, when you delete a label:
 
 - For documents stored outside SharePoint and OneDrive or you haven't enabled sensitivity labels for Office files, and for emails: When you next open the content, the label information in the metadata remains, but because a label ID to name mapping is no longer possible, users don't see the applied label name displayed (for example, on the status bar for desktop apps) so users will assume the content isn't labeled. If the label applied encryption, the encryption remains and users still see the name and description of the now archived protection template.
 
-- For containers, such as SharePoint and team sites: The label is removed and any settings that were configured with that label are no longer enforced. This action typically takes between 48-72 hours for SharePoint sites, and can be quicker for Teams and Microsoft 365 groups.
+- For containers, such as sites in SharePoint and Teams: The label is removed and any settings that were configured with that label are no longer enforced. This action typically takes between 48-72 hours for SharePoint sites, and can be quicker for Teams and Microsoft 365 Groups.
 
 As with all label changes, removing a sensitivity label from a label policy or deleting a sensitivity label takes time to replicate to all users and services.
 
