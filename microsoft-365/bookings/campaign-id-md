@@ -1,5 +1,5 @@
 ---
-title: "Add a campaign ID to Bookings page URL"
+title: "Add a marketing campaign ID to Bookings page URL"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 description: "Add a campaign ID to Bookings page URL"
 ---
 
-# Add a campaign ID to Bookings URL
+# Add a marketing campaign ID to Bookings page URL
 
 Keep track of your Bookings marketing campaigns by adding a campaign ID to the end of your Booking page URL.
 
