@@ -33,7 +33,11 @@ You can use Intune to onboard macOS devices into Microsoft Purview solutions.
 
 ## Before you begin
 
-- Make sure your [macOS devices are onboarded into Intune](/mem/intune/fundamentals/deployment-guide-platform-macos) and are enrolled in the [Company Portal app](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp). 
+- Make sure your [macOS devices are onboarded into Intune](/mem/intune/fundamentals/deployment-guide-platform-macos) and are enrolled in the [Company Portal app](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp). To check whether the macOS device is correctly configured, open `Terminal` and run `sudo /Library/Application\ Support/Microsoft/DLP/com.microsoft.dlp.daemon.app/Contents/Resources/Tools/dlp_diagnostic.py --upn-info`, one of the highlight variables should be not emtpy:
+![image](https://user-images.githubusercontent.com/81826151/167690854-bf191eef-fd18-493b-b00a-94fc24884fc7.png)
+
+    
+    
 - Make sure you have access to the [Microsoft Endpoint Manager center](https://endpoint.microsoft.com/#home).
 - This supports macOS version Catalina 10.15 and higher.
 - Create the user groups that you are going to assign the configuration updates to.
