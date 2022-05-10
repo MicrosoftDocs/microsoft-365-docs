@@ -14,7 +14,6 @@ author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
-ms.date: 02/04/2022
 ms.collection: M365-security-compliance
 ---
 
@@ -43,7 +42,7 @@ Keep the following important points in mind:
 - Automatic exclusions only apply to Real-time protection (RTP) scanning. Automatic exclusions are not honored during a full, quick, or on-demand scan.
 - Custom and duplicate exclusions do not conflict with automatic exclusions.
 - Microsoft Defender Antivirus uses the Deployment Image Servicing and Management (DISM) tools to determine which roles are installed on your computer.
-- Software that didn't ship with the operating system requires setting appropriate exclusions.
+- Appropriate exclusions must be set for software that isn't included with the operating system.
 - Windows Server 2012 R2 does not have Microsoft Defender Antivirus as an installable feature. When you onboard those servers to Defender for Endpoint, you will install Windows Defender Antivirus, and default exclusions for operating system files are applied. However, exclusions for server roles (as specified below) don't apply automatically, and you should configure these exclusions as appropriate. To learn more, see [Onboard Windows servers to the Microsoft Defender for Endpoint service](configure-server-endpoints.md).
 
 This article provides an overview of exclusions for Microsoft Defender Antivirus on Windows Server 2016 or later.
@@ -51,8 +50,6 @@ This article provides an overview of exclusions for Microsoft Defender Antivirus
 Because Microsoft Defender Antivirus is built into Windows Server 2016 and later, exclusions for operating system files and server roles happen automatically. However, you can define custom exclusions. You can also opt out of automatic exclusions if necessary.
 
 This article includes the following sections:
-
-<br/><br/>
 
 |Section|Description|
 |---|---|
