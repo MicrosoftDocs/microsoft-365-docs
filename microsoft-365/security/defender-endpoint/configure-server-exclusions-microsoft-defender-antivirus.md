@@ -82,7 +82,7 @@ This section lists the default exclusions for all roles in Windows Server 2016, 
 
 > [!IMPORTANT]
 > - Default locations could be different than the locations that are described in this article.
-> - See the manufacturer's documentation for information about exclusions for software that isn't included as a Windows feature or server role.
+> - To set exclusions for software that isn't included as a Windows feature or server role, refer to the software manufacturer's documentation.
 
 ##### Windows "temp.edb" files
 
