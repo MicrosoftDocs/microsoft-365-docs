@@ -82,6 +82,9 @@ All columns except the label **Name** can be displayed or hidden by selecting th
     - No
     - Yes
 
+- **Relabel to** —currently rolling out—identifies if the label is configured to apply another label at the end of the retention period. Valid values:
+    - Blank or the selected label name
+
 - **Retention duration** identifies the retention period. Valid values:
     - Days
     - Months
