@@ -521,7 +521,53 @@
               - name: Diseases
                 href: sit-defn-diseases.md
               - name: Drug Enforcement Agency (DEA) number
-                href: sit-defn-drug-enforcement-agency-number.md    
+                href: sit-defn-drug-enforcement-agency-number.md 
+              - name: Estonia drivers license number
+                href: sit-defn-estonia-drivers-license-number.md  
+              - name: Estonia passport number
+                href: sit-defn-estonia-passport-number.md
+              - name: Estonia personal identification code
+                href: sit-defn-estonia-personal-identification-code.md
+              - name: Estonia physical addresses
+                href: sit-defn-estonia-physical-addresses.md
+              - name: EU debit card number
+                href: sit-defn-eu-debit-card-number.md
+              - name: EU drivers license number
+                href: sit-defn-eu-drivers-license-number.md
+              - name: EU national identification number
+                href: sit-defn-eu-national-identification-number.md
+              - name: EU passport number
+                href: sit-defn-eu-passport-number.md
+              - name: EU social security number or equivalent identification
+                href: sit-defn-eu-social-security-number-equivalent-identification.md
+              - name: EU Tax identification number
+                href: sit-defn-eu-tax-identification-number.md
+              - name: Finland drivers license number
+                href: sit-defn-finland-drivers-license-number.md
+              - name: Finland european health insurance number
+                href: sit-defn-finland-european-health-insurance-number.md
+              - name: Finland national ID
+                href: sit-defn-finland-national-id.md
+              - name: Finland passport number
+                href: sit-defn-finland-passport-number.md
+              - name: Finland physical addresses
+                href: sit-defn-finland-physical-addresses.md
+              - name: France drivers license number
+                href: sit-defn-france-drivers-license-number.md
+              - name: France health insurance number
+                href: sit-defn-france-health-insurance-number.md
+              - name: France national id card (CNI)
+                href: sit-defn-france-national-id-card.md
+              - name: France passport number
+                href: sit-defn-france-passport-number.md
+              - name: France physical addresses
+                href: sit-defn-france-physical-addresses.md
+              - name: France social security number (INSEE)
+                href: sit-defn-france-social-security-number.md
+              - name: France tax identification number
+                href: sit-defn-france-tax-identification-number.md
+              - name: France value added tax number
+                href: sit-defn-france-value-added-tax-number.md
           - name: Sensitive information type functions
             href: sit-functions.md
           - name: Custom sensitive information type filters reference
