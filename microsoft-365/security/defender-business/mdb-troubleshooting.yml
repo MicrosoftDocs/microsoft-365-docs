@@ -35,7 +35,7 @@ sections:
       - question: I'm seeing indications that some devices aren't protected even though they're onboarded to Defender for Business.
         answer: |
 
-          If devices are running a non-Microsoft antivirus/antimalware solution, real-time protection might be turned off when those devices are onboarded to Defender for Business. Real-time protection is turned on by default in Defender for Business, but a non-Microsoft antivirus/antimalware solution might affect your settings. When real-time protection is turned off, you'll see notifications in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) that devices aren't protected. In these cases, make sure real-time protection is turned on.
+          If devices are running a non-Microsoft antivirus/antimalware solution, real-time protection might be turned off when those devices are onboarded to Defender for Business. Real-time protection is turned on by default in Defender for Business, but a non-Microsoft antivirus/antimalware solution might affect your settings. When real-time protection is turned off, you'll see notifications in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) that some devices aren't protected. In these cases, make sure real-time protection is turned on.
 
           To confirm that real-time protection is turned on, you can view, and if necessary, edit your next-generation protection policies. See [View or edit your next-generation protection policies](/microsoft-365/security/defender-business/mdb-configure-security-settings?view=o365-worldwide#view-or-edit-your-next-generation-protection-policies).
           
