@@ -22,9 +22,10 @@ description: Learn about retention policies and retention labels that help you t
 
 # Learn about retention policies and retention labels
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!NOTE]
 > If you're seeing messages about retention policies in Teams or have questions about retention labels in your apps, contact your IT department for information about how they have been configured for you. In the meantime, you might find the following articles helpful:
@@ -95,9 +96,11 @@ Unlike retention policies, retention settings from retention labels travel with 
 
 - Use [trainable classifiers](classifier-learn-about.md) to identify content to label.
 
-- Apply a default label for SharePoint documents.
+- Apply a default label for SharePoint items or Exchange messages.
 
-- Support [disposition review](./disposition.md) to review the content before it's permanently deleted.
+- Supported actions at the end retention period:
+    - [Disposition review](./disposition.md) to review the content before it's permanently deleted.
+    - Automatically apply another retention label
 
 - Mark the content as a [record](records-management.md#records) as part of the label settings, and always have [proof of disposition](disposition.md#disposition-of-records) when content is deleted at the end of its retention period.
 
@@ -213,14 +216,18 @@ For standard retention labels (they don't mark items as a [record or regulatory 
 
 - When content already has a retention label applied, the existing label won't be automatically removed or replaced by another retention label with one possible exception: The existing label was applied as a default label. When you use a default label, there are some scenarios when it can be replaced by another default label, or automatically removed.
 
-  For more information about the label behavior when it's applied by using a default label:
-
-  - Default label for SharePoint: [Label behavior when you use a default label for SharePoint](create-apply-retention-labels.md#label-behavior-when-you-use-a-default-label-for-sharepoint)
-  - Default label for Outlook: [Applying a default retention label to an Outlook folder](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder)
+- When content already has a retention label applied, the existing label won't be automatically removed or replaced by another retention label with two possible exceptions: 
+    
+    - The existing label is configured to automatically apply a different retention label at the end of the retention period.
+    - The existing label was applied as a default label. When you use a default label, there are some scenarios when it can be replaced by another default label, or automatically removed. 
+        
+        For more information about the label behavior when it's applied by using a default label:
+        - Default label for SharePoint: [Label behavior when you use a default label for SharePoint](create-apply-retention-labels.md#label-behavior-when-you-use-a-default-label-for-sharepoint)
+        - Default label for Outlook: [Applying a default retention label to an Outlook folder](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder)
 
 - If there are multiple auto-apply label policies that could apply a retention label, and content meets the conditions of multiple policies, the retention label for the oldest auto-apply label policy (by date created) is applied.
 
-When retention labels mark items as a record or a regulatory record, these labels are never automatically changed. Only admins for the container can manually change or remove retention labels that mark items as a record, but not regulatory records. For more information, see [Compare restrictions for what actions are allowed or blocked](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked).
+When retention labels mark items as a record or a regulatory record, these labels are never automatically changed during their configured retention period. Only admins for the container can manually change or remove retention labels that mark items as a record, but not regulatory records. For more information, see [Compare restrictions for what actions are allowed or blocked](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked).
 
 #### Monitoring retention labels
 
@@ -248,6 +255,7 @@ Use the following table to help you identify whether to use a retention policy o
 |Retention settings that can retain and then delete, retain-only, or delete-only |Yes |Yes |
 |Workloads supported: <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Microsoft 365 groups <br />- Skype for Business <br />- Teams<br />- Yammer|<br /> Yes <br /> Yes <br /> Yes <br /> Yes <br /> Yes <br /> Yes <br /> Yes | <br /> Yes, except public folders <br /> Yes <br /> Yes <br /> Yes <br /> No <br /> No <br /> No |
 |Retention applied automatically | Yes | Yes |
+|Automatically apply different retention settings at the end of the retention period | No | Yes |
 |Retention applied based on conditions <br /> - sensitive info types, KQL queries and keywords, trainable classifiers, cloud attachments| No | Yes |
 |Retention applied manually | No | Yes |
 |End-user interaction | No | Yes |
