@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 03/14/2022
+ms.date: 05/10/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: high
@@ -230,7 +230,7 @@ Regardless of the policy method, managing the same setting on the same device th
 
 ## See also
 
-[Manage endpoint security in Microsoft InTune](https://docs.microsoft.com/mem/intune/protect/endpoint-security)
+[Manage endpoint security in Microsoft InTune](/mem/intune/protect/endpoint-security)
 
 [Best practices for securing Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)
 
