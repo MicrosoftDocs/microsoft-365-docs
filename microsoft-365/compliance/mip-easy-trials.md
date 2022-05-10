@@ -15,9 +15,9 @@ description: Learn about the default labels and policies for Microsoft Purview I
 
 # Default labels and policies to protect your data
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Eligible customers can activate default labels and policies for Microsoft Purview Information Protection: 
 

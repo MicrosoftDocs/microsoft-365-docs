@@ -69,6 +69,7 @@ If so, here are some common issues and how to resolve them.
 - **Cookies can't be found**
   - Third-party cookies need to be allowed for the **LMS URL** in the browser settings.
   - These cookies are needed to complete the LTI 1.3 handshake per the IMS specifications.
+  - To learn how to update your browser's cookie settings, see [Allow cookies for LMS URLs in your browser](browser-cookies.md).
 
 - **Registration details not found**
   - This issue happens when registration of the LTI tool wasn't completed or if the registration was deleted in the OneLTI admin portal.
