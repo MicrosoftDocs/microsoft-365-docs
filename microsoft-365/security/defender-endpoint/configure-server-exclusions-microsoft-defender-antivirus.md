@@ -36,10 +36,8 @@ In addition to server role-defined automatic exclusions, you can add or remove c
 
 ## A few points to keep in mind
 
-Keep the following important points in mind:
-
 - Custom exclusions take precedence over automatic exclusions.
-- Automatic exclusions only apply to Real-time protection (RTP) scanning. Automatic exclusions are not honored during a full, quick, or on-demand scan.
+- Automatic exclusions only apply to [real-time protection (RTP)](configure-protection-features-microsoft-defender-antivirus.md) scanning. Automatic exclusions are not honored during a full, quick, or on-demand scan.
 - Custom and duplicate exclusions do not conflict with automatic exclusions.
 - Microsoft Defender Antivirus uses the Deployment Image Servicing and Management (DISM) tools to determine which roles are installed on your computer.
 - Appropriate exclusions must be set for software that isn't included with the operating system.
@@ -165,8 +163,6 @@ This section lists the default exclusions for all roles in Windows Server 2016, 
 ##### Hyper-V exclusions
 
 The following table lists the file type exclusions, folder exclusions, and process exclusions that are delivered automatically when you install the Hyper-V role.
-
-<br><br/>
 
 |Exclusion type|Specifics|
 |---|---|
