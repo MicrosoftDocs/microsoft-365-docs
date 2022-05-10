@@ -217,9 +217,11 @@ Use the following information to help you fill out the downloaded template to im
 
 Label settings not currently supported for import:
 
-- Multi-stage disposition review: Although you can configure the settings for a single disposition review stage when you import retention labels with a template, you can't specify additional review stages. Instead, configure these in the compliance center after the import succeeds.
+- Multi-stage disposition review: Although you can configure the settings for a single disposition review stage when you import retention labels with a template, you can't specify additional review stages. Instead, configure these in the compliance portal after the import succeeds.
 
-- Unlock this record by default (currently rolling out in preview): This setting isn't available in the template to import, and you can't select this setting in the compliance center after the import succeeds.
+- Unlock this record by default (currently rolling out in preview): This setting isn't available in the template to import, and you can't select this setting in the compliance portal after the import succeeds.
+
+- Replacement label (currently rolling out in preview): This setting isn't available in the template to import, but you can select this setting in the compliance portal after the import succeeds.
 
 
 ## Next steps
