@@ -32,6 +32,13 @@ When you enable shared channels in Teams with another organization:
 > [!NOTE]
 > Shared channels is in preview and requires that you have configured [Microsoft Teams Public Preview](/MicrosoftTeams/public-preview-doc-updates). If you plan to share channels with other organizations, they must also have configured Teams public preview.
 
+## Video demonstration
+
+This video shows the configuration steps described in this document.
+<br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4WRMx?autoplay=false]
+
 ## Enable shared channels in Teams
 
 Shared channels is enabled by default in Teams. Follow this procedure to confirm the settings.
