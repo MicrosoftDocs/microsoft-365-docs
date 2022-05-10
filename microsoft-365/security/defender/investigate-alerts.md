@@ -183,7 +183,7 @@ To supress alerts, you need to:
 
 - Set rule conditions when part of the detected evidence, parent process, and part of the triggering evidence subgroup properties are present. 
 
-- Set advanced conditions on multiple IOCs (indicators) with the new and granular conditions builder, using AND, OR, and grouping   options. IOCs are the indicators such as files, processes, and evidence that trigger the alert. 
+- Set advanced conditions on multiple IOCs (indicators) using AND, OR, and grouping   options. IOCs are indicators such as files, processes, and evidence that trigger the alert. 
 
 - Then apply the rule on the selected alert or any alert type that meets rule conditions.
 
