@@ -18,7 +18,7 @@ ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: "Use eDiscovery (Premium) and the Microsoft Graph Explorer to search for and purge chat messages in Microsoft Teams, and respond to data spillage incidents in Teams."
 ---
 
-# Search and purge chat messages in Teams (preview)
+# Search and purge chat messages in Teams (Preview)
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
@@ -98,6 +98,9 @@ Now you're ready to actually purge chat messages from Teams. You'll use the Micr
 3. Purge the chat messages returned by the collection.
 
 For information about using Graph Explorer, see [Use Graph Explorer to try Microsoft Graph APIs](/graph/graph-explorer/graph-explorer-overview).
+
+> [!IMPORTANT]
+> APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported. To determine whether an API is available in v1.0, use the Version selector.
 
 > [!IMPORTANT]
 > To perform these three tasks in Graph Explorer, you may have to consent to the eDiscovery.Read.All and eDiscovery.ReadWrite.All permissions. For more information, see the "Consent to permissions" section in [Working with Graph Explorer](/graph/graph-explorer/graph-explorer-features#consent-to-permissions).
