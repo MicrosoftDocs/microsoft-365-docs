@@ -48,7 +48,7 @@ Microsoft 365 Business Premium includes a guided process for basic setup. The gu
 - [Adding users and assigning licenses](../admin/add-users/add-users.md)
 - [Updating your DNS records](../admin/setup/setup-business-basic.md#connect-your-domain)
 
-The following video shows the guided setup process for Microsoft 365 Business Basic, which works the same way in Microsoft 365 Business Premium.<br/><br/>
+The following video shows the guided setup process for Microsoft 365 Business Standard, which works the same way in Microsoft 365 Business Premium.<br/><br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
 
