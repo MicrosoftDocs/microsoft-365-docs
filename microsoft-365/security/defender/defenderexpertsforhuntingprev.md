@@ -36,13 +36,13 @@ Microsoft Defender Experts for Hunting (Defender Experts for Hunting) is a manag
 
 [Watch this short video](https://youtu.be/4t1JgE0X0jc) to learn more about how Microsoft Defender Experts for Hunting can help you track the latest advanced threats in your environment.
 
-Defender Experts for Hunting provides targeted attack notifications directly through the Microsoft 365 Defender portal. These notifications will help you protect your organization's endpoints, email, cloud apps and identities. You will also receive access to Experts on Demand, that lets you click a button in the Microsoft 365 Defender portal to get expert advice about threats your organization is facing. You can consult experts and seek help with the threats your organization faces. In this preview, you can try the service for free and enjoy the following capabilities:
+Defender Experts for Hunting provides targeted attack notifications directly through the Microsoft 365 Defender portal. These notifications will help you protect your organization's endpoints, email, cloud apps, and identities. You'll also receive access to Experts on Demand that lets you click a button in the Microsoft 365 Defender portal to get expert advice about threats your organization is facing. You can consult experts and seek help with the threats your organization faces. In this preview, you can try the service for free and enjoy the following capabilities:
 
-- **Threat hunting and analysis** – Defender Experts for Hunting look deeper to expose advanced threats and identify the scope and impact of malicious activity associated with human adversaries or hands-on-keyboard attacks. 
-- **Targeted attack notification** – Notifications show up as incidents in Microsoft 365 Defender, helping to improve your security operations' incident response with specific information about the scope, method of entry, and remediation instructions. 
-- **Experts on Demand** – Consult a threat expert about a specific incident, nation-state actor, or attack vector. 
-- **Hunter-trained AI** – Our Defender Experts for Hunting share their learning back into the automated tools they use to improve threat discovery and prioritization. 
-- **Reports** – An interactive report summarizing what we hunted, what we found, and what we recommended
+- **Threat hunting and analysis** – Defender Experts for Hunting look deeper to expose advanced threats and identify the scope and impact of malicious activity associated with human adversaries or hands-on-keyboard attacks.
+- **Targeted attack notification** – Notifications show up as incidents in Microsoft 365 Defender, helping to improve your security operations' incident response with specific information about the scope, method of entry, and remediation instructions.
+- **Experts on Demand** – Consult a threat expert about a specific incident, nation-state actor, or attack vector.
+- **Hunter-trained AI** – Our Defender Experts for Hunting share their learning back into the automated tools they use to improve threat discovery and prioritization.
+- **Reports** – An interactive report summarizing what we hunted, what we found, and what we recommended.
 
 ## Apply for Microsoft Defender Experts for Hunting service preview
 
@@ -52,7 +52,7 @@ Defender Experts for Hunting provides targeted attack notifications directly thr
 If you haven’t done so yet, you can apply for Defender Experts for Hunting:
 
 1. Click [**Apply**](https://aka.ms/expandedMTEprev). Only the global administrators can register and complete the application process. If you’re not a global administrator, contact your global administrator to fill out the application form.
-2. Enter your **company email ID**.    
+2. Enter your **company email ID**.
 3. Select **Submit**. You will get a confirmation message that your application has been received.  
 4. Upon approval, you will receive an email to register.
 
@@ -65,13 +65,13 @@ You need to follow these steps to join the preview:
 3. Go to **Settings > Microsoft Defender Experts**.
 4. Read the **Microsoft Defender Experts for Hunting preview terms and conditions**. If you have any questions or concerns, contact the Microsoft Defender Experts Team at defenderexpertshelp@microsoft.com.
 5. Click **Accept**, to accept the terms and conditions.
-6. Get your free preview in [Microsoft 365 admin center](https://www.microsoft.com/en-us/microsoft-365/business/office-365-administration). 
-You can only place the order after you've accepted the terms and conditions. Select **Get license** to initiate provisioning in the admin center. This will take you to the checkout page to verify the order details. The service might become commercially available less than 6 months after you begin your free preview.  Microsoft reserves the right to end your preview at that time.
+6. Get your free preview in [Microsoft 365 admin center](https://www.microsoft.com/microsoft-365/business/office-365-administration). 
+You can only place the order after you've accepted the terms and conditions. Select **Get license** to initiate provisioning in the admin center. This will take you to the checkout page to verify the order details. The service might become commercially available less than six months after you begin your free preview.  Microsoft reserves the right to end your preview at that time.
 7. In the **Checkout** page, select **Place order**.  
 
 ## Start using your Microsoft Defender Experts for Hunting service preview
 
-Around six hours after you place your order and get confirmation, you will receive a welcome email that says your Microsoft Defender Experts preview is set up and ready to use. Our experts will immediately start hunting for advanced threats inside your environment.
+Around six hours after you place your order and get confirmation, you'll receive a welcome email that says your Microsoft Defender Experts preview is set up and ready to use. Our experts will immediately start hunting for advanced threats inside your environment.
 
 ## Receive targeted attack notification
 
