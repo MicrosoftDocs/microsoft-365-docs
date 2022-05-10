@@ -243,7 +243,7 @@ For detailed syntax and parameter information, see [Get-TenantAllowBlockListSpoo
 
 - Wildcards (*) are allowed in the following scenarios:
 
-  - A left wildcard must be followed by a period to specify a subdomain.
+  - A left wildcard must be followed by a period to specify a subdomain. (only applicable for blocks)
 
     For example, `*.contoso.com` is allowed; `*contoso.com` is not allowed.
 
@@ -260,8 +260,6 @@ For detailed syntax and parameter information, see [Get-TenantAllowBlockListSpoo
   - A left tilde implies a domain and all subdomains.
 
     For example `~contoso.com` includes `contoso.com` and `*.contoso.com`.
-
-- URL entries that contain protocols (for example, `http://`, `https://`, or `ftp://`) will fail, because URL entries apply to all protocols.
 
 - A username or password isn't supported or required.
 
@@ -301,16 +299,16 @@ Valid URL entries and their results are described in the following sections.
 
 - **Block not matched**: abc-contoso.com
 
-#### Scenario: Left wildcard (subdomain)
+#### Scenario: Left wildcard (subdomain - only applicable for blocks)
 
 **Entry**: `*.contoso.com`
 
-- **Allow match** and **Block match**:
+- **Block match**:
 
   - www.contoso.com
   - xyz.abc.contoso.com
 
-- **Allow not matched** and **Block not matched**:
+- **Block not matched**:
 
   - 123contoso.com
   - contoso.com
@@ -366,11 +364,11 @@ Valid URL entries and their results are described in the following sections.
 
 - **Allow not matched** and **Block not matched**: contoso.com
 
-#### Scenario: Left wildcard subdomain and right wildcard suffix
+#### Scenario: Left wildcard subdomain and right wildcard suffix (only applicable for blocks)
 
-**Entry**: `*.contoso.com/*`
+**Entry**: `*.contoso.com/*` 
 
-- **Allow match** and **Block match**:
+- **Block match**:
 
   - abc.contoso.com/ab
   - abc.xyz.contoso.com/a/b/c
@@ -378,7 +376,7 @@ Valid URL entries and their results are described in the following sections.
   - www.contoso.com/b/a/c
   - xyz.contoso.com/ba
 
-- **Allow not matched** and **Block not matched**: contoso.com/b
+- **Block not matched**: contoso.com/b
 
 #### Scenario: Left and right tilde
 
