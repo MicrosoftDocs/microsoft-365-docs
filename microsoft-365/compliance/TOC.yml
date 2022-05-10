@@ -580,6 +580,8 @@
   items: 
     - name: Govern your data
       href: manage-data-governance.md
+    - name: Deploy a data governance solution
+      href: data-governance-solution.md
     - name: Understand retaining and deleting data
       items: 
         - name: Learn about retention policies & retention labels
