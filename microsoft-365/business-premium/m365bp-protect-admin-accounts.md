@@ -45,17 +45,17 @@ To create additional admin accounts:
 
     ![Choose Users and then Active users in the left nav.](../media/Activeusers.png)
 
- 2. On the **Active users** page, select **Add a user** at the top of the page, and on the **New user** panel, enter the name and other information.
+ 1. On the **Active users** page, select **Add a user** at the top of the page. 
 
- 3. Expand the **Roles** section, and choose **Global administrator** to give this user global admin access. You can also choose **Customized administrator** and choose any of the roles that are displayed.
+ 1. In the **Add a user** panel, enter basic information such as name and username information.
 
-    Enter an alternate email in the **Alternative email address** text box. You can use this address to recover your password information if you get locked out. For Global admins, a billing statement will also be sent to this address.
+ 1. Enter and set up **Product licenses** information.
 
-    ![Choose the administrator role.](../media/adminroles.png)
+ 1. In **Optional settings**, define the role of the user, including adding Admin center access if appropriate.
 
- 4. In the **Product licenses** section, move the selector for **Microsoft 365 Business** to **Off** and the **Create user without product license** to **On**.
+ 1. Finish and review your settings and select **Finish adding** to confirm the details.
 
-    ![Choose the product license.](../media/productlicense.png)
+    :::image type="content" source="media/m365bp-global-admin.png" alt-text="Define new user roles.":::
 
 ## Create an emergency admin account
 
@@ -63,17 +63,20 @@ You should also create a backup account that isn't set up with multi-factor auth
 
 ## Create a user account for yourself
 
-Use your user account to participate in collaboration with your organization, including checking mail. This means your admin credentials might be similar to  *Alice.Chavez<span></span>@Contoso.org* and your regular user account might be similar to *Alice<span></span>@Contoso.com*.
+Use your user account to participate in collaboration with your organization, including checking mail. This means your admin credentials might be similar to  *Alice.Chavez<span></span>@Contoso.org*, for example, and your regular user account might be similar to *Alice<span></span>@Contoso.com*.
 
 To create a new user account:
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">Microsoft 365 admin center</a> and then choose **Users** \> **Active users** in the left nav.
 
-2. On the **Active users** page, select **Add a user** at the top of the page, and on the **New user** panel, enter the name and other information.
+1. On the **Active users** page, select **Add a user** at the top of the page, and on the **Add a user** panel, enter the name and other information.
 
-3. Expand the **Roles** section, and choose **User (no administrative access)**.
+1. In the **Product Licenses** section, select the check box for **Microsoft 365 Business Premium (no administrative access)**.
 
-4. In the **Product licenses** section, move the selector for **Microsoft 365 Business** to **On**.
+1. In the **Optional settings** section, leave the default radio button selected for **User (no admin center access)**.
+
+1. Finish and review your settings and select **Finish adding** to confirm the details.
+
 
 ## Additional recommendations
 
