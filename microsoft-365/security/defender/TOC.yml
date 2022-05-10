@@ -354,14 +354,16 @@
          href: ensuring-you-always-have-the-optimal-security-controls-with-preset-security-policies.md
        - name: How to configure quarantine permissions with quarantine policies
          href: how-to-configure-quarantine-permissions-with-quarantine-policies.md
-       - name: TITLE GOES HERE
-         href: markdownfilename.md
-       - name: TITLE GOES HERE
-         href: markdownfilename.md
-       - name: TITLE GOES HERE
-         href: markdownfilename.md
-       - name: TITLE GOES HERE
-         href: markdownfilename.md
+       - name: How to run attack simulations for your team
+         href: how-to-run-attack-simulations-for-your-team.md
+       - name: How to setup automated attacks and training within Attack simulation training 
+         href: how-to-setup-attack-simulation-training-for-automated-attacks-and-training.md
+       - name: Optimize and correct security policies with configuration analyzer
+         href: optimize-and-correct-security-policies-with-configuration-analyzer.md
+       - name: Protect your c-suite with priority account protection
+         href: protect-your-c-suite-with-priority-account-protection.md
+       - name: Search for emails and remediate threats using Threat Explorer in Microsoft 365 Defender
+         href: search-for-emails-and-remediate-threats.md
     - name: Reference
       items: 
         - name: Permissions & settings
