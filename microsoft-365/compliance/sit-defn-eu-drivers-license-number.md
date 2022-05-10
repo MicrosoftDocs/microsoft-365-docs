@@ -34,7 +34,7 @@ These entities are in the EU Driver's License Number and are sensitive informati
 - [Denmark](sit-defn-denmark-drivers-license-number.md)
 - [Estonia](sit-defn-estonia-drivers-license-number.md)
 - [Finland](sit-defn-finland-drivers-license-number.md)
-- [France](#france-drivers-license-number)
+- [France](sit-defn-france-drivers-license-number.md)
 - [Germany](#germany-drivers-license-number)
 - [Greece](#greece-drivers-license-number)
 - [Hungary](#hungary-drivers-license-number)

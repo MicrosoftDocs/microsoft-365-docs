@@ -552,6 +552,22 @@
                 href: sit-defn-finland-passport-number.md
               - name: Finland physical addresses
                 href: sit-defn-finland-physical-addresses.md
+              - name: France drivers license number
+                href: sit-defn-france-drivers-license-number.md
+              - name: France health insurance number
+                href: sit-defn-france-health-insurance-number.md
+              - name: France national id card (CNI)
+                href: sit-defn-france-national-id-card.md
+              - name: France passport number
+                href: sit-defn-france-passport-number.md
+              - name: France physical addresses
+                href: sit-defn-france-physical-addresses.md
+              - name: France social security number (INSEE)
+                href: sit-defn-france-social-security-number.md
+              - name: France tax identification number
+                href: sit-defn-france-tax-identification-number.md
+              - name: France value added tax number
+                href: sit-defn-france-value-added-tax-number.md
           - name: Sensitive information type functions
             href: sit-functions.md
           - name: Custom sensitive information type filters reference
