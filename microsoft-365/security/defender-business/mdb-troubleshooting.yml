@@ -28,9 +28,18 @@ sections:
       - question: My setup and configuration process failed
         answer: |
 
-          If you were using the simplified configuration process in Defender for Business and something went wrong, you can still configure your security settings and policies manually.
+          If you're using the simplified configuration process in Defender for Business and something went wrong, you can still configure your security settings and policies manually.
 
           See [Set up and configure Microsoft Defender for Business](mdb-setup-configuration.md).
+
+      - question: I'm seeing indications that some devices aren't protected even though they're onboarded to Defender for Business.
+        answer: |
+
+          If devices are running a non-Microsoft antivirus/antimalware solution, real-time protection might be turned off when those devices are onboarded to Defender for Business. Real-time protection is turned on by default in Defender for Business, but a non-Microsoft antivirus/antimalware solution might affect your settings. When real-time protection is turned off, you'll see notifications in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) that some devices aren't protected. In these cases, make sure real-time protection is turned on.
+
+          To confirm that real-time protection is turned on, you can view, and if necessary, edit your next-generation protection policies. See [View or edit your next-generation protection policies](/microsoft-365/security/defender-business/mdb-configure-security-settings?view=o365-worldwide#view-or-edit-your-next-generation-protection-policies).
+          
+          We recommend using Microsoft Defender Antivirus together with Defender for Business to get better protection that's coordinated across products and services. To learn more, see [Better together - Microsoft Defender Antivirus and Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/why-use-microsoft-defender-antivirus). 
 
       - question: I need to resolve a policy conflict
         answer: |
@@ -64,7 +73,7 @@ sections:
 
           2. Choose **Settings** > **Endpoints**. Then, under **General**, select **Advanced features**.
 
-          3. Scroll down to **Microsoft Intune connection**, and make sure it is turned on.
+          3. Scroll down to **Microsoft Intune connection**, and make sure it's turned on.
 
           **Procedure 2: Set the enforcement scope for Defender for Business**
 
@@ -87,7 +96,7 @@ sections:
       - question: Something went wrong with onboarding devices in the Microsoft 365 Defender portal
         answer: |
 
-          While onboarding devices in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), something might have gone wrong, and an error message is displayed. In particular, this issue can occur if you are onboarding devices using a downloadable onboarding package for Microsoft Intune, Group Policy, System Center Configuration Manager, or Mobile Device Management in Defender for Business. 
+          When you're onboarding devices in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), something might have gone wrong, and an error message is displayed. In particular, this issue can occur if you're onboarding devices using a downloadable onboarding package for Microsoft Intune, Group Policy, System Center Configuration Manager, or Mobile Device Management in Defender for Business. 
           
           Microsoft Defender for Business uses a capability called *Security Management for Microsoft Defender for Endpoint*. If onboarding in Defender for Business fails, the cause most likely has to do with Security Management for Defender for Endpoint. To resolve the issue, see the following articles:
           
