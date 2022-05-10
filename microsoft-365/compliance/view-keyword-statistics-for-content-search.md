@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
-ms.date: 
+ms.date: 05/10/2022
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -38,7 +38,7 @@ To display statistics for a Content search or a search associated with a eDiscov
 
      OR
 
-   - Click **eDiscovery** > **Core**, select a case, and then select a search on the **Searches** tab to display the flyout page.
+   - Click **eDiscovery** > **eDiscovery (Standard)**, select a case, and then select a search on the **Searches** tab to display the flyout page.
 
 2. On the flyout page of the selected search, click the **Search statistics** tab.
   
