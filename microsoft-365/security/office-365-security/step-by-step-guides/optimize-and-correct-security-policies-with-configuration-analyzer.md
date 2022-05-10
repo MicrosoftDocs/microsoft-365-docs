@@ -16,7 +16,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: article
-ms.technology: m365d
+ms.technology: mdo
 ---
 # Optimize and correct security policies with configuration analyzer
 

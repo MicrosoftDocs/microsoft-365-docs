@@ -16,7 +16,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: article
-ms.technology: m365d
+ms.technology: mdo
 ---
 
 # Steps to use manual email remediation in Threat Explorer
