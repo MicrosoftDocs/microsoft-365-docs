@@ -278,7 +278,6 @@ Valid URL entries and their results are described in the following sections.
 - **Allow match**: contoso.com
 
 - **Allow not matched**:
-
   - abc-contoso.com
   - contoso.com/a
   - payroll.contoso.com
@@ -288,7 +287,6 @@ Valid URL entries and their results are described in the following sections.
   - www.contoso.com/q=a@contoso.com
 
 - **Block match**:
-
   - contoso.com
   - contoso.com/a
   - payroll.contoso.com
@@ -299,17 +297,18 @@ Valid URL entries and their results are described in the following sections.
 
 - **Block not matched**: abc-contoso.com
 
-#### Scenario: Left wildcard (subdomain - only applicable for blocks)
+#### Scenario: Left wildcard (subdomain)
+
+> [!NOTE]
+> This scenario applies only to blocks.
 
 **Entry**: `*.contoso.com`
 
 - **Block match**:
-
   - www.contoso.com
   - xyz.abc.contoso.com
 
 - **Block not matched**:
-
   - 123contoso.com
   - contoso.com
   - test.com/contoso.com
@@ -320,13 +319,11 @@ Valid URL entries and their results are described in the following sections.
 **Entry**: `contoso.com/a/*`
 
 - **Allow match** and **Block match**:
-
   - contoso.com/a/b
   - contoso.com/a/b/c
   - contoso.com/a/?q=joe@t.com
 
 - **Allow not matched** and **Block not matched**:
-
   - contoso.com
   - contoso.com/a
   - www.contoso.com
@@ -337,13 +334,11 @@ Valid URL entries and their results are described in the following sections.
 **Entry**: `~contoso.com`
 
 - **Allow match** and **Block match**:
-
   - contoso.com
   - www.contoso.com
   - xyz.abc.contoso.com
 
 - **Allow not matched** and **Block not matched**:
-
   - 123contoso.com
   - contoso.com/abc
   - www.contoso.com/abc
@@ -353,7 +348,6 @@ Valid URL entries and their results are described in the following sections.
 **Entry**: `contoso.com/*`
 
 - **Allow match** and **Block match**:
-
   - contoso.com/?q=whatever@fabrikam.com
   - contoso.com/a
   - contoso.com/a/b/c
@@ -364,12 +358,14 @@ Valid URL entries and their results are described in the following sections.
 
 - **Allow not matched** and **Block not matched**: contoso.com
 
-#### Scenario: Left wildcard subdomain and right wildcard suffix (only applicable for blocks)
+#### Scenario: Left wildcard subdomain and right wildcard suffix
 
-**Entry**: `*.contoso.com/*` 
+> [!NOTE]
+> This scenario applies only to blocks.
+
+**Entry**: `*.contoso.com/*`
 
 - **Block match**:
-
   - abc.contoso.com/ab
   - abc.xyz.contoso.com/a/b/c
   - www.contoso.com/a
