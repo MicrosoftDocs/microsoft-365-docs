@@ -47,9 +47,7 @@ To access file plan, you must have one of the following admin roles:
 
 - View-only Retention Manager
 
-In the Microsoft Purview compliance portal, go to **Solutions** > **Records management** > **File plan**:
-
-![File plan page](../media/compliance-file-plan.png). 
+In the Microsoft Purview compliance portal, go to **Solutions** > **Records management** > **File plan**.
 
 If **Records management** doesn't display in the navigation pane, first scroll down, and select **Show all**.
 
@@ -151,9 +149,7 @@ However, it can take up to two days for content explorer to show the items that 
 
 From your file plan, you can export the details of all retention labels into a .csv file to help you facilitate periodic compliance reviews with data governance stakeholders in your organization.
 
-To export all retention labels: On the **File plan** page, click **Export**:
-
-![Option to export file plan.](../media/compliance-file-plan-export-labels.png)
+To export all retention labels: On the **File plan** page, click **Export**.
 
 A *.csv file that contains all existing retention labels opens. For example:
 
