@@ -17,7 +17,6 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: File plan provides advanced management capabilities for retention labels.
-ms.custom: seo-marvel-may2020
 ---
 
 # Use file plan to create and manage retention labels
