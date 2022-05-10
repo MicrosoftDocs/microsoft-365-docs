@@ -13,9 +13,6 @@ description: "Learn how you can see a 4 month view of your Bookings activity"
 
 # Reporting info for Bookings
 
-> [!NOTE]
-> This article helps you to interact with the latest version of Microsoft Bookings. Previous versions will be retired in coming months.
-
 You can now see a four month view of your Bookings calendar in a TSV file. The TSV file will show you four months of data, but you can select different four month periods over the course of a year.
 
 This appointment level information can be used to visualize the customer activity around your Bookings calendar. TSV files are tab separated value files. You can view or edit a file like this with any text editor or spreadsheet program, such as Excel.

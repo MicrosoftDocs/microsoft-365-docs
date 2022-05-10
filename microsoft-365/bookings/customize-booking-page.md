@@ -13,9 +13,6 @@ description: "Change the color theme of your booking page in the Microsoft Booki
 
 # Customize and publish your booking page
 
-> [!NOTE]
-> This article helps you to interact with the latest version of Microsoft Bookings. Previous versions will be retired in coming months.
-
 The Booking Page is where you set up what your external facing booking page will look like. Once you customize and publish your booking page, people will use it to book appointments with you.
 
 To customize your booking page, sign in to [Office.com](https://office.com), and then go to **Bookings** \> **Booking page**. You can customize the booking page with the following options. Once you've setup up your Booking Page, you can publish it so people can start booking appointments with you.

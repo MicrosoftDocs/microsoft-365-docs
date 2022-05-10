@@ -13,9 +13,6 @@ description: "Follow these instructions to create your About Us page, including 
 
 # Enter your business information
 
-> [!NOTE]
-> This article helps you to interact with the latest version of Microsoft Bookings. Previous versions will be retired in coming months.
-
 In Microsoft Bookings, the Business Information page within the web app contains all the details that you'd typically find on a business' "About us" page. These details include a relevant name, address, phone number, web site URL, privacy policy URL, logo, and business hours.
 
 The information you provide here will be displayed on the page customers and clients use to book appointments (known as the booking page) and in messages and reminders sent to them by Bookings. An example of this information on the booking page is highlighted below.

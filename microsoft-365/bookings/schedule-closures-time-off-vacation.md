@@ -13,9 +13,6 @@ description: "Schedule office closures and employee time off from the Bookings c
 
 # Schedule business closures, time off, and vacation time
 
-> [!NOTE]
-> This article helps you to interact with the latest version of Microsoft Bookings. Previous versions will be retired in coming months.
-
 Occasionally, you'll want to close your business for holidays or team events, or your employees will need time off when they're sick, on vacation, or unavailable for other reasons. You can schedule time off from the Microsoft Bookings calendar, and the employee will be unavailable for bookings during the specified time. Once the business reopens or employees return to work, everyone will be listed on the booking page according to their established work hours.
 
 ## Watch: Enter business hours and time off for employees
