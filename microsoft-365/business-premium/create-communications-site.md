@@ -68,4 +68,6 @@ Learn all [about Communications sites](https://support.office.com/article/What-i
 
 If you don't see the **+ Create** site link, self-service site creation might not be available in Microsoft 365. To create a team site, contact the person administering Microsoft 365 in your organization. If you're a Microsoft 365 admin, see [Manage site creation in SharePoint Online](/sharepoint/manage-site-creation) to enable self-service site creation for your organization or [Manage sites in the new SharePoint admin center](/sharepoint/manage-sites-in-new-admin-center) to create a site from the <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint admin center</a>.
 
+## Next mission
+
 Congratulations &mdash; you've completed the mission! Now, immediately turn your focus toward [protecting the managed devices](m365bp-protect-devices.md) for the entire org!
