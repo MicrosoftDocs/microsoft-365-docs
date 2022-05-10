@@ -349,19 +349,19 @@
    - name: Step-by-step guides
      items: 
       - name: Ensuring you always have the optimal security controls with preset security policies
-        href: /step-by-step-guides/ensuring-you-always-have-the-optimal-security-controls-with-preset-security-policies.md
+        href: /microsoft-365/security/office-365-security/step-by-step-guides/ensuring-you-always-have-the-optimal-security-controls-with-preset-security-policies.md
       - name: How to configure quarantine permissions with quarantine policies
-        href: /step-by-step-guides/how-to-configure-quarantine-permissions-with-quarantine-policies.md
+        href: /microsoft-365/security/office-365-security/step-by-step-guides/how-to-configure-quarantine-permissions-with-quarantine-policies.md
       - name: How to run attack simulations for your team
-        href: /step-by-step-guides/how-to-run-attack-simulations-for-your-team.md
+        href: /microsoft-365/security/office-365-security/step-by-step-guides/how-to-run-attack-simulations-for-your-team.md
       - name: How to setup automated attacks and training within Attack simulation training 
-        href: /step-by-step-guides/how-to-setup-attack-simulation-training-for-automated-attacks-and-training.md
+        href: /microsoft-365/security/office-365-security/step-by-step-guides/how-to-setup-attack-simulation-training-for-automated-attacks-and-training.md
       - name: Optimize and correct security policies with configuration analyzer
-        href: /step-by-step-guides/optimize-and-correct-security-policies-with-configuration-analyzer.md
+        href: /microsoft-365/security/office-365-security/step-by-step-guides/optimize-and-correct-security-policies-with-configuration-analyzer.md
       - name: Protect your c-suite with priority account protection
-        href: /step-by-step-guides/protect-your-c-suite-with-priority-account-protection.md
+        href: /microsoft-365/security/office-365-security/step-by-step-guides/protect-your-c-suite-with-priority-account-protection.md
       - name: Search for emails and remediate threats using Threat Explorer in Microsoft 365 Defender
-        href: /step-by-step-guides/search-for-emails-and-remediate-threats.md
+        href: /microsoft-365/security/office-365-security/step-by-step-guides/search-for-emails-and-remediate-threats.md
    - name: Reference
      items: 
      - name: Security roadmap
