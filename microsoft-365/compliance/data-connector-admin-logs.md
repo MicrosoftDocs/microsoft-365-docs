@@ -49,29 +49,26 @@ After you create a data connector to import non-Microsoft data to Microsoft Purv
 
 4. View the following import status information in the admin log:
 
-    - **Import completion time**: The timestamp (in UTC) when the connector completed importing data from the data source. The other properties in the admin log contain information about the import that was completed.
+    - **Import completion time**:  timestamp (in UTC)  when connector completes import from data source and all the below events are computed/updated against the import.
+    - **Items available from source**: count of items that were downloaded by Connector from data source.
+    - **Items available for import**: count of items that were available for import by Connector after fanout. Fanout represents the act of writing a message to all associated participants (sender, receiver etc.).
+    - **Items imported successfully**: count of items that were imported successfully by Connector into user mailboxes after fanout.
+    - **Items partially imported**: count of items that were imported successfully by Connector into user mailboxes after fanout but had attachments dropped.
+    - **Items skipped**: count of items that were skipped from being imported into user mailboxes after fanout due to it being duplicate items.
+    - **Items failed**: count of items that failed to be imported into user mailboxes after fanout due to it errors (like user mapping, item size exceeded    etc.). Event is logged once per user for user mapping failures.
 
-    - **Items available from source**: The count of items from the data source that were imported to Microsoft 365 by the data connector.
+    > [!NOTE]
+    > Items available for import should be a sum of items imported successfully, partially imported, skipped and failed.
 
-    - **Items available for import**: The count of items that were available for import by the connector. This count includes the sum of items imported successfully, items partially imported, skipped items, and failed items.
+    - Summary of Failed item details:
+      - **Item id** – unique identifier of the item
+      - **Source User ID** – user id at source application
+      - **M365 User ID** – User Principal Name in M365
+      - **Failure Reason** – indicates the reason why the connector could not import the item
 
-    - **Items imported successfully**: The count of items that were successfully imported to user mailboxes.
+      If there are no items ingested on a particular day, then the message below will be present in the log file:
 
-    - **Items partially imported**: The count of items that were successfully imported to user mailboxes but that had attachments that were dropped.
-
-    - **Items skipped**: The count of items that were skipped from being imported to user mailboxes due to items being duplicate items.
-
-    - **Items failed**: The count of items that failed to be imported to user mailboxes after due to it errors (for example user mapping errors and item size exceeded errors). Events for user mapping errors are logged once per user.
-
-    - **Failed Item Details**: Includes the following summary:
-
-        - **Item Id**: A unique identifier of the item.
-
-        - **Source User ID**: The user Id in the source application; for example, the user's Slack Id.
-
-        - **M365 User ID**: The user's user principal name in Microsoft 365.
-
-        - **Failure Reason**: Indicates the reason why the connector couldn't import the item.
+      No items ingested on date in *mm/dd/yyyy*.
 
 > [!NOTE]
 > If no items are imported on a particular day, the admin log contains the following message: `No items ingested on mm/dd/yyyy.`
