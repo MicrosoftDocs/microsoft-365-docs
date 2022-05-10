@@ -53,9 +53,9 @@ To create additional admin accounts:
 
  1. In **Optional settings**, define the role of the user, including adding Admin center access if appropriate.
 
- 1. Finish and review your settings and select **Finish adding** to confirm the details.
-
     :::image type="content" source="media/m365bp-global-admin.png" alt-text="Define new user roles.":::
+
+ 1. Finish and review your settings and select **Finish adding** to confirm the details.
 
 ## Create an emergency admin account
 
@@ -76,7 +76,6 @@ To create a new user account:
 1. In the **Optional settings** section, leave the default radio button selected for **User (no admin center access)**.
 
 1. Finish and review your settings and select **Finish adding** to confirm the details.
-
 
 ## Additional recommendations
 
