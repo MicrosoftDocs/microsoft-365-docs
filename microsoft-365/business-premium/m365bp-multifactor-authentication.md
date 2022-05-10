@@ -36,9 +36,10 @@ See more at [Set up multi-factor authentication in Microsoft 365](https://suppor
 
 ## Use the Outlook app on your devices
 
-After an admin has required the front-line users to use MFA then the authenticator app serves as a second form of authentication. We recommend you have them install and use the Outlook app to access their Microsoft 365 email. See [Set up mobile devices](../business/set-up-mobile-devices.md) for how to install Office apps, including Outlook, on a phone.
+After an admin has required the front-line users to use MFA then the authenticator app serves as a second form of authentication. We recommend you have them install and use the Outlook app to access their Microsoft 365 email. See [Set up mobile devices](../admin/setup/set-up-mobile-devices.md) for how to install Office apps, including Outlook, on a phone.
 
 ## Next objective
 
 Follow the guidance to [Install Office apps](m365bp-install-office-apps.md).
 
+ 
