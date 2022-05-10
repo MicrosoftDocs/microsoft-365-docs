@@ -94,3 +94,14 @@ After registering Teams LTI apps, educators can add the Teams Classes app and th
 
 - [Educator instructions on adding the Teams Classes app](https://support.microsoft.com/topic/use-microsoft-teams-classes-in-your-lms-ac6a1e34-32f7-45e6-b83e-094185a1e78a).
 - [Educator instructions on adding the Teams Meetings app](https://support.microsoft.com/topic/use-microsoft-teams-meetings-in-your-lms-11b6095d-f90b-42b9-ab77-4dcff2bb3b76).
+
+## Technical requirements to launch Teams LTI apps
+
+To launch the Teams LTI apps within Moodle, there are a few technical requirements educators need to meet.
+
+- Moodle version 3.10 or 3.11.
+- Latest available download of the Microsoft O365 plugin for Moodle version 3.10 or 3.11.
+  - We're not supporting Moodle 4.0 at this moment, but an upgrade is in progress to support Moodle 4.0.
+- OneLTI portal
+- Latest version of Microsoft Edge, Google Chrome Safari, or Mozilla Firefox browser
+- Screen resolution
