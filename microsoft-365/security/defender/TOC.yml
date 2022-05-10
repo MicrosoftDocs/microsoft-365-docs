@@ -348,6 +348,20 @@
          href: integrate-microsoft-365-defender-secops-use-cases.md
        - name: Step 6. SOC maintenance tasks
          href: integrate-microsoft-365-defender-secops-tasks.md
+    - name: Step-by-step guides
+      items: 
+       - name: Ensuring you always have the optimal security controls with preset security policies
+         href: ensuring-you-always-have-the-optimal-security-controls-with-preset-security-policies.md
+       - name: How to configure quarantine permissions with quarantine policies
+         href: how-to-configure-quarantine-permissions-with-quarantine-policies.md
+       - name: TITLE GOES HERE
+         href: markdownfilename.md
+       - name: TITLE GOES HERE
+         href: markdownfilename.md
+       - name: TITLE GOES HERE
+         href: markdownfilename.md
+       - name: TITLE GOES HERE
+         href: markdownfilename.md
     - name: Reference
       items: 
         - name: Permissions & settings
