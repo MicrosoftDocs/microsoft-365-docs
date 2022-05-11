@@ -110,18 +110,18 @@ Go to [**_Evaluate and pilot Microsoft 365 Defender_**](defender/eval-overview.m
 
 ## Step 5. Protect and govern sensitive data
 
-Implement Microsoft Information Protection (MIP) to help you discover, classify, and protect sensitive information wherever it lives or travels.
+Implement Microsoft Purview Information Protection to help you discover, classify, and protect sensitive information wherever it lives or travels.
 
-MIP capabilities are included with Microsoft 365 Compliance and give you the tools to know your data, protect your data, and prevent data loss.
+Microsoft Purview Information Protection capabilities are included with Microsoft Purview and give you the tools to know your data, protect your data, and prevent data loss.
 
 :::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-info-protect.png" alt-text="The Information protection capabilities protecting data through policy enforcement" lightbox="../media/zero-trust/m365-zero-trust-architecture-info-protect.png":::
 
 While this work is represented at the top of the deployment stack illustrated earlier in this article, you can begin this work anytime.
 
-Microsoft Information Protection provides a framework, process, and capabilities you can use to accomplish your specific business objectives.
+Microsoft Purview Information Protection provides a framework, process, and capabilities you can use to accomplish your specific business objectives.
 
-:::image type="content" source="../media/zero-trust/mip-solution-overview.png" alt-text="The Microsoft Information Protection (MIP) framework" lightbox="../media/zero-trust/mip-solution-overview.png":::
+![Microsoft Purview Information Protection](../media/zero-trust/mip-solution-overview.png)
 
-For more information on how to plan and deploy information protection, see [**_Deploy a Microsoft Information Protection solution_**](../compliance/information-protection-solution.md).
+For more information on how to plan and deploy information protection, see [**_Deploy a Microsoft Purview Information Protection solution_**](../compliance/information-protection-solution.md). 
 
 If you're deploying information protection for data privacy regulations, this solution guide provides a recommended framework for the entire process: [**_Deploy information protection for data privacy regulations with Microsoft 365_**](../solutions/information-protection-deploy.md).

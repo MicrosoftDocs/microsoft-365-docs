@@ -16,7 +16,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
-ms.date: 02/14/2022
+ms.date: 04/15/2022
 ms.technology: mde
 ---
 
@@ -139,45 +139,25 @@ The following steps will guide you through onboarding VDI devices and will highl
 
 ## Updating non-persistent virtual desktop infrastructure (VDI) images
 
-As a best practice, we recommend using offline servicing tools to patch golden/master images.
+With the ability to easily deploy updates to VMs running in VDIs, we've shortened this guide to focus on how you can get updates on your machines quickly and easily. You no longer need to create and seal golden images on a periodic basis, as updates are expanded into their component bits on the host server and then downloaded directly to the VM when it's turned on.
 
-For example, you can use the below commands to install an update while the image remains offline:
+For more information, follow the guidance in [Deployment guide for Microsoft Defender Antivirus in a Virtual Desktop Infrastructure (VDI) environment](/microsoft-365/security/defender-endpoint/deployment-vdi-microsoft-defender-antivirus).
 
-```console
-DISM /Mount-image /ImageFile:"D:\Win10-1909.vhdx" /index:1 /MountDir:"C:\Temp\OfflineServicing"
-DISM /Image:"C:\Temp\OfflineServicing" /Add-Package /Packagepath:"C:\temp\patch\windows10.0-kb4541338-x64.msu"
-DISM /Unmount-Image /MountDir:"C:\Temp\OfflineServicing" /commit
-```
-
-For more information on DISM commands and offline servicing, refer to the articles below:
-
-- [Modify a Windows image using DISM](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism)
-- [DISM Image Management Command-Line Options](/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14)
-- [Reduce the Size of the Component Store in an Offline Windows Image](/windows-hardware/manufacture/desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image)
-
-If offline servicing isn't a viable option for your non-persistent VDI environment, the following steps should be taken to ensure consistency and sensor health:
-
-1. After booting the master image for online servicing or patching, run an offboarding script to turn off the Defender for Endpoint sensor. For more information, see [Offboard devices using a local script](configure-endpoints-script.md#offboard-devices-using-a-local-script).
-
-2. Ensure the sensor is stopped by running the command below in a CMD window:
-
-   ```console
-   sc query sense
-   ```
-
-3. Service the image as needed.
-
-4. Run the below commands using PsExec.exe (which can be downloaded from https://download.sysinternals.com/files/PSTools.zip) to cleanup the cyber folder contents that the sensor may have accumulated since boot:
-
-    ```console
-    PsExec.exe -s cmd.exe
-    cd "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Cyber"
-    del *.* /f /s /q
-    REG DELETE "HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection" /v senseGuid /f
-    exit
-    ```
-
-5. Reseal the golden/master image as you normally would.
+   > [!NOTE]
+   > If you have onboarded the master image of your Non-Persistent VDI environment (SENSE service is running), then you must offboard and clear some data before putting the image back into production.
+   > 1. Ensure the sensor is stopped by running the command below in a CMD window:
+   >  ```console
+   >  sc query sense
+   >  ```
+   > 2. Run the below commands using PsExec.exe (which can be downloaded from https://download.sysinternals.com/files/PSTools.zip)
+   >
+   >  ```console
+   >  PsExec.exe -s cmd.exe
+   >  cd "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Cyber"
+   >  del *.* /f /s /q
+   >  REG DELETE "HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection" /v senseGuid /f
+   >  exit
+   >  ```
 
 ## Related topics
 - [Onboard Windows devices using Group Policy](configure-endpoints-gp.md)

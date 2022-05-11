@@ -1,5 +1,5 @@
 ---
-title: "Add licenses to a subscription purchased through the Volume Licensing Service Center"
+title: "Add licenses to a VLSC subscription"
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT

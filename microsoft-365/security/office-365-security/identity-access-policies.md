@@ -7,13 +7,13 @@ manager: dansimp
 ms.prod: m365-security
 ms.topic: article
 audience: Admin
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.reviewer: martincoetzer
-ms.custom: 
+ms.custom:
   - it-pro
   - goldenconfig
-ms.collection: 
+ms.collection:
   - M365-identity-device-management
   - M365-security-compliance
   - remotework
@@ -34,15 +34,13 @@ The following diagram illustrates the recommended set of policies. It shows whic
 
 :::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png" alt-text="The common policies for configuring Zero Trust identity and device access." lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png":::
 
-
 <!--
 
 Here's a one-page PDF summary:
 
 [![Thumb image for the Zero Trust identity and device protection for Microsoft 365 handout.](../../media/microsoft-365-policies-configurations/zero-trust-id-device-protection-model-handout-thumbnail.png)](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) <br> [View as a PDF](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) \| [Download as a PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf)
 
-
---> 
+-->
 
 The rest of this article describes how to configure these policies.
 
@@ -409,7 +407,7 @@ To require compliant PCs:
 > [!NOTE]
 > Make sure that your device is compliant before enabling this policy. Otherwise, you could get locked out and will be unable to change this policy until your user account has been added to the Conditional Access exclusion group.
 
---> 
+-->
 
 ## Require compliant PCs and mobile devices
 

@@ -35,22 +35,22 @@ The table below lists the changes in navigation between the Security & Complianc
 
 ****
 
-|[Security & Compliance Center](https://protection.office.com)|[Microsoft 365 Defender](https://security.microsoft.com)|[Microsoft 365 compliance center](https://compliance.microsoft.com/homepage)|[Exchange admin center](https://admin.exchange.microsoft.com)|
+|[Security & Compliance Center](https://protection.office.com)|[Microsoft 365 Defender](https://security.microsoft.com)|[Microsoft Purview compliance portal](https://compliance.microsoft.com/homepage)|[Exchange admin center](https://admin.exchange.microsoft.com)|
 |---|---|---|---|
 |Alerts|<ul><li>[Alert Policies](https://security.microsoft.com/alertpolicies)</li><li>[Incidents & alerts](https://security.microsoft.com/alerts)</li></ul>|[Alerts page](https://compliance.microsoft.com/homepage)||
-|Classification||See [Microsoft 365 compliance center](https://compliance.microsoft.com/homepage)||
-|Data loss prevention||See [Microsoft 365 compliance center](https://compliance.microsoft.com/homepage)||
-|Records management||See [Microsoft 365 compliance center](https://compliance.microsoft.com/homepage)||
-|Information governance||See [Microsoft 365 compliance center](https://compliance.microsoft.com/homepage)||
+|Classification||See [Microsoft Purview compliance portal](https://compliance.microsoft.com/homepage)||
+|Data loss prevention||See [Microsoft Purview compliance portal](https://compliance.microsoft.com/homepage)||
+|Records management||See [Microsoft Purview compliance portal](https://compliance.microsoft.com/homepage)||
+|Information governance||See [Microsoft Purview compliance portal](https://compliance.microsoft.com/homepage)||
 |Threat management|[Email & Collaboration](https://security.microsoft.com/homepage)|||
-|Permissions|[Permissions & roles](https://security.microsoft.com/emailandcollabpermissions)|See [Microsoft 365 compliance center](https://compliance.microsoft.com/homepage)||
+|Permissions|[Permissions & roles](https://security.microsoft.com/emailandcollabpermissions)|See [Microsoft Purview compliance portal](https://compliance.microsoft.com/homepage)||
 |Mail flow|||See [Exchange admin center](https://admin.exchange.microsoft.com/#/)|
-|Data privacy||See [Microsoft 365 compliance center](https://compliance.microsoft.com/homepage)||
+|Data privacy||See [Microsoft Purview compliance portal](https://compliance.microsoft.com/homepage)||
 |Search|[Audit](https://security.microsoft.com/auditlogsearch?viewid=Async%20Search)|Search (content search)||
 |Reports|[Report](https://security.microsoft.com/emailandcollabreport)|||
-|Service assurance||See [Microsoft 365 compliance center](https://compliance.microsoft.com/homepage)||
-|Supervision||See [Microsoft 365 compliance center](https://compliance.microsoft.com/homepage)||
-|eDiscovery||See [Microsoft 365 compliance center](https://compliance.microsoft.com/homepage)||
+|Service assurance||See [Microsoft Purview compliance portal](https://compliance.microsoft.com/homepage)||
+|Supervision||See [Microsoft Purview compliance portal](https://compliance.microsoft.com/homepage)||
+|eDiscovery||See [Microsoft Purview compliance portal](https://compliance.microsoft.com/homepage)||
 |||||
 
 [Microsoft 365 Defender](./microsoft-365-defender.md) at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"><https://security.microsoft.com></a> combines security capabilities from existing Microsoft security portals, including the Security & Compliance Center. This improved center helps security teams protect their organization from threats more effectively and efficiently.
@@ -59,7 +59,7 @@ If you are familiar with the Security & Compliance Center (protection.office.com
 
 Learn more about the benefits: [Overview of Microsoft 365 Defender](microsoft-365-defender.md)
 
-If you are looking for compliance-related items, visit the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>.
+If you are looking for compliance-related items, visit the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>.
 
 ## New and improved capabilities
 

@@ -31,7 +31,7 @@ For example, you can understand the activity of every user licensed to use Micro
 ## How to get to the Dynamics 365 Customer Voice activity report
 
 1. In the admin center, go to the **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> page. 
-2. From the dashboard homepage, click on the **View more** button on the Dynamics 365 Customer Voice card.
+2. From the dashboard homepage, click on the **View more** button on the Dynamics 365 Customer Voice card.
   
 ## Interpret the Dynamics 365 Customer Voice activity report
 

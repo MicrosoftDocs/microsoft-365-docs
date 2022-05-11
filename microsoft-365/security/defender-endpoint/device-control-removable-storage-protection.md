@@ -77,7 +77,7 @@ Device control removable storage protection in Microsoft Defender for Endpoint p
 
 **Capabilities** - Audit, warn, or prevent a user from copying an item or information to removable media or USB device.
 
-**Description** - For more information on Windows, see [Learn about Microsoft 365 Endpoint data loss prevention](../../compliance/endpoint-dlp-learn-about.md).
+**Description** - For more information on Windows, see [Learn about Endpoint data loss prevention](../../compliance/endpoint-dlp-learn-about.md).
 
 **Supported Platform** - Windows 10, Windows 11
 

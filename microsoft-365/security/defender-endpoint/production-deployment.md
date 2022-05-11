@@ -156,7 +156,7 @@ Use netsh to configure a system-wide static proxy.
 
 ### Proxy Configuration for down-level devices
 
-Down-Level devices include Windows 7 SP1 and Windows 8.1 workstations as well as Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, and versions of Windows Server 2016 prior to Windows Server CB 1803. These operating systems will have the proxy configured as part of the Microsoft Management Agent to handle communication from the endpoint to Azure. Refer to the Microsoft Management Agent Fast Deployment Guide for information on how a proxy is configured on these devices.
+Down-Level devices include Windows 7 SP1 and Windows 8.1 workstations as well as Windows Server 2008 R2, and other server operating systems that have been onboarded previously using the Microsoft Monitoring Agent. These operating systems will have the proxy configured as part of the Microsoft Management Agent to handle communication from the endpoint to Azure. Refer to the Microsoft Management Agent Fast Deployment Guide for information on how a proxy is configured on these devices.
 
 ### Proxy Service URLs
 

@@ -46,7 +46,7 @@ Follow these steps to rename an entity extractor.
 
 5. Select **Rename**.
 
-## See Also
+## See also
 [Create an extractor](create-an-extractor.md)
 
 [Create a classifier](create-a-classifier.md)

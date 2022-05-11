@@ -1,6 +1,6 @@
 ---
 title: Use DMARC to validate email, setup steps
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: tracyp
 author: MSFTTracyP
@@ -9,10 +9,10 @@ audience: ITPro
 ms.topic: article
 ms.date: 05/10/2021
 ms.localizationpriority: high
-search.appverid: 
+search.appverid:
   - MET150
 ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
-ms.collection: 
+ms.collection:
   - M365-security-compliance
   - m365initiative-defender-office365
 description: Learn how to configure Domain-based Message Authentication, Reporting, and Conformance (DMARC) to validate messages sent from your organization.
@@ -184,7 +184,6 @@ In this example DMARC TXT record: `dmarc.microsoft.com.   3600    IN      TXT   
 
 > [!TIP]
 > Visit the [MISA catalog](https://www.microsoft.com/misapartnercatalog) to view more third-party vendors offering DMARC reporting for Microsoft 365. See [IETF.org's 'Domain-based Message Authentication, Reporting, and Conformance (DMARC)'](https://datatracker.ietf.org/doc/html/rfc7489) for more information on DMARC 'rua' addresses.
-
 
 ## Best practices for implementing DMARC in Microsoft 365
 

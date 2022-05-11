@@ -21,6 +21,8 @@ ms.custom: seo-marvel-apr2020
 
 # Test an exact data match sensitive information type
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 After your exact data match (EDM) sensitive information type (SIT) has been created and an hour after verifying that your sensitive information table has finished uploading and indexing, you can test that it detects the information you want to detect by using the test function in the sensitive information types section in the Compliance center.
  
 >[!NOTE:]
@@ -49,7 +51,7 @@ Test-DataClassification  -ClassificationNames â€œ[Your EDM sensitive info type]â
 
 To force re-crawling of existing content in a SharePoint site or library or in OneDrive, follow the instructions in [Manually request crawling and reindexing of a site, a library or a list](/sharepoint/crawl-site-content).
 
-## Test your EDM SIT in MIP policies
+## Test your EDM SIT with information protection policies
 
 You can see where your EDM SIT is being used and how accurate it is in production by using them in policies:
 
@@ -61,7 +63,7 @@ You can see where your EDM SIT is being used and how accurate it is in productio
 
 1. Tune your policies as appropriate. 
 
-Once you're satisfied with the results of your testing and tuning, your EDM based custom SIT is ready for use in Information Protection policies, like:
+Once you're satisfied with the results of your testing and tuning, your EDM based custom SIT is ready for use in information protection policies, like:
 
 - [DLP policies](create-test-tune-dlp-policy.md#create-test-and-tune-a-dlp-policy)
 - [Auto-labeling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)

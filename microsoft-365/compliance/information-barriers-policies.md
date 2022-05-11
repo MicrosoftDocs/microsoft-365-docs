@@ -1,6 +1,7 @@
 ---
 title: "Get started with information barriers"
-description: Learn how to get started with information barriers.
+description: Learn how to get started with information barriers in Microsoft Purview.
+keywords: Microsoft 365, Microsoft Purview, compliance, information barriers
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -19,7 +20,9 @@ ms.custom: seo-marvel-apr2020
 
 # Get started with information barriers
 
-With information barriers, you can define policies that are designed to prevent certain segments of users from communicating with each other or allow specific segments to communicate only with certain other segments. Information barrier policies can help your organization maintain compliance with relevant industry standards and regulations, and avoid potential conflicts of interest. For more information, see [Learn about information barriers](information-barriers.md).
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+With Microsoft Purview Information Barriers, you can define policies that are designed to prevent certain segments of users from communicating with each other or allow specific segments to communicate only with certain other segments. Information barrier policies can help your organization maintain compliance with relevant industry standards and regulations, and avoid potential conflicts of interest. For more information, see [Learn about information barriers](information-barriers.md).
 
 This article describes how to configure information barrier policies. Several steps are involved, so make sure you review entire process before you begin configuring information barrier policies.
 
@@ -31,7 +34,7 @@ This article describes how to configure information barrier policies. Several st
 When you define policies for information barriers, you'll work with user account attributes, segments, 'block' and/or 'allow' policies, and policy application.
 
 - User account attributes are defined in Azure Active Directory (or Exchange Online). These attributes can include department, job title, location, team name, and other job profile details.
-- Segments are sets of users that are defined in the Microsoft 365 compliance center using a selected **user account attribute**. (See the [list of supported attributes](information-barriers-attributes.md).)
+- Segments are sets of users that are defined in the Microsoft Purview compliance portal using a selected **user account attribute**. (See the [list of supported attributes](information-barriers-attributes.md).)
 - Information barrier policies determine communication limits or restrictions. When you define information barrier policies, you choose from two kinds of policies:
   - *Block* policies prevent one segment from communicating with another segment.
   - *Allow* policies allow one segment to communicate with only certain other segments.
@@ -41,7 +44,7 @@ When you define policies for information barriers, you'll work with user account
 
 | **Steps** | **What's involved** |
 |:------|:----------------|
-| **Step 1**: [Make sure prerequisites are met](#step-1-make-sure-prerequisites-are-met) | - Verify that you have the [required licenses and permissions](information-barriers.md#required-licenses-and-permissions)<br/>- Verify that your directory includes data for segmenting users<br/>- Enable scoped directory search for Microsoft Teams<br/>- Make sure audit logging is turned on<br/>- Make sure no Exchange address book policies are in place<br/>- Use PowerShell (examples are provided)<br/>- Provide admin consent for Microsoft Teams (steps are included) |
+| **Step 1**: [Make sure prerequisites are met](#step-1-make-sure-prerequisites-are-met) | - Verify that you have the [required licenses and permissions](information-barriers.md#required-licenses-and-permissions)<br/>- Verify that your directory includes data for segmenting users<br/>- Enable [search by name for Microsoft Teams](/microsoftteams/teams-scoped-directory-search)<br/>- Make sure audit logging is turned on<br/>- Make sure no Exchange address book policies are in place<br/>- Use PowerShell (examples are provided)<br/>- Provide admin consent for Microsoft Teams (steps are included) |
 | **Step 2**: [Segment users in your organization](#step-2-segment-users-in-your-organization) | - Determine what policies are needed<br/>- Make a list of segments to define<br/>- Identify which attributes to use<br/>- Define segments in terms of policy filters |
 | **Step 3**: [Define information barrier policies](#step-3-define-information-barrier-policies) | - Define your policies (do not apply yet)<br/>- Choose from two kinds (block or allow) |
 | **Step 4**: [Apply information barrier policies](#step-4-apply-information-barrier-policies) | - Set policies to active status<br/>- Run the policy application<br/>- View policy status |
@@ -85,7 +88,7 @@ In addition to the [required licenses and permissions](information-barriers.md#r
 
    1. When prompted, sign in using your work or school account for Office 365.
 
-   1. In the **Permissions requested** dialog box, review the information, and then choose **Accept**. The permissions requested by the App is given below.
+   1. In the **Permissions requested** dialog box, review the information, and then choose **Accept**. The permissions requested by the App are given below.
 
       > [!div class="mx-imgBorder"]
       > ![image.](https://user-images.githubusercontent.com/8932063/107690955-b1772300-6c5f-11eb-9527-4235de860b27.png)
@@ -257,8 +260,6 @@ With PowerShell, you can view status of user accounts, segments, policies, and p
 | The most recent information barrier policy application | Use the **Get-InformationBarrierPoliciesApplicationStatus** cmdlet. <p> Syntax: `Get-InformationBarrierPoliciesApplicationStatus`<p> This cmdlet will display information about whether policy application completed, failed, or is in progress. |
 | All information barrier policy applications|Use `Get-InformationBarrierPoliciesApplicationStatus -All`<p> This cmdlet  will display information about whether policy application completed, failed, or is in progress.|
 
-<!-- IN the " The most recent information barrier policy application, add link to troubleshooting topic -->
-
 ### What if I need to remove or change policies?
 
 Resources are available to help you manage your information barrier policies.
@@ -283,7 +284,7 @@ The following IB modes are supported on Microsoft 365 resources:
 | **Mode** | **Description** | **Example** |
 |:-----|:------------|:--------|
 | **Open** | There aren't any IB policies or segments associated with the Microsoft 365 resource. Anyone can be invited to be a member of the resource. | A team site created for picnic event for your organization. |
-| **Owner Moderated (preview)** | The IB policy of the Microsoft 365 resource is determined from the resource owner's IB policy. The resource owners can invite any user to the resource based on their IB policies. This mode is useful when your company wants to allow collaboration among incompatible segment users that are moderated by the owner. Only the resource owner can add new members per their IB policy. | The VP of the HR want to collaborate with the VPs of Sales and Research. A new SharePoint site that is set with IB mode *Owner Moderated* to add both Sales and Research segment users to the same site. It is the responsibility of the owner to ensure appropriate members are added to the resource. |
+| **Owner Moderated (preview)** | The IB policy of the Microsoft 365 resource is determined from the resource owner's IB policy. The resource owners can invite any user to the resource based on their IB policies. This mode is useful when your company wants to allow collaboration among incompatible segment users that are moderated by the owner. Only the resource owner can add new members per their IB policy. | The VP of HR wants to collaborate with the VPs of Sales and Research. A new SharePoint site that is set with IB mode *Owner Moderated* to add both Sales and Research segment users to the same site. It is the responsibility of the owner to ensure appropriate members are added to the resource. |
 | **Implicit** | The IB policy or segments of the Microsoft 365 resource is inherited from the resource members IB policy. The owner can add members as long as they are compatible with the existing members of the resource. This is the default IB mode for Microsoft Teams. | The Sales segment user creates a Microsoft Teams team to collaborate with other compatible segments in the organization. |
 | **Explicit** | The IB policy of the Microsoft 365 resource is per the segments associated with the resource. The resource owner or SharePoint administrator has the ability to manage the segments on the resource.  | A site created only for Sales segment members to collaborate by associating the Sales segment with the site.   |
 

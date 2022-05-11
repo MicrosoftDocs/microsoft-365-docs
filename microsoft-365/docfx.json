@@ -94,7 +94,7 @@
         "lighthouse/**/*.md": false
         },
       "titleSuffix": {
-        "compliance/**/*.md": "Microsoft 365 Compliance",
+        "compliance/**/*.md": "Microsoft Purview",
         "security/mtp/**/*.md": "Microsoft 365 security",
         "security/office-365-security/**/*.md": "Office 365",
         "managed-desktop/**/*.md": "Microsoft Managed Desktop",
