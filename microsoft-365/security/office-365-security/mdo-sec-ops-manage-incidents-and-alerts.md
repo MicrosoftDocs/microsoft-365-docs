@@ -1,6 +1,6 @@
 ---
 title:  Manage incidents and alerts from Defender for Office 365 in Microsoft 365 Defender
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: chrisda
 author: chrisda
@@ -10,17 +10,16 @@ ms.date:
 ms.topic: conceptual
 
 ms.localizationpriority: medium
-search.appverid: 
+search.appverid:
   - MET150
   - MOE150
-ms.collection: 
+ms.collection:
   - M365-security-compliance
 ms.custom:
-description: SecOps personnel can learn how to use the Incidents queue in Microsoft 365 Defender to manage incidents in Microsoft Defender for Office 365. 
+description: SecOps personnel can learn how to use the Incidents queue in Microsoft 365 Defender to manage incidents in Microsoft Defender for Office 365.
 ms.technology: mdo
 ms.prod: m365-security
 ---
-
 
 # Manage incidents and alerts from Microsoft Defender for Office 365 in Microsoft 365 Defender
 

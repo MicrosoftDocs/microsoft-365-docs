@@ -59,7 +59,7 @@ After you set up device protection in Microsoft 365 Business, follow these steps
 
     On the top of the page, choose **Get started**.
 
-4. On the **Secure your Windows 10 computers** pane, select the options you want to turn on. 
+4. On the **Secure your Windows 10 computers** pane, select the options you want to turn on. For more information about the settings, see [Secure Windows devices](../../business-premium/m365bp-secure-windows-devices.md) (article). 
     
     For most organizations, the options here offer a good level of security, however, if your organization has more complex security needs, you can also use pre-defined security baselines to secure  your Windows 10 devices. For more information, see [security baselines for Windows 10 devices](/mem/intune/protect/security-baselines).   
 

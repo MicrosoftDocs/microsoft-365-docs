@@ -23,6 +23,8 @@ description: "Declare records by using retention labels."
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 To declare documents and emails as [records](records-management.md#records), you use [retention labels](retention.md#retention-labels) that mark the content as a **record** or a **regulatory record**.
 
 If you're not sure whether to use a record or a regulatory record, see [Compare restrictions for what actions are allowed or blocked](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked). If you need to use regulatory records, you must first run a PowerShell command, as described in the next section.
@@ -50,11 +52,7 @@ If you change your mind about seeing this option in the retention label wizard, 
 
 ## Configuring retention labels to declare records
 
-When you create a retention label from the **Records Management** solution in the Microsoft 365 compliance center, you can select the option **Mark items as a record**. Then, as an additional option that's currently rolling out in preview, unlock the record by default for SharePoint and OneDrive.
-
-The additional option of **Unlock this record by default** effectively lets users declare records themselves because they lock the record when they have finished editing the content. For more information about this supported scenario, see [Use record versioning to update records stored in SharePoint or OneDrive](record-versioning.md).
-
-If you ran the PowerShell command from the previous section, you can alternatively mark items as a regulatory record.
+When you create a retention label from the **Records Management** solution in the Microsoft Purview compliance portal, you have the option to mark items as a record. If you ran the PowerShell command from the previous section, you can alternatively mark items as a regulatory record.
 
 For example:
 
@@ -64,7 +62,7 @@ Using this retention label, you can now apply it to SharePoint or OneDrive docum
 
 For full instructions:
 
-- [Create retention labels and apply them in apps](create-apply-retention-labels.md)
+- [Publish retention labels and apply them in apps](create-apply-retention-labels.md)
 
 - [Apply a retention label to content automatically](apply-retention-labels-automatically.md) (not supported for regulatory records)
 
@@ -72,7 +70,7 @@ For full instructions:
 
 If you'll use retention labels to declare items as records (rather than regulatory records) in SharePoint and OneDrive, consider whether you need to change the default tenant setting that allows users to edit the properties for a [locked record](record-versioning.md) when files are larger than 0 bytes.
 
-To change this default, go to the [Microsoft 365 compliance center](https://compliance.microsoft.com/) > **Records management** > **Records management settings** > **Retention labels** > **Allow editing of record properties** and then turn off the setting **Allow users to edit record properties**.
+To change this default, go to the [Microsoft Purview compliance portal](https://compliance.microsoft.com/) > **Records management** > **Records management settings** > **Retention labels** > **Allow editing of record properties** and then turn off the setting **Allow users to edit record properties**.
 
 ## Applying the configured retention label to content
 

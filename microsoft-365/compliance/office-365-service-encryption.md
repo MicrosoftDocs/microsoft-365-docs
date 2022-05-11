@@ -1,5 +1,5 @@
 ---
-title: "Service Encryption"
+title: "Service encryption"
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -17,6 +17,8 @@ description: "Summary: Understand data resiliency in Microsoft Office 365."
 ---
 
 # Service Encryption
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 In addition to using volume-level encryption, Exchange Online, Microsoft Teams, SharePoint Online, and OneDrive for Business also use Service Encryption to encrypt customer data. Service Encryption allows for two key management options:
 

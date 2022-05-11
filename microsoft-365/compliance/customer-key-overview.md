@@ -1,5 +1,5 @@
 ---
-title: "Service encryption with Customer Key"
+title: "Service encryption with Microsoft Purview Customer Key"
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -14,12 +14,14 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 ms.custom: seo-marvel-apr2020
-description: "In this article, you will learn about how service encryption works with Customer Key in Microsoft 365."
+description: "In this article, you will learn about how service encryption works with Microsoft Purview Customer Key."
 ---
 
-# Service encryption with Customer Key
+# Service encryption with Microsoft Purview Customer Key
 
-Microsoft 365 provides baseline, volume-level encryption enabled through BitLocker and Distributed Key Manager (DKM). Microsoft 365 offers an added layer of encryption for your content. This content includes data from Exchange Online, Skype for Business, SharePoint Online, OneDrive for Business, and Microsoft Teams.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Microsoft 365 provides baseline, volume-level encryption enabled through BitLocker and Distributed Key Manager (DKM). Microsoft 365 offers an added layer of encryption for your content. This content includes data from Exchange Online, Skype for Business, SharePoint Online, OneDrive for Business, and Microsoft Teams.
 
 ## How service encryption, BitLocker, and Customer Key work together
 
@@ -35,7 +37,7 @@ Customer Key only encrypts data at rest in the cloud. Customer Key does not work
 
 ## About data encryption policies
 
-A data encryption policy (DEP) defines the encryption hierarchy. This hierarchy is used by the service to encrypt data using each of the keys you manage and the availability key that's protected by Microsoft. You create DEPs using PowerShell cmdlets, and then assign those DEPs to encrypt application data. There are three types of DEPs supported by Microsoft 365 Customer Key, each policy type uses different cmdlets and provides coverage for a different type of data. The DEPs you can define include:
+A data encryption policy (DEP) defines the encryption hierarchy. This hierarchy is used by the service to encrypt data using each of the keys you manage and the availability key that's protected by Microsoft. You create DEPs using PowerShell cmdlets, and then assign those DEPs to encrypt application data. There are three types of DEPs supported by Customer Key, each policy type uses different cmdlets and provides coverage for a different type of data. The DEPs you can define include:
 
 **DEP for multiple Microsoft 365 workloads** These DEPs encrypt data across multiple M365 workloads for all users within the tenant. These workloads include:
 
@@ -47,7 +49,8 @@ A data encryption policy (DEP) defines the encryption hierarchy. This hierarchy 
 - Teams status messages
 - User and signal information for Exchange Online
 - Exchange Online mailboxes that aren't already encrypted by mailbox DEPs
-- Microsoft Information Protection:
+- Unified audit log storage
+- Microsoft Purview Information Protection:
 
   - Exact data match (EDM) data, including data file schemas, rule packages, and the salts used to hash the sensitive data. For EDM and Microsoft Teams, the multi-workload DEP encrypts new data from the time you assign the DEP to the tenant. For Exchange Online, Customer Key encrypts all existing and new data.
 

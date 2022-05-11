@@ -38,7 +38,7 @@ Creating a form processing model involves the following steps:
 
 You can only create a form processing model in SharePoint document libraries for which it's enabled. If form processing is enabled, you're able to see the **Automate** > **AI Builder** > **Create a model to process forms** menu in your document library. If you need processing enabled on your document library, you must contact your SharePoint administrator.
 
- ![Screenshot showing the AI Builder model.](../media/content-understanding/create-ai-builder-model2.png)
+![Screenshot showing the AI Builder model.](../media/content-understanding/create-ai-builder-model2.png)
 
 ## Step 1: Create a form processing model
 
@@ -109,11 +109,9 @@ You need to tag the documents to teach the model to understand the fields and ta
 
 2. After the model is published, select **Use model**, and then select **Create flow**. This creates a Power Automate flow that can run in your SharePoint document library and that extracts the fields that have been identified in the model.
 
-    ![Screenshot in AI Builder showing the Create a flow panel.](../media/content-understanding/ai-builder-create-a-flow.png)
+    ![Screenshot in AI Builder showing the Create a flow panel.](../media/content-understanding/ai-builder-create-a-flow-1.png)
  
 3. When completed, you'll see the message: *Your flow was successfully created*.
-
-    ![Screenshot in AI Builder showing flow was successfully created.](../media/content-understanding/ai-builder-flow-created.png)
 
 4. Select the **Go to SharePoint** button to see the document library updated with your model.
 
@@ -165,7 +163,7 @@ To run the flow:
 
     ![Screenshot showing the Create a flow panel and flow option highlighted.](../media/content-understanding/integrate-create-flow.png) 
 
-## See Also
+## See also
   
 [Power Automate documentation](/power-automate/)
 

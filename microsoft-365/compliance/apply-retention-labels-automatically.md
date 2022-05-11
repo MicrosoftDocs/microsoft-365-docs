@@ -1,5 +1,5 @@
 ---
-title: "Automatically apply a retention label to retain or delete content"
+title: "Automatically apply a retention label"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -22,6 +22,8 @@ description: Create auto-labeling retention policies so you can automatically ap
 # Automatically apply a retention label to retain or delete content
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!NOTE]
 > This scenario is not supported for [regulatory records](records-management.md#records) or default labels for an organizing structure such as a document set or library in SharePoint, or a folder in Exchange. These scenarios require a [published retention label policy](create-apply-retention-labels.md).
@@ -58,7 +60,7 @@ Use the following instructions for the two admin steps.
 
 ## Before you begin
 
-The global admin for your organization has full permissions to create and edit retention labels and their policies. If you aren't signing in as a global admin, see the permissions information for [records management](get-started-with-records-management.md#permissions) or [information governance](get-started-with-information-governance.md#permissions-for-retention-policies-and-retention-labels), depending on the solution you're using.
+The global admin for your organization has full permissions to create and edit retention labels and their policies. If you aren't signing in as a global admin, see the permissions information for [records management](get-started-with-records-management.md#permissions) or [data lifeycle management](get-started-with-data-lifecycle-management.md#permissions-for-retention-policies-and-retention-labels), depending on the solution you're using.
 
 Make sure you have [created the retention labels](file-plan-manager.md#create-retention-labels) you want to apply to items.
 
@@ -68,13 +70,13 @@ Decide before you create your retention label policy whether it will be **adapti
 
 When you create an auto-apply policy, you select a retention label to automatically apply to content, based on the conditions that you specify.
 
-1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com/), navigate to one of the following locations:
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), navigate to one of the following locations:
     
     - If you are using records management:
         - **Solutions** > **Records management** > > **Label policies** tab > **Auto-apply a label**
     
-    - If you are using information governance:
-        - **Solutions** > **Information governance** > **Label policies** tab > **Auto-apply a label**
+    - If you are using data lifeycle management:
+        - **Solutions** > **Data lifeycle management** > **Label policies** tab > **Auto-apply a label**
     
     Don't immediately see your solution in the navigation pane? First select **Show all**.
 
@@ -142,7 +144,7 @@ Additionally, SharePoint items that are in draft or that have never been publish
 > 
 > Although group mailboxes would usually be included by selecting the **Microsoft 365 Groups** location, for this specific policy configuration, the groups location includes only SharePoint sites connected to a Microsoft 365 group.
 
-When you create auto-apply retention label policies for sensitive information, you see the same list of policy templates as when you create a data loss prevention (DLP) policy. Each template is preconfigured to look for specific types of sensitive information. In the following example, the sensitive info types are from the **Privacy** category, and **U.S Personally Identifiable Information (PII) Data** template:
+When you create auto-apply retention label policies for sensitive information, you see the same list of policy templates as when you create a Microsoft Purview Data Loss Prevention (DLP) policy. Each template is preconfigured to look for specific types of sensitive information. In the following example, the sensitive info types are from the **Privacy** category, and **U.S Personally Identifiable Information (PII) Data** template:
 
 ![Policy templates with sensitive information types.](../media/sensitive-info-configuration.png)
 
@@ -272,7 +274,7 @@ When you choose the option for a trainable classifier, you can select one or mor
 > [!CAUTION]
 > We are deprecating the **Offensive Language** pre-trained classifier because it has been producing a high number of false positives. Don't use this classifier and if you are currently using it, we recommend you move your business processes off it and instead use the **Targeted Harassment**, **Profanity**, and **Threat** pre-trained classifiers.
 
-To automatically apply a label by using this option, SharePoint sites and mailboxes must have at least 10 MB of data.
+To automatically apply a label by using this option, SharePoint sites, as well as mailboxes, must have at least 10 MB of data.
 
 For more information about trainable classifiers, see [Learn about trainable classifiers](classifier-learn-about.md).
 
@@ -336,7 +338,7 @@ When you auto-apply retention labels based on sensitive information, keywords or
   
 ![Diagram of when auto-apply labels take effect.](../media/retention-labels-autoapply-timings.png)
 
-If the expected labels don't appear after seven days, check the **Status** of the auto-apply policy by selecting it from the **Label policies** page in the compliance center. If you see the status of **Off (Error)** and in the details for the locations see a message that it's taking longer than expected to deploy the policy (for SharePoint) or to try redeploying the policy (for OneDrive), try running the [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell command to retry the policy distribution:
+If the expected labels don't appear after seven days, check the **Status** of the auto-apply policy by selecting it from the **Label policies** page in the Microsoft Purview compliance portal. If you see the status of **Off (Error)** and in the details for the locations see a message that it's taking longer than expected to deploy the policy (for SharePoint) or to try redeploying the policy (for OneDrive), try running the [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell command to retry the policy distribution:
 
 1. [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
 

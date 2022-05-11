@@ -1,5 +1,5 @@
 ---
-title: "Customize an archive and deletion policy (MRM) for mailboxes in your organization"
+title: "Customize an archive and deletion policy (MRM) for mailboxes"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -27,7 +27,9 @@ description: "How to create a custom Messaging Records Management (MRM) archivin
 
 # Customize an archive and deletion policy for mailboxes in your organization
 
-Microsoft 365 compliance admins can create an archiving and deletion policy that automatically moves items to a user's [archive mailbox](archive-mailboxes.md) and automatically deletes items from the mailbox.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Microsoft Purview admins can create an archiving and deletion policy that automatically moves items to a user's [archive mailbox](archive-mailboxes.md) and automatically deletes items from the mailbox.
 
 You do this by by creating a Messaging Records Management (MRM) retention policy that's assigned to mailboxes, and moves items to a user's archive mailbox after a certain period of time and that also deletes items from the mailbox after they reach a certain age limit. 
 
@@ -64,11 +66,11 @@ The first step is to enable the archive mailbox for each user in your organizati
 > [!NOTE]
 > You can enable archive mailboxes any time during this process, just as long as they're enabled at some point before you complete the process. If an archive mailbox isn't enabled, no action is taken on any items that have an archive or deletion policy assigned to it.
   
-1. Go to <https://compliance.microsoft.com>.
+1. Go to the [Microsoft Purview compliance portal](https://compliance.microsoft.com).
 
 2. Sign in using your global administrator account.
     
-3. In the Microsoft 365 compliance center, click **Information governance**, and then click the **Archive** tab.
+3. In the Microsoft Purview compliance portal, select **Data lifecycle management**, and then click the **Archive** tab.
 
     A list of the mailboxes in your organization is displayed and whether the corresponding archive mailbox is enabled or disabled.
 

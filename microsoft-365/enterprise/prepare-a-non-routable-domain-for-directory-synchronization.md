@@ -2,7 +2,7 @@
 title: "Prepare a non-routable domain for directory synchronization"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration

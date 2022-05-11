@@ -63,7 +63,6 @@ There are good reasons for senders to wind up on the blocked senders list, but m
 
     :::image type="content" source="../../media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png" alt-text="The email received when you submit a request through the delist portal" lightbox="../../media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png":::
 
-
 4. Click the confirmation link in the email sent to you by the delisting portal.
 
     This brings you back to the delist portal.

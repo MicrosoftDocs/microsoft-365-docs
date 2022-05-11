@@ -1,5 +1,5 @@
 ---
-title: "Mitigate threats with Microsoft Defender Antivirus"
+title: "Mitigate threats in Microsoft 365 Lighthouse with Microsoft Defender Antivirus"
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -18,7 +18,7 @@ search.appverid: MET150
 description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn about the mitigate threats with Microsoft Defender Antivirus."
 ---
 
-# Mitigate threats with Microsoft Defender Antivirus
+# Mitigate threats in Microsoft 365 Lighthouse with Microsoft Defender Antivirus
 
 Microsoft 365 Lighthouse lets partners investigate and mitigate threats across all your tenants. You can also initiate antivirus scans on devices, make sure devices are getting the latest updates for Microsoft Defender Antivirus, and review pending actions following antivirus scans. Lighthouse only supports devices running Windows 10 or later.
 
@@ -125,7 +125,7 @@ You can also restart multiple devices by selecting the checkbox next to each dev
 ## Related content
 
 [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) (article)\
-[Threat management page overview](m365-lighthouse-threat-management-page-overview.md) (article)\
+[Overview of the Threat management page in Microsoft 365 Lighthouse](m365-lighthouse-threat-management-page-overview.md) (article)\
 [Create a compliance policy in Microsoft Intune](/mem/intune/protect/create-compliance-policy) (article)\
 [Turn on Microsoft Defender Antivirus](/mem/intune/user-help/turn-on-defender-windows) (article)\
 [Microsoft Security Intelligence](https://www.microsoft.com/wdsi/threats) (web page)

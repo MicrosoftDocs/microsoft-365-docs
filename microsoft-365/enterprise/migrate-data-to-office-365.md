@@ -2,7 +2,7 @@
 title: "Migrate your organization data to Microsoft 365 Enterprise"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration

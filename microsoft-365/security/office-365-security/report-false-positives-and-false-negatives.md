@@ -55,7 +55,6 @@ Run the following PowerShell command to disable the built-in reporting experienc
 Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -ReportJunkEmailEnabled $false
 ```
 
-
 ## Use the Report Message feature
 
 ### Report junk and phishing messages

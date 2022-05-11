@@ -33,7 +33,7 @@ Use these steps:
     > [!IMPORTANT]
     > If this is the first time you're using Basic Mobility and Security for Microsoft 365 Business Standard, activate it here: [Activate Basic Security and Mobility](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx). After you've activated it, manage your devices with [Office 365 Security & Compliance](https://protection.office.com/).
 
-3. Go to Data loss prevention > **Device management** > **Device policies**, and select **Manage organization-wide device access settings**.
+3. Go to **Data loss prevention** > **Device management** > **Device policies**, and select **Manage organization-wide device access settings**.
 
 4. Select **Block**.
 

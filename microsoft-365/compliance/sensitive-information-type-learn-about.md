@@ -20,7 +20,9 @@ description: "This article gives an overview of sensitive information types and 
 
 # Learn about sensitive information types
 
-Identifying and classifying sensitive items that are under your organizations control is the first step in the [Information Protection discipline](./information-protection.md).  Microsoft 365 provides three ways of identifying items so that they can be classified:
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Identifying and classifying sensitive items that are under your organizations control is the first step in the [Information Protection discipline](./information-protection.md).  Microsoft Purview provides three ways of identifying items so that they can be classified:
 
 - manually by users
 - automated pattern recognition, like sensitive information types
@@ -32,7 +34,7 @@ Microsoft provides a large number of pre-configured SITs or you can create your 
 
 ## Sensitive information types are used in
 
-- [Data loss prevention policies](dlp-learn-about-dlp.md)
+- [Microsoft Purview Data Loss Prevention policies](dlp-learn-about-dlp.md)
 - [Sensitivity labels](sensitivity-labels.md)
 - [Retention labels](retention.md)
 - [Insider risk management](insider-risk-management.md)
@@ -48,7 +50,7 @@ These SITs are created by Microsoft show up in the compliance console by default
 
 ### Named entity sensitive information types
 
-Named entity SITs also show up in the compliance console by default. They detect person names, physical addresses, and medical terms and conditions. They cannot be edited or copied. See, [Learn about named entities (preview)](named-entities-learn.md#learn-about-named-entities-preview) for more information. Named entity SITs come in two types:
+Named entity SITs also show up in the compliance console by default. They detect person names, physical addresses, and medical terms and conditions. They cannot be edited or copied. See, [Learn about named entities ](named-entities-learn.md#learn-about-named-entities) for more information. Named entity SITs come in two types:
 
 **un-bundled**
 
@@ -167,9 +169,8 @@ You can choose from several options to create custom sensitive information types
 - **Use PowerShell** - You can set up custom sensitive information types using PowerShell. Although this method is more complex than using the UI, you have more configuration options. See [Create a custom sensitive information type in Security & Compliance Center PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md).
 
 > [!NOTE]
-> Improved confidence levels are available for immediate use within Data Loss Prevention for Microsoft 365 services, Microsoft Information Protection for Microsoft 365 services, Communication Compliance, Information Governance, and Records Management.
-> Microsoft 365 Information Protection now  supports double byte character set languages for:
->
+> Improved confidence levels are available for immediate use within Microsoft Purview data loss prevention services, information protection, Communication Compliance, data lifecycle management, and records management.
+> Information Protection now supports double byte character set languages for:
 > - Chinese (simplified)
 > - Chinese (traditional)
 > - Korean

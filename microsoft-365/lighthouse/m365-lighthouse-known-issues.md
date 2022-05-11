@@ -86,5 +86,5 @@ Currently, DAP is required to onboard customers to Lighthouse. We recommend also
 ## Related content
 
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)\
-[Troubleshoot and resolve problems and error messages in Microsoft 365 Lighthouse](m365-lighthouse-troubleshoot.md) (article)\
+[Troubleshoot error messages and problems in Microsoft 365 Lighthouse](m365-lighthouse-troubleshoot.md) (article)\
 [Get help and support for Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md) (article)

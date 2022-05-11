@@ -1,5 +1,5 @@
 ---
-title: "Set your scheduling policies"
+title: "Set Bookings scheduling policies"
 ms.author: kwekua
 author: kwekuako
 manager: scotv

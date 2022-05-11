@@ -101,6 +101,7 @@
 ###### [Configure and validate exclusions](mac-exclusions.md)
 ###### [Set preferences](mac-preferences.md)
 ###### [Detect and block Potentially Unwanted Applications](mac-pua.md)
+###### [Protect macOS security settings using tamper protection](tamperprotection-macos.md)
 ###### [Device control]()
 ####### [Device control overview](mac-device-control-overview.md)
 ####### [JAMF examples](mac-device-control-jamf.md)
@@ -251,7 +252,8 @@
 ##### [Event timeline](threat-and-vuln-mgt-event-timeline.md)
 ##### [Vulnerable devices report](tvm-vulnerable-devices-report.md)
 ##### [Hunt for exposed devices](tvm-hunt-exposed-devices.md)
-
+#### [Guidance for active threats and campaigns]()
+##### [Manage the Log4Shell vulnerability](tvm-manage-log4shell-guidance.md)
 ### [Device discovery]()
 #### [Device discovery overview](device-discovery.md)
 #### [Configure device discovery](configure-device-discovery.md)

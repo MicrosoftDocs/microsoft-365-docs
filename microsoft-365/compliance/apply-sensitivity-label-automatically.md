@@ -1,5 +1,5 @@
 ---
-title: "Automatically apply a sensitivity label to content in Microsoft 365"
+title: "Automatically apply a sensitivity label in Microsoft 365"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -23,8 +23,10 @@ description: "When you create a sensitivity label, you can automatically assign 
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-> [!NOTE]
-> For information about automatically applying a sensitivity label in Azure Purview, see [Labeling in Azure Purview](/azure/purview/create-sensitivity-label).
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+> [!TIP]
+> For information about automatically applying a sensitivity label in the data map, see [Labeling in Microsoft Purview Data Map](/azure/purview/create-sensitivity-label).
 
 When you create a sensitivity label, you can automatically assign that label to files and emails when it matches conditions that you specify.
 
@@ -65,9 +67,9 @@ There are two different methods for automatically applying a sensitivity label t
     Specific to auto-labeling for Exchange:
     
     - Unlike manual labeling or auto-labeling with Office apps, PDF attachments as well as Office attachments are also scanned for the conditions you specify in your auto-labeling policy. When there's a match, the email is labeled but not the attachment.
-        - For PDF files, if the label applies encryption, these files are encrypted by using [Office 365 Message Encryption (OME)](ome.md) when your tenant is [enabled for PDF attachments](ome-faq.yml#are-pdf-file-attachments-supported-).
-        - For these Office files, Word, PowerPoint, and Excel are supported. If the label applies encryption, they're encrypted by using [Office 365 Message Encryption (OME)](ome.md).
-    - If you have Exchange mail flow rules or data loss prevention (DLP) policies that apply IRM encryption: When content is identified by these rules or policies and an auto-labeling policy, the label is applied. If that label applies encryption, the IRM settings from the Exchange mail flow rules or DLP policies are ignored. However, if that label doesn't apply encryption, the IRM settings from the mail flow rules or DLP policies are applied in addition to the label.
+        - For PDF files, if the label applies encryption, these files are encrypted by using [Message encryption](ome.md) when your tenant is [enabled for PDF attachments](ome-faq.yml#are-pdf-file-attachments-supported-).
+        - For these Office files, Word, PowerPoint, and Excel are supported. If the label applies encryption, they're encrypted by using [Message encryption](ome.md).
+    - If you have Exchange mail flow rules or Microsoft Purview Data Loss Prevention (DLP) policies that apply IRM encryption: When content is identified by these rules or policies and an auto-labeling policy, the label is applied. If that label applies encryption, the IRM settings from the Exchange mail flow rules or DLP policies are ignored. However, if that label doesn't apply encryption, the IRM settings from the mail flow rules or DLP policies are applied in addition to the label.
     - Email that has IRM encryption with no label will be replaced by a label with any encryption settings when there's a match by using auto-labeling.
     - Incoming email is labeled when there is a match with your auto-labeling conditions. If this label is configured for [encryption](encryption-sensitivity-labels.md), that encryption is always applied when the sender is from your organization. By default, that encryption isn't applied when the sender is outside your organization but can be applied by configuring **Additional settings for email** and specifying a Rights Management owner.
     - When the label applies encryption, the [Rights Management issuer and Rights Management owner](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) is the person who sends the email when the sender is from your own organization. When the sender is outside your organization, you can specify a Rights Management owner for incoming email that's labeled and encrypted by your policy.
@@ -93,7 +95,7 @@ Use the following table to help you identify the differences in behavior for the
 |Assign a Rights Management owner for emails sent from another organization |No |Yes|
 |For emails, replace existing label that has same or lower priority |No |Yes (configurable)|
 
-\* Auto-labeling isn't currently available in all regions because of a backend Azure dependency. If your tenant can't support this functionality, the **Auto-labeling** tab isn't visible in the compliance center. For more information, see [Azure dependency availability by country](/troubleshoot/azure/general/dependency-availability-by-country).
+\* Auto-labeling isn't currently available in all regions because of a backend Azure dependency. If your tenant can't support this functionality, the **Auto-labeling** tab isn't visible in the Microsoft Purview compliance portal. For more information, see [Azure dependency availability by country](/troubleshoot/azure/general/dependency-availability-by-country).
 
 ## How multiple conditions are evaluated when they apply to more than one label
 
@@ -119,7 +121,7 @@ Default behavior whether automatic labeling will override an existing label:
 - Automatic labeling will replace a [lower priority sensitivity label](sensitivity-labels.md#label-priority-order-matters) that was automatically applied, but not a higher priority label.
     
     > [!TIP]
-    > For example, the sensitivity label at the top of the list in the compliance center is named **Public** with an order number (priority) of 0, and the sensitivity label at the bottom of the list is named **Highly Confidential** with an order number (priority of 4). The **Highly Confidential** label can override the **Public** label but not the other way around.
+    > For example, the sensitivity label at the top of the list in the Microsoft Purview compliance portal is named **Public** with an order number (priority) of 0, and the sensitivity label at the bottom of the list is named **Highly Confidential** with an order number (priority of 4). The **Highly Confidential** label can override the **Public** label but not the other way around.
 
 For email auto-labeling policies only, you can select a setting to always override an existing sensitivity label, regardless of how it was applied.
 
@@ -273,7 +275,7 @@ Finally, you can use simulation mode to provide an approximation of the time nee
 
 ### Creating an auto-labeling policy
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>, navigate to sensitivity labels:
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>, navigate to sensitivity labels:
 
     - **Solutions** > **Information protection**
 

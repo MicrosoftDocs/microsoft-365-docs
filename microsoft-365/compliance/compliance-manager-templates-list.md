@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Compliance Manager templates list"
+title: "Microsoft Purview Compliance Manager templates list"
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -16,19 +16,21 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "Microsoft Compliance Manager provides templates for building assessments that align to national, regional, and industry regulations, standards, and laws."
+description: "Microsoft Purview Compliance Manager provides templates for building assessments that align to national, regional, and industry regulations, standards, and laws."
 ---
 
 # Compliance Manager templates list
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 **In this article:** View the comprehensive list of **templates** available for creating assessments in Compliance Manager.
 
 > [!IMPORTANT]
-> The assessment templates that are available to your organization depend on your licensing agreement. [Review details](compliance-manager-templates.md#template-availability-and-licensing).
+> The assessment templates that are available to your organization depend on your licensing agreement. [Review the details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
 
 ## Overview
 
-[Microsoft Compliance Manager](compliance-manager.md) provides a comprehensive set of templates for creating assessments. These templates can help your organization comply with national, regional, and industry-specific requirements governing the collection and use of data.
+[Microsoft Purview Compliance Manager](compliance-manager.md) provides a comprehensive set of templates for creating assessments. These templates can help your organization comply with national, regional, and industry-specific requirements governing the collection and use of data.
 
 Templates are added to Compliance Manager as new laws and regulations are enacted. Compliance Manager also updates its templates when the underlying laws or regulations change. Learn more about how to [review and accept updates](compliance-manager-assessments.md#accept-updates-to-assessments).
 
