@@ -624,6 +624,20 @@
                 href: sit-defn-india-unique-identification-number.md
               - name: India Voter Id Card
                 href: sit-defn-india-voter-id-card.md
+              - name: Indonesia identity card (KTP) number
+                href: sit-defn-indonesia-identity-card-number.md
+              - name: International banking account number (IBAN)
+                href: sit-defn-international-banking-account-number.md
+              - name: International classification of diseases (ICD-10-CM)
+                href: sit-defn-international-classification-of-diseases-icd-10-cm.md
+              - name: International classification of diseases (ICD-9-CM)
+                href: sit-defn-international-classification-of-diseases-icd-9-cm.md
+              - name: IP address
+                href: sit-defn-ip-address.md
+              - name: IP address v4
+                href: sit-defn-ip-address-v4.md
+              - name: IP address v6
+                href: sit-defn-ip-address-v6.md
           - name: Sensitive information type functions
             href: sit-functions.md
           - name: Custom sensitive information type filters reference
