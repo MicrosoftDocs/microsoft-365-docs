@@ -247,7 +247,7 @@ You can continue to add new services, apps, and policies to extend and augment y
 
 This configuration will help ensure your data remains safe while also avoiding unnecessary restrictions that prevent or restrict users from accessing and sharing non-sensitive items.
 
-## Scenario 6 Monitor or restrict user activities on sensitive service domains
+## Scenario 6 Monitor or restrict user activities on sensitive service domains (preview)
 
 
 
