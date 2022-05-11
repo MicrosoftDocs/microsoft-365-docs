@@ -36,7 +36,7 @@ IB policies can allow or prevent communication and collaboration between groups 
 - A SharePoint site for *Day Trader* group shouldn't be shared or accessed by anyone outside of the *Day Trader* group
 
 > [!IMPORTANT]
-> Information barriers **only supports** two-way communication and collaboration restrictions. For example, a scenario where Marketing can communicate and collaborate with Day Traders, but Day Traders cannot communicate and collaborate with Marketing **isn't supported*.
+> Information barriers **only supports** two-way communication and collaboration restrictions. For example, a scenario where Marketing can communicate and collaborate with Day Traders, but Day Traders cannot communicate and collaborate with Marketing **isn't supported**.
 
 ## Information barriers and Microsoft Teams
 
