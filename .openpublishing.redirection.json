@@ -7436,6 +7436,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt.md",
+      "redirect_url": "/microsoft-365/security/defender-vulnerability-management/defender-vulnerability-management",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/compliance/terms-conditions.md",
       "redirect_url": "/legal/microsoft-365/microsoft-365-trial",
       "redirect_document_id": false
