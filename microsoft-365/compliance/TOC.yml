@@ -596,6 +596,36 @@
                 href: sit-defn-greece-social-security-number.md
               - name: Greece tax identification number
                 href: sit-defn-greece-tax-identification-number.md
+              - name: Hong Kong identity card (HKID) number
+                href: sit-defn-hong-kong-identity-card-number.md
+              - name: Hungary drivers license number
+                href: sit-defn-hungary-drivers-license-number.md
+              - name: Hungary passport number
+                href: sit-defn-hungary-passport-number.md
+              - name: Hungary personal identification number
+                href: sit-defn-hungary-personal-identification-number.md
+              - name: Hungary physical addresses
+                href: sit-defn-hungary-physical-addresses.md
+              - name: Hungary social security number (TAJ)
+                href: sit-defn-hungary-social-security-number.md
+              - name: Hungary tax identification number
+                href: sit-defn-hungary-tax-identification-number.md
+              - name: Hungary value added tax number
+                href: sit-defn-hungary-value-added-tax-number.md
+              - name: Iceland physical addresses
+                href: sit-defn-iceland-physical-addresses.md
+              - name: Impairments Listed In The U.S. Disability Evaluation Under Social Security
+                href: sit-defn-impairments-us-disability-evaluation-under-social-security.md
+              - name: India Drivers License Number
+                href: sit-defn-india-drivers-license-number.md
+              - name: India GST Number
+                href: sit-defn-india-gst-number.md
+              - name: India permanent account number (PAN)
+                href: sit-defn-india-permanent-account-number.md
+              - name: India unique identification (Aadhaar) number
+                href: sit-defn-india-unique-identification-number.md
+              - name: India Voter Id Card
+                href: sit-defn-india-voter-id-card.md
           - name: Sensitive information type functions
             href: sit-functions.md
           - name: Custom sensitive information type filters reference

@@ -34,7 +34,7 @@ These entities are in the EU Social Security Number or equivalent identification
 - [France](sit-defn-france-social-security-number.md)
 - [Germany](sit-defn-germany-identity-card-number.md)
 - [Greece](sit-defn-greece-national-id-card.md)
-- [Hungary](#hungary-social-security-number-taj)
+- [Hungary](sit-defn-hungary-social-security-number.md)
 - [Portugal](#portugal-citizen-card-number)
 - [Spain](#spain-social-security-number-ssn)
 - [Sweden](#sweden-national-id)

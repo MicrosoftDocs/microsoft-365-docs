@@ -37,7 +37,7 @@ These entities are in the EU passport number and are sensitive information types
 - [France](sit-defn-france-passport-number.md)
 - [Germany](sit-defn-germany-passport-number.md)
 - [Greece](sit-defn-greece-passport-number.md)
-- [Hungary](#hungary-passport-number)
+- [Hungary](sit-defn-hungary-passport-number.md)
 - [Ireland](#ireland-passport-number)
 - [Italy](#italy-passport-number)
 - [Latvia](#latvia-passport-number)
