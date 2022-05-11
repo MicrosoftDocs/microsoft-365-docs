@@ -133,7 +133,7 @@ The temporary or permanent loss of root encryption keys can be disruptive or eve
 ### Contact the corresponding Microsoft alias to proceed with the process
 
 >[!NOTE]
-> Before contacting the corresponding Microsoft alias, verify that you have complete your FastTrack requests for M365 Customer Key.
+> Before contacting the corresponding Microsoft alias, verify that you have complete your FastTrack requests for M365 Customer Key. 
 
 - For enabling Customer Key for assigning DEP to individual Exchange Online mailboxes, contact [exock@microsoft.com](mailto:exock@microsoft.com).
 
