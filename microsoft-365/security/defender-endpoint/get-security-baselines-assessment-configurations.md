@@ -16,7 +16,7 @@ ms.topic: article
 ms.technology: mde
 ms.custom: api
 ---
- 
+
 # List security baselines assessment configurations
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -36,11 +36,11 @@ This API retrieves a list of all the possible security baselines assessment conf
 
 ### 1.1 Parameters
 
-- Supports OData V4 queries.
+- Supports OData V4 queries
 - OData supported operators:
-  - $filter on :  id,  category,  name, CCE
-  - $top with max value of 10,000.  
-  - $skip.
+  - `$filter` on:  `id`,  `category`,  `name`, `CCE`
+  - `$top` with max value of 10,000
+  - `$skip`
 
 ### 1.2 HTTP request
 
@@ -66,9 +66,9 @@ If successful, this method returns 200 OK with the list of baseline configuratio
 |name | String | The configuration name at it appears in the benchmark.
 |description | String | The configuration description as it appears in the benchmark.
 |category | String | The configuration  category as it appears in the benchmark.
-|complianceLevel|String|TThe compliance level of the benchmark where this configuration appears.
-|cce|Int|The CCE for this configuration  as it appears in the benchmark.
-|rationale |String|The rationale for this configuration as it appears in the benchmark. For STIG benchmark this is not supplied.
+|complianceLevel|String|The compliance level of the benchmark where this configuration appears.
+|`cce`|Int|The CCE for this configuration as it appears in the benchmark.
+|rationale |String|The rationale for this configuration as it appears in the benchmark. For STIG benchmark this isn't supplied for this configuration.
 
 ## 1.6 Example
 
