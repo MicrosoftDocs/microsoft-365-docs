@@ -184,7 +184,7 @@ The following impersonation settings are only available in anti-phishing policie
 - **Enable domains to protect**: Prevents the specified domains from being impersonated **in the message sender's domain**. For example, all domains that you own ([accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) or specific custom domains (domains you own or partner domains). This list of **sender domains** that are protected from impersonation is different from the list of **recipients** that the policy applies to (all recipients for the default policy; specific recipients as configured in the **Users, groups, and domains** setting in the [Common policy settings](#common-policy-settings) section).
 
   > [!NOTE]
-  > The maximum number of protected domains that you can define in all anti-phishing policies is 50.
+  > The maximum number of protected domains that you can specify as a custom domain is 50 per anti-phishing policy.
 
   By default, no sender domains are configured for impersonation protection in **Enable domains to protect**. Therefore, by default, no sender domains are covered by impersonation protection, either in the default policy or in custom policies.
 
