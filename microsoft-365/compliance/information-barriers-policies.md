@@ -24,7 +24,7 @@ ms.custom: seo-marvel-apr2020
 
 This article describes how to configure information barrier (IB) policies in your organization. Several steps are involved, so make sure you review the entire process before you begin configuring IB policies.
 
-You must be familiar with [PowerShell cmdlets](/powershell/exchange/scc-powershell) in order to define, validate, or edit IB policies. Although we provide several examples of PowerShell cmdlets in the this article, you'll need to know other details (such as parameter values) for your organization.
+You must be familiar with [PowerShell cmdlets](/powershell/exchange/scc-powershell) in order to define, validate, or edit IB policies. Although we provide several examples of PowerShell cmdlets in this article, you'll need to know other details (such as parameter values) for your organization.
 
 For more information about IB scenarios and features, see [Learn about information barriers](information-barriers.md).
 
@@ -58,7 +58,7 @@ When you define policies for IB, you'll work with several objects and concepts.
 
 - **User account attributes** are defined in Azure Active Directory (or Exchange Online). These attributes can include department, job title, location, team name, and other job profile details.
 - **Segments** are sets of users that are defined in the Microsoft Purview compliance portal using a selected **user account attribute**. See the list of [IB supported attributes](information-barriers-attributes.md) for details.
-- **Visibility of non-IB users and groups**. Non-IB users and groups are users and groups excluded from IB segments and policies. Depending on the type of IB policies (block or allow), the behavior for these users and group will differ in Microsoft Teams, SharePoint, OneDrive, and in your global address list. For users defined in *allow* polices, non-IB groups and users will not be visible to users included in IB segments and policies. For users defined in *block* policies, non-IB groups and users will be visible to users included in IB segments and policies.
+- **Visibility of non-IB users and groups**. Non-IB users and groups are users and groups excluded from IB segments and policies. Depending on the type of IB policies (block or allow), the behavior for these users and group will differ in Microsoft Teams, SharePoint, OneDrive, and in your global address list. For users defined in *allow* policies, non-IB groups and users won't be visible to users included in IB segments and policies. For users defined in *block* policies, non-IB groups and users will be visible to users included in IB segments and policies.
 - **Group support**. Only Modern Groups are currently supported in IB and Distribution Lists/Security Groups are treated as non-IB groups.
 - **Hidden/disabled user accounts**. For hidden/disabled accounts in your organization, the *HiddenFromAddressListEnabled* parameter is automatically set to *True* when the users accounts are hidden or disabled. In IB-enabled organizations, these accounts are prevented from communicating with all other user accounts. In Microsoft Teams, all chats including these accounts are locked or the users are automatically removed from conversations.
 - **IB policies** determine communication limits or restrictions. When you define information barrier policies, you choose from two kinds of policies:
@@ -68,7 +68,7 @@ When you define policies for IB, you'll work with several objects and concepts.
     > [!NOTE]
     > For **allow** policies, non-IB groups and users will not be visible to users included in IB segments and policies. If you need non-IB groups and users to be visible to users included in IB segments and policies, you must use **block** policies.
 
-- *Policy application* is done after all IB policies are defined, and you are ready to apply them in your organization.
+- *Policy application* is done after all IB policies are defined, and you're ready to apply them in your organization.
 
 ## Configuration at a glance
 
@@ -76,7 +76,7 @@ When you define policies for IB, you'll work with several objects and concepts.
 |:------|:----------------|
 | **Step 1**: [Make sure prerequisites are met](#step-1-make-sure-prerequisites-are-met) | - Verify that you have the required subscriptions and permissions <br/>- Verify that your directory includes data for segmenting users<br/>- Enable [search by name for Microsoft Teams](/microsoftteams/teams-scoped-directory-search)<br/>- Make sure audit logging is turned on<br/>- Make sure no Exchange address book policies are in place<br/>- Use PowerShell (examples are provided)<br/>- Provide admin consent for Microsoft Teams (steps are included) |
 | **Step 2**: [Segment users in your organization](#step-2-segment-users-in-your-organization) | - Determine what policies are needed<br/>- Make a list of segments to define<br/>- Identify which attributes to use<br/>- Define segments in terms of policy filters |
-| **Step 3**: [Define information barrier policies](#step-3-define-information-barrier-policies) | - Define your policies (do not apply yet)<br/>- Choose from two kinds (block or allow) |
+| **Step 3**: [Define information barrier policies](#step-3-define-information-barrier-policies) | - Define your policies (don't apply yet)<br/>- Choose from two kinds (block or allow) |
 | **Step 4**: [Apply information barrier policies](#step-4-apply-information-barrier-policies) | - Set policies to active status<br/>- Run the policy application<br/>- View policy status |
 | **Step 5**: [Configuration for information barriers on SharePoint and OneDrive (optional)](#step-5-configuration-for-information-barriers-on-sharepoint-and-onedrive) | - Configure IB for SharePoint and OneDrive |
 | **Step 6**: [Information barriers modes (optional)](#step-6-information-barriers-modes) | - Update IB modes if applicable |
@@ -94,9 +94,9 @@ In addition to the required subscriptions and permissions, make sure that the fo
 
 - **Verify audit logging is enabled**: In order to look up the status of an IB policy application, audit logging must be turned on. Auditing is enabled for Microsoft 365 organizations by default. Some organizations may have disabled auditing for specific reasons. If auditing is disabled for your organization, it might be because another administrator has turned it off. We recommend confirming that it's OK to turn auditing back on when completing this step. For more information, see [Turn the audit log search on or off](turn-audit-log-search-on-or-off.md).
 
-- **Remove existing Exchange Online address book policies**: Before you define and apply IB policies, you must remove all existing Exchange Online address book policies in your organization. IB policies are based on address book policies and existing ABPs policies are not compatible with the ABPs created by IB. To remove your existing address book policies, see [Remove an address book policy in Exchange Online](/exchange/address-books/address-book-policies/remove-an-address-book-policy). For more information about IB policies and Exchange Online, see [Information barriers and Exchange Online](information-barriers.md#information-barriers-and-exchange-online).
+- **Remove existing Exchange Online address book policies**: Before you define and apply IB policies, you must remove all existing Exchange Online address book policies in your organization. IB policies are based on address book policies and existing ABPs policies aren't compatible with the ABPs created by IB. To remove your existing address book policies, see [Remove an address book policy in Exchange Online](/exchange/address-books/address-book-policies/remove-an-address-book-policy). For more information about IB policies and Exchange Online, see [Information barriers and Exchange Online](information-barriers.md#information-barriers-and-exchange-online).
 
-- **Manage using PowerShell**: Currently, IB policies are defined and managed in Security & Compliance Center PowerShell. Although several examples are provided in this article, you'll need to be familiar with PowerShell cmdlets and parameters. You will also need the Azure Active Directory PowerShell module.
+- **Manage using PowerShell**: Currently, IB policies are defined and managed in Security & Compliance Center PowerShell. Although several examples are provided in this article, you'll need to be familiar with PowerShell cmdlets and parameters. You'll also need the Azure Active Directory PowerShell module.
   - [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell)
   - [Install Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2)
 
@@ -156,7 +156,7 @@ Determine which attributes in your organization's directory data you'll use to d
 
 ### Define segments using PowerShell
 
-The next task is to define segments for your organization. Defining segments does not affect users, it just sets the stage for IB policies to be defined and then applied.
+The next task is to define segments for your organization. Defining segments doesn't affect users, it just sets the stage for IB policies to be defined and then applied.
 
 1. Use the **New-OrganizationSegment** cmdlet with the **UserGroupFilter** parameter that corresponds to the [attribute](information-barriers-attributes.md) you want to use.
 
@@ -171,11 +171,11 @@ The next task is to define segments for your organization. Defining segments doe
     > [!IMPORTANT]
     > **Make sure that your segments do not overlap**. Each user who will be affected by IB policies should belong to one (and only one) segment. No user should belong to two or more segments. See [Example: Contoso's defined segments](#contosos-defined-segments) in this article for an example scenario.
 
-After you have defined your segments, proceed to [Step 3: Define information barrier policies](#step-3-define-information-barrier-policies).
+After you've defined your segments, proceed to [Step 3: Define information barrier policies](#step-3-define-information-barrier-policies).
 
 ### Using "equals" and "not equals" in segment definitions
 
-In the following example, we are defining a segment such that "Department equals HR." 
+In the following example, we're defining a segment such that "Department equals HR." 
 
 | Example | Note |
 |:----------|:-------|
@@ -185,13 +185,13 @@ You can also define segments using a "not equals" parameter, denoted as **-ne**,
 
 | Syntax | Example |
 |:---------|:----------|
-| `New-OrganizationSegment -Name "NotSales" -UserGroupFilter "Department -ne 'Sales'"` | In this example, we defined a segment called *NotSales* that includes everyone who is not in *Sales*. The **-ne** portion of the cmdlet refers to "not equals". |
+| `New-OrganizationSegment -Name "NotSales" -UserGroupFilter "Department -ne 'Sales'"` | In this example, we defined a segment called *NotSales* that includes everyone who isn't in *Sales*. The **-ne** portion of the cmdlet refers to "not equals". |
 
 In addition to defining segments using "equals" or "not equals", you can define a segment using both "equals" and "not equals" parameters. You can also define complex group filters using logical *AND* and *OR* operators.
 
 | Syntax | Example |
 |:---------|:----------|
-| `New-OrganizationSegment -Name "LocalFTE" -UserGroupFilter "Location -eq 'Local'" -and "Position -ne 'Temporary'"` | In this example, we defined a segment called *LocalFTE* that includes users who are located locally and whose positions are not listed as *Temporary*. |
+| `New-OrganizationSegment -Name "LocalFTE" -UserGroupFilter "Location -eq 'Local'" -and "Position -ne 'Temporary'"` | In this example, we defined a segment called *LocalFTE* that includes users who are located locally and whose positions aren't listed as *Temporary*. |
 | `New-OrganizationSegment -Name "Segment1" -UserGroupFilter "MemberOf -eq 'group1@contoso.com'' -and MemberOf -ne 'group3@contoso.com'"`| In this example, we defined a segment called *Segment1* that includes users who are members of group1@contoso.com and not members of group3@contoso.com. |
 | `New-OrganizationSegment -Name "Segment2" -UserGroupFilter "MemberOf -eq 'group2@contoso.com' -or MemberOf -ne 'group3@contoso.com'"` | In this example, we defined a segment called *Segment2* that includes users who are members of group2@contoso.com and not members of group3@contoso.com. |
 | `New-OrganizationSegment -Name "Segment1and2" -UserGroupFilter "(MemberOf -eq 'group1@contoso.com' -or MemberOf -eq 'group2@contoso.com') -and MemberOf -ne 'group3@contoso.com'"`| In this example, we defined a segment called *Segment1and2* that includes users in group1@contoso.com and group2@contoso.com and not members of group3@contoso.com. |
@@ -245,7 +245,7 @@ When you want to allow a segment to communicate with only one other segment, you
 
     | Syntax | Example |
     |:----------|:----------|
-    | `New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name","segment1name"` | `New-InformationBarrierPolicy -Name "Manufacturing-HR" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR","Manufacturing" -State Inactive` <p> In this example, we defined a policy called *Manufacturing-HR* for a segment called *Manufacturing*. When active and applied, this policy allows users in *Manufacturing* to communicate only with users in a segment called *HR*. In this case, *Manufacturing* cannot communicate with users who are not part of *HR*. |
+    | `New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name","segment1name"` | `New-InformationBarrierPolicy -Name "Manufacturing-HR" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR","Manufacturing" -State Inactive` <p> In this example, we defined a policy called *Manufacturing-HR* for a segment called *Manufacturing*. When active and applied, this policy allows users in *Manufacturing* to communicate only with users in a segment called *HR*. In this case, *Manufacturing* can't communicate with users who aren't part of *HR*. |
 
     **If needed, you can specify multiple segments with this cmdlet, as shown in the following example.**
 
@@ -262,7 +262,7 @@ When you want to allow a segment to communicate with only one other segment, you
 
 ## Step 4: Apply information barrier policies
 
-IB policies are not in effect until you set them to active status and apply the policies.
+IB policies aren't in effect until you set them to active status and apply the policies.
 
 1. Use the **Get-InformationBarrierPolicy** cmdlet to see a list of policies that have been defined. Note the status and identity (GUID) of each policy.
 
@@ -316,11 +316,11 @@ The following IB modes are supported on Microsoft 365 resources:
 | **Mode** | **Description** | **Example** |
 |:-----|:------------|:--------|
 | **Open** | There aren't any IB policies or segments associated with the Microsoft 365 resource. Anyone can be invited to be a member of the resource. | A team site created for picnic event for your organization. |
-| **Owner Moderated (preview)** | The IB policy of the Microsoft 365 resource is determined from the resource owner's IB policy. The resource owners can invite any user to the resource based on their IB policies. This mode is useful when your company wants to allow collaboration among incompatible segment users that are moderated by the owner. Only the resource owner can add new members per their IB policy. | The VP of HR wants to collaborate with the VPs of Sales and Research. A new SharePoint site that is set with IB mode *Owner Moderated* to add both Sales and Research segment users to the same site. It is the responsibility of the owner to ensure appropriate members are added to the resource. |
-| **Implicit** | The IB policy or segments of the Microsoft 365 resource is inherited from the resource members IB policy. The owner can add members as long as they are compatible with the existing members of the resource. This is the default IB mode for Microsoft Teams. | The Sales segment user creates a Microsoft Teams team to collaborate with other compatible segments in the organization. |
+| **Owner Moderated (preview)** | The IB policy of the Microsoft 365 resource is determined from the resource owner's IB policy. The resource owners can invite any user to the resource based on their IB policies. This mode is useful when your company wants to allow collaboration among incompatible segment users that are moderated by the owner. Only the resource owner can add new members per their IB policy. | The VP of HR wants to collaborate with the VPs of Sales and Research. A new SharePoint site that is set with IB mode *Owner Moderated* to add both Sales and Research segment users to the same site. It's the responsibility of the owner to ensure appropriate members are added to the resource. |
+| **Implicit** | The IB policy or segments of the Microsoft 365 resource is inherited from the resource members IB policy. The owner can add members as long as they're compatible with the existing members of the resource. This is the default IB mode for Microsoft Teams. | The Sales segment user creates a Microsoft Teams team to collaborate with other compatible segments in the organization. |
 | **Explicit** | The IB policy of the Microsoft 365 resource is per the segments associated with the resource. The resource owner or SharePoint administrator has the ability to manage the segments on the resource.  | A site created only for Sales segment members to collaborate by associating the Sales segment with the site.   |
 
-For more information about IB modes and how they are configured across services, see the following articles:
+For more information about IB modes and how they're configured across services, see the following articles:
 
 - [Information barriers modes and Microsoft Teams](/microsoftteams/information-barriers-in-teams)
 - [Information barriers modes and OneDrive](/onedrive/information-barriers)
@@ -332,9 +332,9 @@ To see how an organization might approach defining segments and policies, consid
 
 ### Contoso's departments and plan
 
-Contoso has five departments: *HR*, *Sales*, *Marketing*, *Research*, and *Manufacturing*. In order to remain compliant with industry regulations, users in some departments are not supposed to communicate with other departments, as listed in the following table:
+Contoso has five departments: *HR*, *Sales*, *Marketing*, *Research*, and *Manufacturing*. In order to remain compliant with industry regulations, users in some departments aren't supposed to communicate with other departments, as listed in the following table:
 
-| Segment | Can communicate with | Cannot communicate with |
+| Segment | Can communicate with | Can't communicate with |
 |:----------|:--------------|:-----------------|
 | HR | Everyone | (no restrictions) |
 | Sales | HR, Marketing, Manufacturing | Research |
@@ -372,7 +372,7 @@ Contoso defines three IB policies, as described in the following table:
 |:---------|:--------------------|
 | **Policy 1: Prevent Sales from communicating with Research** | `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p> In this example, the information barrier policy is called *Sales-Research*. When this policy is active and applied, it will help prevent users who are in the Sales segment from communicating with users in the Research segment. This policy is a one-way policy; it won't prevent Research from communicating with Sales. For that, Policy 2 is needed. |
 | **Policy 2: Prevent Research from communicating with Sales** | `New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive` <p> In this example, the information barrier policy is called *Research-Sales*. When this policy is active and applied, it will help prevent users who are in the Research segment from communicating with users in the Sales segment. |
-| **Policy 3: Allow Manufacturing to communicate with HR and Marketing only** | `New-InformationBarrierPolicy -Name "Manufacturing-HRMarketing" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR","Marketing","Manufacturing" -State Inactive` <p> In this case, the IB policy is called *Manufacturing-HRMarketing*. When this policy is active and applied, Manufacturing can communicate only with HR and Marketing. HR and Marketing are not restricted from communicating with other segments. |
+| **Policy 3: Allow Manufacturing to communicate with HR and Marketing only** | `New-InformationBarrierPolicy -Name "Manufacturing-HRMarketing" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR","Marketing","Manufacturing" -State Inactive` <p> In this case, the IB policy is called *Manufacturing-HRMarketing*. When this policy is active and applied, Manufacturing can communicate only with HR and Marketing. HR and Marketing aren't restricted from communicating with other segments. |
 
 With segments and policies defined, Contoso applies the policies by running the **Start-InformationBarrierPoliciesApplication** cmdlet.
 
