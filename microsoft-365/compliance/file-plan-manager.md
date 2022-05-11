@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: File plan provides advanced management capabilities for retention labels.
-ms.custom: seo-marvel-may2020
 ---
 
 # Use file plan to create and manage retention labels
@@ -47,9 +47,7 @@ To access file plan, you must have one of the following admin roles:
 
 - View-only Retention Manager
 
-In the Microsoft Purview compliance portal, go to **Solutions** > **Records management** > **File plan**:
-
-![File plan page](../media/compliance-file-plan.png). 
+In the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), go to **Solutions** > **Records management** > **File plan**.
 
 If **Records management** doesn't display in the navigation pane, first scroll down, and select **Show all**.
 
@@ -81,6 +79,9 @@ All columns except the label **Name** can be displayed or hidden by selecting th
 - **Is unlocked by default** —currently rolling out—identifies if the item marked as a record is unlocked when the label is applied. Valid values:
     - No
     - Yes
+
+- **Relabel to** —currently rolling out—identifies if the label is configured to apply another label at the end of the retention period. Valid values:
+    - Blank or the selected label name
 
 - **Retention duration** identifies the retention period. Valid values:
     - Days
@@ -148,9 +149,7 @@ However, it can take up to two days for content explorer to show the items that 
 
 From your file plan, you can export the details of all retention labels into a .csv file to help you facilitate periodic compliance reviews with data governance stakeholders in your organization.
 
-To export all retention labels: On the **File plan** page, click **Export**:
-
-![Option to export file plan.](../media/compliance-file-plan-export-labels.png)
+To export all retention labels: On the **File plan** page, click **Export**.
 
 A *.csv file that contains all existing retention labels opens. For example:
 
@@ -217,9 +216,11 @@ Use the following information to help you fill out the downloaded template to im
 
 Label settings not currently supported for import:
 
-- Multi-stage disposition review: Although you can configure the settings for a single disposition review stage when you import retention labels with a template, you can't specify additional review stages. Instead, configure these in the compliance center after the import succeeds.
+- Multi-stage disposition review: Although you can configure the settings for a single disposition review stage when you import retention labels with a template, you can't specify additional review stages. Instead, configure these in the compliance portal after the import succeeds.
 
-- Unlock this record by default (currently rolling out in preview): This setting isn't available in the template to import, and you can't select this setting in the compliance center after the import succeeds.
+- Unlock this record by default (currently rolling out in preview): This setting isn't available in the template to import, and you can't select this setting in the compliance portal after the import succeeds.
+
+- Replacement label (currently rolling out in preview): This setting isn't available in the template to import, but you can select this setting in the compliance portal after the import succeeds.
 
 
 ## Next steps
