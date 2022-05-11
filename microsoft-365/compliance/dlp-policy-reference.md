@@ -305,7 +305,10 @@ The available context options change depending on which location you choose. If 
 ##### Conditions Devices supports
 
 - Content contains
-- (preview) The user accessed a sensitive site from Edge
+- (preview) The user accessed a sensitive site from Edge.
+
+> [!NOTE]
+> To use **The user accesses a sensitive site from Edge** (preview) condition you must first list the sites [in a site group in endpoint DLP settings](dlp-configure-endpoint-settings.md#sensitive-service-domains-preview). Then select the [`Audit or restricted activities when users access sensitive sites in Microsoft Edge browser on Windows devices`](#devices-actions) action.   
 - File extension is
 - File type is
 - See, [Endpoint activities you can monitor and take action on](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on)
@@ -410,9 +413,11 @@ The actions that are available in a rule are dependent on the locations that hav
 
 - Restrict access or encrypt the content in Microsoft 365 locations
 - (preview) Audit or restricted activities when users acces sensitive sites in Microsoft Edge browser on Windows devices
+> [!NOTE]
+> This can be used for sites listed in [Sensitive service domains (preview)](dlp-configure-endpoint-settings.md#sensitive-service-domains-preview) and with the policy condition **The user accesses a sensitive site from Edge** (preview).
 - Audit or restrict activities on Windows devices
 
-To use these settings, you have to configure options in **DLP settings** and in the policy in which you want to use them. See, [Restricted apps and app groups](dlp-configure-endpoint-settings.md#restricted-apps-and-app-groups) for more information.
+To use these settings, you have to configure options in **DLP settings** and in the policy in which you want to use them. See, [Restricted apps and app groups](dlp-configure-endpoint-settings.md#restricted-apps-and-app-groups) for more information and [Sensitive service domains (preview)](dlp-configure-endpoint-settings.md#sensitive-service-domains-preview).
 
 The devices location provides many subactivities (conditions) and actions. To learn more, see [Endpoint activities you can monitor and take action on](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on).
 

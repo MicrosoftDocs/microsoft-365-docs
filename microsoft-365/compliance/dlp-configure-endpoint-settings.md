@@ -254,10 +254,13 @@ Wildcards aren't supported.
 
 #### Sensitive service domains (preview)
 
-When you add a site to a Sensitive services domains group of sites, you can monitor or restrict common activities that users take on sites. You can monitor (audit) or restrict (block with override, or block) when users access a site through Microsoft Edge and attempt to print from the site, copy data from the site, or save the site as local files. 
+Sensitive services domains enables you to audit, block with override, or block when users attempt to:
 
+- print from a site
+- copy data from a site
+- save a site as local files
 
-
+The site must be listed in a site group and the user must be accessing the site through Microsoft Edge. Sensitive service domains (preview) is used in conjunction with a DLP policy for Devices. See, [Conditions Devices supports](dlp-policy-reference.md#conditions-devices-supports) and actions [Devices actions](dlp-policy-reference.md#devices-actions) for more information.
 
 
 ### Additional settings for endpoint DLP
