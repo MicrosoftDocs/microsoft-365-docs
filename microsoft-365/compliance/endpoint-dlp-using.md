@@ -246,6 +246,11 @@ To use this restriction, you’ll need to configure three important pieces:
 You can continue to add new services, apps, and policies to extend and augment your restrictions to meet your business needs and protect sensitive data. 
 
 This configuration will help ensure your data remains safe while also avoiding unnecessary restrictions that prevent or restrict users from accessing and sharing non-sensitive items.
+
+## Scenario 6 Monitor or restrict user activities on sensitive service domains
+
+
+
 ## See also
 
 - [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md)
