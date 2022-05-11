@@ -181,9 +181,9 @@ To supress alerts, you need to:
 
 - Set rule conditions based on evidence types such as AMSI script, WMI event, and scheduled tasks. 
 
-- Set rule conditions when part of the detected evidence, parent process, and part of the triggering evidence subgroup properties are present. 
+- Set rule conditions when part of the detected evidence, parent process, or part of the triggering evidence subgroup properties are present. 
 
-- Set advanced conditions on multiple IOCs (indicators) using AND, OR, and grouping   options. IOCs are indicators such as files, processes, and evidence that trigger the alert. 
+- Set advanced conditions on multiple IOCs (indicators) using AND, OR, and grouping options. IOCs are indicators such as files, processes, and evidence that trigger the alert. 
 
 - Then apply the rule on the selected alert or any alert type that meets rule conditions.
 
@@ -191,7 +191,7 @@ To supress alerts, you need to:
 > Adding at least one IOC to the rule condition is required to suppress any alert type.
 
 > [!NOTE]
-> Suppression of alerts is not recommended. However in certain situations, there's an expected activity triggered by security tests or by a known internal business application and you don't want to see these alerts. So, you can create a suppression rule for the alert. 
+> Suppression of alerts is not recommended. However in certain situations, a known internal business application or security tests trigger an expected activity and you don't want to see these alerts. So, you can create a suppression rule for the alert. 
 
 To create a suppression rule for the alerts:
 
@@ -225,7 +225,7 @@ Use the **OR** operator to add another file name and its attributes. So, for eit
 6.	Define the **Scope** based on specific device, multiple selected devices, device groups, the entire organization or by user.
 
 > [!NOTE]
-> You must have Admin permission when the **Scope** is set only for **User**. Admin permission is not required when the Scope is set for **User** together with **Device**, **Device groups**.
+> You must have Admin permission when the **Scope** is set only for **User**. Admin permission is not required when the **Scope** is set for **User** together with **Device**, **Device groups**.
 
 7.	In the **Action** section, take the appropriate action of either **Hide alert** or **Resolve alert** and click **Save**.
 
