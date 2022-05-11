@@ -142,7 +142,7 @@ To obtain the tenant ID of a subscription, sign in to the [Microsoft 365 admin c
    ```powershell
 
    # Enable customization if tenant is dehydrated
-     $dehydrated=Get-OrganizationConfig | fl isdehydrated
+     $dehydrated=Get-OrganizationConfig | select isdehydrated
      if ($dehydrated -eq $true) {Enable-OrganizationCustomization}
 
    $AppId = "[guid copied from the migrations app]"
