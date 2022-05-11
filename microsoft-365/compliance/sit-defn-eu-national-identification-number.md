@@ -36,7 +36,7 @@ These entities are in the EU National Identification Number and are sensitive in
 - [Finland](sit-defn-finland-national-id.md)
 - [France](sit-defn-france-national-id-card.md)
 - [Germany](sit-defn-germany-identity-card-number.md)
-- [Greece](#greece-national-id-card)
+- [Greece](sit-defn-greece-national-id-card.md)
 - [Hungary](#hungary-personal-identification-number)
 - [Ireland](#ireland-personal-public-service-pps-number)
 - [Italy](#italy-fiscal-code)
