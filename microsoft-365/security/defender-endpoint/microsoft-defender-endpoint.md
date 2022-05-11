@@ -34,9 +34,9 @@ ms.technology: mde
 Microsoft Defender for Endpoint is an enterprise endpoint security platform designed to help enterprise networks prevent, detect, investigate, and respond to advanced threats.
 
 > [!TIP]
-> Microsoft Defender for Endpoint is available in two plans, Defender for Endpoint Plan 1 and Plan 2. A new Microsoft Defender Vulnerability Management Add-on is now available for Plan 2.
+> Microsoft Defender for Endpoint is available in two plans, Defender for Endpoint Plan 1 and Plan 2. A new Microsoft Defender Vulnerability Management add-on is now available for Plan 2.
 >
-> For more information on the features and capabilities included in each plan, including the new Defender Vulnerability Management Add-on, see [Compare Microsoft Defender for Endpoint plans](defender-endpoint-plan-1-2.md).
+> For more information on the features and capabilities included in each plan, including the new Defender Vulnerability Management add-on, see [Compare Microsoft Defender for Endpoint plans](defender-endpoint-plan-1-2.md).
 
 <p><p>
 
@@ -88,9 +88,9 @@ Defender for Endpoint uses the following combination of technology built into Wi
 
 **[Core Defender Vulnerability Management](../defender-vulnerability-management/defender-vulnerability-management.md)**
 
-Built-in core vulnerability management capabilities use a modern risk-based approach to the discovery, assessment, prioritization, and remediation of endpoint vulnerabilities and misconfigurations. To further enhance your ability to assess your security posture and reduce risk, a new Microsoft Defender Vulnerability Management Add-on for Plan 2 is available.
+Built-in core vulnerability management capabilities use a modern risk-based approach to the discovery, assessment, prioritization, and remediation of endpoint vulnerabilities and misconfigurations. To further enhance your ability to assess your security posture and reduce risk, a new Defender Vulnerability Management add-on for Plan 2 is available.
 
-For more information on the different vulnerability management capabilities available to you, see [Compare Microsoft Defender Vulnerability Management options](../defender-vulnerability-management/defender-vulnerability-management-capabilities.md).
+For more information on the different vulnerability management capabilities available to you, see [Compare Microsoft Defender Vulnerability Management offerings](../defender-vulnerability-management/defender-vulnerability-management-capabilities.md).
 
 <a name="asr"></a>
 
