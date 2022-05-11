@@ -7361,22 +7361,22 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/security/defender-endpoint/tvm-weaknesses.md",
+      "source_path": "microsoft-365/security/defender-endpoint/tvm-assign-device-value.md",
       "redirect_url": "/microsoft-365/security/defender-vulnerability-management/tvm-assign-device-value",
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/security/defender-endpoint/tvm-weaknesses.md",
+      "source_path": "microsoft-365/security/defender-endpoint/tvm-dashboard-insights.md",
       "redirect_url": "/microsoft-365/security/defender-vulnerability-management/tvm-dashboard-insights",
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/security/defender-endpoint/tvm-weaknesses.md",
+      "source_path": "microsoft-365/security/defender-endpoint/tvm-end-of-support-software.md",
       "redirect_url": "/microsoft-365/security/defender-vulnerability-management/tvm-end-of-support-software",
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/security/defender-endpoint/tvm-weaknesses.md",
+      "source_path": "microsoft-365/security/defender-endpoint/tvm-exception.md",
       "redirect_url": "/microsoft-365/security/defender-vulnerability-management/tvm-exception",
       "redirect_document_id": false
     },
