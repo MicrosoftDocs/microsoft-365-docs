@@ -2,6 +2,8 @@
       href: index.md
     - name: Microsoft OneLTI management
       href: manage-microsoft-one-lti.md
+    - name: Allow browser cookies for LMS URLs
+      href: browser-cookies.md
     - name: Canvas integrations
       items:
       - name: Use Microsoft OneDrive LTI with Canvas 

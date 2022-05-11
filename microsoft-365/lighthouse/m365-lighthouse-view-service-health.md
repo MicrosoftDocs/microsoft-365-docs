@@ -57,4 +57,5 @@ On the **Tenants affected** tab, you can export a list of affected tenants to a 
 ## Related content
 
 [How to check Microsoft 365 service health](/microsoft-365/enterprise/view-service-health) (article)\
-[Known issues with Microsoft 365 Lighthouse](m365-lighthouse-known-issues.md) (article)
+[Known issues with Microsoft 365 Lighthouse](m365-lighthouse-known-issues.md) (article)\
+[View your Azure Active Directory roles in Microsoft 365 Lighthouse](m365-lighthouse-view-your-roles.md) (article)
