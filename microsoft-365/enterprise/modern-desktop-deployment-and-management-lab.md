@@ -2,9 +2,10 @@
 title: Windows and Office 365 deployment lab kit
 f1.keywords:
 - NOCSH
-ms.author: greglin
-author: greg-lindsay
+ms.author: aaroncz
+author: cdmm12
 manager: dougeby
+ms.reviewer: alainme
 ms.date: 11/18/2021
 ms.audience: ITPro
 ms.topic: article
