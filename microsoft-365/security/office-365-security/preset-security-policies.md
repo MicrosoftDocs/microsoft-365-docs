@@ -167,6 +167,9 @@ For example, if a security setting exists in **Standard protection** and an admi
 
 5. On the **Add email addresses to flag when impersonated by attackers** page, add internal and external senders who are protected by [user impersonation protection](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
 
+   > [!NOTE]
+   > All recipients automatically receive impersonation protection from [mailbox intelligence](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) in preset security policies.
+
    Each entry consists of a display name and an email address. Enter each value in the boxes and then click **Add**. Repeat this step as many times as necessary.
 
    You can specify a maximum of 350 users, and you can't specify the same user in the user impersonation protection settings in multiple policies.
