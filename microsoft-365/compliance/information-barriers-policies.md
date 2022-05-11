@@ -22,7 +22,9 @@ ms.custom: seo-marvel-apr2020
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-This article describes how to configure information barrier (IB) policies in your organization. Several steps are involved, so make sure you review the entire process before you begin configuring IB policies. You must be familiar with [PowerShell cmdlets](/powershell/exchange/scc-powershell) in order to define, validate, or edit information barrier policies. Although we provide several examples of PowerShell cmdlets in the this article, you'll need to know other details (such as parameter values) for your organization.
+This article describes how to configure information barrier (IB) policies in your organization. Several steps are involved, so make sure you review the entire process before you begin configuring IB policies.
+
+You must be familiar with [PowerShell cmdlets](/powershell/exchange/scc-powershell) in order to define, validate, or edit information barrier policies. Although we provide several examples of PowerShell cmdlets in the this article, you'll need to know other details (such as parameter values) for your organization.
 
 For more information about IB scenarios and features, see [Learn about information barriers](information-barriers.md).
 
