@@ -78,7 +78,7 @@ Microsoft Defender for Endpoint troubleshooting mode allows you to troubleshoot 
 
 ## Prerequisites
 
-- A device running Windows 10 (version 19044.1618 and above), Windows 11, Windows Server 2019, or Windows Server 2022.
+- A device running Windows 10 (version 19044.1618 or later), Windows 11, Windows Server 2019, or Windows Server 2022.
 
   Semester/Redstone|OS version|Release
   :---|:---|:---
