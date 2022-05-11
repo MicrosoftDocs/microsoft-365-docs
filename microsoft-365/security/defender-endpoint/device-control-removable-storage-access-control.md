@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.date: 04/11/2022
+ms.date: 05/09/2022
 ---
 
 # Microsoft Defender for Endpoint Device Control Removable Storage Access Control
@@ -265,7 +265,7 @@ Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>) \> *
 
 5. Set the location for a copy of the file: if you want to have a copy of the file when Write access happens, you have to set the location where the system can save the copy.
 
-    - OMA-URI: `./Vendor/MSFT/Defender/Configuration/DataDuplicationRemoteLocation;**username**;**password**`
+    - OMA-URI: `./Vendor/MSFT/Defender/Configuration/DataDuplicationRemoteLocation
 
     - Data Type: String
 
