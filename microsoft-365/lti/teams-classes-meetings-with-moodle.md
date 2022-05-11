@@ -99,6 +99,9 @@ After registering Teams LTI apps, educators can add the Teams Classes app and th
 
 To launch the Teams LTI apps within Moodle, there are a few technical requirements that need to be met.
 
+> [!NOTE]
+> IT admins and educators can register OneLTI apps on the OneLTI portal.
+
 ### IT admin technical requirements
 
 - Moodle version 3.10 or 3.11.
@@ -110,9 +113,11 @@ To launch the Teams LTI apps within Moodle, there are a few technical requiremen
 
 ### Educator technical requirements
 
-- OneLTI Portal
-- Teams LTI apps for Classes and Meetings
+- OneLTI portal to register the OneLTI apps, if the IT admin hasn't registered the apps.
+  - Registration must be on completed on a desktop device.
+- Latest version of Microsoft Edge, Google Chrome Safari, or Mozilla Firefox browser.
+- [Teams LTI apps for Classes and Meetings in Moodle](#add-teams-lti-tools-to-educators-moodle-courses).
 
 ### Student technical requirements
 
-- Teams LTI apps for Classes and Meetings
+- [Teams LTI apps for Classes and Meetings in Moodle](#add-teams-lti-tools-to-educators-moodle-courses).
