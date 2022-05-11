@@ -34,7 +34,9 @@ Use the following graphic to help you identify the main configurable components 
 
 ![Main components to configure and use to govern your data with Microsoft Purview.](../media/govern-your-data.png)
 
-Looking to protect your data? See [Protect your data with Microsoft Purview](information-protection.md).
+The following sections detail the main capabilities for each solution, with links to understand more. However, if you're looking for a guided deployment, see [Deploy a data governance solution with Microsoft Purview](data-governance-solution.md).
+
+Looking for complementary capabilities to protect your data? See [Protect your data with Microsoft Purview](information-protection.md).
 
 ## Microsoft Purview Data Lifecycle Management
 
