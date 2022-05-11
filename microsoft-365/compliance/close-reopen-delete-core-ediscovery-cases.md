@@ -39,7 +39,7 @@ When the legal case or investigation supported by a eDiscovery (Standard) case i
 
 To close a case:
   
-1. In the compliance portal, click **eDiscovery** > **Core** to display the list of eDiscovery (Standard) cases in your organization.
+1. In the compliance portal, click **eDiscovery** > **eDiscovery (Standard)** to display the list of eDiscovery (Standard) cases in your organization.
 
 2. Click the name of the case that you want to close.
 
@@ -99,7 +99,7 @@ To delete an eDiscovery hold:
 
 To delete a case:
 
-1. In the compliance portal, click **eDiscovery** > **Core** to display the list of eDiscovery (Standard) cases in your organization.
+1. In the compliance portal, click **eDiscovery** > **eDiscovery (Standard)** to display the list of eDiscovery (Standard) cases in your organization.
 
 2. Click the name of the case that you want to delete.
 
