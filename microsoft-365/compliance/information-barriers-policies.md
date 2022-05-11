@@ -31,8 +31,6 @@ For more information about IB scenarios and features, see [Learn about informati
 
 ## Required subscriptions and permissions
 
-You must be familiar with PowerShell cmdlets in order to define, validate, or edit information barrier policies. Although we provide several examples of PowerShell cmdlets in the [how-to article](information-barriers-policies.md), you'll need to know other details, such as parameters, for your organization.
-
 Before you get started with IB, you should confirm your Microsoft 365 subscription and any add-ons. To access and use IB, your organization must have one of the following subscriptions or add-ons:
 
 - Microsoft 365 E5/A5 subscription (paid or trial version)
@@ -94,7 +92,7 @@ In addition to the required subscriptions and permissions, make sure that the fo
 
 - **Verify audit logging is enabled**: In order to look up the status of an IB policy application, audit logging must be turned on. Auditing is enabled for Microsoft 365 organizations by default. Some organizations may have disabled auditing for specific reasons. If auditing is disabled for your organization, it might be because another administrator has turned it off. We recommend confirming that it's OK to turn auditing back on when completing this step. For more information, see [Turn the audit log search on or off](turn-audit-log-search-on-or-off.md).
 
-- **Remove existing Exchange Online address book policies**: Before you define and apply IB policies, you must remove all existing Exchange Online address book policies in your organization. IB policies are based on address book policies and existing ABPs policies are not compatible with the ABPs created by IB. To remove your existing address book policies, see [Remove an address book policy in Exchange Online](/exchange/address-books/address-book-policies/remove-an-address-book-policy). For more information about IB policies and Exchange Online, see [Information barriers and Exchange Online](information-barriers.md#information-barriers-and-exchange-online)
+- **Remove existing Exchange Online address book policies**: Before you define and apply IB policies, you must remove all existing Exchange Online address book policies in your organization. IB policies are based on address book policies and existing ABPs policies are not compatible with the ABPs created by IB. To remove your existing address book policies, see [Remove an address book policy in Exchange Online](/exchange/address-books/address-book-policies/remove-an-address-book-policy). For more information about IB policies and Exchange Online, see [Information barriers and Exchange Online](information-barriers.md#information-barriers-and-exchange-online).
 
 - **Manage using PowerShell**: Currently, IB policies are defined and managed in Security & Compliance Center PowerShell. Although several examples are provided in this article, you'll need to be familiar with PowerShell cmdlets and parameters. You will also need the Azure Active Directory PowerShell module.
   - [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell)
