@@ -203,4 +203,4 @@ In the **Edit policy** pane, choose **Edit** next to **Protection against lost o
 
 ## See also
 
-[Top 10 ways to secure Microsoft 365 for business plans](../security-and-compliance/secure-your-business-data.md)
+[Best practices for securing Microsoft 365 for business plans](../security-and-compliance/secure-your-business-data.md)
