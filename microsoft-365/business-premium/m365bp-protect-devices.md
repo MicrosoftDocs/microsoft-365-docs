@@ -28,7 +28,7 @@ description: "An overview for how to set up and secure managed devices from secu
 
 # Set up and secure managed devices
 
-Welcome to your final critical mission. Here, you will onboard and implement protection for all the managed devices in your organization. Onboard with Defender to ensure malware and antivirus is always up-to-date, and set policies that help lock down your systems. Rest assured, you've done what you can to be protected once these objectives have been achieved!
+Welcome to your final critical mission. Here, you will onboard and implement protection for all the managed devices in your organization. You'll want to onboard with Defender to ensure malware and antivirus is always up-to-date, and set policies that help lock down your systems. Then, make sure all the Windows devices are protected and set up for Office deployment. Rest assured, you've done what you can to be protected once these objectives have been achieved!
 
 Your mission objectives:
 
