@@ -3,7 +3,7 @@ title: "Other endpoints not included in the Office 365 IP Address and URL Web se
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 01/31/2022
+ms.date: 05/11/2022
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -53,7 +53,7 @@ Apart from DNS, these instances are all optional for most customers unless you n
 |7|**[Exchange Hybrid](/exchange/exchange-deployment-assistant) coexistence functions** such as Free/Busy sharing.|Customer on-premises Exchange server|Inbound server traffic|
 |8|**[Exchange Hybrid](/exchange/exchange-deployment-assistant) proxy authentication**|Customer on-premises STS|Inbound server traffic|
 |9|Used to configure [Exchange Hybrid](/exchange/exchange-deployment-assistant), using the **[Exchange Hybrid Configuration Wizard](/exchange/hybrid-configuration-wizard)** <p> Note: These endpoints are only required to configure Exchange hybrid|domains.live.com on TCP ports 80 & 443, only required for Exchange 2010 SP3 Hybrid Configuration Wizard <p> GCC High, DoD IP addresses: 40.118.209.192/32; 168.62.190.41/32 <p> Worldwide Commercial & GCC: \*.store.core.windows.net; asl.configure.office.com; tds.configure.office.com; mshybridservice.trafficmanager.net ; <br> aka.ms/hybridwizard; <br> shcwreleaseprod.blob.core.windows.net/shcw/\*;|Outbound server-only traffic|
-|10|The **AutoDetect service** is used in [Exchange Hybrid](/exchange/exchange-deployment-assistant) scenarios with [Hybrid Modern Authentication with Outlook for iOS and Android](/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) <p> `*.acompli.net` <br> `*.outlookmobile.com` <br> `*.outlookmobile.us` <br> `52.125.128.0/20` <br> `52.127.96.0/23`|Customer on-premises Exchange server on TCP 443|Inbound server traffic|
+|10|The **AutoDetect service** is used in [Exchange Hybrid](/exchange/exchange-deployment-assistant) scenarios with [Hybrid Modern Authentication with Outlook for iOS and Android](/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) <p> `<email_domain>.outlookmobile.com` <br> `<email_domain>.outlookmobile.us` <br> `52.125.128.0/20` <br> `52.127.96.0/23`|Customer on-premises Exchange server on TCP 443|Inbound server traffic|
 |11|**Exchange hybrid Azure AD authentication**|*.msappproxy.net|TCP outbound server-only traffic|
 |12|Skype for Business in Office 2016 includes **video based screen sharing**, which uses UDP ports. Prior Skype for Business clients in Office 2013 and earlier used RDP over TCP port 443.|TCP port 443 opens to 52.112.0.0/14|Skype for Business older client versions in Office 2013 and earlier|
 |13|**Skype for Business hybrid on-premises server connectivity** to Skype for Business Online|13.107.64.0/18, 52.112.0.0/14 <br> UDP ports 50,000-59,999 <br> TCP ports 50,000-59,999; 5061|Skype for Business on-premises server outbound connectivity|
