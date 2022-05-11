@@ -75,7 +75,7 @@ Use the **Get-OrganizationConfig** and **Set-OrganizationConfig** commands to fi
     - To turn off Bookings in Outlook for your organization, remove **MicrosoftOWSPersonalBookings**, if present, from **EwsAllowList** by running the following command:  
 
    ```PowerShell
-   Set-OrganizationConfig - EwsAllowList @{Remove="MicrosoftOWSPersonalBookings"}
+   Set-OrganizationConfig -EwsAllowList @{Remove="MicrosoftOWSPersonalBookings"}
    ```
 
     - To turn on Bookings in Outlook for your organization, add **MicrosoftOWSPersonalBookings** to **EwsAllowList** by running the following command:  
