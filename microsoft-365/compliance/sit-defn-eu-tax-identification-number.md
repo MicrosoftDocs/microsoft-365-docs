@@ -37,7 +37,7 @@ These entities are in the EU Tax identification number sensitive information typ
 - [France](sit-defn-france-tax-identification-number.md)
 - [Germany](sit-defn-germany-tax-identification-number.md)
 - [Greece](sit-defn-greece-tax-identification-number.md)
-- [Hungary](#hungary-tax-identification-number)
+- [Hungary](sit-defn-hungary-tax-identification-number.md)
 - [Ireland](#ireland-personal-public-service-pps-number)
 - [Italy](#italy-fiscal-code)
 - [Latvia](#latvia-personal-code)
