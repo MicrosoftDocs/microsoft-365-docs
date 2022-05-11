@@ -27,6 +27,11 @@ ms.technology: mde
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
+## 101.66.54 (20.122041.16654.0)
+
+- Addressed an issue where `mdatp diagnostic real-time-protection-statistics` was not printing the correct process path in some cases.
+- Bug fixes
+
 ## 101.64.15 (20.122032.16415.0)
 
 - Fixed a regression introduced in version 101.61.69 where the status menu icon was sometimes showing an error icon, even though no action was required from the end user
