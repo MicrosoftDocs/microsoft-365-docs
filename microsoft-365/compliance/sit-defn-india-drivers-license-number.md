@@ -22,7 +22,7 @@ description: "India Driver's License Number sensitive information type entity de
 ---
 
 
-# India Driver's License Number
+# India Drivers License Number
 
 ## Format
 

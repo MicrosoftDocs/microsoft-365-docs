@@ -159,7 +159,7 @@ This article is a list of all sensitive information type (SIT) entity definition
 - [India GST Number](sit-defn-india-gst-number.md)
 - [India permanent account number (PAN)](sit-defn-india-permanent-account-number.md)
 - [India unique identification (Aadhaar) number](sit-defn-india-unique-identification-number.md)
-- [India Voter Id Card](sit-defn-india-voter-id-card.md
+- [India Voter Id Card](sit-defn-india-voter-id-card.md)
 
 
 ## Indonesia identity card (KTP) number
