@@ -570,6 +570,32 @@
                 href: sit-defn-france-tax-identification-number.md
               - name: France value added tax number
                 href: sit-defn-france-value-added-tax-number.md
+              - name: Generic medication names
+                href: sit-defn-generic-medication-names.md
+              - name: Germany drivers license number
+                href: sit-defn-germany-drivers-license-number.md
+              - name: Germany identity card number
+                href: sit-defn-germany-identity-card-number.md
+              - name: Germany passport number
+                href: sit-defn-germany-passport-number.md
+              - name: Germany physical addresses
+                href: sit-defn-germany-physical-addresses.md
+              - name: Germany tax identification number
+                href: sit-defn-germany-tax-identification-number.md
+              - name: Germany value added tax number
+                href: sit-defn-germany-value-added-tax-number.md
+              - name: Greece drivers license number
+                href: sit-defn-greece-drivers-license-number.md
+              - name: Greece national ID card
+                href: sit-defn-greece-national-id-card.md
+              - name: Greece passport number
+                href: sit-defn-greece-passport-number.md
+              - name: Greece physical addresses
+                href: sit-defn-greece-physical-addresses.md
+              - name: Greece Social Security Number (AMKA)
+                href: sit-defn-greece-social-security-number.md
+              - name: Greece tax identification number
+                href: sit-defn-greece-tax-identification-number.md
           - name: Sensitive information type functions
             href: sit-functions.md
           - name: Custom sensitive information type filters reference
