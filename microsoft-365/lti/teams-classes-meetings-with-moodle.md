@@ -23,7 +23,7 @@ description: Create and manage Teams classes and meetings with Microsoft OneDriv
 
 This guide provides the IT admin steps for registering both Teams Classes and Teams Meetings LTI apps on Moodle.
 
-For details on managing all OneLTI tools for any LMS, see [Manage Microsoft OneLTI for any LMS](manage-microsoft-one-lti.md).
+For details on managing all LTI tools for any LMS, see [Manage Microsoft LTI for any LMS](manage-microsoft-one-lti.md).
 
 ## Prerequisites before set up
 
@@ -100,24 +100,25 @@ After registering Teams LTI apps, educators can add the Teams Classes app and th
 To launch the Teams LTI apps within Moodle, there are a few technical requirements that need to be met.
 
 > [!NOTE]
-> IT admins and educators can register OneLTI apps on the OneLTI portal.
+> IT admins and educators can register LTI apps on the OneLTI portal.
 
 ### IT admin technical requirements
 
-- Moodle version 3.10 or 3.11.
-- Latest available download of the Microsoft O365 plugin for Moodle version 3.10 or 3.11.
+- Use Moodle version 3.10 or 3.11.
+- Download the latest Microsoft O365 plugin for Moodle version 3.10 or 3.11.
   - We're not supporting Moodle 4.0 at this moment, but an upgrade is in progress to support Moodle 4.0.
-- OneLTI portal to register the OneLTI apps.
+- Access the OneLTI portal to register the LTI apps.
   - Registration must be on completed on a desktop device.
-- Latest version of Microsoft Edge, Google Chrome Safari, or Mozilla Firefox browser.
+- Download the latest version of Microsoft Edge, Google Chrome, Safari, or Mozilla Firefox.
 
 ### Educator technical requirements
 
-- OneLTI portal to register the OneLTI apps, if the IT admin hasn't registered the apps.
+- Access the OneLTI portal to register the LTI apps, if the IT admin hasn't registered the apps.
   - Registration must be on completed on a desktop device.
-- Latest version of Microsoft Edge, Google Chrome Safari, or Mozilla Firefox browser.
+- Download the latest version of Microsoft Edge, Google Chrome, Safari, or Mozilla Firefox.
 - [Teams LTI apps for Classes and Meetings in Moodle](#add-teams-lti-tools-to-educators-moodle-courses).
 
 ### Student technical requirements
 
-- [Teams LTI apps for Classes and Meetings in Moodle](#add-teams-lti-tools-to-educators-moodle-courses).
+- Teams LTI apps for Classes and Meetings in Moodle.
+  - Students don't need to take any actions to add the Teams Classes or Meetings LTI apps.
