@@ -43,7 +43,7 @@ These entities are in the EU National Identification Number and are sensitive in
 - [Latvia](sit-defn-latvia-personal-code.md)
 - [Lithuania](sit-defn-lithuania-personal-code.md)
 - [Luxemburg](sit-defn-luxemburg-national-identification-number-natural-persons.md)
-- [Malta](#malta-identity-card-number)
+- [Malta](sit-defn-malta-identity-card-number.md)
 - [Netherlands](#netherlands-citizens-service-bsn-number)
 - [Poland](#poland-national-id-pesel)
 - [Portugal](#portugal-citizen-card-number)
