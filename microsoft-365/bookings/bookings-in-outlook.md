@@ -20,7 +20,7 @@ Bookings in Outlook is a web-based personal scheduling page that integrates with
 
 Bookings in Outlook has two different views:
 
-- **Organizer view** A personal booking page where you can create meeting types that others can book with you. Custom meeting types give you the ability to customize when you want to meet and how that meeting type is shared with others. You control whether each meeting type is public to your scheduling page or is private and can only be accessed by a select group of people. You can also choose to add a Teams meeting to all meetings booked through your Bookings in Outlook page. You can access your Bookings in Outlook page through Outlook on the web or by going to [https://outlook.office.com/bookwithme/](https://outlook.office.com/bookwithme/). After you set up your page and publish it, you can share it with others. For example, you can add it to your Outlook signature.
+- **Organizer view** A personal booking page where you can create meeting types that others can book with you. Custom meeting types give you the ability to customize when you want to meet and how that meeting type is shared with others. You control whether each meeting type is public to your scheduling page or is private and can only be accessed by a select group of people. You can also choose to add a Teams meeting to all meetings booked through your Bookings in Outlook page. You can access your Bookings in Outlook page through Outlook on the web. After you set up your page and publish it, you can share it with others. For example, you can add it to your Outlook signature.
 
 - **Scheduling view** When you share your Bookings in Outlook page with others, they will see the scheduling view. Which meetings are shown in the scheduling view depends on if you shared the link to your Bookings in Outlook page with public meetings or you shared a private link for an individual meeting.
     - Public meetings can be viewed and scheduled by anyone that has your Bookings in Outlook page link. You are in control of who you share that link with. All public meeting types will be visible to anyone that has your Bookings in Outlook page link.
@@ -75,13 +75,13 @@ Use the **Get-OrganizationConfig** and **Set-OrganizationConfig** commands to fi
     - To turn off Bookings in Outlook for your organization, remove **MicrosoftOWSPersonalBookings**, if present, from **EwsAllowList** by running the following command:  
 
    ```PowerShell
-   Set-OrganizationConfig - EwsAllowList @{Remove="MicrosoftOWSPersonalBookings"}
+   Set-OrganizationConfig -EwsAllowList @{Remove="MicrosoftOWSPersonalBookings"}
    ```
 
     - To turn on Bookings in Outlook for your organization, add **MicrosoftOWSPersonalBookings** to **EwsAllowList** by running the following command:  
 
    ```PowerShell
-   Set-OrganizationConfig - EwsAllowList @{Add="MicrosoftOWSPersonalBookings"}
+   Set-OrganizationConfig -EwsAllowList @{Add="MicrosoftOWSPersonalBookings"}
    ```
 
     **B**. If the value of **EwsApplicationAccessPolicy** is **EnforceBlockList**, all applications are allowed to access EWS and REST, except those specified in **EwsBlockList**.
@@ -129,13 +129,13 @@ Use the **Get-CASMailbox** and **Set-CASMailbox** commands to check user status 
     - To turn off Bookings in Outlook for this user, remove **MicrosoftOWSPersonalBookings**, if present from **EwsAllowList** by running the following command:
 
    ```PowerShell
-   Set-CASMailbox -Identity adam@contoso.com - EwsAllowList @{Remove="MicrosoftOWSPersonalBookings"}
+   Set-CASMailbox -Identity adam@contoso.com -EwsAllowList @{Remove="MicrosoftOWSPersonalBookings"}
    ```
 
     - Turn on Bookings in Outlook for this user, add **MicrosoftOWSPersonalBookings** to **EwsAllowList** by running the following command:
 
    ```PowerShell
-   Set-CASMailbox -Identity adam@contoso.com - EwsAllowList @{Add="MicrosoftOWSPersonalBookings"}
+   Set-CASMailbox -Identity adam@contoso.com -EwsAllowList @{Add="MicrosoftOWSPersonalBookings"}
    ```
 
     **B**. If the value of **EwsApplicationAccessPolicy** is **EnforceBlockList**, all applications are allowed to access EWS and REST, except those specified in **EwsBlockList**.  
