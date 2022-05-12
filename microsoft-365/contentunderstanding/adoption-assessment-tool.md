@@ -25,7 +25,7 @@ description: Learn how to use the adoption assessment tool to see how your organ
 > The Microsoft 365 Assessment tool and all other PnP components are open-source tools backed by an active community providing support for them. There is no SLA for open-source tool support from official Microsoft support channels. 
 
 > [!NOTE]
-> The Microsoft 365 Assessment tool can only be run against SharePoint Online. 
+> The Microsoft 365 Assessment tool can be run only against SharePoint Online. 
 
 You can assess how SharePoint Syntex will benefit your organization by using the Microsoft 365 Assessment tool. When you run an assessment, you'll generate a Power BI report that summarizes aspects of your SharePoint information architecture that are indicators for where SharePoint Syntex might be of value.
 
