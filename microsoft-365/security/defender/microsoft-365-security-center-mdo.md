@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Office 365 in Microsoft 365 Defender
-description: Learn about changes from the Security & compliance portal to Microsoft 365 Defender.
-keywords: Microsoft 365 security, Getting started with Microsoft 365 Defender, Microsoft Defender for Office 365, Microsoft Defender for Endpoint, MDO, MDE, single pane of glass, new security portal, new defender security portal
+description: Learn about changes from the Security & Compliance Center to Microsoft 365 Defender.
+keywords: Microsoft 365 security, Getting started with Microsoft 365 Defender, Microsoft Defender for Office 365, Microsoft Defender for Endpoint, MDO, MDE, new defender security portal
 ms.date: 02/21/2021
 ms.author: tracyp
 author: msfttracyp
@@ -109,7 +109,7 @@ Learn more about how to [track and respond to emerging threats with threat analy
 
 Track and investigate threats to your users' email, track campaigns, and more. If you've used the Security & Compliance Center, this will be familiar.
 
-![The quick launch menu for Email & Collab (or M S D O), on the left navigation pane in the Microsoft 365 Defender portal.](../../media/mdo-m365d-nav.png)
+![The quick launch menu for Email & collab, on the left navigation pane in the Microsoft 365 Defender portal.](../../media/mdo-m365d-nav.png)
   
 #### Email entity page
 
