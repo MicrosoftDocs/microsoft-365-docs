@@ -62,7 +62,7 @@ To enable the Corelight integration, you'll need to take the following steps:
 ### Step 3: Configure your Corelight appliance to send data to Microsoft 365 Defender
 
 > [!NOTE]
-> The integration is available in Corelight Sensor software v24 and later.
+> The integration is available in Corelight Sensor software v25 and later.
 > 
 > You will need internet connectivity for your sensor to reach both the Defender and Corelight cloud services for the solution to work.
 
