@@ -29,7 +29,7 @@ description: "Learn how to enable or disable archive mailboxes to support your o
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Archiving in Microsoft 365 (also called *In-Place Archiving*) provides users with additional mailbox storage space. For more information, see [Learn about archive mailboxes](archive-mailboxes.md).
+Archiving in Microsoft 365 (also called *In-Place Archiving*) provides users with more mailbox storage space. For more information, see [Learn about archive mailboxes](archive-mailboxes.md).
 
 Use the information in this article to enable or disable an archive mailbox in the Microsoft Purview compliance portal, or by using PowerShell. Also learn how to run an automated diagnostic check on a user's archive mailbox to identify any problems and suggested resolutions.
 
@@ -67,7 +67,7 @@ Similarly to how you enable an archive mailbox, you can use the **Archive** page
 
 After you disable an archive mailbox, you can reconnect it to the user's primary mailbox within 30 days of disabling it. In this case, the original contents of the archive mailbox are restored. After 30 days, the contents of the original archive mailbox are permanently deleted and can't be recovered. So if you re-enable the archive more than 30 days after disabling it, a new archive mailbox is created.
 
-The default archive policy assigned to users' mailboxes moves items to the archive mailbox two years after the date the item is delivered. If you disable a user's archive mailbox, no action will be taken on mailbox items and they will remain in the user's primary mailbox.
+The default archive policy assigned to users' mailboxes moves items to the archive mailbox two years after the date the item is delivered. If you disable a user's archive mailbox, no action will be taken on mailbox items and they'll remain in the user's primary mailbox.
 
 ## Use Exchange Online PowerShell to enable or disable archive mailboxes
 
