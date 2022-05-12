@@ -66,9 +66,6 @@ conceptualContent:
         - url: ../admin/misc/microsoft-365-business-faqs.yml
           itemType: reference
           text: Microsoft 365 Business Premium FAQ
-        - url: ../business-video/index.yml
-          itemType: video
-          text: Microsoft 365 for business training videos
   # Card
     - title: Set up Microsoft 365 Business Premium
       links:
@@ -83,13 +80,16 @@ conceptualContent:
           text: 2. Bump up security
         - url: ../business-premium/m365bp-devices-overview.md
           itemType: overview
-          text: 3. Set up personal (unmanaged) devices
+          text: 3. Set up unmanaged (BYOD) devices
         - url: ../business-premium/m365bp-protect-email-overview.md
           itemType: overview
           text: 4. Use email more securely
         - url: ../business-premium/m365bp-collaborate-share-securely.md
           itemType: overview
           text: 5. Collaborate and share more securely
+        - url: ../business-premium/m365bp-protect-devices.md
+          itemType: how-to-guide
+          text: 6. Set up and secure managed devices
         - url: ../business-premium/m365bp-maintain-environment.md
           itemType: overview
           text: Maintain your environment
@@ -180,6 +180,9 @@ conceptualContent:
         - url: https://support.microsoft.com/office/7f681212-c649-4a3e-a43b-32b1d1e58988
           itemType: video
           text: Get help
+        - url: ../business-video/index.yml
+          itemType: video
+          text: Microsoft 365 for business training videos
         - url: https://techcommunity.microsoft.com/t5/Microsoft-365-Business/bd-p/Microsoft365business
           itemType: overview
           text: Send feedback
