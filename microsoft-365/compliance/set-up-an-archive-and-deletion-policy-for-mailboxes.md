@@ -90,7 +90,7 @@ To create new retention tags, you'll use the <a href="https://go.microsoft.com/f
   
 First, you'll create a custom archive default policy tag (DPT) that will move items to the archive mailbox after 3 years.
   
-1. On the **Retention tags** page, click **New tag**![New icon.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif), and then select **applied automatically to entire mailbox (default)**.
+1. On the **Retention tags** page, select **New tag**![New icon.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif), and then select **applied automatically to entire mailbox (default)**.
 
 2. On the **New tag applied automatically to entire mailbox (default)** page, complete the following fields: 
 
@@ -104,7 +104,7 @@ First, you'll create a custom archive default policy tag (DPT) that will move it
 
    4. **Comment** (Optional) Type a comment that explains the purpose of the custom retention tag.
 
-3. Click **Save** to create the custom archive DPT.
+3. Select **Save** to create the custom archive DPT.
 
     The new archive DPT is displayed in the list of retention tags.
 
@@ -112,7 +112,7 @@ First, you'll create a custom archive default policy tag (DPT) that will move it
   
 Next, you'll create another custom DPT but this one will be a deletion policy that permanently deletes items after 7 years.
   
-1. On the **Retention tags** page, click **New tag**![New icon.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif), and then select **applied automatically to entire mailbox (default)**.
+1. On the **Retention tags** page, select **New tag**![New icon.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif), and then select **applied automatically to entire mailbox (default)**.
 
 2. On the **New tag applied automatically to entire mailbox (default)** page, complete the following fields: 
 
@@ -126,7 +126,7 @@ Next, you'll create another custom DPT but this one will be a deletion policy th
 
    4. **Comment** (Optional) Type a comment that explains the purpose of the custom retention tag. 
 
-3. Click **Save** to create the custom deletion DPT. 
+3. Select **Save** to create the custom deletion DPT. 
 
     The new deletion DPT is displayed in the list of retention tags.
 
@@ -134,7 +134,7 @@ Next, you'll create another custom DPT but this one will be a deletion policy th
   
 The last retention tag to create is a custom retention policy tag (RPT) for the Deleted Items folder. This tag will delete items in the Deleted Items folder after 5 years, and provides a recovery period when users can use the Recover Deleted Items tool to recover an item.
   
-1. On the **Retention tags** page, click **New tag** ![New icon.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif), and then select **applied automatically to a default folder**.
+1. On the **Retention tags** page, select **New tag** ![New icon.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif), and then select **applied automatically to a default folder**.
 
 2. On the **New tag applied automatically to a default folder** page, complete the following fields:
 
@@ -150,7 +150,7 @@ The last retention tag to create is a custom retention policy tag (RPT) for the 
 
    5. **Comment** (Optional) Type a comment that explains the purpose of the custom retention tag. 
 
-3. Click **Save** to create the custom RPT for the Deleted Items folder.
+3. Select **Save** to create the custom RPT for the Deleted Items folder.
 
     The new RPT is displayed in the list of retention tags.
 
@@ -160,24 +160,24 @@ After you create the custom retention tags, the next step is to create a new ret
   
 1. In the EAC, go to **Compliance management** > **Retention policies**.
 
-2. On the **Retention policies** page, click **New** ![New icon.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif).
+2. On the **Retention policies** page, select **New** ![New icon.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif).
 
 3. In the **Name** box, type a name for the new retention policy; for example, **Alpine House Archive and Deletion Policy**.
 
-4. Under **Retention tags**, click **Add** ![New icon.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif).
+4. Under **Retention tags**, select **Add** ![New icon.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif).
 
     A list of the retention tags in your organization is displayed. Note the custom tags that you created in Step 2 are displayed.
 
-5. Add the 9 retention tags that are highlighted in the following screenshot (these tags are described in more detail in the [More information](#more-information) section). To add a retention tag, select it and then click **Add**.
+5. Add the 9 retention tags that are highlighted in the following screenshot (these tags are described in more detail in the [More information](#more-information) section). To add a retention tag, select it and then select **Add**.
 
     ![Add retention tags to the new retention policy.](../media/d8e87176-0716-4238-9e6a-7c4af35541dc.png)
   
     > [!TIP]
     > You can select multiple retention tags by holding down the **Ctrl** key and then clicking each tag. 
   
-6. After you've added the retention tags, click **OK**.
+6. After you've added the retention tags, select **OK**.
 
-7. On the **New retention policy** page, click **Save** to create the new policy.
+7. On the **New retention policy** page, select **Save** to create the new policy.
 
     The new retention policy is displayed in the list. Select it to display the retention tags linked to it in the details pane.
 
@@ -193,19 +193,19 @@ When a new mailbox is created, a retention policy named Default MRM policy is as
 
 2. Select all the mailboxes by clicking on the first one in the list, holding down the **Shift** key, and then clicking the last one in the list. 
 
-3. In the details pane on the right side of the EAC, under **Bulk Edit**, click **More options**.
+3. In the details pane in the EAC, under **Bulk Edit**, select **More options**.
 
-4. Under **Retention Policy**, click **Update**.
+4. Under **Retention Policy**, select **Update**.
 
 5. On the **Bulk assign retention policy** page, in the **Select the retention policy** drop-down list, select the retention policy that you created in Step 3; for example, **Alpine House Archive and Retention Policy**.
 
-6. Click **Save** to save the new retention policy assignment.
+6. Select **Save** to save the new retention policy assignment.
 
 7. To verify that the new retention policy was assigned to mailboxes:
 
-   1. Select a mailbox on the **Mailboxes** page, and then click **Edit** ![Edit.](../media/d7dc7e5f-17a1-4eb9-b42d-487db59e2e21.png).
+   1. Select a mailbox on the **Mailboxes** page, and then select **Edit** ![Edit.](../media/d7dc7e5f-17a1-4eb9-b42d-487db59e2e21.png).
 
-   2. On the mailbox properties page for the selected user, click **Mailbox features**.
+   2. On the mailbox properties page for the selected user, select **Mailbox features**.
 
    The name of the new policy assigned to the mailbox is displayed in the **Retention policy** drop-down list.
 
