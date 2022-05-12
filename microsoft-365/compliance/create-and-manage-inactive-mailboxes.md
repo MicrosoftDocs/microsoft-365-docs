@@ -61,19 +61,17 @@ To view a list of the inactive mailboxes in your organization:
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> and sign in using the credentials for a Global administrator or a Compliance administrator account in your organization.
 
-2. In the left navigation pane, click **Show all**, and then click **Data lifecycle management** > **Retention**.
+2. In the left navigation pane, select **Show all**, and then select **Data lifecycle management** > **Retention policies**.
 
-   ![Click the Inactive Mailbox button on the Retention page.](../media/MCCInactiveMailboxes1.png)
+3. Select the **Inactive mailbox** option to display a list of inactive mailboxes:
 
-3. On the **Retention** page, click **Inactive mailbox** to display a list of inactive mailboxes.
+   ![Inactive Mailbox option on the Retention policies page from data lifecycle management.](../media/inactive-mailbox-option.png)
 
-4. Select an inactive mailbox to display a flyout page with information about the inactive mailbox.
+4. On the **Inactive mailboxes** page, select an inactive mailbox to see details about that inactive mailbox. Details include how long it's been inactive, the Exchange identifier, when by whom it was put on hold.
 
-   ![The flyout page displays details about the inactive mailbox.](../media/MCCInactiveMailboxes2.png)  
+Select ![Export search results icon.](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **Export** to view or download a CSV file that contains additional information about the inactive mailboxes in your organization.
 
-You can click ![Export search results icon.](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **Export** to view or download a CSV file that contains additional information about the inactive mailboxes in your organization.
-
-Alternatively, you can run the following command in Exchange Online PowerShell to display the list of inactive mailboxes.
+Alternatively, you can run the following command in Exchange Online PowerShell to display the list of inactive mailboxes:
 
 ```powershell
  Get-Mailbox -InactiveMailboxOnly | FT DisplayName,PrimarySMTPAddress,WhenSoftDeleted
@@ -86,7 +84,7 @@ Get-Mailbox -InactiveMailboxOnly | Select Displayname,PrimarySMTPAddress,Disting
 ```
 
 > [!NOTE]
-> It's possible that an inactive mailbox may have the same SMTP address as an active user mailbox. In this case, the value of the **DistinguishedName** or **ExchangeGuid** property can be used to uniquely identify an inactive mailbox.
+> It's possible that an inactive mailbox might have the same SMTP address as an active user mailbox. In this case, the value of the **DistinguishedName** or **ExchangeGuid** property can be used to uniquely identify an inactive mailbox.
   
 ## Search and export the contents of an inactive mailbox
 
