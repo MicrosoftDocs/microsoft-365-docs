@@ -21,7 +21,6 @@ recommendations: false
 description: "Latvia personal code sensitive information type entity definition."
 ---
 
-
 # Latvia personal code
 
 ## Format
