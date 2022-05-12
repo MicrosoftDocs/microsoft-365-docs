@@ -87,19 +87,22 @@ Microsoft Endpoint Manager includes several methods and policy types to manage t
 
 When your device protection needs extend beyond managing Defender for Endpoint, see [Device protection overview](/mem/intune/protect/device-protect) to learn about additional capabilities provided by Microsoft Endpoint Manager to help protect devices, including *device compliance*, *managed apps*, *app protection policies*, and integration with third-party compliance and *mobile threat defense* partners.
 
-The following table can help you understand which policies that can configure MDE settings are supported by devices that are managed by the different scenarios. When you deploy a policy that’s supported for both *MDE security configuration* and *Microsoft Endpoint Manager*, a single instance of that policy can be processed by devices that run MDE only and devices that are managed by either Intune or Configuration Manager.
+The following table can help you understand which policies that can configure MDE settings are supported by devices that are managed by the different scenarios. When you deploy a policy that’s supported for both *MDE security configuration* and *Microsoft Endpoint Manager*, a single instance of that policy can be processed by devices that run Microsoft Defender for Endpoint only and devices that are managed by either Intune or Configuration Manager.
 
-| Microsoft Endpoint Manager  | Workload | MDE Security configuration  |  Microsoft Endpoint Manager |
+| Microsoft Endpoint Manager  | Workload |Policy| MDE Security configuration  |  Microsoft Endpoint Manager |
 |----------------|----------------|-------------------|------------|
-| Endpoint security    | Antivirus                   | ![Supported](../media/green-check.png)  | ![Supported](../media/green-check.png)  |
-|                      | Disk Encryption   |           | ![Supported](../media/green-check.png)  |
-|                      | Firewall (Profile and Rules)                | ![Supported](../media/green-check.png) | ![Supported](../media/green-check.png)  |
-|                      | Endpoint detection and response        | ![Supported](../media/green-check.png) | ![Supported](../media/green-check.png)  |
-|                      | Attack surface reduction    |           | ![Supported](../media/green-check.png)  |
-|                      | Account Protection       |       | ![Supported](../media/green-check.png)  |
-|                      | Device Compliance     |   | ![Supported](../media/green-check.png)  |
-|                      | Conditional Access    |   | ![Supported](../media/green-check.png)  |
-|                      | Security baselines      |   | ![Supported](../media/green-check.png)  |
+| Endpoint security    | Antivirus   |     Antivirus           | ![Supported](../media/green-check.png)  | ![Supported](../media/green-check.png)  |
+|                      | Antivirus   |   Antivirus Exclusions   | ![Supported](../media/green-check.png)  | ![Supported](../media/green-check.png)  |
+|                      | Antivirus   | Windows Security Experience |                        | ![Supported](../media/green-check.png)  |
+|                      | Disk Encryption   |     All |      | ![Supported](../media/green-check.png)  |
+|                      | Firewall   | Firewall              | ![Supported](../media/green-check.png) | ![Supported](../media/green-check.png)  |
+|                      | Firewall | Firewall  Rules                | ![Supported](../media/green-check.png) | ![Supported](../media/green-check.png)  |
+|                      | Endpoint detection and response   | Endpoint detection and response | ![Supported](../media/green-check.png) | ![Supported](../media/green-check.png)  |
+|                      | Attack surface reduction    |   All |          | ![Supported](../media/green-check.png)  |
+|                      | Account Protection       |    All |     | ![Supported](../media/green-check.png)  |
+|                      | Device Compliance     |   All |  | ![Supported](../media/green-check.png)  |
+|                      | Conditional Access    |   All |  | ![Supported](../media/green-check.png)  |
+|                      | Security baselines      |  All |   | ![Supported](../media/green-check.png)  |
 
 **Endpoint security policies** are discrete groups of settings intended for use by security admins who focus on protecting devices in your organization.
 
@@ -117,24 +120,26 @@ To support Microsoft Defender for Endpoint security configuration management thr
 1. Sign in to [Microsoft 365 Defender portal](https://security.microsoft.com/) and go to **Settings** > **Endpoints** > **Configuration Management** > **Enforcement Scope** and enable the platforms for security settings management:
 
    :::image type="content" source="../media/security-settings-mgt.png" alt-text="Enable Microsoft Defender for Endpoint settings management in the Defender console.":::
+    
+1. Configure Pilot Mode and Configuration Manager authority settings to fit your organization needs:
+   :::image type="content" source="../media/mde-security-integration/pilot-CMAuthority-mde-settings-management-defender.png" alt-text="Configure Pilot mode for Endpoint settings management in the Microsoft 365 Defender portal.":::
+   > [!TIP]
+   > Use pilot mode and the proper device tags to test and validate your rollout on a small number of devices. Without using pilot mode, any device that falls into the scope configured will automatically be enrolled.
 
-    >[!NOTE]
-    >To granularly control the scope of endpoints managed via MDE settings management, consider using **Pilot Mode**.
-
-2. Make sure the relevant users have permissions to manage endpoint security settings in Microsoft Endpoint Manager or grant those permissions by configuring a role in the Defender portal. Go to **Settings** > **Roles** > **Add item**:
+1. Make sure the relevant users have permissions to manage endpoint security settings in Microsoft Endpoint Manager or grant those permissions by configuring a role in the Defender portal. Go to **Settings** > **Roles** > **Add item**:
 
    :::image type="content" source="../media/add-role-in-mde.png" alt-text="Create a new role in the Defender portal.":::
 
    > [!TIP]
    > You can modify existing roles and add the necessary permissions versus creating additional roles in Microsoft Defender for Endpoint
 
-3. When configuring the role, add users and be sure to select **Manage endpoint security settings in Microsoft Endpoint Manager**:
+1. When configuring the role, add users and be sure to select **Manage endpoint security settings in Microsoft Endpoint Manager**:
 
    :::image type="content" source="../media/add-role.png" alt-text="Grant users permissions to manage settings.":::
 
-4. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-5. Select **Endpoint security** > **Microsoft Defender for Endpoint**, and set **Allow Microsoft Defender for Endpoint to enforce Endpoint Security Configurations (Preview)** to **On**.
+1. Select **Endpoint security** > **Microsoft Defender for Endpoint**, and set **Allow Microsoft Defender for Endpoint to enforce Endpoint Security Configurations (Preview)** to **On**.
 
    :::image type="content" source="../media/enable-mde-settings-management-mem.png" alt-text="Enable Microsoft Defender for Endpoint settings management in the Microsoft Endpoint Manager admin center.":::
 
