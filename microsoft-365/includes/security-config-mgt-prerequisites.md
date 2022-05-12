@@ -41,6 +41,9 @@ Devices must have access to the following endpoints:
 - `login.microsoftonline.com` - For Azure AD registration.
 - `*.dm.microsoft.com` - The use of a wildcard supports the cloud-service endpoints that are used for enrollment, check-in, and reporting, and which can change as the service scales.
 
+> [!Note]
+> If your organization users Secure Socket Layer (SSL) inspection, the endpoints should be excluded from inspection.
+
 ### Supported platforms
 
 Policies for Microsoft Defender for Endpoint security management are supported for the following device platforms:
