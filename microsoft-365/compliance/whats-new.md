@@ -56,10 +56,9 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ### Data lifecycle management and records management
 
-- [Govern your data with Microsoft Purview](manage-data-governance.md) - data connectors are removed from this page and the records management solution is presented as a peer product.
-- [Common settings for retention policies and retention labels](retention-settings.md) - reflects new navigational and UI references for the newly designed retention label wizard.
-- [Declare records by using retention labels](declare-records.md) and [Use record versioning to update records stored in SharePoint or OneDrive](record-versioning.md) - new information about the new "Unlock this record by default" label setting that's currently rolling out in preview.
-- [Use file plan to create and manage retention labels](file-plan-manager.md#information-about-the-label-properties-for-import)  - the import section now discloses the label settings that aren't currently supported for import (multi-stage disposition review and unlock this record by default).
+- With the [product name change](#changes-to-product-names), **Information governance** is renamed **Data lifecycle management** in the compliance portal.
+- Currently rolling out: new design for the retention label settings configuration.
+- Currently rolling out: new label option in preview, "Unlock this record by default". For more information, see [Configuring retention labels to declare records](declare-records.md#configuring-retention-labels-to-declare-records) and [Use record versioning to update records stored in SharePoint or OneDrive](record-versioning.md).
 
 ### Data Loss Prevention
 
@@ -109,11 +108,10 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ### Sensitivity labels
 
-- [Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 groups, and SharePoint sites](sensitivity-labels-teams-groups-sites.md#configure-site-sharing-permissions-by-using-powershell-advanced-settings) - new configuration now in preview for site sharing permissions by using PowerShell advanced settings.
-- [Restrict access to content by using sensitivity labels to apply encryption](encryption-sensitivity-labels.md) - added the known issue for specifying a group that contains mail contacts, with a link to the published KB for details and workarounds.
-- [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md) - removed the known issue with deleted OneDrive sites incorrectly displayed in the simulation results for auto-labeling policies)
-- [Enable co-authoring for files encrypted with sensitivity labels](sensitivity-labels-coauthoring.md) - as a result of customer feedback, removed the callout in the Prerequisites section that this feature isn't yet supported by the Semi-Annual Enterprise Channel, and instead added Semi-Annual Enterprise Channel (Preview) with the minimum version 2202.
-- [Manage sensitivity labels in Office apps](sensitivity-labels-office-apps.md) - support details for applying a default label to existing documents are updated to correct that on Windows, this release is still rolling out in the Beta channel, and is now fully rolled out for the web.
+- Newly supported scenario for SharePoint sites, now in preview: [Configure site sharing permissions by using PowerShell advanced settings](sensitivity-labels-teams-groups-sites.md#configure-site-sharing-permissions-by-using-powershell-advanced-settings)
+- [Co-authoring for files encrypted with sensitivity labels](sensitivity-labels-coauthoring.md) is now available for testing with the Semi-Annual Enterprise Channel (Preview) channel.
+- Deleted OneDrive accounts are now correctly displayed in the simulation results for auto-labeling policies.
+- Known issue if you [assign permissions to mail contacts in groups](/office365/troubleshoot/sensitivity-labels/mail-contacts-lose-access-encrypted-content) when you configure a sensitivity label for encryption.
 
 ### Changes to product names
 

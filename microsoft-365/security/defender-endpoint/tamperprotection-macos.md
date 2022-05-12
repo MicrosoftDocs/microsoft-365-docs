@@ -75,8 +75,8 @@ You can configure the tamper protection mode by providing the mode name as enfor
 
 **Highly recommended settings:** 
 
-1. System Integrity Protection (SIP) enabled
-1. Use a Mobile device management (MDM) tool to configure Microsoft Defender for Endpoint
+1. System Integrity Protection (SIP) enabled. For more information, see [Disabling and Enabling System Integrity Protection](https://developer.apple.com/documentation/security/disabling_and_enabling_system_integrity_protection).
+1. Use a Mobile device management (MDM) tool to configure Microsoft Defender for Endpoint.
 
  
 
