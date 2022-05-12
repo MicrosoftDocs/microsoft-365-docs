@@ -49,4 +49,4 @@ If you would like to participate or you have more questions, then email CTIMPrev
 
 We recommend reviewing the current Cross-Tenant Mailbox Migration steps related to preparing mail enabled user objects in the target organization.
 
-- [Review Cross-Tenant Mailbox Migration Preview Instructions](cross-tenant-mailbox-migrations.md)
+- [Review Cross-Tenant Mailbox Migration Preview Instructions](cross-tenant-mailbox-migration.md)
