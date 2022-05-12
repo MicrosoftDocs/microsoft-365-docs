@@ -1,5 +1,5 @@
 ---
-title: Manage Microsoft OneLTI for any LMS
+title: Manage Microsoft LTI apps for any LMS
 ms.author: danismith
 author: DaniEASmith
 manager: serdars
@@ -11,26 +11,26 @@ f1.keywords:
 - CSH
 ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
-description: Learn how to conduct key Microsoft OneLTI management tasks including viewing, deleting, editing, and troubleshooting.
+description: Learn how to conduct key Microsoft LTI apps management tasks including viewing, deleting, editing, and troubleshooting.
 ---
 
-# Manage Microsoft OneLTI for any LMS
+# Manage Microsoft LTI apps for any LMS
 
-Microsoft OneLTI integrates with several LMSs including Canvas, Blackboard, and Moodle.
+Microsoft LTI apps integrates with several LMSs including Canvas, Blackboard, and Moodle.
 
-In this article, IT admins will find instructions on key OneLTI management tasks.
+In this article, IT admins will find instructions on key LTI apps management tasks.
 
 - [View an LTI registration](#view-an-lti-registration).
 - [Delete an LTI registration](#delete-an-lti-registration).
 - [Edit an LTI registration](#edit-an-lti-registration).
-- [Troubleshoot issues with OneLTI](#troubleshoot-issues-with-onelti).
-- [Report problems with OneLTI](#report-problems-with-onelti).
+- [Troubleshoot issues with LTI apps](#troubleshoot-issues-with-lti-apps).
+- [Report problems with LTI apps](#report-problems-with-lti-apps).
 
 ## View an LTI registration
 
 If you would like to view the details of an LTI registration, follow the steps below.
 
-1. Visit [Microsoft LTI Portal](https://lti.microsoft.com/).
+1. Visit the [Microsoft LTI apps registration portal](https://lti.microsoft.com/).
 2. Sign in with a Microsoft 365 administrator account.
 3. In the registration list, find the LTI registration you wish to view.
 4. Select the **eye icon** next to the listing.
@@ -38,9 +38,9 @@ If you would like to view the details of an LTI registration, follow the steps b
 
 ## Delete an LTI registration
 
-If you would like to delete a Microsoft OneLTI registration, follow the steps below.
+If you would like to delete a Microsoft LTI app registration, follow the steps below.
 
-1. Visit [Microsoft LTI Portal](https://lti.microsoft.com/).
+1. Visit the [Microsoft LTI apps registration portal](https://lti.microsoft.com/).
 2. Sign in with a Microsoft 365 administrator account.
 3. In the registration list, find the LTI registration you wish to delete.
 4. Select the **trash can icon** next to the listing.
@@ -56,13 +56,13 @@ To change an LTI registration, you'll need to:
 1. [Delete the existing registration](#delete-an-lti-registration).
 2. Add a new registration.
 
-## Troubleshoot issues with OneLTI
+## Troubleshoot issues with LTI apps
 
-If you or your educators are experiencing issues with Microsoft OneLTI, here are some things you can do to troubleshoot.
+If you or your educators are experiencing issues with Microsoft LTI apps, here are some things you can do to troubleshoot.
 
-### Issues while launching an LTI tool from the LMS
+### Issues while launching an LTI app from the LMS
 
-Educators might experience issues launching a Microsoft LTI tool in their LMS.
+Educators might experience issues launching a Microsoft LTI app in their LMS.
 
 If so, here are some common issues and how to resolve them.
 
@@ -72,11 +72,11 @@ If so, here are some common issues and how to resolve them.
   - To learn how to update your browser's cookie settings, see [Allow cookies for LMS URLs in your browser](browser-cookies.md).
 
 - **Registration details not found**
-  - This issue happens when registration of the LTI tool wasn't completed or if the registration was deleted in the OneLTI admin portal.
-  - The IT admin will need to complete registration of the LTI tool.
+  - This issue happens when registration of the LTI app wasn't completed or if the registration was deleted in the LTI apps registration portal.
+  - The IT admin will need to complete registration of the LTI app.
 
 - **Some details from LMS aren't valid**
-  - This issue happens when the details sent from the LMS in the tool launch request aren't aligned with the IMS LTI 1.3 specification.
+  - This issue happens when the details sent from the LMS in the app launch request aren't aligned with the IMS LTI 1.3 specification.
   - The IT admin will need to reach out to [Microsoft's education support team](https://edusupport.microsoft.com/support?product_id=lti_apps&platform_id=web) if the issue persists.
 
 ### Issues with signing in to the registration portal
@@ -115,11 +115,11 @@ Here are some common sign-in issues and how to resolve them.
       - Select the **Go to Home page** button. This will navigate back to the landing page.
       - Select the **Go to registration portal** button to go back to the LTI registration portal.
 
-## Report problems with OneLTI
+## Report problems with LTI apps
 
-To report any issues or submit feedback for Microsoft OneLTI, follow the steps below.
+To report any issues or submit feedback for Microsoft LTI apps, follow the steps below.
 
-1. In the Microsoft OneLTI registration portal, select the **question mark icon** in the page header.
+1. In the Microsoft LTI apps registration portal, select the **question mark icon** in the page header.
 2. In the dropdown, select **Report a problem**.
 3. The Microsoft Education Support page will open. Sign in with your Microsoft 365 credentials.
 4. Fill out the form and submit.

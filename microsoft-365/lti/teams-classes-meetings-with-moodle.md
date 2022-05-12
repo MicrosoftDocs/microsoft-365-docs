@@ -23,7 +23,7 @@ description: Create and manage Teams classes and meetings with Microsoft OneDriv
 
 This guide provides the IT admin steps for registering both Teams Classes and Teams Meetings LTI apps on Moodle.
 
-For details on managing all LTI tools for any LMS, see [Manage Microsoft LTI for any LMS](manage-microsoft-one-lti.md).
+For details on managing all LTI apps for any LMS, see [Manage Microsoft LTI for any LMS](manage-microsoft-one-lti.md).
 
 ## Prerequisites before set up
 
@@ -88,7 +88,7 @@ You've completed registration of either the Teams Classes or Teams Meetings LTI 
 
 If you would like to add the other app too, repeat the steps above, selecting the other Teams LTI app in step 4.
 
-### Add Teams LTI tools to educators' Moodle courses
+### Add Teams LTI apps to educators' Moodle courses
 
 After registering Teams LTI apps, educators can add the Teams Classes app and the Teams Meetings app to their Moodle courses.
 
@@ -100,23 +100,23 @@ After registering Teams LTI apps, educators can add the Teams Classes app and th
 To launch the Teams LTI apps within Moodle, there are a few technical requirements that need to be met.
 
 > [!NOTE]
-> IT admins and educators can register LTI apps on the OneLTI portal.
+> IT admins and educators can register LTI apps on the LTI apps registration portal.
 
 ### IT admin technical requirements
 
 - Use Moodle version 3.10 or 3.11.
 - Download the latest Microsoft O365 plugin for Moodle version 3.10 or 3.11.
   - We're not supporting Moodle 4.0 at this moment, but an upgrade is in progress to support Moodle 4.0.
-- Access the OneLTI portal to register the LTI apps.
+- Access the LTI apps registration portal to register the LTI apps.
   - Registration must be on completed on a desktop device.
 - Download the latest version of Microsoft Edge, Google Chrome, Safari, or Mozilla Firefox.
 
 ### Educator technical requirements
 
-- Access the OneLTI portal to register the LTI apps, if the IT admin hasn't registered the apps.
+- Access the LTI apps registration portal to register the LTI apps, if the IT admin hasn't registered the apps.
   - Registration must be on completed on a desktop device.
 - Download the latest version of Microsoft Edge, Google Chrome, Safari, or Mozilla Firefox.
-- [Teams LTI apps for Classes and Meetings in Moodle](#add-teams-lti-tools-to-educators-moodle-courses).
+- [Teams LTI apps for Classes and Meetings in Moodle](#add-teams-lti-apps-to-educators-moodle-courses).
 
 ### Student technical requirements
 
