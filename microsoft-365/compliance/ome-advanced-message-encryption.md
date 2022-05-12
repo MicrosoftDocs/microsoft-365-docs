@@ -42,4 +42,6 @@ You can only revoke messages and apply expiration dates to messages that users r
 
 [Set an expiration date for email encrypted by Microsoft Purview Advanced Message Encryption](ome-advanced-expiration.md). Control sensitive emails shared outside the organization with automatic policies that enhance protection by expiring access through a secure web portal to encrypted emails.
 
-[Revoke email encrypted by Microsoft Purview Advanced Message Encryption](revoke-ome-encrypted-mail.md). Control sensitive emails shared outside the organization and enhance protection by revoking access through a secure web portal to encrypted emails.  
+[Revoke email encrypted by Microsoft Purview Advanced Message Encryption](revoke-ome-encrypted-mail.md). Control sensitive emails shared outside the organization and enhance protection by revoking access through a secure web portal to encrypted emails.
+
+[Encrypted message portal activity log by Microsoft Purview Advanced Message Encryption](ome-message-access-logs.md). Monitor sensitive emails shared outside the organization in the encrypted message portal.
