@@ -678,6 +678,38 @@
                 href: sit-defn-japan-resident-registration-number.md
               - name: Japan social insurance number (SIN)
                 href: sit-defn-japan-social-insurance-number.md
+              - name: Lab test terms
+                href: sit-defn-lab-test-terms.md
+              - name: Latvia drivers license number
+                href: sit-defn-latvia-drivers-license-number.md
+              - name: Latvia passport number
+                href: sit-defn-latvia-passport-number.md
+              - name: Latvia personal code
+                href: sit-defn-latvia-personal-code.md
+              - name: Latvia physical addresses
+                href: sit-defn-latvia-physical-addresses.md
+              - name: Liechtenstein physical addresses
+                href: sit-defn-liechtenstein-physical-addresses.md
+              - name: Lifestyles that relate to medical conditions
+                href: sit-defn-lifestyles-relate-to-medical-conditions.md
+              - name: Lithuania drivers license number
+                href: sit-defn-lithuania-drivers-license-number.md
+              - name: Lithuania personal code
+                href: sit-defn-lithuania-personal-code.md
+              - name: Lithuania physical addresses
+                href: sit-defn-lithuania-physical-addresses.md
+              - name: Lithuania passport number
+                href: sit-defn-lithuania-passport-number.md
+              - name: Luxemburg drivers license number
+                href: sit-defn-luxemburg-drivers-license-number.md
+              - name: Luxemburg national identification number (natural persons)
+                href: sit-defn-luxemburg-national-identification-number-natural persons.md
+              - name: Luxemburg national identification number (non-natural persons)
+                href: sit-defn-luxemburg-national-identification-number-non-natural-persons.md
+              - name: Luxemburg passport number
+                href: sit-defn-luxemburg-passport-number.md
+              - name: Luxemburg physical addresses
+                href: sit-defn-luxemburg-physical-addresses.md
           - name: Sensitive information type functions
             href: sit-functions.md
           - name: Custom sensitive information type filters reference
