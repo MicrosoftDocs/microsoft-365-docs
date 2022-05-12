@@ -44,15 +44,21 @@ You can see information from the following sections in the URL view:
 
 The **URL Worldwide** section lists the URL, a link to further details at Whois, the number of related open incidents, and the number of active alerts.
 
+(image)
+
 ## Incident
 
 The **Incident** card displays a bar chart of all active alerts in incidents over the past 180 days.
+
+(image)
 
 ## Prevalence
 
 The **Prevalence** card provides details on the prevalence of the URL within the organization, over a specified period of time.
 
 Although the default time period is the past 30 days, you can customize the range by selecting the downward-pointing arrow in the corner of the card. The shortest range available is for prevalence over the past day, while the longest range is over the past 6 months.
+
+(image)
 
 ## Alerts
 
@@ -70,9 +76,11 @@ You can view events from different periods of time by entering the dates into th
 
 1. Select **URL** from the **Search bar** drop-down menu.
 2. Enter the URL in the **Search** field.
-3. Click the search icon   or press **Enter**. Details about the URL are displayed. Note: search results will only be returned for URLs observed in communications from devices in the organization.
-4. Use the search filters to define the search criteria. You can also use the timeline search box to filter the displayed results of all devices in the organization observed communicating with the URL, the file associated with the communication and the last date observed.
-5. Clicking any of the device names will take you to that device's view, where you can continue investigate reported alerts, behaviors, and events.
+3. Click the search icon   or press **Enter**. Details about the URL are displayed. 
+   > [!NOTE]
+   > Search results will only be returned for URLs observed in communications from devices in the organization.
+5. Use the search filters to define the search criteria. You can also use the timeline search box to filter the displayed results of all devices in the organization observed communicating with the URL, the file associated with the communication and the last date observed.
+6. Clicking any of the device names will take you to that device's view, where you can continue investigate reported alerts, behaviors, and events.
 
 ## Related topics
 - [View and organize the Microsoft Defender for Endpoint Alerts queue](alerts-queue.md)
