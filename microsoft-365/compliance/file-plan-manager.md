@@ -162,7 +162,7 @@ A *.csv file that contains all existing retention labels opens. For example:
 
 In file plan, you can bulk-import new retention labels by using a .csv file with a specific format: 
 
-1. On the **File plan** page, click **Import**:
+1. On the **File plan** page, select **Import**:
    ![Option to import file plan](../media/compliance-file-plan-import-labels.png)
 
 2. On the **Fill out and import your file plan** pane, select **Download a blank template**:
