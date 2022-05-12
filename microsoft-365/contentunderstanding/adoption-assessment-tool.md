@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 description: Learn how to use the adoption assessment tool to see how your organization can benefit from SharePoint Syntex.
 ---
 
-# Assess your environment for opportunities with Microsoft SharePoint Syntex
+# Identify opportunities for SharePoint Syntex with the Microsoft 365 Assessment tool
 
 > [!IMPORTANT]
 > The Microsoft 365 Assessment tool and all other PnP components are open-source tools backed by an active community providing support for them. There is no SLA for open-source tool support from official Microsoft support channels. 
