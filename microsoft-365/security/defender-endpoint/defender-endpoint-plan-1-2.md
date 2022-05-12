@@ -1,5 +1,5 @@
 ---
-title: Compare Microsoft Defender for Endpoint Plan 1 to Plan 2
+title: Compare Microsoft Defender for Endpoint plans
 description: Compare Defender for Endpoint Plan 1 to Plan 2. Learn about the differences between the plans and select the plan that suits your organization's needs.
 keywords: Defender for Endpoint, advanced threat protection, endpoint protection
 search.appverid: MET150  
@@ -19,27 +19,22 @@ ms.collection:
 - m365initiative-defender-endpoint
 ---
 
-# Microsoft Defender for Endpoint Plan 1 and Plan 2
+# Compare Microsoft Defender for Endpoint plans
 
-**Applies to**
+Microsoft Defender for Endpoint is an enterprise endpoint security platform designed to help enterprise networks prevent, detect, investigate, and respond to advanced threats. Defender for Endpoint provides advanced threat protection that includes antivirus, antimalware, ransomware mitigation, and more, together with centralized management and reporting. You can choose from the following options for Microsoft Defender for Endpoint:
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender Vulnerability Management](../defender-vulnerability-management/index.yml)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Microsoft Defender for Endpoint is an enterprise endpoint security platform designed to help enterprise networks prevent, detect, investigate, and respond to advanced threats. Defender for Endpoint provides advanced threat protection that includes antivirus, antimalware, ransomware mitigation, and more, together with centralized management and reporting. Two plans are available:   
- 
-- [Microsoft Defender for Endpoint Plan 1](defender-endpoint-plan-1.md); and 
-- [Microsoft Defender for Endpoint Plan 2](microsoft-defender-endpoint.md), formerly known as [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md).
+You can use this article to help clarify what protection is provided by the different features available in Defender for Endpoint Plan 1, Defender for Endpoint Plan 2 and the Defender Vulnerability Management add-on.
 
-## Compare Defender for Endpoint plans
-
-The following table describes what's included in each plan at a high level. <br/><br/>
-
-| [Defender for Endpoint Plan 1](defender-endpoint-plan-1.md) | [Defender for Endpoint Plan 2](microsoft-defender-endpoint.md) |
-|:---|:---|
-| [Next-generation protection](defender-endpoint-plan-1.md#next-generation-protection) <br/>(includes antimalware and antivirus) <p> [Attack surface reduction](defender-endpoint-plan-1.md#attack-surface-reduction) <p> [Manual response actions](defender-endpoint-plan-1.md#manual-response-actions) <p> [Centralized management](defender-endpoint-plan-1.md#centralized-management) <p>[Security reports](defender-endpoint-plan-1.md#reporting) <p>[APIs](defender-endpoint-plan-1.md#apis)  | [Defender for Endpoint Plan 1](defender-endpoint-plan-1.md), plus: <p> [Device discovery](device-discovery.md) <p> [Threat and vulnerability management](next-gen-threat-and-vuln-mgt.md) <p> [Threat Analytics](threat-analytics.md) <p> [Automated investigation and response](automated-investigations.md) <p> [Advanced hunting](advanced-hunting-overview.md) <p> [Endpoint detection and response](overview-endpoint-detection-response.md) <p> [Microsoft Threat Experts](microsoft-threat-experts.md)  |
-| [Support for Windows 10, iOS, Android OS, and macOS devices](defender-endpoint-plan-1.md#cross-platform-support) | Support for Windows (client and server) and non-Windows platforms<br/> (macOS, iOS, Android, and Linux) |
-| To try Defender for Endpoint Plan 1, visit [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial). | To try Defender for Endpoint Plan 2, visit [https://aka.ms/MDEp2OpenTrial](https://aka.ms/MDEp2OpenTrial). |
+| [Defender for Endpoint Plan 1](defender-endpoint-plan-1.md) | [Defender for Endpoint Plan 2](microsoft-defender-endpoint.md) | [Defender Vulnerability Management add-on](../defender-vulnerability-management/defender-vulnerability-management-capabilities.md)|
+|:---|:---|:---|
+| [Next-generation protection](defender-endpoint-plan-1.md#next-generation-protection) <br/>(includes antimalware and antivirus) <p> [Attack surface reduction](defender-endpoint-plan-1.md#attack-surface-reduction) <p> [Manual response actions](defender-endpoint-plan-1.md#manual-response-actions) <p> [Centralized management](defender-endpoint-plan-1.md#centralized-management) <p>[Security reports](defender-endpoint-plan-1.md#reporting) <p>[APIs](defender-endpoint-plan-1.md#apis) | Defender for Endpoint Plan 1 capabilities, plus: <p> <p> [Device discovery](device-discovery.md) <p> [Device inventory](machines-view-overview.md) <p> [Core Defender Vulnerability Management capabilities](../defender-vulnerability-management/defender-vulnerability-management-capabilities.md) <p> [Threat Analytics](threat-analytics.md) <p> [Automated investigation and response](automated-investigations.md) <p> [Advanced hunting](advanced-hunting-overview.md) <p> [Endpoint detection and response](overview-endpoint-detection-response.md) <p> [Microsoft Threat Experts](microsoft-threat-experts.md) | Additional Defender Vulnerability Management for Defender for Endpoint Plan 2: <p> [Security baselines assessment](../defender-vulnerability-management/tvm-security-baselines.md) <p> [Block vulnerable applications](../defender-vulnerability-management/tvm-block-vuln-apps.md) <p> [Browser extensions](../defender-vulnerability-management/tvm-browser-extensions.md) <p> [Digital certificate assessment](../defender-vulnerability-management/tvm-certificate-inventory.md) <p> [Network share analysis](../defender-vulnerability-management/tvm-network-share-assessment.md)|
+| [Support for Windows 10, iOS, Android OS, and macOS devices](defender-endpoint-plan-1.md#cross-platform-support) | Support for Windows (client and server) and non-Windows platforms<br/> (macOS, iOS, Android, and Linux) | Support for Windows (client and server) and non-Windows platforms<br/> (macOS, iOS, Android, and Linux) |
+| To try Defender for Endpoint Plan 1, visit [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) | To try Defender for Endpoint Plan 2, visit [https://aka.ms/MDEp2OpenTrial](https://aka.ms/MDEp2OpenTrial) | To try Microsoft Defender Vulnerability Management add-on, visit [https://aka.ms/AddonPreviewTrial](https://aka.ms/AddonPreviewTrial). For more information, see [Get Defender Vulnerability Management](../defender-vulnerability-management/get-defender-vulnerability-management.md).
 
 ## Next steps
 
