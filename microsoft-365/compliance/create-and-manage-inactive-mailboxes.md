@@ -63,13 +63,13 @@ To view a list of the inactive mailboxes in your organization:
 
 2. In the left navigation pane, select **Show all**, and then select **Data lifecycle management** > **Retention policies**.
 
-3. Select the **Inactive mailbox** option to display a list of inactive mailboxes:
+3. Select the **Inactive mailbox** option:
 
    ![Inactive Mailbox option on the Retention policies page from data lifecycle management.](../media/inactive-mailbox-option.png)
 
-4. On the **Inactive mailboxes** page, select an inactive mailbox to see details about that inactive mailbox. Details include how long it's been inactive, the Exchange identifier, when by whom it was put on hold.
+4. The **Inactive mailboxes** page displays a list of inactive mailboxes. Select one to see details about that inactive mailbox. Details include how long it's been inactive, the Exchange identifier, when by whom it was put on hold.
 
-Select ![Export search results icon.](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **Export** to view or download a CSV file that contains additional information about the inactive mailboxes in your organization.
+On the **Inactive mailboxes** page, select ![Export search results icon.](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **Export** to view or download a CSV file that contains additional information about the inactive mailboxes in your organization.
 
 Alternatively, you can run the following command in Exchange Online PowerShell to display the list of inactive mailboxes:
 
