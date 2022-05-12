@@ -413,7 +413,7 @@
     {
       "source_path": "microsoft-365/business/view-policies-and-devices.md",
       "redirect_url": "/microsoft-365/business-premium/m365bp-view-policies-and-devices",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/business/app-protection-settings-for-android-and-ios.md",
