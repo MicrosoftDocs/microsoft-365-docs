@@ -43,7 +43,7 @@ Here's my recommended flow for this playbook:
 - share a document with a team member https://support.microsoft.com/en-us/office/share-your-documents-651e1cb9-9a51-46dc-8d32-bdb7d928eedd
 
 5. Start using the Defender portal https://docs.microsoft.com/en-us/microsoft-365/security/defender-business/mdb-get-started?view=o365-worldwide
-- review security recommendations https://docs.microsoft.com/en-us/microsoft-365/security/defender-vulnerability-management/tvm-security-recommendation?view=o365-worldwide
+- assess your security posture https://docs.microsoft.com/en-us/microsoft-365/security/defender/microsoft-secure-score-improvement-actions?view=o365-worldwide
 - learn how to respond to a security incident https://docs.microsoft.com/en-us/microsoft-365/security/defender-business/mdb-respond-mitigate-threats?view=o365-worldwide
 - review remediation actions https://docs.microsoft.com/en-us/microsoft-365/security/defender-business/mdb-review-remediation-actions?view=o365-worldwide
 
