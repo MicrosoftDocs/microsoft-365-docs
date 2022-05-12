@@ -52,7 +52,7 @@ If you don't see the **Archive** page in the Microsoft Purview compliance portal
 
 3. In the list of mailboxes, select the user that you want to enable the archive mailbox for and select **Enable Archive**.
 
-   ![Click Enable in the details pane of the selected user to enable the archive mailbox.](../media/8b53cdec-d5c9-4c28-af11-611f95c37b34.png)
+   ![Enable archive option for a selected user.](../media/enable-archive-option.png)
 
 
    A warning is displayed saying that if you enable the archive mailbox, items in the user's mailbox that are older than the archiving policy assigned to the mailbox will be moved to the new archive mailbox. The default archive policy that is part of the retention policy assigned to Exchange Online mailboxes moves items to the archive mailbox two years after the date the item was delivered to the mailbox or created by the user. For more information, see the **More info** section in this article.
