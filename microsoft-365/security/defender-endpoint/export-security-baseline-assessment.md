@@ -48,7 +48,16 @@ Data that is collected using either '_JSON response_ or _via files_' is the curr
 
 Returns all security baselines assessments for all devices, on a per-device basis. It returns a table with a separate entry for every unique combination of DeviceId, ProfileId, ConfigurationId.
 
-#### 1.2 Limitations
+### 1.2 Permissions
+
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md) for details.
+
+Permission type|Permission|Permission display name
+:---|:---|:---
+Application|SecurityBaselinesAssessment.Read/.All |'Read security baselines assessments information'
+Delegated (work or school account)|Vulnerability.Read|'Read security baselines assessments information'
+
+### 1.2 Limitations
 
 - Maximum page size is 200,000.
 - Rate limitations for this API are 30 calls per minute and 1000 calls per hour.
