@@ -31,7 +31,7 @@ description: "How to create a custom Messaging Records Management (MRM) archivin
 
 Microsoft Purview admins can create an archiving and deletion policy that automatically moves items to a user's [archive mailbox](archive-mailboxes.md) and automatically deletes items from the mailbox.
 
-You do this by by creating a Messaging Records Management (MRM) retention policy that's assigned to mailboxes, and moves items to a user's archive mailbox after a certain period of time and that also deletes items from the mailbox after they reach a certain age limit. 
+You do this by by creating a Messaging Records Management (MRM) retention policy that's assigned to mailboxes, and moves items to a user's archive mailbox after a certain period of time and that also deletes items from the mailbox after they reach a certain age limit.
 
 The actual rules that determine what items are moved or deleted and when that happens are called retention tags. Retention tags are linked to an MRM retention policy, that in turn is assigned to a user's mailbox. A retention tag applies retention settings to individual messages and folders in a user's mailbox. It defines how long a message remains in the mailbox and what action is taken when the message reaches the specified retention age. When a message reaches its retention age, it's either moved to the user's archive mailbox or it's deleted.
   
@@ -53,43 +53,20 @@ You can follow some or all of the steps in this article to set up an archive and
   
 ## Before you set up an archive and deletion policy
 
-- You have to be a global administrator in your organization to perform the steps in this topic. 
+- You must be a global administrator in your organization to perform the steps in this article.
 
-- When you create a new user account and assign the user an Exchange Online license, a mailbox is automatically created for the user. When the mailbox is created, it's automatically assigned a default retention policy, named Default MRM Policy. In this article, you will create a new retention policy and then assign it to user mailboxes, replacing the Default MRM policy. A mailbox can have only one retention policy assigned to it at any one time.
+- When you create a new user account and assign the user an Exchange Online license, a mailbox is automatically created for the user. When the mailbox is created, it's automatically assigned a default retention policy, named Default MRM Policy. In this article, you will create a new MRM retention policy and then assign it to user mailboxes, replacing the Default MRM policy. A mailbox can have only one MRM retention policy assigned to it at any one time.
 
-- To learn more about retention tags and retention policies in Exchange Online, see [Retention tags and retention policies](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies).
+- To learn more about retention tags and MRM retention policies in Exchange Online, see [Retention tags and retention policies](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies).
 
 ## Step 1: Enable archive mailboxes for users
 
-The first step is to enable the archive mailbox for each user in your organization. A user's archive mailbox has to be enabled so that a retention tag with a "Move to Archive" retention action can move the item after the retention age expires.
+The first step is to ensure each user in your organization has an archive mailbox. A user's archive mailbox must be enabled so that a retention tag with a "Move to Archive" retention action can move the item after the retention age expires.
+
+For instructions to enable archive mailboxes, see [Enable archive mailboxes in the Microsoft Purview compliance portal](enable-archive-mailboxes.md).
   
 > [!NOTE]
 > You can enable archive mailboxes any time during this process, just as long as they're enabled at some point before you complete the process. If an archive mailbox isn't enabled, no action is taken on any items that have an archive or deletion policy assigned to it.
-  
-1. Go to the [Microsoft Purview compliance portal](https://compliance.microsoft.com).
-
-2. Sign in using your global administrator account.
-    
-3. In the Microsoft Purview compliance portal, select **Data lifecycle management**, and then click the **Archive** tab.
-
-    A list of the mailboxes in your organization is displayed and whether the corresponding archive mailbox is enabled or disabled.
-
-4. Select all the mailboxes by clicking on the first one in the list, holding down the **Shift** key, and then clicking the last one in the list.
-
-    > [!TIP]
-    > This step assumes that no archive mailboxes are enabled. If you have any mailboxes with the archive enabled, hold down the **Ctrl** key and click each mailbox that has a disabled archive mailbox. Or you can click the **Archive mailbox** column header to sort the rows based on whether the archive mailbox is enabled or disabled to make it easier to select mailboxes.
-  
-5. In the details pane, under **Bulk Edit**, click **Enable**.
-
-    A warning is displayed saying that items that are older than two years will be moved to the new archive mailbox. This is because the default retention policy that's assigned a new user mailbox when it's created has an archive default policy tag that has a retention age of 2 years. The custom archive default policy tag that you'll create in Step 2 has a retention age of 3 years. That means items that are 3 years or older will be moved to the archive mailbox.
-
-6. Click **Yes** to close the warning message and start the process to enable the archive mailbox for each selected mailbox.
-
-7. When the process is complete, click **Refresh** ![refresh.](../media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) to update the list on the **Archive** page.
-
-    The archive mailbox is enabled for all user's in your organization.
-
-    ![The list of mailboxes with the archive mailbox enabled.](../media/61a7cb97-1bed-4808-aa5f-b6b761cfa8de.png)
 
 ## Step 2: Create new retention tags for the archive and deletion policies
 
@@ -254,12 +231,21 @@ Here are the steps to connect to Exchange Online PowerShell, and then run the Ma
 
 That's it! You've set up an archive and deletion policy for the Alpine House organization.
 
-> [!NOTE]
-> As previously stated, the Managed Folder Assistant processes mailboxes at least once every 7 days. So it's possible that a mailbox can be processed by the Managed Folder Assistant more frequently. Also, admins can't predict the next time a mailbox is processed by the Managed Folder Assistant, which is one reason why you may want to run it manually. However, if you want to temporarily prevent the Managed Folder Assistant from applying the new retention settings to a mailbox, you can run the `Set-Mailbox -ElcProcessingDisabled $true` command to temporarily disable the the Managed Folder Assistant from processing a mailbox. To re-enable the Managed Folder Assistant for a mailbox, run the `Set-Mailbox -ElcProcessingDisabled $false` command. Finally, if a mailbox user has a disabled account, we will not process the move items to archive action for that mailbox.
+### More information about the Managed Folder Assistant
+
+As previously stated, the Managed Folder Assistant processes mailboxes at least once every 7 days. So it's possible that a mailbox can be processed by the Managed Folder Assistant more frequently. Also, admins can't predict the next time a mailbox is processed by the Managed Folder Assistant, which is one reason why you might want to run it manually. 
+
+However, if you want to temporarily prevent the Managed Folder Assistant from applying the new retention settings to a mailbox, you can run the `Set-Mailbox -ElcProcessingDisabled $true` command to temporarily disable the the Managed Folder Assistant from processing a mailbox. 
+
+To re-enable the Managed Folder Assistant for a mailbox, run the `Set-Mailbox -ElcProcessingDisabled $false` command. 
+
+Finally, if a mailbox user has a disabled account, items aren't moved to the archive mailbox for that mailbox.
   
 ## (Optional) Step 6: Make the new retention policy the default for your organization
 
-In Step 4, you have to assign the new retention policy to existing mailboxes. But you can configure Exchange Online so that the new retention policy is assigned to new mailboxes that are created in the future. You do this by using Exchange Online PowerShell to update your organization's default mailbox plan. A *mailbox plan* is a template that automatically configures properties on new mailboxes.  In this optional step, you can replace the current retention policy that's assigned to the mailbox plan (by default, the Default MRM Policy) with the retention policy that you created in Step 3. After you update the mailbox plan, the new retention policy will be assigned to new mailboxes.
+In Step 4, you have to assign the new retention policy to existing mailboxes. But you can configure Exchange Online so that the new retention policy is assigned to new mailboxes that are created in the future. 
+
+You do this by using Exchange Online PowerShell to update your organization's default mailbox plan. A *mailbox plan* is a template that automatically configures properties on new mailboxes.  In this optional step, you can replace the current retention policy that's assigned to the mailbox plan (by default, the Default MRM Policy) with the MRM retention policy that you created in Step 3. After you update the mailbox plan, the new MRM retention policy will be assigned to new mailboxes.
 
 1. [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -268,22 +254,22 @@ In Step 4, you have to assign the new retention policy to existing mailboxes. Bu
     ```powershell
     Get-MailboxPlan | Format-Table DisplayName,RetentionPolicy,IsDefault
     ```
-
+    
     Note the mailbox plan that's set as the default.
 
-3. Run the following command to assign the new retention policy that you created in Step 3 (for example, **Alpine House Archive and Retention Policy**) to the default mailbox plan. This example assumes the name of the default mailbox plan is **ExchangeOnlineEnterprise**.
-
+3. Run the following command to assign the new MRM retention policy that you created in Step 3 (for example, **Alpine House Archive and Retention Policy**) to the default mailbox plan. This example assumes the name of the default mailbox plan is **ExchangeOnlineEnterprise**.
+    
     ```powershell
     Set-MailboxPlan "ExchangeOnlineEnterprise" -RetentionPolicy "Alpine House Archive and Retention Policy"
     ```
 
-4. You can rerun the command in step 2 to verify that the retention policy assigned to the default mailbox plan was changed.
+4. You can rerun the command in step 2 to verify that the MRM retention policy assigned to the default mailbox plan was changed.
 
 ## More information
 
-- How is retention age calculated? The retention age of mailbox items is calculated from the date of delivery or the date of creation for items such as draft messages that aren't sent but are created by the user. When the Managed Folder Assistant processes items in a mailbox, it stamps a start date and an expiration date for all items that have retention tags with the Delete and Allow Recovery or Permanently Delete retention action. Items that have an archive tag are stamped with a move date. 
+- The retention age of mailbox items is calculated from the date of delivery or the date of creation for items such as draft messages that aren't sent but are created by the user. When the Managed Folder Assistant processes items in a mailbox, it stamps a start date and an expiration date for all items that have retention tags with the Delete and Allow Recovery or Permanently Delete retention action. Items that have an archive tag are stamped with a move date.
 
-- The following table provides more information about each retention tag that is added to the custom retention policy that was created by following the steps in this topic.
+- The following table provides more information about each retention tag that is added to the custom MRM retention policy that was created by following the steps in this article.
 
     | Retention tag | What this tag does | Built-in or custom? | Type |
     |:-----|:-----|:-----|:-----|
@@ -297,6 +283,6 @@ In Step 4, you have to assign the new retention policy to existing mailboxes. Bu
     |Never Delete  <br/> |This tag prevents items from being deleted by a retention policy.  <br/> |Built-in  <br/> |Personal; this tag can be applied by users.  <br/> |
     |Personal 1 year move to archive  <br/> |Moves items to the archive mailbox after 1 year.  <br/> |Built-in  <br/> |Personal; this tag can be applied by users.  <br/> |
 
-    > <sup>\*</sup> Users can use the Recover Deleted Items tool in Outlook and Outlook on the web (formerly known as Outlook Web App) to recover a deleted item within the deleted item retention period, which by default is 14 days in Exchange Online. An administrator can use Windows PowerShell to increase the deleted item retention period to a maximum of 30 days. For more information, see: [Recover deleted items in Outlook for Windows](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce) and [Change the deleted item retention period for a mailbox in Exchange Online](/exchange/recipients-in-exchange-online/manage-user-mailboxes/change-deleted-item-retention)
+    > <sup>\*</sup> Users can use the Recover Deleted Items tool in Outlook and Outlook on the web (formerly known as Outlook Web App) to recover a deleted item within the deleted item retention period, which by default is 14 days in Exchange Online. An administrator can use Windows PowerShell to increase the deleted item retention period to a maximum of 30 days. For more information, see: [Recover deleted items in Outlook for Windows](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce) and [Change the deleted item retention period for a mailbox in Exchange Online](/exchange/recipients-in-exchange-online/manage-user-mailboxes/change-deleted-item-retention).
   
-- Using the **Recoverable Items 14 days Move to Archive** retention tag helps free up storage space in the Recoverable Items folder in the user's primary mailbox. This is useful when a user's mailbox is placed on hold, which means nothing is ever permanently deleted the user's mailbox. Without moving items to the archive mailbox, it's possible the storage quota for the Recoverable Items folder in the primary mailbox will be reached. For more information about this and how to avoid it, see [Increase the Recoverable Items quota for mailboxes on hold](./increase-the-recoverable-quota-for-mailboxes-on-hold.md).
+- Using the **Recoverable Items 14 days Move to Archive** retention tag helps free up storage space in the Recoverable Items folder in the user's primary mailbox. This is useful when a user's mailbox is placed on hold, which means nothing is ever permanently deleted from the user's mailbox. Without moving items to the archive mailbox, it's possible the storage quota for the Recoverable Items folder in the primary mailbox will be reached. For more information about this and how to avoid it, see [Increase the Recoverable Items quota for mailboxes on hold](./increase-the-recoverable-quota-for-mailboxes-on-hold.md).
