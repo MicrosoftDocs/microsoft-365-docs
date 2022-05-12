@@ -257,7 +257,7 @@ This training should include hands-on exercises so that your team members can ex
 
 In the weeks after training:
 
-- Quickly address team member feedback and fine tune polices and configurations.
+- Quickly address team member feedback and fine tune policies and configurations.
 - Analyze usage for the team and compare it with usage expectations.
 - Verify that highly regulated files have been properly labeled with the sensitivity label. (You can see which files have a label assigned by viewing a folder in SharePoint and adding the **Sensitivity** column through the **Show/hide columns** option of **Add column**.
 
