@@ -640,6 +640,44 @@
                 href: sit-defn-ip-address-v4.md
               - name: IP address v6
                 href: sit-defn-ip-address-v6.md
+              - name: Ireland drivers license number
+                href: sit-defn-ireland-drivers-license-number.md
+              - name: Ireland passport number
+                href: sit-defn-ireland-passport-number.md
+              - name: Ireland personal public service (PPS) number
+                href: sit-defn-ireland-personal-public-service-number.md
+              - name: Ireland physical addresses
+                href: sit-defn-ireland-physical-addresses.md
+              - name: Israel bank account number
+                href: sit-defn-israel-bank-account-number.md
+              - name: Israel national identification number
+                href: sit-defn-israel-national-identification-number.md
+              - name: Italy drivers license number
+                href: sit-defn-italy-drivers-license-number.md
+              - name: Italy fiscal code
+                href: sit-defn-italy-fiscal-code.md
+              - name: Italy passport number
+                href: sit-defn-italy-passport-number.md
+              - name: Italy physical addresses
+                href: sit-defn-italy-physical-addresses.md
+              - name: Italy value added tax number
+                href: sit-defn-italy-value-added-tax-number.md
+              - name: Japan bank account number
+                href: sit-defn-japan-bank-account-number.md
+              - name: Japan drivers license number
+                href: sit-defn-japan-drivers-license-number.md
+              - name: Japan My Number - Corporate
+                href: sit-defn-japan-my-number-corporate.md
+              - name: Japan My Number - Personal
+                href: sit-defn-japan-my-number-personal.md
+              - name: Japan passport number
+                href: sit-defn-japan-passport-number.md
+              - name: Japan residence card number
+                href: sit-defn-japan-residence-card-number.md
+              - name: Japan resident registration number
+                href: sit-defn-japan-resident-registration-number.md
+              - name: Japan social insurance number (SIN)
+                href: sit-defn-japan-social-insurance-number.md
           - name: Sensitive information type functions
             href: sit-functions.md
           - name: Custom sensitive information type filters reference
