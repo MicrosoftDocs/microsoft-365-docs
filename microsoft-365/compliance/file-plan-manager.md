@@ -150,7 +150,7 @@ However, it can take up to two days for content explorer to show the items that 
 
 From your file plan, you can export the details of all retention labels into a .csv file to help you facilitate periodic compliance reviews with data governance stakeholders in your organization.
 
-To export all retention labels: On the **File plan** page, click **Export**:
+To export all retention labels: On the **File plan** page, select **Export**:
 
 ![Option to export file plan.](../media/compliance-file-plan-export-labels.png)
 
