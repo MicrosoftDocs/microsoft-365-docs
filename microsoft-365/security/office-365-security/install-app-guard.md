@@ -43,10 +43,13 @@ To learn more about Office update channels, see [Overview of update channels for
 
 ### Licensing requirements
 
-* Microsoft 365 E5 or Microsoft 365 E5 Security
+* Microsoft 365 E5 Security
+* Microsoft 365 A5 for Faculty
+* Microsoft 365 A5 for Students
 
 > [!NOTE]
 > Microsoft 365 Apps for enterprise with shared computer activation or device-based licensing do not have access to Application Guard for Office.
+> Safe Documents licensing plans allow access to Application Gurad for Office. For more information, see [Safe Documents in Microsoft 365 E5/A5](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/safe-docs?msclkid=279c718bd08811ec93a29310a7e2c785&view=o365-worldwide).
 
 ## Deploy Application Guard for Office
 
