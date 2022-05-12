@@ -156,7 +156,7 @@ To add an onmicrosoft.com domain:
 
 1. Go to the Microsoft admin center, **Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
 
-2. On the **Domains** page, select your current ***.onmicrosoft.com(Default)** domain.
+2. On the **Domains** page, select your current ***.onmicrosoft.com (Default)** domain.
 
 3. On the **Overview** tab, select **Add onmicrosoft.com domain**.
 
