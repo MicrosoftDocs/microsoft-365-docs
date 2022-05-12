@@ -31,23 +31,23 @@ description: "How to create a custom Messaging Records Management (MRM) archivin
 
 Microsoft Purview admins can create an archiving and deletion policy that automatically moves items to a user's [archive mailbox](archive-mailboxes.md) and automatically deletes items from the mailbox.
 
-You do this by by creating a Messaging Records Management (MRM) retention policy that's assigned to mailboxes, and moves items to a user's archive mailbox after a certain period of time and that also deletes items from the mailbox after they reach a certain age limit.
+You do this by creating a Messaging Records Management (MRM) retention policy that you then assign to mailboxes. This policy moves items to a user's archive mailbox after a specified period of time and also deletes items from the mailbox after they reach a certain age limit.
 
 The actual rules that determine what items are moved or deleted and when that happens are called retention tags. Retention tags are linked to an MRM retention policy, that in turn is assigned to a user's mailbox. A retention tag applies retention settings to individual messages and folders in a user's mailbox. It defines how long a message remains in the mailbox and what action is taken when the message reaches the specified retention age. When a message reaches its retention age, it's either moved to the user's archive mailbox or it's deleted.
   
 The steps in this article set up an archiving and retention policy for a fictitious organization named Alpine House. Setting up this policy includes the following tasks:
   
-- Enabling an archive mailbox for every user in the organization. This gives users additional mailbox storage, and is required so that a retention policy can move items to the archive mailbox. It also lets a user store archival information by moving items to their archive mailbox.
+- Enable an archive mailbox for every user in the organization. This procedure gives users more mailbox storage, and is required so that a retention policy can automatically move items to the archive mailbox. A user can also manually move items to their archive mailbox for archival storage.
 
-- Creating three custom retention tags that do the following:
+- Create three custom retention tags to do the following actions:
 
-  - Automatically moves items that are 3 years old to the user's archive mailbox. Moving items to the archive mailbox frees up space in a user's primary mailbox.
+  - Automatically move items that are 3 years old to the user's archive mailbox. Moving items to the archive mailbox frees up space in a user's primary mailbox.
 
-  - Automatically deletes items that are 5 years old from the Deleted Items folder. This also frees up space in the user's primary mailbox. User's will have the opportunity to recover these items if necessary. See the footnote in the [More information](#more-information) section for more details. 
+  - Automatically delete items that are 5 years old from the Deleted Items folder. This also frees up space in the user's primary mailbox. User's will have the opportunity to recover these items if necessary. See the footnote in the [More information](#more-information) section for more details. 
 
-  - Automatically (and permanently) deletes items that are 7 years old from both the primary and archive mailbox. Because of compliance regulations, some organization's are required to retain email for a certain period of time. After this time period expires, an organization might want to permanently remove these items user mailboxes.
+  - Automatically (and permanently) delete items that are 7 years old from both the primary and archive mailbox. Because of compliance regulations, some organization's are required to retain email for a specific period of time. When this time period expires, an organization might want to permanently remove these items from user mailboxes.
 
-- Creating a new retention policy and adding the new custom retention tags to it. Additionally, you'll also add built-in retention tags to the new retention policy. This includes personal tags that users can assign to items in their mailbox. You'll also add a retention tag that moves items from the Recoverable Items folder in the user's primary mailbox to the Recoverable Items folder in their archive mailbox. This helps free up space in a user's Recoverable Items folder when their mailbox is placed on hold.
+- Create a new retention policy and adding the new custom retention tags to it. Additionally, you'll also add built-in retention tags to the new retention policy. This includes personal tags that users can assign to items in their mailbox. You'll also add a retention tag that moves items from the Recoverable Items folder in the user's primary mailbox to the Recoverable Items folder in their archive mailbox. This action helps free up space in a user's Recoverable Items folder when their mailbox is placed on hold.
 
 You can follow some or all of the steps in this article to set up an archive and deletion policy for mailboxes in your own organization. We recommend that you test this process on a few mailboxes before implementing it on all mailboxes in your organization.
   
@@ -55,7 +55,7 @@ You can follow some or all of the steps in this article to set up an archive and
 
 - You must be a global administrator in your organization to perform the steps in this article.
 
-- When you create a new user account and assign the user an Exchange Online license, a mailbox is automatically created for the user. When the mailbox is created, it's automatically assigned a default retention policy, named Default MRM Policy. In this article, you will create a new MRM retention policy and then assign it to user mailboxes, replacing the Default MRM policy. A mailbox can have only one MRM retention policy assigned to it at any one time.
+- When you create a new user account and assign the user an Exchange Online license, a mailbox is automatically created for the user. When the mailbox is created, it's automatically assigned a default retention policy, named Default MRM Policy. In this article, you'll create a new MRM retention policy and then assign it to user mailboxes, replacing the Default MRM policy. A mailbox can have only one MRM retention policy assigned to it at any one time.
 
 - To learn more about retention tags and MRM retention policies in Exchange Online, see [Retention tags and retention policies](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies).
 
@@ -132,7 +132,7 @@ Next, you'll create another custom DPT but this one will be a deletion policy th
 
 ### Create a custom retention policy tag for the Deleted Items folder
   
-The last retention tag that you'll create is a custom retention policy tag (RPT) for the Deleted Items folder. This tag will delete items in the Deleted Items folder after 5 years, and provides a recovery period when users can use the Recover Deleted Items tool to recover an item.
+The last retention tag to create is a custom retention policy tag (RPT) for the Deleted Items folder. This tag will delete items in the Deleted Items folder after 5 years, and provides a recovery period when users can use the Recover Deleted Items tool to recover an item.
   
 1. On the **Retention tags** page, click **New tag** ![New icon.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif), and then select **applied automatically to a default folder**.
 
@@ -185,7 +185,7 @@ After you create the custom retention tags, the next step is to create a new ret
   
 ## Step 4: Assign the new retention policy to user mailboxes
 
-When a new mailbox is created, a retention policy named Default MRM policy is assigned to it by default. In this step, you'll replace this retention policy (because a mailbox can have only one retention policy assigned to it) by assigning the new retention policy that you created in Step 3 to the user mailboxes in your organization. This step assumes that you'll assign the new policy to all mailboxes in your organization.
+When a new mailbox is created, a retention policy named Default MRM policy is assigned to it by default. In this step, you'll replace this retention policy by assigning the new retention policy that you created in Step 3 to the user mailboxes in your organization. Replacement is required because a mailbox can have only one MRM retention policy assigned to it at a time. This step assumes that you'll assign the new policy to all mailboxes in your organization.
   
 1. In the EAC, go to **Recipients** > **Mailboxes**.
 
@@ -201,7 +201,7 @@ When a new mailbox is created, a retention policy named Default MRM policy is as
 
 6. Click **Save** to save the new retention policy assignment.
 
-7. To verify that the new retention policy was assigned to mailboxes, you can do the following:
+7. To verify that the new retention policy was assigned to mailboxes:
 
    1. Select a mailbox on the **Mailboxes** page, and then click **Edit** ![Edit.](../media/d7dc7e5f-17a1-4eb9-b42d-487db59e2e21.png).
 
@@ -235,7 +235,7 @@ That's it! You've set up an archive and deletion policy for the Alpine House org
 
 As previously stated, the Managed Folder Assistant processes mailboxes at least once every 7 days. So it's possible that a mailbox can be processed by the Managed Folder Assistant more frequently. Also, admins can't predict the next time a mailbox is processed by the Managed Folder Assistant, which is one reason why you might want to run it manually. 
 
-However, if you want to temporarily prevent the Managed Folder Assistant from applying the new retention settings to a mailbox, you can run the `Set-Mailbox -ElcProcessingDisabled $true` command to temporarily disable the the Managed Folder Assistant from processing a mailbox. 
+However, if you want to temporarily prevent the Managed Folder Assistant from applying the new retention settings to a mailbox, you can run the `Set-Mailbox -ElcProcessingDisabled $true` command to temporarily disable the Managed Folder Assistant from processing a mailbox. 
 
 To re-enable the Managed Folder Assistant for a mailbox, run the `Set-Mailbox -ElcProcessingDisabled $false` command. 
 
@@ -267,14 +267,14 @@ You do this by using Exchange Online PowerShell to update your organization's de
 
 ## More information
 
-- The retention age of mailbox items is calculated from the date of delivery or the date of creation for items such as draft messages that aren't sent but are created by the user. When the Managed Folder Assistant processes items in a mailbox, it stamps a start date and an expiration date for all items that have retention tags with the Delete and Allow Recovery or Permanently Delete retention action. Items that have an archive tag are stamped with a move date.
+- The retention age of mailbox items is calculated from the date of delivery. Or from the date of creation for items such as draft messages that aren't sent but are created by the user. When the Managed Folder Assistant processes items in a mailbox, it stamps a start date and an expiration date for all items that have retention tags with the Delete and Allow Recovery or Permanently Delete retention action. Items that have an archive tag are stamped with a move date.
 
-- The following table provides more information about each retention tag that is added to the custom MRM retention policy that was created by following the steps in this article.
+- The following table provides more information about each retention tag for the custom MRM retention policy in this article.
 
     | Retention tag | What this tag does | Built-in or custom? | Type |
     |:-----|:-----|:-----|:-----|
     |Alpine House 3 Year Move to Archive  <br/> |Moves items that are 1095 days (3 years) old to the archive mailbox.  <br/> |Custom (See [Step 2: Create new retention tags for the archive and deletion policies](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |Default Policy Tag (archive); this tag is automatically applied to the entire mailbox.  <br/> |
-    |Alpine House 7 Year Permanently Delete  <br/> |Permanently deletes items in the primary mailbox or the archive mailbox when they are 7 years old.  <br/> |Custom (See [Step 2: Create new retention tags for the archive and deletion policies](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |Default Policy Tag (deletion); this tag is automatically applied to the entire mailbox.  <br/> |
+    |Alpine House 7 Year Permanently Delete  <br/> |Permanently deletes items in the primary mailbox or the archive mailbox when they're 7 years old.  <br/> |Custom (See [Step 2: Create new retention tags for the archive and deletion policies](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |Default Policy Tag (deletion); this tag is automatically applied to the entire mailbox.  <br/> |
     |Alpine House Deleted Items 5 Years Delete and Allow Recovery  <br/> |Deletes items from the Deleted Items folder that are 5 years old. Users can recover these items for up 14 days after they're deleted.<sup>\*</sup> <br/> |Custom (See [Step 2: Create new retention tags for the archive and deletion policies](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |Retention Policy Tag (Deleted Items); this tag is automatically applied to items in the Deleted items folder.  <br/> |
     |Recoverable Items 14 days Move to Archive  <br/> |Moves items that have been in the Recoverable Items folder for 14 days to the Recoverable Items folder in the archive mailbox.  <br/> |Built-in  <br/> |Retention Policy Tag (Recoverable Items); this tag is automatically applied to items in the Recoverable Items folder.  <br/> |
     |Junk Email  <br/> |Permanently deletes items that have been in the Junk Email folder for 30 days. Users can recover these items for up 14 days after they're deleted.<sup>\*</sup> <br/> |Built-in  <br/> |Retention Policy Tag (Junk Email); this tag is automatically applied to items in Junk Email folder.  <br/> |
