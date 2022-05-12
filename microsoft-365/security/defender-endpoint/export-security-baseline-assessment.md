@@ -54,8 +54,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 Permission type|Permission|Permission display name
 :---|:---|:---
-Application|SecurityBaselinesAssessment.Read/.All |'Read security baselines assessments information'
-Delegated (work or school account)|Vulnerability.Read|'Read security baselines assessments information'
+Application|SecurityBaselinesAssessment.Read.All |'Read all security baselines assessments information'
+Delegated (work or school account)|SecurityBaselinesAssessment.Read|'Read security baselines assessments information'
 
 ### 1.3 Limitations
 
