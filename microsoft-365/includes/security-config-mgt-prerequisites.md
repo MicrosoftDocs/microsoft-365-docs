@@ -126,8 +126,9 @@ To support Microsoft Defender for Endpoint security configuration management thr
     
 1. Configure Pilot Mode and Configuration Manager authority settings to fit your organization needs:
    :::image type="content" source="../media/mde-security-integration/pilot-CMAuthority-mde-settings-management-defender.png" alt-text="Configure Pilot mode for Endpoint settings management in the Microsoft 365 Defender portal.":::
-   > [!TIP]
-   > Use pilot mode and the proper device tags to test and validate your rollout on a small number of devices. Without using pilot mode, any device that falls into the scope configured will automatically be enrolled.
+   
+  > [!TIP]
+  > Use pilot mode and the proper device tags to test and validate your rollout on a small number of devices. Without using pilot mode, any device that falls into the scope configured will automatically be enrolled.
 
 1. Make sure the relevant users have permissions to manage endpoint security settings in Microsoft Endpoint Manager or grant those permissions by configuring a role in the Defender portal. Go to **Settings** > **Roles** > **Add item**:
 
