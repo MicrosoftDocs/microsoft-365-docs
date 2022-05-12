@@ -43,7 +43,7 @@ These entities are in the EU Driver's License Number and are sensitive informati
 - [Latvia](sit-defn-latvia-drivers-license-number.md)
 - [Lithuania](sit-defn-lithuania-drivers-license-number.md)
 - [Luxemburg](sit-defn-luxemburg-drivers-license-number.md)
-- [Malta](#malta-drivers-license-number)
+- [Malta](sit-defn-malta-drivers-license-number.md)
 - [Netherlands](#netherlands-drivers-license-number)
 - [Poland](#poland-drivers-license-number)
 - [Portugal](#portugal-drivers-license-number)

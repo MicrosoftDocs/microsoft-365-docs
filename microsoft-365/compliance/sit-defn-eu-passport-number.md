@@ -43,7 +43,7 @@ These entities are in the EU passport number and are sensitive information types
 - [Latvia](sit-defn-latvia-passport-number.md)
 - [Lithuania](sit-defn-lithuania-passport-number.md)
 - [Luxemburg](sit-defn-luxemburg-passport-number.md)
-- [Malta](#malta-passport-number)
+- [Malta](sit-defn-malta-passport-number.md)
 - [Netherlands](#netherlands-passport-number)
 - [Poland](#poland-passport-number)
 - [Portugal](#portugal-passport-number)

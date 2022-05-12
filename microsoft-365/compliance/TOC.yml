@@ -710,6 +710,18 @@
                 href: sit-defn-luxemburg-passport-number.md
               - name: Luxemburg physical addresses
                 href: sit-defn-luxemburg-physical-addresses.md
+              - name: Malaysia identification card number
+                href: sit-defn-malaysia-identification-card-number.md
+              - name: Malta drivers license number
+                href: sit-defn-malta-drivers-license-number.md
+              - name: Malta identity card number
+                href: sit-defn-malta-identity-card-number.md
+              - name: Malta passport number
+                href: sit-defn-malta-passport-number.md
+              - name: Malta physical addresses
+                href: sit-defn-malta-physical-addresses.md
+              - name: Malta tax identification number
+                href: sit-defn-malta-tax-identification-number.md
           - name: Sensitive information type functions
             href: sit-functions.md
           - name: Custom sensitive information type filters reference
