@@ -44,13 +44,13 @@ You can see information from the following sections in the URL view:
 
 The **URL Worldwide** section lists the URL, a link to further details at Whois, the number of related open incidents, and the number of active alerts.
 
-![The overview section of the new URL & domain page at a glance.](../../media/domain-url-im1.png)
+![The overview section of the new URL & domain page at a glance.](media/domain-url-im1.png)
 
 ## Incident
 
 The **Incident** card displays a bar chart of all active alerts in incidents over the past 180 days.
 
-![The incident and alerts tab provides a list of incidents that are associated with the URL or domain.](../../media/domain-incidents-alerts-im2.png)
+![The incident and alerts tab provides a list of incidents that are associated with the URL or domain.](media/domain-incidents-alerts-im2.png)
 
 ## Prevalence
 
@@ -58,7 +58,7 @@ The **Prevalence** card provides details on the prevalence of the URL within the
 
 Although the default time period is the past 30 days, you can customize the range by selecting the downward-pointing arrow in the corner of the card. The shortest range available is for prevalence over the past day, while the longest range is over the past 6 months.
 
-![The Prevalence section shows the number of distinct devices that communicated with the URL or domain over a specific period of time.](../../media/domain-devices-im2.png)
+![The Prevalence section shows the number of distinct devices that communicated with the URL or domain over a specific period of time.](media/domain-devices-im2.png)
 
 ## Alerts
 
