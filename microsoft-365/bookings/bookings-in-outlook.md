@@ -53,7 +53,7 @@ Use the **Get-OrganizationConfig** and **Set-OrganizationConfig** commands to fi
 1. Check EWS control access by running the following command.
 
    ```PowerShell
-   Get-Organizationconfig | Format-List EwsEnabled
+   Get-OrganizationConfig | Format-List EwsEnabled
    ```
 
     If the command returns “EwsEnabled: **$true**" then proceed to Step 2.
