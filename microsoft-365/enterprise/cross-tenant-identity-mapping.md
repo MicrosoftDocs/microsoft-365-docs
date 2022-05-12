@@ -47,6 +47,6 @@ If you would like to participate or you have more questions, then email CTIMPrev
 
 ## Next steps
 
-We recommend reviewing the current Cross-Tenant Mailbox Migration steps related to preparing mail enabled user objects in the target organization.
+We recommend reviewing the current Cross-Tenant Mailbox Migration steps related to preparing target user objects for migration as this preparation is what Cross-Tenant Identity Mapping will automate.
 
-- [Review Cross-Tenant Mailbox Migration Preview Instructions](cross-tenant-mailbox-migration.md)
+- [Review Cross-Tenant Mailbox Migration Preview Instructions](cross-tenant-mailbox-migration.md#prepare-target-user-objects-for-migration)
