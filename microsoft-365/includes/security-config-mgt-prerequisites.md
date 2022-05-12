@@ -125,6 +125,7 @@ To support Microsoft Defender for Endpoint security configuration management thr
    :::image type="content" source="../media/security-settings-mgt.png" alt-text="Enable Microsoft Defender for Endpoint settings management in the Defender console.":::
     
 1. Configure Pilot Mode and Configuration Manager authority settings to fit your organization needs:
+
    :::image type="content" source="../media/mde-security-integration/pilot-CMAuthority-mde-settings-management-defender.png" alt-text="Configure Pilot mode for Endpoint settings management in the Microsoft 365 Defender portal.":::
    
   > [!TIP]
