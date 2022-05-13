@@ -26,8 +26,11 @@ ms.custom:
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-If you want people to use any of the [eDiscovery-related tools](ediscovery.md) in the Microsoft Purview compliance portal, you have to assign them the appropriate permissions. The easiest way to do this is to add the person the appropriate role group on the **Permissions** page in the compliance center. This topic describes the permissions required to perform eDiscovery tasks.
-  
+If you want people to use any of the [eDiscovery-related tools](ediscovery.md) in the Microsoft Purview compliance portal, you have to assign them the appropriate permissions. The easiest way to do this is to add the person the appropriate role group on the **Permissions** page in the compliance portal. This topic describes the permissions required to perform eDiscovery tasks.
+
+> [!TIP]
+> You can view your own permissions on the eDiscovery (Premium) overview page in the compliance portal.
+
 The primary eDiscovery-related role group in compliance portal is called **eDiscovery Manager**. There are two subgroups within this role group.
   
 - **eDiscovery Manager** - An eDiscovery Manager can use eDiscovery search tools to search content locations in the organization, and perform various search-related actions such as preview and export search results. Members can also create and manage cases in Microsoft Purview eDiscovery (Standard) and Microsoft Purview eDiscovery (Premium), add and remove members to a case, create case holds, run searches associated with a case, and access case data. eDiscovery Managers can only access and manage the cases they create. They can't access or manage cases created by other eDiscovery Managers.
