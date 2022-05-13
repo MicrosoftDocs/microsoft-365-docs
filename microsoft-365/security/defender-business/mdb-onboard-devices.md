@@ -146,12 +146,14 @@ To view the list of devices that are onboarded to Defender for Business, in the 
 
 ## Windows Server
 
-You can onboard an instance of Windows Server to Defender for Business by using a local script.
-
 > [!IMPORTANT]
 > The ability to onboard Windows Server endpoints is currently in preview. Make sure that you meet the following requirements before onboarding a Windows Server endpoint:
 > - You have a server license for either Defender for Business or Microsoft 365 Business Premium.
 > - You have turned on preview features. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), go to **Settings** > **Endpoints** > **General** > **Advanced features** > **Preview features**.
+
+You can onboard an instance of Windows Server to Defender for Business by using a local script.
+
+### Local script for Windows Server
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.
 
