@@ -76,7 +76,7 @@ When you configure IB, you'll work with several objects and concepts.
 |:------|:----------------|
 | **Step 1**: [Make sure prerequisites are met](#step-1-make-sure-prerequisites-are-met) | - Verify that you have the required subscriptions and permissions <br/>- Verify that your directory includes data for segmenting users<br/>- Enable [search by name for Microsoft Teams](/microsoftteams/teams-scoped-directory-search)<br/>- Make sure audit logging is turned on<br/>- Make sure no Exchange address book policies are in place <br/>- Provide admin consent for Microsoft Teams (steps are included) |
 | **Step 2**: [Segment users in your organization](#step-2-segment-users-in-your-organization) | - Determine what policies are needed<br/>- Make a list of segments to define<br/>- Identify which attributes to use<br/>- Define segments in terms of policy filters |
-| **Step 3**: [Define information barrier policies](#step-3-define-information-barrier-policies) | - Define your policies (don't apply yet)<br/>- Choose from two kinds (block or allow) |
+| **Step 3**: [Define information barrier policies](#step-3-create-information-barrier-policies) | - Define your policies (don't apply yet)<br/>- Choose from two kinds (block or allow) |
 | **Step 4**: [Apply information barrier policies](#step-4-apply-information-barrier-policies) | - Set policies to active status<br/>- Run the policy application<br/>- View policy status |
 | **Step 5**: [Configuration for information barriers on SharePoint and OneDrive (optional)](#step-5-configuration-for-information-barriers-on-sharepoint-and-onedrive) | - Configure IB for SharePoint and OneDrive |
 | **Step 6**: [Information barriers modes (optional)](#step-6-information-barriers-modes) | - Update IB modes if applicable |
@@ -176,7 +176,7 @@ To define segments with PowerShell, complete the following steps:
 
     | Syntax | Example |
     |:---------|:----------|
-    | `New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -eq 'attributevalue'"` |`New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"` <p>In this example, a segment called *HR* is defined using *HR*, a value in the *Department* attribute. The **-eq** portion of the cmdlet refers to "equals." (Alternately, you can use **-ne** to mean "not equals". See [Using "equals" and "not equals" in segment definitions](#using-equals-and-not-equals-in-segment-definitions).) |
+    | `New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -eq 'attributevalue'"` |`New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"` <p>In this example, a segment called *HR* is defined using *HR*, a value in the *Department* attribute. The **-eq** portion of the cmdlet refers to "equals." (Alternately, you can use **-ne** to mean "not equals". See [Using "equals" and "not equals" in segment definitions](#using-equals-and-not-equals-in-powershell-segment-definitions).) |
 
     After you run each cmdlet, you should see a list of details about the new segment. Details include the segment's type, who created or last modified it, and so on. 
 
