@@ -22,7 +22,7 @@ ms.custom: seo-marvel-apr2020
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-This article describes how to configure information barrier (IB) policies in your organization. Several steps are involved, so make sure you review the entire process before you begin configuring IB policies.
+This article describes how to configure information barriers (IB) policies in your organization. Several steps are involved, so make sure you review the entire process before you begin configuring IB policies.
 
 You'll configure IB in your organization using the [Microsoft Purview compliance portal](https://compliance.microsoft.com) or by using [Office 365 Security and Compliance PowerShell](/powershell/exchange/scc-powershell). For organizations configuring IB for the first time, we recommend using the **Information barriers** solution in the compliance portal. If you're managing an existing IB configuration and you're comfortable using PowerShell, you still have this option.
 
@@ -58,7 +58,7 @@ When you configure IB, you'll work with several objects and concepts.
 
 - **User account attributes** are defined in Azure Active Directory (or Exchange Online). These attributes can include department, job title, location, team name, and other job profile details. You'll assign users or groups to segments with these attributes.
 - **Segments** are sets of groups or users that are defined in the compliance portal or by using PowerShell that use selected group or user account attributes. See the list of [IB supported attributes](information-barriers-attributes.md) for details.
-- **IB policies** determine communication limits or restrictions. When you define information barrier policies, you choose from two kinds of policies:
+- **IB policies** determine communication limits or restrictions. When you define IB policies, you choose from two kinds of policies:
   - *Block* policies prevent one segment from communicating with another segment.
   - *Allow* policies allow one segment to communicate with only certain other segments.
 
@@ -76,8 +76,8 @@ When you configure IB, you'll work with several objects and concepts.
 |:------|:----------------|
 | **Step 1**: [Make sure prerequisites are met](#step-1-make-sure-prerequisites-are-met) | - Verify that you have the required subscriptions and permissions <br/>- Verify that your directory includes data for segmenting users<br/>- Enable [search by name for Microsoft Teams](/microsoftteams/teams-scoped-directory-search)<br/>- Make sure audit logging is turned on<br/>- Make sure no Exchange address book policies are in place <br/>- Provide admin consent for Microsoft Teams (steps are included) |
 | **Step 2**: [Segment users in your organization](#step-2-segment-users-in-your-organization) | - Determine what policies are needed<br/>- Make a list of segments to define<br/>- Identify which attributes to use<br/>- Define segments in terms of policy filters |
-| **Step 3**: [Create information barriers policies](#step-3-create-information-barrier-policies) | - Create your policies (don't apply yet)<br/>- Choose from two kinds (block or allow) |
-| **Step 4**: [Apply information barriers policies](#step-4-apply-information-barrier-policies) | - Set policies to active status<br/>- Run the policy application<br/>- View policy status |
+| **Step 3**: [Create information barriers policies](#step-3-create-ib-policies) | - Create your policies (don't apply yet)<br/>- Choose from two kinds (block or allow) |
+| **Step 4**: [Apply information barriers policies](#step-4-apply-ib-policies) | - Set policies to active status<br/>- Run the policy application<br/>- View policy status |
 | **Step 5**: [Configuration for information barriers on SharePoint and OneDrive (optional)](#step-5-configuration-for-information-barriers-on-sharepoint-and-onedrive) | - Configure IB for SharePoint and OneDrive |
 | **Step 6**: [Information barriers modes (optional)](#step-6-information-barriers-modes) | - Update IB modes if applicable |
 
@@ -185,7 +185,7 @@ To define segments with PowerShell, complete the following steps:
     > [!IMPORTANT]
     > **Make sure that your segments do not overlap**. Each user who will be affected by IB policies should belong to one (and only one) segment. No user should belong to two or more segments. See [Example: Contoso's defined segments](#contosos-defined-segments) in this article for an example scenario.
 
-After you've defined your segments, proceed to [Step 3: Create information barrier policies](#step-3-create-information-barrier-policies).
+After you've defined your segments, proceed to [Step 3: Create IB policies](#step-3-create-ib-policies).
 
 ### Using "equals" and "not equals" in PowerShell segment definitions
 
@@ -213,7 +213,7 @@ In addition to defining segments using "equals" or "not equals", you can define 
 > [!TIP]
 > If possible, use segment definitions that include "-eq" or "-ne". Try not to define complex segment definitions.
 
-## Step 3: Create information barrier policies
+## Step 3: Create IB policies
 
 When you create your IB policies, you'll determine whether you need to prevent communications between certain segments or limit communications to certain segments. Ideally, you'll use the minimum number of IB policies to ensure your organization is compliant with internal, legal, and industry requirements. You can use the compliance portal or PowerShell to create and apply IB policies.
 
@@ -278,7 +278,7 @@ To define policies with PowerShell, complete the following steps:
 3. Proceed to one of the following actions:
 
    - (If needed) [Define a policy to allow a segment to communicate only with one other segment](#scenario-2-allow-a-segment-to-communicate-only-with-one-other-segment) 
-   - (After all your policies are defined) [Apply information barrier policies](#step-4-apply-information-barrier-policies)
+   - (After all your policies are defined) [Apply IB policies](#step-4-apply-ib-policies)
 
 ### Scenario 2: Allow a segment to communicate only with one other segment
 
@@ -325,9 +325,9 @@ To define policies with PowerShell, complete the following steps:
 2. Proceed to one of the following actions:
 
    - (If needed) [Define a policy to block communications between segments](#scenario-1-block-communications-between-segments) 
-   - (After all your policies are defined) [Apply information barrier policies](#step-4-apply-information-barrier-policies)
+   - (After all your policies are defined) [Apply IB policies](#step-4-apply-ib-policies)
 
-## Step 4: Apply information barrier policies
+## Step 4: Apply IB policies
 
 IB policies aren't in effect until you set them to active status and apply the policies.
 
@@ -370,11 +370,11 @@ With PowerShell, you can view status of user accounts, segments, policies, and p
 
 | To view this information | Take this action |
 |:---------------|:----------|
-| User accounts | Use the **Get-InformationBarrierRecipientStatus** cmdlet with Identity parameters. <p> Syntax: `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p> You can use any value that uniquely identifies each user, such as name, alias, distinguished name, canonical domain name, email address, or GUID. <p> Example: `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p> In this example, we refer to two user accounts in Office 365: *meganb* for *Megan*, and *alexw* for *Alex*. <p> (You can also use this cmdlet for a single user: `Get-InformationBarrierRecipientStatus -Identity <value>`) <p> This cmdlet returns information about users, such as attribute values and any information barrier policies that are applied.|
+| User accounts | Use the **Get-InformationBarrierRecipientStatus** cmdlet with Identity parameters. <p> Syntax: `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p> You can use any value that uniquely identifies each user, such as name, alias, distinguished name, canonical domain name, email address, or GUID. <p> Example: `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p> In this example, we refer to two user accounts in Office 365: *meganb* for *Megan*, and *alexw* for *Alex*. <p> (You can also use this cmdlet for a single user: `Get-InformationBarrierRecipientStatus -Identity <value>`) <p> This cmdlet returns information about users, such as attribute values and any IB policies that are applied.|
 | Segments | Use the **Get-OrganizationSegment** cmdlet.<p> Syntax: `Get-OrganizationSegment` <p> This cmdlet will display a list of all segments defined for your organization. |
-| Information barrier policies | Use the **Get-InformationBarrierPolicy** cmdlet. <p> Syntax: `Get-InformationBarrierPolicy` <p> This cmdlet will display a list of information barrier policies that were defined, and their status. |
-| The most recent information barrier policy application | Use the **Get-InformationBarrierPoliciesApplicationStatus** cmdlet. <p> Syntax: `Get-InformationBarrierPoliciesApplicationStatus`<p> This cmdlet will display information about whether policy application completed, failed, or is in progress. |
-| All information barrier policy applications|Use `Get-InformationBarrierPoliciesApplicationStatus -All`<p> This cmdlet  will display information about whether policy application completed, failed, or is in progress.|
+| IB policies | Use the **Get-InformationBarrierPolicy** cmdlet. <p> Syntax: `Get-InformationBarrierPolicy` <p> This cmdlet will display a list of IB policies that were defined, and their status. |
+| The most recent IB policy application | Use the **Get-InformationBarrierPoliciesApplicationStatus** cmdlet. <p> Syntax: `Get-InformationBarrierPoliciesApplicationStatus`<p> This cmdlet will display information about whether policy application completed, failed, or is in progress. |
+| All IB policy applications|Use `Get-InformationBarrierPoliciesApplicationStatus -All`<p> This cmdlet  will display information about whether policy application completed, failed, or is in progress.|
 
 ### What if I need to remove or change policies?
 
@@ -446,14 +446,14 @@ Contoso will use the Department attribute in Azure Active Directory to define se
 
 With the segments defined, Contoso proceeds to define the IB policies.
 
-### Contoso's information barrier policies
+### Contoso's IB policies
 
 Contoso defines three IB policies, as described in the following table:
 
 | Policy | Policy Definition |
 |:---------|:--------------------|
-| **Policy 1: Prevent Sales from communicating with Research** | `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p> In this example, the information barrier policy is called *Sales-Research*. When this policy is active and applied, it will help prevent users who are in the Sales segment from communicating with users in the Research segment. This policy is a one-way policy; it won't prevent Research from communicating with Sales. For that, Policy 2 is needed. |
-| **Policy 2: Prevent Research from communicating with Sales** | `New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive` <p> In this example, the information barrier policy is called *Research-Sales*. When this policy is active and applied, it will help prevent users who are in the Research segment from communicating with users in the Sales segment. |
+| **Policy 1: Prevent Sales from communicating with Research** | `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p> In this example, the IB policy is called *Sales-Research*. When this policy is active and applied, it will help prevent users who are in the Sales segment from communicating with users in the Research segment. This policy is a one-way policy; it won't prevent Research from communicating with Sales. For that, Policy 2 is needed. |
+| **Policy 2: Prevent Research from communicating with Sales** | `New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive` <p> In this example, the IB policy is called *Research-Sales*. When this policy is active and applied, it will help prevent users who are in the Research segment from communicating with users in the Sales segment. |
 | **Policy 3: Allow Manufacturing to communicate with HR and Marketing only** | `New-InformationBarrierPolicy -Name "Manufacturing-HRMarketing" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR","Marketing","Manufacturing" -State Inactive` <p> In this case, the IB policy is called *Manufacturing-HRMarketing*. When this policy is active and applied, Manufacturing can communicate only with HR and Marketing. HR and Marketing aren't restricted from communicating with other segments. |
 
 With segments and policies defined, Contoso applies the policies by running the **Start-InformationBarrierPoliciesApplication** cmdlet.
