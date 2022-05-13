@@ -30,10 +30,10 @@ ms.technology: m365d
 - [Threat and vulnerability management](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-The Log4Shell vulnerability is a remote code execution (RCE) vulnerability found in the Apache Log4j 2 logging library. As Apache Log4j 2 is commonly used by many software applications and online services, it represents a complex and high-risk situation for companies across the globe. Referred to as “Log4Shell” ([CVE-2021-44228](https://cve.mitre.org/cgi-bin/cvename.cgi?name=2021-44228), [CVE-2021-45046](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-45046) ) it introduces a new attack vector that attackers can exploit to extract data and deploy ransomware in an organization.
+The Log4Shell vulnerability is a remote code execution (RCE) vulnerability found in the Apache Log4j 2 logging library. As Apache Log4j 2 is commonly used by many software applications and online services, it represents a complex and high-risk situation for companies across the globe. Referred to as "Log4Shell" ([CVE-2021-44228](https://cve.mitre.org/cgi-bin/cvename.cgi?name=2021-44228), [CVE-2021-45046](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-45046) ) it introduces a new attack vector that attackers can exploit to extract data and deploy ransomware in an organization.
 
 > [!NOTE]
-> Refer to the blogs [Guidance for preventing, detecting, and hunting for exploitation of the Log4j 2 vulnerability and](https://www.microsoft.com/security/blog/2021/12/11/guidance-for-preventing-detecting-and-hunting-for-cve-2021-44228-log4j-2-exploitation/) [Microsoft Security Response Center](https://msrc-blog.microsoft.com/2021/12/11/microsofts-response-to-cve-2021-44228-apache-log4j2/) for guidance and technical information about the vulnerability and product specific mitigation recommendations to protect your organization.
+> Refer to the blogs [Guidance for preventing, detecting, and hunting for exploitation of the Log4j 2 vulnerability and](https://www.microsoft.com/security/blog/2021/12/11/guidance-for-preventing-detecting-and-hunting-for-cve-2021-44228-log4j-2-exploitation/) [Microsoft Security Response Center](https://msrc-blog.microsoft.com/2021/12/11/microsofts-response-to-cve-2021-44228-apache-log4j2/) for guidance and technical information about the vulnerability and product specific mitigation recommendations to protect your organization.
 
 ## Overview of discovery, monitoring and mitigation capabilities
 
@@ -85,7 +85,7 @@ Threat and vulnerability management provides layers of detection to help you dis
 
   - determines if a JAR file contains a vulnerable Log4j file by examining JAR files and searching for the following file:
       \\META-INF\\maven\\org.apache.logging.log4j\\log4j-core\\pom.properties - if this file exists, the Log4j version is read and extracted.
-  - searches for the JndiLookup.class file inside the JAR file by looking for paths that contain the string “/log4j/core/lookup/JndiLookup.class” - if the JndiLookup.class file exists, threat and vulnerability management determines if this JAR contains a Log4j file with the version defined in pom.properties.
+  - searches for the JndiLookup.class file inside the JAR file by looking for paths that contain the string "/log4j/core/lookup/JndiLookup.class" - if the JndiLookup.class file exists, threat and vulnerability management determines if this JAR contains a Log4j file with the version defined in pom.properties.
   - searches for any vulnerable Log4j-core JAR files embedded within a nested-JAR by searching for paths that contain any of these strings:
     - lib/log4j-core-
     - WEB-INF/lib/log4j-core-
@@ -108,9 +108,9 @@ This table describes the search capabilities supported platforms and versions:
 
 Use the threat and vulnerability management dashboard to see your current exposure.
 
-1. In the Microsoft 365 Defender portal, go to **Vulnerability management** > **Dashboard** > **Threat awareness:**
+1. In the Microsoft 365 Defender portal, go to **Vulnerability management** > **Dashboard** > **Threat awareness:**
 :::image type="content" source="images/awareness_dashboard.png" alt-text="The threat awareness widget on the vulnerability management dashboard" lightbox="images/awareness_dashboard.png":::
-2. Select **View vulnerability details** to see the consolidated view of your organizational exposure.
+2. Select **View vulnerability details** to see the consolidated view of your organizational exposure.
 :::image type="content" source="images/view_vulnerability_details.png" alt-text="The vulnerability details page for CVE-2021-44228 (Log4j)" lightbox="images/view_vulnerability_details.png":::
 3. Choose the relevant tab to see your exposure broken down by:
     - Exposed devices – onboard
@@ -125,7 +125,7 @@ The log4Shell vulnerability can be mitigated by preventing JNDI lookups on Log4j
 1. Select **View vulnerability details**
 2. Select **Mitigation options**
 
-You can choose to apply the mitigation to all exposed devices or select specific onboarded devices. To complete the process and apply the mitigation on devices, select **Create mitigation action**.
+You can choose to apply the mitigation to all exposed devices or select specific onboarded devices. To complete the process and apply the mitigation on devices, select **Create mitigation action**.
 
 :::image type="content" source="images/mitigation_options.png" alt-text="Mitigation options for CVE-2021-44228" lightbox="images/mitigation_options.png":::
 
@@ -142,9 +142,9 @@ The table below lists the potential mitigation statuses:
 | Workaround applied | _Windows_: The LOG4J_FORMAT_MSG_NO_LOOKUPS environment variable was observed before latest device reboot. <br/><br/> _Linux + macOS_: All running processes have LOG4J_FORMAT_MSG_NO_LOOKUPS=true in its environment variables. |
 | Workaround pending reboot | The LOG4J_FORMAT_MSG_NO_LOOKUPS environment variable is set, but no following reboot detected. |
 | Not applied | _Windows_: The LOG4J_FORMAT_MSG_NO_LOOKUPS environment variable was not observed. <br/><br/> _Linux + macOS_: Not all running processes have LOG4J_FORMAT_MSG_NO_LOOKUPS=true in its environment variables, and mitigation action was not applied on device. |
-| Partially mitigated | _Linux + macOS_: Although mitigation action was applied on device, not all running processes have LOG4J_FORMAT_MSG_NO_LOOKUPS=true in its environment variables. |
+| Partially mitigated | _Linux + macOS_: Although mitigation action was applied on device, not all running processes have LOG4J_FORMAT_MSG_NO_LOOKUPS=true in its environment variables. |
 |Not applicable | Devices that have vulnerable files that are not in the version range of the mitigation. |
-|Unknown | The mitigation status couldn’t be determined at this time. |
+|Unknown | The mitigation status couldn't be determined at this time. |
 
 > [!NOTE]
 > It may take a few hours for the updated mitigation status of a device to be reflected.
@@ -176,9 +176,9 @@ The change will take effect after the device restarts.
 
 Remove the file setenv.LOG4J\_FORMAT\_MSG\_NO\_LOOKUPS.plist from the following folders:
 
-  - */Library/LaunchDaemons/*
-  - */Library/LaunchAgents/*
-  - */Users/\[username\]/Library/LaunchAgents/ - for all users*
+- */Library/LaunchDaemons/*
+- */Library/LaunchAgents/*
+- */Users/\[username\]/Library/LaunchAgents/ - for all users*
 
 The change will take effect after the device restarts.
 
