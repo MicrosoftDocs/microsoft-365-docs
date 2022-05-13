@@ -23,7 +23,7 @@ description: Create and manage Teams classes and meetings with Microsoft OneDriv
 
 This guide provides the IT admin steps for registering both Teams Classes and Teams Meetings LTI apps on Moodle.
 
-For details on managing all LTI apps for any LMS, see [Manage Microsoft LTI for any LMS](manage-microsoft-one-lti.md).
+For details on managing all LTI apps for any LMS, see [Manage Microsoft LMS Gateway for any LMS](manage-microsoft-one-lti.md).
 
 ## Prerequisites before set up
 
@@ -36,7 +36,7 @@ Follow the [instructions for installing and configuring the Moodle plugin](moodl
 > [!IMPORTANT]
 > The person who performs this integration should be a Moodle administrator and a Microsoft 365 tenant administrator.
 
-1. Visit [Microsoft LTI Portal](https://lti.microsoft.com/) and select **Go to registration portal**.
+1. Visit [Microsoft LMS Gateway](https://lti.microsoft.com/) and select the **Go to registration portal** button.
 
 2. Sign in with a Microsoft 365 administrator account.
 
@@ -48,7 +48,7 @@ Follow the [instructions for installing and configuring the Moodle plugin](moodl
 
 6. You'll be given a list of keys that need to be added to your Moodle site.
 
-7. Open Moodle in another tab. Don't close the Microsoft LTI portal tab.
+7. Open Moodle in another tab. Don't close the Microsoft LMS Gateway tab.
 
 8. In Moodle, go to **Site administration** > **Plugins** > **Activity modules** > **External tools** > **Manage tools**.
 
@@ -65,7 +65,7 @@ Follow the [instructions for installing and configuring the Moodle plugin](moodl
 
 13. The new tool should now appear in the **Tools** section of Moodle's **Manage tools** page. Select the list icon to view **Tool configuration details**.
 
-14. Go back to the Microsoft LTI portal tab. Select **Next** to go to the **LMS provided registration keys** step.
+14. Go back to the Microsoft LMS Gateway tab. Select **Next** to go to the **LMS provided registration keys** step.
 
 15. Copy and paste the values from Moodle's **Tool configuration details** to Microsoft's **LMS provided registration keys** step.
 
@@ -104,9 +104,8 @@ To launch the Teams LTI apps within Moodle, there are a few technical requiremen
 
 ### IT admin technical requirements
 
-- Use Moodle version 3.10 or 3.11.
-- Download the latest Microsoft O365 plugin for Moodle version 3.10 or 3.11.
-  - We're not supporting Moodle 4.0 at this moment, but an upgrade is in progress to support Moodle 4.0.
+- Use Moodle version 3.10 or above.
+- Download the latest Microsoft O365 plugin for Moodle version 3.10 or above.
 - Access the LTI apps registration portal to register the LTI apps.
   - Registration must be on completed on a desktop device.
 - Download the latest version of Microsoft Edge, Google Chrome, Safari, or Mozilla Firefox.
