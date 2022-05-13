@@ -40,7 +40,7 @@ A variety of reports are available in the Microsoft 365 Defender portal at <http
 >
 > Reports that are related to mail flow are now in the Exchange admin center. For more information about these reports, see [Mail flow reports in the new Exchange admin center](/exchange/monitoring/mail-flow-reports/mail-flow-reports).
 
-Watch this short video to learn how you can use reports to understand the effectiveness of Defender for Office 365 in your organization..
+Watch this short video to learn how you can use reports to understand the effectiveness of Defender for Office 365 in your organization.
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBkxB]
 
 ## Email security report changes in the Microsoft 365 Defender portal
