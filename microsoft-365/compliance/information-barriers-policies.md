@@ -70,14 +70,14 @@ When you configure IB, you'll work with several objects and concepts.
 - **Group support**. Only Modern Groups are currently supported in IB and Distribution Lists/Security Groups are treated as non-IB groups.
 - **Hidden/disabled user accounts**. For hidden/disabled accounts in your organization, the *HiddenFromAddressListEnabled* parameter is automatically set to *True* when the users accounts are hidden or disabled. In IB-enabled organizations, these accounts are prevented from communicating with all other user accounts. In Microsoft Teams, all chats including these accounts are locked or the users are automatically removed from conversations.
 
-## Configuration at a glance
+## Configuration overview
 
 | **Steps** | **What's involved** |
 |:------|:----------------|
 | **Step 1**: [Make sure prerequisites are met](#step-1-make-sure-prerequisites-are-met) | - Verify that you have the required subscriptions and permissions <br/>- Verify that your directory includes data for segmenting users<br/>- Enable [search by name for Microsoft Teams](/microsoftteams/teams-scoped-directory-search)<br/>- Make sure audit logging is turned on<br/>- Make sure no Exchange address book policies are in place <br/>- Provide admin consent for Microsoft Teams (steps are included) |
 | **Step 2**: [Segment users in your organization](#step-2-segment-users-in-your-organization) | - Determine what policies are needed<br/>- Make a list of segments to define<br/>- Identify which attributes to use<br/>- Define segments in terms of policy filters |
-| **Step 3**: [Define information barrier policies](#step-3-create-information-barrier-policies) | - Define your policies (don't apply yet)<br/>- Choose from two kinds (block or allow) |
-| **Step 4**: [Apply information barrier policies](#step-4-apply-information-barrier-policies) | - Set policies to active status<br/>- Run the policy application<br/>- View policy status |
+| **Step 3**: [Create information barriers policies](#step-3-create-information-barrier-policies) | - Create your policies (don't apply yet)<br/>- Choose from two kinds (block or allow) |
+| **Step 4**: [Apply information barriers policies](#step-4-apply-information-barrier-policies) | - Set policies to active status<br/>- Run the policy application<br/>- View policy status |
 | **Step 5**: [Configuration for information barriers on SharePoint and OneDrive (optional)](#step-5-configuration-for-information-barriers-on-sharepoint-and-onedrive) | - Configure IB for SharePoint and OneDrive |
 | **Step 6**: [Information barriers modes (optional)](#step-6-information-barriers-modes) | - Update IB modes if applicable |
 
@@ -86,7 +86,7 @@ When you configure IB, you'll work with several objects and concepts.
 In addition to the required subscriptions and permissions, make sure that the following requirements are met before configuring IB:
 
 - **Directory data**: Make sure that your organization's structure is reflected in directory data. To take this action, make sure that user account attributes (such as group membership, department name, etc.) are populated correctly in Azure Active Directory (or Exchange Online). To learn more, see the following resources:
-  - [Attributes for information barrier policies](information-barriers-attributes.md)
+  - [Attributes for information barriers policies](information-barriers-attributes.md)
   - [Add or update a user's profile information using Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
   - [Configure user account properties with Office 365 PowerShell](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)
 
