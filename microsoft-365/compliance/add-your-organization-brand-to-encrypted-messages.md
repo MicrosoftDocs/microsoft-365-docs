@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.date: 4/1/2020
+ms.date: 5/12/2022
 search.appverid:
 - MET150
 - MOE150
@@ -156,12 +156,12 @@ To remove a custom branding template:
 > [!IMPORTANT]
 > Third-party applications that scan and modify mail can prevent OME branding from being applied correctly.
 
-After you've either modified the default template or created new branding templates, you can create Exchange mail flow rules to apply your custom branding based on certain conditions. Such a rule will apply custom branding in the following scenarios:
+After you've either modified the default template or created new branding templates, you can create Exchange mail flow rules to apply your custom branding based on certain conditions. Most importantly, the email must be encrypted. Such a rule will apply custom branding in the following scenarios:
 
 - If the email was manually encrypted by the end user using Outlook or Outlook on the web, formerly Outlook Web App
 - If the email was automatically encrypted by an Exchange mail flow rule or Microsoft Purview Data Loss Prevention policy
 
-For information on how to create an Exchange mail flow rule that applies encryption, see [Define mail flow rules to encrypt email messages in Office 365](define-mail-flow-rules-to-encrypt-email.md).
+To ensure Microsoft Purview Message Encryption applies your custom branding, set up a mail flow rule to encrypt your email messages. The priority of the encryption rule should be higher than the branding rule so that the encryption rule is processed first. By default, if you create the encryption rule before the branding rule, then the encryption rule will have a higher priority. For information on how to create an Exchange mail flow rule that applies encryption, see [Define mail flow rules to encrypt email messages in Office 365](define-mail-flow-rules-to-encrypt-email.md). For information on setting the priority of a mail flow rule, see [Manage mail flow rules](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#set-the-priority-of-a-mail-flow-rule).
 
 1. In a web browser, using a work or school account that has been granted global administrator permissions, [sign in to Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser).
 
@@ -179,14 +179,13 @@ For information on how to create an Exchange mail flow rule that applies encrypt
    - Encrypted emails sent with a certain keyword such as "External" or "Partner"
    - Encrypted emails sent to a particular domain
 
-7. You can configure the mail flow rule to apply encryption and custom branding. From **Do the following**, select **Modify the message security**, and then choose **Apply Office 365 Message Encryption and rights protection**. Select an RMS template from the list, choose **Save**, and then choose **OK**.  (If you have another mail flow rule that already encrypts the message, then you can skip this step.)
+7. If you've already defined a mail flow rule to apply encryption, skip this step. Otherwise, to configure the mail flow rule to apply encryption, from **Do the following**, select **Modify the message security**, and then choose **Apply Office 365 Message Encryption and rights protection**. Select an RMS template from the list and then choose **add action**.
+
+   The list of templates includes default templates and options and any custom templates you create. If the list is empty, ensure that you have set up Microsoft Purview Message Encryption. For instructions, see [Set up Microsoft Purview Message Encryption](set-up-new-message-encryption-capabilities.md). For information about the default templates, see [Configuring and managing templates for Azure Information Protection](/information-protection/deploy-use/configure-policy-templates). For information about the **Do Not Forward** option, see [Do Not Forward option for emails](/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails). For information about the **encrypt only** option, see [Encrypt Only option for emails](/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
    
 8. From **Do the following**, select **Modify the message security** \> **Apply custom branding to OME messages**. Next, from the drop-down, select a branding template.
 
-   
-   The list of templates includes default templates and options and any custom templates you create. If the list is empty, ensure that you have set up Microsoft Purview Message Encryption. For instructions, see [Set up Microsoft Purview Message Encryption](set-up-new-message-encryption-capabilities.md). For information about the default templates, see [Configuring and managing templates for Azure Information Protection](/information-protection/deploy-use/configure-policy-templates). For information about the **Do Not Forward** option, see [Do Not Forward option for emails](/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails). For information about the **encrypt only** option, see [Encrypt Only option for emails](/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
-
-   Choose **add action** if you want to specify another action.
+   Choose **add action** if you want to specify another action, or choose **Save**, and then choose **OK**.
 
 ## Background color reference
 
