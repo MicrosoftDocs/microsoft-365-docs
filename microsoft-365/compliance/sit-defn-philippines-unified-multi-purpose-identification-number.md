@@ -21,7 +21,6 @@ recommendations: false
 description: "Philippines unified multi-purpose identification number sensitive information type entity definition."
 ---
 
-
 # Philippines unified multi-purpose identification number
 
 ## Format
