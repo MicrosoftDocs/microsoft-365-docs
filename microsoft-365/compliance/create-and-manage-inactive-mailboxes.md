@@ -71,7 +71,7 @@ To view a list of the inactive mailboxes in your organization:
     
     You won't see other types of holds in the details pane, for example a Microsoft 365 retention policy or eDiscovery hold. To find this information, see [How to identify the type of hold placed on an Exchange Online mailbox](identify-a-hold-on-an-exchange-online-mailbox.md).
 
-If you have many inactive mailboxes, you might find it easier to search and sort a CSV file for the details you see in the list: On the **Inactive mailboxes** page, select ![Export search results icon.](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **Export**.
+If you have many inactive mailboxes, you might find it easier to search and sort a CSV file for the details you see in the list: On the **Inactive mailboxes** page, select :::image type="icon" source="../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png"::: (**Export**).
 
 Alternatively, you can run the following command in Exchange Online PowerShell to display the list of inactive mailboxes:
 
