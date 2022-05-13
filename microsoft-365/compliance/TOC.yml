@@ -752,6 +752,36 @@
                 href: sit-defn-new-zealand-physical-addresses.md
               - name: New Zealand social welfare number
                 href: sit-defn-new-zealand-social-welfare-number.md
+              - name: Norway identification number
+                href: sit-defn-norway-identification-number.md
+              - name: Norway physical addresses
+                href: sit-defn-norway-physical-addresses.md
+              - name: Philippines unified multi-purpose identification number
+                href: sit-defn-philippines-unified-multi-purpose-identification-number.md
+              - name: Poland drivers license number
+                href: sit-defn-poland-drivers-license-number.md
+              - name: Poland identity card
+                href: sit-defn-poland-identity-card.md
+              - name: Poland national ID (PESEL)
+                href: sit-defn-poland-national-id.md
+              - name: Poland passport number
+                href: sit-defn-poland-passport-number.md
+              - name: Poland physical addresses
+                href: sit-defn-poland-physical-addresses.md
+              - name: Poland REGON number
+                href: sit-defn-poland-regon-number.md
+              - name: Poland tax identification number
+                href: sit-defn-poland-tax-identification-number.md
+              - name: Portugal citizen card number
+                href: sit-defn-portugal-citizen-card-number.md
+              - name: Portugal drivers license number
+                href: sit-defn-portugal-drivers-license-number.md
+              - name: Portugal passport number
+                href: sit-defn-portugal-passport-number.md
+              - name: Portugal physical addresses
+                href: sit-defn-portugal-physical-addresses.md
+              - name: Portugal tax identification number
+                href: sit-defn-portugal-tax-identification-number.md
           - name: Sensitive information type functions
             href: sit-functions.md
           - name: Custom sensitive information type filters reference
