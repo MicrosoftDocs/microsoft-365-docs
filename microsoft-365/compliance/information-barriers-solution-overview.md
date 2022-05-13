@@ -40,7 +40,7 @@ Use the following steps to configure information barriers for your organization:
 1. Learn about [information barriers](information-barriers.md)
 2. Configure [prerequisites and permissions](information-barriers-policies.md#step-1-make-sure-prerequisites-are-met)
 3. Segment [users in your organization](information-barriers-policies.md#step-2-segment-users-in-your-organization)
-4. Create and configure [information barrier policies](information-barriers-policies.md#step-3-define-information-barrier-policies)
+4. Create and configure [information barrier policies](information-barriers-policies.md#step-3-create-information-barrier-policies)
 5. Apply [information barrier policies](information-barriers-policies.md#step-4-apply-information-barrier-policies)
 
 ## More information about information barriers
