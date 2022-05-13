@@ -48,23 +48,32 @@ Data that is collected using either '_JSON response_ or _via files_' is the curr
 
 Returns all security baselines assessments for all devices, on a per-device basis. It returns a table with a separate entry for every unique combination of DeviceId, ProfileId, ConfigurationId.
 
-#### 1.2 Limitations
+### 1.2 Permissions
+
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md) for details.
+
+Permission type|Permission|Permission display name
+:---|:---|:---
+Application|SecurityBaselinesAssessment.Read.All |'Read all security baselines assessments information'
+Delegated (work or school account)|SecurityBaselinesAssessment.Read|'Read security baselines assessments information'
+
+### 1.3 Limitations
 
 - Maximum page size is 200,000.
 - Rate limitations for this API are 30 calls per minute and 1000 calls per hour.
 
-### 1.3 Parameters
+### 1.4 Parameters
 
 - pageSize (default = 50,000): Number of results in response.
 - $top: Number of results to return (doesn't return @odata.nextLink and so doesn't pull all the data).
 
-### 1.4 HTTP request
+### 1.5 HTTP request
 
 ```http
 GET /api/machines/baselineComplianceAssessmentByMachine
 ```
 
-### 1.5 Properties (JSON response)
+### 1.6 Properties (JSON response)
 
 > [!NOTE]
 > Each record is approximately 1 KB of data. You should take this into account when choosing the correct pageSize parameter.
@@ -92,15 +101,15 @@ Property (ID)|Data type|Description
 |CurrentValue|String|Set of detected values found on the device.
 |Source|String|The registry path or other location used to determine the current device setting.
 
-## 1.6 Example
+## 1.7 Example
 
-### 1.6.1 Request example
+### 1.7.1 Request example
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/machines/BaselineComplianceAssessmentByMachine
 ```
 
-### 1.6.2 Response example
+### 1.7.2 Response example
 
 ```json
 { 
