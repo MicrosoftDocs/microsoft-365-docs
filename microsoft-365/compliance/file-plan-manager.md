@@ -44,10 +44,11 @@ For information about what retention labels are and how to use them, see [Learn 
 To access file plan, you must have one of the following admin roles:
     
 - Retention Manager
-
 - View-only Retention Manager
 
-In the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), go to **Solutions** > **Records management** > **File plan**.
+In the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), go to **Solutions** > **Records management** > **File plan**:
+
+![File plan page](../media/compliance-file-plan.png). 
 
 If **Records management** doesn't display in the navigation pane, first scroll down, and select **Show all**.
 
@@ -149,7 +150,9 @@ However, it can take up to two days for content explorer to show the items that 
 
 From your file plan, you can export the details of all retention labels into a .csv file to help you facilitate periodic compliance reviews with data governance stakeholders in your organization.
 
-To export all retention labels: On the **File plan** page, click **Export**.
+To export all retention labels: On the **File plan** page, select **Export**:
+
+![Option to export file plan.](../media/compliance-file-plan-export-labels.png)
 
 A *.csv file that contains all existing retention labels opens. For example:
 
@@ -159,7 +162,7 @@ A *.csv file that contains all existing retention labels opens. For example:
 
 In file plan, you can bulk-import new retention labels by using a .csv file with a specific format: 
 
-1. On the **File plan** page, click **Import**:
+1. On the **File plan** page, select **Import**:
    ![Option to import file plan](../media/compliance-file-plan-import-labels.png)
 
 2. On the **Fill out and import your file plan** pane, select **Download a blank template**:
