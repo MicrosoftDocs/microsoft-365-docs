@@ -121,3 +121,6 @@ The most effective way to take action is to use the built-in integration with In
 - You take actions on email from a single place.
 
 You take action on email based on the result of a manual investigation or hunting activity. [Threat Explorer](threat-explorer.md) allows security team members to take action on any email messages that might still exist in cloud mailboxes. They can take action on intra-org messages that were sent between users in your organization. Threat Explorer data is available for the last 30 days.
+
+Watch this short video to learn how Microsoft 365 Defender combines alerts from various detection sources, like Defender for Office 365, into incidents. 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGpcs]
