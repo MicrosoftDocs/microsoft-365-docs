@@ -164,7 +164,7 @@ Use the generated `AppID` and `Key` in your Microsoft 365 Moodle Plugins setup p
 
 1. Navigate to **Site administration** > **Plugins** > **Local plugins** > **Microsoft 365 Integration** > **Teams Settings** tab.
 
-1. Click the **Check Moodle settings** button will will update all required configurations for the Teams integration to work.
+1. Click the **Check Moodle settings** button will update all required configurations for the Teams integration to work.
         
 
 After the plugins are installed and configured, you can:
