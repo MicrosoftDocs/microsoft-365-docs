@@ -722,6 +722,36 @@
                 href: sit-defn-malta-physical-addresses.md
               - name: Malta tax identification number
                 href: sit-defn-malta-tax-identification-number.md
+              - name: Medical specialities
+                href: sit-defn-medical-specialities.md
+              - name: Medicare Beneficiary Identifier (MBI) card
+                href: sit-defn-medicare-beneficiary-Identifier-card.md
+              - name: Mexico Unique Population Registry Code (CURP)
+                href: sit-defn-mexico-unique-population-registry-code.md
+              - name: Netherlands citizens service (BSN) number
+                href: sit-defn-netherlands-citizens-service-number.md
+              - name: Netherlands drivers license number
+                href: sit-defn-netherlands-drivers-license-number.md
+              - name: Netherlands passport number
+                href: sit-defn-netherlands-passport-number.md
+              - name: Netherlands physical addresses
+                href: sit-defn-netherlands-physical-addresses.md
+              - name: Netherlands tax identification number
+                href: sit-defn-netherlands-tax-identification-number.md
+              - name: Netherlands value added tax number
+                href: sit-defn-netherlands-value-added-tax-number.md
+              - name: New Zealand bank account number
+                href: sit-defn-new-zealand-bank-account-number.md
+              - name: New Zealand drivers license number
+                href: sit-defn-new-zealand-drivers-license-number.md
+              - name: New Zealand inland revenue number
+                href: sit-defn-new-zealand-inland-revenue-number.md
+              - name: New Zealand ministry of health number
+                href: sit-defn-new-zealand-ministry-of-health-number.md
+              - name: New Zealand physical addresses
+                href: sit-defn-new-zealand-physical-addresses.md
+              - name: New Zealand social welfare number
+                href: sit-defn-new-zealand-social-welfare-number.md
           - name: Sensitive information type functions
             href: sit-functions.md
           - name: Custom sensitive information type filters reference

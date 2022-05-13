@@ -44,7 +44,7 @@ These entities are in the EU passport number and are sensitive information types
 - [Lithuania](sit-defn-lithuania-passport-number.md)
 - [Luxemburg](sit-defn-luxemburg-passport-number.md)
 - [Malta](sit-defn-malta-passport-number.md)
-- [Netherlands](#netherlands-passport-number)
+- [Netherlands](sit-defn-netherlands-passport-number.md)
 - [Poland](#poland-passport-number)
 - [Portugal](#portugal-passport-number)
 - [Romania](#romania-passport-number)

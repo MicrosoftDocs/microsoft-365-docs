@@ -44,7 +44,7 @@ These entities are in the EU Tax identification number sensitive information typ
 - [Lithuania](sit-defn-lithuania-personal-code.md)
 - [Luxemburg](sit-defn-luxemburg-national-identification-number-non-natural-persons.md)
 - [Malta](sit-defn-malta-tax-identification-number.md)
-- [Netherlands](#netherlands-tax-identification-number)
+- [Netherlands](sit-defn-netherlands-tax-identification-number.md)
 - [Poland](#poland-tax-identification-number)
 - [Portugal](#portugal-tax-identification-number)
 - [Romania](#romania-personal-numeric-code-cnp)
