@@ -1,6 +1,6 @@
     - name: Microsoft 365 LTI 
       href: index.md
-    - name: Microsoft LTI app management
+    - name: Microsoft LMS Gateway management
       href: manage-microsoft-one-lti.md
     - name: Allow browser cookies for LMS URLs
       href: browser-cookies.md
