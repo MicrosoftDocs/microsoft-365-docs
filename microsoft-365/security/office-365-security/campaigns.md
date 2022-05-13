@@ -38,6 +38,9 @@ Campaign Views is a feature in Microsoft Defender for Office 365 Plan 2 (for exa
 
 Campaign Views lets you see the big picture of an attack faster and more complete than any human.
 
+Watch this short video on how campaign views in Microsoft Defender for Office 365 help you understand attack campaigns targeting your organization.  
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGBL8]
+
 ## What is a campaign?
 
 A campaign is a coordinated email attack against one or many organizations. Email attacks that steal credentials and company data are a large and lucrative industry. As technologies increase in an effort to stop attacks, attackers modify their methods in an effort to ensure continued success.
