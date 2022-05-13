@@ -49,7 +49,7 @@ If you would like to delete an LTI registration, follow the steps below.
 
 ## Edit an LTI registration
 
-Currently, we don't support editing an existing LTI registration after it’s added.
+Currently, we don't support editing an existing LTI registration after it's added.
 
 To change an LTI registration, you'll need to:
 
@@ -86,9 +86,9 @@ When signing in to the Microsoft LMS Gateway, you may have issues accessing the 
 Here are some common sign-in issues and how to resolve them.
 
 - **Authorization error**
-  - If you see the error message, "Your account doesn’t have permission to access this page," then either:
-    - The account doesn't belong to a registered tenant, or
-    - The account doesn't belong to an educator or an admin.
+  - If you see the error message, "Your account doesn't have permission to access this page," then either:
+    - The account doesn't belong to a registered tenant, or
+    - The account doesn't belong to an educator or an admin.
 
   - For both these cases, you'll see a **Sign out & switch accounts** button.
     - Select this button or select the **Sign out** button under the user profile menu.
@@ -102,14 +102,14 @@ Here are some common sign-in issues and how to resolve them.
     - If the issue persists, report the problem by selecting the **Report a problem** link at the top right.
 
 - **Authentication error**
-  - If you see the error message, “Authentication failed. Try again," the sign-in session may have expired.
+  - If you see the error message, "Authentication failed. Try again," the sign-in session may have expired.
     - Sign out and sign back in again.
     - You can also clear cookies and local storage for the Microsoft LMS Gateway and `https://login.microsoftonline.com/`.
     - Try to sign in again.
     - If the issue persists, report the problem by selecting the **Report a problem** link at the top right.
 
 - **Other errors**
-  - For all other errors, you'll see the error message, “Something went wrong. Try again later.”
+  - For all other errors, you'll see the error message, "Something went wrong. Try again later."
     - This could be an internal processing error.
     - Try signing in again after a few hours.
       - Select the **Go to Home page** button. This will navigate back to the landing page.
