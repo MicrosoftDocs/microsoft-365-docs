@@ -16,7 +16,11 @@ Cross-Tenant Identity Mapping is covered by the "Preview" terms of the [Microsof
 
 ## Benefits of using Cross-Tenant Identity Mapping
 
-Cross-Tenant Identity Mapping removes the need to export large data sets from a source organization for the sole purpose of configuring Mail Enabled User objects in the target organization. With Cross-Tenant Identity Mapping, the data remains within the Microsoft security boundary and is copied directly from the source organization to the target organization. Using Cross-Tenant Identity Mapping will reduce the potential for mistakes when configuring potentially thousands of target objects for a migration by automatically configuring values such as ExchangeGuid, ArchiveGuid, and all necessary X500 proxy addresses.
+Cross-Tenant Identity Mapping removes the need to export large data sets from a source organization for the sole purpose of configuring Mail Enabled User objects in the target organization.
+
+With Cross-Tenant Identity Mapping, the data remains within the Microsoft security boundary and is securely copied directly from the source organization to the target organization using specially configured Organization Relationships serving as a unidirectional trust.
+
+Using Cross-Tenant Identity Mapping will reduce the potential for mistakes when configuring potentially thousands of target objects for a migration by automatically configuring values such as ExchangeGuid, ArchiveGuid, and all necessary X500 proxy addresses.
 
 Some additional benefits of using Cross-Tenant Identity Mapping are.
 
@@ -55,4 +59,4 @@ If you would like to participate or you have more questions, then email CTIMPrev
 
 We recommend reviewing the current Cross-Tenant Mailbox Migration steps related to preparing target user objects for migration as this preparation is what Cross-Tenant Identity Mapping will automate.
 
-- [Review Cross-Tenant Mailbox Migration (Preview) Instructions](cross-tenant-mailbox-migration.md#prepare-target-user-objects-for-migration)
+- [Review Cross-Tenant Mailbox Migration (preview)](cross-tenant-mailbox-migration.md#prepare-target-user-objects-for-migration)

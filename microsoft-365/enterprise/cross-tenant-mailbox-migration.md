@@ -233,7 +233,7 @@ Users migrating must be present in the target tenant and Exchange Online system 
 Ensure the following objects and attributes are set in the target organization.
 
 >[!TIP]
->Microsoft is developing a feature to provide a secure automated method to set many of the attributes in the following section. This feature, named Cross-Tenant Identity Mapping, is currently looking for customers willing to participate in a private preview. If you have interest learning more about this still in development feature and how it can simplify your Cross-Tenant migration processes, then please see the article [What is Cross-Tenant Identity Mapping](cross-tenant-identity-mapping.md).
+>Microsoft is developing a feature to provide a secure automated method to set many of the attributes in the following section. This feature, named Cross-Tenant Identity Mapping, is currently looking for customers willing to participate in a small private preview. If you have interest learning more about this still in development feature and how it may simplify your Cross-Tenant migration processes, then please see the article [Cross-Tenant Identity Mapping](cross-tenant-identity-mapping.md).
 
 1. For any mailbox moving from a source organization, you must provision a MailUser object in the Target organization:
 
