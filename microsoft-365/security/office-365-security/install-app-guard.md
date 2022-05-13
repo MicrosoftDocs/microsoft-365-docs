@@ -49,7 +49,7 @@ To learn more about Office update channels, see [Overview of update channels for
 
 > [!NOTE]
 > Microsoft 365 Apps for enterprise with shared computer activation or device-based licensing do not have access to Application Guard for Office.
-> Safe Documents licensing plans allow access to Application Gurad for Office. For more information, see [Safe Documents in Microsoft 365 E5/A5](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/safe-docs).
+> Safe Documents licensing plans allow access to Application Gurad for Office. For more information, see [Safe Documents in Microsoft 365 E5/A5](/microsoft-365/security/office-365-security/safe-docs).
 
 ## Deploy Application Guard for Office
 
