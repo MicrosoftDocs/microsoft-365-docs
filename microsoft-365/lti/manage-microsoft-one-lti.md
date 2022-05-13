@@ -24,7 +24,7 @@ In this article, IT admins will find instructions on key Microsoft LMS Gateway m
 - [Delete an LTI registration](#delete-an-lti-registration).
 - [Edit an LTI registration](#edit-an-lti-registration).
 - [Troubleshoot issues with Microsoft LMS Gateway](#troubleshoot-issues-with-microsoft-lms-gateway).
-- [Report problems with Microsoft LMS Gateway](#report-problems-with-lti-apps).
+- [Report problems with Microsoft LMS Gateway](#report-problems-with-lti-registration-portal).
 
 ## View an LTI registration
 
