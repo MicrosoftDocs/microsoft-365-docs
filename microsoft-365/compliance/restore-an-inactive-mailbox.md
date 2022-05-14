@@ -23,7 +23,7 @@ ms.custom: seo-marvel-apr2020
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-An inactive mailbox (which is a type of soft-deleted mailbox) is used to retain a former employee's email after he or she leaves your organization. If another employee takes on the job responsibilities of the departed employee or if that employee returns to your organization, there are two ways that you can make the contents of the inactive mailbox available to a user:
+An inactive mailbox (which is a type of soft-deleted mailbox) is used to retain a former employee's email after they leave your organization. If another employee takes on the job responsibilities of the departed employee or if that employee returns to your organization, there are two ways that you can make the contents of the inactive mailbox available to a user:
 
 - **Restore an inactive mailbox** If another employee takes on the job responsibilities of the departed employee, or if another user needs access to the contents of the inactive mailbox, you can restore (or merge) the contents of the inactive mailbox to an existing mailbox. You can also restore the archive from an inactive mailbox. After it's restored, the inactive mailbox is preserved and is retained as an inactive mailbox. This article describes the procedures for restoring an inactive mailbox.
 
