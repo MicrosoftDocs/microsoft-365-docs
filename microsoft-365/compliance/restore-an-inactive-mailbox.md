@@ -39,7 +39,7 @@ See the [More information](#more-information) section in this article for more d
 
 ## Requirements to restore an inactive mailbox
 
-- You have to use Exchange Online PowerShell to restore an inactive mailbox. You can't use the Exchange admin center (EAC). For step-by-step instructions, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+- You must use Exchange Online PowerShell to restore an inactive mailbox. You can't use the Exchange admin center (EAC) or the Microsoft Purview compliance portal for this procedure. For step-by-step instructions to use Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - Run the following command in Exchange Online PowerShell to get identity information for the inactive mailboxes in your organization.
 
@@ -147,7 +147,7 @@ If an inactive mailbox has an archive mailbox, you can also restore it to the ar
   Get-Mailbox -InactiveMailboxOnly | Format-List Name,PrimarySMTPAddress,DistinguishedName,ExchangeGUID,LegacyExchangeDN,ArchiveStatus
   ```
 
-- **Use a Microsoft 365 retention policy or Litigation Hold or to retain inactive mailbox content.** If you want to retain the state of an inactive mailbox after it's restored, you can apply a [Microsoft 365 retention policy](retention.md) to the target mailbox or place the target mailbox on [Litigation Hold](create-a-litigation-hold.md before you restore the inactive mailbox. This will prevent the permanent deletion of any items from the inactive mailbox after they're restored to the target mailbox.
+- **Use a Microsoft 365 retention policy or Litigation Hold or to retain inactive mailbox content.** If you want to retain the state of an inactive mailbox after it's restored, you can apply a [Microsoft 365 retention policy](retention.md) to the target mailbox or place the target mailbox on [Litigation Hold](create-a-litigation-hold.md) before you restore the inactive mailbox. This will prevent the permanent deletion of any items from the inactive mailbox after they're restored to the target mailbox.
 
 - **Enable retention hold on the target mailbox before you restore an inactive mailbox.** Because mailbox items from an inactive mailbox could be old, you might consider enabling retention hold on the target mailbox before you restore an inactive mailbox. When you put a mailbox on retention hold, the retention policy that's assigned to it won't be processed until the retention hold is removed or until the retention hold period expires. This gives the owner of the target mailbox time to manage old messages from the inactive mailbox. Otherwise, the retention policy might delete old items (or move items to the archive mailbox, if it's enabled) that have expired based on the retention settings configured for the target mailbox. For more information, see [Place a mailbox on retention hold in Exchange Online](/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold).
 
