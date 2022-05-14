@@ -27,7 +27,7 @@ Microsoft 365 Lighthouse supports reprovisioning Cloud PCs that have a provision
 
 You must be a Cloud PC Administrator in the partner tenant.
 
-## Reprovision a Windows 365 Cloud PC 
+## Reprovision a Windows 365 Cloud PC
 
 1. In the left navigation pane in Lighthouse, select **Windows 365**.
 
@@ -59,4 +59,4 @@ The tab displays any current actions queued for this device, including the actio
 ## Related content
 
 [Provisioning Overview](/windows-365/enterprise/provisioning) (article)\
-[Editing provisioning policies](windows-365/enterprise/edit-provisioning-policy) (article)
+[Edit provisioning policies](/windows-365/enterprise/edit-provisioning-policy)
