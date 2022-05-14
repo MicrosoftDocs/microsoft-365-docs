@@ -35,7 +35,7 @@ Bookings in Outlook is available in the following subscriptions:
 
 Bookings in Outlook is on by default for users with these subscriptions.
 
-Bookings in Outlook needs service plan “Microsoft Bookings” assigned to users to be able to access Bookings. This service plan can be enabled/disabled by tenant admins. So, if the service “Microsoft Bookings” is not assigned then Bookings access will be denied to users even if they are in one of the above listed SKUs.
+Bookings in Outlook needs the **Microsoft Bookings** service plan assigned to users for them to be able to access Bookings. This service plan can be enabled/disabled by tenant admins. So, if **Microsoft Bookings** is not assigned to them, Bookings access will be denied to users even if they are in one of the previously listed SKUs.
 
 For more information, see the [Bookings in Outlook Microsoft 365 Roadmap item](https://go.microsoft.com/fwlink/?linkid=328648).
 
