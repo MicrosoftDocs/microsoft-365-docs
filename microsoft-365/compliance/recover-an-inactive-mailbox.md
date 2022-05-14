@@ -39,7 +39,7 @@ See the [More information](#more-information) section for more details about the
 
 ## Requirements to recover an inactive mailbox
 
-- You have to use Exchange Online PowerShell to recover an inactive mailbox. You can't use the Exchange admin center (EAC). For step-by-step instructions, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+- You must use Exchange Online PowerShell to recover an inactive mailbox. You can't use the Exchange admin center (EAC) or the Microsoft Purview compliance portal for this procedure. For step-by-step instructions to use Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - Run the following command to get identity information for the inactive mailboxes in your organization.
 
@@ -84,7 +84,7 @@ After you recover an inactive mailbox, a new user account is also created. You n
 
     - **In-Place Hold** In-Place Holds are removed from the recovered mailbox. This means the recovered mailbox is removed as a source mailbox from any In-Place Hold or In-Place eDiscovery search.
 
-    - **Microsoft 365 retention policy with Preservation Lock.** If the inactive mailbox was assigned to a retention policy with Preservation Lock (called a *locked retention policy*), the recovered mailbox is assigned to the same locked retention policy. For more information about locked retention policies, see [[Use Preservation Lock to restrict changes to retention policies and retention label policies](retention-preservation-lock.md).
+    - **Microsoft 365 retention policy with Preservation Lock.** If the inactive mailbox was assigned to a retention policy with Preservation Lock (called a *locked retention policy*), the recovered mailbox is assigned to the same locked retention policy. For more information about locked retention policies, see [Use Preservation Lock to restrict changes to retention policies and retention label policies](retention-preservation-lock.md).
 
     - **Microsoft 365 retention policy without Preservation Lock.** The inactive mailbox is removed from any unlocked Microsoft 365 retention policy that was applied to it. However, Litigation Hold is enabled on the recovered mailbox to prevent the deletion of mailbox content based on any organization-wide retention policies that delete content older than a specific age. You can keep the Litigation Hold or remove it. For more information, see [Create a Litigation Hold](create-a-litigation-hold.md).
 
