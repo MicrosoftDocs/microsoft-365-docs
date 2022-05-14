@@ -79,14 +79,14 @@ After you recover an inactive mailbox, a new user account is also created. You n
 - **What happens when you recover an inactive mailbox?** When you recover an inactive mailbox, the following things occur:
 
   - The hold that was applied to an inactive mailbox is changed or removed based on the type of hold that was applied to the inactive mailbox before it was recovered.
+    
+    - **Microsoft 365 retention policy with Preservation Lock.** If the inactive mailbox was included in a retention policy that has [Preservation Lock](retention-preservation-lock.md), the recovered mailbox is assigned to the same retention policy.
+    
+    - **Microsoft 365 retention policy without Preservation Lock.** The inactive mailbox is removed from the Microsoft 365 retention policy. However, Litigation Hold is enabled on the recovered mailbox to prevent the deletion of mailbox content based on any organization-wide retention policies that delete content older than a specific age. You can keep the Litigation Hold or remove it. For more information, see [Create a Litigation Hold](create-a-litigation-hold.md).
 
     - **Litigation Hold.** If Litigation Hold was enabled for the inactive mailbox, it's removed from the recovered mailbox.
 
     - **In-Place Hold** In-Place Holds are removed from the recovered mailbox. This means the recovered mailbox is removed as a source mailbox from any In-Place Hold or In-Place eDiscovery search.
-
-    - **Microsoft 365 retention policy with Preservation Lock.** If the inactive mailbox was assigned to a retention policy with Preservation Lock (called a *locked retention policy*), the recovered mailbox is assigned to the same locked retention policy. For more information about locked retention policies, see [Use Preservation Lock to restrict changes to retention policies and retention label policies](retention-preservation-lock.md).
-
-    - **Microsoft 365 retention policy without Preservation Lock.** The inactive mailbox is removed from any unlocked Microsoft 365 retention policy that was applied to it. However, Litigation Hold is enabled on the recovered mailbox to prevent the deletion of mailbox content based on any organization-wide retention policies that delete content older than a specific age. You can keep the Litigation Hold or remove it. For more information, see [Create a Litigation Hold](create-a-litigation-hold.md).
 
   - The single item recovery period (which is defined by the **RetainDeletedItemsFor** mailbox property) is set to 30 days. Typically, when a new mailbox is created in Exchange Online, this retention period is set to 14 days. Setting this to the maximum value of 30 days gives you more time to recover any data that's been permanently deleted (or purged) from the inactive mailbox. You can also disable single item recovery or set the single item recovery period back to the default of 14 days. For more information, see [Enable or disable single item recovery for a mailbox](/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-single-item-recovery).
 
@@ -98,7 +98,7 @@ After you recover an inactive mailbox, a new user account is also created. You n
 
 - **What if the mailbox retention period for the inactive mailbox hasn't expired?** If an inactive mailbox was soft-deleted less than 30 days ago, you can't use the **New-Mailbox -InactiveMailbox** command to recover it. You need to recover it by restoring the corresponding user account. For more information, see [Delete a user from your organization](../admin/add-users/delete-a-user.md).
 
-- **How do you know if the soft-deleted mailbox retention period for an inactive mailbox has expired?** Run the following command.
+- **How do you know if the soft-deleted mailbox retention period for an inactive mailbox has expired?** Run the following command:
     
   ```powershell
   Get-Mailbox -InactiveMailboxOnly <identity of inactive mailbox> | Format-List ExternalDirectoryObjectId
@@ -107,4 +107,4 @@ After you recover an inactive mailbox, a new user account is also created. You n
     - If there's a value for the **ExternalDirectoryObjectId** property, the mailbox retention period has expired, and you can recover the inactive mailbox by running the **New-Mailbox -InactiveMailbox** command.
     - If there's a value for the **ExternalDirectoryObjectId** property, the soft-deleted mailbox retention period hasn't expired and you have to recover the mailbox by [restoring the user account](../admin/add-users/delete-a-user.md).
 
-- **Consider enabling the archive mailbox after you recover an inactive mailbox.** This lets the returning user or new employee move old messages to the archive mailbox. And when the retention hold expires, the archive policy that is part of the default Exchange retention policy assigned to Exchange Online mailboxes will move items that are two years or older to the archive mailbox. If you don't enable the archive mailbox, items older than two years will remain in the user's primary mailbox. For more information, see [Enable archive mailboxes](enable-archive-mailboxes.md).
+- **Consider enabling the archive mailbox after you recover an inactive mailbox.** This lets the returning user or new employee move old messages to the archive mailbox. And when the retention hold expires, the archive policy that is part of the default Exchange MRM retention policy assigned to Exchange Online mailboxes will move items that are two years or older to the archive mailbox. If you don't enable the archive mailbox, items older than two years will remain in the user's primary mailbox. For more information, see [Enable archive mailboxes](enable-archive-mailboxes.md).
