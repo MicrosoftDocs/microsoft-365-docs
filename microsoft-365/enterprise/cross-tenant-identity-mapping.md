@@ -30,7 +30,7 @@ Some additional benefits of using Cross-Tenant Identity Mapping are.
 - Automated population of required attributes from the source organization Mailbox User to the target organization Mail Enabled User.
 - Providing a list of objects prepared and ready for Cross-Tenant Mailbox Migration based on the source organization users’ primarySMTPAddress value.
 
-## Facts about Cross-Tenant Identity Mapping
+## FAQ about Cross-Tenant Identity Mapping
 
 Cross-Tenant Identity Mapping is in a private preview stage of development. As an unfinished project any information or availability is subject to change at any time. Support for private-preview customers will be handled via email. Use of Cross-Tenant Identity Mapping is covered by the "Preview" terms of the Microsoft Universal License Terms for Online Services.
 
