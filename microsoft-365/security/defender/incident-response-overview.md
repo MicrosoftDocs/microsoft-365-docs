@@ -86,4 +86,4 @@ For more information, see [Threat analytics in Microsoft 365 Defender](threat-an
 
 Microsoft Threat Experts - Targeted Attack Notifications is a managed threat hunting service. Once you apply and are accepted, you'll receive targeted attack notifications from Microsoft threat experts, so you won't miss critical threats to your environment. These notifications will help you protect your organization's endpoints, email, and identities. Microsoft Threat Experts – Experts on Demand lets you get expert advice about threats your organization is facing and you can reach out for help on threats your organization is facing. It's available as an additional subscription service.
 
-For more information, see [Microsoft Threat Experts in Microsoft 365 overview](/security/mtp/microsoft-threat-experts.md).
+For more information, see [Microsoft Threat Experts in Microsoft 365 overview](/microsoft-365/security/defender/microsoft-threat-experts?view=o365-worldwide).
