@@ -108,7 +108,6 @@ Search for "SSH" related security recommendations to find SSH vulnerabilities th
 
 :::image type="content" source="images/1156c82ffadd356ce329d1cf551e806c.png" alt-text="The security recommendations dashboard" lightbox="images/1156c82ffadd356ce329d1cf551e806c.png":::
 
-
 ## Use advanced hunting on discovered devices
 
 You can use advanced hunting queries to gain visibility on discovered devices. Find details about discovered devices in the DeviceInfo table, or network-related information about those devices in the DeviceNetworkInfo table.
@@ -123,19 +122,19 @@ Run this query, on the DeviceInfo table, to return all discovered devices along 
 DeviceInfo
 | summarize arg_max(Timestamp, *) by DeviceId  // Get latest known good per device Id
 | where isempty(MergedToDeviceId) // Remove invalidated/merged devices
-| where OnboardingStatus != "Onboarded" 
+| where OnboardingStatus != "Onboarded"
 ```
 
-By invoking the **SeenBy** function, in your advanced hunting query, you can get detail on which onboarded device a discovered device was seen by. This information can help determine the network location of each discovered device and subsequently, help to identify it in the network.  
+By invoking the **SeenBy** function, in your advanced hunting query, you can get detail on which onboarded device a discovered device was seen by. This information can help determine the network location of each discovered device and subsequently, help to identify it in the network.
 
 ```query
 DeviceInfo
-| where OnboardingStatus != "Onboarded" 
-| summarize arg_max(Timestamp, *) by DeviceId  
-| where isempty(MergedToDeviceId)  
-| limit 100 
-| invoke SeenBy() 
-| project DeviceId, DeviceName, DeviceType, SeenBy  
+| where OnboardingStatus != "Onboarded"
+| summarize arg_max(Timestamp, *) by DeviceId 
+| where isempty(MergedToDeviceId) 
+| limit 100
+| invoke SeenBy()
+| project DeviceId, DeviceName, DeviceType, SeenBy
 ```
 
 For more information, see the [SeenBy()](/microsoft-365/security/defender/advanced-hunting-seenby-function) function.
