@@ -199,7 +199,7 @@ To meet the challenges of today's decentralized, data-rich workplace, we're intr
 
 - [Adaptive scopes](retention.md#adaptive-or-static-policy-scopes-for-retention) for retention policies and retention label policies are now generally available (GA). The instructions for [configuring an adaptive scope](retention-settings.md#to-configure-an-adaptive-scope) now include more information for SharePoint site scopes: Blog post reference for using custom site properties and how to use the site property SiteTemplate to include or exclude specific site types with the advanced query builder.
 - [Policy lookup](retention.md#policy-lookup) in the data lifecycle management solution is now generally available (GA.
-- PowerShell alternative to the records management setting that allows users to delete labeled items in SharePoint and OneDrive by using AllowFilesWithKeepLabelToBeDeletedSPO and AllowFilesWithKeepLabelToBeDeletedODB from [Get-PnPTenant](/powershell/module/sharepoint-pnp/get-pnptenant) and [Set-PnPTenant]( /powershell/module/sharepoint-pnp/set-pnptenant).
+- PowerShell alternative to the records management setting that allows users to delete labeled items in SharePoint and OneDrive by using AllowFilesWithKeepLabelToBeDeletedSPO and AllowFilesWithKeepLabelToBeDeletedODB from [Get-PnPTenant](https://pnp.github.io/powershell/cmdlets/Get-PnPTenant.html) and [Set-PnPTenant](https://pnp.github.io/powershell/cmdlets/Set-PnPTenant.html).
 
 ### Sensitivity labels
 
