@@ -100,7 +100,7 @@ To create a DEP to use with a mailbox, follow these steps:
    New-DataEncryptionPolicy -Name USA_mailboxes -Description "Root key for mailboxes in USA and its territories" -AzureKeyIDs https://contoso_EastUSvault02.vault.azure.net/keys/USA_key_01, https://contoso_CentralUSvault02.vault.azure.net/keys/USA_Key_02
    ```
 
-For detailed syntax and parameter information, see [New-DataEncryptionPolicy](/powershell/module/exchange/new-dataencryptionpolicy?view=exchange-ps).
+For detailed syntax and parameter information, see [New-DataEncryptionPolicy](/powershell/module/exchange/new-dataencryptionpolicy).
 
 ### Assign a DEP to a mailbox
 
