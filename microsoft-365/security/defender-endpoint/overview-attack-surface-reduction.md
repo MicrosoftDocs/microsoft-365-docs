@@ -30,7 +30,6 @@ ms.date: 05/16/2022
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Business](../defender-business/index.yml)
 - Microsoft Defender Antivirus
 
 **Platforms**
