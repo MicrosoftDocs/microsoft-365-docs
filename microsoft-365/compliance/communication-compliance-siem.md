@@ -1,6 +1,7 @@
 ---
 title: "Communication compliance with SIEM solutions"
 description: "Learn about communication compliance integration with SIEM solutions."
+keywords: Microsoft 365, Microsoft Purview, compliance, communication compliance
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -22,7 +23,9 @@ search.appverid:
 
 # Communication compliance with SIEM solutions
 
-[Communication compliance](communication-compliance.md) is an insider risk solution in Microsoft 365 that helps minimize communication risks by helping you detect, capture, and act on inappropriate messages in your organization. Security information and event management (SIEM) solutions such as [Microsoft Sentinel](https://azure.microsoft.com/services/azure-sentinel) or [Splunk](https://www.splunk.com/) are commonly used to aggregate and track threats within an organization.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+[Communication compliance](communication-compliance.md) is an insider risk solution in Microsoft Purview that helps minimize communication risks by helping you detect, capture, and act on inappropriate messages in your organization. Security information and event management (SIEM) solutions such as [Microsoft Sentinel](https://azure.microsoft.com/services/azure-sentinel) or [Splunk](https://www.splunk.com/) are commonly used to aggregate and track threats within an organization.
 
 A common need for organizations is to integrate communication compliance alerts and these SIEM solutions. With this integration, organizations can view communication compliance alerts in their SIEM solution and then remediate alerts within the communication compliance workflow and user experience. For example, an employee sends an offensive message to another employee and that message is detected by a communication compliance policy monitoring for inappropriate content. These events are tracked in Microsoft 365 Audit (also known as "unified audit log") by the communication compliance solution and imported into the SIEM solution. An alert is then triggered in the SIEM solution for the organization from events monitored in Microsoft 365 Audit that are associated with communication compliance alerts. Investigators are notified of the alert in the SIEM solutions and then they investigate and remediate the alert in the communication compliance solution.
 
@@ -132,5 +135,5 @@ Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -RecordType Compl
 ## Resources
 
 - [Communication compliance auditing](communication-compliance-reports-audits.md#audit)
-- [Advanced Audit in Microsoft 365](advanced-audit.md)
+- [Microsoft Purview Audit (Premium)](advanced-audit.md)
 - [Office 365 Management Activity API reference](/office/office-365-management-api/office-365-management-activity-api-reference)

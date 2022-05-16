@@ -1,7 +1,7 @@
 ---
 title: "External recipients service alerts"
-ms.author: markjjo
-author: markjjo
+ms.author: kvice
+author: kelleyvice-msft
 manager: scotv
 ms.date: 
 audience: Admin

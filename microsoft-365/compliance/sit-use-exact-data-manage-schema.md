@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.date:
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -19,6 +19,8 @@ description: Learn how to edit or remove your exact data match schema.
 ms.custom: seo-marvel-apr2020
 ---
 # Manage your exact data match schema
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 ## Editing the schema for EDM-based classification manually
 

@@ -40,10 +40,6 @@ Examples of Microsoft Defender for Office 365 organizations include:
 
 The high-level differences between anti-phishing policies in EOP and anti-phishing policies in Defender for Office 365 are described in the following table:
 
-<br>
-
-****
-
 |Feature|Anti-phishing policies in EOP|Anti-phishing policies in Defender for Office 365|
 |---|:---:|:---:|
 |Automatically created default policy|![Check mark.](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|
@@ -53,7 +49,6 @@ The high-level differences between anti-phishing policies in EOP and anti-phishi
 |First contact safety tip|![Check mark.](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|
 |Impersonation settings||![Check mark](../../media/checkmark.png)|
 |Advanced phishing thresholds||![Check mark](../../media/checkmark.png)|
-|
 
 <sup>\*</sup> In the default policy, the policy name, and description are read-only (the description is blank), and you can't specify who the policy applies to (the default policy applies to all recipients).
 
@@ -141,9 +136,9 @@ The **Show first contact safety tip** settings is available in EOP and Defender 
 - The first time they get a message from a sender
 - They don't often get messages from the sender.
 
-![First contact safety tip for messages with one recipient.](../../media/safety-tip-first-contact-one-recipient.png)
+:::image type="content" source="../../media/safety-tip-first-contact-one-recipient.png" alt-text="The First contact safety tip for messages with one recipient" lightbox="../../media/safety-tip-first-contact-one-recipient.png":::
 
-![First contact safety tip for messages with multiple recipients.](../../media/safety-tip-first-contact-multiple-recipients.png)
+:::image type="content" source="../../media/safety-tip-first-contact-multiple-recipients.png" alt-text="The First contact safety tip for messages with with multiple recipients" lightbox="../../media/safety-tip-first-contact-multiple-recipients.png":::
 
 This capability adds an extra layer of security protection against potential impersonation attacks, so we recommend that you turn it on.
 
@@ -189,7 +184,7 @@ The following impersonation settings are only available in anti-phishing policie
 - **Enable domains to protect**: Prevents the specified domains from being impersonated **in the message sender's domain**. For example, all domains that you own ([accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) or specific custom domains (domains you own or partner domains). This list of **sender domains** that are protected from impersonation is different from the list of **recipients** that the policy applies to (all recipients for the default policy; specific recipients as configured in the **Users, groups, and domains** setting in the [Common policy settings](#common-policy-settings) section).
 
   > [!NOTE]
-  > The maximum number of protected domains that you can define in all anti-phishing policies is 50.
+  > You can specify a maximum of 50 custom domains in each anti-phishing policy.
 
   By default, no sender domains are configured for impersonation protection in **Enable domains to protect**. Therefore, by default, no sender domains are covered by impersonation protection, either in the default policy or in custom policies.
 

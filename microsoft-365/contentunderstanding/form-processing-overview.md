@@ -12,7 +12,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn about form processing in Microsoft SharePoint Syntex.
+description: Learn how to use AI Build to create form processing models in Microsoft SharePoint Syntex.
 ---
 
 # Form processing overview in Microsoft SharePoint Syntex
@@ -32,26 +32,25 @@ For example, you can create a form processing model that identifies all purchase
 
 ![Doc library view.](../media/content-understanding/doc-lib-done.png)</br>  
 
-You use example files to train your model and define the information to be extracted from your form. The layout of your document is learned by training your model. You only need five form documents to get started. AI Builder will analyze your example files for key-value pairs, and you can also manually identify ones that may not have been detected.  AI builder lets you test the accuracy of your model on your example files.
+You use example files to train your model and define the information to be extracted from your form. The layout of your document is learned by training your model. You only need five form documents to get started. AI Builder will analyze your example files for key-value pairs, and you can also manually identify ones that might not have been detected.  AI builder lets you test the accuracy of your model on your example files.
 
-After you train and publish your model, your model creates a [Power Automate Flow](/power-automate/getting-started). The flow runs when a file is uploaded to the SharePoint document library and will extract data that has been identified in the model. The extracted data will display in columns in your model's document library view.
+After you train and publish your model, your model creates a [Power Automate flow](/power-automate/getting-started). The flow runs when a file is uploaded to the SharePoint document library and will extract data that has been identified in the model. The extracted data will display in columns in your model's document library view.
 
-An Office 365 admin needs to [enable Form processing](./set-up-content-understanding.md) for the SharePoint document library for users to be able to [create a form processing model](create-a-form-processing-model.md) in it. You can select the sites during setup, or after setup in your management settings.
+An Office 365 admin needs to [enable form processing](./set-up-content-understanding.md) for the SharePoint document library for users to be able to [create a form processing model](create-a-form-processing-model.md) in it. You can select the sites during setup, or after setup in your management settings.
 
 ### File limitations
 
 When using form processing models, make sure to note the [requirements and limitations for file usage](/ai-builder/form-processing-model-requirements).
 
+### Supported languages
+
+Form processing supports documents in more than 73 languages. For the list of languages, see [Form processing language support](/power-platform-release-plan/2021wave2/ai-builder/form-processing-new-language-support).
+
 ### Multi-Geo environments
 
 When setting up SharePoint Syntex in a [Microsoft 365 Multi-Geo environment](../enterprise/microsoft-365-multi-geo.md), you can only configure it to use form processing in the central location. If you want to use form processing in a satellite location, contact Microsoft support.
 
-
-
-
-
-
-## See Also
+## See also
   
 [Power Automate documentation](/power-automate/)
 

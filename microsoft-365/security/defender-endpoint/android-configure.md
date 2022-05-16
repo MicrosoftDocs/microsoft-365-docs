@@ -81,7 +81,7 @@ Use the following steps to **enable vulnerability assessment of apps** from devi
 1. In [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) , go to **Devices** > **Configuration profiles** > **Create profile** and enter the following settings:
 
    - **Platform**: Select Android device administrator
-   - **Profile**: Select “Custom” and click Create
+   - **Profile**: Select "Custom" and click Create
 
 2. In the **Basics** section, specify a name and description of the profile.
 
