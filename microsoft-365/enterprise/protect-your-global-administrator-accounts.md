@@ -2,7 +2,7 @@
 title: "Step 2. Protect your Microsoft 365 privileged accounts"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 09/30/2020
 audience: Admin
 ms.topic: article

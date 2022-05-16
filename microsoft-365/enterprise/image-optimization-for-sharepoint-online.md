@@ -2,7 +2,7 @@
 title: "Image optimization for SharePoint Online classic publishing sites"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 9/18/2019
 audience: Admin
 ms.topic: troubleshooting

@@ -550,6 +550,26 @@ Specify whether users can submit feedback to Microsoft by going to `Help` > `Sen
 |**Comments**|Available in Microsoft Defender for Endpoint version 101.19.61 or higher.|
 |||
 
+
+
+#### Control sign-in to consumer version of Microsoft Defender
+
+Specify whether users can sign into the consumer version of Microsoft Defender.
+
+<br>
+
+****
+
+|Section|Value|
+|---|---|
+|**Domain**|`com.microsoft.wdav`|
+|**Key**|consumerExperience|
+|**Data type**|String|
+|**Possible values**|enabled (default) <p> disabled|
+|**Comments**|Available in Microsoft Defender for Endpoint version 101.60.18 or higher.|
+|||
+
+
 ### Endpoint detection and response preferences
 
 Manage the preferences of the endpoint detection and response (EDR) component of Microsoft Defender for Endpoint on macOS.

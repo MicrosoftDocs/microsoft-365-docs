@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.date:
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -20,6 +20,8 @@ ms.custom: seo-marvel-apr2020
 ---
 
 # Create the schema for exact data match based sensitive information types
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 You can create the schema and EDM SIT by using the [Use the exact data match schema and sensitive information type pattern wizard](#use-the-exact-data-match-schema-and-sensitive-information-type-pattern-wizard) or [manually](#create-exact-data-match-schema-manually-and-upload). You can also combine both by using one method to create the schema and later edit it using the other method.
 
@@ -80,7 +82,7 @@ You can use this wizard to help simplify the schema file creation process.
 
 ## Use the exact data match schema and sensitive information type pattern wizard
 
-1. In the Microsoft 365 Compliance center for your tenant go to **Data classification** > **Exact data matches** > **EDM schemas**.
+1. In the Microsoft Purview compliance portal for your tenant go to **Data classification** > **Exact data matches** > **EDM schemas**.
 
 2. Choose **Create EDM schema** to open the schema wizard configuration flyout.
 

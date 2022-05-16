@@ -8,7 +8,7 @@ metadata:
   manager: dansimp
   ms.date:
   audience: ITPro
-  ms.topic: troubleshooting
+  ms.topic: faq
 
   ms.localizationpriority: medium
   search.appverid:
@@ -38,7 +38,6 @@ summary: |
   For questions and answers about anti-malware protection, see [Anti-malware protection FAQ](anti-malware-protection-faq-eop.yml).
 
   For questions and answers about anti-spoofing protection, see [Anti-spoofing protection FAQ](anti-spoofing-protection-faq.yml).
-
 
 sections:
   - name: Ignored
@@ -134,4 +133,4 @@ sections:
           ```
 
           After you release a message, you can't release it again.
-          
+

@@ -59,7 +59,7 @@ To use room or equipment mailboxes, open Outlook from your computer or sign in t
   
 7. Type a message describing the purpose and attach any files if needed.
     
-8. To allow others to join online or call in to the meeting, select **Skype Meeting**.
+8. To allow others to join online or call in to the meeting, select **Teams Meeting**.
     
 9. To make sure the room, equipment, and people you've invited are available, select **Scheduling Assistant** at the top. Then select an available time in the calendar.
 
@@ -92,7 +92,7 @@ To set up a room or equipment mailbox, go to the <a href="https://go.microsoft.c
     
    - **Location**: the room number or location of the room in a building or region.
     
-   - **Phone number**: the number of the room itself. This is different from the meeting phone number generated when using Skype for Business.
+   - **Phone number**: the number of the room itself. This is different from the meeting phone number generated when using Microsoft Teams.
     
 4. Select **Add**.
     
