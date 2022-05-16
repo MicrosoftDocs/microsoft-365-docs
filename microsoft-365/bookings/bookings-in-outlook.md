@@ -110,7 +110,7 @@ Use the **Get-OrganizationConfig** and **Set-OrganizationConfig** commands to fi
 
 Use the **Get-CASMailbox** and **Set-CASMailbox** commands to check user status and turn Bookings in Outlook on or off for individual users in your organization.
 
-1. Check individual’s EWS control access by running the following command:
+1. Check the individual’s EWS control access by running the following command:
 
    ```PowerShell
    Get-CASMailbox -Identity adam@contoso.com | Format-List EwsEnabled
