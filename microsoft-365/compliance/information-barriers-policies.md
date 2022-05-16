@@ -418,19 +418,19 @@ Contoso has five departments: *HR*, *Sales*, *Marketing*, *Research*, and *Manuf
 
 | Segment | Can communicate with | Can't communicate with |
 |:----------|:--------------|:-----------------|
-| HR | Everyone | (no restrictions) |
-| Sales | HR, Marketing, Manufacturing | Research |
-| Marketing | Everyone | (no restrictions) |
-| Research | HR, Marketing, Manufacturing | Sales |
-| Manufacturing | HR, Marketing | Anyone other than HR or Marketing |
+| HR | HR, Sales, Marketing, Research, Manufacturing | (no restrictions) |
+| Sales | HR, Sales, Marketing, Manufacturing | Research |
+| Marketing | HR, Sales, Marketing, Research, Manufacturing | (no restrictions) |
+| Research | HR, Marketing, Research | Sales, Manufacturing |
+| Manufacturing | HR, Sales, Marketing, Manufacturing | Research |
 
 For this structure, Contoso's plan includes three IB policies:
 
-1. An IB policy designed to prevent Sales from communicating with Research
-2. Another IB policy to prevent Research from communicating with Sales.
-3. An IB policy designed to allow Manufacturing to communicate with HR and Marketing only.
+1. An IB policy designed to prevent Sales from communicating with Research.
+2. An IB policy to prevent Research from communicating with Sales and Manufacturing.
+3. An IB policy designed to allow Manufacturing to communicate with HR, Sales, and Marketing only.
 
-For this scenario, it's not necessary to define IB policies for *HR* or *Marketing*.
+For this scenario, it's not necessary to define IB policies for *HR* or *Marketing* as IB policies without a defined policy has an implied allow all communication with all other segments.
 
 ### Contoso's defined segments
 
@@ -452,9 +452,9 @@ Contoso defines three IB policies, as described in the following table:
 
 | Policy | Policy Definition |
 |:---------|:--------------------|
-| **Policy 1: Prevent Sales from communicating with Research** | `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p> In this example, the IB policy is called *Sales-Research*. When this policy is active and applied, it will help prevent users who are in the Sales segment from communicating with users in the Research segment. This policy is a one-way policy; it won't prevent Research from communicating with Sales. For that, Policy 2 is needed. |
-| **Policy 2: Prevent Research from communicating with Sales** | `New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive` <p> In this example, the IB policy is called *Research-Sales*. When this policy is active and applied, it will help prevent users who are in the Research segment from communicating with users in the Sales segment. |
-| **Policy 3: Allow Manufacturing to communicate with HR and Marketing only** | `New-InformationBarrierPolicy -Name "Manufacturing-HRMarketing" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR","Marketing","Manufacturing" -State Inactive` <p> In this case, the IB policy is called *Manufacturing-HRMarketing*. When this policy is active and applied, Manufacturing can communicate only with HR and Marketing. HR and Marketing aren't restricted from communicating with other segments. |
+| **Policy 1: Prevent Sales from communicating with Research and Manufacturing** | `New-InformationBarrierPolicy -Name "Sales_Policy" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p> In this example, the IB policy is called *Sales_Policy*. When this policy is active and applied, it will help prevent users who are in the Sales segment from communicating with users in the Research segment. This policy is a one-way policy; this policy won't prevent Research from communicating with Sales. For that, Policy 2 is needed. |
+| **Policy 2: Prevent Research from communicating with Sales and Manufacturing** | `New-InformationBarrierPolicy -Name "Research_Policy" -AssignedSegment "Research" -SegmentsBlocked "Sales","Manufacturing" -State Inactive` <p> In this example, the IB policy is called *Research_Policy*. When this policy is active and applied, it will help prevent users who are in the Research segment from communicating with users in the Sales or Manufacturing segments. This is a one-way policy with Manufacturing; this policy won't prevent Manufacturing from communicating with Research as Policy 3 is needed. |
+| **Policy 3: Allow Manufacturing to communicate with HR and Marketing only** | `New-InformationBarrierPolicy -Name "Manufacturing_Policy" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR","Marketing","Manufacturing" -State Inactive` <p> In this case, the IB policy is called *Manufacturing_Policy*. When this policy is active and applied, Manufacturing can communicate only with HR, Sales, and Marketing. Allow and Block policies can be mixed in this way as long as symmetry is met, as outlined in the table above. |
 
 With segments and policies defined, Contoso applies the policies by running the **Start-InformationBarrierPoliciesApplication** cmdlet.
 
