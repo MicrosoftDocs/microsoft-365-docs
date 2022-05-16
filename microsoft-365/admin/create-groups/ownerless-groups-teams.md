@@ -36,7 +36,7 @@ When creating the policy, you can specify:
 - Which groups or teams are part of the policy
 
 > [!Note]
-> Using a security group to limit who can be invited to be an owner requires that you have an Azure AD Premium license for each Microsoft 365 group member in your organization.
+> Using a security group to limit who can be invited to be an owner requires that you possess but not necessarily assign an Azure AD Premium license for each Microsoft 365 group member in your organization.
 
 To set an ownerless group or team policy
 
