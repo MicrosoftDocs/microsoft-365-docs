@@ -16,7 +16,7 @@ ms.topic: article
 ms.technology: mde
 ms.custom: api
 ---
- 
+
 # List all security baselines assessment profiles
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -31,14 +31,14 @@ ms.custom: api
 
 ## 1. Get security baselines assessment profiles
 
-This API retrieves a list of all security baselines assessment profiles created by the organization.  
+This API retrieves a list of all security baselines assessment profiles created by the organization.
 
 ### 1.1 Parameters
 
-- Supports OData V4 queries.  
-- OData supported operators:  
-  - $filter on : id,name, operatingSystem, operatingSystemVersion, status, settingsNumber, passedDevices, totalDevices  
-  - $top with max value of 10,000.  
+- Supports OData V4 queries.
+- OData supported operators:
+  - $filter on : id,name, operatingSystem, operatingSystemVersion, status, settingsNumber, passedDevices, totalDevices
+  - $top with max value of 10,000.
   - $skip.
 
 ### 1.2 HTTP request
@@ -79,36 +79,36 @@ Authorization|String|Bearer {token}. **Required**.
 ### 1.5.1 Request example
 
 ```http
-GET https://api.securitycenter.microsoft.com/api/baselineProfiles 
+GET https://api.securitycenter.microsoft.com/api/baselineProfiles
 ```
 
 ### 1.6.2 Response example
 
 ```json
-{  
-    "@odata.context": "https:// api.securitycenter.microsoft.com/api/$metadata#Collection(microsoft.windowsDefenderATP.api.PublicBaselineProfileDto)",  
-    "value": 
-    [  
-        {  
-            "id": "02bcbb9d-d197-479e-811e-1cd5a6f9f8fa",  
-            "name": "Windows 10 build 1909 CIS profile",  
-            "description": "important",  
-            "benchmark": "CIS",  
-            "version": "1.0.0",  
-            "operatingSystem": "Windows 10",  
-            "operatingSystemVersion": "1909",  
-            "status": true,  
-            "complianceLevel": "Level 1 (L1) - Corporate/Enterprise Environment (general use)",  
-            "settingsNumber": 51,  
-            "createdBy": "user@org.net",  
-            "lastUpdatedBy": null,  
-            "createdOnTimestampUTC": "0001-01-01T00:00:00Z",  
-            "lastUpdateTimestampUTC": "0001-01-01T00:00:00Z",  
-            "passedDevices": 0,  
-            "totalDevices": 10  
-        }  
-     ]  
-}  
+{
+    "@odata.context": "https:// api.securitycenter.microsoft.com/api/$metadata#Collection(microsoft.windowsDefenderATP.api.PublicBaselineProfileDto)",
+    "value":
+    [
+        {
+            "id": "02bcbb9d-d197-479e-811e-1cd5a6f9f8fa",
+            "name": "Windows 10 build 1909 CIS profile",
+            "description": "important",
+            "benchmark": "CIS",
+            "version": "1.0.0",
+            "operatingSystem": "Windows 10",
+            "operatingSystemVersion": "1909",
+            "status": true,
+            "complianceLevel": "Level 1 (L1) - Corporate/Enterprise Environment (general use)",
+            "settingsNumber": 51,
+            "createdBy": "user@org.net",
+            "lastUpdatedBy": null,
+            "createdOnTimestampUTC": "0001-01-01T00:00:00Z",
+            "lastUpdateTimestampUTC": "0001-01-01T00:00:00Z",
+            "passedDevices": 0,
+            "totalDevices": 10
+        }
+     ]
+}
 ```
 
 ## See also
