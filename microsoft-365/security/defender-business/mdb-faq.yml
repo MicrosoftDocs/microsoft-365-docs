@@ -65,7 +65,9 @@ sections:
 
       - question: Can I use non-Microsoft antivirus/antimalware software with Defender for Business? 
         answer: |
-          Although you can technically onboard devices that are running a non-Microsoft antivirus/antimalware solution, you could run into an issue where real-time protection could be turned off on those devices, and those devices can appear to be not protected. Real-time protection is turned on by default; however, devices running non-Microsoft antivirus/antimalware software could affect your settings. 
+          Although you can technically onboard devices that are running a non-Microsoft antivirus/antimalware solution, you could run into an issue where real-time protection could be turned off on those devices. If real-time protection is turned off on a device, the device will appear to be not protected. 
+          
+          In Defender for Business, real-time protection is turned on by default; however, devices running non-Microsoft antivirus/antimalware software could affect your settings. 
           
           To learn more, see [I'm seeing indications that some devices aren't protected even though they're onboarded to Defender for Business](mdb-troubleshooting.yml#i-m-seeing-indications-that-some-devices-aren-t-protected-even-though-they-re-onboarded-to-defender-for-business).
 
