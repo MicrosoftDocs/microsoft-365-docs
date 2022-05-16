@@ -41,6 +41,9 @@ Admins in organizations with Microsoft Defender for Office 365 can also manage f
 
 You view and manage quarantined messages in the Microsoft 365 Defender portal or in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes).
 
+Watch this short video to learn how to manage quarantined messages as an administrator. 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGGPF]
+
 ## What do you need to know before you begin?
 
 - To open the Microsoft 365 Defender portal, go to <https://security.microsoft.com>. To go directly to the **Quarantine** page, use <https://security.microsoft.com/quarantine>.
