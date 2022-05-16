@@ -18,7 +18,7 @@ ms.custom:
 - AdminTemplateSet
 search.appverid:
 - MET150
-description: "Basic Mobility and Security are part of the Microsoft 365 plans."
+description: "Basic Mobility and Security is part of the Microsoft 365 plans, while Microsoft Intune is a standalone product included with certain Microsoft 365 plans."
 ---
 
 # Choose between Basic Mobility and Security or Intune
