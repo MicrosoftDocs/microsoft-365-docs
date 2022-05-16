@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Reports in the admin center - Viva Learning activity"
+title: "Microsoft 365 admin center Viva Learning activity reports"
 ms.author: efrene
 author: efrene
 manager: scotv

@@ -2,7 +2,7 @@
 title: "How to request your data move"
 ms.author: andyber
 author: andybergen
-manager: laurawi
+manager: scotv
 ms.date: 12/10/2019
 audience: ITPro
 ms.topic: article

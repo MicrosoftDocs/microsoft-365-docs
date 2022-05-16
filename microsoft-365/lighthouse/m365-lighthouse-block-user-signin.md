@@ -1,5 +1,5 @@
 ---
-title: "Block user sign-in"
+title: "Block user sign-in in Microsoft 365 Lighthouse"
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -15,15 +15,12 @@ ms.custom:
 - AdminSurgePortfolib
 - M365-Lighthouse                         
 search.appverid: MET150
-description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn how to block user sign-in."
+description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn how to block a user account if you think it's compromised so users can't sign in."
 ---
 
-# Block user sign-in
+# Block user sign-in in Microsoft 365 Lighthouse
 
-> [!NOTE]
-> The features described in this article are in Preview, are subject to change, and are only available to partners who meet the [requirements](m365-lighthouse-requirements.md). If your organization does not have Microsoft 365 Lighthouse, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
-
-You can block a user account if you think it is compromised. When you block someone, it immediately blocks anyone from signing into that account. If they’re signed in, they will be automatically signed out from all Microsoft services within 60 minutes. This won’t stop the account from receiving mail and doesn’t delete any data.
+You can block a user account if you think it's compromised. When you block a user account, it immediately blocks anyone from signing in to that account. If a user tries to sign in, they're automatically signed out of all Microsoft 365 services within 60 minutes. Blocking a user account won't delete any data, and it won't stop the account from receiving mail.
 
 ## Block sign-in for a user
 
@@ -31,7 +28,7 @@ You can block a user account if you think it is compromised. When you block some
 
 2. Select the **Search users** tab.
 
-3. In the search box, enter a user’s name.
+3. In the search box, enter a user's name.
 
 4. From the search results list, select the user.
 
@@ -41,13 +38,13 @@ You can block a user account if you think it is compromised. When you block some
 
 7. Select **Save**.
 
-## Block risky users
+## Block sign-in for risky users
 
 1. In the left navigation pane in Lighthouse, select **Users**.
 
 2. Select the **Risky users** tab.
 
-3. Select risky user from the list.
+3. Select a risky user from the list.
 
 4. In the user details pane, select **Block sign-in**.
 
