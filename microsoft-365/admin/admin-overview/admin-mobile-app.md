@@ -24,7 +24,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Get the Microsoft 365 Admin app and learn to manage your online organization from your phone or tablet."
+description: "Get the Microsoft 365 Admin app, your companion to the web-based Microsoft 365 admin center, to manage your online organization from your phone or tablet."
 ---
 
 # About the Microsoft 365 admin mobile app

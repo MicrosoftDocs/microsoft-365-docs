@@ -25,7 +25,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
-description: "Give a user the right to access another user's mailbox, which allows the user to read and send emails from the other user's mailbox."
+description: "Give a Microsoft 365 user the right to access another user's mailbox, which allows the user to read and send emails from the other user's mailbox."
 ---
 
 # Give mailbox permissions to another user - Admin Help
