@@ -63,6 +63,12 @@ sections:
           
           See [Set up web content filtering](mdb-configure-security-settings.md#set-up-web-content-filtering).
 
+      - question: Can I use non-Microsoft antivirus/antimalware software with Defender for Business? 
+        answer: |
+          Although you can technically onboard devices that are running a non-Microsoft antivirus/antimalware solution, you could run into an issue where real-time protection could be turned off on those devices, and those devices can appear to be not protected. Real-time protection is turned on by default; however, devices running non-Microsoft antivirus/antimalware software could affect your settings. 
+          
+          To learn more, see [I'm seeing indications that some devices aren't protected even though they're onboarded to Defender for Business](mdb-troubleshooting.yml#i-m-seeing-indications-that-some-devices-aren-t-protected-even-though-they-re-onboarded-to-defender-for-busine).
+
       - question: How can I run custom reports with Defender for Business?
         answer: |
           Defender for Business currently includes a set of APIs to support robust custom reporting, and a Power BI connector. You could schedule a PowerShell script to generate executive summaries formatted in HTML, and send those summaries via email. See [API reference information](/microsoft-365/security/defender-endpoint/exposed-apis-create-app-partners).
