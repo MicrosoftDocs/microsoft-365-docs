@@ -52,9 +52,9 @@ Before trying out this feature, make sure you meet the requirements described in
 | Requirement | Description |
 |:---|:---|
 | Subscription | Your subscription must include one of the following:<br/>- [Windows 10/11 Enterprise E5](/windows/deployment/deploy-enterprise-licenses)<br/>- [Microsoft 365 E5](https://www.microsoft.com/microsoft-365/enterprise/e5?activetab=pivot%3aoverviewtab)<br/>- Microsoft 365 E5 Security<br/>- [Microsoft 365 E3](https://www.microsoft.com/microsoft-365/enterprise/e3?activetab=pivot%3aoverviewtab)<br/>- [Microsoft Defender for Endpoint Plan 1 or Plan 2](../defender/eval-defender-endpoint-overview.md)<br/>- [Microsoft Defender for Business](../defender-business/mdb-overview.md) |
-| Portal access | You have access to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. |
-| Operating system | Your organization's devices are running one of the following operating systems with the [latest antivirus/antimalware updates](manage-updates-baselines-microsoft-defender-antivirus.md): <br/>- Windows 11<br/>-  Windows 10 Anniversary Update (version 1607) or later |
-| Related protection | [Windows Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) and [network protection](network-protection.md) are enabled on your organization's devices. |
+| Portal access | You must have access to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. |
+| Operating system | Your organization's devices must be running one of the following operating systems with the [latest antivirus/antimalware updates](manage-updates-baselines-microsoft-defender-antivirus.md): <br/>- Windows 11<br/>-  Windows 10 Anniversary Update (version 1607) or later |
+| Related protection | [Windows Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) and [network protection](network-protection.md) must be enabled on your organization's devices. |
 
 ## Data handling
 
