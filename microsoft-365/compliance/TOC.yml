@@ -816,6 +816,42 @@
                 href: sit-defn-slovenia-tax-identification-number.md
               - name: Slovenia Unique Master Citizen Number
                 href: sit-defn-slovenia-unique-master-citizen-number.md
+              - name: South Africa identification number
+                href: sit-defn-south-africa-identification-number.md
+              - name: South Korea resident registration number
+                href: sit-defn-south-korea-resident-registration-number.md
+              - name: Spain DNI
+                href: sit-defn-spain-dni.md
+              - name: Spain drivers license number
+                href: sit-defn-spain-drivers-license-number.md
+              - name: Spain passport number
+                href: sit-defn-spain-passport-number.md
+              - name: Spain physical addresses
+                href: sit-defn-spain-physical-addresses.md
+              - name: Spain social security number (SSN)
+                href: sit-defn-spain-social-security-number.md
+              - name: Spain tax identification number
+                href: sit-defn-spain-tax-identification-number.md
+              - name: SQL Server connection string
+                href: sit-defn-sql-server-connection-string.md
+              - name: Surgical procedures
+                href: sit-defn-surgical-procedures.md
+              - name: Sweden drivers license number
+                href: sit-defn-sweden-drivers-license-number.md
+              - name: Sweden national ID
+                href: sit-defn-sweden-national-id.md
+              - name: Sweden passport number
+                href: sit-defn-sweden-passport-number.md
+              - name: Sweden physical addresses
+                href: sit-defn-sweden-physical-addresses.md
+              - name: Sweden tax identification number
+                href: sit-defn-sweden-tax-identification-number.md
+              - name: SWIFT code
+                href: sit-defn-swift-code.md
+              - name: Switzerland physical addresses
+                href: sit-defn-switzerland-physical-addresses.md
+              - name: Switzerland SSN AHV number
+                href: sit-defn-switzerland-ssn-ahv-number.md
           - name: Sensitive information type functions
             href: sit-functions.md
           - name: Custom sensitive information type filters reference

@@ -50,6 +50,6 @@ These entities are in the EU Driver's License Number and are sensitive informati
 - [Romania](sit-defn-romania-drivers-license-number.md)
 - [Slovakia](sit-defn-slovakia-drivers-license-number.md)
 - [Slovenia](sit-defn-slovenia-drivers-license-number.md)
-- [Spain](#spain-drivers-license-number)
-- [Sweden](#sweden-drivers-license-number)
+- [Spain](sit-defn-spain-drivers-license-number.md)
+- [Sweden](sit-defn-sweden-drivers-license-number.md)
 - [U.K.](#uk-drivers-license-number)

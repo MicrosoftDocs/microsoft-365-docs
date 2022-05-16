@@ -50,6 +50,6 @@ These entities are in the EU Tax identification number sensitive information typ
 - [Romania](sit-defn-romania-personal-numeric-code.md)
 - [Slovakia](sit-defn-slovakia-personal-number.md)
 - [Slovenia](sit-defn-slovenia-tax-identification-number.md)
-- [Spain](#spain-tax-identification-number)
-- [Sweden](#sweden-tax-identification-number)
+- [Spain](sit-defn-spain-tax-identification-number.md)
+- [Sweden](sit-defn-sweden-tax-identification-number.md)
 - [U.K.](#uk-unique-taxpayer-reference-number)
