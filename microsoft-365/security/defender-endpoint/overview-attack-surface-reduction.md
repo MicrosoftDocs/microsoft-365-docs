@@ -18,7 +18,7 @@ ms.technology: mde
 ms.collection: 
 - m365initiative-m365-defender
 - M365-security-compliance
-ms.date: 1/18/2022
+ms.date: 05/16/2022
 ---
 
 # Understand and use attack surface reduction capabilities
@@ -27,9 +27,10 @@ ms.date: 1/18/2022
 
 **Applies to:**
 
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Business](../defender-business/index.yml)
 - Microsoft Defender Antivirus
 
 **Platforms**
