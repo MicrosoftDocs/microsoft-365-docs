@@ -362,7 +362,7 @@
             href: sit-modify-keyword-dictionary.md
           - name: Manage your exact data match schema
             href: sit-use-exact-data-manage-schema.md
-          - name: Refresh your sensitive information source table file
+          - name: Refresh your EDM sensitive information source table file
             href: sit-use-exact-data-refresh-data.md
           - name: Use named entities in your data loss prevention policies
             href: named-entities-use.md
