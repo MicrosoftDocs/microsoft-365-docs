@@ -49,7 +49,7 @@ If you're a user, you don't have the permissions to set your password to never e
 
 Follow the steps below if you want to set user passwords to expire after a specific amount of time.
 
-1. In the Microsoft 365 admin center, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**Security & privacy** tab</a> .
+1. In the Microsoft 365 admin center, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**Security & privacy** tab</a>.
 
     If you aren't a global admin or security admin, you won't see the Security & privacy option.
   
