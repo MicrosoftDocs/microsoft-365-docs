@@ -16,19 +16,10 @@ search.appverid:
 description: "Make the most of your Microsoft 365 Business Premium trial. Try out productivity and security capabilities."
 ---
 
-<!---
-
 Here's my recommended flow for this playbook:
 
-1. Set up your trial https://docs.microsoft.com/en-us/microsoft-365/business-premium/m365bp-setup?view=o365-worldwide
-- add your existing domain https://docs.microsoft.com/en-us/microsoft-365/admin/setup/setup-business-basic?view=o365-worldwide#add-your-domain-to-personalize-sign-in
-- add users and assign licenses https://docs.microsoft.com/en-us/microsoft-365/admin/add-users/add-users?view=o365-worldwide
-- update DNS records https://docs.microsoft.com/en-us/microsoft-365/admin/setup/setup-business-basic?view=o365-worldwide#connect-your-domain
 
-2. Set up security
-- protect admin accounts https://docs.microsoft.com/en-us/microsoft-365/business-premium/m365bp-protect-admin-accounts?view=o365-worldwide
-- turn on security defaults https://docs.microsoft.com/en-us/microsoft-365/business-premium/m365bp-conditional-access?view=o365-worldwide
-- apply preset security policies (standard protection) https://docs.microsoft.com/en-us/microsoft-365/business-premium/m365bp-increase-protection?view=o365-worldwide#review-and-apply-preset-security-policies
+
 
 3. Onboard and protect devices
 - visit the Defender portal
@@ -47,22 +38,17 @@ Here's my recommended flow for this playbook:
 - learn how to respond to a security incident https://docs.microsoft.com/en-us/microsoft-365/security/defender-business/mdb-respond-mitigate-threats?view=o365-worldwide
 - review remediation actions https://docs.microsoft.com/en-us/microsoft-365/security/defender-business/mdb-review-remediation-actions?view=o365-worldwide
 
+# Trial playbook: Microsoft Business Premium
 
---->
+Welcome to the Microsoft Business Premium trial playbook. This playbook will help you make the most of your 30-day free trial by teaching you how Microsoft 365 Business Premium increases productivity as well as helps safeguard your organization with Defender for Business. Using Microsoft recommendations, learn how Defender can help you define protection policies, analyze threats to your organization, and enable you to respond to cyberattacks.
 
-# Trial playbook: Microsoft Defender for Microsoft Business Premium
+## Set up the Microsoft 365 Business Premium trial
 
-Welcome to the Microsoft Defender for Microsoft Business Premium trial playbook. This playbook will help you make the most of your 90-day free trial by teaching you how to safeguard your organization with Defender for Business. Using Microsoft recommendations, you'll learn how Defender can help you define protection policies, analyze threats to your organization, and help you respond to attacks.
+When you [start a trial or purchase Microsoft 365 Business Premium](get-microsoft-365-business-premium.md), your first step is to get everything set up. When links in the playbook take you away from this location, simply return to this playbook to continue.
 
-:::image type="content" source="media/mdo-trial-playbook-what-is-mdo.png" alt-text="A graphical representation of all components of Microsoft Defender for Business Premium" lightbox="media/mdo-trial-playbook-what-is-mdo.png":::
+First, [set up your trial](../business-premium/m365bp-setup.md)!
 
-These actions are recommendations from the Microsoft Defender team on key features to try in your 90-day trial.
-
-## Step 1: Getting started
-
-### Start your Microsoft Defender for Business trial
-
-After you have initiated the trial and completed the setup process, it may take up to 2 hours for changes to take effect.
+After you've initiated the trial and completed the setup process, it may take up to two hours for changes to take effect.
 
 We have automatically configured [Preset security policies](/security/office-365-security/preset-security-policies.md) in your environment. These policies represent a baseline protection profile that's suitable for most users. Standard protection includes:
 
@@ -70,40 +56,41 @@ We have automatically configured [Preset security policies](/security/office-365
 
 - Protection to all of the Microsoft 365 Business Premium features such as: SharePoint, OneDrive, Office apps, and Microsoft Teams.
 
+Perform the following to finish setup:
+
+1. Make sure to [add your existing domain](../admin/setup/setup-business-basic?view=o365-worldwide#add-your-domain-to-personalize-sign-in).
+
+2. Now, [add users and assign licenses](../admin/add-users/add-users.md).
+
+3. [Update your DNS records](../setup/setup-business-basic?view=o365-worldwide#connect-your-domain.md).
+
 <!---
 KC Note: a video equivalent for Business Premium instead of Office would be great. But, do the Office videos actually apply anyway since that's one way that users are sharing information in a productivity environment?
 
 Watch this video to learn more: [Protect against malicious links with Safe Links in Microsoft Defender for Business - YouTube](https://www.youtube.com/watch?v=vhIJ1Veq36Y&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=9).
 --->
 
-### Enable users to report suspicious content
+### Add a domain
+When you purchase Microsoft 365 Business Premium trial, you have the option of using a domain you own, or buying one during the sign-up.
 
-Microsoft Defender for enables users to report messages to their security teams and allows admins to submit messages to Microsoft for analysis.
+> [!Note]
+> If you purchased a new domain when you signed up, your domain is all set up and you can move to Add users and assign licenses. Go to the admin center at https://admin.microsoft.com.
 
-- Deploy the [Report Message add-in or the Report Phishing add-in](/security/office-365-security/enable-the-report-message-add-in.md).
+1. Choose **Go to setup** to start the wizard.
 
-- Establish a workflow to [Report false positives and false negatives](/security/office-365-security/report-false-positives-and-false-negatives.md).
+1. In the **Add domain** step, enter the domain name you want to use (like contoso.com).
 
-- Use the [Submissions portal](/security/office-365-security/admin-submission.md).
+> [!Important]
+> If you purchased a domain during the sign-up, you will not see Add a domain step here. Go to Add users instead.
 
-Watch this video to learn more: [Learn how to use the Submissions portal to submit messages for analysis - YouTube](https://www.youtube.com/watch?v=ta5S09Yz6Ks&ab_channel=MicrosoftSecurit).
+1. Follow the steps in the wizard to Create DNS records at any DNS hosting provider for Office 365 that verifies you own the domain. If you know your domain host, see also Add a domain to Microsoft 365.
 
-### Review reports to understand the threat landscape
+1. If your hosting provider is GoDaddy or another host enabled with domain connect, the process is easy and you'll be automatically asked to sign in and let Microsoft authenticate on your behalf.
 
-Use the reporting capabilities in Defender for Business to get more details about your environment.
 
-- Understand threats received in email and collaboration tools with the [Threat protection status report](../security/office-365-security/view-email-security-reports.md#threat-protection-status-report).
 
-- See where threats are blocked with the [Mailflow status report](../security/office-365-security/view-email-security-reports.md#mailflow-status-report).
 
-- [Review links](../security/office-365-security/view-reports-for-mdo.md#url-protection-report) that were viewed by users or blocked by the system.
-
-:::image type="content" source="media/mdo-trial-playbook-reporting.png" alt-text="The Email & collaboration reports in the Microsoft 365 Defender portal" lightbox="media/mdo-trial-playbook-reporting.png":::
-
-## Step 2: Intermediate steps
-
-### Prioritize focus on your most targeted users
-
+<!---
 Protect your most targeted and most visible users with Priority Account Protection in Defender for Office 365, which helps you prioritize your workflow to ensure these users are safe.
 
 - Identify your most targeted or most visible users.
@@ -193,5 +180,7 @@ Equip your users with the right knowledge to identify threats and report suspici
 <!---
 KC Note: I cannot find the equivalent of this to fix the link!
 - **What's included**: For a full list of Defender for Business email security features listed by product tier, view the [Feature Matrix](office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability).
---->
+
 - **Why Defender for Business**: The [Defender for Business datasheet](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4FCiy) shows the top 10 reasons customers choose Microsoft.
+ 
+--->

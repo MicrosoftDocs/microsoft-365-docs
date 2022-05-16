@@ -78,7 +78,7 @@
         href: m365bp-onboard-devices-mdb.md
       - name: Protect Windows devices
         items: 
-          - name: Protection settings for Windows 10 devices
+          - name: Protection settings for Windows devices
             href: m365bp-protection-settings-for-windows-10-devices.md
           - name: Secure Windows devices
             href: m365bp-secure-windows-devices.md
