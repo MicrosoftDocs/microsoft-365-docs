@@ -59,4 +59,8 @@ The tab displays any current actions queued for this device, including the actio
 ## Related content
 
 [Provisioning Overview](/windows-365/enterprise/provisioning) (article)\
+<<<<<<< Updated upstream
 [Edit provisioning policies](/windows-365/enterprise/edit-provisioning-policy)
+=======
+[Edit provisioning policies](/windows-365/enterprise/edit-provisioning-policy) (article)
+>>>>>>> Stashed changes
