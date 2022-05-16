@@ -46,17 +46,17 @@ This means that:
   
 - Messages that are blocked by Exchange mail flow rules won't get scanned by DLP rules created in the Security & Compliance Center.
 
-- Messages that are quarantined by Exchange mail flow rules or any other filters run before DLP will not be scanned by DLP.
+- Messages that are quarantined by Exchange mail flow rules or any other filters run before DLP won't be scanned by DLP.
     
-- If an Exchange mail flow rule modifies a message in a way that causes it to match a DLP policy in the Security & Compliance Center - such as adding external users - then the DLP rules will detect this and enforce the policy as needed.
+- If an Exchange mail flow rule modifies a message in a way that causes it to match a DLP policy in the Security & Compliance Center, such as adding external users, then the DLP rules will detect it and enforce the policy as needed.
     
 Also note that Exchange mail flow rules that use the "stop processing" action don't affect the processing of DLP rules in the Security & Compliance Center - they'll still be processed.
   
 ## Policy tips in the Security & Compliance Center vs. the Exchange admin center
 
-Policy tips can work either with DLP policies and mail flow rules created in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>, or with DLP policies created in the Security & Compliance Center, but not both. This is because these policies are stored in different locations, but policy tips can draw only from a single location.
+Policy tips can work either with DLP policies and mail flow rules created in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>, or with DLP policies created in the Security & Compliance Center, but not both. It is because these policies are stored in different locations, but policy tips can draw only from a single location.
   
-If you've configured policy tips in the Exchange admin center, any policy tips that you configure in the Security & Compliance Center won't appear to users in Outlook on the web and Outlook 2013 and later until you turn off the tips in the Exchange admin center. This ensures that your current Exchange mail flow rules will continue to work until you choose to switch over to the Security & Compliance Center.
+If you've configured policy tips in the Exchange admin center, any policy tips that you configure in the Security & Compliance Center won't appear to users in Outlook on the web and Outlook 2013 and later until you turn off the tips in the Exchange admin center. It ensures that your current Exchange mail flow rules will continue to work until you choose to switch over to the Security & Compliance Center.
   
 >[!Note]
 >While policy tips can draw only from a single location, email notifications are always sent, even if you're using DLP policies in both the Security & Compliance Center and the Exchange admin center.
