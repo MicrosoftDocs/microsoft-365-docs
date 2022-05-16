@@ -181,7 +181,7 @@ You can suppress alerts for the following options:
 
 - Set rule conditions based on evidence types such as AMSI script, WMI event, and scheduled tasks. 
 
-- Set rule conditions when a part of the detected evidence is available. The attributes of the triggering evidence, its parent process, and the attributes of the parent process are all auto populated in the Conditions builder.  
+- Set rule conditions when a part of the detected evidence is available. The attributes of the triggering evidence and the attributes of the parent process are all auto populated in the Conditions builder.  
 
 You can set advanced conditions on multiple IOCs (indicators) with the Conditions builder, using AND, OR, and grouping options. IOCs are indicators such as files, processes, and evidence that trigger the alert. 
 
