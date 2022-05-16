@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
-ms.date: 
+ms.date: 05/13/2022
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -31,7 +31,7 @@ An Microsoft Purview eDiscovery search that you run from the Microsoft Purview c
   
 - The file type is unrecognized or unsupported for indexing.
 
-- Messages have an attached file that can't be opened, such as image files; this is the most common cause of partially indexed email items.
+- Messages have an attached file that can't be opened; this is the most common cause of partially indexed email items.
 
 - The file type is supported for indexing but an indexing error occurred for a specific file.
 
