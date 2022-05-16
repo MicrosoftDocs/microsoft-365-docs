@@ -24,7 +24,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Follow these steps to remove the Microsoft 365 license from a former employee."
+description: "You can remove a former employee's Microsoft 365 license, and then delete it from your subscription or assign the license to another user."
 ---
 
 # Step 6 - Remove and delete the Microsoft 365 license from a former employee
