@@ -108,8 +108,8 @@ To configure assessment jobs, the following user permission option is required: 
 
 The signing-in process can be completed on the designated assessment device itself or any other device (for example, your personal client device).
 
- > [!NOTE]
- > Both the account the user signs in with and the device being used to complete the sign in process, must be in the same tenant where the device is onboarded to Microsoft Defender for Endpoint. 
+    > [!NOTE]
+    > Both the account the user signs in with and the device being used to complete the sign in process, must be in the same tenant where the device is onboarded to Microsoft Defender for Endpoint. 
 
 To complete the network scanner registration process:
 
