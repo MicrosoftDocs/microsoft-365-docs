@@ -80,7 +80,7 @@
       - name: Troubleshooting
         href: mdb-troubleshooting.yml
       - name: API reference information
-        href: ../security/defender-endpoint/exposed-apis-create-app-partners?bc=%2Fmicrosoft-365%2Fsecurity%2Fdefender-business%2Fbreadcrumb%2Ftoc.json&toc=%2Fmicrosoft-365%2Fsecurity%2Fdefender-business%2Ftoc.json
+        href: ../security/defender-endpoint/exposed-apis-create-app-partners.md?bc=%2Fmicrosoft-365%2Fsecurity%2Fdefender-business%2Fbreadcrumb%2Ftoc.json&toc=%2Fmicrosoft-365%2Fsecurity%2Fdefender-business%2Ftoc.json
       - name: Microsoft 365 Business Premium
         href: /microsoft-365/business-premium/
       - name: Microsoft 365 Lighthouse
