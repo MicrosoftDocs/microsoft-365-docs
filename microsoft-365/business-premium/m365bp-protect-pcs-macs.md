@@ -1,5 +1,5 @@
 ---
-title: "Protect unmanaged Windows 10 PCs and Macs in Microsoft 365 Business Premium"
+title: "Protect unmanaged Windows PCs and Macs in Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -26,7 +26,7 @@ search.appverid:
 description: "Protect unmanaged or bring-your-own devices (BYOD) from cyberattacks with Microsoft 365 Business Premium. How to set up cybersecurity for Windows PCs and Macs."
 ---
 
-# Protect unmanaged Windows 10 PCs and Macs in Microsoft 365 Business Premium
+# Protect unmanaged Windows PCs and Macs in Microsoft 365 Business Premium
 
 This objective is focused on creating protection for any unmanaged Windows 10 PCs and Macs not enrolled in Microsoft Intune. It is very likely your small business or campaign may have staff who bring their own devices (BYODs), and these devices are not managed. BYODs include personally-owned phones, tablets, and PCs. 
 
