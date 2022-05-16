@@ -14,7 +14,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: how-to
-ms.date: 01/27/2021
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ---
 
