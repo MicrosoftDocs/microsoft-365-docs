@@ -57,7 +57,7 @@
     - name: Overview of the Windows 365 (Cloud PCs) page
       href: m365-lighthouse-win365-page-overview.md
     - name: Reprovision a Windows 365 Cloud PC
-      href: m365-lighthouse-reprovision-a-cloudpc.md
+      href: m365-lighthouse-reprovision-cloudpc.md
 - name: Manage threats
   items:
     - name: Overview of the Threat management page
