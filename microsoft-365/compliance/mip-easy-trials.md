@@ -126,18 +126,32 @@ If you want to edit the client-side auto-labeling configuration, see [How to con
 
 ## Service-side auto-labeling 
 
-Service-side auto-labeling helps label sensitive documents at rest, and emails in transit. The default service-side auto-labeling policy creates a policy in simulation mode for documents stored in all SharePoint or OneDrive sites, and all emails that are sent via Exchange Online. In simulation mode, items aren't actually labeled until you turn on the policy. Simulation mode allows you to preview what items would get labeled when the policy is turned on, so you have confidence in the labeling feature before you deploy the policy to your tenant for actual labeling. 
+Service-side auto-labeling helps label sensitive documents at rest, and emails in transit. The default service-side auto-labeling policy creates policies that run in simulation mode for documents stored in all SharePoint or OneDrive sites, and all emails that are sent via Exchange Online. In simulation mode, items aren't actually labeled until the policy is turned on. You can manually turn on the policy, or unless you change the default setting, the policy will be automatically turned on for you if there aren't any changes to the policy within 25 days of the simulation starting.
 
-The default service-side auto-labeling has the following configuration: 
+Simulation mode allows you to preview what items would get labeled when the policy is turned on, so you have confidence in the labeling feature before you deploy the policy to your tenant for actual labeling. 
 
-- If there are 1-9 instances of credit card numbers found in a document, apply the sensitivity label **Confidential** \ **Anyone (unrestricted)**
+The default service-side auto-labeling policies have the following configuration: 
 
-- If there are 10 or more instances of credit card numbers found in a document or email, recommend the user applies the sensitivity label **Confidential** \ **All Employees** 
+For all customers:
+
+- If there are 1-9 instances of credit card numbers found in a document or email, apply the sensitivity label **Confidential** \ **Anyone (unrestricted)**
+    
+- If there are 10 or more instances of credit card numbers found in a document or email, apply the sensitivity label **Confidential** \ **All Employees** 
+
+For new customers after May 30, 2022 and the Microsoft 365 tenant is in the US region:
+
+- If there are 1-9 instances of US personal data and full names found in a document or email, apply the sensitivity label **Confidential** \ **Anyone (unrestricted)**
+
+- If there are 10 or more instances of US personal data and full names found in a document or email, apply the sensitivity label **Confidential** \ **All Employees** 
+
+- These policies don't share the same locations for Exchange, SharePoint, and OneDrive because although they are created at the same time, simulation isn't immediately turned on for SharePoint and OneDrive:
+    - For the Exchange location: Create the auto-labeling policy and immediately start simulation.
+    - For the SharePoint and OneDrive locations: Create the auto-labeling policy but wait 25 days before automatically starting simulation.
 
 > [!NOTE]
 > If we detected you have your own sensitivity labels published, we'll prompt you to select one of your own labels for your auto-labeling policy.
 
-When the simulation is complete, review the results and if you are happy with them, turn on the policy.
+When the simulation is complete, review the results and if you are happy with them, turn on the policies. After May 30, 2022, by default, the policy will be automatically turned on after 25 days if it isn't edited.
 
 For more information about simulation mode, see [Learn about simulation mode](apply-sensitivity-label-automatically.md#learn-about-simulation-mode).
 
