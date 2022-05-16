@@ -80,7 +80,7 @@ If DLP finds keywords such as "VISA" or "AMEX", near date values that might be t
 
 In other words, DLP is smart enough to recognize the difference between these two strings of text in an email:
 
-- "Can you order me a new laptop. Use my VISA number 1111-1111-1111-1111, expiry 11/22, and send me the estimated delivery date when you've it."
+- "Can you order me a new laptop. Use my VISA number 1111-1111-1111-1111, expiry 11/22, and send me the estimated delivery date when you have it."
 - "My laptop serial number is 2222-2222-2222-2222 and it was purchased on 11/2010. By the way, is my travel visa approved yet?"
 
 See [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md) that explains how each information type is detected.
