@@ -382,10 +382,14 @@
                 href: sit-defn-all-medical-terms-conditions.md
               - name: All Physical Addresses
                 href: sit-defn-all-physical-addresses.md
+              - name: Amazon S3 client secret access key 
+                href: sit-defn-amazon-s3-client-secret-access-key.md
               - name: Argentina national identity (DNI) number
                 href: sit-defn-argentina-national-identity-numbers.md
               - name: Argentina Unique Tax Identification Key
                 href: sit-defn-argentina-unique-tax-identification-key.md
+              - name: ASP.NET Machine Key
+                href: sit-defn-asp-net-machine-key.md
               - name: Australia bank account number
                 href: sit-defn-australia-bank-account-number.md
               - name: Australia business number
@@ -416,6 +420,12 @@
                 href: sit-defn-austria-tax-identification-number.md
               - name: Austria value added tax
                 href: sit-defn-austria-value-added-tax.md
+              - name: Azure AD client access token
+                href: sit-defn-azure-ad-client-access-token.md
+              - name: Azure AD client secret
+                href: sit-defn-azure-ad-client-secret.md
+              - name: Azure AD user credentials
+                href: sit-defn-azure-ad-user-credentials.md
               - name: Azure DocumentDB auth key
                 href: sit-defn-azure-document-db-auth-key.md
               - name: Azure IAAS database connection string and Azure SQL connection string
