@@ -177,15 +177,15 @@ The **Recommendations** tab provides next-step actions and advice for investigat
 
 Alert suppression provides the ability to tune and manage alerts in advance, before they trigger. This keeps the queue focused and saves triage time by hiding or resolving alerts automatically, each time a certain expected organizational behavior occurs and rule conditions are met. 
 
-To supress alerts, you need to: 
+You can suppress alerts for the following options: 
 
 - Set rule conditions based on evidence types such as AMSI script, WMI event, and scheduled tasks. 
 
-- Set rule conditions when part of the detected evidence, parent process, or part of the triggering evidence subgroup properties are present. 
+- Set rule conditions when a part of the detected evidence is available. The attributes of the triggering evidence, its parent process, and the attributes of the parent process are all auto populated in the Conditions builder.  
 
-- Set advanced conditions on multiple IOCs (indicators) using AND, OR, and grouping options. IOCs are indicators such as files, processes, and evidence that trigger the alert. 
+You can set advanced conditions on multiple IOCs (indicators) with the Conditions builder, using AND, OR, and grouping options. IOCs are indicators such as files, processes, and evidence that trigger the alert. 
 
-- Then apply the rule on the selected alert or any alert type that meets rule conditions.
+Then apply the rule on the selected alert or any alert type that meets rule conditions. 
 
 > [!NOTE]
 > Adding at least one IOC to the rule condition is required to suppress any alert type.
@@ -216,9 +216,8 @@ To create a suppression rule for the alerts:
 :::image type="content" source="../../media/investigate-alerts/autofill-IOCs.png" lightbox="../../media/investigate-alerts/autofill-IOCs.png" alt-text="Auto fill all alert related IOCs":::
  
 5. For example, you can create suppression rule based on the file that triggered the alert. 
-You can enter the **Entity Role Trigger Equals** as the file name.<br> 
-Use the **AND** operator to enter other file attributes such as the **File name**, **Folder path** and other attributes as required.<br> 
-Use the **OR** operator to add another file name and its attributes. So, for either of the files triggering the alert, the alert will be suppressed.
+Select the **Entity Role: Trigger** **Equals** as the file name. All the attributes of the file auto populate in the respective fields.<br> 
+You can use the **OR** operator to add another file name and its attributes. So, for either of the files triggering the alert, the alert will be suppressed.
 
 :::image type="content" source="../../media/investigate-alerts/suppression-choose-scope.png" lightbox="../../media/investigate-alerts/suppression-choose-scope.png" alt-text="Create suppression rule pane: Conditions, Scope, Action":::
  
@@ -242,7 +241,7 @@ IOCs that were selected in the suppression conditions will be selected by defaul
  
 :::image type="content" source="../../media/investigate-alerts/suppression-toggle.png" lightbox="../../media/investigate-alerts/suppression-toggle.png" alt-text="Toggle for turning on/off the new suppression rule creation ":::
 
-10.	You can always add or change rule conditions, scope or alert type of new or existing rules in Microsoft Defender portal, by selecting the relevant rule and clicking **Edit rule**.    
+10.	You can always add or change rule conditions and scope of new or existing rules in Microsoft Defender portal, by selecting the relevant rule and clicking **Edit rule**.    
     To edit existing rules, ensure that the **New suppression rules creation enabled** toggle is enabled.         
 
 :::image type="content" source="../../media/investigate-alerts/suppression-toggle-on-edit.png" lightbox="../../media/investigate-alerts/suppression-toggle-on-edit.png" alt-text="Edit suppression rule":::
