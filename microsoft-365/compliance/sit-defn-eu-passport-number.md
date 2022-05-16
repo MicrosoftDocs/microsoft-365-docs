@@ -50,6 +50,6 @@ These entities are in the EU passport number and are sensitive information types
 - [Romania](sit-defn-romania-passport-number.md)
 - [Slovakia](sit-defn-slovakia-passport-number.md)
 - [Slovenia](sit-defn-slovenia-passport-number.md)
-- [Spain](#spain-passport-number)
-- [Sweden](#sweden-passport-number)
+- [Spain](sit-defn-spain-passport-number.md)
+- [Sweden](sit-defn-sweden-passport-number.md)
 - [U.S./U.K. passport number](#usuk-passport-number)
