@@ -46,7 +46,6 @@ Response actions run along the top of a specific device page and include:
 > - Isolate device
 > - Stop and quarantine a file
 > - Add an indicator to block or allow a file
->
 > Your subscription must include Defender for Endpoint Plan 2 to have all of the response actions described in this article.
 
  You can find device pages from any of the following views:
@@ -131,9 +130,9 @@ The package contains the following folders:
 
 As part of the investigation or response process, you can remotely initiate an antivirus scan to help identify and remediate malware that might be present on a compromised device.
 
->[!IMPORTANT]
->- This action is not currently supported for macOS and Linux. Use live response to run the action. For more information on live response, see [Investigate entities on devices using live response](live-response.md)
->- A Microsoft Defender Antivirus (Microsoft Defender AV) scan can run alongside other antivirus solutions, whether Microsoft Defender AV is the active antivirus solution or not. Microsoft Defender AV can be in Passive mode. For more information, see [Microsoft Defender Antivirus compatibility](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility).
+> [!IMPORTANT]
+> - This action is not currently supported for macOS and Linux. Use live response to run the action. For more information on live response, see [Investigate entities on devices using live response](live-response.md)
+> - A Microsoft Defender Antivirus (Microsoft Defender AV) scan can run alongside other antivirus solutions, whether Microsoft Defender AV is the active antivirus solution or not. Microsoft Defender AV can be in Passive mode. For more information, see [Microsoft Defender Antivirus compatibility](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility).
 
 One you have selected **Run antivirus scan**, select the scan type that you'd like to run (quick or full) and add a comment before confirming the scan.
 
@@ -143,9 +142,7 @@ The Action center will show the scan information and the device timeline will in
 
 > [!NOTE]
 > When triggering a scan using Defender for Endpoint response action, Microsoft Defender antivirus 'ScanAvgCPULoadFactor' value still applies and limits the CPU impact of the scan.
->
 > If ScanAvgCPULoadFactor is not configured, the default value is a limit of 50% maximum CPU load during a scan.
->
 > For more information, see [configure-advanced-scan-types-microsoft-defender-antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/configure-advanced-scan-types-microsoft-defender-antivirus).
 
 ## Restrict app execution
