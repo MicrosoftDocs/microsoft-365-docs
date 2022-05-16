@@ -782,6 +782,40 @@
                 href: sit-defn-portugal-physical-addresses.md
               - name: Portugal tax identification number
                 href: sit-defn-portugal-tax-identification-number.md
+              - name: Romania drivers license number
+                href: sit-defn-romania-drivers-license-number.md
+              - name: Romania passport number
+                href: sit-defn-romania-passport-number.md
+              - name: Romania personal numeric code (CNP)
+                href: sit-defn-romania-personal-numeric-code.md
+              - name: Romania physical addresses
+                href: sit-defn-romania-physical-addresses.md
+              - name: Russia passport number domestic
+                href: sit-defn-russia-passport-number-domestic.md
+              - name: Russia passport number international
+                href: sit-defn-russia-passport-number-international.md
+              - name: Saudi Arabia National ID
+                href: sit-defn-saudi-arabia-national-id.md
+              - name: Singapore national registration identity card (NRIC) number
+                href: sit-defn-singapore-national-registration-identity-card-number.md
+              - name: Slovakia drivers license number
+                href: sit-defn-slovakia-drivers-license-number.md
+              - name: Slovakia passport number
+                href: sit-defn-slovakia-passport-number.md
+              - name: Slovakia personal number
+                href: sit-defn-slovakia-personal-number.md
+              - name: Slovakia physical addresses
+                href: sit-defn-slovakia-physical-addresses.md
+              - name: Slovenia drivers license number
+                href: sit-defn-slovenia-drivers-license-number.md
+              - name: Slovenia passport number
+                href: sit-defn-slovenia-passport-number.md
+              - name: Slovenia physical addresses
+                href: sit-defn-slovenia-physical-addresses.md
+              - name: Slovenia tax identification number
+                href: sit-defn-slovenia-tax-identification-number.md
+              - name: Slovenia Unique Master Citizen Number
+                href: sit-defn-slovenia-unique-master-citizen-number.md
           - name: Sensitive information type functions
             href: sit-functions.md
           - name: Custom sensitive information type filters reference
