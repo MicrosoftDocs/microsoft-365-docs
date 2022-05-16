@@ -6,8 +6,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.author: deniseb
+author: denisebmsft
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -22,14 +22,17 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Business](../defender-business/mdb-overview.md)
 
 > [!TIP]
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
-Web content filtering is part of the [Web protection](web-protection-overview.md) capabilities in Microsoft Defender for Endpoint. It enables your organization to track and regulate access to websites based on their content categories. Many of these websites, while not malicious, might be problematic because of compliance regulations, bandwidth usage, or other concerns.
+## What is web content filtering?
+
+Web content filtering is part of the [Web protection](web-protection-overview.md) capabilities in Microsoft Defender for Endpoint and Microsoft Defender for Business. Web content filtering enables your organization to track and regulate access to websites based on their content categories. Many of these websites (even if they're not malicious) might be problematic because of compliance regulations, bandwidth usage, or other concerns.
 
 Configure policies across your device groups to block certain categories. Blocking a category prevents users within specified device groups from accessing URLs associated with the category. For any category that's not blocked, the URLs are automatically audited. Your users can access the URLs without disruption, and you'll gather access statistics to help create a more custom policy decision. Your users will see a block notification if an element on the page they're viewing is making calls to a blocked resource.
 
@@ -38,22 +41,20 @@ Web content filtering is available on the major web browsers, with blocks perfor
 ## Benefits of web content filtering
 
 - Users are prevented from accessing websites in blocked categories, whether they're browsing on-premises or away.
-
-- Your security team can conveniently deploy policies to groups of users using device groups defined in [Microsoft Defender for Endpoint role-based access control settings](/microsoft-365/security/defender-endpoint/rbac).
-
 - Your security team can access web reports in the same central location, with visibility over actual blocks and web usage.
+- If you are using Defender for Endpoint, your security team can conveniently deploy policies to groups of users using device groups defined in [Microsoft Defender for Endpoint role-based access control settings](/microsoft-365/security/defender-endpoint/rbac).
+- If you are using Defender for Business, you can define one web content filtering policy that will be applied to all users. 
 
 ## Prerequisites
 
-Before trying out this feature, make sure you meet the following requirements:
+Before trying out this feature, make sure you meet the requirements described in the following table:
 
-- Your subscription includes one of the following: Windows 10 Enterprise E5, Microsoft 365 E5, Microsoft 365 E5 Security, Microsoft 365 E3, or the Microsoft Defender for Endpoint standalone license. 
-
-- You have access to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
-
-- Your organization's devices are running Windows 10 Anniversary Update (version 1607) or later, or Windows 11 with the [latest antivirus/antimalware updates](manage-updates-baselines-microsoft-defender-antivirus.md).
-
-- Windows Defender SmartScreen and Network Protection are enabled on your organization's devices.
+| Requirement | Description |
+|:---|:---|
+| Subscription | Your subscription includes one of the following:<br/>- Windows 10 Enterprise E5<br/>- Microsoft 365 E5<br/>- Microsoft 365 E5 Security<br/>- Microsoft 365 E3<br/>- The Microsoft Defender for Endpoint standalone subscription<br/>- Defender for Business |
+| Portal access | You have access to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. |
+| Operating system | Your organization's devices are running one of the following operating systems with the [latest antivirus/antimalware updates](manage-updates-baselines-microsoft-defender-antivirus.md): <br/>- Windows 11<br/>-  Windows 10 Anniversary Update (version 1607) or later |
+| Configured protection | Windows Defender SmartScreen and Network Protection are enabled on your organization's devices. |
 
 ## Data handling
 
@@ -61,7 +62,13 @@ Data is stored in the region that was selected as part of your [Microsoft Defend
 
 ## Turn on web content filtering
 
-From the left-hand navigation in <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, select **Settings** \> **Endpoints** \> **General** \> **Advanced Features**. Scroll down until you see the entry for **Web content filtering**. Switch the toggle to **On** and **Save preferences**.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and sign in.
+
+2. In the navigation pane, select **Settings** \> **Endpoints** \> **General** \> **Advanced Features**. 
+
+3. Scroll down until you see **Web content filtering**. 
+
+4. Switch the toggle to **On**, and then select **Save preferences**.
 
 ### Configure web content filtering policies
 
@@ -164,13 +171,15 @@ To add a new policy, follow these steps:
 
 4. Specify the policy scope. Select the device groups to specify where to apply the policy. Only devices in the selected device groups will be prevented from accessing websites in the selected categories.
 
+   > [!IMPORTANT]
+   > If you're using Defender for Business, scoping does not apply. Skip this step and proceed to step 5.
+
 5. Review the summary and save the policy. The policy refresh might take up to 2 hours to apply to your selected devices.
 
 > [!NOTE]
->
 > - You can deploy a policy without selecting any category on a device group. This action will create an audit only policy to help you understand user behavior before creating a block policy.
 > - If you are removing a policy or changing device groups at the same time, this might cause a delay in policy deployment.
-> - Blocking the "Uncategorized" category may lead to unexpected and undesired results.
+> - Blocking the "Uncategorized" category could lead to unexpected and undesired results.
 
 ## End-user experience
 
@@ -240,7 +249,7 @@ Only Microsoft Edge is supported if your device's OS configuration is Server (**
 
 Only Microsoft Edge is supported and Network Protection is not supported on Windows 10 Azure Virtual Desktop multi-session hosts.
 
-Network Protection does not currently support SSL inspection, which may result in some sites being allowed by Web Content Filtering that would normally be blocked. Sites would be allowed due to a lack of visibility into encrypted traffic after the TLS handshake has taken place and an inability to parse certain redirects.  This includes redirections from some web-based mail login pages to the mailbox page. As an accepted workaround, you can create a custom block indicator for the login page to ensure no users are able to access the site. Keep in mind, this may block their access to other services associated with the same website. 
+Network Protection does not currently support SSL inspection, which might result in some sites being allowed by Web Content Filtering that would normally be blocked. Sites would be allowed due to a lack of visibility into encrypted traffic after the TLS handshake has taken place and an inability to parse certain redirects.  This includes redirections from some web-based mail login pages to the mailbox page. As an accepted workaround, you can create a custom block indicator for the login page to ensure no users are able to access the site. Keep in mind, this might block their access to other services associated with the same website. 
 
 ## See also
 
