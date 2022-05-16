@@ -93,7 +93,7 @@ sections:
       - question: |
           What is the Key Management Service (KMS)?
         answer: |
-          KMS is an activation service that allows organizfations to activate systems within their own network by eliminating the need for individual computers to connect to Microsoft for product activation. It doesn’t require a dedicated system and can be co-hosted on a system that provides other services.
+          KMS is an activation service that allows organizations to activate systems within their own network by eliminating the need for individual computers to connect to Microsoft for product activation. It doesn’t require a dedicated system and can be co-hosted on a system that provides other services.
 
           KMS requires a minimum number of either physical or virtual computers in a network environment. These minimums, called activation thresholds, are set so that they are easily met by Enterprise customers.
 
