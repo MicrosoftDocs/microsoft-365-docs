@@ -1,5 +1,5 @@
 ---
-title: "Protect unmanaged Windows 10 PCs and Macs in Microsoft 365 Business Premium"
+title: "Protect unmanaged Windows PCs and Macs in Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -26,7 +26,7 @@ search.appverid:
 description: "Protect unmanaged or bring-your-own devices (BYOD) from cyberattacks with Microsoft 365 Business Premium. How to set up cybersecurity for Windows PCs and Macs."
 ---
 
-# Protect unmanaged Windows 10 PCs and Macs in Microsoft 365 Business Premium
+# Protect unmanaged Windows PCs and Macs in Microsoft 365 Business Premium
 
 This objective is focused on creating protection for any unmanaged Windows 10 PCs and Macs not enrolled in Microsoft Intune. It is very likely your small business or campaign may have staff who bring their own devices (BYODs), and these devices are not managed. BYODs include personally-owned phones, tablets, and PCs. 
 
@@ -66,6 +66,8 @@ You can also reduce the risk of malware by using software only from reliable sou
 
 **Turn on firewall protection**<p>
 Use firewall settings to protect your Mac from unwanted contact initiated by other computers when you're connected to the Internet or a network. Without this protection, your Mac might be more vulnerable to unauthorized access. See [about the application firewall](https://support.apple.com/HT201642) for instructions.
+
+## Next mission
 
 Okay, mission complete! Now, let's work on [securing the email system](m365bp-protect-email-overview.md) against phishing and other attacks.
 

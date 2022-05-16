@@ -48,9 +48,9 @@ Microsoft 365 Business Premium includes a guided process for basic setup. The gu
 - [Adding users and assigning licenses](../admin/add-users/add-users.md)
 - [Updating your DNS records](../admin/setup/setup-business-basic.md#connect-your-domain)
 
-The following video shows the guided setup process for Microsoft 365 Business Basic, which works the same way in Microsoft 365 Business Premium.<br/><br/>
+The following video shows the guided setup process for Microsoft 365 Business Standard, which works the same way in Microsoft 365 Business Premium.<br/><br/>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vk3W]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
 
 > [!TIP]
 > After you have added users, give them a link to the [Employee quick setup guide](../admin/setup/employee-quick-setup.md). The guide walks them through signing in, getting Office apps, and saving, copying, and sharing files.
@@ -67,8 +67,13 @@ If you'd prefer to have a Microsoft partner help you get and set up Microsoft 36
 
 4. Review the list of results. Select a provider to learn more about their expertise and the services they provide.
 
-Also see [Find your partner or reseller](../admin/manage/find-your-partner-or-reseller.md).
+## See also
 
+- [Find your partner or reseller](../admin/manage/find-your-partner-or-reseller.md)
+
+- [Set up self-service passwords](../admin/add-users/let-users-reset-passwords.md)
+
+- [Set up self-service group management](/azure/active-directory/enterprise-users/groups-self-service-management)
 ## Next objectives
 
 After you have finished your initial setup process, your next objectives are to set up your security and compliance capabilities:

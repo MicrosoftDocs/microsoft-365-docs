@@ -99,8 +99,8 @@ Unlike retention policies, retention settings from retention labels travel with 
 - Apply a default label for SharePoint items or Exchange messages.
 
 - Supported actions at the end retention period:
-    - [Disposition review](./disposition.md) to review the content before it's permanently deleted.
-    - Automatically apply another retention label
+  - [Disposition review](./disposition.md) to review the content before it's permanently deleted.
+  - Automatically apply another retention label
 
 - Mark the content as a [record](records-management.md#records) as part of the label settings, and always have [proof of disposition](disposition.md#disposition-of-records) when content is deleted at the end of its retention period.
 
@@ -216,14 +216,15 @@ For standard retention labels (they don't mark items as a [record or regulatory 
 
 - When content already has a retention label applied, the existing label won't be automatically removed or replaced by another retention label with one possible exception: The existing label was applied as a default label. When you use a default label, there are some scenarios when it can be replaced by another default label, or automatically removed.
 
-- When content already has a retention label applied, the existing label won't be automatically removed or replaced by another retention label with two possible exceptions: 
-    
-    - The existing label is configured to automatically apply a different retention label at the end of the retention period.
-    - The existing label was applied as a default label. When you use a default label, there are some scenarios when it can be replaced by another default label, or automatically removed. 
-        
-        For more information about the label behavior when it's applied by using a default label:
-        - Default label for SharePoint: [Label behavior when you use a default label for SharePoint](create-apply-retention-labels.md#label-behavior-when-you-use-a-default-label-for-sharepoint)
-        - Default label for Outlook: [Applying a default retention label to an Outlook folder](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder)
+- When content already has a retention label applied, the existing label won't be automatically removed or replaced by another retention label with two possible exceptions:
+
+  - The existing label is configured to automatically apply a different retention label at the end of the retention period.
+  - The existing label was applied as a default label. When you use a default label, there are some scenarios when it can be replaced by another default label, or automatically removed.
+
+  For more information about the label behavior when it's applied by using a default label:
+
+  - Default label for SharePoint: [Label behavior when you use a default label for SharePoint](create-apply-retention-labels.md#label-behavior-when-you-use-a-default-label-for-sharepoint)
+  - Default label for Outlook: [Applying a default retention label to an Outlook folder](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder)
 
 - If there are multiple auto-apply label policies that could apply a retention label, and content meets the conditions of multiple policies, the retention label for the oldest auto-apply label policy (by date created) is applied.
 
@@ -281,7 +282,7 @@ The following examples are just some of the ways in which you can combine retent
 
 For more information about how retention policies and retention labels work together and how to determine their combined outcome, see the section on this page that explains the [principles of retention and what takes precedence](#the-principles-of-retention-or-what-takes-precedence).
 
-**Example for users to override automatic deletion**
+#### Example for users to override automatic deletion
 
 Scenario: By default, content in users' OneDrive accounts is automatically deleted after five years but users must have the option to override this for specific documents.
 
@@ -289,7 +290,7 @@ Scenario: By default, content in users' OneDrive accounts is automatically delet
 
 2. You create and configure a retention label that keeps content forever and add this to a label policy that you publish to all OneDrive accounts. You explain to users how to manually apply this label to specific documents that should be excluded from automatic deletion if not modified after five years.
 
-**Example to retain items for longer**
+Example to retain items for longer**
 
 Scenario: By default, SharePoint items are automatically retained and then deleted after five years, but documents in specific libraries must be retained for ten years.
 
@@ -297,7 +298,7 @@ Scenario: By default, SharePoint items are automatically retained and then delet
 
 2. You create and configure a retention label that automatically retains content for ten years. You publish this label to SharePoint site admins, so that they can apply it as a default label to be inherited by all items in specific document libraries.
 
-**Example to delete items in a shorter time period**
+#### Example to delete items in a shorter time period
 
 Scenario: By default, emails aren't retained but are automatically deleted after ten years. However, emails related to a specific project that has a prerelease code name must be automatically deleted after one year.
 

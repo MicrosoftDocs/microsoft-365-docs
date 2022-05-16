@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.date: 05/04/2022
+ms.date: 05/12/2022
 ms.collection: 
 - Strat_O365_IP
 - M365-security-compliance
@@ -18,7 +18,7 @@ search.appverid:
 description: "Access logs are available for encrypted messages retrieved through the encrypted message portal."
 ---
 
-# Encrypted message portal activity log (preview)
+# Encrypted message portal activity log by Microsoft Purview Advanced Message Encryption (Preview)
 
 Access logs are available for encrypted messages through the encrypted message portal that lets your organization determine when messages are read, and forwarded by your external recipients. To ensure logs are available for any external recipients, you should apply a custom branding template to protected emails sent by your organization to external recipients that enforces a portal experience. See [Add your organization's brand to your encrypted messages](add-your-organization-brand-to-encrypted-messages.md).
 

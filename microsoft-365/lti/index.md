@@ -27,7 +27,7 @@ These tools include:
 - [Teams Meetings LTI](#teams-meetings-lti)
 - [Teams Classes LTI](#teams-classes-lti)
 
-For general information on managing Microsoft OneLTI tools, see [Manage Microsoft OneLTI for any LMS](manage-microsoft-one-lti.md).
+For general information on managing Microsoft LTI apps, see [Manage Microsoft LTI apps for any LMS](manage-microsoft-one-lti.md).
 
 ## OneDrive LTI apps
 

@@ -455,11 +455,10 @@
               href: ome-sensitive-info-types.md
             - name: Manage message encryption
               href: manage-office-365-message-encryption.md
-
-            - name: Encrypted message portal activity log
-              href: ome-message-access-logs.md
             - name: Advanced message encryption
               href: ome-advanced-message-encryption.md
+            - name: Encrypted message portal activity log
+              href: ome-message-access-logs.md
             - name: Set an expiration date for email encrypted by Microsoft Purview Advanced Message Encryption
               href: ome-advanced-expiration.md
             - name: Revoke email encrypted by Microsoft Purview Advanced Message Encryption
