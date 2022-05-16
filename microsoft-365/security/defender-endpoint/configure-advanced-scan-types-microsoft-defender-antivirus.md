@@ -106,7 +106,7 @@ If Microsoft Defender Antivirus detects a threat inside an email message, it wil
 On any OS, only the network drives that are mapped at system level, are scanned. User-level mapped network drives aren't scanned. User-level mapped network drives are those that a user maps in their session manually and using their own credentials.
 
 > [!TIP]
-> If you’re looking for Antivirus related information for other platforms, see:
+> If you're looking for Antivirus related information for other platforms, see:
 > - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
 > - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
 > - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
