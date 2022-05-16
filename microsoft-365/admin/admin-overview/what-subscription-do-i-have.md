@@ -21,7 +21,7 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid: MET150
-description: "Learn to verify which subscriptions your organization has by going to the Your products page."
+description: "Learn to verify which Microsoft 365 subscriptions your organization has by going to the Your products page."
 ms.date: 01/21/2021
 ---
 
