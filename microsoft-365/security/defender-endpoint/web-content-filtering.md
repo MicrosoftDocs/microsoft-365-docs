@@ -36,7 +36,7 @@ Web content filtering is part of the [Web protection](web-protection-overview.md
 
 Configure policies across your device groups to block certain categories. Blocking a category prevents users within specified device groups from accessing URLs associated with the category. For any category that's not blocked, the URLs are automatically audited. Your users can access the URLs without disruption, and you'll gather access statistics to help create a more custom policy decision. Your users will see a block notification if an element on the page they're viewing is making calls to a blocked resource.
 
-Web content filtering is available on the major web browsers, with blocks performed by Windows Defender SmartScreen (Microsoft Edge) and Network Protection (Chrome, Firefox, Brave, and Opera). For more information about browser support, see the prerequisites section.
+Web content filtering is available on the major web browsers, with blocks performed by Windows Defender SmartScreen (Microsoft Edge) and Network Protection (Chrome, Firefox, Brave, and Opera). For more information about browser support, see the [prerequisites](#prerequisites) section.
 
 ## Benefits of web content filtering
 
@@ -51,10 +51,10 @@ Before trying out this feature, make sure you meet the requirements described in
 
 | Requirement | Description |
 |:---|:---|
-| Subscription | Your subscription includes one of the following:<br/>- Windows 10 Enterprise E5<br/>- Microsoft 365 E5<br/>- Microsoft 365 E5 Security<br/>- Microsoft 365 E3<br/>- The Microsoft Defender for Endpoint standalone subscription<br/>- Defender for Business |
+| Subscription | Your subscription must include one of the following:<br/>- [Windows 10/11 Enterprise E5](/windows/deployment/deploy-enterprise-licenses)<br/>- Microsoft 365 E5<br/>- Microsoft 365 E5 Security<br/>- Microsoft 365 E3<br/>- Microsoft Defender for Endpoint Plan 1 or Plan 2<br/>- Microsoft Defender for Business |
 | Portal access | You have access to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. |
 | Operating system | Your organization's devices are running one of the following operating systems with the [latest antivirus/antimalware updates](manage-updates-baselines-microsoft-defender-antivirus.md): <br/>- Windows 11<br/>-  Windows 10 Anniversary Update (version 1607) or later |
-| Configured protection | Windows Defender SmartScreen and Network Protection are enabled on your organization's devices. |
+| Related protection | [Windows Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) and [network protection](network-protection.md) are enabled on your organization's devices. |
 
 ## Data handling
 
