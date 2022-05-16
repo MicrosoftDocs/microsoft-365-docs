@@ -67,7 +67,7 @@ sections:
         answer: |
           Although you can technically onboard devices that are running a non-Microsoft antivirus/antimalware solution, you could run into an issue where real-time protection could be turned off on those devices, and those devices can appear to be not protected. Real-time protection is turned on by default; however, devices running non-Microsoft antivirus/antimalware software could affect your settings. 
           
-          To learn more, see [I'm seeing indications that some devices aren't protected even though they're onboarded to Defender for Business](mdb-troubleshooting.yml#i-m-seeing-indications-that-some-devices-aren-t-protected-even-though-they-re-onboarded-to-defender-for-busine).
+          To learn more, see [I'm seeing indications that some devices aren't protected even though they're onboarded to Defender for Business](mdb-troubleshooting.yml#i-m-seeing-indications-that-some-devices-aren-t-protected-even-though-they-re-onboarded-to-defender-for-business).
 
       - question: How can I run custom reports with Defender for Business?
         answer: |
