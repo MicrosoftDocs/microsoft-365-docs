@@ -97,7 +97,7 @@ Determines whether behavior monitoring and blocking capability is enabled on the
 |---|---|
 |**Key**|behaviorMonitoring|
 |**Data type**|String|
-|**Possible values**|disabled (default) <p> enabled (default)|
+|**Possible values**|disabled  <p> enabled (default)|
 |**Comments**|Available in Defender for Endpoint version 101.45.00 or higher.|
   
 #### Run a scan after definitions are updated
