@@ -198,7 +198,7 @@ Once the above configuration is done and synced with the device, the following a
 
 2. Tap the Defender for Endpoint app icon (MSDefender) and follow the on-screen instructions to complete the onboarding steps. The details include end-user acceptance of iOS permissions required by Defender for Endpoint on iOS.
 
-3. Upon successful onboarding, the device will start showing up on the Devices list in the Microsoft 365 Defender portal.
+3. Upon successful onboarding, the device will start showing up on the Devices list in the Microsoft 365 Defender portal. Image needs changing below
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/device-inventory-screen.png" alt-text="The Device inventory page" lightbox="images/device-inventory-screen.png":::
