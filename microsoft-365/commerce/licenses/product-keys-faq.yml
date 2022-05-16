@@ -93,7 +93,7 @@ sections:
       - question: |
           What is the Key Management Service (KMS)?
         answer: |
-          KMS is an activation service that allows organizations to activate systems within their own network by eliminating the need for individual computers to connect to Microsoft for product activation. It doesn’t require a dedicated system and can be co-hosted on a system that provides other services.
+          KMS is an activation service that allows organizfations to activate systems within their own network by eliminating the need for individual computers to connect to Microsoft for product activation. It doesn’t require a dedicated system and can be co-hosted on a system that provides other services.
 
           KMS requires a minimum number of either physical or virtual computers in a network environment. These minimums, called activation thresholds, are set so that they are easily met by Enterprise customers.
 
@@ -240,7 +240,7 @@ sections:
           > [!NOTE]
           > If you’re an Open License customer, you must purchase at least one unit of the product that you want to re-image to obtain access to the product media and receive a product key.
 
-          For more information on re-imaging rights, see [Product licensing briefs](/licensing/learn-more/volume-licensing-briefs).
+          For more information on re-imaging rights, see [Product licensing briefs](https://www.microsoft.com/licensing/docs/view/Licensing-Briefs).
 
       - question: |
           How do I download my keys to a local file?
