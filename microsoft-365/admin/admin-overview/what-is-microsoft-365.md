@@ -25,7 +25,7 @@ ms.date: 10/20/2021
 
 # Microsoft 365 Business Premium
 
-## Watch: What is Microsoft 365 Business Premium
+## Watch: What is Microsoft 365 Business Premium?
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA?autoplay=false]
 
