@@ -229,14 +229,15 @@ Specific to the Azure Information Protection unified labeling client:
 > [!NOTE]
 > This option is gradually rolling out.
 
-If the label meets both of the following conditions, you'll see an option at the end of the label creation or editing process to automatically create an auto-labeling policy that's based on the same auto-labeling settings:
+If the label includes sensitive info types for the configured conditions, you'll see an option at the end of the label creation or editing process to automatically create an auto-labeling policy that's based on the same auto-labeling settings.
 
-- The label is configured to automatically apply to content rather than recommend the label to users in apps.
-- The conditions include sensitive info types.
+Because auto-labeling policies don't support trainable classifiers:
 
-Because auto-labeling policies don't support trainable classifiers, you won't be able to convert the label settings into an auto-labeling policy if it contains only trainable classifiers. If the label conditions contain trainable classifiers and sensitivity info types, an auto-labeling policy will be created for just the sensitive info types.
+- If the label conditions contain just trainable classifiers, you won't see the option to automatically create an auto-labeling policy.
 
-Although the auto-labeling policy is automatically created for you by auto-populating the values that you would have to select manually if you created the policy from scratch, you can still view and edit the values before they are saved.
+- If the label conditions contain trainable classifiers and sensitivity info types, an auto-labeling policy will be created for just the sensitive info types. 
+
+Although an auto-labeling policy is automatically created for you by auto-populating the values that you would have to select manually if you created the policy from scratch, you can still view and edit the values before they are saved.
 
 By default, all locations for SharePoint, OneDrive, and Exchange are included in the auto-label policy, and when the policy is saved, it runs in [simulation mode](#learn-about-simulation-mode). There's no check that you've [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md), which is one of the prerequisites for auto-labeling to apply to content in SharePoint and OneDrive.
 
