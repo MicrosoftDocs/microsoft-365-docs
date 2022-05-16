@@ -35,6 +35,9 @@ When creating the policy, you can specify:
 - The number of weeks that the notifications will be sent
 - Which groups or teams are part of the policy
 
+> [!Note]
+> Using a security group to limit who can be invited to be an owner requires that you have an Azure AD Premium license for each Microsoft 365 group member in your organization.
+
 To set an ownerless group or team policy
 
 1. In the admin center, go to **Show all** \> **Settings** \> **Org settings** and on the <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**Services** tab</a>, select **Microsoft 365 Groups**.
