@@ -18,7 +18,7 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 recommendations: false
-description: "Slovenia Unique Master Citizen Number information type entity definition."
+description: "Slovenia Unique Master Citizen Number sensitive information type entity definition."
 ---
 
 # Slovenia Unique Master Citizen Number

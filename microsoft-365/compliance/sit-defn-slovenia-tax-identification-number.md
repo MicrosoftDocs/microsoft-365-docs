@@ -18,7 +18,7 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 recommendations: false
-description: "Slovenia tax identification number information type entity definition."
+description: "Slovenia tax identification number sensitive information type entity definition."
 ---
 
 # Slovenia tax identification number
