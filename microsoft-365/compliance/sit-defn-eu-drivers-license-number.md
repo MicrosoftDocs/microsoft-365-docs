@@ -52,4 +52,4 @@ These entities are in the EU Driver's License Number and are sensitive informati
 - [Slovenia](sit-defn-slovenia-drivers-license-number.md)
 - [Spain](sit-defn-spain-drivers-license-number.md)
 - [Sweden](sit-defn-sweden-drivers-license-number.md)
-- [U.K.](#uk-drivers-license-number)
+- [U.K.](sit-defn-uk-drivers-license-number.md)

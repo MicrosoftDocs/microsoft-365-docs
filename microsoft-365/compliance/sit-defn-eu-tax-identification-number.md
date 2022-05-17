@@ -52,4 +52,4 @@ These entities are in the EU Tax identification number sensitive information typ
 - [Slovenia](sit-defn-slovenia-tax-identification-number.md)
 - [Spain](sit-defn-spain-tax-identification-number.md)
 - [Sweden](sit-defn-sweden-tax-identification-number.md)
-- [U.K.](#uk-unique-taxpayer-reference-number)
+- [U.K.](sit-defn-uk-unique-taxpayer-reference-number.md)
