@@ -121,7 +121,7 @@ From the **Choose what happens after the retention period** page for a retention
 
 ![Retention settings for a label.](../media/disposition-review-option.png)
  
-After you select this **Start a disposition review** option, select **+ Create stages and assign reviewers**. On the next page of the configuration, you'll specify how many consecutive stages of disposition you want and the disposition reviewers for each stage:
+After you select the **Start a disposition review** option, select **+ Create stages and assign reviewers**. On the next page of the configuration, you'll specify how many consecutive stages of disposition you want and the disposition reviewers for each stage:
 
 ![Specifying disposition reviewers.](../media/disposition-reviewers.png) 
 
@@ -134,7 +134,7 @@ If you need more than one person to review an item at the end of its retention p
 Within each individual stage of disposition, any of the users you specify for that stage are authorized to take the next action for the item at the end of its retention period. These users can also add other users to their disposition review stage.
 
 > [!NOTE]
-> If you configured retention labels before multi-staged disposition review was available, you can upgrade your labels to support this feature: In the label wizard, select **Add a stage**, or edit the existing reviewers or add new reviewers.
+> If you configured retention labels before multi-staged disposition review was available, you can upgrade your labels to support this feature: Edit the label and select **Edit stages and reviewers** on the **Choose what happens after the retention period** page.
 
 During the configuration phase, for each stage specified, you can rename it, reorder it, or remove it by selecting **Edit stages and reviewers** that now displays for the **Start a disposition review** option. Then for each stage, you can select the Stage actions option (**...**): 
 
