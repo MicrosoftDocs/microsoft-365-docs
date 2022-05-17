@@ -1,5 +1,5 @@
 ---
-title: "Employee quick setup-guide"
+title: "Employee quick-setup guide"
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -40,7 +40,7 @@ Are you new to Microsoft 365 for business? :::image type="icon" source="../../me
     - In Chrome, go to the download on the bottom of the page and choose **Open**.
     - In Microsoft Edge/IE, choose **Save** then **Run**.
     
-        If asked to allow the app to make changes, choose **Yes**. Let Office setup begin.
+    If asked to allow the app to make changes, choose **Yes**. Let Office setup begin.
     - On a Mac, open Microsoft **Office_2016_Installer.pkg**
 
 ## 3. Open Outlook and add your account

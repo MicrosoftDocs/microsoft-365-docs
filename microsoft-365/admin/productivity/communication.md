@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Productivity Score - Communication"
+title: "Microsoft Productivity Score and communication insights"
 f1.keywords:
 - NOCSH
 ms.author: efrene
