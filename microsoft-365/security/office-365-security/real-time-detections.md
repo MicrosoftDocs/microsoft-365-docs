@@ -81,7 +81,7 @@ Here are the common components within these experiences:
 
     - By default, the time filter is applied to the records, and is applied for two days.  
 
-    - If you are applying multiple filters, they are applied in ‘AND’ mode and you can use the advanced filter to change it to ‘OR’ mode.  
+    - If you are applying multiple filters, they are applied in 'AND' mode and you can use the advanced filter to change it to 'OR' mode.  
 
     - You can use commas to add multiple values for the same filter.  
 

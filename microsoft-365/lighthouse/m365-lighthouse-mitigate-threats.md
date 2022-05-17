@@ -1,5 +1,5 @@
 ---
-title: "Mitigate threats with Microsoft Defender Antivirus"
+title: "Mitigate threats in Microsoft 365 Lighthouse with Microsoft Defender Antivirus"
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -13,25 +13,22 @@ ms.collection:
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
-- M365-Lighthouse                         
+- M365-Lighthouse
 search.appverid: MET150
 description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn about the mitigate threats with Microsoft Defender Antivirus."
 ---
 
-# Mitigate threats with Microsoft Defender Antivirus
-
-> [!NOTE]
-> The features described in this article are in Preview, are subject to change, and are only available to partners who meet the [requirements](m365-lighthouse-requirements.md). If your organization does not have Microsoft 365 Lighthouse, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
+# Mitigate threats in Microsoft 365 Lighthouse with Microsoft Defender Antivirus
 
 Microsoft 365 Lighthouse lets partners investigate and mitigate threats across all your tenants. You can also initiate antivirus scans on devices, make sure devices are getting the latest updates for Microsoft Defender Antivirus, and review pending actions following antivirus scans. Lighthouse only supports devices running Windows 10 or later.
 
 ## Before you begin
 
-- Microsoft 365 Lighthouse is deployed in the partner tenant only—not in the customer tenants, but make sure you and your customer tenants meet the requirements listed in [Microsoft 365 Lighthouse requirements](m365-lighthouse-requirements.md).
+- Microsoft 365 Lighthouse is deployed in the partner tenant only—not in the customer tenants, but make sure you and your customer tenants meet the requirements listed in [Microsoft 365 Lighthouse requirements](m365-lighthouse-requirements.md).
 
 - Users must be running Microsoft Defender Antivirus (included with Windows). Lighthouse does not support non-Microsoft antivirus software. For more information, see [Turn on Microsoft Defender Antivirus](/mem/intune/user-help/turn-on-defender-windows).
 
-- You must be a Global Administrator in the partner tenant you're signing into.
+- You must be a Global Administrator in the partner tenant that you're signing in to.
 
 ## Investigate active threats
 
@@ -101,7 +98,7 @@ If you need to create a new policy, select **Update policy** from the device det
 
 ## Check pending antivirus actions on a device
 
-When consecutive actions are applied to a device, you’ll receive an action pending message. To check which actions are pending on a device:
+When consecutive actions are applied to a device, you'll receive an action pending message. To check which actions are pending on a device:
 
 1. In the left navigation pane in Lighthouse, select **Threat management**.
 
@@ -128,7 +125,7 @@ You can also restart multiple devices by selecting the checkbox next to each dev
 ## Related content
 
 [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) (article)\
-[Threat management page overview ](m365-lighthouse-threat-management-page-overview.md) (article)\
+[Overview of the Threat management page in Microsoft 365 Lighthouse](m365-lighthouse-threat-management-page-overview.md) (article)\
 [Create a compliance policy in Microsoft Intune](/mem/intune/protect/create-compliance-policy) (article)\
 [Turn on Microsoft Defender Antivirus](/mem/intune/user-help/turn-on-defender-windows) (article)\
-[Microsoft Security Intelligence](https://www.microsoft.com/wdsi/threats)
+[Microsoft Security Intelligence](https://www.microsoft.com/wdsi/threats) (web page)

@@ -1,5 +1,5 @@
 ---
-title: "Step 1 - Stop an employee from logging in to Microsoft 365"
+title: "Step 1 - Prevent a former employee from logging in and block access to Microsoft 365 services"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -25,7 +25,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Block a former employee from logging in and block access to Microsoft 365 services."
+description: "Global administrators can block a former employee from logging in and block their access to Microsoft 365 services."
 ---
 
 # Step 1 - Prevent a former employee from logging in and block access to Microsoft 365 services

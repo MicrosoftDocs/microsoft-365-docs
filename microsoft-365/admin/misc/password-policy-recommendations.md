@@ -27,6 +27,8 @@ description: "Make your organization more secure against password attacks, and b
 # Password policy recommendations
 
 As the admin of an organization, you're responsible for setting the password policy for users in your organization. Setting the password policy can be complicated and confusing, and this article provides recommendations to make your organization more secure against password attacks.
+
+Microsoft cloud-only accounts have a pre-defined password policy that cannot be changed. The only items you can change are the number of days until a password expires and whether or not passwords expire at all. 
   
 To determine how often Microsoft 365 passwords expire in your organization, see [Set password expiration policy for Microsoft 365](../manage/set-password-expiration-policy.md).
 

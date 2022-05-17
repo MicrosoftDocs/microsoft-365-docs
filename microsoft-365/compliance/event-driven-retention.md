@@ -26,6 +26,8 @@ description: Typically part of a records management solution, you can configure 
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 When you retain content, the retention period is often based on the age of the content. For example, you might retain documents for seven years after they're created and then delete them. But when you configure [retention labels](retention.md#retention-labels), you can also base a retention period on when a specific type of event occurs. The event triggers the start of the retention period, and all content with a retention label applied for that type of event get the label's retention actions enforced on them.
   
 Examples for using event-based retention:
@@ -84,7 +86,7 @@ High-level workflow for event-driven retention:
 
 ### Step 1: Create a label whose retention period is based on an event
 
-To create and configure your retention label, see the instructions for [Create retention labels](file-plan-manager.md#create-retention-labels) for records management, or [How to create retention labels for information governance](create-retention-labels-information-governance.md). But specific to event-based retention, on the **Define retention settings** page when you create the retention label, after **Start the retention period based on**, select one of the default event types from the dropdown list, or create your own by selecting **Create new event type**:
+To create and configure your retention label, see the instructions for [Create retention labels](file-plan-manager.md#create-retention-labels) for records management, or [How to create retention labels for data lifecycle management](create-retention-labels-data-lifecycle-management.md). But specific to event-based retention, on the **Define retention settings** page when you create the retention label, after **Start the retention period based on**, select one of the default event types from the dropdown list, or create your own by selecting **Create new event type**:
 
 ![Create a new event type for a retention label.](../media/SPRetention6.png)
 
@@ -115,7 +117,7 @@ Back on the **Define retention settings** page, for **Start the retention period
 ### Step 3: Publish or auto-apply the event-based retention labels
 
 Just like any retention label, you need to publish or auto-apply an event-based label, for it to be manually or automatically applied to content:
-- [Create retention labels and apply them in apps](create-apply-retention-labels.md)
+- [Publish retention labels and apply them in apps](create-apply-retention-labels.md)
 - [Apply a retention label to content automatically](apply-retention-labels-automatically.md)
 
 ### Step 4: Enter an asset ID
@@ -134,7 +136,7 @@ Asset ID is simply another document property that's available in SharePoint and 
   
 ### Step 5: Create an event
 
-When a particular instance of that event type occurs, such as a product reaches its end of life, go to the **Records management** > **Events** page in the Microsoft 365 compliance center, and select **+ Create** to create an event. You trigger the event by creating it, here.
+When a particular instance of that event type occurs, such as a product reaches its end of life, go to the **Records management** > **Events** page in the Microsoft Purview compliance portal, and select **+ Create** to create an event. You trigger the event by creating it, here.
 
 ![Create an event to trigger start of retention for event-based retention labels.](../media/create-event-records-management.png)
 
@@ -215,7 +217,7 @@ https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentio
 
 Check the response code. If it's 302, get the redirected URL from the Location property of the response header and use that URL instead of `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent` in the instructions that follow.
 
-The events that get automatically created can be confirmed by viewing them in the Microsoft 365 compliance center > **Records management** >  **Events**.
+The events that get automatically created can be confirmed by viewing them in the Microsoft Purview compliance portal > **Records management** >  **Events**.
 
 ### Use Microsoft Power Automate to create the event
 
