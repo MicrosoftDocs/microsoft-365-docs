@@ -8,7 +8,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: ITPro
 ms.topic: overview
-ms.date: 02/07/2022
+ms.date: 05/16/2022
 ms.prod: m365-security
 ms.technology: mdep1
 ms.localizationpriority: medium
@@ -41,3 +41,7 @@ You can use this article to help clarify what protection is provided by the diff
 - [Get an overview of Microsoft Defender for Endpoint Plan 1](defender-endpoint-plan-1.md)
 - [Set up and configure Defender for Endpoint Plan 1](mde-p1-setup-configuration.md)
 - [Get started using Defender for Endpoint Plan 1](mde-plan1-getting-started.md)
+
+## See also
+
+- [Microsoft Defender for Business](../defender-business/mdb-overview.md) (for small and medium-sized businesses)

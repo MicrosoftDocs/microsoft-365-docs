@@ -39,6 +39,9 @@ The unified **Trials** portal in the Microsoft 365 Defender portal provides a si
 
 You're invited to start your trial in various Defender for Office 365 feature locations in the Microsoft 365 Defender portal at <https://security.microsoft.com>. The centralized location to start your trial is on the **Trials** page at <https://security.microsoft.com/atpEvaluation>.
 
+Watch this short video to learn more about how you can get more done in less time with Microsoft Defender for Office 365.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWMmIe]
+
 The rest of this article explains the difference between audit mode blocking mode, how to configure evaluations, and other details.
 
 For a companion guide for how to use your trial, see [Trial playbook: Microsoft Defender for Office 365](trial-playbook-defender-for-office-365.md).
