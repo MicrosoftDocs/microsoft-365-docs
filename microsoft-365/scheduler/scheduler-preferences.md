@@ -44,4 +44,4 @@ Additional Note
 
 - If you use the Windows client, you must set the following option to ensure that your preferences are synced across Scheduler and other Outlook clients:
 
-![Outlook Calendar options dialog in Windows. Check to enable "Store my Outlook settings in the cloud".](file:///C:/Users/shivb/AppData/Local/Temp/msohtmlclip1/01/clip_image004.jpg)
+![Outlook Calendar options dialog in Windows. Check to enable "Store my Outlook settings in the cloud".](../media/OutlookOptions2.png)
