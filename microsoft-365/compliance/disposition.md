@@ -136,11 +136,11 @@ Within each individual stage of disposition, any of the users you specify for th
 > [!NOTE]
 > If you configured retention labels before multi-staged disposition review was available, you can upgrade your labels to support this feature: In the label wizard, select **Add a stage**, or edit the existing reviewers or add new reviewers.
 
-During the configuration phase, for each stage specified, you can rename it, reorder it, or remove it by selecting the Stage actions option (**...**): 
+During the configuration phase, for each stage specified, you can rename it, reorder it, or remove it by selecting **Edit stages and reviewers** that now displays for the **Start a disposition review** option. Then for each stage, you can select the Stage actions option (**...**): 
 
 ![Stage actions for disposition reviews.](../media/stage-actions-disposition-review.png)
 
-However, you can't reorder or remove a stage after you have created the retention label.
+However, you can't reorder or remove a stage after you have created the retention label. You'll see only the **Add a stage** and **Rename a stage** options available. You can still edit the reviewers.
 
 After you have specified your reviewers, remember to grant them the **Disposition Management** role permission. For more information, see the [Permissions for disposition](#permissions-for-disposition) section on this page.
 
