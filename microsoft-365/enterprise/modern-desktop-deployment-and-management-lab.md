@@ -109,4 +109,4 @@ Detailed lab guides take you through multiple deployment and management scenario
 - [Introducing Microsoft 365](https://www.microsoft.com/microsoft-365/default.aspx)
 - [Microsoft 365 for business](https://products.office.com/business/office)
 - [Introducing Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
-- [Windows 11 for business](https://www.microsoft.com/windows/business)
+- [Windows for business](https://www.microsoft.com/windows/business)
