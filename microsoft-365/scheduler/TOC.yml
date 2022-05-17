@@ -6,5 +6,7 @@
   href: scheduler-setup.md
 - name: How to use Scheduler for Microsoft 365
   href: scheduler-using.md
+- name: Scheduler for Microsoft 365 Preferences
+  href: scheduler-preferences.md
 - name: Scheduler for Microsoft 365 FAQ's
   href: scheduler-faqs.md
