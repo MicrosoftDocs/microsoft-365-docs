@@ -1,5 +1,5 @@
 ---
-title: "Set up multifactor authentication for Microsoft 365 Business Premium"
+title: "Set up multi-factor authentication for Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -23,16 +23,16 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Set up multifactor authentication for mobile devices in Microsoft Business Premium. Increase your security by using Microsoft Business Premium's multifactor authentication features."
+description: "Set up multi-factor authentication for phones in Microsoft Business Premium. Increase your security by using Microsoft Business Premium's MFA features for your phone."
 ---
 
-# Set up multifactor authentication
+# Set up MFA
 
-Multifactor authentication (MFA) provides increased security because instead of only using a password, or a code through text, a separate app on your phone is used to verify access. This makes it difficult to hack. When MFA is required, members of the organization can use the Microsoft Authenticator app to securely sign in on their devices. <br/><br/>
+Multi-factor authentication (MFA) provides increased security because instead of only using a password, or a code through text, a separate app on your phone is used to verify access. This makes it difficult to hack. When MFA is required, members of the organization can use the Microsoft Authenticator app to securely sign in on their devices. <br/><br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MmQR]
 
-See more at [Set up multi-factor authentication in Microsoft 365](https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225)
+See more at [Set up multi-factor authentication in Microsoft 365 Business Premium](https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225)
 
 ## Use the Outlook app on your devices
 
@@ -40,4 +40,4 @@ After an admin has required the front-line users to use MFA then the authenticat
 
 ## Next objective
 
-Follow the guidance to [Install Office apps](m365bp-install-office-apps.md).
+Follow the guidance to [Install Office applications](m365bp-install-office-apps.md).
