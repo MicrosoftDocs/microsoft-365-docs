@@ -23,7 +23,7 @@ search.appverid:
 description: "Help your employees learn how to set up Office apps they get with Microsoft 365 Business Premium."
 ---
 
-# Employee quick setup
+# Employee quick setup in Microsoft 365 for business
 
 Are you new to Microsoft 365 for business? :::image type="icon" source="../../media/video-call-icon.png" border="false"::: [Watch this video: What is Microsoft 365?](../admin-overview/what-is-microsoft-365.md) to learn about it. Then follow these steps.
 
