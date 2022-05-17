@@ -39,6 +39,10 @@ additionalContent:
           summary: Learn how to use Scheduler for Microsoft 365.
           url: scheduler-using.md
         # Card
+        - title: Preferences
+          summary: Learn how to adjust scheduling preferences.
+          url: scheduler-preferences.md
+        # Card
         - title: FAQ's for Scheduler
           summary: Learn the frequently asked questions on Scheduler for Microsoft 365 and answers to them.
           url: scheduler-faqs.md
