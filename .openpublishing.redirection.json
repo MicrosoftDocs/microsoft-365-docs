@@ -413,7 +413,7 @@
     {
       "source_path": "microsoft-365/business/view-policies-and-devices.md",
       "redirect_url": "/microsoft-365/business-premium/m365bp-view-policies-and-devices",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/business/app-protection-settings-for-android-and-ios.md",
@@ -7353,6 +7353,91 @@
     {
       "source_path": "microsoft-365/admin/misc/microsoft-365-business-faqs.yml",
       "redirect_url": "/microsoft-365/business-premium/microsoft-365-business-faqs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/tvm-weaknesses.md",
+      "redirect_url": "/microsoft-365/security/defender-vulnerability-management/tvm-weaknesses",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/tvm-assign-device-value.md",
+      "redirect_url": "/microsoft-365/security/defender-vulnerability-management/tvm-assign-device-value",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/tvm-dashboard-insights.md",
+      "redirect_url": "/microsoft-365/security/defender-vulnerability-management/tvm-dashboard-insights",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/tvm-end-of-support-software.md",
+      "redirect_url": "/microsoft-365/security/defender-vulnerability-management/tvm-end-of-support-software",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/tvm-exception.md",
+      "redirect_url": "/microsoft-365/security/defender-vulnerability-management/tvm-exception",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/tvm-exposure-score.md",
+      "redirect_url": "/microsoft-365/security/defender-vulnerability-management/tvm-exposure-score",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/tvm-hunt-exposed-devices.md",
+      "redirect_url": "/microsoft-365/security/defender-vulnerability-management/tvm-hunt-exposed-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/tvm-microsoft-secure-score-devices.md",
+      "redirect_url": "/microsoft-365/security/defender-vulnerability-management/tvm-microsoft-secure-score-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/tvm-prerequisites.md",
+      "redirect_url": "/microsoft-365/security/defender-vulnerability-management/tvm-prerequisites",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/tvm-remediation.md",
+      "redirect_url": "/microsoft-365/security/defender-vulnerability-management/tvm-remediation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/tvm-security-recommendation.md",
+      "redirect_url": "/microsoft-365/security/defender-vulnerability-management/tvm-security-recommendation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/tvm-software-inventory.md",
+      "redirect_url": "/microsoft-365/security/defender-vulnerability-management/tvm-software-inventory",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/tvm-supported-os.md",
+      "redirect_url": "/microsoft-365/security/defender-vulnerability-management/tvm-supported-os",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/tvm-vulnerable-devices-report.md",
+      "redirect_url": "/microsoft-365/security/defender-vulnerability-management/tvm-vulnerable-devices-report",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/tvm-zero-day-vulnerabilities.md",
+      "redirect_url": "/microsoft-365/security/defender-vulnerability-management/tvm-zero-day-vulnerabilities",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/threat-and-vuln-mgt-event-timeline.md",
+      "redirect_url": "/microsoft-365/security/defender-vulnerability-management/threat-and-vuln-mgt-event-timeline",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt.md",
+      "redirect_url": "/microsoft-365/security/defender-vulnerability-management/defender-vulnerability-management",
       "redirect_document_id": false
     },
     {

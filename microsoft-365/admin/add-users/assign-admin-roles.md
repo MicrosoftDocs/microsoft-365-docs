@@ -31,7 +31,7 @@ ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: "Learn how to assign administrator roles to a user or multiple users in your business so that they can perform specific tasks in the admin center."
 ---
 
-# Assign admin roles
+# Assign admin roles in the Microsoft 365 admin center
 
 If you're the person who purchased your Microsoft business subscription, you are the global admin. This means you have unlimited control over the products in your subscriptions and you can access most data.
 
