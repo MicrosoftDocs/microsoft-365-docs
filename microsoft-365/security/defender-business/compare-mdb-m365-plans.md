@@ -43,10 +43,10 @@ Microsoft offers a wide variety of cloud solutions and services, including sever
 
 |Feature/Capability|[Microsoft Defender for Business](mdb-overview.md)<br/>(standalone)|[Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md)<br/>(includes Defender for Business)|
 |---|---|---|
-|Email protection|Yes <br/>- [Email scanning with Microsoft Defender Antivirus](../defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus.md)|Yes <br/>- [Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md) <br/>- [Email scanning with Microsoft Defender Antivirus](../defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus.md)|
-|Antispam protection|Yes <br/>- For devices|Yes <br/>- For devices<br/>- For Microsoft 365 email content, such as messages and attachments|
-|Antimalware protection|Yes<br/>- For devices|Yes <br/>- For devices<br/>- For Microsoft 365 email content, such as messages and attachments|
-|[Next-generation protection](../defender-endpoint/microsoft-defender-antivirus-in-windows-10.md) <br/> (antivirus and antimalware protection)|Yes<br/>- Microsoft Defender Antivirus is included in Windows 10 and later|Yes <br/>- Microsoft Defender Antivirus is included in Windows 10 and later<br/>- Next-generation protection policies for onboarded devices|
+|Email protection|Yes <br/>[Email scanning with Microsoft Defender Antivirus](../defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus.md)|Yes <ul><li>[Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md)</li><li>[Email scanning with Microsoft Defender Antivirus](../defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus.md)</li></ul>|
+|Antispam protection|Yes<br/>For devices|Yes <ul><li>For devices</li><li>For Microsoft 365 email content, such as messages and attachments</li></ul>|
+|Antimalware protection|Yes<br/>For devices|Yes<ul><li>For devices</li><li>For Microsoft 365 email content, such as messages and attachments</li></ul>|
+|[Next-generation protection](../defender-endpoint/microsoft-defender-antivirus-in-windows-10.md) <br/> (antivirus and antimalware protection)|Yes<br/>Microsoft Defender Antivirus is included in Windows 10 and later|Yes <ul><li>Microsoft Defender Antivirus is included in Windows 10 and later</li><li>Next-generation protection policies for onboarded devices</li></ul>|
 |[Attack surface reduction](../defender-endpoint/overview-attack-surface-reduction.md) <br/>(ASR rules in Windows 10 or later and firewall protection)|Yes|Yes|
 |[Endpoint detection and response](../defender-endpoint/overview-endpoint-detection-response.md) <br/>(behavior-based detection and manual response actions)|Yes|Yes|
 |[Automated investigation and response](../defender-endpoint/automated-investigations.md)|Yes|Yes|
