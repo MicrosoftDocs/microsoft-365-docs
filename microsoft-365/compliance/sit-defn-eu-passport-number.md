@@ -52,4 +52,4 @@ These entities are in the EU passport number and are sensitive information types
 - [Slovenia](sit-defn-slovenia-passport-number.md)
 - [Spain](sit-defn-spain-passport-number.md)
 - [Sweden](sit-defn-sweden-passport-number.md)
-- [U.S./U.K. passport number](#usuk-passport-number)
+- [U.S./U.K. passport number](sit-defn-us-uk-passport-number.md)

@@ -888,6 +888,22 @@
                 href: sit-defn-uk-physical-addresses.md
               - name: U.K. Unique Taxpayer Reference Number
                 href: sit-defn-uk-unique-taxpayer-reference-number.md
+              - name: U.S. bank account number
+                href: sit-defn-us-bank-account-number.md
+              - name: U.S. drivers license number
+                href: sit-defn-us-drivers-license-number.md
+              - name: U.S. individual taxpayer identification number (ITIN)
+                href: sit-defn-us-individual-taxpayer-identification-number.md
+              - name: U.S. physical addresses
+                href: sit-defn-us-physical-addresses.md
+              - name: U.S. social security number (SSN)
+                href: sit-defn-us-social-security-number.md
+              - name: U.S./U.K. passport number
+                href: sit-defn-us-uk-passport-number.md
+              - name: Ukraine passport domestic
+                href: sit-defn-ukraine-passport-domestic.md
+              - name: Ukraine passport international
+                href: sit-defn-ukraine-passport-international.md
           - name: Sensitive information type functions
             href: sit-functions.md
           - name: Custom sensitive information type filters reference
