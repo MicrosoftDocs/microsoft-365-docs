@@ -26,6 +26,9 @@ Use a campaign ID to see how your marketing campaigns are doing. Add a campaign 
 
 3. Add a campaign ID to the end of the Booking page URL. For example, if your booking page URL looks like this, [https://outlook.office365.com/owa/calendar/TailspinToys@contosopetscom.onmicrosoft.com/bookings/](https://outlook.office365.com/owa/calendar/TailspinToys@contosopetscom.onmicrosoft.com/bookings/), you would choose an ID to add to the end. For example, if you wanted to track your booking details from your Twitter page, you could add Twitter to the end of the URL. The new URL that you would add to your Twitter page would look like this: [https://outlook.office365.com/owa/calendar/TailspinToys@contosopetscom.onmicrosoft.com/bookings/?RefID=Twitter](https://outlook.office365.com/owa/calendar/TailspinToys@contosopetscom.onmicrosoft.com/bookings/?RefID=Twitter). Use different campaign IDs to track the marketing campaigns you're running.
 
+> [!NOTE]
+> Characters in the campaign ID must be one of the following: alphanumeric characters, underscore or hyphen. Make sure you test your Campaign ID url by copying and pasting into a web browser to verify that it works.
+
 ## Track campaign IDs
 
 You can track how your campaigns are doing by downloading a report (TSV file) that shows you the last four months of activities of your Bookings calendar. The TSV file will show you four months of data, but you can select different four month periods over the course of a year. For more information on how to download the report, see [Reporting info for Bookings](reporting-info.md).
