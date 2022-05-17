@@ -482,10 +482,8 @@ For example, you add an allow entry for the following domain pair:
 Only messages from that domain *and* sending infrastructure pair are allowed to spoof. Other senders attempting to spoof gmail.com aren't allowed. Messages from senders in other domains originating from tms.mx.com are checked by spoof intelligence.
 
 
-## What to be expected after Tenant Allow/Block List entry has been made?
+## What to expect after you add an allow or block entry
 
-Once the entry has been made either through submission for allow or Tenant Allow/Block list for block, the entry should start working immediately. 
-So you will see the good url/files/emails coming in, while the malicious ones remaining blocked. 
+After you add an allow entry through the Submissions portal or a block entry in the Tenant Allow/Block List, the entry should start working immediately.
 
-We recommend creating entries for 30 days and then letting the entry expire to see if the system has learned or not. Mostly the system has learned till then.
-If not, you should make a Tenant Allow/Block List entry again and provide the system another 30 days to learn. 
+We recommend letting entries automatically expire after 30 days to see if the system has learned about the allow or block. If not, you should make another entry to give the system another 30 days to learn.
