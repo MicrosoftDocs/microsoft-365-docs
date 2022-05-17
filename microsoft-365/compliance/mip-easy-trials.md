@@ -145,8 +145,8 @@ For new customers after May 30, 2022, and the Microsoft 365 tenant is in the US 
 - If there are 10 or more instances of US personal data and full names found in a document or email, apply the sensitivity label **Confidential** \ **All Employees** 
 
 - These settings have one policy for the Exchange location, and another policy for the SharePoint and OneDrive locations. Although they're created at the same time, simulation isn't immediately turned on for SharePoint and OneDrive:
-    - For the Exchange location: The auto-labeling policy is created and immediately starts simulation.
-    - For the SharePoint and OneDrive locations: The auto-labeling policy is created but waits 25 days before it automatically starts simulation.
+    - Exchange location: The auto-labeling policy is created and immediately starts simulation.
+    - SharePoint and OneDrive locations: The auto-labeling policy is created but waits 25 days before it automatically starts simulation.
 
 > [!NOTE]
 > If we detected you have your own sensitivity labels published, we'll prompt you to select one of your own labels for your auto-labeling policy.
