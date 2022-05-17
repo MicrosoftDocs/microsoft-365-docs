@@ -1,0 +1,38 @@
+---
+title: Defender for Endpoint onboarding Windows Client
+description: Onboard Windows Client.
+keywords: onboarding, Microsoft Defender for Endpoint onboarding, sccm, group policy, mdm, local script, detection test
+ms.prod: m365-security
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
+ms.author: macapara
+author: mjcaparas
+ms.localizationpriority: medium
+manager: dansimp
+audience: ITPro
+ms.collection: 
+  - M365-security-compliance
+  - m365-initiative-defender-endpoint
+ms.topic: conceptual
+ms.technology: mde
+---
+
+# Defender for Endpoint onboarding Windows Client
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+**Applies to:**
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Endpoint data loss prevention (DLP)](/microsoft-365/compliance/endpoint-dlp-learn-about?view=o365-worldwide)
+- [Insider risk management](/microsoft-365/compliance/insider-risk-management?view=o365-worldwide)
+
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https:%2F%2Faka.ms%2FMDEp2OpenTrial)
+
+Devices in your organization must be configured so that the Defender for Endpoint service can get sensor data from them. There are various methods and deployment tools that you can use to configure the devices in your organization.
+
+In general, you'll identify the client you're onboarding, then follow the corresponding tool appropriate to the device or your environment to support operating system 10 or 11.
+
+:::image type="content" source="images/onboard-devices.png" alt-text="Onboard devices" lightbox="images/onboard-devices.png":::
+
