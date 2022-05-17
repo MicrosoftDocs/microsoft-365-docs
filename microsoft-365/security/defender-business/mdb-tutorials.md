@@ -45,9 +45,9 @@ The following table describes the recommended tutorials for Defender for Busines
 
 | Tutorial  | Description  |
 |---------|---------|
-| **Document drops backdoor**     | Simulate an attack that introduces file-based malware on a test device. The tutorial describes how to get and use the simulation file, and what to watch for in the Microsoft 365 Defender portal. <br/><br/>This tutorial requires Microsoft Word to be installed on your test device.   |
+| **Document drops backdoor**     | Simulate an attack that introduces file-based malware on a test device. The tutorial describes how to get and use the simulation file, and what to watch for in the Microsoft 365 Defender portal. <p>This tutorial requires Microsoft Word to be installed on your test device.   |
 | **Live Response tutorial**     | Learn how to use basic and advanced commands with Live Response. Learn how to locate a suspicious file, remediate the file, and gather information on a device.   |
-| **Threat & Vulnerability Management (core scenarios)**     | Learn about threat and vulnerability management through three scenarios: <br/><br/>1. Reduce your company's threat and vulnerability exposure. <br/>2. Request a remediation. <br/>3. Create an exception for security recommendations. <br/><br/> Threat and vulnerability management uses a risk-based approach to the discovery, prioritization, and remediation of endpoint vulnerabilities and misconfigurations.      |
+| **Threat & Vulnerability Management (core scenarios)**     | Learn about threat and vulnerability management through three scenarios:<ol><li>Reduce your company's threat and vulnerability exposure.</li><li>Request a remediation.</li><li>Create an exception for security recommendations.</li></ol> <p> Threat and vulnerability management uses a risk-based approach to the discovery, prioritization, and remediation of endpoint vulnerabilities and misconfigurations.      |
 
 Each tutorial includes a walkthrough document that explains the scenario, how it works, and what to do.
 
