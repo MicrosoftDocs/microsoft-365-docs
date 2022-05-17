@@ -32,12 +32,12 @@ If the organizer does not specify the desired meeting duration in the request, S
 
 3. The default duration setting is located under **Calendar** **Options**.
 
-![Outlook Calendar options dialog in Windows. Configure work time, default duration, and shorten meetings options for Scheduler to use as defaults.](../media/OutlookPreferences.png)
+![Outlook Calendar options dialog in Windows. Configure work time, default duration, and shorten meetings options for Scheduler to use as defaults.](../media/OutlookOptions.png)
 
 Avoid back-to-back meetings
 ---------------------------
 
-Outlook now has a setting that automatically starts meetings late or ends meetings early to avoid back-to-back meetings. If set, Scheduler will also shorten the meeting duration according to the preference setting. See [Change default meeting length](https://techcommunity.microsoft.com/t5/hybrid-work/change-default-meeting-length-in-outlook-avoid-back-to-back/m-p/1247361) in Outlook documentation.
+Outlook now has a setting that automatically starts meetings late or ends meetings early to avoid back-to-back meetings. If set, Scheduler will also shorten the meeting duration according to the preference setting. See [Change default meeting length](../media/OutlookOptions2.png) in Outlook documentation.
 
 Additional Note
 ===============
