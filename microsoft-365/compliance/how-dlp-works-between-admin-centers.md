@@ -42,12 +42,10 @@ After you create a DLP policy in the Security & Compliance Center, the policy is
   
 If you've created DLP policies in the Exchange admin center, those policies will continue to work side by side with any policies for email that you create in the Security & Compliance Center. But note that rules created in the Exchange admin center take precedence. All Exchange mail flow rules are processed first, and then the DLP rules from the Security & Compliance Center are processed.
   
-This means that:
+It means:
   
 - Messages that are blocked by Exchange mail flow rules won't get scanned by DLP rules created in the Security & Compliance Center.
-
-- Messages that are quarantined by Exchange mail flow rules or any other filters run before DLP won't be scanned by DLP.
-    
+- Messages that are quarantined by Exchange mail flow rules or any other filters run before DLP won't be scanned by DLP. 
 - If an Exchange mail flow rule modifies a message in a way that causes it to match a DLP policy in the Security & Compliance Center, such as adding external users, then the DLP rules will detect it and enforce the policy as needed.
     
 Also note that Exchange mail flow rules that use the "stop processing" action don't affect the processing of DLP rules in the Security & Compliance Center - they'll still be processed.
