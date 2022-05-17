@@ -1,5 +1,5 @@
 ---
-title: "Assign licenses to users"
+title: "Assign licenses to users in the Microsoft 365 admin center"
 f1.keywords:
 - CSH
 author: cmcatee-MSFT
