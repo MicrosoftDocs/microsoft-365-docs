@@ -75,7 +75,7 @@ The Prevalence section provides the details on the prevalence of the URL wit
 
 ## Incident and alerts 
 
-![The incident and alerts tab provides a list of incidents that are associated with the URL or domain.](media/domain-incidents-alerts-im2.png)
+![The incident and alerts tab provides a list of incidents that are associated with the URL or domain.](media/domain-incidents-im2.png)
 
 The incident and alerts tab provides a list of incidents that are associated with the URL or domain. The table shown here is a filtered version of the incidents visible on the Incident queue screen, showing only incidents associated with the URL or domain, their severity, impacted assets and more.  
 
@@ -83,7 +83,7 @@ The incidents and alerts tab can be adjusted to show more or less information, b
 
 ## Devices
 
-![The device tab displays the number of distinct devices that communicated with the URL or domain over a specific period of time.](media/domain-devices-im2.png)
+![The device tab displays the number of distinct devices that communicated with the URL or domain over a specific period of time.](media/domain-device-im3.png)
 
 The Devices tab provides a chronological view of all the devices that were observed for a specific URL or a domain. This tab includes a trend chart and a customizable table listing device details, such as risk level, domain and more. Beyond that, you can see the first and last event times where the device interacted with the URL or domain, and the action type of this event. Using the menu next to the device name, you can quickly pivot to the device timeline to further investigate what happened before or after the event that involved this URL or domain.  
 
