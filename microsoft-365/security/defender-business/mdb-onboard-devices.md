@@ -138,7 +138,7 @@ To view the list of devices that are onboarded to Defender for Business, in the 
 
 ## Next steps
 
-- If you have other devices to onboard, select the tab that corresponds to the operating system on the devices [(Windows 10 and 11, Windows Server, macOS, Linux, or mobile devices](#what-to-do)), and follow the guidance on that tab.
+- If you have other devices to onboard, select the tab for those devices [(Windows 10 and 11, Windows Server, macOS, Linux, or mobile devices](#what-to-do)), and follow the guidance on that tab.
 - If you're done onboarding devices, proceed to [Step 5: Configure your security settings and policies in Microsoft Defender for Business](mdb-configure-security-settings.md)
 - See [Get started using Microsoft Defender for Business](mdb-get-started.md).
 
@@ -204,7 +204,7 @@ To view the list of devices that are onboarded to Defender for Business, in the 
 
 ## Next steps
 
-- If you have other devices to onboard, select the tab that corresponds to the operating system on the devices [(Windows 10 and 11, Windows Server, macOS, Linux, or mobile devices](#what-to-do)), and follow the guidance on that tab.
+- If you have other devices to onboard, select the tab for those devices [(Windows 10 and 11, Windows Server, macOS, Linux, or mobile devices](#what-to-do)), and follow the guidance on that tab.
 - If you're done onboarding devices, proceed to [Step 5: Configure your security settings and policies in Microsoft Defender for Business](mdb-configure-security-settings.md)
 - See [Get started using Microsoft Defender for Business](mdb-get-started.md).
 
@@ -291,7 +291,7 @@ To view the list of devices that are onboarded to Defender for Business, in the 
 
 ## Next steps
 
-- If you have other devices to onboard, select the tab that corresponds to the operating system on the devices ([Windows 10 and 11, Windows Server, macOS, Linux, or mobile devices](#what-to-do)), and follow the guidance on that tab.
+- If you have other devices to onboard, select the tab for those devices ([Windows 10 and 11, Windows Server, macOS, Linux, or mobile devices](#what-to-do)), and follow the guidance on that tab.
 - If you're done onboarding devices, proceed to [Step 5: Configure your security settings and policies in Microsoft Defender for Business](mdb-configure-security-settings.md)
 - See [Get started using Microsoft Defender for Business](mdb-get-started.md).
 
@@ -303,369 +303,16 @@ To view the list of devices that are onboarded to Defender for Business, in the 
 > The ability to onboard Linux Server endpoints is currently in preview. Make sure that you meet the following requirements before onboarding a Windows Server endpoint:
 > - You have a server license for each server instance in either Defender for Business (standalone) or Microsoft 365 Business Premium.
 > - You have turned on preview features. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), go to **Settings** > **Endpoints** > **General** > **Advanced features** > **Preview features**.
-> - See [Microsoft Defender for Endpoint on Linux](../defender-endpoint/microsoft-defender-endpoint-linux.md) for a description of prerequisites and system requirements for the current software version.
+> - You meet the [prerequisites for Microsoft Defender for Endpoint on Linux](../defender-endpoint/microsoft-defender-endpoint-linux.md#prerequisites).
 
-You can onboard an instance of Linux Server to Defender for Business by using a local script.
+## Onboard Linux Server endpoints
 
-### Local script for Linux Server
+You can onboard an instance of Linux Server to Defender for Business by using one of the following methods:
 
-> [!WARNING]
-> Upgrading your operating system to a new major version after the product installation requires the product to be reinstalled. You must first [uninstall](../defender-endpoint/linux-resources.md#uninstall) the existing Defender for Business application on Linux, upgrade the operating system, and then reconfigure Defender for Business using the following steps.
-
-### Configure the Linux software repository
-
-Defender for Business can be deployed on an instance of Linux Server from one of the following channels (denoted below as *[channel]*): *insiders-fast*, *insiders-slow*, or *prod*. Each of these channels corresponds to a Linux software repository. Instructions for configuring your device to use one of these repositories are provided below.
-
-The choice of the channel determines the type and frequency of updates that are offered to your device. Devices in *insiders-fast* are the first ones to receive updates and new features, followed later by *insiders-slow* and lastly by *prod*.
-
-In order to preview new features and provide early feedback, it is recommended that you configure some devices in your enterprise to use either *insiders-fast* or *insiders-slow*.
-
-> [!WARNING]
-> Switching the channel after the initial installation requires the product to be reinstalled. To switch the product channel: uninstall the existing package, re-configure your device to use the new channel, and follow the steps in this document to install the package from the new location.
-
-#### RHEL and variants (CentOS, Fedora, Oracle Linux and Amazon Linux 2)
-
-**Step 1**: Install `yum-utils` if it isn't installed yet:
-
-```bash
-sudo yum install yum-utils
-```
-
-> [!NOTE]
-> Your distribution and version, and identify the closest entry (by major, then minor) for it under `https://packages.microsoft.com/config/rhel/`.
-
-Use the following table to help guide you in locating the package:
-
-|Distro & version|Package|
-|---|---|
-|For RHEL/Centos/Oracle 8.0-8.5|<https://packages.microsoft.com/config/rhel/8/[channel].repo>|
-|For RHEL/Centos/Oracle 7.2-7.9 & Amazon Linux 2 |<https://packages.microsoft.com/config/rhel/7/[channel].repo>|
-|For RHEL/Centos 6.7-6.10|<https://packages.microsoft.com/config/rhel/6/[channel].repo>|
-|For Fedora 33|<https://packages.microsoft.com/config/fedora/33/prod.repo>|
-|For Fedora 34|<https://packages.microsoft.com/config/fedora/34/prod.repo>|
-
-In the following commands, replace *[version]* and *[channel]* with the information you've identified:
-
-```bash
-sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/rhel/[version]/[channel].repo
-```
-
-> [!TIP]
-> Use hostnamectl command to identify system related information including release *[version]*.
-
-For example, if you are running CentOS 7 and want to deploy Defender for Endpoint on Linux from the *prod* channel:
-
-```bash
-sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/rhel/7/prod.repo
-```
-
-Or if you wish to explore new features on selected devices, you might want to deploy Microsoft Defender for Endpoint on Linux to *insiders-fast* channel:
-
-```bash
-sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/rhel/7/insiders-fast.repo
-```
-
-**Step 2**: Install the Microsoft GPG public key:
-
-```bash
-sudo rpm --import http://packages.microsoft.com/keys/microsoft.asc
-```
-
-#### SLES and variants
-
-> [!NOTE]
-> Your distribution and version, and identify the closest entry (by major, then minor) for it under `https://packages.microsoft.com/config/sles/`.
-
-In the following commands, replace *[distro]* and *[version]* with the information you've identified:
-
-```bash
-sudo zypper addrepo -c -f -n microsoft-[channel] https://packages.microsoft.com/config/[distro]/[version]/[channel].repo
-```
-
-> [!TIP]
-> Use SPident command to identify system related information including release *[version]*.
-
-For example, if you are running SLES 12 and wish to deploy Microsoft Defender for Endpoint on Linux from the *prod* channel:
-
-```bash
-sudo zypper addrepo -c -f -n microsoft-prod https://packages.microsoft.com/config/sles/12/prod.repo
-```
-
-Install the Microsoft GPG public key:
-
-```bash
-sudo rpm --import http://packages.microsoft.com/keys/microsoft.asc
-```
-
-#### Ubuntu and Debian systems
-
-- Install `curl` if it isn't installed yet:
-
-    ```bash
-    sudo apt-get install curl
-    ```
-
-- Install `libplist-utils` if it isn't installed yet:
-
-    ```bash
-    sudo apt-get install libplist-utils
-    ```
-
-> [!NOTE]
-> Your distribution and version, and identify the closest entry (by major, then minor) for it under `https://packages.microsoft.com/config/[distro]/`.
-
-   In the below command, replace *[distro]* and *[version]* with the information you've identified:
-
-   ```bash
-    curl -o microsoft.list https://packages.microsoft.com/config/[distro]/[version]/[channel].list
-   ```
-
-   > [!TIP]
-   > Use hostnamectl command to identify system related information including release *[version]*.
-
-   For example, if you are running Ubuntu 18.04 and wish to deploy Microsoft Defender for Endpoint on Linux from the *prod* channel:
-
-   ```bash
-   curl -o microsoft.list https://packages.microsoft.com/config/ubuntu/18.04/prod.list
-   ```
-
-- Install the repository configuration:
-
-    ```bash
-    sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-[channel].list
-    ```
-
-    For example, if you chose *prod* channel:
-
-    ```bash
-    sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-prod.list
-    ```
-
-- Install the `gpg` package if not already installed:
-
-    ```bash
-    sudo apt-get install gpg
-    ```
-
-  If `gpg` is not available, then install `gnupg`.
-
-    ```bash
-    sudo apt-get install gnupg
-    ```
-
-- Install the Microsoft GPG public key:
-
-    ```bash
-    curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
-    ```
-
-- Install the https driver if it's not already present:
-
-    ```bash
-    sudo apt-get install apt-transport-https
-    ```
-
-- Update the repository metadata:
-
-    ```bash
-    sudo apt-get update
-    ```
-
-### Application installation
-
-- RHEL and variants (CentOS and Oracle Linux):
-
-    ```bash
-    sudo yum install mdatp
-    ```
-
-    > [!NOTE]
-    > If you have multiple Microsoft repositories configured on your device, you can be specific about which repository to install the package from. The following example shows how to install the package from the `production` channel if you also have the `insiders-fast` repository channel configured on this device. This situation can happen if you are using multiple Microsoft products on your device. Depending on the distribution and the version of your server, the repository alias might be different than the one in the following example.
-
-    ```bash
-    # list all repositories
-    yum repolist
-    ```
-
-    ```Output
-    ...
-    packages-microsoft-com-prod               packages-microsoft-com-prod        316
-    packages-microsoft-com-prod-insiders-fast packages-microsoft-com-prod-ins      2
-    ...
-    ```
-
-    ```bash
-    # install the package from the production repository
-    sudo yum --enablerepo=packages-microsoft-com-prod install mdatp
-    ```
-
-- SLES and variants:
-
-    ```bash
-    sudo zypper install mdatp
-    ```
-
-    > [!NOTE]
-    > If you have multiple Microsoft repositories configured on your device, you can be specific about which repository to install the package from. The following example shows how to install the package from the `production` channel if you also have the `insiders-fast` repository channel configured on this device. This situation can happen if you are using multiple Microsoft products on your device.
-
-    ```bash
-    zypper repos
-    ```
-
-    ```Output
-    ...
-    #  | Alias | Name | ...
-    XX | packages-microsoft-com-insiders-fast | microsoft-insiders-fast | ...
-    XX | packages-microsoft-com-prod | microsoft-prod | ...
-    ...
-
-    ```
-
-    ```bash
-    sudo zypper install packages-microsoft-com-prod:mdatp
-    ```
-
-- Ubuntu and Debian system:
-
-    ```bash
-    sudo apt-get install mdatp
-    ```
-
-    > [!NOTE]
-    > If you have multiple Microsoft repositories configured on your device, you can be specific about which repository to install the package from. The following example shows how to install the package from the `production` channel if you also have the `insiders-fast` repository channel configured on this device. This situation can happen if you are using multiple Microsoft products on your device.
-
-    ```bash
-    cat /etc/apt/sources.list.d/*
-    ```
-
-    ```Output
-    deb [arch=arm64,armhf,amd64] https://packages.microsoft.com/config/ubuntu/18.04/prod insiders-fast main
-    deb [arch=amd64] https://packages.microsoft.com/config/ubuntu/18.04/prod bionic main
-    ```
-
-    ```bash
-    sudo apt -t bionic install mdatp
-    ```
-
-### Download the onboarding package
-
-Download the onboarding package from Microsoft 365 Defender portal.
-
-> [!IMPORTANT]
-> If you miss this step, any command executed will show a warning message indicating that the product is unlicensed. Also the `mdatp health` command returns a value of `false`.
-
-1. In the Microsoft 365 Defender portal, go to **Settings > Endpoints > Device management > Onboarding**.
-
-2. In the first drop-down menu, select **Linux Server** as the operating system. In the second drop-down menu, select **Local Script** as the deployment method.
-
-3. Select **Download onboarding package**. Save the file as WindowsDefenderATPOnboardingPackage.zip.
-
-   :::image type="content" source="images/portal-onboarding-linux.png" alt-text="Downloading an onboarding package in the Microsoft 365 Defender portal" lightbox="images/portal-onboarding-linux.png":::
-
-4. From a command prompt, verify that you have the file, and extract the contents of the archive:
-
-    ```bash
-    ls -l
-    ```
-
-    ```Output
-    total 8
-    -rw-r--r-- 1 test  staff  5752 Feb 18 11:22 WindowsDefenderATPOnboardingPackage.zip
-    ```
-
-    ```bash
-    unzip WindowsDefenderATPOnboardingPackage.zip
-    ```
-
-    ```Output
-    Archive:  WindowsDefenderATPOnboardingPackage.zip
-    inflating: MicrosoftDefenderATPOnboardingLinuxServer.py
-    ```
-
-### Client configuration
-
-1. Copy MicrosoftDefenderATPOnboardingLinuxServer.py to the target device.
-
-    > [!NOTE]
-    > Initially the client device is not associated with an organization and the *orgId* attribute is blank.
-
-    ```bash
-    mdatp health --field org_id
-    ```
-
-2. Run MicrosoftDefenderATPOnboardingLinuxServer.py.
-
-    > [!NOTE]
-    > To run this command, you must have `python`  or `python3` installed on the device depending on the disto and version. If needed, see [Step-by-step Instruction for Installing Python on Linux](https://opensource.com/article/20/4/install-python-linux).
-    
-    If you're running RHEL 8.x or Ubuntu 20.04 or higher, you will need to use `python3`.
-
-    ```bash
-    sudo python3 MicrosoftDefenderATPOnboardingLinuxServer.py
-    ```
-
-    For the rest of distros and versions, you will need to use `python`.
-    
-    ```bash
-    sudo python MicrosoftDefenderATPOnboardingLinuxServer.py
-    ```
-    
-3. Verify that the device is now associated with your organization and reports a valid organization identifier:
-
-    ```bash
-    mdatp health --field org_id
-    ```
-
-4. Check the health status of the product by running the following command. A return value of `1` denotes that the product is functioning as expected:
-
-    ```bash
-    mdatp health --field healthy
-    ```
-
-    > [!IMPORTANT]
-    > When the product starts for the first time, it downloads the latest antimalware definitions. This may take up to a few minutes depending on the network connectivity. During this time the above command returns a value of `false`. You can check the status of the definition update using the following command:
-    >
-    > ```bash
-    > mdatp health --field definitions_status
-    > ```
-    >
-    > Please note that you may also need to configure a proxy after completing the initial installation. See [Configure Defender for Endpoint on Linux for static proxy discovery: Post-installation configuration](linux-static-proxy-configuration.md#post-installation-configuration).
-
-5. Run an AV detection test to verify that the device is properly onboarded and reporting to the service. Perform the following steps on the newly onboarded device:
-
-    - Ensure that real-time protection is enabled (denoted by a result of `1` from running the following command):
-
-        ```bash
-        mdatp health --field real_time_protection_enabled
-        ```
-        
-      If it is not enabled, execute the following command:
-      
-       ```bash
-        mdatp config real-time-protection --value enabled
-        ```
-
-    - Open a Terminal window and execute the following command:
-
-        ``` bash
-        curl -o /tmp/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
-        ```
-
-    - The file should have been quarantined by Defender for Endpoint on Linux. Use the following command to list all the detected threats:
-
-        ```bash
-        mdatp threat list
-        ```
-
-6. Run an EDR detection test and simulate a detection to verify that the device is properly onboarded and reporting to the service. Perform the following steps on the newly onboarded device:
-
-    - Verify that the onboarded Linux server appears in Microsoft 365 Defender. If this is the first onboarding of the machine, it can take up to 20 minutes until it appears.
-
-    - Download and extract the [script file](https://aka.ms/LinuxDIY) to an onboarded Linux server and run the following command: `./mde_linux_edr_diy.sh`
-
-    - After a few minutes, a detection should be raised in Microsoft 365 Defender.
-
-    - Look at the alert details, machine timeline, and perform your typical investigation steps.
+- **Local script**. See [Deploy Microsoft Defender for Endpoint on Linux manually](../defender-endpoint/linux-install-manually.md).
+- **Ansible**. See [Deploy Microsoft Defender for Endpoint on Linux with Ansible](../defender-endpoint/linux-install-with-ansible.md).
+- **Chef**. See [Deploy Defender for Endpoint on Linux with Chef](../defender-endpoint/linux-deploy-defender-for-endpoint-with-chef.md).
+- **Puppet**. See [Deploy Microsoft Defender for Endpoint on Linux with Puppet](../defender-endpoint/linux-install-with-puppet.md).
 
 ## View a list of onboarded devices
 
@@ -673,7 +320,7 @@ To view the list of devices that are onboarded to Defender for Business, in the 
 
 ## Next steps
 
-- If you have other devices to onboard, select the tab that corresponds to the operating system on the devices [(Windows 10 and 11, Windows Server, macOS, Linux, or mobile devices](#what-to-do)), and follow the guidance on that tab.
+- If you have other devices to onboard, select the tab for those devices [(Windows 10 and 11, Windows Server, macOS, Linux, or mobile devices](#what-to-do)), and follow the guidance on that tab.
 - If you're done onboarding devices, proceed to [Step 5: Configure your security settings and policies in Microsoft Defender for Business](mdb-configure-security-settings.md)
 - See [Get started using Microsoft Defender for Business](mdb-get-started.md).
 
@@ -692,6 +339,6 @@ After a device has been enrolled in Intune, you can add it to a device group. [L
 
 ## Next steps
 
-- If you have other devices to onboard, select the tab that corresponds to the operating system on the devices [(Windows 10 and 11, Windows Server, macOS, Linux, or mobile devices](#what-to-do)), and follow the guidance on that tab.
+- If you have other devices to onboard, select the tab for those devices [(Windows 10 and 11, Windows Server, macOS, Linux, or mobile devices](#what-to-do)), and follow the guidance on that tab.
 - If you're done onboarding devices, proceed to [Step 5: Configure your security settings and policies in Microsoft Defender for Business](mdb-configure-security-settings.md)
 - See [Get started using Microsoft Defender for Business](mdb-get-started.md).
