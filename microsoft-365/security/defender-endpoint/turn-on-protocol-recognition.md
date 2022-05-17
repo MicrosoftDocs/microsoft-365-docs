@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.date: 05/07/2021
+ms.date: 02/21/2022
 ms.reviewer:
 manager: dansimp
 ms.custom: nextgen
@@ -28,6 +28,9 @@ ms.collection: m365-security-compliance
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 This policy setting allows you to configure protocol recognition for network protection against exploits of known vulnerabilities. If you enable or do not configure this setting, protocol recognition will be enabled. If you disable this setting, protocol recognition will be disabled.
+
+[!IMPORTANT]
+This setting is now deprecated. 
 
 ## Use Group Policy to configure protocol recognition
 

@@ -1,6 +1,6 @@
 ---
-title: Attack surface reduction rules deployment Phase 1 - plan
-description: Provides guidance to plan your attack surface reduction rules deployment.
+title: Plan attack surface reduction (ASR) rules deployment
+description: Provides guidance to plan your attack surface reduction (ASR) rules deployment.
 keywords: Attack surface reduction rules deployment, ASR deployment, enable asr rules, configure ASR, host intrusion prevention system, protection rules, anti-exploit rules, anti-exploit, exploit rules, infection prevention rules, Microsoft Defender for Endpoint, configure ASR rules
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,16 +16,18 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.collection: m365solution-scenario
+ms.collection: 
+- m365solution-scenario
+- M365-security-compliance
 ms.date: 1/18/2022
 ---
 
-# Phase 1: plan
+# Plan attack surface reduction (ASR) rules deployment
 
-Starting to test ASR rules involves starting with the right business unit. You’ll want to start with a small group of people in a specific business unit. You can identify some ASR champions within a particular business unit who can provide real-world impact to the ASR rules and help you tune your implementation.
+When testing attack surface reduction (ASR) rules it is important to start with the right business unit. You'll want to start with a small group of people in a specific business unit. You can identify some ASR champions within a particular business unit who can provide real-world impact about the ASR rules, and help you tune your implementation.
 
 > [!div class="mx-imgBorder"]
-> ![ASR rules planning steps](images/asr-rules-planning-steps.png)
+> :::image type="content" source="images/asr-rules-planning-steps.png" alt-text="The ASR rules planning steps" lightbox="images/asr-rules-planning-steps.png":::
 
 ## Start with the right business unit
 
@@ -53,7 +55,7 @@ It is important to provide a feedback and response channel for your ASR rules ch
 Having a full understanding of the applications and per-business-unit processes that are used across your organization is critical to a successful ASR rules deployment. Additionally, it is imperative that you understand how those apps are used within the various business units in your organization.
 To start, you should get an inventory of the apps that are approved for use across the breadth of the organization. You can use tools such as the Microsoft 365 Apps admin center to help you inventory software applications. See: [Overview of inventory in the Microsoft 365 Apps admin center](/deployoffice/admincenter/inventory).
 
-## Define reporting and response team  roles and responsibilities
+## Define reporting and response team roles and responsibilities
 
 Clearly articulating roles and responsibilities of persons responsible for monitoring and communicating ASR  rules status and activity is a core activity of ASR  maintenance. Therefore, it is important to determine:
 
@@ -69,16 +71,18 @@ Typical roles and responsibilities include:
 
 ## Ring deployment
 
-For large enterprises, Microsoft recommends deploying ASR  rules in “rings.” Rings are groups of devices that are visually represented as concentric circles that radiate outward like non-overlapping tree rings. When the innermost ring is successfully deployed, you can transition the next ring into the testing phase. Thorough assessment of your business units, ASR  rules champions, apps, and processes is imperative to defining your rings.
+For large enterprises, Microsoft recommends deploying ASR  rules in "rings." Rings are groups of devices that are visually represented as concentric circles that radiate outward like non-overlapping tree rings. When the innermost ring is successfully deployed, you can transition the next ring into the testing phase. Thorough assessment of your business units, ASR  rules champions, apps, and processes is imperative to defining your rings.
 In most cases, your organization will have designed deployment rings for phased rollouts of Windows updates. You can use your existing ring design to implement ASR  rules.
 See: [Create a deployment plan for Windows](/windows/deployment/update/create-deployment-plan)
 
 ## Additional topics in this deployment collection
 
-[ASR rules deployment overview](attack-surface-reduction-rules-deployment.md)
+[Attack surface reduction (ASR) rules deployment overview](attack-surface-reduction-rules-deployment.md)
 
-[Phase 2: Test](attack-surface-reduction-rules-deployment-test.md)
+[Test attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-test.md)
 
-[Phase 3: Implement](attack-surface-reduction-rules-deployment-implement.md)
+[Enable attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-implement.md)
 
-[Phase 4: Operationalize](attack-surface-reduction-rules-deployment-operationalize.md)
+[Operationalize attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-operationalize.md)
+
+[Attack surface reduction (ASR) rules reference](attack-surface-reduction-rules-reference.md)

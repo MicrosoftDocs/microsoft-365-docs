@@ -14,9 +14,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
@@ -40,7 +38,7 @@ ms.custom: api
 
 ## API description
 
-Cancel an already launched machine action that are not yet in final state (completed, canceled, failed).
+Cancel an already launched machine action that is not yet in final state (completed, canceled, failed).
 
 ## Limitations
 

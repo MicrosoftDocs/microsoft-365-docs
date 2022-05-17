@@ -11,13 +11,14 @@ search.appverid:
 ms.collection: 
     - enabler-strategic
     - m365initiative-viva-topics
+ms.custom: admindeeplinkSPO
 ms.localizationpriority: high
 
 
 ---
 # Term store reports
 
-You can access reports for the term store in the SharePoint admin center. This feature requires a [SharePoint Syntex](index.md) license.
+You can access reports for <a href="https://go.microsoft.com/fwlink/?linkid=2185073" target="_blank">Term store</a> in the SharePoint admin center. This feature requires a [SharePoint Syntex](index.md) license.
 
 Expand **Reports**, and then click **Content services**.
 

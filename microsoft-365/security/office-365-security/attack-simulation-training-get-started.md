@@ -32,6 +32,9 @@ ms.prod: m365-security
 
 If your organization has Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2, which includes [Threat Investigation and Response capabilities](office-365-ti.md), you can use Attack simulation training in the Microsoft 365 Defender portal to run realistic attack scenarios in your organization. These simulated attacks can help you identify and find vulnerable users before a real attack impacts your bottom line. Read this article to learn more.
 
+Watch this short video to learn more about Attack simulation training.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWMhvB]
+
 > [!NOTE]
 > Attack simulation training replaces the old Attack Simulator v1 experience that was available in the Security & Compliance Center at **Threat management** \> **Attack simulator** or <https://protection.office.com/attacksimulator>.
 
@@ -42,7 +45,7 @@ If your organization has Microsoft 365 E5 or Microsoft Defender for Office 365 P
 - For more information about the availability of Attack simulation training across different Microsoft 365 subscriptions, see [Microsoft Defender for Office 365 service description](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
 - You need to be assigned permissions in **Azure Active Directory** before you can do the procedures in this article. Specifically, you need to be a member of one of the following roles:
-  - **Organization Management**
+  - **Global Administrator**
   - **Security Administrator**
   - **Attack Simulation Administrators**<sup>\*</sup>: Create and manage all aspects of attack simulation campaigns.
   - **Attack Payload Author**<sup>\*</sup>: Create attack payloads that an admin can initiate later.
@@ -122,4 +125,4 @@ For step by step instructions on how to create a payload for use within a simula
 For step by step instructions on how to gain insights with reporting, see [Gain insights through Attack simulation training](attack-simulation-training-insights.md).
 
 > [!NOTE]
-> Attack Simulator uses Safe Links in Defender for Office 365 to securely track click data for the URL in the payload message that's sent to targeted recipients of a phishing campaign, even if the **Do not track user clicks** setting in Safe Links policies is turned on.
+> Attack Simulator uses Safe Links in Defender for Office 365 to securely track click data for the URL in the payload message that's sent to targeted recipients of a phishing campaign, even if the **Track user clicks** setting in Safe Links policies is turned off.

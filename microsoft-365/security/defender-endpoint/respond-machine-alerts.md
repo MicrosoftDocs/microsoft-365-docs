@@ -21,9 +21,8 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-
-> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-respondmachine-abovefoldlink)
+- [Microsoft Defender for Endpoint Plans 1 and 2](defender-endpoint-plan-1-2.md)
+- [Microsoft Defender for Business](/microsoft-365/security/defender-business/mdb-overview)
 
 Quickly respond to detected attacks by isolating devices or collecting an investigation package. After taking action on devices, you can check activity details on the Action center.
 
@@ -41,6 +40,14 @@ Response actions run along the top of a specific device page and include:
 
 [![Image of response actions.](images/response-actions.png)](images/response-actions.png#lightbox)
 
+> [!IMPORTANT]
+> [Defender for Endpoint Plan 1](defender-endpoint-plan-1.md) and [Microsoft Defender for Business](../defender-business/mdb-overview.md) include only the following manual response actions:
+> - Run antivirus scan
+> - Isolate device
+> - Stop and quarantine a file
+> - Add an indicator to block or allow a file
+> Your subscription must include Defender for Endpoint Plan 2 to have all of the response actions described in this article.
+
  You can find device pages from any of the following views:
 
 - **Security operations dashboard** - Select a device name from the Devices at risk card.
@@ -49,7 +56,6 @@ Response actions run along the top of a specific device page and include:
 - **Search box** - Select Device from the drop-down menu and enter the device name.
 
 > [!IMPORTANT]
->
 > - These response actions are only available for devices on Windows 10, version  1703 or later, Windows 11, Windows Server 2019, and Windows Server 2022.
 > - For non-Windows platforms, response capabilities (such as Device isolation) are dependent on the third-party capabilities.
 > - For Microsoft first party agents, please refer to the "more information" link under each feature for minimum OS requirements.
@@ -85,24 +91,22 @@ As part of the investigation or response process, you can collect an investigati
 To download the package (Zip file) and investigate the events that occurred on a device
 
 1. Select **Collect investigation package** from the row of response actions at the top of the device page.
+
 2. Specify in the text box why you want to perform this action. Select **Confirm**.
+
 3. The zip file will download
 
 Alternate way:
 
 1. Select **Action center** from the response actions section of the device page.
 
-    ![Image of action center button.](images/action-center-package-collection.png)
+   :::image type="content" source="images/action-center-package-collection.png" alt-text="The Action center option" lightbox="images/action-center-package-collection.png":::
 
 2. In the Action center fly-out, select **Package collection package available** to download the zip file.
 
-    ![Image of download package button.](images/collect-package.png)
+   :::image type="content" source="images/collect-package.png" alt-text="The download package option" lightbox="images/collect-package.png":::
 
 The package contains the following folders:
-
-<br>
-
-****
 
 |Folder|Description|
 |---|---|
@@ -126,21 +130,19 @@ The package contains the following folders:
 
 As part of the investigation or response process, you can remotely initiate an antivirus scan to help identify and remediate malware that might be present on a compromised device.
 
->[!IMPORTANT]
->- This action is not currently supported for macOS and Linux. Use live response to run the action. For more information on live response, see [Investigate entities on devices using live response](live-response.md)
->- A Microsoft Defender Antivirus (Microsoft Defender AV) scan can run alongside other antivirus solutions, whether Microsoft Defender AV is the active antivirus solution or not. Microsoft Defender AV can be in Passive mode. For more information, see [Microsoft Defender Antivirus compatibility](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility?view=o365-worldwide).
+> [!IMPORTANT]
+> - This action is not currently supported for macOS and Linux. Use live response to run the action. For more information on live response, see [Investigate entities on devices using live response](live-response.md)
+> - A Microsoft Defender Antivirus (Microsoft Defender AV) scan can run alongside other antivirus solutions, whether Microsoft Defender AV is the active antivirus solution or not. Microsoft Defender AV can be in Passive mode. For more information, see [Microsoft Defender Antivirus compatibility](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility).
 
 One you have selected **Run antivirus scan**, select the scan type that you'd like to run (quick or full) and add a comment before confirming the scan.
 
-![Image of notification to select quick scan or full scan and add comment.](images/run-antivirus.png)
+:::image type="content" source="images/run-antivirus.png" alt-text="The notification to select quick scan or full scan and add comment" lightbox="images/run-antivirus.png":::
 
 The Action center will show the scan information and the device timeline will include a new event, reflecting that a scan action was submitted on the device. Microsoft Defender AV alerts will reflect any detections that surfaced during the scan.
 
 > [!NOTE]
 > When triggering a scan using Defender for Endpoint response action, Microsoft Defender antivirus 'ScanAvgCPULoadFactor' value still applies and limits the CPU impact of the scan.
->
 > If ScanAvgCPULoadFactor is not configured, the default value is a limit of 50% maximum CPU load during a scan.
->
 > For more information, see [configure-advanced-scan-types-microsoft-defender-antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/configure-advanced-scan-types-microsoft-defender-antivirus).
 
 ## Restrict app execution
@@ -159,13 +161,13 @@ To restrict an application from running, a code integrity policy is applied that
 
 Once you have selected **Restrict app execution** on the device page, type a comment and select **Confirm**. The Action center will show the scan information and the device timeline will include a new event.
 
-![Image of app restriction notification.](images/restrict-app-execution.png)
+:::image type="content" source="images/restrict-app-execution.png" alt-text="The application restriction notification" lightbox="images/restrict-app-execution.png":::
 
 ### Notification on device user
 
 When an app is restricted, the following notification is displayed to inform the user that an app is being restricted from running:
 
-![Image of app restriction.](images/atp-app-restriction.png)
+:::image type="content" source="images/atp-app-restriction.png" alt-text="The application restriction message" lightbox="images/atp-app-restriction.png":::
 
 >[!NOTE]
 >The notification is not available on Windows Server 2016 and Windows Server 2012 R2.
@@ -174,11 +176,11 @@ When an app is restricted, the following notification is displayed to inform the
 
 Depending on the severity of the attack and the sensitivity of the device, you might want to isolate the device from the network. This action can help prevent the attacker from controlling the compromised device and performing further activities such as data exfiltration and lateral movement.
 
->[!IMPORTANT]
->- This action is not currently supported for macOS and Linux. Use live response to run the action. For more information on live response, see [Investigate entities on devices using live response](live-response.md)
->- Full isolation is available for devices on Windows 10, version 1703, Windows 11, Windows Server 2019, Windows Server 2016, Windows Server 2012 R2, and Windows Server 2022.
->- Selective isolation is available for devices on Windows 10, version 1709 or later, and Windows 11.
->- When isolating a device, only certain processes and destinations are allowed. Therefore, devices that are behind a full VPN tunnel won't be able to reach the Microsoft Defender for Endpoint cloud service after the device is isolated. We recommend using a split-tunneling VPN for Microsoft Defender for Endpoint and Microsoft Defender Antivirus cloud-based protection-related traffic.
+> [!IMPORTANT]
+> - Isolating devices from the network is not currently supported for macOS and Linux. Use live response to run the action. For more information on live response, see [Investigate entities on devices using live response](live-response.md).
+> - Full isolation is available for devices on Windows 10, version 1703, Windows 11, Windows Server 2019, Windows Server 2016, Windows Server 2012 R2, and Windows Server 2022.
+> - Selective isolation is available for devices on Windows 10, version 1709 or later, and Windows 11.
+> - When isolating a device, only certain processes and destinations are allowed. Therefore, devices that are behind a full VPN tunnel won't be able to reach the Microsoft Defender for Endpoint cloud service after the device is isolated. We recommend using a split-tunneling VPN for Microsoft Defender for Endpoint and Microsoft Defender Antivirus cloud-based protection-related traffic.
 
 This device isolation feature disconnects the compromised device from the network while retaining connectivity to the Defender for Endpoint service, which continues to monitor the device.
 
@@ -189,7 +191,7 @@ On Windows 10, version 1709 or later, you'll have more control over the network 
 
 Once you have selected **Isolate device** on the device page, type a comment and select **Confirm**. The Action center will show the scan information and the device timeline will include a new event.
 
-![Image of isolate device.](images/isolate-device.png)
+:::image type="content" source="images/isolate-device.png" alt-text="An isolated device details page" lightbox="images/isolate-device.png":::
 
 > [!NOTE]
 > The device will remain connected to the Defender for Endpoint service even if it is isolated from the network. If you've chosen to enable Outlook and Skype for Business communication, then you'll be able to communicate to the user while the device is isolated.
@@ -198,7 +200,7 @@ Once you have selected **Isolate device** on the device page, type a comment and
 
 When a device is being isolated, the following notification is displayed to inform the user that the device is being isolated from the network:
 
-![Image of no network connection.](images/atp-notification-isolate.png)
+:::image type="content" source="images/atp-notification-isolate.png" alt-text="A no network connection message" lightbox="images/atp-notification-isolate.png":::
 
 ## Consult a threat expert
 
@@ -217,7 +219,8 @@ The **Action center** provides information on actions that were taken on a devic
 
 All other related details are also shown, for example, submission date/time, submitting user, and if the action succeeded or failed.
 
-![Image of action center with information.](images/action-center-details.png)
+:::image type="content" source="images/action-center-details.png" alt-text="The action center with information" lightbox="images/action-center-details.png":::
+
 
 ## See also
 

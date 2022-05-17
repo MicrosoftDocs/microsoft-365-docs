@@ -76,6 +76,10 @@ To increase the effectiveness of spam filtering, you can create custom anti-spam
 
 - For our recommended settings for anti-spam policies, see [EOP anti-spam policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings).
 
+- You can't completely turn off spam filtering, but you can use a mail flow rule (also known as a transport rule) to bypass most spam filtering on incoming message (for example, if you route email through a third-party protection service or device before delivery to Microsoft 365). For more information, see [Use mail flow rules to set the spam confidence level (SCL) in messages](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
+  - High confidence phishing messages are still filtered. Other features in EOP are not affected (for example, messages are always scanned for malware).
+  - If you need to bypass spam filtering for SecOps mailboxes or phishing simulations, don't use mail flow rules. For more information, see [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](configure-advanced-delivery.md).
+
 ## Use the Microsoft 365 Defender portal to create anti-spam policies
 
 Creating a custom anti-spam policy in the Microsoft 365 Defender portal creates the spam filter rule and the associated spam filter policy at the same time using the same name for both.
@@ -91,8 +95,10 @@ Creating a custom anti-spam policy in the Microsoft 365 Defender portal creates 
    When you're finished, click **Next**.
 
 4. On the **Users, groups, and domains** page that appears, identify the internal recipients that the policy applies to (recipient conditions):
-   - **Users**: The specified mailboxes, mail users, or mail contacts in your organization.
-   - **Groups**: The specified distribution groups, mail-enabled security groups, or Microsoft 365 Groups in your organization.
+   - **Users**: The specified mailboxes, mail users, or mail contacts.
+   - **Groups**:
+     - Members of the specified distribution groups or mail-enabled security groups.
+     - The specified Microsoft 365 Groups.
    - **Domains**: All recipients in the specified [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in your organization.
 
    Click in the appropriate box, start typing a value, and select the value that you want from the results. Repeat this process as many times as necessary. To remove an existing value, click remove ![Remove icon.](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.
@@ -107,11 +113,11 @@ Creating a custom anti-spam policy in the Microsoft 365 Defender portal creates 
 
 5. On the **Bulk email threshold & spam properties** page that appears, configure the following settings:
 
-   - **Bulk email threshold**: Specifies the bulk complaint level (BCL) of a message that triggers the specified action for the **Bulk** spam filtering verdict that you configure on the next page (greater than the specified value, not greater than or equal to). A higher value indicates the message is less desirable (more likely to resemble spam). The default value is 7. For more information, see [Bulk complaint level (BCL) in EOP](bulk-complaint-level-values.md) and [What's the difference between junk email and bulk email?](what-s-the-difference-between-junk-email-and-bulk-email.md).
+   - **Bulk email threshold**: Specifies the bulk complaint level (BCL) of a message that triggers the specified action for the **Bulk** spam filtering verdict that you configure on the next page. A higher value indicates the message is less desirable (more likely to resemble spam). The default value is 7. For more information, see [Bulk complaint level (BCL) in EOP](bulk-complaint-level-values.md) and [What's the difference between junk email and bulk email?](what-s-the-difference-between-junk-email-and-bulk-email.md).
 
      By default, the PowerShell only setting _MarkAsSpamBulkMail_ is `On` in anti-spam policies. This setting dramatically affects the results of a **Bulk** filtering verdict:
 
-     - **_MarkAsSpamBulkMail_ is On**: A BCL that's greater than the threshold is converted to an SCL 6 that corresponds to a filtering verdict of **Spam**, and the action for the **Bulk** filtering verdict is taken on the message.
+     - **_MarkAsSpamBulkMail_ is On**: A BCL that's greater than or equal to the threshold is converted to an SCL 6 that corresponds to a filtering verdict of **Spam**, and the action for the **Bulk** filtering verdict is taken on the message.
      - **_MarkAsSpamBulkMail_ is Off**: The message is stamped with the BCL, but _no action_ is taken for a **Bulk** filtering verdict. In effect, the BCL threshold and **Bulk** filtering verdict action are irrelevant.
 
    - **Increase spam score**, **Mark as spam**<sup>\*</sup> and **Test mode**: Advanced Spam Filter (ASF) settings that are turned off by default.
@@ -140,10 +146,6 @@ Creating a custom anti-spam policy in the Microsoft 365 Defender portal creates 
      - A check mark ( ![Check mark.](../../media/checkmark.png)) indicates the action is available (not all actions are available for all verdicts).
      - An asterisk ( <sup>\*</sup> ) after the check mark indicates the default action for the spam filtering verdict.
 
-     <br>
-
-     ****
-
      |Action|Spam|High<br>confidence<br>spam|Phishing|High<br>confidence<br>phishing|Bulk|
      |---|:---:|:---:|:---:|:---:|:---:|
      |**Move message to Junk Email folder**: The message is delivered to the mailbox and moved to the Junk Email folder.<sup>1</sup>|![Check mark.](../../media/checkmark.png)<sup>\*</sup>|![Check mark.](../../media/checkmark.png)<sup>\*</sup>|![Check mark.](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)<sup>\*</sup>|
@@ -153,7 +155,6 @@ Creating a custom anti-spam policy in the Microsoft 365 Defender portal creates 
      |**Delete message**: Silently deletes the entire message, including all attachments.|![Check mark.](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)||![Check mark](../../media/checkmark.png)|
      |**Quarantine message**: Sends the message to quarantine instead of the intended recipients. <p> You specify how long the message should be held in quarantine later in the **Quarantine** box. <p> You specify the [quarantine policy](quarantine-policies.md) that applies to quarantined messages for the spam filter verdict in the **Select a policy** box that appears. For more information, see [Quarantine policies](quarantine-policies.md).<sup>3</sup>|![Check mark.](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)<sup>\*</sup>|![Check mark](../../media/checkmark.png)<sup>\*</sup>|![Check mark](../../media/checkmark.png)|
      |**No action**|||||![Check mark](../../media/checkmark.png)|
-     |
 
      > <sup>1</sup> EOP now uses its own mail flow delivery agent to route messages to the Junk Email folder instead of using the junk email rule. The _Enabled_ parameter on the **Set-MailboxJunkEmailConfiguration** cmdlet no longer has any effect on mail flow. For more information, see [Configure junk email settings on Exchange Online mailboxes](configure-junk-email-settings-on-exo-mailboxes.md).
      >

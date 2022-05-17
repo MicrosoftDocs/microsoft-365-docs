@@ -36,7 +36,7 @@ If you are part of your organization's Microsoft for 365 for business security t
 
 Monitoring capabilities available in the Security & Compliance Center include smart reports and insights that enable your compliance and security admins to focus on high-priority issues, such as security attacks or increased suspicious activity. In a dashboard, smart reports and insights resemble the following image:
 
-![The Reports dashboard in the Security & Compliance Center.](../../media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png)
+:::image type="content" source="../../media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png" alt-text="The Reports dashboard in the Security & Compliance Center" lightbox="../../media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png":::
 
 In addition to highlighting problem areas, smart reports and insights include recommendations and links to view and explore data and also take quick actions. For example, if your organization suddenly has a high number of email messages being marked as spam by end users, you might be advised to revisit your anti-spam policies to ensure the right level of protection is in place.
 
@@ -44,13 +44,9 @@ In addition to highlighting problem areas, smart reports and insights include re
 
 A wide variety of reports are available in the Security & Compliance Center. (Go to **Reports** > **Security report** to get an all-up view.) The following table lists available reports with links to learn more:
 
-<br>
-
-****
-
 |Type of information|How to get there|Where to go to learn more|
 |---|---|---|
-|**Security & Compliance Center reports** (all up) <p> Top insights and recommendations, and links to Security & Compliance reports, including data loss prevention reports, labels, email security reports, Defender for Office 365 reports, and more|In the Security & Compliance Center, go to **Reports** \> **Dashboard**|[Reports in the Security & Compliance Center](../../compliance/reports-in-security-and-compliance.md)|
+|**Security & Compliance Center reports** (all up) <p> Top insights and recommendations, and links to Security & Compliance reports, including Microsoft Purview Data Loss Prevention reports, labels, email security reports, Defender for Office 365 reports, and more|In the Security & Compliance Center, go to **Reports** \> **Dashboard**|[Reports in the Security & Compliance Center](../../compliance/reports-in-security-and-compliance.md)|
 |**Data loss prevention** <p> Data loss prevention policy matches, false positives and overrides, and links to create or edit policies|In the Security & Compliance Center, go to **Data loss prevention** \> **Policy**|[View the reports for data loss prevention](../../compliance/view-the-dlp-reports.md)|
 |**Data governance** <p> Information about how labels are applied, labels classified as records, label trends, and more|In the Security & Compliance Center, go to **Information governance** \> **Dashboard**|[View the data governance reports](../../compliance/view-the-data-governance-reports.md)|
 |**Threat management dashboard** (this is also referred to as the Security dashboard) <p> Threat detections, malware trends, top targeted users, details about sent and received email messages, and more|In the Security & Compliance Center, go to **Vulnerability Management** \> **Dashboard**|[View reports for Defender for Office 365](view-reports-for-mdo.md)|

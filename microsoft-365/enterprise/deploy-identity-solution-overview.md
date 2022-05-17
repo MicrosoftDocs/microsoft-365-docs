@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -32,6 +32,12 @@ For information about the identity features of each Microsoft 365 for enterprise
 Review this two-page poster to quickly ramp up on identity concepts and configurations for Microsoft 365 for enterprise.
 
 You can [download this poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/m365e-identity-infra.pdf) and can print it in letter, legal, or tabloid (11 x 17) format.
+
+This solution is the first step to build out the Microsoft 365 Zero Trust deployment stack.
+
+![The Microsoft 365 Zero Trust deployment stack](../media/deploy-identity-solution-overview/zero-trust-deployment-stack.png)
+
+For more information, see the [Microsoft 365 Zero Trust deployment plan](/microsoft-365/security/microsoft-365-zero-trust).
 
 ## What’s in this solution
 

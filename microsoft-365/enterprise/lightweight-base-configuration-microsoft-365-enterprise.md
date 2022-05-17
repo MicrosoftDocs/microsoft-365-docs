@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 11/14/2019
 audience: ITPro
 ms.topic: article
@@ -48,7 +48,7 @@ Use the resulting environment to test the features and functionality of [Microso
 
 ## Phase 1: Create your Microsoft 365 E5 subscription
 
-We start with an Microsoft 365 E5 trial subscription and then add the Microsoft 365 E5 subscription to it.
+We start with a Microsoft 365 E5 trial subscription and then add the Microsoft 365 E5 subscription to it.
 
 >[!NOTE]
 >We recommend that you create a trial subscription of Office 365 so that your test environment has a separate Azure AD tenant from any paid subscriptions you currently have. This separation means that you can add and remove users and groups in the test tenant without affecting your production subscriptions.
@@ -56,17 +56,17 @@ We start with an Microsoft 365 E5 trial subscription and then add the Microsoft 
 To start your Microsoft 365 E5 trial subscription, you first need a fictitious company name and a new Microsoft account.
   
 1. We recommend that you use a variant of the company name Contoso for your company name, which is a fictitious company used in Microsoft sample content, but it isn't required. Record your fictitious company name here: ![Line.](../media/Common-Images/TableLine.png)
-    
-2. To sign up for a new Microsoft account, go to [https://outlook.com](https://outlook.com) and create an account with a new email account and address. You will use this account to sign up for Office 365.
-    
+
+2. To sign up for a new Microsoft account, go to [https://outlook.com](https://outlook.com) and create an account with a new email account and address. You'll use this account to sign up for Office 365.
+
     - Record the first and last name of your new account here: ![Line.](../media/Common-Images/TableLine.png)
-    
+
     - Record the new email account address here: ![Line.](../media/Common-Images/TableLine.png)@outlook.com
-    
+
 ### Sign up for an Office 365 E5 trial subscription
 
 1. In your browser, go to [https://aka.ms/e5trial](https://aka.ms/e5trial).
-    
+
 2. In step 1 of the **Thank you for choosing Office 365 E5** page, enter your new email account address.
 3. In step 2 of the trail subscription process, enter the requested information, and then perform the verification.
 4. In step 3, enter an organization name and then an account name that will be the global admin for the subscription.
@@ -78,10 +78,10 @@ To start your Microsoft 365 E5 trial subscription, you first need a fictitious c
 8. In Office 365 E5 Setup, select **Continue using *your organization*.onmicrosoft.com for email and signing in**, and then select **Exit and continue later**.
 
 You should see the Microsoft 365 admin center.
-    
+
 ## Phase 2: Configure your Office 365 trial subscription
 
-In this phase, you configure your subscription with additional users and assign them Office 365 E5 licenses.
+In this phase, you configure your subscription with other users and assign them Office 365 E5 licenses.
   
 To connect to your subscription with the Azure Active Directory PowerShell for Graph module from your computer, use the instructions in [Connect to Microsoft 365 with PowerShell](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
     
@@ -108,6 +108,7 @@ for($i=2;$i -le 4; $i++) {
     Set-AzureADUserLicense -ObjectId $userObjectID -AssignedLicenses $LicensesToAssign
 }
 ```
+
 > [!NOTE]
 > The use of a common password here is for automation and ease of configuration for a test environment. Obviously, this is highly discouraged for production subscriptions. 
 
@@ -116,34 +117,34 @@ for($i=2;$i -le 4; $i++) {
 If you haven't already recorded these values, record them now:
   
 - Global administrator name: ![Line.](../media/Common-Images/TableLine.png).onmicrosoft.com (from step 6 of Phase 1)
-    
+
     Also record the password for this account in a secure location.
-    
+
 - Your trial subscription organization name: ![Line.](../media/Common-Images/TableLine.png) (from step 4 of Phase 1)
-    
-- To list the accounts for User 2, User 3, User 4, and User 5, run the following command from the Windows Azure Active Directory Module for Windows PowerShell prompt:
-    
+
+- To list the accounts for User 2, User 3, User 4, and User 5, run the following command from the Azure Active Directory Module for Windows PowerShell prompt:
+
   ```powershell
   Get-AzureADUser | Sort UserPrincipalName | Select UserPrincipalName
   ```
 
     Record the account names here:
-    
+
   - User 2 account name: user2@![Line.](../media/Common-Images/TableLine.png).onmicrosoft.com
-    
+
   - User 3 account name: user3@![Line.](../media/Common-Images/TableLine.png).onmicrosoft.com
-    
+
   - User 4 account name: user4@![Line.](../media/Common-Images/TableLine.png).onmicrosoft.com
-    
+
   - User 5 account name: user5@![Line.](../media/Common-Images/TableLine.png).onmicrosoft.com
-    
+
     Also record the common password for these accounts in a secure location.
-   
+
 ### Using an Office 365 test environment
 
-If you need only an Office 365 test environment, you do not need to read the rest of this article.
+If you need only an Office 365 test environment, you don't need to read the rest of this article.
 
-For additional Test Lab Guides that apply to both Office 365 and Microsoft 365, see [Microsoft 365 for enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md).
+For other Test Lab Guides that apply to both Office 365 and Microsoft 365, see [Microsoft 365 for enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md).
   
 ## Phase 3: Add a Microsoft 365 E5 trial subscription
 
@@ -193,15 +194,21 @@ In this phase, you create a standalone computer running Windows 10 Enterprise as
   
 ### Physical computer
 
-On a personal computer, install Windows 10 Enterprise. You can download the Windows 10 Enterprise trial [here](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise).
-  
+On a personal computer, install Windows 10 Enterprise. You can download an evaluation version of Windows 10 Enterprise.
+
+> [!NOTE]
+> The Microsoft Evaluation Center is temporarily unavailable. To access this download, see [Accessing trials and kits for Windows (Eval Center workaround)](https://techcommunity.microsoft.com/t5/windows-11/accessing-trials-and-kits-for-windows-eval-center-workaround/m-p/3361125).<!-- 6049663 -->
+
 ### Virtual machine
 
-Use the hypervisor of your choice to create a virtual machine, and then install Windows 10 Enterprise on it. You can download the Windows 10 Enterprise trial [here](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise).
-  
+Use the hypervisor of your choice to create a virtual machine, and then install Windows 10 Enterprise on it. You can download an evaluation version of Windows 10 Enterprise.
+
+> [!NOTE]
+> The Microsoft Evaluation Center is temporarily unavailable. To access this download, see [Accessing trials and kits for Windows (Eval Center workaround)](https://techcommunity.microsoft.com/t5/windows-11/accessing-trials-and-kits-for-windows-eval-center-workaround/m-p/3361125).<!-- 6049663 -->
+
 ### Virtual machine in Azure
 
-To create a Windows 10 virtual machine in Microsoft Azure, ***you must have a Visual Studio-based subscription***, which has access to the image for Windows 10 Enterprise. Other types of Azure subscriptions, such as trial and paid subscriptions, do not have access to this image. For the latest information, see [Use Windows client in Azure for dev/test scenarios](/azure/virtual-machines/windows/client-images).
+To create a Windows 10 virtual machine in Microsoft Azure, ***you must have a Visual Studio-based subscription***, which has access to the image for Windows 10 Enterprise. Other types of Azure subscriptions, such as trial and paid subscriptions, don't have access to this image. For the latest information, see [Use Windows client in Azure for dev/test scenarios](/azure/virtual-machines/windows/client-images).
   
 > [!NOTE]
 > The following command sets use the latest version of Azure PowerShell. See [Get started with Azure PowerShell cmdlets](/powershell/azureps-cmdlets-docs/). These command sets build a Windows 10 Enterprise virtual machine named WIN10 and all of its required infrastructure, including a resource group, a storage account, and a virtual network. If you are already familiar with Azure infrastructure services, adapt these instructions to suit your currently deployed infrastructure.
@@ -241,7 +248,7 @@ $locName="<location name, such as West US>"
 New-AzResourceGroup -Name $rgName -Location $locName
 ```
 
-Next, create a new virtual network and the WIN10 virtual machine with these commands. When prompted, provide the name and password of the local administrator account for WIN10 and store these in a secure location.
+Next, create a new virtual network and the WIN10 virtual machine with these commands. When prompted, provide the name and password of the local administrator account for WIN10 and store this information in a secure location.
   
 ```powershell
 $corpnetSubnet=New-AzVirtualNetworkSubnetConfig -Name Corpnet -AddressPrefix 10.0.0.0/24
@@ -273,47 +280,46 @@ After the physical or virtual machine with Windows 10 Enterprise is created, sig
 Next, join the WIN10 computer to the Azure AD tenant of your Microsoft 365 E5 subscription.
   
 1. On the desktop of the WIN10 computer, select **Start > Settings > Accounts > Access work or school > Connect**.
-    
+
 2. In the **Set up a work or school account** dialog box, select **Join this device to Azure Active Directory**.
-    
+
 3. In **Work or school account**, enter the global administrator account name of your Microsoft 365 E5 subscription, and then select **Next**.
-    
+
 4. In **Enter password**, enter the password for your global administrator account, and then select **Sign in**.
-    
-5. When prompted to make sure that this is your organization, select **Join**, and then select **Done**.
-    
+
+5. When prompted to make sure that this organization is yours, select **Join**, and then select **Done**.
+
 6. Close the settings window.
-    
+
 Next, install Microsoft 365 Apps for enterprise on the WIN10 computer:
   
 1. Open the Microsoft Edge browser and sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) with your global administrator account credentials.
-    
+
 2. On the **Microsoft Office Home** tab, select **Install Office**.
-    
+
 3. When prompted with what to do, select **Run**, and then select **Yes** for **User Account Control**.
-    
+
 4. Wait for Office to complete its installation. When you see **You're all set!**, select **Close** twice.
-    
+
 Your resulting environment looks like this:
 
 ![Phase 5 of the Microsoft 3656 Enterprise test environment.](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
 
-This includes the WIN10 computer that has:
+This environment includes the WIN10 computer that has:
 
 - Joined the Azure AD tenant of your Microsoft 365 E5 subscription.
 - Enrolled as an Azure AD device in Microsoft Intune (EMS).
 - Microsoft 365 Apps for enterprise installed.
   
-You are now ready to experiment with additional features of [Microsoft 365 for enterprise](https://www.microsoft.com/microsoft-365/enterprise).
+You're now ready to experiment with more features of [Microsoft 365 for enterprise](https://www.microsoft.com/microsoft-365/enterprise).
   
 ## Next steps
 
-Explore these additional sets of Test Lab Guides:
+Explore these other sets of Test Lab Guides:
   
 - [Identity](m365-enterprise-test-lab-guides.md#identity)
 - [Mobile device management](m365-enterprise-test-lab-guides.md#mobile-device-management)
 - [Information protection](m365-enterprise-test-lab-guides.md#information-protection)
-   
 
 ## See also
 

@@ -34,13 +34,23 @@ ms.prod: m365-security
 
 If a user exceeds one of the outbound sending limits as specified in [the service limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options) or in [outbound spam policies](configure-the-outbound-spam-policy.md), the user is restricted from sending email, but they can still receive email.
 
-The user is added to the **Restricted users** page in the Microsoft 365 Defender portal. When they try to send email, the message is returned in a non-delivery report (also known as an NDR or bounce messages) with the error code [5.1.8](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-1-8-in-exchange-online) and the following text:
+The user is added to the **Restricted users** page in the Microsoft 365 Defender portal. When they try to send email, the message is returned in a non-delivery report (also known as an NDR or bounce message) with the error code [5.1.8](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-1-8-in-exchange-online) and the following text:
 
 > "Your message couldn't be delivered because you weren't recognized as a valid sender. The most common reason for this is that
 > your email address is suspected of sending spam and it's no longer allowed to send email.  Contact  your email admin for
 > assistance. Remote Server returned '550 5.1.8 Access denied, bad outbound sender."
 
-Admins can remove users from the Restricted users page in the Microsoft 365 Defender or in Exchange Online PowerShell.
+Admins can remove users from the **Restricted users** page in the Microsoft 365 Defender or in Exchange Online PowerShell.
+
+## Learn more on Restricted entities
+
+A restricted entity is an entity that has been blocked from sending email because either it has been potentially compromised, or it has exceeded sending limit.
+
+There are 2 types of restricted entities: 
+
+- **Restricted user**: Learn about why a user can be restricted and how to handle restricted users (this article).  
+
+- **Restricted connector**: For more information about why a connector can be restricted and how to handle restricted connectors, see [Remove blocked connectors from the Restricted entities portal](remove-blocked-connectors.md). 
 
 ## What do you need to know before you begin?
 
@@ -90,9 +100,9 @@ The default alert policy named **User restricted from sending email** will autom
 > [!IMPORTANT]
 > For alerts to work, audit log search must to be turned on. For more information, see [Turn the audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md).
 
-1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Policies & rules** \> **Alert policy**.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Policies & rules** \> **Alert policy**. To go directly to the **Alert policy** page, use <https://security.microsoft.com/alertpolicies>.
 
-2. On the **Alert policy** page, find and select the alert named **User restricted from sending email**. You can sort the policies by name, or use the **Search box** to find the policy.
+2. On the **Alert policy** page, find and select the alert named **User restricted from sending email**. You can sort the policies by name, or use the **Search** box to find the policy.
 
 3. In the **User restricted from sending email** flyout that appears, verify or configure the following settings:
    - **Status**: Verify the alert is turned on ![Toggle on.](../../media/scc-toggle-on.png).
