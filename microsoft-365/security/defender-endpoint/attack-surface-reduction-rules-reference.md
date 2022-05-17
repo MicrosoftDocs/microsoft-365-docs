@@ -194,7 +194,7 @@ The **Block abuse of exploited vulnerable signed drivers** rule does not block a
 <!--The above link is the 'only link' that exists for having drivers examined. The 'en-us' component is required to make the link work. Any alterations to this link will result in a 404.
 -->
 
-Intune Name: `Block abuse of exploited vulnerable signed drivers` (not yet available)
+Intune Name: `Block abuse of exploited vulnerable signed drivers`
 
 Configuration Manager name: Not yet available
   
