@@ -43,6 +43,9 @@ In Microsoft 365 organizations with mailboxes in Exchange Online or on-premises 
 
 - For more information about reporting messages to Microsoft, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 
+Watch this short video to learn how you can use Microsoft Defender for Office 365 to easily investigate user submissions to determine the contents of a message, and respond to the submission by applying the appropriate remediation action. 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBHof]
+
 ### Turn off the built-in reporting experience
 
 We don't recommend the built-in reporting experience in Outlook because it can't use the [user submission policy](./user-submission.md). We recommend using the Report Message add-in or the Report Phishing add-in instead.
