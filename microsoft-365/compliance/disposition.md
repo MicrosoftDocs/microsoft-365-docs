@@ -117,19 +117,19 @@ The following diagram shows the basic workflow for a disposition review (single-
 
 Triggering a disposition review at the end of the retention period is a configuration option that's available only with a retention label. Disposition review is not available for a retention policy. For more information about these two retention solutions, see [Learn about retention policies and retention labels](retention.md).
 
-From the **Define retention settings** page for a retention label:
+From the **Choose what happens after the retention period** page for a retention label:
 
 ![Retention settings for a label.](../media/disposition-review-option.png)
  
-After you select this **Trigger a disposition review** option, on the next page of the configuration, you specify how many consecutive stages of disposition you want and the disposition reviewers for each stage:
+After you select this **Start a disposition review** option, select **+ Create stages and assign reviewers**. On the next page of the configuration, you'll specify how many consecutive stages of disposition you want and the disposition reviewers for each stage:
 
 ![Specifying disposition reviewers.](../media/disposition-reviewers.png) 
 
-Select **Add a stage**, and name your stage for identification purposes. Then specify the reviewers for that stage.
+Select **+ Add a stage**, and name your stage for identification purposes. Then specify the reviewers for that stage.
 
-For the reviewers, specify a user or a mail-enabled security group. Microsoft 365 groups ([formerly Office 365 groups](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) are not supported for this option.
+For the reviewers, specify up to 10 individual users or mail-enabled security groups. Microsoft 365 groups ([formerly Office 365 groups](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) are not supported for this option.
 
-If you need more than one person to review an item at the end of its retention period, select **Add a stage** again and repeat the configuration process for the number of stages that you need, with a maximum of five stages. 
+If you need more than one person to review an item at the end of its retention period, select **Add another stage** and repeat the configuration process for the number of stages that you need, with a maximum of five stages. 
 
 Within each individual stage of disposition, any of the users you specify for that stage are authorized to take the next action for the item at the end of its retention period. These users can also add other users to their disposition review stage.
 
