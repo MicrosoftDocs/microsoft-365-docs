@@ -7346,11 +7346,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/admin/security-and-compliance/increase-threat-protection.md",
-      "redirect_url": "/microsoft-365/business-premium/m365bp-security-overview",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "microsoft-365/admin/misc/microsoft-365-business-faqs.yml",
       "redirect_url": "/microsoft-365/business-premium/microsoft-365-business-faqs",
       "redirect_document_id": false
