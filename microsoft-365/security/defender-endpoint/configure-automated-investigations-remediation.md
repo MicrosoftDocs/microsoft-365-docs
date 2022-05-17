@@ -14,13 +14,10 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: how-to
-ms.date: 01/27/2021
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ---
 
 # Configure automated investigation and remediation capabilities in Microsoft Defender for Endpoint
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -39,7 +36,7 @@ To configure automated investigation and remediation:
 
 1. As a global administrator or security administrator, go to the Microsoft 365 Defender portal (<https://security.microsoft.com>) and sign in.
 2. In the navigation pane, choose **Settings**.
-3. In the **General** section, select **Advanced features**.
+3. Select **Endpoints**, then select **Advanced features**.
 4. Turn on both **Automated Investigation** and **Automatically resolve alerts**.
 
 ## Set up device groups
