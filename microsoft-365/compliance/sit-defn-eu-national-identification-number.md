@@ -51,4 +51,4 @@ These entities are in the EU National Identification Number and are sensitive in
 - [Slovakia](sit-defn-slovakia-personal-number.md)
 - [Slovenia](sit-defn-slovenia-unique-master-citizen-number.md)
 - [Spain](sit-defn-spain-dni.md)
-- [U.K.](#uk-national-insurance-number-nino)
+- [U.K.](sit-defn-uk-national-insurance-number.md)

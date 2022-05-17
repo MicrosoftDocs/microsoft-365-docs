@@ -862,6 +862,32 @@
                 href: sit-defn-switzerland-physical-addresses.md
               - name: Switzerland SSN AHV number
                 href: sit-defn-switzerland-ssn-ahv-number.md
+              - name: Taiwan national identification number
+                href: sit-defn-taiwan-national-identification-number.md
+              - name: Taiwan passport number
+                href: sit-defn-taiwan-passport-number.md
+              - name: Taiwan-resident certificate (ARC/TARC) number
+                href: sit-defn-taiwan-resident-certificate-number.md
+              - name: Thai population identification code
+                href: sit-defn-thai-population-identification-code.md
+              - name: Turkey national identification number
+                href: sit-defn-turkey-national-identification-number.md
+              - name: Turkey physical addresses
+                href: sit-defn-turkey-physical-addresses.md
+              - name: Types of medication
+                href: sit-defn-types-of-medication.md
+              - name: U.K. drivers license number
+                href: sit-defn-uk-drivers-license-number.md
+              - name: U.K. electoral roll number
+                href: sit-defn-uk-electoral-roll-number.md
+              - name: U.K. national health service number
+                href: sit-defn-uk-national-health-service-number.md
+              - name: U.K. national insurance number (NINO)
+                href: sit-defn-uk-national-insurance-number.md
+              - name: U.K. physical addresses
+                href: sit-defn-uk-physical-addresses.md
+              - name: U.K. Unique Taxpayer Reference Number
+                href: sit-defn-uk-unique-taxpayer-reference-number.md
           - name: Sensitive information type functions
             href: sit-functions.md
           - name: Custom sensitive information type filters reference
