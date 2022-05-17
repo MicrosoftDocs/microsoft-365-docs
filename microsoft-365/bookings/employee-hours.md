@@ -1,5 +1,5 @@
 ---
-title: "Employee working hours in Microsoft Bookings"
+title: "Employee working hours - Microsoft Bookings"
 ms.author: kwekua
 author: kwekuako
 manager: scotv

@@ -1,5 +1,5 @@
 ---
-title: "Get Access to Microsoft Bookings"
+title: "Get access to Microsoft Bookings"
 ms.author: kwekua
 author: kwekuako
 manager: scotv

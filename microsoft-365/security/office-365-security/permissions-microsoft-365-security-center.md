@@ -38,7 +38,7 @@ The Microsoft 365 Defender portal at <https://security.microsoft.com> supports d
 To manage permissions in the Microsoft 365 Defender portal, go to **Permissions & roles** or <https://security.microsoft.com/securitypermissions>. You need to be a **global administrator** or a member of the **Organization Management** role group in the Microsoft 365 Defender portal. Specifically, the **Role Management** role allows users to view, create, and modify role groups in the Microsoft 365 Defender portal, and by default, that role is assigned only to the **Organization Management** role group.
 
 > [!NOTE]
-> For information about permissions in the Microsoft 365 compliance center, see [Permissions in the Microsoft 365 compliance center](../../compliance/microsoft-365-compliance-center-permissions.md).
+> For information about permissions in the Microsoft Purview compliance portal, see [Permissions in the Microsoft Purview compliance portal](../../compliance/microsoft-365-compliance-center-permissions.md).
 
 ## Relationship of members, roles, and role groups
 
@@ -58,7 +58,7 @@ The following types of roles and role groups are available in on the **Permissio
 
 - **Azure AD roles**: You can view the roles and assigned users, but you can't manage them directly in the Microsoft 365 Defender portal. Azure AD roles are central roles that assign permissions for **all** Microsoft 365 services.
 
-- **Email & collaboration roles**: These are the same role groups that are available in the Security & Compliance Center, but you can manage them directly in the Microsoft 365 Defender portal. The permissions that you assign here are specific to the Microsoft 365 Defender portal, the Microsoft 365 compliance center, and the Security & Compliance Center, and don't cover all of the permissions that are needed in other Microsoft 365 workloads.
+- **Email & collaboration roles**: These are the same role groups that are available in the Security & Compliance Center, but you can manage them directly in the Microsoft 365 Defender portal. The permissions that you assign here are specific to the Microsoft 365 Defender portal, the Microsoft Purview compliance portal, and the Security & Compliance Center, and don't cover all of the permissions that are needed in other Microsoft 365 workloads.
 
 :::image type="content" source="../../media/m365-sc-permissions-and-roles-page.png" alt-text="The Permissions & roles page in the Microsoft 365 Defender portal" lightbox="../../media/m365-sc-permissions-and-roles-page.png":::
 

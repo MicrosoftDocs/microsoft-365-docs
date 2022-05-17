@@ -119,7 +119,7 @@ Document understanding models support *all* of the Latin-based languages, includ
 - Italian
 - Spanish
 
-## See Also
+## See also
 
 [Create a classifier](create-a-classifier.md)
 

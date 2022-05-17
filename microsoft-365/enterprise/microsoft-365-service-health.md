@@ -2,7 +2,7 @@
 title: "Microsoft 365 service health status"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 04/19/2020
 audience: Admin
 ms.topic: conceptual

@@ -171,7 +171,7 @@ If you have duplicate entities and want to extract only one value or a certain n
 
 6. If you want to delete a refinement rule on an extractor, select the extractor from which you want to remove the rule, select **Refine extracted info**, and then select **Delete**.
 
-## See Also
+## See also
 
 [Create a classifier](create-a-classifier.md)
 

@@ -27,7 +27,7 @@ MSPs must be enrolled in the Cloud Solution Provider (CSP) program as an Indirec
 In addition, each MSP customer tenant must qualify for Lighthouse by meeting the following requirements:
 
 - Must have delegated access set up for the Managed Service Provider (MSP) to be able to manage the customer tenant*
-- Must have at least one Microsoft 365 Business Premium, Microsoft 365 E3, or Windows 365 Business license
+- Must have at least one Microsoft 365 Business Premium, Microsoft 365 E3, Windows 365 Business, or Microsoft Defender for Business license
 - Must have no more than 1000 licensed users
 
 *Delegated Admin Privileges (DAP) is required to onboard customers to Lighthouse. We recommend also establishing Granular Delegated Admin Privileges (GDAP) with your customers to enable more secure delegated access. While DAP and GDAP coexist, GDAP will take precedence for customers where both models are in place. Soon, customers with just GDAP (and no DAP) will be able to onboard to Lighthouse.
@@ -57,7 +57,7 @@ Microsoft Defender Antivirus is part of the Windows operating system and is enab
 ## Related content
 
 [Configure Microsoft 365 Lighthouse portal security](m365-lighthouse-configure-portal-security.md) (article)\
-[Microsoft 365 Lighthouse Device compliance page overview](m365-lighthouse-device-compliance-page-overview.md) (article)\
-[Microsoft 365 Lighthouse Users page overview](m365-lighthouse-users-page-overview.md) (article)\
-[Microsoft 365 Lighthouse Threat management page overview](m365-lighthouse-threat-management-page-overview.md) (article)\
+[Overview of the Device compliance page in Microsoft 365 Lighthouse](m365-lighthouse-device-compliance-page-overview.md) (article)\
+[Overview of the Users page in Microsoft 365 Lighthouse](m365-lighthouse-users-page-overview.md) (article)\
+[Overview of the Threat management page in Microsoft 365 Lighthouse](m365-lighthouse-threat-management-page-overview.md) (article)\
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)

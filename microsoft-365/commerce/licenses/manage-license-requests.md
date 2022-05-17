@@ -19,7 +19,7 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid: MET150
 description: "Learn how to review and approve or deny license requests from users for your Microsoft 365 for business subscription."
-ms.date: 06/07/2021
+ms.date: 04/22/2022
 ---
 
 # Manage license requests

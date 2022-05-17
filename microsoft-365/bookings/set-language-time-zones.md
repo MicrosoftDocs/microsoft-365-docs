@@ -1,5 +1,5 @@
 ---
-title: "Set language and time zones in Microsoft Bookings"
+title: "Set Bookings language and time zones"
 ms.author: kwekua
 author: kwekuako
 manager: scotv

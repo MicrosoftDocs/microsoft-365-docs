@@ -21,6 +21,8 @@ ms.custom: seo-marvel-apr2020
 
 # Export source data for exact data match based sensitive information type
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 
 The sensitive data table is a text file containing rows of values against which you will be comparing content in your documents to identify sensitive data. These values might be personally identifiable information, product records, or other sensitive data in text form that you want to detect in content and take protective actions on.
 
