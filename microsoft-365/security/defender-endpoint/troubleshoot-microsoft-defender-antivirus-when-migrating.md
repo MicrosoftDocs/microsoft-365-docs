@@ -10,7 +10,6 @@ ms.topic: article
 author: martyav
 ms.author: v-maave
 ms.custom: nextgen
-ms.date: 10/19/2018
 ms.reviewer:
 manager: dansimp
 ms.technology: mde
