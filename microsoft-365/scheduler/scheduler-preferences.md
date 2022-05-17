@@ -32,7 +32,7 @@ If the organizer does not specify the desired meeting duration in the request, S
 
 3. The default duration setting is located under **Calendar** **Options**.
 
-![Outlook Calendar options dialog in Windows. Configure work time, default duration, and shorten meetings options for Scheduler to use as defaults.](file:///C:/Users/shivb/AppData/Local/Temp/msohtmlclip1/01/clip_image002.jpg)
+![Outlook Calendar options dialog in Windows. Configure work time, default duration, and shorten meetings options for Scheduler to use as defaults.](../media/OutlookPreferences.png)
 
 Avoid back-to-back meetings
 ---------------------------
