@@ -4,7 +4,7 @@
   - name: Get started
     items:
     - name: Overview
-      href: flw-landing-page.md
+      href: flw-overview.md
     - name: Licensing options for frontline workers
       href: flw-licensing-options.md
   - name: Deploy

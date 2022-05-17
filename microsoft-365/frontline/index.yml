@@ -24,7 +24,7 @@ productDirectory:
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://office/media/icons/get-started-blue.svg
       links:
-        - url: flw-landing-page.md
+        - url: flw-overview.md
           text: Overview
         - url: flw-licensing-options.md
           text: Licensing options for frontline workers
