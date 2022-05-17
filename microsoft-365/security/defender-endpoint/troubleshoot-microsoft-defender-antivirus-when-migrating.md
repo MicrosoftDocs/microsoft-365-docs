@@ -135,7 +135,7 @@ Another feature, known as [limited periodic scanning](limited-periodic-scanning-
 > Limited periodic scanning is not recommended in enterprise environments. The detection, management and reporting capabilities available when running Microsoft Defender Antivirus in this mode are reduced as compared to active mode.
 
 > [!TIP]
-> If you’re looking for Antivirus related information for other platforms, see:
+> If you're looking for Antivirus related information for other platforms, see:
 > - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
 > - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
 > - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
