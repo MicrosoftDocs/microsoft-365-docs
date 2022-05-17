@@ -46,7 +46,10 @@
 
 ## [Configure and onboard devices]()
 ### [Onboard devices and configure Microsoft Defender for Endpoint capabilities](onboard-configure.md)
-
+### [Onboarding Windows Client and Windows Server](onboarding-windows-client-server.md)
+#### [Defender for Endpoint onboarding Windows Client](defender-endpoint-onboard-windows-client.md)
+#### [Defender for Endpoint onboarding Windows Server]()
+#### [Defender for Endpoint onboarding previous versions of Windows]()
 
 ### [Microsoft Defender for Endpoint on Windows and Windows Server]()
 #### [Onboarding tools and methods for Windows endpoints](configure-endpoints.md)
