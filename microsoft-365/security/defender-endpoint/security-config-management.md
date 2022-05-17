@@ -39,7 +39,8 @@ Security Management for Microsoft Defender for Endpoint is a capability for devi
 
 For more information on Security Configuration Management, including prerequisites, supported platforms and more, see [Manage Microsoft Defender for Endpoint on devices with Microsoft Endpoint Manager](/mem/intune/protect/mde-security-integration).
 
-
+Watch this video to learn how to use how to use Microsoft Endpoint Manager to manage security configuration for Microsoft Defender for Endpoint.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4qLVq]
 
 [!INCLUDE [Prerequisites](../../includes/security-config-mgt-prerequisites.md)]
 

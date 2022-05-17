@@ -48,6 +48,9 @@ Network protection extends the protection in [Web protection](web-protection-ove
 > [!NOTE]
 > The Defender for Endpoint demo site at demo.wd.microsoft.com is deprecated and will be removed in the future.
 
+Watch this video to learn how Network protection helps reduce the attack surface of your devices from phishing scams, exploits, and other malicious content.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4r4yZ]
+
 ## Requirements for network protection
 
 Network protection requires Windows 10 Pro or Enterprise, and Microsoft Defender Antivirus real-time protection.

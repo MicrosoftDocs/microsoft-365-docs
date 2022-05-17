@@ -78,6 +78,9 @@ GenerateAlert|String|Whether the alert should be generated or not. Possible Valu
 > Classless Inter-Domain Routing (CIDR) notation for IP addresses is not supported.
 For more information, see [Microsoft Defender for Endpoint alert categories are now aligned with MITRE ATT&CK!](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-atp-alert-categories-are-now-aligned-with/ba-p/732748).
 
+Watch this video to learn how Microsoft Defender for Endpoint provides multiple ways to add and manage Indicators of compromise (IoCs). 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4qLVw]
+
 ## See also
 
 - [Create indicators](manage-indicators.md)

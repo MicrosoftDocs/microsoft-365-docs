@@ -43,9 +43,8 @@ Unknown and unmanaged devices introduce significant risks to your network - whet
 - Onboard unmanaged endpoints to the service, increasing the security visibility on them.
 - Reduce the attack surface by identifying and assessing vulnerabilities, and detecting configuration gaps.
 
-Watch this video for a quick overview of how device discovery:
-
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWORdQ]
+Watch this video for a quick overview of how to assess and onboard unmanaged devices that Microsoft Defender for Endpoint discovered.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4RwQz]
 
 In conjunction with this capability, a security recommendation to onboard devices to Microsoft Defender for Endpoint is available as part of the existing threat and vulnerability management experience.
 
