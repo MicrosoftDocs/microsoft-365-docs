@@ -23,18 +23,23 @@ ms.custom: intro-overview
 
 Microsoft Defender for Business is a new endpoint security solution that was designed especially for the small and medium-sized business (up to 300 employees). With this endpoint security solution, your company's devices are better protected from ransomware, malware, phishing, and other threats. 
 
-Watch the following video to learn more about Defender for Business: <br/><br/>
-
-> [!VIDEO https://www.youtube.com/embed/umhUNzMqZto]
-
 This article describes what's included in Defender for Business, with links to learn more about these features and capabilities.
-
-:::image type="content" source="media/mdb-offering-overview.png" alt-text="Microsoft Defender for Business features and capabilities.":::
 
 >
 > **Got a minute?**
 > Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about security</a>. We'd love to hear from you!
 >
+
+## Video: Enterprise-grade protection for small and medium-sized businesses
+
+Watch the following video to learn more about Defender for Business: <br/><br/>
+
+> [!VIDEO https://www.youtube.com/embed/umhUNzMqZto]
+
+
+:::image type="content" source="media/mdb-offering-overview.png" alt-text="Microsoft Defender for Business features and capabilities.":::
+
+## What's included with Defender for Business
 
 With Defender for Business, you can help protect the devices and data your business uses with:
 
@@ -70,5 +75,6 @@ With Defender for Business, you can help protect the devices and data your busin
 
 ## Next steps
 
+- [Try the interactive guide: Get started with Defender for Business](https://aka.ms/MDB-GetStartedGuide)
 - [Learn more about the simplified configuration process in Microsoft Defender for Business](mdb-simplified-configuration.md)
 - [Find out how to get Microsoft Defender for Business](get-defender-business.md)
