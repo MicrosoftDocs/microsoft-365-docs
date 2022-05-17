@@ -1,5 +1,3 @@
-#Preferences
-
 Scheduling Preferences
 ======================
 
