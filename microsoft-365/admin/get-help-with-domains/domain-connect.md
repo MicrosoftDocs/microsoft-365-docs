@@ -24,7 +24,7 @@ ms.assetid: ec6f4bd8-5996-4505-ba68-afaf8a141fb9
 description: "Learn how to work with Domain Connect enabled registrars and add your domain to Microsoft 365."
 ---
 
-# Using Domain Connect
+# Using Domain Connect to add your domain to Microsoft 365
 
  **[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for.
 

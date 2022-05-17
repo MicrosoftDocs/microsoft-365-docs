@@ -18,7 +18,7 @@ ms.custom:
 - AdminTemplateSet
 search.appverid:
 - MET150
-description: "Basic Mobility and Security can help you secure and manage your mobile devices."
+description: "Basic Mobility and Security helps you secure and manage mobile devices with policies that control access to organization Microsoft 365 email and documents."
 ---
 
 # Capabilities of Basic Mobility and Security
