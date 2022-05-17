@@ -134,7 +134,7 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
 
      To turn on a setting, select the check box. To turn it off, clear the check box.
 
-     <sup>\*</sup> This setting is available only if you selected **Enable spoof intelligence** on the previous page. For more information, see [Unauthenticated sender](set-up-anti-phishing-policies.md#unauthenticated-sender).
+     <sup>\*</sup> This setting is available only if you selected **Enable spoof intelligence** on the previous page. For more information, see [Unauthenticated sender indicators](set-up-anti-phishing-policies.md#unauthenticated-sender-indicators).
 
    When you're finished, click **Next**.
 

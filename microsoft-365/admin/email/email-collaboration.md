@@ -28,16 +28,13 @@ ms.assetid: eb3e840f-ed60-4461-81f5-12381c132b89
 description: "Learn about the various types of groups and how to use them with the various collaboration features of Microsoft 365."
 ---
 
-# Email collaboration
+# Email collaboration in Microsoft 365
 
 Microsoft 365 encourages collaboration through Groups in Outlook, distribution lists (also called distribution groups), shared mailboxes, and public folders. Each of these options has a different purpose, user experience, and feature set. What to use depends on what the user needs to do and which tools your organization provides.
   
 ## Summary of collaboration options
-<a name="BKMK_SUMMARYOFCOLLABORATIONOPTIONS"> </a>
 
 This table explains the various collaboration options available to you.
-  
-
 
 |**Collaboration tool**|**Description**|
 |:-----|:-----|
@@ -47,7 +44,6 @@ This table explains the various collaboration options available to you.
 |Public folder  <br/> |Designed for shared access, public folders provide an easy and effective way to collect, organize, and share information with other people in your organization. Public folders organize content in a deep hierarchy that's easy to browse and always visible in the Outlook folder view. A public folder can be mail-enabled and added as a member of the distribution group. Email sent to the distribution group is automatically added to the public folder for archiving or later reference. Public folders also provide simple document sharing when you don't have a SharePoint Online subscription.  <br/> |
    
 ## Which collaboration tool to use?
-<a name="BKMK_SUMMARYOFCOLLABORATIONOPTIONS"> </a>
 
 The following table gives you a quick glance at the various types of groups and explains when and how to use them with the various collaboration features.
   
@@ -61,8 +57,7 @@ The following table gives you a quick glance at the various types of groups and 
 |**Email arrives in user's personal Inbox?** <br/> |No. Users can subscribe to a group and then forward all Group messages to their inbox  <br/> |Yes. Email arrives in the inbox of all distribution group members.  <br/> |No. Email arrives in the Inbox of the shared mailbox.  <br/> |No. Email arrives in the public folder.  <br/> |
 |**Supported clients** <br/> | Outlook 2016  <br/>  Outlook 2013 (forward after subscribing)  <br/>  Outlook Web App  <br/>  Outlook 2010 (forward after subscribing)  <br/>  Outlook 2007 (forward after subscribing)  <br/> | Outlook 2016  <br/>  Outlook 2013  <br/>  Outlook Web App  <br/>  Outlook 2010  <br/>  Outlook 2007  <br/> | Outlook 2016  <br/>  Outlook 2013  <br/>  Outlook Web App  <br/>  Outlook 2010  <br/>  Outlook 2007  <br/> | Outlook 2016  <br/>  Outlook 2013  <br/>  Outlook Web App  <br/>  Outlook 2010  <br/>  Outlook 2007  <br/> |
 
-  
-## Related articles
+## Related content
 
 [Manage distribution groups](/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
     
