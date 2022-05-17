@@ -44,11 +44,13 @@ In the illustration:
 - Identities, devices, data, apps, network, and other infrastructure components are all configured with appropriate security. Policies that are configured for each of these components are coordinated with your overall Zero Trust strategy. For example, device policies determine the criteria for healthy devices and conditional access policies require healthy devices for access to specific apps and data.
 - Threat protection and intelligence monitors the environment, surfaces current risks, and takes automated action to remediate attacks.
 
+For more information about Zero Trust, see Microsoft's [_**Zero Trust Guidance Center**_](/security/zero-trust).
+
 <!---
 For more information about this architecture, including deployment objectives for your entire digital estate, see [Zero Trust Rapid Modernization Plan (RaMP)](https://review.docs.microsoft.com/security/zero-trust/zero-trust-ramp-overview?branch=zt-content-prototype).
 -->
 
-For more information about Zero Trust, see Microsoft's [_**Zero Trust Guidance Center**_](/security/zero-trust).
+
 
 ## Deploying Zero Trust for Microsoft 365
 
@@ -63,6 +65,9 @@ In this illustration:
 - Zero Trust begins with a foundation of identity and device protection.
 - Threat protection capabilities are built on top of this foundation to provide real-time monitoring and remediation of security threats.
 - Information protection and governance provide sophisticated controls targeted at specific types of data to protect your most valuable information and to help you comply with compliance standards, including protecting personal information.
+
+
+This article assumes you have already configured cloud identity. If you need guidance for this objective, see [**Deploy your identity infrastructure for Microsoft 365**](/microsoft-365/enterprise/deploy-identity-solution-overview?view=o365-worldwide).
 
 ## Step 1. Configure Zero Trust identity and device access protection — starting-point policies
 
