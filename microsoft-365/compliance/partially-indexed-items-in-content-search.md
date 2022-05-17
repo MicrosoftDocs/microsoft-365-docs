@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
-ms.date: 
+ms.date: 05/13/2022
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -31,7 +31,7 @@ An Microsoft Purview eDiscovery search that you run from the Microsoft Purview c
   
 - The file type is unrecognized or unsupported for indexing.
 
-- Messages have an attached file that can't be opened, such as image files; this is the most common cause of partially indexed email items.
+- Messages have an attached file that can't be opened; this is the most common cause of partially indexed email items.
 
 - The file type is supported for indexing but an indexing error occurred for a specific file.
 
@@ -157,7 +157,10 @@ For a list of indexing limits for SharePoint documents, see [Search limits for S
 
 - Although a file type is supported for indexing and is indexed, there can be indexing or search errors that will cause a file to be returned as a partially indexed item. For example, searching a large Excel file might be partially successful (because the first 4 MB are indexed), but then fails because the file size limit is exceeded. In this case, it's possible that the same file is returned with the search results and as a partially indexed item.
 
-- Files that are encrypted with [Microsoft encryption technologies](encryption.md) and are attached to an email message that matches the criteria of a search can be previewed and will be decrypted when exported. At this time, files that are encrypted with Microsoft encryption technologies (and stored in SharePoint or OneDrive for Business) are partially indexed.
+- Files that are encrypted with [Microsoft encryption technologies](encryption.md) and are attached to an email message that matches the criteria of a search can be previewed and will be decrypted when exported. At this time, files that are encrypted with Microsoft encryption technologies (and stored in SharePoint or OneDrive for Business) are partially indexed. 
+
+   > [!NOTE]
+   > Files encrypted using sensitivity labels will not be decrypted.
 
 - Email messages encrypted with S/MIME are partially indexed. This includes encrypted messages with or without file attachments.
 

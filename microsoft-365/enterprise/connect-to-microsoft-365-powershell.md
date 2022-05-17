@@ -200,6 +200,13 @@ You will need an active Azure subscription for your organization that is tied to
 
 For more information, see [Azure Cloud Shell](/azure/cloud-shell/overview).
 
+
+## Get started with the Microsoft Graph PowerShell SDK
+
+You can use the Microsoft Graph PowerShell SDK to access all Microsoft Graph APIs.
+
+For more information, see [Get started with the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/get-started?view=graph-powershell-beta)
+
 ## See also
 
 - [Manage Microsoft 365 with PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)

@@ -68,7 +68,7 @@ This article describes how to configure entries in the Tenant Allow/Block List i
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- You need to be assigned permissions in the Microsoft 365 Defender portal before you can do the procedures in this article:
+- You need to be assigned permissions in Exchange Online before you can do the procedures in this article:
   - **Senders, URLs and files**:
     - To add and remove values from the Tenant Allow/Block List, you need to be a member of
       - **Organization Management** or **Security Administrator** role group (**Security admin role**)
@@ -85,7 +85,6 @@ This article describes how to configure entries in the Tenant Allow/Block List i
   > [!NOTE]
   >
   > - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions *and* permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
-  >
   > - The **View-Only Organization Management** role group in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) also gives read-only access to the feature.
 
 ## Configure the Tenant Allow/Block List
@@ -106,7 +105,7 @@ To manage all allows and blocks, see [Add blocks in the Tenant Allow/Block List]
 
 ## View entries in the Tenant Allow/Block List
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Tenant Allow/Block Lists** in the **Rules** section. To go directly to the **Tenant Allow/Block Lists** page, use <https://security.microsoft.com/tenantAllowBlockList>.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Tenant Allow/Block Lists** in the **Rules** section. Or, to go directly to the **Tenant Allow/Block Lists** page, use <https://security.microsoft.com/tenantAllowBlockList>.
 
 2. Select the tab you want. The columns that are available depend on the tab you selected:
 
@@ -117,6 +116,11 @@ To manage all allows and blocks, see [Add blocks in the Tenant Allow/Block List]
      - **Last updated**
      - **Remove on**
      - **Notes**
+   - **Spoofing**
+     - **Spoofed user**
+     - **Sending infrastructure**
+     - **Spoof type**: The value **Internal** or **External**.
+     - **Action**: The value **Block** or **Allow**.
    - **URLs**:
      - **Value**: The URL.
      - **Action**: The value **Allow** or **Block**.
@@ -131,20 +135,15 @@ To manage all allows and blocks, see [Add blocks in the Tenant Allow/Block List]
      - **Last updated**
      - **Remove on**
      - **Notes**
-   - **Spoofing**
-     - **Spoofed user**
-     - **Sending infrastructure**
-     - **Spoof type**: The value **Internal** or **External**.
-     - **Action**: The value **Block** or **Allow**.
 
    You can click on a column heading to sort in ascending or descending order.
 
    You can click **Group** to group the results. The values that are available depend on the tab you selected:
 
    - **Senders**: You can group the results by **Action**.
+   - **Spoofing**: You can group the results by **Action** or **Spoof type**.
    - **URLs**: You can group the results by **Action**.
    - **Files**: You can group the results by **Action**.
-   - **Spoofing**: You can group the results by **Action** or **Spoof type**.
 
    Click **Search**, enter all or part of a value, and then press ENTER to find a specific value. When you're finished, click ![Clear search icon.](../../media/m365-cc-sc-close-icon.png) **Clear search**.
 
@@ -155,6 +154,9 @@ To manage all allows and blocks, see [Add blocks in the Tenant Allow/Block List]
      - **Never expire**
      - **Last updated date**
      - **Remove on**
+   - **Spoofing**
+     - **Action**
+     - **Spoof type**
    - **URLs**
      - **Action**
      - **Never expire**
@@ -165,9 +167,6 @@ To manage all allows and blocks, see [Add blocks in the Tenant Allow/Block List]
      - **Never expire**
      - **Last updated**
      - **Remove on**
-   - **Spoofing**
-     - **Action**
-     - **Spoof type**
 
    When you're finished, click **Apply**. To clear existing filters, click **Filter**, and in the **Filter** flyout that appears, click **Clear filters**.
 
@@ -244,7 +243,7 @@ For detailed syntax and parameter information, see [Get-TenantAllowBlockListSpoo
 
 - Wildcards (*) are allowed in the following scenarios:
 
-  - A left wildcard must be followed by a period to specify a subdomain.
+  - A left wildcard must be followed by a period to specify a subdomain. (only applicable for blocks)
 
     For example, `*.contoso.com` is allowed; `*contoso.com` is not allowed.
 
@@ -261,8 +260,6 @@ For detailed syntax and parameter information, see [Get-TenantAllowBlockListSpoo
   - A left tilde implies a domain and all subdomains.
 
     For example `~contoso.com` includes `contoso.com` and `*.contoso.com`.
-
-- URL entries that contain protocols (for example, `http://`, `https://`, or `ftp://`) will fail, because URL entries apply to all protocols.
 
 - A username or password isn't supported or required.
 
@@ -281,7 +278,6 @@ Valid URL entries and their results are described in the following sections.
 - **Allow match**: contoso.com
 
 - **Allow not matched**:
-
   - abc-contoso.com
   - contoso.com/a
   - payroll.contoso.com
@@ -291,7 +287,6 @@ Valid URL entries and their results are described in the following sections.
   - www.contoso.com/q=a@contoso.com
 
 - **Block match**:
-
   - contoso.com
   - contoso.com/a
   - payroll.contoso.com
@@ -304,15 +299,16 @@ Valid URL entries and their results are described in the following sections.
 
 #### Scenario: Left wildcard (subdomain)
 
+> [!NOTE]
+> This scenario applies only to blocks.
+
 **Entry**: `*.contoso.com`
 
-- **Allow match** and **Block match**:
-
+- **Block match**:
   - www.contoso.com
   - xyz.abc.contoso.com
 
-- **Allow not matched** and **Block not matched**:
-
+- **Block not matched**:
   - 123contoso.com
   - contoso.com
   - test.com/contoso.com
@@ -323,13 +319,11 @@ Valid URL entries and their results are described in the following sections.
 **Entry**: `contoso.com/a/*`
 
 - **Allow match** and **Block match**:
-
   - contoso.com/a/b
   - contoso.com/a/b/c
   - contoso.com/a/?q=joe@t.com
 
 - **Allow not matched** and **Block not matched**:
-
   - contoso.com
   - contoso.com/a
   - www.contoso.com
@@ -340,13 +334,11 @@ Valid URL entries and their results are described in the following sections.
 **Entry**: `~contoso.com`
 
 - **Allow match** and **Block match**:
-
   - contoso.com
   - www.contoso.com
   - xyz.abc.contoso.com
 
 - **Allow not matched** and **Block not matched**:
-
   - 123contoso.com
   - contoso.com/abc
   - www.contoso.com/abc
@@ -356,7 +348,6 @@ Valid URL entries and their results are described in the following sections.
 **Entry**: `contoso.com/*`
 
 - **Allow match** and **Block match**:
-
   - contoso.com/?q=whatever@fabrikam.com
   - contoso.com/a
   - contoso.com/a/b/c
@@ -369,17 +360,19 @@ Valid URL entries and their results are described in the following sections.
 
 #### Scenario: Left wildcard subdomain and right wildcard suffix
 
+> [!NOTE]
+> This scenario applies only to blocks.
+
 **Entry**: `*.contoso.com/*`
 
-- **Allow match** and **Block match**:
-
+- **Block match**:
   - abc.contoso.com/ab
   - abc.xyz.contoso.com/a/b/c
   - www.contoso.com/a
   - www.contoso.com/b/a/c
   - xyz.contoso.com/ba
 
-- **Allow not matched** and **Block not matched**: contoso.com/b
+- **Block not matched**: contoso.com/b
 
 #### Scenario: Left and right tilde
 

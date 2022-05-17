@@ -64,7 +64,7 @@ If the tool indicates a mismatch in number of columns it might be due to the pre
 
 **If you find single or double quote characters surrounding full values**: you can leave them as they are.
 
-**If you find single quote characters or commas inside a value**: for example the person's name Tom O'Neil or the city 's‑Gravenhage which starts with an apostrophe character, you will need to modify the data export process used to generate the sensitive information table to surround such columns with double quotes.
+**If you find single quote characters or commas inside a value**: for example the person's name Tom O'Neil or the city 's-Gravenhage which starts with an apostrophe character, you will need to modify the data export process used to generate the sensitive information table to surround such columns with double quotes.
 
 **If double quote characters are found inside values**, it might be preferable to use the Tab-delimited format for the table which is less susceptible to such issues.
 
@@ -226,6 +226,9 @@ EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to 
    ```dos
    EdmUploadAgent.exe /GetSession /DataStoreName <DataStoreName>
    ```
+
+> [!NOTE]
+> To automate the hash and upload process after you have created it the first time, see [Refresh your exact data match sensitive information source table file](sit-use-exact-data-refresh-data.md).
 
 ## Next Step
 

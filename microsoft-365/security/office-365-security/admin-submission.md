@@ -41,6 +41,9 @@ When you submit an email message for analysis, you will get:
 
 For other ways to submit email messages, URLs, and attachments to Microsoft, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 
+Watch this short video to learn how to use admin submissions in Microsoft Defender for Office 365 to submit messages to Microsoft for evaluation. 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBLPn]
+
 ## What do you need to know before you begin?
 
 - You open the Microsoft 365 Defender portal at <https://security.microsoft.com/>. To go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
@@ -273,7 +276,7 @@ If you've deployed the [Report Message add-in](enable-the-report-message-add-in.
    - To export the entries, click **Export**. In the dialog that appears, save the .csv file.
 
 > [!NOTE]
-> If organizations are configured to send user reported messages to the custom mailbox only, reported messages will not be sent for rescan and the results in **User reported messages** will always be empty.
+> If organizations are configured to send user reported messages to the custom mailbox only, reported messages will appear in **User reported messages** but their results will always be empty (as they would not have been rescanned).
 
 ### Undo user submissions
 
