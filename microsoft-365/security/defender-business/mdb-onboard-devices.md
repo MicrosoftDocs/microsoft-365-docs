@@ -64,7 +64,7 @@ You can use a local script to onboard Windows client devices. When you run the o
 
 7. Type the location of the script file. For example, if you copied the file to the Desktop folder, you would type `%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd`, and then press the Enter key (or select **OK**).
 
-8. After the script runs, proceed to [Run a detection test](#running-a-detection-test-on-a-windows-client).
+8. After the script runs, proceed to [Run a detection test](#running-a-detection-test-on-a-windows-10-or-11-device).
 
 ### Group Policy for Windows 10 and 11
 
@@ -313,6 +313,9 @@ You can onboard an instance of Linux Server to Defender for Business by using on
 - **Ansible**. See [Deploy Microsoft Defender for Endpoint on Linux with Ansible](../defender-endpoint/linux-install-with-ansible.md).
 - **Chef**. See [Deploy Defender for Endpoint on Linux with Chef](../defender-endpoint/linux-deploy-defender-for-endpoint-with-chef.md).
 - **Puppet**. See [Deploy Microsoft Defender for Endpoint on Linux with Puppet](../defender-endpoint/linux-install-with-puppet.md).
+
+> [!NOTE]
+> The process of onboarding an instance of Linux Server to Defender for Business is the same as for onboarding to [Microsoft Defender for Endpoint on Linux](../defender-endpoint/microsoft-defender-endpoint-linux.md).
 
 ## View a list of onboarded devices
 
