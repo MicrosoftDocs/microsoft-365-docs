@@ -1,5 +1,5 @@
 ---
-title: "Set up online meetings"
+title: "Set up online meetings in Microsoft Business Premium"
 f1.keywords:
 - NOCSH
 ms.author: twerner
@@ -24,7 +24,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Set up online meetings with Microsoft Teams."
+description: "Set up online meetings with Microsoft Teams in Microsoft Business Premium."
 ---
 
 # Set up meetings
@@ -59,5 +59,3 @@ Learn more about meeting in Microsoft Teams:
 ## Next objective
 
 After this mission objective is accomplished, learn to securely [share files and videos](share-files-and-videos.md)
-
-

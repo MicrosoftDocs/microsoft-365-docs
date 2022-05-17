@@ -1,5 +1,5 @@
 ---
-title: "Install Office apps on all devices"
+title: "Install Office apps on all devices in Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
 ms.author: v-kcirillo
@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "How to install Office on all devices."
+description: "How to install Office on all devices in Microsoft 365 Business Premium."
 ---
 
 # Install Office apps on all devices
 
-Okay, you've set up Microsoft 365, and now you can require users to install individual Office applications on their Mac, PC, or mobile devices. This is something your users should do to be part of the front lines and help protect the org against attack.
+Okay, you've set up Microsoft 365 Busines Premium, and now you can require users to install individual Office applications on their Mac, PC, or mobile devices. This is something your users should do to be part of the front lines and help protect the org against attack.
   
 ## Watch: Install Office apps
 
@@ -45,7 +45,7 @@ Have them perform the following:
 5. Get the Windows app, and then select  **Run**. Teams displays a prompt when installation is complete.
 
 
-## Set up mobile devices for Microsoft 365 for business users
+## Set up mobile devices for Microsoft 365 Business Premium users
 
 Use the following instructions to install Office on an iPhone or an Android phone. After you follow these steps, your work files created in Office apps will be protected by Microsoft 365 for business.
 
