@@ -29,7 +29,7 @@ With Microsoft Defender for Business, you have several options to choose from fo
 
 ## What to do
 
-1. Select the tab for your operating system: **Windows 10 and 11**, **Windows Server**, **macOS**, **Linux**, or **mobile**.
+1. Select the tab for your device: **Windows 10 and 11**, **Windows Server**, **macOS**, **Linux Server**, or **mobile**.
 2. View your onboarding options and follow the guidance on the selected tab.
 3. Proceed to your next steps.
 
@@ -150,10 +150,11 @@ To view the list of devices that are onboarded to Defender for Business, in the 
 > The ability to onboard Windows Server endpoints is currently in preview. Make sure that you meet the following requirements before onboarding a Windows Server endpoint:
 > - You have a server license for each server instance in either Defender for Business (standalone) or Microsoft 365 Business Premium.
 > - You have turned on preview features. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), go to **Settings** > **Endpoints** > **General** > **Advanced features** > **Preview features**.
-
-You can onboard an instance of Windows Server to Defender for Business by using a local script.
+> - You have turned on the enforcement scope for Windows Server. Go to **Settings** > **Endpoints** > **Configuration management** > **Enforcement scope**. Select **Use MDE to enforce security configuration settings from MEM**, and then select the option for Windows Server. Then choose **Save**.
 
 ### Local script for Windows Server
+
+You can onboard an instance of Windows Server to Defender for Business by using a local script.
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.
 
