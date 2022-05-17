@@ -284,7 +284,7 @@ The following table lists and describes the system account environment variables
 
 You can retrieve the items in the exclusion list using one of the following methods:
 
-- [Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
+- [Intune](/mem/intune/fundamentals/deployment-guide-intune-setup)
 - [Microsoft Endpoint Configuration Manager](/configmgr/protect/deploy-use/endpoint-antimalware-policies)
 - [MpCmdRun](command-line-arguments-microsoft-defender-antivirus.md)
 - [PowerShell](/powershell/module/defender)
