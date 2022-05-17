@@ -264,6 +264,29 @@ The user must be accessing the website through Microsoft Edge.
 - You must configure a DLP policy with the appropriate conditions and actions.
 - Running the latest version of Microsoft Defender Antivirus.
  
+### Supported syntax for designating websites in a website group
+
+You can use a flexible syntax to include and exclude domains, subdomains, websites, and subsites in your website groups.
+
+- use `*` as a wildcard to specify any domain or a subdomain
+- use `/` as a terminator at the end of a URL to scope to that specific site only and no subsites.
+
+When you add a URL without a terminating `/`, that URL is scoped to that site and all subsites.
+
+Here are some examples:
+
+
+|URL that you add to the website group  |URL will match  | URL will not match|
+|---------|---------|---------|
+|contoso.com  | \*://contoso.com </br> \*://contoso.com/ </br> \*://contoso.com/allsubsites1 </br> \*://contoso.com/allsubsites1/allsubsites2|        \*://allsubdomains.contoso.com </br> \*://allsubdomains.contoso.com.au    |
+|contoso.com/     |\*://contoso.com </br> \*://contoso.com/         |\*://contoso.com/allsubsites1 </br> \*://contoso.com/allsubsites1/allsubsites2 </br> \*://allsubdomains.contoso.com </br> \*://allsubdomains.contoso.com/au   |
+|*.contoso.com   | \*://contoso.com </br> \*://contoso.com/allsubsites </br> \*://contoso.com/allsubsites1/allsubsites2 </br> \*://allsubdomains.contoso.com </br> \*://allsubdomains.contoso.com/allsubsites </br> \*://allsubdomains1/allsubdomains2/contoso.com/allsubsites1/allsubsites2         | \*://allsubdomains.contoso.com.au|
+|Row4     |         |
+|Row5     |         |
+|Row6     |         |
+|Row7     |         |
+
+
 
 1. In the Microsoft Purview compliance portal open **Data loss prevention** > **Endpoint DLP settings** > **Browser and domain restrictions to sensitive data** > **Sensitive service domains**.
 1. Select **Add a new group of sensitive service domains**.
