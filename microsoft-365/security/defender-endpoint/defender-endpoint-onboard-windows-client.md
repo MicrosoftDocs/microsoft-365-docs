@@ -25,8 +25,8 @@ ms.technology: mde
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-- [Endpoint data loss prevention (DLP)](/microsoft-365/compliance/endpoint-dlp-learn-about?view=o365-worldwide)
-- [Insider risk management](/microsoft-365/compliance/insider-risk-management?view=o365-worldwide)
+- [Endpoint data loss prevention (DLP)](/microsoft-365/compliance/endpoint-dlp-learn-about)
+- [Insider risk management](/microsoft-365/compliance/insider-risk-management)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https:%2F%2Faka.ms%2FMDEp2OpenTrial)
 
