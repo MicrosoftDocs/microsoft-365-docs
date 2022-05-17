@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: micurn, nicholak
+ms.reviewer: shegu, nicholak
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -21,7 +21,7 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: "The applications and services that you receive depend on which Microsoft 365 product you purchased, such as Microsoft 365 Apps for business."
-ms.date: 07/01/2020
+ms.date: 05/12/2022
 ---
 
 # Understand subscriptions and licenses in Microsoft 365 for business

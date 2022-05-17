@@ -2,7 +2,7 @@
 title: "SharePoint Server 2007 end of support roadmap"
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: scotv
 ms.date: 01/28/2019
 audience: ITPro
 ms.topic: conceptual

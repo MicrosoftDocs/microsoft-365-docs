@@ -18,7 +18,7 @@ ms.custom:
 - AdminTemplateSet
 search.appverid:
 - MET150
-description: "Basic Mobility and Security can help you secure and manage your mobile devices."
+description: "Basic Mobility and Security helps you secure and manage mobile devices with policies that control access to organization Microsoft 365 email and documents."
 ---
 
 # Capabilities of Basic Mobility and Security
@@ -225,7 +225,7 @@ You can set these additional policy settings by using PowerShell cmdlets:
 
 ## Remotely wipe a mobile device
 
-If a device is lost or stolen, you can remove sensitive organizational data and help prevent access to your Microsoft 365 organization resources by doing a wipe from Security & Compliance center > **Data loss prevention** > **Device management**. You can do a selective wipe to remove only organizational data or a full wipe to delete all information from a device and restore it to its factory settings.
+If a device is lost or stolen, you can remove sensitive organizational data and help prevent access to your Microsoft 365 organization resources by doing a wipe from **Microsoft Purview compliance portal** > **Data loss prevention** > **Device management**. You can do a selective wipe to remove only organizational data or a full wipe to delete all information from a device and restore it to its factory settings.
 
 For more information, see [Wipe a mobile device in Basic Mobility and Security](wipe-mobile-device.md).
 

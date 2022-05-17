@@ -1,6 +1,6 @@
 ---
 title: Queues insight in the Mail flow dashboard
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: dansimp
 author: dansimp
@@ -39,7 +39,6 @@ If the queued email volume exceeds the pre-defined threshold (the default value 
 - An alert is displayed in **Recent alerts** the Alerts dashboard in the [Security & Compliance Center](https://protection.office.com) (**Alerts** \> **Dashboard** or <https://protection.office.com/alertsdashboard>).
 
   :::image type="content" source="../../media/mfi-queued-messages-alert.png" alt-text="The Recent alerts in the Alerts dashboard in the Security & Compliance Center" lightbox="../../media/mfi-queued-messages-alert.png":::
-
 
 - Admins will receive an email notification based on the configuration of the default alert policy named **Messages have been delayed**. To configure the notification settings for this alert, see the next section.
 

@@ -1,5 +1,5 @@
 ---
-title: "Refresh your exact data matchsensitive information source table file"
+title: "Refresh your exact data match sensitive information source table file"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -20,6 +20,8 @@ ms.custom: seo-marvel-apr2020
 ---
 
 # Refresh your exact data match sensitive information source table file 
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 You can refresh your sensitive information database up to 5 times in every 24 hour period. You'll have to rehash and upload your sensitive information source table.
 

@@ -2,7 +2,7 @@
 title: "Deploy Microsoft 365 Directory Synchronization in Microsoft Azure"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 11/05/2018
 audience: ITPro
 ms.topic: conceptual

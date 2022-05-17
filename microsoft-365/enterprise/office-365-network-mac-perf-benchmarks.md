@@ -2,7 +2,7 @@
 title: "Office 365 network score benchmarks and comparisons"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 10/22/2019
 audience: Admin
 ms.topic: conceptual

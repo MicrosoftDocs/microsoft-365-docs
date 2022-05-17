@@ -1,5 +1,5 @@
 ---
-title: "What's new in Microsoft Compliance Manager"
+title: "What's new in Microsoft Purview Compliance Manager"
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -19,7 +19,9 @@ search.appverid:
 description: "Find out what’s new in Compliance Manger and what’s to come. Read about updated assessments, new assessment templates, new actions, and more."
 ---
 
-# What's new in Microsoft Compliance Manager
+# What's new in Microsoft Purview Compliance Manager
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **In this article:** Learn about recent updates in Compliance Manager.
 

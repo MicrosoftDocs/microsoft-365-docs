@@ -19,7 +19,8 @@ ms.collection: m365-security-compliance
 
 # Manage the sources for Microsoft Defender Antivirus protection updates
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+> [!IMPORTANT]
+> Customers who applied the March 2022 Microsoft Defender engine update (**1.1.19100.5**) might have encountered high resource utilization (CPU and/or memory). Microsoft has released an update (**1.1.19200.5**) that resolves the bugs introduced in the earlier version. Customers are recommended to update to this new engine build of Antivirus Engine (**1.1.19200.5**). To ensure any performance issues are fully fixed, it is recommended to reboot machines after applying update. For more information, see [Monthly platform and engine versions](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions).
 
 **Applies to:**
 
@@ -72,7 +73,7 @@ To ensure the best level of protection, Microsoft Update allows for rapid releas
 
 > [!NOTE]
 > Security intelligence updates contain engine updates and are released on a monthly cadence.
-Security intelligence updates are also delivered multiple times a day, but this package doesn’t contain an engine.
+Security intelligence updates are also delivered multiple times a day, but this package doesn't contain an engine.
 
 
 > [!IMPORTANT]
@@ -282,7 +283,7 @@ Set up a network file share (UNC/mapped drive) to download security intelligence
     > Do not add the x64 (or x86) folder in the path. The mpcmdrun.exe process adds it automatically.
 
 > [!TIP]
-> If you’re looking for Antivirus related information for other platforms, see:
+> If you're looking for Antivirus related information for other platforms, see:
 > - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
 > - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
 > - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

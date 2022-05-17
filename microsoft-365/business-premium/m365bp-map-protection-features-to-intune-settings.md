@@ -5,11 +5,11 @@ f1.keywords:
 ms.author: deniseb
 author: denisebmsft
 manager: scotv
-ms.date: 04/01/2022
+ms.date: 04/21/2022
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection: 
 - Adm_O365
 - M365-subscription-management 
@@ -106,4 +106,4 @@ To find the Intune setting, sign in with your Microsoft 365 Business Premium adm
 
 ## See also
 
-[Top 10 ways to secure Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)
+[Best practices for securing Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)

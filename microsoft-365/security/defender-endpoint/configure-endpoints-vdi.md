@@ -16,7 +16,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
-ms.date: 02/14/2022
+ms.date: 04/15/2022
 ms.technology: mde
 ---
 
@@ -141,8 +141,23 @@ The following steps will guide you through onboarding VDI devices and will highl
 
 With the ability to easily deploy updates to VMs running in VDIs, we've shortened this guide to focus on how you can get updates on your machines quickly and easily. You no longer need to create and seal golden images on a periodic basis, as updates are expanded into their component bits on the host server and then downloaded directly to the VM when it's turned on.
 
-For more information, follow the guidance in [Deployment guide for Microsoft Defender Antivirus in a virtual desktop infrastructure (VDI) environment](/security/defender-endpoint/deployment-vdi-microsoft-defender-antivirus).
+For more information, follow the guidance in [Deployment guide for Microsoft Defender Antivirus in a Virtual Desktop Infrastructure (VDI) environment](/microsoft-365/security/defender-endpoint/deployment-vdi-microsoft-defender-antivirus).
 
+   > [!NOTE]
+   > If you have onboarded the master image of your Non-Persistent VDI environment (SENSE service is running), then you must offboard and clear some data before putting the image back into production.
+   > 1. Ensure the sensor is stopped by running the command below in a CMD window:
+   >  ```console
+   >  sc query sense
+   >  ```
+   > 2. Run the below commands using PsExec.exe (which can be downloaded from https://download.sysinternals.com/files/PSTools.zip)
+   >
+   >  ```console
+   >  PsExec.exe -s cmd.exe
+   >  cd "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Cyber"
+   >  del *.* /f /s /q
+   >  REG DELETE "HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection" /v senseGuid /f
+   >  exit
+   >  ```
 
 ## Related topics
 - [Onboard Windows devices using Group Policy](configure-endpoints-gp.md)

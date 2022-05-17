@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Compliance Manager premium assessments trial playbook"
+title: "Microsoft Purview Compliance Manager premium assessments trial playbook"
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -14,12 +14,14 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid: 
 - MOE150
 - MET150
-description: "Microsoft Compliance Manager premium assessments trial playbook."
+description: "Microsoft Purview Compliance Manager premium assessments trial playbook."
 ---
 
-# Trial playbook: Microsoft Compliance Manager premium assessments
+# Trial playbook: Microsoft Purview Compliance Manager premium assessments
 
-Welcome to the Microsoft Compliance Manager premium assessment trial playbook.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Welcome to the Microsoft Purview Compliance Manager premium assessment trial playbook.
 
 This playbook will help you make the most of your 90-day free trial by teaching you how to use the comprehensive set of premium assessment templates (add-on).
 
@@ -56,7 +58,7 @@ Compliance Manager also offers 300+ regulatory or premium templates that can be 
 
 Trial licenses allow you to use 25 premium templates for 90 days. You will be able to choose from a list of 300+ premium templates. You are not required to select all 25 templates at once. Once selected, the licensed templates are available for your use within 4 hours of obtaining your trial license.
 
-There are two ways to enable the Premium Assessment Add-on trial: through the Compliance Manager dashboard or through the Microsoft 365 Compliance trial.
+There are two ways to enable the Premium Assessment Add-on trial: through the Compliance Manager dashboard or through the Microsoft Purview trial.
 
 ### Enable trial via the Compliance Manager dashboard
 

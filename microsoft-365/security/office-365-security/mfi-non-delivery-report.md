@@ -1,6 +1,6 @@
 ---
 title: Non-delivery report in the Mail flow dashboard
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: dansimp
 author: dansimp
@@ -9,8 +9,8 @@ audience: ITPro
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.localizationpriority: medium
-ms.assetid: 
-ms.custom: 
+ms.assetid:
+ms.custom:
   - seo-marvel-apr2020
 description: Admins can learn how to use the Non-delivery details report in the Mail flow dashboard in the Security & Compliance Center to monitor the most frequently encountered error codes in non-delivery reports (also known as NDRs or bounce messages) from senders in your organization.
 ms.technology: mdo
@@ -59,7 +59,6 @@ When you select a row in the table, a flyout appears with the following informat
 - **Non-delivery report code**: You can click on the link to find for more information about the causes and solutions for the specific error code.
 - **Count**
 - **Sample messages**: You can click **View sample messages** to see the [message trace](message-trace-scc.md) results for a sample of the affected messages.
-
 
 :::image type="content" source="../../media/mfi-non-delivery-report-details-flyout.png" alt-text="The Details flyout after selecting a row in Details table view in the Non-delivery report" lightbox="../../media/mfi-non-delivery-report-details-flyout.png":::
 

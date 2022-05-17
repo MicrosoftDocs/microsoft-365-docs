@@ -1,5 +1,5 @@
 ---
-title: "Enter your business information"
+title: "Enter your Bookings business information"
 ms.author: kwekua
 author: kwekuako
 manager: scotv

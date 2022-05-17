@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Lighthouse Threat management page overview"
+title: "Overview of the Threat management page in Microsoft 365 Lighthouse"
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -18,13 +18,13 @@ search.appverid: MET150
 description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn about the Threat management page."
 ---
 
-# Microsoft 365 Lighthouse Threat management page overview 
+# Overview of the Threat management page in Microsoft 365 Lighthouse 
 
 **Applies to:**
 
-- Windows 10
+- Windows
 
-Microsoft Defender Antivirus protects tenants, users, and devices from software threats including viruses, malware, and spyware. It's robust, ongoing protection that's built into Windows 10 and included with Microsoft 365 Business Premium and Microsoft&nbsp;365&nbsp;E3.  
+Microsoft Defender Antivirus protects tenants, users, and devices from software threats including viruses, malware, and spyware. It's robust, ongoing protection that's built into Windows.  
   
 To access the Threat management page in Microsoft 365 Lighthouse, select **Threat Management** in the left navigation pane to view your customer tenants' security posture against threats. You'll see tenants, users, and devices that require your attention and recommendations that will help you reduce risk.  
   
