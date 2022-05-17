@@ -29,21 +29,21 @@ With Microsoft Defender for Business, you have several options to choose from fo
 
 ## What to do
 
-1. Select the tab for your operating system: **Windows clients**, **macOS computers**, or **mobile devices**.
+1. Select the tab for your operating system: **Windows 10 and 11**, **Windows Server**, **macOS**, **Linux**, or **mobile**.
 2. View your onboarding options and follow the guidance on the selected tab.
 3. Proceed to your next steps.
 
-## [**Windows clients**](#tab/WindowsClientDevices)
+## [**Windows 10 and 11**](#tab/Windows10and11)
 
-## Windows clients
+## Windows 10 and 11
 
 Choose one of the following options to onboard Windows client devices to Defender for Business:
 
-- [Local script](#local-script-for-windows-clients) (for onboarding devices manually in the Microsoft 365 Defender portal)
-- [Group Policy](#group-policy-for-windows-clients) (if you're already using Group Policy in your organization)
-- [Microsoft Intune](#microsoft-intune-for-windows-clients) (included in [Microsoft 365 Business Premium](../../business-premium/index.md))
+- [Local script](#local-script-for-windows-10-and-11) (for onboarding devices manually in the Microsoft 365 Defender portal)
+- [Group Policy](#group-policy-for-windows-10-and-11) (if you're already using Group Policy in your organization)
+- [Microsoft Intune](#microsoft-intune-for-windows-10-and-11) (included in [Microsoft 365 Business Premium](../../business-premium/index.md))
 
-### Local script for Windows clients
+### Local script for Windows 10 and 11
 
 You can use a local script to onboard Windows client devices. When you run the onboarding script on a device, it creates a trust with Azure Active Directory (if that trust doesn't already exist), enrolls the device in Microsoft Intune (if it isn't already enrolled), and then onboards the device to Defender for Business. The local script method works even if you don't currently have Intune. We recommend onboarding up to 10 devices at a time using this method.
 
@@ -54,7 +54,7 @@ You can use a local script to onboard Windows client devices. When you run the o
 
 2. In the navigation pane, choose **Settings** > **Endpoints**, and then under **Device management**, choose **Onboarding**.
 
-3. Select an operating system, such as **Windows 10 and 11**, and then, in the **Deployment method** section, choose **Local script**. 
+3. Select **Windows 10 and 11**, and then, in the **Deployment method** section, choose **Local script**. 
 
 4. Select **Download onboarding package**. We recommend saving the onboarding package to a removable drive.
 
@@ -66,11 +66,11 @@ You can use a local script to onboard Windows client devices. When you run the o
 
 8. After the script runs, proceed to [Run a detection test](#running-a-detection-test-on-a-windows-client).
 
-### Group Policy for Windows clients
+### Group Policy for Windows 10 and 11
 
 If you prefer to use Group Policy to onboard Windows clients, follow the guidance in [Onboard Windows devices using Group Policy](../defender-endpoint/configure-endpoints-gp.md). This article describes the steps for onboarding to Microsoft Defender for Endpoint; however, the steps for onboarding to Defender for Business are similar.
 
-### Microsoft Intune for Windows clients
+### Microsoft Intune for Windows 10 and 11
 
 If your subscription includes Intune, you can onboard Windows clients and other devices in the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). For example, if you have [Microsoft 365 Business Premium](../../business/index.yml), you've Intune as part of your subscription.  
 
@@ -79,7 +79,7 @@ There are several methods available for enrolling devices in Intune. We recommen
 - [Enable Windows automatic enrollment](/mem/intune/enrollment/windows-enroll) for company-owned or company-managed devices
 - [Ask users to enroll their own Windows 10/11 devices in Intune](/mem/intune/user-help/enroll-windows-10-device)
 
-#### To enable automatic enrollment for Windows devices
+#### To enable automatic enrollment for Windows 10 and 11
 
 When you set up automatic enrollment, users add their work account to the device. In the background, the device registers and joins Azure Active Directory (Azure AD), and is enrolled in Intune.
 
@@ -106,7 +106,7 @@ When you set up automatic enrollment, users add their work account to the device
 > [!TIP]
 > To learn more about automatic enrollment, see [Enable Windows automatic enrollment](/mem/intune/enrollment/windows-enroll).
 
-#### To have users enroll their own Windows devices
+#### To have users enroll their own Windows 10 and 11 devices
 
 1. Watch the following video to see how enrollment works: <br/><br/>
 
@@ -116,7 +116,7 @@ When you set up automatic enrollment, users add their work account to the device
 
 3. After a device has been enrolled in Intune, you can add it to a device group. [Learn more about device groups in Microsoft Defender for Business](mdb-create-edit-device-groups.md).
 
-### Running a detection test on a Windows client
+### Running a detection test on a Windows 10 or 11 device
 
 After you've onboarded Windows devices to Defender for Business, you can run a detection test on a Windows device to make sure that everything is working correctly.
 
@@ -138,7 +138,7 @@ To view the list of devices that are onboarded to Defender for Business, in the 
 
 ## Next steps
 
-- If you have other devices to onboard, select the tab that corresponds to the operating system on the devices [(Windows clients, Windows Server, macOS, or mobile devices](#what-to-do)), and follow the guidance on that tab.
+- If you have other devices to onboard, select the tab that corresponds to the operating system on the devices [(Windows 10 and 11, Windows Server, macOS, or mobile devices](#what-to-do)), and follow the guidance on that tab.
 - If you're done onboarding devices, proceed to [Step 5: Configure your security settings and policies in Microsoft Defender for Business](mdb-configure-security-settings.md)
 - See [Get started using Microsoft Defender for Business](mdb-get-started.md).
 
