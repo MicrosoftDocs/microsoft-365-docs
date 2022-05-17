@@ -20,7 +20,7 @@ description: Learn how to find resources for Microsoft SharePoint Syntex.
 
 # Introduction to Microsoft SharePoint Syntex
 
-SharePoint Syntex is an Microsoft 365 service that helps organizations to:
+SharePoint Syntex is a Microsoft 365 service that helps organizations to:
 
 - Use advanced AI and machine teaching to amplify human experiences
 - Automate content processing
@@ -36,7 +36,7 @@ The resources on this page are designed to get you started with learning about a
 
 ## Get started
 
-The resources in this section help you learn more about the three methods of data classification and extraction used by SharePoint Syntex: document understanding, form processing, and prebuilt.
+The resources in this section help you learn more about the methods of data classification and extraction used by SharePoint Syntex. There are two custom model types—[document understanding](document-understanding-overview.md) and [form processing](form-processing-overview.md)—and a [prebuilt](prebuilt-overview.md) model type.
 
 > [!NOTE]
 > You can get started with SharePoint Syntex without buying licenses by [creating a content center from the SharePoint admin center](create-a-content-center.md). Unlicensed users can create document understanding models but can't apply them to a document library.
@@ -61,6 +61,8 @@ Learn more about how to use and implement SharePoint Syntex in your organization
 |See example scenarios to give you ideas about how you can use SharePoint Syntex in your organization |[Scenarios and use cases for SharePoint Syntex](./adoption-scenarios.md)| 
 |Set up and run a trial pilot program for SharePoint Syntex |[Run a trial](./trial-syntex.md)|
 |Learn how to use SharePoint Syntex to automate document processes |[Manage contracts using a Microsoft 365 solution](./solution-manage-contracts-in-microsoft-365.md)| 
+|Try out a customizable SharePoint site template to help manage contracts |[Use the Contracts Management site template](./use-contracts-management-site.md)| 
+|Try out an instructional Content Center site template to learn more about models |[Use the Content Center site template](./use-content-center-site.md)| 
 
 ## Set up SharePoint Syntex
 
@@ -71,6 +73,7 @@ The resources in this section help your admin in your organization to set up and
 |Set up and configure SharePoint Syntex|[Set up SharePoint Syntex](./set-up-content-understanding.md)|
 |Learn about licensing for SharePoint Syntex|[Licensing for SharePoint Syntex](./syntex-licensing.md)|
 |Learn about image tagging and how to disable|[Image tagging in SharePoint Syntex](./image-tagging.md)|
+|Use PowerShell to manage SharePoint Syntex|[Manage SharePoint Syntex with PowerShell](./powershell-syntex-intro.md)|
 
 ## Models
 
@@ -91,7 +94,7 @@ The resources in this section help your users learn how to create and configure 
 
 ## Premium services
 
-A SharePoint Syntex license gives your users premium content services that give you additional functionality in your Microsoft 365 environment. The resources in this section give you more details on these feature and how to use them.
+A SharePoint Syntex license gives your users premium content services that give you additional functionality in your Microsoft 365 environment. The resources in this section give you more details about these features and how to use them.
 
 | If you're looking for this information: | Go to this resource: |
 |:-----|:-----|

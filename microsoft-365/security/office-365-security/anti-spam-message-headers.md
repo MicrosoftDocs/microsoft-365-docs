@@ -56,8 +56,6 @@ The individual fields and values are described in the following table.
 > [!NOTE]
 > The **X-Forefront-Antispam-Report** header contains many different fields and values. Fields that aren't described in the table are used exclusively by the Microsoft anti-spam team for diagnostic purposes.
 
-****
-
 |Field|Description|
 |---|---|
 |`ARC`|The `ARC` protocol has the following fields: <ul><li>`AAR`: Records the content of the **Authentication-results** header from DMARC.</li><li>`AMS`: Includes cryptographic signatures of the message.</li><li>`AS`: Includes cryptographic signatures of the message headers. This field contains a tag of a chain validation called `"cv="`, which includes the outcome of the chain validation as **none**, **pass**, or **fail**.</li></ul>|
@@ -83,18 +81,14 @@ The individual fields and values are described in the following table.
 |`SFV:SPM`|The message was marked as spam by spam filtering.|
 |`SRV:BULK`|The message was identified as bulk email by spam filtering and the bulk complaint level (BCL) threshold. When the _MarkAsSpamBulkMail_ parameter is `On` (it's on by default), a bulk email message is marked as spam (SCL 6). For more information, see [Configure anti-spam policies](configure-your-spam-filter-policies.md).|
 |`X-CustomSpam: [ASFOption]`|The message matched an Advanced Spam Filter (ASF) setting. To see the X-header value for each ASF setting, see [Advanced Spam Filter (ASF) settings](advanced-spam-filtering-asf-options.md).|
-|
 
 ## X-Microsoft-Antispam message header fields
 
 The following table describes useful fields in the **X-Microsoft-Antispam** message header. Other fields in this header are used exclusively by the Microsoft anti-spam team for diagnostic purposes.
 
-****
-
 |Field|Description|
 |---|---|
 |`BCL`|The bulk complaint level (BCL) of the message. A higher BCL indicates a bulk mail message is more likely to generate complaints (and is therefore more likely to be spam). For more information, see [Bulk complaint level (BCL)](bulk-complaint-level-values.md).|
-|
 
 ## Authentication-results message header
 
@@ -147,8 +141,6 @@ The following list describes the text that's added to the **Authentication-Resul
 
 The following table describes the fields and possible values for each email authentication check.
 
-****
-
 |Field|Description|
 |---|---|
 |`action`|Indicates the action taken by the spam filter based on the results of the DMARC check. For example: <ul><li>**oreject** or **o.reject**: Stands for override reject. In this case Microsoft 365 uses this action when it receives a message that fails the DMARC check from a domain whose DMARC TXT record has a policy of p=reject. Instead of deleting or rejecting the message, Microsoft 365 marks the message as spam. For more information on why Microsoft 365 is configured this way, see [How Microsoft 365 handles inbound email that fails DMARC](use-dmarc-to-validate-email.md#how-microsoft-365-handles-inbound-email-that-fails-dmarc).</li><li>**pct.quarantine**: Indicates that a percentage less than 100% of messages that do not pass DMARC will be delivered anyway. This means that the message failed DMARC and the policy was set to quarantine, but the pct field was not set to 100% and the system randomly determined not to apply the DMARC action, as per the specified domain's policy.</li><li>**pct.reject**: Indicates that a percentage less than 100% of messages that do not pass DMARC will be delivered anyway. This means that the message failed DMARC and the policy was set to reject, but the pct field was not set to 100% and the system randomly determined not to apply the DMARC action, as per the specified domain's policy.</li><li>**permerror**: A permanent error occurred during DMARC evaluation, such as encountering an incorrectly formed DMARC TXT record in DNS. Attempting to resend this message isn't likely to end with a different result. Instead, you may need to contact the domain's owner in order to resolve the issue.</li><li>**temperror**: A temporary error occurred during DMARC evaluation. You may be able to request that the sender resend the message later in order to process the email properly.</li></ul>|
@@ -160,4 +152,3 @@ The following table describes the fields and possible values for each email auth
 |`reason`|The reason the composite authentication passed or failed. The value is a 3-digit code. For example: <ul><li>**000**: The message failed explicit authentication (`compauth=fail`). For example, the message received a DMARC fail with an action of quarantine or reject.</li><li>**001**: The message failed implicit authentication (`compauth=fail`). This means that the sending domain did not have email authentication records published, or if they did, they had a weaker failure policy (SPF soft fail or neutral, DMARC policy of `p=none`).</li><li>**002**: The organization has a policy for the sender/domain pair that is explicitly prohibited from sending spoofed email. This setting is manually set by an admin.</li><li>**010**: The message failed DMARC with an action of reject or quarantine, and the sending domain is one of your organization's accepted-domains (this is part of self-to-self, or intra-org, spoofing).</li><li>**1xx** or **7xx**: The message passed authentication (`compauth=pass`). The last two digits are internal codes used by Microsoft 365.</li><li>**2xx**: The message soft-passed implicit authentication (`compauth=softpass`). The last two digits are internal codes used by Microsoft 365.</li><li>**3xx**: The message was not checked for composite authentication (`compauth=none`).</li><li>**4xx** or **9xx**: The message bypassed composite authentication (`compauth=none`). The last two digits are internal codes used by Microsoft 365.</li><li>**6xx**: The message failed implicit email authentication, and the sending domain is one of your organization's accepted domains (this is part of self-to-self or intra-org spoofing).</li></ul>|
 |`smtp.mailfrom`|The domain of the `5321.MailFrom` address (also known as the MAIL FROM address, P1 sender, or envelope sender). This is the email address that's used for non-delivery reports (also known as NDRs or bounce messages).|
 |`spf`|Describes the results of the SPF check for the message. Possible values include: <ul><li>`pass (IP address)`: The SPF check for the message passed and includes the sender's IP address. The client is authorized to send or relay email on behalf of the sender's domain.</li><li>`fail (IP address)`: The SPF check for the message failed and includes the sender's IP address. This is sometimes called _hard fail_.</li><li>`softfail (reason)`: The SPF record designated the host as not being allowed to send, but is in transition.</li><li>`neutral`: The SPF record explicitly states that it does not assert whether the IP address is authorized to send.</li><li>`none`: The domain doesn't have an SPF record or the SPF record doesn't evaluate to a result.</li><li>`temperror`: A temporary error has occurred. For example, a DNS error. The same check later might succeed.</li><li>`permerror`: A permanent error has occurred. For example, the domain has a badly formatted SPF record.</li></ul>|
-|

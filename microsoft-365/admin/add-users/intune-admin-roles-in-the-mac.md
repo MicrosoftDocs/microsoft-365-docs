@@ -17,7 +17,7 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
-description: "Admin roles map to business functions and give permissions to do specific tasks in the admin center. For example, the Service admin opens support tickets with Microsoft."
+description: "The Microsoft 365 admin center lets you manage some Microsoft Intune roles, which map to business functions and give permissions to do specific tasks."
 ---
 
 # Intune admin roles in the Microsoft 365 admin center
@@ -34,7 +34,7 @@ In the Microsoft 365 admin center, you can go to **Roles**, and then select any 
 
 |Admin role     |Who should be assigned this role?  |
 |---------|---------|
-|Application manager     |   Assign the Application manager role to users who mangage the application lifecycle for mobile apps, configures policy-managed apps and views device info and configuration profiles.  |
+|Application manager     |   Assign the Application manager role to users who manage the application lifecycle for mobile apps, configure policy-managed apps, and view device info and configuration profiles.  |
 |Help desk operator     |   Assign the help desk operator role to users who assign apps and policies to users and devices. |
 |Intune role administrator    |   Assign the Intune role administrator to users who can assign Intune permissions to other admins and can manage custom and built in Intune roles.   |
 |Policy and profile manager     |   Assign the policy and profile manager role to users manage compliance policy, configuration profiles and Apple enrollment.   |

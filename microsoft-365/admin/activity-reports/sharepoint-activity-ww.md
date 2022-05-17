@@ -19,7 +19,7 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: "Get the SharePoint activity usage report to know about the activity of every SharePoint user, the number of files shared, and the storage utilization."
+description: "Get the SharePoint activity usage report to learn about SharePoint licensed user file interactions, the number of files shared, and storage utilization."
 ---
 
 # Microsoft 365 Reports in the admin center - SharePoint activity
@@ -31,7 +31,7 @@ For example, you can understand the activity of every user licensed to use Share
 ## How do I get to the to the SharePoint activity report?
 
 1. In the admin center, go to the **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> page. 
-2. From the dashboard homepage, click on the **View more** button on the SharePoint card.
+2. From the dashboard homepage, click on the **View more** button on the SharePoint card.
   
 ## Interpret the SharePoint activity report
 

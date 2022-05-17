@@ -35,9 +35,7 @@ This article outlines the process to enable and pilot Microsoft Defender for Clo
 
 Use the following steps to enable and pilot Microsoft Defender for Cloud Apps.
 
-![Steps for adding Microsoft Defender for Office to the Defender evaluation environment.](../../media/defender/m365-defender-office-eval-steps.png)
-
-
+:::image type="content" source="../../media/defender/m365-defender-office-eval-steps.png" alt-text="The steps for adding Microsoft Defender for Office to the Defender evaluation environment" lightbox="../../media/defender/m365-defender-office-eval-steps.png":::
 
 |Step  |Description  |
 |---------|---------|

@@ -2,8 +2,8 @@
 title: "Disable reports when you export Content Search results"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 12/30/2016
 audience: Admin
@@ -16,12 +16,14 @@ search.appverid:
 ms.assetid: c9b0ff0c-282b-4a44-b43f-cfc5b96557f9
 ms.custom:
 - seo-marvel-apr2020
-description: Edit the Windows Registry on your local computer to disable reports when you export the results of a Content Search from the Microsoft 365 compliance center.
+description: Edit the Windows Registry on your local computer to disable reports when you export the results of a Content Search from the Microsoft Purview compliance portal.
 ---
 
 # Disable reports when you export Content Search results
 
-When you use the eDiscovery Export tool to export the results of a Content Search in the Microsoft 365 compliance center, the tool automatically creates and exports two reports that contain additional information about the exported content. These reports are the Results.csv file and the Manifest.xml file (see the [Frequently asked questions about disabling export reports](#frequently-asked-questions-about-disabling-export-reports) section in this topic for detailed descriptions of these reports). Because these files can be very large, you can speed up the download time and save disk space by preventing these files from being exported. You can do this by changing the Windows Registry on the computer that you use to export the search results. If you want to include the reports at a later time, you can edit the registry setting. 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+When you use the eDiscovery Export tool to export the results of a Content Search in the Microsoft Purview compliance portal, the tool automatically creates and exports two reports that contain additional information about the exported content. These reports are the Results.csv file and the Manifest.xml file (see the [Frequently asked questions about disabling export reports](#frequently-asked-questions-about-disabling-export-reports) section in this topic for detailed descriptions of these reports). Because these files can be very large, you can speed up the download time and save disk space by preventing these files from being exported. You can do this by changing the Windows Registry on the computer that you use to export the search results. If you want to include the reports at a later time, you can edit the registry setting. 
   
 ## Create registry settings to disable the export reports
 
