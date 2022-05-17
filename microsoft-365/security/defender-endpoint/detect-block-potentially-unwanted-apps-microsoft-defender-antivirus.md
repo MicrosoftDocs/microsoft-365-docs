@@ -14,7 +14,6 @@ ms.reviewer: mimilone, julih
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.date: 10/18/2021
 ms.collection: m365-security-compliance
 ---
 
