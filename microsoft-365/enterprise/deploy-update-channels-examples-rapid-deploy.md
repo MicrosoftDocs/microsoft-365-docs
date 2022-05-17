@@ -4,12 +4,12 @@ author: kelleyvice-msft
 f1.keywords:
 - NOCSH
 ms.author: kvice
-manager: laurawi
+manager: scotv
 ms.date: 07/21/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - Strat_O365_Enterprise
 - M365-subscription-management

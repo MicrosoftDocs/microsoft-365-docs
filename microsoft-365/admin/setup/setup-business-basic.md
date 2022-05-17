@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
@@ -44,12 +44,6 @@ When you purchase Microsoft 365 Business Basic, you have the option of using a d
  ::: moniker range="o365-worldwide"
 
 1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a>.
 
 ::: moniker-end
 

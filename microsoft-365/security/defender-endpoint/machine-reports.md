@@ -2,15 +2,13 @@
 title: Device health and compliance report in Microsoft Defender for Endpoint
 description: Track device health state detections, antivirus status, OS platform, and Windows 10 versions using the device health and compliance report
 keywords: health state, antivirus, os platform, windows 10 version, version, health, compliance, state
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -24,16 +22,25 @@ ms.technology: mde
 
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- Microsoft Defender Antivirus 
 
-> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+**Platforms**
+- Windows
+- Mac OS
+- Linux
+- iOS
+- Android
 
-The devices status report provides high-level information about the devices in your organization. The report includes trending information showing the sensor health state, antivirus status, OS platforms, and Windows 10 versions.
+Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+The devices status report provides high-level information about the devices in your organization. The report includes trending information showing the sensor health state, antivirus status, OS platforms, and Windows 10 (and Windows 11) versions.
 
 The dashboard is structured into two sections:
 
-![Image of the device report.](images/device-reports.png)
+:::image type="content" source="images/device-reports.png" alt-text="The device report" lightbox="images/device-reports.png":::
+
 
 <br>
 
@@ -47,11 +54,11 @@ The dashboard is structured into two sections:
 
 ## Device trends
 
-By default, the device trends displays device information from the 30-day period ending in the latest full day. To gain better perspective on trends occurring in your organization, you can fine-tune the reporting period by adjusting the time period shown. To adjust the time period, select a time range from the drop-down options:
+By default, the device trends display device information from the 30-day period ending in the latest full day. To gain better perspective on trends occurring in your organization, you can fine-tune the reporting period by adjusting the time period shown. To adjust the time period, select a time range from the drop-down options:
 
 - 30 days
-- 3 months
-- 6 months
+- Three months
+- Six months
 - Custom
 
 > [!NOTE]
@@ -59,7 +66,7 @@ By default, the device trends displays device information from the 30-day period
 
 ## Device summary
 
-While the devices trends shows trending device information, the device summary shows device information scoped to the current day.
+While the devices trends show trending device information, the device summary shows device information scoped to the current day.
 
 > [!NOTE]
 > The data reflected in the summary section is scoped to 180 days prior to the current date. For example if today's date is March 27, 2019, the data on the summary section will reflect numbers starting from September 28, 2018 to March 27, 2019.
@@ -91,6 +98,16 @@ For example, to show data about Windows 10 devices with Active sensor health sta
 1. Under **Filters > Sensor health state > Active**.
 2. Then select **OS platforms > Windows 10**.
 3. Select **Apply**.
+
+> [!TIP]
+> If you're looking for Antivirus related information for other platforms, see:
+> - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
+> - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
+> - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md)
+> - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
+> - [Configure Defender for Endpoint on Android features](android-configure.md)
+> - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
 
 ## Related topic
 

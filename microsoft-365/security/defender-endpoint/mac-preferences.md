@@ -2,20 +2,17 @@
 title: Set preferences for Microsoft Defender for Endpoint on Mac
 description: Configure Microsoft Defender for Endpoint on Mac in enterprise organizations.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, management, preferences, enterprise, intune, jamf, macos, catalina, mojave, high sierra
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
   - m365-security-compliance
-  - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
 ---
@@ -25,8 +22,9 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-
 - [Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > [!IMPORTANT]
 > This article contains instructions for how to set preferences for Microsoft Defender for Endpoint on macOS in enterprise organizations. To configure Microsoft Defender for Endpoint on macOS using the command-line interface, see [Resources](mac-resources.md#configuring-from-the-command-line).
@@ -62,9 +60,19 @@ The *antivirusEngine* section of the configuration profile is used to manage the
 |**Comments**|See the following sections for a description of the dictionary contents.|
 |||
 
-#### Enable / disable real-time protection
+#### Enforcement level for antivirus engine
 
-Specify whether to enable real-time protection, which scans files as they are accessed.
+Specifies the enforcement preference of antivirus engine. There are three values for setting enforcement level:
+
+- Real-time (`real_time`): Real-time protection (scan files as they are accessed) is enabled.
+- On-demand (`on_demand`): Files are scanned only on demand. In this:
+  - Real-time protection is turned off.
+- Passive (`passive`): Runs the antivirus engine in passive mode. In this:
+  - Real-time protection is turned off.
+  - On-demand scanning is turned on.
+  - Automatic threat remediation is turned off.
+  - Security intelligence updates are turned on.
+  - Status menu icon is hidden.
 
 <br>
 
@@ -73,12 +81,14 @@ Specify whether to enable real-time protection, which scans files as they are ac
 |Section|Value|
 |---|---|
 |**Domain**|`com.microsoft.wdav`|
-|**Key**|enableRealTimeProtection|
-|**Data type**|Boolean|
-|**Possible values**|true (default) <p> false|
+|**Key**|enforcementLevel|
+|**Data type**|String|
+|**Possible values**|real_time (default) <p> on_demand <p> passive|
+|**Comments**|Available in Microsoft Defender for Endpoint version 101.10.72 or higher.|
 |||
 
-#### Run a Scan after definitions are updated
+#### Run a scan after definitions are updated
+
 Specifies whether to start a process scan after new security intelligence updates are downloaded on the device. Enabling this setting will trigger an antivirus scan on the running processes of the device.
 
 <br>
@@ -90,19 +100,13 @@ Specifies whether to start a process scan after new security intelligence update
 |**Domain**|`com.microsoft.wdav`|
 |**Key**|scanAfterDefinitionUpdate|
 |**Data type**|Boolean|
-|**Possible values**|false (default) <p> true|
+|**Possible values**|true (default) <p> false|
 |**Comments**|Available in Microsoft Defender for Endpoint version 101.41.10 or higher.|
 |||
 
-#### Enable / disable passive mode
+#### Scan archives (on-demand antivirus scans only)
 
-Specify whether the antivirus engine runs in passive mode. Passive mode has the following implications:
-
-- Real-time protection is turned off
-- On-demand scanning is turned on
-- Automatic threat remediation is turned off
-- Security intelligence updates are turned on
-- Status menu icon is hidden
+Specifies whether to scan archives during on-demand antivirus scans.
 
 <br>
 
@@ -111,15 +115,32 @@ Specify whether the antivirus engine runs in passive mode. Passive mode has the 
 |Section|Value|
 |---|---|
 |**Domain**|`com.microsoft.wdav`|
-|**Key**|passiveMode|
+|**Key**|scanArchives|
 |**Data type**|Boolean|
-|**Possible values**|false (default) <p> true|
-|**Comments**|Available in Microsoft Defender for Endpoint version 100.67.60 or higher.|
+|**Possible values**|true (default) <p> false|
+|**Comments**|Available in Microsoft Defender for Endpoint version 101.41.10 or higher.|
 |||
-  
+
+#### Degree of parallelism for on-demand scans
+
+Specifies the degree of parallelism for on-demand scans. This corresponds to the number of threads used to perform the scan and impacts the CPU usage, as well as the duration of the on-demand scan.
+
+<br>
+
+****
+
+|Section|Value|
+|---|---|
+|**Domain**|`com.microsoft.wdav`|
+|**Key**|maximumOnDemandScanThreads|
+|**Data type**|Integer|
+|**Possible values**|2 (default). Allowed values are integers between 1 and 64.|
+|**Comments**|Available in Microsoft Defender for Endpoint version 101.41.10 or higher.|
+|||
+
 #### Exclusion merge policy
 
-Specify the merge policy for exclusions. This can be a combination of administrator-defined and user-defined exclusions (`merge`) or only administrator-defined exclusions (`admin_only`). This setting can be used to restrict local users from defining their own exclusions.
+Specify the merge policy for exclusions. This can be a combination of administrator-defined and user-defined exclusions (`merge`), or only administrator-defined exclusions (`admin_only`). This setting can be used to restrict local users from defining their own exclusions.
 
 <br>
 
@@ -251,7 +272,7 @@ Specify content excluded from being scanned by file extension.
 
 ### Process excluded from the scan
 
-Specify a process for which all file activity is excluded from scanning. The process can be specified either by its name (e.g. `cat`) or full path (e.g. `/bin/cat`).
+Specify a process for which all file activity is excluded from scanning. The process can be specified either by its name (for example, `cat`) or full path (for example, `/bin/cat`).
 
 <br>
 
@@ -529,6 +550,26 @@ Specify whether users can submit feedback to Microsoft by going to `Help` > `Sen
 |**Comments**|Available in Microsoft Defender for Endpoint version 101.19.61 or higher.|
 |||
 
+
+
+#### Control sign-in to consumer version of Microsoft Defender
+
+Specify whether users can sign into the consumer version of Microsoft Defender.
+
+<br>
+
+****
+
+|Section|Value|
+|---|---|
+|**Domain**|`com.microsoft.wdav`|
+|**Key**|consumerExperience|
+|**Data type**|String|
+|**Possible values**|enabled (default) <p> disabled|
+|**Comments**|Available in Microsoft Defender for Endpoint version 101.60.18 or higher.|
+|||
+
+
 ### Endpoint detection and response preferences
 
 Manage the preferences of the endpoint detection and response (EDR) component of Microsoft Defender for Endpoint on macOS.
@@ -623,8 +664,8 @@ The following configuration profile (or, in case of JAMF, a property list that c
 <dict>
     <key>antivirusEngine</key>
     <dict>
-        <key>enableRealTimeProtection</key>
-        <true/>
+        <key>enforcementLevel</key>
+        <string>real_time</string>
         <key>threatTypeSettings</key>
         <array>
             <dict>
@@ -702,12 +743,8 @@ The following configuration profile (or, in case of JAMF, a property list that c
                 <true/>
                 <key>antivirusEngine</key>
                 <dict>
-                    <key>enableRealTimeProtection</key>
-                    <true/>
-                    <key>passiveMode</key>
-                    <false/>
-                    <key>ScanAfterDefinitionUpdate</key>
-                    <false/>
+                    <key>enforcementLevel</key>
+                    <string>real_time</string>
                     <key>threatTypeSettings</key>
                     <array>
                         <dict>
@@ -752,14 +789,14 @@ The following templates contain entries for all settings described in this docum
 <dict>
     <key>antivirusEngine</key>
     <dict>
-        <key>enableRealTimeProtection</key>
+        <key>enforcementLevel</key>
+        <string>real_time</string>
+        <key>scanAfterDefinitionUpdate</key>
         <true/>
-        <key>passiveMode</key>
-        <false/>
-        <key>ScanAfterDefinitionUpdate</key>
-        <false/>
+        <key>scanArchives</key>
+        <true/>
         <key>maximumOnDemandScanThreads</key>
-        <integer>1</integer>
+        <integer>2</integer>
         <key>exclusions</key>
         <array>
             <dict>
@@ -865,6 +902,10 @@ The following templates contain entries for all settings described in this docum
 ### Intune full profile
 
 ```XML
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1">
+    <dict>
         <key>PayloadUUID</key>
         <string>C4E6A782-0C8D-44AB-A025-EB893987A295</string>
         <key>PayloadType</key>
@@ -906,10 +947,12 @@ The following templates contain entries for all settings described in this docum
                 <true/>
                 <key>antivirusEngine</key>
                 <dict>
-                    <key>enableRealTimeProtection</key>
+                    <key>enforcementLevel</key>
+                    <string>real_time</string>
+                    <key>scanAfterDefinitionUpdate</key>
                     <true/>
-                    <key>passiveMode</key>
-                    <false/>
+                    <key>scanArchives</key>
+                    <true/>
                     <key>maximumOnDemandScanThreads</key>
                     <integer>1</integer>
                     <key>exclusions</key>
@@ -1012,6 +1055,8 @@ The following templates contain entries for all settings described in this docum
                 </dict>
             </dict>
         </array>
+    </dict>
+</plist>
 ```
 
 ## Property list validation

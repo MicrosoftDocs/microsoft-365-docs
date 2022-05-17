@@ -9,7 +9,7 @@ ms.date: 9/20/2021
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
 - SPO160
 - MET150
@@ -22,6 +22,8 @@ ms.custom: seo-marvel-apr2020
 ---
 
 # Data Encryption in OneDrive for Business and SharePoint Online
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Understand the basic elements of encryption for data security in OneDrive for Business and SharePoint Online.
   

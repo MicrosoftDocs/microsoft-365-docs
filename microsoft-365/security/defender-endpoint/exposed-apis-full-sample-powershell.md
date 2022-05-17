@@ -10,20 +10,26 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 09/24/2018
+ms.date: 04/27/2022
 ms.technology: mde
+ms.custom: api
 ---
 
 # Microsoft Defender for Endpoint APIs using PowerShell
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Applies to:** 
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Business](../defender-business/index.yml)
+
+> [!IMPORTANT]
+> Advanced hunting capabilities are not included in Defender for Business. See [Compare Microsoft Defender for Business to Microsoft Defender for Endpoint Plans 1 and 2](../defender-business/compare-mdb-m365-plans.md#compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2).
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 

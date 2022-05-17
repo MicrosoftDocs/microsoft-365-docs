@@ -2,12 +2,12 @@
 title: "Delay loading images and JavaScript in SharePoint Online"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 12/3/2019
 audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - Ent_O365
 - SPO_Content

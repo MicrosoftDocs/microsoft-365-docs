@@ -2,13 +2,13 @@
 title: "Gather the information you need to create DNS records"
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
@@ -39,12 +39,6 @@ description: "Gather the values/information you need to create DNS records to co
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. In the admin center, go to the **Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> page.
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. In the admin center, go to the **Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a> page.
@@ -70,12 +64,6 @@ description: "Gather the values/information you need to create DNS records to co
 1. In the Microsoft 365 admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.
 
 ::: moniker-end
-    
-::: moniker range="o365-germany"
-
-1. In the admin center, go to the **Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> page.
-
-::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
@@ -99,4 +87,4 @@ description: "Gather the values/information you need to create DNS records to co
 
 [Domains FAQ](../setup/domains-faq.yml) (article)\
 [Find and fix issues after adding your domain or DNS records](find-and-fix-issues.md) (article)\
-[Manage domains](index.yml) (link page)
+[Manage domains](/admin) (link page)

@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
@@ -20,6 +20,8 @@ ms.custom:
 - OKR_SMB_Videos
 - AdminSurgePortfolio
 - AdminTemplateSet
+- business_assist
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
@@ -27,16 +29,22 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
-description: "Sign in with your Microsoft 365 admin account to reset passwords for users in Microsoft 365 for business subscription."
+description: "Sign in with your Microsoft 365 admin account to reset passwords for users when you have a Microsoft 365 for business subscription."
 ---
 
-# Reset passwords
+# Reset passwords in Microsoft 365 for business
 
-This article explains how to reset passwords for yourself and for your users when you have an Microsoft 365 for business subscription.
+This article explains how to reset passwords for yourself and for your users when you have a Microsoft 365 for business subscription.
+
+> [!NOTE]
+> You can also set up self-service password reset for your users so they can reset their own passwords. To learn more, see [Let users reset their own passwords](let-users-reset-passwords.md).
+
+> [!TIP]
+> If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
 
 ## Before you begin
 
-This article is for people who set password expiration policy for a business, school, or nonprofit. To complete these steps, you need to sign in with your Microsoft 365 admin account. [What's an admin account?](../../business-video/admin-center-overview.md).
+This article is for people who set password expiration policy for a business, school, or nonprofit. To complete these steps, you need to sign in with your Microsoft 365 admin account. [What's an admin account?](Overview of the Microsoft 365 admin center](../admin-overview/admin-center-overview.md).
 
 You must be an [global admin or password administrator](about-admin-roles.md) to perform these steps.
 
@@ -45,6 +53,11 @@ You must be an [global admin or password administrator](about-admin-roles.md) to
 Watch a short video about resetting user passwords.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FVVP]
+
+1. When a user requests a new password, you'll receive a password reset request in email. To reset the password, open the app launcher and select **Admin**.
+1. In the Microsoft 365 admin center, select **Users**,  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>, and then select the key icon next to the user who requested the reset.
+1. Select **Auto-generate password** to have a random password automatically created.
+1. Select **Reset**.
 
 If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../../business-video/index.yml).
   
@@ -60,7 +73,7 @@ If you found this video helpful, check out the [complete training series for sma
 
 ## Let users reset their own passwords
 
-We strongly recommend that you set up self-service password reset. This way you don't have to manually reset passwords for your users. To learn how, see [Let users reset their own passwords in Office 365](let-users-reset-passwords.md).
+We strongly recommend that you set up self-service password reset. This way you don't have to manually reset passwords for your users. Less work for you! To learn how, see [Let users reset their own passwords in Office 365](let-users-reset-passwords.md).
 
 ## Reset my admin password
 
@@ -93,7 +106,7 @@ These steps work for a business with tens of users. If you have hundreds or thou
 
 2. Select the option next to **Display name** to select everyone in your business. Then unselect yourself. You can't reset your own password at the same time you reset everyone else's password.
 
-3. Select **Reset password**. 
+3. Select **Reset password**.
 
 4. Follow the instructions on the **Reset password** page, and select **Reset**.  If you opted for auto-generating the passwords, the new temporary passwords will be displayed.
 

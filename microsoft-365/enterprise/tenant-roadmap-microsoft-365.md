@@ -4,11 +4,11 @@ f1.keywords:
 - NOCSH
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - m365initiative-coredeploy
@@ -46,7 +46,7 @@ To deploy your tenant:
 
 - Add the [DNS domains](../admin/setup/add-domain.md) for your organization.
 - Use the [setup guides in the Microsoft 365 admin center](setup-guides-for-microsoft-365.md).
-- Build out your [identity infrastructure](identity-roadmap-microsoft-365.md) and [secure your user sign-ins](microsoft-365-secure-sign-in.md).
+- Build out your [identity infrastructure](deploy-identity-solution-overview.md).
 
 ### Move a tenant's geographic locations
 

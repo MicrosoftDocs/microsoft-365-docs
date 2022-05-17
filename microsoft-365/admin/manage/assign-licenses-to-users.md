@@ -1,33 +1,34 @@
 ---
-title: "Assign licenses to users"
+title: "Assign licenses to users in the Microsoft 365 admin center"
 f1.keywords:
 - CSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: sinakassaw, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- commerce_licensing
 - AdminSurgePortfolio
 - TopSMBIssues
 - SaRA
+- business_assist
 - okr_SMB
 - manage_licenses
-- commerce_licensing
 - AdminTemplateSet
 search.appverid: MET150
 description: "Assign licenses depending on whether you want to assign product licenses to specific users or assign users licenses to a specific product."
-ms.date: 09/16/2021
+ms.date: 04/22/2022
 ---
 
-# Assign licenses to users
+# Assign Microsoft 365 licenses to users
 
 You can assign licenses to users on either the **Active users** page, or on the **Licenses** page. The method you use depends on whether you want to assign product licenses to specific users or assign users licenses to a specific product.
 
@@ -37,6 +38,9 @@ You can assign licenses to users on either the **Active users** page, or on the 
 > - For some subscriptions, you can only cancel during a limited window of time after you buy or renew your subscription. If the cancellation window has passed, turn off recurring billing to cancel the subscription at the end of its term.
 
 [Learn how to add a user and assign a license at the same time](../add-users/add-users.md).
+
+> [!TIP]
+> If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
 
 ## Before you begin
 
@@ -53,12 +57,6 @@ When you use the **Licenses** page to assign licenses, you assign licenses for a
 ::: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Licenses</a> page.
 
 ::: moniker-end
 
@@ -88,12 +86,6 @@ If there's a conflict, a message displays, tells you what the problem is, and te
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Licenses</a> page.
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Licenses</a> page.
@@ -115,12 +107,6 @@ When you use the **Active users** page to assign licenses, you assign users lice
 ::: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.
 
 ::: moniker-end
 
@@ -150,12 +136,6 @@ When you use the **Active users** page to assign licenses, you assign users lice
 ::: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.
 
 ::: moniker-end
 
@@ -202,7 +182,7 @@ You can invite guest users to collaborate with your organization in the Azure Ac
 
 ## Next steps
 
-If your users don't yet have the Office apps installed, you can share the [Employee quick start guide](../../business-video/employee-quick-setup.md) with your users to set up things, like [how to download and install Microsoft 365 or Office 2019 on a PC or Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) and [how to set up Office apps and email on a mobile device](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f).
+If your users don't yet have the Office apps installed, you can share the [Employee quick start guide](../setup/employee-quick-setup.md) with your users to set up things, like [how to download and install Microsoft 365 or Office 2019 on a PC or Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) and [how to set up Office apps and email on a mobile device](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f).
 
 ## Related content
 

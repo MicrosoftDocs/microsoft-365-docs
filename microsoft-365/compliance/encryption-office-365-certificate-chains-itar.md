@@ -9,7 +9,7 @@ ms.date: 10/16/2020
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -20,6 +20,8 @@ description: "View a complete list of DOD and GCC High root certificates and cer
 ---
 
 # Microsoft 365 encryption chains - DOD and GCC High
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft 365 leverages a number of different certificate providers. The following describes the complete list of known Microsoft 365 root certificates that **DOD and GCC High customers** may encounter when accessing Microsoft 365. For information on the certificates you may need to install in your own infrastructure, see [Plan for third-party SSL certificates for Microsoft 365](../enterprise/plan-for-third-party-ssl-certificates.md).
 

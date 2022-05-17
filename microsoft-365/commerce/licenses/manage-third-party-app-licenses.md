@@ -1,21 +1,21 @@
 ---
-title: "Manage ISV app licenses in the Microsoft 365 admin center"
+title: "Manage ISV app licenses"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
-ms.reviewer: argani
+ms.reviewer: argani, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
 ms.custom: 
-- AdminSurgePortfolio
 - commerce_licensing
+- AdminSurgePortfolio
 search.appverid:
 - MET150
 description: "Learn how to manage licenses for independent software vendor (ISV) apps in the Microsoft 365 admin center."

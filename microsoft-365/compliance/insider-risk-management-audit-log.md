@@ -1,9 +1,9 @@
 ---
 title: Insider risk management audit log
-description: Learn about the insider risk management audit log in Microsoft 365
-keywords: Microsoft 365, insider risk management, risk management, compliance
-localization_priority: Normal
-ms.prod: microsoft-365-enterprise
+description: Learn about the insider risk management audit log in Microsoft Purview
+keywords: Microsoft 365, Microsoft Purview, insider risk, risk management, compliance
+ms.localizationpriority: medium
+ms.service: O365-seccomp
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -15,6 +15,8 @@ ms.collection: m365-security-compliance
 ---
 
 # Insider risk management audit log
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 The insider risk management audit log enables you to stay informed on the actions that were taken on insider risk management features. This log allows independent review of the actions taken by users assigned to one or more insider risk management role groups. The insider risk management audit log is automatically enabled in your organization and cannot be disabled.
 
@@ -31,7 +33,7 @@ Areas included in activity monitoring include:
 - Users
 - Notice templates
 
-To view and export data from the audit log, users must be assigned to the *Insider Risk Management* or *Insider Risk Management Auditors* role groups. To learn more about insider risk management role groups, see [Getting started with insider risk management Step 1: Enabling permissions](insider-risk-management-configure.md#step-1-enable-permissions-for-insider-risk-management).
+To view and export data from the audit log, users must be assigned to the *Insider Risk Management* or *Insider Risk Management Auditors* role groups. To learn more about insider risk management role groups, see [Getting started with insider risk management Step 1: Enabling permissions](insider-risk-management-configure.md#step-1-required-enable-permissions-for-insider-risk-management).
 
 > [!NOTE]
 > The insider risk management audit log isn't associated with the Microsoft 365 audit log, they are independent auditing systems and capture information on separate activities. Disabling Microsoft 365 auditing doesn't impact activity auditing within insider risk management.
@@ -59,7 +61,7 @@ Users assigned to the *Insider Risk Management* or *Insider Risk Management Audi
 
 The file contains activity information for the following fields:
 
-- **Activity performed by:** The user name of the user modifying an item value. Users listed here were assigned to one or more of the following role [insider risk management role groups](insider-risk-management-configure.md#step-1-enable-permissions-for-insider-risk-management): *Insider Risk Management*, *Insider Risk Management Admins*, *Insider Risk Management Analysts*, *Insider Risk Management Investigators*. Each role group has different permission levels for managing insider risk features.
+- **Activity performed by:** The user name of the user modifying an item value. Users listed here were assigned to one or more of the following role [insider risk management role groups](insider-risk-management-configure.md#step-1-required-enable-permissions-for-insider-risk-management): *Insider Risk Management*, *Insider Risk Management Admins*, *Insider Risk Management Analysts*, *Insider Risk Management Investigators*. Each role group has different permission levels for managing insider risk features.
 - **Activity:** The activity taken on an item. Values are *Viewed, Deleted, Added, Edited policy, Case, User, Alert,* and *Settings.*
 - **Added**: Objects that were added during the activity, such as users, file types, or domains.
 - **Alert volume**: The level of alert volume defined in insider risk management settings.
@@ -68,7 +70,7 @@ The file contains activity information for the following fields:
 - **Category:** The category of the item modified. Values are *Policies, Cases, Users, Alerts, Settings,* and *Notice templates.*
 - **Date:** Date and time, listed in your organization's local date and time.
 - **Description**: The description input by the user for the object being acted on (such as a policy or a priority user group).
-- **DLP policy**: The data loss prevention (DLP) policy selected to trigger inclusion in an insider risk management policy.
+- **DLP policy**: The Microsoft Purview Data Loss Prevention (DLP) policy selected to trigger inclusion in an insider risk management policy.
 - **Indicator**: The indicator in the within insider risk settings that the activity was performed on (such as adding or removing an indicator).
 - **Notice template**: The notice template the activity was performed on.
 - **Number of days**: The policy activation window defined in insider risk settings.

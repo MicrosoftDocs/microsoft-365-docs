@@ -1,5 +1,5 @@
 ---
-title: "Use Preservation Lock to restrict changes to retention policies and retention label policies"
+title: "Use Preservation Lock to restrict changes to retention policies"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -10,7 +10,7 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid: 
 - MOE150
 - MET150
@@ -20,6 +20,11 @@ description: "Use Preservation Lock with retention policies and retention label 
 # Use Preservation Lock to restrict changes to retention policies and retention label policies
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+> [!IMPORTANT]
+> Currently, [adaptive policy scopes](retention.md#adaptive-or-static-policy-scopes-for-retention) don't support Preservation Lock.
 
 Preservation Lock locks a retention policy or retention label policy so that no one—including a global admin—can turn off the policy, delete the policy, or make it less restrictive. This configuration might be needed for regulatory requirements and can help safeguard against rogue administrators.
 
@@ -40,7 +45,7 @@ In summary, a locked policy can be increased or extended, but it can't be reduce
 > [!IMPORTANT]
 > Before you lock a retention policy or retention label policy, it's critical that you understand the impact and confirm whether it's required for your organization. For example, it might be needed to meet regulatory requirements. Administrators won't be able to disable or delete these policies after the preservation lock is applied.
 
-Configure Preservation Lock after you've created a [retention policy](create-retention-policies.md), or a retention label policy that you [publish](create-apply-retention-labels.md) or [auto-apply](apply-retention-labels-automatically.md). 
+Configure Preservation Lock after you've created a [retention policy](create-retention-policies.md), or a retention label policy that you [publish](create-apply-retention-labels.md) or [auto-apply](apply-retention-labels-automatically.md).
 
 > [!NOTE]
 > Locking a label policy doesn't prevent an administrator from reducing the retention period in a label that is included in the locked policy. That requirement, with other restrictions, can be met when you configure a label to mark items as a [regulatory record](records-management.md#records).
@@ -60,7 +65,7 @@ All policies for retention and with any configuration support Preservation Lock.
 3. To place a Preservation Lock on your policy, run the [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) cmdlet with the name of the policy, and the *RestrictiveRetention* parameter set to true:
     
     ```powershell
-    Set-RetentionCompliancePolicy -Identity "<Name of Policy>" –RestrictiveRetention $true
+    Set-RetentionCompliancePolicy -Identity "<Name of Policy>" -RestrictiveRetention $true
     ```
     
     For example:
@@ -83,4 +88,4 @@ You should see **RestrictiveRetention** is set to **True**. For example:
 
 ## See also
 
-[Resources to help you meet regulatory requirements for information governance and records management](retention-regulatory-requirements.md)
+[Resources to help you meet regulatory requirements for data lifecycle management and records management](retention-regulatory-requirements.md)

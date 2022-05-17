@@ -19,7 +19,7 @@ ms.collection:
 ms.custom: 
   - TopSMBIssues
   - seo-marvel-apr2020
-localization_priority: Priority
+ms.localizationpriority: high
 description: Admins can learn about the anti-spoofing features that are available in Exchange Online Protection (EOP), which can help mitigate against phishing attacks from spoofed senders and domains.
 ms.technology: mdo
 ms.prod: m365-security
@@ -44,7 +44,7 @@ The following anti-spoofing technologies are available in EOP:
 
   EOP analyzes and blocks messages that can't be authenticated by the combination of standard email authentication methods and sender reputation techniques.
 
-  ![EOP anti-spoofing checks.](../../media/eop-anti-spoofing-protection.png)
+  :::image type="content" source="../../media/eop-anti-spoofing-protection.png" alt-text="The EOP anti-spoofing checks" lightbox="../../media/eop-anti-spoofing-protection.png":::
 
 - **Spoof intelligence insight**: Review spoofed messages from senders in internal and external domains during the last 7 days, and allow or block those senders. For more information, see [Spoof intelligence insight in EOP](learn-about-spoof-intelligence.md).
 
@@ -52,7 +52,7 @@ The following anti-spoofing technologies are available in EOP:
 
 - **Anti-phishing policies**: In EOP and Microsoft Defender for Office 365, anti-phishing policies contain the following anti-spoofing settings:
   - Turn spoof intelligence on or off.
-  - Turn unauthenticated sender identification in Outlook on or off.
+  - Turn unauthenticated sender indicators in Outlook on or off.
   - Specify the action for blocked spoofed senders.
 
   For more information, see [Spoof settings in anti-phishing policies](set-up-anti-phishing-policies.md#spoof-settings).
@@ -164,11 +164,9 @@ To help mailing list messages pass anti-spoofing checks, do following steps base
 
   - Create inbox rules in your email client to move messages to the Inbox. You can also ask your admins to configure overrides as described in [Spoof intelligence insight in EOP](learn-about-spoof-intelligence.md) and [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
 
-  - Create a support ticket with Microsoft 365 to create an override for the mailing list to treat it as legitimate. For more information, see [Contact support for business products - Admin Help](../../business-video/get-help-support.md).
+  - Use the Tenant Allow/Block List to create an override for the mailing list to treat it as legitimate. For more information, see [Add allows in the Tenant Allow/Block List](manage-tenant-allows.md).
 
 If all else fails, you can report the message as a false positive to Microsoft. For more information, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
-
-You may also contact your admin who can raise it as a support ticket with Microsoft. The Microsoft engineering team will investigate why the message was marked as a spoof.
 
 ## Considerations for anti-spoofing protection
 

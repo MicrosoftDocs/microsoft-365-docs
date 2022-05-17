@@ -12,7 +12,7 @@ f1.keywords:
   - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -31,11 +31,17 @@ ms.technology: m365d
 - Microsoft 365 Defender
 - Microsoft Defender for Endpoint
 
-Advanced hunting is based on the [Kusto query language](/azure/kusto/query/). You can use Kusto operators and statements to construct queries that locate information in a specialized [schema](advanced-hunting-schema-tables.md). To understand these concepts better, run your first query.
+Advanced hunting is based on the [Kusto query language](/azure/kusto/query/). You can use Kusto operators and statements to construct queries that locate information in a specialized [schema](advanced-hunting-schema-tables.md). 
+
+Watch this short video to learn some handy Kusto query language basics.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWRwfJ]
+ 
+To understand these concepts better, run your first query.
 
 ## Try your first query
 
-In the Microsoft 365 Defender portal, go to **Hunting** to run your first query. Use the following example:
+In the Microsoft 365 Defender portal, go to **Hunting** to run your first query. Use the following example: 
 
 ```kusto
 // Finds PowerShell execution events that could involve a download
@@ -110,9 +116,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 | top 100 by Timestamp
 ```
 
-Select **Run query** to see the results. Use the expand icon at the top right of the query editor to focus on your hunting query and the results. 
-
-![Image of the Expand control in the advanced hunting query editor.](../../media/advanced-hunting-expand.png)
+Select **Run query** to see the results.
 
 >[!TIP]
 >You can view query results as charts and quickly adjust filters. For guidance, [read about working with query results](advanced-hunting-query-results.md)
@@ -162,13 +166,24 @@ You can use the query editor to experiment with multiple queries. To use multipl
 - Separate each query with an empty line.
 - Place the cursor on any part of a query to select that query before running it. This will run only the selected query. To run another query, move the cursor accordingly and select **Run query**.
 
-![Image of the query editor with multiple queries.](../../media/mtp-ah/ah-multi-query.png)
+:::image type="content" source="../../media/multiple-queries.png" alt-text="An example of multiple queries execution in the **New query** page in the Microsoft 365 Defender portal" lightbox="../../media/multiple-queries.png":::
+
+For a more efficient workspace, you can also use multiple tabs in the same hunting page. Select **New query** to open a tab for your new query.
+
+:::image type="content" source="../../media/multitab.png" alt-text="Opening a new tab by selecting Create new in advanced hunting in the Microsoft 365 Defender portal" lightbox="../../media/multitab.png":::
+
+You can then run different queries without ever opening a new browser tab. 
+
+:::image type="content" source="../../media/multitab-examples.png" alt-text="Run different queries without ever leaving the advanced hunting page in the Microsoft 365 Defender portal" lightbox="../../media/multitab-examples.png":::
+
+>[!NOTE] 
+> Using multiple browser tabs with advanced hunting might cause you to lose your unsaved queries. To prevent this from happening, use the tab feature within advanced hunting instead of separate browser tabs.
 
 ## Use sample queries
 
 The **Get started** section provides a few simple queries using commonly used operators. Try running these queries and making small modifications to them.
 
-![Image of advanced hunting window.](../../media/advanced-hunting-get-started.png)
+:::image type="content" source="../../media/get-started-section.png" alt-text="The **Getting started** section in the **Advanced hunting** page in the Microsoft 365 Defender portal" lightbox="../../media/get-started-section.png":::
 
 >[!NOTE]
 >Apart from the basic query samples, you can also access [shared queries](advanced-hunting-shared-queries.md) for specific threat hunting scenarios. Explore the shared queries on the left side of the page or the [GitHub query repository](https://aka.ms/hunting-queries).

@@ -2,13 +2,13 @@
 title: "Retry a Content Search to resolve a content location error"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: troubleshooting
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 search.appverid:
 - MOE150
@@ -19,6 +19,8 @@ ms.custom: seo-marvel-apr2020
 ---
 
 # Retry a Content Search to resolve a content location error
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 When you use Content Search in the security and compliance center to search a large number of mailboxes, you may get search errors that are similar to the  error:
 

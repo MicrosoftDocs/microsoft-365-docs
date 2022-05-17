@@ -9,11 +9,12 @@ ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+ms.localizationpriority: null
 ms.collection: 
 - M365-security-compliance
 - m365solution-mip
 - m365initiative-compliance
+ms.custom: admindeeplinkDEFENDER
 search.appverid: 
 - MOE150
 - MET150
@@ -21,6 +22,8 @@ description: "A Microsoft 365 classifier is a tool you can train to recognize va
 ---
 
 # Get started with trainable classifiers
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 A Microsoft 365 trainable classifier is a tool you can train to recognize various types of content by giving it samples to look at. Once trained, you can use it to identify item for application of Office sensitivity labels, Communications compliance policies, and retention label policies.
 
@@ -72,7 +75,7 @@ This timeline reflects a sample deployment of trainable classifiers.
 
 ### Overall workflow
 
-To understand more about the overall workflow of creating custom trainable classifiers, see [Process flow for creating customer trainable classifiers](classifier-learn-about.md#process-flow-for-creating-custom-classifiers).
+To understand more about the overall workflow of creating custom trainable classifiers, see [Process flow for creating custom trainable classifiers](classifier-learn-about.md#process-flow-for-creating-custom-classifiers).
 
 ### Seed content
 
@@ -93,9 +96,6 @@ Once the trainable classifier has processed enough positive samples to build a p
 1. Collect between 50-500 seed content items. These must be only samples that strongly represent the type of content you want the trainable classifier to positively identify as being in the classification category. See, [Default crawled file name extensions and parsed file types in SharePoint Server](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) for the supported file types.
 
    > [!IMPORTANT]
-   > The seed and test sample items must not be encrypted and they must be in English.
-
-   > [!IMPORTANT]
    > Make sure the items in your seed set are **strong** examples of the category. The trainable classifier initially builds its model based on what you seed it with. The classifier assumes all seed samples are strong positives and has no way of knowing if a sample is a weak or negative match to the category.
 
 2. Place the seed content in a SharePoint Online folder that is dedicated to holding *the seed content only*. Make note of the site, library, and folder URL.
@@ -103,7 +103,7 @@ Once the trainable classifier has processed enough positive samples to build a p
    > [!TIP]
    > If you create a new site and folder for your seed data, allow at least an hour for that location to be indexed before creating the trainable classifier that will use that seed data.
 
-3. Sign in to Microsoft 365 compliance center with compliance admin or security admin role access and open **Microsoft 365 compliance center** or **Microsoft 365 security center** > **Data classification**.
+3. Sign in to Microsoft Purview compliance portal with compliance admin or security admin role access and open <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> or <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> > **Data classification**.
 
 4. Choose the **Trainable classifiers** tab.
 
@@ -123,9 +123,6 @@ Once the trainable classifier has processed enough positive samples to build a p
     > ![trainable classifier ready for testing.](../media/classifier-trainable-ready-to-test-detail.png)
 
 11. Collect at least 200 test content items (10,000 max) for best results. These should be a mix of items that are strong positives, strong negatives and some that are a little less obvious in their nature. See, [Default crawled file name extensions and parsed file types in SharePoint Server](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) for the supported file types.
-
-    > [!IMPORTANT]
-    > The sample items must not be encrypted and they must be in English.
 
 12. Place the test content in a SharePoint Online folder that is dedicated to holding *the test content only*. Make note of the SharePoint Online site, library, and folder URL.
 

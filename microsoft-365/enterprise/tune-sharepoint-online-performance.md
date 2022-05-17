@@ -2,12 +2,12 @@
 title: "Tune SharePoint Online performance"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 10/2/2019
 audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - SPO160

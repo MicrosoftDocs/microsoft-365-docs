@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - Adm_O365
 - Adm_NonTOC
@@ -22,7 +22,7 @@ ROBOTS: NOINDEX
 description: "Learn how to block access to Microsoft 365 when an employee leaves your organization."
 ---
 
-# Compare ways to block access
+# Compare ways to block access to Microsoft 365
 
 When an employee leaves your organization, on good terms or bad, you need to block their access to Microsoft 365. Here are a few ways you can do that.
   

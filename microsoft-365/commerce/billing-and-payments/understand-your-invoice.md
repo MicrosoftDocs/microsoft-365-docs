@@ -1,27 +1,24 @@
 ---
 title: Understand your bill or invoice
-f1.keywords:
-- CSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - 'MACBillingBillsPaymentsInvoices'
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom: 
-- AdminSurgePortfolio
 - commerce_billing
+- AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid: MET150
 description: "Learn how to read and understand your bill or invoice for Microsoft business products."
-keywords: billing accounts, organization info, invoices
 ms.date: 05/04/2021
 ---
 
@@ -78,8 +75,7 @@ The charges pages show the cost broken down by product. For Azure customers, the
 | Tax amount | Amount of tax applied to the purchase based on tax rate |
 | Total | The total amount due for the purchase |
 
-Line items details vary depending on the type of product you're charged for. For example, for Azure products, the amount of Azure credits applied is shown. Seat-based products show a unit price and
-quantity. The invoice details show the products purchased, discount or credits that were applied, tax rate and amount, and the line item totals.
+Line items details vary depending on the type of product you're charged for. For example, for Azure products, the amount of Azure credits applied is shown. Seat-based products show a unit price and quantity. The invoice details show the products purchased, discount or credits that were applied, tax rate and amount, and the line item totals.
 
 > Total = Charges - Azure Credit + Tax
 
@@ -101,8 +97,7 @@ If you have third-party services in your bill, the name and address of each publ
 
 ## View your online invoice
 
-Invoices are available online. A link to your online invoice is available from your PDF invoice, and from an email notification. The online invoice is expandable so you can view the charges on your invoice and
-see more details for each item. The online invoice includes:
+Invoices are available online. A link to your online invoice is available from your PDF invoice, and from an email notification. The online invoice is expandable so you can view the charges on your invoice and see more details for each item. The online invoice includes:
 
 - **Pricing details**&mdash;Additional information including details about discounts and product pricing.
 - **Online payment**&mdash;You can choose to make a payment online from the invoice.
@@ -147,7 +142,7 @@ Azure prepayment is available as a payment method only for eligible Azure produc
 
 If you have questions or need help with your Azure credits, <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">create a support request with Azure support</a>.
 
-If you have questions or need help with your invoice in Microsoft 365 admin center, [contact support for business products](../../business-video/get-help-support.md).
+If you have questions or need help with your invoice in Microsoft 365 admin center, [contact support for business products](../../admin/get-help-support.md).
 
 ## Related content
 

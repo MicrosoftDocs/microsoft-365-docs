@@ -3,14 +3,13 @@ title: Access the Microsoft Defender for Endpoint APIs
 ms.reviewer:
 description: Learn how you can use APIs to automate workflows and innovate based on Microsoft Defender for Endpoint capabilities
 keywords: apis, api, wdatp, open api, microsoft defender for endpoint api, microsoft defender atp, public api, supported apis, alerts, device, user, domain, ip, file, advanced hunting, query
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -24,8 +23,13 @@ ms.custom: api
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Business](../defender-business/index.yml)
+
+> [!IMPORTANT]
+> Advanced hunting capabilities are not included in Defender for Business. See [Compare Microsoft Defender for Business to Microsoft Defender for Endpoint Plans 1 and 2](../defender-business/compare-mdb-m365-plans.md#compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2).
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -61,7 +65,7 @@ You can access Defender for Endpoint API with **Application Context** or **User 
 
   Used to perform actions in the API on behalf of a user.
 
-  Steps to take to access Defender for Endpoint API with application context:
+  Steps to take to access Defender for Endpoint API with user context:
 
   1. Create AAD Native-Application.
   2. Assign the desired permission to the application, e.g 'Read Alerts', 'Isolate Machines' etc.

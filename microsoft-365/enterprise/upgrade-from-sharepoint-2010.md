@@ -2,12 +2,12 @@
 title: "Upgrading from SharePoint 2010"
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: scotv
 ms.date: 04/13/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - SPO_Content

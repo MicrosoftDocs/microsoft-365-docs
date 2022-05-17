@@ -2,12 +2,11 @@
 title: Apply Microsoft Defender Antivirus updates after certain events
 description: Manage how Microsoft Defender Antivirus applies security intelligence updates after startup or receiving cloud-delivered detection reports.
 keywords: updates, protection, force updates, events, startup, check for latest, notifications
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+ms.localizationpriority: medium
 ms.topic: article
 author: denisebmsft
 ms.author: deniseb
@@ -25,8 +24,12 @@ ms.collection: m365-security-compliance
 
 
 **Applies to:**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- Microsoft Defender Antivirus
 
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+**Platforms**
+- Windows
 
 Microsoft Defender Antivirus allows you to determine if updates should (or should not) occur after certain events, such as at startup or after receiving specific reports from the cloud-delivered protection service.
 
@@ -66,7 +69,7 @@ Use the following cmdlets:
 Set-MpPreference -CheckForSignaturesBeforeRunningScan
 ```
 
-For more information, see [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](/powershell/module/defender/index).
+For more information, see [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender Antivirus cmdlets](/powershell/module/defender/index).
 
 ### Use Windows Management Instruction (WMI) to check for protection updates before running a scan
 
@@ -118,7 +121,7 @@ Use the following cmdlets:
 Set-MpPreference -SignatureDisableUpdateOnStartupWithoutEngine
 ```
 
-For more information, see [Use PowerShell cmdlets to manage Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](/powershell/module/defender/index) for more information on how to use PowerShell with Microsoft Defender Antivirus.
+For more information, see [Use PowerShell cmdlets to manage Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender Antivirus cmdlets](/powershell/module/defender/index) for more information on how to use PowerShell with Microsoft Defender Antivirus.
 
 ### Use Windows Management Instruction (WMI) to download updates when Microsoft Defender Antivirus is not present
 
@@ -154,6 +157,16 @@ If you have enabled cloud-delivered protection, Microsoft Defender AV will send 
 
 > [!NOTE]
 > **Allow notifications to disable definitions based reports** enables Microsoft MAPS to disable those definitions known to cause false-positive reports. You must configure your computer to join Microsoft MAPS for this function to work.
+
+> [!TIP]
+> If you're looking for Antivirus related information for other platforms, see:
+> - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
+> - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
+> - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md)
+> - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
+> - [Configure Defender for Endpoint on Android features](android-configure.md)
+> - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
 
 ## See also
 

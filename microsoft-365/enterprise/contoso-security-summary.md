@@ -4,12 +4,12 @@ author: kelleyvice-msft
 f1.keywords:
 - NOCSH
 ms.author: kvice
-manager: laurawi
+manager: scotv
 ms.date: 10/02/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-security-compliance
 - Strat_O365_Enterprise
@@ -107,15 +107,15 @@ To follow security best practices and Microsoft 365 for enterprise deployment re
 
 - Prevent intranet data leaks with Data Loss Prevention
 
-  Contoso configured [Data Loss Prevention](../compliance/dlp-learn-about-dlp.md) policies for Exchange Online, SharePoint, and OneDrive for Business to prevent users from accidentally or intentionally sharing sensitive data.
+  Contoso configured [Microsoft Purview Data Loss Prevention](../compliance/dlp-learn-about-dlp.md) policies for Exchange Online, SharePoint, and OneDrive for Business to prevent users from accidentally or intentionally sharing sensitive data.
 
 - Prevent device data leaks Windows Information Protection
 
   Contoso is using [Windows Information Protection (WIP)](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip) to protect against data leakage through internet-based apps and services and enterprise apps and data on enterprise-owned devices and personal devices that employees bring to work.
 
-- Cloud monitoring with Microsoft Cloud App Security
+- Cloud monitoring with Microsoft Defender for Cloud Apps
 
-  Contoso is using [Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security) to map their cloud environment, monitor its usage, and detect security events and incidents. *Microsoft Cloud App Security is only available with Microsoft 365 E5.*
+  Contoso is using [Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security) to map their cloud environment, monitor its usage, and detect security events and incidents. *Microsoft Defender for Cloud Apps is only available with Microsoft 365 E5.*
 
 - Device management with Microsoft Intune
 
@@ -123,9 +123,9 @@ To follow security best practices and Microsoft 365 for enterprise deployment re
 
 ## Security management
 
-- Central security dashboard for IT with Azure Defender
+- Central security dashboard for IT with Microsoft Defender for Cloud
 
-  Contoso uses the [Azure Defender](https://azure.microsoft.com/services/security-center/) to present a unified view of security and threat protection, to manage security policies across its workloads, and to respond to cyberattacks.
+  Contoso uses the [Microsoft Defender for Cloud](https://azure.microsoft.com/services/security-center/) to present a unified view of security and threat protection, to manage security policies across its workloads, and to respond to cyberattacks.
 
 - Central security dashboard for users with Windows Defender Security Center
 

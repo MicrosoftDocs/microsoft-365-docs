@@ -2,16 +2,15 @@
 title: Migrating from a third-party HIPS to ASR rules
 description: Describes how to approach a migration from a third-party Host Intrusion Prevention System (HIPS) solution into ASR rules.
 keywords: Attack surface reduction rules, asr, asr rules, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, Microsoft Defender for Endpoint
-search.product: eADQiWindows 10XVcnh
 ms.topic: article
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+ms.localizationpriority: medium
 audience: ITPro
 author: lovina-saldanha
-ms.author: v-lsaldanha
+ms.author: dansimp
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
@@ -19,6 +18,10 @@ ms.collection: M365-security-compliance
 ---
 
 # Migrating from a third-party HIPS to ASR rules
+
+**Applies to:**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 This article helps you to map common rules to Microsoft Defender for Endpoint.
 
@@ -118,7 +121,7 @@ This article helps you to map common rules to Microsoft Defender for Endpoint.
 - **Processes**- *
 - **Operation**- Process Termination
 - **Examples of Files/Folders, Registry Keys/Values, Processes, Services**- MsSense.exe, MsMpEng.exe, NisSrv.exe, svchost.exe*, services.exe, csrss.exe, smss.exe, wininit.exe, and more.
-- **Attack Surface Reduction rules**- ASR rules don't support these scenarios because they're protected with Windows 10 built-in security protections.
+- **Attack Surface Reduction rules**- ASR rules don't support these scenarios because they're protected with Windows built-in security protections.
 - **Other recommended features**- ELAM (Early Launch AntiMalware), PPL (Protection Process Light), PPL AntiMalware Light, and System Guard.
 
 ### Block specific launch Process Attempt

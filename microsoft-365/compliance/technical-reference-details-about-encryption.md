@@ -8,7 +8,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365solution-mip
@@ -23,6 +23,8 @@ ms.custom: seo-marvel-apr2020
 ---
 
 # Technical reference details about encryption
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Refer to this article to learn about certificates, technologies, and TLS cipher suites used for [encryption in Office 365](encryption.md). This article also provides details about planned deprecations.
   
@@ -46,7 +48,7 @@ All cipher suites supported by Office 365 use algorithms acceptable under FIPS 1
 
 TLS, and SSL that came before TLS, are cryptographic protocols that secure communication over a network by using security certificates to encrypt a connection between computers. Office 365 supports TLS version 1.2 (TLS 1.2).
 
-TLS version 1.3 (TLS 1.3) is currently not supported.
+TLS version 1.3 (TLS 1.3) is supported by some of the services.
 
 > [!IMPORTANT]
 > Be aware that TLS versions deprecate, and that deprecated versions *should not be used* where newer versions are available. If your legacy services do not require TLS 1.0 or 1.1 you should disable them.

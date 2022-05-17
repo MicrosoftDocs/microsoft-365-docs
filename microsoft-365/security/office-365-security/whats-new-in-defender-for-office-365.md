@@ -9,14 +9,14 @@ f1.keywords:
   - NOCSH
 ms.author: tracyp
 author: msfttracyp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
   - M365-security-compliance
   - m365initiative-defender-office365
 ms.topic: conceptual
-ms.date: 07/27/2021
+ms.date: 12/03/2021
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
@@ -27,7 +27,8 @@ ms.prod: m365-security
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-**Applies to**
+**Applies to:**
+
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
@@ -38,12 +39,28 @@ Learn more by watching [this video](https://www.youtube.com/watch?v=Tdz6KfruDGo&
 > [!TIP]
 > Don't have Microsoft Defender for Office 365 yet? [Contact sales to start a trial](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html).
 
-For more information on what's new with other Microsoft Defender security products see:
+For more information on what's new with other Microsoft Defender security products, see:
 
 - [What's new in Microsoft 365 Defender](../defender/whats-new.md)
-- [What's new in Microsoft Defender for Endpoint](../defender-endpoint/whats-new-in-microsoft-defender-atp.md)
+- [What's new in Microsoft Defender for Endpoint](../defender-endpoint/whats-new-in-microsoft-defender-endpoint.md)
 - [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
 - [What's new in Microsoft Cloud App Security](/cloud-app-security/release-notes)
+## April 2022
+
+- [Manual email remediation enhancements](/microsoft-365/security/office-365-security/remediate-malicious-email-delivered-office-365): Bringing manual email purge actions taken in Microsoft Defender for Office 365 to the Microsoft 365 Defender (M365D) unified Action Center using a new action-focused investigation.
+ 
+## March 2022
+
+- [Streamlined the submission experience in Microsoft Defender for Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/streamlining-the-submissions-experience-in-microsoft-defender/ba-p/3152080): Introducing the new unified and streamlined submission process to make your experience simpler.
+
+## January 2022
+
+- [Updated Hunting and Investigation Experiences for Microsoft Defender for Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/updated-hunting-and-investigation-experiences-for-microsoft/ba-p/3002015): Introducing the email summary panel for experiences in Defender for Office 365, along with experience updates for Threat Explorer and Real-time detections.
+
+## October 2021
+
+- [Advanced Delivery DKIM enhancement](configure-advanced-delivery.md): Added support for DKIM domain entry as part of third-party phishing simulation configuration.
+- [Secure by Default](secure-by-default.md): Extended Secure by Default for Exchange mail flow rules (also known as transport rules).
 
 ## September 2021
 
@@ -52,6 +69,7 @@ For more information on what's new with other Microsoft Defender security produc
   - [Video of admin experience](https://youtu.be/vnar4HowfpY)
   - [Video of end-user experience](https://youtu.be/s-vozLO43rI)
   - Other new capabilities coming to the quarantine experience are described in this blog post: [Simplifying the Quarantine experience](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/simplifying-the-quarantine-experience/ba-p/2676388).
+- Portal redirection by default begins, redirecting users from Security & Compliance to Microsoft 365 Defender <https://security.microsoft.com>. For more on this, see: [Redirecting accounts from Office 365 Security and Compliance Center to Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-security-mdo-redirection)
 
 ## August 2021
 
@@ -70,8 +88,8 @@ For more information on what's new with other Microsoft Defender security produc
   - Form flagged and confirmed as phishing
   - [New alert policies for ZAP](../../compliance/new-defender-alert-policies.md)
 - Microsoft Defender for Office 365 alerts are now integrated into Microsoft 365 Defender - [Microsoft 365 Defender Unified Alerts Queue and Unified Alerts Queue](../defender/investigate-alerts.md)
-- [User Tags](user-tags.md) are now integrated into Microsoft Defender for Office 365 alerting experiences, including: the alerts queue and details in Office 365 Security & Compliance, and scoping custom alert policies to user tags to create targeted alert policies. 
-  - Tags are also available in the unified alerts queue in the Microsoft 365 Defender center (Microsoft Defender for Office 365 Plan 2)
+- [User Tags](user-tags.md) are now integrated into Microsoft Defender for Office 365 alerting experiences, including: the alerts queue and details in Office 365 Security & Compliance, and scoping custom alert policies to user tags to create targeted alert policies.
+  - Tags are also available in the unified alerts queue in the Microsoft 365 Defender portal (Microsoft Defender for Office 365 Plan 2)
 
 ## June 2021
 
@@ -92,7 +110,6 @@ For more information on what's new with other Microsoft Defender security produc
 - Increasing the limits for Export of records from 9990 to 200,000 in [hunting experiences](threat-explorer.md)
 - Extending the Explorer (and Real-time detections) data retention and search limit for trial tenants from 7 (previous limit) to 30 days in [hunting experiences](threat-explorer.md)
 - New hunting pivots called **Impersonated domain** and **Impersonated user** within the Explorer (and Real-time detections) to search for impersonation attacks against protected users or domains. For more information, see [details](threat-explorer.md#view-phishing-emails-sent-to-impersonated-users-and-domains). (Microsoft Defender for Office 365 Plan 1 or Plan 2)
-
 
 ## Microsoft Defender for Office 365 Plan 1 and Plan 2
 

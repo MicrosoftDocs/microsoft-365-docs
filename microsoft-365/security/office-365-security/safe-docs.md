@@ -7,19 +7,18 @@ ms.reviewer: kshi
 ms.date:
 audience: ITPro
 ms.topic: how-to
-
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
   - MET150
 ms.assetid:
 ms.collection:
   - M365-security-compliance
-description: Learn about Safe Documents in Microsoft 365 E5 or Microsoft 365 E5 Security.
+description: Learn about Safe Documents in Microsoft 365 E5/A5 or Microsoft 365 E5/A5 Security.
 ms.technology: mdo
 ms.prod: m365-security
 ---
 
-# Safe Documents in Microsoft 365 E5
+# Safe Documents in Microsoft 365 E5/A5
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -34,7 +33,6 @@ Users don't need Defender for Endpoint installed on their local devices to get S
 - Licenses from a required licensing plan are assigned to the users. Safe Documents is controlled by the **Office 365 SafeDocs** (or **SAFEDOCS** or **bf6f5520-59e3-4f82-974b-7dbbc4fd27c7**) service plan (also known as a service). This service plan is available in the following licensing plans (also known as license plans, Microsoft 365 plans, or products):
   - Microsoft 365 A5 for Faculty
   - Microsoft 365 A5 for Students
-  - Microsoft 365 E5
   - Microsoft 365 E5 Security
 
   Safe Documents is not included in Microsoft Defender for Office 365 licensing plans.
@@ -65,11 +63,11 @@ Users don't need Defender for Endpoint installed on their local devices to get S
 
 To keep you protected, Safe Documents sends files to the [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) cloud for analysis. Details on how Microsoft Defender for Endpoint handles your data can be found here: [Microsoft Defender for Endpoint data storage and privacy](/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy).
 
-Files sent by Safe Documents are not retained in Defender beyond the time needed for analysis (typically, less than 24 hours).
+Files sent by Safe Documents are not retained in Defender for Endpoint beyond the time needed for analysis (typically, less than 24 hours).
 
 ## Use the Microsoft 365 Defender portal to configure Safe Documents
 
-1. Open the Microsoft 365 Defender portal and go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Safe Attachments** in the **Policies** section.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Safe Attachments** in the **Policies** section. To go directly to the **Safe Attachments** page, use <https://security.microsoft.com/safeattachmentv2>.
 
 2. On the **Safe Attachments** page, click **Global settings**.
 
@@ -79,7 +77,7 @@ Files sent by Safe Documents are not retained in Defender beyond the time needed
 
    When you're finished, click **Save**.
 
-   ![Safe Documents settings after selecting Global settings on the Safe Attachments page.](../../media/safe-docs-global-settings.png)
+   :::image type="content" source="../../media/safe-docs-global-settings.png" alt-text="The Safe Documents settings after selecting Global settings on the Safe Attachments page" lightbox="../../media/safe-docs-global-settings.png":::
 
 ### Use Exchange Online PowerShell to configure Safe Documents
 

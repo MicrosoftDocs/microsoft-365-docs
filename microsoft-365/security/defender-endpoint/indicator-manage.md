@@ -3,15 +3,13 @@ title: Manage indicators
 ms.reviewer:
 description: Manage indicators for a file hash, IP address, URLs, or domains that define the detection, prevention, and exclusion of entities.
 keywords: import, indicator, list, ioc, csv, manage, allowed, blocked, block, clean, malicious, file hash, ip address, urls, domain
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -25,7 +23,8 @@ ms.technology: mde
 
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -53,6 +52,9 @@ Download the sample CSV to know the supported column attributes.
 
 5. Select **Done**.
 
+> [!NOTE]
+> Only 500 indicators can be uploaded for each batch.
+
 The following table shows the supported parameters.
 
 Parameter|Type|Description
@@ -62,13 +64,18 @@ indicatorValue|String|Identity of the [Indicator](ti-indicator.md) entity. **Req
 action|Enum|The action that will be taken if the indicator will be discovered in the organization. Possible values are: "Alert", "AlertAndBlock", and "Allowed". **Required**
 title|String|Indicator alert title. **Required**
 description|String| Description of the indicator. **Required**
-expirationTime|DateTimeOffset|The expiration time of the indicator in the following format YYYY-MM-DDTHH:MM:SS.0Z. **Optional**
+expirationTime|DateTimeOffset|The expiration time of the indicator in the following format YYYY-MM-DDTHH:MM:SS.0Z. The indicator gets deleted if the expiration time passes and whatever happens at the expiration time occurs at the seconds (SS) value. **Optional**
 severity|Enum|The severity of the indicator. Possible values are: "Informational", "Low", "Medium" and "High". **Optional**
 recommendedActions|String|TI indicator alert recommended actions. **Optional**
 rbacGroupNames|String|Comma-separated list of RBAC group names the indicator would be applied to. **Optional**
 category|String|Category of the alert. Examples include: Execution and credential access. **Optional**
 mitretechniques|String|MITRE techniques code/id (comma separated). For more information, see [Enterprise tactics](https://attack.mitre.org/tactics/enterprise/). **Optional** It is recommended to add a value in category when a MITRE technique.
+GenerateAlert|String|Whether the alert should be generated or not. Possible Values are: True or False. **Optional**
 
+
+
+> [!NOTE]
+> Classless Inter-Domain Routing (CIDR) notation for IP addresses is not supported.
 For more information, see [Microsoft Defender for Endpoint alert categories are now aligned with MITRE ATT&CK!](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-atp-alert-categories-are-now-aligned-with/ba-p/732748).
 
 ## See also

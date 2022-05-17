@@ -8,8 +8,8 @@ manager: dansimp
 ms.date: 
 audience: ITPro
 ms.topic: overview
-
-localization_priority: Normal
+ms.collection: M365-security-compliance
+ms.localizationpriority: medium
 ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 ms.custom: 
   - seo-marvel-apr2020
@@ -43,6 +43,10 @@ These enhanced reports provide an interactive reporting experience for EOP admin
 - **Defender for Office 365**: View information about Safe Links and Safe Attachments that are part of Microsoft Defender for Office 365. For more information, see [View Defender for Office 365 reports in the Microsoft 365 Defender portal](view-reports-for-mdo.md).
 - **EOP**: View information about malware detections, spoofed mail, spam detections, and mail flow to and from your organization. For more information, see [View email security reports in the Microsoft 365 Defender portal](view-email-security-reports.md).
 
+## Mail flow insights in the Security & Compliance Center
+
+For more information, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).
+
 ## Custom reports using Microsoft Graph
 
 Programmatically create reports that are available in the admin center by using Microsoft Graph. For more information, see [Overview of Microsoft Graph](/graph/overview) and [Working with Office 365 usage reports in Microsoft Graph](/graph/api/resources/report).
@@ -63,16 +67,11 @@ Tracks specific changes made by admins to your organization. These reports can h
 
 The following table describes when EOP reporting and message trace data is available and for how long.
 
-<br>
-
-****
-
 |Report type|Data available for (look back period)|Latency|
 |---|---|---|
 |Mail protection summary reports|90 days|Message data aggregation is mostly complete within 24-48 hours. Some minor incremental aggregated changes may occur for up to 5 days.|
 |Mail protection detail reports|90 days|For detail data that's less than 7 days old, data should appear within 24 hours but may not be complete until 48 hours. Some minor incremental changes may occur for up to 5 days. <p> To view detail reports for messages that are greater than 7 days old, results may take up to a few hours.|
 |Message trace data|90 days|When you run a message trace for messages that are less than 7 days old, the messages should appear within 5-30 minutes.<p> When you run a message trace for messages that are greater than 7 days old, results may take up to a few hours.|
-|
 
 > [!NOTE]
 > Data availability and latency is the same whether requested via the admin center or remote PowerShell.

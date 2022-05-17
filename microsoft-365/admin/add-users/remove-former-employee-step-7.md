@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
@@ -24,7 +24,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Follow these steps to delete a former employee's user account."
+description: "After you've saved and accessed all of a former employee's user data, you can delete the former employee's account in the Microsoft 365 admin center."
 ---
 
 # Step 7 - Delete a former employee's user account

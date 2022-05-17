@@ -2,12 +2,11 @@
 title: Troubleshoot problems with reporting tools for Microsoft Defender Antivirus
 description: Identify and solve common problems when attempting to report in Microsoft Defender Antivirus protection status in Update Compliance
 keywords: troubleshoot, error, fix, update compliance, oms, monitor, report, Microsoft Defender Antivirus
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+ms.localizationpriority: medium
 ms.topic: article
 author: denisebmsft
 ms.author: deniseb
@@ -24,8 +23,12 @@ ms.collection: m365-security-compliance
 
 
 **Applies to:**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- Microsoft Defender Antivirus
 
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+**Platforms**
+- Windows
 
 > [!IMPORTANT]
 > On March 31, 2020, the Microsoft Defender Antivirus reporting feature of Update Compliance will be removed. You can continue to define and review security compliance policies using [Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager), which allows finer control over security features and updates.
@@ -69,6 +72,16 @@ If the above prerequisites have all been met, you might need to proceed to the n
 
 > [!div class="nextstepaction"]
 > [Collect diagnostic data for Update Compliance troubleshooting](collect-diagnostic-data.md)
+
+> [!TIP]
+> If you're looking for Antivirus related information for other platforms, see:
+> - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
+> - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
+> - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md)
+> - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
+> - [Configure Defender for Endpoint on Android features](android-configure.md)
+> - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
 
 ## Related topics
 

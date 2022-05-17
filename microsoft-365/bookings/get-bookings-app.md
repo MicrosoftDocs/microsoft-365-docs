@@ -6,12 +6,15 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: bookings
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 01b79cb0-e206-4a3a-aaef-b10941770f87
 description: "The Bookings mobile apps are not yet available worldwide. This article lists those locales where the apps are available now."
 ---
 
 # Get the Microsoft Bookings app for iOS and Android
+
+> [!NOTE]
+> This article helps you to interact with the latest version of Microsoft Bookings. Previous versions will be retired in coming months.
 
 Microsoft Bookings is available as a mobile app for iOS and Android. The Bookings app for iOS is available in all regions and countries that Apple supports. You can download the app from the [iTunes App Store](https://apps.apple.com/app/microsoft-bookings/id1065657468). The Bookings app for Android is available for download from the [Google Play Store](https://play.google.com/store/apps/details?id=com.microsoft.exchange.bookings) in the US and Canada.
 

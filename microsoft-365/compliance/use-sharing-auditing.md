@@ -2,14 +2,14 @@
 title: "Use sharing auditing in the audit log"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - SPO160
 - MOE150
@@ -24,6 +24,8 @@ ms.custom: seo-marvel-apr2020
 ---
 
 # Use sharing auditing in the audit log
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Sharing is a key activity in SharePoint Online and OneDrive for Business, and it's widely used in organizations. Administrators can use sharing auditing in the audit log to determine how sharing is used in their organization. 
   
@@ -95,7 +97,7 @@ The first step is to search the audit log for sharing events. For more informati
 
 2. Sign in using your work or school account.
 
-3. In the left pane of the Microsoft 365 compliance center, click **Audit**.
+3. In the left pane of the Microsoft Purview compliance portal, click **Audit**.
 
     The **Audit** page is displayed.
 

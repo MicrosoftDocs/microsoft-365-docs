@@ -1,5 +1,5 @@
 ---
-title: "Learn about the data loss prevention Alerts dashboard"
+title: "Learn about the DLP alerts dashboard"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -11,7 +11,7 @@ ms.topic: article
 f1_keywords:
 - 'ms.o365.cc.DLPLandingPage'
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-security-compliance
 - SPO_Content
@@ -19,18 +19,21 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkCOMPLIANCE
 description: Learn about data loss prevention alerts and the alerts dashboard. 
 ---
 
 # Learn about the data loss prevention Alerts dashboard
 
-When the criteria in a Data loss prevention (DLP) policy is matched by the actions a user is taking on a sensitive item, the policy can generate an alert. This can result in a high volume of alerts. DLP alerts are collected in the alerts dashboard. The alerts dashboard gives you a single place to go to perform a deep investigation of all the details regarding the policy match.  
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-<!-- [Microsoft 365 compliance center](https://compliance.microsoft.com/)-->
+When the criteria in a Microsoft Purview Data Loss Prevention (DLP) policy is matched by the actions a user is taking on a sensitive item, the policy can generate an alert. This situation can result in a high volume of alerts. DLP alerts are collected in the alerts dashboard. The alerts dashboard gives you a single place to go to do a deep investigation of all the details about the policy match.  
+
+<!-- [Microsoft Purview compliance portal](https://compliance.microsoft.com/)-->
 
 ## Workloads
 
-The [DLP alert management dashboard](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts), in the [Microsoft 365 compliance center](https://compliance.microsoft.com/), shows alerts for DLP policies on these workloads:
+The [DLP alert management dashboard](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts), in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>, shows alerts for DLP policies on these workloads:
 
 - Exchange
 - SharePoint
@@ -61,7 +64,7 @@ Here are some of the events associated with an alert. In the UI, you can choose 
 |Location |workload where the event was detected|all events |
 |time of activity     |time of the user activity that matched the criteria of the DLP policy |
 
-### Impacted entities
+### Affected entities
 
 |Property name |Description| Event types|
 |---------|---------|---------|

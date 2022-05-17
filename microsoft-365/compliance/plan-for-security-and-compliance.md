@@ -1,5 +1,5 @@
 ---
-title: "Plan for security &amp; compliance"
+title: "Plan for security and compliance"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -7,9 +7,9 @@ author: chrfox
 manager: laurawi
 ms.date: 
 audience: Admin
-ms.topic: hub-page
+ms.topic: landing-page
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
 - MOE150
 - MET150
@@ -20,6 +20,8 @@ ms.custom: seo-marvel-apr2020
 ---
 
 # Plan for security &amp; compliance
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Managing security and compliance is a partnership. You are responsible for protecting your data, identities, and devices, while Microsoft vigorously protects Microsoft 365 services. You can use Microsoft 365 and Enterprise Mobility + Security (EMS) together to help you achieve the appropriate level of protection for your organization.
   
@@ -77,4 +79,4 @@ Configure your security and compliance settings in these admin centers and dashb
 |:-----|:-----|:-----|
 |Microsoft 365  <br/> |`https://admin.microsoft.com`  <br/> | Microsoft 365 admin center  <br/>  Security &amp; Compliance Center  <br/>  Exchange admin center  <br/>  SharePoint admin center and OneDrive for Business admin center  <br/> |
 |Enterprise Mobility + Security  <br/> |`https://portal.azure.com`  <br/> | Azure Active Directory  <br/>  Microsoft Mobile Application Management  <br/>  Microsoft Intune  <br/> |
-|Enterprise Mobility + Security  <br/> |`https://portal.cloudappsecurity.com`  <br/> | Cloud App Security  <br/> |
+|Enterprise Mobility + Security  <br/> |`https://portal.cloudappsecurity.com`  <br/> | Defender for Cloud Apps  <br/> |

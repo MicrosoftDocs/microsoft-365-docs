@@ -2,12 +2,11 @@
 title: Define how mobile devices are updated by Microsoft Defender Antivirus
 description: Manage how mobile devices, such as laptops, should be updated with Microsoft Defender Antivirus protection updates.
 keywords: updates, protection, schedule updates, battery, mobile device, laptop, notebook, opt-in, microsoft update, wsus, override
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+ms.localizationpriority: medium
 ms.topic: article
 author: denisebmsft
 ms.author: deniseb
@@ -25,7 +24,12 @@ ms.collection: M365-security-compliance
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- Microsoft Defender Antivirus
+
+**Platforms**
+- Windows
 
 Mobile devices and VMs may require more configuration to ensure performance is not impacted by updates.
 
@@ -92,6 +96,16 @@ You can configure Microsoft Defender Antivirus to only download protection updat
 4. Expand the tree to **Windows components** \> **Microsoft Defender Antivirus** \> **Signature Updates**, and then set **Allow security intelligence updates when running on battery power** to **Disabled**. Then select **OK**.
 
 This action prevents protection updates from downloading when the PC is on battery power.
+
+> [!TIP]
+> If you're looking for Antivirus related information for other platforms, see:
+> - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
+> - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
+> - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md)
+> - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
+> - [Configure Defender for Endpoint on Android features](android-configure.md)
+> - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
 
 ## Related articles
 

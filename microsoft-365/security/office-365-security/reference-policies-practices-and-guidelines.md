@@ -9,7 +9,7 @@ ms.date:
 audience: ITPro
 ms.topic: conceptual
 
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
   - MET150
 ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0

@@ -1,20 +1,20 @@
 ---
 title: Turn on network protection
 description: Enable network protection with Group Policy, PowerShell, or Mobile Device Management and Configuration Manager.
-keywords: ANetwork protection, exploits, malicious website, ip, domain, domains, enable, turn on
-search.product: eADQiWindows 10XVcnh
+keywords: Network protection, exploits, malicious website, ip, domain, domains, enable, turn on
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
-ms.reviewer:
+ms.reviewer: mkaminska
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
+ms.date:
 ---
 
 # Turn on network protection
@@ -22,15 +22,20 @@ ms.collection: m365-security-compliance
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- Microsoft Defender Antivirus
+
+**Platforms**
+- Windows
 
 > [!TIP]
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-[Network protection](network-protection.md) helps to prevent employees from using any application to access dangerous domains that may host phishing scams, exploits, and other malicious content on the internet. You can [audit network protection](evaluate-network-protection.md) in a test environment to view which apps would be blocked before you enable it.
+[Network protection](network-protection.md) helps to prevent employees from using any application to access dangerous domains that may host phishing scams, exploits, and other malicious content on the internet. You can [audit network protection](evaluate-network-protection.md) in a test environment to view which apps would be blocked before enabling network protection.
 
-[Learn more about network filtering configuration options](/mem/intune/protect/endpoint-protection-windows-10#network-filtering)
+[Learn more about network filtering configuration options.](/mem/intune/protect/endpoint-protection-windows-10#network-filtering)
 
 ## Check if network protection is enabled
 
@@ -42,13 +47,15 @@ Check if network protection has been enabled on a local device by using Registry
 
 3. Navigate through the nested menus to **SOFTWARE** \> **Policies** \> **Microsoft** \> **Windows Defender** \> **Windows Defender Exploit Guard** \> **Network Protection**.
 
+If the Key is missing,  Navigate to **SOFTWARE** \> **Microsoft** \> **Windows Defender** \> **Windows Defender Exploit Guard** \> **Network Protection**.
+
 4. Select **EnableNetworkProtection** to see the current state of network protection on the device:
 
    - 0, or **Off**
    - 1, or **On**
    - 2, or **Audit** mode
 
-    ![Network Protection registry key.](../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png)
+    :::image type="content" source="../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png" alt-text="Network Protection registry key" lightbox="../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png":::
 
 ## Enable network protection
 
@@ -56,12 +63,14 @@ Enable network protection by using any of these methods:
 
 - [PowerShell](#powershell)
 - [Mobile Device Management (MDM)](#mobile-device-management-mdm)
-- [Microsoft Endpoint Manager / Intune](#microsoft-endpoint-manager-formerly-intune)
+- [Microsoft Endpoint Manager](#microsoft-endpoint-manager)
 - [Group Policy](#group-policy)
+- [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
 
 ### PowerShell
 
 1. Type **powershell** in the Start menu, right-click **Windows PowerShell** and select **Run as administrator**.
+
 2. Enter the following cmdlet:
 
     ```PowerShell
@@ -80,13 +89,18 @@ Enable network protection by using any of these methods:
 
 Use the [./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](/windows/client-management/mdm/policy-csp-defender) configuration service provider (CSP) to enable or disable network protection or enable audit mode.
 
-### Microsoft Endpoint Manager (formerly Intune)
+[Update Microsoft Defender antimalware platform to the latest version](https://support.microsoft.com/topic/update-for-microsoft-defender-antimalware-platform-92e21611-8cf1-8e0e-56d6-561a07d144cc) before you enable or disable network protection or enable audit mode.
+
+
+### Microsoft Endpoint Manager
 
 1. Sign into the Microsoft Endpoint Manager admin center (https://endpoint.microsoft.com).
 
 2. Go to **Devices** > **Configuration profiles** > **Create profile**.
 
-3. In the **Create a profile** flyout, select **Endpoint protection** from the list of templates, and then select **Create**.
+3. In the **Create a profile** flyout, select **Platform** and choose the **Profile Type** as **Templates**.
+
+4. In the **Template name**, Choose **Endpoint protection** from the list of templates, and then select **Create**.
 
 4. Go to **Endpoint protection** > **Basics**, provide a name for your profile, and then select **Next**.
 
@@ -118,19 +132,51 @@ Use the following procedure to enable network protection on domain-joined comput
     - **Disable (Default)** - The Network protection feature won't work. Users won't be blocked from accessing malicious domains.
     - **Audit Mode** - If a user visits a malicious IP address or domain, an event will be recorded in the Windows event log. However, the user won't be blocked from visiting the address.
 
+   > [!IMPORTANT]
+   > To fully enable network protection, you must set the Group Policy option to **Enabled** and also select **Block** in the options drop-down menu.
+
+   > [!NOTE]
+   > Optional: Follow the steps in [Check if network protection is enabled](#check-if-network-protection-is-enabled) to verify that your Group Policy settings are correct.
+
+### Microsoft Endpoint Configuration Manager
+
+1. Open the Configuration Manager console.
+
+2. Go to **Assets and Compliance** > **Endpoint Protection** > **Windows Defender Exploit Guard**.
+
+3. Select **Create Exploit Guard Policy** from the ribbon to create a new policy.
+   - To edit an existing policy, select the policy, then select **Properties** from either the ribbon or the right-click menu. Edit the **Configure network protection** option from the **Network Protection** tab.  
+
+4. On the **General** page, specify a name for the new policy and verify the **Network protection** option is enabled.
+
+5. On the **Network protection** page, select one of the following settings for the **Configure network protection** option:
+   - **Block**
+   - **Audit**
+   - **Disabled**
+   
+6. Complete the rest of the steps, and save the policy. 
+
+7. From the ribbon, select **Deploy** to deploy the policy to a collection.
+
+
 > [!IMPORTANT]
-> To fully enable network protection, you must set the Group Policy option to **Enabled** and also select **Block** in the options drop-down menu.
-
-Confirm network protection is enabled on a local computer by using Registry editor:
-
-1. Select **Start** and type **regedit** to open **Registry Editor**.
-
-2. Navigate to **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\Network Protection\EnableNetworkProtection**
-
-3. Select **EnableNetworkProtection** and confirm the value:
-   - 0=Off
-   - 1=On
-   - 2=Audit
+> Once you deploy an Exploit Guard policy from Configuration Manager, the Exploit Guard settings will not be removed from the clients if you remove the deployment. `Delete not supported` is recorded in the Configuration Manager client's ExploitGuardHandler.log if you remove the client's Exploit Guard deployment. <!--CMADO8538577-->
+> The following PowerShell script can be run under SYSTEM context to remove these settings:<!--CMADO9907132-->
+>
+> ```powershell
+> $defenderObject = Get-WmiObject -Namespace "root/cimv2/mdm/dmmap" -Class "MDM_Policy_Config01_Defender02" -Filter "InstanceID='Defender' and ParentID='./Vendor/MSFT/Policy/Config'"
+> $defenderObject.AttackSurfaceReductionRules = $null
+> $defenderObject.AttackSurfaceReductionOnlyExclusions = $null
+> $defenderObject.EnableControlledFolderAccess = $null
+> $defenderObject.ControlledFolderAccessAllowedApplications = $null
+> $defenderObject.ControlledFolderAccessProtectedFolders = $null
+> $defenderObject.EnableNetworkProtection = $null
+> $defenderObject.Put()
+>
+> $exploitGuardObject = Get-WmiObject -Namespace "root/cimv2/mdm/dmmap" -Class "MDM_Policy_Config01_ExploitGuard02" -Filter "InstanceID='ExploitGuard' and ParentID='./Vendor/MSFT/Policy/Config'"
+> $exploitGuardObject.ExploitProtectionSettings = $null
+> $exploitGuardObject.Put()
+>```  
 
 ## See also
 

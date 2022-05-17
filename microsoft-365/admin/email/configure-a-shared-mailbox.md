@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
@@ -24,7 +24,7 @@ search.appverid:
 description: "Create a shared mailbox and configure some settings for its users, such as email forwarding and automatic replies."
 ---
 
-# Configure shared mailbox settings
+# Configure Microsoft 365 shared mailbox settings
 
 After you have [created a shared mailbox](create-a-shared-mailbox.md), you'll want to configure some settings for the mailbox users, such as email forwarding and automatic replies. Later, you might want to change other settings, such as the mailbox name, members, or member permissions. 
 

@@ -2,12 +2,12 @@
 title: "Navigation options for SharePoint Online"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 4/7/2020
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - Ent_O365
 - SPO_Content

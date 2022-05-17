@@ -9,14 +9,15 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
-localization_priority: Normal
+ms.author: dansimp
+author: dansimp
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
   - M365-security-compliance
-  - m365initiative-m365-defender
+  - m365solution-m365dsecops
+  - m365solution-overview
 ms.topic: conceptual
 search.appverid: 
   - MOE150
@@ -30,9 +31,9 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
-A modern Security Operations Center (SOC) is an intelligence-driven, adaptive organization that embraces threat defense strategy of moving security processes earlier in the deployment process so that security is built in. This means that the traditional assignment of isolated technologies and processes to single security analysts no longer supports the vast increase in data coming in from multiple sources. Security analysts and engineers are being asked to take a more holistic approach and to use shared insights across different platforms and disciplines to take effective action. 
+A modern Security Operations Center (SOC) is an intelligence-driven, adaptive organization that embraces threat defense strategy of moving security processes earlier in the deployment process so that security is built in. This means that the traditional assignment of isolated technologies and processes to single security analysts no longer supports the vast increase in data coming in from multiple sources. Security analysts and engineers are being asked to take a more holistic approach and to use shared insights across different platforms and disciplines to take effective action.
 
-For this reason, the deployment and implementation of Microsoft’s Defender platform will need careful planning with the SOC team to optimize the day-to-day operations and lifecycle management of the Defender service itself. This content explores several concepts on how to operationalize and integrate Microsoft 365 Defender with either new or existing people, processes, and technologies that form the basis for modern security operations.
+For this reason, the deployment and implementation of the Microsoft 365 Defender platform will need careful planning with the SOC team to optimize the day-to-day operations and lifecycle management of the Microsoft 365 Defender service itself. This content explores several concepts on how to operationalize and integrate Microsoft 365 Defender with either new or existing people, processes, and technologies that form the basis for modern security operations.
 
 If you are not already familiar with Microsoft 365 Defender, see these articles:
 

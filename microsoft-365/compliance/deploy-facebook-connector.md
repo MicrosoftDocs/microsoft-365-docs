@@ -2,22 +2,25 @@
 title: "Deploy a connector to archive Facebook Business pages data"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
 - MET150
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Administrators can set up a native connector to import and archive Facebook Business pages to Microsoft 365. After this data is imported to Microsoft 365, you can use compliance features such as legal hold, content search, and retention policies to manage the governance of your organization's Facebook data."
 ---
 
 # Deploy a connector to archive Facebook Business pages data
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 This article contains the step-by-step process to deploy a connector that uses the Office 365 Import service to import data from Facebook Business pages to Microsoft 365. For a high-level overview of this process and a list of prerequisites required to deploy a Facebook connector, see [Set up a connector to archive Facebook data](archive-facebook-data-with-sample-connector.md).
 
@@ -181,9 +184,9 @@ This article contains the step-by-step process to deploy a connector that uses t
 
 5. Click **Save** to save the connector settings.
 
-## Step 5: Set up a Facebook connector in the Microsoft 365 compliance center
+## Step 5: Set up a Facebook connector in the compliance portal
 
-1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and then click **Data connectors** in the left nav.
+1. Go to the Microsoft Purview compliance portal, and then select <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**Data connectors**</a.
 
 2. On the **Data connectors** page under **Facebook Business pages**, click **View**.
 

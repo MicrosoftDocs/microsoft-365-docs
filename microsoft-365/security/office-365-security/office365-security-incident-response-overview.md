@@ -12,7 +12,7 @@ ms.collection:
   - o365_security_incident_response
   - M365-security-compliance
 
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
   - MET150
 description: This solution tells you what the most common cybersecurity attacks might look like in Microsoft 365 and how to respond to them

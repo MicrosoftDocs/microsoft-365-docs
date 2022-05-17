@@ -9,7 +9,7 @@ ms.date:
 audience: ITPro
 ms.topic: conceptual
 
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
   - MET150
 ms.assetid: 75af74b2-c7ea-4556-a912-8c48e07271d3
@@ -51,11 +51,11 @@ EOP (that is, Microsoft 365 organizations without Microsoft Defender for Office 
 
 - **Spoof intelligence**: Use the spoof intelligence insight to review detected spoofed senders in messages from external and internal domains, and manually allow or block those detected senders. For more information, see [Spoof intelligence insight in EOP](learn-about-spoof-intelligence.md).
 
-- **Anti-phishing policies in EOP**: Turn spoof intelligence on or off, turn unauthenticated sender identification in Outlook on or off, and specify the action for blocked spoofed senders. For more information, see [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md).
+- **Anti-phishing policies in EOP**: Turn spoof intelligence on or off, turn unauthenticated sender indicators in Outlook on or off, and specify the action for blocked spoofed senders. For more information, see [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md).
 
 - **Allow or block spoofed senders in the Tenant Allow/Block List**: When you override the verdict in the spoof intelligence insight, the spoofed sender becomes a manual allow or block entry that only appears on the **Spoof** tab in the Tenant Allow/Block List. You can also manually create allow or block entries for spoof senders before they're detected by spoof intelligence. For more information, see [Manage the Tenant Allow/Block List in EOP](tenant-allow-block-list.md).
 
-- **Implicit email authentication**: EOP enhances standard email authentication checks for inbound email ([SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md), and [DMARC](use-dmarc-to-validate-email.md)) with sender reputation, sender history, recipient history, behavioral analysis, and other advanced techniques to help identify forged senders. For more information, see [Email authentication in Microsoft 365](email-validation-and-authentication.md).
+- **Implicit email authentication**: EOP enhances standard email authentication checks for inbound email ([SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md), and [DMARC](use-dmarc-to-validate-email.md) with sender reputation, sender history, recipient history, behavioral analysis, and other advanced techniques to help identify forged senders. For more information, see [Email authentication in Microsoft 365](email-validation-and-authentication.md).
 
 ## Additional anti-phishing protection in Microsoft Defender for Office 365
 

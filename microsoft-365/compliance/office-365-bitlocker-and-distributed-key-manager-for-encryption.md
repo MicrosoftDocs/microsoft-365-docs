@@ -1,5 +1,5 @@
 ---
-title: "BitLocker for Encryption"
+title: "BitLocker for encryption"
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -8,7 +8,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+ms.localizationpriority: null
 search.appverid:
 - MET150
 ms.collection:
@@ -20,6 +20,8 @@ ms.custom: seo-marvel-apr2020
 ---
 
 # BitLocker and Distributed Key Manager (DKM) for Encryption
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft servers use BitLocker to encrypt the disk drives containing customer data at rest at the volume-level. BitLocker encryption is a data protection feature that is built into Windows. BitLocker is one of the technologies used to safeguard against threats in case there are lapses in other processes or controls (e.g., access control or recycling of hardware) that could lead to someone gaining physical access to disks containing customer data. In this case, BitLocker eliminates the potential for data theft or exposure because of lost, stolen, or inappropriately decommissioned computers and disks.
 

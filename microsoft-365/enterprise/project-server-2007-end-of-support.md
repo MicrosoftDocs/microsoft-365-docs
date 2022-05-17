@@ -2,12 +2,12 @@
 title: "Project Server 2007 end of support roadmap"
 ms.author: efrene
 author: efrene
-manager: laurawi
+manager: scotv
 ms.date: 1/31/2018
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
 - CSH

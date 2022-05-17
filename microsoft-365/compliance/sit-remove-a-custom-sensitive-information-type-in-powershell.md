@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-security-compliance
 search.appverid: 
@@ -19,7 +19,7 @@ description: "Learn how to remove a custom sensitive information type using Powe
 
 # Remove a custom sensitive information type using PowerShell
 
-
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 In Compliance center PowerShell, there are two methods to remove custom sensitive information types:
 
@@ -72,8 +72,8 @@ In Compliance center PowerShell, there are two methods to remove custom sensitiv
 
 ## More information
 
-- [Learn about data loss prevention](dlp-learn-about-dlp.md)
+- [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md)
 
 - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
 
-- [What the DLP functions look for](what-the-dlp-functions-look-for.md)
+- [Sensitive information type functions](sit-functions.md)

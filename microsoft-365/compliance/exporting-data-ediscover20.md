@@ -1,25 +1,27 @@
 ---
-title: "Export case data in Advanced eDiscovery"
+title: "Export case data in eDiscovery (Premium)"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance 
 search.appverid: 
 - MOE150
 - MET150
 ms.assetid: 
-description: "Learn how to export or download content from a review set for presentations or external reviews in an Advanced eDiscovery case."
+description: "Learn how to export or download content from a review set for presentations or external reviews in an eDiscovery (Premium) case."
 ms.custom: seo-marvel-mar2020
 ---
 
-# Export case data in Advanced eDiscovery
+# Export case data in eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 There are three ways to export data from a review set:
 

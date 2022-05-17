@@ -2,20 +2,17 @@
 title: Troubleshoot performance issues for Microsoft Defender for Endpoint on macOS
 description: Troubleshoot performance issues in Microsoft Defender for Endpoint on macOS.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, performance
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
   - m365-security-compliance
-  - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
 ---
@@ -28,7 +25,8 @@ ms.technology: mde
 **Applies to:**
 
 - [Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md)
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -47,7 +45,8 @@ The following steps can be used to troubleshoot and mitigate these issues:
 
     - From the user interface. Open Microsoft Defender for Endpoint on macOS and navigate to **Manage settings**.
 
-      ![Manage real-time protection screenshot.](images/mdatp-36-rtp.png)
+      :::image type="content" source="images/mdatp-36-rtp.png" alt-text=" The Manage real-time protection page" lightbox="images/mdatp-36-rtp.png":::
+      
 
     - From the Terminal. For security purposes, this operation requires elevation.
 

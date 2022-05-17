@@ -2,13 +2,13 @@
 title: "Manage Industry news"
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - Adm_TOC 
@@ -31,7 +31,7 @@ To provide your users with up-to-date news headlines about your industry and inf
 
 You have the option to send your users a daily Industry Updates email with headlines and links to full articles. Users can customize their email updates by following additional topics, choosing when the update is delivered, excluding articles behind paywalls, and selecting the number of articles they want to see.
 
-Signed-in users who go to the Bing homepage see your industry's news feed under the personalized info for your organization.
+Signed-in users who go to the Bing homepage see your industry's news feed under the personalized info for your organization.
 
 :::image type="content" source="../../media/manage-industry-news-2.jpg" alt-text="Screenshot of image carousel with industry news from the web.":::
 
@@ -96,7 +96,7 @@ When your users sign in to Microsoft Edge (release 87 or higher) with a valid wo
 3. Select **Allow Office 365 content on the new tab page**. When enabled, users can customize their new tab to show  information from Office 365, including recommended and recent files, along with frequently used SharePoint sites and other information.
 4. Select **Show company information and industry news on the new tab page**. News articles about your organization and industry appear for users that choose to see articles on their new tab.
 
-## Related articles
+## Related content
 
 - [Microsoft Search](/microsoftsearch/)
-- [Manage your data and service](./index.yml)
+- [Manage your data and service](/admin)

@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
@@ -24,7 +24,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn how to save the content of a former employee's mailbox."
+description: "Once you've blocked a user from being able to log into your organization, learn two ways you can save the contents of the former employee's mailbox."
 ---
 
 # Step 2 - Save the contents of a former employee's mailbox

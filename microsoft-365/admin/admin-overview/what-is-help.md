@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
@@ -22,7 +22,7 @@ search.appverid:
 - BEA160
 - GEA150
 ROBOTS: NOINDEX
-description: "Learn about all the ways you can get help using the Microsoft 365 admin center."
+description: "Make the most of your Microsoft 365 subscription by using the help integrated throughout Microsoft 365."
 ---
 <!-- The following is just placeholder text from Madhura's mail. We need to add images/examples of each -->
 

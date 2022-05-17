@@ -1,14 +1,14 @@
 ---
-title: "Microsoft Productivity Score - Mobility"
+title: "Microsoft Productivity Score and mobility insights"
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
@@ -21,7 +21,7 @@ search.appverid:
 description: "Details of the Mobility - people experiences Productivity score."
 ---
 
-# Mobility – People experiences
+# Mobility insights score – People experiences
 
 Productivity Score provides insights into your organization's digital transformation journey through its use of Microsoft 365 and the technology experiences that support it. Your organization's score reflects people and technology experience measurements and can be compared to benchmarks from organizations similar to yours. The mobility category is part of the people experiences measures. To learn more, check out the [Productivity Score overview](productivity-score.md) and read [Microsoft's Privacy Statement](https://privacy.microsoft.com/privacystatement).
 

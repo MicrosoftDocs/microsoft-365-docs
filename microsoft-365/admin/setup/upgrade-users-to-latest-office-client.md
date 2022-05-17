@@ -3,11 +3,11 @@ title: Upgrade your Office 2010 to Microsoft 365 - Microsoft 365 admin
 f1.keywords:
 - NOCSH
 ms.author: kwekua
-author: kwekuako
+author: kwekua
 manager: scotv
 audience: Admin
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - Adm_TOC

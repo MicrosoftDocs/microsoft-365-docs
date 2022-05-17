@@ -2,24 +2,24 @@
 title: "Move users to a different subscription"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
-ms.reviewer: micurn, nicholak
+ms.reviewer: shegu, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- commerce_subscriptions
 - AdminSurgePortfolio
 - manage_licenses
-- commerce_subscriptions
 search.appverid: MET150 
 description: "Learn how to move users between subscriptions."
-ms.date: 07/01/2020 
+ms.date: 05/12/2022
 ---
 
 # Move users to a different subscription
@@ -35,12 +35,6 @@ You must be a Global, License, or User admin to assign licenses. For more inform
 ::: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
- 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.
 
 ::: moniker-end
 

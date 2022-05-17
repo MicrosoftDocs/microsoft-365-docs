@@ -2,7 +2,7 @@
 title: "SharePoint Server 2007 end of support roadmap"
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: scotv
 ms.date: 01/28/2019
 audience: ITPro
 ms.topic: conceptual
@@ -17,7 +17,7 @@ ms.custom:
 - 'AppDefToBDC'
 - seo-marvel-apr2020
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - Ent_O365
 - SPO_Content

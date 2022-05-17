@@ -2,17 +2,15 @@
 title: Use automated investigations to investigate and remediate threats
 description: Understand the automated investigation flow in Microsoft Defender for Endpoint.
 keywords: automated, investigation, detection, Microsoft Defender for Endpoint
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: JoeDavies-MSFT
-ms.author: josephd
-ms.date: 02/02/2021
-localization_priority: Normal
+author: dansimp
+ms.author: dansimp
+ms.date: 11/24/2021
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -28,8 +26,12 @@ ms.custom: AIR
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- Microsoft Defender Antivirus
+
+**Platforms**
+- Windows
 
 Want to see how it works? Watch the following video:
 
@@ -77,18 +79,25 @@ Depending on the [level of automation](automation-levels.md) set for your organi
 All remediation actions, whether pending or completed, are tracked in the [Action center](auto-investigation-action-center.md). If necessary, your security operations team can undo a remediation action. To learn more, see [Review and approve remediation actions following an automated investigation](/microsoft-365/security/defender-endpoint/manage-auto-investigation).
 
 > [!TIP]
-> Check out the new, unified investigation page in the Microsoft 365 security center. To learn more, see [(NEW!) Unified investigation page](/microsoft-365/security/defender/m365d-autoir-results#new-unified-investigation-page).
+> Check out the new, unified investigation page in the Microsoft 365 Defender portal. To learn more, see [(NEW!) Unified investigation page](/microsoft-365/security/defender/m365d-autoir-results#new-unified-investigation-page).
 
 ## Requirements for AIR
 
 Your organization must have Defender for Endpoint (see [Minimum requirements for Microsoft Defender for Endpoint](minimum-requirements.md)).
 
+> [!NOTE]
+> Automated investigation and response requires Microsoft Defender Antivirus for running in passive mode or active mode. If Microsoft Defender Antivirus is disabled or uninstalled, Automated Investigation and Response will not function correctly.
+
 Currently, AIR only supports the following OS versions:
 
+- Windows Server 2012 R2 (Preview)
+- Windows Server 2016 (Preview)
 - Windows Server 2019
+- Windows Server 2022
 - Windows 10, version 1709 (OS Build 16299.1085 with [KB4493441](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441)) or later
 - Windows 10, version 1803 (OS Build 17134.704 with [KB4493464](https://support.microsoft.com/help/4493464/windows-10-update-kb4493464)) or later
 - Windows 10, version [1803](/windows/release-information/status-windows-10-1809-and-windows-server-2019) or later
+- Windows 11
 
 ## Next steps
 
@@ -100,4 +109,4 @@ Currently, AIR only supports the following OS versions:
 
 - [PUA protection](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
 - [Automated investigation and response in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/office-365-air)
-- [Automated investigation and response in Microsoft 365 Defender](/microsoft-365/security/defender/mtp-autoir)
+- [Automated investigation and response in Microsoft 365 Defender](/microsoft-365/security/defender/m365d-autoir)

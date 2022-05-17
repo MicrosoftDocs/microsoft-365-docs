@@ -2,11 +2,11 @@
 title: "Configure Microsoft 365 user account properties with PowerShell"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: Ent_O365

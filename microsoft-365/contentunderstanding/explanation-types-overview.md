@@ -11,7 +11,7 @@ search.appverid:
 ms.collection:
     - enabler-strategic
     - m365initiative-syntex
-localization_priority: Priority
+ms.localizationpriority:  medium
 description: Learn more about phrase list, regular expression, and proximity explanation types in Microsoft SharePoint Syntex.
 ---
 
@@ -66,7 +66,7 @@ If you have capitalization requirements in your phrase list, you can select the 
 ![Only exact capitalization.](../media/content-understanding/exact-caps.png)
 
 > [!NOTE]
-> Instead of manually creating a phrase list explanation, use the [explanation library](explanation-types-overview.md#use-explanation-templates) to use phrase list templates for a common phrase list, such as *date*, *phone number*, or *credit card number*.
+> Instead of manually creating a phrase list explanation, use the [explanation library](explanation-templates.md) to use phrase list templates for a common phrase list, such as *date*, *phone number*, or *credit card number*.
 
 ## Regular expression
 
@@ -114,10 +114,10 @@ To add a regular expression explanation type:
 
 The following table shows inline character options that currently are not available for use in regular expression patterns.
 
-|Option  |State  |Current functionality  |
-|---------|---------|---------|
-|Case sensitivity | Currently not supported. | All matches performed are case-insensitive.  |
-|Line anchors     | Currently not supported. | Unable to specify a specific position in a string where a match must occur.   |
+|Option|State|Current functionality|
+|---|---|---|
+|Case sensitivity|Currently not supported.|All matches performed are case-insensitive.|
+|Line anchors|Currently not supported.| Unable to specify a specific position in a string where a match must occur.|
 
 ## Proximity
 
@@ -135,7 +135,7 @@ Use the proximity explanation to define how far away the phone number explanatio
 ![Proximity explanation.](../media/content-understanding/proximity.png)
 
 > [!NOTE]
-> Currently, regular expressions can’t be used with the proximity explanation type.
+> Regular expressions currently can't be used with the proximity explanation type.
 
 #### What are tokens?
 
@@ -144,11 +144,11 @@ To use the proximity explanation type, you need to understand what a token is. T
 The following table shows examples for how to determine the number of tokens in a phrase.
 
 |Phrase|Number of tokens|Explanation|
-|--|--|--|
+|---|---|---|
 |`Dog`|1|A single word with no punctuation or spaces.|
 |`RMT33W`|1|A record locator number. It might include numbers and letters, but doesn't have punctuation.|
-|`425-555-5555`|5|A phone number. Each punctuation mark is a single token, so `425-555-5555` is 5 tokens:<br>`425`<br>`-`<br>`555`<br>`-`<br>`5555` |
-|`https://luis.ai`|7|`https`<br>`:`<br>`/`<br>`/`<br>`luis`<br>`.`<br>`ai`<br>|
+|`425-555-5555`|5|A phone number. Each punctuation mark is a single token, so `425-555-5555` is 5 tokens:<br>`425`<br>`-`<br>`555`<br>`-`<br>`5555`|
+|`https://luis.ai`|7|`https`<br>`:`<br>`/`<br>`/`<br>`luis`<br>`.`<br>`ai`|
 
 #### Configure the proximity explanation type
 
@@ -207,73 +207,18 @@ You can choose the following options for this setting:
 
     In the viewer, you can manually adjust the select box to include the location where the phase occurs. For this setting, you need to select a **Start** and an **End** position. These values represent the number of tokens from the beginning of the document. While you can manually enter in these values, it's easier to manually adjust the select box in the viewer.
 
-## Use explanation templates
+## Considerations when configuring explanations
 
-While you can manually add various phrase list values for your explanation, it can be easier to use the templates provided to you in the explanation library.
+When training a classifier there a few things to keep in mind that will produce more predictable results:
 
-For example, instead of manually adding all the variations for *date*, you can use the phrase list template for *date* because it already includes many phrase lists values:
+- The more documents you train with, the more accurate the classifier will be.  When possible, use more than 5 good documents and use more than 1 bad document.  If the libraries you're working with have several different document types in it, several of each type lead to more predictable results.
+- Labeling the document plays an important role in the training process.  They are used together with explanations to train the model.  You may see some anomalies when training a classifier with documents that don't have a lot of content in them.  The explanation may not match anything in the document but since it was labeled as a "good" document you may see it be a match during training.
+- When creating explanations, it uses OR logic in combination with the label to determine if it is a match.  Regular expression that uses AND logic may be more predictable.  Here is a sample regular expression to use on real documents as your training them.  Note the text highlighted in red is the phrase(s) you would be looking for.
 
-![Explanation library.](../media/content-understanding/explanation-template.png)
+    <pre>(?=.*network provider)(?=.*participating providers).*</pre>
 
-The explanation library includes commonly used *phrase list* explanations, including:
+- Labels and explanations work together and are used in training the model.  It's not a series of rules that can be de-coupled and precise weights or prediction applied to each variable that has been configured.  The greater the variation of documents used in the training will provide more accuracy in the model.
 
-- Date: Calendar dates, all formats. Includes text and numbers (for example, "Dec 9, 2020").
-- Date (numeric): Calendar dates, all formats. Includes numbers (for example, 1-11-2020).
-- Time: 12 and 24 hour formats.
-- Number: Positive and negative numbers up to two decimals.
-- Percentage: A list of patterns representing a percentage. For example, 1%, 11%, 100%, or 11.11%.
-- Phone number: Common US and International formats. For example, 000 000 0000, 000-000-0000, (000)000-0000, or (000) 000-0000.
-- Zip code: US Zip code formats. For example, 11111, 11111-1111.
-- First word of sentence: Common patterns for words up to nine characters.
-- End of sentence: Common punctuation for end of a sentence.
-- Credit card: Common credit card number formats. For example, 1111-1111-1111-1111.
-- Social security number: US Social Security Number format. For example, 111-11-1111.
-- Checkbox: A phrase list representing variations on a filled in checkbox. For example, _X_, __X_.
-- Currency: Major international symbols. For example, $.
-- Email CC: A phrase list with the term 'CC:', often found near the names or email addresses of other people or groups the message was sent to.
-- Email date: A phrase list with the term 'Sent on:', often found near the date the email was sent.
-- Email greeting: Common opening lines for emails.
-- Email recipient: A phrase list with the term 'To:', often found near the names or email addresses of people or groups the message was sent to.
-- Email sender: A phrase list with the term 'From:', often found near the sender's name or email address.
-- Email subject: A phrase list with the term 'Subject:', often found near the email's subject.
+### See also
 
-The explanation library also includes commonly used *regular expression* explanations, including:
-
-- 6 to 17 digit numbers: Matches any number from 6 to 17 digits long. US bank account numbers fit this pattern.
-- Email address: Matches a common type of email address like meganb@contoso.com.
-- US taxpayer ID number: Matches a three-digit number starting with 9 followed by a 6 digit number starting with 7 or 8.
-- Web address (URL): Matches the format of a web address, starting with http:// or https://.
-
-In addition, the explanation library includes three automatic template types that work with the data you've labeled in your example files:
-
-- After label: The words or characters that occur after the labels in the example files.
-- Before label: The words or characters that occur before the labels in the example files.
-- Labels: Up to the first 10 labels from the example files.
-
-To give you an example of how automatic templates work, in the following example file, we'll use the Before label explanation template to help give the model more information to get a more accurate match.
-
-![Example file.](../media/content-understanding/before-label.png)
-
-When you select the Before label explanation template, it will look for the first set of words that appear before the label in your example files. In the example, the words that are identified in the first example file is "As of".
-
-![Before label template.](../media/content-understanding/before-label-explanation.png)
-
-You can select **Add** to create an explanation from the template.  As you add more example files, additional words will be identified and added to the phrase list.
-
-![Add the label.](../media/content-understanding/before-label-add.png)
-
-#### To use a template from the explanation library
-
-1. From the **Explanations** section of your model's **Train** page, select **New**, then select **From a template**.
-
-   ![Add Before Label.](../media/content-understanding/from-template.png)
-
-2.  On the **Explanation templates** page, select the explanation you want to use, then select **Add**.
-
-    ![Select a template.](../media/content-understanding/phone-template.png)
-
-3. The information for the template you selected displays on the **Create an explanation** page. If needed, edit the explanation name and add or remove items from the phrase list.
-
-    ![Edit template.](../media/content-understanding/phone-template-live.png)
-
-4. When finished, select **Save**.
+[Use explanation templates in SharePoint Syntex](explanation-templates.md)

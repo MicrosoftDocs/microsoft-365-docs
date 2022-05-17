@@ -6,12 +6,15 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: bookings
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8c3a913c-2247-4519-894d-b6263eeb9920
 description: "Use the Microsoft 365 admin center or Windows PowerShell to delete Bookings calendars."
 ---
 
 # Delete a booking calendar in Bookings
+
+> [!NOTE]
+> This article helps you to interact with the latest version of Microsoft Bookings. Previous versions will be retired in coming months.
 
 This article explains how you can delete an unwanted booking calendar. You can delete the booking calendar in the Microsoft 365 admin center or you can use PowerShell. The Bookings calendar is a mailbox in Exchange Online so you delete the corresponding user account to delete the booking calendar.
 

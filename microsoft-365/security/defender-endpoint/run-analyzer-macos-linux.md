@@ -2,8 +2,6 @@
 title:  Run the client analyzer on macOS or Linux
 description: Learn how to run the Microsoft Defender for Endpoint Client Analyzer on macOS or Linux
 keywords: client analyzer, troubleshoot sensor, analyzer, mdeanalyzer, macos, linux, mdeanalyzer
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,24 +13,23 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
 ---
 
 # Run the client analyzer on macOS and Linux
 
+
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 ## Running the analyzer through GUI scenario
 
 1. Download the [XMDE Client Analyzer](https://aka.ms/XMDEClientAnalyzer) tool to the macOS or Linux machine you need to investigate.
 
    > [!NOTE]
-   > The current SHA256 hash of 'XMDEClientAnalyzer.zip' that is downloaded from the above link is: '973725417D136B7B17AF4B301F1E99BA21D7F4A7DF88036DC5A731A4B768A8B2'.
+   > The current SHA256 hash of 'XMDEClientAnalyzer.zip' that is downloaded from the above link is: 'A9BF065DE3F2608A309BC4F5295548BB9931F107BF2F01DC42A789C5527C1308'.
 
 2. Extract the contents of XMDEClientAnalyzer.zip on the machine.
 
@@ -49,13 +46,13 @@ ms.technology: m365d
 
 Open a terminal or SSH into the relevant machine and run the following commands:
 
-1. `wget --quiet -O XMDEClientAnalyzer.zip https://aka.ms/XMDEClientAnalyzer *`
+1. `wget --quiet -O XMDEClientAnalyzer.zip https://aka.ms/XMDEClientAnalyzer`
 
 2. `unzip -q XMDEClientAnalyzer.zip`
 
 3. `cd XMDEClientAnalyzer`
 
-4. `chmod +x mde_support_tool.sh"`
+4. `chmod +x mde_support_tool.sh`
 
 3. Run as non-root use to install required pip and lxml which components: `./mde_support_tool.sh`
 
@@ -65,13 +62,15 @@ Open a terminal or SSH into the relevant machine and run the following commands:
 > - For Linux, the analyzer requires 'lxml' to produce the result output. If not installed, the analyzer will try to fetch it from the official repository for python packages below: <https://files.pythonhosted.org/packages/\*/lxml\*.whl>
 > 
 > - In addition, the tool currently requires Python version 3 or later to be installed.
-> 
+>
+> - If you are running on a machine that cannot use Python 3 or fetch the lxml component, then you can download a binary based version of the analyzer that does not have any of the requirements: [XMDE Client Analyzer Binary](https://aka.ms/XMDEClientAnalyzerBinary)
+>
 > - If your device is behind a proxy, then you can simply pass the proxy server as an environment variable to the mde_support_tool.sh script. For example:
 > `https_proxy=https://myproxy.contoso.com:8080 ./mde_support_tool.sh"`
 
 Example:
 
-![Image of command line example.](images/4ca188f6c457e335abe3c9ad3eddda26.png)
+:::image type="content" source="images/4ca188f6c457e335abe3c9ad3eddda26.png" alt-text="The  command line example" lightbox="images/4ca188f6c457e335abe3c9ad3eddda26.png":::
 
 Additional syntax help:
 

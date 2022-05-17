@@ -2,14 +2,14 @@
 title: "Service assurance in the Security & Compliance Center"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 6/29/2018
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - BCS160
@@ -19,6 +19,8 @@ description: "Download third-party audits, find out how Microsoft keeps customer
 ---
 
 # Service assurance in the Security & Compliance Center
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Use Service assurance in the Security & Compliance Center to access documents that describe a variety of topics, including: 
   
@@ -90,7 +92,7 @@ Depending on your specific set-up, options included in your view might have some
 ## Get help with Service assurance
 <a name="addother"> </a>
 
-[Contact support for business products - Admin Help](../business-video/get-help-support.md).
+[Contact support for business products - Admin Help](../admin/get-help-support.md).
   
 ## Frequently Asked Questions
 <a name="addother"> </a>

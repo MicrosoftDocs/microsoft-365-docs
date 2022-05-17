@@ -1,29 +1,31 @@
 ---
-title: "Tagging and Relevance training in Advanced eDiscovery"
+title: "Tagging and Relevance training in eDiscovery (Premium)"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
 - MOE150
 - MET150
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Learn the steps to tag and then work with a training sample of 40 files during the Relevance training stage of Advanced eDiscovery."
+description: "Learn the steps to tag and then work with a training sample of 40 files during the Relevance training stage of eDiscovery (Premium)."
 ---
 
-# Tagging and Relevance training in Advanced eDiscovery
+# Tagging and Relevance training in eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
   
-This article describes the procedure for working with the Relevance training module in Advanced eDiscovery.
+This article describes the procedure for working with the Relevance training module in Microsoft Purview eDiscovery (Premium).
   
-After Assessment is completed in Advanced eDiscovery, and you enter the Relevance training stage, a training sample of 40 files is brought into the Tag tab for tagging.
+After Assessment is completed in eDiscovery (Premium), and you enter the Relevance training stage, a training sample of 40 files is brought into the Tag tab for tagging.
   
 ## Performing Relevance training
 

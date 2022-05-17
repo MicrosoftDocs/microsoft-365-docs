@@ -12,12 +12,10 @@ f1.keywords:
   - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
-  - M365-security-compliance
-  - m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
 ---
@@ -40,8 +38,8 @@ This function returns a table with the following columns:
 
 | Column | Data type | Description |
 |------------|-------------|-------------|
-| `IP` | string | IP address  |
-| `DeviceId` | string | Unique identifier for the device in the service |
+| `IP` | `string` | IP address  |
+| `DeviceId` | `string` | Unique identifier for the device in the service |
 
 
 ## Syntax

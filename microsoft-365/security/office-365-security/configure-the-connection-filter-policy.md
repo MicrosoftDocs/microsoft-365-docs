@@ -9,7 +9,7 @@ ms.date:
 audience: ITPro
 ms.topic: how-to
 
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
   - MET150
 ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
@@ -31,7 +31,6 @@ ms.prod: m365-security
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-
 If you're a Microsoft 365 customer with mailboxes in Exchange Online or a standalone Exchange Online Protection (EOP) customer without Exchange Online mailboxes, you use connection filtering in EOP (specifically, the default connection filter policy) to identify good or bad source email servers by their IP addresses. The key components of the default connection filter policy are:
 
 - **IP Allow List**: Skip spam filtering for all incoming messages from the source email servers that you specify by IP address or IP address range. For scenarios where spam filtering might still occur on messages from these sources, see the [Scenarios where messages from sources in the IP Allow List are still filtered](#scenarios-where-messages-from-sources-in-the-ip-allow-list-are-still-filtered) section later in this article. For more information about how the IP Allow List should fit into your overall safe senders strategy, see [Create safe sender lists in EOP](create-safe-sender-lists-in-office-365.md).
@@ -40,7 +39,7 @@ If you're a Microsoft 365 customer with mailboxes in Exchange Online or a standa
 
 - **Safe list**: The *safe list* is a dynamic allow list in the Microsoft datacenter that requires no customer configuration. Microsoft identifies these trusted email sources from subscriptions to various third-party lists. You enable or disable the use of the safe list; you can't configure the source email servers on the safe list. Spam filtering is skipped on incoming messages from the email servers on the safe list.
 
-This article describes how to configure the default connection filter policy in the Microsoft 365 Microsoft 365 Defender portal or in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes). For more information about how EOP uses connection filtering is part of your organization's overall anti-spam settings, see see [Anti-spam protection](anti-spam-protection.md).
+This article describes how to configure the default connection filter policy in the Microsoft 365 Microsoft 365 Defender portal or in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes). For more information about how EOP uses connection filtering is part of your organization's overall anti-spam settings, see [Anti-spam protection](anti-spam-protection.md).
 
 > [!NOTE]
 > The IP Allow List, safe list, and the IP Block List are one part of your overall strategy to allow or block email in your organization. For more information, see [Create safe sender lists](create-safe-sender-lists-in-office-365.md) and [Create blocked sender lists](create-block-sender-lists-in-office-365.md).
@@ -70,7 +69,7 @@ This article describes how to configure the default connection filter policy in 
 
 ## Use the Microsoft 365 Defender portal to modify the default connection filter policy
 
-1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-spam** in the **Policies** section.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-spam** in the **Policies** section. To go directly to the **Anti-spam policies** page, use <https://security.microsoft.com/antispam>.
 
 2. On the **Anti-spam policies** page, select **Connection filter policy (Default)** from the list by clicking on the name of the policy.
 
@@ -101,7 +100,7 @@ This article describes how to configure the default connection filter policy in 
 
 ## Use the Microsoft 365 Defender portal to view the default connection filter policy
 
-1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-spam** in the **Policies** section.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-spam** in the **Policies** section. To go directly to the **Anti-spam policies** page, use <https://security.microsoft.com/antispam>.
 
 2. On the **Anti-spam policies** page, the following properties are displayed in the list of policies:
 
@@ -148,7 +147,7 @@ For detailed syntax and parameter information, see [Set-HostedConnectionFilterPo
 
 To verify that you've successfully modified the default connection filter policy, do any of the following steps:
 
-- In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-spam** in the **Policies** section \> select **Connection filter policy (Default)** from the list by clicking on the name of the policy, and verify the settings.
+- On the **Anti-spam** page in the Microsoft 365 Defender portal at <https://security.microsoft.com/antispam>, select **Connection filter policy (Default)** from the list by clicking on the name of the policy, and verify the settings.
 
 - In Exchange Online PowerShell or standalone EOP PowerShell, run the following command and verify the settings:
 

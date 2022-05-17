@@ -2,12 +2,12 @@
 title: "Test Microsoft 365 with Test Lab Guides (TLGs)"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 11/14/2019
 audience: ITPro
-ms.topic: hub-page
+ms.topic: landing-page
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: 

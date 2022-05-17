@@ -2,12 +2,12 @@
 title: "Diagnosing performance issues with SharePoint Online"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
-ms.date: 7/9/2019
+manager: scotv
+ms.date: 11/19/2021
 audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - Ent_O365
 - SPO_Content
@@ -25,7 +25,9 @@ description: "This article shows you how you can diagnose common issues with you
 
 This article shows you how you can diagnose common issues with your SharePoint Online site using Internet Explorer developer tools.
   
-There are three different ways that you can identify that a page on a SharePoint Online site has a performance problem with the customizations.
+There are four different ways that you can identify that a page on a SharePoint Online site has a performance problem with the customizations.
+
+- The Site and Page performance diagnostic
   
 - The F12 tool bar network monitor
 
@@ -33,12 +35,22 @@ There are three different ways that you can identify that a page on a SharePoint
 
 - SharePoint Online response header metrics
 
-This topic describes how to use each of these methods to diagnose performance issues. Once you've figured out the cause of the problem, you can work toward a solution using the articles about improving SharePoint performance that you can find on https://aka.ms/tune.
+This topic describes how to use each of these methods to diagnose performance issues. Once you've figured out the cause of the problem, you can work toward a solution using the articles about improving SharePoint performance that you can find on https://aka.ms/tune.  
+
+## Use the Site and Page performance diagnostic from the Microsoft 365 Admin Center
+
+> [!NOTE]
+> If you're an administrator, and you're having trouble with performance in SharePoint, select **Run Tests** below, which will populate the Site and Page Performance diagnostic in the Microsoft 365 Admin Center. These tests will check your configuration and quickly recommend next steps to help improve SharePoint performance for your tenant.
+>> [!div class="nextstepaction"]
+>> [Run Tests: Check SharePoint Performance](https://aka.ms/PillarSiteandPagePerf)
+
+> [!NOTE] 
+> This feature is not available for Microsoft 365 Government, Microsoft 365 operated by 21Vianet, or Microsoft 365 Germany.
   
 ## Using the F12 tool bar to diagnose performance in SharePoint Online
 <a name="F12ToolInfo"> </a>
 
-In this article we use Internet Explorer 11. Versions of the F12 developer tools on other browsers have similar features though they may look slightly different. For information on the F12 developer tools, see:
+In this article, we use Internet Explorer 11. Versions of the F12 developer tools on other browsers have similar features though they may look slightly different. For information on the F12 developer tools, see:
   
 - [What's new in F12 Tools](/previous-versions/windows/internet-explorer/ie-developer/dev-guides/bg182632(v=vs.85))
 

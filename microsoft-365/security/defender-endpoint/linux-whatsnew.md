@@ -2,20 +2,17 @@
 title: What's new in Microsoft Defender for Endpoint on Linux
 description: List of major changes for Microsoft Defender for Endpoint on Linux.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, whatsnew, release
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: security
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
   - m365-security-compliance
-  - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
 ---
@@ -23,6 +20,68 @@ ms.technology: mde
 # What's new in Microsoft Defender for Endpoint on Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+**Applies to:**
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
+## 101.65.77 (30.122032.16577.0)
+
+- Improved the `conflicting_applications` field in `mdatp health` to show only the most recent 10 processes and also to include the process names. This makes it easier to identify which processes are potentially conflicting with Microsoft Defender for Endpoint for Linux.
+- Bug fixes
+
+## 101.62.74 (30.122022.16274.0)
+
+- Addressed an issue where the product would incorrectly block access to files greater than 2GB in size when running on older kernel versions
+- Bug fixes
+
+## 101.60.93 (30.122012.16093.0)
+
+- This version contains a security update for [CVE-2022-23278](https://msrc-blog.microsoft.com/2022/03/08/guidance-for-cve-2022-23278-spoofing-in-microsoft-defender-for-endpoint/)
+
+## 101.60.05 (30.122012.16005.0)
+
+- Added support for kernel version 2.6.32-754.43.1.el6.x86_64 for RHEL 6.10
+- Bug fixes
+
+## 101.58.80 (30.122012.15880.0)
+
+- The command-line tool now supports restoring quarantined files to a location other than the one where the file was originally detected. This can be done through `mdatp threat quarantine restore --id [threat-id] --path [destination-folder]`.
+- Starting with this version, network protection for Linux can be evaluated on demand
+- Bug fixes
+
+## 101.56.62 (30.121122.15662.0)
+
+- Fixed a product crash introduced in 101.53.02 and that has impacted multiple customers
+
+## 101.53.02 (30.121112.15302.0)
+
+- Performance improvements & bug fixes
+
+## 101.52.57 (30.121092.15257.0)
+
+- Added a capability to detect vulnerable log4j jars in use by Java applications. The machine is periodically inspected for running Java processes with loaded log4j jars. The information is reported to the Microsoft Defender for Endpoint backend and is exposed in the Vulnerability Management area of the portal.
+
+## 101.47.76 (30.121092.14776.0)
+
+- Added a new switch to the command-line tool to control whether archives are scanned during on-demand scans. This can be configured through `mdatp config scan-archives --value [enabled/disabled]`. By default, this is set to `enabled`.
+- Bug fixes
+
+## 101.45.13 (30.121082.14513.0)
+
+- Starting with this version, we are bringing Microsoft Defender for Endpoint support to the following distros: 
+  - RHEL6.7-6.10 and CentOS6.7-6.10 versions.
+  - Amazon Linux 2
+  - Fedora 33 or higher
+- Bug fixes
+
+
+## 101.45.00 (30.121072.14500.0)
+
+- Added new switches to the command-line tool:
+  - Control degree of parallelism for on-demand scans. This can be configured through `mdatp config maximum-on-demand-scan-threads --value [number-between-1-and-64]`. By default, a degree of parallelism of `2` is used.
+  - Control whether scans after security intelligence updates are enabled or disabled. This can be configured through `mdatp config scan-after-definition-update --value [enabled/disabled]`. By default, this is set to `enabled`.
+- Changing the product log level now requires elevation
+- Bug fixes
 
 ## 101.39.98 (30.121062.13998.0)
 

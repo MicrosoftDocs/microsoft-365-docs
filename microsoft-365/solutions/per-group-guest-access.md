@@ -7,7 +7,7 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-collaboration
 - m365solution-collabgovernance
@@ -20,7 +20,7 @@ description: "Learn how to prevent guests from being added to a specific group"
 
 # Prevent guests from being added to a specific Microsoft 365 group or Microsoft Teams team
 
-If you want to allow guest access to most groups and teams, but have some where you want to prevent guest access, you can block guest access for individual groups and teams. (Blocking guest access to a team is done by blocking guest access to the associated group.) This prevents new guests from being added but does not remove guests that are already in the group or team.
+If you want to allow guest access to most groups and teams, but have somewhere you want to prevent guest access, you can block guest access for individual groups and teams. (Blocking guest access to a team is done by blocking guest access to the associated group.) This prevents new guests from being added but does not remove guests that are already in the group or team.
 
 If you use sensitivity labels in your organization, we recommend using them to control guest access on a per-group basis. For information about how to do this, [Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 groups, and SharePoint sites](../compliance/sensitivity-labels-teams-groups-sites.md). This is the recommended approach.
 
@@ -39,7 +39,7 @@ You must use the preview version of [Azure Active Directory PowerShell for Graph
 > [!NOTE]
 > You must have global admin rights to run these commands. 
 
-Run the following script, changing */<GroupName/>* to the name of the group where you want to block guest access.
+Run the following script, changing *\<GroupName\>* to the name of the group where you want to block guest access.
 
 ```PowerShell
 $GroupName = "<GroupName>"
@@ -80,7 +80,7 @@ Set-AzureADObjectSetting -TargetType Groups -TargetObjectId $groupID -DirectoryS
 
 ## Allow or block guest access based on their domain
 
-You can allow or block guests who are using a specific domain. For example, if your business (Contoso) has a partnership with another business (Fabrikam), you can add Fabrikam to your Allow list so your users can add those guests to their groups.
+You can allow or block guests who are using a specific domain. For example, if your business (Contoso) has a partnership with another business (Fabrikam), you can add Fabrikam to your allowlist so your users can add those guests to their groups.
 
 For more information, see [Allow or block invitations to B2B users from specific organizations](/azure/active-directory/b2b/allow-deny-list).
 
@@ -91,7 +91,7 @@ By default, guests aren't visible in the Exchange Global Address List. Use the s
 Find the guest's ObjectID by running:
 
 ```PowerShell
-Get-AzureADUser -Filter "userType eq 'Guest'"
+get-AzureADUser -all $true | ?{$_.CreationType -eq "Invitation"}
 ```
 
 Then run the following using the appropriate values for ObjectID, GivenName, Surname, DisplayName, and TelephoneNumber.
@@ -102,7 +102,7 @@ Set-AzureADUser -ObjectId cfcbd1a0-ed18-4210-9b9d-cf0ba93cf6b2 -ShowInAddressLis
 
 ## Related topics
 
-[Collaboration governance planning step-by-step](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[Collaboration governance planning recommendations](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
 
 [Create your collaboration governance plan](collaboration-governance-first.md)
 

@@ -2,13 +2,12 @@
 title: Configure exclusions for files opened by specific processes
 description: You can exclude files from scans if they have been opened by a specific process.
 keywords: Microsoft Defender Antivirus, process, exclusion, files, scans
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.topic: article
@@ -23,7 +22,12 @@ ms.collection: M365-security-compliance
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- Microsoft Defender Antivirus
+
+**Platforms**
+- Windows 
 
 You can exclude files that have been opened by specific processes from Microsoft Defender Antivirus scans. See [Recommendations for defining exclusions](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) before defining your exclusion lists.
 
@@ -168,7 +172,7 @@ Use the following cmdlet:
 Get-MpPreference
 ```
 
-See [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](/powershell/module/defender) for more information on how to use PowerShell with Microsoft Defender Antivirus.
+See [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Microsoft Defender Antivirus cmdlets](/powershell/module/defender) for more information on how to use PowerShell with Microsoft Defender Antivirus.
 
 ### Retrieve a specific exclusions list by using PowerShell
 
@@ -179,7 +183,17 @@ $WDAVprefs = Get-MpPreference
 $WDAVprefs.ExclusionProcess
 ```
 
-See [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](/powershell/module/defender) for more information on how to use PowerShell with Microsoft Defender Antivirus.
+See [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Microsoft Defender Antivirus cmdlets](/powershell/module/defender) for more information on how to use PowerShell with Microsoft Defender Antivirus.
+
+> [!TIP]
+> If you're looking for Antivirus related information for other platforms, see:
+> - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
+> - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
+> - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md)
+> - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
+> - [Configure Defender for Endpoint on Android features](android-configure.md)
+> - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
 
 ## Related articles
 

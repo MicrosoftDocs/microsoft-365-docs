@@ -8,12 +8,12 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: 
+ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid:
@@ -21,19 +21,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
-description: "Determine if your tenant and users meet the requirements, so that you can use Centralized Deployment to deploy Office add-ins."
+description: "Determine if your tenant and users meet the requirements, so that you can use Centralized Deployment to deploy Office Add-ins."
 ---
 
 # Determine if Centralized Deployment of add-ins works for your organization
 
-Centralized Deployment is the recommended and most feature-rich way for most customers to deploy Office add-ins to users and groups within your organization. If you're an admin, use this guidance to determine if your organization and users meet the requirements so that you can use Centralized Deployment.
+Centralized Deployment is the recommended and most feature-rich way for most customers to deploy Office Add-ins to users and groups within your organization. If you're an admin, use this guidance to determine if your organization and users meet the requirements so that you can use Centralized Deployment.
 
 Centralized Deployment provides the following benefits:
 
-- A Global admin can assign an add-in directly to a user, to multiple users via a group, or to everyone in the organization.
-
+- An admin can deploy and assign an add-in directly to a user, to multiple users via a group, or to everyone in the organization (see Admin requirement section for information).
 - When the relevant Office application starts, the add-in automatically downloads. If the add-in supports add-in commands, the add-in automatically appears in the ribbon within the Office application.
-
 - Add-ins no longer appear for users if the admin turns off or deletes the add-in, or if the user is removed from Azure Active Directory or from a group that the add-in is assigned to.
 
 Centralized Deployment supports three desktop platforms Windows, Mac and Online Office apps. Centralized Deployment also supports iOS and Android (Outlook Mobile Add-ins Only).
@@ -42,14 +40,14 @@ It can take up to 24 hours for an add-in to show up for client for all users.
 
 ## Before you begin
 
-Centralized deployment of add-ins requires that the users are using Microsoft 365 Enterprise SKUs: E3/E5/F3 or Business SKUs: Business Basic, Business Standard, Business Premium (and are signed into Office using their organizational ID), and have Exchange Online and active Exchange Online mailboxes. Your subscription directory must either be in, or federated to Azure Active Directory.
+Centralized deployment of add-ins requires that the users are using Microsoft 365 Business licenses (Business Basic, Business Standard, Business Premium), Office 365 Enterprise licenses (E1/E3/E5/F3), or Microsoft 365 Enterprise licenses (E3/E5/F3) (and are signed into Office using their organizational ID), Office 365 Education licenses (A1/A3/A5), or Microsoft 365 Education licenses (A3/A5), and have Exchange Online and active Exchange Online mailboxes. Your subscription directory must either be in or federated to Azure Active Directory.
 You can view specific requirements for Office and Exchange below, or use the [Centralized Deployment Compatibility Checker](#centralized-deployment-compatibility-checker).
 
 Centralized Deployment doesn't support the following:
 
-- Add-ins that target Word, Excel, or PowerPoint in Office 2013
+- Add-ins that target Office MSI version (except Outlook 2016)
 - An on-premises directory service
-- Add-in Deployment to an Exchange On-Prem Mailbox
+- Add-in deployment to an Exchange On-Prem Mailbox
 - Add-in deployment to SharePoint
 - Teams apps
 - Deployment of Component Object Model (COM) or Visual Studio Tools for Office (VSTO) add-ins.
@@ -58,11 +56,11 @@ Centralized Deployment doesn't support the following:
 ### Office Requirements
 
 - For Word, Excel, and PowerPoint add-ins, your users must be using one of the following:
-  - On a Windows device, Version 1704 or later of Microsoft 365 Enterprise SKUs: E3/E5/F3 or Business SKUs: Business Basic, Business Standard, Business Premium.
+  - On a Windows device, Version 1704 or later of Microsoft 365 Business licenses (Business Basic, Business Standard, Business Premium), Office 365 Enterprise licenses (E1/E3/E5/F3), or Microsoft 365 Enterprise licenses (E3/E5/F3).
   - On a Mac, Version 15.34 or later.
 
 - For Outlook, your users must be using one of the following:
-  - Version 1701 or later of Microsoft 365 Enterprise SKUs: E3/E5/F3 or Business SKUs: Business Basic, Business Standard, Business Premium.
+  - Version 1701 or later of Microsoft 365 Business licenses (Business Basic, Business Standard, Business Premium), Office 365 Enterprise licenses (E1/E3/E5/F3), or Microsoft 365 Enterprise licenses (E3/E5/F3).
   - Version 1808 or later of Office Professional Plus 2019 or Office Standard 2019.
   - Version 16.0.4494.1000 or later of Office Professional Plus 2016 (MSI) or Office Standard 2016 (MSI)\*
   - Version 15.0.4937.1000 or later of Office Professional Plus 2013 (MSI) or Office Standard 2013 (MSI)\*
@@ -78,6 +76,14 @@ Microsoft Exchange stores the add-in manifests within your organization's tenant
 
 Check with your organization's Exchange admin to find out which configuration is in use. OAuth connectivity per user can be verified by using the [Test-OAuthConnectivity](/powershell/module/exchange/test-oauthconnectivity) PowerShell cmdlet.
 
+### Admin requirements
+
+In order to deploy an add-in via Centralized Deployment, you need to be either a Global admin or an Exchange admin in the organization.
+
+> [!NOTE]
+> An Exchange admin can deploy an add-in if the **Application Administrator** role is added or if the **App Registrations** property is set to true in Azure Active Directory admin center as shown in the following image:
+>
+> ![image](https://user-images.githubusercontent.com/89943918/144516704-8874a10d-b540-41f3-ae9d-c07a8d7e143f.png)
 
 ### Centralized Deployment Compatibility Checker
 
@@ -93,28 +99,24 @@ Using the Centralized Deployment Compatibility Checker, you can verify whether t
    Import-Module O365CompatibilityChecker
    ```
 
-3. Run the **Invoke-CompatabilityCheck** command:
+3. Run the **Invoke-CompatibilityCheck** command:
 
    ```powershell
    Invoke-CompatibilityCheck
    ```
-   This command prompts you for  *_TenantDomain_* (for example, *TailspinToysIncorporated.onmicrosoft.</span>com*) and  *_TenantAdmin_* credentials (use your global admin credentials), and then requests consent.
+
+   This command prompts you for _TenantDomain_ (for example, _TailspinToysIncorporated.onmicrosoft.com_) and _TenantAdmin_ credentials (use your global admin credentials), and then requests consent.
 
    > [!NOTE]
-   > Depending on the number of users in your tenant, the checker could complete in minutes or hours. 
-  
+   > Depending on the number of users in your tenant, the checker could complete in minutes or hours.
+
 When the tool finishes running, it produces an output file in comma-separated (.csv) format. The file is saved to **the current working directory** by default. The output file contains the following information:
 
 - User Name
-
 - User ID (User's email address)
-
 - Centralized Deployment ready - If the remaining items are true
-
 - Office plan - The plan of Office they are licensed for
-
 - Office Activated - If they have activated Office
-
 - Supported Mailbox - If they are on an OAuth-enabled mailbox
 
 > [!NOTE]
@@ -131,8 +133,7 @@ Centralized Deployment supports assignments to individual users, groups, and eve
 
 Take a look at the following example where Sandra, Sheila, and the Sales Department group are assigned to an add-in. Because the West Coast Sales Department is a nested group, Bert and Fred aren't assigned to an add-in.
 
-![Diagram of sales department.](../../media/683094bb-1160-4cce-810d-26ef7264c592.png)
-
+![MicrosoftTeams-image](../../media/683094bb-1160-4cce-810d-26ef7264c592.png)
 
 ### Find out if a group contains nested groups
 
@@ -144,16 +145,16 @@ You can do the opposite query by resolving the group to see if it's a member of 
 
 ![Membership tab of the Outlook contact card.](../../media/a9f9b6ab-9c19-4822-9e3d-414ca068c42f.png)
 
-Alternately, you can use the Azure Active Directory Graph API to run queries to find the list of groups within a group. For more information, see [Operations on groups | Graph API reference](/previous-versions/azure/ad/graph/api/groups-operations).
+Alternately, you can use the Azure Active Directory Graph API to run queries to find the list of groups within a group. For more information, see [Operations on groups| Graph API reference](/previous-versions/azure/ad/graph/api/groups-operations).
 
 ### Contacting Microsoft for support
 
-If you or your users encounter problems loading the add-in while using Office apps for the web (Word, Excel, etc.), which were centrally deployed, you may need to contact Microsoft support ([learn how](../../business-video/get-help-support.md)). Provide the following information about your Microsoft 365 environment in the support ticket.
+If you or your users encounter problems loading the add-in while using Office apps for the web (Word, Excel, etc.), which were centrally deployed, you may need to contact Microsoft support ([learn how](../../business-video/get-help-support.md). Provide the following information about your Microsoft 365 environment in the support ticket.
 
-| Platform | Debug information |
-|:-----|:-----|
-|Office | Charles/Fiddler logs  <br/>  Tenant ID ([learn how](/onedrive/find-your-office-365-tenant-id))  <br/>  CorrelationID. View the source of one of the office pages and look for the Correlation ID value and send it to support:  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>` |
-|Rich clients (Windows, Mac) | Charles/Fiddler logs  <br/>  Build numbers of the client app (preferably as a screenshot from **File/Account**) |
+|Platform|Debug information|
+|---|---|
+|Office|Charles/Fiddler logs <br/> Tenant ID ([learn how](/onedrive/find-your-office-365-tenant-id)) <br/> CorrelationID. View the source of one of the office pages and look for the Correlation ID value and send it to support:  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">` <br/> `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`|
+|Rich clients (Windows, Mac)|Charles/Fiddler logs <br/> Build numbers of the client app (preferably as a screenshot from **File/Account**)|
 
 ## Related content
 
@@ -161,4 +162,3 @@ If you or your users encounter problems loading the add-in while using Office ap
 [Manage add-ins in the admin center](manage-addins-in-the-admin-center.md) (article)\
 [Centralized Deployment FAQ](../manage/centralized-deployment-faq.yml) (article)\
 [Upgrade your Microsoft 365 for business users to the latest Office client](../setup/upgrade-users-to-latest-office-client.md) (article)
- 

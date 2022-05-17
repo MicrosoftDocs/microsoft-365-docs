@@ -2,12 +2,12 @@
 title: "SharePoint Online modern portal site limits"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 10/9/2019
 audience: Admin
 ms.topic: interactive-tutorial
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_Enterprise
 - SPO_Content

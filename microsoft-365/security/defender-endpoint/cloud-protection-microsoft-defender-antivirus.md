@@ -2,11 +2,10 @@
 title: Cloud protection and Microsoft Defender Antivirus
 description: Learn about cloud protection and Microsoft Defender Antivirus
 keywords: Microsoft Defender Antivirus, next-generation technologies, next-generation av, machine learning, antimalware, security, defender, cloud, cloud protection
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.reviewer: mkaminska
@@ -14,7 +13,7 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
-ms.date: 09/22/2021
+ms.date: 10/18/2021
 ms.collection: M365-security-compliance
 ---
 
@@ -22,12 +21,15 @@ ms.collection: M365-security-compliance
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Microsoft Defender Antivirus
+
+**Platforms**
+- Windows
 
 Next-generation technologies in Microsoft Defender Antivirus provide near-instant, automated protection against new and emerging threats. To identify new threats dynamically, next-generation technologies work with large sets of interconnected data in the Microsoft Intelligent Security Graph and powerful artificial intelligence (AI) systems driven by advanced machine learning models. Cloud protection works together with Microsoft Defender Antivirus to deliver accurate, real-time, and intelligent protection. 
 
-[:::image type="content" source="images/mde-cloud-protection.png" alt-text="Diagram showing how cloud protection works together with Microsoft Defender Antivirus":::](enable-cloud-protection-microsoft-defender-antivirus.md)
+[:::image type="content" source="images/mde-cloud-protection.png" alt-text="Diagram showing how cloud protection works together with Microsoft Defender Antivirus" lightbox="images/mde-cloud-protection.png":::](enable-cloud-protection-microsoft-defender-antivirus.md)
 
 > [!TIP]
 > We recommend keeping cloud protection turned on. To learn more, see [Why cloud protection should be enabled for Microsoft Defender Antivirus](why-cloud-protection-should-be-on-mdav.md). 
@@ -67,3 +69,13 @@ Now that you have an overview of cloud protection in Microsoft Defender Antiviru
 1. See [Why cloud protection should be enabled for Microsoft Defender Antivirus](why-cloud-protection-should-be-on-mdav.md).
 
 2. Proceed to [Enable cloud protection](enable-cloud-protection-microsoft-defender-antivirus.md)
+
+> [!TIP]
+> If you're looking for Antivirus related information for other platforms, see:
+> - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
+> - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
+> - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md)
+> - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
+> - [Configure Defender for Endpoint on Android features](android-configure.md)
+> - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)

@@ -2,7 +2,6 @@
 title: Run live response commands on a device
 description: Learn how to run a sequence of live response commands on a device.
 keywords: apis, graph api, supported apis, upload to library
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -12,12 +11,10 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
@@ -28,7 +25,7 @@ ms.custom: api
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 
 [!include[Prerelease information](../../includes/prerelease.md)]
@@ -67,6 +64,8 @@ Before you can initiate a session on a device, make sure you fulfill the followi
 
   Devices must be running one of the following versions of Windows
 
+  - **Windows 11**
+  
   - **Windows 10**
     - [Version 1909](/windows/whats-new/whats-new-windows-10-version-1909) or later
     - [Version 1903](/windows/whats-new/whats-new-windows-10-version-1903) with [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)
@@ -77,6 +76,8 @@ Before you can initiate a session on a device, make sure you fulfill the followi
   - **Windows Server 2019 - Only applicable for Public preview**
     - Version 1903 or (with [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)) later
     - Version 1809 (with [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818))
+    
+  - **Windows Server 2022**
 
 ## Permissions
 

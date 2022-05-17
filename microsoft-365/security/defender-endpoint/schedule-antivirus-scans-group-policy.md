@@ -2,16 +2,15 @@
 title: Schedule antivirus scans using Group Policy
 description: Use Group Policy to set up antivirus scans
 keywords: quick scan, full scan, schedule, group policy, antivirus
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 09/13/2021
+ms.date: 11/10/2021
 ms.reviewer: pauhijbr, ksarens
 manager: dansimp
 ms.technology: mde
@@ -23,7 +22,12 @@ ms.collection: M365-security-compliance
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- Microsoft Defender Antivirus
+
+**Platforms**
+- Windows
 
 This article describes how to configure scheduled scans using Group Policy. To learn more about scheduling scans and about scan types, see [Configure scheduled quick or full Microsoft Defender Antivirus scans](schedule-antivirus-scans.md). 
 
@@ -53,7 +57,7 @@ For more information, see the [Manage when protection updates should be download
 | Scan | Specify the scan type to use for a scheduled scan | Quick scan |
 | Scan | Specify the day of the week to run a scheduled scan | Specify the day (or never) to run a scan. | Never |
 | Scan | Specify the time of day to run a scheduled scan | Specify the number of minutes after midnight (for example, enter **60** for 1 a.m.). | 2 a.m. |
-| Root | Randomize scheduled task times |In Microsoft Defender Antivirus, randomize the start time of the scan to any interval from 0 to 4 hours. <p>In [SCEP](/mem/intune/protect/certificates-scep-configure), randomize scans to any interval plus or minus 30 minutes. This can be useful in virtual machines or VDI deployments. | Enabled |
+| Root | Randomize scheduled task times |In Microsoft Defender Antivirus, randomize the start time of the scan to any interval from 0 to 23 hours. <p>In [SCEP](/mem/intune/protect/certificates-scep-configure), randomize scans to any interval plus or minus 30 minutes. This can be useful in virtual machines or VDI deployments. | Enabled |
 
 ## Group Policy settings for scheduling scans for when an endpoint is not in use
 
@@ -84,3 +88,12 @@ For more information, see the [Manage when protection updates should be download
 |:---|:---|:---|:---|
 | Signature updates | Turn on scan after Security intelligence update | A scan will occur immediately after a new protection update is downloaded | Enabled |
 
+> [!TIP]
+> If you're looking for Antivirus related information for other platforms, see:
+> - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
+> - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
+> - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md)
+> - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
+> - [Configure Defender for Endpoint on Android features](android-configure.md)
+> - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)

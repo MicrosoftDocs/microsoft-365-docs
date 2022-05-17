@@ -7,7 +7,7 @@ manager: scotv
 audience: Admin
 ms.topic: conceptual 
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management 
 - Adm_O365
@@ -17,7 +17,7 @@ search.appverid: MET150
 description: "Learn how Microsoft Defender Antivirus protects your Windows devices from software threats, such as viruses, malware, and spyware."
 ---
 
-# Threats detected by Microsoft Defender Antivirus
+# Overview of threat protection by Microsoft Defender Antivirus
 
 Microsoft Defender Antivirus protects your Windows devices from software threats, such as viruses, malware, and spyware.
 
@@ -78,7 +78,7 @@ To learn more about different threats, visit the <a href="https://www.microsoft.
 
 ## Related content
 
-[Secure Windows 10 devices](/misc/secure-windows-10-devices.md) (article)\
+[Secure Windows devices](/misc/m365bp-secure-windows-devices) (article)\
 [Evaluate Microsoft Defender Antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/evaluate-microsoft-defender-antivirus) (article)\
 [How to turn on real-time and cloud-delivered antivirus protection](/mem/intune/user-help/turn-on-defender-windows#turn-on-real-time-and-cloud-delivered-protection) (article)\
 [How to turn on and use Microsoft Defender Antivirus from the Windows Security app](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-security-center-antivirus) (article)\

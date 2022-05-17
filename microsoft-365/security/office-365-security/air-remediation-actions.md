@@ -3,12 +3,12 @@ title: Remediation actions in Microsoft Defender for Office 365
 keywords: AIR, autoIR, Microsoft Defender for Endpoint, automated, investigation, response, remediation, threats, advanced, threat, protection
 f1.keywords: 
 - NOCSH
-author: JoeDavies-MSFT
-ms.author: josephd
+author: dansimp
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
 - MET150
 - MOE150

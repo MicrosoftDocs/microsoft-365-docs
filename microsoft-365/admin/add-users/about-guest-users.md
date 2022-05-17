@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
@@ -21,7 +21,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn how the Guest users list is populated in the Microsoft 365 admin center."
+description: "Learn how to populate the Guest users list in the Microsoft 365 admin center so guests can attend meetings, view documents and chat in Teams they're invited to."
 ---
 
 # Guest users in Microsoft 365 admin center

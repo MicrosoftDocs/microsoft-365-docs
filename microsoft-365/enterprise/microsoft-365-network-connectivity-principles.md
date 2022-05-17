@@ -2,12 +2,12 @@
 title: "Microsoft 365 network connectivity principles"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 6/23/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -138,7 +138,7 @@ Microsoft 365 administrators can create PAC (Proxy Automatic Configuration) scri
 #### Microsoft 365 security features
 <a name="BKMK_WebSvc"> </a>
 
-Microsoft is transparent about datacenter security, operational security, and risk reduction around Microsoft 365 servers and the network endpoints that they represent. Microsoft 365 built-in security features are available for reducing network security risk, such as Data Loss Prevention, Anti-Virus, Multi-Factor Authentication, Customer Lock Box, Defender for Office 365, Microsoft 365 Threat Intelligence, Microsoft 365 Secure Score, Exchange Online Protection, and Network DDOS Security.
+Microsoft is transparent about datacenter security, operational security, and risk reduction around Microsoft 365 servers and the network endpoints that they represent. Microsoft 365 built-in security features are available for reducing network security risk, such as Microsoft Purview Data Loss Prevention, Anti-Virus, Multi-Factor Authentication, Customer Lock Box, Defender for Office 365, Microsoft 365 Threat Intelligence, Microsoft 365 Secure Score, Exchange Online Protection, and Network DDOS Security.
   
 For more information on Microsoft datacenter and Global Network security, see the [Microsoft Trust Center](https://www.microsoft.com/trustcenter/security).
   
@@ -202,8 +202,8 @@ Microsoft offers a wide range of Microsoft 365 security features and provides pr
 - **Use multi-factor authentication (MFA)**
     MFA adds an additional layer of protection to a strong password strategy by requiring users to acknowledge a phone call, text message, or an app notification on their smart phone after correctly entering their password.
 
-- **Use Microsoft Cloud App Security**
-    Configure policies to track anomalous activity and act on it. Set up alerts with Microsoft Cloud App Security so that admins can review unusual or risky user activity, such as downloading large amounts of data, multiple failed sign-in attempts, or connections from a unknown or dangerous IP addresses.
+- **Use Microsoft Defender for Cloud Apps**
+    Configure policies to track anomalous activity and act on it. Set up alerts with Microsoft Defender for Cloud Apps so that admins can review unusual or risky user activity, such as downloading large amounts of data, multiple failed sign-in attempts, or connections from a unknown or dangerous IP addresses.
 
 - **Configure Data Loss Prevention (DLP)**
     DLP allows you to identify sensitive data and create policies that help prevent your users from accidentally or intentionally sharing the data. DLP works across Microsoft 365 including Exchange Online, SharePoint Online, and OneDrive so that your users can stay compliant without interrupting their workflow.
@@ -228,7 +228,7 @@ A holistic approach to enhanced security should include consideration of the fol
   - Ensures local egress for Microsoft 365 traffic
 - Improvements can be addressed incrementally as described in the [Incremental optimization](microsoft-365-network-connectivity-principles.md#BKMK_IncOpt) section. Some optimization techniques may offer better cost/benefit ratios depending on your network architecture, and you should choose optimizations that make the most sense for your organization.
 
-For more information on Microsoft 365 security and compliance, see the articles [Microsoft 365 security](../security/index.yml) and [Microsoft 365 compliance](../compliance/index.yml).
+For more information on Microsoft 365 security and compliance, see the articles [Microsoft 365 security](../security/index.yml) and [Microsoft Purview](../compliance/index.yml).
   
 ## Incremental optimization
 <a name="BKMK_IncOpt"> </a>

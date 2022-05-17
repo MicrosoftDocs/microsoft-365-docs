@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -19,16 +19,17 @@ ms.topic: article
 ms.collection: M365-security-compliance
 ---
 
-# Collect Microsoft Defender AV diagnostic data
+# Collect Microsoft Defender Antivirus diagnostic data
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-This article describes how to collect diagnostic data that can be used by Microsoft support and engineering teams to help troubleshoot issues you might encounter when using the Microsoft Defender AV.
+This article describes how to collect diagnostic data that can be used by Microsoft support and engineering teams to help troubleshoot issues you might encounter when using the Microsoft Defender Antivirus.
 
 > [!NOTE]
 > As part of the investigation or response process, you can collect an investigation package from a device. Here's how: [Collect investigation package from devices](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices).
@@ -43,10 +44,10 @@ On at least two devices that are experiencing the same issue, obtain the .cab di
 
     c. Specify administrator credentials or approve the prompt.
 
-2. Navigate to the Microsoft Defender directory. By default, this is `C:\Program Files\Windows Defender`.
+2. Navigate to the directory for Microsoft Defender Antivirus. By default, this is `C:\Program Files\Windows Defender`.
 
    > [!NOTE]
-   > If you're running an [updated Microsoft Defender Platform version](https://support.microsoft.com/help/4052623/update-for-microsoft-defender-antimalware-platform), please run `MpCmdRun` from the following location: `C:\ProgramData\Microsoft\Windows Defender\Platform\<version>`.
+   > If you're running an [updated Microsoft Defender antimalware platform version](https://support.microsoft.com/help/4052623/update-for-microsoft-defender-antimalware-platform), please run `MpCmdRun` from the following location: `C:\ProgramData\Microsoft\Windows Defender\Platform\<version>`.
 
 3. Type the following command, and then press **Enter**
 
@@ -57,7 +58,11 @@ On at least two devices that are experiencing the same issue, obtain the .cab di
 4. A .cab file will be generated that contains various diagnostic logs. The location of the file will be specified in the output in the command prompt. By default, the location is `C:\ProgramData\Microsoft\Microsoft Defender\Support\MpSupportFiles.cab`.
 
    > [!NOTE]
-   > To redirect the cab file to a a different path or UNC share, use the following command: `mpcmdrun.exe -GetFiles -SupportLogLocation <path>`  <br/>For more information, see [Redirect diagnostic data to a UNC share](#redirect-diagnostic-data-to-a-unc-share).
+   > To redirect the cab file to a different path or UNC share, use the following command:
+   >
+   > `mpcmdrun.exe -GetFiles -SupportLogLocation <path>`
+   >
+   > For more information, see [Redirect diagnostic data to a UNC share](#redirect-diagnostic-data-to-a-unc-share).
 
 5. Copy these .cab files to a location that can be accessed by Microsoft support. An example could be a password-protected OneDrive folder that you can share with us.
 
@@ -113,17 +118,18 @@ You can also specify where the diagnostic .cab file will be created using a Grou
 
 2. Select **Define the directory path to copy support log files**.
 
-   ![Screenshot of local group policy editor](images/GPO1-SupportLogLocationDefender.png)
+   :::image type="content" source="images/GPO1-SupportLogLocationDefender.png" alt-text="The local group policy editor" lightbox="images/GPO1-SupportLogLocationDefender.png":::
 
-   ![Screenshot of define path for log files setting](images/GPO2-SupportLogLocationGPPage.png)
+   :::image type="content" source="images/GPO2-SupportLogLocationGPPage.png" alt-text="The define path for log files setting" lightbox="images/GPO2-SupportLogLocationGPPage.png":::
 
-    ![Screenshot of local group policy editor.](images/GPO1-SupportLogLocationDefender.png)  
+   :::image type="content" source="images/GPO1-SupportLogLocationDefender.png" alt-text="The local group policy editor" lightbox="images/GPO1-SupportLogLocationDefender.png"::: 
         
-     ![Screenshot of define path for log files setting.](images/GPO2-SupportLogLocationGPPage.png)  
+   :::image type="content" source="images/GPO2-SupportLogLocationGPPage.png" alt-text="The define path for configuring the log files setting" lightbox="images/GPO2-SupportLogLocationGPPage.png":::
+ 
 3. Inside the policy editor, select **Enabled**.
 
 4. Specify the directory path where you want to copy the support log files in the **Options** field.
-     ![Screenshot of Enabled directory path custom setting.](images/GPO3-SupportLogLocationGPPageEnabledExample.png) 
+   :::image type="content" source="images/GPO3-SupportLogLocationGPPageEnabledExample.png" alt-text="The Enabled directory path custom setting" lightbox="images/GPO3-SupportLogLocationGPPageEnabledExample.png":::
 5. Select **OK** or **Apply**.
 
 ## See also

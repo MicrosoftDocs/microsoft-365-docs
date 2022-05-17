@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
@@ -17,6 +17,8 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
+- adminvideo
+- business_assist
 search.appverid:
 - BCS160
 - MET150
@@ -28,12 +30,24 @@ description: "Learn how to set up multi-factor authentication for your organizat
 monikerRange: 'o365-worldwide'
 ---
 
-# Set up multifactor authentication
+# Set up multifactor authentication for Microsoft 365
 
-Based on your understanding of [multifactor authentication (MFA) and its support in Microsoft 365](multi-factor-authentication-microsoft-365.md), it's time to set it up and roll it out to your organization.
+Multifactor authentication means you and your employees must provide more than one way to sign in to Microsoft 365 is one of the easiest ways to secure your business. Based on your understanding of [multifactor authentication (MFA) and its support in Microsoft 365](multi-factor-authentication-microsoft-365.md), it's time to set it up and roll it out to your organization. 
 
 > [!IMPORTANT]
 > If you purchased your subscription or trial after October 21, 2019, and you're prompted for MFA when you sign in, [security defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) have been automatically enabled for your subscription.
+
+> [!TIP]
+> If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
+
+## Watch: Turn on multifactor authentication
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MuO3?autoplay=false]
+
+1. Go to the Microsoft 365 admin center at <a href="https://admin.microsoft.com/ " target="_blank">https://admin.microsoft.com</a>.
+1. Select  **Show All**, then choose the **Azure Active Directory Admin Center**.
+1. Select **Azure Active Directory**, **Properties**, **Manage Security defaults**.
+1. Under **Enable Security defaults**, select **Yes** and then **Save**.
 
 ## Before you begin
 
@@ -94,14 +108,6 @@ For most subscriptions modern authentication is automatically turned on, but if 
 2. Under the **Services** tab, choose **Modern authentication**, and in the **Modern authentication** pane, make sure **Enable Modern authentication** is selected. Choose **Save changes**.
 
 
-### Turn off legacy per-user MFA
-
-If you have previously turned on per-user MFA, you must turn it off before enabling Security defaults.
-
-1. In the Microsoft 365 admin center, in the left nav choose **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>.
-1. On the **Active users** page, choose **Multi-factor authentication**.
-1. On the multi-factor authentication page, select each user and set their Multi-Factor auth status to **Disabled**.
-
 ## Next steps
 
 - [How to register for their additional verification method](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14)
@@ -111,8 +117,6 @@ If you have previously turned on per-user MFA, you must turn it off before enabl
 
 ## Related content
 
+[Set up multifactor authentication](set-up-multi-factor-authentication.md) (video)
 
-[Turn on multi-factor authentication](../../business-video/turn-on-mfa.md) (video)
-
-[Turn on multi-factor authentication for your phone](../../business-video/set-up-mfa.md) (video)
-
+[Turn on multi-factor authentication for your phone](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14)

@@ -2,12 +2,12 @@
 title: "Microsoft 365 service health status"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 04/19/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.collection:

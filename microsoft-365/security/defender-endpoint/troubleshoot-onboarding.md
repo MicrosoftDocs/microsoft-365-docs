@@ -2,15 +2,13 @@
 title: Troubleshoot Microsoft Defender for Endpoint onboarding issues
 description: Troubleshoot issues that might arise during the onboarding of devices or to the Microsoft Defender for Endpoint service.
 keywords: troubleshoot onboarding, onboarding issues, event viewer, data collection and preview builds, sensor data and diagnostics
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -25,7 +23,7 @@ ms.technology: mde
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Windows Server 2012 R2
 - Windows Server 2016
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -34,6 +32,8 @@ ms.technology: mde
 
 You might need to troubleshoot the Microsoft Defender for Endpoint onboarding process if you encounter issues.
 This page provides detailed steps to troubleshoot onboarding issues that might occur when deploying with one of the deployment tools and common errors that might occur on the devices.
+
+Before you start troubleshooting issues with onboarding tools, it is important to check if the minimum requirements are met for onboarding devices to the services. [Learn about the licensing, hardware, and software requirements to onboard devices to the service](minimum-requirements.md).
 
 ## Troubleshoot issues with onboarding tools
 
@@ -114,9 +114,9 @@ If none of the event logs and troubleshooting steps work, download the Local scr
 
 |Error Code Hex|Error Code Dec|Error Description|OMA-URI|Possible cause and troubleshooting steps|
 |:---:|---|---|---|---|
-|0x87D1FDE8|-2016281112|Remediation failed|Onboarding <p> Offboarding|**Possible cause:** Onboarding or offboarding failed on a wrong blob: wrong signature or missing PreviousOrgIds fields. <p> **Troubleshooting steps:** <p> Check the event IDs in the [View agent onboarding errors in the device event log](#view-agent-onboarding-errors-in-the-device-event-log) section. <p> Check the MDM event logs in the following table or follow the instructions in [Diagnose MDM failures in Windows 10](/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10).|
+|0x87D1FDE8|-2016281112|Remediation failed|Onboarding <p> Offboarding|**Possible cause:** Onboarding or offboarding failed on a wrong blob: wrong signature or missing PreviousOrgIds fields. <p> **Troubleshooting steps:** <p> Check the event IDs in the [View agent onboarding errors in the device event log](#view-agent-onboarding-errors-in-the-device-event-log) section. <p> Check the MDM event logs in the following table or follow the instructions in [Diagnose MDM failures in Windows](/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10).|
 ||||Onboarding <p> Offboarding <p> SampleSharing|**Possible cause:** Microsoft Defender for Endpoint Policy registry key does not exist or the OMA DM client doesn't have permissions to write to it. <p> **Troubleshooting steps:** Ensure that the following registry key exists: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection` <p> If it doesn't exist, open an elevated command and add the key.|
-||||SenseIsRunning <p> OnboardingState <p> OrgId|**Possible cause:** An attempt to remediate by read-only property. Onboarding has failed. <p> **Troubleshooting steps:** Check the troubleshooting steps in [Troubleshoot onboarding issues on the device](#troubleshoot-onboarding-issues-on-the-device). <p> Check the MDM event logs in the following table or follow the instructions in [Diagnose MDM failures in Windows 10](/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10).|
+||||SenseIsRunning <p> OnboardingState <p> OrgId|**Possible cause:** An attempt to remediate by read-only property. Onboarding has failed. <p> **Troubleshooting steps:** Check the troubleshooting steps in [Troubleshoot onboarding issues on the device](#troubleshoot-onboarding-issues-on-the-device). <p> Check the MDM event logs in the following table or follow the instructions in [Diagnose MDM failures in Windows](/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10).|
 ||||All|**Possible cause:** Attempt to deploy Microsoft Defender for Endpoint on non-supported SKU/Platform, particularly Holographic SKU. <p> Currently supported platforms: <p> Enterprise, Education, and Professional.<p> Server is not supported.|
 |0x87D101A9|-2016345687|SyncML(425): The requested command failed because the sender does not have adequate access control permissions (ACL) on the recipient.|All|**Possible cause:** Attempt to deploy Microsoft Defender for Endpoint on non-supported SKU/Platform, particularly Holographic SKU.<p> Currently supported platforms: <p> Enterprise, Education, and Professional.|
 |
@@ -178,7 +178,7 @@ If the deployment tools used does not indicate an error in the onboarding proces
 
 5. On the **Filter** tab, under **Event level:** select **Critical**, **Warning**, and **Error**, and click **OK**.
 
-   ![Image of Event Viewer log filter.](images/filter-log.png)
+   :::image type="content" source="images/filter-log.png" alt-text="The Event Viewer log filter" lightbox="images/filter-log.png":::
 
 6. Events which can indicate issues will appear in the **Operational** pane. You can attempt to troubleshoot them based on the solutions in the following table:
 
@@ -213,13 +213,13 @@ There are additional components on the device that the Microsoft Defender for En
 
 ### Ensure the diagnostic data service is enabled
 
-If the devices aren't reporting correctly, you might need to check that the Windows 10 diagnostic data service is set to automatically start and is running on the device. The service might have been disabled by other programs or user configuration changes.
+If the devices aren't reporting correctly, you might need to check that the Windows diagnostic data service is set to automatically start and is running on the device. The service might have been disabled by other programs or user configuration changes.
 
 First, you should check that the service is set to start automatically when Windows starts, then you should check that the service is currently running (and start it if it isn't).
 
 ### Ensure the service is set to start
 
-**Use the command line to check the Windows 10 diagnostic data service startup type**:
+**Use the command line to check the Windows diagnostic data service startup type**:
 
 1. Open an elevated command-line prompt on the device:
 
@@ -229,17 +229,17 @@ First, you should check that the service is set to start automatically when Wind
 
 2. Enter the following command, and press **Enter**:
 
-   ```text
+   ```console
    sc qc diagtrack
    ```
 
    If the service is enabled, then the result should look like the following screenshot:
 
-   ![Result of the sc query command for diagtrack.](images/windefatp-sc-qc-diagtrack.png)
+   :::image type="content" source="images/windefatp-sc-qc-diagtrack.png" alt-text="The result of the sc query command for diagtrack" lightbox="images/windefatp-sc-qc-diagtrack.png":::
 
    If the `START_TYPE` is not set to `AUTO_START`, then you'll need to set the service to automatically start.
 
-**Use the command line to set the Windows 10 diagnostic data service to automatically start:**
+**Use the command line to set the Windows diagnostic data service to automatically start:**
 
 1. Open an elevated command-line prompt on the device:
 
@@ -249,21 +249,19 @@ First, you should check that the service is set to start automatically when Wind
 
 2. Enter the following command, and press **Enter**:
 
-   ```text
+   ```console
    sc config diagtrack start=auto
    ```
 
 3. A success message is displayed. Verify the change by entering the following command, and press **Enter**:
 
-   ```text
+   ```console
    sc qc diagtrack
    ```
 
-4. Start the service.
+4. Start the service. In the command prompt, type the following command and press **Enter**:
 
-   a. In the command prompt, type the following command and press **Enter**:
-
-   ```text
+   ```console
    sc start diagtrack
    ```
 
@@ -301,13 +299,13 @@ If the verification fails and your environment is using a proxy to connect to th
   - `<Key Path="SOFTWARE\Policies\Microsoft\Windows Defender"><KeyValue Value="0" ValueKind="DWord" Name="DisableAntiVirus"/></Key>`
 
 > [!IMPORTANT]
-> The `disableAntiSpyware` setting is discontinued and will be ignored on all client devices, as of the August 2020 (version 4.18.2007.8) update to Microsoft Defender Antivirus.
+> The `disableAntiSpyware` setting is discontinued and will be ignored on all Windows 10 devices, as of the August 2020 (version 4.18.2007.8) update to Microsoft Defender Antivirus.
 
 - After clearing the policy, run the onboarding steps again.
 
 - You can also check the previous registry key values to verify that the policy is disabled, by opening the registry key `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`.
 
-    ![Image of registry key for Microsoft Defender Antivirus.](images/atp-disableantispyware-regkey.png)
+  :::image type="content" source="images/atp-disableantispyware-regkey.png" alt-text="The registry key for Microsoft Defender Antivirus" lightbox="images/atp-disableantispyware-regkey.png":::
 
    > [!NOTE]
    > All Windows Defender services (wdboot, wdfilter, wdnisdrv, wdnissvc, and windefend) should be in their default state. Changing the startup of these services is unsupported and may force you to reimage your system.
@@ -317,12 +315,13 @@ If the verification fails and your environment is using a proxy to connect to th
    > - `<Key Path="SYSTEM\CurrentControlSet\Services\WdBoot"><KeyValue Value="0" ValueKind="DWord" Name="Start"/></Key>`
    > - `<Key Path="SYSTEM\CurrentControlSet\Services\WdFilter"><KeyValue Value="0" ValueKind="DWord" Name="Start"/></Key>`
 
-## Troubleshoot onboarding issues on a server
+## Troubleshoot onboarding issues 
 
 > [!NOTE]
 > The following troubleshooting guidance is only applicable for Windows Server 2016 and lower.
 
 If you encounter issues while onboarding a server, go through the following verification steps to address possible issues.
+
 
 - [Ensure Microsoft Monitoring Agent (MMA) is installed and configured to report sensor data to the service](configure-server-endpoints.md)
 - [Ensure that the server proxy and Internet connectivity settings are configured properly](configure-server-endpoints.md)
@@ -331,17 +330,17 @@ You might also need to check the following:
 
 - Check that there is a Microsoft Defender for Endpoint Service running in the **Processes** tab in **Task Manager**. For example:
 
-    ![Image of process view with Microsoft Defender for Endpoint Service running.](images/atp-task-manager.png)
+  :::image type="content" source="images/atp-task-manager.png" alt-text="The process view with Microsoft Defender for Endpoint Service running" lightbox="images/atp-task-manager.png":::
 
 - Check **Event Viewer** \> **Applications and Services Logs** \> **Operation Manager** to see if there are any errors.
 
 - In **Services**, check if the **Microsoft Monitoring Agent** is running on the server. For example,
 
-    ![Image of Services.](images/atp-services.png)
+  :::image type="content" source="images/atp-services.png" alt-text="The services" lightbox="images/atp-services.png":::
 
 - In **Microsoft Monitoring Agent** \> **Azure Log Analytics (OMS)**, check the Workspaces and verify that the status is running.
 
-    ![Image of Microsoft Monitoring Agent Properties.](images/atp-mma-properties.png)
+  :::image type="content" source="images/atp-mma-properties.png" alt-text="The Microsoft Monitoring Agent Properties" lightbox="images/atp-mma-properties.png":::
 
 - Check to see that devices are reflected in the **Devices list** in the portal.
 
@@ -357,131 +356,133 @@ The steps below provide guidance for the following scenario:
 - In this scenario, the SENSE service will not start automatically even though onboarding package was deployed
 
 > [!NOTE]
-> User Logon after OOBE is no longer required for SENSE service to start on the following or more recent Windows versions:
->
-> - Windows 10, version 1809 or Windows Server 2019 with [April 22 2021 update rollup](https://support.microsoft.com/kb/5001384).
-> - Windows 10, version 1909 with [April 2021 update rollup](https://support.microsoft.com/kb/5001396).
-> - Windows 10, version 2004/20H2 with [April 28 2021 update rollup](https://support.microsoft.com/kb/5001391).
->
+> User Logon after OOBE is no longer required for SENSE service to start on the following or more recent Windows versions: 
+> Windows 10, version 1809 or Windows Server 2019, or Windows Server 2022 with [April 22 2021 update rollup](https://support.microsoft.com/kb/5001384). 
+> Windows 10, version 1909 with [April 2021 update rollup](https://support.microsoft.com/kb/5001396). 
+> Windows 10, version 2004/20H2 with [April 28 2021 update rollup](https://support.microsoft.com/kb/5001391). 
+
+
+> [!NOTE]
 > The following steps are only relevant when using Microsoft Endpoint Configuration Manager. For more details about onboarding using Microsoft Endpoint Configuration Manager, see [Microsoft Defender for Endpoint](/mem/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection).
 
 1. Create an application in Microsoft Endpoint Configuration Manager.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration1.](images/mecm-1.png)
+   :::image type="content" source="images/mecm-1.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-1" lightbox="images/mecm-1.png":::
 
 2. Select **Manually specify the application information**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration2.](images/mecm-2.png)
+   :::image type="content" source="images/mecm-2.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-2" lightbox="images/mecm-2.png":::
 
 3. Specify information about the application, then select **Next**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration3.](images/mecm-3.png)
+   :::image type="content" source="images/mecm-3.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-3" lightbox="images/mecm-3.png":::
 
 4. Specify information about the software center, then select **Next**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration4.](images/mecm-4.png)
+   :::image type="content" source="images/mecm-4.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-4" lightbox="images/mecm-4.png":::
 
 5. In **Deployment types** select **Add**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration5.](images/mecm-5.png)
+   :::image type="content" source="images/mecm-5.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-5" lightbox="images/mecm-5.png":::
 
 6. Select **Manually specify the deployment type information**, then select **Next**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration6.](images/mecm-6.png)
+   :::image type="content" source="images/mecm-6.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-6" lightbox="images/mecm-6.png":::
 
 7. Specify information about the deployment type, then select **Next**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration7.](images/mecm-7.png)
+   :::image type="content" source="images/mecm-7.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-7" lightbox="images/mecm-7.png":::
 
 8. In **Content** \> **Installation program** specify the command: `net start sense`.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration8.](images/mecm-8.png)
+   :::image type="content" source="images/mecm-8.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-8" lightbox="images/mecm-8.png":::
 
 9. In **Detection method**, select **Configure rules to detect the presence of this deployment type**, then select **Add Clause**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration9.](images/mecm-9.png)
+   :::image type="content" source="images/mecm-9.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-9" lightbox="images/mecm-9.png":::
 
 10. Specify the following detection rule details, then select **OK**:
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration10.](images/mecm-10.png)
+    :::image type="content" source="images/mecm-10.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-10" lightbox="images/mecm-10.png":::
 
 11. In **Detection method** select **Next**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration11.](images/mecm-11.png)
+    :::image type="content" source="images/mecm-11.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-11" lightbox="images/mecm-11.png":::
 
 12. In **User Experience**, specify the following information, then select **Next**:
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration12.](images/mecm-12.png)
+    :::image type="content" source="images/mecm-12.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-12" lightbox="images/mecm-12.png":::
 
 13. In **Requirements**, select **Next**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration13.](images/mecm-13.png)
+    :::image type="content" source="images/mecm-13.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-13" lightbox="images/mecm-13.png":::
 
 14. In **Dependencies**, select **Next**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration14.](images/mecm-14.png)
+    :::image type="content" source="images/mecm-14.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-14" lightbox="images/mecm-14.png":::
 
 15. In **Summary**, select **Next**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration15.](images/mecm-15.png)
+    :::image type="content" source="images/mecm-15.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-15" lightbox="images/mecm-15.png":::
 
 16. In **Completion**, select **Close**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration16.](images/mecm-16.png)
+    :::image type="content" source="images/mecm-16.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-16" lightbox="images/mecm-16.png":::
 
 17. In **Deployment types**, select **Next**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration17.](images/mecm-17.png)
+    :::image type="content" source="images/mecm-17.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-17" lightbox="images/mecm-17.png":::
 
 18. In **Summary**, select **Next**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration18.](images/mecm-18.png)
+    :::image type="content" source="images/mecm-18.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-18" lightbox="images/mecm-18.png":::
 
     The status is then displayed:
-    ![Image of Microsoft Endpoint Configuration Manager configuration19.](images/mecm-19.png)
+    :::image type="content" source="images/mecm-19.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-19" lightbox="images/mecm-19.png":::
 
 19. In **Completion**, select **Close**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration20.](images/mecm-20.png)
+    :::image type="content" source="images/mecm-20.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-20" lightbox="images/mecm-20.png":::
 
 20. You can now deploy the application by right-clicking the app and selecting **Deploy**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration21.](images/mecm-21.png)
+    :::image type="content" source="images/mecm-21.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-21" lightbox="images/mecm-21.png":::
 
 21. In **General** select **Automatically distribute content for dependencies** and **Browse**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration22.](images/mecm-22.png)
+    :::image type="content" source="images/mecm-22.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-22" lightbox="images/mecm-22.png":::
 
 22. In **Content** select **Next**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration23.](images/mecm-23.png)
+    :::image type="content" source="images/mecm-23.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-23" lightbox="images/mecm-23.png":::
 
 23. In **Deployment settings**, select **Next**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration24.](images/mecm-24.png)
+    :::image type="content" source="images/mecm-24.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-24" lightbox="images/mecm-24.png":::
 
 24. In **Scheduling** select **As soon as possible after the available time**, then select **Next**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration25.](images/mecm-25.png)
+    :::image type="content" source="images/mecm-25.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-25" lightbox="images/mecm-25.png":::
 
 25. In **User experience**, select **Commit changes at deadline or during a maintenance window (requires restarts)**, then select **Next**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration26.](images/mecm-26.png)
+    :::image type="content" source="images/mecm-26.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-26" lightbox="images/mecm-26.png":::
 
 26. In **Alerts** select **Next**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration27.](images/mecm-27.png)
+    :::image type="content" source="images/mecm-27.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-27" lightbox="images/mecm-27.png":::
 
 27. In **Summary**, select **Next**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration28.](images/mecm-28.png)
+    :::image type="content" source="images/mecm-28.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-28" lightbox="images/mecm-28.png":::
+      
 
     The status is then displayed
-    ![Image of Microsoft Endpoint Configuration Manager configuration29.](images/mecm-29.png)
+    :::image type="content" source="images/mecm-29.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-29" lightbox="images/mecm-29.png":::
 
 28. In **Completion**, select **Close**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration30.](images/mecm-30.png)
+    :::image type="content" source="images/mecm-30.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-30" lightbox="images/mecm-30.png":::
 
 ## Related topics
 

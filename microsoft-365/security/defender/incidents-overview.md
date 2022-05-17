@@ -7,18 +7,19 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords: 
+f1.keywords:
   - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
-localization_priority: Normal
+ms.author: dansimp
+author: dansimp
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
   - M365-security-compliance
   - m365initiative-m365-defender
+ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-search.appverid: 
+search.appverid:
   - MOE150
   - MET150
 ms.technology: m365d
@@ -32,16 +33,13 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
-> Want to experience Microsoft 365 Defender? You can [evaluate it in a lab environment](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) or [run your pilot project in production](m365d-pilot.md?ocid=cx-evalpilot).
->
+An incident in Microsoft 365 Defender is a collection of correlated alerts and associated data that make up the story of an attack.
 
-An incident in Microsoft 365 Defender is a collection of correlated alerts and associated data that make up the story of an attack. 
-
-Microsoft 365 services and apps create alerts when they detect a suspicious or malicious event or activity. Individual alerts provide valuable clues about a completed or ongoing attack. However, attacks typically employ various techniques against different types of entities, such as devices, users, and mailboxes. The result is multiple alerts for multiple entities in your tenant. 
+Microsoft 365 services and apps create alerts when they detect a suspicious or malicious event or activity. Individual alerts provide valuable clues about a completed or ongoing attack. However, attacks typically employ various techniques against different types of entities, such as devices, users, and mailboxes. The result is multiple alerts for multiple entities in your tenant.
 
 Because piecing the individual alerts together to gain insight into an attack can be challenging and time-consuming, Microsoft 365 Defender automatically aggregates the alerts and their associated information into an incident.
 
-:::image type="content" source="../../media/incidents-overview/incidents.png" alt-text="How Microsoft 365 Defender correlates events from entities into an incident.":::
+:::image type="content" source="../../media/incidents-overview/incidents.png" alt-text="How Microsoft 365 Defender correlates events from entities into an incident." lightbox="../../media/incidents-overview/incidents.png":::
 
 Watch this short overview of incidents in Microsoft 365 Defender (4 minutes).
 
@@ -54,24 +52,24 @@ Grouping related alerts into an incident gives you a comprehensive view of an at
 - Where the attack started.
 - What tactics were used.
 - How far the attack has gone into your tenant.
-- The scope of the attack, such as how many devices, users, and mailboxes were impacted. 
+- The scope of the attack, such as how many devices, users, and mailboxes were impacted.
 - All of the data associated with the attack.
 
-If [enabled](m365d-enable.md), Microsoft 365 Defender can [automatically investigate and resolve](m365d-autoir.md) alerts through automation and artificial intelligence. You can also perform additional remediation steps to resolve the attack. 
+If [enabled](m365d-enable.md), Microsoft 365 Defender can [automatically investigate and resolve](m365d-autoir.md) alerts through automation and artificial intelligence. You can also perform additional remediation steps to resolve the attack.
 
 ## Incidents and alerts in the Microsoft 365 Defender portal
 
-You manage incidents from **Incidents & alerts > Incidents** on the quick launch of the Microsoft 365 Defender portal ([security.microsoft.com](https://security.microsoft.com)). Here's an example.
+You manage incidents from **Incidents & alerts > Incidents** on the quick launch of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. Here's an example.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="The Incidents page in the Microsoft 365 Defender portal.":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="The Incidents page in the Microsoft 365 Defender portal." lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
 
-Selecting an incident name displays a summary of the incident and provides access to tabs with additional information.
+Selecting an incident name displays a summary of the incident and provides access to tabs with additional information. Here's an example.
 
-:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Example of the Summary page for an incident in the Microsoft 365 Defender portal":::
+:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="The Summary page for an incident in the Microsoft 365 Defender portal" lightbox="../../media/incidents-overview/incidents-ss-incident-summary.png":::
 
 The additional tabs for an incident are:
 
-- Alerts 
+- Alerts
 
   All the alerts related to the incident and their information.
 
@@ -93,7 +91,7 @@ The additional tabs for an incident are:
 
 - Evidence and Response
 
-  All the supported events and suspicious entities in the alerts in the incident.
+  All the supported events and suspicious entities in the alerts of the incident.
 
 - Graph (Preview)
 
@@ -101,29 +99,31 @@ The additional tabs for an incident are:
 
 Here's the relationship between an incident and its data and the tabs of an incident in the Microsoft 365 Defender portal.
 
-:::image type="content" source="../../media/incidents-overview/incidents-security-center.png" alt-text="The relationship of an incident and its data to the tabs of an incident in the Microsoft 365 Defender portal.":::
+:::image type="content" source="../../media/incidents-overview/incidents-security-center.png" alt-text="The relationship of an incident and its data to the tabs of an incident in the Microsoft 365 Defender portal." lightbox="../../media/incidents-overview/incidents-security-center.png":::
 
 ## Example incident response workflow for Microsoft 365 Defender
 
 Here's an example workflow for responding to incidents in Microsoft 365 with the Microsoft 365 Defender portal.
 
-:::image type="content" source="../../media/incidents-overview/incidents-example-workflow.png" alt-text="Example of an incident response workflow for Microsoft 365.":::
+:::image type="content" source="../../media/incidents-overview/incidents-example-workflow.png" alt-text="An example of an incident response workflow for the Microsoft 365 Defender portal." lightbox="../../media/incidents-overview/incidents-example-workflow.png":::
 
 On an ongoing basis, identify the highest priority incidents for analysis and resolution in the incident queue and get them ready for response. This is a combination of:
 
 - [Triaging](incident-queue.md) to determining the highest priority incidents through filtering and sorting of the incident queue.
 - [Managing](manage-incidents.md) incidents by modifying their title, assigning them to an analyst, and adding tags and comments.
 
+Consider these steps for your own incident response workflow:
+
 1. For each incident, begin an [attack and alert investigation and analysis](investigate-incidents.md):
- 
-   1. View the summary of the incident to understand it's scope and severity and what entities are affected with the **Summary** and **Graph** (Preview) tabs.
+
+   1. View the summary of the incident to understand its scope and severity and what entities are affected with the **Summary** and **Graph** (Preview) tabs.
 
    1. Begin analyzing the alerts to understand their origin, scope, and severity with the **Alerts** tab.
 
    1. As needed, gather information on impacted devices, users, and mailboxes with the **Devices**, **Users**, and **Mailboxes** tabs.
 
    1. See how Microsoft 365 Defender has [automatically resolved some alerts](m365d-autoir.md) with the **Investigations** tab.
-   
+
    1. As needed, use information in the data set for the incident for more information with the **Evidence and Response** tab.
 
 2. After or during your analysis, perform containment to reduce any additional impact of the attack and eradication of the security threat.
@@ -145,7 +145,7 @@ For more information about incident response across Microsoft products, see [thi
 
 Here's an example of security operations (SecOps) for Microsoft 365 Defender.
 
-:::image type="content" source="../../media/incidents-overview/incidents-example-operations.png" alt-text="An example of security operations for Microsoft 365 Defender.":::
+:::image type="content" source="../../media/incidents-overview/incidents-example-operations.png" alt-text="An example of security operations for Microsoft 365 Defender" lightbox="../../media/incidents-overview/incidents-example-operations.png":::
 
 Daily tasks can include:
 
@@ -162,11 +162,11 @@ Monthly tasks can include:
 
 Quarterly tasks can include a report and briefing of security results to the Chief Information Security Officer (CISO).
 
-Annual tasks can include conducting a major incident or breach exercise to test your staff, systems, and processes. 
+Annual tasks can include conducting a major incident or breach exercise to test your staff, systems, and processes.
 
 Daily, monthly, quarterly, and annual tasks can be used to update or refine processes, policies, and security configurations.
 
-See [ Integrating Microsoft 365 Defender into your security operations](integrate-microsoft-365-defender-secops.md) for more details.
+See [Integrating Microsoft 365 Defender into your security operations](integrate-microsoft-365-defender-secops.md) for more details.
 
 ### SecOps resources across Microsoft products
 
@@ -175,6 +175,45 @@ For more information about SecOps across Microsoft's products, see these resourc
 - [Capabilities](/security/compass/security-operations-capabilities)
 - [Best practices](/security/compass/security-operations)
 - [Videos and slides](/security/compass/security-operations-videos-and-decks)
+
+## Get incident notifications by email
+
+You can set up Microsoft 365 Defender to notify your staff with an email about new incidents or updates to existing incidents. You can choose to get notifications based on:
+
+- Incident severity.
+- Device group.
+- Only on the first update per incident.
+
+The email notification contains important details about the incident like the incident name, severity, and categories, among others. You can also go directly to the incident and start your analysis right away. For more information, see [Investigate incidents](investigate-incidents.md).
+
+You can add or remove recipients in the email notifications. New recipients get notified about incidents after they're added.
+
+> [!NOTE]
+> You need the **Manage security settings** permission to configure email notification settings. If you've chosen to use basic permissions management, users with Security Administrator or Global Administrator roles can configure email notifications. <br> <br>
+Likewise, if your organization is using role-based access control (RBAC), you can only create, edit, delete, and receive notifications based on device groups that you are allowed to manage.
+
+### Create a rule for email notifications
+
+Follow these steps to create a new rule and customize email notification settings.
+
+1. In the navigation pane, select **Settings > Microsoft 365 Defender > Incident email notifications**.
+2. Select **Add item**.
+3. On the **Basics** page, type the rule name and a description, and then select **Next**.
+4. On the **Notification settings** page, configure:
+    - **Alert severity** - Choose the alert severities that will trigger an incident notification. For example, if you only want to be informed about high-severity incidents, select **High**.
+    - **Device group scope** - You can specify all device groups or select from the list of device groups in your tenant.
+    - **Only notify on first occurrence per incident** - Select if you want a notification only on the first alert that matches your other selections. Later updates or alerts related to the incident won't send additional notifications.
+    - **Include organization name in the email** - Select if you want your organization name to appear in the email notification.
+    - **Include tenant-specific portal link** - Select if you want to add a link with the tenant ID in the email notification for access to a specific Microsoft 365 tenant.
+
+    :::image type="content" source="../../media/get-incident-notifications/incidents-ss-email-notification-settings.png" alt-text="The Notification settings page for incident email notifications in the Microsoft 365 Defender portal." lightbox="../../media/get-incident-notifications/incidents-ss-email-notification-settings.png":::
+
+5. Select **Next**. On the **Recipients** page, add the email addresses that will receive the incident notifications. Select **Add** after typing each new email address. To test notifications and ensure that the recipients receive them in the inboxes, select **Send test email**.
+6. Select **Next**. On the **Review rule** page, review the settings of the rule, and then select **Create rule**. Recipients will start receiving incident notifications through email based on the settings.
+
+To edit an existing rule, select it from the list of rules. On the pane with the rule name, select **Edit rule** and make your changes on the **Basics**, **Notification settings**, and **Recipients** pages.
+
+To delete a rule, select it from the list of rules. On the pane with the rule name, select **Delete**.
 
 ## Training for security analysts
 
@@ -200,15 +239,13 @@ Follow this table for your level of experience with security analysis and incide
 | **New** | <ol><li> See the [Respond to your first incident walkthrough](first-incident-overview.md) to get a guided tour of a typical process of analysis, remediation, and post-incident review in the Microsoft 365 Defender portal with an example attack. </li><li> See which incidents should be [prioritized](incident-queue.md) based on severity and other factors. </li><li> [Manage incidents](manage-incidents.md), which includes renaming, assigning, classifying, and adding tags and comments based on your incident management workflow.</li></ol> |
 | **Experienced** | <ol><li> Get started with the incident queue from the **Incidents** page of the Microsoft 365 Defender portal. From here you can: </li> <ul><li> See which incidents should be [prioritized](incident-queue.md) based on severity and other factors. </li><li> [Manage incidents](manage-incidents.md), which includes renaming, assigning, classifying, and adding tags and comments based on your incident management workflow. </li><li> Perform [investigations](investigate-incidents.md) of incidents. </li></ul> </li><li> Track and respond to emerging threats with [threat analytics](threat-analytics.md). </li><li>  Proactively hunt for threats with [advanced threat hunting](advanced-hunting-overview.md). </li><li> See these [incident response playbooks](/security/compass/incident-response-playbooks) for detailed guidance for phishing, password spray, and app consent grant attacks. </li></ol> |
 
-
 ### Security team role
 
 Follow this table based on your security team role.
 
 | Role | Steps |
-|:-------|:-----|
+|---|---|
 | Incident responder (Tier 1) | Get started with the incident queue from the **Incidents** page of the Microsoft 365 Defender portal. From here you can: <ul><li> See which incidents should be [prioritized](incident-queue.md) based on severity and other factors. </li><li> [Manage incidents](manage-incidents.md), which includes renaming, assigning, classifying, and adding tags and comments based on your incident management workflow. </li></ul> |
 | Security investigator or analyst (Tier 2) | <ol><li> Perform [investigations](investigate-incidents.md) of incidents from the **Incidents** page of the Microsoft 365 Defender portal. </li><li> See these [incident response playbooks](/security/compass/incident-response-playbooks) for detailed guidance for phishing, password spray, and app consent grant attacks. </li></ol> |
 | Advanced security analyst or threat hunter (Tier 3) | <ol><li>Perform [investigations](investigate-incidents.md) of incidents from the **Incidents** page of the Microsoft 365 Defender portal. </li><li> Track and respond to emerging threats with [threat analytics](threat-analytics.md). </li><li> Proactively hunt for threats with [advanced threat hunting](advanced-hunting-overview.md). </li><li> See these [incident response playbooks](/security/compass/incident-response-playbooks) for detailed guidance for phishing, password spray, and app consent grant attacks. |
 | SOC manager | See how to [integrate Microsoft 365 Defender into your Security Operations Center (SOC)](integrate-microsoft-365-defender-secops.md). |
-

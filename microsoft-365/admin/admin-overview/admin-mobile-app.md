@@ -1,5 +1,5 @@
 ---
-title: "About the Microsoft 365 Admin mobile app"
+title: "About the Microsoft 365 admin mobile app"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
@@ -19,14 +19,15 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - admindeeplinkMAC
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Get the Microsoft 365 Admin app and learn to manage your online organization from your phone or tablet."
+description: "Get the Microsoft 365 Admin app, your companion to the web-based Microsoft 365 admin center, to manage your online organization from your phone or tablet."
 ---
 
-# About the Microsoft 365 admin mobile app
+# About the Microsoft 365 Admin mobile app
 
 Are you an admin who’s usually on the go? Even if you aren’t, there may be times when you need to manage Microsoft 365 from your phone or tablet. Check out the free [Microsoft 365 Admin app](https://go.microsoft.com/fwlink/?LinkID=627216), the perfect companion to the web-based Microsoft 365 admin center. You can download the app from the [Apple App Store](https://apps.apple.com/app/apple-store/id761397963?pt=80423&ct=docsaboutadminapp&mt=8), and from the [Google Play Store](https://play.google.com/store/apps/details?id=com.ms.office365admin&referrer=utm_source%3Ddocsaboutadminapp%26utm_campaign%25docsaboutadminapp).
 
@@ -47,6 +48,13 @@ If you're an admin and you're responsible for more than one Microsoft 365 organi
 > [!IMPORTANT]
 > If you're having issues using the Admin mobile app on iOS or Android, email us at [feedback365@microsoft.com](mailto:feedback365@microsoft.com) to let us know.
 
+## Watch: Install the admin mobile app
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/05c1d439-9ec2-415f-9178-250f64dec64c]
+
+1. To get the Microsoft 365 Admin mobile app, search for  **Microsoft 365 Admin**  in the app store for your device and install it.
+2. Sign in with your global admin email address, and view the dashboard to see service health, monitor user licenses, and see messages and service requests.
+
 ## Before you begin
 
 You must be an administrator in a Microsoft 365 organization to use the admin mobile app.
@@ -56,10 +64,6 @@ You must be an administrator in a Microsoft 365 organization to use the admin mo
 [Apple App Store](https://apps.apple.com/app/apple-store/id761397963?pt=80423&ct=docsaboutadminapp&mt=8) 
 
 [Google Play Store](https://play.google.com/store/apps/details?id=com.ms.office365admin&referrer=utm_source%3Ddocsaboutadminapp%26utm_campaign%25docsaboutadminapp).
-  
-## Watch: Install the admin mobile app
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/05c1d439-9ec2-415f-9178-250f64dec64c]
 
 ## Frequently asked questions
 

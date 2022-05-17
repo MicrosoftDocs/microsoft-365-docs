@@ -2,12 +2,12 @@
 title: "Cmdlet references for Microsoft 365 services"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 07/16/2020
 audience: ITPro
 ms.topic: reference
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
 - CSH

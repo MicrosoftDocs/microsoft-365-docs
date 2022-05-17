@@ -2,30 +2,30 @@
 title: "Unassign licenses from users"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: sinakassaw, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
 ms.custom: 
+- commerce_licensing
 - AdminSurgePortfolio
 - okr_smb
 - manage_licenses
-- commerce_licensing
 - AdminTemplateSet
 search.appverid: MET150
 description: "The method you use to unassign product licenses depends on whether you unassign licenses from specific users or from a specific product."
-ms.date: 09/16/2021
+ms.date: 04/22/2022
 ---
 
-# Unassign licenses from users
+# Unassign Microsoft 365 licenses from users
 
 You can unassign licenses from users on either the **Active users** page, or on the **Licenses** page. The method you use depends on whether you want to unassign product licenses from specific users or unassign users licenses from a specific product.
 
@@ -48,12 +48,6 @@ When you use the **Licenses** page to unassign licenses, you unassign licenses f
 ::: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Licenses</a> page.
 
 ::: moniker-end
 
@@ -83,12 +77,6 @@ When you use the **Active users** page to unassign licenses, you unassign produc
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.
@@ -106,12 +94,6 @@ When you use the **Active users** page to unassign licenses, you unassign produc
 ::: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.
 
 ::: moniker-end
 
@@ -133,7 +115,7 @@ When you use the **Active users** page to unassign licenses, you unassign produc
 
 - When a license is removed from a user, Exchange online data that is associated with that account is held for 30 days. After the 30-day grace period, the data is deleted and can't be recovered.
 - Files saved in OneDrive for Business aren't deleted unless the user is deleted from the Microsoft 365 admin center or is removed through Active Directory synchronization. For more information, see [OneDrive retention and deletion](/onedrive/retention-and-deletion).
-- When the license is removed, the user's mailbox is no longer searchable by using an eDiscovery tool such as Content Search or Advanced eDiscovery. For more information, see "Searching disconnected or de-licensed mailboxes" in [Content Search in Microsoft 365](../../compliance/content-search.md).
+- When the license is removed, the user's mailbox is no longer searchable by using an eDiscovery tool such as Content Search or eDiscovery (Premium). For more information, see "Searching disconnected or de-licensed mailboxes" in [Content Search in Microsoft 365](../../compliance/content-search.md).
 - If you have an Enterprise subscription, like Office 365 Enterprise E3, Exchange Online lets you preserve the mailbox data of a deleted user account by using [inactive mailboxes](../../compliance/inactive-mailboxes-in-office-365.md). For more information, see [Create and manage inactive mailboxes in Exchange Online](../../compliance/create-and-manage-inactive-mailboxes.md).
 - To learn how to block a user's access to Microsoft 365 data after their license is removed, and how to get access to the data afterwards, see [Remove a former employee](../add-users/remove-former-employee.md).
 - If you remove a user's license and they still have Office apps installed, they see [Unlicensed Product and activation errors in Office](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380) when they use Office apps.

@@ -6,7 +6,7 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: scheduler
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "Understanding Trust and Privacy in Scheduler for Microsoft 365 are used with AI models and human assisted AI."
 ---
 # Trust and Privacy in Scheduler for Microsoft 365

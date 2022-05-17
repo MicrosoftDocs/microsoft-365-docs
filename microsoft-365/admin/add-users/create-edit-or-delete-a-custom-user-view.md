@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 4fe7f6ac-be8e-4b57-9e13-24ff889a4b28
-description: "Learn to use filters to create, edit, or delete custom user view in Microsoft 365."
+description: "If you're a global or user management admin of a Microsoft 365 for business subscription, you can use filters to create, edit, or delete custom user view."
 ---
 
 # Create, edit, or delete a custom user view
 
-If you're a global or user management admin of a Microsoft 365 for business subscription,  you can create custom user views to view a specific subset of users. These views are in addition to the standard set of views. You can create, edit, or delete custom user views, and the custom views you create are available to all admins.
+If you're a global or user management admin of a Microsoft 365 for business subscription, you can create custom user views to view a specific subset of users. These views are in addition to the standard set of views. You can create, edit, or delete custom user views, and the custom views you create are available to all admins.
   
 ## Custom user views in the admin center
 
@@ -81,12 +81,6 @@ You can also filter by additional user profile details used in your organization
   
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. In the admin center, go to **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a>. 
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. In the admin center, go to **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a>.  
@@ -105,12 +99,6 @@ You can also filter by additional user profile details used in your organization
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. In the admin center, go to **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a>. 
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. In the admin center, go to **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a>. 
@@ -126,7 +114,7 @@ You can also filter by additional user profile details used in your organization
 
 ## Related content
 
-[Overview of the Microsoft 365 admin center](../../business-video/admin-center-overview.md) (video)\
+[Overview of the Microsoft 365 admin center](../admin-overview/admin-center-overview.md) (video)\
 [About admin roles](../add-users/about-admin-roles.md) (video)\
 [Customize the Microsoft 365 theme for your organization](../setup/customize-your-organization-theme.md) (article)
 

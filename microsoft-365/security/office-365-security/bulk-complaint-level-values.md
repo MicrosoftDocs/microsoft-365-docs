@@ -9,7 +9,7 @@ ms.date:
 audience: ITPro
 ms.topic: conceptual
 
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
   - MET150
 ms.assetid: a5b03b3c-37dd-429e-8e9b-2c1b25031794
@@ -37,14 +37,11 @@ Bulk mailers vary in their sending patterns, content creation, and recipient acq
 
 The BCL thresholds are described in the following table.
 
-****
-
 |BCL|Description|
 |:---:|---|
 |0|The message isn't from a bulk sender.|
 |1, 2, 3|The message is from a bulk sender that generates few complaints.|
 |4, 5, 6, 7<sup>\*</sup>|The message is from a bulk sender that generates a mixed number of complaints.|
 |8, 9|The message is from a bulk sender that generates a high number of complaints.|
-|
 
 <sup>\*</sup> This is the default threshold value that's used in anti-spam policies.
