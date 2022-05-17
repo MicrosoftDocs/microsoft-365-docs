@@ -27,7 +27,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
-description: "Learn how you can set a policy to allow users to reset their own passwords using the self-service password reset tool."
+description: "Learn how you can set a policy in the Microsoft 365 admin center to allow users to reset their own passwords using the self-service password reset tool."
 ---
 
 # Let users reset their own passwords

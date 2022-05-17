@@ -16,7 +16,7 @@ ms.topic: article
 ms.technology: mde
 ms.custom: api
 ---
- 
+
 # Export security baselines assessment per device
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -48,23 +48,32 @@ Data that is collected using either '_JSON response_ or _via files_' is the curr
 
 Returns all security baselines assessments for all devices, on a per-device basis. It returns a table with a separate entry for every unique combination of DeviceId, ProfileId, ConfigurationId.
 
-#### 1.2 Limitations
+### 1.2 Permissions
+
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md) for details.
+
+Permission type|Permission|Permission display name
+:---|:---|:---
+Application|SecurityBaselinesAssessment.Read.All |'Read all security baselines assessments information'
+Delegated (work or school account)|SecurityBaselinesAssessment.Read|'Read security baselines assessments information'
+
+### 1.3 Limitations
 
 - Maximum page size is 200,000.
 - Rate limitations for this API are 30 calls per minute and 1000 calls per hour.
 
-### 1.3 Parameters
+### 1.4 Parameters
 
 - pageSize (default = 50,000): Number of results in response.
 - $top: Number of results to return (doesn't return @odata.nextLink and so doesn't pull all the data).
 
-### 1.4 HTTP request
+### 1.5 HTTP request
 
 ```http
 GET /api/machines/baselineComplianceAssessmentByMachine
 ```
 
-### 1.5 Properties (JSON response)
+### 1.6 Properties (JSON response)
 
 > [!NOTE]
 > Each record is approximately 1 KB of data. You should take this into account when choosing the correct pageSize parameter.
@@ -92,42 +101,42 @@ Property (ID)|Data type|Description
 |CurrentValue|String|Set of detected values found on the device.
 |Source|String|The registry path or other location used to determine the current device setting.
 
-## 1.6 Example
+## 1.7 Example
 
-### 1.6.1 Request example
+### 1.7.1 Request example
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/machines/BaselineComplianceAssessmentByMachine
 ```
 
-### 1.6.2 Response example
+### 1.7.2 Response example
 
 ```json
-{ 
-"@odata.context": " https://api.securitycenter.microsoft.com /api/$metadata#Collection(microsoft.windowsDefenderATP.api.AssetBaselineAssessment)", 
+{
+"@odata.context": " https://api.securitycenter.microsoft.com /api/$metadata#Collection(microsoft.windowsDefenderATP.api.AssetBaselineAssessment)",
 "value": [
-{ 
-    "id": "0000682575d5d473e82ed4d8680425d152411251_9e1b90be-e83e-485b-a5ec-4a429412e734_1.1.1", 
-    "configurationId": "1.1.1", 
-    "deviceId": "0000682575d5d473242222425d152411251", 
-    "deviceName": " ComputerPII_365f5c0bb7202c163937dad3d017969b2d760eb4.DomainPII_29596 ", 
-    "profileId": "9e1b90be-e83e-485b-a5ec-4a429412e734", 
-    "osPlatform": "WindowsServer2019", 
-    "osVersion": "10.0.17763.2330", 
-    "rbacGroupId": 86, 
-    "rbacGroupName": "UnassignedGroup", 
-    "isApplicable": true, 
-    "isCompliant": false, 
-    "dataCollectionTimeOffset": "2021-12-22T00:08:02.478Z", 
-    "recommendedValue": [ 
-                    "Greater than or equal '24'" 
-                ], 
-                "currentValue": [ 
-                    "24" 
-                ], 
-                "source": [ 
-                    "password_hist_len"
-                ], 
+{
+    "id": "0000682575d5d473e82ed4d8680425d152411251_9e1b90be-e83e-485b-a5ec-4a429412e734_1.1.1",
+    "configurationId": "1.1.1",
+    "deviceId": "0000682575d5d473242222425d152411251",
+    "deviceName": " ComputerPII_365f5c0bb7202c163937dad3d017969b2d760eb4.DomainPII_29596 ",
+    "profileId": "9e1b90be-e83e-485b-a5ec-4a429412e734",
+    "osPlatform": "WindowsServer2019",
+    "osVersion": "10.0.17763.2330",
+    "rbacGroupId": 86,
+    "rbacGroupName": "UnassignedGroup",
+    "isApplicable": true,
+    "isCompliant": false,
+    "dataCollectionTimeOffset": "2021-12-22T00:08:02.478Z",
+    "recommendedValue": [
+                    "Greater than or equal '24'"
+                ],
+                "currentValue": [
+                    "24"
+                ],
+                "source": [
+                    "password_hist_len"
+                ],
 }
 ```
 
@@ -149,7 +158,7 @@ GET /api/machines/BaselineComplianceAssessmentExport
 
 ### 2.4 Parameters
 
-- sasValidHours: The number of hours that the download URLs will be valid for (Maximum 24 hours). 
+- sasValidHours: The number of hours that the download URLs will be valid for (Maximum 24 hours).
 
 ### 2.5 Properties (via files)
 
@@ -180,14 +189,14 @@ GET https://api.securitycenter.microsoft.com/api/machines/BaselineComplianceAsse
 ### 2.6.2 Response example
 
 ```json
-{ 
-    "@odata.context": "https://api.securitycenter. contoso.com/api/$metadata#microsoft.windowsDefenderATP.api.ExportFilesResponse", 
-    "exportFiles": 
-    [ 
-    "https://tvmexportexternalstgeus.blob.core.windows.net/temp-1ebd3d09-d06a-4aad-ab80-ebc536cec61c/2021-12-22/0500/BaselineAssessmentExport/json/OrgId= OrgId=<Org Id>/_RbacGroupId=<Rbac Group Id>/part-00000-c09dfd00-2278-4735-b23a-71733751fcbc.c000.json.gz?sv=ABCD", 
-   "https://tvmexportexternalstgeus.blob.core.windows.net/temp-1ebd3d09-d06a-4aad-ab80-ebc536cec61c/2021-12-22/0500/BaselineAssessmentExport/json/OrgId=<Org Id>/_RbacGroupId=<Rbac Group Id>/part-00001-c09dfd00-2278-4735-b23a-71733751fcbc.c000.json.gz?sv= ABCD", 
-    ], 
-    "generatedTime": "2021-01-11T11:01:00Z" 
+{
+    "@odata.context": "https://api.securitycenter. contoso.com/api/$metadata#microsoft.windowsDefenderATP.api.ExportFilesResponse",
+    "exportFiles": 
+    [
+    "https://tvmexportexternalstgeus.blob.core.windows.net/temp-1ebd3d09-d06a-4aad-ab80-ebc536cec61c/2021-12-22/0500/BaselineAssessmentExport/json/OrgId= OrgId=<Org Id>/_RbacGroupId=<Rbac Group Id>/part-00000-c09dfd00-2278-4735-b23a-71733751fcbc.c000.json.gz?sv=ABCD",
+   "https://tvmexportexternalstgeus.blob.core.windows.net/temp-1ebd3d09-d06a-4aad-ab80-ebc536cec61c/2021-12-22/0500/BaselineAssessmentExport/json/OrgId=<Org Id>/_RbacGroupId=<Rbac Group Id>/part-00001-c09dfd00-2278-4735-b23a-71733751fcbc.c000.json.gz?sv= ABCD",
+    ],
+    "generatedTime": "2021-01-11T11:01:00Z"
 }
 ```
 
