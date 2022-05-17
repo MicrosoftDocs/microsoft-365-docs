@@ -130,9 +130,9 @@ Service-side auto-labeling helps label sensitive documents at rest, and emails i
 
 The default service-side auto-labeling has the following configuration: 
 
-- If there are 1-9 instances of credit card numbers found in a document, apply the sensitivity label **Confidential** \ **Anyone (unrestricted)**
+- If there are 1-9 instances of credit card numbers found in a document or email, apply the sensitivity label **Confidential** \ **Anyone (unrestricted)**
 
-- If there are 10 or more instances of credit card numbers found in a document or email, recommend the user applies the sensitivity label **Confidential** \ **All Employees** 
+- If there are 10 or more instances of credit card numbers found in a document or email, apply the sensitivity label **Confidential** \ **All Employees** 
 
 > [!NOTE]
 > If we detected you have your own sensitivity labels published, we'll prompt you to select one of your own labels for your auto-labeling policy.
