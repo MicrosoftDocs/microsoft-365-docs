@@ -36,10 +36,6 @@ When an [automated investigation](office-365-air.md) occurs in [Microsoft Defend
 
 The investigation status indicates the progress of the analysis and actions. As the investigation runs, status changes to indicate whether threats were found, and whether actions have been approved.
 
-<br>
-
-****
-
 |Status|Description|
 |---|---|
 |**Starting**|The investigation has been triggered and waiting to start running.|
@@ -53,7 +49,6 @@ The investigation status indicates the progress of the analysis and actions. As 
 |**Failed**|At least one investigation analyzer ran into a problem where it could not complete properly. <p> **NOTE** If an investigation fails after remediation actions were approved, the remediation actions might still have succeeded. View the investigation details.|
 |**Queued By Throttling**|An investigation is being held in a queue. When other investigations complete, queued investigations begin. Throttling helps avoid poor service performance.  <p> **TIP**: Pending actions can limit how many new investigations can run. Make sure to [approve (or reject) pending actions](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions).|
 |**Terminated By Throttling**|If an investigation is held in the queue too long, it stops. <p> **TIP**: You can [start an investigation from Threat Explorer](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).|
-|
 
 ## View details of an investigation
 

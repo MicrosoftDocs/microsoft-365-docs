@@ -41,7 +41,7 @@
                   href: model-usage-analytics.md
                 - name: Leverage term store taxonomy when creating an extractor
                   href: leverage-term-store-taxonomy.md
-                - name: SharePoint Syntex accessibility mode
+                - name: Accessibility mode
                   href: accessibility-mode.md
             - name: Form processing
               items:
@@ -117,6 +117,8 @@
           href: adoption-getstarted.md
         - name: Scenarios and use cases
           href: adoption-scenarios.md 
+        - name: Assess your environment
+          href: adoption-assessment-tool.md 
         - name: Run a trial
           href: trial-syntex.md 
         - name: Manage contracts in Microsoft 365
