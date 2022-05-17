@@ -54,7 +54,7 @@ There are new Azure AD built-in roles in the Microsoft 365 admin center. Give ad
 
 There are also 4 new roles in the Microsoft 365 admin center centered around management of custom security attributes. These roles are available for everyone to use in the Role assignments node under Roles.
 
-Learn more about Azure AD built-in roles here: https://docs.microsoft.com/en-us/azure/active-directory/roles/permissions-reference.
+For more information about Azure AD built-in roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).
 
 **Virtual Visits Administrator**   Manage and share Virtual Visits information and metrics from admin centers or the Virtual Visits app.
 
