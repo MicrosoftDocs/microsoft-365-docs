@@ -55,7 +55,6 @@ The following table only includes the list of the tables supported in the stream
 | **[EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** | GA |
 | **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | GA |
 | **[IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md)** | GA |
-| **[IdentityInfo](advanced-hunting-identityinfo-table.md)** | GA |
 | **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)** | GA |
 | **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)** | GA |
 | **[CloudAppEvents](advanced-hunting-cloudappevents-table.md)** | GA |
