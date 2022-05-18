@@ -57,7 +57,7 @@ You can create rules that determine the devices and alert severities to send ema
         > [!NOTE]
         > This information might be processed by recipient mail servers that are not in the geographic location you have selected for your Defender for Endpoint data.
 
-    - **Devices** - Choose whether to notify recipients for alerts on all devices (Global administrator role only) or on selected device groups. For more information, see [Create and manage device groups](machine-groups.md). (If you're using [Defender for Business](../defender-business/mdb-overview.md), this setting does not apply.)
+    - **Devices** - Choose whether to notify recipients for alerts on all devices (Global administrator role only) or on selected device groups. For more information, see [Create and manage device groups](machine-groups.md). (If you're using [Defender for Business](../defender-business/mdb-overview.md), device groups do not apply.)
     - **Alert severity** - Choose the alert severity level.
 
 4. Click **Next**.
