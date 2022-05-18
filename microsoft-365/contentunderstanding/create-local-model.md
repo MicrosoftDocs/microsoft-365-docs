@@ -36,7 +36,7 @@ This feature is available only for creating [document understanding models](appl
 
     ![Screenshot of a SharePoint document library with the Classify and extract option highlighted.](../media/content-understanding/local-model-classify-and-extract-option.png) 
 
-2. The first time you use this feature, you are activating SharePoint Syntex on your site. You'll see the following message.
+2. The first time you use this feature, you're activating SharePoint Syntex on your site. You'll see the following message.
 
     ![Screenshot of the Activate document classification and extraction infomation page.](../media/content-understanding/local-model-first-run-activate-message.png) 
 
