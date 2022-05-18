@@ -43,9 +43,9 @@ additionalContent:
           summary: Learn more about scheduling dynamic recurring meetings.
           url: scheduler-recurring-meetings.md
         # Card
-       # - title: Preferences
-        #  summary: Learn how to adjust scheduling preferences.
-         # url: scheduler-preferences.md
+        - title: Preferences
+          summary: Learn how to adjust scheduling preferences.
+          url: scheduler-preferences.md
         # Card
         - title: Scheduler FAQ
           summary: Frequently asked questions and answers in Scheduler for Microsoft 365.
