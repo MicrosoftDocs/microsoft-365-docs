@@ -64,7 +64,7 @@ To view or edit email notification settings for your company, follow these steps
    - If you do have rules created, select a rule to edit it. You can also delete a rule. 
 
 > [!IMPORTANT]
-> When you set up email notifications in Defender for Business, you must assign the notification rules to specific users. Defender for Business doesn't use [role-based access control like Defender for Endpoint does](../defender-endpoint/rbac.md). 
+> When you set up email notifications in Defender for Business, you must assign the notification rules to specific users. Defender for Business doesn't use [role-based access control like Defender for Endpoint does](../defender-endpoint/rbac.md). Also, email notifications cannot be applied to device groups in Defender for Business. 
 
 ## Next steps
 
