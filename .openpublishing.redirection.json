@@ -454,12 +454,12 @@
       "source_path": "microsoft-365/business/add-autopilot-devices-and-profile.md",
       "redirect_url": "/microsoft-365/business-premium/m365bp-add-autopilot-devices-and-profile",
       "redirect_document_id": true
-    }, 
+    },
     {
       "source_path": "microsoft-365/business/set-up-windows-devices.md",
       "redirect_url": "/microsoft-365/admin/setup/set-up-windows-devices",
       "redirect_document_id": true
-    },    
+    },
     {
       "source_path": "microsoft-365/business/manage-windows-devices.md",
       "redirect_url": "/microsoft-365/admin/setup/manage-windows-devices",
@@ -649,57 +649,57 @@
       "source_path": "microsoft-365/admin/dns/create-dns-records-at-google-domains.md",
       "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "microsoft-365/admin/dns/create-dns-records-at-hostgator.md",
       "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "microsoft-365/admin/dns/create-dns-records-at-mydomain.md",
       "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "microsoft-365/admin/dns/create-dns-records-at-name-com.md",
       "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "microsoft-365/admin/dns/create-dns-records-at-names-co-uk.md",
       "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "microsoft-365/admin/dns/create-dns-records-at-netregistry.md",
       "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "microsoft-365/admin/dns/create-dns-records-at-register365.md",
       "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "microsoft-365/admin/dns/create-dns-records-at-register-com.md",
       "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "microsoft-365/admin/dns/create-dns-records-at-yahoo-small-business.md",
       "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "microsoft-365/admin/dns/create-dns-records-for-azure-dns-zones.md",
       "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "microsoft-365/admin/dns/create-dns-records-for-domain-managed-by-google-enom.md",
       "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "microsoft-365/admin/dns/set-up-dns-records-at-easydns.md",
       "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
@@ -1948,62 +1948,62 @@
     {
       "source_path": "microsoft-365/enterprise/microsoft-365-germany-endpoints.md",
       "redirect_url": "https://aka.ms/germanymigrateassist",
-      "redirect_document_id": false  
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/ms-cloud-germany-migration-opt-in.md",
       "redirect_url": "https://aka.ms/germanymigrateassist",
-      "redirect_document_id": false  
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/ms-cloud-germany-transition.md",
       "redirect_url": "https://aka.ms/germanymigrateassist",
-      "redirect_document_id": false  
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/ms-cloud-germany-transition-add-adfs.md",
       "redirect_url": "https://aka.ms/germanymigrateassist",
-      "redirect_document_id": false  
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/ms-cloud-germany-transition-add-csp.md",
       "redirect_url": "https://aka.ms/germanymigrateassist",
-      "redirect_document_id": false  
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/ms-cloud-germany-transition-add-devices.md",
       "redirect_url": "https://aka.ms/germanymigrateassist",
-      "redirect_document_id": false  
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/ms-cloud-germany-transition-add-pre-work.md",
       "redirect_url": "https://aka.ms/germanymigrateassist",
-      "redirect_document_id": false  
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/ms-cloud-germany-transition-azure-ad.md",
       "redirect_url": "https://aka.ms/germanymigrateassist",
-      "redirect_document_id": false  
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/ms-cloud-germany-transition-experience.md",
       "redirect_url": "https://aka.ms/germanymigrateassist",
-      "redirect_document_id": false  
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/ms-cloud-germany-transition-phases.md",
       "redirect_url": "https://aka.ms/germanymigrateassist",
-      "redirect_document_id": false  
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/ms-cloud-germany-transition-add-experience.md",
       "redirect_url": "https://aka.ms/germanymigrateassist",
-      "redirect_document_id": false  
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/ms-cloud-germany-transition-add-scc.md",
       "redirect_url": "https://aka.ms/germanymigrateassist",
-      "redirect_document_id": false  
+      "redirect_document_id": false
     },
     {
       "source_path": "enterprise/office-365-ip-web-service.md",
@@ -2125,291 +2125,291 @@
       "redirect_url": "/microsoft-365/compliance/records-management#records",
       "redirect_document_id": true
     },
-    {
-      "source_path": "microsoft-365/enterprise/getting-started.md",
+    {
+      "source_path": "microsoft-365/enterprise/getting-started.md",
       "redirect_url": "/microsoft-365/enterprise/desktop-deployment-center-home",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "microsoft-365/enterprise/step-1-device-and-app-readiness.md",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/enterprise/step-1-device-and-app-readiness.md",
       "redirect_url": "/microsoft-365/enterprise/desktop-deployment-center-home",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/enterprise/step-2-directory-and-network-readiness.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/step-2-directory-and-network-readiness.md",
       "redirect_url": "/microsoft-365/enterprise/desktop-deployment-center-home",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/enterprise/step-3-office-and-lob-app-delivery.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/step-3-office-and-lob-app-delivery.md",
       "redirect_url": "/microsoft-365/enterprise/desktop-deployment-center-home",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/enterprise/step-4-user-files-and-settings-migration.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/step-4-user-files-and-settings-migration.md",
       "redirect_url": "/microsoft-365/enterprise/desktop-deployment-center-home",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/enterprise/step-5-security-and-compliance.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/step-5-security-and-compliance.md",
       "redirect_url": "/microsoft-365/enterprise/desktop-deployment-center-home",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/enterprise/step-6-os-deployment-and-feature-updates.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/step-6-os-deployment-and-feature-updates.md",
       "redirect_url": "/microsoft-365/enterprise/desktop-deployment-center-home",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/enterprise/step-7-windows-and-office-as-a-service.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/step-7-windows-and-office-as-a-service.md",
       "redirect_url": "/microsoft-365/enterprise/desktop-deployment-center-home",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/enterprise/step-8-user-communications-and-training.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/step-8-user-communications-and-training.md",
       "redirect_url": "/microsoft-365/enterprise/desktop-deployment-center-home",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/enterprise/windows-7-to-windows-10-upgrade-manual.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/windows-7-to-windows-10-upgrade-manual.md",
       "redirect_url": "/microsoft-365/enterprise/desktop-deployment-center-home",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/enterprise/windows-7-to-windows-10-upgrade-automated.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/windows-7-to-windows-10-upgrade-automated.md",
       "redirect_url": "/microsoft-365/enterprise/desktop-deployment-center-home",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/enterprise/find-help-for-modern-desktop-deployment.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/find-help-for-modern-desktop-deployment.md",
       "redirect_url": "/microsoft-365/enterprise/desktop-deployment-center-home",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/enterprise/deploy-microsoft-365-enterprise.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/deploy-microsoft-365-enterprise.md",
       "redirect_url": "/microsoft-365/enterprise/microsoft-365-overview",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "microsoft-365/enterprise/deploy-foundation-infrastructure.md",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/enterprise/deploy-foundation-infrastructure.md",
       "redirect_url": "/microsoft-365/enterprise/microsoft-365-overview",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/enterprise/networking-infrastructure.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/networking-infrastructure.md",
       "redirect_url": "/microsoft-365/enterprise/networking-roadmap-microsoft-365",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "microsoft-365/enterprise/networking-provide-bandwidth-cloud-services.md",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/enterprise/networking-provide-bandwidth-cloud-services.md",
       "redirect_url": "/microsoft-365/enterprise/networking-roadmap-microsoft-365",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/enterprise/networking-dns-resolution-same-location.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/networking-dns-resolution-same-location.md",
       "redirect_url": "/microsoft-365/enterprise/networking-roadmap-microsoft-365",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/enterprise/networking-avoid-network-hairpins.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/networking-avoid-network-hairpins.md",
       "redirect_url": "/microsoft-365/enterprise/networking-roadmap-microsoft-365",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/enterprise/networking-configure-proxies-firewalls.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/networking-configure-proxies-firewalls.md",
       "redirect_url": "/microsoft-365/enterprise/networking-roadmap-microsoft-365",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/enterprise/networking-optimize-tcp-performance.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/networking-optimize-tcp-performance.md",
       "redirect_url": "/microsoft-365/enterprise/networking-roadmap-microsoft-365",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/enterprise/networking-exit-criteria.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/networking-exit-criteria.md",
       "redirect_url": "/microsoft-365/enterprise/networking-roadmap-microsoft-365",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/enterprise/identity-infrastructure.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/identity-infrastructure.md",
       "redirect_url": "/microsoft-365/enterprise/identity-roadmap-microsoft-365",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "microsoft-365/enterprise/identity-create-protect-global-admins.md",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/enterprise/identity-create-protect-global-admins.md",
       "redirect_url": "/microsoft-365/enterprise/identity-roadmap-microsoft-365",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/enterprise/identity-secure-your-passwords.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/identity-secure-your-passwords.md",
       "redirect_url": "/microsoft-365/enterprise/identity-roadmap-microsoft-365",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/enterprise/identity-secure-user-sign-ins.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/identity-secure-user-sign-ins.md",
       "redirect_url": "/microsoft-365/enterprise/identity-roadmap-microsoft-365",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/enterprise/identity-add-user-accounts.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/identity-add-user-accounts.md",
       "redirect_url": "/microsoft-365/enterprise/identity-roadmap-microsoft-365",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/enterprise/identity-use-group-management.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/identity-use-group-management.md",
       "redirect_url": "/microsoft-365/enterprise/identity-roadmap-microsoft-365",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/enterprise/identity-configure-identity-governance.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/identity-configure-identity-governance.md",
       "redirect_url": "/microsoft-365/enterprise/identity-roadmap-microsoft-365",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/enterprise/identity-exit-criteria.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/identity-exit-criteria.md",
       "redirect_url": "/microsoft-365/enterprise/identity-roadmap-microsoft-365",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/enterprise/windows10-infrastructure.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/windows10-infrastructure.md",
       "redirect_url": "/windows/deployment/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/enterprise/windows10-prepare-your-org.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/windows10-prepare-your-org.md",
       "redirect_url": "/windows/deployment/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/enterprise/windows10-deploy-inplaceupgrade.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/windows10-deploy-inplaceupgrade.md",
       "redirect_url": "/windows/deployment/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/enterprise/windows10-deploy-autopilot.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/windows10-deploy-autopilot.md",
       "redirect_url": "/windows/deployment/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/enterprise/windows10-enable-windows-analytics.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/windows10-enable-windows-analytics.md",
       "redirect_url": "/windows/deployment/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/enterprise/windows10-enable-security-features.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/windows10-enable-security-features.md",
       "redirect_url": "/windows/deployment/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/enterprise/windows10-exit-criteria.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/windows10-exit-criteria.md",
       "redirect_url": "/windows/deployment/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/enterprise/office365proplus-infrastructure.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/office365proplus-infrastructure.md",
       "redirect_url": "/deployoffice/deployment-guide-microsoft-365-apps",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/enterprise/office365proplus-exit-criteria.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/office365proplus-exit-criteria.md",
       "redirect_url": "/deployoffice/deployment-guide-microsoft-365-apps",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/enterprise/mobility-infrastructure.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/mobility-infrastructure.md",
       "redirect_url": "/microsoft-365/enterprise/device-management-roadmap-microsoft-365",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "microsoft-365/enterprise/mobility-infrastructure-exit-criteria.md",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/enterprise/mobility-infrastructure-exit-criteria.md",
       "redirect_url": "/microsoft-365/enterprise/device-management-roadmap-microsoft-365",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/enterprise/infoprotect-infrastructure.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/infoprotect-infrastructure.md",
       "redirect_url": "/microsoft-365/security/office-365-security/security-roadmap",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "microsoft-365/enterprise/infoprotect-define-sec-infoprotect-levels.md",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/enterprise/infoprotect-define-sec-infoprotect-levels.md",
       "redirect_url": "/microsoft-365/security/office-365-security/security-roadmap",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/enterprise/infoprotect-configure-classification.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/infoprotect-configure-classification.md",
       "redirect_url": "/microsoft-365/security/office-365-security/security-roadmap",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/enterprise/infoprotect-configure-increased-security-office-365.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/infoprotect-configure-increased-security-office-365.md",
       "redirect_url": "/microsoft-365/security/office-365-security/security-roadmap",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/enterprise/infoprotect-deploy-windows-information-protection.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/infoprotect-deploy-windows-information-protection.md",
       "redirect_url": "/microsoft-365/security/office-365-security/security-roadmap",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/enterprise/infoprotect-data-loss-prevention.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/infoprotect-data-loss-prevention.md",
       "redirect_url": "/microsoft-365/security/office-365-security/security-roadmap",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/enterprise/infoprotect-email-encryption.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/infoprotect-email-encryption.md",
       "redirect_url": "/microsoft-365/security/office-365-security/security-roadmap",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/enterprise/infoprotect-configure-privileged-access-management.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/infoprotect-configure-privileged-access-management.md",
       "redirect_url": "/microsoft-365/security/office-365-security/security-roadmap",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/enterprise/infoprotect-exit-criteria.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/infoprotect-exit-criteria.md",
       "redirect_url": "/microsoft-365/security/office-365-security/security-roadmap",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/enterprise/deployment-strategies-microsoft-365-enterprise.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/deployment-strategies-microsoft-365-enterprise.md",
       "redirect_url": "/microsoft-365/enterprise/microsoft-365-overview",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/enterprise/deploy-with-existing-infrastructure.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/deploy-with-existing-infrastructure.md",
       "redirect_url": "/microsoft-365/enterprise/microsoft-365-overview",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/enterprise/deploy-foundation-infrastructure-non-enterprises.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/deploy-foundation-infrastructure-non-enterprises.md",
       "redirect_url": "/microsoft-365/enterprise/microsoft-365-overview",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/enterprise/deploy-workloads.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/deploy-workloads.md",
       "redirect_url": "/microsoft-365/enterprise/cloud-services-roadmap-microsoft-365",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "microsoft-365/enterprise/teams-workload.md",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/enterprise/teams-workload.md",
       "redirect_url": "/MicrosoftTeams/Teams-overview",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/enterprise/exchangeonline-workload.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/exchangeonline-workload.md",
       "redirect_url": "/Exchange/exchange-online",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/enterprise/sharepoint-online-onedrive-workload.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/sharepoint-online-onedrive-workload.md",
       "redirect_url": "/sharepoint/sharepoint-online",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/enterprise/migration-microsoft-365-enterprise-workload.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/migration-microsoft-365-enterprise-workload.md",
       "redirect_url": "/microsoft-365/enterprise/client-server-software-roadmap-microsoft-365",
-      "redirect_document_id": true
-    },
+      "redirect_document_id": true
+    },
     {
       "source_path": "enterprise/office-365-client-support-modern-authentication.md",
       "redirect_url": "/microsoft-365/enterprise/microsoft-365-client-support-modern-authentication",
@@ -4299,12 +4299,12 @@
       "source_path": "microsoft-365/security/office-365-security/atp-safe-attachments.md",
       "redirect_url": "/microsoft-365/security/office-365-security/safe-attachments",
       "redirect_document_id": false
-    },    
+    },
     {
       "source_path": "microsoft-365/security/office-365-security/view-reports-for-atp.md",
       "redirect_url": "/microsoft-365/security/office-365-security/view-reports-for-mdo",
       "redirect_document_id": false
-    },    
+    },
     {
       "source_path": "microsoft-365/security/defender/latest-attack-campaigns.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/threat-analytics",
@@ -4573,17 +4573,17 @@
     {
       "source_path": "microsoft-365/managed-desktop/working-with-managed-desktop/usage-insights.md",
       "redirect_url": "/microsoft-365/managed-desktop/working-with-managed-desktop/reports",
-      "redirect_document_id": false 
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/managed-desktop/working-with-managed-desktop/security-update-insights.md",
       "redirect_url": "/microsoft-365/managed-desktop/working-with-managed-desktop/reports",
-      "redirect_document_id": false 
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/managed-desktop/working-with-managed-desktop/insights.md",
       "redirect_url": "/microsoft-365/managed-desktop/working-with-managed-desktop/reports",
-      "redirect_document_id": false 
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/compliance/classifier-how-retrain-comms-compliance.md",
@@ -4669,7 +4669,7 @@
       "source_path": "microsoft-365/security/defender-endpoint/customize-attack-surface-reduction.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment-phase-3",
       "redirect_document_id": false
-    },    
+    },
     {
       "source_path": "microsoft-365/security/defender-endpoint/customize-attack-surface-reduction-phase-1.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment-plan",
@@ -4720,50 +4720,50 @@
       "redirect_url": "/stream/migrate-from-office-365",
       "redirect_document_id": false
     },
-    {
+    {
       "source_path": "microsoft-365/lti/teams-classes-lms.md",
       "redirect_url": "/MicrosoftTeams/Teams-overview",
-      "redirect_document_id": false
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/lti/use-onedrive-with-lms.md",
       "redirect_url": "/lti/onedrive-lti",
-      "redirect_document_id": false
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/microsoft-365-isolation-in-microsoft-365-video.md",
       "redirect_url": "/microsoft-365/enterprise/microsoft-365-tenant-isolation-overview",
-      "redirect_document_id": false
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/safety-tips-in-office-365.md",
       "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-protection",
-      "redirect_document_id": false
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md",
       "redirect_url": "/microsoft-365/security/office-365-security/migrate-to-defender-for-office-365",
-      "redirect_document_id": false
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/managed-desktop/service-description/device-list.md",
       "redirect_url": "/microsoft-365/managed-desktop/service-description/device-requirements",
-      "redirect_document_id": false
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/managed-desktop/service-description/archived-device-list.md",
       "redirect_url": "/microsoft-365/managed-desktop/service-description/device-requirements",
-      "redirect_document_id": false
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint",
-      "redirect_document_id": false
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-in-windows-10.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows",
-      "redirect_document_id": false
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/defender-endpoint/evaluate-defender-endpoint-enable.md",
@@ -4779,81 +4779,81 @@
       "source_path": "microsoft-365/security/defender-endpoint/evaluate-defender-endpoint-pilot.md",
       "redirect_url": "/microsoft-365/security/defender/eval-defender-endpoint-pilot",
       "redirect_document_id": false
-    },     
+    },
     {
       "source_path": "microsoft-365/compliance/insider-risk-management-alerts.md",
       "redirect_url": "/microsoft-365/compliance/insider-risk-management-activities",
-      "redirect_document_id": false
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/defender/m365d-evaluation.md",
-      "redirect_url": "/microsoft-365/security/defender/eval-overview", 
+      "redirect_url": "/microsoft-365/security/defender/eval-overview",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/defender/prepare-m365d-eval.md",
-      "redirect_url": "/microsoft-365/security/defender/eval-overview", 
-      "redirect_document_id": false
+      "redirect_url": "/microsoft-365/security/defender/eval-overview",
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/defender/config-m365d-eval.md",
-      "redirect_url": "/microsoft-365/security/defender/eval-overview", 
-      "redirect_document_id": false
+      "redirect_url": "/microsoft-365/security/defender/eval-overview",
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/defender/generate-test-alert.md",
-      "redirect_url": "/microsoft-365/security/defender/eval-overview", 
-      "redirect_document_id": false
+      "redirect_url": "/microsoft-365/security/defender/eval-overview",
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/defender/m365d-pilot.md",
-      "redirect_url": "/microsoft-365/security/defender/eval-overview", 
-      "redirect_document_id": false
+      "redirect_url": "/microsoft-365/security/defender/eval-overview",
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/defender/m365d-pilot-plan.md",
-      "redirect_url": "/microsoft-365/security/defender/eval-overview", 
-      "redirect_document_id": false
+      "redirect_url": "/microsoft-365/security/defender/eval-overview",
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/defender/m365d-pilot-close.md",
-      "redirect_url": "/microsoft-365/security/defender/eval-overview", 
-      "redirect_document_id": false
+      "redirect_url": "/microsoft-365/security/defender/eval-overview",
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/defender/m365d-pilot-simulate.md",
-      "redirect_url": "/microsoft-365/security/defender/eval-defender-investigate-respond-simulate-attack", 
+      "redirect_url": "/microsoft-365/security/defender/eval-defender-investigate-respond-simulate-attack",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/junk-email-reporting-add-in-for-microsoft-outlook.md",
       "redirect_url": "/microsoft-365/security/office-365-security/enable-the-report-message-add-in",
-      "redirect_document_id": false
+      "redirect_document_id": false
     },
     {
      "source_path": "microsoft-365/security/office-365-security/enable-the-report-phish-add-in.md",
      "redirect_url": "/microsoft-365/security/office-365-security/enable-the-report-message-add-in",
-     "redirect_document_id": false
+     "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/quarantine-tags.md",
       "redirect_url": "/microsoft-365/security/office-365-security/quarantine-policies",
-      "redirect_document_id": true
+      "redirect_document_id": true
      },
      {
       "source_path": "microsoft-365/security/office-365-security/quarantine-policy.md",
       "redirect_url": "/microsoft-365/security/office-365-security/quarantine-policies",
-      "redirect_document_id": false
+      "redirect_document_id": false
      },
      {
       "source_path": "microsoft-365/security/office-365-security/attack-simulator.md",
       "redirect_url": "/microsoft-365/security/office-365-security/attack-simulation-training-get-started",
-      "redirect_document_id": false
+      "redirect_document_id": false
      },
      {
       "source_path": "submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md",
       "redirect_url": "/microsoft-365/security/office-365-security/report-junk-email-messages-to-microsoft",
-      "redirect_document_id": false
+      "redirect_document_id": false
      },
      {
       "source_path": "microsoft-365/enterprise/microsoft-365-tenant-isolation-overview.md",
@@ -4920,7 +4920,7 @@
       "redirect_url": "/microsoft-365/security/defender-endpoint/mde-device-control-device-installation",
       "redirect_document_id": false
     },
-    {  
+    {
       "source_path": "microsoft-365/compliance/information-barriers-troubleshooting.md",
       "redirect_url": "/office365/troubleshoot/information-barriers/information-barriers-troubleshooting",
       "redirect_document_id": false
@@ -6734,7 +6734,7 @@
       "source_path": "microsoft-365/managed-desktop/get-started/register-reused-devices-self.md",
       "redirect_url": "/microsoft-365/managed-desktop/get-started/manual-registration-existing-devices",
       "redirect_document_id": true
-    },    
+    },
     {
       "source_path": "microsoft-365/managed-desktop/get-started/set-up-devices.md",
       "redirect_url": "/microsoft-365/managed-desktop/get-started/prepare-devices",
@@ -6744,7 +6744,7 @@
       "source_path": "microsoft-365/admin/setup/access-resources.md",
       "redirect_url": "/azure/active-directory/devices/azuread-join-sso",
       "redirect_document_id": false
-    },    
+    },
     {
     "source_path": "microsoft-365/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md",
     "redirect_url": "/microsoft-365/solutions/productivity-illustrations#security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations",
@@ -6766,10 +6766,15 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "microsoft-365/security/office-365-security/anti-spam-and-anti-malware-protection.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-protection",
+      "redirect_document_id": true
+    },
+    {
     "source_path": "microsoft-365/compliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md",
     "redirect_url": "/microsoft-365/compliance/compliance-manager",
     "redirect_document_id": false
-    },    
+    },
     {
     "source_path": "microsoft-365/business-premium/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md",
     "redirect_url": "/microsoft-365/solutions/productivity-illustrations#security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations",
@@ -6879,12 +6884,12 @@
       "source_path": "microsoft-365/compliance/manage-information-governance.md",
       "redirect_url": "/microsoft-365/compliance/manage-data-governance",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "microsoft-365/compliance/information-governance.md",
       "redirect_url": "/microsoft-365/compliance/data-lifecycle-management",
       "redirect_document_id": false
-    },    
+    },
     {
       "source_path": "microsoft-365/compliance/get-started-with-information-governance.md",
       "redirect_url": "/microsoft-365/compliance/get-started-with-data-lifecycle-management",
