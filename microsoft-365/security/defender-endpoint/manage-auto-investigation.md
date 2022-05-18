@@ -87,7 +87,7 @@ If you've determined that a device or a file is not a threat, you can undo remed
 
 |Action source|Supported Actions|
 |---|---|
-|<ul><li>Automated investigation</li><li>Microsoft Defender Antivirus</li><li>Manual response actions</li></ul>|<ul><li>Isolate device</li><li>Restrict code execution</li><li>Quarantine a file</li><li>Remove a registry key</li><li>Stop a service</li><li>Disable a driver</li><li>Remove a scheduled task</li></ul>|
+|<ul><li>Automated investigation</li><li>Manual response actions</li><li>Microsoft Defender Antivirus</li></ul>|<ul><li>Disable a driver</li><li>Isolate device</li><li>Quarantine a file</li><li>Remove a registry key</li><li>Remove a scheduled task</li><li>Restrict code execution</li><li>Stop a service</li></ul>|
 
 ### To undo multiple actions at one time
 
