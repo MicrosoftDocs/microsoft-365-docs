@@ -37,7 +37,7 @@ Any combination of 86 characters consisting of:
 - or plus signs (+)
 - ends with two equal signs (=)
 
-for example
+for example:
 
 abcdefghijklmnopqrstuvwxyz0123456789/+ABCDEabcdefghijklmnopqrstuvwxyz0123456789/+ABCDE==
 

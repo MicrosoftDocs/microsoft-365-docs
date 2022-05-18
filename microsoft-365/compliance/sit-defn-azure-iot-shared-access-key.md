@@ -37,7 +37,7 @@ Any combination of 43 characters consisting of:
 - or plus signs (+)
 - ends with an equal sign (=) that is not part of the pattern.
 
-For example
+For example:
 
 abcdefghijklmnopqrstuvwxyz0123456789/+ABCDE=
 

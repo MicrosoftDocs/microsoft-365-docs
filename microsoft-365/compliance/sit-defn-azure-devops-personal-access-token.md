@@ -34,7 +34,7 @@ Any combination of 52 characters consisting of:
 - a-z or A-Z (case-sensitive)
 - or 2-7
 
-for example
+for example:
 
 ntpi2ch67ci2vjzcohglogyygwo5fuyl365n2zdowwxhsys6jnoa
 

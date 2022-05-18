@@ -41,7 +41,7 @@ Any combination of 54 characters consisting of:
 - or plus signs (+)
 - ends with two equal signs (=)
 
-for example
+for example:
 
 abcdefghijklmnopqrstuvwxyz0123456789/+ABCDEFGHIJKLMNOP==
 
@@ -54,7 +54,7 @@ A combination of 54 to 84 characters consisting of:
 - or percent signs (%)
 - ends with a suffix '%3d%3d' (not case-sensitive)
 
-for example
+for example:
 
 abcdefghijklmnopqrstuvwxyz0123456789%2F%2BABCDEF0123456789%3D%3D
 

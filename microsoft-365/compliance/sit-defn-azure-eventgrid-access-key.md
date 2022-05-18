@@ -36,7 +36,7 @@ A combination of 43 characters consisting of:
 - forward slashes (/)
 - or plus signs (+)
 
-for example
+for example:
 
 abcdefghijklmnopqrstuvwxyz0123456789/+ABCDE=
 

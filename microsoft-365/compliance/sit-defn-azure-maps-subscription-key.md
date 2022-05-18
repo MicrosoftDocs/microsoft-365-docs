@@ -36,7 +36,7 @@ Any combination of 43 characters consisting of:
 - dashes (-)
 - or underlines (_)
 
-for example
+for example:
 
 abcdefghijklmnopqrstuvwxyz0123456789-_ABCDE
 

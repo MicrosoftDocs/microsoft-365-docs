@@ -34,7 +34,7 @@ A combination of 32 characters consisting of:
 - a-f or A-F (case-sensitive)
 - or 0-9
 
-for example
+for example:
 
 abcdef0123456789abcdef0123456789
 

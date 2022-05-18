@@ -36,7 +36,7 @@ Any combination of 43 to 73 characters consisting of:
 - or percent signs (%)
 - ends with a suffix '%3d' (not case-sensitive)
 
-for example
+for example:
 
 abcdefghijklmnopqrstuvwxyz0123456789%2F%2BABCDE%3D
 
