@@ -89,7 +89,7 @@ dkim=[1,1,header.d=o365e5test083.onmicrosoft.com]
 dmarc=[1,1,header.from=o365e5test083.onmicrosoft.com])
 ``
 
-To check whether the ARC result is used to override a DMARC failure, look for *compauth* result and a *reason of code(130)* in the header.
+To check whether the ARC result was used to override a DMARC failure, look for *compauth* result and a *reason of code(130)* in the header.
 
 See the last entry in this header-block to find *compauth* and *reason*.
 
