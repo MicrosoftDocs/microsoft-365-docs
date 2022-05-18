@@ -1,5 +1,5 @@
 ---
-title: "Navigation options for SharePoint Online"
+title: Navigation options for SharePoint Online
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
@@ -471,7 +471,7 @@ The [above code](#about-the-javascript-file) has the following dependencies:
 
 - jQuery - https://jquery.com/
 - KnockoutJS - https://knockoutjs.com/
-- Linq.js - https://linqjs.codeplex.com/, or github.com/neuecc/linq.js
+- Linq.js - `https://linqjs.codeplex.com/`, or github.com/neuecc/linq.js
 
 The current version of LinqJS does not contain the ByHierarchy method used in the above code and will break the navigation code. To fix this, add the following method to the Linq.js file before the line `Flatten: function ()`.
 
