@@ -163,6 +163,7 @@ If your organization has a subscription that supports Audit (Premium), perform t
 
 For more detailed instructions, see [Set up Audit (Premium)](set-up-advanced-audit.md).
 
+<!--
 ## Encrypt audit records using Customer Key
 
 You can enable Customer Key encryption for audit records. Auditing builds on the [Service encryption with Customer Key](customer-key-overview.md) to encrypt sensitive information in your organization's auditing data. Implementing Customer Key provides extra protection by preventing unauthorized systems or Microsoft data center personnel from viewing your auditing data in the auditing pipeline and at rest. Using Customer Key to encrypt your auditing data also helps you meet regulatory or compliance obligations because your organization provides and controls the encryption keys.
@@ -171,6 +172,7 @@ To implement Customer Key for auditing, you have to create a multi-workload Data
 
 > [!NOTE]
 > Not all audit records in your organization are encrypted. The Microsoft Purview service that generates specific audit records for activity in that service defines whether the audit record is encrypted or not.
+-->
 
 ## Training
 

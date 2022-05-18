@@ -32,6 +32,11 @@ While Microsoft 365 includes several tools and methodologies for managing and pr
 
 On the other hand, if your environment includes plans for co-management including Microsoft Endpoint Configuration Manager, see [Co-management documentation](/mem/configmgr/comanage/) to develop the best path for your organization. If your environment includes plans for Windows 365 Cloud PC, see [Windows 365 Enterprise documentation](/windows-365/enterprise/) to develop the best path for your organization.
 
+Watch this video for an overview of the deployment process.
+<br>
+<br>
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4F1af]
+
 ## Why manage endpoints?
 
 The modern enterprise has an incredible diversity of endpoints accessing their data. This setup creates a massive attack surface, and as a result, endpoints can easily become the weakest link in your Zero Trust security strategy.
@@ -54,17 +59,17 @@ In this illustration:
 
 |&nbsp;|Step|Description|Licensing requirements|
 |---|---|---|---|
-|1|Configure starting-point Zero Trust identity and device access policies|Work with your identity administrator to [Implement Level 2 App Protection Policies (APP) data protection](manage-devices-with-intune-app-protection.md). These policies do not require that you manage devices. You configure the APP policies in Intune. Your identity admin configures a Conditional Access policy to require approved apps.|E3, E5, F1, F3, F5|
-|2|Enroll devices to Intune|This task requires more planning and time to implement. Microsoft recommends using Intune to enroll devices because this tool provides optimal integration. There are several options for enrolling devices, depending on the platform. For example, Windows devices can be enrolled by using Azure AD Join or by using Autopilot. You need to review the options for each platform and decide which enrollment option is best for your environment. See [Step 3—Enroll devices to Intune](manage-devices-with-intune-enroll.md) for more information.|E3, E5, F1, F3, F5|
-|3|Configure compliance policies|You want to be sure devices that are accessing your apps and data meet minimum requirements, for example devices are password or pin-protected and the operating system is up to date. Compliance policies are the way to define the requirements that devices must meet. [Step 3. Set up compliance policies](manage-devices-with-intune-compliance-policies.md) helps you configure these policies.|E3, E5, F3, F5|
-|4|Configure Enterprise (recommended) Zero Trust identity and device access policies|Now that your devices are enrolled, you can work with your identity admin to [tune Conditional Access policies to require healthy and compliant devices](manage-devices-with-intune-require-compliance.md).|E3, E5, F3, F5|
-|5|Deploy configuration profiles|As opposed to device compliance policies that simply mark a device as compliant or not based on criteria you configure, configuration profiles actually change the configuration of settings on a device. You can use configuration policies to harden devices against cyberthreats. See [Step 5. Deploy configuration profiles](manage-devices-with-intune-configuration-profiles.md).|E3, E5, F3, F5|
-|6|Monitor device risk and compliance with security baselines|In this step, you connect Intune to Microsoft Defender for Endpoint. With this integration, you can then monitor device risk as a condition for access. Devices that are found to be in a risky state will be blocked. You can also monitor compliance with security baselines. See [Step 6. Monitor device risk and compliance to security baselines](manage-devices-with-intune-monitor-risk.md).|E5, F5|
-|7|Implement data loss prevention (DLP) with information protection capabilities|If your organization has put the work into identifying sensitive data and labeling documents, you can work with your information protection admin to [protect sensitive information and documents on your devices](manage-devices-with-intune-dlp-mip.md).|E5, F5 compliance add-on|
+|1|Configure starting-point Zero Trust identity and device access policies|Work with your identity administrator to [**Implement Level 2 App Protection Policies (APP) data protection**](manage-devices-with-intune-app-protection.md). These policies do not require that you manage devices. You configure the APP policies in Intune. Your identity admin configures a Conditional Access policy to require approved apps.|E3, E5, F1, F3, F5|
+|2|Enroll devices to Intune|This task requires more planning and time to implement. Microsoft recommends using Intune to enroll devices because this tool provides optimal integration. There are several options for enrolling devices, depending on the platform. For example, Windows devices can be enrolled by using Azure AD Join or by using Autopilot. You need to review the options for each platform and decide which enrollment option is best for your environment. See [**Step 2. Enroll devices to Intune**](manage-devices-with-intune-enroll.md) for more information.|E3, E5, F1, F3, F5|
+|3|Configure compliance policies|You want to be sure devices that are accessing your apps and data meet minimum requirements, for example devices are password or pin-protected and the operating system is up to date. Compliance policies are the way to define the requirements that devices must meet. [**Step 3. Set up compliance policies**](manage-devices-with-intune-compliance-policies.md) helps you configure these policies.|E3, E5, F3, F5|
+|4|Configure Enterprise (recommended) Zero Trust identity and device access policies|Now that your devices are enrolled, you can work with your identity admin to [**tune Conditional Access policies to require healthy and compliant devices**](manage-devices-with-intune-require-compliance.md).|E3, E5, F3, F5|
+|5|Deploy configuration profiles|As opposed to device compliance policies that simply mark a device as compliant or not based on criteria you configure, configuration profiles actually change the configuration of settings on a device. You can use configuration policies to harden devices against cyberthreats. See [**Step 5. Deploy configuration profiles**](manage-devices-with-intune-configuration-profiles.md).|E3, E5, F3, F5|
+|6|Monitor device risk and compliance with security baselines|In this step, you connect Intune to Microsoft Defender for Endpoint. With this integration, you can then monitor device risk as a condition for access. Devices that are found to be in a risky state will be blocked. You can also monitor compliance with security baselines. See [**Step 6. Monitor device risk and compliance to security baselines**](manage-devices-with-intune-monitor-risk.md).|E5, F5|
+|7|Implement data loss prevention (DLP) with information protection capabilities|If your organization has put the work into identifying sensitive data and labeling documents, you can work with your information protection admin to [**protect sensitive information and documents on your devices**](manage-devices-with-intune-dlp-mip.md).|E5, F5 compliance add-on|
 
 ## Coordinating endpoint management with Zero Trust identity and device access policies
 
-This guidance is tightly coordinated with the recommended [Zero Trust identity and device access policies](../security/office-365-security/microsoft-365-policies-configurations.md). You will be working with your identity team to carry through protection that you configure with Intune into Conditional Access policies in Azure AD.
+This guidance is tightly coordinated with the recommended [**Zero Trust identity and device access policies**](../security/office-365-security/microsoft-365-policies-configurations.md). You will be working with your identity team to carry through protection that you configure with Intune into Conditional Access policies in Azure AD.
 
 Here’s an illustration of the recommended policy set with step callouts for the work you will do in Intune/MEM and the related Conditional Access policies you will help coordinate in Azure AD.
 
@@ -72,7 +77,7 @@ Here’s an illustration of the recommended policy set with step callouts for th
 
 In this illustration:
 
-- In Step 1, [Implement Level 2 App Protection Policies (APP)](manage-devices-with-intune-app-protection.md) you configure the recommended level of data protection with APP policies. Then you work with your identity team to configure the related Conditional Access rule to require use of this protection.
+- In Step 1, [**Implement Level 2 App Protection Policies (APP)**](manage-devices-with-intune-app-protection.md) you configure the recommended level of data protection with APP policies. Then you work with your identity team to configure the related Conditional Access rule to require use of this protection.
 - In Steps 2, 3 and 4, you enroll devices into management with Intune, define device compliance policies, and then coordinate with your identity team to configure the related Conditional Access rule to only allow access to compliant devices.
 
 <!---
