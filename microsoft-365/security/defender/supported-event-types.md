@@ -29,7 +29,7 @@ ms.technology: mde
 
 
 The Event Streaming API is constantly being expanded to support more event types. Learn which Hunting tables are generally available, currently in public preview, or not yet supported. 
-**New - Email event types/tables are now GA**
+**New - Identity and CloudApp event types/tables are now GA**
 
 ## Hunting tables support status in Event Streaming API
 
@@ -54,5 +54,8 @@ The following table only includes the list of the tables supported in the stream
 | **[EmailEvents](advanced-hunting-emailevents-table.md)** | GA |
 | **[EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** | GA |
 | **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | GA |
-
-
+| **[IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md)** | GA |
+| **[IdentityInfo](advanced-hunting-identityinfo-table.md)** | GA |
+| **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)** | GA |
+| **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)** | GA |
+| **[CloudAppEvents](advanced-hunting-cloudappevents-table.md)** | GA |
