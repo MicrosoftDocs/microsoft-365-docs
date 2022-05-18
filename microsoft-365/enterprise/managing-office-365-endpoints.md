@@ -217,7 +217,7 @@ Office 365 does not provide IP addresses of all required network endpoints. Some
   
 [Microsoft Public IP Space](https://www.microsoft.com/download/details.aspx?id=53602)
   
-[Network infrastructure requirements for Microsoft Intune](../mem/intune/fundamentals/intune-endpoints)
+[Network infrastructure requirements for Microsoft Intune](/mem/intune/fundamentals/intune-endpoints)
   
 [ExpressRoute and Power BI](https://powerbi.microsoft.com/documentation/powerbi-admin-power-bi-expressroute/)
   
