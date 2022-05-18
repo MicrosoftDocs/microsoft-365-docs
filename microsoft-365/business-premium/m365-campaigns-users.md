@@ -26,7 +26,7 @@ search.appverid:
 description: "Learn how these security recommendations for Microsoft 365 Business Premium affects your users and protects your data."
 ---
 
-# How these security recommendations affect your users
+# How these security recommendations affect your Microsoft 365 users
 
 The security recommendations for Microsoft 365 in this solution make it much harder for hackers to gain access to your environment. The tradeoff is that your users will need to be aware of how to work within this more secure environment. We understand a little extra patience is required, but it's worth it to keep your organization protected.
 
