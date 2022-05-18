@@ -64,10 +64,10 @@ You'll need to complete the following general steps to successfully onboard serv
 
 You can offboard Windows Server 2012 R2, Windows Server 2016, Windows Server (SAC), Windows Server 2019, and Windows Server 2019 Core edition with the same method available for Windows 10 client devices.
 
-[Offboard devices using Configuration Manager](/microsoft-365/security/defender-endpoint/configure-endpoints-sccm)
-[Offboard and monitor devices using Mobile Device Management tools](/microsoft-365/security/defender-endpoint/configure-endpoints-mdm)
-[Offboard devices using Group Policy](/microsoft-365/security/defender-endpoint/configure-endpoints-gp)
-[Offboard devices using a local script](/microsoft-365/security/defender-endpoint/configure-endpoints-script)
+- [Offboard devices using Configuration Manager](/microsoft-365/security/defender-endpoint/configure-endpoints-sccm)
+- [Offboard and monitor devices using Mobile Device Management tools](/microsoft-365/security/defender-endpoint/configure-endpoints-mdm)
+- [Offboard devices using Group Policy](/microsoft-365/security/defender-endpoint/configure-endpoints-gp)
+- [Offboard devices using a local script](/microsoft-365/security/defender-endpoint/configure-endpoints-script)
 
 After offboarding, you can proceed to uninstall the unified solution package on Windows Server 2012 R2 and Windows Server 2016.
 
