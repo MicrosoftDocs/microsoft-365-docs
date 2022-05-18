@@ -281,10 +281,8 @@ Here are some examples:
 |contoso.com  | \*://contoso.com </br> \*://contoso.com/ </br> \*://contoso.com/allsubsites1 </br> \*://contoso.com/allsubsites1/allsubsites2|        \*://allsubdomains.contoso.com </br> \*://allsubdomains.contoso.com.au    |
 |contoso.com/     |\*://contoso.com </br> \*://contoso.com/         |\*://contoso.com/allsubsites1 </br> \*://contoso.com/allsubsites1/allsubsites2 </br> \*://allsubdomains.contoso.com </br> \*://allsubdomains.contoso.com/au   |
 |*.contoso.com   | \*://contoso.com </br> \*://contoso.com/allsubsites </br> \*://contoso.com/allsubsites1/allsubsites2 </br> \*://allsubdomains.contoso.com </br> \*://allsubdomains.contoso.com/allsubsites </br> \*://allsubdomains1/allsubdomains2/contoso.com/allsubsites1/allsubsites2         | \*://allsubdomains.contoso.com.au|
-|Row4     |         |
-|Row5     |         |
-|Row6     |         |
-|Row7     |         |
+|*.contoso.com/xyz     |\*://contoso.com </br> \*://contoso.com/xyz </br> \*://contoso.con/xyz/allsubsites/ </br> \*://allsubdomains.contoso.com/xyz </br> \*://allsubdomains.contoso.com/xyz/allsubsites </br> \*://allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites </br> \*://allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites1/allsubsites2         | \*://contoso.com/xyz </br> \*://allsubdomains.contoso.com/xyz/|
+|*.contoso.com/xyz/     |\*://contoso.com/xyz </br> \*://allsubdomains.contoso.com/xyz         |\*://contoso.com </br> \*://contoso.com/xyz/allsubsites/ </br> \*://allsubdomains.contoso.com/xyz/allsubsites/ </br> \*://allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites/ </br> \*://allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites1/allsubsites2|
 
 
 
