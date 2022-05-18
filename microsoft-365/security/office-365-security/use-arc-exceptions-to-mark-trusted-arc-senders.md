@@ -32,7 +32,7 @@ Email authentication mechanisms like [SPF](set-up-spf-in-office-365-to-help-prev
 
 ## ARC is for *legitimate* indirect mailflows
 
-Mailing lists and services that filter or forward mails can be a well-known and normal feature of an organization's mail flow. But fowarding an email will violate SPF, and it can also violate DKIM email authentication (by altering the email as it carries out processes like adding virus scan headers or removing attachments, for example). Failing either of these email authentication methods can result in failure to pass DMARC.
+Mailing lists and services that filter or forward mails can be a well-known and normal feature of an organization's mail flow. But fowarding an email will violate SPF, and it can also violate DKIM email authentication (by altering the email through processes like adding virus scan headers or removing attachments, for example). Failing either of these email authentication methods can result in failure to pass DMARC.
 
 Planned mailflow interventions from legitimate services is often called *indirect mailflow*, and might *accidentally* cause messages to fail email authentication as they pass through (hop to) the next device or service on the way to the receiver.
 
