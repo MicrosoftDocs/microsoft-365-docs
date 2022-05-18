@@ -439,4 +439,4 @@ Proactively identify and protect against privacy risks such as data hoarding, da
 
 **Microsoft Security Technical Content Library**: Explore this library to find interactive guides and other learning content relevant to your needs. [Visit Library](/security).
 
-**Microsoft Security Resources**: From antimalware to Zero Trust, get all the relevant resources for your organization's security needs. [Visit Resources](/security/business).
+**Microsoft Security Resources**: From antimalware to Zero Trust, get all the relevant resources for your organization's security needs.
