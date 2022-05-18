@@ -265,18 +265,21 @@ You can use a flexible syntax to include and exclude domains, subdomains, websit
 
 When you add a URL without a terminating `/`, that URL is scoped to that site and all subsites.
 
+This syntax applies to all http/https websites.
+
 Here are some examples:
 
 
 |URL that you add to the website group  |URL will match  | URL will not match|
 |---------|---------|---------|
-|contoso.com  | \*://contoso.com </br> \*://contoso.com/ </br> \*://contoso.com/allsubsites1 </br> \*://contoso.com/allsubsites1/allsubsites2|        \*://allsubdomains.contoso.com </br> \*://allsubdomains.contoso.com.au    |
-|contoso.com/     |\*://contoso.com </br> \*://contoso.com/         |\*://contoso.com/allsubsites1 </br> \*://contoso.com/allsubsites1/allsubsites2 </br> \*://allsubdomains.contoso.com </br> \*://allsubdomains.contoso.com/au   |
-|*.contoso.com   | \*://contoso.com </br> \*://contoso.com/allsubsites </br> \*://contoso.com/allsubsites1/allsubsites2 </br> \*://allsubdomains.contoso.com </br> \*://allsubdomains.contoso.com/allsubsites </br> \*://allsubdomains1/allsubdomains2/contoso.com/allsubsites1/allsubsites2         | \*://allsubdomains.contoso.com.au|
-|*.contoso.com/xyz     |\*://contoso.com </br> \*://contoso.com/xyz </br> \*://contoso.con/xyz/allsubsites/ </br> \*://allsubdomains.contoso.com/xyz </br> \*://allsubdomains.contoso.com/xyz/allsubsites </br> \*://allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites </br> \*://allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites1/allsubsites2         | \*://contoso.com/xyz </br> \*://allsubdomains.contoso.com/xyz/|
-|*.contoso.com/xyz/     |\*://contoso.com/xyz </br> \*://allsubdomains.contoso.com/xyz         |\*://contoso.com </br> \*://contoso.com/xyz/allsubsites/ </br> \*://allsubdomains.contoso.com/xyz/allsubsites/ </br> \*://allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites/ </br> \*://allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites1/allsubsites2|
+|contoso.com  | //contoso.com </br> //contoso.com/ </br> //contoso.com/allsubsites1 </br> //contoso.com/allsubsites1/allsubsites2|        //allsubdomains.contoso.com </br> //allsubdomains.contoso.com.au    |
+|contoso.com/     |//contoso.com </br> //contoso.com/         |//contoso.com/allsubsites1 </br> //contoso.com/allsubsites1/allsubsites2 </br> //allsubdomains.contoso.com </br> //allsubdomains.contoso.com/au   |
+|*.contoso.com   | //contoso.com </br> //contoso.com/allsubsites </br> //contoso.com/allsubsites1/allsubsites2 </br> //allsubdomains.contoso.com </br> //allsubdomains.contoso.com/allsubsites </br> //allsubdomains1/allsubdomains2/contoso.com/allsubsites1/allsubsites2         | //allsubdomains.contoso.com.au|
+|*.contoso.com/xyz     |//contoso.com </br> //contoso.com/xyz </br> //contoso.con/xyz/allsubsites/ </br> //allsubdomains.contoso.com/xyz </br> //allsubdomains.contoso.com/xyz/allsubsites </br> //allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites </br> //allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites1/allsubsites2         | //contoso.com/xyz </br> //allsubdomains.contoso.com/xyz/|
+|*.contoso.com/xyz/     |//contoso.com/xyz </br> //allsubdomains.contoso.com/xyz         |//contoso.com </br> //contoso.com/xyz/allsubsites/ </br> //allsubdomains.contoso.com/xyz/allsubsites/ </br> //allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites/ </br> //allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites1/allsubsites2|
 
 
+### Configure Sensitive service domains
 
 1. In the Microsoft Purview compliance portal open **Data loss prevention** > **Endpoint DLP settings** > **Browser and domain restrictions to sensitive data** > **Sensitive service domains**.
 1. Select **Add a new group of sensitive service domains**.
