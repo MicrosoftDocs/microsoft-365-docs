@@ -49,7 +49,7 @@ To learn about one of the service plan features, click on the heading in the fol
 
 |Task|Microsoft 365 Business Standard|Microsoft 365 Business Premium|
 |---|---|---|
-[Protect against lost or stolen passwords](#set-up-multifactor-authentication) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
+[Protect against lost or stolen passwords](#set-up-multi-factor-authentication) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
 [Train your users](#train-your-users) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
 [Use dedicated admin accounts](#use-dedicated-admin-accounts)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | 
 [Protect against malware](#protect-against-malware) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(protection for email) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(increased protection for email and devices) |
