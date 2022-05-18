@@ -41,7 +41,7 @@ If you have signed up for a trial, after you receive your acceptance email, you 
 3. Proceed to [Add users and assign licenses](mdb-add-users.md).
 
 > [!TIP]
-> Make sure to see [Trial playbook: Microsoft Defender for Business](trial-playbook-defender-business.md).
+> See the [Trial playbook for Defender for Business](trial-playbook-defender-business.md).
 
 ## Get Microsoft 365 Business Premium
 
