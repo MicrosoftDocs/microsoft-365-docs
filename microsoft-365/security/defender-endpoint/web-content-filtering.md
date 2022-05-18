@@ -172,7 +172,7 @@ To add a new policy, follow these steps:
 4. Specify the policy scope. Select the device groups to specify where to apply the policy. Only devices in the selected device groups will be prevented from accessing websites in the selected categories.
 
    > [!IMPORTANT]
-   > If you're using Defender for Business, scoping does not apply. Skip this step and proceed to step 5.
+   > If you're using Defender for Business, your web content filtering policy is applied to all users by default. Scoping does not apply.
 
 5. Review the summary and save the policy. The policy refresh might take up to 2 hours to apply to your selected devices.
 
