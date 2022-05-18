@@ -41,7 +41,7 @@ First, you need to fill out the **Virtual machine name** column of Table M and m
    
  **Table M - Virtual machines for the high availability federated authentication for Microsoft 365 in Azure**
   
-For the complete list of virtual machine sizes, see [Sizes for virtual machines](../../azure/virtual-machines/sizes).
+For the complete list of virtual machine sizes, see [Sizes for virtual machines](/azure/virtual-machines/sizes).
   
 The following Azure PowerShell command block creates the virtual machines for the two domain controllers. Specify the values for the variables, removing the \< and > characters. Note that this Azure PowerShell command block uses values from the following tables:
   
