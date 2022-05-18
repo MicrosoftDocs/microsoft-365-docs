@@ -125,7 +125,6 @@ These scenarios require that you already have devices onboarded and reporting in
 In this scenario, synchronizing files with the **Highly Confidential** sensitivity label to OneDrive is blocked. This is a complex scenario with multiple components and procedures. You will need:
 
 - An AAD user account to target and an onboarded Windows 10 computer that is already synchronizing a local OneDrive folder with OneDrive cloud storage.
-- Microsoft Word installed on the target Windows 10 computer
 - Sensitivity labels configured and published—see [Get started with sensitivity labels](get-started-with-sensitivity-labels.md#get-started-with-sensitivity-labels) and [Create and configure sensitivity labels and their policies](create-sensitivity-labels.md#create-and-configure-sensitivity-labels-and-their-policies).
 
 There are three procedures.
@@ -257,19 +256,12 @@ Use this scenario when you want to audit, block with override, or block these us
 
 The user must be accessing the website through Microsoft Edge.
 
-### Prerequisites
-
-- The device must be onboarded into Microsoft 365.
-- You must add the website url, ip address, or ip address range in **Endpoint DLP settings**
-- You must configure a DLP policy with the appropriate conditions and actions.
-- Running the latest version of Microsoft Defender Antivirus.
- 
 ### Supported syntax for designating websites in a website group
 
 You can use a flexible syntax to include and exclude domains, subdomains, websites, and subsites in your website groups.
 
-- use `*` as a wildcard to specify any domain or a subdomain
-- use `/` as a terminator at the end of a URL to scope to that specific site only and no subsites.
+- use `*` as a wildcard to specify all domains or all subdomains
+- use `/` as a terminator at the end of a URL to scope to that specific site only.
 
 When you add a URL without a terminating `/`, that URL is scoped to that site and all subsites.
 
