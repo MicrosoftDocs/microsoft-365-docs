@@ -85,6 +85,6 @@ To learn more, see the following resources:
 
 [Plan for Microsoft 365 security and information protection capabilities](plan-for-security-and-compliance.md)
 
-[Top 10 ways to secure Microsoft 365 for business plans](/office365/admin/security-and-compliance/secure-your-business-data)
+[Best practices for securing Microsoft 365 for business plans](/office365/admin/security-and-compliance/secure-your-business-data)
 
 [Microsoft Stream Video level encryption and playback flow](/stream/network-overview#video-level-encryption-and-playback-flow)

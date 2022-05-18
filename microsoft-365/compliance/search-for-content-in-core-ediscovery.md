@@ -23,7 +23,7 @@ description: "Search for content that may be relevant to a eDiscovery (Standard)
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-After a Microsoft Purview eDiscovery (Standard) case is created and people of interest in the case are placed on hold, you can create and run one or more searches for content relevant to the case. Searches associated with a eDiscovery (Standard) case aren't listed on the **Content search** page in the Microsoft Purview compliance portal. These searches are listed on the **Searches** page of the Core eDiscover case the searches are associated with. This also means that searches associated with a case can only be accessed by case members.
+After a Microsoft Purview eDiscovery (Standard) case is created and people of interest in the case are placed on hold, you can create and run one or more searches for content relevant to the case. Searches associated with a eDiscovery (Standard) case aren't listed on the **Content search** page in the Microsoft Purview compliance portal. These searches are listed on the **Searches** page of the eDiscovery (Standard) case the searches are associated with. This also means that searches associated with a case can only be accessed by case members.
 
 To create a eDiscovery (Standard) search:
   
