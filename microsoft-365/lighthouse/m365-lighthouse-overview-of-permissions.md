@@ -82,6 +82,7 @@ For certain actions in Lighthouse, role assignments in the partner tenant are re
 
 [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) (article)  
 [Delegated administration privileges (DAP) FAQ](/partner-center/dap-faq) (article)  
+[View your Azure Active Directory roles in Microsoft 365 Lighthouse](m365-lighthouse-view-your-roles.md) (article)  
 [Assign roles and permissions to users](/partner-center/permissions-overview) (article)  
 [Overview of Microsoft 365 Lighthouse](m365-lighthouse-overview.md) (article)  
 [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md) (article)  

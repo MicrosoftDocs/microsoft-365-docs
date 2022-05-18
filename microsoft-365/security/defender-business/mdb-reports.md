@@ -1,13 +1,12 @@
 ---
 title: Reports in Microsoft Defender for Business
-description: Get an overview of the reports that are available in Microsoft Defender for Business
+description: Get an overview of security reports in Defender for Business. Reports will show detected threats, alerts, vulnerabilities, and device status.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 04/14/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -19,9 +18,6 @@ ms.collection:
 ---
 
 # Reports in Microsoft Defender for Business
-
-> [!NOTE]
-> Microsoft Defender for Business is now included in [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
 Several reports are available in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). This article describes these reports, how you can use them, and how to find them.
 

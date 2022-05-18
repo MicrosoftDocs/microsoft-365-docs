@@ -75,7 +75,7 @@ This timeline reflects a sample deployment of trainable classifiers.
 
 ### Overall workflow
 
-To understand more about the overall workflow of creating custom trainable classifiers, see [Process flow for creating customer trainable classifiers](classifier-learn-about.md#process-flow-for-creating-custom-classifiers).
+To understand more about the overall workflow of creating custom trainable classifiers, see [Process flow for creating custom trainable classifiers](classifier-learn-about.md#process-flow-for-creating-custom-classifiers).
 
 ### Seed content
 

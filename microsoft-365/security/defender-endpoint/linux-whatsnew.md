@@ -24,6 +24,11 @@ ms.technology: mde
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
+## 101.65.77 (30.122032.16577.0)
+
+- Improved the `conflicting_applications` field in `mdatp health` to show only the most recent 10 processes and also to include the process names. This makes it easier to identify which processes are potentially conflicting with Microsoft Defender for Endpoint for Linux.
+- Bug fixes
+
 ## 101.62.74 (30.122022.16274.0)
 
 - Addressed an issue where the product would incorrectly block access to files greater than 2GB in size when running on older kernel versions
