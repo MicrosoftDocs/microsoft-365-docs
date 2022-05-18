@@ -87,7 +87,11 @@ The following table summarizes what's included in each plan.
 
 - If your current subscription doesn't include Microsoft Defender for Office 365 and you want it, [contact sales to start a trial](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html), and find out how Microsoft Defender for Office 365 can work for in your organization.
 
-- Microsoft Defender for Office 365 P2 customers have access to **Microsoft 365 Defender integration** to efficiently detect, review, and respond to incidents and alerts.
+- Microsoft Defender for Office 365 P2 customers have access to **Microsoft 365 Defender integration** to efficiently detect, review, and respond to incidents and alerts. 
+
+Watch this short video to learn more about Microsoft Defender for Office 365 P2 capabilities that have moved into the Microsoft 365 Defender portal.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWRwfx]
+
 
 ## Configure Microsoft Defender for Office 365 policies
 
