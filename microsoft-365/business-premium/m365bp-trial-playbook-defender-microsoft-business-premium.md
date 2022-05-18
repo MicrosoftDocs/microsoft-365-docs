@@ -58,7 +58,7 @@ We have automatically configured [Preset security policies](/security/office-365
 
 Perform the following to finish setup:
 
-1. Make sure to [add your existing domain](../admin/setup/setup-business-basic?view=o365-worldwide#add-your-domain-to-personalize-sign-in.md).
+1. Make sure to [add your existing domain](../admin/setup/setup-business-basic?view=o365-worldwide#add-your-domain-to-personalize-sign-in).
 
 2. Now, [add users and assign licenses](../admin/add-users/add-users.md).
 
