@@ -20,9 +20,9 @@ ms.custom: seo-marvel-apr2020
 
 # Restrict access to content by using sensitivity labels to apply encryption
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 When you create a sensitivity label, you can restrict access to content that the label will be applied to. For example, with the encryption settings for a sensitivity label, you can protect content so that:
 
@@ -161,6 +161,9 @@ Settings for access control for encrypted content:
 ![Settings for admin defined permissions.](../media/sensitivity-encryption-settings-for-admin-defined-permissions.png)
 
 ### Rights Management use license for offline access
+
+> [!NOTE]
+> Although you can configure the encryption setting to allow offline access, some apps might not support offline access for encrypted content. For example, labeled and encrypted files in [Power BI Desktop](/power-bi/admin/service-security-sensitivity-label-overview) won't open if you're offline.
 
 When a user opens a document or email that's been protected by encryption from the Azure Rights Management service, an Azure Rights Management use license for that content is granted to the user. This use license is a certificate that contains the user's usage rights for the document or email, and the encryption key that was used to encrypt the content. The use license also contains an expiration date if this has been set, and how long the use license is valid.
 
