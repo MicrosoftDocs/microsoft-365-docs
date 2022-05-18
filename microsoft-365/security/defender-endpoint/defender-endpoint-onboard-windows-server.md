@@ -37,7 +37,7 @@ Defender for Endpoint extends support to also include the Windows Server operati
 
 This topic describes how to onboard specific Windows servers to Microsoft Defender for Endpoint.
 
-For guidance on how to download and use Windows Security Baselines for Windows servers, see [Windows Security Baselines.](/windows/security/threat-protection/windows-security-configuration-framework/windows-security-baselines)
+For guidance on how to download and use Windows Security Baselines for Windows servers, see [Windows Security Baselines.](https://docs.microsoft.com/windows/security/threat-protection/windows-security-configuration-framework/windows-security-baselines)
 
 ## Windows Server onboarding overview
 
