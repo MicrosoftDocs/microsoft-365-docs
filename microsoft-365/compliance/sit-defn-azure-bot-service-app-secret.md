@@ -25,7 +25,7 @@ description: "Azure Bot service app secret sensitive information type entity def
 
 ## Format
 
-A combination of up to 40 characters consisting of  letters, digits, and special characters.
+A combination of up to 40 characters consisting of letters, digits, and special characters.
 
 ## Pattern
 
@@ -38,7 +38,7 @@ A combination of up to 40 characters consisting of:
 - dots (.) 
 - or tilde accents (~)
 
-for example
+for example:
 
 abc7Q~defghijklmnopqrs0t123456789-_.~
 
@@ -48,7 +48,7 @@ Yes
 
 ## Definition
 
-This SIT  is designed to match the security information that's used to establish secure communication between an [Azure Bot, WebChat channels and client applications.](https://docs.microsoft.com/azure/bot-service/bot-builder-concept-authentication-types?view=azure-bot-service-4.0) 
+This SIT is designed to match the security information that's used to establish secure communication between an [Azure Bot, WebChat channels and client applications](/azure/bot-service/bot-builder-concept-authentication-types?view=azure-bot-service-4.0).  
 
 It uses several primary resources:
 

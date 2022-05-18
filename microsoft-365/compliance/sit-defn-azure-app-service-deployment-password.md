@@ -36,7 +36,7 @@ Any combination of 60 characters consisting of:
 - forward slashes (/)
 - or plus signs (+)
 
-for example
+for example:
 
 abcdefghijklmnopqrstuvwxyz0123456789/+ABCDEFGHIJKLMNOPQRSTUV
 
@@ -48,7 +48,7 @@ No
 
 ## Definition
 
-This SIT  is designed to match the security information that's used to secure [Azure App Service deployment](https://docs.microsoft.com/azure/app-service/deploy-configure-credentials) from a local computer.
+This SIT is designed to match the security information that's used to secure [Azure App Service deployment](/azure/app-service/deploy-configure-credentials) from a local computer.
 
 It uses several primary resources:
 

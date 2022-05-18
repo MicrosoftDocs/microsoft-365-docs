@@ -47,11 +47,11 @@ No
 
 ## Definition
 
-This SIT is designed to match the security information that's used to access [Amazon Web Services.](https://docs.aws.amazon.com/toolkit-for-eclipse/v1/user-guide/setup-credentials.html)  
+This SIT is designed to match the security information that's used to access [Amazon Web Services.](/toolkit-for-eclipse/v1/user-guide/setup-credentials.html)
+
 
 It uses several primary resources: 
  
-
 - Patterns of Base64 encoded 240 bits symmetric key. 
 - Patterns of CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName. 
 - Patterns of mockup values, redactions, and placeholders. 
