@@ -29,7 +29,7 @@ During and after an automated investigation, remediation actions for threat dete
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Business](../defender-business/mdb-overview.md)
 
-## A unified Action center
+## The unified Action center
 
 Recently, the Action center was updated. You now have a unified Action center experience. To access your Action center, go to [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) and sign in.
 
