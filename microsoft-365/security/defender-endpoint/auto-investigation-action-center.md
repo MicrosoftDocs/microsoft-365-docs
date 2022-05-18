@@ -17,7 +17,6 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
-ms.date: 01/28/2021
 ms.technology: mde
 ---
 
@@ -27,15 +26,17 @@ During and after an automated investigation, remediation actions for threat dete
 
 
 **Applies to:**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Business](../defender-business/mdb-overview.md)
 
-## (NEW!) A unified Action center
+## A unified Action center
 
-
-We are pleased to announce a new, unified Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center))!
+Recently, the Action center was updated. You now have a unified Action center experience. To access your Action center, go to [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) and sign in.
 
 :::image type="content" source="images/mde-action-center-unified.png" alt-text="The Action center page in the Microsoft 365 Defender portal" lightbox="images/mde-action-center-unified.png":::
+
+### What's changed?
 
 The following table compares the new, unified Action center to the previous Action center.
 
@@ -49,37 +50,36 @@ The unified Action center brings together remediation actions across Defender fo
 
 You can use the unified Action center if you have appropriate permissions and one or more of the following subscriptions:
 
+- [Microsoft 365 Defender](/microsoft-365/security/mtp/microsoft-threat-protection)
 - [Defender for Endpoint](microsoft-defender-endpoint.md)
 - [Defender for Office 365](/microsoft-365/security/office-365-security/office-365-atp)
-- [Microsoft 365 Defender](/microsoft-365/security/mtp/microsoft-threat-protection)
-
-> [!TIP]
-> To learn more, see [Requirements](/microsoft-365/security/mtp/prerequisites).
+- [Defender for Business](../defender-business/mdb-overview.md)
 
 ## Using the Action center
 
 To get to the unified Action center in the improved Microsoft 365 Defender portal:
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and sign in.
+
 2. In the navigation pane, select **Action center**.
 
-When you visit the Action center, you see two tabs: **Pending actions** and **History**. The following table summarizes what you'll see on each tab:
+3. Use the **Pending actions** and **History** tabs. The following table summarizes what you'll see on each tab:
 
-|Tab|Description|
-|---|---|
-|**Pending**|Displays a list of actions that require attention. You can approve or reject actions one at a time, or select multiple actions if they have the same type of action (such as **Quarantine file**). <p> **TIP**: Make sure to [review and approve (or reject) pending actions](manage-auto-investigation.md) as soon as possible so that your automated investigations can complete in a timely manner.|
-|**History**|Serves as an audit log for actions that were taken, such as: <ul><li>Remediation actions that were taken as a result of automated investigations</li><li>Remediation actions that were approved by your security operations team</li><li>Commands that were run and remediation actions that were applied during Live Response sessions</li><li>Remediation actions that were taken by threat protection features in Microsoft Defender Antivirus</li></ul> <p> Provides a way to undo certain actions (see [Undo completed actions](manage-auto-investigation.md#undo-completed-actions)).|
+   |Tab|Description|
+   |---|---|
+   |**Pending**|Displays a list of actions that require attention. You can approve or reject actions one at a time, or select multiple actions if they have the same type of action (such as **Quarantine file**). <p> **TIP**: Make sure to [review and approve (or reject) pending actions](manage-auto-investigation.md) as soon as possible so that your automated investigations can complete in a timely manner.|
+   |**History**|Serves as an audit log for actions that were taken, such as: <ul><li>Remediation actions that were taken as a result of automated investigations</li><li>Remediation actions that were approved by your security operations team</li><li>Commands that were run and remediation actions that were applied during Live Response sessions</li><li>Remediation actions that were taken by threat protection features in Microsoft Defender Antivirus</li></ul> <p> Provides a way to undo certain actions (see [Undo completed actions](manage-auto-investigation.md#undo-completed-actions)).|
 
-You can customize, sort, filter, and export data in the Action center.
+4. To customize, sort, filter, and export data in the Action center, take one or more of the following steps:
 
-:::image type="content" source="images/new-action-center-columnsfilters.png" alt-text="The Action center with Columns and filters" lightbox="images/new-action-center-columnsfilters.png":::
+   :::image type="content" source="images/new-action-center-columnsfilters.png" alt-text="The Action center with Columns and filters" lightbox="images/new-action-center-columnsfilters.png":::
 
-- Select a column heading to sort items in ascending or descending order.
-- Use the time period filter to view data for the past day, week, 30 days, or 6 months.
-- Choose the columns that you want to view.
-- Specify how many items to include on each page of data.
-- Use filters to view just the items you want to see.
-- Select **Export** to export results to a .csv file.
+   - Select a column heading to sort items in ascending or descending order.
+   - Use the time period filter to view data for the past day, week, 30 days, or 6 months.
+   - Choose the columns that you want to view.
+   - Specify how many items to include on each page of data.
+   - Use filters to view just the items you want to see.
+   - Select **Export** to export results to a .csv file.
 
 ## Next steps
 
@@ -89,3 +89,4 @@ You can customize, sort, filter, and export data in the Action center.
 ## See also
 
 - [Address false positives/negatives in Microsoft Defender for Endpoint](defender-endpoint-false-positives-negatives.md)
+- [Compare security features in Microsoft 365 plans for small and medium-sized businesses](../defender-business/compare-mdb-m365-plans.md)
