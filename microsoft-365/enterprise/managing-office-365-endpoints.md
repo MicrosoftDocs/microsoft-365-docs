@@ -44,8 +44,8 @@ Use PAC or WPAD files to manage network requests that are associated with Office
   
 [PowerShell Gallery Get-PacFile](https://www.powershellgallery.com/packages/Get-PacFile) is a PowerShell script that reads the latest network endpoints from the Office 365 IP Address and URL Web service and creates a sample PAC file. You can modify the script so that it integrates with your existing PAC file management.
 
->[!NOTE]
-> The Office 365 IP Address and URL web service provides a current list of trustworthy Office 365 endpoints. For more information, see [Office 365 IP Address and URL Web service](microsoft-365-ip-web-service.md).
+> [!NOTE]
+> For more information about the security and performance considerations of direct connectivity to Office 365 endpoints, see [Office 365 Network Connectivity Principles](microsoft-365-network-connectivity-principles.md).
 
 ![Connecting to Office 365 through firewalls and proxies.](../media/34d402f3-f502-42a0-8156-24a7c4273fa5.png)
 
