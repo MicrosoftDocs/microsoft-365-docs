@@ -89,6 +89,14 @@ If you've determined that a device or a file is not a threat, you can undo remed
 |---|---|
 |<ul><li>Automated investigation</li><li>Manual response actions</li><li>Microsoft Defender Antivirus</li></ul>|<ul><li>Disable a driver</li><li>Isolate device</li><li>Quarantine a file</li><li>Remove a registry key</li><li>Remove a scheduled task</li><li>Restrict code execution</li><li>Stop a service</li></ul>|
 
+> [!NOTE]
+> [Defender for Endpoint Plan 1](defender-endpoint-plan-1.md) and [Microsoft Defender for Business](../defender-business/mdb-overview.md) include only the following manual response actions:
+> - Run antivirus scan
+> - Isolate device
+> - Stop and quarantine a file
+> - Add an indicator to block or allow a file
+> To learn more, see [Compare Microsoft Defender for Endpoint plans](defender-endpoint-plan-1-2.md) and [Compare security features in Microsoft 365 plans for small and medium-sized businesses](../defender-business/compare-mdb-m365-plans.md).
+
 ### To undo multiple actions at one time
 
 1. Go to the Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) and sign in.
@@ -111,7 +119,7 @@ Automation levels affect whether certain remediation actions are taken automatic
 
 |Device group setting|Automated investigation results|What to do|
 |---|---|---|
-|**Full - remediate threats automatically** (the recommended setting)|A verdict of *Malicious* is reached for a piece of evidence. <p> Appropriate remediation actions are taken automatically.|[Review completed actions](#review-completed-actions)|
+|**Full - remediate threats automatically**<br/>(recommended)|A verdict of *Malicious* is reached for a piece of evidence. <p> Appropriate remediation actions are taken automatically.|[Review completed actions](#review-completed-actions)|
 |**Full - remediate threats automatically**|A verdict of *Suspicious* is reached for a piece of evidence. <p> Remediation actions are pending approval to proceed.|[Approve (or reject) pending actions](#review-pending-actions)|
 |**Semi - require approval for any remediation**|A verdict of either *Malicious* or *Suspicious* is reached for a piece of evidence. <p> Remediation actions are pending approval to proceed.|[Approve (or reject) pending actions](#review-pending-actions)|
 |**Semi - require approval for core folders remediation**|A verdict of *Malicious* is reached for a piece of evidence. <p> If the artifact is a file or executable and is in an operating system directory, such as the Windows folder or the Program files folder, then remediation actions are pending approval. <p> If the artifact is *not* in an operating system directory, remediation actions are taken automatically.|<ol><li>[Approve (or reject) pending actions](#review-pending-actions)</li><li>[Review completed actions](#review-completed-actions)</li></ol>|
@@ -121,7 +129,10 @@ Automation levels affect whether certain remediation actions are taken automatic
 |Any of the **Full** or **Semi** automation levels|A verdict of *No threats found* is reached for a piece of evidence. <p> No remediation actions are taken, and no actions are pending approval.|[View details and results of automated investigations](/microsoft-365/security/defender-endpoint/auto-investigation-action-center)|
 |**No automated response** (not recommended)|No automated investigations run, so no verdicts are reached, and no remediation actions are taken or awaiting approval.|[Consider setting up or changing your device groups to use **Full** or **Semi** automation](/microsoft-365/security/defender-endpoint/machine-groups)|
 
-In Microsoft Defender for Endpoint, all verdicts are tracked in the [Action center](auto-investigation-action-center.md#new-a-unified-action-center).
+All verdicts are tracked in the [Action center](auto-investigation-action-center.md#new-a-unified-action-center).
+
+> [!NOTE]
+> In Defender for Business, automated investigation and remediation capabilities are preset to use full automation. These capabilities are applied to all devices by default.
 
 ## Next steps
 
