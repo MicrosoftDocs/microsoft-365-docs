@@ -76,7 +76,7 @@ A combination of 43 characters
 - dashes (-)
 - or underlines (_)
 
-for example
+for example:
 
 abcdefghijk.lmn.opq.rstuvwxyz0123456789-_ABCDEFGHIJKLMNOPQRSTUV
 
@@ -87,7 +87,7 @@ No
 
 ## Definition
 
-This SIT  is designed to match the security information that's used to connect to WebChat channels from [Azure Bot services.](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-webchat?view=azure-bot-service-4.0)
+This SIT is designed to match the security information that's used to connect to [WebChat channels from Azure Bot services.](/azure/bot-service/bot-service-channel-connect-webchat?view=azure-bot-service-4.0) 
 
 It uses several primary resources:
 

@@ -77,7 +77,7 @@ No
 
 ## Definition
 
-This SIT  is designed to match the security information that's used as individual user passwords to authenticate against [Azure Active Directory.](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-reset-password-azure-portal) 
+This SIT is designed to match the security information that's used as individual user passwords to authenticate against [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-reset-password-azure-portal). 
 
 It uses several primary resources:
 

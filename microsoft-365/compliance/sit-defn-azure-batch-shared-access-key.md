@@ -25,7 +25,7 @@ description: "Azure Batch Shared Access Key sensitive information type entity de
 
 ## Format
 
-A combination of 43 characters consisting of  letters, digits, and special characters ending in an equals (=) sign that is not part of the pattern.
+A combination of 43 characters consisting of letters, digits, and special characters ending in an equals (=) sign that is not part of the pattern.
 
 ## Pattern
 
@@ -36,7 +36,7 @@ A combination of 43 characters consisting of:
 - forward slashes (/)
 - or plus signs (+)
 
-for example
+for example:
 
 abcdefghijklmnopqrstuvwxyz0123456789/+ABCDE=
 
@@ -46,7 +46,7 @@ No
 
 ## Definition
 
-This SIT  is designed to match the security information that's used to access [Azure Batch](https://docs.microsoft.com/azure/batch/security-best-practices) accounts. 
+This SIT is designed to match the security information that's used to access [Azure Batch accounts.](/azure/batch/security-best-practices)  
 
 It uses several primary resources:
 

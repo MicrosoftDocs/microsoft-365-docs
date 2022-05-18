@@ -40,7 +40,8 @@ No
 
 ## Definition
 
-This SIT  is designed to match the security information that's used to encrypt or hash data in [ASP.NET](https://docs.microsoft.com/dotnet/api/system.web.security.machinekey?view=netframework-4.8) forms authentication and view state.
+
+This SIT is designed to match the security information that's used to encrypt or hash data in [ASP.NET](/dotnet/api/system.web.security.machinekey?view=netframework-4.8) forms authentication and view state. 
 
 It uses several primary resources:
 

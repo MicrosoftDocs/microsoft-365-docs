@@ -48,7 +48,7 @@ Yes
 
 ## Definition
 
-This SIT  is designed to match the security information that's used to secure [Azure Active Directory service principals.](https://docs.microsoft.com/azure/active-directory/fundamentals/service-accounts-principal)
+This SIT is designed to match the security information that's used to secure [Azure Active Directory service principals](/azure/active-directory/fundamentals/service-accounts-principal). 
 
 It uses several primary resources:
 

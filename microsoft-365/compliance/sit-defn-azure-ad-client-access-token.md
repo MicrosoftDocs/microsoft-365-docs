@@ -33,7 +33,7 @@ A client secret or refresh token used in OAuth2.0 protocol.
 
 or
 
-A combination of up to 1,000 characters consisting of  letters, digits, and special characters.
+A combination of up to 1,000 characters consisting of letters, digits, and special characters.
 
 ## Pattern
 
@@ -86,7 +86,7 @@ Yes
 
 ## Definition
 
-This SIT is designed to match the security information that's contains claims that one can use in Azure Active Directory B2C (Azure AD B2C) to identify the granted permissions to [Azure resources.](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-access-tokens) 
+This SIT is designed to match the security information that's contains claims that one can use in [Azure Active Directory B2C](/azure/active-directory-b2c/active-directory-b2c-access-tokens) (Azure AD B2C) to identify the granted permissions to Azure resources. 
 
 It uses several primary resources:
 
