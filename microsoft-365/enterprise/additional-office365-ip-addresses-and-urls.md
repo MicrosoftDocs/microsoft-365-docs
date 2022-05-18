@@ -3,7 +3,7 @@ title: "Other endpoints not included in the Office 365 IP Address and URL Web se
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 05/11/2022
+ms.date: 05/18/2022
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
