@@ -1,5 +1,5 @@
 ---
-title: Windows support for Client and Server
+title: Onboarding Windows Client and Server
 description: Onboard Windows Client, Windows Server, and previous versions of Windows.
 keywords: onboarding, Microsoft Defender for Endpoint onboarding, sccm, group policy, mdm, local script, detection test
 ms.prod: m365-security
