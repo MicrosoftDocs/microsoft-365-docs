@@ -1,5 +1,5 @@
 ---
-title: "Prepare for Office client deployment by Microsoft 365 Business Premium"
+title: "Prepare for Office client deployment with Microsoft 365 Business Premium"
 f1.keywords:
 - CSH
 ms.author: efrene
@@ -22,16 +22,16 @@ search.appverid:
 - MET150
 ROBOTS: NO INDEX, NO FOLLOW
 ms.assetid: ed34fff3-2881-4ed4-9906-1ba6bb8dd804
-description: "Learn how to automatically install the 32-bit Office apps on Windows 10 computers and keep them updated."
+description: "Learn how to automatically install the 32-bit Office apps on Windows computers and keep them updated in Microsoft 365 Business Premium."
 ---
 
 # Prepare to automatically install Office apps to client computers
 
-Use Microsoft 365 Business Premium to automatically install the 32-bit Office apps on Windows 10 computers and keep them current with updates.
+Use Microsoft 365 Business Premium to automatically install the 32-bit Office apps on Windows computers and keep them current with updates.
   
 Automatic installation works best if the computer: 
 
-- is on Windows 10 Business.
+- is on Windows for Business.
   
 - doesn't have existing Office desktop apps (Word, Excel, PowerPoint, Outlook, OneNote, Publisher, Access, and OneDrive) OR has an existing version of Click-to-Run Office installed.
 

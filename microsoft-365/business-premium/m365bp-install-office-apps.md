@@ -28,7 +28,7 @@ description: "How to install Office on all devices in Microsoft 365 Business Pre
 
 # Install Office apps on all devices
 
-Okay, you've set up Microsoft 365 Busines Premium, and now you can require users to install individual Office applications on their Mac, PC, or mobile devices. This is something your users should do to be part of the front lines and help protect the org against attack.
+Okay, you've set up Microsoft 365 Business Premium, and now you can require users to install individual Office applications on their Mac, PC, or mobile devices. This is something your users should do to be part of the front lines and help protect the org against attack.
   
 ## Watch: Install Office apps
 
