@@ -25,7 +25,7 @@ description: "Learn how to get the Microsoft Teams app usage report and gain ins
 
 The Microsoft 365 Reports dashboard shows you the activity overview across the products in your organization. It enables you to drill in to individual product level reports to give you more granular insight about the activities within each product. Check out [the Reports overview topic](activity-reports.md). In the **Microsoft Teams app usage report**, you can gain insights into the Teams apps activity in your organization. This article explains how to access the report and view and interpret the various metrics within the report. 
 
-The App Usage Report shows rich and actionable usage insights for your organization. You can use this report to understand who is installing/using apps, and deep dive on a per-app and per-user level.
+You can use this report to understand who is installing/using apps, and deep dive on a per-app and per-user level.
 
 ## What's in the report
 
@@ -35,12 +35,13 @@ The Teams app usage report is available in the Microsoft 365 admin center and th
 - How many apps have users in your environment installed? 
 - How many apps have at least one active user in your environment? 
 - How many apps are being used by platform (Windows, Mac, Web, or mobile)? 
+- How many active users and active teams are using the app?
 
 **User activity** - This report helps you answer: 
-- How many active users and active teams does a particular app have? 
 - How many users in your environment have installed at least one app? 
 - How many users in your environment have used at least one app? 
 - How many users are using an app across platforms (Windows, Mac, Web, etc)? 
+- How many apps has each user used?
 
 
 ## How to get to the Microsoft Teams apps usage report
@@ -54,9 +55,9 @@ The Teams app usage report is available in the Microsoft 365 admin center and th
 
 - Usage/installs data for a newly published app can take about five days to show up in the report. Data for a given day will show up within 48 hours. For example, data for January 10th should show up in the report by around January 12th.  
 
-- The start date for all installs metrics is October 2021. Installs metric [Manage app setup policies in Microsoft Teams](/microsoftteams/teams-app-setup-policies#install-apps.md) for more information.  
+- The start date for all installs metrics is October 2021. Only apps installed after that date will be counted. 
 
-- App IDs in this report are the External (manifest) App IDs. For more information on how to tie this ID to an app in the Manage Apps experience in Teams Admin Center, go to the Managing apps in Teams Admin Center section. 
+- App IDs in this report are the External (manifest) App IDs. For more information on how to tie this ID to an app in the Manage Apps experience in Teams Admin Center, see [Manage app setup policies in Microsoft Teams](/microsoftteams/teams-app-setup-policies#install-apps.md). 
 
 - You can export the report data into an Excel .csv file by selecting the Export link. This exports data for all users/apps and enables you to do simple sorting and filtering for further analysis. 
 
@@ -97,11 +98,13 @@ This chart shows you the number of apps used across your organization by platfor
   
 ### Apps usage details table
 
-This table shows you per-app view with the following metrics for each app. A subset of the metric columns are included by default, and you can select/edit the column list by clicking on “Choose columns” in the top right. 
+This table shows you per-app view with the following metrics for each app. A subset of the metric columns are included by default, and you can select/edit the column list by clicking on **Choose columns**”** in the top right. 
 
-|Item|Description|Default|
-|:-----|:-----|:-----|
+![Microsoft 365 reports - Apps usage details.](../../media/apps-usage-details.png)
+
 |**Metric**|**Definition**|**Included by default?**|
+|:-----|:-----|:-----|
+|||
 |App ID   <br/> |The external App identifier present in the app manifest.     <br/> |Yes |
 |Last used date    <br/> |The date when that app was last used by anyone in your organization.   <br/> |Yes |
 |Teams using this app   <br/> |The number of distinct Teams teams that have at least one user using this app.   <br/> |Yes |
@@ -139,7 +142,7 @@ This chart shows you the total number of unique users that have installed an app
  
 
 ### User who have used apps
-This chart shows you the number of unique users that have used any app up to each date within the selected period. For example – if you select January 28th, the chart will show you the total number of users up to January 28th.  
+This chart shows you the number of unique users that have used any app on each date within the selected period. For example – if you select January 28th, the chart will show you the total number of users on January 28th.  
 
 ![Microsoft 365 reports - Microsoft Teams apps Users who have used apps chart.](../../media/users-who-used-apps.png)
 
@@ -152,13 +155,15 @@ This chart shows you the number of apps used across your organization by platfor
 
 
   
-### Apps user activity details table
+### User activity details table
 
-This table shows you per-user view with the following metrics for each app. A subset of the metric columns are included by default, and you can select/edit the column list by clicking on “Choose columns” in the top right. 
+This table shows you per-user view with the following metrics for each app. A subset of the metric columns are included by default, and you can select/edit the column list by clicking on **Choose columns** in the top right. 
 
-|Item|Description|Default|
-|:-----|:-----|:-----|
+![Microsoft 365 reports - User activity details.](../../media/user-activity-details.png)
+
 |**Metric**|**Definition**|**Included by default?**|
+|:-----|:-----|:-----|
+||||
 |User name    <br/> |The User name for a unique user. Value is concealed by default.  <br/> |Yes |
 |Apps installed     <br/> |The number of unique apps (across Store and custom) that the user has installed.   <br/> |Yes |
 |Apps used    <br/> |The number of unique apps (across Store and custom) that the user has opened and/or used.    <br/> |Yes |
@@ -174,4 +179,11 @@ This table shows you per-user view with the following metrics for each app. A su
 
 For more information about how to manage your Teams apps, please refer to [About apps in Microsoft Teams](/microsoftteams/deploy-apps-microsoft-teams-landing-page.md).
 
-To link an app in this report to the Manage Apps experience in Teams Admin Center, you can use the App Name or you can use the External App ID by toggling the *Custom app external ID* as an extra column on the Manage Apps page.   
+To link an app in this report to the Manage Apps experience in Teams Admin Center, you can use the following:
+
+- App Name
+- External App ID
+
+External App IDs are equivalent to the ID in the Manage apps page for Store apps. For custom apps, to view External App ID in the Manage Apps page, follow the instructions on [Manage apps setup policies in Microsoft Teams](/microsoftteams/teams-app-setup-policies) to add the column in the column settings. You can also view it on the app details page for a custom app
+
+ 
