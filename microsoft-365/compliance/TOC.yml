@@ -436,20 +436,50 @@
                 href: sit-defn-azure-bot-service-app-secret.md
               - name: Azure Cognitive Search API key
                 href: sit-defn-azure-cognitive-search-api-key.md
+              - name: Azure Cognitive Service key
+                href: sit-defn-azure-cognitive-service-key.md
+              - name: Azure Container Registry access key
+                href: sit-defn-azure-container-registry-access-key.md
+              - name: Azure COSMOS DB account access key
+                href: sit-defn-azure-cosmos-db-account-access-key.md
+              - name: Azure Databricks personal access token 
+                href: sit-defn-azure-databricks-personal-access-token.md
+              - name: Azure DevOps app secret 
+                href: sit-defn-azure-devops-app-secret.md
+              - name: Azure DevOps personal access token
+                href: sit-defn-azure-devops-personal-access-token.md
               - name: Azure DocumentDB auth key
                 href: sit-defn-azure-document-db-auth-key.md
+              - name: Azure EventGrid access key
+                href: sit-defn-azure-eventgrid-access-key.md
+              - name: Azure Function Master / API key  
+                href: sit-defn-azure-function-master-api-key.md
               - name: Azure IAAS database connection string and Azure SQL connection string
                 href: sit-defn-azure-iaas-database-connection-string-azure-sql-connection-string.md
               - name: Azure IoT connection string
                 href: sit-defn-azure-iot-connection-string.md
+              - name: Azure IoT shared access key 
+                href: sit-defn-azure-iot-shared-access-key.md
+              - name: Azure Logic App shared access signature
+                href: sit-defn-azure-logic-app-shared-access-signature.md
+              - name: Azure Machine Learning web service API key  
+                href: sit-defn-azure-machine-learning-web-service-api-key.md
+              - name: Azure Maps subscription key  
+                href: sit-defn-azure-maps-subscription-key.md
               - name: Azure publish setting password
                 href: sit-defn-azure-publish-setting-password.md
               - name: Azure Redis cache connection string
                 href: sit-defn-azure-redis-cache-connection-string.md
+              - name: Azure Redis cache connection string password 
+                href: sit-defn-azure-redis-cache-connection-string-password.md
               - name: Azure SAS
                 href: sit-defn-azure-sas.md
               - name: Azure service bus connection string
                 href: sit-defn-azure-service-bus-connection-string.md
+              - name: Azure service bus shared access signature
+                href: sit-defn-azure-service-bus-shared-access-signature.md
+              - name: Azure Shared Access key / Web Hook token
+                href: sit-defn-azure-shared-access-key-web-hook-token.md
               - name: Azure storage account key
                 href: sit-defn-azure-storage-account-key.md
               - name: Azure Storage account key (generic)

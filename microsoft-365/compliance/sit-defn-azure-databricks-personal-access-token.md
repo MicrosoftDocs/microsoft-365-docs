@@ -1,5 +1,5 @@
 ---
-title: "Azure Cognitive search API key entity definition"
+title: "Azure Databricks personal access token entity definition"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,10 +18,10 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 recommendations: false
-description: "Azure Cognitive search API key sensitive information type entity definition."
+description: "Azure Databricks personal access token sensitive information type entity definition."
 ---
 
-# Azure Cognitive Search API key 
+# Azure Databricks personal access token  
 
 ## Format
 
@@ -30,7 +30,7 @@ A combination of 32 characters consisting of letters and digits.
 ## Pattern
 
 A combination of 32 characters consisting of:
-
+ 
 - a-f or A-F (case-sensitive)
 - or 0-9
 
@@ -38,31 +38,31 @@ for example:
 
 abcdef0123456789abcdef0123456789
 
-
 ## Checksum
 
 No
 
 ## Definition
 
-This SIT is designed to match the security information that's used to authenticate inbound requests to [Azure Cognitive Search APIs.](/azure/search/search-security-api-keys) 
+This SIT is designed to match the security information that's used to authenticate to the [Azure Databricks REST API](/azure/databricks/administration-guide/access-control/tokens). 
 
 It uses several primary resources:
 
-Patterns of Hex encoded 128 bits symmetric key.
-Patterns of CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName.
-Patterns of mockup values, redactions, and placeholders.
-A dictionary of vocabulary.
+- Patterns of Hex encoded 128 bits symmetric key.
+- Patterns of CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName.
+- Patterns of mockup values, redactions, and placeholders.
+- A dictionary of vocabulary.
 
 The patterns are designed to match actual credentials with reasonable confidence. The patterns do not match credentials formatted as examples. Mockup values, redacted values, and placeholders, like credential type or usage descriptions, in the position where an actual secret value should present will not be matched.
+
 
 ## Keywords
 
 ### Keyword_SymmetricKey128Hex:
 
-- dapi
-- key
-- secret
-- token
-- password
-- pw
+dapi
+key
+secret
+token
+password
+pw

@@ -1,5 +1,5 @@
 ---
-title: "Azure Cognitive search API key entity definition"
+title: "Azure Logic App shared access signature entity definition"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,26 +18,27 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 recommendations: false
-description: "Azure Cognitive search API key sensitive information type entity definition."
+description: "Azure Logic App shared access signature sensitive information type entity definition."
 ---
 
-# Azure Cognitive Search API key 
+# Azure Logic App shared access signature  
 
 ## Format
 
-A combination of 32 characters consisting of letters and digits.
+A combination of up to 76 characters consisting of letters, digits, and special characters.
 
 ## Pattern
 
-A combination of 32 characters consisting of:
+Any combination of 43 to 73 characters consisting of:
 
-- a-f or A-F (case-sensitive)
-- or 0-9
+- a-z (not case-sensitive)
+- 0-9
+- or percent signs (%)
+- ends with a suffix '%3d' (not case-sensitive)
 
 for example:
 
-abcdef0123456789abcdef0123456789
-
+abcdefghijklmnopqrstuvwxyz0123456789%2F%2BABCDE%3D
 
 ## Checksum
 
@@ -45,24 +46,24 @@ No
 
 ## Definition
 
-This SIT is designed to match the security information that's used to authenticate inbound requests to [Azure Cognitive Search APIs.](/azure/search/search-security-api-keys) 
+This SIT is designed to match the security information that's used to grant access to a request endpoint on [Azure Logic Apps.](/azure/logic-apps/logic-apps-securing-a-logic-app?tabs=azure-portal) 
 
 It uses several primary resources:
 
-Patterns of Hex encoded 128 bits symmetric key.
+Patterns of URL Encoded 256 bits symmetric key.
 Patterns of CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName.
 Patterns of mockup values, redactions, and placeholders.
-A dictionary of vocabulary.
+A dictionary of vocabulary
 
 The patterns are designed to match actual credentials with reasonable confidence. The patterns do not match credentials formatted as examples. Mockup values, redacted values, and placeholders, like credential type or usage descriptions, in the position where an actual secret value should present will not be matched.
 
+
 ## Keywords
 
-### Keyword_SymmetricKey128Hex:
+### Keyword_SymmetricKey256UrlEncoded:
 
-- dapi
+- sig=
 - key
-- secret
 - token
+- secret
 - password
-- pw
