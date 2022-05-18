@@ -2,7 +2,7 @@
 title: "Microsoft Defender for Business trial playbook"
 f1.keywords:
 - NOCSH
-ms.author: v-kcrillo
+ms.author: v-kcirillo
 author: cirilk
 manager: dansimp
 audience: Admin
@@ -58,17 +58,11 @@ We have automatically configured [Preset security policies](/security/office-365
 
 Perform the following to finish setup:
 
-1. Make sure to [add your existing domain](../admin/setup/setup-business-basic?view=o365-worldwide#add-your-domain-to-personalize-sign-in).
+1. Make sure to [add your existing domain](../admin/setup/setup-business-basic?view=o365-worldwide#add-your-domain-to-personalize-sign-in.md).
 
 2. Now, [add users and assign licenses](../admin/add-users/add-users.md).
 
-3. [Update your DNS records](../setup/setup-business-basic?view=o365-worldwide#connect-your-domain.md).
-
-<!---
-KC Note: a video equivalent for Business Premium instead of Office would be great. But, do the Office videos actually apply anyway since that's one way that users are sharing information in a productivity environment?
-
-Watch this video to learn more: [Protect against malicious links with Safe Links in Microsoft Defender for Business - YouTube](https://www.youtube.com/watch?v=vhIJ1Veq36Y&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=9).
---->
+3. [Update your DNS records](/admin/setup/setup-business-basic?view=o365-worldwide#connect-your-domain.md).
 
 ### Add a domain
 When you purchase Microsoft 365 Business Premium trial, you have the option of using a domain you own, or buying one during the sign-up.
