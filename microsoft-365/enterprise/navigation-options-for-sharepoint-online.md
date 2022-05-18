@@ -74,7 +74,7 @@ Under **Site Settings** > **Look and Feel** > **Navigation**, you can validate i
 
 Caching can be enabled or disabled at the site collection level and at the site level, and is enabled for both by default. To enable at the site collection level, under **Site Settings** > **Site Collection Administration** > **Site Collection Navigation**, check the box for **Enable caching**.
 
-![Enable caching at site level.](../media/structural-nav/structural-nav-caching-site-coll.png)
+![Enable caching at site collection level.](../media/structural-nav/structural-nav-caching-site-coll.png)
 
 To enable at the site level, under **Site Settings** > **Navigation**, check the box for **Enable caching**.
 
