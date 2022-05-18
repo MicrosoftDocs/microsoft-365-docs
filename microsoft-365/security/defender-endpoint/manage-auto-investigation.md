@@ -132,7 +132,7 @@ Automation levels affect whether certain remediation actions are taken automatic
 All verdicts are tracked in the [Action center](auto-investigation-action-center.md#new-a-unified-action-center).
 
 > [!NOTE]
-> In [Defender for Business](../defender-business/mdb-overview.md), automated investigation and remediation capabilities are preset to use full automation. These capabilities are applied to all devices by default.
+> In [Defender for Business](../defender-business/mdb-overview.md), automated investigation and remediation capabilities are preset to use **Full - remediate threats automatically**. These capabilities are applied to all devices by default.
 
 ## Next steps
 
