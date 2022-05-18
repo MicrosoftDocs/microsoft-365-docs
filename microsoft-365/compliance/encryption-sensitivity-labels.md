@@ -163,7 +163,7 @@ Settings for access control for encrypted content:
 ### Rights Management use license for offline access
 
 > [!NOTE]
-> Although you can configure the encryption setting to support offline access, some apps might not support offline access for encrypted content. For example, labeled and encrypted files in [Power BI Desktop](/power-bi/admin/service-security-sensitivity-label-overview) won't open if you're offline.
+> Although you can configure the encryption setting to allow offline access, some apps might not support offline access for encrypted content. For example, labeled and encrypted files in [Power BI Desktop](/power-bi/admin/service-security-sensitivity-label-overview) won't open if you're offline.
 
 When a user opens a document or email that's been protected by encryption from the Azure Rights Management service, an Azure Rights Management use license for that content is granted to the user. This use license is a certificate that contains the user's usage rights for the document or email, and the encryption key that was used to encrypt the content. The use license also contains an expiration date if this has been set, and how long the use license is valid.
 
