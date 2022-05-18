@@ -53,7 +53,11 @@
 ##### [Onboard Windows devices using a local script](configure-endpoints-script.md)
 ##### [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
 
-#### [Defender for Endpoint onboarding Windows Server]()
+#### [Defender for Endpoint onboarding Windows Server](defender-endpoint-onboard-windows-server)
+##### [Onboard Windows devices using Configuration Manager](configure-endpoints-sccm)
+##### [Onboard Windows devices using Group Policy](configure-endpoints-gp)
+##### [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi)
+
 #### [Defender for Endpoint onboarding previous versions of Windows]()
 
 ### [Microsoft Defender for Endpoint on Windows and Windows Server]()
