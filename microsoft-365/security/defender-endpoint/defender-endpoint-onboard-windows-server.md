@@ -43,7 +43,7 @@ For guidance on how to download and use Windows Security Baselines for Windows s
 
 You'll need to complete the following general steps to successfully onboard servers 2008 R2, 2012 R2, 2016, 2019, 202.
 
-:::image type="content" source="images/server-onboarding.png" alt-text="Onboard devices" lightbox="images/onboard-devices.png":::
+:::image type="content" source="images/server-onboarding.png" alt-text="Server Onboarding" lightbox="images/server-onboarding.png":::
 
 > [!NOTE]
 > Servers are on-boarded using GPs only.
