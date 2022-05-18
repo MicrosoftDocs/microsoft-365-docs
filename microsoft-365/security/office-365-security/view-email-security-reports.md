@@ -1176,7 +1176,9 @@ Each exported .csv file is limited to 150,000 rows. If the data contains more th
 
 ## Related topics
 
-[Anti-spam and anti-malware protection in EOP](anti-spam-and-anti-malware-protection.md)
+[Anti-spam protection in EOP](anti-spam-protection.md)
+
+[Anti-malware protection in EOP](anti-malware-protection.md)
 
 [Smart reports and insights in the Microsoft 365 Defender portal](reports-and-insights-in-security-and-compliance.md)
 
