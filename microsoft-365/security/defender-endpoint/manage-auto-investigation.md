@@ -131,7 +131,7 @@ Automation levels affect whether certain remediation actions are taken automatic
 |Any of the **Full** or **Semi** automation levels|A verdict of *No threats found* is reached for a piece of evidence. <p> No remediation actions are taken, and no actions are pending approval.|[View details and results of automated investigations](/microsoft-365/security/defender-endpoint/auto-investigation-action-center)|
 |**No automated response** (not recommended)|No automated investigations run, so no verdicts are reached, and no remediation actions are taken or awaiting approval.|[Consider setting up or changing your device groups to use **Full** or **Semi** automation](/microsoft-365/security/defender-endpoint/machine-groups)|
 
-All verdicts are tracked in the [Action center](auto-investigation-action-center.md#new-a-unified-action-center).
+All verdicts are tracked in the [Action center](auto-investigation-action-center.md#the-unified-action-center).
 
 > [!NOTE]
 > In [Defender for Business](../defender-business/mdb-overview.md), automated investigation and remediation capabilities are preset to use **Full - remediate threats automatically**. These capabilities are applied to all devices by default.
