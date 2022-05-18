@@ -9,6 +9,7 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.service: 
 ms.collection: enabler-strategic
+ms.custom: admindeeplinkSPO
 search.appverid: 
 ms.localizationpriority: high
 
@@ -20,7 +21,7 @@ You can import a term set using a SKOS-based format. For details about the forma
 
 We recommend keeping your import files to less than 20,000 terms. Larger files can increase the time taken for validation and import.
 
-1. In the SharePoint admin center, expand **Content services**, and then click **Term store**.
+1. In the SharePoint admin center, expand **Content services**, and then select <a href="https://go.microsoft.com/fwlink/?linkid=2185073" target="_blank">**Term store**</a>.
 
 2. Select the term group where you want to import the term set.
 

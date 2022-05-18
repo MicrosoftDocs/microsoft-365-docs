@@ -1,9 +1,9 @@
 ---
-title: "How to identify the type of hold placed on an Exchange Online mailbox"
+title: "How to identify the hold on an Exchange Online mailbox"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 
 audience: ITPro
@@ -23,13 +23,15 @@ description: "Learn how to identify the different types of hold that can be plac
 
 # How to identify the type of hold placed on an Exchange Online mailbox
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 This article explains how to identify holds placed on Exchange Online mailboxes in Microsoft 365.
 
 Microsoft 365 offers several ways that your organization can prevent mailbox content from being permanently deleted. This allows your organization to retain content to meet compliance regulations or during legal and other types of investigations. Here's a list of the retention features (also called *holds*) in Office 365:
 
 - **[Litigation Hold](create-a-litigation-hold.md):** Holds that are applied to user mailboxes in Exchange Online.
 
-- **[eDiscovery hold](create-ediscovery-holds.md):** Holds that are associated with a Core eDiscovery case in the security and compliance center. eDiscovery holds can be applied to user mailboxes and to the corresponding mailbox for Microsoft 365 Groups and Microsoft Teams.
+- **[eDiscovery hold](create-ediscovery-holds.md):** Holds that are associated with a Microsoft Purview eDiscovery (Standard) case in the security and compliance center. eDiscovery holds can be applied to user mailboxes and to the corresponding mailbox for Microsoft 365 Groups and Microsoft Teams.
 
 - **[In-Place Hold](/Exchange/security-and-compliance/create-or-remove-in-place-holds):** Holds that are applied to user mailboxes by using the In-Place eDiscovery & Hold tool in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a> in Exchange Online. 
 
@@ -169,10 +171,10 @@ Whenever a user applies a retention label that's configured to *retain* or *reta
 
 - If the mailbox or the user's Microsoft 365 account is deleted, the mailbox becomes an [inactive mailbox](inactive-mailboxes-in-office-365.md).
 - You aren't able to disable the mailbox (either the primary mailbox or the archive mailbox, if it's enabled).
-- Items that have been deleted from the mailbox will follow a different process than when no hold applies:
-    - **Unlabeled items** will initially be retained slightly longer than if no hold were to apply to the mailbox.  The time that it takes for these items to be permanently deleted is determined by the [deleted item retention](/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) configuration and how long it takes the item to arrive in the Purges subfolder of the [recoverable items folder](/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder).
-    - **Labeled items** will be retained and then deleted in the same way they would be if a Microsoft 365 retention policy applied, but at the individual item level.  If multiple items have different labels that are configured to *retain* or *retain and then delete* content at different intervals, each item will be retained based on the configuration of the applied label.
-- Other holds, such as Microsoft 365 retention policies, eDiscovery holds or litigation hold can extend how long labeled items are retained based on the [principals of retention](retention.md#the-principles-of-retention-or-what-takes-precedence).
+- Items that have been deleted from the mailbox will follow one of two paths depending on if they are labeled or not:
+    - **Unlabeled items** will follow the same path deleted items take when no holds apply to the mailbox.  The time that it takes for these items to be permanently deleted is determined by the [deleted item retention](/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) configuration and whether [single item recovery](/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder#single-item-recovery) is enabled for the mailbox or not.
+    - **Labeled items** will be retained within the [recoverable items folder](/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder#recoverable-items-folder) in the same way they would be if a Microsoft 365 retention policy applied, but at the individual item level.  If multiple items have different labels that are configured to *retain* or *retain and then delete* content at different intervals, each item will be retained based on the configuration of the applied label.
+- Other holds, such as Microsoft 365 retention policies, eDiscovery holds or litigation hold can extend how long labeled items are retained based on the [principles of retention](retention.md#the-principles-of-retention-or-what-takes-precedence).
 
 To view the value of the *ComplianceTagHoldApplied* property for a single mailbox, run the following command in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell):
 
@@ -245,7 +247,7 @@ When an organization-wide retention policy is applied or removed to a mailbox, e
 Get-Mailbox <username> | Select-Object -ExpandProperty InPlaceHolds
 ```
 
-### Obtain the GUIDs for any organization-wide retention policies appled to mailboxes
+### Obtain the GUIDs for any organization-wide retention policies applied to mailboxes
 
 ```powershell
 Get-OrganizationConfig | Select-Object -ExpandProperty InPlaceHolds

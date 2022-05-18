@@ -19,13 +19,15 @@ description: In this article, you'll learn about encryption technologies that yo
 
 # Customer-managed encryption features
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Along with the encryption technologies in Microsoft 365 managed by Microsoft, Microsoft 365 also works with additional encryption technologies that you can manage and configure, such as:
 
 - [Azure Rights Management](/azure/information-protection/what-is-azure-rms)
 
 - [Secure Multipurpose Internet Mail Extension](https://blogs.technet.com/b/exchange/archive/2014/12/15/how-to-configure-s-mime-in-office-365.aspx)
 
-- [Office 365 Message Encryption](https://products.office.com/en-us/exchange/office-365-message-encryption)
+- [Microsoft Purview Message Encryption](https://products.office.com/en-us/exchange/office-365-message-encryption)
 
 - [Secure mail flow with a partner organization](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-for-secure-mail-flow-with-a-partner)
 

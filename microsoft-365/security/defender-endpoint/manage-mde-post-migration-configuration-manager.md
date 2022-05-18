@@ -51,7 +51,7 @@ We recommend using [Microsoft Endpoint Manager](/mem), which includes [Microsoft
 
 ## Configure your Microsoft 365 Defender portal
 
-If you haven't already done so, configure your Microsoft 365 Defender portal to view alerts, configure threat protection features, and view detailed information about your organization's overall security posture. See [Microsoft 365 Defender portal](microsoft-defender-security-center.md). You can also configure whether and what features end users can see in the Microsoft 365 Defender portal.
+If you haven't already done so, configure your Microsoft 365 Defender portal to view alerts, configure threat protection features, and view detailed information about your organization's overall security posture. See While the attack was detected and stopped, alerts, such as an "initial access alert," were triggered and appeared in the [Microsoft 365 Defender portal](/microsoft-365/security/defender/microsoft-365-defender). You can also configure whether and what features end users can see in the Microsoft 365 Defender portal.
 
 - [Overview of Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/use)
 - [Endpoint protection: Microsoft 365 Defender](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)

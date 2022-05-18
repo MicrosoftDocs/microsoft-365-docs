@@ -2,8 +2,8 @@
 title: "Bulk import external contacts to Exchange Online"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 6/29/2018
 audience: End User
@@ -19,6 +19,8 @@ description: "Learn how admins can use Exchange Online PowerShell and a CSV file
 ---
 
 # Bulk import external contacts to Exchange Online
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **This article is for administrators. Are you trying to import contacts to your own mailbox? See [Import contacts to Outlook](https://support.office.com/article/bb796340-b58a-46c1-90c7-b549b8f3c5f8)**
    

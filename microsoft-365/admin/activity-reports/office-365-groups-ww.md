@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Reports in the admin center - Microsoft 365 groups"
+title: "Microsoft 365 admin center groups reports"
 ms.author: kwekua
 author: kwekua
 manager: scotv
@@ -20,7 +20,7 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
-description: "Get a Microsoft 365 groups report to know about the groups and their activities."
+description: "Get a Microsoft 365 Groups report to gain insights into the activity of groups in your organization and see how many groups are being created and used."
 ---
 
 # Microsoft 365 Reports in the admin center - Microsoft 365 groups
@@ -31,7 +31,7 @@ The Microsoft 365 Reports dashboard shows you the activity overview across the p
 
 1. In the admin center, go to the **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> page.
 
-2. From the dashboard homepage, click on the **View more** button on the Active users - Microsoft 365 Apps or the Active users - Microsoft 365 Services card to get to the Office 365 report page.
+2. From the dashboard homepage, click on the **View more** button on the Active users - Microsoft 365 Apps or the Active users - Microsoft 365 Services card to get to the Office 365 report page.
   
 ## Interpret the groups report
 

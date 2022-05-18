@@ -40,7 +40,7 @@ The dashboard displays a snapshot of:
 - Users at risk
 - Suspicious activities
 
-![Image of Security operations dashboard.](images/atp-sec-ops-dashboard.png)
+:::image type="content" source="images/atp-sec-ops-dashboard.png" alt-text="The Security operations dashboard" lightbox="images/atp-sec-ops-dashboard.png":::
 
 You can explore and investigate alerts and devices to quickly determine if, where, and when suspicious activities occurred in your network to help you understand the context they appeared in.
 
@@ -52,7 +52,7 @@ It also has clickable tiles that give visual cues on the overall health state of
 
 You can view the overall number of active alerts from the last 30 days in your network from the tile. Alerts are grouped into **New** and **In progress**.
 
-![Click on each slice or severity to see a list of alerts from the past 30 days.](images/active-alerts-tile.png)
+:::image type="content" source="images/active-alerts-tile.png" alt-text="The Active alerts page" lightbox="images/active-alerts-tile.png":::
 
 Each group is further sub-categorized into their corresponding alert severity levels. Click the number of alerts inside each alert ring to see a sorted view of that category's queue (**New** or **In progress**).
 
@@ -64,7 +64,7 @@ Each row includes an alert severity category and a short description of the aler
 
 This tile shows you a list of devices with the highest number of active alerts. The total number of alerts for each device is shown in a circle next to the device name, and then further categorized by severity levels at the far end of the tile (hover over each severity bar to see its label).
 
-![The Devices at risk tile shows a list of devices with the highest number of alerts, and a breakdown of the severity of the alerts.](images/devices-at-risk-tile.png)
+:::image type="content" source="images/devices-at-risk-tile.png" alt-text="The Devices at risk page" lightbox="images/devices-at-risk-tile.png":::
 
 Click the name of the device to see details about that device. For more information see, [Investigate devices in the Microsoft Defender for Endpoint Devices list](investigate-machines.md).
 
@@ -74,7 +74,7 @@ You can also click **Devices list** at the top of the tile to go directly to the
 
 The **Devices with sensor issues** tile provides information on the individual device's ability to provide sensor data to the Microsoft Defender for Endpoint service. It reports how many devices require attention and helps you identify problematic devices.
 
-![Devices with sensor issues tile.](images/atp-tile-sensor-health.png)
+:::image type="content" source="images/atp-tile-sensor-health.png" alt-text="The Devices with sensor issues tile" lightbox="images/atp-tile-sensor-health.png":::
 
 There are two status indicators that provide information on the number of devices that are not reporting properly to the service:
 
@@ -87,7 +87,7 @@ When you click any of the groups, you'll be directed to devices list, filtered a
 
 The **Service health** tile informs you if the service is active or if there are issues.
 
-![The Service health tile shows an overall indicator of the service.](images/status-tile.png)
+:::image type="content" source="images/status-tile.png" alt-text="The Service health page" lightbox="images/status-tile.png":::
 
 For more information on the service health, see [Check the Microsoft Defender for Endpoint service health](service-status.md).
 
@@ -95,19 +95,19 @@ For more information on the service health, see [Check the Microsoft Defender fo
 
 The **Daily devices reporting** tile shows a bar graph that represents the number of devices reporting daily in the last 30 days. Hover over individual bars on the graph to see the exact number of devices reporting in each day.
 
-![Image of daily devices reporting tile.](images/atp-daily-devices-reporting.png)
+:::image type="content" source="images/atp-daily-devices-reporting.png" alt-text="The daily devices reporting tile" lightbox="images/atp-daily-devices-reporting.png":::
 
 ## Active automated investigations
 
 You can view the overall number of automated investigations from the last 30 days in your network from the **Active automated investigations** tile. Investigations are grouped into **Pending action**, **Waiting for device**, and **Running**.
 
-![Inmage of active automated investigations.](images/atp-active-investigations-tile.png)
+:::image type="content" source="images/atp-active-investigations-tile.png" alt-text="The active automated investigations" lightbox="images/atp-active-investigations-tile.png":::
 
 ## Automated investigations statistics
 
 This tile shows statistics related to automated investigations in the last seven days. It shows the number of investigations completed, the number of successfully remediated investigations, the average pending time it takes for an investigation to be initiated, the average time it takes to remediate an alert, the number of alerts investigated, and the number of hours of automation saved from a typical manual investigation. 
 
-![Image of automated investigations statistics.](images/atp-automated-investigations-statistics.png)
+:::image type="content" source="images/atp-automated-investigations-statistics.png" alt-text="The automated investigations statistics" lightbox="images/atp-automated-investigations-statistics.png":::
 
 You can click on **Automated investigations**, **Remediated investigations**, and **Alerts investigated** to navigate to the **Investigations** page, filtered by the appropriate category. This lets you see a detailed breakdown of investigations in context.
 
@@ -115,7 +115,7 @@ You can click on **Automated investigations**, **Remediated investigations**, an
 
 The tile shows you a list of user accounts with the most active alerts and the number of alerts seen on high, medium, or low alerts. 
 
-![User accounts at risk tile shows a list of user accounts with the highest number of alerts and a breakdown of the severity of the alerts.](images/atp-users-at-risk.png)
+:::image type="content" source="images/atp-users-at-risk.png" alt-text="The Users at risk page" lightbox="images/atp-users-at-risk.png":::
 
 Click the user account to see details about the user account. For more information see [Investigate a user account](investigate-user.md).
 

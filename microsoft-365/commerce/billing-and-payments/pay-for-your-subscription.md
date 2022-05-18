@@ -2,8 +2,8 @@
 title: "Paying for your subscription"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -16,10 +16,11 @@ ms.collection:
 search.appverid: MET150 
 description: "Use a credit or debit card or bank account to pay for your Microsoft 365 for business subscription, or in some cases, you can pay by invoice."
 ms.custom: 
+- commerce_billing
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
 - AdminSurgePortfolio
-- commerce_billing
+- business_assist
 - AdminTemplateSet
 ms.date: 10/28/2021
 ---
@@ -33,6 +34,9 @@ You can use a credit or debit card, or bank account to pay for your subscription
 
 **Just want to find out where to send your invoice payment?** If you pay your invoice by check or electronic funds transfer (EFT), see [Where do I send my check or EFT payment?](#where-do-i-send-my-check-or-eft-payment)
 
+> [!TIP]
+> If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
+
 ## Before you begin
 
 - You must be a Global or Billing admin to do the steps described in this article. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
@@ -43,7 +47,7 @@ You can use a credit or debit card, or bank account to pay for your subscription
 > [!IMPORTANT]
 > Paying by bank account is not available in some countries or regions.
 
-You can pay for your subscription with a credit or debit card, or a bank account. When you pay with one of these payment methods, we continue to charge that payment method until the subscription expires, or is canceled. You can [manage payment methods](manage-payment-methods.md) whenever you need to. You can also choose to [receive a copy of your billing statement in email](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email).
+You can pay for your subscription with a credit or debit card, or a bank account. When you pay with one of these payment methods, we continue to charge that payment method until the subscription expires, or is canceled. You can [manage payment methods](manage-payment-methods.md) whenever you need to. You can also choose to [receive your organization's invoices as email attachments](manage-billing-notifications.md#receive-your-organizations-invoices-as-email-attachments).
 
 ## Paying by invoice
 
@@ -60,7 +64,7 @@ If a credit check is required, you’re notified when you buy your subscription.
 >
 > If you prefer, you can pay by electronic transfer between accounts. The Agency and account number are at the bottom of your invoice. You must enter your invoice number in the Transfer identification field.
 
-If you pay by invoice for your subscription, you get an email when your billing statement is ready to view. This email doesn’t contain a copy of your billing statement. However, you can choose to [receive a copy of your billing statement in email](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email). Your billing statement includes details about your options for making a payment, and where to send it. If you enter a purchase order (PO) number when you buy a subscription, the number appears on your billing statement. For information about accessing billing statements, see [View your bill or invoice](view-your-bill-or-invoice.md).
+If you pay by invoice for your subscription, you get an email when your billing statement is ready to view. This email doesn’t contain a copy of your billing statement. However, you can choose to [receive your organization's invoices as email attachments](manage-billing-notifications.md#receive-your-organizations-invoices-as-email-attachments). Your billing statement includes details about your options for making a payment, and where to send it. If you enter a purchase order (PO) number when you buy a subscription, the number appears on your billing statement. For information about accessing billing statements, see [View your bill or invoice](view-your-bill-or-invoice.md).
 
 ## What if I have an outstanding balance?
 
