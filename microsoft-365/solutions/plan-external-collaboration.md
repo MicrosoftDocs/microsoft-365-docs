@@ -108,10 +108,12 @@ Admins can set policies to monitor content for all users in the channel. All mes
 
 Supported [conditional access policies](/azure/active-directory/conditional-access/overview) from the host organization can be applied to B2B direct connect users. (The external organization's policies are not used.) The following types of conditional access policies are supported with shared channels:
 
-- Policies that are scoped to all guests, external participants, and SharePoint Online cloud apps.
+- Policies that are scoped to **All guest and external users**, and the **Office 365 SharePoint Online** cloud app.
 - Grant Access controls that require MFA, a compliant device, or a hybrid Azure AD joined device.
 
 IP-based policies are supported at the SharePoint file level. So an external participant could access shared channel from a restricted location, but be blocked when trying to open a file.
+
+For more information about conditional access for external identities, see [Authentication and Conditional Access for External Identities](/azure/active-directory/external-identities/authentication-conditional-access).
 
 ### Data loss prevention (DLP)
 
