@@ -140,18 +140,18 @@ For all customers:
     
 - If there are 10 or more instances of credit card numbers found in a document or email, apply the sensitivity label **Confidential** \ **All Employees** 
 
+> [!NOTE]
+> If we detected you have your own sensitivity labels published, we'll prompt you to select one of your own labels for your auto-labeling policy.
+
 For new customers after May 30, 2022, and the Microsoft 365 tenant is in the US region:
 
 - If there are 1-9 instances of US personal data and full names found in a document or email, apply the sensitivity label **Confidential** \ **Anyone (unrestricted)**
 
 - If there are 10 or more instances of US personal data and full names found in a document or email, apply the sensitivity label **Confidential** \ **All Employees** 
 
-- These settings have one policy for the Exchange location, and another policy for the SharePoint and OneDrive locations. Although they're created at the same time, simulation isn't immediately turned on for SharePoint and OneDrive:
-    - Exchange location: The auto-labeling policy is created and immediately starts simulation.
-    - SharePoint and OneDrive locations: The auto-labeling policy is created but waits 25 days before it automatically starts simulation.
-
-> [!NOTE]
-> If we detected you have your own sensitivity labels published, we'll prompt you to select one of your own labels for your auto-labeling policy.
+New customers after May 30, 2022 have two auto-labeling policies for each setting. One policy is for the Exchange location, and the other for the SharePoint and OneDrive locations. Although the policies are created at the same time, simulation isn't immediately turned on for SharePoint and OneDrive:
+- Exchange location: The auto-labeling policy is created and immediately starts simulation.
+- SharePoint and OneDrive locations: The auto-labeling policy is created but waits 25 days before it automatically starts simulation.
 
 When the simulation is complete, review the results and if you are happy with them, turn on the policies. After May 30, 2022, by default, the policies will be automatically turned on if they're not edited within the set time period (25 days initially for new customers, otherwise 7 days).
 
