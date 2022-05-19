@@ -58,7 +58,7 @@
 ##### [Onboard Windows devices using Group Policy](configure-endpoints-gp.md)
 ##### [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
 
-#### [Defender for Endpoint onboarding previous versions of Windows](onboard-windows-prev-version)
+#### [Defender for Endpoint onboarding previous versions of Windows](onboard-windows-prev-version.md)
 
 ### [Microsoft Defender for Endpoint on Windows and Windows Server]()
 #### [Onboarding tools and methods for Windows endpoints](configure-endpoints.md)
