@@ -19,7 +19,7 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: "Get the SharePoint activity usage report to know about the activity of every SharePoint user, the number of files shared, and the storage utilization."
+description: "Get the SharePoint activity usage report to learn about SharePoint licensed user file interactions, the number of files shared, and storage utilization."
 ---
 
 # Microsoft 365 Reports in the admin center - SharePoint activity

@@ -21,7 +21,7 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: "Get the OneDrive for Business Usage Report to know about the total number of files and storage used across your organization. "
+description: "Get the OneDrive for Business Usage Report to learn more about the total number of files and storage used across your organization."
 ---
 
 # Microsoft 365 Reports in the admin center - OneDrive for Business usage

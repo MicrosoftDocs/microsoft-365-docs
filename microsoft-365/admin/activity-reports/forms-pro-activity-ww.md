@@ -19,7 +19,7 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: "Learn how to get a Microsoft Dynamics 365 Customer Voice activity report using the Microsoft 365 Reports dashboard in the Microsoft 365 admin center."
+description: "Learn how to get a Microsoft Dynamics 365 Customer Voice activity report using the Reports dashboard and find out how licensed users are collaborating."
 ---
 
 # Microsoft 365 Reports in the admin center - Dynamics 365 Customer Voice activity

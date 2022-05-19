@@ -79,8 +79,8 @@ To make the data in Teams user activity report anonymous, you have to be a globa
 
 3. Select **Save changes**.
 
+## Related content
 
-## See also
 [Microsoft Teams device usage report](../activity-reports/microsoft-teams-device-usage-preview.md)
 
 [Microsoft Teams usage activity report](../activity-reports/microsoft-teams-usage-activity.md) 
