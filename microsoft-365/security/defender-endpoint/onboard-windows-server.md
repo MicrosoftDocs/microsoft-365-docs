@@ -43,7 +43,7 @@ For guidance on how to download and use Windows Security Baselines for Windows s
 
 ## Windows Server onboarding overview
 
-You'll need to complete the following general steps to successfully onboard servers 2008 R2, 2012 R2, 2016, 2019, 202.
+You'll need to complete the following general steps to successfully onboard servers 2008 R2, 2012 R2, 2016, 2019, 2022.
 
 :::image type="content" source="images/server-onboarding.png" alt-text="Server Onboarding" lightbox="images/server-onboarding.png":::
 
