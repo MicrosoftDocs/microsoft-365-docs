@@ -70,13 +70,13 @@ The Find feature is useful if you're searching a large document or if there are 
 
 ## Add an explanation
 
-For our example, we're going to create an explanation that provides a hint about the entity format itself and variations it might have in the sample documents. For example, a date value can be in a number of different formats, such as:
+For our example, we're going to create an explanation that provides a hint about the entity format itself and variations it might have in the sample documents. For example, a date value can be in several different formats, such as:
 
 - 10/14/2019
 - October 14, 2019
 - Monday, October 14, 2019
 
-To help identify the *Service Start Date* you can create a pattern explanation.
+To help identify the *Service Start Date*, you can create a pattern explanation.
 
 1. In the Explanation section, select **New** and type a name (for example, *Date*).
 2. For Type, select **Pattern list**.
@@ -135,15 +135,15 @@ If you again receive a **Mismatch** on your labeled files, you likely need to cr
 
 ## Test your model
 
-If you receive a match on your labeled sample files, you can now test your model on the remaining unlabeled example files. This is optional, but a useful step to evaluate the "fitness" or readiness of the model before using it, by testing it on files the model hasn't seen before.
+If you receive a match on your labeled sample files, you can now test your model on the remaining unlabeled example files. This step is optional, but useful to evaluate the "fitness" or readiness of the model before using it, by testing it on files the model hasn't seen before.
 
-1. From the model home page, select the **Test** tab.  This runs the model on your unlabeled sample files.
+1. From the model home page, select the **Test** tab.  This will run the model on your unlabeled sample files.
 
 2. In the **Test files** list, your example files display to show if the model is able to extract the information you need. Use this information to help determine the effectiveness of your classifier in identifying your documents.
 
     ![Test on your files.](../media/content-understanding/test-filies-extractor.png)
 
-### Further refine an extractor
+## Further refine an extractor
 
 If you have duplicate entities and want to extract only one value or a certain number of values, you can set a rule to specify how you want it processed. To add a rule to refine extracted information, follow these steps:
 

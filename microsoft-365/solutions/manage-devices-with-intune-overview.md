@@ -35,7 +35,8 @@ On the other hand, if your environment includes plans for co-management includin
 Watch this video for an overview of the deployment process.
 <br>
 <br>
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4F1af]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Y4fC]
+
 
 ## Why manage endpoints?
 
@@ -112,14 +113,6 @@ Note that only Intune is managing devices. Onboarding refers to the ability for 
 |Other methods     |   Other methods of enrollment depend on the platform of the device and whether it is BYOD or managed by your organization.      | Other methods for onboarding devices include, in recommended order:<br><li>Configuration Manager<li>Other mobile device management tool (if the device is managed by one)<li>Local script<li>VDI configuration package for onboarding non-persistent virtual desktop infrastructure (VDI) devices<li>Group Policy|
 | | |     |
 
-Note that only Intune is managing devices. Onboarding refers to the ability for a device to share information with a specific service capability. The following table summarizes the differences between enrolling devices into management and onboarding devices for a specific capability.
-
-|&nbsp;|Enroll|Onboard|
-|---|---|---|
-|Description|Enrollment applies to managing devices. Devices are enrolled for management with Intune or Configuration Manager.|Onboarding configures a device to work with a specific set of capabilities in Microsoft 365. Currently, onboarding applies to Microsoft Defender for Endpoint and Microsoft compliance capabilities. <br/><br/> On Windows devices, onboarding involves toggling a setting in Windows Defender that allows Defender to connect to the online service and accept policies that apply to the device.|
-|Scope|These device management tools manage the entire device, including configuring the device to meet specific objectives, like security.|Onboarding only affects the capabilities that apply.|
-|Recommended method|Azure Active Directory join automatically enrolls devices into Intune.|Intune is the preferred method for onboarding devices to Windows Defender for Endpoint, and consequently Microsoft Purview capabilities. <br/><br/> Note that devices that are onboarded to Microsoft Purview capabilities using other methods are not automatically enrolled for Defender for Endpoint.|
-|Other methods|Other methods of enrollment depend on the platform of the device and whether it is BYOD or managed by your organization.|Other methods for onboarding devices include, in recommended order: <ul><li>Configuration Manager</li><li>Other mobile device management tool (if the device is managed by one)</li><li>Local script</li><li>VDI configuration package for onboarding non-persistent virtual desktop infrastructure (VDI) devices</li><li>Group Policy</li></ul>|
 
 ## Learning for administrators
 

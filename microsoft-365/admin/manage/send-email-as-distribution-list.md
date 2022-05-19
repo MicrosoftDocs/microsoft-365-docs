@@ -24,7 +24,7 @@ ms.assetid: a7c98273-067e-4162-b3a1-4ba081796012
 description: "Send email as a distribution list in Microsoft 365 so that when a member replies to a message it appears to be from the distribution list."
 ---
 
-# Send email as a distribution list
+# Send Microsoft 365 email as a distribution list
 
 In Microsoft 365, you can send email as a distribution list. When a person who is a member of the distribution list replies to a message sent to the distribution list, the email appears to be from the distribution list, not from the individual user. This topic shows you how to do this.
   
