@@ -163,7 +163,7 @@ To view and use Explorer *or* Real-time detections, you need the following permi
 To learn more about roles and permissions, see the following articles:
 
 - [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md)
-- [Permissions in Exchange Online](/e/exchange/permissions-exo/permissions-exo)
+- [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo)
 
 ## More information
 
