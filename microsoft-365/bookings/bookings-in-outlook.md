@@ -23,8 +23,8 @@ Bookings in Outlook has two different views:
 - **Organizer view** A personal booking page where you can create meeting types that others can book with you. Custom meeting types give you the ability to customize when you want to meet and how that meeting type is shared with others. You control whether each meeting type is public to your scheduling page or is private and can only be accessed by a select group of people. You can also choose to add a Teams meeting to all meetings booked through your Bookings in Outlook page. You can access your Bookings in Outlook page through Outlook on the web. After you set up your page and publish it, you can share it with others. For example, you can add it to your Outlook signature.
 
 - **Scheduling view** When you share your Bookings in Outlook page with others, they will see the scheduling view. Which meetings are shown in the scheduling view depends on if you shared the link to your Bookings in Outlook page with public meetings or you shared a private link for an individual meeting.
-    - Public meetings can be viewed and scheduled by anyone that has your Bookings in Outlook page link. You are in control of who you share that link with. All public meeting types will be visible to anyone that has your Bookings in Outlook page link.
-    - Private meetings can only be viewed by people who have the link for that meeting type. The difference between public meetings and private meetings is private meetings can have different links and the links expire after 90 days. You can also set private links to expire after a one-time booking. When accessing the scheduling view for a private meeting, only that meeting type will be visible.
+  - Public meetings can be viewed and scheduled by anyone that has your Bookings in Outlook page link. You are in control of who you share that link with. All public meeting types will be visible to anyone that has your Bookings in Outlook page link.
+  - Private meetings can only be viewed by people who have the link for that meeting type. The difference between public meetings and private meetings is private meetings can have different links and the links expire after 90 days. You can also set private links to expire after a one-time booking. When accessing the scheduling view for a private meeting, only that meeting type will be visible.
 
 ## Before you begin
 
@@ -34,6 +34,8 @@ Bookings in Outlook is available in the following subscriptions:
 - Microsoft 365: A3, A5, E1, E3, E5, F1, F3, Business Basic, Business Standard, Business Premium
 
 Bookings in Outlook is on by default for users with these subscriptions.
+
+Bookings in Outlook needs the **Microsoft Bookings** service plan assigned to users for them to be able to access Bookings. This service plan can be enabled/disabled by tenant admins. So, if **Microsoft Bookings** is not assigned to them, Bookings access will be denied to users even if they are in one of the previously listed SKUs.
 
 For more information, see the [Bookings in Outlook Microsoft 365 Roadmap item](https://go.microsoft.com/fwlink/?linkid=328648).
 
@@ -53,7 +55,7 @@ Use the **Get-OrganizationConfig** and **Set-OrganizationConfig** commands to fi
 1. Check EWS control access by running the following command.
 
    ```PowerShell
-   Get-Organizationconfig | Format-List EwsEnabled
+   Get-OrganizationConfig | Format-List EwsEnabled
    ```
 
     If the command returns “EwsEnabled: **$true**" then proceed to Step 2.
@@ -98,7 +100,7 @@ Use the **Get-OrganizationConfig** and **Set-OrganizationConfig** commands to fi
    Set-OrganizationConfig -EwsBlockList @{Remove="MicrosoftOWSPersonalBookings"}
    ```
 
-    **C**. If the value of **EwsApplicationAccessPolicy** is empty, all applications are allowed to access EWS and REST.
+    **C**. If the value of **EwsApplicationAccessPolicy** is empty, all applications are allowed to access EWS and REST.
 
     - To turn off Bookings in Outlook for your organization set the **EnforceBlockList** policy and add **MicrosoftOWSPersonalBookings** to the block list by running the following command:
 
@@ -143,7 +145,7 @@ Use the **Get-CASMailbox** and **Set-CASMailbox** commands to check user status 
     - To turn off Bookings in Outlook for this user, add **MicrosoftOWSPersonalBookings** to **EnforceBlockList** by running the following command:
 
    ```PowerShell
-   Set-CASMailbox -Identity adam@contoso.com -EwsApplicationAccessPolicy  EnforceBlockList @{Add="MicrosoftOWSPersonalBookings"}
+   Set-CASMailbox -Identity adam@contoso.com -EwsApplicationAccessPolicy EnforceBlockList @{Add="MicrosoftOWSPersonalBookings"}
    ```
 
     - To turn on Bookings in Outlook for this user, remove **MicrosoftOWSPersonalBookings**, if present from EnforceBlockList by running the following command:
@@ -152,10 +154,10 @@ Use the **Get-CASMailbox** and **Set-CASMailbox** commands to check user status 
    Set-CASMailbox -Identity adam@contoso.com -EwsBlockList @{Remove="MicrosoftOWSPersonalBookings"}
    ```
 
-    **C**. If the value of EwsApplicationAccessPolicy is empty, all applications are allowed to access EWS and REST.
+    **C**. If the value of EwsApplicationAccessPolicy is empty, all applications are allowed to access EWS and REST.
 
-    - To turn off Bookings in Outlook for this user, set the **EnforceBlockList** policy and add **MicrosoftOWSPersonalBookings** to EWSBlockList by running the following command:
+    - To turn off Bookings in Outlook for this user, set the **EnforceBlockList** policy and add **MicrosoftOWSPersonalBookings** to EWSBlockList by running the following command:
 
     ```PowerShell
-   Set-CASMailbox -Identity Adam -EwsApplicationAccessPolicy  EnforceBlockList -EWSBlockList @{Add="MicrosoftOWSPersonalBookings"}
+   Set-CASMailbox -Identity Adam -EwsApplicationAccessPolicy EnforceBlockList -EWSBlockList @{Add="MicrosoftOWSPersonalBookings"}
    ```

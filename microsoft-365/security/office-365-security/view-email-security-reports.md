@@ -40,6 +40,9 @@ A variety of reports are available in the Microsoft 365 Defender portal at <http
 >
 > Reports that are related to mail flow are now in the Exchange admin center. For more information about these reports, see [Mail flow reports in the new Exchange admin center](/exchange/monitoring/mail-flow-reports/mail-flow-reports).
 
+Watch this short video to learn how you can use reports to understand the effectiveness of Defender for Office 365 in your organization.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBkxB]
+
 ## Email security report changes in the Microsoft 365 Defender portal
 
 The Exchange Online Protection (EOP) and Microsoft Defender for Office 365 reports in the Microsoft 365 Defender portal that have been replaced, moved, or deprecated are described in the following table.
@@ -1173,7 +1176,9 @@ Each exported .csv file is limited to 150,000 rows. If the data contains more th
 
 ## Related topics
 
-[Anti-spam and anti-malware protection in EOP](anti-spam-and-anti-malware-protection.md)
+[Anti-spam protection in EOP](anti-spam-protection.md)
+
+[Anti-malware protection in EOP](anti-malware-protection.md)
 
 [Smart reports and insights in the Microsoft 365 Defender portal](reports-and-insights-in-security-and-compliance.md)
 

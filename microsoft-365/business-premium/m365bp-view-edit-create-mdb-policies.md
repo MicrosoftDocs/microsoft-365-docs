@@ -200,7 +200,7 @@ To duplicate a policy in InTune:
 
 1. Sign in to the Microsoft Endpoint Manager admin center.
 
-1. Select the policy that you want to copy. Next, select **Duplicate** or select the ellipsis **(…)** to the right of the policy and select **Duplicate**.
+1. Select the policy that you want to copy. Next, select **Duplicate** or select the ellipsis **(...)** to the right of the policy and select **Duplicate**.
 1. Provide a New name for the policy, and then select **Save**.
 
 To edit a policy:

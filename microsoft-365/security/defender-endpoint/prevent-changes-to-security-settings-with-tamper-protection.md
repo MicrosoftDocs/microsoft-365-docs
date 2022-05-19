@@ -314,7 +314,7 @@ Your security operations team can also use hunting queries, such as the followin
 [View information about tampering attempts](#view-information-about-tampering-attempts).
 
 > [!TIP]
-> If you’re looking for Antivirus related information for other platforms, see:
+> If you're looking for Antivirus related information for other platforms, see:
 > - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
 > - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
 > - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
@@ -328,3 +328,5 @@ Your security operations team can also use hunting queries, such as the followin
 - [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](/intune/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
 - [Get an overview of Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint)
 - [Better together: Microsoft Defender Antivirus and Microsoft Defender for Endpoint](why-use-microsoft-defender-antivirus.md)
+- [Enable troubleshooting mode](enable-troubleshooting-mode.md)
+- [Troubleshooting mode scenarios](troubleshooting-mode-scenarios.md)

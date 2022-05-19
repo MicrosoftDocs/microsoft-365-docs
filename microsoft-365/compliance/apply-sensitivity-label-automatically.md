@@ -224,6 +224,23 @@ Specific to the Azure Information Protection unified labeling client:
 
 - Sensitive information can be detected in the body text in documents and emails, and to headers and footers—but not in the subject line or attachments of email.
 
+### Convert your label settings into an auto-labeling policy
+
+> [!NOTE]
+> This option is gradually rolling out.
+
+If the label includes sensitive info types for the configured conditions, you'll see an option at the end of the label creation or editing process to automatically create an auto-labeling policy that's based on the same auto-labeling settings.
+
+Because auto-labeling policies don't support trainable classifiers:
+
+- If the label conditions contain just trainable classifiers, you won't see the option to automatically create an auto-labeling policy.
+
+- If the label conditions contain trainable classifiers and sensitivity info types, an auto-labeling policy will be created for just the sensitive info types. 
+
+Although an auto-labeling policy is automatically created for you by auto-populating the values that you would have to select manually if you created the policy from scratch, you can still view and edit the values before they are saved.
+
+By default, all locations for SharePoint, OneDrive, and Exchange are included in the auto-label policy, and when the policy is saved, it runs in [simulation mode](#learn-about-simulation-mode). There's no check that you've [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md), which is one of the prerequisites for auto-labeling to apply to content in SharePoint and OneDrive.
+
 ## How to configure auto-labeling policies for SharePoint, OneDrive, and Exchange
 
 Make sure you're aware of the prerequisites before you configure auto-labeling policies.
