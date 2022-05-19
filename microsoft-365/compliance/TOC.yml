@@ -480,10 +480,22 @@
                 href: sit-defn-azure-service-bus-shared-access-signature.md
               - name: Azure Shared Access key / Web Hook token
                 href: sit-defn-azure-shared-access-key-web-hook-token.md
+              - name: Azure SignalR access key
+                href: sit-defn-azure-signair-access-key.md
+              - name: Azure SQL connection string 
+                href: sit-defn-azure-sql-connection-string.md
+              - name: Azure storage account access key  
+                href: sit-defn-azure-storage-account-access-key.md
               - name: Azure storage account key
                 href: sit-defn-azure-storage-account-key.md
               - name: Azure Storage account key (generic)
                 href: sit-defn-azure-storage-account-key-generic.md
+              - name: Azure Storage account shared access signature
+                href: sit-defn-azure-storage-account-shared-access-signature.md
+              - name: Azure Storage account shared access signature for high risk resources
+                href: sit-defn-azure-storage-account-shared-access-signature-high-risk-resources.md
+              - name: Azure subscription management certificate
+                href: sit-defn-azure-subscription-management-certificate.md
               - name: Belgium drivers license number
                 href: sit-defn-belgium-drivers-license-number.md
               - name: Belgium national number
@@ -532,6 +544,8 @@
                 href: sit-defn-chile-identity-card-number.md
               - name: China resident identity card (PRC) number
                 href: sit-defn-china-resident-identity-card-number.md
+              - name: Client secret / API key
+                href: sit-defn-client-secret-api-key.md
               - name: Credit card number
                 href: sit-defn-credit-card-number.md
               - name: Croatia drivers license number
@@ -620,6 +634,10 @@
                 href: sit-defn-france-tax-identification-number.md
               - name: France value added tax number
                 href: sit-defn-france-value-added-tax-number.md
+              - name: General password
+                href: sit-defn-general-password.md
+              - name: General Symmetric key
+                href: sit-defn-general-symmetric-key.md
               - name: Generic medication names
                 href: sit-defn-generic-medication-names.md
               - name: Germany drivers license number
@@ -634,6 +652,10 @@
                 href: sit-defn-germany-tax-identification-number.md
               - name: Germany value added tax number
                 href: sit-defn-germany-value-added-tax-number.md
+              - name: GitHub personal access token 
+                href: sit-defn-github-personal-access-token.md
+              - name: Google API key
+                href: sit-defn-google-api-key.md
               - name: Greece drivers license number
                 href: sit-defn-greece-drivers-license-number.md
               - name: Greece national ID card
@@ -648,6 +670,8 @@
                 href: sit-defn-greece-tax-identification-number.md
               - name: Hong Kong identity card (HKID) number
                 href: sit-defn-hong-kong-identity-card-number.md
+              - name: Http authorization header
+                href: sit-defn-http-authorization-header.md
               - name: Hungary drivers license number
                 href: sit-defn-hungary-drivers-license-number.md
               - name: Hungary passport number
@@ -778,6 +802,8 @@
                 href: sit-defn-medicare-beneficiary-Identifier-card.md
               - name: Mexico Unique Population Registry Code (CURP)
                 href: sit-defn-mexico-unique-population-registry-code.md
+              - name: Microsoft Bing maps key
+                href: sit-defn-microsoft-bing-maps-key.md
               - name: Netherlands citizens service (BSN) number
                 href: sit-defn-netherlands-citizens-service-number.md
               - name: Netherlands drivers license number
@@ -848,6 +874,8 @@
                 href: sit-defn-saudi-arabia-national-id.md
               - name: Singapore national registration identity card (NRIC) number
                 href: sit-defn-singapore-national-registration-identity-card-number.md
+              - name: Slack access token
+                href: sit-defn-slack-access-token.md
               - name: Slovakia drivers license number
                 href: sit-defn-slovakia-drivers-license-number.md
               - name: Slovakia passport number
@@ -944,6 +972,10 @@
                 href: sit-defn-ukraine-passport-domestic.md
               - name: Ukraine passport international
                 href: sit-defn-ukraine-passport-international.md
+              - name: User login credentials
+                href: sit-defn-user-login-credentials.md
+              - name: X.509 certificate private key
+                href: sit-defn-x-509-certificate-private-key.md
           - name: Sensitive information type functions
             href: sit-functions.md
           - name: Custom sensitive information type filters reference
