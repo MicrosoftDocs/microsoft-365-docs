@@ -1,5 +1,5 @@
 ---
-title: Investigate Microsoft Defender for Endpoint domains
+title: Investigate domains and URLs associated with a Microsoft Defender for Endpoint alert
 description: Use the investigation options to see if devices and servers have been communicating with malicious domains.
 keywords: investigate domain, domain, malicious domain, Microsoft Defender for Endpoint, alert, URL
 ms.prod: m365-security
@@ -17,7 +17,7 @@ ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
 ---
-# Investigate a domain associated with a Microsoft Defender for Endpoint alert
+# Investigate domains and URLs associated with a Microsoft Defender for Endpoint alert
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
