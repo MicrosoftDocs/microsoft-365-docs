@@ -2,7 +2,7 @@
 title: View email security reports
 f1.keywords:
   - NOCSH
-ms.author: chrisda
+ms.author: chrisdadrop down list
 author: chrisda
 manager: dansimp
 ms.date:
@@ -1024,7 +1024,7 @@ You can filter both the chart and the details table by clicking **Filter** and s
 
 When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
 
-To group the entries, click **Group** and select one of the following values from the drop down list:
+To group the entries, click **Group** and select one of the following values from the drop-down list:
 
 - **None**
 - **Reason**
@@ -1045,7 +1045,7 @@ The details table below the graph shows the following information:
 - **Rescan result**
 - **Tags**: For more information about user tags, see [User tags](user-tags.md).
 
-To submit a message to Microsoft for analysis, select the message entry from the table, click **Submit to Microsoft for analysis** and then select one of the following values from the drop down list:
+To submit a message to Microsoft for analysis, select the message entry from the table, click **Submit to Microsoft for analysis** and then select one of the following values from the drop-down list:
 
 - **Report clean**
 - **Report phishing**
