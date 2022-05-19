@@ -2,7 +2,7 @@
 title: View email security reports
 f1.keywords:
   - NOCSH
-ms.author: chrisda
+ms.author: chrisdadrop
 author: chrisda
 manager: dansimp
 ms.date:
@@ -56,7 +56,7 @@ The Exchange Online Protection (EOP) and Microsoft Defender for Office 365 repor
 |**Safe Attachments message disposition report** <p> Get-AdvancedThreatProtectionTrafficReport <br> Get-MailDetailMalwareReport|[Threat protection status report: View data by Email \> Malware](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250531|June 2021|
 |**Malware detected in email report** <p> Get-MailTrafficReport <br> Get-MailDetailMalwareReport|[Threat protection status report: View data by Email \> Malware](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250530|June 2021|
 |**Spam detection report** <p> Get-MailTrafficReport <br> Get-MailDetailSpamReport|[Threat protection status report: View data by Email \> Spam](#view-data-by-email--spam-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250529|October 2021|
-|Get-AdvancedThreatProtectionDocumentReport <p> Get-AdvancedThreatProtectionDocumentDetail|[Get-ContentMalwareMdoAggregateReport](/powershell/module/exchange/get-contentmalwaremdoaggregatereport) <p> [Get-ContentMalwareMdoDetailReport](/powershell/module/exchange/get-contentmalwaremdodetailreport)|TBA|May 2022|
+|Get-AdvancedThreatProtectionDocumentReport <p> Get-AdvancedThreatProtectionDocumentDetail|[Get-ContentMalwareMdoAggregateReport](/powershell/module/exchange/get-contentmalwaremdoaggregatereport) <p> [Get-ContentMalwareMdoDetailReport](/powershell/module/exchange/get-contentmalwaremdodetailreport)|MC343433|May 2022|
 |**Exchange transport rule report** <p> [Get-MailTrafficPolicyReport](/powershell/module/exchange/get-mailtrafficpolicyreport) <br> [Get-MailDetailTransportRuleReport](/powershell/module/exchange/get-maildetailtransportrulereport)|[Exchange transport rule report in the EAC](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report) <p> [Get-MailTrafficPolicyReport](/powershell/module/exchange/get-mailtrafficpolicyreport) <br> [Get-MailDetailTransportRuleReport](/powershell/module/exchange/get-maildetailtransportrulereport)|MC316157|April 2022|
 |Get-MailTrafficTopReport|[Threat protection status report: View data by Email \> Malware](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport) <p> **Note**: There is no replacement for the encryption reporting capabilities in Get-MailTrafficTopReport.|MC315742|April 2022|
 
@@ -1024,7 +1024,7 @@ You can filter both the chart and the details table by clicking **Filter** and s
 
 When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
 
-To group the entries, click **Group** and select one of the following values from the drop down list:
+To group the entries, click **Group** and select one of the following values from the drop-down list:
 
 - **None**
 - **Reason**
@@ -1045,7 +1045,7 @@ The details table below the graph shows the following information:
 - **Rescan result**
 - **Tags**: For more information about user tags, see [User tags](user-tags.md).
 
-To submit a message to Microsoft for analysis, select the message entry from the table, click **Submit to Microsoft for analysis** and then select one of the following values from the drop down list:
+To submit a message to Microsoft for analysis, select the message entry from the table, click **Submit to Microsoft for analysis** and then select one of the following values from the drop-down list:
 
 - **Report clean**
 - **Report phishing**
