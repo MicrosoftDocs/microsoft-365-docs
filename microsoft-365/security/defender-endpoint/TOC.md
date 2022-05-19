@@ -47,18 +47,18 @@
 ## [Configure and onboard devices]()
 ### [Onboard devices and configure Microsoft Defender for Endpoint capabilities](onboard-configure.md)
 ### [Onboarding Windows Client and Windows Server]()
-#### [Defender for Endpoint onboarding Windows Client](defender-endpoint-onboard-windows-client.md)
+#### [Defender for Endpoint onboarding Windows Client](onboard-windows-client.md)
 ##### [Onboard Windows devices using Mobile Device Management tools](configure-endpoints-mdm.md)
 ##### [Onboard Windows devices using Group Policy](configure-endpoints-gp.md)
 ##### [Onboard Windows devices using a local script](configure-endpoints-script.md)
 ##### [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
 
-#### [Defender for Endpoint onboarding Windows Server](defender-endpoint-onboard-windows-server.md)
+#### [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md)
 ##### [Onboard Windows devices using Configuration Manager](configure-endpoints-sccm.md)
 ##### [Onboard Windows devices using Group Policy](configure-endpoints-gp.md)
 ##### [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
 
-#### [Defender for Endpoint onboarding previous versions of Windows]()
+#### [Defender for Endpoint onboarding previous versions of Windows](onboard-windows-prev-version)
 
 ### [Microsoft Defender for Endpoint on Windows and Windows Server]()
 #### [Onboarding tools and methods for Windows endpoints](configure-endpoints.md)
