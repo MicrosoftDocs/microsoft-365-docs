@@ -40,7 +40,7 @@ Learn how to configure your Event Hubs so that it can ingest events from Microso
 
 ## Set up Azure Active Directory App Registration
 
-> ![NOTE]
+> [!NOTE]
 > You must have Administrator role or Azure Active Directory (AAD) must be set to allow non-Administrators to register apps. You must also have an Owner or User Access Administrator role to assign the service principal a role. For more information, see [Create an Azure AD app & service principal in the portal - Microsoft identity platform \| Microsoft Docs](/azure/active-directory/develop/howto-create-service-principal-portal).
 
 1. Create a new registration (which inherently creates a service principal) in
