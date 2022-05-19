@@ -28,7 +28,7 @@ ms.prod: m365-security
 
 <br>
 
-|[![Phase 1: Prepare.](../../media/phase-diagrams/prepare.png)](migrate-to-defender-for-office-365-prepare.md) <br> [Phase 1: Prepare](migrate-to-defender-for-office-365-prepare.md)|![Phase 2: Set up.](../../media/phase-diagrams/setup.png) <br> Phase 2: Set up|[![Phase 3: Onboard.](../../media/phase-diagrams/onboard.png)](migrate-to-defender-for-office-365-onboard.md) <br> [Phase 3: Onboard](migrate-to-defender-for-office-365-onboard.md)|
+|[![Phase 1: Prepare.](../../media/phase-diagrams/prepare.png#lightbox)](migrate-to-defender-for-office-365-prepare.md) <br> [Phase 1: Prepare](migrate-to-defender-for-office-365-prepare.md)|![Phase 2: Set up.](../../media/phase-diagrams/setup.png) <br> Phase 2: Set up|[![Phase 3: Onboard.](../../media/phase-diagrams/onboard.png#lightbox)](migrate-to-defender-for-office-365-onboard.md) <br> [Phase 3: Onboard](migrate-to-defender-for-office-365-onboard.md)|
 |---|---|---|
 ||*You are here!*||
 

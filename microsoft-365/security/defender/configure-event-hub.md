@@ -142,7 +142,7 @@ For these Event Hub (not namespace) you will need to configure a Shared Access P
 
     **Forward events to event hub**: Select this checkbox.
 
-    **Event-Hub Resource ID**: This value is the Event Hub Namespace Resource ID you recorded when you setup the Event Hub.
+    **Event-Hub Resource ID**: This value is the Event Hub Namespace Resource ID you recorded when you set up the Event Hub.
 
     **Event-Hub name**: If you created an Event Hub inside your Event Hub Namespace, paste the Event Hub name you recorded above.
 

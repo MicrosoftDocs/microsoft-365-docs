@@ -1,6 +1,7 @@
 ---
 title: "Learn about privileged access management"
-description: This article provides an overview about privileged access management in Microsoft 365, including answers to frequently asked questions (FAQs).
+description: This article provides an overview about privileged access management in Microsoft Purview, including answers to frequently asked questions (FAQs).
+keywords: Microsoft 365, Microsoft Purview, compliance, privileged access management
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -24,7 +25,9 @@ ms.custom:
 
 # Learn about privileged access management
 
-Privileged access management allows granular access control over privileged admin tasks in Office 365. It can help protect your organization from breaches that use existing privileged admin accounts with standing access to sensitive data or access to critical configuration settings. Privileged access management requires users to request just-in-time access to complete elevated and privileged tasks through a highly scoped and time-bounded approval workflow. This configuration gives users just-enough-access to perform the task at hand, without risking exposure of sensitive data or critical configuration settings. Enabling privileged access management in Microsoft 365 allows your organization to operate with zero standing privileges and provide a layer of defense against standing administrative access vulnerabilities.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Microsoft Purview Privileged Access Management allows granular access control over privileged admin tasks in Office 365. It can help protect your organization from breaches that use existing privileged admin accounts with standing access to sensitive data or access to critical configuration settings. Privileged access management requires users to request just-in-time access to complete elevated and privileged tasks through a highly scoped and time-bounded approval workflow. This configuration gives users just-enough-access to perform the task at hand, without risking exposure of sensitive data or critical configuration settings. Enabling privileged access management allows your organization to operate with zero standing privileges and provide a layer of defense against standing administrative access vulnerabilities.
 
 For a quick overview of the integrated Customer Lockbox and privileged access management workflow, see this [Customer Lockbox and privileged access management video](https://go.microsoft.com/fwlink/?linkid=2066800).
 
@@ -34,11 +37,11 @@ Privileged access management complements other data and access feature protectio
 
 ![Layered protection in Microsoft 365.](../media/pam-layered-protection.png)
 
-Privileged access management is defined and scoped at the **task** level, while Azure AD Privileged Identity Management applies protection at the **role** level with the ability to execute multiple tasks. Azure AD Privileged Identity Management primarily allows managing accesses for AD roles and role groups, while privileged access management in Microsoft 365 applies only at the task level.
+Privileged access management is defined and scoped at the **task** level, while Azure AD Privileged Identity Management applies protection at the **role** level with the ability to execute multiple tasks. Azure AD Privileged Identity Management primarily allows managing accesses for AD roles and role groups, while Microsoft Purview Privileged Access Management applies only at the task level.
 
 - **Enabling privileged access management while already using Azure AD Privileged Identity Management:** Adding privileged access management provides another granular layer of protection and audit capabilities for privileged access to Microsoft 365 data.
 
-- **Enabling Azure AD Privileged Identity Management while already using privileged access management in Office 365:**  Adding Azure AD Privileged Identity Management to privileged access management can extend privileged access to data outside of Microsoft 365 that's primarily defined by user roles or identity.  
+- **Enabling Azure AD Privileged Identity Management while already using Microsoft Purview Privileged Access Management:**  Adding Azure AD Privileged Identity Management to Microsoft Purview Privileged Access Management can extend privileged access to data outside of Microsoft 365 that's primarily defined by user roles or identity.  
 
 ## Privileged access management architecture and process flow
 

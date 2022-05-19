@@ -23,6 +23,8 @@ description: "Trainable classifiers can recognize various types of content for l
 
 # Learn about trainable classifiers
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Classifying and labeling content so it can be protected and handled properly is the starting place for the information protection discipline. Microsoft 365 has three ways to classify content.
 
 ## Manually
@@ -38,7 +40,7 @@ This category of classification mechanisms includes finding content by:
 - Recognizing an item because it's a variation on a template [(document finger printing)](document-fingerprinting.md).
 - Using the presence of exact strings [exact data match](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types).
 
-Sensitivity and retention labels can then be automatically applied to make the content available for use in [Learn about data loss prevention](dlp-learn-about-dlp.md) and [auto-apply polices for retention labels](apply-retention-labels-automatically.md).
+Sensitivity and retention labels can then be automatically applied to make the content available for use in [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md) and [auto-apply polices for retention labels](apply-retention-labels-automatically.md).
 
 ## Classifiers
 
@@ -89,7 +91,7 @@ Microsoft 365 comes with multiple pre-trained classifiers:
 - **Tax**: Detects Tax relation content such as tax planning, tax forms, tax filing, tax regulations. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, xla files.
 - **Threat**: Detects a specific category of offensive language text items related to threats to commit violence or do physical harm or damage to a person or property. Detects content in .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp, .svg files.
 
-These appear in the **Microsoft 365 compliance center** > **Data classification** > **Trainable classifiers** view with the status of `Ready to use`.
+These appear in the **Microsoft Purview compliance portal** > **Data classification** > **Trainable classifiers** view with the status of `Ready to use`.
 
 ![classifiers-pre-trained-classifiers.](../media/classifiers-ready-to-use-classifiers.png)
 
@@ -98,14 +100,14 @@ These appear in the **Microsoft 365 compliance center** > **Data classification*
 
 Pre-trained classifiers can scan content in these languages:
 
-•	Chinese (Simplified)
-•	English
-•	French
-•	German
-•	Italian
-•	Japanese
-•	Portuguese
-•	Spanish
+- Chinese (Simplified)
+- English
+- French
+- German
+- Italian
+- Japanese
+- Portuguese
+- Spanish
 
 ### Custom classifiers
 
