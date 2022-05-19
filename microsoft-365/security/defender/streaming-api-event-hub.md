@@ -32,9 +32,9 @@ ms.technology: mde
 
 Prior to configuring Microsoft 365 Defender to stream data to Event Hubs, ensure the following prerequisites are fulfilled:
 
-1. Create an Event Hubs (for information, see [Set up Event Hubs](configure-event-hub.md#set-up-event-hub)).
+1. Create an Event Hubs (for information, see [Set up Event Hubs](configure-event-hub.md#set-up-event-hubs)).
 
-2. Creating an Event Hubs Namespace (for information, see [Set up Event Hubs namespace](configure-event-hub.md#set-up-event-hub-namespace)).
+2. Creating an Event Hubs Namespace (for information, see [Set up Event Hubs namespace](configure-event-hub.md#set-up-event-hubs-namespace)).
 
 3. Add permissions to the entity who has the privileges of a **Contributor** so that this entity can export data to the Event Hubs. For more information on adding permissions, see [Add permissions](configure-event-hub.md#add-permissions)
 
