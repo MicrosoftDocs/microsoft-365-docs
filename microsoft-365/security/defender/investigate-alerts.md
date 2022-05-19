@@ -200,7 +200,7 @@ To create the automation, you'll need an API token before you can connect Power 
 
 ### Create an automated flow
 
-Watch this short video to learn how automation works efficiently to create a smooth workflow and how to connect power automate to Defender for Cloud Apps. 
+Watch this short video to learn how automation works efficiently to create a smooth workflow and how to connect Power Automate to Defender for Cloud Apps. 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWFIRn]
 
 ## Next steps
