@@ -63,6 +63,7 @@ Customers who use [Endpoint DLP](endpoint-dlp-learn-about.md) who are eligible f
 
 - **Single-event alert configuration**: Organizations that have an E1, F1, or G1 subscription or an E3 or G3 subscription can create alert policies only where an alert is triggered every time an activity occurs.
 - **Aggregated alert configuration**: To configure aggregate alert policies based on a threshold, you must have either of the following configurations:
+  - An A1, A3 or A5 subscription
   - An E5 or G5 subscription
   - An E1, F1, or G1 subscription or an E3 or G3 subscription that includes one of the following features:
     - Office 365 Advanced Threat Protection Plan 2
