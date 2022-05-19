@@ -1,5 +1,5 @@
 ---
-title: "Compare device compliance policy settings"
+title: "Compare device compliance policy settings in Microsoft 365 Lighthouse"
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -18,11 +18,7 @@ search.appverid: MET150
 description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn how to compare device compliance policy settings."
 ---
 
-
-# Compare device compliance policy settings
-
-> [!NOTE]
-> The features described in this article are in Preview, are subject to change, and are only available to partners who meet the [requirements](m365-lighthouse-requirements.md). If your organization does not have Microsoft 365 Lighthouse, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
+# Compare device compliance policy settings in Microsoft 365 Lighthouse
 
 Microsoft 365 Lighthouse lets you view compliance policies across your tenants in a single view. You can drive security and standardization across your tenants by comparing policies. You can filter views to see settings that have been configured (versus settings that were left not configured), settings that differ in their configurations, or settings that match. You can also search for specific settings to see how they compare across policies.
 
@@ -67,4 +63,4 @@ As you make policy adjustments, make sure you assess your changes against your c
 
 [What is device enrollment in Intune?](/mem/intune/enrollment/device-enrollment) (article)  
 [Use compliance policies to set rules for devices you manage with Intune](/mem/intune/protect/device-compliance-get-started) (article)  
-[Overview of using baselines to deploy standard tenant configurations](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) (article)
+[Overview of using Microsoft 365 Lighthouse baselines to deploy standard tenant configurations](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) (article)

@@ -1,5 +1,5 @@
 ---
-title: "Reset user password"
+title: "Reset a user password in Microsoft 365 Lighthouse"
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -15,13 +15,10 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse                         
 search.appverid: MET150
-description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn how to reset user password."
+description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn how to reset a password for a single user or for multiple risky users across different tenants."
 ---
 
-# Reset user password
-
-> [!NOTE]
-> The features described in this article are in Preview, are subject to change, and are only available to partners who meet the [requirements](m365-lighthouse-requirements.md). If your organization does not have Microsoft 365 Lighthouse, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
+# Reset a user password in Microsoft 365 Lighthouse
 
 Microsoft 365 Lighthouse lets you change or reset user passwords. You can reset the password for a single user or for multiple risky users across different tenants.
 
@@ -66,4 +63,4 @@ Microsoft 365 Lighthouse lets you change or reset user passwords. You can reset 
 ## Related content
 
 [Manage Microsoft 365 user accounts](../enterprise/manage-microsoft-365-accounts.md) (article)\
-[Block user sign-in](m365-lighthouse-block-user-signin.md) (article)
+[Block user sign-in in Microsoft 365 Lighthouse](m365-lighthouse-block-user-signin.md) (article)

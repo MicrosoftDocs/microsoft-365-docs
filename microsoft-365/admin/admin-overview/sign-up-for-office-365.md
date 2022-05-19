@@ -2,8 +2,8 @@
 title: "How to sign up - Admin Help"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: seemg, pablom
 audience: Admin
@@ -16,18 +16,18 @@ ms.collection:
 - TRN_SMB
 - Adm_TOC
 ms.custom:
+- commerce_signup
 - TRN_M365B
 - OKR_SMB_Videos
 - okr_SMB
 - AdminSurgePortfolio
-- commerce_signup
 - AdminTemplateSet
 - adminvideo
 - intro-get-started
 search.appverid:
 - MET150
 ROBOTS: NOINDEX
-description: "Understand what you need to know before you go through the sign-up process for Office 365."
+description: "Understand what you need to know about the latest versions of the Office programs before you go through the sign-up process for Office 365."
 ms.date: 03/17/2021
 ---
 
