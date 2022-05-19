@@ -430,7 +430,7 @@ For this structure, Contoso's plan includes three IB policies:
 2. An IB policy to prevent Research from communicating with Sales and Manufacturing.
 3. An IB policy designed to allow Manufacturing to communicate with HR, Sales, and Marketing only.
 
-For this scenario, it's not necessary to define IB policies for *HR* or *Marketing* as IB policies without a defined policy has an implied allow all communication with all other segments.
+For this scenario, it's not necessary to define IB policies for *HR* or *Marketing* as IB policies without a defined policy have an implied allow all communication with all other segments.
 
 ### Contoso's defined segments
 
