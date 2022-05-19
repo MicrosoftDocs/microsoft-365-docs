@@ -107,7 +107,7 @@
     - name: Remove users
       href: ../admin/add-users/remove-former-employee.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
     - name: Remove data from devices
-      href: remove-company-data.md
+      href: m365bp-remove-company-data.md
     - name: Reset devices to factory settings
       href: m365bp-reset-devices-to-factory-settings.md
 - name: Reference
