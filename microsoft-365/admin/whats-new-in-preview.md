@@ -60,11 +60,11 @@ For more information about Azure AD built-in roles, see [Azure AD built-in roles
 
 **Attribute Assignment Administrator**   Assign custom security attribute keys and values to supported Azure AD objects.
 
-**Attribute Assignment Reader**   Read custom security attribute keys and values for supported Azure AD objects.
+**Attribute Assignment Reader**   Reads custom security attribute keys and values for supported Azure AD objects.
 
 **Attribute Definition Administrator**   Define and manage the definition of custom security attributes.
 
-**Attribute Definition Reader**   Read the definition of custom security attributes.
+**Attribute Definition Reader**   Reads the definition of custom security attributes.
 
 ### Quick Assist
 
