@@ -20,7 +20,7 @@ ms.technology: mdo
 ms.prod: m365-security
 ---
 
-# Make a list of trusted Authenticated Received Chain (ARC) Senders for indirect mailflows
+# Make a list of trusted ARC Senders to trust *legitimate* indirect mailflows
 
 **Applies to**
 
@@ -30,7 +30,7 @@ ms.prod: m365-security
 
 Email authentication mechanisms like [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md), [DMARC](use-dmarc-to-validate-email.md) are used to verify the senders of emails for the *safety* of email recipients, but some legitimate services may make changes to the email between the sender and recipient. **In Microsoft 365 Defender, ARC will help reduce SPF, DKIM, and DMARC delivery failures that happen due to *legitimate* indirect mailflows.**
 
-## ARC is for *legitimate* indirect mailflows
+## Authenticated Received Chain (ARC) for *legitimate* indirect mailflows in Microsoft 365 Defender for Office
 
 Mailing lists and services that filter or forward mails can be a well-known and normal feature of an organization's mail flow. But fowarding an email will violate SPF, and it can also violate DKIM email authentication (by altering the email through processes like adding virus scan headers or removing attachments, for example). Failing either of these email authentication methods can result in failure to pass DMARC.
 
@@ -41,7 +41,7 @@ Planned mailflow interventions from legitimate services is often called *indirec
 > [!NOTE]
 > ***Trusted ARC sealers is an admin-created list of any domain whose processes result in indirect mailflow and who have implemented ARC sealing.*** When an email is routed to Office 365 through and ARC rusted intermediary of the Office 365 tenant, Microsoft validates the ARC signature, and, based on the ARC results, can honor authentication details provided.
 
-## When do you use trusted ARC sealers?
+## When to use trusted ARC sealers?
 
 A list of trusted ARC sealers is only needed where devices and servers intervene in an organization’s email flow and:
 
@@ -52,7 +52,7 @@ By adding a trusted ARC sealer, Office 365 will validate and trust the authentic
 
 **Administrators should add *only legitimate services* as trusted ARC sealers.** This will help messages that must first go through a service to pass email authentication checks, and prevent legitimate messages from being sent to *Junk* due to authentication failures.
 
-## Add a trusted ARC sealer to Microsoft 365 Defender
+## Steps to add a trusted ARC sealer to Microsoft 365 Defender
 
 Trusted ARC sealers in Microsoft 365 Defender portal shows all the ARC sealers acknowledged by and added to your tenant.
 
@@ -100,7 +100,7 @@ header.d=contoso.com;dmarc=fail action=none
 header.from=contoso.com;compauth=pass reason=130
 ``
 
-## PowerShell steps to add and remove a trusted ARC sealer
+## PowerShell steps to add or remove a trusted ARC sealer
 
 **Admins can also set up ARC configurations with Exchange Online Powershell.**
 
@@ -126,4 +126,16 @@ or
 ``
 Get-ArcConfig - Organization {tenant name}
 ``
+
+## Trusted ARC sealer mailflow graphics
+
+These diagrams contrast mailflow operations with and without a trusted ARC sealer, when using any of SPF, DKIM, and DMARC email authentication. In both graphics, there are legitimate services used by the company that must intervene in mailflow, sometimes violating email authentication standards by changing sending IPs, and writing to the email header. **In the first case, the indirect mailflow traffic demonstrates the result *before* admins add a trusted ARC sealer.**
+
+:::image type="content" source="../../media/m365d-indirect-traffic-flow-without-trusted-arc-sealer.PNG" alt-text="In this graphic Contoso publishes SPF, DKIM, and DMARC as part of standard email security. A sender using SPF sends mail from inside contoso.com to fabrikam.com, and this mail passes through a third party service Contoso has hired, and that service modifies the sending IP address in the email header. The mail fails SPF due to the altered IP, and DKIM because the content was modified at a third party, during the DNS check at EOP. DMARC fails because of the SPF and DKIM failures. The message is sent to Junk, Quarantine, or Rejected.":::
+
+Here, you see the same organization **after leveraging the ability to create a trusted ARC sealer.**
+
+:::image type="content" source="../../media/m365d-indirect-traffic-flow-with-trusted-arc-sealer.PNG" alt-text="In the second graphic Contoso company had created a list of trusted ARC sealers. The same user sends a second mail from contoso.com to fabrikam.com. The third party service hired by Contoso modifies the IP address of the sender in the header of the mail. But this time the service has implemented ARC sealing, and because the tenant admin has already added the domain of the third party to trusted ARC sealers, the modification is accepted. SPF fails for the new IP address; DKIM fails because of the content modification; DMARC fails because of the earlier failures; but ARC recognizes the modifications, issues a Pass, and accepts changes. Spoof also receives a pass. The message is sent to Inbox.":::
+
+## Next steps: After you set up ARC for Microsoft 365 Defender for Office
 
