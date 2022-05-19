@@ -2,7 +2,7 @@
 title: View email security reports
 f1.keywords:
   - NOCSH
-ms.author: chris.davis
+ms.author: chrisda
 author: chrisda
 manager: dansimp
 ms.date:
