@@ -354,8 +354,6 @@
           href: security-and-compliance/enable-modern-authentication.md
         - name: Pre-requisites for data protection
           href: /microsoft-365/business-premium/m365bp-pre-requisites-for-data-protection
-        - name: Increase threat protection
-          href: security-and-compliance/increase-threat-protection.md
         - name: Threats detected by Microsoft Defender Antivirus
           href: security-and-compliance/threats-detected-defender-av.md
         - name: Set up compliance features
