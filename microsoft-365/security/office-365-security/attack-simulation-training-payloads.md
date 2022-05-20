@@ -143,7 +143,7 @@ On the **Configure payload** page, it's time to build your payload. Many of the 
       - **Insert name**: The value that's added in the message body is `${userName}`.
       - **Insert email**: The value that's added in the message body is `${emailAddress}`.
 
-      ![The Email message section on the Configure payload page in the payload creation wizard in Attack simulation training in Microsoft Defender for Office 365.](../../media/attack-sim-training-payloads-configure-payload-email-message.png)
+      :::image type="content" source="../../media/attack-sim-training-payloads-configure-payload-email-message.png" alt-text="The Email message section on the Configure payload page in the payload creation wizard in Attack simulation training in Microsoft Defender for Office 365" lightbox="../../media/attack-sim-training-payloads-configure-payload-email-message.png":::
 
       **Phishing link** control: This control is available only if you selected **Credential harvest**, **Link in attachment**, or **Drive-by URL** on the **Select technique** page. Use this control to insert the URL that you previously selected in the **Phishing link** section.
 
@@ -200,7 +200,7 @@ On the **Add indicators** page, click **Add indicator**. On the flyout that appe
 
   If you select the email message subject or the message body as the location for the indicator, a **Select text** button is available. Click this button to select the text in the message subject or message body where you want the indicator to appear. When you're finished, click **Select**.
 
-  ![Selected text location in the message body to add to an indicator in the payload creation wizard in Attack simulation training.](../../media/attack-sim-training-payloads-add-indicators-select-location.png)
+  :::image type="content" source="../../media/attack-sim-training-payloads-add-indicators-select-location.png" alt-text="The Selected text location in the message body to add to an indicator in the payload creation wizard in Attack simulation training" lightbox="../../media/attack-sim-training-payloads-add-indicators-select-location.png":::
 
   - **Indicator description**: You can accept the default description for the indicator, or you can customize it.
 
@@ -228,7 +228,7 @@ On the main **Review payload** page, you can select **Edit** in each section to 
 
 When you're finished, click **Submit**. On the confirmation page that appears, click **Done**.
 
-![Review payload page in Attack simulation training in the Microsoft 365 Defender portal.](../../media/attack-sim-training-payloads-review-payload.png)
+:::image type="content" source="../../media/attack-sim-training-payloads-review-payload.png" alt-text="The Review payload page in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-payloads-review-payload.png":::
 
 > [!IMPORTANT]
 > Payloads that you created will have the value **Tenant** for the **Source** property. When you create simulations and select payloads, make sure that you don't filter out the **Source** value **Tenant**.

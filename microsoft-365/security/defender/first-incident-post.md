@@ -42,7 +42,7 @@ By mapping alerts to this industry framework, you can:
 - Identify skill gaps in attack method awareness.
 - Create a Power Automate Playbook for faster remediation.
 
-Post-incident review activity can also result in fine-tuning your security configuration and security team's processes to streamline your organization’s response capabilities.
+Post-incident review activity can also result in fine-tuning your security configuration and security team's processes to streamline your organization's response capabilities.
 
 ## Next step
 

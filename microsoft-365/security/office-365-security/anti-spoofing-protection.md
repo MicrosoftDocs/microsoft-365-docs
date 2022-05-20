@@ -44,7 +44,7 @@ The following anti-spoofing technologies are available in EOP:
 
   EOP analyzes and blocks messages that can't be authenticated by the combination of standard email authentication methods and sender reputation techniques.
 
-  ![EOP anti-spoofing checks.](../../media/eop-anti-spoofing-protection.png)
+  :::image type="content" source="../../media/eop-anti-spoofing-protection.png" alt-text="The EOP anti-spoofing checks" lightbox="../../media/eop-anti-spoofing-protection.png":::
 
 - **Spoof intelligence insight**: Review spoofed messages from senders in internal and external domains during the last 7 days, and allow or block those senders. For more information, see [Spoof intelligence insight in EOP](learn-about-spoof-intelligence.md).
 
@@ -52,7 +52,7 @@ The following anti-spoofing technologies are available in EOP:
 
 - **Anti-phishing policies**: In EOP and Microsoft Defender for Office 365, anti-phishing policies contain the following anti-spoofing settings:
   - Turn spoof intelligence on or off.
-  - Turn unauthenticated sender identification in Outlook on or off.
+  - Turn unauthenticated sender indicators in Outlook on or off.
   - Specify the action for blocked spoofed senders.
 
   For more information, see [Spoof settings in anti-phishing policies](set-up-anti-phishing-policies.md#spoof-settings).

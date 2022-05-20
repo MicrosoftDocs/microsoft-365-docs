@@ -70,7 +70,7 @@ Open a terminal or SSH into the relevant machine and run the following commands:
 
 Example:
 
-![Image of command line example.](images/4ca188f6c457e335abe3c9ad3eddda26.png)
+:::image type="content" source="images/4ca188f6c457e335abe3c9ad3eddda26.png" alt-text="The  command line example" lightbox="images/4ca188f6c457e335abe3c9ad3eddda26.png":::
 
 Additional syntax help:
 
