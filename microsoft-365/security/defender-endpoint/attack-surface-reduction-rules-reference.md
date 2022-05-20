@@ -327,7 +327,7 @@ Dependencies: MDAV, Cloud Protection
 This rule detects suspicious properties within an obfuscated script.
   
 > [!IMPORTANT]
-> The Powershell scripts have been temporarily excluded from the "Block execution of potentially obfuscated scripts" rule  due to the large scale FP issues faced in the past.
+> PowerShell scripts have been temporarily excluded from the "Block execution of potentially obfuscated scripts" rule due to the large-scale FP issues faced in the past.
 
 Script obfuscation is a common technique that both malware authors and legitimate applications use to hide intellectual property or decrease script loading times. Malware authors also use obfuscation to make malicious code harder to read, which prevents close scrutiny by humans and security software.
 
