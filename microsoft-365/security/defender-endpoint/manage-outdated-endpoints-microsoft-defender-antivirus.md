@@ -98,9 +98,11 @@ See the following article for more information and allowed parameters:
 
 - [Windows Defender WMIv2 APIs](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
-## Set the number of days before protection is reported as out-of-date
+## Set the number of days before protection is reported as out of date
 
-You can also specify the number of days after which Microsoft Defender Antivirus protection is considered old or out-of-date. After the specified number of days, the client will report itself as out-of-date, and show an error to the user of the PC. It may also cause Microsoft Defender Antivirus to attempt to download an update from other sources (based on the defined [fallback source order](manage-protection-updates-microsoft-defender-antivirus.md#fallback-order)), such as when using MMPC as a secondary source after setting WSUS or Microsoft Update as the first source.
+You can also specify the number of days after which Microsoft Defender Antivirus protection is considered old or out of date. After the specified number of days, the client will report itself as "out of date" and will show an error to the endpoint user. When an endpoint is considered out of date, Microsoft Defender Antivirus might attempt to download an update from other sources (based on the defined [fallback source order](manage-protection-updates-microsoft-defender-antivirus.md#fallback-order)).
+
+You can use Group Policy to specify the number of days after which endpoint protection is considered to be out of date.
 
 ### Use Group Policy to specify the number of days before protection is considered out-of-date
 
@@ -126,13 +128,23 @@ You can set the number of consecutive scheduled scans that can be missed before 
 
 The process for enabling this feature is:
 
-1. Set up at least one scheduled scan (see the [Schedule scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md) article).
+1. Set up at least one scheduled scan (see the [Scheduled scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md) article).
 
 2. Enable the catch-up scan feature.
 
 3. Define the number of scans that can be skipped before a catch-up scan occurs.
 
-This feature can be enabled for both full and quick scans.
+This feature can be enabled for both full and quick scans. 
+
+> [!TIP]
+> We recommend using quick scans for most situations. To learn more, see [Quick scan, full scan, and custom scan](schedule-antivirus-scans.md#quick-scan-full-scan-and-custom-scan). 
+
+You can use one of several methods to set up catch-up scans:
+
+- [Group Policy](#use-group-policy-to-enable-and-configure-the-catch-up-scan-feature)
+- [Use PowerShell cmdlets to configure catch-up scans](#use-powershell-cmdlets-to-configure-catch-up-scans)
+- [Windows Management Instruction (WMI)](#use-windows-management-instruction-wmi-to-configure-catch-up-scans)
+- [Configuration Manager](#use-configuration-manager-to-configure-catch-up-scans)
 
 ### Use Group Policy to enable and configure the catch-up scan feature
 
