@@ -71,7 +71,7 @@ You can use one of several methods to set up catch-up protection updates:
 
 5. Double-click the **Define the number of days after which a catch-up security intelligence update is required** setting and set the option to **Enabled**. Enter the number of days after which you want Microsoft Defender Antivirus to check for and download the latest protection update.
 
-6. Click **OK**.
+6. Select **OK**.
 
 ### Use PowerShell cmdlets to configure catch-up protection updates
 
@@ -81,7 +81,10 @@ Use the following cmdlets:
 Set-MpPreference -SignatureUpdateCatchupInterval
 ```
 
-See [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md)  and [Defender Antivirus cmdlets](/powershell/module/defender/) for more information on how to use PowerShell with Microsoft Defender Antivirus.
+For more information about using PowerShell with Microsoft Defender Antivirus, see the following articles:
+
+- [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md)
+- [Defender Antivirus cmdlets](/powershell/module/defender/) for more information on how to use PowerShell with Microsoft Defender Antivirus
 
 ### Use Windows Management Instruction (WMI) to configure catch-up protection updates
 
