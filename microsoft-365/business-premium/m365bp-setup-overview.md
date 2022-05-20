@@ -34,9 +34,9 @@ For this first mission, set up your initial security defenses right away. Sign i
 Your objectives are to:
 
 - Sign up and sign in to Microsoft 365 Business Premium
-- Set up your Microsoft 365 Business Premium environment
+- [Set up your Microsoft 365 Business Premium environment](m365bp-setup.md)
 
-Once you've achieved these objectives, you can move on to the [next mission](m365bp-security-overview.md).
+Once you've achieved these objectives, quickly [bump up your security protections](m365bp-security-overview.md).
 
 :::image type="content" source="media/m365bp-signin-setup.jpg" alt-text="Business Premium setup":::
 

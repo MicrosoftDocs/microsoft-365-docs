@@ -18,7 +18,7 @@
         items:
         - name: Guided setup
           href: ../admin/setup/setup-business-basic?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
-        - name: Add users
+        - name: Add users and licenses
           href: ../admin/add-users/add-users.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
         - name: Work with a Microsoft Partner
           href: m365bp-ms-partner.md
