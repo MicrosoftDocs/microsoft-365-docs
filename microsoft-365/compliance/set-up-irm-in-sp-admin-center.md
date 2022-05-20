@@ -24,6 +24,8 @@ ms.custom:
 
 # Set up Information Rights Management (IRM) in SharePoint admin center
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Within SharePoint Online, IRM protection is applied to files at the list and library level. Before your organization can use IRM protection, you must first set up Rights Management. IRM relies on the Azure Rights Management service from Azure Information Protection to encrypt and assign usage restrictions. Some Microsoft 365 plans include Azure Rights Management, but not all. To learn more, read [How Office applications and services support Azure Rights Management](/azure/information-protection/understand-explore/office-apps-services-support).
   
 ## Turn on IRM service using SharePoint admin center

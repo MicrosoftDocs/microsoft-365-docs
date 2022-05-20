@@ -1,5 +1,5 @@
 ---
-title: "Overview of using baselines to deploy standard tenant configurations"
+title: "Overview of using Microsoft 365 Lighthouse baselines to deploy standard tenant configurations"
 f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
@@ -18,19 +18,19 @@ search.appverid: MET150
 description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn about using baselines to deploy standard tenant configurations."
 ---
 
-# Overview of using baselines to deploy standard tenant configurations 
+# Overview of using Microsoft 365 Lighthouse baselines to deploy standard tenant configurations 
 
-Microsoft 365 Lighthouse baselines provide a repeatable and scalable way for you to manage Microsoft 365 security settings across multiple customer tenants. Baselines also help monitor core security policies and tenant compliance standards with configurations that secure users, devices, and data.
+Microsoft 365 Lighthouse baselines provide a repeatable and scalable way for you to manage Microsoft 365 security settings across multiple customer tenants. Baselines provide standard tenant configurations that deploy core security policies and compliance standards that keep your tenants' users, devices, and data secure.
 
-Designed to help Managed Service Providers (MSPs) enable customer adoption of security, Lighthouse provides a standard set of baseline parameters and pre-defined configurations for Microsoft 365 services. These security configurations help measure your tenants' Microsoft 365 security and compliance progress.
+You can view the default baseline and its deployment steps from within Lighthouse. To apply a baseline to a tenant, select **Tenants** in the left navigation pane, and then select a tenant. Next, go to the **Deployment plans** tab to begin the deployment.
 
-You can view the default baseline and its deployment steps from within Lighthouse. To apply a baseline to a tenant, select **Tenants** in the left navigation pane, and then select a tenant. Next, go to the **Deployment plans** tab and implement the baseline.
+## Lighthouse baseline
 
-## Default baseline security templates
+Lighthouse baseline configurations are designed to make sure all managed tenants are secure and compliant. Select **Baselines** from the left navigation pane to view the default baseline that applies to all tenants.  To view the deployment steps included in the default baseline, select **View baseline** to open the default baseline page. Select any of the deployment steps to view deployment details and user impact.
 
-Lighthouse default baseline configurations for security workloads are designed to make sure all managed tenants are secure and compliant.
+:::image type="content" source="../media/m365-lighthouse-deploy-baselines/default-baseline-page.png" alt-text="Screenshot of the Default baseline page.":::
 
-The baseline configurations in the following table come standard with the Lighthouse default baseline.<br><br>
+### Default Lighthouse configurations
 
 | Baseline configuration | Description |
 |--|--|
@@ -42,6 +42,41 @@ The baseline configurations in the following table come standard with the Lighth
 | Configure Microsoft Defender Firewall for Windows 10 and later | A firewall policy to help secure devices by preventing unwanted and unauthorized network traffic. For more information about this baseline, see [Best practices for configuring Windows Defender Firewall](/windows/security/threat-protection/windows-firewall/best-practices-configuring).  |
 | Configure a device compliance policy for Windows 10 and later | A Windows device policy with pre-configured settings to meet basic compliance requirements. For more information about this baseline, see [Conditional Access: Require compliant or hybrid Azure AD joined device](/azure/active-directory/conditional-access/howto-conditional-access-policy-compliant-device). |
 
+## Deployment Plans
+
+Each active tenant has a deployment plan that includes the deployment steps from the Microsoft 365 Lighthouse baseline. To access a tenant's deployment plan, select an active tenant from the list on the **Tenants** page, and then select the **Deployment Plan** tab.
+
+:::image type="content" source="../media/m365-lighthouse-deploy-baselines/deployment-plan-tab.png" alt-text="Screenshot of the Deployment Plan tab.":::
+
+The Deployment Plan tab includes the following information:
+
+
+|Column  |Description  |
+|---------|---------|
+|Deployment step     |  Description of deployment step.       |
+|Status     |The status of the deployment step.         |
+|Baseline     |The baseline from which the deployment step is derived.         |
+|Category     | Whether the deployment step is associated with managing Devices, Identity, or Data.        |
+|Last updated    | The date at which the deployment step was last updated.        |
+
+
+The Deployment Plan tab also includes the following options:
+
+- **Export:** Select to export deployment step data to an Excel comma-separated values (.csv) file.
+- **Refresh:** Select to retrieve the most current deployment step data.
+- **Search:** Enter keywords to quickly locate a specific deployment step in the list.
+
+## Deployment steps and processes
+
+Each tenant's deployment plan includes the deployment steps from the Microsoft 365 Lighthouse baseline. Each deployment step includes one or more processes that need to be completed. When a new tenant becomes active, you must complete deployment activities associated with the deployment steps and processes.
+
+For each deployment step, you can take the following actions:
+
+|Action  |Description  |
+|---------|---------|
+| Share    |  Enables the contents of the Deployment Step to be shared through a link or by email.    |
+| Review and deploy    |  Enables the user to: <ul><li>When supported, compare the configuration settings in the deployment step with settings in any existing policies without deploying the settings to the tenant.<br>The following deployment steps support comparison:</br><ul><li>Configure a device compliance policy for Windows 10 and later</li><li>Require MFA for end-users</li><li>Require MFA for admins</li><li>Block legacy authentication</li></ul></li> <li>Deploy the configuration settings to the tenant.</li></ul>**Note:** Steps that don't support the ability to compare without deploying the settings to the tenant will enable you to review the configuration settings and deploy them.|
+| Update action plan status    |  Enables the user to report the status of their action plan for the deployment step.      |
 
 ## Related content
 

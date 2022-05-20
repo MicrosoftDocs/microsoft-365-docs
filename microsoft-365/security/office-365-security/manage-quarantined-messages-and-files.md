@@ -41,6 +41,9 @@ Admins in organizations with Microsoft Defender for Office 365 can also manage f
 
 You view and manage quarantined messages in the Microsoft 365 Defender portal or in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes).
 
+Watch this short video to learn how to manage quarantined messages as an administrator. 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGGPF]
+
 ## What do you need to know before you begin?
 
 - To open the Microsoft 365 Defender portal, go to <https://security.microsoft.com>. To go directly to the **Quarantine** page, use <https://security.microsoft.com/quarantine>.
@@ -137,7 +140,7 @@ After you find a specific quarantined message, select the message to view detail
 
 When you select quarantined message from the list, the following information is available in the details flyout that appears.
 
-![The details flyout of a quarantined message.](../../media/quarantine-message-details-flyout.png)
+:::image type="content" source="../../media/quarantine-message-details-flyout.png" alt-text="The details flyout of a quarantined message" lightbox="../../media/quarantine-message-details-flyout.png":::
 
 - **Message ID**: The globally unique identifier for the message. Available in the **Message-ID** header field in the message header.
 - **Sender address**
@@ -158,13 +161,13 @@ To take action on the message, see the next section.
 > [!NOTE]
 > To remain in the details flyout, but change the quarantined message that you're looking at, use the up and down arrows at the top of the flyout.
 >
-> ![The up and down arrows in the details flyout of a quarantined message.](../../media/quarantine-message-details-flyout-up-down-arrows.png)
+> :::image type="content" source="../../media/quarantine-message-details-flyout-up-down-arrows.png" alt-text="The up and down arrows in the details flyout of a quarantined message" lightbox="../../media/quarantine-message-details-flyout-up-down-arrows.png":::
 
 ### Take action on quarantined email
 
 After you select a quarantined message from the list, the following actions are available in the details flyout:
 
-![Available actions in the details flyout of a quarantined message.](../../media/quarantine-message-details-flyout-actions.png)
+:::image type="content" source="../../media/quarantine-message-details-flyout-actions.png" alt-text="The Available actions in the details flyout of a quarantined message" lightbox="../../media/quarantine-message-details-flyout-actions.png":::
 
 - ![Release email icon.](../../media/m365-cc-sc-check-mark-icon.png) **Release email**<sup>\*</sup>: In the flyout pane that appears, configure the following options:
   - **Add sender to your organization's allow list**: Select this option to prevent messages from the sender from being quarantined.
@@ -230,7 +233,7 @@ If you don't release or remove the message, it will be deleted after the default
 > [!NOTE]
 > On a mobile device, the description text isn't available on the action icons.
 >
-> ![Details of a quarantined message with available actions highlighted.](../../media/quarantine-message-details-flyout-mobile-actions.png)
+> :::image type="content" source="../../media/quarantine-message-details-flyout-mobile-actions.png" alt-text="The details of a quarantined message with available actions being highlighted" lightbox="../../media/quarantine-message-details-flyout-mobile-actions.png":::
 >
 > The icons in order and their corresponding descriptions are summarized in the following table:
 >
@@ -249,7 +252,7 @@ If you don't release or remove the message, it will be deleted after the default
 
 When you select multiple quarantined messages in the list (up to 100) by clicking in the blank area to the left of the first column, the **Bulk actions** drop down list appears where you can take the following actions:
 
-![Bulk actions drop down list for messages in quarantine.](../../media/quarantine-message-bulk-actions.png)
+:::image type="content" source="../../media/quarantine-message-bulk-actions.png" alt-text="The Bulk actions drop-down list for messages in quarantine" lightbox="../../media/quarantine-message-bulk-actions.png":::
 
 - ![Release email icon.](../../media/m365-cc-sc-check-mark-icon.png) **Release messages**: Releases messages to all recipients. In the flyout that appears, you can choose the following options, which are the same as when you release a single message:
   - **Add sender to your organization's allow list**
@@ -308,7 +311,7 @@ After you find a specific quarantined file, select the file to view details abou
 
 When you select a quarantined file from the list, the following information is available in the details flyout that opens:
 
-![The details flyout of a quarantined file.](../../media/quarantine-file-details-flyout.png)
+:::image type="content" source="../../media/quarantine-file-details-flyout.png" alt-text="The details flyout of a quarantined file" lightbox="../../media/quarantine-file-details-flyout.png":::
 
 - **File Name**
 - **File URL**: URL that defines the location of the file (for example, in SharePoint Online).
@@ -329,13 +332,13 @@ To take action on the file, see the next section.
 > [!NOTE]
 > To remain in the details flyout, but change the quarantined file that you're looking at, use the up and down arrows at the top of the flyout.
 >
-> ![The up and down arrows in the details flyout of a quarantined file.](../../media/quarantine-file-details-flyout-up-down-arrows.png)
+> :::image type="content" source="../../media/quarantine-file-details-flyout-up-down-arrows.png" alt-text="The up and down arrows in the details flyout of quarantined files" lightbox="../../media/quarantine-file-details-flyout-up-down-arrows.png":::
 
 ### Take action on quarantined files
 
 After you select a quarantined file from the list, the following actions are available in the details flyout:
 
-![Available actions in the details flyout of a quarantined file.](../../media/quarantine-file-details-flyout-actions.png)
+:::image type="content" source="../../media/quarantine-file-details-flyout-actions.png" alt-text="The actions in the details flyout of a quarantined file" lightbox="../../media/quarantine-file-details-flyout-actions.png":::
 
 - ![Release file icon.](../../media/m365-cc-sc-check-mark-icon.png) **Release file**<sup>\*</sup>: In the flyout pane that appears, turn on or turn off **Report files to Microsoft for analysis**, and then click **Release**.
 - ![Release file icon.](../../media/m365-cc-sc-check-mark-icon.png)
@@ -351,7 +354,7 @@ If you don't release or remove the file, it will be deleted after the default qu
 
 When you select multiple quarantined files in the list (up to 100) by clicking in the blank area to the left of the **Subject** column, the **Bulk actions** drop down list appears where you can take the following actions:
 
-![Bulk actions drop down list for files in quarantine.](../../media/quarantine-file-bulk-actions.png)
+:::image type="content" source="../../media/quarantine-file-bulk-actions.png" alt-text="The Bulk actions drop down list for files in quarantine" lightbox="../../media/quarantine-file-bulk-actions.png":::
 
 - ![Release file icon.](../../media/m365-cc-sc-check-mark-icon.png) **Release file**: In the flyout pane that appears, turn on or turn off **Report files to Microsoft for analysis**, and then click **Release**.
 - ![Delete from quarantine icon.](../../media/m365-cc-sc-delete-icon.png) **Delete from quarantine**: After you click **Yes** in the warning that appears, the file is immediately deleted.

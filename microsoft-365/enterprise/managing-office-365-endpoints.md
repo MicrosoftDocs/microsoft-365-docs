@@ -2,7 +2,8 @@
 title: "Managing Office 365 endpoints"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
+ms.date: 05/18/2022
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -42,6 +43,9 @@ Microsoft is working with SD-WAN providers to enable automated configuration. Fo
 Use PAC or WPAD files to manage network requests that are associated with Office 365 but don't have an IP address. Typical network requests that are sent through a proxy or perimeter device increase latency. While SSL Break and Inspect creates the largest latency, other services such as proxy authentication and reputation lookup can cause poor performance and a bad user experience. Additionally, these perimeter network devices need enough capacity to process all of the network connection requests. We recommend bypassing your proxy or inspection devices for direct Office 365 network requests.
   
 [PowerShell Gallery Get-PacFile](https://www.powershellgallery.com/packages/Get-PacFile) is a PowerShell script that reads the latest network endpoints from the Office 365 IP Address and URL Web service and creates a sample PAC file. You can modify the script so that it integrates with your existing PAC file management.
+
+> [!NOTE]
+> For more information about the security and performance considerations of direct connectivity to Office 365 endpoints, see [Office 365 Network Connectivity Principles](microsoft-365-network-connectivity-principles.md).
 
 ![Connecting to Office 365 through firewalls and proxies.](../media/34d402f3-f502-42a0-8156-24a7c4273fa5.png)
 
@@ -146,7 +150,7 @@ See an IP associated with Office 365 that you want more information on?
 <a name="bkmk_cname"> </a>
 ### Some Office 365 URLs point to CNAME records instead of A records in the DNS. What do I have to do with the CNAME records?
 
-Client computers need a DNS A or AAAA record t)hat includes one or more IP address(es) to connect to a cloud service. Some URLs included in Office 365 show CNAME records instead of A or AAAA records. These CNAME records are intermediary and there may be several in a chain. They will always eventually resolve to an A or AAAA record for an IP Address. For example, consider the following series of DNS records, which ultimately resolves to the IP address _IP_1_:
+Client computers need a DNS A or AAAA record that includes one or more IP address(es) to connect to a cloud service. Some URLs included in Office 365 show CNAME records instead of A or AAAA records. These CNAME records are intermediary and there may be several in a chain. They will always eventually resolve to an A or AAAA record for an IP Address. For example, consider the following series of DNS records, which ultimately resolves to the IP address _IP_1_:
 
 ```console
 serviceA.office.com -> CNAME: serviceA.domainA.com -> CNAME: serviceA.domainB.com -> A: IP_1
@@ -207,7 +211,7 @@ The tenant restrictions feature now supports blocking the use of all Microsoft c
 <a name="bkmk_IPOnlyFirewall"> </a>
 ### My firewall requires IP Addresses and cannot process URLs. How do I configure it for Office 365?
 
-Office 365 does not provide IP addresses of all required network endpoints. Some are provided as URLs only and are categorized as default. URLs in the default category that are required should be allowed through a proxy server. If you don't have a proxy server, look at how you have configured web requests for URLs that users type into the address bar of a web browser; the user doesn’t provide an IP address either. The Office 365 default category URLs that do not provide IP addresses should be configured in the same way.
+Office 365 does not provide IP addresses of all required network endpoints. Some are provided as URLs only and are categorized as default. URLs in the default category that are required should be allowed through a proxy server. If you don't have a proxy server, look at how you have configured web requests for URLs that users type into the address bar of a web browser; the user doesn't provide an IP address either. The Office 365 default category URLs that do not provide IP addresses should be configured in the same way.
 
 ## Related topics
 

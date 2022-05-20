@@ -2,13 +2,13 @@
 title: "Protect your administrator accounts in Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
-ms.author: sharik
-author: SKjerland
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection: 
 - Adm_O365
 - M365-subscription-management 
@@ -31,7 +31,7 @@ Because admin accounts come with elevated privileges, they're valuable targets f
 - How to set up an additional administrator account for emergencies.
 - How to protect these accounts.
 
-When you sign up for Microsoft 365 and enter your information, you automatically become the Global admin. A Global admin has the ultimate control of user accounts and all the other settings in the Microsoft admin center, but there are many different kinds of admin accounts with varying degrees of access. See [about admin roles](/office365/admin/add-users/about-admin-roles) for information about the different access levels for each kind of admin role.
+When you sign up for Microsoft 365 and enter your information, you automatically become the Global Administrator (also referred to as the Global admin). A Global admin has the ultimate control of user accounts and all the other settings in the Microsoft admin center ([https://admin.microsoft.com](https://admin.microsoft.com)), but there are many different kinds of admin accounts with varying degrees of access. See [about admin roles](/office365/admin/add-users/about-admin-roles) for information about the different access levels for each kind of admin role.
 
 ## Create additional admin accounts
 
@@ -41,20 +41,21 @@ You'll want to set up at least one additional Global admin account to give admin
 
 To create additional admin accounts:
 
- 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">admin center</a> and then choose **Users** \> **Active users** in the left nav.
+ 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">Microsoft 365 admin center</a> and then choose **Users** \> **Active users** in the left nav.
 
     ![Choose Users and then Active users in the left nav.](../media/Activeusers.png)
 
- 2. On the **Active users** page, select **Add a user** at the top of the page, and on the **New user** panel, enter the name and other information.
- 3. Expand the **Roles** section, and choose **Global administrator** to give this user global admin access. You can also choose **Customized administrator** and choose any of the roles that are displayed.
+ 1. On the **Active users** page, select **Add a user** at the top of the page. 
 
-    Enter an alternate email in the **Alternative email address** text box. You can use this address to recover your password information if you get locked out. For Global admins, a billing statement will also be sent to this address.
+ 1. In the **Add a user** panel, enter basic information such as name and username information.
 
-    ![Choose the administrator role.](../media/adminroles.png)
+ 1. Enter and set up **Product licenses** information.
 
- 4. In the **Product licenses** section, move the selector for **Microsoft 365 Business** to **Off** and the **Create user without product license** to **On**.
+ 1. In **Optional settings**, define the role of the user, including adding Admin center access if appropriate.
 
-    ![Choose the product license.](../media/productlicense.png)
+    :::image type="content" source="media/m365bp-global-admin.png" alt-text="Define new user roles.":::
+
+ 1. Finish and review your settings and select **Finish adding** to confirm the details.
 
 ## Create an emergency admin account
 
@@ -62,20 +63,27 @@ You should also create a backup account that isn't set up with multi-factor auth
 
 ## Create a user account for yourself
 
-Use your user account to participate in collaboration with your organization, including checking mail. This means your admin credentials might be similar to  *Alice.Chavez<span></span>@Contoso.org* and your regular user account might be similar to *Alice<span></span>@Contoso.com*.
+Use your user account to participate in collaboration with your organization, including checking mail. This means your admin credentials might be similar to  *Alice.Chavez<span></span>@Contoso.org*, for example, and your regular user account might be similar to *Alice<span></span>@Contoso.com*.
 
 To create a new user account:
 
-1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">admin center</a> and then choose **Users** \> **Active users** in the left nav.
-2. On the **Active users** page, select **Add a user** at the top of the page, and on the **New user** panel, enter the name and other information.
-3. Expand the **Roles** section, and choose **User (no administrative access)**.
-4. In the **Product licenses** section, move the selector for **Microsoft 365 Business** to **On**.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">Microsoft 365 admin center</a> and then choose **Users** \> **Active users** in the left nav.
 
-## Turn on security defaults
+1. On the **Active users** page, select **Add a user** at the top of the page, and on the **Add a user** panel, enter the name and other information.
 
-Security defaults help protect your organization from identity-related attacks by providing preconfigured security settings that Microsoft manages on behalf of your organization. These settings include enabling multi-factor authentication (MFA) for all admins and user accounts. For more information about security defaults and to learn how to enable them on, see [Turn on security defaults](m365-campaigns-conditional-access.md).
+1. In the **Product Licenses** section, select the check box for **Microsoft 365 Business Premium (no administrative access)**.
+
+1. In the **Optional settings** section, leave the default radio button selected for **User (no admin center access)**.
+
+1. Finish and review your settings and select **Finish adding** to confirm the details.
 
 ## Additional recommendations
 
 - Before using admin accounts, close out all unrelated browser sessions and apps, including personal email accounts. You can also use in private, or incognito browser windows.
+
 - After completing admin tasks, be sure to sign out of the browser session.
+
+## Next objective
+
+Take the steps to [turn on security defaults](m365bp-conditional-access.md).
+
