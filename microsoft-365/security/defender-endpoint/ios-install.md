@@ -147,7 +147,7 @@ This step simplifies the onboarding process by setting up the VPN profile. For a
     - VPN identifier = com.microsoft.scmx
     - In the key-value pairs, enter the key **AutoOnboard** and set the value to **True**.
     - Type of Automatic VPN = On-demand VPN
-    - Click **Add** for **On Demand Rules** and select **I want to do the following = Connec VPN**, **I want to restrict to = All domains**.
+    - Select **Add** for **On Demand Rules** and select **I want to do the following = Connect VPN**, **I want to restrict to = All domains**.
 
     :::image type="content" source="images/ios-deploy-8.png" alt-text="The VPN profile Configuration settings tab" lightbox="images/ios-deploy-8.png":::
 
