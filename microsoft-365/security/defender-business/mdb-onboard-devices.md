@@ -72,7 +72,7 @@ If you prefer to use Group Policy to onboard Windows clients, follow the guidanc
 
 ### Microsoft Intune for Windows 10 and 11
 
-If your subscription includes Intune, you can onboard Windows clients and other devices in the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). For example, if you have [Microsoft 365 Business Premium](../../business/index.yml), you've Intune as part of your subscription.  
+If your subscription includes Intune, you can onboard Windows clients and other devices in the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). For example, if you have [Microsoft 365 Business Premium](../../business/index.yml), you already have Intune as part of your subscription.  
 
 There are several methods available for enrolling devices in Intune. We recommend starting with one of the following methods:
 
@@ -181,7 +181,7 @@ When you run the local script on a macOS device, it creates a trust with Azure A
 
 ### Microsoft Intune for macOS
 
-If your subscription includes Microsoft Intune, you can onboard macOS devices in the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). For example, if you have [Microsoft 365 Business Premium](../../business/index.yml), you've Intune as part of your subscription.  
+If your subscription includes Microsoft Intune, you can onboard macOS devices in the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). For example, if you have [Microsoft 365 Business Premium](../../business/index.yml), you already have Intune as part of your subscription.  
 
 There are several methods available for enrolling devices in Intune. We recommend starting with one of the following methods:
 
@@ -330,7 +330,7 @@ To view the list of devices that are onboarded to Defender for Business, in the 
 
 ## Mobile devices
 
-You'll need Microsoft Intune to onboard mobile devices, such as Android and iOS/iPadOS devices. If you have [Microsoft 365 Business Premium](../../business/index.yml), you've Intune. 
+You'll need Microsoft Intune to onboard mobile devices, such as Android and iOS/iPadOS devices. If you have [Microsoft 365 Business Premium](../../business/index.yml), you already have Intune. 
 
 See the following resources to get help enrolling these devices into Intune:
 
