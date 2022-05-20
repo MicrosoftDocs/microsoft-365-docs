@@ -126,6 +126,16 @@ Currently, there are four error codes for DANE when sending emails with Exchange
 |5.7.323|tlsa-invalid: The domain failed DANE validation.|
 |5.7.324|dnssec-invalid: Destination domain returned invalid DNSSEC records.|
 
+> [!NOTE]
+> Currently, when a domain signals that it supports DNSSEC but fails DNSSEC checks, Exchange Online does not generate the 4/5.7.324 dnssec-invalid error. It generates a generic DNS error:
+> 
+> `4/5.4.312 DNS query failed`
+> 
+> We are actively working to remedy this known limitation. If you recieve this error statement,
+navigate to the Microsoft Remote Connectivity Analyzer and perform the DANE validation test against
+the domain that generated the 4/5.4.312 error. The results will show if it is a DNSSEC issue
+or a different DNS issue.
+
 ### Troubleshooting 5.7.321 starttls-not-supported
 
 This usually indicates an issue with the destination mail server. After receiving the message:
@@ -187,6 +197,16 @@ When troubleshooting, the below error codes may be generated:
 |4/5.7.322|certificate-expired: Destination mail server's certificate has expired.|
 |4/5.7.323|tlsa-invalid: The domain failed DANE validation.|
 |4/5.7.324|dnssec-invalid: Destination domain returned invalid DNSSEC records.|
+
+> [!NOTE]
+> Currently, when a domain signals that it supports DNSSEC but fails DNSSEC checks, Exchange Online does not generate the 4/5.7.324 dnssec-invalid error. It generates a generic DNS error:
+> 
+> `4/5.4.312 DNS query failed`
+> 
+> We are actively working to remedy this known limitation. If you recieve this error statement,
+navigate to the Microsoft Remote Connectivity Analyzer and perform the DANE validation test against
+the domain that generated the 4/5.4.312 error. The results will show if it is a DNSSEC issue
+or a different DNS issue.
 
 ### Troubleshooting 5.7.321 starttls-not-supported
 

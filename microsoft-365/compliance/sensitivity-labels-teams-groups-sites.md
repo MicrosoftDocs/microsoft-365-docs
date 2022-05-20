@@ -22,9 +22,9 @@ description: "Use sensitivity labels to protect content in SharePoint and Micros
 
 # Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 groups, and SharePoint sites
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 In addition to using [sensitivity labels](sensitivity-labels.md) to classify and protect documents and emails, you can also use sensitivity labels to protect content in the following containers: Microsoft Teams sites, Microsoft 365 groups ([formerly Office 365 groups](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)), and SharePoint sites. For this container-level classification and protection, use the following label settings:
 
@@ -42,9 +42,6 @@ In addition to using [sensitivity labels](sensitivity-labels.md) to classify and
 When you apply this sensitivity label to a supported container, the label automatically applies the classification and configured protection settings to the site or group.
 
 Content in these containers however, do not inherit the labels for the classification or settings for files and emails, such as visual markings and encryption. So that users can label their documents in SharePoint sites or team sites, make sure you've [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
-
-> [!NOTE]
-> Sensitivity labels for containers aren't supported with Office 365 Content Delivery Networks (CDNs).
 
 ## Using sensitivity labels for Microsoft Teams, Microsoft 365 groups, and SharePoint sites
 

@@ -41,7 +41,7 @@ Mobile devices can store sensitive organizational information and provide access
 
 ## Wipe a mobile device
 
-1. Go to the [Microsoft 365 admin center](../../admin/admin-overview/about-the-admin-center.md).
+1. Go to the [Microsoft 365 admin center](../../admin/admin-overview/admin-center-overview.md).
 
 2. Type Mobile Device Management into the search field, and select **Mobile Device Management** from the list of results.
 

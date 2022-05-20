@@ -21,7 +21,7 @@ search.appverid:
 description: "The Microsoft Purview Extension extends monitoring and control of file activities and protective actions to the Google Chrome browser"
 ---
 
-# Learn about the Microsoft Purview Extension)
+# Learn about the Microsoft Purview Extension
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 

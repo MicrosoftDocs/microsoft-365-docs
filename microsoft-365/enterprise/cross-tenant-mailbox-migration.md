@@ -8,7 +8,7 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.date: 09/21/2020
+ms.date: 05/05/2022
 ms.reviewer: georgiah
 ms.custom:
 - it-pro
@@ -142,13 +142,10 @@ To obtain the tenant ID of a subscription, sign in to the [Microsoft 365 admin c
    ```powershell
 
    # Enable customization if tenant is dehydrated
-     $dehydrated=Get-OrganizationConfig | fl isdehydrated
-     if ($dehydrated -eq $true) {Enable-OrganizationCustomization}
-
+   $dehydrated=Get-OrganizationConfig | fl isdehydrated
+   if ($dehydrated -eq $true) {Enable-OrganizationCustomization}
    $AppId = "[guid copied from the migrations app]"
-
    $Credential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $AppId, (ConvertTo-SecureString -String "[this is your secret password you saved in the previous steps]" -AsPlainText -Force)
-
    New-MigrationEndpoint -RemoteServer outlook.office.com -RemoteTenant "sourcetenant.onmicrosoft.com" -Credentials $Credential -ExchangeRemoteMove:$true -Name "[the name of your migration endpoint]" -ApplicationId $AppId
    ```
 
@@ -430,7 +427,7 @@ Get-MoveRequest -Flags "CrossTenant"
    ```powershell
    # Now sync the changes from On-Premises to Azure and Exchange Online in the Target tenant
    # This action should create the target mail enabled users (MEUs) in the Target tenant
-   Start-ADSyncCycle
+   Start-ADSyncSyncCycle
    ```
 
 **How do we access Outlook on Day 1 after the use mailbox is moved?**
@@ -458,7 +455,7 @@ Exchange mailbox moves using MRS craft the targetAddress on the original source 
 
 Mailbox permissions include Send on Behalf of and Mailbox Access:
 
-- Send On Behalf Of (AD:publicDelegates) stores the DN of recipients with access to a user’s mailbox as a delegate. This value is stored in Active Directory and currently does not move as part of the mailbox transition. If the source mailbox has publicDelegates set, you will need to restamp the publicDelegates on the target Mailbox once the MEU to Mailbox conversion completes in the target environment by running `Set-Mailbox <principle> -GrantSendOnBehalfTo <delegate>`.
+- Send On Behalf Of (AD:publicDelegates) stores the DN of recipients with access to a user's mailbox as a delegate. This value is stored in Active Directory and currently does not move as part of the mailbox transition. If the source mailbox has publicDelegates set, you will need to restamp the publicDelegates on the target Mailbox once the MEU to Mailbox conversion completes in the target environment by running `Set-Mailbox <principle> -GrantSendOnBehalfTo <delegate>`.
 
 - Mailbox Permissions that are stored in the mailbox will move with the mailbox when both the principal and the delegate are moved to the target system. For example, the user TestUser_7 is granted FullAccess to the mailbox TestUser_8 in the tenant SourceCompany.onmicrosoft.com. After the mailbox move completes to TargetCompany.onmicrosoft.com, the same permissions are set up in the target directory. Examples using *Get-MailboxPermission* for TestUser_7 in both source and target tenants are shown below. Exchange cmdlets are prefixed with source and target accordingly.
 

@@ -32,6 +32,32 @@ Familiarize yourself with the concepts and terminology in these articles:
 - [Learn about sensitive information types](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types)
 - [Learn about exact data match based sensitive information types](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
 
+## Supported regions
+
+Exact data match is available in these regions:
+
+- Asia Pacific
+- Australia
+- Brazil
+- Canada
+- Europe
+- France
+- Germany
+- India
+- Japan
+- Korea
+- Norway
+- South Africa
+- Switzerland
+- United Arab Emirates
+- United Kingdom
+- United States
+- US DoD
+- US GCC
+- US GCCH
+
+You can find out what region your tenant is hosting data-at-rest in by following the procedures in [Where your Microsoft 365 customer data is stored](../enterprise/o365-data-locations.md) and referring to the data center city locations in the same article.
+
 ## Required licenses and permissions
 
 You must be a global admin, compliance administrator, or Exchange Online administrator to perform the tasks described in this article. To learn more about DLP permissions, see [Permissions](data-loss-prevention-policies.md#permissions).

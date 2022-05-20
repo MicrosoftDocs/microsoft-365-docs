@@ -45,7 +45,7 @@ The **Reports dashboard** contains the following report widgets and detailed rep
 
 ### Detailed reports
 
-Use the *Export* option to create a .csv file containing the report details for any detailed report.
+Use the *Export* option to create a .csv file containing the report details for any detailed report. The *Export* report option supports file size downloads up to 3MB.
 
 - **Policy settings and status**: provides a detailed look at policy configuration and settings, as well as the general status for each of the policy (matches and actions) on messages. Includes policy information and how policies are associated with users and groups, locations, review percentages, reviewers, status, and when the policy was last modified. Use the *Export* option to create a .csv file containing the report details.
 - **Items and actions per policy**: Review and export matching items and remediation actions per policy. Includes policy information and how policies are associated with:

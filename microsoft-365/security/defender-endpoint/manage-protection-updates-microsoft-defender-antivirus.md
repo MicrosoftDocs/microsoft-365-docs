@@ -73,7 +73,7 @@ To ensure the best level of protection, Microsoft Update allows for rapid releas
 
 > [!NOTE]
 > Security intelligence updates contain engine updates and are released on a monthly cadence.
-Security intelligence updates are also delivered multiple times a day, but this package doesn’t contain an engine.
+Security intelligence updates are also delivered multiple times a day, but this package doesn't contain an engine.
 
 
 > [!IMPORTANT]
@@ -283,7 +283,7 @@ Set up a network file share (UNC/mapped drive) to download security intelligence
     > Do not add the x64 (or x86) folder in the path. The mpcmdrun.exe process adds it automatically.
 
 > [!TIP]
-> If you’re looking for Antivirus related information for other platforms, see:
+> If you're looking for Antivirus related information for other platforms, see:
 > - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
 > - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
 > - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

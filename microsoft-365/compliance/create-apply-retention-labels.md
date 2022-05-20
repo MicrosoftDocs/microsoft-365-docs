@@ -22,9 +22,9 @@ description: Instructions to publish retention labels so you can then apply them
 
 # Publish retention labels and apply them in apps
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!NOTE]
 > This scenario is supported for all retention label configurations, including [regulatory records](records-management.md#records).
@@ -83,7 +83,7 @@ To edit an existing retention label policy (the policy type is **Publish**), sel
 
 If you publish retention labels to SharePoint or OneDrive, those labels typically appear for users to select within one day. However, allow up to seven days. 
 
-If you publish retention labels to Exchange, it can take up to seven days for those retention labels to appear for users, and the mailbox must contain at least 10 MB of data.
+If you publish retention labels to Exchange, it can take up to seven days for those retention labels to appear for users. As with all retention settings for Exchange, the mailbox must contain at least 10 MB of data.
 
 ![Diagram of when published labels take effect.](../media/retention-labels-published-timings.png)
 
