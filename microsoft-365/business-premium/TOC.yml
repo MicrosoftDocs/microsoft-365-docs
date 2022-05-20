@@ -17,8 +17,6 @@
       - name: Set up Microsoft 365 Business Premium
         items:
         - name: Guided setup
-          href: m365bp-setup.md
-        - name: Add an existing domain and update DNS
           href: ../admin/setup/setup-business-basic?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
         - name: Add users
           href: ../admin/add-users/add-users.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json

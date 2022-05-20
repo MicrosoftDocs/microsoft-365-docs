@@ -17,14 +17,11 @@ ms.collection:
 - M365-security-compliance
 ---
 
-# Set up Microsoft 365 Business Premium
+# Guided setup for Microsoft 365 Business Premium
 
-After you have [started a trial or purchased Microsoft 365 Business Premium](get-microsoft-365-business-premium.md), your next step is to get everything set up. You have several options available. You can:
+After you have [started a trial or purchased Microsoft 365 Business Premium](get-microsoft-365-business-premium.md), your next step is to get everything set up. You have several options available. 
 
-- [Start with the guided setup experience](#use-the-guided-process-for-basic-setup) for basic setup and configuration; or
-- [Work with a partner, such as a Microsoft Cloud Solution Provider (CSP)](#work-with-a-microsoft-partner).
-
-Use this article as a guide.
+Alternatively, you can [work with a Microsoft Cloud Solution Provider (CSP)](m365bp-ms-partner.md)
 
 ## Before you begin
 
@@ -40,20 +37,13 @@ Make sure that you meet the following requirements before you begin your setup p
 > [!TIP]
 > For more detailed information about Microsoft 365, Office, and system requirements, see [Microsoft 365 and Office Resources](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
 
-## Use the guided process for basic setup
+## Guided setup process
 
-Microsoft 365 Business Premium includes a guided process for basic setup. The guided process includes these tasks:
-
-- [Adding your existing domain to personalize sign-in](../admin/setup/setup-business-basic.md#add-your-domain-to-personalize-sign-in)
-- [Adding users and assigning licenses](../admin/add-users/add-users.md)
-- [Updating your DNS records](../admin/setup/setup-business-basic.md#connect-your-domain)
+Microsoft 365 Business Premium includes a guided process for basic setup. 
 
 The following video shows the guided setup process for Microsoft 365 Business Standard, which works the same way in Microsoft 365 Business Premium.<br/><br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
-
-> [!TIP]
-> After you have added users, give them a link to the [Employee quick setup guide](../admin/setup/employee-quick-setup.md). The guide walks them through signing in, getting Office apps, and saving, copying, and sharing files.
 
 ## See also
 
@@ -62,6 +52,7 @@ The following video shows the guided setup process for Microsoft 365 Business St
 - [Set up self-service passwords](../admin/add-users/let-users-reset-passwords.md)
 
 - [Set up self-service group management](/azure/active-directory/enterprise-users/groups-self-service-management)
+
 ## Next objectives
 
 After you have finished your initial setup process, your next objectives are to set up your security and compliance capabilities:
