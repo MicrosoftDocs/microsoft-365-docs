@@ -56,7 +56,7 @@ During some kinds of cyber attacks, bad actors try to disable security features,
 - Disabling virus and threat protection
 - Disabling real-time protection
 - Turning off behavior monitoring
-- Disabling antivirus (such as IOfficeAntivirus (IOAV))
+- Disabling antivirus protection, such as IOfficeAntivirus (IOAV)
 - Disabling cloud-delivered protection
 - Removing security intelligence updates
 - Disabling automatic actions on detected threats
@@ -231,15 +231,11 @@ Tampering attempts typically indicate bigger cyberattacks. Bad actors try to cha
 
 When a tampering attempt is detected, an alert is raised in the [Microsoft 365 Defender portal](/microsoft-365/security/defender-endpoint/portal-overview) ([https://security.microsoft.com](https://security.microsoft.com)).
 
-:::image type="content" source="images/tamperattemptalert.png" alt-text="The Microsoft 365 Defender portal" lightbox="images/tamperattemptalert.png":::
-
 Using [endpoint detection and response](overview-endpoint-detection-response.md) and [advanced hunting](advanced-hunting-overview.md) capabilities in Microsoft Defender for Endpoint, your security operations team can investigate and address such attempts.
 
 ## Review your security recommendations
 
 Tamper protection integrates with [Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) capabilities. [Security recommendations](tvm-security-recommendation.md) include making sure tamper protection is turned on. For example, you can search on *tamper*. In the results, you can select **Turn on Tamper Protection** to learn more and turn it on.
-
-:::image type="content" source="images/tamperprotectsecurityrecos.png" alt-text="Turning on tamper protection in the Microsoft Defender Security Center portal" lightbox="images/tamperprotectsecurityrecos.png":::
 
 To learn more about Threat & Vulnerability Management, see [Dashboard insights - threat and vulnerability management](tvm-dashboard-insights.md#dashboard-insights---threat-and-vulnerability-management).
 
@@ -273,13 +269,15 @@ If you are an organization using [Microsoft Defender for Endpoint](/microsoft-36
 
 ### How does configuring tamper protection in Intune affect how I manage Microsoft Defender Antivirus with Group Policy?
 
-Group policy doesn't apply to tamper protection. Changes made to Microsoft Defender Antivirus settings using Group Policy are ignored when tamper protection is on.
+If you are currently using Intune to configure and manage tamper protection, you should continue using Intune. 
+
+Group policy doesn't apply to tamper protection. Changes made to Microsoft Defender Antivirus settings using Group Policy are ignored when tamper protection is turned on, or when tamper protection is configured with Intune.
 
 ### If we use Microsoft Intune to configure tamper protection, does it apply only to the entire organization?
 
 You have flexibility in configuring tamper protection with Intune. You can target your entire organization, or select specific devices and user groups.
 
-### Can I configure Tamper Protection with Microsoft Endpoint Configuration Manager?
+### Can I configure tamper protection with Microsoft Endpoint Configuration Manager?
 
 If you are using tenant attach, you can use Microsoft Endpoint Configuration Manager. See the following resources:
 
