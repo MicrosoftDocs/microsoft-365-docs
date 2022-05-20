@@ -48,7 +48,7 @@ The **Yammer groups activity** report can be viewed for trends over the last 7 d
 |Group admin  <br/> |The name of the group administrator, or owner.  <br/> |
 |Deleted  <br/> |The number of deleted Yammer groups. If the group is deleted, but had activity in the reporting period it will show up in the grid with this flag set to true.  <br/> |
 |Type  <br/> |The type of group, public or private. <br/> |
-|Connected to Office 365  <br/> |Indicates whether the Yammer group is also an Microsoft 365 group. <br/> |
+|Connected to Office 365  <br/> |Indicates whether the Yammer group is also a Microsoft 365 group. <br/> |
 |Last activity date (UTC)  <br/> | The latest date a message was read, posted or liked by the group.  <br/> |
 |Members  <br/> | The number of members in the group.  <br/> |
 |Posted  <br/> |The number of messages posted in the Yammer group over the reporting period. <br/>|
