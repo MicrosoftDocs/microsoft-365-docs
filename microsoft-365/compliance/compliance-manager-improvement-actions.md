@@ -85,7 +85,7 @@ To edit an improvement action’s status, select **Edit implementation details**
 
 - **Implementation status**
   - **Not implemented**: action not yet implemented
-  - **Partially implemented**: further work needed before fully implemented
+  - **Partially implemented**: for automatically tested actions, the action is partially implemented (neither passes nor fails) and receives a partial score
   - **Implemented**: action implemented
   - **Alternative implementation**: select this option if you used other third-party tools or took other actions not included in Microsoft recommendations
   - **Planned**: action is planned for implementation
@@ -121,10 +121,10 @@ Test statuses for [manually tested actions](#manual-testing-source):
 [Automatically tested actions](#automatic-testing-source) may also show one of the following states in the **Test status** column on the **Improvement actions** page:
    - **To be detected**: awaiting signals that indicate test status
   - **Could not be detected**: couldn't detect a test status; will be automatically checked again
-  - **Partially tested**: more testing needed before points can be achieved
+  - **Partially tested**: action has been partially tested;  neither passes nor fails
 
 > [!NOTE]
-> The test status and testing notes for automatically tested improvement actions can't be edited manually. Compliance Manager updates those fields for you.
+> The test status and testing notes for automatically tested improvement actions can't be edited manually. Compliance Manager updates these fields for you.
 
 **Test date**
 
