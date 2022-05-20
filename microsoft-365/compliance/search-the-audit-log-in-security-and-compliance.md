@@ -527,7 +527,6 @@ The following table describes activities related to when users interact with lis
 |Updated list item|ListItemUpdated|A user updated a SharePoint list item by modifying one or more properties.|
 |Updated site column|SiteColumnUpdated|A user updated a SharePoint site column by modifying one or more properties.|
 |Updated site content type|SiteContentTypeUpdated|A user updated a site content type by modifying one or more properties.|
-|Viewed list item|ListItemViewed|A user viewed a SharePoint list item. Once a user views a list item, the ListItemViewed event is not logged again for the same user for same list item for the next five minutes.|
 
 ### Sharing and access request activities
 
