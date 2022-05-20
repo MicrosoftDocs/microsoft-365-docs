@@ -38,3 +38,8 @@ In general, you'll identify the client you're onboarding, then follow the corres
 
 :::image type="content" source="images/onboard-devices.png" alt-text="Onboard devices" lightbox="images/onboard-devices.png":::
 
+## Related topics
+- [Onboard Windows devices using Mobile Device Management tools](configure-endpoints-mdm.md)
+- [Onboard Windows devices using Group Policy](configure-endpoints-gp.md)
+- [Onboard Windows devices using a local script](configure-endpoints-script.md)
+- [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
