@@ -56,13 +56,6 @@ We have automatically configured [Preset security policies](/security/office-365
 
 - Protection to all of the Microsoft 365 Business Premium features such as: SharePoint, OneDrive, Office apps, and Microsoft Teams.
 
-Perform the following to finish setup:
-
-1. Make sure to [add your existing domain](../admin/setup/setup-business-basic?view=o365-worldwide#add-your-domain-to-personalize-sign-in).
-
-2. Now, [add users and assign licenses](../admin/add-users/add-users.md).
-
-3. [Update your DNS records](/admin/setup/setup-business-basic?view=o365-worldwide#connect-your-domain.md).
 
 ### Add a domain
 When you purchase Microsoft 365 Business Premium trial, you have the option of using a domain you own, or buying one during the sign-up.

@@ -72,7 +72,7 @@ conceptualContent:
         - url: ../business-premium/get-microsoft-365-business-premium.md
           itemType: how-to-guide
           text: Get Microsoft 365 Business Premium
-        - url: ../business-premium/m365bp-setup.md#use-the-guided-process-for-basic-setup
+        - url: ../business-premium/get-microsoft-365-business-premium.md
           itemType: how-to-guide
           text: 1. Complete the basic setup process
         - url: ../business-premium/m365bp-security-overview.md
