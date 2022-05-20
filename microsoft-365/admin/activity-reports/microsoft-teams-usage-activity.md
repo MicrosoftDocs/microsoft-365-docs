@@ -18,7 +18,7 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: "Learn how to get the Microsoft Teams usage activity report and gain insights into the Teams activity in your organization."
+description: "The Teams usage report shows you how users are communicating and collaborating in Teams, including the number of active users, channels and messages."
 ---
 
 # Microsoft 365 Reports in the admin center - Microsoft Teams usage activity
