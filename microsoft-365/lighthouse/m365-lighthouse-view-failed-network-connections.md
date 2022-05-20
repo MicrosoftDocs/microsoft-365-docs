@@ -24,7 +24,8 @@ Microsoft 365 Lighthouse provides connection status between your tenants and Azu
 
 ## Before you begin
 
-You must be a Global Administrator in the partner tenant.
+- You must be a Global Administrator in the partner tenant.
+- You must have Cloud PC administrator or Cloud PC reader access to view connection issues.
 
 ## View a failed network connection
 
@@ -44,5 +45,6 @@ To troubleshoot connection issues, see [Troubleshoot on-premises network connect
 
 ## Related content
 
+[Cloud PC role-based access control ](/windows-365/enterprise/role-based-access)(article)\
 [Active Directory domain join](/windows-365/enterprise/troubleshoot-on-premises-network-connection#active-directory-domain-join) (article)\
 [Azure Active Directory device Sync](/windows-365/enterprise/troubleshoot-on-premises-network-connection#azure-active-directory-device-sync) (article)
