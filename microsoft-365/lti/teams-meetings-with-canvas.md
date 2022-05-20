@@ -30,7 +30,7 @@ Microsoft Teams meetings is a Learning Tools Interoperability (LTI) app that hel
 
 ## Microsoft Office 365 Admin
 
-Before managing the Microsoft Teams integration within Instructure Canvas, it is important to have Canvas’s **Microsoft-Teams-Sync-for-Canvas** Azure app approved by your institution’s Microsoft Office 365 admin in your Microsoft Azure tenant before completing the Canvas admin setup.
+Before managing the Microsoft Teams integration within Instructure Canvas, it's important to have Canvas’s **Microsoft-Teams-Sync-for-Canvas** Azure app approved by your institution’s Microsoft Office 365 admin in your Microsoft Azure tenant before completing the Canvas admin setup.
 
 1. Sign in to Canvas.
 
@@ -56,7 +56,7 @@ Before managing the Microsoft Teams integration within Instructure Canvas, it is
    > [!NOTE]
    > Sync is a functionality that is managed by LMS partner and is used to sync membership at a course level to the Teams team using Microsoft graph APIs. This is primarily a functionality that an educator switches on as true at a course level. Subsequently any membership change done on LMS side for the addition or deletion of the members gets reflected using the Sync implemented by the LMS partner. Even before this process is enabled for an Educator the M365 education institute admin allows their educators to access sync using the Sync permission modal found below. These permissions are granted to the LMS partner to enable educators to sync membership between the LMS course and Teams Class teams.
 
-8. Enable the Microsoft Teams sync by turning the toggle on.
+8. Enable the Microsoft Teams sync by turning on the toggle.
 
    ![teams-sync.](media/teams-sync.png)
 
@@ -90,6 +90,6 @@ As a Canvas Admin, you'll need to add the Microsoft Teams meetings LTI app withi
 
 ## Enable for Canvas Courses
 
-In order to use the LTI within a course, an instructor of the Canvas course must enable the integrations sync. Each course must be enabled by an instructor for a corresponding Teams to be created; there is no global mechanism for Teams creation. This is designed out of caution to prevent unwanted Teams being created.
+In order to use the LTI within a course, an instructor of the Canvas course must enable the integrations sync. Each course must be enabled by an instructor for a corresponding Teams to be created; there's no global mechanism for Teams creation. This is designed out of caution to prevent unwanted Teams being created.
 
 Please refer your instructors to [educator documentation](https://support.microsoft.com/topic/use-microsoft-teams-classes-in-your-lms-preview-ac6a1e34-32f7-45e6-b83e-094185a1e78a#ID0EBD=Instructure_Canvas) for enabling the LTI for each course and finishing the integration setup.
