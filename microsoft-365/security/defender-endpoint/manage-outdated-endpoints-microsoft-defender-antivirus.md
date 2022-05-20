@@ -124,7 +124,9 @@ You can set the number of consecutive scheduled scans that can be missed before 
 The process for enabling this feature is:
 
 1. Set up at least one scheduled scan (see the [Schedule scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md) topic).
+
 2. Enable the catch-up scan feature.
+
 3. Define the number of scans that can be skipped before a catch-up scan occurs.
 
 This feature can be enabled for both full and quick scans.
@@ -137,14 +139,14 @@ This feature can be enabled for both full and quick scans.
 
 3. In the **Group Policy Management Editor** go to **Computer configuration**.
 
-4. Click **Policies** then **Administrative templates**.
+4. Select **Policies** then **Administrative templates**.
 
 5. Expand the tree to **Windows components > Microsoft Defender Antivirus > Scan** and configure the following settings:
 
-    1. If you have set up scheduled quick scans, double-click the **Turn on catch-up quick scan** setting and set the option to **Enabled**.
-    2. If you have set up scheduled full scans, double-click the **Turn on catch-up full scan** setting and set the option to **Enabled**. Click **OK**.
-    3. Double-click the **Define the number of days after which a catch-up scan is forced** setting and set the option to **Enabled**.
-    4. Enter the number of scans that can be missed before a scan will be automatically run when the user next logs on to the PC. The type of scan that is run is determined by the **Specify the scan type to use for a scheduled scan** (see the [Schedule scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md) topic). Click **OK**.
+    - If you have set up scheduled quick scans, double-click the **Turn on catch-up quick scan** setting and set the option to **Enabled**.
+    - If you have set up scheduled full scans, double-click the **Turn on catch-up full scan** setting and set the option to **Enabled**. Click **OK**.
+    - Double-click the **Define the number of days after which a catch-up scan is forced** setting and set the option to **Enabled**.
+    - Enter the number of scans that can be missed before a scan will be automatically run when the user next logs on to the PC. The type of scan that is run is determined by the **Specify the scan type to use for a scheduled scan** (see the [Schedule scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md) topic). Click **OK**.
 
 > [!NOTE]
 > The Group Policy setting title refers to the number of days. The setting, however, is applied to the number of scans (not days) before the catch-up scan will be run.
@@ -176,11 +178,11 @@ See the following for more information and allowed parameters:
 
 ### Use Configuration Manager to configure catch-up scans
 
-1. On your Microsoft Endpoint Manager console, open the antimalware policy you want to change (click **Assets and Compliance** in the navigation pane on the left, then expand the tree to **Overview** \> **Endpoint Protection** \> **Antimalware Policies**)
+1. On your Microsoft Endpoint Manager console, open the antimalware policy you want to change (select **Assets and Compliance** in the navigation pane on the left, then expand the tree to **Overview** \> **Endpoint Protection** \> **Antimalware Policies**)
 
 2. Go to the **Scheduled scans** section and **Force a scan of the selected scan type if client computer is offline...** to **Yes**.
 
-3. Click **OK**.
+3. Select **OK**.
 
 4. [Deploy the updated policy as usual](/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers).
 
