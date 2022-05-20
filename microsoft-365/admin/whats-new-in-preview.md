@@ -68,7 +68,9 @@ For more information about Azure AD built-in roles, see [Azure AD built-in roles
 
 ### Quick Assist
 
-We've moved Quick Assist to the Windows Store to enhance the performance and security of the app. The Windows Quick Assist app, allows you and your end-users to receive or provide PC assistance over a remote connection. With the new Quick Assist Store app, you should see a significant improvement in passcode generation times and a reduction in application errors.
+We've moved Quick Assist to the Windows Store to enhance the performance and security of the app. The Windows Quick Assist app allows you and your end-users to receive or provide PC assistance over a remote connection.
+
+With the new Quick Assist Store app, you should see a significant improvement in passcode generation times and a reduction in application errors.
 
 For more information, see [Solve PC problems over a remote connection](https://support.microsoft.com/windows/solve-pc-problems-over-a-remote-connection-b077e31a-16f4-2529-1a47-21f6a9040bf3) and [Install Quick Assist](https://support.microsoft.com/windows/install-quick-assist-c17479b7-a49d-4d12-938c-dbfb97c88bca)
 
