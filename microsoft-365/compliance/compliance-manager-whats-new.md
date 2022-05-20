@@ -25,6 +25,16 @@ description: "Find out what’s new in Compliance Manger and what’s to come. R
 
 **In this article:** Learn about recent updates in Compliance Manager.
 
+## May 2022
+
+Compliance Manager has published the following new assessment templates:
+
+Europe, Middle East, and Africa (EMEA)
+- Qatar National Information Assurance (NIA)
+- UAE Data Privacy Law
+
+US Government Community (GCC) Moderate, GCC High, and Department of Defense (DoD) customers should see these templates available in the next few weeks.
+
 ## March 2022
 
 ### New templates available
