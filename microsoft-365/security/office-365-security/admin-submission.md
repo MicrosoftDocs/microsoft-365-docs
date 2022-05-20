@@ -41,6 +41,9 @@ When you submit an email message for analysis, you will get:
 
 For other ways to submit email messages, URLs, and attachments to Microsoft, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 
+Watch this short video to learn how to use admin submissions in Microsoft Defender for Office 365 to submit messages to Microsoft for evaluation. 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBLPn]
+
 ## What do you need to know before you begin?
 
 - You open the Microsoft 365 Defender portal at <https://security.microsoft.com/>. To go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
