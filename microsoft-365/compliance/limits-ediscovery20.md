@@ -59,7 +59,8 @@ The following table lists the indexing limits in eDiscovery (Premium).
 |Maximum number of characters extracted from a single file.|10 million<sup>4</sup>|
 |Maximum size of a single file.|150 MB<sup>4</sup>|
 |Maximum depth of embedded items in a document.|25<sup>4</sup>|
-|Maximum size of files processed by Optical Character Recognition (OCR).|24 MB<sup>4</sup> <br/>  
+|Maximum size of files processed by Optical Character Recognition (OCR).|24 MB<sup>4</sup> <br/> |
+|Maximum advanced indexing throughput | 2 GB per hour |
 
 ## Search limits
 

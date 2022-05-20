@@ -126,9 +126,7 @@ You can enable the new capabilities by using the Microsoft Purview compliance po
 
 This option is the easiest way to enable sensitivity labels for SharePoint and OneDrive, but you must sign in as a global administrator for your tenant.
 
-1. Sign in to the [Microsoft Purview compliance portal](https://compliance.microsoft.com/) as a global administrator, and navigate to **Solutions** > **Information protection**
-
-    If you don't immediately see this option, first select **Show all**.
+1. Sign in to the [Microsoft Purview compliance portal](https://compliance.microsoft.com/) as a global administrator, and navigate to **Solutions** > **Information protection** > **Labels**
 
 2. If you see a message to turn on the ability to process content in Office online files, select **Turn on now**:
 
