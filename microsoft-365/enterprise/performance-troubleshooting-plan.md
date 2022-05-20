@@ -68,7 +68,7 @@ If you're not familiar with running the tools mentioned in this article, don't w
 
 ### Flush the DNS Cache first
 
-Why? By flushing out the DNS cache, you're starting your tests with a clean slate. By clearing the cache, you're resetting the DNS resolver contents to the most up-to-date entries. Remember that a flush doesn't remove HOSTs file entries. If you use HOST file entries extensively, you should copy those entries out to a file in another directory and then empty the HOST file.
+Why? By flushing out the DNS cache, you're starting your tests with a clean slate. By clearing the cache, you're resetting the DNS resolver contents to the most up-to-date entries. Remember that a flush doesn't remove HOST file entries. If you use HOST file entries extensively, you should copy those entries out to a file in another directory and then empty the HOST file.
 
 #### Flush your DNS resolver cache
 
@@ -181,7 +181,7 @@ Taking Office 365 Outlook Online as an example, the traffic begins something lik
 
 - DNS Standard Query and DNS Response for outlook.office365.com with matching QueryIDs. It's important to note the time offset for this turn-around, and where in the world the Office 365 Global DNS sends the request for name resolution. Ideally, as locally as possible, rather than halfway across the world.
 
-- A HTTP GET Request whose status report Moved Permanently (301)
+- An HTTP GET Request whose status report Moved Permanently (301)
 
 - RWS Traffic including RWS Connect requests and Connect replies. (This is Remote Winsock making a connection for you.)
 
@@ -394,7 +394,7 @@ There is no network trace or troubleshooting tool specific to this. Instead, it'
 
 Found in the SYN - SYN/ACK.  Do this check in any performance network trace you've taken to ensure that TCP packets are configured to carry the maximum amount of data possible.
 
-The goal is to see a MSS of 1460 bytes for transmission of data. If you're behind a proxy, or you are using a NAT, remember to run this test from client to proxy/egress/NAT, and from proxy/egress/NAT to Office 365 for best results! These are different TCP sessions.
+The goal is to see an MSS of 1460 bytes for transmission of data. If you're behind a proxy, or you are using a NAT, remember to run this test from client to proxy/egress/NAT, and from proxy/egress/NAT to Office 365 for best results! These are different TCP sessions.
 
 #### Tools
 
@@ -453,7 +453,7 @@ Locate the connection in the trace that you're interested in seeing either by sc
 
 ### DNS Geolocation
 
-Where in the world Office 365 tries to resolve your DNS call effects your connection speed.
+Where in the world Office 365 tries to resolve your DNS call affects your connection speed.
 
 In Outlook Online, after the first DNS lookup is completed, the location of that DNS will be used to connect to your nearest datacenter. You will be connected to an Outlook Online CAS server, which will use the backbone network to connect to the datacenter (dC) where your data is stored. This is faster.
 

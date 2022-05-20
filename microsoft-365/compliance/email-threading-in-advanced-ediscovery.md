@@ -26,7 +26,7 @@ Consider an email conversation that has been going on for a while. In most cases
 
 ## What does email threading do?
 
-Email threading parses each email thread and deconstructs it to individual messages. Each email thread is a chain of individual messages. Microsoft Purview eDiscovery (Premium) analyzes all email messaes in the review set to determine whether an email message has unique content or if the chain (parent messages) are wholly contained in the final message in the email thread. Email messages are divided into four inclusive values:
+Email threading parses each email thread and deconstructs it to individual messages. Each email thread is a chain of individual messages. Microsoft Purview eDiscovery (Premium) analyzes all email messages in the review set to determine whether an email message has unique content or if the chain (parent messages) are wholly contained in the final message in the email thread. Email messages are divided into four inclusive values:
 
 - **Inclusive**: An *Inclusive* email is the final email message in an email thread and contains all the previous content of that email thread.
 

@@ -174,7 +174,7 @@ measures).
  
 To better protect personal data, organizations might have to
 appoint a <b>Data Protection Officer (DPO)</b>. However, you may not need to designate a Data Protection Officer if processing
-of personal data isn’t a core part of your business, or if your are a small business. For example, if your business only collects data on your customers for home delivery, you should not need to appoint a DPO. Even if you need to make use of a DPO, these duties might be assigned to an existing employee in addition to his/her other tasks. Or you could chose to hire an external consultant for this duty as needed.
+of personal data isn’t a core part of your business, or if you are a small business. For example, if your business only collects data on your customers for home delivery, you should not need to appoint a DPO. Even if you need to make use of a DPO, these duties might be assigned to an existing employee in addition to his/her other tasks. Or you could choose to hire an external consultant for this duty as needed.
 
 You normally don’t need to carry out a [Data Protection Impact Assessment](https://gdpr.eu/article-35-impact-assessment/). This is reserved for businesses that pose more risk to personal data (for example, if they do a large-scale monitoring of a publicly accessible area, such as video-surveillance).
 
@@ -243,7 +243,7 @@ Microsoft 365 for business can help you with the GDPR process in the following w
   
 - **Discover:** An important step to GDPR compliance is knowing what data you have. 
     
-- **Manage:** Controlling access to data and managing its use is an integral part of GDPR. Microsoft 365 for business protects business data based on policies you want to apply to devices. Device management is vital in an age where employees work remotely. Microsoft 365 for business includes device management features that makes sure data is protected across all devices. For example, you can specify that all Windows 10 devices in your business are protected via Windows Defender. 
+- **Manage:** Controlling access to data and managing its use is an integral part of GDPR. Microsoft 365 for business protects business data based on policies you want to apply to devices. Device management is vital in an age where employees work remotely. Microsoft 365 for business includes device management features that make sure data is protected across all devices. For example, you can specify that all Windows 10 devices in your business are protected via Windows Defender. 
     
 - **Protect:** Microsoft 365 for business is designed for security. Its device management and data protection controls work across your business network, including remote devices, to help keep data secure. Microsoft 365 for business offers controls such as privacy settings in Office applications and encryption of documents. With Microsoft 365 for business, you can perform GDPR compliance monitoring to make sure you have the right level of protection set. 
     
