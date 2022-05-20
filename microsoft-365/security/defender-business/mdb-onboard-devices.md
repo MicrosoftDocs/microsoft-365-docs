@@ -300,7 +300,7 @@ To view the list of devices that are onboarded to Defender for Business, in the 
 ## Linux Server
 
 > [!IMPORTANT]
-> The ability to onboard Linux Server endpoints is currently in preview. Make sure that you meet the following requirements before onboarding a Windows Server endpoint:
+> The ability to onboard Linux Server endpoints is currently in preview. Make sure that you meet the following requirements before onboarding an instance of Linux Server endpoint:
 > - You have a server license for each server instance in either Defender for Business (standalone) or Microsoft 365 Business Premium.
 > - You have turned on preview features. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), go to **Settings** > **Endpoints** > **General** > **Advanced features** > **Preview features**.
 > - You meet the [prerequisites for Microsoft Defender for Endpoint on Linux](../defender-endpoint/microsoft-defender-endpoint-linux.md#prerequisites).
