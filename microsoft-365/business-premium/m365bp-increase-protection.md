@@ -161,7 +161,7 @@ The following image shows some of the default policies that are included with Mi
 
 ### View your alert policies
 
-1. Go to the Microsoft Purview Compliance Portal at [https://compliance.microsoft.com](https://compliance.microsoft.com) and sign in.
+1. Go to the Microsoft Purview compliance portal at [https://compliance.microsoft.com](https://compliance.microsoft.com) and sign in.
 
 2. In the navigation pane, choose **Policies**, and then choose **Alert policies**.
 
@@ -174,12 +174,12 @@ The following image shows some of the default policies that are included with Mi
 
 ### How to view alerts
 
-Depending on the specific alert, you can view your alerts in either the Microsoft 365 Defender portal or the Microsoft Purview Compliance Portal.
+Depending on the specific alert, you can view your alerts in either the Microsoft 365 Defender portal or the Microsoft Purview compliance portal.
 
 | Type of alert  | What to do  |
 |---------|---------|
 | Security alert, such as when a user clicks a malicious link, an email is reported as malware or phish, or a device is detected as containing malware     | Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and under **Email & collaboration** select **Policies & rules** > **Alert policy**. Alternatively, you can go directly to <https://security.microsoft.com/alertpolicies>. |
-| Compliance alert, such as when a user shares sensitive or confidential information (data loss prevention alert) or there's an unusual volume of external file sharing (information governance alert)    | Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview Compliance Portal</a>, and then select **Policies** > **Alert** > **Alert policies**.  |
+| Compliance alert, such as when a user shares sensitive or confidential information (data loss prevention alert) or there's an unusual volume of external file sharing (information governance alert)    | Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>, and then select **Policies** > **Alert** > **Alert policies**.  |
 
 For more information, see [View alerts](../compliance/alert-policies.md#view-alerts).
 
