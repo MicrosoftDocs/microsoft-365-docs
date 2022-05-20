@@ -24,7 +24,21 @@ We're continuously adding new features to [Microsoft 365 Lighthouse](m365-lighth
 
 ## May 2022
 
+### Redesigned left navigation pane
 
+We've given the left navigation pane in Lighthouse a new look. You'll notice a sleeker design, with top-level  nodes like Tenants, Users, and Devices that expand to show related sub-nodes, like Risky users, Device compliance, and Threat management. This navigation model aligns with the model used by other Microsoft 365 admin centers.
+
+> [!NOTE]
+> The redesigned navigation pane is being rolled out over several weeks and may not be immediately available in all tenants.
+
+### Enriched user details pane
+
+We've redesigned the user details pane to include more user information and more actions you can take to better manage users. It now has the same look and feel as the user details pane in the Microsoft 365 admin center. To access the user details pane in Lighthouse, select **Users** from the left navigation pane, and then select either **Search users** or **Risky users**. Select any user to open the details pane.
+
+> [!NOTE]
+> The redesigned user details pane is being rolled out over several weeks and may not be immediately available in all tenants.
+
+**Add screenshot here**
 
 ## April 2022
 
