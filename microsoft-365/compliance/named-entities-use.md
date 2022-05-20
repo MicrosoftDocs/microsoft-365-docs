@@ -44,6 +44,7 @@ You can use named entity SITs and enhanced policies to detect and protect sensit
 - Teams chat and channel messages
 - Devices (Windows 10, and 11 endpoint devices)
 - Exchange mailboxes
+- Microsoft Defender for Cloud Apps
 
 Named entity SITs and enhanced policies are not supported for:
 
@@ -78,7 +79,7 @@ To create or edit a DLP policy, use the procedures in [Create, test, and tune a 
 |SharePoint Online data-at-rest     |Supported         |
 |Teams data-at-rest     |Supported         |
 |Email messages data-at-rest     |Supported for tenants with Privacy Service Plan         |
-<!--|Microsoft Defender for Cloud Apps     |supported         |-->
+|Microsoft Defender for Cloud Apps     |Supported         |
 
 ### Autolabeling
 
@@ -92,7 +93,7 @@ To create or edit a DLP policy, use the procedures in [Create, test, and tune a 
 |Exchange transport     |Supported |
 |OneDrive for Business data-at-rest     |Supported |
 |SharePoint Online data-at-rest|Supported|
-|Azure Information Protection (AIP) scanner|not supported|
+|Azure Information Protection (AIP) scanner|Not supported|
 
 ## Known issues
 
