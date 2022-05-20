@@ -1,7 +1,7 @@
 ---
 title: Apply Microsoft Defender Antivirus protection updates to out of date endpoints
 description: Define when and how updates should be applied for endpoints that haven't updated in a while.
-keywords: updates, protection, out-of-date, outdated, old, catch-up
+keywords: updates, protection, out of date, outdated, old, catch-up
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -18,9 +18,6 @@ ms.collection: m365-security-compliance
 ---
 
 # Manage Microsoft Defender Antivirus updates and scans for endpoints that are out of date
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -53,7 +50,7 @@ You can use one of several methods to set up catch-up protection updates:
 2. Go to the **Security intelligence updates** section and configure the following settings:
 
     - Set **Force a security intelligence update if the client computer is offline for more than two consecutive scheduled updates** to **Yes**.
-    - For the  **If Configuration Manager is used as a source for security intelligence updates...**, specify the hours before which the protection updates delivered by Configuration Manager should be considered out-of-date. This setting causes the next update location to be used, based on the defined [fallback source order](manage-protection-updates-microsoft-defender-antivirus.md#fallback-order).
+    - For the  **If Configuration Manager is used as a source for security intelligence updates...**, specify the hours before which the protection updates delivered by Configuration Manager should be considered out of date. This setting causes the next update location to be used, based on the defined [fallback source order](manage-protection-updates-microsoft-defender-antivirus.md#fallback-order).
 
 3. Select **OK**.
 
@@ -104,7 +101,7 @@ You can also specify the number of days after which Microsoft Defender Antivirus
 
 You can use Group Policy to specify the number of days after which endpoint protection is considered to be out of date.
 
-### Use Group Policy to specify the number of days before protection is considered out-of-date
+### Use Group Policy to specify the number of days before protection is considered out of date
 
 1. On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and then select **Edit**.
 
@@ -114,11 +111,11 @@ You can use Group Policy to specify the number of days after which endpoint prot
 
 4. Expand the tree to **Windows components > Microsoft Defender Antivirus > Signature Updates** and configure the following settings:
 
-    1. Double-click **Define the number of days before spyware definitions are considered out of date** and set the option to **Enabled**. Enter the number of days after which you want Microsoft Defender Antivirus to consider spyware Security intelligence to be out-of-date.
+    1. Double-click **Define the number of days before spyware definitions are considered out of date** and set the option to **Enabled**. Enter the number of days after which you want Microsoft Defender Antivirus to consider spyware Security intelligence to be out of date.
 
     2. Select **OK**.
 
-    3. Double-click **Define the number of days before virus definitions are considered out of date** and set the option to **Enabled**. Enter the number of days after which you want Microsoft Defender Antivirus to consider virus Security intelligence to be out-of-date.
+    3. Double-click **Define the number of days before virus definitions are considered out of date** and set the option to **Enabled**. Enter the number of days after which you want Microsoft Defender Antivirus to consider virus Security intelligence to be out of date.
 
     4. Select **OK**.
 
