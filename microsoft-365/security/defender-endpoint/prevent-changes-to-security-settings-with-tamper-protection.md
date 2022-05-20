@@ -17,7 +17,7 @@ ms.custom:
 - nextgen
 - admindeeplinkDEFENDER
 ms.technology: mde
-ms.date: 04/07/2022
+ms.date: 05/20/2022
 ms.collection: 
 - M365-security-compliance
 - m365initiative-defender-endpoint
@@ -48,7 +48,6 @@ Tamper protection is available for devices that are running one of the following
 
 > [!NOTE]
 > Tamper protection in Windows Server 2012 R2 is available for devices onboarded using the modern unified solution package. For more information, see [Onboard Windows servers to the Microsoft Defender for Endpoint service](/microsoft-365/security/defender-endpoint/configure-server-endpoints).
-
 
 ## Overview
 
@@ -274,7 +273,7 @@ If you are an organization using [Microsoft Defender for Endpoint](/microsoft-36
 
 ### How does configuring tamper protection in Intune affect how I manage Microsoft Defender Antivirus with Group Policy?
 
-Group policy doesn't apply to tamper protection. Changes made to Microsoft Defender Antivirus settings are ignored when tamper protection is on.
+Group policy doesn't apply to tamper protection. Changes made to Microsoft Defender Antivirus settings using Group Policy are ignored when tamper protection is on.
 
 ### If we use Microsoft Intune to configure tamper protection, does it apply only to the entire organization?
 
@@ -290,10 +289,6 @@ If you are using tenant attach, you can use Microsoft Endpoint Configuration Man
 ### I have the Windows E3 enrollment. Can I use configuring tamper protection in Intune?
 
 Currently, configuring tamper protection in Intune is only available for customers who have [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint).
-
-### What happens if I try to change Microsoft Defender for Endpoint settings in Intune, Microsoft Endpoint Configuration Manager, and Windows Management Instrumentation when Tamper Protection is enabled on a device?
-
-You won't be able to change the features that are protected by tamper protection; such change requests are ignored.
 
 ### I'm an enterprise customer. Can local admins change tamper protection on their devices?
 
