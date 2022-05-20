@@ -20,7 +20,7 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
-description: "Get a Microsoft 365 groups report to know about the groups and their activities."
+description: "Get a Microsoft 365 Groups report to gain insights into the activity of groups in your organization and see how many groups are being created and used."
 ---
 
 # Microsoft 365 Reports in the admin center - Microsoft 365 groups

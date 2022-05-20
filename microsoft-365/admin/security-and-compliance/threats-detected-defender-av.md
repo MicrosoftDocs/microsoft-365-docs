@@ -17,7 +17,7 @@ search.appverid: MET150
 description: "Learn how Microsoft Defender Antivirus protects your Windows devices from software threats, such as viruses, malware, and spyware."
 ---
 
-# Threats detected by Microsoft Defender Antivirus
+# Overview of threat protection by Microsoft Defender Antivirus
 
 Microsoft Defender Antivirus protects your Windows devices from software threats, such as viruses, malware, and spyware.
 

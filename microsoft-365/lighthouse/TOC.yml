@@ -56,6 +56,8 @@
       href: m365-lighthouse-compare-compliance-policies.md
     - name: Overview of the Windows 365 (Cloud PCs) page
       href: m365-lighthouse-win365-page-overview.md
+    - name: Reprovision a Windows 365 Cloud PC
+      href: m365-lighthouse-reprovision-cloudpc.md
     - name: View an enterprise Cloud PC failed network connection
       href: m365-lighthouse-view-failed-network-connections.md
 - name: Manage threats
