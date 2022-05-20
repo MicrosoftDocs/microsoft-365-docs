@@ -48,6 +48,9 @@ Network protection extends the protection in [Web protection](web-protection-ove
 > [!NOTE]
 > The Defender for Endpoint demo site at demo.wd.microsoft.com is deprecated and will be removed in the future.
 
+Watch this video to learn how Network protection helps reduce the attack surface of your devices from phishing scams, exploits, and other malicious content.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4r4yZ]
+
 ## Requirements for network protection
 
 Network protection requires Windows 10 Pro or Enterprise, and Microsoft Defender Antivirus real-time protection.
@@ -144,7 +147,7 @@ A user visits a website:
 
 ### Network protection: C2 detection and remediation
 
-In its initial form, ransomware is a commodity threat, pre-programmed and focused on limited, specific outcomes (for example, encrypting a computer). However, ransomware has evolved into a sophisticated threat that is human driven, adaptive, and focused on larger scale and more widespread outcomes; like holding an entire organization's assets or data for ransom.
+In its initial form, ransomware is a commodity threat, pre-programmed and focused on limited, specific outcomes (for example, encrypting a computer). However, ransomware has evolved into a sophisticated threat that is human-driven, adaptive, and focused on larger scale and more widespread outcomes; like holding an entire organization's assets or data for ransom.
 
 Support for Command and Control (C2) is a key part of this ransomware evolution and is what enables these attacks to adapt to the environment they target. Breaking the link to the command-and-control infrastructure means stopping the progression of an attack to its next stage.
 
