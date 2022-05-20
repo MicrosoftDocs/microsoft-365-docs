@@ -17,7 +17,7 @@ search.appverid: MET150
 description: "Learn how to review and manage threats detected by Microsoft Defender Antivirus on your Windows 10 devices." 
 ---
 
-# Review detected threats and take action
+# Review threats detected by Microsoft Defender Antivirus and take action
 
 As soon as a malicious file or software is detected, Microsoft Defender Antivirus blocks it and prevents it from running. And with cloud-delivered protection turned on, newly detected threats are added to the antivirus and antimalware engine so that your other devices and users are protected, as well.
 
@@ -112,6 +112,6 @@ If you have a file that you think was missed or wrongly classified as malware, y
 
 ## See also
 
-[Top 10 ways to secure Microsoft 365 for business plans](../../admin/security-and-compliance/secure-your-business-data.md)
+[Best practices for securing Microsoft 365 for business plans](../../admin/security-and-compliance/secure-your-business-data.md)
 
 [Overview of Microsoft Defender for Business](../../security/defender-business/mdb-overview.md) (Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022)

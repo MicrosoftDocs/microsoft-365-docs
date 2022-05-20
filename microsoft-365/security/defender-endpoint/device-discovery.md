@@ -43,9 +43,8 @@ Unknown and unmanaged devices introduce significant risks to your network - whet
 - Onboard unmanaged endpoints to the service, increasing the security visibility on them.
 - Reduce the attack surface by identifying and assessing vulnerabilities, and detecting configuration gaps.
 
-Watch this video for a quick overview of how device discovery:
-
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWORdQ]
+Watch this video for a quick overview of how to assess and onboard unmanaged devices that Microsoft Defender for Endpoint discovered.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4RwQz]
 
 In conjunction with this capability, a security recommendation to onboard devices to Microsoft Defender for Endpoint is available as part of the existing threat and vulnerability management experience.
 
@@ -108,34 +107,33 @@ Search for "SSH" related security recommendations to find SSH vulnerabilities th
 
 :::image type="content" source="images/1156c82ffadd356ce329d1cf551e806c.png" alt-text="The security recommendations dashboard" lightbox="images/1156c82ffadd356ce329d1cf551e806c.png":::
 
-
 ## Use advanced hunting on discovered devices
 
-You can use advanced hunting queries to gain visibility on discovered devices. Find details about discovered devices in the DeviceInfo table, or network-related information about those devices in the DeviceNetworkInfo table.
+You can use advanced hunting queries to gain visibility on discovered devices. Find details about discovered devices in the DeviceInfo table, or network-related information about those devices, in the DeviceNetworkInfo table.
 
 :::image type="content" source="images/f48ba1779eddee9872f167453c24e5c9.png" alt-text="The Advanced hunting page on which queries can be used" lightbox="images/f48ba1779eddee9872f167453c24e5c9.png":::
 
 ### Query discovered devices details
 
-Run this query, on the DeviceInfo table, to return all discovered devices along with the most up to details for each device:
+Run this query on the DeviceInfo table to return all discovered devices along with the most up-to-date details for each device:
 
 ```query
 DeviceInfo
 | summarize arg_max(Timestamp, *) by DeviceId  // Get latest known good per device Id
 | where isempty(MergedToDeviceId) // Remove invalidated/merged devices
-| where OnboardingStatus != "Onboarded" 
+| where OnboardingStatus != "Onboarded"
 ```
 
-By invoking the **SeenBy** function, in your advanced hunting query, you can get detail on which onboarded device a discovered device was seen by. This information can help determine the network location of each discovered device and subsequently, help to identify it in the network.  
+By invoking the **SeenBy** function, in your advanced hunting query, you can get detail on which onboarded device a discovered device was seen by. This information can help determine the network location of each discovered device and subsequently, help to identify it in the network.
 
 ```query
 DeviceInfo
-| where OnboardingStatus != "Onboarded" 
-| summarize arg_max(Timestamp, *) by DeviceId  
-| where isempty(MergedToDeviceId)  
-| limit 100 
-| invoke SeenBy() 
-| project DeviceId, DeviceName, DeviceType, SeenBy  
+| where OnboardingStatus != "Onboarded"
+| summarize arg_max(Timestamp, *) by DeviceId 
+| where isempty(MergedToDeviceId) 
+| limit 100
+| invoke SeenBy()
+| project DeviceId, DeviceName, DeviceType, SeenBy
 ```
 
 For more information, see the [SeenBy()](/microsoft-365/security/defender/advanced-hunting-seenby-function) function.

@@ -48,6 +48,9 @@ Network protection extends the protection in [Web protection](web-protection-ove
 > [!NOTE]
 > The Defender for Endpoint demo site at demo.wd.microsoft.com is deprecated and will be removed in the future.
 
+Watch this video to learn how Network protection helps reduce the attack surface of your devices from phishing scams, exploits, and other malicious content.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4r4yZ]
+
 ## Requirements for network protection
 
 Network protection requires Windows 10 Pro or Enterprise, and Microsoft Defender Antivirus real-time protection.
@@ -144,17 +147,17 @@ A user visits a website:
 
 ### Network protection: C2 detection and remediation
 
-In its initial form, ransomware is a commodity threat, pre-programmed and focused on limited, specific outcomes (for example, encrypting a computer). However, ransomware has evolved into a sophisticated threat that is human driven, adaptive, and focused on larger scale and more widespread outcomes; like holding an entire organization’s assets or data for ransom.
+In its initial form, ransomware is a commodity threat, pre-programmed and focused on limited, specific outcomes (for example, encrypting a computer). However, ransomware has evolved into a sophisticated threat that is human-driven, adaptive, and focused on larger scale and more widespread outcomes; like holding an entire organization's assets or data for ransom.
 
 Support for Command and Control (C2) is a key part of this ransomware evolution and is what enables these attacks to adapt to the environment they target. Breaking the link to the command-and-control infrastructure means stopping the progression of an attack to its next stage.
 
 #### Detecting and remediating CobaltStrike (public preview)
 
-One of the most common post-exploitation frameworks used in human-operated ransomware attacks is CobaltStrike. Threat Intelligence teams across Microsoft track _Tactics, Techniques, and Procedures_ (TTPs) on multiple activity groups that deploy ransomware to identify patterns of behavior that can be used to defend against specific strategies and threat vectors used by malicious actors. These ransomware activity groups all, at some point in the attack life cycle, involve deploying a CobaltStrike Beacon to a victim’s computer to enable hands-on keyboard activity.
+One of the most common post-exploitation frameworks used in human-operated ransomware attacks is CobaltStrike. Threat Intelligence teams across Microsoft track _Tactics, Techniques, and Procedures_ (TTPs) on multiple activity groups that deploy ransomware to identify patterns of behavior that can be used to defend against specific strategies and threat vectors used by malicious actors. These ransomware activity groups all, at some point in the attack life cycle, involve deploying a CobaltStrike Beacon to a victim's computer to enable hands-on keyboard activity.
 
-CobaltStrike enables customization of multiple aspects of the attack, from the ability to host multiple listeners responding to different protocols, to how the main client-side component (Beacon) should perform code injection and run post exploitation jobs. When Microsoft Defender detects CobaltStrike, it can intelligently find and collect key indicators of compromise (IoC). Once captured, these indicators are shared throughout Microsoft’s product stack for detection and protection purposes.
+CobaltStrike enables customization of multiple aspects of the attack, from the ability to host multiple listeners responding to different protocols, to how the main client-side component (Beacon) should perform code injection and run post exploitation jobs. When Microsoft Defender detects CobaltStrike, it can intelligently find and collect key indicators of compromise (IoC). Once captured, these indicators are shared throughout Microsoft's product stack for detection and protection purposes.
 
-Microsoft Defender’s command and control detection isn't limited to CobaltStrike. Microsoft Defender can capture key IoCs of multiple malware families. The indicators are shared across the Microsoft protection stack to protect customers and alert them if there's a compromise.
+Microsoft Defender's command and control detection isn't limited to CobaltStrike. Microsoft Defender can capture key IoCs of multiple malware families. The indicators are shared across the Microsoft protection stack to protect customers and alert them if there's a compromise.
 
 Blocking command-and-control communication can severely impede a targeted attack, giving defenders time to find the initial entry vectors and close them down before another attempted attack.
 
@@ -164,7 +167,7 @@ Blocking command-and-control communication can severely impede a targeted attack
 
 ## Smart Screen Unblock
 
-A new feature in Microsoft Defender for Endpoint Indicators enables administrators to allow end users to bypass “Warnings” generated for some URLs and IPs. Depending on why the URL was blocked, when a Smart Screen block is encountered it may offer administrators the ability to unblock the site for up to 24 hours. In such cases, a Windows Security toast notification will appear, permitting the end-user to **Unblock** the URL or IP for the defined period of time.  
+A new feature in Microsoft Defender for Endpoint Indicators enables administrators to allow end users to bypass "Warnings" generated for some URLs and IPs. Depending on why the URL was blocked, when a Smart Screen block is encountered it may offer administrators the ability to unblock the site for up to 24 hours. In such cases, a Windows Security toast notification will appear, permitting the end-user to **Unblock** the URL or IP for the defined period of time.  
 
  > [!div class="mx-imgBorder"]
  > ![ Windows Security notification for network protection](images/network-protection-smart-screen-block-notification.png)
@@ -185,7 +188,7 @@ Network protection is enabled per device, which is typically done using your man
 > [!NOTE]
 > Microsoft Defender Antivirus must be active to enable Network protection.
 
-You can enable Network Protection in **Audit** mode or **Block** mode. If you want to evaluate the impact of enabling Network Protection before blocking IP’s or URLs, you can enable it in Audit mode for a period of time to gather data on what would be blocked. Audit mode logs when end users have connected to an address or site that would otherwise have been blocked by network protection.
+You can enable Network Protection in **Audit** mode or **Block** mode. If you want to evaluate the impact of enabling Network Protection before blocking IP's or URLs, you can enable it in Audit mode for a period of time to gather data on what would be blocked. Audit mode logs when end users have connected to an address or site that would otherwise have been blocked by network protection.
 
 ## Advanced Hunting
 
