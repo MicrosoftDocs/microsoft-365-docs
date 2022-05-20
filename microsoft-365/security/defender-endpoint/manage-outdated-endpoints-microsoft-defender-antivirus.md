@@ -1,6 +1,6 @@
 ---
-title: Apply Microsoft Defender AV protection updates to out of date endpoints
-description: Define when and how updates should be applied for endpoints that have not updated in a while.
+title: Apply Microsoft Defender Antivirus protection updates to out of date endpoints
+description: Define when and how updates should be applied for endpoints that haven't updated in a while.
 keywords: updates, protection, out-of-date, outdated, old, catch-up
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -11,7 +11,6 @@ ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 10/18/2018
 ms.reviewer:
 manager: dansimp
 ms.technology: mde
@@ -29,42 +28,48 @@ ms.collection: m365-security-compliance
 - Microsoft Defender Antivirus
 
 **Platforms**
+
 - Windows
 
-Microsoft Defender Antivirus lets you define how long an endpoint can avoid an update or how many scans it can miss before it is required to update and scan itself. This is especially useful in environments where devices are not often connected to a corporate or external network, or devices that are not used on a daily basis.
+With Microsoft Defender Antivirus, your security team can define how long an endpoint can avoid an update or how many scans it can miss before it's required to receive the update and run a scan. This capability is especially useful in environments where devices aren't often connected to a corporate or external network, or for devices that aren't used on a daily basis.
 
-For example, an employee that uses a particular PC is on break for three days and does not log on to their PC during that time.
-
-When the user returns to work and logs on to their PC, Microsoft Defender Antivirus will immediately check and download the latest protection updates, and run a scan.
+For example, an employee who uses a particular computer takes three days off of work, and doesn't sign on their computer during that time. When the employee returns to work and signs into their computer, Microsoft Defender Antivirus will immediately check and download the latest protection updates, and then run a scan.
 
 ## Set up catch-up protection updates for endpoints that haven't updated for a while
 
-If Microsoft Defender Antivirus did not download protection updates for a specified period, you can set it up to automatically check and download the latest update at the next log on. This is useful if you have [globally disabled automatic update downloads on startup](manage-event-based-updates-microsoft-defender-antivirus.md).
+If Microsoft Defender Antivirus didn't download protection updates for a specified period, you can set it up to automatically check and download the latest update the next time someone signs in on an endpoint. This configuration is useful if you have [globally disabled automatic update downloads on startup](manage-event-based-updates-microsoft-defender-antivirus.md).
+
+You can use one of several methods to set up catch-up protection updates:
+
+- [Configuration Manager](#use-configuration-manager-to-configure-catch-up-protection-updates)
+- [Group Policy](#use-group-policy-to-enable-and-configure-the-catch-up-update-feature)
+- [PowerShell cmdlets](#use-powershell-cmdlets-to-configure-catch-up-protection-updates)
+- [Windows Management Instruction (WMI)](#use-windows-management-instruction-wmi-to-configure-catch-up-protection-updates)
 
 ### Use Configuration Manager to configure catch-up protection updates
 
-1. On your Microsoft Endpoint Manager console, open the antimalware policy you want to change (click **Assets and Compliance** in the navigation pane on the left, then expand the tree to **Overview** \> **Endpoint Protection** \> **Antimalware Policies**)
+1. On your Microsoft Endpoint Manager console, open the antimalware policy you want to change (select **Assets and Compliance** in the navigation pane on the left, then expand the tree to **Overview** \> **Endpoint Protection** \> **Antimalware Policies**)
 
 2. Go to the **Security intelligence updates** section and configure the following settings:
 
-    1. Set **Force a security intelligence update if the client computer is offline for more than two consecutive scheduled updates** to **Yes**.
-    2. For the  **If Configuration Manager is used as a source for security intelligence updates...**, specify the hours before which the protection updates delivered by Configuration Manager should be considered out-of-date. This will cause the next update location to be used, based on the defined [fallback source order](manage-protection-updates-microsoft-defender-antivirus.md#fallback-order).
+    - Set **Force a security intelligence update if the client computer is offline for more than two consecutive scheduled updates** to **Yes**.
+    - For the  **If Configuration Manager is used as a source for security intelligence updates...**, specify the hours before which the protection updates delivered by Configuration Manager should be considered out-of-date. This setting causes the next update location to be used, based on the defined [fallback source order](manage-protection-updates-microsoft-defender-antivirus.md#fallback-order).
 
-3. Click **OK**.
+3. Select **OK**.
 
 4. [Deploy the updated policy as usual](/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers).
 
 ### Use Group Policy to enable and configure the catch-up update feature
 
-1. On your Group Policy management computer, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and click **Edit**.
+1. On your Group Policy management computer, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and then select **Edit**.
 
 2. In the **Group Policy Management Editor** go to **Computer configuration**.
 
-3. Click **Policies** then **Administrative templates**.
+3. Select **Policies** then **Administrative templates**.
 
 4. Expand the tree to **Windows components > Microsoft Defender Antivirus > Signature Updates**.
 
-5. Double-click the **Define the number of days after which a catch-up security intelligence update is required** setting and set the option to **Enabled**. Enter the number of days after which you want Microsoft Defender AV to check for and download the latest protection update.
+5. Double-click the **Define the number of days after which a catch-up security intelligence update is required** setting and set the option to **Enabled**. Enter the number of days after which you want Microsoft Defender Antivirus to check for and download the latest protection update.
 
 6. Click **OK**.
 
@@ -96,7 +101,7 @@ You can also specify the number of days after which Microsoft Defender Antivirus
 
 ### Use Group Policy to specify the number of days before protection is considered out-of-date
 
-1. On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and click **Edit**.
+1. On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and then select **Edit**.
 
 2. In the **Group Policy Management Editor** go to **Computer configuration**.
 
@@ -104,11 +109,11 @@ You can also specify the number of days after which Microsoft Defender Antivirus
 
 4. Expand the tree to **Windows components > Microsoft Defender Antivirus > Signature Updates** and configure the following settings:
 
-    1. Double-click **Define the number of days before spyware definitions are considered out of date** and set the option to **Enabled**. Enter the number of days after which you want Microsoft Defender AV to consider spyware Security intelligence to be out-of-date.
+    1. Double-click **Define the number of days before spyware definitions are considered out of date** and set the option to **Enabled**. Enter the number of days after which you want Microsoft Defender Antivirus to consider spyware Security intelligence to be out-of-date.
 
     2. Click **OK**.
 
-    3. Double-click **Define the number of days before virus definitions are considered out of date** and set the option to **Enabled**. Enter the number of days after which you want Microsoft Defender AV to consider virus Security intelligence to be out-of-date.
+    3. Double-click **Define the number of days before virus definitions are considered out of date** and set the option to **Enabled**. Enter the number of days after which you want Microsoft Defender Antivirus to consider virus Security intelligence to be out-of-date.
 
     4. Click **OK**.
 
