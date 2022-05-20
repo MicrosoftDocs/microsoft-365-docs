@@ -22,6 +22,10 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 We're continuously adding new features to [Microsoft 365 Lighthouse](m365-lighthouse-overview.md), fixing issues we learn about, and making changes based on your feedback. Take a look below to see what's available for you today. Some features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, you should see it soon.
 
+## May 2022
+
+
+
 ## April 2022
 
 ### Delegated access type and roles on Tenants page
@@ -33,7 +37,7 @@ To learn more, see [Overview of permissions in Microsoft 365 Lighthouse](m365-li
 **Add screenshot here**
 
 > [!NOTE]
-> This functionality is being rolled out and may not be immediately available in all tenants.
+> This functionality is being rolled out over several weeks and may not be immediately available in all tenants.
 
 ## March 2022
 
