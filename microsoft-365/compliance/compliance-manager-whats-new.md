@@ -35,6 +35,8 @@ Europe, Middle East, and Africa (EMEA)
 
 US Government Community (GCC) Moderate, GCC High, and Department of Defense (DoD) customers should see these templates available in the next few weeks.
 
+View our [full list of assessment templates](compliance-manager-templates-list.md).
+
 ## March 2022
 
 ### New templates available
