@@ -31,7 +31,7 @@ Microsoft 365 Business Premium offers a number of ways for you to protect your b
 
 ## Mobile device management or MDM
 
-Microsoft 365 Business Premium lets you set up policies that protect data on your Windows 10 devices. When a device is under mobile device management, you control the entire device, and can wipe data from it, and also reset it to factory settings. For more information, see [Set device protection settings for Windows 10 PCs](../../business-premium/m365bp-protection-settings-for-windows-10-pcs.md).
+Microsoft 365 Business Premium lets you set up policies that protect data on your Windows 10 devices. When a device is under mobile device management, you control the entire device, and can wipe data from it, and also reset it to factory settings. For more information, see [Set device protection settings for Windows 10 PCs](../../business-premium/m365bp-protection-settings-for-windows-10-devices.md).
 
 ## Mobile application management or MAM
 
