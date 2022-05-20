@@ -11,7 +11,7 @@ ms.assetid: 828a17db-956a-401e-bb62-d153b6dffd53
 description: "Follow these instructions to create your About Us page, including business name, address, phone number, website URL, logo, and business hours in Microsoft Bookings."
 ---
 
-# Enter your business information
+# Enter your business information in Microsoft Bookings
 
 In Microsoft Bookings, the Business Information page within the web app contains all the details that you'd typically find on a business' "About us" page. These details include a relevant name, address, phone number, web site URL, privacy policy URL, logo, and business hours.
 

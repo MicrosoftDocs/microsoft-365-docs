@@ -11,7 +11,7 @@ ms.assetid: 4b2c84ec-64d3-4027-af4c-40f69e7b37c9
 description: "Learn how to set scheduling policies for your business. Scheduling policies include the length of appointments, as well as acceptable lead and cancellation times."
 ---
 
-# Set your scheduling policies
+# Set your Microsoft Bookings scheduling policies
 
 Not all appointments are the same. Some take only a few minutes, while others can take hours or more. In Microsoft Bookings, the booking page is where you set the scheduling policies for your business. Scheduling policies include the length of appointments, acceptable lead and cancellation times, and automatic notifications of booking changes. Additional customization can be added for each service within the Services page, with additional duration settings and policies that apply only to that service.
 
