@@ -55,18 +55,6 @@ The following video shows the guided setup process for Microsoft 365 Business St
 > [!TIP]
 > After you have added users, give them a link to the [Employee quick setup guide](../admin/setup/employee-quick-setup.md). The guide walks them through signing in, getting Office apps, and saving, copying, and sharing files.
 
-## Work with a Microsoft partner
-
-If you'd prefer to have a Microsoft partner help you get and set up Microsoft 365, follow these steps:
-
-1. Go to the **Microsoft Solution Providers** page ([https://www.microsoft.com/solution-providers](https://www.microsoft.com/solution-providers)).
-
-2. In the search box, fill in your location and company size. 
-
-3. In the **Search for products, services, skills, industries** box, put `Microsoft 365`, and then select **Go**.
-
-4. Review the list of results. Select a provider to learn more about their expertise and the services they provide.
-
 ## See also
 
 - [Find your partner or reseller](../admin/manage/find-your-partner-or-reseller.md)
