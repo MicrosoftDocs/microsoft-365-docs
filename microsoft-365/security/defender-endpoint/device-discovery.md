@@ -109,13 +109,13 @@ Search for "SSH" related security recommendations to find SSH vulnerabilities th
 
 ## Use advanced hunting on discovered devices
 
-You can use advanced hunting queries to gain visibility on discovered devices. Find details about discovered devices in the DeviceInfo table, or network-related information about those devices in the DeviceNetworkInfo table.
+You can use advanced hunting queries to gain visibility on discovered devices. Find details about discovered devices in the DeviceInfo table, or network-related information about those devices, in the DeviceNetworkInfo table.
 
 :::image type="content" source="images/f48ba1779eddee9872f167453c24e5c9.png" alt-text="The Advanced hunting page on which queries can be used" lightbox="images/f48ba1779eddee9872f167453c24e5c9.png":::
 
 ### Query discovered devices details
 
-Run this query, on the DeviceInfo table, to return all discovered devices along with the most up to details for each device:
+Run this query on the DeviceInfo table to return all discovered devices along with the most up-to-date details for each device:
 
 ```query
 DeviceInfo
