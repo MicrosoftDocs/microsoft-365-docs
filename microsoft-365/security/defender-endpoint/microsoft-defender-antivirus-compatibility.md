@@ -14,7 +14,6 @@ ms.custom: nextgen
 ms.reviewer: mkaminska, pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 04/19/2022
 ms.collection: 
 - M365-security-compliance
 - m365initiative-defender-endpoint
@@ -29,8 +28,6 @@ ms.collection:
 
 **Platforms**
 - Windows
-
-[!include[Prerelease information](../../includes/prerelease.md)]
 
 Microsoft Defender Antivirus is automatically installed on endpoints running the following versions of Windows:
 
@@ -213,6 +210,5 @@ The table in this section describes various states you might see with Microsoft 
 ## See also
 
 - [Microsoft Defender Antivirus on Windows clients](microsoft-defender-antivirus-in-windows-10.md)
-- [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md)
 - [EDR in block mode](edr-in-block-mode.md)
 - [Learn about Endpoint data loss prevention](/microsoft-365/compliance/endpoint-dlp-learn-about)
