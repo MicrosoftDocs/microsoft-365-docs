@@ -75,7 +75,7 @@ You can use one of several methods to set up catch-up protection updates:
 
 ### Use PowerShell cmdlets to configure catch-up protection updates
 
-Use the following cmdlets:
+Use the following cmdlet:
 
 ```PowerShell
 Set-MpPreference -SignatureUpdateCatchupInterval
@@ -84,7 +84,7 @@ Set-MpPreference -SignatureUpdateCatchupInterval
 For more information about using PowerShell with Microsoft Defender Antivirus, see the following articles:
 
 - [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md)
-- [Defender Antivirus cmdlets](/powershell/module/defender/) for more information on how to use PowerShell with Microsoft Defender Antivirus
+- [Defender Antivirus cmdlets](/powershell/module/defender/)
 
 ### Use Windows Management Instruction (WMI) to configure catch-up protection updates
 
@@ -94,7 +94,7 @@ Use the [**Set** method of the **MSFT_MpPreference**](/previous-versions/windows
 SignatureUpdateCatchupInterval
 ```
 
-See the following for more information and allowed parameters:
+See the following article for more information and allowed parameters:
 
 - [Windows Defender WMIv2 APIs](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
@@ -108,17 +108,17 @@ You can also specify the number of days after which Microsoft Defender Antivirus
 
 2. In the **Group Policy Management Editor** go to **Computer configuration**.
 
-3. Click **Policies** then **Administrative templates**.
+3. Select **Policies** then **Administrative templates**.
 
 4. Expand the tree to **Windows components > Microsoft Defender Antivirus > Signature Updates** and configure the following settings:
 
     1. Double-click **Define the number of days before spyware definitions are considered out of date** and set the option to **Enabled**. Enter the number of days after which you want Microsoft Defender Antivirus to consider spyware Security intelligence to be out-of-date.
 
-    2. Click **OK**.
+    2. Select **OK**.
 
     3. Double-click **Define the number of days before virus definitions are considered out of date** and set the option to **Enabled**. Enter the number of days after which you want Microsoft Defender Antivirus to consider virus Security intelligence to be out-of-date.
 
-    4. Click **OK**.
+    4. Select **OK**.
 
 ## Set up catch-up scans for endpoints that have not been scanned for a while
 
@@ -126,7 +126,7 @@ You can set the number of consecutive scheduled scans that can be missed before 
 
 The process for enabling this feature is:
 
-1. Set up at least one scheduled scan (see the [Schedule scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md) topic).
+1. Set up at least one scheduled scan (see the [Schedule scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md) article).
 
 2. Enable the catch-up scan feature.
 
@@ -138,7 +138,7 @@ This feature can be enabled for both full and quick scans.
 
 1. Ensure you have set up at least one scheduled scan.
 
-2. On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and click **Edit**.
+2. On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and select **Edit**.
 
 3. In the **Group Policy Management Editor** go to **Computer configuration**.
 
@@ -147,9 +147,9 @@ This feature can be enabled for both full and quick scans.
 5. Expand the tree to **Windows components > Microsoft Defender Antivirus > Scan** and configure the following settings:
 
     - If you have set up scheduled quick scans, double-click the **Turn on catch-up quick scan** setting and set the option to **Enabled**.
-    - If you have set up scheduled full scans, double-click the **Turn on catch-up full scan** setting and set the option to **Enabled**. Click **OK**.
+    - If you have set up scheduled full scans, double-click the **Turn on catch-up full scan** setting and set the option to **Enabled**. Select **OK**.
     - Double-click the **Define the number of days after which a catch-up scan is forced** setting and set the option to **Enabled**.
-    - Enter the number of scans that can be missed before a scan will be automatically run when the user next logs on to the PC. The type of scan that is run is determined by the **Specify the scan type to use for a scheduled scan** (see the [Schedule scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md) topic). Click **OK**.
+    - Enter the number of scans that can be missed before a scan will be automatically run when the user next signs in on the endpoint. The type of scan that is run is determined by the **Specify the scan type to use for a scheduled scan** (see the [Schedule scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md) article). Select **OK**.
 
 > [!NOTE]
 > The Group Policy setting title refers to the number of days. The setting, however, is applied to the number of scans (not days) before the catch-up scan will be run.
@@ -164,7 +164,10 @@ Set-MpPreference -DisableCatchupQuickScan
 
 ```
 
-See [Use PowerShell cmdlets to manage Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md)  and [Defender Antivirus cmdlets](/powershell/module/defender/) for more information on how to use PowerShell with Microsoft Defender Antivirus.
+For more information about using PowerShell with Microsoft Defender Antivirus, see the following articles:
+
+- [Use PowerShell cmdlets to manage Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) 
+- [Defender Antivirus cmdlets](/powershell/module/defender/)
 
 ### Use Windows Management Instruction (WMI) to configure catch-up scans
 
@@ -175,7 +178,7 @@ DisableCatchupFullScan
 DisableCatchupQuickScan
 ```
 
-See the following for more information and allowed parameters:
+See the following article for more information and allowed parameters:
 
 - [Windows Defender WMIv2 APIs](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
