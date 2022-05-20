@@ -128,7 +128,7 @@
           href: m365bp-create-and-edit-autopilot-devices.md
     - name: App protection settings for Android and iOS
       href: m365bp-app-protection-settings-for-android-and-ios.md
-    - name: Map protection features to InTune settings
+    - name: Map protection features to Intune settings
       href: m365bp-map-protection-features-to-intune-settings.md
     - name: Set up Compliance Manager
       href: m365bp-set-up-compliance.md
