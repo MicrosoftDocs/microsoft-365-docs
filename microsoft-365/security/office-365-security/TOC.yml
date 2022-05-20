@@ -364,9 +364,9 @@
        items:
        - name: Quarantine
          href: quarantine-email-messages.md
-       - name: Manage quarantined messages and files as an admin
+       - name: Admin quarantine
          href: manage-quarantined-messages-and-files.md
-       - name: Find and release quarantined messages as a user
+       - name: End-user quarantine
          href: find-and-release-quarantined-messages-as-a-user.md
        - name: Quarantine policies
          href: quarantine-policies.md
