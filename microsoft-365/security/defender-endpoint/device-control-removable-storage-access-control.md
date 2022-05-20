@@ -25,9 +25,9 @@ ms.date: 04/11/2022
 > [!NOTE]
 > The Group Policy management and Intune OMA-URI/Custom Policy management of this product are now generally available (4.18.2106): See [Tech Community blog: Protect your removable storage and printer with Microsoft Defender for Endpoint](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/protect-your-removable-storage-and-printers-with-microsoft/ba-p/2324806).
 
-Microsoft Defender for Endpoint Device Control Removable Storage Access Control enables you to do the following task:
+## Device Control Removable Storage Access Control Overview
 
-- auditing, allowing or preventing the read, write or execute access to removable storage with or without exclusion
+Microsoft Defender for Endpoint Device Control Removable Storage Access Control enables you to audit, allow or prevent the read, write or execute access to removable storage with or without exclusion.
 
 |Privilege|Permission|
 |---|---|
@@ -38,15 +38,17 @@ Microsoft Defender for Endpoint Device Control Removable Storage Access Control 
 |User-based Support|Yes|
 |Machine-based Support|Yes|
 
+Microsoft Defender for Endpoint Device Control Removable Storage Access Control gives you the following capabilities:
+
 |Capability|Description|Deploy through Intune|Deploy through Group Policy|
 |---|---|---|---|
-|Removable Media Group Creation|Allows you to create reusable removable media group|Step 1 in the section, [Deploying policy via OMA-URI](#deploying-policy-via-oma-uri) | Step 1 in the section, [Deploying policy via Group Policy](#deploying-policy-via-group-policy)|
-|Policy Creation|Allows you to create policy to enforce each removable media group|Step 2 in the section, [Deploying policy via OMA-URI](#deploying-policy-via-oma-uri) | Steps 2 and 3 in the section, [Deploying policy via Group Policy](#deploying-policy-via-group-policy) |
-|Default Enforcement|Allows you to set default access (Deny or Allow) to removable media if there is no policy|Step 3 in the section, [Deploying policy via OMA-URI](#deploying-policy-via-oma-uri) | Step 4 in the section, [Deploying policy via Group Policy](#deploying-policy-via-group-policy) |
-|Enable or Disable Removable Storage Access Control|If you set Disable, it will disable the Removable Storage Access Control policy on this machine| Step 4 in the section, [Deploying policy via OMA-URI](#deploying-policy-via-oma-uri) | Step 5 in the section, [Deploying policy via Group Policy](#deploying-policy-via-group-policy) |
-|Capture file information|Allows you to create policy to capture file information when Write access happens| Steps 2 and 5 in the section, [Deploying policy via OMA-URI](#deploying-policy-via-oma-uri) | Step 2 and 6 in the section, [Deploying policy via Group Policy](#deploying-policy-via-group-policy) |
+|Removable Media Group Creation|Allows you to create reusable removable media group|Step 1 in the section, [Deploying policy by using OMA-URI](#deploying-policy-via-oma-uri) | Step 1 in the section, [Deploying policy by using Group Policy](#deploying-policy-via-group-policy)|
+|Policy Creation|Allows you to create policy to enforce each removable media group|Step 2 in the section, [Deploying policy by using OMA-URI](#deploying-policy-via-oma-uri) | Steps 2 and 3 in the section, [Deploying policy by using Group Policy](#deploying-policy-via-group-policy) |
+|Default Enforcement|Allows you to set default access (Deny or Allow) to removable media if there is no policy|Step 3 in the section, [Deploying policy by using OMA-URI](#deploying-policy-via-oma-uri) | Step 4 in the section, [Deploying policy by using Group Policy](#deploying-policy-via-group-policy) |
+|Enable or Disable Removable Storage Access Control|If you set Disable, it will disable the Removable Storage Access Control policy on this machine| Step 4 in the section, [Deploying policy by using OMA-URI](#deploying-policy-via-oma-uri) | Step 5 in the section, [Deploying policy by using Group Policy](#deploying-policy-via-group-policy) |
+|Capture file information|Allows you to create policy to capture file information when Write access happens| Steps 2 and 5 in the section, [Deploying policy by using OMA-URI](#deploying-policy-via-oma-uri) | Step 2 and 6 in the section, [Deploying policy by using Group Policy](#deploying-policy-via-group-policy) |
 
-## Prepare your endpoints
+### Prepare your endpoints
 
 Deploy Removable Storage Access Control on Windows 10 and Windows 11 devices that have antimalware client version **4.18.2103.3 or later**.
 
@@ -61,7 +63,7 @@ Deploy Removable Storage Access Control on Windows 10 and Windows 11 devices tha
 > [!NOTE]
 > None of Windows Security components need to be active as you can run Removable Storage Access Control independent of Windows Security status.
 
-## Policy properties
+## Device Control Removable Storage Access Control Policies
 
 You can use the following properties to create a removable storage group:
 
@@ -73,8 +75,10 @@ You can use the following properties to create a removable storage group:
 |Property Name|Description|Options|
 |---|---|---|
 |**Group Id**|GUID, a unique ID, represents the group and will be used in the policy as GroupId||
-|**DescriptorIdList**|List the device properties you want to use to cover in the group. For each device property, see [Device Properties](device-control-removable-storage-protection.md) for more detail. All properties are case sensitive. |**PrimaryId**: `RemovableMediaDevices`, `CdRomDevices`, `WpdDevices`<p>**BusId**: For example, USB, SCSI<p>**DeviceId**<p>**HardwareId**<p>**InstancePathId**: InstancePathId is a string that uniquely identifies the device in the system, for example, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0`. The number at the end (for example &0) represents the available slot and may change from device to device. For best results, use a wildcard at the end. For example, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*`.<p>**FriendlyNameId**<p>**SerialNumberId**<p>**VID**<p>**PID**<p>**VID_PID**<p>`0751_55E0`: match this exact VID/PID pair<p>`_55E0`: match any media with PID=55E0 <p>`0751_`: match any media with VID=0751|
-|**MatchType**|When there are multiple device properties being used in the `DescriptorIDList`, MatchType defines the relationship.|**MatchAll**: Any attributes under the `DescriptorIdList` will be **And** relationship; for example, if administrator puts `DeviceID` and `InstancePathID`, for every connected USB, system will check to see whether the USB meets both values. <p> **MatchAny**: The attributes under the DescriptorIdList will be **Or** relationship; for example, if administrator puts `DeviceID` and `InstancePathID`, for every connected USB, system will do the enforcement as long as the USB has either an identical **DeviceID** or **InstanceID** value. |
+|**DescriptorIdList**|List the device properties you want to use to cover in the group. For each device property, see [Device Properties](device-control-removable-storage-protection.md) for more detail. All properties are case sensitive. |**PrimaryId**: `RemovableMediaDevices`, `CdRomDevices`, `WpdDevices`<br>**BusId**: For example, USB, SCSI<br>**DeviceId**<br>**HardwareId**<br>**InstancePathId**: InstancePathId is a string that uniquely identifies the device in the system, for example, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0`. The number at the end (for example &0) represents the available slot and may change from device to device. For best results, use a wildcard at the end. For example, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*`.<br>**FriendlyNameId**<br>**SerialNumberId**<br>**VID**<br>**PID**<br>**VID_PID**<br>`0751_55E0`: match this exact VID/PID pair<br>`_55E0`: match any media with PID=55E0 <br>`0751_`: match any media with VID=0751|
+|**MatchType**|When there are multiple device properties being used in the `DescriptorIDList`, MatchType defines the relationship.|**MatchAll**: Any attributes under the `DescriptorIdList` will be **And** relationship; for example, if administrator puts `DeviceID` and `InstancePathID`, for every connected USB, system will check to see whether the USB meets both values. <br> **MatchAny**: The attributes under the DescriptorIdList will be **Or** relationship; for example, if administrator puts `DeviceID` and `InstancePathID`, for every connected USB, system will do the enforcement as long as the USB has either an identical **DeviceID** or **InstanceID** value. |
+
+You can use the following properties to create the access control policy:
 
 ### Access Control Policy
 
@@ -90,9 +94,9 @@ You can use the following properties to create a removable storage group:
 | **Options** | Defines whether to display notification or not |**When Type Allow is selected**: <p>0: nothing<p>4: disable **AuditAllowed** and **AuditDenied** for this Entry. Even if **Allow** happens and the AuditAllowed is setting configured, the system will not send event. <p>8: capture file information and have a copy of the file as evidence for Write access. <p>16: capture file information for Write access. <p>**When Type Deny is selected**: <p>0: nothing<p>4: disable **AuditDenied** for this Entry. Even if **Block** happens and the AuditDenied is setting configured, the system will not show notification. <p>**When Type **AuditAllowed** is selected**: <p>0: nothing <p>1: nothing <p>2: send event<p> **When Type **AuditDenied** is selected**: <p>0: nothing <p>1: show notification <p>2: send event<p>3: show notification and send event |
 |AccessMask|Defines the access. | **Disk level access**: <p>1: Read <p>2: Write <p>4: Execute <p>**File system level access**: <p>8: File system Read <p>16: File system Write <p>32: File system Execute <p><p>You can have multiple access by performing binary OR operation, for example, the AccessMask for Read and Write and Execute will be 7; the AccessMask for Read and Write will be 3.|
 
-## Common Removable Storage Access Control scenarios
+## Device Control Removable Storage Access Control Scenarios
 
-To help familiarize you with Microsoft Defender for Endpoint Removable Storage Access Control, we have put together some common scenarios for you to follow.
+To familiarize you with Microsoft Defender for Endpoint Removable Storage Access Control, we have put together some common scenarios for you to follow.
 
 ### Scenario 1: Prevent Write and Execute access to all but allow specific approved USBs
 
@@ -130,15 +134,15 @@ To help familiarize you with Microsoft Defender for Endpoint Removable Storage A
 
     2. Policy 2: Audit Write and Execute access to others. An example of this use case is: PolicyRule **b58ab853-9a6f-405c-a194-740e69422b48** in the sample [Scenario 2 Audit Write and Execute access to others.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
 
-## Deploying and managing policy via Group Policy
+## Deploying and managing policy by using Group Policy
 
-The Removable Storage Access Control feature enables you to apply policy via Group Policy to either user or device, or both.
+The Removable Storage Access Control feature enables you to apply policy by using Group Policy to either user or device, or both.
 
 ### Licensing
 
 Before you get started with Removable Storage Access Control, you must confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). To access and use Removable Storage Access Control, you must have Microsoft 365 E3 or Microsoft 365 E5.
 
-### Deploying policy via Group Policy
+### Deploying policy by using Group Policy
 
 1. Combine all groups within `<Groups>` `</Groups>` into one xml file.
 
@@ -185,9 +189,9 @@ Before you get started with Removable Storage Access Control, you must confirm y
 
     :::image type="content" source="../../media/define-device-control-policy-rules.png" alt-text="Group Policy - Set locaiton for file evidence":::
 
-## Deploying and managing policy via Intune OMA-URI
+## Deploying and managing policy by using Intune OMA-URI
 
-The Removable Storage Access Control feature enables you to apply policy via OMA-URI to either user or device, or both.
+The Removable Storage Access Control feature enables you to apply policy by using OMA-URI to either user or device, or both.
 
 ### Licensing requirements
 
@@ -203,7 +207,7 @@ For policy deployment in Intune, the account must have permissions to create, ed
 
 - Global administrator
 
-### Deploying policy via OMA-URI
+### Deploying policy by using OMA-URI
 
 Go to Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>) **> Devices > Create profile > Platform: Windows 10 and later, Profile type: Templates > Custom**
 
@@ -372,7 +376,7 @@ We've validated one USB group with 100,000 media - up to 7 MB in size. The polic
 
 2. Another reason could be that the XML file isn't correctly formatted, for example, not using the correct markdown formatting for the "&" character in the XML file, or the text editor might add a byte order mark (BOM) 0xEF 0xBB 0xBF at the beginning of the files, which causes the XML parsing not to work. One simple solution is to download the [sample file](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) (select **Raw** and then **Save as**) and then update.
 
-3. If you are deploying and managing the policy via Group Policy, please make sure combine all PolicyRule into one XML file within a parent node called PolicyRules and all Group into one XML file within a parent node called Groups; if you manage through Intune, keep one PolicyRule one XML file, same thing, one Group one XML file.
+3. If you are deploying and managing the policy by using Group Policy, please make sure combine all PolicyRule into one XML file within a parent node called PolicyRules and all Group into one XML file within a parent node called Groups; if you manage through Intune, keep one PolicyRule one XML file, same thing, one Group one XML file.
 
 If still not working, you may want to contact us and share support cab by running cmd with administrator: "%programfiles%\Windows Defender\MpCmdRun.exe" -GetFiles
 
