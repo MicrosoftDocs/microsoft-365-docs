@@ -52,7 +52,7 @@ See [Configure Microsoft Threat Experts capabilities](/microsoft-365/security/de
 
 ## Microsoft Threat Experts - Targeted attack notification
 
-Microsoft Threat Experts - Targeted attack notification provides proactive hunting for the most important threats to your network, including human adversary intrusions, hands-on-keyboard attacks, or advanced attacks like cyber-espionage. These notifications shows up as a new alert. The managed hunting service includes:
+Microsoft Threat Experts - Targeted attack notification provides proactive hunting for the most important threats to your network, including human adversary intrusions, hands-on-keyboard attacks, or advanced attacks like cyber-espionage. These notifications show up as a new alert. The managed hunting service includes:
 
 - Threat monitoring and analysis, reducing dwell time and risk to the business
 - Hunter-trained artificial intelligence to discover and prioritize both known and unknown attacks
