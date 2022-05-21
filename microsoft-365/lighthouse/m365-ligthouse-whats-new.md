@@ -158,3 +158,32 @@ It's now possible to filter data by multiple tenant tags at the same time. This 
 
 **Add screenshot here**
 
+### Capability to assign baseline configurations to specific Azure Active Directory groups
+
+We've added the capability to assign baseline configurations to specific Azure Active Directory (Azure AD) groups of your customer tenants from within Microsoft 365 Lighthouse. From any deployment step page, browse and select the specific Azure AD groups that you want to include or exclude, and then deploy the configurations to your customer tenant.
+
+**Add screenshot here**
+
+### Improvements to Risky users page
+
+You can now easily view and understand the reasons for a user's risk from within Microsoft 365 Lighthouse. In the left navigation pane of Lighthouse, select **Users**, and then select the **Risky users** tab. Select **View risk detections** in the **Details** column for any user. From here, you can review the details of the risk and then select **Confirm user compromised** or **Dismiss user risk**. You can also confirm or dismiss a risk for multiple users at the same time from the **Risky users** page. The ability to dismiss a user's risk can be useful when password reset is not an option or if you believe the affected user is no longer at risk.
+
+### Provide feedback on Microsoft 365 Lighthouse
+
+Your feedback matters and is important to us, so we've added new feedback functionality that will occasionally (no more than once a month) prompt you to provide feedback. You can also provide feedback at any time by selecting the Feedback icon in the upper-right corner of Lighthouse.
+
+## September 2021
+
+### Tenant filter changes
+
+We've made some changes to the tenant filtering experience to help you quickly view and manage tenants and tags from any page within Microsoft 365 Lighthouse. Simply select the Tenants filter at the top of any page and then browse or enter the tenant or tag name that you want to filter by.
+
+**Add screenshot here**
+
+## August 2021
+
+### Capability to communicate with users through in-product email workflows
+
+We've made it easier to communicate with users in your customer tenants about actions they're required to take. From the list of users not registered for multifactor authentication (MFA) or self-service password reset, you can now select one or more users and send them an email message using a downloadable email template.
+
+**Add screenshot here**
