@@ -24,7 +24,7 @@ ms.prod: m365-security
 
 # Sending mail to Microsoft 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 These articles help external senders improve their reputation and increase their ability to deliver email to users at Microsoft 365. They also provide some information about how you can report junk email and phishing attempts even if you aren't a Microsoft 365 user yourself.
 
