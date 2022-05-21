@@ -34,11 +34,11 @@ With Microsoft Defender Antivirus, you have several options for reviewing protec
 
 If you have a third-party security information and event management (SIEM) server, you can also consume [Windows Defender client events](/windows/win32/events/windows-events).
 
-Windows events comprise several security event sources, including Security Account Manager (SAM) events ([enhanced for Windows 10](/windows/whats-new/whats-new-windows-10-version-1507-and-1511), also see the [Security auditing](/windows/device-security/auditing/security-auditing-overview) topic) and  [Windows Defender events](troubleshoot-microsoft-defender-antivirus.md).
+Windows events comprise several security event sources, including Security Account Manager (SAM) events ([enhanced for Windows 10](/windows/whats-new/whats-new-windows-10-version-1507-and-1511), also see the [Security auditing](/windows/security/threat-protection/auditing/security-auditing-overview) topic) and  [Windows Defender events](troubleshoot-microsoft-defender-antivirus.md).
 
 These events can be centrally aggregated using the [Windows event collector](/windows/win32/wec/windows-event-collector). Often, SIEM servers have connectors for Windows events, allowing you to correlate all security events in your SIEM server.
 
-You can also [monitor malware events using the Malware Assessment solution in Log Analytics](/azure/log-analytics/log-analytics-malware).
+You can also [monitor malware events using the Malware Assessment solution in Log Analytics](/security/benchmark/azure/security-control-logging-monitoring).
 
 For monitoring or determining status with PowerShell, WMI, or Microsoft Azure, see the [(Deployment, management, and reporting options table)](deploy-manage-report-microsoft-defender-antivirus.md#ref2).
 

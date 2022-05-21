@@ -68,7 +68,7 @@ The following sections describe how to perform some of the most common tasks whe
 
 2. Select the **Virus & threat protection** tile (or the shield icon on the left menu bar).
 
-3. Select **Virus & threat protection updates**. The currently installed version is displayed along with some information about when it was downloaded. You can check your current against the latest version available for manual download, or review the change log for that version. See [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/wdsi/defenderupdates).
+3. Select **Virus & threat protection updates**. The currently installed version is displayed along with some information about when it was downloaded. You can check your current against the latest version available for manual download, or review the change log for that version. See [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus).
 
 4. Select **Check for updates** to download new protection updates (if there are any).
 
