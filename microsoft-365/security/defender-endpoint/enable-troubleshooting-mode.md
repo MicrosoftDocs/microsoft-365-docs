@@ -132,7 +132,7 @@ search in (DeviceEvents)
 ActionType == "AntivirusTroubleshootModeEvent"
 | extend _tsmodeproperties = parse_json(AdditionalFields)
 | where Timestamp > ago(3h)
-| where _tsmodeproperties.TroubleshootingStateChangeReason == "Troubleshooting mode started"
+| where _tsmodeproperties.TroubleshootingStateChangeReason contains "started"
 |summarize (Timestamp, ReportId)=arg_max(Timestamp, ReportId), count() by DeviceId
 ```
 
@@ -143,7 +143,7 @@ search in (DeviceEvents)
 ActionType == "AntivirusTroubleshootModeEvent"
 | extend _tsmodeproperties = parse_json(AdditionalFields)
 | where Timestamp > ago(30d)  // choose the date range you want
-| where _tsmodeproperties.TroubleshootingStateChangeReason == "Troubleshooting mode started"
+| where _tsmodeproperties.TroubleshootingStateChangeReason contains "started"
 | summarize (Timestamp, ReportId)=arg_max(Timestamp, ReportId), count() by DeviceId
 | sort by count_
 ```
@@ -156,7 +156,7 @@ ActionType == "AntivirusTroubleshootModeEvent"
 | extend _tsmodeproperties = parse_json(AdditionalFields)
 | where Timestamp > ago(2d) //beginning of time range
 | where Timestamp < ago(1d) //end of time range
-| where _tsmodeproperties.TroubleshootingStateChangeReason == "Troubleshooting mode started"
+| where _tsmodeproperties.TroubleshootingStateChangeReason contains "started"
 | summarize (Timestamp, ReportId)=arg_max(Timestamp, ReportId), count()
 | where count_ > 5          // choose your max # of TS mode instances for your time range
 ```
