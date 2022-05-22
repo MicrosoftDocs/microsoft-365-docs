@@ -354,12 +354,8 @@
           href: security-and-compliance/enable-modern-authentication.md
         - name: Pre-requisites for data protection
           href: /microsoft-365/business-premium/m365bp-pre-requisites-for-data-protection
-        - name: Increase threat protection
-          href: security-and-compliance/increase-threat-protection.md
         - name: Threats detected by Microsoft Defender Antivirus
-          href: security-and-compliance/threats-detected-defender-av.md              
-        - name: Review detected threats and take action
-          href: security-and-compliance/review-threats-take-action.md    
+          href: security-and-compliance/threats-detected-defender-av.md
         - name: Set up compliance features
           href: /microsoft-365/business-premium/m365bp-set-up-compliance.md
         - name: Secure score
@@ -385,9 +381,6 @@
         - name: App protection settings for Windows 10 PCs
           href: devices/protection-settings-for-windows-10-devices.md
         - name: Validate settings on Android or iOS
-          href: devices/validate-settings-on-android-or-ios.md
-        - name: Validate settings on Windows 10 PCs
-          href: devices/validate-settings-on-windows-10-pcs.md
         - name: Autopilot
           items: 
             - name: Create and edit AutoPilot profiles

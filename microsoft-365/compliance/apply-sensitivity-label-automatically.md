@@ -62,7 +62,7 @@ There are two different methods for automatically applying a sensitivity label t
     - Maximum of 25,000 automatically labeled files in your tenant per day.
     - Maximum of 100 auto-labeling policies per tenant, each targeting up to 100 sites (SharePoint or OneDrive) when they're specified individually. You can also specify all sites, and this configuration is exempt from the 100 sites maximum.
     - Existing values for modified, modified by, and the date aren't changed as a result of auto-labeling policies—for both simulation mode and when labels are applied.
-    - When the label applies encryption, the [Rights Management issuer and Rights Management owner](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) is the account that last modified the file. If this account is no longer in Azure Active Directory, the label won't be applied because these values can't be set.
+    - When the label applies encryption, the [Rights Management issuer and Rights Management owner](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) is the account that last modified the file.
 
     Specific to auto-labeling for Exchange:
     
@@ -223,6 +223,23 @@ Specific to the Azure Information Protection unified labeling client:
 - For Outlook to support recommended labeling, you must first configure an [advanced policy setting](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#enable-recommended-classification-in-outlook).
 
 - Sensitive information can be detected in the body text in documents and emails, and to headers and footers—but not in the subject line or attachments of email.
+
+### Convert your label settings into an auto-labeling policy
+
+> [!NOTE]
+> This option is gradually rolling out.
+
+If the label includes sensitive info types for the configured conditions, you'll see an option at the end of the label creation or editing process to automatically create an auto-labeling policy that's based on the same auto-labeling settings.
+
+Because auto-labeling policies don't support trainable classifiers:
+
+- If the label conditions contain just trainable classifiers, you won't see the option to automatically create an auto-labeling policy.
+
+- If the label conditions contain trainable classifiers and sensitivity info types, an auto-labeling policy will be created for just the sensitive info types. 
+
+Although an auto-labeling policy is automatically created for you by auto-populating the values that you would have to select manually if you created the policy from scratch, you can still view and edit the values before they are saved.
+
+By default, all locations for SharePoint, OneDrive, and Exchange are included in the auto-label policy, and when the policy is saved, it runs in [simulation mode](#learn-about-simulation-mode). There's no check that you've [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md), which is one of the prerequisites for auto-labeling to apply to content in SharePoint and OneDrive.
 
 ## How to configure auto-labeling policies for SharePoint, OneDrive, and Exchange
 

@@ -24,7 +24,7 @@ ms.prod: m365-security
 
 # Use Microsoft Defender for Office 365 together with Microsoft Defender for Endpoint
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 [Microsoft Defender for Office 365](defender-for-office-365.md) can be configured to work with [Microsoft Defender for Endpoint](/windows/security/threat-protection).
 

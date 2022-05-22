@@ -23,7 +23,7 @@ ms.prod: m365-security
 
 # Security dashboard in the Security & Compliance Center
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 ## Basic functions and how to open Security dashboard
 
