@@ -24,7 +24,7 @@ ms.prod: m365-security
 
 # Set up Safe Links policies in Microsoft Defender for Office 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
@@ -43,7 +43,7 @@ You can also use the procedures in this article to create Safe Links policies th
 >
 > You configure the global settings for Safe Links protection **outside** of Safe Links policies. For instructions, see [Configure global settings for Safe Links in Microsoft Defender for Office 365](configure-global-settings-for-safe-links.md).
 >
-> Admins should consider the different configuration settings for Safe Links. One of the available options is to include user identifiable information in Safe Links. This feature enables security operations (SecOps)teams to investigate potential user compromise, take corrective action, and limit costly breaches.
+> Admins should consider the different configuration settings for Safe Links. One of the available options is to include user identifiable information in Safe Links. This feature enables security operations (SecOps) teams to investigate potential user compromise, take corrective action, and limit costly breaches.
 
 You can configure Safe Links policies in the Microsoft 365 Defender portal or in PowerShell (Exchange Online PowerShell for eligible Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes, but with Microsoft Defender for Office 365 add-on subscriptions).
 
@@ -121,6 +121,10 @@ Creating a custom Safe Links policy in the Microsoft 365 Defender portal creates
        - **Wait for URL scanning to complete before delivering the message**: Select this option to wait for real-time URL scanning to complete before delivering the message.
      - **Apply Safe Links to email messages sent within the organization**: Select this option to apply the Safe Links policy to messages between internal senders and internal recipients.
    - **Select the action for unknown or potentially malicious URLs within Microsoft Teams**: Select **On** to enable Safe Links protection for links in Teams. Note that this setting might take up to 24 hours to take effect.
+
+     > [!NOTE]
+     > Currently, Safe Links protection for Microsoft Teams is not available in Microsoft 365 GCC High or Microsoft 365 DoD.
+
    - **Track user clicks**: Leave this option selected to enable the tracking user clicks on URLs in email messages.
    - **Let users click through to the original URL**: Clear this option to block users from clicking through to the original URL in [warning pages](safe-links.md#warning-pages-from-safe-links).
    - **Do not rewrite the following URLs**: Allows access the specified URLs that would otherwise be blocked by Safe Links.
