@@ -29,7 +29,7 @@ ms.technology: mde
 - Added support for kernel version `2.6.32-754.47.1.el6.x86_64` when running on RHEL 6
 - On RHEL 6, product can now be installed on devices running Unbreakable Enterprise Kernel (UEK)
 - Fixed an issue where the process name was sometimes incorrectly displayed as `unknown` when running `mdatp diagnostic real-time-protection-statistics`
-- Fixed a bug where the product sometimes incorrectly detected files inside the quarantine folder
+- Fixed a bug where the product sometimes was incorrectly detecting files inside the quarantine folder
 - Fixed an issue where the `mdatp` command-line tool was not working when `/opt` was mounted as a soft-link
 - Performance improvements & bug fixes
 
