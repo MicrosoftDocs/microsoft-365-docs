@@ -332,7 +332,7 @@
     },
     {
       "source_path": "microsoft-365/business/validate-settings-on-windows-10-pcs.md",
-      "redirect_url": "/microsoft-365/admin/devices/validate-settings-on-windows-10-pcs",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-validate-settings-on-windows-10-pcs",
       "redirect_document_id": true
     },
     {
