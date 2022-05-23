@@ -1,5 +1,5 @@
 ---
-title: "Reprovision a Windows 365 Cloud PC"
+title: "Reprovision a Windows 365 Cloud PC in Microsoft 365 Lighthouse"
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -15,13 +15,13 @@ ms.custom:
 - AdminSurgePortfolib
 - M365-Lighthouse                         
 search.appverid: MET150
-description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn how to reprovision a Windows 365 Cloud PC."
+description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn how to reprovision a Windows 365 Cloud PC in Microsoft 365 Lighthouse."
 ---
 
 
-# Reprovision a Windows 365 Cloud PC
+# Reprovision a Windows 365 Cloud PC in Microsoft 365 Lighthouse
 
-Microsoft 365 Lighthouse supports reprovisioning Cloud PCs that have a provisioning policy. You may need to reprovision a device for a new user or if the device isn't working properly. When a reprovision is triggered, the Cloud PC will be deleted and recreated as a new Cloud PC. All user data, applications, customizations, and the like will be deleted.
+Microsoft 365 Lighthouse supports reprovisioning Cloud PCs that have a provisioning policy. You may need to reprovision a device for a new user or if the device isn't working properly. When a reprovision is triggered, the Cloud PC will be deleted and recreated as a new Cloud PC. All user data, applications, customizations, and the like will be deleted.
 
 ## Before you begin
 
@@ -59,4 +59,4 @@ The tab displays any current actions queued for this device, including the actio
 ## Related content
 
 [Provisioning Overview](/windows-365/enterprise/provisioning) (article)\
-[Edit provisioning policies](/windows-365/enterprise/edit-provisioning-policy)
+[Edit provisioning policies](/windows-365/enterprise/edit-provisioning-policy) (article)

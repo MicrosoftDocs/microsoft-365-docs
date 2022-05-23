@@ -22,7 +22,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Use either simplified view in Microsoft 365 to manage common tasks or dashboard view for more complex settings and tasks."
+description: "Use either simplified view in the Microsoft 365 admin center to manage common tasks or dashboard view for more complex settings and tasks."
 ---
 
 # Overview of the Microsoft 365 admin center
