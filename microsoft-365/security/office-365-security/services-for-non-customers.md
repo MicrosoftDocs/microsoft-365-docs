@@ -22,7 +22,7 @@ ms.prod: m365-security
 
 # Services for non-customers sending mail to Microsoft 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 Email abuse, junk email, and fraudulent emails (phishing) continue to burden the entire email ecosystem. To help maintain user trust in the use of email, Microsoft has put various policies and technologies in place to help protect our users. However, Microsoft understands that legitimate email should not be negatively affected. Therefore, we have established a suite of services to help senders improve their ability to deliver email to Microsoft 365 users by proactively managing their sending reputation.
 

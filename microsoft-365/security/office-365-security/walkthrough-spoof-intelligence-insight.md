@@ -26,7 +26,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Manage spoofed senders using the spoof intelligence policy and spoof intelligence insight in EOP
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
