@@ -37,7 +37,7 @@ You can view the groups activities in the Yammer report by choosing the **Groups
 
 Select **Choose columns** to add or remove columns from the report.  <br/> ![Yammer groups activity report - choose columns.](../../media/54744932-34fe-48c3-9779-1d10c3f05be1.png)
 
-You can also export the report data into an Excel .csv file by selecting the **Export** link. This exports data of all users and enables you to do simple sorting and filtering for further analysis. If you have less than 2000 users, you can sort and filter within the table in the report itself. If you have more than 2000 users, in order to filter and sort, you will need to export the data. 
+You can also export the report data into an Excel .csv file by selecting the **Export** link. This exports data of all users and enables you to do simple sorting and filtering for further analysis. If you have less than 2000 users, you can sort and filter within the table in the report itself. If you have more than 2000 users, in order to filter and sort, you'll need to export the data. 
 
 The **Yammer groups activity** report can be viewed for trends over the last 7 days, 30 days, 90 days, or 180 days. However, if you select a particular day in the report, the table will show data for up to 28 days from the current date (not the date the report was generated).
   
@@ -48,7 +48,7 @@ The **Yammer groups activity** report can be viewed for trends over the last 7 d
 |Group admin  <br/> |The name of the group administrator, or owner.  <br/> |
 |Deleted  <br/> |The number of deleted Yammer groups. If the group is deleted, but had activity in the reporting period it will show up in the grid with this flag set to true.  <br/> |
 |Type  <br/> |The type of group, public or private. <br/> |
-|Connected to Office 365  <br/> |Indicates whether the Yammer group is also an Microsoft 365 group. <br/> |
+|Connected to Office 365  <br/> |Indicates whether the Yammer group is also a Microsoft 365 group. <br/> |
 |Last activity date (UTC)  <br/> | The latest date a message was read, posted or liked by the group.  <br/> |
 |Members  <br/> | The number of members in the group.  <br/> |
 |Posted  <br/> |The number of messages posted in the Yammer group over the reporting period. <br/>|
