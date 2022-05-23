@@ -35,6 +35,7 @@ Response actions run along the top of a specific device page and include:
 - Run antivirus scan
 - Restrict app execution
 - Isolate device
+- Contain device
 - Consult a threat expert
 - Action center
 
@@ -201,6 +202,10 @@ Once you have selected **Isolate device** on the device page, type a comment and
 When a device is being isolated, the following notification is displayed to inform the user that the device is being isolated from the network:
 
 :::image type="content" source="images/atp-notification-isolate.png" alt-text="A no network connection message" lightbox="images/atp-notification-isolate.png":::
+
+## Contain devices from the network
+
+
 
 ## Consult a threat expert
 
