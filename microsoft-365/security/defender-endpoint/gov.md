@@ -190,7 +190,7 @@ These are the known gaps:
 |Network discovery|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
 |Reports: Device Control, Device health, Firewall|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development|
 |Web content filtering|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development|
-  
+|Microsoft Secure Score|![No](images/svg/check-no.svg) Not supported|![No](images/svg/check-no.svg) Not supported|![No](images/svg/check-no.svg) Not supported|  
 
 These are the features and known gaps for [Mobile Threat Defense (Microsoft Defender for Endpoint on Android & iOS)](mtd.md):
 
