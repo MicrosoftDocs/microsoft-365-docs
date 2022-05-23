@@ -1,4 +1,4 @@
- - name: Microsoft 365 for frontline workers
+- name: Microsoft 365 for frontline workers
   href: index.yml
   items:
   - name: What is Microsoft 365 for frontline workers?
@@ -147,3 +147,4 @@
       href: 
     - name: Manage the Walkie Talkie app
       href: /microsoftteams/walkie-talkie?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+
