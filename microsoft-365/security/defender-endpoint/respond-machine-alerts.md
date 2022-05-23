@@ -24,6 +24,8 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint Plans 1 and 2](defender-endpoint-plan-1-2.md)
 - [Microsoft Defender for Business](/microsoft-365/security/defender-business/mdb-overview)
 
+[!include[Prerelease information](../../includes/prerelease.md)
+
 Quickly respond to detected attacks by isolating devices or collecting an investigation package. After taking action on devices, you can check activity details on the Action center.
 
 Response actions run along the top of a specific device page and include:
@@ -205,7 +207,7 @@ When a device is being isolated, the following notification is displayed to info
 
 ## Contain devices from the network
 
-When you have identified an unmanaged device that is compromised or potentially compromised, you might want to contain that device from the network. When you contain a device any Microsoft Defender for Endpoint onboarded device will block incoming and outgoing communication with that device. This action can help prevent neighboring devices becoming compromised while the security operations analyst locates, identifies and remediates the threat on the compromised device.
+When you have identified an unmanaged device that is compromised or potentially compromised, you might want to contain that device from the network. When you contain a device any Microsoft Defender for Endpoint onboarded device will block incoming and outgoing communication with that device. This action can help prevent neighboring devices from becoming compromised while the security operations analyst locates, identifies, and remediates the threat on the compromised device.
 
 > [!NOTE]
 > Only onboarded Microsoft Defender for Endpoint Windows 10 devices with the Base Filtering Engine (BFE) Windows service enabled, will block incoming and outgoing communication with a 'contained' device.
@@ -217,7 +219,7 @@ When you have identified an unmanaged device that is compromised or potentially 
 
 :::image type="content" alt-text="Screenshot of the contain device popup message." source="../../media/defender-endpoint/contain_device.png" lightbox="../../media/defender-endpoint/contain_device.png":::
 
-3. On the contain device popup, type a comment and select **Confirm**.
+3. On the contain device popup, type a comment, and select **Confirm**.
 
 :::image type="content" alt-text="Screenshot of the contain device menu item." source="../../media/defender-endpoint/contain_device_popup.png" lightbox="../../media/defender-endpoint/contain_device_popup.png":::
 
