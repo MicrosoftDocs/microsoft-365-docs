@@ -24,7 +24,7 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint Plans 1 and 2](defender-endpoint-plan-1-2.md)
 - [Microsoft Defender for Business](/microsoft-365/security/defender-business/mdb-overview)
 
-[!include[Prerelease information](../../includes/prerelease.md)
+[!INCLUDE [Prerelease information](../../includes/prerelease.md)]
 
 Quickly respond to detected attacks by isolating devices or collecting an investigation package. After taking action on devices, you can check activity details on the Action center.
 
