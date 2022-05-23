@@ -3,6 +3,7 @@ title: "Microsoft 365 data locations"
 ms.author: deanw
 author: dmwmsft
 manager: scotv
+ms.date: 05/23/2002
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -23,9 +24,9 @@ description: "Determine where your Microsoft 365 customer data is stored worldwi
 
 The tables below shows where customer data is stored at-rest for Microsoft 365 services across all of Microsoft's global cloud locations. Expand the location of your billing address country to find out where customer data for each service would be stored.
 
-If your business is located in the European Union, see [Data locations for the European Union](EU-data-storage-locations.md) for more information. 
+If your business is located in the European Union, see [Data locations for the European Union](EU-data-storage-locations.md) for more information.
 
-Customers should view tenant specific data location information in your Microsoft 365 admin center in **Settings** > **Org settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank">**Organization profile** tab</a> > **Data location**. If you [requested to move to a new Geo](request-your-data-move.md), the data location information in the Microsoft 365 admin center may show only your new Geo even though some data may be stored temporarily in your prior Geo during the transition. 
+Customers should view tenant specific data location information in your Microsoft 365 admin center in **Settings** > **Org settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank">**Organization profile** tab</a> > **Data location**. If you [requested to move to a new Geo](request-your-data-move.md), the data location information in the Microsoft 365 admin center may show only your new Geo even though some data may be stored temporarily in your prior Geo during the transition.
 
 New Microsoft 365 tenants are defaulted to Geo based on the country of the transaction associated with that tenant's first subscription.
 
@@ -33,16 +34,15 @@ Find information about the contractual commitments for the storage location of c
 
 For Azure Active Directory data locations, please visit [AAD Data Map](https://go.microsoft.com/fwlink/p/?linkid=2092972).
 
-If Customer’s billing address is outside Europe and Customer has an Office 365 Education subscription, then notwithstanding the “Location of Customer Data at Rest for Core Online Services” section of the OST, Microsoft may provision Customer’s Office 365 tenant in, transfer Customer Data to, and store Customer Data at rest anywhere within Europe or North America.  If Customer’s billing address is in Europe and Customer has an Office 365 Education subscription, then notwithstanding the “Location of Customer Data at Rest for Core Online Services” section of the OST, Microsoft may provision Customer’s Office 365 tenant in, transfer Customer Data to, and store Customer Data at rest anywhere within the European Union.
-
-
-
+If Customer's billing address is outside Europe and Customer has an Office 365 Education subscription, then notwithstanding the "Location of Customer Data at Rest for Core Online Services" section of the OST, Microsoft may provision Customer's Office 365 tenant in, transfer Customer Data to, and store Customer Data at rest anywhere within Europe or North America.  If Customer's billing address is in Europe and Customer has an Office 365 Education subscription, then notwithstanding the "Location of Customer Data at Rest for Core Online Services" section of the OST, Microsoft may provision Customer's Office 365 tenant in, transfer Customer Data to, and store Customer Data at rest anywhere within the European Union.
 
 ## FAQ
 
-### How does Microsoft define data?
-
+### <details><summary>How does Microsoft define data?</summary>
+<p>
 Review our [definitions for different types of data](https://go.microsoft.com/fwlink/p/?linkid=864390) on the Microsoft Trust Center. In the [Privacy & Security Terms](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all), Microsoft makes contractual commitments regarding customer data/your data. We refer to core customer data as the customer data that is committed to be stored at rest only within your region according to the [Privacy & Security Terms](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all).
+</p>
+</details>
 
 ### Where are the exact addresses of the data centers?
 
@@ -101,7 +101,7 @@ Microsoft will not store Intune customer data at rest outside the stated Geo. ex
    
   - Preview, beta, or other prerelease services, which typically store customer data in the United States but may store it globally.
 
-Regardless, Microsoft does not control or limit the Geo from which customers or their end users may access customer data. Similarly, where customer data in other services is subsequently integrated into Intune, the originating customer data will continue to be stored subject to the other service’s own Geo commitments (if any); only the copy of the customer data integrated into Intune will be stored in the stated Geo for Intune.  
+Regardless, Microsoft does not control or limit the Geo from which customers or their end users may access customer data. Similarly, where customer data in other services is subsequently integrated into Intune, the originating customer data will continue to be stored subject to the other service's own Geo commitments (if any); only the copy of the customer data integrated into Intune will be stored in the stated Geo for Intune.  
 
 ### What are the considerations for Microsoft Viva data locations?
 
