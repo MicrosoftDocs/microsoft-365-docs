@@ -19,7 +19,7 @@ ms.collection:
 
 # Work with a Microsoft partner
 
-If you'd prefer to have a Microsoft partner help you get and set up Microsoft 365, follow these steps:
+If you'd prefer to have a Microsoft partner help you get and set up Microsoft 365 Business Premium, follow these steps:
 
 1. Go to the **Microsoft Solution Providers** page ([https://www.microsoft.com/solution-providers](https://www.microsoft.com/solution-providers)).
 
