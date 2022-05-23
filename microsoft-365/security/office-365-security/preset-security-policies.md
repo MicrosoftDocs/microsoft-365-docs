@@ -150,6 +150,8 @@ For example, if a security setting exists in **Standard protection** and an admi
 
      For users or groups, you can use most identifiers (name, display name, alias, email address, account name, etc.), but the corresponding display name is shown in the results. For users, enter an asterisk (\*) by itself to see all available values.
 
+   - **None**
+
    - **Exclude these recipients**: To add exceptions for the internal recipients that the policy applies to (recipient exceptions), select this option and configure the exceptions. The settings and behavior are exactly like the conditions.
 
    When you're finished, click **Next**.
@@ -161,11 +163,13 @@ For example, if a security setting exists in **Standard protection** and an admi
 
    The settings and behavior are exactly like the **EOP protections apply to** page in the previous step.
 
-   You can also select **Apply additional protection to: Previously selected recipients (Exchange Online Protection)** to use the same recipients that you selected for EOP protection on the previous page.
+   You can also select **Previously selected recipients** to use the same recipients that you selected for EOP protection on the previous page.
 
    When you're finished, click **Next**.
 
-5. On the **Add email addresses to flag when impersonated by attackers** page, add internal and external senders who are protected by [user impersonation protection](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
+5. On the **Impersonation protection** page, click **Next**.
+
+6. On the **Add email addresses to flag when impersonated by attackers** page, add internal and external senders who are protected by [user impersonation protection](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
 
    > [!NOTE]
    > All recipients automatically receive impersonation protection from [mailbox intelligence](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) in preset security policies.
@@ -174,11 +178,11 @@ For example, if a security setting exists in **Standard protection** and an admi
 
    You can specify a maximum of 350 users, and you can't specify the same user in the user impersonation protection settings in multiple policies.
 
-   To remove an existing entry from the list, select the entry, and then click ![Remove icon.](../../media/m365-cc-sc-remove-selection-icon.png).
+   To remove an existing entry from the list, click ![Remove icon.](../../media/m365-cc-sc-remove.png).
 
    When you're finished, click **Next**.
 
-6. On the **Add domains to flag when impersonated by attackers** page, add internal and external domains that are protected by [domain impersonation protection](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
+7. On the **Add domains to flag when impersonated by attackers** page, add internal and external domains that are protected by [domain impersonation protection](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
 
    > [!NOTE]
    > All domains that you own ([accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) automatically receive domain impersonation protection in preset security policies.
@@ -187,23 +191,21 @@ For example, if a security setting exists in **Standard protection** and an admi
 
    Enter the domain in the box, and then click **Add**. Repeat this step as many times as necessary.
 
-   To remove an existing entry from the list, select the entry, and then click ![Remove icon.](../../media/m365-cc-sc-remove-selection-icon.png).
+   To remove an existing entry from the list, select the entry, and then click ![Remove icon.](../../media/m365-cc-sc-remove.png).
 
    The maximum number of domains that you can specify for domain impersonation protection in all anti-phishing policies is 50.
 
-   To remove an existing entry from the list, select the entry, and then click ![Remove icon.](../../media/m365-cc-sc-remove-selection-icon.png)
-
    When you're finished, click **Next**.
 
-7. On the **Add trusted email addresses and domains to not flag as impersonation** page, enter the sender email addresses and domains that you want to excluded from impersonation protection. Messages from these senders will never be flagged as an impersonation attack, but the senders are still subject to scanning by other filters in EOP and Defender for Office 365.
+8. On the **Add trusted email addresses and domains to not flag as impersonation** page, enter the sender email addresses and domains that you want to excluded from impersonation protection. Messages from these senders will never be flagged as an impersonation attack, but the senders are still subject to scanning by other filters in EOP and Defender for Office 365.
 
    Enter the email address or domain in the box, and then click **Add**. Repeat this step as many times as necessary.
 
-   To remove an existing entry from the list, select the entry, and then click ![Remove icon.](../../media/m365-cc-sc-remove-selection-icon.png).
+   To remove an existing entry from the list, select the entry, and then click ![Remove icon.](../../media/m365-cc-sc-remove.png).
 
    When you're finished, click **Next**.
 
-8. On the **Review and confirm this policy** page, verify your selections, and then click **Confirm**.
+9. On the **Review and confirm this policy** page, verify your selections, and then click **Confirm**.
 
 ### Use the Microsoft 365 Defender portal to modify the assignments of Standard and Strict preset security policies
 
