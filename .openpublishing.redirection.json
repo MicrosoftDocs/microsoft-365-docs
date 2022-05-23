@@ -337,7 +337,7 @@
     },
     {
       "source_path": "microsoft-365/business/review-threats-take-action.md",
-      "redirect_url": "/microsoft-365/admin/security-and-compliance/review-threats-take-action",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-review-threats-take-action",
       "redirect_document_id": true
     },
     {
@@ -407,7 +407,7 @@
     },
     {
       "source_path": "microsoft-365/business/protection-settings-for-windows-10-pcs.md",
-      "redirect_url": "/microsoft-365/business-premium/m365bp-protection-settings-for-windows-10-pcs",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-protection-settings-for-windows-10-devices",
       "redirect_document_id": true
     },
     {
