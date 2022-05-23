@@ -21,7 +21,7 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 # Reprovision a Windows 365 Cloud PC in Microsoft 365 Lighthouse
 
-Microsoft 365 Lighthouse supports reprovisioning Cloud PCs that have a provisioning policy. You may need to reprovision a device for a new user or if the device isn't working properly. When a reprovision is triggered, the Cloud PC will be deleted and recreated as a new Cloud PC. All user data, applications, customizations, and the like will be deleted.
+Microsoft 365 Lighthouse supports reprovisioning Cloud PCs that have a provisioning policy. You may need to reprovision a device for a new user or if the device isn't working properly. When a reprovision is triggered, the Cloud PC will be deleted and recreated as a new Cloud PC. All user data, applications, customizations, and the like will be deleted.
 
 ## Before you begin
 

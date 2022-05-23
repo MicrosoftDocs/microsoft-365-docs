@@ -19,8 +19,6 @@ ms.technology: mde
 
 # Web content filtering
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 **Applies to:**
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -51,7 +49,7 @@ Before trying out this feature, make sure you meet the requirements described in
 
 | Requirement | Description |
 |:---|:---|
-| Subscription | Your subscription must include one of the following:<br/>- [Windows 10/11 Enterprise E5](/windows/deployment/deploy-enterprise-licenses)<br/>- [Microsoft 365 E5](https://www.microsoft.com/microsoft-365/enterprise/e5?activetab=pivot%3aoverviewtab)<br/>- Microsoft 365 E5 Security<br/>- [Microsoft 365 E3](https://www.microsoft.com/microsoft-365/enterprise/e3?activetab=pivot%3aoverviewtab)<br/>- [Microsoft Defender for Endpoint Plan 1 or Plan 2](../defender/eval-defender-endpoint-overview.md)<br/>- [Microsoft Defender for Business](../defender-business/mdb-overview.md) |
+| Subscription | Your subscription must include one of the following:<br/>- [Windows 10/11 Enterprise E5](/windows/deployment/deploy-enterprise-licenses)<br/>- [Microsoft 365 E5](https://www.microsoft.com/microsoft-365/enterprise/e5?activetab=pivot%3aoverviewtab)<br/>- Microsoft 365 E5 Security<br/>- [Microsoft 365 E3](https://www.microsoft.com/microsoft-365/enterprise/e3?activetab=pivot%3aoverviewtab)<br/>- [Microsoft Defender for Endpoint Plan 1 or Plan 2](../defender/eval-defender-endpoint-overview.md)<br/>- [Microsoft Defender for Business](../defender-business/mdb-overview.md)<br/>- [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium)|
 | Portal access | You must have access to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. |
 | Operating system | Your organization's devices must be running one of the following operating systems with the [latest antivirus/antimalware updates](manage-updates-baselines-microsoft-defender-antivirus.md): <br/>- Windows 11<br/>-  Windows 10 Anniversary Update (version 1607) or later |
 | Related protection | [Windows Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) and [network protection](network-protection.md) must be enabled on your organization's devices. |
@@ -172,7 +170,7 @@ To add a new policy, follow these steps:
 4. Specify the policy scope. Select the device groups to specify where to apply the policy. Only devices in the selected device groups will be prevented from accessing websites in the selected categories.
 
    > [!IMPORTANT]
-   > If you're using Defender for Business, scoping does not apply. Skip this step and proceed to step 5.
+   > If you're using either Microsoft 365 Business Premium or Defender for Business, your web content filtering policy is applied to all users by default. Scoping does not apply.
 
 5. Review the summary and save the policy. The policy refresh might take up to 2 hours to apply to your selected devices.
 
@@ -183,7 +181,7 @@ To add a new policy, follow these steps:
 
 ## End-user experience
 
-The blocking experience for third-party supported browsers is provided by Network Protection, which provides a system-level message notifying the user of a blocked connection. For a more user-friendly, in-browser experience, consider using Microsoft Edge.
+The blocking experience for third-party supported browsers is provided by network protection, which provides a system-level message notifying the user of a blocked connection. For a more user-friendly, in-browser experience, consider using Microsoft Edge.
 
 ### Allow specific websites
 
@@ -199,7 +197,7 @@ To define a custom indicator, follow these steps:
 
 ### Dispute categories
 
-If you encounter a domain that has been incorrectly categorized, you can dispute the category directly from the portal.
+If you encounter a domain that has been incorrectly categorized, you can dispute the category directly from the Microsoft 365 Defender portal.
 
 To dispute the category of a domain, navigate to **Reports** \> **Web protection** \> **Web Content Filtering Details** \> **Domains**. On the domains tab of the Web Content Filtering reports, you will see an ellipsis beside each of the domains. Hover over this ellipsis and select **Dispute Category**.
 
@@ -247,9 +245,11 @@ Use the time range filter at the top left of the page to select a time period. Y
 
 Only Microsoft Edge is supported if your device's OS configuration is Server (**cmd** \> **Systeminfo** \> **OS Configuration**). Network Protection is only supported in Inspect mode on Server devices, which is responsible for securing traffic across supported third-party browsers.
 
-Only Microsoft Edge is supported and Network Protection is not supported on Windows 10 Azure Virtual Desktop multi-session hosts.
+Only Microsoft Edge is supported and network protection is not supported on Windows 10 Azure Virtual Desktop multi-session hosts.
 
-Network Protection does not currently support SSL inspection, which might result in some sites being allowed by Web Content Filtering that would normally be blocked. Sites would be allowed due to a lack of visibility into encrypted traffic after the TLS handshake has taken place and an inability to parse certain redirects.  This includes redirections from some web-based mail login pages to the mailbox page. As an accepted workaround, you can create a custom block indicator for the login page to ensure no users are able to access the site. Keep in mind, this might block their access to other services associated with the same website. 
+Network protection does not currently support SSL inspection, which might result in some sites being allowed by web content filtering that would normally be blocked. Sites would be allowed due to a lack of visibility into encrypted traffic after the TLS handshake has taken place and an inability to parse certain redirects.  This includes redirections from some web-based mail login pages to the mailbox page. As an accepted workaround, you can create a custom block indicator for the login page to ensure no users are able to access the site. Keep in mind, this might block their access to other services associated with the same website. 
+
+If you are using Microsoft 365 Business Premium or Microsoft Defender for Business, you can define one web content filtering policy for your environment. That policy will apply to all users by default.
 
 ## See also
 
