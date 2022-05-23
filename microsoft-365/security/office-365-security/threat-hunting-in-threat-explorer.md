@@ -48,6 +48,9 @@ With these tools, you can:
 
 For more information, see [Email security with Threat Explorer](email-security-in-microsoft-defender.md).
 
+Watch this short video to learn how to hunt and investigate email and collaboration-based threats using Microsoft Defender for Office 365. 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWyPRU]
+
 ## Threat Explorer walk-through
 
 In Microsoft Defender for Office 365, there are two subscription plans—Plan 1 and Plan 2. Manually operated Threat hunting tools exist in both plans, under different names and with different capabilities.

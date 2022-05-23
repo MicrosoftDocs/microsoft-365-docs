@@ -24,6 +24,7 @@ ms.collection: M365-security-compliance
 - Microsoft Defender Antivirus
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Business](../defender-business/index.yml)
 
 **Platforms**
 - Windows
@@ -36,6 +37,7 @@ Microsoft Defender for Endpoint includes next-generation protection to reinforce
 
 > [!TIP]
 > Next-generation protection is included in both Microsoft Defender for Endpoint Plan 1 and Plan 2. [Learn more about Defender for Endpoint Plan 1 and Plan 2](defender-endpoint-plan-1-2.md)
+> Next-generation protection is also included in Microsoft Defender for Business and Microsoft 365 Business Premium. [Compare security features in Microsoft 365 plans for small and medium-sized businesses](../defender-business/compare-mdb-m365-plans.md).
 
 ## Try a demo!
 
@@ -56,7 +58,7 @@ For information on how to configure next-generation protection services, see [Co
 > Configuration and management is largely the same in Windows Server as in Windows clients. However, there are some differences. 
 
 > [!TIP]
-> If you’re looking for Antivirus related information for other platforms, see:
+> If you're looking for Antivirus related information for other platforms, see:
 > - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
 > - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
 > - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
