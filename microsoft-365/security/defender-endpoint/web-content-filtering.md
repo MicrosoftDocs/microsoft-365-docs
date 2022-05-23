@@ -170,7 +170,7 @@ To add a new policy, follow these steps:
 4. Specify the policy scope. Select the device groups to specify where to apply the policy. Only devices in the selected device groups will be prevented from accessing websites in the selected categories.
 
    > [!IMPORTANT]
-   > If you're using Defender for Business, your web content filtering policy is applied to all users by default. Scoping does not apply.
+   > If you're using either Microsoft 365 Business Premium or Defender for Business, your web content filtering policy is applied to all users by default. Scoping does not apply.
 
 5. Review the summary and save the policy. The policy refresh might take up to 2 hours to apply to your selected devices.
 
@@ -181,7 +181,7 @@ To add a new policy, follow these steps:
 
 ## End-user experience
 
-The blocking experience for third-party supported browsers is provided by Network Protection, which provides a system-level message notifying the user of a blocked connection. For a more user-friendly, in-browser experience, consider using Microsoft Edge.
+The blocking experience for third-party supported browsers is provided by network protection, which provides a system-level message notifying the user of a blocked connection. For a more user-friendly, in-browser experience, consider using Microsoft Edge.
 
 ### Allow specific websites
 
@@ -197,7 +197,7 @@ To define a custom indicator, follow these steps:
 
 ### Dispute categories
 
-If you encounter a domain that has been incorrectly categorized, you can dispute the category directly from the portal.
+If you encounter a domain that has been incorrectly categorized, you can dispute the category directly from the Microsoft 365 Defender portal.
 
 To dispute the category of a domain, navigate to **Reports** \> **Web protection** \> **Web Content Filtering Details** \> **Domains**. On the domains tab of the Web Content Filtering reports, you will see an ellipsis beside each of the domains. Hover over this ellipsis and select **Dispute Category**.
 
@@ -245,9 +245,11 @@ Use the time range filter at the top left of the page to select a time period. Y
 
 Only Microsoft Edge is supported if your device's OS configuration is Server (**cmd** \> **Systeminfo** \> **OS Configuration**). Network Protection is only supported in Inspect mode on Server devices, which is responsible for securing traffic across supported third-party browsers.
 
-Only Microsoft Edge is supported and Network Protection is not supported on Windows 10 Azure Virtual Desktop multi-session hosts.
+Only Microsoft Edge is supported and network protection is not supported on Windows 10 Azure Virtual Desktop multi-session hosts.
 
-Network Protection does not currently support SSL inspection, which might result in some sites being allowed by Web Content Filtering that would normally be blocked. Sites would be allowed due to a lack of visibility into encrypted traffic after the TLS handshake has taken place and an inability to parse certain redirects.  This includes redirections from some web-based mail login pages to the mailbox page. As an accepted workaround, you can create a custom block indicator for the login page to ensure no users are able to access the site. Keep in mind, this might block their access to other services associated with the same website. 
+Network protection does not currently support SSL inspection, which might result in some sites being allowed by web content filtering that would normally be blocked. Sites would be allowed due to a lack of visibility into encrypted traffic after the TLS handshake has taken place and an inability to parse certain redirects.  This includes redirections from some web-based mail login pages to the mailbox page. As an accepted workaround, you can create a custom block indicator for the login page to ensure no users are able to access the site. Keep in mind, this might block their access to other services associated with the same website. 
+
+If you are using Microsoft 365 Business Premium or Microsoft Defender for Business, you can define one web content filtering policy for your environment. That policy will apply to all users by default.
 
 ## See also
 
