@@ -24,6 +24,15 @@ ms.technology: mde
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
+## 101.68.80 (30.122042.16880.0)
+
+- Added support for kernel version `2.6.32-754.47.1.el6.x86_64` when running on RHEL 6
+- On RHEL 6, product can now be installed on devices running Unbreakable Enterprise Kernel (UEK)
+- Fixed an issue where the process name was sometimes incorrectly displayed as `unknown` when running `mdatp diagnostic real-time-protection-statistics`
+- Fixed a bug where the product sometimes incorrectly detected files inside the quarantine folder
+- Fixed an issue where the `mdatp` command-line tool was not working when `/opt` was mounted as a soft-link
+- Performance improvements & bug fixes
+
 ## 101.65.77 (30.122032.16577.0)
 
 - Improved the `conflicting_applications` field in `mdatp health` to show only the most recent 10 processes and also to include the process names. This makes it easier to identify which processes are potentially conflicting with Microsoft Defender for Endpoint for Linux.
