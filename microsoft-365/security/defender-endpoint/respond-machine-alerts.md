@@ -205,24 +205,25 @@ When a device is being isolated, the following notification is displayed to info
 
 ## Contain devices from the network
 
-When you have identified an unmanaged device that is compromised or potentially compromised, you might want to contain that device from the network. When you contain a device any Microsoft Defender for Endpoint onboarded device will block incoming and outgoing communication with the device. This action can help prevent neighboring device becoming compromised while the security operations analyst locates, identifies and remediates the threat on a compromised device.
-
-Containing a devices also helps reduce the risk where no Network Access Control enforcement means isolation of an IoT device requires physical access.
+When you have identified an unmanaged device that is compromised or potentially compromised, you might want to contain that device from the network. When you contain a device any Microsoft Defender for Endpoint onboarded device will block incoming and outgoing communication with that device. This action can help prevent neighboring device becoming compromised while the security operations analyst locates, identifies and remediates the threat on the compromised device.
 
 > [!NOTE]
 > Only onboarded Microsoft Defender for Endpoint Windows 10 devices with the Base Filtering Engine (BFE) Windows service enabled, will block incoming and outgoing communication with a 'contained' device.
 
 ### How to contain a device
 
-1. Go to the **Device inventory** page and select the device to contain.
-2. Select **Contain** from the actions menu in the device flyout.
+1. Go to the **Device inventory** page and select the device to contain
+2. Select **Contain** from the actions menu in the device flyout
 
 :::image type="content" alt-text="Screenshot of the contain device popup message." source="../../media/defender-endpoint/contain_device.png" lightbox="../../media/defender-endpoint/contain_device.png":::
+
 3. Type a comment and select **Confirm**.
 
 :::image type="content" alt-text="Screenshot of the contain device menu item ." source="../../media/defender-endpoint/contain_device_popup.png" lightbox="../../media/defender-endpoint/contain_device_popup.png":::
 
-A device can also be contained form a the device page by selecting **Contain device** from the action bar:
+### Contain a device from the device page
+
+A device can also be contained from the device page by selecting **Contain device** from the action bar:
 
 :::image type="content" alt-text="Screenshot of the contain device menu item on the device page." source="../../media/defender-endpoint/contain_device_page.png" lightbox="../../media/defender-endpoint/contain_device_page.png":::
 
@@ -230,17 +231,18 @@ A device can also be contained form a the device page by selecting **Contain dev
 >It can take up to 5 minutes for the details about about a newly contained device to reach MDE onboarded devices.
 
 > [!Important]
-> If a contained device changes its IP address, then all Microsoft Defender for Endpoint onboarded devices will recognize this and start blocking communications with the new IP address. The original IP address will no longer be blocked (It may take up to 5 mins to see these changes).  
 >
-> In cases where the contained device’s IP is used by another device on the network, there will be a warning while containing with a link to advanced hunting (with a pre-populated query). This will provide visibility to the other devices using the same IP to help you make a conscious decision if you’d like to contain the device not.
+> - If a contained device changes its IP address, then all Microsoft Defender for Endpoint onboarded devices will recognize this and start blocking communications with the new IP address. The original IP address will no longer be blocked (It may take up to 5 mins to see these changes).  
 >
-> In cases where the contained device is a network device, a warning will appear with a message that this may cause network connectivity issues (for example, containing a router that is acting as a default gateway), at this point, you’ll be able to choose whether to contain the device or not.
+> - In cases where the contained device’s IP is used by another device on the network, there will be a warning while containing the device, with a link to advanced hunting (with a pre-populated query). This will provide visibility to the other devices using the same IP to help you make a conscious decision if you’d like to continue with containing the device.
+>
+> - In cases where the contained device is a network device, a warning will appear with a message that this may cause network connectivity issues (for example, containing a router that is acting as a default gateway). At this point, you’ll be able to choose whether to contain the device or not.
 
 ### Stop containing a device
 
-You'll be able to stop containing a device at any time by.
+You'll be able to stop containing a device at any time.
 
-1. Select the device from the Device inventory or open the device page
+1. Select the device from the **Device inventory** or open the device page
 2. Select **Release from containment** from the action menu
 
 This action will restore this device's connection to the network.
