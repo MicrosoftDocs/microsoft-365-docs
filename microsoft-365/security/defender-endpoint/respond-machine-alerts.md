@@ -210,7 +210,7 @@ When a device is being isolated, the following notification is displayed to info
 When you have identified an unmanaged device that is compromised or potentially compromised, you might want to contain that device from the network. When you contain a device any Microsoft Defender for Endpoint onboarded device will block incoming and outgoing communication with that device. This action can help prevent neighboring devices from becoming compromised while the security operations analyst locates, identifies, and remediates the threat on the compromised device.
 
 > [!NOTE]
-> Only onboarded Microsoft Defender for Endpoint Windows 10 devices with the Base Filtering Engine (BFE) Windows service enabled, will block incoming and outgoing communication with a 'contained' device.
+> Blocking incoming and outgoing communication with a 'contained' device is supported on onboarded Microsoft Defender for Endpoint Windows 10 and Windows Server 2019+ devices
 
 ### How to contain a device
 
@@ -230,7 +230,7 @@ A device can also be contained from the device page by selecting **Contain devic
 :::image type="content" alt-text="Screenshot of the contain device menu item on the device page." source="../../media/defender-endpoint/contain_device_page.png" lightbox="../../media/defender-endpoint/contain_device_page.png":::
 
 > [!NOTE]
->It can take up to 5 minutes for the details about about a newly contained device to reach Microsoft Defender for Endpoint onboarded devices.
+>It can take up to 5 minutes for the details about a newly contained device to reach Microsoft Defender for Endpoint onboarded devices.
 
 > [!Important]
 >
@@ -239,6 +239,8 @@ A device can also be contained from the device page by selecting **Contain devic
 > - In cases where the contained device’s IP is used by another device on the network, there will be a warning while containing the device, with a link to advanced hunting (with a pre-populated query). This will provide visibility to the other devices using the same IP to help you make a conscious decision if you’d like to continue with containing the device.
 >
 > - In cases where the contained device is a network device, a warning will appear with a message that this may cause network connectivity issues (for example, containing a router that is acting as a default gateway). At this point, you’ll be able to choose whether to contain the device or not.
+
+If you experience contain not working, ensure the Base Filtering Engine(BFE) service on Windows is enabled.
 
 ### Stop containing a device
 
