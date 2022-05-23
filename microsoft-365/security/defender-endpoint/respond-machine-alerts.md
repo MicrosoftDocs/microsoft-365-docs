@@ -205,7 +205,39 @@ When a device is being isolated, the following notification is displayed to info
 
 ## Contain devices from the network
 
+When you have identified an unmanaged device that is compromised or potentially compromised, you might want to contain that device from the network. When you contain a device any Microsoft Defender for Endpoint onboarded device will block incoming and outgoing communication with the device. This action can help prevent neighboring device becoming compromised while the security operations analyst locates, identifies and remediates the threat on a compromised device.
 
+Containing a devices also helps reduce the risk where no Network Access Control enforcement means isolation of an IoT device requires physical access.
+
+> [!NOTE]
+> Only onboarded Microsoft Defender for Endpoint Windows 10 devices will block 'contained' devices. This means only Windows 10 devices will block incoming\outgoing communication > with a 'contained' device.
+
+## How to contain a device
+
+1. Go to the **Device inventory** page and select the device to contain.
+2. Select **Contain** from the actions menu in the device flyout.
+
+:::image type="content" alt-text="Screenshot of the contain device popup message." source="../../media/defender-endpoint/contain_device.png" lightbox="../../media/defender-endpoint/contain_device.png":::
+3. Type a comment and select **Confirm**.
+
+:::image type="content" alt-text="Screenshot of the contain device menu item ." source="../../media/defender-endpoint/contain_device_popup.png" lightbox="../../media/defender-endpoint/contain_device_popup.png":::
+
+A device can also be contained form a the device page by selecting **Contain device** from the action bar:
+
+:::image type="content" alt-text="Screenshot of the contain device menu item on the device page." source="../../media/defender-endpoint/contain_device_page.png" lightbox="../../media/defender-endpoint/contain_device_page.png":::
+
+> [!NOTE]
+> Once you contain a device it can take up to 5 minutes for the information a device has been contained to reach MDE onboarded devices.
+> If a contained device changes its IP address, then all Microsoft Defender for Endpoint onboarded devices will recognize this and start blocking communications with the new IP address. The original IP address will no longer be blocked (It may take up to 5 mins to see these changes).  
+
+## Stop containing a device
+
+You'll be able to stop containing a device at any time by.
+
+1. Select the device from the Device inventory or open the device page
+2. Select **Release from containment** from the action menu
+
+This action will restore this device's connection to the network.
 
 ## Consult a threat expert
 
