@@ -24,7 +24,7 @@ ms.prod: m365-security
 
 # Protection features in Azure Information Protection rolling out to existing tenants
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)

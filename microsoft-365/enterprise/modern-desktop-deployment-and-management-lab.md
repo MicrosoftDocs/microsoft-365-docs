@@ -27,7 +27,7 @@ There are two versions of the lab available for free download:
 |Windows 10 Lab|Windows 11 Lab|
 |---|---|
 |[Win 10 lab environment](https://download.microsoft.com/download/3/3/a/33a3c7d7-b393-4f78-9b90-2d5eb7fd98e8/Win10_21H1_lab.zip)|[Win 11 lab environment](https://download.microsoft.com/download/9/d/9/9d9e278e-a1ea-4704-85e1-cb24f3806f45/Win11_Lab_05.09.zip)|
-|[Win 10 lab guides](https://download.microsoft.com/download/3/3/a/33a3c7d7-b393-4f78-9b90-2d5eb7fd98e8/Win10_21H1_lab_guides.zip)|[Win 11 lab guides](https://download.microsoft.com/download/9/d/9/9d9e278e-a1ea-4704-85e1-cb24f3806f45/Win11_Lab_Guides_05.09.zip)|
+|[Win 10 lab guides](https://download.microsoft.com/download/2/9/9/29952cdb-b98d-4f9b-9d6e-9fb49644b0a0/Win10_21H1_Lab_05.12.zip)|[Win 11 lab guides](https://download.microsoft.com/download/9/d/9/9d9e278e-a1ea-4704-85e1-cb24f3806f45/Win11_Lab_Guides_05.09.zip)|
 
 ## A complete lab environment
 
@@ -94,7 +94,7 @@ Detailed lab guides take you through multiple deployment and management scenario
 - Windows Hello for Business
 
 > [!NOTE]
-> Please use a broadband internet connection to download this content and allow approximately 30 minutes for automatic provisioning. The lab environment requires a minimum of 16 GB of available memory and 150 GB of free disk space. For optimal performance, 32 GB of available memory and 300 GB of free space is recommended. The Windows 10 lab expires May 16, 2022. The Windows 11 lab expires August 7, 2022. New versions will be published prior to expiration.
+> Please use a broadband internet connection to download this content and allow approximately 30 minutes for automatic provisioning. The lab environment requires a minimum of 16 GB of available memory and 150 GB of free disk space. For optimal performance, 32 GB of available memory and 300 GB of free space is recommended. The Windows 10 lab expires August 11, 2022. The Windows 11 lab expires August 7, 2022. New versions will be published prior to expiration.
 
 ## Additional guidance
 
@@ -109,4 +109,4 @@ Detailed lab guides take you through multiple deployment and management scenario
 - [Introducing Microsoft 365](https://www.microsoft.com/microsoft-365/default.aspx)
 - [Microsoft 365 for business](https://products.office.com/business/office)
 - [Introducing Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
-- [Windows 11 for business](https://www.microsoft.com/windows/business)
+- [Windows for business](https://www.microsoft.com/windows/business)
