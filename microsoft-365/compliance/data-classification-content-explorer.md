@@ -25,9 +25,7 @@ description: "Content explorer allows you to natively view labeled items."
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-The data classification content explorer allows you to natively view the items that were summarized on the overview page.
-
-![content explorer collapsed screenshot.](../media/data-classification-content-explorer-1.png)
+Content explorer allows you to natively view the items that were summarized on the overview page.
 
 ## Prerequisites
 
@@ -48,7 +46,7 @@ In order to get access to the content explorer tab, an account must be assigned 
 > Membership in these role groups does not allow you to view the list of items in content explorer or to view the contents of the items in content explorer.
 
 > [!IMPORTANT]
-> Only Global admins can manage or assign permissions to other users in the Compliance Center. For more information, see [Give users access to the Security & Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+> Only Global admins can manage or assign permissions to other users in the compliance portal. For more information, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
 > 
 ### Required permissions to access items in content explorer
 
@@ -115,7 +113,7 @@ A [retention label](retention.md) allows you to define how long a labeled item i
 5. Double-click to open the item natively in content explorer.
 
 ### Export
-The **export** control will create a .csv file that contains a listing of whatever is showing in the **All locations** pane.
+The **export** control will create a .csv file that contains a listing of whatever the focus of the pane is.
 
 ![data classification export control.](../media/data_classification_export_control.png)
 
@@ -123,9 +121,9 @@ The **export** control will create a .csv file that contains a listing of whatev
 > [!NOTE]
 > It can take up to *seven days* for counts to be updated in content explorer.
 
-### Search
+### Filter
 
-When you drill down into a location, such as an Exchange or Teams folder, or a SharePoint or OneDrive site, the **search** tool appears.
+When you drill down into a location, such as an Exchange or Teams folder, or a SharePoint or OneDrive site, the **Filter** tool appears.
 
 ![content explorer search tool.](../media/data_classification_search_tool.png)
 
