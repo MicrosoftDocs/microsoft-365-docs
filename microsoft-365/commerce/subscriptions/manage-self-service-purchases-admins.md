@@ -80,7 +80,7 @@ You can use the **MSCommerce** PowerShell module to:
 - View or modify the current setting for a specific product to either enable or disable it
 
 > [!IMPORTANT]
-> When you use the **AllowSelfServicePurchase** policy, it enables or disables both self-service purchases and self-service trials.
+> When you use the **AllowSelfServicePurchase** policy, it enables or disables both self-service purchases and self-service trials. For a list of the products available for self-service purchase, see [View a list of self-service purchase products and their status](allowselfservicepurchase-powershell.md#view-a-list-of-self-service-purchase-products-and-their-status). Only Project and Visio are available for trial subscriptions.
 
 For more information, see [Use AllowSelfServicePurchase for the MSCommerce PowerShell module](allowselfservicepurchase-powershell.md).
 
