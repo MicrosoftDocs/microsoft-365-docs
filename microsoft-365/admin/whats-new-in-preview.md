@@ -48,7 +48,7 @@ And if you'd like to know what's new with other Microsoft cloud services:
 
 ## May 2022
 
-### Role based access controls (RBAC)
+<!-- ### Role based access controls (RBAC)
 
 There are new Azure AD built-in roles in the Microsoft 365 admin center. Give admins only the access they need to manage Virtual Visits.
 
@@ -64,7 +64,7 @@ For more information about Azure AD built-in roles, see [Azure AD built-in roles
 
 **Attribute Definition Administrator**   Define and manage the definition of custom security attributes.
 
-**Attribute Definition Reader**   Reads the definition of custom security attributes.
+**Attribute Definition Reader**   Reads the definition of custom security attributes. -->
 
 ### Quick Assist
 
