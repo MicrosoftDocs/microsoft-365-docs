@@ -23,7 +23,7 @@ ms.prod: m365-security
 ---
 # Monitor for leaks of personal data
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 There are many tools that can be used to monitor the use and transport of personal data. This topic describes three tools that work well.
 
