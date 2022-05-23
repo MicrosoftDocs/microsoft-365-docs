@@ -17,11 +17,12 @@ ms.collection:
 - M365-security-compliance
 ---
 
-# Guided setup for Microsoft 365 Business Premium
+# Setup for Microsoft 365 Business Premium
 
-After you have [started a trial or purchased Microsoft 365 Business Premium](get-microsoft-365-business-premium.md), your next step is to get everything set up. You have several options available. 
+After you have [started a trial or purchased Microsoft 365 Business Premium](get-microsoft-365-business-premium.md), your next step is to get everything set up. You have several options available. You can:
 
-Alternatively, you can [work with a Microsoft Cloud Solution Provider (CSP)](m365bp-ms-partner.md)
+Start with the [guided setup experience](m365bp-setup.md#guided-setup-for-microsoft-365-business-premium) for basic setup and configuration; or
+[Work with a partner](m365bp-setup.md#work-with-a-microsoft-partner), such as a Microsoft Cloud Solution Provider (CSP).
 
 ## Before you begin
 
