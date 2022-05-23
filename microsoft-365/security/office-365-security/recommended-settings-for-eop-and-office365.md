@@ -23,7 +23,7 @@ ms.prod: m365-security
 
 # Recommended settings for EOP and Microsoft Defender for Office 365 security
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)

@@ -25,7 +25,7 @@ ms.prod: m365-security
 
 # Use the delist portal to remove yourself from the blocked senders list and address 5.7.511 Access denied errors
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
