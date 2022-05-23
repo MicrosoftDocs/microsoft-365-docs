@@ -447,7 +447,7 @@
     },
     {
       "source_path": "microsoft-365/business/set-up.md",
-      "redirect_url": "/microsoft-365/admin/setup/business-set-up",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-setup",
       "redirect_document_id": true
     },
     {
@@ -6327,7 +6327,7 @@
     },
     {
       "source_path": "microsoft-365/business-video/set-up.md",
-      "redirect_url": "/microsoft-365/admin/setup/business-set-up",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-setup",
       "redirect_document_id": false
     },
     {
@@ -7443,6 +7443,11 @@
     {
       "source_path": "microsoft-365/compliance/terms-conditions.md",
       "redirect_url": "/legal/microsoft-365/microsoft-365-trial",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/setup/business-set-up.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-setup",
       "redirect_document_id": false
     }
   ]
