@@ -153,7 +153,7 @@ If your organization has a subscription that supports Audit (Premium), perform t
   
    - Turning on the Audit (Premium) app/service plan must be for those users.
   
-   - Enabling the auditing of crucial events and then turning on the Audit (Premium)ing app/service plan for those users.
+   - Enabling the auditing of crucial events and then turning on the Audit (Premium) app/service plan for those users.
 
 2. Enable Audit (Premium) events to be logged when users perform searches in Exchange Online and SharePoint Online.
 
