@@ -28,7 +28,8 @@ ms.date: 02/04/2022
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Microsoft Defender Antivirus
 
-**Platforms**
+**Platforms:**
+
 - Windows
 
 This article provides information about attack reduction rules:
@@ -52,28 +53,30 @@ The following table lists the supported operating systems for rules that are cur
 >
 > Attack surface reduction rules in Windows&nbsp;Server&nbsp;2012&nbsp;R2 and Windows&nbsp;Server&nbsp;2016 are available for devices onboarded using the modern unified solution package. For more information, see [New functionality in the modern unified solution for Windows Server 2012 R2 and 2016 Preview](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview).
 
-| Rule name|Windows 10 | Windows Server 2019 | Windows&nbsp;Server | Windows Server 2016 <sup>[[1, 2](#fn1)]<sup></sup> | Windows Server 2012&nbsp;R2 <sup>[[1, 2](#fn1)]<sup></sup> |
+| Rule name| Windows&nbsp;11 <br>and<br> Windows&nbsp;10 | Windows&nbsp;Server <br> 2022 <br>and<br>  Windows&nbsp;Server <br> 2019 | Windows Server | Windows&nbsp;Server <br> 2016 <sup>[[1, 2](#fn1)]<sup></sup> | Windows&nbsp;Server <br> 2012&nbsp;R2 <sup>[[1, 2](#fn1)]<sup></sup> |
 |:---|:---:|:---:|:---:|:---:|:---:|
 | [Block abuse of exploited vulnerable signed drivers](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y | Y | Y <br> version 1803 (Semi-Annual Channel) or later | Y | Y |
-| [Block Adobe Reader from creating child processes](#block-adobe-reader-from-creating-child-processes) | Y version 1809 or later | Y | Y | Y | Y |
+| [Block Adobe Reader from creating child processes](#block-adobe-reader-from-creating-child-processes) | Y <br> version 1809 or later <sup>[[3](#fn1)]<sup></sup> | Y | Y | Y | Y |
 | [Block all Office applications from creating child processes](#block-all-office-applications-from-creating-child-processes) | Y | Y | Y | Y | Y |
-| [Block credential stealing from the Windows local security authority subsystem (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | Y <br> version 1803 or later | Y | Y | Y | Y |
+| [Block credential stealing from the Windows local security authority subsystem (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | Y <br> version 1803 or later <sup>[[3](#fn1)]<sup></sup> | Y | Y | Y | Y |
 | [Block executable content from email client and webmail](#block-executable-content-from-email-client-and-webmail) | Y | Y | Y | Y | Y |
-| [Block executable files from running unless they meet a prevalence, age, or trusted list criterion](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | Y <br> version 1803 or later | Y | Y | Y | Y |
+| [Block executable files from running unless they meet a prevalence, age, or trusted list criterion](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | Y <br> version 1803 or later <sup>[[3](#fn1)]<sup></sup> | Y | Y | Y | Y |
 | [Block execution of potentially obfuscated scripts](#block-execution-of-potentially-obfuscated-scripts) | Y | Y | Y | Y | Y |
 | [Block JavaScript or VBScript from launching downloaded executable content](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | Y | Y | Y | N | N |
 | [Block Office applications from creating executable content](#block-office-applications-from-creating-executable-content) | Y | Y | Y | Y | Y |
 | [Block Office applications from injecting code into other processes](#block-office-applications-from-injecting-code-into-other-processes)  | Y | Y | Y | Y | Y |
 | [Block Office communication application from creating child processes](#block-office-communication-application-from-creating-child-processes) | Y | Y | Y | Y | Y |
-| [Block persistence through WMI event subscription](#block-persistence-through-wmi-event-subscription) <br> \* _File and folder exclusions not supported._ | Y <br> version 1903 (build 18362) or later | Y | Y <br> version 1903 (build 18362) or later | N | N |
-| [Block process creations originating from PSExec and WMI commands](#block-process-creations-originating-from-psexec-and-wmi-commands) | Y <br> version 1803 or later | Y | Y | Y | Y |
+| [Block persistence through WMI event subscription](#block-persistence-through-wmi-event-subscription) <br> \* _File and folder exclusions not supported._ | Y <br> version 1903 (build 18362) or later <sup>[[3](#fn1)]<sup></sup> | Y | Y <br> version 1903 (build 18362) or later | N | N |
+| [Block process creations originating from PSExec and WMI commands](#block-process-creations-originating-from-psexec-and-wmi-commands) | Y <br> version 1803 or later <sup>[[3](#fn1)]<sup></sup> | Y | Y | Y | Y |
 | [Block untrusted and unsigned processes that run from USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Y | Y | Y | Y | Y |
 | [Block Win32 API calls from Office macros](#block-win32-api-calls-from-office-macros) | Y | Y | Y | N | N |
-| [Use advanced protection against ransomware](#use-advanced-protection-against-ransomware) | Y <br> version 1803 or later | Y | Y | Y | Y |
+| [Use advanced protection against ransomware](#use-advanced-protection-against-ransomware) | Y <br> version 1803 or later <sup>[[3](#fn1)]<sup></sup> | Y | Y | Y | Y |
 
 (<a id="fn1">1</a>) Refers to the modern unified solution for Windows Server 2012 and 2016. For more information, see [Onboard Windows Servers to the Defender for Endpoint service](configure-server-endpoints.md).
 
 (<a id="fn1">2</a>) For Windows&nbsp;Server 2016 and Windows&nbsp;Server 2012&nbsp;R2, the minimum required version of Microsoft Endpoint Configuration Manager is version 2111.
+
+(<a id="fn1">3</a>) Version and build number apply only to Windows&nbsp;10.
 
 ## Supported configuration management systems
 
@@ -97,7 +100,6 @@ Links to information about configuration management system versions referenced i
 |[Block untrusted and unsigned processes that run from USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Y |   |Y <br><br> CB 1802  | Y  | Y  |
 |[Block Win32 API calls from Office macros](#block-win32-api-calls-from-office-macros) | Y |   | Y <br><br> CB 1710  | Y  |  Y |
 |[Use advanced protection against ransomware](#use-advanced-protection-against-ransomware) | Y |   | Y <br><br> CB 1802 | Y  | Y  |
-|  |  |  |  |  |  |
 
   (<a id="fn1">1</a>) You can configure attack surface reduction rules on a per-rule basis by using any rule's GUID.
 
@@ -134,7 +136,6 @@ For rules with the "Rule State" specified:
 |[Block untrusted and unsigned processes that run from USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Audit&nbsp;\|&nbsp;Block | Y \| Y <br> Requires device at high-cloud block level  | N \| Y <br> Requires device at high-cloud block level |
 |[Block Win32 API calls from Office macros](#block-win32-api-calls-from-office-macros) |   | N | Y |
 |[Use advanced protection against ransomware](#use-advanced-protection-against-ransomware) | Audit&nbsp;\|&nbsp;Block | Y \| Y <br> Requires device at high-cloud block level  | N \| Y <br> Requires device at high-cloud block level |
-|   |   |   |   |
   
 ## ASR rules and GUIDs matrix
 
@@ -326,6 +327,9 @@ Dependencies: MDAV, Cloud Protection
 This rule detects suspicious properties within an obfuscated script.
 
 Script obfuscation is a common technique that both malware authors and legitimate applications use to hide intellectual property or decrease script loading times. Malware authors also use obfuscation to make malicious code harder to read, which prevents close scrutiny by humans and security software.
+
+> [!IMPORTANT]
+> Due to the high number of false positives, this rule does not currently detect PowerShell scripts; this is a temporary solution. The rule will be updated and start redetecting PowerShell scripts soon.
 
 Intune name: `Obfuscated js/vbs/ps/macro code`
 

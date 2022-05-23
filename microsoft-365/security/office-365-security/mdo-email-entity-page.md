@@ -108,7 +108,9 @@ Users will see enriched detonation details for known malicious attachments or UR
 
 - *Exchange transport rules (also known as mail flow rules or ETRs)*: These rules are applied to a message at the transport layer and take precedence over phish and spam verdicts. Mail flow rules are created and modified in the Exchange admin center at <https://admin.exchange.microsoft.com/#/transportrules>, but if any mail flow rule applies to a message, the rule name and GUID will be shown here. Valuable information for tracking purposes.
 
-- *System Overrides*: This is a means of making exceptions to the delivery location intended for a message by overriding the delivery location given by system (as per the threat and detection tech).
+- *Primary Override: Source*: Primary override and source refer to the tenant or user setting which impacted the delivery of the email, overriding the delivery location given by the system (as per the threat and detection technology). As an example, this could be an email blocked due to a tenant configured transport rule or an email allowed due to an end-user setting for Safe Senders. 
+
+- *All Overrides*: All Overrides refer to the list of overrides (tenant or user settings) that was applied on the email, which may or may not have impacted the delivery of an email. As an example, if a tenant configured transport rule, as well as a tenant configured policy setting (for example, from the Tenant Allow Block list), is applied to an email, then both will be listed in this field. You can check the primary override field to determine the setting that impacted the delivery of the email. 
 
 - *Bulk Complaint Level (BCL)*: The bulk complaint level (BCL) of the message. A higher BCL indicates a bulk mail message is more likely to generate complaints (the natural result if the email is likely to be spam).
 
@@ -118,7 +120,7 @@ Users will see enriched detonation details for known malicious attachments or UR
 
 - *Forwarding*: For scenarios with autoforwaridng, it indicates the forwarding user as well as the forwarding type like ETR or SMTP forwarding. 
 
-- *Distribution list*: Shows the distribution list, if the recipient receieved the email as a member of the list. It shows the top level distribution list if there are nested distribution lists involved.  
+- *Distribution list*: Shows the distribution list, if the recipient received the email as a member of the list. It shows the top level distribution list if there are nested distribution lists involved.  
 
 - *To, Cc*: Indicates the addresses which are listed in To, Cc fields of an email. The information in these fields is restricted to 5000 characters. 
 

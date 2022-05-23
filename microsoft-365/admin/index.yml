@@ -88,7 +88,7 @@ additionalContent:
         # Card
         - title: Overview of the Microsoft 365 admin center
           summary: Learn about admin roles, how to stay on top of changes, and how to customize your subscription. 
-          url: admin-overview/about-the-admin-center.md
+          url: admin-overview/admin-center-overview.md
         # Card
         - title: Users and groups
           summary: Manage passwords, add and remove users, set up and manage groups, manage guest access, and assign user licenses. 
