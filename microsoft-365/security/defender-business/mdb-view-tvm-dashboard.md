@@ -26,11 +26,11 @@ Microsoft Defender for Business includes a Threat & Vulnerability Management das
 - View your top security recommendations, such as addressing impaired communications with devices, turning on firewall protection, or updating Microsoft Defender Antivirus definitions
 - View remediation activities, such as any files that were sent to quarantine, or vulnerabilities found on devices
 
-Want to see how it works? Watch this video, which describes Threat & Vulnerability Management in [Microsoft Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md).
+Want to see how it works? Watch this video, which describes [Microsoft Defender Vulnerability Management](../defender-vulnerability-management/defender-vulnerability-management.md).
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4r1nv]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Y1FX]
 
-To learn more about Threat & Vulnerability Management, see [Threat and vulnerability management in Microsoft Defender for Endpoint](../defender-endpoint/next-gen-threat-and-vuln-mgt.md).
+[Learn more about Microsoft Defender Vulnerability Management](../defender-vulnerability-management/defender-vulnerability-management.md).
 
 >
 > **Got a minute?**
