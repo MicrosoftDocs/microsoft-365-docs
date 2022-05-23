@@ -21,7 +21,6 @@ ms.prod: m365-security
 
 # Secure by default in Office 365
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**

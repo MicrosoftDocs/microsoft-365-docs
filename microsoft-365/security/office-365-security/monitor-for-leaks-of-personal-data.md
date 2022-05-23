@@ -23,8 +23,6 @@ ms.prod: m365-security
 ---
 # Monitor for leaks of personal data
 
-[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
-
 There are many tools that can be used to monitor the use and transport of personal data. This topic describes three tools that work well.
 
 :::image type="content" source="../../media/Monitor-for-leaks-of-personal-data-image1.png" alt-text="The tools to monitor the use and transport of personal data" lightbox="../../media/Monitor-for-leaks-of-personal-data-image1.png":::
