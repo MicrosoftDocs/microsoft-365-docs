@@ -15,19 +15,7 @@
       - name: Overview
         href: m365bp-setup-overview.md
       - name: Set up Microsoft 365 Business Premium
-<<<<<<< HEAD
         href: m365bp-setup.md
-=======
-        items:
-          name: Guided setup
-          href: m365bp-setup.md
-          name: Add an existing domain and update DNS
-          href: ../admin/setup/setup-business-basic?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
-          name: Add users
-          href: ../admin/add-users/add-users.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
-          name: Work with a Microsoft Partner
-          href: m365bp-ms-partner.md
->>>>>>> parent of 5bc8edfe1b (Update TOC.yml)
       - name: Set up Microsoft 365 for Campaigns
         items:
           - name: Sign up
