@@ -205,7 +205,7 @@ When a device is being isolated, the following notification is displayed to info
 
 ## Contain devices from the network
 
-When you have identified an unmanaged device that is compromised or potentially compromised, you might want to contain that device from the network. When you contain a device any Microsoft Defender for Endpoint onboarded device will block incoming and outgoing communication with that device. This action can help prevent neighboring device becoming compromised while the security operations analyst locates, identifies and remediates the threat on the compromised device.
+When you have identified an unmanaged device that is compromised or potentially compromised, you might want to contain that device from the network. When you contain a device any Microsoft Defender for Endpoint onboarded device will block incoming and outgoing communication with that device. This action can help prevent neighboring devices becoming compromised while the security operations analyst locates, identifies and remediates the threat on the compromised device.
 
 > [!NOTE]
 > Only onboarded Microsoft Defender for Endpoint Windows 10 devices with the Base Filtering Engine (BFE) Windows service enabled, will block incoming and outgoing communication with a 'contained' device.
@@ -213,13 +213,13 @@ When you have identified an unmanaged device that is compromised or potentially 
 ### How to contain a device
 
 1. Go to the **Device inventory** page and select the device to contain
-2. Select **Contain** from the actions menu in the device flyout
+2. Select **Contain device** from the actions menu in the device flyout
 
 :::image type="content" alt-text="Screenshot of the contain device popup message." source="../../media/defender-endpoint/contain_device.png" lightbox="../../media/defender-endpoint/contain_device.png":::
 
-3. Type a comment and select **Confirm**.
+3. On the contain device popup, type a comment and select **Confirm**.
 
-:::image type="content" alt-text="Screenshot of the contain device menu item ." source="../../media/defender-endpoint/contain_device_popup.png" lightbox="../../media/defender-endpoint/contain_device_popup.png":::
+:::image type="content" alt-text="Screenshot of the contain device menu item." source="../../media/defender-endpoint/contain_device_popup.png" lightbox="../../media/defender-endpoint/contain_device_popup.png":::
 
 ### Contain a device from the device page
 
@@ -228,7 +228,7 @@ A device can also be contained from the device page by selecting **Contain devic
 :::image type="content" alt-text="Screenshot of the contain device menu item on the device page." source="../../media/defender-endpoint/contain_device_page.png" lightbox="../../media/defender-endpoint/contain_device_page.png":::
 
 > [!NOTE]
->It can take up to 5 minutes for the details about about a newly contained device to reach MDE onboarded devices.
+>It can take up to 5 minutes for the details about about a newly contained device to reach Microsoft Defender for Endpoint onboarded devices.
 
 > [!Important]
 >
