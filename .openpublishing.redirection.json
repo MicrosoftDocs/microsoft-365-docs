@@ -278,7 +278,7 @@
     {
       "source_path": "microsoft-365/business/validate-protection-settings-on-windows-10-pcs.md",
       "redirect_url": "/microsoft-365/business-premium/m365bp-protection-settings-for-windows-10-devices",
-      "redirect_document_id": false
+      "redirect_document_id": true
     },
     {
       "source_path": "microsoft-365/business/move-files-to-onedrive.md",
@@ -373,7 +373,7 @@
     {
       "source_path": "microsoft-365/business/protection-settings-for-windows-10-devices.md",
       "redirect_url": "/microsoft-365/business-premium/m365bp-protection-settings-for-windows-10-devices",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/business/secure-win-10-pcs.md",
@@ -408,7 +408,7 @@
     {
       "source_path": "microsoft-365/business/protection-settings-for-windows-10-pcs.md",
       "redirect_url": "/microsoft-365/business-premium/m365bp-protection-settings-for-windows-10-devices",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/business/view-policies-and-devices.md",
@@ -6392,7 +6392,7 @@
     },
     {
       "source_path": "microsoft-365/business-video/secure-win-10-pro-devices.md",
-      "redirect_url": "/microsoft-365/admin/devices/protection-settings-for-windows-10-pcs",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-protection-settings-for-windows-10-devices",
       "redirect_document_id": false
     },
     {
@@ -6857,7 +6857,7 @@
     },
     {
     "source_path": "microsoft-365/admin/devices/protection-settings-for-windows-10-pcs.md",
-    "redirect_url": "/microsoft-365/business-premium/m365bp-protection-settings-for-windows-10-pcs",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-protection-settings-for-windows-10-devices",
     "redirect_document_id": false
     },
     {
