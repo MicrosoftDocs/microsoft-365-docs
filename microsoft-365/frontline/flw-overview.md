@@ -26,10 +26,60 @@ Frontline workers are employees whose primary function is to work directly with 
 
 ## Connect and engage your workforce
 
+Enrich your communications and employee experiences with Microsoft 365 for frontline workers. Using Microsoft Teams, SharePoint, Viva Connections, and Viva Learning, you can connect employees with the tools, people, and devices they need to do their best work and build skills faster. For example:
+
+| Solution area | Description |
+| --- | --- |
+| [Communication](#communication-scenarios) | Connect your frontline workforce and enable them to communicate and share information effectively, whether within their team, across locations, or across your entire company. |
+| [Wellbeing & engagement](#wellbeing--engagement-scenarios) | Nurture a sense of belonging with your frontline employees by helping them engage with your entire organization.|
+| [Training & onboarding](#training--onboarding-scenarios) | Promote continual growth for your employees and encourage knowledge sharing and exchange.|
+
 ## Enhance workforce management
 
+| Solution area | Description |
+| --- | --- |
+| [Schedule management](#schedule-management-scenarios) | Simplify and streamline schedule coordination with your frontline workforce. Gain visibility into their schedules and enable them to arrange for cover and leave. |
+
 ## Increase operations efficiency
+
+| Solution area | Description |
+| --- | --- |
+| Manage sites, stores, and projects | Keep on top of tasks and projects. Use Tasks, Lists, Approvals, and Updates to check in with your workforce and keep things running smoothly. |
 
 ## Safeguard your data
 
 ## Modern devices
+
+## Choose your scenarios
+
+### Communication scenarios
+
+| Scenario | Description | Apps |
+| --- | --- | --- |
+| Team communication and collaboration | Help your frontline workforce communicate within their store, shift, or team with Microsoft Teams. Viva Connections helps you create a dashboard that puts the information they need front and center on their devices, so they can reach out whenever they need to. | Microsoft Teams: Chat, Meet, Praise, Tasks, Walkie Talkie <br>Viva Connections |
+| Corporate communications | Employee engagement is a significant contributor to workplace satisfaction, loyalty, and productivity at any organization. Learn how to keep everyone informed and engaged using SharePoint, Teams, Yammer. Bring it all together with Viva Connections. | Microsoft Teams: Meet <br> SharePoint <br> Yammer <br>Viva Connections |
+| Communicate with customers | Integrate Forms with your virtual appointments experience to get the right information about your customers, or as part of your customer support experience to learn what your customers need. | Virtual appointments <br> Microsoft Forms |
+
+### Wellbeing & engagement scenarios
+
+| Scenario | Description | Apps |
+| --- | --- | --- |
+| | | Viva Connections <br> Yammer |
+
+### Schedule management scenarios
+
+### Training & onboarding scenarios
+
+| Scenario | Description | Apps |
+| --- | --- | --- |
+| | | Viva Connections <br>Viva Learning <br>SharePoint Syntex |
+
+### Digitized processes
+
+| Scenario | Description | Apps |
+| --- | --- | --- |
+
+### Digital ecosystem
+
+| Scenario | Description | Apps |
+| --- | --- | --- |
