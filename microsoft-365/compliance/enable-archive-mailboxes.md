@@ -45,12 +45,12 @@ If you don't see the **Archive** page in the Microsoft Purview compliance portal
 
 2. In the left pane of the compliance portal, select **Data lifecycle management** > **Archive**.
 
-   On the **Archive** page, the  **Archive mailbox** column identifies whether an archive mailbox is enabled or disabled for each user.
+   In the list of mailboxes click the menu dropdown for the user you want to enable the Archive Mailbox. The **Archive mailbox** column identifies whether an archive mailbox is enabled or disabled for each user.
 
    > [!NOTE]
    > The **Archive** page shows a maximum of 500 users. Use the search box if you can't immediately see the name of the user you want.
 
-3. In the list of mailboxes, select the user to enable their mailbox for archive, and then select the **Enable Archive** option:
+3. Select the **Enable Archive** option:
 
    ![Enable archive option for a selected user.](../media/enable-archive-option.png)
 
