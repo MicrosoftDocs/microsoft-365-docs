@@ -74,7 +74,7 @@ Here's a list of applicable role groups that are in preview. To learn more, see 
 
 DLP finds sensitive information by regular expression (RegEx) pattern matching, in combination with other indicators such as the proximity of certain keywords to the matching patterns. For example, a VISA credit card number has 16 digits. But, those digits can be written in different ways, such as 1111-1111-1111-1111, 1111 1111 1111 1111, or 1111111111111111.
 
-Any 16-digit string is not necessarily a credit card number, it could be a ticket number from a help desk system, or a serial number of a piece of hardware. To tell the difference between a credit card number and a harmless 16-digit string, a calculation is performed (checksum) to confirm that the numbers match a known pattern from the various credit card brands.
+Any 16-digit string isn't necessarily a credit card number, it could be a ticket number from a help desk system, or a serial number of a piece of hardware. To tell the difference between a credit card number and a harmless 16-digit string, a calculation is performed (checksum) to confirm that the numbers match a known pattern from the various credit card brands.
 
 If DLP finds keywords such as "VISA" or "AMEX", near date values that might be the credit card expiry date, DLP also uses that data to help it decide whether the string is a credit card number or not.
 
@@ -103,7 +103,7 @@ Give your new DLP policy a name. The default name will match the DLP policy temp
 
 ![Option to name your policy.](../media/DLP-create-test-tune-name-policy.png)
 
-Choose the locations that the policy will apply to. DLP policies can apply to Exchange Online, SharePoint Online, and OneDrive for Business. I am going to leave this policy configured to apply to all locations.
+Choose the locations that the policy will apply to. DLP policies can apply to Exchange Online, SharePoint Online, and OneDrive for Business. I'm going to leave this policy configured to apply to all locations.
 
 ![Option to choose all locations.](../media/DLP-create-test-tune-choose-locations.png)
 
@@ -133,7 +133,7 @@ As an example, the DLP policy I created for this article will detect Australian 
 
 ![Documentation on Australia Tax File Number.](../media/DLP-create-test-tune-Australia-Tax-File-Number-doc.png)
  
-To demonstrate TFN detection in a rather blunt manner, an email with the words "Tax file number" and a nine digit string in close proximity will sail through without any issues. The reason it does not trigger the DLP policy is that the nine digit string must pass the checksum that indicates it is a valid TFN and not just a harmless string of numbers.
+To demonstrate TFN detection in a rather blunt manner, an email with the words "Tax file number" and a nine digit string in close proximity will sail through without any issues. The reason it doesn't trigger the DLP policy is that the nine digit string must pass the checksum that indicates it's a valid TFN and not just a harmless string of numbers.
 
 ![Australia tax file number that does not pass checksum.](../media/DLP-create-test-tune-email-test1.png)
 
@@ -145,7 +145,7 @@ The incident report email includes the type of sensitive information that was de
 
 ![Incident report showing tax file number detected.](../media/DLP-create-test-tune-email-incident-report.png)
 
-If you leave your DLP policy in test mode and analyze the incident report emails, you can start to get a feel for the accuracy of the DLP policy and how effective it will be when it is enforced. In addition to the incident reports, you can [use the DLP reports](view-the-dlp-reports.md) to see an aggregated view of policy matches across your tenant.
+If you leave your DLP policy in test mode and analyze the incident report emails, you can start to get a feel for the accuracy of the DLP policy and how effective it will be when it's enforced. In addition to the incident reports, you can [use the DLP reports](view-the-dlp-reports.md) to see an aggregated view of policy matches across your tenant.
 
 ## Tune a DLP policy
 
@@ -168,7 +168,7 @@ When editing a rule within a DLP policy, you can change:
 - The conditions, including the type and number of instances of sensitive data that will trigger the rule.
 - The actions that are taken, such as restricting access to the content.
 - User notifications, which are policy tips that are displayed to the user in their email client or web browser.
-- User overrides determines whether users can choose to proceed with their email or file sharing anyway.
+- User overrides determine whether users can choose to proceed with their email or file sharing anyway.
 - Incident reports, to notify administrators.
 
 ![Options to edit parts of a rule.](../media/DLP-create-test-tune-editing-options.png)
@@ -197,9 +197,9 @@ If you have policy tips enabled, the user will begin to see the tips in Outlook,
 
 ## Investigate false positives
 
-DLP policy templates are not perfect straight out of the box. It's likely that you'll find some false positives occurring in your environment, which is why it's so important to ease your way into a DLP deployment, taking the time to adequately test and tune your policies.
+DLP policy templates aren't perfect straight out of the box. It's likely that you'll find some false positives occurring in your environment, which is why it's so important to ease your way into a DLP deployment, taking the time to adequately test and tune your policies.
 
-Here's an example of a false positive. This email is quite harmless. The user is providing their mobile phone number to someone, and including their email signature.
+Here's an example of a false positive. This email is harmless. The user is providing their mobile phone number to someone, and including their email signature.
 
 ![Email showing false positive information.](../media/DLP-create-test-tune-false-positive-email.png)
  
