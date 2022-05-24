@@ -32,11 +32,11 @@ Email authentication mechanisms like [SPF](set-up-spf-in-office-365-to-help-prev
 
 ## Authenticated Received Chain (ARC) for *legitimate* indirect mailflows in Microsoft 365 Defender for Office
 
-Mailing lists and services that filter or forward mails can be a well-known and normal feature of an organization's mail flow. But fowarding an email will violate SPF, and it can also violate DKIM email authentication (by altering the email through processes like adding virus scan headers or removing attachments, for example). Failing either of these email authentication methods can result in failure to pass DMARC.
+Mailing lists and services that filter or forward mails are a well-known and normal feature of an organization's mail flow. However, email fowarding violates SPF. Services can also violate DKIM email authentication by changing email headers, adding things like virus scan info or removing attachments. Failing either of these email authentication methods can result in failure to pass DMARC.
 
-Planned mailflow interventions from legitimate services is often called *indirect mailflow*, and might *accidentally* cause messages to fail email authentication as they pass through (hop to) the next device or service on the way to the receiver.
+Planned mailflow interventions from legitimate services are often called *indirect mailflow*, and might *accidentally* cause messages to fail email authentication as they pass through (hop to) the next device or service on the way to the receiver.
 
-**Trusted ARC sealers lets admins add a list of *trusted* intermediaries into the Microsoft 365 Defender portal.** This allows Microsoft to honor ARC signatures from trusted intermediaries, preventing these legitimate messages from failing the authentication chain.
+**Trusted ARC sealers lets admins add a list of *trusted* intermediaries into the Microsoft 365 Defender portal.** Trusted ARC sealers allows Microsoft to honor ARC signatures from trusted intermediaries, preventing these legitimate messages from failing the authentication chain.
 
 > [!NOTE]
 > ***Trusted ARC sealers is an admin-created list of any domain whose processes result in indirect mailflow and who have implemented ARC sealing.*** When an email is routed to Office 365 through and ARC rusted intermediary of the Office 365 tenant, Microsoft validates the ARC signature, and, based on the ARC results, can honor authentication details provided.
@@ -50,7 +50,7 @@ A list of trusted ARC sealers is only needed where devices and servers intervene
  
 By adding a trusted ARC sealer, Office 365 will validate and trust the authentication results that the sealer provides when delivering mail to your tenant in Office 365.
 
-**Administrators should add *only legitimate services* as trusted ARC sealers.** This will help messages that must first go through a service to pass email authentication checks, and prevent legitimate messages from being sent to *Junk* due to authentication failures.
+**Administrators should add *only legitimate services* as trusted ARC sealers.** Adding only services the organization expressly uses and knows will help messages that must first go through a service to pass email authentication checks, and prevent legitimate messages from being sent to *Junk* due to authentication failures.
 
 ## Steps to add a trusted ARC sealer to Microsoft 365 Defender
 
