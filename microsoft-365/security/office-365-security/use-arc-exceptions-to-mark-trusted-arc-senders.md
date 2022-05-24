@@ -139,3 +139,4 @@ Here, you see the same organization **after leveraging the ability to create a t
 
 ## Next steps: After you set up ARC for Microsoft 365 Defender for Office
 
+After setup, check your ARC Headers with [Message Header Analyzer](/connectivity-analyzer/message-header-analyzer).
