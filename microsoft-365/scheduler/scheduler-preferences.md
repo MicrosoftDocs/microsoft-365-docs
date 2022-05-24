@@ -1,3 +1,15 @@
+---
+title: "Adjust scheduling preferences for Scheduler for Microsoft 365 Overview"
+ms.author: shivb
+author: shivbijlani
+manager: charlle
+audience: Admin
+ms.topic: article
+ms.service: scheduler
+ms.localizationpriority: medium
+description: "Learn how to adjust scheduling preferences for Scheduler for Microsoft 365."
+---
+
 Scheduling Preferences
 ======================
 
@@ -39,8 +51,7 @@ Avoid back-to-back meetings
 
 Outlook now has a setting that automatically starts meetings late or ends meetings early to avoid back-to-back meetings. If set, Scheduler will also shorten the meeting duration according to the preference setting. See [Change default meeting length](https://techcommunity.microsoft.com/t5/hybrid-work/change-default-meeting-length-in-outlook-avoid-back-to-back/m-p/1247361) in Outlook documentation.
 
-Additional Note
-===============
+##Additional Note
 
 - If you use the Windows client, you must set the following option to ensure that your preferences are synced across Scheduler and other Outlook clients:
 
