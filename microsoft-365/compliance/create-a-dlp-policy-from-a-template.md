@@ -48,7 +48,7 @@ Members of your compliance team who will create DLP policies need permissions to
 
 Use the **View-Only DLP Compliance Management** role to create role group with view-only privileges to the DLP policies and DLP reports.
 
-For more information, see [Give users access to the Office 365 Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+For more information, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
   
 These permissions are required to create and apply a DLP policy not to enforce policies.
 
@@ -56,14 +56,14 @@ These permissions are required to create and apply a DLP policy not to enforce p
 
 There are roles and role groups in preview that you can test out to fine tune your access controls.
 
-Here's a list of applicable roles that are in preview. To learn more about them, see [Roles in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+Here's a list of applicable roles. To learn more about them, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md)
 
 - Information Protection Admin
 - Information Protection Analyst
 - Information Protection Investigator
 - Information Protection Reader
 
-Here's a list of applicable role groups that are in preview. To learn more about the, see [Role groups in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+Here's a list of applicable role groups. To learn more about the, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md)
 
 - Information Protection
 - Information Protection Admins
@@ -77,8 +77,6 @@ Here's a list of applicable role groups that are in preview. To learn more about
 
 2. In the Microsoft Purview compliance portal \> left navigation \> **Solutions** \> **Data loss prevention** \> **Policies** \> **+ Create policy**.
 
-    ![Create a policy button.](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
-          
 3. Choose the DLP policy template that protects the types of sensitive information that you need \> **Next**.
 
 4. Name the policy \> **Next**.
