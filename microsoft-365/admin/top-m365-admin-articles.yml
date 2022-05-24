@@ -9,7 +9,7 @@ metadata:
   ms.topic: landing-page # Required
   author: SKjerland #Required; your GitHub user alias, with correct capitalization.
   ms.author: sharik #Required; microsoft alias of author; optional team alias.
-  ms.date: 03/22/2022 #Required; mm/dd/yyyy format.
+  ms.date: 05/24/2022 #Required; mm/dd/yyyy format.
   ms.localizationpriority: high
   ms.custom: AdminSurgePortfolio
   ms.collection: Adm_TOC
@@ -88,17 +88,11 @@ landingContent:
   # Card (optional)
   - title: Users, groups, and passwords
     linkLists:
-      - linkListType: overview
-        links:
-        - text: Compare groups
-          url: create-groups/compare-groups.md
       - linkListType: how-to-guide
         links:
           - text: Add users and assign licenses at the same time
             url: add-users/add-users.md
           - text: Assign licenses to users
             url: manage/assign-licenses-to-users.md
-          - text: Set the password expiration policy for your organization
-            url: manage/set-password-expiration-policy.md
           - text: Allow users to sign in to Outlook mobile apps with a QR code
             url: manage/use-qr-code-download-outlook.md
