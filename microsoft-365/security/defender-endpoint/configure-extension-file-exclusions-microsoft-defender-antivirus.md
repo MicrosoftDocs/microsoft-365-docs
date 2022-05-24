@@ -33,7 +33,7 @@ You can define exclusions for Microsoft Defender Antivirus that apply to [schedu
 - [Exclusions for files that are opened by processes](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
 > [!IMPORTANT]
-> Microsoft Defender Antivirus exclusions don't apply to other Microsoft Defender for Endpoint capabilities, including [endpoint detection and response (EDR)](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response), [attack surface reduction (ASR) rules](/microsoft-365/security/defender-endpoint/attack-surface-reduction), and [controlled folder access](/microsoft-365/security/defender-endpoint/controlled-folders). Files that you exclude using the methods described in this article can still trigger EDR alerts and other detections.
+> Microsoft Defender Antivirus exclusions don't apply to other Microsoft Defender for Endpoint capabilities, such as [attack surface reduction (ASR) rules](/microsoft-365/security/defender-endpoint/attack-surface-reduction) and [controlled folder access](/microsoft-365/security/defender-endpoint/controlled-folders). Files that you exclude using the methods described in this article can still trigger EDR alerts and other detections.
 > To exclude files broadly, add them to the Microsoft Defender for Endpoint [custom indicators](/microsoft-365/security/defender-endpoint/manage-indicators).
 
 ## Before you begin
@@ -374,7 +374,7 @@ If you do not have Internet access, you can create your own EICAR test file by w
 You can also copy the string into a blank text file and attempt to save it with the file name or in the folder you are attempting to exclude.
 
 > [!TIP]
-> If you’re looking for Antivirus related information for other platforms, see:
+> If you're looking for Antivirus related information for other platforms, see:
 > - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
 > - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
 > - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

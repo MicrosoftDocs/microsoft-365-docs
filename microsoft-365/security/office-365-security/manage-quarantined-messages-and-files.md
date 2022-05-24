@@ -24,7 +24,7 @@ ms.prod: m365-security
 
 # Manage quarantined messages and files as an admin in EOP
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -40,6 +40,9 @@ By default, only admins can manage messages that were quarantined as malware, hi
 Admins in organizations with Microsoft Defender for Office 365 can also manage files that were quarantined by [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](mdo-for-spo-odb-and-teams.md).
 
 You view and manage quarantined messages in the Microsoft 365 Defender portal or in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes).
+
+Watch this short video to learn how to manage quarantined messages as an administrator. 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGGPF]
 
 ## What do you need to know before you begin?
 

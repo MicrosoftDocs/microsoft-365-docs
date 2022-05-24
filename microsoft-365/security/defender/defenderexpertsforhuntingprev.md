@@ -49,19 +49,18 @@ Defender Experts for Hunting provides targeted attack notifications directly thr
 >[!IMPORTANT]
 >Before you apply, make sure to discuss the eligibility requirements for Defender Experts for Hunting with your Microsoft Technical Service provider and account team. The preview is filling up fast and availability is very limited. If we can't get you in, we'll reach out to you soon as Microsoft Defender Experts for Hunting service is ready for general availability. 
 
-If you haven’t done so yet, you can apply for Defender Experts for Hunting:
+If you haven't done so yet, you can apply for Defender Experts for Hunting:
 
-1. Click [**Apply**](https://aka.ms/expandedMTEprev). Only the global administrators can register and complete the application process. If you’re not a global administrator, contact your global administrator to fill out the application form.
+1. Click [**Apply**](https://aka.ms/expandedMTEprev). Anyone from your company can request to join the preview, but if you are accepted, only your Global Admin can sign the legal agreement and enter the preview. 
 2. Enter your **company email ID**.
 3. Select **Submit**. You will get a confirmation message that your application has been received.  
-4. Upon approval, you will receive an email to register.
 
 ## Register to Microsoft Defender Experts for Hunting service preview
 
 You need to follow these steps to join the preview:
 
-1. In the application acceptance email that you’ve received, click **Register**. This opens the sign-in dialog box to your Microsoft 365 account.
-2. Ask your global administrator to register your company (the link will be provided in the email you’ll get). Sign in. The **Settings** page opens.
+1. In the application acceptance email that you've received, click **Register**. This opens the sign-in dialog box to your Microsoft 365 account.
+2. Ask your global administrator to register your company (the link will be provided in the email you'll get). Sign in. The **Settings** page opens.
 3. Go to **Settings > Microsoft Defender Experts**.
 4. Read the **Microsoft Defender Experts for Hunting preview terms and conditions**. If you have any questions or concerns, contact the Microsoft Defender Experts Team at defenderexpertshelp@microsoft.com.
 5. Click **Accept**, to accept the terms and conditions.
@@ -121,7 +120,7 @@ The Microsoft Defender Experts for Hunting - Experts on Demand menu option in th
 
 ## Opt out of preview
 
-In case you change your mind and don’t want to continue with the Defender Experts for Hunting preview, you can follow the steps to [cancel a self-service subscription](../../commerce/subscriptions/manage-self-service-purchases-admins.md#cancel-a-self-service-purchase-subscription).
+In case you change your mind and don't want to continue with the Defender Experts for Hunting preview, you can follow the steps to [cancel a self-service subscription](../../commerce/subscriptions/manage-self-service-purchases-admins.md#cancel-a-self-service-purchase-subscription).
 
 ### Related topics
 
