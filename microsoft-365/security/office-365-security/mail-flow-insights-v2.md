@@ -18,8 +18,6 @@ ms.prod: m365-security
 
 # Mail flow insights in the Security & Compliance Center
 
-[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
-
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
@@ -75,7 +73,5 @@ The Mail flow dashboard is available to members of the following role groups:
 For more information about permissions, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md) and [Give users access to the Security & Compliance Center](grant-access-to-the-security-and-compliance-center.md).
 
 ## Where to find the Mail flow dashboard
-
-Open the Security & Compliance Center at <https://protection.office.com>, expand **Mail flow**, and then select **Dashboard**.
 
 To go directly to the Mail flow dashboard, open <https://protection.office.com/mailflow/dashboard>.
