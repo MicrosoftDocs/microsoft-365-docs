@@ -34,9 +34,6 @@ If your organization is using [Microsoft 365 Defender](microsoft-365-defender.md
 
 This article provides an overview of AIR and includes links to next steps and additional resources.
 
-> [!TIP]
-> Want to experience Microsoft 365 Defender? You can [evaluate it in a lab environment](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) or [run your pilot project in production](m365d-pilot.md?ocid=cx-evalpilot).
-
 ## How automated investigation and self-healing works
 
 As security alerts are triggered, it's up to your security operations team to look into those alerts and take steps to protect your organization. Prioritizing and investigating alerts can be very time consuming, especially when new alerts keep coming in while an investigation is going on. Security operations teams can feel overwhelmed by the sheer volume of threats they must monitor and protect against. Automated investigation and response capabilities, with self-healing, in Microsoft 365 Defender can help.

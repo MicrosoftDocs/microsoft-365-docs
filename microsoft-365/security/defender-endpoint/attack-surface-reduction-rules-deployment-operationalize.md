@@ -1,5 +1,5 @@
 ---
-title: Operationalize attack surface reduction (ASR) rules deployment
+title: Operationalize attack surface reduction (ASR) rules
 description: Provides guidance to operationalize your attack surface reduction rules deployment.
 keywords: Attack surface reduction rules deployment, ASR deployment, enable asr rules, configure ASR, host intrusion prevention system, protection rules, anti-exploit rules, anti-exploit, exploit rules, infection prevention rules, Microsoft Defender for Endpoint, configure ASR rules
 search.product: eADQiWindows 10XVcnh
@@ -22,7 +22,7 @@ ms.collection:
 ms.date: 1/18/2022
 ---
 
-# Step 4: Operationalize ASR rules
+# Operationalize attack surface reduction (ASR) rules
 
 After you've fully deployed attack surface reduction (ASR) rules, it's vital that you have processes in place to monitor and respond to ASR-related activities.
 
@@ -76,10 +76,12 @@ For more information about hunting options, see: [Demystifying attack surface re
 
 ## Topics in this deployment collection
 
-[ASR rules deployment prerequisites](attack-surface-reduction-rules-deployment.md)
+[Attack surface reduction (ASR) rules deployment overview](attack-surface-reduction-rules-deployment.md)
 
-[Step 1: Plan ASR rules deployment](attack-surface-reduction-rules-deployment-plan.md)
+[Plan attack surface reduction (ASR) rules deployment](attack-surface-reduction-rules-deployment-plan.md)
 
-[Step 2: Test ASR rules](attack-surface-reduction-rules-deployment-test.md)
+[Test attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-test.md)
 
-[Step 3: Implement ASR rules](attack-surface-reduction-rules-deployment-implement.md)
+[Enable attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-implement.md)
+
+[Attack surface reduction (ASR) rules reference](attack-surface-reduction-rules-reference.md)

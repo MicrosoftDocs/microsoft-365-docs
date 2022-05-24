@@ -219,7 +219,7 @@ The information in the list of proxy and firewall configuration information is r
 
 3. Run the TestCloudConnection.exe tool from "C:\Program Files\Microsoft Monitoring Agent\Agent" to validate the connectivity, and to get the required URLs for your specific workspace.
 
-4. Check the Microsoft Defender for Endpoint URLs list for the complete list of requirements for your region (refer to the Service URLs [Spreadsheet](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)).
+4. Check the Microsoft Defender for Endpoint URLs list for the complete list of requirements for your region (refer to the Service URLs [Spreadsheet](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)).
 
    :::image type="content" source="images/admin-powershell.png" alt-text="The administrator in Windows PowerShell" lightbox="images/admin-powershell.png":::
 

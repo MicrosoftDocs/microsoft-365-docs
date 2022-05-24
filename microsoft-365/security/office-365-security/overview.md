@@ -6,7 +6,7 @@ manager: dansimp
 ms.date: 07/21/2021
 audience: Admin
 ms.topic: conceptual
-ms.localizationpriority: medium
+ms.localizationpriority: high
 search.appverid: 
   - MET150
   - MOE150
@@ -19,6 +19,8 @@ ms.prod: m365-security
 ---
 
 # Microsoft Defender for Office 365 security overview
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)

@@ -1,5 +1,5 @@
 ---
-title: Office TLS Certificate Changes
+title: Office TLS certificate changes
 description: How to prepare for upcoming changes to Office TLS certificates.
 author: pshelton-skype
 ms.author: pshelton
@@ -12,6 +12,8 @@ ms.localizationpriority: medium
 ---
 
 # Office TLS Certificate Changes
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft 365 is updating services powering messaging, meetings, telephony, voice, and video to use TLS certificates from a different set of Root Certificate Authorities (CAs). This change is being made because the current Root CA will expire in May 2025.
 

@@ -3,12 +3,12 @@ title: Cross-tenant mailbox migration
 description: How to move mailboxes between Microsoft 365 or Office 365 tenants.
 ms.author: kvice
 author: kelleyvice-msft
-manager: Laurawi
+manager: scotv
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.date: 09/21/2020
+ms.date: 05/05/2022
 ms.reviewer: georgiah
 ms.custom:
 - it-pro
@@ -54,7 +54,7 @@ To obtain the tenant ID of a subscription, sign in to the [Microsoft 365 admin c
 
 ### Prepare the target (destination) tenant by creating the migration application and secret
 
-1. Log into your Azure AD portal (<https://portal.azure.com>) with your target tenant admin credentials
+1. Log in to your Azure AD portal (<https://portal.azure.com>) with your target tenant admin credentials
 
    ![Azure Logon](../media/tenant-to-tenant-mailbox-move/74f26681e12df3308c7823ee7d527587.png)
 
@@ -142,13 +142,10 @@ To obtain the tenant ID of a subscription, sign in to the [Microsoft 365 admin c
    ```powershell
 
    # Enable customization if tenant is dehydrated
-     $dehydrated=Get-OrganizationConfig | fl isdehydrated
-     if ($dehydrated -eq $true) {Enable-OrganizationCustomization}
-
+   $dehydrated=Get-OrganizationConfig | select isdehydrated
+   if ($dehydrated -eq $true) {Enable-OrganizationCustomization}
    $AppId = "[guid copied from the migrations app]"
-
    $Credential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $AppId, (ConvertTo-SecureString -String "[this is your secret password you saved in the previous steps]" -AsPlainText -Force)
-
    New-MigrationEndpoint -RemoteServer outlook.office.com -RemoteTenant "sourcetenant.onmicrosoft.com" -Credentials $Credential -ExchangeRemoteMove:$true -Name "[the name of your migration endpoint]" -ApplicationId $AppId
    ```
 
@@ -430,7 +427,7 @@ Get-MoveRequest -Flags "CrossTenant"
    ```powershell
    # Now sync the changes from On-Premises to Azure and Exchange Online in the Target tenant
    # This action should create the target mail enabled users (MEUs) in the Target tenant
-   Start-ADSyncCycle
+   Start-ADSyncSyncCycle
    ```
 
 **How do we access Outlook on Day 1 after the use mailbox is moved?**
@@ -458,7 +455,7 @@ Exchange mailbox moves using MRS craft the targetAddress on the original source 
 
 Mailbox permissions include Send on Behalf of and Mailbox Access:
 
-- Send On Behalf Of (AD:publicDelegates) stores the DN of recipients with access to a user’s mailbox as a delegate. This value is stored in Active Directory and currently does not move as part of the mailbox transition. If the source mailbox has publicDelegates set, you will need to restamp the publicDelegates on the target Mailbox once the MEU to Mailbox conversion completes in the target environment by running `Set-Mailbox <principle> -GrantSendOnBehalfTo <delegate>`.
+- Send On Behalf Of (AD:publicDelegates) stores the DN of recipients with access to a user's mailbox as a delegate. This value is stored in Active Directory and currently does not move as part of the mailbox transition. If the source mailbox has publicDelegates set, you will need to restamp the publicDelegates on the target Mailbox once the MEU to Mailbox conversion completes in the target environment by running `Set-Mailbox <principle> -GrantSendOnBehalfTo <delegate>`.
 
 - Mailbox Permissions that are stored in the mailbox will move with the mailbox when both the principal and the delegate are moved to the target system. For example, the user TestUser_7 is granted FullAccess to the mailbox TestUser_8 in the tenant SourceCompany.onmicrosoft.com. After the mailbox move completes to TargetCompany.onmicrosoft.com, the same permissions are set up in the target directory. Examples using *Get-MailboxPermission* for TestUser_7 in both source and target tenants are shown below. Exchange cmdlets are prefixed with source and target accordingly.
 
@@ -536,7 +533,7 @@ Cross-tenant migration only migrates mailbox data and nothing else. There are mu
 
 **Can I have the same labels in the destination tenant as you had in the source tenant, either as the only set of labels or an additional set of labels for the migrated users depending on alignment between the organizations.**
 
-Since, Cross-tenant migrations does not export labels and there is no way to share labels between tenants you can only achieve this by recreating the labels in the destination tenant.
+Because cross-tenant migrations do not export labels and there is no way to share labels between tenants, you can only achieve this by recreating the labels in the destination tenant.
 
 **Do you support moving Microsoft 365 Groups?**
 
@@ -640,7 +637,7 @@ No, after a cross tenant mailbox migration, eDiscovery against the migrated user
 
       | Name                                             |
       | ------------------------------------------------ |
-      | Advanced eDiscovery Storage (500 GB)             |
+      | eDiscovery (Premium) Storage (500 GB)             |
       | Customer Lockbox                                 |
       | Data Loss Prevention                             |
       | Exchange Enterprise CAL Services (EOP, DLP)      |
@@ -665,7 +662,7 @@ No, after a cross tenant mailbox migration, eDiscovery against the migrated user
       | Microsoft Bookings                               |
       | Microsoft Business Center                        |
       | Microsoft MyAnalytics (Full)                     |
-      | Office 365 Advanced eDiscovery                   |
+      | Office 365 eDiscovery (Premium)                   |
       | Microsoft Defender for Office 365 (Plan 1)       |
       | Microsoft Defender for Office 365 (Plan 2)       |
       | Office 365 Privileged Access Management          |
