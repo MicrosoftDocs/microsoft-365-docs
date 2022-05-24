@@ -163,15 +163,15 @@ To meet the challenges of today's decentralized, data-rich workplace, we're intr
 - [Configure endpoint data loss prevention settings](dlp-configure-endpoint-settings.md) - new for public preview of restricted app groups.
 - [Data loss prevention policy reference](dlp-policy-reference.md) - updated for public preview of restricted app groups.
 - [Get started with data loss prevention for Power BI](dlp-powerbi-get-started.md) - new for public preview.
+- 
+### Information Protection
 
+- [Support for double byte character set release notes](mip-dbcs-relnotes.md) - added guidance for macOS.
+- 
 ### Insider risk management
 
 - [Get started with insider risk management](insider-risk-management-configure.md) - added new tasks for the Recommended actions guidance.
 - [Get started with insider risk management settings](insider-risk-management-settings.md) - new updates for the notification and email alerts features, new updates for analytics notifications.
-
-### Microsoft Information Protection
-
-- [Support for double byte character set release notes](mip-dbcs-relnotes.md) - added guidance for macOS.
 
 ### Microsoft Priva
 
