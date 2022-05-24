@@ -21,8 +21,8 @@ ms.collection:
 
 After you have [started a trial or purchased Microsoft 365 Business Premium](get-microsoft-365-business-premium.md), your next step is to get everything set up. You have several options available. You can:
 
-Start with the [guided setup experience](m365bp-setup.md#guided-setup-process) for basic setup and configuration; or
-[Work with a partner](m365bp-setup.md#work-with-a-microsoft-partner), such as a Microsoft Cloud Solution Provider (CSP).
+- Start with the [guided setup experience](m365bp-setup.md#guided-setup-process) for basic setup and configuration; or
+- [Work with a partner](m365bp-setup.md#work-with-a-microsoft-partner), such as a Microsoft Cloud Solution Provider (CSP).
 
 ## Before you begin
 
@@ -55,7 +55,7 @@ If you'd prefer to have a Microsoft partner help you get and set up Microsoft 36
 
 1. Go to the **Microsoft Solution Providers** page ([https://www.microsoft.com/solution-providers](https://www.microsoft.com/solution-providers)).
 
-2. In the search box, fill in your location and company size. 
+2. In the search box, fill in your location and company size.
 
 3. In the **Search for products, services, skills, industries** box, put `Microsoft 365`, and then select **Go**.
 
