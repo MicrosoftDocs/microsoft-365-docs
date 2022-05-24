@@ -30,7 +30,7 @@ ms.prod: m365-security
 - [Troubleshooting SPF](#troubleshooting-spf)
 
 <!--
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
