@@ -20,7 +20,7 @@ ms.custom:
 search.appverid:
 - MET150
 description: "Admins can learn how to manage self-service purchases made by users in their organization."
-ms.date: 05/23/2022
+ms.date: 05/24/2022
 ---
 
 # Manage self-service purchases (Admin)
