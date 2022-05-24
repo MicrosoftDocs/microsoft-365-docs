@@ -38,8 +38,6 @@ We've redesigned the user details pane to include more user information and more
 > [!NOTE]
 > The redesigned user details pane is being rolled out over several weeks and may not be immediately available in all tenants.
 
-**Add screenshot here**
-
 ## April 2022
 
 ### Delegated access type and roles on Tenants page
@@ -47,8 +45,6 @@ We've redesigned the user details pane to include more user information and more
 We've updated the Tenants page to list the Managed Service Provider (MSP)'s delegated access type (None, DAP, GDAP, or Both DAP & GDAP) per customer under the **Delegated access** column. We've also added a new column titled **Your roles** that lists the DAP and GDAP roles per customer for a signed-in user. These two enhancements to the Tenants page will make it easier for partner technicians to understand which types of delegated administrative permissions are available for each customer and which delegated roles have explicitly been granted to them.
 
 To learn more, see [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md).
-
-**Add screenshot here**
 
 > [!NOTE]
 > This functionality is being rolled out over several weeks and may not be immediately available in all tenants.
@@ -83,8 +79,6 @@ To learn more about GDAP in Lighthouse, see [Configure Microsoft 365 Lighthouse 
 
 As part of the device compliance baseline step, we've added the capability to notify users in a customer tenant to act on non-compliant devices. With this change, once you apply the device compliance deployment step for any customer tenant, the device compliance policy created in that tenant will automatically send a notification to users when their device becomes non-compliant reminding them to take appropriate action to bring the device back into compliance.
 
-**Add screenshot here**
-
 ### Deployment validation and reporting
 
 Microsoft 365 Lighthouse can now test tenant configurations for deployment steps with Conditional Access policies!  
@@ -101,8 +95,6 @@ Microsoft Defender Firewall is on by default on Windows 10 (and later) devices. 
 2. Select the **Deployment Plan** tab.
 3. From the list of deployment steps, select **Configure Microsoft Defender Firewall**.
 4. Select **Review and deploy** to deploy this configuration to the customer tenant. 
-
-**Add screenshot here**
 
 ### Increase in maximum license limit
 
@@ -142,13 +134,9 @@ For more information, see [Overview of the Tenants page in Microsoft 365 Lightho
 
 We've added a new step to the default baseline to include guidance for enabling Security Policies for Exchange Online Protection (EOP) and Microsoft Defender for Office 365 (MDO). EOP and MDO help protect users from spam, phishing, and malware emails by sending the emails to the user's quarantine or junk mail folder (coming soon). The deployment plan guides you in setting up EOP and MDO, further expanding your security stance during your next customer tenant deployment plan review.
 
-**Add screenshot here**
-
 ### Default tenant tags
 
 You can now designate certain tenant tags as *default* from the **Manage tags** pane on the **Tenants** page, so the next time you sign in to Microsoft 365 Lighthouse, all your views and insights will be filtered by default to show only the tenants that have a default tag. Default tags can help you focus on insights for high-priority customer tenants.
-
-**Add screenshot here**
 
 ## October 2021
 
@@ -156,13 +144,9 @@ You can now designate certain tenant tags as *default* from the **Manage tags** 
 
 It's now possible to filter data by multiple tenant tags at the same time. This functionality can help you more easily filter the existing views and insights that are available in Microsoft 365 Lighthouse to show relevant customer tenants.
 
-**Add screenshot here**
-
 ### Capability to assign baseline configurations to specific Azure Active Directory groups
 
 We've added the capability to assign baseline configurations to specific Azure Active Directory (Azure AD) groups of your customer tenants from within Microsoft 365 Lighthouse. From any deployment step page, browse and select the specific Azure AD groups that you want to include or exclude, and then deploy the configurations to your customer tenant.
-
-**Add screenshot here**
 
 ### Improvements to Risky users page
 
@@ -178,27 +162,19 @@ Your feedback matters and is important to us, so we've added new feedback functi
 
 We've made some changes to the tenant filtering experience to help you quickly view and manage tenants and tags from any page within Microsoft 365 Lighthouse. Select the Tenants filter at the top of any page and then browse or enter the tenant or tag name that you want to filter by.
 
-**Add screenshot here**
-
 ## August 2021
 
 ### In-product email workflows to communicate with users 
 
 We've made it easier to communicate with users in your customer tenants about actions they're required to take. From the list of users not registered for multifactor authentication (MFA) or self-service password reset, you can now select one or more users and send them an email message using a downloadable email template.
 
-**Add screenshot here**
-
 ### Capability to take action on noncompliant devices
 
 We've introduced the capability to sync or restart one or more devices across multiple customer tenants. This functionality helps ensure that your customers' devices are protected from risk. To check out this functionality, select **Devices** from the left navigation pane in Lighthouse, and then select the **Devices** tab. Look for the **Sync** and **Restart** options above the devices list. You can also access these options from the device details pane of any device.
 
-**Add screenshot here**
-
 ### Capability to monitor and manage Windows 365 Cloud PCs
 
 We've added the capability to monitor on-premises connections and provision and manage Windows 365 Cloud PCs across all of your customer tenants. The new Windows 365 page provides detailed information about all of your tenants' Cloud PCs in one convenient location. 
-
-**Add screenshot here**
 
 ### Support for Microsoft 365 E3 customers
 
@@ -216,8 +192,6 @@ For more information about requirements, see [Requirements for Microsoft 365 Lig
 
 You can now create and apply custom tags to the customer tenants that you manage in Microsoft 365 Lighthouse. Use these tags to help you organize your tenants, or use them to more easily filter your tenant list to show insights for relevant sets of customer tenants. 
 
-**Add screenshot here**
-
 ### Baselines to standardize your customer tenant deployments
 
 With the new baselines feature, you can now deploy standard configurations related to securing your customer tenant's users, devices, and data. The default baseline currently contains the following deployment steps (with more coming soon): 
@@ -231,8 +205,6 @@ With the new baselines feature, you can now deploy standard configurations relat
 
 To act on these deployment steps, select **Tenants** from the left navigation pane in lighthouse, select a tenant from the tenants list, and then select the **Deployment plan** tab. 
 
-**Add screenshot here**
-
 ## May 2021
 
 ### Enhancements to Tenants page
@@ -242,5 +214,3 @@ We've made the following enhancements to the **Tenants** page:
 - Added a list of total counts by issue to the top of the page 
 - Provided the capability to hover over a status in the **Status** column of the tenants list to see restriction details 
 - Improved the status labels
- 
-**Add screenshot here**
