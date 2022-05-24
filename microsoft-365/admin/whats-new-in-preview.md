@@ -50,21 +50,21 @@ And if you'd like to know what's new with other Microsoft cloud services:
 
 ### Role based access controls (RBAC)
 
-There are new Azure AD built-in roles in the Microsoft 365 admin center. Give admins only the access they need to manage Virtual Visits.
+There are 4 new roles in the Microsoft 365 admin center centered around management of custom security attributes. These roles are available for everyone to use in the Microsoft 365 admin center under **Roles**.
 
-There are also 4 new roles in the Microsoft 365 admin center centered around management of custom security attributes. These roles are available for everyone to use in the Role assignments node under Roles.
+- **Attribute Assignment Administrator**   Assign custom security attribute keys and values to supported Azure AD objects.
+
+- **Attribute Assignment Reader**   Reads custom security attribute keys and values for supported Azure AD objects.
+
+- **Attribute Definition Administrator**   Define and manage the definition of custom security attributes.
+
+- **Attribute Definition Reader**   Reads the definition of custom security attributes.
+
+There's also a new Azure AD built-in roles in the Microsoft 365 admin center. Give admins only the access they need to manage Virtual Visits.
+
+- **Virtual Visits Administrator**   Manage and share Virtual Visits information and metrics from admin centers or the Virtual Visits app.
 
 For more information about Azure AD built-in roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).
-
-**Virtual Visits Administrator**   Manage and share Virtual Visits information and metrics from admin centers or the Virtual Visits app.
-
-**Attribute Assignment Administrator**   Assign custom security attribute keys and values to supported Azure AD objects.
-
-**Attribute Assignment Reader**   Reads custom security attribute keys and values for supported Azure AD objects.
-
-**Attribute Definition Administrator**   Define and manage the definition of custom security attributes.
-
-**Attribute Definition Reader**   Reads the definition of custom security attributes.
 
 ### Quick Assist
 
