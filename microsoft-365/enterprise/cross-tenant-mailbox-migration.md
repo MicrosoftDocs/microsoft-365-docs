@@ -54,7 +54,7 @@ To obtain the tenant ID of a subscription, sign in to the [Microsoft 365 admin c
 
 ### Prepare the target (destination) tenant by creating the migration application and secret
 
-1. Log into your Azure AD portal (<https://portal.azure.com>) with your target tenant admin credentials
+1. Log in to your Azure AD portal (<https://portal.azure.com>) with your target tenant admin credentials
 
    ![Azure Logon](../media/tenant-to-tenant-mailbox-move/74f26681e12df3308c7823ee7d527587.png)
 
@@ -142,13 +142,10 @@ To obtain the tenant ID of a subscription, sign in to the [Microsoft 365 admin c
    ```powershell
 
    # Enable customization if tenant is dehydrated
-     $dehydrated=Get-OrganizationConfig | fl isdehydrated
-     if ($dehydrated -eq $true) {Enable-OrganizationCustomization}
-
+   $dehydrated=Get-OrganizationConfig | select isdehydrated
+   if ($dehydrated -eq $true) {Enable-OrganizationCustomization}
    $AppId = "[guid copied from the migrations app]"
-
    $Credential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $AppId, (ConvertTo-SecureString -String "[this is your secret password you saved in the previous steps]" -AsPlainText -Force)
-
    New-MigrationEndpoint -RemoteServer outlook.office.com -RemoteTenant "sourcetenant.onmicrosoft.com" -Credentials $Credential -ExchangeRemoteMove:$true -Name "[the name of your migration endpoint]" -ApplicationId $AppId
    ```
 
@@ -536,7 +533,7 @@ Cross-tenant migration only migrates mailbox data and nothing else. There are mu
 
 **Can I have the same labels in the destination tenant as you had in the source tenant, either as the only set of labels or an additional set of labels for the migrated users depending on alignment between the organizations.**
 
-Since, Cross-tenant migrations does not export labels and there is no way to share labels between tenants you can only achieve this by recreating the labels in the destination tenant.
+Because cross-tenant migrations do not export labels and there is no way to share labels between tenants, you can only achieve this by recreating the labels in the destination tenant.
 
 **Do you support moving Microsoft 365 Groups?**
 

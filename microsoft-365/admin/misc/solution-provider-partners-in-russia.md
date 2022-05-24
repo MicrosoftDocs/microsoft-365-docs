@@ -22,7 +22,7 @@ description: "Get a list of Microsoft Cloud Solutions providers in Russia."
 ---
 
 # Microsoft Cloud Solution Provider Partners in Russia
-Here is a list of Microsoft Cloud Solution Providers in Russia.
+Here's a list of Microsoft Cloud Solution Providers in Russia.
   
 - [Mont](https://www.mont.com/ru-ru/)
     
