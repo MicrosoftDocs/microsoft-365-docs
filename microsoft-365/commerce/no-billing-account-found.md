@@ -19,14 +19,14 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid: MET150
 description: "Learn how to assign yourself or others the billing account roles needed to buy and edit products in the Microsoft 365 admin center."
-ms.date: 05/11/2022
+ms.date: 05/24/2022
 ---
 
 # No billing account found for buying products
 
-If you recently became a Global admin for your organization but aren't able to buy or edit anything in the Billing pages of the Microsoft 365 admin center, you might be missing the Billing account owner role needed to do those tasks. For example, if you try to buy a new subscription, you might see a notification that says “You don’t have any billing accounts for buying products.” If you see this message, you can give yourself the Billing account owner role needed to buy and edit products.
+If you recently became a Global admin for your organization but aren't able to buy or edit anything in the Billing pages of the Microsoft 365 admin center, you might be missing the Billing account owner role needed to do those tasks. For example, if you try to buy a new subscription on the **Purchase services** page, you might see a notification that says, “You don’t have any billing accounts for buying products.” If this happens, you can give yourself the Billing account owner role needed to buy and edit products.
 
-If you’re a Billing admin and can't buy or edit products, or if you’re a Global Reader who can’t view the billing account, ask your Global admin to assign you the role you need.
+If you’re a Billing admin and can’t buy or edit products, or if you’re a Global Reader who can’t view the billing account, ask your Global admin to assign you the role you need.
 
 ## Before you begin
 
@@ -45,10 +45,6 @@ If you’re not the first Global admin on the account, use the following steps t
     - If the person you’re assigning a role to is a Billing Administrator, select the **Billing account contributor** role.
     - If the person you’re assigning a role to is a Global Reader, select the **Billing account reader** role.
 6. Select **Assign**.
-
-## Why isn’t this permission granted automatically?
-
-By default, Microsoft takes a higher security stance by only assigning ownership permission to the first Global admin created for an organization. Any other Global or Billing admins, or Global Readers must be explicitly granted the Billing account owner role manually on the Billing account.
 
 ## Related content
 
