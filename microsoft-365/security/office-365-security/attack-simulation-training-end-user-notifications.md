@@ -16,6 +16,11 @@ ms.technology: mdo
 
 # End-user notifications for Attack simulation training
 
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
+**Applies to**
+- [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
+
 In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2, end-user notifications are email messages that are sent to users There are two basic types of notifications:
 
 - **Simulation notifications**: These messages are sent when users are enrolled in trainings, and as reminders for required trainings.
