@@ -42,11 +42,11 @@ Microsoft Defender for Endpoint Device Control Removable Storage Access Control 
 
 |Capability|Description|Deploy through Intune|Deploy through Group Policy|
 |---|---|---|---|
-|Removable Media Group Creation|Allows you to create reusable removable media group|Step 1 in the section, [Deploying policy by using OMA-URI](#deploying-policy-via-oma-uri) | Step 1 in the section, [Deploying policy by using Group Policy](#deploying-policy-via-group-policy)|
-|Policy Creation|Allows you to create policy to enforce each removable media group|Step 2 in the section, [Deploying policy by using OMA-URI](#deploying-policy-via-oma-uri) | Steps 2 and 3 in the section, [Deploying policy by using Group Policy](#deploying-policy-via-group-policy) |
-|Default Enforcement|Allows you to set default access (Deny or Allow) to removable media if there is no policy|Step 3 in the section, [Deploying policy by using OMA-URI](#deploying-policy-via-oma-uri) | Step 4 in the section, [Deploying policy by using Group Policy](#deploying-policy-via-group-policy) |
-|Enable or Disable Removable Storage Access Control|If you set Disable, it will disable the Removable Storage Access Control policy on this machine| Step 4 in the section, [Deploying policy by using OMA-URI](#deploying-policy-via-oma-uri) | Step 5 in the section, [Deploying policy by using Group Policy](#deploying-policy-via-group-policy) |
-|Capture file information|Allows you to create policy to capture file information when Write access happens| Steps 2 and 5 in the section, [Deploying policy by using OMA-URI](#deploying-policy-via-oma-uri) | Step 2 and 6 in the section, [Deploying policy by using Group Policy](#deploying-policy-via-group-policy) |
+|Removable Media Group Creation|Allows you to create reusable removable media group|Step 1 in the section, [Deploying policy by using OMA-URI](#deploying-policy-by-using-oma-uri) | Step 1 in the section, [Deploying policy by using Group Policy](#deploying-policy-by-using-group-policy)|
+|Policy Creation|Allows you to create policy to enforce each removable media group|Step 2 in the section, [Deploying policy by using OMA-URI](#deploying-policy-by-using-oma-uri) | Steps 2 and 3 in the section, [Deploying policy by using Group Policy](#deploying-policy-by-using-group-policy) |
+|Default Enforcement|Allows you to set default access (Deny or Allow) to removable media if there is no policy|Step 3 in the section, [Deploying policy by using OMA-URI](#deploying-policy-by-using-oma-uri) | Step 4 in the section, [Deploying policy by using Group Policy](#deploying-policy-by-using-group-policy) |
+|Enable or Disable Removable Storage Access Control|If you set Disable, it will disable the Removable Storage Access Control policy on this machine| Step 4 in the section, [Deploying policy by using OMA-URI](#deploying-policy-by-using-oma-uri) | Step 5 in the section, [Deploying policy by using Group Policy](#deploying-policy-by-using-group-policy) |
+|Capture file information|Allows you to create policy to capture file information when Write access happens| Steps 2 and 5 in the section, [Deploying policy by using OMA-URI](#deploying-policy-by-using-oma-uri) | Step 2 and 6 in the section, [Deploying policy by using Group Policy](#deploying-policy-by-using-group-policy) |
 
 ### Prepare your endpoints
 
