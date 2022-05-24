@@ -146,7 +146,7 @@ To meet the challenges of today's decentralized, data-rich workplace, we're intr
 
 - [Working with improvement actions](compliance-manager-improvement-actions.md), [Get started with Compliance Manager](compliance-manager-setup.md) - added information about more improvement actions that can be automatically monitored and tested ("continuous compliance assessment"); this includes new abilities to parent the testing status of an action to that of another action.
 
-### Data Classification
+### Data classification
 
 - [Get Started with Content Explorer](data-classification-content-explorer.md) - Teams guidance added, licensing section pointed to service descriptions.
 
