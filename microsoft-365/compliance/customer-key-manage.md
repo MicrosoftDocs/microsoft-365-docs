@@ -100,7 +100,7 @@ To create a DEP to use with a mailbox, follow these steps:
    New-DataEncryptionPolicy -Name USA_mailboxes -Description "Root key for mailboxes in USA and its territories" -AzureKeyIDs https://contoso_EastUSvault02.vault.azure.net/keys/USA_key_01, https://contoso_CentralUSvault02.vault.azure.net/keys/USA_Key_02
    ```
 
-For detailed syntax and parameter information, see [New-DataEncryptionPolicy](/powershell/module/exchange/new-data-encryptionpolicy).
+For detailed syntax and parameter information, see [New-DataEncryptionPolicy](/powershell/module/exchange/new-dataencryptionpolicy).
 
 ### Assign a DEP to a mailbox
 
@@ -359,6 +359,9 @@ To unassign mailbox DEPs, use the Set-Mailbox PowerShell cmdlet.
 
 Running this cmdlet unassigns the currently assigned DEP and reencrypts the mailbox using the DEP associated with default Microsoft-managed keys. You can't unassign the DEP used by Microsoft managed keys. If you don't want to use Microsoft-managed keys, you can assign another Customer Key DEP to the mailbox.
 
+> [!IMPORTANT]
+> Roll back from Customer Key to Microsoft managed keys isn't supported for SharePoint Online, OneDrive for Business, and Teams files. 
+
 ## Revoke your keys and start the data purge path process
 
 You control the revocation of all root keys including the availability key. Customer Key provides control of the exit planning aspect of the regulatory requirements for you. If you decide to revoke your keys to purge your data and exit the service, the service deletes the availability key once the data purge process completes. This is supported for Customer Key DEPs that are assigned to individual mailboxes.
@@ -404,19 +407,7 @@ To initiate the data purge path, complete these steps:
 
 ### Revoke your Customer Keys and the availability key for SharePoint Online, OneDrive for Business, and Teams files
 
-To initiate the data purge path for SharePoint Online, OneDrive for Business, and Teams files, complete these steps:
-
-1. Revoke Azure Key Vault access. All key vault admins must agree to revoke access.
-
-   You do not delete the Azure Key Vault for SharePoint Online. Key vaults may be shared among several SharePoint Online tenants and DEPs.
-
-2. Contact Microsoft to delete the availability key.
-
-    When you contact Microsoft to delete the availability key, we'll send you a legal document. The person in your organization who signed up as an approver in the FastTrack offer during onboarding needs to sign this document. Normally, this is an executive or other designated person in your company who's legally authorized to sign the paperwork on behalf of your organization.
-
-3. Once your representative signs the legal document, return it to Microsoft (usually through an eDoc signature).
-
-   Once Microsoft receives the legal document, we run cmdlets to trigger the data purge which performs crypto deletion of the tenant key, site key, and all individual per-document keys, irrevocably breaking the key hierarchy. Once the data purge cmdlets complete, your data has been purged.
+Purging of SharePoint, OneDrive for work or school, and Teams files DEPs is not supported in Customer Key. These multi-workload DEPs are used to encrypt data across multiple workloads across all tenant users. Purging such a DEP would result in data from across multiple workloads becoming inaccessible. If you decide to exit Microsoft 365 services altogether, you could pursue the path of tenant deletion per the documented process. See how to [delete a tenant in Azure Active Directory](/azure/active-directory/enterprise-users/directory-delete-howto).  
 
 ## Related articles
 

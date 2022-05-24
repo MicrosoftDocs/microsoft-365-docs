@@ -32,7 +32,7 @@ ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: "Sign in with your Microsoft 365 admin account to reset passwords for users when you have a Microsoft 365 for business subscription."
 ---
 
-# Reset passwords
+# Reset passwords in Microsoft 365 for business
 
 This article explains how to reset passwords for yourself and for your users when you have a Microsoft 365 for business subscription.
 
@@ -44,7 +44,7 @@ This article explains how to reset passwords for yourself and for your users whe
 
 ## Before you begin
 
-This article is for people who set password expiration policy for a business, school, or nonprofit. To complete these steps, you need to sign in with your Microsoft 365 admin account. [What's an admin account?](Overview of the Microsoft 365 admin center](../admin-overview/admin-center-overview.md).
+This article is for people who set password expiration policy for a business, school, or nonprofit. To complete these steps, you need to sign in with your Microsoft 365 admin account. [Overview in the Microsoft 365 admin center](../admin-overview/admin-center-overview.md).
 
 You must be an [global admin or password administrator](about-admin-roles.md) to perform these steps.
 

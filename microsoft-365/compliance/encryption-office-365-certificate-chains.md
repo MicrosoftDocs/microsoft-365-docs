@@ -280,7 +280,7 @@ Expand the root and intermediate sections below to see additional details about 
 | **Thumbprint (SHA-256)** | 6AC159B4C2BC8E729F3B84642EF1286BCC80D775FE278C740ADA468D59439025 |
 | **Pin (SHA-256)** | 9w0QP9HzLXkfs+4zENaUFq2XKcQON1oyksoJ+Gg2AZE= |
 | **CRL URLs** | ldap://directory.d-trust.net/CN=D-TRUST%20Root%20Class%203%20CA%202%202009,O=D-Trust%20GmbH,C=DE?certificaterevocationlist<br>http://www.d-trust.net/crl/d-trust\_root\_class\_3\_ca\_2\_2009.crl |
-| **OCSP URLs** | http://root-c3-ca2-2009.ocsp.d-trust.net |
+| **OCSP URLs** | `http://root-c3-ca2-2009.ocsp.d-trust.net` |
 
 ### **D-TRUST SSL Class 3 CA 1 EV 2009**
 
@@ -299,7 +299,7 @@ Expand the root and intermediate sections below to see additional details about 
 | **Thumbprint (SHA-256)** | B0935DC04B4E60C0C42DEF7EC57A1B1D8F958D17988E71CC80A8CF5E635BA5B4 |
 | **Pin (SHA-256)** | lv5BNZ5aWd27ooolULDolFTwIaaWjHvG4yyH3rss4X8= |
 | **CRL URLs** | ldap://directory.d-trust.net/CN=D-TRUST%20Root%20Class%203%20CA%202%20EV%202009,O=D-Trust%20GmbH,C=DE?certificaterevocationlist<br>http://www.d-trust.net/crl/d-trust\_root\_class\_3\_ca\_2\_ev\_2009.crl |
-| **OCSP URLs** | http://root-c3-ca2-ev-2009.ocsp.d-trust.net |
+| **OCSP URLs** | `http://root-c3-ca2-ev-2009.ocsp.d-trust.net` |
 
 ### **DigiCert Basic RSA CN CA G2**
 
@@ -492,8 +492,8 @@ Expand the root and intermediate sections below to see additional details about 
 | **Thumbprint (SHA-1)** | 65BE102BE26928650E0EF54DC8F4F15AF5F98E8B |
 | **Thumbprint (SHA-256)** | 24F91C0705A0A5338641B365FB0D9D9709B56297CFF1857E73C02C1636D486AA |
 | **Pin (SHA-256)** | LvRiGEjRqfzurezaWuj8Wie2gyHMrW5Q06LspMnox7A= |
-| **CRL URLs** | http://crl.globalsign.net/root-r2.crl |
-| **OCSP URLs** | http://ocsp.globalsign.com/rootr2 |
+| **CRL URLs** | `http://crl.globalsign.net/root-r2.crl` |
+| **OCSP URLs** | `http://ocsp.globalsign.com/rootr2` |
 
 ### **GlobalSign Extended Validation CA - SHA256 - G3**
 
@@ -848,7 +848,7 @@ Expand the root and intermediate sections below to see additional details about 
 | **Thumbprint (SHA-1)** | 6AD2B04E2196E48BF685752890E811CD2ED60606 |
 | **Thumbprint (SHA-256)** | 7373D219B42547E41BCB752BCBCBE93F592FF6F99C340CE57B73D38C3EC0BA98 |
 | **Pin (SHA-256)** | 8XFPrRr4VxmEIYKUu35QtR3oGbduX1AlrBzaBUHgp7c= |
-| **AIA URLs** | https://cacert.omniroot.com/baltimoreroot.crt<br>https://cacert.omniroot.com/baltimoreroot.der |
+| **AIA URLs** | `https://cacert.omniroot.com/baltimoreroot.crt`<br>`https://cacert.omniroot.com/baltimoreroot.der` |
 | **CRL URLs** | http://cdp1.public-trust.com/CRL/Omniroot2025.crl |
 | **OCSP URLs** | http://ocsp.omniroot.com/baltimoreroot |
 
@@ -926,8 +926,8 @@ aia.entrust.net/l1k-chain256.cer<br>
 apps.identrust.com/roots/dstrootcax3.p7c<br>
 <https://cacert.a.omniroot.com/vassg142.crt><br>
 <https://cacert.a.omniroot.com/vassg142.der><br>
-<https://cacert.omniroot.com/baltimoreroot.crt><br>
-<https://cacert.omniroot.com/baltimoreroot.der><br>
+https://cacert.omniroot.com/baltimoreroot.crt<br>
+https://cacert.omniroot.com/baltimoreroot.der<br>
 cacerts.digicert.com/DigiCertCloudServicesCA-1.crt<br>
 cacerts.digicert.com/DigiCertSHA2ExtendedValidationServerCA.crt<br>
 cacerts.digicert.com/DigiCertSHA2HighAssuranceServerCA.crt<br>
