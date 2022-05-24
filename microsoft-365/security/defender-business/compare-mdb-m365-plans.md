@@ -72,7 +72,7 @@ Defender for Business brings enterprise-grade capabilities of Defender for Endpo
 |[Cross-platform support](../defender-endpoint/minimum-requirements.md) <br/>(Windows, macOS, iOS, and Android OS)|Yes <sup>[[6](#fn6)]</sup>|Yes|Yes|
 |[Microsoft Threat Experts](../defender-endpoint/microsoft-threat-experts.md)|No|No|Yes|
 |Partner APIs|Yes|Yes|Yes|
-|[Microsoft 365 Lighthouse integration](../../lighthouse/m365-lighthouse-overview.md) <br/>(For viewing security incidents across customer tenants)|Yes |Yes<sup>[[7](#fn7)]</sup>|Yes<sup>[[7](#fn7)]</sup>|
+|[Microsoft 365 Lighthouse integration](../../lighthouse/m365-lighthouse-overview.md) <br/>(For viewing security incidents across customer tenants)|Yes |Yes <sup>[[7](#fn7)]</sup>|Yes <sup>[[7](#fn7)]</sup>|
 
 (<a id="fn1">1</a>) Onboard and manage devices in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) or with Microsoft Intune, managed in the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)).
 
