@@ -23,7 +23,7 @@ Here are answers to general questions about moving core customer data at rest to
 ### What customers are eligible to request a move?
 <details><summary>Click to expand</summary>
 
-Existing Microsoft 365 commercial customers who selected a country eligible for the new datacenter geo will be able to request a move. The program exists only for tenants with an eligible country code assigned to the Microsoft 365 tenant to migrate core customer data at rest for eligible workloads to the corresponding Microsoft 365 datacenter geo. Please refer to the [How to request your data move](request-your-data-move.md) page to confirm country eligibility.
+Existing Microsoft 365 commercial customers who selected a country eligible for the new datacenter geo will be able to request a move. The program exists only for tenants with an eligible country code assigned to the Microsoft 365 tenant to migrate core customer data at rest for eligible workloads to the corresponding Microsoft 365 datacenter geo. See [How to request your data move](request-your-data-move.md) to confirm country eligibility.
 
 </details>
 
