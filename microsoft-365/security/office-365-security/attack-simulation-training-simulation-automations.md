@@ -16,6 +16,8 @@ ms.technology: mdo
 
 # Simulation automations for Attack simulation training
 
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
 **Applies to**
  [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 
