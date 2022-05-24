@@ -1,5 +1,5 @@
 ---
-title: "What's new in Microsoft 365 Lighthouse?"
+title: "What's new in Microsoft 365 Lighthouse"
 f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
@@ -15,10 +15,10 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse                         
 search.appverid: MET150
-description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, see what's new in Microsoft 365 Lighthouse."
+description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, see what's been added, changed, and fixed in Microsoft 365 Lighthouse each month."
 ---
 
-# What's new in Microsoft 365 Lighthouse?
+# What's new in Microsoft 365 Lighthouse
 
 We're continuously adding new features to [Microsoft 365 Lighthouse](m365-lighthouse-overview.md), fixing issues we learn about, and making changes based on your feedback. Take a look below to see what's available for you today. Some features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, you should see it soon.
 
