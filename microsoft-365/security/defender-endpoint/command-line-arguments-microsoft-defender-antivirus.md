@@ -83,7 +83,7 @@ The following table lists common errors that can occur while using the MpCmdRun 
 |**ValidateMapsConnection failed to establish a connection to MAPS (hr=80072EE7 httpcode=451)**|The firewall is blocking the connection or conducting SSL inspection.|
 
 > [!TIP]
-> If you’re looking for Antivirus related information for other platforms, see:
+> If you're looking for Antivirus related information for other platforms, see:
 > - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
 > - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
 > - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

@@ -25,7 +25,7 @@ ms.prod: m365-security
 
 # View Defender for Office 365 reports in the Microsoft 365 Defender portal
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
@@ -242,7 +242,7 @@ For more information, see [Permissions in the Microsoft 365 Defender portal](per
 
 ## What if the reports aren't showing data?
 
-If you are not seeing data in your Defender for Office 365 reports, double-check that your policies are set up correctly. Your organization must have [Safe Links policies](set-up-safe-links-policies.md) and [Safe Attachments policies](set-up-safe-attachments-policies.md) defined in order for Defender for Office 365 protection to be in place. Also see [Anti-spam and anti-malware protection](anti-spam-and-anti-malware-protection.md).
+If you are not seeing data in your Defender for Office 365 reports, double-check that your policies are set up correctly. Your organization must have [Safe Links policies](set-up-safe-links-policies.md) and [Safe Attachments policies](set-up-safe-attachments-policies.md) defined in order for Defender for Office 365 protection to be in place. Also see [anti-spam](anti-spam-protection.md) and [anti-malware protection](anti-malware-protection.md).
 
 ## Related topics
 
