@@ -60,7 +60,7 @@ There are 4 new roles in the Microsoft 365 admin center centered around manageme
 
 - **Attribute Definition Reader**   Reads the definition of custom security attributes.
 
-There's also a new Azure AD built-in roles in the Microsoft 365 admin center. Give admins only the access they need to manage Virtual Visits.
+There's also a new role that allows you to give admins only the access they need to manage Virtual Visits.
 
 - **Virtual Visits Administrator**   Manage and share Virtual Visits information and metrics from admin centers or the Virtual Visits app.
 
