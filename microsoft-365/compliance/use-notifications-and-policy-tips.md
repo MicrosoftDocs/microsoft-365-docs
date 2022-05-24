@@ -32,7 +32,7 @@ You can use a Microsoft Purview data loss prevention (DLP) policy to identify, m
 
 ![Message bar shows policy tip in Excel 2016](../media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
 
-In the Compliance Center, when you create a DLP policy, you can configure the user notifications to:
+When you create a DLP policy, you can configure the user notifications to:
 
 - Send an email notification to the people you choose that describes the issue.
 
@@ -50,13 +50,13 @@ When you create a DLP policy, you can enable **User notifications**. When user n
 
 1. Go to [https://(https://compliance.microsoft.com/permissions](https://(https://compliance.microsoft.com/permissions).
 
-2. Sign in using your work or school account. You're now in the Security &amp; Compliance Center.
+2. Sign in using your work or school account.
 
 3. In the Microsoft Purview compliance portal \> left navigation \> **Data loss prevention** \> **Policy** \> **+ Create a policy**.
 
     ![Create a policy button.](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
 
-4. Choose the DLP policy template that protects the types of sensitive information that you need \> **Next**.
+4. Choose the DLP policy template that protects the types of sensitive information you want to protect \> **Next**.
 
     To start with an empty template, choose **Custom** \> **Custom policy** \> **Next**.
 
@@ -135,7 +135,7 @@ For each rule in a DLP policy, you can configure policy tips to:
 
 - Allow the person to override the DLP policy. Optionally, you can:
 
-  - Require the person to enter a business justification for overriding the policy. This information is logged and you can view it in the DLP reports in the **Reports** section of the Security &amp; Compliance Center.
+  - Require the person to enter a business justification for overriding the policy. This information is logged and you can view it in the DLP reports in the **Reports** section of the portal.
 
   - Allow the person to report a false positive and override the DLP policy. This information is also logged for reporting, so that you can use false positives to fine tune your rules.
 
@@ -240,13 +240,13 @@ Currently, Outlook 2013 and later supports showing policy tips only for these co
 
 Note that Exceptions are considered conditions and all of these conditions work in Outlook, where they will match content and enforce protective actions on content. But showing policy tips to users is not yet supported. Also, Outlook does not support showing policy tips for a DLP policy that's applied to a dynamic distribution group.
 
-### Policy tips in the Exchange admin center vs. the Security &amp; Compliance Center
+### Policy tips in the Exchange admin center vs. the Microsoft Purview Compliance portal
 
-Policy tips can work either with DLP policies and mail flow rules created in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>, or with DLP policies created in the Security &amp; Compliance Center, but not both. This is because these policies are stored in different locations, but policy tips can draw only from a single location.
+Policy tips can work either with DLP policies and mail flow rules created in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>, or with DLP policies created in the compliance portal, but not both. This is because these policies are stored in different locations, but policy tips can draw only from a single location.
 
-If you've configured policy tips in the Exchange admin center, any policy tips that you configure in the Security &amp; Compliance Center won't appear to users in Outlook on the web and Outlook 2013 and later until you turn off the tips in the Exchange admin center. This ensures that your current Exchange mail flow rules (also known as transport rules) will continue to work until you choose to switch over to the Security &amp; Compliance Center.
+If you've configured policy tips in the Exchange admin center, any policy tips that you configure in the compliance portal won't appear to users in Outlook on the web and Outlook 2013 and later until you turn off the tips in the Exchange admin center. This ensures that your current Exchange mail flow rules (also known as transport rules) will continue to work until you choose to switch over to the compliance portal.
 
-Note that while policy tips can draw only from a single location, email notifications are always sent, even if you're using DLP policies in both the Security &amp; Compliance Center and the Exchange admin center.
+Note that while policy tips can draw only from a single location, email notifications are always sent, even if you're using DLP policies in both the compliance portal and the Exchange admin center.
 
 ### Default text for policy tips in email
 

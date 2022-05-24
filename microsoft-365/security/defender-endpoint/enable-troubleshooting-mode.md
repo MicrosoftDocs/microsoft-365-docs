@@ -13,7 +13,7 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
   - m365-security-compliance
 ms.topic: article
 ms.technology: mde
@@ -28,36 +28,35 @@ ms.technology: mde
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
-
 Microsoft Defender for Endpoint troubleshooting mode allows you to troubleshoot various Microsoft Defender antivirus features by enabling them from the device and testing different scenarios, even if they're controlled by the organization policy. The troubleshooting mode is disabled by default and requires you to turn it on for a device (and/or group of devices) for a limited time. Note that this is exclusively an Enterprise-only feature, and requires Microsoft 365 Defender access.
 
 ## What do you need to know before you begin?
 
 - Use troubleshooting mode to disable/change the tamper protection setting to perform:
 
-    - Microsoft Defender Antivirus functional troubleshooting /application compatibility (false positive application blocks).  
+  - Microsoft Defender Antivirus functional troubleshooting /application compatibility (false positive application blocks).
 
-    - Microsoft Defender Antivirus performance troubleshooting by using the troubleshooting mode and manipulating tamper protection and other antivirus settings.
+  - Microsoft Defender Antivirus performance troubleshooting by using the troubleshooting mode and manipulating tamper protection and other antivirus settings.
 
 - If a tampering event occurs (for example, the `MpPreference` snapshot is altered or deleted), troubleshooting mode will end and tamper protection will be enabled on the device.
 
 - Local admins, with appropriate permissions, can change configurations on individual endpoints that are usually locked by policy. Having a device in troubleshooting mode can be helpful when diagnosing Microsoft Defender Antivirus performance and compatibility scenarios.
 
-    - Local admins won't be able to turn off Microsoft Defender Antivirus, or uninstall it.
+  - Local admins won't be able to turn off Microsoft Defender Antivirus, or uninstall it.
 
-    - Local admins will be able to configure all other security settings in the Microsoft Defender Antivirus suite (for example, cloud protection, tamper protection).
+  - Local admins will be able to configure all other security settings in the Microsoft Defender Antivirus suite (for example, cloud protection, tamper protection).
 
 - Admins with “Manage Security settings” permissions will have access to turn on troubleshooting mode.
 
 - Microsoft Defender for Endpoint collects logs and investigation data throughout the troubleshooting process.
 
-    - Snapshot of `MpPreference` will be taken before troubleshooting mode begins.
+  - Snapshot of `MpPreference` will be taken before troubleshooting mode begins.
 
-    - Second snapshot will be taken just before troubleshooting mode expires.
+  - Second snapshot will be taken just before troubleshooting mode expires.
 
-    - Operational logs from during troubleshooting mode will also be collected.
+  - Operational logs from during troubleshooting mode will also be collected.
 
-    - All the above logs and snapshots will be collected and will be available for an admin to collect using the [Collect investigation package](respond-machine-alerts.md#collect-investigation-package-from-devices) feature on the device page. Note that Microsoft won't remove this data from the device until an admin collects them. 
+  - All the above logs and snapshots will be collected and will be available for an admin to collect using the [Collect investigation package](respond-machine-alerts.md#collect-investigation-package-from-devices) feature on the device page. Note that Microsoft won't remove this data from the device until an admin collects them.
 
 - Admins can also review the changes in settings that take place during Troubleshooting mode in **Event Viewer** on the device page.
 
@@ -93,17 +92,17 @@ Microsoft Defender for Endpoint troubleshooting mode allows you to troubleshoot 
 
 ## Enable the troubleshooting mode
 
-1. Go to the Microsoft 365 Defender portal (https://security.microsoft.com), and sign in. 
+1. Go to the Microsoft 365 Defender portal (<https://security.microsoft.com>), and sign in.
 
 2. Navigate to the device page/machine page for the device you would like to turn on troubleshooting mode. Select **Turn on troubleshooting mode**. Note that this requires "Manage security settings in Security Center" permissions for Microsoft Defender for Endpoint.
 
    :::image type="content" source="../../media/ts-mode-menu.png" alt-text="Turn on troubleshooting mode" lightbox="../../media/ts-mode-menu.png":::
 
-3. Confirm you want to turn on troubleshooting mode for the device. 
+3. Confirm you want to turn on troubleshooting mode for the device.
 
    :::image type="content" source="../../media/ts-mode-conf-flyout.png" alt-text="The configuration flyout" lightbox="../../media/ts-mode-conf-flyout.png":::
- 
-4. The device page shows the device is now in troubleshooting mode.  
+
+4. The device page shows the device is now in troubleshooting mode.
 
    :::image type="content" source="../../media/ts-mode-option-greyed-out.png" alt-text="The device is now in troubleshooting mode" lightbox="../../media/ts-mode-option-greyed-out.png":::
 
@@ -114,52 +113,52 @@ Here are some pre-built advanced hunting queries to give you visibility into the
 ### Get troubleshooting events for a particular device
 
 ```kusto
-let deviceName = "<device name>";   // update with device name 
-let deviceId = "<device id>";   // update with device id 
-search in (DeviceEvents)  
-(DeviceName == deviceName  
-) and ActionType == "AntivirusTroubleshootModeEvent"  
-| extend _tsmodeproperties = parse_json(AdditionalFields)   
-| project $table, Timestamp,DeviceId, DeviceName, _tsmodeproperties,  
- _tsmodeproperties.TroubleshootingState, _tsmodeproperties.TroubleshootingPreviousState, _tsmodeproperties.TroubleshootingStartTime,  
- _tsmodeproperties.TroubleshootingStateExpiry, _tsmodeproperties.TroubleshootingStateRemainingMinutes,  
- _tsmodeproperties.TroubleshootingStateChangeReason, _tsmodeproperties.TroubleshootingStateChangeSource 
+let deviceName = "<device name>";   // update with device name
+let deviceId = "<device id>";   // update with device id
+search in (DeviceEvents)
+(DeviceName == deviceName
+) and ActionType == "AntivirusTroubleshootModeEvent"
+| extend _tsmodeproperties = parse_json(AdditionalFields)
+| project $table, Timestamp,DeviceId, DeviceName, _tsmodeproperties,
+ _tsmodeproperties.TroubleshootingState, _tsmodeproperties.TroubleshootingPreviousState, _tsmodeproperties.TroubleshootingStartTime,
+ _tsmodeproperties.TroubleshootingStateExpiry, _tsmodeproperties.TroubleshootingStateRemainingMinutes,
+ _tsmodeproperties.TroubleshootingStateChangeReason, _tsmodeproperties.TroubleshootingStateChangeSource
 ```
 
-### Devices currently in troubleshooting mode 
+### Devices currently in troubleshooting mode
 
 ```kusto
-search in (DeviceEvents)  
-ActionType == "AntivirusTroubleshootModeEvent"  
-| extend _tsmodeproperties = parse_json(AdditionalFields)   
-| where Timestamp > ago(3h)    
-| where _tsmodeproperties.TroubleshootingStateChangeReason == "Troubleshooting mode started"  
-|summarize (Timestamp, ReportId)=arg_max(Timestamp, ReportId), count() by DeviceId
+search in (DeviceEvents)
+ActionType == "AntivirusTroubleshootModeEvent"
+| extend _tsmodeproperties = parse_json(AdditionalFields)
+| where Timestamp > ago(3h)
+| where _tsmodeproperties.TroubleshootingStateChangeReason == "Troubleshooting mode started"
+|summarize (Timestamp, ReportId)=arg_max(Timestamp, ReportId), count() by DeviceId
 ```
 
 ### Count of troubleshooting mode instances by device
 
 ```kusto
-search in (DeviceEvents)  
-ActionType == "AntivirusTroubleshootModeEvent"  
-| extend _tsmodeproperties = parse_json(AdditionalFields)   
-| where Timestamp > ago(30d)  // choose the date range you want  
-| where _tsmodeproperties.TroubleshootingStateChangeReason == "Troubleshooting mode started"  
-| summarize (Timestamp, ReportId)=arg_max(Timestamp, ReportId), count() by DeviceId  
-| sort by count_  
+search in (DeviceEvents)
+ActionType == "AntivirusTroubleshootModeEvent"
+| extend _tsmodeproperties = parse_json(AdditionalFields)
+| where Timestamp > ago(30d)  // choose the date range you want
+| where _tsmodeproperties.TroubleshootingStateChangeReason == "Troubleshooting mode started"
+| summarize (Timestamp, ReportId)=arg_max(Timestamp, ReportId), count() by DeviceId
+| sort by count_
 ```
 
 ### Total count
 
 ```kusto
-search in (DeviceEvents)  
-ActionType == "AntivirusTroubleshootModeEvent"  
-| extend _tsmodeproperties = parse_json(AdditionalFields)   
-| where Timestamp > ago(2d) //beginning of time range  
-| where Timestamp < ago(1d) //end of time range  
-| where _tsmodeproperties.TroubleshootingStateChangeReason == "Troubleshooting mode started"  
-| summarize (Timestamp, ReportId)=arg_max(Timestamp, ReportId), count()   
-| where count_ > 5          // choose your max # of TS mode instances for your time range
+search in (DeviceEvents)
+ActionType == "AntivirusTroubleshootModeEvent"
+| extend _tsmodeproperties = parse_json(AdditionalFields)
+| where Timestamp > ago(2d) //beginning of time range
+| where Timestamp < ago(1d) //end of time range
+| where _tsmodeproperties.TroubleshootingStateChangeReason == "Troubleshooting mode started"
+| summarize (Timestamp, ReportId)=arg_max(Timestamp, ReportId), count()
+| where count_ > 5          // choose your max # of TS mode instances for your time range
 ```
 
 ## Related topic
