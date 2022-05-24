@@ -17,7 +17,7 @@ search.appverid: MET150
 description: "Learn how Microsoft Defender Antivirus protects your Windows devices from software threats, such as viruses, malware, and spyware."
 ---
 
-# Threats detected by Microsoft Defender Antivirus
+# Overview of threat protection by Microsoft Defender Antivirus
 
 Microsoft Defender Antivirus protects your Windows devices from software threats, such as viruses, malware, and spyware.
 
@@ -68,7 +68,7 @@ When threats are detected by Microsoft Defender Antivirus, the following things 
 
 In most cases, users don't need to take any further action. As soon as a malicious file or program is detected on a device, Microsoft Defender Antivirus blocks it and prevents it from running. Plus, newly detected threats are added to the antivirus and antimalware engine so that other devices and users are protected, as well.  
 
-If there's an action a user needs to take, such as approving the removal of a malicious file, they'll see that in the notification they receive. To learn more about actions that Microsoft Defender Antivirus takes on a user's behalf, or actions users might need to take, see [Protection History](https://support.microsoft.com/office/f1e5fd95-09b4-46d1-b8c7-1059a1e09708). To learn how to manage threat detections as an IT professional/admin, see [Review detected threats and take action](review-threats-take-action.md).
+If there's an action a user needs to take, such as approving the removal of a malicious file, they'll see that in the notification they receive. To learn more about actions that Microsoft Defender Antivirus takes on a user's behalf, or actions users might need to take, see [Protection History](https://support.microsoft.com/office/f1e5fd95-09b4-46d1-b8c7-1059a1e09708). To learn how to manage threat detections as an IT professional/admin, see [Review detected threats and take action](../../business-premium/m365bp-review-threats-take-action.md).
 
 To learn more about different threats, visit the <a href="https://www.microsoft.com/wdsi/threats" target="_blank">Microsoft Security Intelligence Threats site</a>, where you can perform the following actions: 
 

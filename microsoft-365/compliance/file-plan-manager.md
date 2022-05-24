@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: File plan provides advanced management capabilities for retention labels.
-ms.custom: seo-marvel-may2020
 ---
 
 # Use file plan to create and manage retention labels
@@ -44,10 +44,9 @@ For information about what retention labels are and how to use them, see [Learn 
 To access file plan, you must have one of the following admin roles:
     
 - Retention Manager
-
 - View-only Retention Manager
 
-In the Microsoft Purview compliance portal, go to **Solutions** > **Records management** > **File plan**:
+In the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), go to **Solutions** > **Records management** > **File plan**:
 
 ![File plan page](../media/compliance-file-plan.png). 
 
@@ -81,6 +80,9 @@ All columns except the label **Name** can be displayed or hidden by selecting th
 - **Is unlocked by default** —currently rolling out—identifies if the item marked as a record is unlocked when the label is applied. Valid values:
     - No
     - Yes
+
+- **Relabel to** —currently rolling out—identifies if the label is configured to apply another label at the end of the retention period. Valid values:
+    - Blank or the selected label name
 
 - **Retention duration** identifies the retention period. Valid values:
     - Days
@@ -148,7 +150,7 @@ However, it can take up to two days for content explorer to show the items that 
 
 From your file plan, you can export the details of all retention labels into a .csv file to help you facilitate periodic compliance reviews with data governance stakeholders in your organization.
 
-To export all retention labels: On the **File plan** page, click **Export**:
+To export all retention labels: On the **File plan** page, select **Export**:
 
 ![Option to export file plan.](../media/compliance-file-plan-export-labels.png)
 
@@ -160,7 +162,7 @@ A *.csv file that contains all existing retention labels opens. For example:
 
 In file plan, you can bulk-import new retention labels by using a .csv file with a specific format: 
 
-1. On the **File plan** page, click **Import**:
+1. On the **File plan** page, select **Import**:
    ![Option to import file plan](../media/compliance-file-plan-import-labels.png)
 
 2. On the **Fill out and import your file plan** pane, select **Download a blank template**:
