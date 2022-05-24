@@ -140,3 +140,5 @@ Here, you see the same organization **after leveraging the ability to create a t
 ## Next steps: After you set up ARC for Microsoft 365 Defender for Office
 
 After setup, check your ARC Headers with [Message Header Analyzer](/connectivity-analyzer/message-header-analyzer).
+
+Review [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md), [DMARC](use-dmarc-to-validate-email.md), configuration steps.
