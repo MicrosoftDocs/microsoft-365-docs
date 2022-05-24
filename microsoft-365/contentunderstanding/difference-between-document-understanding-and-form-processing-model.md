@@ -63,11 +63,11 @@ You can apply document understanding models to SharePoint document libraries tha
 
 Form processing models can currently be applied only to the SharePoint document library from which you created them. This allows licensed users with access to the site to create a form processing model. Note that an admin needs to enable form processing on a SharePoint document library for it to be available to licensed users.
 
-## Comparison of forms processing and document understanding
+## Comparison of form processing and document understanding
 
-Use the following table to understand when to use forms processing and when to use document understanding.
+Use the following table to understand when to use form processing and when to use document understanding.
 
-| Feature | Forms processing | Document understanding |
+| Feature | Form processing | Document understanding |
 | ------- | ------- | ------- |
 | Model type - when to use each | Structured and semi-structured file formats, for example PDFs for forms content such as invoices or purchase orders where the layout and formatting is similar.  | Unstructured or semi-structured file formats, for example, Office documents where there are differences in the layout, but still similar information to be extracted. |
 | Model creation | Model created in AI builder with seamless access from SharePoint document library.| Model created in SharePoint in a new site, the content center. |
