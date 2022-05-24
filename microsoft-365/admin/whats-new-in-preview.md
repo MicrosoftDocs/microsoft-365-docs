@@ -64,7 +64,7 @@ There's also a new Azure AD built-in roles in the Microsoft 365 admin center. Gi
 
 - **Virtual Visits Administrator**   Manage and share Virtual Visits information and metrics from admin centers or the Virtual Visits app.
 
-For more information about Azure AD built-in roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).
+For more information about these roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).
 
 ### Quick Assist
 
