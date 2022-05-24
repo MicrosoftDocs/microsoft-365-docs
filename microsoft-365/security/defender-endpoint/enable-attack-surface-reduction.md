@@ -68,9 +68,6 @@ Each ASR rule contains one of four settings:
 - **Audit**: Evaluate how the ASR rule would impact your organization if enabled
 - **Warn**: Enable the ASR rule but allow the end user to bypass the block
 
-> [!IMPORTANT]
-> Currently, warn mode is not supported for three ASR rules when you configure ASR rules in Microsoft Endpoint Manager (MEM). To learn more, see [Cases where warn mode is not supported](attack-surface-reduction.md#cases-where-warn-mode-is-not-supported).
-
 We recommend using ASR rules with a Windows E5 license (or similar licensing SKU) to take advantage of the advanced monitoring and reporting capabilities available in [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) (Defender for Endpoint). However, if you have another license, such as Windows Professional or Windows E3 that don't include advanced monitoring and reporting capabilities, you can develop your own monitoring and reporting tools on top of the events that are generated at each endpoint when ASR rules are triggered (for example, Event Forwarding).
 
 > [!TIP]
