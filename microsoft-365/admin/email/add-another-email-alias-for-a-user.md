@@ -26,7 +26,7 @@ ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
 description: "Learn how you can have more than one email address, called an email alias, associated with your Microsoft 365 for business account. "
 ---
 
-# Add another email alias for a user
+# Add another email alias for a Microsoft 365 business subscription user
   
 This article is for Microsoft 365 administrators who have business subscriptions. It's not for home users.
   
