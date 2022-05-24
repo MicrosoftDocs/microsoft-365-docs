@@ -21,6 +21,12 @@ ms.prod: m365-security
 
 # User tags in Microsoft Defender for Office 365
 
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
+**Applies to:**
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+
 User tags are identifiers for specific groups of users in [Microsoft Defender for Office 365](defender-for-office-365.md). There are two types of user tags:
 
 - **System tags**: Currently, [Priority accounts](../../admin/setup/priority-accounts.md) is the only type of system tag.
@@ -39,6 +45,7 @@ After you apply system tags or custom tags to users, you can use those tags as f
 - [Compromised user report](view-email-security-reports.md#compromised-users-report)
 - [Email entity page](mdo-email-entity-page.md#other-innovations)
 - [Threat protection status report](view-email-security-reports.md#threat-protection-status-report)
+- [Top senders and recipients report](view-email-security-reports.md#top-senders-and-recipients-report)
 - [Attack simulation](attack-simulation-training.md#target-users)
 - [Campaign Views](campaigns.md)
 - [Admin and user submissions](admin-submission.md)

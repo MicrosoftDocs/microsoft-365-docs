@@ -24,7 +24,7 @@ If you're running into issues when you try to enroll a device in Basic Mobility 
 
 To start, check the following:
 
-- Make sure that the device is not already enrolled with another mobile device management provider, such as Intune.
+- Make sure that the device isn't already enrolled with another mobile device management provider, such as Intune.
 
 - Make sure that the device is set to the correct date and time.
 
@@ -42,7 +42,7 @@ To start, check the following:
 
 - If you see the error message, "Profile failed to install," try one of the following:
 
-    - Make sure that Safari is the default browser on the device, and that cookies are not disabled.
+    - Make sure that Safari is the default browser on the device, and that cookies aren't disabled.
 
     - Reboot the device, and then navigate to portal.manage.microsoft.com. Sign in with your Microsoft 365 user ID and password, and attempt to install the profile manually.
 
