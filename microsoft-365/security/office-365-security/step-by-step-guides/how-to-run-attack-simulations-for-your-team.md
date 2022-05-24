@@ -1,6 +1,6 @@
 ---
 title: How to run attack simulations for your team
-description: The steps to send an Attack Simulation payload to your target users for your team or organization for training.
+description: The steps to send an Attack Simulation payload to your target users for your team or organization for training. Simulated attacks can help you identify and find vulnerable users, policies and practices before a real attack impacts your organization.
 search.product: 
 search.appverid: 
 ms.prod: m365-security

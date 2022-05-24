@@ -1,6 +1,6 @@
 ---
 title: How to configure quarantine permissions and policies
-description: The steps to configure quarantine policies and permissions across different groups, including AdminOnlyPolicy, limited access, and full access. 
+description: The steps to configure quarantine policies and permissions across different groups, including AdminOnlyPolicy, limited access, full access, and providing security admins and users with a simple way to manage false positive folders. 
 search.product: 
 search.appverid: 
 ms.prod: m365-security

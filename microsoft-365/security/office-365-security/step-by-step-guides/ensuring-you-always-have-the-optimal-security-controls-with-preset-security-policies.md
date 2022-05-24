@@ -1,6 +1,6 @@
 ---
 title: Ensuring you always have the optimal security controls with preset security policies
-description: The steps to ensure you always have the optimal security controls with preset security policies.
+description: The steps to ensure you always have the best security controls with preset security policies. Preset policies let you select a security profile of either Standard or Strict. Microsoft will manage and maintain security controls across Microsoft Defender for Office 365 for you.
 search.product: 
 search.appverid: 
 ms.prod: m365-security

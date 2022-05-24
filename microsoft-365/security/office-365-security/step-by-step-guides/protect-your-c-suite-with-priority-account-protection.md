@@ -1,6 +1,6 @@
 ---
-title: Protect your c-suite with priority account protection
-description: The steps to protect your c-suite with priority account protection.
+title: Protect your c-suite with priority account protection in Microsoft Defender for Office 365 Plan 2
+description: The steps to protect your c-suite with priority account protection. Tagging an account as a priority account will enable the additional protection tuned for the mail flow patterns targeting company executives, along with extra visibility in reports, alerts, and investigations.
 search.product: 
 search.appverid: 
 ms.prod: m365-security
@@ -20,7 +20,7 @@ ms.technology: mdo
 ---
 # Protect your c-suite with priority account protection
 
-Priority account protection helps IT and security teams ensure a high quality of service and protection for the critical people within your organization. Tagging an account as a priority account will enable the additional protection we have tuned for the mail flow patterns we see targeting company executives, along with additional visibility in reporting, alerts and investigations.
+Priority account protection helps IT and security teams ensure a high quality of service and protection for the critical people within your organization. Tagging an account as a priority account will enable the additional protection tuned for the mail flow patterns targeting company executives, along with extra visibility in reports, alerts, and investigations.
 
 ## What you’ll need
 - Microsoft Defender for Office 365 Plan 2 (included as part of E5 plans)

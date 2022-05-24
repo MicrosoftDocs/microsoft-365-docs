@@ -25,9 +25,8 @@ When alerts are triggered in Microsoft 365 Defender, automated investigation and
 
 ## What you’ll need
 
-Microsoft Defender for Office 365 Plan 2 or higher
-
-Sufficient permissions (Security reader, security operations, or security administrator, plus [Search and purge](../permissions-microsoft-365-security-center.md) role)
+- Microsoft Defender for Office 365 Plan 2 or higher
+- Sufficient permissions (Security reader, security operations, or security administrator, plus [Search and purge](../permissions-microsoft-365-security-center.md) role)
 
 ## Prioritize & manage Incidents
 
