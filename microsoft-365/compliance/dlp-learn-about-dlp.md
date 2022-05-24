@@ -118,7 +118,7 @@ While in test mode, monitor the outcomes of the policy and fine-tune it so that 
 - add new restricted sites
 
 > [!NOTE]
-> Stop processing more rules doesn't work in test mode even when enabled, so as to enable you to test more rules.
+> _Stop processing more rules_ doesn't work in test mode even when enabled, so as to enable you to test more rules.
 
 #### Enable the control and tune your policies
 
