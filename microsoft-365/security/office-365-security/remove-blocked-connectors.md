@@ -20,7 +20,7 @@ ms.prod: m365-security
 
 # Remove blocked connectors from the Restricted entities portal
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 

@@ -2,7 +2,7 @@
 title: View email security reports
 f1.keywords:
   - NOCSH
-ms.author: chrisdadrop
+ms.author: chrisda
 author: chrisda
 manager: dansimp
 ms.date:
@@ -25,7 +25,7 @@ ms.prod: m365-security
 
 # View email security reports in the Microsoft 365 Defender portal
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
