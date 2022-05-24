@@ -46,7 +46,8 @@ New-UnifiedGroup -DisplayName MultiGeoEUR -Alias "MultiGeoEUR" -AccessType Publi
 
 ![Screenshot of New-UnifiedGroup PowerShell cmdlet with syntax.](../media/multi-geo-new-group-with-pdl-powershell.png)
 
-Note that SharePoint group site provisioning is on-demand. The site will be provisioned the first time a group owner or member attempts to access it.
+> [!Note]
+> SharePoint group site provisioning is on-demand. The site will be provisioned the first time a group owner or member attempts to access it.
 
 ## Geo location codes
 

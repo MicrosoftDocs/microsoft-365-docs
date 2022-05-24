@@ -51,10 +51,9 @@ Defender Experts for Hunting provides targeted attack notifications directly thr
 
 If you haven't done so yet, you can apply for Defender Experts for Hunting:
 
-1. Click [**Apply**](https://aka.ms/expandedMTEprev). Only the global administrators can register and complete the application process. If you're not a global administrator, contact your global administrator to fill out the application form.
+1. Click [**Apply**](https://aka.ms/expandedMTEprev). Anyone from your company can request to join the preview, but if you are accepted, only your Global Admin can sign the legal agreement and enter the preview. 
 2. Enter your **company email ID**.
 3. Select **Submit**. You will get a confirmation message that your application has been received.  
-4. Upon approval, you will receive an email to register.
 
 ## Register to Microsoft Defender Experts for Hunting service preview
 
