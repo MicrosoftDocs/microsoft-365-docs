@@ -28,10 +28,9 @@ landingContent:
             url: add-users/about-admin-roles.md
           - text: Microsoft 365 usage reports
             url: activity-reports/activity-reports.md
-      - linkListType: video
-        links:
-          - text: Get help or support
+          - text: Get support for Microsoft 365 for business
             url: get-help-support.md
+ 
   # Card (optional)
   - title: Domains
     linkLists:
@@ -46,7 +45,7 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Set up multifactor authentication
+          - text: Set up multifactor authentication for Microsoft 365
             url: security-and-compliance/set-up-multi-factor-authentication.md
   # Card (optional)
   - title: Bills and subscriptions
@@ -57,7 +56,7 @@ landingContent:
             url: ../commerce/about-registration-numbers.md
       - linkListType: how-to-guide
         links:
-          - text: Cancel your subscription
+          - text: Cancel your business subscription
             url: ../commerce/subscriptions/cancel-your-subscription.md
           - text: Pay for your subscription
             url: ../commerce/billing-and-payments/pay-for-your-subscription.md
@@ -78,7 +77,7 @@ landingContent:
             url: email/configure-email-forwarding.md
           - text: Create a shared mailbox
             url: email/create-a-shared-mailbox.md
-          - text: Give mailbox permissions to another user
+          - text: Give mailbox permissions to another Microsoft 365 user
             url: add-users/give-mailbox-permissions-to-another-user.md
           - text: Change a user name and email address
             url: add-users/change-a-user-name-and-email-address.md
@@ -92,7 +91,7 @@ landingContent:
         links:
           - text: Add users and assign licenses at the same time
             url: add-users/add-users.md
-          - text: Assign licenses to users
+          - text: Assign Microsoft 365 licenses to users
             url: manage/assign-licenses-to-users.md
           - text: Allow users to sign in to Outlook mobile apps with a QR code
             url: manage/use-qr-code-download-outlook.md
