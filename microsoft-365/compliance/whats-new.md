@@ -164,7 +164,7 @@ To meet the challenges of today's decentralized, data-rich workplace, we're intr
 - [Data loss prevention policy reference](dlp-policy-reference.md) - updated for public preview of restricted app groups.
 - [Get started with data loss prevention for Power BI](dlp-powerbi-get-started.md) - new for public preview.
 - 
-### Information Protection
+### Information protection
 
 - [Support for double byte character set release notes](mip-dbcs-relnotes.md) - added guidance for macOS.
 - 
