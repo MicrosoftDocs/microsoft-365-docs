@@ -50,4 +50,4 @@ If you’re not the first Global admin on the account, use the following steps t
 
 [Understand billing accounts](manage-billing-accounts.md) (article)\
 [About admin roles](../admin/add-users/about-admin-roles.md) (article)\
-[Assign admin roles](../admin/add-users/assign-admin-roles.md) (article)
+[Assign admin roles](../admin/add-users/assign-admin-roles.md) (article) 
