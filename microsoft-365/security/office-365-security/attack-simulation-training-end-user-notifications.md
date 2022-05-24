@@ -26,11 +26,11 @@ In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Offi
 - **Simulation notifications**: These messages are sent when users are enrolled in trainings, and as reminders for required trainings.
 - **Positive reinforcement notifications**: These messages are sent when users report a simulated phishing message.
 
-To see the available end-user notification, open the Microsoft 365 Defender portal at <https://security.microsoft.com>, and then go to **Email & collaboration** \> **Attack simulation training** \> **End-user notifications** tab. To go directly to the **End-user notifications** tab, use <https://security.microsoft.com/attacksimulator?viewid=endUserNotification>.
+To see the available end-user notification, open the Microsoft 365 Defender portal at <https://security.microsoft.com>, and then go to **Email & collaboration** \> **Attack simulation training** \> **Simulation content library** tab \> select **End user notifications**. To go directly to the **Simulation content library** tab, use <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
 
-The **End-user notifications** tab has two tabs:
+**End user notifications** has two tabs:
 
-- **Global notifications**: Contains the built-in and non-modifiable notifications.
+- **Global notifications**: Contains the built-in, non-modifiable notifications.
 - **Tenant notifications**: Contains the custom notifications that you've created.
 
 The following information is shown for each notification:
