@@ -4,6 +4,7 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: crimora
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -26,14 +27,14 @@ We're continuously adding new features to [Microsoft 365 Lighthouse](m365-lighth
 
 ### Redesigned left navigation pane
 
-We've given the left navigation pane in Lighthouse a new look. You'll notice a sleeker design, with top-level  nodes like Tenants, Users, and Devices that expand to show related subnodes, like Risky users, Device compliance, and Threat management. This navigation model aligns with the model used by other Microsoft 365 admin centers.
+We've given the left navigation pane in Microsoft 365 Lighthouse a new look. You'll notice a sleeker design, with top-level  nodes like Tenants, Users, and Devices that expand to show related subnodes, like Risky users, Device compliance, and Threat management. This navigation model aligns with the model used by other Microsoft 365 admin centers.
 
 > [!NOTE]
 > The redesigned navigation pane is being rolled out over several weeks and may not be immediately available in all tenants.
 
 ### Enriched user details pane
 
-We've redesigned the user details pane to include more user information and more actions you can take to better manage users. It now has the same look and feel as the user details pane in the Microsoft 365 admin center. To access the user details pane in Lighthouse, select **Users** from the left navigation pane, and then select either **Search users** or **Risky users**. Select any user to open the details pane.
+We've redesigned the user details pane to include more user information and more actions you can take to better manage users. It now has the same look and feel as the user details pane in the Microsoft 365 admin center. To access the user details pane in Microsoft 365 Lighthouse, select **Users** from the left navigation pane, and then select either **Search users** or **Risky users**. Select any user to open the details pane.
 
 > [!NOTE]
 > The redesigned user details pane is being rolled out over several weeks and may not be immediately available in all tenants.
@@ -42,7 +43,7 @@ We've redesigned the user details pane to include more user information and more
 
 ### Delegated access type and roles on Tenants page
 
-We've updated the Tenants page to list the Managed Service Provider (MSP)'s delegated access type (None, DAP, GDAP, or Both DAP & GDAP) per customer under the **Delegated access** column. We've also added a new column titled **Your roles** that lists the DAP and GDAP roles per customer for a signed-in user. These two enhancements to the Tenants page will make it easier for partner technicians to understand which types of delegated administrative permissions are available for each customer and which delegated roles have explicitly been granted to them.
+We've updated the **Tenants** page to list the Managed Service Provider (MSP)'s delegated access type (None, DAP, GDAP, or Both DAP & GDAP) per customer under the **Delegated access** column. We've also added a new column titled **Your roles** that lists the DAP and GDAP roles per customer for a signed-in user. These two enhancements to the **Tenants** page will make it easier for partner technicians to understand which types of delegated administrative permissions are available for each customer and which delegated roles have explicitly been granted to them.
 
 To learn more, see [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md).
 
@@ -53,9 +54,9 @@ To learn more, see [Overview of permissions in Microsoft 365 Lighthouse](m365-li
 
 ### Windows 365 Business integration and management actions
 
-Based on user feedback, we've integrated the Windows 365 Business edition into Lighthouse. This will help you manage and monitor all your customers' Cloud PCs from a single place. 
+Based on user feedback, we've integrated the Windows 365 Business edition into Microsoft 365 Lighthouse. This will help you manage and monitor all your customers' Cloud PCs from a single place. 
 
-In addition to integrating with Windows 365 Business Cloud PCs in Lighthouse, you can now take the following management actions:
+In addition to integrating with Windows 365 Business Cloud PCs in Microsoft 365 Lighthouse, you can now take the following management actions:
 
 - Restart
 - Reprovision
@@ -65,15 +66,15 @@ To learn more about the new features, see [Overview of the Windows 365 (Cloud PC
 
 ### Microsoft 365 Lighthouse partner amendment
 
-Now that Microsoft 365 Lighthouse is in General Availability, we require our current partners to sign an updated Microsoft 365 Lighthouse partner amendment. All Lighthouse partners that signed up during the preview period will be prompted to complete this new agreement in the coming weeks. Completion will require global administrator rights in the partner tenant and must be completed within 90 days to continue accessing the Lighthouse portal.
+Now that Microsoft 365 Lighthouse is in General Availability, we require our current partners to sign an updated Microsoft 365 Lighthouse partner amendment. All Microsoft 365 Lighthouse partners that signed up during the preview period will be prompted to complete this new agreement in the coming weeks. Completion will require global administrator rights in the partner tenant and must be completed within 90 days to continue accessing the Microsoft 365 Lighthouse portal.
 
 ## February 2022
 
 ### Granular Delegated Access Permissions (GDAP) roles
 
-Microsoft 365 Lighthouse now includes the capability for MSPs to use Granular Delegated Access Permissions (GDAP) roles. With the latest update, MSPs can leverage GDAP roles for their technicians that enable the principle of least privilege access in Lighthouse. This capability reduces the risks inherent in the broad permissions of the Delegated Access Permissions (DAP) role of the Admin Agent by enabling granular controls on the customers' data and settings that each technician will be able to work with.
+Microsoft 365 Lighthouse now includes the capability for MSPs to use Granular Delegated Access Permissions (GDAP) roles. With the latest update, MSPs can leverage GDAP roles for their technicians that enable the principle of least privilege access in Microsoft 365 Lighthouse. This capability reduces the risks inherent in the broad permissions of the Delegated Access Permissions (DAP) role of the Admin Agent by enabling granular controls on the customers' data and settings that each technician will be able to work with.
 
-To learn more about GDAP in Lighthouse, see [Configure Microsoft 365 Lighthouse portal security](m365-lighthouse-configure-portal-security.md).
+To learn more about GDAP in Microsoft 365 Lighthouse, see [Configure Microsoft 365 Lighthouse portal security](m365-lighthouse-configure-portal-security.md).
 
 ### Capability to notify users to act on non-compliant devices
 
@@ -83,7 +84,7 @@ As part of the device compliance baseline step, we've added the capability to no
 
 Microsoft 365 Lighthouse can now test tenant configurations for deployment steps with Conditional Access policies!  
 
-This new functionality works by detecting existing policies within the tenants you manage and comparing them to your deployment plan. Lighthouse then provides status designations for deployment steps and deployment step processes to help you understand which deployment processes have already been completed, which ones need to be addressed, and where the settings prescribed by the deployment plan are equal to, missing from, or in conflict with the settings included in the existing policies. Knowing this information makes identifying, prioritizing, and resolving policy conflicts faster, easier, and more effective.
+This new functionality works by detecting existing policies within the tenants you manage and comparing them to your deployment plan. Microsoft 365 Lighthouse then provides status designations for deployment steps and deployment step processes to help you understand which deployment processes have already been completed, which ones need to be addressed, and where the settings prescribed by the deployment plan are equal to, missing from, or in conflict with the settings included in the existing policies. Knowing this information makes identifying, prioritizing, and resolving policy conflicts faster, easier, and more effective.
 
 ### Deployment step to configure Microsoft Defender Firewall
 
@@ -91,20 +92,20 @@ Microsoft 365 Lighthouse has added the Configure Microsoft Defender Firewall dep
 
 Microsoft Defender Firewall is on by default on Windows 10 (and later) devices. If your customer tenant doesn't have this configured, follow these steps:
 
-1. On the **Tenants** page in Lighthouse, select the customer tenant to open the tenant's **Overview** page.
+1. On the **Tenants** page in Microsoft 365 Lighthouse, select the customer tenant to open the tenant's **Overview** page.
 2. Select the **Deployment Plan** tab.
 3. From the list of deployment steps, select **Configure Microsoft Defender Firewall**.
 4. Select **Review and deploy** to deploy this configuration to the customer tenant. 
 
 ### Increase in maximum license limit
 
-We're making it possible to manage more of your customers in Microsoft 365 Lighthouse by increasing the maximum license limit for customer onboarding. Customers with up to 1000 user licenses can now be onboarded to Lighthouse. We'll continue to evaluate this requirement in future Lighthouse releases.
+We're making it possible to manage more of your customers in Microsoft 365 Lighthouse by increasing the maximum license limit for customer onboarding. Customers with up to 1000 user licenses can now be onboarded to Microsoft 365 Lighthouse. We'll continue to evaluate this requirement in future Microsoft 365 Lighthouse releases.
 
 For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
 
 ### Support for Advisor customers
 
-We've changed our onboarding requirements to allow existing customer tenants with Advisor relationships to be onboarded to Microsoft 365 Lighthouse.  Customers with both reseller and advisor contracts are now eligible to be in Lighthouse if they meet the requirements for delegated access permissions, have the required licenses, and don't exceed the maximum user count.
+We've changed our onboarding requirements to allow existing customer tenants with Advisor relationships to be onboarded to Microsoft 365 Lighthouse.  Customers with both reseller and advisor contracts are now eligible to be in Microsoft 365 Lighthouse if they meet the requirements for delegated access permissions, have the required licenses, and don't exceed the maximum user count.
 
 For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
 
@@ -118,13 +119,13 @@ Microsoft 365 Lighthouse now includes the capability to look at audit logs. You 
 - Search and filter audit logs to find specific information.
 - Export logs so you can analyze and retain them.
  
-In the left navigation pane of Lighthouse, select **Audit logs**. Or, [go directly to the Audit logs page now](https://lighthouse.microsoft.com/#blade/Microsoft_Intune_MTM/Audit.ReactView) to check it out.
+In the left navigation pane of Microsoft 365 Lighthouse, select **Audit logs**. Or, [go directly to the Audit logs page now](https://lighthouse.microsoft.com/#blade/Microsoft_Intune_MTM/Audit.ReactView) to check it out.
 
 ## November 2021
 
 ### Microsoft 365 services usage data
 
-You can now view usage data for Microsoft 365 services from Microsoft 365 Lighthouse! Understanding how customers use their Microsoft 365 services is critical to helping them get the most out of their IT investments. Instead of using multiple resources to view information across your customers' various productivity, security, and compliance services, Microsoft 365 Lighthouse aggregates them into one simple, powerful view.  
+You can now view usage data for Microsoft 365 services from Microsoft 365 Lighthouse. Understanding how customers use their Microsoft 365 services is critical to helping them get the most out of their IT investments. Instead of using multiple resources to view information across your customers' various productivity, security, and compliance services, Microsoft 365 Lighthouse aggregates them into one simple, powerful view.  
 
 These insights can help inform your customer engagements and deliver more value to your customers by empowering you to help them understand which services their users actively use and where there may be opportunities to enhance their security or productivity. 
 
@@ -150,11 +151,11 @@ We've added the capability to assign baseline configurations to specific Azure A
 
 ### Improvements to Risky users page
 
-You can now easily view and understand the reasons for a user's risk from within Microsoft 365 Lighthouse. In the left navigation pane of Lighthouse, select **Users**, and then select the **Risky users** tab. Select **View risk detections** in the **Details** column for any user. From here, you can review the details of the risk and then select **Confirm user compromised** or **Dismiss user risk**. You can also confirm or dismiss a risk for multiple users at the same time from the **Risky users** page. The ability to dismiss a user's risk can be useful when password reset isn't an option or if you believe the affected user is no longer at risk.
+You can now easily view and understand the reasons for a user's risk from within Microsoft 365 Lighthouse. In the left navigation pane of Microsoft 365 Lighthouse, select **Users**, and then select the **Risky users** tab. Select **View risk detections** in the **Details** column for any user. From here, you can review the details of the risk and then select **Confirm user compromised** or **Dismiss user risk**. You can also confirm or dismiss a risk for multiple users at the same time from the **Risky users** page. The ability to dismiss a user's risk can be useful when password reset isn't an option or if you believe the affected user is no longer at risk.
 
 ### Capability to provide feedback on Microsoft 365 Lighthouse
 
-Your feedback matters and is important to us, so we've added new feedback functionality that will occasionally (no more than once a month) prompt you to provide feedback. You can also provide feedback at any time by selecting the Feedback icon in the upper-right corner of Lighthouse.
+Your feedback matters and is important to us, so we've added new feedback functionality that will occasionally (no more than once a month) prompt you to provide feedback. You can also provide feedback at any time by selecting the Feedback icon in the upper-right corner of Microsoft 365 Lighthouse.
 
 ## September 2021
 
@@ -170,17 +171,17 @@ We've made it easier to communicate with users in your customer tenants about ac
 
 ### Capability to take action on noncompliant devices
 
-We've introduced the capability to sync or restart one or more devices across multiple customer tenants. This functionality helps ensure that your customers' devices are protected from risk. To check out this functionality, select **Devices** from the left navigation pane in Lighthouse, and then select the **Devices** tab. Look for the **Sync** and **Restart** options above the devices list. You can also access these options from the device details pane of any device.
+We've introduced the capability to sync or restart one or more devices across multiple customer tenants. This functionality helps ensure that your customers' devices are protected from risk. To check out this functionality, select **Devices** from the left navigation pane in Microsoft 365 Lighthouse, and then select the **Devices** tab. Look for the **Sync** and **Restart** options above the devices list. You can also access these options from the device details pane of any device.
 
 ### Capability to monitor and manage Windows 365 Cloud PCs
 
-We've added the capability to monitor on-premises connections and provision and manage Windows 365 Cloud PCs across all of your customer tenants. The new Windows 365 page provides detailed information about all of your tenants' Cloud PCs in one convenient location. 
+We've added the capability to monitor on-premises connections and provision and manage Windows 365 Cloud PCs across all of your customer tenants. The new **Windows 365** page provides detailed information about all of your tenants' Cloud PCs in one convenient location. 
 
 ### Support for Microsoft 365 E3 customers
 
-We've changed our onboarding requirements to allow you to onboard Microsoft 365 E3 customers to Microsoft 365 Lighthouse. To qualify to be managed in Lighthouse, each customer must meet the following requirements:
+We've changed our onboarding requirements to allow you to onboard Microsoft 365 E3 customers to Microsoft 365 Lighthouse. To qualify to be managed in Microsoft 365 Lighthouse, each customer must meet the following requirements:
 
-- Must have delegated access set up for the Managed Service Provider (MSP) to be able to manage the customer tenant
+- Must have delegated access set up for the MSP to be able to manage the customer tenant
 - Must have at least one Microsoft 365 Business Premium or Microsoft 365 E3 license
 - Must have no more than 500 licensed users
 
@@ -188,7 +189,7 @@ For more information about requirements, see [Requirements for Microsoft 365 Lig
 
 ## June 2021
 
-### Capability to tag your customer tenants with custom labels
+### Capability to add custom tags to customer tenants
 
 You can now create and apply custom tags to the customer tenants that you manage in Microsoft 365 Lighthouse. Use these tags to help you organize your tenants, or use them to more easily filter your tenant list to show insights for relevant sets of customer tenants. 
 
@@ -203,7 +204,7 @@ With the new baselines feature, you can now deploy standard configurations relat
 - Configure Defender AV policy for Windows devices 
 - Configure Compliance Policy for Windows devices 
 
-To act on these deployment steps, select **Tenants** from the left navigation pane in lighthouse, select a tenant from the tenants list, and then select the **Deployment plan** tab. 
+To act on these deployment steps, select **Tenants** from the left navigation pane in Microsoft 365 lighthouse, select a tenant from the tenants list, and then select the **Deployment plan** tab. 
 
 ## May 2021
 
