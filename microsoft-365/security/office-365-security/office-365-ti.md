@@ -26,7 +26,7 @@ ms.prod: m365-security
 
 # Threat investigation and response
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies To**
 - [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)

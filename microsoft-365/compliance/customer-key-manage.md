@@ -100,7 +100,7 @@ To create a DEP to use with a mailbox, follow these steps:
    New-DataEncryptionPolicy -Name USA_mailboxes -Description "Root key for mailboxes in USA and its territories" -AzureKeyIDs https://contoso_EastUSvault02.vault.azure.net/keys/USA_key_01, https://contoso_CentralUSvault02.vault.azure.net/keys/USA_Key_02
    ```
 
-For detailed syntax and parameter information, see [New-DataEncryptionPolicy](/powershell/module/exchange/new-data-encryptionpolicy).
+For detailed syntax and parameter information, see [New-DataEncryptionPolicy](/powershell/module/exchange/new-dataencryptionpolicy).
 
 ### Assign a DEP to a mailbox
 
@@ -407,7 +407,7 @@ To initiate the data purge path, complete these steps:
 
 ### Revoke your Customer Keys and the availability key for SharePoint Online, OneDrive for Business, and Teams files
 
-Purging of SharePoint, OneDrive for work or school, and Teams files DEPs is not supported in Customer Key. These multi-workload DEPs are used to encrypt data across multiple workloads across all tenant users. Purging such a DEP would result in data from across multiple workloads becoming inaccessible. If you decide to exit Microsoft 365 services altogether, you could pursue the path of tenant deletion per the documented process. See how to [delete a tenant in Azure Active Directory](/azure/active-directory/enterprise-users/directory-delete-howto).  
+Purging of SharePoint, OneDrive for work or school, and Teams files DEPs is not supported in Customer Key. These multi-workload DEPs are used to encrypt data across multiple workloads across all tenant users. Purging such a DEP would result in data from across multiple workloads becoming inaccessible. If you decide to exit Microsoft 365 services altogether, you could pursue the path of tenant deletion per the documented process. See how to [delete a tenant in Azure Active Directory](/azure/active-directory/enterprise-users/directory-delete-howto).  
 
 ## Related articles
 

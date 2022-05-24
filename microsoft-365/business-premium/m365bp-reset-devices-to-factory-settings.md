@@ -1,5 +1,5 @@
 ---
-title: "Reset Windows 10 devices to their factory settings"
+title: "Reset Windows devices to their factory settings"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -24,10 +24,10 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: c4db6caf-74df-4734-b1dd-53e371c7a3c3
-description: "Learn how to use Microsoft 365 for business to factory reset Windows 10 devices you manage, reverting them to their original settings at purchase."
+description: "Learn how to use Microsoft 365 Business Premium to factory reset Windows devices you manage, reverting them to their original settings at purchase."
 ---
 
-# Reset Windows 10 devices to their factory settings
+# Reset Windows devices to factory settings
 
 This article applies to Microsoft 365 Business Premium.
 

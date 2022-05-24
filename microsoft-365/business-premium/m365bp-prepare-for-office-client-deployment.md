@@ -1,5 +1,5 @@
 ---
-title: "Prepare for Office client deployment by Microsoft 365 Business Premium"
+title: "Prepare for Office client deployment with Microsoft 365 Business Premium"
 f1.keywords:
 - CSH
 ms.author: efrene
@@ -22,20 +22,20 @@ search.appverid:
 - MET150
 ROBOTS: NO INDEX, NO FOLLOW
 ms.assetid: ed34fff3-2881-4ed4-9906-1ba6bb8dd804
-description: "Learn how to automatically install the 32-bit Office apps on Windows 10 computers and keep them updated."
+description: "Learn how to automatically install the 32-bit Office apps on Windows computers and keep them updated in Microsoft 365 Business Premium."
 ---
 
 # Prepare to automatically install Office apps to client computers
 
-Use Microsoft 365 Business Premium to automatically install the 32-bit Office apps on Windows 10 computers and keep them current with updates.
+Use Microsoft 365 Business Premium to automatically install the 32-bit Office apps on Windows computers and keep them current with updates.
   
 Automatic installation works best if the computer: 
 
-- is on Windows 10 Business.
+- is on Windows for Business.
   
 - doesn't have existing Office desktop apps (Word, Excel, PowerPoint, Outlook, OneNote, Publisher, Access, and OneDrive) OR has an existing version of Click-to-Run Office installed.
 
-To determine if you have the Click-to-Run version of Office, in any Office app go to **File** \> **Account** ( **Office Account** in Outlook). If you see **Office Updates** as shown in the following figure, then the installation was done by using Click-to-Run. 
+To determine if you have the Click-to-Run version of Office, in any Office app go to **File** \> **Account** ( **Office Account** in Outlook). If you see **Office Updates** as shown in the following figure, then the installation was done by using Click-to-Run.
   
 ![Screenshot of Office updates in Office app Account.](./../media/e3439380-fa43-4ed6-ae5d-64851c297df5.png)
   
@@ -43,7 +43,7 @@ To determine if you have the Click-to-Run version of Office, in any Office app g
   
 Works with:
   
-- A user who has a Windows 10 Business user license, an active Microsoft 365 for business license, Windows 10 Creators Update, and is joined to Azure Active Directory.
+- A user who has a Windows Business user license, an active Microsoft 365 for Business license, Windows 10 Creators Update, and is joined to Azure Active Directory.
 
 Doesn't work with: 
 
