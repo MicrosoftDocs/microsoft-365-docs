@@ -12,9 +12,6 @@ description: "Use this page to create your staff list and to manage staff member
 
 # Add staff to Bookings
 
-> [!NOTE]
-> This article helps you to interact with the latest version of Microsoft Bookings. Previous versions will be retired in coming months.
-
 The Staff page in Bookings is where you create your staffing list and manage staff member details such as name, phone number, and email address. You can also set working hours for each staff member from here.
 
 ## Before you begin
