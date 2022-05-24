@@ -29,7 +29,7 @@ The Office 365 E4 plan was retired in 2015. As a Microsoft 365 global admin, you
 
 ## Compare your options for upgrading or changing plans
 
-You can choose to maintain the same functionality you had with E4 or take advantage of new features and functionality from Microsoft 365 and Microsoft 365 Audio Conferencing. To move to a new plan you have five options.
+You can choose to maintain the same functionality you had with E4 or take advantage of new features and functionality from Microsoft 365 and Microsoft 365 Audio Conferencing. To move to a new plan, you have five options.
 
 |  | Option 1: Upgrade to Office 365 E5 | Option 2: Upgrade to Microsoft 365 E5 | Option 3: Upgrade to Microsoft 365 E5 without Audio Conferencing | Option 4: Change to Office 365 E3 | Option 5: Change to Microsoft 365 E3 |
 |-|-|-|-|-|-|
