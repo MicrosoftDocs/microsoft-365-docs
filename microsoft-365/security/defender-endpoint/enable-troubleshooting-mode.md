@@ -66,8 +66,6 @@ Microsoft Defender for Endpoint troubleshooting mode allows you to troubleshoot 
 
 - Notification will be sent to the end user when the troubleshooting mode begins and when the troubleshooting mode ends. A warning will also be sent notifying that it will end soon.
 
-- While troubleshooting mode is active, endpoint detection and response (EDR) will not block any files, folders, or processes that Microsoft Defender Antivirus has excluded from scans.
-
 - The beginning and ending of troubleshooting mode will be identified in the **Device Timeline** on the device page.
 
 - You can query all troubleshooting mode events in advanced hunting.
