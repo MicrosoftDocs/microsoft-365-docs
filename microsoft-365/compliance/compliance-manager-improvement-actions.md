@@ -85,6 +85,7 @@ To edit an improvement action’s status, select **Edit implementation details**
 
 - **Implementation status**
   - **Not implemented**: action not yet implemented
+  - **Partially implemented**: for automatically tested actions, the action is partially implemented (neither passes nor fails) and receives a partial score
   - **Implemented**: action implemented
   - **Alternative implementation**: select this option if you used other third-party tools or took other actions not included in Microsoft recommendations
   - **Planned**: action is planned for implementation
@@ -98,21 +99,51 @@ Common actions synchronize across groups. When two different assessments in the 
 
 ## Change test status
 
-In the **Testing** section, you can view the testing status of your improvement action, the testing date, and any notes. The content of these fields can be changed under **Edit testing details** by any user with editing permissions.
+In the **Testing** section, you can view the testing status of your improvement action, the testing date, and any notes. A user with editing permissions can select  **Edit testing details** to edit content on the **Testing** tab.
 
-The available fields are as follows:
+#### Testing status fields
 
-- **Test status**: available to select when implementation status is "implemented" or "alternative implementation". Options include:
+**Test status**
+ 
+You can edit test status when an improvement action's implementation status is "implemented" or "alternative implementation."
+
+Test statuses for [manually tested actions](#manual-testing-source):
+  - **None**: no work has started on the action
   - **Not assessed**: action hasn't been tested
   - **Passed**: implementation has been verified by an assessor
   - **Failed low risk**: testing failed, low risk
   - **Failed medium risk**: testing failed, medium risk
   - **Failed high risk**: testing failed, high risk
   - **Out of scope**: the action is out of scope for the assessment and doesn’t contribute to your score
-- **Test date**: toggle through the calendar pop-up to select the date
-- **Testing notes** and **Additional notes**: text fields for notes for internal reference
+  - **In progress**: testing in progress
+  - **Remediated**: tbd
 
-### Update testing source
+[Automatically tested actions](#automatic-testing-source) may also show one of the following states in the **Test status** column on the **Improvement actions** page:
+   - **To be detected**: awaiting signals that indicate test status
+  - **Could not be detected**: couldn't detect a test status; will be automatically checked again
+  - **Partially tested**: action has been partially tested;  neither passes nor fails
+
+> [!NOTE]
+> The test status and testing notes for automatically tested improvement actions can't be edited manually. Compliance Manager updates these fields for you.
+
+**Test date**
+
+Toggle through the calendar pop-up to select the testing date.
+
+**Testing notes** and **Additional notes**
+
+Enter notes for your own internal reference in these free text fields.
+
+**Testing history**
+
+The testing history provides a downloaded report of all test status changes for the improvement action.
+
+#### Exporting testing history
+You can export a report that will show you a history of all changes in test status for an improvement action. These reports are especially helpful for monitoring progress on [actions that are automatically tested](#automatic-testing-source), since such actions are regularly or frequently updated based on your tenant's data.
+
+On an improvement action's details page, select the **Testing** tab. Under **Testing history**, select the **Export testing history** button. The report will download as an Excel file.
+
+## Update testing source
 
 Compliance Manager provides you options for how to test improvement actions. In the **Overview** section of each improvement action, the **Testing Source** area has a drop-down menu from which you can choose how you want the action to be tested: **Manual**, **Automatic**, and **Parent**. Learn details about each testing method below.
 
