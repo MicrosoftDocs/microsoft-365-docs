@@ -210,7 +210,7 @@ For policy deployment in Intune, the account must have permissions to create, ed
 
 Go to Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>) **> Devices > Create profile > Platform: Windows 10 and later, Profile type: Templates > Custom**
 
-1. Enable RSAC: You can enable Removable Storage Access Control by setting the value to 1 as follows.
+1. Enable RSAC: You can enable Removable Storage Access Control as follows:
 
     - OMA-URI:
 
@@ -222,7 +222,7 @@ Go to Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>
     
     :::image type="content" source="images/enable-rsac.png" alt-text="Enable RSAC" lightbox="images/enable-rsac.png":::
       
-2. Set Default Enforcement = Deny: You can set default access as Deny to removable media if there is no policy as follows.
+2. Set Default Enforcement = Deny: You can set default access as Deny to removable media if there is no policy as follows:
 
     - OMA-URI:
 
