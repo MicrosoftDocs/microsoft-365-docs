@@ -18,7 +18,7 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: beffbe01-ce2d-4614-9ae5-7898868e2729
-description: "Learn how to get Mailbox usage report to know about the activities of the users with a user mailbox."
+description: "Learn how to get the Mailbox usage report to find out about activity levels for users with a user mailbox, as well as storage and quota information for each."
 ---
 
 # Microsoft 365 Reports in the admin center - Mailbox usage
