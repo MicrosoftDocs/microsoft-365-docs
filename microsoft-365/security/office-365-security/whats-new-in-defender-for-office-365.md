@@ -23,7 +23,7 @@ ms.prod: m365-security
 
 # What's new in Microsoft Defender for Office 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to:**
 
