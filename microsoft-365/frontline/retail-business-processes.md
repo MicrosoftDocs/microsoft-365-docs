@@ -35,19 +35,19 @@ You can use Teams apps, Power Apps, and Power BI to simplify business processes 
 Teams includes many apps to help you and your retail team manage their day-to-day work:
 
 - Use [Shifts](shifts-for-teams-landing-page.md) to create and update schedules for your store team. Your workers can sign up for shifts, trade shifts as needed, and sign in when they start.
-- Publish and track [Tasks](../manage-tasks-app.md) for your workers, so they know what needs to be done every day.
-- Use [Approvals](../approval-admin.md) right in your chat to quickly sign off when something is done or needs to be submitted.
-- Keep track of everything else with [Lists](../manage-lists-app.md).
+- Publish and track [Tasks](/microsoftteams/manage-tasks-app) for your workers, so they know what needs to be done every day.
+- Use [Approvals](/microsoftteams/approval-admin) right in your chat to quickly sign off when something is done or needs to be submitted.
+- Keep track of everything else with [Lists](/microsoftteams/manage-lists-app).
 
 ## Conduct store walks and inventories
 
 Add Power Apps to create low-code or no-code applications for your organization. You can build custom apps to connect your business data, so you can manage inventory or conduct store walks, for example.
 
-More information: [Power Apps](../manage-power-platform-apps.md) and [Power Apps and Microsoft Teams integration](/powerapps/teams/overview).
+More information: [Power Apps](/microsoftteams/manage-power-platform-apps) and [Power Apps and Microsoft Teams integration](/powerapps/teams/overview).
 
 ## Track key performance indicators (KPIs) with Power BI reports
 
-Share and collaborate on interactive Power BI content in Microsoft Teams channels and chats. You can add a [Power BI tab](../built-in-custom-tabs.md) to Teams to embed interactive reports and chat in Teams about your reports, and get notified when important things happen in Power BI right in your Teams activity feed.
+Share and collaborate on interactive Power BI content in Microsoft Teams channels and chats. You can add a [Power BI tab](microsoftteams/platform/tabs/what-are-tabs) to Teams to embed interactive reports and chat in Teams about your reports, and get notified when important things happen in Power BI right in your Teams activity feed.
 
 More information: [Collaborate in Microsoft Teams with Power BI](/power-bi/collaborate-share/service-collaborate-microsoft-teams).
 

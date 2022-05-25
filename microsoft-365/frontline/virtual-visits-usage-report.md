@@ -20,7 +20,7 @@ ms.custom: seo-marvel-apr2020
 ---
 # Microsoft Teams Virtual Visits usage report
 
-The Virtual Visits usage report in the Microsoft Teams admin center gives you an overview of Teams virtual appointment activity in your organization. You can view detailed activity for virtual appointments scheduled through the [Bookings app](../expand-teams-across-your-org/bookings-virtual-visits.md) and the [Microsoft Teams Electronic Health Record (EHR) connector](../expand-teams-across-your-org/healthcare/teams-in-hc.md#virtual-appointments-and-electronic-healthcare-record-ehr-integration).
+The Virtual Visits usage report in the Microsoft Teams admin center gives you an overview of Teams virtual appointment activity in your organization. You can view detailed activity for virtual appointments scheduled through the [Bookings app](bookings-virtual-visits.md) and the [Microsoft Teams Electronic Health Record (EHR) connector](teams-in-hc.md#virtual-appointments-and-electronic-healthcare-record-ehr-integration).
 
 To view the report, you must be a global admin or Teams admin.
 
@@ -49,7 +49,7 @@ Use this report to gain insight into virtual appointment activity and trends in 
 
 ### Virtual Visits
 
-The graphs you'll see here depend on whether you have a license for the Bookings app, the Teams EHR connector, or both. To learn more, see [Manage the Bookings app](../bookings-app-admin.md), and [Integration into Cerner EHR](../expand-teams-across-your-org/healthcare/ehr-admin-cerner.md) or [Integration into Epic EHR](../expand-teams-across-your-org/healthcare/ehr-admin.md).
+The graphs you'll see here depend on whether you have a license for the Bookings app, the Teams EHR connector, or both. To learn more, see [Manage the Bookings app](/microsoftteams/bookings-app-admin), and [Integration into Cerner EHR](ehr-admin-cerner.md) or [Integration into Epic EHR](ehr-admin-epic.md).
 
 :::image type="content" source="../media/virtual-visits-usage-report-virtual-visits.png" alt-text="Screenshot of the Virtual Visits tab of the Virtual Visits usage report showing numbered callouts." lightbox="../media/virtual-visits-usage-report-virtual-visits.png":::
 
@@ -76,7 +76,7 @@ The graphs you'll see here depend on whether you have a license for the Bookings
 |**6**   |You can export the report to a CSV file for offline analysis. Select **Export to Excel**, and then on the **Downloads** tab, choose **Download** to download the report when it's ready.|
 ### Bookings
 
-You'll see this tab if you have a license that includes the Bookings app. To learn more, see [Manage the Bookings app](../bookings-app-admin.md).
+You'll see this tab if you have a license that includes the Bookings app. To learn more, see [Manage the Bookings app](/microsoftteams/bookings-app-admin).
 
 :::image type="content" source="../media/virtual-visits-usage-report-bookings.png" alt-text="Screenshot of the Bookings tab of the Virtual Visits usage report showing numbered callouts." lightbox="../media/virtual-visits-usage-report-bookings.png":::
 
@@ -89,7 +89,7 @@ You'll see this tab if you have a license that includes the Bookings app. To lea
 |**5**   |You can export the report to a CSV file for offline analysis. Select **Export to Excel**, and then on the **Downloads** tab, choose **Download** to download the report when it's ready.|
 ### EHR
 
-You'll see this tab if you have a license that includes the Teams EHR connector. To learn more, see [Integration into Cerner EHR](../expand-teams-across-your-org/healthcare/ehr-admin-cerner.md) or [Integration into Epic EHR](../expand-teams-across-your-org/healthcare/ehr-admin.md).
+You'll see this tab if you have a license that includes the Teams EHR connector. To learn more, see [Integration into Cerner EHR](ehr-admin-cerner.md) or [Integration into Epic EHR](ehr-admin-epic.md).
 
 :::image type="content" source="../media/virtual-visits-usage-report-ehr.png" alt-text="Screenshot of the EHR tab of the Virtual Visits usage report showing numbered callouts." lightbox="../media/virtual-visits-usage-report-ehr.png":::
 
@@ -106,7 +106,7 @@ You'll see this tab if you have a license that includes the Teams EHR connector.
 
 ## Related articles
 
-- [Teams analytics and reporting](teams-reporting-reference.md)
-- [Virtual appointments with Teams and the Bookings app](../expand-teams-across-your-org/bookings-virtual-visits.md)
-- [Virtual appointments with Teams - Integration into Epic EHR](../expand-teams-across-your-org/healthcare/ehr-admin.md)
-- [Virtual appointments with Teams - Integration into Cerner EHR](../expand-teams-across-your-org/healthcare/ehr-admin-cerner.md)
+- [Teams analytics and reporting](/microsoftteams/teams-analytics-and-reports/teams-reporting-reference)
+- [Virtual appointments with Teams and the Bookings app](bookings-virtual-visits.md)
+- [Virtual appointments with Teams - Integration into Epic EHR](ehr-admin-epic.md)
+- [Virtual appointments with Teams - Integration into Cerner EHR](ehr-admin-cerner.md)
