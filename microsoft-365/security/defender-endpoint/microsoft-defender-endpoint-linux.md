@@ -78,9 +78,9 @@ If you experience any installation failures, refer to [Troubleshooting installat
 
 - Supported Linux server distributions and x64 (AMD64/EM64T) and x86_64 versions:
 
-  - Red Hat Enterprise Linux 6.7 or higher
-  - Red Hat Enterprise Linux 7.2 or higher
-  - Red Hat Enterprise Linux 8.x
+  - Red Hat Enterprise Linux 6.7 or higher (Preview)
+  - Red Hat Enterprise Linux 7.2 or higher 
+  - Red Hat Enterprise Linux 8.x 
   - CentOS 6.7 or higher 
   - CentOS 7.2 or higher
   - Ubuntu 16.04 LTS or higher LTS
@@ -93,6 +93,9 @@ If you experience any installation failures, refer to [Troubleshooting installat
 
     > [!NOTE]
     > Distributions and version that are not explicitly listed are unsupported (even if they are derived from the officially supported distributions).
+
+
+
 
 - List of supported kernel versions
   - Minimum kernel version 3.10.0-327 (For all the supported Linux distributions mentioned above except Red Hat Enterprise Linux 6 and CentOS 6)
@@ -127,6 +130,7 @@ If you experience any installation failures, refer to [Troubleshooting installat
        - 2.6.32-754.39.1.el6.x86_64
        - 2.6.32-754.41.2.el6.x86_64
        - 2.6.32-754.43.1.el6.x86_64
+       - 2.6.32-754.47.1.el6.x86_64
        - 2.6.32-754.6.3.el6.x86_64
        - 2.6.32-754.9.1.el6.x86_64
 
@@ -223,3 +227,9 @@ High I/O workloads from certain applications can experience performance issues w
 ## Resources
 
 - For more information about logging, uninstalling, or other topics, see [Resources](linux-resources.md).
+  
+## Related articles
+  
+-  [Protect your endpoints with Defender for Cloud's integrated EDR solution: Microsoft Defender for Endpoint](/azure/defender-for-cloud/integration-defender-for-endpoint)
+-  [Connect your non-Azure machines to Microsoft Defender for Cloud](/azure/defender-for-cloud/quickstart-onboard-machines)
+
