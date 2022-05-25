@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Defender for Business trial playbook"
+title: "Microsoft Defender for Business Premium trial playbook"
 f1.keywords:
 - NOCSH
 ms.author: v-kcirillo
@@ -13,30 +13,8 @@ ms.prod: m365-security
 search.appverid: 
 - MOE150
 - MET150
-description: "Make the most of your Microsoft 365 Business Premium trial. Try out productivity and security capabilities."
+description: "Make the most of your Microsoft 365 Business Premium trial. Try out some of the key productivity and security capabilities."
 ---
-
-<!---
-Here's my recommended flow for this playbook:
-
-3. Onboard and protect devices
-- visit the Defender portal
-- use the setup wizard https://docs.microsoft.com/en-us/microsoft-365/security/defender-business/mdb-use-wizard?view=o365-worldwide
-- onboard devices https://docs.microsoft.com/en-us/microsoft-365/security/defender-business/mdb-onboard-devices?view=o365-worldwide&tabs=WindowsClientDevices
-- review security policies https://docs.microsoft.com/en-us/microsoft-365/security/defender-business/mdb-configure-security-settings?view=o365-worldwide
-
-4. Use Office apps on devices
-- install Office https://docs.microsoft.com/en-us/microsoft-365/business-premium/m365bp-install-office-apps?view=o365-worldwide&tabs=iPhone
-- go to office.com and sign in https://support.microsoft.com/en-us/office/get-started-at-office-com-91a4ec74-67fe-4a84-a268-f6bdf3da1804
-- create an Office document, such as a Word document https://support.microsoft.com/en-us/office/basic-tasks-in-word-87b3243c-b0bf-4a29-82aa-09a681999fdc
-- share a document with a team member https://support.microsoft.com/en-us/office/share-your-documents-651e1cb9-9a51-46dc-8d32-bdb7d928eedd
-
-5. Start using the Defender portal https://docs.microsoft.com/en-us/microsoft-365/security/defender-business/mdb-get-started?view=o365-worldwide
-- assess your security posture https://docs.microsoft.com/en-us/microsoft-365/security/defender/microsoft-secure-score-improvement-actions?view=o365-worldwide
-- learn how to respond to a security incident https://docs.microsoft.com/en-us/microsoft-365/security/defender-business/mdb-respond-mitigate-threats?view=o365-worldwide
-- review remediation actions https://docs.microsoft.com/en-us/microsoft-365/security/defender-business/mdb-review-remediation-actions?view=o365-worldwide
-
---->
 
 # Trial playbook: Microsoft Business Premium
 
@@ -56,16 +34,18 @@ We have automatically configured [Preset security policies](/security/office-365
 
 - Protection to all of the Microsoft 365 Business Premium features such as: SharePoint, OneDrive, Office apps, and Microsoft Teams.
 
-
 ### Add a domain
+
 When you purchase Microsoft 365 Business Premium trial, you have the option of using a domain you own, or buying one during the sign-up.
 
 > [!Note]
-> If you purchased a new domain when you signed up, your domain is all set up and you can move to Add users and assign licenses. Go to the admin center at https://admin.microsoft.com.
+> If you purchased a new domain when you signed up, your domain is all set up and you can move to Add users and assign licenses. Go to the [admin center](admin.microsoft.com).
 
-1. Choose **Go to setup** to start the wizard.
+1. From the admin center menu, choose **Setup** to start the wizard.
 
-1. In the **Add domain** step, enter the domain name you want to use (like contoso.com).
+1. Select **Set up email with a custom domain** and then, **Use a domain you already own** such as contoso.com.
+
+1. Follow the rest of the steps in the wizard to complete the process.
 
 > [!Important]
 > If you purchased a domain during the sign-up, you will not see Add a domain step here. Go to Add users instead.
@@ -74,8 +54,37 @@ When you purchase Microsoft 365 Business Premium trial, you have the option of u
 
 1. If your hosting provider is GoDaddy or another host enabled with domain connect, the process is easy and you'll be automatically asked to sign in and let Microsoft authenticate on your behalf.
 
+### Onboard and protect devices
 
+1. Visit the Defender portal at security.microsoft.com.
 
+1. Run the [setup wizard](../security/defender-business/mdb-use-wizard.md)
+
+1. Now, you can [onboard devices](../security/defender-business/mdb-onboard-devices.md)
+
+1. Next, [review security policies](../security/defender-business/mdb-configure-security-settings.md)
+
+### Use Office apps on devices
+
+1. First, you'll need to [install Office](m365bp-install-office-apps).
+
+1. Go to office.com and [sign in](https://support.microsoft.com/en-us/office/get-started-at-office-com-91a4ec74-67fe-4a84-a268-f6bdf3da1804).
+
+1. Create an Office document, such as a [Word document](https://support.microsoft.com/en-us/office/basic-tasks-in-word-87b3243c-b0bf-4a29-82aa-09a681999fdc).
+
+1. [Share a document](https://support.microsoft.com/en-us/office/share-your-documents-651e1cb9-9a51-46dc-8d32-bdb7d928eedd) with a team member.
+
+### Start using the Defender portal 
+
+1. Access the Defender portal at security.microsoft.com
+
+1. Take some time to [familiarize yourself with the portal](../security/defender-business/mdb-get-started.md).
+
+1. Now, [assess your security posture](../security/defender/microsoft-secure-score.md).
+
+1. Familiarize yourself with [how to respond to a security incident](../security/defender-business/mdb-respond-mitigate-threats.md).
+
+1. Lastly, [review remediation actions](../security/defender-business/mdb-review-remediation-actions.md).
 
 <!---
 Protect your most targeted and most visible users with Priority Account Protection in Defender for Office 365, which helps you prioritize your workflow to ensure these users are safe.
