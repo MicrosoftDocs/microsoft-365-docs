@@ -355,7 +355,7 @@
         - name: Pre-requisites for data protection
           href: /microsoft-365/business-premium/m365bp-pre-requisites-for-data-protection
         - name: Threats detected by Microsoft Defender Antivirus
-          href: /microsoft-365/business-premium/threats-detected-defender-av.md
+          href: /microsoft-365/business-premium/m365bp-review-threats-take-action
         - name: Set up compliance features
           href: /microsoft-365/business-premium/m365bp-set-up-compliance.md
         - name: Secure score
