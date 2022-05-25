@@ -22,7 +22,7 @@ productDirectory:
     # Card
     - title: What is Microsoft 365 for frontline workers?
       # imageSrc should be square in ratio with no whitespace
-      imageSrc: https://office/media/icons/get-started-blue.svg
+      imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
       links:
         - url: flw-overview.md
           text: Overview
@@ -31,7 +31,7 @@ productDirectory:
     # Card
     - title: Set up and configure Microsoft 365 for frontline workers
       # imageSrc should be square in ratio with no whitespace
-      imageSrc: https://office/media/icons/deploy-blue.svg
+      imageSrc: https://docs.microsoft.com/office/media/icons/deploy-blue.svg
       links:
         - url: ./file2a.md OR /file2a
           text: Start with a pilot deployment
@@ -41,7 +41,7 @@ productDirectory:
           text: Manage devices
     # Card
     - title: Onboard and train users
-      imageSrc: https://office/media/icons/users-group.svg
+      imageSrc: https://docs.microsoft.com/office/media/icons/users-group.svg
       links:
         - url: flw-onboarding-wizard.md
           text: Onboard your users
@@ -51,7 +51,7 @@ productDirectory:
           text: End user training
     # Card
     - title: Solutions to transform your business
-      imageSrc: https://office/media/icons/lightbulb-idea-capture-blue.svg
+      imageSrc: https://docs.microsoft.com/office/media/icons/lightbulb-idea-capture-blue.svg
       links:
         - url: retail-team-collaboration.md
           text: Communication
@@ -65,7 +65,7 @@ productDirectory:
           text: Digitized processes
     # Card
     - title: Solutions for your industry
-      imageSrc: https://office/media/icons/walkthrough-map-blue.svg
+      imageSrc: https://docs.microsoft.com/office/media/icons/walkthrough-map-blue.svg
       links:
         - url: /MicrosoftTeams/expand-teams-across-your-org/healthcare/teams-in-hc
           text: Healthcare
@@ -75,7 +75,7 @@ productDirectory:
           text: Retail
     # Card
     - title: Apps for frontline workers
-      imageSrc: https://office/media/icons/blocks-blue.svg
+      imageSrc: https://docs.microsoft.com/office/media/icons/blocks-blue.svg
       links:
         - url: /microsoftteams/bookings-app-admin
           text: Bookings
