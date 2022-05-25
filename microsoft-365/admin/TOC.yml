@@ -347,7 +347,11 @@
         - name: Enable Modern Authentication for Office 2013
           href: security-and-compliance/enable-modern-authentication.md
         - name: Threats detected by Microsoft Defender Antivirus
-          href: security-and-compliance/threats-detected-defender-av.md
+          href: /microsoft-365/business-premium/m365bp-review-threats-take-action
+        - name: Set up compliance features
+          href: /microsoft-365/business-premium/m365bp-set-up-compliance.md
+        - name: Secure score
+          href: /microsoft-365/security/defender/microsoft-secure-score
         - name: A guide to GDPR compliance
           href: security-and-compliance/gdpr-compliance.md
     - name: Manage devices and app data
