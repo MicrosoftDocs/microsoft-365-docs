@@ -22,6 +22,9 @@ description: Microsoft Defender for Office 365 data retention informationThreat 
 
 By default, data across different features is retained for a maximum of 30 days. However, for some of the features, you can specify the retention period based on policy. See the following table for the different retention periods for each feature.
 
+> [!NOTE]
+> Microsoft Defender for Office 365 comes in two different Plan types. You can tell if you have **Plan 1** if you have 'Real-time Detections', and **Plan 2**, if you have Threat Explorer. The Plan you have influences the tools you will see, so be certain that you're aware of your Plan as you learn.
+
 ## Defender for Office 365 Plan 1
 
 |Feature|Retention period|
@@ -36,6 +39,8 @@ By default, data across different features is retained for a maximum of 30 days.
 |Threat Explorer/ Real-Time detections | 30 days |
 
 ## Defender for Office 365 Plan 2
+
+Defender for Office 365 Plan 1 capabilities, plus:
 
 |Feature|Retention period|
 |---|---|
