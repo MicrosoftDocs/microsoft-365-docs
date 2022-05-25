@@ -40,19 +40,7 @@ You have several options to view specific information about threat detections an
 
 To learn more, see [Threats detected by Microsoft Defender Antivirus](/admin/security-and-compliance/threats-detected-defender-av.md).
 
-## Manage threat detections on the **Active devices** page
-
-The following procedure applies to customers who have Microsoft 365 Business Premium.
-
-1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> and sign in.
-
-2. In the navigation page, select **Devices** > **Active devices**. You'll see a list of active devices and details, such as protection status, antivirus (AV) protection state, and the number of active threats detected.
-
-3. Select a device to view more details about that device and available actions. A flyout opens with recommendations and available actions, such as **Update policy**, **Update antivirus**, **Run quick scan**, **Run full scan**, and more.
-
 ## Manage threat detections on the **Active threats** page
-
-The following procedure applies to customers who have Microsoft 365 Business Premium. [Windows 10 devices must be secured](../business-premium/m365bp-secure-windows-devices.md) and [enrolled in Intune](/mem/intune/enrollment/windows-enrollment-methods).
 
 > [!NOTE]
 > The **Microsoft Defender Antivirus** card and **Active threats** page are being rolled out in phases, so you may not have immediate access to them.
