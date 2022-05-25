@@ -105,7 +105,7 @@ Make new employee onboarding a great experience by fostering an all-in-one hybri
 More information: [Onboard new employees](/sharepoint/onboard-employees)
 
 > [!NOTE]
-> For all of these capabilities, users must have an appropriate license. Microsoft 365 for frontline workers F1 and F3 or Office 365 F3, Office 365 A3, A5, E3, and E5, as well as Microsoft 365 Business Standard, Business Premium, A3, A5, E3, and E5 are all supported. For more information about general Teams licensing, see [Manage user access to Teams](../user-access.md). See [Licensing options for frontline workers](../flw-licensing-options.md) for more about using Microsoft 365 for frontline workers in combination with other licenses.
+> For all of these capabilities, users must have an appropriate license. Microsoft 365 for frontline workers F1 and F3 or Office 365 F3, Office 365 A3, A5, E3, and E5, as well as Microsoft 365 Business Standard, Business Premium, A3, A5, E3, and E5 are all supported. For more information about general Teams licensing, see [Manage user access to Teams](/microsoftteams//user-access). See [Licensing options for frontline workers](flw-licensing-options.md) for more about using Microsoft 365 for frontline workers in combination with other licenses.
 
 ## Set up the fundamentals
 
@@ -115,15 +115,15 @@ Lay the right foundation for your workers by choosing appropriate licenses for t
 
 ### Licensing
 
-Retail staff is typically a mobile workforce: frontline workers and managers who aren't tied to computers all day, unlike corporate staff. So the tools and apps they need are different. Microsoft 365 for frontline workers provides a feature set tailored to this audience. See more at [Licensing options for frontline workers](../flw-licensing-options.md).
+Retail staff is typically a mobile workforce: frontline workers and managers who aren't tied to computers all day, unlike corporate staff. So the tools and apps they need are different. Microsoft 365 for frontline workers provides a feature set tailored to this audience. See more at [Licensing options for frontline workers](flw-licensing-options.md).
 
 ### Accounts
 
-With high turnover, the ability to add and remove accounts quickly, and get the right policies assigned is key. Get started with the Frontline Worker Onboarding wizard in the Microsoft 365 admin center. The wizard sets up a team for your frontline workers and assigns licenses and policy packages to each team member. For more information, see [Use the Frontline Worker onboarding wizard to get your frontline workforce up and running](../flw-onboarding-wizard.md).
+With high turnover, the ability to add and remove accounts quickly, and get the right policies assigned is key. Get started with the Frontline Worker Onboarding wizard in the Microsoft 365 admin center. The wizard sets up a team for your frontline workers and assigns licenses and policy packages to each team member. For more information, see [Use the Frontline Worker onboarding wizard to get your frontline workforce up and running](flw-onboarding-wizard.md).
 
-If you have a lot of users to add (more than 100), you can quickly provision users and teams and assign all relevant policies with a [scripted deployment for frontline workers](../flw-scripted-deployment.md).
+If you have a lot of users to add (more than 100), you can quickly provision users and teams and assign all relevant policies with a [scripted deployment for frontline workers](flw-scripted-deployment.md).
 
-The presence of Frontline Workers is often less predictable than other staff as their working hours are typically not the same each day. As an admin, you can configure Teams with Shift-based access (Preview) to show a set of shift-based presence states for the Frontline Workers in your organization to indicate when they are on and off shift. You can also manage access to Teams when frontline workers are off shift. For more information, see [Manage shift-based access for Frontline Workers](shifts/manage-shift-based-access-flw.md).
+The presence of Frontline Workers is often less predictable than other staff as their working hours are typically not the same each day. As an admin, you can configure Teams with Shift-based access (Preview) to show a set of shift-based presence states for the Frontline Workers in your organization to indicate when they are on and off shift. You can also manage access to Teams when frontline workers are off shift. For more information, see [Manage shift-based access for Frontline Workers](manage-shift-based-access-flw.md).
 
 ### Devices
 
@@ -131,11 +131,11 @@ Because the workforce is largely mobile, managing accounts and devices is a key 
 
 - [Plan your Azure Active Directory device deployment](/azure/active-directory/devices/plan-device-deployment)
 - [Microsoft Intune overview](/mem/intune/fundamentals/what-is-intune#manage-devices)
-- [Microsoft Teams for RealWear](../flw-realwear.md)
+- [Microsoft Teams for RealWear](flw-realwear.md)
 
 ### Policies
 
-Ensure that your sales associates and other frontline workers have the appropriate access to Teams functionality by configuring the appropriate policy packages. Teams policies help control what users in specific roles can do. The [Frontline worker and Frontline manager policy packages](../manage-policy-packages.md#policy-packages-included-in-teams) are tailored to be appropriate for frontline workforces like those in retail stores.
+Ensure that your sales associates and other frontline workers have the appropriate access to Teams functionality by configuring the appropriate policy packages. Teams policies help control what users in specific roles can do. The [Frontline worker and Frontline manager policy packages](/microsoftteams/manage-policy-packages#policy-packages-included-in-teams) are tailored to be appropriate for frontline workforces like those in retail stores.
 
 Teams integrates with the Shifts app and Frontline Worker, which can be used to coordinate shift staffing features and more. For example, in Shifts, store managers can set up and coordinate schedules for their staff, and employees can check schedules and swap shifts.
 
@@ -145,25 +145,25 @@ Teams integrates with the Shifts app and Frontline Worker, which can be used to 
 
 ### Apps and services for retail
 
-Ensure that your workers can communicate, collaborate, and deliver great customer service with apps like Shifts, Walkie Talkie, Tasks, Lists, Praise, and so on. You can determine which apps are available for your users by enabling them in the Teams admin center or by including them in a team template. More information about [managing Teams apps](../manage-apps.md).
+Ensure that your workers can communicate, collaborate, and deliver great customer service with apps like Shifts, Walkie Talkie, Tasks, Lists, Praise, and so on. You can determine which apps are available for your users by enabling them in the Teams admin center or by including them in a team template. More information about [managing Teams apps](/microsoftteams/manage-apps).
 
 For retail environments, the following apps and services can help you transform your business processes and support communication:
 
 | Teams apps and services | Description | Manage | Help |
 | ----- | ----- | ----- | ----- |
-| Approvals | Approvals can be integrated into chat for easy sign-off. | [Manage Approvals](../approval-admin.md) | [Use Approvals](https://support.microsoft.com/office/what-is-approvals-a9a01c95-e0bf-4d20-9ada-f7be3fc283d3) |
-| Chat | Enable quick conversations and checkins between staff with secure, enterprise-grade communications tools, instead of consumer grade apps or SMS. | [Chat, teams, channels & apps in Microsoft Teams](../deploy-chat-teams-channels-microsoft-teams-landing-page.md) | [Chat in Teams](https://support.microsoft.com/office/start-and-pin-chats-a864b052-5e4b-4ccf-b046-2e26f40e21b5?wt.mc_id=otc_microsoft_teams) |
-| Documents | Share standard operating procedures, store policies, plans, and more. | [How SharePoint and OneDrive interact with Microsoft Teams](../sharepoint-onedrive-interact.md) | [Share files](https://support.microsoft.com/office/upload-and-share-files-57b669db-678e-424e-b0a0-15d19215cb12) |
-| Praise | Recognize coworkers for great teamwork with the Praise app. | [Manage the Praise app](../manage-praise-app.md) | [Send Praise to people](https://support.microsoft.com/office/send-praise-to-people-50f26b47-565f-40fe-8642-5ca2a5ed261e) |
-| RealWear devices | Handsfree communication with devices. | [Microsoft Teams for RealWear](../flw-realwear.md) | [Use Microsoft Teams for RealWear](https://support.microsoft.com/office/using-microsoft-teams-for-realwear-af20d232-d18c-476f-8031-843a4edccd5f) |
+| Approvals | Approvals can be integrated into chat for easy sign-off. | [Manage Approvals](/microsoftteams/approval-admin) | [Use Approvals](https://support.microsoft.com/office/what-is-approvals-a9a01c95-e0bf-4d20-9ada-f7be3fc283d3) |
+| Chat | Enable quick conversations and checkins between staff with secure, enterprise-grade communications tools, instead of consumer grade apps or SMS. | [Chat, teams, channels & apps in Microsoft Teams](/microsoftteams/deploy-chat-teams-channels-microsoft-teams-landing-page) | [Chat in Teams](https://support.microsoft.com/office/start-and-pin-chats-a864b052-5e4b-4ccf-b046-2e26f40e21b5?wt.mc_id=otc_microsoft_teams) |
+| Documents | Share standard operating procedures, store policies, plans, and more. | [How SharePoint and OneDrive interact with Microsoft Teams](/microsoftteams/sharepoint-onedrive-interact) | [Share files](https://support.microsoft.com/office/upload-and-share-files-57b669db-678e-424e-b0a0-15d19215cb12) |
+| Praise | Recognize coworkers for great teamwork with the Praise app. | [Manage the Praise app](/microsoftteams/manage-praise-app.md) | [Send Praise to people](https://support.microsoft.com/office/send-praise-to-people-50f26b47-565f-40fe-8642-5ca2a5ed261e) |
+| RealWear devices | Handsfree communication with devices. | [Microsoft Teams for RealWear](flw-realwear.md) | [Use Microsoft Teams for RealWear](https://support.microsoft.com/office/using-microsoft-teams-for-realwear-af20d232-d18c-476f-8031-843a4edccd5f) |
 | Shifts | Manage schedules and clock in and out with Shifts. | [Manage Shifts](shifts-for-teams-landing-page.md) | [Use Shifts](https://support.microsoft.com/office/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821) |
-| Tasks | Help employees know what they should focus on when not with customers by assigning tasks. Operations can use [task publishing](../manage-tasks-app.md#task-publishing) to send out tasks to locations and track progress across those locations. | [Manage the Tasks app](../manage-tasks-app.md) | [Use Tasks](https://support.microsoft.com/office/use-the-tasks-app-in-teams-e32639f3-2e07-4b62-9a8c-fd706c12c070) |
-| Walkie Talkie | Push to talk quick communication that's not constrained by geography like standard 2-way radios.| [Manage the Walkie Talkie app](../walkie-talkie.md) | [Use Walkie Talkie](https://support.microsoft.com/office/get-started-with-teams-walkie-talkie-25bdc3d5-bbb2-41b7-89bf-650fae0c8e0c) |
+| Tasks | Help employees know what they should focus on when not with customers by assigning tasks. Operations can use [task publishing](/microsoftteams/manage-tasks-app#task-publishing) to send out tasks to locations and track progress across those locations. | [Manage the Tasks app](/microsoftteams/manage-tasks-app) | [Use Tasks](https://support.microsoft.com/office/use-the-tasks-app-in-teams-e32639f3-2e07-4b62-9a8c-fd706c12c070) |
+| Walkie Talkie | Push to talk quick communication that's not constrained by geography like standard 2-way radios.| [Manage the Walkie Talkie app](walkie-talkie.md) | [Use Walkie Talkie](https://support.microsoft.com/office/get-started-with-teams-walkie-talkie-25bdc3d5-bbb2-41b7-89bf-650fae0c8e0c) |
 
 | More apps and services from Microsoft | Description | Manage | Help |
 | ----- | ----- | ----- | ----- |
 | Bookings | Enable virtual fittings and consultations. | [Virtual appointments with Microsoft Teams and the Bookings app](bookings-virtual-visits.md) | [Use Bookings](https://support.microsoft.com/en-us/office/what-is-bookings-42d4e852-8e99-4d8f-9b70-d7fc93973cb5) |
-| Power Apps and the Power Platform | Integrate business processes and enable quick updates to data, such as store inventory, sales numbers, incident reports, and more. | [Teams integration with Microsoft Power Platform](/microsoftteams/platform/samples/teams-low-code-solutions) and [Manage Microsoft Power Platform apps in the Microsoft Teams admin center](../manage-power-platform-apps.md) | -  |
+| Power Apps and the Power Platform | Integrate business processes and enable quick updates to data, such as store inventory, sales numbers, incident reports, and more. | [Teams integration with Microsoft Power Platform](/microsoftteams/platform/samples/teams-low-code-solutions) and [Manage Microsoft Power Platform apps in the Microsoft Teams admin center](/microsoftteams/manage-power-platform-apps) | -  |
 | SharePoint | When you create a new team, a new SharePoint site is created and connected to the team. Many of the scenarios above rely on SharePoint features already embedded in Teams, such as sharing documents for team collaboration. | [Teams and SharePoint integration](/sharepoint/teams-connected-sites) | [Add a SharePoint page, list, or document library as a tab in Teams](https://support.microsoft.com/office/add-a-sharepoint-page-list-or-document-library-as-a-tab-in-teams-131edef1-455f-4c67-a8ce-efa2ebf25f0b)|
 | Viva Connections | Viva Connections creates a hub in Teams where your retail associates can view a tailored news feed from your organization and a personalized dashboard with resources they need. | [Overview of Viva Connections](/sharepoint/viva-connections-overview) | [Viva Connections in Microsoft Teams](https://support.microsoft.com/office/your-intranet-is-now-in-microsoft-teams-8b4e7f76-f305-49a9-b6d2-09378476f95b) |
 | Viva Learning | Provide training when needed, right in the flow of their work. | [Manage Viva Learning](/microsoft-365/learning/) | [Use Viva Learning (Preview)](https://support.microsoft.com/office/viva-learning-preview-01bfed12-c327-41e0-a68f-7fa527dcc98a) |
@@ -176,7 +176,7 @@ Create teams that include a predefined set of settings, channels, tabs, and pre-
 - The Retail **Organize a store** template includes channels for General, Shift Handoff, Store Readiness, and Learning, and includes the Approvals, Tasks, and Wiki apps.
 - The **Retail for managers** template includes channels for General, Operations, and Learning, and includes a Wiki tab.
 
-You can also [create a custom template](../create-a-team-template.md) to include the apps your store needs. More information: [Get started with Retail team templates](../get-started-with-retail-teams-templates.md)
+You can also [create a custom template](/microsoftteams/create-a-team-template) to include the apps your store needs. More information: [Get started with Retail team templates](get-started-with-retail-teams-templates.md)
 
 Aside from team templates, you can also set up other sites and services to help with communication: SharePoint sites and Viva Connections.
 
@@ -193,4 +193,4 @@ Now that you know what scenarios you want to implement and what you need to supp
 |<img src="/office/media/icons/user-monitor.png" alt="User monitor symbol.">| Operations staff | Work with Administrators to define scenarios, and determine which settings, policies, templates, and apps are needed for Teams. <br><br>Create regional or divisional teams from templates. <br><br>Set up tasks, lists, and approval flows for coordination between stores within a region, or between stores and headquarters. <br><br>Set up learning framework for staff. | Central operations |
 |<img src="/office/media/icons/presenter-teams.png" alt="Presenter symbol."> | Store manager | Work with Administrators and Operations staff to define scenarios. <br><br>Create teams for the store from templates. <br><br>Set up channels and apps for the teams, as needed. For example: a channel for shift handovers. <br><br>Set up store schedules in Shifts. <br><br>Set up tasks, lists, and approval flows that are specific to the store. <br><br>Set up learning tasks for staff. | Store management |
 
-For more about successfully implementing and adopting Teams, see [Adopt Microsoft Teams](../adopt-microsoft-teams-landing-page.md).
+For more about successfully implementing and adopting Teams, see [Adopt Microsoft Teams](/microsoftteams/adopt-microsoft-teams-landing-page).

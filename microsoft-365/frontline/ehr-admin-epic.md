@@ -262,7 +262,7 @@ Key features of the patient experience:
 
 ## Get insight into virtual appointments usage
 
-The [Virtual Visits usage report](../../teams-analytics-and-reports/virtual-visits-usage-report.md) in the Microsoft Teams admin center gives admins an overview of Teams virtual appointments activity in your organization. The report shows detailed analytics for virtual appointments including Teams EHR-integrated meetings conducted from your EHR system.
+The [Virtual Visits usage report](virtual-visits-usage-report.md) in the Microsoft Teams admin center gives admins an overview of Teams virtual appointments activity in your organization. The report shows detailed analytics for virtual appointments including Teams EHR-integrated meetings conducted from your EHR system.
 
 You can view key metrics such as lobby wait time and appointment duration. Use this information to gain insight into usage trends to help you optimize virtual appointments to deliver better business outcomes.
 
@@ -276,6 +276,6 @@ The EHR user’s unique ID is stored in one of the three geographic regions desc
 
 ## Related articles
 
-- [Teams Virtual Visits usage report](../../teams-analytics-and-reports/virtual-visits-usage-report.md)
+- [Teams Virtual Visits usage report](virtual-visits-usage-report.md)
 - [Teams EHR connector admin reports](ehr-admin-reports.md)
 - [Get started with Teams for healthcare organizations](teams-in-hc.md)

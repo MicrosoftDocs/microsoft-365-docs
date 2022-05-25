@@ -412,5 +412,5 @@ For help with Shifts connector cmdlets, including the cmdlets used in the script
 - [Shifts connectors](shifts-connectors.md)
 - [Use PowerShell to manage your Shifts connection to Blue Yonder Workforce Management](shifts-connector-powershell-manage.md)
 - [Manage the Shifts app](manage-the-shifts-app-for-your-organization-in-teams.md)
-- [Teams PowerShell overview](../../teams-powershell-overview.md)
+- [Teams PowerShell overview](/microsoftteams/teams-powershell-overview)
 - [Teams PowerShell cmdlet reference](/powershell/teams/intro)

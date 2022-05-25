@@ -64,7 +64,7 @@ By default, a deleted Microsoft 365 group is retained for 30 days. This 30-day p
 
 Currently, Shifts doesn't support custom retention policies.
 
-To learn more about retention policies in Teams, see [Learn about retention for Teams](/microsoft-365/compliance/retention-policies-teams) and [Manage retention policies for Teams](../../retention-policies.md).
+To learn more about retention policies in Teams, see [Learn about retention for Teams](/microsoft-365/compliance/retention-policies-teams) and [Manage retention policies for Teams](/microsoftteams/retention-policies).
 
 ## Can I retrieve Shifts data for a user whose license was revoked?
 

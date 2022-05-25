@@ -64,7 +64,7 @@ Shifts is enabled by default for all Teams users in your organization. You can t
 
 ### Enable or disable Shifts for specific users in your organization
 
-To allow or block specific users in your organization from using Shifts, make sure Shifts is turned on for your organization on the [Manage apps](/microsoftteams/manage-apps) page. Then create a custom app permission policy and assign it to those users. To learn more, see [Manage app permission policies in Teams](../../teams-app-permission-policies.md).
+To allow or block specific users in your organization from using Shifts, make sure Shifts is turned on for your organization on the [Manage apps](/microsoftteams/manage-apps) page. Then create a custom app permission policy and assign it to those users. To learn more, see [Manage app permission policies in Teams](/microsoftteams/teams-app-permission-policies).
 
 ### Pin Shifts to Teams
 
@@ -74,15 +74,15 @@ The tailored frontline app experience in Teams pins the most relevant apps in Te
 
 The apps are pinned to the app bar—the bar on the side of the Teams desktop client and at the bottom of the Teams mobile clients—where users can quickly and easily access them.
 
-To learn more, including how the experience works with app policies that you set, see [Tailor Teams apps for your frontline workers](../../pin-teams-apps-based-on-license.md).  
+To learn more, including how the experience works with app policies that you set, see [Tailor Teams apps for your frontline workers](pin-teams-apps-based-on-license.md).  
 
 #### Use an app setup policy to pin Shifts to Teams
 
 App setup policies let you customize Teams to pin the apps that are most important for your users.
 
-You can create a [custom app setup policy](../../teams-app-setup-policies.md) by adding the Shifts app, and then [assign the policy](/microsoftteams/assign-policies-users-and-groups) to your users. Or, you can use the app setup policy that's part of the Frontline Worker and Frontline Manager policy packages.
+You can create a [custom app setup policy](/microsoftteams/teams-app-setup-policies) by adding the Shifts app, and then [assign the policy](/microsoftteams/assign-policies-users-and-groups) to your users. Or, you can use the app setup policy that's part of the Frontline Worker and Frontline Manager policy packages.
 
-A [policy package](../../manage-policy-packages.md) in Teams is a collection of predefined policies and policy settings that you can assign to users who have similar roles in your organization. The set of policies in the Frontline Worker and Frontline Manager policy packages include an app setup policy that pins the Shifts app and other apps that support communication and collaboration activities for that role.
+A [policy package](/microsoftteams/manage-policy-packages) in Teams is a collection of predefined policies and policy settings that you can assign to users who have similar roles in your organization. The set of policies in the Frontline Worker and Frontline Manager policy packages include an app setup policy that pins the Shifts app and other apps that support communication and collaboration activities for that role.
 
 We recommend using the Frontline Worker and Frontline Manager policy packages as they simplify, streamline, and help provide consistency when managing policies for your frontline workforce.
 
@@ -96,8 +96,8 @@ Before you can search the audit log, you have to first turn on auditing in the [
 
 ## Related articles
 
-- [Shifts for Teams](../shifts-for-teams-landing-page.md)
+- [Shifts for Teams](shifts-for-teams-landing-page.md)
 - [Shifts data FAQ](shifts-data-faq.md)
 - [Shifts connectors](shifts-connectors.md)
 - [Shifts Help for frontline workers](https://support.office.com/article/apps-and-services-cc1fba57-9900-4634-8306-2360a40c665b)
-- [Assign policies to your users in Teams](../../policy-assignment-overview.md)
+- [Assign policies to your users in Teams](/microsoftteams/policy-assignment-overview)

@@ -60,5 +60,5 @@ An admin can enable or disable the ability for users assigned this policy to sen
 
 ## Related topics
 
-- [Manage messaging policies in Teams](../../messaging-policies-in-teams.md)
+- [Manage messaging policies in Teams](/microsoftteams/messaging-policies-in-teams)
 - [Get started with Teams for Healthcare organizations](teams-in-hc.md)

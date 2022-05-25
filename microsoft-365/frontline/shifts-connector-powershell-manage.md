@@ -391,4 +391,4 @@ For help with Shifts connector cmdlets, search for **CsTeamsShiftsConnection** i
 - [Use the Shifts connector wizard to connect Shifts to Blue Yonder Workforce Management](shifts-connector-wizard.md)
 - [Use PowerShell to connect Shifts to Blue Yonder Workforce Management](shifts-connector-blue-yonder-powershell-setup.md)
 - [Manage the Shifts app](manage-the-shifts-app-for-your-organization-in-teams.md)
-- [Teams PowerShell overview](../../teams-powershell-overview.md)
+- [Teams PowerShell overview](/microsoftteams/teams-powershell-overview)
