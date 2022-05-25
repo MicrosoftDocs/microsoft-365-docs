@@ -1,6 +1,6 @@
 ---
-title: 'Test your Binary Files on Test Base'
-description: How to test your Binaries Files on Test Base
+title: 'Creating and Testing Binary Files on Test Base'
+description: How to create and test binaries files on Test Base
 search.appverid: MET150
 author: Tinacyt
 ms.author: tinachen
@@ -16,18 +16,19 @@ ms.reviewer: Tinacyt
 f1.keywords: NOCSH
 ---
 
-# Test your Binary Files on Test Base
+# Creating and Testing Binary Files on Test Base
 
-> [!NOTE]
-> This guide will guide you to create a new Test Base package from scratch. If you already have a Test Base package (.zip) in hand, you can switch to use our legacy upload experience [Upload your Test Base package (Zip)](uploadApplication.md).
+This section provides all the steps necessary to create a new package containing binary files, for uploading and testing on Test Base. If you already have a pre-built .zip file, you can see [Upload your Test Base Package (Zip)](uploadApplication.md), to upload your file..
 
-## Prerequisites
+**Important**
 
-A Test Base account. If you don't have one, [create a Test Base account](createAccount.md).
+If you do not have a Test Base account, you will need to create one before proceeding, as described in [create a Test Base account](createAccount.md).
 
 ## Create a new package
 
-In the [Azure portal](https://portal.azure.com/), go to the Test Base account in which you want to upload your package. In the left menu under **Package catalog**, select the **New package**. Then click the first card **‘Create new package'** to build your package within 5 steps!
+In the [Azure portal](https://portal.azure.com/), go to the **Test Base** account for which you will be creating and uploading your package and perform the steps that follow. 
+
+In the left-hand menu under **Package catalog**, select the **New package**. Then click the first card **‘Create new package online'** to build your package online within 5 steps!
 
 > [!div class="mx-imgBorder"]
 > ![Create a new Package wizard](Media/testapplication01.png)
