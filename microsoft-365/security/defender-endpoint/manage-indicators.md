@@ -82,7 +82,7 @@ The functionality of pre-existing IoCs will not change. However, the indicators 
 - The "alert only" response action was renamed to "audit" with the generate alert setting enabled.
 - The "alert and block" response was renamed to "block and remediate" with the optional generate alert setting.
 
-The IoC API schema and the threat ids in advance hunting have been updated to align with the renaming of the IoC response actions. The API scheme changes applies to all IoC Types.
+The IoC API schema and the threat ids in advance hunting have been updated to align with the renaming of the IoC response actions. The API scheme changes apply to all IoC Types.
 
 > [!Note]
 > There is a limit of 15,000 indicators per tenant. File and certificate indicators do not block [exclusions defined for Microsoft Defender Antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus). Indicators are not supported in Microsoft Defender Antivirus when it is in passive mode.
