@@ -181,6 +181,9 @@ The [summarize operator](/azure/data-explorer/kusto/query/summarizeoperator) agg
     | summarize hint.shufflekey = RecipientEmailAddress count() by Subject, RecipientEmailAddress
     ```
 
+Watch this short video to learn how you can optimize Kusto Query Language.  
+> [!VIDEO https://www.youtube.com/watch?v=ceYvRuPp5D8]
+
 ## Query scenarios
 
 ### Identify unique processes with process IDs
