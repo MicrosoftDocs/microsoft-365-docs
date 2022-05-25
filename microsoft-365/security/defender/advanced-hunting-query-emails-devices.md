@@ -77,8 +77,7 @@ SenderFromAddress, RecipientEmailAddress, AccountDisplayName, JobTitle,
 Department, City, Country
 ```
 
-Watch this short video to learn how you can use Kusto Query Language to join tables.  
-> [!VIDEO https://www.youtube.com/watch?v=8qZx7Pp5XgM]
+Watch this [short video](https://www.youtube.com/watch?v=8qZx7Pp5XgM) to learn how you can use Kusto Query Language to join tables.  
 
 ### Get device information
 

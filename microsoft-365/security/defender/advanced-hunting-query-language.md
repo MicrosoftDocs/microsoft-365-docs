@@ -79,6 +79,7 @@ The query itself will typically start with a table name followed by several elem
 ```kusto
 union DeviceProcessEvents, DeviceNetworkEvents
 ```
+
 ### Set the time range
 
 The first piped element is a time filter scoped to the previous seven days. Limiting the time range helps ensure that queries perform well, return manageable results, and don't time out.
@@ -127,8 +128,7 @@ Select **Run query** to see the results.
 >[!TIP]
 >You can view query results as charts and quickly adjust filters. For guidance, [read about working with query results](advanced-hunting-query-results.md)
 
-Watch this short video to learn how you can use Kusto Query Language to join tables.  
-> [!VIDEO https://www.youtube.com/watch?v=8qZx7Pp5XgM]
+Watch this [short video](https://www.youtube.com/watch?v=8qZx7Pp5XgM) to learn how you can use Kusto Query Language to join tables.
 
 ## Learn common query operators
 
