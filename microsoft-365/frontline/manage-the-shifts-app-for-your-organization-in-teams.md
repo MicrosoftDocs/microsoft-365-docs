@@ -57,14 +57,14 @@ To learn more about Shifts data, including storage, retention, retrieval, and en
 
 ### Enable or disable Shifts in your organization
 
-Shifts is enabled by default for all Teams users in your organization. You can turn off or turn on the app at the org level on the [Manage apps](../../manage-apps.md) page in the Microsoft Teams admin center.
+Shifts is enabled by default for all Teams users in your organization. You can turn off or turn on the app at the org level on the [Manage apps](/microsoftteams/manage-apps) page in the Microsoft Teams admin center.
 
 1. In the left navigation of the Microsoft Teams admin center, go to **Teams apps** > **Manage apps**.
 2. In the list of apps, search for the Shifts app, select it, and then switch the **Status** toggle to **Blocked** or **Allowed**.
 
 ### Enable or disable Shifts for specific users in your organization
 
-To allow or block specific users in your organization from using Shifts, make sure Shifts is turned on for your organization on the [Manage apps](../../manage-apps.md) page. Then create a custom app permission policy and assign it to those users. To learn more, see [Manage app permission policies in Teams](../../teams-app-permission-policies.md).
+To allow or block specific users in your organization from using Shifts, make sure Shifts is turned on for your organization on the [Manage apps](/microsoftteams/manage-apps) page. Then create a custom app permission policy and assign it to those users. To learn more, see [Manage app permission policies in Teams](../../teams-app-permission-policies.md).
 
 ### Pin Shifts to Teams
 
@@ -80,7 +80,7 @@ To learn more, including how the experience works with app policies that you set
 
 App setup policies let you customize Teams to pin the apps that are most important for your users.
 
-You can create a [custom app setup policy](../../teams-app-setup-policies.md) by adding the Shifts app, and then [assign the policy](../../assign-policies-users-and-groups.md) to your users. Or, you can use the app setup policy that's part of the Frontline Worker and Frontline Manager policy packages.
+You can create a [custom app setup policy](../../teams-app-setup-policies.md) by adding the Shifts app, and then [assign the policy](/microsoftteams/assign-policies-users-and-groups) to your users. Or, you can use the app setup policy that's part of the Frontline Worker and Frontline Manager policy packages.
 
 A [policy package](../../manage-policy-packages.md) in Teams is a collection of predefined policies and policy settings that you can assign to users who have similar roles in your organization. The set of policies in the Frontline Worker and Frontline Manager policy packages include an app setup policy that pins the Shifts app and other apps that support communication and collaboration activities for that role.
 
@@ -90,7 +90,7 @@ We recommend using the Frontline Worker and Frontline Manager policy packages as
 
 **(In preview)**
 
-You can search the audit log to view Shifts activity in your organization.  To learn more about how to search the audit log and to see a list of [Shifts activities](../../audit-log-events.md#shifts-in-teams-activities) that are logged in the audit log, see [Search the audit log for events in Teams](../../audit-log-events.md).
+You can search the audit log to view Shifts activity in your organization.  To learn more about how to search the audit log and to see a list of [Shifts activities](/microsoftteams/audit-log-events#shifts-in-teams-activities) that are logged in the audit log, see [Search the audit log for events in Teams](/microsoftteams/audit-log-events).
 
 Before you can search the audit log, you have to first turn on auditing in the [Security & Compliance Center](https://protection.office.com). To learn more, see [Turn audit log search on or off](https://support.office.com/article/Turn-Office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014). Keep in mind that audit data is only available from the point at which you turned on auditing.
 

@@ -65,4 +65,4 @@ Migration of notes from Skype for Business to Teams is not supported when a user
 
 ## Related topics
 
-[Coexistence with Skype for Business](../../coexistence-chat-calls-presence.md)
+[Coexistence with Skype for Business](/microsoftteams/coexistence-chat-calls-presence)

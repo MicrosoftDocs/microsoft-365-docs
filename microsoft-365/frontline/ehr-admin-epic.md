@@ -74,7 +74,7 @@ Review the [Epic-Microsoft Teams Telehealth Integration Guide](https://galaxy.ep
 - Epic version November 2018 or later.
 - Users have an appropriate Microsoft 365 or Office 365 license that includes Teams meetings.
 - Teams is adopted and used in your healthcare organization.
-- Your systems meet all [software and browser requirements](../../hardware-requirements-for-the-teams-app.md) for Teams.
+- Your systems meet all [software and browser requirements](/microsoftteams/hardware-requirements-for-the-teams-app) for Teams.
 
 > [!IMPORTANT]
 > Make sure you complete the pre-integration steps and all prerequisites are met before you move forward with the integration.
@@ -207,7 +207,7 @@ After completing the EHR connector steps and Epic configuration, your organizati
 
 ### Virtual appointments prerequisites
 
-- Your systems must meet all [software and browser requirements](../../hardware-requirements-for-the-teams-app.md) for Teams.
+- Your systems must meet all [software and browser requirements](/microsoftteams/hardware-requirements-for-the-teams-app) for Teams.
 
 - You completed the integration setup between the Epic organization and your Microsoft 365 organization.
 
@@ -272,7 +272,7 @@ Teams integration into EHR systems optimizes the amount of data that's used and 
 
 The Teams EHR connector doesn't store or transfer any identifiable personal data or any health records of patients or healthcare providers from the EHR system. The only data that is stored by the EHR connector is the EHR user’s unique ID, which is used during Teams meeting setup.
 
-The EHR user’s unique ID is stored in one of the three geographic regions described in [Where your Microsoft 365 customer data is stored](/microsoft-365/enterprise/o365-data-locations). All chat, recordings, and other data shared in Teams by meeting participants are stored according to existing storage policies. To learn more about the location of data in Teams, see [Location of data in Teams](../../location-of-data-in-teams.md).
+The EHR user’s unique ID is stored in one of the three geographic regions described in [Where your Microsoft 365 customer data is stored](/microsoft-365/enterprise/o365-data-locations). All chat, recordings, and other data shared in Teams by meeting participants are stored according to existing storage policies. To learn more about the location of data in Teams, see [Location of data in Teams](/microsoftteams/location-of-data-in-teams).
 
 ## Related articles
 

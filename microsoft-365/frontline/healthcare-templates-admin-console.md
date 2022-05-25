@@ -42,7 +42,7 @@ How you manage and work with team templates depends on whether you're an admin o
 
 As an admin, you can manage team templates in the Microsoft Teams admin center. Here, you can view details about each template. You can also [create and assign templates policies](../../templates-policies.md) to your staff to control which templates they see in Teams for [creating teams](https://support.microsoft.com/office/create-a-team-with-team-templates-702a2977-e662-4038-bef5-bdf8ee47b17b).
 
-To learn more about team templates in general, see [Get started with team templates in the Teams admin center](../../get-started-with-teams-templates-in-the-admin-console.md).
+To learn more about team templates in general, see [Get started with team templates in the Teams admin center](/microsoftteams/get-started-with-teams-templates-in-the-admin-console).
 
 We currently offer the following pre-built healthcare team templates. To view them, in the left navigation of the Teams admin center, go to **Teams** > **Team templates**.
 ### Patient care
@@ -67,7 +67,7 @@ This template is meant for communication and collaboration between multiple ward
 &sup1;App added to the channel as a tab
 ## Use team templates with Microsoft Graph
 
-Developers can use Microsoft Graph to create teams from pre-built team templates. To learn more about using team templates with Microsoft Graph, see [Get started with team templates using Microsoft Graph](../../get-started-with-teams-templates.md), [Microsoft Teams API overview](/graph/teams-concept-overview?view=graph-rest-1.0), and [teamsTemplate resource type](/graph/api/resources/teamstemplate?view=graph-rest-1.0).
+Developers can use Microsoft Graph to create teams from pre-built team templates. To learn more about using team templates with Microsoft Graph, see [Get started with team templates using Microsoft Graph](/microsoftteams/get-started-with-teams-templates), [Microsoft Teams API overview](/graph/teams-concept-overview?view=graph-rest-1.0), and [teamsTemplate resource type](/graph/api/resources/teamstemplate?view=graph-rest-1.0).
 
 Here are the pre-built healthcare team templates.
 ### Ward
@@ -206,6 +206,6 @@ To use these templates, change the 'template@odata.bind' property in the request
 ### Related articles
 
 - [Create a team from a template](https://support.microsoft.com/office/create-a-team-with-team-templates-702a2977-e662-4038-bef5-bdf8ee47b17b)
-- [Get started with team templates in the Teams admin center](../../get-started-with-teams-templates-in-the-admin-console.md)
-- [Get started with team templates using Microsoft Graph](../../get-started-with-teams-templates.md)
+- [Get started with team templates in the Teams admin center](/microsoftteams/get-started-with-teams-templates-in-the-admin-console)
+- [Get started with team templates using Microsoft Graph](/microsoftteams/get-started-with-teams-templates)
 - [Get started with Teams for Healthcare organizations](teams-in-hc.md)

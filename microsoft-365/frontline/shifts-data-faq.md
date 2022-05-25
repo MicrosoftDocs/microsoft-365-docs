@@ -87,7 +87,7 @@ We don't store immutable copies of Shifts data. For example, a manager can make 
 
 There are certain aspects of Shifts that can't be changed and certain aspects that can be changed. For example, shift details such as notes and colors can be edited similar to how they can be changed in the Shifts app. Shift requests can't be edited unless the request is withdrawn.
 
-To see which what fields have been changed, you can search the Microsoft 365 audit log for Shifts events. To learn more about the events that are logged for Shifts activities in the Microsoft 365 audit log, see [Shifts in Teams activities](../../audit-log-events.md#shifts-in-teams-activities).
+To see which what fields have been changed, you can search the Microsoft 365 audit log for Shifts events. To learn more about the events that are logged for Shifts activities in the Microsoft 365 audit log, see [Shifts in Teams activities](/microsoftteams/audit-log-events#shifts-in-teams-activities).
 
 ## My organization uses a workforce management system for scheduling. Can we integrate with and access Shifts data?
 
