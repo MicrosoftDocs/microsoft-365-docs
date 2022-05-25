@@ -719,6 +719,21 @@ We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Wind
 For more information, see [Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
+<summary>20220506.6</summary>
+
+&ensp;Package version: **20220506.6**<br/>
+&ensp;Platform version: **4.18.2203.5**<br/>
+&ensp;Engine version: **1.1.19200.5**<br/>
+&ensp;Signature version: **1.363.1436.0**<br/>
+
+### Fixes
+- None
+
+### Additional information
+- None
+
+<br/>
+</details><details>
 <summary>20220321.1</summary>
 
 &ensp;Package version: **20220321.1**<br/>
@@ -1015,7 +1030,7 @@ For more information, see [Microsoft Defender update for Windows operating syste
 | [Microsoft Defender for Endpoint update for EDR Sensor](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac) | You can update the EDR sensor (MsSense.exe) that is included in the new Microsoft Defender for Endpoint unified solution package released in 2021.   |
 
 > [!TIP]
-> If you’re looking for Antivirus related information for other platforms, see:
+> If you're looking for Antivirus related information for other platforms, see:
 > - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
 > - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
 > - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

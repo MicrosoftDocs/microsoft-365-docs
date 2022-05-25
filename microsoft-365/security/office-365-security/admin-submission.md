@@ -21,7 +21,7 @@ ms.prod: m365-security
 
 # Use the Submissions portal to submit suspected spam, phish, URLs, and files to Microsoft
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -40,6 +40,9 @@ When you submit an email message for analysis, you will get:
 > Payload reputation/detonation and grader analysis are not done in all tenants. Information is blocked from going outside the organization when data is not supposed to leave the tenant boundary for compliance purposes.
 
 For other ways to submit email messages, URLs, and attachments to Microsoft, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
+
+Watch this short video to learn how to use admin submissions in Microsoft Defender for Office 365 to submit messages to Microsoft for evaluation. 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBLPn]
 
 ## What do you need to know before you begin?
 
