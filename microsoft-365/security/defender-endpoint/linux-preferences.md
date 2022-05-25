@@ -486,7 +486,6 @@ The following configuration profile will:
 ```JSON
 {
    "antivirusEngine":{
-      "behaviorMonitoring":"enabled",
       "enforcementLevel":"real_time",
       "threatTypeSettings":[
          {
@@ -517,7 +516,6 @@ The following configuration profile contains entries for all settings described 
 ```JSON
 {
    "antivirusEngine":{
-      "behaviorMonitoring":"enabled",
       "enforcementLevel":"real_time",
       "scanAfterDefinitionUpdate":true,
       "scanArchives":true,
