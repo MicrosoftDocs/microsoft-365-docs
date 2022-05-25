@@ -34,7 +34,7 @@ ms.custom: api
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-[Advanced hunting](advanced-hunting-overview.md) is a threat-hunting tool that uses [specially constructed queries](advanced-hunting-query-language.md) to examine the past 30 days of event data in Microsoft 365 Defender. You can use advanced hunting queries to inspect unusual activity, detect possible threats, and even respond to attacks. The advanced hunting API allows you to programatically query event data.
+[Advanced hunting](advanced-hunting-overview.md) is a threat-hunting tool that uses [specially constructed queries](advanced-hunting-query-language.md) to examine the past 30 days of event data in Microsoft 365 Defender. You can use advanced hunting queries to inspect unusual activity, detect possible threats, and even respond to attacks. The advanced hunting API allows you to programmatically query event data.
 
 ## Quotas and resource allocation
 
@@ -48,11 +48,11 @@ The following conditions relate to all queries.
 6. A `429` HTTP response code indicates that you've reached a quota, either by number of requests sent, or by allotted running time. Read the response body to understand the limit you have reached. 
 
 > [!NOTE]
-> All quotas listed above (for example 15 calls per min) are per tenant size. These quotas are the minimum.
+> All quotas listed above (for example 15 calls per min) are tenant wide. These quotas are the minimum.
 
 ## Permissions
 
-One of the following permissions is required to call the advanced hunting API. To learn more, including how to choose permissions, see [Access the Microsoft 365 Defender Protection APIs](api-access.md)
+One of the following permissions is required to call the advanced hunting API. To learn more, including how to choose permissions, see [Access the Microsoft 365 Defender Protection APIs](api-access.md).
 
 Permission type | Permission | Permission display name
 -|-|-
