@@ -84,7 +84,7 @@ In the request body, supply a JSON object with the following parameters:
 
 Parameter | Type | Description
 -|-|-
-Query | Text | The query to run. **Note: required**
+Query | Text | The query to run. **(required)**
 
 ## Response
 
