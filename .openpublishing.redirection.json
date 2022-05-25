@@ -7462,6 +7462,11 @@
       "source_path": "microsoft-365/commerce/subscriptions/upgrade-Office-365-E4.md",
       "redirect_url": "/microsoft-365/commerce/subscriptions/upgrade-to-different-plan",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/setup/priority-accounts.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/configure-review-priority-account",
+      "redirect_document_id": false
     }
   ]
 }
