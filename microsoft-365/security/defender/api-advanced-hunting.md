@@ -52,7 +52,7 @@ The following conditions relate to all queries.
 
 ## Permissions
 
-One of the following permissions is required to call the Advanced Hunting API. To learn more, including how to choose permissions, see [Access the Microsoft 365 Defender Protection APIs](api-access.md)
+One of the following permissions is required to call the advanced hunting API. To learn more, including how to choose permissions, see [Access the Microsoft 365 Defender Protection APIs](api-access.md).
 
 Permission type | Permission | Permission display name
 -|-|-
