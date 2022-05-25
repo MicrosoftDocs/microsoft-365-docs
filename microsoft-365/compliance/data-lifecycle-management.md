@@ -19,9 +19,9 @@ description: Learn how Microsoft Purview Data Lifecycle Management helps you kee
 
 # Learn about data lifecycle management
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview Data Lifecycle Management (formerly Microsoft Information Governance) provides you with tools and capabilities to retain the content that you need to keep, and delete the content that you don't. Retaining and deleting content is often needed for compliance and regulatory requirement, but deleting content that no longer has business value also helps you manage risk and liability. For example, it reduces your attack surface.
 

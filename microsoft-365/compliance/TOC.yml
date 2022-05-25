@@ -214,6 +214,8 @@
      href: work-with-partner-to-archive-third-party-data.md
    - name: Search for third-party data
      href: use-content-search-to-search-third-party-data-that-was-imported.md
+   - name: View admin logs for data connectors
+     href: data-connector-admin-logs.md
 - name: Manage insider risks
   items:
     - name: Microsoft Purview insider risk solutions
@@ -360,7 +362,7 @@
             href: sit-modify-keyword-dictionary.md
           - name: Manage your exact data match schema
             href: sit-use-exact-data-manage-schema.md
-          - name: Refresh your sensitive information source table file
+          - name: Refresh your EDM sensitive information source table file
             href: sit-use-exact-data-refresh-data.md
           - name: Use named entities in your data loss prevention policies
             href: named-entities-use.md
@@ -453,11 +455,10 @@
               href: ome-sensitive-info-types.md
             - name: Manage message encryption
               href: manage-office-365-message-encryption.md
-
-            - name: Encrypted message portal activity log
-              href: ome-message-access-logs.md
             - name: Advanced message encryption
               href: ome-advanced-message-encryption.md
+            - name: Encrypted message portal activity log
+              href: ome-message-access-logs.md
             - name: Set an expiration date for email encrypted by Microsoft Purview Advanced Message Encryption
               href: ome-advanced-expiration.md
             - name: Revoke email encrypted by Microsoft Purview Advanced Message Encryption
@@ -578,6 +579,8 @@
   items: 
     - name: Govern your data
       href: manage-data-governance.md
+    - name: Deploy a data governance solution
+      href: data-governance-solution.md
     - name: Understand retaining and deleting data
       items: 
         - name: Learn about retention policies & retention labels
@@ -1006,8 +1009,6 @@
           href: detailed-properties-in-the-office-365-audit-log.md
         - name: Turn auditing on or off
           href: turn-audit-log-search-on-or-off.md
-        - name: Use Customer Key to encrypt audit records
-          href: auditing-cmk-encryption.md
         - name: Use the audit log to investigate common issues
           href: auditing-troubleshooting-scenarios.md
         - name: Use sharing auditing in the audit log

@@ -274,16 +274,17 @@ Insider risk management policies include assigned users and define which types o
 8. Select **Next** to continue.
 9. On the **Content to prioritize** page, you can assign (if needed) the sources to prioritize, which increases the chance of generating a high severity alert for these sources. Select one of the following choices:
 
-    - **I want to specify SharePoint sites, sensitivity labels, and/or sensitive information types as priority content**. Selecting this option will enable detail pages in the wizard to configure these channels.
+    - **I want to specify SharePoint sites, sensitivity labels, sensitive information types and/or file extensions as priority content**. Selecting this option will enable detail pages in the wizard to configure these channels.
     - **I don't want to specify priority content right now (you'll be able to do this after the policy is created)**. Selecting this option will skip the channel detail pages in the wizard.
 
 10. Select **Next** to continue.
 
-11. If you've selected **I want to specify SharePoint sites, sensitivity labels, and/or sensitive information types as priority content** in the previous step, you'll see the detail pages for *SharePoint sites*, *Sensitive info types*, and *Sensitivity labels*. Use these detail pages to define the SharePoint, sensitive info types, and sensitivity labels to prioritize in the policy.
+11. If you've selected **I want to specify SharePoint sites, sensitivity labels, sensitive information types and/or file extensions as priority content** in the previous step, you'll see the detail pages for *SharePoint sites*, *sensitive info types*, *sensitivity labels* and *file extensions*. Use these detail pages to define the SharePoint, sensitive info types, sensitivity labels, and file extensions to prioritize in the policy.
 
     - **SharePoint sites**: Select **Add SharePoint site** and select the SharePoint sites you have access to and want to prioritize. For example, *"group1@contoso.sharepoint.com/sites/group1"*.
     - **Sensitive info type**: Select **Add sensitive info type** and select the sensitivity types you want to prioritize. For example, *"U.S. Bank Account Number"* and *"Credit Card Number"*.
     - **Sensitivity labels**: Select **Add sensitivity label** and select the labels you want to prioritize. For example, *"Confidential"* and *"Secret"*.
+    - File extensions: Add up to 50 file extensions. You can include or omit the '.' with the file extension. For example, *.py* or *py* would prioritize Python files.
 
     > [!NOTE]
     > Users configuring the policy and selecting priority Share Point sites can select SharePoint sites that they have permission to access. If SharePoint sites aren't available for selection in the policy by the current user, another user with the required permissions can select the sites for the policy later or the current user should be given access to the required sites.
@@ -299,7 +300,7 @@ Insider risk management policies include assigned users and define which types o
 14. Select **Next** to continue.
 15. If you've selected the *General data leaks* or *Data leaks by priority users* templates and have selected the **User performs an exfiltration activity and associated indicators**, you can choose custom or default thresholds for the indicator triggering events that you've selected. Choose either the **Use default thresholds (Recommended)** or **Use custom thresholds for the triggering events**.
 16. Select **Next** to continue.
-17. If you've selected **Use custom thresholds for the triggering events**, for each triggering event indicator that you selected in Step 13, choose the appropriate level to generate the desired level of activity alerts.
+17. If you've selected **Use custom thresholds for the triggering events**, for each triggering event indicator that you selected in Step 13, choose the appropriate level to generate the desired level of activity alerts. You can use the recommended thresholds, custom thresholds, or thresholds based on anomalous activities (for certain indicators) above the daily norm for users.
 18. Select **Next** to continue.
 19. On the **Policy indicators** page, you'll see the [indicators](insider-risk-management-settings.md#indicators) that you've defined as available on the **Insider risk settings** > **Indicators** page. Select the indicators you want to apply to the policy.
 
