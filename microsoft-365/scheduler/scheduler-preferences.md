@@ -30,10 +30,10 @@ Scheduler uses several Outlook preferences to schedule a meeting for an organize
 
    3. In the Calendar options settings on the right pane, select the **Default duration for new appointments and meetings**.
 
-      [Outlook Calendar options dialog in Windows where you can configure work time, default duration, and shorten meetings options for Scheduler to use](../media/OutlookOptions.png).
+      :::image type="content" source="../media/OutlookOptions.png" alt-text="Outlook Calendar options dialog in Windows where you can configure work time, default duration, and shorten meetings options for Scheduler to use.":::
 
 - **Avoid back-to-back meetings**. An Outlook setting can start meetings late or end meetings early to avoid back-to-back meetings. Also, Scheduler can shorten the meeting duration according to the preference you set. See [Change default meeting length](https://techcommunity.microsoft.com/t5/hybrid-work/change-default-meeting-length-in-outlook-avoid-back-to-back/m-p/1247361) for information.
 
 > [!NOTE]
 > If you use the Windows client, you must enable the option to store your Outlook settings in the cloud to sync your preferences across Scheduler and other Outlook clients.
-> :::image type="content" source="../media/OutlookOptions2.png" alt-text="Outlook Calendar options dialog in Windows. Check to enable "Store my Outlook settings in the cloud." lightbox="../media/OutlookOptions2.png":::
+> :::image type="content" source="../media/OutlookOptions2.png" alt-text="Outlook Calendar options dialog in Windows. Check to enable Store my Outlook settings in the cloud.":::
