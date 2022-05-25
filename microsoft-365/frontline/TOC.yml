@@ -12,7 +12,7 @@
     - name: Extend your pilot to a full deployment
       href: 
     - name: Onboard your users with the onboarding wizard
-      href: /microsoftteams/flw-onboarding-wizard?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+      href: flw-onboarding-wizard.md
     - name: Scripted deployment
       href: flw-scripted-deployment.md
     - name: Manage devices
@@ -26,13 +26,13 @@
     - name: Configure Teams settings for frontline workers
       items: 
       - name: Tailor teams apps for your frontline workers
-        href: /microsoftteams/pin-teams-apps-based-on-license?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        href: pin-teams-apps-based-on-license.md
       - name: Policy packages for frontline workers and managers
         href: /microsoftteams/manage-policy-packages?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
       - name: Secure messaging
-        href: /microsoftteams/expand-teams-across-your-org/healthcare/messaging-policies-hc?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        href: messaging-policies-hc.md
       - name: Message delegation
-        href: /microsoftteams/expand-teams-across-your-org/healthcare/hc-delegates?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        href: hc-delegates.md
     - name: Switch from enterprise to frontline worker
       items:
       - name: Licensing options for frontline workers
@@ -50,17 +50,17 @@
     - name: Virtual appointments with Teams and Bookings
       href: bookings-virtual-visits.md
     - name: Virtual appointments with Teams and Cerner EHR 
-      href: /microsoftteams/expand-teams-across-your-org/healthcare/ehr-admin-cerner?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+      href: ehr-admin-cerner.md
     - name: Virtual appointments with Teams and Epic EHR 
-      href: /microsoftteams/expand-teams-across-your-org/healthcare/ehr-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+      href: ehr-admin-epic.md
     - name: EHR admin reports
-      href: /microsoftteams/expand-teams-across-your-org/healthcare/ehr-admin-reports?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+      href: ehr-admin-reports.md
     - name: Virtual Visits usage reports
-      href: /microsoftteams/teams-analytics-and-reports/virtual-visits-usage-report?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+      href: virtual-visits-usage-report.md
     - name: Manage the join experience on browsers
-      href: /microsoftteams/expand-teams-across-your-org/browser-join?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+      href: browser-join.md
     - name: Help your clients and customers use virtual appointments
-      href: /microsoftTeams/expand-teams-across-your-org/virtual-visits-toolkit?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+      href: virtual-appointments-toolkit.md
   - name: Wellbeing & engagement
     items: 
     - name: Engage your employees
@@ -70,19 +70,19 @@
   - name: Schedule management
     items: 
     - name: Get started with Shifts for Teams
-      href: /microsoftteams/expand-teams-across-your-org/shifts-for-teams-landing-page?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+      href: shifts-for-teams-landing-page.md
     - name: Manage schedule owners for shift management
-      href: /microsoftteams/expand-teams-across-your-org/shifts/schedule-owner-for-shift-management?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+      href: schedule-owner-for-shift-management.md
     - name: Shifts connectors
       items: 
       - name: Overview
-        href: /microsoftteams/expand-teams-across-your-org/shifts/shifts-connectors?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        href: shifts-connectors.md
       - name: Use the Shifts connector wizard to set up a connection to Blue Yonder WFM
-        href: /microsoftteams/expand-teams-across-your-org/shifts/shifts-connector-wizard?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        href: shifts-connector-wizard.md
       - name: Use PowerShell to set up a connection to Blue Yonder WFM
-        href: /microsoftteams/expand-teams-across-your-org/shifts/shifts-connector-blue-yonder-powershell-setup?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        href: shifts-connector-blue-yonder-powershell-setup.md
       - name: Use PowerShell to manage your Shifts to Blue Yonder WFM connection
-        href: /microsoftteams/expand-teams-across-your-org/shifts/shifts-connector-powershell-manage?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        href: shifts-connector-powershell-manage.md
   - name: Training & onboarding
     items: 
     - name: Onboarding new employees
@@ -102,23 +102,23 @@
     - name: Healthcare
       items:
       - name: Overview
-        href: /microsoftteams/expand-teams-across-your-org/healthcare/teams-in-hc?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        href: teams-in-hc.md
       - name: Healthcare team templates
-        href: /microsoftteams/expand-teams-across-your-org/healthcare/healthcare-templates-admin-console?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        href: healthcare-templates-admin-console.md
       - name: Teams policy packages for healthcare
-        href: /microsoftteams/policy-packages-healthcare?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        href: policy-packages-healthcare.md
     - name: Nonprofit
       items:
       - name: Overview
-        href: /microsoftteams/expand-teams-across-your-org/teams-for-nonprofit-landing-page?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        href: teams-for-nonprofit-landing-page.md
       - name: Use nonprofit team templates
-        href: /microsoftteams/team-templates-nonprofit?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        href: team-templates-nonprofit.md
     - name: Retail
       items:
       - name: Overview
-        href: /microsoftteams/expand-teams-across-your-org/teams-for-retail-landing-page?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        href: teams-for-retail-landing-page.md
       - name: Use retail team templates
-        href: /microsoftteams/get-started-with-retail-teams-templates?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        href: get-started-with-retail-teams-templates.md
     - name: Manufacturing
       items:
       - name: Overview
@@ -138,9 +138,9 @@
     - name: Microsoft Teams for RealWear
       href: flw-realwear.md
     - name: Manage the Shifts app
-      href: /microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+      href: manage-the-shifts-app-for-your-organization-in-teams.md
     - name: Shifts data FAQ
-      href: /microsoftteams/expand-teams-across-your-org/shifts/shifts-data-faq?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+      href: shifts-data-faq.md
     - name: Manage the Tasks app
       href: /microsoftteams/manage-tasks-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
     - name: Manage the Virtual Appointments app
