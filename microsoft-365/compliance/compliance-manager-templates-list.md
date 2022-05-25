@@ -392,6 +392,7 @@ The templates listed below may be purchased by your organization.
 - Nigeria Data Protection Regulation  
 - Oman - Electronic Transactions Law  
 - Qatar Cloud Security Policy
+- Qatar National Information Assurance (NIA)
 - Romania - Data Protection Law 190/2018  
 - Russia - Federal Law 149-FZ On Information, Information Technology and Information Security
 - [Russian Federation Federal Law Regarding Personal Data](/compliance/regulatory/offering-russia-data-localization)  
@@ -402,11 +403,12 @@ The templates listed below may be purchased by your organization.
 - Slovakia Act on the Protection of Personal Data  
 - Spain - Nation Security Framework  
 - Switzerland - Federal Act on Data Protection (FADP)  
-- Turkey - KVKK Protection of Personal Data 6698  
+- Turkey - KVKK Protection of Personal Data 6698
 - UAE - Federal Decree Law on Combating Cyber Crimes  
 - UAE - Federal Law Concerning Electronic Transactions and Commerce
 - UAE - Federal Law No 2 of 2019 On the Use of the Information and Communication Technology (ICT) in Health Fields  
-- UAE - NESA Information Assurance Standards  
+- UAE - NESA Information Assurance Standards
+- UAE Data Privacy Law
 - UAE Regulatory Policy TRA - Internet of Things  
 - UAE's Federal Decree Law Regulating the Telecommunications Sector  
 - Uganda - The Data Protection and Privacy Act  
