@@ -35,7 +35,6 @@ As an IT professional/admin, you can view information about threat detections ac
 
 You have several options to view specific information about threat detections and devices:
 
-- The **Active devices** page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. See [Manage threat detections on the Active devices page](#manage-threat-detections-on-the-active-devices-page) in this article.
 - The **Active threats** page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. See [Manage threat detections on the Active threats page](#manage-threat-detections-on-the-active-threats-page) in this article.
 - The **Antivirus** page in <a href="https://go.microsoft.com/fwlink/p/?linkid=2150463" target="_blank">Microsoft Endpoint Manager</a>. See [Manage threat detections in Microsoft Endpoint Manager](#manage-threat-detections-in-microsoft-endpoint-manager) in this article.
 
