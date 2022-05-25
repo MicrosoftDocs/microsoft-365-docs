@@ -50,7 +50,7 @@ And if you'd like to know what's new with other Microsoft cloud services:
 
 ### Role based access controls (RBAC)
 
-There are 4 new roles in the Microsoft 365 admin center centered around management of custom security attributes. These roles are available for everyone to use in the Microsoft 365 admin center under **Roles**.
+There are four new roles in the Microsoft 365 admin center for management of custom security attributes. These roles are available for everyone to use in the Microsoft 365 admin center under **Roles**.
 
 - **Attribute Assignment Administrator**   Assign custom security attribute keys and values to supported Azure AD objects.
 
