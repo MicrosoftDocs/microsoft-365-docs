@@ -79,8 +79,8 @@ If you experience any installation failures, refer to [Troubleshooting installat
 - Supported Linux server distributions and x64 (AMD64/EM64T) and x86_64 versions:
 
   - Red Hat Enterprise Linux 6.7 or higher (Preview)
-  - Red Hat Enterprise Linux 7.2 or higher (Preview)
-  - Red Hat Enterprise Linux 8.x (Preview)
+  - Red Hat Enterprise Linux 7.2 or higher 
+  - Red Hat Enterprise Linux 8.x 
   - CentOS 6.7 or higher 
   - CentOS 7.2 or higher
   - Ubuntu 16.04 LTS or higher LTS
@@ -95,9 +95,6 @@ If you experience any installation failures, refer to [Troubleshooting installat
     > Distributions and version that are not explicitly listed are unsupported (even if they are derived from the officially supported distributions).
 
 
-    >[!IMPORTANT]
-    >For items marked with Preview: <br>
-    >Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 
 - List of supported kernel versions
