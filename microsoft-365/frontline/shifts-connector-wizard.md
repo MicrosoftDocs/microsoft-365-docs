@@ -42,7 +42,7 @@ You must be a Microsoft 365 global admin to run the wizard.
 
 ### Prerequisites
 <a name="prerequisites"> </a>
-[!INCLUDE [shifts-connector-prerequisites](../../includes/shifts-connector-prerequisites.md)]
+[!INCLUDE [shifts-connector-prerequisites](includes/shifts-connector-prerequisites.md)]
 
 - The teams you want to map don't have any schedules. If a team has an existing schedule, [remove the schedule from the team](#remove-schedules-from-teams-you-want-to-map) before you map a Blue Yonder WFM site to it. Otherwise, you'll see duplicate shifts.
 

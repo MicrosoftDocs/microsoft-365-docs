@@ -40,15 +40,15 @@ With Blue Yonder WFM as the system of record, your frontline workers can see and
 
 ### Prerequisites
 
-[!INCLUDE [shifts-connector-prerequisites](../../includes/shifts-connector-prerequisites.md)]
+[!INCLUDE [shifts-connector-prerequisites](includes/shifts-connector-prerequisites.md)]
 
 ### Admin role to manage the connector using PowerShell
 
-[!INCLUDE [shifts-connector-admin-role](../../includes/shifts-connector-admin-role.md)]
+[!INCLUDE [shifts-connector-admin-role](includes/shifts-connector-admin-role.md)]
 
 ## Set up your environment
 
-[!INCLUDE [shifts-connector-set-up-environment](../../includes/shifts-connector-set-up-environment.md)]
+[!INCLUDE [shifts-connector-set-up-environment](includes/shifts-connector-set-up-environment.md)]
 
 ## Connect to Teams
 

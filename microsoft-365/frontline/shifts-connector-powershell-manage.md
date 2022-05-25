@@ -39,14 +39,14 @@ This article describes how to use PowerShell to do the following:
 
 ## Before you begin
 
-[!INCLUDE [shifts-connector-admin-role](../../includes/shifts-connector-admin-role.md)]
+[!INCLUDE [shifts-connector-admin-role](includes/shifts-connector-admin-role.md)]
 
 ## Set up your environment
 
 > [!NOTE]
 > Make sure you follow these steps to set up your environment before running any of the commands or scripts in this article.
 
-[!INCLUDE [shifts-connector-set-up-environment](../../includes/shifts-connector-set-up-environment.md)]
+[!INCLUDE [shifts-connector-set-up-environment](includes/shifts-connector-set-up-environment.md)]
 
 7. Connect to Teams.
 
