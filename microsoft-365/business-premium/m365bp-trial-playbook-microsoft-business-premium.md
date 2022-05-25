@@ -22,7 +22,10 @@ Welcome to the Microsoft Business Premium trial playbook. This playbook will hel
 
 ## Set up the Microsoft 365 Business Premium trial
 
-When you [start a trial or purchase Microsoft 365 Business Premium](get-microsoft-365-business-premium.md), your first step is to get everything set up. When links in the playbook take you away from this location, simply return to this playbook to continue.
+When you [start a trial or purchase Microsoft 365 Business Premium](get-microsoft-365-business-premium.md), your first step is to get everything set up. 
+
+>[!Tip]
+When links in the playbook take you away from this location, simply return to this playbook to continue.
 
 First, [set up your trial](../business-premium/m365bp-setup.md)!
 
@@ -39,7 +42,7 @@ We have automatically configured [Preset security policies](/security/office-365
 When you purchase Microsoft 365 Business Premium trial, you have the option of using a domain you own, or buying one during the sign-up.
 
 > [!Note]
-> If you purchased a new domain when you signed up, your domain is all set up and you can move to Add users and assign licenses. Go to the [admin center](admin.microsoft.com).
+> If you purchased a new domain when you signed up, your domain is all set up and you can move to Add users and assign licenses. Go to the admin center(admin.microsoft.com).
 
 1. From the admin center menu, choose **Setup** to start the wizard.
 
@@ -66,7 +69,7 @@ When you purchase Microsoft 365 Business Premium trial, you have the option of u
 
 ### Use Office apps on devices
 
-1. First, you'll need to [install Office](m365bp-install-office-apps).
+1. First, you'll need to [install Office](m365bp-install-office-apps.md).
 
 1. Go to office.com and [sign in](https://support.microsoft.com/en-us/office/get-started-at-office-com-91a4ec74-67fe-4a84-a268-f6bdf3da1804).
 
