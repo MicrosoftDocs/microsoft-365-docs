@@ -347,5 +347,5 @@ To learn more, see the following resources:
 ## Related content
 
 [Multi-factor authentication for Microsoft 365](multi-factor-authentication-microsoft-365.md) (article)\
-[Manage and monitor priority accounts](../setup/priority-accounts.md) (article)\
+[Manage and monitor priority accounts](/microsoft-365/security/office-365-security/configure-review-priority-account) (article)\
 [Microsoft 365 Reports in the admin center](../activity-reports/activity-reports.md) (video)
