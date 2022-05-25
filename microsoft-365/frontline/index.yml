@@ -57,7 +57,7 @@ productDirectory:
           text: Communication
         - url: bookings-virtual-visits.md
           text: Virtual appointments
-        - url: /microsoftteams/expand-teams-across-your-org/shifts-for-teams-landing-page
+        - url: shifts-for-teams-landing-page.md
           text: Schedule management
         - url: /sharepoint/onboard-employees
           text: Training and onboarding
@@ -67,21 +67,21 @@ productDirectory:
     - title: Solutions for your industry
       imageSrc: https://docs.microsoft.com/office/media/icons/walkthrough-map-blue.svg
       links:
-        - url: /MicrosoftTeams/expand-teams-across-your-org/healthcare/teams-in-hc
+        - url: teams-in-hc.md
           text: Healthcare
-        - url: /microsoftteams/expand-teams-across-your-org/teams-for-nonprofit-landing-page
+        - url: teams-for-nonprofit-landing-page.md
           text: Nonprofit
-        - url: /microsoftteams/expand-teams-across-your-org/teams-for-retail-landing-page
+        - url: teams-for-retail-landing-page.md
           text: Retail
     # Card
     - title: Apps for frontline workers
       imageSrc: https://docs.microsoft.com/office/media/icons/blocks-blue.svg
       links:
-        - url: /microsoftteams/bookings-app-admin
+        - url: /microsoftteams/bookings-app-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
           text: Bookings
-        - url: /microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams
+        - url: manage-the-shifts-app-for-your-organization-in-teams.md
           text: Shifts
-        - url: /microsoftteams/manage-tasks-app
+        - url: /microsoftteams/manage-tasks-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
           text: Tasks
         - url: ./file2a.md OR /file2a
           text: More >
