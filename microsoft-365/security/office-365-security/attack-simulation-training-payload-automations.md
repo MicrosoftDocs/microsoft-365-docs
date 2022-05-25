@@ -25,18 +25,18 @@ In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Offi
 
 To create a payload automation, do the following steps:
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com/>, go to **Email & collaboration** \> **Attack simulation training** \> **Payload automations** tab.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com/>, go to **Email & collaboration** \> **Attack simulation training** \> **Automations** tab \> **Payload automations**.
 
-   To go directly to the **Payload automations** tab, use <https://security.microsoft.com/attacksimulator?viewid=payloadautomation>.
+   To go directly to the **Automations** tab, use <https://security.microsoft.com/attacksimulator?viewid=automations>.
 
-2. On the **Payload automations** tab, select ![Create automation icon.](../../media/m365-cc-sc-create-icon.png) **Create automation**.
+2. In **Payload automations**, select ![Create automation icon.](../../media/m365-cc-sc-create-icon.png) **Create automation**.
 
    :::image type="content" source="../../media/attack-sim-training-sim-automations-create.png" alt-text="The Create simulation button on the Payload automations tab in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-sim-automations-create.png":::
 
 3. The creation wizard opens. The rest of this article describes the pages and the settings they contain.
 
 > [!NOTE]
-> At any point during the creation wizard, you can click **Save and close** to save your progress and continue configuring the payload automation later. You can pick up where you left off by selecting the payload automation on the **Payload automations** tab, and then clicking ![Edit automation icon.](../../media/m365-cc-sc-edit-icon.png) **Edit automation**.
+> At any point during the creation wizard, you can click **Save and close** to save your progress and continue configuring the payload automation later. You can pick up where you left off by selecting the payload automation in **Payload automations**, and then clicking ![Edit automation icon.](../../media/m365-cc-sc-edit-icon.png) **Edit automation**.
 
 ## Automation name
 
