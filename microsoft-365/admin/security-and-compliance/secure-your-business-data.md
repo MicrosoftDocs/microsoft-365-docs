@@ -49,7 +49,7 @@ To learn about one of the service plan features, click on the heading in the fol
 
 |Task|Microsoft 365 Business Standard|Microsoft 365 Business Premium|
 |---|---|---|
-[Protect against lost or stolen passwords](#set-up-multifactor-authentication) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
+[Protect against lost or stolen passwords](#set-up-multi-factor-authentication) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
 [Train your users](#train-your-users) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
 [Use dedicated admin accounts](#use-dedicated-admin-accounts)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | 
 [Protect against malware](#protect-against-malware) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(protection for email) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(increased protection for email and devices) |
@@ -67,13 +67,13 @@ It's important that before you begin, you check your [Microsoft 365 Secure Score
 
 ![Screenshot of Microsoft Secure Score.](../../media/secure-score.png)
 
-## Set up multifactor authentication
+## Set up multi-factor authentication
 
 Protect against lost or stolen passwords by using multi-factor authentication (MFA). When multi-factor authentication is set up, it requires people to use a code on their phone to sign into Microsoft 365. This extra step can prevent hackers from taking over if they know your password. 
 
 Multi-factor authentication is also called 2-step verification. Individuals can add 2-step verification to most accounts easily, for example, to their Google or Microsoft accounts. Here's how to [add two-step verification to your personal Microsoft account](https://go.microsoft.com/fwlink/p/?linkid=2016403).
 
-For businesses using Microsoft 365, add a setting that requires your users to log in using multifactor authentication. When you make this change, users will be prompted to set up their phone for two-factor authentication next time they log in.
+For businesses using Microsoft 365, add a setting that requires your users to log in using multi-factor authentication. When you make this change, users will be prompted to set up their phone for two-factor authentication next time they log in.
 To see a training video for how to set up MFA and how users complete the setup, see [set up MFA](set-up-multi-factor-authentication.md) and [user set up](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14).
 
 ### Turn on security defaults
@@ -248,12 +248,12 @@ We recommend you get started with this protection by creating a policy for your 
 
 4. Specify the name, description, and settings for your policy as recommended in the chart below. For more information, see [Learn about anti-phishing policy in Microsoft Defender for Office 365 options](../../security/office-365-security/set-up-anti-phishing-policies.md).
 
-5. After you have reviewed your settings, select **Create this policy** or **Save**, as appropriate.
+5. After you've reviewed your settings, select **Create this policy** or **Save**, as appropriate.
 
 |Setting or option|Recommended setting|
 |---|---|
 |Name|Domain and most valuable campaign staff|
-|Description|Ensure most important staff and our domain are not being impersonated.|
+|Description|Ensure most important staff and our domain aren't being impersonated.|
 |Add users to protect|Select **+ Add a condition, The recipient is**. Type user names or enter the email address of the candidate, campaign manager, and other important staff members. You can add up to 20 internal and external addresses that you want to protect from impersonation.|
 |Add domains to protect|Select **+ Add a condition, The recipient domain is**. Enter the custom domain associated with your Microsoft 365 subscription, if you defined one. You can enter more than one domain.|
 |Choose actions|If email is sent by an impersonated user: select **Redirect message to another email address**, and then type the email address of the security administrator; for example, securityadmin@contoso.com. <br/> If email is sent by an impersonated domain: select **Quarantine message**.|
@@ -266,7 +266,7 @@ We recommend you get started with this protection by creating a policy for your 
 
 ## Protect against malicious attachments, files, and URLs
 
-People regularly send, receive, and share attachments, such as documents, presentations, spreadsheets, and more. It's not always easy to tell whether an attachment is safe or malicious just by looking at an email message. Microsoft Defender for Office 365 includes Safe Attachment protection, but this protection is not turned on by default. We recommend that you create a new rule to begin using this protection. This protection extends to files in SharePoint, OneDrive, and Microsoft Teams.
+People regularly send, receive, and share attachments, such as documents, presentations, spreadsheets, and more. It's not always easy to tell whether an attachment is safe or malicious just by looking at an email message. Microsoft Defender for Office 365 includes Safe Attachment protection, but this protection isn't turned on by default. We recommend that you create a new rule to begin using this protection. This protection extends to files in SharePoint, OneDrive, and Microsoft Teams.
 
 ### Set up Safe Attachments
 
@@ -280,7 +280,7 @@ You can use pre-set Safe Attachments policies, or create your own. To create a S
 
 4. Apply the settings in the following table.
 
-5. After you have reviewed your settings, select **Create this policy** or **Save**, as appropriate.
+5. After you've reviewed your settings, select **Create this policy** or **Save**, as appropriate.
 
 |Setting or option|Recommended setting|
 |---|---|
@@ -347,5 +347,5 @@ To learn more, see the following resources:
 ## Related content
 
 [Multi-factor authentication for Microsoft 365](multi-factor-authentication-microsoft-365.md) (article)\
-[Manage and monitor priority accounts](../setup/priority-accounts.md) (article)\
+[Manage and monitor priority accounts](/microsoft-365/security/office-365-security/configure-review-priority-account) (article)\
 [Microsoft 365 Reports in the admin center](../activity-reports/activity-reports.md) (video)
