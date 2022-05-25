@@ -49,9 +49,12 @@ Review the following information to get an understanding of the overall integrat
 
 :::image type="content" source="media/ehr-connector-epic-flow.png" alt-text="Image summarizing the steps in the overall integration process.":::
 
-||||||
-|---------|---------|---------|---------|---------|
-|**Action**: You [request access to the Teams app](#request-access-to-the-teams-app). <br> **Outcome**: We authorize your organization for testing.|**Action**: We create a public and private key certificate and upload them to Epic. <br> **Outcome**: Epic syncs the public key certificate.|**Action**: You complete configuration steps in the EHR connector configuration portal. <br> **Outcome**: You receive FDI records for Epic configuration.| **Action**: You work with your Epic technical specialist to configure FDI records in Epic.<br> **Outcome**: Configuration completed. Ready to test.|**Action**: You complete testing in your test environment.<br> **Outcome**: Full validation of flows and decision to move to production.|
+| &nbsp; |Request app access|App enablement|Connector configuration|Epic configuration|Testing|
+|--------|---------|---------|---------|---------|---------|
+| **Duration** | Approximately 12-24 hours| Approximately 24 hours | Approximately 1-3 days | Approximately 1-3 days | &nbsp; |
+| **Action**| You [request access to the Teams app](#request-access-to-the-teams-app).  | We create a public and private key certificate and upload them to Epic. | You complete configuration steps in the EHR connector configuration portal.  | You work with your Epic technical specialist to configure FDI records in Epic.| You complete testing in your test environment. |
+| **Outcome**| We authorize your organization for testing. | Epic syncs the public key certificate. | You receive FDI records for Epic configuration. | Configuration completed. Ready to test. | Full validation of flows and decision to move to production. |
+
 
 ### Request access to the Teams app
 

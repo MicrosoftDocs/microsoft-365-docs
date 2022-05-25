@@ -81,9 +81,7 @@ In this illustration:
 - In Step 1, [**Implement Level 2 App Protection Policies (APP)**](manage-devices-with-intune-app-protection.md) you configure the recommended level of data protection with APP policies. Then you work with your identity team to configure the related Conditional Access rule to require use of this protection.
 - In Steps 2, 3 and 4, you enroll devices into management with Intune, define device compliance policies, and then coordinate with your identity team to configure the related Conditional Access rule to only allow access to compliant devices.
 
-<!---
-## Managing change with users
---->
+<!---## Managing change with users--->
 
 ## Enrolling devices vs. onboarding devices
 
@@ -105,14 +103,12 @@ In the illustration:
 Note that only Intune is managing devices. Onboarding refers to the ability for a device to share information with a specific service. The following table summarizes the differences between enrolling devices into management and onboarding devices for a specific service.
 
 
-|         |Enroll     |Onboard  |
+|   &nbsp;      |Enroll     |Onboard  |
 |---------|---------|---------|
-|Description     |  Enrollment applies to managing devices. Devices are enrolled for management with Intune or Configuration Manager.        | Onboarding configures a device to work with a specific set of capabilities in Microsoft 365. Currently, onboarding applies to Microsoft Defender for Endpoint and Microsoft compliance capabilities. <br><br>On Windows devices, onboarding involves toggling a setting in Windows Defender that allows Defender to connect to the online service and accept policies that apply to the device.        |
-|Scope     | These device management tools manage the entire device, including configuring the device to meet specific objectives, like security.        |Onboarding only affects the services that apply.     |
-|Recommended method     | Azure Active Directory join automatically enrolls devices into Intune.        | Intune is the preferred method for onboarding devices to Windows Defender for Endpoint, and consequently Microsoft Purview capabilities.<br><br>Note that devices that are onboarded to Microsoft Purview capabilities using other methods are not automatically enrolled for Defender for Endpoint.        |
-|Other methods     |   Other methods of enrollment depend on the platform of the device and whether it is BYOD or managed by your organization.      | Other methods for onboarding devices include, in recommended order:<br><li>Configuration Manager<li>Other mobile device management tool (if the device is managed by one)<li>Local script<li>VDI configuration package for onboarding non-persistent virtual desktop infrastructure (VDI) devices<li>Group Policy|
-| | |     |
-
+|**Description**     |  Enrollment applies to managing devices. Devices are enrolled for management with Intune or Configuration Manager.        | Onboarding configures a device to work with a specific set of capabilities in Microsoft 365. Currently, onboarding applies to Microsoft Defender for Endpoint and Microsoft compliance capabilities. <br><br>On Windows devices, onboarding involves toggling a setting in Windows Defender that allows Defender to connect to the online service and accept policies that apply to the device.        |
+|**Scope**     | These device management tools manage the entire device, including configuring the device to meet specific objectives, like security.        |Onboarding only affects the services that apply.     |
+|**Recommended method**     | Azure Active Directory join automatically enrolls devices into Intune.        | Intune is the preferred method for onboarding devices to Windows Defender for Endpoint, and consequently Microsoft Purview capabilities.<br><br>Note that devices that are onboarded to Microsoft Purview capabilities using other methods are not automatically enrolled for Defender for Endpoint.        |
+|**Other methods**     |   Other methods of enrollment depend on the platform of the device and whether it is BYOD or managed by your organization.      | Other methods for onboarding devices include, in recommended order:<br><li>Configuration Manager<li>Other mobile device management tool (if the device is managed by one)<li>Local script<li>VDI configuration package for onboarding non-persistent virtual desktop infrastructure (VDI) devices<li>Group Policy|
 
 ## Learning for administrators
 
