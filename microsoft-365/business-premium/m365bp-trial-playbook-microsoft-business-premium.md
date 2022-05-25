@@ -58,11 +58,11 @@ When you purchase Microsoft 365 Business Premium trial, you have the option of u
 
 1. Visit the Defender portal at security.microsoft.com.
 
-1. Run the [setup wizard](../security/defender-business/mdb-use-wizard.md)
+1. Run the [setup wizard](../security/defender-business/mdb-use-wizard.md).
 
-1. Now, you can [onboard devices](../security/defender-business/mdb-onboard-devices.md)
+1. Now, you can [onboard devices](../security/defender-business/mdb-onboard-devices.md).
 
-1. Next, [review security policies](../security/defender-business/mdb-configure-security-settings.md)
+1. Next, [review security policies](../security/defender-business/mdb-configure-security-settings.md).
 
 ### Use Office apps on devices
 
