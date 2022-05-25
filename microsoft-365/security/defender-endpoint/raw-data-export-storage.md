@@ -47,7 +47,7 @@ ms.custom: api
 
 6. Type your **Storage Account Resource ID**. In order to get your **Storage Account Resource ID**, go to your Storage account page on [Azure portal](https://ms.portal.azure.com/) \> properties tab \> copy the text under **Storage account resource ID**:
 
-   :::image type="content" alt-text="Image of event hub resource ID1." source="images/storage-account-resource-id.png" lightbox="images/storage-account-resource-id.png":::
+   :::image type="content" source="images/storage-account-resource-id.png" alt-text="The Event Hubs with resource ID1" lightbox="images/storage-account-resource-id.png":::
 
 7. Choose the events you want to stream and click **Save**.
 
@@ -55,16 +55,16 @@ ms.custom: api
 
 - A blob container will be created for each event type:
 
-  :::image type="content" alt-text="Image of event hub resource ID2." source="images/storage-account-event-schema.png" lightbox="images/storage-account-event-schema.png":::
+  :::image type="content" source="images/storage-account-event-schema.png" alt-text="The Event Hubs with resource ID2" lightbox="images/storage-account-event-schema.png":::
 
 - The schema of each row in a blob is the following JSON:
 
   ```json
   {
-	  "time": "<The time WDATP received the event>"
-	  "tenantId": "<Your tenant ID>"
-	  "category": "<The Advanced Hunting table name with 'AdvancedHunting-' prefix>"
-	  "properties": { <WDATP Advanced Hunting event as Json> }
+    "time": "<The time WDATP received the event>"
+    "tenantId": "<Your tenant ID>"
+    "category": "<The Advanced Hunting table name with 'AdvancedHunting-' prefix>"
+    "properties": { <WDATP Advanced Hunting event as Json> }
   }
   ```
 
@@ -92,7 +92,7 @@ In order to get the data types for our events properties do the following:
 
 - Here is an example for Device Info event:
 
-  ![Image of event hub resource ID3.](images/data-types-mapping-query.png)
+  :::image type="content" source="images/data-types-mapping-query.png" alt-text="The Event Hubs with resource ID3" lightbox="images/data-types-mapping-query.png":::
 
 ## Related topics
 

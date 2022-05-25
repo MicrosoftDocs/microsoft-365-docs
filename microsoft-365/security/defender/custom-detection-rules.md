@@ -198,7 +198,7 @@ To view all existing custom detection rules, navigate to **Hunting** > **Custom 
 
 To view comprehensive information about a custom detection rule, go to **Hunting** > **Custom detection rules** and then select the name of rule. You can then view general information about the rule, including information its run status and scope. The page also provides the list of triggered alerts and actions.
 
-![Custom detection rule details page.](../../media/custom-detect-rules-view.png)<br>
+:::image type="content" source="../../media/custom-detect-rules-view.png" alt-text="The Custom detection rule details page in the Microsoft 365 Defender portal" lightbox="../../media/custom-detect-rules-view.png":::<br>
 *Custom detection rule details*
 
 You can also take the following actions on the rule from this page:

@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: 
 audience: ITPro
 ms.topic: how-to
-
+ms.collection: M365-security-compliance
 ms.localizationpriority: medium
 search.appverid: 
   - MET150s
@@ -19,7 +19,7 @@ ms.prod: m365-security
 
 # Create blocked sender lists in EOP
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)

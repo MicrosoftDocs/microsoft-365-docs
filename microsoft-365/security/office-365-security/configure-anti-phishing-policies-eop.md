@@ -21,7 +21,7 @@ ms.prod: m365-security
 
 # Configure anti-phishing policies in EOP
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -95,8 +95,10 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
    When you're finished, click **Next**.
 
 4. On the **Users, groups, and domains** page that appears, identify the internal recipients that the policy applies to (recipient conditions):
-   - **Users**: The specified mailboxes, mail users, or mail contacts in your organization.
-   - **Groups**: The specified distribution groups, mail-enabled security groups, or Microsoft 365 Groups in your organization.
+   - **Users**: The specified mailboxes, mail users, or mail contacts.
+   - **Groups**:
+     - Members of the specified distribution groups or mail-enabled security groups.
+     - The specified Microsoft 365 Groups.
    - **Domains**: All recipients in the specified [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in your organization.
 
    Click in the appropriate box, start typing a value, and select the value that you want from the results. Repeat this process as many times as necessary. To remove an existing value, click remove ![Remove icon.](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.
@@ -132,7 +134,7 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
 
      To turn on a setting, select the check box. To turn it off, clear the check box.
 
-     <sup>\*</sup> This setting is available only if you selected **Enable spoof intelligence** on the previous page. For more information, see [Unauthenticated sender](set-up-anti-phishing-policies.md#unauthenticated-sender).
+     <sup>\*</sup> This setting is available only if you selected **Enable spoof intelligence** on the previous page. For more information, see [Unauthenticated sender indicators](set-up-anti-phishing-policies.md#unauthenticated-sender-indicators).
 
    When you're finished, click **Next**.
 

@@ -72,7 +72,7 @@ Each model in the model usage list will show the usage data:
 
 
 
-## See Also
+## See also
 [Create a classifier](create-a-classifier.md)
 
 [Create an extractor](create-an-extractor.md)
