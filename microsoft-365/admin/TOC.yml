@@ -14,7 +14,7 @@
         - name: Plan your setup of Microsoft 365 for business
           href: setup/plan-your-setup.md
         - name: Sign up for Microsoft 365 Business Premium
-          items: /microsoft-365/business-premium
+          items: ../business-premium
         - name: Sign up for Microsoft 365 Business Standard
           items: 
            - name: Sign up for Microsoft 365 Business Standard
