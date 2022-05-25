@@ -98,6 +98,8 @@
       href: m365bp-security-incident-management.md
     - name: Review security recommendations
       href: ../security/defender-business/mdb-view-tvm-dashboard.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+    - name: Review threats detected on devices
+      href: m365bp-review-threats-take-action.md
     - name: Review remediation actions on devices
       href: m365bp-review-remediation-actions-devices.md
     - name: Respond to a compromised email account

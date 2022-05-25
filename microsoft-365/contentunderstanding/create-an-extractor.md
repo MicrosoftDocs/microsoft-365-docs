@@ -42,7 +42,7 @@ You need to create an extractor for each entity in the document that you want to
     ![Screenshot of the Advanced settings portion of the New entity extractor panel showing the Column type option.](../media/content-understanding/advanced-settings-column-type.png)
 
     > [!NOTE]
-    > For extractors with the column type **Single line of text**, the maximum character limit is 255. Any characters that you type exceeding the limit get truncated.
+    > For extractors with the column type **Single line of text**, the maximum character limit is 255. Any characters that you select exceeding the limit get truncated. To select greater than 255 characters, choose the **Multiple Lines of Text** column type when creating the extractor.
 
 3. When you're done, select **Create**.
 
