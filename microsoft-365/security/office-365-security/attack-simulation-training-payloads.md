@@ -17,6 +17,8 @@ ms.technology: mdo
 
 # Create custom payloads for Attack simulation training in Defender for Office 365
 
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
 **Applies to**
  [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 
