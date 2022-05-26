@@ -210,7 +210,7 @@ For policy deployment in Intune, the account must have permissions to create, ed
 
 Go to Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>) **> Devices > Create profile > Platform: Windows 10 and later, Profile type: Templates > Custom**
 
-1. Enable or Disable Removable Storage Access Control: you can set this value to enable or disable Removable Storage Access Control; 
+1. Enable or Disable Removable Storage Access Control: You can enable or disable Removable Storage Access Control as follows: 
     - Under **Custom > Configuration settings**, click **Add**.
     - In the **Add Row** pane, enter:
         - **Name** as **Enable RSAC** 
@@ -229,7 +229,9 @@ Go to Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>
     
     :::image type="content" source="images/enable-rsac.png" alt-text="Enable RSAC" lightbox="images/enable-rsac.png":::
       
-2. Set Default Enforcement: You can set default access (Deny or Allow) to removable media if there is no policy. For example, you only have policy (either Deny or Allow) for RemovableMediaDevices, but do not have any policy for CdRomDevices or WpdDevices, and you set default Deny through this policy, Read/Write/Execute access to CdRomDevices or WpdDevices will be blocked. 
+2. Set Default Enforcement: 
+    You can set default access (Deny or Allow) to removable media if there is no policy. 
+    For example, you have either Deny or Allow policy for RemovableMediaDevices, but you do not have any policy for CdRomDevices or WpdDevices. You set default Deny through this policy, then Read/Write/Execute access to CdRomDevices or WpdDevices will be blocked. 
 
     - In the **Add Row** pane, enter:
     
