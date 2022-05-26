@@ -101,6 +101,9 @@ If you experience any installation failures, refer to [Troubleshooting installat
     > [!NOTE]
     > Distributions and version that are not explicitly listed are unsupported (even if they are derived from the officially supported distributions).
 
+
+
+
 - List of supported kernel versions
   > [!NOTE]
   > MDE for RHEL/CentOS - 6.7 to 6.10 is a Kernel based solution. We expect customers to check the supported list of kernel in the below section before updating to the newer kernel version
@@ -234,3 +237,9 @@ High I/O workloads from certain applications can experience performance issues w
 ## Resources
 
 - For more information about logging, uninstalling, or other topics, see [Resources](linux-resources.md).
+  
+## Related articles
+  
+-  [Protect your endpoints with Defender for Cloud's integrated EDR solution: Microsoft Defender for Endpoint](/azure/defender-for-cloud/integration-defender-for-endpoint)
+-  [Connect your non-Azure machines to Microsoft Defender for Cloud](/azure/defender-for-cloud/quickstart-onboard-machines)
+
