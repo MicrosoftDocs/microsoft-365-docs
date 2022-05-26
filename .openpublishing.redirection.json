@@ -7472,6 +7472,16 @@
       "source_path": "microsoft-365/admin/security-and-compliance/review-threats-take-action.md",
       "redirect_url": "/microsoft-365/business-premium/m365bp-review-threats-take-action",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/devices/validate-settings-on-android-or-ios.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-validate-settings-on-android-or-ios",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/validate-settings-on-windows-10-pcs.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-validate-settings-on-windows-10-pcs",
+      "redirect_document_id": false
     }
   ]
 }
