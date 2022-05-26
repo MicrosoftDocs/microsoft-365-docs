@@ -34,7 +34,7 @@ By default, recurring billing is automatically turned on for all paid subscripti
 
 If recurring billing is turned off for a billing profile, you can use the **Pay now** button on your invoice to pay for it every billing period, regardless of what payment method is linked with the billing profile. You can also pay by check or electronic funds transfer (EFT). Instructions for how to do that are included on the PDF copy of your invoice.
 
-## The Reserve Bank of India has issued new regulations
+## New regulations from the Reserve Bank of India
 
 As of 1 October 2021, automatic payments in India might block some credit card transactions, especially transactions exceeding 5,000 INR. Because of this regulation, you might have to make payments manually in the Microsoft 365 admin center. These regulations won't affect the total amount you’re charged for your usage.
 

@@ -42,7 +42,7 @@ You can use a credit or debit card, or bank account to pay for your subscription
 - You must be a Global or Billing admin to do the steps described in this article. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
 - The payment method that you choose during checkout is the payment method that we use for all future billing periods. You can change it at any time.
 
-## The Reserve Bank of India has issued new regulations
+## New regulations from the Reserve Bank of India
 
 As of 1 October 2021, automatic payments in India might block some credit card transactions, especially transactions exceeding 5,000 INR. Because of this regulation, you might have to make payments manually in the Microsoft 365 admin center. These regulations won't affect the total amount you’re charged for your usage.
 
