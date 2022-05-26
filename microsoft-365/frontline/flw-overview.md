@@ -24,11 +24,14 @@ Frontline workers are employees whose primary function is to work directly with 
 - [Enhance your workforce management](#enhance-workforce-management)
 - [Increase operations efficiency](#increase-operations-efficiency)
 
+Microsoft 365 for frontline workers also:
+
+- Provides [support for modern devices](#modern-devices) and
+- Helps [safeguard your business](#safeguard-your-business) with security and compliance offerings.
+
 The following image shows the employee experiences that are key to frontline workers, and common areas where Microsoft 365 can improve experiences for frontline workers:
 
 :::image type="content" source="media/frontline-employee-experience-wheel.png" alt-text="Diagram of employee experience wheel with methods to connect & engage with frontline workers, enhance workforce management, and increase operational efficiency.":::
-
-Microsoft 365 for frontline workers also provides [support for modern devices](#modern-devices) and helps [safeguard your business](#safeguard-your-business) with security and compliance offerings.
 
 [Microsoft 365 for frontline workers](https://www.microsoft.com/microsoft-365/enterprise/frontline) is optimized for a mobile workforce that primarily interacts with customers, but also needs to stay connected to the rest of your organization. Learn more about [licensing options for frontline workers](flw-licensing-options.md) and which license types you should use for different types of users in your organization.
 
