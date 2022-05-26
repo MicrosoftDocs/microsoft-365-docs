@@ -97,10 +97,10 @@ Deploy Microsoft Purview Data Loss Prevention (DLP) policies to govern and preve
 
 Learning modules for consultants and admins:
 
-- [Introduction to information protection and governance in Microsoft 365](/learn/modules/m365-compliance-information-governance)
+- [Introduction to information protection and data lifecycle management in Microsoft Purview](/learn/modules/m365-compliance-information-governance)
 - [Classify data for protection and governance](/learn/modules/m365-compliance-information-classify-data)
-- [Protect information in Microsoft 365](/learn/modules/m365-compliance-information-protect-information)
-- [Prevent data loss in Microsoft 365](/learn/modules/m365-compliance-information-prevent-data-loss)
+- [Protect information in Microsoft Purview](/learn/modules/m365-compliance-information-protect-information)
+- [Prevent data loss in Microsoft Purview](/learn/modules/m365-compliance-information-prevent-data-loss)
 
 To help train your users to apply and use the sensitivity labels that you configure for them, see [End-user documentation for sensitivity labels](get-started-with-sensitivity-labels.md#end-user-documentation-for-sensitivity-labels).
 
