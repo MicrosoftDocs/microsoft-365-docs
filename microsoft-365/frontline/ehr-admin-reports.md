@@ -46,4 +46,4 @@ You can use the report dialog to buy more virtual appointments.
 ## Related articles
 
 - [Virtual appointments with Teams - Integration into Cerner EHR](ehr-admin-cerner.md)
-- [Virtual appointments with Teams - Integration into Epic EHR](ehr-admin.md)
+- [Virtual appointments with Teams - Integration into Epic EHR](ehr-admin-epic.md)

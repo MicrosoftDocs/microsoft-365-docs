@@ -53,11 +53,11 @@ Apps are pinned to the app bar, which is the bar at the bottom of the Teams mobi
 ## Admin controls
 
 > [!NOTE]
-> The **User pinning** setting must be turned on in the global (org-wide default) [app setup policy](teams-app-setup-policies.md) for this feature to take effect.
+> The **User pinning** setting must be turned on in the global (org-wide default) [app setup policy](/microsoftteams/teams-app-setup-policies) for this feature to take effect.
 
-The tailored frontline app experience is controlled by the **Show tailored apps** org-wide app setting on the [Manage apps](manage-apps.md#manage-org-wide-app-settings) page of the Teams admin center. If the feature is on, all users in your organization who have an F license will get the tailored app experience.
+The tailored frontline app experience is controlled by the **Show tailored apps** org-wide app setting on the [Manage apps](/microsoftteams/manage-apps#manage-org-wide-app-settings) page of the Teams admin center. If the feature is on, all users in your organization who have an F license will get the tailored app experience.
 
-Keep in mind that any custom [app setup policies](teams-app-setup-policies.md) assigned to users take precedence. This means that if a user already has a custom app setup policy assigned to them, the user gets the configuration that's defined in the custom app setup policy. To learn more about how the feature works with Teams app policies, including the global app setup policy, see the [Scenarios](#scenarios) section later in this article.
+Keep in mind that any custom [app setup policies](/microsoftteams/teams-app-setup-policies) assigned to users take precedence. This means that if a user already has a custom app setup policy assigned to them, the user gets the configuration that's defined in the custom app setup policy. To learn more about how the feature works with Teams app policies, including the global app setup policy, see the [Scenarios](#scenarios) section later in this article.
 
 This feature is on by default. However, if you don't want the tailored frontline app experience provided by Microsoft, you can turn off the feature. To turn the feature off or on:
 
@@ -89,18 +89,18 @@ Learn how the tailored frontline app experience works with other Teams app polic
 |---------|---------|
 The feature is off.   | The frontline worker gets the apps defined in the global app setup policy or custom app setup policy assigned to them.          |
 |A frontline worker has a custom app setup policy and the feature is on.    |The frontline worker gets the apps defined in the custom app setup policy.          |
-|An app in the tailored frontline app experience is blocked for a user or for your organization.      |The tailored frontline app experience honors the [app permission policy](teams-app-permission-policies.md). If an app is blocked, the frontline worker won't see the blocked app.           |
+|An app in the tailored frontline app experience is blocked for a user or for your organization.      |The tailored frontline app experience honors the [app permission policy](/microsoftteams/teams-app-permission-policies). If an app is blocked, the frontline worker won't see the blocked app.           |
 |An app in the tailored frontline app experience is already defined in an app setup policy and the feature is on. |The app is pinned based on the order defined by the tailored apps list.        |
 |A user has an E, A, or G license and the feature is on.   | The user doesn't get the tailored frontline app experience. Currently, the experience applies only to users who have an F license.        |
 
 > [!NOTE]
-> You can't change the apps or order of apps in the tailored frontline app experience. For now, if you want to make changes, you can set up your own custom experience. To do this, first turn off the feature. Then, [create a custom app setup policy](teams-app-setup-policies.md), and [assign it to users or groups](assign-policies-users-and-groups.md).
+> You can't change the apps or order of apps in the tailored frontline app experience. For now, if you want to make changes, you can set up your own custom experience. To do this, first turn off the feature. Then, [create a custom app setup policy](/microsoftteams/teams-app-setup-policies), and [assign it to users or groups](/microsoftteams/assign-policies-users-and-groups).
 
 ## Related articles
 
-- [Manage the Walkie Talkie app in Teams](walkie-talkie.md)
-- [Manage the Tasks app in Teams](manage-tasks-app.md)
-- [Manage the Shifts app in Teams](expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams.md)
-- [Manage the Approvals app in Teams](approval-admin.md)
-- [Manage app setup policies in Teams](teams-app-setup-policies.md)
-- [Manage app permission policies in Teams](teams-app-permission-policies.md)
+- [Manage the Walkie Talkie app in Teams](/microsoftteams/walkie-talkie)
+- [Manage the Tasks app in Teams](/microsoftteams/manage-tasks-app)
+- [Manage the Shifts app in Teams](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams)
+- [Manage the Approvals app in Teams](/microsoftteams/approval-admin)
+- [Manage app setup policies in Teams](/microsoftteams/teams-app-setup-policies)
+- [Manage app permission policies in Teams](/microsoftteams/teams-app-permission-policies)

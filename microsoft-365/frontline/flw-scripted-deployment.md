@@ -45,7 +45,7 @@ Download the assets from [this location](https://aka.ms/flwteamsscale).
 
 ## Technical requirements
 
-- Your tenant must have the appropriate number of licenses available that include Microsoft Teams. If you do not already have these licenses, check out [Teams Exploratory](teams-exploratory.md) for a free trial subscription.
+- Your tenant must have the appropriate number of licenses available that include Microsoft Teams. If you do not already have these licenses, check out [Teams Exploratory](/microsoftteams/teams-exploratory) for a free trial subscription.
 - The user taking these steps must have these roles assigned: Global Admin, User Admin, and Teams Service Admin, in Azure AD.
 - User must have the rights to install and configure software on their local machine.
 
@@ -142,7 +142,7 @@ Teams are a collection of people, content, and tools within your organization. F
 - Hospital
 - Grocery store
 
-*Best practice discussion*: When designing your teams, it's important to keep in mind [Teams limits and specifications](limits-specifications-teams.md). For smaller organizations, an org-wide team can be used to streamline communication and complement a physical location structure. For others, a structured physical location Team naming convention helps assist Corporate Communications with Cross Posting to multiple teams simultaneously with ease. For example, you can search and cross-post to all Teams with US in the name to target all US locations. More information on cross-posting can be found [here](https://support.office.com/article/cross-post-a-channel-conversation-in-teams-9c1252a3-67ef-498e-a7c1-dd7147b3d295).
+*Best practice discussion*: When designing your teams, it's important to keep in mind [Teams limits and specifications](/microsoftteams/limits-specifications-teams). For smaller organizations, an org-wide team can be used to streamline communication and complement a physical location structure. For others, a structured physical location Team naming convention helps assist Corporate Communications with Cross Posting to multiple teams simultaneously with ease. For example, you can search and cross-post to all Teams with US in the name to target all US locations. More information on cross-posting can be found [here](https://support.office.com/article/cross-post-a-channel-conversation-in-teams-9c1252a3-67ef-498e-a7c1-dd7147b3d295).
 
 #### Steps to create teams
 
@@ -188,7 +188,7 @@ Messaging policies are used to control which chat and channel messaging features
 #### Steps to create Teams messaging policies
 
 1. Find the **TeamsMessagingPolicies.csv** file in the scripts folder in the repository.
-1. Update the **TeamsMessagingPolicies.csv** file with your organization's specific information. Additional information on some of the various options can be found [here](./messaging-policies-in-teams.md#messaging-policy-settings).
+1. Update the **TeamsMessagingPolicies.csv** file with your organization's specific information. Additional information on some of the various options can be found [here](/microsoftteams/messaging-policies-in-teams#messaging-policy-settings).
 1. Find the **CreateTeamsMessagePolicies.ps1** script in the scripts folder in the repository.
 1. From PowerShell, run the **CreateTeamsMessagePolicies.ps1** script.
 
@@ -209,7 +209,7 @@ Apps are pinned to the app bar. This is the bar on the side of the Teams desktop
 
 #### Create the frontline manager app setup policy
 
-The following settings can be customized to meet your business needs. We have chosen some recommended options based on best practices and to improve the ease of onboarding new users at scale. For more information, click [here](teams-app-setup-policies.md).
+The following settings can be customized to meet your business needs. We have chosen some recommended options based on best practices and to improve the ease of onboarding new users at scale. For more information, click [here](/microsoftteams/teams-app-setup-policies).
 
 1. In the left navigation of the Microsoft Teams admin center, go to **Teams apps** > **Setup policies**.
 2. Click **Add**.  
@@ -220,7 +220,7 @@ The following settings can be customized to meet your business needs. We have ch
 5. Turn off **Allow user pinning**.
     :::image type="content" source="media/flw-allow-user-pinning.png" alt-text="Screenshot of Allow user pinning setting.":::
 
-6. If it's not already listed, add the **Shifts** app. For more information about Shifts, click [here](expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams.md).
+6. If it's not already listed, add the **Shifts** app. For more information about Shifts, click [here](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams).
     :::image type="content" source="media/flw-add-pinned-apps.png" alt-text="Screenshot of the Add pinned apps screen, showing the Add button for the Shifts app":::
 
 7. Remove Calling, if it appears. Removing this feature will not disable it for the user, but will prevent it from appearing on the app bar to simplify the end user experience.
@@ -236,7 +236,7 @@ The following settings can be customized to meet your business needs. We have ch
 
 #### Create the frontline worker app setup policy
 
-The following settings can be customized to meet your business needs. We have chosen some recommended options based on best practices and to improve the ease of onboarding new users at scale. For more information, click [here](teams-app-setup-policies.md).
+The following settings can be customized to meet your business needs. We have chosen some recommended options based on best practices and to improve the ease of onboarding new users at scale. For more information, click [here](/microsoftteams/teams-app-setup-policies).
 
 1. In the left navigation of the Microsoft Teams admin center, go to **Teams apps** > **Setup policies**.
 2. Click **Add**.
@@ -247,7 +247,7 @@ The following settings can be customized to meet your business needs. We have ch
 5. Turn off **Allow user pinning**.
     :::image type="content" source="media/flw-allow-user-pinning.png" alt-text="Screenshot of Allow user pinning setting.":::
 
-6. If it's not already listed, add the **Shifts** app. For more information about Shifts, click [here](expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams.md).
+6. If it's not already listed, add the **Shifts** app. For more information about Shifts, click [here](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams).
 
     :::image type="content" source="media/flw-add-pinned-apps.png" alt-text="Screenshot of the Add pinned apps screen, showing the Add button for the Shifts app":::
 
@@ -268,7 +268,7 @@ As an admin, you can use app permission policies to control what apps are availa
 
 #### Create the frontline manager app permission policy
 
-The following settings can be customized to meet your business needs. These are some recommended options based on best practices that can improve the ease of onboarding new users at scale. For more information, click [here](teams-app-permission-policies.md).
+The following settings can be customized to meet your business needs. These are some recommended options based on best practices that can improve the ease of onboarding new users at scale. For more information, click [here](/microsoftteams/teams-app-permission-policies).
 
 1. In the left navigation of the Microsoft Teams admin center, go to **Teams apps** > **Permission policies**.
 2. Click **Add**.
@@ -283,7 +283,7 @@ The following settings can be customized to meet your business needs. These are 
 
 #### Create the frontline worker app permission policy
 
-The following settings can be customized to meet your business needs. These are some recommended options based on best practices that can improve the ease of onboarding new users at scale. For more information, click [here](teams-app-permission-policies.md).
+The following settings can be customized to meet your business needs. These are some recommended options based on best practices that can improve the ease of onboarding new users at scale. For more information, click [here](/microsoftteams/teams-app-permission-policies).
 
 1. In the left navigation of the Microsoft Teams admin center, go to **Teams apps** > **Permission policies**.
 2. Click **Add**.
@@ -387,5 +387,5 @@ Minimal error handling has been implemented in these sample scripts. There are t
 
 - [New Team Channel (PowerShell)](/powershell/module/teams/new-teamchannel)
 - [New Teams Messaging Policy (PowerShell)](/powershell/module/skype/new-csteamsmessagingpolicy)
-- [Assign policies to your users in Microsoft Teams](policy-assignment-overview.md)
+- [Assign policies to your users in Microsoft Teams](/microsoftteams/policy-assignment-overview)
 - [Assign licenses and user accounts with Office 365 PowerShell](/office365/enterprise/powershell/assign-licenses-to-user-accounts-with-office-365-powershell)

@@ -27,7 +27,7 @@ description: Learn how to use and manage Teams policy packages for your healthca
 
 ## Overview
 
-A [policy package](manage-policy-packages.md) in Microsoft Teams is a collection of predefined policies and policy settings that you can assign to users who have similar roles in your organization. Policy packages simplify, streamline, and help provide consistency when managing policies. You can customize the settings of the policies in the package to suit the needs of your users. When you change the settings of policies in a policy package, all users who are assigned to that package get the updated settings. You can manage policy packages by using the Microsoft Teams admin center or PowerShell.
+A [policy package](/microsoftteams/manage-policy-packages) in Microsoft Teams is a collection of predefined policies and policy settings that you can assign to users who have similar roles in your organization. Policy packages simplify, streamline, and help provide consistency when managing policies. You can customize the settings of the policies in the package to suit the needs of your users. When you change the settings of policies in a policy package, all users who are assigned to that package get the updated settings. You can manage policy packages by using the Microsoft Teams admin center or PowerShell.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Ht2o]
 
@@ -57,7 +57,7 @@ Each individual policy is given the name of the policy package so you can easily
 
 To get you started with Healthcare policy packages, on the Microsoft Admin Center onboarding hub, select **Healthcare**, and then select **Assign policy settings by role**. Once you’re ready to get started, decide which policy packages you'd like to assign individuals in your organization to.
 
-Select **View policy details** to learn more about the specific policies in a package and their respective settings. These [can be customized](manage-policy-packages.md#customize-policies-in-a-policy-package) after assignment in the Teams Admin Center.
+Select **View policy details** to learn more about the specific policies in a package and their respective settings. These [can be customized](/microsoftteams/manage-policy-packages#customize-policies-in-a-policy-package) after assignment in the Teams Admin Center.
 
 Choose one or multiple packages to assign and then click **Next**. You can search for and add people to the policy package best suited for their role. An individual can't be assigned to more than one policy package at one time.
 
@@ -75,7 +75,7 @@ Decide whether the predefined values are appropriate for your organization or wh
 
 Customize the settings of policies in the policy package, as needed, to fit the needs of your organization. Any changes you make to policy settings are automatically applied to users who are assigned the package. To edit the settings of a policy in a policy package, in the left navigation of the Microsoft Teams admin center, go to **Policy packages**, select the policy package, select the name of the policy you want to edit, and then select **Edit**.
 
-Keep in mind that you can also change the settings of policies in a package after you assign the policy package. To learn more, see [Customize policies in a policy package](manage-policy-packages.md#customize-policies-in-a-policy-package).
+Keep in mind that you can also change the settings of policies in a package after you assign the policy package. To learn more, see [Customize policies in a policy package](/microsoftteams/manage-policy-packages#customize-policies-in-a-policy-package).
 
 ### Assign
 
@@ -90,7 +90,7 @@ To assign a policy package to one or multiple users, in the left navigation of t
 
 ![Screenshot of how to assign a policy package in the admin center.](media/policy-packages-healthcare-assign.png)
 
-To learn more, see [Assign a policy package](assign-policy-packages.md).
+To learn more, see [Assign a policy package](/microsoftteams/assign-policy-packages).
 
 If a user has a policy assigned, and then later you assign a different policy, the most recent assignment will take priority.
 
@@ -100,16 +100,16 @@ If a user has a policy assigned, and then later you assign a different policy, t
 
 Policy package assignment to groups let you assign multiple policies to a group of users, such as a security group or distribution list. The policy assignment is propagated to members of the group according to precedence rules. As members are added to or removed from a group, their inherited policy assignments are updated accordingly. This method is recommended for groups of up to 50,000 users but will also work with larger groups.
 
-To learn more, see [Assign a policy package to a group](assign-policy-packages.md#assign-a-policy-package-to-a-group).
+To learn more, see [Assign a policy package to a group](/microsoftteams/assign-policy-packages#assign-a-policy-package-to-a-group).
 
 #### Assign a policy package to a large set (batch) of users
 
 Use batch policy package assignment to assign a policy package to large sets of users at a time. You use the [New-CsBatchPolicyPackageAssignmentOperation](/powershell/module/teams/new-csbatchpolicypackageassignmentoperation) cmdlet to submit a batch of users and the policy package that you want to assign. The assignments are processed as a background operation and an operation ID is generated for each batch.
 
-A batch can contain up to 5,000 users. You can specify users by their object Id, UPN, SIP address, or email address. To learn more, see [Assign a policy package to a batch of users](assign-policy-packages.md#assign-a-policy-package-to-a-batch-of-users).
+A batch can contain up to 5,000 users. You can specify users by their object Id, UPN, SIP address, or email address. To learn more, see [Assign a policy package to a batch of users](/microsoftteams/assign-policy-packages#assign-a-policy-package-to-a-batch-of-users).
 
 ## Related topics
 
-[Manage policy packages in Teams](manage-policy-packages.md)
+[Manage policy packages in Teams](/microsoftteams/manage-policy-packages)
 
-[Assign policy packages to users and groups](assign-policy-packages.md)
+[Assign policy packages to users and groups](/microsoftteams/assign-policy-packages)

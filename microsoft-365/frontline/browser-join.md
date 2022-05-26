@@ -34,8 +34,8 @@ Currently, browser join is available for appointments that are scheduled through
 - [The Bookings app](https://support.microsoft.com/office/what-is-bookings-42d4e852-8e99-4d8f-9b70-d7fc93973cb5)
 - Microsoft Teams Electronic Health Record (EHR) connector
 
-  - Integration with [Cerner EHR](healthcare/ehr-admin-cerner.md)
-  - Integration with [Epic EHR](healthcare/ehr-admin.md)
+  - Integration with [Cerner EHR](ehr-admin-cerner.md)
+  - Integration with [Epic EHR](ehr-admin-epic.md)
 
 ## Set up browser join
 
@@ -90,5 +90,5 @@ The staff member who conducts the appointment can share their screen from their 
 - [Virtual appointments with Teams and the Bookings app](bookings-virtual-visits.md)
 - [Create an Bookings appointment type](https://support.microsoft.com/office/create-an-appointment-type-810eac77-6a65-4dc8-964d-c00eadf43887)
 - [Join a Bookings appointment as an attendee](https://support.microsoft.com/office/join-a-bookings-appointment-as-an-attendee-95cea12d-2220-421f-a663-6efb20913c7f)
-- [Virtual appointments with Teams - Integration into Cerner EHR](healthcare/ehr-admin-cerner.md)
-- [Virtual appointments with Teams - Integration into Epic EHR](healthcare/ehr-admin.md)
+- [Virtual appointments with Teams - Integration into Cerner EHR](ehr-admin-cerner.md)
+- [Virtual appointments with Teams - Integration into Epic EHR](ehr-admin-epic.md)
