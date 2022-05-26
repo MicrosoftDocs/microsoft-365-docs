@@ -75,13 +75,13 @@ If you experience any installation failures, refer to [Troubleshooting installat
 > It is not supported to install Microsoft Defender for Endpoint in any other location other than the default install path. 
 
 > [!NOTE]
-> MDE for Linux create “mdatp” user with random UID and GID. If customer wants to control the UID and GID then it’s advice to create ‘mdatp’ user before installation with “/usr/sbin/nologin” shell option.
-> For e.g. “mdatp:x:UID:GID::/home/mdatp:/usr/sbin/nologin”
+> Microsoft Defender for Endpoint on Linux creates an "mdatp" user with random UID and GID. If you want to control the UID and GID, create an "mdatp" user prior to installation using the  "/usr/sbin/nologin" shell option.
+> For example: `mdatp:x:UID:GID::/home/mdatp:/usr/sbin/nologin`.
 
 ### System requirements
 
 > [!NOTE]
-> Red Hat Enterprise Linux and CentOS 6.7 to 6.10 are in Public Preview
+> Red Hat Enterprise Linux and CentOS 6.7 to 6.10 are in preview.
 
 - Supported Linux server distributions and x64 (AMD64/EM64T) and x86_64 versions:
 
@@ -106,8 +106,8 @@ If you experience any installation failures, refer to [Troubleshooting installat
 
 - List of supported kernel versions
   > [!NOTE]
-  > MDE for RHEL/CentOS - 6.7 to 6.10 is a Kernel based solution. We expect customers to check the supported list of kernel in the below section before updating to the newer kernel version
-  > MDE for all other distributions and version is a user based solution and agnostic of kernel updates. The only requirement is the kernel version should be on or above 3.10.0-327
+  > Microsoft Defender for Endpoint on RHEL/CentOS - 6.7 to 6.10 is a Kernel based solution. You must verify that the kernel is the supported before updating to the newer kernel version. See the list below for the list of supported kernels.
+  > Microsoft Defender for Endpoint for all other distributions and versions are user-based solutions and agnostic of kernel updates. The only requirement is that the kernel version should be on or above 3.10.0-327.
 
   - The `fanotify` kernel option must be enabled
   - Red Hat Enterprise Linux 6 and CentOS 6:
