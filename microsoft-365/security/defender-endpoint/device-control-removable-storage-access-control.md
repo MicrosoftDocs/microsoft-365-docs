@@ -388,9 +388,9 @@ We've validated one USB group with 100,000 media - up to 7 MB in size. The polic
 
 2. Another reason could be that the XML file isn't correctly formatted, for example, not using the correct markdown formatting for the "&" character in the XML file, or the text editor might add a byte order mark (BOM) 0xEF 0xBB 0xBF at the beginning of the files, which causes the XML parsing not to work. One simple solution is to download the [sample file](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) (select **Raw** and then **Save as**) and then update.
 
-3. If you are deploying and managing the policy by using Group Policy, please make sure combine all PolicyRule into one XML file within a parent node called PolicyRules and all Group into one XML file within a parent node called Groups; if you manage through Intune, keep one PolicyRule one XML file, same thing, one Group one XML file.
+3. If you are deploying and managing the policy by using Group Policy, please make sure to combine all PolicyRule into one XML file within a parent node called PolicyRules and all Group into one XML file within a parent node called Groups; if you manage through Intune, keep one PolicyRule one XML file, same thing, one Group one XML file.
 
-If still not working, you may want to contact us and share support cab by running cmd with administrator: "%programfiles%\Windows Defender\MpCmdRun.exe" -GetFiles
+If it still doesn't work, you may want to contact us and share support cab by running cmd with administrator: "%programfiles%\Windows Defender\MpCmdRun.exe" -GetFiles
 
 ### There is no configuration UX for 'Define device control policy groups' and 'Define device control policy rules' on my Group Policy
 
