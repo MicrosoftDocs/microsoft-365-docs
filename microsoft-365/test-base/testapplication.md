@@ -22,7 +22,7 @@ This section provides all the steps necessary to create a new package containing
 
 **Important**
 
-If you do not have a Test Base account, you will need to create one before proceeding, as described in [create a Test Base account](createAccount.md).
+If you do not have a **Test Base** account, you will need to create one before proceeding, as described in [create a Test Base account](createAccount.md).
 
 ## Create a new package
 
@@ -35,12 +35,12 @@ In the left-hand menu under **Package catalog**, select the **New package**. The
 
 ### Step 1. Define content
 
-1. In the **Package source** section, choose your package source. If you have an Intunewin app, select Intunewin, for others, e.g. exe or msi, select Binaries.
+1. In the **Package source** section, select Binaries (eg: .exe, .msi) in the Package source type..
 
    > [!div class="mx-imgBorder"]
    > ![Choose your package source](Media/testapplication02.png)
 
-2. Then upload your app file by clicking ‘Select file' button or checking the box to use the Test Base sample template as a starting point if you don't have your file ready yet.
+2. Then upload your app file by clicking 'Select file' button or checking the box to use the Test Base sample template as a starting point if you don't have your file ready yet.
 
    > [!div class="mx-imgBorder"]
    > ![Select file](Media/testapplication03.png)
@@ -53,7 +53,7 @@ In the left-hand menu under **Package catalog**, select the **New package**. The
    > [!div class="mx-imgBorder"]
    > ![Enter basic information](Media/testapplication04.png)
 
-4. Once all required info is filled out, you can move to step 2 by clicking the Next button at the bottom.
+4. After all the requested information is specified, you can proceed to the next phase by clicking the **Next: Configuration test** button.
 
    > [!div class="mx-imgBorder"]
    > ![Next step](Media/testapplication05.png)
@@ -63,6 +63,9 @@ In the left-hand menu under **Package catalog**, select the **New package**. The
 1. Select the **Type of test**. There're two test types supported:
    - An **Out of Box (OOB) test** performs an install, launch, close, and uninstall of your package. After the install, the launch-close routine is repeated 30 times before a single uninstall is run. The OOB test provides you with standardized telemetry on your package to compare across Windows builds.
    - A **Functional test** would execute your uploaded test script(s) on your package. The scripts are run in the sequence you specified and a failure in a particular script will stop subsequent scripts from executing.
+
+   > [!NOTE]
+   > Out of Box test is optional now.
 
    > [!div class="mx-imgBorder"]
    > ![Out of Box test is optional](Media/testapplication07.png)
@@ -77,6 +80,9 @@ In the left-hand menu under **Package catalog**, select the **New package**. The
 1. In the Edit package tab, you can
    - Check your package folder and file structure in **Package Preview**.
    - Edit your scripts online with the **PowerShell code editor**.
+
+   > [!NOTE]
+   > Some sample scripts have been generated for your reference. You need to review each script carefully and replace the command and process name with your own. 
 
    > [!div class="mx-imgBorder"]
    > ![edit scripts online](Media/testapplication09.png)
@@ -96,7 +102,10 @@ In the left-hand menu under **Package catalog**, select the **New package**. The
    > ![Resources in outofbox folder](Media/testapplication11.png)
 
    > [!NOTE]
-   > Install, Launch and Close script tags are mandatory for the OOB test type.
+   > Install, Launch and Close script tags are mandatory for the OOB test type. Reassigning tags ensures that the correct script path will be used when testing is initiated.
+
+   > [!div class="mx-imgBorder"]
+   > ![Resources in outofbox folder](Media/testapplication11-2.png)
 
    - If the **Functional test** is selected in step 2, you can see the **functional** folder under the scripts folder. Additional functional test scripts can be added using the **'Add to functional test list'** button. You need a minimum of one (1) script and can add up to eight (8) functional test scripts.
 
@@ -106,9 +115,9 @@ In the left-hand menu under **Package catalog**, select the **New package**. The
    > [!NOTE]
    > At least 1 functional script tag is mandatory for the functional test type.
 
-   By clicking the **'Add to functional test list'**, the action panel will pop up, you can:
+   To add more Functional scripts, you can click the **'Add to functional test list'**. Then the action panel will pop up, you can:
    - Reorder the script paths by dragging with the left ellipse buttons. The functional scripts run in the sequence they are listed. A failure in a particular script stops subsequent scripts from executing.
-   - Set ‘Restart after execution' for multiple scripts.
+   - Set 'Restart after execution' for multiple scripts.
    - Apply update before on specific script path. This is for users who wish to perform functional tests to indicate when the Windows Update patch should be applied in the sequence of executing their functional test scripts.
 
    > [!div class="mx-imgBorder"]
@@ -141,7 +150,7 @@ In the left-hand menu under **Package catalog**, select the **New package**. The
 
 ### Step 5. Review + publish
 
-1. Can review all the information of your draft package and you're able to back to early steps to make changes if needed.
+1. Review all the information for correctness and accuracy of your draft package. To make corrections, you can navigate back to early steps where you specified the settings as needed.
 
    > [!div class="mx-imgBorder"]
    > ![Review package](Media/testapplication15.png)
@@ -151,7 +160,10 @@ In the left-hand menu under **Package catalog**, select the **New package**. The
    > [!div class="mx-imgBorder"]
    > ![Notification](Media/testapplication16.png)
 
-3. Once you make sure all info is correct, you can proceed to upload your package to Test Base by clicking the **‘Publish'** button. A notification will pop up when the package has been published successfully.
+3. When you are done finalizing the input data configuration, click **Publish** to upload your package to Test Base.  The notification that follows displays when the package is successfully published and has entered the Verification process.  
+
+   > [!NOTE]
+   > The package must be verified before it is accepted for future tests. The Verification can take up to 24 hours, as it includes running the package in an actual test environment. 
 
    > [!div class="mx-imgBorder"]
    > ![Package publish prompts](Media/testapplication17.png)
@@ -161,28 +173,16 @@ In the left-hand menu under **Package catalog**, select the **New package**. The
    > [!div class="mx-imgBorder"]
    > ![Manage packages](Media/testapplication18.png)
 
+   > [!NOTE]
+   > When the Verification process is complete, the Verification status will change to Accepted. At this point, no further actions are required. Your package will be acquired automatically for execution whenever your configured operating systems have new updates available. If the Verification process fails, your package is not ready for testing. Please check the logs and assess whether any errors occurred. You may also need to check your package configuration settings for potential issues.
+
 ### Continue package creation
 
-On the **New package** page, you can see a list of all your previously saved draft packages. You can continue your edit directly to the step you paused last time by clicking the 'edit' icon.
+On **New package** page, there is a list of saved draft packages if have. You can continue your edit directly to the step you paused last time by clicking the ‘edit’ pencil icon. 
+
+> [!div class="mx-imgBorder"]
+> ![New package page](Media/testapplication19.png)
 
 > [!NOTE]
-> The dashboard only shows the working in progress package. For the published package, you can check the Manage Package page.
+> The dashboard only shows the working in progress package. For the published package, you can check the Manage Packages page.
 
-> [!div class="mx-imgBorder"]
-> ![Manage packages page](Media/testapplication19.png)
-
-### Zip Upload (Legacy upload experience)
-
-If you have a Zip file already, you can switch back to the legacy package upload experience (zip upload). Learn more about the Zip upload [Upload your package | Microsoft Docs](uploadApplication.md).
-
-> [!div class="mx-imgBorder"]
-> ![Upload package](Media/testapplication01.png)
-
-> [!div class="mx-imgBorder"]
-> ![Legacy upload experience](Media/testapplication21.png)
-
-### Intunewin Upload Flow
-
-As part of commercial roadmap, Test Base started to support intunewin format for IT Pros who manages apps for their apps within Intune as the standard onboarding package format. The intunewin upload flow provides the experience for IT Pros to reuse their intunewin format packages, which contain the apps they deployed to their end devices via MEM/Intune to onboarding their apps and test configurations quickly to Test Base.
-
-[Test your Intune app on Test Base.](testintuneapplication.md)
