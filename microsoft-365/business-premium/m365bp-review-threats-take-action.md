@@ -51,15 +51,7 @@ To learn more, see [Threats detected by Microsoft Defender Antivirus](/admin/sec
 
 4. On the flyout, select a device to view available actions, such as **Update policy**, **Update antivirus**, **Run quick scan**, and more.
 
-## View and manage threat detections in the Microsoft 365 Defender portal
-
-1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
-
-2. In the navigation pane, choose **Reports** > **General** > **Security report**.
-
-3. Scroll down to the **Devices** row. If threats were detected on devices, you'll see that information in this row.
-
-## Actions you can take
+### Actions you can take
 
 When you view details about specific threats or devices, you'll see recommendations and one or more actions you can take. The following table describes actions that you might see.<br><br>
 
@@ -71,6 +63,14 @@ When you view details about specific threats or devices, you'll see recommendati
 | Run full scan | Starts a full antivirus scan on the device, focusing on common locations where malware might be registered, and including every file and folder on the device. Results are sent to [Microsoft Endpoint Manager](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager). |
 | Update antivirus | Requires the device to get [security intelligence updates](https://go.microsoft.com/fwlink/?linkid=2149926) for antivirus and antimalware protection. |
 | Restart device | Forces a Windows 10 device to restart within five minutes.<br><br>**IMPORTANT:** The device owner or user isn't automatically notified of the restart and could lose unsaved work. |
+
+## View and manage threat detections in the Microsoft 365 Defender portal
+
+1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
+
+2. In the navigation pane, choose **Reports** > **General** > **Security report**.
+
+3. Scroll down to the **Devices** row. If threats were detected on devices, you'll see that information in this row.
 
 ## Manage threat detections in Microsoft Endpoint Manager
 
