@@ -78,7 +78,7 @@ After a retention policy is configured for chat and channel messages, a timer jo
 Messages remain in the SubstrateHolds folder for at least 1 day, and then if they're eligible for deletion, the timer job permanently deletes them the next time it runs.
 
 > [!IMPORTANT]
-> Because of the [first principle of retention](retention.md#the-principles-of-retention-or-what-takes-precedence) and since Teams chat and channel messages are stored in Exchange Online mailboxes, permanent deletion from the SubstrateHolds folder is always suspended if the mailbox is affected by another retention policy (including policies applied to the Exchange location), litigation hold, delay hold, or if an eDiscovery hold is applied to the mailbox for legal or investigative reasons.
+> Because of the [first principle of retention](retention.md#the-principles-of-retention-or-what-takes-precedence) and since Teams chat and channel messages are stored in Exchange Online mailboxes, permanent deletion from the SubstrateHolds folder is always suspended if the mailbox is affected by another retention policy for the same location, Litigation hold, delay hold, or if an eDiscovery hold is applied to the mailbox for legal or investigative reasons.
 >
 > While the mailbox is included in an applicable hold, Teams chat and channel messages that have been deleted will no longer be visible in the Teams app but will continue to be discoverable with eDiscovery.
 
