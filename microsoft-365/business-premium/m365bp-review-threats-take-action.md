@@ -30,7 +30,7 @@ Microsoft Defender Antivirus detects and protects against the following kinds of
 As an IT professional/admin, you can view information about threat detections across [Windows devices that are enrolled in Intune](/mem/intune/enrollment/device-enrollment) in the Microsoft 365 admin center. You'll see summary information, such as:
 
 - How many devices need antivirus protection
-- How many devices are not in compliance with security policies
+- How many devices aren't in compliance with security policies
 - How many threats are currently active, mitigated, or resolved
 
 You have several options to view specific information about threat detections and devices:
@@ -70,7 +70,7 @@ When you view details about specific threats or devices, you'll see recommendati
 | Run quick scan | Starts a quick antivirus scan on the device, focusing on common locations where malware might be registered, such as registry keys and known Windows startup folders. |
 | Run full scan | Starts a full antivirus scan on the device, focusing on common locations where malware might be registered, and including every file and folder on the device. Results are sent to [Microsoft Endpoint Manager](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager). |
 | Update antivirus | Requires the device to get [security intelligence updates](https://go.microsoft.com/fwlink/?linkid=2149926) for antivirus and antimalware protection. |
-| Restart device | Forces a Windows 10 device to restart within five minutes.<br><br>**IMPORTANT:** The device owner or user is not automatically notified of the restart and could lose unsaved work. |
+| Restart device | Forces a Windows 10 device to restart within five minutes.<br><br>**IMPORTANT:** The device owner or user isn't automatically notified of the restart and could lose unsaved work. |
 
 ## Manage threat detections in Microsoft Endpoint Manager
 
@@ -90,7 +90,7 @@ The following table describes the actions you might see in Microsoft Endpoint Ma
 
 | Action | Description |
 |--|--|
-| Restart | Forces a Windows 10 device to restart within five minutes.<br><br>**IMPORTANT:** The device owner or user is not automatically notified of the restart and could lose unsaved work. |
+| Restart | Forces a Windows 10 device to restart within five minutes.<br><br>**IMPORTANT:** The device owner or user isn't automatically notified of the restart and could lose unsaved work. |
 | Quick Scan | Starts a quick antivirus scan on the device, focusing on common locations where malware might be registered, such as registry keys and known Windows startup folders. Results are sent to [Microsoft Endpoint Manager](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager). |
 | Full Scan | Starts a full antivirus scan on the device, focusing on common locations where malware might be registered, and including every file and folder on the device. Results are sent to [Microsoft Endpoint Manager](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager). |
 | Sync | Requires a device to check in with Intune (part of Microsoft Endpoint Manager). When the device checks in, the device receives any pending actions or policies assigned to the device. |
