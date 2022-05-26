@@ -30,7 +30,7 @@ ms.prod: m365-security
 **Applies to**
 - [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 
-Campaign Views is a feature in Microsoft Defender for Office 365 Plan 2 (for example, Microsoft 365 E5 or organizations with an Defender for Office 365 Plan 2 add-on). Campaign Views in the Microsoft 365 Defender portal identifies and categorizes phishing attacks in the service. Campaign Views can help you to:
+Campaign Views is a feature in Microsoft Defender for Office 365 Plan 2 (for example, Microsoft 365 E5 or organizations with a Defender for Office 365 Plan 2 add-on). Campaign Views in the Microsoft 365 Defender portal identifies and categorizes phishing attacks in the service. Campaign Views can help you to:
 
 - Efficiently investigate and respond to phishing attacks.
 - Better understand the scope of the attack.
