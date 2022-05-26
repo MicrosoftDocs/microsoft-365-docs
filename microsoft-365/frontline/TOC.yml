@@ -138,7 +138,7 @@
     - name: Microsoft Teams for RealWear
       href: flw-realwear.md
     - name: Manage the Shifts app
-      href: manage-the-shifts-app-for-your-organization-in-teams.md
+      href: /microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
     - name: Shifts data FAQ
       href: shifts-data-faq.md
     - name: Manage the Tasks app

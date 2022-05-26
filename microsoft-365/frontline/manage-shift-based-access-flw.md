@@ -118,5 +118,5 @@ Grant-CsTeamsShiftsPolicy -Identity remy@contoso.com -PolicyName "Off Shift Team
 
 ## Related topics
 
-- [Manage the Shifts app for your organization in Teams](manage-the-shifts-app-for-your-organization-in-teams.md)
+- [Manage the Shifts app for your organization in Teams](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams)
 - [Teams PowerShell overview](/microsoftteams/teams-powershell-overview)

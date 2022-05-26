@@ -106,4 +106,4 @@ Shifts data can be migrated from one tenant to another tenant upon specific requ
 ## Related articles
 
 - [Shifts for Teams](shifts-for-teams-landing-page.md)
-- [Manage the Shifts app](manage-the-shifts-app-for-your-organization-in-teams.md)
+- [Manage the Shifts app](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams)

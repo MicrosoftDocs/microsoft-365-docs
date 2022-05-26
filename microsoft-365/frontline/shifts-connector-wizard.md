@@ -184,4 +184,4 @@ After a connection is set up, you use PowerShell to make changes to it. For exam
 
 - [Shifts connectors](shifts-connectors.md)
 - [Use PowerShell to manage your Shifts connection to Blue Yonder Workforce Management](shifts-connector-powershell-manage.md)
-- [Manage the Shifts app in Teams](manage-the-shifts-app-for-your-organization-in-teams.md)
+- [Manage the Shifts app in Teams](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams)

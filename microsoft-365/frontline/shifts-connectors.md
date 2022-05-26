@@ -113,4 +113,4 @@ To learn more, go to https://connect.zebra.com/microsoft-connectors.
 
 ## Related articles
 
-- [Manage the Shifts app](manage-the-shifts-app-for-your-organization-in-teams.md)
+- [Manage the Shifts app](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams)

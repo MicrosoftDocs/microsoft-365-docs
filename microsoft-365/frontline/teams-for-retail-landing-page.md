@@ -158,7 +158,7 @@ For retail environments, the following apps and services can help you transform 
 | RealWear devices | Handsfree communication with devices. | [Microsoft Teams for RealWear](flw-realwear.md) | [Use Microsoft Teams for RealWear](https://support.microsoft.com/office/using-microsoft-teams-for-realwear-af20d232-d18c-476f-8031-843a4edccd5f) |
 | Shifts | Manage schedules and clock in and out with Shifts. | [Manage Shifts](shifts-for-teams-landing-page.md) | [Use Shifts](https://support.microsoft.com/office/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821) |
 | Tasks | Help employees know what they should focus on when not with customers by assigning tasks. Operations can use [task publishing](/microsoftteams/manage-tasks-app#task-publishing) to send out tasks to locations and track progress across those locations. | [Manage the Tasks app](/microsoftteams/manage-tasks-app) | [Use Tasks](https://support.microsoft.com/office/use-the-tasks-app-in-teams-e32639f3-2e07-4b62-9a8c-fd706c12c070) |
-| Walkie Talkie | Push to talk quick communication that's not constrained by geography like standard 2-way radios.| [Manage the Walkie Talkie app](walkie-talkie.md) | [Use Walkie Talkie](https://support.microsoft.com/office/get-started-with-teams-walkie-talkie-25bdc3d5-bbb2-41b7-89bf-650fae0c8e0c) |
+| Walkie Talkie | Push to talk quick communication that's not constrained by geography like standard 2-way radios.| [Manage the Walkie Talkie app](/microsoftteams/walkie-talkie.md) | [Use Walkie Talkie](https://support.microsoft.com/office/get-started-with-teams-walkie-talkie-25bdc3d5-bbb2-41b7-89bf-650fae0c8e0c) |
 
 | More apps and services from Microsoft | Description | Manage | Help |
 | ----- | ----- | ----- | ----- |

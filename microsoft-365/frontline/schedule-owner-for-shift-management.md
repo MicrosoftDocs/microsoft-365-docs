@@ -81,5 +81,5 @@ Grant-CsTeamsShiftsPolicy -Identity remy@contoso.com -PolicyName ScheduleOwnerPo
 
 ## Related articles
 
-- [Manage the Shifts app for your organization in Teams](manage-the-shifts-app-for-your-organization-in-teams.md)
+- [Manage the Shifts app for your organization in Teams](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams)
 - [Manage shift-based access for frontline workers in Teams](manage-shift-based-access-flw.md) 
