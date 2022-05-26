@@ -99,13 +99,13 @@ In the left-hand menu under **Package catalog**, select the **New package**. The
    - If the **Out of Box test** is selected in step 2, you can see the **outofbox** folder under the scripts folder. You also have the option to add **‘Reboot after install'** tag for the Install script.
 
    > [!div class="mx-imgBorder"]
-   > ![Resources in outofbox folder](Media/testapplication11.png)
+   > ![Reference script](Media/testapplication11.png)
 
    > [!NOTE]
    > Install, Launch and Close script tags are mandatory for the OOB test type. Reassigning tags ensures that the correct script path will be used when testing is initiated.
 
    > [!div class="mx-imgBorder"]
-   > ![Resources in outofbox folder](Media/testapplication11-2.png)
+   > ![Edit package prompt](Media/testapplication11-2.png)
 
    - If the **Functional test** is selected in step 2, you can see the **functional** folder under the scripts folder. Additional functional test scripts can be added using the **'Add to functional test list'** button. You need a minimum of one (1) script and can add up to eight (8) functional test scripts.
 
