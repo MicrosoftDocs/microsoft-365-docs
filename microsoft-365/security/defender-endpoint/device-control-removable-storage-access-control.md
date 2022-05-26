@@ -27,7 +27,7 @@ ms.date: 04/11/2022
 
 ## Device Control Removable Storage Access Control Overview
 
-Microsoft Defender for Endpoint Device Control Removable Storage Access Control enables you to audit, allow or prevent the read, write or execute access to removable storage with or without exclusion.
+Microsoft Defender for Endpoint Device Control Removable Storage Access Control feature enables you to audit, allow or prevent the read, write or execute access to removable storage with or without exclusion.
 
 |Privilege|Permission|
 |---|---|
@@ -38,7 +38,7 @@ Microsoft Defender for Endpoint Device Control Removable Storage Access Control 
 |User-based Support|Yes|
 |Machine-based Support|Yes|
 
-Microsoft Defender for Endpoint Device Control Removable Storage Access Control gives you the following capabilities:
+Microsoft Defender for Endpoint Device Control Removable Storage Access Control feature gives you the following capabilities:
 
 |Capability|Description|Deploy through Intune|Deploy through Group Policy|
 |---|---|---|---|
@@ -46,7 +46,7 @@ Microsoft Defender for Endpoint Device Control Removable Storage Access Control 
 |Policy Creation|Allows you to create policy to enforce each removable media group|Step 5 and 7 in the section, [Deploying policy by using OMA-URI](#deploying-policy-by-using-oma-uri) | Steps 2 and 3 in the section, [Deploying policy by using Group Policy](#deploying-policy-by-using-group-policy) |
 |Default Enforcement|Allows you to set default access (Deny or Allow) to removable media if there is no policy|Step 2 in the section, [Deploying policy by using OMA-URI](#deploying-policy-by-using-oma-uri) | Step 4 in the section, [Deploying policy by using Group Policy](#deploying-policy-by-using-group-policy) |
 |Enable or Disable Removable Storage Access Control|If you set Disable, it will disable the Removable Storage Access Control policy on this machine| Step 1 in the section, [Deploying policy by using OMA-URI](#deploying-policy-by-using-oma-uri) | Step 5 in the section, [Deploying policy by using Group Policy](#deploying-policy-by-using-group-policy) |
-|Capture file information|Allows you to create policy to capture file information when Write access happens| Steps 2 and 5 in the section, [Deploying policy by using OMA-URI](#deploying-policy-by-using-oma-uri) | Step 2 and 6 in the section, [Deploying policy by using Group Policy](#deploying-policy-by-using-group-policy) |
+|Capture file information|Allows you to create policy to capture file information when Write access happens|  | Step 2 and 6 in the section, [Deploying policy by using Group Policy](#deploying-policy-by-using-group-policy) |
 
 ### Prepare your endpoints
 
@@ -95,7 +95,7 @@ You can use the following properties to create the access control policy:
 
 ## Device Control Removable Storage Access Control Scenarios
 
-To familiarize you with Microsoft Defender for Endpoint Removable Storage Access Control, we have put together some common scenarios for you to follow.
+To help you familiarize with Microsoft Defender for Endpoint Removable Storage Access Control, we have put together some common scenarios for you to follow.
 
 ### Scenario 1: Prevent Write and Execute access to all but allow specific approved USBs
 
@@ -210,37 +210,50 @@ For policy deployment in Intune, the account must have permissions to create, ed
 
 Go to Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>) **> Devices > Create profile > Platform: Windows 10 and later, Profile type: Templates > Custom**
 
-1. Enable RSAC: You can enable Removable Storage Access Control as follows:
+1. Enable or Disable Removable Storage Access Control: you can set this value to enable or disable Removable Storage Access Control; 
+    - Under **Custom > Configuration settings**, click **Add**.
+    - In the **Add Row** pane, enter:
+        - **Name** as **Enable RSAC** 
 
-    - OMA-URI:
+        - **OMA-URI** as 
+          `./Vendor/MSFT/Defender/Configuration/DeviceControlEnabled`
 
-      `./Vendor/MSFT/Defender/Configuration/DeviceControlEnabled`
+        - **Data Type** as **Integer**
+       
+        - **Value** as **1**
+        
+           `Disable: 0`
+           `Enable: 1`
 
-    - Data Type: Int
-    
-    - Value: 1
+        - Click **Save**.
     
     :::image type="content" source="images/enable-rsac.png" alt-text="Enable RSAC" lightbox="images/enable-rsac.png":::
       
-2. Set Default Enforcement = Deny: You can set default access as Deny to removable media if there is no policy as follows:
+2. Set Default Enforcement: You can set default access (Deny or Allow) to removable media if there is no policy. For example, you only have policy (either Deny or Allow) for RemovableMediaDevices, but do not have any policy for CdRomDevices or WpdDevices, and you set default Deny through this policy, Read/Write/Execute access to CdRomDevices or WpdDevices will be blocked. 
 
-    - OMA-URI:
-
+    - In the **Add Row** pane, enter:
+    
+        - **OMA-URI** as
       `./Vendor/MSFT/Defender/Configuration/DefaultEnforcement`
 
-    - Data Type: Int
-    
-    - Value: 2
+        - **Data Type** as **Integer**
+        
+        - **Value** as **1** or **2**
+        
+          `DefaultEnforcementAllow = 1`
+          `DefaultEnforcementDeny = 2`
+        - Click **Save**.
     
     :::image type="content" source="images/default-deny.png" alt-text="Set Default Enforcement = Deny" lightbox="images/default-deny.png":::    
 
-3. Audit Default Deny: 
+3. Audit Default Deny: You can audit Default Deny as follows:
+    - In the **Add Row** pane, enter:
 
-    - OMA-URI: 
-    
-      `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bf3520ea7-fd1b-4237-8ebc-96911db44f8e%7d/RuleData`
+        - **OMA-URI** as     
+          `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bf3520ea7-fd1b-4237-8ebc-96911db44f8e%7d/RuleData`
 
-    - Data Type: String (XML file)
+        - **Data Type** as **String (XML file)**
+        - Click **Save**.
     :::image type="content" source="images/audit-default-deny-XML-file.png" alt-text="audit default deny xml file":::
         
     :::image type="content" source="images/audit-default-deny.png" alt-text="Audit Default Deny" lightbox="images/audit-default-deny.png":::
@@ -248,12 +261,12 @@ Go to Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>
     XML file download location: [mdatp-devicecontrol/Audit Default Deny.xml at main · microsoft/mdatp-devicecontrol (github.com](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Audit%20Default%20Deny.xml)
 
 4. ReadOnly - Group: You can create any removable storage group as follows:
+    - In the **Add Row** pane, enter:
+       - **OMA-URI** as   
+         `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b9b28fae8-72f7-4267-a1a5-685f747a7146%7d/GroupData`
 
-   - OMA-URI: 
-   
-     `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b9b28fae8-72f7-4267-a1a5-685f747a7146%7d/GroupData`
-
-   - Data Type: String (XML file)
+       - **Data Type** as **String (XML file)**
+       - Click **Save**.
    :::image type="content" source="images/read-only-group-xml-file.png" alt-text="read only group xml file":::
       
     :::image type="content" source="images/any-removable-storage-group.png" alt-text="Any Removable Storage Group" lightbox="images/any-removable-storage-group.png":::
@@ -261,12 +274,11 @@ Go to Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>
    XML file download location: [mdatp-devicecontrol/Any Removable Storage and CD-DVD and WPD Group.xml at main · microsoft/mdatp-devicecontrol (github.com](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Any%20Removable%20Storage%20and%20CD-DVD%20and%20WPD%20Group.xml)
  
 5. ReadOnly - Policy: You can create policy to allow read activity as follows:
+    - In the **Add Row** pane, enter:
+        - **OMA-URI** as 
+            `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bf7e75634-7eec-4e67-bec5-5e7750cb9e02%7d/RuleData`
 
-    - OMA-URI: 
-     
-      `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bf7e75634-7eec-4e67-bec5-5e7750cb9e02%7d/RuleData`
-
-    - Data Type: String (XML file)
+        - **Data Type** as **String (XML file)**
     :::image type="content" source="images/read-only-policy-xml-file.png" alt-text="read only policy xml file":::
         
     :::image type="content" source="images/allow-read-activity.png" alt-text="Allow Read Activity" lightbox= "images/allow-read-activity.png":::
@@ -274,12 +286,12 @@ Go to Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>
     XML file download location: [mdatp-devicecontrol/Allow Read.xml at main · microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Allow%20Read.xml)
 
 6. Create Group for Allowed Medias: You can create allowed medias group as follows:
+    - In the **Add Row** pane, enter:
    
-   - OMA-URI:
-     
-     `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b65fa649a-a111-4912-9294-fb6337a25038%7d/GroupData`
+       - **OMA-URI** as     
+         `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b65fa649a-a111-4912-9294-fb6337a25038%7d/GroupData`
 
-   - Data Type: String (XML file) 
+       - **Data Type** as **String (XML file)** 
    :::image type="content" source="images/create-group-allowed-medias-xml-file.png" alt-text="create group for allowed medias xml file":::
       
    :::image type="content" source="images/create-group-allowed-medias.png" alt-text="Approved USBs group" lightbox="images/create-group-allowed-medias.png"::: 
@@ -287,13 +299,12 @@ Go to Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>
    XML file download location: [mdatp-devicecontrol/Approved USBs Group.xml at main · microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Approved%20USBs%20Group.xml)
 
 7. Create Policy to allow the approved USB Group: You can create policy to allow the approved USB group as follows:
-   
-   - OMA-URI:
-     
-     `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bb2061588-029e-427d-8404-6dfec096a571%7d/RuleData`
+    - In the **Add Row** pane, enter:
+       - **OMA-URI** as     
+         `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bb2061588-029e-427d-8404-6dfec096a571%7d/RuleData`
 
-   - Data Type: String (XML file) 
-   :::image type="content" source="images/create-policy-allow-approved-USB-group-XML-file.png" alt-text="create policy to allow the approved USB Group XML file":::
+       - **Data Type** as **String (XML file)** 
+       :::image type="content" source="images/create-policy-allow-approved-USB-group-XML-file.png" alt-text="create policy to allow the approved USB Group XML file":::
       
    :::image type="content" source="images/allow-access-audit-file-information.png" alt-text="Allow access and audit file information" lightbox= "images/allow-access-audit-file-information.png":::
    
@@ -304,6 +315,76 @@ Go to Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>
    Execute: 4 + 32 = 36
 
    XML file download location: [mdatp-devicecontrol/Allow full access and audit file.xml at main · microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Allow%20full%20access%20and%20audit%20file.xml)
+
+### Deploying policy via OMA-URI
+
+Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>) \> **Devices** \> **Configuration profiles** \> **Create profile** \> **Platform: Windows 10 and later & Profile: Custom**
+
+1. For each Group, create an OMA-URI rule:
+
+    - OMA-URI:
+
+      `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b**GroupGUID**%7d/GroupData`
+
+      For example, for **any removable storage and CD/DVD** group in the sample, the link must be:
+
+      `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b9b28fae8-72f7-4267-a1a5-685f747a7146%7d/GroupData`
+
+    - Data Type: String (XML file)
+
+      :::image type="content" source="images/xml-data-type-string.png" alt-text="The Data type field in the Add Row page" lightbox="images/xml-data-type-string.png":::
+
+2. For each policy, also create an OMA-URI:
+
+    - OMA-URI:
+
+      `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7b**PolicyRuleGUID**%7d/RuleData`
+
+      For example, for the **Block Write and Execute Access but allow approved USBs** rule in the sample, the link must be:
+
+      `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bc544a991-5786-4402-949e-a032cb790d0e%7d/RuleData`
+
+    - Data Type: String (XML file)
+
+    If you want to monitor file information for Write access, use the right AccessMask with the right Option (16); here is the example of [Capture file information](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Audit%20File%20Information.xml).
+
+3. Default enforcement: allows you to set default access (Deny or Allow) to removable media if there is no policy. For example, you only have policy (either Deny or Allow) for RemovableMediaDevices, but do not have any policy for CdRomDevices or WpdDevices, and you set default Deny through this policy, Read/Write/Execute access to CdRomDevices or WpdDevices will be blocked.
+
+    - OMA-URI: `./Vendor/MSFT/Defender/Configuration/DefaultEnforcement`
+
+    - Data Type: Int
+
+      `DefaultEnforcementAllow = 1`
+      `DefaultEnforcementDeny = 2`
+
+    - Once you deploy this setting, you will see **Default Allow** or **Default Deny**
+    - Consider both Disk level and File system level AccessMask when configuring this setting, for example, if you want to Default Deny but allow specific storage, you have to allow both Disk level and File system level access, you have to set AccessMask to 63.
+
+    :::image type="content" source="images/148609590-c67cfab8-8e2c-49f8-be2b-96444e9dfc2c.png" alt-text="Default Enforcement Allow PowerShell code":::
+
+4. Enable or Disable Removable Storage Access Control: you can set this value to temporarily disable Removable Storage Access Control.
+
+   - OMA-URI: `./Vendor/MSFT/Defender/Configuration/DeviceControlEnabled`
+
+   - Data Type: Int
+     `Disable: 0`
+     `Enable: 1`
+
+   - Once you deploy this setting, you will see **Enabled** or **Disabled**
+
+    **Disabled** means this machine does not have Removable Storage Access Control policy running
+
+    :::image type="content" source="images/148609770-3e555883-f26f-45ab-9181-3fb1ff7a38ac.png" alt-text="Removeable Storage Access Control in PowerShell code":::
+
+5. Set the location for a copy of the file: if you want to have a copy of the file when Write access happens, you have to set the location where the system can save the copy.
+
+    - OMA-URI: `./Vendor/MSFT/Defender/Configuration/DataDuplicationRemoteLocation
+
+    - Data Type: String
+
+    You have to deploy this together with the right AccessMask and the right Option - see step 2 above.
+
+    :::image type="content" source="../../media/device-control-oma-uri-edit-row.png" alt-text="Set locaiton for file evidence":::
 
 ## Deploying and managing policy by using Intune user interface
 
