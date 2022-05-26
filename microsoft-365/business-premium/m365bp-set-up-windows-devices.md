@@ -73,6 +73,6 @@ On the **Sync status** page, choose **Sync** to get the latest mobile device man
   
 ## Next steps
 
-To set up your mobile devices, see [Set up mobile devices for Microsoft 365 Business Premium users](set-up-mobile-devices.md), 
+To set up your mobile devices, see [Set up unmanaged (BYOD) devices](m365bp-devices-overview.md). 
 
 To increase protection, see [Best practices for securing Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md).
