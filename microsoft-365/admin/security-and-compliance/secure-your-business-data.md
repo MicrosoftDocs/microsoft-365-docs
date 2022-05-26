@@ -348,4 +348,5 @@ To learn more, see the following resources:
 
 [Multi-factor authentication for Microsoft 365](multi-factor-authentication-microsoft-365.md) (article)\
 [Manage and monitor priority accounts](../setup/priority-accounts.md) (article)\
-[Microsoft 365 Reports in the admin center](../activity-reports/activity-reports.md) (video)
+[Microsoft 365 Reports in the admin center](../activity-reports/activity-reports.md) (video)\
+[Microsoft 365 Business Premium — cybersecurity for small business](/microsoft-365/business-premium/) (article)\
