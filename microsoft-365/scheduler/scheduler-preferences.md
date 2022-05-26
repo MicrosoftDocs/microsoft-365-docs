@@ -22,7 +22,7 @@ Scheduler uses several Outlook preferences to schedule a meeting for an organize
 
 - **Online meetings**. You can turn on a Calendar option so that all the meetings you schedule from Outlook and Scheduler will be held online with conference details. Scheduler currently supports Teams and Skype as meeting providers. See [Make all meetings Teams meetings](https://support.microsoft.com/en-us/office/schedule-a-teams-meeting-from-outlook-883cc15c-580f-441a-92ea-0992c00a9b0f#bkmk_makeallteamsmtngs) for information.
 
-- **Default meeting duration**. If the organizer does not specify the desired meeting duration in the request, Scheduler will use the preferred meeting duration for the request. This setting is only available in the Windows Outlook client.
+- **Default meeting duration**. If the organizer doesn't specify the desired meeting duration in the request, Scheduler will use the preferred meeting duration for the request. This setting is only available in the Windows Outlook client.
 
    1. Select **File** > **Options** to see the Outlook Options dialog.
 
