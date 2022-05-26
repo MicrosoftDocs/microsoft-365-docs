@@ -27,7 +27,7 @@ To create a payload automation, do the following steps:
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com/>, go to **Email & collaboration** \> **Attack simulation training** \> **Automations** tab \> **Payload automations**.
 
-   To go directly to the **Automations** tab, use <https://security.microsoft.com/attacksimulator?viewid=automations>.
+   To go directly to the **Automations** tab where you can select **Payload automations**, use <https://security.microsoft.com/attacksimulator?viewid=automations>.
 
 2. In **Payload automations**, select ![Create automation icon.](../../media/m365-cc-sc-create-icon.png) **Create automation**.
 
