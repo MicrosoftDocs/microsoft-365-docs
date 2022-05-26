@@ -75,9 +75,9 @@ To learn more, see [Embed a model-driven app as a tab app in Teams](/powerapps/t
 
 If you're an admin, you can view and manage team templates in the Microsoft Teams admin center. To view the Manage volunteers template, in the left navigation of the Teams admin center, go to **Teams** > **Team templates**.
 
-You can also [create and assign templates policies](templates-policies.md) to your users to control which templates they see in Teams for creating teams.
+You can also [create and assign templates policies](/microsoftteams/templates-policies) to your users to control which templates they see in Teams for creating teams.
 
-To learn more about team templates in general, see [Get started with team templates in the Teams admin center](get-started-with-teams-templates-in-the-admin-console.md).
+To learn more about team templates in general, see [Get started with team templates in the Teams admin center](/microsoftteams/get-started-with-teams-templates-in-the-admin-console).
 
 ## Related articles
 

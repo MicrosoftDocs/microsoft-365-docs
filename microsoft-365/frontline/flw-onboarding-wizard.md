@@ -23,7 +23,7 @@ appliesto:
 
 The Frontline Worker onboarding wizard in the Microsoft 365 admin center simplifies onboarding frontline workers to your organization. The wizard lets you quickly deploy an experience in Microsoft Teams that's tailored to your frontline workforce. Using the wizard, you can easily kick off your pilot deployment of Teams for the frontline workers in your organization.
 
-The wizard sets up a team for your frontline workers and assigns licenses and [policy packages](manage-policy-packages.md) to each team member. You can create your team from scratch or from a [team template](get-started-with-teams-templates-in-the-admin-console.md), and then you add users and assign roles. The role determines the policy package that the wizard assigns to each user.
+The wizard sets up a team for your frontline workers and assigns licenses and [policy packages](/microsoftteams/manage-policy-packages) to each team member. You can create your team from scratch or from a [team template](/microsoftteams/get-started-with-teams-templates-in-the-admin-console), and then you add users and assign roles. The role determines the policy package that the wizard assigns to each user.
 
 Currently, the wizard supports adding 100 users each time you run it. We're working on increasing the number of users per run soon. Check back here for the latest updates.
 
@@ -37,7 +37,7 @@ Check out this short video for an overview of how to run the wizard to onboard y
 > This wizard lets you quickly onboard your frontline workforce to Teams through the Microsoft 365 admin center. For information about how deploy Teams to your frontline workforce using scripts, see [How to provision Teams at scale for Frontline Workers](flw-scripted-deployment.md).
 
 > [!NOTE]
-> The wizard doesn't support [sensitivity labels](sensitivity-labels.md) yet. If your organization requires sensitivity labels to create a team, you won't see the wizard in the Microsoft 365 admin center.
+> The wizard doesn't support [sensitivity labels](/microsoftteams/sensitivity-labels) yet. If your organization requires sensitivity labels to create a team, you won't see the wizard in the Microsoft 365 admin center.
 
 ## Run the wizard
 
@@ -86,5 +86,5 @@ When the frontline employee opens Teams for the first time, they'll receive a ta
 
 ## Related articles
 
-- [Manage policy packages in Teams](manage-policy-packages.md)
-- [Use team templates in the Teams admin center](get-started-with-teams-templates-in-the-admin-console.md)
+- [Manage policy packages in Teams](/microsoftteams/manage-policy-packages)
+- [Use team templates in the Teams admin center](/microsoftteams/get-started-with-teams-templates-in-the-admin-console)

@@ -238,7 +238,7 @@ The connector supports patients joining appointments through a link in the SMS t
 
 Key features of the patient experience:
 
-- Patients can join appointments from [modern web browsers on desktop and mobile without having to install the Teams app](../browser-join.md).
+- Patients can join appointments from [modern web browsers on desktop and mobile without having to install the Teams app](browser-join.md).
 - Patients can test their device hardware and connection before joining an appointment.
 
     :::image type="content" source="media/ehr-admin-epic-device-test.png" alt-text="Images of a mobile device, showing device test capabilities." lightbox="media/ehr-admin-epic-device-test.png":::

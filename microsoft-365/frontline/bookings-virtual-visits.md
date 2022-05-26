@@ -47,7 +47,7 @@ This article gives you an overview of how to schedule, manage, and conduct Virtu
 
 ## Before you get started
 
-If you’re an admin, see [Manage the Bookings app in Teams](../bookings-app-admin.md) to learn about the prerequisites for using the Bookings app in Teams, how to control access to Bookings in your organization, and recommended policy and admin settings.
+If you’re an admin, see [Manage the Bookings app in Teams](/microsoftteams/bookings-app-admin) to learn about the prerequisites for using the Bookings app in Teams, how to control access to Bookings in your organization, and recommended policy and admin settings.
 
 Remember that only schedulers in your organization need to have the Bookings app installed in Teams. Staff who conduct or participate in virtual appointments don't need the app. They join appointments from their Teams or Outlook calendar or by using the meeting link in their booking confirmation email.
 
@@ -77,7 +77,7 @@ Create specific appointment types to represent the services offered by your orga
 
 In the booking calendar, go to **More options** (...) > **Appointment types**, and then select **New appointment type**. Enter a name&mdash;for example, Account opening, Prescription renewal, Loan consultation, Tax preparation&mdash;and any other information and settings you want.
 
-The information and links that you add are included in the email confirmation that's sent to attendees every time this type of appointment is booked. You can even set email reminders and other options such as whether attendees can [join from a mobile browser](mobile-browser-join.md) without having to download Teams. To learn more, see [Create an appointment type](https://support.microsoft.com/office/create-an-appointment-type-810eac77-6a65-4dc8-964d-c00eadf43887).
+The information and links that you add are included in the email confirmation that's sent to attendees every time this type of appointment is booked. You can even set email reminders and other options such as whether attendees can [join from a mobile browser](browser-join.md) without having to download Teams. To learn more, see [Create an appointment type](https://support.microsoft.com/office/create-an-appointment-type-810eac77-6a65-4dc8-964d-c00eadf43887).
 
 ## Schedule a visit
 
@@ -112,16 +112,16 @@ To learn more, see [Microsoft Bookings](/microsoft-365/bookings/bookings-overvie
 
 ## Get insight into Virtual Visits usage
 
-The [Virtual Visits usage report](../teams-analytics-and-reports/virtual-visits-usage-report.md) in the Microsoft Teams admin center gives admins an overview of Teams Virtual Visits activity in your organization. The report shows detailed analytics for virtual appointments including Bookings visits.
+The [Virtual Visits usage report](virtual-visits-usage-report.md) in the Microsoft Teams admin center gives admins an overview of Teams Virtual Visits activity in your organization. The report shows detailed analytics for virtual appointments including Bookings visits.
 
 You can view key metrics such as lobby wait time and visit duration. Use this information to gain insight into usage trends to help you optimize Virtual Visits to deliver better business outcomes.
 
 ## Related articles
 
-- [Manage the join experience for Teams Virtual Visits on mobile browsers](mobile-browser-join.md)
+- [Manage the join experience for Teams Virtual Visits on mobile browsers](browser-join.md)
 
-- [Teams Virtual Visits usage report](../teams-analytics-and-reports/virtual-visits-usage-report.md)
+- [Teams Virtual Visits usage report](virtual-visits-usage-report.md)
 
-- [Get started with Teams for healthcare organizations](healthcare/teams-in-hc.md)
+- [Get started with Teams for healthcare organizations](teams-in-hc.md)
 
 - [Bookings app in Teams help documentation](https://support.office.com/article/apps-and-services-cc1fba57-9900-4634-8306-2360a40c665b?#PickTab=Bookings)
