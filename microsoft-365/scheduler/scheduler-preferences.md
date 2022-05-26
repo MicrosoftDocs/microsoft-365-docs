@@ -12,7 +12,7 @@ description: Learn how to set scheduling preferences for Scheduler for Microsoft
 
 # Scheduling preferences used by Scheduler
 
-Scheduler uses several Outlook preferences to schedule a meeting for an organizer. Any changes to the preference settings in Outlook clients will affect how Scheduler handles subsequent requests. For instance, if an organizer changes the time zone preference on the settings page in Outlook Web, all requests by the organizer that follow will default to the new time zone.
+Scheduler uses several Outlook preferences to schedule a meeting for an organizer. Any changes to the preference settings in Outlook clients will affect how Scheduler handles requests. For instance, if an organizer changes the time zone preference on the settings page in Outlook Web, all requests by the organizer that follow will default to the new time zone.
 
 ## Supported settings
 
