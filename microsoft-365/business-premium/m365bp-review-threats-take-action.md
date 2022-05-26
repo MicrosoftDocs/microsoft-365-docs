@@ -1,8 +1,8 @@
 ---
-title: "Review detected threats and take action"
+title: "Review detected threats on devices and take action"
 f1.keywords: NOCSH
-ms.author: sharik
-author: SKjerland
+ms.author: deniseb
+author: denisebmsft
 manager: scotv
 audience: Admin
 ms.topic: article 
@@ -14,7 +14,7 @@ ms.collection:
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
-description: "Learn how to review and manage threats detected by Microsoft Defender Antivirus on your Windows 10 devices." 
+description: "Learn how to review and manage threats detected by Microsoft Defender Antivirus on your Windows devices." 
 ---
 
 # Review threats detected by Microsoft Defender Antivirus and take action
