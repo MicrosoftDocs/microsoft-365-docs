@@ -18,11 +18,11 @@ f1.keywords: NOCSH
 
 # Creating and Testing Binary Files on Test Base
 
-This section provides all the steps necessary to create a new package containing binary files, for uploading and testing on Test Base. If you already have a pre-built .zip file, you can see [Upload your Test Base Package (Zip)](uploadApplication.md), to upload your file..
+This section provides all the steps necessary to create a new package containing binary files, for uploading and testing on Test Base. If you already have a pre-built .zip file, you can see [Upload your Test Base Package (Zip)](uploadApplication.md), to upload your file.
 
 **Important**
 
-If you do not have a **Test Base** account, you will need to create one before proceeding, as described in [create a Test Base account](createAccount.md).
+If you do not have a **Test Base** account, you will need to create one before proceeding, as described in [Creating a Test Base account](createAccount.md).
 
 ## Create a new package
 
@@ -35,7 +35,7 @@ In the left-hand menu under **Package catalog**, select the **New package**. The
 
 ### Step 1. Define content
 
-1. In the **Package source** section, select Binaries (eg: .exe, .msi) in the Package source type..
+1. In the **Package source** section, select Binaries (eg: .exe, .msi) in the Package source type.
 
    > [!div class="mx-imgBorder"]
    > ![Choose your package source](Media/testapplication02.png)
