@@ -12,7 +12,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how and why to delete a document understanding model in Microsoft SharePoint Syntex.
+description: Learn how to delete a document understanding model in Microsoft SharePoint Syntex.
 ---
 
 # Delete a model in Microsoft SharePoint Syntex
@@ -32,18 +32,16 @@ Follow these steps to rename a document understanding model.
 
 1. From the content center, select **Models** to see your models list.
 
-2. On the **Models** page, select the model you want to rename.
+2. On the **Models** page, select the model you want to delete.
 
-3. By using either the ribbon or the **Show actions** button (next to the model name), select **Delete**. </br>
+3. By using either the ribbon or the **Show actions** button (next to the model name), select **Delete**. 
 
-    ![Screenshot of the Models page showing a selected model with the Delete options highlighted.](../media/content-understanding/select-model-rename-both.png) </br>
+    ![Screenshot of the Models page showing a selected model with the Delete options highlighted.](../media/content-understanding/select-model-delete.png)
 
 4. On the **Delete model** panel, select **Delete**.
 
 ## See also
 
 [Document understanding overview](document-understanding-overview.md)
-
-[Explanation types](explanation-types-overview.md)
 
 [Apply a model](apply-a-model.md) 
