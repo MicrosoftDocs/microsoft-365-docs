@@ -22,7 +22,7 @@ ms.custom:
 - AdminSurgePortfolio
 - business_assist
 - AdminTemplateSet
-ms.date: 05/25/2022
+ms.date: 05/26/2022
 ---
 
 # How to pay for your subscription
