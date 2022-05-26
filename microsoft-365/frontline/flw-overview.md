@@ -65,7 +65,6 @@ Enrich your communications and employee experiences with Microsoft 365 for front
 Safeguard your business with best-in-class security and compliance features. Microsoft 365 for frontline workers offers identity and access management, identity and threat protection, and security management. The offerings available to your workforce in these areas depends on the licenses you assign to your users in the Microsoft 365 admin center. For more information about security and compliance in Microsoft 365, see the following resources:
 
 - [Introduction to security in Microsoft 365](/learn/modules/security-in-m365/)
-- []()
 - [Introduction to compliance tools in Microsoft 365](/learn/modules/compliance-in-m365/)
 - [Quick tasks for getting started with Microsoft Purview](/microsoft-365/compliance/compliance-quick-tasks?view=o365-worldwide)
 
