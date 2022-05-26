@@ -74,14 +74,21 @@ If you experience any installation failures, refer to [Troubleshooting installat
 > [!NOTE]
 > It is not supported to install Microsoft Defender for Endpoint in any other location other than the default install path. 
 
+> [!NOTE]
+> MDE for Linux create “mdatp” user with random UID and GID. If customer wants to control the UID and GID then it’s advice to create ‘mdatp’ user before installation with “/usr/sbin/nologin” shell option.
+> For e.g. “mdatp:x:UID:GID::/home/mdatp:/usr/sbin/nologin”
+
 ### System requirements
+
+> [!NOTE]
+> Red Hat Enterprise Linux and CentOS 6.7 to 6.10 are in Public Preview
 
 - Supported Linux server distributions and x64 (AMD64/EM64T) and x86_64 versions:
 
-  - Red Hat Enterprise Linux 6.7 or higher
+  - Red Hat Enterprise Linux 6.7 or higher (Preview)
   - Red Hat Enterprise Linux 7.2 or higher
   - Red Hat Enterprise Linux 8.x
-  - CentOS 6.7 or higher 
+  - CentOS 6.7 or higher (Preview)
   - CentOS 7.2 or higher
   - Ubuntu 16.04 LTS or higher LTS
   - Debian 9 or higher
@@ -95,13 +102,16 @@ If you experience any installation failures, refer to [Troubleshooting installat
     > Distributions and version that are not explicitly listed are unsupported (even if they are derived from the officially supported distributions).
 
 - List of supported kernel versions
-  - Minimum kernel version 3.10.0-327 (For all the supported Linux distributions mentioned above except Red Hat Enterprise Linux 6 and CentOS 6)
+  > [!NOTE]
+  > MDE for RHEL/CentOS - 6.7 to 6.10 is a Kernel based solution. We expect customers to check the supported list of kernel in the below section before updating to the newer kernel version
+  > MDE for all other distributions and version is a user based solution and agnostic of kernel updates. The only requirement is the kernel version should be on or above 3.10.0-327
+
   - The `fanotify` kernel option must be enabled
   - Red Hat Enterprise Linux 6 and CentOS 6:
     - For 6.7: 2.6.32-573.*
     - For 6.8: 2.6.32-642.*
     - For 6.9: 2.6.32-696.* (except 2.6.32-696.el6.x86_64)
-    - For 6.10: 2.6.32.754.2.1.el6.x86_64 to 2.6.32-754.43.1:
+    - For 6.10: 2.6.32.754.2.1.el6.x86_64 to 2.6.32-754.47.1:
     
        - 2.6.32-754.10.1.el6.x86_64
        - 2.6.32-754.11.1.el6.x86_64
