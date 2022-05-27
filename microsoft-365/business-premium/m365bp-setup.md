@@ -40,9 +40,7 @@ Make sure that you meet the following requirements before you begin your setup p
 
 ## Guided setup process
 
-Microsoft 365 Business Premium includes a guided process for basic setup. 
-
-The following video shows the guided setup process for Microsoft 365 Business Standard, which works the same way in Microsoft 365 Business Premium.<br/><br/>
+Microsoft 365 Business Premium includes a guided process. The following video shows the guided setup process for Microsoft 365 Business Standard, which also applies to Microsoft 365 Business Premium.<br/><br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
 
@@ -69,17 +67,6 @@ If you'd prefer to have a Microsoft partner help you get and set up Microsoft 36
 
 - [Set up self-service group management](/azure/active-directory/enterprise-users/groups-self-service-management)
 
-## Next objectives
+### Next objective
 
-After you have finished your initial setup process, your next objectives are to set up your security and compliance capabilities:
-
-1. [Set up your security protection](m365bp-security-overview.md).
-
-2. Train your team:
-
-   - [Set up personal devices used to access business data](m365bp-devices-overview.md)
-   - [Use email more securely](m365bp-protect-email-overview.md)
-   - [Collaborate and share more securely](m365bp-collaborate-share-securely.md)
-
-3. [Protect managed devices](m365bp-protect-devices.md).
-
+Once you've achieved these objectives, move on to the [next mission](m365bp-security-overview.md).
