@@ -31,8 +31,6 @@ description: "Setup overview for Microsoft 365 Business Premium for campaigns or
 
 Now that you have [subscribed to Microsoft 365 Business Premium for Campaigns](get-microsoft-365-campaigns.md), your next step is to get everything set up.
 
-:::image type="content" source="media/m365bp-signin-setup.jpg" alt-text="Business Premium setup":::
-
 ## Before you begin
 
 Make sure that you meet the following requirements before you begin your setup process:
