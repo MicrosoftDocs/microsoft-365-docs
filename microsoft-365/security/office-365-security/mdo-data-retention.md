@@ -34,7 +34,7 @@ By default, data across different features is retained for a maximum of 30 days.
 |Activity alert details (audit logs) | 7 days |
 |Email entity page | 30 days |
 |Quarantine | 30 days (configurable up to 30 days maximum) |
-|Reports | 90 days (for all aggregated data) <br>30 days (for all detailed information except below**) <br> 10 days (for Threat protection status report detail and spoof mail report details)** <br> 7 days (for URL protection report details)** <br>
+|Reports | 90 days (for all aggregated data) <br>30 days (for all detailed information except below) <br> 10 days (for Threat protection status report detail and spoof mail report details) <br> 7 days (for URL protection report details) <br>
 |Submissions | 30 days |
 |Threat Explorer/ Real-Time detections | 30 days |
 
