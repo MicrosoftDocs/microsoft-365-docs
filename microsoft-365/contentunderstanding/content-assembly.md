@@ -28,7 +28,7 @@ With content assembly, you can use an existing document to create a *modern temp
 
 Follow these steps to create a modern template.
 
-1. From a Sharepoint document library, select **New** > **Create modern template**.
+1. From a SharePoint document library, select **New** > **Create modern template**.
 
    ![Screenshot of document library with the Create modern template option highlighted.](../media/content-understanding/content-assembly-create-template-1.png)
 
@@ -135,7 +135,7 @@ You can create as many placeholders as you think are necessary. When you're done
 
 If you need to edit an existing template or to delete or unpublish a template, follow these steps.
 
-1. From a Sharepoint document library, select **New** > **Edit New menu**.
+1. From a SharePoint document library, select **New** > **Edit New menu**.
 
    ![Screenshot of document library with the Edit New menu option highlighted.](../media/content-understanding/content-assembly-edit-template-1.png)
 
@@ -157,7 +157,7 @@ If you need to edit an existing template or to delete or unpublish a template, f
 
 You can use a *published* modern template to quickly create similar documents without having to start from scratch. To create a document using a published template, follow these steps:
 
-1. From a Sharepoint document library, select **New**, and then select the modern template you want to use.
+1. From a SharePoint document library, select **New**, and then select the modern template you want to use.
 
    ![Screenshot of document library showing the modern template choices on the New menu.](../media/content-understanding/content-assembly-create-document-1.png)
 
