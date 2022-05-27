@@ -23,7 +23,9 @@ description: Learn how to use the report to refine your organization's default d
 
 # Get started with the default DLP policy
 
-Before you even create your first data loss prevention (DLP) policy, DLP is helping to protect your sensitive information with a default policy. This default policy and its recommendation (shown below) help keep your sensitive content secure by notifying you when email or documents containing a credit card number were shared with someone outside your organization. You'll see this recommendation on the **Home** page of the Security &amp; Compliance Center. 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Before you even create your first Microsoft Purview Data Loss Prevention (DLP) policy, DLP is helping to protect your sensitive information with a default policy. This default policy and its recommendation (shown below) help keep your sensitive content secure by notifying you when email or documents containing a credit card number were shared with someone outside your organization. You'll see this recommendation on the **Home** page of the Microsoft Purview compliance portal. 
   
 You can use this widget to quickly view when and how much sensitive information was shared, and then refine the default DLP policy in just a click or two. You can also edit the default DLP policy at any time because it's fully customizable. Note that if you don't see the recommendation at first, try clicking **+More** at the bottom of the **Recommended for you** section. 
   
@@ -59,7 +61,7 @@ If you want to change these options later, you can edit the default DLP policy a
   
 ## Edit the default DLP policy
 
-This policy is named **Default DLP policy** and appears under **Data loss prevention** on the **Policy** page of the Security &amp; Compliance Center. 
+This policy is named **Default DLP policy** and appears under **Data loss prevention** on the **Policy** page of the Microsoft Purview compliance portal. 
   
 This policy is fully customizable, the same as any DLP policy that you create yourself from scratch. You can also turn off or delete the policy, so that your users no longer receive policy tips or email notifications.
   
@@ -67,11 +69,11 @@ This policy is fully customizable, the same as any DLP policy that you create yo
   
 ## When the widget does and does not appear
 
-The widget named **Further protect shared content** appears in the **Recommended for you** section of the **Home** page of the Security &amp; Compliance Center. 
+The widget named **Further protect shared content** appears in the **Recommended for you** section of the **Home** page of the Microsoft Purview compliance portal. 
   
 This widget appears only when:
   
-- There are no data loss prevention policies in the Security &amp; Compliance Center or Exchange admin center. This widget is intended to help you get started with DLP, so it doesn't appear if you already have DLP policies.
+- There are no data loss prevention policies in the Microsoft Purview compliance portal or Exchange admin center. This widget is intended to help you get started with DLP, so it doesn't appear if you already have DLP policies.
     
 - Content containing least one credit card has been shared with someone outside your organization in the past 30 days.
     

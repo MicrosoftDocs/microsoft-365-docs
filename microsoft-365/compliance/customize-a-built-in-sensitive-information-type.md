@@ -22,7 +22,9 @@ description: Learn how to create a custom sensitive information type that will a
 
 # Customize a built-in sensitive information type
 
-When looking for sensitive information in content, you need to describe that information in what's called a *rule*. Data loss prevention (DLP) includes rules for the most-common sensitive information types that you can use right away. To use these rules, you have to include them in a policy. You might find that you want to adjust these built-in rules to meet your organization's specific needs, and you can do that by creating a custom sensitive information type. This topic shows you how to customize the XML file that contains the existing rule collection to detect a wider range of potential credit-card information.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+When looking for sensitive information in content, you need to describe that information in what's called a *rule*. Microsoft Purview Data Loss Prevention (DLP) includes rules for the most-common sensitive information types that you can use right away. To use these rules, you have to include them in a policy. You might find that you want to adjust these built-in rules to meet your organization's specific needs, and you can do that by creating a custom sensitive information type. This topic shows you how to customize the XML file that contains the existing rule collection to detect a wider range of potential credit-card information.
 
 You can take this example and apply it to other built-in sensitive information types. For a list of default sensitive information types and XML definitions, see [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md).
 
@@ -152,7 +154,7 @@ Now, you have something that looks similar to the following XML. Because rule pa
 
 ## Remove the corroborative evidence requirement from a sensitive information type
 
-Now that you have a new sensitive information type that you're able to upload to the Security &amp; Compliance Center, the next step is to make the rule more specific. Modify the rule so that it only looks for a 16-digit number that passes the checksum but doesn't require additional (corroborative) evidence, like keywords. To do this, you need to remove the part of the XML that looks for corroborative evidence. Corroborative evidence is very helpful in reducing false positives. In this case there are usually certain keywords or an expiration date near the credit card number. If you remove that evidence, you should also adjust how confident you are that you found a credit card number by lowering the `confidenceLevel`, which is 85 in the example.
+Now that you have a new sensitive information type that you're able to upload to the Microsoft Purview compliance portal, the next step is to make the rule more specific. Modify the rule so that it only looks for a 16-digit number that passes the checksum but doesn't require additional (corroborative) evidence, like keywords. To do this, you need to remove the part of the XML that looks for corroborative evidence. Corroborative evidence is very helpful in reducing false positives. In this case there are usually certain keywords or an expiration date near the credit card number. If you remove that evidence, you should also adjust how confident you are that you found a credit card number by lowering the `confidenceLevel`, which is 85 in the example.
 
 ```xml
 <Entity id="db80b3da-0056-436e-b0ca-1f4cf7080d1f" patternsProximity="300"

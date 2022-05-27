@@ -69,7 +69,7 @@ As part of the trial setup, the Defender for Office 365 licenses are automatical
 
 The licensing card for the trial shows the following information:
 
-![The Licensing card in the Microsoft Defender for Office 365 trial.](../../media/mdo-trial-licensing-card.png)
+:::image type="content" source="../../media/mdo-trial-licensing-card.png" alt-text="The Licensing card in the Microsoft Defender for Office 365 trial" lightbox="../../media/mdo-trial-licensing-card.png":::
 
 - **Usage type** section:
   - **Trial**: The number of trial Defender for Office 365 licenses that are available for you to use.
@@ -121,7 +121,7 @@ Defender for Office 365 helps organizations secure their enterprise by offering 
 
 You can also learn more about Defender for Office 365 at this [interactive guide](https://aka.ms/MS365D.InteractiveGuide).
 
-![Microsoft Defender for Office 365 conceptual diagram.](../../media/microsoft-defender-for-office-365.png)
+:::image type="content" source="../../media/microsoft-defender-for-office-365.png" alt-text="The Microsoft Defender for Office 365 conceptual diagram" lightbox="../../media/microsoft-defender-for-office-365.png":::
 
 ### Prevention
 

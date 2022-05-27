@@ -2,13 +2,13 @@
 title: "Customize sign-in page with a privacy and consent notice"
 f1.keywords:
 - NOCSH
-ms.author: sharik
-author: skjerland
+ms.author: v-kcirillo
+author: cirilk
 manager: scotv
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection: 
 - Adm_O365
 - M365-subscription-management 
@@ -36,10 +36,15 @@ To update the customizable elements on the sign-in page, you have to be a global
 
 The elements you can update are:
 
-- **Sign-in page text**
-     An easy place to add the privacy and consent statement.
+- Sign-in page text (an easy place to add the privacy and consent statement)
 - Sign-in page background image
 - Banner logo
 - Username hint
 
 For examples of privacy and consent notices, see Appendix A in [Searching and Seizing Computers and Obtaining Electronic Evidence in Criminal Investigations](https://www.justice.gov/sites/default/files/criminal-ccips/legacy/2015/01/14/ssmanual2009.pdf).
+
+## Next steps
+
+1. [Use the Guided process for basic setup](m365bp-setup.md#use-the-guided-process-for-basic-setup).
+
+2. [Set up your security capabilities](m365bp-security-overview.md).

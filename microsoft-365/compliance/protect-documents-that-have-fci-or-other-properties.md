@@ -1,5 +1,5 @@
 ---
-title: "Create a DLP policy to protect documents with FCI or other properties"
+title: "Create a DLP policy to protect documents"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -25,7 +25,9 @@ description: Learn how to use a data loss prevention (DLP) policy to protect doc
 
 # Create a DLP policy to protect documents with FCI or other properties
 
-Microsoft 365 data loss prevention (DLP) policies can use classification properties or item properties to identify sensitive items. For example you can use:
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Microsoft Purview Data Loss Prevention (DLP) policies can use classification properties or item properties to identify sensitive items. For example you can use:
 
 - Windows Server File Classification infrastructure (FCI) properties
 - SharePoint document properties

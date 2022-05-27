@@ -1,5 +1,5 @@
 ---
-title: Office 365 Security overview, Microsoft Defender for Office 365, EOP, MSDO 
+title: Office 365 Security overview, Microsoft Defender for Office 365, EOP, MSDO
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -8,10 +8,10 @@ audience: Admin
 ms.topic: conceptual
 
 ms.localizationpriority: medium
-search.appverid: 
+search.appverid:
   - MET150
   - MOE150
-ms.collection: 
+ms.collection:
   - M365-security-compliance
   - m365initiative-defender-office365
 description: Security in Office 365, from EOP to Defender for Office 365 Plans 1 and 2, Standard vs. Strict security configurations, and more. Understand what you have and learn how to secure your properties.
@@ -21,11 +21,9 @@ ms.prod: m365-security
 
 # Office 365 security
 
-
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-
 
 This article will introduce you to your new security properties in the Cloud. Whether you're part of a Security Operations Center, you're a Security Administrator new to the space, or you want a refresher, let's get started.
 
@@ -55,7 +53,7 @@ But in terms of architecture, let's start by thinking of each piece as cumulativ
 
 <!--:::image type="content" source="../../media/tp-EOPATPStack.PNG" alt-text="Placeholder graphic.":::-->
 
-:::image type="content" source="../../media/tp_GraphicEOPATPP1P2_2.png" alt-text="EOP and Microsoft Defender for Office 365 and their relationships to one another with service emphasis, including a note for email authentication.":::
+:::image type="content" source="../../media/tp_GraphicEOPATPP1P2_2.png" alt-text="EOP and Microsoft Defender for Office 365 and their relationships to one another with service emphasis, including a note for email authentication" lightbox="../../media/tp_GraphicEOPATPP1P2_2.png":::
 
 Though each of these services emphasizes a goal from among Protect, Detect, Investigate, and Respond, ***all*** the services can carry out ***any*** of the goals of protecting, detecting, investigating, and responding.
 

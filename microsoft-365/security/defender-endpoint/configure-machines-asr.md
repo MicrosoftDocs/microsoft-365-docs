@@ -31,7 +31,7 @@ ms.technology: mde
 [Attack surface reduction (ASR) rules](./attack-surface-reduction.md) identify and prevent typical malware exploits. They control when and how potentially malicious code can run. For example, they can prevent JavaScript or VBScript from launching a downloaded executable, block Win32 API calls from Office macros, and block processes that run from USB drives.
 
 
-:::image type="content" source="../../media/attack-surface-mgmt.png" alt-text="Attack surface management card.":::
+:::image type="content" source="../../media/attack-surface-mgmt.png" alt-text="Attack surface management card" lightbox="../../media/attack-surface-mgmt.png":::
 <br>
 *Attack surface management card*
 
@@ -43,7 +43,7 @@ The *Attack surface management card* is an entry point to tools in <a href="http
 
 Select **Go to attack surface management** \> **Reports** \> **Attack surface reduction rules** \> **Add exclusions**. From there, you can navigate to other sections of Microsoft 365 Defender portal.
 
-![Add exclusions tab in the Attack surface reduction rules page in Microsoft 365 Defender portal.](images/secconmgmt_asr_m365exlusions.png)<br>
+:::image type="content" source="images/secconmgmt_asr_m365exlusions.png" alt-text="Add exclusions tab in the Attack surface reduction rules page in the Microsoft 365 Defender portal" lightbox="images/secconmgmt_asr_m365exlusions.png":::<br>
 The ***Add exclusions** tab in the Attack surface reduction rules page in Microsoft 365 Defender portal*
 
 > [!NOTE]

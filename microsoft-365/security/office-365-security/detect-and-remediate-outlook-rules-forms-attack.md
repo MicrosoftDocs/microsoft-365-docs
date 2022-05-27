@@ -1,6 +1,6 @@
 ---
 title: Detect and remediate the Outlook rules and custom forms injections attacks.
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: tracyp
 author: MSFTTracyp
@@ -8,12 +8,12 @@ manager: dansimp
 ms.date: 04/23/2018
 audience: ITPro
 ms.topic: article
-ms.collection: 
+ms.collection:
   - o365_security_incident_response
   - M365-security-compliance
 
 ms.localizationpriority: medium
-search.appverid: 
+search.appverid:
   - MET150
 description: Learn how to recognize and remediate the Outlook rules and custom forms injections attacks in Office 365
 ms.custom: seo-marvel-apr2020
@@ -22,8 +22,7 @@ ms.prod: m365-security
 ---
 # Detect and Remediate Outlook Rules and Custom Forms Injections Attacks
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Summary** Learn how to recognize and remediate the Outlook rules and custom Forms injections attacks in Office 365.
 
