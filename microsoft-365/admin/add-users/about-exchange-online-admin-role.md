@@ -22,7 +22,7 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
-description: "Exchange Online admins manage your organization email and mailboxes and, for example, recover deleted items in a user's mailbox."
+description: "Exchange administrators manage your organization's email and mailboxes and, for example, recover deleted items in a user's mailbox."
 ---
 
 # About the Exchange Administrator role
