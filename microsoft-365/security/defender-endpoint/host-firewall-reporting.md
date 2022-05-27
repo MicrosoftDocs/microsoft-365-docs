@@ -25,7 +25,7 @@ ms.custom: admindeeplinkDEFENDER
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-If you are an admin, you can now host firewall reporting to the [Microsoft 365 Defender portal](https://security.microsoft.com). This feature enables you to view Windows 10, Windows 11, Windows Server 2019, and Windows Server 2022 firewall reporting from a centralized location.
+If you are a Global or security administrator, you can now host firewall reporting to the [Microsoft 365 Defender portal](https://security.microsoft.com). This feature enables you to view Windows 10, Windows 11, Windows Server 2019, and Windows Server 2022 firewall reporting from a centralized location.
 
 ## What do you need to know before you begin?
 
@@ -38,6 +38,38 @@ If you are an admin, you can now host firewall reporting to the [Microsoft 365 D
   - The two PowerShell commands are:
     - **auditpol /set /subcategory:"Filtering Platform Packet Drop" /failure:enable**
     - **auditpol /set /subcategory:"Filtering Platform Connection" /failure:enable**
+```powershell
+param (
+    [switch]$remediate
+)
+try {
+
+    $categories = "Filtering Platform Packet Drop,Filtering Platform Connection"
+    $current = auditpol /get /subcategory:"$($categories)" /r | ConvertFrom-Csv    
+    if ($current."Inclusion Setting" -ne "failure") {
+        if ($remediate.IsPresent) {
+            Write-Host "Remediating. No Auditing Enabled. $($current | ForEach-Object {$_.Subcategory + ":" + $_.'Inclusion Setting' + ";"})"
+            $output = auditpol /set /subcategory:"$($categories)" /failure:enable
+            if($output -eq "The command was successfully executed.") {
+                Write-Host "$($output)"
+                exit 0
+            }
+            else {
+                Write-Host "$($output)"
+                exit 1
+            }
+        }
+        else {
+            Write-Host "Remediation Needed. $($current | ForEach-Object {$_.Subcategory + ":" + $_.'Inclusion Setting' + ";"})."
+            exit 1
+        }
+    }
+
+}
+catch {
+    throw $_
+} 
+```
 
 ## The process
 
@@ -58,8 +90,7 @@ The following scenarios are supported during Ring0 Preview.
 
 Here is a couple of examples of the firewall report pages. Here you will find a summary of inbound, outbound, and application activity. You can access this page directly by going to <https://security.microsoft.com/firewall>.
 
-> [!div class="mx-imgBorder"]
-> ![Host firewall reporting page.](\images\host-firewall-reporting-page.png)
+:::image type="content" source="images/host-firewall-reporting-page.png" alt-text="The Host firewall reporting page" lightbox="\images\host-firewall-reporting-page.png":::
 
 These reports can also be accessed by going to **Reports** > **Security Report** > **Devices** (section) located at the bottom of the **Firewall Blocked Inbound Connections** card.
 
@@ -67,22 +98,19 @@ These reports can also be accessed by going to **Reports** > **Security Report**
 
 Cards support interactive objects. You can drill into the activity of a device by clicking on the device name, which will launch the Microsoft 365 Defender portal in a new tab, and take you directly to the **Device Timeline** tab.
 
-> [!div class="mx-imgBorder"]
-> ![Computers with a blocked connection.](\images\firewall-reporting-blocked-connection.png)
+:::image type="content" source="images/firewall-reporting-blocked-connection.png" alt-text="The Computers with a blocked connection page" lightbox="\images\firewall-reporting-blocked-connection.png":::
 
 You can now select the **Timeline** tab, which will give you a list of events associated with that device.
 
 After clicking on the **Filters** button on the upper right-hand corner of the viewing pane, select the type of event you want. In this case, select **Firewall events** and the pane will be filtered to Firewall events.
 
-> [!div class="mx-imgBorder"]
-> ![Filters button.](\images\firewall-reporting-filters-button.png)
+:::image type="content" source="images/firewall-reporting-filters-button.png" alt-text="The Filters button" lightbox="\images\firewall-reporting-filters-button.png":::
 
 ### Drill into advanced hunting (preview refresh)
 
 Firewall reports support drilling from the card directly into **Advanced Hunting** by clicking the **Open Advanced hunting** button. The query will be pre-populated.
 
-> [!div class="mx-imgBorder"]
-> ![Open Advanced hunting button.](\images\firewall-reporting-advanced-hunting.png)
+:::image type="content" source="images/firewall-reporting-advanced-hunting.png" alt-text="The Open Advanced hunting button" lightbox="\images\firewall-reporting-advanced-hunting.png":::
 
 The query can now be executed, and all related Firewall events from the last 30 days can be explored.
 

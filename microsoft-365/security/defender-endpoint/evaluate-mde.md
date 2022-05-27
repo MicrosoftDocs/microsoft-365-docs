@@ -40,7 +40,6 @@ You can also evaluate the different security capabilities in Microsoft Defender 
 
 These capabilities help prevent attacks and exploitations from infecting your organization.
 
-- [Evaluate attack surface reduction](./evaluate-attack-surface-reduction.md)
 - [Evaluate exploit protection](./evaluate-exploit-protection.md)
 - [Evaluate network protection](./evaluate-exploit-protection.md)
 - [Evaluate controlled folder access](./evaluate-controlled-folder-access.md)

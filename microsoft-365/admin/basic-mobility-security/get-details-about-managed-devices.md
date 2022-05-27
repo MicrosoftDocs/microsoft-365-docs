@@ -26,15 +26,15 @@ This article shows you how to use Windows PowerShell to get details about the de
 
 Here's a breakdown for the device details available to you.
 
-|**Detail**|**What to look for in PowerShell**|
-|:----------------|:------------------------------------------------------------------------------|
-|Device is enrolled in Basic Mobility and Security. For more info, see [Enroll your mobile device using Basic Mobility and Security](enroll-your-mobile-device.md)|The value of the *isManaged* parameter is:<br/>**True**= device is enrolled.<br/>**False**= device is not enrolled. |
-|Device is compliant with your device security policies. For more info, see [Create device security policies](create-device-security-policies.md)|The value of the *isCompliant* parameter is:<br/>**True** = device is compliant with policies.<br/>**False** = device is not compliant with policies.|
+|Detail|What to look for in PowerShell|
+|---|---|
+|Device is enrolled in Basic Mobility and Security. For more info, see [Enroll your mobile device using Basic Mobility and Security](enroll-your-mobile-device.md)|The value of the *isManaged* parameter is:<br/>**True**= device is enrolled.<br/>**False**= device is not enrolled.|
+|Device is compliant with your device security policies. For more info, see [Create device security policies](create-device-security-policies.md)|The value of the *isCompliant* parameter is:<br/>**True** = device is compliant with policies.<br/>**False** = device is not compliant with policies.|
 
 :::image type="content" source="../../media/basic-mobility-security/bms-7-powershell-parameters.png" alt-text="Basic Mobility and Security PowerShell parameters.":::
 
 > [!NOTE]
-> The commands and scripts in this article also return details about any devices managed by [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune).
+> The commands and scripts in this article also return details about any devices managed by [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune).
 
 ## Before you begin
 
@@ -42,9 +42,9 @@ There are a few things you need to set up to run the commands and scripts descri
 
 ### Step 1: Download and install the Azure Active Directory Module for Windows PowerShell
 
-For more info on these steps, see [Connect to Microsoft 365 with PowerShell](/office365/enterprise/powershell/connect-to-office-365-powershell).
+For more info on these steps, see [Connect to Microsoft 365 with PowerShell](/office365/enterprise/powershell/connect-to-office-365-powershell).
 
-1. Go to [Microsoft Online Services Sign-In Assistant for IT Professionals RTWl](https://download.microsoft.com/download/7/1/E/71EF1D05-A42C-4A1F-8162-96494B5E615C/msoidcli_32bit.msi) and select  **Download for Microsoft Online Services Sign-in Assistant**.
+1. Go to [Microsoft Online Services Sign-In Assistant for IT Professionals RTWl](https://download.microsoft.com/download/7/1/E/71EF1D05-A42C-4A1F-8162-96494B5E615C/msoidcli_32bit.msi) and select **Download for Microsoft Online Services Sign-in Assistant**.
 
 2. Install the Microsoft Azure Active Directory Module for Windows PowerShell with these steps:
 
@@ -66,7 +66,7 @@ For more info on these steps, see [Connect to Microsoft 365 with PowerShell](/
    $UserCredential = Get-Credential
    ```
 
-2. In the Windows PowerShell Credential Request dialog box, type the user name and password for your Microsoft 365 global admin account, and then select **OK**.
+2. In the Windows PowerShell Credential Request dialog box, type the user name and password for your Microsoft 365 global admin account, and then select **OK**.
 
 3. Run the following command.
 
@@ -79,17 +79,17 @@ For more info on these steps, see [Connect to Microsoft 365 with PowerShell](/
 > [!NOTE]
 > You can skip this step if you’re already set up to run PowerShell scripts.
 
-To run the Get-MsolUserDeviceComplianceStatus.ps1 script, you need to enable the running of PowerShell scripts.
+To run the Get-MsolUserDeviceComplianceStatus.ps1 script, you need to enable the running of PowerShell scripts.
 
-1. From your Windows Desktop, select **Start**, and then type Windows PowerShell. Right-click Windows PowerShell, and then select **Run as administrator**.
+1. From your Windows Desktop, select **Start**, and then type Windows PowerShell. Right-click Windows PowerShell, and then select **Run as administrator**.
 
 2. Run the following command.
 
    ```powershell
-   Set-ExecutionPolicy  RemoteSigned
+   Set-ExecutionPolicy RemoteSigned
    ```
 
-3. When prompted, type Y and then press Enter.
+3. When prompted, type Y and then press Enter.
 
 #### Run the Get-MsolDevice cmdlet to display details for all devices in your organization
 
@@ -101,7 +101,7 @@ To run the Get-MsolUserDeviceComplianceStatus.ps1 script, you need to enable
    Get-MsolDevice -All -ReturnRegisteredOwners | Where-Object {$_.RegisteredOwners.Count -gt 0}
    ```
 
-For more examples, see  [Get-MsolDevice](https://go.microsoft.com/fwlink/?linkid=2157939).
+For more examples, see [Get-MsolDevice](https://go.microsoft.com/fwlink/?linkid=2157939).
 
 ## Run a script to get device details
 
@@ -170,13 +170,13 @@ First, save the script to your computer.
    }
    ```
 
-2. Save it as a Windows PowerShell script file by using the file extension .ps1; for example, Get-MsolUserDeviceComplianceStatus.ps1.
+2. Save it as a Windows PowerShell script file by using the file extension .ps1; for example, Get-MsolUserDeviceComplianceStatus.ps1.
 
 ## Run the script to get device information for a single user account
 
 1. Open the Microsoft Azure Active Directory Module for Windows PowerShell.
 
-2. Go to the folder where you saved the script. For example, if you saved it to C:\PS-Scripts, run the following command.
+2. Go to the folder where you saved the script. For example, if you saved it to C:\PS-Scripts, run the following command.
 
    ```powershell
    cd C:\PS-Scripts
@@ -200,7 +200,7 @@ The information is exported to your Windows Desktop as a CSV file. You can use a
 
 1. Open the Microsoft Azure Active Directory Module for Windows PowerShell.
 
-2. Go to the folder where you saved the script. For example, if you saved it to C:\PS-Scripts, run the following command.
+2. Go to the folder where you saved the script. For example, if you saved it to C:\PS-Scripts, run the following command.
 
    ```powershell
    cd C:\PS-Scripts

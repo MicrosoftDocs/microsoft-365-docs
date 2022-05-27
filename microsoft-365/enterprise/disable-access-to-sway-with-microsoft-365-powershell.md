@@ -2,7 +2,7 @@
 title: "Disable access to Sway with PowerShell for Microsoft 365"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 07/17/2020
 audience: Admin
 ms.topic: article

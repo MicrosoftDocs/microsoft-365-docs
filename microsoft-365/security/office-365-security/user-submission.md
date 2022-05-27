@@ -22,7 +22,7 @@ ms.prod: m365-security
 
 # User reported message settings
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -60,13 +60,13 @@ After you've verified that your mailbox meets all applicable prerequisites, you 
 
 ## What do you need to know before you begin?
 
-- You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. To go directly to the **User submissions** page, use <https://security.microsoft.com/reportsubmission>.
+- You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. To go directly to the **User submissions** page, use <https://security.microsoft.com/userSubmissionsReportMessage>.
 
 - To modify the configuration for User submissions, you need to be a member of one of the following role groups:
 
   - **Organization Management** or **Security Administrator** in the [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
 
-- You need access to Exchange Online PowerShell. If the account that you're trying to use doesn't have access to Exchange Online PowerShell, you'll receive an error that looks like this when specify the submissions mailbox:
+- You need access to Exchange Online PowerShell. If the account that you're trying to use doesn't have access to Exchange Online PowerShell, you'll receive an error that looks like this when specifying the submissions mailbox:
 
   > Specify an email address in your domain
 
@@ -77,7 +77,7 @@ After you've verified that your mailbox meets all applicable prerequisites, you 
 
 ## Use the Microsoft 365 Defender portal to configure the user submissions mailbox
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat policies** \> **User reported message settings** in the **Others** section. To go directly to the **User submissions** page, use <https://security.microsoft.com/reportsubmission>.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat policies** \> **User reported message settings** in the **Others** section. To go directly to the **User submissions** page, use <https://security.microsoft.com/userSubmissionsReportMessage>.
 
 2. On the **User submissions** page, what you see is determined by whether the **Microsoft Outlook Report Message button** setting is **Off** or **On**:
 
@@ -90,7 +90,7 @@ After you've verified that your mailbox meets all applicable prerequisites, you 
           > [!IMPORTANT]
           > U.S. Government organizations (GCC, GCC High, and DoD) can only configure **My organization's mailbox**. The other two options are disabled.
           >
-          > If organizations are configured to send to custom mailbox only, reported messages will not be sent for rescan and results in the User reported messages portal will always be empty.
+          > If organizations are configured to send user reported messages to the custom mailbox only, reported messages will appear in **User reported messages** but their results will always be empty (as they would not have been rescanned).
 
        Regardless of the value you selected for **Send the reported messages to**, the following settings are available:
 
@@ -117,15 +117,18 @@ After you've verified that your mailbox meets all applicable prerequisites, you 
    - **Microsoft Outlook Report Message button** \> **Off** ![Toggle off.](../../media/scc-toggle-off.png): Select this option if you use third-party reporting tools instead of the Report Message add-in, the Report Phishing add-in, or the built-in reporting in Outlook on the web, and then configure the following settings:
      - Select **Use this custom mailbox to receive user reported submissions**. In the box that appears, enter the email address of an existing Exchange Online mailbox that can receive email.
 
-   - **Microsoft Outlook Report Message button**: Enable this feature if you want to let end users report messages from quarantine.
+   - **Quarantine report message button**: Enable this feature if you want to let end users report messages from quarantine.
 
-   When you're finished, click **Confirm**. To clear these values, click **Restore**
+3. When you're finished, click **Confirm**. To clear these values, click **Restore**.
 
 ## Third-party reporting tools
 
 You can configure third-party message reporting tools to send reported messages to the custom mailbox. You would do this by setting the **Microsoft Outlook Report Message button** setting to **Off** and setting the **My organization's mailbox** to an Office 365 mailbox of your choice.
 
-The only requirement is that the original message is included as a .EML or .MSG attachment (not compressed) in the message that's sent to the custom mailbox (don't just forward the original message to the custom mailbox).
+The only requirement is that the original message is included as a .EML or .MSG attachment (not compressed) in the message that's sent to the custom mailbox (don't just forward the original message to the custom mailbox). 
+
+ > [!NOTE]
+ > If multiple email attachments are present in the email, then the submission will be discarded. We only support emails with one email attachment.
 
 The message formatting requirements are described in the next section. The formatting is optional, but if it does not follow the prescribed format, the reports will always be submitted as phish.
 
@@ -136,8 +139,8 @@ To correctly identify the original attached messages, messages that are sent to 
 If you want to specify the reported reason for the original attached messages, messages that are sent to the custom mailbox (don't modify the attachment) need to start with one of the following prefixes in the Subject (Envelope Title):
 
 - 1| or Junk:
-- 2| or Not junk
-- 3| or Phishing
+- 2| or Not junk:
+- 3| or Phishing:
 
 For example:
 
@@ -146,6 +149,5 @@ For example:
 
 - Both of these messages are being reported as Not Junk based on Subject.
 - The rest is ignored.
-
 
 Messages that don't follow this format will not display properly in the Submissions portal.

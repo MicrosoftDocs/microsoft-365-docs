@@ -9,9 +9,9 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
-localization_priority: Normal
+ms.author: dansimp
+author: dansimp
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -36,7 +36,7 @@ With the urgency of protecting your organization and its data from attackers, yo
 
 ## Microsoft 365 Defender Ninja training
 
-[Microsoft 365 Defender Ninja training](https://techcommunity.microsoft.com/t5/microsoft-365-defender/become-a-microsoft-365-defender-ninja/ba-p/1789376) is a set of organized sections and modules to step you through the features and functions of Microsoft 365 Defender – everything that goes across the workloads, but not the individual workloads themselves. 
+[Microsoft 365 Defender Ninja training](https://techcommunity.microsoft.com/t5/microsoft-365-defender/become-a-microsoft-365-defender-ninja/ba-p/1789376) is a set of organized sections and modules to step you through the features and functions of Microsoft 365 Defender. The training goes across the threat signal sources&mdash;such as Microsoft Defender for Endpoint and others&mdash;but does not cover the individual sources themselves. 
 
 The content is structured into three different knowledge levels, with multiple modules: Fundamentals, Intermediate, and Expert. Each level includes a knowledge check to test your understanding of the material.
 
@@ -53,15 +53,12 @@ Use these Microsoft Learn learning paths and their modules to build an understan
 
 The [Microsoft 365 Defender portal learning hub](https://security.microsoft.com/learning) includes these learning paths:
 
- - Getting started with the Microsoft 365 security center
-
- - How to Investigate Using Microsoft 365 Defender
-
- - Microsoft 365 Defender Basic Training
-
- - Microsoft Defender for Endpoint Basic Training
-
- - Microsoft Defender for Office 365 Best Practices
+- Getting started with the Microsoft 365 security center
+- How to Investigate Using Microsoft 365 Defender
+- Microsoft 365 Defender Basic Training
+- Microsoft Defender for Endpoint Basic Training
+- Microsoft Defender for Office 365 Best Practices
+- Setup
 
 ## Hands-on with a trial environment
 

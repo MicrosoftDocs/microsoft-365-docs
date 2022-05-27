@@ -1,9 +1,9 @@
 ---
-title: "Manage review sets in Advanced eDiscovery"
+title: "Manage review sets in eDiscovery (Premium)"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 
 audience: Admin
@@ -16,11 +16,13 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: Learn how to manage review sets so you can analyze, query, view, tag, and export data in an Advanced eDiscovery case.
+description: Learn how to manage review sets so you can analyze, query, view, tag, and export data in an eDiscovery (Premium) case.
 ms.custom: seo-marvel-mar2020
 ---
 
-# Manage review sets in Advanced eDiscovery
+# Manage review sets in eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Review sets are a static set of documents where you can analyze, query, view, tag, and export data in a case. For more information about performing these tasks, see:
 
@@ -44,7 +46,7 @@ On the **Add review set** flyout page, type a name for the review set and then c
 
 ![New review set listed on Review set tab.](../media/AeDnewreviewset.png)
 
-There are three different ways to add data to a review set in an Advanced eDiscovery case.
+There are three different ways to add data to a review set in an eDiscovery (Premium) case.
 
 ![Three ways to add to a review sets.](../media/1f1f4efd-c03b-4255-bc3d-df358e56549c.png)
 
@@ -53,3 +55,6 @@ There are three different ways to add data to a review set in an Advanced eDisco
 2. [Load non-Microsoft 365 data into a review set](load-non-Office-365-data-into-a-review-set.md)
 
 3. [Add data to a review set from another review set](add-data-to-review-set-from-another-review-set.md)
+
+> [!NOTE]
+> You can't delete items from a review set and you can't delete review sets from a case. To delete a review set (and delete the data in it), you have to delete the eDiscovery (Premium) case the review set is located in. For more information, see [Close or delete an eDiscovery (Premium) case](close-or-delete-case.md).

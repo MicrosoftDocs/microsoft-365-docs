@@ -6,7 +6,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: how-to
 ms.prod: m365-security
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
   - M365-security-compliance
   - m365initiative-defender-office365
@@ -16,6 +16,8 @@ ms.technology: mdo
 
 # Payload automations for Attack simulation training
 
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
 **Applies to**
  [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 
@@ -23,25 +25,25 @@ In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Offi
 
 To create a payload automation, do the following steps:
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com/>, go to **Email & collaboration** \> **Attack simulation training** \> **Payload automations** tab.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com/>, go to **Email & collaboration** \> **Attack simulation training** \> **Automations** tab \> **Payload automations**.
 
-   To go directly to the **Payload automations** tab, use <https://security.microsoft.com/attacksimulator?viewid=payloadautomation>.
+   To go directly to the **Automations** tab where you can select **Payload automations**, use <https://security.microsoft.com/attacksimulator?viewid=automations>.
 
-2. On the **Payload automations** tab, select ![Create simulation icon.](../../media/m365-cc-sc-create-icon.png) **Create simulation**.
+2. In **Payload automations**, select ![Create automation icon.](../../media/m365-cc-sc-create-icon.png) **Create automation**.
 
-   ![Create simulation button on the Payload automations tab in Attack simulation training in the Microsoft 365 Defender portal.](../../media/attack-sim-training-sim-automations-create.png)
+   :::image type="content" source="../../media/attack-sim-training-sim-automations-create.png" alt-text="The Create simulation button on the Payload automations tab in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-sim-automations-create.png":::
 
 3. The creation wizard opens. The rest of this article describes the pages and the settings they contain.
 
 > [!NOTE]
-> At any point during the simulation creation wizard, you can click **Save and close** to save your progress and continue configuring the simulation later. The incomplete simulation has the **Status** value **Draft** on the **Simulations** tab. You can pick up where you left off by selecting the simulation and clicking ![Edit simulation icon.](../../media/m365-cc-sc-edit-icon.png) **Edit** simulation.## Name and describe the simulation.
+> At any point during the creation wizard, you can click **Save and close** to save your progress and continue configuring the payload automation later. You can pick up where you left off by selecting the payload automation in **Payload automations**, and then clicking ![Edit automation icon.](../../media/m365-cc-sc-edit-icon.png) **Edit automation**.
 
 ## Automation name
 
 On the **Automation name** page, configure the following settings:
 
-- **Name**: Enter a unique, descriptive name for the simulation.
-- **Description**: Enter an optional detailed description for the simulation.
+- **Name**: Enter a unique, descriptive name for the payload automation.
+- **Description**: Enter an optional detailed description for the payload automation.
 
 When you're finished, click **Next**.
 
