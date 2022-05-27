@@ -41,7 +41,7 @@ For more information on enabling MDM with Microsoft Intune, see [Device enrollme
 
 ## Onboard devices using Microsoft Intune
 
-Check out the [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf) or [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) to see the various paths in deploying Defender for Endpoint.
+Check out the [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf) to see the various paths in deploying Defender for Endpoint.
 
 Follow the instructions from [Intune](/mem/intune/protect/advanced-threat-protection-configure#enable-microsoft-defender-for-endpoint-in-intune).
 
