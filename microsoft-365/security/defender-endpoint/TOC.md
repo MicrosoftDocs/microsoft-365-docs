@@ -493,6 +493,7 @@
 ####### [Export assessment methods and properties](get-assessment-methods-properties.md)
 ####### [Export secure configuration assessment](get-assessment-secure-config.md)
 ####### [Export software inventory assessment](get-assessment-software-inventory.md)
+####### [Export non product code software inventory assessment](get-assessment-non-cpe-software-inventory.md)
 ####### [Export software vulnerabilities assessment](get-assessment-software-vulnerabilities.md)
 
 ###### [Automated Investigation]()
