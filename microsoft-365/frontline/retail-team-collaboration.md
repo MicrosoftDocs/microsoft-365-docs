@@ -45,7 +45,7 @@ Teams includes the following ways to communicate and share information:
 
 Your team can use apps in Teams to coordinate and collaborate with each other on everyday tasks, such as the following:
 
-![Infographic showing the different functions available in Teams and as Teams apps as described in the list below.](../media/retail-teams-collaborate.png)
+![Infographic showing the different functions available in Teams and as Teams apps as described in the list below.](media/retail-teams-collaborate.png)
 
 | Task | App | Description | Manage this app | End-user training |
 | ---- | ---- | ---- | ---- | ---- |

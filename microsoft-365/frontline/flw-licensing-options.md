@@ -31,7 +31,7 @@ Microsoft 365 and Microsoft Teams have features and a licensing model to support
 
 If it makes sense for your organization, you can assign different licenses to these different types of users. The following illustration shows one way to apply licenses and policies for Retail workers, for example:
 
-:::image type="content" source="./media/flw-license-options.png" alt-text="Mix license types to support the different roles in your organization. Use Enterprise licenses for your information workers, such as headquarters staff, and Frontline Worker licenses for mobile workers, such as store managers, sales associates, shipping staff, stockers, and pickers.":::
+:::image type="content" source="media/flw-license-options.png" alt-text="Mix license types to support the different roles in your organization. Use Enterprise licenses for your information workers, such as headquarters staff, and Frontline Worker licenses for mobile workers, such as store managers, sales associates, shipping staff, stockers, and pickers.":::
 
 With this example, you can mix license types for the two types of workers in your organization, like in the following table:
 

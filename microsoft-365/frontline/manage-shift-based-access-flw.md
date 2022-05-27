@@ -25,7 +25,7 @@ appliesto:
 
 Presence in Microsoft Teams indicates a user's current availability and status to other users. The presence of frontline workers is often less predictable than other staff as their working hours are typically not the same each day. As an admin, you can configure Teams to show a set of shift-based presence states for the frontline workers in your organization to indicate when they are on and off shift.
 
-These shift-based presence states&mdash;![Solid green check mark, indicates On shift.](../../media/flw-presence-on-shift.png) **On shift**, ![Gray circle with x, indicates Off shift.](../../media/flw-presence-off-shift.png) **Off shift**, ![Solid red circle, indicates Busy](../../media/flw-presence-busy.png) **Busy**&mdash;are separate from the [default set of presence states](/microsoftteams/presence-admins) in Teams. With these two sets of presence states, you can configure different experiences for people in your organization based on their role.
+These shift-based presence states&mdash;![Solid green check mark, indicates On shift.](media/flw-presence-on-shift.png) **On shift**, ![Gray circle with x, indicates Off shift.](media/flw-presence-off-shift.png) **Off shift**, ![Solid red circle, indicates Busy](media/flw-presence-busy.png) **Busy**&mdash;are separate from the [default set of presence states](/microsoftteams/presence-admins) in Teams. With these two sets of presence states, you can configure different experiences for people in your organization based on their role.
 
 With shift-based access, you can manage access to Teams when frontline workers are off shift. For example, you can set Teams to display a message that frontline workers must acknowledge before they can use Teams when they're not on a scheduled shift.  
 
@@ -43,9 +43,9 @@ Here are the shift-based presence states.
 
 |App configured |User configured  |More information  |
 |---------|---------|---------|
-|![Solid green check mark, indicates On shift.](../../media/flw-presence-on-shift.png) On shift     |         |Automatically set at the start of a shift         |
-|![Gray circle with x, indicates Off shift](../../media/flw-presence-off-shift.png) Off shift     |         |Automatically set at the end of a shift         |
-|![Solid red circle, indicates Busy.](../../media/flw-presence-busy.png) Busy      | ![Solid red circle, indicates Busy](../../media/flw-presence-busy.png) Busy         |Automatically set. Can also be manually set when the frontline worker is on shift.|
+|![Solid green check mark, indicates On shift.](media/flw-presence-on-shift.png) On shift     |         |Automatically set at the start of a shift         |
+|![Gray circle with x, indicates Off shift](media/flw-presence-off-shift.png) Off shift     |         |Automatically set at the end of a shift         |
+|![Solid red circle, indicates Busy.](media/flw-presence-busy.png) Busy      | ![Solid red circle, indicates Busy](media/flw-presence-busy.png) Busy         |Automatically set. Can also be manually set when the frontline worker is on shift.|
 
 ## Off shift access to Teams
 
@@ -53,7 +53,7 @@ This feature lets you manage access to Teams when frontline workers are off shif
 
 You can use the default message, choose from a set of pre-defined messages, or customize the message to display any text that you want. Here's the default message:
 
-![Screenshot of default message.](../../media/shifts-presence-message.png)
+![Screenshot of default message.](media/shifts-presence-message.png)
 
 You can also set the frequency when the message is displayed and set a grace period between when the first shift starts or last shift ends and when access to Teams is restricted.
 

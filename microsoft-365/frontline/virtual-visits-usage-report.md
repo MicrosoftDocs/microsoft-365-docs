@@ -51,7 +51,7 @@ Use this report to gain insight into virtual appointment activity and trends in 
 
 The graphs you'll see here depend on whether you have a license for the Bookings app, the Teams EHR connector, or both. To learn more, see [Manage the Bookings app](/microsoftteams/bookings-app-admin), and [Integration into Cerner EHR](ehr-admin-cerner.md) or [Integration into Epic EHR](ehr-admin-epic.md).
 
-:::image type="content" source="../media/virtual-visits-usage-report-virtual-visits.png" alt-text="Screenshot of the Virtual Visits tab of the Virtual Visits usage report showing numbered callouts." lightbox="../media/virtual-visits-usage-report-virtual-visits.png":::
+:::image type="content" source="media/virtual-visits-usage-report-virtual-visits.png" alt-text="Screenshot of the Virtual Visits tab of the Virtual Visits usage report showing numbered callouts." lightbox="media/virtual-visits-usage-report-virtual-visits.png":::
 
 |Callout |Description  |
 |--------|-------------|
@@ -64,7 +64,7 @@ The graphs you'll see here depend on whether you have a license for the Bookings
 
 ### Duration
 
-:::image type="content" source="../media/virtual-visits-usage-report-duration.png" alt-text="Screenshot of the Duration tab of the Virtual Visits usage report showing numbered callouts." lightbox="../media/virtual-visits-usage-report-duration.png":::
+:::image type="content" source="media/virtual-visits-usage-report-duration.png" alt-text="Screenshot of the Duration tab of the Virtual Visits usage report showing numbered callouts." lightbox="media/virtual-visits-usage-report-duration.png":::
 
 |Callout |Description  |
 |--------|-------------|
@@ -78,7 +78,7 @@ The graphs you'll see here depend on whether you have a license for the Bookings
 
 You'll see this tab if you have a license that includes the Bookings app. To learn more, see [Manage the Bookings app](/microsoftteams/bookings-app-admin).
 
-:::image type="content" source="../media/virtual-visits-usage-report-bookings.png" alt-text="Screenshot of the Bookings tab of the Virtual Visits usage report showing numbered callouts." lightbox="../media/virtual-visits-usage-report-bookings.png":::
+:::image type="content" source="media/virtual-visits-usage-report-bookings.png" alt-text="Screenshot of the Bookings tab of the Virtual Visits usage report showing numbered callouts." lightbox="media/virtual-visits-usage-report-bookings.png":::
 
 |Callout |Description  |
 |--------|-------------|
@@ -91,7 +91,7 @@ You'll see this tab if you have a license that includes the Bookings app. To lea
 
 You'll see this tab if you have a license that includes the Teams EHR connector. To learn more, see [Integration into Cerner EHR](ehr-admin-cerner.md) or [Integration into Epic EHR](ehr-admin-epic.md).
 
-:::image type="content" source="../media/virtual-visits-usage-report-ehr.png" alt-text="Screenshot of the EHR tab of the Virtual Visits usage report showing numbered callouts." lightbox="../media/virtual-visits-usage-report-ehr.png":::
+:::image type="content" source="media/virtual-visits-usage-report-ehr.png" alt-text="Screenshot of the EHR tab of the Virtual Visits usage report showing numbered callouts." lightbox="media/virtual-visits-usage-report-ehr.png":::
 
 |Callout |Description  |
 |--------|-------------|

@@ -33,7 +33,7 @@ You can see the Teams EHR connector admin report by going to the Microsoft Teams
 
 Access the report from the Microsoft Teams admin center dashboard.
 
- ![a dialog of virtual appointments allocations and limits.](../../media/admin-connector-report.png)
+ ![a dialog of virtual appointments allocations and limits.](media/admin-connector-report.png)
 
 The dialog provides the following data:
 

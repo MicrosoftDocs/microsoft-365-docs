@@ -45,7 +45,7 @@ The Teams Shifts connector for Blue Yonder is a first-party offering that's host
 > [!NOTE]
 > If you have Blue Yonder WFM version 2020.3 or 2021.1, apply the 2020.3.0.4 or 2021.1.0.3 patch. This patch fixes an issue where users get a persistent error message in Shifts. It also  fixes an issue that prevents users from updating their availability in Shifts.
 
-:::image type="content" source="../../media/shifts-connector-blue-yonder.png" alt-text="Screenshot showing a swap request in Shifts on a mobile device, request approval in Teams on desktop, and a schedule in Blue Yonder WFM." lightbox="../../media/shifts-connector-blue-yonder.png":::
+:::image type="content" source="media/shifts-connector-blue-yonder.png" alt-text="Screenshot showing a swap request in Shifts on a mobile device, request approval in Teams on desktop, and a schedule in Blue Yonder WFM." lightbox="media/shifts-connector-blue-yonder.png":::
 
 Frontline managers can:
 
@@ -95,7 +95,7 @@ The Reflexis Shifts connector for Microsoft Teams is hosted and managed by Zebra
 
 Frontline workers have access to their schedule in Shifts in Teams, and their requests are synchronized from Shifts to Reflexis Workforce Scheduler (RWS). The status of requests and shifts created in RWS are synced to Shifts in Teams.
 
-:::image type="content" source="../../media/shifts-connector-reflexis.png" alt-text="Screenshot showing list of shifts on a mobile device and a schedule in Reflexis." lightbox="../../media/shifts-connector-reflexis.png":::
+:::image type="content" source="media/shifts-connector-reflexis.png" alt-text="Screenshot showing list of shifts on a mobile device and a schedule in Reflexis." lightbox="media/shifts-connector-reflexis.png":::
 
 Frontline managers can:
 
