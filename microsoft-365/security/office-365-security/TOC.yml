@@ -395,7 +395,9 @@
      - name: Quarantine FAQ
        href: quarantine-faq.yml
    - name: Reference
-     items:
+     items: 
+     - name: Defender for Office 365 data retention 
+       href: mdo-data-retention.md
      - name: Security roadmap
        href: security-roadmap.md
      - name: Help and support for EOP
