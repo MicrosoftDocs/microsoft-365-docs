@@ -53,7 +53,7 @@ Knowing where your sensitive data resides is often the biggest challenge for man
 
 |Step|Description|More information|
 |:---|:----------|:---------------|
-|1| Describe the categories of sensitive information you want to protect. <br /><br /> You already have an idea of what types of information is most valuable to your org and what types are not. Work with stakeholders to describe these categories because these are your starting place. | [Learn about sensitive information types](sensitive-information-type-learn-about.md) <p> [Learn about trainable classifiers](classifier-learn-about.md)|
+|1| Describe the categories of sensitive information you want to protect. <br /><br /> You already have an idea of what types of information are most valuable to your org and what types aren't. Work with stakeholders to describe these categories that are your starting point. | [Learn about sensitive information types](sensitive-information-type-learn-about.md) <p> [Learn about trainable classifiers](classifier-learn-about.md)|
 |2| Discover and classify sensitive data. <br /><br /> Sensitive data in items can be found by using many different methods that include default DLP policies, manual labeling by users, and automated pattern recognition using sensitive information types or machine learning. | [Learn about data classification](data-classification-overview.md) <p> [Video: Data classification in the compliance center](https://www.microsoft.com/videoplayer/embed/RE4vx8x)|
 |3| View your sensitive items.  <br /><br /> Use content explorer and activity explorer for a deeper analysis of sensitive items and the actions that users are taking on these items.| [Get started with content explorer](data-classification-content-explorer.md) <p> [Get started with activity explorer](data-classification-activity-explorer.md)|
 
@@ -71,7 +71,7 @@ Use the information from knowing where your sensitive data resides to help you m
 |4|Discover, label, and protect sensitive items that reside in data stores on premises by deploying the [Azure Information Protection unified labeling scanner](/azure/information-protection/deploy-aip-scanner) with your sensitivity labels.| [Configuring and installing the Azure Information Protection unified labeling scanner](/azure/information-protection/deploy-aip-scanner-configure-install)|
 |5|Extend your sensitivity labels to Azure by using [Microsoft Purview Data Map](/azure/purview/overview), to discover and label items for Azure Blob Storage, Azure files, Azure Data Lake Storage Gen1, and Azure Data Lake Storage Gen12. | [Labeling in Microsoft Purview Data Map](/azure/purview/create-sensitivity-label)|
 
-If you are a developer who wants to extend sensitivity labels to line-of-business apps or third-party SaaS apps, see [Microsoft Information Protection (MIP) SDK setup and configuration](/information-protection/develop/setup-configure-mip). 
+If you're a developer who wants to extend sensitivity labels to line-of-business apps or third-party SaaS apps, see [Microsoft Information Protection (MIP) SDK setup and configuration](/information-protection/develop/setup-configure-mip). 
 
 ### Additional protection capabilities
 
@@ -97,10 +97,10 @@ Deploy Microsoft Purview Data Loss Prevention (DLP) policies to govern and preve
 
 Learning modules for consultants and admins:
 
-- [Introduction to information protection and governance in Microsoft 365](/learn/modules/m365-compliance-information-governance)
+- [Introduction to information protection and data lifecycle management in Microsoft Purview](/learn/modules/m365-compliance-information-governance)
 - [Classify data for protection and governance](/learn/modules/m365-compliance-information-classify-data)
-- [Protect information in Microsoft 365](/learn/modules/m365-compliance-information-protect-information)
-- [Prevent data loss in Microsoft 365](/learn/modules/m365-compliance-information-prevent-data-loss)
+- [Protect information in Microsoft Purview](/learn/modules/m365-compliance-information-protect-information)
+- [Prevent data loss in Microsoft Purview](/learn/modules/m365-compliance-information-prevent-data-loss)
 
 To help train your users to apply and use the sensitivity labels that you configure for them, see [End-user documentation for sensitivity labels](get-started-with-sensitivity-labels.md#end-user-documentation-for-sensitivity-labels).
 
