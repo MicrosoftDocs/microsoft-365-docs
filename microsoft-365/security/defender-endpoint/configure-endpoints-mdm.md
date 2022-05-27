@@ -1,5 +1,5 @@
 ---
-title: Onboard Windows devices using Mobile Device Management tools
+title: Onboard Windows devices to Defender for Endpoint using Intune 
 description: Use Mobile Device Management tools to deploy the configuration package on devices so that they are onboarded to the Defender for Endpoint service.
 keywords: onboard devices using mdm, device management, onboard Microsoft Defender for Endpoint devices, mdm
 ms.prod: m365-security
@@ -17,7 +17,7 @@ ms.topic: article
 ms.technology: mde
 ---
 
-# Onboard Windows devices using Mobile Device Management tools
+# Onboard Windows devices to Defender for Endpoint using Intune 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -52,9 +52,10 @@ For more information on using Defender for Endpoint CSP see, [WindowsAdvancedThr
 >
 > - The **Health Status for onboarded devices** policy uses read-only properties and can't be remediated.
 > - Configuration of diagnostic data reporting frequency is only available for devices on Windows 10, version 1703.
+> - Onboarding to Defender for Endpoint will onboard the device to [Data Loss Prevention (DLP)](../../compliance/endpoint-dlp-learn-about.md), which is also a part of Microsoft 365 compliance.
 
 
-Check out the [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf) or [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) to see the various paths in deploying Microsoft Defender for Endpoint.
+Check out the [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf) to see the various paths in deploying Microsoft Defender for Endpoint.
 
 ## Run a detection test to verify onboarding
 After onboarding the device, you can choose to run a detection test to verify that a device is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender for Endpoint device](run-detection-test.md).

@@ -49,7 +49,7 @@
 ### [Onboarding Windows Client and Server]()
 #### [Defender for Endpoint onboarding Windows Client](onboard-windows-client.md)
 ##### [Onboard Windows Client using various management tools]()
-###### [Onboard Windows devices using Mobile Device Management tools](configure-endpoints-mdm.md)
+###### [Onboard Windows devices to Defender for Endpoint using Intune ](configure-endpoints-mdm.md)
 ###### [Onboard Windows devices using Group Policy](configure-endpoints-gp.md)
 ###### [Onboard Windows devices using a local script](configure-endpoints-script.md)
 ###### [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
