@@ -19,9 +19,9 @@ ms.collection:
 
 # Firewall in Microsoft Defender for Business
 
-Microsoft Defender for Business includes firewall capabilities with [Windows Defender Firewall](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security). Firewall protection helps secure devices with rules that determine which network traffic is permitted to enter or flow from devices. 
+Microsoft Defender for Business includes firewall capabilities through [Windows Defender Firewall](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security). Firewall protection helps secure devices by establishing rules that determine what network traffic is permitted to enter or flow from devices.
 
-You can use firewall protection to specify whether to allow or block connections on devices in various locations. For example, your firewall settings can allow inbound connections on devices that are connected to your company's internal network, but prevent those connections when the device is on a network with untrusted devices.
+You can use firewall protection to specify whether to allow or block connections on devices in various locations. For example, your firewall settings can allow inbound connections on devices that are connected to your company's internal network but prevent those connections when the device is on a network with untrusted devices.
 
 **This article describes**:
 
@@ -45,14 +45,14 @@ In Microsoft Defender for Business, you can define exceptions to block or allow 
 
 ## Firewall settings you can configure in Defender for Business
 
-Microsoft Defender for Business includes firewall protection through Windows Defender Firewall. The following table lists settings that can be configured for firewall protection in Microsoft Defender for Business.
+Microsoft Defender for Business includes firewall protection through Windows Defender Firewall. The following table lists settings that can be configured in Microsoft Defender for Business.
 
 | Setting | Description |
 |--|--|
-| **Domain network** | The domain network profile applies to your company's network. Firewall settings for your domain network apply to inbound connections that are initiated on other devices that are on the same network. By default, incoming connections are set to **Block all**.  |
+| **Domain network** | The domain network profile applies to your company's network. Firewall settings for your domain network apply to inbound connections that are initiated on other devices on the same network. By default, incoming connections are set to **Block all**.  |
 | **Public network** | The public network profile applies to a network that you can use in a public location, such as a coffee shop or an airport. Firewall settings for public networks apply to inbound connections that are initiated on other devices that are on the same network. Because a public network can include devices that you don't know or don't trust, incoming connections are set to **Block all** by default.  |
-| **Private network** | The private network profile applies to a network in a private location, such as your home. Firewall settings for private networks apply to inbound connections that are initiated on other devices that are on the same network. In general, on a private network, it's assumed that all other devices on the same network are trusted devices. However, by default, incoming connections are set to **Block all**. |
-| **Custom rules** | [Custom rules](mdb-custom-rules-firewall.md) allow you to block or allow specific connections. For example, suppose that you want to block all incoming connections on devices that are connected to a private network, except for connections through a specific app on a device. In this case, you would set **Private network** to block all incoming connections, and then add a custom rule to define the exception. <p>You can use custom rules to define exceptions for specific files or apps, an Internet protocol (IP) address, or a range of IP addresses. Depending on the type of custom rule you're creating, here are some example values you can use:<ul><li>Application file path: `C:\Windows\System\Notepad.exe or %WINDIR%\Notepad.exe`</li><li>IP: A valid IPv4/IPv6 address, such as `192.168.11.0` or `192.168.1.0/24`</li><li>IP: A valid IPv4/IPv6 address range, formatted like `192.168.1.0-192.168.1.9` (with no spaces included)</li></ul> |
+| **Private network** | The private network profile applies to a network in a private location, such as your home. Firewall settings for private networks apply to inbound connections that are initiated on other devices on the same network. In general, on a private network, it's assumed that all other devices on the same network are trusted devices. However, by default, incoming connections are set to **Block all**. |
+| **Custom rules** | [Custom rules](mdb-custom-rules-firewall.md) let you block or allow specific connections. For example, suppose that you want to block all incoming connections on devices that are connected to a private network, except for connections through a specific app on a device. In this case, you'd set **Private network** to block all incoming connections, and then add a custom rule to define the exception. <p>You can use custom rules to define exceptions for specific files or apps, an Internet protocol (IP) address, or a range of IP addresses. Depending on the type of custom rule you're creating, here are some example values you can use:<ul><li>Application file path: `C:\Windows\System\Notepad.exe or %WINDIR%\Notepad.exe`</li><li>IP: A valid IPv4/IPv6 address, such as `192.168.11.0` or `192.168.1.0/24`</li><li>IP: A valid IPv4/IPv6 address range, formatted like `192.168.1.0-192.168.1.9` (with no spaces included)</li></ul> |
 
 ## Next steps
 

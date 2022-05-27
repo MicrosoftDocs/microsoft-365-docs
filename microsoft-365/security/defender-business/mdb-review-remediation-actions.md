@@ -20,7 +20,12 @@ ms.collection:
 
 # Review remediation actions in the Action center
 
-As threats are detected, remediation actions come into play. Depending on the particular threat and how your security settings are configured, remediation actions might be taken automatically or only upon approval. Examples of remediation actions include sending a file to quarantine, stopping a process from running, and removing a scheduled task. All remediation actions are tracked in the Action center.
+As threats are detected, remediation actions come into play. Depending on the particular threat and how your security settings are configured, remediation actions might be taken automatically or only upon approval. Examples of remediation actions include: 
+- Send a file to quarantine
+- Stop a process from running
+- Remove a scheduled task
+
+All remediation actions are tracked in the Action center.
 
 :::image type="content" source="../../media/defender-business/mdb-actioncenter.png" alt-text="Screenshot of the Action center":::
 
@@ -40,7 +45,7 @@ As threats are detected, remediation actions come into play. Depending on the pa
 
 2. In the navigation pane, choose **Action center**.
 
-3. Select the **Pending** tab to view and approve (or reject) any pending actions. Such actions can arise from antivirus/antimalware protection, automated investigations, manual response activities, or live response sessions.
+3. Select the **Pending** tab to view and approve (or reject) any pending actions. Actions can arise from antivirus/antimalware protection, automated investigations, manual response activities, or live response sessions.
 
 4. Select the **History** tab to view a list of completed actions. 
 
@@ -53,7 +58,7 @@ The following table lists remediation actions that are available:
 | Source  | Actions  |
 |---------|---------|
 | [Automated investigations](../defender-endpoint/automated-investigations.md)      |<ul><li>Quarantine a file</li><li>Remove a registry key</li><li>Kill a process</li><li>Stop a service</li><li>Disable a driver</li><li>Remove a scheduled task </li></ul> |
-| [Manual response actions](../defender-endpoint/respond-machine-alerts.md)   |<ul><li>Run antivirus scan</li><li>Isolate device</li><li>Stop and quarantine</li><li>Add an indicator to block or allow a file</li></ul> |
+| [Manual response actions](../defender-endpoint/respond-machine-alerts.md)   |<ul><li>Run antivirus scan</li><li>Isolate a device</li><li>Stop and quarantine</li><li>Add an indicator to block or allow a file</li></ul> |
 | [Live response](../defender-endpoint/live-response.md)   |<ul><li>Collect forensic data</li><li>Analyze a file</li><li>Run a script</li><li>Send a suspicious entity to Microsoft for analysis</li><li>Remediate a file </li><li>Proactively hunt for threats</li></ul> |
 
 ## Next steps

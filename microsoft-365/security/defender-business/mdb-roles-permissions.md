@@ -38,7 +38,7 @@ The following table describes the three roles that can be assigned in Defender f
 
 | Permission level | Description |
 |:---|:---|
-| **Global administrators** (also referred to as global admins) <p> *As a best practice, limit the number of global admins.* | Global admins can perform all kinds of tasks. The person who signed up your company for Microsoft 365 or for Microsoft Defender for Business is a global administrator by default. <p> Global admins are able to access/change settings across all Microsoft 365 portals, such as: <ul><li>The Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com))</li><li>Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com))</li></ul> |
+| **Global administrators** (also referred to as global admins) <p> *As a best practice, limit the number of global admins.* | Global admins can perform all kinds of tasks. The person who signed up your company for Microsoft 365 or for Microsoft Defender for Business is a global administrator by default. <p> Global admins are able to modify settings across all Microsoft 365 portals, such as: <ul><li>The Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com))</li><li>Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com))</li></ul> |
 | **Security administrators** (also referred to as security admins) | Security admins can perform the following tasks: <ul><li>View and manage security policies</li><li>View and manage security threats and alerts (these activities include taking response actions on endpoints)</li><li>View security information and reports</li></ul> |
 | **Security reader** | Security readers can perform the following tasks:<ul><li>View security policies</li><li>View security threats and alerts</li><li>View security information and reports</li></ul>  |
 
@@ -58,7 +58,7 @@ The following table describes the three roles that can be assigned in Defender f
    > [!IMPORTANT]
    > Microsoft recommends granting people access to only what they need to perform their tasks. We call this concept *least privilege* for permissions. To learn more, see [Best practices for least-privileged access for applications](/azure/active-directory/develop/secure-least-privileged-access). 
 
-4. In the side pane, select the **Manage members in Azure AD** link. This action takes you to Azure Active Directory (Azure AD) where you can view and manage your role assignments.
+4. In the side pane, select the **Manage members in Azure AD** link. This action takes you to Azure Active Directory (Azure AD), where you can view and manage your role assignments.
 
 5. Select a user to open their profile, and then choose **Assigned roles**.
 
