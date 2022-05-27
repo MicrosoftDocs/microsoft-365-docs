@@ -34,7 +34,7 @@ Now that you have Microsoft 365 Business Premium, your first critical mission is
 Your objectives are to:
 
 - [Set up your Microsoft 365 Business Premium environment](m365bp-setup.md).
-- [Set up Microsoft 365 Business Premium for Campaigns](m365-campaigns-setup.md) if this is your subscription.
+- [Set up Microsoft 365 Business for Campaigns](m365-campaigns-setup.md) if this is your subscription.
 
 Once you've achieved these objectives, go [increase security protections](m365bp-security-overview.md).
 

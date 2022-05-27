@@ -25,7 +25,7 @@ search.appverid:
 description: "Sign in to Microsoft 365. Protect your business, practice, or campaign from cybersecurity threats to email, data, and communication."
 ---
 
-# Sign in to Microsoft 365 Business Premium for Campaigns
+# Sign in to Microsoft 365 Business for Campaigns
 
 If you signed up for Microsoft 365 for Campaigns (or Microsoft 365 Business Premium), you're designated as the Microsoft 365 admin (also referred to as the Global Administrator). This allows you to sign in and initiate the system. 
 
@@ -37,7 +37,7 @@ Here's how to sign in:
 
 3. Type your username and password. Select **Sign in**.
 
-4. In the top right of the page, find the **Preview on** control. Select **Preview on** so you can use all the controls described in [Bump up protection for your campaign](m365-campaigns-security-overview.md).
+4. In the top right of the page, find the **Preview on** control. Select **Preview on** so you can use all the controls described in [Bump up protection for your campaign](m365bp-security-overview.md).
 
 ## For staff
 

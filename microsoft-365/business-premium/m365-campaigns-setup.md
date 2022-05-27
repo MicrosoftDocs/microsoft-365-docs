@@ -24,12 +24,12 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
-description: "Setup overview for Microsoft 365 Business Premium for campaigns or other businesses"
+description: "Setup overview for Microsoft 365 Business for campaigns or other businesses"
 ---
 
-# Setup for Microsoft 365 Business Premium for Campaigns
+# Setup for Microsoft 365 Business for Campaigns
 
-Now that you have [subscribed to Microsoft 365 Business Premium for Campaigns](get-microsoft-365-campaigns.md), your next step is to get everything set up.
+Now that you have [subscribed to Microsoft 365 for Campaigns](get-microsoft-365-campaigns.md), your next step is to get everything set up.
 
 ## Before you begin
 
@@ -45,25 +45,25 @@ Make sure that you meet the following requirements before you begin your setup p
 > [!TIP]
 > For more detailed information about Microsoft 365, Office, and system requirements, see [Microsoft 365 and Office Resources](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
 
-## Sign in to Microsoft 365 Business Premium for Campaigns
+## Sign in to Microsoft 365 for Campaigns
 
-If you signed up for Microsoft 365 for Campaigns (or Microsoft 365 Business Premium), you're designated as the Microsoft 365 admin (also referred to as the Global Administrator). This allows you to sign in and initiate the system. 
+If you signed up for Microsoft 365 for Campaigns (or Microsoft 365 Business Premium), you're designated as the Microsoft 365 admin (also referred to as the Global Administrator). This allows you to sign in and initiate the system.
 
 Here's how to sign in:
 
 1. Find the username and password we sent to the email address you used when you [signed up for Microsoft 365 for Campaigns](m365-campaigns-sign-up.md).
 
-2. In the browser, go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
+2. In the browser, go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank"><https://admin.microsoft.com></a>.
 
 3. Type your username and password. Select **Sign in**.
 
-4. In the top right of the page, find the **Preview on** control. Select **Preview on** so you can use all the controls described in [Bump up protection for your campaign](m365-campaigns-security-overview.md).
+4. In the top right of the page, find the **Preview on** control. Select **Preview on** so you can use all the controls described in [Bump up protection for your campaign](m365bp-security-overview.md).
 
 ### Staff sign-in
 
 Users who have been added to your Microsoft 365 for Campaigns (or Microsoft 365 Business Premium) subscription can sign in using the following steps:
 
-1. Go to <a href="https://office.com" target="_blank">https://Office.com</a>.
+1. Go to <a href="https://office.com" target="_blank"><https://Office.com></a>.
 
 2. Sign in using the username and password for the account. Users will have this information in the email they receive when they are added as users. If they can't find the email, see [user didn't receive invite email](../admin/simplified-signup/admin-invite-business-standard.md#i-shared-an-email-invite-but-the-user-didnt-receive-the-email).
 
@@ -88,8 +88,6 @@ The elements you can update are:
 - Username hint
 
 For examples of privacy and consent notices, see Appendix A in [Searching and Seizing Computers and Obtaining Electronic Evidence in Criminal Investigations](https://www.justice.gov/sites/default/files/criminal-ccips/legacy/2015/01/14/ssmanual2009.pdf).
-
-
 
 ### Next Objective
 
