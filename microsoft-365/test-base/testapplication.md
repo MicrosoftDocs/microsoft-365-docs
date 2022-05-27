@@ -175,13 +175,13 @@ In the left-hand menu under **Package catalog**, select the **New package**. The
    > [!NOTE]
    > When the Verification process is complete, the Verification status will change to Accepted. At this point, no further actions are required. Your package will be acquired automatically for execution whenever your configured operating systems have new updates available. If the Verification process fails, your package is not ready for testing. Please check the logs and assess whether any errors occurred. You may also need to check your package configuration settings for potential issues.
 
-### Continue package creation
+### Resume creation of a saved draft package
 
-On **New package** page, there is a list of saved draft packages if have. You can continue your edit directly to the step you paused last time by clicking the ‘edit’ pencil icon. 
+If you have any previously draft packages, you can view the list of your recent saved draft packages on the **New package** page. By clicking the **'Edit'** pencil icon, you can resume editing the package you selected from where you left off, as described in the **Status** column.
 
 > [!div class="mx-imgBorder"]
 > ![New package page](Media/testapplication19.png)
 
 > [!NOTE]
-> The dashboard only shows the working in progress package. For the published package, you can check the Manage Packages page.
+> The dashboard only shows the saved draft packages. To view published packages, you will need to go to the Manage Packages page.
 
