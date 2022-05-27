@@ -331,6 +331,9 @@ This rule detects suspicious properties within an obfuscated script.
 
 Script obfuscation is a common technique that both malware authors and legitimate applications use to hide intellectual property or decrease script loading times. Malware authors also use obfuscation to make malicious code harder to read, which prevents close scrutiny by humans and security software.
 
+> [!IMPORTANT]
+> Due to the high number of false positives, this rule does not currently detect PowerShell scripts; this is a temporary solution. The rule will be updated and start redetecting PowerShell scripts soon.
+
 Intune name: `Obfuscated js/vbs/ps/macro code`
 
 Configuration Manager name: `Block execution of potentially obfuscated scripts`
