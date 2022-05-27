@@ -110,7 +110,7 @@ Use the **Get-OrganizationConfig** and **Set-OrganizationConfig** commands to fi
    
    
   > [!NOTE]
-  > The EwsApplicationAccessPolicy parameter defines which applications other than Entourage, Mac Outlook, and Outlook can access EWS.
+  > The EwsApplicationAccessPolicy parameter defines which applications other than Entourage, Outlook, and Outlook for Mac can access EWS.
 
 ### Turn Bookings in Outlook off or on for individual users
 
