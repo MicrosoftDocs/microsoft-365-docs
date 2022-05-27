@@ -315,7 +315,7 @@ On the **Select end user notification** page, select from the following notifica
       - **Deliver after campaign ends**
       - **Deliver during campaign**
     - **Actions**: If you click on the ![View icon.](../../media/m365-cc-sc-view-icon.png) **View** icon, the **Review notification** page appears with the following information:
-      - **Preview** tab: View the notification message.
+      - **Preview** tab: View the notification message as users will see it.
         - To view the message in different languages, use the **Select language** box.
         - Use the **Select payload to preview** box to select the notification message for simulations that contain multiple payloads.
       - **Details** tab: View details about the notification:
