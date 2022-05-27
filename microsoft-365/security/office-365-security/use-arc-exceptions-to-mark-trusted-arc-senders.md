@@ -67,7 +67,7 @@ Trusted ARC sealers in Microsoft 365 Defender portal shows all the ARC sealers a
 
 ## Steps to validate your trusted ARC sealer
 
-If there is an ARC seal from a third party before the message reaches Microsoft 365 Defender, **check the headers once the email is received and view the latest ARC headers**.
+If there's an ARC seal from a third party before the message reaches Microsoft 365 Defender, **check the headers once the email is received and view the latest ARC headers**.
 
 In the last ***ARC-Authentication-Results header***, check whether ARC validation is listed as **pass**.
 
@@ -134,7 +134,7 @@ These diagrams contrast mailflow operations with and without a trusted ARC seale
 
 Here, you see the same organization **after leveraging the ability to create a trusted ARC sealer.**
 
-:::image type="content" source="../../media/m365d-indirect-traffic-flow-with-trusted-arc-sealer.PNG" alt-text="In the second graphic Contoso company had created a list of trusted ARC sealers. The same user sends a second mail from contoso.com to fabrikam.com. The third party service hired by Contoso modifies the IP address of the sender in the header of the mail. But this time the service has implemented ARC sealing, and because the tenant admin has already added the domain of the third party to trusted ARC sealers, the modification is accepted. SPF fails for the new IP address; DKIM fails because of the content modification; DMARC fails because of the earlier failures; but ARC recognizes the modifications, issues a Pass, and accepts changes. Spoof also receives a pass. The message is sent to Inbox.":::
+:::image type="content" source="../../media/m365d-indirect-traffic-flow-with-trusted-arc-sealer.PNG" alt-text="In the second graphic Contoso company had created a list of trusted ARC sealers. The same user sends a second mail from contoso.com to fabrikam.com. The third party service hired by Contoso modifies the IP address of the sender in the header of the mail. But this time the service has implemented ARC sealing, and because the tenant admin has already added the domain of the third party to trusted ARC sealers, the modification is accepted. SPF fails for the new IP address. DKIM fails because of the content modification. DMARC fails because of the earlier failures. But ARC recognizes the modifications, issues a Pass, and accepts the changes. Spoof also receives a pass. The message is sent to Inbox.":::
 
 ## Next steps: After you set up ARC for Microsoft 365 Defender for Office
 
