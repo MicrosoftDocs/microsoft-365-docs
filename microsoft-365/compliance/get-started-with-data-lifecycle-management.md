@@ -90,7 +90,7 @@ If you have a scenario that requires data management of individual items, see th
 
 See the following section for information about end-user documentation to support Microsoft 365 retention.
 
-The data lifecycle management capabilities that support mailbox management (archiving, inactive mailboxes, and import) typically don't require end-user documentation.
+The data lifecycle management capabilities for inactive mailboxes and import of PST files don't require end-user documentation. For archive mailboxes, see [Manage email storage with online archive mailboxes](https://prod.support.services.microsoft.com/en-us/office/manage-email-storage-with-online-archive-mailboxes-1cae7d17-7813-4fe8-8ca2-9a5494e9a721).
 
 ### End-user documentation for retention and deletion
 
