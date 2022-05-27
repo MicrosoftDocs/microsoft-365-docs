@@ -92,9 +92,15 @@ Detailed lab guides take you through multiple deployment and management scenario
 - BitLocker
 - Microsoft Defender Antivirus
 - Windows Hello for Business
+- Windows Defender Credential Guard       
+- Microsoft Defender Application Guard     
+- Windows Defender Exploit Guard             
+- Windows Defender Application Control   
+- Microsoft Defender for Endpoint 
+
 
 > [!NOTE]
-> Please use a broadband internet connection to download this content and allow approximately 30 minutes for automatic provisioning. The lab environment requires a minimum of 16 GB of available memory and 150 GB of free disk space. For optimal performance, 32 GB of available memory and 300 GB of free space is recommended. The Windows 10 lab expires August 11, 2022. The Windows 11 lab expires August 7, 2022. New versions will be published prior to expiration.
+> Please use a broadband internet connection to download this content and allow approximately 30 minutes for automatic provisioning. The lab environment requires a minimum of 16 GB of available memory and 150 GB of free disk space. For optimal performance, 32 GB of available memory and 300 GB of free space is recommended. The evaluation software in these labs expires 90-120 days after activation. New versions of the labs will be published in August, 2022. 
 
 ## Additional guidance
 
