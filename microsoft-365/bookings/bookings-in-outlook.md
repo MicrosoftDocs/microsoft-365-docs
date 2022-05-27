@@ -108,7 +108,6 @@ Use the **Get-OrganizationConfig** and **Set-OrganizationConfig** commands to fi
    Set-OrganizationConfig -EwsApplicationAccessPolicy EnforceBlockList -EwsBlockList @{Add="MicrosoftOWSPersonalBookings"}
    ```
    
-   
   > [!NOTE]
   > The EwsApplicationAccessPolicy parameter defines which applications other than Entourage, Outlook, and Outlook for Mac can access EWS.
 
