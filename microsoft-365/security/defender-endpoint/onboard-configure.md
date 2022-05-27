@@ -40,7 +40,6 @@ Deploying Microsoft Defender for Endpoint is a two-step process.
 ## Onboard devices to the service
 You'll need to go the onboarding section of the Defender for Endpoint portal to onboard any of the supported devices. Depending on the device, you'll be guided with appropriate steps and provided management and deployment tool options suitable for the device. 
 
-### Key Information to complete onboarding process
 To onboard devices to the service:
 
 - Verify that the device fulfills the [minimum requirements](minimum-requirements.md)
