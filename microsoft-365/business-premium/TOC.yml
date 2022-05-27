@@ -18,7 +18,7 @@
         href: m365bp-setup-overview.md
       - name: Set up Microsoft 365 Business Premium
         href: m365bp-setup.md
-      - name: Set up Microsoft 365 for Campaigns
+      - name: Set up Microsoft 365 Business for Campaigns
         href: m365-campaigns-setup.md
   - name: Bump up security protection
     items: 
