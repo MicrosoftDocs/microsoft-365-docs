@@ -190,7 +190,10 @@ These are the known gaps:
 |Network discovery|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
 |Reports: Device Control, Device health, Firewall|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development|
 |Web content filtering|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development|
-|Microsoft Secure Score|![No](images/svg/check-no.svg) Not supported|![No](images/svg/check-no.svg) Not supported|![No](images/svg/check-no.svg) Not supported|  
+|Microsoft Secure Score|![Yes](images/svg/check-yes.svg) <sup>1</sup>|![No](images/svg/check-no.svg) Not supported|![No](images/svg/check-no.svg) Not supported|  
+
+> [!NOTE]
+> <sup>1</sup> While Microsoft Secure Score is available for GCC customers, security recommendations from Microsoft Defender for Endpoint are not currently supported.
 
 These are the features and known gaps for [Mobile Threat Defense (Microsoft Defender for Endpoint on Android & iOS)](mtd.md):
 
@@ -207,5 +210,3 @@ These are the features and known gaps for [Mobile Threat Defense (Microsoft Defe
 |Support for MAM|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
 |Privacy Controls|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
 |Threat and Vulnerability Management (TVM)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
-  
-
