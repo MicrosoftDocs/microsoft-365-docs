@@ -123,7 +123,7 @@ If you used the setup wizard but you need to onboard more devices, such as non-W
 
 In the next 30 days, we recommend you try out your new security capabilities, as described in the following sections:
 
-- [Use your Threat & Vulnerability Management dashboard](#use-your-threat--vulnerability-management-dashboard) 
+- [Use your Threat & Vulnerability Management dashboard](#use-the-threat--vulnerability-management-dashboard) 
 - [View and respond to detected threats](#view-and-respond-to-detected-threats)
 - [Review security policies](#review-security-policies)
 - [Prepare for ongoing security management](#prepare-for-ongoing-security-management)

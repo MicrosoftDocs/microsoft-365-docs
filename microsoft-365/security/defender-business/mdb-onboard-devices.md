@@ -64,7 +64,7 @@ You can use a local script to onboard Windows client devices. When you run the o
 
 7. Type the location of the script file. For example, if you copied the file to the Desktop folder, you would type `%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd`, and then press the Enter key (or select **OK**).
 
-8. After the script runs, [Run a detection test](#running-a-detection-test-on-a-windows-10-or-11-device).
+8. After the script runs, [Run a detection test](#run-a-detection-test-on-a-windows-10-or-11-device).
 
 ### Group Policy for Windows 10 and 11
 
@@ -272,7 +272,7 @@ You can onboard an instance of Windows Server to Defender for Business by using 
 
 8. Type the location of the script file. For example, if you copied the file to the Desktop folder, you would type `%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd`, and then press the Enter key (or select **OK**).
 
-9. Proceed to [Run a detection test on Windows Server](#running-a-detection-test-on-windows-server).
+9. Proceed to [Run a detection test on Windows Server](#run-a-detection-test-on-windows-server).
 
 ### Run a detection test on Windows Server
 
