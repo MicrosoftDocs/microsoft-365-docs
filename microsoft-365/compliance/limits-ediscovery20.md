@@ -119,9 +119,8 @@ The limits described in this section are related to exporting documents out of a
 |---|---|
 |Total file size or maximum number of documents downloaded from a review set.|3 MB or 50 documents<sup>7</sup>|
 
-## Notes
 
-## Footnotes
+## Reference notes
 <sup>1</sup> This is the maximum number of tags that you can create in a case. This limit isn't related to the number of documents that can be tagged.
 
 <sup>2</sup> This limit is shared with exporting content in other eDiscovery tools. This means that concurrent exports in Content search and eDiscovery (Standard) (and adding content to review sets in eDiscovery (Premium)) are all applied against this limit.
