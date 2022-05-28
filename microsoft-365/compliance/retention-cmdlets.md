@@ -31,7 +31,7 @@ In the descriptions that follow, a policy for retention can refer to a retention
 Before you use these cmdlets, you must first [connect to Office 365 Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 
-## Retention cmdlets for the majority of locations
+## Retention cmdlets for most locations
 
 Use the following cmdlets when the locations are Exchange email, SharePoint sites, OneDrive accounts, Microsoft 365 Groups, Skype for Business, Exchange public folders, Teams chat messages. or Teams channel messages.
 
