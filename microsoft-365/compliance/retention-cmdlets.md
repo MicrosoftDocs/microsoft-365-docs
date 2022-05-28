@@ -21,7 +21,6 @@ description: Identify the PowerShell cmdlets for retention that support configur
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Use the following sections to identify the available PowerShell cmdlets for retention policies and retention labels that you might need for configuration at-scale, automated scripts, or advanced configuration scenarios.
@@ -30,10 +29,9 @@ In the descriptions that follow, a policy for retention can refer to a retention
 
 Before you use these cmdlets, you must first [connect to Office 365 Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
-
 ## Retention cmdlets for most locations
 
-Use the cmdlets identified in the following table when the locations are Exchange email, SharePoint sites, OneDrive accounts, Microsoft 365 Groups, Skype for Business, Exchange public folders, Teams chat messages. or Teams channel messages.
+Use the cmdlets in the following table when the locations are Exchange email, SharePoint sites, OneDrive accounts, Microsoft 365 Groups, Skype for Business, Exchange public folders, Teams chat messages. or Teams channel messages.
 
 Don't use these cmdlets when the locations are for Teams private channel messages, Yammer user messages, or Yammer community messages. These locations have alternative cmdlets that are identified in the [next section](#retention-cmdlets-specific-to-teams-and-yammer).
 
