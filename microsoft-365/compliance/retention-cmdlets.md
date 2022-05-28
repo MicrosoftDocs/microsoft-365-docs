@@ -33,8 +33,9 @@ Before you use these cmdlets, you must first [connect to Office 365 Security & C
 
 ## Retention cmdlets for most locations
 
-Use the following cmdlets when the locations are Exchange email, SharePoint sites, OneDrive accounts, Microsoft 365 Groups, Skype for Business, Exchange public folders, Teams chat messages. or Teams channel messages.
+Use the cmdlets identified in the following table when the locations are Exchange email, SharePoint sites, OneDrive accounts, Microsoft 365 Groups, Skype for Business, Exchange public folders, Teams chat messages. or Teams channel messages.
 
+Don't use these cmdlets when the locations are for Teams private channel messages, Yammer user messages, or Yammer community messages. These locations have alternative cmdlets that are identified in the [next section](#retention-cmdlets-specific-to-teams-and-yammer).
 
 |Cmdlet|Description|Applicable locations|
 |:-----|:-----|:-----|:-----|
