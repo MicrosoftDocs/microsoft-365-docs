@@ -7,9 +7,9 @@ author: cabailey
 manager: laurawi
 ms.date:
 audience: Admin
-ms.topic: conceptual
+ms.topic: reference
 ms.service: O365-seccomp
-ms.localizationpriority: high
+ms.localizationpriority: normal
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -33,10 +33,10 @@ Before you use these cmdlets, you must first [connect to Office 365 Security & C
 
 ## Retention cmdlets for the majority of locations
 
-Use the following cmdlets when the locations are Exchange email, SharePoint sites, OneDrive accounts, Microsoft 365 Groups, Skype for Business, Teams chat messages. or Teams channel messages.
+Use the following cmdlets when the locations are Exchange email, SharePoint sites, OneDrive accounts, Microsoft 365 Groups, Skype for Business, Exchange public folders, Teams chat messages. or Teams channel messages.
 
 
-|Cmdlet|Description |Applicable locations|
+|Cmdlet|Description|Applicable locations|
 |:-----|:-----|:-----|:-----|
 |[Enable-ComplianceTagStorage](/powershell/module/exchange/enable-compliancetagstorage) |A one-time operation to create storage for retention labels |Exchange email <br />SharePoint sites <br />OneDrive accounts <br />Microsoft 365 Groups|
 |[Get-ComplianceTag](/powershell/module/exchange/get-compliancetag) |View a retention label |Exchange email <br />SharePoint sites <br />OneDrive accounts<br />Microsoft 365 Groups|
@@ -59,6 +59,8 @@ Use the following cmdlets when the locations are Exchange email, SharePoint site
 
 Use the following cmdlets when the locations are for Teams private channel messages, Yammer user messages, or Yammer community messages.
 
+|Cmdlet|Description|Applicable locations|
+|:-----|:-----|:-----|:-----|
 |[Get-AppRetentionCompliancePolicy](/powershell/module/exchange/get-appretentioncompliancepolicy) | View retention policy |Teams private channel messages <br /> Yammer user messages <br /> Yammer community messages|
 |[Get-AppRetentionCompliancePolicyRule](/powershell/module/exchange/get-appretentioncompliancepolicyrule) | View retention settings for a retention policy |Teams private channel messages <br /> Yammer user messages <br /> Yammer community messages|
 |[New-AppRetentionCompliancePolicy](/powershell/module/exchange/new-appretentioncompliancepolicy) | Create retention policy |Teams private channel messages <br /> Yammer user messages <br /> Yammer community messages|
