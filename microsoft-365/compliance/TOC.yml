@@ -599,6 +599,8 @@
               href: retention-policies-exchange.md
         - name: Common settings for retention and deletion
           href: retention-settings.md
+        - name: PowerShell cmdlets for retention and deletion
+          href: retention-cmdlets.md
         - name: Limits for retention and deletion
           href: retention-limits.md
     - name: Data lifecycle management
