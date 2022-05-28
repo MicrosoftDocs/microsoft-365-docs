@@ -74,3 +74,5 @@ Use the following cmdlets when the locations are for Teams private channel messa
 ## Configuration guidance
 
 Use the help pages associated with each cmdlet for detailed information and examples.
+
+For guided help to create and then publish retention labels, see [Create and publish retention labels by using PowerShell](bulk-create-publish-labels-using-powershell.md).
