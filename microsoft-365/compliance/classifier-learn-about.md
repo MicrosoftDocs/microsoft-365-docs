@@ -120,7 +120,7 @@ These appear in the **Microsoft Purview compliance portal** > **Data classificat
 > [!IMPORTANT]
 > Please note the offensive language, harassment, profanity, discrimination, and threat classifiers only work with searchable text and are not an exhaustive or complete list of terms or language across these areas. Further, language and cultural standards continually change, and in light of these realities, Microsoft reserves the right to update these classifiers in its discretion. While classifiers may assist your organization in detecting these areas, classifiers are not intended to provide your organization's sole means of detecting or addressing the use of such language. Your organization, not Microsoft or its subsidiaries, remains responsible for all decisions related to monitoring, scanning, blocking, removal, and retention of any content identified by a pre-trained classifier, including compliance with local privacy and other applicable laws. Microsoft encourages consulting with legal counsel before deployment and use.
 
-Pre-trained classifiers can scan content in these languages:
+Our Threat, Profanity, Harassment, and Discrimination classifiers can scan content in these languages:
 
 - Chinese (Simplified)
 - English
@@ -130,6 +130,8 @@ Pre-trained classifiers can scan content in these languages:
 - Japanese
 - Portuguese
 - Spanish
+
+All others are English only at the moment.
 
 ### Custom classifiers
 
