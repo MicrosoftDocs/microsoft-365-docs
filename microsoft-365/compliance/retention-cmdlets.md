@@ -17,7 +17,7 @@ ms.collection:
 description: Identify the PowerShell cmdlets for retention that support configuration at-scale, automation, or might be needed for advanced configuration scenarios.
 ---
 
-# Identify the PowerShell cmdlets for retention policies and retention labels
+# PowerShell cmdlets for retention policies and retention labels
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
