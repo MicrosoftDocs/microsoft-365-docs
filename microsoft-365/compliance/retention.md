@@ -548,7 +548,7 @@ Retention actions that are logged as auditing events are available only for rete
 
 Use [Office 365 Security & Compliance Center PowerShell](/powershell/exchange/scc-powershell) for Purview retention cmdlets that support configuration at scale, scripting for automation, or might be necessary for advanced configuration scenarios.
 
-For a list of available cmdlets, and to identify which ones are supported for the different locations, see [PowerShell cmdlets for retention](retention-cmdlets.md).
+For a list of available cmdlets, and to identify which ones are supported for the different locations, see [PowerShell cmdlets for retention policies and retention labels](retention-cmdlets.md).
 
 ## When to use retention policies and retention labels or eDiscovery holds
 
