@@ -27,13 +27,12 @@ Use the following sections to identify the main PowerShell cmdlets that are avai
 
 Before you use these cmdlets, you must first [connect to Office 365 Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
-In the descriptions that follow, a policy for retention can refer to a retention policy (no labels), or a retention label policy. Each policy defines whether it's static or adaptive and the locations for the policy to be applied. The policy then requires one rule to complete the configuration. 
+In the descriptions that follow, a policy for retention can refer to a retention policy (no labels), or a retention label policy. Each policy defines whether it's static or adaptive and the locations for the policy to be applied. The policy then requires one rule to complete the configuration.
 
 For example:
 - A retention policy needs a rule that defines the retention settings, such as retain for five years and then delete.
 
 When you use retention labels, these contain the retention settings and their policies need different rules:
-
 - A retention label policy that you publish needs a rule that defines which labels should be displayed in apps.
 - An auto-apply retention label policy needs a rule that defines the label to apply and the conditions for applying the label.
 
