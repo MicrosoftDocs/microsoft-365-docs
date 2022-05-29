@@ -56,7 +56,7 @@ If **Records management** doesn't display in the navigation pane, first scroll d
 
 If you've already created retention labels from **Data lifecycle management** in the Microsoft Purview compliance portal, these labels automatically display in your file plan. 
 
-Similarly, if you now create retention labels in file plan, they are also available from **Data lifecycle management** if the labels aren't configured to mark content as a record.
+Similarly, if you now create retention labels in file plan, they're also available from **Data lifecycle management** if the labels aren't configured to mark content as a record.
 
 On the **File plan** page, you see all your labels with their status and settings, optional file plan descriptors, an export option to analyze or enable offline reviews of your labels, and an import option to create retention labels. 
 
@@ -77,11 +77,11 @@ All columns except the label **Name** can be displayed or hidden by selecting th
     - Yes
     - Yes(Regulatory)
 
-- **Is unlocked by default** —currently rolling out—identifies if the item marked as a record is unlocked when the label is applied. Valid values:
+- **Is unlocked by default**—currently rolling out—identifies if the item marked as a record is unlocked when the label is applied. Valid values:
     - No
     - Yes
 
-- **Relabel to** —currently rolling out—identifies if the label is configured to apply another label at the end of the retention period. Valid values:
+- **Relabel to**—currently rolling out—identifies if the label is configured to apply another label at the end of the retention period. Valid values:
     - Blank or the selected label name
 
 - **Retention duration** identifies the retention period. Valid values:
@@ -126,7 +126,7 @@ When you select **Choose** for each of these optional descriptors, you can selec
     
     To use the retention label to declare records, select **Mark items as records**, or **Mark items as regulatory records**. For more information, see [Configuring retention labels to declare records](declare-records.md#configuring-retention-labels-to-declare-records).
 
-3. After you have created the label and you see the options to publish the label, auto-apply the label, or just save the label: Select **Just save the label for now**, and then select **Done**.
+3. After you've created the label and you see the options to publish the label, auto-apply the label, or just save the label: Select **Just save the label for now**, and then select **Done**.
 
 4. Repeat these steps to create more labels.
 
@@ -142,7 +142,7 @@ Some settings can't be changed after the label is created and saved, which inclu
 
 You can delete retention labels that aren't currently included in any [published](create-apply-retention-labels.md) or [auto-apply](apply-retention-labels-automatically.md) retention label policies, that aren't configured for event-based retention, or mark items as regulatory records.
 
-For retention labels that you can delete, if they have been applied to items, the deletion fails and you see a link to content explorer to identify the labeled items.
+For retention labels that you can delete, if they've been applied to items, the deletion fails and you see a link to content explorer to identify the labeled items.
 
 However, it can take up to two days for content explorer to show the items that are labeled. In this scenario, the retention label might be deleted without showing you the link to content explorer.
 
@@ -225,6 +225,6 @@ Label settings not currently supported for import:
 
 ## Next steps
 
-Now you've created retention labels, they are ready to be added to items by publishing the labels, or automatically applying them:
+Now you've created retention labels, they're ready to be added to items by publishing the labels, or automatically applying them:
 - [Publish retention labels and apply them in apps](create-apply-retention-labels.md)
 - [Apply a retention label to content automatically](apply-retention-labels-automatically.md)
