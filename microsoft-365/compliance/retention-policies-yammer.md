@@ -83,7 +83,9 @@ For the two paths in the diagram:
 > [!NOTE]
 > Messages in the SubstrateHolds folder are searchable by eDiscovery tools. Until messages are permanently deleted from the SubstrateHolds folder, they remain searchable by eDiscovery tools.
 
-In this scenario where the backend service receives a delete command because of a retention policy, the corresponding message in the Yammer client app is deleted for all users in the conversation. Some of these users might be from another organization, have a retention policy with a longer retention period, or no retention policy assigned to them. For these users, copies of the messages are still stored in their mailboxes and remain searchable for eDiscovery until the messages are permanently deleted by another retention policy.
+When the retention period expires and moves a message to the SubstrateHolds folder, a delete operation is communicated to the Yammer service, that then relays the same operation to the Yammer client app. Delays in this communication or caching can explain why, for a short period of time, users continue to see these messages in their Yammer app.
+
+In this scenario where the Yammer service receives a delete command because of a retention policy, the corresponding message in the Yammer app is deleted for all users in the conversation. Some of these users might be from another organization, have a retention policy with a longer retention period, or no retention policy assigned to them. For these users, copies of the messages are still stored in their mailboxes and remain searchable for eDiscovery until the messages are permanently deleted by another retention policy.
 
 > [!IMPORTANT]
 > Messages visible in the Yammer app are not an accurate reflection of whether they are retained or permanently deleted for compliance requirements.
