@@ -83,6 +83,11 @@ For the two paths in the diagram:
 > [!NOTE]
 > Messages in the SubstrateHolds folder are searchable by eDiscovery tools. Until messages are permanently deleted (in the SubstrateHolds folder), they remain searchable by eDiscovery tools.
 
+In this scenario where the backend service receives a delete command because of a retention policy, the corresponding message in the Yammer client app is deleted for all users in the conversation. Some of these users might be from another organization, have a retention policy with a longer retention period, or no retention policy assigned to them. For these users, copies of the messages are still stored in their mailboxes and remain searchable for eDiscovery until the messages are permanently deleted by another retention policy.
+
+> [!IMPORTANT]
+> Messages visible in the Yammer app are not an accurate reflection of whether they are retained or permanently deleted for compliance requirements.
+
 When the retention policy is retain-only, or delete-only, the content's paths are variations of retain and delete.
 
 ### Content paths for retain-only retention policy
