@@ -66,7 +66,7 @@ Other mailbox types, such as RoomMailbox that is used for Teams conference rooms
 
 Teams uses an Azure-powered chat service as its primary storage for all messages (chats and channel messages). If you need to delete Teams messages for compliance reasons, retention policies for Teams can delete messages after a specified period, based on when they were created. Messages are then permanently deleted from both the Exchange mailboxes where they stored for compliance operations, and from the primary storage used by the underlying Azure-powered chat service. For more information about the underlying architecture, see [Security and compliance in Microsoft Teams](/MicrosoftTeams/security-compliance-overview) and specifically, the [Information Protection Architecture](/MicrosoftTeams/security-compliance-overview#information-protection-architecture) section.
 
-Although this data from Teams chats and channel messages are stored in mailboxes, you must configure a retention policy for the **Teams channel messages** and **Teams chats** locations. Teams chats and channel messages aren't included in retention policies that are configured for Exchange user or group mailboxes. Similarly, retention policies for Teams don't affect other email items stored mailboxes.
+Although this data from Teams chats and channel messages are stored in mailboxes, you must configure a retention policy for the **Teams channel messages** and **Teams chats** locations. Teams chats and channel messages aren't included in retention policies that are configured for Exchange user or group mailboxes. Similarly, retention policies for Teams don't affect other email items stored in mailboxes.
 
 If a user is added to a chat, a copy of all messages shared with them are ingested into their mailbox. The created date of those messages doesn't change for the new user and remains the same for all users.
 
@@ -78,7 +78,7 @@ After a retention policy is configured for chat and channel messages, a timer jo
 Messages remain in the SubstrateHolds folder for at least 1 day, and then if they're eligible for deletion, the timer job permanently deletes them the next time it runs.
 
 > [!IMPORTANT]
-> Because of the [first principle of retention](retention.md#the-principles-of-retention-or-what-takes-precedence) and since Teams chat and channel messages are stored in Exchange Online mailboxes, permanent deletion from the SubstrateHolds folder is always suspended if the mailbox is affected by another retention policy for the same location, Litigation Hold, delay hold, or if an eDiscovery hold is applied to the mailbox for legal or investigative reasons.
+> Because of the [first principle of retention](retention.md#the-principles-of-retention-or-what-takes-precedence) and since Teams chat and channel messages are stored in Exchange Online mailboxes, permanent deletion from the SubstrateHolds folder is always suspended if the mailbox is affected by another Teams retention policy for the same location, Litigation Hold, delay hold, or if an eDiscovery hold is applied to the mailbox for legal or investigative reasons.
 >
 > While the mailbox is included in an applicable hold, Teams chat and channel messages that have been deleted will no longer be visible in the Teams app but will continue to be discoverable with eDiscovery.
 

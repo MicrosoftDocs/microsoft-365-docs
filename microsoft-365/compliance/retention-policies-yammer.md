@@ -64,7 +64,7 @@ Even though they are stored in Exchange, Yammer messages are only included in a 
 After a retention policy is configured for Yammer messages, a timer job from the Exchange service periodically evaluates items in the hidden folder where these Yammer messages are stored. The timer job takes up to seven days to run. When these items have expired their retention period, they're moved to the SubstrateHolds folder—a hidden folder that's in every user or group mailbox to store "soft-deleted" items before they're permanently deleted.
 
 > [!IMPORTANT]
-> Because of the [first principle of retention](retention.md#the-principles-of-retention-or-what-takes-precedence) and since Yammer messages are stored in Exchange Online mailboxes, permanent deletion from the SubstrateHolds folder is always suspended if the mailbox is affected by another retention policy for the same location, Litigation Hold, delay hold, or if an eDiscovery hold is applied to the mailbox for legal or investigative reasons.
+> Because of the [first principle of retention](retention.md#the-principles-of-retention-or-what-takes-precedence) and since Yammer messages are stored in Exchange Online mailboxes, permanent deletion from the SubstrateHolds folder is always suspended if the mailbox is affected by another Yammer retention policy for the same location, Litigation Hold, delay hold, or if an eDiscovery hold is applied to the mailbox for legal or investigative reasons.
 >
 > While the mailbox is included in an applicable hold, Yammer messages that have been deleted will no longer be visible in Yammer but will continue to be discoverable with eDiscovery.
 
