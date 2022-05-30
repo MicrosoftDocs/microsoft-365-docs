@@ -177,7 +177,7 @@ In the left-hand menu under **Package catalog**, select the **New package**. The
 
 ### Resume creation of a saved draft package
 
-If you have any previously draft packages, you can view the list of your recent saved draft packages on the **New package** page. By clicking the **'Edit'** pencil icon, you can resume editing the package you selected from where you left off, as described in the **Status** column.
+If you have any previous draft packages, you can view the list of your saved draft packages on the **New package** page. By clicking the **'Edit'** pencil icon, you can resume editing the package you selected from where you left off, as described in the **Status** column.
 
 > [!div class="mx-imgBorder"]
 > ![New package page](Media/testapplication19.png)
