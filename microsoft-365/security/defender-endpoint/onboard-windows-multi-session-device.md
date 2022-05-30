@@ -111,7 +111,7 @@ For more information, see [Onboard Windows devices using Configuration Manager](
 
 #### Tagging your machines when building your golden image
 
-As part of your onboarding, you may want to consider setting a machine tag to can differentiate AVD machines more easily in the Microsoft Security Center. For more information, see
+As part of your onboarding, you may want to consider setting a machine tag to differentiate AVD machines more easily in the Microsoft Security Center. For more information, see
 [Add device tags by setting a registry key value](machine-tags.md#add-device-tags-by-setting-a-registry-key-value).
 
 #### Other recommended configuration settings
