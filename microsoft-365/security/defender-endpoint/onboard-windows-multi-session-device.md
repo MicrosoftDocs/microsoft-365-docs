@@ -46,7 +46,7 @@ Microsoft recommends adding the Microsoft Defender for Endpoint onboarding scrip
 
 ### Scenarios
 
-There are several ways to onboard a AVD host machine:
+There are several ways to onboard an AVD host machine:
 
 - Run the script in the golden image (or from a shared location) during startup.
 - Use a management tool to run the script.
