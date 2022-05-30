@@ -9,7 +9,7 @@ audience:                  ITPro
 ms.topic:                  article
 ms.date:                   05/30/2022 
 ms.prod:                   m365-security
-ms.technology:             m365
+ms.technology:             m365-defender
 ms.localizationpriority:   medium
 ms.collection:             M365-security-compliance
 f1.keywords:               NOCSH

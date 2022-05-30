@@ -9,7 +9,7 @@ audience:                  ITPro
 ms.topic:                  article
 ms.date:                   05/30/2022 
 ms.prod:                   m365-security
-ms.technology:             m365
+ms.technology:             m365-defender
 ms.localizationpriority:   medium
 ms.collection:             M365-security-compliance.
 f1.keywords:               NOCSH
@@ -235,7 +235,7 @@ From the **Detection details** section of many threat analytics reports, you can
 
 ### Microsoft 365 Defender APIs
 
-You can also use the Microsoft 365 Defender APIs to query the Microsoft 365 Defender incidents and alerts data in your tenant. A custom app can filter the data, filter it based on custom settings, and then provide a filtered list of links to alerts and incidents that you can easily select to go right to that alert or incident. See [List incidents API in Microsoft 365 Defender | Microsoft Docs](https://docs.microsoft.com/microsoft-365/security/defender/api-list-incidents?view=o365-worldwide). You can also integrate your SIEM with Microsoft Defender, see [Integrate your SIEM tools with Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/configure-siem-defender?view=o365-worldwide).
+You can also use the Microsoft 365 Defender APIs to query the Microsoft 365 Defender incidents and alerts data in your tenant. A custom app can filter the data, filter it based on custom settings, and then provide a filtered list of links to alerts and incidents that you can easily select to go right to that alert or incident. See [List incidents API in Microsoft 365 Defender | Microsoft Docs](/api-list-incidents.md). You can also integrate your SIEM with Microsoft Defender, see [Integrate your SIEM tools with Microsoft 365 Defender](/configure-siem-defender.md).
 
 ### Microsoft 365 Defender Sentinel Integration
 
@@ -243,11 +243,11 @@ Microsoft Sentinel's Microsoft 365 Defender incident integration allows you to s
 
 ### Proactive scanning with advanced hunting
 
-[Advanced hunting](https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-overview) is a query-based threat hunting tool that lets you explore and inspect events in your network to locate threat indicators and entities. This flexible and customizable analysis tool enables unconstrained hunting for both known and potential threats. Microsoft 365 Defender also supports using a custom query to create [custom detection rules](https://docs.microsoft.com/microsoft-365/security/defender/custom-detections-overview), which create alerts based on a query can be and scheduled to run automatically.
+[Advanced hunting](/advanced-hunting-overview.md) is a query-based threat hunting tool that lets you explore and inspect events in your network to locate threat indicators and entities. This flexible and customizable analysis tool enables unconstrained hunting for both known and potential threats. Microsoft 365 Defender also supports using a custom query to create [custom detection rules](/custom-detections-overview.md), which create alerts based on a query can be and scheduled to run automatically.
 
 For proactive scanning of ransomware activities, you should assemble a catalog of advanced hunting queries for commonly used ransomware attack methods for identities, endpoints, apps, and data. Here are some key sources for ready-to-use advanced hunting queries:
 
-* The [Hunt for ransomware](https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-find-ransomware) article
+* The [Hunt for ransomware](/advanced-hunting-find-ransomware.md) article
 * GitHub repository for advanced hunting queries:
   * [Ransomware-specific](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/tree/master/Ransomware) queries
   * [All categories](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/tree/master/Ransomware) of queries
@@ -283,7 +283,7 @@ Consider these steps to get your SecOps team and organization ready for focused 
 2. Get the appropriate licenses for the Defender for Endpoint, Defender for Office 365, Defender for Identity, Defender for Cloud Apps, the app governance add-on, Defender for IoT, and Azure AD Identity Protection services.
 3. Assemble a catalog of advanced hunting queries tuned for known ransomware attack methods or attack phases.
 4. Create the set of custom detection rules for specific advanced hunting queries that create alerts for known ransomware attack methods, including their schedule, alert naming, and automated actions.
-5. Determine the set of [custom tags](https://docs.microsoft.com/microsoft-365/security/defender/manage-incidents?view=o365-worldwide#add-incident-tags) or standards to create new one to identify incidents that are known to be part of a larger, coordinated ransomware attack
+5. Determine the set of [custom tags](/manage-incidents.md) or standards to create new one to identify incidents that are known to be part of a larger, coordinated ransomware attack
 6. Determine the set of operational tasks for ransomware incident and alert management. For example:
 
 * Processes for Tier 1 analyst scanning of incoming incidents and alerts and assignment to Tier 2 analysts for investigation.
