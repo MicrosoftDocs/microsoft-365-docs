@@ -1,18 +1,18 @@
 ---
-title:                     # Detecting human-operated ransomware attacks with Microsoft 365 Defender
-description:               # This article describes proactive detection of new or ongoing human-operated ransomware attacks with the Microsoft 365 Defender portal
-search.appverid: MET150    # 
-author: {github-id}        # nic-name
-ms.author: {ms-alias}      # noriordan
-manager:                   # dolmont
-audience:                  # ITPro
-ms.topic:                  # article
-ms.date:                   # 05/30/2022 
-ms.prod:                   # m365-security
-ms.technology:             # m365
-ms.localizationpriority:   # medium
-ms.collection:             # M365-security-compliance.
-f1.keywords:               # NOCSH
+title:                     Detecting human-operated ransomware attacks with Microsoft 365 Defender
+description:               This article describes proactive detection of new or ongoing human-operated ransomware attacks with the Microsoft 365 Defender portal
+search.appverid: MET150    
+author: {github-id}        nic-name
+ms.author: {ms-alias}      noriordan
+manager:                   dolmont
+audience:                  ITPro
+ms.topic:                  article
+ms.date:                   05/30/2022 
+ms.prod:                   m365-security
+ms.technology:             m365
+ms.localizationpriority:   medium
+ms.collection:             M365-security-compliance.
+f1.keywords:               NOCSH
 ---
 
 # Detecting human-operated ransomware attacks with Microsoft 365 Defender

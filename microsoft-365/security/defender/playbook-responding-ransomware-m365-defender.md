@@ -1,18 +1,18 @@
 ---
-title:                     # Responding to ransomware attacks
-description:               # This article provides a generalized playbook for responding to ransomware attacks.
-search.appverid: MET150    # 
-author: {github-id}        # nic-name
-ms.author: {ms-alias}      # noriordan
-manager:                   # dolmont
-audience:                  # ITPro
-ms.topic:                  # article
-ms.date:                   # 05/30/2022 
-ms.prod:                   # m365-security
-ms.technology:             # m365
-ms.localizationpriority:   # medium
-ms.collection:             # M365-security-compliance.
-f1.keywords:               # NOCSH
+title:                     Responding to ransomware attacks
+description:               This article provides a generalized playbook for responding to ransomware attacks.
+search.appverid: MET150     
+author: {github-id}        nic-name
+ms.author: {ms-alias}      noriordan
+manager:                   dolmont
+audience:                  ITPro
+ms.topic:                  article
+ms.date:                   05/30/2022 
+ms.prod:                   m365-security
+ms.technology:             m365
+ms.localizationpriority:   medium
+ms.collection:             M365-security-compliance
+f1.keywords:               NOCSH
 ---
 # Responding to ransomware attacks
 
