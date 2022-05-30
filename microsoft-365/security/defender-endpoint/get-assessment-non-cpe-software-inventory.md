@@ -86,7 +86,7 @@ Property (ID)|Data type|Description
 :---|:---|:---
 DeviceId|string|Unique identifier for the device in the service.
 DeviceName|string|Fully qualified domain name (FQDN) of the device.
-OSPlatform|string|Platform of the operating system running on the device. These are specific operating systems with variations within the same family, such as Windows 10 and Windows 11. See tvm supported operating systems and platforms for details.
+OSPlatform|string|Platform of the operating system running on the device. These are specific operating systems with variations within the same family, such as Windows 10 and Windows 11. See [Supported operating systems, platforms and capabilities](../defender-vulnerability-management/tvm-supported-os.md) for details.
 RbacGroupName|string|The role-based access control (RBAC) group. If this device is not assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."
 RbacGroupId|string|The role-based access control (RBAC) group ID.
 SoftwareLastSeenTimestamp|string|The last time this software was seen on the device.
@@ -99,7 +99,7 @@ SoftwareVersion|string|Version number of the software product.
 #### 1.6.1 Request example
 
 ```http
-https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryNoProductCodeByMachine?pageSize=5  &sinceTime=2021-05-19T18%3A35%3A49.924Z
+https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryNoProductCodeByMachine?pageSize=5  &sinceTime=2021-05-19
 ```
 
 #### 1.6.2 Response example
@@ -164,7 +164,7 @@ https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryNoProduct
             "softwareLastSeenTimestamp": "2022-05-17 10:05:36.128"
         }
     ],
-    "@odata.nextLink": "https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryNoProductCodeByMachine?pagesize=5%20%20&sincetime=2021-05-19T18%3A35%3A49.924Z&$skiptoken=eyJFeHBvcnREZWZpbml0aW9uIjp7IlRpbWVQYXRoIjoiMjAyMi0wNS0zMC8wNTAwLyJ9LCJFeHBvcnRGaWxlSW5kZXgiOjAsIkxpbmVTdG9wcGVkQXQiOjV9"
+        "@odata.nextLink": "https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryNoProductCodeByMachine?pagesize=5%20%20&sincetime=2021-05-19&$skiptoken=eyJFeHBvcnREZWZpbml0aW9uIjp7IlRpbWVQYXRoIjoiMjAyMi0wNS0zMC8xMTAxLyJ9LCJFeHBvcnRGaWxlSW5kZXgiOjAsIkxpbmVTdG9wcGVkQXQiOjV9"
 }
 
 ```
