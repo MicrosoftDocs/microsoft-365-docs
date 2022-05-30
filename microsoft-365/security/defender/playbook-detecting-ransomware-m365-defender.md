@@ -9,7 +9,6 @@ audience:                  ITPro
 ms.topic:                  article
 ms.date:                   05/30/2022 
 ms.prod:                   m365-security
-ms.technology:             m365-defender
 ms.localizationpriority:   medium
 ms.collection:             M365-security-compliance.
 f1.keywords:               NOCSH
@@ -35,7 +34,7 @@ This article describes proactive detection of new or ongoing human-operated rans
 * Microsoft 365 Business Premium
 * Microsoft Defender for Business
 
-For information about preventing ransomware attacks, see [Rapidly protect against ransomware and extortion](../../../../security/compass/protect-against-ransomware-phase3.md).
+For information about preventing ransomware attacks, see [Rapidly protect against ransomware and extortion](/security/compass/protect-against-ransomware-phase3).
 
 ## The importance of proactive detection
 
@@ -49,6 +48,7 @@ If pre-ransom activities are detected quickly, the likelihood of a severe attack
 Business operation disruptions are likely when responding to a ransomware attack. The end stage of a ransomware attack is often a choice between downtime caused by attackers with major risks, or a controlled downtime to ensure network safety and give you time to fully investigate. We never recommend paying a ransom. Paying cybercriminals to get a ransomware decryption key provides no guarantee that your encrypted data will be restored. See, [Ransomware response - Microsoft Security Blog](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/).
 
 Here’s the qualitative relationship of the impact of a ransomware attack and your time to respond for no detection vs. proactive detection and response.
+
 ![The qualitative relationship of the impact of a ransomware attack and your time to respond for no detection vs. proactive detection and response, showing the impact to your business reduces, the quicker you respond.](../../media/defender/playbook-detecting-ransomware-m365-defender-qualitative-diagram.png)
 
 ### Proactive detection via common malware tools and techniques
@@ -239,7 +239,7 @@ You can also use the Microsoft 365 Defender APIs to query the Microsoft 365 Defe
 
 ### Microsoft 365 Defender Sentinel Integration
 
-Microsoft Sentinel's Microsoft 365 Defender incident integration allows you to stream all Microsoft 365 Defender incidents into Microsoft Sentinel and keep them synchronized between both portals. Incidents include all associated alerts, entities, and relevant information. Once in Sentinel, incidents will remain bi-directionally synced with Microsoft 365 Defender, allowing you to take advantage of the benefits of both portals in your incident investigation. See, [Microsoft 365 Defender integration with Microsoft Sentinel](../../../../azure-docs(https://docs.microsoft.com/azure/sentinel/microsoft-365-defender-sentinel-integration).
+Microsoft Sentinel's Microsoft 365 Defender incident integration allows you to stream all Microsoft 365 Defender incidents into Microsoft Sentinel and keep them synchronized between both portals. Incidents include all associated alerts, entities, and relevant information. Once in Sentinel, incidents will remain bi-directionally synced with Microsoft 365 Defender, allowing you to take advantage of the benefits of both portals in your incident investigation. See, [Microsoft 365 Defender integration with Microsoft Sentinel](https://docs.microsoft.com/azure/sentinel/microsoft-365-defender-sentinel-integration).
 
 ### Proactive scanning with advanced hunting
 

@@ -9,7 +9,6 @@ audience:                  ITPro
 ms.topic:                  article
 ms.date:                   05/30/2022 
 ms.prod:                   m365-security
-ms.technology:             m365-defender
 ms.localizationpriority:   medium
 ms.collection:             M365-security-compliance
 f1.keywords:               NOCSH
@@ -96,7 +95,7 @@ DeviceLogonEvents
   * [Real time protection](../defender-endpoint/configure-real-time-protection-microsoft-defender-antivirus.md) is enabled.
   * [Tamper protection](../defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection.md) is enabled. In the Microsoft 365 Defender portal, select **Settings > Endpoints > Advanced features > Tamper protection**.
   * [Attack surface reduction (ASR)](../defender-endpoint/enable-attack-surface-reduction.md) rules are enabled.
-  * [Cloud protection](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/enable-attack-surface-reduction?view=o365-worldwide) is enabled.
+  * [Cloud protection](../defender-endpoint/enable-attack-surface-reduction.md) is enabled.
 * Disable Exchange ActiveSync and OneDrive sync.
   * To disable Exchange ActiveSync for a mailbox, see [How to disable Exchange ActiveSync for users in Exchange Online](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-exchange-activesync).
   * To disable other types of access to a mailbox, see:
