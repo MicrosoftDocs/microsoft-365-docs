@@ -256,9 +256,9 @@ Go to Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>
 
         - **Data Type** as **String (XML file)**
         - Click **Save**.
-    :::image type="content" source="images/audit-default-deny-XML-file.png" alt-text="audit default deny xml file":::
+    :::image type="content" source="images/audit-default-deny-XML-file-1.png" alt-text="audit default deny xml file":::
         
-    :::image type="content" source="images/audit-default-deny.png" alt-text="Audit Default Deny" lightbox="images/audit-default-deny.png":::
+    :::image type="content" source="images/audit-default-deny-1.png" alt-text="Audit Default Deny" lightbox="images/audit-default-deny.png":::
         
     XML file download location: [mdatp-devicecontrol/Audit Default Deny.xml at main · microsoft/mdatp-devicecontrol (github.com](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Audit%20Default%20Deny.xml)
 
@@ -306,14 +306,14 @@ Go to Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>
          `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bb2061588-029e-427d-8404-6dfec096a571%7d/RuleData`
 
        - **Data Type** as **String (XML file)** 
-       :::image type="content" source="images/create-policy-allow-approved-USB-group-XML-file.png" alt-text="create policy to allow the approved USB Group XML file":::
+       :::image type="content" source="images/create-policy-allow-approved-USB-group-XML-file-1.png" alt-text="create policy to allow the approved USB Group XML file":::
       
-   :::image type="content" source="images/allow-access-audit-file-information.png" alt-text="Allow access and audit file information" lightbox= "images/allow-access-audit-file-information.png":::
+   :::image type="content" source="images/allow-access-audit-file-information-1.png" alt-text="Allow access and audit file information" lightbox= "images/allow-access-audit-file-information.png":::
    
-   What ‘37’ means in the policy? <br> 
+   What ‘47’ means in the policy? <br> 
    It is 9 + 2 + 36 = 47: <br>
    Read access: 1+8 = 9 <br>
-   Write access: disk level = 2 <br>
+   Write access: disk level 2 <br>
    Execute: 4 + 32 = 36
 
    XML file download location: [mdatp-devicecontrol/Allow full access and audit file.xml at main · microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Allow%20full%20access%20and%20audit%20file.xml)
