@@ -34,7 +34,7 @@ In the left-hand menu under **Package catalog**, select the **New package**. The
 
 ### Step 1. Define content
 
-1. In the **Package source** section, select Binaries (eg: .exe, .msi) in the Package source type.
+1. In the **Package source** section, select Binaries (for example: .exe, .msi) in the Package source type.
 
    > [!div class="mx-imgBorder"]
    > ![Choose your package source](Media/testapplication02.png)
@@ -106,7 +106,7 @@ In the left-hand menu under **Package catalog**, select the **New package**. The
    > [!div class="mx-imgBorder"]
    > ![Edit package prompt](Media/testapplication11-2.png)
 
-   - If the **Functional test** is selected in step 2, you can see the **functional** folder under the scripts folder. Additional functional test scripts can be added using the **'Add to functional test list'** button. You need a minimum of one (1) script and can add up to eight (8) functional test scripts.
+   - If the **Functional test** is selected in step 2, you can see the **functional** folder under the scripts folder. More functional test scripts can be added using the **'Add to functional test list'** button. You need a minimum of one (1) script and can add up to eight (8) functional test scripts.
 
    > [!div class="mx-imgBorder"]
    > ![Add to functional test list](Media/testapplication12.png)
