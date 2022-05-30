@@ -24,7 +24,7 @@ When you suspect you were or are currently under a ransomware attack, establish 
 * Eradication and recovery
 
 This article provides a generalized playbook for responding to ransomware attacks. Consider adapting the described steps and tasks in this article to your own security operations playbook.
-NOTE: For information about preventing ransomware attacks, see [Rapidly protect against ransomware and extortion](https://docs.microsoft.com/security/compass/protect-against-ransomware).
+NOTE: For information about preventing ransomware attacks, see [Rapidly protect against ransomware and extortion](../../../../security/compass/protect-against-ransomware.md).
 
 ## Containment
 
@@ -32,28 +32,28 @@ Containment and investigation should occur as simultaneously as possible; howeve
 
 ### Step 1: Assess the scope of the incident
 
-Run through this list of questions and tasks to discover the extent of the attack. Microsoft 365 Defender can provide a consolidated view of all impacted or at-risk assets to aid in your incident response assessment. See [Incident response with Microsoft 365 Defender | Microsoft Docs](https://docs.microsoft.com/microsoft-365/security/defender/incidents-overview?view=o365-worldwide). You can use the alerts and the evidence list in the incident to determine:
+Run through this list of questions and tasks to discover the extent of the attack. Microsoft 365 Defender can provide a consolidated view of all impacted or at-risk assets to aid in your incident response assessment. See [Incident response with Microsoft 365 Defender | Microsoft Docs](/incidents-overview.md). You can use the alerts and the evidence list in the incident to determine:
 
 * Which user accounts might be compromised?
   * Which accounts were used to deliver the payload?
-* Which [onboarded](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/investigate-machines?view=o365-worldwide) and [discovered](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/device-discovery?view=o365-worldwide) devices are affected and how?
+* Which [onboarded](../defender-endpoint/investigate-machines.md) and [discovered](../defender-endpoint/device-discovery.md) devices are affected and how?
   * Originating devices
   * Impacted devices
   * Suspicious devices
 * Identify any network communication that is associated with the incident.
 * Which applications are affected?
 * What payloads were spread?
-* How is the attacker communicating with the compromised devices? (Network protection must be [enabled](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/enable-network-protection?view=o365-worldwide)):
-  * Go to the [indicators page](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/indicator-ip-domain?view=o365-worldwide#create-an-indicator-for-ips-urls-or-domains-from-the-settings-page) to add a block for the IP and URL (if you have that information).
+* How is the attacker communicating with the compromised devices? (Network protection must be [enabled](../defender-endpoint/enable-network-protection.md)):
+  * Go to the [indicators page](../defender-endpoint/indicator-ip-domain.md#create-indicators-for-ips-and-urlsdomains) to add a block for the IP and URL (if you have that information).
 * What was the payload delivery medium?
 
 ### Step 2: Preserve existing systems
 
 Run through this list of tasks and questions to protect existing systems from attack:
 
-* If you have online backups, consider disconnecting the backup system from the network until you are confident that the attack is contained, see [Backup and restore plan to protect against ransomware | Microsoft Docs](https://docs.microsoft.com/security/compass/backup-plan-to-protect-against-ransomware).
+* If you have online backups, consider disconnecting the backup system from the network until you are confident that the attack is contained, see [Backup and restore plan to protect against ransomware | Microsoft Docs](../../../../security/compass/backup-plan-to-protect-against-ransomware.md).
 * If you are experiencing or expect an imminent and active ransomware deployment:
-  * [Suspend privileged and local accounts](https://docs.microsoft.com/microsoft-365/security/defender/investigate-users?view=o365-worldwide) that you suspect are part of the attack. You can do this from the **Users** tab in the properties of the incident in the Microsoft 365 Defender portal.
+  * [Suspend privileged and local accounts](/investigate-users.md) that you suspect are part of the attack. You can do this from the **Users** tab in the properties of the incident in the Microsoft 365 Defender portal.
   * Stop all [remote logon sessions](https://docs.microsoft.com/defender-for-identity/playbook-domain-dominance).
   * Reset the compromised user account passwords and require the users of compromised user accounts to sign in again.
   * Do the same for user accounts that might be compromised.
@@ -93,9 +93,9 @@ DeviceLogonEvents
 
 * Quarantine and add indicators for files that are infected.
 * Ensure that your antivirus solution is configurable in its optimal protection state. For Microsoft Defender Antivirus, this includes:
-  * [Real time protection](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-real-time-protection-microsoft-defender-antivirus?view=o365-worldwide#real-time-protection-policy-settings) is enabled.
-  * [Tamper protection](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection?view=o365-worldwide) is enabled. In the Microsoft 365 Defender portal, select **Settings > Endpoints > Advanced features > Tamper protection**.
-  * [Attack surface reduction (ASR)](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/enable-attack-surface-reduction?view=o365-worldwide) rules are enabled.
+  * [Real time protection](../defender-endpoint/configure-real-time-protection-microsoft-defender-antivirus.md) is enabled.
+  * [Tamper protection](../defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection.md) is enabled. In the Microsoft 365 Defender portal, select **Settings > Endpoints > Advanced features > Tamper protection**.
+  * [Attack surface reduction (ASR)](../defender-endpoint/enable-attack-surface-reduction.md) rules are enabled.
   * [Cloud protection](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/enable-attack-surface-reduction?view=o365-worldwide) is enabled.
 * Disable Exchange ActiveSync and OneDrive sync.
   * To disable Exchange ActiveSync for a mailbox, see [How to disable Exchange ActiveSync for users in Exchange Online](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-exchange-activesync).
