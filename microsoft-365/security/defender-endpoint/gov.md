@@ -193,7 +193,7 @@ These are the known gaps:
 |Microsoft Secure Score|![Yes](images/svg/check-yes.svg) <sup>1</sup>|![No](images/svg/check-no.svg) Not supported|![No](images/svg/check-no.svg) Not supported|  
 
 > [!NOTE]
-> <sup>1</sup> While Microsoft Secure Score is available for GCC customers, security recommendations from Microsoft Defender for Endpoint are not currently supported.
+> <sup>1</sup> While Microsoft Secure Score is available for GCC customers, not all security recommendations are available.
 
 These are the features and known gaps for [Mobile Threat Defense (Microsoft Defender for Endpoint on Android & iOS)](mtd.md):
 
