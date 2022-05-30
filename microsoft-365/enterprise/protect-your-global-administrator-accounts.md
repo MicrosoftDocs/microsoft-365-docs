@@ -43,7 +43,7 @@ Microsoft provides capabilities to help protect your organization, but they're e
 3. Protect privileged accounts with Zero Trust identity and device access recommendations.
 
 > [!NOTE]
-> To secure your privileged roles, check out [Best practices for Azure AD roles](/azure/active-directory/roles/best-practices) to securing privileged access to your tenant.
+> To secure your privileged roles, check out [Best practices for Azure AD roles](/azure/active-directory/roles/best-practices) to secure privileged access to your tenant.
 
 ## 1. Create dedicated, privileged, cloud-based user accounts and use them only when necessary
 
