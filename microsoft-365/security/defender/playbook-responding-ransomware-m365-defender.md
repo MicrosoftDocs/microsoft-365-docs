@@ -23,7 +23,7 @@ When you suspect you were or are currently under a ransomware attack, establish 
 * Eradication and recovery
 
 This article provides a generalized playbook for responding to ransomware attacks. Consider adapting the described steps and tasks in this article to your own security operations playbook.
-NOTE: For information about preventing ransomware attacks, see [Rapidly protect against ransomware and extortion](../../../../security/compass/protect-against-ransomware.md).
+NOTE: For information about preventing ransomware attacks, see [Rapidly protect against ransomware and extortion](/security/compass/protect-against-ransomware).
 
 ## Containment
 
@@ -50,10 +50,10 @@ Run through this list of questions and tasks to discover the extent of the attac
 
 Run through this list of tasks and questions to protect existing systems from attack:
 
-* If you have online backups, consider disconnecting the backup system from the network until you are confident that the attack is contained, see [Backup and restore plan to protect against ransomware | Microsoft Docs](../../../../security/compass/backup-plan-to-protect-against-ransomware.md).
+* If you have online backups, consider disconnecting the backup system from the network until you are confident that the attack is contained, see [Backup and restore plan to protect against ransomware | Microsoft Docs](/security/compass/backup-plan-to-protect-against-ransomware).
 * If you are experiencing or expect an imminent and active ransomware deployment:
   * [Suspend privileged and local accounts](/investigate-users.md) that you suspect are part of the attack. You can do this from the **Users** tab in the properties of the incident in the Microsoft 365 Defender portal.
-  * Stop all [remote logon sessions](https://docs.microsoft.com/defender-for-identity/playbook-domain-dominance).
+  * Stop all [remote logon sessions](/defender-for-identity/playbook-domain-dominance).
   * Reset the compromised user account passwords and require the users of compromised user accounts to sign in again.
   * Do the same for user accounts that might be compromised.
   * If shared local accounts are compromised, have your IT admin help you to enforce a password change across all exposed devices. Example Kusto query:
@@ -97,10 +97,10 @@ DeviceLogonEvents
   * [Attack surface reduction (ASR)](../defender-endpoint/enable-attack-surface-reduction.md) rules are enabled.
   * [Cloud protection](../defender-endpoint/enable-attack-surface-reduction.md) is enabled.
 * Disable Exchange ActiveSync and OneDrive sync.
-  * To disable Exchange ActiveSync for a mailbox, see [How to disable Exchange ActiveSync for users in Exchange Online](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-exchange-activesync).
+  * To disable Exchange ActiveSync for a mailbox, see [How to disable Exchange ActiveSync for users in Exchange Online](/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-exchange-activesync).
   * To disable other types of access to a mailbox, see:
-    * [Enable or disable MAPI for a mailbox](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-mapi).
-    * [Enable or Disable POP3 or IMAP4 access for a user](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access).
+    * [Enable or disable MAPI for a mailbox](/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-mapi).
+    * [Enable or Disable POP3 or IMAP4 access for a user](/exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access).
   * Pausing OneDrive sync will help protect your cloud data from being updated by potentially infected devices. For more information, see [How to Pause and Resume sync in OneDrive](https://support.microsoft.com/office/how-to-pause-and-resume-sync-in-onedrive-2152bfa4-a2a5-4d3a-ace8-92912fb4421e).
 * Apply relevant patches and configuration changes on affected systems.
 * Block ransomware communications using internal and external controls.
@@ -126,7 +126,7 @@ Use this section to investigate the attack and plan your response.
 
 ### Identify the ransomware process
 
-* Using [advanced hunting](https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-overview?view=o365-worldwide), search for the identified process in the process creation events on other devices.
+* Using [advanced hunting](/microsoft-365/security/defender/advanced-hunting-overview.md), search for the identified process in the process creation events on other devices.
 
 ### Look for exposed credentials in the infected devices
 
@@ -248,7 +248,7 @@ Recover files in OneDrive for Business.
 
 Recover deleted email.
 
-* In the rare case that the ransomware deleted all the email in a mailbox, you can recover the deleted items. See [Recover deleted messages in a user's mailbox in Exchange Online](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages).
+* In the rare case that the ransomware deleted all the email in a mailbox, you can recover the deleted items. See [Recover deleted messages in a user's mailbox in Exchange Online](/exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages).
 
 ### Step 9: Re-enable Exchange ActiveSync and OneDrive sync
 
