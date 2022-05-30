@@ -42,7 +42,7 @@ With the API Explorer, you can:
 
 ## Access API Explorer
 
-From the left navigation menu, select **Partners & APIs** \> **API Explorer**.
+From the left navigation menu , select **Partners & APIs** \> **[API Explorer](https://security.microsoft.com/interoperability/api-explorer)**.
 
 ## Supported APIs
 
