@@ -72,7 +72,8 @@ sections:
       - question: |
            Can I link a payment option to my Bookings?
         answer: |
-           No. The Microsoft owned payment system was retired.
+           No. The Microsoft-owned payment system is retired.
+           
       - question: |
           Is Bookings customizable?
         answer: |
