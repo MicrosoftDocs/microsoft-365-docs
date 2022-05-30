@@ -40,6 +40,7 @@ You can use the export assessment APIs to retrieve (export) different types of i
 - [1. Export secure configurations assessment](#1-export-secure-configurations-assessment)
 - [2. Export software inventory assessment](#2-export-software-inventory-assessment)
 - [3. Export software vulnerabilities assessment](#3-export-software-vulnerabilities-assessment)
+- [4. Export non product code software inventory assessment](#4-export-non-product-code-software-inventory-assessment)
 
 The APIs that correspond to the export information types are described in sections 1, 2, and 3.
 
@@ -198,6 +199,44 @@ SoftwareVendor|String|Name of the software vendor.
 SoftwareVersion|String|Version number of the software product.
 Status|String|**New** (for a new vulnerability introduced on a device). **Fixed** (for a vulnerability that doesn't exist anymore on the device, which means it was remediated). **Updated** (for a vulnerability on a device that has changed. The possible changes are: CVSS score, exploitability level, severity level, DiskPaths, RegistryPaths, RecommendedSecurityUpdate).
 VulnerabilitySeverityLevel|String|Severity level assigned to the security vulnerability based on the CVSS score and dynamic factors influenced by the threat landscape.
+
+## 4. Export non product code software inventory assessment
+
+Returns all of the installed software that does not have a [Common Platform Enumeration(CPE)](https://nvd.nist.gov/products/cpe) and their details on each device.
+
+### 4.1 Methods
+
+|Method|Data type|Description|
+|:---|:---|:---|
+|Export software inventory assessment **(JSON response)**|Software inventory by device collection. See: [2.2 Properties (JSON response)](#22-properties-json-response)|Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion. The API pulls all data in your organization as JSON responses. This method is best for small organizations with less than 100-K devices. The response is paginated, so you can use the @odata.nextLink field from the response to fetch the next results. |
+| Export software inventory assessment **(via files)**|Software inventory by device files. See: [2.3 Properties (via files)](#23-properties-via-files)|Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion. This API solution enables pulling larger amounts of data faster and more reliably. So, it's recommended for large organizations, with more than 100-K devices. This API pulls all data in your organization as download files. The response contains URLs to download all the data from Azure Storage. This API enables you to download data from Azure Storage as follows: <ol><li>Call the API to get a list of download URLs with your organization data</li><li>Download the files using the download URLs and process the data as you like.</li></ol> |
+
+### 4.2 Properties (JSON response)
+
+Property (ID)|Data type|Description
+:---|:---|:---
+DeviceId|String|Unique identifier for the device in the service.
+DeviceName|String|Fully qualified domain name (FQDN) of the device.
+DiskPaths|Array[string]|Disk evidence that the product is installed on the device.
+EndOfSupportDate|String|The date in which support for this software has or will end.
+EndOfSupportStatus|String|End of support status. Can contain these possible values: None, EOS Version, Upcoming EOS Version, EOS Software, Upcoming EOS Software.
+NumberOfWeaknesses|Int|Number of weaknesses on this software on this device.
+OSPlatform|String|Platform of the operating system running on the device; specific operating systems with variations within the same family, such as Windows 10 and Windows 11. See tvm supported operating systems and platforms for details.
+RbacGroupName|String|The role-based access control (RBAC) group. If this device isn't assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."
+rbacGroupId|String|The role-based access control (RBAC) group ID.
+RegistryPaths|Array[string]|Registry evidence that the product is installed in the device.
+SoftwareFirstSeenTimestamp|String|The first time this software was seen on the device.
+SoftwareName|String|Name of the software product.
+SoftwareVendor|String|Name of the software vendor.
+SoftwareVersion|String|Version number of the software product.
+
+### 4.3 Properties (via files)
+
+Property (ID)|Data type|Description
+:---|:---|:---
+Export files|array\[string\]|A list of download URLs for files holding the current snapshot of the organization.
+GeneratedTime|String|The time that the export was generated.
+
 
 ## See also
 
