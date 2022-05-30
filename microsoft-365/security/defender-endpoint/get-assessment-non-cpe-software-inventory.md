@@ -99,108 +99,81 @@ SoftwareVersion|string|Version number of the software product.
 #### 1.6.1 Request example
 
 ```http
-GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryByMachine?pageSize=5  &sinceTime=2021-05-19T18%3A35%3A49.924Z
+https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryNoProductCodeByMachine?pageSize=5  &sinceTime=2021-05-19T18%3A35%3A49.924Z
 ```
 
 #### 1.6.2 Response example
 
 ```json
 {
-    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Collection(contoso.windowsDefenderATP.api.AssetSoftware)",
+    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Collection(microsoft.windowsDefenderATP.api.AssetNonCpeSoftware)",
     "value": [
         {
-            "deviceId": "00044f68765bbaf712342dbe6db733b6a9c59ab4",
-            "rbacGroupName": "hhh",
-            "deviceName": "ComputerPII_18993b45912eeb224b2be2f5ea3142726e63f16a.DomainPII_21eeb80d086e79dbfa178eadfa25e8de9acfa346.corp.contoso.com",
-            "osPlatform": "Windows10" "Windows11",
-            "softwareVendor": "microsoft",
-            "softwareName": "windows_10" "Windows_11",
-            "softwareVersion": "10.0.17763.1637",
-            "numberOfWeaknesses": 58,
-            "diskPaths": [],
-            "registryPaths": [],
-            "softwareFirstSeenTimestamp": "2020-12-30 11:07:15",
-            "endOfSupportStatus": "Upcoming EOS Version",
-            "endOfSupportDate": "2021-05-11T00:00:00+00:00"
+            "deviceId": "001bc7cafeff420f9f757dc710723ad800e91938",
+            "rbacGroupId": 1,
+            "rbacGroupName": "UnassignedGroup",
+            "deviceName": "csvm583023422gu.sys-sqlsvr.local",
+            "osPlatform": "WindowsServer2022",
+            "softwareVendor": null,
+            "softwareName": "microsoft_edge_update",
+            "softwareVersion": "1.3.161.35",
+            "softwareLastSeenTimestamp": "2022-05-18 12:14:01.39"
         },
         {
-            "deviceId": "00044f68765bbaf712342dbe6db733b6a9c59ab4",
-            "rbacGroupName": "hhh",
-            "deviceName": "ComputerPII_18993b45912eeb224b2be2f5ea3142726e63f16a.DomainPII_21eeb80d086e79dbfa178eadfa25e8de9acfa346.corp.contoso.com",
-            "osPlatform": "Windows10" "Windows11",
+            "deviceId": "001bc7cafeff420f9f757dc710723ad800e91938",
+            "rbacGroupId": 1,
+            "rbacGroupName": "UnassignedGroup",
+            "deviceName": "csvm583023422gu.sys-sqlsvr.local",
+            "osPlatform": "WindowsServer2022",
             "softwareVendor": "microsoft",
-            "softwareName": ".net_framework",
-            "softwareVersion": "4.0.0.0",
-            "numberOfWeaknesses": 0,
-            "diskPaths": [],
-            "registryPaths": [
-                "SOFTWARE\\Microsoft\\NET Framework Setup\\NDP\\v4.0\\Client\\Install"
-            ],
-            "softwareFirstSeenTimestamp": "2020-12-30 11:07:15",
-            "endOfSupportStatus": "None",
-            "endOfSupportDate": null
+            "softwareName": "microsoft_visual_c++_2015_redistributable_(x64)_-_14.0.23506\u0000",
+            "softwareVersion": "14.0.23506.0",
+            "softwareLastSeenTimestamp": "2022-05-20 02:59:06.971"
         },
         {
-            "deviceId": "00044f68765bbaf712342dbe6db733b6a9c59ab4",
-            "rbacGroupName": "hhh",
-            "deviceName": "ComputerPII_18993b45912eeb224b2be2f5ea3142726e63f16a.DomainPII_21eed80d086e79bdfa178eadfa25e8de9acfa346.corp.contoso.com",
-            "osPlatform": "Windows10" "Windows11",
+            "deviceId": "001e63177328b3cd6f5572dbfac1c401971eb1ab",
+            "rbacGroupId": 1,
+            "rbacGroupName": "UnassignedGroup",
+            "deviceName": "csvm404750365te.sys-sqlsvr.local",
+            "osPlatform": "WindowsServer2019",
             "softwareVendor": "microsoft",
-            "softwareName": "system_center_2012_endpoint_protection",
-            "softwareVersion": "4.7.214.0",
-            "numberOfWeaknesses": 0,
-            "diskPaths": [],
-            "registryPaths": [
-                "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Microsoft Security Client"
-            ],
-            "softwareFirstSeenTimestamp": "2020-12-30 11:07:15",
-            "endOfSupportStatus": "None",
-            "endOfSupportDate": null
+            "softwareName": "microsoft_wtt_2.6_-_client\u0000",
+            "softwareVersion": "2.2.0.0",
+            "softwareLastSeenTimestamp": "2022-05-17 09:10:47.891"
         },
         {
-            "deviceId": "00044f68765ddaf71234bde6bd733d6a9c59ad4",
-            "rbacGroupName": "hhh",
-            "deviceName": "ComputerPII_18993b45912eeb224b2be2f5ea3142726e63f16a.DomainPII_21eeb80d086e79dbfa178aedfa25e8be9acfa346.corp.contoso.com",
-            "osPlatform": "Windows10" "Windows11",
+            "deviceId": "001e63177328b3cd6f5572dbfac1c401971eb1ab",
+            "rbacGroupId": 1,
+            "rbacGroupName": "UnassignedGroup",
+            "deviceName": "csvm404750365te.sys-sqlsvr.local",
+            "osPlatform": "WindowsServer2019",
             "softwareVendor": "microsoft",
-            "softwareName": "configuration_manager",
-            "softwareVersion": "5.0.8634.1000",
-            "numberOfWeaknesses": 0,
-            "diskPaths": [],
-            "registryPaths": [
-                "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{B7D3A842-E826-4542-B39B-1D883264B279}"
-            ],
-            "softwareFirstSeenTimestamp": "2020-12-30 11:07:15",
-            "endOfSupportStatus": "None",
-            "endOfSupportDate": null
+            "softwareName": "microsoft_visual_studio_tools_for_applications_x64_runtime_3.0\u0000",
+            "softwareVersion": "10.0.40220.0",
+            "softwareLastSeenTimestamp": "2022-05-17 10:05:31.881"
         },
         {
-            "deviceId": "00044f38765bbaf712342dbe6db733b6a9c59ab4",
-            "rbacGroupName": "hhh",
-            "deviceName": "ComputerPII_18993b45912eeb224b2de2f5ea3142726e63f16a.DomainPII_21eeb80d086e79bdfa178eadfa25e8be9acfa346.corp.contoso.com",
-            "osPlatform": "Windows10" "Windows11",
+            "deviceId": "001e63177328b3cd6f5572dbfac1c401971eb1ab",
+            "rbacGroupId": 1,
+            "rbacGroupName": "UnassignedGroup",
+            "deviceName": "csvm404750365te.sys-sqlsvr.local",
+            "osPlatform": "WindowsServer2019",
             "softwareVendor": "microsoft",
-            "softwareName": "system_center_2012_endpoint_protection",
-            "softwareVersion": "4.10.209.0",
-            "numberOfWeaknesses": 0,
-            "diskPaths": [],
-            "registryPaths": [
-                "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Microsoft Security Client"
-            ],
-            "softwareFirstSeenTimestamp": "2020-12-30 11:07:15",
-            "endOfSupportStatus": "None",
-            "endOfSupportDate": null
+            "softwareName": "microsoft_visual_c++_2008_redistributable_-_x86_9.0.30729.4974\u0000",
+            "softwareVersion": "9.0.30729.4974",
+            "softwareLastSeenTimestamp": "2022-05-17 10:05:36.128"
         }
     ],
-    "@odata.nextLink": "https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryByMachine?pagesize=5&$skiptoken=eyJFeHBvcnREZWZpbml0aW9uIjp7IlRpbWVQYXRoIjoiMjAyMS0wMS0yNS8wMjAwLyJ9LCJFeHBvcnRGaWxlSW5kZXgiOjAsIkxpbmVTdG9wcGVkQXQiOjV9"
+    "@odata.nextLink": "https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryNoProductCodeByMachine?pagesize=5%20%20&sincetime=2021-05-19T18%3A35%3A49.924Z&$skiptoken=eyJFeHBvcnREZWZpbml0aW9uIjp7IlRpbWVQYXRoIjoiMjAyMi0wNS0zMC8wNTAwLyJ9LCJFeHBvcnRGaWxlSW5kZXgiOjAsIkxpbmVTdG9wcGVkQXQiOjV9"
 }
+
 ```
 
 ## 2. Export non product code software inventory assessment (via files)
 
 ### 2.1 API method description
 
-This API response contains all the data of installed software per device. Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion.
+This API response contains all the data of installed software that does not have a [Common Platform Enumeration(CPE)](https://nvd.nist.gov/products/cpe) per device. Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion.
 
 #### 2.1.1 Limitations
 
