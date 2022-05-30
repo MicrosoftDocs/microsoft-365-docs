@@ -2,8 +2,8 @@
 title:                     Detecting human-operated ransomware attacks with Microsoft 365 Defender
 description:               This article describes proactive detection of new or ongoing human-operated ransomware attacks with the Microsoft 365 Defender portal
 search.appverid: MET150    
-author: {github-id}        nic-name
-ms.author: {ms-alias}      noriordan
+author:                    nic-name
+ms.author:                 noriordan
 manager:                   dolmont
 audience:                  ITPro
 ms.topic:                  article

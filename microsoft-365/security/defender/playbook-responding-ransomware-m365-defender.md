@@ -2,8 +2,8 @@
 title:                     Responding to ransomware attacks
 description:               This article provides a generalized playbook for responding to ransomware attacks.
 search.appverid: MET150     
-author: {github-id}        nic-name
-ms.author: {ms-alias}      noriordan
+author:                    nic-name
+ms.author:                 noriordan
 manager:                   dolmont
 audience:                  ITPro
 ms.topic:                  article
