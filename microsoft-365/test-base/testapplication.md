@@ -21,11 +21,11 @@ f1.keywords: NOCSH
 This section provides all the steps necessary to create a new package containing binary files, for uploading and testing on Test Base. If you already have a pre-built .zip file, you can see [Uploading pre-built Zip package](uploadApplication.md), to upload your file.
 
 > [!IMPORTANT]
-> If you do not have a **Test Base** account, you will need to create one before proceeding, as described in [Creating a Test Base account](createAccount.md).
+> If you don't have a **Test Base** account, you'll need to create one before proceeding, as described in [Creating a Test Base account](createAccount.md).
 
 ## Create a new package
 
-In the [Azure portal](https://portal.azure.com/), go to the **Test Base** account for which you will be creating and uploading your package and perform the steps that follow. 
+In the [Azure portal](https://portal.azure.com/), go to the **Test Base** account for which you'll be creating and uploading your package and perform the steps that follow. 
 
 In the left-hand menu under **Package catalog**, select the **New package**. Then click the first card **‘Create new package online'** to build your package online within 5 steps!
 
@@ -59,7 +59,7 @@ In the left-hand menu under **Package catalog**, select the **New package**. The
 
 ### Step 2. Configure test
 
-1. Select the **Type of test**. There're two test types supported:
+1. Select the **Type of test**. There are two test types supported:
    - An **Out of Box (OOB) test** performs an install, launch, close, and uninstall of your package. After the install, the launch-close routine is repeated 30 times before a single uninstall is run. The OOB test provides you with standardized telemetry on your package to compare across Windows builds.
    - A **Functional test** would execute your uploaded test script(s) on your package. The scripts are run in the sequence you specified and a failure in a particular script will stop subsequent scripts from executing.
 
@@ -115,7 +115,7 @@ In the left-hand menu under **Package catalog**, select the **New package**. The
    > At least 1 functional script tag is mandatory for the functional test type.
 
    To add more Functional scripts, you can click the **'Add to functional test list'**. Then the action panel will pop up, you can:
-   - Reorder the script paths by dragging with the left ellipse buttons. The functional scripts run in the sequence they are listed. A failure in a particular script stops subsequent scripts from executing.
+   - Reorder the script paths by dragging with the left ellipse buttons. The functional scripts run in the sequence they're listed. A failure in a particular script stops subsequent scripts from executing.
    - Set 'Restart after execution' for multiple scripts.
    - Apply update before on specific script path. This is for users who wish to perform functional tests to indicate when the Windows Update patch should be applied in the sequence of executing their functional test scripts.
 
@@ -126,7 +126,7 @@ In the left-hand menu under **Package catalog**, select the **New package**. The
 
 ### Step 4. Test matrix
 
-1. In the Test matrix tab, select the **OS update type**. There're two OS update types supported.
+1. In the Test matrix tab, select the **OS update type**. There are two OS update types supported.
    - The **Security updates** enable your package to be tested against incremental churns of Windows pre-release monthly security updates.
    - The **Feature updates** enable your package to be tested against Windows pre-release bi-annual feature updates builds from the Windows Insider Program.
 
@@ -159,7 +159,7 @@ In the left-hand menu under **Package catalog**, select the **New package**. The
    > [!div class="mx-imgBorder"]
    > ![Notification](Media/testapplication16.png)
 
-3. When you are done finalizing the input data configuration, click **Publish** to upload your package to Test Base.  The notification that follows displays when the package is successfully published and has entered the Verification process.  
+3. When you're done finalizing the input data configuration, click **Publish** to upload your package to Test Base.  The notification that follows displays when the package is successfully published and has entered the Verification process.  
 
    > [!NOTE]
    > The package must be verified before it is accepted for future tests. The Verification can take up to 24 hours, as it includes running the package in an actual test environment. 
