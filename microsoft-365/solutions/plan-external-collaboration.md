@@ -125,7 +125,7 @@ Admins can apply a [retention policy](/microsoft-365/compliance/retention) on a 
 
 ### Sensitivity labels
 
-[Sensitivity labels](/microsoft-365/compliance/sensitivity-labels) available in the host organization are the only labels that can be applied to the documents in a shared channel site. A file that is encrypted by a sensitivity label cannot be opened by external participants. Automatic labeling is not used.
+[Sensitivity labels](/microsoft-365/compliance/sensitivity-labels) available in the host organization are the only labels that can be applied to the documents in a shared channel site. A file that is encrypted by a sensitivity label cannot be opened by external participants unless permissoins are granted. Automatic labeling is not used.
 
 Shared channels and their associated SharePoint sites inherit the label from the parent team.
 
