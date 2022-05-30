@@ -82,19 +82,17 @@ GET /api/machines/SoftwareInventoryNoProductCodeByMachine
 
 <br>
 
-****
-
 Property (ID)|Data type|Description|Example of a returned value
 :---|:---|:---|:---
-DeviceId|string|Unique identifier for the device in the service.|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
-DeviceName|string|Fully qualified domain name (FQDN) of the device.|johnlaptop.europe.contoso.com
-OSPlatform|string|Platform of the operating system running on the device. These are specific operating systems with variations within the same family, such as Windows 10 and Windows 11. See tvm supported operating systems and platforms for details.|Windows10 and Windows 11
-RbacGroupName|string|The role-based access control (RBAC) group. If this device is not assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."|Servers
-SoftwareFirstSeenTimestamp|string|The first time this software was seen on the device.|2019-04-07 02:06:47
-SoftwareName|string|Name of the software product.|Silverlight
-SoftwareVendor|string|Name of the software vendor.|microsoft
-SoftwareVersion|string|Version number of the software product.|81.0.4044.138
-|
+DeviceId|string|Unique identifier for the device in the service.
+DeviceName|string|Fully qualified domain name (FQDN) of the device.
+OSPlatform|string|Platform of the operating system running on the device. These are specific operating systems with variations within the same family, such as Windows 10 and Windows 11. See tvm supported operating systems and platforms for details.
+RbacGroupName|string|The role-based access control (RBAC) group. If this device is not assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."
+RbacGroupId|string|The role-based access control (RBAC) group ID.
+SoftwareLastSeenTimestamp|string|The last time this software was seen on the device.
+SoftwareName|string|Name of the software product.
+SoftwareVendor|string|Name of the software vendor.
+SoftwareVersion|string|Version number of the software product.
 
 ### 1.6 Examples
 
