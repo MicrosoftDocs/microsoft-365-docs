@@ -1,4 +1,22 @@
+---
+title:                     # Responding to ransomware attacks
+description:               # This article provides a generalized playbook for responding to ransomware attacks.
+search.appverid: MET150    # 
+author: {github-id}        # nic-name
+ms.author: {ms-alias}      # noriordan
+manager:                   # dolmont
+audience:                  # ITPro
+ms.topic:                  # article
+ms.date:                   # 05/30/2022 
+ms.prod:                   # m365-security
+ms.technology:             # m365
+ms.localizationpriority:   # medium
+ms.collection:             # M365-security-compliance.
+f1.keywords:               # NOCSH
+---
 # Responding to ransomware attacks
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 When you suspect you were or are currently under a ransomware attack, establish secure communications with your incident response team immediately. They can perform the following response phases to disrupt the attack and mitigate the damage:
 
