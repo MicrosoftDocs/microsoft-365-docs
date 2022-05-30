@@ -239,7 +239,7 @@ You can also use the Microsoft 365 Defender APIs to query the Microsoft 365 Defe
 
 ### Microsoft 365 Defender Sentinel Integration
 
-Microsoft Sentinel's Microsoft 365 Defender incident integration allows you to stream all Microsoft 365 Defender incidents into Microsoft Sentinel and keep them synchronized between both portals. Incidents include all associated alerts, entities, and relevant information. Once in Sentinel, incidents will remain bi-directionally synced with Microsoft 365 Defender, allowing you to take advantage of the benefits of both portals in your incident investigation. See, [Microsoft 365 Defender integration with Microsoft Sentinel](https://docs.microsoft.com/azure/sentinel/microsoft-365-defender-sentinel-integration).
+Microsoft Sentinel's Microsoft 365 Defender incident integration allows you to stream all Microsoft 365 Defender incidents into Microsoft Sentinel and keep them synchronized between both portals. Incidents include all associated alerts, entities, and relevant information. Once in Sentinel, incidents will remain bi-directionally synced with Microsoft 365 Defender, allowing you to take advantage of the benefits of both portals in your incident investigation. See, [Microsoft 365 Defender integration with Microsoft Sentinel](/azure/sentinel/microsoft-365-defender-sentinel-integration).
 
 ### Proactive scanning with advanced hunting
 
@@ -279,7 +279,7 @@ Preparing your SecOps team for proactive ransomware detection requires:
 
 Consider these steps to get your SecOps team and organization ready for focused ransomware attack prevention:
 
-1. Configure your IT and cloud infrastructure for ransomware prevention with the [Rapidly protect against ransomware and extortion](../../../../security/compass/protect-against-ransomware-phase3.md) guidance. The phases and tasks in this guidance can be done in parallel with the following steps.
+1. Configure your IT and cloud infrastructure for ransomware prevention with the [Rapidly protect against ransomware and extortion](/security/compass/protect-against-ransomware-phase3) guidance. The phases and tasks in this guidance can be done in parallel with the following steps.
 2. Get the appropriate licenses for the Defender for Endpoint, Defender for Office 365, Defender for Identity, Defender for Cloud Apps, the app governance add-on, Defender for IoT, and Azure AD Identity Protection services.
 3. Assemble a catalog of advanced hunting queries tuned for known ransomware attack methods or attack phases.
 4. Create the set of custom detection rules for specific advanced hunting queries that create alerts for known ransomware attack methods, including their schedule, alert naming, and automated actions.
