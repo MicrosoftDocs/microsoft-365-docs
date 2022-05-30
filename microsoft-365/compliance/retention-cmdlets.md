@@ -61,7 +61,7 @@ Don't use these cmdlets when the locations are for Teams private channel message
 |[Set-RetentionComplianceRule](/powershell/module/exchange/set-retentioncompliancerule) | Configure settings for retention policies or retention labels |Exchange email <br /><br /> SharePoint sites <br /><br /> OneDrive accounts<br /><br /> Microsoft 365 Groups <br /><br /> Skype for Business <br /><br /> Exchange public folders <br /><br /> Teams chat messages <br /><br /> Teams channel messages |
 
 
-## Retention cmdlets specific to Teams and Yammer
+## Retention cmdlets specific to Teams private channels and Yammer
 
 Use the following cmdlets when the locations are for Teams private channel messages, Yammer user messages, or Yammer community messages.
 
