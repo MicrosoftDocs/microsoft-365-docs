@@ -30,7 +30,7 @@ ms.custom: api
 
 ## API description
 
-Provides methods and property details about the APIs that pull threat and vulnerability management data on a per-device basis. There are different API calls to get different types of data. In general, each API call contains the requisite data for devices in your organization.
+Provides methods and property details about the APIs that pull vulnerability management data on a per-device basis. There are different API calls to get different types of data. In general, each API call contains the requisite data for devices in your organization.
 
 > [!NOTE]
 > Unless indicated otherwise, all export assessment methods listed are **_full export_** and **_by device_** (also referred to as **_per device_**).
@@ -79,7 +79,7 @@ deviceName|String|Fully qualified domain name (FQDN) of the device.
 isApplicable|Bool|Indicates whether the configuration or policy is applicable.
 isCompliant|Bool|Indicates whether the configuration or policy is properly configured.
 isExpectedUserImpact|Bool|Indicates whether the user gets affected if the configuration will be applied.
-osPlatform|String|Platform of the operating system running on the device. Specific operating systems with variations within the same family, such as Windows 10 and Windows 11. See TVM supported operating systems and platforms for details.
+osPlatform|String|Platform of the operating system running on the device. Specific operating systems with variations within the same family, such as Windows 10 and Windows 11. See [Supported operating systems, platforms and capabilities](../defender-vulnerability-management/tvm-supported-os.md) for details.
 osVersion|String|Specific version of the operating system running on the device.
 rbacGroupName|String|The role-based access control (RBAC) group. If the device isn't assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."
 rbacGroupId|String|The role-based access control (RBAC) group ID.
@@ -237,6 +237,7 @@ GeneratedTime|String|The time that the export was generated.
 - [Export secure configuration assessment per device](get-assessment-secure-config.md)
 - [Export software inventory assessment per device](get-assessment-software-inventory.md)
 - [Export software vulnerabilities assessment per device](get-assessment-software-vulnerabilities.md)
+- [Export non cpe software inventory assessment per device](get-assessment-non-cpe-software-inventory.md)
 
 Other related
 

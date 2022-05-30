@@ -242,6 +242,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryNonCp
 
 ## See also
 
+- [Export software assessment per device](get-assessment-software-inventory.md)
 - [Export assessment methods and properties per device](get-assessment-methods-properties.md)
 - [Export secure configuration assessment per device](get-assessment-secure-config.md)
 - [Export software vulnerabilities assessment per device](get-assessment-software-vulnerabilities.md)
