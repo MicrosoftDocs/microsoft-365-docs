@@ -20,9 +20,8 @@ f1.keywords: NOCSH
 
 This section provides all the steps necessary to create a new package containing binary files, for uploading and testing on Test Base. If you already have a pre-built .zip file, you can see [Uploading pre-built Zip package](uploadApplication.md), to upload your file.
 
-## Prerequisites
-
-If you do not have a **Test Base** account, you will need to create one before proceeding, as described in [Creating a Test Base account](createAccount.md).
+> [!IMPORTANT]
+> If you do not have a **Test Base** account, you will need to create one before proceeding, as described in [Creating a Test Base account](createAccount.md).
 
 ## Create a new package
 
