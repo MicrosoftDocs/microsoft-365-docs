@@ -208,27 +208,22 @@ Returns all of the installed software that does not have a [Common Platform Enum
 
 |Method|Data type|Description|
 |:---|:---|:---|
-|Export software inventory assessment **(JSON response)**|Software inventory by device collection. See: [2.2 Properties (JSON response)](#22-properties-json-response)|Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion. The API pulls all data in your organization as JSON responses. This method is best for small organizations with less than 100-K devices. The response is paginated, so you can use the @odata.nextLink field from the response to fetch the next results. |
-| Export software inventory assessment **(via files)**|Software inventory by device files. See: [2.3 Properties (via files)](#23-properties-via-files)|Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion. This API solution enables pulling larger amounts of data faster and more reliably. So, it's recommended for large organizations, with more than 100-K devices. This API pulls all data in your organization as download files. The response contains URLs to download all the data from Azure Storage. This API enables you to download data from Azure Storage as follows: <ol><li>Call the API to get a list of download URLs with your organization data</li><li>Download the files using the download URLs and process the data as you like.</li></ol> |
+|Export non product code software inventory assessment **(JSON response)**|Non product code software inventory by device collection. See: [4.2 Properties (JSON response)](#42-properties-json-response)|Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion. The API pulls all data in your organization as JSON responses. This method is best for small organizations with less than 100-K devices. The response is paginated, so you can use the @odata.nextLink field from the response to fetch the next results. |
+| Export non product code software inventory assessment **(via files)**|Non product code software inventory by device files. See: [4.3 Properties (via files)](#43-properties-via-files)|Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion. This API solution enables pulling larger amounts of data faster and more reliably. So, it's recommended for large organizations, with more than 100-K devices. This API pulls all data in your organization as download files. The response contains URLs to download all the data from Azure Storage. This API enables you to download data from Azure Storage as follows: <ol><li>Call the API to get a list of download URLs with your organization data</li><li>Download the files using the download URLs and process the data as you like.</li></ol> |
 
 ### 4.2 Properties (JSON response)
 
 Property (ID)|Data type|Description
 :---|:---|:---
-DeviceId|String|Unique identifier for the device in the service.
-DeviceName|String|Fully qualified domain name (FQDN) of the device.
-DiskPaths|Array[string]|Disk evidence that the product is installed on the device.
-EndOfSupportDate|String|The date in which support for this software has or will end.
-EndOfSupportStatus|String|End of support status. Can contain these possible values: None, EOS Version, Upcoming EOS Version, EOS Software, Upcoming EOS Software.
-NumberOfWeaknesses|Int|Number of weaknesses on this software on this device.
-OSPlatform|String|Platform of the operating system running on the device; specific operating systems with variations within the same family, such as Windows 10 and Windows 11. See tvm supported operating systems and platforms for details.
-RbacGroupName|String|The role-based access control (RBAC) group. If this device isn't assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."
-rbacGroupId|String|The role-based access control (RBAC) group ID.
-RegistryPaths|Array[string]|Registry evidence that the product is installed in the device.
-SoftwareFirstSeenTimestamp|String|The first time this software was seen on the device.
-SoftwareName|String|Name of the software product.
-SoftwareVendor|String|Name of the software vendor.
-SoftwareVersion|String|Version number of the software product.
+DeviceId|string|Unique identifier for the device in the service.
+DeviceName|string|Fully qualified domain name (FQDN) of the device.
+OSPlatform|string|Platform of the operating system running on the device. These are specific operating systems with variations within the same family, such as Windows 10 and Windows 11. See tvm supported operating systems and platforms for details.
+RbacGroupName|string|The role-based access control (RBAC) group. If this device is not assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."
+RbacGroupId|string|The role-based access control (RBAC) group ID.
+SoftwareLastSeenTimestamp|string|The last time this software was seen on the device.
+SoftwareName|string|Name of the software product.
+SoftwareVendor|string|Name of the software vendor.
+SoftwareVersion|string|Version number of the software product.
 
 ### 4.3 Properties (via files)
 
@@ -236,7 +231,6 @@ Property (ID)|Data type|Description
 :---|:---|:---
 Export files|array\[string\]|A list of download URLs for files holding the current snapshot of the organization.
 GeneratedTime|String|The time that the export was generated.
-
 
 ## See also
 

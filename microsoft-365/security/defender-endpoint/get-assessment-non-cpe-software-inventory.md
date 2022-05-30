@@ -83,7 +83,7 @@ GET /api/machines/SoftwareInventoryNoProductCodeByMachine
 <br>
 
 Property (ID)|Data type|Description
-:---|:---|:---|:---
+:---|:---|:---
 DeviceId|string|Unique identifier for the device in the service.
 DeviceName|string|Fully qualified domain name (FQDN) of the device.
 OSPlatform|string|Platform of the operating system running on the device. These are specific operating systems with variations within the same family, such as Windows 10 and Windows 11. See tvm supported operating systems and platforms for details.
