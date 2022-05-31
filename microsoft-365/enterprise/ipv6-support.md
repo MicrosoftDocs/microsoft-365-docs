@@ -24,7 +24,7 @@ description: "Summary: Describes IPv6 support in Microsoft 365 components and in
 
 With the growing adoption and support of IPv6 across enterprise networks, service providers and devices many customers are wondering if their users can continue to access Office 365 and Microsoft 365 services from IPv6 clients and IPv6 networks. Office 365 and Microsoft 365 services can be successfully used from both IPv6 dual stack and IPv6-only devices. In fact, we have an increasing number of customers, from consumers to large enterprises, who are doing that on a daily basis. At the same time, for many customers, IPv4 is not going to completely disappear from their digital landscape, so we are not requiring IPv6 or de-prioritizing IPv4 in any of Microsoft 365 features or services.
 
-One of our key priorities with Microsoft 365 is to ensure seamless customer and user experiences over the Internet from any location, from any device. This includes access to Microsoft 365 from customer devices that are using IPv6 in the dual stack configuration as well as transitioning to IPv6-only client deployments. In most cases, when customers follow a standard Internet based model of connecting to Microsoft 365,[Microsoft 365 network connectivity principles](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-network-connectivity-principles), [Microsoft 365 URLs and IP address ranges](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges), and[Microsoft 365 network planning best practices](https://docs.microsoft.com/microsoft-365/enterprise/network-and-migration-planning#best-practices-for-network-planning-and-improving-migration-performance-for-office-365) - such IPv6 transitions are not going to be disruptive to their user experiences.
+One of our key priorities with Microsoft 365 is to ensure seamless customer and user experiences over the Internet from any location, from any device. This includes access to Microsoft 365 from customer devices that are using IPv6 in the dual stack configuration as well as transitioning to IPv6-only client deployments. In most cases, when customers follow a standard Internet based model of connecting to Microsoft 365,[Microsoft 365 network connectivity principles](microsoft-365-network-connectivity-principles.md), [Microsoft 365 URLs and IP address ranges](urls-and-ip-address-ranges), and[Microsoft 365 network planning best practices](network-and-migration-planning.md#best-practices-for-network-planning-and-improving-migration-performance-for-office-365) - such IPv6 transitions are not going to be disruptive to their user experiences.
 
 Many Microsoft 365 services already provide native IPv6 support today and can be connected to directly from IPv6 dual stack and IPv6-only clients. Microsoft 365 also allows access through conventional IPv6 to IPv4 translation technologies (such as 64proxies or DNS64/NAT64), commonly used by customers and network solution providers to connect to IPv4 Internet resources.
 
@@ -32,7 +32,7 @@ It is important to note that like for any SaaS service and Internet overall, the
 
 Most of Microsoft 365 services have been or will be enabled with IPv6 capabilities completely transparently for end users and IT Admins. Some Microsoft 365 scenarios (such as anonymous inbound e-mail) do have special requirements and considerations for customers to be used in conjunction with IPv6. For more details about scenario specific IPv6 requirements and considerations, please contact your Microsoft account team or Microsoft support.
 
-Here's a short link you can use to come back: [https://aka.ms/o365ip6](https://docs.microsoft.com/microsoft-365/enterprise/ipv6-support)
+Here's a short link you can use to come back: [https://aka.ms/o365ip6](https://aka.ms/o365ip6)
 
 ## See also
 
@@ -40,23 +40,23 @@ Here's a short link you can use to come back: [https://aka.ms/o365ip6](https://d
   
 [IPv6 Survival Guide](https://social.technet.microsoft.com/wiki/contents/articles/1728.ipv6-survival-guide.aspx)
 
-[Microsoft 365 Network Connectivity Overview](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-networking-overview)
+[Microsoft 365 Network Connectivity Overview](microsoft-365-networking-overview.md)
 
-[Managing Office 365 endpoints](https://docs.microsoft.com/microsoft-365/enterprise/managing-office-365-endpoints)
+[Managing Office 365 endpoints](managing-office-365-endpoints.md)
 
-[Office 365 URLs and IP address ranges](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges)
+[Office 365 URLs and IP address ranges](urls-and-ip-address-ranges.md)
 
-[Office 365 IP Address and URL Web service](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-ip-web-service)
+[Office 365 IP Address and URL Web service](microsoft-365-ip-web-service.md)
 
-[Assessing Microsoft 365 network connectivity](https://docs.microsoft.com/microsoft-365/enterprise/assessing-network-connectivity)
+[Assessing Microsoft 365 network connectivity](assessing-network-connectivity.md)
 
-[Network planning and performance tuning for Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/network-planning-and-performance)
+[Network planning and performance tuning for Microsoft 365](network-planning-and-performance.md)
 
-[Office 365 performance tuning using baselines and performance history](https://docs.microsoft.com/microsoft-365/enterprise/performance-tuning-using-baselines-and-history)
+[Office 365 performance tuning using baselines and performance history](performance-tuning-using-baselines-and-history.md)
 
-[Performance troubleshooting plan for Office 365](https://docs.microsoft.com/microsoft-365/enterprise/performance-troubleshooting-plan)
+[Performance troubleshooting plan for Office 365](performance-troubleshooting-plan.md)
 
-[Content Delivery Networks](https://docs.microsoft.com/microsoft-365/enterprise/content-delivery-networks)
+[Content Delivery Networks](content-delivery-networks.md)
 
 [Microsoft 365 connectivity test](https://aka.ms/netonboard)
 
