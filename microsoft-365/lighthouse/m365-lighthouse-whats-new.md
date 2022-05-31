@@ -30,7 +30,7 @@ We're continuously adding new features to [Microsoft 365 Lighthouse](m365-lighth
 
 ### Redesigned left navigation pane
 
-We've given the left navigation pane in Microsoft 365 Lighthouse a new look. You'll notice a sleeker design, with top-level  nodes like Tenants, Users, and Devices that expand to show related subnodes, like Risky users, Device compliance, and Threat management. This navigation model aligns with the model used by other Microsoft 365 admin centers.
+We've given the left navigation pane in Microsoft 365 Lighthouse a new look. You'll notice a sleeker design, with top-level nodes like Tenants, Users, and Devices that expand to show related subnodes, like Risky users, Device compliance, and Threat management. This navigation model aligns with the model used by other Microsoft 365 admin centers.
 
 ### Enriched user details pane
 
@@ -99,7 +99,7 @@ For more information, see [Requirements for Microsoft 365 Lighthouse](m365-light
 
 ### Support for Advisor customers
 
-We've changed our onboarding requirements to allow existing customer tenants with Advisor relationships to be onboarded to Microsoft 365 Lighthouse.  Customers with both reseller and advisor contracts are now eligible to be in Microsoft 365 Lighthouse if they meet the requirements for delegated access permissions, have the required licenses, and don't exceed the maximum user count.
+We've changed our onboarding requirements to allow existing customer tenants with Advisor relationships to be onboarded to Microsoft 365 Lighthouse. Customers with both reseller and advisor contracts are now eligible to be in Microsoft 365 Lighthouse if they meet the requirements for delegated access permissions, have the required licenses, and don't exceed the maximum user count.
 
 For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
 
