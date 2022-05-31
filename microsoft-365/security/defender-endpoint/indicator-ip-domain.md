@@ -51,7 +51,8 @@ It's important to understand the following prerequisites prior to creating indic
     > Windows Server 2016 and Windows Server 2012 R2 will need to be onboarded using the instructions in [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) for this feature to work.
 
 - Ensure that **Custom network indicators** is enabled in **Microsoft 365 Defender** \> **Settings** \> **Advanced features**. For more information, see [Advanced features](advanced-features.md).
-- For support of indicators on iOS, see [Configure custom indicators](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-custom-indicators).
+- For support of indicators on iOS, see [Microsoft Defender for Endpoint on iOS](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-custom-indicators).
+- For support of indicators on Android, see [Microsoft Defender for Endpoint on Android](android-configure#configure-custom-indicators).
 
 > [!IMPORTANT]
 > Only external IPs can be added to the indicator list. Indicators cannot be created for internal IPs.
