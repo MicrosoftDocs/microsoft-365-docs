@@ -46,6 +46,43 @@ Defender for Endpoint on Android allows IT Administrators the ability to configu
 > Defender for Endpoint on Android would use a VPN in order to provide the Web Protection feature. This is not a regular VPN and is a local/self-looping VPN that does not take traffic outside the device.
 > For more information, see [Configure web protection on devices that run Android](/mem/intune/protect/advanced-threat-protection-manage-android).
 
+## Network Protection
+>[!NOTE]
+>Network Protection on Microsoft Defender for endpoint is now in public preview. The following information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
+This feature provides protection against rogue Wi-Fi related threats and rogue certificates which are the primary attack vector for WIFI networks. Admins also have the ability to list the root CA and private root CA certificates in Microsoft Endpoint Manager Admin center and establish trust with endpoints. It provides the user a guided experience to connect to secure networks and also notifies them if a related threat is detected. 
+
+It includes several admin controls to offer flexibility like the ability to configure the feature from within the Microsoft Endpoint Manager Admin center as well as add trusted certificates. Admins can also enable [privacy controls](https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/android-configure?view=o365-worldwide#privacy-controls) to configure the data that is sent by Defender for Endpoint from Android devices.
+Network protection in Microsoft Defender for endpoint is enabled by default. Admins can use the following steps to **configure Network protection in Android devices.**
+
+1. In Microsoft Endpoint Manager Admin, navigate to Apps > App configuration policies. Create a new App configuration policy.
+    > [!div class="mx-imgBorder"]
+    > ![Image of add configuration policy.](images/create-policy.png)
+1. Provide a name and description to uniquely identify the policy. Select **'Android Enterprise'** as the platform and **'Personally-owned work profile only'** as the profile type and **'Microsoft Defender'** as the Targeted app.
+    > [!div class="mx-imgBorder"]
+    > ![Image of add configuration policy.](images/appconfigdetails.png)
+1. In Settings page, select **'Use configuration designer'** and add **'Enable Network Protection in Microsoft Defender'** as the key and value as **'0'** to diable Network Protection. (Network protection is enabled by default)
+    > [!div class="mx-imgBorder"]
+    > ![Image of add configuration policy.](images/selectnp.png)
+    
+    > [!div class="mx-imgBorder"]
+    > ![Image of add configuration policy.](images/npvalue.png)
+1. If your organization uses root CA’s which could be private in nature, explicit trust needs to be established between Intune (MDM solution) and user’s devices so that defender doesn’t detect flag them as rogue certificates.  
+
+    To establish trust for the root CA's use **'Trusted CA certificate list for Network Protection (Preview)'** as the key and in value add the **'comma separated list of certificate thumbprints'**.
+    > [!div class="mx-imgBorder"]
+    > ![Image of add configuration policy.](images/trustca.png)
+
+1. For other configurations related to Network protection, add the following keys and appropriate corresponding value.
+<br>
+
+    | Configuration Key| Description|
+    |---|---|
+    |Enable Network Protection Privacy|1 - Enable , 0 - Disable ; This setting is managed by IT admin to enable or disable privacy in network protection.|
+    |Enable Users to Trust Networks and Certificates|1 - Enable , 0 - Disable ; This setting is used by the IT admin to enable or disable the end user in app experience to trust and untrust the unsecure and suspicious networks and malicious certificates.|
+    |Automatic Remediation of Network Protection Alerts|1 - Enable , 0 - Disable ; This setting is used by the IT admin to enable or disable the remediation alerts that is sent when a user performs remediation activities like switching to a safer WIFI access points or deleting suspicious certificates detected by Defender|
+1. Add the required groups on which the policy will have to be applied. Review and create the policy.
+
 ## Privacy Controls
 
 > [!IMPORTANT]
