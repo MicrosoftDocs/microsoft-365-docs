@@ -18,9 +18,9 @@ ms.collection:
 - m365-initiative-defender-business
 ---
 
-# View and edit your security policies and settings in Microsoft Defender for Business
+# View and edit security policies and settings in Microsoft Defender for Business
 
-After you've onboarded your company's devices to Microsoft Defender for Business, the next step is to review your security policies. If necessary, you can edit your security policies and settings. 
+After you've onboarded your company's devices to Microsoft Defender for Business, the next step is to review your security policies. 
 
 > [!TIP]
 > Defender for Business includes preconfigured security policies that use recommended settings. You can edit these settings to suit your business needs.
@@ -28,9 +28,9 @@ After you've onboarded your company's devices to Microsoft Defender for Business
 Security policies to review and configure include:
 
 - **[Next-generation protection policies](#view-or-edit-your-next-generation-protection-policies)**, which determine antivirus and antimalware protection for your company's devices
-- **[Firewall protection and rules](#view-or-edit-your-firewall-policies-and-custom-rules)**, which determine what network traffic is allowed to flow to or from your company's devices
-- **[Web content filtering](#set-up-web-content-filtering)**, which prevents people from visiting certain websites (URLs) based on categories, such as adult content or legal liability.
-- **[Advanced features](#review-settings-for-advanced-features)**, such as automated investigation and response, and endpoint detection and response (EDR) in block mode.
+- **[Firewall protection and rules](#view-or-edit-your-firewall-policies-and-custom-rules)**, which determine what network traffic is allowed to flow to and from your company's devices
+- **[Web content filtering](#set-up-web-content-filtering)**, which prevents people from visiting certain websites (URLs) based on categories, such as adult content or legal liability
+- **[Advanced features](#review-settings-for-advanced-features)**, such as automated investigation and response and endpoint detection and response (EDR) in block mode
 
 In Defender for Business, security policies are applied to devices through [device groups](mdb-create-edit-device-groups.md#what-is-a-device-group). 
 
@@ -57,7 +57,7 @@ Use this article as a guide to managing your security policies and settings.
 
 Defender for Business features a [simplified configuration process](mdb-simplified-configuration.md) that helps streamline the setup and configuration process. If you select the simplified configuration process, you can view and manage your security policies in the Microsoft 365 Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)). However, you're not limited to this option. If you've been using Microsoft Intune, you can keep using the Microsoft Endpoint Manager admin center.
 
-The following table can help you choose where to manage your security policies and devices. 
+The following table can help you choose where to manage your security policies and devices.
 
 | Option | Description |
 |:---|:---|
@@ -65,11 +65,11 @@ The following table can help you choose where to manage your security policies a
 | **Use the Microsoft Endpoint Manager admin center** | If your company is already using Intune to manage security policies, you can continue using the Endpoint Manager admin center to manage your devices and security policies. To learn more, see [Manage device security with endpoint security policies in Microsoft Intune](/mem/intune/protect/endpoint-security-policy). <p>If you decide to switch to the [simplified configuration process in Defender for Business](mdb-simplified-configuration.md), you'll be prompted to delete any existing security policies in Intune to avoid [policy conflicts](mdb-troubleshooting.yml) later. |
 
 > [!IMPORTANT]
-> If you' a're managing security policies in the Microsoft 365 Defender portal, you can *view* those policies in the Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)), listed as **Antivirus** or **Firewall** policies. When you view your firewall policies in the Endpoint Manager admin center, you'll see two policies listed: one policy for your firewall protection, and another for custom rules.
+> If you're managing security policies in the Microsoft 365 Defender portal, you can *view* those policies in the Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)), listed as **Antivirus** or **Firewall** policies. When you view your firewall policies in the admin center, you'll see two policies listed: one policy for your firewall protection and another for custom rules.
 
 ## View or edit your next-generation protection policies
 
-Depending on whether you're using the Microsoft 365 Defender portal or the Microsoft Endpoint Manager admin center to manage your next-generation protection policies, use one of the procedures in the following table:
+Depending on whether you're using the Microsoft 365 Defender portal or the Microsoft Endpoint Manager admin center to manage your next-generation protection policies, use one of the following procedures:
 
 | Portal | Procedure |
 |:---|:---|
@@ -87,7 +87,7 @@ Depending on whether you're using the Microsoft 365 Defender portal or the Micro
 
 ## Set up web content filtering
 
-Web content filtering enables your security team to track and regulate access to websites based on their content categories, such as:
+Web content filtering enables your security team to track and regulate access to websites based on content categories, such as:
 
 - Adult content: Sites that are related to cults, gambling, nudity, pornography, sexually explicit material, or violence
 - High bandwidth: Download sites, image sharing sites, or peer-to-peer hosts
@@ -97,7 +97,7 @@ Web content filtering enables your security team to track and regulate access to
 
 Not all websites in these categories are malicious, but they could be problematic for your company because of compliance regulations, bandwidth usage, or other concerns. In addition, you can create an audit-only policy to get a better understanding of whether your security team should block any website categories.
 
-Web content filtering is available on the major web browsers, with blocks performed by Windows Defender SmartScreen (Microsoft Edge) and Network Protection (Chrome, Firefox, Brave, and Opera). For more information see [Prerequisites for web content filtering](../defender-endpoint/web-content-filtering.md#prerequisites).
+Web content filtering is available on the major web browsers, with blocks performed by Windows Defender SmartScreen (Microsoft Edge) and Network Protection (Chrome, Firefox, Brave, and Opera). For more information, see [Prerequisites for web content filtering](../defender-endpoint/web-content-filtering.md#prerequisites).
 
 ### To set up web content filtering
 
@@ -105,22 +105,22 @@ Web content filtering is available on the major web browsers, with blocks perfor
 
 2. Specify a name and description for your policy.
 
-3. Select categories to block. Use the expand icon to fully expand each parent category, and select specific web content categories. To set up an audit-only policy that doesn't block any websites, don't select any categories.
+3. Select the categories to block. Use the expand icon to fully expand each parent category, and select specific web content categories. To set up an audit-only policy that doesn't block any websites, don't select any categories.
 
    Don't select **Uncategorized**.
 
-4. Specify the policy scope by selecting device groups to apply the policy. Only devices in the selected device groups will be prevented from accessing websites in the selected categories.
+4. Specify the policy scope by selecting device groups to apply the policy to. Only devices in the selected device groups will be prevented from accessing websites in the selected categories.
 
-5. Review the summary and save the policy. The policy refresh might take up to 2 hours to apply to your selected devices.
+5. Review the summary and save the policy. The policy refresh might take up to two hours to apply to your selected devices.
 
 > [!TIP]
 > To learn more about web content filtering, see [Web content filtering](../defender-endpoint/web-content-filtering.md).
 
 ## Review settings for advanced features
 
-In addition to next-generation protection, firewall, and web content filtering policies, Defender for Business includes advanced security features. These features are preconfigured using recommended settings. You can review them and edit the settings to suit your business needs.
+In addition to next-generation protection, firewall, and web content filtering policies, Defender for Business includes advanced security features. These features are preconfigured to recommended settings. You can review and edit the settings to suit your business needs.
 
-To access settings for advanced features, in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), go to **Settings** > **Endpoints** > **General** > **Advanced features**.
+To access settings for advanced features in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), go to **Settings** > **Endpoints** > **General** > **Advanced features**.
 
 The following table describes settings for advanced features:
 
@@ -130,20 +130,20 @@ The following table describes settings for advanced features:
 | **Live Response**  | Defender for Business includes the following types of manual response actions: <ul><li>Run antivirus scan</li><li>Isolate device</li><li>Stop and quarantine a file</li><li>Add an indicator to block or allow a file</li></ul> <p>[Learn more about response actions](../defender-endpoint/respond-machine-alerts.md). |
 | **Live Response for Servers** | (This setting is currently not available in Defender for Business.)   |
 | **Live Response unsigned script execution** | (This setting is currently not available in Defender for Business.)  | 
-| **Enable EDR in block mode**<br/>(turned on by default) | Provides added protection from malicious artifacts when Microsoft Defender Antivirus isn't the primary antivirus product and is running in passive mode on a device. Endpoint detection and response (EDR) in block mode works behind the scenes to remediate malicious artifacts that were detected by EDR capabilities. Such artifacts might have been missed by the primary, non-Microsoft antivirus product.<p>[Learn more about EDR in block mode](../defender-endpoint/edr-in-block-mode.md). |
-| **Allow or block a file** <br/>(turned on by default) | Enables you to allow or block a file by using [indicators](../defender-endpoint/indicator-file.md). This capability requires Microsoft Defender Antivirus to be in active mode and [cloud protection](../defender-endpoint/cloud-protection-microsoft-defender-antivirus.md) turned on.<p>Blocking a file will prevent it from being read, written, or executed on devices in your organization. <p>[Learn more about indicators for files](../defender-endpoint/indicator-file.md).  |
-| **Custom network indicators**<br/>(turned on by default) | Enables you to allow or block an IP address, URL, or domain by using [network indicators](../defender-endpoint/indicator-ip-domain.md). This capability requires Microsoft Defender Antivirus to be in active mode and [network protection](../defender-endpoint/enable-network-protection.md) turned on.<p>You can allow or block IPs, URLs, or domains based on your own threat intelligence. You can also warn users with a prompt if they open a risky app. The prompt won't stop them from using the app but provides a warning.<p>[Learn more about network protection](../defender-endpoint/network-protection.md). |
-| **Tamper protection**<br/>(we recommend turning this setting on) | Tamper protection prevents malicious apps taking actions such as:<ul><li>Disabling virus and threat protection</li><li>Disabling real-time protection</li><li>Turning off behavior monitoring</li><li>Disabling cloud protection</li><li>Removing security intelligence updates</li><li>Disabling automatic actions on detected threats</li></ul><p>Tamper protection essentially locks Microsoft Defender Antivirus to its secure, default values, and prevents your security settings from being changed by apps and unauthorized methods. <p>[Learn more about tamper protection](../defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection.md).  |
+| **Enable EDR in block mode**<br/>(turned on by default) | Provides added protection from malicious artifacts when Microsoft Defender Antivirus isn't the primary antivirus product and is running in passive mode on a device. Endpoint detection and response (EDR) in block mode works behind the scenes to remediate malicious artifacts detected by EDR capabilities. Such artifacts might have been missed by the primary, non-Microsoft antivirus product.<p>[Learn more about EDR in block mode](../defender-endpoint/edr-in-block-mode.md). |
+| **Allow or block a file** <br/>(turned on by default) | Enables you to allow or block a file by using [indicators](../defender-endpoint/indicator-file.md). This capability requires Microsoft Defender Antivirus to be in active mode and [cloud protection](../defender-endpoint/cloud-protection-microsoft-defender-antivirus.md) turned on.<p>Blocking a file prevents it from being read, written, or executed on devices in your organization. <p>[Learn more about indicators for files](../defender-endpoint/indicator-file.md).  |
+| **Custom network indicators**<br/>(turned on by default) | Enables you to allow or block an IP address, URL, or domain by using [network indicators](../defender-endpoint/indicator-ip-domain.md). This capability requires Microsoft Defender Antivirus to be in active mode and [network protection](../defender-endpoint/enable-network-protection.md) turned on.<p>You can allow or block IPs, URLs, or domains based on your own threat intelligence. You can also prompt users if they open a risky app, but the prompt won't stop them from using the app.<p>[Learn more about network protection](../defender-endpoint/network-protection.md). |
+| **Tamper protection**<br/>(we recommend you turn on this setting) | Tamper protection prevents malicious apps from doing actions such as:<ul><li>Disabling virus and threat protection</li><li>Disabling real-time protection</li><li>Turning off behavior monitoring</li><li>Disabling cloud protection</li><li>Removing security intelligence updates</li><li>Disabling automatic actions on detected threats</li></ul><p>Tamper protection essentially locks Microsoft Defender Antivirus to its secure, default values and prevents your security settings from being changed by apps and unauthorized methods. <p>[Learn more about tamper protection](../defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection.md).  |
 | **Show user details**<br/>(turned on by default) | Enables people in your organization to see details, such as employees' picture, name, title, and department. These details are stored in Azure Active Directory (Azure AD).<p>[Learn more about user profiles in Azure AD](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).  |
 | **Skype for Business integration**<br/>(turned on by default) | Skype for Business was retired in July 2021. If you haven't already moved to Microsoft Teams, see [Set up Microsoft Teams in your small business](/microsoftteams/deploy-small-business). <p>Integration with Microsoft Teams (or the former Skype for Business) enables one-click communication between people in your business.   |
 | **Web content filtering**<br/>(turned on by default) | Blocks access to websites that contain unwanted content and tracks web activity across all domains. See [Set up web content filtering](#set-up-web-content-filtering). |
-| **Microsoft Intune connection**<br/>(we recommend turning this setting on if you have Intune) | If your organization's subscription includes Microsoft Intune (included in [Microsoft 365 Business Premium](../../business/index.yml)), this setting enables Defender for Business to share information about devices with Intune.  |
+| **Microsoft Intune connection**<br/>(we recommend you turn on this setting if you have Intune) | If your organization's subscription includes Microsoft Intune (included in [Microsoft 365 Business Premium](../../business/index.yml)), this setting enables Defender for Business to share information about devices with Intune.  |
 | **Device discovery**<br/>(turned on by default) | Enables your security team to find unmanaged devices that are connected to your company network. Unknown and unmanaged devices introduce significant risks to your network, whether it's an unpatched printer, network devices with weak security configurations, or a server with no security controls. <p>Device discovery uses onboarded devices to discover unmanaged devices, so your security team can onboard the unmanaged devices and reduce your vulnerability. <p>[Learn more about device discovery](../defender-endpoint/device-discovery.md).    |
-| **Preview features** | Microsoft is continually updating services, such as Defender for Business, to include new feature enhancements and capabilities. If you opt in to receive preview features, you'll be among the first to try upcoming features in the preview experience. <p>[Learn more about preview features](../defender-endpoint/preview.md).  |
+| **Preview features** | Microsoft is continually updating services such as Defender for Business to include new feature enhancements and capabilities. If you opt in to receive preview features, you'll be among the first to try upcoming features in the preview experience. <p>[Learn more about preview features](../defender-endpoint/preview.md).  |
 
 ## View and edit other settings in the Microsoft 365 Defender portal
 
-In addition to security policies that are applied to devices, there are other settings you can view and edit in Defender for Business. For example, you specify the time zone to use, and you can onboard (or offboard) devices. 
+In addition to security policies applied to devices, there are other settings you can view and edit in Defender for Business. For example, you specify the time zone to use, and you can onboard (or offboard) devices. 
 
 > [!NOTE]
 > You might see more settings in your tenant than are listed in this article. This article highlights the most important settings that you should review in Defender for Business.
@@ -163,7 +163,7 @@ The following table describes settings you can view and  edit in Defender for Bu
 
 ### Access your settings in the Microsoft 365 Defender portal
 
-1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)), and sign in.
+1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)) and sign in.
 
 2. Select **Settings**, and then select a category (such as **Security center**, **Microsoft 365 Defender**, or **Endpoints**).
 
