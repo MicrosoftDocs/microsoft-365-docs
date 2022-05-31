@@ -28,6 +28,8 @@ There are five categories of Teams content that you can collect and process usin
 
 - **Teams group chats**. Chat messages, posts, and attachments shared in a Teams conversation between three or more people. Also called *1:N* chats or *group conversations*.
 
+- **Teams reactions**. Reactions applied to chat messages, posts, and attachments in a Teams conversation.
+
 - **Teams channels**. Chat messages, posts, replies, and attachments shared in a standard Teams channel.
 
 - **Private channels**. Message posts, replies, and attachments shared in a private Teams channel.
