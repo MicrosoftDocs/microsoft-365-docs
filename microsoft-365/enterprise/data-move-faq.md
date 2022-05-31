@@ -3,7 +3,7 @@ title: "Data move general FAQ"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 05/24/2022
+ms.date: 05/31/2022
 audience: ITPro
 ms.topic: faq
 ms.service: o365-administration
