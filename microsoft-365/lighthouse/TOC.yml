@@ -1,6 +1,6 @@
 - name: Microsoft 365 Lighthouse
   items:
-    - name: What's new
+    - name: What's new in Microsoft 365 Lighthouse
       href: m365-lighthouse-whats-new.md
     - name: Overview of Microsoft 365 Lighthouse
       href: m365-lighthouse-overview.md
