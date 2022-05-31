@@ -27,7 +27,7 @@ ms.technology: m365d
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-To make Microsoft Secure Score a better representative of your security posture, we continue to add new improvement actions to help protect your organization from threats.
+To make Microsoft Secure Score a better representative of your security posture, we continue to add new features and improvement actions to help you protect your organization from threats.
 
 The more improvement actions you take, the higher your Microsoft Secure Score will be.
 
