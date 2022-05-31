@@ -76,7 +76,7 @@ As part of the device compliance baseline step, we've added the capability to no
 
 ### Deployment validation and reporting
 
-Microsoft 365 Lighthouse can now test tenant configurations for deployment steps with Conditional Access policies!  
+Microsoft 365 Lighthouse can now test tenant configurations for deployment steps with Conditional Access policies.  
 
 This new functionality works by detecting existing policies within the tenants you manage and comparing them to your deployment plan. Microsoft 365 Lighthouse then provides status designations for deployment steps and deployment step processes to help you understand which deployment processes have already been completed, which ones need to be addressed, and where the settings prescribed by the deployment plan are equal to, missing from, or in conflict with the settings included in the existing policies. Knowing this information makes identifying, prioritizing, and resolving policy conflicts faster, easier, and more effective.
 
