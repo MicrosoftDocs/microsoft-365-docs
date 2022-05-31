@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: robmazz
 author: robmazz
-manager: laurawi
+manager: scotv
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions

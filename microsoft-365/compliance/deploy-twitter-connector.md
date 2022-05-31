@@ -2,8 +2,8 @@
 title: "Deploy a connector to archive Twitter data"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date:
 audience: Admin
@@ -19,6 +19,8 @@ description: "Administrators can set up a native connector to import and archive
 ---
 
 # Deploy a connector to archive Twitter data
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 This article contains the step-by-step process to deploy a connector that uses the Office 365 Import service to import data from your organization's Twitter account to Microsoft 365. For a high-level overview of this process and a list of prerequisites required to deploy a Twitter connector, see [Set up a connector to archive Twitter data ](archive-twitter-data-with-sample-connector.md).
 
@@ -154,9 +156,9 @@ The Twitter developer app is now ready to use.
 
 5. Click **Save** to save the connector settings.
 
-## Step 5: Set up a Twitter connector in the Microsoft 365 compliance center
+## Step 5: Set up a Twitter connector in the compliance portal
 
-1. Go to the Microsoft 365 compliance center, and select <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**Data connectors** page</a.
+1. Go to the Microsoft Purview compliance portal, and select <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**Data connectors** page</a.
 
 2. On the **Data connectors** page under **Twitter**, click **View**.
 

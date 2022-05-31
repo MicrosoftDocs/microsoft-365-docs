@@ -1,5 +1,5 @@
 ---
-title: "Refresh your sensitive information source table file"
+title: "Refresh your exact data match sensitive information source table file"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.date:
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -19,9 +19,11 @@ description: Refresh your sensitive information source table file.
 ms.custom: seo-marvel-apr2020
 ---
 
-# Refresh your sensitive information source table file 
+# Refresh your exact data match sensitive information source table file 
 
-You can refresh your sensitive information database twice in every 24 hour period. You'll have to rehash and upload your sensitive information source table.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+You can refresh your sensitive information database up to 5 times in every 24 hour period. You'll have to rehash and upload your sensitive information source table.
 
 1. Re-export the sensitive data to an app, such as Microsoft Excel, and save the file in .csv, .tsv format or pipe (|) delimited format. Keep the same file name and location you used when you previously hashed and uploaded the file. See, [Export source data for exact data match based sensitive information type](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type) for details on exporting your sensitive data and getting it into the correct format.
 
@@ -30,13 +32,13 @@ You can refresh your sensitive information database twice in every 24 hour perio
 
 2. Use the procedures in [Hash and upload the sensitive information source table for exact data match sensitive information types](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types) to upload your sensitive information table source file.
 
-2. You can use [Task Scheduler](/windows/desktop/TaskSchd/task-scheduler-start-page) to automate the [Hash and upload the sensitive information source table for exact data match sensitive information types](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types) procedure. You can schedule tasks using several methods:
+3. You can use [Task Scheduler](/windows/desktop/TaskSchd/task-scheduler-start-page) to automate the [Hash and upload the sensitive information source table for exact data match sensitive information types](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types) procedure. You can schedule tasks using several methods:
 
    |Method|What to do|
    |---|---|
-   |Windows PowerShell|See the [ScheduledTasks](/powershell/module/scheduledtasks/) documentation and the [example PowerShell script](#example-powershell-script-for-task-scheduler) in this article|
-   |Task Scheduler API|See the [Task Scheduler](/windows/desktop/TaskSchd/using-the-task-scheduler) documentation|
-   |Windows user interface|In Windows, click **Start**, and type Task Scheduler. Then, in the list of results, right-click **Task Scheduler**, and choose **Run as administrator**.|
+   |Windows PowerShell|See the [ScheduledTasks](/powershell/module/scheduledtasks/) documentation and the [example PowerShell script](#example-powershell-script-for-task-scheduler) in this article|
+   |Task Scheduler API|See the [Task Scheduler](/windows/desktop/TaskSchd/using-the-task-scheduler) documentation|
+   |Windows user interface|In Windows, click **Start**, and type Task Scheduler. Then, in the list of results, right-click **Task Scheduler**, and choose **Run as administrator**.|
 
 ### Example PowerShell script for Task Scheduler 
 

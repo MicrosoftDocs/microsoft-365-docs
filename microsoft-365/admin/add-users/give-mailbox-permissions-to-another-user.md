@@ -19,19 +19,23 @@ ms.custom:
 - okr_smb
 - AdminTemplateSet
 - admindeeplinkEXCHANGE
+- business_assist
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
-description: "Give a user the right to access another user's mailbox, which allows the user to read and send emails from the other user's mailbox."
+description: "Give a Microsoft 365 user the right to access another user's mailbox, which allows the user to read and send emails from the other user's mailbox."
 ---
 
-# Give mailbox permissions to another user - Admin Help
+# Give mailbox permissions to another Microsoft 365 user - Admin help
 
 As the admin, you may have company requirements to allow some users access to another user's mailbox. For example, you may want to enable an assistant to send or read email from their manager's mailbox, or one of your user's the ability to send email on behalf of another user. This topic shows you how to accomplish this.
   
 If you're looking for information about creating and managing shared mailboxes, check out [Create a shared mailbox](../email/create-a-shared-mailbox.md).
+
+> [!TIP]
+> If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
     
 ## Looking to set up mailbox permissions?
 

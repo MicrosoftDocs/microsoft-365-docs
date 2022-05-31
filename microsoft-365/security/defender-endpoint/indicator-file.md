@@ -23,8 +23,10 @@ ms.technology: mde
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Endpoint Plan 1](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Business](../defender-business/mdb-overview.md)
 
 > [!TIP]
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
@@ -47,12 +49,16 @@ It's important to understand the following prerequisites prior to creating indic
 
 - Supported on devices with Windows 10, version 1703 or later, Windows Server 2019, Windows Server 2016, Windows Server 2012 R2, and Windows Server 2022.
     
-   >[!NOTE]
-    >Windows Server 2016 and Windows Server 2012 R2 will need to be onboarded using the instructions in [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) for this feature to work. 
+   > [!NOTE]
+   > Windows Server 2016 and Windows Server 2012 R2 will need to be onboarded using the instructions in [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) for this feature to work. 
+   > Custom file indicators with the Allow, Block and Remediate actions are now also available in the [public preview for the enhanced antimalware engine capabilities for macOS and Linux](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/enhanced-antimalware-engine-capabilities-for-linux-and-macos/ba-p/3292003).
 
 - To start blocking files, you first need to [turn on the "block or allow" feature](advanced-features.md) in Settings.
 
 This feature is designed to prevent suspected malware (or potentially malicious files) from being downloaded from the web. It currently supports portable executable (PE) files, including .exe and .dll files. The coverage will be extended over time.
+
+> [!IMPORTANT]
+> In Defender for Endpoint Plan 1 and Defender for Business, you can create an indicator to block or allow a file. In Defender for Business, your indicator is applied across your environment and cannot be scoped to specific devices.
 
 ## Create an indicator for files from the settings page
 
@@ -60,12 +66,12 @@ This feature is designed to prevent suspected malware (or potentially malicious 
 
 2. Select the **File hashes** tab.
 
-3. Select **Add indicator**.
+3. Select **Add item**.
 
 4. Specify the following details:
     - Indicator - Specify the entity details and define the expiration of the indicator.
     - Action - Specify the action to be taken and provide a description.
-    - Scope - Define the scope of the device group.
+    - Scope - Define the scope of the device group (scoping is not available in [Defender for Business](../defender-business/mdb-overview.md)).
 
 5. Review the details in the Summary tab, then select **Save**.
 
@@ -94,7 +100,7 @@ Choose if to Generate an alert on the file block event and define the alerts set
 - Description
 - Recommended actions
 
-![Alert settings for file indicators.](images/indicators-generate-alert.png)
+:::image type="content" source="images/indicators-generate-alert.png" alt-text="The Alert settings for file indicators" lightbox="images/indicators-generate-alert.png":::
 
 > [!IMPORTANT]
 >
@@ -143,6 +149,9 @@ Cert and File IoC policy handling conflict will follow the below order:
 - Else if the file is allowed by an allow file IoC policy, then **Allow**
 - Else if the file is blocked by ASR rules, CFA, AV, SmartScreen, then **Block**
 - Else **Allow** (passes Windows Defender Application Control & AppLocker policy, no IoC rules apply to it)
+
+>[!NOTE]
+> In situations when Microsoft Defender Antivirus is set to **Block**, but Defender for Endpoint is set to **Allow**, the policy will default to **Allow**.
 
 If there are conflicting file IoC policies with the same enforcement type and target, the policy of the more secure (meaning longer) hash will be applied. For example, an SHA-256 file hash IoC policy will win over an MD5 file hash IoC policy if both hash types define the same file.
 

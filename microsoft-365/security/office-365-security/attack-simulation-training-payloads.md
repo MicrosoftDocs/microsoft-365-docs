@@ -17,6 +17,8 @@ ms.technology: mdo
 
 # Create custom payloads for Attack simulation training in Defender for Office 365
 
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
 **Applies to**
  [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 
@@ -24,7 +26,7 @@ In Attack simulation training, a _payload_ is the phishing email message and web
 
 This article describes how to create your own payloads in Attack simulation training. You can create custom payloads in the following locations:
 
-- The **Payloads** tab: In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Payloads** tab. To go directly to the **Payloads** tab, use <https://security.microsoft.com/attacksimulator?viewid=payload>.
+- **Payloads**: In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Simulation content library** tab \> **Payloads**. To go directly to the **Simulation content library** tab where you can select **Payloads**, use <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
 - During simulation creation: You can create custom payloads on the **Select a payload** page (the third page) of the simulation creation wizard. For more information, see [Simulate a phishing attack in Defender for Office 365](attack-simulation-training.md).
 
 For getting started information about Attack simulation training, see [Get started using Attack simulation training](attack-simulation-training-get-started.md).
@@ -34,7 +36,7 @@ For getting started information about Attack simulation training, see [Get start
 
 ## Create a payload
 
-After you click ![Create a payload icon.](../../media/m365-cc-sc-create-icon.png) **Create a payload** from the **Payloads** tab of Attack simulation training or on the **[Select a payload](attack-simulation-training.md#select-a-payload)** page of the simulation creation wizard, the payload creation wizard starts and is described in this section.
+After you click ![Create a payload icon.](../../media/m365-cc-sc-create-icon.png) **Create a payload** from the **Payloads** in the **Simulation content library** tab of Attack simulation training or on the **[Select a payload](attack-simulation-training.md#select-a-payload)** page of the simulation creation wizard, the payload creation wizard starts and is described in this section.
 
 ### Select a payload type
 
@@ -143,7 +145,7 @@ On the **Configure payload** page, it's time to build your payload. Many of the 
       - **Insert name**: The value that's added in the message body is `${userName}`.
       - **Insert email**: The value that's added in the message body is `${emailAddress}`.
 
-      ![The Email message section on the Configure payload page in the payload creation wizard in Attack simulation training in Microsoft Defender for Office 365.](../../media/attack-sim-training-payloads-configure-payload-email-message.png)
+      :::image type="content" source="../../media/attack-sim-training-payloads-configure-payload-email-message.png" alt-text="The Email message section on the Configure payload page in the payload creation wizard in Attack simulation training in Microsoft Defender for Office 365" lightbox="../../media/attack-sim-training-payloads-configure-payload-email-message.png":::
 
       **Phishing link** control: This control is available only if you selected **Credential harvest**, **Link in attachment**, or **Drive-by URL** on the **Select technique** page. Use this control to insert the URL that you previously selected in the **Phishing link** section.
 
@@ -170,10 +172,6 @@ On the **Add indicators** page, click **Add indicator**. On the flyout that appe
 
 - **Indicator name** and **Indicator location**: These values are interrelated. Where you can place the indicator depends on the indicator itself. The available values are described in the following table:
 
-  <br>
-
-  ****
-
   |Indicator name|Indicator location|
   |---|---|
   |**Attachment type**|Message body|
@@ -199,13 +197,12 @@ On the **Add indicators** page, click **Add indicator**. On the flyout that appe
   |**Unprofessional looking design or formatting**|Message body|
   |**URL hyperlinking**|Message body|
   |**You're special**|Message body|
-  |
   
   This list is curated to contain the most common clues that appear in phishing messages.
 
   If you select the email message subject or the message body as the location for the indicator, a **Select text** button is available. Click this button to select the text in the message subject or message body where you want the indicator to appear. When you're finished, click **Select**.
 
-  ![Selected text location in the message body to add to an indicator in the payload creation wizard in Attack simulation training.](../../media/attack-sim-training-payloads-add-indicators-select-location.png)
+  :::image type="content" source="../../media/attack-sim-training-payloads-add-indicators-select-location.png" alt-text="The Selected text location in the message body to add to an indicator in the payload creation wizard in Attack simulation training" lightbox="../../media/attack-sim-training-payloads-add-indicators-select-location.png":::
 
   - **Indicator description**: You can accept the default description for the indicator, or you can customize it.
 
@@ -233,7 +230,7 @@ On the main **Review payload** page, you can select **Edit** in each section to 
 
 When you're finished, click **Submit**. On the confirmation page that appears, click **Done**.
 
-![Review payload page in Attack simulation training in the Microsoft 365 Defender portal.](../../media/attack-sim-training-payloads-review-payload.png)
+:::image type="content" source="../../media/attack-sim-training-payloads-review-payload.png" alt-text="The Review payload page in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-payloads-review-payload.png":::
 
 > [!IMPORTANT]
 > Payloads that you created will have the value **Tenant** for the **Source** property. When you create simulations and select payloads, make sure that you don't filter out the **Source** value **Tenant**.

@@ -1,18 +1,18 @@
 ---
 title: Modify and remove entries in the Tenant Allow/Block List
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: dansimp
 author: dansimp
 manager: dansimp
-ms.date: 
+ms.date:
 audience: ITPro
 ms.topic: how-to
 
 ms.localizationpriority: medium
-search.appverid: 
+search.appverid:
   - MET150
-ms.collection: 
+ms.collection:
   - M365-security-compliance
 description: Admins can learn how to modify and remove entries in the Tenant Allow/Block List in the Security portal.
 ms.technology: mdo
@@ -21,7 +21,7 @@ ms.prod: m365-security
 
 # Modify and remove entries in the Tenant Allow/Block List
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -34,26 +34,27 @@ You can use the Microsoft 365 Defender portal or PowerShell to modify and remove
 
 ### Modify entries in the Tenant Allow/Block List
 
-1. In the Microsoft 365 Defender portal, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**. Or, to go directly to the **Tenant Allow/Block List** page, use <https://security.microsoft.com/tenantAllowBlockList>.
 
 2. Select the tab that contains the type of entry that you want to modify:
-   - **Senders)
+   - **Senders**
+   - **Spoofing**
    - **URLs**
    - **Files**
-   - **Spoofing**
 
 3. Select the entry that you want to modify, and then click ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit**. The values that you are able to modify in the flyout that appears depend on the tab you selected in the previous step:
    - **Senders**
      - **Never expire** and/or expiration date.
      - **Optional note**
+   - **Spoofing**
+     - **Action**: You can change the value to **Allow** or **Block**.
    - **URLs**
      - **Never expire** and/or expiration date.
      - **Optional note**
    - **Files**
      - **Never expire** and/or expiration date.
      - **Optional note**
-   - **Spoofing**
-     - **Action**: You can change the value to **Allow** or **Block**.
+
 4. When you're finished, click **Save**.
 
 > [!NOTE]
@@ -61,13 +62,13 @@ You can use the Microsoft 365 Defender portal or PowerShell to modify and remove
 
 ### Remove entries from the Tenant Allow/Block List
 
-1. In the Microsoft 365 Defender portal, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**. Or, to go directly to the **Tenant Allow/Block List** page, use <https://security.microsoft.com/tenantAllowBlockList>.
 
 2. Select the tab that contains the type of entry that you want to remove:
    - **Senders**
+   - **Spoofing**
    - **URLs**
    - **Files**
-   - **Spoofing**
 
 3. Select the entry that you want to remove, and then click ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete**.
 
@@ -75,9 +76,9 @@ You can use the Microsoft 365 Defender portal or PowerShell to modify and remove
 
 ## Use PowerShell
 
-### Modify block file and URL entries in the Tenant Allow/Block List
+### Modify allow or block sender, file and URL entries in the Tenant Allow/Block List
 
-To modify block sender, file, and URL entries in the Tenant Allow/Block List, use the following syntax:
+To modify allow or block sender, file, and URL entries in the Tenant Allow/Block List, use the following syntax:
 
 ```powershell
 Set-TenantAllowBlockListItems -ListType <Sender | FileHash | Url> -Ids <"Id1","Id2",..."IdN"> [<-ExpirationDate Date | -NoExpiration>] [-Notes <String>]
@@ -91,9 +92,9 @@ Set-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBw
 
 For detailed syntax and parameter information, see [Set-TenantAllowBlockListItems](/powershell/module/exchange/set-tenantallowblocklistitems).
 
-### Remove URL or file entries from the Tenant Allow/Block List
+### Remove allow or block sender, URL or file entries from the Tenant Allow/Block List
 
-To remove sender, file, and URL entries from the Tenant Allow/Block List, use the following syntax:
+To remove allow or block sender, file, and URL entries from the Tenant Allow/Block List, use the following syntax:
 
 ```powershell
 Remove-TenantAllowBlockListItems -ListType <Sender | FileHash | Url> -Ids <"Id1","Id2",..."IdN">
@@ -107,7 +108,7 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
 
 For detailed syntax and parameter information, see [Remove-TenantAllowBlockListItems](/powershell/module/exchange/remove-tenantallowblocklistitems).
 
-### Modify allow or block spoofed sender entries
+### Modify allow or block spoofed sender entries from the Tenant Allow/Block List
 
 To modify allow or block spoofed sender entries in the Tenant Allow/Block List, use the following syntax:
 
@@ -123,7 +124,7 @@ Set-TenantAllowBlockListItems -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdl
 
 For detailed syntax and parameter information, see [Set-TenantAllowBlockListSpoofItems](/powershell/module/exchange/set-tenantallowblocklistspoofitems).
 
-### Remove allow or block spoofed sender entries
+### Remove allow or block spoofed sender entries from the Tenant Allow/Block List
 
 To remove allow or block spoof sender entries from the Tenant Allow/Block List, use the following syntax:
 
