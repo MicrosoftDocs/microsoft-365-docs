@@ -1129,9 +1129,9 @@ Yes, You can retrieve audit logs by using the following methods:
 
 - [The Office 365 Management Activity API](/office/office-365-management-api/office-365-management-activity-api-reference)
 
-- The [audit log search tool](search-the-audit-log-in-security-and-compliance.md) in the Microsoft Purview compliance portal
+- The [audit log search tool](search-the-audit-log-in-security-and-compliance.md) in the Microsoft Purview compliance portal.
 
-- The [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) cmdlet in Exchange Online PowerShell
+- The [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) cmdlet in Exchange Online PowerShell.
 
 **Do I need to individually enable auditing in each service that I want to capture audit logs for?**
 
