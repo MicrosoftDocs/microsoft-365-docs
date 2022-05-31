@@ -1,5 +1,5 @@
 ---
-title: Custom login pages in Attack simulation training
+title: Login pages in Attack simulation training
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -10,11 +10,11 @@ ms.localizationpriority: medium
 ms.collection: 
   - M365-security-compliance
   - m365initiative-defender-office365
-description: Admins can learn how to create login pages for simulated phishing attacks in Microsoft Defender for Office 365 Plan 2.
+description: Admins can learn how to create and manage login pages for simulated phishing attacks in Microsoft Defender for Office 365 Plan 2.
 ms.technology: mdo
 ---
 
-# Create custom login pages in Attack simulation training
+# Login pages in Attack simulation training
 
 **Applies to**
  [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
@@ -63,22 +63,26 @@ When you select a login page from the list, a details flyout appears with the fo
 
 ## Create login pages
 
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Simulation content library** tab \> and then select **Login pages**. To go directly to the **Simulation content library** tab where you can select **Login pages**, use <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
 You can create custom login pages in the following locations:
 
-- On the **Tenant login pages** tab in **Login pages** on the **Simulation content library** tab at <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
-- During payload and payload automation creation. For more information, see the following topics:
-  - [Create custom payloads for Attack simulation training in Defender for Office 365](attack-simulation-training-payloads.md)
-  - [Payload automations for Attack simulation training](attack-simulation-training-payload-automations.md)
+   Click ![Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new** to start the create end user login page wizard.
 
-From any of these locations, click ![Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new** to start the create new login page wizard.
+   > ![NOTE]
+   > The ![Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new** is also available during payload and payload automation creation. For more information, see the following topics:
+   > 
+   > - [Create custom payloads for Attack simulation training in Defender for Office 365](attack-simulation-training-payloads.md#create-payloads)
+   > - [Create payload automations for Attack simulation training](attack-simulation-training-payload-automations.md#create-payload-automations)
+   >
+   > At any point during the creation wizard, you can click **Save and close** to save your progress and continue configuring the login page later. You can pick up where you left off by selecting the login page on the **Tenant login pages** tab in **Login pages**, and then clicking ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit**. The partially-completed login page will have the **Status** value **Draft**.
 
-1. On the **Define details for login page** page, configure the following settings:
+2. On the **Define details for login page** page, configure the following settings:
    - **Name**: Enter a unique name.
    - **Description**: Enter an optional description.
 
    When you're finished, click **Next**.
 
-2. On the **Configure login page** page, configure the following settings:
+3. On the **Configure login page** page, configure the following settings:
 
    - **Select a language**
 
@@ -105,13 +109,13 @@ From any of these locations, click ![Create new icon.](../../media/m365-cc-sc-cr
 
    When you're finished, click **Next**.
 
-3. On the **Review login page** page, you can review the details of your login page.
+4. On the **Review login page** page, you can review the details of your login page.
 
    You can select **Edit** in each section to modify the settings within the section. Or you can click **Back** or select the specific page in the wizard.
 
    When you're finished, click **Submit**.
 
-   On the **New login page \<Name\> created** page, you can use the links to create a new login page, launch a simulation, or view all login pages.
+5. On the **New login page \<Name\> created** page, you can use the links to create a new login page, launch a simulation, or view all login pages.
 
    When you're finished, click **Done**.
 
