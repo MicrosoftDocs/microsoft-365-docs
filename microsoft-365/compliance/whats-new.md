@@ -38,6 +38,26 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 >
 > And visit the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap) to learn about Microsoft 365 features that were launched, are rolling out, are in development, have been cancelled, or previously released.
 
+## May 2022
+
+### Data lifecycle management and records management
+
+- Currently rolling out in preview: New [relabel option at the end of the retention period](retention-settings.md#relabeling-at-the-end-of-the-retention-period).
+- New deployment guidance: [Deploy a data governance solution with Microsoft Purview](data-governance-solution.md)
+- Correction in the documentation to confirm that resource mailboxes are supported for Exchange retention and deletion for both static scopes and adaptive scopes. For static scopes, resource mailboxes are included by default in an org-wide policy (the All default).
+- New documentation for end users: [Manage email storage with online archive mailboxes](https://prod.support.services.microsoft.com/office/manage-email-storage-with-online-archive-mailboxes-1cae7d17-7813-4fe8-8ca2-9a5494e9a721)
+
+### Sensitivity labels
+
+- New option at the end of the label creation or editing process, to automatically [convert auto-labeling settings into an auto-labeling policy](apply-sensitivity-label-automatically.md#convert-your-label-settings-into-an-auto-labeling-policy).
+- Auto-labeling policies for SharePoint and OneDrive can now apply labels with encryption when the account that last modified the file no longer exists in Azure AD.
+- Container labels are supported for Office 365 Content Delivery Networks (CDNs).
+- Clarifications for [removing and deleting labels](create-sensitivity-labels.md#removing-and-deleting-labels).
+- New [common scenarios](get-started-with-sensitivity-labels.md#common-scenarios-for-sensitivity-labels):
+  - Label SQL database columns by using the same sensitivity labels as those used for files and emails so that the organization has a unified labeling solution that continues to protect structured data when it's exported
+  - Apply a sensitivity label to a file after receiving an alert that content containing personal data is being shared and needs protection
+
+
 ## April 2022
 
 ### Communication compliance
@@ -260,43 +280,3 @@ To meet the challenges of today's decentralized, data-rich workplace, we're intr
 ### Sensitivity labels
 
 - Mandatory labeling and a default label for Power BI are now generally available (GA)
-
-## November 2021
-
-### Compliance Manager
-
-New content updates can be viewed in [What's new in Microsoft Purview Compliance Manager](compliance-manager-whats-new.md).
-
-### Device Onboarding
-
-The following articles were added for device onboarding:
-
-- [Onboard macOS devices into Microsoft 365 overview (preview)](device-onboarding-macos-overview.md)
-- [Onboard and offboard macOS devices into Microsoft Purview solutions using Intune (preview)](device-onboarding-offboarding-macos-intune.md)
-- [Onboard and offboard macOS devices into Compliance solutions using Intune for Microsoft Defender for Endpoint customers (preview)](device-onboarding-offboarding-macos-intune-mde.md)
-- [Onboard and offboard macOS devices into Microsoft Purview solutions using JAMF Pro (preview)](device-onboarding-offboarding-macos-jamfpro.md)
-- [Onboard and offboard macOS devices into Compliance solutions using JAMF Pro for Microsoft Defender for Endpoint customers (preview)](device-onboarding-offboarding-macos-jamfpro-mde.md)
-
-### eDiscovery
-
-- [Use the new case format in eDiscovery (Premium)](advanced-ediscovery-new-case-format.md) new case format was released to general availability and renamed from "large case format"
-
-### Retention and records management
-- Rolling out: New record management settings that control whether labeled items in SharePoint and OneDrive can be deleted by users. Previously, retention labels configured to retain content and that didn't mark items as records prevented users from deleting labeled content in SharePoint when this action was allowed in OneDrive. For more information, see [How retention works for SharePoint and OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive).
-
-### Sensitive Information Types
-
-Added the following new articles:
-
-- [Learn about exact data match based sensitive information types](sit-learn-about-exact-data-match-based-sits.md)
-- [Get started with exact data match based sensitive information types](sit-get-started-exact-data-match-based-sits-overview.md)
-- [Export source data for exact data match based sensitive information type](sit-get-started-exact-data-match-export-data.md)
-- [Create the schema for exact data match based sensitive information types](sit-get-started-exact-data-match-create-schema.md)
-- [Hash and upload the sensitive information source table for exact data match sensitive information types](sit-get-started-exact-data-match-hash-upload.md)
-- [Create exact data match sensitive information type/rule package](sit-get-started-exact-data-match-create-rule-package.md)
-- [Test an exact data match sensitive information type](sit-get-started-exact-data-match-test.md)
-- [Manage your exact data match schema](sit-use-exact-data-manage-schema.md)
-- [Refresh your sensitive information source table file](sit-use-exact-data-refresh-data.md)
-
-### Sensitivity labels
-- The scope name for [Microsoft Purview Data Map labels](/azure/purview/create-sensitivity-label) is now "Schematized data assets".
