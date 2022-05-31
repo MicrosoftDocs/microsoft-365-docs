@@ -50,7 +50,7 @@ Defender for Endpoint on Android allows IT Administrators the ability to configu
 >[!NOTE]
 >Network Protection on Microsoft Defender for Endpoint is now in public preview. The following information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-This feature provides protection against rogue Wi-Fi related threats and rogue certificates which are the primary attack vector for Wi-Fi networks. Admins can list the root CA and private root CA certificates in Microsoft Endpoint Manager Admin center and establish trust with endpoints. It provides the user a guided experience to connect to secure networks and also notifies them if a related threat is detected. 
+This feature provides protection against rogue Wi-Fi related threats and rogue certificates which are the primary attack vector for Wi-Fi networks. Admins can list the root Certificate Authority (CA) and private root CA certificates in Microsoft Endpoint Manager Admin center and establish trust with endpoints. It provides the user a guided experience to connect to secure networks and also notifies them if a related threat is detected. 
 
 It includes several admin controls to offer flexibility, such as the ability to configure the feature from within the Microsoft Endpoint Manager Admin center as well as add trusted certificates. Admins can also enable [privacy controls](android-configure.md) to configure the data that is sent by Defender for Endpoint from Android devices.
 
@@ -70,7 +70,7 @@ Network protection in Microsoft Defender for endpoint is enabled by default. Adm
     > ![Image of add configuration policy.](images/npvalue.png)
 1. If your organization uses root CA’s which could be private in nature, explicit trust needs to be established between Intune (MDM solution) and user’s devices so that defender doesn’t detect flag them as rogue certificates.  
 
-    To establish trust for the root CA's use **'Trusted CA certificate list for Network Protection (Preview)'** as the key and in value add the **'comma separated list of certificate thumbprints'**.
+    To establish trust for the root CAs use **'Trusted CA certificate list for Network Protection (Preview)'** as the key and in value add the **'comma separated list of certificate thumbprints'**.
     > [!div class="mx-imgBorder"]
     > ![Image of add configuration policy.](images/trustca.png)
 
@@ -79,9 +79,9 @@ Network protection in Microsoft Defender for endpoint is enabled by default. Adm
 
     | Configuration Key| Description|
     |---|---|
-    |Enable Network Protection Privacy|1 - Enable , 0 - Disable ; This setting is managed by IT admin to enable or disable privacy in network protection.|
-    |Enable Users to Trust Networks and Certificates|1 - Enable , 0 - Disable ; This setting is used by the IT admin to enable or disable the end user in app experience to trust and untrust the unsecure and suspicious networks and malicious certificates.|
-    |Automatic Remediation of Network Protection Alerts|1 - Enable , 0 - Disable ; This setting is used by the IT admin to enable or disable the remediation alerts that is sent when a user performs remediation activities like switching to a safer WIFI access points or deleting suspicious certificates detected by Defender|
+    |Enable Network Protection Privacy|1 - Enable , 0 - Disable ; This setting is managed by IT admins to enable or disable privacy in network protection.|
+    |Enable Users to Trust Networks and Certificates|1 - Enable , 0 - Disable ; This setting is used by IT admins to enable or disable the end user in-app experience to trust and untrust the unsecure and suspicious networks and malicious certificates.|
+    |Automatic Remediation of Network Protection Alerts|1 - Enable , 0 - Disable ; This setting is used by IT admins to enable or disable the remediation alerts that is sent when a user performs remediation activities, such as switching to a safer Wi-Fi access points or deleting suspicious certificates detected by Defender|
 1. Add the required groups on which the policy will have to be applied. Review and create the policy.
 
 ## Privacy Controls
@@ -102,7 +102,7 @@ Following privacy controls are available for configuring the data that is sent b
 From version 1.0.3425.0303 of Microsoft Defender for Endpoint on Android, you'll be able to run vulnerability assessments of OS and apps installed on the onboarded mobile devices.
 
 > [!NOTE]
-> Vulnerability assessment is part of [Threat and Vulnerability management](next-gen-threat-and-vuln-mgt.md) in Microsoft Defender for Endpoint. 
+> Vulnerability assessment is part of [Microsoft Defender Vulnerability Management](defender-vulnerability-management/defender-vulnerability-management.md) in Microsoft Defender for Endpoint. 
 
 **Notes about privacy related to apps from personal devices (BYOD):**
 
