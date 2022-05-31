@@ -125,7 +125,7 @@ These insights can help inform your customer engagements and deliver more value 
 
 For more information, see [Overview of the Tenants page in Microsoft 365 Lighthouse: Microsoft 365 usage card](m365-lighthouse-tenants-page-overview.md#microsoft-365-usage-card).
 
-### Exchange Online Protection and Microsoft Microsoft 365 Defender for Office 365 default baseline step
+### Exchange Online Protection and Microsoft 365 Defender for Office 365 default baseline step
 
 We've added a new step to the default baseline to include guidance for enabling Security Policies for Exchange Online Protection (EOP) and Microsoft Defender for Office 365 (MDO). EOP and MDO help protect users from spam, phishing, and malware emails by sending the emails to the user's quarantine or junk mail folder (coming soon). The deployment plan guides you in setting up EOP and MDO, further expanding your security stance during your next customer tenant deployment plan review.
 
