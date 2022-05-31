@@ -27,15 +27,15 @@ ms.technology: m365d
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-To make Microsoft Secure Score a better representative of your security posture, we continue to add new features and improvement actions to help you protect your organization from threats.
+To make Microsoft Secure Score a better representative of your security posture, we continue to add new features and improvement actions.
 
-The more improvement actions you take, the higher your Microsoft Secure Score will be.
+The more improvement actions you take, the higher your Secure Score will be. For more information, see [Microsoft Secure Score](microsoft-secure-score.md).
 
 Microsoft Secure Score can be found at https://security.microsoft.com/securescore in the [Microsoft 365 Defender portal](microsoft-365-defender.md#the-microsoft-365-defender-portal).
 
 ## June 2022
 
-This update includes these new Microsoft Defender for Endpoint and Microsoft Defender Vulnerability Management recommendations as Microsoft Secure Score improvement actions:
+This update includes these new Microsoft Defender for Endpoint and Microsoft Defender Vulnerability Management recommendations as Secure Score improvement actions:
 
 - Disallow offline access to shares
 - Remove share write permission set to **Everyone**
@@ -43,7 +43,7 @@ This update includes these new Microsoft Defender for Endpoint and Microsoft Def
 - Set folder access-based enumeration for shares
 - Update Microsoft Defender for Endpoint core components
 
-This update includes this new Microsoft Defender for Identity recommendation as a Microsoft Secure Score improvement action:
+This update includes this new Microsoft Defender for Identity recommendation as a Secure Score improvement action:
 
 - Resolve unsecure domain configurations
 
