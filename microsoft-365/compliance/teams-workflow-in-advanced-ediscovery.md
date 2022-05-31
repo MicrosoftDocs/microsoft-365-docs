@@ -22,7 +22,7 @@ description: "Learn how to preserve, collect, review, and export content from Mi
 
 This article provides a comprehensive set of procedures, guidelines, and best practices for using Microsoft Purview eDiscovery (Premium) to preserve, collect, review, and export content from Microsoft Teams. The goal of this article is to help you optimize your eDiscovery workflow for Teams content.
 
-There are five categories of Teams content that you can collect and process using eDiscovery (Premium):
+There are six categories of Teams content that you can collect and process using eDiscovery (Premium):
 
 - **Teams 1:1 chats**. Chat messages, posts, and attachments shared in a Teams conversation between two people.  Teams 1:1 chats are also called *conversations*.
 
@@ -44,6 +44,7 @@ A prerequisite to managing Teams content in eDiscovery (Premium) is to understan
 |---|---|---|
 |Teams 1:1 chats|Messages in 1:1 chats are stored in the Exchange Online mailbox of all chat participants.|Files shared in a 1:1 chat are stored in the OneDrive for Business account of the person who shared the file.|
 |Teams group chats|Messages in group chats are stored in the Exchange Online mailbox of all chat participants.|Files shared in group chats are stored in the OneDrive for Business account of the person who shared the file.|
+|Teams reactions|Messages in group chats are stored in the Exchange Online mailbox of all chat participants.|Files shared in group chats are stored in the OneDrive for Business account of the person who shared the file.|
 |Teams channels|All channel messages and posts are stored in the Exchange Online mailbox associated with the team.|Files shared in a channel are stored in the SharePoint Online site associated with the team.|
 |Private channels|Messages sent in a private channel are stored in the Exchange Online mailboxes of all members of the private channel.|Files shared in a private channel are stored in a dedicated SharePoint Online site associated with the private channel.|
 |Shared channels|Messages sent in a shared channel are stored in a system mailbox associated with the shared channel.<sup>1</sup>|Files shared in a shared channel are stored in a dedicated SharePoint Online site associated with the shared channel.|
