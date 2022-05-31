@@ -21,7 +21,10 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 # What's new in Microsoft 365 Lighthouse
 
-We're continuously adding new features to [Microsoft 365 Lighthouse](m365-lighthouse-overview.md), fixing issues we learn about, and making changes based on your feedback. Take a look below to see what's available for you today. Some features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, you should see it soon.
+We're continuously adding new features to [Microsoft 365 Lighthouse](m365-lighthouse-overview.md), fixing issues we learn about, and making changes based on your feedback. Take a look below to see what's available for you today.
+
+> [!NOTE]
+> Some features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, you should see it soon.
 
 ## May 2022
 
