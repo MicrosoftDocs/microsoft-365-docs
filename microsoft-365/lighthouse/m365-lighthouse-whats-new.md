@@ -29,15 +29,9 @@ We're continuously adding new features to [Microsoft 365 Lighthouse](m365-lighth
 
 We've given the left navigation pane in Microsoft 365 Lighthouse a new look. You'll notice a sleeker design, with top-level  nodes like Tenants, Users, and Devices that expand to show related subnodes, like Risky users, Device compliance, and Threat management. This navigation model aligns with the model used by other Microsoft 365 admin centers.
 
-> [!NOTE]
-> The redesigned navigation pane is being rolled out over several weeks and may not be immediately available in all tenants.
-
 ### Enriched user details pane
 
 We've redesigned the user details pane to include more user information and more actions you can take to better manage users. It now has the same look and feel as the user details pane in the Microsoft 365 admin center. To access the user details pane in Microsoft 365 Lighthouse, select **Users** from the left navigation pane, and then select either **Search users** or **Risky users**. Select any user to open the details pane.
-
-> [!NOTE]
-> The redesigned user details pane is being rolled out over several weeks and may not be immediately available in all tenants.
 
 ## April 2022
 
@@ -46,9 +40,6 @@ We've redesigned the user details pane to include more user information and more
 We've updated the **Tenants** page to list the Managed Service Provider (MSP)'s delegated access type (None, DAP, GDAP, or Both DAP & GDAP) per customer under the **Delegated access** column. We've also added a new column titled **Your roles** that lists the DAP and GDAP roles per customer for a signed-in user. These two enhancements to the **Tenants** page will make it easier for partner technicians to understand which types of delegated administrative permissions are available for each customer and which delegated roles have explicitly been granted to them.
 
 To learn more, see [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md).
-
-> [!NOTE]
-> This functionality is being rolled out over several weeks and may not be immediately available in all tenants.
 
 ## March 2022
 
