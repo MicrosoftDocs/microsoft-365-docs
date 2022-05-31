@@ -156,16 +156,18 @@
        items:
        - name: Email authentication
          href: email-validation-and-authentication.md
+       - name: Set up SPF to help prevent spoofing
+         href: set-up-spf-in-office-365-to-help-prevent-spoofing.md
+       - name: How Microsoft 365 uses SPF to prevent spoofing
+         href: how-office-365-uses-spf-to-prevent-spoofing.md
        - name: Use DKIM to validate outbound email
          href: use-dkim-to-validate-outbound-email.md
        - name: Support for validation of DKIM signed messages
          href: support-for-validation-of-dkim-signed-messages.md
        - name: Use DMARC to validate email
          href: use-dmarc-to-validate-email.md
-       - name: Set up SPF to help prevent spoofing
-         href: set-up-spf-in-office-365-to-help-prevent-spoofing.md
-       - name: How Microsoft 365 uses SPF to prevent spoofing
-         href: how-office-365-uses-spf-to-prevent-spoofing.md
+       - name: Use Trusted ARC senders for legitimate devices and services between the sender and receiver
+         href: use-arc-exceptions-to-mark-trusted-arc-senders.md
      - name: Mail flow in EOP
        href: mail-flow-in-eop.md
      - name: User submissions policies
@@ -415,7 +417,9 @@
       - name: How to prioritize and manage Automated Investigations and Response (AIR)
         href: step-by-step-guides/how-to-prioritize-and-manage-automated-investigations-and-response-air.md
    - name: Reference
-     items:
+     items: 
+     - name: Defender for Office 365 data retention 
+       href: mdo-data-retention.md
      - name: Security roadmap
        href: security-roadmap.md
      - name: Help and support for EOP
