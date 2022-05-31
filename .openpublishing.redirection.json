@@ -457,8 +457,8 @@
     },
     {
       "source_path": "microsoft-365/business/set-up-windows-devices.md",
-      "redirect_url": "/microsoft-365/admin/setup/set-up-windows-devices",
-      "redirect_document_id": true
+      "redirect_url": "/microsoft-365/business-premium/m365bp-set-up-windows-devices",
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/business/manage-windows-devices.md",
