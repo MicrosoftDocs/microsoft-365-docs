@@ -148,7 +148,7 @@ To modify an existing custom notification on the **Tenant notifications** tab, d
 - Click **⋮** (**Actions**) between the **Notifications** and **Language** values of the notification in the list, and then select ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit**.
 - Select the notification from the list by clicking anywhere in the row except the check box. In the details flyout that opens, click **Edit notification**.
 
-The end-user notification wizard opens with the settings and values of the selected notification page. Tthe steps are the same as described in the [Create end-user notifications](#create-end-user-notifications) section.
+The end-user notification wizard opens with the settings and values of the selected notification page. The steps are the same as described in the [Create end-user notifications](#create-end-user-notifications) section.
 
 ## Copy end-user notifications
 
