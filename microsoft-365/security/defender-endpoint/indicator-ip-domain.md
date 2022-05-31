@@ -52,7 +52,7 @@ It's important to understand the following prerequisites prior to creating indic
 
 - Ensure that **Custom network indicators** is enabled in **Microsoft 365 Defender** \> **Settings** \> **Advanced features**. For more information, see [Advanced features](advanced-features.md).
 - For support of indicators on iOS, see [Microsoft Defender for Endpoint on iOS](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-custom-indicators).
-- For support of indicators on Android, see [Microsoft Defender for Endpoint on Android](android-configure#configure-custom-indicators).
+- For support of indicators on Android, see [Microsoft Defender for Endpoint on Android](/microsoft-365/security/defender-endpoint/android-configure#configure-custom-indicators).
 
 > [!IMPORTANT]
 > Only external IPs can be added to the indicator list. Indicators cannot be created for internal IPs.
