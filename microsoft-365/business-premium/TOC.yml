@@ -74,14 +74,14 @@
         href: m365bp-onboard-devices-mdb.md
       - name: Protect Windows devices
         items: 
-          - name: Protection settings for Windows devices
-            href: m365bp-protection-settings-for-windows-10-devices.md
           - name: Secure Windows devices
             href: m365bp-secure-windows-devices.md
           - name: Manage Windows devices
             href: m365bp-manage-windows-devices.md
           - name: Prepare for Office client deployment
             href: m365bp-prepare-for-office-client-deployment.md
+          - name: App settings for Windows devices
+            href: m365bp-protection-settings-for-windows-10-devices.md
       - name: Review and edit device policies
         href: m365bp-view-edit-create-mdb-policies.md
       - name: Manage device groups
