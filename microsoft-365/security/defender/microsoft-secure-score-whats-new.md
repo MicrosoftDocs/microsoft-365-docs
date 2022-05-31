@@ -35,7 +35,7 @@ Microsoft Secure Score can be found at https://security.microsoft.com/securescor
 
 ## June 2022
 
-This update will include these new Microsoft Defender for Endpoint and Microsoft Defender Vulnerability Management recommendations as Microsoft Secure Score improvement actions:
+This update includes these new Microsoft Defender for Endpoint and Microsoft Defender Vulnerability Management recommendations as Microsoft Secure Score improvement actions:
 
 - Disallow offline access to shares
 - Remove share write permission set to **Everyone**
@@ -43,7 +43,7 @@ This update will include these new Microsoft Defender for Endpoint and Microsoft
 - Set folder access-based enumeration for shares
 - Update Microsoft Defender for Endpoint core components
 
-This update will include this new Microsoft Defender for Identity recommendations as Microsoft Secure Score improvement actions:
+This update includes this new Microsoft Defender for Identity recommendation as a Microsoft Secure Score improvement action:
 
 - Resolve unsecure domain configurations
 
