@@ -18,9 +18,9 @@ f1.keywords:
 description: "Use mailbox migration service advisories to monitor delays in mailbox migration requests in your organization."
 ---
 
-# Service advisory for MRS source delays in Exchange Online monitoring
+# Service advisories for MRS source delays in Exchange Online monitoring
 
-Mailbox Replication Service (MRS) source delay service advisories inform you of storage limitations or high processor utilization issues on the tenant side (migration source) that might be delaying mailbox migrations in your Microsoft 365 organization. These service advisories also includes links to Microsoft resources to help you resolve these issues.
+Mailbox Replication Service (MRS) source delay service advisories inform you of storage limitations or high processor utilization issues on the tenant side (migration source) that might be delaying mailbox migrations in your Microsoft 365 organization. These service advisories also include links to Microsoft resources to help you resolve these issues.
 
 These service advisories are displayed in the Microsoft 365 admin center. To view these service advisories, go to **Health** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">**Service health**</a> > **Exchange Online** and then click the **Active issues** tab.
 
