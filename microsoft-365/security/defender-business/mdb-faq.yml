@@ -44,8 +44,6 @@ sections:
           - [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)
           - [Microsoft 365 for enterprise](/microsoft-365/enterprise/microsoft-365-overview)
 
-
-
       - question: How many devices can I onboard and secure with Defender for Business? 
         answer: |
           You can onboard and secure up to 5 devices per user license.
@@ -122,9 +120,9 @@ sections:
           
           However, you can now contact support and request an override for your tenant experience. Referring to our example, you could request an override to keep the Defender for Business experience, even if you have some Defender for Endpoint Plan 2 licenses.
           
-          Note that [Defender for Business](mdb-overview.md) and [Microsoft 365 Business Premium](/microsoft-365/business-premium/) are for customers who have up to 300 users. For customers who need more than 300 user licenses, we recommend getting an enterprise subscription that includes Microsoft Defender for Endpoint Plan 1 or Plan 2.
-
           You can view your current subscriptions and licenses in the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)). [Understand subscriptions and licenses in Microsoft 365 for business](/microsoft-365/commerce/licenses/subscriptions-and-licenses).
+
+          Note that [Defender for Business](mdb-overview.md) and [Microsoft 365 Business Premium](/microsoft-365/business-premium/) are for customers who have up to 300 users. For customers who need more than 300 user licenses, we recommend getting an enterprise subscription that includes Microsoft Defender for Endpoint Plan 1 or Plan 2.
 
           For details about licenses and product terms, see [Licensing and product terms for Microsoft 365 subscriptions](https://www.microsoft.com/licensing/terms/productoffering/Microsoft365/MCA).
 
