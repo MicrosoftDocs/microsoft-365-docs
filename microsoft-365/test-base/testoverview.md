@@ -18,7 +18,7 @@ f1.keywords: NOCSH
 
 # Test your application on Test Base
 
-In this section, you will learn how to create packages with different types of applications for uploading and testing on **Test Base**. Application types consist of the following:
+In this section, you'll learn how to create packages with different types of applications for uploading and testing on **Test Base**. Application types consist of the following values:
 
    > [!div class="mx-imgBorder"]
    > ![Package publish prompts](Media/testoverview01.png)
@@ -37,6 +37,6 @@ In this section, you will learn how to create packages with different types of a
 
    - **Clone existing package**
 
-      See [Clone an existing package](clonepackage.md) to create a new package by simply duplicating your previously published package.
+      See [Clone an existing package](clonepackage.md) to create a new package by duplicating your previously published package.
 
 
