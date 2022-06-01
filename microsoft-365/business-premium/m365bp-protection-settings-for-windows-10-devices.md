@@ -82,4 +82,4 @@ If your users have personal Windows devices on which they perform work tasks, yo
 
 ## Next objective
 
-[Secure Windows devices](m365bp-secure-windows-devices.md)
+[Validate your Windows settings](m365bp-validate-settings-on-windows-10-pcs.md).
