@@ -1,17 +1,16 @@
 ---
 title: Understand policy order in Microsoft Defender for Business
-description: Learn about order of priority with policies in Microsoft Defender for Business
+description: Learn about order of priority with cybersecurity policies to protect your company devices with Defender for Business.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 02/24/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.reviewer: inbadian, shlomiakirav
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
@@ -19,11 +18,6 @@ ms.collection:
 ---
 
 # Understand policy order in Microsoft Defender for Business
-
-> [!IMPORTANT]
-> Microsoft Defender for Business is rolling out to [Microsoft 365 Business Premium](../../business-premium/index.md) customers, beginning March 1, 2022. Defender for Business as a standalone subscription is in in preview, and will roll out gradually to customers and IT Partners who [sign-up here](https://aka.ms/mdb-preview) to request it. Preview includes an [initial set of scenarios](mdb-tutorials.md#try-these-preview-scenarios), and we will be adding capabilities regularly.
-> 
-> Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. 
 
 ## Policy order in Microsoft Defender for Business
 
@@ -35,27 +29,20 @@ As policies are added, you'll notice that an order of priority is assigned. You 
 
 >
 > **Got a minute?**
-> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about Microsoft Defender for Business</a>. We'd love to hear from you!
+> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about security</a>. We'd love to hear from you!
 >
 
 ## Key points to remember about policy order
 
 - Policies are assigned an order of priority.
-
 - Devices receive the first applied policy only.
-
 - You can change the order of priority for policies.
-
 - Default policies are given the lowest order of priority.
 
 ## Next steps
 
 - [Get started using Defender for Business](mdb-get-started.md)
-
 - [Manage devices](mdb-manage-devices.md)
-
 - [View and manage incidents in Microsoft Defender for Business](mdb-view-manage-incidents.md)
-
 - [Respond to and mitigate threats in Microsoft Defender for Business](mdb-respond-mitigate-threats.md)
-
 - [Review remediation actions in the Action center](mdb-review-remediation-actions.md)

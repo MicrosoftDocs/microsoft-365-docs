@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.date: 02/24/2022
 ms.prod: m365-security
 ms.technology: mdb
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
@@ -21,7 +21,9 @@ ms.collection:
 
 # Review remediation actions in Microsoft 365 Business Premium
 
-As threats are detected, remediation actions come into play. Depending on the particular threat and how your security settings are configured, remediation actions might be taken automatically or only upon approval. Examples of remediation actions include sending a file to quarantine, stopping a process from running, and removing a scheduled task. All remediation actions are tracked in the Action center, which is located at [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center).
+Okay, you've discovered a security breach, but what do you do? It depends on the nature of it. 
+
+Examples of remediation actions include sending a file to quarantine, stopping a process from running, or completely removing a scheduled task. All remediation actions are tracked in the Action center, which is located at [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center).
 
 :::image type="content" source="../media/defender-business/mdb-actioncenter.png" alt-text="Screenshot of the Action Center in M365.":::
 

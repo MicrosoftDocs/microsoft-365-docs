@@ -23,6 +23,8 @@ description: Once you've finished setting up Office 365 Message Encryption (OME)
 
 # Manage Office 365 Message Encryption
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Once you've finished setting up Office 365 Message Encryption (OME), you can customize the configuration of your deployment in several ways. For example, you can configure whether to enable one-time pass codes, display the **Encrypt** button in Outlook on the web, and more. The tasks in this article describe how.
 
 ## Manage whether Google, Yahoo, and Microsoft Account recipients can use these accounts to sign in to the Office 365 Message Encryption portal
@@ -206,13 +208,13 @@ You can use custom branding templates to force recipients to receive a wrapper m
 
 ## Customize the appearance of email messages and the OME portal
 
-For detailed information about how you can customize OME for your organization, see [Add your organization's brand to your encrypted messages](add-your-organization-brand-to-encrypted-messages.md). In order to enable the ability to track and revoke encrypted messages you must add your custom branding to the OME portal.
+For detailed information about how you can customize Microsoft Purview Message Encryption for your organization, see [Add your organization's brand to your encrypted messages](add-your-organization-brand-to-encrypted-messages.md). In order to enable the ability to track and revoke encrypted messages you must add your custom branding to the OME portal.
   
-## Disable the new capabilities for OME
+## Disable Microsoft Purview Message Encryption
 
-We hope it doesn't come to it, but if you need to, disabling the new capabilities for OME is very straightforward. First, you'll need to remove any mail flow rules you've created that use the new OME capabilities. For information about removing mail flow rules, see [Manage mail flow rules](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules). Then, complete these steps in Exchange Online PowerShell.
+We hope it doesn't come to it, but if you need to, disabling Microsoft Purview Message Encryption is very straightforward. First, you'll need to remove any mail flow rules you've created that use Microsoft Purview Message Encryption. For information about removing mail flow rules, see [Manage mail flow rules](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules). Then, complete these steps in Exchange Online PowerShell.
   
-### To disable the new capabilities for OME
+### To disable Microsoft Purview Message Encryption
   
 1. Using a work or school account that has global administrator permissions in your organization, start a Windows PowerShell session and connect to Exchange Online. For instructions, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -222,7 +224,7 @@ We hope it doesn't come to it, but if you need to, disabling the new capabilitie
    Set-IRMConfiguration -SimplifiedClientAccessEnabled $false
    ```
 
-3. Disable the new capabilities for OME by running the Set-IRMConfiguration cmdlet with the AzureRMSLicensingEnabled parameter set to false:
+3. Disable the Microsoft Purview Message Encryption by running the Set-IRMConfiguration cmdlet with the AzureRMSLicensingEnabled parameter set to false:
 
    ```powershell
    Set-IRMConfiguration -AzureRMSLicensingEnabled $false

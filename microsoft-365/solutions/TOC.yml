@@ -61,7 +61,7 @@
           href: configure-teams-sensitive-protection.md
         - name: Configure highly sensitive protection
           href: configure-teams-highly-sensitive-protection.md
-        - name: Configure a team with security isolation
+        - name: Configure a team with a unique sensitivity label
           href: secure-teams-security-isolation.md
       - name: Configure external sharing
         items:
@@ -312,13 +312,13 @@
 
     - name: Compliance
       items:
-      - name: Insider risk solutions in Microsoft 365
+      - name: Insider risk solutions in Microsoft Purview
         href: ../compliance/insider-risk-solution-overview.md
       - name: Auditing solutions
         href: ../compliance/auditing-solutions-overview.md
       - name: eDiscovery solutions in Microsoft 365
         href: ../compliance/ediscovery.md
-      - name: Microsoft 365 Advanced eDiscovery
+      - name: Microsoft Purview eDiscovery (Premium)
         href: ../compliance/overview-ediscovery-20.md
       - name: Regulatory compliance action plans
         items: 

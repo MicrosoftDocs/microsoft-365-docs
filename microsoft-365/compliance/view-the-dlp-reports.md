@@ -23,7 +23,9 @@ description: Use the DLP reports in Office 365 to view the number of DLP policy 
 
 # View the reports for data loss prevention
 
-After you create your data loss prevention (DLP) policies, you'll want to verify that they're working as you intended and helping you to stay compliant. With the DLP reports in the Security &amp; Compliance Center, you can quickly view:
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+After you create your Microsoft Purview data loss prevention (DLP) policies, you'll want to verify that they're working as you intended and helping you to stay compliant. With the DLP reports in the Microsoft Purview compliance portal, you can quickly view:
   
 - **DLP policy matches** This report shows the count of DLP policy matches over time. You can filter the report by date, location, policy, or action. You can use this report to: 
     
@@ -55,7 +57,7 @@ After you create your data loss prevention (DLP) policies, you'll want to verify
     
 All DLP reports can show data from the most recent four-month time period. The most recent data can take up to 24 hours to appear in the reports.
   
-You can find these reports in the Security &amp; Compliance Center \> **Reports** \> **Dashboard**.
+You can find these reports in the Microsoft Purview compliance portal \> **Reports** \> **Dashboard**.
   
 ![DLP policy matches report.](../media/117d20c9-d379-403f-ad68-1f5cd6c4e5cf.png)
   
@@ -83,13 +85,13 @@ To view DLP reports in the Security & Compliance Center, you have to be assigned
 
 ## Find the cmdlets for the DLP reports
 
-To use most of the cmdlets for the Security &amp; Compliance Center, you need to:
+To use most of the cmdlets for the Microsoft Purview compliance portal, you need to:
   
-1. [Connect to the Security &amp; Compliance Center using remote PowerShell](/powershell/exchange/connect-to-scc-powershell)
+1. [Connect to the Microsoft Purview compliance portal using remote PowerShell](/powershell/exchange/connect-to-scc-powershell)
     
 2. Use any of these [Security &amp; Compliance Center cmdlets](/powershell/exchange/exchange-online-powershell)
     
-However, DLP reports need pull data from across Office 365, including Exchange Online. For this reason, the cmdlets for the DLP reports are available in Exchange Online Powershell—not in Security &amp; Compliance Center Powershell. Therefore, to use the cmdlets for the DLP reports, you need to:
+However, DLP reports need pull data from across Office 365, including Exchange Online. For this reason, the cmdlets for the DLP reports are available in Exchange Online Powershell—not in Microsoft Purview compliance portal Powershell. Therefore, to use the cmdlets for the DLP reports, you need to:
   
 1. [Connect to Exchange Online using remote PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
     

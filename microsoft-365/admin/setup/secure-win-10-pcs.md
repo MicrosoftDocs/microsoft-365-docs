@@ -31,7 +31,7 @@ description: "Learn how to secure Windows 10 PCs after you have set up Microsoft
 
 This article applies to Microsoft 365 Business Premium.
 
-After you have [set up](business-set-up.md) Microsoft 365 Business Premium, it is time to protect the Windows 10 computers in your org from theft, and malicious threats like viruses and malware.
+After you have [set up](/microsoft-365/business-premium/m365bp-setup) Microsoft 365 Business Premium, it is time to protect the Windows 10 computers in your org from theft, and malicious threats like viruses and malware.
 
 ## Watch: Secure your Windows 10 PCs
 
@@ -59,10 +59,10 @@ After you set up device protection in Microsoft 365 Business, follow these steps
 
     On the top of the page, choose **Get started**.
 
-4. On the **Secure your Windows 10 computers** pane, select the options you want to turn on. 
+4. On the **Secure your Windows 10 computers** pane, select the options you want to turn on. For more information about the settings, see [Secure Windows devices](../../business-premium/m365bp-secure-windows-devices.md) (article). 
     
     For most organizations, the options here offer a good level of security, however, if your organization has more complex security needs, you can also use pre-defined security baselines to secure  your Windows 10 devices. For more information, see [security baselines for Windows 10 devices](/mem/intune/protect/security-baselines).   
 
 5. Choose **Apply settings**.
 
-    These settings will apply to all users in your organization. To set up different policies for different security groups, see [Set device protection settings for Windows 10 PCs](../../business-premium/m365bp-protection-settings-for-windows-10-pcs.md).
+    These settings will apply to all users in your organization. To set up different policies for different security groups, see [Set device protection settings for Windows 10 PCs](../../business-premium/m365bp-protection-settings-for-windows-10-devices.md).
