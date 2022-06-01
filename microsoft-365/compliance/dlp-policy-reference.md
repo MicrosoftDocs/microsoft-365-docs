@@ -612,6 +612,24 @@ Here's what a policy tip looks like in a OneDrive for Business account.
 > The default behavior of a DLP policy, when there is no alert configured, is not to alert or trigger. This applies only to default information types. For custom information types, the system will alert even if there is no action defined in the policy.
 -->
 
+#### Blocking and notifications in SharePoint Online and OneDrive for Business
+
+This table shows the DLP blocking and notification behavior for policies that are scoped to SharePoint Online and OneDrive for Business
+
+|Conditions  |Actions |User Notification|Incident Reports |Blocking and Notification behavior|
+|---------|---------|---------|---------|---------|
+|- **Content is shared from Microsoft 365** </br>- **with people outside my organization**     |No restrictions are set         |- **User notifications** set to **On** </br>- **Notify users in Office 365 service with a policy tip** is selected </br>- **Notify the user who sent, shared, or last modified the content** is selected         |- **Send an alert to admins when a rule match occurs** set to **On** </br>- **Send alert every time an activity matches the rule** set to **On** </br>- **Use email incident reports to notify you when a policy match occurs** set to **On**         |Notifications will be sent only when a file is shared with an external user and an external user access the file.         |
+|Row2     |         |         |         |         |
+|Row3     |         |         |         |         |
+|Row4     |         |         |         |         |
+|Row5     |         |         |         |         |
+|Row6     |         |         |         |         |
+|Row7     |         |         |         |         |
+|Row8     |         |         |         |         |
+|Row9     |         |         |         |         |
+|Row10     |         |         |         |        |
+
+
 ### User overrides
 
 The intent of **User overrides** is to give users a way to bypass, with justification, DLP policy blocking actions on sensitive items in Exchange, SharePoint, OneDrive, or Teams so that they can continue their work. User overrides are enabled only when **Notify users in Office 365 services with a policy tip** is enabled, so user overrides go hand-in-hand with Notifications and Policy tips. 
