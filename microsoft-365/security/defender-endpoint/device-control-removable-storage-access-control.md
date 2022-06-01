@@ -290,7 +290,7 @@ Before you get started with Removable Storage Access Control, you must confirm y
 
     - In the **Select Device Control Default Enforcement** window, select **Default Deny**:
     
-     :::image type="content" source="images/set-default-enforcement-deny-gp.png" alt-text="Set Default Enforcement = Deny" lightbox="images/set-default-enforcement-deny-gp.png":::    
+     :::image type="content" source="images/set-default-enforcement-deny-gp.png" alt-text="Set Default Enforcement = Deny using Group Policy" lightbox="images/set-default-enforcement-deny-gp.png":::    
 
 3. Audit Default Deny: <br> Use the following XML data to create Audit policy for Default Deny:
     
