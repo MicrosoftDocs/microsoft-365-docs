@@ -18,7 +18,7 @@ f1.keywords: NOCSH
 
 # Clone an existing package
 
-In this section, you will learn how to create a new package by simply duplicating your previously published package as a starting point. There are multiple entrances on Test Base portal for you to start the clone package journey.
+In this section, you'll learn how to create a new package by duplicating your previously published package as a starting point. There are multiple entrances on Test Base portal for you to start the clone package journey.
 
 > [!IMPORTANT]
 > To use the clone package function, you need to have at least one successfully uploaded package on Test Base. 
@@ -33,7 +33,7 @@ In this section, you will learn how to create a new package by simply duplicatin
    > [!div class="mx-imgBorder"]
    > ![Clone existing package menu](Media/clonepackage02.png)
 
-2. You will be directed to the New package creation steps with all information and configuration pre-populated as same as the package you cloned. The only information you must have to change is the **Package version** under the **Basic information** section. 
+2. You'll be directed to the New package creation steps with all information and configuration pre-populated as same as the package you cloned. The only information you must have to change is the **Package version** under the **Basic information** section. 
 
    > [!NOTE]
    > The combination of package name and version must be unique within your Test Base account. 
@@ -41,7 +41,7 @@ In this section, you will learn how to create a new package by simply duplicatin
    > [!div class="mx-imgBorder"]
    > ![Package basic information](Media/clonepackage03.png)
 
-3. You are able to:
+3. You're able to:
 
    - preview all pre-populated package setting information duplicating from the clone package, 
    - make any changes from step 1 to step 4 (See Uploading pre-built zip package for more detailed instruction),  
@@ -50,7 +50,7 @@ In this section, you will learn how to create a new package by simply duplicatin
 
 ## Starting from the Manage packages page
 
-On the **Manage packages** page, you can clone a package by simply clicking on the **'Clone'** icon under the Quick actions column. 
+On the **Manage packages** page, you can clone a package by clicking on the **'Clone'** icon under the Quick actions column. 
 
 > [!div class="mx-imgBorder"]
 > ![Starting from the Manage packages page](Media/clonepackage04.png)
