@@ -49,17 +49,17 @@ Once you’ve chosen between the Standard and Strict security preset policies fo
 
 1. Identify the users, groups, or domains you would like to include in Standard and Strict security presets.
 1. Login to the Microsoft Security portal at https://security.microsoft.com.
-1. On the left nav, under Email & collaboration, select Policies & rules.
-1. Select Threat policies.
-1. Select Preset Security Policies underneath the Templated policies heading
-1. Select Manage underneath the Standard protection preset.
-1. Add the users, groups, or domains you want to apply the Standard preset to, in the EOP protections apply to section. Click the Next button.
-1. Add the users, groups, or domains you want to apply the Standard preset to, in the MDO protections apply to section. Click the Next button.
-1. Click on the Confirm button.
-1. Select the Manage link in the Strict protection preset.
-1. Add the users, groups, or domains you want to apply the Standard preset to, in the EOP protections apply to section. Click the Next button.
-1. Add the users, groups, or domains you want to apply the Standard preset to, in the MDO protections apply to section. Click the Next button.
-1. Click on the Confirm button.
+1. On the left nav, under **Email & collaboration**, select **Policies & rules**.
+1. Select **Threat policies**.
+1. Select **Preset Security Policies** underneath the **Templated policies** heading
+1. Select **Manage** underneath the Standard protection preset.
+1. Add the users, groups, or domains you want to apply the Standard preset to, in the EOP protections apply to section. Click the **Next** button.
+1. Add the users, groups, or domains you want to apply the Standard preset to, in the MDO protections apply to section. Click the **Next** button.
+1. Click on the **Confirm** button.
+1. Select the **Manage** link in the Strict protection preset.
+1. Add the users, groups, or domains you want to apply the Standard preset to, in the EOP protections apply to section. Click the **Next** button.
+1. Add the users, groups, or domains you want to apply the Standard preset to, in the MDO protections apply to section. Click the **Next** button.
+1. Click on the **Confirm** button.
 
 > [!TIP]
 > To learn more about preset polcies click [here](../../office-365-security/preset-security-policies.md)
@@ -69,7 +69,7 @@ Once you’ve chosen between the Standard and Strict security preset policies fo
 Use config analyzer to determine if your users are configured per Microsoft’s best practices.
 
 > [!TIP]
-> Configuration analyzer allows admins to find and fix security policies where the settings are below the Standard or Strict protection profile settings in preset security policies. Find out more about Configuration analyzer [here](../../office-365-security/configuration-analyzer-for-security-policies.md.
+> Configuration analyzer allows admins to find and fix security policies where the settings are below the Standard or Strict protection profile settings in preset security policies. Find out more about Configuration analyzer [here](../../office-365-security/configuration-analyzer-for-security-policies.md).
 
 Secure Presets are always suggested because it ensures you are always exercising Microsoft best practices. However, in some cases customized configurations are required. Learn about custom policies [here](../../office-365-security/tenant-wide-setup-for-increased-security.md).
 
