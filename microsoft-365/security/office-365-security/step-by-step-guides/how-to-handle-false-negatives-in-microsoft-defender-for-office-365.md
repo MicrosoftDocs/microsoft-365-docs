@@ -42,7 +42,7 @@ Defender for Office 365 can help you understand why emails are getting delivered
 
 1. Ask end users to report the email as **phishing** using Microsoft Message Add-in, or Microsoft Phish Add-in, or the Outlook buttons.
 2. Admins can triage the user reported messages from the [user reported content](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/admin-submission?view=o365-worldwide#view-user-submissions-to-microsoft) portal.
-3. From those reported messages admins can **submit to [Microsoft for analysis**](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/admin-submission?view=o365-worldwide#notify-users-from-within-the-portal) and learn why that email was allowed in the first place.
+3. From those reported messages admins can **submit to** [Microsoft for analysis](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/admin-submission?view=o365-worldwide#notify-users-from-within-the-portal) and learn why that email was allowed in the first place.
 4. If needed, while submitting to Microsoft for analysis, admins can create a [**block** for the sender](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/manage-tenant-blocks?view=o365-worldwide) to mitigate the problem.
 5. Once the results for submissions are available, read the verdict to understand why emails were allowed, and how your tenant setup could be improved to prevent similar situations from happening in the future.
 
