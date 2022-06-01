@@ -2,7 +2,7 @@
 title: "Disable access to Microsoft 365 services with PowerShell"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 07/27/2020
 audience: Admin
 ms.topic: article

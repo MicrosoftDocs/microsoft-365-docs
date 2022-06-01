@@ -2,7 +2,7 @@
 title: "Configure Microsoft 365 Enterprise services and applications"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
