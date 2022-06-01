@@ -109,7 +109,7 @@ For more information, see [Requirements for Microsoft 365 Lighthouse](m365-light
 
 Microsoft 365 Lighthouse now includes the capability to view audit logs. You can review past actions to find misconfigurations and risky actions for remediation, support process and security investigation, train employees, and meet compliance and auditing requirements. With the latest update, you can:
 
-- View audit logs to see all actions taken inside Microsoft 365 Lighthouse including what changed in which customer tenant, when was is changed, and who changed it.
+- View audit logs to see all actions taken inside Microsoft 365 Lighthouse, including what changed in which customer tenant, when it was changed, and who changed it.
 - Search and filter audit logs to find specific information.
 - Export logs so you can analyze and retain them.
  
@@ -189,7 +189,7 @@ You can now create and apply custom tags to the customer tenants that you manage
 
 ### Baselines to standardize your customer tenant deployments
 
-With the new baselines feature, you can now deploy standard configurations related to securing customer tenant users, devices, and data. The default baseline currently contains the following deployment steps (with more coming soon): 
+With the new baselines feature, you can now deploy standard configurations to help secure users, devices, and data in customer tenants. The default baseline currently contains the following deployment steps (with more coming soon): 
 
 - Require MFA for admins 
 - Require MFA for users 
