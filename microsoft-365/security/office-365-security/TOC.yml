@@ -215,7 +215,7 @@
        - name: End-user notifications for Attack simulation training
          href: attack-simulation-training-end-user-notifications.md
        - name: Login pages in Attack simulation training
-         href: attack-simulation-training-login-pages
+         href: attack-simulation-training-login-pages.md
        - name: Insights and reporting in Attack simulation training
          href: attack-simulation-training-insights.md
        - name: Attack simulation training deployment considerations and FAQ
