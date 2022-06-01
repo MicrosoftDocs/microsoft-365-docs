@@ -91,7 +91,7 @@ In the left-hand menu under **Package catalog**, select the **New package**. The
 
 3. Under **scripts folder**, sample scripts and script tags have been created for you. All script tags are editable, you can reassign them to reference your script paths.
 
-   - If the **Out of Box test** is selected in step 2, you can see the **outofbox** folder under the scripts folder. You also have the option to add **'Reboot after install'** tag for the Install script.
+   - If the **Out of Box test** is selected in step 2, you can see the **outofbox** folder under the scripts folder. You can also choose to add **'Reboot after install'** tag for the Install script.
 
    > [!div class="mx-imgBorder"]
    > ![Sample scripts and script tags](Media/uploadingzip07.png)
@@ -114,7 +114,7 @@ In the left-hand menu under **Package catalog**, select the **New package**. The
 
    - Reorder the script paths by dragging with the left ellipse buttons. The functional scripts run in the sequence they're listed. A failure in a particular script stops subsequent scripts from executing.
    - Set 'Restart after execution' for multiple scripts.
-   - Apply update before on specific script path. This is for users who wish to perform functional tests to indicate when the Windows Update patch should be applied in the sequence of executing their functional test scripts.
+   - Apply update before on specific script path. This update is for users who wish to perform functional tests to indicate when the Windows Update patch should be applied in the sequence of executing their functional test scripts.
 
    > [!div class="mx-imgBorder"]
    > ![Functional test](Media/uploadingzip10.png)
@@ -177,7 +177,7 @@ In the left-hand menu under **Package catalog**, select the **New package**. The
 
 ## Continue package creation
 
-On **New package** page, there's a list of saved draft packages if have. You can continue your edit directly to the step you paused last time by clicking the ‘edit’ pencil icon.
+If you have any previous draft packages, you can view the list of your saved draft packages on the **New package** page. You can continue your edit directly to the step you paused last time by clicking the ‘edit’ pencil icon.
 
 > [!div class="mx-imgBorder"]
 > ![New package page](Media/uploadingzip16.png)
