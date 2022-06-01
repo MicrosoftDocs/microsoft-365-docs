@@ -43,9 +43,6 @@ When you apply this sensitivity label to a supported container, the label automa
 
 Content in these containers however, do not inherit the labels for the classification or settings for files and emails, such as visual markings and encryption. So that users can label their documents in SharePoint sites or team sites, make sure you've [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
-> [!NOTE]
-> Sensitivity labels for containers aren't supported with Office 365 Content Delivery Networks (CDNs).
-
 ## Using sensitivity labels for Microsoft Teams, Microsoft 365 groups, and SharePoint sites
 
 Before you enable sensitivity labels for containers and configure sensitivity labels for the new settings, users can see and apply sensitivity labels in their apps. For example, from Word:
@@ -387,6 +384,7 @@ The following apps and services don't currently support sensitivity labels confi
   - Yammer
   - Project
   - Power BI
+  - My Apps portal
 
 ## Classic Azure AD group classification
 
