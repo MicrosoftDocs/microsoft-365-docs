@@ -62,8 +62,8 @@ To start working with alerts, see [Viewing and managing alerts](#viewing-and-man
 
 The table below outlines which users can create and edit alerts and alert policies based on their role type. In addition to holding a Compliance Manager role, users also need an Azure AD role as follows:
 
-- The **Security reader** role in Azure AD for viewing alerts and alert policies
-- The **Security administrator** role in Azure AD for creating or updating alert policies
+- To view alerts and alert policies: the **Security reader** role in Azure AD
+- To create or update alert policies: the **Compliance data administrator**, **Security administrator**, and **Security operator** roles in Azure AD
  
 Learn more about [Azure roles in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md#azure-roles-in-the-compliance-portal).
 
@@ -74,9 +74,7 @@ Learn more about [Azure roles in the Microsoft Purview compliance portal](micros
 | **Compliance Manager Assessor**| Yes | Yes | 
 | **Compliance Manager Contributor**| Yes | Yes | 
 | **Compliance Manager Reader**| No | No | 
-| **Compliance data administrator**| Yes | Yes  | 
 | **Global administrator**| Yes | Yes | 
-| **Security operator**| Yes | Yes | 
 
 Learn how to [set user permissions and assign roles for Compliance Manager](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
 
