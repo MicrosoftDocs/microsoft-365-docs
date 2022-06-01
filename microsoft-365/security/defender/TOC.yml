@@ -332,6 +332,12 @@
          items:
               - name: Overview
                 href: defenderexpertsforhuntingprev.md
+       - name: Ransomware playbooks
+         items: 
+              - name: Detecting human-operated ransomware attacks with Microsoft 365 Defender
+                href: playbook-detecting-ransomware-m365-defender.md
+              - name: Responding to ransomware attacks
+                href: playbook-responding-ransomware-m365-defender.md
     - name: Security operations guide
       items: 
        - name: Overview

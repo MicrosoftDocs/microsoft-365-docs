@@ -119,24 +119,24 @@ The limits described in this section are related to exporting documents out of a
 |---|---|
 |Total file size or maximum number of documents downloaded from a review set.|3 MB or 50 documents<sup>7</sup>|
 
-## Notes
 
-> [!NOTE]
-> <sup>1</sup> This is the maximum number of tags that you can create in a case. This limit isn't related to the number of documents that can be tagged.
->
-> <sup>2</sup> This limit is shared with exporting content in other eDiscovery tools. This means that concurrent exports in Content search and eDiscovery (Standard) (and adding content to review sets in eDiscovery (Premium)) are all applied against this limit.
->
-> <sup>3</sup> When you put more than 1,000 mailboxes or 100 sites on hold in a single hold policy, the system will automatically scale the hold as needed. This means the system will automatically add data locations to multiple hold policies, instead of adding them to a single hold policy. However, the limit of 10,000 case hold policies per organization still applies.
->
-> <sup>4</sup> Any item that exceeds a single file limit will show up as a processing error.
->
-> <sup>5</sup> When searching SharePoint and OneDrive for Business locations, the characters in the URLs of the sites being searched count against this limit. The total number of characters consists of:
->
-> - All characters in both the Users and Filters fields.
-> - All search permissions filters that apply to the user.
-> - The characters from any location properties in the search; this includes ExchangeLocation,PublicFolderLocation,SharPointLocation,ExchangeLocationExclusion,PublicFolderLocationExclusion,SharePointLocationExclusion, OneDriveLocationExclusion.
->   For example, including all SharePoint sites and OneDrive accounts in the search will count as six characters, as the word "ALL" will appear for both the SharePointLocation and OneDriveLocation field.
->
-> <sup>6</sup> For non-phrase queries (a keyword value that doesn't use double quotation marks) we use a special prefix index. This tells us that a word occurs in a document, but not where it occurs in the document. To do a phrase query (a keyword value with double quotation marks), we need to compare the position within the document for the words in the phrase. This means that we can't use the prefix index for phrase queries. In this case, we internally expand the query with all possible words that the prefix expands to; for example,  **time\*** can expand to  **"time OR timer OR times OR timex OR timeboxed OR ..."**. The limit of 10,000 is the maximum number of variants the word can expand to, not the number of documents matching the query. There is no upper limit for non-phrase terms.
->
-> <sup>7</sup> This limit applies to downloading selected documents from a review set. It doesn't apply to exporting documents from a review set. For more information about downloading and exporting documents, see [Export case data in eDiscovery (Premium)](exporting-data-ediscover20.md).
+## Reference notes
+<sup>1</sup> This is the maximum number of tags that you can create in a case. This limit isn't related to the number of documents that can be tagged.
+
+<sup>2</sup> This limit is shared with exporting content in other eDiscovery tools. This means that concurrent exports in Content search and eDiscovery (Standard) (and adding content to review sets in eDiscovery (Premium)) are all applied against this limit.
+
+<sup>3</sup> When you put more than 1,000 mailboxes or 100 sites on hold in a single hold policy, the system will automatically scale the hold as needed. This means the system will automatically add data locations to multiple hold policies, instead of adding them to a single hold policy. However, the limit of 10,000 case hold policies per organization still applies.
+
+<sup>4</sup> Any item that exceeds a single file limit will show up as a processing error.
+
+<sup>5</sup> When searching SharePoint and OneDrive for Business locations, the characters in the URLs of the sites being searched count against this limit. The total number of characters consists of:
+
+  - All characters in both the Users and Filters fields.
+  - All search permissions filters that apply to the user.
+  - The characters from any location properties in the search, including ExchangeLocation, PublicFolderLocation, SharPointLocation, ExchangeLocationExclusion, PublicFolderLocationExclusion, SharePointLocationExclusion, and OneDriveLocationExclusion. For example, including all SharePoint sites and OneDrive accounts in the search will count as six characters, as the word "ALL" will appear for both the SharePointLocation and OneDriveLocation field.
+
+<sup>6</sup> For non-phrase queries (a keyword value that doesn't use double quotation marks) we use a special prefix index. This tells us that a word occurs in a document, but not where it occurs in the document. To do a phrase query (a keyword value with double quotation marks), we need to compare the position within the document for the words in the phrase. This means that we can't use the prefix index for phrase queries. In this case, we internally expand the query with all possible words that the prefix expands to; for example,  **time\*** can expand to  **"time OR timer OR times OR timex OR timeboxed OR ..."**. The limit of 10,000 is the maximum number of variants the word can expand to, not the number of documents matching the query. There is no upper limit for non-phrase terms.
+
+<sup>7</sup> The age-out period of the Azure Blobs that store eDiscovery (Premium) collections is one year. Any collection created a year ago may no longer be accessible.
+ 
+<sup>8</sup> This limit applies to downloading selected documents from a review set. It doesn't apply to exporting documents from a review set. For more information about downloading and exporting documents, see [Export case data in eDiscovery (Premium)](exporting-data-ediscover20.md).
