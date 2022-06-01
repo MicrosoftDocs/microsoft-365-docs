@@ -147,7 +147,7 @@ Use netsh to configure a system-wide static proxy.
 
 2. Enter the following command and press **Enter**:
 
-   ```PowerShell
+   ```command prompt
    netsh winhttp set proxy <proxy>:<port>
    ```
 
@@ -155,7 +155,7 @@ Use netsh to configure a system-wide static proxy.
 
 To reset the winhttp proxy, enter the following command and press **Enter**:
 
-```PowerShell
+```command prompt
 netsh winhttp reset proxy
 ```
 
@@ -244,13 +244,13 @@ Verify, the proxy configuration is completed successfully. The WinHTTP can then 
 
 4. Enter the following command and press **Enter**:
 
-    ```PowerShell
+    ```command prompt
     HardDrivePath\MDEClientAnalyzer.cmd
     ```
 
     Replace *HardDrivePath* with the path, where the MDEClientAnalyzer tool was downloaded. For example:
 
-    ```PowerShell
+    ```command prompt
     C:\Work\tools\MDEClientAnalyzer\MDEClientAnalyzer.cmd
     ```
 
