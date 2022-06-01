@@ -396,10 +396,16 @@
        href: quarantine-faq.yml
    - name: Step-by-step guides
      items: 
-      - name: Ensuring you always have the optimal security controls with preset security policies
-        href: step-by-step-guides/ensuring-you-always-have-the-optimal-security-controls-with-preset-security-policies.md
+      - name: How to handle malicious emails that are delivered to recipients (False Negatives) using Microsoft Defender for Office 365
+        href: how-to-handle-false-negatives-in-microsoft-defender-for-office-365.md
+      - name: How to handle legitimate emails getting blocked (False Positive) using Microsoft Defender for Office 365
+        href: how-to-handle-false-positives-in-microsoft-defender-for-office-365.md
+      - name: How to configure quarantine permissions and policies
+        href: step-by-step-guides/how-to-configure-quarantine-permissions-with-quarantine-policies.md
       - name: How to configure quarantine permissions with quarantine policies
         href: step-by-step-guides/how-to-configure-quarantine-permissions-with-quarantine-policies.md
+      - name: Ensuring you always have the optimal security controls with preset security policies
+        href: step-by-step-guides/ensuring-you-always-have-the-optimal-security-controls-with-preset-security-policies.md
       - name: How to run attack simulations for your team
         href: step-by-step-guides/how-to-run-attack-simulations-for-your-team.md
       - name: How to setup automated attacks and training within Attack simulation training 
@@ -412,8 +418,6 @@
         href: step-by-step-guides/search-for-emails-and-remediate-threats.md
       - name: Connect Microsoft Defender for Office 365 to Microsoft Sentinel
         href: step-by-step-guides/connect-microsoft-defender-for-office-365-to-microsoft-sentinel.md
-      - name: How to configure quarantine permissions and policies
-        href: step-by-step-guides/how-to-configure-quarantine-permissions-with-quarantine-policies.md
       - name: How to prioritize and manage Automated Investigations and Response (AIR)
         href: step-by-step-guides/how-to-prioritize-and-manage-automated-investigations-and-response-air.md
    - name: Reference
