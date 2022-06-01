@@ -167,7 +167,7 @@ To enable SMS notifications, your Microsoft 365 admin does the following:
     Choose **Next**.
 
 > [!NOTE]
-> At any time, your Microsoft 365 admin can update any of the SMS settings. Keep in mind that changing settings might result in a stoppage of SMS service. For more information about how to view SMS reports, see [Teams EHR connector admin reports](ehr-admin-reports.md).
+> At any time, your Microsoft 365 admin can update any of the SMS settings. Keep in mind that changing settings might result in a stoppage of SMS service. For more information about how to view SMS reports, see [Teams EHR connector Virtual Appointments report](ehr-connector-report.md).
 
 ### Approve or view the configuration
 

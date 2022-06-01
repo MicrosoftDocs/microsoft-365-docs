@@ -54,7 +54,7 @@
     - name: Virtual appointments with Teams and Epic EHR 
       href: ehr-admin-epic.md
     - name: EHR connector Virtual Appointments report
-      href: ehr-admin-reports.md
+      href: ehr-connector-report.md
     - name: Virtual Visits usage reports
       href: virtual-visits-usage-report.md
     - name: Manage the join experience on browsers
