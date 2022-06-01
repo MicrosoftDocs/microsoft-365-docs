@@ -110,13 +110,15 @@ sections:
 
       - question: What happens if I have a mix of Microsoft 365 Defender subscriptions? 
         answer: |
-          Suppose you have assigned 10 users a Defender for Business license, and you have assigned 10 other users a Defender for Endpoint Plan 2 license. What happens if you have a mix of subscriptions like this example in the same tenant?
+          Suppose you have assigned 10 users a Defender for Business license, and you have assigned 10 other users a Defender for Endpoint Plan 2 license. What happens if you have a mix of subscriptions like this example in your tenant?
 
-          Mixed licenses are not supported. The highest functional Defender license sets the experience for the tenant. 
+          By default, mixed licenses are not supported. The highest functional Defender license sets the experience for your tenant. Using our example, your tenant experience would be [Defender for Endpoint Plan 2](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint) for all 20 users. 
           
-          Using our example, the tenant experience will be [Defender for Endpoint Plan 2](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint) for all 20 users. 
+          However, you can now contact support and request an override for your tenant experience. Referring to our example, you could request an override to keep the Defender for Business experience, even if you have some Defender for Endpoint Plan 2 licenses.
           
           Note that [Defender for Business](mdb-overview.md) and [Microsoft 365 Business Premium](/microsoft-365/business-premium/) are for customers who have up to 300 users. For customers who need more than 300 user licenses, we recommend getting an enterprise subscription that includes Microsoft Defender for Endpoint Plan 1 or Plan 2.
+
+          You can view your current subscriptions and licenses in the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)). [Understand subscriptions and licenses in Microsoft 365 for business](/microsoft-365/commerce/licenses/subscriptions-and-licenses).
 
           For details about licenses, see [Licensing and product terms for Microsoft 365 subscriptions](https://www.microsoft.com/licensing/terms/productoffering/Microsoft365/MCA).
 
