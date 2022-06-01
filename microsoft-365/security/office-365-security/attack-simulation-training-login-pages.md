@@ -68,9 +68,9 @@ You can create custom login pages in the following locations:
 
    Click ![Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new** to start the create end user login page wizard.
 
-   > ![NOTE]
+   > [!NOTE]
    > The ![Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new** is also available during payload and payload automation creation. For more information, see the following topics:
-   > 
+   >
    > - [Create custom payloads for Attack simulation training in Defender for Office 365](attack-simulation-training-payloads.md#create-payloads)
    > - [Create payload automations for Attack simulation training](attack-simulation-training-payload-automations.md#create-payload-automations)
    >

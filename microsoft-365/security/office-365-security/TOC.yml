@@ -204,7 +204,7 @@
          href: attack-simulation-training-get-started.md
        - name: Simulate a phishing attack with Attack simulation training
          href: attack-simulation-training.md
-       - name: Payloads for Attack simulation training
+       - name: Payloads in Attack simulation training
          href: attack-simulation-training-payloads.md
        - name: Simulation automations in Attack simulation training
          href: attack-simulation-training-simulation-automations.md
@@ -214,7 +214,7 @@
          href: attack-simulation-training-payloads.md
        - name: End-user notifications for Attack simulation training
          href: attack-simulation-training-end-user-notifications.md
-       - name: Create login pages for Attack simulation training
+       - name: Login pages in Attack simulation training
          href: attack-simulation-training-login-pages
        - name: Insights and reporting in Attack simulation training
          href: attack-simulation-training-insights.md

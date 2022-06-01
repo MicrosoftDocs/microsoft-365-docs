@@ -1,5 +1,5 @@
 ---
-title: Payloads for Attack simulation training
+title: Payloads in Attack simulation training
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -15,7 +15,7 @@ description: Admins can learn how to create and manage payloads for Attack simul
 ms.technology: mdo
 ---
 
-# Payloads for Attack simulation training in Defender for Office 365
+# Payloads in Attack simulation training in Defender for Office 365
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
