@@ -98,6 +98,8 @@ When you select a payload from the list, a details flyout appears with the follo
 
    > [!NOTE]
    > ![Create a payload icon.](../../media/m365-cc-sc-create-icon.png) **Create a payload** is also available on the **Select payload** page of the simulation creation wizard. For more information, see [Simulate a phishing attack in Defender for Office 365](attack-simulation-training.md).
+   >
+   > At any point during the creation wizard, you can click **Save and close** to save your progress and continue configuring the payload later. You can pick up where you left off by selecting the notification on the **Tenant payloads** tab in **Payloads**, and then clicking ![Edit payload icon.](../../media/m365-cc-sc-edit-icon.png) **Edit payload**. The partially-completed payload will have the **Status** value **Draft**.
 
 2. On the **Select type** page, the only value that you can currently select is **Email**.
 
@@ -311,7 +313,7 @@ To modify an existing payload on the **Tenant payloads** tab, do one of the foll
 - Select the payload from the list by clicking the check box. Click the ![Edit payload icon.](../../media/m365-cc-sc-edit-icon.png) **Edit payload** icon that appears.
 - Select the payload from the list by clicking anywhere in the row except the check box. In the details flyout that opens, click **Edit payload**.
 
-The payload wizard opens with the settings and values of the selected payload page. The steps are the same as described in the [Create payloads](#create-payloads) section.
+The payload wizard opens with the settings and values of the selected payload. The steps are the same as described in the [Create payloads](#create-payloads) section.
 
 ## Copy payloads
 
