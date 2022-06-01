@@ -16,6 +16,7 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - AdminTemplateSet
+- admindeeplinkEXCHANGE
 search.appverid:
 - BCS160
 - MET150
@@ -36,7 +37,7 @@ You must be a global admin or Exchange admin to upgrade a distribution list grou
 
 ### Use the new EAC to upgrade one or many distribution list groups to Microsoft 365 Groups in Outlook
 
-1. Go to the new [Exchange admin center](https://admin.exchange.microsoft.com), and navigate to **Recipients** \> **Groups**.
+1. Go to the new Exchange admin center > **Recipients** \> <a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank">Groups</a>.
 
 2. Select the distribution list group (also called a **distribution group**) that you want to upgrade to Microsoft 365 group from the **Groups** page.
 
@@ -45,23 +46,21 @@ You must be a global admin or Exchange admin to upgrade a distribution list grou
 4. In the dialog box **Ready to upgrade?**, click **Upgrade**. The process begins immediately. Depending on the size and number of distribution list groups you're upgrading, the process can take minutes or hours.
 
 > [!NOTE]
-> A banner at the top indicates the upgrade, for example, *Distribution group(s) has been upgraded. It will take 5 minutes to reflect the changes. Filter by Microsoft 365 groups to see the upgraded distrubtion groups(s)*.
+> A banner at the top indicates the upgrade, for example, *Distribution group(s) has been upgraded. It will take 5 minutes to reflect the changes. Filter by Microsoft 365 groups to see the upgraded distribution groups(s)*.
 
 ### Use the Classic EAC to upgrade one or many distribution list groups to Microsoft 365 Groups in Outlook
 
-1. Go to the Classic <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>.
+1. Go to the Exchange admin center > **Recipients** \> <a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank">**Groups**</a>.<br/>You'll see a notice indicating you have distribution lists (also called **distribution groups**) that are eligible to be upgraded to Microsoft 365 Groups.<br/> ![Select the Get started button.](../../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
 
-2. In the Classic Exchange admin center, go to **Recipients** \> **Groups**.<br/>You'll see a notice indicating you have distribution lists (also called **distribution groups**) that are eligible to be upgraded to Microsoft 365 Groups.<br/> ![Select the Get started button.](../../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
+1. Select one or more distribution lists (also called a **distribution group**) from the **groups** page.<br/>![Select a distribution group.](../../media/2c303433-d60b-4100-a6ae-5809b03a8cdb.png)
 
-3. Select one or more distribution lists (also called a **distribution group**) from the **groups** page.<br/>![Select a distribution group.](../../media/2c303433-d60b-4100-a6ae-5809b03a8cdb.png)
+1. Select the upgrade icon.<br/>![Upgrade to Microsoft 365 Groups icon.](../../media/1e28cb3d-bff3-4be3-8329-1902d2d54720.png)
 
-4. Select the upgrade icon.<br/>![Upgrade to Microsoft 365 Groups icon.](../../media/1e28cb3d-bff3-4be3-8329-1902d2d54720.png)
+1. On the information dialog, select **Yes** to confirm the upgrade. The process begins immediately. Depending on the size and number of DLs you're upgrading, the process can take minutes or hours.<br/>If the distribution list can't be upgraded, a dialog appears saying so. See [Which distribution lists cannot be upgraded?](#which-distribution-lists-cant-be-upgraded).
 
-5. On the information dialog, select **Yes** to confirm the upgrade. The process begins immediately. Depending on the size and number of DLs you're upgrading, the process can take minutes or hours.<br/>If the distribution list can't be upgraded, a dialog appears saying so. See [Which distribution lists cannot be upgraded?](#which-distribution-lists-cant-be-upgraded).
+1. If you're upgrading multiple distribution lists, use the drop-down list to filter which distribution lists have been upgraded. If the list isn't complete, wait a while longer and then select **Refresh** to see what's been successfully upgraded.<br/>There's no notice that tells you when the upgrade process has completed for all DLs you selected. You can figure this out by looking to see what's listed under **Available for upgrade** or **Upgraded DLs**.
 
-6. If you're upgrading multiple distribution lists, use the drop-down list to filter which distribution lists have been upgraded. If the list isn't complete, wait a while longer and then select **Refresh** to see what's been successfully upgraded.<br/>There's no notice that tells you when the upgrade process has completed for all DLs you selected. You can figure this out by looking to see what's listed under **Available for upgrade** or **Upgraded DLs**.
-
-7. If you selected a DL for upgrade, but it's still appeared on the page as Available to upgrade, then it failed to upgrade. See [What to do if the upgrade doesn't work](#what-to-do-if-the-upgrade-doesnt-work).
+1. If you selected a DL for upgrade, but it's still appeared on the page as Available to upgrade, then it failed to upgrade. See [What to do if the upgrade doesn't work](#what-to-do-if-the-upgrade-doesnt-work).
 
 > [!NOTE]
 > If you're getting the groups digest emails you may notice at the bottom that it will sometimes offer to let you upgrade any eligible distribution lists that you're the owner of. See [Have a group conversation in Outlook](https://support.microsoft.com/office/a0482e24-a769-4e39-a5ba-a7c56e828b22) for more information about digest emails.
@@ -70,9 +69,11 @@ You must be a global admin or Exchange admin to upgrade a distribution list grou
 
 Distribution lists that fail to upgrade remain unchanged.
 
-If one or more **eligible** distribution lists fail to be upgraded, open a [Support ticket](../../business-video/get-help-support.md). The issue will need to be escalated to the Groups Engineering team for them to figure out the problem.
+If one or more **eligible** distribution lists fail to be upgraded, 
 
-It's possible that the distribution list didn't get upgraded because of a service outage, but unlikely. If you want, wait a while and then try to upgrade the DL again.
+1. Use [this script](https://aka.ms/DLToM365Group) to scan for possible issues that can prevent distribution list to be upgraded to Microsoft 365 group, fix any issues reported by the script and try upgrading the distribution list one more time. 
+
+2. If the above script does not help or if the issue persists, open a [Support ticket](../../business-video/get-help-support.md). The issue will need to be escalated to the Groups Engineering team for them to figure out the problem.
 
 ## How to use PowerShell to upgrade several distribution lists at the same time
 
@@ -106,7 +107,9 @@ Upgrade-DistributionGroup -DlIdentities <DL SMTP address1>, <DL SMTP address2>,
 
 For example, if you want to upgrade five DLs with SMTP address `dl1@contoso.com` and `dl2@contoso.com`, `dl3@contoso.com`, `dl4@contoso.com` and `dl5@contoso.com`, run the following command:
 
-`Upgrade-DistributionGroup -DlIdentities dl1@contoso.com, dl2@contoso.com, dl3@contoso.com, dl4@contoso.com, dl5@contoso.com`
+```powershell
+Upgrade-DistributionGroup -DlIdentities dl1@contoso.com, dl2@contoso.com, dl3@contoso.com, dl4@contoso.com, dl5@contoso.com
+```
 
 ### Upgrade all eligible DLs
 
@@ -117,19 +120,19 @@ There are two ways in which you can upgrade all the eligible DLs.
 
 1. Get the eligible DLs in the tenant and upgrade them using the upgrade command:
 
-```PowerShell
-Get-EligibleDistributionGroupForMigration | Foreach-Object{
-    Upgrade-DistributionGroup -DlIdentities $_.PrimarySMTPAddress
-}
-```
+   ```PowerShell
+   Get-EligibleDistributionGroupForMigration | Foreach-Object{
+       Upgrade-DistributionGroup -DlIdentities $_.PrimarySMTPAddress
+   }
+   ```
 
 2. Get the list of all DLs and upgrade only the eligible DLs:
 
-```PowerShell
-Get-DistributionGroup| Foreach-Object{
-    Upgrade-DistributionGroup -DlIdentities $_.PrimarySMTPAddress
-}
-```
+   ```PowerShell
+   Get-DistributionGroup| Foreach-Object{
+       Upgrade-DistributionGroup -DlIdentities $_.PrimarySMTPAddress
+   }
+   ```
 
 ## FAQ about upgrading distribution lists to Microsoft 365 Groups in Outlook
 
@@ -137,29 +140,33 @@ Get-DistributionGroup| Foreach-Object{
 
 You can only upgrade cloud-managed, simple, non-nested distribution lists. The table below lists distribution lists that **CANNOT** be upgraded.
 
-|**Property**|**Eligible?**|
-|:-----|:-----|
-|On-premises managed distribution list.  <br/> |No  <br/> |
-|Nested distribution lists. Distribution list either has child groups or is a member of another group.  <br/> |No  <br/> |
-|Distribution lists with member **RecipientTypeDetails** other than **UserMailbox**, **SharedMailbox**, **TeamMailbox**, **MailUser**  <br/> |No  <br/> |
-|Distribution list that has more than 100 owners  <br/> |No  <br/> |
-|Distribution list that only has members but no owner  <br/> |No  <br/> |
-|Distribution list that has alias containing special characters  <br/> |No  <br/> |
-|If the distribution list is configured to be a forwarding address for Shared Mailbox  <br/> |No  <br/> |
-|If the DL is part of **Sender Restriction** in another DL.  <br/> |No  <br/> |
-|Security groups  <br/> |No  <br/> |
-|Dynamic Distribution lists  <br/> |No  <br/> |
-|Distribution lists that were converted to **RoomLists**  <br/> |No  <br/> |
+|Property|Eligible?|
+|---|---|
+|On-premises managed distribution list.|No|
+|Nested distribution lists. Distribution list either has child groups or is a member of another group.|No|
+|Distribution lists with member **RecipientTypeDetails** other than **UserMailbox**, **SharedMailbox**, **TeamMailbox**, **MailUser**|No|
+|Distribution list that has more than 100 owners|No|
+|Distribution list that only has members but no owner|No|
+|Distribution list that has alias containing special characters|No|
+|If the distribution list is configured to be a forwarding address for Shared Mailbox|No|
+|If the DL is part of **Sender Restriction** in another DL.|No|
+|Security groups|No|
+|Dynamic Distribution lists|No|
+|Distribution lists that were converted to **RoomLists**|No|
 
 ### Check which DLs are eligible for upgrade
 
 If you want to check whether a DL is eligible or not, you can run the below command:
 
-`Get-DistributionGroup <DL SMTP address> | Get-EligibleDistributionGroupForMigration`
+```PowerShell
+Get-DistributionGroup <DL SMTP address> | Get-EligibleDistributionGroupForMigration
+```
 
 If you want to check which DLs are eligible for upgrade just run the following command:
 
-`Get-EligibleDistributionGroupForMigration`
+```PowerShell
+Get-EligibleDistributionGroupForMigration
+```
 
 ### Who can run the upgrade scripts?
 
@@ -183,9 +190,22 @@ There are some cases in which though DL is eligible but could not be upgraded. T
 
 - DLs with **MemberJoinRestriction** or **MemberDepartRestriction** set to **Closed**, could not be upgraded
 
+- The Microsoft 365 Group creation is allowed only to few users, using the steps from [this article](/microsoft-365/solutions/manage-creation-of-groups). In this scenario, if the owner of distribution list is not allowed to create Microsoft 365 Group, the distribution list will not upgrade to Microsoft 365 Group.
+Workaround: Use one of the following workaround for the above scenario:
+
+1. Ensure all the users mentioned as owners of the DL are allowed to create M365 Group, i.e. are member of the security group that is allowed to M365 Group.
+
+   OR
+
+2. Temporarily, replace the owner of the DL that is not allowed to create M365 Group with user that is allowed to create M365 Group.
+
 ### What happens to the DL if the upgrade from EAC fails?
 
 The upgrade will happen only when the call is submitted to the server. If the upgrade fails, your DLs will be intact. They will work like they used to.
+
+### What happens to message approval (moderation) settings on distribution groups after upgrading?
+
+The message approval (moderation) settings are preserved and continue to work fine after the distribution group is upgraded to a Microsoft 365 Group.
 
 ## Related content
 

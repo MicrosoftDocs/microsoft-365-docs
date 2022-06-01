@@ -30,7 +30,7 @@ As the admin of a Microsoft 365 Business Standard subscription, you can invite y
 - Get help anytime with around-the-clock phone and web support from Microsoft.
 
 > [!Note]
-> The person who signs up for Microsoft 365 for business (usually the business owner) automatically becomes the technical administrator of the organization. You can add other people as admins if you want help managing your Microsoft 365 services. Check out [Add an admin](../../business-video/add-admin.md) for more info.
+> The person who signs up for Microsoft 365 for business (usually the business owner) automatically becomes the technical administrator of the organization. You can add other people as admins if you want help managing your Microsoft 365 services. Check out [Assign admin roles](../add-users/assign-admin-roles.md) for more info.
 
 ## Before you begin
 

@@ -12,12 +12,13 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - M365-security-compliance
-  - m365solution-migratetomdatp
-  - m365solution-overview
-  - m365solution-mcafeemigrate
-  - m365solution-symantecmigrate
-ms.topic: conceptual
+- M365-security-compliance
+- m365solution-migratetomdatp
+- m365solution-overview
+- m365solution-mcafeemigrate
+- m365solution-symantecmigrate
+- m365initiative-defender-endpoint
+ms.topic: overview
 ms.custom: migrationguides
 ms.date: 11/29/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
@@ -32,7 +33,7 @@ ms.technology: mde
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 If you are considering switching from a non-Microsoft endpoint protection solution to [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) (Defender for Endpoint), or you are in the planning phase, use this article as a guide. This article describes the overall process of moving to Defender for Endpoint.
 
-:::image type="content" source="images/nonms-mde-migration.png" alt-text="Switch your endpoint protection solution to Defender for Endpoint.":::
+:::image type="content" source="images/nonms-mde-migration.png" alt-text="The migration process to switch your endpoint protection solution to Defender for Endpoint" lightbox="images/nonms-mde-migration.png":::
 
 When you make the switch to Defender for Endpoint, you begin with your non-Microsoft antivirus/antimalware protection in active mode. Then, you configure Microsoft Defender Antivirus in passive mode, and onboard your devices to Defender for Endpoint. Next, you configure your endpoint protection features, set Microsoft Defender Antivirus to active mode, and verify that everything is working correctly. Finally, you remove the non-Microsoft solution.
 
@@ -40,7 +41,8 @@ When you make the switch to Defender for Endpoint, you begin with your non-Micro
 
 The process of migrating to Defender for Endpoint can be divided into three phases, as described in the following table:
 
-![MDE migration process.](images/phase-diagrams/migration-phases.png)
+:::image type="content" source="images/phase-diagrams/migration-phases.png" alt-text="The MDE migration process" lightbox="images/phase-diagrams/migration-phases.png":::
+
 
 <br/><br/>
 

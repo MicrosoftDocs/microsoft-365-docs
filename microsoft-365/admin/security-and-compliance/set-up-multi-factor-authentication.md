@@ -18,6 +18,7 @@ ms.custom:
 - AdminTemplateSet
 - admindeeplinkMAC
 - adminvideo
+- business_assist
 search.appverid:
 - BCS160
 - MET150
@@ -29,12 +30,15 @@ description: "Learn how to set up multi-factor authentication for your organizat
 monikerRange: 'o365-worldwide'
 ---
 
-# Set up multifactor authentication
+# Set up multifactor authentication for Microsoft 365
 
 Multifactor authentication means you and your employees must provide more than one way to sign in to Microsoft 365 is one of the easiest ways to secure your business. Based on your understanding of [multifactor authentication (MFA) and its support in Microsoft 365](multi-factor-authentication-microsoft-365.md), it's time to set it up and roll it out to your organization. 
 
 > [!IMPORTANT]
 > If you purchased your subscription or trial after October 21, 2019, and you're prompted for MFA when you sign in, [security defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) have been automatically enabled for your subscription.
+
+> [!TIP]
+> If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
 
 ## Watch: Turn on multifactor authentication
 
@@ -54,7 +58,7 @@ Multifactor authentication means you and your employees must provide more than o
 
 ### Turn off legacy per-user MFA
 
-If you have previously turned on per-user MFA, you must turn it off before enabling Security defaults.
+If you've previously turned on per-user MFA, you must turn it off before enabling Security defaults.
 
 1. In the Microsoft 365 admin center, in the left nav choose **Users** \> **Active users**.
 1. On the **Active users** page, choose **Multi-factor authentication**.
@@ -74,7 +78,7 @@ You enable or disable security defaults from the **Properties** pane for Azure A
 4. At the bottom of the page, choose **Manage Security defaults**.
 5. Choose **Yes** to enable security defaults or **No** to disable security defaults, and then choose **Save**.
 
-If you have been using [baseline Conditional Access policies](/azure/active-directory/conditional-access/concept-baseline-protection), you will be prompted to turn them off before you move to using security defaults.
+If you have been using [baseline Conditional Access policies](/azure/active-directory/conditional-access/concept-baseline-protection), you'll be prompted to turn them off before you move to using security defaults.
 
 1. Go to the [Conditional Access - Policies page](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies).
 2. Choose each baseline policy that is **On** and set **Enable policy** to **Off**.
@@ -97,7 +101,7 @@ For more information about the Azure AD P1 and P2, see [Azure Active Directory p
 
 ### Turn on Modern authentication for your organization
 
-For most subscriptions modern authentication is automatically turned on, but if you purchased your subscription before August 2017, it is likely that you will need to turn on Modern Authentication in order to get features like Multifactor Authentication to work in Windows clients like Outlook.
+For most subscriptions modern authentication is automatically turned on, but if you purchased your subscription before August 2017, it's likely that you'll need to turn on Modern Authentication in order to get features like Multifactor Authentication to work in Windows clients like Outlook.
 
 
 1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, in the left nav choose **Settings** \> **Org settings**.
@@ -113,7 +117,8 @@ For most subscriptions modern authentication is automatically turned on, but if 
 
 ## Related content
 
+[Set up multifactor authentication](set-up-multi-factor-authentication.md) (video)\
 
-[Turn on multi-factor authentication](../../business-video/turn-on-mfa.md) (video)
+[Turn on multi-factor authentication for your phone](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14) (article)\
 
-[Turn on multi-factor authentication for your phone](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14) (video)
+[Security defaults and multi-factor authentication](/microsoft-365/business-premium/m365bp-conditional-access) (article)

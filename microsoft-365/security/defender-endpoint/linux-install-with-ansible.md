@@ -70,7 +70,7 @@ Download the onboarding package from Microsoft 365 Defender portal:
 2. In the first drop-down menu, select **Linux Server** as the operating system. In the second drop-down menu, select **Your preferred Linux configuration management tool** as the deployment method.
 3. Select **Download onboarding package**. Save the file as WindowsDefenderATPOnboardingPackage.zip.
 
-    ![Microsoft 365 Defender portal screenshot.](images/portal-onboarding-linux-2.png)
+   :::image type="content" source="images/portal-onboarding-linux-2.png" alt-text="The Download onboarding package option" lightbox="images/portal-onboarding-linux-2.png":::
 
 4. From a command prompt, verify that you have the file. Extract the contents of the archive:
 
@@ -147,7 +147,7 @@ Create a subtask or role files that contribute to a playbook or task.
 
   - name: Add Microsoft apt repository for MDATP
     apt_repository:
-      repo: deb [arch=arm64,armhf,amd64] https://packages.microsoft.com/config/[distro]/[version]/prod [channel] main
+      repo: deb [arch=arm64,armhf,amd64] https://packages.microsoft.com/[distro]/[version]/prod [codename] main
       update_cache: yes
       state: present
       filename: microsoft-[channel]
@@ -215,7 +215,7 @@ Create a subtask or role files that contribute to a playbook or task.
               dnf:
                 name: mdatp
                 state: latest
-                enablerepo: packages-microsoft-com-prod-[channel]
+                enablerepo: packages-microsoft-[channel]
         ```
 
         ```bash

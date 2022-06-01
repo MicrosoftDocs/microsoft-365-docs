@@ -117,5 +117,5 @@ For information about using PowerShell, see [Organization-wide message disclaime
 
 [Migrate email and contacts to Microsoft 365](migrate-email-and-contacts-admin.md) (video)\
 [User email settings](../email/office-365-user-email-settings.md) (article)\
-[Overview of the Microsoft 365 admin center]([Overview of the Microsoft 365 admin center](../admin-overview/admin-center-overview.md) (video)
+[Overview of the Microsoft 365 admin center](Overview of the Microsoft 365 admin center](../admin-overview/admin-center-overview.md) (video)
 

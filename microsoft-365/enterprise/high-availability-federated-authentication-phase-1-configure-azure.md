@@ -2,7 +2,7 @@
 title: "High availability federated authentication Phase 1 Configure Azure"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 11/25/2019
 audience: ITPro
 ms.topic: article
@@ -311,4 +311,4 @@ Use [Phase 2: Configure domain controllers](high-availability-federated-authenti
   
 [Microsoft 365 solution and architecture center](../solutions/index.yml)
 
-[Understanding Microsoft 365 identity and Azure Active Directory](about-microsoft-365-identity.md)
+[Understanding Microsoft 365 identity models](deploy-identity-solution-identity-model.md)

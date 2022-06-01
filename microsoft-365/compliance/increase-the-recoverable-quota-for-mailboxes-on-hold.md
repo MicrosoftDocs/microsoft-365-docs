@@ -2,8 +2,8 @@
 title: "Increase the Recoverable Items quota for mailboxes on hold"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date:
 audience: Admin
@@ -20,6 +20,8 @@ description: "Enable the archive mailbox and turn on auto-expanding archiving to
 
 # Increase the Recoverable Items quota for mailboxes on hold
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 The default Exchange retention policy—named *Default MRM Policy*—that is automatically applied to new mailboxes in Exchange Online contains a retention tag named Recoverable Items 14 days move to archive. This retention tag moves items from the Recoverable Items folder in the user's primary mailbox to the Recoverable Items folder in the user's archive mailbox after the 14-day retention period expires for an item. For this to happen, the user's archive mailbox must be enabled. If the archive mailbox isn't enabled, no action is taken, which means that items in the Recoverable Items folder for a mailbox on hold aren't moved to the archive mailbox after the 14-day retention period expires. Because nothing is deleted from a mailbox on hold, it's possible that the storage quota for the Recoverable Items folder might be exceeded, especially if the user's archive mailbox isn't enabled.
 
 To help reduce the chance of exceeding this limit, the storage quota for the Recoverable Items folder is automatically increased from 30 GB to 100 GB when a hold is placed on a mailbox in Exchange Online. If the archive mailbox is enabled, the storage quota for the Recoverable Items folder in the archive mailbox is also increased from 30 GB to 100 GB. If the auto-expanding archiving feature in Exchange Online is enabled, the total storage quota for the user's archive mailbox, including the Recoverable Items folder, is 1.5 TB.
@@ -32,7 +34,7 @@ To help reduce the chance of exceeding this limit, the storage quota for the Rec
 |Archive mailbox, including Recoverable Items folder <sup>\*</sup> |1.5 TB |1.5 TB |
 
 > [!NOTE]
-> <sup>\*</sup> The initial storage quota for the archive mailbox is 100 GB for users with an Exchange Online (Plan 2) license. However, when auto-expanding archiving is turned on for mailboxes on hold, the storage quota for both the archive mailbox and the Recoverable Items folder is increased to 110 GB. Additional archive storage space (which includes the Recoverable Items folder) up to 1.5 TB will be provisioned when necessary. For more information about auto-expanding archiving, see [Overview of auto-expanding archiving](autoexpanding-archiving.md).
+> <sup>\*</sup> The initial storage quota for the archive mailbox is 100 GB for users with an Exchange Online (Plan 2) license. However, when auto-expanding archiving is turned on for mailboxes on hold, the storage quota for both the archive mailbox and the Recoverable Items folder is increased to 110 GB. Additional archive storage space (which includes the Recoverable Items folder) up to 1.5 TB will be provisioned when necessary. For more information about auto-expanding archiving, see [Learn about auto-expanding archiving](autoexpanding-archiving.md).
 
 When the storage quota for the Recoverable Items folder in the primary mailbox of a mailbox on hold is close to reaching its limit, you can do the following things:
 

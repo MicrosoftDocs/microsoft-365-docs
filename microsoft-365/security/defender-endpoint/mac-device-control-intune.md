@@ -13,7 +13,6 @@ manager: dansimp
 audience: ITPro
 ms.collection:
   - m365-security-compliance
-  - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
 ---
@@ -49,9 +48,9 @@ The following example restricts access to all removable media. Note the `none` p
         <key>PayloadIdentifier</key>
         <string>com.microsoft.wdav</string>
         <key>PayloadDisplayName</key>
-        <string>Microsoft Defender ATP settings</string>
+        <string>Microsoft Defender settings</string>
         <key>PayloadDescription</key>
-        <string>Microsoft Defender ATP configuration settings</string>
+        <string>Microsoft Defender configuration settings</string>
         <key>PayloadVersion</key>
         <integer>1</integer>
         <key>PayloadEnabled</key>
@@ -72,7 +71,7 @@ The following example restricts access to all removable media. Note the `none` p
                 <key>PayloadIdentifier</key>
                 <string>com.microsoft.wdav</string>
                 <key>PayloadDisplayName</key>
-                <string>Microsoft Defender ATP configuration settings</string>
+                <string>Microsoft Defender configuration settings</string>
                 <key>PayloadDescription</key>
                 <string/>
                 <key>PayloadVersion</key>
@@ -115,9 +114,9 @@ The following example configures all removable media to be read-only. Note the `
         <key>PayloadIdentifier</key>
         <string>com.microsoft.wdav</string>
         <key>PayloadDisplayName</key>
-        <string>Microsoft Defender ATP settings</string>
+        <string>Microsoft Defender settings</string>
         <key>PayloadDescription</key>
-        <string>Microsoft Defender ATP configuration settings</string>
+        <string>Microsoft Defender configuration settings</string>
         <key>PayloadVersion</key>
         <integer>1</integer>
         <key>PayloadEnabled</key>
@@ -138,7 +137,7 @@ The following example configures all removable media to be read-only. Note the `
                 <key>PayloadIdentifier</key>
                 <string>com.microsoft.wdav</string>
                 <key>PayloadDisplayName</key>
-                <string>Microsoft Defender ATP configuration settings</string>
+                <string>Microsoft Defender configuration settings</string>
                 <key>PayloadDescription</key>
                 <string/>
                 <key>PayloadVersion</key>
@@ -181,9 +180,9 @@ The following example shows how program execution from removable media can be di
         <key>PayloadIdentifier</key>
         <string>com.microsoft.wdav</string>
         <key>PayloadDisplayName</key>
-        <string>Microsoft Defender ATP settings</string>
+        <string>Microsoft Defender settings</string>
         <key>PayloadDescription</key>
-        <string>Microsoft Defender ATP configuration settings</string>
+        <string>Microsoft Defender configuration settings</string>
         <key>PayloadVersion</key>
         <integer>1</integer>
         <key>PayloadEnabled</key>
@@ -204,7 +203,7 @@ The following example shows how program execution from removable media can be di
                 <key>PayloadIdentifier</key>
                 <string>com.microsoft.wdav</string>
                 <key>PayloadDisplayName</key>
-                <string>Microsoft Defender ATP configuration settings</string>
+                <string>Microsoft Defender configuration settings</string>
                 <key>PayloadDescription</key>
                 <string/>
                 <key>PayloadVersion</key>
@@ -248,9 +247,9 @@ The following example restricts all devices from specific vendors (in this case 
         <key>PayloadIdentifier</key>
         <string>com.microsoft.wdav</string>
         <key>PayloadDisplayName</key>
-        <string>Microsoft Defender ATP settings</string>
+        <string>Microsoft Defender settings</string>
         <key>PayloadDescription</key>
-        <string>Microsoft Defender ATP configuration settings</string>
+        <string>Microsoft Defender configuration settings</string>
         <key>PayloadVersion</key>
         <integer>1</integer>
         <key>PayloadEnabled</key>
@@ -271,7 +270,7 @@ The following example restricts all devices from specific vendors (in this case 
                 <key>PayloadIdentifier</key>
                 <string>com.microsoft.wdav</string>
                 <key>PayloadDisplayName</key>
-                <string>Microsoft Defender ATP configuration settings</string>
+                <string>Microsoft Defender configuration settings</string>
                 <key>PayloadDescription</key>
                 <string/>
                 <key>PayloadVersion</key>
@@ -333,9 +332,9 @@ The following example restricts two specific devices, identified by vendor ID `f
         <key>PayloadIdentifier</key>
         <string>com.microsoft.wdav</string>
         <key>PayloadDisplayName</key>
-        <string>Microsoft Defender ATP settings</string>
+        <string>Microsoft Defender settings</string>
         <key>PayloadDescription</key>
-        <string>Microsoft Defender ATP configuration settings</string>
+        <string>Microsoft Defender configuration settings</string>
         <key>PayloadVersion</key>
         <integer>1</integer>
         <key>PayloadEnabled</key>
@@ -356,7 +355,7 @@ The following example restricts two specific devices, identified by vendor ID `f
                 <key>PayloadIdentifier</key>
                 <string>com.microsoft.wdav</string>
                 <key>PayloadDisplayName</key>
-                <string>Microsoft Defender ATP configuration settings</string>
+                <string>Microsoft Defender configuration settings</string>
                 <key>PayloadDescription</key>
                 <string/>
                 <key>PayloadVersion</key>

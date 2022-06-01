@@ -40,11 +40,13 @@
          href: /defender-for-identity
        - name: Defender for Cloud Apps
          href: /cloud-app-security
+       - name: Defender for Business
+         href: ./defender-business/index.yml
     - name: Microsoft 365 Enterprise
       href: ../enterprise/index.yml
-    - name: Microsoft 365 for Business
+    - name: Microsoft 365 for business
       href: ./index.yml
-    - name: Microsoft 365 Compliance
+    - name: Microsoft Purview
       href: ../compliance/index.yml
     - name: Manage active content in Office documents
       href: active-content-in-trusted-docs.md

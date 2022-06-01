@@ -2,8 +2,8 @@
 title: "Paying for your subscription"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -16,34 +16,48 @@ ms.collection:
 search.appverid: MET150 
 description: "Use a credit or debit card or bank account to pay for your Microsoft 365 for business subscription, or in some cases, you can pay by invoice."
 ms.custom: 
+- commerce_billing
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
 - AdminSurgePortfolio
-- commerce_billing
+- business_assist
 - AdminTemplateSet
-ms.date: 10/28/2021
+ms.date: 05/26/2022
 ---
 
 # How to pay for your subscription
 
 > [!IMPORTANT]
-> As of January 26, 2021, new bank accounts are no longer supported for customers in Belgium, France, Italy, Luxembourg, Portugal, Spain, and the United States. If you’re an existing customer in one of those countries, you can continue paying for your subscription with an existing bank account, and you can add new subscriptions to it, but only as long as the bank account is in good standing.
+> As of January 26, 2021, new bank accounts are no longer supported for customers in Belgium, France, Italy, Luxembourg, Portugal, Spain, and the United States. If you’re an existing customer in one of those countries, you can continue paying for your subscription with an existing bank account that is in good standing. However, you can't add new subscriptions to the bank account.
 
 You can use a credit or debit card, or bank account to pay for your subscription. In some cases, you can pay by invoice, using check or electronic funds transfer (EFT). If you have a billing profile, your options are slightly different. For more information, see [How to pay for your subscription with a billing profile](pay-for-subscription-billing-profile.md). If you’re not sure if your account has a billing profile, see [Understand billing profiles](manage-billing-profiles.md).
 
 **Just want to find out where to send your invoice payment?** If you pay your invoice by check or electronic funds transfer (EFT), see [Where do I send my check or EFT payment?](#where-do-i-send-my-check-or-eft-payment)
+
+> [!TIP]
+> If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
 
 ## Before you begin
 
 - You must be a Global or Billing admin to do the steps described in this article. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
 - The payment method that you choose during checkout is the payment method that we use for all future billing periods. You can change it at any time.
 
+## New regulations from the Reserve Bank of India
+
+As of 1 October 2021, automatic payments in India might block some credit card transactions, especially transactions exceeding 5,000 INR. Because of this regulation, you might have to make payments manually in the Microsoft 365 admin center. These regulations won't affect the total amount you’re charged for your usage.
+
+[Learn more about the Reserve Bank of India regulation for recurring payments](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=11668&Mode=0).
+
+On 1 July 2022, Microsoft and other online merchants will no longer store credit card information. To comply with this regulation, Microsoft will remove all stored card details from the Microsoft 365 admin center. To avoid service interruption, you must add a payment method and make a one-time payment for all subscriptions and billing profiles.
+
+[Learn about the Reserve Bank of India regulation for card storage](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=12211).
+
 ## Paying by credit or debit card, or bank account
 
 > [!IMPORTANT]
 > Paying by bank account is not available in some countries or regions.
 
-You can pay for your subscription with a credit or debit card, or a bank account. When you pay with one of these payment methods, we continue to charge that payment method until the subscription expires, or is canceled. You can [manage payment methods](manage-payment-methods.md) whenever you need to. You can also choose to [receive a copy of your billing statement in email](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email).
+You can pay for your subscription with a credit or debit card, or a bank account. When you pay with one of these payment methods, we continue to charge that payment method until the subscription expires, or is canceled. You can [manage payment methods](manage-payment-methods.md) whenever you need to. You can also choose to [receive your organization's invoices as email attachments](manage-billing-notifications.md#receive-your-organizations-invoices-as-email-attachments).
 
 ## Paying by invoice
 
@@ -60,7 +74,7 @@ If a credit check is required, you’re notified when you buy your subscription.
 >
 > If you prefer, you can pay by electronic transfer between accounts. The Agency and account number are at the bottom of your invoice. You must enter your invoice number in the Transfer identification field.
 
-If you pay by invoice for your subscription, you get an email when your billing statement is ready to view. This email doesn’t contain a copy of your billing statement. However, you can choose to [receive a copy of your billing statement in email](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email). Your billing statement includes details about your options for making a payment, and where to send it. If you enter a purchase order (PO) number when you buy a subscription, the number appears on your billing statement. For information about accessing billing statements, see [View your bill or invoice](view-your-bill-or-invoice.md).
+If you pay by invoice for your subscription, you get an email when your billing statement is ready to view. This email doesn’t contain a copy of your billing statement. However, you can choose to [receive your organization's invoices as email attachments](manage-billing-notifications.md#receive-your-organizations-invoices-as-email-attachments). Your billing statement includes details about your options for making a payment, and where to send it. If you enter a purchase order (PO) number when you buy a subscription, the number appears on your billing statement. For information about accessing billing statements, see [View your bill or invoice](view-your-bill-or-invoice.md).
 
 ## What if I have an outstanding balance?
 

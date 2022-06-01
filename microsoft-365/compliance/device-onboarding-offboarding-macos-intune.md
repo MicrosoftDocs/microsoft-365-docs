@@ -1,5 +1,5 @@
 ---
-title: Onboard and offboard macOS devices into Microsoft 365 Compliance solutions using Microsoft Intune (preview)
+title: Onboard and offboard macOS devices into Microsoft Purview solutions using Microsoft Intune
 f1.keywords:
     NOCSH
 ms.author: chrfox
@@ -9,29 +9,27 @@ ms.date:
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-security-compliance 
 search.appverid:
 - MET150 
-description: Learn how to onboard and offboard macOS devices into Microsoft 365 Compliance solutions using Microsoft Intune (preview)
+description: Learn how to onboard and offboard macOS devices into Microsoft Purview solutions using Microsoft Intune
 ---
 
-# Onboard and offboard macOS devices into Microsoft 365 Compliance solutions using Intune (preview)
+# Onboard and offboard macOS devices into Microsoft Purview solutions using Intune
 
-You can use Intune to onboard macOS devices into Microsoft 365 compliance solutions.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+You can use Intune to onboard macOS devices into Microsoft Purview solutions.
 
 > [!IMPORTANT]
 > Use this procedure if you ***do not*** have Microsoft Defender for Endpoint (MDE) deployed to your macOS devices
 
-## Get registered
-
-To get access to this feature, you must register your tenant with Microsoft. See, [get registered for Microsoft 365 macOS support](https://aka.ms/EndpointDLPIgnite21-Previews).
-
 **Applies to:**
 
-- [Microsoft 365 Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
-- [Insider risk management](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+- [Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
+- [Insider risk management](insider-risk-management.md)
 
 ## Before you begin
 
@@ -42,7 +40,7 @@ To get access to this feature, you must register your tenant with Microsoft. See
 - Install the v95+ Edge browser on your macOS devices 
 
 
-## Onboard macOS devices into Microsoft 365 Compliance solutions using Microsoft Intune
+## Onboard macOS devices into Microsoft Purview solutions using Microsoft Intune
 
 Onboarding a macOS device into Compliance solutions is a six phase process.
 
@@ -63,7 +61,7 @@ Onboarding a macOS device into Compliance solutions is a six phase process.
 |accessibility |[accessibility.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/accessibility.mobileconfig)|
 full disk access     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig)|
 |Network filer| [netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig)]
-|System extensions |[sysext.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/systext.mobileconfig)
+|System extensions |[sysext.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/sysext.mobileconfig)
 |MDE preference     |[com.microsoft.wdav.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/com.microsoft.wdav.mobileconfig)|
 |MAU preference|[com.microsoft.autoupdate2.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/microsoft_auto_update/com.microsoft.autoupdate2.mobileconfig)|
 |Installation package     |downloaded from the compliance portal **Installation package**, file name *\*wdav.pkg*\* |

@@ -1,5 +1,5 @@
 ---
-title: Onboard and offboard macOS devices into Compliance solutions using Microsoft Intune for Microsoft Defender for Endpoint customers (preview)
+title: Onboard and offboard macOS devices into Compliance solutions using Microsoft Intune for Microsoft Defender for Endpoint customers
 f1.keywords:
     NOCSH
 ms.author: chrfox
@@ -9,28 +9,26 @@ ms.date:
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-security-compliance 
 search.appverid:
 - MET150 
-description: Learn how to onboard and offboard macOS devices into Microsoft 365 Compliance solutions using Microsoft Intune for MDE customers (preview)
+description: Learn how to onboard and offboard macOS devices into Microsoft Purview solutions using Microsoft Intune for MDE customers
 ---
 
-# Onboard and offboard macOS devices into Compliance solutions using Intune for Microsoft Defender for Endpoint customers (preview)
+# Onboard and offboard macOS devices into Compliance solutions using Intune for Microsoft Defender for Endpoint customers
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!IMPORTANT]
 > Use this procedure ***if you have*** deployed Microsoft Defender for Endpoint (MDE) to your macOS devices
 
-## Get registered
-
-To get access to this feature, you must register your tenant with Microsoft. See, [get registered for Microsoft 365 macOS support](https://aka.ms/EndpointDLPIgnite21-Previews).
-
 **Applies to:**
 
 - Customers who have MDE deployed to their macOS devices.
-- [Microsoft 365 Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
-- [Insider risk management](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+- [Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
+- [Insider risk management](insider-risk-management.md)
 
 
 ## Before you begin
@@ -40,7 +38,7 @@ To get access to this feature, you must register your tenant with Microsoft. See
 - This supports macOS version Catalina 10.15 and higher
 - Install the v95+ Edge browser on your macOS devices 
 
-## Onboard macOS devices into Microsoft 365 Compliance solutions using Microsoft Intune
+## Onboard macOS devices into Microsoft Purview solutions using Microsoft Intune
 
 Use these steps to onboard a macOS device into Compliance solutions if it already has MDE deployed to it.
 

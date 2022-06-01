@@ -14,13 +14,15 @@ search.appverid:
   - MET150
 ms.collection:
   - M365-security-compliance
-ms.custom: admindeeplinkDEFENDER
+ms.custom:
 description: Admins can learn how to use the advanced delivery policy in Exchange Online Protection (EOP) to identify messages that should not be filtered in specific supported scenarios (third-party phishing simulations and messages delivered to security operations (SecOps) mailboxes.
 ms.technology: mdo
 ms.prod: m365-security
 ---
 
 # Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -35,7 +37,7 @@ To keep your organization [secure by default](secure-by-default.md), Exchange On
 You use the _advanced delivery policy_ in Microsoft 365 to prevent inbound messages _in these specific scenarios_ from being filtered.<sup>\*</sup> The advanced delivery policy ensures that messages in these scenarios achieve the following results:
 
 - Filters in EOP and Microsoft Defender for Office 365 take no action on these messages.<sup>\*</sup>
-- [Zero-hour Purge (ZAP)](zero-hour-auto-purge.md) for spam and phishing take no action on these messages.<sup>\*</sup>
+- [Zero-hour Purge (ZAP)](zero-hour-auto-purge.md) for spam and phishing take no action on these messages.<sup>\*\*</sup>
 - [Default system alerts](/microsoft-365/compliance/alert-policies#default-alert-policies) aren't triggered for these scenarios.
 - [AIR and clustering in Defender for Office 365](office-365-air.md) ignores these messages.
 - Specifically for third-party phishing simulations:
@@ -44,7 +46,9 @@ You use the _advanced delivery policy_ in Microsoft 365 to prevent inbound messa
   - [Safe Links in Defender for Office 365](safe-links.md) doesn't block or detonate the specifically identified URLs in these messages at time of click. URLs are still wrapped, but they aren't blocked.
   - [Safe Attachments in Defender for Office 365](safe-attachments.md) doesn't detonate attachments in these messages.
 
-<sup>\*</sup> You can't bypass malware filtering or ZAP for malware.
+<sup>\*</sup> You can't bypass malware filtering.
+
+<sup>\*\*</sup> You can bypass ZAP for malware by creating an anti-malware policy for the SecOps mailbox where ZAP for malware is turned off. For instructions, see [Configure anti-malware policies in EOP](configure-anti-malware-policies.md).
 
 Messages that are identified by the advanced delivery policy aren't security threats, so the messages are marked with system overrides. Admin experiences will show these messages as due to either a **Phishing simulation** system override or a **SecOps mailbox** system override. Admins can filter and analyze on these system overrides in the following experiences:
 
@@ -56,7 +60,7 @@ Messages that are identified by the advanced delivery policy aren't security thr
 
 ## What do you need to know before you begin?
 
-- You open the Microsoft 365 Defender portal at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a>. To go directly to the **Advanced delivery** page, open <https://security.microsoft.com/advanceddelivery>.
+- You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. To go directly to the **Advanced delivery** page, open <https://security.microsoft.com/advanceddelivery>.
 
 - To connect to Security & Compliance Center PowerShell, see [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
@@ -71,7 +75,7 @@ Messages that are identified by the advanced delivery policy aren't security thr
 
 ## Use the Microsoft 365 Defender portal to configure SecOps mailboxes in the advanced delivery policy
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Advanced delivery** in the **Rules** section.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Advanced delivery** in the **Rules** section. To go directly to the **Advanced delivery** page, use <https://security.microsoft.com/advanceddelivery>.
 
 2. On the **Advanced delivery** page, verify that the **SecOps mailbox** tab is selected, and then do one of the following steps:
    - Click ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit**.
@@ -91,7 +95,7 @@ The SecOps mailbox entries that you configured are displayed on the **SecOps mai
 
 ## Use the Microsoft 365 Defender portal to configure third-party phishing simulations in the advanced delivery policy
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Advanced delivery** in the **Rules** section.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Advanced delivery** in the **Rules** section. To go directly to the **Advanced delivery** page, use <https://security.microsoft.com/advanceddelivery>.
 
 2. On the **Advanced delivery** page, select the **Phishing simulation** tab, and then do one of the following steps:
    - Click ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit**.
@@ -442,7 +446,7 @@ You identify the entry to modify by its URL values (the _Entries_ parameter) or 
 This example modified the expiration date of the specified entry.
 
 ```powershell
-Set-TenantAllowBlockListItems -ListType Url -ListSubType AdvancedDelivery –Entries "*.fabrikam.com" -ExpirationDate 9/11/2021
+Set-TenantAllowBlockListItems -ListType Url -ListSubType AdvancedDelivery -Entries "*.fabrikam.com" -ExpirationDate 9/11/2021
 ```
 
 For detailed syntax and parameter information, see [Set-TenantAllowBlockListItems](/powershell/module/exchange/set-tenantallowblocklistitems).
@@ -486,7 +490,7 @@ You identify the entry to modify by its URL values (the _Entries_ parameter) or 
 This example modified the expiration date of the specified entry.
 
 ```powershell
-Remove-TenantAllowBlockListItems -ListType Url -ListSubType AdvancedDelivery –Entries "*.fabrikam.com" -ExpirationDate 9/11/2021
+Remove-TenantAllowBlockListItems -ListType Url -ListSubType AdvancedDelivery -Entries "*.fabrikam.com" -ExpirationDate 9/11/2021
 ```
 
 For detailed syntax and parameter information, see [Remove-TenantAllowBlockListItems](/powershell/module/exchange/remove-tenantallowblocklistitems).

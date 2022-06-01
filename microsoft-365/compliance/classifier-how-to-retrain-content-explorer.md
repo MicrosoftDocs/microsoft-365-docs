@@ -19,9 +19,11 @@ description: "Learn how to provide feedback to a trainable classifier in Content
 
 # How to retrain a classifier in content explorer
 
-A Microsoft 365 trainable classifier is a tool you can train to recognize various types of content by giving it samples to look at. Once trained, you can use it to identify item for application of Office sensitivity labels, communications compliance policies, and retention label policies.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-This article shows you how to improve the performance of custom trainable classifiers and some pre-trained classifiers by providing them additional feedback.
+A Microsoft 365 trainable classifier is a tool you can train to recognize various types of content by giving it samples to look at. Once trained, you can use it to identify items for application of Office sensitivity labels, communications compliance policies, and retention label policies.
+
+This article shows you how to improve the performance of custom trainable classifiers by providing them additional feedback.
 
 To learn more about the different types of classifiers, see [Learn about trainable classifiers](classifier-learn-about.md).
 
@@ -31,10 +33,12 @@ Watch this video for a quick summary of the tuning and retraining process. You'l
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyGMs]
 
+> [!NOTE]
+> Pre-trained classifiers cannot be retrained.
 
 ## Permissions
 
-To access classifiers in the Microsoft 365 Compliance center:
+To access classifiers in the Microsoft Purview compliance portal:
 
 - the Compliance admin role or Compliance Data Administrator is required to train a classifier
 
@@ -56,7 +60,7 @@ To understand more about the overall workflow of retraining a classifier, see [P
 
 ## How to retrain a classifier in content explorer
 
-1. Sign in to Microsoft 365 compliance center with compliance admin or security admin role access and open **Microsoft 365 compliance center** > **Data classification** > **Content explorer**. 
+1. Sign in to Microsoft Purview compliance portal with compliance admin or security admin role access and open **Microsoft Purview compliance portal** > **Data classification** > **Content explorer**. 
 2. Under the **Filter on labels, info types, or categories** list, expand **Trainable classifiers**.
 
 > [!IMPORTANT]

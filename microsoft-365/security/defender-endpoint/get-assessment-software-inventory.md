@@ -24,6 +24,7 @@ ms.custom: api
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender Vulnerability Management](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -46,7 +47,7 @@ Data that is collected (using either _Json response_ or _via files_) is the curr
 
 ### 1.1 API method description
 
-This API response contains all the data of installed software per device. Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion.
+This API response contains all the data of installed software per device. Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion.
 
 #### Limitations
 
@@ -115,93 +116,93 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryByMac
 
 ```json
 {
-    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Collection(contoso.windowsDefenderATP.api.AssetSoftware)",
-    "value": [
-        {
-            "deviceId": "00044f68765bbaf712342dbe6db733b6a9c59ab4",
-            "rbacGroupName": "hhh",
-            "deviceName": "ComputerPII_18993b45912eeb224b2be2f5ea3142726e63f16a.DomainPII_21eeb80d086e79dbfa178eadfa25e8de9acfa346.corp.contoso.com",
-            "osPlatform": "Windows10" "Windows11",
-            "softwareVendor": "microsoft",
-            "softwareName": "windows_10" "Windows_11",
-            "softwareVersion": "10.0.17763.1637",
-            "numberOfWeaknesses": 58,
-            "diskPaths": [],
-            "registryPaths": [],
-            "softwareFirstSeenTimestamp": "2020-12-30 11:07:15",
-            "endOfSupportStatus": "Upcoming EOS Version",
-            "endOfSupportDate": "2021-05-11T00:00:00+00:00"
-        },
-        {
-            "deviceId": "00044f68765bbaf712342dbe6db733b6a9c59ab4",
-            "rbacGroupName": "hhh",
-            "deviceName": "ComputerPII_18993b45912eeb224b2be2f5ea3142726e63f16a.DomainPII_21eeb80d086e79dbfa178eadfa25e8de9acfa346.corp.contoso.com",
-            "osPlatform": "Windows10" "Windows11",
-            "softwareVendor": "microsoft",
-            "softwareName": ".net_framework",
-            "softwareVersion": "4.0.0.0",
-            "numberOfWeaknesses": 0,
-            "diskPaths": [],
-            "registryPaths": [
-                "SOFTWARE\\Microsoft\\NET Framework Setup\\NDP\\v4.0\\Client\\Install"
-            ],
-            "softwareFirstSeenTimestamp": "2020-12-30 11:07:15",
-            "endOfSupportStatus": "None",
-            "endOfSupportDate": null
-        },
-        {
-            "deviceId": "00044f68765bbaf712342dbe6db733b6a9c59ab4",
-            "rbacGroupName": "hhh",
-            "deviceName": "ComputerPII_18993b45912eeb224b2be2f5ea3142726e63f16a.DomainPII_21eed80d086e79bdfa178eadfa25e8de9acfa346.corp.contoso.com",
-            "osPlatform": "Windows10" "Windows11",
-            "softwareVendor": "microsoft",
-            "softwareName": "system_center_2012_endpoint_protection",
-            "softwareVersion": "4.7.214.0",
-            "numberOfWeaknesses": 0,
-            "diskPaths": [],
-            "registryPaths": [
-                "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Microsoft Security Client"
-            ],
-            "softwareFirstSeenTimestamp": "2020-12-30 11:07:15",
-            "endOfSupportStatus": "None",
-            "endOfSupportDate": null
-        },
-        {
-            "deviceId": "00044f68765ddaf71234bde6bd733d6a9c59ad4",
-            "rbacGroupName": "hhh",
-            "deviceName": "ComputerPII_18993b45912eeb224b2be2f5ea3142726e63f16a.DomainPII_21eeb80d086e79dbfa178aedfa25e8be9acfa346.corp.contoso.com",
-            "osPlatform": "Windows10" "Windows11",
-            "softwareVendor": "microsoft",
-            "softwareName": "configuration_manager",
-            "softwareVersion": "5.0.8634.1000",
-            "numberOfWeaknesses": 0,
-            "diskPaths": [],
-            "registryPaths": [
-                "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{B7D3A842-E826-4542-B39B-1D883264B279}"
-            ],
-            "softwareFirstSeenTimestamp": "2020-12-30 11:07:15",
-            "endOfSupportStatus": "None",
-            "endOfSupportDate": null
-        },
-        {
-            "deviceId": "00044f38765bbaf712342dbe6db733b6a9c59ab4",
-            "rbacGroupName": "hhh",
-            "deviceName": "ComputerPII_18993b45912eeb224b2de2f5ea3142726e63f16a.DomainPII_21eeb80d086e79bdfa178eadfa25e8be9acfa346.corp.contoso.com",
-            "osPlatform": "Windows10" "Windows11",
-            "softwareVendor": "microsoft",
-            "softwareName": "system_center_2012_endpoint_protection",
-            "softwareVersion": "4.10.209.0",
-            "numberOfWeaknesses": 0,
-            "diskPaths": [],
-            "registryPaths": [
-                "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Microsoft Security Client"
-            ],
-            "softwareFirstSeenTimestamp": "2020-12-30 11:07:15",
-            "endOfSupportStatus": "None",
-            "endOfSupportDate": null
-        }
-    ],
-    "@odata.nextLink": "https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryByMachine?pagesize=5&$skiptoken=eyJFeHBvcnREZWZpbml0aW9uIjp7IlRpbWVQYXRoIjoiMjAyMS0wMS0yNS8wMjAwLyJ9LCJFeHBvcnRGaWxlSW5kZXgiOjAsIkxpbmVTdG9wcGVkQXQiOjV9"
+    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Collection(contoso.windowsDefenderATP.api.AssetSoftware)",
+    "value": [
+        {
+            "deviceId": "00044f68765bbaf712342dbe6db733b6a9c59ab4",
+            "rbacGroupName": "hhh",
+            "deviceName": "ComputerPII_18993b45912eeb224b2be2f5ea3142726e63f16a.DomainPII_21eeb80d086e79dbfa178eadfa25e8de9acfa346.corp.contoso.com",
+            "osPlatform": "Windows10" "Windows11",
+            "softwareVendor": "microsoft",
+            "softwareName": "windows_10" "Windows_11",
+            "softwareVersion": "10.0.17763.1637",
+            "numberOfWeaknesses": 58,
+            "diskPaths": [],
+            "registryPaths": [],
+            "softwareFirstSeenTimestamp": "2020-12-30 11:07:15",
+            "endOfSupportStatus": "Upcoming EOS Version",
+            "endOfSupportDate": "2021-05-11T00:00:00+00:00"
+        },
+        {
+            "deviceId": "00044f68765bbaf712342dbe6db733b6a9c59ab4",
+            "rbacGroupName": "hhh",
+            "deviceName": "ComputerPII_18993b45912eeb224b2be2f5ea3142726e63f16a.DomainPII_21eeb80d086e79dbfa178eadfa25e8de9acfa346.corp.contoso.com",
+            "osPlatform": "Windows10" "Windows11",
+            "softwareVendor": "microsoft",
+            "softwareName": ".net_framework",
+            "softwareVersion": "4.0.0.0",
+            "numberOfWeaknesses": 0,
+            "diskPaths": [],
+            "registryPaths": [
+                "SOFTWARE\\Microsoft\\NET Framework Setup\\NDP\\v4.0\\Client\\Install"
+            ],
+            "softwareFirstSeenTimestamp": "2020-12-30 11:07:15",
+            "endOfSupportStatus": "None",
+            "endOfSupportDate": null
+        },
+        {
+            "deviceId": "00044f68765bbaf712342dbe6db733b6a9c59ab4",
+            "rbacGroupName": "hhh",
+            "deviceName": "ComputerPII_18993b45912eeb224b2be2f5ea3142726e63f16a.DomainPII_21eed80d086e79bdfa178eadfa25e8de9acfa346.corp.contoso.com",
+            "osPlatform": "Windows10" "Windows11",
+            "softwareVendor": "microsoft",
+            "softwareName": "system_center_2012_endpoint_protection",
+            "softwareVersion": "4.7.214.0",
+            "numberOfWeaknesses": 0,
+            "diskPaths": [],
+            "registryPaths": [
+                "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Microsoft Security Client"
+            ],
+            "softwareFirstSeenTimestamp": "2020-12-30 11:07:15",
+            "endOfSupportStatus": "None",
+            "endOfSupportDate": null
+        },
+        {
+            "deviceId": "00044f68765ddaf71234bde6bd733d6a9c59ad4",
+            "rbacGroupName": "hhh",
+            "deviceName": "ComputerPII_18993b45912eeb224b2be2f5ea3142726e63f16a.DomainPII_21eeb80d086e79dbfa178aedfa25e8be9acfa346.corp.contoso.com",
+            "osPlatform": "Windows10" "Windows11",
+            "softwareVendor": "microsoft",
+            "softwareName": "configuration_manager",
+            "softwareVersion": "5.0.8634.1000",
+            "numberOfWeaknesses": 0,
+            "diskPaths": [],
+            "registryPaths": [
+                "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{B7D3A842-E826-4542-B39B-1D883264B279}"
+            ],
+            "softwareFirstSeenTimestamp": "2020-12-30 11:07:15",
+            "endOfSupportStatus": "None",
+            "endOfSupportDate": null
+        },
+        {
+            "deviceId": "00044f38765bbaf712342dbe6db733b6a9c59ab4",
+            "rbacGroupName": "hhh",
+            "deviceName": "ComputerPII_18993b45912eeb224b2de2f5ea3142726e63f16a.DomainPII_21eeb80d086e79bdfa178eadfa25e8be9acfa346.corp.contoso.com",
+            "osPlatform": "Windows10" "Windows11",
+            "softwareVendor": "microsoft",
+            "softwareName": "system_center_2012_endpoint_protection",
+            "softwareVersion": "4.10.209.0",
+            "numberOfWeaknesses": 0,
+            "diskPaths": [],
+            "registryPaths": [
+                "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Microsoft Security Client"
+            ],
+            "softwareFirstSeenTimestamp": "2020-12-30 11:07:15",
+            "endOfSupportStatus": "None",
+            "endOfSupportDate": null
+        }
+    ],
+    "@odata.nextLink": "https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryByMachine?pagesize=5&$skiptoken=eyJFeHBvcnREZWZpbml0aW9uIjp7IlRpbWVQYXRoIjoiMjAyMS0wMS0yNS8wMjAwLyJ9LCJFeHBvcnRGaWxlSW5kZXgiOjAsIkxpbmVTdG9wcGVkQXQiOjV9"
 }
 ```
 
@@ -209,7 +210,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryByMac
 
 ### 2.1 API method description
 
-This API response contains all the data of installed software per device. Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion.
+This API response contains all the data of installed software per device. Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion.
 
 #### 2.1.1 Limitations
 
@@ -264,13 +265,13 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryExpor
 
 ```json
 {
-    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#microsoft.windowsDefenderATP.api.ExportFilesResponse",
-    "exportFiles": [
-        "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export/2021-01-11/1101/SoftwareInventory/json/OrgId=12345678-195f-4223-9c7a-99fb420fd000/part-00393-e423630d-4c69-4490-8769-a4f5468c4f25.c000.json.gz?sv=2019-12-12&st=2021-01-11T11%3A55%3A51Z&se=2021-01-11T14%3A55%3A51Z&sr=b&sp=r&sig=...",
-        "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export/2021-01-11/1101/SoftwareInventory/json/OrgId=12345678-195f-4223-9c7a-99fb420fd000/part-00394-e423630d-4c69-4490-8769-a4f5468c4f25.c000.json.gz?sv=2019-12-12&st=2021-01-11T11%3A55%3A51Z&se=2021-01-11T14%3A55%3A51Z&sr=b&sp=r&sig=...",
-        "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export/2021-01-11/1101/SoftwareInventory/json/OrgId=12345678-195f-4223-9c7a-99fb420fd000/part-00394-e423630d-4c69-4490-8769-a4f5468c4f25.c001.json.gz?sv=2019-12-12&st=2021-01-11T11%3A55%3A51Z&se=2021-01-11T14%3A55%3A51Z&sr=b&sp=r&sig=..."
-    ],
-    "generatedTime": "2021-01-11T11:01:00Z"
+    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#microsoft.windowsDefenderATP.api.ExportFilesResponse",
+    "exportFiles": [
+        "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export/2021-01-11/1101/SoftwareInventory/json/OrgId=12345678-195f-4223-9c7a-99fb420fd000/part-00393-e423630d-4c69-4490-8769-a4f5468c4f25.c000.json.gz?sv=2019-12-12&st=2021-01-11T11%3A55%3A51Z&se=2021-01-11T14%3A55%3A51Z&sr=b&sp=r&sig=...",
+        "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export/2021-01-11/1101/SoftwareInventory/json/OrgId=12345678-195f-4223-9c7a-99fb420fd000/part-00394-e423630d-4c69-4490-8769-a4f5468c4f25.c000.json.gz?sv=2019-12-12&st=2021-01-11T11%3A55%3A51Z&se=2021-01-11T14%3A55%3A51Z&sr=b&sp=r&sig=...",
+        "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export/2021-01-11/1101/SoftwareInventory/json/OrgId=12345678-195f-4223-9c7a-99fb420fd000/part-00394-e423630d-4c69-4490-8769-a4f5468c4f25.c001.json.gz?sv=2019-12-12&st=2021-01-11T11%3A55%3A51Z&se=2021-01-11T14%3A55%3A51Z&sr=b&sp=r&sig=..."
+    ],
+    "generatedTime": "2021-01-11T11:01:00Z"
 }
 ```
 

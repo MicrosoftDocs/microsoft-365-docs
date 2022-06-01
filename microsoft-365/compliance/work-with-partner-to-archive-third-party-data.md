@@ -2,8 +2,8 @@
 title: "Work with a partner to archive third-party data"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date:
 audience: Admin
@@ -15,12 +15,15 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkEXCHANGE
 description: Learn how to set up a custom connector to import third-party data from  data sources such as Salesforce Chatter, Yahoo Messenger, or Yammer.
 ---
 
 # Work with a partner to archive third-party data
 
-You can work with a Microsoft Partner to import and archive data from a third-party data source to Microsoft 365. A partner can provide you with a custom connector that is configured to extract items from the third-party data source (on a regular basis) and then import those items. The partner connector converts the content of an item from the data source to an email message format and then stores the items in mailboxes. After third-party data is imported, you can apply Microsoft 365 compliance features such as Litigation Hold, eDiscovery, In-Place Archiving, Auditing, and Microsoft 365 retention policies to this data.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+You can work with a Microsoft Partner to import and archive data from a third-party data source to Microsoft 365. A partner can provide you with a custom connector that is configured to extract items from the third-party data source (on a regular basis) and then import those items. The partner connector converts the content of an item from the data source to an email message format and then stores the items in mailboxes. After third-party data is imported, you can apply Microsoft Purview features such as Litigation Hold, eDiscovery, In-Place Archiving, Auditing, and Microsoft 365 retention policies to this data.
 
 > [!IMPORTANT]
 > The [Communication compliance](communication-compliance.md) solution in Microsoft 365 can't be applied to the third-party data imported by partner connectors mentioned in this article.
@@ -501,7 +504,7 @@ Here are the steps for creating and configuring a third-party data mailbox for i
 
 ## Step 3: Configure user mailboxes for third-party data
 
-The next step is to configure user mailboxes to support third-party data. Complete these tasks by using the Exchange admin center or by using the corresponding Windows PowerShell cmdlets.
+The next step is to configure user mailboxes to support third-party data. Complete these tasks by using the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a> or by using the corresponding Windows PowerShell cmdlets.
 
 1. Enable the archive mailbox for each user; see [Enable archive mailboxes](enable-archive-mailboxes.md) and [Enable auto-expanding archiving](enable-autoexpanding-archiving.md).
 

@@ -38,18 +38,18 @@ For information on other tables in the advanced hunting schema, see [the advance
 
 | Column name | Data type | Description |
 |-------------|-----------|-------------|
-| `DeviceId` | string | Unique identifier for the device in the service |
-| `DeviceName` | string | Fully qualified domain name (FQDN) of the device |
-| `OSPlatform` | string | Platform of the operating system running on the device. Indicates specific operating systems, including variations within the same family, such as Windows 11, Windows 10, and Windows 7.|
-| `Timestamp` | datetime | Date and time when the record was generated |
-| `ConfigurationId` | string | Unique identifier for a specific configuration |
-| `ConfigurationCategory` | string | Category or grouping to which the configuration belongs: Application, OS, Network, Accounts, Security controls |
-| `ConfigurationSubcategory` | string | Subcategory or subgrouping to which the configuration belongs. In many cases,  string describes specific capabilities or features. |
-| `ConfigurationImpact` | string | Rated impact of the configuration to the overall configuration score (1-10) |
-| `IsCompliant` | boolean | Indicates whether the configuration or policy is properly configured |
-| `IsApplicable` | Boolean | Indicates whether the configuration or policy applies to the device |
-| `Context` | string | Additional contextual information about the configuration or policy |
-| `IsExpectedUserImpact` | boolean | Indicates whether there will be user impact if the configuration or policy is applied |
+| `DeviceId` | `string` | Unique identifier for the device in the service |
+| `DeviceName` | `string` | Fully qualified domain name (FQDN) of the device |
+| `OSPlatform` | `string` | Platform of the operating system running on the device. Indicates specific operating systems, including variations within the same family, such as Windows 11, Windows 10, and Windows 7.|
+| `Timestamp` | `datetime` | Date and time when the record was generated |
+| `ConfigurationId` | `string` | Unique identifier for a specific configuration |
+| `ConfigurationCategory` | `string` | Category or grouping to which the configuration belongs: Application, OS, Network, Accounts, Security controls |
+| `ConfigurationSubcategory` | `string` | Subcategory or subgrouping to which the configuration belongs. In many cases,  string describes specific capabilities or features. |
+| `ConfigurationImpact` | `string` | Rated impact of the configuration to the overall configuration score (1-10) |
+| `IsCompliant` | `boolean` | Indicates whether the configuration or policy is properly configured |
+| `IsApplicable` | `boolean` | Indicates whether the configuration or policy applies to the device |
+| `Context` | `string` | Additional contextual information about the configuration or policy |
+| `IsExpectedUserImpact` | `boolean` | Indicates whether there will be user impact if the configuration or policy is applied |
 
 You can try this example query to return information on devices with non-compliant antivirus configurations along with the relevant configuration metadata from the `DeviceTvmSecureConfigurationAssessmentKB` table:
 

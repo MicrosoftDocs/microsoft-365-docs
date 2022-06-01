@@ -15,7 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection:
   - m365-security-compliance
-  - m365initiative-defender-endpoint
+  - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
 ---
@@ -41,21 +41,21 @@ If you're a Defender for Endpoint customer, you need to apply for **Microsoft Th
 
 ## Apply for Microsoft Threat Experts - Targeted Attack Notifications service
 
-If you're already a Defender for Endpoint customer, you can apply through the Microsoft Defender Security Center.
+If you're already a Defender for Endpoint customer, you can apply through the Microsoft 365 Defender portal.
 
 1. From the navigation pane, go to **Settings > General > Advanced features > Microsoft Threat Experts - Targeted Attack Notifications**.
 
 2. Click **Apply**.
 
-    ![Image of Microsoft Threat Experts settings.](images/mte-collaboratewithmte.png)
+   :::image type="content" source="images/mte-collaboratewithmte.png" alt-text="The Microsoft Threat Experts settings" lightbox="images/mte-collaboratewithmte.png":::
 
 3. Enter your name and email address so that Microsoft can get back to you on your application.
 
-    ![Image of Microsoft Threat Experts application.](images/mte-apply.png)
+   :::image type="content" source="images/mte-apply.png" alt-text="The Name field on the Microsoft Threat Experts application page" lightbox="images/mte-apply.png":::
 
 4. Read the [privacy statement](https://privacy.microsoft.com/privacystatement), then click **Submit** when you're done. You will receive a welcome email once your application is approved.
 
-    ![Image of Microsoft Threat Experts application confirmation.](images/mte-applicationconfirmation.png)
+   :::image type="content" source="images/mte-applicationconfirmation.png" alt-text="The Microsoft Threat Experts application confirmation message" lightbox="images/mte-applicationconfirmation.png":::
 
 When accepted, you will receive a welcome email and you will see the **Apply** button change to a toggle that is "on". In case you want to take yourself out of the Targeted Attack Notifications service, slide the toggle "off" and click **Save preferences** at the bottom of the page.
 
@@ -89,7 +89,7 @@ This is available as a subscription service. If you're already a Defender for En
 
 ## Consult a Microsoft threat expert about suspicious cybersecurity activities in your organization
 
-You can partner with Microsoft Threat Experts who can be engaged directly from within the Microsoft Defender Security Center for timely and accurate response. Experts provide insights to better understand complex threats, targeted attack notifications that you get, or if you need more information about the alerts, a potentially compromised device, or a threat intelligence context that you see on your portal dashboard.
+You can partner with Microsoft Threat Experts who can be engaged directly from within the Microsoft 365 Defender portal for timely and accurate response. Experts provide insights to better understand complex threats, targeted attack notifications that you get, or if you need more information about the alerts, a potentially compromised device, or a threat intelligence context that you see on your portal dashboard.
 
 > [!NOTE]
 >
@@ -100,15 +100,15 @@ You can partner with Microsoft Threat Experts who can be engaged directly from w
 
 2. From the upper right-hand menu, click the **?** icon. Then, select **Consult a threat expert**.
 
-    ![Image of Microsoft Threat Experts Experts on Demand from the menu.](images/mte-eod-menu.png)
+    :::image type="content" source="images/mte-eod-menu.png" alt-text="The Microsoft Threat Experts Experts on Demand menu item" lightbox="images/mte-eod-menu.png":::
 
     A flyout screen opens. The following screen shows when you are on a trial subscription.
 
-    ![Image of Microsoft Threat Experts Experts on Demand screen.](images/mte-eod.png)
+    :::image type="content" source="images/mte-eod.png" alt-text="The Microsoft Threat Experts Experts on Demand page" lightbox="images/mte-eod.png":::
 
     The following screen shows when you are on a full Microsoft Threat Experts - Experts on-Demand subscription.
 
-    ![Image of Microsoft Threat Experts Experts on Demand full subscription screen.](images/mte-eod-fullsubscription.png)
+    :::image type="content" source="images/mte-eod-fullsubscription.png" alt-text="The Microsoft Threat Experts Experts on Demand full subscription page" lightbox="images/mte-eod-fullsubscription.png":::
 
     The **Inquiry topic** field is pre-populated with the link to the relevant page for your investigation request. For example, a link to the incident, alert, or device details page that you were at when you made the request.
 
@@ -117,7 +117,7 @@ You can partner with Microsoft Threat Experts who can be engaged directly from w
 4. Enter the email address that you'd like to use to correspond with Microsoft Threat Experts.
 
 > [!NOTE]
-> If you would like to track the status of your Experts on Demand cases through Microsoft Services Hub, reach out to your Technical Account Manager.
+> If you would like to track the status of your Experts on Demand cases through Microsoft Services Hub, reach out to your Customer Success Account Manager.
 
 Watch this video for a quick overview of the Microsoft Services Hub.
 

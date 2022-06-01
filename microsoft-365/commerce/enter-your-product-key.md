@@ -2,8 +2,8 @@
 title: "Enter your product key for Microsoft 365 Business Standard"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -16,9 +16,9 @@ ms.collection:
 search.appverid: MET150
 ROBOTS: NOINDEX
 ms.custom: 
+- commerce_purchase
 - okr_SMB
 - AdminSurgePortfolio
-- commerce_purchase
 - AdminTemplateSet
 description: "If you purchased Microsoft 365 Business Standard from a retail store, learn how to redeem the product key and activate your subscription." 
 ms.date: 11/13/2020
@@ -29,7 +29,7 @@ ms.date: 11/13/2020
 If you purchased Microsoft 365 Business Standard from a retail store, this article helps you activate your subscription.
   
  **Need something else?**
- **For help with Microsoft 365 Family or Microsoft 365 Personal**, see [Using product keys with Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx).  
+ **For help with Microsoft 365 Family or Microsoft 365 Personal**, see [Using product keys with Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759).  
  **Volume licensing customer?** If you bought Microsoft 365 for business through a [Microsoft Open License Program](https://go.microsoft.com/fwlink/p/?LinkID=613298), see the article, [Enter your product key purchased from Microsoft Open](purchases-from-microsoft-open.md).
   
 ## Activate a new subscription

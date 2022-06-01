@@ -16,6 +16,7 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
+- admindeeplinkEXCHANGE
 search.appverid:
 - MET150
 description: "Use Basic Mobility and Security to create device policies that protect your organization information."
@@ -36,7 +37,7 @@ You can use Basic Mobility and Security to create device policies that help prot
 - Before you deploy policies, let your organization know the potential impacts of enrolling a device in Basic Mobility and Security. Depending on how you set up the policies, noncompliant devices can be blocked from accessing Microsoft 365 and data, including installed applications, photos, and personal information on an enrolled device, and data can be deleted.
 
 > [!NOTE]
-> Policies and access rules created in Basic Mobility and Security for Microsoft 365 Business Standard override Exchange ActiveSync mobile device mailbox policies and device access rules created in the Exchange admin center. After a device is enrolled in Basic Mobility and Security for Microsoft 365 Business Standard, any Exchange ActiveSync mobile device mailbox policy or device access rule applied to the device is ignored. To learn more about Exchange ActiveSync, see [Exchange ActiveSync in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/exchange-activesync/exchange-activesync).
+> Policies and access rules created in Basic Mobility and Security for Microsoft 365 Business Standard override Exchange ActiveSync mobile device mailbox policies and device access rules created in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>. After a device is enrolled in Basic Mobility and Security for Microsoft 365 Business Standard, any Exchange ActiveSync mobile device mailbox policy or device access rule applied to the device is ignored. To learn more about Exchange ActiveSync, see [Exchange ActiveSync in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/exchange-activesync/exchange-activesync).
 
 ## Step 1: Create a device policy and deploy to a test group
 
@@ -115,7 +116,7 @@ If you want to exclude some people from conditional access checks on their mobil
 
 When you apply a policy to user devices, the impact on each device varies somewhat among device types. See the following table for examples of the impact of policies on different devices.
 
-|**Security Policy**|**Android 4 and later**|**Samsung KNOX**|**iOS 6 and later**|**Notes**|
+|**Security Policy**|**Android**|**Samsung KNOX**|**iOS**|**Notes**|
 |:-----|:-----|:-----|:-----|:-----|
 |Require encrypted backup|No|Yes|Yes|iOS encrypted backup required.|
 |Block cloud backup|Yes|Yes|Yes|Block Google backup on Android (grayed out), cloud backup on iOS.|
@@ -133,7 +134,7 @@ When you apply a policy to user devices, the impact on each device varies somewh
 
 When you delete a policy or remove a user from a group to which the policy was deployed, the policy settings, Microsoft 365 email profile and cached emails might be removed from the user's device. See the following table to see what is removed for the different device types.
 
-|**What's removed**|**iOS 6 and later**|**Android 4 and later (including Samsung KNOX**|
+|**What's removed**|**iOS**|**Android (including Samsung KNOX**|
 |:-----|:-----|:-----|
 |Managed email profiles<sup>1</sup>|Yes|No|
 |Block cloud backup|Yes|No|

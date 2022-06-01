@@ -10,12 +10,14 @@ ms.localizationpriority: medium
 ms.collection: 
   - M365-security-compliance
   - m365initiative-defender-office365
-ms.custom: admindeeplinkDEFENDER
+ms.custom:
 description: Admins can learn how Attack simulation training in the Microsoft 365 Defender portal affects users and can gain insights from simulation and training outcomes.
 ms.technology: mdo
 ---
 
 # Insights and reports for Attack simulation training in Defender for Office 365
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
  [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
@@ -33,7 +35,7 @@ For getting started information about Attack simulation training, see [Get start
 
 ## Insights and reports on the Overview tab of Attack simulation training
 
-To go to the **Overview** tab, open the Microsoft 365 Defender portal at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a>, go to **Email & collaboration** \> **Attack simulation training**, and verify that the **Overview** tab is selected (it's the default). To go directly to the **Overview** tab on the **Attack simulation training** page, use <https://security.microsoft.com/attacksimulator?viewid=overview>.
+To go to the **Overview** tab, open the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training**, and verify that the **Overview** tab is selected (it's the default). To go directly to the **Overview** tab on the **Attack simulation training** page, use <https://security.microsoft.com/attacksimulator?viewid=overview>.
 
 The rest of this section describes the information that's available on the **Overview** tab of Attack simulation training.
 
@@ -47,7 +49,7 @@ Selecting **View all simulations** takes you to the **Simulations** tab.
 
 Selecting **Launch a simulation** starts the simulation creation wizard. For more information, see [Simulate a phishing attack in Defender for Office 365](attack-simulation-training.md).
 
-![Recent simulations card on the Overview tab in Attack simulation training in the Microsoft 365 Defender portal.](../../media/attack-sim-training-overview-recent-simulations-card.png)
+:::image type="content" source="../../media/attack-sim-training-overview-recent-simulations-card.png" alt-text="The Recent simulations card on the Overview tab in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-overview-recent-simulations-card.png":::
 
 ### Behavior impact on compromise rate card
 
@@ -65,7 +67,7 @@ The following summary information is also shown on the card:
 - **users less susceptible to phishing**: The difference between the actual number of users compromised by the simulated attack and the predicted compromise rate. This number of users is less likely to be compromised by similar attacks in the future.
 - **x% better than predicted rate**: Indicates how users did overall in contrast with the predicted compromise rate.
 
-![Behavior impact on compromise rate card on the Overview tab in Attack simulation training in the Microsoft 365 Defender portal.](../../media/attack-sim-training-overview-behavior-impact-card.png)
+:::image type="content" source="../../media/attack-sim-training-overview-behavior-impact-card.png" alt-text="The Behavior impact on compromise rate card on the Overview tab in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-overview-behavior-impact-card.png":::
 
 To see a more detailed report, click **View simulations and training efficacy report**. This report is explained [later in this article](#training-efficacy-tab-for-the-attack-simulation-report).
 
@@ -77,7 +79,7 @@ Selecting **Launch simulation for non-simulated users** starts the simulation cr
 
 Selecting **View simulation coverage report** takes you to the [User coverage tab for the Attack simulation report](#user-coverage-tab-for-the-attack-simulation-report).
 
-![Simulation coverage card on the Overview tab in Attack simulation training in the Microsoft 365 Defender portal.](../../media/attack-sim-training-overview-sim-coverage-card.png)
+:::image type="content" source="../../media/attack-sim-training-overview-sim-coverage-card.png" alt-text="The Simulation coverage card on the Overview tab in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-overview-sim-coverage-card.png":::
 
 ### Training completion card
 
@@ -112,7 +114,7 @@ The **Recommendations** card on the **Overview** tab suggests different types of
 
 Selecting **Launch now** starts the simulation creation wizard with the specified simulation type automatically selected on the **Select technique** page. For more information, see [Simulate a phishing attack in Defender for Office 365](attack-simulation-training.md).
 
-![Recommendations card on the Overview tab in Attack simulation training in the Microsoft 365 Defender portal.](../../media/attack-sim-training-overview-recommendations-card.png)
+:::image type="content" source="../../media/attack-sim-training-overview-recommendations-card.png" alt-text="The Recommendations card on the Overview tab in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-overview-recommendations-card.png":::
 
 ### Attack simulation report
 
@@ -122,7 +124,7 @@ You can open the **Attack simulation report** from the **Overview** tab by click
 
 On the **Attack simulation report** page, the **Training efficacy** tab is selected by default. This tab provides the same information that's available in the **Behavior impact on compromise rate** card, with additional context from the simulation itself.
 
-![Training efficacy tab in the Attack simulation report in the Microsoft 365 Defender portal.](../../media/attack-sim-report-training-efficacy-view.png)
+:::image type="content" source="../../media/attack-sim-report-training-efficacy-view.png" alt-text="The Training efficacy tab in the Attack simulation report in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-report-training-efficacy-view.png":::
 
 The chart shows the **Predicted compromise rate** and **Actual compromised rate**. If you hover over a section in the chart, the actual percentage values for are shown.
 
@@ -146,7 +148,7 @@ If you click the ![Export icon.](../../media/m365-cc-sc-download-icon.png) **Exp
 
 #### User coverage tab for the Attack simulation report
 
-![User coverage tab in the Attack simulation report in the Microsoft 365 Defender portal.](../../media/attack-sim-report-user-coverage-view.png)
+:::image type="content" source="../../media/attack-sim-report-user-coverage-view.png" alt-text="The User coverage tab in the Attack simulation report in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-report-user-coverage-view.png":::
 
 On the **User coverage** tab, the chart shows the **Simulated users** and **Non-simulated users**. If you hover over a data point in the chart, the actual values are shown.
 
@@ -170,7 +172,7 @@ If you click the ![Export icon.](../../media/m365-cc-sc-download-icon.png) **Exp
 
 #### Training completion tab for the Attack simulation report
 
-![Training completion tab in the Attack simulation report in the Microsoft 365 Defender portal.](../../media/attack-sim-report-training-completion-view.png)
+:::image type="content" source="../../media/attack-sim-report-training-completion-view.png" alt-text="The Training completion tab in the Attack simulation report in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-report-training-completion-view.png":::
 
 On the **Training completion** tab, the chart shows the number of **Completed**, **In progress**, and **Incomplete** simulations. If you hover over a section in the chart, the actual values are shown.
 
@@ -203,7 +205,7 @@ If you click the ![Export icon.](../../media/m365-cc-sc-download-icon.png) **Exp
 
 #### Repeat offenders tab for the Attack simulation report
 
-![Repeat offenders tab in the Attack simulation report in the Microsoft 365 Defender portal.](../../media/attack-sim-report-repeat-offenders-view.png)
+:::image type="content" source="../../media/attack-sim-report-repeat-offenders-view.png" alt-text="The Repeat offenders tab in the Attack simulation report in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-report-repeat-offenders-view.png":::
 
 A _repeat offender_ is a user who was compromised by consecutive simulations. The default number of consecutive simulations is two, but you can change the value on the **Settings** tab of Attack simulation training at <https://security.microsoft.com/attacksimulator?viewid=setting>.
 
@@ -245,7 +247,7 @@ If you click the ![Export icon.](../../media/m365-cc-sc-download-icon.png) **Exp
 
 ## Insights and reports in the simulation details of Attack simulation training
 
-To go to the **Simulations** tab, open the Microsoft 365 Defender portal at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a>, go to **Email & collaboration** \> **Attack simulation training**, and then click the **Simulations** tab. To go directly to the **Simulations** tab on the **Attack simulation training** page, use <https://security.microsoft.com/attacksimulator?viewid=simulations>.
+To go to the **Simulations** tab, open the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training**, and then select the **Simulations** tab. To go directly to the **Simulations** tab on the **Attack simulation training** page, use <https://security.microsoft.com/attacksimulator?viewid=simulations>.
 
 When you select a simulation from the list, a details page opens. This page contains the configuration settings of the simulation that you would expect to see (status, launch date, payload used, etc.).
 
@@ -257,11 +259,11 @@ The **Simulation impact** section on the simulation details page shows how many 
 
 - Links: **Entered credentials** and **Did not enter credentials**.
 
-  ![Simulation impact section for link-related simulation details.](../../media/attack-sim-training-sim-details-sim-impact-links.png)
+  :::image type="content" source="../../media/attack-sim-training-sim-details-sim-impact-links.png" alt-text="The Simulation impact section for link-related simulation details" lightbox="../../media/attack-sim-training-sim-details-sim-impact-links.png":::
 
 - Attachments: **Opened attachment** and **Did not open attachment**.
 
-  ![Simulation impact section for attachment-related simulation details.](../../media/attack-sim-training-sim-details-sim-impact-attachments.png)
+  :::image type="content" source="../../media/attack-sim-training-sim-details-sim-impact-attachments.png" alt-text="The Simulation impact section for attachment-related simulation details" lightbox="../../media/attack-sim-training-sim-details-sim-impact-attachments.png":::
 
 If you hover over a section in the chart, the actual numbers for each category are shown.
 
@@ -275,24 +277,24 @@ The **All user activity** section on the simulation details page shows numbers f
   - **EmailLinkClicked**: How many users clicked on the link in the simulation message.
   - **CredSupplied**: After clicking on the link, how many users supplied their credentials.
 
-    ![All user activity section for link-related simulation details.](../../media/attack-sim-training-sim-details-all-user-activity-links.png)
+    :::image type="content" source="../../media/attack-sim-training-sim-details-all-user-activity-links.png" alt-text="The All user activity section for link-related simulation details" lightbox="../../media/attack-sim-training-sim-details-all-user-activity-links.png":::
 
 - Attachments:
   - **AttachmentOpened**: How many users opened the attachment in the simulation message.
 
-    ![All user activity section for attachment-related simulation details.](../../media/attack-sim-training-sim-details-all-user-activity-attachments.png)
+    :::image type="content" source="../../media/attack-sim-training-sim-details-all-user-activity-attachments.png" alt-text="The All user activity section for attachment-related simulation details" lightbox="../../media/attack-sim-training-sim-details-all-user-activity-attachments.png":::
 
 ### Training completion section
 
 The **Training completion** section on the simulation details page shows the trainings that are required for the simulation, and how many users have completed the trainings.
 
-![Training completion section for attachment-related simulation details.](../../media/attack-sim-training-sim-details-training-completed.png)
+:::image type="content" source="../../media/attack-sim-training-sim-details-training-completed.png" alt-text="The Training completion section for attachment-related simulation details" lightbox="../../media/attack-sim-training-sim-details-training-completed.png":::
 
 ## Recommended actions section
 
 The **Recommended actions** section on the simulation details page shows recommendation actions from [Microsoft Secure Score](../defender/microsoft-secure-score.md) and the effect the action will have on your Secure Score. These recommendations are based on the payload that was used in the simulation, and will help protect your users and your environment. Selecting an **Improvement action** from the list takes you to the location to implement the suggested action.
 
-![Recommendation actions section on Attack simulation training.](../../media/attack-sim-training-sim-details-recommended-actions.png)
+:::image type="content" source="../../media/attack-sim-training-sim-details-recommended-actions.png" alt-text="The Recommendation actions section on Attack simulation training" lightbox="../../media/attack-sim-training-sim-details-recommended-actions.png":::
 
 ## Related Links
 
@@ -300,4 +302,4 @@ The **Recommended actions** section on the simulation details page shows recomme
 
 [Create a phishing attack simulation](attack-simulation-training.md)
 
-[create a payload for training your people](attack-simulation-training-payloads.md)
+[create a payload for training your people](attack-simulation-training-payloads.md#create-payloads)

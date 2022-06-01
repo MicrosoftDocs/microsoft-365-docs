@@ -99,11 +99,9 @@ Content-type: application/json
             "id": "contoso\\user1",
             "accountName": "user1",
             "accountDomain": "contoso",
-            "accountSid": "S-1-5-21-72051607-1745760036-109187956-93922",
             "firstSeen": "2019-12-18T08:02:54Z",
             "lastSeen": "2020-01-06T08:01:48Z",
             "logonTypes": "Interactive",
-            "logOnMachinesCount": 8,
             "isDomainAdmin": true,
             "isOnlyNetworkUser": false
         },

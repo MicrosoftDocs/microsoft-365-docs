@@ -21,6 +21,7 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
+- admindeeplinkEXCHANGE
 search.appverid:
 - MET150
 - MOE150
@@ -32,14 +33,18 @@ description: "When you purchase Microsoft 365 Business Standard, you have the op
 
 When you purchase Microsoft 365 Business Standard, you have the option of adding a domain you own, or buying one. Check out [Sign up for a Microsoft 365 Business Standard subscription](../simplified-signup/signup-business-standard.md).
 
-In this article, we'll walk you through the steps of adding an existing domain your already own or buying a new one. If you purchased a new domain when you signed up, your domain is all set up and you can move to [Add users and assign licenses](#add-users-and-assign-licenses).
+In this article, we'll walk you through the steps of adding an existing domain you already own or buying a new one. If you purchased a new domain when you signed up, your domain is all set up and you can move to [Add users and assign licenses](#add-users-and-assign-licenses).
+
+## Set up Microsoft 365 for business
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
 
 ## Before you begin
 
 To add, modify or remove domains you must be a global administrator. For more info, see [About admin roles](../add-users/about-admin-roles.md).
 
 > [!IMPORTANT]
-> The person who signs up for Microsoft 365 for business (usually the business owner) automatically becomes the technical administrator of the organization. You can add other people as admins if you want help managing your Microsoft 365 services. Check out [Add an admin](../../business-video/add-admin.md) for more info.
+> The person who signs up for Microsoft 365 for business (usually the business owner) automatically becomes the technical administrator of the organization. You can add other people as admins if you want help managing your Microsoft 365 services. Check out [Assign admin roles](../add-users/assign-admin-roles.md) for more info.
 
 ## Watch: Add an existing domain to your Microsoft 365 Business Standard subscription
 
@@ -141,7 +146,7 @@ If you were using Outlook with another email account, you can import your previo
   
 More at [Import email with Outlook](https://support.microsoft.com/office/6a3771d4-4c1d-4a25-92a6-0b8e476335de).
 
-You can also use Exchange admin center to import everyone's email. For more information, see [migrate multiple email accounts](/Exchange/mailbox-migration/mailbox-migration).
+You can also use <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a> to import everyone's email. For more information, see [migrate multiple email accounts](/Exchange/mailbox-migration/mailbox-migration).
 
 ## Set up Microsoft Teams and OneDrive for business
 
