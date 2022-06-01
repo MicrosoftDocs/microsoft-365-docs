@@ -30,7 +30,7 @@ Take advantage of rich security information events management (SIEM) combined wi
 
 ## What you will need
 - Microsoft Defender for Office 365 Plan 2 or higher
-- Microsoft Sentinel [Quickstart guide] (azure/sentinel/quickstart-onboard)
+- Microsoft Sentinel [Quickstart guide](/azure/sentinel/quickstart-onboard)
 - Sufficient permissions (Security Administrator in M365 & Read / Write permissions in Sentinel)
 
 ## Add the Microsoft 365 Defender Connector
