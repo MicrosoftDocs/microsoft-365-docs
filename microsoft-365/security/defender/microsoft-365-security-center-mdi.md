@@ -74,6 +74,10 @@ Defender for Identity data is now included in the Microsoft 365 User and Device 
 
 Defender for Identity remediation actions, such as disabling accounts or requiring password resets, can now be taken from the Microsoft 365 Defender User page.
 
+## Related videos
+
+- [New for Microsoft Defender for Identity](https://www.microsoft.com/videoplayer/embed/RE4HcEU)
+
 ## Related information
 
 - [Microsoft 365 Defender](microsoft-365-defender.md)
