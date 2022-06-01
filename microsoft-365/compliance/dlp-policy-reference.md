@@ -614,12 +614,11 @@ Here's what a policy tip looks like in a OneDrive for Business account.
 
 #### Blocking and notifications in SharePoint Online and OneDrive for Business
 
-This table shows the DLP blocking and notification behavior for policies that are scoped to SharePoint Online and OneDrive for Business
+This table shows the DLP blocking and notification behavior for policies that are scoped to SharePoint Online and OneDrive for Business.
 
 |Conditions  |Actions |User Notification|Incident Reports |Blocking and Notification behavior|
 |---------|---------|---------|---------|---------|
-|- **Content is shared from Microsoft 365** </br>- **with people outside my organization**     |No restrictions are set         |- **User notifications** set to **On** </br>- **Notify users in Office 365 service with a policy tip** is selected </br>- **Notify the user who sent, shared, or last modified the content** is selected         |- **Send an alert to admins when a rule match occurs** set to **On** </br>- **Send alert every time an activity matches the rule** set to **On** </br>- **Use email incident reports to notify you when a policy match occurs** set to **On**         |Notifications will be sent only when a file is shared with an external user and an external user access the file.         |
-|Row2     |         |         |         |         |
+|- **Content is shared from Microsoft 365** </br>- **with people outside my organization**     |No restrictions are set         |- **User notifications** set to **On** </br>- **Notify users in Office 365 service with a policy tip** is selected </br>- **Notify the user who sent, shared, or last modified the content** is selected         |- **Send an alert to admins when a rule match occurs** set to **On** </br>- **Send alert every time an activity matches the rule** set to **On** </br>- **Use email incident reports to notify you when a policy match occurs** set to **On**         |- Notifications will be sent only when a file is shared with an external user and an external user access the file. </br> - Notifications will be sent when a file is uploaded         |
 |Row3     |         |         |         |         |
 |Row4     |         |         |         |         |
 |Row5     |         |         |         |         |
