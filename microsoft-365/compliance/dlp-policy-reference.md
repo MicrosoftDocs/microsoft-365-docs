@@ -619,14 +619,14 @@ This table shows the DLP blocking and notification behavior for policies that ar
 |Conditions  |Actions |User Notification|Incident Reports |Blocking and Notification behavior|
 |---------|---------|---------|---------|---------|
 |- **Content is shared from Microsoft 365** </br>- **with people outside my organization**     |No restrictions are set         |- **User notifications** set to **On** </br>- **Notify users in Office 365 service with a policy tip** is selected </br>- **Notify the user who sent, shared, or last modified the content** is selected         |- **Send an alert to admins when a rule match occurs** set to **On** </br>- **Send alert every time an activity matches the rule** set to **On** </br>- **Use email incident reports to notify you when a policy match occurs** set to **On**         |- Notifications will be sent only when a file is shared with an external user and an external user access the file. </br> - Notifications will be sent when a file is uploaded         |
-|Row3     |         |         |         |         |
-|Row4     |         |         |         |         |
-|Row5     |         |         |         |         |
+|- **Content is shared from Microsoft 365** </br>- **with people outside my organization**        | - **Restrict access or encrypt the content in Microsoft 365 locations** is selected </br>- **Block users from receiving email or accessing shared SharePoint, OndeDrive, and Teams files** is selected </br>- **Block only people outside your organization** is selected         |-  **User notifications** set to **On**   </br>- **Notify users in Office 365 service with a policy tip** is selected  </br>- **Notify the user who sent, shared, or last modified the content** is selected    |  - **Send an alert to admins when a rule match occurs** set to **On** </br>- **Send alert every time an activity matches the rule** is selected </br>- **Use email incident reports to notify you when a policy match occurs** set to **On**       |- Access to a sensitive file is blocked as soon as it is uploaded </br> - Notifications are sent  WHEN WHAT?????     |
+|- **Content is shared from Microsoft 365** </br>- **with people outside my organization**    | - **Restrict access or encrypt the content in Microsoft 365 locations** is selected </br>- **Block users from receiveing email or accessing shared SharePoint, OndeDrive, and Teams files** is selected </br>- **Block everyone** is selected          |- **User notifications** set to **On** </br>- **Notify users in Office 365 service with a policy tip** is selected </br>- **Notify the user who sent, shared, or last modified the content** is selected         |  - **Send an alert to admins when a rule match occurs** set to **On** </br>- **Send alert every time an activity matches the rule** is selected </br>- **Use email incident reports to notify you when a policy match occurs** set to **On**             | - Notifications will be sent only when a file is shared with an external user and an external user access the file.         |
+|- **Content is shared from Microsoft 365** </br>- **with people outside my organization**         |  - **Restrict access or encrypt the content in Microsoft 365 locations** is selected </br>- **Block users from receiveing email or accessing shared SharePoint, OndeDrive, and Teams files** is selected </br>- **Block only people who were given access to the content through the "Anyone with the link" option** is selected        | - **User notifications** set to **On** </br>- **Notify users in Office 365 service with a policy tip** is selected </br>- **Notify the user who sent, shared, or last modified the content** is selected         | - **Send an alert to admins when a rule match occurs** set to **On** </br>- **Send alert every time an activity matches the rule** is selected </br>- **Use email incident reports to notify you when a policy match occurs** set to **On**        |When a file is uploaded, people who were given access via the "Anyone with the link" option will be blocked and a notification will be sent.         |
 |Row6     |         |         |         |         |
-|Row7     |         |         |         |         |
-|Row8     |         |         |         |         |
-|Row9     |         |         |         |         |
-|Row10     |         |         |         |        |
+
+
+
+
 
 
 ### User overrides
