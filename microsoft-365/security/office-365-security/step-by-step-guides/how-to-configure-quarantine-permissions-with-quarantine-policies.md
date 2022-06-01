@@ -19,7 +19,7 @@ ms.topic: article
 ms.technology: mdo
 ---
 
-# How to configure quarantine permissions with quarantine policies
+# How to configure quarantine permissions and policies
 
 Providing security admins and users with a very simple way to manage false positive folders is vital given the increased demand for a more aggressive security posture with the evolution of hybrid work. Taking a prescriptive approach, admins and users can achieve this with the guidance below.
 

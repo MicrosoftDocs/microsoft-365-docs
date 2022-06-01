@@ -402,8 +402,6 @@
         href: step-by-step-guides/how-to-handle-false-positives-in-microsoft-defender-for-office-365.md
       - name: How to configure quarantine permissions and policies
         href: step-by-step-guides/how-to-configure-quarantine-permissions-with-quarantine-policies.md
-      - name: How to configure quarantine permissions with quarantine policies
-        href: step-by-step-guides/how-to-configure-quarantine-permissions-with-quarantine-policies.md
       - name: Ensuring you always have the optimal security controls with preset security policies
         href: step-by-step-guides/ensuring-you-always-have-the-optimal-security-controls-with-preset-security-policies.md
       - name: How to run attack simulations for your team
