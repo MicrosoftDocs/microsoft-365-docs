@@ -19,7 +19,7 @@ ms.topic: article
 ms.technology: mdo
 ---
 
-# How to handle Legitimate emails getting blocked (False Positive) using Microsoft Defender for Office 365
+# How to handle Legitimate emails getting blocked (False Positive), using Microsoft Defender for Office 365
 
 Microsoft Defender for Office 365 helps deal with important legitimate business emails that are mistakenly blocked as threats (False Positives). Defender for Office 365 can help admins understand *why* legitimate emails are being blocked, how to resolve the situation quickly, and prevent similar situations from happening in the future.
 
