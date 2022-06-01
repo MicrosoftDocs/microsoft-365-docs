@@ -25,7 +25,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
-description: "Learn how a Microsoft 365 global admin can change a user's email address and display name when their name changes. "
+description: "Learn how a Microsoft 365 global admin can change a user's email address and display name when their name changes."
 ---
 
 # Change a user name and email address

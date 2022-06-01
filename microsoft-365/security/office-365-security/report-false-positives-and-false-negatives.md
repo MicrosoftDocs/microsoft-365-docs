@@ -17,7 +17,7 @@ ms.prod: m365-security
 
 # Report false positives and false negatives in Outlook
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -43,6 +43,9 @@ In Microsoft 365 organizations with mailboxes in Exchange Online or on-premises 
 
 - For more information about reporting messages to Microsoft, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 
+Watch this short video to learn how you can use Microsoft Defender for Office 365 to easily investigate user submissions to determine the contents of a message, and respond to the submission by applying the appropriate remediation action. 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBHof]
+
 ### Turn off the built-in reporting experience
 
 We don't recommend the built-in reporting experience in Outlook because it can't use the [user submission policy](./user-submission.md). We recommend using the Report Message add-in or the Report Phishing add-in instead.
@@ -55,7 +58,6 @@ Run the following PowerShell command to disable the built-in reporting experienc
 Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -ReportJunkEmailEnabled $false
 ```
 
-
 ## Use the Report Message feature
 
 ### Report junk and phishing messages
@@ -64,9 +66,9 @@ For messages in the Inbox or any other email folder except Junk Email, use the f
 
 1. Select the **More actions** ellipses on the top-right corner of the selected message, select **Report message** from the dropdown menu, and then select **Junk** or **Phishing**.
 
-   ![Report Message - More actions.](../../media/report-message-more-actions.png)
+   :::image type="content" source="../../media/report-message-more-actions.png" alt-text="The More actions icon" lightbox="../../media/report-message-more-actions.png":::
 
-   ![Report Message - Junk and Phishing.](../../media/report-message-junk-phishing.png)
+   :::image type="content" source="../../media/report-message-junk-phishing.png" alt-text="The Junk and Phishing option in the Report Message pane" lightbox="../../media/report-message-junk-phishing.png":::
 
 2. The selected messages will be sent to Microsoft for analysis and:
    - Moved to the Junk Email folder if they were reported as spam.
@@ -76,9 +78,9 @@ For messages in the Inbox or any other email folder except Junk Email, use the f
 
 1. Select the **More actions** ellipses on the top-right corner of the selected message, select **Report message** from the dropdown menu, and then select **Not Junk**.
 
-   ![Report Message - More actions.](../../media/report-message-more-actions.png)
+   :::image type="content" source="../../media/report-message-more-actions.png" alt-text="The icon that provides more actions" lightbox="../../media/report-message-more-actions.png":::
 
-   ![Report Message - Not junk.](../../media/report-message-not-junk.png)
+   :::image type="content" source="../../media/report-message-not-junk.png" alt-text="The Not Junk option under the Report Message pane" lightbox="../../media/report-message-not-junk.png":::
 
 2. The selected message will be sent to Microsoft for analysis and moved to Inbox or any other specified folder.
 

@@ -26,7 +26,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Follow the steps in this solution to remove a former employee from Microsoft 365 and secure your organization's data."
+description: "Block access to Microsoft 365 so a former employee can't sign in, secure organization data, and allow other employees to access their email and OneDrive data."
 ---
 
 # Overview: Remove a former employee and secure data

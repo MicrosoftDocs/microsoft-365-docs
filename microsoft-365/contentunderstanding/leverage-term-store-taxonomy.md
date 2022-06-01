@@ -46,8 +46,10 @@ After applying your model to the document library, when documents are uploaded t
 
    ![Contract service column.](../media/content-understanding/creative.png)</br>
 
+> [!NOTE]
+> If the term set is open, then any extracted values that do not match a preferred term or synonym value will be added as a new term to the root of the term set. These new terms can be moved, merged, or made synonyms in the term store where the term set resides.
 
-## See Also
+## See also
 [Introduction to Managed Metadata](/sharepoint/managed-metadata#terms)
 
 [Create an extractor](create-an-extractor.md)

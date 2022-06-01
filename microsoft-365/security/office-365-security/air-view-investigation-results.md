@@ -3,8 +3,8 @@ title: View the results of an automated investigation in Microsoft 365
 keywords: AIR, autoIR, Microsoft Defender for Endpoint, automated, investigation,  remediation, actions
 f1.keywords: 
 - NOCSH
-author: JoeDavies-MSFT
-ms.author: josephd
+author: dansimp
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -23,9 +23,10 @@ ms.prod: m365-security
 
 # Details and results of an automated investigation in Microsoft 365
 
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
 **Applies to**
 - [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 When an [automated investigation](office-365-air.md) occurs in [Microsoft Defender for Office 365](defender-for-office-365.md), details about that investigation are available during and after the automated investigation process. If you have the necessary permissions, you can view those details in the Microsoft 365 Defender portal. Investigation details provide you with up-to-date status, and the ability to approve any pending actions.
 
@@ -35,10 +36,6 @@ When an [automated investigation](office-365-air.md) occurs in [Microsoft Defend
 ## Investigation status
 
 The investigation status indicates the progress of the analysis and actions. As the investigation runs, status changes to indicate whether threats were found, and whether actions have been approved.
-
-<br>
-
-****
 
 |Status|Description|
 |---|---|
@@ -53,7 +50,6 @@ The investigation status indicates the progress of the analysis and actions. As 
 |**Failed**|At least one investigation analyzer ran into a problem where it could not complete properly. <p> **NOTE** If an investigation fails after remediation actions were approved, the remediation actions might still have succeeded. View the investigation details.|
 |**Queued By Throttling**|An investigation is being held in a queue. When other investigations complete, queued investigations begin. Throttling helps avoid poor service performance.  <p> **TIP**: Pending actions can limit how many new investigations can run. Make sure to [approve (or reject) pending actions](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions).|
 |**Terminated By Throttling**|If an investigation is held in the queue too long, it stops. <p> **TIP**: You can [start an investigation from Threat Explorer](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).|
-|
 
 ## View details of an investigation
 

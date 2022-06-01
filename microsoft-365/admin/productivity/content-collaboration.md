@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Productivity Score - Content collaboration"
+title: "Microsoft Productivity Score content collaboration insights"
 f1.keywords:
 - NOCSH
 ms.author: efrene

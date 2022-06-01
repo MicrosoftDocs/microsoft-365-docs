@@ -93,3 +93,5 @@ You can remove admin roles from a partner at any time. Removing the admin roles 
 3. Select the row that contains the name of the partner.
 4. On the partner page, select **Remove roles**.
 5. In the **Remove roles?** dialog box, select **Yes**.
+
+If you do not see the **Remove roles** option, contact the [Partner Center](https://partner.microsoft.com/support).

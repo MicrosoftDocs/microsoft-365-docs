@@ -1,5 +1,5 @@
 ---
-title: "Manage ISV app licenses in the Microsoft 365 admin center"
+title: "Manage ISV app licenses"
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT

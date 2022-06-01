@@ -3,7 +3,7 @@ title: "IPv6 support in Microsoft 365 services"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 05/31/2022
+ms.date: 06/01/2022
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
