@@ -302,4 +302,4 @@ The **Recommended actions** section on the simulation details page shows recomme
 
 [Create a phishing attack simulation](attack-simulation-training.md)
 
-[create a payload for training your people](attack-simulation-training-payloads.md)
+[create a payload for training your people](attack-simulation-training-payloads.md#create-payloads)

@@ -35,7 +35,7 @@ Here's how to sign in:
 
 2. In the browser, go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
 
-3. Type your username and password. Select **Sign in**.
+3. Type your username and password, and then select **Sign in**.
 
 4. In the top right of the page, find the **Preview on** control. Select **Preview on** so you can use all the controls described in [Bump up protection for your campaign](m365bp-security-overview.md).
 
@@ -43,7 +43,7 @@ Here's how to sign in:
 
 Users who have been added to your Microsoft 365 for Campaigns (or Microsoft 365 Business Premium) subscription can sign in by following these steps:
 
-1. Go to <a href="https://office.com" target="_blank">https://Office.com</a>.
+1. Go to <a href="https://office.com" target="_blank">https://office.com</a>.
 
 2. Sign in using the username and password for the account. Users will have this information in the email they receive when they are added as users. If they can't find the email, see [user didn't receive invite email](../admin/simplified-signup/admin-invite-business-standard.md#i-shared-an-email-invite-but-the-user-didnt-receive-the-email).
 
