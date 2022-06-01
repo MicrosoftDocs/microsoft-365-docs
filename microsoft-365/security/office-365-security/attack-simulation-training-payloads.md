@@ -41,7 +41,7 @@ The following information is shown for each payload:
 - **Compromised rate (%)**: For built-in payloads, this value is the predicted average compromise rate for Attack simulation training simulations that use the same type of payload across all other Microsoft 365 organizations.
 - **Created by**: For built-in payloads, the value is **Microsoft**. For custom payloads, the value is the UPN of the user who created the payload.
 - **Last modified**
-- **Technique**: One of the available [social engineering techniques](attack-simulation-training.md#select-a-social-engineering-techniques):
+- **Technique**: One of the available [social engineering techniques](attack-simulation-training.md#select-a-social-engineering-technique):
   - **Credential harvest**
   - **Malware attachment**
   - **Link in attachment**
