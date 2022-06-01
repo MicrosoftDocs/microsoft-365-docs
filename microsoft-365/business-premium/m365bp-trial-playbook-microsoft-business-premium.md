@@ -39,7 +39,7 @@ We have automatically configured [Preset security policies](/security/office-365
 
 ### Add a domain
 
-When you purchase Microsoft 365 Business Premium trial, you have the option of using a domain you own, or buying one during the sign-up.
+When you purchase the Microsoft 365 Business Premium trial, you have the option of using a domain you own, or buying one during the sign-up.
 
 > [!Note]
 > If you purchased a new domain when you signed up, your domain is all set up and you can move to Add users and assign licenses. Go to the admin center(admin.microsoft.com).
@@ -51,9 +51,9 @@ When you purchase Microsoft 365 Business Premium trial, you have the option of u
 1. Follow the rest of the steps in the wizard to complete the process.
 
 > [!Important]
-> If you purchased a domain during the sign-up, you will not see Add a domain step here. Go to Add users instead.
+> If you purchased a domain during the sign-up, you will not see the Add a domain step here. Go to Add users instead.
 
-1. Follow the steps in the wizard to Create DNS records at any DNS hosting provider for Office 365 that verifies you own the domain. If you know your domain host, see also Add a domain to Microsoft 365.
+1. Follow the steps in the wizard to Create DNS records at any DNS hosting provider for Office 365 that verifies you own the domain. If you know your domain host, see Add a domain to Microsoft 365.
 
 1. If your hosting provider is GoDaddy or another host enabled with domain connect, the process is easy and you'll be automatically asked to sign in and let Microsoft authenticate on your behalf.
 
@@ -63,7 +63,7 @@ When you purchase Microsoft 365 Business Premium trial, you have the option of u
 
 1. Run the [setup wizard](../security/defender-business/mdb-use-wizard.md).
 
-1. Now, you can [onboard devices](../security/defender-business/mdb-onboard-devices.md).
+1. Now, [onboard devices](../security/defender-business/mdb-onboard-devices.md).
 
 1. Next, [review security policies](../security/defender-business/mdb-configure-security-settings.md).
 

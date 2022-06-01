@@ -29,14 +29,14 @@ ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
 description: "Learn how to verify that Microsoft 365 for business app protection settings took effect on your users' Windows 10 devices."
 ---
 
-# Validate device protection settings for Windows 10 PCs
+# Validate device protection settings for Windows 10 or 11 PCs
 
 > [!NOTE]
 > Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../security/defender-business/mdb-overview.md).
 
-## Verify that Windows 10 device policies are set
+## Verify that Windows 10 or 11 device policies are set
 
-After you [set up device policies](../business-premium/m365bp-protection-settings-for-windows-10-devices.md), it may take up to a few hours for the policy to take effect on users' devices. You can confirm that the policies took effect by looking at various Windows Settings screens on the users' devices. Because the users won't be able to modify the Windows Update and Microsoft Defender Antivirus settings on their Windows 10 devices, many options will be grayed out.
+After you [set up device policies](../business-premium/m365bp-protection-settings-for-windows-10-devices.md), it may take up to a few hours for the policy to take effect on users' devices. You can confirm that the policies took effect by looking at various Windows Settings screens on the users' devices. Because the users won't be able to modify the Windows Update and Microsoft Defender Antivirus settings on their Windows 10 or 11 devices, many options will be grayed out.
   
 1. Go to **Settings** \> **Update &amp; security** \> **Windows Update** \> **Restart options** and confirm that all settings are grayed out.
 

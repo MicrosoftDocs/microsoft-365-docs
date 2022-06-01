@@ -80,10 +80,10 @@
             href: m365bp-manage-windows-devices.md
           - name: Prepare for Office client deployment
             href: m365bp-prepare-for-office-client-deployment.md
-          - name: App settings for Windows devices
+          - name: Create app protection settings for Windows devices
             href: m365bp-protection-settings-for-windows-10-devices.md
-          - name: Validate app settings on Android and iOS devices
-            href: m365bp-validate-settings-on-android-or-ios.md
+          - name: Validate app settings on Windows devices
+            href: m365bp-validate-settings-on-windows-10-pcs.md
       - name: Review and edit device policies
         href: m365bp-view-edit-create-mdb-policies.md
       - name: Manage device groups
@@ -128,6 +128,8 @@
           href: m365bp-create-and-edit-autopilot-devices.md
     - name: App protection settings for Android and iOS
       href: m365bp-app-protection-settings-for-android-and-ios.md
+    - name: Validate app settings on Android and iOS
+      href: m365bp-validate-settings-on-android-or-ios.md
     - name: Map protection features to Intune settings
       href: m365bp-map-protection-features-to-intune-settings.md
     - name: Set up Compliance Manager
