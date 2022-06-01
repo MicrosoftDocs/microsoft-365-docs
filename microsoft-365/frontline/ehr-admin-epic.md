@@ -277,5 +277,5 @@ The EHR user’s unique ID is stored in one of the three geographic regions desc
 ## Related articles
 
 - [Teams Virtual Visits usage report](virtual-visits-usage-report.md)
-- [Teams EHR connector admin reports](ehr-admin-reports.md)
+- [Teams EHR connector admin reports](ehr-connector-report.md)
 - [Get started with Teams for healthcare organizations](teams-in-hc.md)
