@@ -114,11 +114,11 @@ sections:
 
       - question: What happens if I have a mix of Microsoft endpoint security subscriptions? 
         answer: |
-          *Suppose you have assigned 10 users a Defender for Business license, and you have assigned 10 other users a Defender for Endpoint Plan 2 license. What happens if you have a mix of subscriptions like this example in your tenant?*
+          *Suppose you have assigned 10 users a Defender for Business license, and you have assigned 10 other users a Defender for Endpoint Plan 1 license. What happens if you have a mix of subscriptions like this example in your tenant?*
 
-          The highest functional Microsoft endpoint security subscription sets the experience for your tenant. Using our example, your tenant experience would be [Defender for Endpoint Plan 2](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint) for all 20 users. 
+          The highest functional Microsoft endpoint security subscription sets the experience for your tenant. Using our example, your tenant experience would be [Defender for Endpoint Plan 1](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint) for all 20 users. 
           
-          However, **you can now contact support and request an override for your tenant experience**. Referring to our example, you could request an override to keep the Defender for Business experience, even if you have some Defender for Endpoint Plan 2 licenses. [Get support for Microsoft 365 for business](/microsoft-365/admin/get-help-support).
+          However, **you can now contact support and request an override for your tenant experience**. Referring to our example, you could request an override to keep the Defender for Business experience, even if you have some Defender for Endpoint Plan 1 licenses. [Get support for Microsoft 365 for business](/microsoft-365/admin/get-help-support).
           
           You can view your current subscriptions and licenses in the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)). See [Understand subscriptions and licenses in Microsoft 365 for business](/microsoft-365/commerce/licenses/subscriptions-and-licenses).
 
