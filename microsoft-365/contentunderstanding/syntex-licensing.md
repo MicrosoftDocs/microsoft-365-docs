@@ -40,9 +40,6 @@ The cost of training and running document understanding models is included in th
 
 For each SharePoint Syntex license, you are allocated 3,500 AI Builder credits per license, per month pooled at the tenant level, with a maximum allocation of 1 million credits per month. This allocation is renewed each month for each active SharePoint Syntex license. (Unused credits don't roll over from month to month.) 
 
-<!--
-If you have 300 or more SharePoint Syntex licenses for SharePoint Syntex in your organization, you will be allocated one million AI Builder credits. This capacity is renewed each month if you maintain the 300-license minimum. (Unused credits don't roll over from month to month.) If you have fewer than 300 licenses, you must purchase AI Builder credits in order to use forms processing.
--->
 You can estimate the AI Builder capacity that’s right for you with the [AI Builder calculator](https://powerapps.microsoft.com/ai-builder-calculator).
 
 If you plan to use a custom Power Platform environment, you must [allocate credits to that environment](/power-platform/admin/capacity-add-on).
