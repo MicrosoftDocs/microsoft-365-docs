@@ -27,9 +27,6 @@ If you're a Microsoft Cloud Solution Provider (CSP) and you have [Microsoft 365 
 
 To access the list of incidents, in Microsoft 365 Lighthouse, on the home page, find the **Security incidents** card, and then select **View all incidents**.
 
-> [!IMPORTANT]
-> Capabilities are still rolling out. If you don't have these capabilities yet, you should have them soon.
-
 ## Learn more about Microsoft 365 Lighthouse
 
 Microsoft 365 Lighthouse enables Microsoft Cloud Service Providers to secure and manage devices, data, and users at scale for small- and medium-sized business customers who are using one of the following subscriptions:
