@@ -34,7 +34,7 @@ If you signed up for Microsoft 365 for Campaigns (or Microsoft 365 Business Prem
 
 2. In the browser, go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
 
-3. Type your username and password, then select **Sign in**.
+3. Type your username and password, and then select **Sign in**.
 
 4. In the top right of the page, find the **Preview on** control. Select **Preview on** so you can use all the controls described in [Bump up protection for your campaign](m365-campaigns-security-overview.md).
 
