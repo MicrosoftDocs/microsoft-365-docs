@@ -25,7 +25,7 @@ Email remediation is an already existing feature that helps admins act on emails
 
 ## What you’ll need
 - Microsoft Defender for Office 365 Plan 2
-- Sufficient permissions (grant the account [Search and Purge](https://sip.security.microsoft.com/securitypermissions) role)
+- Sufficient permissions (be sure to grant the account [Search and Purge](https://sip.security.microsoft.com/securitypermissions) role)
 
 ## Create and track the remediation
 
