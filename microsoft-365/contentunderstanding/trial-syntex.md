@@ -67,7 +67,7 @@ To maximize the value of a trial on a production tenant, planning and business e
 - Have a clear understanding of the purpose for any extracted metadata; for example, view formatting or automation by using Power Automate. While SharePoint Syntex is focused on classifying documents and extracting metadata, the value to quantify is what this metadata enables.
 - Be based on a defined set of data; for example, specific SharePoint sites or libraries. A common misconception of SharePoint Syntex is that general purpose models can be applied across all organization content. A more accurate view is that models are built to help solve specific business problems in targeted locations.
 
-All of these use cases might not be a good fit for SharePoint Syntex. The goal of a quality trial isn't to prove that SharePoint Syntex will fit all the scenarios. Instead, the trial should help you better understand the value of product.
+All of these use cases might not be a good fit for SharePoint Syntex. The goal of a quality trial isn't to prove that SharePoint Syntex will fit all the scenarios. Instead, the trial should help you better understand the value of the product.
 
 For each of the planned use cases, identify users who are subject matter experts in the related content or process. The creation of SharePoint Syntex models is focused on domain experts in the content, rather than on IT professionals or developer resources.
 
@@ -83,7 +83,7 @@ After the trial is activated, you can create models and process files. See [guid
 
 ## During a trial
 
-Trial periods are limited, so it's best to focus initially on whether SharePoint Syntex models can classify documents and extract metadata for the defined use cases. After the trial period is over, you can evaluate how the metadata can be exploited.
+Trial periods are limited, so it's best to focus initially on whether SharePoint Syntex models can classify documents and extract metadata for the defined use cases. After the trial period is over, you can evaluate how the metadata can be used.
 
 ## After a trial
 
@@ -108,3 +108,5 @@ If you don't purchase licenses following the trial:
 ## See also
 
 [Get started driving adoption of SharePoint Syntex](adoption-getstarted.md)
+
+[Scenarios and use cases for SharePoint Syntex](adoption-scenarios.md)
