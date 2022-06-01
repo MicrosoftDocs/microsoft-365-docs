@@ -20,7 +20,7 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid: MET150
 description: "Learn about billing accounts and how they're used to manage account settings, invoices, payment methods, and purchases."
-ms.date: 03/17/2021
+ms.date: 05/24/2022
 ---
 
 # Understand billing accounts
@@ -71,7 +71,8 @@ You can provide others with access to the billing account in the <a href="https:
 - **Billing account reader** &mdash; Can view accounts.
 
 > [!Note]
-> Billing account roles only apply to billing accounts, and don't apply to other Microsoft 365 admin center scenarios.
+> - Billing account roles only apply to billing accounts, and don't apply to other Microsoft 365 admin center scenarios.
+> - For billing accounts created inside of Microsoft 365 sign-up, new Global, Billing and Global Reader Administrators are automatically granted distinct levels of access. You can manage this access from the **Billing** > **Billing accounts** page by explicitly removing those users from the role assignment section at the bottom of the page.
 
 ## Related content
 
