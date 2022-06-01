@@ -38,7 +38,13 @@ sections:
 
       - question: Is there a limit to how many users can be licensed for Defender for Business?
         answer: |
-          Defender for Business is designed for small and medium-sized businesses who have up to 300 users. If you have more than 300 users, consider an enterprise solution, such as [Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint) or [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender).
+          Defender for Business is designed for small and medium-sized businesses who have up to 300 users. If you have more than 300 users, consider an enterprise solution, such as one of the following:
+          
+          - [Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)
+          - [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)
+          - [Microsoft 365 for enterprise](/microsoft-365/enterprise/microsoft-365-overview)
+
+
 
       - question: How many devices can I onboard and secure with Defender for Business? 
         answer: |
