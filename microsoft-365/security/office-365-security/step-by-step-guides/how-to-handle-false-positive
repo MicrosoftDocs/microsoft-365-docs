@@ -32,7 +32,7 @@ It can help you understand why emails are getting blocked, how to resolve the si
 
 ## Dealing with emails landing in junk folder of end users
 
-1. Ask end users to report the email as **not junk** using Microsoft Message Add-in.
+1. Ask end users to report the email as **not junk** using Microsoft Message Add-in or the outlook buttons. 
 2. End users can also add the sender to the [safe sender list](https://support.microsoft.com/en-us/office/safe-senders-in-outlook-com-470d4ee6-e3b6-402b-8cd9-a6f00eda7339) in Outlook to prevent the email from these senders landing in junk folder. 
 3. You can triage the user reported messages from [user reported content] (https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/admin-submission?view=o365-worldwide#view-user-submissions-to-microsoft) portal.
 4. From those reported messages you can submit to [Microsoft for analysis] (https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/admin-submission?view=o365-worldwide#notify-users-from-within-the-portal) and understand why was that email blocked in the first place.
