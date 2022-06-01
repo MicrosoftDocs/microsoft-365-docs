@@ -16,7 +16,7 @@
         href: testapplication.md
       - name: Test your Intune app on Test Base
         href: testintuneapplication.md
-      - name: Upload your Test Base package (Zip) 
+      - name: Uploading a pre-built zip package
         href: uploadApplication.md
     - name: Build a Package
       href: buildpackage.md
