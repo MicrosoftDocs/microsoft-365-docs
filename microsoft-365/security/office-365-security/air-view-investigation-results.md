@@ -23,9 +23,10 @@ ms.prod: m365-security
 
 # Details and results of an automated investigation in Microsoft 365
 
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
 **Applies to**
 - [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 When an [automated investigation](office-365-air.md) occurs in [Microsoft Defender for Office 365](defender-for-office-365.md), details about that investigation are available during and after the automated investigation process. If you have the necessary permissions, you can view those details in the Microsoft 365 Defender portal. Investigation details provide you with up-to-date status, and the ability to approve any pending actions.
 
