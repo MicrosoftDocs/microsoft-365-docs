@@ -28,6 +28,7 @@ ms.custom: api
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
+Returns all the data for known software on a per-device basis.
 
 Different API calls get different types of data. Because the amount of data can be large, there are two ways it can be retrieved:
 

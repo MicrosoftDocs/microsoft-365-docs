@@ -99,7 +99,7 @@ SoftwareVersion|string|Version number of the software product.
 #### 1.6.1 Request example
 
 ```http
-https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryNoProductCodeByMachine?pageSize=5  &sinceTime=2021-05-19
+https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryNoProductCodeByMachine?pageSize=3  &sinceTime=2021-05-19
 ```
 
 #### 1.6.2 Response example
@@ -109,10 +109,10 @@ https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryNoProduct
     "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Collection(microsoft.windowsDefenderATP.api.AssetNonCpeSoftware)",
     "value": [
         {
-            "deviceId": "001bc7cafeff420f9f757dc710723ad800e91938",
+            "deviceId": "001bc7cafeff420f9f757dc710723ad800e91600",
             "rbacGroupId": 1,
             "rbacGroupName": "UnassignedGroup",
-            "deviceName": "csvm583023422gu.sys-sqlsvr.local",
+            "deviceName": "mymachine1.contoso",
             "osPlatform": "WindowsServer2022",
             "softwareVendor": null,
             "softwareName": "microsoft_edge_update",
@@ -120,10 +120,10 @@ https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryNoProduct
             "softwareLastSeenTimestamp": "2022-05-18 12:14:01.39"
         },
         {
-            "deviceId": "001bc7cafeff420f9f757dc710723ad800e91938",
+            "deviceId": "001bc7cafeff420f9f757dc710723ad800e91600",
             "rbacGroupId": 1,
             "rbacGroupName": "UnassignedGroup",
-            "deviceName": "csvm583023422gu.sys-sqlsvr.local",
+            "deviceName": "mymachine2.contoso",
             "osPlatform": "WindowsServer2022",
             "softwareVendor": "microsoft",
             "softwareName": "microsoft_visual_c++_2015_redistributable_(x64)_-_14.0.23506\u0000",
@@ -131,38 +131,16 @@ https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryNoProduct
             "softwareLastSeenTimestamp": "2022-05-20 02:59:06.971"
         },
         {
-            "deviceId": "001e63177328b3cd6f5572dbfac1c401971eb1ab",
+            "deviceId": "001e63177328b3cd6f5572dbfac1c401971eb3ef",
             "rbacGroupId": 1,
             "rbacGroupName": "UnassignedGroup",
-            "deviceName": "csvm404750365te.sys-sqlsvr.local",
+            "deviceName": "mymachine3.contoso",
             "osPlatform": "WindowsServer2019",
             "softwareVendor": "microsoft",
             "softwareName": "microsoft_wtt_2.6_-_client\u0000",
             "softwareVersion": "2.2.0.0",
             "softwareLastSeenTimestamp": "2022-05-17 09:10:47.891"
         },
-        {
-            "deviceId": "001e63177328b3cd6f5572dbfac1c401971eb1ab",
-            "rbacGroupId": 1,
-            "rbacGroupName": "UnassignedGroup",
-            "deviceName": "csvm404750365te.sys-sqlsvr.local",
-            "osPlatform": "WindowsServer2019",
-            "softwareVendor": "microsoft",
-            "softwareName": "microsoft_visual_studio_tools_for_applications_x64_runtime_3.0\u0000",
-            "softwareVersion": "10.0.40220.0",
-            "softwareLastSeenTimestamp": "2022-05-17 10:05:31.881"
-        },
-        {
-            "deviceId": "001e63177328b3cd6f5572dbfac1c401971eb1ab",
-            "rbacGroupId": 1,
-            "rbacGroupName": "UnassignedGroup",
-            "deviceName": "csvm404750365te.sys-sqlsvr.local",
-            "osPlatform": "WindowsServer2019",
-            "softwareVendor": "microsoft",
-            "softwareName": "microsoft_visual_c++_2008_redistributable_-_x86_9.0.30729.4974\u0000",
-            "softwareVersion": "9.0.30729.4974",
-            "softwareLastSeenTimestamp": "2022-05-17 10:05:36.128"
-        }
     ],
         "@odata.nextLink": "https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryNoProductCodeByMachine?pagesize=5%20%20&sincetime=2021-05-19&$skiptoken=eyJFeHBvcnREZWZpbml0aW9uIjp7IlRpbWVQYXRoIjoiMjAyMi0wNS0zMC8xMTAxLyJ9LCJFeHBvcnRGaWxlSW5kZXgiOjAsIkxpbmVTdG9wcGVkQXQiOjV9"
 }
