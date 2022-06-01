@@ -26,12 +26,26 @@ This article describes the limits in the Microsoft Purview eDiscovery (Premium) 
 
 ## Case and review set limits
 
-The following table lists the limits for cases and review sets in eDiscovery (Premium).
+The following table lists the limits for cases and review sets in eDiscovery (Premium) using the classic case format.
 
 |Description of limit|Limit|
 |---|---|
 |Total number of documents that can be added to a case (for all review sets in a case).|3 million|
 |Total file size per load set. This includes loading non-Office 365 into a review set.|300 GB|
+|Total amount of data loaded into all review sets in the organization per day.<br/>|2 TB|
+|Maximum number of load sets per case.|200|
+|Maximum number of review sets per case.|20|
+|Maximum number of tag groups per case.|1,000|
+|Maximum number of unique tags per case.|1,000<sup>1</sup>|
+|Maximum concurrent jobs in your organization to add content to a review set. These jobs are named **Adding data to a review set** and are displayed on the **Jobs** tab in a case.|10<sup>2</sup>|
+|Maximum concurrent jobs to add content to a review set per user. These jobs are named **Adding data to a review set** and are displayed on the **Jobs** tab in a case.|3|
+
+The following table lists the limits for cases and review sets in eDiscovery (Premium) using the new case format.
+
+|Description of limit|Limit|
+|---|---|
+|Total number of documents that can be added to a case (for all review sets in a case).|40 million|
+|Total file size per load set. This includes loading non-Office 365 into a review set.|1 TB|
 |Total amount of data loaded into all review sets in the organization per day.<br/>|2 TB|
 |Maximum number of load sets per case.|200|
 |Maximum number of review sets per case.|20|
