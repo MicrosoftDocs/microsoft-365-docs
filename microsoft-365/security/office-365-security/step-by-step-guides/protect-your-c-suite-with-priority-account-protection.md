@@ -45,5 +45,5 @@ To learn what priority account tags are see [Manage and monitor priority account
 ## PowerShell configuration
 If you want to achieve these steps via PowerShell, you can do this using the following cmdlets:
 1. View a list of priority accounts: **Get-User -IsVIP | select Identity**
-1. Add user to list of priority accounts: **Set-User -VIP:$true -Identity <Identity>**
-1. Remove user from list of priority accounts: **Set-User -VIP:$false -Identity <Identity>**
+1. Add user to list of priority accounts: **Set-User -VIP:$true -Identity \<Identity\>**
+1. Remove user from list of priority accounts: **Set-User -VIP:$false -Identity \<Identity\>**
