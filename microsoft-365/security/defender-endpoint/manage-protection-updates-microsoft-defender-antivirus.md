@@ -83,8 +83,6 @@ Security intelligence updates are also delivered multiple times a day, but this 
 
 Each source has typical scenarios that depend on how your network is configured, in addition to how often they publish updates, as described in the following table:
 
-<br/><br/>
-
 |Location|Sample scenario|
 |---|---|
 |Windows Server Update Service|You are using Windows Server Update Service to manage updates for your network.|
