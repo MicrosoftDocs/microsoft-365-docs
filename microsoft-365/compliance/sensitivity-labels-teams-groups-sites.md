@@ -384,6 +384,7 @@ The following apps and services don't currently support sensitivity labels confi
   - Yammer
   - Project
   - Power BI
+  - My Apps portal
 
 ## Classic Azure AD group classification
 
