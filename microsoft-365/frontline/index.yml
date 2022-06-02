@@ -1,0 +1,87 @@
+### YamlMime:Hub
+
+title: Microsoft 365 for frontline workers # < 60 chars
+summary: Microsoft 365 for frontline workers provides simple, intuitive, and secure solutions you can deploy to support the frontline workers who are essential to your business. # < 160 chars
+# brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-apps | power-automate | power-bi | power-platform | power-virtual-agents | sql | sql-server | vs | visual-studio | windows | xamarin
+brand: m365
+
+metadata:
+  title: Microsoft 365 for frontline workers # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Deploy and manage simple, intuitive, and secure solutions for your essential frontline workers with Microsoft 365 for frontline workers. # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: microsoft-365-frontline #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.topic: hub-page # Required
+  author: samanro #Required; your GitHub user alias, with correct capitalization.
+  ms.author: samanro #Required; microsoft alias of author; optional team alias.
+  manager: pamgreen
+  audience: Admin
+  ms.date: 04/07/2022 #Required; mm/dd/yyyy format.
+
+# productDirectory section (optional)
+productDirectory:
+  items:
+    # Card
+    - title: What is Microsoft 365 for frontline workers?
+      # imageSrc should be square in ratio with no whitespace
+      imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
+      links:
+        - url: flw-overview.md
+          text: Overview
+        - url: flw-licensing-options.md
+          text: Licensing options for frontline workers
+    # Card
+    - title: Set up and configure Microsoft 365 for frontline workers
+      # imageSrc should be square in ratio with no whitespace
+      imageSrc: https://docs.microsoft.com/office/media/icons/deploy-blue.svg
+      links:
+        - url: ./file2a.md OR /file2a
+          text: Start with a pilot deployment
+        - url: ./file2a.md OR /file2a
+          text: Extend your pilot to a full deployment
+        - url: ./file2a.md OR /file2a
+          text: Manage devices
+    # Card
+    - title: Onboard and train users
+      imageSrc: https://docs.microsoft.com/office/media/icons/users-group.svg
+      links:
+        - url: flw-onboarding-wizard.md
+          text: Onboard your users
+        - url: https://adoption.microsoft.com/microsoft-teams/frontline-workers/
+          text: Adoption resources
+        - url: https://support.microsoft.com/en-us/office/microsoft-teams-video-training-4f108e54-240b-4351-8084-b1089f0d21d7
+          text: End user training
+    # Card
+    - title: Solutions to transform your business
+      imageSrc: https://docs.microsoft.com/office/media/icons/lightbulb-idea-capture-blue.svg
+      links:
+        - url: retail-team-collaboration.md
+          text: Communication
+        - url: bookings-virtual-visits.md
+          text: Virtual appointments
+        - url: shifts-for-teams-landing-page.md
+          text: Schedule management
+        - url: /sharepoint/onboard-employees
+          text: Training and onboarding
+        - url: retail-business-processes.md
+          text: Digitized processes
+    # Card
+    - title: Solutions for your industry
+      imageSrc: https://docs.microsoft.com/office/media/icons/walkthrough-map-blue.svg
+      links:
+        - url: teams-in-hc.md
+          text: Healthcare
+        - url: teams-for-nonprofit-landing-page.md
+          text: Nonprofit
+        - url: teams-for-retail-landing-page.md
+          text: Retail
+    # Card
+    - title: Apps for frontline workers
+      imageSrc: https://docs.microsoft.com/office/media/icons/blocks-blue.svg
+      links:
+        - url: /microsoftteams/bookings-app-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+          text: Bookings
+        - url: /microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams
+          text: Shifts
+        - url: /microsoftteams/manage-tasks-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+          text: Tasks
+        - url: ./file2a.md OR /file2a
+          text: More >
