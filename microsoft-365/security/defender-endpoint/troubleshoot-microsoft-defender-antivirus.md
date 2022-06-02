@@ -2845,7 +2845,7 @@ This error indicates that there might be a problem with your security product.
 </tr><tr><td>Resolution</td><td>
 <ol>
 <li>Update the definitions. Either:<ol>
-<li>Click the <b>Update definitions</b> button on the <b>Update</b> tab in Microsoft Defender Antivirus. <img src="images/defender-updatedefs2.png" alt="Update definitions in Microsoft Defender Antivirus"/>Or,
+<li>Get your security intelligence updates in the Windows Security app. <img src="images/defender-updatedefs2.png" alt="Update definitions in Microsoft Defender Antivirus"/>Or,
 </li>
 <li>Download the latest definitions from the <a href="https://aka.ms/wdsi">Microsoft Security Intelligence site</a>.
 Note: The size of the definitions file downloaded from the site can exceed 60 MB and should not be used as a long-term solution for updating definitions.

@@ -22,7 +22,7 @@ ms.prod: m365-security
 ---
 # Detect and Remediate Outlook Rules and Custom Forms Injections Attacks
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Summary** Learn how to recognize and remediate the Outlook rules and custom Forms injections attacks in Office 365.
 

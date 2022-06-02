@@ -38,9 +38,7 @@ The global admin for your organization has full permissions to create and manage
 
 ## Create and configure sensitivity labels
 
-1. From the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), select **Solutions** > **Information protection**
-    
-    If you don't immediately see this option, first select **Show all**.
+1. From the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), select **Solutions** > **Information protection** > **Labels**
 
 2. On the **Labels** page, select **+ Create a label** to start the new sensitivity label configuration: 
     
@@ -123,11 +121,9 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 ## Publish sensitivity labels by creating a label policy
 
-1. From the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), select **Solutions** > **Information protection**
-    
-    If you don't immediately see this option, first select **Show all**.
+1. From the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), select **Solutions** > **Information protection** > **Label policies**
 
-2. Select the **Label policies** tab, and then **Publish label** to start the **Create policy** configuration:
+2. On the **Label policies** page, select **Publish label** to start the **Create policy** configuration:
     
     ![Publish labels.](../media/publish-sensitivity-labels-full.png)
     

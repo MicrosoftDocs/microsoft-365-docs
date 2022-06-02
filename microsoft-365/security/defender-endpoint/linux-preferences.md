@@ -97,7 +97,7 @@ Determines whether behavior monitoring and blocking capability is enabled on the
 |---|---|
 |**Key**|behaviorMonitoring|
 |**Data type**|String|
-|**Possible values**|disabled (default) <p> enabled (default)|
+|**Possible values**|disabled (default) <p> enabled |
 |**Comments**|Available in Defender for Endpoint version 101.45.00 or higher.|
   
 #### Run a scan after definitions are updated
@@ -486,7 +486,6 @@ The following configuration profile will:
 ```JSON
 {
    "antivirusEngine":{
-      "behaviorMonitoring":"enabled",
       "enforcementLevel":"real_time",
       "threatTypeSettings":[
          {
@@ -517,7 +516,6 @@ The following configuration profile contains entries for all settings described 
 ```JSON
 {
    "antivirusEngine":{
-      "behaviorMonitoring":"enabled",
       "enforcementLevel":"real_time",
       "scanAfterDefinitionUpdate":true,
       "scanArchives":true,
