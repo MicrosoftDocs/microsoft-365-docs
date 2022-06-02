@@ -7,7 +7,7 @@ ms.author: tinachen
 manager: rshastri
 audience: Software-Vendor
 ms.topic: troubleshooting
-ms.date: 05/30/2022
+ms.date: 06/02/2022
 ms.service: virtual-desktop
 ms.localizationpriority: medium
 ms.collection: TestBase-M365
