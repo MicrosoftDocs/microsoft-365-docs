@@ -47,7 +47,7 @@ All remediation actions are tracked in the Action center.
 
 3. Select the **Pending** tab to view and approve (or reject) any pending actions. Actions can arise from antivirus/antimalware protection, automated investigations, manual response activities, or live response sessions.
 
-4. Select the **History** tab to view a list of completed actions. 
+4. Select the **History** tab to view a list of completed actions.
 
 ## Remediation actions
 

@@ -56,7 +56,7 @@ The following table describes the three roles that can be assigned in Defender f
    - Security reader
 
    > [!IMPORTANT]
-   > Microsoft recommends granting people access to only what they need to perform their tasks. We call this concept *least privilege* for permissions. To learn more, see [Best practices for least-privileged access for applications](/azure/active-directory/develop/secure-least-privileged-access). 
+   > Microsoft recommends that you grant people access to only what they need to perform their tasks. We call this concept *least privilege* for permissions. To learn more, see [Best practices for least-privileged access for applications](/azure/active-directory/develop/secure-least-privileged-access). 
 
 4. In the side pane, select the **Manage members in Azure AD** link. This action takes you to Azure Active Directory (Azure AD), where you can view and manage your role assignments.
 
@@ -71,7 +71,7 @@ If you haven't already added users to your subscription, see [Add users and assi
 
 ## Next steps
 
-Proceed to:
+Go to:
 
 - [Step 3: Set up email notifications](mdb-email-notifications.md)
 - [Step 4: Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md)
