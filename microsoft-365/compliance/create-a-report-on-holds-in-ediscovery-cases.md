@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
-ms.date: 9/11/2017
+ms.date: 05/10/2022
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -26,7 +26,7 @@ description: Learn how to generate a report that contains information about all 
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-The script in this article lets eDiscovery administrators and eDiscovery managers generate a report that contains information about all holds that are associated with Core and eDiscovery (Premium) cases in the Microsoft Purview compliance portal. The report contains information such as the name of the case a hold is associated with, the content locations that are placed on hold, and whether the hold is query-based. If there are cases that don't have any holds, the script will create an additional report with a list of cases without holds.
+The script in this article lets eDiscovery administrators and eDiscovery managers generate a report that contains information about all holds that are associated with eDiscovery (Standard) and eDiscovery (Premium) cases in the Microsoft Purview compliance portal. The report contains information such as the name of the case a hold is associated with, the content locations that are placed on hold, and whether the hold is query-based. If there are cases that don't have any holds, the script will create an additional report with a list of cases without holds.
 
 See the [More information](#more-information) section for a detailed description of the information included in the report.
 
@@ -198,7 +198,7 @@ The case holds report that's created when you run the script in this article con
 
 - The name of the hold and the name of the eDiscovery case that the hold is associated with.
 
-- Whether the hold is associated with a Core or eDiscovery (Premium) case.
+- Whether the hold is associated with a eDiscovery (Standard) or eDiscovery (Premium) case.
 
 - Whether or not the eDiscovery case is active or closed.
 

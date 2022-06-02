@@ -21,6 +21,8 @@ description: "Learn how retention works for Exchange."
 
 # Learn about retention for Exchange
 
+>*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 The information in this article supplements [Learn about retention](retention.md) because it has information that's specific to Exchange.  For other workloads, see:
@@ -38,6 +40,8 @@ Calendar items that have an end date are supported for retention policies but ar
 Contacts, and any tasks and calendar items that don't have an end date are not supported.
 
 Other items stored in a mailbox, such as Skype and Teams messages, aren't included in retention policies or labels for Exchange. These items have their own retention policies.
+
+Mailboxes must have at least 10 MB of data before retention settings will apply to them, and retention labels can be published to them.
 
 ## How retention works for Exchange
 

@@ -17,7 +17,11 @@ description: Create and grade assignments, build and curate course content, and 
 
 # Integrate Microsoft OneDrive LTI with Canvas
 
-Integrating Microsoft OneDrive LTI with Canvas is a two step process. The first step enables Microsoft OneDrive in Canvas, and the second step makes the Microsoft OneDrive LTI available within Canvas courses.
+This article is for education IT admins who need to set up the Microsoft OneDrive LTI for Canvas.
+
+For instructions for educators on how to use the OneDrive LTI in Canvas, see [Use Microsoft OneDrive with your LMS](https://support.microsoft.com/topic/use-microsoft-onedrive-with-your-lms-c2ddeb48-f695-4267-94f2-14f7ff1b7bdd).
+
+Integrating Microsoft OneDrive LTI with Canvas is a two-step process. The first step enables Microsoft OneDrive in Canvas, and the second step makes the Microsoft OneDrive LTI available within Canvas courses.
 
 ## Recommended browser settings
 
@@ -62,16 +66,23 @@ Integrating Microsoft OneDrive LTI with Canvas is a two step process. The first 
     >
     > For more information on how educators can modify their course navigation links, see [How do I manage Course Navigation links?](https://community.canvaslms.com/t5/Instructor-Guide/How-do-I-manage-Course-Navigation-links/ta-p/1020)
 
-7. Save the key, and it becomes available in Canvas in an **Off** state. Turn the key **On** and copy the key given in the **Details** column to be used in the next step.
+7. Next, expand the **Additional settings** dropdown and set the **Privacy Level** to **Public**. 
+  
+   Setting the **Privacy Level** to **Public** allows course members' names to appear to other members for collaboration.
+
+8. Save the key, and it becomes available in Canvas in an **Off** state. Turn the key **On** and copy the key given in the **Details** column to be used in the next step.
 
    :::image type="content" source="media/OneDrive-LTI-19.png" alt-text="The Canvas page with the key set in an off state. It will need to be turned on and the key will need to be copied from the details column on this page.":::
 
-8. Return to the Microsoft OneDrive LTI Registration portal and paste the key in the **Canvas Client ID** field. Select **Next** when you're ready.
+9. Return to the Microsoft OneDrive LTI Registration portal and paste the key in the **Canvas Client ID** field. Select **Next** when you're ready.
 
    :::image type="content" source="media/OneDrive-LTI-20.png" alt-text="The LTI tenant registration page, which shows the JSON text and the text box the key should be copied into.":::
 
-9. Review and save your changes. A message will be displayed on successful registration.
-10. Your registration details can also be reviewed by selecting the **View LTI Tenants** button on the home page.
+10. Review and save your changes. A message will be displayed on successful registration.
+
+11. Your registration details can also be reviewed by selecting the **View LTI Tenants** button on the home page.
+
+Future releases may require additional admin consent. In those cases, you'll need to repeat only steps 1 and 2.
 
 ## Enable Microsoft OneDrive LTI in Canvas Courses
 

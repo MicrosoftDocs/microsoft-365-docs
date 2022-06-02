@@ -310,6 +310,8 @@
                   href: advanced-hunting-devicefromip-function.md
                 - name: FileProfile()
                   href: advanced-hunting-fileprofile-function.md
+                - name: SeenBy()
+                  href: advanced-hunting-seenby-function.md
              - name: Custom detections
                items: 
                 - name: Custom detections overview
@@ -328,6 +330,16 @@
                 href: microsoft-threat-experts.md
               - name: Configure and manage Microsoft Threat Experts capabilities
                 href: configure-microsoft-threat-experts.md
+       - name: Collaborate with Microsoft Defender Experts for Hunting
+         items:
+              - name: Overview
+                href: defenderexpertsforhuntingprev.md
+       - name: Ransomware playbooks
+         items: 
+              - name: Detecting human-operated ransomware attacks with Microsoft 365 Defender
+                href: playbook-detecting-ransomware-m365-defender.md
+              - name: Responding to ransomware attacks
+                href: playbook-responding-ransomware-m365-defender.md
     - name: Security operations guide
       items: 
        - name: Overview
@@ -491,3 +503,5 @@
          href: /cloud-app-security
        - name: Defender for Business
          href: ../defender-business/index.yml
+       - name: Defender Vulnerability Management
+         href: ../defender-vulnerability-management/index.yml
