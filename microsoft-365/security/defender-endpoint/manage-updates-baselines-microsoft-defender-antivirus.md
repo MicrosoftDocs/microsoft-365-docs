@@ -295,7 +295,7 @@ No known issues
 
 ### What's new
 - Device control support added for Windows Portable Devices
-- Potentially unwanted applications (PUA) protection is turned on by default for consumers (See [Block potentially unwanted applications with Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus))
+- Potentially unwanted applications (PUA) protection is turned on by default for consumers (See [Block potentially unwanted applications with Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus).)
 - Scheduled scans for Group Policy Object managed systems will adhere to user configured scan time
 - Improvements to the behavior monitoring engine
 
