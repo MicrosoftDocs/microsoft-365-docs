@@ -10,7 +10,6 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 10/18/2021
 ms.reviewer:
 manager: dansimp
 ms.technology: mde
