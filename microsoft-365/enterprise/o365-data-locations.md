@@ -3,7 +3,7 @@ title: "Microsoft 365 data locations"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 05/31/2022
+ms.date: 06/02/2022
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -748,7 +748,6 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | Viva Insights - Manager/Leader with 3rd party HR data only | United States |
 | Viva Insights - Advanced | United States |
 </p></details>
-
 
 ## Belarus
 <details><summary>Click to expand</summary><p>
@@ -1618,7 +1617,6 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | Viva Insights - Advanced | United States |
 </p></details>
 
-
 ## Congo (Brazzaville)
 <details><summary>Click to expand</summary><p>
 
@@ -1647,7 +1645,6 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | Viva Insights - Advanced | United States |
 </p></details>
 
-
 ## Congo, (Kinshasa)
 <details><summary>Click to expand</summary><p>
 
@@ -1675,7 +1672,6 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | Viva Insights - Manager/Leader with 3rd party HR data only | United States |
 | Viva Insights - Advanced | United States |
 </p></details>
-
 
 ## Cook Islands
 <details><summary>Click to expand</summary><p>
@@ -2629,7 +2625,6 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | Viva Insights - Advanced | United States |
 </p></details>
 
-
 ## Greenland
 <details><summary>Click to expand</summary><p>
 
@@ -3105,7 +3100,6 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | Viva Insights - Manager/Leader with 3rd party HR data only | United States |
 | Viva Insights - Advanced | United States |
 </p></details>
-
 
 ## India
 <details><summary>Click to expand</summary><p>
@@ -3695,7 +3689,6 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | Viva Insights - Advanced | United States |
 </p></details>
 
-
 ## Lesotho
 <details><summary>Click to expand</summary><p>
 
@@ -3723,7 +3716,6 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | Viva Insights - Manager/Leader with 3rd party HR data only | United States |
 | Viva Insights - Advanced | United States |
 </p></details>
-
 
 ## Liberia
 <details><summary>Click to expand</summary><p>
@@ -3780,7 +3772,6 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | Viva Insights - Manager/Leader with 3rd party HR data only | United States |
 | Viva Insights - Advanced | United States |
 </p></details>
-
 
 ## Liechtenstein
 <details><summary>Click to expand</summary><p>
@@ -4482,7 +4473,6 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | Viva Insights - Advanced | United States |
 </p></details>
 
-
 ## Nepal
 <details><summary>Click to expand</summary><p>
 
@@ -4510,7 +4500,6 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | Viva Insights - Manager/Leader with 3rd party HR data only | United States |
 | Viva Insights - Advanced | United States |
 </p></details>
-
 
 ## Netherlands
 <details><summary>Click to expand</summary><p>
@@ -4567,7 +4556,6 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | Viva Insights - Manager/Leader with 3rd party HR data only | United States |
 | Viva Insights - Advanced | United States |
 </p></details>
-
 
 ## New Caledonia
 <details><summary>Click to expand</summary><p>
@@ -5301,7 +5289,6 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 ## Russian Federation
 <details><summary>Click to expand</summary><p>
 
-
 | Service | Location |
 | --- | --- |
 | Exchange Online | Global Geography 1 – EMEA |
@@ -5330,7 +5317,6 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 ## Rwanda
 <details><summary>Click to expand</summary><p>
 
-
 | Service | Location |
 | --- | --- |
 | Exchange Online | Global Geography 1 – EMEA |
@@ -5358,7 +5344,6 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 
 ## Saint Helena
 <details><summary>Click to expand</summary><p>
-
 
 | Service | Location |
 | --- | --- |
@@ -5919,7 +5904,6 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 
 ## Somalia
 <details><summary>Click to expand</summary><p>
-
 
 | Service | Location |
 | --- | --- |
@@ -6896,7 +6880,6 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | Viva Insights - Manager/Leader with 3rd party HR data only | United States |
 | Viva Insights - Advanced | United States |
 </p></details>
-
 
 ## Vietnam
 <details><summary>Click to expand</summary><p>
