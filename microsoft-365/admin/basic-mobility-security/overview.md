@@ -45,7 +45,7 @@ Here's a summary of the steps:
 
 **Step 3:** Create device policies and apply them to groups of users. When you do this, your users get an enrollment message on their device, and when they've completed enrollment, their devices are restricted by the policies you've set up for them. For more info, see [Enroll your mobile device using Basic Mobility and Security](enroll-your-mobile-device.md). 
 
-:::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="Basic Security and Mobility policy settings.":::
+:::image type="content" source="../../media/basic-mobility-security/basic-mobility-microsoft-purview.png" alt-text="Basic Security and Mobility policy settings.":::
 
 ## Device management tasks
 
