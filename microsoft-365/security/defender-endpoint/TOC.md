@@ -497,7 +497,7 @@
 
 ###### [Browser extensions]()
 ####### [Export broswer extenstions assessment](get-assessment-browser-extensions.md)
-####### [Get browser extenstions permisson information](get-browser-extensions-permisson-info.md)
+####### [Get browser extenstions permisson information](get-browser-extensions-permission-info.md)
 
 ###### [Automated investigation]()
 ####### [Investigation methods and properties](investigation.md)
