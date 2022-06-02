@@ -17,7 +17,7 @@ MS.technology: mde
 ms.custom: api
 ---
 
-# List vulnerabilities
+# Get browser extensions permission information
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
