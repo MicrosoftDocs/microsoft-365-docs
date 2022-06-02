@@ -33,9 +33,9 @@ description: "Learn how to validate the Microsoft 365 Business Premium app prote
 
 Follow the instructions in the following sections to validate app protection settings on Android or iOS devices.
   
-## Android
-  
-### Check that the app protection settings are working on user devices
+[Android](#tab/Android)  
+
+## Check that the app protection settings are working on user devices
 
 After you [set app protection settings for Android or iOS devices](../business-premium/m365bp-app-protection-settings-for-android-and-ios.md) to protect the apps, you can follow these steps to validate the settings you chose.
   
@@ -122,9 +122,9 @@ In the **Edit policy** pane, choose **Edit** next to **Protection against lost o
 
     ![An encrypted image file in the Gallery app.](../business-premium/media/25936414-bd7e-421d-824e-6e59b877722d.png)
   
-## iOS
-  
-### Check that the App protection settings are working on user devices
+## [iOS](#tab/iOS)
+
+## Check that the App protection settings are working on user devices
 
 After you [set app configurations for iOS devices](../business-premium/m365bp-protection-settings-for-windows-10-devices.md) to protect apps, you can follow these steps to validate that the settings you chose work. 
   
