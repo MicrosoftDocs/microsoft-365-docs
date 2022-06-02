@@ -36,4 +36,4 @@ Scheduler uses several Outlook preferences to schedule a meeting for an organize
 
 > [!NOTE]
 > If you use the Windows client, you must select **Store my Outlook settings in the cloud** to sync your preferences across Scheduler and other Outlook clients.
-> :::image type="content" source="../media/OutlookOptions2.png" alt-text="Outlook Calendar options dialog in Windows. Select **Store my Outlook settings in the cloud** to sync scheduling preferences across clients.":::
+> :::image type="content" source="../media/OutlookOptions2.png" alt-text="Outlook Calendar options dialog in Windows. Select Store my Outlook settings in the cloud to sync scheduling preferences across clients.":::
