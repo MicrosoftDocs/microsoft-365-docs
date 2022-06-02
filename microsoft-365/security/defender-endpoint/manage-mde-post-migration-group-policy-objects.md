@@ -16,7 +16,6 @@ ms.collection:
   - M365-security-compliance
   - m365solution-scenario
 ms.topic: article
-ms.date: 11/29/2021
 ms.reviewer: chventou
 ---
 
@@ -40,8 +39,6 @@ You can use Group Policy Objects in Azure Active Directory Domain Services to ma
 > If you're using [the new, unified Microsoft Defender for Endpoint solution for Windows Server 2012 R2 and 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview), please ensure you are using the latest ADMX files in your central store to get access to the correct Microsoft Defender for Endpoint policy options. Please reference [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) and download the latest files **for use with Windows 10**. 
 
 The following table lists various tasks you can perform to configure Microsoft Defender for Endpoint with Group Policy Objects.
-
-<br/><br/>
 
 |Task|Resources to learn more|
 |---|---|
