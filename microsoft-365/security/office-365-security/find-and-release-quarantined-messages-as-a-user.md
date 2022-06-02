@@ -25,7 +25,7 @@ ms.prod: m365-security
 
 # Find and release quarantined messages as a user in EOP
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -212,5 +212,5 @@ When you select multiple quarantined messages in the list (up to 100) by clickin
 
 :::image type="content" source="../../media/quarantine-user-message-bulk-actions.png" alt-text="The bulk actions drop down list for messages in quarantine" lightbox="../../media/quarantine-user-message-bulk-actions.png":::
 
-- ![Release email icon.](../../media/m365-cc-sc-check-mark-icon.png) **Release messages**: Delivers the messages to your Inbox.
+- ![Release messages icon.](../../media/m365-cc-sc-check-mark-icon.png) **Release messages**: Delivers the messages to your Inbox.
 - ![Remove from quarantine icon.](../../media/m365-cc-sc-delete-icon.png) **Delete messages**:  After you click **Yes** in the warning that appears, the messages are immediately removed from quarantine without being sent to the original recipients.

@@ -24,7 +24,7 @@ ms.prod: m365-security
 
 # Set up Safe Links policies in Microsoft Defender for Office 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
@@ -300,6 +300,20 @@ This example creates a safe links rule named Contoso All with the following cond
 New-SafeLinksRule -Name "Contoso All" -SafeLinksPolicy "Contoso All" -RecipientDomainIs contoso.com
 ```
 
+This example creates a safe links rule that's similar to the previous example, but in this example, the rule applies to recipients in all accepted domains in the organization.
+
+```powershell
+New-SafeLinksRule -Name "Contoso All" -SafeLinksPolicy "Contoso All" -RecipientDomainIs (Get-AcceptedDomain).Name
+```
+
+This example creates a safe links rule that's similar to the previous examples, but in this example, the rule applies to recipients in the domains specified in a .csv file.
+
+```powershell
+$Data = Import-Csv -Path "C:\Data\SafeLinksDomains.csv"
+$SLDomains = $Data.Domains
+New-SafeLinksRule -Name "Contoso All" -SafeLinksPolicy "Contoso All" -RecipientDomainIs $SLDomains
+```
+
 For detailed syntax and parameter information, see [New-SafeLinksRule](/powershell/module/exchange/new-safelinksrule).
 
 ### Use PowerShell to view safe links policies
@@ -385,6 +399,20 @@ To modify a safe links rule, use this syntax:
 
 ```PowerShell
 Set-SafeLinksRule -Identity "<RuleName>" <Settings>
+```
+
+This example adds all accepted domains in the organization as a condition to the safe links rule named Contoso All.
+
+```powershell
+Set-SafeLinksRule -Identity "Contoso All" -RecipientDomainIs (Get-AcceptedDomain).Name
+```
+
+This example adds the domains from the specified .csv as a condition to the safe links rule named Contoso All.
+
+```powershell
+$Data = Import-Csv -Path "C:\Data\SafeLinksDomains.csv"
+$SLDomains = $Data.Domains
+Set-SafeLinksRule -Identity "Contoso All" -RecipientDomainIs $SLDomains
 ```
 
 For detailed syntax and parameter information, see [Set-SafeLinksRule](/powershell/module/exchange/set-safelinksrule).
