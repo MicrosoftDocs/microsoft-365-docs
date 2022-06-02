@@ -50,7 +50,7 @@ To start routing accounts to Microsoft 365 Defender:
 
 1. Navigate to **Settings** > **Identities** > **General** > **Portal redirection** or [click here](https://security.microsoft.com/preferences2/portal_redirection).
 
-    :::image type="content" source="../../media/portal-redirection.png" alt-text="Portal redirection.":::
+    :::image type="content" source="../../media/portal-redirection.png" alt-text="Portal redirection."lightbox="../../media/portal-redirection.png":::
 
 1. Toggle the Automatic redirection setting to **On**.
 
