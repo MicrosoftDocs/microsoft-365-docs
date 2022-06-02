@@ -1,5 +1,5 @@
 ---
-title: Set settings preferences for Scheduler for Microsoft 365 Overview
+title: Adjust scheduling preferences for Scheduler for Microsoft 365 Overview
 ms.author: shivb
 author: shivbijlani
 manager: charlle
@@ -7,7 +7,7 @@ audience: Admin
 ms.topic: article
 ms.service: scheduler
 ms.localizationpriority: medium
-description: Learn how to set scheduling preferences for Scheduler for Microsoft 365.
+description: Learn how to adjust scheduling preferences for Scheduler for Microsoft 365.
 ---
 
 # Scheduling preferences used by Scheduler
