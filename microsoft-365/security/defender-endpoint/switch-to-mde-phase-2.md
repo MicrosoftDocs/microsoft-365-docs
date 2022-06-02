@@ -19,7 +19,6 @@ ms.collection:
   - m365solution-symantecmigrate
 ms.topic: article
 ms.custom: migrationguides
-ms.date: 04/01/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ---
 
@@ -139,7 +138,6 @@ This step of the setup process involves adding Defender for Endpoint to the excl
 > To get help configuring exclusions, refer to your solution provider's documentation.
 
 The specific exclusions to configure will depend on which version of Windows your endpoints or devices are running, and are listed in the following table.
-<br/><br/>
 
 | OS |Exclusions |
 |:--|:--|
@@ -165,11 +163,8 @@ When you add [exclusions to Microsoft Defender Antivirus scans](/windows/securit
 Keep the following points in mind:
 
 - *Path exclusions* exclude specific files and whatever those files access.
-
 - *Process exclusions* exclude whatever a process touches, but does not exclude the process itself.
-
 - List your process exclusions using their full path and not by their name only. (The name-only method is less secure.)
-
 - If you list each executable (.exe) as both a path exclusion and a process exclusion, the process and whatever it touches are excluded.
 
 ## Set up your device groups, device collections, and organizational units
