@@ -48,7 +48,7 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 
 Advance to the next article to get started with Step 2: **Learn how upload your package.**
 > [!div class="nextstepaction"]
-> [Next step](uploadApplication.md)
+> [Next step](uploadapplication.md)
 
 <!---
 Add button for next page
