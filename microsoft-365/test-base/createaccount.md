@@ -3,7 +3,7 @@ title: 'Create a new Test Base account'
 description: Details on how to create a new account on Test Base
 search.appverid: MET150
 author: mansipatel-usl
-ms.author: mapatel
+ms.author: rshastri
 manager: rshastri
 audience: Software-Vendor
 ms.topic: how-to
