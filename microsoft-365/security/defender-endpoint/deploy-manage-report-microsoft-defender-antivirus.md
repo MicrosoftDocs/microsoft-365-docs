@@ -11,7 +11,6 @@ ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 10/18/2018
 ms.reviewer:
 manager: dansimp
 ms.technology: mde
@@ -63,7 +62,7 @@ Microsoft Azure|Deploy Microsoft Antimalware for Azure in the [Azure portal, by 
 
 ## In this section
 
-Topic | Description
+Article | Description
 ---|---
 [Deploy and enable Microsoft Defender Antivirus protection](deploy-microsoft-defender-antivirus.md) | While the client is installed as a core part of Windows 10 or Windows 11, and traditional deployment does not apply, you will still need to enable the client on your endpoints with Microsoft Endpoint Configuration Manager, Microsoft Intune, or Group Policy Objects.
 [Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md) | There are two parts to updating Microsoft Defender Antivirus: updating the client on endpoints (product updates), and updating Security intelligence (protection updates). You can update Security intelligence in a number of ways, using Microsoft Endpoint Configuration Manager, Group Policy, PowerShell, and WMI.
