@@ -28,6 +28,8 @@ ms.custom: api
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
+This API returns all the data for installed software that doesn't has a [Common Platform Enumeration(CPE)](https://nvd.nist.gov/products/cpe), on a per-device basis. The information returned by this API, along with the information returned by the [Export software inventory assessment](get-assessment-non-cpe-software-inventory.md) API, for software that does have a CPE, gives you full visibility into the software installed across your organization and the devices it’s installed on.
+
 Different API calls get different types of data. Because the amount of data can be large, there are two ways it can be retrieved:
 
 - [Export non product code software inventory assessment **JSON response**](#1-export-non-product-code-software-inventory-assessment-json-response) The API pulls all data in your organization as Json responses. This method is best for _small organizations with less than 100-K devices_. The response is paginated, so you can use the \@odata.nextLink field from the response to fetch the next results.
@@ -109,40 +111,40 @@ https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryNoProduct
     "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Collection(microsoft.windowsDefenderATP.api.AssetNonCpeSoftware)",
     "value": [
         {
-            "deviceId": "001bc7cafeff420f9f757dc710723ad800e91600",
-            "rbacGroupId": 1,
-            "rbacGroupName": "UnassignedGroup",
-            "deviceName": "mymachine1.contoso",
-            "osPlatform": "WindowsServer2022",
-            "softwareVendor": null,
-            "softwareName": "microsoft_edge_update",
-            "softwareVersion": "1.3.161.35",
-            "softwareLastSeenTimestamp": "2022-05-18 12:14:01.39"
+           "deviceId": "1234512345123451234512345",
+            "rbacGroupId": 11,
+            "rbacGroupName": "London",
+            "deviceName": "Device1",
+            "osPlatform": "Windows11",
+            "softwareVendor": "microsoft",
+            "softwareName": "vs_communitymsi",
+            "softwareVersion": "11.11.31111.1",
+            "softwareLastSeenTimestamp": "2021-01-30 11:31:12.271"
         },
         {
-            "deviceId": "001bc7cafeff420f9f757dc710723ad800e91600",
-            "rbacGroupId": 1,
-            "rbacGroupName": "UnassignedGroup",
-            "deviceName": "mymachine2.contoso",
-            "osPlatform": "WindowsServer2022",
-            "softwareVendor": "microsoft",
-            "softwareName": "microsoft_visual_c++_2015_redistributable_(x64)_-_14.0.23506\u0000",
-            "softwareVersion": "14.0.23506.0",
-            "softwareLastSeenTimestamp": "2022-05-20 02:59:06.971"
+            "deviceId": "232323232323232322323232323",
+            "rbacGroupId": 23,
+            "rbacGroupName": "Tokyo",
+            "deviceName": "Device23",
+            "osPlatform": "Windows10",
+            "softwareVendor": "intel",
+            "softwareName": "intel®_software_installer",
+            "softwareVersion": "22.20.2.2",
+            "softwareLastSeenTimestamp": "2022-05-30 15:35:12.271"
         },
         {
-            "deviceId": "001e63177328b3cd6f5572dbfac1c401971eb3ef",
-            "rbacGroupId": 1,
-            "rbacGroupName": "UnassignedGroup",
-            "deviceName": "mymachine3.contoso",
-            "osPlatform": "WindowsServer2019",
-            "softwareVendor": "microsoft",
-            "softwareName": "microsoft_wtt_2.6_-_client\u0000",
-            "softwareVersion": "2.2.0.0",
-            "softwareLastSeenTimestamp": "2022-05-17 09:10:47.891"
+            "deviceId": "6565656565",
+            "rbacGroupId": 65,
+            "rbacGroupName": "Center",
+            "deviceName": "Device56",
+            "osPlatform": "Windows10",
+            "softwareVendor": "Lob Apps",
+            "softwareName": "Headtrax",
+            "softwareVersion": "60.273.3",
+            "softwareLastSeenTimestamp": "2022-05-05 15:35:12.271"
         },
     ],
-        "@odata.nextLink": "https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryNoProductCodeByMachine?pagesize=5%20%20&sincetime=2021-05-19&$skiptoken=eyJFeHBvcnREZWZpbml0aW9uIjp7IlRpbWVQYXRoIjoiMjAyMi0wNS0zMC8xMTAxLyJ9LCJFeHBvcnRGaWxlSW5kZXgiOjAsIkxpbmVTdG9wcGVkQXQiOjV9"
+        "@odata.nextLink": "https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryNoProductCodeByMachine?pagesize=3%20%20&sincetime=2021-05-19&$skiptoken=eyJFeHBvcnREZWZpbml0aW9uIjp7IlRpbWVQYXRoIjoiMjAyMi0wNS0zMC8xMTAxLyJ9LCJFeHBvcnRGaWxlSW5kZXgiOjAsIkxpbmVTdG9wcGVkQXQiOjV9"
 }
 
 ```

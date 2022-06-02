@@ -28,7 +28,7 @@ ms.custom: api
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Returns all the data for known software on a per-device basis.
+This API returns all the data for installed software that has a [Common Platform Enumeration(CPE)](https://nvd.nist.gov/products/cpe), on a per-device basis. The information returned by this API, along with the information returned by the [Export non product code software inventory assessment](get-assessment-non-cpe-software-inventory.md) API, for software that doesn't have a CPE, gives you full visibility into the software installed across your organization and the devices it’s installed on.
 
 Different API calls get different types of data. Because the amount of data can be large, there are two ways it can be retrieved:
 
@@ -47,7 +47,7 @@ Data that is collected (using either _Json response_ or _via files_) is the curr
 
 ### 1.1 API method description
 
-This API response contains all the data of installed software per device. Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion.
+This API response contains all the data of installed software that has a [Common Platform Enumeration(CPE)](https://nvd.nist.gov/products/cpe), per device. Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion.
 
 #### Limitations
 
