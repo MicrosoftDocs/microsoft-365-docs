@@ -163,6 +163,8 @@ There are a few different ways you can access a mailbox once you've been given a
 
 ::: moniker-end
 
+> [!NOTE]
+> **Send As** and **Send on Behalf** do not work in Outlook Desktop client with **HiddenFromAddressListsEnabled** parameter on the mailbox set to **True**, since they require  the mailbox to be visible in Outlook via Global Address List.
 
 ## Related content
   
