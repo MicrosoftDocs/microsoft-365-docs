@@ -22,15 +22,13 @@ To manage iOS devices such as iPads and iPhones in Basic Mobility and Security, 
 
 1. Sign in to Microsoft 365 with your global admin account.
 
-2. In your browser, type <https://protection.office.com/>.
+1. Go to the [Microsoft 365 admin center](https://portal.office.com/adminportal/home?#/MifoDevices), and choose **APNs Certificate for iOS**.
 
-3. Select **Data loss prevention** \> **Device management**, and choose **APNs Certificate for iOS devices**.
+1. On the Apple Push Notification Certificate Settings page, choose **Next**.
 
-4. On the Apple Push Notification Certificate Settings page, choose **Next**.
+1. Select Download your CSR file and save the certificate signing request to somewhere on your computer that you'll remember. Select **Next**.
 
-5. Select Download your CSR file and save the certificate signing request to somewhere on your computer that you'll remember. Select **Next**.
-
-6. On the Create an APNs certificate page:
+1. On the Create an APNs certificate page:
 
     1. Select Apple APNS Portal to open the Apple Push Certificates Portal.
 
@@ -48,10 +46,10 @@ To manage iOS devices such as iPads and iPhones in Basic Mobility and Security, 
        > [!TIP]
        > If you're having trouble downloading the certificate, refresh your browser.
 
-7. Go back to Microsoft 365, and select **Next** to get to the **Upload APNS certificate** page.
+1. Go back to Microsoft 365, and select **Next** to get to the **Upload APNS certificate** page.
 
-8. Browse to the APN certificate you downloaded from the Apple Push Certificates Portal.
+1. Browse to the APN certificate you downloaded from the Apple Push Certificates Portal.
 
-9. Select **Finish**.
+1. Select **Finish**.
 
 To complete setup, go back to the Security & Compliance Center \> **Security policies** \> **Device management** \> **Manage settings**.
