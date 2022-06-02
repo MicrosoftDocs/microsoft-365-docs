@@ -175,76 +175,77 @@ The **Recommendations** tab provides next-step actions and advice for investigat
  
 ## Suppress an alert
 
-Alert suppression provides the ability to tune and manage alerts in advance, before they trigger. This keeps the queue focused and saves triage time by hiding or resolving alerts automatically, each time a certain expected organizational behavior occurs and rule conditions are met. 
+Alert suppression provides the ability to tune and manage alerts in advance, before they trigger. This keeps the queue focused and saves triage time by hiding or resolving alerts automatically, each time a certain expected organizational behaviour occurs, and rule conditions are met.
 
-You can suppress alerts for the following options: 
+You need to create rule conditions based on evidence types such as files, processes, scheduled tasks and many other evidences that trigger the alert. Then apply the rule on the selected alert or any alert type that meets rule conditions to suppress the alert.
 
-- Set rule conditions based on evidence types such as AMSI script, WMI event, and scheduled tasks. 
-
-- Set rule conditions when a part of the detected evidence is available. The attributes of the triggering evidence and the attributes of the parent process are all auto populated in the Conditions builder.  
-
-You can set advanced conditions on multiple IOCs (indicators) with the Conditions builder, using AND, OR, and grouping options. IOCs are indicators such as files, processes, and evidence that trigger the alert. 
-
-Then apply the rule on the selected alert or any alert type that meets rule conditions. 
-
-> [!NOTE]
-> Adding at least one IOC to the rule condition is required to suppress any alert type.
 
 > [!NOTE]
 > Suppression of alerts is not recommended. However in certain situations, a known internal business application or security tests trigger an expected activity and you don't want to see these alerts. So, you can create a suppression rule for the alert. 
 
-To create a suppression rule for the alerts:
+### Create rule conditions to suppress alerts
+
+To create a suppression rule for alerts:
 
 1. Select the investigated alert. In the main alert page, select **Create suppression rule** in the summary details section of the alert page. 
 
-:::image type="content" source="../../media/investigate-alerts/suppression-click.png" lightbox="../../media/investigate-alerts/suppression-click.png" alt-text="Create separation rule action":::
+    :::image type="content" source="../../media/investigate-alerts/suppression-click.png" lightbox="../../media/investigate-alerts/suppression-click.png" alt-text="Create separation rule action":::
 
-2.	In the **Create suppression rule** pane, for example you can select **Only this alert type**. 
+2. In the **Create suppression rule** pane, select **Only this alert type** to apply the rule on the selected alert.
 
-> [!NOTE]
-> If you want to suppress any type of alerts based on a condition, for example, a file or a script that is clean, but creates a lot of alerts, select the **Any alert type based on IOC** option. 
-
-3. In the **IOCs** section, you can select **Choose IOCs**. 
-
-> [!NOTE]
-> If in the **IOCs** section, you select **Any IOC**, there will be no **Conditions** tree, it means ‘whenever you see the alert, suppress it’. 
-
-:::image type="content" source="../../media/investigate-alerts/suppression-complex-IOCs.png" lightbox="../../media/investigate-alerts/suppression-complex-IOCs.png" alt-text="Create separation rule pane":::
-   
-4. You can select the **Auto fill all alert related IOCs** option to set rule conditions quickly, adding all alert related IOCs and their properties. Then, you can change and edit the fields as needed. 
-
-:::image type="content" source="../../media/investigate-alerts/autofill-IOCs.png" lightbox="../../media/investigate-alerts/autofill-IOCs.png" alt-text="Auto fill all alert related IOCs":::
+    However, to apply the rule on any alert type that meets rule conditions select **Any alert type based on IOC conditions**.
  
-5. For example, you can create suppression rule based on the file that triggered the alert. 
-Select the **Entity Role: Trigger** **Equals** as the file name. All the attributes of the file auto populate in the respective fields.<br> 
-You can use the **OR** operator to add another file name and its attributes. So, for either of the files triggering the alert, the alert will be suppressed.
+    IOCs are indicators such as files, processes, scheduled tasks, and other evidences that trigger the alert.
+     
+3. In the **IOCs** section, select **Any IOC** to suppress the alert no matter what evidence has caused the alert. 
+
+    To set multiple rule conditions, select **Choose IOCs**. Use **AND**, **OR** and grouping options to build relationship between these multiple evidence types that cause the alert.
+ 
+4.	For example, in the **Conditions** section, select the triggering evidence **Entity Role: Triggering**, **Equals** and select the evidence type from the drop-down list. 
+
+    :::image type="content" source="../../media/investigate-alerts/evidence-types-drop-down-list.png" alt-text="Evidence types drop-down list" lightbox="../../media/investigate-alerts/evidence-types-drop-down-list.png":::
+    1. All the properties of this evidence will auto populate as a new subgroup in the respective fields below.
+    :::image type="content" source="../../media/investigate-alerts/properties-evidence.png" alt-text="Properties of evidence auto-populate":::
+
+    2. You can edit and/or delete properties of this evidence as per your requirement (using wildcards, when supported).
+
+    3. Files, processes, AMSI script, WMI event, and scheduled tasks are some of the evidences that you can select from the evidence types drop-down list.
+    :::image type="content" source="../../media/defender/other-evidence-types.png" alt-text="Other types of evidence":::
+    4. To add another IOC, click **Add filter**. 
+    > [!NOTE]
+    > Adding at least one IOC to the rule condition is required to suppress any alert type.
+   
+ 
+6. Alternatively, you can select **Auto fill all alert 7 related IOCs** in the **IOC** section to add all alert related evidences and their properties at once in the **Conditions** section.
+    :::image type="content" source="../../media/investigate-alerts/auto-fill-IOCs.png" alt-text="Auto fill all alert related IoCs":::
+
+7. In the **Scope** section, set the Scope in the **Conditions** sub-section by selecting specific device, multiple devices, device groups, the entire organization or by user.
+    > [!NOTE]
+    > You must have Admin permission when the **Scope** is set only for **User**. Admin permission is not required when the **Scope** is set for **User** together with **Device**, **Device groups**.
 
 :::image type="content" source="../../media/investigate-alerts/suppression-choose-scope.png" lightbox="../../media/investigate-alerts/suppression-choose-scope.png" alt-text="Create suppression rule pane: Conditions, Scope, Action":::
  
-6.	Define the **Scope** based on specific device, multiple selected devices, device groups, the entire organization or by user.
+8. In the **Action** section, take the appropriate action of either **Hide alert** or **Resolve alert**.
+    Enter **Name**, **Comment**,  and click **Save**.
 
-> [!NOTE]
-> You must have Admin permission when the **Scope** is set only for **User**. Admin permission is not required when the **Scope** is set for **User** together with **Device**, **Device groups**.
-
-7.	In the **Action** section, take the appropriate action of either **Hide alert** or **Resolve alert** and click **Save**.
-
-8.	Once you save the suppression rule, in the **Successful suppression rule creation** page, you can add the selected IOCs, for example files to the “allow list” and prevent them from being blocked in the future. <br>
+9. **Prevent the IOCs from being blocked in the future:**<br>
+Once you save the suppression rule, in the **Successful suppression rule creation** page that appears, you can add the selected IOCs as indicators to the “allow list” and prevent them from being blocked in the future. <br>
 All alert-related IOCs will be shown in the list. <br>
 IOCs that were selected in the suppression conditions will be selected by default.
       1. For example, you can add files to be allowed to the **Select evidence (IOC) to allow**. By default the file that triggered the alert is selected.
       1. Enter the scope to the **Select scope to apply to**. By default scope for the related alert is selected.
       1. Click **Save**. Now the file is not blocked as it is in the allow list.
 
-:::image type="content" source="../../media/investigate-alerts/suppression-step2-choose-IOCs.png" lightbox="../../media/investigate-alerts/suppression-step2-choose-IOCs.png" alt-text="Successful suppression rule creation ":::
+    :::image type="content" source="../../media/investigate-alerts/suppression-step2-choose-IOCs.png" lightbox="../../media/investigate-alerts/suppression-step2-choose-IOCs.png" alt-text="Successful suppression rule creation ":::
 
-9.	The new suppression alert functionality is available by default. <br> However, you can switch back to the previous experience in Microsoft 365 Defender portal by navigating to **Settings > Endpoints > Alert suppression**, then switch off the **New suppression rules creation enabled** toggle. 
+10.	The new suppression alert functionality is available by default. <br> However, you can switch back to the previous experience in Microsoft 365 Defender portal by navigating to **Settings > Endpoints > Alert suppression**, then switch off the **New suppression rules creation enabled** toggle. 
  
-:::image type="content" source="../../media/investigate-alerts/suppression-toggle.png" lightbox="../../media/investigate-alerts/suppression-toggle.png" alt-text="Toggle for turning on/off the new suppression rule creation ":::
+    :::image type="content" source="../../media/investigate-alerts/suppression-toggle.png" lightbox="../../media/investigate-alerts/suppression-toggle.png" alt-text="Toggle for turning on/off the new suppression rule creation ":::
 
-10.	You can always add or change rule conditions and scope of new or existing rules in Microsoft Defender portal, by selecting the relevant rule and clicking **Edit rule**.    
+11.	**Edit existing rules:** <br> You can always add or change rule conditions and scope of new or existing rules in Microsoft Defender portal, by selecting the relevant rule and clicking **Edit rule**.    
     To edit existing rules, ensure that the **New suppression rules creation enabled** toggle is enabled.         
 
-:::image type="content" source="../../media/investigate-alerts/suppression-toggle-on-edit.png" lightbox="../../media/investigate-alerts/suppression-toggle-on-edit.png" alt-text="Edit suppression rule":::
+    :::image type="content" source="../../media/investigate-alerts/suppression-toggle-on-edit.png" lightbox="../../media/investigate-alerts/suppression-toggle-on-edit.png" alt-text="Edit suppression rule":::
   
 ## Resolve an alert
 
