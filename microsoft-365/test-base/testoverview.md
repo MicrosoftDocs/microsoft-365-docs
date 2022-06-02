@@ -18,7 +18,7 @@ f1.keywords: NOCSH
 
 # Test your application on Test Base
 
-This is a comprehensive guide for you to create a new package and test it on Test Base with various application types. Refer to the specific documentation for your own app:
+This document is a comprehensive guide for you to create a new package and test it on Test Base with various application types. Refer to the specific documentation for your own app:
 
 ## Test Binaries package on Test Base
 
