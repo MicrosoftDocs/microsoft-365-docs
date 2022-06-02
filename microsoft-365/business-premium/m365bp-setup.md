@@ -69,4 +69,4 @@ If you'd prefer to have a Microsoft partner help you get and set up Microsoft 36
 
 ### Next objective
 
-Once you've achieved these objectives, move on to the [next mission](m365bp-security-overview.md).
+Once you've achieved these objectives, go [increase security protections](m365bp-security-overview.md).

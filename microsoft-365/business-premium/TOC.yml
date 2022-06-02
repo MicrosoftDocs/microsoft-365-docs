@@ -47,7 +47,7 @@
       - name: Overview
         href: m365bp-protect-email-overview.md
       - name: Protect against phishing and other attacks
-        href: avoid-phishing-and-attacks.md
+        href: m365bp-avoid-phishing-and-attacks.md
       - name: Send encrypted email
         href: send-encrypted-email.md
   - name: Collaborate and share securely

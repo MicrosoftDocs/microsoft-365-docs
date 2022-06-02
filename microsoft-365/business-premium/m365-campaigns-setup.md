@@ -89,6 +89,6 @@ The elements you can update are:
 
 For examples of privacy and consent notices, see Appendix A in [Searching and Seizing Computers and Obtaining Electronic Evidence in Criminal Investigations](https://www.justice.gov/sites/default/files/criminal-ccips/legacy/2015/01/14/ssmanual2009.pdf).
 
-### Next Objective
+## Next objective
 
 Once you've achieved these objectives, go [increase security protections](m365bp-security-overview.md).

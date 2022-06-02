@@ -65,6 +65,6 @@ After you [set up device policies](../business-premium/m365bp-protection-setting
 [Set device configurations for Windows 10 PCs](../business-premium/m365bp-protection-settings-for-windows-10-devices.md)
 [Best practices for securing Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)
 
-### Next objective
+## Next objective
 
 [Review and edit protection policies](m365bp-view-edit-create-mdb-policies.md)
