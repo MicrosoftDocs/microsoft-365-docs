@@ -21,7 +21,7 @@ ms.prod: m365-security
 
 # Manage the Tenant Allow/Block List
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -463,6 +463,7 @@ A domain pair for a spoofed sender in the Tenant Allow/Block List uses the follo
 - **Sending infrastructure**: This value indicates the source of messages from the spoofed user. Valid values include:
   - The domain found in a reverse DNS lookup (PTR record) of the source email server's IP address (for example, fabrikam.com).
   - If the source IP address has no PTR record, then the sending infrastructure is identified as \<source IP\>/24 (for example, 192.168.100.100/24).
+  - A verified DKIM domain.
 
 Here are some examples of valid domain pairs to identify spoofed senders:
 
@@ -480,3 +481,10 @@ For example, you add an allow entry for the following domain pair:
 - **Infrastructure**: tms.mx.com
 
 Only messages from that domain *and* sending infrastructure pair are allowed to spoof. Other senders attempting to spoof gmail.com aren't allowed. Messages from senders in other domains originating from tms.mx.com are checked by spoof intelligence.
+
+
+## What to expect after you add an allow or block entry
+
+After you add an allow entry through the Submissions portal or a block entry in the Tenant Allow/Block List, the entry should start working immediately.
+
+We recommend letting entries automatically expire after 30 days to see if the system has learned about the allow or block. If not, you should make another entry to give the system another 30 days to learn.

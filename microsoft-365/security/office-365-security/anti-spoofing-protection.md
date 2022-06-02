@@ -27,7 +27,7 @@ ms.prod: m365-security
 
 # Anti-spoofing protection in EOP
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -52,7 +52,7 @@ The following anti-spoofing technologies are available in EOP:
 
 - **Anti-phishing policies**: In EOP and Microsoft Defender for Office 365, anti-phishing policies contain the following anti-spoofing settings:
   - Turn spoof intelligence on or off.
-  - Turn unauthenticated sender identification in Outlook on or off.
+  - Turn unauthenticated sender indicators in Outlook on or off.
   - Specify the action for blocked spoofed senders.
 
   For more information, see [Spoof settings in anti-phishing policies](set-up-anti-phishing-policies.md#spoof-settings).
