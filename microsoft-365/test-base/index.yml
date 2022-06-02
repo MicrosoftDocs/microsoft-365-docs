@@ -40,7 +40,7 @@ landingContent:
       - linkListType: quickstart
         links:
           - text: Create Test Base Account
-            url: createAccount.md
+            url: createaccount.md
           - text: Test your application on Test Base
             url: testoverview.md
           - text: Build a Package
