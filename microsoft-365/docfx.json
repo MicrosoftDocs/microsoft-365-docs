@@ -116,7 +116,8 @@
         "business-premium/**/*.md":"https://admin.microsoft.com/adminportal/home?showfeedback=DocsMacCampaign",
         "commerce/**/*.md":"https://admin.microsoft.com/adminportal/home?showfeedback=DocsMacCampaign",
         "enterprise/**/*.md":"https://admin.microsoft.com/adminportal/home?showfeedback=DocsMacCampaign",
-        "lighthouse/":"https://feedbackportal.microsoft.com/feedback/forum/d6a21c42-fe1b-ec11-b6e7-0022481f8472"
+        "lighthouse/":"https://feedbackportal.microsoft.com/feedback/forum/d6a21c42-fe1b-ec11-b6e7-0022481f8472",
+        "frontline/":"https://feedbackportal.microsoft.com/feedback/forum/ad198462-1c1c-ec11-b6e7-0022481f8472"
       },
       "searchScope": {
         "security/office-365-security/**/*.md": "Defender for Office",
