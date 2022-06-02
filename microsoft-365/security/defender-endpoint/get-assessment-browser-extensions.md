@@ -24,10 +24,10 @@ ms.custom: api
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender Vulnerability Management](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
-
 
 Different API calls get different types of data. Because the amount of data can be large, there are two ways it can be retrieved:
 
@@ -42,11 +42,11 @@ Data that is collected (using either _Json response_ or _via files_) is the curr
 > [!NOTE]
 > Unless indicated otherwise, all export assessment methods listed are **_full export_** and **_by device_** (also referred to as **_per device_**).
 
-## 1. Export software inventory assessment (JSON response)
+## 1. Export browser extension assessment (JSON response)
 
 ### 1.1 API method description
 
-This API response contains all the data of installed software per device. Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion.
+This API response contains all the data of installed browser extensions per device. Returns a table with an entry for every unique combination of DeviceId, BrowserName, ExtensionID.
 
 #### Limitations
 
@@ -65,7 +65,7 @@ Delegated (work or school account)|Software.Read|\'Read Threat and Vulnerability
 ### 1.3 URL
 
 ```http
-GET /api/machines/SoftwareInventoryByMachine
+GET /api/machines/BrowserExtensionsByMachine
 ```
 
 ### 1.4 Parameters
@@ -85,30 +85,28 @@ GET /api/machines/SoftwareInventoryByMachine
 
 ****
 
-Property (ID)|Data type|Description|Example of a returned value
-:---|:---|:---|:---
-DeviceId|string|Unique identifier for the device in the service.|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
-DeviceName|string|Fully qualified domain name (FQDN) of the device.|johnlaptop.europe.contoso.com
-DiskPaths|Array[string]|Disk evidence that the product is installed on the device.|[ "C:\\Program Files (x86)\\Microsoft\\Silverlight\\Application\\silverlight.exe" ]
-EndOfSupportDate|string|The date in which support for this software has or will end.|2020-12-30
-EndOfSupportStatus|string|End of support status. Can contain these possible values: None, EOS Version, Upcoming EOS Version, EOS Software, Upcoming EOS Software.|Upcoming EOS
-Id|string|Unique identifier for the record.|123ABG55_573AG&mnp!
-NumberOfWeaknesses|int|Number of weaknesses on this software on this device|3
-OSPlatform|string|Platform of the operating system running on the device. These are specific operating systems with variations within the same family, such as Windows 10 and Windows 11. See tvm supported operating systems and platforms for details.|Windows10 and Windows 11
-RbacGroupName|string|The role-based access control (RBAC) group. If this device is not assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."|Servers
-RegistryPaths|Array[string]|Registry evidence that the product is installed in the device.|[ "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Microsoft Silverlight" ]
-SoftwareFirstSeenTimestamp|string|The first time this software was seen on the device.|2019-04-07 02:06:47
-SoftwareName|string|Name of the software product.|Silverlight
-SoftwareVendor|string|Name of the software vendor.|microsoft
-SoftwareVersion|string|Version number of the software product.|81.0.4044.138
-|
+Property (ID)|Data type|Description
+:---|:---|:---
+DeviceId|string|Unique identifier for the device in the service.
+DeviceName|string|Fully qualified domain name (FQDN) of the device.
+RbacGroupId|string|The role-based access control (RBAC) group ID.
+RbacGroupName|string|The role-based access control (RBAC) group. If this device is not assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."
+InstallationTime|string|The time the extension was installed.
+BrowserName|string|Name of the browser.
+ExtensionId|string|Unique identifier for a specific extension.
+ExtensionName|string|Name of the extension.
+ExtensionDescription|string| Description of the extension.
+ExtensionVersion|string|Version number of the extension.
+ExtensionRisk|string|The risk level identified for the extension.
+IsActivated|string|Indicates whether the extension is active or not.
+Permissions|string|Specifics the permissions required for the extension.
 
 ### 1.6 Examples
 
 #### 1.6.1 Request example
 
 ```http
-GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryByMachine?pageSize=5  &sinceTime=2021-05-19T18%3A35%3A49.924Z
+GET https://api.securitycenter.microsoft.com/api/machines/BrowserExtensionsByMachine?pageSize=5  &sinceTime=2021-05-19T18%3A35%3A49.924Z
 ```
 
 #### 1.6.2 Response example
@@ -118,98 +116,46 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryByMac
     "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Collection(contoso.windowsDefenderATP.api.AssetSoftware)",
     "value": [
         {
-            "deviceId": "00044f68765bbaf712342dbe6db733b6a9c59ab4",
-            "rbacGroupName": "hhh",
-            "deviceName": "ComputerPII_18993b45912eeb224b2be2f5ea3142726e63f16a.DomainPII_21eeb80d086e79dbfa178eadfa25e8de9acfa346.corp.contoso.com",
-            "osPlatform": "Windows10" "Windows11",
-            "softwareVendor": "microsoft",
-            "softwareName": "windows_10" "Windows_11",
-            "softwareVersion": "10.0.17763.1637",
-            "numberOfWeaknesses": 58,
-            "diskPaths": [],
-            "registryPaths": [],
-            "softwareFirstSeenTimestamp": "2020-12-30 11:07:15",
-            "endOfSupportStatus": "Upcoming EOS Version",
-            "endOfSupportDate": "2021-05-11T00:00:00+00:00"
-        },
-        {
-            "deviceId": "00044f68765bbaf712342dbe6db733b6a9c59ab4",
-            "rbacGroupName": "hhh",
-            "deviceName": "ComputerPII_18993b45912eeb224b2be2f5ea3142726e63f16a.DomainPII_21eeb80d086e79dbfa178eadfa25e8de9acfa346.corp.contoso.com",
-            "osPlatform": "Windows10" "Windows11",
-            "softwareVendor": "microsoft",
-            "softwareName": ".net_framework",
-            "softwareVersion": "4.0.0.0",
-            "numberOfWeaknesses": 0,
-            "diskPaths": [],
-            "registryPaths": [
-                "SOFTWARE\\Microsoft\\NET Framework Setup\\NDP\\v4.0\\Client\\Install"
-            ],
-            "softwareFirstSeenTimestamp": "2020-12-30 11:07:15",
-            "endOfSupportStatus": "None",
-            "endOfSupportDate": null
-        },
-        {
-            "deviceId": "00044f68765bbaf712342dbe6db733b6a9c59ab4",
-            "rbacGroupName": "hhh",
-            "deviceName": "ComputerPII_18993b45912eeb224b2be2f5ea3142726e63f16a.DomainPII_21eed80d086e79bdfa178eadfa25e8de9acfa346.corp.contoso.com",
-            "osPlatform": "Windows10" "Windows11",
-            "softwareVendor": "microsoft",
-            "softwareName": "system_center_2012_endpoint_protection",
-            "softwareVersion": "4.7.214.0",
-            "numberOfWeaknesses": 0,
-            "diskPaths": [],
-            "registryPaths": [
-                "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Microsoft Security Client"
-            ],
-            "softwareFirstSeenTimestamp": "2020-12-30 11:07:15",
-            "endOfSupportStatus": "None",
-            "endOfSupportDate": null
-        },
-        {
-            "deviceId": "00044f68765ddaf71234bde6bd733d6a9c59ad4",
-            "rbacGroupName": "hhh",
-            "deviceName": "ComputerPII_18993b45912eeb224b2be2f5ea3142726e63f16a.DomainPII_21eeb80d086e79dbfa178aedfa25e8be9acfa346.corp.contoso.com",
-            "osPlatform": "Windows10" "Windows11",
-            "softwareVendor": "microsoft",
-            "softwareName": "configuration_manager",
-            "softwareVersion": "5.0.8634.1000",
-            "numberOfWeaknesses": 0,
-            "diskPaths": [],
-            "registryPaths": [
-                "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{B7D3A842-E826-4542-B39B-1D883264B279}"
-            ],
-            "softwareFirstSeenTimestamp": "2020-12-30 11:07:15",
-            "endOfSupportStatus": "None",
-            "endOfSupportDate": null
-        },
-        {
-            "deviceId": "00044f38765bbaf712342dbe6db733b6a9c59ab4",
-            "rbacGroupName": "hhh",
-            "deviceName": "ComputerPII_18993b45912eeb224b2de2f5ea3142726e63f16a.DomainPII_21eeb80d086e79bdfa178eadfa25e8be9acfa346.corp.contoso.com",
-            "osPlatform": "Windows10" "Windows11",
-            "softwareVendor": "microsoft",
-            "softwareName": "system_center_2012_endpoint_protection",
-            "softwareVersion": "4.10.209.0",
-            "numberOfWeaknesses": 0,
-            "diskPaths": [],
-            "registryPaths": [
-                "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Microsoft Security Client"
-            ],
-            "softwareFirstSeenTimestamp": "2020-12-30 11:07:15",
-            "endOfSupportStatus": "None",
-            "endOfSupportDate": null
-        }
+            "DeviceId": "1c32162b42e9efa1f5de42f951775f22f435c997",
+            "DeviceName": "computerpii_1363c2e016e2225cb03974df58f14e6968067aa8.domainpii_f260e982985f7e8eee198b4332e0ae5b2a069cd6.corp.microsoft.com",
+            "RbacGroupId": 86,
+            "RbacGroupName": "UnassignedGroup",
+            "InstallationTime": "2022-05-26T18:46:27.000Z",
+            "BrowserName": "chrome",
+            "ExtensionId": "dkpejdfnpdkhifgbancbammdijojoffk",
+            "ExtensionName": "Logitech Smooth Scrolling",
+            "ExtensionDescription": "Buttery-smooth scrolling for Logitech mice and touchpads.",
+            "ExtensionVersion": "6.65.62",
+            "ExtensionRisk": "High",
+            "IsActivated": true,
+            "Permissions": [
+                        {
+                                    "Id": "tabs",
+                                    "IsRequired": true,
+                                    "Risk": "High"
+                        },
+                        {
+                                    "Id": http://*/*,
+                                    "IsRequired": true,
+                                    "Risk": "High"
+                        },
+                        {
+                                    "Id": https://*/*,
+                                    "IsRequired": true,
+                                    "Risk": "High"
+                        }
+            ]
+}
     ],
-    "@odata.nextLink": "https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryByMachine?pagesize=5&$skiptoken=eyJFeHBvcnREZWZpbml0aW9uIjp7IlRpbWVQYXRoIjoiMjAyMS0wMS0yNS8wMjAwLyJ9LCJFeHBvcnRGaWxlSW5kZXgiOjAsIkxpbmVTdG9wcGVkQXQiOjV9"
+    "@odata.nextLink": "https://api.securitycenter.microsoft.com/api/machines/BrowserExtensionsByMachine?pagesize=5&$skiptoken=eyJFeHBvcnREZWZpbml0aW9uIjp7IlRpbWVQYXRoIjoiMjAyMS0wMS0yNS8wMjAwLyJ9LCJFeHBvcnRGaWxlSW5kZXgiOjAsIkxpbmVTdG9wcGVkQXQiOjV9"
 }
 ```
 
-## 2. Export software inventory assessment (via files)
+## 2. Export browser extension assessment (via files)
 
 ### 2.1 API method description
 
-This API response contains all the data of installed software per device. Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion.
+This API response contains all the data of installed browser extensions per device. Returns a table with an entry for every unique combination of DeviceId, BrowserName, ExtensionID.
 
 #### 2.1.1 Limitations
 
@@ -227,7 +173,7 @@ Delegated (work or school account)|Software.Read|\'Read Threat and Vulnerability
 ### 2.3 URL
 
 ```http
-GET /api/machines/SoftwareInventoryExport
+GET /api/machines/BrowserExtensionsByMachine
 ```
 
 ### Parameters
@@ -257,7 +203,7 @@ GeneratedTime|string|The time that the export was generated.|2021-05-20T08:00:00
 #### 2.6.1 Request example
 
 ```http
-GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryExport
+GET https://api.securitycenter.microsoft.com/api/machines/BrowserExtensionsExport
 ```
 
 #### 2.6.2 Response example
@@ -266,9 +212,9 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryExpor
 {
     "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#microsoft.windowsDefenderATP.api.ExportFilesResponse",
     "exportFiles": [
-        "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export/2021-01-11/1101/SoftwareInventory/json/OrgId=12345678-195f-4223-9c7a-99fb420fd000/part-00393-e423630d-4c69-4490-8769-a4f5468c4f25.c000.json.gz?sv=2019-12-12&st=2021-01-11T11%3A55%3A51Z&se=2021-01-11T14%3A55%3A51Z&sr=b&sp=r&sig=...",
-        "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export/2021-01-11/1101/SoftwareInventory/json/OrgId=12345678-195f-4223-9c7a-99fb420fd000/part-00394-e423630d-4c69-4490-8769-a4f5468c4f25.c000.json.gz?sv=2019-12-12&st=2021-01-11T11%3A55%3A51Z&se=2021-01-11T14%3A55%3A51Z&sr=b&sp=r&sig=...",
-        "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export/2021-01-11/1101/SoftwareInventory/json/OrgId=12345678-195f-4223-9c7a-99fb420fd000/part-00394-e423630d-4c69-4490-8769-a4f5468c4f25.c001.json.gz?sv=2019-12-12&st=2021-01-11T11%3A55%3A51Z&se=2021-01-11T14%3A55%3A51Z&sr=b&sp=r&sig=..."
+        "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export/2021-01-11/1101/BrowserExtensions/json/OrgId=12345678-195f-4223-9c7a-99fb420fd000/part-00393-e423630d-4c69-4490-8769-a4f5468c4f25.c000.json.gz?sv=2019-12-12&st=2021-01-11T11%3A55%3A51Z&se=2021-01-11T14%3A55%3A51Z&sr=b&sp=r&sig=...",
+        "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export/2021-01-11/1101/BrowserExtensions/json/OrgId=12345678-195f-4223-9c7a-99fb420fd000/part-00394-e423630d-4c69-4490-8769-a4f5468c4f25.c000.json.gz?sv=2019-12-12&st=2021-01-11T11%3A55%3A51Z&se=2021-01-11T14%3A55%3A51Z&sr=b&sp=r&sig=...",
+        "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export/2021-01-11/1101/BrowserExtensions/json/OrgId=12345678-195f-4223-9c7a-99fb420fd000/part-00394-e423630d-4c69-4490-8769-a4f5468c4f25.c001.json.gz?sv=2019-12-12&st=2021-01-11T11%3A55%3A51Z&se=2021-01-11T14%3A55%3A51Z&sr=b&sp=r&sig=..."
     ],
     "generatedTime": "2021-01-11T11:01:00Z"
 }
@@ -276,11 +222,9 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryExpor
 
 ## See also
 
-- [Export assessment methods and properties per device](get-assessment-methods-properties.md)
-- [Export secure configuration assessment per device](get-assessment-secure-config.md)
-- [Export software vulnerabilities assessment per device](get-assessment-software-vulnerabilities.md)
+- [Get browser extensions permission info](get-browser-extensions-permission-info.md)
 
-Other related
+## Other related
 
-- [Risk-based threat & vulnerability management](next-gen-threat-and-vuln-mgt.md)
-- [Vulnerabilities in your organization](tvm-weaknesses.md)
+- [Vulnerability management](../defender-vulnerability-management/defender-vulnerability-management.md)
+- [Vulnerabilities in your organization](../defender-vulnerability-management/tvm-weaknesses.md)

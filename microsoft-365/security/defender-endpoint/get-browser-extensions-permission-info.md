@@ -1,13 +1,13 @@
 ---
-title: Get-browser extensions permission info
-description: Retrieves a list of all the vulnerabilities affecting the organization
-keywords: apis, graph api, supported apis, get, vulnerability information, Microsoft Defender for Endpoint tvm api
+title: Get browser extensions permission info
+description: Retrieves a list of all permissions required for a browser extension
+keywords: apis, graph api, supported apis, get, browser extension information, Microsoft Defender for Endpoint, Microsoft Defender Vulnerability Management
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: dolmont
-author: DulceMontemayor
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -22,7 +22,9 @@ ms.custom: api
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
+
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender Vulnerability Management](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -35,7 +37,7 @@ ms.custom: api
 
 ## API description
 
-Retrieves a list of all vulnerabilities.
+Retrieves a list of all permissions for a browser extension.
 <br>Supports [OData V4 queries](https://www.odata.org/documentation/).
 <br>OData supported operators:
 <br>```$filter``` on:  ```id```, ```name```, ```description```, ```cvssV3```, ```publishedOn```, ```severity```, and ```updatedOn``` properties.
@@ -55,7 +57,7 @@ Delegated (work or school account)|Vulnerability.Read|'Read Threat and Vulnerabi
 ## HTTP request
 
 ```http
-GET /api/vulnerabilities
+GET api/browserextensions/permissionsinfo
 ```
 
 ## Request headers
@@ -70,7 +72,7 @@ Empty
 
 ## Response
 
-If successful, this method returns 200 OK with the list of vulnerabilities in the body.
+If successful, this method returns 200 OK with the list of all permissions for a browser extension in the body.
 
 ## Example
 
@@ -79,7 +81,7 @@ If successful, this method returns 200 OK with the list of vulnerabilities in th
 Here is an example of the request.
 
 ```http
-GET https://api.securitycenter.microsoft.com/api/Vulnerabilities
+GET https://api.securitycenter.microsoft.com/api//browserextensions/permissionsinfo
 ```
 
 ### Response example
@@ -90,28 +92,40 @@ Here is an example of the response.
 {
     "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Vulnerabilities",
     "value": [
-        {
-            "id": "CVE-2019-0608",
-            "name": "CVE-2019-0608",
-            "description": "A spoofing vulnerability exists when Microsoft Browsers does not properly parse HTTP content. An attacker who successfully exploited this vulnerability could impersonate a user request by crafting HTTP queries. The specially crafted website could either spoof content or serve as a pivot to chain an attack with other vulnerabilities in web services.To exploit the vulnerability, the user must click a specially crafted URL. In an email attack scenario, an attacker could send an email message containing the specially crafted URL to the user in an attempt to convince the user to click it.In a web-based attack scenario, an attacker could host a specially crafted website designed to appear as a legitimate website to the user. However, the attacker would have no way to force the user to visit the specially crafted website. The attacker would have to convince the user to visit the specially crafted website, typically by way of enticement in an email or instant message, and then convince the user to interact with content on the website.The update addresses the vulnerability by correcting how Microsoft Browsers parses HTTP responses.",
-            "severity": "Medium",
-            "cvssV3": 4.3,
-            "exposedMachines": 4,
-            "publishedOn": "2019-10-08T00:00:00Z",
-            "updatedOn": "2019-12-16T16:20:00Z",
-            "publicExploit": false,
-            "exploitVerified": false,
-            "exploitInKit": false,
-            "exploitTypes": [],
-            "exploitUris": []
-        }
-        ...
-    ]
+{
+  "value": [
+    {
+      "key": "audioCapture",
+      "permissionName": "Capture audio from attached mic or webcam",
+      "description": "Capture audio from attached mic or webcam. Could be used to listen in on use."
+    },
+    {
+      "key": "app.window.fullscreen.overrideEsc",
+      "permissionName": "Prevent escape button from exiting fullscreen",
+      "description": "Can prevent escape button from exiting fullscreen."
+    },
+    {
+      "key": "browsingData",
+      "permissionName": "Clear browsing data",
+      "description": "Clears browsing data which could result in a forensics/logging issues."
+    },
+    {
+      "key": "content_security_policy",
+      "permissionName": "Can manipulate default Content Security Policy (CSP)",
+      "description": "CSP works as a block/allow listing mechanism for resources loaded or executed by your extensions. Can manipulate default CSP."
+    }
 
+            ]
 }
+    ]
 ```
 
 ## See also
 
-- [Risk-based Threat & Vulnerability Management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Vulnerabilities in your organization](/microsoft-365/security/defender-endpoint/tvm-weaknesses)
+- [Get browser extensions permission info](get-assessment-browser-extensions.md)
+
+## Other related
+
+- [Vulnerability management](../defender-vulnerability-management/defender-vulnerability-management.md)
+- [Vulnerabilities in your organization](../defender-vulnerability-management/tvm-weaknesses.md)
+
