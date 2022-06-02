@@ -30,5 +30,5 @@ See [Test your Intune app](testintuneapplication.md) to create a Test Base packa
 
 ## Upload your Test Base package (Zip)
 
-To learn more, see [Zip upload](uploadApplication.md) if you already have a Test Base package.
+To learn more, see [Zip upload](uploadapplication.md) if you already have a Test Base package.
 
