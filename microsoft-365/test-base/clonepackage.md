@@ -26,12 +26,12 @@ In this section, you'll learn how to create a new package by duplicating your pr
 ## Starting from the New package page
 
 > [!div class="mx-imgBorder"]
-> ![Clone package guidance](Media/clonepackage01.png)
+> [ ![Clone guidance](Media/clonepackage01_guidance.png) ](Media/clonepackage01_guidance.png#lightbox)
 
-1. On the **New package** page, you can click on the **Clone existing package**. Then select one package from the existing package list and click on **'Clone'**. 
+1. On the **New package** page, you can select on the **Clone existing package**. Then select one package from the existing package list and click on **'Clone'**. 
 
    > [!div class="mx-imgBorder"]
-   > ![Clone existing package menu](Media/clonepackage02.png)
+   > [ ![Clone existing package](Media/clonepackage02_clone_package.png) ](Media/clonepackage02_clone_package.png#lightbox)
 
 2. You'll be directed to the New package creation steps with all information and configuration pre-populated as same as the package you cloned. The only information you must have to change is the **Package version** under the **Basic information** section. 
 
@@ -39,24 +39,24 @@ In this section, you'll learn how to create a new package by duplicating your pr
    > The combination of package name and version must be unique within your Test Base account. 
 
    > [!div class="mx-imgBorder"]
-   > ![Package basic information](Media/clonepackage03.png)
+   > [ ![Package basic information](Media/clonepackage03_basic_information.png) ](Media/clonepackage03_basic_information.png#lightbox)
 
 3. You're able to:
 
-   - preview all pre-populated package setting information duplicating from the clone package, 
-   - make any changes from step 1 to step 4 (See Uploading pre-built zip package for more detailed instruction),  
+   - preview all pre-populated package setting information duplicating from the clone package. 
+   - make any changes from step 1 to step 4 (See Uploading pre-built zip package for more detailed instruction). 
    - review and publish to Test Base. 
 
 
 ## Starting from the Manage packages page
 
-On the **Manage packages** page, you can clone a package by clicking on the **'Clone'** icon under the Quick actions column. 
+On the **Manage packages** page, you can clone a package by selecting on the **'Clone'** icon under the Quick actions column. 
 
 > [!div class="mx-imgBorder"]
-> ![Starting from the Manage packages page](Media/clonepackage04.png)
+> [ ![Manage packages page](Media/clonepackage04_manage_packages.png) ](Media/clonepackage04_manage_packages.png#lightbox)
 
-Or you can go to the **Package overview** page of the specific package you’ve selected from the **Manage packages** page and click on the **Clone package** icon in the top action menu.
+Or you can go to the **Package overview** page of the specific package you’ve selected from the **Manage packages** page and select on the **Clone package** icon in the top action menu.
 
 > [!div class="mx-imgBorder"]
-> ![Clone from the Package overview page](Media/clonepackage05.png)
+> [ ![Clone from overview page](Media/clonepackage05_overview.png) ](Media/clonepackage05_overview.png#lightbox)
 
