@@ -10,7 +10,7 @@ ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 01/27/2022
+ms.date: 06/02/2022
 ms.reviewer:
 manager: dansimp
 ms.technology: mde
@@ -39,7 +39,6 @@ The tables list:
 
 > [!TIP]
 > You can also visit the Microsoft Defender for Endpoint demo website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the following features are working:
->
 > - Cloud-delivered protection
 > - Fast learning (including Block at first sight)
 > - Potentially unwanted application blocking
