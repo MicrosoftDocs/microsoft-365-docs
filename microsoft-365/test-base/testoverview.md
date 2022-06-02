@@ -18,11 +18,11 @@ f1.keywords: NOCSH
 
 # Test your application on Test Base
 
-This is a comprehensive guide for you to create a new package and test it on Test Base with various application types. Please refer to the specific documentation for your own app:
+This is a comprehensive guide for you to create a new package and test it on Test Base with various application types. Refer to the specific documentation for your own app:
 
 ## Test Binaries package on Test Base
 
-See [Test Binaries package](testapplication.md) to create a Test Base package with Binaries file (i.e., .exe or .msi).
+See [Test Binaries package](testapplication.md) to create a Test Base package with Binaries file (that is, .exe or .msi).
 
 ## Test your Intune app on Test Base
 
