@@ -120,7 +120,9 @@
       },
       "searchScope": {
         "security/office-365-security/**/*.md": "Defender for Office",
-        "lighthouse/**/*.md": "Microsoft 365 Lighthouse"
+        "lighthouse/**/*.md": "Microsoft 365 Lighthouse",
+        "bookings/**/*.md": "Microsoft Bookings",
+        "frontline/**/*.md": "Microsoft 365 for frontline workers"
       }
     },
     "template": [],
