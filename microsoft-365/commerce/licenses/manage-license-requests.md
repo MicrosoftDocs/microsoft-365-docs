@@ -76,4 +76,5 @@ When you return to the **Requests** list, you see the message **You’re using y
 
 [Assign licenses to users](../../admin/manage/assign-licenses-to-users.md) (article)\
 [Move users to a different subscription](../subscriptions/move-users-different-subscription.md) (article)\
-[Buy or remove subscription licenses](buy-licenses.md) (article)
+[Buy or remove subscription licenses](buy-licenses.md) (article)\
+[Self-service purchase FAQ](https://docs.microsoft.com/en-us/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide)
