@@ -4,7 +4,7 @@
   - name: What is Microsoft 365 for frontline workers?
     href: flw-overview.md
   - name: Try Microsoft 365 for frontline workers
-    href:
+    href: flw-trial.md
   - name: Setup and configure
     items:
     - name: Start with a pilot deployment
