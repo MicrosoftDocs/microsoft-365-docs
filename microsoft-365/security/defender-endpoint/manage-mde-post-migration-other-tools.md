@@ -17,7 +17,6 @@ ms.collection:
   - m365solution-scenario
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
-ms.date: 11/29/2021
 ms.reviewer: chventou
 ---
 
@@ -44,7 +43,7 @@ You can manage some Microsoft Defender Antivirus settings on devices with [Power
 
 ## Configure Microsoft Defender for Endpoint with PowerShell
 
-You can use PowerShell to manage Microsoft Defender Antivirus, exploit protection, and your attack surface reduction rules.<br/><br/>
+You can use PowerShell to manage Microsoft Defender Antivirus, exploit protection, and your attack surface reduction rules.
 
 |Task|Resources to learn more|
 |---|---|
@@ -78,13 +77,10 @@ If you haven't already done so, configure your <a href="https://go.microsoft.com
 You can also configure whether and what features end users can see in the Microsoft Defender Security Center.
 
 - [Overview of the Microsoft Defender Security Center](/microsoft-365/security/defender-endpoint/use)
-
 - [Endpoint protection: Microsoft Defender Security Center](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)
 
 ## Next steps
 
 - [Get an overview of threat and vulnerability management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-
 - [Visit the Microsoft Defender Security Center security operations dashboard](/microsoft-365/security/defender-endpoint/security-operations-dashboard)
-
 - [Manage Microsoft Defender for Endpoint with Intune](manage-mde-post-migration-intune.md)
