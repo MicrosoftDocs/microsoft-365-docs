@@ -30,8 +30,8 @@ The following table lists the limits for cases and review sets in eDiscovery (Pr
 
 |Description of limit|Limit|
 |---|---|
-|Total number of documents that can be added to a case (for all review sets in a case).|3 million|
-|Total file size per load set. This includes loading non-Office 365 into a review set.|300 GB|
+|Total number of documents that can be added to a case (for all review sets in a case).|Up to 40 million (New case format)|
+|Total file size per load set. This includes loading non-Office 365 into a review set.|Up to 1TB (New case format)|
 |Total amount of data loaded into all review sets in the organization per day.<br/>|2 TB|
 |Maximum number of load sets per case.|200|
 |Maximum number of review sets per case.|20|
