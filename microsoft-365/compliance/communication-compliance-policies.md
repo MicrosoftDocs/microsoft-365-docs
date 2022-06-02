@@ -76,8 +76,8 @@ To copy a policy, users must be a member of the *Communication Compliance* or *C
 To copy a policy and create a new policy, complete the following steps:
 
 1. Select the policy you want to copy.
-2. Select **Copy policy** command bar button on the command bar, or select **Copy policy** from the action menu for the policy.
-3. In the **Copy policy** pane, you can accept the default name for the policy in the **Policy name** field or rename the policy. The policy name for the new policy can’t be the same as an existing active or deactivated policy. Complete the **Description** field as needed.
+2. Select **Copy policy** command bar button on the command bar or select **Copy policy** from the action menu for the policy.
+3. In the **Copy policy** pane, you can accept the default name for the policy in the **Policy name** field or rename the policy. The policy name for the new policy can't be the same as an existing active or deactivated policy. Complete the **Description** field as needed.
 4. If you don't need further customization of the policy, select **Copy policy** to complete the process. If you need to update the configuration of the new policy, select **Customize policy**. This starts the policy wizard to help you update and customize the new policy.
 
 ## User-reported messages policy
