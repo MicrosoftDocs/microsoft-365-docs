@@ -8,7 +8,7 @@
   - name: Setup and configure
     items:
     - name: Start with a pilot deployment
-      href: 
+      href: flw-trial.md
     - name: Extend your pilot to a full deployment
       href: 
     - name: Onboard your users with the onboarding wizard
