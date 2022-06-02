@@ -34,7 +34,7 @@ This guide explains how to route accounts to Microsoft 365 Defender by enabling 
 
 ## What to expect
 
-Once automatic redirection is enabled, accounts accessing the former Microsoft Defender for Identity portal at portal.atp.azure.com, will be automatically routed to the Microsoft 365 Defender portal at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"><security.microsoft.com></a>.
+Once automatic redirection is enabled, accounts accessing the former Microsoft Defender for Identity portal at portal.atp.azure.com, will be automatically routed to the Microsoft 365 Defender portal at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">security.microsoft.com</a>.
 
 ## When does this take effect?
 
