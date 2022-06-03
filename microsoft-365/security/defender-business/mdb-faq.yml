@@ -138,7 +138,9 @@ sections:
 
       - question: How are my Defender for Business security reports affected if I have more than 300 users?
         answer: |
-          Defender for Business is designed for customers who have up to 300 employees. If you have more than 300 users and a mix of licenses, such as 300 Defender for Business licenses, and 30 Defender for Endpoint Plan 1 licenses, your security reports for Defender for Business will show data for only the users who are assigned Defender for Business licenses. In this case, all users will be protected by Defender for Business, but your Defender for Business reports won't show data for the 30 users who are assigned Defender for Endpoint Plan 1 licenses.  
+          Defender for Business is designed for customers who have up to 300 employees. If you have more than 300 users and a mix of licenses, such as 300 Defender for Business licenses, and 30 Defender for Endpoint Plan 1 licenses, your security reports for Defender for Business will show data for only the users who are assigned Defender for Business licenses. 
+          
+          In this case, all users will be protected by Defender for Business, but your Defender for Business reports won't show data for the 30 users who are assigned Defender for Endpoint Plan 1 licenses.  
 
           To learn more about reports in Defender for Business, see [Reports in Microsoft Defender for Business](mdb-reports.md). 
                  
