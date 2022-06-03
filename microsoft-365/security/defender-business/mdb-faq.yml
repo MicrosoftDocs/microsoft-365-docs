@@ -59,7 +59,7 @@ sections:
           - You can onboard macOS devices using a local script in the Microsoft 365 Defender portal. 
           - To onboard Android and iOS/iPadOS devices, you must have a license for [Microsoft Intune](/mem/intune/). Intune is included in Microsoft 365 Business Premium, and can be purchased for Defender for Business (standalone).
 
-          Additional simplification for macOS, iOS/iPadOS, and Android devices is on the roadmap. 
+          More simplification for macOS, iOS/iPadOS, and Android devices is on the roadmap. 
 
       - question: Can I configure more than one web content filtering policy in Defender for Business?
         answer: |
@@ -89,7 +89,7 @@ sections:
         answer: |
           Simplified configuration for attack surface reduction rules and capabilities via Defender for Business in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) isn't supported yet. If you have Microsoft Intune, you can use the Microsoft Endpoint Manager admin center to configure your attack surface reduction policies. See [Attack surface reduction policy for endpoint security in Intune](/mem/intune/protect/endpoint-security-asr-policy).
 
-      - question: If I don't currently have Microsoft Intune, do I need an additional license to use features that are included in both Defender for Business and Intune? 
+      - question: If I don't currently have Microsoft Intune, do I need an another license to use features that are included in both Defender for Business and Intune? 
         answer: |
           If you have Defender for Business as a standalone subscription and you don't have Intune, you can onboard and secure Windows and macOS devices in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). 
            
