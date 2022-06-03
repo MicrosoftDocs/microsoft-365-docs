@@ -124,8 +124,8 @@ sections:
 
           For details about licenses and product terms, see [Licensing and product terms for Microsoft 365 subscriptions](https://www.microsoft.com/licensing/terms/productoffering/Microsoft365/MCA).
 
-      - question: My organization has grown to more than 300 employees. Can I still use Defender for Business?     
-
+      - question: My organization has grown to more than 300 employees. Can I still use Defender for Business?   
+        answer: |  
           [Defender for Business](mdb-overview.md) and [Microsoft 365 Business Premium](/microsoft-365/business-premium/) are for customers who have up to 300 users. If you have more than 300 users, we recommend getting a subscription that includes [Defender for Endpoint](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1-2). 
                  
       - question: How can I view my organization's Microsoft subscriptions and user licenses?
