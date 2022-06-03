@@ -140,7 +140,7 @@ Some settings can't be changed after the label is created and saved, which inclu
 
 ## Delete retention labels
 
-You can delete retention labels that aren't currently included in any [published](create-apply-retention-labels.md) or [auto-apply](apply-retention-labels-automatically.md) retention label policies, that aren't configured for event-based retention, and that mark items as regulatory records.
+You can delete retention labels that aren't currently included in any [published](create-apply-retention-labels.md) or [auto-apply](apply-retention-labels-automatically.md) retention label policies, that aren't configured for event-based retention, or that mark items as regulatory records.
 
 For retention labels that you can delete, if they've been applied to items, the deletion fails and you see a link to content explorer to identify the labeled items.
 
