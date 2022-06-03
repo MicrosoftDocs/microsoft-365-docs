@@ -37,7 +37,7 @@ ms.custom: api
 
 ## API description
 
-Retrieves a list of all the permissions requested by a specific extension.
+Retrieves a list of all the permissions requested by a specific browser extension.
 
 <br>Supports [OData V4 queries](https://www.odata.org/documentation/).
 <br>OData supported operators:
