@@ -203,7 +203,8 @@ To create a suppression rule for alerts:
  
     1. For example, in the **Conditions** section, select the triggering evidence **Entity Role: Triggering**, **Equals** and select the evidence type from the drop-down list. 
 
-    :::image type="content" source="../../media/investigate-alerts/evidence-types-drop-down-list.png" alt-text="Evidence types drop-down list" lightbox="../../media/investigate-alerts/evidence-types-drop-down-list.png" alt-text="Evidence types drop-down list":::
+    :::image type="content" source="../../media/investigate-alerts/evidence-types-drop-down-list.png" alt-text="Evidence types drop-down list" lightbox="../../media/investigate-alerts/evidence-types-drop-down-list.png":::
+
     1. All the properties of this 'evidence' will auto populate as a new subgroup in the respective fields below.
     :::image type="content" source="../../media/investigate-alerts/properties-evidence.png" alt-text="Properties of evidence auto-populate" lightbox="../../media/investigate-alerts/properties-evidence.png" :::
 
@@ -211,6 +212,7 @@ To create a suppression rule for alerts:
 
     3. Other than files and processes, AMSI script, WMI event, and scheduled tasks are some of the newly added 'evidences' that you can select from the evidence types drop-down list.
     :::image type="content" source="../../media/investigate-alerts/other-evidence-types.png" alt-text="Other types of evidence" lightbox="../../media/investigate-alerts/other-evidence-types.png":::
+
     4. To add another IOC, click **Add filter**. 
     > [!NOTE]
     > Adding at least one IOC to the rule condition is required to suppress any alert type.
