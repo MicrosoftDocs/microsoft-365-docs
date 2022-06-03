@@ -216,21 +216,20 @@ To create a suppression rule for alerts:
     4. To add another IOC, click **Add filter**. 
     > [!NOTE]
     > Adding at least one IOC to the rule condition is required to suppress any alert type.
-   
- 
-6. Alternatively, you can select **Auto fill all alert 7 related IOCs** in the **IOC** section to add all alert related 'evidences' and their properties at once in the **Conditions** section.
+    
+4. Alternatively, you can select **Auto fill all alert 7 related IOCs** in the **IOC** section to add all alert related 'evidences' and their properties at once in the **Conditions** section.
     :::image type="content" source="../../media/investigate-alerts/auto-fill-IOCs.png" alt-text="Auto fill all alert related IoCs" lightbox="../../media/investigate-alerts/auto-fill-IOCs.png":::
 
-7. In the **Scope** section, set the Scope in the **Conditions** sub-section by selecting specific device, multiple devices, device groups, the entire organization or by user.
+5. In the **Scope** section, set the Scope in the **Conditions** sub-section by selecting specific device, multiple devices, device groups, the entire organization or by user.
     > [!NOTE]
     > You must have Admin permission when the **Scope** is set only for **User**. Admin permission is not required when the **Scope** is set for **User** together with **Device**, **Device groups**.
 
 :::image type="content" source="../../media/investigate-alerts/suppression-choose-scope.png" lightbox="../../media/investigate-alerts/suppression-choose-scope.png" alt-text="Create suppression rule pane: Conditions, Scope, Action":::
  
-8. In the **Action** section, take the appropriate action of either **Hide alert** or **Resolve alert**.
+6. In the **Action** section, take the appropriate action of either **Hide alert** or **Resolve alert**.
     Enter **Name**, **Comment**,  and click **Save**.
 
-9. **Prevent the IOCs from being blocked in the future:**<br>
+7. **Prevent the IOCs from being blocked in the future:**<br>
 Once you save the suppression rule, in the **Successful suppression rule creation** page that appears, you can add the selected IOCs as indicators to the “allow list” and prevent them from being blocked in the future. <br>
 All alert-related IOCs will be shown in the list. <br>
 IOCs that were selected in the suppression conditions will be selected by default.
@@ -240,11 +239,11 @@ IOCs that were selected in the suppression conditions will be selected by defaul
 
     :::image type="content" source="../../media/investigate-alerts/suppression-step2-choose-IOCs.png" lightbox="../../media/investigate-alerts/suppression-step2-choose-IOCs.png" alt-text="Successful suppression rule creation ":::
 
-10.	The new suppression alert functionality is available by default. <br> However, you can switch back to the previous experience in Microsoft 365 Defender portal by navigating to **Settings > Endpoints > Alert suppression**, then switch off the **New suppression rules creation enabled** toggle. 
+8.	The new suppression alert functionality is available by default. <br> However, you can switch back to the previous experience in Microsoft 365 Defender portal by navigating to **Settings > Endpoints > Alert suppression**, then switch off the **New suppression rules creation enabled** toggle. 
  
     :::image type="content" source="../../media/investigate-alerts/suppression-toggle.png" lightbox="../../media/investigate-alerts/suppression-toggle.png" alt-text="Toggle for turning on/off the suppression rule creation feature":::
 
-11.	**Edit existing rules:** <br> You can always add or change rule conditions and scope of new or existing rules in Microsoft Defender portal, by selecting the relevant rule and clicking **Edit rule**.    
+9.	**Edit existing rules:** <br> You can always add or change rule conditions and scope of new or existing rules in Microsoft Defender portal, by selecting the relevant rule and clicking **Edit rule**.    
     To edit existing rules, ensure that the **New suppression rules creation enabled** toggle is enabled.         
 
     :::image type="content" source="../../media/investigate-alerts/suppression-toggle-on-edit.png" lightbox="../../media/investigate-alerts/suppression-toggle-on-edit.png" alt-text="Edit suppression rule":::
