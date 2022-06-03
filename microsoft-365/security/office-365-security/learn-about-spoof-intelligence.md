@@ -25,7 +25,7 @@ ms.prod: m365-security
 
 # Spoof intelligence insight in EOP
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -111,6 +111,7 @@ On the **Spoof intelligence insight** page that appears after you click **View s
 - **Sending infrastructure**: Also known as the _infrastructure_. The sending infrastructure will be one of the following values:
   - The domain found in a reverse DNS lookup (PTR record) of the source email server's IP address.
   - If the source IP address has no PTR record, then the sending infrastructure is identified as \<source IP\>/24 (for example, 192.168.100.100/24).
+  - A verified DKIM domain.
 - **Message count**: The number of messages from the combination of the spoofed domain _and_ the sending infrastructure to your organization within the last 7 days.
 - **Last seen**: The last date when a message was received from the sending infrastructure that contains the spoofed domain.
 - **Spoof type**: One of the following values:
@@ -143,7 +144,7 @@ When you select an entry from the list, a details flyout appears that contains t
 
 ### About allowed spoofed senders
 
-An allowed spoofed sender in the spoof intelligence insight or a blocked spoofed sender that you manually changed to **Allow to spoof** only allows messages from the combination of the spoofed domain *and* the sending infrastructure. It does not allow email from the spoofed domain from any source, nor does it allow email from the sending infrastructure for any domain.
+An allowed spoofed sender in the spoof intelligence insight or a blocked spoofed sender that you manually changed to **Allow to spoof** only allows messages from the combination of the spoofed domain _and_ the sending infrastructure. It does not allow email from the spoofed domain from any source, nor does it allow email from the sending infrastructure for any domain.
 
 For example, the following spoofed sender is allowed to spoof:
 

@@ -527,7 +527,6 @@ The following table describes activities related to when users interact with lis
 |Updated list item|ListItemUpdated|A user updated a SharePoint list item by modifying one or more properties.|
 |Updated site column|SiteColumnUpdated|A user updated a SharePoint site column by modifying one or more properties.|
 |Updated site content type|SiteContentTypeUpdated|A user updated a site content type by modifying one or more properties.|
-|Viewed list item|ListItemViewed|A user viewed a SharePoint list item. Once a user views a list item, the ListItemViewed event is not logged again for the same user for same list item for the next five minutes.|
 
 ### Sharing and access request activities
 
@@ -1126,7 +1125,13 @@ Yes. The Office 365 Management Activity API is used to fetch the audit logs prog
 
 **Are there other ways to get auditing logs other than using the security and compliance portal or the Office 365 Management Activity API?**
 
-No. These are the only two ways to get data from the auditing service.
+Yes, You can retrieve audit logs by using the following methods:
+
+- The [Office 365 Management Activity API](/office/office-365-management-api/office-365-management-activity-api-reference).
+
+- The [audit log search tool](search-the-audit-log-in-security-and-compliance.md) in the Microsoft Purview compliance portal.
+
+- The [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) cmdlet in Exchange Online PowerShell.
 
 **Do I need to individually enable auditing in each service that I want to capture audit logs for?**
 
