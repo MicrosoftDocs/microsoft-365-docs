@@ -29,6 +29,8 @@ ms.custom: api
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
+Returns all known installed browser extensions and their details for all devices, on a per-device basis.
+
 Different API calls get different types of data. Because the amount of data can be large, there are two ways it can be retrieved:
 
 - [Export browser extensions assessment **JSON response**](#1-export-browser-extensions-assessment-json-response) The API pulls all data in your organization as Json responses. This method is best for _small organizations with less than 100-K devices_. The response is paginated, so you can use the \@odata.nextLink field from the response to fetch the next results.
@@ -46,7 +48,7 @@ Data that is collected (using either _Json response_ or _via files_) is the curr
 
 ### 1.1 API method description
 
-This API response contains all the data of installed browser extensions per device. Returns a table with an entry for every unique combination of DeviceId, BrowserName, ExtensionId.
+This API response contains all the data for installed browser extensions per device. Returns a table with an entry for every unique combination of DeviceId, BrowserName, ExtensionId.
 
 #### Limitations
 
@@ -155,7 +157,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/BrowserExtensionsByMac
 
 ### 2.1 API method description
 
-This API response contains all the data of installed browser extensions per device. Returns a table with an entry for every unique combination of DeviceId, BrowserName, ExtensionId.
+This API response contains all the data for installed browser extensions per device. Returns a table with an entry for every unique combination of DeviceId, BrowserName, ExtensionId.
 
 #### 2.1.1 Limitations
 
