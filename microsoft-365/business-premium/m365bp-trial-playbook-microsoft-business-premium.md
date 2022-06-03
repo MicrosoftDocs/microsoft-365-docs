@@ -46,48 +46,48 @@ When you purchase the Microsoft 365 Business Premium trial, you have the option 
 
 1. From the admin center menu, choose **Setup** to start the wizard.
 
-1. Select **Set up email with a custom domain** and then, **Use a domain you already own** such as contoso.com.
+2. Select **Set up email with a custom domain** and then, **Use a domain you already own** such as contoso.com.
 
-1. Follow the rest of the steps in the wizard to complete the process.
+3. Follow the rest of the steps in the wizard to complete the process.
 
-> [!Important]
-> If you purchased a domain during the sign-up, you will not see the Add a domain step here. Go to Add users instead.
+   > [!Important]
+   > If you purchased a domain during the sign-up, you will not see the Add a domain step here. Go to Add users instead.
 
-1. Follow the steps in the wizard to Create DNS records at any DNS hosting provider for Office 365 that verifies you own the domain. If you know your domain host, see Add a domain to Microsoft 365.
+4. Follow the steps in the wizard to Create DNS records at any DNS hosting provider for Office 365 that verifies you own the domain. If you know your domain host, see Add a domain to Microsoft 365.
 
-1. If your hosting provider is GoDaddy or another host enabled with domain connect, the process is easy and you'll be automatically asked to sign in and let Microsoft authenticate on your behalf.
+5. If your hosting provider is GoDaddy or another host enabled with domain connect, the process is easy and you'll be automatically asked to sign in and let Microsoft authenticate on your behalf.
 
 ### Onboard and protect devices
 
 1. Visit the Defender portal at security.microsoft.com.
 
-1. Run the [setup wizard](../security/defender-business/mdb-use-wizard.md).
+2. Run the [setup wizard](../security/defender-business/mdb-use-wizard.md).
 
-1. Now, [onboard devices](../security/defender-business/mdb-onboard-devices.md).
+3. Now, [onboard devices](../security/defender-business/mdb-onboard-devices.md).
 
-1. Next, [review security policies](../security/defender-business/mdb-configure-security-settings.md).
+4. Next, [review security policies](../security/defender-business/mdb-configure-security-settings.md).
 
 ### Use Office apps on devices
 
 1. First, you'll need to [install Office](m365bp-install-office-apps.md).
 
-1. Go to office.com and [sign in](https://support.microsoft.com/en-us/office/get-started-at-office-com-91a4ec74-67fe-4a84-a268-f6bdf3da1804).
+2. Go to office.com and [sign in](https://support.microsoft.com/office/get-started-at-office-com-91a4ec74-67fe-4a84-a268-f6bdf3da1804).
 
-1. Create an Office document, such as a [Word document](https://support.microsoft.com/en-us/office/basic-tasks-in-word-87b3243c-b0bf-4a29-82aa-09a681999fdc).
+3. Create an Office document, such as a [Word document](https://support.microsoft.com/office/basic-tasks-in-word-87b3243c-b0bf-4a29-82aa-09a681999fdc).
 
-1. [Share a document](https://support.microsoft.com/en-us/office/share-your-documents-651e1cb9-9a51-46dc-8d32-bdb7d928eedd) with a team member.
+4. [Share a document](https://support.microsoft.com/office/share-your-documents-651e1cb9-9a51-46dc-8d32-bdb7d928eedd) with a team member.
 
-### Start using the Defender portal 
+### Start using the Microsoft 365 Defender portal 
 
-1. Access the Defender portal at security.microsoft.com
+1. Access the Microsoft 365 Defender portal at [https://security.microsoft.com](https://security.microsoft.com).
 
-1. Take some time to [familiarize yourself with the portal](../security/defender-business/mdb-get-started.md).
+2. Take some time to [familiarize yourself with the portal](../security/defender-business/mdb-get-started.md).
 
-1. Now, [assess your security posture](../security/defender/microsoft-secure-score.md).
+3. Now, [assess your security posture](../security/defender/microsoft-secure-score.md).
 
-1. Familiarize yourself with [how to respond to a security incident](../security/defender-business/mdb-respond-mitigate-threats.md).
+4. Familiarize yourself with [how to respond to a security incident](../security/defender-business/mdb-respond-mitigate-threats.md).
 
-1. Lastly, [review remediation actions](../security/defender-business/mdb-review-remediation-actions.md).
+5. Lastly, [review remediation actions](../security/defender-business/mdb-review-remediation-actions.md).
 
 <!---
 Protect your most targeted and most visible users with Priority Account Protection in Defender for Office 365, which helps you prioritize your workflow to ensure these users are safe.
