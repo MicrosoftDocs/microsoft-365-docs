@@ -52,7 +52,7 @@ Instant syncing for sharing outside your tenant isn't supported currently. While
 
 ## Invite people to access calendars
 
-Once sharing is enabled, calendar owners can extend invitations to specific users. 
+Once sharing is enabled, calendar owners can extend invitations to specific users.
 
 1. Open [Outlook on the Web](https://outlook.office365.com).
 
