@@ -55,7 +55,7 @@
       href: ehr-admin-epic.md
     - name: EHR connector Virtual Appointments report
       href: ehr-connector-report.md
-    - name: Virtual Visits usage reports
+    - name: Virtual Visits usage report
       href: virtual-visits-usage-report.md
     - name: Manage the join experience on browsers
       href: browser-join.md
