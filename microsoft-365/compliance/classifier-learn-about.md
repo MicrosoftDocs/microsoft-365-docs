@@ -68,9 +68,6 @@ Sensitivity labels can use classifiers as conditions, see [Apply a sensitivity l
 
 Microsoft 365 comes with multiple pre-trained classifiers:
 
-> [!CAUTION]
-> We are deprecating the **Offensive Language** pre-trained classifier because it has been producing a high number of false positives. Don't use it and if you are currently using it, you should move your business processes off of it. We recommend using the **Threat**, **Profanity**, and **Harassment** pre-trained classifiers instead.
-
 - **Agreements**: Detects content related to legal agreements such as non-disclosure agreements, statements of work, loan and lease agreements, employment and non-compete agreements. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml files.
 
 - **Resumes**: detects docx, .pdf, .rtf, .txt items that are textual accounts of an applicant's personal, educational, professional qualifications, work experience, and other personally identifying information
@@ -103,8 +100,8 @@ Microsoft 365 comes with multiple pre-trained classifiers:
 
 - **Source Code**: detects items that contain a set of instructions and statements written in the top 25 used computer programming languages on GitHub: ActionScript, C, C#, C++, Clojure, CoffeeScript, Go, Haskell, Java, JavaScript, Lua, MATLAB, Objective-C, Perl, PHP, Python, R, Ruby, Scala, Shell, Swift, TeX, Vim Script.
 
-> [!NOTE]
-> Source Code is trained to detect when the bulk of the text is source code. It does not detect source code text that is interspersed with plain text.
+    > [!NOTE]
+    > Source Code is trained to detect when the bulk of the text is source code. It does not detect source code text that is interspersed with plain text.
 
 - **Tax**: Detects Tax relation content such as tax planning, tax forms, tax filing, tax regulations. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, xla files.
 
@@ -122,11 +119,15 @@ These appear in the **Microsoft Purview compliance portal** > **Data classificat
 
 Pre-trained classifiers can scan content in these languages:
 
+- Arabic
 - Chinese (Simplified)
+- Chinese (Traditional)
+- Dutch
 - English
 - French
 - German
 - Italian
+- Korean
 - Japanese
 - Portuguese
 - Spanish
