@@ -37,7 +37,7 @@ We have automatically configured [Preset security policies](/security/office-365
 
 - Protection to all of the Microsoft 365 Business Premium features such as: SharePoint, OneDrive, Office apps, and Microsoft Teams.
 
-### Add a domain
+## Add a domain
 
 When you purchase the Microsoft 365 Business Premium trial, you have the option of using a domain you own, or buying one during the sign-up.
 
@@ -57,7 +57,7 @@ When you purchase the Microsoft 365 Business Premium trial, you have the option 
 
 5. If your hosting provider is GoDaddy or another host enabled with domain connect, the process is easy and you'll be automatically asked to sign in and let Microsoft authenticate on your behalf.
 
-### Onboard and protect devices
+## Onboard and protect devices
 
 1. Visit the Defender portal at security.microsoft.com.
 
@@ -67,7 +67,7 @@ When you purchase the Microsoft 365 Business Premium trial, you have the option 
 
 4. Next, [review security policies](../security/defender-business/mdb-configure-security-settings.md).
 
-### Use Office apps on devices
+## Use Office apps on devices
 
 1. First, you'll need to [install Office](m365bp-install-office-apps.md).
 
@@ -77,7 +77,7 @@ When you purchase the Microsoft 365 Business Premium trial, you have the option 
 
 4. [Share a document](https://support.microsoft.com/office/share-your-documents-651e1cb9-9a51-46dc-8d32-bdb7d928eedd) with a team member.
 
-### Start using the Microsoft 365 Defender portal 
+## Start using the Microsoft 365 Defender portal 
 
 1. Access the Microsoft 365 Defender portal at [https://security.microsoft.com](https://security.microsoft.com).
 
@@ -89,3 +89,6 @@ When you purchase the Microsoft 365 Business Premium trial, you have the option 
 
 5. Lastly, [review remediation actions](../security/defender-business/mdb-review-remediation-actions.md).
 
+## See also
+
+- [Microsoft 365 Business Premium &mdash; cybersecurity for small business](index.md)
