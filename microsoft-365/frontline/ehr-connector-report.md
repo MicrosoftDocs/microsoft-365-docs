@@ -44,7 +44,7 @@ In the left navigation of the Microsoft Teams admin center, choose **Dashboard**
 
 Here, you get an at-a-glance view of Teams EHR-integrated virtual appointment activity by month, including completed appointments, remaining allocation, and whether you've exceeded the monthly limit (depending on the license you have).
 
-:::image type="content" source="../../media/ehr-connector-report-card.png" alt-text="Screenshot of the EHR connector usage card in the Teams admin center dashboard." lightbox="../../media/ehr-connector-report-card.png":::
+:::image type="content" source="media/ehr-connector-report-card.png" alt-text="Screenshot of the EHR connector usage card in the Teams admin center dashboard." lightbox="media/ehr-connector-report-card.png":::
 
 Choose **View details** to see report details. To purchase more licenses, choose **Buy more**.
 
@@ -53,7 +53,7 @@ Choose **View details** to see report details. To purchase more licenses, choose
 1. In the left navigation of the Teams admin center, go to **Analytics & reports** > **Usage reports**.
 1. On the **View reports** tab, choose **EHR connector Virtual Appointments** and a date range. Then, select **Run report**.
 
-    :::image type="content" source="../../media/ehr-connector-report.png" alt-text="Screenshot of the Teams EHR connector Virtual Appointments report in the Teams admin center." lightbox="../../media/ehr-connector-report.png":::
+    :::image type="content" source="media/ehr-connector-report.png" alt-text="Screenshot of the Teams EHR connector Virtual Appointments report in the Teams admin center." lightbox="media/ehr-connector-report.png":::
 
 #### Interpret the report
 
@@ -67,7 +67,7 @@ Choose **View details** to see report details. To purchase more licenses, choose
 |**6**   |Select **Edit columns** to add or remove columns in the table |
 
 > [!NOTE]
-> For more analytics on Teams EHR-integrated virtual appointments, see [Virtual Visits usage report](../../teams-analytics-and-reports/virtual-visits-usage-report.md). With the Virtual Visits usage report, you can view key metrics such as total appointments, lobby wait time, appointment duration, and no shows. Use this information to gain insight into usage trends to help you optimize virtual appointments to deliver better business outcomes.
+> For more analytics on Teams EHR-integrated virtual appointments, see [Virtual Visits usage report](virtual-visits-usage-report.md). With the Virtual Visits usage report, you can view key metrics such as total appointments, lobby wait time, appointment duration, and no shows. Use this information to gain insight into usage trends to help you optimize virtual appointments to deliver better business outcomes.
 
 ## Related articles
 
