@@ -24,11 +24,7 @@ ms.date: 04/02/2021
 
 # Understand billing profiles
 
-A billing profile contains a payment method, Bill-to information, and other invoice settings, such as purchase order number and email invoice preference. You use a billing profile to pay for the products that you buy from Microsoft. A billing profile is automatically created when a user makes a self-service purchase. Each billing profile is invoiced separately.
-
-> [!NOTE]
->
-> Billing profiles are not available to customers who buy products and services from Microsoft.com or on the **Purchase services** page of the Microsoft 365 admin center.
+A billing profile contains a payment method, Bill-to information, and other invoice settings, such as purchase order number and email invoice preference. You use a billing profile to pay for the products that you buy from Microsoft. A billing profile is automatically created when Billing profiles are only available if you bought your subscription directly through Microsoft Sales. They aren't available for customers who bought their subscription through the products web site or on the Purchase services page in the Microsoft 365 admin center. Each billing profile is invoiced separately. 
 
 ## What are billing profile roles?
 
