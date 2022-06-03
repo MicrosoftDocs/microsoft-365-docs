@@ -333,9 +333,11 @@ You can generate GUID through online open source, or through PowerShell - [How t
 
 ![image](https://user-images.githubusercontent.com/81826151/159046476-26ea0a21-8087-4f01-b8ae-5aa73b392d8f.png)
 
-### What is the removable storage media limitation for the maximum number of USBs?
+### What is the removable storage media and policy limitations?
 
-We've validated one USB group with 100,000 media - up to 7 MB in size. The policy works in both Intune and GPO without performance issues.
+Either from the Microsoft Endpoint Manager portal (Intune) or through MS Graph API, the backend call is done through OMA-URI (GET to read or PATCH to update) and therefore the limitation is the same as any OMA-URI Custom Configuration profile in Microsoft which is officialy 350,000 characters for XML files. 
+    
+As example, if you need two blocks of Entry per user SID to "Allow"/"Audit allowed" specific users and 2 block of Entry at the end to "Deny" all, you will be able to manage 2276 users. 
 
 ### Why does the policy not work?
 
