@@ -248,12 +248,12 @@ We recommend you get started with this protection by creating a policy for your 
 
 4. Specify the name, description, and settings for your policy as recommended in the chart below. For more information, see [Learn about anti-phishing policy in Microsoft Defender for Office 365 options](../../security/office-365-security/set-up-anti-phishing-policies.md).
 
-5. After you have reviewed your settings, select **Create this policy** or **Save**, as appropriate.
+5. After you've reviewed your settings, select **Create this policy** or **Save**, as appropriate.
 
 |Setting or option|Recommended setting|
 |---|---|
 |Name|Domain and most valuable campaign staff|
-|Description|Ensure most important staff and our domain are not being impersonated.|
+|Description|Ensure most important staff and our domain aren't being impersonated.|
 |Add users to protect|Select **+ Add a condition, The recipient is**. Type user names or enter the email address of the candidate, campaign manager, and other important staff members. You can add up to 20 internal and external addresses that you want to protect from impersonation.|
 |Add domains to protect|Select **+ Add a condition, The recipient domain is**. Enter the custom domain associated with your Microsoft 365 subscription, if you defined one. You can enter more than one domain.|
 |Choose actions|If email is sent by an impersonated user: select **Redirect message to another email address**, and then type the email address of the security administrator; for example, securityadmin@contoso.com. <br/> If email is sent by an impersonated domain: select **Quarantine message**.|
@@ -266,7 +266,7 @@ We recommend you get started with this protection by creating a policy for your 
 
 ## Protect against malicious attachments, files, and URLs
 
-People regularly send, receive, and share attachments, such as documents, presentations, spreadsheets, and more. It's not always easy to tell whether an attachment is safe or malicious just by looking at an email message. Microsoft Defender for Office 365 includes Safe Attachment protection, but this protection is not turned on by default. We recommend that you create a new rule to begin using this protection. This protection extends to files in SharePoint, OneDrive, and Microsoft Teams.
+People regularly send, receive, and share attachments, such as documents, presentations, spreadsheets, and more. It's not always easy to tell whether an attachment is safe or malicious just by looking at an email message. Microsoft Defender for Office 365 includes Safe Attachment protection, but this protection isn't turned on by default. We recommend that you create a new rule to begin using this protection. This protection extends to files in SharePoint, OneDrive, and Microsoft Teams.
 
 ### Set up Safe Attachments
 
@@ -280,7 +280,7 @@ You can use pre-set Safe Attachments policies, or create your own. To create a S
 
 4. Apply the settings in the following table.
 
-5. After you have reviewed your settings, select **Create this policy** or **Save**, as appropriate.
+5. After you've reviewed your settings, select **Create this policy** or **Save**, as appropriate.
 
 |Setting or option|Recommended setting|
 |---|---|
@@ -348,4 +348,6 @@ To learn more, see the following resources:
 
 [Multi-factor authentication for Microsoft 365](multi-factor-authentication-microsoft-365.md) (article)\
 [Manage and monitor priority accounts](../setup/priority-accounts.md) (article)\
-[Microsoft 365 Reports in the admin center](../activity-reports/activity-reports.md) (video)
+[Microsoft 365 Reports in the admin center](../activity-reports/activity-reports.md) (video)\
+[Microsoft 365 Business Premium — cybersecurity for small business](/microsoft-365/business-premium/) (article)\
+

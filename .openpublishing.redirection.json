@@ -278,7 +278,7 @@
     {
       "source_path": "microsoft-365/business/validate-protection-settings-on-windows-10-pcs.md",
       "redirect_url": "/microsoft-365/business-premium/m365bp-protection-settings-for-windows-10-devices",
-      "redirect_document_id": false
+      "redirect_document_id": true
     },
     {
       "source_path": "microsoft-365/business/move-files-to-onedrive.md",
@@ -332,13 +332,13 @@
     },
     {
       "source_path": "microsoft-365/business/validate-settings-on-windows-10-pcs.md",
-      "redirect_url": "/microsoft-365/admin/devices/validate-settings-on-windows-10-pcs",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-validate-settings-on-windows-10-pcs",
       "redirect_document_id": true
     },
     {
       "source_path": "microsoft-365/business/review-threats-take-action.md",
-      "redirect_url": "/microsoft-365/admin/security-and-compliance/review-threats-take-action",
-      "redirect_document_id": true
+      "redirect_url": "/microsoft-365/business-premium/m365bp-review-threats-take-action",
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/business/map-protection-features-to-intune-settings.md",
@@ -373,7 +373,7 @@
     {
       "source_path": "microsoft-365/business/protection-settings-for-windows-10-devices.md",
       "redirect_url": "/microsoft-365/business-premium/m365bp-protection-settings-for-windows-10-devices",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/business/secure-win-10-pcs.md",
@@ -392,7 +392,7 @@
     },
     {
       "source_path": "microsoft-365/business/threats-detected-defender-av.md",
-      "redirect_url": "/microsoft-365/admin/security-and-compliance/threats-detected-defender-av",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-review-threats-take-action",
       "redirect_document_id": true
     },
     {
@@ -407,8 +407,8 @@
     },
     {
       "source_path": "microsoft-365/business/protection-settings-for-windows-10-pcs.md",
-      "redirect_url": "/microsoft-365/business-premium/m365bp-protection-settings-for-windows-10-pcs",
-      "redirect_document_id": true
+      "redirect_url": "/microsoft-365/business-premium/m365bp-protection-settings-for-windows-10-devices",
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/business/view-policies-and-devices.md",
@@ -422,8 +422,8 @@
     },
     {
       "source_path": "microsoft-365/business/validate-settings-on-android-or-ios.md",
-      "redirect_url": "/microsoft-365/admin/devices/validate-settings-on-android-or-ios",
-      "redirect_document_id": true
+      "redirect_url": "/microsoft-365/business-premium/m365bp-validate-settings-on-android-or-ios",
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/business/manage-domain-users.md",
@@ -447,7 +447,7 @@
     },
     {
       "source_path": "microsoft-365/business/set-up.md",
-      "redirect_url": "/microsoft-365/admin/setup/business-set-up",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-setup",
       "redirect_document_id": true
     },
     {
@@ -4511,7 +4511,7 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "microsoft-365-docs-pr/microsoft-365/security/defender-endpoint/customize-run-review-remediate-scans-windows-defender-antivirus.md",
+      "source_path": "microsoft-365/security/defender-endpoint/customize-run-review-remediate-scans-windows-defender-antivirus.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/customize-run-review-remediate-scans-microsoft-defender-antivirus",
       "redirect_document_id": true
     },
@@ -6327,7 +6327,7 @@
     },
     {
       "source_path": "microsoft-365/business-video/set-up.md",
-      "redirect_url": "/microsoft-365/admin/setup/business-set-up",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-setup",
       "redirect_document_id": false
     },
     {
@@ -6392,7 +6392,7 @@
     },
     {
       "source_path": "microsoft-365/business-video/secure-win-10-pro-devices.md",
-      "redirect_url": "/microsoft-365/admin/devices/protection-settings-for-windows-10-pcs",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-protection-settings-for-windows-10-devices",
       "redirect_document_id": false
     },
     {
@@ -6857,7 +6857,7 @@
     },
     {
     "source_path": "microsoft-365/admin/devices/protection-settings-for-windows-10-pcs.md",
-    "redirect_url": "/microsoft-365/business-premium/m365bp-protection-settings-for-windows-10-pcs",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-protection-settings-for-windows-10-devices",
     "redirect_document_id": false
     },
     {
@@ -7443,6 +7443,44 @@
     {
       "source_path": "microsoft-365/compliance/terms-conditions.md",
       "redirect_url": "/legal/microsoft-365/microsoft-365-trial",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/setup/business-set-up.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-setup",
+      "redirect_document_id": false
+    },{
+      "source_path": "microsoft-365/admin/security-and-compliance/threats-detected-defender-av.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-review-threats-take-action",
+      "redirect_document_id": false
+    },{
+      "source_path": "microsoft-365/commerce/subscriptions/important-information-e4.md",
+      "redirect_url": "/microsoft-365/commerce/subscriptions/upgrade-to-different-plan",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/subscriptions/upgrade-Office-365-E4.md",
+      "redirect_url": "/microsoft-365/commerce/subscriptions/upgrade-to-different-plan",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/setup/priority-accounts.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/configure-review-priority-account",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/security-and-compliance/review-threats-take-action.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-review-threats-take-action",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/devices/validate-settings-on-android-or-ios.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-validate-settings-on-android-or-ios",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/validate-settings-on-windows-10-pcs.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-validate-settings-on-windows-10-pcs",
       "redirect_document_id": false
     }
   ]
