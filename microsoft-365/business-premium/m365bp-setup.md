@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 04/08/2022
+ms.date: 06/03/2022
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.reviewer: shlomiakirav
@@ -17,7 +17,7 @@ ms.collection:
 - M365-security-compliance
 ---
 
-# Setup for Microsoft 365 Business Premium
+# Set up Microsoft 365 Business Premium
 
 After you have [started a trial or purchased Microsoft 365 Business Premium](get-microsoft-365-business-premium.md), your next step is to get everything set up. You have several options available. You can:
 
