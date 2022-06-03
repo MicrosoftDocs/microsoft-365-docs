@@ -104,21 +104,21 @@
       - name: Overview
         href: teams-in-hc.md
       - name: Healthcare team templates
-        href: healthcare-templates-admin-console.md
+        href: /microsoftteams/expand-teams-across-your-org/healthcare/healthcare-templates-admin-console?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
       - name: Teams policy packages for healthcare
-        href: policy-packages-healthcare.md
+        href: /microsoftteams/policy-packages-healthcare?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
     - name: Nonprofit
       items:
       - name: Overview
         href: teams-for-nonprofit-landing-page.md
       - name: Use nonprofit team templates
-        href: team-templates-nonprofit.md
+        href: /microsoftteams/team-templates-nonprofit?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
     - name: Retail
       items:
       - name: Overview
         href: teams-for-retail-landing-page.md
       - name: Use retail team templates
-        href: get-started-with-retail-teams-templates.md
+        href: /microsoftteams/get-started-with-retail-teams-templates?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
     - name: Manufacturing
       items:
       - name: Overview
