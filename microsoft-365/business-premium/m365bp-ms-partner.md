@@ -1,5 +1,5 @@
 ---
-title: Set up Microsoft 365 Business Premium
+title: Work with a Microsoft partner
 description: See how to set up Microsoft 365 Business Premium and work with a Microsoft Partner
 search.appverid: MET150
 author: denisebmsft
@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 04/08/2022
+ms.date: 06/03/2022
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.reviewer: shlomiakirav

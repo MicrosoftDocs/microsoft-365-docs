@@ -6653,7 +6653,7 @@
     {
       "source_path": "microsoft-365/campaigns/m365-campaigns-phishing-and-attacks.md",
       "redirect_url": "/microsoft-365/business-premium/avoid-phishing-and-attacks",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/campaigns/m365-campaigns-protect-admin-accounts.md",
