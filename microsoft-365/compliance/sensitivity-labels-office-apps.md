@@ -100,10 +100,6 @@ The numbers listed are the minimum Office application versions required for each
 |[Apply S/MIME protection](#configure-a-label-to-apply-smime-protection-in-outlook)                    | Preview: Rolling out to [Beta Channel](https://office.com/insider) | Preview: Rolling out to [Beta Channel](https://office.com/insider) <sup>\*</sup>                   | Preview: Rolling out to [Beta Channel](https://insider.office.com/join/ios) | Preview: Rolling out to [Beta Channel](https://insider.office.com/join/android) | Rolling out in preview |
 |
 
-
-Configure a label to apply S/MIME protection in Outlook
-
-
 **Footnotes:**
 
 <sup>\*</sup>
