@@ -23,7 +23,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: f3433b6b-02f7-447f-9d62-306bf03638b0
-description: "Learn how to validate the Microsoft 365 Business Premium app protection settings in your Android or iOS devices."
+description: "Learn how to validate the Microsoft 365 Business Premium app protection settings on your Android or iOS devices. Making security settings for your applications is critical in order to protect the files on your mobile apps and devices."
 ---
 
 # Validate app protection settings on Android or iOS devices

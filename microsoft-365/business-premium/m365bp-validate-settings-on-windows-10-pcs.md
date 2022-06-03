@@ -26,7 +26,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
-description: "Learn how to verify that Microsoft 365 for business app protection settings took effect on your users' Windows 10 devices."
+description: "Learn how to verify that Microsoft 365 Business Premium app protection settings took effect on your users' Windows 10 devices."
 ---
 
 # Validate device protection settings for Windows 10 or 11 PCs
