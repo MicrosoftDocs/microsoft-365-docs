@@ -42,7 +42,7 @@ We have automatically configured [Preset security policies](/security/office-365
 When you purchase the Microsoft 365 Business Premium trial, you have the option of using a domain you own, or buying one during the sign-up.
 
 > [!Note]
-> If you purchased a new domain when you signed up, your domain is all set up and you can move to Add users and assign licenses. Go to the admin center(admin.microsoft.com).
+> If you purchased a new domain when you signed up, your domain is all set up and you can move to Add users and assign licenses. Go to the admin center([https://admin.microsoft.com](https://admin.microsoft.com)).
 
 1. From the admin center menu, choose **Setup** to start the wizard.
 
