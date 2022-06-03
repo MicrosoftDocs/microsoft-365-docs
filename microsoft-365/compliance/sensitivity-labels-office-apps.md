@@ -97,7 +97,12 @@ The numbers listed are the minimum Office application versions required for each
 |[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md) <br /> - Using sensitive info types                    | Current Channel: 2009+ <br /><br> Monthly Enterprise Channel: 2009+ <br /><br> Semi-Annual Enterprise Channel: 2102+ | 16.44+ <sup>\*</sup>                    | Under review           | Under review               | Yes |
 |[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md) <br /> - Using trainable classifiers                    | Current Channel: 2105+ <br /><br> Monthly Enterprise Channel: 2105+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.49+ | Under review           | Under review               | Yes |
 |[Different settings for default label and mandatory labeling](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | Current Channel: 2105+ <br /><br> Monthly Enterprise Channel: 2105+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.43+ <sup>\*</sup>                   | 4.2111+           | 4.2111+               | Yes |
+|[Apply S/MIME protection](#configure-a-label-to-apply-smime-protection-in-outlook)                    | Rolling out in preview to [Beta Channel](https://office.com/insider) | Rolling out in preview to [Beta Channel](https://office.com/insider) <sup>\*</sup>                   | Rolling out in preview to [Beta Channel](https://office.com/insider)          | Rolling out in preview to [Beta Channel](https://office.com/insider) | Rolling out in preview |
 |
+
+
+Configure a label to apply S/MIME protection in Outlook
+
 
 **Footnotes:**
 
@@ -395,6 +400,32 @@ When the Outlook app doesn't support turning off mandatory labeling: If you sele
 > If you have configured the PowerShell advanced settings **OutlookDefaultLabel** and **DisableMandatoryInOutlook** by using the [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) or [New-LabelPolicy](/powershell/module/exchange/new-labelpolicy) cmdlets:
 > 
 > Your chosen values for these PowerShell settings are reflected in the label policy configuration in the Microsoft Purview compliance portal, and they automatically work for Outlook apps that support these settings. The other PowerShell advanced settings remain supported for the Azure Information Protection unified labeling client only.
+
+## Configure a label to apply S/MIME protection in Outlook
+
+> [!NOTE]
+> This capability for built-in labeling is in preview and subject to change. Identify the minimum versions of Outlook that support this features by using the [capabilities table for Outlook](#sensitivity-label-capabilities-in-outlook) on this page, and the row **Apply S/MIME protection**.
+
+This configuration is not available in the Microsoft Purview compliance center. You must use PowerShell advanced settings with the [Set-Label](/powershell/module/exchange/set-label) after you've [connected to Office 365 Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+
+Use these settings only when you have a working [S/MIME deployment](/microsoft-365/security/office-365-security/s-mime-for-message-signing-and-encryption) and want a label to automatically apply this protection method for emails rather than Rights Management encryption from Azure Information Protection. The resulting protection will be the same as when a user manually selects S/MIME options from Outlook.
+
+|Configuration  |Key/Value  |
+|---------|---------|
+|**S/MIME digital signature** | SMimeSign="True" |
+|**S/MIME encryption** | SMimeEncrypt="True"|
+
+If the label you specify is configured for encryption, S/MIME protection replaces the Rights Management encryption only in Outlook. For other apps, the label applies the encryption settings specified in the Microsoft Purview compliance portal.
+
+Example PowerShell commands, where the sensitivity label GUID is **8faca7b8-8d20-48a3-8ea2-0f96310a848e**:
+
+```PowerShell
+Set-Label -Identity "8faca7b8-8d20-48a3-8ea2-0f96310a848e" -AdvancedSettings @{SMimeSign="True"}
+
+Set-Label -Identity "8faca7b8-8d20-48a3-8ea2-0f96310a848e" -AdvancedSettings @{SMimeEncrypt="True"}
+```
+
+For more help in specifying PowerShell advanced settings, see [PowerShell tips for specifying the advanced settings](sensitivity-labels-default-sharing-link.md#powershell-tips-for-specifying-the-advanced-settings).
 
 ## Auditing labeling activities
 
