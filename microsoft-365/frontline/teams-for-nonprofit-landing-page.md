@@ -26,7 +26,7 @@ Nonprofit organizations have many unique business needs that Microsoft Teams and
 
 The following templates are designed specifically for nonprofit organizations. Use these templates to empower your staff and engage volunteers.
 
-- Use the [Manage volunteers team template](team-templates-nonprofit.md) to quickly and easily set up teams in Teams for your staff to communicate and collaborate on volunteer management tasks and activities. This template includes settings, channels, and apps designed to streamline volunteer management activities.
+- Use the [Manage volunteers team template](/microsoftteams/team-templates-nonprofit?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) to quickly and easily set up teams in Teams for your staff to communicate and collaborate on volunteer management tasks and activities. This template includes settings, channels, and apps designed to streamline volunteer management activities.
 
     Your staff can use different channels to organize and share onboarding materials and frequently used documents, view reporting, post important team and event announcements, and more. The template also integrates with [Volunteer Management](/dynamics365/industry/nonprofit/volunteer-management-use), an app that's part of [Microsoft Cloud for Nonprofit](/industry/nonprofit), enabling staff to manage volunteer engagement opportunities within Teams.
 

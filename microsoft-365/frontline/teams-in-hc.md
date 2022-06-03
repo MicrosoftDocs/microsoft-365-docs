@@ -77,7 +77,7 @@ Apply Teams policy packages to define what different roles can do in Teams. For 
 - Information workers in your healthcare organization, such as IT personnel, informatics staff, finance personnel, and compliance officers, can have full access to chat, calling, and meetings.
 - Patient rooms, to control settings for patient room devices.
 
-To learn more, see [Teams policy packages for healthcare](policy-packages-healthcare.md).
+To learn more, see [Teams policy packages for healthcare](/microsoftteams/policy-packages-healthcare?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
 
 ## Secure messaging
 
@@ -94,7 +94,7 @@ Also related to secure messaging is the ability to have other tenants federated 
 
 ## Teams templates for healthcare organizations
 
-New templates for creating Teams were developed to apply to a Hospital setting, and more are expected soon. This makes it easier to create teams that Healthcare workers use to coordinate care for patients in various departments or wards. To learn more, see [Get started with Teams templates for Healthcare organizations](healthcare-templates-admin-console.md). Teams can be started for internal departments such as cardiology, or for care wards, and more templates are in development.
+New templates for creating Teams were developed to apply to a Hospital setting, and more are expected soon. This makes it easier to create teams that Healthcare workers use to coordinate care for patients in various departments or wards. To learn more, see [Get started with Teams templates for Healthcare organizations](/microsoftteams/expand-teams-across-your-org/healthcare/healthcare-templates-admin-console?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json). Teams can be started for internal departments such as cardiology, or for care wards, and more templates are in development.
 
 ## Care coordination and collaboration
 
