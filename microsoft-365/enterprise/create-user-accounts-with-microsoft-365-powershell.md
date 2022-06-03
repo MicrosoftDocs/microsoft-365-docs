@@ -81,7 +81,7 @@ New-MsolUser -DisplayName <display name> -FirstName <first name> -LastName <last
 >PowerShell Core doesn't support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets that have *Msol* in their name. Run these cmdlets from Windows PowerShell.
 >
 
-To list the available [licensing plan names](https://docs.microsoft.com/azure/active-directory/enterprise-users/licensing-service-plan-reference), use this command:
+To list the available [licensing plan names](/azure/active-directory/enterprise-users/licensing-service-plan-reference), use this command:
 
 ````powershell
 Get-MsolAccountSku
