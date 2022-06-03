@@ -176,7 +176,7 @@ Create teams that include a predefined set of settings, channels, tabs, and pre-
 - The Retail **Organize a store** template includes channels for General, Shift Handoff, Store Readiness, and Learning, and includes the Approvals, Tasks, and Wiki apps.
 - The **Retail for managers** template includes channels for General, Operations, and Learning, and includes a Wiki tab.
 
-You can also [create a custom template](/microsoftteams/create-a-team-template) to include the apps your store needs. More information: [Get started with Retail team templates](get-started-with-retail-teams-templates.md)
+You can also [create a custom template](/microsoftteams/create-a-team-template) to include the apps your store needs. More information: [Get started with Retail team templates](/microsoftteams/get-started-with-retail-teams-templates?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)
 
 Aside from team templates, you can also set up other sites and services to help with communication: SharePoint sites and Viva Connections.
 
