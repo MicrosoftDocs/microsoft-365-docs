@@ -37,7 +37,8 @@ ms.custom: api
 
 ## API description
 
-Retrieves a list of all permissions for a browser extension.
+Retrieves a list of all the permissions requested by a specific extension.
+
 <br>Supports [OData V4 queries](https://www.odata.org/documentation/).
 <br>OData supported operators:
 <br>```$filter``` on:  ```id```, ```name```, ```description```, ```cvssV3```, ```publishedOn```, ```severity```, and ```updatedOn``` properties.
@@ -72,7 +73,7 @@ Empty
 
 ## Response
 
-If successful, this method returns 200 OK with the list of all permissions for a browser extension in the body.
+If successful, this method returns 200 OK with the list of all permissions requested by a browser extension in the body.
 
 ## Example
 

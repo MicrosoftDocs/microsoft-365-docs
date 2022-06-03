@@ -99,7 +99,7 @@ IsActivated|Boolean|Indicates whether an extension is active or not.
 RbacGroupId|string|The role-based access control (RBAC) group ID.
 RbacGroupName|string|The role-based access control (RBAC) group. If this device is not assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."
 InstallationTime|string|The time the extension was installed.
-Permissions|string|Specifies the permissions required for a specific extension.
+Permissions|string|Specifies the permissions requested by a specific extension.
 
 ### 1.6 Examples
 
