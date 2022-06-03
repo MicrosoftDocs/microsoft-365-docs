@@ -1,8 +1,8 @@
 ---
-title: Virtual appointments in Teams -  EHR connector admin reports
-author: SerdarSoysal
-ms.author: serdars
-manager: serdars
+title: Microsoft Teams EHR connector Virtual Appointments report
+author: LanaChin
+ms.author: v-lanachin
+manager: samanro
 audience: ITPro
 ms.topic: conceptual
 ms.service: msteams
@@ -21,29 +21,55 @@ ms.collection:
   - m365solution-scenario
 appliesto: 
   - Microsoft Teams
-ms.reviewer: ansantam
-description: View admin reports for Teams EHR connector appointments.
+ms.reviewer: 
+description: Learn how to use the Teams EHR connector Virtual Appointments report in the Microsoft Teams admin center to get an overview of EHR-integrated virtual appointment usage in your organization. 
 ---
 
-# Microsoft Teams EHR connector admin reports
+# Microsoft Teams EHR connector Virtual Appointments report
 
-The Microsoft Teams Electronic Health Record (EHR) connector admin report dialog provides a quick and easy to read view of usage data.
+The Microsoft Teams Electronic Health Record (EHR) connector Virtual Appointments report in the Microsoft Teams admin center gives you a quick and easy way to view Teams EHR-integrated virtual appointment usage in your organization.
 
-You can see the Teams EHR connector admin report by going to the Microsoft Teams admin center dashboard and viewing the dialog there.
+To view the report, you must be a global admin, Teams admin, Global reader, or Report reader.
 
-Access the report from the Microsoft Teams admin center dashboard.
+## View the report
 
- ![a dialog of virtual appointments allocations and limits.](media/admin-connector-report.png)
+There are two ways to access and view the report in the Teams admin center.
 
-The dialog provides the following data:
+- Through the [EHR connector usage card](#the-ehr-connector-usage-card) in the dashboard
+- Directly by choosing [**EHR connector Virtual Appointments**](#the-teams-ehr-connector-virtual-appointments-report) in **Analytics & reports** > **Usage reports**
 
-- Exceeded limit
-- Remaining allocation
-- Completed appointments
+### The EHR connector usage card
 
-You can use the report dialog to buy more virtual appointments.
+In the left navigation of the Microsoft Teams admin center, choose **Dashboard**, and then go to the **EHR connector Virtual Appointments** card.
+
+Here, you get an at-a-glance view of Teams EHR-integrated virtual appointment activity by month, including completed appointments, remaining allocation, and whether you've exceeded the monthly limit (depending on the license you have).
+
+:::image type="content" source="../../media/ehr-connector-report-card.png" alt-text="Screenshot of the EHR connector usage card in the Teams admin center dashboard." lightbox="../../media/ehr-connector-report-card.png":::
+
+Choose **View details** to see report details. To purchase more licenses, choose **Buy more**.
+
+### The Teams EHR connector Virtual Appointments report
+
+1. In the left navigation of the Teams admin center, go to **Analytics & reports** > **Usage reports**.
+1. On the **View reports** tab, choose **EHR connector Virtual Appointments** and a date range. Then, select **Run report**.
+
+    :::image type="content" source="../../media/ehr-connector-report.png" alt-text="Screenshot of the Teams EHR connector Virtual Appointments report in the Teams admin center." lightbox="../../media/ehr-connector-report.png":::
+
+#### Interpret the report
+
+|Callout |Description  |
+|--------|-------------|
+|**1**   |Each report shows the date for when the report was generated and the date range you chose.|
+|**2**   |The table gives you detailed information about each appointment that took place during the selected date range. Keep in mind that you won't see entries for appointments in which either a staff member or patient didn't join. <ul><li>**Start time (UTC)** is the date and time when both a staff member and participant are in the appointment.  </li> <li>**Duration** is the time difference between the start time and when the last person leaves the appointment.</li> <li>**Primary** is the name of the meeting organizer. <li>**Primary's email** is the email address of the meeting organizer.</li> <li> **Department** is the department information for the appointment. If the information isn't displayed correctly, contact your EHR support team. For integration with Epic, make sure ```&departmentId=%PERFDEPID;;; ; ;;NONE;%``` is part of the provider integration record. </li></li> <li>**Attendants** is the total number of staff members and participants in the appointment.</li> <li>**Within limit** indicates whether the appointment is within the allocation limit. </li> </ul> |
+|**3**   |You can export the report to a CSV file for offline analysis. Select **Export to Excel** to download the report. |
+|**4**   |Select **Filter** to filter the report details view. |
+|**5**   |Select **Full screen** to view the report in full screen mode. |
+|**6**   |Select **Edit columns** to add or remove columns in the table |
+
+> [!NOTE]
+> For more analytics on Teams EHR-integrated virtual appointments, see [Virtual Visits usage report](../../teams-analytics-and-reports/virtual-visits-usage-report.md). With the Virtual Visits usage report, you can view key metrics such as total appointments, lobby wait time, appointment duration, and no shows. Use this information to gain insight into usage trends to help you optimize virtual appointments to deliver better business outcomes.
 
 ## Related articles
 
 - [Virtual appointments with Teams - Integration into Cerner EHR](ehr-admin-cerner.md)
-- [Virtual appointments with Teams - Integration into Epic EHR](ehr-admin-epic.md)
+- [Virtual appointments with Teams - Integration into Epic EHR](ehr-admin-epic.md) 
