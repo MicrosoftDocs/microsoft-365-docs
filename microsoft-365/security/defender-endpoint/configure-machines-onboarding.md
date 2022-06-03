@@ -34,13 +34,16 @@ Before you can track and manage onboarding of devices:
 - [Enroll your devices to Intune management](configure-machines.md#enroll-devices-to-intune-management)
 - [Ensure you have the necessary permissions](configure-machines.md#obtain-required-permissions)
 
+Watch this video to learn how to easily onboard clients with Microsoft Defender for Endpoint.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4bGqr?rel=0]
+
 ## Discover and track unprotected devices
 
 The **Onboarding** card provides a high-level overview of your onboarding rate by comparing the number of Windows devices that have actually onboarded to Defender for Endpoint against the total number of Intune-managed Windows devices.
 
 :::image type="content" source="images/secconmgmt_onboarding_card.png" alt-text="The Device configuration management Onboarding card" lightbox="images/secconmgmt_onboarding_card.png":::
 
-*Card showing onboarded devices compared to the total number of Intune-managed Windows device*
+*Card showing onboarded devices compared to the total number of Intune-managed Windows devices*
 
 > [!NOTE]
 > If you used Configuration Manager, the onboarding script, or other onboarding methods that don't use Intune profiles, you might encounter data discrepancies. To resolve these discrepancies, create a corresponding Intune configuration profile for Defender for Endpoint onboarding and assign that profile to your devices.
