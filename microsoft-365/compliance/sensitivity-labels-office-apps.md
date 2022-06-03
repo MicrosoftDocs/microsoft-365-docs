@@ -410,7 +410,7 @@ This configuration is not available in the Microsoft Purview compliance center. 
 
 Use these settings only when you have a working [S/MIME deployment](/microsoft-365/security/office-365-security/s-mime-for-message-signing-and-encryption) and want a label to automatically apply this protection method for emails rather than Rights Management encryption from Azure Information Protection. The resulting protection will be the same as when a user manually selects S/MIME options from Outlook.
 
-|Configuration  |Key/Value  |
+|Configuration  |Advanced setting key/value |
 |---------|---------|
 |**S/MIME digital signature** | SMimeSign="True" |
 |**S/MIME encryption** | SMimeEncrypt="True"|
