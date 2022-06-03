@@ -116,9 +116,11 @@ sections:
         answer: |
           *Example 1: Suppose you have assigned 10 users a Defender for Business license, and you have assigned 10 other users a Defender for Endpoint Plan 1 license. What happens if you have a mix of subscriptions like this example in your tenant?*
 
-          In general, mixed licenses are not supported with Defender for Business. A tenant with Defender for Business and [Defender for Endpoint Plan 1](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1) will default to the Defender for Business experience across the entire tenant. However, **you can now contact support and request an override to change your tenant flavor to either Defender for Business or Defender for Endpoint Plan 1**. Referring to our example, you could request an override to keep the Defender for Business experience, even if you have some Defender for Endpoint Plan 1 licenses. See [Get support for Microsoft 365 for business](/microsoft-365/admin/get-help-support).
+          In general, mixed licenses are not supported with Defender for Business. A tenant with a mix of Defender for Business and [Defender for Endpoint Plan 1](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1) licenses will default to the Defender for Business experience across the entire tenant. However, **you can now contact support and request an override to change your tenant flavor to *either* Defender for Business *or* Defender for Endpoint Plan 1**. In this case, you could request an override to keep the Defender for Business experience, even if you have some Defender for Endpoint Plan 1 licenses. See [Get support for Microsoft 365 for business](/microsoft-365/admin/get-help-support).
           
-          *Example 2: Suppose you have assigned 10 users a Defender for Endpoint Plan 2 license, and you have assigned 15 other users a Defender for Business license.*
+          *Example 2: Suppose you have assigned 10 users a Defender for Endpoint Plan 2 license, and you have assigned 15 other users a Defender for Business license. What happens if you have a mix of subscriptions like this example in your tenant?*
+
+          In this case, your tenant will default to the Defender for Endpoint Plan 2 experience, with 10 active licenses. If you want to keep the Defender for Endpoint Plan 2 experience, you should purchase additional licenses for the other 15 users and cancel their existing Defender for Business licenses.
 
           For details about licenses and product terms, see [Licensing and product terms for Microsoft 365 subscriptions](https://www.microsoft.com/licensing/terms/productoffering/Microsoft365/MCA).
 
