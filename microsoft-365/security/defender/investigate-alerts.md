@@ -210,7 +210,7 @@ To create a suppression rule for alerts:
     2. You can edit and/or delete properties of this evidence as per your requirement (using wildcards, when supported).
 
     3. Files, processes, AMSI script, WMI event, and scheduled tasks are some of the evidences that you can select from the evidence types drop-down list.
-    :::image type="content" source="../../media/defender/other-evidence-types.png" alt-text="Other types of evidence":::
+    :::image type="content" source="../../media/investigate-alerts/other-evidence-types.png" alt-text="Other types of evidence":::
     4. To add another IOC, click **Add filter**. 
     > [!NOTE]
     > Adding at least one IOC to the rule condition is required to suppress any alert type.
