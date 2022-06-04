@@ -62,13 +62,13 @@ Once sharing is enabled, calendar owners can extend invitations to specific user
 
 4. Choose how much information you want this person to see:
 
-- **Can view when I'm busy** lets the person see when you are busy but does not include details such as the event location.
+     - **Can view when I'm busy** lets the person see when you are busy but does not include details such as the event location.
 
-- **Can view titles and locations** lets the person see when you are busy as well as the title and location of events.
+     - **Can view titles and locations** lets the person see when you are busy as well as the title and location of events.
 
-- **Can view all details** lets the person see all the details of your events.
+     - **Can view all details** lets the person see all the details of your events.
 
-- **Can edit** lets the person see all details of your events and edit your calendar (only available when sharing with people in your organization).
+     - **Can edit** lets the person see all details of your events and edit your calendar (only available when sharing with people in your organization).
 
 5. Select **Share**. 
 
