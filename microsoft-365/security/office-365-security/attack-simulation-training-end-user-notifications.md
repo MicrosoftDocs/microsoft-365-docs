@@ -74,9 +74,14 @@ On the details flyout from the **Tenant notifications** tab only, click **Edit n
 
 ## Create end-user notifications
 
-On the **Tenant notifications** tab, you can click ![Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new** to start the new end-user notification wizard.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Simulation content library** tab \> and then select **End user notifications**. To go directly to the **Simulation content library** tab where you can select **End user notifications**, use <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
 
-1. On the **Define details** page**, configure the following settings:
+2. On the **Tenant notifications** tab, click ![Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new** to start the end user notification wizard.
+
+   > [!NOTE]
+   > At any point during the creation wizard, you can click **Save and close** to save your progress and continue configuring the notification later. You can pick up where you left off by selecting the notification on the **Tenant notifications** tab in **End user notifications**, and then clicking ![Edit automation icon.](../../media/m365-cc-sc-edit-icon.png) **Edit automation**. The partially-completed notification will have the **Status** value **Draft**.
+
+3. On the **Define details** page**, configure the following settings:
    - **Select notification type**: Select one of the following values:
      - **Positive reinforcement notification**
      - **Simulation notification**
@@ -87,7 +92,7 @@ On the **Tenant notifications** tab, you can click ![Create new icon.](../../med
 
    When you're finished, click **Next**.
 
-2. On the **Define content** page, the only setting that's available is the **Add content in business language** button. When you click it, an **Add content in default language** flyout appears that contains the following settings:
+4. On the **Define content** page, the only setting that's available is the **Add content in business language** button. When you click it, an **Add content in default language** flyout appears that contains the following settings:
    - **From display name**
    - **From email address**
    - **Select the language of the email**: Select a language from the list.
@@ -126,7 +131,7 @@ On the **Tenant notifications** tab, you can click ![Create new icon.](../../med
 
    When you're finished, click **Next**
 
-3. On the **Review notification** page, you can review the details of your notification.
+5. On the **Review notification** page, you can review the details of your notification.
 
    You can select **Edit** in each section to modify the settings within the section. Or you can click **Back** or select the specific page in the wizard.
 
@@ -148,7 +153,7 @@ To modify an existing custom notification on the **Tenant notifications** tab, d
 - Click **⋮** (**Actions**) between the **Notifications** and **Language** values of the notification in the list, and then select ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit**.
 - Select the notification from the list by clicking anywhere in the row except the check box. In the details flyout that opens, click **Edit notification**.
 
-The end-user notification wizard opens with the settings and values of the selected notification page. Tthe steps are the same as described in the [Create end-user notifications](#create-end-user-notifications) section.
+The end-user notification wizard opens with the settings and values of the selected notification. The steps are the same as described in the [Create end-user notifications](#create-end-user-notifications) section.
 
 ## Copy end-user notifications
 
