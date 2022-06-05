@@ -115,12 +115,11 @@ Before you enable the tenant setting for co-authoring for files encrypted with s
 
 - Supporting Office apps for iOS and Android are currently in [preview](https://office.com/insider).
 
-- Co-authoring and AutoSave aren't supported and don't work for labeled and encrypted Office documents that use any of the following [configurations for encryption](encryption-sensitivity-labels.md#configure-encryption-settings):
-    - **Let users assign permissions when they apply the label** and the checkbox **In Word, PowerPoint, and Excel, prompt users to specify permissions** is selected. This configuration is sometimes referred to as "user-defined permissions".
+- Co-authoring and AutoSave aren't supported and don't work for labeled and encrypted Office documents that use either of the following [configurations for encryption](encryption-sensitivity-labels.md#configure-encryption-settings):
     - **User access to content expires** is set to a value other than **Never**.
     - **Double Key Encryption** is selected.
     
-    For labels with any of these encryption configurations, the labels display in Office apps. However, when users select these labels and nobody else is editing the document, they're warned that co-authoring and AutoSave won't be available. If somebody else is editing the document, users see a message that the labels can't be applied.
+    For labels with either of these encryption configurations, the labels display in Office apps. However, when users select these labels and nobody else is editing the document, they're warned that co-authoring and AutoSave won't be available. If somebody else is editing the document, users see a message that the labels can't be applied.
 
 - If you use the Azure Information Protection unified labeling client: Check the documentation for this labeling client for [more requirements or limitations](/azure/information-protection/known-issues#known-issues-for-co-authoring). 
     > [!NOTE]
