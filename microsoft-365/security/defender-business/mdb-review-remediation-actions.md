@@ -53,7 +53,7 @@ All remediation actions are tracked in the Action center.
 
 Microsoft Defender for Business includes several remediation actions. These actions include manual response actions, actions following automated investigation, and live response actions.
 
-The following table lists remediation actions that are available:
+The following table lists remediation actions that are available.
 
 | Source  | Actions  |
 |---------|---------|
