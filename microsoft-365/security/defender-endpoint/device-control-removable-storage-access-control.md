@@ -333,7 +333,7 @@ You can generate GUID through online open source, or through PowerShell - [How t
 
 ![image](https://user-images.githubusercontent.com/81826151/159046476-26ea0a21-8087-4f01-b8ae-5aa73b392d8f.png)
 
-### What is the removable storage media and policy limitations?
+### What are the removable storage media and policy limitations?
 
 Either from the Microsoft Endpoint Manager portal (Intune) or through MS Graph API, the backend call is done through OMA-URI (GET to read or PATCH to update) and therefore the limitation is the same as any OMA-URI Custom Configuration profile in Microsoft which is officialy 350,000 characters for XML files. 
     
