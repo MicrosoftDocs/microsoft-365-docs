@@ -30,7 +30,7 @@ To onboard devices and configure security settings for your company's devices, y
 ## What to do
 
 1. [Review your setup and configuration options](#review-your-setup-and-configuration-options).
-2. [Learn more about the simplified configuration process in Defender for Business](#why-we-recommend-using-the-simplified-configuration-process).
+2. [Learn more about the simplified configuration process in Defender for Business](#why-we-recommend-the-simplified-configuration-process).
 3. [Proceed to your next steps](#next-steps).
 
 >
