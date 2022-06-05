@@ -337,7 +337,7 @@ You can generate GUID through online open source, or through PowerShell - [How t
 
 Either from the Microsoft Endpoint Manager portal (Intune) or through Microsoft Graph API, the backend call is done through OMA-URI (GET to read or PATCH to update) and therefore the limitation is the same as any OMA-URI custom configuration profile in Microsoft which is officially 350,000 characters for XML files. 
     
-As example, if you need two blocks of Entry per user SID to "Allow"/"Audit allowed" specific users and 2 block of Entry at the end to "Deny" all, you will be able to manage 2276 users. 
+For example, if you need two blocks of entries per user SID to "Allow"/"Audit allowed" specific users and two blocks of entries at the end to "Deny all", you will be able to manage 2276 users. 
 
 ### Why does the policy not work?
 
