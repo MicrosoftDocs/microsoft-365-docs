@@ -41,7 +41,7 @@ Microsoft offers a wide variety of cloud solutions and services, including plans
 
 **As of March 1, 2022, Defender for Business is included in Microsoft 365 Business Premium. Defender for Business is also available as a standalone subscription.** The following table compares security features and capabilities in Defender for Business (standalone) to Microsoft 365 Business Premium.
 
-|Feature/Capability|[Microsoft Defender for Business](mdb-overview.md)<br/>(standalone)|[Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md)<br/>(includes Defender for Business)|
+|Feature/capability|[Microsoft Defender for Business](mdb-overview.md)<br/>(standalone)|[Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md)<br/>(includes Defender for Business)|
 |---|---|---|
 |Email protection|Yes <br/>[Email scanning with Microsoft Defender Antivirus](../defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus.md)|Yes <ul><li>[Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md)</li><li>[Email scanning with Microsoft Defender Antivirus](../defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus.md)</li></ul>|
 |Antispam protection|Yes<br/>For devices|Yes <ul><li>For devices</li><li>For Microsoft 365 email content, such as messages and attachments</li></ul>|
