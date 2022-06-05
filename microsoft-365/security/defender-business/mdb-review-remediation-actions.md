@@ -41,7 +41,7 @@ All remediation actions are tracked in the Action center.
 
 ## How to use the Action center
 
-1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.
+1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
 2. In the navigation pane, choose **Action center**.
 
@@ -59,7 +59,7 @@ The following table lists remediation actions that are available:
 |---------|---------|
 | [Automated investigations](../defender-endpoint/automated-investigations.md)      |<ul><li>Quarantine a file</li><li>Remove a registry key</li><li>Kill a process</li><li>Stop a service</li><li>Disable a driver</li><li>Remove a scheduled task </li></ul> |
 | [Manual response actions](../defender-endpoint/respond-machine-alerts.md)   |<ul><li>Run antivirus scan</li><li>Isolate a device</li><li>Stop and quarantine</li><li>Add an indicator to block or allow a file</li></ul> |
-| [Live response](../defender-endpoint/live-response.md)   |<ul><li>Collect forensic data</li><li>Analyze a file</li><li>Run a script</li><li>Send a suspicious entity to Microsoft for analysis</li><li>Remediate a file </li><li>Proactively hunt for threats</li></ul> |
+| [Live response](../defender-endpoint/live-response.md)   |<ul><li>Collect forensic data</li><li>Analyze a file</li><li>Run a script</li><li>Send a suspicious entity to Microsoft for analysis</li><li>Remediate a file </li><li>Proactively hunt for threats</li></ul>|
 
 ## Next steps
 
