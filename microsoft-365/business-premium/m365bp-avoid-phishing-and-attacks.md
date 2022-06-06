@@ -23,7 +23,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Protect against phishing and other attacks with Microsoft 365."
+description: "Protect against phishing and other attacks with Microsoft 365 Business Premium."
 ---
 
 # Protect yourself against phishing and other attacks
@@ -43,13 +43,13 @@ In addition to the protection Microsoft 365 Business Premium offers against atta
 
 ## Best practices
 
-The following are best practices that your front-line users should employ to repel the enemy.
+Use the following best practices to help users fend off cyberattacks through email.
 
 ### Reduce spam mail
 
 Follow these [10 tips on how to help reduce spam](https://support.microsoft.com/office/10-tips-on-how-to-help-reduce-spam-55f756e8-688b-41c3-a086-8f68ccc592f6).
 
-### Report it!
+### Report it
 
 Report any phishing or other scam emails you receive. Select the message, and choose **Report message** on the ribbon.
 
@@ -83,6 +83,6 @@ Learn more about how to:
 
 - [Stay secure and private at work](https://support.office.com/article/stay-secure-and-private-at-work-104c7d91-b25a-453d-beee-ba64b6c6fc2d).
   
-### Next objective
+## Next objective
 
 Once you've completed this mission objective, learn about how to [send encrypted email](send-encrypted-email.md). 
