@@ -113,8 +113,8 @@ Windows 7 SP1 Enterprise (Legacy) <sup>3</sup>|![Yes.](images/svg/check-yes.svg)
 Windows 7 SP1 Pro (Legacy) <sup>3</sup>|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
 Linux|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
 macOS|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
-Android|![Yes.](images/svg/check-yes.svg) <br /> Public preview|![Yes](images/svg/check-yes.svg) <br /> Public preview|![Yes](images/svg/check-yes.svg) <br /> Public preview
-iOS|![Yes.](images/svg/check-yes.svg) <br /> Public preview|![Yes](images/svg/check-yes.svg) <br /> Public preview|![Yes](images/svg/check-yes.svg) <br /> Public preview
+Android|![Yes.](images/svg/check-yes.svg) <br /> |![Yes](images/svg/check-yes.svg) <br /> |![Yes](images/svg/check-yes.svg) <br /> 
+iOS|![Yes.](images/svg/check-yes.svg) <br /> |![Yes](images/svg/check-yes.svg) <br /> |![Yes](images/svg/check-yes.svg) <br /> 
 |
 
 > [!NOTE]
