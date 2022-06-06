@@ -342,6 +342,11 @@ reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyPacUrl /d "<Proxy PAC
 
 ```
 
+## Optimizing network protection performace
+
+Network Protection now has a performance optimization that allows Block mode to start asynchronously inspecting long connections after they are validated and allowed by SmartScreen, which might provide a potential reduction in the cost that inspection has on bandwidth and can also help with app compatibility problems. This optimization capability is on-by-default. You can turn off this capability by setting: 
+Set-MpPreference -AllowSwitchToAsyncInspection $false
+
 ## See also
 
 - [Evaluate network protection](evaluate-network-protection.md) | Undertake a quick scenario that demonstrates how the feature works, and what events would typically be created.
