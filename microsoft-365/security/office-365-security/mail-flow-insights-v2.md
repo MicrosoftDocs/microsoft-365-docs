@@ -18,6 +18,8 @@ ms.prod: m365-security
 
 # Mail flow insights in the Security & Compliance Center
 
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
@@ -30,27 +32,16 @@ Admins can use Mail flow dashboard in the Security & Compliance Center to discov
 The available insights are:
 
 - [Auto-forwarded messages insight](mfi-auto-forwarded-messages-report.md)
-
 - [Fix possible mail loop insight](mfi-mail-loop-insight.md)<sup>1</sup>
-
 - [Fix slow mail flow rules insight](mfi-slow-mail-flow-rules-insight.md)<sup>1</sup>
-
 - [Mail flow map](mfi-mail-flow-map-report.md)
-
 - [New domains being forwarded email insight](mfi-new-domains-being-forwarded-email.md)<sup>2</sup>
-
 - [New users forwarding email insight](mfi-new-users-forwarding-email.md)<sup>2</sup>
-
 - [Non-accepted domain report](mfi-non-accepted-domain-report.md)
-
 - [Non-delivery report](mfi-non-delivery-report.md)
-
 - [Outbound and inbound mail flow insight](mfi-outbound-and-inbound-mail-flow.md)
-
 - [Queues insight](mfi-queue-alerts-and-queues.md)
-
 - [SMTP Auth clients insight and report](mfi-smtp-auth-clients-report.md)
-
 - [Top domain mail flow status insight](mfi-domain-mail-flow-status-insight.md)
 
 <sup>1</sup> This insight appears in the **Recommended for you** area of the Mail flow dashboard only after the issue is detected. Otherwise, you won't see it.
