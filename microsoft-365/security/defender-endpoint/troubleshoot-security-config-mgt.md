@@ -80,7 +80,7 @@ In the list, if a device's enrollment status is not "Success", select the device
 :::image type="content" source="./images/secconfig-mde-error.png" alt-text="The filter criteria applied on the device inventory page" lightbox="./images/secconfig-mde-error.png":::
 
 > [!NOTE] 
-> We are aware of an issue impacting the accurate detection of third party MDM's when trying to use the security management feature and are working on a fix. 
+> We are aware of an issue impacting the accurate detection of third-party MDMs when trying to use the security management feature and are working on a fix. 
 
 ## Run Microsoft Defender for Endpoint Client Analyzer on Windows
 
