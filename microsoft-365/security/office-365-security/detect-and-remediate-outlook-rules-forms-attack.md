@@ -200,7 +200,7 @@ The best way to protect your user accounts, and especially your administrator ac
 
   - **Unusual impersonated activity (by user)**: This policy profiles your environment and triggers alerts when users perform multiple impersonated activities in a single session with respect to the baseline learned, which could indicate an attempted breach.
 
-- Use a tool like [Office 365 Secure Score](https://securescore.office.com/) to manage account security configurations and behaviors.
+- Use a tool like [Office 365 Secure Score](/microsoft-365/security/defender/microsoft-secure-score) to manage account security configurations and behaviors.
 
 ### Second: Keep your Outlook clients current
 
