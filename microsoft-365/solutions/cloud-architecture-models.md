@@ -43,7 +43,7 @@ This guidance helps you decide which enrollment option is best for your endpoint
 
 | Item | Description |
 |:-----|:-----|
-|[![A visual representation of Intune enrollment options by platform](../media/devices/msft-intune-enrollment-options-thumb-landscape.png) ](https://download.microsoft.com/download/e/6/2/e6233fdd-a956-4f77-93a5-1aa254ee2917/msft-intune-enrollment-options.pdf) <br/> [PDF](https://download.microsoft.com/download/e/6/2/e6233fdd-a956-4f77-93a5-1aa254ee2917/msft-intune-enrollment-options.pdf) \| [Visio](https://download.microsoft.com/download/e/6/2/e6233fdd-a956-4f77-93a5-1aa254ee2917/msft-intune-enrollment-options.vsdx) <br/> Updated June 2022 | **Related solution guides** <br/> <ul><li>[Manage devices with Intune](manage-devices-with-intune-overview.md)</li><li></li>[Microsoft Intune ;;planning guide](/mem/intune/fundamentals/intune-planning-guide)</ul>|
+|[![A visual representation of Intune enrollment options by platform](../media/devices/msft-intune-enrollment-options-thumb-landscape.png) ](https://download.microsoft.com/download/e/6/2/e6233fdd-a956-4f77-93a5-1aa254ee2917/msft-intune-enrollment-options.pdf) <br/> [PDF](https://download.microsoft.com/download/e/6/2/e6233fdd-a956-4f77-93a5-1aa254ee2917/msft-intune-enrollment-options.pdf) \| [Visio](https://download.microsoft.com/download/e/6/2/e6233fdd-a956-4f77-93a5-1aa254ee2917/msft-intune-enrollment-options.vsdx) <br/> Updated June 2022 | **Related solution guides** <br/> <ul><li>[Manage devices with Intune](manage-devices-with-intune-overview.md)</li><li>[Microsoft Intune planning guide](/mem/intune/fundamentals/intune-planning-guide)</ul>|
 
 <a name="attacks"></a>
 ### Common attacks and Microsoft capabilities that protect your organization
