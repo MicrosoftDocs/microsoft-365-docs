@@ -72,7 +72,7 @@ Through the Microsoft Defender for Endpoint portal, security administrators can 
 
 In **Configuration management** the **Onboarded via MDE security management** widget has been added to present the enrollment status breakdown of Microsoft Defender for Endpoint-managed devices.
 
-To see a list of all devices managed by Microsoft Defender for Endpoint, click on the **View all devices managed by MDE** button.
+To see a list of all devices managed by Microsoft Defender for Endpoint, select **View all devices managed by MDE**.
 
 In the list, if a device's enrollment status is not "Success", select the device to see troubleshooting details in the side panel, pointing to the root cause of the error, and corresponding documentation.
 
