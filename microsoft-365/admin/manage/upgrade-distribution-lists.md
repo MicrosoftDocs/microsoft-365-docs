@@ -33,11 +33,11 @@ You can upgrade DLs one at a time, or several at the same time.
 
 ## Upgrade one or many distribution list groups to Microsoft 365 Groups in Outlook
 
-You must be a global admin or Exchange admin to upgrade a distribution list group. To upgrade to Microsoft 365 Groups, the distribution list group must have an owner with a mailbox.
+You must be a global admin or Exchange admin to upgrade a distribution list. To upgrade to Microsoft 365 Groups, the distribution list group must have an owner with a mailbox.
 
 ### Use the new EAC to upgrade one or many distribution list groups to Microsoft 365 Groups in Outlook
 
-Please use either the Classic EAC or PowerShell method (steps in following section) to upgrade distribution lists to Microsoft 365 Groups.
+Use the Classic EAC or Exchange Online PowerShell as described later in this article to upgrade distribution lists to Microsoft 365 Groups.
 
 ### Use the Classic EAC to upgrade one or many distribution list groups to Microsoft 365 Groups in Outlook
 
