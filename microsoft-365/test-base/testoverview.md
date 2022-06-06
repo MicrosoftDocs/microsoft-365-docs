@@ -25,7 +25,7 @@ In this section, you'll learn how to create packages with different types of app
 
    - **Binary files**
 
-      See [Creating and Testing Binary Files on Test Base](testapplication.md) to prepare a package with a Binary application file (.exe, .msi) for uploading and testing.
+      See [Creating and Testing Binary Files on Test Base](testapplication.md) to prepare a package with a Binary application file (that is: .exe, .msi) for uploading and testing.
 
    - **Intunewin app**
 
