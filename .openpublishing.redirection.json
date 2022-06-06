@@ -423,7 +423,7 @@
     {
       "source_path": "microsoft-365/business/validate-settings-on-android-or-ios.md",
       "redirect_url": "/microsoft-365/business-premium/m365bp-validate-settings-on-android-or-ios",
-      "redirect_document_id": false
+      "redirect_document_id": true
     },
     {
       "source_path": "microsoft-365/business/manage-domain-users.md",
