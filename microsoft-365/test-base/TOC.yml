@@ -24,6 +24,8 @@
       href: clonepackage.md
     - name: Package guideline
       href: contentguideline.md
+    - name: Understand your usage cost
+      href: usagecost.md
     - name: Application/Test rules
       href: rules.md
 - name: How-to guides

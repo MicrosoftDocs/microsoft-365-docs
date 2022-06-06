@@ -49,6 +49,8 @@ landingContent:
             url: clonepackage.md
           - text: Test Package Guidelines
             url: contentguideline.md
+          - text: Understand your usage cost
+            url: usagecost.md
           - text: Memory Regression Analysis
             url: memory.md
           - text: CPU Regression Analysis
