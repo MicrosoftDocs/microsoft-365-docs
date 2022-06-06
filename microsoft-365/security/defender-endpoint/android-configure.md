@@ -58,13 +58,13 @@ Network protection in Microsoft Defender for endpoint is enabled by default. Adm
 
 1. In Microsoft Endpoint Manager Admin, navigate to Apps > App configuration policies. Create a new App configuration policy.
     > [!div class="mx-imgBorder"]
-    > ![Image of add configuration policy.](images/create-policy.png)
+    > ![Image of how to create a policy.](images/create-policy.png)
 1. Provide a name and description to uniquely identify the policy. Select **'Android Enterprise'** as the platform and **'Personally-owned work profile only'** as the profile type and **'Microsoft Defender'** as the Targeted app.
     > [!div class="mx-imgBorder"]
-    > ![Image of add configuration policy.](images/appconfigdetails.png)
+    > ![Image of policy details.](images/appconfigdetails.png)
 1. In Settings page, select **'Use configuration designer'** and add **'Enable Network Protection in Microsoft Defender'** as the key and value as **'0'** to diable Network Protection. (Network protection is enabled by default)
     > [!div class="mx-imgBorder"]
-    > ![Image of add configuration policy.](images/selectnp.png)
+    > ![Image of how to select enable network protection policy](images/selectnp.png)
     
     > [!div class="mx-imgBorder"]
     > ![Image of add configuration policy.](images/npvalue.png)
@@ -72,7 +72,7 @@ Network protection in Microsoft Defender for endpoint is enabled by default. Adm
 
     To establish trust for the root CAs use **'Trusted CA certificate list for Network Protection (Preview)'** as the key and in value add the **'comma separated list of certificate thumbprints'**.
     > [!div class="mx-imgBorder"]
-    > ![Image of add configuration policy.](images/trustca.png)
+    > ![Image of trusted CA certificate.](images/trustca.png)
 
 1. For other configurations related to Network protection, add the following keys and appropriate corresponding value.
 <br>
