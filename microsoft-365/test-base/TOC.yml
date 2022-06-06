@@ -20,6 +20,8 @@
         href: uploadapplication.md
     - name: Build a Package
       href: buildpackage.md
+    - name: Clone an existing package
+      href: clonepackage.md
     - name: Package guideline
       href: contentguideline.md
     - name: Application/Test rules

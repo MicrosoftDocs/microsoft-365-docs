@@ -45,6 +45,8 @@ landingContent:
             url: testoverview.md
           - text: Build a Package
             url: buildpackage.md
+          - text: Clone an existing package
+            url: clonepackage.md
           - text: Test Package Guidelines
             url: contentguideline.md
           - text: Memory Regression Analysis
