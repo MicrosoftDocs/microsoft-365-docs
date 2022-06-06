@@ -23,9 +23,9 @@ In this section, you'll learn how to create packages with different types of app
    > [!div class="mx-imgBorder"]
    > ![Package publish prompts](Media/testoverview01.png)
 
-   - **Binary files**
+   - **Test Binaries files**
 
-      See [Creating and Testing Binary Files on Test Base](testapplication.md) to prepare a package with a Binary application file (that is: .exe, .msi) for uploading and testing.
+      See [Creating and Testing Binary Files on Test Base](testapplication.md) to prepare a package with a Binary application file (that is, .exe, .msi) for uploading and testing.
 
    - **Intunewin app**
 
@@ -38,6 +38,5 @@ In this section, you'll learn how to create packages with different types of app
    - **Clone existing package**
 
       See [Clone an existing package](clonepackage.md) to create a new package by duplicating your previously published package.
-
 
 
