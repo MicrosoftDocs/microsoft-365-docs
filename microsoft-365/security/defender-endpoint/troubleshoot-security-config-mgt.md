@@ -45,7 +45,7 @@ To successfully register devices to Azure Active Directory, you'll need to ensur
 
 - Computers can authenticate with the domain controller
 - Computers have access to the following Microsoft resources from inside your organization's network:
-  - https://enterpriseregistration.windows.net
+  - /windows/iot/iot-enterprise/commercialization/licensing
   - https://login.microsoftonline.com
   - https://device.login.microsoftonline.com
 - Azure AD connect is configured to sync the computer objects. By default, computer OUs are in Azure AD connect sync scope. If the computer objects belong to specific organizational units (OUs), configure the OUs to sync in Azure AD Connect. To learn more about how to sync computer objects by using Azure AD Connect, see [Organizational unit–based filtering](/azure/active-directory/hybrid/how-to-connect-sync-configure-filtering#organizational-unitbased-filtering).
