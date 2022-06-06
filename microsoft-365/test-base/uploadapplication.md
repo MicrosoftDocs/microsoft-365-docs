@@ -32,14 +32,14 @@ In the [Azure portal](https://portal.azure.com/), go to the **Test Base** accoun
 In the left-hand menu under **Package catalog**, select the **New package**. Then select the third card **'Upload pre-built package'**.
 
 > [!div class="mx-imgBorder"]
-> [ ![Left-hand menu](Media/uploadingzip01_new_package.png) ](Media/uploadingzip01_new_package.png#lightbox)
+> [ ![Left-hand menu](Media/uploadingzip01-new-package.png) ](Media/uploadingzip01-new-package.png#lightbox)
 
 ### Step 1. Define content
 
 1. In the **Package source** section, select Pre-built package (.zip) in the Package source type.
 
    > [!div class="mx-imgBorder"]
-   > [ ![New package](Media/uploadingzip02_define_content.png) ](Media/uploadingzip02_define_content.png#lightbox)
+   > [ ![New package](Media/uploadingzip02-define-content.png) ](Media/uploadingzip02-define-content.png#lightbox)
 
 2. Upload your pre-built package (zip) file by selecting 'Select file' button.
 
@@ -49,12 +49,12 @@ In the left-hand menu under **Package catalog**, select the **New package**. The
    > The combination of package name and version must be unique within your Test Base account.
 
    > [!div class="mx-imgBorder"]
-   > ![Basic information](Media/uploadingzip03_basic_information.png)
+   > ![Basic information](Media/uploadingzip03-basic-information.png)
 
 4. After all the requested information is specified, select the **Next: Configuration test** button.
 
    > [!div class="mx-imgBorder"]
-   > ![Next: Configuration test](Media/uploadingzip04_next.png)
+   > ![Next: Configuration test](Media/uploadingzip04-next.png)
 
 ### Step 2. Configure test
 
@@ -67,7 +67,7 @@ In the left-hand menu under **Package catalog**, select the **New package**. The
    > Out of Box test is optional now.
 
    > [!div class="mx-imgBorder"]
-   > [ ![Out of Box test option](Media/uploadingzip05_configure_test.png) ](Media/uploadingzip05_configure_test.png#lightbox)
+   > [ ![Out of Box test option](Media/uploadingzip05-configure-test.png) ](Media/uploadingzip05-configure-test.png#lightbox)
 
 2. Once all required info is filled out, select the Next button.
 
@@ -81,7 +81,7 @@ In the left-hand menu under **Package catalog**, select the **New package**. The
    > Your pre-built package is extracted to edit. Script tags are added according to the script name, please review these script tags and adjust if need. Script tags indicate the correct script paths which will be used when testing is initiated.
 
    > [!div class="mx-imgBorder"]
-   > [ ![PowerShell code editor](Media/uploadingzip06_edit_package.png) ](Media/uploadingzip06_edit_package.png#lightbox)
+   > [ ![PowerShell code editor](Media/uploadingzip06-edit-package.png) ](Media/uploadingzip06-edit-package.png#lightbox)
 
 2. In the **Package Preview**, per your need, you can:
 
@@ -94,18 +94,18 @@ In the left-hand menu under **Package catalog**, select the **New package**. The
    - If the **Out of Box test** is selected in step 2, you can see the **outofbox** folder under the scripts folder. You can also choose to add **'Reboot after install'** tag for the Install script.
 
    > [!div class="mx-imgBorder"]
-   > [ ![Sample scripts and script tags](Media/uploadingzip07_edit_script.png) ](Media/uploadingzip07_edit_script.png#lightbox)
+   > [ ![Sample scripts and script tags](Media/uploadingzip07-edit-script.png) ](Media/uploadingzip07-edit-script.png#lightbox)
 
    > [!NOTE]
    > Install, Launch, and Close script tags are mandatory for the OOB test type. Reassigning tags ensures that the correct script path will be used when testing is initiated.
 
    > [!div class="mx-imgBorder"]
-   > [ ![Scripts missing notification](Media/uploadingzip08_required_prompt.png) ](Media/uploadingzip08_required_prompt.png#lightbox)
+   > [ ![Scripts missing notification](Media/uploadingzip08-required-prompt.png) ](Media/uploadingzip08-required-prompt.png#lightbox)
 
    - If the **Functional test** is selected in step 2, you can see the **functional** folder under the scripts folder. More functional test scripts can be added using the **'Add to functional test list'** button. You need a minimum of one (1) script and can add up to eight (8) functional test scripts.
 
    > [!div class="mx-imgBorder"]
-   > [ ![Add to functional test list](Media/uploadingzip09_add_to_list.png) ](Media/uploadingzip09_add_to_list.png#lightbox)
+   > [ ![Add to functional test list](Media/uploadingzip09-add-to-list.png) ](Media/uploadingzip09-add-to-list.png#lightbox)
 
    > [!NOTE]
    > At least 1 functional script tag is mandatory for the functional test type.
@@ -117,7 +117,7 @@ In the left-hand menu under **Package catalog**, select the **New package**. The
    - Apply update before on specific script path. This update is for users who wish to perform functional tests to indicate when the Windows Update patch should be applied in the sequence of executing their functional test scripts.
 
    > [!div class="mx-imgBorder"]
-   > [ ![Functional test](Media/uploadingzip10_functional_test.png) ](Media/uploadingzip10_functional_test.png#lightbox)
+   > [ ![Functional test](Media/uploadingzip10-functional-test.png) ](Media/uploadingzip10-functional-test.png#lightbox)
 
 4. Once all required info is filled out, you can proceed to step 4 by selecting the Next button at the bottom.
 
@@ -142,7 +142,7 @@ In the left-hand menu under **Package catalog**, select the **New package**. The
    - For **OS baseline for Insight**, select the Windows OS version to be used as a baseline in comparing your test results.
 
    > [!div class="mx-imgBorder"]
-   > [ ![Test matrix](Media/uploadingzip11_test_matrix.png) ](Media/uploadingzip11_test_matrix.png#lightbox)
+   > [ ![Test matrix](Media/uploadingzip11-test-matrix.png) ](Media/uploadingzip11-test-matrix.png#lightbox)
 
 4. Once all the required info is filled out, you can proceed to step 5 (the last step) by selecting the Next button at the bottom.
 
@@ -151,12 +151,12 @@ In the left-hand menu under **Package catalog**, select the **New package**. The
 1. Review all the information for correctness and accuracy of your draft package. To make corrections, you can navigate back to early steps where you specified the settings as needed.
 
    > [!div class="mx-imgBorder"]
-   > [ ![Review and publish](Media/uploadingzip12_review.png) ](Media/uploadingzip12_review.png#lightbox)
+   > [ ![Review and publish](Media/uploadingzip12-review.png) ](Media/uploadingzip12-review.png#lightbox)
 
 2. You can also check the notification box to receive the email notification of your package for the validation run completion notice.
 
    > [!div class="mx-imgBorder"]
-   > ![Notification](Media/uploadingzip13_notification.png)
+   > ![Notification](Media/uploadingzip13-notification.png)
 
 3. When you're done finalizing the input data configuration, select **Publish** to upload your package to Test Base. The notification that follows displays when the package is successfully published and has entered the Verification process.
 
@@ -164,12 +164,12 @@ In the left-hand menu under **Package catalog**, select the **New package**. The
    > The package must be verified before it is accepted for future tests. The Verification can take up to 24 hours, as it includes running the package in an actual test environment.
 
    > [!div class="mx-imgBorder"]
-   > ![Publish success notification](Media/uploadingzip14_success.png)
+   > ![Publish success notification](Media/uploadingzip14-success.png)
 
 4. You'll be redirected to the **Manage Packages** page to check the progress of your newly uploaded package.
 
    > [!div class="mx-imgBorder"]
-   > [ ![Manage Packages](Media/uploadingzip15_package_list.png) ](Media/uploadingzip15_package_list.png#lightbox)
+   > [ ![Manage Packages](Media/uploadingzip15-package-list.png) ](Media/uploadingzip15-package-list.png#lightbox)
 
    > [!NOTE]
    > When the Verification process is complete, the Verification status will change to Accepted. At this point, no further actions are required. Your package will be acquired automatically for execution whenever your configured operating systems have new updates available. If the Verification process fails, your package is not ready for testing. Please check the logs and assess whether any errors occurred. You may also need to check your package configuration settings for potential issues.
@@ -180,7 +180,7 @@ In the left-hand menu under **Package catalog**, select the **New package**. The
 If you have any previous draft packages, you can view the list of your saved draft packages on the **New package** page. You can continue your edit directly to the step you paused last time by selecting the 'edit' pencil icon.
 
 > [!div class="mx-imgBorder"]
-> [ ![New package page](Media/uploadingzip16_draft_packages.png) ](Media/uploadingzip16_draft_packages.png#lightbox)
+> [ ![New package page](Media/uploadingzip16-draft-packages.png) ](Media/uploadingzip16-draft-packages.png#lightbox)
 
 > [!NOTE]
 > The dashboard only shows the working in progress package. For the published package, you can check the Manage Packages page.
