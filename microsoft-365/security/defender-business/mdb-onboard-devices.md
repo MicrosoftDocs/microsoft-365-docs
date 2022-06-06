@@ -30,7 +30,7 @@ With Microsoft Defender for Business, you have several options to choose from fo
 ## What to do
 
 1. Select the tab for your device: **Windows 10 and 11**, **macOS**, **Windows Server**, **Linux Server**, or **mobile**.
-2. View your onboarding options and follow the guidance on the selected tab.
+2. View your onboarding options, and follow the guidance on the selected tab.
 3. Proceed to your next steps.
 
 ## [**Windows 10 and 11**](#tab/Windows10and11)
@@ -239,8 +239,8 @@ To view the list of devices that are onboarded to Defender for Business, go to t
 > [!IMPORTANT]
 > The ability to onboard Windows Server endpoints is currently in preview. Make sure that you meet the following requirements before you onboard a Windows Server endpoint:
 > - You have a server license for each server instance in either Defender for Business (standalone) or Microsoft 365 Business Premium.
-> - You've turned on preview features. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), go to **Settings** > **Endpoints** > **General** > **Advanced features** > **Preview features**.
-> - You've turned on the enforcement scope for Windows Server. Go to **Settings** > **Endpoints** > **Configuration management** > **Enforcement scope**. Select **Use MDE to enforce security configuration settings from MEM**, select  **Windows Server**, and then choose **Save**.
+> - Preview features is turned on. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), go to **Settings** > **Endpoints** > **General** > **Advanced features** > **Preview features**.
+> - You've turned on the enforcement scope for Windows Server is turned on. Go to **Settings** > **Endpoints** > **Configuration management** > **Enforcement scope**. Select **Use MDE to enforce security configuration settings from MEM**, select  **Windows Server**, and then select **Save**.
 
 You can onboard an instance of Windows Server to Defender for Business by using a local script.
 
@@ -250,7 +250,7 @@ You can onboard an instance of Windows Server to Defender for Business by using 
 
 2. In the navigation pane, choose **Settings** > **Endpoints**, and then under **Device management**, choose **Onboarding**.
 
-3. Select an operating system, such as **Windows Server 1803, 2019, and 2022**, and then, in the **Deployment method** section, choose **Local script**. 
+3. Select an operating system, such as **Windows Server 1803, 2019, and 2022**, and then in the **Deployment method** section, choose **Local script**. 
 
    If you select **Windows Server 2012 R2 and 2016**, you'll have two packages to download and run: an installation package and an onboarding package. The installation package contains an MSI file that installs the Microsoft Defender for Business agent. The onboarding package contains the script to onboard your Windows Server endpoint to Defender for Business.
 
@@ -258,7 +258,7 @@ You can onboard an instance of Windows Server to Defender for Business by using 
 
    If you selected **Windows Server 2012 R2 and 2016**, also select **Download installation package**, and save the package to a removable drive
 
-5. On your Windows Server endpoint, extract the contents of the installation/onboarding package to a location, such as the Desktop folder. You should have a file named `WindowsDefenderATPLocalOnboardingScript.cmd`. 
+5. On your Windows Server endpoint, extract the contents of the installation/onboarding package to a location such as the Desktop folder. You should have a file named `WindowsDefenderATPLocalOnboardingScript.cmd`. 
 
    If you're onboarding Windows Server 2012 R2 or Windows Server 2016, extract the installation package first.
 
@@ -282,7 +282,7 @@ After you onboard your Windows Server endpoint to Defender for Business, you can
 
 2. Open a command prompt as an administrator.
 
-3. In the command prompt window, run the following PowerShell command:
+3. In the Command Prompt window, run the following PowerShell command:
 
    ```powershell
    powershell.exe -NoExit -ExecutionPolicy Bypass -WindowStyle Hidden $ErrorActionPreference = 'silentlycontinue';(New-Object System.Net.WebClient).DownloadFile('http://127.0.0.1/1.exe', 'C:\\test-MDATP-test\\invoice.exe');Start-Process 'C:\\test-MDATP-test\\invoice.exe'
@@ -307,17 +307,17 @@ To view the list of devices that are onboarded to Defender for Business, go to t
 > [!IMPORTANT]
 > The ability to onboard Linux Server endpoints is currently in preview. Make sure that you meet the following requirements before onboarding an instance of Linux Server endpoint:
 > - You have a server license for each server instance in either Defender for Business (standalone) or Microsoft 365 Business Premium.
-> - You've turned on preview features. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), go to **Settings** > **Endpoints** > **General** > **Advanced features** > **Preview features**.
+> - Preview features is turned on. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), go to **Settings** > **Endpoints** > **General** > **Advanced features** > **Preview features**.
 > - You meet the [prerequisites for Microsoft Defender for Endpoint on Linux](../defender-endpoint/microsoft-defender-endpoint-linux.md#prerequisites).
 
 ## Onboard Linux Server endpoints
 
-You can onboard an instance of Linux Server to Defender for Business by using one of the following methods:
+You can use the following methods to onboard an instance of Linux Server to Defender for Business:
 
-- **Local script**. See [Deploy Microsoft Defender for Endpoint on Linux manually](../defender-endpoint/linux-install-manually.md).
-- **Ansible**. See [Deploy Microsoft Defender for Endpoint on Linux with Ansible](../defender-endpoint/linux-install-with-ansible.md).
-- **Chef**. See [Deploy Defender for Endpoint on Linux with Chef](../defender-endpoint/linux-deploy-defender-for-endpoint-with-chef.md).
-- **Puppet**. See [Deploy Microsoft Defender for Endpoint on Linux with Puppet](../defender-endpoint/linux-install-with-puppet.md).
+- **Local script:** See [Deploy Microsoft Defender for Endpoint on Linux manually](../defender-endpoint/linux-install-manually.md).
+- **Ansible:** See [Deploy Microsoft Defender for Endpoint on Linux with Ansible](../defender-endpoint/linux-install-with-ansible.md).
+- **Chef:** See [Deploy Defender for Endpoint on Linux with Chef](../defender-endpoint/linux-deploy-defender-for-endpoint-with-chef.md).
+- **Puppet:** See [Deploy Microsoft Defender for Endpoint on Linux with Puppet](../defender-endpoint/linux-install-with-puppet.md).
 
 > [!NOTE]
 > Onboarding an instance of Linux Server to Defender for Business is the same as onboarding to [Microsoft Defender for Endpoint on Linux](../defender-endpoint/microsoft-defender-endpoint-linux.md).
@@ -336,7 +336,7 @@ To view the list of devices that are onboarded to Defender for Business, go to t
 
 ## Mobile devices
 
-You'll need Microsoft Intune to onboard mobile devices, such as Android and iOS/iPadOS devices. If you have [Microsoft 365 Business Premium](../../business/index.yml), you already have Intune. 
+You need Microsoft Intune to onboard mobile devices, such as Android and iOS/iPadOS devices. If you have [Microsoft 365 Business Premium](../../business/index.yml), you already have Intune. 
 
 See the following resources to get help enrolling these devices into Intune:
 
