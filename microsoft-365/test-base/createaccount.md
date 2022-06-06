@@ -3,7 +3,7 @@ title: 'Create a new Test Base account'
 description: Details on how to create a new account on Test Base
 search.appverid: MET150
 author: mansipatel-usl
-ms.author: mapatel
+ms.author: rshastri
 manager: rshastri
 audience: Software-Vendor
 ms.topic: how-to
@@ -48,7 +48,7 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 
 Advance to the next article to get started with Step 2: **Learn how upload your package.**
 > [!div class="nextstepaction"]
-> [Next step](uploadApplication.md)
+> [Next step](uploadapplication.md)
 
 <!---
 Add button for next page
