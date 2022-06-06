@@ -408,7 +408,7 @@
     {
       "source_path": "microsoft-365/business/protection-settings-for-windows-10-pcs.md",
       "redirect_url": "/microsoft-365/business-premium/m365bp-protection-settings-for-windows-10-devices",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/business/view-policies-and-devices.md",
