@@ -62,7 +62,7 @@ There are two different methods for automatically applying a sensitivity label t
     - Maximum of 25,000 automatically labeled files in your tenant per day.
     - Maximum of 100 auto-labeling policies per tenant, each targeting up to 100 sites (SharePoint or OneDrive) when they're specified individually. You can also specify all sites, and this configuration is exempt from the 100 sites maximum.
     - Existing values for modified, modified by, and the date aren't changed as a result of auto-labeling policies—for both simulation mode and when labels are applied.
-    - When the label applies encryption, the [Rights Management issuer and Rights Management owner](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) is the account that last modified the file. If this account is no longer in Azure Active Directory, the label won't be applied because these values can't be set.
+    - When the label applies encryption, the [Rights Management issuer and Rights Management owner](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) is the account that last modified the file.
 
     Specific to auto-labeling for Exchange:
     
@@ -263,7 +263,7 @@ Make sure you're aware of the prerequisites before you configure auto-labeling p
   - It doesn't matter if the auto-labeling in Office apps label setting is turned on or off, because that label setting supplements auto-labeling policies, as explained in the introduction.
   - If the labels you want to use for auto-labeling are configured to use visual markings (headers, footers, watermarks), note that these aren't applied to documents.
   - If the labels apply [encryption](encryption-sensitivity-labels.md):
-    - When the auto-labeling policy includes locations for SharePoint or OneDrive, the label must be configured for the **Assign permissions now** setting.
+    - When the auto-labeling policy includes locations for SharePoint or OneDrive, the label must be configured for the **Assign permissions now** setting, and **User access to content expires** must be set to **Never**.
     - When the auto-labeling policy is just for Exchange, the label can be configured for either **Assign permissions now** or **Let users assign permissions** (for the Do Not Forward or Encrypt-Only options).
 
 ### Learn about simulation mode
