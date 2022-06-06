@@ -26,7 +26,7 @@ description: "Use Preservation Lock with retention policies and retention label 
 > [!IMPORTANT]
 > Currently, [adaptive policy scopes](retention.md#adaptive-or-static-policy-scopes-for-retention) don't support Preservation Lock.
 
-Preservation Lock locks a retention policy or a retention label policy so that no one—including a global admin—can turn off the policy, delete the policy, or make it less restrictive. This configuration might be needed for regulatory requirements and can help safeguard against rogue administrators.
+Preservation Lock locks a retention policy or retention label policy so that no one—including a global admin—can turn off the policy, delete the policy, or make it less restrictive. This configuration might be needed for regulatory requirements and can help safeguard against rogue administrators.
 
 When a retention policy is locked:
 
