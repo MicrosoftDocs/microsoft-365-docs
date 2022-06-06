@@ -61,7 +61,7 @@ You must be an administrator in a Microsoft 365 organization to use the admin mo
   
 ## Download the admin mobile app
 
-<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>
+<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> from the Microsoft 365 Admin app link in the upper right. 
 
 [Apple App Store](https://apps.apple.com/app/apple-store/id761397963?pt=80423&ct=docsaboutadminapp&mt=8) 
 
