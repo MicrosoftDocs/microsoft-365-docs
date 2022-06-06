@@ -27,7 +27,7 @@ These step-by-step guides help administrators configure and use Microsoft Defend
 
 ***If you learn Microsoft products best by doing***, the step-by-step guides will jumpstart configuration and testing. They are as useful for set up in a *trial subscription* as they are in *production*.
 
-## Microsoft Defender for Office 365 step-by-step guides examples and why to use them
+## Why use Microsoft Defender for Office 365 step-by-step guides, plus examples
 
 > [!IMPORTANT]
 > Admins need to be on top of prevention, detection, investigation and hunting, response and remediation, and user training to position their organization securely. The step-by-step guides touch on all of these areas so that admins can set up trials, launch quickly into production, and configure in minutes.
@@ -36,4 +36,4 @@ These step-by-step guides help administrators configure and use Microsoft Defend
 
 Beyond links to the documentation, the step-by-step guides don't concern themselves with product details (the docs around Microsoft Defender for Office 365 are thorough for when you need them). 
 
-Instead, these guides are streamlined for **learning by doing**, **testing**, and **running experiments**. They're ideal for trial subscriptions, and will allow admins and security operators to deploy the same logic in production.
+Instead, these guides are streamlined for **learning by doing**, **testing**, and **running experiments**. They're ideal for **trial subscriptions**, and will allow admins and security operators to **deploy the same logic in production**.
