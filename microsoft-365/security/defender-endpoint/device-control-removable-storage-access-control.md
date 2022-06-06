@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.date: 05/09/2022
+ms.date: 06/06/2022
 ---
 
 # Microsoft Defender for Endpoint Device Control Removable Storage Access Control
