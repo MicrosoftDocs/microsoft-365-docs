@@ -21,8 +21,11 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
+
 - [Microsoft Defender for Endpoint Plans 1 and 2](defender-endpoint-plan-1-2.md)
 - [Microsoft Defender for Business](/microsoft-365/security/defender-business/mdb-overview)
+
+[!INCLUDE [Prerelease information](../../includes/prerelease.md)]
 
 Quickly respond to detected attacks by isolating devices or collecting an investigation package. After taking action on devices, you can check activity details on the Action center.
 
@@ -35,6 +38,7 @@ Response actions run along the top of a specific device page and include:
 - Run antivirus scan
 - Restrict app execution
 - Isolate device
+- Contain device
 - Consult a threat expert
 - Action center
 
@@ -201,6 +205,52 @@ Once you have selected **Isolate device** on the device page, type a comment and
 When a device is being isolated, the following notification is displayed to inform the user that the device is being isolated from the network:
 
 :::image type="content" source="images/atp-notification-isolate.png" alt-text="A no network connection message" lightbox="images/atp-notification-isolate.png":::
+
+## Contain devices from the network
+
+When you have identified an unmanaged device that is compromised or potentially compromised, you might want to contain that device from the network. When you contain a device any Microsoft Defender for Endpoint onboarded device will block incoming and outgoing communication with that device. This action can help prevent neighboring devices from becoming compromised while the security operations analyst locates, identifies, and remediates the threat on the compromised device.
+
+> [!NOTE]
+> Blocking incoming and outgoing communication with a 'contained' device is supported on onboarded Microsoft Defender for Endpoint Windows 10 and Windows Server 2019+ devices.
+
+### How to contain a device
+
+1. Go to the **Device inventory** page and select the device to contain
+2. Select **Contain device** from the actions menu in the device flyout
+
+:::image type="content" alt-text="Screenshot of the contain device popup message." source="../../media/defender-endpoint/contain_device.png" lightbox="../../media/defender-endpoint/contain_device.png":::
+
+3. On the contain device popup, type a comment, and select **Confirm**.
+
+:::image type="content" alt-text="Screenshot of the contain device menu item." source="../../media/defender-endpoint/contain_device_popup.png" lightbox="../../media/defender-endpoint/contain_device_popup.png":::
+
+### Contain a device from the device page
+
+A device can also be contained from the device page by selecting **Contain device** from the action bar:
+
+:::image type="content" alt-text="Screenshot of the contain device menu item on the device page." source="../../media/defender-endpoint/contain_device_page.png" lightbox="../../media/defender-endpoint/contain_device_page.png":::
+
+> [!NOTE]
+>It can take up to 5 minutes for the details about a newly contained device to reach Microsoft Defender for Endpoint onboarded devices.
+
+> [!Important]
+>
+> - If a contained device changes its IP address, then all Microsoft Defender for Endpoint onboarded devices will recognize this and start blocking communications with the new IP address. The original IP address will no longer be blocked (It may take up to 5 mins to see these changes).  
+>
+> - In cases where the contained device’s IP is used by another device on the network, there will be a warning while containing the device, with a link to advanced hunting (with a pre-populated query). This will provide visibility to the other devices using the same IP to help you make a conscious decision if you’d like to continue with containing the device.
+>
+> - In cases where the contained device is a network device, a warning will appear with a message that this may cause network connectivity issues (for example, containing a router that is acting as a default gateway). At this point, you’ll be able to choose whether to contain the device or not.
+
+After you contain a device, if the behavior isn't as expected, verify the Base Filtering Engine(BFE) service is enabled on the Defender for Endpoint onboarded devices.
+
+### Stop containing a device
+
+You'll be able to stop containing a device at any time.
+
+1. Select the device from the **Device inventory** or open the device page
+2. Select **Release from containment** from the action menu
+
+This action will restore this device's connection to the network.
 
 ## Consult a threat expert
 
