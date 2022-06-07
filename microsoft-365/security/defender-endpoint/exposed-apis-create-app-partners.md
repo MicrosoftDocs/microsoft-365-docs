@@ -163,17 +163,17 @@ return $token
 
 ### Using C#
 
-> The below code was tested with Nuget Microsoft.IdentityModel.Clients.ActiveDirectory
+> The below code was tested with Nuget Microsoft.Identity.Client
 
 > [!IMPORTANT]
 > The [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory) NuGet package and Azure AD Authentication Library (ADAL) have been deprecated. No new features have been added since June 30, 2020.   We strongly encourage you to upgrade, see the [migration guide](/azure/active-directory/develop/msal-migration) for more details.
 
 - Create a new Console Application
-- Install NuGet [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)
+- Install NuGet [Microsoft.Identity.Client](https://www.nuget.org/packages/Microsoft.Identity.Client/)
 - Add the below using
 
     ```console
-    using Microsoft.IdentityModel.Clients.ActiveDirectory;
+    using Microsoft.Identity.Client;
     ```
 
 - Copy/Paste the below code in your application (do not forget to update the three variables: `tenantId`, `appId`, and `appSecret`)
