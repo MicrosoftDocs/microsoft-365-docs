@@ -86,13 +86,13 @@ You can quickly put retention policies in place for multiple services in your Mi
 
 For step-by-step guidance to configure retention policies, see [Create and configure retention policies](/microsoft-365/compliance/create-retention-policies). Because retention policies form the cornerstone of a data lifecycle management strategy for Microsoft 365 apps and services, also see [Get started with data lifecycle management](/microsoft-365/compliance/get-started-with-data-lifecycle-management).
 
-## Task 7: Configure sensitive information and offensive language policies
+## Task 7: Configure sensitive information and inappropriate language policies
 
-Protecting sensitive information and detecting and acting on workplace harassment incidents is an important part of compliance with internal policies and standards. [Communication compliance](/microsoft-365/compliance/communication-compliance) in Microsoft 365 helps minimize these risks by helping you quickly detect, capture, and take remediation actions for email and Microsoft Teams communications. These include inappropriate communications containing profanity, threats, and harassment and communications that share sensitive information inside and outside of your organization.
+Protecting sensitive information and detecting and acting on workplace harassment incidents is an important part of compliance with internal policies and standards. [Communication compliance](/microsoft-365/compliance/communication-compliance) in Microsoft Purview helps minimize these risks by helping you quickly detect, capture, and take remediation actions for email and Microsoft Teams communications. These include inappropriate communications containing profanity, threats, and harassment and communications that share sensitive information inside and outside of your organization.
 
-A pre-defined *Offensive language and anti-harassment* policy template allows you to scan internal and external communications for policy matches so they can be examined by designated reviewers. Reviewers can investigate scanned email, Microsoft Teams, Yammer, or third-party communications in your organization and take appropriate remediation actions to make sure they're compliant with your organization's standards.
+A pre-defined *Detect inappropriate text* policy template allows you to scan internal and external communications for policy matches so they can be examined by designated reviewers. Reviewers can investigate scanned email, Microsoft Teams, Yammer, or third-party communications in your organization and take appropriate remediation actions to make sure they're compliant with your organization's standards.
 
-The pre-defined *Sensitive information* policy template helps you quickly create a policy to scan email and Microsoft Teams communications containing defined sensitive information types or keywords to help make sure that important data isn't shared with people that shouldn't have access. These activities could include unauthorized communication about confidential projects or industry-specific rules on insider trading or other collusion activities.
+The pre-defined *Detect sensitive info* policy template helps you quickly create a policy to scan email and Microsoft Teams communications containing defined sensitive information types or keywords to help make sure that important data isn't shared with people that shouldn't have access. These activities could include unauthorized communication about confidential projects or industry-specific rules on insider trading or other collusion activities.
 
 For step-by-step guidance to plan and configure communication compliance, see [Plan for communication compliance](/microsoft-365/compliance/communication-compliance-plan) and [Get started with communication compliance](/microsoft-365/compliance/communication-compliance-configure). For communication compliance licensing information, see [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#communication-compliance).
 
@@ -129,7 +129,7 @@ For step-by-step guidance to using activity explorer, see [Get started with acti
 
 ## Next steps
 
-Now that you've configured the basics for compliance management for your organization, consider the following compliance solutions in Microsoft 365 to help you protect sensitive information and detect and act on additional insider risks.
+Now that you've configured the basics for compliance management for your organization, consider the following compliance solutions in Microsoft Purview to help you protect sensitive information and detect and act on additional insider risks.
 
 ### Configure retention labels
 
