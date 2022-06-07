@@ -72,7 +72,7 @@ Set up Audit (Premium) for users - to verify that the Advanced Auditing app is a
 > [!TIP]
 > Trial best practice: Create within the first 30 days
 
-Audit log retention policies are part of the new Audit (Premium) capabilities in Microsoft 365. An audit log retention policy lets you specify how long to retain audit logs in your organization.
+Audit log retention policies are part of the new Audit (Premium) capabilities in Microsoft Purview. An audit log retention policy lets you specify how long to retain audit logs in your organization.
 
 1. Before you create an audit log retention policy – [key things to know](audit-log-retention-policies.md#before-you-create-an-audit-log-retention-policy) before creating your policy.
 1. [Create an audit log retention policy](audit-log-retention-policies.md#create-an-audit-log-retention-policy)
@@ -257,7 +257,7 @@ To access eDiscovery (Premium) or be added as a member of an eDiscovery (Premium
 > [!TIP]
 > Trial best practice: Create within the first 30 days
 
-More organizations use the eDiscovery (Premium) solution in Microsoft 365 for critical eDiscovery processes. This includes responding to regulatory requests, investigations, and litigation.
+More organizations use the eDiscovery (Premium) solution in Microsoft Purview for critical eDiscovery processes. This includes responding to regulatory requests, investigations, and litigation.
 
 1. Manage eDiscovery (Premium) – [learn how to configure eDiscovery (Premium), manage cases by using the Security & Compliance Center, manage a workflow in eDiscovery (Premium), and analyze eDiscovery (Premium) search results](/learn/modules/manage-advanced-ediscovery).
 1. [Create an eDiscovery case using Advance eDiscovery's new case format](advanced-ediscovery-new-case-format.md)
