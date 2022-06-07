@@ -162,7 +162,11 @@ Once you've gotten started with an SPF fallback policy of `?all`, you can gradua
 
 You can also use the [spoof intelligence insight](learn-about-spoof-intelligence.md) and the [Tenant Allow/Block List](tenant-allow-block-list.md) to permit senders to transmit unauthenticated messages to your organization.
 
-For external domains, the spoofed user is the domain in the From address, while the sending infrastructure is either the source IP address (divided up into /24 CIDR ranges), or the organizational domain of the reverse DNS (PTR) record.
+For external domains, the spoofed user is the domain in the From address, while the sending infrastructure is one of the following values:
+
+- The source IP address (divided up into /24 CIDR ranges)
+- The organizational domain of the reverse DNS (PTR) record.
+- A verified DKIM domain.
 
 ### Create an allow entry for the sender/recipient pair
 

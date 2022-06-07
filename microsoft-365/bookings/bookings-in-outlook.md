@@ -123,7 +123,7 @@ Use the **Get-CASMailbox** and **Set-CASMailbox** commands to check user status 
 2. Check the individual’s **EwsApplicationAccessPolicy** by running the following command:
 
    ```PowerShell
-   Get-CASMailbox -Identity adam@contoso.com| Format-List EwsApplicationAccessPolicy,Ews*List
+   Get-CASMailbox -Identity adam@contoso.com | Format-List EwsApplicationAccessPolicy,Ews*List
    ```
 
     **A**. If the value of **EwsApplicationAccessPolicy** is **EnforceAllowList**, only the applications specified in EwsAllowList are allowed to access EWS and REST.
@@ -145,7 +145,7 @@ Use the **Get-CASMailbox** and **Set-CASMailbox** commands to check user status 
     - To turn off Bookings in Outlook for this user, add **MicrosoftOWSPersonalBookings** to **EnforceBlockList** by running the following command:
 
    ```PowerShell
-   Set-CASMailbox -Identity adam@contoso.com -EwsApplicationAccessPolicy EnforceBlockList @{Add="MicrosoftOWSPersonalBookings"}
+   Set-CASMailbox -Identity adam@contoso.com -EwsBlockList @{Add="MicrosoftOWSPersonalBookings"}
    ```
 
     - To turn on Bookings in Outlook for this user, remove **MicrosoftOWSPersonalBookings**, if present from EnforceBlockList by running the following command:
@@ -159,5 +159,5 @@ Use the **Get-CASMailbox** and **Set-CASMailbox** commands to check user status 
     - To turn off Bookings in Outlook for this user, set the **EnforceBlockList** policy and add **MicrosoftOWSPersonalBookings** to EWSBlockList by running the following command:
 
     ```PowerShell
-   Set-CASMailbox -Identity Adam -EwsApplicationAccessPolicy EnforceBlockList -EWSBlockList @{Add="MicrosoftOWSPersonalBookings"}
+   Set-CASMailbox -Identity adam@contoso.com -EwsApplicationAccessPolicy EnforceBlockList -EWSBlockList @{Add="MicrosoftOWSPersonalBookings"}
    ```
