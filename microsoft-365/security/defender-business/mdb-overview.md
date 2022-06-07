@@ -36,10 +36,9 @@ Watch the following video to learn more about Defender for Business: <br/><br/>
 
 > [!VIDEO https://www.youtube.com/embed/umhUNzMqZto]
 
+## What's included with Defender for Business
 
 :::image type="content" source="media/mdb-offering-overview.png" alt-text="Microsoft Defender for Business features and capabilities.":::
-
-## What's included with Defender for Business
 
 With Defender for Business, you can help protect the devices and data your business uses with:
 
