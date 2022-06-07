@@ -27,7 +27,7 @@ These step-by-step guides help administrators configure and use Microsoft Defend
 
 ***If you learn Microsoft products best by doing***, the step-by-step guides will jumpstart configuration and testing. They are as useful for set up in a *trial subscription* as they are in *production*.
 
-## Why use Microsoft Defender for Office 365 step-by-step guides, plus examples
+## Why use Microsoft Defender for Office 365 step-by-step guides
 
 > [!IMPORTANT]
 > Admins need to be on top of prevention, detection, investigation and hunting, response and remediation, and user training to position their organization securely. The step-by-step guides touch on all of these areas so that admins can set up trials, launch quickly into production, and configure in minutes.
@@ -37,3 +37,17 @@ These step-by-step guides help administrators configure and use Microsoft Defend
 Beyond links to the documentation, the step-by-step guides don't concern themselves with product details (the docs around Microsoft Defender for Office 365 are thorough for when you need them). 
 
 Instead, these guides are streamlined for **learning by doing**, **testing**, and **running experiments**. They're ideal for **trial subscriptions**, and will allow admins and security operators to **deploy the same logic in production**.
+
+## Examples
+
+- If you've just got Microsoft Defender for Office 365, and you want to get protected as quickly as possible use [Preset security policies](ensuring-you-always-have-the-optimal-security-controls-with-preset-security-policies.md).
+
+- Take advantage of additional protections designed for [members of your c-suite](protect-your-c-suite-with-priority-account-protection.md).
+
+- How do you [setup](how-to-run-attack-simulations-for-your-team.md) or [automate](how-to-setup-attack-simulation-training-for-automated-attacks-and-training.md) a new simulation quickly and easily?
+
+- Connect Microsoft Defender for Office 365 to Sentinel.
+ 
+Documentation in this format can be found under the step-by-step section in Office 365 Security. Visit the docs by using [aka.ms/step-by-step](https://aka.ms/step-by-step).
+
+**If there's a topic, task or config you'd like to see in this format, please let us know by leaving feedback. Thank you!**
