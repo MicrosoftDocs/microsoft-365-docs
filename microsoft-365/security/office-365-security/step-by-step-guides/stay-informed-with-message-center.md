@@ -1,6 +1,6 @@
 ---
 title: Stay informed of upcoming changes to Microsoft Defender for Office 365 using the message center
-description: The steps to setup a weekly digest of message center activity to stay informed of changes to Microsoft Defender for Office 365
+description: The steps to setup a weekly digest of message center activity to stay informed of changes to Microsoft Defender for Office 365.
 search.product: 
 search.appverid: 
 ms.prod: m365-security
@@ -40,9 +40,9 @@ The message center is where you can learn about official service announcements a
 1.	Press **Save**.
 
 ## Watch: Track your message center tasks in Planner
-[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4C7Ne]
+[Video](https://www.microsoft.com/en-us/videoplayer/embed/RE4C7Ne)
 
 ## Learn More
-[Track new and changed features in the Microsoft 365 Message center](https://docs.microsoft.com/en-us/microsoft-365/admin/manage/message-center)
+[Track new and changed features in the Microsoft 365 Message center](https://docs.microsoft.com/microsoft-365/admin/manage/message-center)
 
-[Track your message center tasks in Planner](https://docs.microsoft.com/en-us/office365/planner/track-message-center-tasks-planner)
+[Track your message center tasks in Planner](/office365/planner/track-message-center-tasks-planner)
