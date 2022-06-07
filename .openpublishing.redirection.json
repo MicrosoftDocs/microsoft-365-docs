@@ -338,7 +338,7 @@
     {
       "source_path": "microsoft-365/business/review-threats-take-action.md",
       "redirect_url": "/microsoft-365/business-premium/m365bp-review-threats-take-action",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/business/map-protection-features-to-intune-settings.md",
@@ -392,7 +392,7 @@
     },
     {
       "source_path": "microsoft-365/business/threats-detected-defender-av.md",
-      "redirect_url": "/microsoft-365/admin/security-and-compliance/threats-detected-defender-av",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-review-threats-take-action",
       "redirect_document_id": true
     },
     {
@@ -412,7 +412,7 @@
     },
     {
       "source_path": "microsoft-365/business/view-policies-and-devices.md",
-      "redirect_url": "/microsoft-365/business-premium/m365bp-view-policies-and-devices",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-view-edit-create-mdb-policies",
       "redirect_document_id": false
     },
     {
@@ -423,7 +423,7 @@
     {
       "source_path": "microsoft-365/business/validate-settings-on-android-or-ios.md",
       "redirect_url": "/microsoft-365/business-premium/m365bp-validate-settings-on-android-or-ios",
-      "redirect_document_id": false
+      "redirect_document_id": true
     },
     {
       "source_path": "microsoft-365/business/manage-domain-users.md",
@@ -457,8 +457,8 @@
     },
     {
       "source_path": "microsoft-365/business/set-up-windows-devices.md",
-      "redirect_url": "/microsoft-365/admin/setup/set-up-windows-devices",
-      "redirect_document_id": true
+      "redirect_url": "/microsoft-365/business-premium/m365bp-set-up-windows-devices",
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/business/manage-windows-devices.md",
@@ -6653,7 +6653,7 @@
     {
       "source_path": "microsoft-365/campaigns/m365-campaigns-phishing-and-attacks.md",
       "redirect_url": "/microsoft-365/business-premium/avoid-phishing-and-attacks",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/campaigns/m365-campaigns-protect-admin-accounts.md",
@@ -6697,7 +6697,7 @@
     },
     {
       "source_path": "microsoft-365/campaigns/microsoft-365-campaigns-setup-overview.md",
-      "redirect_url": "/microsoft-365/business-premium/microsoft-365-campaigns-setup-overview",
+      "redirect_url": "/microsoft-365/business-premium/m365-campaigns-setup",
       "redirect_document_id": true
     },
     {
@@ -7448,6 +7448,34 @@
     {
       "source_path": "microsoft-365/admin/setup/business-set-up.md",
       "redirect_url": "/microsoft-365/business-premium/m365bp-setup",
+      "redirect_document_id": false
+    },{
+      "source_path": "microsoft-365/admin/security-and-compliance/threats-detected-defender-av.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-review-threats-take-action",
+      "redirect_document_id": false
+    },{
+      "source_path": "microsoft-365/commerce/subscriptions/important-information-e4.md",
+      "redirect_url": "/microsoft-365/commerce/subscriptions/upgrade-to-different-plan",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/subscriptions/upgrade-Office-365-E4.md",
+      "redirect_url": "/microsoft-365/commerce/subscriptions/upgrade-to-different-plan",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/security-and-compliance/review-threats-take-action.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-review-threats-take-action",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/devices/validate-settings-on-android-or-ios.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-validate-settings-on-android-or-ios",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/validate-settings-on-windows-10-pcs.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-validate-settings-on-windows-10-pcs",
       "redirect_document_id": false
     }
   ]
