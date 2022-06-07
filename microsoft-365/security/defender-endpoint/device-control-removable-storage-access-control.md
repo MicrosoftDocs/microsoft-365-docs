@@ -305,17 +305,17 @@ Before you get started with Removable Storage Access Control, you must confirm y
     
 5. ReadOnly - Policy: <br> Use the following XML data to create ReadOnly policy and apply to the ReadOnly removable storage group to allow read activity:
   
-    :::image type="content" source="images/read-only-policy-gp.png" alt-text="Read only policy":::
+    :::image type="content" source="images/read-only-policy-gp.png" alt-text="Read only policy" lightbox="images/read-only-policy-gp.png":::
         
    
 6. Create Group for Allowed Medias: <br> Use the following XML data to create removable storage allowed medias group:
     
-   :::image type="content" source="images/create-group-allowed-medias-gp.png" alt-text="Create group for allowed medias using Group Policy":::
+   :::image type="content" source="images/create-group-allowed-medias-gp.png" alt-text="Create group for allowed medias using Group Policy" lightbox="images/create-group-allowed-medias-gp.png":::
       
     
 7. Create Policy to allow the approved USB Group: <br> Use the following XML data to create a policy to allow approved USB group:
     
-    :::image type="content" source="images/create-policy-allow-approved-USB-group-gp.png" alt-text="Create policy to allow the approved USB Group using Group Policy":::
+    :::image type="content" source="images/create-policy-allow-approved-USB-group-gp.png" alt-text="Create policy to allow the approved USB Group using Group Policy" lightbox="images/create-policy-allow-approved-USB-group-gp.png":::
       
    What ‘47’ means in the policy? <br> 
    It is 9 + 2 + 36 = 47: <br>
