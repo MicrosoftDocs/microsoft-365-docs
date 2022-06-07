@@ -326,18 +326,24 @@
           items:
           - name: Create a custom sensitive information types - Compliance Center
             href: create-a-custom-sensitive-information-type.md
-          - name: Get started with exact data match based sensitive information types
-            href: sit-get-started-exact-data-match-based-sits-overview.md
-          - name: Export source data for exact data match based sensitive information type
-            href: sit-get-started-exact-data-match-export-data.md
-          - name: Create the schema for exact data match based sensitive information types
-            href: sit-get-started-exact-data-match-create-schema.md
-          - name: Hash and upload the sensitive information source table for exact data match sensitive information types
-            href: sit-get-started-exact-data-match-hash-upload.md
-          - name: Create exact data match sensitive information type/rule package
-            href: sit-get-started-exact-data-match-create-rule-package.md
-          - name: Test an exact data match sensitive information type
-            href: sit-get-started-exact-data-match-test.md  
+          - name: Get started with exact data match sensitive information types classic experience
+            items:
+            - name: Create EDM sensitive information types classic experience  
+              href: sit-get-started-exact-data-match-based-sits-overview.md
+            - name: Export source data for EDM classic experience
+              href: sit-get-started-exact-data-match-export-data.md
+            - name: Create the schema for EDM classic experience
+              href: sit-get-started-exact-data-match-create-schema.md
+            - name: Hash and upload the sensitive information source table for EDM classic experience
+              href: sit-get-started-exact-data-match-hash-upload.md
+            - name: Create EDM sensitive information type classic experience
+              href: sit-get-started-exact-data-match-create-rule-package.md
+            - name: Test an EDM sensitive information type
+              href: sit-get-started-exact-data-match-test.md
+          - name: Create EDM sensitive information types new experience
+            items:
+            - name: Create EDM sensitive information types new experience
+              href: sit-get-started-edm-unified-wizard.md   
         - name: Use sensitive information types
           items:
           - name: Customize a built-in sensitive information type
