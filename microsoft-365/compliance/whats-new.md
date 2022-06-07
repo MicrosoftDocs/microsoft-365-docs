@@ -97,7 +97,6 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
   - Label SQL database columns by using the same sensitivity labels as those used for files and emails so that the organization has a unified labeling solution that continues to protect structured data when it's exported
   - Apply a sensitivity label to a file after receiving an alert that content containing personal data is being shared and needs protection
 
-
 ## April 2022
 
 ### Communication compliance
