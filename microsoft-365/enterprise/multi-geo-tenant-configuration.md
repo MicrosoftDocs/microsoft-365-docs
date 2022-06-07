@@ -139,7 +139,7 @@ Select OneDrive from the Microsoft 365 app launcher and confirm that you are aut
 
 **OneDrive Mobile App**:
 
-Log into your OneDrive mobile App with your test account credentials. Confirm that you can see your OneDrive for Business files and can interact with them from your mobile device.
+Log in to your OneDrive mobile App with your test account credentials. Confirm that you can see your OneDrive for Business files and can interact with them from your mobile device.
 
 **OneDrive sync client**:
 
