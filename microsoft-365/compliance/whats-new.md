@@ -53,7 +53,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ### Compliance offerings & service assurance
 
-- [Microsoft Security Development Lifecycle](/compliance/assurance/assurance-microsoft-security-development-lifecycle) - new SDL assurance topics for Microsoft services.
+- [Microsoft Security Development Lifecycle](/compliance/assurance/assurance-microsoft-security-development-lifecycle) - new SDL assurance topic for Microsoft services.
 
 ### Data lifecycle management and records management
 
