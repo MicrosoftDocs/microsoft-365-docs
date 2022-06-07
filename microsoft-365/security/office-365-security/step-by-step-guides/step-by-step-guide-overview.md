@@ -46,8 +46,8 @@ Instead, these guides are streamlined for **learning by doing**, **testing**, an
 
 - How do you [setup](how-to-run-attack-simulations-for-your-team.md) or [automate](how-to-setup-attack-simulation-training-for-automated-attacks-and-training.md) a new simulation quickly and easily?
 
-- Connect Microsoft Defender for Office 365 to Sentinel.
- 
+- [Connect Microsoft Defender for Office 365 to Sentinel](connect-microsoft-defender-for-office-365-to-microsoft-sentinel.md).
+
 Documentation in this format can be found under the step-by-step section in Office 365 Security. Visit the docs by using [aka.ms/step-by-step](https://aka.ms/step-by-step).
 
 **If there's a topic, task or config you'd like to see in this format, please let us know by leaving feedback. Thank you!**
