@@ -5,6 +5,9 @@
   - name: Lighthouse
     tocHref: /microsoft-365/lighthouse/
     topicHref: /microsoft-365/lighthouse/m365-lighthouse-overview
+  - name: SharePoint Syntex
+    tocHref: /microsoft-365/contentunderstanding/
+    topicHref: /microsoft-365/contentunderstanding/index
 - name: Microsoft Viva
   tocHref: /microsoft-365/viva/
   topicHref: /microsoft-365/viva/index

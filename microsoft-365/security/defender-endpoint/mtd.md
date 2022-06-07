@@ -44,6 +44,7 @@ Microsoft Defender for Endpoint on Android and iOS provides the below key capabi
 |Malware Protection (Android-only)|Scanning for malicious apps.|
 |Jailbreak Detection (iOS-only)|Detection of jailbroken devices.|
 |Threat and Vulnerability Management (TVM) |Vulnerability assessment of onboarded mobile devices. Visit this [page](next-gen-threat-and-vuln-mgt.md) to learn more about threat and vulnerability management in Microsoft Defender for Endpoint. *Note that on iOS only OS vulnerabilities are supported in this preview.*|
+|Network Protection *(Public Preview)*| Protection against rogue Wi-Fi related threats and rogue certificates; ability to allow list the root CA and private root CA certificates in Intune; establish trust with endpoints.|
 |Unified alerting|Alerts from all platforms in the unified M365 security console|
 |Conditional Access, Conditional launch|Blocking risky devices from accessing corporate resources. Defender for Endpoint risk signals can also be added to app protection policies (MAM)|
 |Privacy Controls. In preview (see note below)|Configure privacy in the threat reports by controlling the data sent by Microsoft Defender for Endpoint. *Note that privacy controls are currently available only for enrolled devices. Controls for unenrolled devices will be added later*|
@@ -106,7 +107,7 @@ This helps reduce potential issues that could arise while rolling out the servic
 
 - Devices show up in the device inventory list: After successful onboarding of Defender for Endpoint on the mobile device, verify that the device is listed in the Device Inventory in the [security console](https://security.microsoft.com).
 
-- Run a malware detection test on an Android device: Install any test virus app from the Google play store and verify that it gets detected by Microsoft Defender for Endpoint. Here is an example app that can be used for this test: [Test virus](https://play.google.com/store/apps/details?id=com.androidantivirus.testvirus). Note that on Android Enterprise with a work profile, only the work profile is supported.
+- Run a malware detection test on an Android device: Install any test virus app from the Google play store and verify that it gets detected by Microsoft Defender for Endpoint. Here is an example app that can be used for this test: [Test virus](https://play.google.com/store/apps/details?id=com.antivirus&hl=en_US&gl=US). Note that on Android Enterprise with a work profile, only the work profile is supported.
 
 - Run a phishing test: Browse to https://smartscreentestratings2.net and verify that it gets blocked by Microsoft Defender for Endpoint. Note that on Android Enterprise with a work profile, only the work profile is supported.
 

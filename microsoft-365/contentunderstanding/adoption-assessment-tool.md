@@ -39,7 +39,7 @@ The assessment report includes the following information:
 
 - **Libraries with custom content types** – Identify libraries using custom content types, where SharePoint Syntex models can be used to automatically categorize files. 
 
-- **Content type usage** – Identify patterns of content type usage, to target Sharepoint Syntex models where they'll have the maximum benefit. 
+- **Content type usage** – Identify patterns of content type usage, to target SharePoint Syntex models where they'll have the maximum benefit. 
 
 - **Libraries with retention labels** – Identify libraries where retention labels are used, where SharePoint Syntex can be used to automate and improve consistency. 
 

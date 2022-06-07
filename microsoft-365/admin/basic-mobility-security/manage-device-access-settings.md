@@ -35,9 +35,9 @@ Use these steps:
 
 3. Go to **Data loss prevention** \> **Device management** \> **Device policies**, and select **Manage organization-wide device access settings**.
 
-4. Select **Block**.
+4. Select **Access**.
 
-    :::image type="content" source="../../media/basic-mobility-security/bms-5-block-access.png" alt-text="Basic Mobility and Security block access checkbox.":::
+    :::image type="content" source="../../media/basic-mobility-security/basic-mobility-access.png" alt-text="Basic Mobility and Security block access checkbox.":::
 
 5. Select **Save**.
 
