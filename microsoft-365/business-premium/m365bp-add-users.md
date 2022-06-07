@@ -31,7 +31,7 @@ description: "How to add a new user to your organization's network and internal 
 
 The following information tells you how to use Microsoft 365 Business Premium to add a new employee to the organization. 
 
-# Add a new employee in Microsoft 365 Business Premium
+## Add a new employee in Microsoft 365 Business Premium
   
  **Not an admin?** [Learn your way around Microsoft 365](https://support.microsoft.com/office/396b8d9e-e118-42d0-8a0d-87d1f2f055fb) helps business and home users with set up. 
   
