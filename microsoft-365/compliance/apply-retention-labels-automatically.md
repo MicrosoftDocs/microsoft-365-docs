@@ -327,7 +327,7 @@ To consider when auto-applying retention labels to cloud attachments:
 - The following items aren't supported as cloud attachments that can be retained:
     - SharePoint sites, pages, lists, forms, folders, document sets, and OneNote pages.
     - Files shared by users who don't have access to those files.
-    - Files that are deleted or moved before the cloud attachment is sent. This can happen if a user copies and pastes a previously shared attachment from another message, without first confirming that the file is still available. Or, somebody forwards an old message when the file is now deleted.
+    - Files that are deleted or moved before the cloud attachment is sent. For example, a user copies and pastes a previously shared attachment from another message, without first confirming that the file is still available. Or, somebody forwards an old message when the file is now deleted.
     - Files that are shared by guests or users outside your organization.
     - Files in draft emails and messages that aren't sent.
     - Empty files.
