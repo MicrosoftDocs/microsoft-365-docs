@@ -51,7 +51,7 @@ The following information tells you how to use Microsoft 365 Business Premium to
 
 - Select **Sign in**, then type the user ID and password.
   
-And here's a quick reference to help get them started:
+And here's a quick reference to help them get started:
   
 |**Task**|**Find the details**|
 |:-----|:-----|
