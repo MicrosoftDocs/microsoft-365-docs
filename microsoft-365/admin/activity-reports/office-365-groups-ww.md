@@ -65,6 +65,8 @@ The **groups** report can be viewed for trends over the last 7 days, 30 days, 90
 |Messages in Yammer (liked) |The number of messages liked in the Yammer group over the reporting period. |
 |Members |The number of members in the group. |
 |External members |The number of external users in the group.|
+|Total organized meetings  |The sum of one-time scheduled and recurring meetings a user organized during the specified time period.|
+|Channel messages  |The number of unique messages that a user posted in a team chat during the specified time period. This includes original posts and replies. |
 
 
 ## Related content
