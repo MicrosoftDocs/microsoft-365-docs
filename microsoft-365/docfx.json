@@ -75,7 +75,6 @@
       "extendBreadcrumb": true,
       "recommendations": true,
       "uhfHeaderId": "MSDocsHeader-M365-IT",
-      "searchScope": ["SharePoint Syntex", "Microsoft Bookings", "Microsoft 365"],
       "contributors_to_exclude": [ 
         "rjagiewich", 
         "traya1", 
