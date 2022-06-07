@@ -23,7 +23,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: f3433b6b-02f7-447f-9d62-306bf03638b0
-description: "Learn how to validate the Microsoft 365 Business Premium app protection settings in your Android or iOS devices."
+description: "Learn how to validate the Microsoft 365 Business Premium app protection settings on your Android or iOS devices. Making security settings for your applications is critical in order to protect the files on your mobile apps and devices."
 ---
 
 # Validate app protection settings on Android or iOS devices
@@ -33,18 +33,18 @@ description: "Learn how to validate the Microsoft 365 Business Premium app prote
 
 Follow the instructions in the following sections to validate app protection settings on Android or iOS devices.
   
-## Android
-  
+## [Android](#tab/Android)  
+
 ### Check that the app protection settings are working on user devices
 
-After you [set app protection settings for Android or iOS devices](../business-premium/m365bp-app-protection-settings-for-android-and-ios.md) to protect the apps, you can follow these steps to validate that the settings you chose work. 
+After you [set app protection settings for Android or iOS devices](../business-premium/m365bp-app-protection-settings-for-android-and-ios.md) to protect the apps, you can follow these steps to validate the settings you chose.
   
 First, make sure that the policy applies to the app in which you're going to validate it.
   
 1. In the Microsoft 365 Business Premium [admin center](https://admin.microsoft.com), go to **Policies** \> **Edit policy**.
-    
+
 2. Choose **Application policy for Android** for the settings you created at setup, or another policy you created, and verify that it's enforced for Outlook, for example. 
-    
+
     ![Screenshot showing all the apps for which this policy protects files.](../business-premium/media/b3be3ddd-f683-4073-8d7a-9c639a636a2c.png)
   
 ### Validate Require a PIN or a fingerprint to access Office apps
@@ -54,9 +54,9 @@ In the **Edit policy** pane, choose **Edit** next to **Office documents access c
 ![Make sure that the Require a PIN or fingerprint to access Office apps is set to On.](../business-premium/media/f37eb5b2-7e26-49fb-9bd6-d955d196bacf.png)
   
 1. In the user's Android device, open Outlook and sign in with the user's Microsoft 365 Business Premium credentials.
-    
+
 2. You'll also be prompted to enter a PIN or use a fingerprint.
-    
+
     ![Enter a PIN on your Android device to access Office apps.](../business-premium/media/9e8ecfee-8122-4a3a-8918-eece80344310.png)
   
 ### Validate Reset PIN after number of failed attempts
@@ -64,13 +64,13 @@ In the **Edit policy** pane, choose **Edit** next to **Office documents access c
 In the **Edit policy** pane, choose **Edit** next to **Office documents access control**, expand **Manage how users access Office files on mobile devices**, and make sure that **Reset PIN after number of failed attempts** is set to some number. This is 5 by default. 
   
 1. In the user's Android device, open Outlook and sign in with the user's Microsoft 365 Business Premium credentials.
-    
+
 2. Enter an incorrect PIN as many times as specified by the policy. You'll see a prompt that states **PIN Attempt Limit Reached** to reset the PIN. 
-    
+
     ![Screenshot indicating after too many incorrect PIN attempts, you need to reset your PIN.](../business-premium/media/fca6fcb4-bb5c-477f-af5e-5dc937e8b835.png)
   
 3. Press **Reset PIN**. You'll be prompted to sign in with the user's Microsoft 365 Business Premium credentials, and then required to set a new PIN.
-    
+
 ### Validate Force users to save all work files to OneDrive for Business
 
 In the **Edit policy** pane, choose **Edit** next to **Protection against lost or stolen devices**, expand **Protect work files when devices are lost or stolen**, and make sure that **Force users to save all work files to OneDrive for Business** is set to **On**.
@@ -78,13 +78,13 @@ In the **Edit policy** pane, choose **Edit** next to **Protection against lost o
 ![Verify that Force users to save all work files to OneDrive for Business is set to On.](../business-premium/media/7140fa1d-966d-481c-829f-330c06abb5a5.png)
   
 1. In the user's Android device, open Outlook and sign in with the user's Microsoft 365 Business Premium credentials, and enter a PIN if requested.
-    
+
 2. Open an email that contains an attachment and tap the down arrow icon next to the attachment's information.
-    
+
     ![Tap the down arrow next to an attachment to try to save it.](../business-premium/media/b22573bb-91ce-455f-84fa-8feb2846b117.png)
   
     You'll see **Cannot save to device** on the bottom of the screen. 
-    
+
     ![Warning text that indicates cannot save a file locally to an Android.](../business-premium/media/52ca3f3d-7ed0-4a52-9621-4872da6ea9c5.png)
   
     > [!NOTE]
@@ -95,7 +95,7 @@ In the **Edit policy** pane, choose **Edit** next to **Protection against lost o
 In the **Edit policy** pane, choose **Edit** next to **Office documents access control**, expand **Manage how users access Office files on mobile devices**, and make sure that **Require users to sign in again after Office apps have been idle for** is set to some number of minutes. This is 30 minutes by default. 
   
 1. In the user's Android device, open Outlook and sign in with the user's Microsoft 365 Business Premium credentials, and enter a PIN if requested.
- 
+
 1. You should now see Outlook's inbox. Let the Android device idle untouched for at least 30 minutes (or some other amount of time, longer than what you specified in the policy). The device will likely dim.
 
 1. Access Outlook on the Android device again.
@@ -122,9 +122,9 @@ In the **Edit policy** pane, choose **Edit** next to **Protection against lost o
 
     ![An encrypted image file in the Gallery app.](../business-premium/media/25936414-bd7e-421d-824e-6e59b877722d.png)
   
-## iOS
-  
-### Check that the App protection settings are working on user devices
+### [iOS](#tab/iOS)
+
+## Check that the App protection settings are working on user devices
 
 After you [set app configurations for iOS devices](../business-premium/m365bp-protection-settings-for-windows-10-devices.md) to protect apps, you can follow these steps to validate that the settings you chose work. 
   
