@@ -27,17 +27,15 @@ ms.assetid: 80bdae57-f8bc-4e40-a58c-956007117ecb
 description: "How to add a new employee or user to your organization's network and internal systems. When a new employee joins your company, you must securely add them to the network and internal systems."
 ---
 
-# Add a new user
+# Add a new employee in Microsoft 365 Business Premium
 
 The following information tells you how to use Microsoft 365 Business Premium to add a new employee to the organization. 
-
-## Add a new employee in Microsoft 365 Business Premium
   
  **Not an admin?** [Learn your way around Microsoft 365](https://support.microsoft.com/office/396b8d9e-e118-42d0-8a0d-87d1f2f055fb) helps business and home users with set up. 
   
  **No Office apps in your plan?** Follow the steps below, but skip the sections for installing apps. Use the [Online versions of Office](https://support.microsoft.com/office/91a4ec74-67fe-4a84-a268-f6bdf3da1804) instead.
 
-## How to add an employee
+## How to add a new user
 
 1. Go to admin.microsoft.com
 1. Click **Add a user**.
@@ -45,11 +43,10 @@ The following information tells you how to use Microsoft 365 Business Premium to
     
     When you set up your new employee in the Admin center, make sure to enter and send log-in details to the employee's personal account. This way, they'll receive an email from the Microsoft Online Service Team that tells them how to log in to Microsoft 365 Business Premium. If you don't send it to their personal email address, instead, print out the employee's sign in name and password, and give it to them in person. Or, tell them the information over the phone.
   
-2. Have the user sign in to use Microsoft 365 Business Premium. Give them the following sign in information:
+2. Have the new user sign in to use Microsoft 365 Business Premium. Give them the following sign in information:
   
-- Sign in at [https://www.office.com](https://www.office.com).
-
-- Select **Sign in**, then type the user ID and password.
+    - Sign in at [https://www.office.com](https://www.office.com).
+    - Select **Sign in**, then type the user ID and password.
   
 And here's a quick reference to help them get started:
   
