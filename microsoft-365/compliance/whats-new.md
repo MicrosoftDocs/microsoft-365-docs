@@ -60,7 +60,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 - Currently rolling out in preview: New [relabel option at the end of the retention period](retention-settings.md#relabeling-at-the-end-of-the-retention-period).
 - New deployment guidance: [Deploy a data governance solution with Microsoft Purview](data-governance-solution.md)
 - Correction in the documentation to confirm that resource mailboxes are supported for Exchange retention and deletion for both static scopes and adaptive scopes. For static scopes, resource mailboxes are included by default in an org-wide policy (the All default).
-- New documentation for end users: [Manage email storage with online archive mailboxes](https://prod.support.services.microsoft.com/office/manage-email-storage-with-online-archive-mailboxes-1cae7d17-7813-4fe8-8ca2-9a5494e9a721)
+- New documentation for end users: [Manage email storage with online archive mailboxes](https://support.services.microsoft.com/office/manage-email-storage-with-online-archive-mailboxes-1cae7d17-7813-4fe8-8ca2-9a5494e9a721)
 
 ### Data loss prevention
 
