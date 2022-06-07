@@ -24,7 +24,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 80bdae57-f8bc-4e40-a58c-956007117ecb
-description: "How to add a new user to your organization's network and internal systems. When a new employee joins your company, you must securely add them to the network and internal systems."
+description: "How to add a new employee or user to your organization's network and internal systems. When a new employee joins your company, you must securely add them to the network and internal systems."
 ---
 
 # Add a new user
