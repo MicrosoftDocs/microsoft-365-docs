@@ -88,7 +88,7 @@ You can use this logic to construct your exclusion paths for Windows 10 devices:
 
 - Valid file path that ends with `\`, which means only files directly under folder. <br/>For example: `C:\Temp\`
 
-- Valid file path that ends with `\*`, which means only files under subfolders, besides the files directly under the folder. <br/>For example: `C:\Temp\*`
+- Valid file path that ends with `\*`, which means only files under subfolders, files directly under the folder are not excluded. <br/>For example: `C:\Temp\*`
 
 - Valid file path that ends without `\` or `\*`, which means all files directly under folder and all subfolders. <br/>For example: `C:\Temp`
 
