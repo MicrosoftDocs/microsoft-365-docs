@@ -22,7 +22,7 @@ Welcome to the Microsoft Business Premium trial playbook. This playbook will hel
 
 ## Set up the Microsoft 365 Business Premium trial
 
-When you [start a trial or purchase Microsoft 365 Business Premium](get-microsoft-365-business-premium.md), your first step is to get everything set up. 
+When you [start a trial or purchase Microsoft 365 Business Premium](get-microsoft-365-business-premium.md), your first step is to get everything set up.
 
 > [!Tip]
 > When links in the playbook take you away from this location, simply return to this playbook to continue.
