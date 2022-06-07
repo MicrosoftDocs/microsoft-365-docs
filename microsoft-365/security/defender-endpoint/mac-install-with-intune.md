@@ -158,7 +158,7 @@ This profile is needed for macOS 10.15 (Catalina) or older. It will be ignored o
 1. Set **Team identifier** to **UBF8T346G9** and click **Next**.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/mac-system-extension-intune2.png" alt-text="The Kernel settings of the system's extension" lightbox="images/mac-system-extension-intune2.png":::
+    > :::image type="content" source="images/mac-kernel-extension-intune2.png" alt-text="Allowed team identifiers for Kernel extensions" lightbox="images/mac-kernel-extension-intune2.png":::
 
 1. In the **Assignments** tab, assign this profile to **All Users & All devices**.
 1. Review and create this configuration profile.
