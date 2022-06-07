@@ -40,12 +40,52 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ## May 2022
 
+### Communication compliance
+
+- [Communication compliance reports and audits](communication-compliance-reports-audits.md) - updated file size limits for exported reports.
+- [Communication compliance policies](communication-compliance-policies.md) - clarified user-reported messages disable/enable process and clarified processing for Teams and Exchange.
+
+### Compliance Manager
+
+- [Alerts and alert policies](compliance-manager-alert-policies.md) - new section explaining the default score change policy for all orgs.
+- [Working with improvement actions](compliance-manager-improvement-actions.md) - clarified status states for implementation status and test status, making a distinction for the latter between automatically tested actions and manually tested actions.
+- [Templates list](compliance-manager-templates-list.md) - added two new templates in the Europe, Middle East, and Africa (EMEA) region: Qatar National Information Assurance (NIA) and UAE Data Privacy Law.
+
+### Compliance offerings & service assurance
+
+- [Microsoft Security Development Lifecycle](assurance/assurance-microsoft-security-development-lifecycle.md) - new SDL assurance topics for Microsoft services.
+
 ### Data lifecycle management and records management
 
 - Currently rolling out in preview: New [relabel option at the end of the retention period](retention-settings.md#relabeling-at-the-end-of-the-retention-period).
 - New deployment guidance: [Deploy a data governance solution with Microsoft Purview](data-governance-solution.md)
 - Correction in the documentation to confirm that resource mailboxes are supported for Exchange retention and deletion for both static scopes and adaptive scopes. For static scopes, resource mailboxes are included by default in an org-wide policy (the All default).
 - New documentation for end users: [Manage email storage with online archive mailboxes](https://prod.support.services.microsoft.com/office/manage-email-storage-with-online-archive-mailboxes-1cae7d17-7813-4fe8-8ca2-9a5494e9a721)
+
+### Data loss prevention
+
+- [Send email notifications and policy tips for DLP policies](use-notifications-and-policy-tips.md) - added new information on what triggers a notification and who can receive them.
+
+### Information barriers
+
+- [Learn about information barriers](information-barriers.md), [Get started with information barriers](information-barriers-policies.md) - refactored structure of topics and added clarification for Exchange Online support and limitations, updated to include support for new IB UI experience.
+
+### Insider risk management
+
+- [Get started with insider risk management settings](insider-risk-management-settings.md) - added guidance for new Defender for Cloud App indicators, new anomaly as a triggering event in custom thresholds, new file extension prioritization and sensitivity labels policy support.
+- [Insider risk management cases](insider-risk-management-cases.md) - clarified escalation to eDiscovery case guidance.
+
+### Microsoft Priva
+
+- [Learn about the free Priva trial](/privacy/priva/priva-trial) - updated link to new universal Microsoft 365 trial terms and conditions and minor updates to clarify roles and eligibility.
+- [Get started with Priva](/privacy/priva/priva-setup) - added section indicating limitations to Priva availability.
+
+### Sensitive Information Types
+
+- [Learn about exact data match based sensitive information types](sit-learn-about-exact-data-match-based-sits.md) - from a customer escalation, added the regions that EDM is supported in and the procedures to find the region of your tenant.
+- [Create EDM SIT rule package](sit-get-started-exact-data-match-create-rule-package.md) - added 'working with specific types of data' from the schema article.
+- [Create Schema for EDM SIT](sit-get-started-exact-data-match-create-schema.md) - removed 'working with specific types of data'.
+- [Use named entities in your DLP policies](named-entities-use.md) - added support statement for Microsoft Defender for Cloud Apps.
 
 ### Sensitivity labels
 
