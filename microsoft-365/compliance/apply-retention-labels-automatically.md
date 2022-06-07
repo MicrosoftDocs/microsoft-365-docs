@@ -297,7 +297,7 @@ You might need to use this option if you're required to capture and retain all c
 
 Cloud attachments, sometimes also known as modern attachments, are a sharing mechanism that uses embedded links to files that are stored in the cloud. They support centralized storage for shared content with collaborative benefits, such as version control. Cloud attachments are not attached copies of a file or a URL text link to a file. You might find it helpful to refer to the visual checklists for supported cloud attachments in [Outlook](/office365/troubleshoot/retention/cannot-retain-cloud-attachments#cloud-attachments-in-outlook) and [Teams](/office365/troubleshoot/retention/cannot-retain-cloud-attachments#cloud-attachments-in-teams).
 
-When you choose the option to apply a retention label to cloud attachments, for compliance purposes, a copy of that file is created at the time of sharing. Your selected retention label is then applied to the copy that can then be identified using eDiscovery. Users are not aware of the copy that is stored in the Preservation Hold library. The retention label is not applied to the message itself, or to the original file.
+When you choose the option to apply a retention label to cloud attachments, for compliance purposes, a copy of that file is created at the time of sharing. Your selected retention label is then applied to the copy that can then be [identified using eDiscovery](advanced-ediscovery-cloud-attachments.md). Users are not aware of the copy that is stored in the Preservation Hold library. The retention label is not applied to the message itself, or to the original file.
 
 If the file is modified and shared again, a new copy of the file as a new version is saved in the Preservation Hold library. For more information, including why you should use the **When items were labeled** label setting, see [How retention works with cloud attachments](retention-policies-sharepoint.md#how-retention-works-with-cloud-attachments).
 
@@ -327,7 +327,7 @@ To consider when auto-applying retention labels to cloud attachments:
 - The following items aren't supported as cloud attachments that can be retained:
     - SharePoint sites, pages, lists, forms, folders, document sets, and OneNote pages.
     - Files shared by users who don't have access to those files.
-    - Files that are deleted before the cloud attachment is sent. This can happen if a user copies and pastes a previously shared attachment from another message, without first confirming that the file is still available. Or, somebody forwards an old message when the file is now deleted.
+    - Files that are deleted or moved before the cloud attachment is sent. For example, a user copies and pastes a previously shared attachment from another message, without first confirming that the file is still available. Or, somebody forwards an old message when the file is now deleted.
     - Files that are shared by guests or users outside your organization.
     - Files in draft emails and messages that aren't sent.
     - Empty files.
