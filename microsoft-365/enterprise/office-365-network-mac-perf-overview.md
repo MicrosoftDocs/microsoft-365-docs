@@ -197,6 +197,38 @@ In the CSV file, a discovered city location shows in the userEntered column as b
    > [!div class="mx-imgBorder"]
    > ![CSV import ready message.](../media/m365-mac-perf/m365-mac-perf-import-ready.png)
 
+## CSV Import for LAN subnet office locations
+
+If you've uploaded building data to your Call Quality Dashboard, you can add those locations here to start assessing their network connectivity. This won't affect your existing locations. 
+
+[Go to Tenant Data Upload](https://cqd.teams.microsoft.com/spd/#/TenantDataUpload) in Call Quality Dashboard. If you've uploaded your building data, you'll see an option to download it to a .tsv file. Download the .tsv file from Call Quality Dashboard, then upload it in the CQD flyout following the steps below. If you want to create the .tsv file manually, please align the schema with that in Upload building data file, or try the CSV Import for LAN subnet office locations instead.
+
+1. In the main Connectivity to Microsoft 365 window, click the **Locations** tab.
+
+2. Click the **Manage multiple locations** button just above the locations list.
+
+   > [!div class="mx-imgBorder"]
+   > ![Manage multiple locations menu.](../media/m365-mac-perf/m365-mac-perf-import-cqd-manage-multiple.png)
+
+3. Click the **Add locations from Call Quality Dashboard**, the **Add locations from Call Quality Dashboard** flyout will appear.
+
+   > [!div class="mx-imgBorder"]
+   > ![Add locations from Call Quality Dashboard flyout.](../media/m365-mac-perf/m365-mac-perf-import-cqd-add-locations.png)
+
+4. Click the **Browse** button next to the **Select a .tsv file to upload** field and select the saved TSV file. Please make sure the value in the file is tab separated.
+
+5. The file will be automatically validated and parsed to the list of office locations. If there are validation errors, the **We couldn't upload your file** flyout appears to list the errors.
+
+   > [!div class="mx-imgBorder"]
+   > ![We couldnt upload your file flyout.](../media/m365-mac-perf/m365-mac-perf-import-cqd-couldnt-upload.png)
+
+6. If there are no errors in the file, you will see the message: *Your file test.tsv is uploaded and ready. Select Import to upload your information.*
+
+   > [!div class="mx-imgBorder"]
+   > ![Select a .tsc file to upload.](../media/m365-mac-perf/m365-mac-perf-import-cqd-select-tsv.png)
+
+7. Click **Upload** button at the bottom of the panel to upload the office locations.
+
 ## FAQ
 
 ### What is a Microsoft 365 service front door?
