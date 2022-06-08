@@ -166,6 +166,7 @@ For external domains, the spoofed user is the domain in the From address, while 
 
 - The source IP address (divided up into /24 CIDR ranges)
 - The organizational domain of the reverse DNS (PTR) record.
+- A verified DKIM domain.
 
 ### Create an allow entry for the sender/recipient pair
 
