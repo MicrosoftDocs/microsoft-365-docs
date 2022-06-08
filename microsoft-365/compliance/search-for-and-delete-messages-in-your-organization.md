@@ -45,7 +45,7 @@ You can use the Content search feature to search for and delete email messages f
   > [!NOTE]
   > The **Organization Management** role group exists in both Exchange Online and in the compliance portal. These are separate role groups that give different permissions. Being a member of **Organization Management** in Exchange Online does not grant the required permissions to delete email messages. If you aren't assigned the **Search And Purge** role in the compliance center (either directly or through a role group such as **Organization Management**), you'll receive an error in Step 3 when you run the **New-ComplianceSearchAction** cmdlet with the message "A parameter cannot be found that matches parameter name 'Purge'".
 
-- You have to use Security & Compliance Center PowerShell to delete messages. See [Step 1](#step-1-connect-to-security--compliance-center-powershell) for instructions about how to connect.
+- You have to use Security & Compliance PowerShell to delete messages. See [Step 1](#step-1-connect-to-security--compliance-center-powershell) for instructions about how to connect.
 
 - A maximum of 10 items per mailbox can be removed at one time. Because the capability to search for and remove messages is intended to be an incident-response tool, this limit helps ensure that messages are quickly removed from mailboxes. This feature isn't intended to clean up user mailboxes.
 
@@ -55,9 +55,9 @@ You can use the Content search feature to search for and delete email messages f
 
 - Email items in a review set in an eDiscovery (Premium) case can't be deleted by using the procedures in this article. That's because items in a review set are stored in an Azure Storage location, and not in the live service. This means they won't be returned by the content search that you create in Step 1. To delete items in a review set, you have to delete the eDiscovery (Premium) case that contains the review set. For more information, see [Close or delete an eDiscovery (Premium) case](close-or-delete-case.md).
 
-## Step 1: Connect to Security & Compliance Center PowerShell
+## Step 1: Connect to Security & Compliance PowerShell
 
-The first step is to connect to Security & Compliance Center PowerShell for your organization. For step-by-step instructions, see [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
+The first step is to connect to Security & Compliance PowerShell for your organization. For step-by-step instructions, see [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 ## Step 2: Create a Content Search to find the message to delete
 
@@ -116,7 +116,7 @@ After you've created and refined a Content search to return the messages that yo
 > [!NOTE]
 > As previously stated, items from Microsoft Teams that are returned by Content search are not deleted when you run the the **New-ComplianceSearchAction -Purge** command.
 
-To run the following commands to delete messages, be sure that you're [connected to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
+To run the following commands to delete messages, be sure that you're [connected to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 ### Soft-delete messages
 
