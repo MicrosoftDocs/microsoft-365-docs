@@ -34,9 +34,9 @@ You'll need to go through the onboarding section of the Defender for Endpoint po
 
 Devices in your organization must be configured so that the Defender for Endpoint service can get sensor data from them. There are various methods and deployment tools that you can use to configure the devices in your organization.
 
-In general, you'll identify the client you're onboarding, then follow the corresponding tool appropriate to the device or your environment to support operating system 10 or 11.
+In general, you'll identify the client you're onboarding, then follow the corresponding tool appropriate to the device or your environment.
 
-:::image type="content" source="images/onboard-devices.png" alt-text="Onboard devices" lightbox="images/onboard-devices.png":::
+:::image type="content" source="images/onboarddevices.png" alt-text="Onboard devices" lightbox="images/onboard-devices.png":::
 
 ## Related topics
 - [Onboard Windows devices using Mobile Device Management tools](configure-endpoints-mdm.md)
