@@ -57,8 +57,9 @@
 ###### [Onboard Windows devices using a local script](configure-endpoints-script.md)
 ###### [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
 
-#### [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md)
-#### [Defender for Endpoint onboarding Windows Servers]()
+#### [Defender for Endpoint onboarding Windows Server]()
+##### [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md)
+
 ##### [Onboard Windows Server using management tools]()
 
 ###### [Onboard Windows devices using Configuration Manager](configure-endpoints-sccm.md)
