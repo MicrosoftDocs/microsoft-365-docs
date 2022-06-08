@@ -37,7 +37,7 @@ This article provides information about attack reduction rules:
 - [Supported operating system versions](#supported-operating-systems)
 - [Supported configuration management systems](#supported-configuration-management-systems)
 - [Per-rule alert and notification details](#per-rule-alert-and-notification-details)
-- [ASR rules and GUIDs matrix](#asr-rules-and-guids-matrix)
+- [ASR rule to GUID matrix](#asr-rules-and-guids-matrix)
 - [ASR rule modes](#asr-rule-modes)
 - [Per-rule-descriptions](#per-rule-descriptions)
   - Rule descriptions
@@ -47,7 +47,7 @@ This article provides information about attack reduction rules:
 
 The following table lists the supported operating systems for rules that are currently released to general availability. The rules are listed alphabetical order in this table.
 
-> [!Note]
+> [!NOTE]
 >
 > Unless otherwise indicated, the minimum Windows&nbsp;10 build is version 1709 (RS3, build 16299) or later; the minimum Windows&nbsp;Server build is version is 1809 or later.
 >
@@ -137,7 +137,7 @@ For rules with the "Rule State" specified:
 |[Block Win32 API calls from Office macros](#block-win32-api-calls-from-office-macros) |   | N | Y |
 |[Use advanced protection against ransomware](#use-advanced-protection-against-ransomware) | Audit&nbsp;\|&nbsp;Block | Y \| Y <br> Requires device at high-cloud block level  | N \| Y <br> Requires device at high-cloud block level |
   
-## ASR rules GUID matrix
+## ASR rule to GUID matrix
 
 | Rule Name | Rule GUID |
 |:-----|:-----|
