@@ -427,7 +427,7 @@ PDF scenarios not supported:
     
 - Password protection and encryption
     
-    The Office option that lets users provide a password to encrypt PDFs isn't supported when the labeled document applies encryption. In this scenario, the option becomes unavailable for users.
+    The option **File** > **Info** > **Protect Document** > **Encrypt with Password** isn't supported when the document's label applies encryption. In this scenario, the encrypt with password option becomes unavailable for users.
 
 For more information about this capability, see the announcement [Apply sensitivity labels to PDFs created with Office apps](https://preview.insider.office.com/en-us/blog/apply-sensitivity-labels-to-pdfs-created-with-office-apps)
 
