@@ -44,6 +44,10 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
 - [What's new in Microsoft Cloud App Security](/cloud-app-security/release-notes)
 
+## July 2022
+
+- [Added support for a verified DKIM domain entry](tenant-allow-block-list.md#domain-pair-syntax-for-spoofed-sender-entries-in-the-tenant-allowblock-list) within Sending Infrastructure for Anti-Spoofing management using Tenant allow block lists - Spoofing.
+
 ## June 2022
 
 - [simplifying the quarantine experience part Two in Microsoft 365 Defender for office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/simplifying-the-quarantine-experience-part-two/ba-p/3354687): simplifying the quarantine experience part Two with Microsoft Defender for Office 365.
