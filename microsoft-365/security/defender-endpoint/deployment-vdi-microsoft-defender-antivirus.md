@@ -227,6 +227,10 @@ Disabling a scan after an update will prevent a scan from occurring after receiv
 
 This policy prevents a scan from running immediately after an update.
 
+## Disable the `ScanOnlyIfIdle` option
+
+To stop a quick or scheduled scan whenever the device goes idle if it is in passive mode, disable the `ScanOnlyIfIdle` option in Microsoft Defender Antivirus. This prevents the significant CPU contention in high density environments.
+
 ## Scan VMs that have been offline
 
 1. In your Group Policy Editor, go to **Windows components** \> **Microsoft Defender Antivirus** \> **Scan**.
