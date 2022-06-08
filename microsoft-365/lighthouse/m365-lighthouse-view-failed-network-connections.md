@@ -4,6 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: katmartin
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -20,12 +21,12 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 # View an enterprise Cloud PC failed network connection in Microsoft 365 Lighthouse
 
-Microsoft 365 Lighthouse provides connection status between your tenants and Azure Active Directory. When a Cloud PC has a failed network connection, you can view detailed information in Microsoft Endpoint Manager admin center.
+Microsoft 365 Lighthouse provides the connection status between your customer tenants and Azure Active Directory (Azure AD). When a Cloud PC has a failed network connection, you can view detailed information in the Microsoft Endpoint Manager admin center.
 
 ## Before you begin
 
 - You must be a Global Administrator in the partner tenant.
-- You must have Cloud PC administrator or Cloud PC reader access to view connection issues.
+- You must have Cloud PC Administrator or Cloud PC Reader access to view connection issues.
 
 ## View a failed network connection
 
@@ -33,15 +34,15 @@ Microsoft 365 Lighthouse provides connection status between your tenants and Azu
 
 2. Select the **Azure network connections** tab.
 
-3. From the connection summary area, select **Failed connections**.
+3. From the connection summary section, select **Failed connections**.
 
 4. From the filtered list, select **View connection details in Microsoft Endpoint Manager** next to the connection you want to investigate.
 
-5. From Microsoft Endpoint Manager admin center, select **View details** to learn more about the error.
+5. From the Microsoft Endpoint Manager admin center, select **View details** to learn more about the error.
 
 ## Next steps
 
-To troubleshoot connection issues, see [Troubleshoot on-premises network connection](/windows-365/enterprise/troubleshoot-on-premises-network-connection) article.
+To troubleshoot connection issues, see [Troubleshoot on-premises network connection](/windows-365/enterprise/troubleshoot-on-premises-network-connection).
 
 ## Related content
 

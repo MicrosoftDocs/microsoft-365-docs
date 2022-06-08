@@ -75,7 +75,6 @@
       "extendBreadcrumb": true,
       "recommendations": true,
       "uhfHeaderId": "MSDocsHeader-M365-IT",
-      "searchScope": ["Microsoft 365", "Microsoft Bookings", "SharePoint Syntex"],
       "contributors_to_exclude": [ 
         "rjagiewich", 
         "traya1", 
@@ -121,10 +120,17 @@
         "lighthouse/":"https://feedbackportal.microsoft.com/feedback/forum/d6a21c42-fe1b-ec11-b6e7-0022481f8472"
       },
       "searchScope": {
-        "security/office-365-security/**/*.md": "Defender for Office",
+        "admin/**/*.md": "Microsoft 365",
         "bookings/**/*.md": "Microsoft Bookings",
+        "business/**/*.md": "Microsoft 365",
+        "business-video/**/*.md": "Microsoft 365",
+        "commerce/**/*.md": "Microsoft 365",
+        "compliance/**/*.md": "Microsoft 365",
         "contentunderstanding/**/*.md":"SharePoint Syntex",
-        "lighthouse/**/*.md": "Microsoft 365 Lighthouse"
+        "enterprise/**/*.md": "Microsoft 365",
+        "lighthouse/**/*.md": "Microsoft 365 Lighthouse",
+        "security/office-365-security/**/*.md": "Defender for Office",
+        "solutions/**.*.md": "Microsoft 365"
       }
     },
     "template": [],
