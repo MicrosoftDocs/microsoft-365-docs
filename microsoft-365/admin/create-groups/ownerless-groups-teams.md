@@ -60,7 +60,7 @@ To set an ownerless group or team policy
 
 1. On the *Review and finish* page, confirm your settings and click **Finish**, and then select **Done**.
 
-Notifications are sent weekly starting within 24 hours of policy creation. Users can not forward the notifications to others. Notifications and responses are tracked in the audit log.
+Notifications are sent weekly starting within 24 hours of policy creation. Recipients can't forward the notifications to others. Notifications and responses are tracked in the audit log.
 
 Up to two group members per group can accept the invitation to become an owner. If no group members accept, an administrator will have to [assign a group owner](/admin/create-groups/add-or-remove-members-from-groups).
 
