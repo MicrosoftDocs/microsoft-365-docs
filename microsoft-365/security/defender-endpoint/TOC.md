@@ -58,7 +58,7 @@
 ###### [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
 
 #### [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md)
-
+#### [Defender for Endpoint onboarding Windows Servers]()
 ##### [Onboard Windows Server using management tools]()
 
 ###### [Onboard Windows devices using Configuration Manager](configure-endpoints-sccm.md)
