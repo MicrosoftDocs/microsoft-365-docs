@@ -40,7 +40,7 @@ To create a **Test Base** account, perform the steps that follow.
    - **Test Base account**—under **Account Details**, as shown in the figure that follows, specify a chosen name for your **Test Base** account by typing it in the input text field. 
 
    > [!NOTE]
-   > You must provide input for all required fields (<span style='color:red'>*</span>). 
+   > You must provide input for all required fields (*). 
 
    [ ![Basics information](Media/creatingaccount03-basics.png) ](Media/creatingaccount03-basics.png#lightbox)
 
