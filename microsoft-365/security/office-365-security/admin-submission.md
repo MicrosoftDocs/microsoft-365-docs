@@ -302,7 +302,3 @@ You can directly access the admin submission by clicking on "View the converted 
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/view-converted-admin-submission.png" alt-text="Option to view created admin submission from user reported message" lightbox="../../media/view-converted-admin-submission.png":::
-
-
-
-
