@@ -54,7 +54,7 @@ The following four cmdlets in Security & Compliance PowerShell let you configure
 
 - To run the compliance security filter cmdlets, you have to be a member of the Organization Management role group in the compliance portal. For more information, see [Permissions in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
 
-- You have to connect to both Exchange Online and Security & Compliance Center PowerShell to use the compliance security filter cmdlets. This is necessary because these cmdlets require access to mailbox properties, which is why you have to connect to Exchange Online PowerShell. See the steps in the next section.
+- You have to connect to both Exchange Online and Security & Compliance PowerShell to use the compliance security filter cmdlets. This is necessary because these cmdlets require access to mailbox properties, which is why you have to connect to Exchange Online PowerShell. See the steps in the next section.
 
 - See the [More information](#more-information) section for additional information about search permissions filters.
 
@@ -64,7 +64,7 @@ The following four cmdlets in Security & Compliance PowerShell let you configure
 
 - There is no limit to the number of search permissions filters that can be created in an organization. However, a search query can have a maximum of 100 conditions. In this case, a condition is defined as something that's connected to the query by a Boolean operator (such as **AND**, **OR**, and **NEAR**). The limit for the number of conditions includes the search query itself plus all search permissions filters that are applied to the user who runs the search. Therefore, the more search permissions filters you have (especially if these filters are applied to the same user or group of users), the better the chance of exceeding the maximum number of conditions for a search. To prevent your organization from reaching the conditions limit, keep the number of search permissions filters in your organization to few as possible to meet your business requirements. For more information, see [Set up compliance boundaries for eDiscovery investigations](set-up-compliance-boundaries.md#frequently-asked-questions).
 
-## Connect to Exchange Online and Security & Compliance Center PowerShell in a single session
+## Connect to Exchange Online and Security & Compliance PowerShell in a single session
 
 Before you can successfully run the script in this section, you have to download and install the Exchange Online PowerShell V2 module. For information, see [About the Exchange Online PowerShell V2 module](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module).
 
@@ -84,13 +84,13 @@ Before you can successfully run the script in this section, you have to download
     .\ConnectEXO-SCC.ps1
     ```
 
-How do you know if this worked? After you run the script, cmdlets from Exchange Online and Security & Compliance PowerShell are imported to your local Windows PowerShell session. If you don't receive any errors, you connected successfully. A quick test is to run Exchange Online and Security & Compliance Center PowerShell cmdlets. For example, you can run and **Get-Mailbox** and **Get-ComplianceSearch**.
+How do you know if this worked? After you run the script, cmdlets from Exchange Online and Security & Compliance PowerShell are imported to your local Windows PowerShell session. If you don't receive any errors, you connected successfully. A quick test is to run Exchange Online and Security & Compliance PowerShell cmdlets. For example, you can run and **Get-Mailbox** and **Get-ComplianceSearch**.
 
 For troubleshooting PowerShell connection errors, see:
 
 - [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell#how-do-you-know-this-worked)
 
-- [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell#how-do-you-know-this-worked)
+- [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell#how-do-you-know-this-worked)
 
 ## New-ComplianceSecurityFilter
 
