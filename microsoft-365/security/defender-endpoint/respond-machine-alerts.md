@@ -89,7 +89,7 @@ For more information on live response, see [Investigate entities on devices usin
 As part of the investigation or response process, you can collect an investigation package from a device. By collecting the investigation package, you can identify the current state of the device and further understand the tools and techniques used by the attacker.
 
 > [!IMPORTANT]
-> These actions are not currently supported for macOS and Linux. Use live response to run the action. For more information on live response, see [Investigate entities on devices using live response](live-response.md)
+> These actions are not currently supported for devices running macOS or Linux. Use live response to run the action. For more information on live response, see [Investigate entities on devices using live response](live-response.md)
 
 To download the package (Zip file) and investigate the events that occurred on a device
 
@@ -233,12 +233,9 @@ A device can also be contained from the device page by selecting **Contain devic
 > [!NOTE]
 > It can take up to 5 minutes for the details about a newly contained device to reach Microsoft Defender for Endpoint onboarded devices.
 
-> [!Important]
->
+> [!IMPORTANT]
 > - If a contained device changes its IP address, then all Microsoft Defender for Endpoint onboarded devices will recognize this and start blocking communications with the new IP address. The original IP address will no longer be blocked (It may take up to 5 mins to see these changes).  
->
 > - In cases where the contained device’s IP is used by another device on the network, there will be a warning while containing the device, with a link to advanced hunting (with a pre-populated query). This will provide visibility to the other devices using the same IP to help you make a conscious decision if you’d like to continue with containing the device.
->
 > - In cases where the contained device is a network device, a warning will appear with a message that this may cause network connectivity issues (for example, containing a router that is acting as a default gateway). At this point, you’ll be able to choose whether to contain the device or not.
 
 After you contain a device, if the behavior isn't as expected, verify the Base Filtering Engine (BFE) service is enabled on the Defender for Endpoint onboarded devices.
