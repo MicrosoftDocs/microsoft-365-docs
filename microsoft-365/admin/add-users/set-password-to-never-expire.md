@@ -30,7 +30,7 @@ This article explains how to set a password for an individual user to not expire
 
 ## Before you begin
 
-This article is for people who set password expiration policy for a business, school, or nonprofit. To complete these steps, you need to sign in with your Microsoft 365 admin account. See [Overview of the Microsoft 365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview?view=o365-worldwide).
+This article is for people who set password expiration policy for a business, school, or nonprofit. To complete these steps, you need to sign in with your Microsoft 365 admin account. See [Overview of the Microsoft 365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview).
 
 You must be a [global admin or password administrator](about-admin-roles.md) to perform these steps.
 
