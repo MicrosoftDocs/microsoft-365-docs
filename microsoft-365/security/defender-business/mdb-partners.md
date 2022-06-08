@@ -26,3 +26,15 @@ Managed service providers (MSPs) often use a sophisticated stack of capabilities
 - Fetch incidents and alerts through your security information and event management (SIEM) tools​ 
 - Orchestrate remediation actions, such as actions following automated investigations
 
+Use the following resources to learn more.
+
+| Resource | Description |
+|:---|:---|
+| Defender for Business partner kit | https://aka.ms/MDBPartnerKit |
+
+
+
+Reference​
+https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/management-apis?view=o365-worldwide​
+
+https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/configure-mssp-support?view=o365-worldwide
