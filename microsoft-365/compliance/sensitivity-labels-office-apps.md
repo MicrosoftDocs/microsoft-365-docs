@@ -402,7 +402,7 @@ When the Outlook app doesn't support turning off mandatory labeling: If you sele
 
 ## PDF support
 
-For built-in labeling, identify the minimum versions that support PDF by using the [capabilities table for Outlook](#sensitivity-label-capabilities-in-outlook) on this page, and the row **PDF support**. The Azure Information Protection unified labeling client doesn't support PDF in Office apps.
+For built-in labeling, use the tables in the [capabilities](#support-for-sensitivity-label-capabilities-in-apps) section on this page to identify minimum versions supported. The Azure Information Protection unified labeling client doesn't support PDF in Office apps.
 
 Word, Excel, and PowerPoint support the following methods to convert an Office document into a PDF document:
 
