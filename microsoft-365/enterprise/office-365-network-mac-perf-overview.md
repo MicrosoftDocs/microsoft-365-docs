@@ -197,7 +197,7 @@ In the CSV file, a discovered city location shows in the userEntered column as b
    > [!div class="mx-imgBorder"]
    > ![CSV import ready message.](../media/m365-mac-perf/m365-mac-perf-import-ready.png)
 
-## CSV Import for LAN subnet office locations
+## CQD TSV Import for LAN subnet office locations
 
 If you've uploaded building data to your Call Quality Dashboard, you can add those locations here to start assessing their network connectivity. This won't affect your existing locations. 
 
