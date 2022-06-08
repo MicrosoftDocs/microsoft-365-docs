@@ -19,7 +19,7 @@ ms.collection:
 
 # Microsoft Defender for Business and Microsoft Partner Resources
 
-If you're a Microsoft partner, and in particular a Microsoft Solutions Provider (MSP) or a Microsoft Cloud Solution Provider, you can use APIs to integrate Defender for Business with your tools. Custom integration enables you to:
+Managed service providers (MSPs) often use a sophisticated stack of capabilities. If you're an MSP, you can integrate Microsoft Defender for Business and Microsoft 365 Business Premium with remote monitoring and management (RMM) tools and professional service automation (PSA). You can use APIs to integrate Defender for Business and Microsoft 365 Business Premium. Custom integration enables you to:
 
 - Get access to your customers' Microsoft 365 Defender portal​
 - Get email notifications​ about new alerts or vulnerabilities
