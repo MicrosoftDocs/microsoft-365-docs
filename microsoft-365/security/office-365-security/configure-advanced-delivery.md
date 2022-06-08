@@ -62,7 +62,7 @@ Messages that are identified by the advanced delivery policy aren't security thr
 
 - You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. To go directly to the **Advanced delivery** page, open <https://security.microsoft.com/advanceddelivery>.
 
-- To connect to Security & Compliance Center PowerShell, see [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
+- To connect to Security & Compliance PowerShell, see [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 - You need to be assigned permissions before you can do the procedures in this article:
   - To create, modify, or remove configured settings in the advanced delivery policy, you need to be a member of the **Security Administrator** role group in the **Microsoft 365 Defender portal** and a member of the **Organization Management** role group in **Exchange Online**.
@@ -142,9 +142,9 @@ In addition to the two scenarios that the advanced delivery policy can help you 
 
 - **False positives under review**: You might want to temporarily allow certain messages that are still being analyzed by Microsoft via [admin submissions](admin-submission.md) to report known good messages that are incorrectly being marked as bad to Microsoft (false positives). As with all overrides, we ***highly recommended*** that these allowances are temporary.
 
-## Security & Compliance Center PowerShell procedures for SecOps mailboxes in the advanced delivery policy
+## Security & Compliance PowerShell procedures for SecOps mailboxes in the advanced delivery policy
 
-In Security & Compliance Center PowerShell, the basic elements of SecOps mailboxes in the advanced delivery policy are:
+In Security & Compliance PowerShell, the basic elements of SecOps mailboxes in the advanced delivery policy are:
 
 - **The SecOps override policy**: Controlled by the **\*-SecOpsOverridePolicy** cmdlets.
 - **The SecOps override rule**: Controlled by the **\*-SecOpsOverrideRule** cmdlets.
@@ -275,9 +275,9 @@ Remove-SecOpsOverrideRule -Identity SecOpsOverrideRule6fed4b63-3563-495d-a481-b2
 
 For detailed syntax and parameter information, see [Remove-SecOpsOverrideRule](/powershell/module/exchange/remove-secopsoverriderule).
 
-## Security & Compliance Center PowerShell procedures for third-party phishing simulations in the advanced delivery policy
+## Security & Compliance PowerShell procedures for third-party phishing simulations in the advanced delivery policy
 
-In Security & Compliance Center PowerShell, the basic elements of third-party phishing simulations in the advanced delivery policy are:
+In Security & Compliance PowerShell, the basic elements of third-party phishing simulations in the advanced delivery policy are:
 
 - **The phishing simulation override policy**: Controlled by the **\*-PhishSimOverridePolicy** cmdlets.
 - **The phishing simulation override rule**: Controlled by the **\*-PhishSimOverrideRule** cmdlets.

@@ -34,9 +34,9 @@ To help customers take advantage of the new and improved functionality, this art
 
 - This article provides guidance on how to create an eDiscovery hold. The hold policy will be applied to mailboxes through an asynchronous process. When creating an eDiscovery hold, you must create both a CaseHoldPolicy and CaseHoldRule, otherwise the hold will not be created and content locations will not be placed on hold.
 
-## Step 1: Connect to Exchange Online PowerShell and Security & Compliance Center PowerShell
+## Step 1: Connect to Exchange Online PowerShell and Security & Compliance PowerShell
 
-The first step is to connect to Exchange Online PowerShell and Security & Compliance Center PowerShell. You can copy the following script, paste it into a PowerShell window and then run it. You'll be prompted for credentials for the organization that you want to connect to. 
+The first step is to connect to Exchange Online PowerShell and Security & Compliance PowerShell. You can copy the following script, paste it into a PowerShell window and then run it. You'll be prompted for credentials for the organization that you want to connect to. 
 
 ```powershell
 $UserCredential = Get-Credential
@@ -77,7 +77,7 @@ The output of these two commands will be similar to the following:
 ![Example of PowerShell output from using Get-MailboxSearch for an individual search.](../media/MigrateLegacyeDiscovery2.png)
 
 > [!NOTE]
-> The duration of the In-Place Hold in this example is indefinite (*ItemHoldPeriod: Unlimited*). This is typical for eDiscovery and legal investigation scenarios. If the hold duration has is different value than indefinite, the reason is likely because the hold is being used to retain content in a retention scenario. Instead of using the eDiscovery cmdlets in Security & Compliance Center PowerShell for retention scenarios, we recommend that you use [New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy) and [New-RetentionComplianceRule](/powershell/module/exchange/new-retentioncompliancerule) to retain content. The result of using these cmdlets will be similar to using **New-CaseHoldPolicy** and **New-CaseHoldRule**, but you'll able to specify a retention period and a retention action, such as deleting content after the retention period expires. Also, using the retention cmdlets don't require you to associate the retention holds with an eDiscovery case.
+> The duration of the In-Place Hold in this example is indefinite (*ItemHoldPeriod: Unlimited*). This is typical for eDiscovery and legal investigation scenarios. If the hold duration has is different value than indefinite, the reason is likely because the hold is being used to retain content in a retention scenario. Instead of using the eDiscovery cmdlets in Security & Compliance PowerShell for retention scenarios, we recommend that you use [New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy) and [New-RetentionComplianceRule](/powershell/module/exchange/new-retentioncompliancerule) to retain content. The result of using these cmdlets will be similar to using **New-CaseHoldPolicy** and **New-CaseHoldRule**, but you'll able to specify a retention period and a retention action, such as deleting content after the retention period expires. Also, using the retention cmdlets don't require you to associate the retention holds with an eDiscovery case.
 
 ## Step 4: Create a case in the Microsoft Purview compliance portal
 
