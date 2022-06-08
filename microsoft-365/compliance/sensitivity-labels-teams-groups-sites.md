@@ -62,7 +62,7 @@ If you haven't yet enabled sensitivity labels for containers, do the following s
 
 1. Because this feature uses Azure AD functionality, follow the instructions from the Azure AD documentation to enable sensitivity label support: [Assign sensitivity labels to Microsoft 365 groups in Azure Active Directory](/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels).
 
-2. You now need to synchronize your sensitivity labels to Azure AD. First, [connect to Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+2. You now need to synchronize your sensitivity labels to Azure AD. First, [connect to Security & Compliance PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
    For example, in a PowerShell session that you run as administrator, sign in with a global administrator account.
 
@@ -308,7 +308,7 @@ Make sure you have version 16.0.19418.12000 or later of the SharePoint Online Ma
 
 1. Open a PowerShell session with the **Run as Administrator** option.
 
-2. If you don't know your label GUID: [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell) and get the list of sensitivity labels and their GUIDs.
+2. If you don't know your label GUID: [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell) and get the list of sensitivity labels and their GUIDs.
 
    ```powershell
    Get-Label |ft Name, Guid
@@ -384,6 +384,7 @@ The following apps and services don't currently support sensitivity labels confi
   - Yammer
   - Project
   - Power BI
+  - My Apps portal
 
 ## Classic Azure AD group classification
 
@@ -415,7 +416,7 @@ To help you manage the coexistence of sensitivity labels and Azure AD classifica
 
 ### Use PowerShell to convert classifications for Microsoft 365 groups to sensitivity labels
 
-1. First, [connect to Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+1. First, [connect to Security & Compliance PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
    For example, in a PowerShell session that you run as administrator, sign in with a global administrator account:
 
