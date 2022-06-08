@@ -368,6 +368,8 @@ Additional information for built-in labeling:
 
 - When mandatory labeling is in effect, users can't remove sensitivity labels from documents, but can change an existing label.
 
+- The print to PDF option will be unavailable when a labeled document is encrypted. For more information, see the [PDF support}(#pdf-support) section on this page.
+
 For guidance about when to use this setting, see the information about [policy settings](sensitivity-labels.md#what-label-policies-can-do).
 
 > [!NOTE]
@@ -419,9 +421,13 @@ PDF scenarios not supported:
     
     Because this option removes the sensitivity label, this option won't be available to users if you're using mandatory labeling. This configuration refers to the sensitivity label policy setting that requires users to apply a label to their emails and documents.
 
-- PDF/A format
+- PDF/A format and encryption
     
-     This PDF format is not supported and will prevent users from converting Office documents to PDF.
+     This PDF format designed for long-term archiving isn't supported when the label applies encrytion and will prevent users from converting Office documents to PDF.
+    
+- Password protection and encryption
+    
+    The Office option that lets users provide a password to encrypt PDFs isn't supported when the labeled document applies encryption. In this scenario, the option becomes unavailable for users.
 
 For more information about this capability, see the announcement [Apply sensitivity labels to PDFs created with Office apps](https://preview.insider.office.com/en-us/blog/apply-sensitivity-labels-to-pdfs-created-with-office-apps)
 
