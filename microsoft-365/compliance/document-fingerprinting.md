@@ -63,7 +63,7 @@ Document Fingerprinting won't detect sensitive information in the following case
 
 ## Use PowerShell to create a classification rule package based on document fingerprinting
 
-Currently, you can create a document fingerprint only in [Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
+Currently, you can create a document fingerprint only in [Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 DLP uses classification rule packages to detect sensitive content. To create a classification rule package based on a document fingerprint, use the **New-DlpFingerprint** and **New-DlpSensitiveInformationType** cmdlets. Because the results of **New-DlpFingerprint** aren't stored outside the data classification rule, you always run **New-DlpFingerprint** and **New-DlpSensitiveInformationType** or **Set-DlpSensitiveInformationType** in the same PowerShell session. The following example creates a new document fingerprint based on the file C:\My Documents\Contoso Employee Template.docx. You store the new fingerprint as a variable so you can use it with the **New-DlpSensitiveInformationType** cmdlet in the same PowerShell session.
 

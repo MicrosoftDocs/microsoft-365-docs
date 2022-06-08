@@ -123,7 +123,7 @@ To turn an activity alert back on, just repeat these steps and click the **Off**
     |Permanently deletes (purges) an email message from their mailbox.  |Purged messages from mailbox  | Exchange mailbox activities  |
     |Sends an email message from a shared mailbox.  |Sent message using Send As permissions  <br/> And  <br/> Sent message using Send On Behalf permissions  | Exchange mailbox activities  |
 
-- You can also use the **New-ActivityAlert** and **Set-ActivityAlert** cmdlets in Security & Compliance Center PowerShell to create and edit activity alerts. Keep the following things in mind if you use these cmdlets to create or edit activity alerts:
+- You can also use the **New-ActivityAlert** and **Set-ActivityAlert** cmdlets in Security & Compliance PowerShell to create and edit activity alerts. Keep the following things in mind if you use these cmdlets to create or edit activity alerts:
 
   - If you use a cmdlet to add an activity to the alert that isn't listed in the **Activities** drop-down list, a message is displayed in on the property page for the alert that says, "This alert has custom operations not listed in the picker."
 

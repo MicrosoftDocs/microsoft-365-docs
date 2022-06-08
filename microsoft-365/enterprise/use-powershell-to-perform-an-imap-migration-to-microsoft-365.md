@@ -52,7 +52,7 @@ The following restrictions apply to IMAP migrations:
 ### Step 1: Prepare for an IMAP migration
 <a name="BK_Step1"> </a>
 
-- **If you have a domain for you IMAP organization, add it as an accepted domain of your Microsoft 365 organization.** If you want to use the same domain you already own for your Microsoft 365 mailboxes, you first have to add it as an accepted domain to Microsoft 365. After you have added it, you can create your users in Microsoft 365. For more information, see[Verify your domain](../admin/setup/add-domain.md).
+- **If you have a domain for your IMAP organization, add it as an accepted domain of your Microsoft 365 organization.** If you want to use the same domain you already own for your Microsoft 365 mailboxes, you first have to add it as an accepted domain to Microsoft 365. After you have added it, you can create your users in Microsoft 365. For more information, see[Verify your domain](../admin/setup/add-domain.md).
 
 - **Add each user to Microsoft 365 so that they have a mailbox.** For instructions, see[Add users to Microsoft 365 for business](../admin/add-users/add-users.md).
 
