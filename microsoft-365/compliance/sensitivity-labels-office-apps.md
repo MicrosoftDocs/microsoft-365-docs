@@ -368,7 +368,7 @@ Additional information for built-in labeling:
 
 - When mandatory labeling is in effect, users can't remove sensitivity labels from documents, but can change an existing label.
 
-- The print to PDF option will be unavailable when a labeled document is encrypted. For more information, see the [PDF support}(#pdf-support) section on this page.
+- When mandatory labeling is in effect, the print to PDF option will be unavailable when a labeled document is encrypted. For more information, see the [PDF support}(#pdf-support) section on this page.
 
 For guidance about when to use this setting, see the information about [policy settings](sensitivity-labels.md#what-label-policies-can-do).
 
