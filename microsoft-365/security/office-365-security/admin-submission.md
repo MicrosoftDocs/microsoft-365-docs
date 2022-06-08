@@ -144,11 +144,11 @@ The reported message will be marked as a false positive or a false negative. An 
 > [!NOTE]
 > If malware filtering has replaced the message attachments with the Malware Alert Text.txt file, you need to submit the original message from quarantine that contains the original attachments. For more information on quarantine and how to release messages with malware false positives, see [Manage quarantined messages and files as an admin](manage-quarantined-messages-and-files.md).
 
-## View admin submissions to Microsoft
+## View email admin submissions to Microsoft
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to the **Submissions** page at **Actions & submissions** \> **Submissions**. To go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
 
-2. On the **Submissions** page, verify that the **Emails**, **URL**, or **Email attachment** tab is selected.
+2. On the **Submissions** page, verify that the **Emails** tab is selected.
 
    - You can sort the entries by clicking on an available column header. Click **Customize columns** to show a maximum of seven columns. The default values are marked with an asterisk (<sup>\*</sup>):
      - **Submission name**<sup>\*</sup>
@@ -296,3 +296,8 @@ On the **User reported messages** tab, select a message in the list, click **Sub
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/admin-submission-main-action-button.png" alt-text="The New options on the Action button" lightbox="../../media/admin-submission-main-action-button.png":::
+
+If the message is reported to Microsoft, the **Converted to admin submission** value turns from **no** to **yes**. You can directly access the admin submission by clicking **View the converted admin submission** from the overflow menu inside the submission flyout of the respective user reported message. 
+
+> [!div class="mx-imgBorder"]
+> :::image type="content" source="../../media/view-converted-admin-submission.png" alt-text="Option to view created admin submission from user reported message" lightbox="../../media/view-converted-admin-submission.png":::
