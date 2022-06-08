@@ -28,7 +28,7 @@ description: "Learn how to run a script to add mailboxes & OneDrive for Business
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Security & Compliance Center PowerShell provides cmdlets that let you automate time-consuming tasks related to creating and managing eDiscovery cases. Currently, using the Microsoft Purview eDiscovery (Standard) case in the Microsoft Purview compliance portal to place a large number of custodian content locations on hold takes time and preparation. For example, before you create a hold, you have to collect the URL for each OneDrive for Business site that you want to place on hold. Then for each user you want to place on hold, you have to add their mailbox and their OneDrive for Business site to the hold. You can use the script in this article to automate this process.
+Security & Compliance PowerShell provides cmdlets that let you automate time-consuming tasks related to creating and managing eDiscovery cases. Currently, using the Microsoft Purview eDiscovery (Standard) case in the Microsoft Purview compliance portal to place a large number of custodian content locations on hold takes time and preparation. For example, before you create a hold, you have to collect the URL for each OneDrive for Business site that you want to place on hold. Then for each user you want to place on hold, you have to add their mailbox and their OneDrive for Business site to the hold. You can use the script in this article to automate this process.
   
 The script prompts you for the name of your organization's My Site domain (for example, `contoso` in the URL https://contoso-my.sharepoint.com), the name of an existing eDiscovery case, the name of the new hold that associated with the case, a list of email addresses of the users you want to put on hold, and a search query to use if you want to create a query-based hold. The script then gets the URL for the OneDrive for Business site for each user in the list, creates the new hold, and then adds the mailbox and OneDrive for Business site for each user in the list to the hold. The script also generates log files that contain information about the new hold.
   
@@ -50,9 +50,9 @@ Here are the steps to make this happen:
 
 - The script adds the list of users to a new hold that is associated with an existing case. Be sure the case that you want to associate the hold with is created before you run the script.
 
-- The script in this article supports modern authentication when connecting to Security & Compliance Center PowerShell and SharePoint Online Management Shell. You can use the script as-is if you are a Microsoft 365 or a Microsoft 365 GCC organization. If you are an Office 365 Germany organization, a Microsoft 365 GCC High organization, or a Microsoft 365 DoD organization, you will have to edit the script to successfully run it. Specifically, you have to edit the line `Connect-IPPSSession` and use the *ConnectionUri* and *AzureADAuthorizationEndpointUri* parameters (and the appropriate values for your organization type) to connect to Security & Compliance Center PowerShell. For more information, see the examples in [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa).
+- The script in this article supports modern authentication when connecting to Security & Compliance PowerShell and SharePoint Online Management Shell. You can use the script as-is if you are a Microsoft 365 or a Microsoft 365 GCC organization. If you are an Office 365 Germany organization, a Microsoft 365 GCC High organization, or a Microsoft 365 DoD organization, you will have to edit the script to successfully run it. Specifically, you have to edit the line `Connect-IPPSSession` and use the *ConnectionUri* and *AzureADAuthorizationEndpointUri* parameters (and the appropriate values for your organization type) to connect to Security & Compliance PowerShell. For more information, see the examples in [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa).
 
-- The script automatically disconnects from Security & Compliance Center PowerShell and SharePoint Online Management Shell.
+- The script automatically disconnects from Security & Compliance PowerShell and SharePoint Online Management Shell.
 
 - The script includes minimal error handling. Its primary purpose is to quickly and easily place the mailbox and OneDrive for Business site of each user on hold.
 
@@ -110,7 +110,7 @@ After you've collected the information that the script will prompt you for, the 
 #script begin
 " "
 write-host "***********************************************"
-write-host "   Security & Compliance Center PowerShell  " -foregroundColor yellow -backgroundcolor darkgreen
+write-host "   Security & Compliance PowerShell  " -foregroundColor yellow -backgroundcolor darkgreen
 write-host "   eDiscovery (Standard) cases - Add users to a hold   " -foregroundColor yellow -backgroundcolor darkgreen 
 write-host "***********************************************"
 " "
@@ -280,7 +280,7 @@ Write-host "Script complete!" -foregroundColor Yellow
 
 4. Enter the information that the script prompts you for.
 
-   The script connects to Security & Compliance Center PowerShell, and then creates the new hold in the eDiscovery case and adds the mailboxes and OneDrive for Business for the users in the list. You can go to the case on the **eDiscovery** page in the compliance portal to view the new hold.
+   The script connects to Security & Compliance PowerShell, and then creates the new hold in the eDiscovery case and adds the mailboxes and OneDrive for Business for the users in the list. You can go to the case on the **eDiscovery** page in the compliance portal to view the new hold.
 
 After the script is finished running, it creates the following log files, and saves them to the folder where the script is located.
   
