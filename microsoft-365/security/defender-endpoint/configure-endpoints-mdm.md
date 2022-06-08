@@ -30,7 +30,6 @@ ms.technology: mde
 
 You can use mobile device management (MDM) solutions to configure Windows 10 devices. Defender for Endpoint supports MDMs by providing OMA-URIs to create policies to manage devices.
 
-
 For more information on using Defender for Endpoint CSP see, [WindowsAdvancedThreatProtection CSP](https://msdn.microsoft.com/library/windows/hardware/mt723296(v=vs.85).aspx) and [WindowsAdvancedThreatProtection DDF file](https://msdn.microsoft.com/library/windows/hardware/mt723297(v=vs.85).aspx).
 
 ## Before you begin
@@ -41,7 +40,7 @@ For more information on enabling MDM with Microsoft Intune, see [Device enrollme
 
 ## Onboard devices using Microsoft Intune
 
-Check out the [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf) to see the various paths in deploying Defender for Endpoint.
+Check out the [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf) or [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) to see the various paths in deploying Defender for Endpoint.
 
 Follow the instructions from [Intune](/mem/intune/protect/advanced-threat-protection-configure#enable-microsoft-defender-for-endpoint-in-intune).
 
@@ -54,8 +53,6 @@ For more information on using Defender for Endpoint CSP see, [WindowsAdvancedThr
 > - Configuration of diagnostic data reporting frequency is only available for devices on Windows 10, version 1703.
 > - Onboarding to Defender for Endpoint will onboard the device to [Data Loss Prevention (DLP)](../../compliance/endpoint-dlp-learn-about.md), which is also a part of Microsoft 365 compliance.
 
-
-Check out the [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf) to see the various paths in deploying Microsoft Defender for Endpoint.
 
 ## Run a detection test to verify onboarding
 After onboarding the device, you can choose to run a detection test to verify that a device is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender for Endpoint device](run-detection-test.md).
