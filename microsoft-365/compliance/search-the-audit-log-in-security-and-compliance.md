@@ -950,6 +950,10 @@ If a Forms activity is performed by a coauthor or an anonymous responder, it wil
 |Renamed a collection|CollectionRenamed|Form owner changed the name of a collection.|
 |Moved a form into collection|MovedFormIntoCollection|Form owner moved a form into a collection.|
 |Moved a form out of collection|MovedFormOutofCollection|Form owner moved a form out of a collection.|
+|Created Insights Premium Export|DataShareCreated|A user requested creation of Insights Premium Export pipeline.|
+|Deleted Insights Premium Export|DataShareDeleted|A user requested deletion of Insights Premium Export pipeline.|
+|Requested to Generate copy of Lake data|GenerateCopyOfLakeData|A user requested the generation of a copy of Lake Data.|
+|Requested to Download copy of Lake data|DownloadCopyOfLakeData|A user requested the download of a copy of Lake Data.|
 
 #### Forms activities performed by coauthors and anonymous responders
 
