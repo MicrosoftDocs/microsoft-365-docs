@@ -154,7 +154,7 @@ The Action center will show the scan information and the device timeline will in
 In addition to containing an attack by stopping malicious processes, you can also lock down a device and prevent subsequent attempts of potentially malicious programs from running.
 
 >[!IMPORTANT]
-> - This action is available for devices on Windows 10, version  1709 or later, Windows 11, and Windows Server 2016. 
+> - This action is available for devices on Windows 10, version 1709 or later, Windows 11, and Windows Server 2019 or later. 
 > - This feature is available if your organization uses Microsoft Defender Antivirus.
 > - This action needs to meet the Windows Defender Application Control code integrity policy formats and signing requirements. For more information, see [Code integrity policy formats and signing](/windows/security/threat-protection/windows-defender-application-control/use-code-signing-to-simplify-application-control-for-classic-windows-applications)).
 
