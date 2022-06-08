@@ -156,7 +156,7 @@ When you create an insider risk management policy in the policy wizard, you can 
 - **Sensitivity labels**: Any activity associated with content that has specific [sensitivity labels](sensitivity-labels.md) applied are assigned a higher risk score.
 - **File extensions**: Any activity associated with content that has specific file extensions. Users configuring a data theft/leak policy that select **File extensions to prioritize** in the policy wizard can define up to 50 file extensions to prioritize in the policy. Entered extensions can include or omit a '.' as the first character of the prioritized extension.
 
-## Sequence detection (preview)
+## Sequence detection
 
 Risky activities may not occur as isolated events. These risks are frequently part of a larger sequence of events. A sequence is a group of two or more user activities performed one after the other that might suggest an elevated risk. Identifying these related activities is an important part of evaluating overall risk. When sequence detection is enabled for data theft or data leaks policies, insights from sequence information activities are displayed on the **User activity** tab within an insider risk management case. The following policy templates support sequence detection:
 
