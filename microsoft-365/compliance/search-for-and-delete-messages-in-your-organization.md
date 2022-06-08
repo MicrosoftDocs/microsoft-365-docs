@@ -45,7 +45,7 @@ You can use the Content search feature to search for and delete email messages f
   > [!NOTE]
   > The **Organization Management** role group exists in both Exchange Online and in the compliance portal. These are separate role groups that give different permissions. Being a member of **Organization Management** in Exchange Online does not grant the required permissions to delete email messages. If you aren't assigned the **Search And Purge** role in the compliance center (either directly or through a role group such as **Organization Management**), you'll receive an error in Step 3 when you run the **New-ComplianceSearchAction** cmdlet with the message "A parameter cannot be found that matches parameter name 'Purge'".
 
-- You have to use Security & Compliance PowerShell to delete messages. See [Step 1](#step-1-connect-to-security--compliance-center-powershell) for instructions about how to connect.
+- You have to use Security & Compliance PowerShell to delete messages. See [Step 1: Connect to Security & Compliance PowerShell](#step-1-connect-to-security--compliance-powershell) for instructions about how to connect.
 
 - A maximum of 10 items per mailbox can be removed at one time. Because the capability to search for and remove messages is intended to be an incident-response tool, this limit helps ensure that messages are quickly removed from mailboxes. This feature isn't intended to clean up user mailboxes.
 
