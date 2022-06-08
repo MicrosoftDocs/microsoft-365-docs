@@ -53,7 +53,7 @@ You must use PowerShell if you need to use Preservation Lock. Because administra
 
 All retention policies with any configuration support Preservation Lock. To apply Preservation Lock on a retention label policy, it must contain only labels that mark items as regulatory records.
 
-1. [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
+1. [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 2. Find the name of the policy that you want to lock by running [Get-RetentionCompliancePolicy](/powershell/module/exchange/get-retentioncompliancepolicy). For example:
     
