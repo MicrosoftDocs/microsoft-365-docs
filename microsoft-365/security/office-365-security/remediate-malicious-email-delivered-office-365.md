@@ -32,10 +32,7 @@ Remediation means taking a prescribed action against a threat. Malicious email s
 
 Admins can take required action on emails, but to get those actions approved, they must have the *Search and Purge* role assigned to them in the **Email & collaboration** permissions in the Microsoft 365 Defender portal. Without the *Search and purge"*role added to one of the role-groups, they won't be able to execute the action.
 
-As email actions create Automated investigations in the backend you need to enable 	"Automated Investigation" by navigating Settings >> 
-Endpoints >> Advanced features >>Automated Investigation ( toggle on) 
-
-
+Because email actions create automated investigations in the backend, you need to enable *Automated Investigation*. To enable *Automated Investigation*, navigate to **Settings** > **Endpoints** > **Advanced features** and turn on the **Automated Investigation** toggle.
 
 ## Manual and automated remediation
 
