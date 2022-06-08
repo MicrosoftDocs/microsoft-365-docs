@@ -429,7 +429,7 @@ Diagnostic data is used to keep Defender for Endpoint secure and up-to-date, det
 |---|---|
 |**Key**|diagnosticLevel|
 |**Data type**|String|
-|**Possible values**|optional (default) <p> required|
+|**Possible values**|optional <p> required (default)|
 |
 
 #### Enable / disable automatic sample submissions
