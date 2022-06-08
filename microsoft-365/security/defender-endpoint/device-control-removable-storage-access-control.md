@@ -204,7 +204,7 @@ Go to Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>
             XML file path: [mdatp-devicecontrol/Audit Default Deny.xml at main · microsoft/mdatp-devicecontrol (github.com](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Audit%20Default%20Deny.xml)
             <br>Use the following XML data to create Audit policy for Default Deny:
 
-            :::image type="content" source="images/audit-default-deny-XML-file-1.png" alt-text="Screenshot of audit default deny xml file":::
+            :::image type="content" source="images/audit-default-deny-xml-file-1.png" alt-text="Screenshot of audit default deny xml file":::
         
    
 4. ReadOnly - Group: You can create removable storage group with ReadOnly access as follows:
@@ -256,7 +256,7 @@ Go to Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>
         - **Custom XML** as **Allow full access and audit file.xml**  file <br>
             XML file path: [mdatp-devicecontrol/Allow full access and audit file.xml at main · microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Allow%20full%20access%20and%20audit%20file.xml)<br>
             Use the following XML data to create policy to allow the approved USB group:
-       :::image type="content" source="images/create-policy-allow-approved-USB-group-XML-file-1.png" alt-text="Screenshot of creating policy to allow the approved USB Group XML file":::
+       :::image type="content" source="images/create-policy-allow-approved-usb-group-xml-intune.png" alt-text="Screenshot of creating policy to allow the approved USB Group XML file":::
       
            What ‘47’ means in the policy? <br> 
            It is 9 + 2 + 36 = 47: <br>
@@ -315,7 +315,7 @@ Before you get started with Removable Storage Access Control, you must confirm y
     
 7. Create Policy to allow the approved USB Group: <br> Use the following XML data to create a policy to allow approved USB group:
     
-    :::image type="content" source="images/create-policy-allow-approved-USB-group-gp.png" alt-text="Screenshot of XML data to create policy to allow the approved USB Group using Group Policy" lightbox="images/create-policy-allow-approved-USB-group-gp.png":::
+    :::image type="content" source="images/create-policy-allow-approved-usb-group-xml.png" alt-text="Screenshot of XML data to create policy to allow the approved USB Group using Group Policy" lightbox="images/create-policy-allow-approved-usb-group-xml.png":::
       
    What ‘47’ means in the policy? <br> 
    It is 9 + 2 + 36 = 47: <br>
