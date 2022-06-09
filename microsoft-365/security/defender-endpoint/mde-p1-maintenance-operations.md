@@ -38,7 +38,7 @@ To manage your security intelligence and product updates, see [Manage Microsoft 
 
 ## Fine-tune and adjust Defender for Endpoint
 
-Defender for Endpoint offers you much flexibility and configuration options. You can adjust and fine-tune your settings to suit your organization’s needs. For example, you can use Microsoft Endpoint Manager, Group Policy, and other methods to manage your endpoint security settings. 
+Defender for Endpoint offers you much flexibility and configuration options. You can adjust and fine-tune your settings to suit your organization's needs. For example, you can use Microsoft Endpoint Manager, Group Policy, and other methods to manage your endpoint security settings. 
 
 To learn more, see [Manage Defender for Endpoint](manage-mde-post-migration.md).
 
@@ -48,7 +48,7 @@ A false positive is an artifact, like a file or a process, that was detected as 
 
 :::image type="content" source="../../media/defender-endpoint/false-positives-overview.png" alt-text="False positives and negatives process overview" lightbox="../../media/defender-endpoint/false-positives-overview.png":::
 
-If you’re seeing false positives/negatives in Defender for Endpoint, see [Address false positives/negatives in Microsoft Defender for Endpoint](defender-endpoint-false-positives-negatives.md).
+If you're seeing false positives/negatives in Defender for Endpoint, see [Address false positives/negatives in Microsoft Defender for Endpoint](defender-endpoint-false-positives-negatives.md).
 
 ## Next steps
 

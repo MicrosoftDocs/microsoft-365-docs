@@ -43,6 +43,10 @@ Microsoft Defender for Endpoint for Linux includes antimalware and endpoint dete
 
 - Access to the Microsoft 365 Defender portal
 - Linux distribution using the [systemd](https://systemd.io/) system manager
+
+  >[!NOTE]
+  >Linux distribution using system manager, except for RHEL/CentOS 6.x support both SystemV and Upstart.
+
 - Beginner-level experience in Linux and BASH scripting
 - Administrative privileges on the device (in case of manual deployment)
 
@@ -70,14 +74,21 @@ If you experience any installation failures, refer to [Troubleshooting installat
 > [!NOTE]
 > It is not supported to install Microsoft Defender for Endpoint in any other location other than the default install path. 
 
+> [!NOTE]
+> Microsoft Defender for Endpoint on Linux creates an "mdatp" user with random UID and GID. If you want to control the UID and GID, create an "mdatp" user prior to installation using the  "/usr/sbin/nologin" shell option.
+> For example: `mdatp:x:UID:GID::/home/mdatp:/usr/sbin/nologin`.
+
 ### System requirements
+
+> [!NOTE]
+> Support of Red Hat Enterprise Linux and CentOS 6.7+ to 6.10+ are in preview.
 
 - Supported Linux server distributions and x64 (AMD64/EM64T) and x86_64 versions:
 
-  - Red Hat Enterprise Linux 6.7 or higher
+  - Red Hat Enterprise Linux 6.7 or higher (Preview)
   - Red Hat Enterprise Linux 7.2 or higher
   - Red Hat Enterprise Linux 8.x
-  - CentOS 6.7 or higher 
+  - CentOS 6.7 or higher (Preview)
   - CentOS 7.2 or higher
   - Ubuntu 16.04 LTS or higher LTS
   - Debian 9 or higher
@@ -90,12 +101,20 @@ If you experience any installation failures, refer to [Troubleshooting installat
     > [!NOTE]
     > Distributions and version that are not explicitly listed are unsupported (even if they are derived from the officially supported distributions).
 
+
+
+
 - List of supported kernel versions
+  > [!NOTE]
+  > Microsoft Defender for Endpoint on RHEL/CentOS - 6.7 to 6.10 is a Kernel based solution. You must verify that the kernel is the supported before updating to the newer kernel version. See the list below for the list of supported kernels.
+  > Microsoft Defender for Endpoint implementation for all other supported distributions and versions is kernel-version-agnostic. With minimal requirement for the kernel version to be on or above 3.10.0-327.
+
+  - The `fanotify` kernel option must be enabled
   - Red Hat Enterprise Linux 6 and CentOS 6:
     - For 6.7: 2.6.32-573.*
     - For 6.8: 2.6.32-642.*
-    - For 6.9: 2.6.32-696.*
-    - For 6.10: 2.6.32.754.2.1.el6.x86_64 to 2.6.32-754.41.2:
+    - For 6.9: 2.6.32-696.* (except 2.6.32-696.el6.x86_64)
+    - For 6.10: 2.6.32.754.2.1.el6.x86_64 to 2.6.32-754.47.1:
     
        - 2.6.32-754.10.1.el6.x86_64
        - 2.6.32-754.11.1.el6.x86_64
@@ -121,50 +140,13 @@ If you experience any installation failures, refer to [Troubleshooting installat
        - 2.6.32-754.39.1.el6.x86_64
        - 2.6.32-754.41.2.el6.x86_64
        - 2.6.32-754.43.1.el6.x86_64
+       - 2.6.32-754.47.1.el6.x86_64
        - 2.6.32-754.6.3.el6.x86_64
        - 2.6.32-754.9.1.el6.x86_64
-
-    For Red Hat Enterprise Linux 6 and CentOS 6, the list of supported kernel versions are:
-       - For 6.7: 2.6.32-573.* 
-       - For 6.8: 2.6.32-642.* 
-       - For 6.9: 2.6.32-696.* 
-       - For 6.10: 2.6.32.754.2.1.el6.x86_64 to 2.6.32-754.41.2:
 
  > [!NOTE]
  > After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that that are listed in this section are provided for technical upgrade support only.
 
-  List of versions:
-
-  - 2.6.32-754.2.1.el6.x86_64 
-  - 2.6.32-754.17.1.el6.x86_64
-  - 2.6.32-754.29.1.el6.x86_64
-  - 2.6.32-754.3.5.el6.x86_64 
-  - 2.6.32-754.18.2.el6.x86_64
-  - 2.6.32-754.29.2.el6.x86_64
-  - 2.6.32-754.6.3.el6.x86_64 
-  - 2.6.32-754.22.1.el6.x86_64
-  - 2.6.32-754.30.2.el6.x86_64
-  - 2.6.32-754.9.1.el6.x86_64 
-  - 2.6.32-754.23.1.el6.x86_64
-  - 2.6.32-754.33.1.el6.x86_64
-  - 2.6.32-754.10.1.el6.x86_64
-  - 2.6.32-754.24.2.el6.x86_64
-  - 2.6.32-754.35.1.el6.x86_64
-  - 2.6.32-754.11.1.el6.x86_64
-  - 2.6.32-754.24.3.el6.x86_64
-  - 2.6.32-754.39.1.el6.x86_64
-  - 2.6.32-754.12.1.el6.x86_64
-  - 2.6.32-754.25.1.el6.x86_64
-  - 2.6.32-754.41.2.el6.x86_64
-  - 2.6.32-754.14.2.el6.x86_64
-  - 2.6.32-754.27.1.el6.x86_64
-  - 2.6.32-754.15.3.el6.x86_64
-  - 2.6.32-754.28.1.el6.x86_64       
-
-
-- Minimum kernel version 3.10.0-327
-
-- The `fanotify` kernel option must be enabled
 
   > [!CAUTION]
   > Running Defender for Endpoint on Linux side by side with other `fanotify`-based security solutions is not supported. It can lead to unpredictable results, including hanging the operating system.
@@ -255,3 +237,9 @@ High I/O workloads from certain applications can experience performance issues w
 ## Resources
 
 - For more information about logging, uninstalling, or other topics, see [Resources](linux-resources.md).
+  
+## Related articles
+  
+-  [Protect your endpoints with Defender for Cloud's integrated EDR solution: Microsoft Defender for Endpoint](/azure/defender-for-cloud/integration-defender-for-endpoint)
+-  [Connect your non-Azure machines to Microsoft Defender for Cloud](/azure/defender-for-cloud/quickstart-onboard-machines)
+

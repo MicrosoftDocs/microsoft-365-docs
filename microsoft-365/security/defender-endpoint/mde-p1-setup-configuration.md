@@ -110,7 +110,7 @@ The following table describes key roles to consider for Defender for Endpoint in
 
 ## Onboard to Defender for Endpoint
 
-When you’re ready to onboard your organization’s endpoints, you can choose from several methods, as listed in the following table: <br/><br/>
+When you're ready to onboard your organization's endpoints, you can choose from several methods, as listed in the following table: <br/><br/>
 
 |Endpoint Operating System | Onboarding methods|
 |---|---|
@@ -123,7 +123,7 @@ Then, proceed to configure your next-generation protection and attack surface re
 
 ## Configure next-generation protection
 
-We recommend using [Microsoft Endpoint Manager](/mem) to manage your organization’s devices and security settings, as shown in the following image:
+We recommend using [Microsoft Endpoint Manager](/mem) to manage your organization's devices and security settings, as shown in the following image:
  
 :::image type="content" source="../../media/mde-p1/endpoint-policies.png" alt-text="Endpoint security policies in the Micorosft Endpoint Manager portal" lightbox="../../media/mde-p1/endpoint-policies.png":::
 
@@ -131,7 +131,7 @@ To configure your next-generation protection in Microsoft Endpoint Manager, foll
 
 1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
 
-2. Select **Endpoint security** > **Antivirus**, and then select an existing policy. (If you don’t have an existing policy, create a new policy.)
+2. Select **Endpoint security** > **Antivirus**, and then select an existing policy. (If you don't have an existing policy, create a new policy.)
 
 3. Set or change your antivirus configuration settings. Need help? Refer to the following resources: <br/>
 

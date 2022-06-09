@@ -57,7 +57,7 @@ This article explains how to:
 
 Microsoft 365 Defender exposes much of its data and actions through a set of programmatic APIs. Those APIs will help you automate work flows and innovate based on Microsoft 365 Defender capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
-In general, you’ll need to take the following steps to use the APIs:
+In general, you'll need to take the following steps to use the APIs:
 
 - Create a **multi-tenant** Azure AD application.
 - Get authorized (consent) by your user administrator for your application to access Microsoft 365 Defender resources it needs.
@@ -180,6 +180,9 @@ return $token
 > [!NOTE]
 > The following code was tested with Nuget Microsoft.IdentityModel.Clients.ActiveDirectory 3.19.8.
 
+> [!IMPORTANT]
+> The [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory) NuGet package and Azure AD Authentication Library (ADAL) have been deprecated. No new features have been added since June 30, 2020.   We strongly encourage you to upgrade, see the [migration guide](/azure/active-directory/develop/msal-migration) for more details.
+
 1. Create a new console application.
 1. Install NuGet [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/).
 1. Add the following line:
@@ -262,7 +265,6 @@ A successful response will look like this:
 In the following image, you can see a decoded token acquired from an app, with ```Incidents.Read.All```, ```Incidents.ReadWrite.All```, and ```AdvancedHunting.Read.All``` permissions:
 
 :::image type="content" source="../../media/webapp-decoded-token.png" alt-text="The Decoded Token pane in the Microsoft 365 Defender portal" lightbox="../../media/webapp-decoded-token.png":::
-
 
 ## Use the token to access the Microsoft 365 Defender API
 

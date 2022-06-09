@@ -24,6 +24,10 @@ ms.collection: M365-security-compliance
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- Microsoft Defender Antivirus
+
+**Platforms**
+- Windows
 
 To ensure Microsoft Defender Antivirus cloud-delivered protection works properly, your security team must configure your network to allow connections between your endpoints and certain Microsoft servers. This article lists connections that must be allowed for using the firewall rules. It also provides instructions for validating your connection. Configuring your protection properly will ensure you receive the best value from your cloud-delivered protection services.
 
@@ -108,6 +112,17 @@ A similar message occurs if you're using Internet Explorer:
    > Versions of Windows 10 before version 1703 have a different user interface. See [Microsoft Defender Antivirus in the Windows Security app](microsoft-defender-security-center-antivirus.md).
 
    The Windows event log will also show [Windows Defender client event ID 1116](troubleshoot-microsoft-defender-antivirus.md).
+
+    > [!TIP]
+    > If you're looking for Antivirus related information for other platforms, see:
+    > - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
+    > - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
+    > - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+    > - [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md)
+    > - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
+    > - [Configure Defender for Endpoint on Android features](android-configure.md)
+    > - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
+
 
 ## See also
 

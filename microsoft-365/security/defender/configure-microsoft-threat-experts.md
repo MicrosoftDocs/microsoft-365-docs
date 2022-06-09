@@ -8,7 +8,7 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: v-maave
+ms.author: dolmont
 author: martyav
 ms.localizationpriority: medium
 manager: dansimp
@@ -127,7 +127,7 @@ Watch this video for a quick overview of the Microsoft Services Hub.
 
 - We saw a new type of alert for a living-off-the-land binary. We can provide the alert ID. Can you tell us more about this alert and how we can investigate it further?
 - We've observed two similar attacks, which both try to execute malicious PowerShell scripts but generate different alerts. One is "Suspicious PowerShell command line" and the other is "A malicious file was detected based on indication provided by O365". What is the difference?
-- We received an odd alert today about an abnormal number of failed logins from a high profile user’s device. We can't find any further evidence for these attempts. How can Microsoft 365 Defender see these attempts? What type of logins are being monitored?
+- We received an odd alert today about an abnormal number of failed logins from a high profile user's device. We can't find any further evidence for these attempts. How can Microsoft 365 Defender see these attempts? What type of logins are being monitored?
 - Can you give more context or insight about the alert, "Suspicious behavior by a system utility was observed"?
 - I observed an alert titled "Creation of forwarding/redirect rule". I believe the activity is benign. Can you tell me why I received an alert?
 
@@ -142,14 +142,14 @@ Watch this video for a quick overview of the Microsoft Services Hub.
 - We recently saw a blog post about a threat that is targeting our industry. Can you help us understand what protection Microsoft 365 Defender provides against this threat actor?
 - We recently observed a phishing campaign conducted against our organization. Can you tell us if this was targeted specifically to our company or vertical?
 
-### Microsoft Threat Experts’ alert communications
+### Microsoft Threat Experts' alert communications
 
 - Can your incident response team help us address the targeted attack notification that we got?
-- We received this targeted attack notification from Microsoft Threat Experts. We don’t have our own incident response team. What can we do now, and how can we contain the incident?
+- We received this targeted attack notification from Microsoft Threat Experts. We don't have our own incident response team. What can we do now, and how can we contain the incident?
 - We received a targeted attack notification from Microsoft Threat Experts. What data can you provide to us that we can pass on to our incident response team?
 
 > [!NOTE]
-> Microsoft Threat Experts is a managed threat hunting service and not an incident response service. However, you can engage with your own incident response team to address issues that require an incident response. If you don’t have your own incident response team and would like Microsoft’s help, you can engage with the CSS Cybersecurity Incident Response Team (CIRT). They can open a ticket to help address your inquiry.
+> Microsoft Threat Experts is a managed threat hunting service and not an incident response service. However, you can engage with your own incident response team to address issues that require an incident response. If you don't have your own incident response team and would like Microsoft's help, you can engage with the CSS Cybersecurity Incident Response Team (CIRT). They can open a ticket to help address your inquiry.
 
 ## Scenario
 

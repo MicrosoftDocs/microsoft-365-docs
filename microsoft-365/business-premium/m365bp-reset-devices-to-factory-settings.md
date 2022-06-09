@@ -1,5 +1,5 @@
 ---
-title: "Reset Windows 10 devices to their factory settings"
+title: "Reset Windows devices to their factory settings"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection: 
 - M365-subscription-management
 - M365-identity-device-management 
@@ -24,10 +24,10 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: c4db6caf-74df-4734-b1dd-53e371c7a3c3
-description: "Learn how to use Microsoft 365 for business to factory reset Windows 10 devices you manage, reverting them to their original settings at purchase."
+description: "Learn how to use Microsoft 365 Business Premium to factory reset Windows devices you manage, reverting them to their original settings at purchase."
 ---
 
-# Reset Windows 10 devices to their factory settings
+# Reset Windows devices to factory settings
 
 This article applies to Microsoft 365 Business Premium.
 
@@ -47,4 +47,4 @@ A factory reset reverts a device to the original settings it had when the device
   
 ## See also
 
-[Top 10 ways to secure Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)
+[Best practices for securing Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)
