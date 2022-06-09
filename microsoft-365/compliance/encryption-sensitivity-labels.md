@@ -448,7 +448,7 @@ Encrypting your most sensitive documents and emails helps to ensure that only au
 
 - The [AutoSave](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) functionality in Office apps is disabled for encrypted files if you haven't [enabled co-authoring for files encrypted with sensitivity labels](sensitivity-labels-coauthoring.md). Users see a message that the file has restricted permissions that must be removed before AutoSave can be turned on.
 
-- Office for Windows supports the selection of labels that apply encryption when users aren't connected to the internet. But for the other platforms (macOS, iOS, Android), users must be online to apply these labels in Office apps. The Azure Information Protection unified labeling client must also be online to apply these labels in File Explorer and when using PowerShell. Users don't have to be online to open encrypted content. For more information about offline access, see the [Rights Management use license for offline access ](#rights-management-use-license-for-offline-access) section.
+- Office for Windows supports labels that apply encryption when users aren't connected to the internet. But for the other platforms (macOS, iOS, Android), users must be online to apply these labels in Office apps. The Azure Information Protection unified labeling client must also be online to apply these labels in File Explorer and PowerShell. Users don't have to be online to open encrypted content. For more information about offline access, see the [Rights Management use license for offline access ](#rights-management-use-license-for-offline-access) section.
 
 - Encrypted files might take longer to open in Office apps (Windows, Mac, Android, and iOS).
 
