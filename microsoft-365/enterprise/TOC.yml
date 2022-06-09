@@ -232,7 +232,7 @@
         - name: During and after your data move
           href: during-and-after-your-data-move.md
         - name: Data move general FAQ
-          href: data-move-faq.yml
+          href: data-move-faq.md
         - name: Where customer data is stored
           href: o365-data-locations.md
         - name: Data locations for the European Union
@@ -646,7 +646,6 @@
   href: ../solutions/index.yml
 
 - name: Enterprise Business Continuity Management (EBCM) with cloud services
-  href: /compliance/assurance/assurance-understanding-ebcm-with-cloud-services
   items: 
     - name: Customer and cloud partner EBCM responsibilities
       href: /compliance/assurance/assurance-customer-and-cloud-partner-ebcm-responsibilities
