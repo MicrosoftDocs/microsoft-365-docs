@@ -229,7 +229,15 @@ This policy prevents a scan from running immediately after an update.
 
 ## Disable the `ScanOnlyIfIdle` option
 
-To stop a quick or scheduled scan whenever the device goes idle if it is in passive mode, disable the `ScanOnlyIfIdle` option in Microsoft Defender Antivirus. This prevents the significant CPU contention in high density environments.
+Use the following cmdlet, to stop a quick or scheduled scan whenever the device goes idle if it is in passive mode.
+
+```PowerShell
+Set-MpPreference -ScanOnlyIfIdleEnabled $false
+```
+
+You can also disable the `ScanOnlyIfIdle` option in Microsoft Defender Antivirus by configuration via local or domain group policy. This prevents the significant CPU contention in high density environments.
+
+For more information, see [Start the scheduled scan only when computer is on but not in use](https://admx.help/?Category=SystemCenterEndpointProtection&Policy=Microsoft.Policies.Antimalware::scan_scanonlyifidle).
 
 ## Scan VMs that have been offline
 
