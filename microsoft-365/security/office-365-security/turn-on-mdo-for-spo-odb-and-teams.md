@@ -124,7 +124,7 @@ You can create an alert policy that notifies you and other admins when Safe Atta
 
 ### Use Security & Compliance PowerShell to create an alert policy for detected files
 
-If you'd rather use PowerShell to create the same alert policy as described in the previous section, [connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell) and run the following command:
+If you'd rather use PowerShell to create the same alert policy as described in the previous section, [connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell) and run the following command:
 
 ```powershell
 New-ActivityAlert -Name "Malicious Files in Libraries" -Description "Notifies admins when malicious files are detected in SharePoint Online, OneDrive, or Microsoft Teams" -Category ThreatManagement -Operation FileMalwareDetected -NotifyUser "admin1@contoso.com","admin2@contoso.com"
