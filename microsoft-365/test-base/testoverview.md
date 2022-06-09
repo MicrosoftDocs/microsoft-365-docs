@@ -25,7 +25,7 @@ In this section, you'll learn how to create packages with different types of app
 
    - **Test Binaries files**
 
-      See [Creating and Testing Binary Files on Test Base](testapplication.md) to prepare a package with a Binary application file (.exe, .msi) for uploading and testing.
+      See [Creating and Testing Binary Files on Test Base](testapplication.md) to prepare a package with a Binary application file (that is, .exe, .msi) for uploading and testing.
 
    - **Intunewin app**
 
@@ -33,7 +33,7 @@ In this section, you'll learn how to create packages with different types of app
 
    - **Pre-built Zip package**
 
-      See [Uploading pre-built zip package](uploadApplication.md) if you already have an offline built package in .zip format.
+      See [Uploading pre-built zip package](uploadapplication.md) if you already have an offline built package in .zip format.
 
    - **Clone existing package**
 

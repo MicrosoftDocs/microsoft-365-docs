@@ -26,7 +26,7 @@ Preset security policies allow you to select a security profile of either Standa
 As new controls are added or if the best practice setting for a security control changes with the evolving threat landscape, Microsoft will automatically update security control settings for users assigned to a Standard or Strict preset security policy. By using Security Preset policies, you will always have Microsoft’s recommended, best practice configuration for your users.
 
 ## What you will need
-- Microsoft Defender for Office 365 Plan 1
+- Microsoft Defender for Office 365 Plan 1 or higher (Included in E5)
 - Sufficient permissions (Security Administrator role)
 - 5 minutes to perform the steps below.
 

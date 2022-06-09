@@ -719,6 +719,21 @@ We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Wind
 For more information, see [Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
+<summary>20220603.3</summary>
+
+&ensp;Package version: **20220603.3**<br/>
+&ensp;Platform version: **4.18.2203.5**<br/>
+&ensp;Engine version: **1.1.19200.6**<br/>
+&ensp;Signature version: **1.367.1009.0**<br/>
+
+### Fixes
+- None
+
+### Additional information
+- None
+
+<br/>
+</details><details>
 <summary>20220506.6</summary>
 
 &ensp;Package version: **20220506.6**<br/>
