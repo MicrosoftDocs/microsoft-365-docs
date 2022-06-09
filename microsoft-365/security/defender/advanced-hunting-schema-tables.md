@@ -46,7 +46,7 @@ While constructing queries, use the built-in schema reference to quickly get the
 ### Access the schema reference
 To quickly access the schema reference, select the **View reference** action next to the table name in the schema representation. You can also select **Schema reference** to search for a table.
 
-![Image showing how to access in-portal schema reference.](../../media/understand-schema-1.png)
+:::image type="content" source="../../media/understand-schema-1.png" alt-text="The Schema Reference page on the Advanced Hunting page in the Microsoft 365 Defender portal" lightbox="../../media/understand-schema-1.png":::
 
 ## Learn the schema tables
 The following reference lists all the tables in the schema. Each table name links to a page describing the column names for that table. Table and column names are also listed in the Defender for Cloud as part of the schema representation on the advanced hunting screen.

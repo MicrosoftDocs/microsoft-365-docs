@@ -1,14 +1,12 @@
 ---
 title: Understand your bill or invoice
-f1.keywords:
-- CSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - 'MACBillingBillsPaymentsInvoices'
 ms.service: o365-administration
 ms.localizationpriority: medium
@@ -16,12 +14,11 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom: 
-- AdminSurgePortfolio
 - commerce_billing
+- AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid: MET150
 description: "Learn how to read and understand your bill or invoice for Microsoft business products."
-keywords: billing accounts, organization info, invoices
 ms.date: 05/04/2021
 ---
 
