@@ -40,8 +40,6 @@ This article provides information about attack reduction rules:
 - [ASR rule to GUID matrix](#asr-rule-to-guid-matrix)
 - [ASR rule modes](#asr-rule-modes)
 - [Per-rule-descriptions](#per-rule-descriptions)
-  - Rule descriptions
-  - Configuration management system rule names
 
 ## Supported operating systems
 
