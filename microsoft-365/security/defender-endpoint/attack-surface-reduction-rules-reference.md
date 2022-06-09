@@ -476,6 +476,9 @@ Dependencies: MDAV
 
 With this rule, admins can prevent unsigned or untrusted executable files from running from USB removable drives, including SD cards. Blocked file types include executable files (such as .exe, .dll, or .scr)
 
+> [!IMPORTANT]
+> Files copied from the USB to the disk drive will be blocked by this rule if and when it's about to be executed on the disk drive.
+
 Intune name: `Untrusted and unsigned processes that run from USB`
 
 Configuration Manager name: `Block untrusted and unsigned processes that run from USB`
