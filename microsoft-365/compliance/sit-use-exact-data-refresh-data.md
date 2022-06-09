@@ -36,15 +36,15 @@ You can refresh your sensitive information database up to 5 times in every 24 ho
 
    |Method|What to do|
    |---|---|
-   |Windows PowerShell|See the [ScheduledTasks](/powershell/module/scheduledtasks/) documentation and the [example PowerShell script](#example-powershell-script-for-task-scheduler) in this article|
+   |PowerShell|See the [ScheduledTasks](/powershell/module/scheduledtasks/) documentation and the [example PowerShell script](#example-powershell-script-for-task-scheduler) in this article|
    |Task Scheduler API|See the [Task Scheduler](/windows/desktop/TaskSchd/using-the-task-scheduler) documentation|
    |Windows user interface|In Windows, click **Start**, and type Task Scheduler. Then, in the list of results, right-click **Task Scheduler**, and choose **Run as administrator**.|
 
-### Example PowerShell script for Task Scheduler 
+## Example PowerShell script for Task Scheduler
 
 This section includes an example PowerShell script you can use to schedule your tasks for hashing data and uploading the hashed data:
 
-#### Schedule hashing and upload in a combined step
+### Schedule hashing and upload in a combined step
 
 ```powershell
 param(\[string\]$dataStoreName,\[string\]$fileLocation)
@@ -79,7 +79,7 @@ $taskName = 'EDMUpload\_' + $dataStoreName
 Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $user -Password $password
 ```
 
-#### Schedule hashing and upload as separate steps
+### Schedule hashing and upload as separate steps
 
 ```powershell
 param(\[string\]$dataStoreName,\[string\]$fileLocation)
