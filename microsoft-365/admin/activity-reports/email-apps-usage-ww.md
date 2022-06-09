@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Reports in the admin center - Email apps usage"
+title: "Microsoft 365 admin center email apps usage reports"
 ms.author: kwekua
 author: kwekua
 manager: scotv
@@ -18,7 +18,7 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: c2ce12a2-934f-4dd4-ba65-49b02be4703d
-description: "Learn how to get Email apps usage report to know about email apps connecting to Exchange Online and the Outlook version users are using."
+description: "Learn how to get an email apps usage report to find out how many email apps are connecting to Exchange Online and which version of Outlook users are using."
 ---
 
 # Microsoft 365 Reports in the admin center - Email apps usage

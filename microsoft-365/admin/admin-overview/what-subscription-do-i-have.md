@@ -1,5 +1,5 @@
 ---
-title: "What subscription do I have?"
+title: "What Microsoft 365 subscription do I have?"
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
@@ -21,11 +21,11 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid: MET150
-description: "Learn to verify which subscriptions your organization has by going to the Your products page."
+description: "Learn to verify which Microsoft 365 subscriptions your organization has by going to the Your products page."
 ms.date: 01/21/2021
 ---
 
-# What subscription do I have?
+# Which Microsoft 365 subscription do I have?
 
 If you're an admin, you can verify which subscriptions your organization has by going to the admin center.
   

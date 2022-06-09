@@ -16,11 +16,16 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
-ms.date: 02/14/2022
+ms.date: 04/15/2022
 ms.technology: mde
 ---
 
 # Onboard non-persistent virtual desktop infrastructure (VDI) devices in Microsoft 365 Defender
+
+Virtual desktop infrastructure (VDI) is an IT infrastructure concept that lets end users access enterprise virtual desktops instances from almost any device (such as your personal computer, smartphone, or tablet), eliminating the need for organization to provide users with physical machines. Using VDI devices reduce cost as IT departments are no longer responsible for managing, repairing, and replacing physical endpoints. Authorized users can access the same company servers, files, apps, and services from any approved device through a secure desktop client or browser.
+
+Like any other system in an IT environment, these too should have an Endpoint Detection and Response (EDR) and Antivirus solution to protect against advanced threats and attacks.
+
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -39,26 +44,31 @@ ms.technology: mde
 
 Defender for Endpoint supports non-persistent VDI session onboarding.
 
-There might be associated challenges when onboarding VDIs. The following are typical challenges for this scenario:
+There might be associated challenges when onboarding VDI instances. The following are typical challenges for this scenario:
 
 - Instant early onboarding of a short-lived session, which must be onboarded to Defender for Endpoint prior to the actual provisioning.
 - The device name is typically reused for new sessions.
 
-VDI devices can appear in Defender for Endpoint portal as either:
+In a VDI environment, VDI instances can have short lifespans. VDI devices can appear in Defender for Endpoint portal as either:
 
-- Single entry for each device.
+
+- Single portal entry for each VDI instance. If the VDI instance was already onboarded to Microsoft Defender for Endpoint and at some point deleted then  recreated with the same host name, a new object representing this VDI instance will NOT be created in the portal. 
+
 
   > [!NOTE]
   > In this case, the *same* device name must be configured when the session is created, for example using an unattended answer file.
 
-- Multiple entries for each device - one for each session.
+- Multiple entries for each device - one for each VDI instance.
 
 The following steps will guide you through onboarding VDI devices and will highlight steps for single and multiple entries.
 
 > [!WARNING]
 > For environments where there are low resource configurations, the VDI boot procedure might slow the Defender for Endpoint sensor onboarding.
 
-### For Windows 10, or Windows 11, or Windows Server 2019, or Windows Server 2022
+### For Windows 10, or Windows 11, or Windows Server 2012 R2 and later
+
+> [!NOTE]
+> Windows Server 2016 and Windows Server 2012 R2 will need to be prepared by applying the installation package first using the instructions in [Onboard Windows servers](/microsoft-365/security/defender-endpoint/configure-server-endpoints#windows-server-2012-r2-and-windows-server-2016) for this feature to work.
 
 1.  Open the VDI configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>:
 
@@ -104,7 +114,10 @@ The following steps will guide you through onboarding VDI devices and will highl
 
 7. Use the search function by entering the device name and select **Device** as search type.
 
-## For downlevel SKUs (Windows Server 2008 R2/2012 R2/2016)
+## For downlevel SKUs (Windows Server 2008 R2)
+
+> [!NOTE]
+> These instructions for other Windows server versions also apply if you are running the previous Microsoft Defender for Endpoint for Windows Server 2016 and Windows Server 2012 R2 that requires the MMA. Instructions to migrate to the new unified solution are at [Server migration scenarios in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/server-migration).
 
 > [!NOTE]
 > The following registry is relevant only when the aim is to achieve a 'Single entry for each device'.
@@ -126,45 +139,25 @@ The following steps will guide you through onboarding VDI devices and will highl
 
 ## Updating non-persistent virtual desktop infrastructure (VDI) images
 
-As a best practice, we recommend using offline servicing tools to patch golden/master images.
+With the ability to easily deploy updates to VMs running in VDIs, we've shortened this guide to focus on how you can get updates on your machines quickly and easily. You no longer need to create and seal golden images on a periodic basis, as updates are expanded into their component bits on the host server and then downloaded directly to the VM when it's turned on.
 
-For example, you can use the below commands to install an update while the image remains offline:
+For more information, follow the guidance in [Deployment guide for Microsoft Defender Antivirus in a Virtual Desktop Infrastructure (VDI) environment](/microsoft-365/security/defender-endpoint/deployment-vdi-microsoft-defender-antivirus).
 
-```console
-DISM /Mount-image /ImageFile:"D:\Win10-1909.vhdx" /index:1 /MountDir:"C:\Temp\OfflineServicing"
-DISM /Image:"C:\Temp\OfflineServicing" /Add-Package /Packagepath:"C:\temp\patch\windows10.0-kb4541338-x64.msu"
-DISM /Unmount-Image /MountDir:"C:\Temp\OfflineServicing" /commit
-```
-
-For more information on DISM commands and offline servicing, refer to the articles below:
-
-- [Modify a Windows image using DISM](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism)
-- [DISM Image Management Command-Line Options](/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14)
-- [Reduce the Size of the Component Store in an Offline Windows Image](/windows-hardware/manufacture/desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image)
-
-If offline servicing isn't a viable option for your non-persistent VDI environment, the following steps should be taken to ensure consistency and sensor health:
-
-1. After booting the master image for online servicing or patching, run an offboarding script to turn off the Defender for Endpoint sensor. For more information, see [Offboard devices using a local script](configure-endpoints-script.md#offboard-devices-using-a-local-script).
-
-2. Ensure the sensor is stopped by running the command below in a CMD window:
-
-   ```console
-   sc query sense
-   ```
-
-3. Service the image as needed.
-
-4. Run the below commands using PsExec.exe (which can be downloaded from https://download.sysinternals.com/files/PSTools.zip) to cleanup the cyber folder contents that the sensor may have accumulated since boot:
-
-    ```console
-    PsExec.exe -s cmd.exe
-    cd "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Cyber"
-    del *.* /f /s /q
-    REG DELETE "HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection" /v senseGuid /f
-    exit
-    ```
-
-5. Reseal the golden/master image as you normally would.
+   > [!NOTE]
+   > If you have onboarded the master image of your Non-Persistent VDI environment (SENSE service is running), then you must offboard and clear some data before putting the image back into production.
+   > 1. Ensure the sensor is stopped by running the command below in a CMD window:
+   >  ```console
+   >  sc query sense
+   >  ```
+   > 2. Run the below commands using PsExec.exe (which can be downloaded from https://download.sysinternals.com/files/PSTools.zip)
+   >
+   >  ```console
+   >  PsExec.exe -s cmd.exe
+   >  cd "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Cyber"
+   >  del *.* /f /s /q
+   >  REG DELETE "HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection" /v senseGuid /f
+   >  exit
+   >  ```
 
 ## Related topics
 - [Onboard Windows devices using Group Policy](configure-endpoints-gp.md)
