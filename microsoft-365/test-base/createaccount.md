@@ -1,9 +1,9 @@
 ---
-title: 'Create a new Test Base account'
+title: 'Creating a Test Base Account'
 description: Details on how to create a new account on Test Base
 search.appverid: MET150
-author: mansipatel-usl
-ms.author: rshastri
+author: Tinacyt
+ms.author: tinachen
 manager: rshastri
 audience: Software-Vendor
 ms.topic: how-to
@@ -16,40 +16,66 @@ ms.reviewer: mapatel
 f1.keywords: NOCSH
 ---
 
-# Step 1: Create a Test Base account
+# Creating a Test Base Account
 
-If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/) before you begin.
+To create a **Test Base** account, perform the steps that follow. 
 
-## Enter details for test base account
+> [!IMPORTANT]
+> You'll need a subscription to register for a **Test Base** account. If you don’t have an Azure subscription, see **Subscriptions** on the [Azure home](https://ms.portal.azure.com/#home) page to learn how to create one. 
+
+## To create a Test Base account
  
-1. Search for **'Test Base'** in the Azure portal.
+1. On the home page of the [Azure portal](https://ms.portal.azure.com/#home), search the **Test Base for Microsoft 365** in the Azure marketplace to display the controls for creating a **Test Base** account. 
 
-![Create a Test Base Account search image.](Media/CreateTestAccount1.png)
+   > [!div class="mx-imgBorder"]
+   > [ ![Search Test Base](Media/creatingaccount01-search.png) ](Media/creatingaccount01-search.png#lightbox)
 
-2. Click **'Create'** to create a Test Base account.
+2. In the controls field of the **Test Base for Microsoft 365** page, select the **Create** button as that follows to open the **Create Test Base Account** page. 
 
-![Clicking on add to create the account.](Media/CreateTestAccount2.png)
+   > [!div class="mx-imgBorder"]
+   > [ ![Test Base page](Media/creatingaccount02-testbase.png) ](Media/creatingaccount02-testbase.png#lightbox)
 
-3.  Read through the ```Terms of Use``` then select the checkbox to confirm your satisfaction with the ```Terms of Use```.
+3. On the **Create Test Base Account** page, add your information to the following required input fields on the **Create Test Base Account** page: 
 
-![Review the terms of use.](Media/CreateTestAccount3.png)
+   - **Subscription**—from the drop-down list, locate your Azure subscription ID and select it. 
+   - **Resource group**—create a new Resource group by selecting **Create new** and specifying a chosen name in the **Name** input text box that displays. Select **OK** when done. If you already have a **Resource group**, locate its name in the drop-down list and select it. 
+   - **Test Base account**—under **Account Details**, as shown in the figure that follows, specify a chosen name for your **Test Base** account by typing it in the input text field. 
 
-4.  Fill in the correct information under the following requirements: 
-    -   Subscription: Resource Group
-    -   Instance Details: Name.
+   > [!NOTE]
+   > You must provide input for all required fields (*). 
 
-**Currently, Test Base only supports Standard Pricing tier.**
+   > [!div class="mx-imgBorder"]
+   > [ ![Basics information](Media/creatingaccount03-basics.png) ](Media/creatingaccount03-basics.png#lightbox)
 
-![Select subscription, resource group and type in the details.](Media/CreateTestAccount4.png)
+   > [!NOTE]
+   > As of April 2022, **Test Base** supports the **Standard** pricing tier only. The **Pricing tier** determines the resource and hourly service cost that is charged to your Azure subscription. 
 
-5.  Finally, click on ```Review + Create``` to validate and enable your newly created account.
+   > [!div class="mx-imgBorder"]
+   > ![Pricing tier](Media/creatingaccount04-pricing-tier.png)
 
-## Next steps
+4. Read the **Terms of Use**. If the terms are acceptable, select the checkbox to confirm that you have read and accept the terms of use. 
 
-Advance to the next article to get started with Step 2: **Learn how upload your package.**
-> [!div class="nextstepaction"]
-> [Next step](uploadapplication.md)
+   > [!div class="mx-imgBorder"]
+   > ![Terms of use](Media/creatingaccount05-terms.png)
 
-<!---
-Add button for next page
--->
+5. In the lower sector of the **Create Test Base Account** page, select **Review + create** to validate the input data you specified. 
+
+   If the validation process succeeds, you can review your input data configuration in the **Create Test Base Account** page. 
+
+   > [!div class="mx-imgBorder"]
+   > [ ![Review creation](Media/creatingaccount06-review.png) ](Media/creatingaccount06-review.png#lightbox)
+
+6. Select the **Create** button that is shown in the lower sector of the previous **Create Test Base Account** page. 
+
+   > [!div class="mx-imgBorder"]
+   > ![Create button](Media/creatingaccount07-create.png)
+
+7. On your user **Deployment** page, select **Go to resource** to open your new **Test Base** account Overview page and begin your exploration, configuration, and journey of **Test Base**. 
+
+   > [!div class="mx-imgBorder"]
+   > [ ![Complete creation](Media/creatingaccount08-complete.png) ](Media/creatingaccount08-complete.png#lightbox)
+
+
+
+
+
