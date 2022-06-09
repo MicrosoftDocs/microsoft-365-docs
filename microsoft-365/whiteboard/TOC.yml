@@ -27,3 +27,5 @@
         - name: Manage data
           href: manage-data-odb.md
 
+    - name: Whiteboard PowerShell
+      href: /powershell/module/whiteboard   
