@@ -101,7 +101,7 @@ Exact Data Match (EDM) based classification enables you to create custom sensiti
     - \"
     - \,
 
-6. [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
+6. [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
     > [!NOTE]
     > If your organization has set up [Customer Key for Microsoft 365 at the tenant level (public preview)](customer-key-tenant-level.md#overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview), Exact data match will make use of its encryption functionality automatically. This is available only to E5 licensed tenants in the Commercial cloud.
