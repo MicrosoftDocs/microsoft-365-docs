@@ -156,16 +156,18 @@
        items:
        - name: Email authentication
          href: email-validation-and-authentication.md
+       - name: Set up SPF to help prevent spoofing
+         href: set-up-spf-in-office-365-to-help-prevent-spoofing.md
+       - name: How Microsoft 365 uses SPF to prevent spoofing
+         href: how-office-365-uses-spf-to-prevent-spoofing.md
        - name: Use DKIM to validate outbound email
          href: use-dkim-to-validate-outbound-email.md
        - name: Support for validation of DKIM signed messages
          href: support-for-validation-of-dkim-signed-messages.md
        - name: Use DMARC to validate email
          href: use-dmarc-to-validate-email.md
-       - name: Set up SPF to help prevent spoofing
-         href: set-up-spf-in-office-365-to-help-prevent-spoofing.md
-       - name: How Microsoft 365 uses SPF to prevent spoofing
-         href: how-office-365-uses-spf-to-prevent-spoofing.md
+       - name: Use Trusted ARC senders for legitimate devices and services between the sender and receiver
+         href: use-arc-exceptions-to-mark-trusted-arc-senders.md
      - name: Mail flow in EOP
        href: mail-flow-in-eop.md
      - name: User submissions policies
@@ -202,7 +204,7 @@
          href: attack-simulation-training-get-started.md
        - name: Simulate a phishing attack with Attack simulation training
          href: attack-simulation-training.md
-       - name: Create custom payloads for Attack simulation training
+       - name: Payloads for Attack simulation training
          href: attack-simulation-training-payloads.md
        - name: Simulation automations in Attack simulation training
          href: attack-simulation-training-simulation-automations.md
@@ -392,8 +394,36 @@
        href: anti-spoofing-protection-faq.yml
      - name: Quarantine FAQ
        href: quarantine-faq.yml
+   - name: Step-by-step guides
+     items: 
+      - name: Microsoft Defender for Office 365 step-by-step guides and how to use them 
+        href: step-by-step-guides/step-by-step-guide-overview.md
+      - name: (False Negatives) How to handle malicious emails that are delivered to recipients using Microsoft Defender for Office 365
+        href: step-by-step-guides/how-to-handle-false-negatives-in-microsoft-defender-for-office-365.md
+      - name: (False Positives) How to handle legitimate emails getting blocked from delivery using Microsoft Defender for Office 365
+        href: step-by-step-guides/how-to-handle-false-positives-in-microsoft-defender-for-office-365.md
+      - name: How to configure quarantine permissions and policies
+        href: step-by-step-guides/how-to-configure-quarantine-permissions-with-quarantine-policies.md
+      - name: Ensuring you always have the optimal security controls with preset security policies
+        href: step-by-step-guides/ensuring-you-always-have-the-optimal-security-controls-with-preset-security-policies.md
+      - name: How to run attack simulations for your team
+        href: step-by-step-guides/how-to-run-attack-simulations-for-your-team.md
+      - name: How to setup automated attacks and training within Attack simulation training 
+        href: step-by-step-guides/how-to-setup-attack-simulation-training-for-automated-attacks-and-training.md
+      - name: Optimize and correct security policies with configuration analyzer
+        href: step-by-step-guides/optimize-and-correct-security-policies-with-configuration-analyzer.md
+      - name: Protect your c-suite with priority account protection
+        href: step-by-step-guides/protect-your-c-suite-with-priority-account-protection.md
+      - name: Search for emails and remediate threats using Threat Explorer in Microsoft 365 Defender
+        href: step-by-step-guides/search-for-emails-and-remediate-threats.md
+      - name: Connect Microsoft Defender for Office 365 to Microsoft Sentinel
+        href: step-by-step-guides/connect-microsoft-defender-for-office-365-to-microsoft-sentinel.md
+      - name: How to prioritize and manage Automated Investigations and Response (AIR)
+        href: step-by-step-guides/how-to-prioritize-and-manage-automated-investigations-and-response-air.md
    - name: Reference
-     items:
+     items: 
+     - name: Defender for Office 365 data retention 
+       href: mdo-data-retention.md
      - name: Security roadmap
        href: security-roadmap.md
      - name: Help and support for EOP
@@ -424,3 +454,5 @@
          href: /cloud-app-security
        - name: Defender for Business
          href: ../defender-business/index.yml
+       - name: Defender Vulnerability Management
+         href: ../defender-vulnerability-management/index.yml
