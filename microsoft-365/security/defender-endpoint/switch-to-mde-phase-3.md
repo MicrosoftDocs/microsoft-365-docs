@@ -21,7 +21,7 @@ ms.custom:
 - migrationguides
 - admindeeplinkDEFENDER
 ms.topic: article
-ms.date: 03/28/2022
+ms.date: 04/01/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ---
 
@@ -75,15 +75,11 @@ Deployment methods vary, depending on operating system and preferred methods. Th
 | iOS | [Microsoft Endpoint Manager](ios-install.md)     |
 |Android  | [Microsoft Endpoint Manager](android-intune.md)  | 
 
-
 (<a id="fn1">1</a>) Windows Server 2016 and Windows Server 2012 R2 will need to be onboarded using the instructions in [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016).
-
 
 ## Run a detection test
 
 To verify that your onboarded devices are properly connected to Defender for Endpoint, you can run a detection test.
-
-<br/><br/>
 
 |Operating system|Guidance|
 |---|---|
@@ -97,8 +93,6 @@ To verify that your onboarded devices are properly connected to Defender for End
 ## Confirm that Microsoft Defender Antivirus is in passive mode on your endpoints
 
 Now that your endpoints have been onboarded to Defender for Endpoint, your next step is to make sure Microsoft Defender Antivirus is running in passive mode. You can use one of several methods, as described in the following table:
-
-<br/><br/>
 
 |Method|What to do|
 |---|---|
@@ -115,12 +109,12 @@ Now that your endpoints have been onboarded to Defender for Endpoint, your next 
 
 To set Microsoft Defender Antivirus to passive mode on Windows Server, version 1803 or newer, or Windows Server 2019, or Windows Server 2022, follow these steps:
 
-1. Open Registry Editor, and then navigate to:
-
-   `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.
+1. Open Registry Editor, and then navigate to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.
 
 2. Edit (or create) a DWORD entry called **ForceDefenderPassiveMode**, and specify the following settings:
+
    - Set the DWORD's value to **1**.
+
    - Under **Base**, select **Hexadecimal**.
 
 > [!NOTE]
@@ -141,6 +135,7 @@ Keeping Microsoft Defender Antivirus up to date is critical to assure your devic
 There are two types of updates related to keeping Microsoft Defender Antivirus up to date:
 
 - Security intelligence updates
+
 - Product updates
 
 To get your updates, follow the guidance in [Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md).
@@ -150,6 +145,7 @@ To get your updates, follow the guidance in [Manage Microsoft Defender Antivirus
 If at this point you have:
 
 - Onboarded your organization's devices to Defender for Endpoint, and
+
 - Microsoft Defender Antivirus is installed and enabled,
 
 Then your next step is to uninstall your non-Microsoft antivirus, antimalware, and endpoint protection solution. When you uninstall your non-Microsoft solution, Microsoft Defender Antivirus switches from passive mode to active mode. In most cases, this happens automatically. 
@@ -164,7 +160,9 @@ To get help with uninstalling your non-Microsoft solution, contact their technic
 Now that you have onboarded to Defender for Endpoint, and you have uninstalled your former non-Microsoft solution, your next step is to make sure that Defender for Endpoint working correctly. One good way to perform this task is by visiting the Defender for Endpoint demo scenarios site ([https://demo.wd.microsoft.com](https://demo.wd.microsoft.com)). Try one or more of the demo scenarios on that page, including at least the following:
 
 - Cloud-delivered protection
+
 - Potentially Unwanted Applications (PUA)
+
 - Network Protection (NP)
 
 > [!NOTE]
@@ -175,4 +173,5 @@ Now that you have onboarded to Defender for Endpoint, and you have uninstalled y
 **Congratulations**! You have completed your [migration to Defender for Endpoint](switch-to-mde-overview.md#the-migration-process)!
 
 - [Visit your security operations dashboard](security-operations-dashboard.md) in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)).
+
 - [Manage Defender for Endpoint, post migration](manage-mde-post-migration.md).

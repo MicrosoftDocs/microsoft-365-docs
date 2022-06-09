@@ -29,9 +29,6 @@ ms.custom: seo-marvel-apr2020
 
 - Microsoft 365 Defender
 
-> Want to experience Microsoft 365 Defender? You can [evaluate it in a lab environment](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) or [run your pilot project in production](m365d-pilot.md?ocid=cx-evalpilot).
->
-
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
 Threat analytics is our in-product threat intelligence solution from expert Microsoft security researchers. It's designed to assist security teams to be as efficient as possible while facing emerging threats, such as:
@@ -46,7 +43,7 @@ Watch this short video to learn more about how threat analytics can help you tra
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWwJfU]
 
-You can access threat analytics either from the upper left-hand side of Microsoft 365 security portal’s navigation bar, or from a dedicated dashboard card that shows the top threats to your org, both in terms of impact, and in terms of exposure.
+You can access threat analytics either from the upper left-hand side of Microsoft 365 security portal's navigation bar, or from a dedicated dashboard card that shows the top threats to your org, both in terms of impact, and in terms of exposure.
 
 :::image type="content" source="../../media/threat-analytics/ta_inlandingpage_mtp.png" alt-text="The threat analytics landing page" lightbox="../../media/threat-analytics/ta_inlandingpage_mtp.png":::
 

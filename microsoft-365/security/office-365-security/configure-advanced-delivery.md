@@ -22,6 +22,8 @@ ms.prod: m365-security
 
 # Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes
 
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
@@ -35,7 +37,7 @@ To keep your organization [secure by default](secure-by-default.md), Exchange On
 You use the _advanced delivery policy_ in Microsoft 365 to prevent inbound messages _in these specific scenarios_ from being filtered.<sup>\*</sup> The advanced delivery policy ensures that messages in these scenarios achieve the following results:
 
 - Filters in EOP and Microsoft Defender for Office 365 take no action on these messages.<sup>\*</sup>
-- [Zero-hour Purge (ZAP)](zero-hour-auto-purge.md) for spam and phishing take no action on these messages.<sup>\*</sup>
+- [Zero-hour Purge (ZAP)](zero-hour-auto-purge.md) for spam and phishing take no action on these messages.<sup>\*\*</sup>
 - [Default system alerts](/microsoft-365/compliance/alert-policies#default-alert-policies) aren't triggered for these scenarios.
 - [AIR and clustering in Defender for Office 365](office-365-air.md) ignores these messages.
 - Specifically for third-party phishing simulations:
@@ -44,7 +46,9 @@ You use the _advanced delivery policy_ in Microsoft 365 to prevent inbound messa
   - [Safe Links in Defender for Office 365](safe-links.md) doesn't block or detonate the specifically identified URLs in these messages at time of click. URLs are still wrapped, but they aren't blocked.
   - [Safe Attachments in Defender for Office 365](safe-attachments.md) doesn't detonate attachments in these messages.
 
-<sup>\*</sup> You can't bypass malware filtering or ZAP for malware.
+<sup>\*</sup> You can't bypass malware filtering.
+
+<sup>\*\*</sup> You can bypass ZAP for malware by creating an anti-malware policy for the SecOps mailbox where ZAP for malware is turned off. For instructions, see [Configure anti-malware policies in EOP](configure-anti-malware-policies.md).
 
 Messages that are identified by the advanced delivery policy aren't security threats, so the messages are marked with system overrides. Admin experiences will show these messages as due to either a **Phishing simulation** system override or a **SecOps mailbox** system override. Admins can filter and analyze on these system overrides in the following experiences:
 
@@ -58,7 +62,7 @@ Messages that are identified by the advanced delivery policy aren't security thr
 
 - You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. To go directly to the **Advanced delivery** page, open <https://security.microsoft.com/advanceddelivery>.
 
-- To connect to Security & Compliance Center PowerShell, see [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
+- To connect to Security & Compliance PowerShell, see [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 - You need to be assigned permissions before you can do the procedures in this article:
   - To create, modify, or remove configured settings in the advanced delivery policy, you need to be a member of the **Security Administrator** role group in the **Microsoft 365 Defender portal** and a member of the **Organization Management** role group in **Exchange Online**.
@@ -138,9 +142,9 @@ In addition to the two scenarios that the advanced delivery policy can help you 
 
 - **False positives under review**: You might want to temporarily allow certain messages that are still being analyzed by Microsoft via [admin submissions](admin-submission.md) to report known good messages that are incorrectly being marked as bad to Microsoft (false positives). As with all overrides, we ***highly recommended*** that these allowances are temporary.
 
-## Security & Compliance Center PowerShell procedures for SecOps mailboxes in the advanced delivery policy
+## Security & Compliance PowerShell procedures for SecOps mailboxes in the advanced delivery policy
 
-In Security & Compliance Center PowerShell, the basic elements of SecOps mailboxes in the advanced delivery policy are:
+In Security & Compliance PowerShell, the basic elements of SecOps mailboxes in the advanced delivery policy are:
 
 - **The SecOps override policy**: Controlled by the **\*-SecOpsOverridePolicy** cmdlets.
 - **The SecOps override rule**: Controlled by the **\*-SecOpsOverrideRule** cmdlets.
@@ -271,9 +275,9 @@ Remove-SecOpsOverrideRule -Identity SecOpsOverrideRule6fed4b63-3563-495d-a481-b2
 
 For detailed syntax and parameter information, see [Remove-SecOpsOverrideRule](/powershell/module/exchange/remove-secopsoverriderule).
 
-## Security & Compliance Center PowerShell procedures for third-party phishing simulations in the advanced delivery policy
+## Security & Compliance PowerShell procedures for third-party phishing simulations in the advanced delivery policy
 
-In Security & Compliance Center PowerShell, the basic elements of third-party phishing simulations in the advanced delivery policy are:
+In Security & Compliance PowerShell, the basic elements of third-party phishing simulations in the advanced delivery policy are:
 
 - **The phishing simulation override policy**: Controlled by the **\*-PhishSimOverridePolicy** cmdlets.
 - **The phishing simulation override rule**: Controlled by the **\*-PhishSimOverrideRule** cmdlets.

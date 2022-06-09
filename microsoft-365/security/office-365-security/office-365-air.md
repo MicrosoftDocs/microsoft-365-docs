@@ -26,7 +26,7 @@ ms.prod: m365-security
 
 # Automated investigation and response (AIR) in Microsoft Defender for Office 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
@@ -94,7 +94,7 @@ Microsoft 365 provides many built-in alert policies that help identify Exchange 
 |A user is restricted from sending email|**High**|This alert is generated when someone in your organization is restricted from sending outbound mail. This alert typically results when an [email account is compromised](responding-to-a-compromised-email-account.md). <p> For more information about restricted users, see [Remove blocked users from the Restricted Users portal in Microsoft 365](removing-user-from-restricted-users-portal-after-spam.md).|
 
 > [!TIP]
-> To learn more about alert policies or edit the default settings, see [Alert policies in the Microsoft 365 compliance center](../../compliance/alert-policies.md).
+> To learn more about alert policies or edit the default settings, see [Alert policies in the Microsoft Purview compliance portal](../../compliance/alert-policies.md).
 
 ## Required permissions to use AIR capabilities
 

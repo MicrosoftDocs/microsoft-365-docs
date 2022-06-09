@@ -2,7 +2,7 @@
 title: "Monitor Microsoft 365 connectivity"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 8/4/2020
 audience: ITPro
 ms.topic: conceptual

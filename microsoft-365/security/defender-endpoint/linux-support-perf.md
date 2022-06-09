@@ -92,7 +92,7 @@ The following steps can be used to troubleshoot and mitigate these issues:
     To collect current statistics, run:
 
     ```bash
-    mdatp diagnostic real-time-protection-statistics --output json > real_time_protection.json
+    mdatp diagnostic real-time-protection-statistics --output json > real_time_protection.json
     ```
 
     > [!NOTE]
@@ -135,15 +135,15 @@ The following steps can be used to troubleshoot and mitigate these issues:
     ```Output
     ... > python ~/repo/mdatp-xplat/linux/diagnostic/high_cpu_parser.py <~Downloads/output.json | head -n 10
     27432 None 76703
-    73467 actool     1249
+    73467 actool    1249
     73914 xcodebuild 1081
     73873 bash 1050
     27475 None 836
-    1    launchd    407
-    73468 ibtool     344
-    549  telemetryd_v1   325
+    1    launchd     407
+    73468 ibtool     344
+    549  telemetryd_v1   325
     4764 None 228
-    125  CrashPlanService 164
+    125  CrashPlanService 164
     ```
 
     To improve the performance of Defender for Endpoint on Linux, locate the one with the highest number under the `Total files scanned` row and add an exclusion for it. For more information, see [Configure and validate exclusions for Defender for Endpoint on Linux](linux-exclusions.md).
@@ -186,7 +186,7 @@ Open a terminal or SSH into the relevant machine and run the following commands:
    ![Image of command line example.](images/4ca188f6c457e335abe3c9ad3eddda26.png)
 
 > [!NOTE]
-> - The analyzer requires 'lxml' to produce the result output. If not installed, the analyzer will try to fetch it from the official repository for python packages below: <https://files.pythonhosted.org/packages/\*/lxml\*.whl>
+> - The analyzer requires 'lxml' to produce the result output. If not installed, the analyzer will try to fetch it from the official repository for python packages below: <https://pypi.org/search/?q=lxml>
 > 
 > - In addition, the tool currently requires Python version 3 or later to be installed.
 >
@@ -239,9 +239,9 @@ Open a terminal or SSH into the relevant machine and run the following commands:
 
   Description: Additional XML file used by the analyzer when building the HTML report.
 
-- Auditd_info.txt
+- Audited_info.txt
 
-  Description: details on auditd service and related components for [Linux](/windows/security/threat-protection/microsoft-defender-atp/linux-support-events) OS
+  Description: details on audited service and related components for [Linux](/microsoft-365/security/defender-endpoint/linux-resources) OS
 
 - perf_benchmark.tar.gz
 
