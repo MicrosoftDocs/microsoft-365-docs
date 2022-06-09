@@ -37,7 +37,7 @@ Use the following steps to enable and pilot Microsoft Defender for Office 365.
 
 The following table describes the steps in the illustration.
 
-| Serial Number|Step  |Description  |
+| Step number | Link  |Description  |
 |---------|---------|---------|
 |1|[Review architecture requirements and key concepts](eval-defender-office-365-architecture.md)    | Understand the Defender for Office architecture and be sure your Exchange Online environment meets the architecture prerequisites.       |
 |2|[Enable the evaluation environment](eval-defender-office-365-enable-eval.md)     |   Follow the steps to setup the evaluation environment.      |

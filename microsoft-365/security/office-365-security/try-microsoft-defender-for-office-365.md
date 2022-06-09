@@ -1,6 +1,6 @@
 ---
-title: Try Microsoft Defender for Office 365
-description:
+title: Try and evaluate Defender for Office 365
+description: Learn how to evaluate and try the capabilities of Microsoft Defender for Office 365 without affecting your existing mail flow.
 keywords:
 f1.keywords:
   - NOCSH
@@ -18,15 +18,12 @@ ms.collection:
 ms.custom: 
 ms.technology: mdo
 ms.prod: m365-security
-ROBOTS: NOINDEX, NOFOLLOW
+ROBOTS:
 ---
 
 # Try Microsoft Defender for Office 365
 
-> [!NOTE]
-> The feature that's described by this article is in Preview, is not available in all organizations, and is subject to change.
-
-The unified **Trials** portal in the Microsoft 365 Defender portal provides a single point of entry for the formerly separate Trial and Evaluate experiences for Microsoft Defender for Office 365. The intent is to allow you to try the features of Defender for Office 365 Plan 2 for 30 days before you fully commit to it. But, there are differences in the evaluation experiences based on the nature of your Microsoft 365 organization:
+The unified **Trials** portal in the Microsoft 365 Defender portal provides a single point of entry for the formerly separate Trial and Evaluate experiences for Microsoft Defender for Office 365. The intent is to allow you to try the features of Defender for Office 365 Plan 2 for 90 days before you fully commit to it. But, there are differences in the evaluation experiences based on the nature of your Microsoft 365 organization:
 
 - You already have Microsoft 365 mailboxes, but you're currently using a third-party service or device for email protection. Mail from the internet flows through the protection service before delivery into your Microsoft 365 organization. Microsoft 365 protection is as low as possible (it's never completely off; for example, malware protection is always enforced).
 
@@ -42,7 +39,12 @@ The unified **Trials** portal in the Microsoft 365 Defender portal provides a si
 
 You're invited to start your trial in various Defender for Office 365 feature locations in the Microsoft 365 Defender portal at <https://security.microsoft.com>. The centralized location to start your trial is on the **Trials** page at <https://security.microsoft.com/atpEvaluation>.
 
+Watch this short video to learn more about how you can get more done in less time with Microsoft Defender for Office 365.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWMmIe]
+
 The rest of this article explains the difference between audit mode blocking mode, how to configure evaluations, and other details.
+
+For a companion guide for how to use your trial, see [Trial playbook: Microsoft Defender for Office 365](trial-playbook-defender-for-office-365.md).
 
 ## Overview of Defender for Office 365
 
@@ -93,10 +95,12 @@ When you evaluate Defender for Office 365, the policies that control protection 
 3. In the **Select the users you want to include** dialog, configure the following settings:
 
    - **All users**: This is the default and recommended option.
-   - **Select users**: If you select this option, you need to select who the evaluation applies to:
-     - **Users**: The specified mailboxes, mail users, or mail contacts in your organization.
-     - **Groups**: The specified distribution groups, mail-enabled security groups, or Microsoft 365 Groups in your organization.
-     - **Domains**: All recipients in the specified [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in your organization.
+   - **Select users**: If you select this option, you need to select the internal recipients that the evaluation applies to:
+     - **Users**: The specified mailboxes, mail users, or mail contacts.
+     - **Groups**:
+       - Members of the specified distribution groups or mail-enabled security groups.
+       - The specified Microsoft 365 Groups.
+       - **Domains**: All recipients in the specified [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in your organization.
 
      Click in the appropriate box, start typing a value, and select the value that you want from the results. Repeat this process as many times as necessary. To remove an existing value, click remove ![Remove icon.](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.
 
@@ -143,13 +147,13 @@ When you evaluate Defender for Office 365, the policies that control protection 
 
           As explained in the previous step, Enhanced Filtering for Connectors is automatically configured on the connector that you specify as the source of mail from the protection service.
 
-          Turning on Enhanced Filtering for Connectors without an SCL=-1 rule for incoming mail from the protection service will vastly improve the detection capabilities of EOP protection features like [spoof intelligence](anti-spoofing-protection.md), and could impact the delivery of those newly-detected message (for example, move to the Junk Email folder or to quarantine). This impact is limited to EOP policies; as previously explained, Defender for Office 365 policies are created in audit mode.
+          Turning on Enhanced Filtering for Connectors without an SCL=-1 rule for incoming mail from the protection service will vastly improve the detection capabilities of EOP protection features like [spoof intelligence](anti-spoofing-protection.md), and could impact the delivery of those newly-detected messages (for example, move to the Junk Email folder or to quarantine). This impact is limited to EOP policies; as previously explained, Defender for Office 365 policies are created in audit mode.
 
           To create an SCL=-1 mail flow rule or to review your existing rules, click the **Go to Exchange admin center** button on the page. For more information, see [Use mail flow rules to set the spam confidence level (SCL) in messages in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
 
           When you're finished, click **Finish**.
 
-     - **I'm only using Microsoft Exchange Online**: Yhe MX records for your domain point to Microsoft 365. There's nothing left to configure, so click **Finish**.
+     - **I'm only using Microsoft Exchange Online**: The MX records for your domain point to Microsoft 365. There's nothing left to configure, so click **Finish**.
 
 5. A progress dialog appears as your evaluation is set up. When set up is complete, click **Done**.
 
@@ -162,9 +166,11 @@ When you evaluate Defender for Office 365, the policies that control protection 
 3. In the **Select the users you want to include** dialog, configure the following settings:
 
    - **All users**: This is the default and recommended option.
-   - **Select users**: If you select this option, you need to select who the evaluation applies to:
-     - **Users**: The specified mailboxes, mail users, or mail contacts in your organization.
-     - **Groups**: The specified distribution groups, mail-enabled security groups, or Microsoft 365 Groups in your organization.
+   - **Select users**: If you select this option, you need to select the internal recipients that the evaluation applies to:
+     - **Users**: The specified mailboxes, mail users, or mail contacts.
+     - **Groups**:
+       - Members of the specified distribution groups or mail-enabled security groups.
+       - The specified Microsoft 365 Groups.
      - **Domains**: All recipients in the specified [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in your organization.
 
      Click in the appropriate box, start typing a value, and select the value that you want from the results. Repeat this process as many times as necessary. To remove an existing value, click remove ![Remove icon.](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.
@@ -182,7 +188,6 @@ When you evaluate Defender for Office 365, the policies that control protection 
 
 - The [Threat protection status report](view-email-security-reports.md#threat-protection-status-report) shows detections by Defender for Office 365 in the following views:
   - [View data by Email \> Malware and Chart breakdown by Detection Technology](view-email-security-reports.md#view-data-by-email--malware-and-chart-breakdown-by-detection-technology)
-  - [View data by Email \> Spam and Chart breakdown by Detection Technology](view-email-security-reports.md#view-data-by-email--spam-and-chart-breakdown-by-detection-technology)
   - [View data by Email \> Phish and Chart breakdown by Detection Technology](view-email-security-reports.md#view-data-by-email--phish-and-chart-breakdown-by-detection-technology)
 
 - In [Threat Explorer](threat-explorer.md), messages that were detected by the Defender for Office 365 evaluation show the following banner in the details of the entry:

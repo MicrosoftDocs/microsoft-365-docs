@@ -1,6 +1,6 @@
 ---
 title: Manage submissions
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: dansimp
 author: dansimp
@@ -8,9 +8,9 @@ manager: dansimp
 audience: ITPro
 ms.topic: how-to
 ms.localizationpriority: medium
-search.appverid: 
+search.appverid:
   - MET150
-ms.collection: 
+ms.collection:
   - M365-security-compliance
   - m365initiative-defender-office365
 ms.custom: seo-marvel-apr2020
@@ -21,12 +21,11 @@ ms.prod: m365-security
 
 # Use the Submissions portal to submit suspected spam, phish, URLs, and files to Microsoft
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-
 
 In Microsoft 365 organizations with Exchange Online mailboxes, admins can use the Submissions portal in the Microsoft 365 Defender portal to submit email messages, URLs, and attachments to Microsoft for scanning.
 
@@ -42,13 +41,16 @@ When you submit an email message for analysis, you will get:
 
 For other ways to submit email messages, URLs, and attachments to Microsoft, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 
+Watch this short video to learn how to use admin submissions in Microsoft Defender for Office 365 to submit messages to Microsoft for evaluation. 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBLPn]
+
 ## What do you need to know before you begin?
 
 - You open the Microsoft 365 Defender portal at <https://security.microsoft.com/>. To go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
 
 - To submit messages and files to Microsoft, you need to have one of following roles:
   - **Security Administrator** or **Security Reader** in the [Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
-  
+
     Note that one of these roles is required to [View user submissions to the custom mailbox](#view-user-submissions-to-microsoft) as described later in this article.
 
 - Admins can submit messages as old as 30 days if it is still available in the mailbox and not purged by the user or another admin.
@@ -57,7 +59,7 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
   - Maximum submissions in any 15 minutes period: 150 submissions
   - Same submissions in a 24 hour period: 3 submissions
   - Same submissions in a 15 minute period: 1 submission
-  
+
 - For more information about how users can submit messages and files to Microsoft, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ## Report suspicious content to Microsoft
@@ -142,11 +144,11 @@ The reported message will be marked as a false positive or a false negative. An 
 > [!NOTE]
 > If malware filtering has replaced the message attachments with the Malware Alert Text.txt file, you need to submit the original message from quarantine that contains the original attachments. For more information on quarantine and how to release messages with malware false positives, see [Manage quarantined messages and files as an admin](manage-quarantined-messages-and-files.md).
 
-## View admin submissions to Microsoft
+## View email admin submissions to Microsoft
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to the **Submissions** page at **Actions & submissions** \> **Submissions**. To go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
 
-2. On the **Submissions** page, verify that the **Emails**, **URL**, or **Email attachment** tab is selected.
+2. On the **Submissions** page, verify that the **Emails** tab is selected.
 
    - You can sort the entries by clicking on an available column header. Click **Customize columns** to show a maximum of seven columns. The default values are marked with an asterisk (<sup>\*</sup>):
      - **Submission name**<sup>\*</sup>
@@ -270,17 +272,17 @@ If you've deployed the [Report Message add-in](enable-the-report-message-add-in.
      - **Phish simulation**
      - **Converted to admin submission**
      - **Tags**
-   
+
    - To export the entries, click **Export**. In the dialog that appears, save the .csv file.
 
 > [!NOTE]
-> If organizations are configured to send user reported messages to the custom mailbox only, reported messages will not be sent for rescan and the results in **User reported messages** will always be empty.
+> If organizations are configured to send user reported messages to the custom mailbox only, reported messages will appear in **User reported messages** but their results will always be empty (as they would not have been rescanned).
 
 ### Undo user submissions
 
 Once a user submits a suspicious email to the custom mailbox, the user and admin don't have an option to undo the submission. If the user would like to recover the email, it will be available for recovery in the Deleted Items or Junk Email folders.
 
-### Converting user reported messages from the custom mailbox into an admin submission 
+### Converting user reported messages from the custom mailbox into an admin submission
 
 If you've configured the custom mailbox to intercept user-reported messages without sending the messages to Microsoft, you can find and send specific messages to Microsoft for analysis.
 
@@ -294,3 +296,8 @@ On the **User reported messages** tab, select a message in the list, click **Sub
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/admin-submission-main-action-button.png" alt-text="The New options on the Action button" lightbox="../../media/admin-submission-main-action-button.png":::
+
+If the message is reported to Microsoft, the **Converted to admin submission** value turns from **no** to **yes**. You can directly access the admin submission by clicking **View the converted admin submission** from the overflow menu inside the submission flyout of the respective user reported message. 
+
+> [!div class="mx-imgBorder"]
+> :::image type="content" source="../../media/view-converted-admin-submission.png" alt-text="Option to view created admin submission from user reported message" lightbox="../../media/view-converted-admin-submission.png":::

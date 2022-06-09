@@ -29,7 +29,7 @@ There are two custom model types that you can use:
 While both models are generally used for the same purpose, the key differences listed below affect which ones you can use.
 
 > [!NOTE]
-> See the [SharePoint Syntex adoption: Get started guide](./adoption-getstarted.md) for more information about form processing and document understanding scenario examples.
+> See the [Get started driving adoption of SharePoint Syntex](./adoption-getstarted.md) for more information about form processing and document understanding scenario examples.
 
 ## Structured versus unstructured and semi-structured content
 
@@ -63,25 +63,26 @@ You can apply document understanding models to SharePoint document libraries tha
 
 Form processing models can currently be applied only to the SharePoint document library from which you created them. This allows licensed users with access to the site to create a form processing model. Note that an admin needs to enable form processing on a SharePoint document library for it to be available to licensed users.
 
-## Comparison of forms processing and document understanding
+## Comparison of form processing and document understanding
 
-Use the following table to understand when to use forms processing and when to use document understanding.
+Use the following table to understand when to use form processing and when to use document understanding.
 
-| Feature | Forms processing | Document understanding |
+| Feature | Form processing | Document understanding |
 | ------- | ------- | ------- |
-| Model type  - when to use each | Used for semi-structured file formats, for example PDFs for forms content such as invoices or purchase orders where the layout and formatting is similar.  | Used for semi-structured file formats – for example, Office documents where there are differences in the layout, but still similar information to be extracted. |
+| Model type - when to use each | Structured and semi-structured file formats, for example PDFs for forms content such as invoices or purchase orders where the layout and formatting is similar.  | Unstructured or semi-structured file formats, for example, Office documents where there are differences in the layout, but still similar information to be extracted. |
 | Model creation | Model created in AI builder with seamless access from SharePoint document library.| Model created in SharePoint in a new site, the content center. |
 | Classification type| Settable classifier is used to give clues to the system on what data to extract.| Trainable classifier with optional extractors using machine teaching to assign document location on what data to extract.|
 | Locations | Trained for a single document library.| Can be applied to multiple libraries.|
-| Supported file types| Train on PDF, JPG, PNG format, total 50 MB and 500 pages.| Train on 5-10 PDF, Office, or email files, including negative examples.<br>Office files are truncated at 64k characters. OCR-scanned files are limited to 20 pages.|
-| Integrate with managed metadata | No | Yes, by training entity extractor referencing a configured managed metadata field.|
-| Compliance feature integration when Microsoft Information Protection is enabled | Set published Retention labels.<br>Set Sensitivity labels is coming. | Set published Retention labels.<br>Set published Sensitivity labels. |
+| Supported file types| Train on PDF, JPG, PNG format, total 50 MB and 500 pages.| Train on 5-10 PDF, Office, or email files, including negative examples.<br>Office files are truncated at 64K characters. OCR-scanned files are limited to 20 pages.|
+| Integrate with Managed Metadata | No | Yes, by training entity extractor referencing a configured managed metadata field.|
+| Compliance feature integration with Microsoft Purview Information Protection | Set published retention labels.<br>Set sensitivity labels is coming. | Set published retention labels.<br>Set published sensitivity labels. |
 | Supported regions| Form processing relies on Power Platform. For information about global availability for Power Platform and AI Builder, see [Power Platform availability](https://dynamics.microsoft.com/geographic-availability/). | Available in all regions.|
-| Transactional cost | Uses AI Builder credits.<br>Credits can be purchased in batches of 1M.<br>1M credits are included when 300+ SharePoint Syntex licenses are purchased.<br>1M credits will allow processing of 2,000 file pages.<br>| N/A |
+| Transactional cost | Uses AI Builder credits.<br>3.5K credits are included for each SharePoint Syntex license per month.<br>1M credits will allow processing of 2,000 file pages.<br>| Not applicable |
 | Capacity | Uses the default Power Platform environment (custom environments with Dataverse database supported). | Does not have capacity restrictions.|
-| Supported languages| English <br>Coming later in 2022: Latin alphabet languages | Models work on all Latin alphabet languages. In addition to English: German, Swedish, French, Spanish, Italian, and Portuguese.|
+| Supported languages| Language support for more than [73 languages](/power-platform-release-plan/2021wave2/ai-builder/form-processing-new-language-support). | Models work on all Latin alphabet languages. In addition to English: German, Swedish, French, Spanish, Italian, and Portuguese.|
 
-## See Also
+
+## See also
 
 [Training: Improve business performance with AI Builder](/learn/paths/improve-business-performance-ai-builder/?source=learn)
 

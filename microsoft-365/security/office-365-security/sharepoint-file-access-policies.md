@@ -7,13 +7,13 @@ manager: dansimp
 ms.prod: m365-security
 ms.topic: article
 audience: Admin
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.reviewer: martincoetzer
-ms.custom: 
+ms.custom:
   - it-pro
   - goldenconfig
-ms.collection: 
+ms.collection:
   - M365-identity-device-management
   - M365-security-compliance
   - m365solution-identitydevice
@@ -55,7 +55,7 @@ The following table lists the policies you either need to review and update or c
 
 ## Use app-enforced restrictions in SharePoint
 
-If you implement access controls in SharePoint, you must create this Conditional Access policy in Azure AD to tell Azure AD to enforce the policies you configure in SharePoint. This policy applies to all users, but only affects access to the sites you specify using PowerShell when you create the access controls in SharePoint.
+If you implement access controls in SharePoint, Conditional Access policies are created in Azure AD to tell Azure AD to enforce the policies you configure in SharePoint. By default, this policy applies to all users, but only affects access to the sites you specify using PowerShell when you create the access controls in SharePoint. The policy can also be scoped for specific users, groups, or sites.
 
 To configure this policy see "Block or limit access to specific SharePoint site collections or OneDrive accounts" in [Control access from unmanaged devices](/sharepoint/control-access-from-unmanaged-devices).
 
@@ -85,7 +85,6 @@ James has starting point Conditional Access policies assigned, but he can be giv
 ## Next step
 
 :::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png" alt-text="The Step 4 - Policies for Microsoft 365 cloud apps" lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png":::
-
 
 Configure Conditional Access policies for:
 
