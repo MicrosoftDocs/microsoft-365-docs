@@ -442,11 +442,13 @@ Encrypting your most sensitive documents and emails helps to ensure that only au
 - When authorized users open encrypted documents in their Office apps, they see the label name and description in a yellow message bar at the top of their app. When the encryption permissions extend to people outside your organization, carefully review the label names and descriptions that will be visible in this message bar when the document is opened.
 
 - For multiple users to edit an encrypted file at the same time, they must all be using Office for the web or you've [enabled co-authoring for files encrypted with sensitivity labels](sensitivity-labels-coauthoring.md) and all users have [Office apps that support this feature](sensitivity-labels-coauthoring.md#prerequisites). If this isn't the case, and the file is already open:
-
+    
   - In Office apps (Windows, Mac, Android, and iOS), users see a **File In Use** message with the name of the person who has checked out the file. They can then view a read-only copy or save and edit a copy of the file, and receive notification when the file is available.
   - In Office for the web, users see an error message that they can't edit the document with other people. They can then select **Open in Reading View**.
 
-- The [AutoSave](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) functionality in Office apps for iOS and Android is disabled for encrypted files. This functionality is also disabled for encrypted files on Windows and Mac if you haven't [enabled co-authoring for files encrypted with sensitivity labels](sensitivity-labels-coauthoring.md). Users see a message that the file has restricted permissions that must be removed before AutoSave can be turned on.
+- The [AutoSave](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) functionality in Office apps is disabled for encrypted files if you haven't [enabled co-authoring for files encrypted with sensitivity labels](sensitivity-labels-coauthoring.md). Users see a message that the file has restricted permissions that must be removed before AutoSave can be turned on.
+
+- Office for Windows supports labels that apply encryption when users aren't connected to the internet. But for the other platforms (macOS, iOS, Android), users must be online to apply these labels in Office apps. The Azure Information Protection unified labeling client must also be online to apply these labels in File Explorer and PowerShell. Users don't have to be online to open encrypted content. For more information about offline access, see the [Rights Management use license for offline access ](#rights-management-use-license-for-offline-access) section.
 
 - Encrypted files might take longer to open in Office apps (Windows, Mac, Android, and iOS).
 
